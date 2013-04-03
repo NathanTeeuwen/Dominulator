@@ -1,0 +1,9 @@
+*.vsp
+*.suo
+*.ncb
+*.user
+*.aps
+obj
+Release
+Debug
+RECYCLER
