@@ -6,52 +6,22 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-    public interface IPlayerActionFactory
-    {
-        IPlayerAction NewPlayerAction(PlayerState playerState);
-    }
-
-    public interface IPlayerAction
-    {        
-        void BeginTurn();        
-        void EndTurn();        
-        Type BanCardForCurrentPlayerRevealedCards(GameState gameState);
-        Type BanCardForCurrentPlayerPurchase(GameState gameState);
-        Type GetActionFromHandToPlay(GameState gameState, bool isOptional);
-        Type GetTreasureFromHandToPlay(GameState gameState);        
-        Type GetCardFromSupplyToBuy(GameState gameState);        
-        Type GuessCardTopOfDeck(GameState gameState);        
-        Type GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional);        
-        Type GetCardFromRevealedCarsToTopDeck(BagOfCards revealedCards);
-        Type GetCardFromRevealedCardsToTrash(PlayerState player, BagOfCards revealedCards, CardPredicate acceptableCard);        
-        Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard);
-        Type GetCardFromHandToPassLeft(GameState gameState);
-        Type GetCardFromHandToDiscard(GameState gameState, bool isOptional);
-        Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard);
-        bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card);
-        bool ShouldPutCardInHand(GameState gameState, Card card);
-        bool WantToResign(GameState gameState);
-        bool ShouldRevealCard(GameState gameState, Card card);
-        bool ShouldPutDeckInDiscard(GameState gameState);
-        bool ShouldTrashCard(GameState gameState);
-        bool ShouldGainCard(GameState gameState, Card card);        
-        PlayerActionChoice ChooseAction(GameState gameState, IsValidChoice acceptableChoice);
-        string PlayerName { get; }
-    }
-
     public interface IGameLog
         : IDisposable
     {
         void BeginRound();
         void BeginTurn(PlayerState playerState);
         void EndTurn(PlayerState playerState);
-        void BoughtCard(PlayerState playerState, Card card);
+        void PlayerBoughtCard(PlayerState playerState, Card card);
         void GainedCard(PlayerState playerState, Card card);
         void PlayedCard(PlayerState playerState, Card card);
+        void PlayerGainedCard(PlayerState playerState, Card card);
+        void PlayerTrashedCard(PlayerState playerState, Card card);
         void DrewCardIntoHand(PlayerState playerState, Card card);
         void DiscardedCard(PlayerState playerState, Card card);
         void ReshuffledDiscardIntoDeck(PlayerState playerState);
         void EndGame(GameState gameState);
+        void PlayerGainedCoin(PlayerState playerState, int coinAmount);
     }
 
     public class DefaultPlayerAction
@@ -221,7 +191,19 @@ namespace Dominion
         : IGameLog, IDisposable
     {
         int roundNumber = 0;
-        System.IO.TextWriter textWriter = new System.IO.StreamWriter("..\\..\\Results\\GameLog.txt");
+        System.IO.TextWriter textWriter;
+
+        public DefaultLog(string filename)
+        {
+            if (filename == null)
+            {
+                this.textWriter = System.IO.TextWriter.Null;
+            }
+            else
+            {
+                this.textWriter = new System.IO.StreamWriter(filename);
+            }
+        }
 
         public void Dispose()
         {
@@ -253,7 +235,7 @@ namespace Dominion
             this.textWriter.WriteLine();
         }
 
-        public void BoughtCard(PlayerState playerState, Card card)
+        public void PlayerBoughtCard(PlayerState playerState, Card card)
         {
             this.textWriter.WriteLine("{0} bought {1}", playerState.actions.PlayerName, card.name);
         }
@@ -273,6 +255,16 @@ namespace Dominion
             this.textWriter.WriteLine("{0} Discarded {1}", playerState.actions.PlayerName, card.name);
         }
 
+        public void PlayerGainedCard(PlayerState playerState, Card card)
+        {
+            this.textWriter.WriteLine("{0} gained {1}", playerState.actions.PlayerName, card.name);
+        }
+
+        public void PlayerTrashedCard(PlayerState playerState, Card card)
+        {
+            this.textWriter.WriteLine("{0} trashed {1}", playerState.actions.PlayerName, card.name);
+        }
+
         public void PlayedCard(PlayerState playerState, Card card)
         {
             this.textWriter.WriteLine("{0} Played {1}", playerState.actions.PlayerName, card.name);
@@ -287,10 +279,31 @@ namespace Dominion
         {
             this.textWriter.WriteLine("Game ended in {0} turns.", this.roundNumber);
 
-            foreach (PlayerState player in gameState.players.AllPlayers.OrderByDescending(player => player.TotalScore()))
+            PlayerState[] winners = gameState.WinningPlayers;
+
+            if (winners.Length == 1)
+            {
+                this.textWriter.WriteLine("{0} Won!", winners[0].actions.PlayerName);
+            }
+            else
+            {
+                this.textWriter.Write("There was a tie between: ");
+                foreach (PlayerState player in winners)
+                {
+                    this.textWriter.Write("{0}, ", player.actions.PlayerName);
+                }
+                this.textWriter.WriteLine();
+            }         
+
+            foreach (PlayerState player in gameState.players.AllPlayers)
             {
                 this.textWriter.WriteLine("{0} total score: {1}", player.actions.PlayerName, player.TotalScore());
             }
+        }
+
+        public void PlayerGainedCoin(PlayerState playerState, int coinAmount)
+        {
+            this.textWriter.WriteLine("      +{0} Coin = {1} all together.", coinAmount, playerState.AvailableCoins);
         }
     }
 }

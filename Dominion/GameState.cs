@@ -6,7 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Dominion
-{    
+{
+    public enum GainReason
+    {
+        Gain,
+        Bought
+    }
+
     public enum DeckPlacement
     {
         Hand,
@@ -29,9 +35,11 @@ namespace Dominion
 
     public delegate int VictoryPointCounter(PlayerState player);
     public delegate DeckPlacement MapCardToPlacement(Card card);
-    public delegate CardPlacementPair PlaceCardsFromList(BagOfCards cards);
-    public delegate bool CardPredicate(Card card);    
-    public delegate bool IsValidChoice(PlayerActionChoice availableChoice);    
+    public delegate CardPlacementPair PlaceCardsFromList(BagOfCards cards);    
+    public delegate bool IsValidChoice(PlayerActionChoice availableChoice);
+
+    public delegate bool CardPredicate(Card card);
+    public delegate bool GameStatePredicate(GameState gameState);
 
     public enum CostConstraint
     {
@@ -45,71 +53,49 @@ namespace Dominion
         AbsoluteCost
     }
 
-    
-    public class CardPile
-        : ListOfCards
-    {
-        Card protoType;
-
-        internal int embargoTokenCount;
-        internal bool tradeRouteTokenCount;
-        internal readonly bool isInSupply;
-
-        public CardPile(Card protoType, int count)
-        {
-            for (int i = 0; i < count; ++i)
-            {
-                this.AddCardToTop(protoType);
-            }            
-
-            this.protoType = protoType;            
-        }
-
-        public bool IsType(Type card)
-        {            
-            return this.protoType.Is(card);            
-        }
-
-        public bool IsType<T>()
-        {
-            return IsType(typeof(T));
-        }        
-    }
 
     public class GameState
     {
         public IGameLog gameLog;
         public PlayerCircle players;
-        public CardPile[] supplyPiles;
+        public PileOfCards[] supplyPiles;
         public BagOfCards trash;
 
         // special piles not in the supply - not available in every game
-        private CardPile blackMarketDeck;
+        private PileOfCards blackMarketDeck;
 
         public GameState(             
             IGameLog gameLog,
-            IPlayerActionFactory playerActionFactory,
-            Card[] InitialCardTypes,
-            int playerCount, 
-            bool usePlatinumAndColony)
+            IPlayerAction[] players,
+            GameConfig gameConfig)
         {
+            int playerCount = players.Length;
             this.gameLog = gameLog;
-            this.players = new PlayerCircle(playerCount, playerActionFactory, this.gameLog);
+            this.players = new PlayerCircle(playerCount, players, this.gameLog);
  
-            var cardPiles = new List<CardPile>(capacity:20);
+            var cardPiles = new List<PileOfCards>(capacity:20);
 
             int curseCount = (playerCount - 1) * 10;
+            int ruinsCount = curseCount;
             int victoryCount = (playerCount == 2) ? 8 : 12;
 
             Add<CardTypes.Copper>(cardPiles, 60);
             Add<CardTypes.Silver>(cardPiles, 40);
-            Add<CardTypes.Gold>(cardPiles, 20);
+            Add<CardTypes.Gold>(cardPiles, 30);
             Add<CardTypes.Curse>(cardPiles, curseCount);
             Add<CardTypes.Estate>(cardPiles, victoryCount + playerCount * 3);
             Add<CardTypes.Duchy>(cardPiles, victoryCount);
             Add<CardTypes.Province>(cardPiles, victoryCount);
 
-            foreach (Card card in InitialCardTypes)
+            if (gameConfig.useColonyAndPlatinum)
+            {
+                Add<CardTypes.Colony>(cardPiles, victoryCount);
+                Add<CardTypes.Platinum>(cardPiles, 20);
+            }
+
+            bool requiresRuins = false;
+
+            foreach (Card card in gameConfig.supplyPiles)
             {
                 if (card.isVictory)
                 {
@@ -119,9 +105,17 @@ namespace Dominion
                 {
                     Add(cardPiles, card.defualtSupplyCount, card);
                 }
+
+                requiresRuins |= card.requiresRuins;
+            }
+
+            if (requiresRuins)
+            {
+                cardPiles.Add(CreateRuins(ruinsCount));
             }
 
             this.supplyPiles = cardPiles.ToArray();
+            this.trash = new BagOfCards();
                        
             foreach (PlayerState player in this.players.AllPlayers)
             {
@@ -132,23 +126,28 @@ namespace Dominion
             this.players.AllPlayersDrawInitialCards();         
         }
 
-        private static void Add<CardType>(List<CardPile> cardPiles, int initialCount)
+        private static PileOfCards CreateRuins(int ruinsCount)
+        {
+            var result = new PileOfCards(new CardTypes.Ruin(), ruinsCount);
+            return result;
+        }
+
+        private static void Add<CardType>(List<PileOfCards> cardPiles, int initialCount)
             where CardType : Card, new()
         {
             
             Add(cardPiles, initialCount, new CardType());
         }
 
-        private static void Add(List<CardPile> cardPiles, int initialCount, Card protoType)           
+        private static void Add(List<PileOfCards> cardPiles, int initialCount, Card protoType)           
         {                        
-            cardPiles.Add( new CardPile(protoType, initialCount));
+            cardPiles.Add( new PileOfCards(protoType, initialCount));
         }
-
 
         public bool IsVictoryConditionReached()
         {
             int countEmptyPiles = 0;
-            foreach (CardPile pile in this.supplyPiles)
+            foreach (PileOfCards pile in this.supplyPiles)
             {
                 if (pile.IsEmpty)
                 {
@@ -179,9 +178,9 @@ namespace Dominion
                     this.gameLog.BeginRound();
                 }
 
-                PlayerState currentPlayerState = this.players.CurrentPlayer;
-                PlayTurn(currentPlayerState);
-                if (this.players.CurrentPlayer.actions.WantToResign(this))
+                PlayerState currentPlayer = this.players.CurrentPlayer;
+                PlayTurn(currentPlayer);
+                if (currentPlayer.actions.WantToResign(this))
                 {
                     break;
                 }
@@ -191,8 +190,45 @@ namespace Dominion
             this.gameLog.EndGame(this);
         }
 
+        public PlayerState[] WinningPlayers
+        {
+            get
+            {
+                var orderedPlayers = this.players.AllPlayers.ToArray();
+                Array.Sort(orderedPlayers, ComparePlayerWinner);
+                var result = new List<PlayerState>();
+                result.Add(orderedPlayers[0]);
+                for (int i = 1; i < orderedPlayers.Length; ++i)
+                {
+                    if (ComparePlayerWinner(orderedPlayers[i], orderedPlayers[0]) != 0)
+                    {
+                        break;
+                    }
+                    result.Add(orderedPlayers[i]);
+                }
+
+                return result.ToArray();
+            }
+        }
+
+        static int ComparePlayerWinner(PlayerState first, PlayerState second)
+        {
+            int scoreDifference = second.TotalScore() - first.TotalScore();
+            if (scoreDifference > 0)
+            {
+                return 1;
+            }
+            if (scoreDifference < 0)
+            {
+                return -1;
+            }
+
+            return second.numberOfTurnsPlayed - first.numberOfTurnsPlayed;
+        }
+
         public void PlayTurn(PlayerState currentPlayerState)
-        {            
+        {
+            currentPlayerState.numberOfTurnsPlayed += 1;
             IPlayerAction currentPlayer = currentPlayerState.actions;
 
             this.gameLog.BeginTurn(currentPlayerState);
@@ -209,10 +245,10 @@ namespace Dominion
         }
 
         private void DoActionPhase(PlayerState currentPlayer)
-        {            
-            while (currentPlayer.availableActionCount > 0)
+        {
+            while (currentPlayer.turnCounters.availableActionCount > 0)
             {
-                currentPlayer.availableActionCount--;
+                currentPlayer.turnCounters.availableActionCount--;
 
                 if (!currentPlayer.RequestPlayerPlayActionFromHand(this, isOptional: true))
                 {
@@ -223,7 +259,7 @@ namespace Dominion
 
         private void DoBuyPhase(PlayerState currentPlayerState)
         {
-            while (currentPlayerState.availableBuys > 0)
+            while (currentPlayerState.turnCounters.availableBuys > 0)
             {
                 Type cardType = currentPlayerState.actions.GetCardFromSupplyToBuy(this);
                 if (cardType == null)
@@ -231,13 +267,12 @@ namespace Dominion
                     return;
                 }
 
-                Card gainedCard = this.PlayerGainCardFromSupply(cardType, currentPlayerState);
+                Card gainedCard = this.PlayerGainCardFromSupply(cardType, currentPlayerState, DeckPlacement.Discard, GainReason.Gain);
                 if (gainedCard == null)
                 {
                     return;
-                }
-                this.gameLog.BoughtCard(currentPlayerState, gainedCard);
-                currentPlayerState.availableBuys-=1;
+                }                
+                currentPlayerState.turnCounters.availableBuys -= 1;
             }
         }
 
@@ -261,7 +296,7 @@ namespace Dominion
             }
         }
 
-        internal CardPile GetSpecialPile(Type cardType)
+        internal PileOfCards GetSpecialPile(Type cardType)
         {
             if (cardType.Equals(typeof(CardTypes.BlackMarket)))
             {
@@ -273,11 +308,11 @@ namespace Dominion
             }
         }
 
-        private CardPile GetPile(Type cardType)
+        private PileOfCards GetPile(Type cardType)
         {
             for (int i = 0; i < this.supplyPiles.Length; ++i)
             {
-                CardPile cardPile = this.supplyPiles[i];
+                PileOfCards cardPile = this.supplyPiles[i];
                 if (cardPile.IsType(cardType))
                 {
                     return cardPile;
@@ -287,11 +322,11 @@ namespace Dominion
             return null;
         }
 
-        public CardPile GetPile<cardType>()
+        public PileOfCards GetPile<cardType>()
         {
             for (int i = 0; i < this.supplyPiles.Length; ++i)
             {
-                CardPile cardPile = this.supplyPiles[i];
+                PileOfCards cardPile = this.supplyPiles[i];
                 if (cardPile.IsType<cardType>())
                 {
                     return cardPile;
@@ -301,9 +336,9 @@ namespace Dominion
             return null;
         }
 
-        public Card PlayerGainCardFromSupply(Type cardType, PlayerState playerState, DeckPlacement defaultLocation = DeckPlacement.Discard)
+        public Card PlayerGainCardFromSupply(Type cardType, PlayerState playerState, DeckPlacement defaultLocation = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)
         {
-            CardPile pile = this.GetPile(cardType);
+            PileOfCards pile = this.GetPile(cardType);
             if (pile == null)
             {
                 return null;
@@ -315,7 +350,7 @@ namespace Dominion
                 return null;
             }
 
-            playerState.GainCard(card, defaultLocation);
+            playerState.GainCard(this, card, defaultLocation, gainReason);
 
             return card;
         }

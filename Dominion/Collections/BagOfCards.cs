@@ -14,9 +14,14 @@ namespace Dominion
             this.cards.Add(card);
         }
 
+        public bool HasCard(Type t)
+        {
+            return this.FindCardIndexOfType(t) != -1;
+        }
+
         public bool HasCard<T>()
         {
-            return this.FindCardIndexOfType(typeof(T)) != -1;
+            return this.HasCard(typeof(T));
         }
 
         internal Card RemoveCard()

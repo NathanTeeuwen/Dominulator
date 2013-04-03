@@ -25,6 +25,7 @@ namespace Dominion
         public readonly bool isReaction;
         public readonly bool isRune;
         public readonly bool isTreasure;
+        public readonly bool requiresRuins;
 
         internal Card(
             string name,
@@ -42,7 +43,8 @@ namespace Dominion
             bool isCurse = false,
             bool isReaction = false,
             bool isRune = false,
-            bool isTreasure = false)
+            bool isTreasure = false,
+            bool requiresRuins = false)
         {
             this.name = name;
             this.coinCost = coinCost;
@@ -60,6 +62,7 @@ namespace Dominion
             this.isRune = isRune;
             this.isTreasure = isTreasure;
             this.defualtSupplyCount = defaultSupplyCount;
+            this.requiresRuins = requiresRuins;
         }
 
         public bool Is(Type card)
@@ -98,12 +101,13 @@ namespace Dominion
 
         public int CurrentCoinCost(PlayerState player)
         {
-            int effectiveCost = this.coinCost - player.cardCoinDiscount;
+            int effectiveCost = this.coinCost - player.turnCounters.cardCoinDiscount;
             return (effectiveCost >= 0) ? effectiveCost : 0;
         }
 
+        
         virtual public void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
-        {
+        {            
         }
 
         // return true if blocks attack;
@@ -124,6 +128,10 @@ namespace Dominion
         virtual public void DoSpecializedCleanup(PlayerState currentPlayer, GameState gameState)
         {
 
+        }
+
+        virtual public void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        {
         }
     }
 }

@@ -7,20 +7,55 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-    public class PlayerState
+    class PlayerTurnCounters
     {
-        internal IPlayerAction actions;
-        internal IGameLog gameLog;
-
-        public int AvailableCoins { get { return this.availableCoins; } }
-        public BagOfCards Hand { get { return this.hand; } }
-
         internal int availableActionCount;
         internal int availableBuys;
-        internal int availableCoins;
+        private int availableCoins;
         internal int cardCoinDiscount;
         internal HashSet<Type> cardsBannedFromPurchase = new HashSet<Type>();
         internal int copperAdditionalValue = 0;
+               
+        internal void InitializeTurn()
+        {
+            this.availableActionCount = 1;
+            this.availableBuys = 1;
+            this.cardCoinDiscount = 0;
+            this.availableCoins = 0;
+            this.copperAdditionalValue = 0;
+            this.cardsBannedFromPurchase.Clear();
+        }
+
+        internal int AvailableCoins
+        {
+            get
+            {
+                return this.availableCoins;
+            }
+        }
+
+
+        public void AddCoins(PlayerState playerState, int count)
+        {
+            if (count > 0)
+            {
+                this.availableCoins += count;
+                playerState.gameLog.PlayerGainedCoin(playerState, count);
+            }
+        }
+    }
+
+    public class PlayerState
+    {
+        internal int numberOfTurnsPlayed;
+        internal readonly IPlayerAction actions;
+        internal readonly IGameLog gameLog;
+
+        public IPlayerAction Actions { get { return this.actions; } }
+        public int AvailableCoins { get { return this.turnCounters.AvailableCoins; } }
+        public BagOfCards Hand { get { return this.hand; } }
+
+        internal PlayerTurnCounters turnCounters = new PlayerTurnCounters();
 
         // all of the cards the player owns.  Always move from one list to the other
         internal ListOfCards deck = new ListOfCards();
@@ -33,18 +68,19 @@ namespace Dominion
         internal BagOfCards islandMat = new BagOfCards();
         internal BagOfCards nativeVillageMat = new BagOfCards();
 
-        // other state
+        // persistent Counters
         internal int victoryTokenCount;
         internal int pirateShipTokenCount;
 
+        internal PlayerState(IPlayerAction actions, IGameLog gameLog)
+        {
+            this.gameLog = gameLog;
+            this.actions = actions;
+        }
+
         internal void InitializeTurn()
         {
-            this.availableActionCount = 1;
-            this.availableBuys = 1;
-            this.cardCoinDiscount = 0;
-            this.availableCoins = 0;
-            this.copperAdditionalValue = 0;
-            this.cardsBannedFromPurchase.Clear();
+            this.turnCounters.InitializeTurn();
         }        
 
         public int TotalScore()
@@ -163,6 +199,11 @@ namespace Dominion
             }
         }
 
+        internal void AddCoins(int coinAmount)
+        {
+            this.turnCounters.AddCoins(this, coinAmount);
+        }
+
         internal void DoPlayAction(Card currentCard, GameState gameState, int countTimes = 1)
         {
             if (!currentCard.isAction)
@@ -175,13 +216,13 @@ namespace Dominion
             
             for (int i = 0; i < countTimes; ++i)
             {
-                this.availableActionCount += currentCard.plusAction;
-                this.availableBuys += currentCard.plusBuy;
-                this.availableCoins += currentCard.plusCoin;
+                this.turnCounters.availableActionCount += currentCard.plusAction;
+                this.turnCounters.availableBuys += currentCard.plusBuy;
+                this.AddCoins(currentCard.plusCoin);
                 this.victoryTokenCount += currentCard.plusVictoryToken;
                 this.DrawAdditionalCardsIntoHand(currentCard.plusCard);
 
-                currentCard.DoSpecializedAction(gameState.players.CurrentPlayer, gameState);
+                currentCard.DoSpecializedAction(gameState.players.CurrentPlayer, gameState);                
                 if (currentCard.isAttack && currentCard.attackDependsOnPlayerChoice)
                 {
                     foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
@@ -214,11 +255,11 @@ namespace Dominion
 
             this.cardsBeingPlayed.AddCardToTop(currentCard);
 
-            this.availableBuys += currentCard.plusBuy;
-            this.availableCoins += currentCard.plusCoin;
+            this.turnCounters.availableBuys += currentCard.plusBuy;
+            this.AddCoins(currentCard.plusCoin);
             if (currentCard.Is<CardTypes.Copper>())
             {
-                this.availableCoins += this.copperAdditionalValue;
+                this.AddCoins(this.turnCounters.copperAdditionalValue);
             }
 
             currentCard.DoSpecializedAction(gameState.players.CurrentPlayer, gameState);
@@ -336,6 +377,7 @@ namespace Dominion
         {
             // reaction to trashing?
             card.DoSpecializedTrash(gameState.players.CurrentPlayer, gameState);
+            this.gameLog.PlayerTrashedCard(this, card);
             gameState.trash.AddCard(card);
         }
 
@@ -390,8 +432,7 @@ namespace Dominion
 
             if (cardToPlay != null)
             {
-                this.DoPlayAction(cardToPlay, gameState);
-                this.playedCards.AddCard(cardToPlay);
+                this.DoPlayAction(cardToPlay, gameState);                
             }
 
             return true;
@@ -672,12 +713,23 @@ namespace Dominion
                 gameState.PlayerGainCardFromSupply(cardType, this, defaultLocation);
         }
 
-        internal void GainCard(Card card, DeckPlacement defaultPlacement)
-        {
-            // check if card should go on top of deck
+        internal void GainCard(GameState gameState, Card card, DeckPlacement defaultPlacement = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)
+        {            
+            // TODO: check if card in play reacts            
+            // TODO: check if there is a reaction in hand for gaining a card
+            
+            if (gainReason == GainReason.Bought)
+            {
+                this.gameLog.PlayerBoughtCard(this, card);
+            }
+            else
+            {
+                this.gameLog.PlayerGainedCard(this, card);
+            }
 
-            // check if there is a reaction in hand for gaining a card
-            this.PlaceCardFromPlacement(new CardPlacementPair(card, defaultPlacement), null);
+            card.DoSpecializedWhenGain(this, gameState);
+
+            this.PlaceCardFromPlacement(new CardPlacementPair(card, defaultPlacement), gameState);
         }
 
         private void TriggerShuffleOfDiscardIntoDeck()
