@@ -757,7 +757,9 @@ namespace Dominion
                 this.gameLog.PlayerGainedCard(this, card);
             }
 
+            this.gameLog.BeginScope();
             card.DoSpecializedWhenGain(this, gameState);
+            this.gameLog.EndScope();
 
             this.PlaceCardFromPlacement(new CardPlacementPair(card, defaultPlacement), gameState);
         }

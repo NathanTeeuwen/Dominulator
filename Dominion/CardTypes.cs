@@ -435,7 +435,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Witch
+    public class Witch
         : Card
     {
         public Witch()
@@ -450,7 +450,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Workshop
+    public class Workshop
         : Card
     {
         public Workshop()
@@ -470,7 +470,7 @@ namespace Dominion.CardTypes
 
     // Intrigue
 
-    class Baron :
+    public class Baron :
         Card
     {
         public Baron()
@@ -491,7 +491,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Bridge :
+    public class Bridge :
         Card
     {
         public Bridge()
@@ -505,7 +505,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Conspirator :
+    public class Conspirator :
         Card
     {
         public Conspirator()
@@ -523,7 +523,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Coppersmith :
+    public class Coppersmith :
         Card
     {
         public Coppersmith()
@@ -537,7 +537,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Courtyard :
+    public class Courtyard :
         Card
     {
         public Courtyard()
@@ -551,7 +551,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Duke :
+    public class Duke :
         Card
     {
         public Duke()
@@ -561,7 +561,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class IronWorks :
+    public class IronWorks :
         Card
     {
         public IronWorks()
@@ -590,7 +590,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Masquerade :
+    public class Masquerade :
         Card
     {
         public Masquerade()
@@ -623,7 +623,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class MiningVillage :
+    public class MiningVillage :
         Card
     {
         public MiningVillage()
@@ -643,7 +643,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Minion :
+    public class Minion :
         Card
     {
         public Minion()
@@ -695,7 +695,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Nobles :
+    public class Nobles :
         Card
     {
         public Nobles()
@@ -720,7 +720,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Pawn :
+    public class Pawn :
         Card
     {
         public Pawn()
@@ -763,7 +763,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Sabateur :
+    public class Sabateur :
         Card
     {
         public Sabateur()
@@ -802,7 +802,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Scout :
+    public class Scout :
         Card
     {
         public Scout()
@@ -821,7 +821,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class SecretChamber :
+    public class SecretChamber :
        Card
     {
         public SecretChamber()
@@ -856,7 +856,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class ShantyTown :
+    public class ShantyTown :
        Card
     {
         public ShantyTown()
@@ -874,7 +874,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Steward :
+    public class Steward :
        Card
     {
         public Steward()
@@ -901,7 +901,7 @@ namespace Dominion.CardTypes
     }
 
 
-    class Swindler :
+    public class Swindler :
        Card
     {
         public Swindler()
@@ -925,7 +925,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Torturer :
+    public class Torturer :
       Card
     {
         public Torturer()
@@ -949,7 +949,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class TradingPost :
+    public class TradingPost :
         Card
     {
         public TradingPost()
@@ -968,7 +968,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Tribute :
+    public class Tribute :
        Card
     {
         public Tribute()
@@ -1023,7 +1023,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Upgrade :
+    public class Upgrade :
         Card
     {
         public Upgrade()
@@ -1044,7 +1044,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class WishingWell :
+    public class WishingWell :
         Card
     {
         public WishingWell()
@@ -1070,7 +1070,7 @@ namespace Dominion.CardTypes
 
     // Promo
 
-    class BlackMarket :
+    public class BlackMarket :
         Card
     {
         public BlackMarket()
@@ -1086,7 +1086,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Envoy :
+    public class Envoy :
         Card
     {
         public Envoy()
@@ -1107,7 +1107,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Governor :
+    public class Governor :
         Card
     {
         public Governor()
@@ -1170,7 +1170,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Stash :
+    public class Stash :
         Card
     {
         public Stash()
@@ -1179,7 +1179,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class WalledVillage :
+    public class WalledVillage :
         Card
     {
         public WalledVillage()
@@ -1196,7 +1196,7 @@ namespace Dominion.CardTypes
 
     // Prosperity
 
-    class Bank :
+    public class Bank :
        Card
     {
         public Bank()
@@ -1211,7 +1211,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Bishop :
+    public class Bishop :
        Card
     {
         public Bishop()
@@ -1235,7 +1235,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class City :
+    public class City :
        Card
     {
         public City()
@@ -1260,7 +1260,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class Contraband :
+    public class Contraband :
         Card
     {
         public Contraband()
@@ -1276,7 +1276,7 @@ namespace Dominion.CardTypes
         }
     }
 
-    class CountingHouse :
+    public class CountingHouse :
         Card
     {
         public CountingHouse()
@@ -1292,7 +1292,7 @@ namespace Dominion.CardTypes
 
     // Hinterlands
 
-    class CrossRoads :
+    public class CrossRoads :
         Card
     {
         public CrossRoads()
@@ -1419,6 +1419,50 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Develop :
+        Card
+    {
+        public Develop()
+            : base("Develop", coinCost: 4, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            Card trashedCard = currentPlayer.RequestPlayerTrashCardFromHand(gameState, card => true, false);
+
+            int trashedCardCost = trashedCard.CurrentCoinCost(currentPlayer);
+
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost - 1), "Must gain a card costing one less than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost + 1), "Must gain a card costing exactly one more than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
+
+            // TODO:  put the cards on top of your deck in either order.
+        }
+    }
+
+    public class Embassy :
+        Card
+    {
+        public Embassy()
+            : base("Embassy", coinCost: 5, isAction: true, plusCards:5)
+        {
+        }
+
+        public override void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        {
+            foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
+            {
+                otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Silver));
+            }
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 3);
+        }
+    }
+
+
     public class Feodum :
         Card
     {
@@ -1441,26 +1485,5 @@ namespace Dominion.CardTypes
         {
             return silvercount / 3;
         }
-    }
-
-    public class Develop :
-        Card
-    {
-        public Develop()
-            : base("Develop", coinCost: 4, isAction:true)
-        {
-        }
-
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
-        {
-            Card trashedCard = currentPlayer.RequestPlayerTrashCardFromHand(gameState, card => true, false);
-
-            int trashedCardCost = trashedCard.CurrentCoinCost(currentPlayer);
-
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost - 1), "Must gain a card costing one less than the trashed card.", isOptional:false, defaultLocation:DeckPlacement.TopOfDeck);
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost + 1), "Must gain a card costing exactly one more than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
-
-            // TODO:  put the cards on top of your deck in either order.
-        }
-    }
+    }    
 }

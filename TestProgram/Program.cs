@@ -12,7 +12,7 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            ComparePlayers(Strategies.FeodumDevelop.Player(1), Strategies.BigMoney.Player(2));
+            ComparePlayers(Strategies.DuchyDukeWarehouseEmbassy.Player(1), Strategies.FeodumDevelop.Player(2));
         }
 
         static void ComparePlayers(PlayerAction player1, PlayerAction player2)
@@ -132,21 +132,7 @@ namespace Program
             {
                 cardSet.Add(card);
             }
-        }
-
-        struct CompareCardByType
-            : IEqualityComparer<Card>
-        {
-            public bool Equals(Card x, Card y)
-            {
-                return x.GetType().Equals(y.GetType());
-            }
-
-            public int GetHashCode(Card x)
-            {
-                return x.GetType().GetHashCode();
-            }
-        }
+        }        
     }
 
     public struct CardAcceptance
@@ -336,7 +322,8 @@ namespace Program
             var currentPlayer = gameState.players.CurrentPlayer;
             return this.purchaseOrder.GetMatchingCard(
                 gameState,
-                card => currentPlayer.AvailableCoins >= card.CurrentCoinCost(currentPlayer));
+                card => currentPlayer.AvailableCoins >= card.CurrentCoinCost(currentPlayer) &&
+                gameState.GetPile(card).Any());
         }
 
         public override Type GetTreasureFromHandToPlay(GameState gameState)
@@ -384,7 +371,7 @@ namespace Program
             var currentPlayer = gameState.players.CurrentPlayer;
             return this.gainOrder.GetMatchingCard(
                 gameState,
-                acceptableCard);
+                card => acceptableCard(card) && gameState.GetPile(card).Any());
         }
 
         public override string PlayerName
@@ -424,10 +411,12 @@ namespace Program
                 return new CardPickByPriority(
                     CardAcceptance.For<CardTypes.Province>(),
                     CardAcceptance.For<CardTypes.Duchy>(),
+                    CardAcceptance.For<CardTypes.Duke>(),
                     CardAcceptance.For<CardTypes.Estate>(),
                     CardAcceptance.For<CardTypes.Ruin>(),
                     CardAcceptance.For<CardTypes.Copper>(),
-                    CardAcceptance.For<CardTypes.Silver>(),                    
+                    CardAcceptance.For<CardTypes.Warehouse>(),
+                    CardAcceptance.For<CardTypes.Silver>(),                   
                     CardAcceptance.For<CardTypes.Gold>());
             }
         }
@@ -654,6 +643,30 @@ namespace Program
             }            
         }
 
+        public static class BigMoneyDelayed
+        {
+            public static PlayerAction Player(int playerNumber)
+            {
+                return new PlayerAction(playerNumber,
+                            purchaseOrder: PurchaseOrder(),
+                            treasurePlayOrder: Default.TreasurePlayOrder(),
+                            actionOrder: Default.EmptyPickOrder(),
+                            trashOrder: Default.EmptyPickOrder(),
+                            discardOrder: Default.EmptyPickOrder());
+            }
+
+            private static CardPickByPriority PurchaseOrder()
+            {
+                return new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Gold).Count() > 3),
+                           CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 3),
+                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 2),
+                           CardAcceptance.For<CardTypes.Gold>(),
+                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 2),
+                           CardAcceptance.For<CardTypes.Silver>());
+            }
+        }
+
 
         public static class BigMoneyDoubleSmithy
         {
@@ -741,37 +754,25 @@ namespace Program
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Province>(),
+                           //CardAcceptance.For<CardTypes.Gold>(gameState => CountAllOwned<CardTypes.Gold>(gameState) < 2),
                            CardAcceptance.For<CardTypes.Develop>(ShouldGainDevelop),
                            CardAcceptance.For<CardTypes.Feodum>(ShouldGainFeodum),                           
-                           CardAcceptance.For<CardTypes.Silver>());
-                /*
-                var highPriority = new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>());
-                var buildOrder = new CardPickByBuildOrder(
-                    new CardTypes.Develop(),                    
-                    new CardTypes.Feodum(),
-                    new CardTypes.Feodum(),
-                    new CardTypes.Develop(),
-                    new CardTypes.Feodum(),
-                    new CardTypes.Feodum(),
-                    new CardTypes.Feodum(),
-                    new CardTypes.Feodum(),
-                    new CardTypes.Feodum(),
-                    new CardTypes.Feodum());
-
-                var lowPriority = new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Silver>());
-
-                return new CardPickConcatenator(highPriority, buildOrder, lowPriority); */
+                           CardAcceptance.For<CardTypes.Silver>());         
             }
 
             private static IGetMatchingCard GainOrder()
             {
                 return new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.Gold>(),
                            CardAcceptance.For<CardTypes.Develop>(ShouldGainDevelop),
                            CardAcceptance.For<CardTypes.Feodum>(ShouldGainFeodum),                           
                            CardAcceptance.For<CardTypes.Silver>(),                           
-                           CardAcceptance.For<CardTypes.Duchy>());
+                           CardAcceptance.For<CardTypes.Duchy>(),
+                           CardAcceptance.For<CardTypes.Duke>(),
+                           CardAcceptance.For<CardTypes.Warehouse>(),
+                           CardAcceptance.For<CardTypes.Embassy>(),
+                           CardAcceptance.For<CardTypes.Feodum>(),
+                           CardAcceptance.For<CardTypes.Develop>());
             }
 
             private static CardPickByPriority ActionOrder()
@@ -782,9 +783,10 @@ namespace Program
 
             private static CardPickByPriority TrashOrder()
             {
-                return new CardPickByPriority(                           
+                return new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.Duke>(),
+                           CardAcceptance.For<CardTypes.Duchy>(),
                            CardAcceptance.For<CardTypes.Feodum>(ShouldTrashFeodum),
-                           CardAcceptance.For<CardTypes.Develop>(),
                            CardAcceptance.For<CardTypes.Estate>(),
                            CardAcceptance.For<CardTypes.Copper>());
             }
@@ -819,7 +821,7 @@ namespace Program
                 int countSilvers = CountAllOwned<CardTypes.Silver>(gameState);
                 int countFeodum = CountAllOwned<CardTypes.Feodum>(gameState);
 
-                if (countSilvers < 8)
+                if (countSilvers < 12)
                 {
                     return true;
                 }
@@ -847,6 +849,55 @@ namespace Program
 
                 return scoreGainFeodum > scoreGainSilver;
             }
+        }
+
+        public static class DuchyDukeWarehouseEmbassy
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return new PlayerAction(playerNumber,
+                            purchaseOrder: PurchaseOrder(),
+                            treasurePlayOrder: Default.TreasurePlayOrder(),
+                            actionOrder: ActionOrder(),
+                            trashOrder: Default.EmptyPickOrder(),
+                            discardOrder: Default.DefaultDiscardOrder());
+            }
+
+            private static IGetMatchingCard PurchaseOrder()
+            {
+                var highPriority = new CardPickByPriority(
+                     //CardAcceptance.For<CardTypes.Gold>(gameState => CountAllOwned<CardTypes.Gold>(gameState) < 2),
+                     CardAcceptance.For<CardTypes.Embassy>(gameState => CountAllOwned<CardTypes.Embassy>(gameState) < 1),
+                     CardAcceptance.For<CardTypes.Duchy>(),
+                     CardAcceptance.For<CardTypes.Duke>());              
+
+                var buildOrder = new CardPickByBuildOrder(
+                    new CardTypes.Silver(),
+                    new CardTypes.Warehouse(),
+                    new CardTypes.Silver(),
+                    new CardTypes.Silver(),
+                    new CardTypes.Silver(),
+                    new CardTypes.Silver(),
+                    new CardTypes.Warehouse(),
+                    new CardTypes.Silver(),
+                    new CardTypes.Silver(),
+                    new CardTypes.Silver(),
+                    new CardTypes.Silver(),
+                    new CardTypes.Warehouse());
+
+                var lowPriority = new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.Silver>());
+
+                return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
+            }
+            
+            private static CardPickByPriority ActionOrder()
+            {
+                return new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.Warehouse>(),
+                           CardAcceptance.For<CardTypes.Embassy>());
+            }          
         }
     }  
 }

@@ -209,6 +209,9 @@ namespace Dominion
         public void EndTurn(PlayerState playerState)
         {
             this.textWriter.WriteLine("{0} ends turn", playerState.actions.PlayerName);
+            this.BeginScope();
+            this.WriteAllCards(playerState);
+            this.EndScope();
             this.textWriter.WriteLine();
             this.textWriter.WriteLine();
         }
@@ -281,12 +284,37 @@ namespace Dominion
             foreach (PlayerState player in gameState.players.AllPlayers)
             {
                 this.textWriter.WriteLine("{0} total score: {1}", player.actions.PlayerName, player.TotalScore());
+                this.BeginScope();
+                this.WriteAllCards(player);
+                this.EndScope();
             }
         }
 
         public void PlayerGainedCoin(PlayerState playerState, int coinAmount)
         {
             this.textWriter.WriteLine("+{0} Coin = {1} all together.", coinAmount, playerState.AvailableCoins);
+        }
+
+        private void WriteAllCards(PlayerState playerState)
+        {
+            Card[] allCards = playerState.AllOwnedCards.ToArray<Card>();
+
+            var cardComparer = new CompareCardByType();
+            Array.Sort(allCards, cardComparer);
+
+            for (int index = 0; index < allCards.Length;)
+            {
+                Card currentCard = allCards[index];
+                int cardCount  = 0;                
+                do
+                {
+                    cardCount++;
+                    index++;
+                }while (index < allCards.Length && cardComparer.Equals(currentCard, allCards[index]));
+
+                this.textWriter.Write("{0}({1}), ", currentCard.name, cardCount);
+            }
+            this.textWriter.WriteLine();
         }
     }
 }

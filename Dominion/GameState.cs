@@ -7,6 +7,26 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
+    public struct CompareCardByType
+            : IEqualityComparer<Card>,
+              IComparer<Card>
+    {
+        public bool Equals(Card x, Card y)
+        {
+            return x.GetType().Equals(y.GetType());
+        }
+
+        public int GetHashCode(Card x)
+        {
+            return x.GetType().GetHashCode();
+        }
+        
+        public int Compare(Card x, Card y)
+        {         
+            return x.name.CompareTo(y.name);
+        }
+    }
+
     public enum GainReason
     {
         Gain,
@@ -334,7 +354,12 @@ namespace Dominion
             }
         }
 
-        private PileOfCards GetPile(Type cardType)
+        public PileOfCards GetPile(Card card)
+        {
+            return GetPile(card.GetType());
+        }
+
+        public PileOfCards GetPile(Type cardType)
         {
             for (int i = 0; i < this.supplyPiles.Length; ++i)
             {
