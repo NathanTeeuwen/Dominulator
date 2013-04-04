@@ -22,7 +22,7 @@ Player1 reshuffled
 Player1 Drew Copper into hand.
 Player1 Drew Copper into hand.
 Player1 Drew Estate into hand.
-Player1 Drew Copper into hand.
+Player1 Drew Estate into hand.
 Player1 Drew Copper into hand.
 Player2 reshuffled
 Player2 Drew Copper into hand.
@@ -33,21 +33,19 @@ Player2 Drew Copper into hand.
 ROUND 1
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
+With hand: Copper,Copper,Copper,Estate,Estate,
   Player1 Played Copper.
     +1 Coin = 1 all together.
   Player1 Played Copper.
     +1 Coin = 2 all together.
   Player1 Played Copper.
     +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
   Player1 bought Silver.
-  Player1 Drew Estate into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Copper into hand.
   Player1 Drew Copper into hand.
   Player1 Drew Copper into hand.
   Player1 Drew Estate into hand.
-  Player1 Drew Copper into hand.
   Player1 ends turn
 
 
@@ -61,31 +59,35 @@ With hand: Copper,Copper,Copper,Copper,Estate,
     +1 Coin = 3 all together.
   Player2 Played Copper.
     +1 Coin = 4 all together.
-  Player2 bought Warehouse.
+  Player2 bought Silver.
   Player2 Drew Copper into hand.
   Player2 Drew Estate into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
   Player2 Drew Copper into hand.
+  Player2 Drew Estate into hand.
   Player2 ends turn
 
 
 ROUND 2
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
+With hand: Copper,Copper,Copper,Copper,Estate,
   Player1 Played Copper.
     +1 Coin = 1 all together.
   Player1 Played Copper.
     +1 Coin = 2 all together.
   Player1 Played Copper.
     +1 Coin = 3 all together.
-  Player1 bought Warehouse.
+  Player1 Played Copper.
+    +1 Coin = 4 all together.
+  Player1 bought Death Cart.
+  Player1 gained Ruined Library.
+  Player1 gained Ruined Library.
   Player1 reshuffled
   Player1 Drew Estate into hand.
   Player1 Drew Copper into hand.
   Player1 Drew Copper into hand.
-  Player1 Drew Estate into hand.
+  Player1 Drew Ruined Library into hand.
   Player1 Drew Copper into hand.
   Player1 ends turn
 
@@ -100,83 +102,117 @@ With hand: Copper,Copper,Copper,Estate,Estate,
     +1 Coin = 3 all together.
   Player2 bought Silver.
   Player2 reshuffled
-  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
   Player2 Drew Copper into hand.
   Player2 Drew Estate into hand.
   Player2 Drew Estate into hand.
-  Player2 Drew Copper into hand.
+  Player2 Drew Estate into hand.
   Player2 ends turn
 
 
 ROUND 3
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
+With hand: Copper,Copper,Copper,Estate,Ruined Library,
+  Player1 Played Ruined Library.
+    Player1 Drew Estate into hand.
   Player1 Played Copper.
     +1 Coin = 1 all together.
   Player1 Played Copper.
     +1 Coin = 2 all together.
   Player1 Played Copper.
     +1 Coin = 3 all together.
-  Player1 bought Silver.
-  Player1 Drew Silver into hand.
+  Player1 bought Warehouse.
+  Player1 Drew Death Cart into hand.
   Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Warehouse into hand.
   Player1 Drew Estate into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Copper into hand.
   Player1 ends turn
 
 
 Player2 begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  Player2 Played Copper.
-    +1 Coin = 1 all together.
-  Player2 Played Copper.
-    +1 Coin = 2 all together.
+With hand: Copper,Estate,Estate,Estate,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
   Player2 Played Copper.
     +1 Coin = 3 all together.
   Player2 bought Silver.
   Player2 Drew Copper into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
   Player2 ends turn
 
 
 ROUND 4
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Estate,Silver,Warehouse,
-  Player1 Played Warehouse.
-    Player1 Drew Copper into hand.
-    Player1 Drew Copper into hand.
-    Player1 reshuffled
-    Player1 Drew Copper into hand.
-    Player1 Discarded Estate.
-    Player1 Discarded Copper.
-    Player1 Discarded Copper.
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
+With hand: Copper,Copper,Copper,Death Cart,Estate,
+  Player1 Played Copper.
+    +1 Coin = 1 all together.
+  Player1 Played Copper.
+    +1 Coin = 2 all together.
   Player1 Played Copper.
     +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 Played Copper.
-    +1 Coin = 5 all together.
-  Player1 bought Silver.
-  Player1 Drew Copper into hand.
+  Player1 bought Warehouse.
   Player1 Drew Copper into hand.
   Player1 Drew Silver into hand.
+  Player1 Drew Ruined Library into hand.
+  Player1 reshuffled
   Player1 Drew Estate into hand.
   Player1 Drew Estate into hand.
   Player1 ends turn
 
 
 Player2 begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
+With hand: Copper,Copper,Copper,Copper,Silver,
   Player2 Played Silver.
     +2 Coin = 2 all together.
+  Player2 Played Copper.
+    +1 Coin = 3 all together.
+  Player2 Played Copper.
+    +1 Coin = 4 all together.
+  Player2 Played Copper.
+    +1 Coin = 5 all together.
+  Player2 Played Copper.
+    +1 Coin = 6 all together.
+  Player2 bought Gold.
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 reshuffled
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 ends turn
+
+
+ROUND 5
+-------------
+Player1 begins turn
+With hand: Copper,Estate,Estate,Ruined Library,Silver,
+  Player1 Played Ruined Library.
+    Player1 Drew Death Cart into hand.
+  Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Played Copper.
+    +1 Coin = 3 all together.
+  Player1 bought Silver.
+  Player1 Drew Warehouse into hand.
+  Player1 Drew Warehouse into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Estate into hand.
+  Player1 ends turn
+
+
+Player2 begins turn
+With hand: Copper,Copper,Copper,Copper,Copper,
+  Player2 Played Copper.
+    +1 Coin = 1 all together.
+  Player2 Played Copper.
+    +1 Coin = 2 all together.
   Player2 Played Copper.
     +1 Coin = 3 all together.
   Player2 Played Copper.
@@ -184,65 +220,70 @@ With hand: Copper,Copper,Copper,Estate,Silver,
   Player2 Played Copper.
     +1 Coin = 5 all together.
   Player2 bought Silver.
-  Player2 Drew Copper into hand.
-  Player2 Drew Warehouse into hand.
-  Player2 reshuffled
-  Player2 Drew Copper into hand.
   Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn
-
-
-ROUND 5
--------------
-Player1 begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Copper.
-    +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 bought Warehouse.
-  Player1 reshuffled
-  Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 ends turn
-
-
-Player2 begins turn
-With hand: Copper,Copper,Silver,Silver,Warehouse,
-  Player2 Played Warehouse.
-    Player2 Drew Copper into hand.
-    Player2 Drew Estate into hand.
-    Player2 Drew Silver into hand.
-    Player2 Discarded Estate.
-    Player2 Discarded Copper.
-    Player2 Discarded Copper.
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 Played Silver.
-    +2 Coin = 6 all together.
-  Player2 Played Copper.
-    +1 Coin = 7 all together.
-  Player2 bought Gold.
-  Player2 Drew Copper into hand.
   Player2 Drew Copper into hand.
   Player2 Drew Estate into hand.
+  Player2 Drew Silver into hand.
   Player2 Drew Estate into hand.
-  Player2 Drew Copper into hand.
   Player2 ends turn
 
 
 ROUND 6
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
+With hand: Copper,Copper,Estate,Warehouse,Warehouse,
+  Player1 Played Warehouse.
+    Player1 Drew Copper into hand.
+    Player1 Drew Copper into hand.
+    Player1 Drew Copper into hand.
+    Player1 Discarded Estate.
+    Player1 Discarded Copper.
+    Player1 Discarded Copper.
+  Player1 Played Warehouse.
+    Player1 Drew Ruined Library into hand.
+    Player1 Drew Copper into hand.
+    Player1 reshuffled
+    Player1 Drew Estate into hand.
+    Player1 Discarded Estate.
+    Player1 Discarded Ruined Library.
+    Player1 Discarded Copper.
+  Player1 Played Copper.
+    +1 Coin = 1 all together.
+  Player1 Played Copper.
+    +1 Coin = 2 all together.
+  Player1 Played Copper.
+    +1 Coin = 3 all together.
+  Player1 bought Silver.
+  Player1 Drew Silver into hand.
+  Player1 Drew Silver into hand.
+  Player1 Drew Estate into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Copper into hand.
+  Player1 ends turn
+
+
+Player2 begins turn
+With hand: Copper,Estate,Estate,Silver,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 Played Copper.
+    +1 Coin = 5 all together.
+  Player2 bought Silver.
+  Player2 Drew Estate into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Gold into hand.
+  Player2 reshuffled
+  Player2 Drew Copper into hand.
+  Player2 ends turn
+
+
+ROUND 7
+-------------
+Player1 begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
   Player1 Played Silver.
     +2 Coin = 2 all together.
   Player1 Played Silver.
@@ -251,63 +292,18 @@ With hand: Copper,Copper,Copper,Silver,Silver,
     +1 Coin = 5 all together.
   Player1 Played Copper.
     +1 Coin = 6 all together.
-  Player1 Played Copper.
-    +1 Coin = 7 all together.
   Player1 bought Gold.
+  Player1 Drew Copper into hand.
+  Player1 Drew Death Cart into hand.
   Player1 Drew Estate into hand.
+  Player1 Drew Ruined Library into hand.
+  Player1 reshuffled
   Player1 Drew Silver into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
   Player1 ends turn
 
 
 Player2 begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  Player2 Played Copper.
-    +1 Coin = 1 all together.
-  Player2 Played Copper.
-    +1 Coin = 2 all together.
-  Player2 Played Copper.
-    +1 Coin = 3 all together.
-  Player2 bought Warehouse.
-  Player2 Drew Copper into hand.
-  Player2 reshuffled
-  Player2 Drew Warehouse into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn
-
-
-ROUND 7
--------------
-Player1 begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Copper.
-    +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 bought Silver.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Warehouse into hand.
-  Player1 Drew Warehouse into hand.
-  Player1 Drew Estate into hand.
-  Player1 ends turn
-
-
-Player2 begins turn
-With hand: Copper,Copper,Copper,Silver,Warehouse,
-  Player2 Played Warehouse.
-    Player2 Drew Gold into hand.
-    Player2 Drew Copper into hand.
-    Player2 Drew Copper into hand.
-    Player2 Discarded Copper.
-    Player2 Discarded Copper.
-    Player2 Discarded Copper.
+With hand: Copper,Copper,Estate,Gold,Silver,
   Player2 Played Gold.
     +3 Coin = 3 all together.
   Player2 Played Silver.
@@ -317,57 +313,36 @@ With hand: Copper,Copper,Copper,Silver,Warehouse,
   Player2 Played Copper.
     +1 Coin = 7 all together.
   Player2 bought Gold.
-  Player2 Drew Silver into hand.
-  Player2 Drew Warehouse into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Estate into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
   Player2 ends turn
 
 
 ROUND 8
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Estate,Warehouse,Warehouse,
-  Player1 Played Warehouse.
-    Player1 reshuffled
-    Player1 Drew Silver into hand.
-    Player1 Drew Copper into hand.
-    Player1 Drew Copper into hand.
-    Player1 Discarded Estate.
-    Player1 Discarded Copper.
-    Player1 Discarded Copper.
-  Player1 Played Warehouse.
-    Player1 Drew Silver into hand.
-    Player1 Drew Estate into hand.
-    Player1 Drew Copper into hand.
-    Player1 Discarded Estate.
-    Player1 Discarded Copper.
-    Player1 Discarded Copper.
+With hand: Copper,Death Cart,Estate,Ruined Library,Silver,
+  Player1 Played Death Cart.
+    +5 Coin = 5 all together.
+    Player1 trashed Ruined Library.
   Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Silver.
-    +2 Coin = 4 all together.
+    +2 Coin = 7 all together.
   Player1 Played Copper.
-    +1 Coin = 5 all together.
-  Player1 bought Silver.
+    +1 Coin = 8 all together.
+  Player1 bought Gold.
+  Player1 Drew Silver into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Copper into hand.
   Player1 Drew Silver into hand.
   Player1 Drew Estate into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Gold into hand.
-  Player1 Drew Copper into hand.
   Player1 ends turn
 
 
 Player2 begins turn
-With hand: Copper,Estate,Estate,Silver,Warehouse,
-  Player2 Played Warehouse.
-    Player2 Drew Silver into hand.
-    Player2 Drew Copper into hand.
-    Player2 Drew Estate into hand.
-    Player2 Discarded Estate.
-    Player2 Discarded Estate.
-    Player2 Discarded Estate.
+With hand: Copper,Copper,Copper,Silver,Silver,
   Player2 Played Silver.
     +2 Coin = 2 all together.
   Player2 Played Silver.
@@ -376,12 +351,13 @@ With hand: Copper,Estate,Estate,Silver,Warehouse,
     +1 Coin = 5 all together.
   Player2 Played Copper.
     +1 Coin = 6 all together.
+  Player2 Played Copper.
+    +1 Coin = 7 all together.
   Player2 bought Gold.
-  Player2 reshuffled
+  Player2 Drew Copper into hand.
   Player2 Drew Estate into hand.
-  Player2 Drew Gold into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
   Player2 Drew Silver into hand.
   Player2 ends turn
 
@@ -389,40 +365,40 @@ With hand: Copper,Estate,Estate,Silver,Warehouse,
 ROUND 9
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
+With hand: Copper,Copper,Estate,Silver,Silver,
   Player1 Played Silver.
-    +2 Coin = 5 all together.
+    +2 Coin = 2 all together.
+  Player1 Played Silver.
+    +2 Coin = 4 all together.
+  Player1 Played Copper.
+    +1 Coin = 5 all together.
   Player1 Played Copper.
     +1 Coin = 6 all together.
-  Player1 Played Copper.
-    +1 Coin = 7 all together.
   Player1 bought Gold.
-  Player1 Drew Silver into hand.
-  Player1 reshuffled
+  Player1 Drew Ruined Library into hand.
+  Player1 Drew Warehouse into hand.
   Player1 Drew Gold into hand.
+  Player1 Drew Warehouse into hand.
   Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
   Player1 ends turn
 
 
 Player2 begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
+With hand: Copper,Copper,Estate,Silver,Silver,
   Player2 Played Silver.
-    +2 Coin = 5 all together.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 Played Copper.
+    +1 Coin = 5 all together.
   Player2 Played Copper.
     +1 Coin = 6 all together.
-  Player2 Played Copper.
-    +1 Coin = 7 all together.
   Player2 bought Gold.
-  Player2 Drew Warehouse into hand.
   Player2 Drew Estate into hand.
+  Player2 reshuffled
+  Player2 Drew Gold into hand.
+  Player2 Drew Gold into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
   Player2 Drew Silver into hand.
   Player2 ends turn
 
@@ -430,283 +406,34 @@ With hand: Copper,Copper,Estate,Gold,Silver,
 ROUND 10
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
-  Player1 Played Silver.
-    +2 Coin = 5 all together.
-  Player1 Played Silver.
-    +2 Coin = 7 all together.
-  Player1 Played Copper.
-    +1 Coin = 8 all together.
-  Player1 Played Copper.
-    +1 Coin = 9 all together.
-  Player1 bought Gold.
-  Player1 Drew Silver into hand.
-  Player1 Drew Gold into hand.
-  Player1 Drew Warehouse into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Estate into hand.
-  Player1 ends turn
-
-
-Player2 begins turn
-With hand: Copper,Estate,Estate,Silver,Warehouse,
-  Player2 Played Warehouse.
-    Player2 Drew Copper into hand.
-    Player2 Drew Copper into hand.
-    Player2 Drew Silver into hand.
-    Player2 Discarded Estate.
-    Player2 Discarded Estate.
-    Player2 Discarded Copper.
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 Played Copper.
-    +1 Coin = 5 all together.
-  Player2 Played Copper.
-    +1 Coin = 6 all together.
-  Player2 bought Gold.
-  Player2 Drew Copper into hand.
-  Player2 Drew Gold into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Warehouse into hand.
-  Player2 Drew Gold into hand.
-  Player2 ends turn
-
-
-ROUND 11
--------------
-Player1 begins turn
-With hand: Copper,Estate,Gold,Silver,Warehouse,
+With hand: Copper,Gold,Ruined Library,Warehouse,Warehouse,
   Player1 Played Warehouse.
-    Player1 Drew Silver into hand.
-    Player1 Drew Silver into hand.
+    Player1 Drew Copper into hand.
+    Player1 Drew Copper into hand.
     Player1 Drew Estate into hand.
     Player1 Discarded Estate.
-    Player1 Discarded Estate.
+    Player1 Discarded Ruined Library.
     Player1 Discarded Copper.
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
-  Player1 Played Silver.
-    +2 Coin = 5 all together.
-  Player1 Played Silver.
-    +2 Coin = 7 all together.
-  Player1 Played Silver.
-    +2 Coin = 9 all together.
-  Player1 bought Province.
-  Player1 Drew Warehouse into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn
-
-
-Player2 begins turn
-With hand: Copper,Copper,Gold,Gold,Warehouse,
-  Player2 Played Warehouse.
-    Player2 reshuffled
-    Player2 Drew Silver into hand.
-    Player2 Drew Copper into hand.
-    Player2 Drew Gold into hand.
-    Player2 Discarded Copper.
-    Player2 Discarded Copper.
-    Player2 Discarded Copper.
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
-  Player2 Played Gold.
-    +3 Coin = 6 all together.
-  Player2 Played Gold.
-    +3 Coin = 9 all together.
-  Player2 Played Silver.
-    +2 Coin = 11 all together.
-  Player2 bought Province.
-  Player2 Drew Gold into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Copper into hand.
-  Player2 ends turn
-
-
-ROUND 12
--------------
-Player1 begins turn
-With hand: Copper,Copper,Copper,Estate,Warehouse,
   Player1 Played Warehouse.
     Player1 Drew Copper into hand.
     Player1 reshuffled
-    Player1 Drew Gold into hand.
-    Player1 Drew Province into hand.
-    Player1 Discarded Province.
-    Player1 Discarded Estate.
+    Player1 Drew Copper into hand.
+    Player1 Drew Silver into hand.
+    Player1 Discarded Copper.
+    Player1 Discarded Copper.
     Player1 Discarded Copper.
   Player1 Played Gold.
     +3 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 Played Copper.
-    +1 Coin = 5 all together.
+  Player1 Played Silver.
+    +2 Coin = 5 all together.
   Player1 Played Copper.
     +1 Coin = 6 all together.
   Player1 bought Gold.
-  Player1 Drew Warehouse into hand.
-  Player1 Drew Copper into hand.
+  Player1 Drew Gold into hand.
   Player1 Drew Copper into hand.
   Player1 Drew Estate into hand.
-  Player1 Drew Silver into hand.
-  Player1 ends turn
-
-
-Player2 begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
-  Player2 Played Silver.
-    +2 Coin = 5 all together.
-  Player2 Played Copper.
-    +1 Coin = 6 all together.
-  Player2 Played Copper.
-    +1 Coin = 7 all together.
-  Player2 bought Gold.
-  Player2 Drew Gold into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Warehouse into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Estate into hand.
-  Player2 ends turn
-
-
-ROUND 13
--------------
-Player1 begins turn
-With hand: Copper,Copper,Estate,Silver,Warehouse,
-  Player1 Played Warehouse.
-    Player1 Drew Silver into hand.
-    Player1 Drew Estate into hand.
-    Player1 Drew Silver into hand.
-    Player1 Discarded Estate.
-    Player1 Discarded Estate.
-    Player1 Discarded Copper.
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Silver.
-    +2 Coin = 4 all together.
-  Player1 Played Silver.
-    +2 Coin = 6 all together.
-  Player1 Played Copper.
-    +1 Coin = 7 all together.
-  Player1 bought Gold.
-  Player1 Drew Silver into hand.
-  Player1 Drew Gold into hand.
-  Player1 Drew Gold into hand.
+  Player1 Drew Ruined Library into hand.
   Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 ends turn
-
-
-Player2 begins turn
-With hand: Copper,Estate,Estate,Gold,Warehouse,
-  Player2 Played Warehouse.
-    Player2 Drew Silver into hand.
-    Player2 Drew Copper into hand.
-    Player2 reshuffled
-    Player2 Drew Warehouse into hand.
-    Player2 Discarded Estate.
-    Player2 Discarded Estate.
-    Player2 Discarded Copper.
-  Player2 Played Warehouse.
-    Player2 Drew Silver into hand.
-    Player2 Drew Copper into hand.
-    Player2 Drew Copper into hand.
-    Player2 Discarded Copper.
-    Player2 Discarded Copper.
-    Player2 Discarded Copper.
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
-  Player2 Played Silver.
-    +2 Coin = 5 all together.
-  Player2 Played Silver.
-    +2 Coin = 7 all together.
-  Player2 bought Gold.
-  Player2 Drew Copper into hand.
-  Player2 Drew Gold into hand.
-  Player2 Drew Gold into hand.
-  Player2 Drew Province into hand.
-  Player2 Drew Gold into hand.
-  Player2 ends turn
-
-
-ROUND 14
--------------
-Player1 begins turn
-With hand: Copper,Gold,Gold,Silver,Silver,
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
-  Player1 Played Gold.
-    +3 Coin = 6 all together.
-  Player1 Played Silver.
-    +2 Coin = 8 all together.
-  Player1 Played Silver.
-    +2 Coin = 10 all together.
-  Player1 Played Copper.
-    +1 Coin = 11 all together.
-  Player1 bought Province.
-  Player1 reshuffled
-  Player1 Drew Silver into hand.
-  Player1 Drew Warehouse into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Province into hand.
-  Player1 Drew Silver into hand.
-  Player1 ends turn
-
-
-Player2 begins turn
-With hand: Copper,Gold,Gold,Gold,Province,
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
-  Player2 Played Gold.
-    +3 Coin = 6 all together.
-  Player2 Played Gold.
-    +3 Coin = 9 all together.
-  Player2 Played Copper.
-    +1 Coin = 10 all together.
-  Player2 bought Province.
-  Player2 Drew Silver into hand.
-  Player2 Drew Gold into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Gold into hand.
-  Player2 ends turn
-
-
-ROUND 15
--------------
-Player1 begins turn
-With hand: Province,Silver,Silver,Silver,Warehouse,
-  Player1 Played Warehouse.
-    Player1 Drew Gold into hand.
-    Player1 Drew Copper into hand.
-    Player1 Drew Copper into hand.
-    Player1 Discarded Province.
-    Player1 Discarded Copper.
-    Player1 Discarded Copper.
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
-  Player1 Played Silver.
-    +2 Coin = 5 all together.
-  Player1 Played Silver.
-    +2 Coin = 7 all together.
-  Player1 Played Silver.
-    +2 Coin = 9 all together.
-  Player1 bought Province.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Province into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Gold into hand.
   Player1 ends turn
 
 
@@ -721,64 +448,236 @@ With hand: Copper,Estate,Gold,Gold,Silver,
   Player2 Played Copper.
     +1 Coin = 9 all together.
   Player2 bought Province.
+  Player2 Drew Silver into hand.
+  Player2 Drew Estate into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
   Player2 Drew Copper into hand.
-  Player2 reshuffled
-  Player2 Drew Province into hand.
-  Player2 Drew Gold into hand.
-  Player2 Drew Province into hand.
-  Player2 Drew Warehouse into hand.
   Player2 ends turn
 
 
-ROUND 16
+ROUND 11
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Estate,Gold,Province,
+With hand: Copper,Copper,Estate,Gold,Ruined Library,
+  Player1 Played Ruined Library.
+    Player1 Drew Gold into hand.
   Player1 Played Gold.
     +3 Coin = 3 all together.
+  Player1 Played Gold.
+    +3 Coin = 6 all together.
   Player1 Played Copper.
-    +1 Coin = 4 all together.
+    +1 Coin = 7 all together.
   Player1 Played Copper.
-    +1 Coin = 5 all together.
-  Player1 bought Duchy.
-  Player1 Drew Gold into hand.
+    +1 Coin = 8 all together.
+  Player1 bought Province.
   Player1 Drew Silver into hand.
+  Player1 Drew Estate into hand.
   Player1 Drew Copper into hand.
+  Player1 Drew Silver into hand.
+  Player1 Drew Death Cart into hand.
+  Player1 ends turn
+
+
+Player2 begins turn
+With hand: Copper,Estate,Silver,Silver,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 Played Silver.
+    +2 Coin = 6 all together.
+  Player2 Played Copper.
+    +1 Coin = 7 all together.
+  Player2 bought Gold.
+  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Gold into hand.
+  Player2 ends turn
+
+
+ROUND 12
+-------------
+Player1 begins turn
+With hand: Copper,Death Cart,Estate,Silver,Silver,
+  Player1 Played Death Cart.
+    +5 Coin = 5 all together.
+    Player1 trashed Death Cart.
+  Player1 Played Silver.
+    +2 Coin = 7 all together.
+  Player1 Played Silver.
+    +2 Coin = 9 all together.
+  Player1 Played Copper.
+    +1 Coin = 10 all together.
+  Player1 bought Province.
+  Player1 Drew Estate into hand.
+  Player1 reshuffled
   Player1 Drew Copper into hand.
+  Player1 Drew Estate into hand.
+  Player1 Drew Gold into hand.
   Player1 Drew Silver into hand.
   Player1 ends turn
 
 
 Player2 begins turn
-With hand: Copper,Gold,Province,Province,Warehouse,
-  Player2 Played Warehouse.
-    Player2 Drew Copper into hand.
-    Player2 Drew Gold into hand.
-    Player2 Drew Gold into hand.
-    Player2 Discarded Province.
-    Player2 Discarded Province.
-    Player2 Discarded Copper.
+With hand: Copper,Copper,Copper,Gold,Silver,
+  Player2 Played Gold.
+    +3 Coin = 3 all together.
+  Player2 Played Silver.
+    +2 Coin = 5 all together.
+  Player2 Played Copper.
+    +1 Coin = 6 all together.
+  Player2 Played Copper.
+    +1 Coin = 7 all together.
+  Player2 Played Copper.
+    +1 Coin = 8 all together.
+  Player2 bought Province.
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Gold into hand.
+  Player2 Drew Estate into hand.
+  Player2 reshuffled
+  Player2 Drew Silver into hand.
+  Player2 ends turn
+
+
+ROUND 13
+-------------
+Player1 begins turn
+With hand: Copper,Estate,Estate,Gold,Silver,
+  Player1 Played Gold.
+    +3 Coin = 3 all together.
+  Player1 Played Silver.
+    +2 Coin = 5 all together.
+  Player1 Played Copper.
+    +1 Coin = 6 all together.
+  Player1 bought Duchy.
+  Player1 Drew Warehouse into hand.
+  Player1 Drew Province into hand.
+  Player1 Drew Ruined Library into hand.
+  Player1 Drew Gold into hand.
+  Player1 Drew Copper into hand.
+  Player1 ends turn
+
+
+Player2 begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  Player2 Played Gold.
+    +3 Coin = 3 all together.
+  Player2 Played Silver.
+    +2 Coin = 5 all together.
+  Player2 Played Copper.
+    +1 Coin = 6 all together.
+  Player2 Played Copper.
+    +1 Coin = 7 all together.
+  Player2 bought Duchy.
+  Player2 Drew Gold into hand.
+  Player2 Drew Gold into hand.
+  Player2 Drew Gold into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Copper into hand.
+  Player2 ends turn
+
+
+ROUND 14
+-------------
+Player1 begins turn
+With hand: Copper,Gold,Province,Ruined Library,Warehouse,
+  Player1 Played Warehouse.
+    Player1 Drew Gold into hand.
+    Player1 Drew Copper into hand.
+    Player1 Drew Gold into hand.
+    Player1 Discarded Province.
+    Player1 Discarded Ruined Library.
+    Player1 Discarded Copper.
+  Player1 Played Gold.
+    +3 Coin = 3 all together.
+  Player1 Played Gold.
+    +3 Coin = 6 all together.
+  Player1 Played Gold.
+    +3 Coin = 9 all together.
+  Player1 Played Copper.
+    +1 Coin = 10 all together.
+  Player1 bought Province.
+  Player1 Drew Silver into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Estate into hand.
+  Player1 ends turn
+
+
+Player2 begins turn
+With hand: Copper,Gold,Gold,Gold,Silver,
   Player2 Played Gold.
     +3 Coin = 3 all together.
   Player2 Played Gold.
     +3 Coin = 6 all together.
   Player2 Played Gold.
     +3 Coin = 9 all together.
+  Player2 Played Silver.
+    +2 Coin = 11 all together.
   Player2 Played Copper.
-    +1 Coin = 10 all together.
+    +1 Coin = 12 all together.
   Player2 bought Province.
   Player2 Drew Silver into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Gold into hand.
   Player2 Drew Copper into hand.
+  Player2 Drew Estate into hand.
+  Player2 Drew Province into hand.
+  Player2 Drew Province into hand.
   Player2 ends turn
 
 
-ROUND 17
+ROUND 15
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
+With hand: Copper,Copper,Copper,Estate,Silver,
+  Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Played Copper.
+    +1 Coin = 3 all together.
+  Player1 Played Copper.
+    +1 Coin = 4 all together.
+  Player1 Played Copper.
+    +1 Coin = 5 all together.
+  Player1 bought Duchy.
+  Player1 Drew Silver into hand.
+  Player1 Drew Province into hand.
+  Player1 Drew Warehouse into hand.
+  Player1 Drew Copper into hand.
+  Player1 reshuffled
+  Player1 Drew Copper into hand.
+  Player1 ends turn
+
+
+Player2 begins turn
+With hand: Copper,Estate,Province,Province,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Copper.
+    +1 Coin = 3 all together.
+  Player2 bought Estate.
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Gold into hand.
+  Player2 ends turn
+
+
+ROUND 16
+-------------
+Player1 begins turn
+With hand: Copper,Copper,Province,Silver,Warehouse,
+  Player1 Played Warehouse.
+    Player1 Drew Copper into hand.
+    Player1 Drew Gold into hand.
+    Player1 Drew Silver into hand.
+    Player1 Discarded Province.
+    Player1 Discarded Copper.
+    Player1 Discarded Copper.
   Player1 Played Gold.
     +3 Coin = 3 all together.
   Player1 Played Silver.
@@ -787,18 +686,38 @@ With hand: Copper,Copper,Gold,Silver,Silver,
     +2 Coin = 7 all together.
   Player1 Played Copper.
     +1 Coin = 8 all together.
-  Player1 Played Copper.
-    +1 Coin = 9 all together.
   Player1 bought Province.
   Player1 Drew Copper into hand.
+  Player1 Drew Silver into hand.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Ruined Library into hand.
   Player1 Drew Gold into hand.
-  Player1 Drew Gold into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Estate into hand.
   Player1 ends turn
 
 
-Game ended in 17 turns.
+Player2 begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  Player2 Played Gold.
+    +3 Coin = 3 all together.
+  Player2 Played Silver.
+    +2 Coin = 5 all together.
+  Player2 Played Copper.
+    +1 Coin = 6 all together.
+  Player2 Played Copper.
+    +1 Coin = 7 all together.
+  Player2 Played Copper.
+    +1 Coin = 8 all together.
+  Player2 bought Province.
+  Player2 Drew Silver into hand.
+  Player2 Drew Estate into hand.
+  Player2 reshuffled
+  Player2 Drew Province into hand.
+  Player2 Drew Gold into hand.
+  Player2 Drew Copper into hand.
+  Player2 ends turn
+
+
+Game ended in 16 turns.
 Player1 Won!
-Player1 total score: 30
-Player2 total score: 27
+Player1 total score: 33
+Player2 total score: 31

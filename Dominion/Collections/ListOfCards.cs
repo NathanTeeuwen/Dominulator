@@ -47,6 +47,14 @@ namespace Dominion
             this.cards.Add(card);
         }
 
+        public void AddNCardsToTop(Card card, int count)
+        {
+            for (int i = 0; i < count; ++i)
+            {
+                this.AddCardToTop(card);
+            }
+        }
+
         public void RemoveNCardsFromTop(int count)
         {
             for (int i = 0; i < count; ++i)

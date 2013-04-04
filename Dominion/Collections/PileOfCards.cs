@@ -17,11 +17,12 @@ namespace Dominion
 
         public PileOfCards(Card protoType, int count)
         {
-            for (int i = 0; i < count; ++i)
-            {
-                this.AddCardToTop(protoType);
-            }
+            this.AddNCardsToTop(protoType, count);           
+            this.protoType = protoType;
+        }
 
+        public PileOfCards(Card protoType)
+        {
             this.protoType = protoType;
         }
 

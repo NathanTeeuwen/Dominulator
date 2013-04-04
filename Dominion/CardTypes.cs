@@ -1334,8 +1334,59 @@ namespace Dominion.CardTypes
         Card
     {
         public Ruin()
-            : base("Ruin", coinCost: 0, isAction: true)
+            : base("Ruin", coinCost: 0, isAction: true, isRuin: true)
         {
+        }
+    }
+
+    public class AbandonedMine :
+        Card
+    {
+        public AbandonedMine()
+            : base("Abandoned Mine", coinCost: 0, isAction: true, plusCoins: 1, isRuin: true)
+        {
+        }
+    }
+
+    public class RuinedLibrary :
+        Card
+    {
+        public RuinedLibrary()
+            : base("Ruined Library", coinCost: 0, isAction: true, plusCards:1, isRuin: true)
+        {
+        }
+    }
+
+    public class RuinedMarket :
+        Card
+    {
+        public RuinedMarket()
+            : base("Ruined Market", coinCost: 0, isAction: true, plusBuy: 1, isRuin: true)
+        {
+        }
+    }
+
+    public class RuinedVillage :
+        Card
+    {
+        public RuinedVillage()
+            : base("Ruined Village", coinCost: 0, isAction: true, plusActions: 1, isRuin: true)
+        {
+        }
+    }
+
+    public class Survivors :
+        Card
+    {
+        public Survivors()
+            : base("Survivors", coinCost: 0, isAction: true, isRuin: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RevealCardsFromDeck(2);
+            currentPlayer.RequestPlayerPutRevealedCardsBackOnDeck(gameState);
         }
     }
 

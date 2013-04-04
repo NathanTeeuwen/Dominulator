@@ -23,7 +23,7 @@ namespace Dominion
         public readonly bool attackDependsOnPlayerChoice;
         public readonly bool isCurse;
         public readonly bool isReaction;
-        public readonly bool isRune;
+        public readonly bool isRuin;
         public readonly bool isTreasure;
         public readonly bool requiresRuins;
 
@@ -42,7 +42,7 @@ namespace Dominion
             bool attackDependsOnPlayerChoice = true,
             bool isCurse = false,
             bool isReaction = false,
-            bool isRune = false,
+            bool isRuin = false,
             bool isTreasure = false,
             bool requiresRuins = false)
         {
@@ -59,7 +59,7 @@ namespace Dominion
             this.attackDependsOnPlayerChoice = attackDependsOnPlayerChoice;
             this.isCurse = isCurse;
             this.isReaction = isReaction;
-            this.isRune = isRune;
+            this.isRuin = isRuin;
             this.isTreasure = isTreasure;
             this.defualtSupplyCount = defaultSupplyCount;
             this.requiresRuins = requiresRuins;

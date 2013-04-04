@@ -128,7 +128,28 @@ namespace Dominion
 
         private static PileOfCards CreateRuins(int ruinsCount)
         {
-            var result = new PileOfCards(new CardTypes.Ruin(), ruinsCount);
+            int ruinCountPerPile = 10;
+            var allRuinsCards = new ListOfCards();
+            allRuinsCards.AddNCardsToTop(new CardTypes.AbandonedMine(), ruinCountPerPile);
+            allRuinsCards.AddNCardsToTop(new CardTypes.RuinedMarket(), ruinCountPerPile);
+            allRuinsCards.AddNCardsToTop(new CardTypes.RuinedLibrary(), ruinCountPerPile);
+            allRuinsCards.AddNCardsToTop(new CardTypes.RuinedVillage(), ruinCountPerPile);
+            allRuinsCards.AddNCardsToTop(new CardTypes.Survivors(), ruinCountPerPile);
+
+            allRuinsCards.Shuffle();
+
+            var result = new PileOfCards(new CardTypes.Ruin());
+
+            for (int i = 0; i < ruinsCount; ++i)
+            {
+                Card card = allRuinsCards.DrawCardFromTop();
+                if (card == null)
+                {
+                    throw new Exception("Not enough ruins available.");
+                }
+                result.AddCardToTop(card);
+            }
+                        
             return result;
         }
 
@@ -274,7 +295,8 @@ namespace Dominion
                 if (gainedCard == null)
                 {
                     return;
-                }                
+                }
+                currentPlayerState.turnCounters.availableCoins -= gainedCard.CurrentCoinCost(currentPlayerState);
                 currentPlayerState.turnCounters.availableBuys -= 1;
             }
         }

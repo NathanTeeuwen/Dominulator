@@ -11,7 +11,7 @@ namespace Dominion
     {
         internal int availableActionCount;
         internal int availableBuys;
-        private int availableCoins;
+        internal int availableCoins;
         internal int cardCoinDiscount;
         internal HashSet<Type> cardsBannedFromPurchase = new HashSet<Type>();
         internal int copperAdditionalValue = 0;
@@ -54,6 +54,7 @@ namespace Dominion
         public IPlayerAction Actions { get { return this.actions; } }
         public int AvailableCoins { get { return this.turnCounters.AvailableCoins; } }
         public BagOfCards Hand { get { return this.hand; } }
+        public BagOfCards CardsBeingRevealed { get { return this.cardsBeingRevealed; } }
 
         internal PlayerTurnCounters turnCounters = new PlayerTurnCounters();
 
@@ -600,6 +601,20 @@ namespace Dominion
 
             return true;
         }
+
+        internal void RequestPlayerPutRevealedCardsBackOnDeck(GameState gameState)
+        {
+            while (this.cardsBeingRevealed.Any)
+            {
+                Type cardToPutOnTop = this.actions.GetCardFromRevealedCardsToPutOnDeck(gameState);
+                if (cardToPutOnTop == null)
+                {
+                    throw new Exception("Player must choose a card to put on top of deck");
+                }
+
+                this.MoveRevealedCardToTopOfDeck(cardToPutOnTop);
+            }
+        }        
 
         private void DiscardCard(Card cardToDiscard, GameState gameState)
         {
