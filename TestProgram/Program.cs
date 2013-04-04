@@ -819,7 +819,7 @@ namespace Program
                 int countSilvers = CountAllOwned<CardTypes.Silver>(gameState);
                 int countFeodum = CountAllOwned<CardTypes.Feodum>(gameState);
 
-                if (countSilvers < 3)
+                if (countSilvers < 8)
                 {
                     return true;
                 }
