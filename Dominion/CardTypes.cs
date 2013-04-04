@@ -1311,6 +1311,23 @@ namespace Dominion.CardTypes
         }
     }
 
+    // Seaside
+
+    public class Warehouse :
+        Card
+    {
+        public Warehouse()
+            : base("Warehouse", coinCost: 3, isAction: true, plusActions:1, plusCards:3)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 3);
+        }       
+    }
+
+
     // Dark Ages    
 
     public class Ruin :

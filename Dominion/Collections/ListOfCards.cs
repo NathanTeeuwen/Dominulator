@@ -11,12 +11,20 @@ namespace Dominion
     {
         static Random random = new Random();
 
+        private static int NumberBetweenInclusive(int lowerBoundInclusive, int upperBoundInclusive)
+        {
+            int count = upperBoundInclusive - lowerBoundInclusive + 1;
+
+            return random.Next(count) + lowerBoundInclusive;
+        }
+
         public void Shuffle()
         {
-            for (int i = 0; i < this.cards.Count; ++i)
+            int lastIndex = this.cards.Count() - 1;
+            for (int currentIndex = 0; currentIndex < lastIndex; ++currentIndex)
             {
-                int other = ListOfCards.random.Next(this.cards.Count);
-                Swap(i, other);
+                int swapIndex = NumberBetweenInclusive(currentIndex, lastIndex);
+                Swap(currentIndex, swapIndex);
             }
         }
 

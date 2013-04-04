@@ -212,6 +212,7 @@ namespace Dominion
             }
 
             this.gameLog.PlayedCard(this, currentCard);
+            this.gameLog.BeginScope();
             this.cardsBeingPlayed.AddCardToTop(currentCard);
             
             for (int i = 0; i < countTimes; ++i)
@@ -242,6 +243,8 @@ namespace Dominion
             {
                 this.playedCards.AddCard(cardAfterPlay);
             }
+
+            this.gameLog.EndScope();
         }
 
         internal void DoPlayTreasure(Card currentCard, GameState gameState)
@@ -252,7 +255,7 @@ namespace Dominion
             }
 
             this.gameLog.PlayedCard(this, currentCard);
-
+            this.gameLog.BeginScope();
             this.cardsBeingPlayed.AddCardToTop(currentCard);
 
             this.turnCounters.availableBuys += currentCard.plusBuy;
@@ -268,6 +271,8 @@ namespace Dominion
             {
                 this.playedCards.AddCard(cardAfterPlay);
             }
+
+            this.gameLog.EndScope();
         }
 
         /*
@@ -591,9 +596,15 @@ namespace Dominion
                 throw new Exception("Could not remove Card From Hand");
             }
 
-            this.discard.AddCardToTop(cardToDiscard);
+            this.DiscardCard(cardToDiscard, gameState);
 
             return true;
+        }
+
+        private void DiscardCard(Card cardToDiscard, GameState gameState)
+        {
+            this.gameLog.PlayerDiscardCard(this, cardToDiscard);
+            this.discard.AddCardToTop(cardToDiscard);
         }
 
         internal Card RequestPlayerTopDeckCardFromHand(GameState gameState, CardPredicate acceptableCard, bool isOptional)
@@ -718,7 +729,7 @@ namespace Dominion
             // TODO: check if card in play reacts            
             // TODO: check if there is a reaction in hand for gaining a card
             
-            if (gainReason == GainReason.Bought)
+            if (gainReason == GainReason.Buy)
             {
                 this.gameLog.PlayerBoughtCard(this, card);
             }
@@ -876,6 +887,11 @@ namespace Dominion
                 }
 
                 foreach (Card card in this.cardsBeingPlayed)
+                {
+                    yield return card;
+                }
+
+                foreach (Card card in this.playedCards)
                 {
                     yield return card;
                 }

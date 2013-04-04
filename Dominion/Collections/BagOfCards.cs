@@ -9,9 +9,14 @@ namespace Dominion
     public class BagOfCards
         : CollectionCards
     {
-        internal void AddCard(Card card)
+        public void AddCard(Card card)
         {
             this.cards.Add(card);
+        }
+
+        public bool HasCard(Card card)
+        {
+            return HasCard(card.GetType());
         }
 
         public bool HasCard(Type t)
@@ -41,7 +46,7 @@ namespace Dominion
             return this.RemoveFromEnd();
         }
 
-        internal Card RemoveCard(Card card)
+        public Card RemoveCard(Card card)
         {
             return RemoveCard(card.GetType());
         }

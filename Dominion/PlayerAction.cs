@@ -9,6 +9,8 @@ namespace Dominion
     public interface IGameLog
         : IDisposable
     {
+        void BeginScope();
+        void EndScope();
         void BeginRound();
         void BeginTurn(PlayerState playerState);
         void EndTurn(PlayerState playerState);
@@ -16,6 +18,7 @@ namespace Dominion
         void GainedCard(PlayerState playerState, Card card);
         void PlayedCard(PlayerState playerState, Card card);
         void PlayerGainedCard(PlayerState playerState, Card card);
+        void PlayerDiscardCard(PlayerState playerState, Card card);
         void PlayerTrashedCard(PlayerState playerState, Card card);
         void DrewCardIntoHand(PlayerState playerState, Card card);
         void DiscardedCard(PlayerState playerState, Card card);
@@ -187,27 +190,164 @@ namespace Dominion
         }
     }
 
-    public class DefaultLog
-        : IGameLog, IDisposable
+    public class EmptyGameLog
+        : IGameLog
     {
-        int roundNumber = 0;
+        public void Dispose()
+        {         
+        }
+
+        public void BeginRound()
+        {            
+        }
+
+        public void BeginScope()
+        {
+
+        }
+
+        public void EndScope()
+        {
+
+        }
+
+        public void BeginTurn(PlayerState playerState)
+        {            
+        }
+
+        public void EndTurn(PlayerState playerState)
+        {         
+        }
+
+        public void PlayerBoughtCard(PlayerState playerState, Card card)
+        {         
+        }
+
+        public void GainedCard(PlayerState playerState, Card card)
+        {         
+        }
+
+        public void DrewCardIntoHand(PlayerState playerState, Card card)
+        {         
+        }
+
+        public void DiscardedCard(PlayerState playerState, Card card)
+        {         
+        }
+
+        public void PlayerGainedCard(PlayerState playerState, Card card)
+        {         
+        }
+
+        public void PlayerDiscardCard(PlayerState playerState, Card card)
+        {
+        }
+
+        public void PlayerTrashedCard(PlayerState playerState, Card card)
+        {         
+        }
+
+        public void PlayedCard(PlayerState playerState, Card card)
+        {         
+        }
+
+        public void ReshuffledDiscardIntoDeck(PlayerState playerState)
+        {         
+        }
+
+        public void EndGame(GameState gameState)
+        {        
+        }
+
+        public void PlayerGainedCoin(PlayerState playerState, int coinAmount)
+        {            
+        }
+    }
+
+    internal class IndentedTextWriter
+        : IDisposable
+    {
+        private bool isNewLine = true;
+        int indentLevel = 0;
         System.IO.TextWriter textWriter;
 
-        public DefaultLog(string filename)
+        public IndentedTextWriter(string filename)
         {
-            if (filename == null)
+            this.textWriter = new System.IO.StreamWriter(filename);
+        }
+
+        public void Indent()
+        {
+            this.indentLevel++;
+        }
+
+        public void Unindent()
+        {
+            this.indentLevel--;
+        }
+
+        public void Write(string format, params object[] args)
+        {
+            IndentIfNewLine();
+            this.textWriter.Write(format, args);
+        }
+
+        public void WriteLine(string format, params object[] args)
+        {
+            IndentIfNewLine();
+            this.textWriter.WriteLine(format, args);
+            this.isNewLine = true;
+        }
+
+        public void WriteLine()
+        {
+            this.textWriter.WriteLine();
+            this.isNewLine = true;
+        }
+
+        private void IndentIfNewLine()
+        {
+            if (this.isNewLine)
             {
-                this.textWriter = System.IO.TextWriter.Null;
-            }
-            else
-            {
-                this.textWriter = new System.IO.StreamWriter(filename);
+                for (int i = 0; i < this.indentLevel; ++i)
+                {
+                    this.textWriter.Write("  ");
+                }
+
+                this.isNewLine = false;
             }
         }
 
         public void Dispose()
         {
             this.textWriter.Dispose();
+        }
+    }
+
+    public class HumanReadableGameLog
+        : IGameLog, IDisposable
+    {
+        int roundNumber = 0;
+        IndentedTextWriter textWriter;
+
+        public HumanReadableGameLog(string filename)
+        {
+            this.textWriter = new IndentedTextWriter(filename);
+        }
+
+        public void Dispose()
+        {
+            this.textWriter.Dispose();
+        }
+
+        public void BeginScope()
+        {
+            this.textWriter.Indent();
+        }
+
+        public void EndScope()
+        {
+            this.textWriter.Unindent();
         }
 
         public void BeginRound()
@@ -218,14 +358,14 @@ namespace Dominion
 
         public void BeginTurn(PlayerState playerState)
         {
-            this.textWriter.WriteLine("{0} begins turn", playerState.actions.PlayerName);
-            this.textWriter.Write("     With hand: ");
+            this.textWriter.WriteLine("{0} begins turn", playerState.actions.PlayerName);            
+            this.textWriter.Write("With hand: ");
 
             foreach(Card card in playerState.Hand.OrderBy(card => card.name))
             {
                 this.textWriter.Write(card.name + ",");
             }
-            this.textWriter.WriteLine();
+            this.textWriter.WriteLine();            
         }
 
         public void EndTurn(PlayerState playerState)
@@ -237,12 +377,12 @@ namespace Dominion
 
         public void PlayerBoughtCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} bought {1}", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} bought {1}.", playerState.actions.PlayerName, card.name);
         }
 
         public void GainedCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} Gained {1}", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} Gained {1}.", playerState.actions.PlayerName, card.name);
         }
 
         public void DrewCardIntoHand(PlayerState playerState, Card card)
@@ -252,22 +392,27 @@ namespace Dominion
 
         public void DiscardedCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} Discarded {1}", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} Discarded {1}.", playerState.actions.PlayerName, card.name);
         }
 
         public void PlayerGainedCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} gained {1}", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} gained {1}.", playerState.actions.PlayerName, card.name);
         }
 
         public void PlayerTrashedCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} trashed {1}", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} trashed {1}.", playerState.actions.PlayerName, card.name);
         }
 
         public void PlayedCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} Played {1}", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} Played {1}.", playerState.actions.PlayerName, card.name);
+        }
+
+        public void PlayerDiscardCard(PlayerState playerState, Card card)
+        {
+            this.textWriter.WriteLine("{0} Discarded {1}.", playerState.actions.PlayerName, card.name);
         }
 
         public void ReshuffledDiscardIntoDeck(PlayerState playerState)
@@ -302,8 +447,8 @@ namespace Dominion
         }
 
         public void PlayerGainedCoin(PlayerState playerState, int coinAmount)
-        {
-            this.textWriter.WriteLine("      +{0} Coin = {1} all together.", coinAmount, playerState.AvailableCoins);
+        {            
+            this.textWriter.WriteLine("+{0} Coin = {1} all together.", coinAmount, playerState.AvailableCoins);         
         }
     }
 }

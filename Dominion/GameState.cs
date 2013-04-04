@@ -10,7 +10,7 @@ namespace Dominion
     public enum GainReason
     {
         Gain,
-        Bought
+        Buy
     }
 
     public enum DeckPlacement
@@ -232,6 +232,7 @@ namespace Dominion
             IPlayerAction currentPlayer = currentPlayerState.actions;
 
             this.gameLog.BeginTurn(currentPlayerState);
+            this.gameLog.BeginScope();
             currentPlayerState.InitializeTurn();
             currentPlayer.BeginTurn();            
 
@@ -240,8 +241,10 @@ namespace Dominion
             DoBuyPhase(currentPlayerState);            
             currentPlayerState.CleanupPhase();
             currentPlayerState.DrawUntilCountInHand(5);
-            currentPlayer.EndTurn();
+            
+            currentPlayer.EndTurn();            
             this.gameLog.EndTurn(currentPlayerState);
+            this.gameLog.EndScope();
         }
 
         private void DoActionPhase(PlayerState currentPlayer)
@@ -267,7 +270,7 @@ namespace Dominion
                     return;
                 }
 
-                Card gainedCard = this.PlayerGainCardFromSupply(cardType, currentPlayerState, DeckPlacement.Discard, GainReason.Gain);
+                Card gainedCard = this.PlayerGainCardFromSupply(cardType, currentPlayerState, DeckPlacement.Discard, GainReason.Buy);
                 if (gainedCard == null)
                 {
                     return;
