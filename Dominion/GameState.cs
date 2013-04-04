@@ -18,7 +18,8 @@ namespace Dominion
         Hand,
         Discard,
         Play,
-        Trash
+        Trash,
+        TopOfDeck,
     }
 
     public struct CardPlacementPair

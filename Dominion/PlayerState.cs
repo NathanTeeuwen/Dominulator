@@ -325,6 +325,7 @@ namespace Dominion
                 case DeckPlacement.Hand: this.hand.AddCard(pair.card); break;
                 case DeckPlacement.Trash: this.MoveCardToTrash(pair.card, gameState); break;
                 case DeckPlacement.Play: this.PlayCard(pair.card, gameState); break;
+                case DeckPlacement.TopOfDeck: this.deck.AddCardToTop(pair.card); break;
                 default: throw new Exception("Invalid case");
             }
         }
@@ -382,9 +383,11 @@ namespace Dominion
         internal void MoveCardToTrash(Card card, GameState gameState)
         {
             // reaction to trashing?
-            card.DoSpecializedTrash(gameState.players.CurrentPlayer, gameState);
             this.gameLog.PlayerTrashedCard(this, card);
             gameState.trash.AddCard(card);
+            this.gameLog.BeginScope();
+            card.DoSpecializedTrash(gameState.players.CurrentPlayer, gameState);
+            this.gameLog.EndScope();            
         }
 
         internal Card RemoveCardFromHand(Type cardType)
@@ -451,7 +454,8 @@ namespace Dominion
 
         internal Card RequestPlayerGainCardFromSupply(GameState gameState, PlayerState playerGainingCard, CardPredicate acceptableCard, string description, bool isOptional = false, DeckPlacement defaultLocation = DeckPlacement.Discard)
         {
-            bool hasCardOfCost = gameState.supplyPiles.Where(cardPile => !cardPile.IsEmpty && acceptableCard(cardPile.TopCard())).Any();
+            PileOfCards exampleCard = gameState.supplyPiles.Where(cardPile => !cardPile.IsEmpty && acceptableCard(cardPile.TopCard())).FirstOrDefault();
+            bool hasCardOfCost = exampleCard != null;
             if (!hasCardOfCost)
             {
                 return null;

@@ -33,6 +33,8 @@ namespace Dominion.CardTypes
     public class GreatHall : Card { public GreatHall() : base("Great Hall", coinCost: 3, victoryPoints: playerState => 1, plusCards: 1, plusActions: 1, isAction: true) { } }
     public class Harem : Card { public Harem() : base("Harem", coinCost: 6, victoryPoints: playerState => 2, plusCoins: 2, isTreasure: true) { } }
 
+    // Alchemy
+    public class Potion : Card { public Potion() : base("Potion", coinCost: 4) { } }
 
     public class Sample
         : Card
@@ -1386,6 +1388,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.RevealCardsFromDeck(2);
+            // TODO: Require option to put ruins back.
             currentPlayer.RequestPlayerPutRevealedCardsBackOnDeck(gameState);
         }
     }
@@ -1416,4 +1419,48 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Feodum :
+        Card
+    {
+        public Feodum()
+            : base("Feodum", coinCost: 4, victoryPoints: CountVictoryPoints)
+        {
+        }
+
+        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.GainCardsFromSupply(gameState, typeof(CardTypes.Silver), 3);
+        }
+
+        private static int CountVictoryPoints(PlayerState player)
+        {
+            return VictoryCountForSilver(player.AllOwnedCards.Where(card => card.Is<CardTypes.Silver>()).Count());
+        }
+
+        public static int VictoryCountForSilver(int silvercount)
+        {
+            return silvercount / 3;
+        }
+    }
+
+    public class Develop :
+        Card
+    {
+        public Develop()
+            : base("Develop", coinCost: 4, isAction:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            Card trashedCard = currentPlayer.RequestPlayerTrashCardFromHand(gameState, card => true, false);
+
+            int trashedCardCost = trashedCard.CurrentCoinCost(currentPlayer);
+
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost - 1), "Must gain a card costing one less than the trashed card.", isOptional:false, defaultLocation:DeckPlacement.TopOfDeck);
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost + 1), "Must gain a card costing exactly one more than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
+
+            // TODO:  put the cards on top of your deck in either order.
+        }
+    }
 }
