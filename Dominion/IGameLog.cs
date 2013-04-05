@@ -288,6 +288,9 @@ namespace Dominion
                 this.WriteAllCards(player);
                 this.EndScope();
             }
+
+            this.textWriter.Write("Trash contains: ");
+            this.WriteAllCards(gameState.trash);            
         }
 
         public void PlayerGainedCoin(PlayerState playerState, int coinAmount)
@@ -297,7 +300,12 @@ namespace Dominion
 
         private void WriteAllCards(PlayerState playerState)
         {
-            Card[] allCards = playerState.AllOwnedCards.ToArray<Card>();
+            WriteAllCards(playerState.AllOwnedCards);
+        }
+
+        private void WriteAllCards(IEnumerable<Card> enumerable)
+        {
+            Card[] allCards = enumerable.ToArray<Card>();
 
             var cardComparer = new CompareCardByType();
             Array.Sort(allCards, cardComparer);

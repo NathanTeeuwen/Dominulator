@@ -17,7 +17,7 @@ namespace Program
 
         static void ComparePlayers(PlayerAction player1, PlayerAction player2)
         {
-            int numberOfGames = 1000;
+            int numberOfGames = 10000;
 
             int[] winnerCount = new int[2];
             int tieCount = 0;
@@ -342,20 +342,90 @@ namespace Program
                 card => currentPlayer.Hand.HasCard(card.GetType()));
         }
 
-        public override Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard)
+        public override Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             var currentPlayer = gameState.players.CurrentPlayer;
-            return this.trashOrder.GetMatchingCard(
+            Type result = this.trashOrder.GetMatchingCard(
                 gameState,
                 card => currentPlayer.Hand.HasCard(card.GetType()) && acceptableCard(card));
+
+            // warning, strategy didnt' include what to, try to do a reasonable default.
+            if (result == null && !isOptional)
+            {
+                Card card = currentPlayer.Hand.OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();
+                return card != null ? card.GetType() : null;
+            }
+
+            return result;
+        }
+
+        struct CompareCardByFirstToTrash
+            : IComparer<Card>
+        {
+            public int Compare(Card x, Card y)
+            {
+                if (x.isCurse ^ y.isCurse)
+                {
+                    return x.isCurse ? -1 : 1;
+                }
+
+                if (x.isAction ^ y.isAction)
+                {
+                    return x.isAction ? -1 : 1;
+                }
+
+                if (x.isTreasure ^ y.isTreasure)
+                {
+                    return x.isTreasure ? -1 : 1;
+                }
+
+                return x.DefaultCoinCost < y.DefaultCoinCost ? -1 :
+                       x.DefaultCoinCost > y.DefaultCoinCost ? 1 :
+                       0;
+            }
         }
 
         public override Type GetCardFromHandToDiscard(GameState gameState, bool isOptional)
         {
             var currentPlayer = gameState.players.CurrentPlayer;
-            return this.discardOrder.GetMatchingCard(
+            Type result = this.discardOrder.GetMatchingCard(
                 gameState,
                 card => currentPlayer.Hand.HasCard(card.GetType()));
+
+            // warning, strategy didnt' include what to, try to do a reasonable default.
+            if (result == null && !isOptional)
+            {
+                Card card = currentPlayer.Hand.OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();
+                return card != null ? card.GetType() : null;
+            }
+
+            return result;
+        }
+
+        struct CompareCardByFirstToDiscard
+            : IComparer<Card>
+        {
+            public int Compare(Card x, Card y)
+            {
+                if (x.isCurse ^ y.isCurse)
+                {
+                    return x.isCurse ? -1 : 1;
+                }
+
+                if (x.isAction ^ y.isAction)
+                {
+                    return x.isAction ? -1 : 1;
+                }
+
+                if (x.isVictory ^ y.isVictory)
+                {
+                    return x.isVictory ? -1 : 1;
+                }
+
+                return x.DefaultCoinCost < y.DefaultCoinCost ? -1 :
+                       x.DefaultCoinCost > y.DefaultCoinCost ? 1 :
+                       0;
+            }
         }
 
         public override Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
@@ -369,9 +439,44 @@ namespace Program
         public override Type GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             var currentPlayer = gameState.players.CurrentPlayer;
-            return this.gainOrder.GetMatchingCard(
+            Type result = this.gainOrder.GetMatchingCard(
                 gameState,
                 card => acceptableCard(card) && gameState.GetPile(card).Any());
+
+            // warning, strategy didnt' include what to, try to do a reasonable default.
+            if (result == null && !isOptional)
+            {
+                Card card = gameState.supplyPiles.Where(supplyPile => !supplyPile.IsEmpty).Select(pile => pile.ProtoTypeCard).Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToGain()).FirstOrDefault();
+                return card != null ? card.GetType() : null;
+            }
+
+            return result;
+        }
+
+        struct CompareCardByFirstToGain
+            : IComparer<Card>
+        {
+            public int Compare(Card x, Card y)
+            {
+                if (x.isCurse ^ y.isCurse)
+                {
+                    return x.isCurse ? 1 : -1;
+                }
+
+                if (x.isRuin ^ y.isRuin)
+                {
+                    return x.isRuin ? 1 : -1;
+                }
+
+                if (x.isTreasure ^ y.isTreasure)
+                {
+                    return x.isTreasure ? -1 : 1;
+                }               
+
+                return x.DefaultCoinCost > y.DefaultCoinCost ? -1 :
+                       x.DefaultCoinCost < y.DefaultCoinCost ? 1 :
+                       0;
+            }
         }
 
         public override string PlayerName
@@ -410,12 +515,10 @@ namespace Program
             {
                 return new CardPickByPriority(
                     CardAcceptance.For<CardTypes.Province>(),
-                    CardAcceptance.For<CardTypes.Duchy>(),
-                    CardAcceptance.For<CardTypes.Duke>(),
+                    CardAcceptance.For<CardTypes.Duchy>(),                    
                     CardAcceptance.For<CardTypes.Estate>(),
                     CardAcceptance.For<CardTypes.Ruin>(),
-                    CardAcceptance.For<CardTypes.Copper>(),
-                    CardAcceptance.For<CardTypes.Warehouse>(),
+                    CardAcceptance.For<CardTypes.Copper>(),                    
                     CardAcceptance.For<CardTypes.Silver>(),                   
                     CardAcceptance.For<CardTypes.Gold>());
             }
@@ -703,7 +806,17 @@ namespace Program
             }
         }
 
-        public static class BigMoneySingleSmithy
+        public static class BigMoneySingleSmithy            
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return BigMoneySingleTerminal<CardTypes.Smithy>.Player(playerNumber);
+            }
+        }
+
+        public static class BigMoneySingleTerminal<T>
+            where T: Card, new()
         {
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
@@ -722,9 +835,9 @@ namespace Program
                            CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Gold).Count() > 2),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 2),
+                           CardAcceptance.For<T>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is T).Count() < 1),
                            CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),
-                           CardAcceptance.For<CardTypes.Smithy>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Smithy).Count() < 1),                          
+                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),                           
                            CardAcceptance.For<CardTypes.Silver>());
 
             }
@@ -732,7 +845,7 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Smithy>());
+                           CardAcceptance.For<T>());
             }
         }
 
@@ -753,8 +866,7 @@ namespace Program
             private static IGetMatchingCard PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(),
-                           //CardAcceptance.For<CardTypes.Gold>(gameState => CountAllOwned<CardTypes.Gold>(gameState) < 2),
+                           CardAcceptance.For<CardTypes.Province>(),                           
                            CardAcceptance.For<CardTypes.Develop>(ShouldGainDevelop),
                            CardAcceptance.For<CardTypes.Feodum>(ShouldGainFeodum),                           
                            CardAcceptance.For<CardTypes.Silver>());         
@@ -762,15 +874,11 @@ namespace Program
 
             private static IGetMatchingCard GainOrder()
             {
-                return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Gold>(),
+                return new CardPickByPriority(                 
                            CardAcceptance.For<CardTypes.Develop>(ShouldGainDevelop),
                            CardAcceptance.For<CardTypes.Feodum>(ShouldGainFeodum),                           
                            CardAcceptance.For<CardTypes.Silver>(),                           
                            CardAcceptance.For<CardTypes.Duchy>(),
-                           CardAcceptance.For<CardTypes.Duke>(),
-                           CardAcceptance.For<CardTypes.Warehouse>(),
-                           CardAcceptance.For<CardTypes.Embassy>(),
                            CardAcceptance.For<CardTypes.Feodum>(),
                            CardAcceptance.For<CardTypes.Develop>());
             }
@@ -783,8 +891,7 @@ namespace Program
 
             private static CardPickByPriority TrashOrder()
             {
-                return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Duke>(),
+                return new CardPickByPriority(                           
                            CardAcceptance.For<CardTypes.Duchy>(),
                            CardAcceptance.For<CardTypes.Feodum>(ShouldTrashFeodum),
                            CardAcceptance.For<CardTypes.Estate>(),
@@ -861,13 +968,12 @@ namespace Program
                             treasurePlayOrder: Default.TreasurePlayOrder(),
                             actionOrder: ActionOrder(),
                             trashOrder: Default.EmptyPickOrder(),
-                            discardOrder: Default.DefaultDiscardOrder());
+                            discardOrder: DiscardOrder());
             }
 
             private static IGetMatchingCard PurchaseOrder()
             {
-                var highPriority = new CardPickByPriority(
-                     //CardAcceptance.For<CardTypes.Gold>(gameState => CountAllOwned<CardTypes.Gold>(gameState) < 2),
+                var highPriority = new CardPickByPriority(                     
                      CardAcceptance.For<CardTypes.Embassy>(gameState => CountAllOwned<CardTypes.Embassy>(gameState) < 1),
                      CardAcceptance.For<CardTypes.Duchy>(),
                      CardAcceptance.For<CardTypes.Duke>());              
@@ -897,7 +1003,21 @@ namespace Program
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Warehouse>(),
                            CardAcceptance.For<CardTypes.Embassy>());
-            }          
+            }
+
+            private static CardPickByPriority DiscardOrder()
+            {
+                return new CardPickByPriority(                    
+                    CardAcceptance.For<CardTypes.Duchy>(),
+                    CardAcceptance.For<CardTypes.Duke>(),
+                    CardAcceptance.For<CardTypes.Estate>(),
+                    CardAcceptance.For<CardTypes.Copper>(),
+                    CardAcceptance.For<CardTypes.Warehouse>(),
+                    CardAcceptance.For<CardTypes.Copper>(),
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Embassy>(),
+                    CardAcceptance.For<CardTypes.Gold>());
+            }
         }
     }  
 }

@@ -123,7 +123,7 @@ namespace Dominion
             return NoCardIfOptional(isOptional);
         }
 
-        virtual public Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard)
+        virtual public Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return PlayerMustMakeCardChoice();
         }

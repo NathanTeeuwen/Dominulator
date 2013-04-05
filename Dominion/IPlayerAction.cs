@@ -22,7 +22,7 @@ namespace Dominion
         Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard);
         Type GetCardFromHandToPassLeft(GameState gameState);
         Type GetCardFromHandToDiscard(GameState gameState, bool isOptional);
-        Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard);
+        Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState);
         bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card);
         bool ShouldPutCardInHand(GameState gameState, Card card);

@@ -99,6 +99,14 @@ namespace Dominion
             return this.GetType() == other.GetType();
         }
 
+        public int DefaultCoinCost
+        {
+            get
+            {
+                return this.coinCost;
+            }
+        }
+
         public int CurrentCoinCost(PlayerState player)
         {
             int effectiveCost = this.coinCost - player.turnCounters.cardCoinDiscount;

@@ -546,7 +546,7 @@ namespace Dominion
 
         internal Card RequestPlayerTrashCardFromHand(GameState gameState, CardPredicate acceptableCardsToTrash, bool isOptional)
         {
-            Type cardTypeToTrash = this.actions.GetCardFromHandToTrash(gameState, acceptableCardsToTrash);
+            Type cardTypeToTrash = this.actions.GetCardFromHandToTrash(gameState, acceptableCardsToTrash, isOptional);
             if (cardTypeToTrash == null)
             {
                 if (isOptional)

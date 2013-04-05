@@ -35,5 +35,14 @@ namespace Dominion
         {
             return IsType(typeof(T));
         }
+
+        public Card ProtoTypeCard
+        {
+            get
+            {
+                return this.protoType;
+            }
+        }
+
     }
 }
