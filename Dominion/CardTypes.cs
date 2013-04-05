@@ -33,6 +33,9 @@ namespace Dominion.CardTypes
     public class GreatHall : Card { public GreatHall() : base("Great Hall", coinCost: 3, victoryPoints: playerState => 1, plusCards: 1, plusActions: 1, isAction: true) { } }
     public class Harem : Card { public Harem() : base("Harem", coinCost: 6, victoryPoints: playerState => 2, plusCoins: 2, isTreasure: true) { } }
 
+    // Prosperity
+    public class Monument : Card { public Monument() : base("Monument", coinCost: 4, isAction: true, plusCoins: 2, plusVictoryToken: 1){}}
+
     // Alchemy
     public class Potion : Card { public Potion() : base("Potion", coinCost: 4) { } }
 
@@ -86,27 +89,26 @@ namespace Dominion.CardTypes
        Card
     {
         public Bureaucrat()
-            : base("Bureaucrat", coinCost: 4, isAction: true)
+            : base("Bureaucrat", coinCost: 4, isAction: true, isAttack:true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            gameState.PlayerGainCardFromSupply<Silver>(currentPlayer);
+            gameState.PlayerGainCardFromSupply<Silver>(currentPlayer);            
+        }
 
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
             CardPredicate acceptableCard = card => card.isVictory;
-
-            foreach (PlayerState player in gameState.players.OtherPlayers)
+            Card cardTopDecked = otherPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard, isOptional: false);
+            if (cardTopDecked == null)
             {
-                Card cardTopDecked = player.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard, isOptional: false);
-                if (cardTopDecked == null)
-                {
-                    player.RevealHand();
-                }
-                else
-                {                    
-                    player.RevealCard(cardTopDecked, DeckPlacement.TopOfDeck);
-                }
+                otherPlayer.RevealHand();
+            }
+            else
+            {
+                otherPlayer.RevealCard(cardTopDecked, DeckPlacement.TopOfDeck);
             }
         }
     }
@@ -1349,13 +1351,10 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
-            {
-                otherPlayer.RequestPlayerDiscardDownToCountInHand(gameState, 3);
-            }
-        }
+            otherPlayer.RequestPlayerDiscardDownToCountInHand(gameState, 3);            
+        }        
 
         public override void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
@@ -1463,6 +1462,24 @@ namespace Dominion.CardTypes
             }
 
             currentPlayer.MoveRevealedCardToHand(revealedCard);
+        }
+    }
+
+    public class Mountebank
+        : Card
+    {
+        public Mountebank()
+            : base("Mountebank", coinCost: 5, isAction: true, isAttack:true, plusCoins:2)
+        {
+        }
+
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
+            if (!otherPlayer.RequestPlayerDiscardCardFromHand(gameState, card => card.isCurse, true))
+            {
+                otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Curse));
+                otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Copper));
+            }
         }
     }
 

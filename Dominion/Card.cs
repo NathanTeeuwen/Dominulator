@@ -35,7 +35,7 @@ namespace Dominion
             int plusCards = 0,
             int plusCoins = 0,
             VictoryPointCounter victoryPoints = null,
-            int victoryTokenCount = 0,
+            int plusVictoryToken = 0,
             int defaultSupplyCount = 10,
             bool isAction = false,
             bool isAttack = false,
@@ -53,7 +53,7 @@ namespace Dominion
             this.plusCard = plusCards;
             this.plusCoin = plusCoins;
             this.victoryPointCounter = victoryPoints;
-            this.plusVictoryToken = victoryTokenCount;
+            this.plusVictoryToken = plusVictoryToken;
             this.isAction = isAction;
             this.isAttack = isAttack;
             this.attackDependsOnPlayerChoice = attackDependsOnPlayerChoice;
