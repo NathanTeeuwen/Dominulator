@@ -61,6 +61,6 @@ namespace Dominion
             {
                 this.DrawCardFromTop();
             }
-        }
+        }        
     }
 }

@@ -9,8 +9,8 @@ namespace Dominion
     public interface IGameLog
         : IDisposable
     {
-        void BeginScope();
-        void EndScope();
+        void PushScope();
+        void PopScope();
         void BeginRound();
         void BeginTurn(PlayerState playerState);
         void EndTurn(PlayerState playerState);
@@ -39,12 +39,12 @@ namespace Dominion
         {
         }
 
-        public void BeginScope()
+        public void PushScope()
         {
 
         }
 
-        public void EndScope()
+        public void PopScope()
         {
 
         }
@@ -178,12 +178,12 @@ namespace Dominion
             this.textWriter.Dispose();
         }
 
-        public void BeginScope()
+        public void PushScope()
         {
             this.textWriter.Indent();
         }
 
-        public void EndScope()
+        public void PopScope()
         {
             this.textWriter.Unindent();
         }
@@ -209,9 +209,9 @@ namespace Dominion
         public void EndTurn(PlayerState playerState)
         {
             this.textWriter.WriteLine("{0} ends turn", playerState.actions.PlayerName);
-            this.BeginScope();
+            this.PushScope();
             this.WriteAllCards(playerState);
-            this.EndScope();
+            this.PopScope();
             this.textWriter.WriteLine();
             this.textWriter.WriteLine();
         }
@@ -284,9 +284,9 @@ namespace Dominion
             foreach (PlayerState player in gameState.players.AllPlayers)
             {
                 this.textWriter.WriteLine("{0} total score: {1}", player.actions.PlayerName, player.TotalScore());
-                this.BeginScope();
+                this.PushScope();
                 this.WriteAllCards(player);
-                this.EndScope();
+                this.PopScope();
             }
 
             this.textWriter.Write("Trash contains: ");

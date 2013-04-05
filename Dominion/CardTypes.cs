@@ -254,12 +254,9 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            foreach (PlayerState player in gameState.players.OtherPlayers)
+            foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
             {
-                while (player.hand.Count > 3)
-                {
-                    player.RequestPlayerDiscardCardFromHand(gameState, acceptableCard => true, isOptional: false);
-                }
+                otherPlayer.RequestPlayerDiscardDownToCountInHand(gameState, 3);                
             }
         }
     }
@@ -430,8 +427,10 @@ namespace Dominion.CardTypes
             Type actionTypeToPlay = currentPlayer.actions.GetActionFromHandToPlay(gameState, false);
 
             Card cardToPlay = currentPlayer.RequestPlayerChooseActionToRemoveFromHandForPlay(gameState, isOptional: false);
-
-            currentPlayer.DoPlayAction(cardToPlay, gameState, countTimes: 2);
+            if (cardToPlay != null)
+            {
+                currentPlayer.DoPlayAction(cardToPlay, gameState, countTimes: 2);
+            }
         }
     }
 
@@ -633,7 +632,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            if (currentPlayer.actions.ShouldTrashCard(gameState))
+            if (currentPlayer.actions.ShouldTrashCard(gameState, this))
             {
                 if (currentPlayer.MoveCardFromPlayToTrash(gameState))
                 {
@@ -960,7 +959,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             // Trash 2 cards from your hand
-            if (currentPlayer.RequestPlayerTrashCardsFromHand(gameState, 2, isOptional: false) == 2)
+            if (currentPlayer.RequestPlayerTrashCardsFromHand(gameState, 2, isOptional: false).Length == 2)
             {
                 // If you do, gain a silver card; put it into your hand
                 currentPlayer.GainCardFromSupply(gameState, typeof(Silver), DeckPlacement.Hand);
@@ -1190,7 +1189,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedCleanup(PlayerState currentPlayer, GameState gameState)
         {
             // TODO
-            base.DoSpecializedCleanup(currentPlayer, gameState);
+            throw new NotImplementedException();
         }
     }
 
@@ -1286,9 +1285,161 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            //currentPlayer.RevealCardsFromDeck
+            int maxCoppers = currentPlayer.discard.CountCards(card => card.Is<CardTypes.Copper>());
+            int cardsToReveal = currentPlayer.actions.GetNumberOfCardsFromDiscardToPutInHand(gameState, maxCoppers);
+
+            if (cardsToReveal < 0 || cardsToReveal > maxCoppers)
+            {
+                throw new Exception("Requested number of cards to reveal is out of range");
+            }
+
+            if (cardsToReveal > 0)
+            {
+                currentPlayer.FindCardsFromDiscardAndReveal(cardsToReveal, card => card.Is<CardTypes.Copper>());                
+                currentPlayer.MoveRevealedCardsToHand(card => true);
+            }
         }
     }
+
+    public class Expand :
+        Card
+    {
+        public Expand()
+            : base("Expand", coinCost: 7, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            Card cardToTrash = currentPlayer.RequestPlayerTrashCardFromHandAndGainCard(gameState,
+                card => true,
+                CostConstraint.UpTo,
+                3,
+                CardRelativeCost.RelativeCost);
+        }
+    }
+
+    public class Forge :
+        Card
+    {
+        public Forge()
+            : base("Forge", coinCost: 7, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            Card[] trashedCards = currentPlayer.RequestPlayerTrashCardsFromHand(gameState, -1, isOptional: true);
+
+            int totalCost = trashedCards.Select(card => card.CurrentCoinCost(currentPlayer)).Sum();            
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == totalCost, "Must gain a card costing exactly equal to the total cost of the trashed cards>", isOptional: false);
+        }
+    }
+
+    public class Goons :
+        Card
+    {
+        public Goons()
+            : base("Goons", coinCost:6, isAction: true, isAttack:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
+            {
+                otherPlayer.RequestPlayerDiscardDownToCountInHand(gameState, 3);
+            }
+        }
+
+        public override void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        {
+            currentPlayer.victoryTokenCount += 1;
+        }
+    }
+
+    public class GrandMarket : 
+        Card
+    {
+         public GrandMarket()
+            : base("Grand Market", coinCost:6, isAction: true, plusCards:1, plusActions:1, plusBuy:1, plusCoins:2)
+        {
+        }
+
+         public override bool IsRestrictedFromBuy(PlayerState currentPlayer, GameState gameState)
+         {
+             return currentPlayer.cardsInPlay.HasCard<CardTypes.Copper>();
+         }
+    }
+
+    public class Hoard :
+       Card
+    {
+        public Hoard()
+            : base("Hoard", coinCost: 6, isTreasure: true, plusCoins: 2)
+        {
+        }
+
+        public override void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        {
+ 	        if (boughtCard.isVictory)
+            {
+                currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Gold));
+            }
+        }        
+    }
+
+    public class KingsCourt
+        : Card
+    {
+        public KingsCourt()
+            : base("Kings Court", coinCost: 7, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            Type actionTypeToPlay = currentPlayer.actions.GetActionFromHandToPlay(gameState, false);
+
+            Card cardToPlay = currentPlayer.RequestPlayerChooseActionToRemoveFromHandForPlay(gameState, isOptional: true);
+            if (cardToPlay != null)
+            {
+                currentPlayer.DoPlayAction(cardToPlay, gameState, countTimes: 3);
+            }
+        }
+    }
+
+    public class Loan
+        : Card
+    {
+        public Loan()
+            : base("Loan", coinCost:3, isTreasure: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            while(true)
+            {
+                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+                if (revealedCard.isTreasure)
+                {
+                    if (currentPlayer.actions.ShouldTrashCard(gameState, revealedCard))
+                    {
+                        currentPlayer.MoveRevealedCardToTrash(revealedCard, gameState);
+                    }
+                    else
+                    {
+                        currentPlayer.MoveRevealedCardToDiscard(revealedCard, gameState);
+                    }
+                    break;
+                }                
+            }
+
+            currentPlayer.MoveRevealedCardsToDiscard();
+        }
+    }
+
 
     // Hinterlands
 
@@ -1302,7 +1453,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            if (!currentPlayer.playedCards.HasCard<CrossRoads>())
+            if (!currentPlayer.cardsInPlay.HasCard<CrossRoads>())
             {
                 currentPlayer.turnCounters.availableActionCount += 3;
             }

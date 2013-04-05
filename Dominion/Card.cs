@@ -141,5 +141,15 @@ namespace Dominion
         virtual public void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
         }
+
+        virtual public void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        {
+
+        }
+
+        virtual public bool IsRestrictedFromBuy(PlayerState currentPlayer, GameState gameState)
+        {
+            return false;
+        }
     }
 }

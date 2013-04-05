@@ -60,11 +60,11 @@ namespace Dominion
 
         // all of the cards the player owns.  Always move from one list to the other
         internal ListOfCards deck = new ListOfCards();
-        internal ListOfCards discard = new ListOfCards();
+        internal BagOfCards discard = new BagOfCards();
         internal ListOfCards cardsBeingPlayed = new ListOfCards();  // a stack for recursion
         internal BagOfCards cardsBeingRevealed = new BagOfCards();
         internal BagOfCards hand = new BagOfCards();
-        internal BagOfCards playedCards = new BagOfCards();
+        internal BagOfCards cardsInPlay = new BagOfCards();
         internal Card cardToPass = null;
         internal BagOfCards islandMat = new BagOfCards();
         internal BagOfCards nativeVillageMat = new BagOfCards();
@@ -152,6 +152,20 @@ namespace Dominion
             return card;
         }
 
+        internal void FindCardsFromDiscardAndReveal(int cardCount, CardPredicate cardPredicate)
+        {
+            for (int i = 0; i < cardCount; ++i)
+            {
+                // warning, n^2 algorithm here.
+                Card card = this.discard.RemoveCard(cardPredicate);
+                if (card == null)
+                {
+                    throw new System.Exception("Could not reveal needed number of cards from discard");
+                }
+                this.cardsBeingRevealed.AddCard(card);
+            }
+        }
+
         internal void RevealCardsFromDeck(int cardCount)
         {
             for (int i = 0; i < cardCount; ++i)
@@ -188,7 +202,7 @@ namespace Dominion
         {
             get
             {
-                return this.cardsBeingPlayed.Count + this.playedCards.Count;
+                return this.cardsBeingPlayed.Count + this.cardsInPlay.Count;
             }
         }
 
@@ -196,7 +210,7 @@ namespace Dominion
         {
             get
             {
-                return this.cardsBeingPlayed.Where(card => card != null).Count() + this.playedCards.Count;
+                return this.cardsBeingPlayed.Where(card => card != null).Count() + this.cardsInPlay.Count;
             }
         }
 
@@ -213,7 +227,7 @@ namespace Dominion
             }
 
             this.gameLog.PlayedCard(this, currentCard);
-            this.gameLog.BeginScope();
+            this.gameLog.PushScope();
             this.cardsBeingPlayed.AddCardToTop(currentCard);
             
             for (int i = 0; i < countTimes; ++i)
@@ -242,10 +256,10 @@ namespace Dominion
             Card cardAfterPlay = this.cardsBeingPlayed.DrawCardFromTop();
             if (cardAfterPlay != null)
             {
-                this.playedCards.AddCard(cardAfterPlay);
+                this.cardsInPlay.AddCard(cardAfterPlay);
             }
 
-            this.gameLog.EndScope();
+            this.gameLog.PopScope();
         }
 
         internal void DoPlayTreasure(Card currentCard, GameState gameState)
@@ -256,7 +270,7 @@ namespace Dominion
             }
 
             this.gameLog.PlayedCard(this, currentCard);
-            this.gameLog.BeginScope();
+            this.gameLog.PushScope();
             this.cardsBeingPlayed.AddCardToTop(currentCard);
 
             this.turnCounters.availableBuys += currentCard.plusBuy;
@@ -270,10 +284,10 @@ namespace Dominion
             Card cardAfterPlay = this.cardsBeingPlayed.DrawCardFromTop();
             if (cardAfterPlay != null)
             {
-                this.playedCards.AddCard(cardAfterPlay);
+                this.cardsInPlay.AddCard(cardAfterPlay);
             }
 
-            this.gameLog.EndScope();
+            this.gameLog.PopScope();
         }
 
         /*
@@ -321,7 +335,7 @@ namespace Dominion
         {
             switch (pair.placement)
             {
-                case DeckPlacement.Discard: this.discard.AddCardToTop(pair.card); break;
+                case DeckPlacement.Discard: this.discard.AddCard(pair.card); break;
                 case DeckPlacement.Hand: this.hand.AddCard(pair.card); break;
                 case DeckPlacement.Trash: this.MoveCardToTrash(pair.card, gameState); break;
                 case DeckPlacement.Play: this.PlayCard(pair.card, gameState); break;
@@ -385,9 +399,9 @@ namespace Dominion
             // reaction to trashing?
             this.gameLog.PlayerTrashedCard(this, card);
             gameState.trash.AddCard(card);
-            this.gameLog.BeginScope();
+            this.gameLog.PushScope();
             card.DoSpecializedTrash(gameState.players.CurrentPlayer, gameState);
-            this.gameLog.EndScope();            
+            this.gameLog.PopScope();            
         }
 
         internal Card RemoveCardFromHand(Type cardType)
@@ -486,21 +500,23 @@ namespace Dominion
             return gainedCard;
         }
 
-        internal int RequestPlayerTrashCardsFromHand(GameState gameState, int cardCount, bool isOptional)
+        internal Card[] RequestPlayerTrashCardsFromHand(GameState gameState, int cardCount, bool isOptional)
         {
+            var trashedCards = new List<Card>();
             CardPredicate acceptableCardsToTrash = card => true;
             int countCardTrashed = 0;
             while (countCardTrashed < cardCount)
             {
-                if (this.RequestPlayerTrashCardFromHand(gameState, acceptableCardsToTrash, isOptional) == null)
+                Card trashedCard = this.RequestPlayerTrashCardFromHand(gameState, acceptableCardsToTrash, isOptional);
+                if (trashedCard == null)
                 {
                     break;
                 }
 
-                ++countCardTrashed;
+                trashedCards.Add(trashedCard);
             }
 
-            return countCardTrashed;
+            return trashedCards.ToArray();
         }
 
         internal Card RequestPlayerTrashCardFromHandAndGainCard(
@@ -546,6 +562,10 @@ namespace Dominion
 
         internal Card RequestPlayerTrashCardFromHand(GameState gameState, CardPredicate acceptableCardsToTrash, bool isOptional)
         {
+            if (!this.hand.HasCard(acceptableCardsToTrash))
+            {
+                return null;
+            }
             Type cardTypeToTrash = this.actions.GetCardFromHandToTrash(gameState, acceptableCardsToTrash, isOptional);
             if (cardTypeToTrash == null)
             {
@@ -572,6 +592,14 @@ namespace Dominion
                     break;
                 }
                 ++cardDiscardedCount;
+            }
+        }
+
+        internal void RequestPlayerDiscardDownToCountInHand(GameState gameState, int count)
+        {
+            while (this.hand.Count > count)
+            {
+                this.RequestPlayerDiscardCardFromHand(gameState, acceptableCard => true, isOptional: false);
             }
         }
 
@@ -623,7 +651,7 @@ namespace Dominion
         private void DiscardCard(Card cardToDiscard, GameState gameState)
         {
             this.gameLog.PlayerDiscardCard(this, cardToDiscard);
-            this.discard.AddCardToTop(cardToDiscard);
+            this.discard.AddCard(cardToDiscard);
         }
 
         internal Card RequestPlayerTopDeckCardFromHand(GameState gameState, CardPredicate acceptableCard, bool isOptional)
@@ -728,7 +756,7 @@ namespace Dominion
 
         internal void CleanupPhase()
         {
-            this.MoveAllCardsToDiscard(this.playedCards);
+            this.MoveAllCardsToDiscard(this.cardsInPlay);
             this.MoveAllCardsToDiscard(this.hand);
         }
 
@@ -757,9 +785,9 @@ namespace Dominion
                 this.gameLog.PlayerGainedCard(this, card);
             }
 
-            this.gameLog.BeginScope();
+            this.gameLog.PushScope();
             card.DoSpecializedWhenGain(this, gameState);
-            this.gameLog.EndScope();
+            this.gameLog.PopScope();
 
             this.PlaceCardFromPlacement(new CardPlacementPair(card, defaultPlacement), gameState);
         }
@@ -791,6 +819,16 @@ namespace Dominion
         {
             // trigger discard effects
             MoveAllCardsToDiscard(this.cardsBeingRevealed);
+        }
+
+        internal void MoveRevealedCardToDiscard(Card typeOfCard, GameState gameState)
+        {
+            Card card = this.cardsBeingRevealed.RemoveCard(typeOfCard);
+            if (card == null)
+            {
+                throw new Exception("Revealed cards did not have the specified card");
+            }
+            this.discard.AddCard(card);
         }
 
         internal void MoveRevealedCardToTrash(Card card, GameState gameState)
@@ -864,7 +902,7 @@ namespace Dominion
         {
             foreach (Card card in cards)
             {
-                this.discard.AddCardToTop(card);
+                this.discard.AddCard(card);
             }
             cards.Clear();
         }
@@ -912,7 +950,7 @@ namespace Dominion
                     yield return card;
                 }
 
-                foreach (Card card in this.playedCards)
+                foreach (Card card in this.cardsInPlay)
                 {
                     yield return card;
                 }

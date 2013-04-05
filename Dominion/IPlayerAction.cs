@@ -14,7 +14,7 @@ namespace Dominion
         Type BanCardForCurrentPlayerPurchase(GameState gameState);
         Type GetActionFromHandToPlay(GameState gameState, bool isOptional);
         Type GetTreasureFromHandToPlay(GameState gameState);
-        Type GetCardFromSupplyToBuy(GameState gameState);
+        Type GetCardFromSupplyToBuy(GameState gameState, CardPredicate acceptableCard);
         Type GuessCardTopOfDeck(GameState gameState);
         Type GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Type GetCardFromRevealedCarsToTopDeck(BagOfCards revealedCards);
@@ -24,12 +24,13 @@ namespace Dominion
         Type GetCardFromHandToDiscard(GameState gameState, bool isOptional);
         Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState);
+        int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber);
         bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card);
         bool ShouldPutCardInHand(GameState gameState, Card card);
         bool WantToResign(GameState gameState);
         bool ShouldRevealCard(GameState gameState, Card card);
         bool ShouldPutDeckInDiscard(GameState gameState);
-        bool ShouldTrashCard(GameState gameState);
+        bool ShouldTrashCard(GameState gameState, Card card);
         bool ShouldGainCard(GameState gameState, Card card);
         PlayerActionChoice ChooseAction(GameState gameState, IsValidChoice acceptableChoice);
         string PlayerName { get; }

@@ -274,7 +274,7 @@ namespace Dominion
             IPlayerAction currentPlayer = currentPlayerState.actions;
 
             this.gameLog.BeginTurn(currentPlayerState);
-            this.gameLog.BeginScope();
+            this.gameLog.PushScope();
             currentPlayerState.InitializeTurn();
             currentPlayer.BeginTurn();            
 
@@ -286,7 +286,7 @@ namespace Dominion
             
             currentPlayer.EndTurn();            
             this.gameLog.EndTurn(currentPlayerState);
-            this.gameLog.EndScope();
+            this.gameLog.PopScope();
         }
 
         private void DoActionPhase(PlayerState currentPlayer)
@@ -302,23 +302,40 @@ namespace Dominion
             }
         }
 
-        private void DoBuyPhase(PlayerState currentPlayerState)
+        private bool CardAvailableForPurchaseForCurrentPlayer(Card card)
         {
-            while (currentPlayerState.turnCounters.availableBuys > 0)
+            PlayerState currentPlayer = this.players.CurrentPlayer;
+            return currentPlayer.AvailableCoins >= card.CurrentCoinCost(currentPlayer) &&
+                       this.GetPile(card).Any() &&
+                       !card.IsRestrictedFromBuy(currentPlayer, this) &&
+                       !currentPlayer.turnCounters.cardsBannedFromPurchase.Contains(card.GetType());
+        }
+
+        private void DoBuyPhase(PlayerState currentPlayer)
+        {                
+            while (currentPlayer.turnCounters.availableBuys > 0)
             {
-                Type cardType = currentPlayerState.actions.GetCardFromSupplyToBuy(this);
+                Type cardType = currentPlayer.actions.GetCardFromSupplyToBuy(this, CardAvailableForPurchaseForCurrentPlayer);
                 if (cardType == null)
                 {
                     return;
                 }
 
-                Card gainedCard = this.PlayerGainCardFromSupply(cardType, currentPlayerState, DeckPlacement.Discard, GainReason.Buy);
-                if (gainedCard == null)
+                Card boughtCard = this.PlayerGainCardFromSupply(cardType, currentPlayer, DeckPlacement.Discard, GainReason.Buy);
+                if (boughtCard == null)
                 {
                     return;
                 }
-                currentPlayerState.turnCounters.availableCoins -= gainedCard.CurrentCoinCost(currentPlayerState);
-                currentPlayerState.turnCounters.availableBuys -= 1;
+
+                currentPlayer.turnCounters.availableCoins -= boughtCard.CurrentCoinCost(currentPlayer);
+                currentPlayer.turnCounters.availableBuys -= 1;
+
+                foreach (Card cardInPlay in currentPlayer.cardsInPlay)
+                {
+                    gameLog.PushScope();
+                    cardInPlay.DoSpecializedActionOnBuyWhileInPlay(currentPlayer, this, boughtCard);
+                    gameLog.PopScope();
+                }
             }
         }
 

@@ -17,7 +17,7 @@ namespace Program
 
         static void ComparePlayers(PlayerAction player1, PlayerAction player2)
         {
-            int numberOfGames = 10000;
+            int numberOfGames = 1000;
 
             int[] winnerCount = new int[2];
             int tieCount = 0;
@@ -317,7 +317,7 @@ namespace Program
             this.gainOrder = gainOrder != null ? gainOrder : purchaseOrder;
         }        
 
-        public override Type GetCardFromSupplyToBuy(GameState gameState)
+        public override Type GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
         {
             var currentPlayer = gameState.players.CurrentPlayer;
             return this.purchaseOrder.GetMatchingCard(
@@ -737,7 +737,7 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Gold).Count() > 2),
+                           CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 4),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 2),
                            CardAcceptance.For<CardTypes.Gold>(),
@@ -761,7 +761,7 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Gold).Count() > 3),
+                           CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 3),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 3),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 2),
                            CardAcceptance.For<CardTypes.Gold>(),
@@ -787,13 +787,13 @@ namespace Program
             private static CardPickByPriority PurchaseOrder(int secondSmithy)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Gold).Count() > 2),
+                           CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 2),
                            CardAcceptance.For<CardTypes.Gold>(),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),
-                           CardAcceptance.For<CardTypes.Smithy>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Smithy).Count() < 1),
-                           CardAcceptance.For<CardTypes.Smithy>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Smithy).Count() < 2 &&
+                           CardAcceptance.For<CardTypes.Smithy>(gameState => CountAllOwned<CardTypes.Smithy>(gameState) < 1),
+                           CardAcceptance.For<CardTypes.Smithy>(gameState => CountAllOwned<CardTypes.Smithy>(gameState) < 2 &&
                                                                              gameState.players.CurrentPlayer.AllOwnedCards.Count() >= secondSmithy),
                            CardAcceptance.For<CardTypes.Silver>());
 
@@ -832,10 +832,10 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Gold).Count() > 2),
+                           CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 2),
-                           CardAcceptance.For<T>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is T).Count() < 1),
+                           CardAcceptance.For<T>(gameState => CountAllOwned<T>(gameState) < 1),
                            CardAcceptance.For<CardTypes.Gold>(),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),                           
                            CardAcceptance.For<CardTypes.Silver>());

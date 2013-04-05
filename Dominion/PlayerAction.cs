@@ -35,6 +35,11 @@ namespace Dominion
             throw new NotImplementedException();
         }
 
+        private int PlayerMustChooseNumber()
+        {
+            throw new NotImplementedException();
+        }
+
         private Type NoCardIfOptional(bool isOptional)
         {
             if (isOptional)
@@ -83,7 +88,7 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromSupplyToBuy(GameState gameState)
+        virtual public Type GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
         {
             return NoCard();
         }
@@ -146,6 +151,11 @@ namespace Dominion
         virtual public bool WantToResign(GameState gameState)
         {
             return false;
+        }        
+
+        virtual public bool ShouldPutDeckInDiscard(GameState gameState)
+        {
+            return PlayerMustMakeChoice();
         }
 
         virtual public bool ShouldRevealCard(GameState gameState, Card card)
@@ -153,12 +163,7 @@ namespace Dominion
             return PlayerMustMakeChoice();
         }
 
-        virtual public bool ShouldPutDeckInDiscard(GameState gameState)
-        {
-            return PlayerMustMakeChoice();
-        }
-
-        virtual public bool ShouldTrashCard(GameState gameState)
+        virtual public bool ShouldTrashCard(GameState gameState, Card card)
         {
             return PlayerMustMakeChoice();
         }
@@ -171,6 +176,11 @@ namespace Dominion
         virtual public PlayerActionChoice ChooseAction(GameState gameState, IsValidChoice acceptableChoice)
         {
             return PlayerMustMakeActionChoice();
+        }
+
+        virtual public int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber)
+        {
+            return PlayerMustChooseNumber();
         }
     }    
 }
