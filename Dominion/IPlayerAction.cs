@@ -22,13 +22,13 @@ namespace Dominion
         Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard);
         Type GetCardFromHandToPassLeft(GameState gameState);
         Type GetCardFromHandToDiscard(GameState gameState, bool isOptional);
+        Type GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard); // always optional
         Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState);
         int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber);
         bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card);
         bool ShouldPutCardInHand(GameState gameState, Card card);
-        bool WantToResign(GameState gameState);
-        bool ShouldRevealCard(GameState gameState, Card card);
+        bool WantToResign(GameState gameState);        
         bool ShouldPutDeckInDiscard(GameState gameState);
         bool ShouldTrashCard(GameState gameState, Card card);
         bool ShouldGainCard(GameState gameState, Card card);

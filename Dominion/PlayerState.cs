@@ -152,7 +152,7 @@ namespace Dominion
             return card;
         }
 
-        internal void FindCardsFromDiscardAndReveal(int cardCount, CardPredicate cardPredicate)
+        internal void RevealCardsFromDiscard(int cardCount, CardPredicate cardPredicate)
         {
             for (int i = 0; i < cardCount; ++i)
             {
@@ -162,6 +162,7 @@ namespace Dominion
                 {
                     throw new System.Exception("Could not reveal needed number of cards from discard");
                 }
+                RevealCard(card, DeckPlacement.Discard);                
                 this.cardsBeingRevealed.AddCard(card);
             }
         }
@@ -177,21 +178,21 @@ namespace Dominion
             }
         }
 
+        internal void RevealCard(Card card, DeckPlacement source)
+        {
+            this.gameLog.PlayerRevealedCard(this, card, DeckPlacement.TopOfDeck);            
+        }
+
         internal Card DrawAndRevealOneCardFromDeck()
         {
             Card card = this.DrawOneCard();
-            RevealCard(card);
+            RevealCard(card, DeckPlacement.TopOfDeck);
             if (card != null)
             {
                 this.cardsBeingRevealed.AddCard(card);
             }
             return card;
-        }
-
-        internal void RevealCard(Card card)
-        {
-
-        }
+        }        
 
         internal void RevealHand()
         {
@@ -237,8 +238,8 @@ namespace Dominion
                 this.AddCoins(currentCard.plusCoin);
                 this.victoryTokenCount += currentCard.plusVictoryToken;
                 this.DrawAdditionalCardsIntoHand(currentCard.plusCard);
-
-                currentCard.DoSpecializedAction(gameState.players.CurrentPlayer, gameState);                
+                
+                currentCard.DoSpecializedAction(gameState.players.CurrentPlayer, gameState);
                 if (currentCard.isAttack && currentCard.attackDependsOnPlayerChoice)
                 {
                     foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
@@ -623,13 +624,7 @@ namespace Dominion
                 }
             }
 
-            Card cardToDiscard = this.hand.RemoveCard(cardTypeToDiscard);
-            if (cardToDiscard == null)
-            {
-                throw new Exception("Could not remove Card From Hand");
-            }
-
-            this.DiscardCard(cardToDiscard, gameState);
+            this.MoveCardFromHandToDiscard(cardTypeToDiscard, gameState);            
 
             return true;
         }
@@ -646,13 +641,7 @@ namespace Dominion
 
                 this.MoveRevealedCardToTopOfDeck(cardToPutOnTop);
             }
-        }        
-
-        private void DiscardCard(Card cardToDiscard, GameState gameState)
-        {
-            this.gameLog.PlayerDiscardCard(this, cardToDiscard);
-            this.discard.AddCard(cardToDiscard);
-        }
+        }                
 
         internal Card RequestPlayerTopDeckCardFromHand(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
@@ -690,15 +679,23 @@ namespace Dominion
             return cardToTopDeck;
         }
 
-        internal bool RequestPlayerRevealCard(Card card, GameState gameState)
+        internal Card RequestPlayerRevealCardFromHand(CardPredicate acceptableCard, GameState gameState)
         {
-            if (actions.ShouldRevealCard(gameState, card))
+            if (!this.hand.HasCard(acceptableCard))
             {
-                RevealCard(card);
-                return true;
+                return null;
             }
 
-            return false;
+            Type cardToReveal = this.actions.GetCardFromHandToReveal(gameState, 
+                card => acceptableCard(card) && this.hand.HasCard(card));
+            
+            if (cardToReveal != null)
+            {
+                Card revealedCard = RevealCardFromHand(cardToReveal, gameState);
+                return revealedCard;
+            }
+
+            return null;
         }
 
         internal Card RequestPlayerTopDeckCardFromRevealed(GameState gameState)
@@ -808,6 +805,34 @@ namespace Dominion
             deck.Shuffle();
 
             // move Stash to where the user wants
+        }
+
+        private Card RevealCardFromHand(Type cardTypeToDiscard, GameState gameState)
+        {
+            Card cardToReveal = this.hand.RemoveCard(cardTypeToDiscard);
+            if (cardToReveal == null)
+            {
+                throw new Exception("Could not reveal Card From Hand");
+            }
+
+            RevealCard(cardToReveal, DeckPlacement.Hand);            
+            this.cardsBeingRevealed.AddCard(cardToReveal);
+
+            return cardToReveal;
+        }
+
+        private Card MoveCardFromHandToDiscard(Type cardTypeToDiscard, GameState gameState)
+        {
+            Card cardToDiscard = this.hand.RemoveCard(cardTypeToDiscard);
+            if (cardToDiscard == null)
+            {
+                throw new Exception("Could not remove Card From Hand");
+            }            
+
+            this.gameLog.PlayerDiscardCard(this, cardToDiscard);
+            this.discard.AddCard(cardToDiscard);
+
+            return cardToDiscard;
         }
 
         internal void MoveDeckToDiscard()

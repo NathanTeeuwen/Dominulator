@@ -14,6 +14,7 @@ namespace Dominion
         void BeginRound();
         void BeginTurn(PlayerState playerState);
         void EndTurn(PlayerState playerState);
+        void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source);
         void PlayerBoughtCard(PlayerState playerState, Card card);
         void GainedCard(PlayerState playerState, Card card);
         void PlayedCard(PlayerState playerState, Card card);
@@ -63,6 +64,11 @@ namespace Dominion
 
         public void GainedCard(PlayerState playerState, Card card)
         {
+        }
+
+        public void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source)
+        {
+
         }
 
         public void DrewCardIntoHand(PlayerState playerState, Card card)
@@ -256,6 +262,11 @@ namespace Dominion
             this.textWriter.WriteLine("{0} Discarded {1}.", playerState.actions.PlayerName, card.name);
         }
 
+        public void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source)
+        {
+            this.textWriter.WriteLine("{0} Revealed {1}.", playerState.actions.PlayerName, card.name);
+        }
+
         public void ReshuffledDiscardIntoDeck(PlayerState playerState)
         {
             this.textWriter.WriteLine("{0} reshuffled", playerState.actions.PlayerName);
@@ -296,7 +307,7 @@ namespace Dominion
         public void PlayerGainedCoin(PlayerState playerState, int coinAmount)
         {
             this.textWriter.WriteLine("+{0} Coin = {1} all together.", coinAmount, playerState.AvailableCoins);
-        }
+        }        
 
         private void WriteAllCards(PlayerState playerState)
         {

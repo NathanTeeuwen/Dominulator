@@ -104,8 +104,8 @@ namespace Dominion.CardTypes
                     player.RevealHand();
                 }
                 else
-                {
-                    player.RevealCard(cardTopDecked);
+                {                    
+                    player.RevealCard(cardTopDecked, DeckPlacement.TopOfDeck);
                 }
             }
         }
@@ -293,7 +293,9 @@ namespace Dominion.CardTypes
 
         public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState)
         {
-            return currentPlayer.RequestPlayerRevealCard(this, gameState);
+            Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(card => card.Is<CardTypes.Moat>(), gameState);
+            currentPlayer.MoveRevealedCardToHand(revealedCard);
+            return revealedCard != null;
         }
     }
 
@@ -842,7 +844,8 @@ namespace Dominion.CardTypes
 
         public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState)
         {
-            if (currentPlayer.RequestPlayerRevealCard(this, gameState))
+            Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(card => card.Is<SecretChamber>(), gameState);
+            if (revealedCard != null)
             {
                 currentPlayer.DrawAdditionalCardsIntoHand(2);
                 for (int i = 0; i < 2; ++i)
@@ -850,6 +853,8 @@ namespace Dominion.CardTypes
                     currentPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard => true, false);
                 }
             }
+
+            currentPlayer.MoveRevealedCardToHand(revealedCard);            
 
             return false;
         }
@@ -1295,7 +1300,7 @@ namespace Dominion.CardTypes
 
             if (cardsToReveal > 0)
             {
-                currentPlayer.FindCardsFromDiscardAndReveal(cardsToReveal, card => card.Is<CardTypes.Copper>());                
+                currentPlayer.RevealCardsFromDiscard(cardsToReveal, card => card.Is<CardTypes.Copper>());                
                 currentPlayer.MoveRevealedCardsToHand(card => true);
             }
         }
@@ -1440,6 +1445,26 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Mint
+        : Card
+    {
+        public Mint()
+            : base("Mint", coinCost: 5, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(card => card.isTreasure, gameState);
+
+            if (revealedCard != null)
+            {
+                currentPlayer.GainCardFromSupply(gameState, revealedCard.GetType());
+            }
+
+            currentPlayer.MoveRevealedCardToHand(revealedCard);
+        }
+    }
 
     // Hinterlands
 

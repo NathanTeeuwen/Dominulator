@@ -128,6 +128,12 @@ namespace Dominion
             return NoCardIfOptional(isOptional);
         }
 
+        // always optional
+        virtual public Type GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
+        {
+            return PlayerMustMakeCardChoice();
+        }
+
         virtual public Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return PlayerMustMakeCardChoice();
@@ -158,7 +164,7 @@ namespace Dominion
             return PlayerMustMakeChoice();
         }
 
-        virtual public bool ShouldRevealCard(GameState gameState, Card card)
+        virtual public bool ShouldRevealCardFromHand(GameState gameState, Card card)
         {
             return PlayerMustMakeChoice();
         }
