@@ -17,14 +17,14 @@ namespace Dominion
         Type GetCardFromSupplyToBuy(GameState gameState, CardPredicate acceptableCard);
         Type GuessCardTopOfDeck(GameState gameState);
         Type GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional);
-        Type GetCardFromRevealedCarsToTopDeck(BagOfCards revealedCards);
+        Type GetCardFromRevealedCarsToTopDeck(GameState gameState, BagOfCards revealedCards);
         Type GetCardFromRevealedCardsToTrash(PlayerState player, BagOfCards revealedCards, CardPredicate acceptableCard);
         Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard);
         Type GetCardFromHandToPassLeft(GameState gameState);
-        Type GetCardFromHandToDiscard(GameState gameState, bool isOptional);
+        Type GetCardFromHandToDiscard(GameState gameState, PlayerState player, bool isOptional);
         Type GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard); // always optional
         Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional);
-        Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState);
+        Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player);
         int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber);
         bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card);
         bool ShouldPutCardInHand(GameState gameState, Card card);

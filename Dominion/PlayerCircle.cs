@@ -108,7 +108,7 @@ namespace Dominion
                 // 1 is first player to the left
                 for (int playerIndex = 1; playerIndex < this.PlayerCount; ++playerIndex)
                 {
-                    PlayerState nextPlayer = this.players[playerIndex];
+                    PlayerState nextPlayer = this[playerIndex];
 
                     yield return nextPlayer;
                 }

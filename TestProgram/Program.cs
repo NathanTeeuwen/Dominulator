@@ -12,12 +12,25 @@ namespace Program
     {        
         static void Main()
         {
-            ComparePlayers(Strategies.FishingVillageLibraryCountPoorHouse.Player(1), Strategies.FishingVillageChapelPoorHouse.Player(2), firstPlayerAdvantage:true);
+            
+            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoney.Player(2));
+            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCard<CardTypes.Cartographer>.Player(2));
+            
+            //ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneyDelayed.Player(2));
+            
+            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCard<CardTypes.Smithy>.Player(2));
+            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCardCartographer<CardTypes.Smithy>.Player(2));
+
+            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCard<CardTypes.Rabble>.Player(2));
+            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCardCartographer<CardTypes.Rabble>.Player(2));
+            
+            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCard<CardTypes.Torturer>.Player(2));            
+            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCardCartographer<CardTypes.Torturer>.Player(2));                       
         }
 
         static void ComparePlayers(PlayerAction player1, PlayerAction player2, bool firstPlayerAdvantage = false)
         {
-            int numberOfGames = 10000;
+            int numberOfGames = 1000;
 
             int[] winnerCount = new int[2];
             int tieCount = 0;
@@ -320,18 +333,18 @@ namespace Program
 
         public PlayerAction(int playerIndex,
             IGetMatchingCard purchaseOrder,
-            IGetMatchingCard treasurePlayOrder,
             IGetMatchingCard actionOrder,
-            IGetMatchingCard discardOrder,
-            IGetMatchingCard trashOrder,
+            IGetMatchingCard treasurePlayOrder = null,            
+            IGetMatchingCard discardOrder = null,
+            IGetMatchingCard trashOrder = null,
             IGetMatchingCard gainOrder = null)
         {
             this.playerIndex = playerIndex;
             this.purchaseOrder = purchaseOrder;
             this.actionOrder = actionOrder;
-            this.trashOrder = trashOrder;
-            this.treasurePlayOrder = treasurePlayOrder;
-            this.discardOrder = discardOrder;
+            this.trashOrder = trashOrder == null ? Strategies.Default.EmptyPickOrder() : trashOrder;
+            this.treasurePlayOrder = treasurePlayOrder == null ? Strategies.Default.TreasurePlayOrder() : treasurePlayOrder;
+            this.discardOrder = discardOrder == null ? Strategies.Default.EmptyPickOrder() : discardOrder;
             this.gainOrder = gainOrder != null ? gainOrder : purchaseOrder;
         }        
 
@@ -377,6 +390,21 @@ namespace Program
             return result;
         }
 
+        public override Type GetCardFromRevealedCarsToTopDeck(GameState gameState, BagOfCards revealedCards)
+        {
+            // good for cartographer, not sure about anyone else.
+            foreach (Card card in revealedCards)
+            {
+                bool shouldDiscard = card.isVictory || card.Is<CardTypes.Copper>();
+                if (!shouldDiscard)
+                {
+                    return card.GetType();
+                }
+            }
+
+            return null;
+        }
+
         public override bool ShouldPutCardInHand(GameState gameState, Card card)
         {
             return this.discardOrder.GetMatchingCard(gameState, testCard => testCard.Is(card.GetType())) != null;
@@ -408,17 +436,16 @@ namespace Program
             }
         }
 
-        public override Type GetCardFromHandToDiscard(GameState gameState, bool isOptional)
-        {
-            var currentPlayer = gameState.players.CurrentPlayer;
+        public override Type GetCardFromHandToDiscard(GameState gameState, PlayerState player, bool isOptional)
+        {            
             Type result = this.discardOrder.GetMatchingCard(
                 gameState,
-                card => currentPlayer.Hand.HasCard(card.GetType()));
+                card => player.Hand.HasCard(card.GetType()));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null && !isOptional)
             {
-                Card card = currentPlayer.Hand.OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();
+                Card card = player.Hand.OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();
                 return card != null ? card.GetType() : null;
             }
 
@@ -437,7 +464,7 @@ namespace Program
 
                 if (x.isAction ^ y.isAction)
                 {
-                    return x.isAction ? -1 : 1;
+                    return x.isAction ? 1 : -1;
                 }
 
                 if (x.isVictory ^ y.isVictory)
@@ -451,12 +478,11 @@ namespace Program
             }
         }
 
-        public override Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
-        {
-            var currentPlayer = gameState.players.CurrentPlayer;
+        public override Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
+        {            
             return this.discardOrder.GetMatchingCard(
                 gameState,
-                card => currentPlayer.CardsBeingRevealed.HasCard(card.GetType()));
+                card => player.CardsBeingRevealed.HasCard(card.GetType()));
         }
 
         public override Type GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)

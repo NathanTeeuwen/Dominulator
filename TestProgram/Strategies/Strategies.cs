@@ -10,6 +10,28 @@ namespace Program
 {
     public static partial class Strategies
     {
+        private enum RelativeAmount
+        {            
+            LessThan,
+            LessThanEqual,
+            GreaterThan,
+            GreaterThanEqual,
+            Equal
+        }        
+
+        private static GameStatePredicate CountAllOwned<T>(RelativeAmount relativeAmount, int amount)
+        {
+            switch (relativeAmount)
+            {
+                case RelativeAmount.LessThan:          return delegate(GameState gameState) { return CountAllOwned<T>(gameState) < amount; };
+                case RelativeAmount.GreaterThan:       return delegate(GameState gameState) { return CountAllOwned<T>(gameState) > amount; };
+                case RelativeAmount.LessThanEqual:     return delegate(GameState gameState) { return CountAllOwned<T>(gameState) <= amount; };
+                case RelativeAmount.GreaterThanEqual:  return delegate(GameState gameState) { return CountAllOwned<T>(gameState) >= amount; };
+                case RelativeAmount.Equal:             return delegate(GameState gameState) { return CountAllOwned<T>(gameState) == amount; };
+                default: throw new System.Exception();
+            }            
+        }
+
         private static int CountAllOwned<T>(GameState gameState)
         {
             return gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is T).Count();
@@ -29,6 +51,15 @@ namespace Program
 
             return result;
         }
+
+        private static GameStatePredicate HasCardInHand<T>()
+            where T: Card, new()
+        {
+            return delegate(GameState gameState)
+            {
+                return gameState.players.CurrentPlayer.Hand.HasCard<T>();
+            };            
+        }        
 
         private static bool HasCardFromInHand(IGetMatchingCard matchingCards, GameState gameState)
         {
@@ -230,7 +261,7 @@ namespace Program
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 3),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 3),
+                           CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 5),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 2),
                            CardAcceptance.For<CardTypes.Gold>(),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 2),

@@ -52,7 +52,8 @@ namespace Dominion
         PlusBuy,
         GainCard,
         TopDeck,
-        Trash
+        Trash,
+        Nothing
     }      
 
     public struct CardPlacementPair

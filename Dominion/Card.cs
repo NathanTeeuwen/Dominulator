@@ -163,6 +163,11 @@ namespace Dominion
 
         }
 
+        virtual public DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        {
+            return DeckPlacement.Sentinel;
+        }
+
         virtual public DeckPlacement DoSpecializedActionOnGainWhileInPlay(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
             return DeckPlacement.Sentinel;

@@ -35,6 +35,7 @@ namespace Dominion.CardTypes
 
     // Prosperity
     public class Monument : Card { public Monument() : base("Monument", coinCost: 4, isAction: true, plusCoins: 2, plusVictoryToken: 1){}}
+    public class WorkersVillage : Card { public WorkersVillage() : base("Workers Village", coinCost: 4, isAction: true, plusCards: 1, plusActions:2, plusBuy:1) { } }
 
     // Alchemy
     public class Potion : Card { public Potion() : base("Potion", coinCost: 4) { } }
@@ -819,7 +820,7 @@ namespace Dominion.CardTypes
             currentPlayer.MoveRevealedCardsToHand(card => card.isVictory);
             while (currentPlayer.cardsBeingRevealed.Any)
             {
-                currentPlayer.RequestPlayerTopDeckCardFromRevealed(gameState);
+                currentPlayer.RequestPlayerTopDeckCardFromRevealed(gameState, isOptional:false);
             }
         }
     }
@@ -1604,10 +1605,84 @@ namespace Dominion.CardTypes
 
             foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
             {
-                //otherPlayer.RequestPlayerDiscardCardsFromHand
-                //otherPlayer.RequestPlayerChooseBetween(gameState, isValidChoice => isValidChoide == 
+                PlayerActionChoice choice = otherPlayer.RequestPlayerChooseBetween(gameState, isValidChoice => isValidChoice == PlayerActionChoice.Discard || isValidChoice == PlayerActionChoice.Nothing);
+
+                switch (choice)
+                {
+                    case PlayerActionChoice.Discard:
+                    {
+                        int cardCount = otherPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false);
+                        if (cardCount == 2)
+                        {
+                            otherPlayer.DrawOneCardIntoHand();
+                        }
+                        break;
+                    }
+                    case PlayerActionChoice.Nothing:
+                    break;                    
+                }                
             }
         }
+    }
+    
+    public class Venture
+        : Card
+    {
+        public Venture()
+            : base("Venture", coinCost: 5, plusCoins: 1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            while (true)
+            {
+                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+                if (revealedCard == null)
+                {
+                    break;
+                }
+                if (revealedCard.isTreasure)
+                {
+                    currentPlayer.cardsBeingRevealed.RemoveCard(revealedCard);
+                    currentPlayer.DoPlayTreasure(revealedCard, gameState);
+                    break;
+                }
+            }
+
+            currentPlayer.MoveRevealedCardsToDiscard();
+        }
+    }
+
+    public class Watchtower
+        : Card
+    {
+        public Watchtower()
+            : base("Watchtower", coinCost:3)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.DrawUntilCountInHand(6);
+        }
+
+        override public DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        {
+            // how does the player know what card is being asked about?
+            PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState,
+                acceptableChoice => acceptableChoice == PlayerActionChoice.Trash ||
+                                    acceptableChoice == PlayerActionChoice.TopDeck ||
+                                    acceptableChoice == PlayerActionChoice.Nothing);
+
+            switch (choice)
+            {
+                case PlayerActionChoice.Trash: return DeckPlacement.Trash;
+                case PlayerActionChoice.TopDeck: return DeckPlacement.TopOfDeck;
+                case PlayerActionChoice.Nothing: return DeckPlacement.Sentinel;
+                default: throw new Exception("Invalid choice");
+            }            
+        }        
     }
 
     // Seaside
@@ -1622,8 +1697,8 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedDurationActionAtBeginningOfTurn(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.AddActions(1);            
-            currentPlayer.turnCounters.AddCoins(currentPlayer, 1);
+            currentPlayer.AddCoins(1);
+            currentPlayer.AddActions(1);
         }
     }
 
@@ -1741,6 +1816,30 @@ namespace Dominion.CardTypes
             currentPlayer.RevealCardsFromDeck(2);
             // TODO: Require option to put ruins back.
             currentPlayer.RequestPlayerPutRevealedCardsBackOnDeck(gameState);
+        }
+    }
+
+    public class Cartographer :
+        Card
+    {
+        public Cartographer()
+            : base("Cartographer", coinCost: 5, isAction: true, plusCards:1, plusActions:1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RevealCardsFromDeck(4);
+
+            while (currentPlayer.cardsBeingRevealed.Any())
+            {
+                if (currentPlayer.RequestPlayerTopDeckCardFromRevealed(gameState, true) == null)
+                {
+                    break;
+                }
+            }
+
+            currentPlayer.MoveRevealedCardsToDiscard();
         }
     }
 

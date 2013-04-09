@@ -103,7 +103,7 @@ namespace Dominion
             return NoCardIfOptional(isOptional);   
         }
 
-        virtual public Type GetCardFromRevealedCarsToTopDeck(BagOfCards revealedCards)
+        virtual public Type GetCardFromRevealedCarsToTopDeck(GameState gameState, BagOfCards revealedCards)
         {
             return PlayerMustMakeCardChoice();
         }
@@ -123,7 +123,7 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromHandToDiscard(GameState gameState, bool isOptional)
+        virtual public Type GetCardFromHandToDiscard(GameState gameState, PlayerState player, bool isOptional)
         {
             return NoCardIfOptional(isOptional);
         }
@@ -139,7 +139,7 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
+        virtual public Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
         {
             return PlayerMustMakeCardChoice();
         }        

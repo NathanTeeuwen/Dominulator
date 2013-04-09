@@ -88,6 +88,7 @@ namespace Dominion
         public IPlayerAction Actions { get { return this.actions; } }
         public int AvailableCoins { get { return this.turnCounters.AvailableCoins; } }
         public int AvailableActions { get { return this.turnCounters.AvailableActions; } }
+        public int AvailableBuys { get { return this.turnCounters.availableBuys; } }
         public BagOfCards Hand { get { return this.hand; } }
         public BagOfCards CardsBeingRevealed { get { return this.cardsBeingRevealed; } }
 
@@ -677,7 +678,7 @@ namespace Dominion
                 return false;
             }
 
-            Type cardTypeToDiscard = this.actions.GetCardFromHandToDiscard(gameState, isOptional);
+            Type cardTypeToDiscard = this.actions.GetCardFromHandToDiscard(gameState, this, isOptional);
             if (cardTypeToDiscard == null)
             {
                 if (isOptional)
@@ -699,7 +700,7 @@ namespace Dominion
         {
             while (this.cardsBeingRevealed.Any)
             {
-                Type cardToPutOnTop = this.actions.GetCardFromRevealedCardsToPutOnDeck(gameState);
+                Type cardToPutOnTop = this.actions.GetCardFromRevealedCardsToPutOnDeck(gameState, this);
                 if (cardToPutOnTop == null)
                 {
                     throw new Exception("Player must choose a card to put on top of deck");
@@ -765,12 +766,17 @@ namespace Dominion
             return null;
         }
 
-        internal Card RequestPlayerTopDeckCardFromRevealed(GameState gameState)
+        internal Card RequestPlayerTopDeckCardFromRevealed(GameState gameState, bool isOptional)
         {
-            Type cardTypeToTopDeck = this.actions.GetCardFromRevealedCarsToTopDeck(this.cardsBeingRevealed);
-            if (cardTypeToTopDeck == null)
+            Type cardTypeToTopDeck = this.actions.GetCardFromRevealedCarsToTopDeck(gameState, this.cardsBeingRevealed);
+            if (cardTypeToTopDeck == null && !isOptional)
             {
                 throw new Exception("Must choose a card to top deck");
+            }
+
+            if (cardTypeToTopDeck == null)
+            {
+                return null;
             }
 
             Card cardToTopDeck = this.cardsBeingRevealed.RemoveCard(cardTypeToTopDeck);
@@ -779,6 +785,7 @@ namespace Dominion
                 throw new Exception("Selected a card that wasn't being revealed");
             }
 
+            this.gameLog.PlayerTopDeckedCard(this, cardToTopDeck);
             this.deck.AddCardToTop(cardToTopDeck);
             return cardToTopDeck;
         }
@@ -836,9 +843,7 @@ namespace Dominion
         }
 
         internal void GainCard(GameState gameState, Card card, DeckPlacement defaultPlacement = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)
-        {            
-            // TODO: check if there is a reaction in hand for gaining a card
-            
+        {
             if (gainReason == GainReason.Buy)
             {
                 this.gameLog.PlayerBoughtCard(this, card);
@@ -849,17 +854,33 @@ namespace Dominion
             }
 
             this.gameLog.PushScope();
+
             card.DoSpecializedWhenGain(this, gameState);
-            this.gameLog.PopScope();
+
+            // the order of checking card in hand and cards in play doesnt seem to interact, so order doesn't matter.
+
+            bool wasCardMoved = false;
+            foreach (Card cardInHand in this.Hand)
+            {
+                DeckPlacement preferredPlacement = cardInHand.DoSpecializedActionOnGainWhileInHand(this, gameState, card);
+                if (!wasCardMoved && preferredPlacement != DeckPlacement.Sentinel)
+                {
+                    defaultPlacement = preferredPlacement;                    
+                    wasCardMoved = true;
+                }
+            }            
 
             foreach (Card cardInPlay in this.CardsInPlay)
             {
                 DeckPlacement preferredPlacement = cardInPlay.DoSpecializedActionOnGainWhileInPlay(this, gameState, card);
-                if (preferredPlacement != DeckPlacement.Sentinel)
+                if (!wasCardMoved && preferredPlacement != DeckPlacement.Sentinel)
                 {
                     defaultPlacement = preferredPlacement;
+                    wasCardMoved = true;
                 }
             }
+
+            this.gameLog.PopScope();
 
             this.PlaceCardFromPlacement(new CardPlacementPair(card, defaultPlacement), gameState);
         }
