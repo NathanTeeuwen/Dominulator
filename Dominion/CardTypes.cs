@@ -1627,6 +1627,20 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Caravan :
+        Card
+    {
+        public Caravan()
+            : base("Caravan", coinCost:4, isAction: true, isDuration: true, plusCards:1, plusActions: 1)
+        {
+        }
+
+        public override void DoSpecializedDurationActionAtBeginningOfTurn(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.DrawAdditionalCardsIntoHand(1);            
+        }
+    }
+
     // Hinterlands
 
     public class CrossRoads :

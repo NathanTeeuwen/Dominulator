@@ -43,6 +43,13 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategies\BigMoneySingleCard.cs" />
+    <Compile Include="Strategies\DeathCartDoubleWarehouse.cs" />
+    <Compile Include="Strategies\DuchyDukeWarehouseEmbassy.cs" />
+    <Compile Include="Strategies\FeodumDevelop.cs" />
+    <Compile Include="Strategies\FishingVillageChapelPoorHouse.cs" />
+    <Compile Include="Strategies\FishingVillageLibraryCountPoorHouse.cs" />
+    <Compile Include="Strategies\Strategies.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
