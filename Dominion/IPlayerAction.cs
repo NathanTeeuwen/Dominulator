@@ -30,9 +30,10 @@ namespace Dominion
         bool ShouldPutCardInHand(GameState gameState, Card card);
         bool WantToResign(GameState gameState);        
         bool ShouldPutDeckInDiscard(GameState gameState);
+        bool ShouldPutCardOnTopOfDeck(Card card, GameState gameState);
         bool ShouldTrashCard(GameState gameState, Card card);
         bool ShouldGainCard(GameState gameState, Card card);
-        PlayerActionChoice ChooseAction(GameState gameState, IsValidChoice acceptableChoice);
+        PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice);
         string PlayerName { get; }
     }
 }

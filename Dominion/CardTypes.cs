@@ -234,7 +234,7 @@ namespace Dominion.CardTypes
                     break;
                 }
 
-                bool putCardInHand = revealedCard.isAction && currentPlayer.actions.ShouldPutCardInHand(gameState, revealedCard);
+                bool putCardInHand = !revealedCard.isAction || currentPlayer.actions.ShouldPutCardInHand(gameState, revealedCard);
 
                 if (putCardInHand)
                 {
@@ -502,9 +502,9 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        public override int ProvideDiscountForWhileInPlay(Card card)
         {
-            currentPlayer.turnCounters.cardCoinDiscount += 1;
+            return 1;
         }
     }
 
@@ -521,7 +521,7 @@ namespace Dominion.CardTypes
             if (currentPlayer.CountCardsPlayedThisTurn >= 3)
             {
                 currentPlayer.DrawOneCardIntoHand();
-                currentPlayer.turnCounters.availableActionCount += 1;
+                currentPlayer.AddActions(1);
             }
         }
     }
@@ -578,7 +578,7 @@ namespace Dominion.CardTypes
 
             if (gainedCard.isAction)
             {
-                currentPlayer.turnCounters.availableActionCount += 1;
+                currentPlayer.AddActions(1);
             }
 
             if (gainedCard.isTreasure)
@@ -657,7 +657,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             // Choose one: ...
-            PlayerActionChoice actionChoice = currentPlayer.RequestPlayerChooseAction(
+            PlayerActionChoice actionChoice = currentPlayer.RequestPlayerChooseBetween(
                 gameState,
                 acceptableChoice => acceptableChoice == PlayerActionChoice.Discard || acceptableChoice == PlayerActionChoice.PlusCoin);
 
@@ -708,7 +708,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            PlayerActionChoice actionChoice = currentPlayer.RequestPlayerChooseAction(
+            PlayerActionChoice actionChoice = currentPlayer.RequestPlayerChooseBetween(
                 gameState,
                 acceptableChoice => acceptableChoice == PlayerActionChoice.PlusCard || acceptableChoice == PlayerActionChoice.PlusAction);
 
@@ -718,7 +718,7 @@ namespace Dominion.CardTypes
             }
             else
             {
-                currentPlayer.turnCounters.availableActionCount += 2;
+                currentPlayer.AddActions(2);                
             }
         }
     }
@@ -741,11 +741,11 @@ namespace Dominion.CardTypes
                        acceptableChoice == PlayerActionChoice.PlusCoin;
             };
 
-            PlayerActionChoice firstChoice = currentPlayer.RequestPlayerChooseAction(
+            PlayerActionChoice firstChoice = currentPlayer.RequestPlayerChooseBetween(
                 gameState,
                 acceptableFirstChoice);
 
-            PlayerActionChoice secondChoice = currentPlayer.RequestPlayerChooseAction(
+            PlayerActionChoice secondChoice = currentPlayer.RequestPlayerChooseBetween(
                 gameState,
                 acceptableSecondChoice => acceptableSecondChoice != firstChoice && acceptableFirstChoice(acceptableSecondChoice));
 
@@ -758,7 +758,7 @@ namespace Dominion.CardTypes
             switch (actionChoice)
             {
                 case PlayerActionChoice.PlusCard: currentPlayer.DrawOneCardIntoHand(); break;
-                case PlayerActionChoice.PlusAction: currentPlayer.turnCounters.availableActionCount += 1; break;
+                case PlayerActionChoice.PlusAction: currentPlayer.AddActions(1); break;
                 case PlayerActionChoice.PlusBuy: currentPlayer.turnCounters.availableBuys += 1; break;
                 case PlayerActionChoice.PlusCoin: currentPlayer.AddCoins(1); break;
                 default: throw new Exception("Invalid pawn action choice");
@@ -890,7 +890,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            PlayerActionChoice actionChoice = currentPlayer.RequestPlayerChooseAction(
+            PlayerActionChoice actionChoice = currentPlayer.RequestPlayerChooseBetween(
                 gameState,
                 acceptableChoice => acceptableChoice == PlayerActionChoice.PlusCard ||
                                     acceptableChoice == PlayerActionChoice.PlusCoin ||
@@ -941,14 +941,14 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            PlayerActionChoice playerChoice = otherPlayer.RequestPlayerChooseAction(
+            PlayerActionChoice playerChoice = otherPlayer.RequestPlayerChooseBetween(
                 gameState,
                 acceptableChoice => acceptableChoice == PlayerActionChoice.Discard ||
                                     acceptableChoice == PlayerActionChoice.GainCard);
 
             switch (playerChoice)
             {
-                case PlayerActionChoice.Discard: otherPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2); break;
+                case PlayerActionChoice.Discard: otherPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false); break;
                 case PlayerActionChoice.GainCard: otherPlayer.GainCardFromSupply(gameState, typeof(Curse), DeckPlacement.Hand); break;
                 default: throw new Exception("Invalid Choice");
             }
@@ -1014,7 +1014,7 @@ namespace Dominion.CardTypes
         {
             if (card.isAction)
             {
-                currentPlayer.turnCounters.availableActionCount += 2;
+                currentPlayer.AddActions(2);                
             }
 
             if (card.isTreasure)
@@ -1123,7 +1123,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            PlayerActionChoice playerChoice = currentPlayer.RequestPlayerChooseAction(gameState, acceptableChoice =>
+            PlayerActionChoice playerChoice = currentPlayer.RequestPlayerChooseBetween(gameState, acceptableChoice =>
                 acceptableChoice == PlayerActionChoice.GainCard ||
                 acceptableChoice == PlayerActionChoice.PlusCard ||
                 acceptableChoice == PlayerActionChoice.Trash);
@@ -1193,7 +1193,7 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override void DoSpecializedCleanup(PlayerState currentPlayer, GameState gameState)
+        public override void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
             // TODO
             throw new NotImplementedException();
@@ -1372,7 +1372,7 @@ namespace Dominion.CardTypes
 
          public override bool IsRestrictedFromBuy(PlayerState currentPlayer, GameState gameState)
          {
-             return currentPlayer.cardsInPlay.HasCard<CardTypes.Copper>();
+             return currentPlayer.CardsInPlay.Where(card => card.Is<Copper>()).Any();
          }
     }
 
@@ -1483,6 +1483,150 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Peddler
+        : Card
+    {
+        public Peddler()
+            : base("Peddler", coinCost: 8, isAction: true, plusActions:1, plusCards:1, plusCoins:1)
+        {
+        }
+
+        public override int ProvideSelfDiscount(PlayerState playerState)
+        {
+            if (playerState.playPhase == PlayPhase.Buy)
+            {
+                return playerState.CardsInPlay.Where(card => card.isAction).Count() * 2;
+            }
+
+            return 0;
+        }
+    }
+
+    public class Quarry
+        : Card
+    {
+        public Quarry()
+            : base("Quarry", coinCost: 4, isTreasure: true, plusCoins: 1)
+        {
+        }
+
+        override public int ProvideDiscountForWhileInPlay(Card card)
+        {
+            if (card.isAction)
+            {
+                return 2;
+            }
+            return 0;
+        }
+    }
+
+    public class Rabble
+        : Card
+    {
+        public Rabble()
+            : base("Rabble", coinCost: 5, isAction: true, plusCards: 3, isAttack:true)
+        {
+        }
+
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {            
+            otherPlayer.RevealCardsFromDeck(3);
+            otherPlayer.MoveRevealedCardToDiscard(card => card.isAction || card.isTreasure);
+            otherPlayer.RequestPlayerPutRevealedCardsBackOnDeck(gameState);
+        }
+    }
+
+    public class RoyalSeal
+        : Card
+    {
+        public RoyalSeal()
+            : base("Royal Seal", coinCost: 5, isTreasure: true, plusCoins: 2)
+        {
+        }
+
+        public override DeckPlacement DoSpecializedActionOnGainWhileInPlay(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        {
+            if (currentPlayer.actions.ShouldPutCardOnTopOfDeck(gainedCard, gameState))
+            {
+                return DeckPlacement.TopOfDeck;
+            }
+
+            return DeckPlacement.Sentinel;
+        }
+    }
+
+    public class Talisman
+        : Card
+    {
+        public Talisman()
+            : base("Talisman", coinCost: 4, isTreasure: true, plusCoins: 1)
+        {
+        }
+
+        public override void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        {
+            if (boughtCard.CurrentCoinCost(currentPlayer) <= 4 && !boughtCard.isVictory)
+            {
+                currentPlayer.GainCardFromSupply(gameState, boughtCard.GetType());
+            }            
+        }
+    }
+
+    public class TradeRoute
+        : Card
+    {
+        public TradeRoute()
+            : base("Trade Route", coinCost: 3, isAction: true, plusBuy:1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            int additionalCoins = gameState.supplyPiles.Where(pile => pile.ProtoTypeCard.isVictory && gameState.HasCardEverBeenGainedFromPile(pile)).Count();
+            currentPlayer.AddCoins(additionalCoins);
+
+            currentPlayer.RequestPlayerTrashCardFromHand(gameState, card => true, isOptional: false);
+        }        
+    }
+
+    public class Vault
+        : Card
+    {
+        public Vault()
+            : base("Vault", coinCost:5, isAction: true, plusCards:2)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            int cardDiscardCount = currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, int.MaxValue, isOptional: true);
+            currentPlayer.AddCoins(cardDiscardCount);
+
+            foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
+            {
+                //otherPlayer.RequestPlayerDiscardCardsFromHand
+                //otherPlayer.RequestPlayerChooseBetween(gameState, isValidChoice => isValidChoide == 
+            }
+        }
+    }
+
+    // Seaside
+
+    public class FishingVillage :
+        Card
+    {
+        public FishingVillage()
+            : base("Fishing Village", coinCost: 3, isAction: true, isDuration:true, plusCoins:1, plusActions:2)
+        {
+        }
+
+        public override void DoSpecializedDurationActionAtBeginningOfTurn(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.AddActions(1);            
+            currentPlayer.turnCounters.AddCoins(currentPlayer, 1);
+        }
+    }
+
     // Hinterlands
 
     public class CrossRoads :
@@ -1495,9 +1639,9 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            if (!currentPlayer.cardsInPlay.HasCard<CrossRoads>())
+            if (!currentPlayer.CardsInPlay.Where(card => card.Is<CrossRoads>()).Any())
             {
-                currentPlayer.turnCounters.availableActionCount += 3;
+                currentPlayer.AddActions(3);                
             }
 
             int countVictoryCards = currentPlayer.hand.Count(card => card.isVictory);
@@ -1518,7 +1662,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 3);
+            currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 3, isOptional:false);
         }       
     }
 
@@ -1586,6 +1730,43 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Count :
+        Card
+    {
+        public Count()
+            : base("Count", coinCost: 5, isAction: true)
+        {            
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState,
+                acceptableChoice => acceptableChoice == PlayerActionChoice.Discard ||
+                                    acceptableChoice == PlayerActionChoice.GainCard ||
+                                    acceptableChoice == PlayerActionChoice.TopDeck);
+
+            switch (choice)
+            {
+                case PlayerActionChoice.Discard: currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false); break;
+                case PlayerActionChoice.GainCard: currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Copper)); break;
+                case PlayerActionChoice.TopDeck: currentPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard => true, isOptional:false); break;
+            }
+
+            PlayerActionChoice choice2 = currentPlayer.RequestPlayerChooseBetween(gameState,
+                acceptableChoice => acceptableChoice == PlayerActionChoice.PlusCoin ||
+                                    acceptableChoice == PlayerActionChoice.Trash ||
+                                    acceptableChoice == PlayerActionChoice.GainCard);
+
+            switch (choice2)
+            {
+                case PlayerActionChoice.PlusCoin: currentPlayer.AddCoins(3); break;
+                case PlayerActionChoice.Trash: currentPlayer.TrashHand(gameState); break;
+                case PlayerActionChoice.GainCard: currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Duchy)); break;
+            }
+        }
+    }
+
+
     public class DeathCart :
         Card
     {
@@ -1651,7 +1832,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 3);
+            currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 3, isOptional: false);
         }
     }
 
@@ -1678,5 +1859,22 @@ namespace Dominion.CardTypes
         {
             return silvercount / 3;
         }
-    }    
+    }  
+  
+    public class PoorHouse : 
+            Card
+    {
+        public PoorHouse()
+            : base("Poor House", coinCost: 1, isAction:true, plusCoins:4)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RevealHand();
+
+            currentPlayer.AddCoins( 0 - currentPlayer.Hand.Where(card => card.isTreasure).Count());
+        }
+    }
+
 }

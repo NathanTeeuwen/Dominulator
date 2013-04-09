@@ -169,6 +169,11 @@ namespace Dominion
             return PlayerMustMakeChoice();
         }
 
+        virtual public bool ShouldPutCardOnTopOfDeck(Card card, GameState gameState)
+        {
+            return PlayerMustMakeChoice();
+        }
+
         virtual public bool ShouldTrashCard(GameState gameState, Card card)
         {
             return PlayerMustMakeChoice();
@@ -179,7 +184,7 @@ namespace Dominion
             return PlayerMustMakeChoice();
         }
 
-        virtual public PlayerActionChoice ChooseAction(GameState gameState, IsValidChoice acceptableChoice)
+        virtual public PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
         {
             return PlayerMustMakeActionChoice();
         }

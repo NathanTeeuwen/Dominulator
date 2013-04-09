@@ -40,7 +40,20 @@ namespace Dominion
         Play,
         Trash,
         TopOfDeck,
+        Sentinel
     }
+
+    public enum PlayerActionChoice
+    {
+        PlusCoin,
+        Discard,
+        PlusCard,
+        PlusAction,
+        PlusBuy,
+        GainCard,
+        TopDeck,
+        Trash
+    }      
 
     public struct CardPlacementPair
     {
@@ -74,6 +87,15 @@ namespace Dominion
         AbsoluteCost
     }
 
+    public enum PlayPhase
+    {
+        Action,
+        PlayTreasure,
+        Buy,
+        Cleanup,
+        NotMyTurn
+    }
+
 
     public class GameState
     {
@@ -81,6 +103,8 @@ namespace Dominion
         public PlayerCircle players;
         public PileOfCards[] supplyPiles;
         public BagOfCards trash;
+        private bool[] hasPileEverBeenGained;
+        private int[] pileEmbargoTokenCount;
 
         // special piles not in the supply - not available in every game
         private PileOfCards blackMarketDeck;
@@ -136,6 +160,8 @@ namespace Dominion
             }
 
             this.supplyPiles = cardPiles.ToArray();
+            this.hasPileEverBeenGained = new bool[this.supplyPiles.Length];
+            this.pileEmbargoTokenCount = new int[this.supplyPiles.Length];
             this.trash = new BagOfCards();
                        
             foreach (PlayerState player in this.players.AllPlayers)
@@ -276,24 +302,40 @@ namespace Dominion
             this.gameLog.BeginTurn(currentPlayerState);
             this.gameLog.PushScope();
             currentPlayerState.InitializeTurn();
-            currentPlayer.BeginTurn();            
+            currentPlayer.BeginTurn();
 
+            DoDurationActionsFromPreviousTurn(currentPlayerState);
             DoActionPhase(currentPlayerState);
             DoPlayTreasures(currentPlayerState);
-            DoBuyPhase(currentPlayerState);            
-            currentPlayerState.CleanupPhase();
+            DoBuyPhase(currentPlayerState);
+            DoCleanupPhase(currentPlayerState);            
             currentPlayerState.DrawUntilCountInHand(5);
-            
+            currentPlayerState.playPhase = PlayPhase.NotMyTurn;
+
             currentPlayer.EndTurn();            
             this.gameLog.EndTurn(currentPlayerState);
             this.gameLog.PopScope();
         }
 
+        private void DoDurationActionsFromPreviousTurn(PlayerState currentPlayer)
+        {            
+            foreach (Card card in currentPlayer.durationCards)
+            {
+                this.gameLog.ReceivedDurationEffectFrom(currentPlayer, card);
+                this.gameLog.PushScope();
+                card.DoSpecializedDurationActionAtBeginningOfTurn(currentPlayer, this);
+                this.gameLog.PopScope();
+            }
+
+            currentPlayer.MoveDurationCardsToInPlay();         
+        }
+
         private void DoActionPhase(PlayerState currentPlayer)
         {
-            while (currentPlayer.turnCounters.availableActionCount > 0)
+            currentPlayer.playPhase = PlayPhase.Action;
+            while (currentPlayer.AvailableActions > 0)
             {
-                currentPlayer.turnCounters.availableActionCount--;
+                currentPlayer.turnCounters.RemoveAction();
 
                 if (!currentPlayer.RequestPlayerPlayActionFromHand(this, isOptional: true))
                 {
@@ -312,7 +354,8 @@ namespace Dominion
         }
 
         private void DoBuyPhase(PlayerState currentPlayer)
-        {                
+        {
+            currentPlayer.playPhase = PlayPhase.Buy;
             while (currentPlayer.turnCounters.availableBuys > 0)
             {
                 Type cardType = currentPlayer.actions.GetCardFromSupplyToBuy(this, CardAvailableForPurchaseForCurrentPlayer);
@@ -327,20 +370,33 @@ namespace Dominion
                     return;
                 }
 
-                currentPlayer.turnCounters.availableCoins -= boughtCard.CurrentCoinCost(currentPlayer);
+                currentPlayer.turnCounters.RemoveCoins(boughtCard.CurrentCoinCost(currentPlayer));
                 currentPlayer.turnCounters.availableBuys -= 1;
 
-                foreach (Card cardInPlay in currentPlayer.cardsInPlay)
+                foreach (Card cardInPlay in currentPlayer.CardsInPlay)
                 {
                     gameLog.PushScope();
-                    cardInPlay.DoSpecializedActionOnBuyWhileInPlay(currentPlayer, this, boughtCard);
+                    cardInPlay.DoSpecializedActionOnBuyWhileInPlay(currentPlayer, this, boughtCard);                    
                     gameLog.PopScope();
                 }
             }
         }
 
+        private void DoCleanupPhase(PlayerState currentPlayer)
+        {
+            currentPlayer.playPhase = PlayPhase.Cleanup;
+
+            foreach (Card cardInPlay in currentPlayer.cardsPlayed)
+            {
+                cardInPlay.DoSpecializedCleanupAtStartOfCleanup(currentPlayer, this);
+            }
+            
+            currentPlayer.CleanupCardsToDiscard();
+        }
+
         internal void DoPlayTreasures(PlayerState currentPlayer)
         {
+            currentPlayer.playPhase = PlayPhase.PlayTreasure;
             while (true)
             {
                 Type cardTypeToPlay = currentPlayer.actions.GetTreasureFromHandToPlay(this);
@@ -412,6 +468,8 @@ namespace Dominion
                 return null;
             }
 
+            this.CardHasBeenGainedFromPile(pile);            
+
             Card card = pile.DrawCardFromTop();
             if (card == null)
             {
@@ -427,16 +485,28 @@ namespace Dominion
         {
             PlayerGainCardFromSupply(typeof(cardType), playerState);            
         }
-    }
-        
-    public enum PlayerActionChoice
-    {
-        PlusCoin,
-        Discard,
-        PlusCard,
-        PlusAction,
-        PlusBuy,
-        GainCard,
-        Trash
-    }      
+
+        internal void CardHasBeenGainedFromPile(PileOfCards pile)
+        {
+            this.hasPileEverBeenGained[GetIndexForPile(pile)] = true;            
+        }
+
+        internal bool HasCardEverBeenGainedFromPile(PileOfCards pile)
+        {
+            return this.hasPileEverBeenGained[GetIndexForPile(pile)];            
+        }
+
+        internal int GetIndexForPile(PileOfCards pile)
+        {
+            for (int index = 0; index < this.supplyPiles.Length; ++index)
+            {
+                if (object.ReferenceEquals(pile, this.supplyPiles[index]))
+                {
+                    return index;
+                }
+            }
+
+            throw new Exception("Pile not a part of supply");
+        }
+    }          
 }

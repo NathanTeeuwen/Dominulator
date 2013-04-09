@@ -25,6 +25,7 @@ namespace Dominion
         public readonly bool isReaction;
         public readonly bool isRuin;
         public readonly bool isTreasure;
+        public readonly bool isDuration;
         public readonly bool requiresRuins;
 
         internal Card(
@@ -44,6 +45,7 @@ namespace Dominion
             bool isReaction = false,
             bool isRuin = false,
             bool isTreasure = false,
+            bool isDuration = false,
             bool requiresRuins = false)
         {
             this.name = name;
@@ -63,6 +65,7 @@ namespace Dominion
             this.isTreasure = isTreasure;
             this.defualtSupplyCount = defaultSupplyCount;
             this.requiresRuins = requiresRuins;
+            this.isDuration = isDuration;
         }
 
         public bool Is(Type card)
@@ -109,7 +112,15 @@ namespace Dominion
 
         public int CurrentCoinCost(PlayerState player)
         {
-            int effectiveCost = this.coinCost - player.turnCounters.cardCoinDiscount;
+            int effectiveCost = this.coinCost;
+
+            foreach (Card cardInPlay in player.CardsInPlay)
+            {
+                effectiveCost -= cardInPlay.ProvideDiscountForWhileInPlay(this);
+            }
+
+            effectiveCost -= this.ProvideSelfDiscount(player);
+
             return (effectiveCost >= 0) ? effectiveCost : 0;
         }
 
@@ -133,7 +144,7 @@ namespace Dominion
         {
         }
 
-        virtual public void DoSpecializedCleanup(PlayerState currentPlayer, GameState gameState)
+        virtual public void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
 
         }
@@ -145,6 +156,26 @@ namespace Dominion
         virtual public void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
 
+        }
+
+        virtual public void DoSpecializedDurationActionAtBeginningOfTurn(PlayerState currentPlayer, GameState gameState)
+        {
+
+        }
+
+        virtual public DeckPlacement DoSpecializedActionOnGainWhileInPlay(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        {
+            return DeckPlacement.Sentinel;
+        }
+
+        virtual public int ProvideDiscountForWhileInPlay(Card card)
+        {
+            return 0;
+        }
+
+        virtual public int ProvideSelfDiscount(PlayerState playState)
+        {
+            return 0;
         }
 
         virtual public bool IsRestrictedFromBuy(PlayerState currentPlayer, GameState gameState)

@@ -18,14 +18,18 @@ namespace Dominion
         void PlayerBoughtCard(PlayerState playerState, Card card);
         void GainedCard(PlayerState playerState, Card card);
         void PlayedCard(PlayerState playerState, Card card);
+        void ReceivedDurationEffectFrom(PlayerState playerState, Card card);
         void PlayerGainedCard(PlayerState playerState, Card card);
         void PlayerDiscardCard(PlayerState playerState, Card card);
         void PlayerTrashedCard(PlayerState playerState, Card card);
+        void PlayerPutCardInHand(PlayerState playerState, Card card);
+        void PlayerTopDeckedCard(PlayerState playerState, Card card);
         void DrewCardIntoHand(PlayerState playerState, Card card);
         void DiscardedCard(PlayerState playerState, Card card);
         void ReshuffledDiscardIntoDeck(PlayerState playerState);
         void EndGame(GameState gameState);
         void PlayerGainedCoin(PlayerState playerState, int coinAmount);
+        void PlayerGainedActions(PlayerState playerState, int actionAmount);        
     }
 
 
@@ -91,8 +95,22 @@ namespace Dominion
         {
         }
 
+        public void PlayerPutCardInHand(PlayerState playerState, Card card)
+        {
+
+        }
+
+        public void PlayerTopDeckedCard(PlayerState playerState, Card card)
+        {
+        }
+
         public void PlayedCard(PlayerState playerState, Card card)
         {
+        }
+
+        public void ReceivedDurationEffectFrom(PlayerState playerState, Card card)
+        {
+
         }
 
         public void ReshuffledDiscardIntoDeck(PlayerState playerState)
@@ -105,6 +123,11 @@ namespace Dominion
 
         public void PlayerGainedCoin(PlayerState playerState, int coinAmount)
         {
+        }
+
+        public void PlayerGainedActions(PlayerState playerState, int coinAmount)
+        {
+
         }
     }
 
@@ -252,6 +275,21 @@ namespace Dominion
             this.textWriter.WriteLine("{0} trashed {1}.", playerState.actions.PlayerName, card.name);
         }
 
+        public void PlayerPutCardInHand(PlayerState playerState, Card card)
+        {
+            this.textWriter.WriteLine("{0} put {1} into his hand.", playerState.actions.PlayerName, card.name);
+        }
+
+        public void PlayerTopDeckedCard(PlayerState playerState, Card card)
+        {
+            this.textWriter.WriteLine("{0} Placed {1} on top of his deck.", playerState.actions.PlayerName, card.name);
+        }
+
+        public void ReceivedDurationEffectFrom(PlayerState playerState, Card card)
+        {
+            this.textWriter.WriteLine("{0} Finished Playing {1}.", playerState.actions.PlayerName, card.name);
+        }
+
         public void PlayedCard(PlayerState playerState, Card card)
         {
             this.textWriter.WriteLine("{0} Played {1}.", playerState.actions.PlayerName, card.name);
@@ -307,6 +345,11 @@ namespace Dominion
         public void PlayerGainedCoin(PlayerState playerState, int coinAmount)
         {
             this.textWriter.WriteLine("+{0} Coin = {1} all together.", coinAmount, playerState.AvailableCoins);
+        }
+
+        public void PlayerGainedActions(PlayerState playerState, int actionAmount)
+        {
+            this.textWriter.WriteLine("+{0} Actions = {1} all together.", actionAmount, playerState.AvailableActions);
         }        
 
         private void WriteAllCards(PlayerState playerState)

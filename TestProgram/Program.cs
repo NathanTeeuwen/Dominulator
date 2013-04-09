@@ -9,15 +9,15 @@ using System.Threading.Tasks;
 namespace Program
 {
     class Program
-    {
-        static void Main(string[] args)
+    {        
+        static void Main()
         {
-            ComparePlayers(Strategies.DuchyDukeWarehouseEmbassy.Player(1), Strategies.FeodumDevelop.Player(2));
+            ComparePlayers(Strategies.FishingVillageLibraryCountPoorHouse.Player(1), Strategies.FishingVillageChapelPoorHouse.Player(2), firstPlayerAdvantage:true);
         }
 
-        static void ComparePlayers(PlayerAction player1, PlayerAction player2)
+        static void ComparePlayers(PlayerAction player1, PlayerAction player2, bool firstPlayerAdvantage = false)
         {
-            int numberOfGames = 1000;
+            int numberOfGames = 10000;
 
             int[] winnerCount = new int[2];
             int tieCount = 0;
@@ -27,12 +27,15 @@ namespace Program
                 using (IGameLog gameLog = gameCount == 0 ? (IGameLog)new HumanReadableGameLog("..\\..\\Results\\GameLog.txt") : (IGameLog)new EmptyGameLog())
                 //using (IGameLog gameLog = new HumanReadableGameLog("..\\..\\Results\\GameLog." + gameCount ) )
                 {
-                    // swap order every other game
-                    if (gameCount % 2 == 1)
+                    if (!firstPlayerAdvantage)
                     {
-                        var temp = player1;
-                        player1 = player2;
-                        player2 = temp;
+                        // swap order every other game
+                        if (gameCount % 2 == 1)
+                        {
+                            var temp = player1;
+                            player1 = player2;
+                            player2 = temp;
+                        }
                     }
 
                     var gameConfig = new GameConfig(GetCardSet(player1, player2));
@@ -179,12 +182,27 @@ namespace Program
         public CardPickByPriority(params CardAcceptance[] cardAcceptances)
         {
             this.cardAcceptances = cardAcceptances;
-        }
+        }        
 
         public Type GetMatchingCard(GameState gameState, CardPredicate cardPredicate)
         {
             foreach (CardAcceptance acceptance in this.cardAcceptances)
             {
+                if (cardPredicate(acceptance.card) &&
+                    acceptance.match(gameState))
+                {
+                    return acceptance.card.GetType();
+                }
+            }
+
+            return null;
+        }
+
+        public Type GetMatchingCardReverse(GameState gameState, CardPredicate cardPredicate)
+        {
+            for (int i = this.cardAcceptances.Length-1; i>= 0; i--)
+            {
+                CardAcceptance acceptance = this.cardAcceptances[i];            
                 if (cardPredicate(acceptance.card) &&
                     acceptance.match(gameState))
                 {
@@ -298,7 +316,7 @@ namespace Program
         internal readonly IGetMatchingCard trashOrder;
         internal readonly IGetMatchingCard treasurePlayOrder;
         internal readonly IGetMatchingCard discardOrder;
-        internal readonly IGetMatchingCard gainOrder;
+        internal readonly IGetMatchingCard gainOrder;        
 
         public PlayerAction(int playerIndex,
             IGetMatchingCard purchaseOrder,
@@ -357,6 +375,11 @@ namespace Program
             }
 
             return result;
+        }
+
+        public override bool ShouldPutCardInHand(GameState gameState, Card card)
+        {
+            return this.discardOrder.GetMatchingCard(gameState, testCard => testCard.Is(card.GetType())) != null;
         }
 
         struct CompareCardByFirstToTrash
@@ -493,6 +516,53 @@ namespace Program
         private static int CountAllOwned<T>(GameState gameState)
         {
             return gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is T).Count();
+        }
+
+        private static int CountAllOwnedMatching(IGetMatchingCard matchingCards, GameState gameState)
+        {
+            int result = 0;
+
+            foreach(Card card in gameState.players.CurrentPlayer.AllOwnedCards)
+            {
+                if (matchingCards.GetMatchingCard(gameState, testCard => testCard.Is(card.GetType())) != null)
+                {
+                    result += 1;
+                }
+            }
+
+            return result;    
+        }
+
+        private static bool HasCardFromInHand(IGetMatchingCard matchingCards, GameState gameState)
+        {
+            return matchingCards.GetMatchingCard(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card)) != null;
+        }
+
+        private static bool HandHasOnlyCardsFrom(IGetMatchingCard matchingCards, GameState gameState)
+        {
+            foreach (Card card in gameState.players.CurrentPlayer.Hand)
+            {
+                if (matchingCards.GetMatchingCard(gameState, current => current.Is(card.GetType())) == null)
+                {
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+
+        private static int CountInHandFrom(IGetMatchingCard matchingCards, GameState gameState)
+        {
+            int result = 0;
+            foreach (Card card in gameState.players.CurrentPlayer.Hand)
+            {
+                if (matchingCards.GetMatchingCard(gameState, current => current.Is(card.GetType())) != null)
+                {
+                    ++result;
+                }
+            }
+
+            return result;
         }
 
         public static class Default
@@ -1017,6 +1087,322 @@ namespace Program
                     CardAcceptance.For<CardTypes.Silver>(),
                     CardAcceptance.For<CardTypes.Embassy>(),
                     CardAcceptance.For<CardTypes.Gold>());
+            }
+        }
+
+        public static class FishingVillage
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return new PlayerAction(playerNumber,
+                            purchaseOrder: PurchaseOrder(),
+                            treasurePlayOrder: Default.TreasurePlayOrder(),
+                            actionOrder: ActionOrder(),
+                            trashOrder: Default.EmptyPickOrder(),
+                            discardOrder: Default.EmptyPickOrder());
+            }
+
+            private static IGetMatchingCard PurchaseOrder()
+            {
+                return new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2),
+                           CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 4),
+                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 2),
+                           CardAcceptance.For<CardTypes.Gold>(),
+                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 3),
+                           CardAcceptance.For<CardTypes.FishingVillage>());
+            }
+
+            private static CardPickByPriority ActionOrder()
+            {
+                return new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.FishingVillage>());
+            }           
+        }
+
+        public static class FishingVillageChapelPoorHouse
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return new PlayerAction(playerNumber,
+                            purchaseOrder: PurchaseOrder(),
+                            treasurePlayOrder: Default.TreasurePlayOrder(),
+                            actionOrder: ActionOrder(),
+                            trashOrder: TrashOrder(),
+                            discardOrder: Default.EmptyPickOrder());
+            }
+
+            private static IGetMatchingCard PurchaseOrder()
+            {
+                var highPriority = new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.Province>(),
+                           CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 4));
+
+                var buildOrder = new CardPickByBuildOrder(
+                    new CardTypes.FishingVillage(),
+                    new CardTypes.Chapel());
+
+                var lowPriority = new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.FishingVillage>(gameState => CountAllOwned<CardTypes.FishingVillage>(gameState) < 2),
+                           CardAcceptance.For<CardTypes.PoorHouse>());
+
+                return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
+            }
+
+            private static CardPickByPriority ActionOrder()
+            {
+                return new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.FishingVillage>(),
+                           CardAcceptance.For<CardTypes.Chapel>(ShouldPlayChapel),
+                           CardAcceptance.For<CardTypes.PoorHouse>());
+            }
+
+            private static CardPickByPriority TrashOrder()
+            {
+                return new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.Estate>(),
+                           CardAcceptance.For<CardTypes.Copper>());
+            }
+
+            private static bool ShouldPlayChapel(GameState gameState)
+            {
+                return HasCardFromInHand(TrashOrder(), gameState);
+            }
+        }
+
+        public static class FishingVillageLibraryCountPoorHouse
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return new MyPlayerAction(playerNumber);
+            }
+
+            class MyPlayerAction
+                : PlayerAction
+            {
+                public MyPlayerAction(int playerNumber)
+                    : base(playerNumber,
+                            purchaseOrder: PurchaseOrder(),
+                            treasurePlayOrder: Default.TreasurePlayOrder(),
+                            actionOrder: ActionOrder(),
+                            trashOrder: TrashOrder(),
+                            discardOrder: DiscardOrder())
+                {
+                }
+
+                public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
+                {
+                    bool wantToTrash = DoesHandHaveCombinationToTrash(gameState) &&
+                                       HasCardFromInHand(TrashOrder(), gameState);
+
+                    if (acceptableChoice(PlayerActionChoice.Trash))
+                    {
+                        if (wantToTrash && !ShouldBuyProvince(gameState))
+                        {
+                            return PlayerActionChoice.Trash;
+                        }
+                        else if (gameState.players.CurrentPlayer.AvailableCoins >= 5 &&
+                            gameState.players.CurrentPlayer.AvailableCoins < 8)
+                        {
+                            return PlayerActionChoice.PlusCoin;
+                        }
+                        else
+                        {
+                            return PlayerActionChoice.GainCard;
+                        }
+                    }
+                    else
+                    {
+                        if (HasExactlyOneAction(gameState))
+                        {
+                            return PlayerActionChoice.TopDeck;
+                        }
+                        else if (ShouldGainCopper(gameState))
+                        {
+                            return PlayerActionChoice.GainCard;
+                        }
+                        else
+                        {
+                            return PlayerActionChoice.Discard;
+                        }
+                    }
+                }
+
+                override public Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard)
+                {
+                    return DiscardOrder().GetMatchingCardReverse(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card));
+                }
+
+                public override bool ShouldPutCardInHand(GameState gameState, Card card)
+                {                    
+                    if (!ShouldBuyProvince(gameState) &&
+                        gameState.players.CurrentPlayer.Hand.Where(test => test.Is<CardTypes.Count>()).Any())
+                    {
+                        return false;
+                    }                    
+                    return true;
+                }
+            }                        
+
+            private static IGetMatchingCard PurchaseOrder()
+            {
+                var highPriority = new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.Province>(ShouldBuyProvince),
+                           CardAcceptance.For<CardTypes.Library>(gameState => CountAllOwned<CardTypes.Library>(gameState) < 1),
+                           CardAcceptance.For<CardTypes.Count>(gameState => CountAllOwned<CardTypes.Count>(gameState) < 1));
+
+                var buildOrder = new CardPickByBuildOrder(
+                    new CardTypes.FishingVillage(),
+                    new CardTypes.Library(),
+                    new CardTypes.Count(),                    
+                    new CardTypes.Library());
+
+                var lowPriority = new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.PoorHouse>(gameState => CountAllOwned<CardTypes.PoorHouse>(gameState) < 2 &&
+                                                                                CountAllOwned<CardTypes.Count>(gameState) >= 1),
+                           CardAcceptance.For<CardTypes.FishingVillage>());
+
+                return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
+            }
+
+            private static CardPickByPriority ActionOrder()
+            {
+                return new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.FishingVillage>(ShouldPlayAction),
+                           CardAcceptance.For<CardTypes.PoorHouse>(ShouldPlayPoorHouse),
+                           CardAcceptance.For<CardTypes.Library>(ShouldPlayLibraryBeforeCount),
+                           CardAcceptance.For<CardTypes.Count>(),
+                           CardAcceptance.For<CardTypes.Library>(ShouldPlayLibrary));
+            }
+
+            private static CardPickByPriority TrashOrder()
+            {
+                return new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.Estate>(),
+                           CardAcceptance.For<CardTypes.Copper>(),
+                           CardAcceptance.For<CardTypes.Silver>());
+            }
+
+            private static CardPickByPriority DiscardOrder()
+            {
+                return new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.Province>(),
+                           CardAcceptance.For<CardTypes.Duchy>(),                           
+                           CardAcceptance.For<CardTypes.Copper>(),
+                           CardAcceptance.For<CardTypes.Estate>(),
+                           CardAcceptance.For<CardTypes.PoorHouse>(),
+                           CardAcceptance.For<CardTypes.Library>(),
+                           CardAcceptance.For<CardTypes.FishingVillage>(),
+                           CardAcceptance.For<CardTypes.Count>());
+            }            
+
+            private static bool DoesHandHaveCombinationToTrash(GameState gameState)
+            {
+                int countToTrash = CountInHandFrom(TrashOrder(), gameState);
+                int countInHand = gameState.players.CurrentPlayer.Hand.Count;
+
+                return (countInHand - countToTrash <= 2);
+            }
+
+            private static bool ShouldBuyProvince(GameState gameState)
+            {
+                return CountAllOwnedMatching(TrashOrder(), gameState) <= 3;                
+            }
+
+            private static bool ShouldPlayLibraryBeforeCount(GameState gameState)
+            {                
+                int countToTrash = CountAllOwnedMatching(TrashOrder(), gameState);
+                return countToTrash >= 3 ? true : false;
+            }
+
+            private static bool ShouldPlayLibrary(GameState gameState)
+            {                
+                if (!ShouldPlayAction(gameState))
+                {
+                    return false;
+                }
+
+                if (gameState.players.CurrentPlayer.Hand.Where(card => card.isAction && !card.Is<CardTypes.Library>()).Count() > 0 &&
+                    gameState.players.CurrentPlayer.AvailableActions == 1)
+                {
+                    return false;
+                }
+
+                return true;
+            }
+
+            private static bool ShouldPlayPoorHouse(GameState gameState)
+            {
+                if (!ShouldPlayAction(gameState))
+                {
+                    return false;
+                }
+
+                return gameState.players.CurrentPlayer.Hand.Where(card => card.isTreasure).Count() <= 3;
+            }
+
+            private static bool ShouldPlayAction(GameState gameState)
+            {
+                return !ShouldTopDeckAndTrash(gameState);
+            }
+
+            private static bool ShouldTopDeckAndTrash(GameState gameState)
+            {
+                return HasExactlyOneActionOtherThanCount(gameState) && !ShouldBuyProvince(gameState);
+            }
+
+            private static bool HasExactlyOneAction(GameState gameState)
+            {
+                var currentPlayer = gameState.players.CurrentPlayer;                
+                if (currentPlayer.Hand.Where(card => card.isAction).Count() == 1)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+
+            private static bool HasExactlyOneActionOtherThanCount(GameState gameState)
+            {
+                var currentPlayer = gameState.players.CurrentPlayer;
+                if (!currentPlayer.Hand.HasCard<CardTypes.Count>())
+                {
+                    return false;
+                }
+
+                if (currentPlayer.Hand.Where(card => card.isAction).Count() != 2)
+                {
+                    return false;
+                }
+
+                if (currentPlayer.Hand.HasCard<CardTypes.Library>() && currentPlayer.AvailableActions >= 2)
+                {
+                    return false;
+                }
+
+                return true;
+            }
+
+            private static bool ShouldGainCopper(GameState gameState)
+            {
+                var currentPlayer = gameState.players.CurrentPlayer;
+                if (currentPlayer.Hand.Where(card => card.isAction).Count() > 0)
+                {
+                    return false;
+                }
+
+                int countToTrash = CountInHandFrom(TrashOrder(), gameState);
+                int countInHand = gameState.players.CurrentPlayer.Hand.Count;
+
+                if (countInHand - countToTrash > 0)
+                {
+                    return false;
+                }
+
+                return true;
             }
         }
     }  
