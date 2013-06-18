@@ -371,6 +371,12 @@ namespace Dominion
                     return;
                 }
 
+                int embargoCount = this.GetEmbargoTokenforPile(this.GetPile(boughtCard));
+                for (int i = 0; i < embargoCount; ++i)
+                {
+                    this.PlayerGainCardFromSupply<CardTypes.Curse>(currentPlayer);
+                }
+
                 currentPlayer.turnCounters.RemoveCoins(boughtCard.CurrentCoinCost(currentPlayer));
                 currentPlayer.turnCounters.availableBuys -= 1;
 
@@ -485,6 +491,16 @@ namespace Dominion
         public void PlayerGainCardFromSupply<cardType>(PlayerState playerState)
         {
             PlayerGainCardFromSupply(typeof(cardType), playerState);            
+        }
+
+        internal void AddEmbargoTokenToPile(PileOfCards pile)
+        {
+            this.pileEmbargoTokenCount[GetIndexForPile(pile)] += 1;
+        }
+
+        internal int GetEmbargoTokenforPile(PileOfCards pile)
+        {
+            return this.pileEmbargoTokenCount[GetIndexForPile(pile)];
         }
 
         internal void CardHasBeenGainedFromPile(PileOfCards pile)

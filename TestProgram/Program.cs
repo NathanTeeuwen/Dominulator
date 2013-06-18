@@ -9,7 +9,14 @@ using System.Threading.Tasks;
 namespace Program
 {
     class Program
-    {        
+    {
+
+        static void Main()
+        {
+            ComparePlayers(Strategies.Lookout.Player(1), Strategies.BigMoney.Player(2));
+        }
+
+        /*
         static void Main()
         {
             
@@ -26,7 +33,7 @@ namespace Program
             
             ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCard<CardTypes.Torturer>.Player(2));            
             ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCardCartographer<CardTypes.Torturer>.Player(2));                       
-        }
+        }*/
 
         static void ComparePlayers(PlayerAction player1, PlayerAction player2, bool firstPlayerAdvantage = false)
         {
@@ -37,7 +44,7 @@ namespace Program
 
             for (int gameCount = 0; gameCount < numberOfGames; ++gameCount)
             {
-                using (IGameLog gameLog = gameCount == 0 ? (IGameLog)new HumanReadableGameLog("..\\..\\Results\\GameLog.txt") : (IGameLog)new EmptyGameLog())
+                using (IGameLog gameLog = (IGameLog)new HumanReadableGameLog("..\\..\\Results\\GameLog"  + (gameCount == 0 ? "" : gameCount.ToString()) + ".txt"))
                 //using (IGameLog gameLog = new HumanReadableGameLog("..\\..\\Results\\GameLog." + gameCount ) )
                 {
                     if (!firstPlayerAdvantage)
@@ -390,8 +397,43 @@ namespace Program
             return result;
         }
 
-        public override Type GetCardFromRevealedCarsToTopDeck(GameState gameState, BagOfCards revealedCards)
+        public override Type GetCardFromRevealedCardsToTrash(GameState gameState, PlayerState player, CardPredicate acceptableCard)
         {
+            var currentPlayer = player;
+            Type result = this.trashOrder.GetMatchingCard(
+                gameState,
+                card => currentPlayer.CardsBeingRevealed.HasCard(card.GetType()) && acceptableCard(card));
+
+            // warning, strategy didnt' include what to, try to do a reasonable default.
+            if (result == null)
+            {
+                Card card = currentPlayer.CardsBeingRevealed.OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();
+                return card != null ? card.GetType() : null;
+            }
+
+            return result;
+        }
+
+        public override Type GetCardFromRevealedCardsToDiscard(GameState gameState, PlayerState player)
+        {
+            var currentPlayer = gameState.players.CurrentPlayer;
+            Type result = this.discardOrder.GetMatchingCard(
+                gameState, 
+                card => currentPlayer.CardsBeingRevealed.HasCard(card.GetType()));
+
+            // warning, strategy didnt' include what to, try to do a reasonable default.
+            if (result == null)
+            {
+                Card card = currentPlayer.CardsBeingRevealed.OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();
+                return card != null ? card.GetType() : null;
+            }
+
+            return result;
+        }
+
+        public override Type GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player)
+        {
+            BagOfCards revealedCards = player.CardsBeingRevealed;
             // good for cartographer, not sure about anyone else.
             foreach (Card card in revealedCards)
             {

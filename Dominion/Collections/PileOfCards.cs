@@ -10,15 +10,12 @@ namespace Dominion
         : ListOfCards
     {
         private Card protoType;
-        internal readonly bool isInSupply;
-        
-        internal int embargoTokenCount;        
+        internal readonly bool isInSupply;               
         
         public PileOfCards(Card protoType, int count)
         {
             this.AddNCardsToTop(protoType, count);           
             this.protoType = protoType;            
-            this.embargoTokenCount = 0;
         }
 
         public PileOfCards(Card protoType)

@@ -12,19 +12,21 @@ namespace Dominion
         void EndTurn();
         Type BanCardForCurrentPlayerRevealedCards(GameState gameState);
         Type BanCardForCurrentPlayerPurchase(GameState gameState);
+        Type GetCardPileFromSupply(GameState gameState);
         Type GetActionFromHandToPlay(GameState gameState, bool isOptional);
         Type GetTreasureFromHandToPlay(GameState gameState);
         Type GetCardFromSupplyToBuy(GameState gameState, CardPredicate acceptableCard);
         Type GuessCardTopOfDeck(GameState gameState);
         Type GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional);
-        Type GetCardFromRevealedCarsToTopDeck(GameState gameState, BagOfCards revealedCards);
-        Type GetCardFromRevealedCardsToTrash(PlayerState player, BagOfCards revealedCards, CardPredicate acceptableCard);
+        Type GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player);        
+        Type GetCardFromRevealedCardsToTrash(GameState gameState, PlayerState player, CardPredicate acceptableCard);
+        Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player);
+        Type GetCardFromRevealedCardsToDiscard(GameState gameState, PlayerState player);
         Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard);
         Type GetCardFromHandToPassLeft(GameState gameState);
         Type GetCardFromHandToDiscard(GameState gameState, PlayerState player, bool isOptional);
         Type GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard); // always optional
-        Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional);
-        Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player);
+        Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional);        
         int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber);
         bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card);
         bool ShouldPutCardInHand(GameState gameState, Card card);

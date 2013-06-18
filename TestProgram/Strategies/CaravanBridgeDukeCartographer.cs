@@ -29,8 +29,9 @@ namespace Program
                 {
                 }
 
-                public override Type GetCardFromRevealedCarsToTopDeck(GameState gameState, BagOfCards revealedCards)
+                public override Type GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player)                
                 {
+                    BagOfCards revealedCards = player.CardsBeingRevealed;
                     var currentPlayer = gameState.players.CurrentPlayer;
                     Type result = TopDeckOrder().GetMatchingCard(
                         gameState,

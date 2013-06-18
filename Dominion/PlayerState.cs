@@ -344,48 +344,7 @@ namespace Dominion
             CardHasBeenPlayed();
 
             this.gameLog.PopScope();
-        }
-
-        /*
-        internal void DoRevealCards(GameState gameState, CardPredicate shouldContinueReveal, MapCardToPlacement MapCardToPlacement)
-        {
-            DoRevealCards(
-                 gameState, 
-                 shouldContinueReveal,
-                 placeCardsFromList: delegate(BagCards cards)
-                 {
-                     Card card = cards.RemoveCard();
-                     DeckPlacement placement = MapCardToPlacement(card);
-                     return new CardPlacementPair(card, placement);
-                 });
-        }
-
-        internal void DoRevealCards(GameState gameState, CardPredicate shouldContinueReveal, PlaceCardsFromList placeCardsFromList)
-        {
-            BagCards currentRevealedCards = new BagCards();  // cards in list for further evaluation
-            int revealedCardCount = 0;
-            Card card = this.DrawOneCard();
-            while (card != null && shouldContinueReveal(card))
-            {
-                this.cardsBeingRevealed.AddCardToTop(card);  //  make cards visible to player
-                ++revealedCardCount;
-                currentRevealedCards.AddCard(card);
-            }
-
-            if (placeCardsFromList != null)
-            {
-                CardPlacementPair pair = placeCardsFromList(currentRevealedCards);
-                while (pair.card != null)
-                {
-                    PlaceCardFromPlacement(pair, gameState);
-                    currentRevealedCards.RemoveCard(card.GetType());
-                    pair = placeCardsFromList(currentRevealedCards);
-                }
-            }
-
-            this.MoveAllCardsToDiscard(currentRevealedCards);
-            this.cardsBeingRevealed.RemoveNCardsFromTop(revealedCardCount);
-        }*/
+        }        
 
         private void PlaceCardFromPlacement(CardPlacementPair pair, GameState gameState)
         {
@@ -513,6 +472,19 @@ namespace Dominion
             }
 
             return currentCard;
+        }
+
+        internal PileOfCards RequestPlayerChooseCardPileFromSupply(GameState gameState)
+        {
+            Type cardType = this.actions.GetCardPileFromSupply(gameState);
+
+            PileOfCards pile = gameState.GetPile(cardType);
+            if (pile == null)
+            {
+                throw new Exception("Must choose pile from supply");
+            }
+
+            return pile;
         }
 
         internal bool RequestPlayerPlayActionFromHand(GameState gameState, bool isOptional)
@@ -708,7 +680,35 @@ namespace Dominion
 
                 this.MoveRevealedCardToTopOfDeck(cardToPutOnTop);
             }
-        }                
+        }
+
+        internal void RequestPlayerTrashRevealedCard(GameState gameState)
+        {
+            if (this.cardsBeingRevealed.Any)
+            {
+                Type cardtoTrash = this.actions.GetCardFromRevealedCardsToTrash(gameState, this, acceptableCard => true);
+                if (cardtoTrash == null)
+                {
+                    throw new Exception("Player must choose a card to trash");
+                }
+
+                this.MoveRevealedCardToTrash(cardtoTrash, gameState);
+            }
+        }
+
+        internal void RequestPlayerDiscardRevealedCard(GameState gameState)
+        {
+            if (this.cardsBeingRevealed.Any)
+            {
+                Type cardToDiscard = this.actions.GetCardFromRevealedCardsToDiscard(gameState, this);
+                if (cardToDiscard == null)
+                {
+                    throw new Exception("Player must choose a card to trash");
+                }
+                
+                this.MoveRevealedCardToDiscard(cardToDiscard, gameState);
+            }
+        }
 
         internal Card RequestPlayerTopDeckCardFromHand(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
@@ -768,7 +768,7 @@ namespace Dominion
 
         internal Card RequestPlayerTopDeckCardFromRevealed(GameState gameState, bool isOptional)
         {
-            Type cardTypeToTopDeck = this.actions.GetCardFromRevealedCarsToTopDeck(gameState, this.cardsBeingRevealed);
+            Type cardTypeToTopDeck = this.actions.GetCardFromRevealedCardsToTopDeck(gameState, this);
             if (cardTypeToTopDeck == null && !isOptional)
             {
                 throw new Exception("Must choose a card to top deck");
@@ -971,6 +971,20 @@ namespace Dominion
             {
                 throw new Exception("Revealed cards did not have the specified card");
             }
+
+            this.gameLog.PlayerDiscardCard(this, card);
+            this.discard.AddCard(card);
+        }
+
+        internal void MoveRevealedCardToDiscard(Type typeOfCard, GameState gameState)
+        {
+            Card card = this.cardsBeingRevealed.RemoveCard(typeOfCard);
+            if (card == null)
+            {
+                throw new Exception("Revealed cards did not have the specified card");
+            }
+
+            this.gameLog.PlayerDiscardCard(this, card);
             this.discard.AddCard(card);
         }
 
@@ -987,6 +1001,20 @@ namespace Dominion
                 throw new Exception("Revealed cards did not have the specified card");
             }
             this.MoveCardToTrash(card, gameState);
+        }
+
+        internal void MoveRevealedCardToTopOfDeck()
+        {
+            if (this.cardsBeingRevealed.Any)
+            {
+                if (this.cardsBeingRevealed.Count > 1)
+                {
+                    throw new Exception("With more than one card in revealed cards it's ambiguous which order to move cards on top of deck");
+                }
+
+                Card card = this.cardsBeingRevealed.RemoveCard();
+                this.deck.AddCardToTop(card);
+            }
         }
 
         internal void MoveRevealedCardToTopOfDeck(Card card)
@@ -1078,6 +1106,33 @@ namespace Dominion
                 {
                     yield return card;
                 }
+            }
+        }
+
+        public IEnumerable<Card> CardsInDeckAndDiscard
+        {
+            get
+            {
+                foreach (Card card in this.deck)
+                {
+                    yield return card;
+                }
+
+                foreach (Card card in this.discard)
+                {
+                    yield return card;
+                }
+            }
+        }
+
+        public IEnumerable<Card> CardsInDeck
+        {
+            get
+            {
+                foreach (Card card in this.deck)
+                {
+                    yield return card;
+                }                
             }
         }
 

@@ -50,6 +50,7 @@
     <Compile Include="Strategies\FeodumDevelop.cs" />
     <Compile Include="Strategies\FishingVillageChapelPoorHouse.cs" />
     <Compile Include="Strategies\FishingVillageLibraryCountPoorHouse.cs" />
+    <Compile Include="Strategies\Lookout.cs" />
     <Compile Include="Strategies\Strategies.cs" />
   </ItemGroup>
   <ItemGroup>

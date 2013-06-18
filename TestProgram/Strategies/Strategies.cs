@@ -32,6 +32,16 @@ namespace Program
             }            
         }
 
+        private static int CountInDeck<T>(GameState gameState)
+        {
+            return gameState.players.CurrentPlayer.CardsInDeck.Where(card => card is T).Count();
+        }
+
+        private static int CountMightDraw<T>(GameState gameState)
+        {
+            return gameState.players.CurrentPlayer.CardsInDeckAndDiscard.Where(card => card is T).Count();
+        }
+
         private static int CountAllOwned<T>(GameState gameState)
         {
             return gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is T).Count();

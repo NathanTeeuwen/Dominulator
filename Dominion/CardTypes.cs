@@ -390,7 +390,7 @@ namespace Dominion.CardTypes
             CardPredicate acceptableCards = card => card.isTreasure;
             if (otherPlayer.cardsBeingRevealed.HasCard(acceptableCards))
             {
-                Type cardTypeToTrash = currentPlayer.actions.GetCardFromRevealedCardsToTrash(otherPlayer, otherPlayer.cardsBeingRevealed, acceptableCards);
+                Type cardTypeToTrash = currentPlayer.actions.GetCardFromRevealedCardsToTrash(gameState, otherPlayer, acceptableCards);
 
                 cardtoTrash = otherPlayer.cardsBeingRevealed.RemoveCard(cardTypeToTrash);
                 if (cardtoTrash == null)
@@ -1687,6 +1687,36 @@ namespace Dominion.CardTypes
 
     // Seaside
 
+    public class Caravan :
+        Card
+    {
+        public Caravan()
+            : base("Caravan", coinCost: 4, isAction: true, isDuration: true, plusCards: 1, plusActions: 1)
+        {
+        }
+
+        public override void DoSpecializedDurationActionAtBeginningOfTurn(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.DrawAdditionalCardsIntoHand(1);
+        }
+    }
+
+    public class Embargo :
+        Card
+    {
+        public Embargo()
+            : base("Embargo", coinCost: 2, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.MoveCardFromPlayToTrash(gameState);
+            PileOfCards cardPile = currentPlayer.RequestPlayerChooseCardPileFromSupply(gameState);
+            gameState.AddEmbargoTokenToPile(cardPile);
+        }        
+    }
+
     public class FishingVillage :
         Card
     {
@@ -1702,19 +1732,26 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Caravan :
+    public class Lookout :
         Card
     {
-        public Caravan()
-            : base("Caravan", coinCost:4, isAction: true, isDuration: true, plusCards:1, plusActions: 1)
+        public Lookout()
+            : base("Lookout", coinCost: 3, isAction: true, plusActions: 1)
         {
+
         }
 
-        public override void DoSpecializedDurationActionAtBeginningOfTurn(PlayerState currentPlayer, GameState gameState)
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.DrawAdditionalCardsIntoHand(1);            
+            currentPlayer.RevealCardsFromDeck(3);
+            gameState.gameLog.PushScope();
+            currentPlayer.RequestPlayerTrashRevealedCard(gameState);
+            currentPlayer.RequestPlayerDiscardRevealedCard(gameState);
+            currentPlayer.MoveRevealedCardToTopOfDeck();
+            gameState.gameLog.PopScope();
         }
     }
+
 
     // Hinterlands
 
