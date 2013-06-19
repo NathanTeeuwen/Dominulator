@@ -46,6 +46,7 @@
     <Compile Include="Strategies\BigMoneySingleCard.cs" />
     <Compile Include="Strategies\CaravanBridgeDukeCartographer.cs" />
     <Compile Include="Strategies\DeathCartDoubleWarehouse.cs" />
+    <Compile Include="Strategies\DoubleWarehouse2.cs" />
     <Compile Include="Strategies\DuchyDukeWarehouseEmbassy.cs" />
     <Compile Include="Strategies\FeodumDevelop.cs" />
     <Compile Include="Strategies\FishingVillageChapelPoorHouse.cs" />
