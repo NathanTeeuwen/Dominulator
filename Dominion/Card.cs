@@ -16,7 +16,7 @@ namespace Dominion
         public readonly int plusCard;
         public readonly int plusCoin;
         public readonly int plusVictoryToken;
-        public readonly int defualtSupplyCount;
+        public readonly int defaultSupplyCount;
         protected VictoryPointCounter victoryPointCounter;        // readonly
         public readonly bool isAction;
         public readonly bool isAttack;
@@ -63,7 +63,7 @@ namespace Dominion
             this.isReaction = isReaction;
             this.isRuin = isRuin;
             this.isTreasure = isTreasure;
-            this.defualtSupplyCount = defaultSupplyCount;
+            this.defaultSupplyCount = defaultSupplyCount;
             this.requiresRuins = requiresRuins;
             this.isDuration = isDuration;
         }

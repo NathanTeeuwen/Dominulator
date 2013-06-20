@@ -84,6 +84,7 @@ namespace Dominion
         internal readonly IPlayerAction actions;
         internal readonly IGameLog gameLog;
         internal PlayPhase playPhase;
+        internal Random random;
 
         public IPlayerAction Actions { get { return this.actions; } }
         public int AvailableCoins { get { return this.turnCounters.AvailableCoins; } }
@@ -113,11 +114,12 @@ namespace Dominion
         internal int victoryTokenCount;
         internal int pirateShipTokenCount;
 
-        internal PlayerState(IPlayerAction actions, IGameLog gameLog)
+        internal PlayerState(IPlayerAction actions, IGameLog gameLog, Random random)
         {
             this.gameLog = gameLog;
             this.actions = actions;
             this.playPhase = PlayPhase.NotMyTurn;
+            this.random = random;
         }
 
         internal void InitializeTurn()
@@ -842,6 +844,11 @@ namespace Dominion
                 gameState.PlayerGainCardFromSupply(cardType, this, defaultLocation);
         }
 
+        internal void GainCardFromSupply<cardType>(GameState gameState)
+        {
+            gameState.PlayerGainCardFromSupply(typeof(cardType), this);
+        }        
+
         internal void GainCard(GameState gameState, Card card, DeckPlacement defaultPlacement = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)
         {
             if (gainReason == GainReason.Buy)
@@ -898,7 +905,7 @@ namespace Dominion
 
             discard.Clear();
             // TODO:  Place stash where u want it to go
-            deck.Shuffle();
+            deck.Shuffle(this.random);
 
             // move Stash to where the user wants
         }

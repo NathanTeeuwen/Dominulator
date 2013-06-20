@@ -45,6 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategies\BigMoneySingleCard.cs" />
     <Compile Include="Strategies\CaravanBridgeDukeCartographer.cs" />
+    <Compile Include="Strategies\RatsUpgradeBazaar.cs" />
     <Compile Include="Strategies\DeathCartDoubleWarehouse.cs" />
     <Compile Include="Strategies\DoubleWarehouse2.cs" />
     <Compile Include="Strategies\DuchyDukeWarehouseEmbassy.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="Strategies\FishingVillageChapelPoorHouse.cs" />
     <Compile Include="Strategies\FishingVillageLibraryCountPoorHouse.cs" />
     <Compile Include="Strategies\Lookout.cs" />
+    <Compile Include="Strategies\RatsUpgrade.cs" />
     <Compile Include="Strategies\Strategies.cs" />
   </ItemGroup>
   <ItemGroup>

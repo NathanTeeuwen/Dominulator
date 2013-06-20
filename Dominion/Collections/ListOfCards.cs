@@ -9,21 +9,22 @@ namespace Dominion
     public class ListOfCards
         : CollectionCards
     {
-        static Random random = new Random();
-
-        private static int NumberBetweenInclusive(int lowerBoundInclusive, int upperBoundInclusive)
+        private static int NumberBetweenInclusive(Random random, int lowerBoundInclusive, int upperBoundInclusive)
         {
-            int count = upperBoundInclusive - lowerBoundInclusive + 1;
+            lock (random)
+            {
+                int count = upperBoundInclusive - lowerBoundInclusive + 1;
 
-            return random.Next(count) + lowerBoundInclusive;
+                return random.Next(count) + lowerBoundInclusive;
+            }
         }
 
-        public void Shuffle()
+        public void Shuffle(Random random)
         {
             int lastIndex = this.cards.Count() - 1;
             for (int currentIndex = 0; currentIndex < lastIndex; ++currentIndex)
             {
-                int swapIndex = NumberBetweenInclusive(currentIndex, lastIndex);
+                int swapIndex = NumberBetweenInclusive(random, currentIndex, lastIndex);
                 Swap(currentIndex, swapIndex);
             }
         }

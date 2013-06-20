@@ -195,11 +195,12 @@ namespace Dominion
         public GameState(             
             IGameLog gameLog,
             IPlayerAction[] players,
-            GameConfig gameConfig)
+            GameConfig gameConfig,
+            Random random)
         {
             int playerCount = players.Length;
             this.gameLog = gameLog;
-            this.players = new PlayerCircle(playerCount, players, this.gameLog);
+            this.players = new PlayerCircle(playerCount, players, this.gameLog, random);
  
             var cardPiles = new List<PileOfCards>(capacity:20);
 
@@ -231,7 +232,7 @@ namespace Dominion
                 }
                 else
                 {
-                    Add(cardPiles, card.defualtSupplyCount, card);
+                    Add(cardPiles, card.defaultSupplyCount, card);
                 }
 
                 requiresRuins |= card.requiresRuins;
@@ -239,7 +240,7 @@ namespace Dominion
 
             if (requiresRuins)
             {
-                cardPiles.Add(CreateRuins(ruinsCount));
+                cardPiles.Add(CreateRuins(ruinsCount, random));
             }
 
             this.supplyPiles = cardPiles.ToArray();
@@ -256,7 +257,7 @@ namespace Dominion
             this.players.AllPlayersDrawInitialCards();         
         }
 
-        private static PileOfCards CreateRuins(int ruinsCount)
+        private static PileOfCards CreateRuins(int ruinsCount, Random random)
         {
             int ruinCountPerPile = 10;
             var allRuinsCards = new ListOfCards();
@@ -266,7 +267,7 @@ namespace Dominion
             allRuinsCards.AddNCardsToTop(new CardTypes.RuinedVillage(), ruinCountPerPile);
             allRuinsCards.AddNCardsToTop(new CardTypes.Survivors(), ruinCountPerPile);
 
-            allRuinsCards.Shuffle();
+            allRuinsCards.Shuffle(random);
 
             var result = new PileOfCards(new CardTypes.Ruin());
 
@@ -456,7 +457,7 @@ namespace Dominion
                 int embargoCount = this.pileEmbargoTokenCount[boughtCard];
                 for (int i = 0; i < embargoCount; ++i)
                 {
-                    this.PlayerGainCardFromSupply<CardTypes.Curse>(currentPlayer);
+                    currentPlayer.GainCardFromSupply<CardTypes.Curse>(this);                    
                 }
 
                 currentPlayer.turnCounters.RemoveCoins(boughtCard.CurrentCoinCost(currentPlayer));
@@ -568,12 +569,7 @@ namespace Dominion
             playerState.GainCard(this, card, defaultLocation, gainReason);
 
             return card;
-        }
-
-        public void PlayerGainCardFromSupply<cardType>(PlayerState playerState)
-        {
-            PlayerGainCardFromSupply(typeof(cardType), playerState);            
-        }
+        }       
 
         internal void AddEmbargoTokenToPile(PileOfCards pile)
         {

@@ -237,11 +237,11 @@ namespace Dominion
 
         public void EndTurn(PlayerState playerState)
         {
-            this.textWriter.WriteLine("{0} ends turn", playerState.actions.PlayerName);
-            this.PushScope();
+            this.textWriter.Write("{0} ends turn with deck: ", playerState.actions.PlayerName);
+            //this.PushScope();
             this.WriteAllCards(playerState);
-            this.PopScope();
-            this.textWriter.WriteLine();
+            //this.PopScope();
+            //this.textWriter.WriteLine();
             this.textWriter.WriteLine();
         }
 

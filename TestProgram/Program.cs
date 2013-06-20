@@ -13,7 +13,7 @@ namespace Program
 
         static void Main()
         {
-            ComparePlayers(Strategies.Lookout.Player(1), Strategies.BigMoney.Player(2));
+            ComparePlayers(Strategies.RatsUpgradeBazaar.Player(1), Strategies.BigMoney.Player(2), false);
         }
 
         /*
@@ -35,51 +35,68 @@ namespace Program
             ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCardCartographer<CardTypes.Torturer>.Player(2));                       
         }*/
 
+        static IGameLog GetGameLogForIteration(int gameCount)
+        {
+            return new HumanReadableGameLog("..\\..\\Results\\GameLog"  + (gameCount == 0 ? "" : gameCount.ToString()) + ".txt");
+        }
+
+
         static void ComparePlayers(PlayerAction player1, PlayerAction player2, bool firstPlayerAdvantage = false)
         {
-            int numberOfGames = 1000;
+            int numberOfGames = 10000;
 
             int[] winnerCount = new int[2];
             int tieCount = 0;
 
-            for (int gameCount = 0; gameCount < numberOfGames; ++gameCount)
-            {
-                using (IGameLog gameLog = (IGameLog)new HumanReadableGameLog("..\\..\\Results\\GameLog"  + (gameCount == 0 ? "" : gameCount.ToString()) + ".txt"))
-                //using (IGameLog gameLog = new HumanReadableGameLog("..\\..\\Results\\GameLog." + gameCount ) )
+            //for (int gameCount = 0; gameCount < numberOfGames; ++gameCount)
+
+            Parallel.ForEach(Enumerable.Range(0, numberOfGames),
+                delegate(int gameCount)
                 {
-                    if (!firstPlayerAdvantage)
+                    using (IGameLog gameLog = gameCount < 100 ? GetGameLogForIteration(gameCount) : new EmptyGameLog())
+                    //using (IGameLog gameLog = new HumanReadableGameLog("..\\..\\Results\\GameLog." + gameCount ) )
                     {
-                        // swap order every other game
-                        if (gameCount % 2 == 1)
+                        PlayerAction startPlayer = player1;
+                        PlayerAction otherPlayer = player2;
+                        if (!firstPlayerAdvantage)
                         {
-                            var temp = player1;
-                            player1 = player2;
-                            player2 = temp;
+                            // swap order every other game
+                            if (gameCount % 2 == 1)
+                            {
+                                startPlayer = player2;
+                                otherPlayer = player1;                                
+                            }
+                        }
+
+                        Random random = new Random(gameCount);                        
+
+                        var gameConfig = new GameConfig(GetCardSet(startPlayer, otherPlayer));
+
+                        GameState gameState = new GameState(
+                            gameLog,
+                            new PlayerAction[] { startPlayer, otherPlayer},
+                            gameConfig,
+                            random);
+
+                        gameState.PlayGameToEnd();
+
+                        PlayerState[] winners = gameState.WinningPlayers;
+
+                        lock (winnerCount)
+                        {
+                            if (winners.Length == 1)
+                            {
+                                int winningPlayerIndex = ((PlayerAction)winners[0].Actions).playerIndex - 1;
+                                winnerCount[winningPlayerIndex]++;
+                            }
+                            else
+                            {
+                                tieCount++;
+                            }                            
                         }
                     }
-
-                    var gameConfig = new GameConfig(GetCardSet(player1, player2));
-
-                    GameState gameState = new GameState(
-                        gameLog,
-                        new PlayerAction[] { player1, player2 },
-                        gameConfig);
-
-                    gameState.PlayGameToEnd();
-
-                    PlayerState[] winners = gameState.WinningPlayers;
-
-                    if (winners.Length == 1)
-                    {
-                        int winningPlayerIndex = ((PlayerAction)winners[0].Actions).playerIndex - 1;
-                        winnerCount[winningPlayerIndex]++;
-                    }
-                    else
-                    {
-                        tieCount++;
-                    }
                 }
-            }
+            );           
 
             for (int index = 0; index < winnerCount.Length; ++index)
             {

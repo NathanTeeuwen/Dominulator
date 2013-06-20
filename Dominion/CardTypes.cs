@@ -37,6 +37,9 @@ namespace Dominion.CardTypes
     public class Monument : Card { public Monument() : base("Monument", coinCost: 4, isAction: true, plusCoins: 2, plusVictoryToken: 1){}}
     public class WorkersVillage : Card { public WorkersVillage() : base("Workers Village", coinCost: 4, isAction: true, plusCards: 1, plusActions:2, plusBuy:1) { } }
 
+    // Seaside
+    public class Bazaar : Card { public Bazaar() : base("Bazaar", coinCost: 5, isAction: true, plusCoins: 1, plusCards: 1, plusActions:2) { } }    
+
     // Alchemy
     public class Potion : Card { public Potion() : base("Potion", coinCost: 4) { } }
 
@@ -96,7 +99,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            gameState.PlayerGainCardFromSupply<Silver>(currentPlayer);            
+            currentPlayer.GainCardFromSupply<Silver>(gameState);            
         }
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
@@ -450,7 +453,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            gameState.PlayerGainCardFromSupply<Curse>(otherPlayer);
+            otherPlayer.GainCardFromSupply<Curse>(gameState);            
         }
     }
 
@@ -1686,7 +1689,7 @@ namespace Dominion.CardTypes
     }
 
     // Seaside
-
+    
     public class Caravan :
         Card
     {
@@ -2012,7 +2015,7 @@ namespace Dominion.CardTypes
     }  
   
     public class PoorHouse : 
-            Card
+        Card
     {
         public PoorHouse()
             : base("Poor House", coinCost: 1, isAction:true, plusCoins:4)
@@ -2024,6 +2027,34 @@ namespace Dominion.CardTypes
             currentPlayer.RevealHand();
 
             currentPlayer.AddCoins( 0 - currentPlayer.Hand.Where(card => card.isTreasure).Count());
+        }
+    }
+
+    public class Rats :
+        Card
+    {
+        public Rats()
+            : base("Rats", coinCost: 4, isAction: true, plusCards: 1, plusActions: 1, defaultSupplyCount:20)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.GainCardFromSupply<CardTypes.Rats>(gameState);
+            CardPredicate cardsToTrash = card => !card.Is<Rats>();
+            if (currentPlayer.Hand.HasCard(cardsToTrash))
+            {
+                currentPlayer.RequestPlayerTrashCardFromHand(gameState, cardsToTrash, isOptional: false);
+            }
+            else
+            {
+                currentPlayer.RevealHand();
+            }
+        }
+
+        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.DrawAdditionalCardsIntoHand(1);
         }
     }
 

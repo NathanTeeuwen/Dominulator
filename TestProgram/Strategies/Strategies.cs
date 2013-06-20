@@ -47,6 +47,11 @@ namespace Program
             return gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is T).Count();
         }
 
+        private static int CountInHand<T>(GameState gameState)
+        {
+            return gameState.players.CurrentPlayer.Hand.Where(card => card is T).Count();
+        }
+
         private static int CountAllOwnedMatching(IGetMatchingCard matchingCards, GameState gameState)
         {
             int result = 0;
