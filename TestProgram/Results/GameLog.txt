@@ -76,14 +76,14 @@ With hand: Copper,Copper,Copper,Copper,Estate,
     +1 Coin = 3 all together.
   Player1 Played Copper.
     +1 Coin = 4 all together.
-  Player1 bought Silver.
+  Player1 bought Warehouse.
   Player1 reshuffled
-  Player1 Drew Silver into hand.
+  Player1 Drew Warehouse into hand.
   Player1 Drew Copper into hand.
   Player1 Drew Silver into hand.
   Player1 Drew Copper into hand.
   Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  Player1 ends turn with deck: Copper(7), Estate(3), Silver(1), Warehouse(1), 
 
 Player2 begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
@@ -95,36 +95,44 @@ With hand: Copper,Copper,Copper,Copper,Estate,
     +1 Coin = 3 all together.
   Player2 Played Copper.
     +1 Coin = 4 all together.
-  Player2 bought Silver.
+  Player2 bought Develop.
   Player2 reshuffled
   Player2 Drew Copper into hand.
   Player2 Drew Estate into hand.
   Player2 Drew Copper into hand.
   Player2 Drew Copper into hand.
   Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  Player2 ends turn with deck: Copper(7), Develop(1), Estate(3), Silver(1), 
 
 ROUND 3
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
+With hand: Copper,Copper,Copper,Silver,Warehouse,
+  Player1 Played Warehouse.
+    +1 Actions = 1 all together.
+    Player1 Drew Copper into hand.
+    Player1 Drew Estate into hand.
+    Player1 Drew Estate into hand.
+    Player1 Discarded Estate.
+    Player1 Discarded Estate.
+    Player1 Discarded Copper.
   Player1 Played Silver.
     +2 Coin = 2 all together.
-  Player1 Played Silver.
-    +2 Coin = 4 all together.
+  Player1 Played Copper.
+    +1 Coin = 3 all together.
+  Player1 Played Copper.
+    +1 Coin = 4 all together.
   Player1 Played Copper.
     +1 Coin = 5 all together.
-  Player1 Played Copper.
-    +1 Coin = 6 all together.
-  Player1 Played Copper.
-    +1 Coin = 7 all together.
-  Player1 bought Gold.
+  Player1 bought Embassy.
+    Player2 gained Silver.
+  Player1 Drew Copper into hand.
   Player1 Drew Copper into hand.
   Player1 Drew Estate into hand.
-  Player1 Drew Estate into hand.
   Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+  Player1 reshuffled
+  Player1 Drew Silver into hand.
+  Player1 ends turn with deck: Copper(7), Embassy(1), Estate(3), Silver(1), Warehouse(1), 
 
 Player2 begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
@@ -141,46 +149,10 @@ With hand: Copper,Copper,Copper,Copper,Estate,
   Player2 Drew Copper into hand.
   Player2 Drew Estate into hand.
   Player2 Drew Estate into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Silver(3), 
+  Player2 Drew Develop into hand.
+  Player2 ends turn with deck: Copper(7), Develop(1), Estate(3), Silver(3), 
 
 ROUND 4
--------------
-Player1 begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  Player1 Played Copper.
-    +1 Coin = 1 all together.
-  Player1 Played Copper.
-    +1 Coin = 2 all together.
-  Player1 Played Copper.
-    +1 Coin = 3 all together.
-  Player1 bought Silver.
-  Player1 Drew Estate into hand.
-  Player1 Drew Copper into hand.
-  Player1 reshuffled
-  Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), 
-
-Player2 begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Copper.
-    +1 Coin = 3 all together.
-  Player2 Played Copper.
-    +1 Coin = 4 all together.
-  Player2 bought Silver.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 reshuffled
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Silver(4), 
-
-ROUND 5
 -------------
 Player1 begins turn
 With hand: Copper,Copper,Copper,Estate,Silver,
@@ -192,13 +164,63 @@ With hand: Copper,Copper,Copper,Estate,Silver,
     +1 Coin = 4 all together.
   Player1 Played Copper.
     +1 Coin = 5 all together.
-  Player1 bought Silver.
-  Player1 Drew Gold into hand.
+  Player1 bought Duchy.
+  Player1 Drew Estate into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Embassy into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Estate into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(1), Embassy(1), Estate(3), Silver(1), Warehouse(1), 
+
+Player2 begins turn
+With hand: Copper,Copper,Develop,Estate,Estate,
+  Player2 Played Develop.
+    Player2 trashed Estate.
+    Player2 gained Silver.
+  Player2 Played Copper.
+    +1 Coin = 1 all together.
+  Player2 Played Copper.
+    +1 Coin = 2 all together.
+  Player2 Drew Silver into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
+  Player2 reshuffled
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 ends turn with deck: Copper(7), Develop(1), Estate(2), Silver(4), 
+
+ROUND 5
+-------------
+Player1 begins turn
+With hand: Copper,Copper,Embassy,Estate,Estate,
+  Player1 Played Embassy.
+    Player1 Drew Copper into hand.
+    Player1 Drew Copper into hand.
+    Player1 Drew Warehouse into hand.
+    Player1 reshuffled
+    Player1 Drew Copper into hand.
+    Player1 Drew Duchy into hand.
+    Player1 Discarded Duchy.
+    Player1 Discarded Estate.
+    Player1 Discarded Estate.
+  Player1 Played Copper.
+    +1 Coin = 1 all together.
+  Player1 Played Copper.
+    +1 Coin = 2 all together.
+  Player1 Played Copper.
+    +1 Coin = 3 all together.
+  Player1 Played Copper.
+    +1 Coin = 4 all together.
+  Player1 Played Copper.
+    +1 Coin = 5 all together.
+  Player1 bought Duchy.
   Player1 Drew Copper into hand.
   Player1 Drew Silver into hand.
+  Player1 Drew Copper into hand.
   Player1 Drew Estate into hand.
-  Player1 Drew Estate into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
+  Player1 reshuffled
+  Player1 Drew Duchy into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(2), Embassy(1), Estate(3), Silver(1), Warehouse(1), 
 
 Player2 begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
@@ -212,51 +234,71 @@ With hand: Copper,Copper,Copper,Silver,Silver,
     +1 Coin = 6 all together.
   Player2 Played Copper.
     +1 Coin = 7 all together.
-  Player2 bought Gold.
+  Player2 bought Feodum.
   Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
   Player2 Drew Estate into hand.
   Player2 Drew Estate into hand.
-  Player2 Drew Estate into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
+  Player2 Drew Develop into hand.
+  Player2 Drew Silver into hand.
+  Player2 ends turn with deck: Copper(7), Develop(1), Estate(2), Feodum(1), Silver(4), 
 
 ROUND 6
 -------------
 Player1 begins turn
-With hand: Copper,Estate,Estate,Gold,Silver,
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
+With hand: Copper,Copper,Duchy,Estate,Silver,
   Player1 Played Silver.
-    +2 Coin = 5 all together.
+    +2 Coin = 2 all together.
   Player1 Played Copper.
-    +1 Coin = 6 all together.
-  Player1 bought Gold.
+    +1 Coin = 3 all together.
+  Player1 Played Copper.
+    +1 Coin = 4 all together.
+  Player1 bought Silver.
   Player1 Drew Copper into hand.
   Player1 Drew Copper into hand.
+  Player1 Drew Warehouse into hand.
   Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 reshuffled
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), 
+  Player1 Drew Estate into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(2), Embassy(1), Estate(3), Silver(2), Warehouse(1), 
 
 Player2 begins turn
-With hand: Copper,Copper,Estate,Estate,Estate,
+With hand: Copper,Develop,Estate,Estate,Silver,
+  Player2 Played Develop.
+    Player2 trashed Estate.
+    Player2 gained Silver.
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
   Player2 Played Copper.
-    +1 Coin = 1 all together.
-  Player2 Played Copper.
-    +1 Coin = 2 all together.
+    +1 Coin = 3 all together.
+  Player2 bought Silver.
+  Player2 Drew Silver into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
   Player2 Drew Copper into hand.
   Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Copper into hand.
-  Player2 reshuffled
-  Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
+  Player2 ends turn with deck: Copper(7), Develop(1), Estate(1), Feodum(1), Silver(6), 
 
 ROUND 7
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
+With hand: Copper,Copper,Copper,Estate,Warehouse,
+  Player1 Played Warehouse.
+    +1 Actions = 1 all together.
+    Player1 Drew Copper into hand.
+    Player1 Drew Embassy into hand.
+    Player1 Drew Duchy into hand.
+    Player1 Discarded Duchy.
+    Player1 Discarded Estate.
+    Player1 Discarded Copper.
+  Player1 Played Embassy.
+    Player1 Drew Estate into hand.
+    Player1 Drew Copper into hand.
+    Player1 reshuffled
+    Player1 Drew Silver into hand.
+    Player1 Drew Estate into hand.
+    Player1 Drew Copper into hand.
+    Player1 Discarded Estate.
+    Player1 Discarded Estate.
+    Player1 Discarded Copper.
   Player1 Played Silver.
     +2 Coin = 2 all together.
   Player1 Played Copper.
@@ -267,13 +309,13 @@ With hand: Copper,Copper,Copper,Copper,Silver,
     +1 Coin = 5 all together.
   Player1 Played Copper.
     +1 Coin = 6 all together.
-  Player1 bought Gold.
-  Player1 Drew Gold into hand.
-  Player1 Drew Gold into hand.
-  Player1 Drew Estate into hand.
+  Player1 bought Duchy.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Copper into hand.
   Player1 Drew Silver into hand.
   Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(4), 
+  Player1 Drew Estate into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(3), Embassy(1), Estate(3), Silver(2), Warehouse(1), 
 
 Player2 begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
@@ -287,56 +329,73 @@ With hand: Copper,Copper,Copper,Silver,Silver,
     +1 Coin = 6 all together.
   Player2 Played Copper.
     +1 Coin = 7 all together.
-  Player2 bought Gold.
+  Player2 bought Develop.
+  Player2 reshuffled
   Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Develop into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Gold into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), 
+  Player2 ends turn with deck: Copper(7), Develop(2), Estate(1), Feodum(1), Silver(6), 
 
 ROUND 8
 -------------
 Player1 begins turn
-With hand: Copper,Estate,Gold,Gold,Silver,
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
-  Player1 Played Gold.
-    +3 Coin = 6 all together.
+With hand: Copper,Copper,Duchy,Estate,Silver,
   Player1 Played Silver.
-    +2 Coin = 8 all together.
+    +2 Coin = 2 all together.
   Player1 Played Copper.
-    +1 Coin = 9 all together.
-  Player1 bought Province.
+    +1 Coin = 3 all together.
+  Player1 Played Copper.
+    +1 Coin = 4 all together.
+  Player1 bought Silver.
+  Player1 Drew Duchy into hand.
+  Player1 reshuffled
   Player1 Drew Copper into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Silver into hand.
   Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(4), 
+  Player1 Drew Copper into hand.
+  Player1 Drew Warehouse into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(3), Embassy(1), Estate(3), Silver(3), Warehouse(1), 
 
 Player2 begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
-  Player2 Played Copper.
-    +1 Coin = 4 all together.
+With hand: Copper,Copper,Develop,Silver,Silver,
+  Player2 Played Develop.
+    Player2 trashed Copper.
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
   Player2 Played Copper.
     +1 Coin = 5 all together.
-  Player2 Played Copper.
-    +1 Coin = 6 all together.
-  Player2 bought Gold.
-  Player2 Drew Silver into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Estate into hand.
+  Player2 bought Feodum.
+  Player2 Drew Feodum into hand.
   Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(4), 
+  Player2 Drew Copper into hand.
+  Player2 Drew Develop into hand.
+  Player2 Drew Silver into hand.
+  Player2 ends turn with deck: Copper(6), Develop(2), Estate(1), Feodum(2), Silver(6), 
 
 ROUND 9
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
+With hand: Copper,Copper,Copper,Duchy,Warehouse,
+  Player1 Played Warehouse.
+    +1 Actions = 1 all together.
+    Player1 Drew Embassy into hand.
+    Player1 Drew Duchy into hand.
+    Player1 Drew Copper into hand.
+    Player1 Discarded Duchy.
+    Player1 Discarded Duchy.
+    Player1 Discarded Copper.
+  Player1 Played Embassy.
+    Player1 Drew Copper into hand.
+    Player1 Drew Silver into hand.
+    Player1 Drew Copper into hand.
+    Player1 Drew Estate into hand.
+    Player1 Drew Silver into hand.
+    Player1 Discarded Estate.
+    Player1 Discarded Copper.
+    Player1 Discarded Copper.
   Player1 Played Silver.
     +2 Coin = 2 all together.
   Player1 Played Silver.
@@ -345,51 +404,375 @@ With hand: Copper,Copper,Estate,Silver,Silver,
     +1 Coin = 5 all together.
   Player1 Played Copper.
     +1 Coin = 6 all together.
-  Player1 bought Gold.
-  Player1 Drew Estate into hand.
-  Player1 reshuffled
-  Player1 Drew Silver into hand.
+  Player1 Played Copper.
+    +1 Coin = 7 all together.
+  Player1 bought Duchy.
   Player1 Drew Copper into hand.
-  Player1 Drew Gold into hand.
   Player1 Drew Silver into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(4), 
+  Player1 Drew Estate into hand.
+  Player1 Drew Estate into hand.
+  Player1 Drew Duchy into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(4), Embassy(1), Estate(3), Silver(3), Warehouse(1), 
 
 Player2 begins turn
-With hand: Copper,Estate,Estate,Silver,Silver,
+With hand: Copper,Copper,Develop,Feodum,Silver,
+  Player2 Played Develop.
+    Player2 trashed Feodum.
+      Player2 gained Silver.
+      Player2 gained Silver.
+      Player2 gained Silver.
+    Player2 gained Silver.
+    Player2 gained Duchy.
   Player2 Played Silver.
     +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
   Player2 Played Copper.
-    +1 Coin = 5 all together.
-  Player2 bought Silver.
-  Player2 reshuffled
-  Player2 Drew Copper into hand.
+    +1 Coin = 3 all together.
+  Player2 Played Copper.
+    +1 Coin = 4 all together.
+  Player2 bought Feodum.
+  Player2 Drew Duchy into hand.
   Player2 Drew Silver into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
   Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), 
+  Player2 Drew Estate into hand.
+  Player2 ends turn with deck: Copper(6), Develop(2), Duchy(1), Estate(1), Feodum(2), Silver(10), 
 
 ROUND 10
 -------------
 Player1 begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
+With hand: Copper,Duchy,Estate,Estate,Silver,
   Player1 Played Silver.
-    +2 Coin = 5 all together.
-  Player1 Played Silver.
-    +2 Coin = 7 all together.
+    +2 Coin = 2 all together.
   Player1 Played Copper.
-    +1 Coin = 8 all together.
-  Player1 bought Province.
-  Player1 Drew Gold into hand.
+    +1 Coin = 3 all together.
+  Player1 bought Silver.
+  Player1 reshuffled
+  Player1 Drew Silver into hand.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Silver into hand.
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(4), Embassy(1), Estate(3), Silver(4), Warehouse(1), 
+
+Player2 begins turn
+With hand: Copper,Copper,Duchy,Estate,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Copper.
+    +1 Coin = 3 all together.
+  Player2 Played Copper.
+    +1 Coin = 4 all together.
+  Player2 bought Feodum.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
+  Player2 reshuffled
+  Player2 Drew Develop into hand.
+  Player2 ends turn with deck: Copper(6), Develop(2), Duchy(1), Estate(1), Feodum(3), Silver(10), 
+
+ROUND 11
+-------------
+Player1 begins turn
+With hand: Copper,Copper,Duchy,Silver,Silver,
+  Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Played Silver.
+    +2 Coin = 4 all together.
+  Player1 Played Copper.
+    +1 Coin = 5 all together.
+  Player1 Played Copper.
+    +1 Coin = 6 all together.
+  Player1 bought Duchy.
+  Player1 Drew Copper into hand.
+  Player1 Drew Duchy into hand.
   Player1 Drew Estate into hand.
   Player1 Drew Copper into hand.
-  Player1 Drew Province into hand.
+  Player1 Drew Duchy into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(5), Embassy(1), Estate(3), Silver(4), Warehouse(1), 
+
+Player2 begins turn
+With hand: Copper,Develop,Silver,Silver,Silver,
+  Player2 Played Develop.
+    Player2 trashed Copper.
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 Played Silver.
+    +2 Coin = 6 all together.
+  Player2 bought Feodum.
+  Player2 Drew Develop into hand.
+  Player2 Drew Feodum into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Duchy into hand.
+  Player2 ends turn with deck: Copper(5), Develop(2), Duchy(1), Estate(1), Feodum(4), Silver(10), 
+
+ROUND 12
+-------------
+Player1 begins turn
+With hand: Copper,Copper,Duchy,Duchy,Estate,
+  Player1 Played Copper.
+    +1 Coin = 1 all together.
+  Player1 Played Copper.
+    +1 Coin = 2 all together.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Warehouse into hand.
+  Player1 Drew Estate into hand.
+  Player1 Drew Embassy into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(5), Embassy(1), Estate(3), Silver(4), Warehouse(1), 
+
+Player2 begins turn
+With hand: Develop,Duchy,Feodum,Silver,Silver,
+  Player2 Played Develop.
+    Player2 trashed Duchy.
+    Player2 gained Feodum.
+    Player2 gained Gold.
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 bought Feodum.
+  Player2 Drew Gold into hand.
+  Player2 Drew Feodum into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 ends turn with deck: Copper(5), Develop(2), Estate(1), Feodum(6), Gold(1), Silver(10), 
+
+ROUND 13
+-------------
+Player1 begins turn
+With hand: Copper,Duchy,Embassy,Estate,Warehouse,
+  Player1 Played Warehouse.
+    +1 Actions = 1 all together.
+    Player1 Drew Copper into hand.
+    Player1 Drew Silver into hand.
+    Player1 Drew Copper into hand.
+    Player1 Discarded Duchy.
+    Player1 Discarded Estate.
+    Player1 Discarded Copper.
+  Player1 Played Embassy.
+    Player1 Drew Silver into hand.
+    Player1 Drew Estate into hand.
+    Player1 reshuffled
+    Player1 Drew Copper into hand.
+    Player1 Drew Duchy into hand.
+    Player1 Drew Copper into hand.
+    Player1 Discarded Duchy.
+    Player1 Discarded Estate.
+    Player1 Discarded Copper.
+  Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Played Silver.
+    +2 Coin = 4 all together.
+  Player1 Played Copper.
+    +1 Coin = 5 all together.
+  Player1 Played Copper.
+    +1 Coin = 6 all together.
+  Player1 Played Copper.
+    +1 Coin = 7 all together.
+  Player1 bought Duchy.
   Player1 Drew Silver into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Gold(4), Province(2), Silver(4), 
+  Player1 Drew Duchy into hand.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Estate into hand.
+  Player1 Drew Estate into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(6), Embassy(1), Estate(3), Silver(4), Warehouse(1), 
+
+Player2 begins turn
+With hand: Copper,Copper,Feodum,Gold,Silver,
+  Player2 Played Gold.
+    +3 Coin = 3 all together.
+  Player2 Played Silver.
+    +2 Coin = 5 all together.
+  Player2 Played Copper.
+    +1 Coin = 6 all together.
+  Player2 Played Copper.
+    +1 Coin = 7 all together.
+  Player2 bought Feodum.
+  Player2 Drew Estate into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Feodum into hand.
+  Player2 ends turn with deck: Copper(5), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(10), 
+
+ROUND 14
+-------------
+Player1 begins turn
+With hand: Duchy,Duchy,Estate,Estate,Silver,
+  Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Drew Copper into hand.
+  Player1 Drew Silver into hand.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(6), Embassy(1), Estate(3), Silver(4), Warehouse(1), 
+
+Player2 begins turn
+With hand: Copper,Copper,Estate,Feodum,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Copper.
+    +1 Coin = 3 all together.
+  Player2 Played Copper.
+    +1 Coin = 4 all together.
+  Player2 bought Silver.
+  Player2 Drew Copper into hand.
+  Player2 Drew Feodum into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 ends turn with deck: Copper(5), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(11), 
+
+ROUND 15
+-------------
+Player1 begins turn
+With hand: Copper,Copper,Copper,Duchy,Silver,
+  Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Played Copper.
+    +1 Coin = 3 all together.
+  Player1 Played Copper.
+    +1 Coin = 4 all together.
+  Player1 Played Copper.
+    +1 Coin = 5 all together.
+  Player1 bought Duchy.
+  Player1 Drew Duchy into hand.
+  Player1 reshuffled
+  Player1 Drew Embassy into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Silver into hand.
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(7), Embassy(1), Estate(3), Silver(4), Warehouse(1), 
+
+Player2 begins turn
+With hand: Copper,Feodum,Silver,Silver,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 Played Silver.
+    +2 Coin = 6 all together.
+  Player2 Played Copper.
+    +1 Coin = 7 all together.
+  Player2 bought Silver.
+  Player2 reshuffled
+  Player2 Drew Feodum into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Gold into hand.
+  Player2 Drew Feodum into hand.
+  Player2 Drew Feodum into hand.
+  Player2 ends turn with deck: Copper(5), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(12), 
+
+ROUND 16
+-------------
+Player1 begins turn
+With hand: Copper,Copper,Duchy,Embassy,Silver,
+  Player1 Played Embassy.
+    Player1 Drew Silver into hand.
+    Player1 Drew Copper into hand.
+    Player1 Drew Estate into hand.
+    Player1 Drew Silver into hand.
+    Player1 Drew Copper into hand.
+    Player1 Discarded Duchy.
+    Player1 Discarded Estate.
+    Player1 Discarded Copper.
+  Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Played Silver.
+    +2 Coin = 4 all together.
+  Player1 Played Silver.
+    +2 Coin = 6 all together.
+  Player1 Played Copper.
+    +1 Coin = 7 all together.
+  Player1 Played Copper.
+    +1 Coin = 8 all together.
+  Player1 Played Copper.
+    +1 Coin = 9 all together.
+  Player1 bought Duke.
+  Player1 Drew Estate into hand.
+  Player1 Drew Warehouse into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Estate into hand.
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(1), Embassy(1), Estate(3), Silver(4), Warehouse(1), 
+
+Player2 begins turn
+With hand: Feodum,Feodum,Feodum,Gold,Silver,
+  Player2 Played Gold.
+    +3 Coin = 3 all together.
+  Player2 Played Silver.
+    +2 Coin = 5 all together.
+  Player2 bought Silver.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Feodum into hand.
+  Player2 Drew Copper into hand.
+  Player2 ends turn with deck: Copper(5), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(13), 
+
+ROUND 17
+-------------
+Player1 begins turn
+With hand: Copper,Copper,Estate,Estate,Warehouse,
+  Player1 Played Warehouse.
+    +1 Actions = 1 all together.
+    Player1 Drew Silver into hand.
+    Player1 Drew Duchy into hand.
+    Player1 Drew Duchy into hand.
+    Player1 Discarded Duchy.
+    Player1 Discarded Duchy.
+    Player1 Discarded Estate.
+  Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Played Copper.
+    +1 Coin = 3 all together.
+  Player1 Played Copper.
+    +1 Coin = 4 all together.
+  Player1 bought Silver.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Duchy into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(1), Embassy(1), Estate(3), Silver(5), Warehouse(1), 
+
+Player2 begins turn
+With hand: Copper,Feodum,Silver,Silver,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 Played Silver.
+    +2 Coin = 6 all together.
+  Player2 Played Copper.
+    +1 Coin = 7 all together.
+  Player2 bought Silver.
+  Player2 Drew Silver into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
+  Player2 ends turn with deck: Copper(5), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(14), 
+
+ROUND 18
+-------------
+Player1 begins turn
+With hand: Copper,Duchy,Duchy,Duchy,Duchy,
+  Player1 Played Copper.
+    +1 Coin = 1 all together.
+  Player1 reshuffled
+  Player1 Drew Copper into hand.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Embassy into hand.
+  Player1 Drew Silver into hand.
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(1), Embassy(1), Estate(3), Silver(5), Warehouse(1), 
 
 Player2 begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
@@ -403,186 +786,223 @@ With hand: Copper,Copper,Copper,Silver,Silver,
     +1 Coin = 6 all together.
   Player2 Played Copper.
     +1 Coin = 7 all together.
-  Player2 bought Gold.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Gold into hand.
+  Player2 bought Silver.
   Player2 Drew Copper into hand.
   Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(5), 
+  Player2 Drew Silver into hand.
+  Player2 Drew Develop into hand.
+  Player2 Drew Silver into hand.
+  Player2 ends turn with deck: Copper(5), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(15), 
 
-ROUND 11
+ROUND 19
 -------------
 Player1 begins turn
-With hand: Copper,Estate,Gold,Province,Silver,
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
+With hand: Copper,Copper,Duchy,Embassy,Silver,
+  Player1 Played Embassy.
+    Player1 Drew Estate into hand.
+    Player1 Drew Duchy into hand.
+    Player1 Drew Duchy into hand.
+    Player1 Drew Duchy into hand.
+    Player1 Drew Warehouse into hand.
+    Player1 Discarded Duchy.
+    Player1 Discarded Duchy.
+    Player1 Discarded Duchy.
   Player1 Played Silver.
-    +2 Coin = 5 all together.
+    +2 Coin = 2 all together.
   Player1 Played Copper.
-    +1 Coin = 6 all together.
-  Player1 bought Gold.
+    +1 Coin = 3 all together.
+  Player1 Played Copper.
+    +1 Coin = 4 all together.
+  Player1 bought Warehouse.
+  Player1 Drew Silver into hand.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Copper into hand.
   Player1 Drew Copper into hand.
   Player1 Drew Estate into hand.
-  Player1 Drew Gold into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Gold(5), Province(2), Silver(4), 
+  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(1), Embassy(1), Estate(3), Silver(5), Warehouse(2), 
 
 Player2 begins turn
-With hand: Copper,Copper,Copper,Gold,Silver,
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
+With hand: Copper,Develop,Silver,Silver,Silver,
+  Player2 Played Develop.
+    Player2 trashed Copper.
   Player2 Played Silver.
-    +2 Coin = 5 all together.
-  Player2 Played Copper.
-    +1 Coin = 6 all together.
-  Player2 Played Copper.
-    +1 Coin = 7 all together.
-  Player2 Played Copper.
-    +1 Coin = 8 all together.
-  Player2 bought Province.
-  Player2 Drew Copper into hand.
-  Player2 Drew Gold into hand.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 Played Silver.
+    +2 Coin = 6 all together.
+  Player2 bought Silver.
+  Player2 Drew Silver into hand.
   Player2 Drew Estate into hand.
-  Player2 Drew Gold into hand.
-  Player2 Drew Estate into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(5), 
+  Player2 Drew Feodum into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Feodum into hand.
+  Player2 ends turn with deck: Copper(4), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(16), 
 
-ROUND 12
+ROUND 20
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
+With hand: Copper,Copper,Duchy,Estate,Silver,
+  Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Played Copper.
+    +1 Coin = 3 all together.
+  Player1 Played Copper.
+    +1 Coin = 4 all together.
+  Player1 bought Silver.
+  Player1 Drew Silver into hand.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(1), Embassy(1), Estate(3), Silver(6), Warehouse(2), 
+
+Player2 begins turn
+With hand: Estate,Feodum,Feodum,Silver,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 bought Silver.
+  Player2 Drew Feodum into hand.
+  Player2 Drew Develop into hand.
+  Player2 Drew Silver into hand.
+  Player2 reshuffled
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 ends turn with deck: Copper(4), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(17), 
+
+ROUND 21
+-------------
+Player1 begins turn
+With hand: Copper,Copper,Duchy,Duchy,Silver,
+  Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Played Copper.
+    +1 Coin = 3 all together.
+  Player1 Played Copper.
+    +1 Coin = 4 all together.
+  Player1 bought Silver.
+  Player1 Drew Silver into hand.
+  Player1 Drew Estate into hand.
+  Player1 Drew Silver into hand.
+  Player1 Drew Duke into hand.
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(1), Embassy(1), Estate(3), Silver(7), Warehouse(2), 
+
+Player2 begins turn
+With hand: Develop,Feodum,Silver,Silver,Silver,
+  Player2 Played Develop.
+    Player2 trashed Feodum.
+      Player2 gained Silver.
+      Player2 gained Silver.
+      Player2 gained Silver.
+    Player2 gained Silver.
+    Player2 gained Embassy.
+      Player1 gained Silver.
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 Played Silver.
+    +2 Coin = 6 all together.
+  Player2 bought Silver.
+  Player2 Drew Embassy into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Feodum into hand.
+  Player2 Drew Silver into hand.
+  Player2 ends turn with deck: Copper(4), Develop(2), Embassy(1), Estate(1), Feodum(6), Gold(1), Silver(22), 
+
+ROUND 22
+-------------
+Player1 begins turn
+With hand: Copper,Duke,Estate,Silver,Silver,
+  Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Played Silver.
+    +2 Coin = 4 all together.
+  Player1 Played Copper.
+    +1 Coin = 5 all together.
+  Player1 bought Duke.
+  Player1 reshuffled
+  Player1 Drew Copper into hand.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Silver into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(2), Embassy(1), Estate(3), Silver(8), Warehouse(2), 
+
+Player2 begins turn
+With hand: Embassy,Feodum,Silver,Silver,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 Played Silver.
+    +2 Coin = 6 all together.
+  Player2 bought Silver.
+  Player2 Drew Feodum into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Feodum into hand.
+  Player2 Drew Estate into hand.
+  Player2 ends turn with deck: Copper(4), Develop(2), Embassy(1), Estate(1), Feodum(6), Gold(1), Silver(23), 
+
+ROUND 23
+-------------
+Player1 begins turn
+With hand: Copper,Copper,Copper,Duchy,Silver,
+  Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Played Copper.
+    +1 Coin = 3 all together.
   Player1 Played Copper.
     +1 Coin = 4 all together.
   Player1 Played Copper.
     +1 Coin = 5 all together.
-  Player1 Played Copper.
-    +1 Coin = 6 all together.
-  Player1 bought Gold.
-  Player1 Drew Copper into hand.
+  Player1 bought Duke.
+  Player1 Drew Duke into hand.
   Player1 Drew Silver into hand.
-  Player1 Drew Gold into hand.
-  Player1 Drew Copper into hand.
-  Player1 reshuffled
-  Player1 Drew Gold into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Gold(6), Province(2), Silver(4), 
-
-Player2 begins turn
-With hand: Copper,Estate,Estate,Gold,Gold,
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
-  Player2 Played Gold.
-    +3 Coin = 6 all together.
-  Player2 Played Copper.
-    +1 Coin = 7 all together.
-  Player2 bought Gold.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Estate into hand.
-  Player2 reshuffled
-  Player2 Drew Copper into hand.
-  Player2 Drew Gold into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(5), 
-
-ROUND 13
--------------
-Player1 begins turn
-With hand: Copper,Copper,Gold,Gold,Silver,
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
-  Player1 Played Gold.
-    +3 Coin = 6 all together.
-  Player1 Played Silver.
-    +2 Coin = 8 all together.
-  Player1 Played Copper.
-    +1 Coin = 9 all together.
-  Player1 Played Copper.
-    +1 Coin = 10 all together.
-  Player1 bought Province.
-  Player1 Drew Gold into hand.
+  Player1 Drew Silver into hand.
   Player1 Drew Silver into hand.
   Player1 Drew Estate into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Gold(6), Province(3), Silver(4), 
+  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(3), Embassy(1), Estate(3), Silver(8), Warehouse(2), 
 
 Player2 begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
+With hand: Estate,Feodum,Feodum,Silver,Silver,
   Player2 Played Silver.
-    +2 Coin = 5 all together.
+    +2 Coin = 2 all together.
   Player2 Played Silver.
-    +2 Coin = 7 all together.
-  Player2 Played Copper.
-    +1 Coin = 8 all together.
-  Player2 bought Province.
-  Player2 Drew Gold into hand.
-  Player2 Drew Province into hand.
+    +2 Coin = 4 all together.
+  Player2 bought Silver.
+  Player2 Drew Silver into hand.
   Player2 Drew Silver into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(5), Province(2), Silver(5), 
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 ends turn with deck: Copper(4), Develop(2), Embassy(1), Estate(1), Feodum(6), Gold(1), Silver(24), 
 
-ROUND 14
+ROUND 24
 -------------
 Player1 begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
+With hand: Duke,Estate,Silver,Silver,Silver,
   Player1 Played Silver.
-    +2 Coin = 5 all together.
+    +2 Coin = 2 all together.
   Player1 Played Silver.
-    +2 Coin = 7 all together.
-  Player1 Played Copper.
-    +1 Coin = 8 all together.
-  Player1 bought Province.
-  Player1 Drew Gold into hand.
-  Player1 Drew Gold into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Province into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Gold(6), Province(4), Silver(4), 
-
-Player2 begins turn
-With hand: Copper,Estate,Gold,Province,Silver,
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
-  Player2 Played Silver.
-    +2 Coin = 5 all together.
-  Player2 Played Copper.
-    +1 Coin = 6 all together.
-  Player2 bought Duchy.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(5), Province(2), Silver(5), 
-
-ROUND 15
--------------
-Player1 begins turn
-With hand: Copper,Estate,Gold,Gold,Province,
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
-  Player1 Played Gold.
-    +3 Coin = 6 all together.
-  Player1 Played Copper.
-    +1 Coin = 7 all together.
-  Player1 bought Duchy.
-  Player1 Drew Gold into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
+    +2 Coin = 4 all together.
+  Player1 Played Silver.
+    +2 Coin = 6 all together.
+  Player1 bought Duke.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Duke into hand.
   Player1 Drew Silver into hand.
-  Player1 Drew Estate into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(6), Province(4), Silver(4), 
+  Player1 Drew Silver into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(4), Embassy(1), Estate(3), Silver(8), Warehouse(2), 
 
 Player2 begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
+With hand: Copper,Copper,Copper,Silver,Silver,
   Player2 Played Silver.
     +2 Coin = 2 all together.
   Player2 Played Silver.
@@ -591,114 +1011,162 @@ With hand: Copper,Copper,Estate,Silver,Silver,
     +1 Coin = 5 all together.
   Player2 Played Copper.
     +1 Coin = 6 all together.
-  Player2 bought Duchy.
+  Player2 Played Copper.
+    +1 Coin = 7 all together.
+  Player2 bought Silver.
   Player2 Drew Gold into hand.
-  Player2 Drew Gold into hand.
-  Player2 Drew Gold into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(5), Province(2), Silver(5), 
+  Player2 Drew Silver into hand.
+  Player2 Drew Feodum into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 ends turn with deck: Copper(4), Develop(2), Embassy(1), Estate(1), Feodum(6), Gold(1), Silver(25), 
 
-ROUND 16
+ROUND 25
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
+With hand: Duchy,Duchy,Duke,Silver,Silver,
   Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Played Silver.
+    +2 Coin = 4 all together.
+  Player1 bought Silver.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Duchy into hand.
+  Player1 Drew Warehouse into hand.
+  Player1 Drew Estate into hand.
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(4), Embassy(1), Estate(3), Silver(9), Warehouse(2), 
+
+Player2 begins turn
+With hand: Feodum,Gold,Silver,Silver,Silver,
+  Player2 Played Gold.
+    +3 Coin = 3 all together.
+  Player2 Played Silver.
     +2 Coin = 5 all together.
+  Player2 Played Silver.
+    +2 Coin = 7 all together.
+  Player2 Played Silver.
+    +2 Coin = 9 all together.
+  Player2 bought Province.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Feodum into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
+  Player2 ends turn with deck: Copper(4), Develop(2), Embassy(1), Estate(1), Feodum(6), Gold(1), Province(1), Silver(25), 
+
+ROUND 26
+-------------
+Player1 begins turn
+With hand: Copper,Duchy,Duchy,Estate,Warehouse,
+  Player1 Played Warehouse.
+    +1 Actions = 1 all together.
+    Player1 Drew Silver into hand.
+    Player1 Drew Duchy into hand.
+    Player1 Drew Warehouse into hand.
+    Player1 Discarded Duchy.
+    Player1 Discarded Duchy.
+    Player1 Discarded Duchy.
+  Player1 Played Warehouse.
+    +1 Actions = 1 all together.
+    Player1 Drew Embassy into hand.
+    Player1 Drew Estate into hand.
+    Player1 Drew Copper into hand.
+    Player1 Discarded Estate.
+    Player1 Discarded Estate.
+    Player1 Discarded Copper.
+  Player1 Played Embassy.
+    Player1 Drew Copper into hand.
+    Player1 Drew Silver into hand.
+    Player1 Drew Duchy into hand.
+    Player1 Drew Copper into hand.
+    Player1 reshuffled
+    Player1 Drew Duchy into hand.
+    Player1 Discarded Duchy.
+    Player1 Discarded Duchy.
+    Player1 Discarded Copper.
+  Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Played Silver.
+    +2 Coin = 4 all together.
+  Player1 Played Copper.
+    +1 Coin = 5 all together.
   Player1 Played Copper.
     +1 Coin = 6 all together.
-  Player1 Played Copper.
-    +1 Coin = 7 all together.
-  Player1 bought Duchy.
+  Player1 bought Duke.
   Player1 Drew Copper into hand.
-  Player1 Drew Province into hand.
-  Player1 reshuffled
-  Player1 Drew Duchy into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(6), Province(4), Silver(4), 
+  Player1 Drew Silver into hand.
+  Player1 Drew Silver into hand.
+  Player1 Drew Duke into hand.
+  Player1 Drew Silver into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(5), Embassy(1), Estate(3), Silver(9), Warehouse(2), 
 
 Player2 begins turn
-With hand: Copper,Copper,Gold,Gold,Gold,
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
-  Player2 Played Gold.
-    +3 Coin = 6 all together.
-  Player2 Played Gold.
-    +3 Coin = 9 all together.
+With hand: Copper,Feodum,Silver,Silver,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 Played Silver.
+    +2 Coin = 6 all together.
   Player2 Played Copper.
-    +1 Coin = 10 all together.
-  Player2 Played Copper.
-    +1 Coin = 11 all together.
-  Player2 bought Province.
-  Player2 Drew Copper into hand.
+    +1 Coin = 7 all together.
+  Player2 bought Silver.
+  Player2 Drew Feodum into hand.
+  Player2 Drew Develop into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
   Player2 reshuffled
-  Player2 Drew Gold into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Gold into hand.
-  Player2 Drew Estate into hand.
-  Player2 ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(5), Province(3), Silver(5), 
+  Player2 Drew Silver into hand.
+  Player2 ends turn with deck: Copper(4), Develop(2), Embassy(1), Estate(1), Feodum(6), Gold(1), Province(1), Silver(26), 
 
-ROUND 17
+ROUND 27
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Copper,Duchy,Province,
+With hand: Copper,Duke,Silver,Silver,Silver,
+  Player1 Played Silver.
+    +2 Coin = 2 all together.
+  Player1 Played Silver.
+    +2 Coin = 4 all together.
+  Player1 Played Silver.
+    +2 Coin = 6 all together.
   Player1 Played Copper.
-    +1 Coin = 1 all together.
-  Player1 Played Copper.
-    +1 Coin = 2 all together.
-  Player1 Played Copper.
-    +1 Coin = 3 all together.
-  Player1 bought Estate.
-  Player1 Drew Gold into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Silver into hand.
+    +1 Coin = 7 all together.
+  Player1 bought Duke.
+  Player1 Drew Estate into hand.
   Player1 Drew Duchy into hand.
   Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(6), Province(4), Silver(4), 
+  Player1 Drew Duchy into hand.
+  Player1 Drew Silver into hand.
+  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(6), Embassy(1), Estate(3), Silver(9), Warehouse(2), 
 
 Player2 begins turn
-With hand: Copper,Estate,Estate,Gold,Gold,
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
-  Player2 Played Gold.
-    +3 Coin = 6 all together.
-  Player2 Played Copper.
-    +1 Coin = 7 all together.
-  Player2 bought Duchy.
-  Player2 Drew Copper into hand.
+With hand: Develop,Feodum,Silver,Silver,Silver,
+  Player2 Played Develop.
+    Player2 trashed Feodum.
+      Player2 gained Silver.
+      Player2 gained Silver.
+      Player2 gained Silver.
+    Player2 gained Silver.
+    Player2 gained Embassy.
+      Player1 gained Silver.
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 Played Silver.
+    +2 Coin = 6 all together.
+  Player2 Drew Embassy into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
   Player2 Drew Silver into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Duchy(3), Estate(3), Gold(5), Province(3), Silver(5), 
+  Player2 ends turn with deck: Copper(4), Develop(2), Embassy(2), Estate(1), Feodum(5), Gold(1), Province(1), Silver(30), 
 
-ROUND 18
--------------
-Player1 begins turn
-With hand: Copper,Duchy,Gold,Silver,Silver,
-  Player1 Played Gold.
-    +3 Coin = 3 all together.
-  Player1 Played Silver.
-    +2 Coin = 5 all together.
-  Player1 Played Silver.
-    +2 Coin = 7 all together.
-  Player1 Played Copper.
-    +1 Coin = 8 all together.
-  Player1 bought Province.
-  Player1 Drew Gold into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Gold into hand.
-  Player1 Drew Gold into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(6), Province(5), Silver(4), 
-
-Game ended in 18 turns.
+Game ended in 27 turns.
 Player1 Won!
-Player1 total score: 40
-  Copper(7), Duchy(2), Estate(4), Gold(6), Province(5), Silver(4), 
-Player2 total score: 30
-  Copper(7), Duchy(3), Estate(3), Gold(5), Province(3), Silver(5), 
-Trash contains: 
+Player1 total score: 66
+  Copper(7), Duchy(7), Duke(6), Embassy(1), Estate(3), Silver(10), Warehouse(2), 
+Player2 total score: 57
+  Copper(4), Develop(2), Embassy(2), Estate(1), Feodum(5), Gold(1), Province(1), Silver(30), 
+Trash contains: Copper(3), Duchy(1), Estate(2), Feodum(3), 

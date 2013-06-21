@@ -13,7 +13,15 @@ namespace Program
 
         static void Main()
         {
-            FollowersTest();
+            FeodumVsDuke();           
+        }
+
+        static void FeodumVsDuke()
+        {
+            // for forum topic: http://forum.dominionstrategy.com/index.php?topic=7476.msg212934#msg212934
+            ComparePlayers(Strategies.DuchyDukeWarehouseEmbassy.Player(1), Strategies.BigMoney.Player(2));
+            ComparePlayers(Strategies.FeodumDevelop.Player(1), Strategies.BigMoney.Player(2));
+            ComparePlayers(Strategies.DuchyDukeWarehouseEmbassy.Player(1), Strategies.FeodumDevelop.Player(2));
         }
 
         static void FollowersTest()
@@ -23,7 +31,7 @@ namespace Program
             for (int i = 0; i < 16; ++i)
             {
                 System.Console.Write("{0}, ", i);
-                ComparePlayers(Strategies.FollowersTest.Player(1, i), Strategies.BigMoney.Player(2), useShelters: false);
+                ComparePlayers(Strategies.FollowersTest.Player(1, i), Strategies.BigMoney.Player(2), showCompactScore:true);
             }
         }
         
@@ -52,7 +60,7 @@ namespace Program
         }
 
 
-        static void ComparePlayers(PlayerAction player1, PlayerAction player2, bool useShelters = false, bool firstPlayerAdvantage = false)
+        static void ComparePlayers(PlayerAction player1, PlayerAction player2, bool useShelters = false, bool firstPlayerAdvantage = false, bool showCompactScore = false, bool showDistribution=false)
         {
             int numberOfGames = 10000;
 
@@ -115,26 +123,32 @@ namespace Program
                 }
             );
 
-            /*
-            for (int index = 0; index < winnerCount.Length; ++index)
+            if (!showCompactScore)
             {
-                System.Console.WriteLine("Player {0} won: {1} percent of the time.", index+1, PlayerWinPercent(index, winnerCount, numberOfGames));
+                for (int index = 0; index < winnerCount.Length; ++index)
+                {
+                    System.Console.WriteLine("Player {0} won: {1} percent of the time.", index + 1, PlayerWinPercent(index, winnerCount, numberOfGames));
+                }
+                if (tieCount > 0)
+                {
+                    System.Console.WriteLine("Ties: {0} percent of the time.", TiePercent(tieCount, numberOfGames));
+                }
             }
-            if (tieCount > 0)
+            else
             {
-                System.Console.WriteLine("Ties: {0} percent of the time.", TiePercent(tieCount, numberOfGames) );
-            }*/
+                System.Console.WriteLine("{0}, {1}, {2}",
+                    PlayerWinPercent(0, winnerCount, numberOfGames),
+                    PlayerWinPercent(1, winnerCount, numberOfGames),
+                    TiePercent(tieCount, numberOfGames));
+            }
 
-            System.Console.WriteLine("{0}, {1}, {2}", 
-                PlayerWinPercent(0, winnerCount, numberOfGames), 
-                PlayerWinPercent(1, winnerCount, numberOfGames), 
-                TiePercent(tieCount, numberOfGames));
-            /*
-            System.Console.WriteLine("");
-            System.Console.WriteLine("Player 1 Score Delta distribution");
-            System.Console.WriteLine("=================================");
-            countbyBucket.WriteBuckets(System.Console.Out);
-             * */
+            if (showDistribution)
+            {
+                System.Console.WriteLine("");
+                System.Console.WriteLine("Player 1 Score Delta distribution");
+                System.Console.WriteLine("=================================");
+                countbyBucket.WriteBuckets(System.Console.Out);
+            }             
         }
 
         static double TiePercent(int tieCount, int numberOfGames)
