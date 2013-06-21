@@ -436,11 +436,11 @@ namespace Dominion
             return this.hand.RemoveCard(cardType);
         }
 
-        internal void DiscardHandDownToCount(int count)
+        internal void DiscardHandDownToCount(GameState gameState, int count)
         {
             while (this.hand.Count > count)
             {
-                // TODO:
+                this.RequestPlayerDiscardCardFromHand(gameState, acceptableCard => true, isOptional: false);
             }
         }
 

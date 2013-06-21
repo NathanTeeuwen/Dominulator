@@ -254,7 +254,7 @@ namespace Dominion
             this.supplyPiles = supplyCardPiles.ToArray();
             this.nonSupplyPiles = nonSupplyCardPiles.ToArray();
             this.hasPileEverBeenGained = new MapPileOfCardsToProperty<bool>(this.supplyPiles);
-            this.pileEmbargoTokenCount = new MapPileOfCardsToProperty<int>(this.supplyPiles); ;
+            this.pileEmbargoTokenCount = new MapPileOfCardsToProperty<int>(this.supplyPiles);
             this.trash = new BagOfCards();
                        
             foreach (PlayerState player in this.players.AllPlayers)

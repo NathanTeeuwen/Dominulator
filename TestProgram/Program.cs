@@ -12,10 +12,21 @@ namespace Program
     {
 
         static void Main()
-        {            
-            ComparePlayers(Strategies.LookoutHaremMiningVillageMysticScout.Player(1), Strategies.BigMoney.Player(2), useShelters:true);
+        {
+            FollowersTest();
         }
 
+        static void FollowersTest()
+        {
+            // for forum topic: http://forum.dominionstrategy.com/index.php?topic=6623.0
+            System.Console.WriteLine("Followers Cost, Player 1 Win %, Player 2 Win%, Tie%");
+            for (int i = 0; i < 16; ++i)
+            {
+                System.Console.Write("{0}, ", i);
+                ComparePlayers(Strategies.FollowersTest.Player(1, i), Strategies.BigMoney.Player(2), useShelters: false);
+            }
+        }
+        
         /*
         static void Main()
         {
@@ -67,6 +78,7 @@ namespace Program
 
                         var gameConfig = new GameConfig(
                             useShelters, 
+                            parameter: 0,
                             useColonyAndPlatinum: false,
                             supplyPiles: GetCardSet(startPlayer, otherPlayer));
 
@@ -103,19 +115,36 @@ namespace Program
                 }
             );
 
+            /*
             for (int index = 0; index < winnerCount.Length; ++index)
             {
-                System.Console.WriteLine("Player {0} won: {1} percent of the time.", index + 1, winnerCount[index] / (double)numberOfGames * 100);
+                System.Console.WriteLine("Player {0} won: {1} percent of the time.", index+1, PlayerWinPercent(index, winnerCount, numberOfGames));
             }
             if (tieCount > 0)
             {
-                System.Console.WriteLine("Ties: {0} percent of the time.", tieCount / (double)numberOfGames * 100);
-            }
-            
+                System.Console.WriteLine("Ties: {0} percent of the time.", TiePercent(tieCount, numberOfGames) );
+            }*/
+
+            System.Console.WriteLine("{0}, {1}, {2}", 
+                PlayerWinPercent(0, winnerCount, numberOfGames), 
+                PlayerWinPercent(1, winnerCount, numberOfGames), 
+                TiePercent(tieCount, numberOfGames));
+            /*
             System.Console.WriteLine("");
             System.Console.WriteLine("Player 1 Score Delta distribution");
             System.Console.WriteLine("=================================");
             countbyBucket.WriteBuckets(System.Console.Out);
+             * */
+        }
+
+        static double TiePercent(int tieCount, int numberOfGames)
+        {
+            return tieCount / (double)numberOfGames * 100;
+        }
+
+        static double PlayerWinPercent(int player, int[] winnerCount, int numberOfGames)
+        {
+            return winnerCount[player] / (double)numberOfGames * 100;
         }
 
         class CountByBucket
@@ -223,6 +252,16 @@ namespace Program
         {
             this.card = card;
             this.match = match;
+        }
+
+        public static CardAcceptance For(Card card)
+        {
+            return new CardAcceptance(card);
+        }
+
+        public static CardAcceptance For(Card card, GameStatePredicate match)
+        {
+            return new CardAcceptance(card, match);
         }
 
         public static CardAcceptance For<T>()

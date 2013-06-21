@@ -2118,19 +2118,19 @@ namespace Dominion.CardTypes
         Card
     {
         public FollowersTest(int cost)
-            : base("Followers", coinCost: cost, isAction: true, plusCards: 1, plusActions: 1, defaultSupplyCount: 20)
+            : base("Followers", coinCost: cost, isAction: true, plusCards: 2, isAttack: true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardFromSupply<CardTypes.Estate>(gameState);            
+            currentPlayer.GainCardFromSupply<CardTypes.Estate>(gameState);
         }
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
             otherPlayer.GainCardFromSupply<CardTypes.Curse>(gameState);
-            otherPlayer.DiscardHandDownToCount(3);
+            otherPlayer.DiscardHandDownToCount(gameState, 3);
         }
     }
 
