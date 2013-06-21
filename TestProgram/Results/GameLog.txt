@@ -1,6 +1,6 @@
-Player1 gained Estate.
-Player1 gained Estate.
-Player1 gained Estate.
+Player1 gained Hovel.
+Player1 gained Necropolis.
+Player1 gained Overgrown Estate.
 Player1 gained Copper.
 Player1 gained Copper.
 Player1 gained Copper.
@@ -8,9 +8,9 @@ Player1 gained Copper.
 Player1 gained Copper.
 Player1 gained Copper.
 Player1 gained Copper.
-Player2 gained Estate.
-Player2 gained Estate.
-Player2 gained Estate.
+Player2 gained Hovel.
+Player2 gained Necropolis.
+Player2 gained Overgrown Estate.
 Player2 gained Copper.
 Player2 gained Copper.
 Player2 gained Copper.
@@ -21,35 +21,35 @@ Player2 gained Copper.
 Player1 reshuffled
 Player1 Drew Copper into hand.
 Player1 Drew Copper into hand.
-Player1 Drew Estate into hand.
+Player1 Drew Overgrown Estate into hand.
 Player1 Drew Copper into hand.
-Player1 Drew Estate into hand.
+Player1 Drew Hovel into hand.
 Player2 reshuffled
 Player2 Drew Copper into hand.
-Player2 Drew Estate into hand.
-Player2 Drew Estate into hand.
+Player2 Drew Necropolis into hand.
+Player2 Drew Hovel into hand.
 Player2 Drew Copper into hand.
 Player2 Drew Copper into hand.
 ROUND 1
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
+With hand: Copper,Copper,Copper,Hovel,Overgrown Estate,
   Player1 Played Copper.
     +1 Coin = 1 all together.
   Player1 Played Copper.
     +1 Coin = 2 all together.
   Player1 Played Copper.
     +1 Coin = 3 all together.
-  Player1 bought Silver.
+  Player1 bought Lookout.
   Player1 Drew Copper into hand.
   Player1 Drew Copper into hand.
-  Player1 Drew Estate into hand.
+  Player1 Drew Necropolis into hand.
   Player1 Drew Copper into hand.
   Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  Player1 ends turn with deck: Copper(7), Hovel(1), Lookout(1), Necropolis(1), Overgrown Estate(1), 
 
 Player2 begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
+With hand: Copper,Copper,Copper,Hovel,Necropolis,
   Player2 Played Copper.
     +1 Coin = 1 all together.
   Player2 Played Copper.
@@ -61,13 +61,13 @@ With hand: Copper,Copper,Copper,Estate,Estate,
   Player2 Drew Copper into hand.
   Player2 Drew Copper into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  Player2 Drew Overgrown Estate into hand.
+  Player2 ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(1), 
 
 ROUND 2
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
+With hand: Copper,Copper,Copper,Copper,Necropolis,
   Player1 Played Copper.
     +1 Coin = 1 all together.
   Player1 Played Copper.
@@ -76,17 +76,17 @@ With hand: Copper,Copper,Copper,Copper,Estate,
     +1 Coin = 3 all together.
   Player1 Played Copper.
     +1 Coin = 4 all together.
-  Player1 bought Rats.
+  Player1 bought Silver.
   Player1 reshuffled
-  Player1 Drew Rats into hand.
-  Player1 Drew Copper into hand.
   Player1 Drew Silver into hand.
   Player1 Drew Copper into hand.
+  Player1 Drew Lookout into hand.
   Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Rats(1), Silver(1), 
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(7), Hovel(1), Lookout(1), Necropolis(1), Overgrown Estate(1), Silver(1), 
 
 Player2 begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
+With hand: Copper,Copper,Copper,Copper,Overgrown Estate,
   Player2 Played Copper.
     +1 Coin = 1 all together.
   Player2 Played Copper.
@@ -98,21 +98,25 @@ With hand: Copper,Copper,Copper,Copper,Estate,
   Player2 bought Silver.
   Player2 reshuffled
   Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
+  Player2 Drew Hovel into hand.
   Player2 Drew Copper into hand.
   Player2 Drew Copper into hand.
   Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  Player2 ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(2), 
 
 ROUND 3
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Copper,Rats,Silver,
-  Player1 Played Rats.
+With hand: Copper,Copper,Copper,Lookout,Silver,
+  Player1 Played Lookout.
     +1 Actions = 1 all together.
-    Player1 Drew Copper into hand.
-    Player1 gained Rats.
-    Player1 trashed Copper.
+    Player1 Revealed Copper.
+    Player1 Revealed Overgrown Estate.
+    Player1 Revealed Necropolis.
+      Player1 trashed Overgrown Estate.
+        Player1 Drew Copper into hand.
+      Player1 Discarded Necropolis.
+      Player1 Placed Copper on top of his deck.
   Player1 Played Silver.
     +2 Coin = 2 all together.
   Player1 Played Copper.
@@ -121,16 +125,19 @@ With hand: Copper,Copper,Copper,Rats,Silver,
     +1 Coin = 4 all together.
   Player1 Played Copper.
     +1 Coin = 5 all together.
-  Player1 bought Upgrade.
-  Player1 Drew Estate into hand.
-  Player1 Drew Estate into hand.
+  Player1 Played Copper.
+    +1 Coin = 6 all together.
+  Player1 bought Harem.
   Player1 Drew Copper into hand.
   Player1 Drew Copper into hand.
-  Player1 Drew Estate into hand.
-  Player1 ends turn with deck: Copper(6), Estate(3), Rats(2), Silver(1), Upgrade(1), 
+  Player1 Drew Hovel into hand.
+  Player1 Drew Copper into hand.
+  Player1 reshuffled
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(7), Harem(1), Hovel(1), Lookout(1), Necropolis(1), Silver(1), 
 
 Player2 begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
+With hand: Copper,Copper,Copper,Copper,Hovel,
   Player2 Played Copper.
     +1 Coin = 1 all together.
   Player2 Played Copper.
@@ -142,29 +149,33 @@ With hand: Copper,Copper,Copper,Copper,Estate,
   Player2 bought Silver.
   Player2 Drew Copper into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Estate into hand.
+  Player2 Drew Overgrown Estate into hand.
+  Player2 Drew Necropolis into hand.
   Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Silver(3), 
+  Player2 ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(3), 
 
 ROUND 4
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Estate,Estate,Estate,
+With hand: Copper,Copper,Copper,Copper,Hovel,
   Player1 Played Copper.
     +1 Coin = 1 all together.
   Player1 Played Copper.
     +1 Coin = 2 all together.
+  Player1 Played Copper.
+    +1 Coin = 3 all together.
+  Player1 Played Copper.
+    +1 Coin = 4 all together.
+  Player1 bought Silver.
+  Player1 Drew Harem into hand.
+  Player1 Drew Silver into hand.
   Player1 Drew Copper into hand.
-  Player1 reshuffled
-  Player1 Drew Copper into hand.
-  Player1 Drew Rats into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Rats into hand.
-  Player1 ends turn with deck: Copper(6), Estate(3), Rats(2), Silver(1), Upgrade(1), 
+  Player1 Drew Necropolis into hand.
+  Player1 Drew Lookout into hand.
+  Player1 ends turn with deck: Copper(7), Harem(1), Hovel(1), Lookout(1), Necropolis(1), Silver(2), 
 
 Player2 begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
+With hand: Copper,Copper,Necropolis,Overgrown Estate,Silver,
   Player2 Played Silver.
     +2 Coin = 2 all together.
   Player2 Played Copper.
@@ -175,43 +186,40 @@ With hand: Copper,Copper,Estate,Estate,Silver,
   Player2 Drew Copper into hand.
   Player2 Drew Silver into hand.
   Player2 reshuffled
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
+  Player2 Drew Necropolis into hand.
   Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Silver(4), 
+  Player2 Drew Copper into hand.
+  Player2 ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
 
 ROUND 5
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Copper,Rats,Rats,
-  Player1 Played Rats.
+With hand: Copper,Harem,Lookout,Necropolis,Silver,
+  Player1 Played Lookout.
     +1 Actions = 1 all together.
-    Player1 Drew Estate into hand.
-    Player1 gained Rats.
-    Player1 trashed Estate.
-  Player1 Played Rats.
-    +1 Actions = 1 all together.
-    Player1 Drew Upgrade into hand.
-    Player1 gained Rats.
-    Player1 trashed Copper.
-  Player1 Played Upgrade.
-    +1 Actions = 1 all together.
-    Player1 Drew Estate into hand.
-    Player1 trashed Estate.
-    Player1 gained Silver.
+    Player1 Revealed Copper.
+    Player1 Revealed Copper.
+    Player1 reshuffled
+    Player1 Revealed Copper.
+      Player1 trashed Copper.
+      Player1 Discarded Copper.
+      Player1 Placed Copper on top of his deck.
+  Player1 Played Harem.
+    +2 Coin = 2 all together.
+  Player1 Played Silver.
+    +2 Coin = 4 all together.
   Player1 Played Copper.
-    +1 Coin = 1 all together.
-  Player1 Played Copper.
-    +1 Coin = 2 all together.
-  Player1 Drew Estate into hand.
+    +1 Coin = 5 all together.
+  Player1 bought Mystic.
   Player1 Drew Copper into hand.
   Player1 Drew Silver into hand.
   Player1 Drew Copper into hand.
   Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(5), Estate(1), Rats(4), Silver(2), Upgrade(1), 
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(6), Harem(1), Hovel(1), Lookout(1), Mystic(1), Necropolis(1), Silver(2), 
 
 Player2 begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
+With hand: Copper,Copper,Necropolis,Silver,Silver,
   Player2 Played Silver.
     +2 Coin = 2 all together.
   Player2 Played Silver.
@@ -220,20 +228,18 @@ With hand: Copper,Copper,Copper,Silver,Silver,
     +1 Coin = 5 all together.
   Player2 Played Copper.
     +1 Coin = 6 all together.
-  Player2 Played Copper.
-    +1 Coin = 7 all together.
   Player2 bought Gold.
+  Player2 Drew Overgrown Estate into hand.
+  Player2 Drew Silver into hand.
   Player2 Drew Copper into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Estate into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
+  Player2 Drew Copper into hand.
+  Player2 ends turn with deck: Copper(7), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
 
 ROUND 6
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
+With hand: Copper,Copper,Copper,Copper,Silver,
   Player1 Played Silver.
     +2 Coin = 2 all together.
   Player1 Played Copper.
@@ -242,53 +248,96 @@ With hand: Copper,Copper,Copper,Estate,Silver,
     +1 Coin = 4 all together.
   Player1 Played Copper.
     +1 Coin = 5 all together.
-  Player1 bought Upgrade.
+  Player1 Played Copper.
+    +1 Coin = 6 all together.
+  Player1 bought Harem.
+  Player1 Drew Hovel into hand.
   Player1 reshuffled
-  Player1 Drew Rats into hand.
+  Player1 Drew Harem into hand.
   Player1 Drew Silver into hand.
+  Player1 Drew Necropolis into hand.
   Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(5), Estate(1), Rats(4), Silver(2), Upgrade(2), 
+  Player1 ends turn with deck: Copper(6), Harem(2), Hovel(1), Lookout(1), Mystic(1), Necropolis(1), Silver(2), 
 
 Player2 begins turn
-With hand: Copper,Copper,Estate,Estate,Estate,
+With hand: Copper,Copper,Copper,Overgrown Estate,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
   Player2 Played Copper.
-    +1 Coin = 1 all together.
+    +1 Coin = 3 all together.
   Player2 Played Copper.
-    +1 Coin = 2 all together.
-  Player2 Drew Copper into hand.
+    +1 Coin = 4 all together.
+  Player2 Played Copper.
+    +1 Coin = 5 all together.
+  Player2 bought Silver.
   Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
   Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Hovel into hand.
   Player2 reshuffled
-  Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
+  Player2 Drew Necropolis into hand.
+  Player2 ends turn with deck: Copper(7), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(5), 
 
 ROUND 7
 -------------
 Player1 begins turn
-With hand: Copper,Copper,Copper,Rats,Silver,
-  Player1 Played Rats.
-    +1 Actions = 1 all together.
-    Player1 Drew Estate into hand.
-    Player1 gained Rats.
-    Player1 trashed Estate.
-  Player1 Played Silver.
+With hand: Copper,Harem,Hovel,Necropolis,Silver,
+  Player1 Played Harem.
     +2 Coin = 2 all together.
-  Player1 Played Copper.
-    +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
+  Player1 Played Silver.
+    +2 Coin = 4 all together.
   Player1 Played Copper.
     +1 Coin = 5 all together.
-  Player1 bought Bazaar.
-  Player1 Drew Upgrade into hand.
+  Player1 bought Mystic.
+  Player1 Drew Copper into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Harem into hand.
+  Player1 Drew Mystic into hand.
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(6), Harem(2), Hovel(1), Lookout(1), Mystic(2), Necropolis(1), Silver(2), 
+
+Player2 begins turn
+With hand: Copper,Copper,Hovel,Necropolis,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Copper.
+    +1 Coin = 3 all together.
+  Player2 Played Copper.
+    +1 Coin = 4 all together.
+  Player2 bought Silver.
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Copper into hand.
+  Player2 ends turn with deck: Copper(7), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
+
+ROUND 8
+-------------
+Player1 begins turn
+With hand: Copper,Copper,Copper,Harem,Mystic,
+  Player1 Played Mystic.
+    +1 Actions = 1 all together.
+    +2 Coin = 2 all together.
+    Player1 named Copper.
+    Player1 Revealed Silver.
+    Player1 Placed Silver on top of his deck.
+  Player1 Played Harem.
+    +2 Coin = 4 all together.
+  Player1 Played Copper.
+    +1 Coin = 5 all together.
+  Player1 Played Copper.
+    +1 Coin = 6 all together.
+  Player1 Played Copper.
+    +1 Coin = 7 all together.
+  Player1 bought Harem.
   Player1 Drew Silver into hand.
   Player1 Drew Copper into hand.
-  Player1 Drew Upgrade into hand.
-  Player1 Drew Rats into hand.
-  Player1 ends turn with deck: Bazaar(1), Copper(5), Rats(5), Silver(2), Upgrade(2), 
+  Player1 Drew Lookout into hand.
+  Player1 Drew Copper into hand.
+  Player1 reshuffled
+  Player1 Drew Necropolis into hand.
+  Player1 ends turn with deck: Copper(6), Harem(3), Hovel(1), Lookout(1), Mystic(2), Necropolis(1), Silver(2), 
 
 Player2 begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
@@ -303,40 +352,25 @@ With hand: Copper,Copper,Copper,Silver,Silver,
   Player2 Played Copper.
     +1 Coin = 7 all together.
   Player2 bought Gold.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
   Player2 Drew Silver into hand.
+  Player2 Drew Overgrown Estate into hand.
   Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), 
+  Player2 Drew Gold into hand.
+  Player2 Drew Copper into hand.
+  Player2 ends turn with deck: Copper(7), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
-ROUND 8
+ROUND 9
 -------------
 Player1 begins turn
-With hand: Copper,Rats,Silver,Upgrade,Upgrade,
-  Player1 Played Upgrade.
+With hand: Copper,Copper,Lookout,Necropolis,Silver,
+  Player1 Played Lookout.
     +1 Actions = 1 all together.
-    Player1 Drew Rats into hand.
-    Player1 trashed Rats.
-      Player1 Drew Rats into hand.
-    Player1 gained Bazaar.
-  Player1 Played Rats.
-    +1 Actions = 1 all together.
-    Player1 Drew Copper into hand.
-    Player1 gained Rats.
-    Player1 trashed Copper.
-  Player1 Played Upgrade.
-    +1 Actions = 1 all together.
-    Player1 reshuffled
-    Player1 Drew Rats into hand.
-    Player1 trashed Rats.
-      Player1 Drew Copper into hand.
-    Player1 gained Bazaar.
-  Player1 Played Rats.
-    +1 Actions = 1 all together.
-    Player1 Drew Copper into hand.
-    Player1 gained Rats.
-    Player1 trashed Copper.
+    Player1 Revealed Hovel.
+    Player1 Revealed Harem.
+    Player1 Revealed Harem.
+      Player1 trashed Hovel.
+      Player1 Discarded Harem.
+      Player1 Placed Harem on top of his deck.
   Player1 Played Silver.
     +2 Coin = 2 all together.
   Player1 Played Copper.
@@ -344,312 +378,240 @@ With hand: Copper,Rats,Silver,Upgrade,Upgrade,
   Player1 Played Copper.
     +1 Coin = 4 all together.
   Player1 bought Silver.
-  Player1 Drew Rats into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Rats into hand.
-  Player1 Drew Bazaar into hand.
-  Player1 Drew Bazaar into hand.
-  Player1 ends turn with deck: Bazaar(3), Copper(3), Rats(5), Silver(3), Upgrade(2), 
+  Player1 Drew Harem into hand.
+  Player1 Drew Mystic into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Mystic into hand.
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(6), Harem(3), Lookout(1), Mystic(2), Necropolis(1), Silver(3), 
 
 Player2 begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
+With hand: Copper,Copper,Gold,Overgrown Estate,Silver,
+  Player2 Played Gold.
+    +3 Coin = 3 all together.
   Player2 Played Silver.
-    +2 Coin = 2 all together.
+    +2 Coin = 5 all together.
   Player2 Played Copper.
-    +1 Coin = 3 all together.
+    +1 Coin = 6 all together.
   Player2 Played Copper.
-    +1 Coin = 4 all together.
-  Player2 Played Copper.
-    +1 Coin = 5 all together.
-  Player2 bought Silver.
-  Player2 Drew Estate into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Gold into hand.
-  Player2 Drew Estate into hand.
+    +1 Coin = 7 all together.
+  Player2 bought Gold.
   Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
+  Player2 reshuffled
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
+  Player2 ends turn with deck: Copper(7), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
-ROUND 9
+ROUND 10
 -------------
 Player1 begins turn
-With hand: Bazaar,Bazaar,Rats,Rats,Silver,
-  Player1 Played Bazaar.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-    Player1 Drew Copper into hand.
-  Player1 Played Bazaar.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-    Player1 reshuffled
-    Player1 Drew Silver into hand.
+With hand: Copper,Copper,Harem,Mystic,Mystic,
+  Player1 Played Mystic.
+    +1 Actions = 1 all together.
+    +2 Coin = 2 all together.
+    Player1 named Copper.
+    Player1 Revealed Silver.
+    Player1 Placed Silver on top of his deck.
+  Player1 Played Mystic.
+    +1 Actions = 1 all together.
+    +2 Coin = 4 all together.
+    Player1 named Silver.
+    Player1 Revealed Silver.
+    Player1 put Silver into his hand.
+  Player1 Played Harem.
+    +2 Coin = 6 all together.
+  Player1 Played Silver.
+    +2 Coin = 8 all together.
+  Player1 Played Copper.
+    +1 Coin = 9 all together.
+  Player1 Played Copper.
+    +1 Coin = 10 all together.
+  Player1 bought Province.
+  Player1 Drew Harem into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Copper into hand.
+  Player1 reshuffled
+  Player1 Drew Copper into hand.
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(6), Harem(3), Lookout(1), Mystic(2), Necropolis(1), Province(1), Silver(3), 
+
+Player2 begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 Played Copper.
+    +1 Coin = 5 all together.
+  Player2 Played Copper.
+    +1 Coin = 6 all together.
+  Player2 Played Copper.
+    +1 Coin = 7 all together.
+  Player2 bought Gold.
+  Player2 Drew Hovel into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 ends turn with deck: Copper(7), Gold(4), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
+
+ROUND 11
+-------------
+Player1 begins turn
+With hand: Copper,Copper,Copper,Copper,Harem,
+  Player1 Played Harem.
+    +2 Coin = 2 all together.
+  Player1 Played Copper.
+    +1 Coin = 3 all together.
+  Player1 Played Copper.
+    +1 Coin = 4 all together.
+  Player1 Played Copper.
+    +1 Coin = 5 all together.
+  Player1 Played Copper.
+    +1 Coin = 6 all together.
+  Player1 bought Harem.
+  Player1 Drew Mystic into hand.
+  Player1 Drew Silver into hand.
+  Player1 Drew Province into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Silver into hand.
+  Player1 ends turn with deck: Copper(6), Harem(4), Lookout(1), Mystic(2), Necropolis(1), Province(1), Silver(3), 
+
+Player2 begins turn
+With hand: Copper,Copper,Hovel,Silver,Silver,
+  Player2 Played Silver.
+    +2 Coin = 2 all together.
+  Player2 Played Silver.
+    +2 Coin = 4 all together.
+  Player2 Played Copper.
+    +1 Coin = 5 all together.
+  Player2 Played Copper.
+    +1 Coin = 6 all together.
+  Player2 bought Gold.
+  Player2 Drew Gold into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Overgrown Estate into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Gold into hand.
+  Player2 ends turn with deck: Copper(7), Gold(5), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
+
+ROUND 12
+-------------
+Player1 begins turn
+With hand: Copper,Mystic,Province,Silver,Silver,
+  Player1 Played Mystic.
+    +1 Actions = 1 all together.
+    +2 Coin = 2 all together.
+    Player1 named Harem.
+    Player1 Revealed Copper.
+    Player1 Placed Copper on top of his deck.
   Player1 Played Silver.
     +2 Coin = 4 all together.
   Player1 Played Silver.
     +2 Coin = 6 all together.
   Player1 Played Copper.
     +1 Coin = 7 all together.
-  Player1 bought Gold.
+  Player1 bought Harem.
   Player1 Drew Copper into hand.
-  Player1 Drew Rats into hand.
-  Player1 Drew Bazaar into hand.
   Player1 Drew Silver into hand.
-  Player1 Drew Upgrade into hand.
-  Player1 ends turn with deck: Bazaar(3), Copper(3), Gold(1), Rats(5), Silver(3), Upgrade(2), 
+  Player1 Drew Harem into hand.
+  Player1 Drew Mystic into hand.
+  Player1 Drew Harem into hand.
+  Player1 ends turn with deck: Copper(6), Harem(5), Lookout(1), Mystic(2), Necropolis(1), Province(1), Silver(3), 
 
 Player2 begins turn
-With hand: Copper,Estate,Estate,Gold,Silver,
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
-  Player2 Played Silver.
-    +2 Coin = 5 all together.
-  Player2 Played Copper.
-    +1 Coin = 6 all together.
-  Player2 bought Gold.
-  Player2 reshuffled
-  Player2 Drew Gold into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Gold into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Gold into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), 
-
-ROUND 10
--------------
-Player1 begins turn
-With hand: Bazaar,Copper,Rats,Silver,Upgrade,
-  Player1 Played Bazaar.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-    Player1 Drew Copper into hand.
-  Player1 Played Upgrade.
-    +1 Actions = 2 all together.
-    Player1 Drew Rats into hand.
-    Player1 trashed Rats.
-      Player1 Drew Upgrade into hand.
-    Player1 gained Bazaar.
-  Player1 Played Rats.
-    +1 Actions = 2 all together.
-    Player1 Drew Rats into hand.
-    Player1 gained Rats.
-    Player1 trashed Copper.
-  Player1 Played Upgrade.
-    +1 Actions = 2 all together.
-    Player1 reshuffled
-    Player1 Drew Copper into hand.
-    Player1 trashed Rats.
-      Player1 Drew Rats into hand.
-    Player1 gained Bazaar.
-  Player1 Played Rats.
-    +1 Actions = 2 all together.
-    Player1 Drew Rats into hand.
-    Player1 gained Rats.
-    Player1 trashed Copper.
-  Player1 Played Silver.
-    +2 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 bought Silver.
-  Player1 Drew Silver into hand.
-  Player1 Drew Gold into hand.
-  Player1 Drew Bazaar into hand.
-  Player1 Drew Bazaar into hand.
-  Player1 Drew Silver into hand.
-  Player1 ends turn with deck: Bazaar(5), Copper(1), Gold(1), Rats(5), Silver(4), Upgrade(2), 
-
-Player2 begins turn
-With hand: Copper,Gold,Gold,Gold,Silver,
+With hand: Copper,Gold,Gold,Overgrown Estate,Silver,
   Player2 Played Gold.
     +3 Coin = 3 all together.
   Player2 Played Gold.
     +3 Coin = 6 all together.
-  Player2 Played Gold.
-    +3 Coin = 9 all together.
   Player2 Played Silver.
-    +2 Coin = 11 all together.
-  Player2 Played Copper.
-    +1 Coin = 12 all together.
-  Player2 bought Province.
-  Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(5), 
-
-ROUND 11
--------------
-Player1 begins turn
-With hand: Bazaar,Bazaar,Gold,Silver,Silver,
-  Player1 Played Bazaar.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-    Player1 Drew Bazaar into hand.
-  Player1 Played Bazaar.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-    Player1 Drew Rats into hand.
-  Player1 Played Bazaar.
-    +2 Actions = 4 all together.
-    +1 Coin = 3 all together.
-    Player1 reshuffled
-    Player1 Drew Copper into hand.
-  Player1 Played Gold.
-    +3 Coin = 6 all together.
-  Player1 Played Silver.
     +2 Coin = 8 all together.
-  Player1 Played Silver.
-    +2 Coin = 10 all together.
-  Player1 Played Copper.
-    +1 Coin = 11 all together.
-  Player1 bought Province.
-  Player1 Drew Rats into hand.
-  Player1 Drew Rats into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Rats into hand.
-  Player1 ends turn with deck: Bazaar(5), Copper(1), Gold(1), Province(1), Rats(5), Silver(4), Upgrade(2), 
-
-Player2 begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
   Player2 Played Copper.
-    +1 Coin = 5 all together.
-  Player2 Played Copper.
-    +1 Coin = 6 all together.
-  Player2 bought Gold.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(5), 
-
-ROUND 12
--------------
-Player1 begins turn
-With hand: Rats,Rats,Rats,Silver,Silver,
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Silver.
-    +2 Coin = 4 all together.
-  Player1 bought Silver.
-  Player1 Drew Bazaar into hand.
-  Player1 Drew Rats into hand.
-  Player1 Drew Bazaar into hand.
-  Player1 Drew Upgrade into hand.
-  Player1 Drew Upgrade into hand.
-  Player1 ends turn with deck: Bazaar(5), Copper(1), Gold(1), Province(1), Rats(5), Silver(5), Upgrade(2), 
-
-Player2 begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 Played Copper.
-    +1 Coin = 5 all together.
-  Player2 Played Copper.
-    +1 Coin = 6 all together.
-  Player2 Played Copper.
-    +1 Coin = 7 all together.
-  Player2 bought Gold.
-  Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Estate into hand.
-  Player2 reshuffled
+    +1 Coin = 9 all together.
+  Player2 bought Province.
   Player2 Drew Gold into hand.
   Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(5), 
+  Player2 Drew Silver into hand.
+  Player2 Drew Necropolis into hand.
+  Player2 reshuffled
+  Player2 Drew Silver into hand.
+  Player2 ends turn with deck: Copper(7), Gold(5), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(1), Silver(6), 
 
 ROUND 13
 -------------
 Player1 begins turn
-With hand: Bazaar,Bazaar,Rats,Upgrade,Upgrade,
-  Player1 Played Bazaar.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
+With hand: Copper,Harem,Harem,Mystic,Silver,
+  Player1 Played Mystic.
+    +1 Actions = 1 all together.
+    +2 Coin = 2 all together.
+    Player1 named Lookout.
+    Player1 Revealed Lookout.
+    Player1 put Lookout into his hand.
+  Player1 Played Lookout.
+    +1 Actions = 1 all together.
+    Player1 Revealed Necropolis.
     Player1 reshuffled
-    Player1 Drew Bazaar into hand.
-  Player1 Played Bazaar.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-    Player1 Drew Silver into hand.
-  Player1 Played Bazaar.
-    +2 Actions = 4 all together.
-    +1 Coin = 3 all together.
-    Player1 Drew Copper into hand.
-  Player1 Played Upgrade.
-    +1 Actions = 4 all together.
-    Player1 Drew Province into hand.
-    Player1 trashed Rats.
-      Player1 Drew Rats into hand.
-    Player1 gained Bazaar.
-  Player1 Played Rats.
-    +1 Actions = 4 all together.
-    Player1 Drew Rats into hand.
-    Player1 gained Rats.
-    Player1 trashed Copper.
-  Player1 Played Upgrade.
-    +1 Actions = 4 all together.
-    Player1 Drew Gold into hand.
-    Player1 trashed Rats.
-      Player1 Drew Silver into hand.
-    Player1 gained Bazaar.
-  Player1 Played Gold.
-    +3 Coin = 6 all together.
+    Player1 Revealed Harem.
+    Player1 Revealed Copper.
+      Player1 trashed Necropolis.
+      Player1 Discarded Copper.
+      Player1 Placed Harem on top of his deck.
+  Player1 Played Harem.
+    +2 Coin = 4 all together.
+  Player1 Played Harem.
+    +2 Coin = 6 all together.
   Player1 Played Silver.
     +2 Coin = 8 all together.
-  Player1 Played Silver.
-    +2 Coin = 10 all together.
+  Player1 Played Copper.
+    +1 Coin = 9 all together.
   Player1 bought Province.
+  Player1 Drew Harem into hand.
+  Player1 Drew Harem into hand.
+  Player1 Drew Province into hand.
+  Player1 Drew Copper into hand.
   Player1 Drew Silver into hand.
-  Player1 Drew Rats into hand.
-  Player1 Drew Bazaar into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Silver into hand.
-  Player1 ends turn with deck: Bazaar(7), Gold(1), Province(2), Rats(4), Silver(5), Upgrade(2), 
+  Player1 ends turn with deck: Copper(6), Harem(5), Lookout(1), Mystic(2), Province(2), Silver(3), 
 
 Player2 begins turn
-With hand: Copper,Copper,Estate,Estate,Gold,
+With hand: Copper,Gold,Necropolis,Silver,Silver,
   Player2 Played Gold.
     +3 Coin = 3 all together.
+  Player2 Played Silver.
+    +2 Coin = 5 all together.
+  Player2 Played Silver.
+    +2 Coin = 7 all together.
   Player2 Played Copper.
-    +1 Coin = 4 all together.
-  Player2 Played Copper.
-    +1 Coin = 5 all together.
-  Player2 bought Silver.
+    +1 Coin = 8 all together.
+  Player2 bought Province.
+  Player2 Drew Copper into hand.
+  Player2 Drew Gold into hand.
+  Player2 Drew Gold into hand.
   Player2 Drew Silver into hand.
-  Player2 Drew Gold into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Gold into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(6), 
+  Player2 ends turn with deck: Copper(7), Gold(5), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(2), Silver(6), 
 
 ROUND 14
 -------------
 Player1 begins turn
-With hand: Bazaar,Rats,Silver,Silver,Silver,
-  Player1 Played Bazaar.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-    Player1 Drew Rats into hand.
+With hand: Copper,Harem,Harem,Province,Silver,
+  Player1 Played Harem.
+    +2 Coin = 2 all together.
+  Player1 Played Harem.
+    +2 Coin = 4 all together.
   Player1 Played Silver.
-    +2 Coin = 3 all together.
-  Player1 Played Silver.
-    +2 Coin = 5 all together.
-  Player1 Played Silver.
-    +2 Coin = 7 all together.
-  Player1 bought Gold.
-  Player1 Drew Bazaar into hand.
-  Player1 reshuffled
+    +2 Coin = 6 all together.
+  Player1 Played Copper.
+    +1 Coin = 7 all together.
+  Player1 bought Harem.
+  Player1 Drew Harem into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Copper into hand.
   Player1 Drew Silver into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Bazaar into hand.
-  Player1 Drew Province into hand.
-  Player1 ends turn with deck: Bazaar(7), Gold(2), Province(2), Rats(4), Silver(5), Upgrade(2), 
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(6), Harem(6), Lookout(1), Mystic(2), Province(2), Silver(3), 
 
 Player2 begins turn
 With hand: Copper,Copper,Gold,Gold,Silver,
@@ -664,155 +626,145 @@ With hand: Copper,Copper,Gold,Gold,Silver,
   Player2 Played Copper.
     +1 Coin = 10 all together.
   Player2 bought Province.
-  Player2 Drew Estate into hand.
+  Player2 Drew Copper into hand.
   Player2 Drew Gold into hand.
-  Player2 Drew Silver into hand.
   Player2 Drew Copper into hand.
   Player2 Drew Province into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Gold(5), Province(2), Silver(6), 
+  Player2 Drew Silver into hand.
+  Player2 ends turn with deck: Copper(7), Gold(5), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(3), Silver(6), 
 
 ROUND 15
 -------------
 Player1 begins turn
-With hand: Bazaar,Bazaar,Province,Silver,Silver,
-  Player1 Played Bazaar.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-    Player1 Drew Silver into hand.
-  Player1 Played Bazaar.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-    Player1 Drew Bazaar into hand.
-  Player1 Played Bazaar.
-    +2 Actions = 4 all together.
-    +1 Coin = 3 all together.
-    Player1 Drew Bazaar into hand.
-  Player1 Played Bazaar.
-    +2 Actions = 5 all together.
-    +1 Coin = 4 all together.
-    Player1 Drew Rats into hand.
+With hand: Copper,Copper,Copper,Harem,Silver,
+  Player1 Played Harem.
+    +2 Coin = 2 all together.
   Player1 Played Silver.
-    +2 Coin = 6 all together.
-  Player1 Played Silver.
-    +2 Coin = 8 all together.
-  Player1 Played Silver.
-    +2 Coin = 10 all together.
-  Player1 bought Province.
-  Player1 Drew Bazaar into hand.
-  Player1 Drew Bazaar into hand.
-  Player1 Drew Bazaar into hand.
-  Player1 Drew Gold into hand.
-  Player1 Drew Upgrade into hand.
-  Player1 ends turn with deck: Bazaar(7), Gold(2), Province(3), Rats(4), Silver(5), Upgrade(2), 
+    +2 Coin = 4 all together.
+  Player1 Played Copper.
+    +1 Coin = 5 all together.
+  Player1 Played Copper.
+    +1 Coin = 6 all together.
+  Player1 Played Copper.
+    +1 Coin = 7 all together.
+  Player1 bought Harem.
+  Player1 Drew Mystic into hand.
+  Player1 reshuffled
+  Player1 Drew Harem into hand.
+  Player1 Drew Silver into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Harem into hand.
+  Player1 ends turn with deck: Copper(6), Harem(7), Lookout(1), Mystic(2), Province(2), Silver(3), 
 
 Player2 begins turn
-With hand: Copper,Estate,Gold,Province,Silver,
+With hand: Copper,Copper,Gold,Province,Silver,
   Player2 Played Gold.
     +3 Coin = 3 all together.
   Player2 Played Silver.
     +2 Coin = 5 all together.
   Player2 Played Copper.
     +1 Coin = 6 all together.
+  Player2 Played Copper.
+    +1 Coin = 7 all together.
   Player2 bought Duchy.
+  Player2 Drew Gold into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Hovel into hand.
   Player2 Drew Silver into hand.
   Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(5), Province(2), Silver(6), 
+  Player2 ends turn with deck: Copper(7), Duchy(1), Gold(5), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(3), Silver(6), 
 
 ROUND 16
 -------------
 Player1 begins turn
-With hand: Bazaar,Bazaar,Bazaar,Gold,Upgrade,
-  Player1 Played Bazaar.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-    Player1 Drew Gold into hand.
-  Player1 Played Bazaar.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-    Player1 Drew Rats into hand.
-  Player1 Played Bazaar.
-    +2 Actions = 4 all together.
-    +1 Coin = 3 all together.
-    Player1 Drew Rats into hand.
-  Player1 Played Upgrade.
-    +1 Actions = 4 all together.
-    Player1 Drew Silver into hand.
-    Player1 trashed Rats.
-      Player1 Drew Silver into hand.
-    Player1 gained Duchy.
-  Player1 Played Gold.
-    +3 Coin = 6 all together.
-  Player1 Played Gold.
-    +3 Coin = 9 all together.
+With hand: Copper,Harem,Harem,Mystic,Silver,
+  Player1 Played Mystic.
+    +1 Actions = 1 all together.
+    +2 Coin = 2 all together.
+    Player1 named Harem.
+    Player1 Revealed Harem.
+    Player1 put Harem into his hand.
+  Player1 Played Harem.
+    +2 Coin = 4 all together.
+  Player1 Played Harem.
+    +2 Coin = 6 all together.
+  Player1 Played Harem.
+    +2 Coin = 8 all together.
   Player1 Played Silver.
-    +2 Coin = 11 all together.
-  Player1 Played Silver.
-    +2 Coin = 13 all together.
+    +2 Coin = 10 all together.
+  Player1 Played Copper.
+    +1 Coin = 11 all together.
   Player1 bought Province.
-  Player1 Drew Province into hand.
-  Player1 Drew Upgrade into hand.
-  Player1 Drew Rats into hand.
-  Player1 reshuffled
+  Player1 Drew Copper into hand.
+  Player1 Drew Harem into hand.
   Player1 Drew Silver into hand.
-  Player1 Drew Gold into hand.
-  Player1 ends turn with deck: Bazaar(7), Duchy(1), Gold(2), Province(4), Rats(3), Silver(5), Upgrade(2), 
+  Player1 Drew Harem into hand.
+  Player1 Drew Silver into hand.
+  Player1 ends turn with deck: Copper(6), Harem(7), Lookout(1), Mystic(2), Province(3), Silver(3), 
 
 Player2 begins turn
-With hand: Copper,Copper,Silver,Silver,Silver,
+With hand: Copper,Copper,Gold,Hovel,Silver,
+  Player2 Played Gold.
+    +3 Coin = 3 all together.
   Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 Played Silver.
-    +2 Coin = 6 all together.
+    +2 Coin = 5 all together.
+  Player2 Played Copper.
+    +1 Coin = 6 all together.
   Player2 Played Copper.
     +1 Coin = 7 all together.
-  Player2 Played Copper.
-    +1 Coin = 8 all together.
-  Player2 bought Province.
-  Player2 Drew Gold into hand.
-  Player2 reshuffled
-  Player2 Drew Copper into hand.
+  Player2 bought Duchy.
   Player2 Drew Silver into hand.
-  Player2 Drew Gold into hand.
+  Player2 Drew Overgrown Estate into hand.
+  Player2 reshuffled
+  Player2 Drew Silver into hand.
   Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(5), Province(3), Silver(6), 
+  Player2 Drew Gold into hand.
+  Player2 ends turn with deck: Copper(7), Duchy(2), Gold(5), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(3), Silver(6), 
 
 ROUND 17
 -------------
 Player1 begins turn
-With hand: Gold,Province,Rats,Silver,Upgrade,
-  Player1 Played Upgrade.
-    +1 Actions = 1 all together.
-    Player1 Drew Rats into hand.
-    Player1 trashed Rats.
-      Player1 Drew Bazaar into hand.
-    Player1 gained Duchy.
-  Player1 Played Bazaar.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-    Player1 Drew Silver into hand.
-  Player1 Played Gold.
-    +3 Coin = 4 all together.
+With hand: Copper,Harem,Harem,Silver,Silver,
+  Player1 Played Harem.
+    +2 Coin = 2 all together.
+  Player1 Played Harem.
+    +2 Coin = 4 all together.
   Player1 Played Silver.
     +2 Coin = 6 all together.
   Player1 Played Silver.
     +2 Coin = 8 all together.
+  Player1 Played Copper.
+    +1 Coin = 9 all together.
   Player1 bought Province.
-  Player1 Drew Bazaar into hand.
-  Player1 Drew Upgrade into hand.
-  Player1 Drew Silver into hand.
   Player1 Drew Province into hand.
-  Player1 Drew Bazaar into hand.
-  Player1 ends turn with deck: Bazaar(7), Duchy(2), Gold(2), Province(5), Rats(2), Silver(5), Upgrade(2), 
+  Player1 Drew Harem into hand.
+  Player1 Drew Lookout into hand.
+  Player1 Drew Copper into hand.
+  Player1 Drew Copper into hand.
+  Player1 ends turn with deck: Copper(6), Harem(7), Lookout(1), Mystic(2), Province(4), Silver(3), 
+
+Player2 begins turn
+With hand: Copper,Gold,Overgrown Estate,Silver,Silver,
+  Player2 Played Gold.
+    +3 Coin = 3 all together.
+  Player2 Played Silver.
+    +2 Coin = 5 all together.
+  Player2 Played Silver.
+    +2 Coin = 7 all together.
+  Player2 Played Copper.
+    +1 Coin = 8 all together.
+  Player2 bought Province.
+  Player2 Drew Province into hand.
+  Player2 Drew Copper into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Silver into hand.
+  Player2 Drew Gold into hand.
+  Player2 ends turn with deck: Copper(7), Duchy(2), Gold(5), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(4), Silver(6), 
 
 Game ended in 17 turns.
 Player1 Won!
-Player1 total score: 36
-  Bazaar(7), Duchy(2), Gold(2), Province(5), Rats(2), Silver(5), Upgrade(2), 
-Player2 total score: 24
-  Copper(7), Duchy(1), Estate(3), Gold(5), Province(3), Silver(6), 
-Trash contains: Copper(7), Estate(3), Rats(8), 
+Player1 total score: 38
+  Copper(6), Harem(7), Lookout(1), Mystic(2), Province(4), Silver(3), 
+Player2 total score: 30
+  Copper(7), Duchy(2), Gold(5), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(4), Silver(6), 
+Trash contains: Copper(1), Hovel(1), Necropolis(1), Overgrown Estate(1), 

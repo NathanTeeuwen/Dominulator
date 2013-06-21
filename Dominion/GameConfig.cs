@@ -8,17 +8,20 @@ namespace Dominion
 {
     public class GameConfig
     {
+        internal readonly bool useShelters;
         internal readonly bool useColonyAndPlatinum;
         internal readonly Card[] supplyPiles;
 
-        public GameConfig(bool useColonyAndPlatinum, params Card[] supplyPiles)
+        public GameConfig(bool useShelters, bool useColonyAndPlatinum, params Card[] supplyPiles)
         {
+            this.useShelters = useShelters;
             this.useColonyAndPlatinum = useColonyAndPlatinum;
             this.supplyPiles = supplyPiles;
         }
 
         public GameConfig(params Card[] supplyPiles)
         {
+            this.useShelters = false;
             this.useColonyAndPlatinum = false;
             this.supplyPiles = supplyPiles;
         }

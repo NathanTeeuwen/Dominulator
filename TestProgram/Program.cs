@@ -12,8 +12,8 @@ namespace Program
     {
 
         static void Main()
-        {
-            ComparePlayers(Strategies.RatsUpgradeBazaar.Player(1), Strategies.BigMoney.Player(2), false);
+        {            
+            ComparePlayers(Strategies.LookoutHaremMiningVillageMysticScout.Player(1), Strategies.BigMoney.Player(2), useShelters:true);
         }
 
         /*
@@ -41,12 +41,14 @@ namespace Program
         }
 
 
-        static void ComparePlayers(PlayerAction player1, PlayerAction player2, bool firstPlayerAdvantage = false)
+        static void ComparePlayers(PlayerAction player1, PlayerAction player2, bool useShelters = false, bool firstPlayerAdvantage = false)
         {
             int numberOfGames = 10000;
 
             int[] winnerCount = new int[2];
             int tieCount = 0;
+
+            var countbyBucket = new CountByBucket();
 
             //for (int gameCount = 0; gameCount < numberOfGames; ++gameCount)
 
@@ -56,21 +58,17 @@ namespace Program
                     using (IGameLog gameLog = gameCount < 100 ? GetGameLogForIteration(gameCount) : new EmptyGameLog())
                     //using (IGameLog gameLog = new HumanReadableGameLog("..\\..\\Results\\GameLog." + gameCount ) )
                     {
-                        PlayerAction startPlayer = player1;
-                        PlayerAction otherPlayer = player2;
-                        if (!firstPlayerAdvantage)
-                        {
-                            // swap order every other game
-                            if (gameCount % 2 == 1)
-                            {
-                                startPlayer = player2;
-                                otherPlayer = player1;                                
-                            }
-                        }
-
+                        // swap order every other game
+                        bool swappedOrder = !firstPlayerAdvantage && (gameCount % 2 == 1);
+                        PlayerAction startPlayer = !swappedOrder ? player1 : player2;
+                        PlayerAction otherPlayer = !swappedOrder ? player2 : player1;
+                        
                         Random random = new Random(gameCount);                        
 
-                        var gameConfig = new GameConfig(GetCardSet(startPlayer, otherPlayer));
+                        var gameConfig = new GameConfig(
+                            useShelters, 
+                            useColonyAndPlatinum: false,
+                            supplyPiles: GetCardSet(startPlayer, otherPlayer));
 
                         GameState gameState = new GameState(
                             gameLog,
@@ -81,9 +79,16 @@ namespace Program
                         gameState.PlayGameToEnd();
 
                         PlayerState[] winners = gameState.WinningPlayers;
+                        
+                        int startPlayerScore = gameState.players[0].TotalScore();
+                        int otherPlayerScore = gameState.players[1].TotalScore();
+                        int scoreDifference = startPlayerScore - otherPlayerScore;
+                        if (swappedOrder)
+                            scoreDifference = -scoreDifference;
 
                         lock (winnerCount)
                         {
+                            countbyBucket.AddOneToBucket(scoreDifference);
                             if (winners.Length == 1)
                             {
                                 int winningPlayerIndex = ((PlayerAction)winners[0].Actions).playerIndex - 1;
@@ -96,7 +101,7 @@ namespace Program
                         }
                     }
                 }
-            );           
+            );
 
             for (int index = 0; index < winnerCount.Length; ++index)
             {
@@ -106,8 +111,36 @@ namespace Program
             {
                 System.Console.WriteLine("Ties: {0} percent of the time.", tieCount / (double)numberOfGames * 100);
             }
+            
+            System.Console.WriteLine("");
+            System.Console.WriteLine("Player 1 Score Delta distribution");
+            System.Console.WriteLine("=================================");
+            countbyBucket.WriteBuckets(System.Console.Out);
         }
 
+        class CountByBucket
+        {
+            int totalCount = 0;
+            Dictionary<int, int> mapBucketToCount = new Dictionary<int, int>();
+
+            public void AddOneToBucket(int bucket)
+            {
+                this.totalCount++;
+
+                int value = 0;
+                this.mapBucketToCount.TryGetValue(bucket, out value);
+                value += 1;
+                this.mapBucketToCount[bucket] = value;
+            }
+
+            public void WriteBuckets(System.IO.TextWriter writer)
+            {
+                foreach(var pair in this.mapBucketToCount.OrderByDescending(keyValuePair => keyValuePair.Key))
+                {
+                    writer.WriteLine("{0} points:   {2}% = {1}", pair.Key, pair.Value, (double)pair.Value / this.totalCount * 100);
+                }
+            }
+        }
 
         static CardPickByPriority SimplePurchaseOrder3()
         {
@@ -353,7 +386,7 @@ namespace Program
         internal readonly IGetMatchingCard trashOrder;
         internal readonly IGetMatchingCard treasurePlayOrder;
         internal readonly IGetMatchingCard discardOrder;
-        internal readonly IGetMatchingCard gainOrder;        
+        internal readonly IGetMatchingCard gainOrder;
 
         public PlayerAction(int playerIndex,
             IGetMatchingCard purchaseOrder,

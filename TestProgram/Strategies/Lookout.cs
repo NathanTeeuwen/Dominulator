@@ -38,29 +38,13 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Lookout>(ShouldPlayLookout));
-            }
+                           CardAcceptance.For<CardTypes.Lookout>(Default.ShouldPlayLookout(ShouldBuyProvinces)));
+            }            
 
             private static bool ShouldBuyProvinces(GameState gameState)
             {
                 return CountAllOwned<CardTypes.Gold>(gameState) > 2;
-            }
-
-            private static bool ShouldPlayLookout(GameState gameState)
-            {
-                int cardCountToTrash = CountInDeck<CardTypes.Copper>(gameState);
-
-                if (!ShouldBuyProvinces(gameState))
-                {
-                    cardCountToTrash += CountInDeck<CardTypes.Estate>(gameState);                    
-                }
-
-                cardCountToTrash += CountInDeck<CardTypes.Lookout>(gameState);                    
-
-                int totalCardsOwned = gameState.players.CurrentPlayer.CardsInDeck.Count();
-
-                return ((double)cardCountToTrash) / totalCardsOwned > 0.4;
-            }
+            }            
 
             private static CardPickByPriority TrashAndDiscardOrder()
             {

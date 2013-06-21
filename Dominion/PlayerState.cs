@@ -831,7 +831,20 @@ namespace Dominion
         {
             this.MoveAllCardsToDiscard(this.cardsPlayed);
             this.MoveAllCardsToDiscard(this.hand);
-        }        
+        }
+
+        internal Type GuessCardTopOfDeck(GameState gameState)
+        {
+            Type cardType = this.actions.GuessCardTopOfDeck(gameState);
+            if (cardType == null)
+            {
+                throw new Exception("Must name a card");
+            }
+
+            gameState.gameLog.PlayerNamedCard(this, gameState.GetPile(cardType).ProtoTypeCard);
+
+            return cardType;
+        }
 
         internal Card GainCardFromSupply(GameState gameState, Type cardType, DeckPlacement defaultLocation = DeckPlacement.Discard)
         {
@@ -1020,6 +1033,7 @@ namespace Dominion
                 }
 
                 Card card = this.cardsBeingRevealed.RemoveCard();
+                this.gameLog.PlayerTopDeckedCard(this, card);
                 this.deck.AddCardToTop(card);
             }
         }
@@ -1062,11 +1076,10 @@ namespace Dominion
         }
 
         internal void MoveRevealedCardToHand(Card card)
-        {            
-            this.gameLog.PlayerPutCardInHand(this, card);
+        {                        
             MoveRevealedCardToHand(card.GetType());
         }
-
+        
         internal void MoveRevealedCardToHand(Type typeOfCard)
         {            
             Card card = this.cardsBeingRevealed.RemoveCard(typeOfCard);
@@ -1074,6 +1087,7 @@ namespace Dominion
             {
                 throw new Exception("Revealed cards did not have the specified card");
             }
+            this.gameLog.PlayerPutCardInHand(this, card);
             this.hand.AddCard(card);
         }
 
@@ -1129,6 +1143,14 @@ namespace Dominion
                 {
                     yield return card;
                 }
+            }
+        }
+
+        public IEnumerable<Card> KnownCardsInDeck
+        {
+            get
+            {
+                return this.deck.KnownCards;
             }
         }
 

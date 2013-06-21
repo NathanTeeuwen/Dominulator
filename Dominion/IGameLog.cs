@@ -14,6 +14,7 @@ namespace Dominion
         void BeginRound();
         void BeginTurn(PlayerState playerState);
         void EndTurn(PlayerState playerState);
+        void PlayerNamedCard(PlayerState playerState, Card card);
         void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source);
         void PlayerBoughtCard(PlayerState playerState, Card card);
         void GainedCard(PlayerState playerState, Card card);
@@ -29,7 +30,8 @@ namespace Dominion
         void ReshuffledDiscardIntoDeck(PlayerState playerState);
         void EndGame(GameState gameState);
         void PlayerGainedCoin(PlayerState playerState, int coinAmount);
-        void PlayerGainedActions(PlayerState playerState, int actionAmount);        
+        void PlayerGainedActions(PlayerState playerState, int actionAmount);
+        void LogDeck(PlayerState playerState);
     }
 
 
@@ -71,6 +73,11 @@ namespace Dominion
         }
 
         public void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source)
+        {
+
+        }
+
+        public void PlayerNamedCard(PlayerState playerState, Card card)
         {
 
         }
@@ -128,6 +135,10 @@ namespace Dominion
         public void PlayerGainedActions(PlayerState playerState, int coinAmount)
         {
 
+        }
+
+        public void LogDeck(PlayerState playerState)
+        {
         }
     }
 
@@ -270,6 +281,11 @@ namespace Dominion
             this.textWriter.WriteLine("{0} gained {1}.", playerState.actions.PlayerName, card.name);
         }
 
+        public void PlayerNamedCard(PlayerState playerState, Card card)
+        {
+            this.textWriter.WriteLine("{0} named {1}.", playerState.actions.PlayerName, card.name);
+        }
+
         public void PlayerTrashedCard(PlayerState playerState, Card card)
         {
             this.textWriter.WriteLine("{0} trashed {1}.", playerState.actions.PlayerName, card.name);
@@ -375,6 +391,16 @@ namespace Dominion
                 }while (index < allCards.Length && cardComparer.Equals(currentCard, allCards[index]));
 
                 this.textWriter.Write("{0}({1}), ", currentCard.name, cardCount);
+            }
+            this.textWriter.WriteLine();
+        }
+
+        public void LogDeck(PlayerState playerState)
+        {
+            this.textWriter.Write("{0} Deck (Player knows {1} cards):", playerState.actions.PlayerName, playerState.deck.KnownCards.Count());            
+            foreach (Card card in playerState.deck)
+            {
+                this.textWriter.Write("{0}, ", card.name);
             }
             this.textWriter.WriteLine();
         }

@@ -120,6 +120,7 @@ namespace Program
                 return new CardPickByPriority(
                     CardAcceptance.For<CardTypes.Platinum>(),
                     CardAcceptance.For<CardTypes.Gold>(),
+                    CardAcceptance.For<CardTypes.Harem>(),                    
                     CardAcceptance.For<CardTypes.Silver>(),
                     CardAcceptance.For<CardTypes.Copper>());
             }
@@ -134,6 +135,34 @@ namespace Program
                     CardAcceptance.For<CardTypes.Copper>(),
                     CardAcceptance.For<CardTypes.Silver>(),
                     CardAcceptance.For<CardTypes.Gold>());
+            }
+
+            public static GameStatePredicate ShouldPlayLookout(GameStatePredicate shouldBuyProvinces)
+            {
+                return delegate(GameState gameState)
+                {
+                    return ShouldPlayLookout(gameState, shouldBuyProvinces);
+                };
+            }
+
+            public static bool ShouldPlayLookout(GameState gameState, GameStatePredicate shouldBuyProvinces)
+            {
+                int cardCountToTrash = CountInDeck<CardTypes.Copper>(gameState);
+
+                if (!shouldBuyProvinces(gameState))
+                {
+                    cardCountToTrash += CountInDeck<CardTypes.Estate>(gameState);
+                }
+
+                cardCountToTrash += CountInDeck<CardTypes.Hovel>(gameState);
+                cardCountToTrash += CountInDeck<CardTypes.Necropolis>(gameState);
+                cardCountToTrash += CountInDeck<CardTypes.OvergrownEstate>(gameState);
+
+                cardCountToTrash += CountInDeck<CardTypes.Lookout>(gameState);
+
+                int totalCardsOwned = gameState.players.CurrentPlayer.CardsInDeck.Count();
+
+                return ((double)cardCountToTrash) / totalCardsOwned > 0.4;
             }
         }
 

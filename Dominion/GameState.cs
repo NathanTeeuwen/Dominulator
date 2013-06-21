@@ -185,6 +185,7 @@ namespace Dominion
         public IGameLog gameLog;
         public PlayerCircle players;
         public PileOfCards[] supplyPiles;
+        public PileOfCards[] nonSupplyPiles;
         public BagOfCards trash;
         private MapPileOfCardsToProperty<bool> hasPileEverBeenGained;
         private MapPileOfCardsToProperty<int> pileEmbargoTokenCount;
@@ -202,24 +203,31 @@ namespace Dominion
             this.gameLog = gameLog;
             this.players = new PlayerCircle(playerCount, players, this.gameLog, random);
  
-            var cardPiles = new List<PileOfCards>(capacity:20);
+            var supplyCardPiles = new List<PileOfCards>(capacity:20);
+            var nonSupplyCardPiles = new List<PileOfCards>();
 
             int curseCount = (playerCount - 1) * 10;
             int ruinsCount = curseCount;
             int victoryCount = (playerCount == 2) ? 8 : 12;
 
-            Add<CardTypes.Copper>(cardPiles, 60);
-            Add<CardTypes.Silver>(cardPiles, 40);
-            Add<CardTypes.Gold>(cardPiles, 30);
-            Add<CardTypes.Curse>(cardPiles, curseCount);
-            Add<CardTypes.Estate>(cardPiles, victoryCount + playerCount * 3);
-            Add<CardTypes.Duchy>(cardPiles, victoryCount);
-            Add<CardTypes.Province>(cardPiles, victoryCount);
+            Add<CardTypes.Copper>(supplyCardPiles, 60);
+            Add<CardTypes.Silver>(supplyCardPiles, 40);
+            Add<CardTypes.Gold>(supplyCardPiles, 30);
+            Add<CardTypes.Curse>(supplyCardPiles, curseCount);
+            Add<CardTypes.Estate>(supplyCardPiles, victoryCount);
+            Add<CardTypes.Duchy>(supplyCardPiles, victoryCount);
+            Add<CardTypes.Province>(supplyCardPiles, victoryCount);
+            if (gameConfig.useShelters)
+            {
+                Add<CardTypes.Necropolis>(nonSupplyCardPiles, 0);
+                Add<CardTypes.OvergrownEstate>(nonSupplyCardPiles, 0);
+                Add<CardTypes.Hovel>(nonSupplyCardPiles, 0);
+            }
 
             if (gameConfig.useColonyAndPlatinum)
             {
-                Add<CardTypes.Colony>(cardPiles, victoryCount);
-                Add<CardTypes.Platinum>(cardPiles, 20);
+                Add<CardTypes.Colony>(supplyCardPiles, victoryCount);
+                Add<CardTypes.Platinum>(supplyCardPiles, 20);
             }
 
             bool requiresRuins = false;
@@ -228,11 +236,11 @@ namespace Dominion
             {
                 if (card.isVictory)
                 {
-                    Add(cardPiles, victoryCount, card);
+                    Add(supplyCardPiles, victoryCount, card);
                 }
                 else
                 {
-                    Add(cardPiles, card.defaultSupplyCount, card);
+                    Add(supplyCardPiles, card.defaultSupplyCount, card);
                 }
 
                 requiresRuins |= card.requiresRuins;
@@ -240,18 +248,30 @@ namespace Dominion
 
             if (requiresRuins)
             {
-                cardPiles.Add(CreateRuins(ruinsCount, random));
+                supplyCardPiles.Add(CreateRuins(ruinsCount, random));
             }
 
-            this.supplyPiles = cardPiles.ToArray();
+            this.supplyPiles = supplyCardPiles.ToArray();
+            this.nonSupplyPiles = nonSupplyCardPiles.ToArray();
             this.hasPileEverBeenGained = new MapPileOfCardsToProperty<bool>(this.supplyPiles);
             this.pileEmbargoTokenCount = new MapPileOfCardsToProperty<int>(this.supplyPiles); ;
             this.trash = new BagOfCards();
                        
             foreach (PlayerState player in this.players.AllPlayers)
             {
-                player.GainCardsFromSupply(this, typeof(CardTypes.Estate), 3);
-                player.GainCardsFromSupply(this, typeof(CardTypes.Copper), 7);                
+                if (gameConfig.useShelters)
+                {
+                    player.GainCard(this, new CardTypes.Hovel());
+                    player.GainCard(this, new CardTypes.Necropolis());
+                    player.GainCard(this, new CardTypes.OvergrownEstate());
+                }
+                else
+                {
+                    for (int i = 0; i < 3; ++i)
+                        player.GainCard(this, new CardTypes.Estate());
+                }
+                
+                player.GainCardsFromSupply(this, typeof(CardTypes.Copper), 7);
             }
 
             this.players.AllPlayersDrawInitialCards();         
@@ -280,6 +300,7 @@ namespace Dominion
                 }
                 result.AddCardToTop(card);
             }
+            result.EraseKnownCountKnowledge();
                         
             return result;
         }
@@ -524,9 +545,20 @@ namespace Dominion
 
         public PileOfCards GetPile(Type cardType)
         {
-            for (int i = 0; i < this.supplyPiles.Length; ++i)
+            var result = GetPile(this.supplyPiles, cardType);
+            if (result != null)
+                return result;
+
+            result = GetPile(this.nonSupplyPiles, cardType);            
+
+            return result;
+        }
+
+        private static PileOfCards GetPile(PileOfCards[] piles, Type cardType)
+        {
+            for (int i = 0; i < piles.Length; ++i)
             {
-                PileOfCards cardPile = this.supplyPiles[i];
+                PileOfCards cardPile = piles[i];
                 if (cardPile.IsType(cardType))
                 {
                     return cardPile;
@@ -534,20 +566,11 @@ namespace Dominion
             }
 
             return null;
-        }
+        }       
 
         public PileOfCards GetPile<cardType>()
         {
-            for (int i = 0; i < this.supplyPiles.Length; ++i)
-            {
-                PileOfCards cardPile = this.supplyPiles[i];
-                if (cardPile.IsType<cardType>())
-                {
-                    return cardPile;
-                }
-            }
-
-            return null;
+            return GetPile(typeof(cardType));            
         }
 
         public Card PlayerGainCardFromSupply(Type cardType, PlayerState playerState, DeckPlacement defaultLocation = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)

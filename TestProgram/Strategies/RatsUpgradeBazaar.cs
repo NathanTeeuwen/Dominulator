@@ -33,7 +33,6 @@ namespace Program
                          CardAcceptance.For<CardTypes.Bazaar>(),                                   
                          CardAcceptance.For<CardTypes.Rats>(gameState => CountAllOwned<CardTypes.Rats>(gameState) == 0 && CountAllOwned<CardTypes.Upgrade>(gameState) == 0),
                          CardAcceptance.For<CardTypes.Silver>(),
-//                         CardAcceptance.For<CardTypes.Silver>(gameState => CountAllOwned<CardTypes.Silver>(gameState) < 2),
                          CardAcceptance.For<CardTypes.Rats>(),
                          CardAcceptance.For<CardTypes.Silver>());
             }
@@ -81,7 +80,6 @@ namespace Program
                     return true;
 
                 if (CountInHand<CardTypes.Copper>(gameState) != 0 &&
-                    //CountAllOwned<CardTypes.Upgrade>(gameState) != 0 &&
                     CountAllOwned<CardTypes.Rats>(gameState) <= 4 )
                     return true;
 

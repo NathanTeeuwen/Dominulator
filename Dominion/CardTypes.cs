@@ -19,6 +19,35 @@ namespace Dominion.CardTypes
     public class Gold : Card { public Gold() : base("Gold", coinCost: 6, plusCoins: 3, isTreasure: true) { } }
     public class Platinum : Card { public Platinum() : base("Platinum", coinCost: 9, plusCoins: 5, isTreasure: true) { } }
 
+    // shelters 
+    public class Necropolis : Card { public Necropolis() : base("Necropolis", coinCost: 1, plusActions: 2, isAction: true, isShelter: true) { } }
+
+    public class Hovel 
+        : Card 
+    { 
+        public Hovel() 
+            : base("Hovel", coinCost: 1, isShelter: true) 
+        { 
+        }        
+
+        //TODO:  Hovel reactions    
+    }
+    
+    public class OvergrownEstate 
+        : Card 
+    { 
+        public OvergrownEstate() 
+            : base("Overgrown Estate", coinCost: 1, victoryPoints: PlayerState => 0, isShelter: true) 
+        { 
+
+        }
+
+        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.DrawAdditionalCardsIntoHand(1);
+        }
+    }
+
     // Base Cards
 
     public class Festival : Card { public Festival() : base("Festival", coinCost: 5, plusActions: 2, plusBuy: 1, plusCoins: 2, isAction: true) { } }
@@ -644,7 +673,9 @@ namespace Dominion.CardTypes
             {
                 if (currentPlayer.MoveCardFromPlayToTrash(gameState))
                 {
+                    gameState.gameLog.PushScope();
                     currentPlayer.AddCoins(2);
+                    gameState.gameLog.PopScope();
                 }
             }
         }
@@ -813,7 +844,7 @@ namespace Dominion.CardTypes
         Card
     {
         public Scout()
-            : base("Scout", coinCost: 4, isAction: true)
+            : base("Scout", coinCost: 4, isAction: true, plusActions:1)
         {
         }
 
@@ -1064,7 +1095,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Type cardType = currentPlayer.actions.GuessCardTopOfDeck(gameState);
+            Type cardType = currentPlayer.GuessCardTopOfDeck(gameState);
 
             Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
             if (revealedCard.Is(cardType))
@@ -2012,7 +2043,32 @@ namespace Dominion.CardTypes
         {
             return silvercount / 3;
         }
-    }  
+    }
+
+    public class Mystic :
+        Card
+    {
+        public Mystic()
+            : base("Mystic", coinCost: 5, isAction:true, plusCoins:2, plusActions:1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            //currentPlayer.gameLog.LogDeck(gameState.players.CurrentPlayer);
+            Type cardType = currentPlayer.GuessCardTopOfDeck(gameState);            
+            currentPlayer.RevealCardsFromDeck(1);
+            if (currentPlayer.cardsBeingRevealed.HasCard(cardType))
+            {
+                currentPlayer.MoveRevealedCardToHand(cardType);
+            }
+            else
+            {
+                currentPlayer.MoveRevealedCardToTopOfDeck();
+            }
+        }
+    }
+
   
     public class PoorHouse : 
         Card
@@ -2055,6 +2111,26 @@ namespace Dominion.CardTypes
         public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.DrawAdditionalCardsIntoHand(1);
+        }
+    }
+
+    public class FollowersTest :
+        Card
+    {
+        public FollowersTest(int cost)
+            : base("Followers", coinCost: cost, isAction: true, plusCards: 1, plusActions: 1, defaultSupplyCount: 20)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.GainCardFromSupply<CardTypes.Estate>(gameState);            
+        }
+
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
+            otherPlayer.GainCardFromSupply<CardTypes.Curse>(gameState);
+            otherPlayer.DiscardHandDownToCount(3);
         }
     }
 

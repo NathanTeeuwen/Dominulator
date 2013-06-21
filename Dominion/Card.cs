@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace Dominion
 {
     public class Card
+        : IEquatable<Card>
     {
         public readonly string name;
         private readonly int coinCost;
@@ -27,6 +28,7 @@ namespace Dominion
         public readonly bool isTreasure;
         public readonly bool isDuration;
         public readonly bool requiresRuins;
+        public readonly bool isShelter;
 
         internal Card(
             string name,
@@ -46,7 +48,8 @@ namespace Dominion
             bool isRuin = false,
             bool isTreasure = false,
             bool isDuration = false,
-            bool requiresRuins = false)
+            bool requiresRuins = false,
+            bool isShelter = false)
         {
             this.name = name;
             this.coinCost = coinCost;
@@ -66,6 +69,7 @@ namespace Dominion
             this.defaultSupplyCount = defaultSupplyCount;
             this.requiresRuins = requiresRuins;
             this.isDuration = isDuration;
+            this.isShelter = isShelter;
         }
 
         public bool Is(Type card)

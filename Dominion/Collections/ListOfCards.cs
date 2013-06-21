@@ -9,6 +9,8 @@ namespace Dominion
     public class ListOfCards
         : CollectionCards
     {
+        private int countKnownCard = 0;
+
         private static int NumberBetweenInclusive(Random random, int lowerBoundInclusive, int upperBoundInclusive)
         {
             lock (random)
@@ -27,11 +29,16 @@ namespace Dominion
                 int swapIndex = NumberBetweenInclusive(random, currentIndex, lastIndex);
                 Swap(currentIndex, swapIndex);
             }
+
+            this.countKnownCard = 0;
         }
 
         public Card DrawCardFromTop()
         {
-            return this.RemoveFromEnd();
+            if (this.countKnownCard > 0)
+                this.countKnownCard--;
+
+            return this.RemoveFromEnd();            
         }
 
         public Card TopCard()
@@ -45,6 +52,7 @@ namespace Dominion
 
         public void AddCardToTop(Card card)
         {
+            this.countKnownCard++;
             this.cards.Add(card);
         }
 
@@ -62,6 +70,22 @@ namespace Dominion
             {
                 this.DrawCardFromTop();
             }
+        }        
+
+        public IEnumerable<Card> KnownCards
+        {
+            get
+            {
+                for (int index = 0; index < this.countKnownCard; ++index)
+                {
+                    yield return this.cards[this.cards.Count - 1 - index];
+                }
+            }
+        }
+
+        internal void EraseKnownCountKnowledge()
+        {
+            this.countKnownCard = 0;
         }        
     }
 }
