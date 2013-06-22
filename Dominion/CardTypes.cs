@@ -213,7 +213,7 @@ namespace Dominion.CardTypes
         {
             foreach (PlayerState player in gameState.players.OtherPlayers)
             {
-                player.turnCounters.availableBuys += 1;
+                player.DrawAdditionalCardsIntoHand(1);
             }
         }
     }
@@ -794,7 +794,7 @@ namespace Dominion.CardTypes
             {
                 case PlayerActionChoice.PlusCard: currentPlayer.DrawOneCardIntoHand(); break;
                 case PlayerActionChoice.PlusAction: currentPlayer.AddActions(1); break;
-                case PlayerActionChoice.PlusBuy: currentPlayer.turnCounters.availableBuys += 1; break;
+                case PlayerActionChoice.PlusBuy: currentPlayer.AddBuys(1); break;
                 case PlayerActionChoice.PlusCoin: currentPlayer.AddCoins(1); break;
                 default: throw new Exception("Invalid pawn action choice");
             }
@@ -1295,7 +1295,7 @@ namespace Dominion.CardTypes
                 if (countEmpty >= 2)
                 {
                     currentPlayer.AddCoins(1);
-                    currentPlayer.turnCounters.availableBuys += 1;
+                    currentPlayer.AddBuys(1);                    
                 }
             }
         }
@@ -1786,6 +1786,42 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Wharf :
+        Card
+    {
+        public Wharf()
+            : base("Wharf", coinCost: 5, isAction: true, isDuration: true, plusCards: 2, plusBuy:1)
+        {
+        }
+
+        public override void DoSpecializedDurationActionAtBeginningOfTurn(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.DrawAdditionalCardsIntoHand(2);
+            currentPlayer.AddBuys(1);
+        }
+    }
+
+    public class YoungWitch
+       : Card
+    {
+        public YoungWitch()
+            : base("Young Witch", coinCost: 4, plusCards: 2, isAction: true, isAttack: true)
+        {
+
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false);
+        }
+
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
+            // TODO: BANE CARD
+            otherPlayer.GainCardFromSupply<Curse>(gameState);
+        }
+    }
+
 
     // Hinterlands
 
@@ -2113,6 +2149,74 @@ namespace Dominion.CardTypes
             currentPlayer.DrawAdditionalCardsIntoHand(1);
         }
     }
+    
+    public class Rebuild :
+        Card
+    {
+        public Rebuild()
+            : base("Rebuild", coinCost: 5, plusActions:1, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            Type cardType = currentPlayer.RequestPlayerNameACard(gameState);
+
+            Card foundCard = null;
+            gameState.gameLog.PushScope();
+            while (true)
+            {
+                foundCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+                if (foundCard == null)
+                    break;               
+
+                if (foundCard.isVictory && !foundCard.Is(cardType))
+                {                    
+                    break;
+                }
+            }            
+            currentPlayer.MoveRevealedCardToDiscard(cardToMove => !cardToMove.Equals(foundCard));
+            gameState.gameLog.PopScope();
+
+            if (foundCard != null)
+            {
+                int cardCost = foundCard.CurrentCoinCost(currentPlayer);
+                currentPlayer.MoveRevealedCardToTrash(foundCard, gameState);
+                currentPlayer.RequestPlayerGainCardFromSupply(gameState,
+                    acceptableCard => acceptableCard.isVictory && acceptableCard.CurrentCoinCost(currentPlayer) <= cardCost + 3,
+                    "Gain a victory card costing up to 3 more than the trashed card.");
+            }
+        }        
+    }
+
+    // Guilds
+    public class Soothsayer :
+        Card
+    {
+        public Soothsayer()
+            : base("Soothsayer", coinCost: 5, isAction: true, isAttack:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.GainCardFromSupply<Gold>(gameState);
+        }
+
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
+            if (otherPlayer.GainCardFromSupply<Curse>(gameState))
+            {
+                otherPlayer.DrawAdditionalCardsIntoHand(1);
+            }
+        }
+    }
+}
+
+namespace Dominion.CardTypes.TestCards
+{
+
+    // Test Cards
 
     public class FollowersTest :
         Card

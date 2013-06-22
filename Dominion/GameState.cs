@@ -461,7 +461,7 @@ namespace Dominion
         private void DoBuyPhase(PlayerState currentPlayer)
         {
             currentPlayer.playPhase = PlayPhase.Buy;
-            while (currentPlayer.turnCounters.availableBuys > 0)
+            while (currentPlayer.turnCounters.AvailableBuys > 0)
             {
                 Type cardType = currentPlayer.actions.GetCardFromSupplyToBuy(this, CardAvailableForPurchaseForCurrentPlayer);
                 if (cardType == null)
@@ -482,7 +482,7 @@ namespace Dominion
                 }
 
                 currentPlayer.turnCounters.RemoveCoins(boughtCard.CurrentCoinCost(currentPlayer));
-                currentPlayer.turnCounters.availableBuys -= 1;
+                currentPlayer.turnCounters.RemoveBuy();
 
                 foreach (Card cardInPlay in currentPlayer.CardsInPlay)
                 {

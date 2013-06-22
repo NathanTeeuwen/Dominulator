@@ -10,7 +10,7 @@ namespace Dominion
     class PlayerTurnCounters
     {
         private int availableActionCount;
-        internal int availableBuys;
+        private int availableBuys;
         private int availableCoins;        
         internal HashSet<Type> cardsBannedFromPurchase = new HashSet<Type>();
         internal int copperAdditionalValue = 0;        
@@ -41,6 +41,23 @@ namespace Dominion
             }
         }
 
+        internal int AvailableBuys
+        {
+            get
+            {
+                return this.availableBuys;
+            }
+        }
+
+        public void AddBuys(PlayerState playerState, int count)
+        {
+            if (count > 0)
+            {
+                this.availableBuys += count;
+                playerState.gameLog.PlayerGainedBuys(playerState, count);
+            }
+        }
+
         public void AddActions(PlayerState playerState, int count)
         {
             if (count > 0)
@@ -48,6 +65,11 @@ namespace Dominion
                 this.availableActionCount += count;
                 playerState.gameLog.PlayerGainedActions(playerState, count);
             }
+        }
+
+        public void RemoveBuy()
+        {
+            this.availableBuys--;
         }
 
         public void RemoveAction()
@@ -89,7 +111,7 @@ namespace Dominion
         public IPlayerAction Actions { get { return this.actions; } }
         public int AvailableCoins { get { return this.turnCounters.AvailableCoins; } }
         public int AvailableActions { get { return this.turnCounters.AvailableActions; } }
-        public int AvailableBuys { get { return this.turnCounters.availableBuys; } }
+        public int AvailableBuys { get { return this.turnCounters.AvailableBuys; } }
         public BagOfCards Hand { get { return this.hand; } }
         public BagOfCards CardsBeingRevealed { get { return this.cardsBeingRevealed; } }
 
@@ -258,6 +280,11 @@ namespace Dominion
             }
         }
 
+        internal void AddBuys(int actionAmount)
+        {
+            this.turnCounters.AddBuys(this, actionAmount);
+        }
+
         internal void AddActions(int actionAmount)
         {
             this.turnCounters.AddActions(this, actionAmount);
@@ -282,7 +309,7 @@ namespace Dominion
             for (int i = 0; i < countTimes; ++i)
             {
                 this.AddActions(currentCard.plusAction);                
-                this.turnCounters.availableBuys += currentCard.plusBuy;
+                this.AddBuys(currentCard.plusBuy);
                 this.AddCoins(currentCard.plusCoin);
                 this.victoryTokenCount += currentCard.plusVictoryToken;
                 this.DrawAdditionalCardsIntoHand(currentCard.plusCard);
@@ -334,7 +361,7 @@ namespace Dominion
             this.gameLog.PushScope();
             this.cardsBeingPlayed.AddCardToTop(currentCard);
 
-            this.turnCounters.availableBuys += currentCard.plusBuy;
+            this.AddBuys(currentCard.plusBuy);
             this.AddCoins(currentCard.plusCoin);
             if (currentCard.Is<CardTypes.Copper>())
             {
@@ -652,7 +679,7 @@ namespace Dominion
                 return false;
             }
 
-            Type cardTypeToDiscard = this.actions.GetCardFromHandToDiscard(gameState, this, isOptional);
+            Type cardTypeToDiscard = this.actions.GetCardFromHandToDiscard(gameState, acceptableCardsToTrash, this, isOptional);
             if (cardTypeToDiscard == null)
             {
                 if (isOptional)
@@ -846,6 +873,18 @@ namespace Dominion
             return cardType;
         }
 
+        internal Type RequestPlayerNameACard(GameState gameState)
+        {
+            Type cardType = this.actions.NameACard(gameState);
+            if (cardType == null)
+            {
+                throw new Exception("Must name a card");
+            }
+
+            gameState.gameLog.PlayerNamedCard(this, gameState.GetPile(cardType).ProtoTypeCard);
+            return cardType;
+        }
+
         internal Card GainCardFromSupply(GameState gameState, Type cardType, DeckPlacement defaultLocation = DeckPlacement.Discard)
         {
             return gameState.PlayerGainCardFromSupply(cardType, this, defaultLocation);
@@ -857,9 +896,9 @@ namespace Dominion
                 gameState.PlayerGainCardFromSupply(cardType, this, defaultLocation);
         }
 
-        internal void GainCardFromSupply<cardType>(GameState gameState)
+        internal bool GainCardFromSupply<cardType>(GameState gameState)
         {
-            gameState.PlayerGainCardFromSupply(typeof(cardType), this);
+            return gameState.PlayerGainCardFromSupply(typeof(cardType), this) != null;
         }        
 
         internal void GainCard(GameState gameState, Card card, DeckPlacement defaultPlacement = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)

@@ -171,7 +171,9 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return new PlayerAction(playerNumber,
+                return new PlayerAction(
+                            "DoubleWarehouse",
+                            playerNumber,
                             purchaseOrder: PurchaseOrder(),
                             treasurePlayOrder: Default.TreasurePlayOrder(),
                             actionOrder: ActionOrder(),
@@ -216,7 +218,9 @@ namespace Program
         {
             public static PlayerAction Player(int playerNumber)
             {
-                return new PlayerAction(playerNumber,
+                return new PlayerAction(
+                            "BigMoney",
+                            playerNumber,
                             purchaseOrder: PurchaseOrder(),
                             treasurePlayOrder: Default.TreasurePlayOrder(),
                             actionOrder: Default.EmptyPickOrder(),
@@ -231,7 +235,7 @@ namespace Program
                            CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 4),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 2),
                            CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 2),
+                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),
                            CardAcceptance.For<CardTypes.Silver>());
             }
         }
@@ -240,7 +244,9 @@ namespace Program
         {
             public static PlayerAction Player(int playerNumber)
             {
-                return new PlayerAction(playerNumber,
+                return new PlayerAction(
+                            "BigMoneyDelayed",
+                            playerNumber,
                             purchaseOrder: PurchaseOrder(),
                             treasurePlayOrder: Default.TreasurePlayOrder(),
                             actionOrder: Default.EmptyPickOrder(),
@@ -266,7 +272,9 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber, int secondSmithy = 15)
             {
-                return new PlayerAction(playerNumber,
+                return new PlayerAction(
+                            "BigMoneyDoubleSmithy",
+                            playerNumber,
                             purchaseOrder: PurchaseOrder(secondSmithy),
                             treasurePlayOrder: Default.TreasurePlayOrder(),
                             actionOrder: ActionOrder(),
@@ -301,7 +309,7 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneySingleCard<CardTypes.Smithy>.Player(playerNumber);
+                return BigMoneyWithCard<CardTypes.Smithy>.Player(playerNumber);
             }
         }    
     }

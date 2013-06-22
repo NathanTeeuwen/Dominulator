@@ -103,6 +103,8 @@ namespace Dominion
 
         public bool Equals(Card other)
         {
+            if (other == null)
+                return false;
             return this.GetType() == other.GetType();
         }
 

@@ -10,13 +10,15 @@ namespace Program
 {
     public static partial class Strategies
     {
-        public static class BigMoneySingleCard<T>
+        public static class BigMoneyWithCard<T>
             where T : Card, new()
         {
             // big money smithy player
             public static PlayerAction Player(int playerNumber, int cardCount = 1)
             {
-                return new PlayerAction(playerNumber,
+                return new PlayerAction(
+                            "BigMoneyWithCard<" + typeof(T).Name + ">",
+                            playerNumber,
                             purchaseOrder: PurchaseOrder(cardCount),
                             treasurePlayOrder: Default.TreasurePlayOrder(),
                             actionOrder: ActionOrder(),
@@ -31,7 +33,7 @@ namespace Program
                            CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 2),
                            CardAcceptance.For<T>(gameState => CountAllOwned<T>(gameState) < cardCount),
-                           CardAcceptance.For<CardTypes.Gold>(),
+                           CardAcceptance.For<CardTypes.Gold>(),                           
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),
                            CardAcceptance.For<CardTypes.Silver>());
 
@@ -50,7 +52,9 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber, int cardCount = 1)
             {
-                return new PlayerAction(playerNumber,
+                return new PlayerAction(
+                            "BigMoneySingleCardCartographer",
+                            playerNumber,
                             purchaseOrder: PurchaseOrder(cardCount),
                             treasurePlayOrder: Default.TreasurePlayOrder(),
                             actionOrder: ActionOrder(),

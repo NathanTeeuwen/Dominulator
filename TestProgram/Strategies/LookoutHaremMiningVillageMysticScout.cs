@@ -22,7 +22,9 @@ namespace Program
                 : PlayerAction
             {
                 public MyPlayerAction(int playerNumber)
-                    : base(playerNumber,
+                    : base(
+                        "LookoutHaremMiningVillageMysticScout",
+                        playerNumber,
                         purchaseOrder: PurchaseOrder(),
                         treasurePlayOrder: Default.TreasurePlayOrder(),
                         actionOrder: ActionOrder(),

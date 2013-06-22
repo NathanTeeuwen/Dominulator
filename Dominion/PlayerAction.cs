@@ -103,6 +103,11 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
+        virtual public Type NameACard(GameState gameState)
+        {
+            return PlayerMustMakeCardChoice();
+        }
+
         virtual public Type GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return NoCardIfOptional(isOptional);   
@@ -128,7 +133,7 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromHandToDiscard(GameState gameState, PlayerState player, bool isOptional)
+        virtual public Type GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, PlayerState player, bool isOptional)
         {
             return NoCardIfOptional(isOptional);
         }

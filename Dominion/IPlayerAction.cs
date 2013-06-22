@@ -17,6 +17,7 @@ namespace Dominion
         Type GetTreasureFromHandToPlay(GameState gameState);
         Type GetCardFromSupplyToBuy(GameState gameState, CardPredicate acceptableCard);
         Type GuessCardTopOfDeck(GameState gameState);
+        Type NameACard(GameState gameState);
         Type GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Type GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player);        
         Type GetCardFromRevealedCardsToTrash(GameState gameState, PlayerState player, CardPredicate acceptableCard);
@@ -24,7 +25,7 @@ namespace Dominion
         Type GetCardFromRevealedCardsToDiscard(GameState gameState, PlayerState player);
         Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard);
         Type GetCardFromHandToPassLeft(GameState gameState);
-        Type GetCardFromHandToDiscard(GameState gameState, PlayerState player, bool isOptional);
+        Type GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, PlayerState player, bool isOptional);
         Type GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard); // always optional
         Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional);        
         int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber);

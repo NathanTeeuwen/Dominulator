@@ -1,1172 +1,776 @@
-Player1 gained Estate.
-Player1 gained Estate.
-Player1 gained Estate.
-Player1 gained Copper.
-Player1 gained Copper.
-Player1 gained Copper.
-Player1 gained Copper.
-Player1 gained Copper.
-Player1 gained Copper.
-Player1 gained Copper.
-Player2 gained Estate.
-Player2 gained Estate.
-Player2 gained Estate.
-Player2 gained Copper.
-Player2 gained Copper.
-Player2 gained Copper.
-Player2 gained Copper.
-Player2 gained Copper.
-Player2 gained Copper.
-Player2 gained Copper.
-Player1 reshuffled
-Player1 Drew Copper into hand.
-Player1 Drew Copper into hand.
-Player1 Drew Estate into hand.
-Player1 Drew Copper into hand.
-Player1 Drew Estate into hand.
-Player2 reshuffled
-Player2 Drew Copper into hand.
-Player2 Drew Estate into hand.
-Player2 Drew Estate into hand.
-Player2 Drew Copper into hand.
-Player2 Drew Copper into hand.
+Rebuild gained Estate.
+Rebuild gained Estate.
+Rebuild gained Estate.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+BigMoneyWithCard<Mountebank> gained Estate.
+BigMoneyWithCard<Mountebank> gained Estate.
+BigMoneyWithCard<Mountebank> gained Estate.
+BigMoneyWithCard<Mountebank> gained Copper.
+BigMoneyWithCard<Mountebank> gained Copper.
+BigMoneyWithCard<Mountebank> gained Copper.
+BigMoneyWithCard<Mountebank> gained Copper.
+BigMoneyWithCard<Mountebank> gained Copper.
+BigMoneyWithCard<Mountebank> gained Copper.
+BigMoneyWithCard<Mountebank> gained Copper.
+Rebuild reshuffled
+Rebuild Drew Copper into hand.
+Rebuild Drew Copper into hand.
+Rebuild Drew Estate into hand.
+Rebuild Drew Copper into hand.
+Rebuild Drew Estate into hand.
+BigMoneyWithCard<Mountebank> reshuffled
+BigMoneyWithCard<Mountebank> Drew Copper into hand.
+BigMoneyWithCard<Mountebank> Drew Estate into hand.
+BigMoneyWithCard<Mountebank> Drew Estate into hand.
+BigMoneyWithCard<Mountebank> Drew Copper into hand.
+BigMoneyWithCard<Mountebank> Drew Copper into hand.
 ROUND 1
 -------------
-Player1 begins turn
+Rebuild begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 1 all together.
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 2 all together.
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 3 all together.
-  Player1 bought Silver.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  Rebuild bought Silver.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
-Player2 begins turn
+BigMoneyWithCard<Mountebank> begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  Player2 Played Copper.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 1 all together.
-  Player2 Played Copper.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 2 all together.
-  Player2 Played Copper.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 3 all together.
-  Player2 bought Silver.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
-  Player2 ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoneyWithCard<Mountebank> bought Silver.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-Player1 begins turn
+Rebuild begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 1 all together.
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 2 all together.
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 3 all together.
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 4 all together.
-  Player1 bought Warehouse.
-  Player1 reshuffled
-  Player1 Drew Warehouse into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Estate(3), Silver(1), Warehouse(1), 
+  Rebuild bought Silver.
+  Rebuild reshuffled
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
-Player2 begins turn
+BigMoneyWithCard<Mountebank> begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  Player2 Played Copper.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 1 all together.
-  Player2 Played Copper.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 2 all together.
-  Player2 Played Copper.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 3 all together.
-  Player2 Played Copper.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 4 all together.
-  Player2 bought Develop.
-  Player2 reshuffled
-  Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Develop(1), Estate(3), Silver(1), 
+  BigMoneyWithCard<Mountebank> bought Silver.
+  BigMoneyWithCard<Mountebank> reshuffled
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-Player1 begins turn
-With hand: Copper,Copper,Copper,Silver,Warehouse,
-  Player1 Played Warehouse.
-    +1 Actions = 1 all together.
-    Player1 Drew Copper into hand.
-    Player1 Drew Estate into hand.
-    Player1 Drew Estate into hand.
-    Player1 Discarded Estate.
-    Player1 Discarded Estate.
-    Player1 Discarded Copper.
-  Player1 Played Silver.
+Rebuild begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  Player1 Played Copper.
-    +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 Played Copper.
+  Rebuild Played Silver.
+    +2 Coin = 4 all together.
+  Rebuild Played Copper.
     +1 Coin = 5 all together.
-  Player1 bought Embassy.
-    Player2 gained Silver.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Copper into hand.
-  Player1 reshuffled
-  Player1 Drew Silver into hand.
-  Player1 ends turn with deck: Copper(7), Embassy(1), Estate(3), Silver(1), Warehouse(1), 
+  Rebuild Played Copper.
+    +1 Coin = 6 all together.
+  Rebuild Played Copper.
+    +1 Coin = 7 all together.
+  Rebuild bought Rebuild.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Rebuild(1), Silver(2), 
 
-Player2 begins turn
+BigMoneyWithCard<Mountebank> begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  Player2 Played Copper.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 1 all together.
-  Player2 Played Copper.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 2 all together.
-  Player2 Played Copper.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 3 all together.
-  Player2 Played Copper.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 4 all together.
-  Player2 bought Silver.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Develop into hand.
-  Player2 ends turn with deck: Copper(7), Develop(1), Estate(3), Silver(3), 
+  BigMoneyWithCard<Mountebank> bought Silver.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Silver(3), 
 
 ROUND 4
 -------------
-Player1 begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Copper.
-    +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 Played Copper.
-    +1 Coin = 5 all together.
-  Player1 bought Duchy.
-  Player1 Drew Estate into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Embassy into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Estate into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(1), Embassy(1), Estate(3), Silver(1), Warehouse(1), 
-
-Player2 begins turn
-With hand: Copper,Copper,Develop,Estate,Estate,
-  Player2 Played Develop.
-    Player2 trashed Estate.
-    Player2 gained Silver.
-  Player2 Played Copper.
+Rebuild begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  Rebuild Played Copper.
     +1 Coin = 1 all together.
-  Player2 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 2 all together.
-  Player2 Drew Silver into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 reshuffled
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Develop(1), Estate(2), Silver(4), 
+  Rebuild Played Copper.
+    +1 Coin = 3 all together.
+  Rebuild bought Silver.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild reshuffled
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Rebuild(1), Silver(3), 
+
+BigMoneyWithCard<Mountebank> begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoneyWithCard<Mountebank> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWithCard<Mountebank> bought Silver.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> reshuffled
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Silver(4), 
 
 ROUND 5
 -------------
-Player1 begins turn
-With hand: Copper,Copper,Embassy,Estate,Estate,
-  Player1 Played Embassy.
-    Player1 Drew Copper into hand.
-    Player1 Drew Copper into hand.
-    Player1 Drew Warehouse into hand.
-    Player1 reshuffled
-    Player1 Drew Copper into hand.
-    Player1 Drew Duchy into hand.
-    Player1 Discarded Duchy.
-    Player1 Discarded Estate.
-    Player1 Discarded Estate.
-  Player1 Played Copper.
-    +1 Coin = 1 all together.
-  Player1 Played Copper.
-    +1 Coin = 2 all together.
-  Player1 Played Copper.
-    +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 Played Copper.
-    +1 Coin = 5 all together.
-  Player1 bought Duchy.
-  Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Estate into hand.
-  Player1 reshuffled
-  Player1 Drew Duchy into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(2), Embassy(1), Estate(3), Silver(1), Warehouse(1), 
-
-Player2 begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  Player2 Played Silver.
+Rebuild begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 Played Copper.
+  Rebuild Played Copper.
+    +1 Coin = 3 all together.
+  Rebuild Played Copper.
+    +1 Coin = 4 all together.
+  Rebuild Played Copper.
     +1 Coin = 5 all together.
-  Player2 Played Copper.
+  Rebuild bought Rebuild.
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Rebuild(2), Silver(3), 
+
+BigMoneyWithCard<Mountebank> begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneyWithCard<Mountebank> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<Mountebank> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 6 all together.
-  Player2 Played Copper.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 7 all together.
-  Player2 bought Feodum.
-  Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Develop into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(7), Develop(1), Estate(2), Feodum(1), Silver(4), 
+  BigMoneyWithCard<Mountebank> bought Mountebank.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Mountebank(1), Silver(4), 
 
 ROUND 6
 -------------
-Player1 begins turn
-With hand: Copper,Copper,Duchy,Estate,Silver,
-  Player1 Played Silver.
+Rebuild begins turn
+With hand: Copper,Estate,Estate,Rebuild,Silver,
+  Rebuild Played Rebuild.
+    +1 Actions = 1 all together.
+    Rebuild named Duchy.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Silver.
+      Rebuild reshuffled
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Rebuild.
+      Rebuild Revealed Estate.
+    Rebuild trashed Estate.
+    Rebuild gained Duchy.
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 bought Silver.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Warehouse into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Estate into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(2), Embassy(1), Estate(3), Silver(2), Warehouse(1), 
+  Rebuild bought Silver.
+  Rebuild reshuffled
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(1), Estate(2), Rebuild(2), Silver(4), 
 
-Player2 begins turn
-With hand: Copper,Develop,Estate,Estate,Silver,
-  Player2 Played Develop.
-    Player2 trashed Estate.
-    Player2 gained Silver.
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Copper.
-    +1 Coin = 3 all together.
-  Player2 bought Silver.
-  Player2 Drew Silver into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(7), Develop(1), Estate(1), Feodum(1), Silver(6), 
+BigMoneyWithCard<Mountebank> begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> reshuffled
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Mountebank(1), Silver(4), 
 
 ROUND 7
 -------------
-Player1 begins turn
-With hand: Copper,Copper,Copper,Estate,Warehouse,
-  Player1 Played Warehouse.
+Rebuild begins turn
+With hand: Copper,Copper,Copper,Rebuild,Rebuild,
+  Rebuild Played Rebuild.
     +1 Actions = 1 all together.
-    Player1 Drew Copper into hand.
-    Player1 Drew Embassy into hand.
-    Player1 Drew Duchy into hand.
-    Player1 Discarded Duchy.
-    Player1 Discarded Estate.
-    Player1 Discarded Copper.
-  Player1 Played Embassy.
-    Player1 Drew Estate into hand.
-    Player1 Drew Copper into hand.
-    Player1 reshuffled
-    Player1 Drew Silver into hand.
-    Player1 Drew Estate into hand.
-    Player1 Drew Copper into hand.
-    Player1 Discarded Estate.
-    Player1 Discarded Estate.
-    Player1 Discarded Copper.
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Copper.
+    Rebuild named Duchy.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Estate.
+    Rebuild trashed Estate.
+    Rebuild gained Duchy.
+  Rebuild Played Rebuild.
+    +1 Actions = 1 all together.
+    Rebuild named Duchy.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Duchy.
+      Rebuild Revealed Estate.
+    Rebuild trashed Estate.
+    Rebuild gained Duchy.
+  Rebuild Played Copper.
+    +1 Coin = 1 all together.
+  Rebuild Played Copper.
+    +1 Coin = 2 all together.
+  Rebuild Played Copper.
     +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 Played Copper.
-    +1 Coin = 5 all together.
-  Player1 Played Copper.
-    +1 Coin = 6 all together.
-  Player1 bought Duchy.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Estate into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(3), Embassy(1), Estate(3), Silver(2), Warehouse(1), 
+  Rebuild bought Silver.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild reshuffled
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(3), Rebuild(2), Silver(5), 
 
-Player2 begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  Player2 Played Silver.
+BigMoneyWithCard<Mountebank> begins turn
+With hand: Copper,Copper,Silver,Silver,Silver,
+  BigMoneyWithCard<Mountebank> Played Silver.
     +2 Coin = 2 all together.
-  Player2 Played Silver.
+  BigMoneyWithCard<Mountebank> Played Silver.
     +2 Coin = 4 all together.
-  Player2 Played Copper.
-    +1 Coin = 5 all together.
-  Player2 Played Copper.
-    +1 Coin = 6 all together.
-  Player2 Played Copper.
+  BigMoneyWithCard<Mountebank> Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 7 all together.
-  Player2 bought Develop.
-  Player2 reshuffled
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Develop into hand.
-  Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(7), Develop(2), Estate(1), Feodum(1), Silver(6), 
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithCard<Mountebank> bought Mountebank.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> Drew Mountebank into hand.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Mountebank(2), Silver(4), 
 
 ROUND 8
 -------------
-Player1 begins turn
-With hand: Copper,Copper,Duchy,Estate,Silver,
-  Player1 Played Silver.
+Rebuild begins turn
+With hand: Copper,Copper,Rebuild,Silver,Silver,
+  Rebuild Played Rebuild.
+    +1 Actions = 1 all together.
+    Rebuild named Province.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Duchy.
+    Rebuild trashed Duchy.
+    Rebuild gained Province.
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  Player1 Played Copper.
-    +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 bought Silver.
-  Player1 Drew Duchy into hand.
-  Player1 reshuffled
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Warehouse into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(3), Embassy(1), Estate(3), Silver(3), Warehouse(1), 
-
-Player2 begins turn
-With hand: Copper,Copper,Develop,Silver,Silver,
-  Player2 Played Develop.
-    Player2 trashed Copper.
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
+  Rebuild Played Silver.
     +2 Coin = 4 all together.
-  Player2 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 5 all together.
-  Player2 bought Feodum.
-  Player2 Drew Feodum into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Develop into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(6), Develop(2), Estate(1), Feodum(2), Silver(6), 
+  Rebuild Played Copper.
+    +1 Coin = 6 all together.
+  Rebuild bought Duchy.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(3), Province(1), Rebuild(2), Silver(5), 
+
+BigMoneyWithCard<Mountebank> begins turn
+With hand: Copper,Copper,Estate,Mountebank,Silver,
+  BigMoneyWithCard<Mountebank> Played Mountebank.
+    +2 Coin = 2 all together.
+    Rebuild gained Curse.
+    Rebuild gained Copper.
+  BigMoneyWithCard<Mountebank> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<Mountebank> bought Gold.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(1), Mountebank(2), Silver(4), 
 
 ROUND 9
 -------------
-Player1 begins turn
-With hand: Copper,Copper,Copper,Duchy,Warehouse,
-  Player1 Played Warehouse.
-    +1 Actions = 1 all together.
-    Player1 Drew Embassy into hand.
-    Player1 Drew Duchy into hand.
-    Player1 Drew Copper into hand.
-    Player1 Discarded Duchy.
-    Player1 Discarded Duchy.
-    Player1 Discarded Copper.
-  Player1 Played Embassy.
-    Player1 Drew Copper into hand.
-    Player1 Drew Silver into hand.
-    Player1 Drew Copper into hand.
-    Player1 Drew Estate into hand.
-    Player1 Drew Silver into hand.
-    Player1 Discarded Estate.
-    Player1 Discarded Copper.
-    Player1 Discarded Copper.
-  Player1 Played Silver.
+Rebuild begins turn
+With hand: Copper,Copper,Duchy,Silver,Silver,
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  Player1 Played Silver.
+  Rebuild Played Silver.
     +2 Coin = 4 all together.
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 5 all together.
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 6 all together.
-  Player1 Played Copper.
-    +1 Coin = 7 all together.
-  Player1 bought Duchy.
-  Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Duchy into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(4), Embassy(1), Estate(3), Silver(3), Warehouse(1), 
+  Rebuild bought Duchy.
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild reshuffled
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(8), Curse(1), Duchy(4), Province(1), Rebuild(2), Silver(5), 
 
-Player2 begins turn
-With hand: Copper,Copper,Develop,Feodum,Silver,
-  Player2 Played Develop.
-    Player2 trashed Feodum.
-      Player2 gained Silver.
-      Player2 gained Silver.
-      Player2 gained Silver.
-    Player2 gained Silver.
-    Player2 gained Duchy.
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Copper.
+BigMoneyWithCard<Mountebank> begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 3 all together.
-  Player2 Played Copper.
-    +1 Coin = 4 all together.
-  Player2 bought Feodum.
-  Player2 Drew Duchy into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Estate into hand.
-  Player2 ends turn with deck: Copper(6), Develop(2), Duchy(1), Estate(1), Feodum(2), Silver(10), 
+  BigMoneyWithCard<Mountebank> bought Silver.
+  BigMoneyWithCard<Mountebank> reshuffled
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(1), Mountebank(2), Silver(5), 
 
 ROUND 10
 -------------
-Player1 begins turn
-With hand: Copper,Duchy,Estate,Estate,Silver,
-  Player1 Played Silver.
+Rebuild begins turn
+With hand: Copper,Copper,Duchy,Rebuild,Silver,
+  Rebuild Played Rebuild.
+    +1 Actions = 1 all together.
+    Rebuild named Province.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Rebuild.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Curse.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Duchy.
+    Rebuild trashed Duchy.
+    Rebuild gained Province.
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 3 all together.
-  Player1 bought Silver.
-  Player1 reshuffled
-  Player1 Drew Silver into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(4), Embassy(1), Estate(3), Silver(4), Warehouse(1), 
-
-Player2 begins turn
-With hand: Copper,Copper,Duchy,Estate,Silver,
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Copper.
-    +1 Coin = 3 all together.
-  Player2 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 4 all together.
-  Player2 bought Feodum.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 reshuffled
-  Player2 Drew Develop into hand.
-  Player2 ends turn with deck: Copper(6), Develop(2), Duchy(1), Estate(1), Feodum(3), Silver(10), 
+  Rebuild bought Silver.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Province into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild ends turn with deck: Copper(8), Curse(1), Duchy(3), Province(2), Rebuild(2), Silver(6), 
+
+BigMoneyWithCard<Mountebank> begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithCard<Mountebank> bought Silver.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Gold into hand.
+  BigMoneyWithCard<Mountebank> Drew Mountebank into hand.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(1), Mountebank(2), Silver(6), 
 
 ROUND 11
 -------------
-Player1 begins turn
-With hand: Copper,Copper,Duchy,Silver,Silver,
-  Player1 Played Silver.
+Rebuild begins turn
+With hand: Duchy,Duchy,Province,Silver,Silver,
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  Player1 Played Silver.
+  Rebuild Played Silver.
     +2 Coin = 4 all together.
-  Player1 Played Copper.
-    +1 Coin = 5 all together.
-  Player1 Played Copper.
-    +1 Coin = 6 all together.
-  Player1 bought Duchy.
-  Player1 Drew Copper into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Duchy into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(5), Embassy(1), Estate(3), Silver(4), Warehouse(1), 
+  Rebuild bought Silver.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild reshuffled
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild ends turn with deck: Copper(8), Curse(1), Duchy(3), Province(2), Rebuild(2), Silver(7), 
 
-Player2 begins turn
-With hand: Copper,Develop,Silver,Silver,Silver,
-  Player2 Played Develop.
-    Player2 trashed Copper.
-  Player2 Played Silver.
+BigMoneyWithCard<Mountebank> begins turn
+With hand: Copper,Gold,Mountebank,Silver,Silver,
+  BigMoneyWithCard<Mountebank> Played Mountebank.
     +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 Played Silver.
-    +2 Coin = 6 all together.
-  Player2 bought Feodum.
-  Player2 Drew Develop into hand.
-  Player2 Drew Feodum into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Duchy into hand.
-  Player2 ends turn with deck: Copper(5), Develop(2), Duchy(1), Estate(1), Feodum(4), Silver(10), 
+    Rebuild gained Curse.
+    Rebuild gained Copper.
+  BigMoneyWithCard<Mountebank> Played Gold.
+    +3 Coin = 5 all together.
+  BigMoneyWithCard<Mountebank> Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyWithCard<Mountebank> Played Silver.
+    +2 Coin = 9 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyWithCard<Mountebank> bought Gold.
+  BigMoneyWithCard<Mountebank> Drew Mountebank into hand.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(2), Mountebank(2), Silver(6), 
 
 ROUND 12
 -------------
-Player1 begins turn
-With hand: Copper,Copper,Duchy,Duchy,Estate,
-  Player1 Played Copper.
-    +1 Coin = 1 all together.
-  Player1 Played Copper.
-    +1 Coin = 2 all together.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Warehouse into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Embassy into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(5), Embassy(1), Estate(3), Silver(4), Warehouse(1), 
-
-Player2 begins turn
-With hand: Develop,Duchy,Feodum,Silver,Silver,
-  Player2 Played Develop.
-    Player2 trashed Duchy.
-    Player2 gained Feodum.
-    Player2 gained Gold.
-  Player2 Played Silver.
+Rebuild begins turn
+With hand: Copper,Copper,Copper,Rebuild,Silver,
+  Rebuild Played Rebuild.
+    +1 Actions = 1 all together.
+    Rebuild named Province.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Rebuild.
+      Rebuild Revealed Province.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Duchy.
+    Rebuild trashed Duchy.
+    Rebuild gained Province.
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  Player2 Played Silver.
+  Rebuild Played Copper.
+    +1 Coin = 3 all together.
+  Rebuild Played Copper.
+    +1 Coin = 4 all together.
+  Rebuild Played Copper.
+    +1 Coin = 5 all together.
+  Rebuild bought Duchy.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Curse into hand.
+  Rebuild ends turn with deck: Copper(9), Curse(2), Duchy(3), Province(3), Rebuild(2), Silver(7), 
+
+BigMoneyWithCard<Mountebank> begins turn
+With hand: Copper,Estate,Mountebank,Silver,Silver,
+  BigMoneyWithCard<Mountebank> Played Mountebank.
+    +2 Coin = 2 all together.
+    Rebuild Discarded Curse.
+  BigMoneyWithCard<Mountebank> Played Silver.
     +2 Coin = 4 all together.
-  Player2 bought Feodum.
-  Player2 Drew Gold into hand.
-  Player2 Drew Feodum into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(5), Develop(2), Estate(1), Feodum(6), Gold(1), Silver(10), 
+  BigMoneyWithCard<Mountebank> Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<Mountebank> bought Gold.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> reshuffled
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(3), Mountebank(2), Silver(6), 
 
 ROUND 13
 -------------
-Player1 begins turn
-With hand: Copper,Duchy,Embassy,Estate,Warehouse,
-  Player1 Played Warehouse.
-    +1 Actions = 1 all together.
-    Player1 Drew Copper into hand.
-    Player1 Drew Silver into hand.
-    Player1 Drew Copper into hand.
-    Player1 Discarded Duchy.
-    Player1 Discarded Estate.
-    Player1 Discarded Copper.
-  Player1 Played Embassy.
-    Player1 Drew Silver into hand.
-    Player1 Drew Estate into hand.
-    Player1 reshuffled
-    Player1 Drew Copper into hand.
-    Player1 Drew Duchy into hand.
-    Player1 Drew Copper into hand.
-    Player1 Discarded Duchy.
-    Player1 Discarded Estate.
-    Player1 Discarded Copper.
-  Player1 Played Silver.
+Rebuild begins turn
+With hand: Copper,Copper,Silver,Silver,
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  Player1 Played Silver.
+  Rebuild Played Silver.
     +2 Coin = 4 all together.
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 5 all together.
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 6 all together.
-  Player1 Played Copper.
-    +1 Coin = 7 all together.
-  Player1 bought Duchy.
-  Player1 Drew Silver into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Estate into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(6), Embassy(1), Estate(3), Silver(4), Warehouse(1), 
+  Rebuild bought Duchy.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(9), Curse(2), Duchy(4), Province(3), Rebuild(2), Silver(7), 
 
-Player2 begins turn
-With hand: Copper,Copper,Feodum,Gold,Silver,
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
-  Player2 Played Silver.
-    +2 Coin = 5 all together.
-  Player2 Played Copper.
+BigMoneyWithCard<Mountebank> begins turn
+With hand: Copper,Copper,Copper,Copper,Silver,
+  BigMoneyWithCard<Mountebank> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
     +1 Coin = 6 all together.
-  Player2 Played Copper.
-    +1 Coin = 7 all together.
-  Player2 bought Feodum.
-  Player2 Drew Estate into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Feodum into hand.
-  Player2 ends turn with deck: Copper(5), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(10), 
+  BigMoneyWithCard<Mountebank> bought Gold.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> Drew Gold into hand.
+  BigMoneyWithCard<Mountebank> Drew Gold into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(4), Mountebank(2), Silver(6), 
 
 ROUND 14
 -------------
-Player1 begins turn
-With hand: Duchy,Duchy,Estate,Estate,Silver,
-  Player1 Played Silver.
+Rebuild begins turn
+With hand: Copper,Duchy,Duchy,Silver,Silver,
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(6), Embassy(1), Estate(3), Silver(4), Warehouse(1), 
+  Rebuild Played Silver.
+    +2 Coin = 4 all together.
+  Rebuild Played Copper.
+    +1 Coin = 5 all together.
+  Rebuild bought Duchy.
+  Rebuild Drew Province into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild reshuffled
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild ends turn with deck: Copper(9), Curse(2), Duchy(5), Province(3), Rebuild(2), Silver(7), 
 
-Player2 begins turn
-With hand: Copper,Copper,Estate,Feodum,Silver,
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Copper.
-    +1 Coin = 3 all together.
-  Player2 Played Copper.
-    +1 Coin = 4 all together.
-  Player2 bought Silver.
-  Player2 Drew Copper into hand.
-  Player2 Drew Feodum into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(5), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(11), 
+BigMoneyWithCard<Mountebank> begins turn
+With hand: Copper,Gold,Gold,Silver,Silver,
+  BigMoneyWithCard<Mountebank> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Mountebank> Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyWithCard<Mountebank> Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyWithCard<Mountebank> Played Silver.
+    +2 Coin = 10 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 11 all together.
+  BigMoneyWithCard<Mountebank> bought Province.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> Drew Mountebank into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> Drew Mountebank into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(4), Mountebank(2), Province(1), Silver(6), 
 
 ROUND 15
 -------------
-Player1 begins turn
-With hand: Copper,Copper,Copper,Duchy,Silver,
-  Player1 Played Silver.
+Rebuild begins turn
+With hand: Copper,Duchy,Duchy,Province,Silver,
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 Played Copper.
-    +1 Coin = 5 all together.
-  Player1 bought Duchy.
-  Player1 Drew Duchy into hand.
-  Player1 reshuffled
-  Player1 Drew Embassy into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(7), Embassy(1), Estate(3), Silver(4), Warehouse(1), 
+  Rebuild bought Estate.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Curse into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild ends turn with deck: Copper(9), Curse(2), Duchy(5), Estate(1), Province(3), Rebuild(2), Silver(7), 
 
-Player2 begins turn
-With hand: Copper,Feodum,Silver,Silver,Silver,
-  Player2 Played Silver.
+BigMoneyWithCard<Mountebank> begins turn
+With hand: Copper,Estate,Estate,Mountebank,Mountebank,
+  BigMoneyWithCard<Mountebank> Played Mountebank.
     +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 Played Silver.
-    +2 Coin = 6 all together.
-  Player2 Played Copper.
-    +1 Coin = 7 all together.
-  Player2 bought Silver.
-  Player2 reshuffled
-  Player2 Drew Feodum into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Gold into hand.
-  Player2 Drew Feodum into hand.
-  Player2 Drew Feodum into hand.
-  Player2 ends turn with deck: Copper(5), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(12), 
+    Rebuild Discarded Curse.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithCard<Mountebank> bought Silver.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> Drew Gold into hand.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(4), Mountebank(2), Province(1), Silver(7), 
 
 ROUND 16
 -------------
-Player1 begins turn
-With hand: Copper,Copper,Duchy,Embassy,Silver,
-  Player1 Played Embassy.
-    Player1 Drew Silver into hand.
-    Player1 Drew Copper into hand.
-    Player1 Drew Estate into hand.
-    Player1 Drew Silver into hand.
-    Player1 Drew Copper into hand.
-    Player1 Discarded Duchy.
-    Player1 Discarded Estate.
-    Player1 Discarded Copper.
-  Player1 Played Silver.
+Rebuild begins turn
+With hand: Copper,Duchy,Silver,Silver,
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  Player1 Played Silver.
+  Rebuild Played Silver.
     +2 Coin = 4 all together.
-  Player1 Played Silver.
-    +2 Coin = 6 all together.
-  Player1 Played Copper.
-    +1 Coin = 7 all together.
-  Player1 Played Copper.
-    +1 Coin = 8 all together.
-  Player1 Played Copper.
-    +1 Coin = 9 all together.
-  Player1 bought Duke.
-  Player1 Drew Estate into hand.
-  Player1 Drew Warehouse into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(1), Embassy(1), Estate(3), Silver(4), Warehouse(1), 
+  Rebuild Played Copper.
+    +1 Coin = 5 all together.
+  Rebuild bought Estate.
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Province into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Curse into hand.
+  Rebuild ends turn with deck: Copper(9), Curse(2), Duchy(5), Estate(2), Province(3), Rebuild(2), Silver(7), 
 
-Player2 begins turn
-With hand: Feodum,Feodum,Feodum,Gold,Silver,
-  Player2 Played Gold.
+BigMoneyWithCard<Mountebank> begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoneyWithCard<Mountebank> Played Gold.
     +3 Coin = 3 all together.
-  Player2 Played Silver.
+  BigMoneyWithCard<Mountebank> Played Silver.
     +2 Coin = 5 all together.
-  Player2 bought Silver.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Feodum into hand.
-  Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(5), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(13), 
+  BigMoneyWithCard<Mountebank> Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithCard<Mountebank> bought Province.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> reshuffled
+  BigMoneyWithCard<Mountebank> Drew Gold into hand.
+  BigMoneyWithCard<Mountebank> Drew Gold into hand.
+  BigMoneyWithCard<Mountebank> Drew Silver into hand.
+  BigMoneyWithCard<Mountebank> Drew Province into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(4), Mountebank(2), Province(2), Silver(7), 
 
 ROUND 17
 -------------
-Player1 begins turn
-With hand: Copper,Copper,Estate,Estate,Warehouse,
-  Player1 Played Warehouse.
+Rebuild begins turn
+With hand: Curse,Province,Rebuild,Silver,Silver,
+  Rebuild Played Rebuild.
     +1 Actions = 1 all together.
-    Player1 Drew Silver into hand.
-    Player1 Drew Duchy into hand.
-    Player1 Drew Duchy into hand.
-    Player1 Discarded Duchy.
-    Player1 Discarded Duchy.
-    Player1 Discarded Estate.
-  Player1 Played Silver.
+    Rebuild named Estate.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Duchy.
+    Rebuild trashed Duchy.
+    Rebuild gained Province.
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  Player1 Played Copper.
-    +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 bought Silver.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Duchy into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(1), Embassy(1), Estate(3), Silver(5), Warehouse(1), 
-
-Player2 begins turn
-With hand: Copper,Feodum,Silver,Silver,Silver,
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
+  Rebuild Played Silver.
     +2 Coin = 4 all together.
-  Player2 Played Silver.
-    +2 Coin = 6 all together.
-  Player2 Played Copper.
-    +1 Coin = 7 all together.
-  Player2 bought Silver.
-  Player2 Drew Silver into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(5), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(14), 
+  Rebuild bought Estate.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild ends turn with deck: Copper(9), Curse(2), Duchy(4), Estate(3), Province(4), Rebuild(2), Silver(7), 
+
+BigMoneyWithCard<Mountebank> begins turn
+With hand: Gold,Gold,Province,Silver,Silver,
+  BigMoneyWithCard<Mountebank> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Mountebank> Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyWithCard<Mountebank> Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyWithCard<Mountebank> Played Silver.
+    +2 Coin = 10 all together.
+  BigMoneyWithCard<Mountebank> bought Province.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Copper into hand.
+  BigMoneyWithCard<Mountebank> Drew Estate into hand.
+  BigMoneyWithCard<Mountebank> Drew Mountebank into hand.
+  BigMoneyWithCard<Mountebank> Drew Mountebank into hand.
+  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(4), Mountebank(2), Province(3), Silver(7), 
 
 ROUND 18
 -------------
-Player1 begins turn
-With hand: Copper,Duchy,Duchy,Duchy,Duchy,
-  Player1 Played Copper.
-    +1 Coin = 1 all together.
-  Player1 reshuffled
-  Player1 Drew Copper into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Embassy into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(1), Embassy(1), Estate(3), Silver(5), Warehouse(1), 
-
-Player2 begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 Played Copper.
-    +1 Coin = 5 all together.
-  Player2 Played Copper.
-    +1 Coin = 6 all together.
-  Player2 Played Copper.
-    +1 Coin = 7 all together.
-  Player2 bought Silver.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Develop into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(5), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(15), 
-
-ROUND 19
--------------
-Player1 begins turn
-With hand: Copper,Copper,Duchy,Embassy,Silver,
-  Player1 Played Embassy.
-    Player1 Drew Estate into hand.
-    Player1 Drew Duchy into hand.
-    Player1 Drew Duchy into hand.
-    Player1 Drew Duchy into hand.
-    Player1 Drew Warehouse into hand.
-    Player1 Discarded Duchy.
-    Player1 Discarded Duchy.
-    Player1 Discarded Duchy.
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Copper.
-    +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 bought Warehouse.
-  Player1 Drew Silver into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Estate into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(1), Embassy(1), Estate(3), Silver(5), Warehouse(2), 
-
-Player2 begins turn
-With hand: Copper,Develop,Silver,Silver,Silver,
-  Player2 Played Develop.
-    Player2 trashed Copper.
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 Played Silver.
-    +2 Coin = 6 all together.
-  Player2 bought Silver.
-  Player2 Drew Silver into hand.
-  Player2 Drew Estate into hand.
-  Player2 Drew Feodum into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Feodum into hand.
-  Player2 ends turn with deck: Copper(4), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(16), 
-
-ROUND 20
--------------
-Player1 begins turn
-With hand: Copper,Copper,Duchy,Estate,Silver,
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Copper.
-    +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 bought Silver.
-  Player1 Drew Silver into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(1), Embassy(1), Estate(3), Silver(6), Warehouse(2), 
-
-Player2 begins turn
-With hand: Estate,Feodum,Feodum,Silver,Silver,
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 bought Silver.
-  Player2 Drew Feodum into hand.
-  Player2 Drew Develop into hand.
-  Player2 Drew Silver into hand.
-  Player2 reshuffled
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(4), Develop(2), Estate(1), Feodum(7), Gold(1), Silver(17), 
-
-ROUND 21
--------------
-Player1 begins turn
-With hand: Copper,Copper,Duchy,Duchy,Silver,
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Copper.
-    +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 bought Silver.
-  Player1 Drew Silver into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Duke into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(1), Embassy(1), Estate(3), Silver(7), Warehouse(2), 
-
-Player2 begins turn
-With hand: Develop,Feodum,Silver,Silver,Silver,
-  Player2 Played Develop.
-    Player2 trashed Feodum.
-      Player2 gained Silver.
-      Player2 gained Silver.
-      Player2 gained Silver.
-    Player2 gained Silver.
-    Player2 gained Embassy.
-      Player1 gained Silver.
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 Played Silver.
-    +2 Coin = 6 all together.
-  Player2 bought Silver.
-  Player2 Drew Embassy into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Feodum into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(4), Develop(2), Embassy(1), Estate(1), Feodum(6), Gold(1), Silver(22), 
-
-ROUND 22
--------------
-Player1 begins turn
-With hand: Copper,Duke,Estate,Silver,Silver,
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Silver.
-    +2 Coin = 4 all together.
-  Player1 Played Copper.
-    +1 Coin = 5 all together.
-  Player1 bought Duke.
-  Player1 reshuffled
-  Player1 Drew Copper into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(2), Embassy(1), Estate(3), Silver(8), Warehouse(2), 
-
-Player2 begins turn
-With hand: Embassy,Feodum,Silver,Silver,Silver,
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 Played Silver.
-    +2 Coin = 6 all together.
-  Player2 bought Silver.
-  Player2 Drew Feodum into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Feodum into hand.
-  Player2 Drew Estate into hand.
-  Player2 ends turn with deck: Copper(4), Develop(2), Embassy(1), Estate(1), Feodum(6), Gold(1), Silver(23), 
-
-ROUND 23
--------------
-Player1 begins turn
-With hand: Copper,Copper,Copper,Duchy,Silver,
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Copper.
-    +1 Coin = 3 all together.
-  Player1 Played Copper.
-    +1 Coin = 4 all together.
-  Player1 Played Copper.
-    +1 Coin = 5 all together.
-  Player1 bought Duke.
-  Player1 Drew Duke into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Estate into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(3), Embassy(1), Estate(3), Silver(8), Warehouse(2), 
-
-Player2 begins turn
-With hand: Estate,Feodum,Feodum,Silver,Silver,
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 bought Silver.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(4), Develop(2), Embassy(1), Estate(1), Feodum(6), Gold(1), Silver(24), 
-
-ROUND 24
--------------
-Player1 begins turn
-With hand: Duke,Estate,Silver,Silver,Silver,
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Silver.
-    +2 Coin = 4 all together.
-  Player1 Played Silver.
-    +2 Coin = 6 all together.
-  Player1 bought Duke.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Duke into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Silver into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(4), Embassy(1), Estate(3), Silver(8), Warehouse(2), 
-
-Player2 begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 Played Copper.
-    +1 Coin = 5 all together.
-  Player2 Played Copper.
-    +1 Coin = 6 all together.
-  Player2 Played Copper.
-    +1 Coin = 7 all together.
-  Player2 bought Silver.
-  Player2 Drew Gold into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Feodum into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(4), Develop(2), Embassy(1), Estate(1), Feodum(6), Gold(1), Silver(25), 
-
-ROUND 25
--------------
-Player1 begins turn
-With hand: Duchy,Duchy,Duke,Silver,Silver,
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Silver.
-    +2 Coin = 4 all together.
-  Player1 bought Silver.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Warehouse into hand.
-  Player1 Drew Estate into hand.
-  Player1 Drew Copper into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(4), Embassy(1), Estate(3), Silver(9), Warehouse(2), 
-
-Player2 begins turn
-With hand: Feodum,Gold,Silver,Silver,Silver,
-  Player2 Played Gold.
-    +3 Coin = 3 all together.
-  Player2 Played Silver.
-    +2 Coin = 5 all together.
-  Player2 Played Silver.
-    +2 Coin = 7 all together.
-  Player2 Played Silver.
-    +2 Coin = 9 all together.
-  Player2 bought Province.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Feodum into hand.
-  Player2 Drew Copper into hand.
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(4), Develop(2), Embassy(1), Estate(1), Feodum(6), Gold(1), Province(1), Silver(25), 
-
-ROUND 26
--------------
-Player1 begins turn
-With hand: Copper,Duchy,Duchy,Estate,Warehouse,
-  Player1 Played Warehouse.
+Rebuild begins turn
+With hand: Copper,Duchy,Rebuild,Silver,Silver,
+  Rebuild Played Rebuild.
     +1 Actions = 1 all together.
-    Player1 Drew Silver into hand.
-    Player1 Drew Duchy into hand.
-    Player1 Drew Warehouse into hand.
-    Player1 Discarded Duchy.
-    Player1 Discarded Duchy.
-    Player1 Discarded Duchy.
-  Player1 Played Warehouse.
-    +1 Actions = 1 all together.
-    Player1 Drew Embassy into hand.
-    Player1 Drew Estate into hand.
-    Player1 Drew Copper into hand.
-    Player1 Discarded Estate.
-    Player1 Discarded Estate.
-    Player1 Discarded Copper.
-  Player1 Played Embassy.
-    Player1 Drew Copper into hand.
-    Player1 Drew Silver into hand.
-    Player1 Drew Duchy into hand.
-    Player1 Drew Copper into hand.
-    Player1 reshuffled
-    Player1 Drew Duchy into hand.
-    Player1 Discarded Duchy.
-    Player1 Discarded Duchy.
-    Player1 Discarded Copper.
-  Player1 Played Silver.
+    Rebuild named Estate.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Province.
+    Rebuild trashed Province.
+    Rebuild gained Province.
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  Player1 Played Silver.
+  Rebuild Played Silver.
     +2 Coin = 4 all together.
-  Player1 Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 5 all together.
-  Player1 Played Copper.
-    +1 Coin = 6 all together.
-  Player1 bought Duke.
-  Player1 Drew Copper into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Silver into hand.
-  Player1 Drew Duke into hand.
-  Player1 Drew Silver into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(5), Embassy(1), Estate(3), Silver(9), Warehouse(2), 
+  Rebuild bought Estate.
+  Rebuild reshuffled
+  Rebuild Drew Province into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Curse into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild ends turn with deck: Copper(9), Curse(2), Duchy(4), Estate(4), Province(4), Rebuild(2), Silver(7), 
 
-Player2 begins turn
-With hand: Copper,Feodum,Silver,Silver,Silver,
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 Played Silver.
-    +2 Coin = 6 all together.
-  Player2 Played Copper.
-    +1 Coin = 7 all together.
-  Player2 bought Silver.
-  Player2 Drew Feodum into hand.
-  Player2 Drew Develop into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 reshuffled
-  Player2 Drew Silver into hand.
-  Player2 ends turn with deck: Copper(4), Develop(2), Embassy(1), Estate(1), Feodum(6), Gold(1), Province(1), Silver(26), 
-
-ROUND 27
--------------
-Player1 begins turn
-With hand: Copper,Duke,Silver,Silver,Silver,
-  Player1 Played Silver.
-    +2 Coin = 2 all together.
-  Player1 Played Silver.
-    +2 Coin = 4 all together.
-  Player1 Played Silver.
-    +2 Coin = 6 all together.
-  Player1 Played Copper.
-    +1 Coin = 7 all together.
-  Player1 bought Duke.
-  Player1 Drew Estate into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Copper into hand.
-  Player1 Drew Duchy into hand.
-  Player1 Drew Silver into hand.
-  Player1 ends turn with deck: Copper(7), Duchy(7), Duke(6), Embassy(1), Estate(3), Silver(9), Warehouse(2), 
-
-Player2 begins turn
-With hand: Develop,Feodum,Silver,Silver,Silver,
-  Player2 Played Develop.
-    Player2 trashed Feodum.
-      Player2 gained Silver.
-      Player2 gained Silver.
-      Player2 gained Silver.
-    Player2 gained Silver.
-    Player2 gained Embassy.
-      Player1 gained Silver.
-  Player2 Played Silver.
-    +2 Coin = 2 all together.
-  Player2 Played Silver.
-    +2 Coin = 4 all together.
-  Player2 Played Silver.
-    +2 Coin = 6 all together.
-  Player2 Drew Embassy into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Silver into hand.
-  Player2 Drew Copper into hand.
-  Player2 ends turn with deck: Copper(4), Develop(2), Embassy(2), Estate(1), Feodum(5), Gold(1), Province(1), Silver(30), 
-
-Game ended in 27 turns.
-Player1 Won!
-Player1 total score: 66
-  Copper(7), Duchy(7), Duke(6), Embassy(1), Estate(3), Silver(10), Warehouse(2), 
-Player2 total score: 57
-  Copper(4), Develop(2), Embassy(2), Estate(1), Feodum(5), Gold(1), Province(1), Silver(30), 
-Trash contains: Copper(3), Duchy(1), Estate(2), Feodum(3), 
+Game ended in 18 turns.
+Rebuild Won!
+Rebuild total score: 38
+  Copper(9), Curse(2), Duchy(4), Estate(4), Province(4), Rebuild(2), Silver(7), 
+BigMoneyWithCard<Mountebank> total score: 21
+  Copper(7), Estate(3), Gold(4), Mountebank(2), Province(3), Silver(7), 
+Trash contains: Duchy(4), Estate(3), Province(1), 

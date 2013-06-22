@@ -23,7 +23,8 @@ namespace Program
                 : PlayerAction
             {
                 public MyPlayerAction(int playerNumber)
-                    : base(playerNumber,
+                    : base( "CaravanBridgeDukeCartographer",
+                            playerNumber,
                             purchaseOrder: PurchaseOrder(),                            
                             actionOrder: ActionOrder())
                 {

@@ -15,7 +15,9 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return new PlayerAction(playerNumber,
+                return new PlayerAction(
+                            "FishingVillageChapelPoorHouse",
+                            playerNumber,                            
                             purchaseOrder: PurchaseOrder(),
                             treasurePlayOrder: Default.TreasurePlayOrder(),
                             actionOrder: ActionOrder(),

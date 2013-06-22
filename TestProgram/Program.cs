@@ -13,7 +13,23 @@ namespace Program
 
         static void Main()
         {
-            FeodumVsDuke();           
+            RebuildResults();
+        }
+
+        static void RebuildResults()
+        {
+            // for forum topic: http://forum.dominionstrategy.com/index.php?topic=8391.0
+            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoney.Player(2));
+            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Wharf>.Player(2, 2));
+            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Mountebank>.Player(2, 2));
+            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2, 2));
+            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.YoungWitch>.Player(2, 2));
+        }
+
+        static void GuildsSimulatorResults()
+        {
+            // for forum topic: http://forum.dominionstrategy.com/index.php?topic=8461.0
+            ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Soothsayer>.Player(1), Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2));
         }
 
         static void FeodumVsDuke()
@@ -64,6 +80,7 @@ namespace Program
         {
             int numberOfGames = 10000;
 
+            PlayerAction[] players = new PlayerAction[] { player1, player2 };
             int[] winnerCount = new int[2];
             int tieCount = 0;
 
@@ -127,12 +144,13 @@ namespace Program
             {
                 for (int index = 0; index < winnerCount.Length; ++index)
                 {
-                    System.Console.WriteLine("Player {0} won: {1} percent of the time.", index + 1, PlayerWinPercent(index, winnerCount, numberOfGames));
+                    System.Console.WriteLine("{1}% win for {0}", players[index].name, PlayerWinPercent(index, winnerCount, numberOfGames));
                 }
                 if (tieCount > 0)
                 {
-                    System.Console.WriteLine("Ties: {0} percent of the time.", TiePercent(tieCount, numberOfGames));
+                    System.Console.WriteLine("{0}% there is a tie.", TiePercent(tieCount, numberOfGames));
                 }
+                System.Console.WriteLine();
             }
             else
             {
@@ -433,6 +451,7 @@ namespace Program
     public class PlayerAction
         : DefaultPlayerAction
     {
+        internal readonly string name;
         internal readonly int playerIndex;
         internal readonly IGetMatchingCard purchaseOrder;
         internal readonly IGetMatchingCard actionOrder;
@@ -441,7 +460,9 @@ namespace Program
         internal readonly IGetMatchingCard discardOrder;
         internal readonly IGetMatchingCard gainOrder;
 
-        public PlayerAction(int playerIndex,
+        public PlayerAction(
+            string name,
+            int playerIndex,
             IGetMatchingCard purchaseOrder,
             IGetMatchingCard actionOrder,
             IGetMatchingCard treasurePlayOrder = null,            
@@ -456,6 +477,7 @@ namespace Program
             this.treasurePlayOrder = treasurePlayOrder == null ? Strategies.Default.TreasurePlayOrder() : treasurePlayOrder;
             this.discardOrder = discardOrder == null ? Strategies.Default.EmptyPickOrder() : discardOrder;
             this.gainOrder = gainOrder != null ? gainOrder : purchaseOrder;
+            this.name = name;
         }        
 
         public override Type GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
@@ -581,16 +603,16 @@ namespace Program
             }
         }
 
-        public override Type GetCardFromHandToDiscard(GameState gameState, PlayerState player, bool isOptional)
+        public override Type GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, PlayerState player, bool isOptional)
         {            
             Type result = this.discardOrder.GetMatchingCard(
                 gameState,
                 card => player.Hand.HasCard(card.GetType()));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
-            if (result == null && !isOptional)
+            if (result == null)
             {
-                Card card = player.Hand.OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();
+                Card card = player.Hand.Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();
                 return card != null ? card.GetType() : null;
             }
 
@@ -677,7 +699,7 @@ namespace Program
         {
             get
             {
-                return "Player" + playerIndex;
+                return this.name;
             }
         }
     }    

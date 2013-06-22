@@ -31,6 +31,7 @@ namespace Dominion
         void EndGame(GameState gameState);
         void PlayerGainedCoin(PlayerState playerState, int coinAmount);
         void PlayerGainedActions(PlayerState playerState, int actionAmount);
+        void PlayerGainedBuys(PlayerState playerState, int actionAmount);
         void LogDeck(PlayerState playerState);
     }
 
@@ -133,6 +134,11 @@ namespace Dominion
         }
 
         public void PlayerGainedActions(PlayerState playerState, int coinAmount)
+        {
+
+        }
+
+        public void PlayerGainedBuys(PlayerState playerState, int coinAmount)
         {
 
         }
@@ -366,6 +372,11 @@ namespace Dominion
         public void PlayerGainedActions(PlayerState playerState, int actionAmount)
         {
             this.textWriter.WriteLine("+{0} Actions = {1} all together.", actionAmount, playerState.AvailableActions);
+        }
+
+        public void PlayerGainedBuys(PlayerState playerState, int buyAmount)
+        {
+            this.textWriter.WriteLine("+{0} Buys = {1} all together.", buyAmount, playerState.AvailableBuys);
         }        
 
         private void WriteAllCards(PlayerState playerState)
