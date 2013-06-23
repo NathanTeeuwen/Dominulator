@@ -1,776 +1,587 @@
-Rebuild gained Estate.
-Rebuild gained Estate.
-Rebuild gained Estate.
-Rebuild gained Copper.
-Rebuild gained Copper.
-Rebuild gained Copper.
-Rebuild gained Copper.
-Rebuild gained Copper.
-Rebuild gained Copper.
-Rebuild gained Copper.
-BigMoneyWithCard<Mountebank> gained Estate.
-BigMoneyWithCard<Mountebank> gained Estate.
-BigMoneyWithCard<Mountebank> gained Estate.
-BigMoneyWithCard<Mountebank> gained Copper.
-BigMoneyWithCard<Mountebank> gained Copper.
-BigMoneyWithCard<Mountebank> gained Copper.
-BigMoneyWithCard<Mountebank> gained Copper.
-BigMoneyWithCard<Mountebank> gained Copper.
-BigMoneyWithCard<Mountebank> gained Copper.
-BigMoneyWithCard<Mountebank> gained Copper.
-Rebuild reshuffled
-Rebuild Drew Copper into hand.
-Rebuild Drew Copper into hand.
-Rebuild Drew Estate into hand.
-Rebuild Drew Copper into hand.
-Rebuild Drew Estate into hand.
-BigMoneyWithCard<Mountebank> reshuffled
-BigMoneyWithCard<Mountebank> Drew Copper into hand.
-BigMoneyWithCard<Mountebank> Drew Estate into hand.
-BigMoneyWithCard<Mountebank> Drew Estate into hand.
-BigMoneyWithCard<Mountebank> Drew Copper into hand.
-BigMoneyWithCard<Mountebank> Drew Copper into hand.
+FishingVillageChapelPoorHouse gained Estate.
+FishingVillageChapelPoorHouse gained Estate.
+FishingVillageChapelPoorHouse gained Estate.
+FishingVillageChapelPoorHouse gained Copper.
+FishingVillageChapelPoorHouse gained Copper.
+FishingVillageChapelPoorHouse gained Copper.
+FishingVillageChapelPoorHouse gained Copper.
+FishingVillageChapelPoorHouse gained Copper.
+FishingVillageChapelPoorHouse gained Copper.
+FishingVillageChapelPoorHouse gained Copper.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+FishingVillageChapelPoorHouse reshuffled
+FishingVillageChapelPoorHouse Drew Copper into hand.
+FishingVillageChapelPoorHouse Drew Copper into hand.
+FishingVillageChapelPoorHouse Drew Estate into hand.
+FishingVillageChapelPoorHouse Drew Copper into hand.
+FishingVillageChapelPoorHouse Drew Estate into hand.
+BigMoney reshuffled
+BigMoney Drew Copper into hand.
+BigMoney Drew Estate into hand.
+BigMoney Drew Estate into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
 ROUND 1
 -------------
-Rebuild begins turn
+FishingVillageChapelPoorHouse begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  Rebuild Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 1 all together.
-  Rebuild Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 2 all together.
-  Rebuild Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 3 all together.
-  Rebuild bought Silver.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Estate into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  FishingVillageChapelPoorHouse bought Fishing Village.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Estate into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Copper(7), Estate(3), Fishing Village(1), 
 
-BigMoneyWithCard<Mountebank> begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyWithCard<Mountebank> Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Mountebank> bought Silver.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-Rebuild begins turn
+FishingVillageChapelPoorHouse begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  Rebuild Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 1 all together.
-  Rebuild Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 2 all together.
-  Rebuild Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 3 all together.
-  Rebuild Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 4 all together.
-  Rebuild bought Silver.
-  Rebuild reshuffled
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  FishingVillageChapelPoorHouse bought Chapel.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Chapel into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(7), Estate(3), Fishing Village(1), 
 
-BigMoneyWithCard<Mountebank> begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWithCard<Mountebank> Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<Mountebank> bought Silver.
-  BigMoneyWithCard<Mountebank> reshuffled
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoney bought Silver.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-Rebuild begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Silver.
-    +2 Coin = 4 all together.
-  Rebuild Played Copper.
-    +1 Coin = 5 all together.
-  Rebuild Played Copper.
-    +1 Coin = 6 all together.
-  Rebuild Played Copper.
-    +1 Coin = 7 all together.
-  Rebuild bought Rebuild.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Estate into hand.
-  Rebuild Drew Estate into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(7), Estate(3), Rebuild(1), Silver(2), 
-
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWithCard<Mountebank> Played Copper.
+FishingVillageChapelPoorHouse begins turn
+With hand: Chapel,Copper,Copper,Copper,Fishing Village,
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 2 all together.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+  FishingVillageChapelPoorHouse Played Chapel.
+    FishingVillageChapelPoorHouse trashed Copper.
+    FishingVillageChapelPoorHouse trashed Copper.
+    FishingVillageChapelPoorHouse trashed Copper.
+  FishingVillageChapelPoorHouse bought Poor House.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Estate into hand.
+  FishingVillageChapelPoorHouse Drew Estate into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(4), Estate(3), Fishing Village(1), Poor House(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<Mountebank> bought Silver.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Silver(3), 
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(3), 
 
 ROUND 4
 -------------
-Rebuild begins turn
+FishingVillageChapelPoorHouse begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  Rebuild Played Copper.
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
     +1 Coin = 1 all together.
-  Rebuild Played Copper.
+    +1 Actions = 2 all together.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 2 all together.
-  Rebuild Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 3 all together.
-  Rebuild bought Silver.
-  Rebuild Drew Estate into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild reshuffled
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(7), Estate(3), Rebuild(1), Silver(3), 
-
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoneyWithCard<Mountebank> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<Mountebank> bought Silver.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> reshuffled
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Silver(4), 
+  FishingVillageChapelPoorHouse bought Fishing Village.
+  FishingVillageChapelPoorHouse Drew Estate into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Chapel into hand.
+  FishingVillageChapelPoorHouse Drew Estate into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(4), Estate(3), Fishing Village(2), Poor House(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney reshuffled
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(4), 
 
 ROUND 5
 -------------
-Rebuild begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Copper.
-    +1 Coin = 3 all together.
-  Rebuild Played Copper.
-    +1 Coin = 4 all together.
-  Rebuild Played Copper.
-    +1 Coin = 5 all together.
-  Rebuild bought Rebuild.
-  Rebuild Drew Rebuild into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Estate into hand.
-  Rebuild Drew Estate into hand.
-  Rebuild ends turn with deck: Copper(7), Estate(3), Rebuild(2), Silver(3), 
+FishingVillageChapelPoorHouse begins turn
+With hand: Chapel,Copper,Copper,Estate,Estate,
+  FishingVillageChapelPoorHouse Played Chapel.
+    FishingVillageChapelPoorHouse trashed Estate.
+    FishingVillageChapelPoorHouse trashed Estate.
+    FishingVillageChapelPoorHouse trashed Copper.
+    FishingVillageChapelPoorHouse trashed Copper.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse Drew Estate into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(2), Estate(1), Fishing Village(2), Poor House(1), 
 
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyWithCard<Mountebank> Played Silver.
+BigMoney begins turn
+With hand: Copper,Estate,Estate,Silver,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<Mountebank> Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Mountebank> bought Mountebank.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Mountebank(1), Silver(4), 
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(5), 
 
 ROUND 6
 -------------
-Rebuild begins turn
-With hand: Copper,Estate,Estate,Rebuild,Silver,
-  Rebuild Played Rebuild.
-    +1 Actions = 1 all together.
-    Rebuild named Duchy.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Silver.
-      Rebuild reshuffled
-      Rebuild Revealed Copper.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Rebuild.
-      Rebuild Revealed Estate.
-    Rebuild trashed Estate.
-    Rebuild gained Duchy.
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Copper.
-    +1 Coin = 3 all together.
-  Rebuild bought Silver.
-  Rebuild reshuffled
-  Rebuild Drew Rebuild into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Rebuild into hand.
-  Rebuild ends turn with deck: Copper(7), Duchy(1), Estate(2), Rebuild(2), Silver(4), 
-
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Copper,Copper,Estate,Estate,Estate,
-  BigMoneyWithCard<Mountebank> Played Copper.
+FishingVillageChapelPoorHouse begins turn
+With hand: Copper,Estate,Fishing Village,Fishing Village,Poor House,
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 2 all together.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 3 all together.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> reshuffled
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Mountebank(1), Silver(4), 
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 6 all together.
+    +-1 Coin = 5 all together.
+  FishingVillageChapelPoorHouse Played Copper.
+    +1 Coin = 6 all together.
+  FishingVillageChapelPoorHouse bought Poor House.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Estate into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Chapel into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(2), Estate(1), Fishing Village(2), Poor House(2), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(6), 
 
 ROUND 7
 -------------
-Rebuild begins turn
-With hand: Copper,Copper,Copper,Rebuild,Rebuild,
-  Rebuild Played Rebuild.
-    +1 Actions = 1 all together.
-    Rebuild named Duchy.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Estate.
-    Rebuild trashed Estate.
-    Rebuild gained Duchy.
-  Rebuild Played Rebuild.
-    +1 Actions = 1 all together.
-    Rebuild named Duchy.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Duchy.
-      Rebuild Revealed Estate.
-    Rebuild trashed Estate.
-    Rebuild gained Duchy.
-  Rebuild Played Copper.
+FishingVillageChapelPoorHouse begins turn
+With hand: Chapel,Copper,Estate,Poor House,Poor House,
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
     +1 Coin = 1 all together.
-  Rebuild Played Copper.
+    +1 Actions = 2 all together.
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
     +1 Coin = 2 all together.
-  Rebuild Played Copper.
-    +1 Coin = 3 all together.
-  Rebuild bought Silver.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild reshuffled
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Rebuild into hand.
-  Rebuild ends turn with deck: Copper(7), Duchy(3), Rebuild(2), Silver(5), 
+    +1 Actions = 3 all together.
+  FishingVillageChapelPoorHouse Played Chapel.
+    FishingVillageChapelPoorHouse trashed Estate.
+    FishingVillageChapelPoorHouse trashed Copper.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 6 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 10 all together.
+  FishingVillageChapelPoorHouse bought Province.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Chapel into hand.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(1), Fishing Village(2), Poor House(2), Province(1), 
 
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Copper,Copper,Silver,Silver,Silver,
-  BigMoneyWithCard<Mountebank> Played Silver.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<Mountebank> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<Mountebank> Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWithCard<Mountebank> bought Mountebank.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> Drew Mountebank into hand.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Mountebank(2), Silver(4), 
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(6), 
 
 ROUND 8
 -------------
-Rebuild begins turn
-With hand: Copper,Copper,Rebuild,Silver,Silver,
-  Rebuild Played Rebuild.
-    +1 Actions = 1 all together.
-    Rebuild named Province.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Duchy.
-    Rebuild trashed Duchy.
-    Rebuild gained Province.
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Silver.
-    +2 Coin = 4 all together.
-  Rebuild Played Copper.
-    +1 Coin = 5 all together.
-  Rebuild Played Copper.
-    +1 Coin = 6 all together.
-  Rebuild bought Duchy.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Duchy into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild ends turn with deck: Copper(7), Duchy(3), Province(1), Rebuild(2), Silver(5), 
+FishingVillageChapelPoorHouse begins turn
+With hand: Chapel,Copper,Fishing Village,Poor House,Province,
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  FishingVillageChapelPoorHouse Played Chapel.
+    FishingVillageChapelPoorHouse trashed Copper.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 5 all together.
+  FishingVillageChapelPoorHouse bought Poor House.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Chapel into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(3), Province(1), 
 
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Copper,Copper,Estate,Mountebank,Silver,
-  BigMoneyWithCard<Mountebank> Played Mountebank.
+BigMoney begins turn
+With hand: Copper,Estate,Estate,Silver,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-    Rebuild gained Curse.
-    Rebuild gained Copper.
-  BigMoneyWithCard<Mountebank> Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Mountebank> bought Gold.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(1), Mountebank(2), Silver(4), 
+  BigMoney bought Silver.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(7), 
 
 ROUND 9
 -------------
-Rebuild begins turn
-With hand: Copper,Copper,Duchy,Silver,Silver,
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Silver.
-    +2 Coin = 4 all together.
-  Rebuild Played Copper.
-    +1 Coin = 5 all together.
-  Rebuild Played Copper.
-    +1 Coin = 6 all together.
-  Rebuild bought Duchy.
-  Rebuild Drew Rebuild into hand.
-  Rebuild Drew Duchy into hand.
-  Rebuild reshuffled
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(8), Curse(1), Duchy(4), Province(1), Rebuild(2), Silver(5), 
-
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyWithCard<Mountebank> Played Copper.
+FishingVillageChapelPoorHouse begins turn
+With hand: Chapel,Fishing Village,Poor House,Poor House,Poor House,
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Actions = 2 all together.
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 3 all together.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Mountebank> bought Silver.
-  BigMoneyWithCard<Mountebank> reshuffled
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(1), Mountebank(2), Silver(5), 
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 6 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 10 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 14 all together.
+  FishingVillageChapelPoorHouse bought Province.
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse Drew Chapel into hand.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(3), Province(2), 
+
+BigMoney begins turn
+With hand: Copper,Estate,Silver,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Silver.
+    +2 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(7), 
 
 ROUND 10
 -------------
-Rebuild begins turn
-With hand: Copper,Copper,Duchy,Rebuild,Silver,
-  Rebuild Played Rebuild.
-    +1 Actions = 1 all together.
-    Rebuild named Province.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Rebuild.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Curse.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Duchy.
-    Rebuild trashed Duchy.
-    Rebuild gained Province.
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Copper.
-    +1 Coin = 3 all together.
-  Rebuild Played Copper.
-    +1 Coin = 4 all together.
-  Rebuild bought Silver.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Province into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Duchy into hand.
-  Rebuild Drew Duchy into hand.
-  Rebuild ends turn with deck: Copper(8), Curse(1), Duchy(3), Province(2), Rebuild(2), Silver(6), 
-
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyWithCard<Mountebank> Played Copper.
+FishingVillageChapelPoorHouse begins turn
+With hand: Chapel,Fishing Village,Poor House,Province,Province,
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+    +1 Actions = 2 all together.
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 3 all together.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Mountebank> bought Silver.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Gold into hand.
-  BigMoneyWithCard<Mountebank> Drew Mountebank into hand.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(1), Mountebank(2), Silver(6), 
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 6 all together.
+  FishingVillageChapelPoorHouse bought Poor House.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(4), Province(2), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(7), 
 
 ROUND 11
 -------------
-Rebuild begins turn
-With hand: Duchy,Duchy,Province,Silver,Silver,
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Silver.
-    +2 Coin = 4 all together.
-  Rebuild bought Silver.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild reshuffled
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Rebuild into hand.
-  Rebuild ends turn with deck: Copper(8), Curse(1), Duchy(3), Province(2), Rebuild(2), Silver(7), 
+FishingVillageChapelPoorHouse begins turn
+With hand: Poor House,Poor House,Poor House,Province,Province,
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 5 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 9 all together.
+  FishingVillageChapelPoorHouse bought Province.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Chapel into hand.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(4), Province(3), 
 
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Copper,Gold,Mountebank,Silver,Silver,
-  BigMoneyWithCard<Mountebank> Played Mountebank.
-    +2 Coin = 2 all together.
-    Rebuild gained Curse.
-    Rebuild gained Copper.
-  BigMoneyWithCard<Mountebank> Played Gold.
-    +3 Coin = 5 all together.
-  BigMoneyWithCard<Mountebank> Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWithCard<Mountebank> Played Silver.
-    +2 Coin = 9 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyWithCard<Mountebank> bought Gold.
-  BigMoneyWithCard<Mountebank> Drew Mountebank into hand.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(2), Mountebank(2), Silver(6), 
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(7), 
 
 ROUND 12
 -------------
-Rebuild begins turn
-With hand: Copper,Copper,Copper,Rebuild,Silver,
-  Rebuild Played Rebuild.
-    +1 Actions = 1 all together.
-    Rebuild named Province.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Rebuild.
-      Rebuild Revealed Province.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Duchy.
-    Rebuild trashed Duchy.
-    Rebuild gained Province.
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Copper.
-    +1 Coin = 3 all together.
-  Rebuild Played Copper.
-    +1 Coin = 4 all together.
-  Rebuild Played Copper.
-    +1 Coin = 5 all together.
-  Rebuild bought Duchy.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Curse into hand.
-  Rebuild ends turn with deck: Copper(9), Curse(2), Duchy(3), Province(3), Rebuild(2), Silver(7), 
+FishingVillageChapelPoorHouse begins turn
+With hand: Chapel,Fishing Village,Poor House,Poor House,Province,
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 5 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 9 all together.
+  FishingVillageChapelPoorHouse bought Province.
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(4), Province(4), 
 
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Copper,Estate,Mountebank,Silver,Silver,
-  BigMoneyWithCard<Mountebank> Played Mountebank.
+BigMoney begins turn
+With hand: Estate,Estate,Silver,Silver,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-    Rebuild Discarded Curse.
-  BigMoneyWithCard<Mountebank> Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyWithCard<Mountebank> Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 6 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Mountebank> bought Gold.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> reshuffled
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(3), Mountebank(2), Silver(6), 
+  BigMoney bought Duchy.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Silver(7), 
 
 ROUND 13
 -------------
-Rebuild begins turn
-With hand: Copper,Copper,Silver,Silver,
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Silver.
-    +2 Coin = 4 all together.
-  Rebuild Played Copper.
-    +1 Coin = 5 all together.
-  Rebuild Played Copper.
-    +1 Coin = 6 all together.
-  Rebuild bought Duchy.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Duchy into hand.
-  Rebuild Drew Duchy into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(9), Curse(2), Duchy(4), Province(3), Rebuild(2), Silver(7), 
+FishingVillageChapelPoorHouse begins turn
+With hand: Fishing Village,Poor House,Poor House,Province,Province,
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 3 all together.
+    +1 Coin = 2 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 6 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 10 all together.
+  FishingVillageChapelPoorHouse bought Province.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(4), Province(5), 
 
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
-  BigMoneyWithCard<Mountebank> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Mountebank> bought Gold.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> Drew Gold into hand.
-  BigMoneyWithCard<Mountebank> Drew Gold into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(4), Mountebank(2), Silver(6), 
+BigMoney begins turn
+With hand: Estate,Gold,Silver,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Silver.
+    +2 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(1), Silver(7), 
 
 ROUND 14
 -------------
-Rebuild begins turn
-With hand: Copper,Duchy,Duchy,Silver,Silver,
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Silver.
-    +2 Coin = 4 all together.
-  Rebuild Played Copper.
-    +1 Coin = 5 all together.
-  Rebuild bought Duchy.
-  Rebuild Drew Province into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild reshuffled
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Duchy into hand.
-  Rebuild Drew Duchy into hand.
-  Rebuild ends turn with deck: Copper(9), Curse(2), Duchy(5), Province(3), Rebuild(2), Silver(7), 
+FishingVillageChapelPoorHouse begins turn
+With hand: Poor House,Poor House,Province,Province,Province,
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 5 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 9 all together.
+  FishingVillageChapelPoorHouse bought Province.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse Drew Chapel into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(4), Province(6), 
 
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Copper,Gold,Gold,Silver,Silver,
-  BigMoneyWithCard<Mountebank> Played Gold.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyWithCard<Mountebank> Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyWithCard<Mountebank> Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyWithCard<Mountebank> Played Silver.
-    +2 Coin = 10 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 11 all together.
-  BigMoneyWithCard<Mountebank> bought Province.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> Drew Mountebank into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> Drew Mountebank into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(4), Mountebank(2), Province(1), Silver(6), 
-
-ROUND 15
--------------
-Rebuild begins turn
-With hand: Copper,Duchy,Duchy,Province,Silver,
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Copper.
-    +1 Coin = 3 all together.
-  Rebuild bought Estate.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Curse into hand.
-  Rebuild Drew Duchy into hand.
-  Rebuild ends turn with deck: Copper(9), Curse(2), Duchy(5), Estate(1), Province(3), Rebuild(2), Silver(7), 
-
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Copper,Estate,Estate,Mountebank,Mountebank,
-  BigMoneyWithCard<Mountebank> Played Mountebank.
-    +2 Coin = 2 all together.
-    Rebuild Discarded Curse.
-  BigMoneyWithCard<Mountebank> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Mountebank> bought Silver.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> Drew Gold into hand.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(4), Mountebank(2), Province(1), Silver(7), 
-
-ROUND 16
--------------
-Rebuild begins turn
-With hand: Copper,Duchy,Silver,Silver,
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Silver.
-    +2 Coin = 4 all together.
-  Rebuild Played Copper.
-    +1 Coin = 5 all together.
-  Rebuild bought Estate.
-  Rebuild Drew Rebuild into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Province into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Curse into hand.
-  Rebuild ends turn with deck: Copper(9), Curse(2), Duchy(5), Estate(2), Province(3), Rebuild(2), Silver(7), 
-
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  BigMoneyWithCard<Mountebank> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Mountebank> Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 5 all together.
-  BigMoneyWithCard<Mountebank> Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWithCard<Mountebank> Played Copper.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney Played Copper.
     +1 Coin = 8 all together.
-  BigMoneyWithCard<Mountebank> bought Province.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> reshuffled
-  BigMoneyWithCard<Mountebank> Drew Gold into hand.
-  BigMoneyWithCard<Mountebank> Drew Gold into hand.
-  BigMoneyWithCard<Mountebank> Drew Silver into hand.
-  BigMoneyWithCard<Mountebank> Drew Province into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(4), Mountebank(2), Province(2), Silver(7), 
+  BigMoney bought Province.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(2), Silver(7), 
 
-ROUND 17
--------------
-Rebuild begins turn
-With hand: Curse,Province,Rebuild,Silver,Silver,
-  Rebuild Played Rebuild.
-    +1 Actions = 1 all together.
-    Rebuild named Estate.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Duchy.
-    Rebuild trashed Duchy.
-    Rebuild gained Province.
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Silver.
-    +2 Coin = 4 all together.
-  Rebuild bought Estate.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Rebuild into hand.
-  Rebuild Drew Duchy into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild ends turn with deck: Copper(9), Curse(2), Duchy(4), Estate(3), Province(4), Rebuild(2), Silver(7), 
-
-BigMoneyWithCard<Mountebank> begins turn
-With hand: Gold,Gold,Province,Silver,Silver,
-  BigMoneyWithCard<Mountebank> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Mountebank> Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyWithCard<Mountebank> Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyWithCard<Mountebank> Played Silver.
-    +2 Coin = 10 all together.
-  BigMoneyWithCard<Mountebank> bought Province.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Copper into hand.
-  BigMoneyWithCard<Mountebank> Drew Estate into hand.
-  BigMoneyWithCard<Mountebank> Drew Mountebank into hand.
-  BigMoneyWithCard<Mountebank> Drew Mountebank into hand.
-  BigMoneyWithCard<Mountebank> ends turn with deck: Copper(7), Estate(3), Gold(4), Mountebank(2), Province(3), Silver(7), 
-
-ROUND 18
--------------
-Rebuild begins turn
-With hand: Copper,Duchy,Rebuild,Silver,Silver,
-  Rebuild Played Rebuild.
-    +1 Actions = 1 all together.
-    Rebuild named Estate.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Province.
-    Rebuild trashed Province.
-    Rebuild gained Province.
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Silver.
-    +2 Coin = 4 all together.
-  Rebuild Played Copper.
-    +1 Coin = 5 all together.
-  Rebuild bought Estate.
-  Rebuild reshuffled
-  Rebuild Drew Province into hand.
-  Rebuild Drew Rebuild into hand.
-  Rebuild Drew Curse into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Rebuild into hand.
-  Rebuild ends turn with deck: Copper(9), Curse(2), Duchy(4), Estate(4), Province(4), Rebuild(2), Silver(7), 
-
-Game ended in 18 turns.
-Rebuild Won!
-Rebuild total score: 38
-  Copper(9), Curse(2), Duchy(4), Estate(4), Province(4), Rebuild(2), Silver(7), 
-BigMoneyWithCard<Mountebank> total score: 21
-  Copper(7), Estate(3), Gold(4), Mountebank(2), Province(3), Silver(7), 
-Trash contains: Duchy(4), Estate(3), Province(1), 
+Game ended in 14 turns.
+FishingVillageChapelPoorHouse Won!
+FishingVillageChapelPoorHouse total score: 36
+  Chapel(1), Fishing Village(2), Poor House(4), Province(6), 
+BigMoney total score: 18
+  Copper(7), Duchy(1), Estate(3), Gold(4), Province(2), Silver(7), 
+Trash contains: Copper(7), Estate(3), 

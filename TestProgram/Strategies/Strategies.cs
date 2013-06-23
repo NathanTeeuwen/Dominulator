@@ -120,7 +120,8 @@ namespace Program
                 return new CardPickByPriority(
                     CardAcceptance.For<CardTypes.Platinum>(),
                     CardAcceptance.For<CardTypes.Gold>(),
-                    CardAcceptance.For<CardTypes.Harem>(),                    
+                    CardAcceptance.For<CardTypes.Harem>(),
+                    CardAcceptance.For<CardTypes.Talisman>(),                    
                     CardAcceptance.For<CardTypes.Silver>(),
                     CardAcceptance.For<CardTypes.Copper>());
             }
