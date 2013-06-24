@@ -25,7 +25,7 @@ namespace Program
                             discardOrder: Default.EmptyPickOrder());
             }
 
-            private static IGetMatchingCard PurchaseOrder(int followerCost)
+            private static ICardPicker PurchaseOrder(int followerCost)
             {
                 return new CardPickByPriority(
                            CardAcceptance.For(new CardTypes.TestCards.FollowersTest(followerCost), gameState => HasFollowers(gameState)),
@@ -49,7 +49,7 @@ namespace Program
                 return CountAllOwned<CardTypes.TestCards.FollowersTest>(gameState) == 0;
             }
 
-            private static IGetMatchingCard ActionOrder(int followersCost)
+            private static ICardPicker ActionOrder(int followersCost)
             {
                 return new CardPickByPriority(
                            CardAcceptance.For(new CardTypes.TestCards.FollowersTest(followersCost)));

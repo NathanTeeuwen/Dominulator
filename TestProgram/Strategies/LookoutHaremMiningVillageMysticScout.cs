@@ -100,7 +100,7 @@ namespace Program
                 }
             }
 
-            static IGetMatchingCard PurchaseOrder()
+            static ICardPicker PurchaseOrder()
             {
                 return new CardPickByPriority(
                          CardAcceptance.For<CardTypes.Province>(),
@@ -180,7 +180,7 @@ namespace Program
 
                 Card firstCard = currentPlayer.KnownCardsInDeck.First();
 
-                return TrashOrder().GetMatchingCard(gameState, card => card.Equals(firstCard)) != null;
+                return TrashOrder().GetPreferredCard(gameState, card => card.Equals(firstCard)) != null;
             }
 
             static bool ShouldBuyScoutOverMystic(GameState gameState)

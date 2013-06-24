@@ -25,7 +25,7 @@ namespace Program
                             discardOrder: DiscardOrder());
             }
 
-            private static IGetMatchingCard PurchaseOrder()
+            private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
                      CardAcceptance.For<CardTypes.Embassy>(gameState => CountAllOwned<CardTypes.Embassy>(gameState) < 1),

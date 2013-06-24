@@ -26,7 +26,7 @@ namespace Program
                             discardOrder: Default.EmptyPickOrder());
             }
 
-            private static IGetMatchingCard PurchaseOrder(int cardCount)
+            private static ICardPicker PurchaseOrder(int cardCount)
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2),
@@ -39,7 +39,7 @@ namespace Program
 
             }
 
-            private static IGetMatchingCard ActionOrder()
+            private static ICardPicker ActionOrder()
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<T>());
@@ -62,7 +62,7 @@ namespace Program
                             discardOrder: Default.EmptyPickOrder());
             }
 
-            private static IGetMatchingCard PurchaseOrder(int cardCount)
+            private static ICardPicker PurchaseOrder(int cardCount)
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2),
@@ -76,7 +76,7 @@ namespace Program
 
             }
 
-            private static IGetMatchingCard ActionOrder()
+            private static ICardPicker ActionOrder()
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Cartographer>(),

@@ -41,6 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardAcceptance.cs" />
+    <Compile Include="CardPickByBuilderOrder.cs" />
+    <Compile Include="CardPickByPriority.cs" />
+    <Compile Include="CardPickConcatenator.cs" />
+    <Compile Include="ICardPicker.cs" />
+    <Compile Include="PlayerAction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategies\BigMoneySingleCard.cs" />

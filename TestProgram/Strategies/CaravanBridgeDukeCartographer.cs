@@ -34,7 +34,7 @@ namespace Program
                 {
                     BagOfCards revealedCards = player.CardsBeingRevealed;
                     var currentPlayer = gameState.players.CurrentPlayer;
-                    Type result = TopDeckOrder().GetMatchingCard(
+                    Type result = TopDeckOrder().GetPreferredCard(
                         gameState,
                         card => revealedCards.HasCard(card.GetType()));
 
@@ -66,7 +66,7 @@ namespace Program
                 }
             }            
 
-            private static IGetMatchingCard PurchaseOrder()
+            private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
                     CardAcceptance.For<Province>(ShouldBuyProvinceOverDuchyDuke),

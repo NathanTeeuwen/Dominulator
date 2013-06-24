@@ -86,7 +86,7 @@ namespace Program
                 }
             }
 
-            private static IGetMatchingCard PurchaseOrder()
+            private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Province>(ShouldBuyProvince),

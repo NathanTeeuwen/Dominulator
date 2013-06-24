@@ -24,7 +24,7 @@ namespace Program
                             trashOrder: TrashOrder());
             }
 
-            static IGetMatchingCard PurchaseOrder()
+            static ICardPicker PurchaseOrder()
             {
                 return new CardPickByPriority(
                          CardAcceptance.For<CardTypes.Province>(),

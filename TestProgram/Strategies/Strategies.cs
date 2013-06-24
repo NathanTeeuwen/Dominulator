@@ -52,13 +52,13 @@ namespace Program
             return gameState.players.CurrentPlayer.Hand.Where(card => card is T).Count();
         }
 
-        private static int CountAllOwnedMatching(IGetMatchingCard matchingCards, GameState gameState)
+        private static int CountAllOwnedMatching(ICardPicker matchingCards, GameState gameState)
         {
             int result = 0;
 
             foreach (Card card in gameState.players.CurrentPlayer.AllOwnedCards)
             {
-                if (matchingCards.GetMatchingCard(gameState, testCard => testCard.Is(card.GetType())) != null)
+                if (matchingCards.GetPreferredCard(gameState, testCard => testCard.Is(card.GetType())) != null)
                 {
                     result += 1;
                 }
@@ -76,16 +76,16 @@ namespace Program
             };            
         }        
 
-        private static bool HasCardFromInHand(IGetMatchingCard matchingCards, GameState gameState)
+        private static bool HasCardFromInHand(ICardPicker matchingCards, GameState gameState)
         {
-            return matchingCards.GetMatchingCard(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card)) != null;
+            return matchingCards.GetPreferredCard(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card)) != null;
         }
 
-        private static bool HandHasOnlyCardsFrom(IGetMatchingCard matchingCards, GameState gameState)
+        private static bool HandHasOnlyCardsFrom(ICardPicker matchingCards, GameState gameState)
         {
             foreach (Card card in gameState.players.CurrentPlayer.Hand)
             {
-                if (matchingCards.GetMatchingCard(gameState, current => current.Is(card.GetType())) == null)
+                if (matchingCards.GetPreferredCard(gameState, current => current.Is(card.GetType())) == null)
                 {
                     return false;
                 }
@@ -94,12 +94,12 @@ namespace Program
             return true;
         }
 
-        private static int CountInHandFrom(IGetMatchingCard matchingCards, GameState gameState)
+        private static int CountInHandFrom(ICardPicker matchingCards, GameState gameState)
         {
             int result = 0;
             foreach (Card card in gameState.players.CurrentPlayer.Hand)
             {
-                if (matchingCards.GetMatchingCard(gameState, current => current.Is(card.GetType())) != null)
+                if (matchingCards.GetPreferredCard(gameState, current => current.Is(card.GetType())) != null)
                 {
                     ++result;
                 }

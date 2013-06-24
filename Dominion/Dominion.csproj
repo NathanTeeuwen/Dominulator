@@ -81,7 +81,7 @@
     <Compile Include="Collections\ListOfCards.cs" />
     <Compile Include="IGameLog.cs" />
     <Compile Include="IPlayerAction.cs" />
-    <Compile Include="PlayerAction.cs" />
+    <Compile Include="DefaultPlayerAction.cs" />
     <Compile Include="PlayerCircle.cs" />
     <Compile Include="PlayerState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">

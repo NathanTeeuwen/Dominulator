@@ -26,7 +26,7 @@ namespace Program
                             gainOrder: GainOrder());
             }
 
-            private static IGetMatchingCard PurchaseOrder()
+            private static ICardPicker PurchaseOrder()
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Province>(),
@@ -35,7 +35,7 @@ namespace Program
                            CardAcceptance.For<CardTypes.Silver>());
             }
 
-            private static IGetMatchingCard GainOrder()
+            private static ICardPicker GainOrder()
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Develop>(ShouldGainDevelop),
@@ -74,11 +74,11 @@ namespace Program
                 Type result;
                 if (currentPlayer.Hand.Where(card => card.Is<CardTypes.Develop>()).Count() > 1)
                 {
-                    result = TrashOrder().GetMatchingCard(gameState, card => currentPlayer.Hand.HasCard(card));
+                    result = TrashOrder().GetPreferredCard(gameState, card => currentPlayer.Hand.HasCard(card));
                 }
                 else
                 {
-                    result = TrashOrder().GetMatchingCard(gameState, card => currentPlayer.Hand.HasCard(card) && !card.Is<CardTypes.Develop>());
+                    result = TrashOrder().GetPreferredCard(gameState, card => currentPlayer.Hand.HasCard(card) && !card.Is<CardTypes.Develop>());
                 }
 
                 return result != null;
