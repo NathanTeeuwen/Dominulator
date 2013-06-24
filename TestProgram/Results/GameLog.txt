@@ -1,13 +1,13 @@
-FishingVillageChapelPoorHouse gained Estate.
-FishingVillageChapelPoorHouse gained Estate.
-FishingVillageChapelPoorHouse gained Estate.
-FishingVillageChapelPoorHouse gained Copper.
-FishingVillageChapelPoorHouse gained Copper.
-FishingVillageChapelPoorHouse gained Copper.
-FishingVillageChapelPoorHouse gained Copper.
-FishingVillageChapelPoorHouse gained Copper.
-FishingVillageChapelPoorHouse gained Copper.
-FishingVillageChapelPoorHouse gained Copper.
+BigMoneyWithCard<HuntingGrounds> gained Estate.
+BigMoneyWithCard<HuntingGrounds> gained Estate.
+BigMoneyWithCard<HuntingGrounds> gained Estate.
+BigMoneyWithCard<HuntingGrounds> gained Copper.
+BigMoneyWithCard<HuntingGrounds> gained Copper.
+BigMoneyWithCard<HuntingGrounds> gained Copper.
+BigMoneyWithCard<HuntingGrounds> gained Copper.
+BigMoneyWithCard<HuntingGrounds> gained Copper.
+BigMoneyWithCard<HuntingGrounds> gained Copper.
+BigMoneyWithCard<HuntingGrounds> gained Copper.
 BigMoney gained Estate.
 BigMoney gained Estate.
 BigMoney gained Estate.
@@ -18,12 +18,12 @@ BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
-FishingVillageChapelPoorHouse reshuffled
-FishingVillageChapelPoorHouse Drew Copper into hand.
-FishingVillageChapelPoorHouse Drew Copper into hand.
-FishingVillageChapelPoorHouse Drew Estate into hand.
-FishingVillageChapelPoorHouse Drew Copper into hand.
-FishingVillageChapelPoorHouse Drew Estate into hand.
+BigMoneyWithCard<HuntingGrounds> reshuffled
+BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
 BigMoney reshuffled
 BigMoney Drew Copper into hand.
 BigMoney Drew Estate into hand.
@@ -32,21 +32,21 @@ BigMoney Drew Copper into hand.
 BigMoney Drew Copper into hand.
 ROUND 1
 -------------
-FishingVillageChapelPoorHouse begins turn
+BigMoneyWithCard<HuntingGrounds> begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  FishingVillageChapelPoorHouse Played Copper.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
     +1 Coin = 1 all together.
-  FishingVillageChapelPoorHouse Played Copper.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
     +1 Coin = 2 all together.
-  FishingVillageChapelPoorHouse Played Copper.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
     +1 Coin = 3 all together.
-  FishingVillageChapelPoorHouse bought Fishing Village.
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse Drew Estate into hand.
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse ends turn with deck: Copper(7), Estate(3), Fishing Village(1), 
+  BigMoneyWithCard<HuntingGrounds> bought Silver.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
@@ -66,24 +66,24 @@ With hand: Copper,Copper,Copper,Estate,Estate,
 
 ROUND 2
 -------------
-FishingVillageChapelPoorHouse begins turn
+BigMoneyWithCard<HuntingGrounds> begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  FishingVillageChapelPoorHouse Played Copper.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
     +1 Coin = 1 all together.
-  FishingVillageChapelPoorHouse Played Copper.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
     +1 Coin = 2 all together.
-  FishingVillageChapelPoorHouse Played Copper.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
     +1 Coin = 3 all together.
-  FishingVillageChapelPoorHouse Played Copper.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
     +1 Coin = 4 all together.
-  FishingVillageChapelPoorHouse bought Chapel.
-  FishingVillageChapelPoorHouse reshuffled
-  FishingVillageChapelPoorHouse Drew Chapel into hand.
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(7), Estate(3), Fishing Village(1), 
+  BigMoneyWithCard<HuntingGrounds> bought Silver.
+  BigMoneyWithCard<HuntingGrounds> reshuffled
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
@@ -106,22 +106,25 @@ With hand: Copper,Copper,Copper,Copper,Estate,
 
 ROUND 3
 -------------
-FishingVillageChapelPoorHouse begins turn
-With hand: Chapel,Copper,Copper,Copper,Fishing Village,
-  FishingVillageChapelPoorHouse Played Fishing Village.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-  FishingVillageChapelPoorHouse Played Chapel.
-    FishingVillageChapelPoorHouse trashed Copper.
-    FishingVillageChapelPoorHouse trashed Copper.
-    FishingVillageChapelPoorHouse trashed Copper.
-  FishingVillageChapelPoorHouse bought Poor House.
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse Drew Estate into hand.
-  FishingVillageChapelPoorHouse Drew Estate into hand.
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(4), Estate(3), Fishing Village(1), Poor House(1), 
+BigMoneyWithCard<HuntingGrounds> begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<HuntingGrounds> bought Hunting Grounds.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(3), Hunting Grounds(1), Silver(2), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
@@ -143,25 +146,22 @@ With hand: Copper,Copper,Copper,Copper,Estate,
 
 ROUND 4
 -------------
-FishingVillageChapelPoorHouse begins turn
+BigMoneyWithCard<HuntingGrounds> begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
     +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillageChapelPoorHouse Played Copper.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
     +1 Coin = 2 all together.
-  FishingVillageChapelPoorHouse Played Copper.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
     +1 Coin = 3 all together.
-  FishingVillageChapelPoorHouse Played Copper.
-    +1 Coin = 4 all together.
-  FishingVillageChapelPoorHouse bought Fishing Village.
-  FishingVillageChapelPoorHouse Drew Estate into hand.
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse reshuffled
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse Drew Chapel into hand.
-  FishingVillageChapelPoorHouse Drew Estate into hand.
-  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(4), Estate(3), Fishing Village(2), Poor House(1), 
+  BigMoneyWithCard<HuntingGrounds> bought Silver.
+  BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> reshuffled
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(3), Hunting Grounds(1), Silver(3), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Estate,Estate,Silver,
@@ -175,232 +175,30 @@ With hand: Copper,Copper,Estate,Estate,Silver,
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
   BigMoney reshuffled
-  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
   BigMoney ends turn with deck: Copper(7), Estate(3), Silver(4), 
 
 ROUND 5
 -------------
-FishingVillageChapelPoorHouse begins turn
-With hand: Chapel,Copper,Copper,Estate,Estate,
-  FishingVillageChapelPoorHouse Played Chapel.
-    FishingVillageChapelPoorHouse trashed Estate.
-    FishingVillageChapelPoorHouse trashed Estate.
-    FishingVillageChapelPoorHouse trashed Copper.
-    FishingVillageChapelPoorHouse trashed Copper.
-  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
-  FishingVillageChapelPoorHouse Drew Estate into hand.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(2), Estate(1), Fishing Village(2), Poor House(1), 
-
-BigMoney begins turn
-With hand: Copper,Estate,Estate,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(5), 
-
-ROUND 6
--------------
-FishingVillageChapelPoorHouse begins turn
-With hand: Copper,Estate,Fishing Village,Fishing Village,Poor House,
-  FishingVillageChapelPoorHouse Played Fishing Village.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-  FishingVillageChapelPoorHouse Played Fishing Village.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 6 all together.
-    +-1 Coin = 5 all together.
-  FishingVillageChapelPoorHouse Played Copper.
-    +1 Coin = 6 all together.
-  FishingVillageChapelPoorHouse bought Poor House.
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse reshuffled
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse Drew Estate into hand.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse Drew Chapel into hand.
-  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(2), Estate(1), Fishing Village(2), Poor House(2), 
-
-BigMoney begins turn
+BigMoneyWithCard<HuntingGrounds> begins turn
 With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoney Played Silver.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
     +1 Coin = 4 all together.
-  BigMoney Played Copper.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
     +1 Coin = 5 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(6), 
-
-ROUND 7
--------------
-FishingVillageChapelPoorHouse begins turn
-With hand: Chapel,Copper,Estate,Poor House,Poor House,
-  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
-    +1 Coin = 2 all together.
-    +1 Actions = 3 all together.
-  FishingVillageChapelPoorHouse Played Chapel.
-    FishingVillageChapelPoorHouse trashed Estate.
-    FishingVillageChapelPoorHouse trashed Copper.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 6 all together.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 10 all together.
-  FishingVillageChapelPoorHouse bought Province.
-  FishingVillageChapelPoorHouse Drew Copper into hand.
-  FishingVillageChapelPoorHouse reshuffled
-  FishingVillageChapelPoorHouse Drew Chapel into hand.
-  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse Drew Province into hand.
-  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(1), Fishing Village(2), Poor House(2), Province(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(6), 
-
-ROUND 8
--------------
-FishingVillageChapelPoorHouse begins turn
-With hand: Chapel,Copper,Fishing Village,Poor House,Province,
-  FishingVillageChapelPoorHouse Played Fishing Village.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-  FishingVillageChapelPoorHouse Played Chapel.
-    FishingVillageChapelPoorHouse trashed Copper.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 5 all together.
-  FishingVillageChapelPoorHouse bought Poor House.
-  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse reshuffled
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse Drew Chapel into hand.
-  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(3), Province(1), 
-
-BigMoney begins turn
-With hand: Copper,Estate,Estate,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(7), 
-
-ROUND 9
--------------
-FishingVillageChapelPoorHouse begins turn
-With hand: Chapel,Fishing Village,Poor House,Poor House,Poor House,
-  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillageChapelPoorHouse Played Fishing Village.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 6 all together.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 10 all together.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 14 all together.
-  FishingVillageChapelPoorHouse bought Province.
-  FishingVillageChapelPoorHouse Drew Province into hand.
-  FishingVillageChapelPoorHouse reshuffled
-  FishingVillageChapelPoorHouse Drew Province into hand.
-  FishingVillageChapelPoorHouse Drew Chapel into hand.
-  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(3), Province(2), 
-
-BigMoney begins turn
-With hand: Copper,Estate,Silver,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Silver.
-    +2 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(7), 
-
-ROUND 10
--------------
-FishingVillageChapelPoorHouse begins turn
-With hand: Chapel,Fishing Village,Poor House,Province,Province,
-  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillageChapelPoorHouse Played Fishing Village.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 6 all together.
-  FishingVillageChapelPoorHouse bought Poor House.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse reshuffled
-  FishingVillageChapelPoorHouse Drew Province into hand.
-  FishingVillageChapelPoorHouse Drew Province into hand.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(4), Province(2), 
+  BigMoneyWithCard<HuntingGrounds> bought Silver.
+  BigMoneyWithCard<HuntingGrounds> Drew Hunting Grounds into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(3), Hunting Grounds(1), Silver(4), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
@@ -417,37 +215,90 @@ With hand: Copper,Copper,Copper,Silver,Silver,
   BigMoney bought Gold.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(7), 
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
 
-ROUND 11
+ROUND 6
 -------------
-FishingVillageChapelPoorHouse begins turn
-With hand: Poor House,Poor House,Poor House,Province,Province,
-  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 5 all together.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 9 all together.
-  FishingVillageChapelPoorHouse bought Province.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse Drew Chapel into hand.
-  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
-  FishingVillageChapelPoorHouse reshuffled
-  FishingVillageChapelPoorHouse Drew Province into hand.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(4), Province(3), 
+BigMoneyWithCard<HuntingGrounds> begins turn
+With hand: Copper,Estate,Estate,Hunting Grounds,Silver,
+  BigMoneyWithCard<HuntingGrounds> Played Hunting Grounds.
+    BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+    BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+    BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+    BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithCard<HuntingGrounds> bought Gold.
+  BigMoneyWithCard<HuntingGrounds> reshuffled
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Hunting Grounds into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(3), Gold(1), Hunting Grounds(1), Silver(4), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
+With hand: Copper,Copper,Estate,Estate,Estate,
   BigMoney Played Copper.
-    +1 Coin = 4 all together.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
+
+ROUND 7
+-------------
+BigMoneyWithCard<HuntingGrounds> begins turn
+With hand: Copper,Copper,Copper,Hunting Grounds,Silver,
+  BigMoneyWithCard<HuntingGrounds> Played Hunting Grounds.
+    BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+    BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+    BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+    BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithCard<HuntingGrounds> bought Gold.
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(3), Gold(2), Hunting Grounds(1), Silver(4), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
   BigMoney Played Copper.
     +1 Coin = 5 all together.
   BigMoney Played Copper.
@@ -456,70 +307,279 @@ With hand: Copper,Copper,Copper,Copper,Gold,
     +1 Coin = 7 all together.
   BigMoney bought Gold.
   BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(7), 
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), 
 
-ROUND 12
+ROUND 8
 -------------
-FishingVillageChapelPoorHouse begins turn
-With hand: Chapel,Fishing Village,Poor House,Poor House,Province,
-  FishingVillageChapelPoorHouse Played Fishing Village.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 5 all together.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 9 all together.
-  FishingVillageChapelPoorHouse bought Province.
-  FishingVillageChapelPoorHouse Drew Province into hand.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
-  FishingVillageChapelPoorHouse Drew Province into hand.
-  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(4), Province(4), 
+BigMoneyWithCard<HuntingGrounds> begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  BigMoneyWithCard<HuntingGrounds> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithCard<HuntingGrounds> bought Gold.
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+  BigMoneyWithCard<HuntingGrounds> reshuffled
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(3), Gold(3), Hunting Grounds(1), Silver(4), 
 
 BigMoney begins turn
-With hand: Estate,Estate,Silver,Silver,Silver,
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
+
+ROUND 9
+-------------
+BigMoneyWithCard<HuntingGrounds> begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<HuntingGrounds> bought Gold.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(3), Gold(4), Hunting Grounds(1), Silver(4), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), 
+
+ROUND 10
+-------------
+BigMoneyWithCard<HuntingGrounds> begins turn
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoneyWithCard<HuntingGrounds> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<HuntingGrounds> bought Gold.
+  BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(3), Gold(5), Hunting Grounds(1), Silver(4), 
+
+BigMoney begins turn
+With hand: Copper,Gold,Gold,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Gold.
+    +3 Coin = 9 all together.
+  BigMoney Played Silver.
+    +2 Coin = 11 all together.
+  BigMoney Played Copper.
+    +1 Coin = 12 all together.
+  BigMoney bought Province.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(5), 
+
+ROUND 11
+-------------
+BigMoneyWithCard<HuntingGrounds> begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoneyWithCard<HuntingGrounds> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<HuntingGrounds> bought Gold.
+  BigMoneyWithCard<HuntingGrounds> Drew Hunting Grounds into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> reshuffled
+  BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(3), Gold(6), Hunting Grounds(1), Silver(4), 
+
+BigMoney begins turn
+With hand: Copper,Estate,Estate,Silver,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Silver.
     +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(6), 
+
+ROUND 12
+-------------
+BigMoneyWithCard<HuntingGrounds> begins turn
+With hand: Copper,Estate,Gold,Hunting Grounds,Silver,
+  BigMoneyWithCard<HuntingGrounds> Played Hunting Grounds.
+    BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+    BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+    BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+    BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Gold.
+    +3 Coin = 9 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 11 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 12 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 13 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 14 all together.
+  BigMoneyWithCard<HuntingGrounds> bought Province.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(3), Gold(6), Hunting Grounds(1), Province(1), Silver(4), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
   BigMoney Played Silver.
-    +2 Coin = 6 all together.
-  BigMoney bought Duchy.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(6), 
+
+ROUND 13
+-------------
+BigMoneyWithCard<HuntingGrounds> begins turn
+With hand: Copper,Estate,Gold,Gold,Silver,
+  BigMoneyWithCard<HuntingGrounds> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyWithCard<HuntingGrounds> bought Province.
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(3), Gold(6), Hunting Grounds(1), Province(2), Silver(4), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
   BigMoney Drew Estate into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Gold into hand.
   BigMoney Drew Silver into hand.
-  BigMoney reshuffled
   BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Silver(7), 
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(6), 
 
-ROUND 13
+ROUND 14
 -------------
-FishingVillageChapelPoorHouse begins turn
-With hand: Fishing Village,Poor House,Poor House,Province,Province,
-  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillageChapelPoorHouse Played Fishing Village.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 6 all together.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 10 all together.
-  FishingVillageChapelPoorHouse bought Province.
-  FishingVillageChapelPoorHouse reshuffled
-  FishingVillageChapelPoorHouse Drew Province into hand.
-  FishingVillageChapelPoorHouse Drew Province into hand.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse Drew Province into hand.
-  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(4), Province(5), 
+BigMoneyWithCard<HuntingGrounds> begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  BigMoneyWithCard<HuntingGrounds> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithCard<HuntingGrounds> bought Province.
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+  BigMoneyWithCard<HuntingGrounds> reshuffled
+  BigMoneyWithCard<HuntingGrounds> Drew Province into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(3), Gold(6), Hunting Grounds(1), Province(3), Silver(4), 
 
 BigMoney begins turn
 With hand: Estate,Gold,Silver,Silver,Silver,
@@ -532,34 +592,80 @@ With hand: Estate,Gold,Silver,Silver,Silver,
   BigMoney Played Silver.
     +2 Coin = 9 all together.
   BigMoney bought Province.
+  BigMoney Drew Province into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Gold into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(1), Silver(7), 
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(2), Silver(6), 
 
-ROUND 14
+ROUND 15
 -------------
-FishingVillageChapelPoorHouse begins turn
-With hand: Poor House,Poor House,Province,Province,Province,
-  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 5 all together.
-  FishingVillageChapelPoorHouse Played Poor House.
-    +4 Coin = 9 all together.
-  FishingVillageChapelPoorHouse bought Province.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse Drew Province into hand.
-  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
-  FishingVillageChapelPoorHouse Drew Chapel into hand.
-  FishingVillageChapelPoorHouse Drew Poor House into hand.
-  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(4), Province(6), 
+BigMoneyWithCard<HuntingGrounds> begins turn
+With hand: Copper,Copper,Estate,Province,Silver,
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWithCard<HuntingGrounds> bought Estate.
+  BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Hunting Grounds into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Province into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(4), Gold(6), Hunting Grounds(1), Province(3), Silver(4), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Gold,Silver,
+With hand: Copper,Gold,Province,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(3), Silver(6), 
+
+ROUND 16
+-------------
+BigMoneyWithCard<HuntingGrounds> begins turn
+With hand: Copper,Gold,Hunting Grounds,Province,Silver,
+  BigMoneyWithCard<HuntingGrounds> Played Hunting Grounds.
+    BigMoneyWithCard<HuntingGrounds> Drew Province into hand.
+    BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+    BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+    BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+  BigMoneyWithCard<HuntingGrounds> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Gold.
+    +3 Coin = 9 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 11 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 13 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 14 all together.
+  BigMoneyWithCard<HuntingGrounds> bought Province.
+  BigMoneyWithCard<HuntingGrounds> Drew Silver into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Estate into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Estate(4), Gold(6), Hunting Grounds(1), Province(4), Silver(4), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
   BigMoney Played Silver.
@@ -568,20 +674,55 @@ With hand: Copper,Copper,Copper,Gold,Silver,
     +1 Coin = 6 all together.
   BigMoney Played Copper.
     +1 Coin = 7 all together.
+  BigMoney bought Duchy.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Province into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(5), Province(3), Silver(6), 
+
+ROUND 17
+-------------
+BigMoneyWithCard<HuntingGrounds> begins turn
+With hand: Copper,Estate,Estate,Gold,Silver,
+  BigMoneyWithCard<HuntingGrounds> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<HuntingGrounds> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<HuntingGrounds> bought Duchy.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Copper into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+  BigMoneyWithCard<HuntingGrounds> Drew Gold into hand.
+  BigMoneyWithCard<HuntingGrounds> ends turn with deck: Copper(7), Duchy(1), Estate(4), Gold(6), Hunting Grounds(1), Province(4), Silver(4), 
+
+BigMoney begins turn
+With hand: Copper,Gold,Province,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
   BigMoney Played Copper.
     +1 Coin = 8 all together.
   BigMoney bought Province.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(2), Silver(7), 
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(5), Province(4), Silver(6), 
 
-Game ended in 14 turns.
-FishingVillageChapelPoorHouse Won!
-FishingVillageChapelPoorHouse total score: 36
-  Chapel(1), Fishing Village(2), Poor House(4), Province(6), 
-BigMoney total score: 18
-  Copper(7), Duchy(1), Estate(3), Gold(4), Province(2), Silver(7), 
-Trash contains: Copper(7), Estate(3), 
+Game ended in 17 turns.
+BigMoneyWithCard<HuntingGrounds> Won!
+BigMoneyWithCard<HuntingGrounds> total score: 31
+  Copper(7), Duchy(1), Estate(4), Gold(6), Hunting Grounds(1), Province(4), Silver(4), 
+BigMoney total score: 30
+  Copper(7), Duchy(1), Estate(3), Gold(5), Province(4), Silver(6), 
+Trash contains: 

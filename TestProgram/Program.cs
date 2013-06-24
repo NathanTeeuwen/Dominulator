@@ -13,7 +13,16 @@ namespace Program
 
         static void Main()
         {
-            HighestWinRateVsBigMoney();
+            DarkAgesBigMoney();
+        }
+
+        static void DarkAgesBigMoney()
+        {
+            // for forum topic: http://forum.dominionstrategy.com/index.php?topic=6281.0
+            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoney.Player(2));
+            //ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Catacombs>.Player(1, 2), Strategies.BigMoney.Player(2));
+            //ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Count>.Player(1), Strategies.BigMoney.Player(2));
+            ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.HuntingGrounds>.Player(1), Strategies.BigMoney.Player(2));
         }
 
         static void HighestWinRateVsBigMoney()

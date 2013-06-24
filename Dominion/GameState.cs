@@ -46,6 +46,7 @@ namespace Dominion
     public enum PlayerActionChoice
     {
         PlusCoin,
+        PutInHand,
         Discard,
         PlusCard,
         PlusAction,
@@ -53,7 +54,7 @@ namespace Dominion
         GainCard,
         TopDeck,
         Trash,
-        Nothing
+        Nothing,        
     }      
 
     public struct CardPlacementPair

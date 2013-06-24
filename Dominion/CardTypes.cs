@@ -1881,7 +1881,7 @@ namespace Dominion.CardTypes
             : base("Abandoned Mine", coinCost: 0, isAction: true, plusCoins: 1, isRuin: true)
         {
         }
-    }
+    }    
 
     public class RuinedLibrary :
         Card
@@ -1926,6 +1926,42 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Catacombs :
+        Card
+    {
+        public Catacombs()
+            : base("Catacombs", coinCost: 5, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RevealCardsFromDeck(3);
+            PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState, actionChoice => actionChoice == PlayerActionChoice.Discard || actionChoice == PlayerActionChoice.PutInHand);
+            switch (choice)
+            {
+                case PlayerActionChoice.Discard:
+                {
+                    currentPlayer.MoveRevealedCardsToDiscard();
+                    currentPlayer.DrawAdditionalCardsIntoHand(3);
+                    break;
+                }
+                case PlayerActionChoice.PutInHand:
+                {
+                    currentPlayer.MoveRevealedCardsToHand(acceptableCard => true);
+                    break;
+                }
+                default:
+                throw new Exception();
+            }
+        }
+
+        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) < this.CurrentCoinCost(currentPlayer), "Must gain a card cheaper than this");
+        }
+    }
+
     public class Cartographer :
         Card
     {
@@ -1947,6 +1983,24 @@ namespace Dominion.CardTypes
             }
 
             currentPlayer.MoveRevealedCardsToDiscard();
+        }
+    }
+
+    public class HuntingGrounds :
+        Card
+    {
+        public HuntingGrounds()
+            : base("Hunting Grounds", coinCost: 6, plusCards:4, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        {
+            Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, acceptableCard => acceptableCard.Is<CardTypes.Duchy>() || acceptableCard.Is<CardTypes.Estate>(), "Choose Duchy or 3 Estate");
+            if (gainedCard.Is<CardTypes.Estate>())
+            {
+                currentPlayer.GainCardsFromSupply<CardTypes.Estate>(gameState, 2); // gain 2 more for total of 3.                
+            }
         }
     }
 

@@ -896,6 +896,11 @@ namespace Dominion
                 gameState.PlayerGainCardFromSupply(cardType, this, defaultLocation);
         }
 
+        internal void GainCardsFromSupply<CardType>(GameState gameState, int count, DeckPlacement defaultLocation = DeckPlacement.Discard)
+        {
+            GainCardsFromSupply(gameState, typeof(CardType), count, defaultLocation);
+        }
+
         internal bool GainCardFromSupply<cardType>(GameState gameState)
         {
             return gameState.PlayerGainCardFromSupply(typeof(cardType), this) != null;
