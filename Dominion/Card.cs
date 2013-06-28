@@ -142,6 +142,13 @@ namespace Dominion
             return false;
         }
 
+        // return true if blocks attack;
+        virtual public bool DoReactionToAttackWhileInPlay(PlayerState currentPlayer, GameState gameState)
+        {
+            // by default, all cards are affected by attack
+            return false;
+        }
+
         virtual public void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
         {
         }

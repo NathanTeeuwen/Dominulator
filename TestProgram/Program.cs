@@ -12,7 +12,8 @@ namespace Program
     {
         static void Main()
         {
-
+            EvaulateBestStrategyForFirstGame();
+            FindBestStrategyForFirstGame();
         }
 
         static void EvaulateBestStrategyForFirstGame()

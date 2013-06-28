@@ -379,6 +379,7 @@ namespace Dominion
             currentPlayerState.InitializeTurn();
             currentPlayer.BeginTurn();
 
+            ReturnCardsToHandAtStartOfTurn(currentPlayerState);
             DoDurationActionsFromPreviousTurn(currentPlayerState);
             DoActionPhase(currentPlayerState);
             DoPlayTreasures(currentPlayerState);
@@ -390,6 +391,11 @@ namespace Dominion
             currentPlayer.EndTurn();            
             this.gameLog.EndTurn(currentPlayerState);
             this.gameLog.PopScope();
+        }
+
+        private void ReturnCardsToHandAtStartOfTurn(PlayerState currentPlayer)
+        {
+            currentPlayer.MoveCardsFromPreviousTurnIntoHand();
         }
 
         private void DoDurationActionsFromPreviousTurn(PlayerState currentPlayer)

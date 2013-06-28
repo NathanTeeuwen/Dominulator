@@ -6,210 +6,8 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-    public interface IGameLog
-        : IDisposable
-    {
-        void PushScope();
-        void PopScope();
-        void BeginRound();
-        void BeginTurn(PlayerState playerState);
-        void EndTurn(PlayerState playerState);
-        void PlayerNamedCard(PlayerState playerState, Card card);
-        void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source);
-        void PlayerBoughtCard(PlayerState playerState, Card card);
-        void GainedCard(PlayerState playerState, Card card);
-        void PlayedCard(PlayerState playerState, Card card);
-        void ReceivedDurationEffectFrom(PlayerState playerState, Card card);
-        void PlayerGainedCard(PlayerState playerState, Card card);
-        void PlayerDiscardCard(PlayerState playerState, Card card);
-        void PlayerTrashedCard(PlayerState playerState, Card card);
-        void PlayerPutCardInHand(PlayerState playerState, Card card);
-        void PlayerTopDeckedCard(PlayerState playerState, Card card);
-        void DrewCardIntoHand(PlayerState playerState, Card card);
-        void DiscardedCard(PlayerState playerState, Card card);
-        void ReshuffledDiscardIntoDeck(PlayerState playerState);
-        void EndGame(GameState gameState);
-        void PlayerGainedCoin(PlayerState playerState, int coinAmount);
-        void PlayerGainedActions(PlayerState playerState, int actionAmount);
-        void PlayerGainedBuys(PlayerState playerState, int actionAmount);
-        void LogDeck(PlayerState playerState);
-    }
-
-
-    public class EmptyGameLog
-        : IGameLog
-    {
-        public void Dispose()
-        {
-        }
-
-        public void BeginRound()
-        {
-        }
-
-        public void PushScope()
-        {
-
-        }
-
-        public void PopScope()
-        {
-
-        }
-
-        public void BeginTurn(PlayerState playerState)
-        {
-        }
-
-        public void EndTurn(PlayerState playerState)
-        {
-        }
-
-        public void PlayerBoughtCard(PlayerState playerState, Card card)
-        {
-        }
-
-        public void GainedCard(PlayerState playerState, Card card)
-        {
-        }
-
-        public void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source)
-        {
-
-        }
-
-        public void PlayerNamedCard(PlayerState playerState, Card card)
-        {
-
-        }
-
-        public void DrewCardIntoHand(PlayerState playerState, Card card)
-        {
-        }
-
-        public void DiscardedCard(PlayerState playerState, Card card)
-        {
-        }
-
-        public void PlayerGainedCard(PlayerState playerState, Card card)
-        {
-        }
-
-        public void PlayerDiscardCard(PlayerState playerState, Card card)
-        {
-        }
-
-        public void PlayerTrashedCard(PlayerState playerState, Card card)
-        {
-        }
-
-        public void PlayerPutCardInHand(PlayerState playerState, Card card)
-        {
-
-        }
-
-        public void PlayerTopDeckedCard(PlayerState playerState, Card card)
-        {
-        }
-
-        public void PlayedCard(PlayerState playerState, Card card)
-        {
-        }
-
-        public void ReceivedDurationEffectFrom(PlayerState playerState, Card card)
-        {
-
-        }
-
-        public void ReshuffledDiscardIntoDeck(PlayerState playerState)
-        {
-        }
-
-        public void EndGame(GameState gameState)
-        {
-        }
-
-        public void PlayerGainedCoin(PlayerState playerState, int coinAmount)
-        {
-        }
-
-        public void PlayerGainedActions(PlayerState playerState, int coinAmount)
-        {
-
-        }
-
-        public void PlayerGainedBuys(PlayerState playerState, int coinAmount)
-        {
-
-        }
-
-        public void LogDeck(PlayerState playerState)
-        {
-        }
-    }
-
-    internal class IndentedTextWriter
-        : IDisposable
-    {
-        private bool isNewLine = true;
-        int indentLevel = 0;
-        System.IO.TextWriter textWriter;
-
-        public IndentedTextWriter(string filename)
-        {
-            this.textWriter = new System.IO.StreamWriter(filename);
-        }
-
-        public void Indent()
-        {
-            this.indentLevel++;
-        }
-
-        public void Unindent()
-        {
-            this.indentLevel--;
-        }
-
-        public void Write(string format, params object[] args)
-        {
-            IndentIfNewLine();
-            this.textWriter.Write(format, args);
-        }
-
-        public void WriteLine(string format, params object[] args)
-        {
-            IndentIfNewLine();
-            this.textWriter.WriteLine(format, args);
-            this.isNewLine = true;
-        }
-
-        public void WriteLine()
-        {
-            this.textWriter.WriteLine();
-            this.isNewLine = true;
-        }
-
-        private void IndentIfNewLine()
-        {
-            if (this.isNewLine)
-            {
-                for (int i = 0; i < this.indentLevel; ++i)
-                {
-                    this.textWriter.Write("  ");
-                }
-
-                this.isNewLine = false;
-            }
-        }
-
-        public void Dispose()
-        {
-            this.textWriter.Dispose();
-        }
-    }
-
     public class HumanReadableGameLog
-        : IGameLog, IDisposable
+    : IGameLog, IDisposable
     {
         int roundNumber = 0;
         IndentedTextWriter textWriter;
@@ -361,7 +159,7 @@ namespace Dominion
             }
 
             this.textWriter.Write("Trash contains: ");
-            this.WriteAllCards(gameState.trash);            
+            this.WriteAllCards(gameState.trash);
         }
 
         public void PlayerGainedCoin(PlayerState playerState, int coinAmount)
@@ -377,7 +175,7 @@ namespace Dominion
         public void PlayerGainedBuys(PlayerState playerState, int buyAmount)
         {
             this.textWriter.WriteLine("+{0} Buys = {1} all together.", buyAmount, playerState.AvailableBuys);
-        }        
+        }
 
         private void WriteAllCards(PlayerState playerState)
         {
@@ -391,15 +189,15 @@ namespace Dominion
             var cardComparer = new CompareCardByType();
             Array.Sort(allCards, cardComparer);
 
-            for (int index = 0; index < allCards.Length;)
+            for (int index = 0; index < allCards.Length; )
             {
                 Card currentCard = allCards[index];
-                int cardCount  = 0;                
+                int cardCount = 0;
                 do
                 {
                     cardCount++;
                     index++;
-                }while (index < allCards.Length && cardComparer.Equals(currentCard, allCards[index]));
+                } while (index < allCards.Length && cardComparer.Equals(currentCard, allCards[index]));
 
                 this.textWriter.Write("{0}({1}), ", currentCard.name, cardCount);
             }
@@ -408,12 +206,22 @@ namespace Dominion
 
         public void LogDeck(PlayerState playerState)
         {
-            this.textWriter.Write("{0} Deck (Player knows {1} cards):", playerState.actions.PlayerName, playerState.deck.KnownCards.Count());            
+            this.textWriter.Write("{0} Deck (Player knows {1} cards):", playerState.actions.PlayerName, playerState.deck.KnownCards.Count());
             foreach (Card card in playerState.deck)
             {
                 this.textWriter.Write("{0}, ", card.name);
             }
             this.textWriter.WriteLine();
+        }
+
+        public void PlayerReturnedCardToHand(PlayerState playerState, Card card)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void PlayerSetAsideCardFromHandForNextTurn(PlayerState playerState, Card card)
+        {
+            throw new NotImplementedException();
         }
     }
 }

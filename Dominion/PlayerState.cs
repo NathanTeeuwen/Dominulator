@@ -7,107 +7,13 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-    class PlayerTurnCounters
-    {
-        private int availableActionCount;
-        private int availableBuys;
-        private int availableCoins;        
-        internal HashSet<Type> cardsBannedFromPurchase = new HashSet<Type>();
-        internal int copperAdditionalValue = 0;        
-               
-        internal void InitializeTurn()
-        {
-            this.availableActionCount = 1;
-            this.availableBuys = 1;        
-            this.availableCoins = 0;
-            this.copperAdditionalValue = 0;            
-            this.cardsBannedFromPurchase.Clear();
-        }
-
-        internal int AvailableActions
-        {
-            get
-            {
-                return this.availableActionCount;
-            }
-
-        }
-
-        internal int AvailableCoins
-        {
-            get
-            {
-                return this.availableCoins;
-            }
-        }
-
-        internal int AvailableBuys
-        {
-            get
-            {
-                return this.availableBuys;
-            }
-        }
-
-        public void AddBuys(PlayerState playerState, int count)
-        {
-            if (count > 0)
-            {
-                this.availableBuys += count;
-                playerState.gameLog.PlayerGainedBuys(playerState, count);
-            }
-        }
-
-        public void AddActions(PlayerState playerState, int count)
-        {
-            if (count > 0)
-            {
-                this.availableActionCount += count;
-                playerState.gameLog.PlayerGainedActions(playerState, count);
-            }
-        }
-
-        public void RemoveBuy()
-        {
-            this.availableBuys--;
-        }
-
-        public void RemoveAction()
-        {
-            this.availableActionCount--;
-        }
-
-        public void AddCoins(PlayerState playerState, int count)
-        {
-            if (count != 0)
-            {
-                this.availableCoins += count;
-                if (availableCoins < 0)
-                {
-                    availableCoins = 0;
-                }
-                playerState.gameLog.PlayerGainedCoin(playerState, count);
-            }
-        }
-
-        internal void RemoveCoins(int count)        
-        {
-            availableCoins -= count;        
-            if (availableCoins < 0)
-            {
-                availableCoins = 0;
-            }
-        }
-    }
-
     public class PlayerState
     {
         internal int numberOfTurnsPlayed;        
         internal readonly IPlayerAction actions;
         internal readonly IGameLog gameLog;
         internal PlayPhase playPhase;
-        internal Random random;
-        internal bool hasPlayerGainedCard;
+        internal Random random;        
 
         public IPlayerAction Actions { get { return this.actions; } }
         public int AvailableCoins { get { return this.turnCounters.AvailableCoins; } }
@@ -126,6 +32,7 @@ namespace Dominion
         internal BagOfCards hand = new BagOfCards();        
         internal BagOfCards cardsPlayed = new BagOfCards();
         internal BagOfCards durationCards = new BagOfCards();
+        internal BagOfCards cardsToReturnToHandAtStartOfTurn = new BagOfCards();
         internal Card cardToPass = null;
         internal BagOfCards islandMat = new BagOfCards();
         internal BagOfCards nativeVillageMat = new BagOfCards();               
@@ -478,6 +385,15 @@ namespace Dominion
             this.MoveAllCardsToDiscard(this.hand);
         }
 
+        internal void DiscardCardFromTopOfDeck()
+        {
+            Card card = this.deck.DrawCardFromTop();
+            if (card != null)
+            {
+                this.discard.AddCard(card);
+            }
+        }
+
         internal Card RequestPlayerChooseActionToRemoveFromHandForPlay(GameState gameState, bool isOptional)
         {
             if (!this.hand.HasCard(card => card.isAction))
@@ -738,6 +654,19 @@ namespace Dominion
                 
                 this.MoveRevealedCardToDiscard(cardToDiscard, gameState);
             }
+        }
+
+        internal Card RequestPlayerDeferCardFromHandtoNextTurn(GameState gameState)
+        {
+            if (this.Hand.IsEmpty)
+                return null;
+
+            Type cardType = this.actions.GetCardFromHandToDeferToNextTurn(gameState);
+
+            Card cardToDefer = this.hand.RemoveCard(cardType);
+            this.cardsToReturnToHandAtStartOfTurn.AddCard(cardToDefer);
+            this.gameLog.PlayerSetAsideCardFromHandForNextTurn(this, cardToDefer);
+            return cardToDefer;
         }
 
         internal Card RequestPlayerTopDeckCardFromHand(GameState gameState, CardPredicate acceptableCard, bool isOptional)
@@ -1002,6 +931,16 @@ namespace Dominion
             MoveAllCardsToDiscard(this.deck);
         }
 
+        internal void MoveCardsFromPreviousTurnIntoHand()
+        {
+            foreach (Card card in this.cardsToReturnToHandAtStartOfTurn)
+            {
+                this.Hand.AddCard(card);
+                this.gameLog.PlayerReturnedCardToHand(this, card);
+            }
+            this.cardsToReturnToHandAtStartOfTurn.Clear();
+        }
+
         internal void MoveDurationCardsToInPlay()
         {
             foreach (Card card in this.durationCards)
@@ -1119,7 +1058,7 @@ namespace Dominion
             this.cardsBeingRevealed.RemoveCard(card);
             this.hand.AddCard(card);
             return card;
-        }
+        }        
 
         internal void MoveRevealedCardToHand(Card card)
         {                        
@@ -1152,6 +1091,14 @@ namespace Dominion
             foreach (Card reactionCard in this.hand)
             {
                 if (reactionCard.DoReactionToAttack(this, gameState))
+                {
+                    isAffected = false;
+                }
+            }
+
+            foreach (Card durationCard in this.CardsInPlay)
+            {
+                if (durationCard.DoReactionToAttackWhileInPlay(this, gameState))
                 {
                     isAffected = false;
                 }
@@ -1241,6 +1188,11 @@ namespace Dominion
                 }
 
                 foreach (Card card in this.durationCards)
+                {
+                    yield return card;
+                }
+
+                foreach (Card card in this.cardsToReturnToHandAtStartOfTurn)
                 {
                     yield return card;
                 }

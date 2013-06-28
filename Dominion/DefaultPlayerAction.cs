@@ -208,5 +208,10 @@ namespace Dominion
         {
             return PlayerMustChooseNumber();
         }
+
+        virtual public Type GetCardFromHandToDeferToNextTurn(GameState gameState)
+        {
+            return PlayerMustMakeCardChoice();
+        }
     }    
 }

@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Dominion
+{
+    public interface IGameLog
+        : IDisposable
+    {
+        void PushScope();
+        void PopScope();
+        void BeginRound();
+        void BeginTurn(PlayerState playerState);
+        void EndTurn(PlayerState playerState);
+        void PlayerNamedCard(PlayerState playerState, Card card);
+        void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source);
+        void PlayerBoughtCard(PlayerState playerState, Card card);
+        void GainedCard(PlayerState playerState, Card card);
+        void PlayedCard(PlayerState playerState, Card card);
+        void ReceivedDurationEffectFrom(PlayerState playerState, Card card);
+        void PlayerGainedCard(PlayerState playerState, Card card);
+        void PlayerDiscardCard(PlayerState playerState, Card card);
+        void PlayerTrashedCard(PlayerState playerState, Card card);
+        void PlayerPutCardInHand(PlayerState playerState, Card card);
+        void PlayerTopDeckedCard(PlayerState playerState, Card card);
+        void PlayerSetAsideCardFromHandForNextTurn(PlayerState playerState, Card card);
+        void PlayerReturnedCardToHand(PlayerState playerState, Card card);
+        void DrewCardIntoHand(PlayerState playerState, Card card);
+        void DiscardedCard(PlayerState playerState, Card card);
+        void ReshuffledDiscardIntoDeck(PlayerState playerState);
+        void EndGame(GameState gameState);
+        void PlayerGainedCoin(PlayerState playerState, int coinAmount);
+        void PlayerGainedActions(PlayerState playerState, int actionAmount);
+        void PlayerGainedBuys(PlayerState playerState, int actionAmount);
+        void LogDeck(PlayerState playerState);
+    }
+}

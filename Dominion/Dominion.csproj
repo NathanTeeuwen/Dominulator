@@ -68,22 +68,36 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cards\Alchemy.cs" />
+    <Compile Include="Cards\BaseSet.cs" />
+    <Compile Include="Cards\Cornucopia.cs" />
+    <Compile Include="Cards\DarkAges.cs" />
+    <Compile Include="Cards\Guilds.cs" />
+    <Compile Include="Cards\Hinterlands.cs" />
+    <Compile Include="Cards\Intrigue.cs" />
+    <Compile Include="Cards\Promo.cs" />
+    <Compile Include="Cards\Prosperity.cs" />
+    <Compile Include="Cards\Seaside.cs" />
     <Compile Include="Collections\BagOfCards.cs" />
     <Compile Include="Card.cs" />
     <Compile Include="Collections\CollectionCards.cs" />
-    <Compile Include="CardTypes.cs" />
+    <Compile Include="Cards\TestCards.cs" />
     <Compile Include="Collections\PileOfCards.cs" />
     <Compile Include="GameConfig.cs" />
+    <Compile Include="GameLogs\EmptyGameLog.cs" />
+    <Compile Include="GameLogs\HumanReadableGameLog.cs" />
+    <Compile Include="GameLogs\IndentedTextWriter.cs" />
     <Compile Include="GameSets.cs" />
     <Compile Include="GameState.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Collections\ListOfCards.cs" />
-    <Compile Include="IGameLog.cs" />
+    <Compile Include="GameLogs\IGameLog.cs" />
     <Compile Include="IPlayerAction.cs" />
     <Compile Include="DefaultPlayerAction.cs" />
     <Compile Include="PlayerCircle.cs" />
     <Compile Include="PlayerState.cs" />
+    <Compile Include="PlayerTurnCounters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
