@@ -183,6 +183,7 @@ namespace Dominion
 
     public class GameState
     {
+        internal bool hasCurrentPlayerGainedCard;
         public IGameLog gameLog;
         public PlayerCircle players;
         public PileOfCards[] supplyPiles;
@@ -202,58 +203,9 @@ namespace Dominion
         {
             int playerCount = players.Length;
             this.gameLog = gameLog;
-            this.players = new PlayerCircle(playerCount, players, this.gameLog, random);
- 
-            var supplyCardPiles = new List<PileOfCards>(capacity:20);
-            var nonSupplyCardPiles = new List<PileOfCards>();
-
-            int curseCount = (playerCount - 1) * 10;
-            int ruinsCount = curseCount;
-            int victoryCount = (playerCount == 2) ? 8 : 12;
-
-            Add<CardTypes.Copper>(supplyCardPiles, 60);
-            Add<CardTypes.Silver>(supplyCardPiles, 40);
-            Add<CardTypes.Gold>(supplyCardPiles, 30);
-            Add<CardTypes.Curse>(supplyCardPiles, curseCount);
-            Add<CardTypes.Estate>(supplyCardPiles, victoryCount);
-            Add<CardTypes.Duchy>(supplyCardPiles, victoryCount);
-            Add<CardTypes.Province>(supplyCardPiles, victoryCount);
-            if (gameConfig.useShelters)
-            {
-                Add<CardTypes.Necropolis>(nonSupplyCardPiles, 0);
-                Add<CardTypes.OvergrownEstate>(nonSupplyCardPiles, 0);
-                Add<CardTypes.Hovel>(nonSupplyCardPiles, 0);
-            }
-
-            if (gameConfig.useColonyAndPlatinum)
-            {
-                Add<CardTypes.Colony>(supplyCardPiles, victoryCount);
-                Add<CardTypes.Platinum>(supplyCardPiles, 20);
-            }
-
-            bool requiresRuins = false;
-
-            foreach (Card card in gameConfig.supplyPiles)
-            {
-                if (card.isVictory)
-                {
-                    Add(supplyCardPiles, victoryCount, card);
-                }
-                else
-                {
-                    Add(supplyCardPiles, card.defaultSupplyCount, card);
-                }
-
-                requiresRuins |= card.requiresRuins;
-            }
-
-            if (requiresRuins)
-            {
-                supplyCardPiles.Add(CreateRuins(ruinsCount, random));
-            }
-
-            this.supplyPiles = supplyCardPiles.ToArray();
-            this.nonSupplyPiles = nonSupplyCardPiles.ToArray();
+            this.players = new PlayerCircle(playerCount, players, this.gameLog, random);                         
+            this.supplyPiles = gameConfig.GetSupplyPiles(playerCount, random);
+            this.nonSupplyPiles = gameConfig.GetNonSupplyPiles();
             this.hasPileEverBeenGained = new MapPileOfCardsToProperty<bool>(this.supplyPiles);
             this.pileEmbargoTokenCount = new MapPileOfCardsToProperty<int>(this.supplyPiles);
             this.trash = new BagOfCards();
@@ -345,8 +297,11 @@ namespace Dominion
 
         public void PlayGameToEnd()
         {
+            int noGainCount = 0;
+
             while (!IsVictoryConditionReached())
             {
+                this.hasCurrentPlayerGainedCard = false;
                 if (this.players.BeginningOfRound)
                 {
                     this.gameLog.BeginRound();
@@ -358,7 +313,21 @@ namespace Dominion
                 {
                     break;
                 }
-                this.players.PassTurnLeft();                
+
+                if (this.hasCurrentPlayerGainedCard == false)
+                {
+                    ++noGainCount;
+                    if (noGainCount >= 10)
+                    {
+                        break;
+                    }
+                }
+                else
+                {
+                    noGainCount = 0;
+                }
+
+                this.players.PassTurnLeft();
             }
 
             this.gameLog.EndGame(this);

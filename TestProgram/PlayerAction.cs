@@ -24,7 +24,7 @@ namespace Program
             string name,
             int playerIndex,
             ICardPicker purchaseOrder,
-            ICardPicker actionOrder,
+            ICardPicker actionOrder = null,
             ICardPicker treasurePlayOrder = null,
             ICardPicker discardOrder = null,
             ICardPicker trashOrder = null,
@@ -32,7 +32,7 @@ namespace Program
         {
             this.playerIndex = playerIndex;
             this.purchaseOrder = purchaseOrder;
-            this.actionOrder = actionOrder;
+            this.actionOrder = actionOrder == null ? Strategies.Default.ActionPlayOrder(this.purchaseOrder) : actionOrder;
             this.trashOrder = trashOrder == null ? Strategies.Default.EmptyPickOrder() : trashOrder;
             this.treasurePlayOrder = treasurePlayOrder == null ? Strategies.Default.TreasurePlayOrder() : treasurePlayOrder;
             this.discardOrder = discardOrder == null ? Strategies.Default.EmptyPickOrder() : discardOrder;

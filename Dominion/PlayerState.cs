@@ -107,6 +107,7 @@ namespace Dominion
         internal readonly IGameLog gameLog;
         internal PlayPhase playPhase;
         internal Random random;
+        internal bool hasPlayerGainedCard;
 
         public IPlayerAction Actions { get { return this.actions; } }
         public int AvailableCoins { get { return this.turnCounters.AvailableCoins; } }
@@ -944,9 +945,10 @@ namespace Dominion
                 }
             }
 
-            this.gameLog.PopScope();
-
+            this.gameLog.PopScope();            
             this.PlaceCardFromPlacement(new CardPlacementPair(card, defaultPlacement), gameState);
+
+            gameState.hasCurrentPlayerGainedCard |= true;
         }
 
         private void TriggerShuffleOfDiscardIntoDeck()

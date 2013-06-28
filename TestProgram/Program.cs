@@ -10,11 +10,269 @@ namespace Program
 {
     class Program
     {
-
         static void Main()
         {
-            DarkAgesBigMoney();
+
         }
+
+        static void EvaulateBestStrategyForFirstGame()
+        {
+            //FindBestStrategy currently finds the following, which is better than BigMoneySimple, but not as good as BigMoney
+            //Province(1), Province, Gold, Market(1), Duchy(2), Militia(2), Silver, Estate(1),Workshop(1), Cellar(1),
+            var player1 = new PlayerAction("Player 1", 1, 
+                new CardPickByPriority(
+                    CardAcceptance.For<CardTypes.Province>(),
+                    CardAcceptance.For<CardTypes.Gold>(),
+                    CardAcceptance.For<CardTypes.Market>(gameState => Strategies.CountAllOwned<CardTypes.Market>(gameState) < 1),
+                    CardAcceptance.For<CardTypes.Duchy>(gameState => Strategies.CountAllOwned<CardTypes.Duchy>(gameState) < 2),
+                    CardAcceptance.For<CardTypes.Militia>(gameState => Strategies.CountAllOwned<CardTypes.Militia>(gameState) < 2),
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Estate>(gameState => Strategies.CountAllOwned<CardTypes.Militia>(gameState) < 1)
+                    ));
+            ComparePlayers(player1, Strategies.BigMoneySimple.Player(2), showVerboseScore: true);
+            ComparePlayers(player1, Strategies.BigMoney.Player(2), showVerboseScore:true);
+            ComparePlayers(player1, Strategies.BigMoneySingleSmithy.Player(2), showVerboseScore: true);            
+        }
+
+        static void FindBestStrategyForFirstGame()
+        {
+            var initialDescription = new PickByPriorityDescription( new CardAcceptanceDescription[]
+            {
+                new CardAcceptanceDescription( new CardTypes.Province(), new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)}),
+                new CardAcceptanceDescription( new CardTypes.Gold(), new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)}),
+                new CardAcceptanceDescription( new CardTypes.Silver(), new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)})
+            });
+
+            Random random = new Random();
+
+            Card[] supplyCards = GameSets.FirstGame.GetSupplyPiles(2, random).Select(pile => pile.ProtoTypeCard).ToArray();
+
+            var initialPopulation = Enumerable.Range(0, 10).Select( index => initialDescription).ToArray();
+            var algorithm = new GeneticAlgorithm<PickByPriorityDescription, MutatePickByPriorityDescription, CompareStrategies>(
+                initialPopulation,
+                new MutatePickByPriorityDescription(random, supplyCards),
+                new CompareStrategies(),
+                new Random());
+
+            for (int i = 0; i < 1000; ++i)
+            {
+                System.Console.WriteLine("Generation {0}", i);
+                System.Console.WriteLine("==============", i);
+                for (int j = 0; j < 10; ++j)
+                {
+                    algorithm.currentMembers[j].Write(System.Console.Out);
+                    System.Console.WriteLine();
+                }
+
+                algorithm.RunOneGeneration();
+
+                System.Console.WriteLine();
+            }
+        }        
+
+        delegate bool ApplyMutation(List<CardAcceptanceDescription> descripton);
+
+        class MutatePickByPriorityDescription
+            : ISpecidesMutator<PickByPriorityDescription>
+        {
+            ApplyMutation[] mutators;
+            Random random;
+            Card[] availableCards;
+
+            public MutatePickByPriorityDescription(Random random, Card[] availableCards)
+            {
+                this.random = random;
+                this.availableCards = availableCards;
+                this.mutators = CreateMutators();
+            }
+
+            public PickByPriorityDescription Mutate(PickByPriorityDescription member)
+            {
+                List<CardAcceptanceDescription> descriptions = new List<CardAcceptanceDescription>(member.descriptions);
+
+                bool applied = false;
+                while (!applied)
+                {
+                    var mutator = this.mutators[this.random.Next(this.mutators.Length)];
+                    applied = mutator(descriptions);
+                }
+
+                return new PickByPriorityDescription(descriptions.ToArray());
+            }
+
+            ApplyMutation[] CreateMutators()
+            {
+                return new ApplyMutation[]
+                {
+                    this.ApplyAddNewCardAcceptance,
+                    this.ApplyRemoveCardAcceptance,
+                    this.ApplyModifyCardAcceptanceCount,
+                    this.ApplySwapOrderCardAcceptance,
+                    //this.ApplyAddNewUniqueCardAcceptance
+                };
+            }            
+
+            private Card PickRandomCardFromSupply(Card[] excluded)
+            {                
+                for (int i = 0; i < 3; ++i)
+                {
+                    Card result = this.availableCards[this.random.Next(this.availableCards.Length)];
+                    if (!DoesSetInclude(excluded, result))
+                        return result;
+                }
+
+                return null;
+            }
+
+            private bool DoesSetInclude(Card[] cards, Card test)
+            {
+                foreach (Card card in cards)
+                {
+                    if (card.Equals(test))
+                        return true;
+                }
+
+                return false;
+            }
+
+            private bool ApplyAddNewUniqueCardAcceptance(List<CardAcceptanceDescription> descriptions)
+            {
+                Card card = this.PickRandomCardFromSupply(descriptions.Select(descr => descr.card).ToArray());
+                if (card == null)
+                    return false;
+                int insertLocation = FindLocationByCost(descriptions, card);
+                descriptions.Insert(insertLocation, new CardAcceptanceDescription(card, new MatchDescription[] { new MatchDescription(null, CountSource.AllOwned, Comparison.LessThan, 10) }));
+
+                return true;
+            }
+
+            private bool ApplyAddNewCardAcceptance(List<CardAcceptanceDescription> descriptions)
+            {
+                Card card = this.PickRandomCardFromSupply(new Card[0]{});            
+                if (card == null)
+                    return false;
+                
+                int insertLocation = FindLocationByCost(descriptions, card);
+                
+                if (this.random.Next(2) == 0)
+                {
+                    insertLocation += this.random.Next(2)+2;
+                }
+                else
+                {
+                    insertLocation -= this.random.Next(2)+2;
+                }
+                //int insertLocation = this.random.Next(descriptions.Count());
+
+                insertLocation = Math.Max(0, insertLocation);
+                insertLocation = Math.Min(descriptions.Count, insertLocation);
+
+                if (insertLocation > 0 && descriptions[insertLocation - 1].card.Equals(card))
+                    return false;
+
+                if (insertLocation < descriptions.Count-1 && descriptions[insertLocation +1].card.Equals(card))
+                    return false;
+                                
+                descriptions.Insert(insertLocation, new CardAcceptanceDescription(card, new MatchDescription[] { new MatchDescription(null, CountSource.AllOwned, Comparison.LessThan, 1) }));
+
+                return true;
+            }
+
+            private int FindLocationByCost(List<CardAcceptanceDescription> descriptions, Card card)
+            {
+                int insertLocation = 0;
+
+                while (insertLocation < descriptions.Count)
+                {                    
+                    if (descriptions[insertLocation].matchDescriptions[0].countSource != CountSource.None ||
+                        descriptions[insertLocation].card.DefaultCoinCost > card.DefaultCoinCost)
+                    {
+                        insertLocation++;
+                    }
+                    else
+                        break;
+                }
+
+                return insertLocation;
+            }
+
+            private bool ApplyRemoveCardAcceptance(List<CardAcceptanceDescription> descriptions)
+            {
+                if (descriptions.Count <= 3)
+                    return false;
+
+                int removeLocation = this.random.Next(descriptions.Count);
+
+                if (descriptions[removeLocation].matchDescriptions[0].countSource == CountSource.None)
+                    return false;
+
+                descriptions.RemoveAt(removeLocation);
+                return true;
+            }
+
+            private bool ApplyModifyCardAcceptanceCount(List<CardAcceptanceDescription> descriptions)
+            {
+                int descriptionIndex = this.random.Next(descriptions.Count);
+                
+                var description = descriptions[descriptionIndex];
+
+                int threshhold = description.matchDescriptions[0].countThreshHold;
+
+                if (threshhold == 0)
+                {
+                    return false;
+                }
+
+
+                bool shouldIncrement = this.random.Next(2) == 0 || threshhold == 1;
+
+                if (shouldIncrement)
+                {
+                    threshhold++;
+                }
+                else
+                {
+                    threshhold--;
+                }
+
+                var newDescription = description.Clone();
+                newDescription.matchDescriptions[0].countThreshHold = threshhold;
+                descriptions[descriptionIndex] = newDescription;
+
+                return true;
+            }
+
+            private bool ApplySwapOrderCardAcceptance(List<CardAcceptanceDescription> descriptions)
+            {
+                if (descriptions.Count <= 1)
+                    return false;
+
+                int swapFirstIndex = this.random.Next(descriptions.Count - 1);
+                int nextSwapIndex = swapFirstIndex + 1;
+
+                var temp = descriptions[swapFirstIndex];
+                descriptions[swapFirstIndex] = descriptions[nextSwapIndex];
+                descriptions[nextSwapIndex] = temp;
+
+                return true;
+            }
+        }
+
+        class CompareStrategies
+            : IScoreSpecies<PickByPriorityDescription>
+        {
+            public double Compare(PickByPriorityDescription left, PickByPriorityDescription right)
+            {
+                //System.Console.WriteLine("Comparing: ");
+                //left.Write(System.Console.Out);
+                //System.Console.WriteLine("");
+                //right.Write(System.Console.Out);
+                //System.Console.WriteLine("");
+                PlayerAction leftPlayer = new PlayerAction("Player1", 1, left.ToCardPicker());
+                PlayerAction rightPlayer = new PlayerAction("Player2", 2, right.ToCardPicker());
+                return Program.ComparePlayers(leftPlayer, rightPlayer, numberOfGames:33);
+            }            
+        }       
 
         static void DarkAgesBigMoney()
         {
@@ -67,48 +325,35 @@ namespace Program
                 ComparePlayers(Strategies.FollowersTest.Player(1, i), Strategies.BigMoney.Player(2), showCompactScore: true);
             }
         }
-
-        /*
-        static void Main()
-        {
-            
-            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoney.Player(2));
-            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCard<CardTypes.Cartographer>.Player(2));
-            
-            //ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneyDelayed.Player(2));
-            
-            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCard<CardTypes.Smithy>.Player(2));
-            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCardCartographer<CardTypes.Smithy>.Player(2));
-
-            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCard<CardTypes.Rabble>.Player(2));
-            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCardCartographer<CardTypes.Rabble>.Player(2));
-            
-            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCard<CardTypes.Torturer>.Player(2));            
-            ComparePlayers(Strategies.CaravanBridgeDukeCartographer.Player(1), Strategies.BigMoneySingleCardCartographer<CardTypes.Torturer>.Player(2));                       
-        }*/
-
+        
         static IGameLog GetGameLogForIteration(int gameCount)
         {
             return new HumanReadableGameLog("..\\..\\Results\\GameLog" + (gameCount == 0 ? "" : gameCount.ToString()) + ".txt");
         }
 
-
-        static void ComparePlayers(PlayerAction player1, PlayerAction player2, bool useShelters = false, bool firstPlayerAdvantage = false, bool showCompactScore = false, bool showDistribution = false)
-        {
-            int numberOfGames = 10000;
-
+        static double ComparePlayers(
+            PlayerAction player1, 
+            PlayerAction player2, 
+            bool useShelters = false, 
+            bool firstPlayerAdvantage = false, 
+            bool showVerboseScore = false,
+            bool showCompactScore = false, 
+            bool showDistribution = false,
+            int numberOfGames = 10000, 
+            int logGameCount = 0)
+        {            
             PlayerAction[] players = new PlayerAction[] { player1, player2 };
             int[] winnerCount = new int[2];
             int tieCount = 0;
 
             var countbyBucket = new CountByBucket();
 
-            //for (int gameCount = 0; gameCount < numberOfGames; ++gameCount)
+            for (int gameCount = 0; gameCount < numberOfGames; ++gameCount)
 
-            Parallel.ForEach(Enumerable.Range(0, numberOfGames),
-                delegate(int gameCount)
+            //Parallel.ForEach(Enumerable.Range(0, numberOfGames),
+              //  delegate(int gameCount)
                 {
-                    using (IGameLog gameLog = gameCount < 100 ? GetGameLogForIteration(gameCount) : new EmptyGameLog())
+                    using (IGameLog gameLog = gameCount < logGameCount ? GetGameLogForIteration(gameCount) : new EmptyGameLog())
                     //using (IGameLog gameLog = new HumanReadableGameLog("..\\..\\Results\\GameLog." + gameCount ) )
                     {
                         // swap order every other game
@@ -155,9 +400,9 @@ namespace Program
                         }
                     }
                 }
-            );
+            //);
 
-            if (!showCompactScore)
+            if (showVerboseScore) 
             {
                 for (int index = 0; index < winnerCount.Length; ++index)
                 {
@@ -169,7 +414,8 @@ namespace Program
                 }
                 System.Console.WriteLine();
             }
-            else
+
+            if (showCompactScore)
             {
                 System.Console.WriteLine("{0}, {1}, {2}",
                     PlayerWinPercent(0, winnerCount, numberOfGames),
@@ -184,6 +430,9 @@ namespace Program
                 System.Console.WriteLine("=================================");
                 countbyBucket.WriteBuckets(System.Console.Out);
             }
+
+            double diff = PlayerWinPercent(0, winnerCount, numberOfGames) - PlayerWinPercent(1, winnerCount, numberOfGames);
+            return diff;
         }
 
         static double TiePercent(int tieCount, int numberOfGames)
@@ -218,35 +467,7 @@ namespace Program
                     writer.WriteLine("{0} points:   {2}% = {1}", pair.Key, pair.Value, (double)pair.Value / this.totalCount * 100);
                 }
             }
-        }
-
-        static CardPickByPriority SimplePurchaseOrder3()
-        {
-            return new CardPickByPriority(
-                       CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Gold).Count() > 2),
-                       CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),
-                       CardAcceptance.For<CardTypes.Gold>(),
-                       CardAcceptance.For<CardTypes.Silver>());
-
-        }
-
-        static CardPickByPriority SimplePurchaseOrder2()
-        {
-            return new CardPickByPriority(
-                       CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Gold).Count() > 2),
-                       CardAcceptance.For<CardTypes.Gold>(),
-                       CardAcceptance.For<CardTypes.Silver>());
-        }
-
-        static CardPickByPriority SimplePurchaseOrder()
-        {
-            return new CardPickByPriority(
-                CardAcceptance.For<CardTypes.Province>(),
-                CardAcceptance.For<CardTypes.Gold>(),
-                CardAcceptance.For<CardTypes.Duchy>(),
-                CardAcceptance.For<CardTypes.Silver>(),
-                CardAcceptance.For<CardTypes.Estate>());
-        }
+        }   
 
         static Card[] GetCardSet(PlayerAction playerAction1, PlayerAction playerAction2)
         {
