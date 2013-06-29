@@ -26,7 +26,7 @@ namespace Program
                             discardOrder: Default.EmptyPickOrder());
             }
 
-            private static ICardPicker PurchaseOrder(int cardCount)
+            public static ICardPicker PurchaseOrder(int cardCount)
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2),

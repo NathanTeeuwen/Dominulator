@@ -12,8 +12,26 @@ namespace Program
     {
         static void Main()
         {
-            EvaulateBestStrategyForFirstGame();
-            FindBestStrategyForFirstGame();
+            //EvaulateBestStrategyForFirstGame();
+            //FindBestStrategyForFirstGame();
+
+            //FindBestStrategy currently finds the following, which is better than BigMoneySimple, but not as good as BigMoney
+            //Province(1), Province, Gold, Market(1), Duchy(2), Militia(2), Silver, Estate(1),Workshop(1), Cellar(1),                       
+
+            ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Wharf>.Player(1), Strategies.BigMoney.Player(2));            
+        }
+
+        static void PlayRemake()
+        {
+            var player1 = new PlayerAction("Player 1", 1,
+                Strategies.BigMoneyWithCard<CardTypes.Remake>.Player(1).purchaseOrder,
+                actionOrder: new CardPickByPriority(
+                    CardAcceptance.For<CardTypes.Remake>(gameState => Strategies.CountInHand<CardTypes.Copper>(gameState) + Strategies.CountInHand<CardTypes.Estate>(gameState) >= 2)),
+                trashOrder: new CardPickByPriority(
+                    CardAcceptance.For<CardTypes.Estate>(),
+                    CardAcceptance.For<CardTypes.Copper>()));
+
+            ComparePlayers(player1, Strategies.BigMoney.Player(2));            
         }
 
         static void EvaulateBestStrategyForFirstGame()
@@ -337,11 +355,11 @@ namespace Program
             PlayerAction player2, 
             bool useShelters = false, 
             bool firstPlayerAdvantage = false, 
-            bool showVerboseScore = false,
+            bool showVerboseScore = true,
             bool showCompactScore = false, 
             bool showDistribution = false,
             int numberOfGames = 10000, 
-            int logGameCount = 0)
+            int logGameCount = 100)
         {            
             PlayerAction[] players = new PlayerAction[] { player1, player2 };
             int[] winnerCount = new int[2];

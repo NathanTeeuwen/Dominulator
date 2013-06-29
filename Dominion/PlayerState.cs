@@ -213,7 +213,7 @@ namespace Dominion
         {
             if (!currentCard.isAction)
             {
-                throw new Exception("Can't play a card that isn't a treasure");
+                throw new Exception("Can't play a card that isn't a action");
             }
 
             this.gameLog.PlayedCard(this, currentCard);
