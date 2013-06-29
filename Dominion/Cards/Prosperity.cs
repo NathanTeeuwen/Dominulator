@@ -364,7 +364,7 @@ namespace Dominion.CardTypes
                 return DeckPlacement.TopOfDeck;
             }
 
-            return DeckPlacement.Sentinel;
+            return DeckPlacement.Default;
         }
     }
 
@@ -491,7 +491,7 @@ namespace Dominion.CardTypes
             {
                 case PlayerActionChoice.Trash: return DeckPlacement.Trash;
                 case PlayerActionChoice.TopDeck: return DeckPlacement.TopOfDeck;
-                case PlayerActionChoice.Nothing: return DeckPlacement.Sentinel;
+                case PlayerActionChoice.Nothing: return DeckPlacement.Default;
                 default: throw new Exception("Invalid choice");
             }
         }

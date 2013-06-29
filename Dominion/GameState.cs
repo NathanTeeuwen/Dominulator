@@ -40,7 +40,8 @@ namespace Dominion
         Play,
         Trash,
         TopOfDeck,
-        Sentinel
+        None,
+        Default
     }
 
     public enum PlayerActionChoice
@@ -578,6 +579,12 @@ namespace Dominion
         internal bool HasCardEverBeenGainedFromPile(PileOfCards pile)
         {
             return this.hasPileEverBeenGained[pile];            
-        }      
+        }
+
+        internal bool DoesSupplyHaveCard<T>()
+            where T : Card
+        {
+            return this.supplyPiles.Select( pile => pile.ProtoTypeCard.Is<T>()).Any();
+        }
     }          
 }

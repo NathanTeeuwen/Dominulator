@@ -370,7 +370,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            if (currentPlayer.MoveCardFromPlayToTrash(gameState) != null)
+            if (currentPlayer.MoveCardFromPlayToTrash(gameState))
             {
                 if (currentPlayer.TrashCardFromHandOfType(gameState, typeof(TreasureMap), guaranteeInHand: false) != null)
                 {

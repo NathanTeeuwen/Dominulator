@@ -156,6 +156,12 @@ namespace Dominion
             this.gameLog.PlayerRevealedCard(this, card, DeckPlacement.TopOfDeck);            
         }
 
+        internal Card DrawAndLookAtOneCardFromDeck()
+        {
+            // TODO: separate reveal from look
+            return DrawAndRevealOneCardFromDeck();
+        }
+
         internal Card DrawAndRevealOneCardFromDeck()
         {
             Card card = this.DrawOneCard();            
@@ -292,6 +298,7 @@ namespace Dominion
                 case DeckPlacement.Trash: this.MoveCardToTrash(pair.card, gameState); break;
                 case DeckPlacement.Play: this.PlayCard(pair.card, gameState); break;
                 case DeckPlacement.TopOfDeck: this.deck.AddCardToTop(pair.card); break;
+                case DeckPlacement.None: throw new NotImplementedException();
                 default: throw new Exception("Invalid case");
             }
         }
@@ -847,17 +854,13 @@ namespace Dominion
                 this.gameLog.PlayerGainedCard(this, card);
             }
 
-            this.gameLog.PushScope();
-
-            card.DoSpecializedWhenGain(this, gameState);
-
-            // the order of checking card in hand and cards in play doesnt seem to interact, so order doesn't matter.
+            this.gameLog.PushScope();                                   
 
             bool wasCardMoved = false;
             foreach (Card cardInHand in this.Hand)
             {
                 DeckPlacement preferredPlacement = cardInHand.DoSpecializedActionOnGainWhileInHand(this, gameState, card);
-                if (!wasCardMoved && preferredPlacement != DeckPlacement.Sentinel)
+                if (!wasCardMoved && preferredPlacement != DeckPlacement.Default)
                 {
                     defaultPlacement = preferredPlacement;                    
                     wasCardMoved = true;
@@ -867,11 +870,19 @@ namespace Dominion
             foreach (Card cardInPlay in this.CardsInPlay)
             {
                 DeckPlacement preferredPlacement = cardInPlay.DoSpecializedActionOnGainWhileInPlay(this, gameState, card);
-                if (!wasCardMoved && preferredPlacement != DeckPlacement.Sentinel)
+                if (!wasCardMoved && preferredPlacement != DeckPlacement.Default)
                 {
                     defaultPlacement = preferredPlacement;
                     wasCardMoved = true;
                 }
+            }
+
+            // buys are also gains.
+            card.DoSpecializedWhenGain(this, gameState);
+
+            if (gainReason == GainReason.Buy)
+            {
+                card.DoSpecializedWhenBuy(this, gameState);
             }
 
             this.gameLog.PopScope();            
@@ -950,6 +961,11 @@ namespace Dominion
             this.durationCards.Clear();
         }
 
+        internal void MoveLookedAtCardsToDiscard()
+        {
+            this.MoveRevealedCardsToDiscard();
+        }
+
         internal void MoveRevealedCardsToDiscard()
         {
             // trigger discard effects
@@ -1021,6 +1037,11 @@ namespace Dominion
                 this.gameLog.PlayerTopDeckedCard(this, card);
                 this.deck.AddCardToTop(card);
             }
+        }
+
+        internal void MoveLookedAtCardToTopOfDeck(Card card)
+        {
+            MoveRevealedCardToTopOfDeck(card);
         }
 
         internal void MoveRevealedCardToTopOfDeck(Card card)

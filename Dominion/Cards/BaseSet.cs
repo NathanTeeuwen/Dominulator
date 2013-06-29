@@ -11,7 +11,24 @@ namespace Dominion.CardTypes
 
     public class Curse : Card { public Curse() : base("Curse", coinCost: 0, isCurse: true) { } }
     public class Estate : Card { public Estate() : base("Estate", coinCost: 2, victoryPoints: playerState => 1) { } }
-    public class Duchy : Card { public Duchy() : base("Duchy", coinCost: 5, victoryPoints: playerState => 3) { } }
+    
+    public class Duchy 
+        : Card 
+    { 
+        public Duchy() 
+            : base("Duchy", coinCost: 5, victoryPoints: playerState => 3) 
+        { 
+        }
+
+        public override void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        {
+            if (gameState.DoesSupplyHaveCard<Duchess>())
+            {
+                currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.Is<Duchess>(), "may gain a duchess", isOptional: true);                
+            }            
+        }
+    }
+
     public class Province : Card { public Province() : base("Province", coinCost: 8, victoryPoints: playerState => 6) { } }
     public class Copper : Card { public Copper() : base("Copper", coinCost: 0, plusCoins: 1, isTreasure: true) { } }
     public class Silver : Card { public Silver() : base("Silver", coinCost: 3, plusCoins: 2, isTreasure: true) { } }

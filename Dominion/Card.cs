@@ -166,6 +166,10 @@ namespace Dominion
         {
         }
 
+        virtual public void DoSpecializedWhenBuy(PlayerState currentPlayer, GameState gameState)
+        {
+        }
+
         virtual public void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
 
@@ -178,12 +182,12 @@ namespace Dominion
 
         virtual public DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
-            return DeckPlacement.Sentinel;
+            return DeckPlacement.Default;
         }
 
         virtual public DeckPlacement DoSpecializedActionOnGainWhileInPlay(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
-            return DeckPlacement.Sentinel;
+            return DeckPlacement.Default;
         }
 
         virtual public int ProvideDiscountForWhileInPlay(Card card)

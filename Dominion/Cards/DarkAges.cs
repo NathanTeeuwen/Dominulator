@@ -135,31 +135,7 @@ namespace Dominion.CardTypes
         {
             currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) < this.CurrentCoinCost(currentPlayer), "Must gain a card cheaper than this");
         }
-    }
-
-    public class Cartographer :
-        Card
-    {
-        public Cartographer()
-            : base("Cartographer", coinCost: 5, isAction: true, plusCards: 1, plusActions: 1)
-        {
-        }
-
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
-        {
-            currentPlayer.RevealCardsFromDeck(4);
-
-            while (currentPlayer.cardsBeingRevealed.Any())
-            {
-                if (currentPlayer.RequestPlayerTopDeckCardFromRevealed(gameState, true) == null)
-                {
-                    break;
-                }
-            }
-
-            currentPlayer.MoveRevealedCardsToDiscard();
-        }
-    }
+    }    
 
     public class HuntingGrounds :
         Card
@@ -240,50 +216,7 @@ namespace Dominion.CardTypes
             currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruin));
             currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruin));
         }
-    }
-
-    public class Develop :
-        Card
-    {
-        public Develop()
-            : base("Develop", coinCost: 4, isAction: true)
-        {
-        }
-
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
-        {
-            Card trashedCard = currentPlayer.RequestPlayerTrashCardFromHand(gameState, card => true, false);
-
-            int trashedCardCost = trashedCard.CurrentCoinCost(currentPlayer);
-
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost - 1), "Must gain a card costing one less than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost + 1), "Must gain a card costing exactly one more than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
-
-            // TODO:  put the cards on top of your deck in either order.
-        }
-    }
-
-    public class Embassy :
-        Card
-    {
-        public Embassy()
-            : base("Embassy", coinCost: 5, isAction: true, plusCards: 5)
-        {
-        }
-
-        public override void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
-        {
-            foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
-            {
-                otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Silver));
-            }
-        }
-
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
-        {
-            currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 3, isOptional: false);
-        }
-    }
+    }    
 
 
     public class Feodum :
