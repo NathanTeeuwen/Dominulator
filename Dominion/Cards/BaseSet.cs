@@ -20,12 +20,14 @@ namespace Dominion.CardTypes
         { 
         }
 
-        public override void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
             if (gameState.DoesSupplyHaveCard<Duchess>())
             {
                 currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.Is<Duchess>(), "may gain a duchess", isOptional: true);                
-            }            
+            }
+
+            return DeckPlacement.Default;
         }
     }
 

@@ -18,7 +18,10 @@ namespace Program
             //FindBestStrategy currently finds the following, which is better than BigMoneySimple, but not as good as BigMoney
             //Province(1), Province, Gold, Market(1), Duchy(2), Militia(2), Silver, Estate(1),Workshop(1), Cellar(1),                       
 
-            ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Wharf>.Player(1), Strategies.BigMoney.Player(2));            
+            ComparePlayers(Strategies.NomadCampLaboratorySpiceMerchantWarehouse.Player(1), Strategies.BigMoney.Player(2));
+            ComparePlayers(Strategies.LaboratorySpiceMerchantWarehouse.Player(1), Strategies.BigMoney.Player(2));
+            ComparePlayers(Strategies.NomadCampLaboratorySpiceMerchantWarehouse.Player(1), Strategies.LaboratorySpiceMerchantWarehouse.Player(2));
+            ComparePlayers(Strategies.NomadCampLaboratorySpiceMerchantWarehouse.Player(1), Strategies.BigMoneyWithCard<CardTypes.Laboratory>.Player(2, cardCount:3));
         }
 
         static void PlayRemake()
@@ -358,6 +361,7 @@ namespace Program
             bool showVerboseScore = true,
             bool showCompactScore = false, 
             bool showDistribution = false,
+            bool shouldParallel = true,
             int numberOfGames = 10000, 
             int logGameCount = 100)
         {            
@@ -366,60 +370,65 @@ namespace Program
             int tieCount = 0;
 
             var countbyBucket = new CountByBucket();
-
-            for (int gameCount = 0; gameCount < numberOfGames; ++gameCount)
-
-            //Parallel.ForEach(Enumerable.Range(0, numberOfGames),
-              //  delegate(int gameCount)
+             
+            Action<int> loopBody = delegate(int gameCount)                    
+            {
+                using (IGameLog gameLog = gameCount < logGameCount ? GetGameLogForIteration(gameCount) : new EmptyGameLog())                
                 {
-                    using (IGameLog gameLog = gameCount < logGameCount ? GetGameLogForIteration(gameCount) : new EmptyGameLog())
-                    //using (IGameLog gameLog = new HumanReadableGameLog("..\\..\\Results\\GameLog." + gameCount ) )
+                    // swap order every other game
+                    bool swappedOrder = !firstPlayerAdvantage && (gameCount % 2 == 1);
+                    PlayerAction startPlayer = !swappedOrder ? player1 : player2;
+                    PlayerAction otherPlayer = !swappedOrder ? player2 : player1;
+
+                    Random random = new Random(gameCount);
+
+                    var gameConfig = new GameConfig(
+                        useShelters,
+                        parameter: 0,
+                        useColonyAndPlatinum: false,
+                        supplyPiles: GetCardSet(startPlayer, otherPlayer));
+
+                    GameState gameState = new GameState(
+                        gameLog,
+                        new PlayerAction[] { startPlayer, otherPlayer },
+                        gameConfig,
+                        random);
+
+                    gameState.PlayGameToEnd();
+
+                    PlayerState[] winners = gameState.WinningPlayers;
+
+                    int startPlayerScore = gameState.players[0].TotalScore();
+                    int otherPlayerScore = gameState.players[1].TotalScore();
+                    int scoreDifference = startPlayerScore - otherPlayerScore;
+                    if (swappedOrder)
+                        scoreDifference = -scoreDifference;
+
+                    lock (winnerCount)
                     {
-                        // swap order every other game
-                        bool swappedOrder = !firstPlayerAdvantage && (gameCount % 2 == 1);
-                        PlayerAction startPlayer = !swappedOrder ? player1 : player2;
-                        PlayerAction otherPlayer = !swappedOrder ? player2 : player1;
-
-                        Random random = new Random(gameCount);
-
-                        var gameConfig = new GameConfig(
-                            useShelters,
-                            parameter: 0,
-                            useColonyAndPlatinum: false,
-                            supplyPiles: GetCardSet(startPlayer, otherPlayer));
-
-                        GameState gameState = new GameState(
-                            gameLog,
-                            new PlayerAction[] { startPlayer, otherPlayer },
-                            gameConfig,
-                            random);
-
-                        gameState.PlayGameToEnd();
-
-                        PlayerState[] winners = gameState.WinningPlayers;
-
-                        int startPlayerScore = gameState.players[0].TotalScore();
-                        int otherPlayerScore = gameState.players[1].TotalScore();
-                        int scoreDifference = startPlayerScore - otherPlayerScore;
-                        if (swappedOrder)
-                            scoreDifference = -scoreDifference;
-
-                        lock (winnerCount)
+                        countbyBucket.AddOneToBucket(scoreDifference);
+                        if (winners.Length == 1)
                         {
-                            countbyBucket.AddOneToBucket(scoreDifference);
-                            if (winners.Length == 1)
-                            {
-                                int winningPlayerIndex = ((PlayerAction)winners[0].Actions).playerIndex - 1;
-                                winnerCount[winningPlayerIndex]++;
-                            }
-                            else
-                            {
-                                tieCount++;
-                            }
+                            int winningPlayerIndex = ((PlayerAction)winners[0].Actions).playerIndex - 1;
+                            winnerCount[winningPlayerIndex]++;
+                        }
+                        else
+                        {
+                            tieCount++;
                         }
                     }
                 }
-            //);
+            };
+
+            if (shouldParallel)
+            {
+                Parallel.ForEach(Enumerable.Range(0, numberOfGames), loopBody);
+            }
+            else
+            {
+                for (int gameCount = 0; gameCount < numberOfGames; ++gameCount)
+                    loopBody(gameCount);
+            }
 
             if (showVerboseScore) 
             {

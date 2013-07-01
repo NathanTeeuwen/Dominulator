@@ -854,7 +854,7 @@ namespace Dominion
                 this.gameLog.PlayerGainedCard(this, card);
             }
 
-            this.gameLog.PushScope();                                   
+            this.gameLog.PushScope();
 
             bool wasCardMoved = false;
             foreach (Card cardInHand in this.Hand)
@@ -862,10 +862,10 @@ namespace Dominion
                 DeckPlacement preferredPlacement = cardInHand.DoSpecializedActionOnGainWhileInHand(this, gameState, card);
                 if (!wasCardMoved && preferredPlacement != DeckPlacement.Default)
                 {
-                    defaultPlacement = preferredPlacement;                    
+                    defaultPlacement = preferredPlacement;
                     wasCardMoved = true;
                 }
-            }            
+            }
 
             foreach (Card cardInPlay in this.CardsInPlay)
             {
@@ -878,14 +878,21 @@ namespace Dominion
             }
 
             // buys are also gains.
-            card.DoSpecializedWhenGain(this, gameState);
+            {
+                DeckPlacement preferredPlacement = card.DoSpecializedWhenGain(this, gameState);
+                if (!wasCardMoved && preferredPlacement != DeckPlacement.Default)
+                {
+                    defaultPlacement = preferredPlacement;
+                    wasCardMoved = true;
+                }
+            }
 
             if (gainReason == GainReason.Buy)
             {
                 card.DoSpecializedWhenBuy(this, gameState);
             }
 
-            this.gameLog.PopScope();            
+            this.gameLog.PopScope();
             this.PlaceCardFromPlacement(new CardPlacementPair(card, defaultPlacement), gameState);
 
             gameState.hasCurrentPlayerGainedCard |= true;

@@ -17,12 +17,14 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.RequestPlayerGainCardFromSupply(
                 gameState,
                 card => card.CurrentCoinCost(currentPlayer) < this.CurrentCoinCost(currentPlayer),
                 "Must gain a card costing less than this");
+
+            return DeckPlacement.Default;
         }
     }
 
@@ -34,9 +36,10 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.GainCardsFromSupply<Copper>(gameState, 2);
+            return DeckPlacement.Default;
         }
     }
 
@@ -143,12 +146,14 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
             foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
             {
                 otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Silver));
             }
+
+            return DeckPlacement.Default;
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
@@ -243,7 +248,7 @@ namespace Dominion.CardTypes
             currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false);
         }
 
-        public override void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
             // TODO
             throw new NotImplementedException();
@@ -295,7 +300,7 @@ namespace Dominion.CardTypes
             currentPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard => true, isOptional: false);
         }
 
-        public override void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
             throw new NotImplementedException();
         }
@@ -338,9 +343,14 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            if (currentPlayer.actions.ShouldPutCardOnTopOfDeck(this, gameState))
+            {
+                return DeckPlacement.TopOfDeck;
+            }
+
+            return DeckPlacement.Default;
         }
     }
 
@@ -488,7 +498,7 @@ namespace Dominion.CardTypes
         {            
         }
 
-        public override void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
             // TODO need to react to discard ...
             throw new NotImplementedException();

@@ -54,7 +54,9 @@
     <Compile Include="Strategies\BigMoneySingleCard.cs" />
     <Compile Include="Strategies\CaravanBridgeDukeCartographer.cs" />
     <Compile Include="Strategies\BigMoneySimple.cs" />
+    <Compile Include="Strategies\LaboratorySpiceMerchantWarehouse.cs" />
     <Compile Include="Strategies\FishingVillageChapelPoorHouseTalisman.cs" />
+    <Compile Include="Strategies\NomadCampLaboratorySpiceMerchantWarehouse.cs" />
     <Compile Include="Strategies\Rebuild.cs" />
     <Compile Include="Strategies\FollowersTest.cs" />
     <Compile Include="Strategies\LookoutHaremMiningVillageMysticScout.cs" />

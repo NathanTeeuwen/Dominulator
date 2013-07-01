@@ -211,10 +211,11 @@ namespace Dominion.CardTypes
             }
         }
 
-        public override void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruin));
             currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruin));
+            return DeckPlacement.Default;
         }
     }    
 

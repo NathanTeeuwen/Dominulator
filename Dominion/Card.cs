@@ -162,8 +162,9 @@ namespace Dominion
 
         }
 
-        virtual public void DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        virtual public DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
+            return DeckPlacement.Default;
         }
 
         virtual public void DoSpecializedWhenBuy(PlayerState currentPlayer, GameState gameState)
