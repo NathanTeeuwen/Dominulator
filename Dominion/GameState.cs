@@ -586,5 +586,10 @@ namespace Dominion
         {
             return this.supplyPiles.Select( pile => pile.ProtoTypeCard.Is<T>()).Any();
         }
+
+        internal int CountOfDifferentTreasuresInTrash()
+        {
+            return this.trash.Where(card => card.isTreasure).GroupBy(card => card.GetType()).Count();
+        }
     }          
 }

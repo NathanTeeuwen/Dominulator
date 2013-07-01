@@ -28,6 +28,7 @@ namespace Dominion
         public readonly bool isTreasure;
         public readonly bool isDuration;
         public readonly bool requiresRuins;
+        public readonly bool requiresSpoils;
         public readonly bool isShelter;
 
         internal Card(
@@ -49,6 +50,7 @@ namespace Dominion
             bool isTreasure = false,
             bool isDuration = false,
             bool requiresRuins = false,
+            bool requiresSpoils = false,
             bool isShelter = false)
         {
             this.name = name;
@@ -70,6 +72,7 @@ namespace Dominion
             this.requiresRuins = requiresRuins;
             this.isDuration = isDuration;
             this.isShelter = isShelter;
+            this.requiresSpoils = requiresSpoils;
         }
 
         public bool Is(Type card)

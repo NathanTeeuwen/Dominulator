@@ -820,7 +820,7 @@ namespace Dominion
 
             gameState.gameLog.PlayerNamedCard(this, gameState.GetPile(cardType).ProtoTypeCard);
             return cardType;
-        }
+        }        
 
         internal Card GainCardFromSupply(GameState gameState, Type cardType, DeckPlacement defaultLocation = DeckPlacement.Discard)
         {

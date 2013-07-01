@@ -38,6 +38,20 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Spoils :
+        Card
+    {
+        public Spoils()
+            : base("Spoils", coinCost: 0, plusCoins:3, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     // Ruins
 
     public class Ruin :
@@ -101,6 +115,89 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Altar :
+        Card
+    {
+        public Altar()
+            : base("Altar", coinCost: 6, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCard => true, isOptional: false);
+            currentPlayer.RequestPlayerGainCardFromSupply(
+                gameState,
+                card => card.CurrentCoinCost(currentPlayer) <= 5,
+                "Gain a card costing up to 5");
+        }
+    }
+
+    public class Armory :
+        Card
+    {
+        public Armory()
+            : base("Armory", coinCost: 4, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {            
+            currentPlayer.RequestPlayerGainCardFromSupply(
+                gameState,
+                card => card.CurrentCoinCost(currentPlayer) <= 4,
+                "Gain a card costing up to 4",
+                defaultLocation:DeckPlacement.TopOfDeck);
+        }
+    }
+
+    public class BandOfMisfits :
+        Card
+    {
+        public BandOfMisfits()
+            : base("BandOfMisfits", coinCost: 5, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class BanditCamp :
+        Card
+    {
+        public BanditCamp()
+            : base("BanditCamp", coinCost: 5, isAction: true, plusCards:1, plusActions:2, requiresSpoils:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.GainCardFromSupply<CardTypes.Spoils>(gameState);
+        }
+    }
+
+    public class Beggar :
+        Card
+    {
+        public Beggar()
+            : base("Beggar", coinCost: 2, isAction: true, isReaction:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.GainCardsFromSupply<Copper>(gameState, 3, DeckPlacement.Hand);
+        }        
+
+        public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     public class Catacombs :
         Card
     {
@@ -135,25 +232,7 @@ namespace Dominion.CardTypes
         {
             currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) < this.CurrentCoinCost(currentPlayer), "Must gain a card cheaper than this");
         }
-    }    
-
-    public class HuntingGrounds :
-        Card
-    {
-        public HuntingGrounds()
-            : base("Hunting Grounds", coinCost: 6, plusCards: 4, isAction: true)
-        {
-        }
-
-        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
-        {
-            Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, acceptableCard => acceptableCard.Is<CardTypes.Duchy>() || acceptableCard.Is<CardTypes.Estate>(), "Choose Duchy or 3 Estate");
-            if (gainedCard.Is<CardTypes.Estate>())
-            {
-                currentPlayer.GainCardsFromSupply<CardTypes.Estate>(gameState, 2); // gain 2 more for total of 3.                
-            }
-        }
-    }
+    }        
 
     public class Count :
         Card
@@ -191,6 +270,44 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class CounterFeit :
+        Card
+    {
+        public CounterFeit()
+            : base("CounterFeit", coinCost: 5, isTreasure: true, plusCoins: 1, plusBuy: 1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Cultist :
+        Card
+    {
+        public Cultist()
+            : base("Cultist", coinCost: 5, isAction: true, isAttack:true, requiresRuins:true, plusCards:2)
+        {
+        }
+
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
+            otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruin));            
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            // may play another cultist from hand.
+            throw new NotImplementedException();
+        }
+
+        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.DrawAdditionalCardsIntoHand(3);
+        }
+    }
 
     public class DeathCart :
         Card
@@ -219,7 +336,6 @@ namespace Dominion.CardTypes
         }
     }    
 
-
     public class Feodum :
         Card
     {
@@ -241,6 +357,176 @@ namespace Dominion.CardTypes
         public static int VictoryCountForSilver(int silvercount)
         {
             return silvercount / 3;
+        }
+    }
+
+    public class Forager :
+       Card
+    {
+        public Forager()
+            : base("Forager", coinCost: 3, isAction:true, plusBuy:1, plusActions:1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCard => true, isOptional: false);
+            currentPlayer.AddCoins(gameState.CountOfDifferentTreasuresInTrash());
+        }
+    }
+
+    public class Fortress :
+       Card
+    {
+        public Fortress()
+            : base("Fortress", coinCost: 4, isAction: true, plusActions: 2, plusCards:1)
+        {
+        }
+
+        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Graverobber :
+       Card
+    {
+        public Graverobber()
+            : base("Graverobber", coinCost: 5, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Hermit :
+       Card
+    {
+        public Hermit()
+            : base("Hermit", coinCost: 3, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+
+    public class HuntingGrounds :
+        Card
+    {
+        public HuntingGrounds()
+            : base("Hunting Grounds", coinCost: 6, plusCards: 4, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        {
+            Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, acceptableCard => acceptableCard.Is<CardTypes.Duchy>() || acceptableCard.Is<CardTypes.Estate>(), "Choose Duchy or 3 Estate");
+            if (gainedCard.Is<CardTypes.Estate>())
+            {
+                currentPlayer.GainCardsFromSupply<CardTypes.Estate>(gameState, 2); // gain 2 more for total of 3.                
+            }
+        }
+    }
+
+    public class IronMonger :
+        Card
+    {
+        public IronMonger()
+            : base("IronMongerGrounds", coinCost: 4, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RevealCardsFromDeck(1);
+            Card revealedCard  = currentPlayer.CardsBeingRevealed.First();
+
+            currentPlayer.RequestPlayerDiscardRevealedCard(gameState);
+            currentPlayer.MoveRevealedCardToTopOfDeck();
+
+            if (revealedCard.isAction)
+            {
+                currentPlayer.AddActions(1);
+            }
+
+            if (revealedCard.isTreasure)
+            {
+                currentPlayer.AddCoins(1);
+            }
+
+            if (revealedCard.isVictory)
+            {
+                currentPlayer.DrawOneCardIntoHand();
+            }
+        }
+    }
+
+    public class JunkDealer :
+        Card
+    {
+        public JunkDealer()
+            : base("JunkDealer", coinCost: 5, isAction: true, plusCards:1, plusActions:1, plusCoins:1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RequestPlayerTrashCardFromHand(gameState, card => true, isOptional: false);
+        }
+    }
+
+    public class Knights :
+        Card
+    {
+        public Knights()
+            : base("Knights", coinCost: 0, isAction: true, isAttack:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Marauder :
+        Card
+    {
+        public Marauder()
+            : base("Marauder", coinCost: 4, isAction: true, isAttack: true, requiresRuins:true, requiresSpoils:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.GainCardFromSupply<CardTypes.Spoils>(gameState);
+        }
+
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
+            otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruin));
+        }
+    }
+
+    public class MarketSquare :
+        Card
+    {
+        public MarketSquare()
+            : base("MarketSquare", coinCost: 3, isAction: true, plusCards:1, plusActions:1, plusBuy:1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
         }
     }
 
@@ -268,6 +554,24 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Pillage :
+       Card
+    {
+        public Pillage()
+            : base("Pillage", coinCost: 5, isAction: true, isAttack:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
 
     public class PoorHouse :
         Card
@@ -282,6 +586,20 @@ namespace Dominion.CardTypes
             currentPlayer.RevealHand();
 
             currentPlayer.AddCoins(0 - currentPlayer.Hand.Where(card => card.isTreasure).Count());
+        }
+    }
+
+    public class Procession :
+       Card
+    {
+        public Procession()
+            : base("Procession", coinCost: 4, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
         }
     }
 
@@ -349,6 +667,118 @@ namespace Dominion.CardTypes
                     acceptableCard => acceptableCard.isVictory && acceptableCard.CurrentCoinCost(currentPlayer) <= cardCost + 3,
                     "Gain a victory card costing up to 3 more than the trashed card.");
             }
+        }
+    }
+
+    public class Rogue :
+       Card
+    {
+        public Rogue()
+            : base("Rogue", coinCost: 5, isAction: true, isAttack:true, plusCoins:2)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Sage :
+       Card
+    {
+        public Sage()
+            : base("Sage", coinCost: 3, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Scavenger :
+       Card
+    {
+        public Scavenger()
+            : base("Scavenger", coinCost: 4, isAction: true, plusCoins:2)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Squire :
+       Card
+    {
+        public Squire()
+            : base("Squire", coinCost: 2, isAction: true, plusCoins: 1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Storeroom :
+       Card
+    {
+        public Storeroom()
+            : base("Storeroom", coinCost: 3, isAction: true, plusBuy:1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Urchin :
+       Card
+    {
+        public Urchin()
+            : base("Urchin", coinCost: 3, isAction: true, isAttack:true, plusCards:1, plusActions:1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Vagrant :
+       Card
+    {
+        public Vagrant()
+            : base("Vagrant", coinCost: 2, isAction: true, plusCards: 1, plusActions: 1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class WanderingMinstrell :
+       Card
+    {
+        public WanderingMinstrell()
+            : base("WanderingMinstrell", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
         }
     }
 }

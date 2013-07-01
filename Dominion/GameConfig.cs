@@ -51,7 +51,7 @@ namespace Dominion
                 Add<CardTypes.Platinum>(supplyCardPiles, 20);
             }
 
-            bool requiresRuins = false;
+            bool requiresRuins = false;            
 
             foreach (Card card in this.kingdomPiles)
             {
@@ -64,13 +64,13 @@ namespace Dominion
                     Add(supplyCardPiles, card.defaultSupplyCount, card);
                 }
 
-                requiresRuins |= card.requiresRuins;
+                requiresRuins |= card.requiresRuins;                
             }
 
             if (requiresRuins)
             {
                 supplyCardPiles.Add(CreateRuins(ruinsCount, random));
-            }
+            }            
 
             return supplyCardPiles.ToArray();
         }
@@ -85,6 +85,18 @@ namespace Dominion
                 Add<CardTypes.OvergrownEstate>(nonSupplyCardPiles, 0);
                 Add<CardTypes.Hovel>(nonSupplyCardPiles, 0);
             }
+
+            bool requiresSpoils = false;
+
+            foreach (Card card in this.kingdomPiles)
+            {            
+                requiresSpoils |= card.requiresSpoils;
+            }
+
+            if (requiresSpoils)
+            {
+                Add<CardTypes.Spoils>(nonSupplyCardPiles, 15);
+            }    
 
             return nonSupplyCardPiles.ToArray();
         }
