@@ -13,10 +13,8 @@ namespace Dominion.CardTypes
        : Card
     {
         public Fairgrounds()
-            : base("Fairgrounds", coinCost: 6, victoryPoints: playerState => 0)
-        {
-            // todo:  victory points needs to be done
-            throw new NotImplementedException();
+            : base("Fairgrounds", coinCost: 6, victoryPoints: playerState => playerState.AllOwnedCards.GroupBy(card => card.GetType()).Count() / 5 * 2)
+        {            
         }
     }
 

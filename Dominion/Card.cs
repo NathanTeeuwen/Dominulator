@@ -12,6 +12,7 @@ namespace Dominion
     {
         public readonly string name;
         private readonly int coinCost;
+        public readonly int potionCost;
         public readonly int plusAction;
         public readonly int plusBuy;
         public readonly int plusCard;
@@ -34,6 +35,7 @@ namespace Dominion
         internal Card(
             string name,
             int coinCost,
+            int potionCost = 0,
             int plusActions = 0,
             int plusBuy = 0,
             int plusCards = 0,
@@ -55,6 +57,7 @@ namespace Dominion
         {
             this.name = name;
             this.coinCost = coinCost;
+            this.potionCost = potionCost;
             this.plusAction = plusActions;
             this.plusBuy = plusBuy;
             this.plusCard = plusCards;
