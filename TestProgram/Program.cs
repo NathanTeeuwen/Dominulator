@@ -12,7 +12,7 @@ namespace Program
     {
         static void Main()
         {
-            HighestWinRateVsBigMoney();
+            ComparePlayers(Strategies.BigMoney.Player(1), Strategies.BigMoneyWithCard<CardTypes.FarmingVillage>.Player(2));            
         }
 
         static void FindAndCompareBestStrategy()
@@ -421,11 +421,11 @@ namespace Program
                         {
                             int winningPlayerIndex = ((PlayerAction)winners[0].Actions).playerIndex - 1;
                             winnerCount[winningPlayerIndex]++;
-
+                            /*
                             if (winningPlayerIndex == 1)
                             {
                                 System.Console.WriteLine("Player 2 won game {0}. ", gameCount);
-                            }
+                            }*/
                         }
                         else
                         {

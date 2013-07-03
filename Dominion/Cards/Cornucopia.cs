@@ -28,8 +28,27 @@ namespace Dominion.CardTypes
         
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            // TODO
-            throw new NotImplementedException();
+            Card foundCard = null;
+            gameState.gameLog.PushScope();
+            while (true)
+            {
+                foundCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+                if (foundCard == null)
+                    break;
+
+                if (foundCard.isAction || foundCard.isTreasure)
+                {
+                    break;
+                }
+            }
+            gameState.gameLog.PopScope();
+
+            if (foundCard != null)
+            {
+                currentPlayer.MoveRevealedCardToHand(foundCard);
+            }
+
+            currentPlayer.MoveRevealedCardToDiscard(cardToMove => true);
         }
     }
 

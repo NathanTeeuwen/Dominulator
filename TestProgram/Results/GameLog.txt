@@ -1,13 +1,3 @@
-GardensBeggarIronworks gained Estate.
-GardensBeggarIronworks gained Estate.
-GardensBeggarIronworks gained Estate.
-GardensBeggarIronworks gained Copper.
-GardensBeggarIronworks gained Copper.
-GardensBeggarIronworks gained Copper.
-GardensBeggarIronworks gained Copper.
-GardensBeggarIronworks gained Copper.
-GardensBeggarIronworks gained Copper.
-GardensBeggarIronworks gained Copper.
 BigMoney gained Estate.
 BigMoney gained Estate.
 BigMoney gained Estate.
@@ -18,36 +8,30 @@ BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
-GardensBeggarIronworks reshuffled
-GardensBeggarIronworks Drew Copper into hand.
-GardensBeggarIronworks Drew Copper into hand.
-GardensBeggarIronworks Drew Estate into hand.
-GardensBeggarIronworks Drew Copper into hand.
-GardensBeggarIronworks Drew Estate into hand.
+BigMoneyWithCard<FarmingVillage> gained Estate.
+BigMoneyWithCard<FarmingVillage> gained Estate.
+BigMoneyWithCard<FarmingVillage> gained Estate.
+BigMoneyWithCard<FarmingVillage> gained Copper.
+BigMoneyWithCard<FarmingVillage> gained Copper.
+BigMoneyWithCard<FarmingVillage> gained Copper.
+BigMoneyWithCard<FarmingVillage> gained Copper.
+BigMoneyWithCard<FarmingVillage> gained Copper.
+BigMoneyWithCard<FarmingVillage> gained Copper.
+BigMoneyWithCard<FarmingVillage> gained Copper.
 BigMoney reshuffled
 BigMoney Drew Copper into hand.
-BigMoney Drew Estate into hand.
+BigMoney Drew Copper into hand.
 BigMoney Drew Estate into hand.
 BigMoney Drew Copper into hand.
-BigMoney Drew Copper into hand.
+BigMoney Drew Estate into hand.
+BigMoneyWithCard<FarmingVillage> reshuffled
+BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
 ROUND 1
 -------------
-GardensBeggarIronworks begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 3 all together.
-  GardensBeggarIronworks bought Beggar.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Estate into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(1), Copper(7), Estate(3), 
-
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
   BigMoney Played Copper.
@@ -59,32 +43,29 @@ With hand: Copper,Copper,Copper,Estate,Estate,
   BigMoney bought Silver.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
   BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
   BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
+
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithCard<FarmingVillage> bought Silver.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-GardensBeggarIronworks begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 3 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 4 all together.
-  GardensBeggarIronworks bought IronWorks.
-  GardensBeggarIronworks reshuffled
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Beggar into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(1), Copper(7), Estate(3), IronWorks(1), 
-
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
   BigMoney Played Copper.
@@ -97,117 +78,114 @@ With hand: Copper,Copper,Copper,Copper,Estate,
     +1 Coin = 4 all together.
   BigMoney bought Silver.
   BigMoney reshuffled
+  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWithCard<FarmingVillage> bought FarmingVillage.
+  BigMoneyWithCard<FarmingVillage> reshuffled
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Silver(1), 
+
 ROUND 3
 -------------
-GardensBeggarIronworks begins turn
-With hand: Beggar,Copper,Copper,Copper,IronWorks,
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained IronWorks.
-    +1 Actions = 1 all together.
-  GardensBeggarIronworks Played Beggar.
-    GardensBeggarIronworks gained Copper.
-    GardensBeggarIronworks gained Copper.
-    GardensBeggarIronworks gained Copper.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 3 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 4 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 5 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 6 all together.
-  GardensBeggarIronworks bought IronWorks.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Estate into hand.
-  GardensBeggarIronworks Drew Estate into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(1), Copper(10), Estate(3), IronWorks(3), 
-
 BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+
+BigMoneyWithCard<FarmingVillage> begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoney Played Copper.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(3), 
+  BigMoneyWithCard<FarmingVillage> bought Silver.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> Drew FarmingVillage into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Silver(2), 
 
 ROUND 4
 -------------
-GardensBeggarIronworks begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 3 all together.
-  GardensBeggarIronworks bought Beggar.
-  GardensBeggarIronworks Drew Estate into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks reshuffled
-  GardensBeggarIronworks Drew Estate into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(2), Copper(10), Estate(3), IronWorks(3), 
-
 BigMoney begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
   BigMoney Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
   BigMoney bought Silver.
+  BigMoney Drew Estate into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
   BigMoney reshuffled
   BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(4), 
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), 
+
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Copper,Estate,Estate,FarmingVillage,
+  BigMoneyWithCard<FarmingVillage> Played FarmingVillage.
+    +2 Actions = 2 all together.
+      BigMoneyWithCard<FarmingVillage> Revealed Copper.
+    BigMoneyWithCard<FarmingVillage> put Copper into his hand.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithCard<FarmingVillage> bought Silver.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> reshuffled
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Silver(3), 
 
 ROUND 5
 -------------
-GardensBeggarIronworks begins turn
-With hand: Copper,Copper,Estate,Estate,IronWorks,
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained IronWorks.
-    +1 Actions = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks bought Beggar.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Beggar into hand.
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(3), Copper(10), Estate(3), IronWorks(4), 
-
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Silver,
   BigMoney Played Silver.
@@ -219,178 +197,151 @@ With hand: Copper,Copper,Copper,Estate,Silver,
   BigMoney Played Copper.
     +1 Coin = 5 all together.
   BigMoney bought Silver.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(5), 
-
-ROUND 6
--------------
-GardensBeggarIronworks begins turn
-With hand: Beggar,Copper,Copper,Copper,IronWorks,
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained IronWorks.
-    +1 Actions = 1 all together.
-  GardensBeggarIronworks Played Beggar.
-    GardensBeggarIronworks gained Copper.
-    GardensBeggarIronworks gained Copper.
-    GardensBeggarIronworks gained Copper.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 3 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 4 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 5 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 6 all together.
-  GardensBeggarIronworks bought IronWorks.
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Estate into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(3), Copper(13), Estate(3), IronWorks(6), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(5), 
-
-ROUND 7
--------------
-GardensBeggarIronworks begins turn
-With hand: Copper,Copper,Copper,Estate,IronWorks,
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained IronWorks.
-    +1 Actions = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 3 all together.
-  GardensBeggarIronworks bought Beggar.
-  GardensBeggarIronworks Drew Beggar into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks reshuffled
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(4), Copper(13), Estate(3), IronWorks(7), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Estate into hand.
   BigMoney Drew Gold into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
 
-ROUND 8
--------------
-GardensBeggarIronworks begins turn
-With hand: Beggar,Copper,Copper,Copper,IronWorks,
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained IronWorks.
-    +1 Actions = 1 all together.
-  GardensBeggarIronworks Played Beggar.
-    GardensBeggarIronworks gained Copper.
-    GardensBeggarIronworks gained Copper.
-    GardensBeggarIronworks gained Copper.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 3 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 4 all together.
-  GardensBeggarIronworks Played Copper.
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
     +1 Coin = 5 all together.
-  GardensBeggarIronworks Played Copper.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
     +1 Coin = 6 all together.
-  GardensBeggarIronworks bought IronWorks.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(4), Copper(16), Estate(3), IronWorks(9), 
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<FarmingVillage> bought Gold.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(1), Silver(3), 
 
+ROUND 6
+-------------
 BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
+With hand: Copper,Estate,Estate,Gold,Silver,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
   BigMoney Played Silver.
     +2 Coin = 5 all together.
   BigMoney Played Copper.
     +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), 
+
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Estate,Estate,Estate,Silver,
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithCard<FarmingVillage> bought Silver.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew FarmingVillage into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> reshuffled
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(1), Silver(4), 
+
+ROUND 7
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
   BigMoney Played Copper.
     +1 Coin = 7 all together.
   BigMoney bought Gold.
-  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
   BigMoney Drew Estate into hand.
   BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(4), 
+
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Copper,Copper,Copper,FarmingVillage,
+  BigMoneyWithCard<FarmingVillage> Played FarmingVillage.
+    +2 Actions = 2 all together.
+      BigMoneyWithCard<FarmingVillage> Revealed Copper.
+    BigMoneyWithCard<FarmingVillage> put Copper into his hand.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<FarmingVillage> bought Silver.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(1), Silver(5), 
+
+ROUND 8
+-------------
+BigMoney begins turn
+With hand: Copper,Estate,Estate,Gold,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), 
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(4), 
+
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Estate,Estate,Silver,Silver,
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<FarmingVillage> bought Silver.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Gold into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(1), Silver(6), 
 
 ROUND 9
 -------------
-GardensBeggarIronworks begins turn
-With hand: Copper,Copper,Copper,IronWorks,IronWorks,
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained IronWorks.
-    +1 Actions = 1 all together.
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained Silver.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 3 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 4 all together.
-  GardensBeggarIronworks bought Gardens.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Estate into hand.
-  GardensBeggarIronworks Drew Beggar into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(4), Copper(16), Estate(3), Gardens(1), IronWorks(10), Silver(1), 
-
 BigMoney begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
+With hand: Copper,Copper,Copper,Silver,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Silver.
@@ -399,131 +350,38 @@ With hand: Copper,Copper,Estate,Silver,Silver,
     +1 Coin = 5 all together.
   BigMoney Played Copper.
     +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
   BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
   BigMoney reshuffled
+  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(5), 
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Silver(4), 
+
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoneyWithCard<FarmingVillage> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithCard<FarmingVillage> bought Gold.
+  BigMoneyWithCard<FarmingVillage> reshuffled
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(2), Silver(6), 
 
 ROUND 10
 -------------
-GardensBeggarIronworks begins turn
-With hand: Beggar,Copper,Copper,Estate,IronWorks,
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained Beggar.
-    +1 Actions = 1 all together.
-  GardensBeggarIronworks Played Beggar.
-    GardensBeggarIronworks gained Copper.
-    GardensBeggarIronworks gained Copper.
-    GardensBeggarIronworks gained Copper.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 3 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 4 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 5 all together.
-  GardensBeggarIronworks bought Gardens.
-  GardensBeggarIronworks Drew Beggar into hand.
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks Drew Estate into hand.
-  GardensBeggarIronworks Drew Beggar into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(5), Copper(19), Estate(3), Gardens(2), IronWorks(10), Silver(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Silver,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Silver.
-    +2 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(5), 
-
-ROUND 11
--------------
-GardensBeggarIronworks begins turn
-With hand: Beggar,Beggar,Estate,IronWorks,IronWorks,
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained Beggar.
-    +1 Actions = 1 all together.
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained Beggar.
-    +1 Actions = 1 all together.
-  GardensBeggarIronworks Played Beggar.
-    GardensBeggarIronworks gained Copper.
-    GardensBeggarIronworks gained Copper.
-    GardensBeggarIronworks gained Copper.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 3 all together.
-  GardensBeggarIronworks bought Beggar.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Estate into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(8), Copper(22), Estate(3), Gardens(2), IronWorks(10), Silver(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(5), 
-
-ROUND 12
--------------
-GardensBeggarIronworks begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 3 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 4 all together.
-  GardensBeggarIronworks bought Gardens.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks reshuffled
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(8), Copper(22), Estate(3), Gardens(3), IronWorks(10), Silver(1), 
-
 BigMoney begins turn
 With hand: Copper,Estate,Gold,Gold,Silver,
   BigMoney Played Gold.
@@ -535,43 +393,233 @@ With hand: Copper,Estate,Gold,Gold,Silver,
   BigMoney Played Copper.
     +1 Coin = 9 all together.
   BigMoney bought Province.
-  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
   BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Gold into hand.
   BigMoney Drew Estate into hand.
-  BigMoney reshuffled
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(4), 
+
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<FarmingVillage> bought Gold.
+  BigMoneyWithCard<FarmingVillage> Drew Gold into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(3), Silver(6), 
+
+ROUND 11
+-------------
+BigMoney begins turn
+With hand: Copper,Estate,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(2), Silver(5), 
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(6), Province(1), Silver(4), 
+
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoneyWithCard<FarmingVillage> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithCard<FarmingVillage> bought Province.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Gold into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(3), Province(1), Silver(6), 
+
+ROUND 12
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(7), Province(1), Silver(4), 
+
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoneyWithCard<FarmingVillage> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyWithCard<FarmingVillage> bought Province.
+  BigMoneyWithCard<FarmingVillage> Drew FarmingVillage into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> reshuffled
+  BigMoneyWithCard<FarmingVillage> Drew Gold into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(3), Province(2), Silver(6), 
 
 ROUND 13
 -------------
-GardensBeggarIronworks begins turn
-With hand: Copper,Copper,IronWorks,IronWorks,IronWorks,
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained Beggar.
-    +1 Actions = 1 all together.
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained Beggar.
-    +1 Actions = 1 all together.
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained Gardens.
-    GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 3 all together.
-  GardensBeggarIronworks bought Estate.
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks Drew Estate into hand.
-  GardensBeggarIronworks Drew Gardens into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(10), Copper(22), Estate(4), Gardens(4), IronWorks(10), Silver(1), 
-
 BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
+With hand: Copper,Gold,Silver,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Silver.
+    +2 Coin = 9 all together.
+  BigMoney Played Copper.
+    +1 Coin = 10 all together.
+  BigMoney bought Province.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(7), Province(2), Silver(4), 
+
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Copper,Estate,FarmingVillage,Gold,
+  BigMoneyWithCard<FarmingVillage> Played FarmingVillage.
+    +2 Actions = 2 all together.
+      BigMoneyWithCard<FarmingVillage> Revealed Copper.
+    BigMoneyWithCard<FarmingVillage> put Copper into his hand.
+  BigMoneyWithCard<FarmingVillage> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<FarmingVillage> bought Gold.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Gold into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Province into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(4), Province(2), Silver(6), 
+
+ROUND 14
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Duchy.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(7), Province(2), Silver(4), 
+
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Copper,Gold,Province,Silver,
+  BigMoneyWithCard<FarmingVillage> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<FarmingVillage> bought Gold.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(5), Province(2), Silver(6), 
+
+ROUND 15
+-------------
+BigMoney begins turn
+With hand: Estate,Estate,Gold,Gold,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Gold.
+    +3 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(7), Province(3), Silver(4), 
+
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Estate,Silver,Silver,Silver,
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<FarmingVillage> bought Duchy.
+  BigMoneyWithCard<FarmingVillage> Drew Province into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Gold into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Duchy(1), Estate(3), FarmingVillage(1), Gold(5), Province(2), Silver(6), 
+
+ROUND 16
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
   BigMoney Played Silver.
@@ -580,118 +628,60 @@ With hand: Copper,Copper,Estate,Gold,Silver,
     +1 Coin = 6 all together.
   BigMoney Played Copper.
     +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Province into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(6), Province(2), Silver(5), 
-
-ROUND 14
--------------
-GardensBeggarIronworks begins turn
-With hand: Estate,Gardens,IronWorks,IronWorks,IronWorks,
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained Gardens.
-    GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks bought Copper.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Beggar into hand.
-  GardensBeggarIronworks Drew IronWorks into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(10), Copper(23), Estate(4), Gardens(5), IronWorks(10), Silver(1), 
-
-BigMoney begins turn
-With hand: Copper,Gold,Gold,Province,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Silver.
-    +2 Coin = 8 all together.
   BigMoney Played Copper.
-    +1 Coin = 9 all together.
+    +1 Coin = 8 all together.
   BigMoney bought Province.
   BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
+  BigMoney Drew Province into hand.
+  BigMoney reshuffled
   BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(6), Province(3), Silver(5), 
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(7), Province(4), Silver(4), 
 
-ROUND 15
+BigMoneyWithCard<FarmingVillage> begins turn
+With hand: Copper,Gold,Province,Silver,Silver,
+  BigMoneyWithCard<FarmingVillage> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<FarmingVillage> Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithCard<FarmingVillage> bought Province.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> reshuffled
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Province into hand.
+  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
+  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Duchy(1), Estate(3), FarmingVillage(1), Gold(5), Province(3), Silver(6), 
+
+ROUND 17
 -------------
-GardensBeggarIronworks begins turn
-With hand: Beggar,Copper,Copper,Copper,IronWorks,
-  GardensBeggarIronworks Played IronWorks.
-    GardensBeggarIronworks gained Gardens.
-    GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 3 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 4 all together.
-  GardensBeggarIronworks bought Gardens.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Beggar into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Estate into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(10), Copper(23), Estate(4), Gardens(7), IronWorks(10), Silver(1), 
-
 BigMoney begins turn
-With hand: Copper,Estate,Estate,Gold,Gold,
+With hand: Copper,Gold,Gold,Gold,Province,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
   BigMoney Played Gold.
     +3 Coin = 6 all together.
+  BigMoney Played Gold.
+    +3 Coin = 9 all together.
   BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
+    +1 Coin = 10 all together.
+  BigMoney bought Province.
   BigMoney Drew Province into hand.
-  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(7), Province(3), Silver(5), 
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Province into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(7), Province(5), Silver(4), 
 
-ROUND 16
--------------
-GardensBeggarIronworks begins turn
-With hand: Beggar,Copper,Copper,Copper,Estate,
-  GardensBeggarIronworks Played Beggar.
-    GardensBeggarIronworks gained Copper.
-    GardensBeggarIronworks gained Copper.
-    GardensBeggarIronworks gained Copper.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 1 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 2 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 3 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 4 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 5 all together.
-  GardensBeggarIronworks Played Copper.
-    +1 Coin = 6 all together.
-  GardensBeggarIronworks bought Gardens.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks Drew Copper into hand.
-  GardensBeggarIronworks ends turn with deck: Beggar(10), Copper(26), Estate(4), Gardens(8), IronWorks(10), Silver(1), 
-
-Game ended in 16 turns.
-GardensBeggarIronworks Won!
-GardensBeggarIronworks total score: 44
-  Beggar(10), Copper(26), Estate(4), Gardens(8), IronWorks(10), Silver(1), 
-BigMoney total score: 21
-  Copper(7), Estate(3), Gold(7), Province(3), Silver(5), 
+Game ended in 17 turns.
+BigMoney Won!
+BigMoney total score: 36
+  Copper(7), Duchy(1), Estate(3), Gold(7), Province(5), Silver(4), 
+BigMoneyWithCard<FarmingVillage> total score: 24
+  Copper(7), Duchy(1), Estate(3), FarmingVillage(1), Gold(5), Province(3), Silver(6), 
 Trash contains: 
