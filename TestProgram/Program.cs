@@ -12,16 +12,25 @@ namespace Program
     {
         static void Main()
         {
+            HighestWinRateVsBigMoney();
+        }
+
+        static void FindAndCompareBestStrategy()
+        {
             //EvaulateBestStrategyForFirstGame();
             //FindBestStrategyForFirstGame();
 
             //FindBestStrategy currently finds the following, which is better than BigMoneySimple, but not as good as BigMoney
-            //Province(1), Province, Gold, Market(1), Duchy(2), Militia(2), Silver, Estate(1),Workshop(1), Cellar(1),                       
+            //Province(1), Province, Gold, Market(1), Duchy(2), Militia(2), Silver, Estate(1),Workshop(1), Cellar(1),                                   
+        }
 
+        static void CompareGame()
+        {
+            // possible strategies choen for Shanty Town, Swindler, lookout, spicemerchant, nomad camp, horse tradres, navigator, laboratory, warehouse, 
             ComparePlayers(Strategies.NomadCampLaboratorySpiceMerchantWarehouse.Player(1), Strategies.BigMoney.Player(2));
             ComparePlayers(Strategies.LaboratorySpiceMerchantWarehouse.Player(1), Strategies.BigMoney.Player(2));
             ComparePlayers(Strategies.NomadCampLaboratorySpiceMerchantWarehouse.Player(1), Strategies.LaboratorySpiceMerchantWarehouse.Player(2));
-            ComparePlayers(Strategies.NomadCampLaboratorySpiceMerchantWarehouse.Player(1), Strategies.BigMoneyWithCard<CardTypes.Laboratory>.Player(2, cardCount:3));
+            ComparePlayers(Strategies.NomadCampLaboratorySpiceMerchantWarehouse.Player(1), Strategies.BigMoneyWithCard<CardTypes.Laboratory>.Player(2, cardCount: 3));
         }
 
         static void PlayRemake()
@@ -309,8 +318,9 @@ namespace Program
         {
             // goal is to find a strategy that always beats big money.  Haven't found it yet.
             // for forum topic: http://forum.dominionstrategy.com/index.php?topic=8580.0
-            ComparePlayers(Strategies.FishingVillageChapelPoorHouseTalisman.Player(1), Strategies.BigMoney.Player(2));
-            ComparePlayers(Strategies.FishingVillageChapelPoorHouse.Player(1), Strategies.BigMoney.Player(2));
+            //ComparePlayers(Strategies.FishingVillageChapelPoorHouseTalisman.Player(1), Strategies.BigMoney.Player(2));
+            //ComparePlayers(Strategies.FishingVillageChapelPoorHouse.Player(1), Strategies.BigMoney.Player(2));            
+            ComparePlayers(Strategies.GardensBeggarIronworks.Player(1), Strategies.BigMoney.Player(2), numberOfGames: 100000);
         }
 
         static void RebuildResults()
@@ -373,7 +383,7 @@ namespace Program
              
             Action<int> loopBody = delegate(int gameCount)                    
             {
-                using (IGameLog gameLog = gameCount < logGameCount ? GetGameLogForIteration(gameCount) : new EmptyGameLog())                
+                using (IGameLog gameLog = gameCount < logGameCount || gameCount == 23485 ? GetGameLogForIteration(gameCount) : new EmptyGameLog())                
                 {
                     // swap order every other game
                     bool swappedOrder = !firstPlayerAdvantage && (gameCount % 2 == 1);
@@ -411,6 +421,11 @@ namespace Program
                         {
                             int winningPlayerIndex = ((PlayerAction)winners[0].Actions).playerIndex - 1;
                             winnerCount[winningPlayerIndex]++;
+
+                            if (winningPlayerIndex == 1)
+                            {
+                                System.Console.WriteLine("Player 2 won game {0}. ", gameCount);
+                            }
                         }
                         else
                         {

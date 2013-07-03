@@ -126,5 +126,10 @@ namespace Dominion
         {
 
         }
+
+        public void PlayerGainedCoinToken(PlayerState playerState, int coinAmount)
+        {
+
+        }
     }
 }

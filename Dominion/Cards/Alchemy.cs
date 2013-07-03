@@ -43,7 +43,7 @@ namespace Dominion.CardTypes
        : Card
     {
         public Apprentice()
-            : base("Apprentice", coinCost: 5, , isAction: true, plusActions: 1)
+            : base("Apprentice", coinCost: 5, isAction: true, plusActions: 1)
         {
         }
 
@@ -171,7 +171,7 @@ namespace Dominion.CardTypes
        : Card
     {
         public Vineyard()
-            : base("Vineyard", coinCost: 0, potionCost:1, isAction: true, victoryPoints: playerState => playerState.Hand.Where(card => card.isAction).Count()/3)
+            : base("Vineyard", coinCost: 0, potionCost:1, isAction: true, victoryPoints: playerState => playerState.AllOwnedCards.Where(card => card.isAction).Count()/3)
         {
         }        
     }

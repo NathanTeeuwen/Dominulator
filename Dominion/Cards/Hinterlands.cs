@@ -331,7 +331,40 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            otherPlayer.RevealCardsFromDeck(2);
+
+            Card cardtoTrash = null;
+            CardPredicate acceptableCards = card => card.Is<Silver>() || card.Is<Gold>();
+            if (otherPlayer.cardsBeingRevealed.HasCard(acceptableCards))
+            {
+                Type cardTypeToTrash = currentPlayer.actions.GetCardFromRevealedCardsToTrash(gameState, otherPlayer, acceptableCards);
+
+                cardtoTrash = otherPlayer.cardsBeingRevealed.RemoveCard(cardTypeToTrash);
+                if (cardtoTrash == null)
+                {
+                    throw new Exception("Must choose a revealed card to trash");
+                }
+
+                if (!acceptableCards(cardtoTrash))
+                {
+                    throw new Exception("Player Must choose a treasure card to trash");
+                }
+
+                otherPlayer.MoveCardToTrash(cardtoTrash, gameState);
+            }
+            
+            if (!otherPlayer.CardsBeingRevealed.Where(card => card.isTreasure).Any())
+            {
+                otherPlayer.GainCardFromSupply<Copper>(gameState);
+            }
+
+            if (cardtoTrash != null)
+            {
+                Card cardToGain = gameState.trash.RemoveCard(cardtoTrash.GetType());
+                currentPlayer.GainCard(gameState, cardToGain, DeckPlacement.Discard);                
+            }
+
+            otherPlayer.MoveRevealedCardsToDiscard();
         }
     }
 

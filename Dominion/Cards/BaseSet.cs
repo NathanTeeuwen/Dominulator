@@ -199,7 +199,7 @@ namespace Dominion.CardTypes
         {
             this.victoryPointCounter = delegate(PlayerState playerState)
             {
-                return playerState.AllOwnedCards.Where(card => card.isVictory).Count() / 4;
+                return playerState.AllOwnedCards.Count() / 10;
             };
         }
     }

@@ -223,5 +223,10 @@ namespace Dominion
         {
             throw new NotImplementedException();
         }
+
+        public void PlayerGainedCoinToken(PlayerState playerState, int coinAmount)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

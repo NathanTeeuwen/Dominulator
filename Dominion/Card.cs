@@ -31,6 +31,7 @@ namespace Dominion
         public readonly bool requiresRuins;
         public readonly bool requiresSpoils;
         public readonly bool isShelter;
+        public readonly bool canOverpay;
 
         internal Card(
             string name,
@@ -53,7 +54,8 @@ namespace Dominion
             bool isDuration = false,
             bool requiresRuins = false,
             bool requiresSpoils = false,
-            bool isShelter = false)
+            bool isShelter = false,
+            bool canOverpay = false)
         {
             this.name = name;
             this.coinCost = coinCost;
@@ -76,6 +78,7 @@ namespace Dominion
             this.isDuration = isDuration;
             this.isShelter = isShelter;
             this.requiresSpoils = requiresSpoils;
+            this.canOverpay = canOverpay;
         }
 
         public bool Is(Type card)

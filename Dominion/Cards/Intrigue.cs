@@ -107,7 +107,7 @@ namespace Dominion.CardTypes
         Card
     {
         public IronWorks()
-            : base("IronWorks", coinCost: 4)
+            : base("IronWorks", coinCost: 4, isAction:true)
         {
         }
 

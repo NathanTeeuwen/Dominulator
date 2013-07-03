@@ -12,6 +12,7 @@ namespace Dominion
         private int availableActionCount;
         private int availableBuys;
         private int availableCoins;
+        private int availableCoinTokens;
         internal HashSet<Type> cardsBannedFromPurchase = new HashSet<Type>();
         internal int copperAdditionalValue = 0;
 
@@ -19,7 +20,7 @@ namespace Dominion
         {
             this.availableActionCount = 1;
             this.availableBuys = 1;
-            this.availableCoins = 0;
+            this.availableCoins = 0;            
             this.copperAdditionalValue = 0;
             this.cardsBannedFromPurchase.Clear();
         }
@@ -90,12 +91,34 @@ namespace Dominion
             }
         }
 
+        public void AddCoinTokens(PlayerState playerState, int count)
+        {
+            if (count != 0)
+            {
+                this.availableCoinTokens += count;
+                if (availableCoinTokens < 0)
+                {
+                    availableCoinTokens = 0;
+                }
+                playerState.gameLog.PlayerGainedCoinToken(playerState, count);
+            }
+        }
+
+        internal void RemoveCoinTokens(int count)
+        {
+            this.availableCoinTokens -= count;
+            if (this.availableCoinTokens < 0)
+            {
+                this.availableCoinTokens = 0;
+            }
+        }
+
         internal void RemoveCoins(int count)
         {
-            availableCoins -= count;
-            if (availableCoins < 0)
+            this.availableCoins -= count;
+            if (this.availableCoins < 0)
             {
-                availableCoins = 0;
+                this.availableCoins = 0;
             }
         }
     }

@@ -32,6 +32,7 @@ namespace Dominion
         void ReshuffledDiscardIntoDeck(PlayerState playerState);
         void EndGame(GameState gameState);
         void PlayerGainedCoin(PlayerState playerState, int coinAmount);
+        void PlayerGainedCoinToken(PlayerState playerState, int coinAmount);
         void PlayerGainedActions(PlayerState playerState, int actionAmount);
         void PlayerGainedBuys(PlayerState playerState, int actionAmount);
         void LogDeck(PlayerState playerState);

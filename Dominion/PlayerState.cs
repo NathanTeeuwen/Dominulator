@@ -209,6 +209,11 @@ namespace Dominion
             this.turnCounters.AddCoins(this, coinAmount);
         }
 
+        internal void AddCoinTokens(int coinAmount)
+        {
+            this.turnCounters.AddCoinTokens(this, coinAmount);
+        }
+
         internal void DoPlayAction(Card currentCard, GameState gameState, int countTimes = 1)
         {
             if (!currentCard.isAction)
