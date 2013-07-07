@@ -710,6 +710,11 @@ namespace Dominion
             }
         }
 
+        internal void RequestPlayerTrashLookedAtCard(GameState gameState)
+        {
+            RequestPlayerTrashRevealedCard(gameState);
+        }
+
         internal void RequestPlayerTrashRevealedCard(GameState gameState)
         {
             if (this.cardsBeingRevealed.Any)
@@ -872,6 +877,23 @@ namespace Dominion
             }
 
             return choice;
+        }
+
+        internal void RequestPlayerOverpayForCard(Card boughtCard, GameState gameState)
+        {
+            int overPayAmount = this.actions.GetAmountToOverpayForCard(gameState, boughtCard);
+            if (this.AvailableCoins < overPayAmount)
+            {
+                throw new Exception("Player requested to overpay by more than he can afford");
+            }            
+            if (overPayAmount > 0)
+            {
+                this.gameLog.PlayerOverpaidForCard(boughtCard, overPayAmount);
+                this.gameLog.PushScope();
+                this.AddCoins(-overPayAmount);
+                boughtCard.OverpayOnPurchase(this, gameState, overPayAmount);
+                this.gameLog.PopScope();
+            }
         }
 
         internal void CleanupCardsToDiscard()
@@ -1112,6 +1134,11 @@ namespace Dominion
                 throw new Exception("Revealed cards did not have the specified card");
             }
             this.MoveCardToTrash(card, gameState);
+        }
+
+        internal void MoveLookedAtCardToTopOfDeck()
+        {
+            MoveRevealedCardToTopOfDeck();
         }
 
         internal void MoveRevealedCardToTopOfDeck()

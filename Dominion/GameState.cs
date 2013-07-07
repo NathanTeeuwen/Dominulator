@@ -471,6 +471,11 @@ namespace Dominion
                 currentPlayer.turnCounters.RemoveCoins(boughtCard.CurrentCoinCost(currentPlayer));
                 currentPlayer.turnCounters.RemoveBuy();
 
+                if (boughtCard.canOverpay)
+                {
+                    currentPlayer.RequestPlayerOverpayForCard(boughtCard, this);
+                }                
+
                 foreach (Card cardInPlay in currentPlayer.CardsInPlay)
                 {
                     gameLog.PushScope();

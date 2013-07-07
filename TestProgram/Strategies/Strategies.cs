@@ -37,9 +37,17 @@ namespace Program
             return gameState.players.CurrentPlayer.CardsInDeck.Where(card => card is T).Count();
         }
 
-        private static int CountMightDraw<T>(GameState gameState)
+        private static int CountInDeckAndDiscard<T>(GameState gameState)
         {
             return gameState.players.CurrentPlayer.CardsInDeckAndDiscard.Where(card => card is T).Count();
+        }
+
+        private static int CountMightDraw<T>(GameState gameState, int maxCount)
+        {
+            if (gameState.players.CurrentPlayer.CardsInDeck.Count() >= maxCount)
+                return CountInDeck<T>(gameState);
+            else
+                return CountInDeckAndDiscard<T>(gameState);            
         }
 
         public static int CountAllOwned<T>(GameState gameState)

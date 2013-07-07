@@ -40,12 +40,12 @@ namespace Program
                         return typeof(CardTypes.Estate);
                     }
 
-                    if (CountMightDraw<CardTypes.Province>(gameState) > 0)
+                    if (CountInDeckAndDiscard<CardTypes.Province>(gameState) > 0)
                     {
                         return typeof(CardTypes.Province);
                     }
 
-                    if (CountMightDraw<CardTypes.Estate>(gameState) > 0)
+                    if (CountInDeckAndDiscard<CardTypes.Estate>(gameState) > 0)
                     {
                         return typeof(CardTypes.Duchy);
                     }                    

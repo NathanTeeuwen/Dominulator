@@ -12,10 +12,7 @@ namespace Program
     {
         static void Main()
         {
-            ComparePlayers(Strategies.BigMoney.Player(1), Strategies.BigMoneyFishingVillage.Player(2));
-            /*ComparePlayers(Strategies.BigMoney.Player(1), Strategies.BigMoneyFishingVillageJack.Player(2));
-            ComparePlayers(Strategies.BigMoney.Player(1), Strategies.BigMoneyFishingVillageJackLookout.Player(2));
-            ComparePlayers(Strategies.BigMoneySingleJack.Player(1), Strategies.BigMoneyFishingVillageJack.Player(2));*/
+            ComparePlayers(Strategies.BigMoney.Player(1), Strategies.Doctor.Player(2));            
         }
 
         static void FindAndCompareBestStrategy()

@@ -61,7 +61,46 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            Type cardType = currentPlayer.RequestPlayerNameACard(gameState);
+            currentPlayer.RevealCardsFromDeck(3);
+
+            while (currentPlayer.cardsBeingRevealed.HasCard(cardType))
+            {
+                currentPlayer.MoveRevealedCardToTrash(cardType, gameState);
+            }
+            
+            currentPlayer.RequestPlayerPutRevealedCardsBackOnDeck(gameState);
+        }
+
+        public override void OverpayOnPurchase(PlayerState currentPlayer, GameState gameState, int overpayAmount)
+        {
+            for (int i = 0; i < overpayAmount; ++i)
+            {
+                if (!currentPlayer.deck.Any())
+                    break;
+
+                currentPlayer.LookAtCardsFromDeck(1);
+
+                PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState,
+                    acceptableChoice => acceptableChoice == PlayerActionChoice.Trash ||
+                                        acceptableChoice == PlayerActionChoice.Discard ||
+                                        acceptableChoice == PlayerActionChoice.TopDeck);
+
+                switch (choice)
+                {
+                    case PlayerActionChoice.Trash:
+                        currentPlayer.RequestPlayerTrashLookedAtCard(gameState);
+                        break;
+                    case PlayerActionChoice.Discard:
+                        currentPlayer.MoveLookedAtCardsToDiscard();
+                        break;
+                    case PlayerActionChoice.TopDeck:
+                        currentPlayer.MoveLookedAtCardToTopOfDeck();
+                        break;
+                    default:
+                        throw new Exception("Unhandled case");
+                }
+            }
         }
     }
 

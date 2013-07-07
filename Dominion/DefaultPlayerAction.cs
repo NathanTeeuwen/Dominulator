@@ -223,5 +223,10 @@ namespace Dominion
         {
             return PlayerMustChooseNumber();
         }
+
+        virtual public int GetAmountToOverpayForCard(GameState gameState, Card card)
+        {
+            return PlayerMustChooseNumber();
+        }
     }    
 }

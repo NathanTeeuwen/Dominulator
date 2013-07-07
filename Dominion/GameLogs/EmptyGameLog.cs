@@ -131,5 +131,10 @@ namespace Dominion
         {
 
         }
+
+        public void PlayerOverpaidForCard(Card boughtCard, int overPayAmount)
+        {
+
+        }
     }
 }

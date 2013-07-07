@@ -28,7 +28,7 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(ShouldBuyProvinces),
+                           CardAcceptance.For<CardTypes.Province>(Default.ShouldBuyProvinces),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 4),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 2),
                            CardAcceptance.For<CardTypes.Gold>(),
@@ -40,12 +40,7 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Lookout>(Default.ShouldPlayLookout(ShouldBuyProvinces)));
-            }            
-
-            private static bool ShouldBuyProvinces(GameState gameState)
-            {
-                return CountAllOwned<CardTypes.Gold>(gameState) > 2;
+                           CardAcceptance.For<CardTypes.Lookout>(Default.ShouldPlayLookout(Default.ShouldBuyProvinces)));
             }            
 
             private static CardPickByPriority TrashAndDiscardOrder()

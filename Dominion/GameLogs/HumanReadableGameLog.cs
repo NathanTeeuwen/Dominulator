@@ -162,9 +162,10 @@ namespace Dominion
             this.WriteAllCards(gameState.trash);
         }
 
-        public void PlayerGainedCoin(PlayerState playerState, int coinAmount)
+        public void PlayerGainedCoin(PlayerState playerState, int coinAmount)        
         {
-            this.textWriter.WriteLine("+{0} Coin = {1} all together.", coinAmount, playerState.AvailableCoins);
+            var sign = coinAmount > 0 ? "+" : "";
+            this.textWriter.WriteLine("{2}{0} Coin = {1} all together.", coinAmount, playerState.AvailableCoins, sign);
         }
 
         public void PlayerGainedActions(PlayerState playerState, int actionAmount)
@@ -227,6 +228,11 @@ namespace Dominion
         public void PlayerGainedCoinToken(PlayerState playerState, int coinAmount)
         {
             throw new NotImplementedException();
+        }
+
+        public void PlayerOverpaidForCard(Card boughtCard, int overPayAmount)
+        {
+            this.textWriter.WriteLine("Player overpayed by {0} for {1}", overPayAmount, boughtCard.name);
         }
     }
 }

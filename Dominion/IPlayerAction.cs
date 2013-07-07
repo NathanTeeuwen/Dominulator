@@ -41,5 +41,6 @@ namespace Dominion
         bool ShouldGainCard(GameState gameState, Card card);
         PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice);
         string PlayerName { get; }
+        int GetAmountToOverpayForCard(GameState gameState, Card card);
     }
 }
