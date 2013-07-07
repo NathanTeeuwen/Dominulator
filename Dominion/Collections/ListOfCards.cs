@@ -50,6 +50,25 @@ namespace Dominion
             return this.cards[this.cards.Count - 1];
         }
 
+        public Card BottomCard()
+        {
+            if (this.cards.Count == 0)
+            {
+                return null;
+            }
+            return this.cards[0];
+        }
+
+        internal void MoveBottomCardToTop()
+        {
+            Card bottomCard = this.BottomCard();
+            if (bottomCard != null)
+            {
+                this.cards.RemoveAt(0);
+                this.AddCardToTop(bottomCard);
+            }
+        }
+
         public void AddCardToTop(Card card)
         {
             this.countKnownCard++;

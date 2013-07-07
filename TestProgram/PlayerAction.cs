@@ -33,9 +33,9 @@ namespace Program
             this.playerIndex = playerIndex;
             this.purchaseOrder = purchaseOrder;
             this.actionOrder = actionOrder == null ? Strategies.Default.ActionPlayOrder(this.purchaseOrder) : actionOrder;
-            this.trashOrder = trashOrder == null ? Strategies.Default.EmptyPickOrder() : trashOrder;
+            this.trashOrder = trashOrder == null ? Strategies.Default.DefaultTrashOrder() : trashOrder;
             this.treasurePlayOrder = treasurePlayOrder == null ? Strategies.Default.TreasurePlayOrder() : treasurePlayOrder;
-            this.discardOrder = discardOrder == null ? Strategies.Default.EmptyPickOrder() : discardOrder;
+            this.discardOrder = discardOrder == null ? Strategies.Default.DefaultDiscardOrder() : discardOrder;
             this.gainOrder = gainOrder != null ? gainOrder : purchaseOrder;
             this.name = name;
         }
@@ -133,6 +133,11 @@ namespace Program
         }
 
         public override bool ShouldPutCardInHand(GameState gameState, Card card)
+        {
+            return this.discardOrder.GetPreferredCard(gameState, testCard => testCard.Is(card.GetType())) != null;
+        }
+
+        public override bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card)
         {
             return this.discardOrder.GetPreferredCard(gameState, testCard => testCard.Is(card.GetType())) != null;
         }

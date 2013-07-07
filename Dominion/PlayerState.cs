@@ -151,6 +151,24 @@ namespace Dominion
             }
         }
 
+        internal Card LookAtBottomCardFromDeck()
+        {
+            if (this.deck.IsEmpty)
+                this.TriggerShuffleOfDiscardIntoDeck();
+
+            return this.deck.BottomCard();
+        }
+
+        internal void MoveCardFromBottomOfDeckToTop()
+        {
+            this.deck.MoveBottomCardToTop();
+        }
+
+        internal void LookAtCardsFromDeck(int cardCount)
+        {
+            this.RevealCardsFromDeck(cardCount);
+        }
+
         internal void RevealCard(Card card, DeckPlacement source)
         {
             this.gameLog.PlayerRevealedCard(this, card, DeckPlacement.TopOfDeck);            
@@ -234,23 +252,30 @@ namespace Dominion
                 this.DrawAdditionalCardsIntoHand(currentCard.plusCard);
                 
                 currentCard.DoSpecializedAction(gameState.players.CurrentPlayer, gameState);
-                if (currentCard.isAttack && currentCard.attackDependsOnPlayerChoice)
+                if (currentCard.isAttack && !currentCard.attackDependsOnPlayerChoice)
                 {
-                    foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
-                    {
-                        if (!otherPlayer.IsAffectedByAttacks(gameState))
-                        {
-                            continue;
-                        }
-
-                        currentCard.DoSpecializedAttack(gameState.players.CurrentPlayer, otherPlayer, gameState);
-                    }
+                    AttackOtherPlayers(gameState, currentCard.DoSpecializedAttack);                    
                 }
             }
 
             CardHasBeenPlayed();
 
             this.gameLog.PopScope();
+        }
+
+        internal delegate void AttackAction(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState);
+
+        internal void AttackOtherPlayers(GameState gameState, AttackAction action)
+        {
+            foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
+            {
+                if (!otherPlayer.IsAffectedByAttacks(gameState))
+                {
+                    continue;
+                }
+
+                action(gameState.players.CurrentPlayer, otherPlayer, gameState);
+            }
         }
 
         private void CardHasBeenPlayed()
@@ -403,6 +428,51 @@ namespace Dominion
             if (card != null)
             {
                 this.discard.AddCard(card);
+            }
+        }
+
+        internal void MoveCardFromPlayedCardToIslandMat(Card card)
+        {
+            Card removedCard = this.cardsPlayed.RemoveCard(card);
+            if (removedCard != null)
+            {
+                this.islandMat.AddCard(removedCard);
+            }
+        }
+
+        internal void MoveCardFromHandToIslandMat(Type cardType)
+        {
+            Card removedCard = this.Hand.RemoveCard(cardType);
+            if (removedCard != null)
+            {                
+                this.islandMat.AddCard(removedCard);
+            }
+        }
+
+        internal void MoveNativeVillageMatToHand()
+        {
+            while (this.nativeVillageMat.Any())
+            {
+                Card card = this.nativeVillageMat.RemoveCard();
+                this.hand.AddCard(card);
+            }
+        }
+
+        internal void PutOnNativeVillageMatCardFromTopOfDeck()
+        {
+            Card card = this.DrawOneCard();
+            if (card != null)
+            {
+                this.nativeVillageMat.AddCard(card);
+            }
+        }
+
+        internal void MoveCardFromPlayedCardToNativeVillageMatt(Card card)
+        {
+            Card removedCard = this.cardsPlayed.RemoveCard(card);
+            if (removedCard != null)
+            {
+                this.nativeVillageMat.AddCard(removedCard);
             }
         }
 
@@ -761,6 +831,14 @@ namespace Dominion
             return cardToTopDeck;
         }
 
+        internal void RequestPlayerTopDeckRevealedCardsInAnyOrder(GameState gameState)
+        {
+            while (this.cardsBeingRevealed.Any)
+            {
+                this.RequestPlayerTopDeckCardFromRevealed(gameState, isOptional: false);
+            }
+        }
+
         internal Card RequestPlayerGiveCardToPassLeft(GameState gameState)
         {
             if (this.hand.IsEmpty)
@@ -1059,6 +1137,19 @@ namespace Dominion
         internal void MoveRevealedCardToTopOfDeck(Card card)
         {
             MoveRevealedCardToTopOfDeck(card.GetType());
+        }
+
+        internal void ReturnCardFromHandToSupply(Type typeOfCard, GameState gameState)
+        {
+            Card cardToReturn = this.hand.RemoveCard(typeOfCard);
+            if (cardToReturn == null)
+                throw new Exception("Could not return card as it is not in hand.");
+
+            PileOfCards pile = gameState.GetPile(cardToReturn);
+            if (pile == null)
+                throw new Exception("Could not find supply pile");
+
+            pile.AddCardToTop(cardToReturn);
         }
 
         internal void MoveRevealedCardToTopOfDeck(Type typeOfCard)

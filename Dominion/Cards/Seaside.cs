@@ -13,14 +13,42 @@ namespace Dominion.CardTypes
         Card
     {
         public Ambassador()
-            : base("Ambassador", coinCost: 3, isAction: true)
+            : base("Ambassador", coinCost: 3, isAction: true, attackDependsOnPlayerChoice: true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            //TODO
-            throw new NotImplementedException();
+            Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(acceptableCard => true, gameState);
+            if (revealedCard == null)
+            {
+                return;
+            }
+
+            currentPlayer.MoveRevealedCardToHand(revealedCard);
+
+            int maxReturnCount = 1;
+            if (currentPlayer.Hand.Where(card => card.Equals(revealedCard)).Count() > 1)
+            {
+                maxReturnCount++;                
+            }
+            
+            int returnCount = currentPlayer.actions.GetCountToReturnToSupply(revealedCard, gameState);
+            returnCount = Math.Min(returnCount, maxReturnCount);
+            returnCount = Math.Max(returnCount, 0);                       
+
+            for (int i = 0; i < returnCount; ++i)
+            {
+                currentPlayer.ReturnCardFromHandToSupply(revealedCard.GetType(), gameState);
+            }
+
+            foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
+            {
+                if (!otherPlayer.IsAffectedByAttacks(gameState))
+                {
+                    otherPlayer.GainCardFromSupply(gameState, revealedCard.GetType());
+                }
+            }
         }
     }
 
@@ -150,8 +178,12 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            // TODO
-            throw new NotImplementedException();
+            currentPlayer.MoveCardFromPlayedCardToIslandMat(this);
+
+            if (!currentPlayer.hand.Any)
+                return;            
+            Type cardType = currentPlayer.actions.GetCardFromHandToIsland(gameState);            
+            currentPlayer.MoveCardFromHandToIslandMat(cardType);
         }
     }
 
@@ -213,8 +245,19 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            // TODO
-            throw new NotImplementedException();
+            PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState,
+                acceptableChoice => acceptableChoice == PlayerActionChoice.PutNativeVillageMatInHand ||
+                    acceptableChoice == PlayerActionChoice.SetAsideTopCardOnNativeVillageMat);
+
+            if (choice == PlayerActionChoice.PutNativeVillageMatInHand)
+            {
+                currentPlayer.MoveNativeVillageMatToHand();
+            }
+            else if (choice == PlayerActionChoice.SetAsideTopCardOnNativeVillageMat)
+            {
+                currentPlayer.MoveCardFromPlayedCardToNativeVillageMatt(this);
+                currentPlayer.PutOnNativeVillageMatCardFromTopOfDeck();
+            }
         }
     }
 
@@ -228,8 +271,19 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            // TODO
-            throw new NotImplementedException();
+            currentPlayer.LookAtCardsFromDeck(5);
+            PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState,
+                acceptableChoice => acceptableChoice == PlayerActionChoice.Discard ||
+                                    acceptableChoice == PlayerActionChoice.TopDeck);
+
+            if (choice == PlayerActionChoice.TopDeck)
+            {
+                currentPlayer.RequestPlayerTopDeckRevealedCardsInAnyOrder(gameState);
+            }
+            else if (choice == PlayerActionChoice.Discard)
+            {
+                currentPlayer.MoveRevealedCardsToDiscard();
+            }
         }
     }
 
@@ -242,15 +296,15 @@ namespace Dominion.CardTypes
         }
 
         public override void DoSpecializedDurationActionAtBeginningOfTurn(PlayerState currentPlayer, GameState gameState)
-        {
-            // TODO
-            throw new NotImplementedException();
+        {            
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            // TODO
-            throw new NotImplementedException();
+            if (!currentPlayer.durationCards.Where(card => card.Is<Outpost>()).Any())
+            {
+                gameState.doesCurrentPlayerNeedOutpostTurn = true;
+            }
         }
     }
 
@@ -264,8 +318,12 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            // TODO
-            throw new NotImplementedException();
+            Card card = currentPlayer.LookAtBottomCardFromDeck();
+
+            if (currentPlayer.actions.ShouldPutCardOnTopOfDeck(card, gameState))
+            {
+                currentPlayer.MoveCardFromBottomOfDeckToTop();                    
+            }
         }
     }
 
@@ -273,21 +331,37 @@ namespace Dominion.CardTypes
         Card
     {
         public PirateShip()
-            : base("Pirate Ship", coinCost: 4, isAction: true, isAttack: true)
+            : base("Pirate Ship", coinCost: 4, isAction: true, isAttack: true, attackDependsOnPlayerChoice:true)
         {
-        }
-
-        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
-        {
-            // TODO
-            throw new NotImplementedException();
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            // TODO
-            throw new NotImplementedException();
-        }
+            PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState,
+                acceptableChoice =>
+                    acceptableChoice == PlayerActionChoice.PlusCoin ||
+                    acceptableChoice == PlayerActionChoice.Trash);
+
+            PlayerState.AttackAction attackAction = this.DoEmptyAttack;
+
+            bool wasACardTrashed = false;
+
+            if (choice == PlayerActionChoice.PlusCoin)
+            {
+                currentPlayer.AddCoins(currentPlayer.pirateShipTokenCount);                
+            }
+            else if (choice == PlayerActionChoice.Trash)
+            {
+                throw new NotImplementedException();
+            }
+
+            currentPlayer.AttackOtherPlayers(gameState, attackAction);
+
+            if (wasACardTrashed)
+            {
+                currentPlayer.pirateShipTokenCount++;
+            }
+        }        
     }
 
     public class Salvager :

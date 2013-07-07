@@ -10,6 +10,7 @@ namespace Dominion
     {
         void BeginTurn();
         void EndTurn();
+        int GetCountToReturnToSupply(Card card, GameState gameState);
         Type BanCardForCurrentPlayerRevealedCards(GameState gameState);
         Type BanCardForCurrentPlayerPurchase(GameState gameState);
         Type GetCardPileFromSupply(GameState gameState);
@@ -28,6 +29,7 @@ namespace Dominion
         Type GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, PlayerState player, bool isOptional);
         Type GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard); // always optional
         Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional);
+        Type GetCardFromHandToIsland(GameState gameState);
         Type GetCardFromHandToDeferToNextTurn(GameState gameState);
         int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber);
         bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card);

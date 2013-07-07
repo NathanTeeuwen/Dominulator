@@ -8,28 +8,28 @@ BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
-BigMoneyWithCard<FarmingVillage> gained Estate.
-BigMoneyWithCard<FarmingVillage> gained Estate.
-BigMoneyWithCard<FarmingVillage> gained Estate.
-BigMoneyWithCard<FarmingVillage> gained Copper.
-BigMoneyWithCard<FarmingVillage> gained Copper.
-BigMoneyWithCard<FarmingVillage> gained Copper.
-BigMoneyWithCard<FarmingVillage> gained Copper.
-BigMoneyWithCard<FarmingVillage> gained Copper.
-BigMoneyWithCard<FarmingVillage> gained Copper.
-BigMoneyWithCard<FarmingVillage> gained Copper.
+BigMoneyFishingVillage gained Estate.
+BigMoneyFishingVillage gained Estate.
+BigMoneyFishingVillage gained Estate.
+BigMoneyFishingVillage gained Copper.
+BigMoneyFishingVillage gained Copper.
+BigMoneyFishingVillage gained Copper.
+BigMoneyFishingVillage gained Copper.
+BigMoneyFishingVillage gained Copper.
+BigMoneyFishingVillage gained Copper.
+BigMoneyFishingVillage gained Copper.
 BigMoney reshuffled
 BigMoney Drew Copper into hand.
 BigMoney Drew Copper into hand.
 BigMoney Drew Estate into hand.
 BigMoney Drew Copper into hand.
 BigMoney Drew Estate into hand.
-BigMoneyWithCard<FarmingVillage> reshuffled
-BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
+BigMoneyFishingVillage reshuffled
+BigMoneyFishingVillage Drew Copper into hand.
+BigMoneyFishingVillage Drew Estate into hand.
+BigMoneyFishingVillage Drew Estate into hand.
+BigMoneyFishingVillage Drew Copper into hand.
+BigMoneyFishingVillage Drew Copper into hand.
 ROUND 1
 -------------
 BigMoney begins turn
@@ -48,21 +48,21 @@ With hand: Copper,Copper,Copper,Estate,Estate,
   BigMoney Drew Copper into hand.
   BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
-BigMoneyWithCard<FarmingVillage> begins turn
+BigMoneyFishingVillage begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<FarmingVillage> bought Silver.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoneyFishingVillage bought Fishing Village.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(1), 
 
 ROUND 2
 -------------
@@ -85,24 +85,24 @@ With hand: Copper,Copper,Copper,Copper,Estate,
   BigMoney Drew Copper into hand.
   BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
-BigMoneyWithCard<FarmingVillage> begins turn
+BigMoneyFishingVillage begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<FarmingVillage> bought FarmingVillage.
-  BigMoneyWithCard<FarmingVillage> reshuffled
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Silver(1), 
+  BigMoneyFishingVillage bought Fishing Village.
+  BigMoneyFishingVillage reshuffled
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(2), 
 
 ROUND 3
 -------------
@@ -126,23 +126,23 @@ With hand: Copper,Copper,Copper,Silver,Silver,
   BigMoney Drew Copper into hand.
   BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
-BigMoneyWithCard<FarmingVillage> begins turn
+BigMoneyFishingVillage begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<FarmingVillage> bought Silver.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> Drew FarmingVillage into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Silver(2), 
+  BigMoneyFishingVillage bought Fishing Village.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(3), 
 
 ROUND 4
 -------------
@@ -163,26 +163,23 @@ With hand: Copper,Copper,Copper,Estate,Estate,
   BigMoney Drew Copper into hand.
   BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), 
 
-BigMoneyWithCard<FarmingVillage> begins turn
-With hand: Copper,Copper,Estate,Estate,FarmingVillage,
-  BigMoneyWithCard<FarmingVillage> Played FarmingVillage.
+BigMoneyFishingVillage begins turn
+With hand: Copper,Copper,Estate,Estate,Fishing Village,
+  BigMoneyFishingVillage Played Fishing Village.
     +2 Actions = 2 all together.
-      BigMoneyWithCard<FarmingVillage> Revealed Copper.
-    BigMoneyWithCard<FarmingVillage> put Copper into his hand.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<FarmingVillage> bought Silver.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> reshuffled
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Silver(3), 
+  BigMoneyFishingVillage bought Fishing Village.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage reshuffled
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(4), 
 
 ROUND 5
 -------------
@@ -204,25 +201,29 @@ With hand: Copper,Copper,Copper,Estate,Silver,
   BigMoney Drew Estate into hand.
   BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
 
-BigMoneyWithCard<FarmingVillage> begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+BigMoneyFishingVillage begins turn
+With hand: Copper,Copper,Copper,Copper,Fishing Village,
+  BigMoneyFishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 3 all together.
+    +1 Coin = 2 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<FarmingVillage> bought Gold.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(1), Silver(3), 
+  BigMoneyFishingVillage bought Gold.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(4), Gold(1), 
 
 ROUND 6
 -------------
@@ -240,108 +241,209 @@ With hand: Copper,Estate,Estate,Gold,Silver,
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
   BigMoney reshuffled
-  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
   BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), 
 
-BigMoneyWithCard<FarmingVillage> begins turn
-With hand: Copper,Estate,Estate,Estate,Silver,
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+BigMoneyFishingVillage begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  BigMoneyFishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyFishingVillage Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<FarmingVillage> bought Silver.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew FarmingVillage into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> reshuffled
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(1), Silver(4), 
+  BigMoneyFishingVillage bought Fishing Village.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage reshuffled
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(5), Gold(1), 
 
 ROUND 7
 -------------
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
+With hand: Copper,Copper,Copper,Estate,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
   BigMoney Played Copper.
     +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
+
+BigMoneyFishingVillage begins turn
+With hand: Copper,Fishing Village,Fishing Village,Fishing Village,Fishing Village,
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 3 all together.
+    +1 Coin = 2 all together.
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 4 all together.
+    +1 Coin = 3 all together.
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 5 all together.
+    +1 Coin = 4 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyFishingVillage bought Fishing Village.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Gold into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(6), Gold(1), 
+
+ROUND 8
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
   BigMoney Played Copper.
     +1 Coin = 6 all together.
   BigMoney Played Copper.
     +1 Coin = 7 all together.
   BigMoney bought Gold.
   BigMoney Drew Gold into hand.
-  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(4), 
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), 
 
-BigMoneyWithCard<FarmingVillage> begins turn
-With hand: Copper,Copper,Copper,Copper,FarmingVillage,
-  BigMoneyWithCard<FarmingVillage> Played FarmingVillage.
-    +2 Actions = 2 all together.
-      BigMoneyWithCard<FarmingVillage> Revealed Copper.
-    BigMoneyWithCard<FarmingVillage> put Copper into his hand.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+BigMoneyFishingVillage begins turn
+With hand: Copper,Estate,Estate,Fishing Village,Gold,
+  BigMoneyFishingVillage Finished Playing Fishing Village.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Actions = 2 all together.
+  BigMoneyFishingVillage Finished Playing Fishing Village.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Actions = 3 all together.
+  BigMoneyFishingVillage Finished Playing Fishing Village.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Actions = 4 all together.
+  BigMoneyFishingVillage Finished Playing Fishing Village.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
+    +1 Actions = 5 all together.
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 6 all together.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<FarmingVillage> bought Silver.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(1), Silver(5), 
+  BigMoneyFishingVillage Played Gold.
+    +3 Coin = 8 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyFishingVillage bought Gold.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(6), Gold(2), 
 
-ROUND 8
+ROUND 9
 -------------
 BigMoney begins turn
-With hand: Copper,Estate,Estate,Gold,Gold,
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(5), 
+
+BigMoneyFishingVillage begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoneyFishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyFishingVillage bought Fishing Village.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage reshuffled
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage Drew Gold into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(7), Gold(2), 
+
+ROUND 10
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Gold,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
   BigMoney Played Gold.
     +3 Coin = 6 all together.
   BigMoney Played Copper.
     +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(4), 
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(2), Silver(5), 
 
-BigMoneyWithCard<FarmingVillage> begins turn
-With hand: Copper,Estate,Estate,Silver,Silver,
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<FarmingVillage> bought Silver.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Gold into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(1), Silver(6), 
+BigMoneyFishingVillage begins turn
+With hand: Copper,Copper,Fishing Village,Fishing Village,Gold,
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 3 all together.
+    +1 Coin = 2 all together.
+  BigMoneyFishingVillage Played Gold.
+    +3 Coin = 5 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyFishingVillage bought Gold.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(7), Gold(3), 
 
-ROUND 9
+ROUND 11
 -------------
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
+With hand: Copper,Copper,Estate,Silver,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Silver.
@@ -350,338 +452,326 @@ With hand: Copper,Copper,Copper,Silver,Silver,
     +1 Coin = 5 all together.
   BigMoney Played Copper.
     +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(2), Silver(5), 
+
+BigMoneyFishingVillage begins turn
+With hand: Copper,Copper,Estate,Estate,Fishing Village,
+  BigMoneyFishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  BigMoneyFishingVillage Finished Playing Fishing Village.
+    +1 Coin = 2 all together.
+    +1 Actions = 3 all together.
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 4 all together.
+    +1 Coin = 3 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyFishingVillage bought Fishing Village.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Gold into hand.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(3), 
+
+ROUND 12
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
   BigMoney Played Copper.
     +1 Coin = 7 all together.
   BigMoney bought Gold.
-  BigMoney Drew Estate into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Province into hand.
+  BigMoney reshuffled
   BigMoney Drew Gold into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Silver(4), 
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(2), Silver(5), 
 
-BigMoneyWithCard<FarmingVillage> begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  BigMoneyWithCard<FarmingVillage> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWithCard<FarmingVillage> bought Gold.
-  BigMoneyWithCard<FarmingVillage> reshuffled
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(2), Silver(6), 
+BigMoneyFishingVillage begins turn
+With hand: Copper,Copper,Estate,Fishing Village,Gold,
+  BigMoneyFishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 3 all together.
+    +1 Coin = 2 all together.
+  BigMoneyFishingVillage Played Gold.
+    +3 Coin = 5 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyFishingVillage bought Gold.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage reshuffled
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(4), 
 
-ROUND 10
+ROUND 13
 -------------
 BigMoney begins turn
-With hand: Copper,Estate,Gold,Gold,Silver,
+With hand: Copper,Gold,Province,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(3), Silver(5), 
+
+BigMoneyFishingVillage begins turn
+With hand: Copper,Copper,Fishing Village,Fishing Village,Fishing Village,
+  BigMoneyFishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 3 all together.
+    +1 Coin = 2 all together.
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 4 all together.
+    +1 Coin = 3 all together.
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 5 all together.
+    +1 Coin = 4 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyFishingVillage bought Gold.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(5), 
+
+ROUND 14
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Gold,Province,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(4), Silver(5), 
+
+BigMoneyFishingVillage begins turn
+With hand: Copper,Estate,Fishing Village,Fishing Village,Fishing Village,
+  BigMoneyFishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  BigMoneyFishingVillage Finished Playing Fishing Village.
+    +1 Coin = 2 all together.
+    +1 Actions = 3 all together.
+  BigMoneyFishingVillage Finished Playing Fishing Village.
+    +1 Coin = 3 all together.
+    +1 Actions = 4 all together.
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 5 all together.
+    +1 Coin = 4 all together.
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 6 all together.
+    +1 Coin = 5 all together.
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 7 all together.
+    +1 Coin = 6 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyFishingVillage bought Duchy.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Gold into hand.
+  BigMoneyFishingVillage Drew Gold into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Duchy(1), Estate(3), Fishing Village(8), Gold(5), 
+
+ROUND 15
+-------------
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(5), Silver(5), 
+
+BigMoneyFishingVillage begins turn
+With hand: Copper,Copper,Estate,Gold,Gold,
+  BigMoneyFishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  BigMoneyFishingVillage Finished Playing Fishing Village.
+    +1 Coin = 2 all together.
+    +1 Actions = 3 all together.
+  BigMoneyFishingVillage Finished Playing Fishing Village.
+    +1 Coin = 3 all together.
+    +1 Actions = 4 all together.
+  BigMoneyFishingVillage Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyFishingVillage Played Gold.
+    +3 Coin = 9 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 11 all together.
+  BigMoneyFishingVillage bought Province.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage Drew Gold into hand.
+  BigMoneyFishingVillage Drew Fishing Village into hand.
+  BigMoneyFishingVillage Drew Gold into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Duchy(1), Estate(3), Fishing Village(8), Gold(5), Province(1), 
+
+ROUND 16
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Duchy.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Duchy into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(5), Province(5), Silver(5), 
+
+BigMoneyFishingVillage begins turn
+With hand: Copper,Estate,Fishing Village,Gold,Gold,
+  BigMoneyFishingVillage Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  BigMoneyFishingVillage Played Gold.
+    +3 Coin = 4 all together.
+  BigMoneyFishingVillage Played Gold.
+    +3 Coin = 7 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyFishingVillage bought Province.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage reshuffled
+  BigMoneyFishingVillage Drew Gold into hand.
+  BigMoneyFishingVillage Drew Province into hand.
+  BigMoneyFishingVillage Drew Province into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Duchy(1), Estate(3), Fishing Village(8), Gold(5), Province(2), 
+
+ROUND 17
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Duchy,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney bought Estate.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(4), Gold(5), Province(5), Silver(5), 
+
+BigMoneyFishingVillage begins turn
+With hand: Copper,Copper,Gold,Province,Province,
+  BigMoneyFishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  BigMoneyFishingVillage Played Gold.
+    +3 Coin = 4 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyFishingVillage Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyFishingVillage bought Duchy.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Gold into hand.
+  BigMoneyFishingVillage Drew Estate into hand.
+  BigMoneyFishingVillage Drew Copper into hand.
+  BigMoneyFishingVillage Drew Gold into hand.
+  BigMoneyFishingVillage ends turn with deck: Copper(7), Duchy(2), Estate(3), Fishing Village(8), Gold(5), Province(2), 
+
+ROUND 18
+-------------
+BigMoney begins turn
+With hand: Gold,Gold,Province,Silver,Silver,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
   BigMoney Played Gold.
     +3 Coin = 6 all together.
   BigMoney Played Silver.
     +2 Coin = 8 all together.
-  BigMoney Played Copper.
-    +1 Coin = 9 all together.
+  BigMoney Played Silver.
+    +2 Coin = 10 all together.
   BigMoney bought Province.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(4), 
-
-BigMoneyWithCard<FarmingVillage> begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<FarmingVillage> bought Gold.
-  BigMoneyWithCard<FarmingVillage> Drew Gold into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(3), Silver(6), 
-
-ROUND 11
--------------
-BigMoney begins turn
-With hand: Copper,Estate,Estate,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(6), Province(1), Silver(4), 
-
-BigMoneyWithCard<FarmingVillage> begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  BigMoneyWithCard<FarmingVillage> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWithCard<FarmingVillage> bought Province.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Gold into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(3), Province(1), Silver(6), 
-
-ROUND 12
--------------
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
   BigMoney Drew Silver into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(7), Province(1), Silver(4), 
-
-BigMoneyWithCard<FarmingVillage> begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  BigMoneyWithCard<FarmingVillage> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyWithCard<FarmingVillage> bought Province.
-  BigMoneyWithCard<FarmingVillage> Drew FarmingVillage into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> reshuffled
-  BigMoneyWithCard<FarmingVillage> Drew Gold into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(3), Province(2), Silver(6), 
-
-ROUND 13
--------------
-BigMoney begins turn
-With hand: Copper,Gold,Silver,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
-  BigMoney Played Silver.
-    +2 Coin = 9 all together.
-  BigMoney Played Copper.
-    +1 Coin = 10 all together.
-  BigMoney bought Province.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(7), Province(2), Silver(4), 
-
-BigMoneyWithCard<FarmingVillage> begins turn
-With hand: Copper,Copper,Estate,FarmingVillage,Gold,
-  BigMoneyWithCard<FarmingVillage> Played FarmingVillage.
-    +2 Actions = 2 all together.
-      BigMoneyWithCard<FarmingVillage> Revealed Copper.
-    BigMoneyWithCard<FarmingVillage> put Copper into his hand.
-  BigMoneyWithCard<FarmingVillage> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<FarmingVillage> bought Gold.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Gold into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Province into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(4), Province(2), Silver(6), 
-
-ROUND 14
--------------
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Duchy.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(7), Province(2), Silver(4), 
-
-BigMoneyWithCard<FarmingVillage> begins turn
-With hand: Copper,Copper,Gold,Province,Silver,
-  BigMoneyWithCard<FarmingVillage> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<FarmingVillage> bought Gold.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Gold(5), Province(2), Silver(6), 
-
-ROUND 15
--------------
-BigMoney begins turn
-With hand: Estate,Estate,Gold,Gold,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Gold.
-    +3 Coin = 9 all together.
-  BigMoney bought Province.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(7), Province(3), Silver(4), 
-
-BigMoneyWithCard<FarmingVillage> begins turn
-With hand: Copper,Estate,Silver,Silver,Silver,
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<FarmingVillage> bought Duchy.
-  BigMoneyWithCard<FarmingVillage> Drew Province into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Copper into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Gold into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Duchy(1), Estate(3), FarmingVillage(1), Gold(5), Province(2), Silver(6), 
-
-ROUND 16
--------------
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Drew Gold into hand.
   BigMoney Drew Province into hand.
-  BigMoney reshuffled
   BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
   BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(7), Province(4), Silver(4), 
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(4), Gold(5), Province(6), Silver(5), 
 
-BigMoneyWithCard<FarmingVillage> begins turn
-With hand: Copper,Gold,Province,Silver,Silver,
-  BigMoneyWithCard<FarmingVillage> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<FarmingVillage> Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWithCard<FarmingVillage> Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWithCard<FarmingVillage> bought Province.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> reshuffled
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Silver into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Province into hand.
-  BigMoneyWithCard<FarmingVillage> Drew Estate into hand.
-  BigMoneyWithCard<FarmingVillage> ends turn with deck: Copper(7), Duchy(1), Estate(3), FarmingVillage(1), Gold(5), Province(3), Silver(6), 
-
-ROUND 17
--------------
-BigMoney begins turn
-With hand: Copper,Gold,Gold,Gold,Province,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Gold.
-    +3 Coin = 9 all together.
-  BigMoney Played Copper.
-    +1 Coin = 10 all together.
-  BigMoney bought Province.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Province into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(7), Province(5), Silver(4), 
-
-Game ended in 17 turns.
+Game ended in 18 turns.
 BigMoney Won!
-BigMoney total score: 36
-  Copper(7), Duchy(1), Estate(3), Gold(7), Province(5), Silver(4), 
-BigMoneyWithCard<FarmingVillage> total score: 24
-  Copper(7), Duchy(1), Estate(3), FarmingVillage(1), Gold(5), Province(3), Silver(6), 
+BigMoney total score: 43
+  Copper(7), Duchy(1), Estate(4), Gold(5), Province(6), Silver(5), 
+BigMoneyFishingVillage total score: 21
+  Copper(7), Duchy(2), Estate(3), Fishing Village(8), Gold(5), Province(2), 
 Trash contains: 

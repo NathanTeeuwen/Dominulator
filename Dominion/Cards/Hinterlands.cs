@@ -273,7 +273,10 @@ namespace Dominion.CardTypes
             {
                 if (currentPlayer.actions.ShouldPlayerDiscardCardFromDeck(gameState, currentPlayer, card))
                 {
+                    currentPlayer.gameLog.PushScope();
                     currentPlayer.MoveLookedAtCardsToDiscard();
+                    currentPlayer.gameLog.PlayerDiscardCard(currentPlayer, card);
+                    currentPlayer.gameLog.PopScope();
                 }
                 else
                 {

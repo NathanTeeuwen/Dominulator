@@ -213,5 +213,15 @@ namespace Dominion
         {
             return PlayerMustMakeCardChoice();
         }
+
+        virtual public Type GetCardFromHandToIsland(GameState gameState)
+        {
+            return PlayerMustMakeCardChoice();
+        }
+
+        virtual public int GetCountToReturnToSupply(Card card, GameState gameState)
+        {
+            return PlayerMustChooseNumber();
+        }
     }    
 }

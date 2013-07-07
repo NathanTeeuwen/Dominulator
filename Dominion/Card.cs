@@ -46,7 +46,7 @@ namespace Dominion
             int defaultSupplyCount = 10,
             bool isAction = false,
             bool isAttack = false,
-            bool attackDependsOnPlayerChoice = true,
+            bool attackDependsOnPlayerChoice = false,
             bool isCurse = false,
             bool isReaction = false,
             bool isRuin = false,
@@ -213,6 +213,11 @@ namespace Dominion
         virtual public bool IsRestrictedFromBuy(PlayerState currentPlayer, GameState gameState)
         {
             return false;
+        }
+
+        protected void DoEmptyAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
+
         }
     }
 }

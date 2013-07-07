@@ -191,7 +191,7 @@ namespace Dominion.CardTypes
         Card
     {
         public Minion()
-            : base("Minion", coinCost: 5, plusActions: 1, isAttack: true, attackDependsOnPlayerChoice: false, isAction: true)
+            : base("Minion", coinCost: 5, plusActions: 1, isAttack: true, attackDependsOnPlayerChoice: true, isAction: true)
         {
         }
 
@@ -202,14 +202,12 @@ namespace Dominion.CardTypes
                 gameState,
                 acceptableChoice => acceptableChoice == PlayerActionChoice.Discard || acceptableChoice == PlayerActionChoice.PlusCoin);
 
+            PlayerState.AttackAction attackAction = this.DoEmptyAttack;
+
             if (actionChoice == PlayerActionChoice.PlusCoin)
             {
                 // +2 coin;
-                currentPlayer.AddCoins(2);
-                foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
-                {
-                    otherPlayer.IsAffectedByAttacks(gameState); // trigger reactions;
-                }
+                currentPlayer.AddCoins(2);                
             }
             else
             {
@@ -218,23 +216,21 @@ namespace Dominion.CardTypes
                 // +4 cards
                 currentPlayer.DrawAdditionalCardsIntoHand(4);
 
-                // and each other player 
-                foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
-                {
-                    if (!otherPlayer.IsAffectedByAttacks(gameState))
-                    {
-                        continue;
-                    }
+                attackAction = this.DoSpecializedAttack;
+            }
 
-                    // with at least 5 cards in hand
-                    if (otherPlayer.hand.Count >= 5)
-                    {
-                        // discards his hand
-                        otherPlayer.DiscardHand();
-                        // and draws 4 cards
-                        otherPlayer.DrawAdditionalCardsIntoHand(4);
-                    }
-                }
+            currentPlayer.AttackOtherPlayers(gameState, attackAction);
+        }
+
+        private void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
+            // with at least 5 cards in hand
+            if (otherPlayer.hand.Count >= 5)
+            {
+                // discards his hand
+                otherPlayer.DiscardHand();
+                // and draws 4 cards
+                otherPlayer.DrawAdditionalCardsIntoHand(4);
             }
         }
     }
@@ -358,10 +354,7 @@ namespace Dominion.CardTypes
         {
             currentPlayer.RevealCardsFromDeck(4);
             currentPlayer.MoveRevealedCardsToHand(card => card.isVictory);
-            while (currentPlayer.cardsBeingRevealed.Any)
-            {
-                currentPlayer.RequestPlayerTopDeckCardFromRevealed(gameState, isOptional: false);
-            }
+            currentPlayer.RequestPlayerTopDeckRevealedCardsInAnyOrder(gameState);            
         }
     }
 

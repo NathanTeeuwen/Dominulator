@@ -173,13 +173,27 @@ namespace Program
                     CardAcceptance.For<CardTypes.Duchy>(),
                     CardAcceptance.For<CardTypes.Estate>(),
                     CardAcceptance.For<CardTypes.Ruin>(),
-                    CardAcceptance.For<CardTypes.Copper>(),
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Gold>());
+                    CardAcceptance.For<CardTypes.Copper>());
             }
 
-            public static GameStatePredicate ShouldPlayLookout(GameStatePredicate shouldBuyProvinces)
+            public static CardPickByPriority DefaultTrashOrder()
             {
+                return new CardPickByPriority(                    
+                    CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) == 8),                    
+                    CardAcceptance.For<CardTypes.Copper>());
+            }
+
+            public static bool ShouldBuyProvinces(GameState gameState)
+            {
+                return CountAllOwned<CardTypes.Gold>(gameState) > 2;                
+            }
+
+            public static GameStatePredicate ShouldPlayLookout(GameStatePredicate shouldBuyProvinces = null)
+            {
+                if (shouldBuyProvinces == null)
+                {
+                    shouldBuyProvinces = ShouldBuyProvinces;
+                }
                 return delegate(GameState gameState)
                 {
                     return ShouldPlayLookout(gameState, shouldBuyProvinces);

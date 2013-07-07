@@ -55,7 +55,9 @@ namespace Dominion
         GainCard,
         TopDeck,
         Trash,
-        Nothing,        
+        Nothing,
+        SetAsideTopCardOnNativeVillageMat,
+        PutNativeVillageMatInHand
     }      
 
     public struct CardPlacementPair
@@ -185,6 +187,7 @@ namespace Dominion
     public class GameState
     {
         internal bool hasCurrentPlayerGainedCard;
+        internal bool doesCurrentPlayerNeedOutpostTurn;
         public IGameLog gameLog;
         public PlayerCircle players;
         public PileOfCards[] supplyPiles;
@@ -303,6 +306,8 @@ namespace Dominion
             while (!IsVictoryConditionReached())
             {
                 this.hasCurrentPlayerGainedCard = false;
+                this.doesCurrentPlayerNeedOutpostTurn = false;
+
                 if (this.players.BeginningOfRound)
                 {
                     this.gameLog.BeginRound();
@@ -328,7 +333,10 @@ namespace Dominion
                     noGainCount = 0;
                 }
 
-                this.players.PassTurnLeft();
+                if (!this.doesCurrentPlayerNeedOutpostTurn)
+                {
+                    this.players.PassTurnLeft();
+                }
             }
 
             this.gameLog.EndGame(this);
@@ -385,8 +393,10 @@ namespace Dominion
             DoActionPhase(currentPlayerState);
             DoPlayTreasures(currentPlayerState);
             DoBuyPhase(currentPlayerState);
-            DoCleanupPhase(currentPlayerState);            
-            currentPlayerState.DrawUntilCountInHand(5);
+            DoCleanupPhase(currentPlayerState);
+
+            int cardCountForNextTurn = this.doesCurrentPlayerNeedOutpostTurn ? 3 : 5;
+            currentPlayerState.DrawUntilCountInHand(cardCountForNextTurn);
             currentPlayerState.playPhase = PlayPhase.NotMyTurn;
 
             currentPlayer.EndTurn();            

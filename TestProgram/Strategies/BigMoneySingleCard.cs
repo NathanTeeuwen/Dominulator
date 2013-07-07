@@ -19,11 +19,8 @@ namespace Program
                 return new PlayerAction(
                             "BigMoneyWithCard<" + typeof(T).Name + ">",
                             playerNumber,
-                            purchaseOrder: PurchaseOrder(cardCount),
-                            treasurePlayOrder: Default.TreasurePlayOrder(),
-                            actionOrder: ActionOrder(),
-                            trashOrder: Default.EmptyPickOrder(),
-                            discardOrder: Default.EmptyPickOrder());
+                            purchaseOrder: PurchaseOrder(cardCount),                            
+                            actionOrder: ActionOrder());
             }
 
             public static ICardPicker PurchaseOrder(int cardCount)
