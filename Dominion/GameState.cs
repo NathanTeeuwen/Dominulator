@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Dominion
-{
+{ 
     public struct CompareCardByType
             : IEqualityComparer<Card>,
               IComparer<Card>
@@ -378,29 +378,30 @@ namespace Dominion
             return second.numberOfTurnsPlayed - first.numberOfTurnsPlayed;
         }
 
-        public void PlayTurn(PlayerState currentPlayerState)
+        public void PlayTurn(PlayerState currentPlayer)
         {
-            currentPlayerState.numberOfTurnsPlayed += 1;
-            IPlayerAction currentPlayer = currentPlayerState.actions;
+            currentPlayer.numberOfTurnsPlayed += 1;
+            IPlayerAction currentPlayerAction = currentPlayer.actions;
 
-            this.gameLog.BeginTurn(currentPlayerState);
+            this.gameLog.BeginTurn(currentPlayer);
             this.gameLog.PushScope();
-            currentPlayerState.InitializeTurn();
-            currentPlayer.BeginTurn();
+            currentPlayer.InitializeTurn();
+            currentPlayerAction.BeginTurn();
 
-            ReturnCardsToHandAtStartOfTurn(currentPlayerState);
-            DoDurationActionsFromPreviousTurn(currentPlayerState);
-            DoActionPhase(currentPlayerState);
-            DoPlayTreasures(currentPlayerState);
-            DoBuyPhase(currentPlayerState);
-            DoCleanupPhase(currentPlayerState);
+            ReturnCardsToHandAtStartOfTurn(currentPlayer);
+            DoDurationActionsFromPreviousTurn(currentPlayer);
+            DoActionPhase(currentPlayer);
+            DoPlayTreasures(currentPlayer);
+            currentPlayer.RequestPlayerSpendCoinTokensBeforeBuyPhase(this);
+            DoBuyPhase(currentPlayer);
+            DoCleanupPhase(currentPlayer);
 
             int cardCountForNextTurn = this.doesCurrentPlayerNeedOutpostTurn ? 3 : 5;
-            currentPlayerState.DrawUntilCountInHand(cardCountForNextTurn);
-            currentPlayerState.playPhase = PlayPhase.NotMyTurn;
+            currentPlayer.DrawUntilCountInHand(cardCountForNextTurn);
+            currentPlayer.playPhase = PlayPhase.NotMyTurn;
 
-            currentPlayer.EndTurn();            
-            this.gameLog.EndTurn(currentPlayerState);
+            currentPlayerAction.EndTurn();            
+            this.gameLog.EndTurn(currentPlayer);
             this.gameLog.PopScope();
         }
 
@@ -474,7 +475,7 @@ namespace Dominion
                 if (boughtCard.canOverpay)
                 {
                     currentPlayer.RequestPlayerOverpayForCard(boughtCard, this);
-                }                
+                }
 
                 foreach (Card cardInPlay in currentPlayer.CardsInPlay)
                 {

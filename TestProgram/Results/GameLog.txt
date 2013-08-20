@@ -1,666 +1,752 @@
-BigMoney gained Estate.
-BigMoney gained Estate.
-BigMoney gained Estate.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-Doctor gained Estate.
-Doctor gained Estate.
-Doctor gained Estate.
-Doctor gained Copper.
-Doctor gained Copper.
-Doctor gained Copper.
-Doctor gained Copper.
-Doctor gained Copper.
-Doctor gained Copper.
-Doctor gained Copper.
-BigMoney reshuffled
-BigMoney Drew Copper into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Estate into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Estate into hand.
-Doctor reshuffled
-Doctor Drew Copper into hand.
-Doctor Drew Estate into hand.
-Doctor Drew Estate into hand.
-Doctor Drew Copper into hand.
-Doctor Drew Copper into hand.
+BigMoneySingleJack gained Estate.
+BigMoneySingleJack gained Estate.
+BigMoneySingleJack gained Estate.
+BigMoneySingleJack gained Copper.
+BigMoneySingleJack gained Copper.
+BigMoneySingleJack gained Copper.
+BigMoneySingleJack gained Copper.
+BigMoneySingleJack gained Copper.
+BigMoneySingleJack gained Copper.
+BigMoneySingleJack gained Copper.
+TaxMan gained Estate.
+TaxMan gained Estate.
+TaxMan gained Estate.
+TaxMan gained Copper.
+TaxMan gained Copper.
+TaxMan gained Copper.
+TaxMan gained Copper.
+TaxMan gained Copper.
+TaxMan gained Copper.
+TaxMan gained Copper.
+BigMoneySingleJack reshuffled
+BigMoneySingleJack Drew Copper into hand.
+BigMoneySingleJack Drew Copper into hand.
+BigMoneySingleJack Drew Estate into hand.
+BigMoneySingleJack Drew Copper into hand.
+BigMoneySingleJack Drew Estate into hand.
+TaxMan reshuffled
+TaxMan Drew Copper into hand.
+TaxMan Drew Estate into hand.
+TaxMan Drew Estate into hand.
+TaxMan Drew Copper into hand.
+TaxMan Drew Copper into hand.
 ROUND 1
 -------------
-BigMoney begins turn
+BigMoneySingleJack begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 3 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoneySingleJack bought Silver.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Estate into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
-Doctor begins turn
+TaxMan begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  Doctor Played Copper.
+  TaxMan Played Copper.
     +1 Coin = 1 all together.
-  Doctor Played Copper.
+  TaxMan Played Copper.
     +1 Coin = 2 all together.
-  Doctor Played Copper.
+  TaxMan Played Copper.
     +1 Coin = 3 all together.
-  Doctor bought Doctor.
-  Doctor Drew Copper into hand.
-  Doctor Drew Copper into hand.
-  Doctor Drew Copper into hand.
-  Doctor Drew Copper into hand.
-  Doctor Drew Estate into hand.
-  Doctor ends turn with deck: Copper(7), Doctor(1), Estate(3), 
+  TaxMan bought Silver.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Estate into hand.
+  TaxMan ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-BigMoney begins turn
+BigMoneySingleJack begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoneySingleJack bought JackOfAllTrades.
+  BigMoneySingleJack reshuffled
+  BigMoneySingleJack Drew JackOfAllTrades into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Estate(3), JackOfAllTrades(1), Silver(1), 
 
-Doctor begins turn
+TaxMan begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  Doctor Played Copper.
+  TaxMan Played Copper.
     +1 Coin = 1 all together.
-  Doctor Played Copper.
+  TaxMan Played Copper.
     +1 Coin = 2 all together.
-  Doctor Played Copper.
+  TaxMan Played Copper.
     +1 Coin = 3 all together.
-  Doctor Played Copper.
+  TaxMan Played Copper.
     +1 Coin = 4 all together.
-  Doctor bought Silver.
-  Doctor reshuffled
-  Doctor Drew Copper into hand.
-  Doctor Drew Estate into hand.
-  Doctor Drew Copper into hand.
-  Doctor Drew Copper into hand.
-  Doctor Drew Copper into hand.
-  Doctor ends turn with deck: Copper(7), Doctor(1), Estate(3), Silver(1), 
+  TaxMan bought Taxman.
+  TaxMan reshuffled
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Estate into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan ends turn with deck: Copper(7), Estate(3), Silver(1), Taxman(1), 
 
 ROUND 3
 -------------
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoney Played Silver.
+BigMoneySingleJack begins turn
+With hand: Copper,Copper,Copper,JackOfAllTrades,Silver,
+  BigMoneySingleJack Played JackOfAllTrades.
+    BigMoneySingleJack gained Silver.
+    BigMoneySingleJack Revealed Copper.
+      BigMoneySingleJack Discarded Copper.
+    BigMoneySingleJack Drew Estate into hand.
+    BigMoneySingleJack trashed Estate.
+  BigMoneySingleJack Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
-
-Doctor begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  Doctor Played Copper.
-    +1 Coin = 1 all together.
-  Doctor Played Copper.
-    +1 Coin = 2 all together.
-  Doctor Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 3 all together.
-  Doctor Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 4 all together.
-  Doctor bought Silver.
-  Doctor Drew Copper into hand.
-  Doctor Drew Copper into hand.
-  Doctor Drew Estate into hand.
-  Doctor Drew Estate into hand.
-  Doctor Drew Silver into hand.
-  Doctor ends turn with deck: Copper(7), Doctor(1), Estate(3), Silver(2), 
+  BigMoneySingleJack Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneySingleJack bought Silver.
+  BigMoneySingleJack Drew Estate into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Estate into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), JackOfAllTrades(1), Silver(3), 
+
+TaxMan begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  TaxMan Played Copper.
+    +1 Coin = 1 all together.
+  TaxMan Played Copper.
+    +1 Coin = 2 all together.
+  TaxMan Played Copper.
+    +1 Coin = 3 all together.
+  TaxMan Played Copper.
+    +1 Coin = 4 all together.
+  TaxMan bought Silver.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Estate into hand.
+  TaxMan Drew Estate into hand.
+  TaxMan Drew Taxman into hand.
+  TaxMan ends turn with deck: Copper(7), Estate(3), Silver(2), Taxman(1), 
 
 ROUND 4
 -------------
-BigMoney begins turn
+BigMoneySingleJack begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 3 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), 
+  BigMoneySingleJack bought Silver.
+  BigMoneySingleJack reshuffled
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), JackOfAllTrades(1), Silver(4), 
 
-Doctor begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  Doctor Played Silver.
-    +2 Coin = 2 all together.
-  Doctor Played Copper.
-    +1 Coin = 3 all together.
-  Doctor Played Copper.
-    +1 Coin = 4 all together.
-  Doctor bought Silver.
-  Doctor Drew Copper into hand.
-  Doctor Drew Doctor into hand.
-  Doctor reshuffled
-  Doctor Drew Copper into hand.
-  Doctor Drew Copper into hand.
-  Doctor Drew Silver into hand.
-  Doctor ends turn with deck: Copper(7), Doctor(1), Estate(3), Silver(3), 
+TaxMan begins turn
+With hand: Copper,Copper,Estate,Estate,Taxman,
+  TaxMan Played Taxman.
+    TaxMan trashed Copper.
+    TaxMan gained Silver.
+      ... and placed card on top of deck
+    BigMoneySingleJack Discarded Copper.
+  TaxMan Played Copper.
+    +1 Coin = 1 all together.
+  TaxMan Drew Silver into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Silver into hand.
+  TaxMan reshuffled
+  TaxMan Drew Estate into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan ends turn with deck: Copper(6), Estate(3), Silver(3), Taxman(1), 
 
 ROUND 5
 -------------
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoney Played Silver.
+BigMoneySingleJack begins turn
+With hand: Copper,Copper,Silver,Silver,
+  BigMoneySingleJack Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 5 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
+  BigMoneySingleJack Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneySingleJack bought Gold.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Estate into hand.
+  BigMoneySingleJack Drew Estate into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), Gold(1), JackOfAllTrades(1), Silver(4), 
 
-Doctor begins turn
-With hand: Copper,Copper,Copper,Doctor,Silver,
-  Doctor Played Doctor.
-    Doctor named Copper.
-    Doctor Revealed Copper.
-    Doctor Revealed Copper.
-    Doctor Revealed Estate.
-    Doctor trashed Copper.
-    Doctor trashed Copper.
-  Doctor Played Silver.
+TaxMan begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  TaxMan Played Silver.
     +2 Coin = 2 all together.
-  Doctor Played Copper.
-    +1 Coin = 3 all together.
-  Doctor Played Copper.
-    +1 Coin = 4 all together.
-  Doctor Played Copper.
+  TaxMan Played Silver.
+    +2 Coin = 4 all together.
+  TaxMan Played Copper.
     +1 Coin = 5 all together.
-  Doctor bought Silver.
-  Doctor Drew Estate into hand.
-  Doctor Drew Estate into hand.
-  Doctor Drew Estate into hand.
-  Doctor Drew Copper into hand.
-  Doctor Drew Silver into hand.
-  Doctor ends turn with deck: Copper(5), Doctor(1), Estate(3), Silver(4), 
+  TaxMan Played Copper.
+    +1 Coin = 6 all together.
+  TaxMan bought Gold.
+  TaxMan Drew Taxman into hand.
+  TaxMan Drew Silver into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Estate into hand.
+  TaxMan ends turn with deck: Copper(6), Estate(3), Gold(1), Silver(3), Taxman(1), 
 
 ROUND 6
 -------------
-BigMoney begins turn
-With hand: Copper,Estate,Estate,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), 
-
-Doctor begins turn
-With hand: Copper,Estate,Estate,Estate,Silver,
-  Doctor Played Silver.
+BigMoneySingleJack begins turn
+With hand: Copper,Estate,Estate,Silver,Silver,
+  BigMoneySingleJack Played Silver.
     +2 Coin = 2 all together.
-  Doctor Played Copper.
-    +1 Coin = 3 all together.
-  Doctor bought Silver.
-  Doctor Drew Silver into hand.
-  Doctor Drew Copper into hand.
-  Doctor reshuffled
-  Doctor Drew Silver into hand.
-  Doctor Drew Silver into hand.
-  Doctor Drew Estate into hand.
-  Doctor ends turn with deck: Copper(5), Doctor(1), Estate(3), Silver(5), 
+  BigMoneySingleJack Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneySingleJack Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneySingleJack bought Silver.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew JackOfAllTrades into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack reshuffled
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), Gold(1), JackOfAllTrades(1), Silver(5), 
+
+TaxMan begins turn
+With hand: Copper,Copper,Estate,Silver,Taxman,
+  TaxMan Played Taxman.
+    TaxMan trashed Silver.
+    TaxMan gained Gold.
+      ... and placed card on top of deck
+  TaxMan Played Copper.
+    +1 Coin = 1 all together.
+  TaxMan Played Copper.
+    +1 Coin = 2 all together.
+  TaxMan Drew Gold into hand.
+  TaxMan Drew Estate into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan reshuffled
+  TaxMan Drew Taxman into hand.
+  TaxMan ends turn with deck: Copper(6), Estate(3), Gold(2), Silver(2), Taxman(1), 
 
 ROUND 7
 -------------
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
-  BigMoney Played Silver.
+BigMoneySingleJack begins turn
+With hand: Copper,Copper,Copper,Copper,JackOfAllTrades,
+  BigMoneySingleJack Played JackOfAllTrades.
+    BigMoneySingleJack gained Silver.
+    BigMoneySingleJack Revealed Silver.
+    BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 4 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 5 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(4), 
+  BigMoneySingleJack bought Gold.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Estate into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), Gold(2), JackOfAllTrades(1), Silver(6), 
 
-Doctor begins turn
-With hand: Copper,Estate,Silver,Silver,Silver,
-  Doctor Played Silver.
-    +2 Coin = 2 all together.
-  Doctor Played Silver.
-    +2 Coin = 4 all together.
-  Doctor Played Silver.
-    +2 Coin = 6 all together.
-  Doctor Played Copper.
-    +1 Coin = 7 all together.
-  Doctor bought Gold.
-  Doctor Drew Copper into hand.
-  Doctor Drew Silver into hand.
-  Doctor Drew Estate into hand.
-  Doctor Drew Copper into hand.
-  Doctor Drew Silver into hand.
-  Doctor ends turn with deck: Copper(5), Doctor(1), Estate(3), Gold(1), Silver(5), 
+TaxMan begins turn
+With hand: Copper,Copper,Estate,Gold,Taxman,
+  TaxMan Played Taxman.
+    TaxMan trashed Copper.
+    TaxMan gained Silver.
+      ... and placed card on top of deck
+    BigMoneySingleJack Discarded Copper.
+  TaxMan Played Gold.
+    +3 Coin = 3 all together.
+  TaxMan Played Copper.
+    +1 Coin = 4 all together.
+  TaxMan bought Silver.
+  TaxMan Drew Silver into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Gold into hand.
+  TaxMan Drew Estate into hand.
+  TaxMan Drew Estate into hand.
+  TaxMan ends turn with deck: Copper(5), Estate(3), Gold(2), Silver(4), Taxman(1), 
 
 ROUND 8
 -------------
-BigMoney begins turn
-With hand: Copper,Estate,Gold,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Silver.
-    +2 Coin = 8 all together.
-  BigMoney Played Copper.
-    +1 Coin = 9 all together.
-  BigMoney bought Province.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(4), 
-
-Doctor begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  Doctor Played Silver.
+BigMoneySingleJack begins turn
+With hand: Estate,Silver,Silver,Silver,
+  BigMoneySingleJack Played Silver.
     +2 Coin = 2 all together.
-  Doctor Played Silver.
+  BigMoneySingleJack Played Silver.
     +2 Coin = 4 all together.
-  Doctor Played Copper.
-    +1 Coin = 5 all together.
-  Doctor Played Copper.
+  BigMoneySingleJack Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneySingleJack bought Gold.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Estate into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), Gold(3), JackOfAllTrades(1), Silver(6), 
+
+TaxMan begins turn
+With hand: Copper,Estate,Estate,Gold,Silver,
+  TaxMan Played Gold.
+    +3 Coin = 3 all together.
+  TaxMan Played Silver.
+    +2 Coin = 5 all together.
+  TaxMan Played Copper.
     +1 Coin = 6 all together.
-  Doctor bought Gold.
-  Doctor Drew Doctor into hand.
-  Doctor Drew Copper into hand.
-  Doctor Drew Estate into hand.
-  Doctor Drew Copper into hand.
-  Doctor reshuffled
-  Doctor Drew Silver into hand.
-  Doctor ends turn with deck: Copper(5), Doctor(1), Estate(3), Gold(2), Silver(5), 
+  TaxMan bought Gold.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Silver into hand.
+  TaxMan Drew Silver into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan ends turn with deck: Copper(5), Estate(3), Gold(3), Silver(4), Taxman(1), 
 
 ROUND 9
 -------------
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
+BigMoneySingleJack begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoneySingleJack Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneySingleJack Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Estate into hand.
-  BigMoney reshuffled
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Province into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(4), 
+  BigMoneySingleJack Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneySingleJack bought Gold.
+  BigMoneySingleJack reshuffled
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Estate into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), Gold(4), JackOfAllTrades(1), Silver(6), 
 
-Doctor begins turn
-With hand: Copper,Copper,Doctor,Estate,Silver,
-  Doctor Played Doctor.
-    Doctor named Copper.
-    Doctor Revealed Copper.
-    Doctor Revealed Silver.
-    Doctor Revealed Estate.
-    Doctor trashed Copper.
-  Doctor Played Silver.
+TaxMan begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  TaxMan Played Silver.
     +2 Coin = 2 all together.
-  Doctor Played Copper.
-    +1 Coin = 3 all together.
-  Doctor Played Copper.
-    +1 Coin = 4 all together.
-  Doctor bought Silver.
-  Doctor Drew Silver into hand.
-  Doctor Drew Estate into hand.
-  Doctor Drew Gold into hand.
-  Doctor Drew Estate into hand.
-  Doctor Drew Copper into hand.
-  Doctor ends turn with deck: Copper(4), Doctor(1), Estate(3), Gold(2), Silver(6), 
+  TaxMan Played Silver.
+    +2 Coin = 4 all together.
+  TaxMan Played Copper.
+    +1 Coin = 5 all together.
+  TaxMan Played Copper.
+    +1 Coin = 6 all together.
+  TaxMan Played Copper.
+    +1 Coin = 7 all together.
+  TaxMan bought Gold.
+  TaxMan reshuffled
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Silver into hand.
+  TaxMan Drew Silver into hand.
+  TaxMan Drew Taxman into hand.
+  TaxMan Drew Estate into hand.
+  TaxMan ends turn with deck: Copper(5), Estate(3), Gold(4), Silver(4), Taxman(1), 
 
 ROUND 10
 -------------
-BigMoney begins turn
-With hand: Copper,Estate,Gold,Gold,Province,
-  BigMoney Played Gold.
+BigMoneySingleJack begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoneySingleJack Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(4), 
-
-Doctor begins turn
-With hand: Copper,Estate,Estate,Gold,Silver,
-  Doctor Played Gold.
-    +3 Coin = 3 all together.
-  Doctor Played Silver.
+  BigMoneySingleJack Played Silver.
     +2 Coin = 5 all together.
-  Doctor Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 6 all together.
-  Doctor bought Gold.
-  Doctor Drew Silver into hand.
-  Doctor Drew Silver into hand.
-  Doctor Drew Copper into hand.
-  Doctor Drew Gold into hand.
-  Doctor Drew Silver into hand.
-  Doctor ends turn with deck: Copper(4), Doctor(1), Estate(3), Gold(3), Silver(6), 
+  BigMoneySingleJack Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneySingleJack bought Gold.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew JackOfAllTrades into hand.
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), Gold(5), JackOfAllTrades(1), Silver(6), 
+
+TaxMan begins turn
+With hand: Copper,Estate,Silver,Silver,Taxman,
+  TaxMan Played Taxman.
+    TaxMan trashed Silver.
+    TaxMan gained Gold.
+      ... and placed card on top of deck
+    BigMoneySingleJack Discarded Silver.
+  TaxMan Played Silver.
+    +2 Coin = 2 all together.
+  TaxMan Played Copper.
+    +1 Coin = 3 all together.
+  TaxMan bought Silver.
+  TaxMan Drew Gold into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Estate into hand.
+  TaxMan Drew Estate into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan ends turn with deck: Copper(5), Estate(3), Gold(5), Silver(4), Taxman(1), 
 
 ROUND 11
 -------------
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoney Played Gold.
+BigMoneySingleJack begins turn
+With hand: Copper,Gold,Gold,JackOfAllTrades,
+  BigMoneySingleJack Played JackOfAllTrades.
+    BigMoneySingleJack gained Silver.
+    BigMoneySingleJack Revealed Silver.
+    BigMoneySingleJack Drew Silver into hand.
+    BigMoneySingleJack Drew Estate into hand.
+    BigMoneySingleJack trashed Estate.
+  BigMoneySingleJack Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(6), Province(1), Silver(4), 
+  BigMoneySingleJack Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneySingleJack Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneySingleJack Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneySingleJack bought Province.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Estate(1), Gold(5), JackOfAllTrades(1), Province(1), Silver(7), 
 
-Doctor begins turn
-With hand: Copper,Gold,Silver,Silver,Silver,
-  Doctor Played Gold.
+TaxMan begins turn
+With hand: Copper,Copper,Estate,Estate,Gold,
+  TaxMan Played Gold.
     +3 Coin = 3 all together.
-  Doctor Played Silver.
-    +2 Coin = 5 all together.
-  Doctor Played Silver.
-    +2 Coin = 7 all together.
-  Doctor Played Silver.
-    +2 Coin = 9 all together.
-  Doctor Played Copper.
-    +1 Coin = 10 all together.
-  Doctor bought Province.
-  Doctor reshuffled
-  Doctor Drew Silver into hand.
-  Doctor Drew Silver into hand.
-  Doctor Drew Silver into hand.
-  Doctor Drew Doctor into hand.
-  Doctor Drew Silver into hand.
-  Doctor ends turn with deck: Copper(4), Doctor(1), Estate(3), Gold(3), Province(1), Silver(6), 
+  TaxMan Played Copper.
+    +1 Coin = 4 all together.
+  TaxMan Played Copper.
+    +1 Coin = 5 all together.
+  TaxMan bought Duchy.
+  TaxMan Drew Silver into hand.
+  TaxMan Drew Gold into hand.
+  TaxMan Drew Gold into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Gold into hand.
+  TaxMan ends turn with deck: Copper(5), Duchy(1), Estate(3), Gold(5), Silver(4), Taxman(1), 
 
 ROUND 12
 -------------
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoney Played Silver.
+BigMoneySingleJack begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneySingleJack Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Silver.
+  BigMoneySingleJack Played Silver.
     +2 Coin = 4 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 5 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(7), Province(1), Silver(4), 
+  BigMoneySingleJack Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneySingleJack bought Gold.
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack reshuffled
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Estate(1), Gold(6), JackOfAllTrades(1), Province(1), Silver(7), 
 
-Doctor begins turn
-With hand: Doctor,Silver,Silver,Silver,Silver,
-  Doctor Played Doctor.
-    Doctor named Copper.
-    Doctor Revealed Gold.
-    Doctor Revealed Estate.
-    Doctor Revealed Silver.
-  Doctor Played Silver.
-    +2 Coin = 2 all together.
-  Doctor Played Silver.
-    +2 Coin = 4 all together.
-  Doctor Played Silver.
-    +2 Coin = 6 all together.
-  Doctor Played Silver.
-    +2 Coin = 8 all together.
-  Doctor bought Province.
-  Doctor Drew Estate into hand.
-  Doctor Drew Silver into hand.
-  Doctor Drew Gold into hand.
-  Doctor Drew Copper into hand.
-  Doctor Drew Gold into hand.
-  Doctor ends turn with deck: Copper(4), Doctor(1), Estate(3), Gold(3), Province(2), Silver(6), 
+TaxMan begins turn
+With hand: Copper,Gold,Gold,Gold,Silver,
+  TaxMan Played Gold.
+    +3 Coin = 3 all together.
+  TaxMan Played Gold.
+    +3 Coin = 6 all together.
+  TaxMan Played Gold.
+    +3 Coin = 9 all together.
+  TaxMan Played Silver.
+    +2 Coin = 11 all together.
+  TaxMan Played Copper.
+    +1 Coin = 12 all together.
+  TaxMan bought Province.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Silver into hand.
+  TaxMan Drew Gold into hand.
+  TaxMan reshuffled
+  TaxMan Drew Duchy into hand.
+  TaxMan Drew Province into hand.
+  TaxMan ends turn with deck: Copper(5), Duchy(1), Estate(3), Gold(5), Province(1), Silver(4), Taxman(1), 
 
 ROUND 13
 -------------
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Gold,Silver,
-  BigMoney Played Gold.
+BigMoneySingleJack begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoneySingleJack Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Silver.
+  BigMoneySingleJack Played Silver.
     +2 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(7), Province(2), Silver(4), 
-
-Doctor begins turn
-With hand: Copper,Estate,Gold,Gold,Silver,
-  Doctor Played Gold.
-    +3 Coin = 3 all together.
-  Doctor Played Gold.
-    +3 Coin = 6 all together.
-  Doctor Played Silver.
-    +2 Coin = 8 all together.
-  Doctor Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 9 all together.
-  Doctor bought Province.
-  Doctor Drew Copper into hand.
-  Doctor Drew Silver into hand.
-  Doctor Drew Province into hand.
-  Doctor Drew Gold into hand.
-  Doctor Drew Estate into hand.
-  Doctor ends turn with deck: Copper(4), Doctor(1), Estate(3), Gold(3), Province(3), Silver(6), 
+  BigMoneySingleJack bought Province.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Estate(1), Gold(6), JackOfAllTrades(1), Province(2), Silver(7), 
+
+TaxMan begins turn
+With hand: Copper,Duchy,Gold,Province,Silver,
+  TaxMan Played Gold.
+    +3 Coin = 3 all together.
+  TaxMan Played Silver.
+    +2 Coin = 5 all together.
+  TaxMan Played Copper.
+    +1 Coin = 6 all together.
+  TaxMan bought Gold.
+  TaxMan Drew Estate into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Gold into hand.
+  TaxMan Drew Taxman into hand.
+  TaxMan Drew Silver into hand.
+  TaxMan ends turn with deck: Copper(5), Duchy(1), Estate(3), Gold(6), Province(1), Silver(4), Taxman(1), 
 
 ROUND 14
 -------------
-BigMoney begins turn
-With hand: Estate,Gold,Gold,Gold,Gold,
-  BigMoney Played Gold.
+BigMoneySingleJack begins turn
+With hand: Gold,Gold,Silver,Silver,Silver,
+  BigMoneySingleJack Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Gold.
+  BigMoneySingleJack Played Gold.
     +3 Coin = 6 all together.
-  BigMoney Played Gold.
-    +3 Coin = 9 all together.
-  BigMoney Played Gold.
-    +3 Coin = 12 all together.
-  BigMoney bought Province.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(7), Province(3), Silver(4), 
+  BigMoneySingleJack Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneySingleJack Played Silver.
+    +2 Coin = 10 all together.
+  BigMoneySingleJack Played Silver.
+    +2 Coin = 12 all together.
+  BigMoneySingleJack bought Province.
+  BigMoneySingleJack Drew Province into hand.
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Estate(1), Gold(6), JackOfAllTrades(1), Province(3), Silver(7), 
 
-Doctor begins turn
-With hand: Copper,Estate,Gold,Province,Silver,
-  Doctor Played Gold.
+TaxMan begins turn
+With hand: Copper,Estate,Gold,Silver,Taxman,
+  TaxMan Played Taxman.
+    TaxMan trashed Silver.
+    TaxMan gained Gold.
+      ... and placed card on top of deck
+    BigMoneySingleJack Discarded Silver.
+  TaxMan Played Gold.
     +3 Coin = 3 all together.
-  Doctor Played Silver.
-    +2 Coin = 5 all together.
-  Doctor Played Copper.
-    +1 Coin = 6 all together.
-  Doctor bought Duchy.
-  Doctor Drew Copper into hand.
-  Doctor Drew Copper into hand.
-  Doctor Drew Estate into hand.
-  Doctor reshuffled
-  Doctor Drew Doctor into hand.
-  Doctor Drew Silver into hand.
-  Doctor ends turn with deck: Copper(4), Doctor(1), Duchy(1), Estate(3), Gold(3), Province(3), Silver(6), 
+  TaxMan Played Copper.
+    +1 Coin = 4 all together.
+  TaxMan bought Silver.
+  TaxMan Drew Gold into hand.
+  TaxMan Drew Silver into hand.
+  TaxMan Drew Gold into hand.
+  TaxMan Drew Silver into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan ends turn with deck: Copper(5), Duchy(1), Estate(3), Gold(7), Province(1), Silver(4), Taxman(1), 
 
 ROUND 15
 -------------
-BigMoney begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  BigMoney Played Gold.
+BigMoneySingleJack begins turn
+With hand: Copper,Copper,Gold,Province,
+  BigMoneySingleJack Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney Played Copper.
-    +1 Coin = 9 all together.
-  BigMoney bought Province.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(7), Province(4), Silver(4), 
-
-Doctor begins turn
-With hand: Copper,Copper,Doctor,Estate,Silver,
-  Doctor Played Doctor.
-    Doctor named Copper.
-    Doctor Revealed Gold.
-    Doctor Revealed Province.
-    Doctor Revealed Silver.
-  Doctor Played Silver.
-    +2 Coin = 2 all together.
-  Doctor Played Copper.
-    +1 Coin = 3 all together.
-  Doctor Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 4 all together.
-  Doctor bought Estate.
-  Doctor Drew Province into hand.
-  Doctor Drew Silver into hand.
-  Doctor Drew Gold into hand.
-  Doctor Drew Copper into hand.
-  Doctor Drew Silver into hand.
-  Doctor ends turn with deck: Copper(4), Doctor(1), Duchy(1), Estate(4), Gold(3), Province(3), Silver(6), 
+  BigMoneySingleJack Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneySingleJack bought Duchy.
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew JackOfAllTrades into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Duchy(1), Estate(1), Gold(6), JackOfAllTrades(1), Province(3), Silver(7), 
+
+TaxMan begins turn
+With hand: Copper,Gold,Gold,Silver,Silver,
+  TaxMan Played Gold.
+    +3 Coin = 3 all together.
+  TaxMan Played Gold.
+    +3 Coin = 6 all together.
+  TaxMan Played Silver.
+    +2 Coin = 8 all together.
+  TaxMan Played Silver.
+    +2 Coin = 10 all together.
+  TaxMan Played Copper.
+    +1 Coin = 11 all together.
+  TaxMan bought Province.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Estate into hand.
+  TaxMan Drew Gold into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Estate into hand.
+  TaxMan ends turn with deck: Copper(5), Duchy(1), Estate(3), Gold(7), Province(2), Silver(4), Taxman(1), 
 
 ROUND 16
 -------------
-BigMoney begins turn
-With hand: Copper,Estate,Estate,Gold,Silver,
-  BigMoney Played Gold.
+BigMoneySingleJack begins turn
+With hand: Copper,Copper,Gold,JackOfAllTrades,Silver,
+  BigMoneySingleJack Played JackOfAllTrades.
+    BigMoneySingleJack gained Silver.
+    BigMoneySingleJack Revealed Copper.
+      BigMoneySingleJack Discarded Copper.
+    BigMoneySingleJack Drew Estate into hand.
+  BigMoneySingleJack Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Silver.
+  BigMoneySingleJack Played Silver.
     +2 Coin = 5 all together.
-  BigMoney Played Copper.
+  BigMoneySingleJack Played Copper.
     +1 Coin = 6 all together.
-  BigMoney bought Duchy.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(7), Province(4), Silver(4), 
+  BigMoneySingleJack Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneySingleJack bought Duchy.
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack reshuffled
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Duchy(2), Estate(1), Gold(6), JackOfAllTrades(1), Province(3), Silver(8), 
 
-Doctor begins turn
-With hand: Copper,Gold,Province,Silver,Silver,
-  Doctor Played Gold.
+TaxMan begins turn
+With hand: Copper,Copper,Estate,Estate,Gold,
+  TaxMan Played Gold.
     +3 Coin = 3 all together.
-  Doctor Played Silver.
-    +2 Coin = 5 all together.
-  Doctor Played Silver.
-    +2 Coin = 7 all together.
-  Doctor Played Copper.
-    +1 Coin = 8 all together.
-  Doctor bought Province.
-  Doctor Drew Province into hand.
-  Doctor Drew Estate into hand.
-  Doctor Drew Silver into hand.
-  Doctor Drew Gold into hand.
-  Doctor Drew Estate into hand.
-  Doctor ends turn with deck: Copper(4), Doctor(1), Duchy(1), Estate(4), Gold(3), Province(4), Silver(6), 
+  TaxMan Played Copper.
+    +1 Coin = 4 all together.
+  TaxMan Played Copper.
+    +1 Coin = 5 all together.
+  TaxMan bought Duchy.
+  TaxMan Drew Gold into hand.
+  TaxMan reshuffled
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Duchy into hand.
+  TaxMan Drew Gold into hand.
+  TaxMan Drew Silver into hand.
+  TaxMan ends turn with deck: Copper(5), Duchy(2), Estate(3), Gold(7), Province(2), Silver(4), Taxman(1), 
 
-Game ended in 16 turns.
-Doctor Won!
-BigMoney total score: 30
-  Copper(7), Duchy(1), Estate(3), Gold(7), Province(4), Silver(4), 
-Doctor total score: 31
-  Copper(4), Doctor(1), Duchy(1), Estate(4), Gold(3), Province(4), Silver(6), 
-Trash contains: Copper(3), 
+ROUND 17
+-------------
+BigMoneySingleJack begins turn
+With hand: Copper,Gold,Gold,Gold,Silver,
+  BigMoneySingleJack Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneySingleJack Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneySingleJack Played Gold.
+    +3 Coin = 9 all together.
+  BigMoneySingleJack Played Silver.
+    +2 Coin = 11 all together.
+  BigMoneySingleJack Played Copper.
+    +1 Coin = 12 all together.
+  BigMoneySingleJack bought Province.
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Province into hand.
+  BigMoneySingleJack Drew Duchy into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Duchy(2), Estate(1), Gold(6), JackOfAllTrades(1), Province(4), Silver(8), 
+
+TaxMan begins turn
+With hand: Copper,Duchy,Gold,Gold,Silver,
+  TaxMan Played Gold.
+    +3 Coin = 3 all together.
+  TaxMan Played Gold.
+    +3 Coin = 6 all together.
+  TaxMan Played Silver.
+    +2 Coin = 8 all together.
+  TaxMan Played Copper.
+    +1 Coin = 9 all together.
+  TaxMan bought Province.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Gold into hand.
+  TaxMan Drew Silver into hand.
+  TaxMan Drew Gold into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan ends turn with deck: Copper(5), Duchy(2), Estate(3), Gold(7), Province(3), Silver(4), Taxman(1), 
+
+ROUND 18
+-------------
+BigMoneySingleJack begins turn
+With hand: Copper,Duchy,Gold,Province,Silver,
+  BigMoneySingleJack Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneySingleJack Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneySingleJack Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneySingleJack bought Duchy.
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack Drew Copper into hand.
+  BigMoneySingleJack Drew Gold into hand.
+  BigMoneySingleJack Drew Silver into hand.
+  BigMoneySingleJack Drew JackOfAllTrades into hand.
+  BigMoneySingleJack ends turn with deck: Copper(7), Duchy(3), Estate(1), Gold(6), JackOfAllTrades(1), Province(4), Silver(8), 
+
+TaxMan begins turn
+With hand: Copper,Copper,Gold,Gold,Silver,
+  TaxMan Played Gold.
+    +3 Coin = 3 all together.
+  TaxMan Played Gold.
+    +3 Coin = 6 all together.
+  TaxMan Played Silver.
+    +2 Coin = 8 all together.
+  TaxMan Played Copper.
+    +1 Coin = 9 all together.
+  TaxMan Played Copper.
+    +1 Coin = 10 all together.
+  TaxMan bought Province.
+  TaxMan Drew Duchy into hand.
+  TaxMan Drew Province into hand.
+  TaxMan Drew Province into hand.
+  TaxMan Drew Copper into hand.
+  TaxMan Drew Estate into hand.
+  TaxMan ends turn with deck: Copper(5), Duchy(2), Estate(3), Gold(7), Province(4), Silver(4), Taxman(1), 
+
+Game ended in 18 turns.
+BigMoneySingleJack Won!
+BigMoneySingleJack total score: 34
+  Copper(7), Duchy(3), Estate(1), Gold(6), JackOfAllTrades(1), Province(4), Silver(8), 
+TaxMan total score: 33
+  Copper(5), Duchy(2), Estate(3), Gold(7), Province(4), Silver(4), Taxman(1), 
+Trash contains: Copper(2), Estate(2), Silver(3), 

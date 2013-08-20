@@ -234,5 +234,14 @@ namespace Dominion
         {
             this.textWriter.WriteLine("Player overpayed by {0} for {1}", overPayAmount, boughtCard.name);
         }
+
+        public void CardWentToLocation(DeckPlacement deckPlacement)
+        {
+            switch (deckPlacement)
+            {
+                case DeckPlacement.TopOfDeck: this.textWriter.WriteLine("... and placed card on top of deck"); break;
+                case DeckPlacement.Hand: this.textWriter.WriteLine("... and placed card in hand"); break;                
+            }
+        }
     }
 }

@@ -470,7 +470,7 @@ namespace Dominion.CardTypes
         : Card
     {
         public Watchtower()
-            : base("Watchtower", coinCost: 3)
+            : base("Watchtower", coinCost: 3, isReaction:true)
         {
         }
 
@@ -481,20 +481,24 @@ namespace Dominion.CardTypes
 
         override public DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
+            Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(card => card.Equals(this), gameState);
+            if (revealedCard == null)
+            {
+                return DeckPlacement.Default;
+            }
+
             // how does the player know what card is being asked about?
             PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState,
                 acceptableChoice => acceptableChoice == PlayerActionChoice.Trash ||
-                                    acceptableChoice == PlayerActionChoice.TopDeck ||
-                                    acceptableChoice == PlayerActionChoice.Nothing);
+                                    acceptableChoice == PlayerActionChoice.TopDeck);
 
             switch (choice)
             {
                 case PlayerActionChoice.Trash: return DeckPlacement.Trash;
-                case PlayerActionChoice.TopDeck: return DeckPlacement.TopOfDeck;
-                case PlayerActionChoice.Nothing: return DeckPlacement.Default;
+                case PlayerActionChoice.TopDeck: return DeckPlacement.TopOfDeck;                
                 default: throw new Exception("Invalid choice");
             }
-        }
+        }             
     }
 
 }

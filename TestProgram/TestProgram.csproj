@@ -54,6 +54,8 @@
     <Compile Include="Strategies\BigMoneySingleCard.cs" />
     <Compile Include="Strategies\CaravanBridgeDukeCartographer.cs" />
     <Compile Include="Strategies\BigMoneySimple.cs" />
+    <Compile Include="Strategies\TaxMan.cs" />
+    <Compile Include="Strategies\TreasureMap.cs" />
     <Compile Include="Strategies\Doctor.cs" />
     <Compile Include="Strategies\GardensBeggarIronworks.cs" />
     <Compile Include="Strategies\LaboratorySpiceMerchantWarehouse.cs" />

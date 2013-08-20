@@ -321,6 +321,7 @@ namespace Dominion
 
         private void PlaceCardFromPlacement(CardPlacementPair pair, GameState gameState)
         {
+            gameLog.CardWentToLocation(pair.placement);
             switch (pair.placement)
             {
                 case DeckPlacement.Discard: this.discard.AddCard(pair.card); break;
@@ -431,6 +432,18 @@ namespace Dominion
             }
         }
 
+        internal bool DiscardCardFromHand(GameState gameState, Card card)
+        {       
+            if (!this.hand.HasCard(card))
+            {
+                return false;
+            }            
+
+            this.MoveCardFromHandToDiscard(card.GetType(), gameState);            
+
+            return true;        
+        }
+
         internal void MoveCardFromPlayedCardToIslandMat(Card card)
         {
             Card removedCard = this.cardsPlayed.RemoveCard(card);
@@ -474,6 +487,15 @@ namespace Dominion
             {
                 this.nativeVillageMat.AddCard(removedCard);
             }
+        }
+
+        internal void RequestPlayerSpendCoinTokensBeforeBuyPhase(GameState gameState)
+        {
+            int coinToSpend = this.actions.GetCoinAmountToSpendInBuyPhase(gameState);
+            if (coinToSpend > this.AvailableCoins)
+                throw new Exception("Can not spend that many coins");
+            this.AddCoins(coinToSpend);
+            this.AddCoinTokens(-coinToSpend);
         }
 
         internal Card RequestPlayerChooseActionToRemoveFromHandForPlay(GameState gameState, bool isOptional)
@@ -806,6 +828,7 @@ namespace Dominion
             if (cardToReveal != null)
             {
                 Card revealedCard = RevealCardFromHand(cardToReveal, gameState);
+                this.MoveRevealedCardsToHand(card => true);
                 return revealedCard;
             }
 
@@ -881,7 +904,7 @@ namespace Dominion
 
         internal void RequestPlayerOverpayForCard(Card boughtCard, GameState gameState)
         {
-            int overPayAmount = this.actions.GetAmountToOverpayForCard(gameState, boughtCard);
+            int overPayAmount = this.actions.GetCoinAmountToOverpayForCard(gameState, boughtCard);
             if (this.AvailableCoins < overPayAmount)
             {
                 throw new Exception("Player requested to overpay by more than he can afford");
@@ -994,11 +1017,11 @@ namespace Dominion
 
             if (gainReason == GainReason.Buy)
             {
-                card.DoSpecializedWhenBuy(this, gameState);
-            }
-
-            this.gameLog.PopScope();
+                card.DoSpecializedWhenBuy(this, gameState);            
+            }            
+            
             this.PlaceCardFromPlacement(new CardPlacementPair(card, defaultPlacement), gameState);
+            this.gameLog.PopScope();
 
             gameState.hasCurrentPlayerGainedCard |= true;
         }

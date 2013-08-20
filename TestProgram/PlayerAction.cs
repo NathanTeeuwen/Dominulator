@@ -83,7 +83,7 @@ namespace Program
         }
 
         public override Type GetCardFromRevealedCardsToTrash(GameState gameState, PlayerState player, CardPredicate acceptableCard)
-        {
+        {            
             var currentPlayer = player;
             Type result = this.trashOrder.GetPreferredCard(
                 gameState,
@@ -92,7 +92,7 @@ namespace Program
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)
             {
-                Card card = currentPlayer.CardsBeingRevealed.OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();
+                Card card = currentPlayer.CardsBeingRevealed.OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();                
                 return card != null ? card.GetType() : null;
             }
 
@@ -267,5 +267,10 @@ namespace Program
                 return this.name;
             }
         }
+
+        public override int GetCoinAmountToSpendInBuyPhase(GameState gameState)
+        {
+            return 0;
+        }        
     }    
 }

@@ -19,6 +19,7 @@ namespace Dominion
         void PlayerBoughtCard(PlayerState playerState, Card card);
         void GainedCard(PlayerState playerState, Card card);
         void PlayedCard(PlayerState playerState, Card card);
+        void CardWentToLocation(DeckPlacement deckPlacement);
         void ReceivedDurationEffectFrom(PlayerState playerState, Card card);
         void PlayerGainedCard(PlayerState playerState, Card card);
         void PlayerDiscardCard(PlayerState playerState, Card card);

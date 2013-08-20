@@ -136,5 +136,10 @@ namespace Dominion
         {
 
         }
+
+        public void CardWentToLocation(DeckPlacement deckPlacement)
+        {
+
+        }
     }
 }

@@ -224,7 +224,17 @@ namespace Dominion
             return PlayerMustChooseNumber();
         }
 
-        virtual public int GetAmountToOverpayForCard(GameState gameState, Card card)
+        virtual public int GetCoinAmountToOverpayForCard(GameState gameState, Card card)
+        {
+            return PlayerMustChooseNumber();
+        }
+
+        virtual public int GetCoinAmountToSpendInBuyPhase(GameState gameState)
+        {
+            return PlayerMustChooseNumber();
+        }
+
+        virtual public int GetCoinAmountToUseInButcher(GameState gameState)
         {
             return PlayerMustChooseNumber();
         }

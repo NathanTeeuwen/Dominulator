@@ -12,7 +12,7 @@ namespace Program
     {
         static void Main()
         {
-            ComparePlayers(Strategies.BigMoney.Player(1), Strategies.Doctor.Player(2));            
+            ComparePlayers(Strategies.BigMoneySingleJack.Player(1), Strategies.TaxMan.Player(2));                        
         }
 
         static void FindAndCompareBestStrategy()
@@ -320,7 +320,7 @@ namespace Program
             // for forum topic: http://forum.dominionstrategy.com/index.php?topic=8580.0
             //ComparePlayers(Strategies.FishingVillageChapelPoorHouseTalisman.Player(1), Strategies.BigMoney.Player(2));
             //ComparePlayers(Strategies.FishingVillageChapelPoorHouse.Player(1), Strategies.BigMoney.Player(2));            
-            ComparePlayers(Strategies.GardensBeggarIronworks.Player(1), Strategies.BigMoney.Player(2), numberOfGames: 100000);
+            ComparePlayers(Strategies.GardensBeggarIronworks.Player(1), Strategies.BigMoney.Player(2), numberOfGames: 10000);
         }
 
         static void RebuildResults()
@@ -372,7 +372,8 @@ namespace Program
             bool showCompactScore = false, 
             bool showDistribution = false,
             bool shouldParallel = true,
-            int numberOfGames = 10000, 
+            bool showPlayer2Wins = false,
+            int numberOfGames = 1000, 
             int logGameCount = 100)
         {            
             PlayerAction[] players = new PlayerAction[] { player1, player2 };
@@ -383,7 +384,7 @@ namespace Program
              
             Action<int> loopBody = delegate(int gameCount)                    
             {
-                using (IGameLog gameLog = gameCount < logGameCount || gameCount == 23485 ? GetGameLogForIteration(gameCount) : new EmptyGameLog())                
+                using (IGameLog gameLog = gameCount < logGameCount || gameCount == 203 ? GetGameLogForIteration(gameCount) : new EmptyGameLog())                
                 {
                     // swap order every other game
                     bool swappedOrder = !firstPlayerAdvantage && (gameCount % 2 == 1);
@@ -421,11 +422,11 @@ namespace Program
                         {
                             int winningPlayerIndex = ((PlayerAction)winners[0].Actions).playerIndex - 1;
                             winnerCount[winningPlayerIndex]++;
-                            /*
-                            if (winningPlayerIndex == 1)
+                            
+                            if (winningPlayerIndex == 1 && showPlayer2Wins)
                             {
                                 System.Console.WriteLine("Player 2 won game {0}. ", gameCount);
-                            }*/
+                            }
                         }
                         else
                         {

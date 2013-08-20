@@ -40,7 +40,9 @@ namespace Dominion
         bool ShouldTrashCard(GameState gameState, Card card);
         bool ShouldGainCard(GameState gameState, Card card);
         PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice);
-        string PlayerName { get; }
-        int GetAmountToOverpayForCard(GameState gameState, Card card);
+        string PlayerName { get; }        
+        int GetCoinAmountToOverpayForCard(GameState gameState, Card card);
+        int GetCoinAmountToSpendInBuyPhase(GameState gameState);
+        int GetCoinAmountToUseInButcher(GameState gameState);
     }
 }

@@ -30,7 +30,7 @@ namespace Program
                 {
                 }
 
-                override public int GetAmountToOverpayForCard(GameState gameState, Card card)
+                override public int GetCoinAmountToOverpayForCard(GameState gameState, Card card)
                 {
                     return gameState.players.CurrentPlayer.AvailableCoins;
                 }
