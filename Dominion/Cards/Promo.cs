@@ -50,7 +50,7 @@ namespace Dominion.CardTypes
         Card
     {
         public Governor()
-            : base("Governor", coinCost: 5, isAction: true)
+            : base("Governor", coinCost: 5, isAction: true, plusActions:1)
         {
         }
 

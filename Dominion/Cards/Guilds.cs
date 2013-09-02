@@ -120,7 +120,7 @@ namespace Dominion.CardTypes
                         currentPlayer.RequestPlayerTrashLookedAtCard(gameState);
                         break;
                     case PlayerActionChoice.Discard:
-                        currentPlayer.MoveLookedAtCardsToDiscard();
+                        currentPlayer.MoveLookedAtCardsToDiscard(gameState);
                         break;
                     case PlayerActionChoice.TopDeck:
                         currentPlayer.MoveLookedAtCardToTopOfDeck();

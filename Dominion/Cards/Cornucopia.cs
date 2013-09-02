@@ -48,7 +48,7 @@ namespace Dominion.CardTypes
                 currentPlayer.MoveRevealedCardToHand(foundCard);
             }
 
-            currentPlayer.MoveRevealedCardToDiscard(cardToMove => true);
+            currentPlayer.MoveRevealedCardToDiscard(cardToMove => true, gameState);
         }
     }
 

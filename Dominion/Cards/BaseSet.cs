@@ -69,7 +69,7 @@ namespace Dominion.CardTypes
                 }
             }
 
-            currentPlayer.MoveRevealedCardsToDiscard();
+            currentPlayer.MoveRevealedCardsToDiscard(gameState);
         }
     }
 
@@ -137,7 +137,7 @@ namespace Dominion.CardTypes
         {
             if (currentPlayer.actions.ShouldPutDeckInDiscard(gameState))
             {
-                currentPlayer.MoveDeckToDiscard();
+                currentPlayer.MoveDeckToDiscard(gameState);
             }
         }
     }
@@ -230,7 +230,7 @@ namespace Dominion.CardTypes
                 }
             }
 
-            currentPlayer.MoveRevealedCardsToDiscard();
+            currentPlayer.MoveRevealedCardsToDiscard(gameState);
         }
     }
 
@@ -351,7 +351,7 @@ namespace Dominion.CardTypes
             {
                 if (decidingPlayer.actions.ShouldPlayerDiscardCardFromDeck(gameState, playerAffected, revealedCard))
                 {
-                    playerAffected.MoveRevealedCardsToDiscard();
+                    playerAffected.MoveRevealedCardsToDiscard(gameState);
                 }
                 else
                 {
@@ -402,7 +402,7 @@ namespace Dominion.CardTypes
                 }
             }
 
-            otherPlayer.MoveRevealedCardsToDiscard();
+            otherPlayer.MoveRevealedCardsToDiscard(gameState);
         }
     }
 
@@ -416,9 +416,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Type actionTypeToPlay = currentPlayer.actions.GetActionFromHandToPlay(gameState, false);
-
-            Card cardToPlay = currentPlayer.RequestPlayerChooseActionToRemoveFromHandForPlay(gameState, isOptional: false);
+            Card cardToPlay = currentPlayer.RequestPlayerChooseCardToRemoveFromHandForPlay(gameState, acceptableCard => true, isTreasure: false, isAction: true, isOptional: false);
             if (cardToPlay != null)
             {
                 currentPlayer.DoPlayAction(cardToPlay, gameState, countTimes: 2);

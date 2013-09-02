@@ -49,7 +49,7 @@ namespace Dominion.CardTypes
 
     public class Conspirator :
         Card
-    {
+    {        
         public Conspirator()
             : base("Conspirator", coinCost: 4, plusCoins: 2, isAction: true)
         {
@@ -212,23 +212,23 @@ namespace Dominion.CardTypes
             else
             {
                 // discard your hand, 
-                currentPlayer.DiscardHand();
+                currentPlayer.DiscardHand(gameState);
                 // +4 cards
                 currentPlayer.DrawAdditionalCardsIntoHand(4);
 
-                attackAction = this.DoSpecializedAttack;
+                attackAction = this.DoSpecializedAttackInternal;
             }
 
             currentPlayer.AttackOtherPlayers(gameState, attackAction);
         }
 
-        private void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        private void DoSpecializedAttackInternal(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
             // with at least 5 cards in hand
             if (otherPlayer.hand.Count >= 5)
             {
                 // discards his hand
-                otherPlayer.DiscardHand();
+                otherPlayer.DiscardHand(gameState);
                 // and draws 4 cards
                 otherPlayer.DrawAdditionalCardsIntoHand(4);
             }
@@ -338,7 +338,7 @@ namespace Dominion.CardTypes
             }
 
             // he discards the other revealed cards
-            otherPlayer.MoveRevealedCardsToDiscard();
+            otherPlayer.MoveRevealedCardsToDiscard(gameState);
         }
     }
 
@@ -541,7 +541,7 @@ namespace Dominion.CardTypes
             }
 
             // ... then discards
-            gameState.players.PlayerLeft.MoveRevealedCardsToDiscard();
+            gameState.players.PlayerLeft.MoveRevealedCardsToDiscard(gameState);
         }
 
         private void GainBenefitFromCard(Card card, PlayerState currentPlayer)
@@ -603,7 +603,7 @@ namespace Dominion.CardTypes
             }
             else
             {
-                currentPlayer.MoveRevealedCardsToDiscard();
+                currentPlayer.MoveRevealedCardsToDiscard(gameState);
             }
         }
     }

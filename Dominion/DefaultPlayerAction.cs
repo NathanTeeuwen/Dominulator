@@ -83,12 +83,12 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetActionFromHandToPlay(GameState gameState, bool isOptional)
+        virtual public Type GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return NoCardIfOptional(isOptional);
         }
 
-        virtual public Type GetTreasureFromHandToPlay(GameState gameState)
+        virtual public Type GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return PlayerMustMakeCardChoice();
         }
@@ -237,6 +237,11 @@ namespace Dominion
         virtual public int GetCoinAmountToUseInButcher(GameState gameState)
         {
             return PlayerMustChooseNumber();
+        }
+
+        virtual public Type GetCardFromPlayToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        {
+            return PlayerMustMakeCardChoice();
         }
     }    
 }

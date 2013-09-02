@@ -144,6 +144,11 @@ namespace Dominion
         {            
         }
 
+        virtual public void DoSpecializedDiscardNonCleanup(PlayerState currentPlayer, GameState gameState)
+        {
+
+        }
+
         // return true if blocks attack;
         virtual public bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState)
         {
@@ -191,6 +196,11 @@ namespace Dominion
         }
 
         virtual public DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        {
+            return DeckPlacement.Default;
+        }
+
+        virtual public DeckPlacement DoSpecializedActionOnBuyWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
             return DeckPlacement.Default;
         }

@@ -49,20 +49,20 @@ namespace Program
                 gameState.GetPile(card).Any());
         }
 
-        public override Type GetTreasureFromHandToPlay(GameState gameState)
+        public override Type GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             var currentPlayer = gameState.players.CurrentPlayer;
             return this.treasurePlayOrder.GetPreferredCard(
                 gameState,
-                card => currentPlayer.Hand.HasCard(card.GetType()));
+                card => currentPlayer.Hand.HasCard(card.GetType()) && acceptableCard(card));
         }
 
-        public override Type GetActionFromHandToPlay(GameState gameState, bool isOptional)
+        public override Type GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             var currentPlayer = gameState.players.CurrentPlayer;
             return this.actionOrder.GetPreferredCard(
                 gameState,
-                card => currentPlayer.Hand.HasCard(card.GetType()));
+                card => currentPlayer.Hand.HasCard(card.GetType()) && acceptableCard(card));
         }
 
         public override Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)

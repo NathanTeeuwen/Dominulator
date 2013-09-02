@@ -430,7 +430,7 @@ namespace Dominion
             {
                 currentPlayer.turnCounters.RemoveAction();
 
-                if (!currentPlayer.RequestPlayerPlayActionFromHand(this, isOptional: true))
+                if (!currentPlayer.RequestPlayerPlayActionFromHand(this, acceptableCard => true, isOptional: true))
                 {
                     break;
                 }                
@@ -490,12 +490,16 @@ namespace Dominion
         {
             currentPlayer.playPhase = PlayPhase.Cleanup;
 
-            foreach (Card cardInPlay in currentPlayer.cardsPlayed)
+            currentPlayer.cardsInPlayAtBeginningOfCleanupPhase.CopyFrom(currentPlayer.cardsPlayed);
+
+            foreach (Card cardInPlay in currentPlayer.cardsInPlayAtBeginningOfCleanupPhase)
             {
                 cardInPlay.DoSpecializedCleanupAtStartOfCleanup(currentPlayer, this);
             }
-            
-            currentPlayer.CleanupCardsToDiscard();
+
+            currentPlayer.cardsInPlayAtBeginningOfCleanupPhase.Clear();
+
+            currentPlayer.CleanupCardsToDiscard(this);
         }
 
         internal void DoPlayTreasures(PlayerState currentPlayer)
@@ -503,7 +507,7 @@ namespace Dominion
             currentPlayer.playPhase = PlayPhase.PlayTreasure;
             while (true)
             {
-                Type cardTypeToPlay = currentPlayer.actions.GetTreasureFromHandToPlay(this);
+                Type cardTypeToPlay = currentPlayer.actions.GetTreasureFromHandToPlay(this, acceptableCard => true, isOptional:true);
                 if (cardTypeToPlay == null)
                 {
                     break;

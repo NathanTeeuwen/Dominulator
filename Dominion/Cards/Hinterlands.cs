@@ -63,7 +63,7 @@ namespace Dominion.CardTypes
                 }
             }
 
-            currentPlayer.MoveRevealedCardsToDiscard();
+            currentPlayer.MoveRevealedCardsToDiscard(gameState);
         }
     }
 
@@ -127,7 +127,7 @@ namespace Dominion.CardTypes
                 {
                     if (player.actions.ShouldPlayerDiscardCardFromDeck(gameState, player, card))
                     {
-                        player.MoveLookedAtCardsToDiscard();
+                        player.MoveLookedAtCardsToDiscard(gameState);
                     }
                     else
                     {
@@ -274,7 +274,7 @@ namespace Dominion.CardTypes
                 if (currentPlayer.actions.ShouldPlayerDiscardCardFromDeck(gameState, currentPlayer, card))
                 {
                     currentPlayer.gameLog.PushScope();
-                    currentPlayer.MoveLookedAtCardsToDiscard();
+                    currentPlayer.MoveLookedAtCardsToDiscard(gameState);
                     currentPlayer.gameLog.PlayerDiscardCard(currentPlayer, card);
                     currentPlayer.gameLog.PopScope();
                 }
@@ -367,7 +367,7 @@ namespace Dominion.CardTypes
                 currentPlayer.GainCard(gameState, cardToGain, DeckPlacement.Discard);                
             }
 
-            otherPlayer.MoveRevealedCardsToDiscard();
+            otherPlayer.MoveRevealedCardsToDiscard(gameState);
         }
     }
 
@@ -428,7 +428,9 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            currentPlayer.RequestPlayerTopDeckCardsFromPlay(gameState,
+                acceptableCard => acceptableCard.isAction,
+                isOptional: true);
         }
     }
 
@@ -488,7 +490,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            if (currentPlayer.RequestPlayerDiscardCardFromHand(gameState, card => card.isTreasure, isOptional: true) != null)
+            if (currentPlayer.RequestPlayerDiscardCardFromHand(gameState, card => card.isTreasure, isOptional: true))
             {
                 currentPlayer.DrawAdditionalCardsIntoHand(3);
                 currentPlayer.AddActions(1);
@@ -534,10 +536,9 @@ namespace Dominion.CardTypes
         {            
         }
 
-        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        public override void DoSpecializedDiscardNonCleanup(PlayerState currentPlayer, GameState gameState)
         {
-            // TODO need to react to discard ...
-            throw new NotImplementedException();
-        }
+            currentPlayer.GainCardFromSupply<Gold>(gameState);
+        }        
     }
 }

@@ -20,7 +20,15 @@ namespace Dominion.CardTypes
         {
         }
 
-        //TODO:  Hovel reactions    
+        public override DeckPlacement DoSpecializedActionOnBuyWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        {
+            if (gainedCard.isVictory)
+            {
+                currentPlayer.RequestPlayerTrashCardFromHand(gameState, card => card.Is<Hovel>(), isOptional: true);
+            }
+
+            return DeckPlacement.Default;
+        }
     }
 
     public class OvergrownEstate
@@ -48,7 +56,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            currentPlayer.MoveCardFromPlayToPile(gameState);
         }
     }
 
@@ -194,7 +202,14 @@ namespace Dominion.CardTypes
 
         public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            bool wasDiscarded = currentPlayer.RequestPlayerDiscardCardFromHand(gameState, card => card.Is<Beggar>(), isOptional: true);
+            if (wasDiscarded)
+            {
+                currentPlayer.GainCardsFromSupply<CardTypes.Silver>(gameState, 1, defaultLocation:DeckPlacement.TopOfDeck);
+                currentPlayer.GainCardFromSupply<CardTypes.Silver>(gameState); 
+            }
+
+            return false;
         }
     }
 
@@ -214,7 +229,7 @@ namespace Dominion.CardTypes
             {
                 case PlayerActionChoice.Discard:
                     {
-                        currentPlayer.MoveRevealedCardsToDiscard();
+                        currentPlayer.MoveRevealedCardsToDiscard(gameState);
                         currentPlayer.DrawAdditionalCardsIntoHand(3);
                         break;
                     }
@@ -280,7 +295,13 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            Card cardToPlay = currentPlayer.RequestPlayerChooseCardToRemoveFromHandForPlay(gameState, acceptableCard => true, isTreasure: true, isAction: false, isOptional: true);
+            if (cardToPlay != null)
+            {
+                currentPlayer.DoPlayTreasure(cardToPlay, gameState);
+                currentPlayer.DoPlayTreasure(cardToPlay, gameState);
+                currentPlayer.MoveCardFromPlayToTrash(gameState);
+            }
         }
     }
 
@@ -299,6 +320,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
+            currentPlayer.RequestPlayerPlayActionFromHand(gameState, card => card.Is<Cultist>(), isOptional: true);
             // may play another cultist from hand.
             throw new NotImplementedException();
         }
@@ -363,6 +385,11 @@ namespace Dominion.CardTypes
     public class Forager :
        Card
     {
+        public static int CurrentCoinValue(GameState gameState)
+        {
+            return gameState.CountOfDifferentTreasuresInTrash();
+        }
+
         public Forager()
             : base("Forager", coinCost: 3, isAction:true, plusBuy:1, plusActions:1)
         {
@@ -371,7 +398,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCard => true, isOptional: false);
-            currentPlayer.AddCoins(gameState.CountOfDifferentTreasuresInTrash());
+            currentPlayer.AddCoins(CurrentCoinValue(gameState));
         }
     }
 
@@ -656,7 +683,7 @@ namespace Dominion.CardTypes
                     break;
                 }
             }
-            currentPlayer.MoveRevealedCardToDiscard(cardToMove => !cardToMove.Equals(foundCard));
+            currentPlayer.MoveRevealedCardToDiscard(cardToMove => !cardToMove.Equals(foundCard), gameState);
             gameState.gameLog.PopScope();
 
             if (foundCard != null)

@@ -9,6 +9,16 @@ namespace Dominion
     public class BagOfCards
         : CollectionCards
     {
+
+        public void CopyFrom(BagOfCards other)
+        {
+            this.Clear();
+            foreach (Card card in other)
+            {
+                this.AddCard(card);
+            }
+        }
+
         public void AddCard(Card card)
         {
             this.cards.Add(card);

@@ -19,10 +19,12 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        public override void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
-        }
+            currentPlayer.RequestPlayerTopDeckCardsFromPlay(gameState,
+                acceptableCard => acceptableCard.Is<Alchemist>(),
+                isOptional: true);
+        }        
     }
 
     public class Apothecary
@@ -35,7 +37,8 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            currentPlayer.RevealCardsFromDeck(4);
+            currentPlayer.MoveRevealedCardsToHand(card => card.Is<Copper>() || card.Is<Potion>());
         }
     }
 
@@ -49,7 +52,14 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            Card card = currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCard => true, isOptional: false);
+
+            if (card != null)
+            {
+                int cardsToDraw = card.CurrentCoinCost(currentPlayer) + 2 * card.potionCost;
+
+                currentPlayer.DrawAdditionalCardsIntoHand(cardsToDraw);
+            }
         }
     }
 
@@ -89,9 +99,11 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        public override void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
- 	         throw new NotImplementedException();
+            currentPlayer.RequestPlayerTopDeckCardFromPlay(gameState,
+                acceptableCard => acceptableCard.isTreasure,
+                isOptional: true);
         }
     }
 
@@ -147,7 +159,16 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
- 	         throw new NotImplementedException();
+            Card trashedCard = currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCard => true, isOptional: false);
+
+            if (trashedCard.isAction)
+                currentPlayer.GainCardFromSupply<Duchy>(gameState);
+
+            if (trashedCard.isTreasure)
+                currentPlayer.GainCardFromSupply<Transmute>(gameState);
+
+            if (trashedCard.isVictory)
+                currentPlayer.GainCardFromSupply<Gold>(gameState);
         }
     }
 

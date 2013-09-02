@@ -50,10 +50,13 @@
     <Compile Include="PlayerAction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategies\ArmoryConspiratorForagerGreatHall.cs" />
     <Compile Include="Strategies\BigMoney.cs" />
     <Compile Include="Strategies\BigMoneySingleCard.cs" />
     <Compile Include="Strategies\CaravanBridgeDukeCartographer.cs" />
     <Compile Include="Strategies\BigMoneySimple.cs" />
+    <Compile Include="Strategies\GovernorJunkDealer.cs" />
+    <Compile Include="Strategies\TreasureMapDoctor.cs" />
     <Compile Include="Strategies\TaxMan.cs" />
     <Compile Include="Strategies\TreasureMap.cs" />
     <Compile Include="Strategies\Doctor.cs" />

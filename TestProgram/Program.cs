@@ -8,11 +8,16 @@ using System.Threading.Tasks;
 
 namespace Program
 {
-    class Program
+    class Program    
     {
+        // armory, conspirator, forager, great hall, pawn
+        // governor, mining village, pawn, junk dealdre
+
         static void Main()
         {
-            ComparePlayers(Strategies.BigMoneySingleJack.Player(1), Strategies.TaxMan.Player(2));                        
+            ComparePlayers(Strategies.BigMoneySingleSmithy.Player(1), Strategies.ArmoryConspiratorForagerGreatHall.Player(2), useShelters:true);
+            ComparePlayers(Strategies.BigMoneySingleSmithy.Player(1), Strategies.GovernorJunkdealer.Player(2), useShelters: true);
+            ComparePlayers(Strategies.ArmoryConspiratorForagerGreatHall.Player(1), Strategies.GovernorJunkdealer.Player(2), useShelters: true);
         }
 
         static void FindAndCompareBestStrategy()

@@ -14,12 +14,13 @@ namespace Dominion
         Type BanCardForCurrentPlayerRevealedCards(GameState gameState);
         Type BanCardForCurrentPlayerPurchase(GameState gameState);
         Type GetCardPileFromSupply(GameState gameState);
-        Type GetActionFromHandToPlay(GameState gameState, bool isOptional);
-        Type GetTreasureFromHandToPlay(GameState gameState);
+        Type GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional);
+        Type GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Type GetCardFromSupplyToBuy(GameState gameState, CardPredicate acceptableCard);
         Type GuessCardTopOfDeck(GameState gameState);
         Type NameACard(GameState gameState);
         Type GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional);
+        Type GetCardFromPlayToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Type GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player);        
         Type GetCardFromRevealedCardsToTrash(GameState gameState, PlayerState player, CardPredicate acceptableCard);
         Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player);

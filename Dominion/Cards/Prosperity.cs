@@ -216,9 +216,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Type actionTypeToPlay = currentPlayer.actions.GetActionFromHandToPlay(gameState, false);
-
-            Card cardToPlay = currentPlayer.RequestPlayerChooseActionToRemoveFromHandForPlay(gameState, isOptional: true);
+            Card cardToPlay = currentPlayer.RequestPlayerChooseCardToRemoveFromHandForPlay(gameState, acceptableCard => true, isTreasure: false, isAction: true, isOptional: true);
             if (cardToPlay != null)
             {
                 currentPlayer.DoPlayAction(cardToPlay, gameState, countTimes: 3);
@@ -253,7 +251,7 @@ namespace Dominion.CardTypes
                 }
             }
 
-            currentPlayer.MoveRevealedCardsToDiscard();
+            currentPlayer.MoveRevealedCardsToDiscard(gameState);
         }
     }
 
@@ -344,7 +342,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
             otherPlayer.RevealCardsFromDeck(3);
-            otherPlayer.MoveRevealedCardToDiscard(card => card.isAction || card.isTreasure);
+            otherPlayer.MoveRevealedCardToDiscard(card => card.isAction || card.isTreasure, gameState);
             otherPlayer.RequestPlayerPutRevealedCardsBackOnDeck(gameState);
         }
     }
@@ -462,7 +460,7 @@ namespace Dominion.CardTypes
                 }
             }
 
-            currentPlayer.MoveRevealedCardsToDiscard();
+            currentPlayer.MoveRevealedCardsToDiscard(gameState);
         }
     }
 

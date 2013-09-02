@@ -1,752 +1,934 @@
-BigMoneySingleJack gained Estate.
-BigMoneySingleJack gained Estate.
-BigMoneySingleJack gained Estate.
-BigMoneySingleJack gained Copper.
-BigMoneySingleJack gained Copper.
-BigMoneySingleJack gained Copper.
-BigMoneySingleJack gained Copper.
-BigMoneySingleJack gained Copper.
-BigMoneySingleJack gained Copper.
-BigMoneySingleJack gained Copper.
-TaxMan gained Estate.
-TaxMan gained Estate.
-TaxMan gained Estate.
-TaxMan gained Copper.
-TaxMan gained Copper.
-TaxMan gained Copper.
-TaxMan gained Copper.
-TaxMan gained Copper.
-TaxMan gained Copper.
-TaxMan gained Copper.
-BigMoneySingleJack reshuffled
-BigMoneySingleJack Drew Copper into hand.
-BigMoneySingleJack Drew Copper into hand.
-BigMoneySingleJack Drew Estate into hand.
-BigMoneySingleJack Drew Copper into hand.
-BigMoneySingleJack Drew Estate into hand.
-TaxMan reshuffled
-TaxMan Drew Copper into hand.
-TaxMan Drew Estate into hand.
-TaxMan Drew Estate into hand.
-TaxMan Drew Copper into hand.
-TaxMan Drew Copper into hand.
+ArmoryConspiratorForagerGreatHall gained Hovel.
+ArmoryConspiratorForagerGreatHall gained Necropolis.
+ArmoryConspiratorForagerGreatHall gained Overgrown Estate.
+ArmoryConspiratorForagerGreatHall gained Copper.
+ArmoryConspiratorForagerGreatHall gained Copper.
+ArmoryConspiratorForagerGreatHall gained Copper.
+ArmoryConspiratorForagerGreatHall gained Copper.
+ArmoryConspiratorForagerGreatHall gained Copper.
+ArmoryConspiratorForagerGreatHall gained Copper.
+ArmoryConspiratorForagerGreatHall gained Copper.
+GovernorJunkdealer gained Hovel.
+GovernorJunkdealer gained Necropolis.
+GovernorJunkdealer gained Overgrown Estate.
+GovernorJunkdealer gained Copper.
+GovernorJunkdealer gained Copper.
+GovernorJunkdealer gained Copper.
+GovernorJunkdealer gained Copper.
+GovernorJunkdealer gained Copper.
+GovernorJunkdealer gained Copper.
+GovernorJunkdealer gained Copper.
+ArmoryConspiratorForagerGreatHall reshuffled
+ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+ArmoryConspiratorForagerGreatHall Drew Overgrown Estate into hand.
+ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+ArmoryConspiratorForagerGreatHall Drew Hovel into hand.
+GovernorJunkdealer reshuffled
+GovernorJunkdealer Drew Copper into hand.
+GovernorJunkdealer Drew Necropolis into hand.
+GovernorJunkdealer Drew Hovel into hand.
+GovernorJunkdealer Drew Copper into hand.
+GovernorJunkdealer Drew Copper into hand.
 ROUND 1
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneySingleJack Played Copper.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Copper,Copper,Copper,Hovel,Overgrown Estate,
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 1 all together.
-  BigMoneySingleJack Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 2 all together.
-  BigMoneySingleJack Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 3 all together.
-  BigMoneySingleJack bought Silver.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Estate into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  ArmoryConspiratorForagerGreatHall bought Forager.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Copper(7), Forager(1), Hovel(1), Necropolis(1), Overgrown Estate(1), 
 
-TaxMan begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  TaxMan Played Copper.
+GovernorJunkdealer begins turn
+With hand: Copper,Copper,Copper,Hovel,Necropolis,
+  GovernorJunkdealer Played Necropolis.
+    +2 Actions = 2 all together.
+  GovernorJunkdealer Played Copper.
     +1 Coin = 1 all together.
-  TaxMan Played Copper.
+  GovernorJunkdealer Played Copper.
     +1 Coin = 2 all together.
-  TaxMan Played Copper.
+  GovernorJunkdealer Played Copper.
     +1 Coin = 3 all together.
-  TaxMan bought Silver.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  GovernorJunkdealer bought Silver.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Overgrown Estate into hand.
+  GovernorJunkdealer ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(1), 
 
 ROUND 2
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneySingleJack Played Copper.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Copper,Copper,Copper,Copper,Necropolis,
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 1 all together.
-  BigMoneySingleJack Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 2 all together.
-  BigMoneySingleJack Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 3 all together.
-  BigMoneySingleJack Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 4 all together.
-  BigMoneySingleJack bought JackOfAllTrades.
-  BigMoneySingleJack reshuffled
-  BigMoneySingleJack Drew JackOfAllTrades into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Estate(3), JackOfAllTrades(1), Silver(1), 
+  ArmoryConspiratorForagerGreatHall bought Armory.
+  ArmoryConspiratorForagerGreatHall reshuffled
+  ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Copper(7), Forager(1), Hovel(1), Necropolis(1), Overgrown Estate(1), 
 
-TaxMan begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  TaxMan Played Copper.
+GovernorJunkdealer begins turn
+With hand: Copper,Copper,Copper,Copper,Overgrown Estate,
+  GovernorJunkdealer Played Copper.
     +1 Coin = 1 all together.
-  TaxMan Played Copper.
+  GovernorJunkdealer Played Copper.
     +1 Coin = 2 all together.
-  TaxMan Played Copper.
+  GovernorJunkdealer Played Copper.
     +1 Coin = 3 all together.
-  TaxMan Played Copper.
+  GovernorJunkdealer Played Copper.
     +1 Coin = 4 all together.
-  TaxMan bought Taxman.
-  TaxMan reshuffled
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan ends turn with deck: Copper(7), Estate(3), Silver(1), Taxman(1), 
+  GovernorJunkdealer bought Conspirator.
+  GovernorJunkdealer reshuffled
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Necropolis into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(1), 
 
 ROUND 3
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Copper,Copper,JackOfAllTrades,Silver,
-  BigMoneySingleJack Played JackOfAllTrades.
-    BigMoneySingleJack gained Silver.
-    BigMoneySingleJack Revealed Copper.
-      BigMoneySingleJack Discarded Copper.
-    BigMoneySingleJack Drew Estate into hand.
-    BigMoneySingleJack trashed Estate.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneySingleJack bought Silver.
-  BigMoneySingleJack Drew Estate into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Estate into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), JackOfAllTrades(1), Silver(3), 
-
-TaxMan begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  TaxMan Played Copper.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Armory,Copper,Copper,Forager,Necropolis,
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Conspirator.
+      ... and placed card on top of deck
+  ArmoryConspiratorForagerGreatHall Played Forager.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Copper.
     +1 Coin = 1 all together.
-  TaxMan Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 2 all together.
-  TaxMan Played Copper.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Overgrown Estate into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(1), Copper(6), Forager(1), Hovel(1), Necropolis(1), Overgrown Estate(1), 
+
+GovernorJunkdealer begins turn
+With hand: Copper,Copper,Copper,Copper,Necropolis,
+  GovernorJunkdealer Played Necropolis.
+    +2 Actions = 2 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 1 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 2 all together.
+  GovernorJunkdealer Played Copper.
     +1 Coin = 3 all together.
-  TaxMan Played Copper.
+  GovernorJunkdealer Played Copper.
     +1 Coin = 4 all together.
-  TaxMan bought Silver.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Taxman into hand.
-  TaxMan ends turn with deck: Copper(7), Estate(3), Silver(2), Taxman(1), 
+  GovernorJunkdealer bought Silver.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Overgrown Estate into hand.
+  GovernorJunkdealer Drew Hovel into hand.
+  GovernorJunkdealer Drew Conspirator into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(2), 
 
 ROUND 4
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneySingleJack Played Copper.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Copper,Copper,Copper,Overgrown Estate,
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 3 all together.
-  BigMoneySingleJack bought Silver.
-  BigMoneySingleJack reshuffled
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), JackOfAllTrades(1), Silver(4), 
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 4 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 5 all together.
+  ArmoryConspiratorForagerGreatHall bought Great Hall.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Hovel into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall reshuffled
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(1), Copper(6), Forager(1), Great Hall(1), Hovel(1), Necropolis(1), Overgrown Estate(1), 
 
-TaxMan begins turn
-With hand: Copper,Copper,Estate,Estate,Taxman,
-  TaxMan Played Taxman.
-    TaxMan trashed Copper.
-    TaxMan gained Silver.
-      ... and placed card on top of deck
-    BigMoneySingleJack Discarded Copper.
-  TaxMan Played Copper.
-    +1 Coin = 1 all together.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan reshuffled
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan ends turn with deck: Copper(6), Estate(3), Silver(3), Taxman(1), 
+GovernorJunkdealer begins turn
+With hand: Conspirator,Copper,Copper,Hovel,Overgrown Estate,
+  GovernorJunkdealer Played Conspirator.
+    +2 Coin = 2 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 3 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 4 all together.
+  GovernorJunkdealer bought Silver.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Silver into hand.
+  GovernorJunkdealer reshuffled
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Silver into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(3), 
 
 ROUND 5
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Copper,Silver,Silver,
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneySingleJack bought Gold.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Estate into hand.
-  BigMoneySingleJack Drew Estate into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), Gold(1), JackOfAllTrades(1), Silver(4), 
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Copper,Copper,Copper,Copper,Hovel,
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 3 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 4 all together.
+  ArmoryConspiratorForagerGreatHall bought Great Hall.
+    ArmoryConspiratorForagerGreatHall trashed Hovel.
+  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Overgrown Estate into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(1), Copper(6), Forager(1), Great Hall(2), Necropolis(1), Overgrown Estate(1), 
 
-TaxMan begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  TaxMan Played Silver.
+GovernorJunkdealer begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  GovernorJunkdealer Played Silver.
     +2 Coin = 2 all together.
-  TaxMan Played Silver.
+  GovernorJunkdealer Played Silver.
     +2 Coin = 4 all together.
-  TaxMan Played Copper.
+  GovernorJunkdealer Played Copper.
     +1 Coin = 5 all together.
-  TaxMan Played Copper.
+  GovernorJunkdealer Played Copper.
     +1 Coin = 6 all together.
-  TaxMan bought Gold.
-  TaxMan Drew Taxman into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan ends turn with deck: Copper(6), Estate(3), Gold(1), Silver(3), Taxman(1), 
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 7 all together.
+  GovernorJunkdealer bought JunkDealer.
+  GovernorJunkdealer Drew Hovel into hand.
+  GovernorJunkdealer Drew Necropolis into hand.
+  GovernorJunkdealer Drew Overgrown Estate into hand.
+  GovernorJunkdealer Drew Silver into hand.
+  GovernorJunkdealer Drew Conspirator into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(7), Hovel(1), JunkDealer(1), Necropolis(1), Overgrown Estate(1), Silver(3), 
 
 ROUND 6
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Estate,Estate,Silver,Silver,
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneySingleJack bought Silver.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew JackOfAllTrades into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack reshuffled
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), Gold(1), JackOfAllTrades(1), Silver(5), 
-
-TaxMan begins turn
-With hand: Copper,Copper,Estate,Silver,Taxman,
-  TaxMan Played Taxman.
-    TaxMan trashed Silver.
-    TaxMan gained Gold.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Armory,Copper,Great Hall,Necropolis,Overgrown Estate,
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Conspirator.
       ... and placed card on top of deck
-  TaxMan Played Copper.
-    +1 Coin = 1 all together.
-  TaxMan Played Copper.
-    +1 Coin = 2 all together.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan reshuffled
-  TaxMan Drew Taxman into hand.
-  TaxMan ends turn with deck: Copper(6), Estate(3), Gold(2), Silver(2), Taxman(1), 
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Forager.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Overgrown Estate.
+      ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+    +1 Coin = 3 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 4 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 5 all together.
+  ArmoryConspiratorForagerGreatHall bought Conspirator.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall reshuffled
+  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(3), Copper(6), Forager(1), Great Hall(2), Necropolis(1), 
+
+GovernorJunkdealer begins turn
+With hand: Conspirator,Hovel,Necropolis,Overgrown Estate,Silver,
+  GovernorJunkdealer Played Necropolis.
+    +2 Actions = 2 all together.
+  GovernorJunkdealer Played Conspirator.
+    +2 Coin = 2 all together.
+  GovernorJunkdealer Played Silver.
+    +2 Coin = 4 all together.
+  GovernorJunkdealer bought Silver.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer reshuffled
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(7), Hovel(1), JunkDealer(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
 
 ROUND 7
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Copper,Copper,Copper,JackOfAllTrades,
-  BigMoneySingleJack Played JackOfAllTrades.
-    BigMoneySingleJack gained Silver.
-    BigMoneySingleJack Revealed Silver.
-    BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Played Silver.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Conspirator,Conspirator,Great Hall,Necropolis,
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 2 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneySingleJack bought Gold.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Estate into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), Gold(2), JackOfAllTrades(1), Silver(6), 
-
-TaxMan begins turn
-With hand: Copper,Copper,Estate,Gold,Taxman,
-  TaxMan Played Taxman.
-    TaxMan trashed Copper.
-    TaxMan gained Silver.
+    ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+    +1 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 4 all together.
+    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+    +1 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Great Hall.
       ... and placed card on top of deck
-    BigMoneySingleJack Discarded Copper.
-  TaxMan Played Gold.
-    +3 Coin = 3 all together.
-  TaxMan Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 6 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Played Forager.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Copper.
+    +1 Coin = 7 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 8 all together.
+  ArmoryConspiratorForagerGreatHall bought Province.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(3), Copper(5), Forager(1), Great Hall(3), Necropolis(1), Province(1), 
+
+GovernorJunkdealer begins turn
+With hand: Copper,Copper,Copper,Copper,Copper,
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 1 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 2 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 3 all together.
+  GovernorJunkdealer Played Copper.
     +1 Coin = 4 all together.
-  TaxMan bought Silver.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan ends turn with deck: Copper(5), Estate(3), Gold(2), Silver(4), Taxman(1), 
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 5 all together.
+  GovernorJunkdealer bought Governor.
+  GovernorJunkdealer Drew JunkDealer into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Silver into hand.
+  GovernorJunkdealer Drew Overgrown Estate into hand.
+  GovernorJunkdealer Drew Silver into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(7), Governor(1), Hovel(1), JunkDealer(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
 
 ROUND 8
 -------------
-BigMoneySingleJack begins turn
-With hand: Estate,Silver,Silver,Silver,
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneySingleJack bought Gold.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Estate into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), Gold(3), JackOfAllTrades(1), Silver(6), 
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Copper,Copper,Copper,Copper,Great Hall,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall reshuffled
+    ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 3 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 4 all together.
+  ArmoryConspiratorForagerGreatHall bought Conspirator.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(4), Copper(5), Forager(1), Great Hall(3), Necropolis(1), Province(1), 
 
-TaxMan begins turn
-With hand: Copper,Estate,Estate,Gold,Silver,
-  TaxMan Played Gold.
-    +3 Coin = 3 all together.
-  TaxMan Played Silver.
+GovernorJunkdealer begins turn
+With hand: Copper,JunkDealer,Overgrown Estate,Silver,Silver,
+  GovernorJunkdealer Played JunkDealer.
+    +1 Actions = 1 all together.
+    +1 Coin = 1 all together.
+    GovernorJunkdealer Drew Silver into hand.
+    GovernorJunkdealer trashed Overgrown Estate.
+      GovernorJunkdealer Drew Silver into hand.
+  GovernorJunkdealer Played Silver.
+    +2 Coin = 3 all together.
+  GovernorJunkdealer Played Silver.
     +2 Coin = 5 all together.
-  TaxMan Played Copper.
-    +1 Coin = 6 all together.
-  TaxMan bought Gold.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan ends turn with deck: Copper(5), Estate(3), Gold(3), Silver(4), Taxman(1), 
+  GovernorJunkdealer Played Silver.
+    +2 Coin = 7 all together.
+  GovernorJunkdealer Played Silver.
+    +2 Coin = 9 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 10 all together.
+  GovernorJunkdealer bought Governor.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Hovel into hand.
+  GovernorJunkdealer Drew Conspirator into hand.
+  GovernorJunkdealer Drew Necropolis into hand.
+  GovernorJunkdealer reshuffled
+  GovernorJunkdealer Drew Silver into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(7), Governor(2), Hovel(1), JunkDealer(1), Necropolis(1), Silver(4), 
 
 ROUND 9
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoneySingleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleJack Played Silver.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Conspirator,Copper,Great Hall,Province,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+  ArmoryConspiratorForagerGreatHall Played Forager.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Copper.
+    +1 Coin = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 3 all together.
+    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 5 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneySingleJack bought Gold.
-  BigMoneySingleJack reshuffled
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Estate into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), Gold(4), JackOfAllTrades(1), Silver(6), 
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 7 all together.
+    ArmoryConspiratorForagerGreatHall reshuffled
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Great Hall.
+      ... and placed card on top of deck
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 8 all together.
+  ArmoryConspiratorForagerGreatHall bought Province.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(4), Copper(4), Forager(1), Great Hall(4), Necropolis(1), Province(2), 
 
-TaxMan begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  TaxMan Played Silver.
+GovernorJunkdealer begins turn
+With hand: Conspirator,Copper,Hovel,Necropolis,Silver,
+  GovernorJunkdealer Played Necropolis.
+    +2 Actions = 2 all together.
+  GovernorJunkdealer Played Conspirator.
     +2 Coin = 2 all together.
-  TaxMan Played Silver.
+  GovernorJunkdealer Played Silver.
     +2 Coin = 4 all together.
-  TaxMan Played Copper.
+  GovernorJunkdealer Played Copper.
     +1 Coin = 5 all together.
-  TaxMan Played Copper.
-    +1 Coin = 6 all together.
-  TaxMan Played Copper.
-    +1 Coin = 7 all together.
-  TaxMan bought Gold.
-  TaxMan reshuffled
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Taxman into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan ends turn with deck: Copper(5), Estate(3), Gold(4), Silver(4), Taxman(1), 
+  GovernorJunkdealer bought Governor.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Silver into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(7), Governor(3), Hovel(1), JunkDealer(1), Necropolis(1), Silver(4), 
 
 ROUND 10
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoneySingleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneySingleJack bought Gold.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew JackOfAllTrades into hand.
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Estate(2), Gold(5), JackOfAllTrades(1), Silver(6), 
-
-TaxMan begins turn
-With hand: Copper,Estate,Silver,Silver,Taxman,
-  TaxMan Played Taxman.
-    TaxMan trashed Silver.
-    TaxMan gained Gold.
-      ... and placed card on top of deck
-    BigMoneySingleJack Discarded Silver.
-  TaxMan Played Silver.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Copper,Copper,Great Hall,Necropolis,
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 2 all together.
-  TaxMan Played Copper.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+    +1 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 2 all together.
+    ArmoryConspiratorForagerGreatHall reshuffled
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 4 all together.
+    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+    +1 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Conspirator.
+      ... and placed card on top of deck
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 5 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 6 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 7 all together.
+  ArmoryConspiratorForagerGreatHall bought Great Hall.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(5), Copper(4), Forager(1), Great Hall(5), Necropolis(1), Province(2), 
+
+GovernorJunkdealer begins turn
+With hand: Copper,Copper,Copper,Copper,Silver,
+  GovernorJunkdealer Played Silver.
+    +2 Coin = 2 all together.
+  GovernorJunkdealer Played Copper.
     +1 Coin = 3 all together.
-  TaxMan bought Silver.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan ends turn with deck: Copper(5), Estate(3), Gold(5), Silver(4), Taxman(1), 
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 4 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 5 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 6 all together.
+  GovernorJunkdealer bought Gold.
+  GovernorJunkdealer Drew JunkDealer into hand.
+  GovernorJunkdealer Drew Governor into hand.
+  GovernorJunkdealer Drew Silver into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(7), Gold(1), Governor(3), Hovel(1), JunkDealer(1), Necropolis(1), Silver(4), 
 
 ROUND 11
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Gold,Gold,JackOfAllTrades,
-  BigMoneySingleJack Played JackOfAllTrades.
-    BigMoneySingleJack gained Silver.
-    BigMoneySingleJack Revealed Silver.
-    BigMoneySingleJack Drew Silver into hand.
-    BigMoneySingleJack Drew Estate into hand.
-    BigMoneySingleJack trashed Estate.
-  BigMoneySingleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleJack Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneySingleJack bought Province.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Estate(1), Gold(5), JackOfAllTrades(1), Province(1), Silver(7), 
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Conspirator,Copper,Forager,Great Hall,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Played Forager.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Copper.
+    +1 Coin = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 3 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 5 all together.
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 7 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall reshuffled
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 9 all together.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 10 all together.
+  ArmoryConspiratorForagerGreatHall bought Province.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(5), Copper(3), Forager(1), Great Hall(5), Necropolis(1), Province(3), 
 
-TaxMan begins turn
-With hand: Copper,Copper,Estate,Estate,Gold,
-  TaxMan Played Gold.
-    +3 Coin = 3 all together.
-  TaxMan Played Copper.
-    +1 Coin = 4 all together.
-  TaxMan Played Copper.
-    +1 Coin = 5 all together.
-  TaxMan bought Duchy.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Gold into hand.
-  TaxMan ends turn with deck: Copper(5), Duchy(1), Estate(3), Gold(5), Silver(4), Taxman(1), 
+GovernorJunkdealer begins turn
+With hand: Copper,Copper,Governor,JunkDealer,Silver,
+  GovernorJunkdealer Played Governor.
+    +1 Actions = 1 all together.
+    GovernorJunkdealer gained Gold.
+    ArmoryConspiratorForagerGreatHall gained Silver.
+  GovernorJunkdealer Played JunkDealer.
+    +1 Actions = 1 all together.
+    +1 Coin = 1 all together.
+    GovernorJunkdealer Drew Silver into hand.
+    GovernorJunkdealer trashed Copper.
+  GovernorJunkdealer Played Silver.
+    +2 Coin = 3 all together.
+  GovernorJunkdealer Played Silver.
+    +2 Coin = 5 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 6 all together.
+  GovernorJunkdealer bought Gold.
+  GovernorJunkdealer Drew Governor into hand.
+  GovernorJunkdealer reshuffled
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Gold into hand.
+  GovernorJunkdealer Drew Conspirator into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(6), Gold(3), Governor(3), Hovel(1), JunkDealer(1), Necropolis(1), Silver(4), 
 
 ROUND 12
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneySingleJack Played Silver.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Copper,Copper,Great Hall,Great Hall,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Conspirator.
+      ... and placed card on top of deck
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 2 all together.
-  BigMoneySingleJack Played Silver.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 4 all together.
-  BigMoneySingleJack Played Copper.
+    ArmoryConspiratorForagerGreatHall reshuffled
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 5 all together.
-  BigMoneySingleJack Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 6 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneySingleJack bought Gold.
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack reshuffled
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Estate(1), Gold(6), JackOfAllTrades(1), Province(1), Silver(7), 
+  ArmoryConspiratorForagerGreatHall bought Great Hall.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+  ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Drew Silver into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(6), Copper(3), Forager(1), Great Hall(6), Necropolis(1), Province(3), Silver(1), 
 
-TaxMan begins turn
-With hand: Copper,Gold,Gold,Gold,Silver,
-  TaxMan Played Gold.
-    +3 Coin = 3 all together.
-  TaxMan Played Gold.
-    +3 Coin = 6 all together.
-  TaxMan Played Gold.
-    +3 Coin = 9 all together.
-  TaxMan Played Silver.
-    +2 Coin = 11 all together.
-  TaxMan Played Copper.
-    +1 Coin = 12 all together.
-  TaxMan bought Province.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Gold into hand.
-  TaxMan reshuffled
-  TaxMan Drew Duchy into hand.
-  TaxMan Drew Province into hand.
-  TaxMan ends turn with deck: Copper(5), Duchy(1), Estate(3), Gold(5), Province(1), Silver(4), Taxman(1), 
+GovernorJunkdealer begins turn
+With hand: Conspirator,Copper,Copper,Gold,Governor,
+  GovernorJunkdealer Played Governor.
+    +1 Actions = 1 all together.
+    GovernorJunkdealer gained Gold.
+    ArmoryConspiratorForagerGreatHall gained Silver.
+  GovernorJunkdealer Played Conspirator.
+    +2 Coin = 2 all together.
+  GovernorJunkdealer Played Gold.
+    +3 Coin = 5 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 6 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 7 all together.
+  GovernorJunkdealer bought Gold.
+  GovernorJunkdealer Drew Governor into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Governor into hand.
+  GovernorJunkdealer Drew Silver into hand.
+  GovernorJunkdealer Drew Necropolis into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(6), Gold(5), Governor(3), Hovel(1), JunkDealer(1), Necropolis(1), Silver(4), 
 
 ROUND 13
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  BigMoneySingleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneySingleJack Played Copper.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Forager,Great Hall,Province,Silver,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 4 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 6 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 8 all together.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Forager.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Copper.
     +1 Coin = 9 all together.
-  BigMoneySingleJack bought Province.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Estate(1), Gold(6), JackOfAllTrades(1), Province(2), Silver(7), 
+  ArmoryConspiratorForagerGreatHall Played Silver.
+    +2 Coin = 11 all together.
+  ArmoryConspiratorForagerGreatHall bought Province.
+  ArmoryConspiratorForagerGreatHall bought Great Hall.
+  ArmoryConspiratorForagerGreatHall reshuffled
+  ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Drew Silver into hand.
+  ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(6), Copper(2), Forager(1), Great Hall(7), Necropolis(1), Province(4), Silver(2), 
 
-TaxMan begins turn
-With hand: Copper,Duchy,Gold,Province,Silver,
-  TaxMan Played Gold.
-    +3 Coin = 3 all together.
-  TaxMan Played Silver.
-    +2 Coin = 5 all together.
-  TaxMan Played Copper.
-    +1 Coin = 6 all together.
-  TaxMan bought Gold.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Taxman into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan ends turn with deck: Copper(5), Duchy(1), Estate(3), Gold(6), Province(1), Silver(4), Taxman(1), 
+GovernorJunkdealer begins turn
+With hand: Copper,Governor,Governor,Necropolis,Silver,
+  GovernorJunkdealer Played Governor.
+    +1 Actions = 1 all together.
+    GovernorJunkdealer gained Gold.
+    ArmoryConspiratorForagerGreatHall gained Silver.
+  GovernorJunkdealer Played Governor.
+    +1 Actions = 1 all together.
+    GovernorJunkdealer gained Gold.
+    ArmoryConspiratorForagerGreatHall gained Silver.
+  GovernorJunkdealer Played Necropolis.
+    +2 Actions = 2 all together.
+  GovernorJunkdealer Played Silver.
+    +2 Coin = 2 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 3 all together.
+  GovernorJunkdealer bought Silver.
+  GovernorJunkdealer Drew JunkDealer into hand.
+  GovernorJunkdealer Drew Silver into hand.
+  GovernorJunkdealer Drew Gold into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Hovel into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(6), Gold(7), Governor(3), Hovel(1), JunkDealer(1), Necropolis(1), Silver(5), 
 
 ROUND 14
 -------------
-BigMoneySingleJack begins turn
-With hand: Gold,Gold,Silver,Silver,Silver,
-  BigMoneySingleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleJack Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 10 all together.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 12 all together.
-  BigMoneySingleJack bought Province.
-  BigMoneySingleJack Drew Province into hand.
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Estate(1), Gold(6), JackOfAllTrades(1), Province(3), Silver(7), 
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Great Hall,Province,Province,Silver,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Silver.
+    +2 Coin = 4 all together.
+  ArmoryConspiratorForagerGreatHall bought Conspirator.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Silver into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(7), Copper(2), Forager(1), Great Hall(7), Necropolis(1), Province(4), Silver(4), 
 
-TaxMan begins turn
-With hand: Copper,Estate,Gold,Silver,Taxman,
-  TaxMan Played Taxman.
-    TaxMan trashed Silver.
-    TaxMan gained Gold.
-      ... and placed card on top of deck
-    BigMoneySingleJack Discarded Silver.
-  TaxMan Played Gold.
-    +3 Coin = 3 all together.
-  TaxMan Played Copper.
-    +1 Coin = 4 all together.
-  TaxMan bought Silver.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan ends turn with deck: Copper(5), Duchy(1), Estate(3), Gold(7), Province(1), Silver(4), Taxman(1), 
+GovernorJunkdealer begins turn
+With hand: Copper,Gold,Hovel,JunkDealer,Silver,
+  GovernorJunkdealer Played JunkDealer.
+    +1 Actions = 1 all together.
+    +1 Coin = 1 all together.
+    GovernorJunkdealer Drew Silver into hand.
+    GovernorJunkdealer trashed Hovel.
+  GovernorJunkdealer Played Gold.
+    +3 Coin = 4 all together.
+  GovernorJunkdealer Played Silver.
+    +2 Coin = 6 all together.
+  GovernorJunkdealer Played Silver.
+    +2 Coin = 8 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 9 all together.
+  GovernorJunkdealer bought Province.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Gold into hand.
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer Drew Silver into hand.
+  GovernorJunkdealer reshuffled
+  GovernorJunkdealer Drew Copper into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(6), Gold(7), Governor(3), JunkDealer(1), Necropolis(1), Province(1), Silver(5), 
 
 ROUND 15
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Copper,Gold,Province,
-  BigMoneySingleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneySingleJack bought Duchy.
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew JackOfAllTrades into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Duchy(1), Estate(1), Gold(6), JackOfAllTrades(1), Province(3), Silver(7), 
-
-TaxMan begins turn
-With hand: Copper,Gold,Gold,Silver,Silver,
-  TaxMan Played Gold.
-    +3 Coin = 3 all together.
-  TaxMan Played Gold.
-    +3 Coin = 6 all together.
-  TaxMan Played Silver.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Conspirator,Great Hall,Great Hall,Silver,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+    +1 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 4 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 6 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 8 all together.
-  TaxMan Played Silver.
+    ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+    +1 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 10 all together.
-  TaxMan Played Copper.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+    +1 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Forager.
+    +1 Actions = 2 all together.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Copper.
     +1 Coin = 11 all together.
-  TaxMan bought Province.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan ends turn with deck: Copper(5), Duchy(1), Estate(3), Gold(7), Province(2), Silver(4), Taxman(1), 
+  ArmoryConspiratorForagerGreatHall Played Silver.
+    +2 Coin = 13 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 14 all together.
+  ArmoryConspiratorForagerGreatHall bought Province.
+  ArmoryConspiratorForagerGreatHall bought Conspirator.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+  ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(8), Copper(1), Forager(1), Great Hall(7), Necropolis(1), Province(5), Silver(4), 
+
+GovernorJunkdealer begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  GovernorJunkdealer Played Gold.
+    +3 Coin = 3 all together.
+  GovernorJunkdealer Played Silver.
+    +2 Coin = 5 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 6 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 7 all together.
+  GovernorJunkdealer Played Copper.
+    +1 Coin = 8 all together.
+  GovernorJunkdealer bought Province.
+  GovernorJunkdealer Drew Province into hand.
+  GovernorJunkdealer Drew Governor into hand.
+  GovernorJunkdealer Drew Necropolis into hand.
+  GovernorJunkdealer Drew Silver into hand.
+  GovernorJunkdealer Drew JunkDealer into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(6), Gold(7), Governor(3), JunkDealer(1), Necropolis(1), Province(2), Silver(5), 
 
 ROUND 16
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Copper,Gold,JackOfAllTrades,Silver,
-  BigMoneySingleJack Played JackOfAllTrades.
-    BigMoneySingleJack gained Silver.
-    BigMoneySingleJack Revealed Copper.
-      BigMoneySingleJack Discarded Copper.
-    BigMoneySingleJack Drew Estate into hand.
-  BigMoneySingleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneySingleJack bought Duchy.
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack reshuffled
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Duchy(2), Estate(1), Gold(6), JackOfAllTrades(1), Province(3), Silver(8), 
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Armory,Great Hall,Great Hall,Great Hall,Province,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall reshuffled
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Silver into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 4 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Great Hall.
+      ... and placed card on top of deck
+  ArmoryConspiratorForagerGreatHall Played Silver.
+    +2 Coin = 6 all together.
+  ArmoryConspiratorForagerGreatHall bought Conspirator.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(9), Copper(1), Forager(1), Great Hall(8), Necropolis(1), Province(5), Silver(4), 
 
-TaxMan begins turn
-With hand: Copper,Copper,Estate,Estate,Gold,
-  TaxMan Played Gold.
-    +3 Coin = 3 all together.
-  TaxMan Played Copper.
-    +1 Coin = 4 all together.
-  TaxMan Played Copper.
-    +1 Coin = 5 all together.
-  TaxMan bought Duchy.
-  TaxMan Drew Gold into hand.
-  TaxMan reshuffled
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Duchy into hand.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan ends turn with deck: Copper(5), Duchy(2), Estate(3), Gold(7), Province(2), Silver(4), Taxman(1), 
+GovernorJunkdealer begins turn
+With hand: Governor,JunkDealer,Necropolis,Province,Silver,
+  GovernorJunkdealer Played Governor.
+    +1 Actions = 1 all together.
+    GovernorJunkdealer gained Gold.
+    ArmoryConspiratorForagerGreatHall gained Silver.
+  GovernorJunkdealer Played JunkDealer.
+    +1 Actions = 1 all together.
+    +1 Coin = 1 all together.
+    GovernorJunkdealer Drew Gold into hand.
+    GovernorJunkdealer trashed Necropolis.
+  GovernorJunkdealer Played Gold.
+    +3 Coin = 4 all together.
+  GovernorJunkdealer Played Silver.
+    +2 Coin = 6 all together.
+  GovernorJunkdealer bought Duchy.
+  GovernorJunkdealer Drew Governor into hand.
+  GovernorJunkdealer Drew Gold into hand.
+  GovernorJunkdealer Drew Conspirator into hand.
+  GovernorJunkdealer Drew Governor into hand.
+  GovernorJunkdealer Drew Silver into hand.
+  GovernorJunkdealer ends turn with deck: Conspirator(1), Copper(6), Duchy(1), Gold(8), Governor(3), JunkDealer(1), Province(2), Silver(5), 
 
 ROUND 17
 -------------
-BigMoneySingleJack begins turn
-With hand: Copper,Gold,Gold,Gold,Silver,
-  BigMoneySingleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleJack Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneySingleJack Played Gold.
-    +3 Coin = 9 all together.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 11 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 12 all together.
-  BigMoneySingleJack bought Province.
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Province into hand.
-  BigMoneySingleJack Drew Duchy into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Duchy(2), Estate(1), Gold(6), JackOfAllTrades(1), Province(4), Silver(8), 
-
-TaxMan begins turn
-With hand: Copper,Duchy,Gold,Gold,Silver,
-  TaxMan Played Gold.
-    +3 Coin = 3 all together.
-  TaxMan Played Gold.
-    +3 Coin = 6 all together.
-  TaxMan Played Silver.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Conspirator,Great Hall,Great Hall,Province,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Silver into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 4 all together.
+    ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 6 all together.
+    ArmoryConspiratorForagerGreatHall Drew Silver into hand.
+    +1 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Silver.
     +2 Coin = 8 all together.
-  TaxMan Played Copper.
-    +1 Coin = 9 all together.
-  TaxMan bought Province.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan ends turn with deck: Copper(5), Duchy(2), Estate(3), Gold(7), Province(3), Silver(4), Taxman(1), 
+  ArmoryConspiratorForagerGreatHall Played Silver.
+    +2 Coin = 10 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 11 all together.
+  ArmoryConspiratorForagerGreatHall bought Province.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(9), Copper(1), Forager(1), Great Hall(8), Necropolis(1), Province(6), Silver(5), 
 
-ROUND 18
--------------
-BigMoneySingleJack begins turn
-With hand: Copper,Duchy,Gold,Province,Silver,
-  BigMoneySingleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleJack Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneySingleJack Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneySingleJack bought Duchy.
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack Drew Copper into hand.
-  BigMoneySingleJack Drew Gold into hand.
-  BigMoneySingleJack Drew Silver into hand.
-  BigMoneySingleJack Drew JackOfAllTrades into hand.
-  BigMoneySingleJack ends turn with deck: Copper(7), Duchy(3), Estate(1), Gold(6), JackOfAllTrades(1), Province(4), Silver(8), 
-
-TaxMan begins turn
-With hand: Copper,Copper,Gold,Gold,Silver,
-  TaxMan Played Gold.
-    +3 Coin = 3 all together.
-  TaxMan Played Gold.
-    +3 Coin = 6 all together.
-  TaxMan Played Silver.
-    +2 Coin = 8 all together.
-  TaxMan Played Copper.
-    +1 Coin = 9 all together.
-  TaxMan Played Copper.
-    +1 Coin = 10 all together.
-  TaxMan bought Province.
-  TaxMan Drew Duchy into hand.
-  TaxMan Drew Province into hand.
-  TaxMan Drew Province into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan ends turn with deck: Copper(5), Duchy(2), Estate(3), Gold(7), Province(4), Silver(4), Taxman(1), 
-
-Game ended in 18 turns.
-BigMoneySingleJack Won!
-BigMoneySingleJack total score: 34
-  Copper(7), Duchy(3), Estate(1), Gold(6), JackOfAllTrades(1), Province(4), Silver(8), 
-TaxMan total score: 33
-  Copper(5), Duchy(2), Estate(3), Gold(7), Province(4), Silver(4), Taxman(1), 
-Trash contains: Copper(2), Estate(2), Silver(3), 
+Game ended in 17 turns.
+ArmoryConspiratorForagerGreatHall Won!
+ArmoryConspiratorForagerGreatHall total score: 44
+  Armory(1), Conspirator(9), Copper(1), Forager(1), Great Hall(8), Necropolis(1), Province(6), Silver(5), 
+GovernorJunkdealer total score: 15
+  Conspirator(1), Copper(6), Duchy(1), Gold(8), Governor(3), JunkDealer(1), Province(2), Silver(5), 
+Trash contains: Copper(7), Hovel(2), Necropolis(1), Overgrown Estate(2), 

@@ -282,7 +282,7 @@ namespace Dominion.CardTypes
             }
             else if (choice == PlayerActionChoice.Discard)
             {
-                currentPlayer.MoveRevealedCardsToDiscard();
+                currentPlayer.MoveRevealedCardsToDiscard(gameState);
             }
         }
     }
