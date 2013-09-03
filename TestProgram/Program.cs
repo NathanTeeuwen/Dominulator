@@ -15,7 +15,9 @@ namespace Program
 
         static void Main()
         {
+            
             ComparePlayers(Strategies.BigMoneySingleSmithy.Player(1), Strategies.ArmoryConspiratorForagerGreatHall.Player(2), useShelters:true);
+            ComparePlayers(Strategies.BigMoneyDoubleJack.Player(1), Strategies.ArmoryConspiratorForagerGreatHall.Player(2), useShelters: true);
             ComparePlayers(Strategies.BigMoneySingleSmithy.Player(1), Strategies.GovernorJunkdealer.Player(2), useShelters: true);
             ComparePlayers(Strategies.ArmoryConspiratorForagerGreatHall.Player(1), Strategies.GovernorJunkdealer.Player(2), useShelters: true);
         }
