@@ -13,14 +13,7 @@ namespace Dominion
         internal readonly IPlayerAction actions;
         internal readonly IGameLog gameLog;
         internal PlayPhase playPhase;
-        internal Random random;        
-
-        public IPlayerAction Actions { get { return this.actions; } }
-        public int AvailableCoins { get { return this.turnCounters.AvailableCoins; } }
-        public int AvailableActions { get { return this.turnCounters.AvailableActions; } }
-        public int AvailableBuys { get { return this.turnCounters.AvailableBuys; } }
-        public BagOfCards Hand { get { return this.hand; } }
-        public BagOfCards CardsBeingRevealed { get { return this.cardsBeingRevealed; } }
+        internal Random random;                
 
         internal PlayerTurnCounters turnCounters = new PlayerTurnCounters();
 
@@ -35,7 +28,15 @@ namespace Dominion
         internal BagOfCards cardsToReturnToHandAtStartOfTurn = new BagOfCards();
         internal Card cardToPass = null;
         internal BagOfCards islandMat = new BagOfCards();
-        internal BagOfCards nativeVillageMat = new BagOfCards();                       
+        internal BagOfCards nativeVillageMat = new BagOfCards();
+
+        // expose information for use by strategies
+        public IPlayerAction Actions { get { return this.actions; } }
+        public int AvailableCoins { get { return this.turnCounters.AvailableCoins; } }
+        public int AvailableActions { get { return this.turnCounters.AvailableActions; } }
+        public int AvailableBuys { get { return this.turnCounters.AvailableBuys; } }        
+        public BagOfCards Hand { get { return this.hand; } }
+        public BagOfCards CardsBeingRevealed { get { return this.cardsBeingRevealed; } }
 
         // counters and duplicates.
         internal BagOfCards cardsInPlayAtBeginningOfCleanupPhase = new BagOfCards();

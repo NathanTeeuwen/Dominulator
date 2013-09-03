@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-    class GainReason
+    public enum GainReason
     {
+        Gain,
+        Buy
     }
 }

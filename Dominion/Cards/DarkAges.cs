@@ -444,6 +444,20 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Madman :
+       Card
+    {
+        public Madman()
+            : base("Madman", coinCost: 0, isAction: true, plusActions:2)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
 
     public class HuntingGrounds :
         Card
@@ -772,6 +786,20 @@ namespace Dominion.CardTypes
     {
         public Urchin()
             : base("Urchin", coinCost: 3, isAction: true, isAttack:true, plusCards:1, plusActions:1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Mercenary :
+       Card
+    {
+        public Mercenary()
+            : base("Mercenary", coinCost: 0, isAction: true, isAttack: true)
         {
         }
 

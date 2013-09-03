@@ -232,7 +232,7 @@ namespace Dominion
 
         virtual public void OverpayOnPurchase(PlayerState currentPlayer, GameState gameState, int overpayAmount)
         {
-            throw new Exception();
+            throw new Exception("Card has overpay semantics to be implemented");
         }
     }
 }

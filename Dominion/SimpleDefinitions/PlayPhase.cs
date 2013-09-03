@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-    public enum DeckPlacement
+    public enum PlayPhase
     {
-        Hand,
-        Discard,
-        Play,
-        Trash,
-        TopOfDeck,
-        Sentinel
+        Action,
+        PlayTreasure,
+        Buy,
+        Cleanup,
+        NotMyTurn
     }
 }

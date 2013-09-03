@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-    class PlayerActionChoice
+    public enum CardRelativeCost
     {
+        RelativeCost,
+        AbsoluteCost
     }
 }

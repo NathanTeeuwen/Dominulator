@@ -82,7 +82,15 @@
     <Compile Include="Card.cs" />
     <Compile Include="Collections\CollectionCards.cs" />
     <Compile Include="Cards\TestCards.cs" />
+    <Compile Include="Collections\MapPileOfCardsToProperty.cs" />
     <Compile Include="Collections\PileOfCards.cs" />
+    <Compile Include="SimpleDefinitions\CardPlacementPair.cs" />
+    <Compile Include="SimpleDefinitions\CardRelativeCost.cs" />
+    <Compile Include="SimpleDefinitions\CompareCardByType.cs" />
+    <Compile Include="SimpleDefinitions\CostConstraint.cs" />
+    <Compile Include="SimpleDefinitions\DeckPlacement.cs" />
+    <Compile Include="SimpleDefinitions\Delegates.cs" />
+    <Compile Include="SimpleDefinitions\GainReason.cs" />
     <Compile Include="GameConfig.cs" />
     <Compile Include="GameLogs\EmptyGameLog.cs" />
     <Compile Include="GameLogs\HumanReadableGameLog.cs" />
@@ -95,9 +103,11 @@
     <Compile Include="GameLogs\IGameLog.cs" />
     <Compile Include="IPlayerAction.cs" />
     <Compile Include="DefaultPlayerAction.cs" />
+    <Compile Include="SimpleDefinitions\PlayerActionChoice.cs" />
     <Compile Include="PlayerCircle.cs" />
     <Compile Include="PlayerState.cs" />
     <Compile Include="PlayerTurnCounters.cs" />
+    <Compile Include="SimpleDefinitions\PlayPhase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

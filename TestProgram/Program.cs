@@ -9,35 +9,37 @@ using System.Threading.Tasks;
 namespace Program
 {
     class Program    
-    {
-        // armory, conspirator, forager, great hall, pawn
-        // governor, mining village, pawn, junk dealdre
-
+    {        
         static void Main()
         {
-            
-            ComparePlayers(Strategies.BigMoneySingleSmithy.Player(1), Strategies.ArmoryConspiratorForagerGreatHall.Player(2), useShelters:true);
-            ComparePlayers(Strategies.BigMoneyDoubleJack.Player(1), Strategies.ArmoryConspiratorForagerGreatHall.Player(2), useShelters: true);
-            ComparePlayers(Strategies.BigMoneySingleSmithy.Player(1), Strategies.GovernorJunkdealer.Player(2), useShelters: true);
-            ComparePlayers(Strategies.ArmoryConspiratorForagerGreatHall.Player(1), Strategies.GovernorJunkdealer.Player(2), useShelters: true);
+            CompareGame2();
         }
 
         static void FindAndCompareBestStrategy()
         {
-            //EvaulateBestStrategyForFirstGame();
-            //FindBestStrategyForFirstGame();
+            EvaulateBestStrategyForFirstGame();
+            FindBestStrategyForFirstGame();
 
             //FindBestStrategy currently finds the following, which is better than BigMoneySimple, but not as good as BigMoney
             //Province(1), Province, Gold, Market(1), Duchy(2), Militia(2), Silver, Estate(1),Workshop(1), Cellar(1),                                   
         }
 
-        static void CompareGame()
+        static void CompareGame1()
         {
             // possible strategies choen for Shanty Town, Swindler, lookout, spicemerchant, nomad camp, horse tradres, navigator, laboratory, warehouse, 
             ComparePlayers(Strategies.NomadCampLaboratorySpiceMerchantWarehouse.Player(1), Strategies.BigMoney.Player(2));
             ComparePlayers(Strategies.LaboratorySpiceMerchantWarehouse.Player(1), Strategies.BigMoney.Player(2));
             ComparePlayers(Strategies.NomadCampLaboratorySpiceMerchantWarehouse.Player(1), Strategies.LaboratorySpiceMerchantWarehouse.Player(2));
             ComparePlayers(Strategies.NomadCampLaboratorySpiceMerchantWarehouse.Player(1), Strategies.BigMoneyWithCard<CardTypes.Laboratory>.Player(2, cardCount: 3));
+        }
+
+        static void CompareGame2()
+        {
+            // possible strategies for armory, conspirator, forager, great hall, pawn, governor, mining village, pawn, junk dealdre
+            ComparePlayers(Strategies.BigMoneySingleSmithy.Player(1), Strategies.ArmoryConspiratorForagerGreatHall.Player(2), useShelters: true);
+            ComparePlayers(Strategies.BigMoneyDoubleJack.Player(1), Strategies.ArmoryConspiratorForagerGreatHall.Player(2), useShelters: true);
+            ComparePlayers(Strategies.BigMoneySingleSmithy.Player(1), Strategies.GovernorJunkdealer.Player(2), useShelters: true);
+            ComparePlayers(Strategies.ArmoryConspiratorForagerGreatHall.Player(1), Strategies.GovernorJunkdealer.Player(2), useShelters: true);
         }
 
         static void PlayRemake()
@@ -404,7 +406,7 @@ namespace Program
                         useShelters,
                         parameter: 0,
                         useColonyAndPlatinum: false,
-                        supplyPiles: GetCardSet(startPlayer, otherPlayer));
+                        supplyPiles: GetKingdomCards(startPlayer, otherPlayer));
 
                     GameState gameState = new GameState(
                         gameLog,
@@ -520,7 +522,7 @@ namespace Program
             }
         }   
 
-        static Card[] GetCardSet(PlayerAction playerAction1, PlayerAction playerAction2)
+        static Card[] GetKingdomCards(PlayerAction playerAction1, PlayerAction playerAction2)
         {
             var cards = new HashSet<Card>(new CompareCardByType());
 
@@ -531,20 +533,29 @@ namespace Program
             AddCards(cards, playerAction2.purchaseOrder);
             AddCards(cards, playerAction2.gainOrder);
 
-            cards.Remove(new CardTypes.Platinum());
-            cards.Remove(new CardTypes.Gold());
-            cards.Remove(new CardTypes.Silver());
-            cards.Remove(new CardTypes.Copper());
-            cards.Remove(new CardTypes.Colony());
-            cards.Remove(new CardTypes.Province());
-            cards.Remove(new CardTypes.Duchy());
-            cards.Remove(new CardTypes.Estate());
-            cards.Remove(new CardTypes.Curse());
-            cards.Remove(new CardTypes.Potion());
-            cards.Remove(new CardTypes.RuinedLibrary());
-            cards.Remove(new CardTypes.RuinedVillage());
-            cards.Remove(new CardTypes.RuinedMarket());
-            cards.Remove(new CardTypes.AbandonedMine());
+            var cardsToRemove = new Card[] { 
+                new CardTypes.Platinum(),
+                new CardTypes.Gold(),
+                new CardTypes.Silver(),
+                new CardTypes.Copper(),
+                new CardTypes.Colony(),
+                new CardTypes.Province(),
+                new CardTypes.Duchy(),
+                new CardTypes.Estate(),
+                new CardTypes.Curse(),
+                new CardTypes.Potion(),
+                new CardTypes.RuinedLibrary(),
+                new CardTypes.RuinedVillage(),
+                new CardTypes.RuinedMarket(),
+                new CardTypes.Survivors(),
+                new CardTypes.Curse(),
+                new CardTypes.Spoils(),
+            };
+
+            foreach (Card card in cardsToRemove)
+            {
+                cards.Remove(card);
+            }            
 
             return cards.ToArray();
         }

@@ -37,6 +37,7 @@ namespace Dominion
             int ruinsCount = curseCount;
             int victoryCount = (playerCount == 2) ? 8 : 12;
 
+            // cards always in the supply
             Add<CardTypes.Copper>(supplyCardPiles, 60);
             Add<CardTypes.Silver>(supplyCardPiles, 40);
             Add<CardTypes.Gold>(supplyCardPiles, 30);
@@ -51,7 +52,15 @@ namespace Dominion
                 Add<CardTypes.Platinum>(supplyCardPiles, 20);
             }
 
-            bool requiresRuins = false;            
+            if (this.kingdomPiles.Where(card => card.potionCost != 0).Any())
+            {
+                Add<CardTypes.Province>(supplyCardPiles, 16);
+            }
+
+            if (this.kingdomPiles.Where(card => card.requiresRuins).Any())
+            {
+                supplyCardPiles.Add(CreateRuins(ruinsCount, random));
+            }          
 
             foreach (Card card in this.kingdomPiles)
             {
@@ -62,15 +71,8 @@ namespace Dominion
                 else
                 {
                     Add(supplyCardPiles, card.defaultSupplyCount, card);
-                }
-
-                requiresRuins |= card.requiresRuins;                
+                }                
             }
-
-            if (requiresRuins)
-            {
-                supplyCardPiles.Add(CreateRuins(ruinsCount, random));
-            }            
 
             return supplyCardPiles.ToArray();
         }
@@ -78,25 +80,20 @@ namespace Dominion
         public PileOfCards[] GetNonSupplyPiles()
         {
             var nonSupplyCardPiles = new List<PileOfCards>();
-
-            if (this.useShelters)
+            
+            if (this.kingdomPiles.Where(card => card.requiresSpoils).Any())
             {
-                Add<CardTypes.Necropolis>(nonSupplyCardPiles, 0);
-                Add<CardTypes.OvergrownEstate>(nonSupplyCardPiles, 0);
-                Add<CardTypes.Hovel>(nonSupplyCardPiles, 0);
+                Add<CardTypes.Spoils>(nonSupplyCardPiles, 16);
             }
 
-            bool requiresSpoils = false;
-
-            foreach (Card card in this.kingdomPiles)
-            {            
-                requiresSpoils |= card.requiresSpoils;
-            }
-
-            if (requiresSpoils)
+            if (this.kingdomPiles.Where(card => card.Is<CardTypes.Hermit>()).Any())
             {
-                Add<CardTypes.Spoils>(nonSupplyCardPiles, 15);
-            }    
+                Add<CardTypes.Madman>(nonSupplyCardPiles, 10);
+            }
+            if (this.kingdomPiles.Where(card => card.Is<CardTypes.Urchin>()).Any())
+            {
+                Add<CardTypes.Mercenary>(nonSupplyCardPiles, 10);
+            }
 
             return nonSupplyCardPiles.ToArray();
         }
