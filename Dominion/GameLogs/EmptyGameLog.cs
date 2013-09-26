@@ -13,131 +13,135 @@ namespace Dominion
         {
         }
 
-        public void BeginRound()
+        public virtual void BeginRound()
         {
         }
 
-        public void PushScope()
-        {
-
-        }
-
-        public void PopScope()
+        public virtual void PushScope()
         {
 
         }
 
-        public void BeginTurn(PlayerState playerState)
-        {
-        }
-
-        public void EndTurn(PlayerState playerState)
-        {
-        }
-
-        public void PlayerBoughtCard(PlayerState playerState, Card card)
-        {
-        }
-
-        public void GainedCard(PlayerState playerState, Card card)
-        {
-        }
-
-        public void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source)
+        public virtual void PopScope()
         {
 
         }
 
-        public void PlayerNamedCard(PlayerState playerState, Card card)
+        public virtual void BeginTurn(PlayerState playerState)
+        {
+        }
+
+        public virtual void EndTurn(PlayerState playerState)
+        {
+        }
+
+        public virtual void PlayerBoughtCard(PlayerState playerState, Card card)
+        {
+        }
+
+        public virtual void GainedCard(PlayerState playerState, Card card)
+        {
+        }
+
+        public virtual void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source)
         {
 
         }
 
-        public void DrewCardIntoHand(PlayerState playerState, Card card)
-        {
-        }
-
-        public void DiscardedCard(PlayerState playerState, Card card)
-        {
-        }
-
-        public void PlayerGainedCard(PlayerState playerState, Card card)
-        {
-        }
-
-        public void PlayerDiscardCard(PlayerState playerState, Card card)
-        {
-        }
-
-        public void PlayerTrashedCard(PlayerState playerState, Card card)
-        {
-        }
-
-        public void PlayerPutCardInHand(PlayerState playerState, Card card)
+        public virtual void PlayerNamedCard(PlayerState playerState, Card card)
         {
 
         }
 
-        public void PlayerTopDeckedCard(PlayerState playerState, Card card)
+        public virtual void DrewCardIntoHand(PlayerState playerState, Card card)
         {
         }
 
-        public void PlayedCard(PlayerState playerState, Card card)
+        public virtual void DiscardedCard(PlayerState playerState, Card card)
         {
         }
 
-        public void ReceivedDurationEffectFrom(PlayerState playerState, Card card)
-        {
-
-        }
-
-        public void ReshuffledDiscardIntoDeck(PlayerState playerState)
+        public virtual void PlayerGainedCard(PlayerState playerState, Card card)
         {
         }
 
-        public void EndGame(GameState gameState)
+        public virtual void PlayerDiscardCard(PlayerState playerState, Card card)
         {
         }
 
-        public void PlayerGainedCoin(PlayerState playerState, int coinAmount)
+        public virtual void PlayerTrashedCard(PlayerState playerState, Card card)
         {
         }
 
-        public void PlayerGainedActions(PlayerState playerState, int coinAmount)
+        public virtual void PlayerPutCardInHand(PlayerState playerState, Card card)
         {
 
         }
 
-        public void PlayerGainedBuys(PlayerState playerState, int coinAmount)
+        public virtual void PlayerTopDeckedCard(PlayerState playerState, Card card)
+        {
+        }
+
+        public virtual void PlayedCard(PlayerState playerState, Card card)
+        {
+        }
+
+        public virtual void ReceivedDurationEffectFrom(PlayerState playerState, Card card)
         {
 
         }
 
-        public void LogDeck(PlayerState playerState)
+        public virtual void ReshuffledDiscardIntoDeck(PlayerState playerState)
         {
         }
 
-        public void PlayerReturnedCardToHand(PlayerState playerState, Card card)
+        public virtual void StartGame(GameState gameState)
         {
-
         }
 
-        public void PlayerSetAsideCardFromHandForNextTurn(PlayerState playerState, Card card)
+        public virtual void EndGame(GameState gameState)
         {
-
         }
 
-        public void PlayerGainedCoinToken(PlayerState playerState, int coinAmount)
+        public virtual void PlayerGainedCoin(PlayerState playerState, int coinAmount)
         {
-
         }
 
-        public void PlayerOverpaidForCard(Card boughtCard, int overPayAmount)
+        public virtual void PlayerGainedActions(PlayerState playerState, int coinAmount)
         {
 
         }
 
-        public void CardWentToLocation(DeckPlacement deckPlacement)
+        public virtual void PlayerGainedBuys(PlayerState playerState, int coinAmount)
+        {
+
+        }
+
+        public virtual void LogDeck(PlayerState playerState)
+        {
+        }
+
+        public virtual void PlayerReturnedCardToHand(PlayerState playerState, Card card)
+        {
+
+        }
+
+        public virtual void PlayerSetAsideCardFromHandForNextTurn(PlayerState playerState, Card card)
+        {
+
+        }
+
+        public virtual void PlayerGainedCoinToken(PlayerState playerState, int coinAmount)
+        {
+
+        }
+
+        public virtual void PlayerOverpaidForCard(Card boughtCard, int overPayAmount)
+        {
+
+        }
+
+        public virtual void CardWentToLocation(DeckPlacement deckPlacement)
         {
 
         }

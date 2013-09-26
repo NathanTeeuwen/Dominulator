@@ -36,25 +36,21 @@ namespace Dominion
             this.hasPileEverBeenGained = new MapPileOfCardsToProperty<bool>(this.supplyPiles);
             this.pileEmbargoTokenCount = new MapPileOfCardsToProperty<int>(this.supplyPiles);
             this.trash = new BagOfCards();
-                       
-            foreach (PlayerState player in this.players.AllPlayers)
-            {
-                if (gameConfig.useShelters)
-                {
-                    player.GainCard(this, new CardTypes.Hovel());
-                    player.GainCard(this, new CardTypes.Necropolis());
-                    player.GainCard(this, new CardTypes.OvergrownEstate());
-                }
-                else
-                {
-                    for (int i = 0; i < 3; ++i)
-                        player.GainCard(this, new CardTypes.Estate());
-                }
-                
-                player.GainCardsFromSupply(this, typeof(CardTypes.Copper), 7);
-            }
+
+            this.GainStartingCards(gameConfig.StartingDeck);            
 
             this.players.AllPlayersDrawInitialCards();         
+        }
+        
+        private void GainStartingCards(IEnumerable<CardCountPair> pairs)
+        {
+            foreach (PlayerState player in this.players.AllPlayers)
+            {
+                foreach (CardCountPair pair in pairs)
+                {
+                    player.GainCardsFromSupply(this, pair.Card.GetType(), pair.Count);
+                }
+            }
         }
 
         private static PileOfCards CreateRuins(int ruinsCount, Random random)
@@ -125,6 +121,8 @@ namespace Dominion
         public void PlayGameToEnd()
         {
             int noGainCount = 0;
+
+            this.gameLog.StartGame(this);
 
             while (!IsVictoryConditionReached())
             {

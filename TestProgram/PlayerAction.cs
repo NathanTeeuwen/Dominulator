@@ -40,6 +40,11 @@ namespace Program
             this.name = name;
         }
 
+        public static int PlayIndexfor(IPlayerAction playerAction)
+        {
+            return ((PlayerAction)playerAction).playerIndex;
+        }
+
         public override Type GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
         {
             var currentPlayer = gameState.players.CurrentPlayer;

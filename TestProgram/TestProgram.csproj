@@ -50,9 +50,11 @@
     <Compile Include="PlayerAction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Simulations\UnevenCurseSplit.cs" />
     <Compile Include="Strategies\ArmoryConspiratorForagerGreatHall.cs" />
     <Compile Include="Strategies\BigMoney.cs" />
     <Compile Include="Strategies\BigMoneySingleCard.cs" />
+    <Compile Include="Strategies\ButcherPlazaWatchtower.cs" />
     <Compile Include="Strategies\CaravanBridgeDukeCartographer.cs" />
     <Compile Include="Strategies\BigMoneySimple.cs" />
     <Compile Include="Strategies\Harem.cs" />

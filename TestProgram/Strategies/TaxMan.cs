@@ -46,7 +46,7 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Taxman>());
+                           CardAcceptance.For<CardTypes.Taxman>(gameState => gameState.players.CurrentPlayer.ExpectedCoinValueAtEndOfTurn < 8 || gameState.players.CurrentPlayer.ExpectedCoinValueAtEndOfTurn > 10));
             }
 
             private static CardPickByPriority TrashOrder()

@@ -11,8 +11,17 @@ namespace Program
     class Program    
     {        
         static void Main()
-        {
-            CompareGame2();
+        {            
+            ComparePlayers(Strategies.TaxMan.Player(1), Strategies.BigMoney.Player(2));
+            ComparePlayers(Strategies.TaxMan.Player(1), Strategies.BigMoneyWithCard<CardTypes.JackOfAllTrades>.Player(2));
+            
+            //ComparePlayers(Strategies.TaxMan.Player(1), Strategies.BigMoneyWithCard<CardTypes.Bureaucrat>.Player(2));
+            ComparePlayers(Strategies.TaxMan.Player(1), Strategies.BigMoneyWithCard<CardTypes.Smithy>.Player(2));
+            ComparePlayers(Strategies.TaxMan.Player(1), Strategies.BigMoneyWithCard<CardTypes.Caravan>.Player(2, cardCount:10));
+            ComparePlayers(Strategies.TaxMan.Player(1), Strategies.BigMoneyWithCard<CardTypes.Militia>.Player(2));
+            ComparePlayers(Strategies.TaxMan.Player(1), Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2));
+            ComparePlayers(Strategies.TaxMan.Player(1), Strategies.Rebuild.Player(2));
+            ComparePlayers(Strategies.TaxMan.Player(1), Strategies.BigMoneyWithCard<CardTypes.GhostShip>.Player(2));
         }
 
         static void FindAndCompareBestStrategy()
@@ -372,7 +381,9 @@ namespace Program
             return new HumanReadableGameLog("..\\..\\Results\\GameLog" + (gameCount == 0 ? "" : gameCount.ToString()) + ".txt");
         }
 
-        static double ComparePlayers(
+        public delegate IGameLog CreateGameLog();
+
+        public static double ComparePlayers(
             PlayerAction player1, 
             PlayerAction player2, 
             bool useShelters = false, 
@@ -383,7 +394,9 @@ namespace Program
             bool shouldParallel = true,
             bool showPlayer2Wins = false,
             int numberOfGames = 1000, 
-            int logGameCount = 100)
+            int logGameCount = 100,
+            CreateGameLog createGameLog = null,
+            IEnumerable<CardCountPair> startingDeck = null)
         {            
             PlayerAction[] players = new PlayerAction[] { player1, player2 };
             int[] winnerCount = new int[2];
@@ -393,7 +406,9 @@ namespace Program
              
             Action<int> loopBody = delegate(int gameCount)                    
             {
-                using (IGameLog gameLog = gameCount < logGameCount || gameCount == 203 ? GetGameLogForIteration(gameCount) : new EmptyGameLog())                
+                using (IGameLog gameLog = createGameLog != null ? createGameLog() :
+                                          gameCount < logGameCount ? GetGameLogForIteration(gameCount) : 
+                                          new EmptyGameLog())                
                 {
                     // swap order every other game
                     bool swappedOrder = !firstPlayerAdvantage && (gameCount % 2 == 1);
@@ -403,10 +418,10 @@ namespace Program
                     Random random = new Random(gameCount);
 
                     var gameConfig = new GameConfig(
-                        useShelters,
-                        parameter: 0,
+                        useShelters,                        
                         useColonyAndPlatinum: false,
-                        supplyPiles: GetKingdomCards(startPlayer, otherPlayer));
+                        supplyPiles: GetKingdomCards(startPlayer, otherPlayer),
+                        startingDeck : startingDeck);
 
                     GameState gameState = new GameState(
                         gameLog,

@@ -130,6 +130,11 @@ namespace Dominion
             this.textWriter.WriteLine("{0} reshuffled", playerState.actions.PlayerName);
         }
 
+        public void StartGame(GameState gameState)
+        {
+
+        }
+
         public void EndGame(GameState gameState)
         {
             this.textWriter.WriteLine("Game ended in {0} turns.", this.roundNumber);

@@ -37,6 +37,9 @@ namespace Dominion
         public int AvailableBuys { get { return this.turnCounters.AvailableBuys; } }        
         public BagOfCards Hand { get { return this.hand; } }
         public BagOfCards CardsBeingRevealed { get { return this.cardsBeingRevealed; } }
+        public int TurnNumber { get { return this.numberOfTurnsPlayed; } }
+
+        public int ExpectedCoinValueAtEndOfTurn { get { return this.AvailableCoins + this.hand.Where(card => card.isTreasure).Select(card => card.plusCoin).Sum(); } }
 
         // counters and duplicates.
         internal BagOfCards cardsInPlayAtBeginningOfCleanupPhase = new BagOfCards();

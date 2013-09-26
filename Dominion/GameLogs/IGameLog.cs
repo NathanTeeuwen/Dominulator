@@ -31,6 +31,7 @@ namespace Dominion
         void DrewCardIntoHand(PlayerState playerState, Card card);
         void DiscardedCard(PlayerState playerState, Card card);
         void ReshuffledDiscardIntoDeck(PlayerState playerState);
+        void StartGame(GameState gameState);
         void EndGame(GameState gameState);
         void PlayerGainedCoin(PlayerState playerState, int coinAmount);
         void PlayerGainedCoinToken(PlayerState playerState, int coinAmount);

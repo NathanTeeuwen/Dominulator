@@ -11,22 +11,57 @@ namespace Dominion
         public readonly bool useShelters;
         public readonly bool useColonyAndPlatinum;
         public readonly Card[] kingdomPiles;
-        internal readonly int parameter;
+        public readonly IEnumerable<CardCountPair> startingDeck;
 
-        public GameConfig(bool useShelters, bool useColonyAndPlatinum, int parameter, params Card[] supplyPiles)
+        public GameConfig(bool useShelters, bool useColonyAndPlatinum, Card[] supplyPiles, IEnumerable<CardCountPair> startingDeck)
         {
             this.useShelters = useShelters;
             this.useColonyAndPlatinum = useColonyAndPlatinum;
             this.kingdomPiles = supplyPiles;
-            this.parameter = parameter;
+            this.startingDeck = startingDeck;
+        }
+
+        public GameConfig(bool useShelters, bool useColonyAndPlatinum, params Card[] supplyPiles)
+        {
+            this.useShelters = useShelters;
+            this.useColonyAndPlatinum = useColonyAndPlatinum;
+            this.kingdomPiles = supplyPiles;
+            this.startingDeck = null;
         }
 
         public GameConfig(params Card[] supplyPiles)
         {
             this.useShelters = false;
             this.useColonyAndPlatinum = false;
-            this.kingdomPiles = supplyPiles;
-            this.parameter = 0;
+            this.kingdomPiles = supplyPiles;            
+        }
+
+        public IEnumerable<CardCountPair> StartingDeck
+        {
+            get
+            {
+                if (this.startingDeck != null)
+                    return this.startingDeck;
+
+                if (this.useShelters)
+                {
+                    return 
+                        new CardCountPair[] {
+                            new CardCountPair(new CardTypes.Copper(), 7),
+                            new CardCountPair(new CardTypes.Hovel(), 1),
+                            new CardCountPair(new CardTypes.Necropolis(), 1),
+                            new CardCountPair(new CardTypes.OvergrownEstate(), 1)
+                        };
+                }
+                else
+                {
+                    return
+                        new CardCountPair[] {
+                            new CardCountPair(new CardTypes.Copper(), 7),
+                            new CardCountPair(new CardTypes.Estate(), 3) 
+                        };
+                }
+            }
         }
 
         public PileOfCards[] GetSupplyPiles(int playerCount, Random random)
