@@ -1,337 +1,829 @@
-TaxMan gained Copper.
-TaxMan gained Copper.
-TaxMan gained Copper.
-TaxMan gained Copper.
-TaxMan gained Copper.
-TaxMan gained Copper.
-TaxMan gained Copper.
-TaxMan gained Estate.
-TaxMan gained Estate.
-TaxMan gained Estate.
-BigMoneyWithCard<GhostShip> gained Copper.
-BigMoneyWithCard<GhostShip> gained Copper.
-BigMoneyWithCard<GhostShip> gained Copper.
-BigMoneyWithCard<GhostShip> gained Copper.
-BigMoneyWithCard<GhostShip> gained Copper.
-BigMoneyWithCard<GhostShip> gained Copper.
-BigMoneyWithCard<GhostShip> gained Copper.
-BigMoneyWithCard<GhostShip> gained Estate.
-BigMoneyWithCard<GhostShip> gained Estate.
-BigMoneyWithCard<GhostShip> gained Estate.
-TaxMan reshuffled
-TaxMan Drew Copper into hand.
-TaxMan Drew Copper into hand.
-TaxMan Drew Copper into hand.
-TaxMan Drew Estate into hand.
-TaxMan Drew Copper into hand.
-BigMoneyWithCard<GhostShip> reshuffled
-BigMoneyWithCard<GhostShip> Drew Estate into hand.
-BigMoneyWithCard<GhostShip> Drew Copper into hand.
-BigMoneyWithCard<GhostShip> Drew Copper into hand.
-BigMoneyWithCard<GhostShip> Drew Copper into hand.
-BigMoneyWithCard<GhostShip> Drew Estate into hand.
+EmbassyTunnelSpiceMerchantPlaza gained Copper.
+EmbassyTunnelSpiceMerchantPlaza gained Copper.
+EmbassyTunnelSpiceMerchantPlaza gained Copper.
+EmbassyTunnelSpiceMerchantPlaza gained Copper.
+EmbassyTunnelSpiceMerchantPlaza gained Copper.
+EmbassyTunnelSpiceMerchantPlaza gained Copper.
+EmbassyTunnelSpiceMerchantPlaza gained Copper.
+EmbassyTunnelSpiceMerchantPlaza gained Estate.
+EmbassyTunnelSpiceMerchantPlaza gained Estate.
+EmbassyTunnelSpiceMerchantPlaza gained Estate.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Estate.
+Rebuild gained Estate.
+Rebuild gained Estate.
+EmbassyTunnelSpiceMerchantPlaza reshuffled
+EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+Rebuild reshuffled
+Rebuild Drew Estate into hand.
+Rebuild Drew Copper into hand.
+Rebuild Drew Copper into hand.
+Rebuild Drew Copper into hand.
+Rebuild Drew Estate into hand.
 ROUND 1
 -------------
-TaxMan begins turn
+EmbassyTunnelSpiceMerchantPlaza begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  TaxMan Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 1 all together.
-  TaxMan Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 2 all together.
-  TaxMan Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 3 all together.
-  TaxMan Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 4 all together.
-  TaxMan bought Taxman.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan ends turn with deck: Copper(7), Estate(3), Taxman(1), 
+  EmbassyTunnelSpiceMerchantPlaza bought Silver.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
-BigMoneyWithCard<GhostShip> begins turn
+Rebuild begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyWithCard<GhostShip> Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<GhostShip> bought Silver.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Estate into hand.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  Rebuild bought Silver.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-TaxMan begins turn
+EmbassyTunnelSpiceMerchantPlaza begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  TaxMan Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 1 all together.
-  TaxMan Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 2 all together.
-  TaxMan Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 3 all together.
-  TaxMan bought Silver.
-  TaxMan reshuffled
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Taxman into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan ends turn with deck: Copper(7), Estate(3), Silver(1), Taxman(1), 
+  EmbassyTunnelSpiceMerchantPlaza bought Silver.
+  EmbassyTunnelSpiceMerchantPlaza reshuffled
+  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
-BigMoneyWithCard<GhostShip> begins turn
+Rebuild begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWithCard<GhostShip> Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<GhostShip> bought Silver.
-  BigMoneyWithCard<GhostShip> reshuffled
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Estate into hand.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  Rebuild bought Silver.
+  Rebuild reshuffled
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-TaxMan begins turn
-With hand: Copper,Copper,Copper,Silver,Taxman,
-  TaxMan Played Taxman.
-    TaxMan trashed Silver.
-    TaxMan gained Gold.
-      ... and placed card on top of deck
-  TaxMan Played Copper.
-    +1 Coin = 1 all together.
-  TaxMan Played Copper.
-    +1 Coin = 2 all together.
-  TaxMan Played Copper.
-    +1 Coin = 3 all together.
-  TaxMan bought Silver.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(1), Taxman(1), 
+EmbassyTunnelSpiceMerchantPlaza begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  EmbassyTunnelSpiceMerchantPlaza Played Silver.
+    +2 Coin = 2 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Silver.
+    +2 Coin = 4 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 5 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 6 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 7 all together.
+  EmbassyTunnelSpiceMerchantPlaza bought Embassy.
+    Rebuild gained Silver.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(1), Estate(3), Silver(2), 
 
-BigMoneyWithCard<GhostShip> begins turn
+Rebuild begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWithCard<GhostShip> Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<GhostShip> bought Silver.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Estate into hand.
-  BigMoneyWithCard<GhostShip> Drew Estate into hand.
-  BigMoneyWithCard<GhostShip> Drew Silver into hand.
-  BigMoneyWithCard<GhostShip> ends turn with deck: Copper(7), Estate(3), Silver(3), 
+  Rebuild bought Silver.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Silver(4), 
 
 ROUND 4
 -------------
-TaxMan begins turn
-With hand: Copper,Copper,Estate,Estate,Gold,
-  TaxMan Played Gold.
-    +3 Coin = 3 all together.
-  TaxMan Played Copper.
-    +1 Coin = 4 all together.
-  TaxMan Played Copper.
-    +1 Coin = 5 all together.
-  TaxMan bought Silver.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan reshuffled
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), Taxman(1), 
+EmbassyTunnelSpiceMerchantPlaza begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 1 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 2 all together.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza reshuffled
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(1), Estate(3), Silver(2), 
 
-BigMoneyWithCard<GhostShip> begins turn
+Rebuild begins turn
 With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoneyWithCard<GhostShip> Played Silver.
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<GhostShip> bought Silver.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Silver into hand.
-  BigMoneyWithCard<GhostShip> reshuffled
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> ends turn with deck: Copper(7), Estate(3), Silver(4), 
+  Rebuild bought Silver.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild reshuffled
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Silver(5), 
 
 ROUND 5
 -------------
-TaxMan begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  TaxMan Played Copper.
-    +1 Coin = 1 all together.
-  TaxMan Played Copper.
-    +1 Coin = 2 all together.
-  TaxMan Played Copper.
-    +1 Coin = 3 all together.
-  TaxMan Played Copper.
-    +1 Coin = 4 all together.
-  TaxMan bought Silver.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Taxman into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), Taxman(1), 
-
-BigMoneyWithCard<GhostShip> begins turn
+EmbassyTunnelSpiceMerchantPlaza begins turn
 With hand: Copper,Copper,Copper,Copper,Silver,
-  BigMoneyWithCard<GhostShip> Played Silver.
+  EmbassyTunnelSpiceMerchantPlaza Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyWithCard<GhostShip> bought Gold.
-  BigMoneyWithCard<GhostShip> Drew Silver into hand.
-  BigMoneyWithCard<GhostShip> Drew Silver into hand.
-  BigMoneyWithCard<GhostShip> Drew Estate into hand.
-  BigMoneyWithCard<GhostShip> Drew Estate into hand.
-  BigMoneyWithCard<GhostShip> Drew Estate into hand.
-  BigMoneyWithCard<GhostShip> ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
+  EmbassyTunnelSpiceMerchantPlaza bought Tunnel.
+  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(1), Estate(3), Silver(2), Tunnel(1), 
+
+Rebuild begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  Rebuild Played Silver.
+    +2 Coin = 2 all together.
+  Rebuild Played Silver.
+    +2 Coin = 4 all together.
+  Rebuild Played Copper.
+    +1 Coin = 5 all together.
+  Rebuild Played Copper.
+    +1 Coin = 6 all together.
+  Rebuild Played Copper.
+    +1 Coin = 7 all together.
+  Rebuild bought Rebuild.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Rebuild(1), Silver(5), 
 
 ROUND 6
 -------------
-TaxMan begins turn
-With hand: Copper,Estate,Estate,Gold,Taxman,
-  TaxMan Played Taxman.
-    TaxMan trashed Copper.
-    TaxMan gained Silver.
-      ... and placed card on top of deck
-  TaxMan Played Gold.
-    +3 Coin = 3 all together.
-  TaxMan bought Silver.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan ends turn with deck: Copper(6), Estate(3), Gold(1), Silver(5), Taxman(1), 
-
-BigMoneyWithCard<GhostShip> begins turn
-With hand: Estate,Estate,Estate,Silver,Silver,
-  BigMoneyWithCard<GhostShip> Played Silver.
+EmbassyTunnelSpiceMerchantPlaza begins turn
+With hand: Copper,Embassy,Estate,Estate,Silver,
+  EmbassyTunnelSpiceMerchantPlaza Played Embassy.
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza reshuffled
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
+  EmbassyTunnelSpiceMerchantPlaza Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<GhostShip> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<GhostShip> bought Silver.
-  BigMoneyWithCard<GhostShip> Drew Silver into hand.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> reshuffled
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(5), 
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 3 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 4 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 5 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 6 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 7 all together.
+  EmbassyTunnelSpiceMerchantPlaza bought Embassy.
+    Rebuild gained Silver.
+  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza reshuffled
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Silver(2), Tunnel(1), 
+
+Rebuild begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  Rebuild Played Copper.
+    +1 Coin = 1 all together.
+  Rebuild Played Copper.
+    +1 Coin = 2 all together.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Rebuild(1), Silver(6), 
 
 ROUND 7
 -------------
-TaxMan begins turn
-With hand: Copper,Copper,Silver,Silver,Silver,
-  TaxMan Played Silver.
+EmbassyTunnelSpiceMerchantPlaza begins turn
+With hand: Copper,Copper,Copper,Silver,Tunnel,
+  EmbassyTunnelSpiceMerchantPlaza Played Silver.
     +2 Coin = 2 all together.
-  TaxMan Played Silver.
-    +2 Coin = 4 all together.
-  TaxMan Played Silver.
-    +2 Coin = 6 all together.
-  TaxMan Played Copper.
-    +1 Coin = 7 all together.
-  TaxMan Played Copper.
-    +1 Coin = 8 all together.
-  TaxMan bought Province.
-  TaxMan reshuffled
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Silver into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan ends turn with deck: Copper(6), Estate(3), Gold(1), Province(1), Silver(5), Taxman(1), 
-
-BigMoneyWithCard<GhostShip> begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
-  BigMoneyWithCard<GhostShip> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<GhostShip> bought Gold.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Silver into hand.
-  BigMoneyWithCard<GhostShip> Drew Silver into hand.
-  BigMoneyWithCard<GhostShip> Drew Estate into hand.
-  BigMoneyWithCard<GhostShip> Drew Estate into hand.
-  BigMoneyWithCard<GhostShip> ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
+  EmbassyTunnelSpiceMerchantPlaza bought Plaza.
+  EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Plaza(1), Silver(2), Tunnel(1), 
+
+Rebuild begins turn
+With hand: Copper,Copper,Silver,Silver,Silver,
+  Rebuild Played Silver.
+    +2 Coin = 2 all together.
+  Rebuild Played Silver.
+    +2 Coin = 4 all together.
+  Rebuild Played Silver.
+    +2 Coin = 6 all together.
+  Rebuild Played Copper.
+    +1 Coin = 7 all together.
+  Rebuild Played Copper.
+    +1 Coin = 8 all together.
+  Rebuild bought Province.
+  Rebuild reshuffled
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Province(1), Rebuild(1), Silver(6), 
 
 ROUND 8
 -------------
-TaxMan begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  TaxMan Played Silver.
+EmbassyTunnelSpiceMerchantPlaza begins turn
+With hand: Copper,Embassy,Estate,Estate,Silver,
+  EmbassyTunnelSpiceMerchantPlaza Played Embassy.
+    EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
+  EmbassyTunnelSpiceMerchantPlaza Played Silver.
     +2 Coin = 2 all together.
-  TaxMan Played Silver.
-    +2 Coin = 4 all together.
-  TaxMan Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 3 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 4 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 5 all together.
-  TaxMan Played Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
     +1 Coin = 6 all together.
-  TaxMan bought Gold.
-  TaxMan Drew Gold into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan Drew Estate into hand.
-  TaxMan Drew Copper into hand.
-  TaxMan ends turn with deck: Copper(6), Estate(3), Gold(2), Province(1), Silver(5), Taxman(1), 
+  EmbassyTunnelSpiceMerchantPlaza bought Tunnel.
+  EmbassyTunnelSpiceMerchantPlaza reshuffled
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Plaza(1), Silver(2), Tunnel(2), 
 
-BigMoneyWithCard<GhostShip> begins turn
-With hand: Copper,Estate,Estate,Silver,Silver,
-  BigMoneyWithCard<GhostShip> Played Silver.
+Rebuild begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<GhostShip> Played Silver.
+  Rebuild Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyWithCard<GhostShip> Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<GhostShip> bought Ghost Ship.
-  BigMoneyWithCard<GhostShip> Drew Silver into hand.
-  BigMoneyWithCard<GhostShip> Drew Gold into hand.
-  BigMoneyWithCard<GhostShip> Drew Copper into hand.
-  BigMoneyWithCard<GhostShip> Drew Silver into hand.
-  BigMoneyWithCard<GhostShip> Drew Estate into hand.
-  BigMoneyWithCard<GhostShip> ends turn with deck: Copper(7), Estate(3), Ghost Ship(1), Gold(2), Silver(5), 
+  Rebuild Played Copper.
+    +1 Coin = 6 all together.
+  Rebuild Played Copper.
+    +1 Coin = 7 all together.
+  Rebuild bought Rebuild.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Province(1), Rebuild(2), Silver(6), 
 
 ROUND 9
 -------------
-TaxMan begins tu
+EmbassyTunnelSpiceMerchantPlaza begins turn
+With hand: Copper,Copper,Copper,Embassy,Estate,
+  EmbassyTunnelSpiceMerchantPlaza Played Embassy.
+    EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Tunnel.
+    EmbassyTunnelSpiceMerchantPlaza gained Gold.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
+  EmbassyTunnelSpiceMerchantPlaza Played Silver.
+    +2 Coin = 2 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 3 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 4 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 5 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 6 all together.
+  EmbassyTunnelSpiceMerchantPlaza bought Tunnel.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Gold(1), Plaza(1), Silver(2), Tunnel(3), 
+
+Rebuild begins turn
+With hand: Copper,Estate,Silver,Silver,Silver,
+  Rebuild Played Silver.
+    +2 Coin = 2 all together.
+  Rebuild Played Silver.
+    +2 Coin = 4 all together.
+  Rebuild Played Silver.
+    +2 Coin = 6 all together.
+  Rebuild Played Copper.
+    +1 Coin = 7 all together.
+  Rebuild bought Rebuild.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Province(1), Rebuild(3), Silver(6), 
+
+ROUND 10
+-------------
+EmbassyTunnelSpiceMerchantPlaza begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  EmbassyTunnelSpiceMerchantPlaza Played Silver.
+    +2 Coin = 2 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 3 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 4 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 5 all together.
+  EmbassyTunnelSpiceMerchantPlaza bought Tunnel.
+  EmbassyTunnelSpiceMerchantPlaza Drew Plaza into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
+  EmbassyTunnelSpiceMerchantPlaza reshuffled
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Gold(1), Plaza(1), Silver(2), Tunnel(4), 
+
+Rebuild begins turn
+With hand: Copper,Estate,Estate,Rebuild,Silver,
+  Rebuild Played Rebuild.
+    +1 Actions = 1 all together.
+    Rebuild named Province.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Province.
+      Rebuild reshuffled
+      Rebuild Revealed Copper.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Rebuild.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Rebuild.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Estate.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Silver.
+      Rebuild Discarded Silver.
+      Rebuild Discarded Silver.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Rebuild.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Silver.
+      Rebuild Discarded Rebuild.
+      Rebuild Discarded Silver.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Province.
+    Rebuild trashed Estate.
+    Rebuild gained Duchy.
+  Rebuild Played Silver.
+    +2 Coin = 2 all together.
+  Rebuild Played Copper.
+    +1 Coin = 3 all together.
+  Rebuild bought Silver.
+  Rebuild reshuffled
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild Drew Province into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(1), Estate(2), Province(1), Rebuild(3), Silver(7), 
+
+ROUND 11
+-------------
+EmbassyTunnelSpiceMerchantPlaza begins turn
+With hand: Copper,Copper,Plaza,Tunnel,Tunnel,
+  EmbassyTunnelSpiceMerchantPlaza Played Plaza.
+    +2 Actions = 2 all together.
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Copper.
+    +1 coin tokens = 1 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 1 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 2 all together.
+  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Gold(1), Plaza(1), Silver(2), Tunnel(4), 
+
+Rebuild begins turn
+With hand: Copper,Duchy,Province,Rebuild,Silver,
+  Rebuild Played Rebuild.
+    +1 Actions = 1 all together.
+    Rebuild named Duchy.
+      Rebuild Revealed Rebuild.
+      Rebuild Revealed Estate.
+      Rebuild Discarded Rebuild.
+    Rebuild trashed Estate.
+    Rebuild gained Duchy.
+  Rebuild Played Silver.
+    +2 Coin = 2 all together.
+  Rebuild Played Copper.
+    +1 Coin = 3 all together.
+  Rebuild bought Silver.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(2), Estate(1), Province(1), Rebuild(3), Silver(8), 
+
+ROUND 12
+-------------
+EmbassyTunnelSpiceMerchantPlaza begins turn
+With hand: Copper,Copper,Embassy,Estate,Tunnel,
+  EmbassyTunnelSpiceMerchantPlaza Played Embassy.
+    EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Tunnel.
+    EmbassyTunnelSpiceMerchantPlaza gained Gold.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Tunnel.
+    EmbassyTunnelSpiceMerchantPlaza gained Gold.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
+  EmbassyTunnelSpiceMerchantPlaza Played Silver.
+    +2 Coin = 2 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Silver.
+    +2 Coin = 4 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 5 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 6 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 7 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 8 all together.
+  EmbassyTunnelSpiceMerchantPlaza bought Province.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza reshuffled
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Gold(3), Plaza(1), Province(1), Silver(2), Tunnel(4), 
+
+Rebuild begins turn
+With hand: Copper,Copper,Silver,Silver,Silver,
+  Rebuild Played Silver.
+    +2 Coin = 2 all together.
+  Rebuild Played Silver.
+    +2 Coin = 4 all together.
+  Rebuild Played Silver.
+    +2 Coin = 6 all together.
+  Rebuild Played Copper.
+    +1 Coin = 7 all together.
+  Rebuild Played Copper.
+    +1 Coin = 8 all together.
+  Rebuild bought Province.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(2), Estate(1), Province(2), Rebuild(3), Silver(8), 
+
+ROUND 13
+-------------
+EmbassyTunnelSpiceMerchantPlaza begins turn
+With hand: Copper,Embassy,Estate,Estate,Gold,
+  EmbassyTunnelSpiceMerchantPlaza Played Embassy.
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Plaza into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Gold.
+    +3 Coin = 3 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Silver.
+    +2 Coin = 5 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 6 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 7 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 8 all together.
+  EmbassyTunnelSpiceMerchantPlaza bought Province.
+  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Gold(3), Plaza(1), Province(2), Silver(2), Tunnel(4), 
+
+Rebuild begins turn
+With hand: Copper,Copper,Copper,Rebuild,Silver,
+  Rebuild Played Rebuild.
+    +1 Actions = 1 all together.
+    Rebuild named Province.
+      Rebuild Revealed Estate.
+    Rebuild trashed Estate.
+    Rebuild gained Duchy.
+  Rebuild Played Silver.
+    +2 Coin = 2 all together.
+  Rebuild Played Copper.
+    +1 Coin = 3 all together.
+  Rebuild Played Copper.
+    +1 Coin = 4 all together.
+  Rebuild Played Copper.
+    +1 Coin = 5 all together.
+  Rebuild bought Duchy.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild reshuffled
+  Rebuild Drew Duchy into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(4), Province(2), Rebuild(3), Silver(8), 
+
+ROUND 14
+-------------
+EmbassyTunnelSpiceMerchantPlaza begins turn
+With hand: Copper,Gold,Gold,Tunnel,Tunnel,
+  EmbassyTunnelSpiceMerchantPlaza Played Gold.
+    +3 Coin = 3 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Gold.
+    +3 Coin = 6 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 7 all together.
+  EmbassyTunnelSpiceMerchantPlaza bought Duchy.
+  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Province into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Duchy(1), Embassy(2), Estate(3), Gold(3), Plaza(1), Province(2), Silver(2), Tunnel(4), 
+
+Rebuild begins turn
+With hand: Copper,Duchy,Silver,Silver,Silver,
+  Rebuild Played Silver.
+    +2 Coin = 2 all together.
+  Rebuild Played Silver.
+    +2 Coin = 4 all together.
+  Rebuild Played Silver.
+    +2 Coin = 6 all together.
+  Rebuild Played Copper.
+    +1 Coin = 7 all together.
+  Rebuild bought Duchy.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Province into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Province into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(5), Province(2), Rebuild(3), Silver(8), 
+
+ROUND 15
+-------------
+EmbassyTunnelSpiceMerchantPlaza begins turn
+With hand: Copper,Province,Silver,Tunnel,Tunnel,
+  EmbassyTunnelSpiceMerchantPlaza Played Silver.
+    +2 Coin = 2 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 3 all together.
+  EmbassyTunnelSpiceMerchantPlaza bought Tunnel.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
+  EmbassyTunnelSpiceMerchantPlaza reshuffled
+  EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Duchy(1), Embassy(2), Estate(3), Gold(3), Plaza(1), Province(2), Silver(2), Tunnel(5), 
+
+Rebuild begins turn
+With hand: Copper,Province,Province,Rebuild,Silver,
+  Rebuild Played Rebuild.
+    +1 Actions = 1 all together.
+    Rebuild named Province.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Duchy.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+    Rebuild trashed Duchy.
+    Rebuild gained Province.
+  Rebuild Played Silver.
+    +2 Coin = 2 all together.
+  Rebuild Played Copper.
+    +1 Coin = 3 all together.
+  Rebuild bought Silver.
+  Rebuild Drew Duchy into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(4), Province(3), Rebuild(3), Silver(9), 
+
+ROUND 16
+-------------
+EmbassyTunnelSpiceMerchantPlaza begins turn
+With hand: Copper,Copper,Embassy,Estate,Gold,
+  EmbassyTunnelSpiceMerchantPlaza Played Embassy.
+    EmbassyTunnelSpiceMerchantPlaza Drew Duchy into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
+    EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Duchy.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Copper.
+  EmbassyTunnelSpiceMerchantPlaza Played Gold.
+    +3 Coin = 3 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Gold.
+    +3 Coin = 6 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Gold.
+    +3 Coin = 9 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Silver.
+    +2 Coin = 11 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 12 all together.
+  EmbassyTunnelSpiceMerchantPlaza bought Province.
+  EmbassyTunnelSpiceMerchantPlaza Drew Plaza into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Province into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Duchy(1), Embassy(2), Estate(3), Gold(3), Plaza(1), Province(3), Silver(2), Tunnel(5), 
+
+Rebuild begins turn
+With hand: Copper,Copper,Duchy,Rebuild,Silver,
+  Rebuild Played Rebuild.
+    +1 Actions = 1 all together.
+    Rebuild named Province.
+      Rebuild Revealed Duchy.
+    Rebuild trashed Duchy.
+    Rebuild gained Province.
+  Rebuild Played Silver.
+    +2 Coin = 2 all together.
+  Rebuild Played Copper.
+    +1 Coin = 3 all together.
+  Rebuild Played Copper.
+    +1 Coin = 4 all together.
+  Rebuild bought Estate.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild reshuffled
+  Rebuild Drew Silver into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(3), Estate(1), Province(4), Rebuild(3), Silver(9), 
+
+ROUND 17
+-------------
+EmbassyTunnelSpiceMerchantPlaza begins turn
+With hand: Copper,Plaza,Province,Tunnel,Tunnel,
+  EmbassyTunnelSpiceMerchantPlaza Played Plaza.
+    +2 Actions = 2 all together.
+    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+    EmbassyTunnelSpiceMerchantPlaza Discarded Copper.
+    +1 coin tokens = 2 all together.
+  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+    +1 Coin = 1 all together.
+  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Province into hand.
+  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
+  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Duchy(1), Embassy(2), Estate(3), Gold(3), Plaza(1), Province(3), Silver(2), Tunnel(5), 
+
+Rebuild begins turn
+With hand: Rebuild,Silver,Silver,Silver,Silver,
+  Rebuild Played Rebuild.
+    +1 Actions = 1 all together.
+    Rebuild named Province.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Duchy.
+      Rebuild Discarded Silver.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+    Rebuild trashed Duchy.
+    Rebuild gained Province.
+  Rebuild Played Silver.
+    +2 Coin = 2 all together.
+  Rebuild Played Silver.
+    +2 Coin = 4 all together.
+  Rebuild Played Silver.
+    +2 Coin = 6 all together.
+  Rebuild Played Silver.
+    +2 Coin = 8 all together.
+  Rebuild bought Duchy.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(3), Estate(1), Province(5), Rebuild(3), Silver(9), 
+
+Game ended in 17 turns.
+Rebuild Won!
+EmbassyTunnelSpiceMerchantPlaza total score: 34
+  Copper(7), Duchy(1), Embassy(2), Estate(3), Gold(3), Plaza(1), Province(3), Silver(2), Tunnel(5), 
+Rebuild total score: 40
+  Copper(7), Duchy(3), Estate(1), Province(5), Rebuild(3), Silver(9), 
+Trash contains: Duchy(3), Estate(3), 

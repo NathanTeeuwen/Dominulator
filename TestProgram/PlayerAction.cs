@@ -177,7 +177,7 @@ namespace Program
         {
             Type result = this.discardOrder.GetPreferredCard(
                 gameState,
-                card => player.Hand.HasCard(card.GetType()));
+                card => player.Hand.HasCard(card.GetType()) && acceptableCard(card));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)
@@ -275,7 +275,36 @@ namespace Program
 
         public override int GetCoinAmountToSpendInBuyPhase(GameState gameState)
         {
-            return 0;
+            PlayerState currentPlayer = gameState.players.CurrentPlayer;
+            int numberOfBuys = currentPlayer.AvailableBuys;
+            int availableCoins = currentPlayer.AvailableCoins;
+            int coinTokensRemaining = currentPlayer.AvailableCoinTokens;
+
+            int result = 0;
+
+            while (coinTokensRemaining > 0 && numberOfBuys >= 1)
+            {
+                Type cardType = this.gainOrder.GetPreferredCard(gameState,
+                    card => card.CurrentCoinCost(currentPlayer) < availableCoins + coinTokensRemaining &&
+                            this.gainOrder.AmountWillingtoOverPayFor(card, gameState) >= coinTokensRemaining);
+
+                if (cardType == null)
+                    break;
+
+                availableCoins -= gameState.GetPile(cardType).ProtoTypeCard.CurrentCoinCost(currentPlayer);
+                if (availableCoins < 0)
+                {
+                    coinTokensRemaining += availableCoins;
+                    result += -availableCoins;
+
+                    System.Diagnostics.Debug.Assert(coinTokensRemaining >= 0);
+                    availableCoins = 0;
+                }
+
+                numberOfBuys -= 1;
+            }
+
+            return result;
         }        
     }    
 }

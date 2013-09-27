@@ -33,6 +33,7 @@ namespace Dominion
         // expose information for use by strategies
         public IPlayerAction Actions { get { return this.actions; } }
         public int AvailableCoins { get { return this.turnCounters.AvailableCoins; } }
+        public int AvailableCoinTokens { get { return this.turnCounters.AvailableCoinTokens; } }
         public int AvailableActions { get { return this.turnCounters.AvailableActions; } }
         public int AvailableBuys { get { return this.turnCounters.AvailableBuys; } }        
         public BagOfCards Hand { get { return this.hand; } }
@@ -510,10 +511,12 @@ namespace Dominion
         internal void RequestPlayerSpendCoinTokensBeforeBuyPhase(GameState gameState)
         {
             int coinToSpend = this.actions.GetCoinAmountToSpendInBuyPhase(gameState);
-            if (coinToSpend > this.AvailableCoins)
+            if (coinToSpend > this.AvailableCoinTokens || coinToSpend < 0)
                 throw new Exception("Can not spend that many coins");
-            this.AddCoins(coinToSpend);
             this.AddCoinTokens(-coinToSpend);
+            this.gameLog.PushScope();
+            this.AddCoins(coinToSpend);
+            this.gameLog.PopScope();
         }
 
         internal Card RequestPlayerChooseCardToRemoveFromHandForPlay(GameState gameState, CardPredicate acceptableCard, bool isTreasure, bool isAction, bool isOptional)
@@ -717,14 +720,14 @@ namespace Dominion
             }
         }
 
-        internal bool RequestPlayerDiscardCardFromHand(GameState gameState, CardPredicate acceptableCardsToTrash, bool isOptional)
+        internal bool RequestPlayerDiscardCardFromHand(GameState gameState, CardPredicate acceptableCardsToDiscard, bool isOptional)
         {
-            if (!this.hand.HasCard(acceptableCardsToTrash))
+            if (!this.hand.HasCard(acceptableCardsToDiscard))
             {
                 return false;
             }
 
-            Type cardTypeToDiscard = this.actions.GetCardFromHandToDiscard(gameState, acceptableCardsToTrash, this, isOptional);
+            Type cardTypeToDiscard = this.actions.GetCardFromHandToDiscard(gameState, acceptableCardsToDiscard, this, isOptional);
             if (cardTypeToDiscard == null)
             {
                 if (isOptional)
@@ -735,6 +738,11 @@ namespace Dominion
                 {
                     throw new Exception("Player must choose a card to discard");
                 }
+            }
+            else
+            {
+                if (!acceptableCardsToDiscard( gameState.GetPile(cardTypeToDiscard).ProtoTypeCard))
+                    throw new Exception("Card does not meet constraint: ");
             }
 
             this.MoveCardFromHandToDiscard(cardTypeToDiscard, gameState);            

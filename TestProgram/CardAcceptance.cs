@@ -155,17 +155,42 @@ namespace Program
     {
         internal Card card;
         internal GameStatePredicate match;
+        internal GameStateIntValue overpayAmount;
+
+        public static int OverPayZero(GameState gameState)
+        {
+            return 0;
+        }
+
+        public static int OverPayMaxAmount(GameState gameState)
+        {
+            return int.MaxValue;
+        }
+
+        public static bool AlwaysMatch(GameState gameState)
+        {
+            return true;
+        }
 
         public CardAcceptance(Card card)
         {
             this.card = card;
-            this.match = gameState => true;
+            this.match = AlwaysMatch;
+            this.overpayAmount = OverPayZero;
         }
 
         public CardAcceptance(Card card, GameStatePredicate match)
         {
             this.card = card;
             this.match = match;
+            this.overpayAmount = OverPayZero;
+        }
+
+        public CardAcceptance(Card card, GameStatePredicate match, GameStateIntValue overpayAmount)
+        {
+            this.card = card;
+            this.match = match;
+            this.overpayAmount = overpayAmount;
         }
 
         public static CardAcceptance For(Card card)
@@ -189,5 +214,11 @@ namespace Program
         {
             return new CardAcceptance(new T(), match);
         }
+
+        public static CardAcceptance For<T>(GameStatePredicate match, GameStateIntValue overpayAmount)
+            where T : Card, new()
+        {
+            return new CardAcceptance(new T(), match, overpayAmount);
+        }        
     }
 }

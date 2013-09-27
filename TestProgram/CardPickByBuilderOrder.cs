@@ -15,11 +15,16 @@ namespace Program
 
         public CardPickByBuildOrder(params Card[] buildOrer)
         {
-            this.buildOrder = buildOrer;
+            this.buildOrder = buildOrer.Where(card => card != null).ToArray();
+        }
+
+        public int AmountWillingtoOverPayFor(Card card, GameState gameState)
+        {
+            return 0;
         }
 
         public Type GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
-        {
+        {        
             var existingCards = new BagOfCards();
 
             foreach (Card card in gameState.players.CurrentPlayer.AllOwnedCards)
@@ -32,6 +37,9 @@ namespace Program
             for (int index = 0; index < this.buildOrder.Length; ++index)
             {
                 Card currentCard = this.buildOrder[index];
+
+                if (currentCard == null)
+                    continue;
 
                 if (existingCards.HasCard(currentCard))
                 {

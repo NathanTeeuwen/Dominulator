@@ -50,6 +50,14 @@ namespace Dominion
             }
         }
 
+        internal int AvailableCoinTokens
+        {
+            get
+            {
+                return this.availableCoinTokens;
+            }
+        }
+
         public void AddBuys(PlayerState playerState, int count)
         {
             if (count > 0)

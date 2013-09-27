@@ -57,6 +57,7 @@
     <Compile Include="Strategies\ButcherPlazaWatchtower.cs" />
     <Compile Include="Strategies\CaravanBridgeDukeCartographer.cs" />
     <Compile Include="Strategies\BigMoneySimple.cs" />
+    <Compile Include="Strategies\EmbassyTunnelSpiceMerchantPlaza.cs" />
     <Compile Include="Strategies\Harem.cs" />
     <Compile Include="Strategies\GovernorJunkDealer.cs" />
     <Compile Include="Strategies\TreasureMapDoctor.cs" />

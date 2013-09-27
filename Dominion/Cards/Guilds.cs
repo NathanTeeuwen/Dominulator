@@ -169,7 +169,7 @@ namespace Dominion.CardTypes
         : Card
     {
         public Plaza()
-            : base("Plaza", coinCost: 4, isAction: true, plusActions: 1, plusCards: 1)
+            : base("Plaza", coinCost: 4, isAction: true, plusActions: 2, plusCards: 1)
         {
         }
 

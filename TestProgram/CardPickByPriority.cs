@@ -18,17 +18,31 @@ namespace Program
             this.cardAcceptances = cardAcceptances;
         }
 
+        public int AmountWillingtoOverPayFor(Card card, GameState gameState)
+        {
+            int result = 0;
+            foreach (CardAcceptance acceptance in this.cardAcceptances)
+            {                
+                if (acceptance.card.Equals(card))
+                {
+                    result = Math.Max(result, acceptance.overpayAmount(gameState));                    
+                }
+            }
+
+            return result;
+        }
+
         public Type GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
         {
             foreach (CardAcceptance acceptance in this.cardAcceptances)
             {
                 if (cardPredicate(acceptance.card) &&
                     acceptance.match(gameState))
-                {
+                {                    
                     return acceptance.card.GetType();
                 }
             }
-
+            
             return null;
         }
 

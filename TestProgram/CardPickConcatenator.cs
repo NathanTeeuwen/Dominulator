@@ -42,5 +42,16 @@ namespace Program
                 }
             }
         }
+
+        public int AmountWillingtoOverPayFor(Card card, GameState gameState)
+        {
+            int result = 0;
+            foreach (ICardPicker picker in this.matchers)
+            {
+                result = Math.Max(result, picker.AmountWillingtoOverPayFor(card, gameState));                
+            }
+
+            return result;
+        }
     }
 }

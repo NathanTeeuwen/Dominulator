@@ -183,6 +183,18 @@ namespace Dominion
             this.textWriter.WriteLine("+{0} Buys = {1} all together.", buyAmount, playerState.AvailableBuys);
         }
 
+        public void PlayerGainedCoinToken(PlayerState playerState, int coinAmount)
+        {               
+            if (coinAmount > 0)
+            {
+                this.textWriter.WriteLine("+{0} coin tokens = {1} all together.", coinAmount, playerState.AvailableCoinTokens);
+            }
+            else if (coinAmount < 0)
+            {
+                this.textWriter.WriteLine("{0} spent {1} coin tokens.  {2} remaining", playerState.actions.PlayerName, -coinAmount, playerState.AvailableCoinTokens);
+            }
+        }
+
         private void WriteAllCards(PlayerState playerState)
         {
             WriteAllCards(playerState.AllOwnedCards);
@@ -228,12 +240,7 @@ namespace Dominion
         public void PlayerSetAsideCardFromHandForNextTurn(PlayerState playerState, Card card)
         {
             throw new NotImplementedException();
-        }
-
-        public void PlayerGainedCoinToken(PlayerState playerState, int coinAmount)
-        {
-            throw new NotImplementedException();
-        }
+        }    
 
         public void PlayerOverpaidForCard(Card boughtCard, int overPayAmount)
         {
