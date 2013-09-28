@@ -285,7 +285,7 @@ namespace Program
             while (coinTokensRemaining > 0 && numberOfBuys >= 1)
             {
                 Type cardType = this.gainOrder.GetPreferredCard(gameState,
-                    card => card.CurrentCoinCost(currentPlayer) < availableCoins + coinTokensRemaining &&
+                    card => card.CurrentCoinCost(currentPlayer) <= availableCoins + coinTokensRemaining &&
                             this.gainOrder.AmountWillingtoOverPayFor(card, gameState) >= coinTokensRemaining);
 
                 if (cardType == null)

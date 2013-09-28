@@ -14,25 +14,25 @@ namespace Program
             where T : Card, new()
         {
             // big money smithy player
-            public static PlayerAction Player(int playerNumber, int cardCount = 1)
+            public static PlayerAction Player(int playerNumber, int cardCount = 1, int afterSilverCount = 0)
             {
                 return new PlayerAction(
                             "BigMoneyWithCard<" + typeof(T).Name + ">",
                             playerNumber,
-                            purchaseOrder: PurchaseOrder(cardCount),                            
+                            purchaseOrder: PurchaseOrder(cardCount, afterSilverCount),                            
                             actionOrder: ActionOrder());
             }
 
-            public static ICardPicker PurchaseOrder(int cardCount)
+            public static ICardPicker PurchaseOrder(int cardCount, int afterSilverCount)
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 2),                           
                            CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<T>(gameState => CountAllOwned<T>(gameState) < cardCount),
+                           CardAcceptance.For<T>(gameState => CountAllOwned<T>(gameState) < cardCount && CountAllOwned<CardTypes.Silver>(gameState) >= afterSilverCount),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For<CardTypes.Silver>( CardAcceptance.AlwaysMatch, CardAcceptance.OverPayZero));
 
             }
 

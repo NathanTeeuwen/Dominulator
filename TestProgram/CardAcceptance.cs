@@ -176,14 +176,14 @@ namespace Program
         {
             this.card = card;
             this.match = AlwaysMatch;
-            this.overpayAmount = OverPayZero;
+            this.overpayAmount = OverPayMaxAmount;
         }
 
         public CardAcceptance(Card card, GameStatePredicate match)
         {
             this.card = card;
             this.match = match;
-            this.overpayAmount = OverPayZero;
+            this.overpayAmount = OverPayMaxAmount;
         }
 
         public CardAcceptance(Card card, GameStatePredicate match, GameStateIntValue overpayAmount)

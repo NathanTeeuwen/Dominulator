@@ -69,7 +69,7 @@ namespace Dominion.CardTypes
         : Card
     {
         public CandlestickMaker()
-            : base("CandlestickMaker", coinCost: 2, isAction: true)
+            : base("CandlestickMaker", coinCost: 2, isAction: true, plusActions:1, plusBuy:1)
         {
         }
 

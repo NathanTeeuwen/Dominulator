@@ -11,7 +11,13 @@ namespace Program
     class Program    
     {        
         static void Main()
-        {
+        {            
+            //ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.CandlestickMaker>.Player(1, afterSilverCount:1), Strategies.BigMoney.Player(2));
+            //ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Plaza>.Player(1), Strategies.BigMoney.Player(2));
+            //ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Plaza>.Player(1, afterSilverCount: 1), Strategies.BigMoney.Player(2));            
+            //ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Plaza>.Player(1, afterSilverCount:2), Strategies.BigMoney.Player(2));            
+
+            ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoney.Player(2));
             ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoney.Player(2));
             ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoneyWithCard<CardTypes.Embassy>.Player(2, cardCount:2));
             ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoneyWithCard<CardTypes.JackOfAllTrades>.Player(2));
@@ -20,7 +26,7 @@ namespace Program
             ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoneyWithCard<CardTypes.Caravan>.Player(2, cardCount: 10));
             ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoneyWithCard<CardTypes.Militia>.Player(2));
             ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2));
-            ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.Rebuild.Player(2));            
+            ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.Rebuild.Player(2)); 
         }
 
         static void FindAndCompareBestStrategy()
