@@ -42,11 +42,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CardAcceptance.cs" />
+    <Compile Include="StrategyOptimizer\CardAcceptanceDescription.cs" />
     <Compile Include="CardPickByBuilderOrder.cs" />
     <Compile Include="CardPickByPriority.cs" />
     <Compile Include="CardPickConcatenator.cs" />
-    <Compile Include="GeneticAlgorithm.cs" />
+    <Compile Include="CompareStrategies.cs" />
+    <Compile Include="Comparison.cs" />
+    <Compile Include="CountSource.cs" />
+    <Compile Include="StrategyOptimizer\GeneticAlgorithm.cs" />
     <Compile Include="ICardPicker.cs" />
+    <Compile Include="StrategyOptimizer\MatchDescription.cs" />
+    <Compile Include="StrategyOptimizer\MutatePickByPriorityDescription.cs" />
+    <Compile Include="StrategyOptimizer\PickByPriorityDescription.cs" />
     <Compile Include="PlayerAction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -57,6 +64,11 @@
     <Compile Include="Strategies\ButcherPlazaWatchtower.cs" />
     <Compile Include="Strategies\CaravanBridgeDukeCartographer.cs" />
     <Compile Include="Strategies\BigMoneySimple.cs" />
+    <Compile Include="Strategies\BitMoneyFishingVillage.cs" />
+    <Compile Include="Strategies\BigMoneySingleJack.cs" />
+    <Compile Include="Strategies\BigMoneyDoubleJack.cs" />
+    <Compile Include="Strategies\FishingVillageJackLookout.cs" />
+    <Compile Include="Strategies\FishingVillageJack.cs" />
     <Compile Include="Strategies\EmbassyTunnelSpiceMerchantPlaza.cs" />
     <Compile Include="Strategies\Harem.cs" />
     <Compile Include="Strategies\GovernorJunkDealer.cs" />
@@ -81,6 +93,7 @@
     <Compile Include="Strategies\Lookout.cs" />
     <Compile Include="Strategies\RatsUpgrade.cs" />
     <Compile Include="Strategies\Strategies.cs" />
+    <Compile Include="StrategyOptimizer\StrategyOptimizer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

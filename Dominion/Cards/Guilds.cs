@@ -47,20 +47,21 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.AddCoinTokens(2);
+            currentPlayer.AddCoinTokens(2);            
+
+            int coinCount = currentPlayer.actions.GetCoinAmountToUseInButcher(gameState);
+            if (coinCount > currentPlayer.AvailableCoinTokens)
+                throw new Exception("Tried to use too many coins");
+
             Card trashedCard = currentPlayer.RequestPlayerTrashCardFromHand(gameState, card => true, isOptional: true);
             if (trashedCard == null)
                 return;
 
-            int coinCount = currentPlayer.actions.GetCoinAmountToUseInButcher(gameState);
-            if (coinCount > currentPlayer.AvailableCoins)
-                throw new Exception("Tried to use too many coins");
-            
             currentPlayer.AddCoinTokens(-coinCount);
 
             currentPlayer.RequestPlayerGainCardFromSupply(
                 gameState,
-                card => card.CurrentCoinCost(currentPlayer) == trashedCard.CurrentCoinCost(currentPlayer) + coinCount,
+                card => card.CurrentCoinCost(currentPlayer) <= trashedCard.CurrentCoinCost(currentPlayer) + coinCount,
                 "Must gain a card costing exactly equal to the cost of the card trashed plus any coin spent");
         }
     }

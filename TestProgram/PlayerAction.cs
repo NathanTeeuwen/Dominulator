@@ -273,38 +273,114 @@ namespace Program
             }
         }
 
+        public override int GetCoinAmountToUseInButcher(GameState gameState)
+        {
+            Type cardToTrash = Strategies.WhichCardFromInHand(this.trashOrder, gameState);
+            if (cardToTrash == null)
+                return 0;
+
+            int cardCost = CostOfCard(cardToTrash, gameState);
+            return GetCoinAmountToSpend(gameState, numberOfGains: 1, minCoins: cardCost, maxCoins: cardCost);
+        }
+
         public override int GetCoinAmountToSpendInBuyPhase(GameState gameState)
         {
             PlayerState currentPlayer = gameState.players.CurrentPlayer;
             int numberOfBuys = currentPlayer.AvailableBuys;
             int availableCoins = currentPlayer.AvailableCoins;
+
+            return GetCoinAmountToSpend(gameState, numberOfBuys, minCoins:0, maxCoins:availableCoins);
+        }
+
+        public int GetCoinAmountToSpend(GameState gameState, int numberOfGains, int minCoins, int maxCoins)
+        {
+            PlayerState currentPlayer = gameState.players.CurrentPlayer;            
+            int availableCoins = maxCoins;
             int coinTokensRemaining = currentPlayer.AvailableCoinTokens;
 
             int result = 0;
 
-            while (coinTokensRemaining > 0 && numberOfBuys >= 1)
+            CardPredicate shouldGainCard = delegate(Card card)
             {
-                Type cardType = this.gainOrder.GetPreferredCard(gameState,
-                    card => card.CurrentCoinCost(currentPlayer) <= availableCoins + coinTokensRemaining &&
-                            this.gainOrder.AmountWillingtoOverPayFor(card, gameState) >= coinTokensRemaining);
+                int currentCardCost = card.CurrentCoinCost(currentPlayer);
+                
+                return currentCardCost >= minCoins &&
+                       currentCardCost <= availableCoins + coinTokensRemaining &&
+                       this.gainOrder.AmountWillingtoOverPayFor(card, gameState) >= currentCardCost - availableCoins;
+            };
 
+            while (coinTokensRemaining > 0 && numberOfGains >= 1)
+            {
+                Type cardType = this.gainOrder.GetPreferredCard(gameState, shouldGainCard);                    
                 if (cardType == null)
                     break;
 
-                availableCoins -= gameState.GetPile(cardType).ProtoTypeCard.CurrentCoinCost(currentPlayer);
+                availableCoins -= CostOfCard(cardType, gameState); 
                 if (availableCoins < 0)
                 {
-                    coinTokensRemaining += availableCoins;
-                    result += -availableCoins;
-
-                    System.Diagnostics.Debug.Assert(coinTokensRemaining >= 0);
+                    int coinSpent = -availableCoins;
                     availableCoins = 0;
+
+                    coinTokensRemaining -= coinSpent;
+                    result += coinSpent;                    
+                    System.Diagnostics.Debug.Assert(coinTokensRemaining >= 0);                    
                 }
 
-                numberOfBuys -= 1;
+                numberOfGains -= 1;
             }
 
             return result;
-        }        
+        }    
+    
+        private static int CostOfCard(Type cardType, GameState gameState)
+        {
+            return gameState.GetPile(cardType).ProtoTypeCard.CurrentCoinCost(gameState.players.CurrentPlayer);
+        }
+
+        public static Card[] GetKingdomCards(PlayerAction playerAction1, PlayerAction playerAction2)
+        {
+            var cards = new HashSet<Card>(new CompareCardByType());
+
+            AddCards(cards, playerAction1.actionOrder);
+            AddCards(cards, playerAction1.purchaseOrder);
+            AddCards(cards, playerAction1.gainOrder);
+            AddCards(cards, playerAction2.actionOrder);
+            AddCards(cards, playerAction2.purchaseOrder);
+            AddCards(cards, playerAction2.gainOrder);
+
+            var cardsToRemove = new Card[] { 
+                new CardTypes.Platinum(),
+                new CardTypes.Gold(),
+                new CardTypes.Silver(),
+                new CardTypes.Copper(),
+                new CardTypes.Colony(),
+                new CardTypes.Province(),
+                new CardTypes.Duchy(),
+                new CardTypes.Estate(),
+                new CardTypes.Curse(),
+                new CardTypes.Potion(),
+                new CardTypes.RuinedLibrary(),
+                new CardTypes.RuinedVillage(),
+                new CardTypes.RuinedMarket(),
+                new CardTypes.Survivors(),
+                new CardTypes.Curse(),
+                new CardTypes.Spoils(),
+            };
+
+            foreach (Card card in cardsToRemove)
+            {
+                cards.Remove(card);
+            }
+
+            return cards.ToArray();
+        }
+
+        private static void AddCards(HashSet<Card> cardSet, ICardPicker matchingCards)
+        {
+            foreach (Card card in matchingCards.GetNeededCards())
+            {
+                cardSet.Add(card);
+            }
+        }
     }    
 }

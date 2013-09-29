@@ -1,848 +1,839 @@
-EmbassyTunnelSpiceMerchantPlaza gained Copper.
-EmbassyTunnelSpiceMerchantPlaza gained Copper.
-EmbassyTunnelSpiceMerchantPlaza gained Copper.
-EmbassyTunnelSpiceMerchantPlaza gained Copper.
-EmbassyTunnelSpiceMerchantPlaza gained Copper.
-EmbassyTunnelSpiceMerchantPlaza gained Copper.
-EmbassyTunnelSpiceMerchantPlaza gained Copper.
-EmbassyTunnelSpiceMerchantPlaza gained Estate.
-EmbassyTunnelSpiceMerchantPlaza gained Estate.
-EmbassyTunnelSpiceMerchantPlaza gained Estate.
-Rebuild gained Copper.
-Rebuild gained Copper.
-Rebuild gained Copper.
-Rebuild gained Copper.
-Rebuild gained Copper.
-Rebuild gained Copper.
-Rebuild gained Copper.
-Rebuild gained Estate.
-Rebuild gained Estate.
-Rebuild gained Estate.
-EmbassyTunnelSpiceMerchantPlaza reshuffled
-EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-Rebuild reshuffled
-Rebuild Drew Estate into hand.
-Rebuild Drew Copper into hand.
-Rebuild Drew Copper into hand.
-Rebuild Drew Copper into hand.
-Rebuild Drew Estate into hand.
+ButcherPlazaWatchtower gained Copper.
+ButcherPlazaWatchtower gained Copper.
+ButcherPlazaWatchtower gained Copper.
+ButcherPlazaWatchtower gained Copper.
+ButcherPlazaWatchtower gained Copper.
+ButcherPlazaWatchtower gained Copper.
+ButcherPlazaWatchtower gained Copper.
+ButcherPlazaWatchtower gained Estate.
+ButcherPlazaWatchtower gained Estate.
+ButcherPlazaWatchtower gained Estate.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoney gained Estate.
+ButcherPlazaWatchtower reshuffled
+ButcherPlazaWatchtower Drew Copper into hand.
+ButcherPlazaWatchtower Drew Copper into hand.
+ButcherPlazaWatchtower Drew Copper into hand.
+ButcherPlazaWatchtower Drew Estate into hand.
+ButcherPlazaWatchtower Drew Copper into hand.
+BigMoney reshuffled
+BigMoney Drew Estate into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Estate into hand.
 ROUND 1
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
+ButcherPlazaWatchtower begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 1 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 2 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 3 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 4 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Silver.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  ButcherPlazaWatchtower bought Silver.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Estate into hand.
+  ButcherPlazaWatchtower Drew Estate into hand.
+  ButcherPlazaWatchtower ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
-Rebuild begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  Rebuild Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  Rebuild Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  Rebuild Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  Rebuild bought Silver.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Estate into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
+ButcherPlazaWatchtower begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 1 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 2 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 3 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Silver.
-  EmbassyTunnelSpiceMerchantPlaza reshuffled
-  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  ButcherPlazaWatchtower bought Watchtower.
+  ButcherPlazaWatchtower reshuffled
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Silver into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower ends turn with deck: Copper(7), Estate(3), Silver(1), Watchtower(1), 
 
-Rebuild begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  Rebuild Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  Rebuild Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  Rebuild Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  Rebuild Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  Rebuild bought Silver.
-  Rebuild reshuffled
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Estate into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoney bought Silver.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  EmbassyTunnelSpiceMerchantPlaza Played Silver.
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Copper,Copper,Silver,Watchtower,
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Estate into hand.
+  ButcherPlazaWatchtower Played Silver.
     +2 Coin = 2 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Silver.
-    +2 Coin = 4 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 5 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 6 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 7 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Embassy.
-    Rebuild gained Silver.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(1), Estate(3), Silver(2), 
-
-Rebuild begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  Rebuild Played Copper.
-    +1 Coin = 1 all together.
-  Rebuild Played Copper.
-    +1 Coin = 2 all together.
-  Rebuild Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 3 all together.
-  Rebuild Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 4 all together.
-  Rebuild bought Silver.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Estate into hand.
-  Rebuild Drew Estate into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild ends turn with deck: Copper(7), Estate(3), Silver(4), 
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 5 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 6 all together.
+  ButcherPlazaWatchtower bought Butcher.
+  ButcherPlazaWatchtower Drew Estate into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Estate into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(7), Estate(3), Silver(1), Watchtower(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(3), 
 
 ROUND 4
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Copper,Copper,Estate,Estate,Estate,
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 1 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 2 all together.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza reshuffled
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(1), Estate(3), Silver(2), 
-
-Rebuild begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 3 all together.
-  Rebuild Played Copper.
+  ButcherPlazaWatchtower bought Watchtower.
+  ButcherPlazaWatchtower reshuffled
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Butcher into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(7), Estate(3), Silver(1), Watchtower(2), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  Rebuild bought Silver.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild reshuffled
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild ends turn with deck: Copper(7), Estate(3), Silver(5), 
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(4), 
 
 ROUND 5
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
-  EmbassyTunnelSpiceMerchantPlaza Played Silver.
-    +2 Coin = 2 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+ButcherPlazaWatchtower begins turn
+With hand: Butcher,Copper,Copper,Copper,Copper,
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 2 all together.
+    ButcherPlazaWatchtower trashed Copper.
+    ButcherPlazaWatchtower gained Copper.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 1 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 2 all together.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 3 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 4 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 5 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 6 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Tunnel.
-  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(1), Estate(3), Silver(2), Tunnel(1), 
+  ButcherPlazaWatchtower spent 2 coin tokens.  0 remaining
+    +2 Coin = 5 all together.
+  ButcherPlazaWatchtower bought Butcher.
+  ButcherPlazaWatchtower Drew Silver into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Estate into hand.
+  ButcherPlazaWatchtower Drew Estate into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(7), Estate(3), Silver(1), Watchtower(2), 
 
-Rebuild begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  Rebuild Played Silver.
+BigMoney begins turn
+With hand: Copper,Copper,Silver,Silver,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  Rebuild Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 4 all together.
-  Rebuild Played Copper.
-    +1 Coin = 5 all together.
-  Rebuild Played Copper.
-    +1 Coin = 6 all together.
-  Rebuild Played Copper.
+  BigMoney Played Silver.
+    +2 Coin = 6 all together.
+  BigMoney Played Copper.
     +1 Coin = 7 all together.
-  Rebuild bought Rebuild.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Estate into hand.
-  Rebuild Drew Estate into hand.
-  Rebuild Drew Estate into hand.
-  Rebuild ends turn with deck: Copper(7), Estate(3), Rebuild(1), Silver(5), 
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
 
 ROUND 6
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Copper,Embassy,Estate,Estate,Silver,
-  EmbassyTunnelSpiceMerchantPlaza Played Embassy.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza reshuffled
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
-  EmbassyTunnelSpiceMerchantPlaza Played Silver.
+ButcherPlazaWatchtower begins turn
+With hand: Estate,Estate,Silver,Watchtower,Watchtower,
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Played Silver.
     +2 Coin = 2 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 3 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 4 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 5 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 6 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 7 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Embassy.
-    Rebuild gained Silver.
-  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza reshuffled
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Silver(2), Tunnel(1), 
+  ButcherPlazaWatchtower bought Plaza.
+    ButcherPlazaWatchtower Revealed Watchtower.
+    ... and placed card on top of deck
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Estate into hand.
+  ButcherPlazaWatchtower reshuffled
+  ButcherPlazaWatchtower Drew Estate into hand.
+  ButcherPlazaWatchtower Drew Silver into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(7), Estate(3), Plaza(1), Silver(1), Watchtower(2), 
 
-Rebuild begins turn
-With hand: Copper,Copper,Estate,Estate,Estate,
-  Rebuild Played Copper.
-    +1 Coin = 1 all together.
-  Rebuild Played Copper.
-    +1 Coin = 2 all together.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(7), Estate(3), Rebuild(1), Silver(6), 
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(5), 
 
 ROUND 7
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Copper,Copper,Copper,Silver,Tunnel,
-  EmbassyTunnelSpiceMerchantPlaza Played Silver.
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Estate,Estate,Plaza,Silver,
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 1 all together.
+  ButcherPlazaWatchtower Played Silver.
     +2 Coin = 2 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 3 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower spent 1 coin tokens.  0 remaining
     +1 Coin = 4 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 5 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Plaza.
-  EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Plaza(1), Silver(2), Tunnel(1), 
+  ButcherPlazaWatchtower bought Plaza.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Butcher into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(7), Estate(3), Plaza(2), Silver(1), Watchtower(2), 
 
-Rebuild begins turn
-With hand: Copper,Copper,Silver,Silver,Silver,
-  Rebuild Played Silver.
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  Rebuild Played Silver.
-    +2 Coin = 4 all together.
-  Rebuild Played Silver.
-    +2 Coin = 6 all together.
-  Rebuild Played Copper.
-    +1 Coin = 7 all together.
-  Rebuild Played Copper.
-    +1 Coin = 8 all together.
-  Rebuild bought Province.
-  Rebuild reshuffled
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(7), Estate(3), Province(1), Rebuild(1), Silver(6), 
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(6), 
 
 ROUND 8
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Copper,Embassy,Estate,Estate,Silver,
-  EmbassyTunnelSpiceMerchantPlaza Played Embassy.
-    EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
-  EmbassyTunnelSpiceMerchantPlaza Played Silver.
-    +2 Coin = 2 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 3 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 4 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 5 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 6 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Tunnel.
-  EmbassyTunnelSpiceMerchantPlaza reshuffled
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Plaza(1), Silver(2), Tunnel(2), 
+ButcherPlazaWatchtower begins turn
+With hand: Butcher,Copper,Copper,Watchtower,Watchtower,
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 2 all together.
+    ButcherPlazaWatchtower trashed Copper.
+    ButcherPlazaWatchtower gained Copper.
+      ButcherPlazaWatchtower Revealed Watchtower.
+      ... and placed card on top of deck
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 1 all together.
+  ButcherPlazaWatchtower spent 2 coin tokens.  0 remaining
+    +2 Coin = 3 all together.
+  ButcherPlazaWatchtower bought Watchtower.
+    ButcherPlazaWatchtower Revealed Watchtower.
+    ... and placed card on top of deck
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(7), Estate(3), Plaza(2), Silver(1), Watchtower(3), 
 
-Rebuild begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
-  Rebuild Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  Rebuild Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 4 all together.
-  Rebuild Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  Rebuild Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 6 all together.
-  Rebuild Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 7 all together.
-  Rebuild bought Rebuild.
-  Rebuild Drew Estate into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild ends turn with deck: Copper(7), Estate(3), Province(1), Rebuild(2), Silver(6), 
+  BigMoney bought Gold.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(6), 
 
 ROUND 9
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Copper,Copper,Copper,Embassy,Estate,
-  EmbassyTunnelSpiceMerchantPlaza Played Embassy.
-    EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Tunnel.
-    EmbassyTunnelSpiceMerchantPlaza gained Gold.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
-  EmbassyTunnelSpiceMerchantPlaza Played Silver.
-    +2 Coin = 2 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Copper,Copper,Copper,Watchtower,
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Estate into hand.
+    ButcherPlazaWatchtower Drew Butcher into hand.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 1 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 2 all together.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 3 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 4 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 5 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 6 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Tunnel.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Gold(1), Plaza(1), Silver(2), Tunnel(3), 
+  ButcherPlazaWatchtower bought Plaza.
+  ButcherPlazaWatchtower reshuffled
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Silver into hand.
+  ButcherPlazaWatchtower Drew Estate into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(7), Estate(3), Plaza(3), Silver(1), Watchtower(3), 
 
-Rebuild begins turn
-With hand: Copper,Estate,Silver,Silver,Silver,
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Silver.
-    +2 Coin = 4 all together.
-  Rebuild Played Silver.
-    +2 Coin = 6 all together.
-  Rebuild Played Copper.
-    +1 Coin = 7 all together.
-  Rebuild bought Rebuild.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Estate into hand.
-  Rebuild Drew Rebuild into hand.
-  Rebuild Drew Estate into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(7), Estate(3), Province(1), Rebuild(3), Silver(6), 
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(6), 
 
 ROUND 10
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  EmbassyTunnelSpiceMerchantPlaza Played Silver.
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Estate,Plaza,Silver,Watchtower,
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 1 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Butcher into hand.
+    ButcherPlazaWatchtower Drew Estate into hand.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 3 all together.
+    ButcherPlazaWatchtower trashed Estate.
+    ButcherPlazaWatchtower spent 2 coin tokens.  1 remaining
+    ButcherPlazaWatchtower gained Plaza.
+  ButcherPlazaWatchtower Played Silver.
     +2 Coin = 2 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 3 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 4 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 5 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Tunnel.
-  EmbassyTunnelSpiceMerchantPlaza Drew Plaza into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-  EmbassyTunnelSpiceMerchantPlaza reshuffled
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Gold(1), Plaza(1), Silver(2), Tunnel(4), 
+  ButcherPlazaWatchtower bought Plaza.
+  ButcherPlazaWatchtower Drew Butcher into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(7), Estate(2), Plaza(5), Silver(1), Watchtower(3), 
 
-Rebuild begins turn
-With hand: Copper,Estate,Estate,Rebuild,Silver,
-  Rebuild Played Rebuild.
-    +1 Actions = 1 all together.
-    Rebuild named Province.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Province.
-      Rebuild reshuffled
-      Rebuild Revealed Copper.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Rebuild.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Rebuild.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Estate.
-      Rebuild Discarded Copper.
-      Rebuild Discarded Copper.
-      Rebuild Discarded Copper.
-      Rebuild Discarded Silver.
-      Rebuild Discarded Silver.
-      Rebuild Discarded Silver.
-      Rebuild Discarded Copper.
-      Rebuild Discarded Rebuild.
-      Rebuild Discarded Copper.
-      Rebuild Discarded Silver.
-      Rebuild Discarded Rebuild.
-      Rebuild Discarded Silver.
-      Rebuild Discarded Copper.
-      Rebuild Discarded Province.
-    Rebuild trashed Estate.
-    Rebuild gained Duchy.
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Copper.
-    +1 Coin = 3 all together.
-  Rebuild bought Silver.
-  Rebuild reshuffled
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Rebuild into hand.
-  Rebuild Drew Duchy into hand.
-  Rebuild Drew Province into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(7), Duchy(1), Estate(2), Province(1), Rebuild(3), Silver(7), 
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(6), 
 
 ROUND 11
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Copper,Copper,Plaza,Tunnel,Tunnel,
-  EmbassyTunnelSpiceMerchantPlaza Played Plaza.
+ButcherPlazaWatchtower begins turn
+With hand: Butcher,Plaza,Plaza,Watchtower,Watchtower,
+  ButcherPlazaWatchtower Played Plaza.
     +2 Actions = 2 all together.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Copper.
-    +1 coin tokens = 1 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 1 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 2 all together.
-  EmbassyTunnelSpiceMerchantPlaza spent 1 coin tokens.  0 remaining
-    +1 Coin = 3 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Tunnel.
-  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Gold(1), Plaza(1), Silver(2), Tunnel(5), 
-
-Rebuild begins turn
-With hand: Copper,Duchy,Province,Rebuild,Silver,
-  Rebuild Played Rebuild.
-    +1 Actions = 1 all together.
-    Rebuild named Duchy.
-      Rebuild Revealed Rebuild.
-      Rebuild Revealed Estate.
-      Rebuild Discarded Rebuild.
-    Rebuild trashed Estate.
-    Rebuild gained Duchy.
-  Rebuild Played Silver.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 2 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Estate into hand.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 4 all together.
+    ButcherPlazaWatchtower trashed Estate.
+    ButcherPlazaWatchtower spent 2 coin tokens.  2 remaining
+    ButcherPlazaWatchtower gained Plaza.
+      ButcherPlazaWatchtower Revealed Watchtower.
+      ... and placed card on top of deck
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower reshuffled
+    ButcherPlazaWatchtower Drew Silver into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Butcher into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 3 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 4 all together.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 6 all together.
+    ButcherPlazaWatchtower trashed Copper.
+    ButcherPlazaWatchtower spent 4 coin tokens.  2 remaining
+    ButcherPlazaWatchtower gained Plaza.
+  ButcherPlazaWatchtower Played Silver.
     +2 Coin = 2 all together.
-  Rebuild Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 3 all together.
-  Rebuild bought Silver.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild ends turn with deck: Copper(7), Duchy(2), Estate(1), Province(1), Rebuild(3), Silver(8), 
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 4 all together.
+  ButcherPlazaWatchtower bought Plaza.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(6), Estate(1), Plaza(8), Silver(1), Watchtower(3), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(6), 
 
 ROUND 12
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Copper,Copper,Embassy,Estate,Tunnel,
-  EmbassyTunnelSpiceMerchantPlaza Played Embassy.
-    EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Tunnel.
-    EmbassyTunnelSpiceMerchantPlaza gained Gold.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Tunnel.
-    EmbassyTunnelSpiceMerchantPlaza gained Gold.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
-  EmbassyTunnelSpiceMerchantPlaza Played Silver.
-    +2 Coin = 2 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Silver.
-    +2 Coin = 4 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 5 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 6 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 7 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 8 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Province.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza reshuffled
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Gold(3), Plaza(1), Province(1), Silver(2), Tunnel(5), 
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Copper,Plaza,Plaza,Watchtower,
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Estate into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 3 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower reshuffled
+    ButcherPlazaWatchtower Drew Silver into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 4 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Butcher into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 5 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 4 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 6 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 5 all together.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Discarded Silver.
+    +1 coin tokens = 7 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 6 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 8 all together.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 10 all together.
+    ButcherPlazaWatchtower trashed Estate.
+    ButcherPlazaWatchtower spent 6 coin tokens.  4 remaining
+    ButcherPlazaWatchtower gained Province.
+  ButcherPlazaWatchtower spent 4 coin tokens.  0 remaining
+    +4 Coin = 4 all together.
+  ButcherPlazaWatchtower bought Plaza.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Butcher into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(6), Plaza(9), Province(1), Silver(1), Watchtower(3), 
 
-Rebuild begins turn
-With hand: Copper,Copper,Silver,Silver,Silver,
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Silver.
-    +2 Coin = 4 all together.
-  Rebuild Played Silver.
-    +2 Coin = 6 all together.
-  Rebuild Played Copper.
-    +1 Coin = 7 all together.
-  Rebuild Played Copper.
-    +1 Coin = 8 all together.
-  Rebuild bought Province.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Rebuild into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(7), Duchy(2), Estate(1), Province(2), Rebuild(3), Silver(8), 
+BigMoney begins turn
+With hand: Copper,Estate,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(6), 
 
 ROUND 13
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Embassy,Estate,Estate,Estate,Gold,
-  EmbassyTunnelSpiceMerchantPlaza Played Embassy.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Tunnel.
-    EmbassyTunnelSpiceMerchantPlaza gained Gold.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Tunnel.
-    EmbassyTunnelSpiceMerchantPlaza gained Gold.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
-  EmbassyTunnelSpiceMerchantPlaza Played Gold.
+ButcherPlazaWatchtower begins turn
+With hand: Butcher,Copper,Plaza,Watchtower,Watchtower,
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 1 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower reshuffled
+    ButcherPlazaWatchtower Drew Province into hand.
+    ButcherPlazaWatchtower Drew Butcher into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 2 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Silver into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 3 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 4 all together.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 6 all together.
+    ButcherPlazaWatchtower trashed Silver.
+    ButcherPlazaWatchtower spent 5 coin tokens.  1 remaining
+    ButcherPlazaWatchtower gained Province.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 3 all together.
+    ButcherPlazaWatchtower trashed Province.
+    ButcherPlazaWatchtower gained Province.
+  ButcherPlazaWatchtower spent 3 coin tokens.  0 remaining
     +3 Coin = 3 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Gold.
-    +3 Coin = 6 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 7 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 8 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Province.
-  EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Plaza into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Gold(5), Plaza(1), Province(2), Silver(2), Tunnel(5), 
+  ButcherPlazaWatchtower bought Silver.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(6), Plaza(9), Province(2), Silver(1), Watchtower(3), 
 
-Rebuild begins turn
-With hand: Copper,Copper,Copper,Rebuild,Silver,
-  Rebuild Played Rebuild.
-    +1 Actions = 1 all together.
-    Rebuild named Province.
-      Rebuild Revealed Estate.
-    Rebuild trashed Estate.
-    Rebuild gained Duchy.
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Copper.
-    +1 Coin = 3 all together.
-  Rebuild Played Copper.
-    +1 Coin = 4 all together.
-  Rebuild Played Copper.
-    +1 Coin = 5 all together.
-  Rebuild bought Duchy.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild reshuffled
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Duchy into hand.
-  Rebuild ends turn with deck: Copper(7), Duchy(4), Province(2), Rebuild(3), Silver(8), 
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney Played Copper.
+    +1 Coin = 10 all together.
+  BigMoney bought Province.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(2), Silver(6), 
 
 ROUND 14
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Copper,Embassy,Plaza,Tunnel,Tunnel,
-  EmbassyTunnelSpiceMerchantPlaza Played Plaza.
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Plaza,Plaza,Plaza,Watchtower,
+  ButcherPlazaWatchtower Played Plaza.
     +2 Actions = 2 all together.
-    EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Copper.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
     +1 coin tokens = 1 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Embassy.
-    EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Tunnel.
-    EmbassyTunnelSpiceMerchantPlaza gained Gold.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Tunnel.
-    EmbassyTunnelSpiceMerchantPlaza gained Gold.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Copper.
-  EmbassyTunnelSpiceMerchantPlaza Played Gold.
-    +3 Coin = 3 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Silver.
-    +2 Coin = 5 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Silver.
-    +2 Coin = 7 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 8 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 9 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Province.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Province into hand.
-  EmbassyTunnelSpiceMerchantPlaza reshuffled
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Gold(7), Plaza(1), Province(3), Silver(2), Tunnel(5), 
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 2 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 4 all together.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 3 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 5 all together.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 6 all together.
+    ButcherPlazaWatchtower reshuffled
+    ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 7 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 4 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Silver into hand.
+    ButcherPlazaWatchtower Drew Watchtower into hand.
+    ButcherPlazaWatchtower Drew Butcher into hand.
+    ButcherPlazaWatchtower Drew Province into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 7 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 5 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 8 all together.
+    ButcherPlazaWatchtower Drew Butcher into hand.
+    ButcherPlazaWatchtower Discarded Silver.
+    +1 coin tokens = 6 all together.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 8 all together.
+    ButcherPlazaWatchtower trashed Butcher.
+    ButcherPlazaWatchtower spent 3 coin tokens.  5 remaining
+    ButcherPlazaWatchtower gained Province.
+      ButcherPlazaWatchtower Revealed Watchtower.
+      ... and placed card on top of deck
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Province into hand.
+    ButcherPlazaWatchtower Drew Province into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 7 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 6 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 1 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 2 all together.
+  ButcherPlazaWatchtower spent 6 coin tokens.  0 remaining
+    +6 Coin = 8 all together.
+  ButcherPlazaWatchtower bought Province.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower reshuffled
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Butcher into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(6), Plaza(9), Province(4), Silver(1), Watchtower(3), 
 
-Rebuild begins turn
-With hand: Copper,Duchy,Silver,Silver,Silver,
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Silver.
-    +2 Coin = 4 all together.
-  Rebuild Played Silver.
-    +2 Coin = 6 all together.
-  Rebuild Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
     +1 Coin = 7 all together.
-  Rebuild bought Duchy.
-  Rebuild Drew Rebuild into hand.
-  Rebuild Drew Duchy into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Province into hand.
-  Rebuild ends turn with deck: Copper(7), Duchy(5), Province(2), Rebuild(3), Silver(8), 
+  BigMoney bought Duchy.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(5), Province(2), Silver(6), 
 
 ROUND 15
 -------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Copper,Estate,Estate,Province,Tunnel,
-  EmbassyTunnelSpiceMerchantPlaza Played Copper.
-    +1 Coin = 1 all together.
-  EmbassyTunnelSpiceMerchantPlaza Drew Province into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Plaza into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Embassy(2), Estate(3), Gold(7), Plaza(1), Province(3), Silver(2), Tunnel(5), 
-
-Rebuild begins turn
-With hand: Copper,Duchy,Province,Rebuild,Silver,
-  Rebuild Played Rebuild.
-    +1 Actions = 1 all together.
-    Rebuild named Province.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Copper.
-      Rebuild Revealed Duchy.
-      Rebuild Discarded Copper.
-      Rebuild Discarded Copper.
-      Rebuild Discarded Copper.
-      Rebuild Discarded Silver.
-    Rebuild trashed Duchy.
-    Rebuild gained Province.
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Copper.
-    +1 Coin = 3 all together.
-  Rebuild bought Estate.
-  Rebuild Drew Province into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Duchy into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild ends turn with deck: Copper(7), Duchy(4), Estate(1), Province(3), Rebuild(3), Silver(8), 
-
-ROUND 16
--------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Copper,Gold,Plaza,Province,Tunnel,
-  EmbassyTunnelSpiceMerchantPlaza Played Plaza.
+ButcherPlazaWatchtower begins turn
+With hand: Butcher,Copper,Plaza,Watchtower,Watchtower,
+  ButcherPlazaWatchtower Played Plaza.
     +2 Actions = 2 all together.
-    EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Copper.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 1 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Province into hand.
+    ButcherPlazaWatchtower Discarded Copper.
     +1 coin tokens = 2 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Gold.
-    +3 Coin = 3 all together.
-  EmbassyTunnelSpiceMerchantPlaza spent 2 coin tokens.  0 remaining
-    +2 Coin = 5 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Duchy.
-  EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Embassy into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Estate into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Duchy(1), Embassy(2), Estate(3), Gold(7), Plaza(1), Province(3), Silver(2), Tunnel(5), 
-
-Rebuild begins turn
-With hand: Copper,Copper,Duchy,Province,Silver,
-  Rebuild Played Silver.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 4 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 3 all together.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 5 all together.
+    ButcherPlazaWatchtower trashed Watchtower.
+    ButcherPlazaWatchtower spent 5 coin tokens.  0 remaining
+    ButcherPlazaWatchtower gained Province.
+      ButcherPlazaWatchtower Revealed Watchtower.
+      ... and placed card on top of deck
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Province into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Province into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 1 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 4 all together.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 2 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 5 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 3 all together.
+  ButcherPlazaWatchtower spent 2 coin tokens.  1 remaining
     +2 Coin = 2 all together.
-  Rebuild Played Copper.
-    +1 Coin = 3 all together.
-  Rebuild Played Copper.
-    +1 Coin = 4 all together.
-  Rebuild bought Estate.
-  Rebuild Drew Rebuild into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Rebuild into hand.
-  Rebuild reshuffled
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(7), Duchy(4), Estate(2), Province(3), Rebuild(3), Silver(8), 
+  ButcherPlazaWatchtower bought Estate.
+  ButcherPlazaWatchtower Drew Silver into hand.
+  ButcherPlazaWatchtower Drew Province into hand.
+  ButcherPlazaWatchtower Drew Province into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(6), Estate(1), Plaza(9), Province(5), Silver(1), Watchtower(2), 
 
-ROUND 17
--------------
-EmbassyTunnelSpiceMerchantPlaza begins turn
-With hand: Copper,Embassy,Embassy,Estate,Gold,
-  EmbassyTunnelSpiceMerchantPlaza Played Embassy.
-    EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
-    EmbassyTunnelSpiceMerchantPlaza Drew Silver into hand.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Estate.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Copper.
-    EmbassyTunnelSpiceMerchantPlaza Discarded Copper.
-  EmbassyTunnelSpiceMerchantPlaza Played Gold.
-    +3 Coin = 3 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Gold.
-    +3 Coin = 6 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Gold.
-    +3 Coin = 9 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Gold.
-    +3 Coin = 12 all together.
-  EmbassyTunnelSpiceMerchantPlaza Played Silver.
-    +2 Coin = 14 all together.
-  EmbassyTunnelSpiceMerchantPlaza bought Province.
-  EmbassyTunnelSpiceMerchantPlaza Drew Copper into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Province into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Tunnel into hand.
-  EmbassyTunnelSpiceMerchantPlaza Drew Gold into hand.
-  EmbassyTunnelSpiceMerchantPlaza ends turn with deck: Copper(7), Duchy(1), Embassy(2), Estate(3), Gold(7), Plaza(1), Province(4), Silver(2), Tunnel(5), 
-
-Rebuild begins turn
-With hand: Copper,Rebuild,Rebuild,Silver,Silver,
-  Rebuild Played Rebuild.
-    +1 Actions = 1 all together.
-    Rebuild named Province.
-      Rebuild Revealed Duchy.
-    Rebuild trashed Duchy.
-    Rebuild gained Province.
-  Rebuild Played Rebuild.
-    +1 Actions = 1 all together.
-    Rebuild named Province.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Silver.
-      Rebuild Revealed Duchy.
-      Rebuild Discarded Silver.
-      Rebuild Discarded Silver.
-    Rebuild trashed Duchy.
-    Rebuild gained Duchy.
-  Rebuild Played Silver.
-    +2 Coin = 2 all together.
-  Rebuild Played Silver.
-    +2 Coin = 4 all together.
-  Rebuild Played Copper.
-    +1 Coin = 5 all together.
-  Rebuild bought Duchy.
-  Rebuild Drew Province into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Silver into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild Drew Copper into hand.
-  Rebuild ends turn with deck: Copper(7), Duchy(4), Estate(2), Province(4), Rebuild(3), Silver(8), 
-
-Game ended in 17 turns.
-EmbassyTunnelSpiceMerchantPlaza Won!
-EmbassyTunnelSpiceMerchantPlaza total score: 40
-  Copper(7), Duchy(1), Embassy(2), Estate(3), Gold(7), Plaza(1), Province(4), Silver(2), Tunnel(5), 
-Rebuild total score: 38
-  Copper(7), Duchy(4), Estate(2), Province(4), Rebuild(3), Silver(8), 
-Trash contains: Duchy(3), Estate(3), 
+Game ended in 15 turns.
+ButcherPlazaWatchtower Won!
+ButcherPlazaWatchtower total score: 31
+  Butcher(1), Copper(6), Estate(1), Plaza(9), Province(5), Silver(1), Watchtower(2), 
+BigMoney total score: 18
+  Copper(7), Duchy(1), Estate(3), Gold(5), Province(2), Silver(6), 
+Trash contains: Butcher(1), Copper(3), Estate(3), Province(1), Silver(1), Watchtower(1), 

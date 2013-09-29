@@ -1,10 +1,10 @@
-﻿using Dominion;
-using CardTypes = Dominion.CardTypes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+
+using CardTypes = Dominion.CardTypes;
+using Dominion;
 
 namespace Program
 {
@@ -12,21 +12,7 @@ namespace Program
     {        
         static void Main()
         {            
-            //ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.CandlestickMaker>.Player(1, afterSilverCount:1), Strategies.BigMoney.Player(2));
-            //ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Plaza>.Player(1), Strategies.BigMoney.Player(2));
-            //ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Plaza>.Player(1, afterSilverCount: 1), Strategies.BigMoney.Player(2));            
-            //ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Plaza>.Player(1, afterSilverCount:2), Strategies.BigMoney.Player(2));            
-
-            ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoney.Player(2));
-            ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoney.Player(2));
-            ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoneyWithCard<CardTypes.Embassy>.Player(2, cardCount:2));
-            ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoneyWithCard<CardTypes.JackOfAllTrades>.Player(2));
-                        
-            ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoneyWithCard<CardTypes.Smithy>.Player(2));
-            ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoneyWithCard<CardTypes.Caravan>.Player(2, cardCount: 10));
-            ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoneyWithCard<CardTypes.Militia>.Player(2));
-            ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2));
-            ComparePlayers(Strategies.EmbassyTunnelSpiceMerchantPlaza.Player(1), Strategies.Rebuild.Player(2)); 
+            ComparePlayers(Strategies.ButcherPlazaWatchtower.Player(1), Strategies.BigMoney.Player(2), numberOfGames:100000);
         }
 
         static void FindAndCompareBestStrategy()
@@ -88,246 +74,11 @@ namespace Program
             ComparePlayers(player1, Strategies.BigMoneySingleSmithy.Player(2), showVerboseScore: true);            
         }
 
-        static void FindBestStrategyForFirstGame()
+        static void FindBestStrategyForFirstGame()        
         {
-            var initialDescription = new PickByPriorityDescription( new CardAcceptanceDescription[]
-            {
-                new CardAcceptanceDescription( new CardTypes.Province(), new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)}),
-                new CardAcceptanceDescription( new CardTypes.Gold(), new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)}),
-                new CardAcceptanceDescription( new CardTypes.Silver(), new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)})
-            });
-
-            Random random = new Random();
-
-            Card[] supplyCards = GameSets.FirstGame.GetSupplyPiles(2, random).Select(pile => pile.ProtoTypeCard).ToArray();
-
-            var initialPopulation = Enumerable.Range(0, 10).Select( index => initialDescription).ToArray();
-            var algorithm = new GeneticAlgorithm<PickByPriorityDescription, MutatePickByPriorityDescription, CompareStrategies>(
-                initialPopulation,
-                new MutatePickByPriorityDescription(random, supplyCards),
-                new CompareStrategies(),
-                new Random());
-
-            for (int i = 0; i < 1000; ++i)
-            {
-                System.Console.WriteLine("Generation {0}", i);
-                System.Console.WriteLine("==============", i);
-                for (int j = 0; j < 10; ++j)
-                {
-                    algorithm.currentMembers[j].Write(System.Console.Out);
-                    System.Console.WriteLine();
-                }
-
-                algorithm.RunOneGeneration();
-
-                System.Console.WriteLine();
-            }
-        }        
-
-        delegate bool ApplyMutation(List<CardAcceptanceDescription> descripton);
-
-        class MutatePickByPriorityDescription
-            : ISpecidesMutator<PickByPriorityDescription>
-        {
-            ApplyMutation[] mutators;
-            Random random;
-            Card[] availableCards;
-
-            public MutatePickByPriorityDescription(Random random, Card[] availableCards)
-            {
-                this.random = random;
-                this.availableCards = availableCards;
-                this.mutators = CreateMutators();
-            }
-
-            public PickByPriorityDescription Mutate(PickByPriorityDescription member)
-            {
-                List<CardAcceptanceDescription> descriptions = new List<CardAcceptanceDescription>(member.descriptions);
-
-                bool applied = false;
-                while (!applied)
-                {
-                    var mutator = this.mutators[this.random.Next(this.mutators.Length)];
-                    applied = mutator(descriptions);
-                }
-
-                return new PickByPriorityDescription(descriptions.ToArray());
-            }
-
-            ApplyMutation[] CreateMutators()
-            {
-                return new ApplyMutation[]
-                {
-                    this.ApplyAddNewCardAcceptance,
-                    this.ApplyRemoveCardAcceptance,
-                    this.ApplyModifyCardAcceptanceCount,
-                    this.ApplySwapOrderCardAcceptance,
-                    //this.ApplyAddNewUniqueCardAcceptance
-                };
-            }            
-
-            private Card PickRandomCardFromSupply(Card[] excluded)
-            {                
-                for (int i = 0; i < 3; ++i)
-                {
-                    Card result = this.availableCards[this.random.Next(this.availableCards.Length)];
-                    if (!DoesSetInclude(excluded, result))
-                        return result;
-                }
-
-                return null;
-            }
-
-            private bool DoesSetInclude(Card[] cards, Card test)
-            {
-                foreach (Card card in cards)
-                {
-                    if (card.Equals(test))
-                        return true;
-                }
-
-                return false;
-            }
-
-            private bool ApplyAddNewUniqueCardAcceptance(List<CardAcceptanceDescription> descriptions)
-            {
-                Card card = this.PickRandomCardFromSupply(descriptions.Select(descr => descr.card).ToArray());
-                if (card == null)
-                    return false;
-                int insertLocation = FindLocationByCost(descriptions, card);
-                descriptions.Insert(insertLocation, new CardAcceptanceDescription(card, new MatchDescription[] { new MatchDescription(null, CountSource.AllOwned, Comparison.LessThan, 10) }));
-
-                return true;
-            }
-
-            private bool ApplyAddNewCardAcceptance(List<CardAcceptanceDescription> descriptions)
-            {
-                Card card = this.PickRandomCardFromSupply(new Card[0]{});            
-                if (card == null)
-                    return false;
-                
-                int insertLocation = FindLocationByCost(descriptions, card);
-                
-                if (this.random.Next(2) == 0)
-                {
-                    insertLocation += this.random.Next(2)+2;
-                }
-                else
-                {
-                    insertLocation -= this.random.Next(2)+2;
-                }
-                //int insertLocation = this.random.Next(descriptions.Count());
-
-                insertLocation = Math.Max(0, insertLocation);
-                insertLocation = Math.Min(descriptions.Count, insertLocation);
-
-                if (insertLocation > 0 && descriptions[insertLocation - 1].card.Equals(card))
-                    return false;
-
-                if (insertLocation < descriptions.Count-1 && descriptions[insertLocation +1].card.Equals(card))
-                    return false;
-                                
-                descriptions.Insert(insertLocation, new CardAcceptanceDescription(card, new MatchDescription[] { new MatchDescription(null, CountSource.AllOwned, Comparison.LessThan, 1) }));
-
-                return true;
-            }
-
-            private int FindLocationByCost(List<CardAcceptanceDescription> descriptions, Card card)
-            {
-                int insertLocation = 0;
-
-                while (insertLocation < descriptions.Count)
-                {                    
-                    if (descriptions[insertLocation].matchDescriptions[0].countSource != CountSource.None ||
-                        descriptions[insertLocation].card.DefaultCoinCost > card.DefaultCoinCost)
-                    {
-                        insertLocation++;
-                    }
-                    else
-                        break;
-                }
-
-                return insertLocation;
-            }
-
-            private bool ApplyRemoveCardAcceptance(List<CardAcceptanceDescription> descriptions)
-            {
-                if (descriptions.Count <= 3)
-                    return false;
-
-                int removeLocation = this.random.Next(descriptions.Count);
-
-                if (descriptions[removeLocation].matchDescriptions[0].countSource == CountSource.None)
-                    return false;
-
-                descriptions.RemoveAt(removeLocation);
-                return true;
-            }
-
-            private bool ApplyModifyCardAcceptanceCount(List<CardAcceptanceDescription> descriptions)
-            {
-                int descriptionIndex = this.random.Next(descriptions.Count);
-                
-                var description = descriptions[descriptionIndex];
-
-                int threshhold = description.matchDescriptions[0].countThreshHold;
-
-                if (threshhold == 0)
-                {
-                    return false;
-                }
-
-
-                bool shouldIncrement = this.random.Next(2) == 0 || threshhold == 1;
-
-                if (shouldIncrement)
-                {
-                    threshhold++;
-                }
-                else
-                {
-                    threshhold--;
-                }
-
-                var newDescription = description.Clone();
-                newDescription.matchDescriptions[0].countThreshHold = threshhold;
-                descriptions[descriptionIndex] = newDescription;
-
-                return true;
-            }
-
-            private bool ApplySwapOrderCardAcceptance(List<CardAcceptanceDescription> descriptions)
-            {
-                if (descriptions.Count <= 1)
-                    return false;
-
-                int swapFirstIndex = this.random.Next(descriptions.Count - 1);
-                int nextSwapIndex = swapFirstIndex + 1;
-
-                var temp = descriptions[swapFirstIndex];
-                descriptions[swapFirstIndex] = descriptions[nextSwapIndex];
-                descriptions[nextSwapIndex] = temp;
-
-                return true;
-            }
+            StrategyOptimizer.FindBestStrategyForGame(GameSets.FirstGame);
         }
-
-        class CompareStrategies
-            : IScoreSpecies<PickByPriorityDescription>
-        {
-            public double Compare(PickByPriorityDescription left, PickByPriorityDescription right)
-            {
-                //System.Console.WriteLine("Comparing: ");
-                //left.Write(System.Console.Out);
-                //System.Console.WriteLine("");
-                //right.Write(System.Console.Out);
-                //System.Console.WriteLine("");
-                PlayerAction leftPlayer = new PlayerAction("Player1", 1, left.ToCardPicker());
-                PlayerAction rightPlayer = new PlayerAction("Player2", 2, right.ToCardPicker());
-                return Program.ComparePlayers(leftPlayer, rightPlayer, numberOfGames:33);
-            }            
-        }       
-
+       
         static void DarkAgesBigMoney()
         {
             // for forum topic: http://forum.dominionstrategy.com/index.php?topic=6281.0
@@ -425,7 +176,7 @@ namespace Program
                     var gameConfig = new GameConfig(
                         useShelters,                        
                         useColonyAndPlatinum: false,
-                        supplyPiles: GetKingdomCards(startPlayer, otherPlayer),
+                        supplyPiles: PlayerAction.GetKingdomCards(startPlayer, otherPlayer),
                         startingDeck : startingDeck);
 
                     GameState gameState = new GameState(
@@ -539,52 +290,6 @@ namespace Program
                 {
                     writer.WriteLine("{0} points:   {2}% = {1}", pair.Key, pair.Value, (double)pair.Value / this.totalCount * 100);
                 }
-            }
-        }   
-
-        static Card[] GetKingdomCards(PlayerAction playerAction1, PlayerAction playerAction2)
-        {
-            var cards = new HashSet<Card>(new CompareCardByType());
-
-            AddCards(cards, playerAction1.actionOrder);
-            AddCards(cards, playerAction1.purchaseOrder);
-            AddCards(cards, playerAction1.gainOrder);
-            AddCards(cards, playerAction2.actionOrder);
-            AddCards(cards, playerAction2.purchaseOrder);
-            AddCards(cards, playerAction2.gainOrder);
-
-            var cardsToRemove = new Card[] { 
-                new CardTypes.Platinum(),
-                new CardTypes.Gold(),
-                new CardTypes.Silver(),
-                new CardTypes.Copper(),
-                new CardTypes.Colony(),
-                new CardTypes.Province(),
-                new CardTypes.Duchy(),
-                new CardTypes.Estate(),
-                new CardTypes.Curse(),
-                new CardTypes.Potion(),
-                new CardTypes.RuinedLibrary(),
-                new CardTypes.RuinedVillage(),
-                new CardTypes.RuinedMarket(),
-                new CardTypes.Survivors(),
-                new CardTypes.Curse(),
-                new CardTypes.Spoils(),
-            };
-
-            foreach (Card card in cardsToRemove)
-            {
-                cards.Remove(card);
-            }            
-
-            return cards.ToArray();
-        }
-
-        static void AddCards(HashSet<Card> cardSet, ICardPicker matchingCards)
-        {
-            foreach (Card card in matchingCards.GetNeededCards())
-            {
-                cardSet.Add(card);
             }
         }
     }            

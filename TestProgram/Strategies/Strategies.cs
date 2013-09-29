@@ -102,11 +102,16 @@ namespace Program
             {
                 return gameState.players.CurrentPlayer.Hand.HasCard<T>();
             };            
-        }        
+        }
+
+        internal static Type WhichCardFromInHand(ICardPicker matchingCards, GameState gameState)
+        {
+            return matchingCards.GetPreferredCard(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card));
+        }
 
         private static bool HasCardFromInHand(ICardPicker matchingCards, GameState gameState)
         {
-            return matchingCards.GetPreferredCard(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card)) != null;
+            return WhichCardFromInHand(matchingCards, gameState) != null;
         }
 
         private static bool HandHasOnlyCardsFrom(ICardPicker matchingCards, GameState gameState)

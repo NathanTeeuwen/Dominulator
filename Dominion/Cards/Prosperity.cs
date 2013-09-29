@@ -468,7 +468,7 @@ namespace Dominion.CardTypes
         : Card
     {
         public Watchtower()
-            : base("Watchtower", coinCost: 3, isReaction:true)
+            : base("Watchtower", coinCost: 3, isReaction:true, isAction:true)
         {
         }
 

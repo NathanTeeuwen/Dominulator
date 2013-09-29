@@ -77,7 +77,7 @@ namespace Dominion
             Add<CardTypes.Silver>(supplyCardPiles, 40);
             Add<CardTypes.Gold>(supplyCardPiles, 30);
             Add<CardTypes.Curse>(supplyCardPiles, curseCount);
-            Add<CardTypes.Estate>(supplyCardPiles, victoryCount);
+            Add<CardTypes.Estate>(supplyCardPiles, victoryCount + (!this.useShelters ? playerCount * 3 : 0));
             Add<CardTypes.Duchy>(supplyCardPiles, victoryCount);
             Add<CardTypes.Province>(supplyCardPiles, victoryCount);
             

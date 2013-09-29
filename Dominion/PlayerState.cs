@@ -1062,9 +1062,13 @@ namespace Dominion
             foreach (Card cardInHand in this.Hand.ToArray())
             {
                 DeckPlacement preferredPlacement = (gainReason == GainReason.Buy) ?
-                    cardInHand.DoSpecializedActionOnBuyWhileInHand(this, gameState, card) :
-                    cardInHand.DoSpecializedActionOnGainWhileInHand(this, gameState, card) ;                    
-                
+                    cardInHand.DoSpecializedActionOnBuyWhileInHand(this, gameState, card) : DeckPlacement.Default;
+
+                if (!wasCardMoved && preferredPlacement == DeckPlacement.Default)
+                {
+                    preferredPlacement = cardInHand.DoSpecializedActionOnGainWhileInHand(this, gameState, card);
+                }
+
                 if (!wasCardMoved && preferredPlacement != DeckPlacement.Default)
                 {
                     defaultPlacement = preferredPlacement;
