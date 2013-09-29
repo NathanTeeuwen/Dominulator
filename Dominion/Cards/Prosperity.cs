@@ -317,7 +317,7 @@ namespace Dominion.CardTypes
         : Card
     {
         public Quarry()
-            : base("Quarry", coinCost: 4, isTreasure: true, plusCoins: 1)
+            : base("Quarry", coinCost: 4, isTreasure: true, plusCoins: 1, mightProvideDiscountWhileInPlay: true)
         {
         }
 

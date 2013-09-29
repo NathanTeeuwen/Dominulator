@@ -16,6 +16,8 @@ namespace Dominion
         internal Random random;                
 
         internal PlayerTurnCounters turnCounters = new PlayerTurnCounters();
+        
+        internal bool ownsCardThatMightProvideDiscountWhileInPlay;                
 
         // all of the cards the player owns.  Always move from one list to the other
         internal ListOfCards deck = new ListOfCards();
@@ -1105,6 +1107,7 @@ namespace Dominion
             this.gameLog.PopScope();
 
             gameState.hasCurrentPlayerGainedCard |= true;
+            this.ownsCardThatMightProvideDiscountWhileInPlay |= card.mightProvideDiscountWhileInPlay;
         }
 
         internal void MoveAllCards(GameState gameState, CardPredicate acceptableCard, DeckPlacement from, DeckPlacement to)

@@ -224,7 +224,7 @@ namespace Dominion.CardTypes
         Card
     {
         public Highway()
-            : base("Highway", coinCost: 5, isAction: true, plusCards:1, plusActions:1)
+            : base("Highway", coinCost: 5, isAction: true, plusCards: 1, plusActions: 1, mightProvideDiscountWhileInPlay:true)
         {
         }
 

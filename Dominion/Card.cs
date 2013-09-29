@@ -32,6 +32,7 @@ namespace Dominion
         public readonly bool requiresSpoils;
         public readonly bool isShelter;
         public readonly bool canOverpay;
+        public readonly bool mightProvideDiscountWhileInPlay;
 
         internal Card(
             string name,
@@ -55,7 +56,8 @@ namespace Dominion
             bool requiresRuins = false,
             bool requiresSpoils = false,
             bool isShelter = false,
-            bool canOverpay = false)
+            bool canOverpay = false,
+            bool mightProvideDiscountWhileInPlay = false)
         {
             this.name = name;
             this.coinCost = coinCost;
@@ -79,6 +81,7 @@ namespace Dominion
             this.isShelter = isShelter;
             this.requiresSpoils = requiresSpoils;
             this.canOverpay = canOverpay;
+            this.mightProvideDiscountWhileInPlay = mightProvideDiscountWhileInPlay;
         }
 
         public bool Is(Type card)
@@ -129,9 +132,12 @@ namespace Dominion
         {
             int effectiveCost = this.coinCost;
 
-            foreach (Card cardInPlay in player.CardsInPlay)
+            if (player.ownsCardThatMightProvideDiscountWhileInPlay)
             {
-                effectiveCost -= cardInPlay.ProvideDiscountForWhileInPlay(this);
+                foreach (Card cardInPlay in player.CardsInPlay)
+                {
+                    effectiveCost -= cardInPlay.ProvideDiscountForWhileInPlay(this);
+                }
             }
 
             effectiveCost -= this.ProvideSelfDiscount(player);

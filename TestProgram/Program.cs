@@ -12,7 +12,7 @@ namespace Program
     {        
         static void Main()
         {            
-            ComparePlayers(Strategies.ButcherPlazaWatchtower.Player(1), Strategies.BigMoney.Player(2), numberOfGames:100000);
+            ComparePlayers(Strategies.ButcherPlazaWatchtower.Player(1), Strategies.BigMoney.Player(2), numberOfGames:10000, shouldParallel:false);
         }
 
         static void FindAndCompareBestStrategy()
