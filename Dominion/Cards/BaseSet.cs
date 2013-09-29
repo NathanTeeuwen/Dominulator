@@ -416,7 +416,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Card cardToPlay = currentPlayer.RequestPlayerChooseCardToRemoveFromHandForPlay(gameState, acceptableCard => true, isTreasure: false, isAction: true, isOptional: false);
+            Card cardToPlay = currentPlayer.RequestPlayerChooseCardToRemoveFromHandForPlay(gameState, Delegates.IsActionCardPredicate, isTreasure: false, isAction: true, isOptional: false);
             if (cardToPlay != null)
             {
                 currentPlayer.DoPlayAction(cardToPlay, gameState, countTimes: 2);

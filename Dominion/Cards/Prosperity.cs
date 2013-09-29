@@ -162,6 +162,7 @@ namespace Dominion.CardTypes
         public Goons()
             : base("Goons", coinCost: 6, isAction: true, isAttack: true)
         {
+            this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
         }
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
@@ -169,7 +170,7 @@ namespace Dominion.CardTypes
             otherPlayer.RequestPlayerDiscardDownToCountInHand(gameState, 3);
         }
 
-        public override void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        private void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
             currentPlayer.victoryTokenCount += 1;
         }
@@ -195,9 +196,10 @@ namespace Dominion.CardTypes
         public Hoard()
             : base("Hoard", coinCost: 6, isTreasure: true, plusCoins: 2)
         {
+            this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
         }
 
-        public override void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        private void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
             if (boughtCard.isVictory)
             {
@@ -216,7 +218,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Card cardToPlay = currentPlayer.RequestPlayerChooseCardToRemoveFromHandForPlay(gameState, acceptableCard => true, isTreasure: false, isAction: true, isOptional: true);
+            Card cardToPlay = currentPlayer.RequestPlayerChooseCardToRemoveFromHandForPlay(gameState, Delegates.IsActionCardPredicate, isTreasure: false, isAction: true, isOptional: true);
             if (cardToPlay != null)
             {
                 currentPlayer.DoPlayAction(cardToPlay, gameState, countTimes: 3);
@@ -317,11 +319,12 @@ namespace Dominion.CardTypes
         : Card
     {
         public Quarry()
-            : base("Quarry", coinCost: 4, isTreasure: true, plusCoins: 1, mightProvideDiscountWhileInPlay: true)
+            : base("Quarry", coinCost: 4, isTreasure: true, plusCoins: 1)
         {
+            this.provideDiscountForWhileInPlay = ProvideDiscountForWhileInPlay;
         }
 
-        override public int ProvideDiscountForWhileInPlay(Card card)
+        private int ProvideDiscountForWhileInPlay(Card card)
         {
             if (card.isAction)
             {
@@ -372,9 +375,10 @@ namespace Dominion.CardTypes
         public Talisman()
             : base("Talisman", coinCost: 4, isTreasure: true, plusCoins: 1)
         {
+            this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
         }
 
-        public override void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        private void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
             if (boughtCard.CurrentCoinCost(currentPlayer) <= 4 && !boughtCard.isVictory)
             {

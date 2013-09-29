@@ -124,9 +124,10 @@ namespace Dominion.CardTypes
         public WalledVillage()
             : base("WalledVillage", coinCost: 4, plusCards: 1, plusActions: 2, isAction: true)
         {
+            this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
         }
 
-        public override void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
+        private void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
             // TODO
             throw new NotImplementedException();

@@ -2,11 +2,11 @@
 
 namespace Program
 {  
-    public struct CardAcceptance
+    public class CardAcceptance
     {
-        internal Card card;
-        internal GameStatePredicate match;
-        internal GameStateIntValue overpayAmount;
+        internal readonly Card card;
+        internal readonly GameStatePredicate match;
+        internal readonly GameStateIntValue overpayAmount;
 
         public static int OverPayZero(GameState gameState)
         {

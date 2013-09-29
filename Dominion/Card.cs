@@ -18,8 +18,7 @@ namespace Dominion
         public readonly int plusCard;
         public readonly int plusCoin;
         public readonly int plusVictoryToken;
-        public readonly int defaultSupplyCount;
-        protected VictoryPointCounter victoryPointCounter;        // readonly
+        public readonly int defaultSupplyCount;        
         public readonly bool isAction;
         public readonly bool isAttack;
         public readonly bool attackDependsOnPlayerChoice;
@@ -32,7 +31,10 @@ namespace Dominion
         public readonly bool requiresSpoils;
         public readonly bool isShelter;
         public readonly bool canOverpay;
-        public readonly bool mightProvideDiscountWhileInPlay;
+        protected VictoryPointCounter victoryPointCounter;              // readonly
+        protected GameStateMethod doSpecializedCleanupAtStartOfCleanup; // readonly
+        protected CardIntValue provideDiscountForWhileInPlay;           // readonly
+        protected GameStateCardMethod doSpecializedActionOnBuyWhileInPlay; // readonly
 
         internal Card(
             string name,
@@ -57,7 +59,9 @@ namespace Dominion
             bool requiresSpoils = false,
             bool isShelter = false,
             bool canOverpay = false,
-            bool mightProvideDiscountWhileInPlay = false)
+            CardIntValue provideDiscountForWhileInPlay = null,
+            GameStateMethod doSpecializedCleanupAtStartOfCleanup = null,
+            GameStateCardMethod doSpecializedActionOnBuyWhileInPlay = null)
         {
             this.name = name;
             this.coinCost = coinCost;
@@ -81,7 +85,9 @@ namespace Dominion
             this.isShelter = isShelter;
             this.requiresSpoils = requiresSpoils;
             this.canOverpay = canOverpay;
-            this.mightProvideDiscountWhileInPlay = mightProvideDiscountWhileInPlay;
+            this.provideDiscountForWhileInPlay = provideDiscountForWhileInPlay;
+            this.doSpecializedCleanupAtStartOfCleanup = doSpecializedCleanupAtStartOfCleanup;
+            this.doSpecializedActionOnBuyWhileInPlay = doSpecializedActionOnBuyWhileInPlay;
         }
 
         public bool Is(Type card)
@@ -177,9 +183,20 @@ namespace Dominion
         {
         }
 
-        virtual public void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
+        public bool HasSpecializedCleanupAtStartOfCleanup
         {
+            get
+            {
+                return this.doSpecializedCleanupAtStartOfCleanup != null;
+            }
+        }
 
+        public void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
+        {
+            if (this.HasSpecializedCleanupAtStartOfCleanup)
+            {
+                this.doSpecializedCleanupAtStartOfCleanup(currentPlayer, gameState);
+            }
         }
 
         virtual public DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
@@ -191,9 +208,20 @@ namespace Dominion
         {
         }
 
-        virtual public void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        public bool HasSpecializedActionOnBuyWhileInPlay
         {
+            get
+            {
+                return this.doSpecializedActionOnBuyWhileInPlay != null;
+            }
+        }
 
+        public void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        {
+            if (this.HasSpecializedActionOnBuyWhileInPlay)
+            {
+                this.doSpecializedActionOnBuyWhileInPlay(currentPlayer, gameState, boughtCard);
+            }
         }
 
         virtual public void DoSpecializedDurationActionAtBeginningOfTurn(PlayerState currentPlayer, GameState gameState)
@@ -216,7 +244,15 @@ namespace Dominion
             return DeckPlacement.Default;
         }
 
-        virtual public int ProvideDiscountForWhileInPlay(Card card)
+        public bool MightProvideDiscountWhileInPlay
+        {
+            get
+            {
+                return this.provideDiscountForWhileInPlay != null;
+            }
+        }
+
+        public int ProvideDiscountForWhileInPlay(Card card)
         {
             return 0;
         }

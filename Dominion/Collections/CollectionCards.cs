@@ -10,7 +10,7 @@ namespace Dominion
     public class CollectionCards
         : IEnumerable<Card>
     {
-        protected List<Card> cards = new List<Card>();
+        protected List<Card> cards = new List<Card>(20);
 
         public int Count
         {

@@ -17,7 +17,9 @@ namespace Dominion
 
         internal PlayerTurnCounters turnCounters = new PlayerTurnCounters();
         
-        internal bool ownsCardThatMightProvideDiscountWhileInPlay;                
+        internal bool ownsCardThatMightProvideDiscountWhileInPlay;
+        internal bool ownsCardThatHasSpecializedCleanupAtStartOfCleanup;
+        internal bool ownsCardWithSpecializedActionOnBuyWhileInPlay;
 
         // all of the cards the player owns.  Always move from one list to the other
         internal ListOfCards deck = new ListOfCards();
@@ -525,8 +527,8 @@ namespace Dominion
         {
             if (!(isTreasure ^ isAction))
                 throw new System.InvalidOperationException("Must be action or treasure");
-
-            if (!this.hand.HasCard(card => isTreasure ? card.isTreasure : card.isAction && acceptableCard(card)))
+            
+            if (!this.hand.HasCard(acceptableCard))
             {
                 return null;
             }
@@ -551,6 +553,11 @@ namespace Dominion
             }
 
             return currentCard;
+        }
+
+        private static bool IsCardTreasure(Card card)
+        {
+            return card.isTreasure;
         }
 
         internal PileOfCards RequestPlayerChooseCardPileFromSupply(GameState gameState)
@@ -1107,7 +1114,10 @@ namespace Dominion
             this.gameLog.PopScope();
 
             gameState.hasCurrentPlayerGainedCard |= true;
-            this.ownsCardThatMightProvideDiscountWhileInPlay |= card.mightProvideDiscountWhileInPlay;
+
+            this.ownsCardThatMightProvideDiscountWhileInPlay |= card.MightProvideDiscountWhileInPlay;
+            this.ownsCardThatHasSpecializedCleanupAtStartOfCleanup |= card.HasSpecializedCleanupAtStartOfCleanup;
+            this.ownsCardWithSpecializedActionOnBuyWhileInPlay |= card.HasSpecializedActionOnBuyWhileInPlay;
         }
 
         internal void MoveAllCards(GameState gameState, CardPredicate acceptableCard, DeckPlacement from, DeckPlacement to)

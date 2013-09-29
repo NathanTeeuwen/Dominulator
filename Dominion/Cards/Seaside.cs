@@ -460,9 +460,10 @@ namespace Dominion.CardTypes
         public Treasury()
             : base("Treasury", coinCost: 5, isAction: true, plusActions: 1, plusCards: 1, plusCoins: 1)
         {
+            this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
         }
 
-        public override void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
+        private void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
             //todo
             throw new NotImplementedException();

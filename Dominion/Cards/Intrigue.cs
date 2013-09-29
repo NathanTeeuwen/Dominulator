@@ -37,11 +37,12 @@ namespace Dominion.CardTypes
         Card
     {
         public Bridge()
-            : base("Bridge", coinCost: 4, plusBuy: 1, plusCoins: 1, isAction: true, mightProvideDiscountWhileInPlay: true)
+            : base("Bridge", coinCost: 4, plusBuy: 1, plusCoins: 1, isAction: true)
         {
+            this.provideDiscountForWhileInPlay = ProvideDiscountForWhileInPlay;
         }
 
-        public override int ProvideDiscountForWhileInPlay(Card card)
+        private int ProvideDiscountForWhileInPlay(Card card)
         {
             return 1;
         }

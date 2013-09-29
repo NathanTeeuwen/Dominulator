@@ -210,9 +210,10 @@ namespace Dominion.CardTypes
         public Haggler()
             : base("Haggler", coinCost: 5, isAction:true, plusCoins:2)
         {
+            this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
         }
 
-        public override void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        private void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
             currentPlayer.RequestPlayerGainCardFromSupply(gameState,
                 card => !card.isVictory && card.CurrentCoinCost(currentPlayer) < boughtCard.CurrentCoinCost(currentPlayer),
@@ -224,12 +225,13 @@ namespace Dominion.CardTypes
         Card
     {
         public Highway()
-            : base("Highway", coinCost: 5, isAction: true, plusCards: 1, plusActions: 1, mightProvideDiscountWhileInPlay:true)
+            : base("Highway", coinCost: 5, isAction: true, plusCards: 1, plusActions: 1)
         {
+            this.provideDiscountForWhileInPlay = ProvideDiscountForWhileInPlay;
         }
 
         // TODO:  cant throne room highway, but can throne room bridge.
-        public override int ProvideDiscountForWhileInPlay(Card card)
+        private int ProvideDiscountForWhileInPlay(Card card)
         {
             return 1;
         }
@@ -424,9 +426,10 @@ namespace Dominion.CardTypes
         public Scheme()
             : base("Scheme", coinCost: 3, isAction: true, plusCards: 1, plusActions:1)
         {
+            this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
         }
 
-        public override void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
+        private void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.RequestPlayerTopDeckCardsFromPlay(gameState,
                 acceptableCard => acceptableCard.isAction,

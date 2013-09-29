@@ -17,9 +17,10 @@ namespace Dominion.CardTypes
         public Alchemist()
             : base("Alchemist", coinCost: 3, potionCost:1, isAction: true, plusCards:2, plusActions:1)
         {
+            this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
         }
 
-        public override void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
+        private void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.RequestPlayerTopDeckCardsFromPlay(gameState,
                 acceptableCard => acceptableCard.Is<Alchemist>(),
@@ -97,9 +98,10 @@ namespace Dominion.CardTypes
         public Herbalist()
             : base("Herbalist", coinCost: 2, isAction: true, plusCoins:1, plusBuy:1)
         {
+            this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
         }
 
-        public override void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
+        private void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.RequestPlayerTopDeckCardFromPlay(gameState,
                 acceptableCard => acceptableCard.isTreasure,

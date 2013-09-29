@@ -251,7 +251,7 @@ namespace Dominion
             {
                 currentPlayer.turnCounters.RemoveAction();
 
-                if (!currentPlayer.RequestPlayerPlayActionFromHand(this, acceptableCard => true, isOptional: true))
+                if (!currentPlayer.RequestPlayerPlayActionFromHand(this, Delegates.IsActionCardPredicate, isOptional: true))
                 {
                     break;
                 }                
@@ -298,11 +298,14 @@ namespace Dominion
                     currentPlayer.RequestPlayerOverpayForCard(boughtCard, this);
                 }
 
-                foreach (Card cardInPlay in currentPlayer.CardsInPlay)
+                if (currentPlayer.ownsCardWithSpecializedActionOnBuyWhileInPlay)
                 {
-                    gameLog.PushScope();
-                    cardInPlay.DoSpecializedActionOnBuyWhileInPlay(currentPlayer, this, boughtCard);                    
-                    gameLog.PopScope();
+                    foreach (Card cardInPlay in currentPlayer.CardsInPlay)
+                    {
+                        gameLog.PushScope();
+                        cardInPlay.DoSpecializedActionOnBuyWhileInPlay(currentPlayer, this, boughtCard);
+                        gameLog.PopScope();
+                    }
                 }
             }
         }
@@ -311,14 +314,15 @@ namespace Dominion
         {
             currentPlayer.playPhase = PlayPhase.Cleanup;
 
-            currentPlayer.cardsInPlayAtBeginningOfCleanupPhase.CopyFrom(currentPlayer.cardsPlayed);
-
-            foreach (Card cardInPlay in currentPlayer.cardsInPlayAtBeginningOfCleanupPhase)
+            if (currentPlayer.ownsCardThatHasSpecializedCleanupAtStartOfCleanup)
             {
-                cardInPlay.DoSpecializedCleanupAtStartOfCleanup(currentPlayer, this);
+                currentPlayer.cardsInPlayAtBeginningOfCleanupPhase.CopyFrom(currentPlayer.cardsPlayed);
+                foreach (Card cardInPlay in currentPlayer.cardsInPlayAtBeginningOfCleanupPhase)
+                {
+                    cardInPlay.DoSpecializedCleanupAtStartOfCleanup(currentPlayer, this);
+                }
+                currentPlayer.cardsInPlayAtBeginningOfCleanupPhase.Clear();
             }
-
-            currentPlayer.cardsInPlayAtBeginningOfCleanupPhase.Clear();
 
             currentPlayer.CleanupCardsToDiscard(this);
         }
