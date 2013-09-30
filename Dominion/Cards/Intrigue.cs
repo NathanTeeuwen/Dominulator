@@ -42,7 +42,7 @@ namespace Dominion.CardTypes
             this.provideDiscountForWhileInPlay = ProvideDiscountForWhileInPlay;
         }
 
-        private int ProvideDiscountForWhileInPlay(Card card)
+        private new int ProvideDiscountForWhileInPlay(Card card)
         {
             return 1;
         }

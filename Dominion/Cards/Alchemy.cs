@@ -20,7 +20,7 @@ namespace Dominion.CardTypes
             this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
         }
 
-        private void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
+        private new void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.RequestPlayerTopDeckCardsFromPlay(gameState,
                 acceptableCard => acceptableCard.Is<Alchemist>(),
@@ -101,7 +101,7 @@ namespace Dominion.CardTypes
             this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
         }
 
-        private void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
+        private new void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.RequestPlayerTopDeckCardFromPlay(gameState,
                 acceptableCard => acceptableCard.isTreasure,

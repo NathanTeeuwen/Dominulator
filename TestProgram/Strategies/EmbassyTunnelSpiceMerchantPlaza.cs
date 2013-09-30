@@ -12,8 +12,12 @@ namespace Program
     {
         public static class EmbassyTunnelSpiceMerchantPlaza
         {
+            public static PlayerAction Player(int playerNumber)
+            {
+                return CustomPlayer(playerNumber);
+            }
 
-            public static PlayerAction Player(int playerNumber, bool shouldBuySpiceMerchant = false, bool shouldBuyPlaza = true)
+            public static PlayerAction CustomPlayer(int playerNumber, bool shouldBuySpiceMerchant = false, bool shouldBuyPlaza = true)
             {
                 return new MyPlayerAction(playerNumber, shouldBuySpiceMerchant, shouldBuyPlaza);
             }

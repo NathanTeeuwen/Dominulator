@@ -69,9 +69,7 @@ namespace Program.Simulations.UnevenCurseSplit
         private object theLock = new object();
         private int player1Win = 0;
         private int player2Win = 0;
-        private int totalGameCount = 0;
-        private int winningPlayerWas25 = 0;
-        private int countGame25 = 0;
+        private int totalGameCount = 0;        
 
         public float Player1WinPercent
         {

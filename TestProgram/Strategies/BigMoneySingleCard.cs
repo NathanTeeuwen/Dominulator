@@ -43,10 +43,42 @@ namespace Program
             }
         }
 
+        public static class BigMoneySingleSmithy
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return BigMoneyWithCard<CardTypes.Smithy>.Player(playerNumber);
+            }
+        }
+
+        public static class BigMoneySingleWitch
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return BigMoneyWithCard<CardTypes.Witch>.Player(playerNumber);
+            }
+        }
+
+        public static class BigMoneyDoubleWitch
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return BigMoneyWithCard<CardTypes.Witch>.Player(playerNumber, cardCount:2);
+            }
+        } 
+
         public static class BigMoneyWithThief            
         {
             // big money smithy player
-            public static PlayerAction Player(int playerNumber, int cardCount = 1)
+            public static PlayerAction Player(int playerNumber)
+            {
+                return CustomPlayer(playerNumber);                
+            }
+
+            public static PlayerAction CustomPlayer(int playerNumber, int cardCount = 1)
             {
                 return new MyPlayerAction(playerNumber, cardCount);                            
             }
@@ -68,8 +100,6 @@ namespace Program
                     return card.Is<CardTypes.Copper>() ? false : true;
                 }
             }
-
-            
 
             public static ICardPicker PurchaseOrder(int cardCount)
             {

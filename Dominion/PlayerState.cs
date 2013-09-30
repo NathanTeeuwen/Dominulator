@@ -750,7 +750,8 @@ namespace Dominion
             }
             else
             {
-                if (!acceptableCardsToDiscard( gameState.GetPile(cardTypeToDiscard).ProtoTypeCard))
+                if (gameState.GetPile(cardTypeToDiscard) != null &&  // TODO: this currently can not find ruins ... rework this method so a card is returned instead of a type.
+                    !acceptableCardsToDiscard( gameState.GetPile(cardTypeToDiscard).ProtoTypeCard))
                     throw new Exception("Card does not meet constraint: ");
             }
 

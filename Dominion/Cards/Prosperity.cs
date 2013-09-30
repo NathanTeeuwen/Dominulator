@@ -170,7 +170,7 @@ namespace Dominion.CardTypes
             otherPlayer.RequestPlayerDiscardDownToCountInHand(gameState, 3);
         }
 
-        private void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        private new void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
             currentPlayer.victoryTokenCount += 1;
         }
@@ -199,7 +199,7 @@ namespace Dominion.CardTypes
             this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
         }
 
-        private void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        private new void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
             if (boughtCard.isVictory)
             {
@@ -324,7 +324,7 @@ namespace Dominion.CardTypes
             this.provideDiscountForWhileInPlay = ProvideDiscountForWhileInPlay;
         }
 
-        private int ProvideDiscountForWhileInPlay(Card card)
+        private new int ProvideDiscountForWhileInPlay(Card card)
         {
             if (card.isAction)
             {
@@ -378,7 +378,7 @@ namespace Dominion.CardTypes
             this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
         }
 
-        private void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        private new void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
             if (boughtCard.CurrentCoinCost(currentPlayer) <= 4 && !boughtCard.isVictory)
             {

@@ -33,9 +33,9 @@ namespace Program
             this.playerIndex = playerIndex;
             this.purchaseOrder = purchaseOrder;
             this.actionOrder = actionOrder == null ? Strategies.Default.ActionPlayOrder(this.purchaseOrder) : actionOrder;
-            this.trashOrder = trashOrder == null ? Strategies.Default.DefaultTrashOrder() : trashOrder;
-            this.treasurePlayOrder = treasurePlayOrder == null ? Strategies.Default.TreasurePlayOrder() : treasurePlayOrder;
             this.discardOrder = discardOrder == null ? Strategies.Default.DefaultDiscardOrder() : discardOrder;
+            this.trashOrder = trashOrder == null ? Strategies.Default.DefaultTrashOrder() : trashOrder;
+            this.treasurePlayOrder = treasurePlayOrder == null ? Strategies.Default.TreasurePlayOrder() : treasurePlayOrder;            
             this.gainOrder = gainOrder != null ? gainOrder : purchaseOrder;
             this.name = name;
         }
@@ -97,7 +97,7 @@ namespace Program
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)
             {
-                Card card = currentPlayer.CardsBeingRevealed.OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();                
+                Card card = currentPlayer.CardsBeingRevealed.Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();                
                 return card != null ? card.GetType() : null;
             }
 
@@ -217,9 +217,18 @@ namespace Program
 
         public override Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
         {
-            return this.discardOrder.GetPreferredCard(
+            Type result = this.discardOrder.GetPreferredCard(
                 gameState,
                 card => player.CardsBeingRevealed.HasCard(card.GetType()));
+
+            // warning, strategy didnt' include what to, try to do a reasonable default.
+            if (result == null)
+            {
+                Card card = player.CardsBeingRevealed.OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();
+                return card != null ? card.GetType() : null;
+            }
+
+            return result;
         }
 
         public override Type GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
