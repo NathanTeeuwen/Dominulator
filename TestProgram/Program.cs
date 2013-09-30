@@ -11,8 +11,9 @@ namespace Program
     class Program    
     {        
         static void Main()
-        {                        
-            CompareStrategyVsAllKnownStrategies(Strategies.IllgottengainsMoneylender.Player(1));
+        {
+            ComparePlayers(Strategies.LookoutTraderNobles.Player(1), Strategies.BigMoney.Player(2));
+            CompareStrategyVsAllKnownStrategies(Strategies.LookoutTraderNobles.Player(1));
         }
 
         static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction)

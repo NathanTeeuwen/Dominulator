@@ -42,13 +42,31 @@ namespace Program
                            CardAcceptance.For<T>());
             }
         }
+        /*
+        public static class BigMoneyTorturer
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return BigMoneyWithCard<CardTypes.Torturer>.Player(playerNumber, "BigMoneyTorturer");
+            }
+        }*/
+
+        public static class BigMoneyWharf
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return BigMoneyWithCard<CardTypes.Wharf>.Player(playerNumber, "BigMoneyWharf");
+            }
+        }
 
         public static class BigMoneySingleSmithy
         {
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithCard<CardTypes.Smithy>.Player(playerNumber);
+                return BigMoneyWithCard<CardTypes.Smithy>.Player(playerNumber, "BigMoneySingleSmithy");
             }
         }
 
