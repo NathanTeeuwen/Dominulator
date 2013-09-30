@@ -106,7 +106,7 @@ namespace Dominion.CardTypes
             currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost + 1), "Must gain a card costing exactly one more than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
 
             // TODO:  put the cards on top of your deck in either order.
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 
@@ -213,7 +213,7 @@ namespace Dominion.CardTypes
             this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
         }
 
-        private void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        private new void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
             currentPlayer.RequestPlayerGainCardFromSupply(gameState,
                 card => !card.isVictory && card.CurrentCoinCost(currentPlayer) < boughtCard.CurrentCoinCost(currentPlayer),
@@ -231,9 +231,33 @@ namespace Dominion.CardTypes
         }
 
         // TODO:  cant throne room highway, but can throne room bridge.
-        private int ProvideDiscountForWhileInPlay(Card card)
+        private new int ProvideDiscountForWhileInPlay(Card card)
         {
             return 1;
+        }
+    }
+
+    public class IllGottenGains :
+        Card
+    {
+        public IllGottenGains()
+            : base("Ill-Gotten Gains", coinCost: 5, isTreasure:true, plusCoins:1)
+        {            
+        }
+
+        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        {
+            foreach (PlayerState player in gameState.players.OtherPlayers)
+            {
+                player.GainCardFromSupply<CardTypes.Curse>(gameState);
+            }
+
+            return DeckPlacement.Default;
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.Is<CardTypes.Copper>(), "you may gain a copper", isOptional:true, defaultLocation: DeckPlacement.Hand);
         }
     }
 
@@ -429,7 +453,7 @@ namespace Dominion.CardTypes
             this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
         }
 
-        private void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
+        private new void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.RequestPlayerTopDeckCardsFromPlay(gameState,
                 acceptableCard => acceptableCard.isAction,

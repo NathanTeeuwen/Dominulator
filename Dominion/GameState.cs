@@ -20,7 +20,7 @@ namespace Dominion
         private MapPileOfCardsToProperty<int> pileEmbargoTokenCount;
 
         // special piles not in the supply - not available in every game
-        private PileOfCards blackMarketDeck;
+        private PileOfCards blackMarketDeck = null;
 
         public GameState(             
             IGameLog gameLog,

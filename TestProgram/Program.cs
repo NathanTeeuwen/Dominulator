@@ -11,8 +11,43 @@ namespace Program
     class Program    
     {        
         static void Main()
-        {            
-            ComparePlayers(Strategies.ButcherPlazaWatchtower.Player(1), Strategies.BigMoney.Player(2), numberOfGames:10000, shouldParallel:false);
+        {                        
+            CompareStrategyVsAllKnownStrategies(Strategies.IllgottengainsMoneylender.Player(1));
+        }
+
+        static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction)
+        {
+            var resultList = new List<System.Tuple<string, double>>();
+
+            var assembly = System.Reflection.Assembly.GetCallingAssembly();
+            var type = assembly.GetType("Program.Strategies");
+            foreach (Type innerType in type.GetNestedTypes())
+            {
+                if (!innerType.IsClass)                
+                    continue;                                    
+
+                System.Reflection.MethodInfo playerMethodInfo = innerType.GetMethod("Player", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
+                if (playerMethodInfo == null)                
+                    continue;
+
+                if (playerMethodInfo.ContainsGenericParameters)
+                    continue;
+
+                PlayerAction otherPlayerAction = playerMethodInfo.Invoke(null, new object[]{2}) as PlayerAction;
+                if (otherPlayerAction == null)
+                    continue;
+
+                double percentDiff = ComparePlayers(playerAction, otherPlayerAction);
+
+                resultList.Add( new System.Tuple<string,double>(otherPlayerAction.PlayerName, percentDiff));
+            }            
+
+            foreach(var result in resultList.OrderBy(t => t.Item2))
+            {
+                if (result.Item1 == playerAction.name)
+                    System.Console.Write("=====>");
+                System.Console.WriteLine("{0:F1}% difference for {1}", -result.Item2, result.Item1);
+            }
         }
 
         static void FindAndCompareBestStrategy()
@@ -101,10 +136,10 @@ namespace Program
         {
             // for forum topic: http://forum.dominionstrategy.com/index.php?topic=8391.0
             ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoney.Player(2));
-            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Wharf>.Player(2, 2));
-            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Mountebank>.Player(2, 2));
-            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2, 2));
-            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.YoungWitch>.Player(2, 2));
+            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Wharf>.Player(2, cardCount:2));
+            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Mountebank>.Player(2, cardCount: 2));
+            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2, cardCount: 2));
+            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.YoungWitch>.Player(2, cardCount: 2));
         }
 
         static void GuildsSimulatorResults()
@@ -128,7 +163,7 @@ namespace Program
             for (int i = 0; i < 16; ++i)
             {
                 System.Console.Write("{0}, ", i);
-                ComparePlayers(Strategies.FollowersTest.Player(1, i), Strategies.BigMoney.Player(2), showCompactScore: true);
+                ComparePlayers(Strategies.FollowersTest.TestPlayer(1, i), Strategies.BigMoney.Player(2), showCompactScore: true);
             }
         }
         

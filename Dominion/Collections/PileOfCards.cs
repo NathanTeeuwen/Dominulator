@@ -9,8 +9,7 @@ namespace Dominion
     public class PileOfCards
         : ListOfCards
     {
-        private Card protoType;
-        internal readonly bool isInSupply;               
+        private Card protoType;        
         
         public PileOfCards(Card protoType, int count)
         {

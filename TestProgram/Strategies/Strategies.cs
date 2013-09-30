@@ -171,12 +171,29 @@ namespace Program
             public static CardPickByPriority TreasurePlayOrder()
             {
                 return new CardPickByPriority(
+                    CardAcceptance.For<CardTypes.Contraband>(),       // play early to provide opponent as little information when banning
+                    // base set first
                     CardAcceptance.For<CardTypes.Platinum>(),
                     CardAcceptance.For<CardTypes.Gold>(),
-                    CardAcceptance.For<CardTypes.Harem>(),
-                    CardAcceptance.For<CardTypes.Talisman>(),                    
                     CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Copper>());
+                    CardAcceptance.For<CardTypes.Copper>(),
+                    // alphabetical, all other treasures that dont really depend on order
+                    CardAcceptance.For<CardTypes.Cache>(),
+                    CardAcceptance.For<CardTypes.FoolsGold>(),
+                    CardAcceptance.For<CardTypes.Loan>(),
+                    CardAcceptance.For<CardTypes.Harem>(),
+                    CardAcceptance.For<CardTypes.Hoard>(),
+                    CardAcceptance.For<CardTypes.Masterpiece>(),                    
+                    CardAcceptance.For<CardTypes.PhilosophersStone>(),
+                    CardAcceptance.For<CardTypes.Quarry>(),
+                    CardAcceptance.For<CardTypes.Stash>(),
+                    CardAcceptance.For<CardTypes.Talisman>(),
+                    // cards whose benefit is sensitive to ordering
+                    CardAcceptance.For<CardTypes.Venture>(),          // playing this card might increase the number of treasures played
+                    CardAcceptance.For<CardTypes.CounterFeit>(),      // after venture so that you have more variety to counterfeit
+                    CardAcceptance.For<CardTypes.IllGottenGains>(),   // by playing after venture, you have more information about whether to gain the copper
+                    CardAcceptance.For<CardTypes.HornOfPlenty>(),     // play relatively last so it has the most variety of cards to trigger with
+                    CardAcceptance.For<CardTypes.Bank>());            // try to make bank as valuable as possibile.
             }
 
             public static CardPickByPriority DefaultDiscardOrder()
@@ -189,11 +206,11 @@ namespace Program
                     CardAcceptance.For<CardTypes.Copper>());
             }
 
-            public static CardPickByPriority DefaultTrashOrder()
-            {
+            public static ICardPicker DefaultTrashOrder()
+            {                
                 return new CardPickByPriority(                    
                     CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) == 8),                    
-                    CardAcceptance.For<CardTypes.Copper>());
+                    CardAcceptance.For<CardTypes.Copper>());                
             }
 
             public static bool ShouldBuyProvinces(GameState gameState)
@@ -306,53 +323,6 @@ namespace Program
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 2),
                            CardAcceptance.For<CardTypes.Silver>());
             }
-        }
-
-
-        public static class BigMoneyDoubleSmithy
-        {
-            // big money smithy player
-            public static PlayerAction Player(int playerNumber, int secondSmithy = 15)
-            {
-                return new PlayerAction(
-                            "BigMoneyDoubleSmithy",
-                            playerNumber,
-                            purchaseOrder: PurchaseOrder(secondSmithy),
-                            treasurePlayOrder: Default.TreasurePlayOrder(),
-                            actionOrder: ActionOrder(),
-                            trashOrder: Default.EmptyPickOrder(),
-                            discardOrder: Default.EmptyPickOrder());
-            }
-
-            private static CardPickByPriority PurchaseOrder(int secondSmithy)
-            {
-                return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 2),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),
-                           CardAcceptance.For<CardTypes.Smithy>(gameState => CountAllOwned<CardTypes.Smithy>(gameState) < 1),
-                           CardAcceptance.For<CardTypes.Smithy>(gameState => CountAllOwned<CardTypes.Smithy>(gameState) < 2 &&
-                                                                             gameState.players.CurrentPlayer.AllOwnedCards.Count() >= secondSmithy),
-                           CardAcceptance.For<CardTypes.Silver>());
-
-            }
-
-            private static CardPickByPriority ActionOrder()
-            {
-                return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Smithy>());
-            }
-        }
-
-        public static class BigMoneySingleSmithy
-        {
-            // big money smithy player
-            public static PlayerAction Player(int playerNumber)
-            {
-                return BigMoneyWithCard<CardTypes.Smithy>.Player(playerNumber);
-            }
-        }    
+        } 
     }
 }

@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CardAcceptance.cs" />
+    <Compile Include="Strategies\BigMoneyDoubleSmithy.cs" />
+    <Compile Include="Strategies\IllgottengainsMoneylender.cs" />
     <Compile Include="StrategyOptimizer\CardAcceptanceDescription.cs" />
     <Compile Include="CardPickByBuilderOrder.cs" />
     <Compile Include="CardPickByPriority.cs" />

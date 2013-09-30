@@ -1,839 +1,1169 @@
-ButcherPlazaWatchtower gained Copper.
-ButcherPlazaWatchtower gained Copper.
-ButcherPlazaWatchtower gained Copper.
-ButcherPlazaWatchtower gained Copper.
-ButcherPlazaWatchtower gained Copper.
-ButcherPlazaWatchtower gained Copper.
-ButcherPlazaWatchtower gained Copper.
-ButcherPlazaWatchtower gained Estate.
-ButcherPlazaWatchtower gained Estate.
-ButcherPlazaWatchtower gained Estate.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Estate.
-BigMoney gained Estate.
-BigMoney gained Estate.
-ButcherPlazaWatchtower reshuffled
-ButcherPlazaWatchtower Drew Copper into hand.
-ButcherPlazaWatchtower Drew Copper into hand.
-ButcherPlazaWatchtower Drew Copper into hand.
-ButcherPlazaWatchtower Drew Estate into hand.
-ButcherPlazaWatchtower Drew Copper into hand.
-BigMoney reshuffled
-BigMoney Drew Estate into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Estate into hand.
+IllgottengainsMoneylender gained Copper.
+IllgottengainsMoneylender gained Copper.
+IllgottengainsMoneylender gained Copper.
+IllgottengainsMoneylender gained Copper.
+IllgottengainsMoneylender gained Copper.
+IllgottengainsMoneylender gained Copper.
+IllgottengainsMoneylender gained Copper.
+IllgottengainsMoneylender gained Estate.
+IllgottengainsMoneylender gained Estate.
+IllgottengainsMoneylender gained Estate.
+BigMoneyDelayed gained Copper.
+BigMoneyDelayed gained Copper.
+BigMoneyDelayed gained Copper.
+BigMoneyDelayed gained Copper.
+BigMoneyDelayed gained Copper.
+BigMoneyDelayed gained Copper.
+BigMoneyDelayed gained Copper.
+BigMoneyDelayed gained Estate.
+BigMoneyDelayed gained Estate.
+BigMoneyDelayed gained Estate.
+IllgottengainsMoneylender reshuffled
+IllgottengainsMoneylender Drew Copper into hand.
+IllgottengainsMoneylender Drew Copper into hand.
+IllgottengainsMoneylender Drew Copper into hand.
+IllgottengainsMoneylender Drew Estate into hand.
+IllgottengainsMoneylender Drew Copper into hand.
+BigMoneyDelayed reshuffled
+BigMoneyDelayed Drew Estate into hand.
+BigMoneyDelayed Drew Copper into hand.
+BigMoneyDelayed Drew Copper into hand.
+BigMoneyDelayed Drew Copper into hand.
+BigMoneyDelayed Drew Estate into hand.
 ROUND 1
 -------------
-ButcherPlazaWatchtower begins turn
+IllgottengainsMoneylender begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  ButcherPlazaWatchtower Played Copper.
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 1 all together.
-  ButcherPlazaWatchtower Played Copper.
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 2 all together.
-  ButcherPlazaWatchtower Played Copper.
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 3 all together.
-  ButcherPlazaWatchtower Played Copper.
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 4 all together.
-  ButcherPlazaWatchtower bought Silver.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Estate into hand.
-  ButcherPlazaWatchtower Drew Estate into hand.
-  ButcherPlazaWatchtower ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  IllgottengainsMoneylender bought Moneylender.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(7), Estate(3), Moneylender(1), 
 
-BigMoney begins turn
+BigMoneyDelayed begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoney Played Copper.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 3 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-ButcherPlazaWatchtower begins turn
+IllgottengainsMoneylender begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  ButcherPlazaWatchtower Played Copper.
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 1 all together.
-  ButcherPlazaWatchtower Played Copper.
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 2 all together.
-  ButcherPlazaWatchtower Played Copper.
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 3 all together.
-  ButcherPlazaWatchtower bought Watchtower.
-  ButcherPlazaWatchtower reshuffled
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Silver into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower ends turn with deck: Copper(7), Estate(3), Silver(1), Watchtower(1), 
+  IllgottengainsMoneylender bought Silver.
+  IllgottengainsMoneylender reshuffled
+  IllgottengainsMoneylender Drew Silver into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Moneylender into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(7), Estate(3), Moneylender(1), Silver(1), 
 
-BigMoney begins turn
+BigMoneyDelayed begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoney Played Copper.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed reshuffled
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-ButcherPlazaWatchtower begins turn
-With hand: Copper,Copper,Copper,Silver,Watchtower,
-  ButcherPlazaWatchtower Played Watchtower.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Drew Estate into hand.
-  ButcherPlazaWatchtower Played Silver.
-    +2 Coin = 2 all together.
-  ButcherPlazaWatchtower Played Copper.
-    +1 Coin = 3 all together.
-  ButcherPlazaWatchtower Played Copper.
-    +1 Coin = 4 all together.
-  ButcherPlazaWatchtower Played Copper.
-    +1 Coin = 5 all together.
-  ButcherPlazaWatchtower Played Copper.
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Copper,Moneylender,Silver,
+  IllgottengainsMoneylender Played Moneylender.
+    IllgottengainsMoneylender trashed Copper.
+    +3 Coin = 3 all together.
+  IllgottengainsMoneylender Played Silver.
+    +2 Coin = 5 all together.
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 6 all together.
-  ButcherPlazaWatchtower bought Butcher.
-  ButcherPlazaWatchtower Drew Estate into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Estate into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(7), Estate(3), Silver(1), Watchtower(1), 
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 7 all together.
+  IllgottengainsMoneylender bought Ill-Gotten Gains.
+    BigMoneyDelayed gained Curse.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(6), Estate(3), Ill-Gotten Gains(1), Moneylender(1), Silver(1), 
 
-BigMoney begins turn
+BigMoneyDelayed begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoney Played Copper.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(3), 
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(1), Estate(3), Silver(3), 
 
 ROUND 4
 -------------
-ButcherPlazaWatchtower begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  ButcherPlazaWatchtower Played Copper.
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 1 all together.
-  ButcherPlazaWatchtower Played Copper.
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 2 all together.
-  ButcherPlazaWatchtower Played Copper.
-    +1 Coin = 3 all together.
-  ButcherPlazaWatchtower bought Watchtower.
-  ButcherPlazaWatchtower reshuffled
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Butcher into hand.
-  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(7), Estate(3), Silver(1), Watchtower(2), 
+  IllgottengainsMoneylender bought Copper.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender reshuffled
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Silver into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(7), Estate(3), Ill-Gotten Gains(1), Moneylender(1), Silver(1), 
 
-BigMoney begins turn
+BigMoneyDelayed begins turn
 With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoney Played Silver.
+  BigMoneyDelayed Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(4), 
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed reshuffled
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(1), Estate(3), Silver(4), 
 
 ROUND 5
 -------------
-ButcherPlazaWatchtower begins turn
-With hand: Butcher,Copper,Copper,Copper,Copper,
-  ButcherPlazaWatchtower Played Butcher.
-    +2 coin tokens = 2 all together.
-    ButcherPlazaWatchtower trashed Copper.
-    ButcherPlazaWatchtower gained Copper.
-  ButcherPlazaWatchtower Played Copper.
-    +1 Coin = 1 all together.
-  ButcherPlazaWatchtower Played Copper.
-    +1 Coin = 2 all together.
-  ButcherPlazaWatchtower Played Copper.
-    +1 Coin = 3 all together.
-  ButcherPlazaWatchtower spent 2 coin tokens.  0 remaining
-    +2 Coin = 5 all together.
-  ButcherPlazaWatchtower bought Butcher.
-  ButcherPlazaWatchtower Drew Silver into hand.
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower Drew Estate into hand.
-  ButcherPlazaWatchtower Drew Estate into hand.
-  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(7), Estate(3), Silver(1), Watchtower(2), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Silver,Silver,Silver,
-  BigMoney Played Silver.
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Copper,Copper,Silver,
+  IllgottengainsMoneylender Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Silver.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 3 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 5 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 6 all together.
+  IllgottengainsMoneylender bought Ill-Gotten Gains.
+    BigMoneyDelayed gained Curse.
+  IllgottengainsMoneylender Drew Moneylender into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(7), Estate(3), Ill-Gotten Gains(2), Moneylender(1), Silver(1), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDelayed Played Silver.
     +2 Coin = 4 all together.
-  BigMoney Played Silver.
-    +2 Coin = 6 all together.
-  BigMoney Played Copper.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
+  BigMoneyDelayed bought Gold.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(1), Silver(4), 
 
 ROUND 6
 -------------
-ButcherPlazaWatchtower begins turn
-With hand: Estate,Estate,Silver,Watchtower,Watchtower,
-  ButcherPlazaWatchtower Played Watchtower.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Played Silver.
-    +2 Coin = 2 all together.
-  ButcherPlazaWatchtower Played Copper.
-    +1 Coin = 3 all together.
-  ButcherPlazaWatchtower Played Copper.
+IllgottengainsMoneylender begins turn
+With hand: Copper,Estate,Estate,Ill-Gotten Gains,Moneylender,
+  IllgottengainsMoneylender Played Moneylender.
+    IllgottengainsMoneylender trashed Copper.
+    +3 Coin = 3 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
     +1 Coin = 4 all together.
-  ButcherPlazaWatchtower bought Plaza.
-    ButcherPlazaWatchtower Revealed Watchtower.
-    ... and placed card on top of deck
-  ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Estate into hand.
-  ButcherPlazaWatchtower reshuffled
-  ButcherPlazaWatchtower Drew Estate into hand.
-  ButcherPlazaWatchtower Drew Silver into hand.
-  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(7), Estate(3), Plaza(1), Silver(1), Watchtower(2), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney Played Copper.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 5 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(5), 
+  IllgottengainsMoneylender bought Ill-Gotten Gains.
+    BigMoneyDelayed gained Curse.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender reshuffled
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Moneylender into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(7), Estate(3), Ill-Gotten Gains(3), Moneylender(1), Silver(1), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(1), Silver(4), 
 
 ROUND 7
 -------------
-ButcherPlazaWatchtower begins turn
-With hand: Copper,Estate,Estate,Plaza,Silver,
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 2 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 1 all together.
-  ButcherPlazaWatchtower Played Silver.
-    +2 Coin = 2 all together.
-  ButcherPlazaWatchtower Played Copper.
-    +1 Coin = 3 all together.
-  ButcherPlazaWatchtower spent 1 coin tokens.  0 remaining
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Copper,Estate,Moneylender,
+  IllgottengainsMoneylender Played Moneylender.
+    IllgottengainsMoneylender trashed Copper.
+    +3 Coin = 3 all together.
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 4 all together.
-  ButcherPlazaWatchtower bought Plaza.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Butcher into hand.
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(7), Estate(3), Plaza(2), Silver(1), Watchtower(2), 
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 5 all together.
+  IllgottengainsMoneylender bought Ill-Gotten Gains.
+    BigMoneyDelayed gained Curse.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(6), Estate(3), Ill-Gotten Gains(4), Moneylender(1), Silver(1), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoney Played Silver.
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Curse,Silver,Silver,
+  BigMoneyDelayed Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(6), 
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDelayed bought Gold.
+  BigMoneyDelayed reshuffled
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(4), Estate(3), Gold(2), Silver(4), 
 
 ROUND 8
 -------------
-ButcherPlazaWatchtower begins turn
-With hand: Butcher,Copper,Copper,Watchtower,Watchtower,
-  ButcherPlazaWatchtower Played Butcher.
-    +2 coin tokens = 2 all together.
-    ButcherPlazaWatchtower trashed Copper.
-    ButcherPlazaWatchtower gained Copper.
-      ButcherPlazaWatchtower Revealed Watchtower.
-      ... and placed card on top of deck
-  ButcherPlazaWatchtower Played Copper.
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Estate,Ill-Gotten Gains,Ill-Gotten Gains,
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 1 all together.
-  ButcherPlazaWatchtower spent 2 coin tokens.  0 remaining
-    +2 Coin = 3 all together.
-  ButcherPlazaWatchtower bought Watchtower.
-    ButcherPlazaWatchtower Revealed Watchtower.
-    ... and placed card on top of deck
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(7), Estate(3), Plaza(2), Silver(1), Watchtower(3), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 2 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 3 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
     +1 Coin = 5 all together.
-  BigMoney Played Copper.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(6), 
+  IllgottengainsMoneylender bought Ill-Gotten Gains.
+    BigMoneyDelayed gained Curse.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Silver into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(8), Estate(3), Ill-Gotten Gains(5), Moneylender(1), Silver(1), 
+
+BigMoneyDelayed begins turn
+With hand: Curse,Curse,Estate,Estate,Gold,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(5), Estate(3), Gold(2), Silver(5), 
 
 ROUND 9
 -------------
-ButcherPlazaWatchtower begins turn
-With hand: Copper,Copper,Copper,Copper,Watchtower,
-  ButcherPlazaWatchtower Played Watchtower.
-    ButcherPlazaWatchtower Drew Estate into hand.
-    ButcherPlazaWatchtower Drew Butcher into hand.
-  ButcherPlazaWatchtower Played Copper.
-    +1 Coin = 1 all together.
-  ButcherPlazaWatchtower Played Copper.
-    +1 Coin = 2 all together.
-  ButcherPlazaWatchtower Played Copper.
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Estate,Ill-Gotten Gains,Silver,
+  IllgottengainsMoneylender Played Silver.
+    +2 Coin = 2 all together.
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 3 all together.
-  ButcherPlazaWatchtower Played Copper.
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 4 all together.
-  ButcherPlazaWatchtower bought Plaza.
-  ButcherPlazaWatchtower reshuffled
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower Drew Silver into hand.
-  ButcherPlazaWatchtower Drew Estate into hand.
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(7), Estate(3), Plaza(3), Silver(1), Watchtower(3), 
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 5 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 6 all together.
+  IllgottengainsMoneylender bought Ill-Gotten Gains.
+    BigMoneyDelayed gained Curse.
+  IllgottengainsMoneylender reshuffled
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(9), Estate(3), Ill-Gotten Gains(6), Moneylender(1), Silver(1), 
 
-BigMoney begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(6), 
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(6), Estate(3), Gold(2), Silver(6), 
 
 ROUND 10
 -------------
-ButcherPlazaWatchtower begins turn
-With hand: Copper,Estate,Plaza,Silver,Watchtower,
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 2 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 1 all together.
-  ButcherPlazaWatchtower Played Watchtower.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Drew Butcher into hand.
-    ButcherPlazaWatchtower Drew Estate into hand.
-  ButcherPlazaWatchtower Played Butcher.
-    +2 coin tokens = 3 all together.
-    ButcherPlazaWatchtower trashed Estate.
-    ButcherPlazaWatchtower spent 2 coin tokens.  1 remaining
-    ButcherPlazaWatchtower gained Plaza.
-  ButcherPlazaWatchtower Played Silver.
-    +2 Coin = 2 all together.
-  ButcherPlazaWatchtower Played Copper.
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Estate,Estate,Ill-Gotten Gains,
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 1 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 2 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
     +1 Coin = 3 all together.
-  ButcherPlazaWatchtower Played Copper.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 4 all together.
-  ButcherPlazaWatchtower bought Plaza.
-  ButcherPlazaWatchtower Drew Butcher into hand.
-  ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(7), Estate(2), Plaza(5), Silver(1), Watchtower(3), 
+  IllgottengainsMoneylender bought Silver.
+  IllgottengainsMoneylender Drew Silver into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Moneylender into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(10), Estate(3), Ill-Gotten Gains(6), Moneylender(1), Silver(2), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney Played Copper.
-    +1 Coin = 9 all together.
-  BigMoney bought Province.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(6), 
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Copper,Curse,Curse,
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(6), Estate(3), Gold(2), Silver(7), 
 
 ROUND 11
 -------------
-ButcherPlazaWatchtower begins turn
-With hand: Butcher,Plaza,Plaza,Watchtower,Watchtower,
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 2 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 2 all together.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 3 all together.
-    ButcherPlazaWatchtower Drew Estate into hand.
-  ButcherPlazaWatchtower Played Butcher.
-    +2 coin tokens = 4 all together.
-    ButcherPlazaWatchtower trashed Estate.
-    ButcherPlazaWatchtower spent 2 coin tokens.  2 remaining
-    ButcherPlazaWatchtower gained Plaza.
-      ButcherPlazaWatchtower Revealed Watchtower.
-      ... and placed card on top of deck
-  ButcherPlazaWatchtower Played Watchtower.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower reshuffled
-    ButcherPlazaWatchtower Drew Silver into hand.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 2 all together.
-    ButcherPlazaWatchtower Drew Butcher into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 3 all together.
-  ButcherPlazaWatchtower Played Watchtower.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 2 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 4 all together.
-  ButcherPlazaWatchtower Played Butcher.
-    +2 coin tokens = 6 all together.
-    ButcherPlazaWatchtower trashed Copper.
-    ButcherPlazaWatchtower spent 4 coin tokens.  2 remaining
-    ButcherPlazaWatchtower gained Plaza.
-  ButcherPlazaWatchtower Played Silver.
-    +2 Coin = 2 all together.
-  ButcherPlazaWatchtower Played Copper.
-    +1 Coin = 3 all together.
-  ButcherPlazaWatchtower Played Copper.
-    +1 Coin = 4 all together.
-  ButcherPlazaWatchtower bought Plaza.
-  ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(6), Estate(1), Plaza(8), Silver(1), Watchtower(3), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Estate,Moneylender,Silver,
+  IllgottengainsMoneylender Played Moneylender.
+    IllgottengainsMoneylender trashed Copper.
+    +3 Coin = 3 all together.
+  IllgottengainsMoneylender Played Silver.
+    +2 Coin = 5 all together.
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(6), 
+  IllgottengainsMoneylender bought Ill-Gotten Gains.
+    BigMoneyDelayed gained Curse.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(9), Estate(3), Ill-Gotten Gains(7), Moneylender(1), Silver(2), 
+
+BigMoneyDelayed begins turn
+With hand: Gold,Silver,Silver,Silver,Silver,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 9 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 11 all together.
+  BigMoneyDelayed bought Gold.
+  BigMoneyDelayed reshuffled
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(7), Estate(3), Gold(3), Silver(7), 
 
 ROUND 12
 -------------
-ButcherPlazaWatchtower begins turn
-With hand: Copper,Copper,Plaza,Plaza,Watchtower,
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 2 all together.
-    ButcherPlazaWatchtower Drew Estate into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 3 all together.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 3 all together.
-    ButcherPlazaWatchtower reshuffled
-    ButcherPlazaWatchtower Drew Silver into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 4 all together.
-  ButcherPlazaWatchtower Played Watchtower.
-    ButcherPlazaWatchtower Drew Butcher into hand.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 3 all together.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 5 all together.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 4 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 6 all together.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 5 all together.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower Discarded Silver.
-    +1 coin tokens = 7 all together.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 6 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 8 all together.
-  ButcherPlazaWatchtower Played Butcher.
-    +2 coin tokens = 10 all together.
-    ButcherPlazaWatchtower trashed Estate.
-    ButcherPlazaWatchtower spent 6 coin tokens.  4 remaining
-    ButcherPlazaWatchtower gained Province.
-  ButcherPlazaWatchtower spent 4 coin tokens.  0 remaining
-    +4 Coin = 4 all together.
-  ButcherPlazaWatchtower bought Plaza.
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower Drew Butcher into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(6), Plaza(9), Province(1), Silver(1), Watchtower(3), 
-
-BigMoney begins turn
-With hand: Copper,Estate,Estate,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Copper,Ill-Gotten Gains,Ill-Gotten Gains,
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 1 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 2 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 3 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 4 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 5 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
     +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(6), 
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 7 all together.
+  IllgottengainsMoneylender bought Ill-Gotten Gains.
+    BigMoneyDelayed gained Curse.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(11), Estate(3), Ill-Gotten Gains(8), Moneylender(1), Silver(2), 
+
+BigMoneyDelayed begins turn
+With hand: Curse,Curse,Curse,Estate,Silver,
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(8), Estate(3), Gold(3), Silver(7), 
 
 ROUND 13
 -------------
-ButcherPlazaWatchtower begins turn
-With hand: Butcher,Copper,Plaza,Watchtower,Watchtower,
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 2 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 1 all together.
-  ButcherPlazaWatchtower Played Watchtower.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower reshuffled
-    ButcherPlazaWatchtower Drew Province into hand.
-    ButcherPlazaWatchtower Drew Butcher into hand.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 2 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 2 all together.
-  ButcherPlazaWatchtower Played Watchtower.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower Drew Silver into hand.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 2 all together.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 3 all together.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 3 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 4 all together.
-  ButcherPlazaWatchtower Played Butcher.
-    +2 coin tokens = 6 all together.
-    ButcherPlazaWatchtower trashed Silver.
-    ButcherPlazaWatchtower spent 5 coin tokens.  1 remaining
-    ButcherPlazaWatchtower gained Province.
-  ButcherPlazaWatchtower Played Butcher.
-    +2 coin tokens = 3 all together.
-    ButcherPlazaWatchtower trashed Province.
-    ButcherPlazaWatchtower gained Province.
-  ButcherPlazaWatchtower spent 3 coin tokens.  0 remaining
-    +3 Coin = 3 all together.
-  ButcherPlazaWatchtower bought Silver.
-  ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(6), Plaza(9), Province(2), Silver(1), Watchtower(3), 
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Ill-Gotten Gains,Ill-Gotten Gains,Ill-Gotten Gains,
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 1 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 2 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 3 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 5 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 6 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 7 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 8 all together.
+  IllgottengainsMoneylender bought Province.
+  IllgottengainsMoneylender reshuffled
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(14), Estate(3), Ill-Gotten Gains(8), Moneylender(1), Province(1), Silver(2), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Gold,Gold,Silver,
-  BigMoney Played Gold.
+BigMoneyDelayed begins turn
+With hand: Curse,Estate,Estate,Gold,Gold,
+  BigMoneyDelayed Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Gold.
+  BigMoneyDelayed Played Gold.
     +3 Coin = 6 all together.
-  BigMoney Played Silver.
-    +2 Coin = 8 all together.
-  BigMoney Played Copper.
-    +1 Coin = 9 all together.
-  BigMoney Played Copper.
-    +1 Coin = 10 all together.
-  BigMoney bought Province.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(2), Silver(6), 
+  BigMoneyDelayed bought Gold.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(8), Estate(3), Gold(4), Silver(7), 
 
 ROUND 14
 -------------
-ButcherPlazaWatchtower begins turn
-With hand: Copper,Plaza,Plaza,Plaza,Watchtower,
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 2 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 1 all together.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 3 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 2 all together.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 4 all together.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 3 all together.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 5 all together.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 6 all together.
-    ButcherPlazaWatchtower reshuffled
-    ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 7 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 4 all together.
-  ButcherPlazaWatchtower Played Watchtower.
-    ButcherPlazaWatchtower Drew Silver into hand.
-    ButcherPlazaWatchtower Drew Watchtower into hand.
-    ButcherPlazaWatchtower Drew Butcher into hand.
-    ButcherPlazaWatchtower Drew Province into hand.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 7 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 5 all together.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 8 all together.
-    ButcherPlazaWatchtower Drew Butcher into hand.
-    ButcherPlazaWatchtower Discarded Silver.
-    +1 coin tokens = 6 all together.
-  ButcherPlazaWatchtower Played Butcher.
-    +2 coin tokens = 8 all together.
-    ButcherPlazaWatchtower trashed Butcher.
-    ButcherPlazaWatchtower spent 3 coin tokens.  5 remaining
-    ButcherPlazaWatchtower gained Province.
-      ButcherPlazaWatchtower Revealed Watchtower.
-      ... and placed card on top of deck
-  ButcherPlazaWatchtower Played Watchtower.
-    ButcherPlazaWatchtower Drew Province into hand.
-    ButcherPlazaWatchtower Drew Province into hand.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 7 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 6 all together.
-  ButcherPlazaWatchtower Played Copper.
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Copper,Copper,Ill-Gotten Gains,
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 1 all together.
-  ButcherPlazaWatchtower Played Copper.
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 2 all together.
-  ButcherPlazaWatchtower spent 6 coin tokens.  0 remaining
-    +6 Coin = 8 all together.
-  ButcherPlazaWatchtower bought Province.
-  ButcherPlazaWatchtower Drew Copper into hand.
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower reshuffled
-  ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower Drew Butcher into hand.
-  ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(6), Plaza(9), Province(4), Silver(1), Watchtower(3), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 3 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 5 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
     +1 Coin = 6 all together.
-  BigMoney Played Copper.
+  IllgottengainsMoneylender bought Ill-Gotten Gains.
+    BigMoneyDelayed gained Curse.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(15), Estate(3), Ill-Gotten Gains(9), Moneylender(1), Province(1), Silver(2), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 7 all together.
-  BigMoney bought Duchy.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(5), Province(2), Silver(6), 
+  BigMoneyDelayed bought Gold.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(9), Estate(3), Gold(5), Silver(7), 
 
 ROUND 15
 -------------
-ButcherPlazaWatchtower begins turn
-With hand: Butcher,Copper,Plaza,Watchtower,Watchtower,
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 2 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 1 all together.
-  ButcherPlazaWatchtower Played Watchtower.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower Drew Watchtower into hand.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 2 all together.
-    ButcherPlazaWatchtower Drew Province into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 2 all together.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 3 all together.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 4 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 3 all together.
-  ButcherPlazaWatchtower Played Butcher.
-    +2 coin tokens = 5 all together.
-    ButcherPlazaWatchtower trashed Watchtower.
-    ButcherPlazaWatchtower spent 5 coin tokens.  0 remaining
-    ButcherPlazaWatchtower gained Province.
-      ButcherPlazaWatchtower Revealed Watchtower.
-      ... and placed card on top of deck
-  ButcherPlazaWatchtower Played Watchtower.
-    ButcherPlazaWatchtower Drew Province into hand.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 3 all together.
-    ButcherPlazaWatchtower Drew Province into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 1 all together.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 4 all together.
-    ButcherPlazaWatchtower Drew Plaza into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 2 all together.
-  ButcherPlazaWatchtower Played Plaza.
-    +2 Actions = 5 all together.
-    ButcherPlazaWatchtower Drew Copper into hand.
-    ButcherPlazaWatchtower Discarded Copper.
-    +1 coin tokens = 3 all together.
-  ButcherPlazaWatchtower spent 2 coin tokens.  1 remaining
-    +2 Coin = 2 all together.
-  ButcherPlazaWatchtower bought Estate.
-  ButcherPlazaWatchtower Drew Silver into hand.
-  ButcherPlazaWatchtower Drew Province into hand.
-  ButcherPlazaWatchtower Drew Province into hand.
-  ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower Drew Plaza into hand.
-  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(6), Estate(1), Plaza(9), Province(5), Silver(1), Watchtower(2), 
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Estate,Ill-Gotten Gains,Ill-Gotten Gains,
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 1 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 2 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 3 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 5 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 6 all together.
+  IllgottengainsMoneylender bought Ill-Gotten Gains.
+    BigMoneyDelayed gained Curse.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Silver into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(17), Estate(3), Ill-Gotten Gains(10), Moneylender(1), Province(1), Silver(2), 
 
-Game ended in 15 turns.
-ButcherPlazaWatchtower Won!
-ButcherPlazaWatchtower total score: 31
-  Butcher(1), Copper(6), Estate(1), Plaza(9), Province(5), Silver(1), Watchtower(2), 
-BigMoney total score: 18
-  Copper(7), Duchy(1), Estate(3), Gold(5), Province(2), Silver(6), 
-Trash contains: Butcher(1), Copper(3), Estate(3), Province(1), Silver(1), Watchtower(1), 
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Curse,Silver,Silver,
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDelayed bought Gold.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(6), Silver(7), 
+
+ROUND 16
+-------------
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Estate,Ill-Gotten Gains,Silver,
+  IllgottengainsMoneylender Played Silver.
+    +2 Coin = 2 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 3 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 5 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 6 all together.
+  IllgottengainsMoneylender bought Gold.
+  IllgottengainsMoneylender Drew Silver into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(18), Estate(3), Gold(1), Ill-Gotten Gains(10), Moneylender(1), Province(1), Silver(2), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Curse,Curse,Silver,Silver,
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed reshuffled
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(6), Silver(8), 
+
+ROUND 17
+-------------
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Estate,Ill-Gotten Gains,Silver,
+  IllgottengainsMoneylender Played Silver.
+    +2 Coin = 2 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 3 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 5 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 6 all together.
+  IllgottengainsMoneylender bought Gold.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Province into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Moneylender into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(19), Estate(3), Gold(2), Ill-Gotten Gains(10), Moneylender(1), Province(1), Silver(2), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Curse,Estate,Gold,Silver,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDelayed bought Gold.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(7), Silver(8), 
+
+ROUND 18
+-------------
+IllgottengainsMoneylender begins turn
+With hand: Copper,Ill-Gotten Gains,Ill-Gotten Gains,Moneylender,Province,
+  IllgottengainsMoneylender Played Moneylender.
+    IllgottengainsMoneylender trashed Copper.
+    +3 Coin = 3 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 4 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 5 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 6 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 7 all together.
+  IllgottengainsMoneylender bought Gold.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender reshuffled
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(20), Estate(3), Gold(3), Ill-Gotten Gains(10), Moneylender(1), Province(1), Silver(2), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyDelayed bought Province.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(7), Province(1), Silver(8), 
+
+ROUND 19
+-------------
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Copper,Copper,Ill-Gotten Gains,
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 1 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 2 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 3 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 5 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 6 all together.
+  IllgottengainsMoneylender bought Gold.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Silver into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(21), Estate(3), Gold(4), Ill-Gotten Gains(10), Moneylender(1), Province(1), Silver(2), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Curse,Curse,Gold,Silver,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDelayed bought Gold.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(8), Province(1), Silver(8), 
+
+ROUND 20
+-------------
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Copper,Ill-Gotten Gains,Silver,
+  IllgottengainsMoneylender Played Silver.
+    +2 Coin = 2 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 3 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 5 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 6 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 7 all together.
+  IllgottengainsMoneylender bought Gold.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(22), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(1), Silver(2), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Curse,Curse,Estate,Silver,
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(8), Province(1), Silver(9), 
+
+ROUND 21
+-------------
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Ill-Gotten Gains,Ill-Gotten Gains,Ill-Gotten Gains,
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 1 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 2 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 3 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 5 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 6 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 7 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 8 all together.
+  IllgottengainsMoneylender bought Province.
+  IllgottengainsMoneylender Drew Gold into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(25), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(2), Silver(2), 
+
+BigMoneyDelayed begins turn
+With hand: Curse,Curse,Estate,Silver,Silver,
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(8), Province(1), Silver(10), 
+
+ROUND 22
+-------------
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Estate,Gold,Ill-Gotten Gains,
+  IllgottengainsMoneylender Played Gold.
+    +3 Coin = 3 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 5 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 6 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 7 all together.
+  IllgottengainsMoneylender bought Duchy.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Gold into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(26), Duchy(1), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(2), Silver(2), 
+
+BigMoneyDelayed begins turn
+With hand: Curse,Curse,Curse,Gold,Gold,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyDelayed bought Gold.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed reshuffled
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(9), Province(1), Silver(10), 
+
+ROUND 23
+-------------
+IllgottengainsMoneylender begins turn
+With hand: Copper,Estate,Gold,Ill-Gotten Gains,Ill-Gotten Gains,
+  IllgottengainsMoneylender Played Gold.
+    +3 Coin = 3 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 5 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 6 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 7 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 8 all together.
+  IllgottengainsMoneylender bought Province.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Moneylender into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(28), Duchy(1), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(3), Silver(2), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Curse,Gold,Silver,Silver,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyDelayed bought Province.
+  BigMoneyDelayed Drew Province into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(9), Province(2), Silver(10), 
+
+ROUND 24
+-------------
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Estate,Ill-Gotten Gains,Moneylender,
+  IllgottengainsMoneylender Played Moneylender.
+    IllgottengainsMoneylender trashed Copper.
+    +3 Coin = 3 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 5 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 6 all together.
+  IllgottengainsMoneylender bought Duchy.
+  IllgottengainsMoneylender Drew Silver into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(28), Duchy(2), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(3), Silver(2), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Curse,Gold,Province,Silver,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDelayed bought Duchy.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Duchy(1), Estate(3), Gold(9), Province(2), Silver(10), 
+
+ROUND 25
+-------------
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Copper,Copper,Silver,
+  IllgottengainsMoneylender Played Silver.
+    +2 Coin = 2 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 3 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 5 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 6 all together.
+  IllgottengainsMoneylender bought Duchy.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Province into hand.
+  IllgottengainsMoneylender Drew Gold into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(28), Duchy(3), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(3), Silver(2), 
+
+BigMoneyDelayed begins turn
+With hand: Curse,Curse,Curse,Estate,Silver,
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Duchy(1), Estate(3), Gold(9), Province(2), Silver(10), 
+
+ROUND 26
+-------------
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Gold,Ill-Gotten Gains,Province,
+  IllgottengainsMoneylender Played Gold.
+    +3 Coin = 3 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 5 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 6 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 7 all together.
+  IllgottengainsMoneylender bought Duchy.
+  IllgottengainsMoneylender reshuffled
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Duchy into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(29), Duchy(4), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(3), Silver(2), 
+
+BigMoneyDelayed begins turn
+With hand: Curse,Curse,Estate,Gold,Silver,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDelayed bought Duchy.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Duchy(2), Estate(3), Gold(9), Province(2), Silver(10), 
+
+ROUND 27
+-------------
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Copper,Copper,Duchy,
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 1 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 2 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 3 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 4 all together.
+  IllgottengainsMoneylender bought Silver.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Province into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(29), Duchy(4), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(3), Silver(3), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Curse,Estate,Gold,Silver,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDelayed bought Duchy.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Curse into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Duchy(3), Estate(3), Gold(9), Province(2), Silver(10), 
+
+ROUND 28
+-------------
+IllgottengainsMoneylender begins turn
+With hand: Copper,Copper,Copper,Ill-Gotten Gains,Province,
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 1 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 2 all together.
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 3 all together.
+  IllgottengainsMoneylender Played Ill-Gotten Gains.
+    +1 Coin = 4 all together.
+    IllgottengainsMoneylender gained Copper.
+      ... and placed card in hand
+  IllgottengainsMoneylender Played Copper.
+    +1 Coin = 5 all together.
+  IllgottengainsMoneylender bought Duchy.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Silver into hand.
+  IllgottengainsMoneylender Drew Estate into hand.
+  IllgottengainsMoneylender Drew Copper into hand.
+  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
+  IllgottengainsMoneylender ends turn with deck: Copper(30), Duchy(5), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(3), Silver(3), 
+
+Game ended in 28 turns.
+IllgottengainsMoneylender Won!
+IllgottengainsMoneylender total score: 36
+  Copper(30), Duchy(5), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(3), Silver(3), 
+BigMoneyDelayed total score: 14
+  Copper(7), Curse(10), Duchy(3), Estate(3), Gold(9), Province(2), Silver(10), 
+Trash contains: Copper(6), 

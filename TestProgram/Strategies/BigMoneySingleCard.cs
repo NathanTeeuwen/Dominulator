@@ -14,10 +14,10 @@ namespace Program
             where T : Card, new()
         {
             // big money smithy player
-            public static PlayerAction Player(int playerNumber, int cardCount = 1, int afterSilverCount = 0)
+            public static PlayerAction Player(int playerNumber, string playerName = null, int cardCount = 1, int afterSilverCount = 0)
             {
                 return new PlayerAction(
-                            "BigMoneyWithCard<" + typeof(T).Name + ">",
+                            playerName == null ? "BigMoneyWithCard<" + typeof(T).Name + ">" : playerName,
                             playerNumber,
                             purchaseOrder: PurchaseOrder(cardCount, afterSilverCount),                            
                             actionOrder: ActionOrder());
@@ -43,10 +43,51 @@ namespace Program
             }
         }
 
+        public static class BigMoneySingleSmithy
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return BigMoneyWithCard<CardTypes.Smithy>.Player(playerNumber);
+            }
+        }
+
+        public static class BigMoneySingleWitch
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return BigMoneyWithCard<CardTypes.Witch>.Player(playerNumber, "BigMoneySingleWitch");
+            }
+        }
+
+        public static class BigMoneyDoubleWitch
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return BigMoneyWithCard<CardTypes.Witch>.Player(playerNumber, "BigMoneyDoubleWitch", cardCount:2);
+            }
+        }
+
+        public static class BigMoneyMoneylender
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return BigMoneyWithCard<CardTypes.Moneylender>.Player(playerNumber, cardCount: 2);
+            }
+        } 
+
         public static class BigMoneyWithThief            
         {
             // big money smithy player
-            public static PlayerAction Player(int playerNumber, int cardCount = 1)
+            public static PlayerAction Player(int playerNumber)
+            {
+                return CustomPlayer(playerNumber);                
+            }
+
+            public static PlayerAction CustomPlayer(int playerNumber, int cardCount = 1)
             {
                 return new MyPlayerAction(playerNumber, cardCount);                            
             }
@@ -68,8 +109,6 @@ namespace Program
                     return card.Is<CardTypes.Copper>() ? false : true;
                 }
             }
-
-            
 
             public static ICardPicker PurchaseOrder(int cardCount)
             {

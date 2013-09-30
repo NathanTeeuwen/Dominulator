@@ -141,7 +141,7 @@ namespace Dominion
             if (player.ownsCardThatMightProvideDiscountWhileInPlay)
             {
                 foreach (Card cardInPlay in player.CardsInPlay)
-                {
+                {                    
                     effectiveCost -= cardInPlay.ProvideDiscountForWhileInPlay(this);
                 }
             }
@@ -214,7 +214,7 @@ namespace Dominion
             {
                 return this.doSpecializedActionOnBuyWhileInPlay != null;
             }
-        }
+       }
 
         public void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
@@ -254,7 +254,7 @@ namespace Dominion
 
         public int ProvideDiscountForWhileInPlay(Card card)
         {
-            return 0;
+            return (this.MightProvideDiscountWhileInPlay) ? this.provideDiscountForWhileInPlay(card) : 0;                
         }
 
         virtual public int ProvideSelfDiscount(PlayerState playState)

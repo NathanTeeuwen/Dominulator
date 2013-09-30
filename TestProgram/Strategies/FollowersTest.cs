@@ -13,7 +13,7 @@ namespace Program
         public static class FollowersTest            
         {
             // big money smithy player
-            public static PlayerAction Player(int playerNumber, int cardCost)
+            public static PlayerAction TestPlayer(int playerNumber, int cardCost)
             {
                 return new PlayerAction(
                             "FollowersTest",

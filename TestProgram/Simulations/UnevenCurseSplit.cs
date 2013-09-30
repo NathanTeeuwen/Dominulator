@@ -51,8 +51,8 @@ namespace Program.Simulations.UnevenCurseSplit
             var gameLogFactory = new GameLogFactory();
 
             Program.ComparePlayers(
-                Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(1, 2),
-                Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2, 2),
+                Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(1, cardCount:2),
+                Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2, cardCount:2),
                 firstPlayerAdvantage: true,
                 numberOfGames: gameCount,
                 createGameLog: new Program.CreateGameLog(gameLogFactory.CreateGameLog),
@@ -69,9 +69,7 @@ namespace Program.Simulations.UnevenCurseSplit
         private object theLock = new object();
         private int player1Win = 0;
         private int player2Win = 0;
-        private int totalGameCount = 0;
-        private int winningPlayerWas25 = 0;
-        private int countGame25 = 0;
+        private int totalGameCount = 0;        
 
         public float Player1WinPercent
         {
