@@ -208,7 +208,8 @@ namespace Program
 
             public static ICardPicker DefaultTrashOrder()
             {                
-                return new CardPickByPriority(                    
+                return new CardPickByPriority(
+                    CardAcceptance.For<CardTypes.Curse>(),
                     CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) == 8),                    
                     CardAcceptance.For<CardTypes.Copper>());                
             }

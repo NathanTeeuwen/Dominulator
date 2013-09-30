@@ -42,6 +42,7 @@ namespace Program
                            CardAcceptance.For<T>());
             }
         }
+        
         /*
         public static class BigMoneyTorturer
         {
