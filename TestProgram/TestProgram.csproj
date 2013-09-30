@@ -49,8 +49,8 @@
     <Compile Include="CardPickByPriority.cs" />
     <Compile Include="CardPickConcatenator.cs" />
     <Compile Include="CompareStrategies.cs" />
-    <Compile Include="Comparison.cs" />
-    <Compile Include="CountSource.cs" />
+    <Compile Include="StrategyOptimizer\Comparison.cs" />
+    <Compile Include="StrategyOptimizer\CountSource.cs" />
     <Compile Include="StrategyOptimizer\GeneticAlgorithm.cs" />
     <Compile Include="ICardPicker.cs" />
     <Compile Include="StrategyOptimizer\MatchDescription.cs" />
