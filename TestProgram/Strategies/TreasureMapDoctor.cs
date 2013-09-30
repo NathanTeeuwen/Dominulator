@@ -80,12 +80,12 @@ namespace Program
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Doctor>(gameState => CountAllOwned<CardTypes.Doctor>(gameState) < 1 && gameState.players.CurrentPlayer.AvailableCoins >= 5),
                            CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 5),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 2),
+                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 5),
+                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
                            CardAcceptance.For<CardTypes.Gold>(),
                            CardAcceptance.For<CardTypes.TreasureMap>(gameState => CountAllOwned<CardTypes.Gold>(gameState) == 0),
                            //CardAcceptance.For<CardTypes.Doctor>(gameState => CountAllOwned<CardTypes.Doctor>(gameState) == 0),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 4),
+                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
                            CardAcceptance.For<CardTypes.Silver>());                           
             }
 

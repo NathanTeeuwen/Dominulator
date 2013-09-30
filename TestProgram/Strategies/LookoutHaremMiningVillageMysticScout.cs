@@ -104,9 +104,9 @@ namespace Program
             {
                 return new CardPickByPriority(
                          CardAcceptance.For<CardTypes.Province>(),
-                         CardAcceptance.For<CardTypes.Harem>(gameState => gameState.GetPile<CardTypes.Province>().Count() > 1),
-                         CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 5),
-                         CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() < 3),                         
+                         CardAcceptance.For<CardTypes.Harem>(gameState => CountOfPile<CardTypes.Province>(gameState) > 1),
+                         CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) < 5),
+                         CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 3),                         
                          CardAcceptance.For<CardTypes.Mystic>(),
                          CardAcceptance.For<CardTypes.Scout>(gameState => ShouldBuyScout(gameState)),
                          //CardAcceptance.For<CardTypes.MiningVillage>(),                         

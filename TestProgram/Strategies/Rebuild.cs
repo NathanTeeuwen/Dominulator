@@ -35,7 +35,7 @@ namespace Program
                     
                     PlayerState currentPlayer = gameState.players.CurrentPlayer;
                     
-                    if (gameState.GetPile<CardTypes.Duchy>().Count() == 0)
+                    if (CountOfPile<CardTypes.Duchy>(gameState) == 0)
                     {
                         return typeof(CardTypes.Estate);
                     }
@@ -59,7 +59,7 @@ namespace Program
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Province>(),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => CountAllOwned<CardTypes.Estate>(gameState) < CountAllOwned<CardTypes.Rebuild>(gameState)),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 2 || gameState.GetPile<CardTypes.Duchy>().Count() == 0),
+                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2 || CountOfPile<CardTypes.Duchy>(gameState) == 0),
                            CardAcceptance.For<CardTypes.Rebuild>(gameState => CountAllOwned<CardTypes.Rebuild>(gameState) < 3),
                            CardAcceptance.For<CardTypes.Gold>(),                           
                            CardAcceptance.For<CardTypes.Silver>());

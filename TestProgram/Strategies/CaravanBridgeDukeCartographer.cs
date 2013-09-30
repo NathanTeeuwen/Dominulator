@@ -73,7 +73,7 @@ namespace Program
                     CardAcceptance.For<Duke>(gameState => ShouldBuyDukeOverDuchy(gameState) && ShouldBuyDuchyDukeOverPowerUp(gameState)),
                     CardAcceptance.For<Duchy>(ShouldBuyDuchyDukeOverPowerUp),
                     CardAcceptance.For<Duke>(ShouldBuyDuchyDukeOverPowerUp),
-                    CardAcceptance.For<Estate>(gameState => gameState.GetPile<Province>().Count() < 2),                    
+                    CardAcceptance.For<Estate>(gameState => CountOfPile<Province>(gameState) < 2),                    
                     CardAcceptance.For<Duke>(gameState => ShouldBuyDukeOverDuchy(gameState) && AtEndGame(gameState)),
                     CardAcceptance.For<Duchy>(AtEndGame),
                     CardAcceptance.For<Duke>(AtEndGame),                    
@@ -89,7 +89,7 @@ namespace Program
 
                 var lowPriority = new CardPickByPriority(
                            CardAcceptance.For<Caravan>(),
-                           CardAcceptance.For<Estate>(gameState => gameState.GetPile<Province>().Count() < 4),
+                           CardAcceptance.For<Estate>(gameState => CountOfPile<Province>(gameState) < 4),
                            CardAcceptance.For<Silver>());
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);               
@@ -103,7 +103,7 @@ namespace Program
 
             private static bool AtEndGame(GameState gameState)
             {
-                return gameState.GetPile<Duchy>().Count() <= 6;
+                return CountOfPile<Duchy>(gameState) <= 6;
             }
 
             private static bool ShouldBuyDuchyDukeOverPowerUp(GameState gameState)
@@ -116,7 +116,7 @@ namespace Program
             {                
                 /*
                 if (gameState.players.CurrentPlayer.AvailableBuys == 1 &&
-                    gameState.GetPile<Province>().Count() == 1)
+                    CountOfPile<Province>(gameState) == 1)
                 {
                     return true;
                 }

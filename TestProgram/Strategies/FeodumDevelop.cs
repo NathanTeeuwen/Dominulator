@@ -86,7 +86,7 @@ namespace Program
 
             private static bool ShouldTrashFeodum(GameState gameState)
             {
-                int countFeodumRemaining = gameState.GetPile<CardTypes.Feodum>().Count();
+                int countFeodumRemaining = CountOfPile<CardTypes.Feodum>(gameState);
 
                 int countSilvers = CountAllOwned<CardTypes.Silver>(gameState);
                 int countFeodum = CountAllOwned<CardTypes.Feodum>(gameState);
@@ -104,7 +104,7 @@ namespace Program
 
             private static bool ShouldGainFeodum(GameState gameState)
             {
-                int countFeodumRemaining = gameState.GetPile<CardTypes.Feodum>().Count();
+                int countFeodumRemaining = CountOfPile<CardTypes.Feodum>(gameState);
 
                 int countSilvers = CountAllOwned<CardTypes.Silver>(gameState);
                 int countFeodum = CountAllOwned<CardTypes.Feodum>(gameState);

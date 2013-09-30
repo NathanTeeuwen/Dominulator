@@ -29,7 +29,7 @@ namespace Program
             {
                 var highPriority = new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 4));
+                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4));
 
                 var buildOrder = new CardPickByBuildOrder(
                     new CardTypes.FishingVillage(),

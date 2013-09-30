@@ -29,8 +29,8 @@ namespace Program
             {
                 var highPriority = new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Province>(ShouldBuyProvince),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count() <= 4));
+                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),
+                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4));
 
                 var buildOrder = new CardPickByBuildOrder(
                     new CardTypes.Talisman(),
