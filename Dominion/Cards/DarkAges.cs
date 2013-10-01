@@ -198,18 +198,21 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.GainCardsFromSupply<Copper>(gameState, 3, DeckPlacement.Hand);
-        }        
+        }
 
-        public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState)
+        public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
         {
+            cancelsAttack = false;
+
             bool wasDiscarded = currentPlayer.RequestPlayerDiscardCardFromHand(gameState, card => card.Is<Beggar>(), isOptional: true);
-            if (wasDiscarded)
+            if (!wasDiscarded)
             {
-                currentPlayer.GainCardsFromSupply<CardTypes.Silver>(gameState, 1, defaultLocation:DeckPlacement.TopOfDeck);
-                currentPlayer.GainCardFromSupply<CardTypes.Silver>(gameState); 
+                return false;                
             }
 
-            return false;
+            currentPlayer.GainCardsFromSupply<CardTypes.Silver>(gameState, 1, defaultLocation: DeckPlacement.TopOfDeck);
+            currentPlayer.GainCardFromSupply<CardTypes.Silver>(gameState);
+            return true;
         }
     }
 

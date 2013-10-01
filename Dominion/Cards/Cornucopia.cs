@@ -130,7 +130,7 @@ namespace Dominion.CardTypes
             currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false);
         }
 
-        public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState)
+        public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
         {
             throw new NotImplementedException();
         }
@@ -158,8 +158,8 @@ namespace Dominion.CardTypes
             : base("Jester", coinCost: 5, isAction: true, isAttack: true, plusCoins: 2)
         {
         }
-        
-        public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState)
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             throw new NotImplementedException();
         }

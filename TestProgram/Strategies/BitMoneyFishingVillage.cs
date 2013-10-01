@@ -17,8 +17,7 @@ namespace Program
                 return new PlayerAction(
                             "FishingVillage",
                             playerNumber,
-                            purchaseOrder: PurchaseOrder(),
-                            actionOrder: ActionOrder());
+                            purchaseOrder: PurchaseOrder());
             }
 
             private static CardPickByPriority PurchaseOrder()
@@ -30,12 +29,28 @@ namespace Program
                            CardAcceptance.For<CardTypes.Gold>(),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count < 4),
                            CardAcceptance.For<CardTypes.FishingVillage>());
+            }          
+        }
+
+        public static class FishingVillageTest
+        {
+            public static PlayerAction Player(int playerNumber)
+            {
+                return new PlayerAction(
+                            "FishingVillageTest",
+                            playerNumber,
+                            purchaseOrder: PurchaseOrder());
             }
 
-            private static CardPickByPriority ActionOrder()
+            private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.FishingVillage>());
+                           CardAcceptance.For<CardTypes.Province>(Default.ShouldBuyProvinces),
+                           CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count <= 4),
+                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count <= 2),
+                           CardAcceptance.For<CardTypes.Gold>(),
+                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count < 4),
+                           CardAcceptance.For<CardTypes.TestCards.FishingVillageAvailableForDeckCycle>());
             }
         }
     }

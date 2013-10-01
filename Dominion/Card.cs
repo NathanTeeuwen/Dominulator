@@ -161,9 +161,10 @@ namespace Dominion
 
         }
 
-        // return true if blocks attack;
-        virtual public bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState)
+        // return true if the card chose to react in some way;
+        virtual public bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
         {
+            cancelsAttack = false;
             // by default, all cards are affected by attack
             return false;
         }

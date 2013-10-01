@@ -379,21 +379,24 @@ namespace Dominion.CardTypes
             }
         }
 
-        public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState)
+        public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
         {
+            cancelsAttack = false;
+
             Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(card => card.Is<SecretChamber>(), gameState);
-            if (revealedCard != null)
+            if (revealedCard == null)
             {
-                currentPlayer.DrawAdditionalCardsIntoHand(2);
-                for (int i = 0; i < 2; ++i)
-                {
-                    currentPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard => true, false);
-                }
+                return false;                
             }
 
+            currentPlayer.DrawAdditionalCardsIntoHand(2);
+            for (int i = 0; i < 2; ++i)
+            {
+                currentPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard => true, false);
+            }
             currentPlayer.MoveRevealedCardToHand(revealedCard);
 
-            return false;
+            return true;
         }
     }
 

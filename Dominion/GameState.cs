@@ -210,7 +210,8 @@ namespace Dominion
             currentPlayerAction.BeginTurn();
 
             ReturnCardsToHandAtStartOfTurn(currentPlayer);
-            DoDurationActionsFromPreviousTurn(currentPlayer);
+            DoActionsQueuedFromPreviousTurn(currentPlayer);
+            DoDurationActionsFromPreviousTurn(currentPlayer);            
             DoActionPhase(currentPlayer);
             DoPlayTreasures(currentPlayer);
             currentPlayer.RequestPlayerSpendCoinTokensBeforeBuyPhase(this);
@@ -229,6 +230,15 @@ namespace Dominion
         private void ReturnCardsToHandAtStartOfTurn(PlayerState currentPlayer)
         {
             currentPlayer.MoveCardsFromPreviousTurnIntoHand();
+        }
+
+        private void DoActionsQueuedFromPreviousTurn(PlayerState currentPlayer)
+        {
+            foreach (Action action in currentPlayer.actionsToExecuteAtBeginningOfNextTurn)
+            {
+                action();
+            }
+            currentPlayer.actionsToExecuteAtBeginningOfNextTurn.Clear();
         }
 
         private void DoDurationActionsFromPreviousTurn(PlayerState currentPlayer)

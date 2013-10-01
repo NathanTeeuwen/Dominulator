@@ -12,8 +12,9 @@ namespace Program
     {        
         static void Main()
         {
-            ComparePlayers(Strategies.IronworksGreathallRemodelHuntingGrounds.Player(1), Strategies.BigMoney.Player(2), shouldParallel:false);
-            //CompareStrategyVsAllKnownStrategies(Strategies.IronworksGreathallRemodelHuntingGrounds.Player(1));
+            //ComparePlayers(Strategies.IronworksGreathallRemodelHuntingGrounds.Player(1), Strategies.BigMoney.Player(2), shouldParallel:false);
+            //CompareStrategyVsAllKnownStrategies(Strategies.IronworksGreathallRemodelHuntingGrounds.Player(1));            
+            Simulations.FishingVillageThatCanReshuffle.Simulation.Run();
         }
 
         static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction)

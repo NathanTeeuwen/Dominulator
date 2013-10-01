@@ -281,11 +281,18 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState)
+        public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
         {
             Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(card => card.Is<CardTypes.Moat>(), gameState);
+            if (revealedCard == null)
+            {
+                cancelsAttack = false;
+                return false;
+            }
+            
             currentPlayer.MoveRevealedCardToHand(revealedCard);
-            return revealedCard != null;
+            cancelsAttack = revealedCard != null;
+            return true;
         }
     }
 

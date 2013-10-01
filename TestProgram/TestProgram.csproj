@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CardAcceptance.cs" />
+    <Compile Include="Simulations\FishingVillageThatCanReshuffle.cs" />
     <Compile Include="Strategies\BigMoneyDoubleSmithy.cs" />
     <Compile Include="Strategies\IllgottengainsMoneylender.cs" />
     <Compile Include="Strategies\IronworksGreathallRemodelHuntingGrounds.cs" />

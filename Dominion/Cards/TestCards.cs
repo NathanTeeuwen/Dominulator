@@ -29,4 +29,21 @@ namespace Dominion.CardTypes.TestCards
         }
     }
 
+    public class FishingVillageAvailableForDeckCycle :
+        Card
+    {
+        public FishingVillageAvailableForDeckCycle()
+            : base("FishingVillageAvailableForDeckCycle", coinCost:3, isAction: true, plusCoins:1, plusActions:2)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.actionsToExecuteAtBeginningOfNextTurn.Add( delegate()
+            {
+                currentPlayer.AddCoins(1);
+            });
+        }        
+    }
+
 }

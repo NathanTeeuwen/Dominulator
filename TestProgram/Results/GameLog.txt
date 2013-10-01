@@ -1,977 +1,859 @@
-IronworksGreathallRemodelHuntingGrounds gained Copper.
-IronworksGreathallRemodelHuntingGrounds gained Copper.
-IronworksGreathallRemodelHuntingGrounds gained Copper.
-IronworksGreathallRemodelHuntingGrounds gained Copper.
-IronworksGreathallRemodelHuntingGrounds gained Copper.
-IronworksGreathallRemodelHuntingGrounds gained Copper.
-IronworksGreathallRemodelHuntingGrounds gained Copper.
-IronworksGreathallRemodelHuntingGrounds gained Estate.
-IronworksGreathallRemodelHuntingGrounds gained Estate.
-IronworksGreathallRemodelHuntingGrounds gained Estate.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Estate.
-BigMoney gained Estate.
-BigMoney gained Estate.
-IronworksGreathallRemodelHuntingGrounds reshuffled
-IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-BigMoney reshuffled
-BigMoney Drew Estate into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Estate into hand.
+FishingVillageTest gained Copper.
+FishingVillageTest gained Copper.
+FishingVillageTest gained Copper.
+FishingVillageTest gained Copper.
+FishingVillageTest gained Copper.
+FishingVillageTest gained Copper.
+FishingVillageTest gained Copper.
+FishingVillageTest gained Estate.
+FishingVillageTest gained Estate.
+FishingVillageTest gained Estate.
+FishingVillage gained Copper.
+FishingVillage gained Copper.
+FishingVillage gained Copper.
+FishingVillage gained Copper.
+FishingVillage gained Copper.
+FishingVillage gained Copper.
+FishingVillage gained Copper.
+FishingVillage gained Estate.
+FishingVillage gained Estate.
+FishingVillage gained Estate.
+FishingVillageTest reshuffled
+FishingVillageTest Drew Copper into hand.
+FishingVillageTest Drew Copper into hand.
+FishingVillageTest Drew Copper into hand.
+FishingVillageTest Drew Estate into hand.
+FishingVillageTest Drew Copper into hand.
+FishingVillage reshuffled
+FishingVillage Drew Estate into hand.
+FishingVillage Drew Copper into hand.
+FishingVillage Drew Copper into hand.
+FishingVillage Drew Copper into hand.
+FishingVillage Drew Estate into hand.
 ROUND 1
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
+FishingVillageTest begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 1 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 2 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 4 all together.
-  IronworksGreathallRemodelHuntingGrounds bought IronWorks.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), IronWorks(1), 
+  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(1), 
 
-BigMoney begins turn
+FishingVillage begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoney Played Copper.
+  FishingVillage Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  FishingVillage Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  FishingVillage Played Copper.
     +1 Coin = 3 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  FishingVillage bought Fishing Village.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(1), 
 
 ROUND 2
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
+FishingVillageTest begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 1 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 2 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Silver.
-  IronworksGreathallRemodelHuntingGrounds reshuffled
-  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), IronWorks(1), Silver(1), 
+  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
+  FishingVillageTest reshuffled
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(2), 
 
-BigMoney begins turn
+FishingVillage begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoney Played Copper.
+  FishingVillage Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  FishingVillage Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  FishingVillage Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  FishingVillage Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  FishingVillage bought Fishing Village.
+  FishingVillage reshuffled
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(2), 
 
 ROUND 3
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Copper,Copper,IronWorks,Silver,
-  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
-    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Silver.
-    +2 Coin = 2 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 4 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 5 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 6 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Gold.
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), Gold(1), Great Hall(1), IronWorks(1), Silver(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoney Played Copper.
+FishingVillageTest begins turn
+With hand: Copper,Copper,Copper,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 2 all together.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 3 all together.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(3), 
+  FishingVillageTest Played Copper.
+    +1 Coin = 5 all together.
+  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(3), 
+
+FishingVillage begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  FishingVillage Played Copper.
+    +1 Coin = 1 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 2 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 3 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 4 all together.
+  FishingVillage bought Fishing Village.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(3), 
 
 ROUND 4
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
+FishingVillageTest begins turn
 With hand: Copper,Copper,Estate,Estate,Estate,
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 1 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 2 all together.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds reshuffled
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), Gold(1), Great Hall(1), IronWorks(1), Silver(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Copper.
+  +1 Coin = 1 all together.
+  +1 Coin = 2 all together.
+  FishingVillageTest Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(4), 
+  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest reshuffled
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(4), 
+
+FishingVillage begins turn
+With hand: Copper,Copper,Estate,Estate,Fishing Village,
+  FishingVillage Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 2 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 3 all together.
+  FishingVillage bought Fishing Village.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage reshuffled
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(4), 
 
 ROUND 5
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Copper,Copper,Estate,IronWorks,
-  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
-    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Gold into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Gold.
-    +3 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 4 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 5 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 6 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Hunting Grounds.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), Gold(1), Great Hall(2), Hunting Grounds(1), IronWorks(1), Silver(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Copper.
+FishingVillageTest begins turn
+With hand: Copper,Copper,Copper,Copper,FishingVillageAvailableForDeckCycle,
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  FishingVillageTest Played Copper.
+    +1 Coin = 2 all together.
+  FishingVillageTest Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 4 all together.
-  BigMoney Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 5 all together.
-  BigMoney Played Copper.
+  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(5), 
+
+FishingVillage begins turn
+With hand: Copper,Copper,Copper,Copper,Fishing Village,
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillage Played Fishing Village.
+    +2 Actions = 3 all together.
+    +1 Coin = 2 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 3 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 4 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 5 all together.
+  FishingVillage Played Copper.
     +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
+  FishingVillage bought Gold.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(4), Gold(1), 
 
 ROUND 6
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  IronworksGreathallRemodelHuntingGrounds Played Silver.
-    +2 Coin = 2 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+FishingVillageTest begins turn
+With hand: Estate,Estate,Estate,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,
+  +1 Coin = 1 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 2 all together.
+    +1 Coin = 2 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 3 all together.
     +1 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 4 all together.
-  IronworksGreathallRemodelHuntingGrounds bought IronWorks.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds reshuffled
-  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), Gold(1), Great Hall(2), Hunting Grounds(1), IronWorks(2), Silver(1), 
+  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest reshuffled
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(6), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Copper.
+FishingVillage begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 2 all together.
+  FishingVillage Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(5), 
+  FishingVillage bought Fishing Village.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage reshuffled
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(5), Gold(1), 
 
 ROUND 7
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Copper,Estate,IronWorks,Silver,
-  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
-    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Silver.
-    +2 Coin = 2 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+FishingVillageTest begins turn
+With hand: Copper,Copper,Copper,Copper,FishingVillageAvailableForDeckCycle,
+  +1 Coin = 1 all together.
+  +1 Coin = 2 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 2 all together.
     +1 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 4 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 5 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Remodel.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Gold into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), Gold(1), Great Hall(3), Hunting Grounds(1), IronWorks(2), Remodel(1), Silver(1), 
-
-BigMoney begins turn
-With hand: Copper,Estate,Silver,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Silver.
-    +2 Coin = 6 all together.
-  BigMoney Played Copper.
+  FishingVillageTest Played Copper.
+    +1 Coin = 6 all together.
+  FishingVillageTest Played Copper.
     +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
+  FishingVillageTest bought Gold.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(6), Gold(1), 
+
+FishingVillage begins turn
+With hand: Copper,Fishing Village,Fishing Village,Fishing Village,Fishing Village,
+  FishingVillage Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  FishingVillage Played Fishing Village.
+    +2 Actions = 3 all together.
+    +1 Coin = 2 all together.
+  FishingVillage Played Fishing Village.
+    +2 Actions = 4 all together.
+    +1 Coin = 3 all together.
+  FishingVillage Played Fishing Village.
+    +2 Actions = 5 all together.
+    +1 Coin = 4 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 5 all together.
+  FishingVillage bought Fishing Village.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Gold into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(6), Gold(1), 
 
 ROUND 8
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Estate,Gold,Great Hall,Hunting Grounds,
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Hunting Grounds.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Gold.
-    +3 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 4 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 5 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 6 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 7 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Hunting Grounds.
-  IronworksGreathallRemodelHuntingGrounds reshuffled
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), Gold(1), Great Hall(3), Hunting Grounds(2), IronWorks(2), Remodel(1), Silver(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Copper.
+FishingVillageTest begins turn
+With hand: Copper,Estate,Estate,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,
+  +1 Coin = 1 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 2 all together.
+    +1 Coin = 2 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 3 all together.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 4 all together.
-  BigMoney Played Copper.
+  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(7), Gold(1), 
+
+FishingVillage begins turn
+With hand: Copper,Estate,Estate,Fishing Village,Gold,
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 2 all together.
+    +1 Actions = 3 all together.
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 3 all together.
+    +1 Actions = 4 all together.
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 4 all together.
+    +1 Actions = 5 all together.
+  FishingVillage Played Fishing Village.
+    +2 Actions = 6 all together.
     +1 Coin = 5 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(6), 
+  FishingVillage Played Gold.
+    +3 Coin = 8 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 9 all together.
+  FishingVillage bought Gold.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(6), Gold(2), 
 
 ROUND 9
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Copper,Estate,IronWorks,Remodel,
-  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
-    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Remodel.
-    IronworksGreathallRemodelHuntingGrounds trashed Estate.
-    IronworksGreathallRemodelHuntingGrounds gained Remodel.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 1 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 2 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+FishingVillageTest begins turn
+With hand: Copper,Estate,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,
+  +1 Coin = 1 all together.
+  +1 Coin = 2 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 2 all together.
     +1 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Silver.
-  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(2), Gold(1), Great Hall(4), Hunting Grounds(2), IronWorks(2), Remodel(2), Silver(2), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 3 all together.
+    +1 Coin = 4 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 4 all together.
+    +1 Coin = 5 all together.
+  FishingVillageTest Played Copper.
     +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(6), 
+  FishingVillageTest bought Gold.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest reshuffled
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(7), Gold(2), 
+
+FishingVillage begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 2 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 3 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 4 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 5 all together.
+  FishingVillage bought Fishing Village.
+  FishingVillage Drew Copper into hand.
+  FishingVillage reshuffled
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Gold into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(7), Gold(2), 
 
 ROUND 10
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Estate,Great Hall,Hunting Grounds,Silver,
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
-  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
-    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Hunting Grounds.
-    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Gold into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Gold.
-    +3 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Silver.
-    +2 Coin = 5 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+FishingVillageTest begins turn
+With hand: Copper,Copper,Estate,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,
+  +1 Coin = 1 all together.
+  +1 Coin = 2 all together.
+  +1 Coin = 3 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 2 all together.
+    +1 Coin = 4 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 3 all together.
+    +1 Coin = 5 all together.
+  FishingVillageTest Played Copper.
     +1 Coin = 6 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 7 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 8 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Province.
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds reshuffled
-  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(2), Gold(1), Great Hall(5), Hunting Grounds(2), IronWorks(2), Province(1), Remodel(2), Silver(2), 
+  FishingVillageTest bought Gold.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Gold into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(7), Gold(3), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
+FishingVillage begins turn
+With hand: Copper,Copper,Fishing Village,Fishing Village,Gold,
+  FishingVillage Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  FishingVillage Played Fishing Village.
+    +2 Actions = 3 all together.
+    +1 Coin = 2 all together.
+  FishingVillage Played Gold.
+    +3 Coin = 5 all together.
+  FishingVillage Played Copper.
     +1 Coin = 6 all together.
-  BigMoney Played Copper.
+  FishingVillage Played Copper.
     +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(6), 
+  FishingVillage bought Gold.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(7), Gold(3), 
 
 ROUND 11
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Copper,Estate,Great Hall,IronWorks,
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
-    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
-  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
-    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Hunting Grounds.
-    IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 1 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 2 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+FishingVillageTest begins turn
+With hand: Copper,Copper,Copper,FishingVillageAvailableForDeckCycle,Gold,
+  +1 Coin = 1 all together.
+  +1 Coin = 2 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 2 all together.
     +1 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 4 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Remodel.
-  IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Province into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(2), Gold(1), Great Hall(7), Hunting Grounds(2), IronWorks(2), Province(1), Remodel(3), Silver(2), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
-  BigMoney Played Copper.
+  FishingVillageTest Played Gold.
+    +3 Coin = 6 all together.
+  FishingVillageTest Played Copper.
+    +1 Coin = 7 all together.
+  FishingVillageTest Played Copper.
     +1 Coin = 8 all together.
-  BigMoney Played Copper.
+  FishingVillageTest Played Copper.
     +1 Coin = 9 all together.
-  BigMoney bought Province.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(6), 
+  FishingVillageTest bought Province.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(7), Gold(3), Province(1), 
+
+FishingVillage begins turn
+With hand: Copper,Copper,Estate,Estate,Fishing Village,
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 2 all together.
+    +1 Actions = 3 all together.
+  FishingVillage Played Fishing Village.
+    +2 Actions = 4 all together.
+    +1 Coin = 3 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 4 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 5 all together.
+  FishingVillage bought Fishing Village.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Gold into hand.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(3), 
 
 ROUND 12
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Great Hall,Province,Remodel,Silver,
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Remodel.
-    IronworksGreathallRemodelHuntingGrounds trashed Remodel.
-    IronworksGreathallRemodelHuntingGrounds gained Hunting Grounds.
-  IronworksGreathallRemodelHuntingGrounds Played Silver.
-    +2 Coin = 2 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+FishingVillageTest begins turn
+With hand: Copper,Estate,Estate,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,
+  +1 Coin = 1 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 2 all together.
+    +1 Coin = 2 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 3 all together.
     +1 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Silver.
-  IronworksGreathallRemodelHuntingGrounds Drew Gold into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(2), Gold(1), Great Hall(7), Hunting Grounds(3), IronWorks(2), Province(1), Remodel(2), Silver(3), 
+  FishingVillageTest Played Copper.
+    +1 Coin = 4 all together.
+  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Gold into hand.
+  FishingVillageTest reshuffled
+  FishingVillageTest Drew Province into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(3), Province(1), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
+FishingVillage begins turn
+With hand: Copper,Copper,Estate,Fishing Village,Gold,
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillage Played Fishing Village.
+    +2 Actions = 3 all together.
+    +1 Coin = 2 all together.
+  FishingVillage Played Gold.
+    +3 Coin = 5 all together.
+  FishingVillage Played Copper.
     +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(6), 
+  FishingVillage Played Copper.
+    +1 Coin = 7 all together.
+  FishingVillage bought Gold.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage reshuffled
+  FishingVillage Drew Copper into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(4), 
 
 ROUND 13
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Estate,Gold,Great Hall,Silver,
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Gold.
-    +3 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Silver.
-    +2 Coin = 5 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 6 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 7 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Hunting Grounds.
-  IronworksGreathallRemodelHuntingGrounds reshuffled
-  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(2), Gold(1), Great Hall(7), Hunting Grounds(4), IronWorks(2), Province(1), Remodel(2), Silver(3), 
+FishingVillageTest begins turn
+With hand: Copper,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,Gold,Province,
+  +1 Coin = 1 all together.
+  +1 Coin = 2 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 2 all together.
+    +1 Coin = 3 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 3 all together.
+    +1 Coin = 4 all together.
+  FishingVillageTest Played Gold.
+    +3 Coin = 7 all together.
+  FishingVillageTest Played Copper.
+    +1 Coin = 8 all together.
+  FishingVillageTest bought Province.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest Drew Gold into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(3), Province(2), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
+FishingVillage begins turn
+With hand: Copper,Copper,Fishing Village,Fishing Village,Fishing Village,
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillage Played Fishing Village.
+    +2 Actions = 3 all together.
+    +1 Coin = 2 all together.
+  FishingVillage Played Fishing Village.
+    +2 Actions = 4 all together.
+    +1 Coin = 3 all together.
+  FishingVillage Played Fishing Village.
+    +2 Actions = 5 all together.
+    +1 Coin = 4 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 5 all together.
+  FishingVillage Played Copper.
     +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(6), Province(1), Silver(6), 
+  FishingVillage bought Gold.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(5), 
 
 ROUND 14
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Copper,Great Hall,Hunting Grounds,Silver,
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Hunting Grounds.
-    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Silver.
-    +2 Coin = 2 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+FishingVillageTest begins turn
+With hand: Copper,Estate,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,Gold,
+  +1 Coin = 1 all together.
+  +1 Coin = 2 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 2 all together.
     +1 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 3 all together.
     +1 Coin = 4 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 5 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 6 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 7 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Hunting Grounds.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(2), Gold(1), Great Hall(7), Hunting Grounds(5), IronWorks(2), Province(1), Remodel(2), Silver(3), 
+  FishingVillageTest Played Gold.
+    +3 Coin = 7 all together.
+  FishingVillageTest Played Copper.
+    +1 Coin = 8 all together.
+  FishingVillageTest bought Province.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(3), Province(3), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
+FishingVillage begins turn
+With hand: Copper,Estate,Fishing Village,Fishing Village,Fishing Village,
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 2 all together.
+    +1 Actions = 3 all together.
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 3 all together.
+    +1 Actions = 4 all together.
+  FishingVillage Played Fishing Village.
+    +2 Actions = 5 all together.
+    +1 Coin = 4 all together.
+  FishingVillage Played Fishing Village.
+    +2 Actions = 6 all together.
+    +1 Coin = 5 all together.
+  FishingVillage Played Fishing Village.
+    +2 Actions = 7 all together.
     +1 Coin = 6 all together.
-  BigMoney Played Copper.
+  FishingVillage Played Copper.
     +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(7), Province(1), Silver(6), 
+  FishingVillage bought Gold.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Gold into hand.
+  FishingVillage Drew Gold into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(6), 
 
 ROUND 15
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Great Hall,Great Hall,Great Hall,Hunting Grounds,
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
-  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
-    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Hunting Grounds.
-    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Province into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Silver.
-    +2 Coin = 2 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Silver.
-    +2 Coin = 4 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+FishingVillageTest begins turn
+With hand: Copper,Estate,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,
+  +1 Coin = 1 all together.
+  +1 Coin = 2 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 2 all together.
+    +1 Coin = 3 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 3 all together.
+    +1 Coin = 4 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 4 all together.
     +1 Coin = 5 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Remodel.
-  IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Gold into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(2), Gold(1), Great Hall(8), Hunting Grounds(5), IronWorks(2), Province(1), Remodel(3), Silver(3), 
+  FishingVillageTest Played Copper.
+    +1 Coin = 6 all together.
+  FishingVillageTest bought Gold.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Estate into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Gold into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(4), Province(3), 
 
-BigMoney begins turn
-With hand: Copper,Estate,Silver,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Silver.
-    +2 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(8), Province(1), Silver(6), 
+FishingVillage begins turn
+With hand: Copper,Copper,Estate,Gold,Gold,
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 2 all together.
+    +1 Actions = 3 all together.
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 3 all together.
+    +1 Actions = 4 all together.
+  FishingVillage Played Gold.
+    +3 Coin = 6 all together.
+  FishingVillage Played Gold.
+    +3 Coin = 9 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 10 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 11 all together.
+  FishingVillage bought Province.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Gold into hand.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Gold into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(6), Province(1), 
 
 ROUND 16
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Gold,Hunting Grounds,Hunting Grounds,Remodel,
-  IronworksGreathallRemodelHuntingGrounds Played Remodel.
-    IronworksGreathallRemodelHuntingGrounds trashed Hunting Grounds.
-      IronworksGreathallRemodelHuntingGrounds gained Duchy.
-    IronworksGreathallRemodelHuntingGrounds gained Province.
-  IronworksGreathallRemodelHuntingGrounds Played Gold.
-    +3 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+FishingVillageTest begins turn
+With hand: Copper,Copper,Estate,FishingVillageAvailableForDeckCycle,Gold,
+  +1 Coin = 1 all together.
+  +1 Coin = 2 all together.
+  +1 Coin = 3 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 2 all together.
     +1 Coin = 4 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Remodel.
-  IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
-  IronworksGreathallRemodelHuntingGrounds reshuffled
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Province into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Duchy(1), Estate(2), Gold(1), Great Hall(8), Hunting Grounds(4), IronWorks(2), Province(2), Remodel(4), Silver(3), 
+  FishingVillageTest Played Gold.
+    +3 Coin = 7 all together.
+  FishingVillageTest Played Copper.
+    +1 Coin = 8 all together.
+  FishingVillageTest Played Copper.
+    +1 Coin = 9 all together.
+  FishingVillageTest bought Province.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest reshuffled
+  FishingVillageTest Drew Province into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest Drew Copper into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(4), Province(4), 
 
-BigMoney begins turn
-With hand: Gold,Gold,Gold,Province,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Gold.
-    +3 Coin = 9 all together.
-  BigMoney Played Silver.
-    +2 Coin = 11 all together.
-  BigMoney bought Province.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(8), Province(2), Silver(6), 
+FishingVillage begins turn
+With hand: Copper,Estate,Fishing Village,Gold,Gold,
+  FishingVillage Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  FishingVillage Played Gold.
+    +3 Coin = 4 all together.
+  FishingVillage Played Gold.
+    +3 Coin = 7 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 8 all together.
+  FishingVillage bought Province.
+  FishingVillage Drew Copper into hand.
+  FishingVillage reshuffled
+  FishingVillage Drew Gold into hand.
+  FishingVillage Drew Province into hand.
+  FishingVillage Drew Province into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(6), Province(2), 
 
 ROUND 17
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Copper,Copper,Province,Remodel,
-  IronworksGreathallRemodelHuntingGrounds Played Remodel.
-    IronworksGreathallRemodelHuntingGrounds trashed Copper.
-    IronworksGreathallRemodelHuntingGrounds gained Copper.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 1 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+FishingVillageTest begins turn
+With hand: Copper,Copper,Copper,Copper,Province,
+  +1 Coin = 1 all together.
+  FishingVillageTest Played Copper.
     +1 Coin = 2 all together.
-  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Duchy(1), Estate(2), Gold(1), Great Hall(8), Hunting Grounds(4), IronWorks(2), Province(2), Remodel(4), Silver(3), 
+  FishingVillageTest Played Copper.
+    +1 Coin = 3 all together.
+  FishingVillageTest Played Copper.
+    +1 Coin = 4 all together.
+  FishingVillageTest Played Copper.
+    +1 Coin = 5 all together.
+  FishingVillageTest bought Duchy.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Gold into hand.
+  FishingVillageTest Drew Gold into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Duchy(1), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(4), Province(4), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
+FishingVillage begins turn
+With hand: Copper,Copper,Gold,Province,Province,
+  FishingVillage Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillage Played Gold.
+    +3 Coin = 4 all together.
+  FishingVillage Played Copper.
+    +1 Coin = 5 all together.
+  FishingVillage Played Copper.
     +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Duchy.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(8), Province(2), Silver(6), 
+  FishingVillage bought Duchy.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Gold into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage Drew Gold into hand.
+  FishingVillage ends turn with deck: Copper(7), Duchy(1), Estate(3), Fishing Village(8), Gold(6), Province(2), 
 
 ROUND 18
 -------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Estate,Great Hall,Remodel,Silver,Silver,
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Province into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Remodel.
-    IronworksGreathallRemodelHuntingGrounds trashed Estate.
-    IronworksGreathallRemodelHuntingGrounds gained Remodel.
-  IronworksGreathallRemodelHuntingGrounds Played Silver.
-    +2 Coin = 2 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Silver.
-    +2 Coin = 4 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Remodel.
-  IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Duchy(1), Estate(1), Gold(1), Great Hall(8), Hunting Grounds(4), IronWorks(2), Province(2), Remodel(6), Silver(3), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Province,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney bought Duchy.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(8), Province(2), Silver(6), 
-
-ROUND 19
--------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Great Hall,Hunting Grounds,IronWorks,Remodel,
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Remodel.
-    IronworksGreathallRemodelHuntingGrounds trashed Hunting Grounds.
-      IronworksGreathallRemodelHuntingGrounds gained Duchy.
-    IronworksGreathallRemodelHuntingGrounds gained Province.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
+FishingVillageTest begins turn
+With hand: FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,Gold,Gold,
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 2 all together.
     +1 Coin = 1 all together.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Duchy(2), Estate(1), Gold(1), Great Hall(8), Hunting Grounds(3), IronWorks(2), Province(3), Remodel(6), Silver(3), 
-
-BigMoney begins turn
-With hand: Estate,Gold,Gold,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 3 all together.
+    +1 Coin = 2 all together.
+  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    +2 Actions = 4 all together.
+    +1 Coin = 3 all together.
+  FishingVillageTest Played Gold.
     +3 Coin = 6 all together.
-  BigMoney Played Silver.
-    +2 Coin = 8 all together.
-  BigMoney Played Silver.
-    +2 Coin = 10 all together.
-  BigMoney bought Province.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(8), Province(3), Silver(6), 
-
-ROUND 20
--------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Copper,Copper,Great Hall,Great Hall,Great Hall,
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Gold into hand.
-  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
-    IronworksGreathallRemodelHuntingGrounds gained Remodel.
-    +1 Actions = 1 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Gold.
-    +3 Coin = 3 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 4 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 5 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Copper.
-    +1 Coin = 6 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Hunting Grounds.
-  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Duchy into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Duchy(2), Estate(1), Gold(1), Great Hall(8), Hunting Grounds(4), IronWorks(2), Province(3), Remodel(7), Silver(3), 
-
-BigMoney begins turn
-With hand: Gold,Gold,Gold,Province,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Gold.
+  FishingVillageTest Played Gold.
     +3 Coin = 9 all together.
-  BigMoney Played Silver.
-    +2 Coin = 11 all together.
-  BigMoney bought Province.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(8), Province(4), Silver(6), 
+  FishingVillageTest bought Province.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew Gold into hand.
+  FishingVillageTest Drew Province into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
+  FishingVillageTest ends turn with deck: Copper(7), Duchy(1), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(4), Province(5), 
 
-ROUND 21
--------------
-IronworksGreathallRemodelHuntingGrounds begins turn
-With hand: Duchy,Great Hall,Great Hall,Hunting Grounds,Silver,
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
-    +1 Actions = 1 all together.
-    IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Hunting Grounds.
-    IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
-    IronworksGreathallRemodelHuntingGrounds reshuffled
-    IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Province into hand.
-    IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
-  IronworksGreathallRemodelHuntingGrounds Played Silver.
-    +2 Coin = 2 all together.
-  IronworksGreathallRemodelHuntingGrounds Played Silver.
-    +2 Coin = 4 all together.
-  IronworksGreathallRemodelHuntingGrounds bought Remodel.
-  IronworksGreathallRemodelHuntingGrounds Drew Province into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
-  IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
-  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Duchy(2), Estate(1), Gold(1), Great Hall(8), Hunting Grounds(4), IronWorks(2), Province(3), Remodel(8), Silver(3), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Gold,Silver,
-  BigMoney Played Gold.
+FishingVillage begins turn
+With hand: Copper,Copper,Estate,Gold,Gold,
+  FishingVillage Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
+  FishingVillage Played Gold.
+    +3 Coin = 6 all together.
+  FishingVillage Played Copper.
     +1 Coin = 7 all together.
-  BigMoney Played Copper.
+  FishingVillage Played Copper.
     +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Drew Silver into hand.
-  BigMoney reshuffled
-  BigMoney Drew Province into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(8), Province(5), Silver(6), 
+  FishingVillage bought Province.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Estate into hand.
+  FishingVillage Drew Fishing Village into hand.
+  FishingVillage Drew Copper into hand.
+  FishingVillage ends turn with deck: Copper(7), Duchy(1), Estate(3), Fishing Village(8), Gold(6), Province(3), 
 
-Game ended in 21 turns.
-BigMoney Won!
-IronworksGreathallRemodelHuntingGrounds total score: 33
-  Copper(7), Duchy(2), Estate(1), Gold(1), Great Hall(8), Hunting Grounds(4), IronWorks(2), Province(3), Remodel(8), Silver(3), 
-BigMoney total score: 39
-  Copper(7), Duchy(2), Estate(3), Gold(8), Province(5), Silver(6), 
-Trash contains: Copper(1), Estate(2), Hunting Grounds(2), Remodel(1), 
+Game ended in 18 turns.
+FishingVillageTest Won!
+FishingVillageTest total score: 36
+  Copper(7), Duchy(1), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(4), Province(5), 
+FishingVillage total score: 24
+  Copper(7), Duchy(1), Estate(3), Fishing Village(8), Gold(6), Province(3), 
+Trash contains: 
 
-IronworksGreathallRemodelHuntingGrounds GainSequence is:
-  IronWorks, Silver, Great Hall, Gold, Great Hall, 
-  Hunting Grounds, IronWorks, Great Hall, Remodel, Hunting Grounds, 
-  Great Hall, Remodel, Silver, Great Hall, Province, 
-  Great Hall, Great Hall, Remodel, Hunting Grounds, Silver, 
-  Hunting Grounds, Hunting Grounds, Great Hall, Remodel, Duchy, 
-  Province, Remodel, Copper, Remodel, Remodel, 
-  Duchy, Province, Remodel, Hunting Grounds, Remodel, 
-
-BigMoney GainSequence is:
-  Silver, Silver, Silver, Silver, Gold, 
-  Silver, Gold, Silver, Gold, Gold, 
-  Province, Gold, Gold, Gold, Gold, 
-  Province, Duchy, Duchy, Province, Province, 
-  Province, 
+FishingVillageTest GainSequence is:
+  FishingVillageAvailableForDeckCycle, FishingVillageAvailableForDeckCycle, FishingVillageAvailableForDeckCycle, FishingVillageAvailableForDeckCycle, FishingVillageAvailableForDeckCycle, 
+  FishingVillageAvailableForDeckCycle, Gold, FishingVillageAvailableForDeckCycle, Gold, Gold, 
+  Province, FishingVillageAvailableForDeckCycle, Province, Province, Gold, 
+  Province, Duchy, Province, 
+FishingVillage GainSequence is:
+  Fishing Village, Fishing Village, Fishing Village, Fishing Village, Gold, 
+  Fishing Village, Fishing Village, Gold, Fishing Village, Gold, 
+  Fishing Village, Gold, Gold, Gold, Province, 
+  Province, Duchy, Province, 

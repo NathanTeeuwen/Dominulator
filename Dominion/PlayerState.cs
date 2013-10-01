@@ -37,6 +37,8 @@ namespace Dominion
         internal BagOfCards islandMat = new BagOfCards();
         internal BagOfCards nativeVillageMat = new BagOfCards();
 
+        internal List<Action> actionsToExecuteAtBeginningOfNextTurn = new List<Action>();
+
         // expose information for use by strategies
         public IPlayerAction Actions { get { return this.actions; } }
         public int AvailableCoins { get { return this.turnCounters.AvailableCoins; } }
@@ -1418,12 +1420,21 @@ namespace Dominion
 
         internal bool IsAffectedByAttacks(GameState gameState)
         {
-            bool isAffected = true;
-            foreach (Card reactionCard in this.hand)
+            bool doesCancelAttack = false;
+
+            bool didCardAffectAnything = true;
+
+            while (didCardAffectAnything)
             {
-                if (reactionCard.DoReactionToAttack(this, gameState))
+                didCardAffectAnything = false;
+                foreach (Card reactionCard in this.hand)
                 {
-                    isAffected = false;
+                    bool didthisCardCancelAttack;
+                    didCardAffectAnything = reactionCard.DoReactionToAttack(this, gameState, out didthisCardCancelAttack);
+                    doesCancelAttack |= didthisCardCancelAttack;
+
+                    if (didCardAffectAnything)
+                        break;
                 }
             }
 
@@ -1431,11 +1442,11 @@ namespace Dominion
             {
                 if (durationCard.DoReactionToAttackWhileInPlay(this, gameState))
                 {
-                    isAffected = false;
+                    doesCancelAttack = true;
                 }
             }
 
-            return isAffected;
+            return !doesCancelAttack;
         }
 
         public IEnumerable<Card> CardsInPlay
