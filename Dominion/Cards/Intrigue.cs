@@ -114,7 +114,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, acceptableCard => true, "Any card");
+            Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= 4, "Any card");
 
             if (gainedCard.isAction)
             {

@@ -16,8 +16,7 @@ namespace Dominion
         void EndTurn(PlayerState playerState);
         void PlayerNamedCard(PlayerState playerState, Card card);
         void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source);
-        void PlayerBoughtCard(PlayerState playerState, Card card);
-        void GainedCard(PlayerState playerState, Card card);
+        void PlayerBoughtCard(PlayerState playerState, Card card);        
         void PlayedCard(PlayerState playerState, Card card);
         void CardWentToLocation(DeckPlacement deckPlacement);
         void ReceivedDurationEffectFrom(PlayerState playerState, Card card);
@@ -28,6 +27,7 @@ namespace Dominion
         void PlayerTopDeckedCard(PlayerState playerState, Card card);
         void PlayerSetAsideCardFromHandForNextTurn(PlayerState playerState, Card card);
         void PlayerReturnedCardToHand(PlayerState playerState, Card card);
+        void PlayerReturnedCardToPile(PlayerState playerState, Card card);
         void DrewCardIntoHand(PlayerState playerState, Card card);
         void DiscardedCard(PlayerState playerState, Card card);
         void ReshuffledDiscardIntoDeck(PlayerState playerState);

@@ -9,9 +9,12 @@ namespace Dominion
 {
     public class PlayerState
     {
-        internal int numberOfTurnsPlayed;        
+        internal int numberOfTurnsPlayed;
+        
+        internal readonly int playerIndex;
         internal readonly IPlayerAction actions;
         internal readonly IGameLog gameLog;
+        
         internal PlayPhase playPhase;
         internal Random random;                
 
@@ -44,6 +47,7 @@ namespace Dominion
         public BagOfCards CardsBeingRevealed { get { return this.cardsBeingRevealed; } }
         public int TurnNumber { get { return this.numberOfTurnsPlayed; } }
         public Card CurrentCardBeingPlayed { get { return this.cardsBeingPlayed.TopCard(); } }
+        public int PlayerIndex { get { return this.playerIndex; } }
 
         public int ExpectedCoinValueAtEndOfTurn { get { return this.AvailableCoins + this.hand.Where(card => card.isTreasure).Select(card => card.plusCoin).Sum(); } }
 
@@ -54,12 +58,13 @@ namespace Dominion
         internal int victoryTokenCount;
         internal int pirateShipTokenCount;
 
-        internal PlayerState(IPlayerAction actions, IGameLog gameLog, Random random)
+        internal PlayerState(IPlayerAction actions, int playerIndex, IGameLog gameLog, Random random)
         {
             this.gameLog = gameLog;
             this.actions = actions;
             this.playPhase = PlayPhase.NotMyTurn;
             this.random = random;
+            this.playerIndex = playerIndex;
         }
 
         internal void InitializeTurn()
@@ -399,6 +404,7 @@ namespace Dominion
                 PileOfCards pile = gameState.GetPile(cardInPlay);
                 pile.AddCardToTop(cardInPlay);
                 wasReturned = true;
+                this.gameLog.PlayerReturnedCardToPile(this, cardInPlay);
             }
 
             this.cardsBeingPlayed.AddCardToTop(null);
@@ -757,6 +763,26 @@ namespace Dominion
             }
 
             this.MoveCardFromHandToDiscard(cardTypeToDiscard, gameState);            
+
+            return true;
+        }
+
+        internal bool RequestPlayerDiscardCardFromOtherPlayersHand(GameState gameState, PlayerState otherPlayer)
+        {
+            if (!otherPlayer.hand.Any)
+            {
+                return false;
+            }
+
+            Type cardTypeToDiscard = this.actions.GetCardFromOtherPlayersHandToDiscard(gameState, otherPlayer);
+            if (cardTypeToDiscard == null)
+            {                
+                {
+                    throw new Exception("Player must choose a card to discard");
+                }
+            }
+            
+            otherPlayer.MoveCardFromHandToDiscard(cardTypeToDiscard, gameState);
 
             return true;
         }

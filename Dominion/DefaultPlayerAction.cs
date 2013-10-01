@@ -243,5 +243,10 @@ namespace Dominion
         {
             return PlayerMustMakeCardChoice();
         }
+
+        virtual public Type GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer)
+        {
+            return PlayerMustMakeCardChoice();
+        }
     }    
 }

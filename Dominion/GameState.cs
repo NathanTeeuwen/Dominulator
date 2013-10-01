@@ -403,7 +403,8 @@ namespace Dominion
                 return null;
             }
 
-            this.hasPileEverBeenGained[pile] = true;            
+            if (GetPile(this.supplyPiles, cardType) != null)
+                this.hasPileEverBeenGained[pile] = true;            
 
             Card card = pile.DrawCardFromTop();
             if (card == null)

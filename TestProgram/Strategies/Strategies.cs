@@ -177,6 +177,7 @@ namespace Program
                     CardAcceptance.For<CardTypes.Gold>(),
                     CardAcceptance.For<CardTypes.Silver>(),
                     CardAcceptance.For<CardTypes.Copper>(),
+                    CardAcceptance.For<CardTypes.Spoils>(),
                     // alphabetical, all other treasures that dont really depend on order
                     CardAcceptance.For<CardTypes.Cache>(),
                     CardAcceptance.For<CardTypes.FoolsGold>(),

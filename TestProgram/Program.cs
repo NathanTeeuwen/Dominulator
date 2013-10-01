@@ -12,9 +12,8 @@ namespace Program
     {        
         static void Main()
         {
-            //ComparePlayers(Strategies.IllgottengainsMoneylender.Player(1), Strategies.BigMoneyDoubleJackSlog.Player(2));
-            //CompareStrategyVsAllKnownStrategies(Strategies.LookoutTraderNobles.Player(1));
-            CompareStrategyVsAllKnownStrategies(Strategies.IllgottengainsMoneylender.Player(1));
+            ComparePlayers(Strategies.IronworksGreathallRemodelHuntingGrounds.Player(1), Strategies.BigMoney.Player(2), shouldParallel:false);
+            //CompareStrategyVsAllKnownStrategies(Strategies.IronworksGreathallRemodelHuntingGrounds.Player(1));
         }
 
         static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction)
@@ -39,7 +38,7 @@ namespace Program
                 if (otherPlayerAction == null)
                     continue;
 
-                double percentDiff = ComparePlayers(playerAction, otherPlayerAction);
+                double percentDiff = ComparePlayers(playerAction, otherPlayerAction, shouldParallel:false);
 
                 resultList.Add( new System.Tuple<string,double>(otherPlayerAction.PlayerName, percentDiff));
             }            

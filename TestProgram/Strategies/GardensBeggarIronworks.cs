@@ -25,14 +25,11 @@ namespace Program
 
             private static CardPickByPriority PurchaseOrder()
             {
-                return new CardPickByPriority(
-                           //CardAcceptance.For<CardTypes.NobleBrigand>(gameState => CountAllOwned<CardTypes.NobleBrigand>(gameState) < 1),
-                           //CardAcceptance.For<CardTypes.YoungWitch>(gameState => CountAllOwned<CardTypes.YoungWitch>(gameState) < 1),
+                return new CardPickByPriority(                           
                            CardAcceptance.For<CardTypes.IronWorks>(),                           
                            CardAcceptance.For<CardTypes.Silver>(gameState => gameState.players.CurrentPlayer.Hand.Where(c => c.isAction).Count() == 0 && 
                                                                 gameState.players.CurrentPlayer.Hand.Where(c => c.Is<CardTypes.Copper>()).Count() == 3),
-                           CardAcceptance.For<CardTypes.Beggar>(gameState => gameState.players.CurrentPlayer.Hand.Where(c => c.isAction).Count() > 0),
-                           //CardAcceptance.For<CardTypes.Gardens>(gameState => gameState.players.CurrentPlayer.Hand.Where(c => c.isAction).Count() == 0),                           
+                           CardAcceptance.For<CardTypes.Beggar>(gameState => gameState.players.CurrentPlayer.Hand.Where(c => c.isAction).Count() > 0),                           
                            CardAcceptance.For<CardTypes.Gardens>(),
                            CardAcceptance.For<CardTypes.SilkRoad>(),
                            CardAcceptance.For<CardTypes.Beggar>(ShouldByLastCard<CardTypes.Beggar>),

@@ -37,11 +37,7 @@ namespace Dominion
 
         public virtual void PlayerBoughtCard(PlayerState playerState, Card card)
         {
-        }
-
-        public virtual void GainedCard(PlayerState playerState, Card card)
-        {
-        }
+        }        
 
         public virtual void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source)
         {
@@ -145,5 +141,10 @@ namespace Dominion
         {
 
         }
+
+        public virtual void PlayerReturnedCardToPile(PlayerState playerState, Card card)
+        {
+
+        }        
     }
 }

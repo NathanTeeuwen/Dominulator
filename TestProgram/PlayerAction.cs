@@ -147,6 +147,18 @@ namespace Program
             return this.discardOrder.GetPreferredCard(gameState, testCard => testCard.Is(card.GetType())) != null;
         }
 
+        public override Type GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer)
+        {
+            // discard the highest costing action or treasure.
+            Card result = otherPlayer.Hand.Where(c => c.isAction || c.isTreasure).OrderByDescending(c => c.DefaultCoinCost).FirstOrDefault();
+
+            // or just discard the highest costing card
+            if (result == null)
+                result = otherPlayer.Hand.OrderByDescending(c => c.DefaultCoinCost).FirstOrDefault();
+
+            return result.GetType();
+        }
+
         struct CompareCardByFirstToTrash
             : IComparer<Card>
         {
@@ -182,7 +194,10 @@ namespace Program
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)
             {
-                Card card = player.Hand.Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();
+                Card card = player.Hand.Where(c => acceptableCard(c))
+                                       .OrderBy(c => c, new CompareCardByFirstToDiscard())
+                                       .FirstOrDefault();
+
                 return card != null ? card.GetType() : null;
             }
 
@@ -241,7 +256,12 @@ namespace Program
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null && !isOptional)
             {
-                Card card = gameState.supplyPiles.Where(supplyPile => !supplyPile.IsEmpty).Select(pile => pile.ProtoTypeCard).Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToGain()).FirstOrDefault();
+                Card card = gameState.supplyPiles.Where(supplyPile => !supplyPile.IsEmpty)
+                                     .Select(pile => pile.ProtoTypeCard)
+                                     .Where(c => acceptableCard(c))
+                                     .OrderBy(c => c, new CompareCardByFirstToGain())
+                                     .FirstOrDefault();
+
                 return card != null ? card.GetType() : null;
             }
 

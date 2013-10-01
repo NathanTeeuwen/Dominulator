@@ -1,1169 +1,977 @@
-IllgottengainsMoneylender gained Copper.
-IllgottengainsMoneylender gained Copper.
-IllgottengainsMoneylender gained Copper.
-IllgottengainsMoneylender gained Copper.
-IllgottengainsMoneylender gained Copper.
-IllgottengainsMoneylender gained Copper.
-IllgottengainsMoneylender gained Copper.
-IllgottengainsMoneylender gained Estate.
-IllgottengainsMoneylender gained Estate.
-IllgottengainsMoneylender gained Estate.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Estate.
-BigMoneyDelayed gained Estate.
-BigMoneyDelayed gained Estate.
-IllgottengainsMoneylender reshuffled
-IllgottengainsMoneylender Drew Copper into hand.
-IllgottengainsMoneylender Drew Copper into hand.
-IllgottengainsMoneylender Drew Copper into hand.
-IllgottengainsMoneylender Drew Estate into hand.
-IllgottengainsMoneylender Drew Copper into hand.
-BigMoneyDelayed reshuffled
-BigMoneyDelayed Drew Estate into hand.
-BigMoneyDelayed Drew Copper into hand.
-BigMoneyDelayed Drew Copper into hand.
-BigMoneyDelayed Drew Copper into hand.
-BigMoneyDelayed Drew Estate into hand.
+IronworksGreathallRemodelHuntingGrounds gained Copper.
+IronworksGreathallRemodelHuntingGrounds gained Copper.
+IronworksGreathallRemodelHuntingGrounds gained Copper.
+IronworksGreathallRemodelHuntingGrounds gained Copper.
+IronworksGreathallRemodelHuntingGrounds gained Copper.
+IronworksGreathallRemodelHuntingGrounds gained Copper.
+IronworksGreathallRemodelHuntingGrounds gained Copper.
+IronworksGreathallRemodelHuntingGrounds gained Estate.
+IronworksGreathallRemodelHuntingGrounds gained Estate.
+IronworksGreathallRemodelHuntingGrounds gained Estate.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoney gained Estate.
+IronworksGreathallRemodelHuntingGrounds reshuffled
+IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+BigMoney reshuffled
+BigMoney Drew Estate into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Estate into hand.
 ROUND 1
 -------------
-IllgottengainsMoneylender begins turn
+IronworksGreathallRemodelHuntingGrounds begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  IllgottengainsMoneylender Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 1 all together.
-  IllgottengainsMoneylender Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 2 all together.
-  IllgottengainsMoneylender Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 4 all together.
-  IllgottengainsMoneylender bought Moneylender.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(7), Estate(3), Moneylender(1), 
+  IronworksGreathallRemodelHuntingGrounds bought IronWorks.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), IronWorks(1), 
 
-BigMoneyDelayed begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-IllgottengainsMoneylender begins turn
+IronworksGreathallRemodelHuntingGrounds begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  IllgottengainsMoneylender Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 1 all together.
-  IllgottengainsMoneylender Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 2 all together.
-  IllgottengainsMoneylender Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 3 all together.
-  IllgottengainsMoneylender bought Silver.
-  IllgottengainsMoneylender reshuffled
-  IllgottengainsMoneylender Drew Silver into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Moneylender into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(7), Estate(3), Moneylender(1), Silver(1), 
+  IronworksGreathallRemodelHuntingGrounds bought Silver.
+  IronworksGreathallRemodelHuntingGrounds reshuffled
+  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), IronWorks(1), Silver(1), 
 
-BigMoneyDelayed begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoney bought Silver.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Copper,Moneylender,Silver,
-  IllgottengainsMoneylender Played Moneylender.
-    IllgottengainsMoneylender trashed Copper.
-    +3 Coin = 3 all together.
-  IllgottengainsMoneylender Played Silver.
-    +2 Coin = 5 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 6 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 7 all together.
-  IllgottengainsMoneylender bought Ill-Gotten Gains.
-    BigMoneyDelayed gained Curse.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(6), Estate(3), Ill-Gotten Gains(1), Moneylender(1), Silver(1), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Copper,Copper,IronWorks,Silver,
+  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
+    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Silver.
+    +2 Coin = 2 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(1), Estate(3), Silver(3), 
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 5 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 6 all together.
+  IronworksGreathallRemodelHuntingGrounds bought Gold.
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), Gold(1), Great Hall(1), IronWorks(1), Silver(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(3), 
 
 ROUND 4
 -------------
-IllgottengainsMoneylender begins turn
+IronworksGreathallRemodelHuntingGrounds begins turn
 With hand: Copper,Copper,Estate,Estate,Estate,
-  IllgottengainsMoneylender Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 1 all together.
-  IllgottengainsMoneylender Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 2 all together.
-  IllgottengainsMoneylender bought Copper.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender reshuffled
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Silver into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(7), Estate(3), Ill-Gotten Gains(1), Moneylender(1), Silver(1), 
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds reshuffled
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), Gold(1), Great Hall(1), IronWorks(1), Silver(1), 
 
-BigMoneyDelayed begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoneyDelayed Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(1), Estate(3), Silver(4), 
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(4), 
 
 ROUND 5
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
-  IllgottengainsMoneylender Played Silver.
-    +2 Coin = 2 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Copper,Copper,Estate,IronWorks,
+  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
+    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Gold into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Gold.
+    +3 Coin = 3 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 5 all together.
-  IllgottengainsMoneylender Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 6 all together.
-  IllgottengainsMoneylender bought Ill-Gotten Gains.
-    BigMoneyDelayed gained Curse.
-  IllgottengainsMoneylender Drew Moneylender into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(7), Estate(3), Ill-Gotten Gains(2), Moneylender(1), Silver(1), 
+  IronworksGreathallRemodelHuntingGrounds bought Hunting Grounds.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), Gold(1), Great Hall(2), Hunting Grounds(1), IronWorks(1), Silver(1), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyDelayed Played Silver.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(1), Silver(4), 
+  BigMoney bought Gold.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
 
 ROUND 6
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Estate,Estate,Ill-Gotten Gains,Moneylender,
-  IllgottengainsMoneylender Played Moneylender.
-    IllgottengainsMoneylender trashed Copper.
-    +3 Coin = 3 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  IronworksGreathallRemodelHuntingGrounds Played Silver.
+    +2 Coin = 2 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 3 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 4 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 5 all together.
-  IllgottengainsMoneylender bought Ill-Gotten Gains.
-    BigMoneyDelayed gained Curse.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender reshuffled
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Moneylender into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(7), Estate(3), Ill-Gotten Gains(3), Moneylender(1), Silver(1), 
+  IronworksGreathallRemodelHuntingGrounds bought IronWorks.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds reshuffled
+  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), Gold(1), Great Hall(2), Hunting Grounds(1), IronWorks(2), Silver(1), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Estate,Estate,Estate,
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(1), Silver(4), 
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(5), 
 
 ROUND 7
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Copper,Estate,Moneylender,
-  IllgottengainsMoneylender Played Moneylender.
-    IllgottengainsMoneylender trashed Copper.
-    +3 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 5 all together.
-  IllgottengainsMoneylender bought Ill-Gotten Gains.
-    BigMoneyDelayed gained Curse.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(6), Estate(3), Ill-Gotten Gains(4), Moneylender(1), Silver(1), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Curse,Silver,Silver,
-  BigMoneyDelayed Played Silver.
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Copper,Estate,IronWorks,Silver,
+  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
+    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 3 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 4 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(4), Estate(3), Gold(2), Silver(4), 
+  IronworksGreathallRemodelHuntingGrounds bought Remodel.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Gold into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), Gold(1), Great Hall(3), Hunting Grounds(1), IronWorks(2), Remodel(1), Silver(1), 
+
+BigMoney begins turn
+With hand: Copper,Estate,Silver,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Silver.
+    +2 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
 
 ROUND 8
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Estate,Ill-Gotten Gains,Ill-Gotten Gains,
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 1 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 2 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 3 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 5 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 6 all together.
-  IllgottengainsMoneylender bought Ill-Gotten Gains.
-    BigMoneyDelayed gained Curse.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Silver into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(8), Estate(3), Ill-Gotten Gains(5), Moneylender(1), Silver(1), 
-
-BigMoneyDelayed begins turn
-With hand: Curse,Curse,Estate,Estate,Gold,
-  BigMoneyDelayed Played Gold.
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Estate,Gold,Great Hall,Hunting Grounds,
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Hunting Grounds.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(5), Estate(3), Gold(2), Silver(5), 
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 4 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 5 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 6 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 7 all together.
+  IronworksGreathallRemodelHuntingGrounds bought Hunting Grounds.
+  IronworksGreathallRemodelHuntingGrounds reshuffled
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(3), Gold(1), Great Hall(3), Hunting Grounds(2), IronWorks(2), Remodel(1), Silver(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(6), 
 
 ROUND 9
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Estate,Ill-Gotten Gains,Silver,
-  IllgottengainsMoneylender Played Silver.
-    +2 Coin = 2 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 5 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 6 all together.
-  IllgottengainsMoneylender bought Ill-Gotten Gains.
-    BigMoneyDelayed gained Curse.
-  IllgottengainsMoneylender reshuffled
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(9), Estate(3), Ill-Gotten Gains(6), Moneylender(1), Silver(1), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyDelayed Played Copper.
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Copper,Estate,IronWorks,Remodel,
+  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
+    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Remodel.
+    IronworksGreathallRemodelHuntingGrounds trashed Estate.
+    IronworksGreathallRemodelHuntingGrounds gained Remodel.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(6), Estate(3), Gold(2), Silver(6), 
+  IronworksGreathallRemodelHuntingGrounds bought Silver.
+  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(2), Gold(1), Great Hall(4), Hunting Grounds(2), IronWorks(2), Remodel(2), Silver(2), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(6), 
 
 ROUND 10
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Estate,Estate,Ill-Gotten Gains,
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 1 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 2 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 3 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender bought Silver.
-  IllgottengainsMoneylender Drew Silver into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Moneylender into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(10), Estate(3), Ill-Gotten Gains(6), Moneylender(1), Silver(2), 
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Estate,Great Hall,Hunting Grounds,Silver,
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
+  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
+    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Hunting Grounds.
+    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Gold into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Gold.
+    +3 Coin = 3 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Silver.
+    +2 Coin = 5 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 6 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 7 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 8 all together.
+  IronworksGreathallRemodelHuntingGrounds bought Province.
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds reshuffled
+  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(2), Gold(1), Great Hall(5), Hunting Grounds(2), IronWorks(2), Province(1), Remodel(2), Silver(2), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Curse,Curse,
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(6), Estate(3), Gold(2), Silver(7), 
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(6), 
 
 ROUND 11
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Estate,Moneylender,Silver,
-  IllgottengainsMoneylender Played Moneylender.
-    IllgottengainsMoneylender trashed Copper.
-    +3 Coin = 3 all together.
-  IllgottengainsMoneylender Played Silver.
-    +2 Coin = 5 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 6 all together.
-  IllgottengainsMoneylender bought Ill-Gotten Gains.
-    BigMoneyDelayed gained Curse.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(9), Estate(3), Ill-Gotten Gains(7), Moneylender(1), Silver(2), 
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Copper,Estate,Great Hall,IronWorks,
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
+    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
+  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
+    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Hunting Grounds.
+    IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 1 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 2 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 3 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 4 all together.
+  IronworksGreathallRemodelHuntingGrounds bought Remodel.
+  IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Province into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(2), Gold(1), Great Hall(7), Hunting Grounds(2), IronWorks(2), Province(1), Remodel(3), Silver(2), 
 
-BigMoneyDelayed begins turn
-With hand: Gold,Silver,Silver,Silver,Silver,
-  BigMoneyDelayed Played Gold.
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 5 all together.
-  BigMoneyDelayed Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 7 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 9 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 11 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(7), Estate(3), Gold(3), Silver(7), 
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(6), 
 
 ROUND 12
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Copper,Ill-Gotten Gains,Ill-Gotten Gains,
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 1 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 2 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 3 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 4 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 5 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 6 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 7 all together.
-  IllgottengainsMoneylender bought Ill-Gotten Gains.
-    BigMoneyDelayed gained Curse.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(11), Estate(3), Ill-Gotten Gains(8), Moneylender(1), Silver(2), 
-
-BigMoneyDelayed begins turn
-With hand: Curse,Curse,Curse,Estate,Silver,
-  BigMoneyDelayed Played Silver.
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Great Hall,Province,Remodel,Silver,
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Remodel.
+    IronworksGreathallRemodelHuntingGrounds trashed Remodel.
+    IronworksGreathallRemodelHuntingGrounds gained Hunting Grounds.
+  IronworksGreathallRemodelHuntingGrounds Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(8), Estate(3), Gold(3), Silver(7), 
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 3 all together.
+  IronworksGreathallRemodelHuntingGrounds bought Silver.
+  IronworksGreathallRemodelHuntingGrounds Drew Gold into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(2), Gold(1), Great Hall(7), Hunting Grounds(3), IronWorks(2), Province(1), Remodel(2), Silver(3), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(6), 
 
 ROUND 13
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Ill-Gotten Gains,Ill-Gotten Gains,Ill-Gotten Gains,
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 1 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 2 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 3 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 5 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 6 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 7 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 8 all together.
-  IllgottengainsMoneylender bought Province.
-  IllgottengainsMoneylender reshuffled
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(14), Estate(3), Ill-Gotten Gains(8), Moneylender(1), Province(1), Silver(2), 
-
-BigMoneyDelayed begins turn
-With hand: Curse,Estate,Estate,Gold,Gold,
-  BigMoneyDelayed Played Gold.
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Estate,Gold,Great Hall,Silver,
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(8), Estate(3), Gold(4), Silver(7), 
+  IronworksGreathallRemodelHuntingGrounds Played Silver.
+    +2 Coin = 5 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 6 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 7 all together.
+  IronworksGreathallRemodelHuntingGrounds bought Hunting Grounds.
+  IronworksGreathallRemodelHuntingGrounds reshuffled
+  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(2), Gold(1), Great Hall(7), Hunting Grounds(4), IronWorks(2), Province(1), Remodel(2), Silver(3), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(6), Province(1), Silver(6), 
 
 ROUND 14
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Copper,Copper,Ill-Gotten Gains,
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 1 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 2 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 5 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 6 all together.
-  IllgottengainsMoneylender bought Ill-Gotten Gains.
-    BigMoneyDelayed gained Curse.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(15), Estate(3), Ill-Gotten Gains(9), Moneylender(1), Province(1), Silver(2), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyDelayed Played Silver.
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Copper,Great Hall,Hunting Grounds,Silver,
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Hunting Grounds.
+    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 3 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 4 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyDelayed Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(9), Estate(3), Gold(5), Silver(7), 
+  IronworksGreathallRemodelHuntingGrounds bought Hunting Grounds.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(2), Gold(1), Great Hall(7), Hunting Grounds(5), IronWorks(2), Province(1), Remodel(2), Silver(3), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(7), Province(1), Silver(6), 
 
 ROUND 15
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Estate,Ill-Gotten Gains,Ill-Gotten Gains,
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 1 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 2 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 3 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 5 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 6 all together.
-  IllgottengainsMoneylender bought Ill-Gotten Gains.
-    BigMoneyDelayed gained Curse.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Silver into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(17), Estate(3), Ill-Gotten Gains(10), Moneylender(1), Province(1), Silver(2), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Curse,Silver,Silver,
-  BigMoneyDelayed Played Silver.
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Great Hall,Great Hall,Great Hall,Hunting Grounds,
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
+  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
+    IronworksGreathallRemodelHuntingGrounds gained Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Hunting Grounds.
+    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Province into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
+  IronworksGreathallRemodelHuntingGrounds Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(6), Silver(7), 
+  IronworksGreathallRemodelHuntingGrounds bought Remodel.
+  IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Gold into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Estate(2), Gold(1), Great Hall(8), Hunting Grounds(5), IronWorks(2), Province(1), Remodel(3), Silver(3), 
+
+BigMoney begins turn
+With hand: Copper,Estate,Silver,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Silver.
+    +2 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(8), Province(1), Silver(6), 
 
 ROUND 16
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Estate,Ill-Gotten Gains,Silver,
-  IllgottengainsMoneylender Played Silver.
-    +2 Coin = 2 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Gold,Hunting Grounds,Hunting Grounds,Remodel,
+  IronworksGreathallRemodelHuntingGrounds Played Remodel.
+    IronworksGreathallRemodelHuntingGrounds trashed Hunting Grounds.
+      IronworksGreathallRemodelHuntingGrounds gained Duchy.
+    IronworksGreathallRemodelHuntingGrounds gained Province.
+  IronworksGreathallRemodelHuntingGrounds Played Gold.
+    +3 Coin = 3 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 5 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 6 all together.
-  IllgottengainsMoneylender bought Gold.
-  IllgottengainsMoneylender Drew Silver into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(18), Estate(3), Gold(1), Ill-Gotten Gains(10), Moneylender(1), Province(1), Silver(2), 
+  IronworksGreathallRemodelHuntingGrounds bought Remodel.
+  IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
+  IronworksGreathallRemodelHuntingGrounds reshuffled
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Province into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Duchy(1), Estate(2), Gold(1), Great Hall(8), Hunting Grounds(4), IronWorks(2), Province(2), Remodel(4), Silver(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Curse,Curse,Silver,Silver,
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(6), Silver(8), 
+BigMoney begins turn
+With hand: Gold,Gold,Gold,Province,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Gold.
+    +3 Coin = 9 all together.
+  BigMoney Played Silver.
+    +2 Coin = 11 all together.
+  BigMoney bought Province.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(8), Province(2), Silver(6), 
 
 ROUND 17
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Estate,Ill-Gotten Gains,Silver,
-  IllgottengainsMoneylender Played Silver.
-    +2 Coin = 2 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 5 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 6 all together.
-  IllgottengainsMoneylender bought Gold.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Province into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Moneylender into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(19), Estate(3), Gold(2), Ill-Gotten Gains(10), Moneylender(1), Province(1), Silver(2), 
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Copper,Copper,Province,Remodel,
+  IronworksGreathallRemodelHuntingGrounds Played Remodel.
+    IronworksGreathallRemodelHuntingGrounds trashed Copper.
+    IronworksGreathallRemodelHuntingGrounds gained Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 1 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
+    +1 Coin = 2 all together.
+  IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Duchy(1), Estate(2), Gold(1), Great Hall(8), Hunting Grounds(4), IronWorks(2), Province(2), Remodel(4), Silver(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Curse,Estate,Gold,Silver,
-  BigMoneyDelayed Played Gold.
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(7), Silver(8), 
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Duchy.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(8), Province(2), Silver(6), 
 
 ROUND 18
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Ill-Gotten Gains,Ill-Gotten Gains,Moneylender,Province,
-  IllgottengainsMoneylender Played Moneylender.
-    IllgottengainsMoneylender trashed Copper.
-    +3 Coin = 3 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 4 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 5 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 6 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 7 all together.
-  IllgottengainsMoneylender bought Gold.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender reshuffled
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(20), Estate(3), Gold(3), Ill-Gotten Gains(10), Moneylender(1), Province(1), Silver(2), 
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Estate,Great Hall,Remodel,Silver,Silver,
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Province into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Remodel.
+    IronworksGreathallRemodelHuntingGrounds trashed Estate.
+    IronworksGreathallRemodelHuntingGrounds gained Remodel.
+  IronworksGreathallRemodelHuntingGrounds Played Silver.
+    +2 Coin = 2 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Silver.
+    +2 Coin = 4 all together.
+  IronworksGreathallRemodelHuntingGrounds bought Remodel.
+  IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Duchy(1), Estate(1), Gold(1), Great Hall(8), Hunting Grounds(4), IronWorks(2), Province(2), Remodel(6), Silver(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Gold,Silver,
-  BigMoneyDelayed Played Gold.
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Province,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyDelayed bought Province.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(7), Province(1), Silver(8), 
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Duchy.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(8), Province(2), Silver(6), 
 
 ROUND 19
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Copper,Copper,Ill-Gotten Gains,
-  IllgottengainsMoneylender Played Copper.
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Great Hall,Hunting Grounds,IronWorks,Remodel,
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Remodel.
+    IronworksGreathallRemodelHuntingGrounds trashed Hunting Grounds.
+      IronworksGreathallRemodelHuntingGrounds gained Duchy.
+    IronworksGreathallRemodelHuntingGrounds gained Province.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 1 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 2 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 5 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 6 all together.
-  IllgottengainsMoneylender bought Gold.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Silver into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(21), Estate(3), Gold(4), Ill-Gotten Gains(10), Moneylender(1), Province(1), Silver(2), 
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Duchy(2), Estate(1), Gold(1), Great Hall(8), Hunting Grounds(3), IronWorks(2), Province(3), Remodel(6), Silver(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Curse,Curse,Gold,Silver,
-  BigMoneyDelayed Played Gold.
+BigMoney begins turn
+With hand: Estate,Gold,Gold,Silver,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(8), Province(1), Silver(8), 
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Silver.
+    +2 Coin = 10 all together.
+  BigMoney bought Province.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(8), Province(3), Silver(6), 
 
 ROUND 20
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Copper,Ill-Gotten Gains,Silver,
-  IllgottengainsMoneylender Played Silver.
-    +2 Coin = 2 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Copper,Copper,Great Hall,Great Hall,Great Hall,
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Gold into hand.
+  IronworksGreathallRemodelHuntingGrounds Played IronWorks.
+    IronworksGreathallRemodelHuntingGrounds gained Remodel.
+    +1 Actions = 1 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Gold.
+    +3 Coin = 3 all together.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Copper.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 5 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
+  IronworksGreathallRemodelHuntingGrounds Played Copper.
     +1 Coin = 6 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 7 all together.
-  IllgottengainsMoneylender bought Gold.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(22), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(1), Silver(2), 
+  IronworksGreathallRemodelHuntingGrounds bought Hunting Grounds.
+  IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Duchy into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Duchy(2), Estate(1), Gold(1), Great Hall(8), Hunting Grounds(4), IronWorks(2), Province(3), Remodel(7), Silver(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Curse,Curse,Estate,Silver,
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(8), Province(1), Silver(9), 
+BigMoney begins turn
+With hand: Gold,Gold,Gold,Province,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Gold.
+    +3 Coin = 9 all together.
+  BigMoney Played Silver.
+    +2 Coin = 11 all together.
+  BigMoney bought Province.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(8), Province(4), Silver(6), 
 
 ROUND 21
 -------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Ill-Gotten Gains,Ill-Gotten Gains,Ill-Gotten Gains,
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 1 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 2 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 3 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 5 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 6 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 7 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 8 all together.
-  IllgottengainsMoneylender bought Province.
-  IllgottengainsMoneylender Drew Gold into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(25), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(2), Silver(2), 
-
-BigMoneyDelayed begins turn
-With hand: Curse,Curse,Estate,Silver,Silver,
-  BigMoneyDelayed Played Silver.
+IronworksGreathallRemodelHuntingGrounds begins turn
+With hand: Duchy,Great Hall,Great Hall,Hunting Grounds,Silver,
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Great Hall into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Great Hall.
+    +1 Actions = 1 all together.
+    IronworksGreathallRemodelHuntingGrounds Drew Estate into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Hunting Grounds.
+    IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
+    IronworksGreathallRemodelHuntingGrounds reshuffled
+    IronworksGreathallRemodelHuntingGrounds Drew Silver into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Province into hand.
+    IronworksGreathallRemodelHuntingGrounds Drew Hunting Grounds into hand.
+  IronworksGreathallRemodelHuntingGrounds Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
+  IronworksGreathallRemodelHuntingGrounds Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(8), Province(1), Silver(10), 
+  IronworksGreathallRemodelHuntingGrounds bought Remodel.
+  IronworksGreathallRemodelHuntingGrounds Drew Province into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Copper into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew IronWorks into hand.
+  IronworksGreathallRemodelHuntingGrounds Drew Remodel into hand.
+  IronworksGreathallRemodelHuntingGrounds ends turn with deck: Copper(7), Duchy(2), Estate(1), Gold(1), Great Hall(8), Hunting Grounds(4), IronWorks(2), Province(3), Remodel(8), Silver(3), 
 
-ROUND 22
--------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Estate,Gold,Ill-Gotten Gains,
-  IllgottengainsMoneylender Played Gold.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 5 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
     +1 Coin = 6 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 7 all together.
-  IllgottengainsMoneylender bought Duchy.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Gold into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(26), Duchy(1), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(2), Silver(2), 
-
-BigMoneyDelayed begins turn
-With hand: Curse,Curse,Curse,Gold,Gold,
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(9), Province(1), Silver(10), 
-
-ROUND 23
--------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Estate,Gold,Ill-Gotten Gains,Ill-Gotten Gains,
-  IllgottengainsMoneylender Played Gold.
-    +3 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 5 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 6 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 7 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 8 all together.
-  IllgottengainsMoneylender bought Province.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Moneylender into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(28), Duchy(1), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(3), Silver(2), 
+  BigMoney bought Province.
+  BigMoney Drew Silver into hand.
+  BigMoney reshuffled
+  BigMoney Drew Province into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(8), Province(5), Silver(6), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Curse,Gold,Silver,Silver,
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyDelayed bought Province.
-  BigMoneyDelayed Drew Province into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(9), Province(2), Silver(10), 
+Game ended in 21 turns.
+BigMoney Won!
+IronworksGreathallRemodelHuntingGrounds total score: 33
+  Copper(7), Duchy(2), Estate(1), Gold(1), Great Hall(8), Hunting Grounds(4), IronWorks(2), Province(3), Remodel(8), Silver(3), 
+BigMoney total score: 39
+  Copper(7), Duchy(2), Estate(3), Gold(8), Province(5), Silver(6), 
+Trash contains: Copper(1), Estate(2), Hunting Grounds(2), Remodel(1), 
 
-ROUND 24
--------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Estate,Ill-Gotten Gains,Moneylender,
-  IllgottengainsMoneylender Played Moneylender.
-    IllgottengainsMoneylender trashed Copper.
-    +3 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 5 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 6 all together.
-  IllgottengainsMoneylender bought Duchy.
-  IllgottengainsMoneylender Drew Silver into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(28), Duchy(2), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(3), Silver(2), 
+IronworksGreathallRemodelHuntingGrounds GainSequence is:
+  IronWorks, Silver, Great Hall, Gold, Great Hall, 
+  Hunting Grounds, IronWorks, Great Hall, Remodel, Hunting Grounds, 
+  Great Hall, Remodel, Silver, Great Hall, Province, 
+  Great Hall, Great Hall, Remodel, Hunting Grounds, Silver, 
+  Hunting Grounds, Hunting Grounds, Great Hall, Remodel, Duchy, 
+  Province, Remodel, Copper, Remodel, Remodel, 
+  Duchy, Province, Remodel, Hunting Grounds, Remodel, 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Curse,Gold,Province,Silver,
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDelayed bought Duchy.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Duchy(1), Estate(3), Gold(9), Province(2), Silver(10), 
-
-ROUND 25
--------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
-  IllgottengainsMoneylender Played Silver.
-    +2 Coin = 2 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 5 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 6 all together.
-  IllgottengainsMoneylender bought Duchy.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Province into hand.
-  IllgottengainsMoneylender Drew Gold into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(28), Duchy(3), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(3), Silver(2), 
-
-BigMoneyDelayed begins turn
-With hand: Curse,Curse,Curse,Estate,Silver,
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Duchy(1), Estate(3), Gold(9), Province(2), Silver(10), 
-
-ROUND 26
--------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Gold,Ill-Gotten Gains,Province,
-  IllgottengainsMoneylender Played Gold.
-    +3 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 5 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 6 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 7 all together.
-  IllgottengainsMoneylender bought Duchy.
-  IllgottengainsMoneylender reshuffled
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Duchy into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(29), Duchy(4), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(3), Silver(2), 
-
-BigMoneyDelayed begins turn
-With hand: Curse,Curse,Estate,Gold,Silver,
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed bought Duchy.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Duchy(2), Estate(3), Gold(9), Province(2), Silver(10), 
-
-ROUND 27
--------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Copper,Copper,Duchy,
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 1 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 2 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 3 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 4 all together.
-  IllgottengainsMoneylender bought Silver.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Province into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(29), Duchy(4), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(3), Silver(3), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Curse,Estate,Gold,Silver,
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDelayed bought Duchy.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Curse into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Curse(10), Duchy(3), Estate(3), Gold(9), Province(2), Silver(10), 
-
-ROUND 28
--------------
-IllgottengainsMoneylender begins turn
-With hand: Copper,Copper,Copper,Ill-Gotten Gains,Province,
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 1 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 2 all together.
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 3 all together.
-  IllgottengainsMoneylender Played Ill-Gotten Gains.
-    +1 Coin = 4 all together.
-    IllgottengainsMoneylender gained Copper.
-      ... and placed card in hand
-  IllgottengainsMoneylender Played Copper.
-    +1 Coin = 5 all together.
-  IllgottengainsMoneylender bought Duchy.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Silver into hand.
-  IllgottengainsMoneylender Drew Estate into hand.
-  IllgottengainsMoneylender Drew Copper into hand.
-  IllgottengainsMoneylender Drew Ill-Gotten Gains into hand.
-  IllgottengainsMoneylender ends turn with deck: Copper(30), Duchy(5), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(3), Silver(3), 
-
-Game ended in 28 turns.
-IllgottengainsMoneylender Won!
-IllgottengainsMoneylender total score: 36
-  Copper(30), Duchy(5), Estate(3), Gold(5), Ill-Gotten Gains(10), Moneylender(1), Province(3), Silver(3), 
-BigMoneyDelayed total score: 14
-  Copper(7), Curse(10), Duchy(3), Estate(3), Gold(9), Province(2), Silver(10), 
-Trash contains: Copper(6), 
+BigMoney GainSequence is:
+  Silver, Silver, Silver, Silver, Gold, 
+  Silver, Gold, Silver, Gold, Gold, 
+  Province, Gold, Gold, Gold, Gold, 
+  Province, Duchy, Duchy, Province, Province, 
+  Province, 

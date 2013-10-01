@@ -15,8 +15,8 @@ namespace Dominion
         {
             this.players = new PlayerState[playerCount];
             for (int playerIndex = 0; playerIndex < this.players.Length; ++playerIndex)
-            {                                
-                this.players[playerIndex] = new PlayerState(players[playerIndex], gameLog, random);
+            {
+                this.players[playerIndex] = new PlayerState(players[playerIndex], playerIndex, gameLog, random);
             }
 
             this.currentPlayerIndex = 0;

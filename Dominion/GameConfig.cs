@@ -128,7 +128,7 @@ namespace Dominion
             if (this.kingdomPiles.Where(card => card.Is<CardTypes.Urchin>()).Any())
             {
                 Add<CardTypes.Mercenary>(nonSupplyCardPiles, 10);
-            }
+            }            
 
             return nonSupplyCardPiles.ToArray();
         }

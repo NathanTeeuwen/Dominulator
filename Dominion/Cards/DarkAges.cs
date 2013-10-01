@@ -50,13 +50,13 @@ namespace Dominion.CardTypes
         Card
     {
         public Spoils()
-            : base("Spoils", coinCost: 0, plusCoins:3, isAction: true)
+            : base("Spoils", coinCost: 0, plusCoins:3, isAction: true, isTreasure:true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
-        {
-            currentPlayer.MoveCardFromPlayToPile(gameState);
+        {     
+            currentPlayer.MoveCardFromPlayToPile(gameState);            
         }
     }
 
@@ -470,6 +470,9 @@ namespace Dominion.CardTypes
         public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
         {
             Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, acceptableCard => acceptableCard.Is<CardTypes.Duchy>() || acceptableCard.Is<CardTypes.Estate>(), "Choose Duchy or 3 Estate");
+            if (gainedCard == null)
+                return;
+            
             if (gainedCard.Is<CardTypes.Estate>())
             {
                 currentPlayer.GainCardsFromSupply<CardTypes.Estate>(gameState, 2); // gain 2 more for total of 3.                
@@ -599,19 +602,26 @@ namespace Dominion.CardTypes
        Card
     {
         public Pillage()
-            : base("Pillage", coinCost: 5, isAction: true, isAttack:true)
+            : base("Pillage", coinCost: 5, isAction: true, attackDependsOnPlayerChoice: true, requiresSpoils:true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
-        {
-            throw new NotImplementedException();
-        }
+        {            
+            currentPlayer.MoveCardFromPlayToTrash(gameState);
 
-        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
-        {
-            throw new NotImplementedException();
-        }
+            PlayerState.AttackAction attackAction = delegate(PlayerState currentPlayer2, PlayerState otherPlayer, GameState gameState2)
+            {
+                if (otherPlayer.Hand.Count() >= 5)
+                {
+                    // TODO: make other player discard a good card
+                    otherPlayer.RequestPlayerDiscardCardFromOtherPlayersHand(gameState, otherPlayer);
+                }
+            };
+            currentPlayer.AttackOtherPlayers(gameState, attackAction);
+
+            currentPlayer.GainCardsFromSupply<CardTypes.Spoils>(gameState, 2);
+        }        
     }
 
     public class PoorHouse :

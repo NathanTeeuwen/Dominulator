@@ -29,9 +29,10 @@ namespace Dominion
         Type GetCardFromHandToPassLeft(GameState gameState);
         Type GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, PlayerState player, bool isOptional);
         Type GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard); // always optional
-        Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional);
+        Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional);        
         Type GetCardFromHandToIsland(GameState gameState);
         Type GetCardFromHandToDeferToNextTurn(GameState gameState);
+        Type GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer);
         int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber);
         bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card);
         bool ShouldPutCardInHand(GameState gameState, Card card);
