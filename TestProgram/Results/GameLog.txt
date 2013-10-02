@@ -1,859 +1,667 @@
-FishingVillageTest gained Copper.
-FishingVillageTest gained Copper.
-FishingVillageTest gained Copper.
-FishingVillageTest gained Copper.
-FishingVillageTest gained Copper.
-FishingVillageTest gained Copper.
-FishingVillageTest gained Copper.
-FishingVillageTest gained Estate.
-FishingVillageTest gained Estate.
-FishingVillageTest gained Estate.
-FishingVillage gained Copper.
-FishingVillage gained Copper.
-FishingVillage gained Copper.
-FishingVillage gained Copper.
-FishingVillage gained Copper.
-FishingVillage gained Copper.
-FishingVillage gained Copper.
-FishingVillage gained Estate.
-FishingVillage gained Estate.
-FishingVillage gained Estate.
-FishingVillageTest reshuffled
-FishingVillageTest Drew Copper into hand.
-FishingVillageTest Drew Copper into hand.
-FishingVillageTest Drew Copper into hand.
-FishingVillageTest Drew Estate into hand.
-FishingVillageTest Drew Copper into hand.
-FishingVillage reshuffled
-FishingVillage Drew Estate into hand.
-FishingVillage Drew Copper into hand.
-FishingVillage Drew Copper into hand.
-FishingVillage Drew Copper into hand.
-FishingVillage Drew Estate into hand.
+BigMoneyWithCard<Plaza> gained Copper.
+BigMoneyWithCard<Plaza> gained Copper.
+BigMoneyWithCard<Plaza> gained Copper.
+BigMoneyWithCard<Plaza> gained Copper.
+BigMoneyWithCard<Plaza> gained Copper.
+BigMoneyWithCard<Plaza> gained Copper.
+BigMoneyWithCard<Plaza> gained Copper.
+BigMoneyWithCard<Plaza> gained Estate.
+BigMoneyWithCard<Plaza> gained Estate.
+BigMoneyWithCard<Plaza> gained Estate.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoneyWithCard<Plaza> reshuffled
+BigMoneyWithCard<Plaza> Drew Copper into hand.
+BigMoneyWithCard<Plaza> Drew Copper into hand.
+BigMoneyWithCard<Plaza> Drew Copper into hand.
+BigMoneyWithCard<Plaza> Drew Estate into hand.
+BigMoneyWithCard<Plaza> Drew Copper into hand.
+BigMoney reshuffled
+BigMoney Drew Estate into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Estate into hand.
 ROUND 1
 -------------
-FishingVillageTest begins turn
+BigMoneyWithCard<Plaza> begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  FishingVillageTest Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 1 all together.
-  FishingVillageTest Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 2 all together.
-  FishingVillageTest Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 3 all together.
-  FishingVillageTest Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 4 all together.
-  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(1), 
+  BigMoneyWithCard<Plaza> bought Plaza.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Estate(3), Plaza(1), 
 
-FishingVillage begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  FishingVillage Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  FishingVillage Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  FishingVillage Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  FishingVillage bought Fishing Village.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(1), 
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-FishingVillageTest begins turn
+BigMoneyWithCard<Plaza> begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  FishingVillageTest Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 1 all together.
-  FishingVillageTest Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 2 all together.
-  FishingVillageTest Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 3 all together.
-  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
-  FishingVillageTest reshuffled
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(2), 
+  BigMoneyWithCard<Plaza> bought Silver.
+  BigMoneyWithCard<Plaza> reshuffled
+  BigMoneyWithCard<Plaza> Drew Silver into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Plaza into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Estate(3), Plaza(1), Silver(1), 
 
-FishingVillage begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  FishingVillage Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  FishingVillage Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  FishingVillage Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  FishingVillage Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  FishingVillage bought Fishing Village.
-  FishingVillage reshuffled
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(2), 
+  BigMoney bought Silver.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-FishingVillageTest begins turn
-With hand: Copper,Copper,Copper,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+BigMoneyWithCard<Plaza> begins turn
+With hand: Copper,Copper,Copper,Plaza,Silver,
+  BigMoneyWithCard<Plaza> Played Plaza.
     +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-  FishingVillageTest Played Copper.
+    BigMoneyWithCard<Plaza> Drew Copper into hand.
+    BigMoneyWithCard<Plaza> Discarded Copper.
+    +1 coin tokens = 1 all together.
+  BigMoneyWithCard<Plaza> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 3 all together.
-  FishingVillageTest Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 4 all together.
-  FishingVillageTest Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 5 all together.
-  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(3), 
+  BigMoneyWithCard<Plaza> spent 1 coin tokens.  0 remaining
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<Plaza> bought Gold.
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Estate(3), Gold(1), Plaza(1), Silver(1), 
 
-FishingVillage begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  FishingVillage Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  FishingVillage Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  FishingVillage Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  FishingVillage Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  FishingVillage bought Fishing Village.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(3), 
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(3), 
 
 ROUND 4
 -------------
-FishingVillageTest begins turn
+BigMoneyWithCard<Plaza> begins turn
 With hand: Copper,Copper,Estate,Estate,Estate,
-  +1 Coin = 1 all together.
-  +1 Coin = 2 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 3 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 4 all together.
-  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest reshuffled
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(4), 
-
-FishingVillage begins turn
-With hand: Copper,Copper,Estate,Estate,Fishing Village,
-  FishingVillage Played Fishing Village.
-    +2 Actions = 2 all together.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 1 all together.
-  FishingVillage Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 2 all together.
-  FishingVillage Played Copper.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> reshuffled
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Plaza into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Estate(3), Gold(1), Plaza(1), Silver(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  FishingVillage bought Fishing Village.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage reshuffled
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(4), 
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(4), 
 
 ROUND 5
 -------------
-FishingVillageTest begins turn
-With hand: Copper,Copper,Copper,Copper,FishingVillageAvailableForDeckCycle,
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+BigMoneyWithCard<Plaza> begins turn
+With hand: Copper,Copper,Copper,Copper,Plaza,
+  BigMoneyWithCard<Plaza> Played Plaza.
     +2 Actions = 2 all together.
+    BigMoneyWithCard<Plaza> Drew Estate into hand.
+    BigMoneyWithCard<Plaza> Discarded Copper.
+    +1 coin tokens = 1 all together.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 1 all together.
-  FishingVillageTest Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 2 all together.
-  FishingVillageTest Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 3 all together.
-  FishingVillageTest Played Copper.
+  BigMoneyWithCard<Plaza> spent 1 coin tokens.  0 remaining
     +1 Coin = 4 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 5 all together.
-  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(5), 
+  BigMoneyWithCard<Plaza> bought Plaza.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Silver into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Estate(3), Gold(1), Plaza(2), Silver(1), 
 
-FishingVillage begins turn
-With hand: Copper,Copper,Copper,Copper,Fishing Village,
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillage Played Fishing Village.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 3 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 4 all together.
-  FishingVillage Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  FishingVillage Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 6 all together.
-  FishingVillage bought Gold.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(4), Gold(1), 
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
 
 ROUND 6
 -------------
-FishingVillageTest begins turn
-With hand: Estate,Estate,Estate,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,
-  +1 Coin = 1 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 2 all together.
-    +1 Coin = 2 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 3 all together.
-    +1 Coin = 3 all together.
-  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest reshuffled
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(6), 
+BigMoneyWithCard<Plaza> begins turn
+With hand: Copper,Estate,Estate,Gold,Silver,
+  BigMoneyWithCard<Plaza> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Plaza> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<Plaza> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<Plaza> bought Gold.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> reshuffled
+  BigMoneyWithCard<Plaza> Drew Silver into hand.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Estate(3), Gold(2), Plaza(2), Silver(1), 
 
-FishingVillage begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Estate,Estate,Estate,
-  FishingVillage Finished Playing Fishing Village.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillage Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 3 all together.
-  FishingVillage bought Fishing Village.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage reshuffled
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(5), Gold(1), 
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
 
 ROUND 7
 -------------
-FishingVillageTest begins turn
-With hand: Copper,Copper,Copper,Copper,FishingVillageAvailableForDeckCycle,
-  +1 Coin = 1 all together.
-  +1 Coin = 2 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 2 all together.
-    +1 Coin = 3 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 4 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 5 all together.
-  FishingVillageTest Played Copper.
+BigMoneyWithCard<Plaza> begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoneyWithCard<Plaza> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Plaza> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 6 all together.
-  FishingVillageTest Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 7 all together.
-  FishingVillageTest bought Gold.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(6), Gold(1), 
+  BigMoneyWithCard<Plaza> bought Gold.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Estate(3), Gold(3), Plaza(2), Silver(1), 
 
-FishingVillage begins turn
-With hand: Copper,Fishing Village,Fishing Village,Fishing Village,Fishing Village,
-  FishingVillage Played Fishing Village.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-  FishingVillage Played Fishing Village.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-  FishingVillage Played Fishing Village.
-    +2 Actions = 4 all together.
-    +1 Coin = 3 all together.
-  FishingVillage Played Fishing Village.
-    +2 Actions = 5 all together.
-    +1 Coin = 4 all together.
-  FishingVillage Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  FishingVillage bought Fishing Village.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Gold into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(6), Gold(1), 
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), 
 
 ROUND 8
 -------------
-FishingVillageTest begins turn
-With hand: Copper,Estate,Estate,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,
-  +1 Coin = 1 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 2 all together.
-    +1 Coin = 2 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 3 all together.
-    +1 Coin = 3 all together.
-  FishingVillageTest Played Copper.
+BigMoneyWithCard<Plaza> begins turn
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoneyWithCard<Plaza> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 4 all together.
-  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(7), Gold(1), 
-
-FishingVillage begins turn
-With hand: Copper,Estate,Estate,Fishing Village,Gold,
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 2 all together.
-    +1 Actions = 3 all together.
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 3 all together.
-    +1 Actions = 4 all together.
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 4 all together.
-    +1 Actions = 5 all together.
-  FishingVillage Played Fishing Village.
-    +2 Actions = 6 all together.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 5 all together.
-  FishingVillage Played Gold.
-    +3 Coin = 8 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 9 all together.
-  FishingVillage bought Gold.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(6), Gold(2), 
+  BigMoneyWithCard<Plaza> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<Plaza> bought Gold.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Plaza into hand.
+  BigMoneyWithCard<Plaza> Drew Plaza into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Estate(3), Gold(4), Plaza(2), Silver(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
 
 ROUND 9
 -------------
-FishingVillageTest begins turn
-With hand: Copper,Estate,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,
-  +1 Coin = 1 all together.
-  +1 Coin = 2 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+BigMoneyWithCard<Plaza> begins turn
+With hand: Copper,Copper,Estate,Plaza,Plaza,
+  BigMoneyWithCard<Plaza> Played Plaza.
     +2 Actions = 2 all together.
-    +1 Coin = 3 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+    BigMoneyWithCard<Plaza> reshuffled
+    BigMoneyWithCard<Plaza> Drew Gold into hand.
+    BigMoneyWithCard<Plaza> Discarded Copper.
+    +1 coin tokens = 1 all together.
+  BigMoneyWithCard<Plaza> Played Plaza.
     +2 Actions = 3 all together.
+    BigMoneyWithCard<Plaza> Drew Copper into hand.
+    BigMoneyWithCard<Plaza> Discarded Copper.
+    +1 coin tokens = 2 all together.
+  BigMoneyWithCard<Plaza> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 4 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 4 all together.
-    +1 Coin = 5 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 6 all together.
-  FishingVillageTest bought Gold.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest reshuffled
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(7), Gold(2), 
+  BigMoneyWithCard<Plaza> spent 2 coin tokens.  0 remaining
+    +2 Coin = 6 all together.
+  BigMoneyWithCard<Plaza> bought Gold.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Estate(3), Gold(5), Plaza(2), Silver(1), 
 
-FishingVillage begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 2 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 3 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 4 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 5 all together.
-  FishingVillage bought Fishing Village.
-  FishingVillage Drew Copper into hand.
-  FishingVillage reshuffled
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Gold into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(7), Gold(2), 
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Gold.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), 
 
 ROUND 10
 -------------
-FishingVillageTest begins turn
-With hand: Copper,Copper,Estate,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,
-  +1 Coin = 1 all together.
-  +1 Coin = 2 all together.
-  +1 Coin = 3 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 2 all together.
-    +1 Coin = 4 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 3 all together.
-    +1 Coin = 5 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 6 all together.
-  FishingVillageTest Played Copper.
+BigMoneyWithCard<Plaza> begins turn
+With hand: Copper,Estate,Estate,Gold,Gold,
+  BigMoneyWithCard<Plaza> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Plaza> Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 7 all together.
-  FishingVillageTest bought Gold.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Gold into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(7), Gold(3), 
+  BigMoneyWithCard<Plaza> bought Gold.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Silver into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Estate(3), Gold(6), Plaza(2), Silver(1), 
 
-FishingVillage begins turn
-With hand: Copper,Copper,Fishing Village,Fishing Village,Gold,
-  FishingVillage Played Fishing Village.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-  FishingVillage Played Fishing Village.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-  FishingVillage Played Gold.
-    +3 Coin = 5 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 6 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 7 all together.
-  FishingVillage bought Gold.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(7), Gold(3), 
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(5), 
 
 ROUND 11
 -------------
-FishingVillageTest begins turn
-With hand: Copper,Copper,Copper,FishingVillageAvailableForDeckCycle,Gold,
-  +1 Coin = 1 all together.
-  +1 Coin = 2 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 2 all together.
-    +1 Coin = 3 all together.
-  FishingVillageTest Played Gold.
-    +3 Coin = 6 all together.
-  FishingVillageTest Played Copper.
+BigMoneyWithCard<Plaza> begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  BigMoneyWithCard<Plaza> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Plaza> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<Plaza> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 7 all together.
-  FishingVillageTest Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 8 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 9 all together.
-  FishingVillageTest bought Province.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(7), Gold(3), Province(1), 
+  BigMoneyWithCard<Plaza> bought Province.
+  BigMoneyWithCard<Plaza> reshuffled
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> Drew Silver into hand.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> Drew Plaza into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Estate(3), Gold(6), Plaza(2), Province(1), Silver(1), 
 
-FishingVillage begins turn
-With hand: Copper,Copper,Estate,Estate,Fishing Village,
-  FishingVillage Finished Playing Fishing Village.
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillage Finished Playing Fishing Village.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-    +1 Actions = 3 all together.
-  FishingVillage Played Fishing Village.
-    +2 Actions = 4 all together.
-    +1 Coin = 3 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 4 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 5 all together.
-  FishingVillage bought Fishing Village.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Gold into hand.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(3), 
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(5), 
 
 ROUND 12
 -------------
-FishingVillageTest begins turn
-With hand: Copper,Estate,Estate,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,
-  +1 Coin = 1 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+BigMoneyWithCard<Plaza> begins turn
+With hand: Copper,Estate,Gold,Plaza,Silver,
+  BigMoneyWithCard<Plaza> Played Plaza.
     +2 Actions = 2 all together.
-    +1 Coin = 2 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 3 all together.
-    +1 Coin = 3 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 4 all together.
-  FishingVillageTest bought FishingVillageAvailableForDeckCycle.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Gold into hand.
-  FishingVillageTest reshuffled
-  FishingVillageTest Drew Province into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(3), Province(1), 
-
-FishingVillage begins turn
-With hand: Copper,Copper,Estate,Fishing Village,Gold,
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillage Played Fishing Village.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-  FishingVillage Played Gold.
-    +3 Coin = 5 all together.
-  FishingVillage Played Copper.
+    BigMoneyWithCard<Plaza> Drew Copper into hand.
+    BigMoneyWithCard<Plaza> Discarded Copper.
+    +1 coin tokens = 1 all together.
+  BigMoneyWithCard<Plaza> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Plaza> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 6 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 7 all together.
-  FishingVillage bought Gold.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage reshuffled
-  FishingVillage Drew Copper into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(4), 
+  BigMoneyWithCard<Plaza> bought Gold.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Plaza into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Estate(3), Gold(7), Plaza(2), Province(1), Silver(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(2), Silver(5), 
 
 ROUND 13
 -------------
-FishingVillageTest begins turn
-With hand: Copper,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,Gold,Province,
-  +1 Coin = 1 all together.
-  +1 Coin = 2 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+BigMoneyWithCard<Plaza> begins turn
+With hand: Copper,Copper,Copper,Copper,Plaza,
+  BigMoneyWithCard<Plaza> Played Plaza.
     +2 Actions = 2 all together.
-    +1 Coin = 3 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 3 all together.
+    BigMoneyWithCard<Plaza> Drew Gold into hand.
+    BigMoneyWithCard<Plaza> Discarded Copper.
+    +1 coin tokens = 2 all together.
+  BigMoneyWithCard<Plaza> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 4 all together.
-  FishingVillageTest Played Gold.
-    +3 Coin = 7 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 8 all together.
-  FishingVillageTest bought Province.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest Drew Gold into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(3), Province(2), 
-
-FishingVillage begins turn
-With hand: Copper,Copper,Fishing Village,Fishing Village,Fishing Village,
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillage Played Fishing Village.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-  FishingVillage Played Fishing Village.
-    +2 Actions = 4 all together.
-    +1 Coin = 3 all together.
-  FishingVillage Played Fishing Village.
-    +2 Actions = 5 all together.
-    +1 Coin = 4 all together.
-  FishingVillage Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 5 all together.
-  FishingVillage Played Copper.
+  BigMoneyWithCard<Plaza> Played Copper.
     +1 Coin = 6 all together.
-  FishingVillage bought Gold.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(5), 
+  BigMoneyWithCard<Plaza> spent 2 coin tokens.  0 remaining
+    +2 Coin = 8 all together.
+  BigMoneyWithCard<Plaza> bought Province.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> Drew Province into hand.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Estate(3), Gold(7), Plaza(2), Province(2), Silver(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(3), Silver(5), 
 
 ROUND 14
 -------------
-FishingVillageTest begins turn
-With hand: Copper,Estate,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,Gold,
-  +1 Coin = 1 all together.
-  +1 Coin = 2 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 2 all together.
-    +1 Coin = 3 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 3 all together.
-    +1 Coin = 4 all together.
-  FishingVillageTest Played Gold.
-    +3 Coin = 7 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 8 all together.
-  FishingVillageTest bought Province.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(3), Province(3), 
+BigMoneyWithCard<Plaza> begins turn
+With hand: Estate,Gold,Gold,Gold,Province,
+  BigMoneyWithCard<Plaza> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Plaza> Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyWithCard<Plaza> Played Gold.
+    +3 Coin = 9 all together.
+  BigMoneyWithCard<Plaza> bought Province.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Estate into hand.
+  BigMoneyWithCard<Plaza> reshuffled
+  BigMoneyWithCard<Plaza> Drew Plaza into hand.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Estate(3), Gold(7), Plaza(2), Province(3), Silver(1), 
 
-FishingVillage begins turn
-With hand: Copper,Estate,Fishing Village,Fishing Village,Fishing Village,
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 2 all together.
-    +1 Actions = 3 all together.
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 3 all together.
-    +1 Actions = 4 all together.
-  FishingVillage Played Fishing Village.
-    +2 Actions = 5 all together.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Gold,Province,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  FishingVillage Played Fishing Village.
-    +2 Actions = 6 all together.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  FishingVillage Played Fishing Village.
-    +2 Actions = 7 all together.
+  BigMoney Played Copper.
     +1 Coin = 6 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 7 all together.
-  FishingVillage bought Gold.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Gold into hand.
-  FishingVillage Drew Gold into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(6), 
+  BigMoney bought Duchy.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(3), Province(3), Silver(5), 
 
 ROUND 15
 -------------
-FishingVillageTest begins turn
-With hand: Copper,Estate,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,
-  +1 Coin = 1 all together.
-  +1 Coin = 2 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+BigMoneyWithCard<Plaza> begins turn
+With hand: Copper,Estate,Gold,Gold,Plaza,
+  BigMoneyWithCard<Plaza> Played Plaza.
     +2 Actions = 2 all together.
-    +1 Coin = 3 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 3 all together.
-    +1 Coin = 4 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 4 all together.
-    +1 Coin = 5 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 6 all together.
-  FishingVillageTest bought Gold.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Estate into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Gold into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(4), Province(3), 
-
-FishingVillage begins turn
-With hand: Copper,Copper,Estate,Gold,Gold,
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 2 all together.
-    +1 Actions = 3 all together.
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 3 all together.
-    +1 Actions = 4 all together.
-  FishingVillage Played Gold.
+    BigMoneyWithCard<Plaza> Drew Estate into hand.
+    BigMoneyWithCard<Plaza> Discarded Copper.
+    +1 coin tokens = 1 all together.
+  BigMoneyWithCard<Plaza> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Plaza> Played Gold.
     +3 Coin = 6 all together.
-  FishingVillage Played Gold.
-    +3 Coin = 9 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 10 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 11 all together.
-  FishingVillage bought Province.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Gold into hand.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Gold into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(6), Province(1), 
+  BigMoneyWithCard<Plaza> bought Duchy.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> Drew Province into hand.
+  BigMoneyWithCard<Plaza> Drew Plaza into hand.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(7), Plaza(2), Province(3), Silver(1), 
+
+BigMoney begins turn
+With hand: Copper,Gold,Province,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(3), Province(4), Silver(5), 
 
 ROUND 16
 -------------
-FishingVillageTest begins turn
-With hand: Copper,Copper,Estate,FishingVillageAvailableForDeckCycle,Gold,
-  +1 Coin = 1 all together.
-  +1 Coin = 2 all together.
-  +1 Coin = 3 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
+BigMoneyWithCard<Plaza> begins turn
+With hand: Copper,Gold,Gold,Plaza,Province,
+  BigMoneyWithCard<Plaza> Played Plaza.
     +2 Actions = 2 all together.
-    +1 Coin = 4 all together.
-  FishingVillageTest Played Gold.
-    +3 Coin = 7 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 8 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 9 all together.
-  FishingVillageTest bought Province.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest reshuffled
-  FishingVillageTest Drew Province into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest Drew Copper into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(4), Province(4), 
-
-FishingVillage begins turn
-With hand: Copper,Estate,Fishing Village,Gold,Gold,
-  FishingVillage Played Fishing Village.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-  FishingVillage Played Gold.
-    +3 Coin = 4 all together.
-  FishingVillage Played Gold.
-    +3 Coin = 7 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 8 all together.
-  FishingVillage bought Province.
-  FishingVillage Drew Copper into hand.
-  FishingVillage reshuffled
-  FishingVillage Drew Gold into hand.
-  FishingVillage Drew Province into hand.
-  FishingVillage Drew Province into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage ends turn with deck: Copper(7), Estate(3), Fishing Village(8), Gold(6), Province(2), 
-
-ROUND 17
--------------
-FishingVillageTest begins turn
-With hand: Copper,Copper,Copper,Copper,Province,
-  +1 Coin = 1 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 2 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 3 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 4 all together.
-  FishingVillageTest Played Copper.
-    +1 Coin = 5 all together.
-  FishingVillageTest bought Duchy.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Gold into hand.
-  FishingVillageTest Drew Gold into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Duchy(1), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(4), Province(4), 
-
-FishingVillage begins turn
-With hand: Copper,Copper,Gold,Province,Province,
-  FishingVillage Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  FishingVillage Played Gold.
-    +3 Coin = 4 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 5 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 6 all together.
-  FishingVillage bought Duchy.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Gold into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage Drew Gold into hand.
-  FishingVillage ends turn with deck: Copper(7), Duchy(1), Estate(3), Fishing Village(8), Gold(6), Province(2), 
-
-ROUND 18
--------------
-FishingVillageTest begins turn
-With hand: FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,FishingVillageAvailableForDeckCycle,Gold,Gold,
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 3 all together.
-    +1 Coin = 2 all together.
-  FishingVillageTest Played FishingVillageAvailableForDeckCycle.
-    +2 Actions = 4 all together.
-    +1 Coin = 3 all together.
-  FishingVillageTest Played Gold.
-    +3 Coin = 6 all together.
-  FishingVillageTest Played Gold.
-    +3 Coin = 9 all together.
-  FishingVillageTest bought Province.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew Gold into hand.
-  FishingVillageTest Drew Province into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest Drew FishingVillageAvailableForDeckCycle into hand.
-  FishingVillageTest ends turn with deck: Copper(7), Duchy(1), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(4), Province(5), 
-
-FishingVillage begins turn
-With hand: Copper,Copper,Estate,Gold,Gold,
-  FishingVillage Played Gold.
+    BigMoneyWithCard<Plaza> Drew Gold into hand.
+    BigMoneyWithCard<Plaza> Discarded Copper.
+    +1 coin tokens = 2 all together.
+  BigMoneyWithCard<Plaza> Played Gold.
     +3 Coin = 3 all together.
-  FishingVillage Played Gold.
+  BigMoneyWithCard<Plaza> Played Gold.
     +3 Coin = 6 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 7 all together.
-  FishingVillage Played Copper.
-    +1 Coin = 8 all together.
-  FishingVillage bought Province.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Estate into hand.
-  FishingVillage Drew Fishing Village into hand.
-  FishingVillage Drew Copper into hand.
-  FishingVillage ends turn with deck: Copper(7), Duchy(1), Estate(3), Fishing Village(8), Gold(6), Province(3), 
+  BigMoneyWithCard<Plaza> Played Gold.
+    +3 Coin = 9 all together.
+  BigMoneyWithCard<Plaza> bought Province.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> Drew Province into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Copper into hand.
+  BigMoneyWithCard<Plaza> Drew Gold into hand.
+  BigMoneyWithCard<Plaza> ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(7), Plaza(2), Province(4), Silver(1), 
 
-Game ended in 18 turns.
-FishingVillageTest Won!
-FishingVillageTest total score: 36
-  Copper(7), Duchy(1), Estate(3), FishingVillageAvailableForDeckCycle(8), Gold(4), Province(5), 
-FishingVillage total score: 24
-  Copper(7), Duchy(1), Estate(3), Fishing Village(8), Gold(6), Province(3), 
+Game ended in 16 turns.
+BigMoneyWithCard<Plaza> Won!
+BigMoneyWithCard<Plaza> total score: 30
+  Copper(7), Duchy(1), Estate(3), Gold(7), Plaza(2), Province(4), Silver(1), 
+BigMoney total score: 30
+  Copper(7), Duchy(1), Estate(3), Gold(3), Province(4), Silver(5), 
 Trash contains: 
 
-FishingVillageTest GainSequence is:
-  FishingVillageAvailableForDeckCycle, FishingVillageAvailableForDeckCycle, FishingVillageAvailableForDeckCycle, FishingVillageAvailableForDeckCycle, FishingVillageAvailableForDeckCycle, 
-  FishingVillageAvailableForDeckCycle, Gold, FishingVillageAvailableForDeckCycle, Gold, Gold, 
-  Province, FishingVillageAvailableForDeckCycle, Province, Province, Gold, 
-  Province, Duchy, Province, 
-FishingVillage GainSequence is:
-  Fishing Village, Fishing Village, Fishing Village, Fishing Village, Gold, 
-  Fishing Village, Fishing Village, Gold, Fishing Village, Gold, 
-  Fishing Village, Gold, Gold, Gold, Province, 
+BigMoneyWithCard<Plaza> GainSequence is:
+  Plaza, Silver, Gold, Plaza, Gold, 
+  Gold, Gold, Gold, Gold, Province, 
+  Gold, Province, Province, Duchy, Province, 
+
+BigMoney GainSequence is:
+  Silver, Silver, Silver, Silver, Gold, 
+  Gold, Silver, Gold, Province, Province, 
   Province, Duchy, Province, 
