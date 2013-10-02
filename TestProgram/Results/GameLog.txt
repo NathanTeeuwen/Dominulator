@@ -1,13 +1,13 @@
-LookoutSalvagerLibraryHighwayFestival gained Copper.
-LookoutSalvagerLibraryHighwayFestival gained Copper.
-LookoutSalvagerLibraryHighwayFestival gained Copper.
-LookoutSalvagerLibraryHighwayFestival gained Copper.
-LookoutSalvagerLibraryHighwayFestival gained Copper.
-LookoutSalvagerLibraryHighwayFestival gained Copper.
-LookoutSalvagerLibraryHighwayFestival gained Copper.
-LookoutSalvagerLibraryHighwayFestival gained Estate.
-LookoutSalvagerLibraryHighwayFestival gained Estate.
-LookoutSalvagerLibraryHighwayFestival gained Estate.
+ArmoryConspiratorForagerGreatHall gained Copper.
+ArmoryConspiratorForagerGreatHall gained Copper.
+ArmoryConspiratorForagerGreatHall gained Copper.
+ArmoryConspiratorForagerGreatHall gained Copper.
+ArmoryConspiratorForagerGreatHall gained Copper.
+ArmoryConspiratorForagerGreatHall gained Copper.
+ArmoryConspiratorForagerGreatHall gained Copper.
+ArmoryConspiratorForagerGreatHall gained Hovel.
+ArmoryConspiratorForagerGreatHall gained Necropolis.
+ArmoryConspiratorForagerGreatHall gained Overgrown Estate.
 BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
@@ -15,43 +15,43 @@ BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
-BigMoney gained Estate.
-BigMoney gained Estate.
-BigMoney gained Estate.
-LookoutSalvagerLibraryHighwayFestival reshuffled
-LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+BigMoney gained Hovel.
+BigMoney gained Necropolis.
+BigMoney gained Overgrown Estate.
+ArmoryConspiratorForagerGreatHall reshuffled
+ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+ArmoryConspiratorForagerGreatHall Drew Overgrown Estate into hand.
+ArmoryConspiratorForagerGreatHall Drew Copper into hand.
 BigMoney reshuffled
-BigMoney Drew Estate into hand.
+BigMoney Drew Necropolis into hand.
 BigMoney Drew Copper into hand.
 BigMoney Drew Copper into hand.
 BigMoney Drew Copper into hand.
-BigMoney Drew Estate into hand.
+BigMoney Drew Overgrown Estate into hand.
 ROUND 1
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Copper,Copper,Copper,Copper,Overgrown Estate,
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 1 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 3 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Salvager.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(7), Estate(3), Salvager(1), 
+  ArmoryConspiratorForagerGreatHall bought Armory.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Drew Hovel into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
+With hand: Copper,Copper,Copper,Necropolis,Overgrown Estate,
   BigMoney Played Copper.
     +1 Coin = 1 all together.
   BigMoney Played Copper.
@@ -60,33 +60,35 @@ With hand: Copper,Copper,Copper,Estate,Estate,
     +1 Coin = 3 all together.
   BigMoney bought Silver.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
+  BigMoney Drew Hovel into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoney ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(1), 
 
 ROUND 2
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Copper,Copper,Copper,Hovel,Necropolis,
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 1 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 3 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Lookout.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Lookout into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(7), Estate(3), Lookout(1), Salvager(1), 
+  ArmoryConspiratorForagerGreatHall bought Forager.
+  ArmoryConspiratorForagerGreatHall reshuffled
+  ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Copper(7), Forager(1), Hovel(1), Necropolis(1), Overgrown Estate(1), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
+With hand: Copper,Copper,Copper,Copper,Hovel,
   BigMoney Played Copper.
     +1 Coin = 1 all together.
   BigMoney Played Copper.
@@ -98,39 +100,37 @@ With hand: Copper,Copper,Copper,Copper,Estate,
   BigMoney bought Silver.
   BigMoney reshuffled
   BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
+  BigMoney Drew Necropolis into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoney ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(2), 
 
 ROUND 3
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Copper,Lookout,Salvager,
-  LookoutSalvagerLibraryHighwayFestival Played Lookout.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Armory,Copper,Copper,Forager,Necropolis,
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Conspirator.
+      ... and placed card on top of deck
+  ArmoryConspiratorForagerGreatHall Played Forager.
     +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
-    LookoutSalvagerLibraryHighwayFestival Revealed Estate.
-    LookoutSalvagerLibraryHighwayFestival Revealed Estate.
-      LookoutSalvagerLibraryHighwayFestival trashed Estate.
-      LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-      LookoutSalvagerLibraryHighwayFestival Placed Copper on top of his deck.
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Copper.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Copper.
     +1 Coin = 1 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(6), Estate(2), Lookout(1), Salvager(1), 
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Overgrown Estate into hand.
+  ArmoryConspiratorForagerGreatHall Drew Hovel into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(1), Copper(6), Forager(1), Hovel(1), Necropolis(1), Overgrown Estate(1), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
+With hand: Copper,Copper,Copper,Copper,Necropolis,
   BigMoney Played Copper.
     +1 Coin = 1 all together.
   BigMoney Played Copper.
@@ -142,34 +142,33 @@ With hand: Copper,Copper,Copper,Copper,Estate,
   BigMoney bought Silver.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
+  BigMoney Drew Hovel into hand.
+  BigMoney Drew Overgrown Estate into hand.
   BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(3), 
+  BigMoney ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(3), 
 
 ROUND 4
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 1 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Copper,Copper,Hovel,Overgrown Estate,
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 3 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Silver.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Lookout into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(6), Estate(2), Lookout(1), Salvager(1), Silver(1), 
+  ArmoryConspiratorForagerGreatHall bought Great Hall.
+    ArmoryConspiratorForagerGreatHall trashed Hovel.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall reshuffled
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(1), Copper(6), Forager(1), Great Hall(1), Necropolis(1), Overgrown Estate(1), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
+With hand: Copper,Copper,Hovel,Overgrown Estate,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Copper.
@@ -180,118 +179,129 @@ With hand: Copper,Copper,Estate,Estate,Silver,
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
   BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(4), 
+  BigMoney Drew Overgrown Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Necropolis into hand.
+  BigMoney ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
 
 ROUND 5
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Copper,Lookout,Salvager,
-  LookoutSalvagerLibraryHighwayFestival Played Lookout.
-    +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
-    LookoutSalvagerLibraryHighwayFestival Revealed Estate.
-    LookoutSalvagerLibraryHighwayFestival Revealed Estate.
-      LookoutSalvagerLibraryHighwayFestival trashed Estate.
-      LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-      LookoutSalvagerLibraryHighwayFestival Placed Copper on top of his deck.
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Copper.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 1 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(5), Estate(1), Lookout(1), Salvager(1), Silver(1), 
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Armory,Conspirator,Copper,Copper,Copper,
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 3 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 4 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 5 all together.
+  ArmoryConspiratorForagerGreatHall bought Conspirator.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Overgrown Estate into hand.
+  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(2), Copper(6), Forager(1), Great Hall(1), Necropolis(1), Overgrown Estate(1), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
+With hand: Copper,Necropolis,Overgrown Estate,Silver,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
   BigMoney Played Copper.
     +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Hovel into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(5), 
 
 ROUND 6
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Copper,Salvager,Silver,
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Copper.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Copper,Copper,Forager,Necropolis,Overgrown Estate,
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Forager.
+    +1 Actions = 2 all together.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Overgrown Estate.
+      ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+    +1 Coin = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 3 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Silver.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Lookout into hand.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(4), Estate(1), Lookout(1), Salvager(1), Silver(2), 
+  ArmoryConspiratorForagerGreatHall bought Great Hall.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall reshuffled
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(2), Copper(6), Forager(1), Great Hall(2), Necropolis(1), 
 
 BigMoney begins turn
-With hand: Estate,Estate,Estate,Silver,Silver,
+With hand: Copper,Copper,Copper,Hovel,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
   BigMoney bought Silver.
-  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney reshuffled
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(5), 
+  BigMoney ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
 ROUND 7
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Estate,Lookout,Silver,
-  LookoutSalvagerLibraryHighwayFestival Played Lookout.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Copper,Copper,Great Hall,Great Hall,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
     +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
-    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
-    LookoutSalvagerLibraryHighwayFestival Revealed Salvager.
-      LookoutSalvagerLibraryHighwayFestival trashed Copper.
-      LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-      LookoutSalvagerLibraryHighwayFestival Placed Salvager on top of his deck.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 3 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(3), Estate(1), Lookout(1), Salvager(1), Silver(2), 
+    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 4 all together.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Conspirator.
+      ... and placed card on top of deck
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 5 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 6 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 7 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 8 all together.
+  ArmoryConspiratorForagerGreatHall bought Province.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(3), Copper(6), Forager(1), Great Hall(2), Necropolis(1), Province(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Silver,
@@ -307,117 +317,183 @@ With hand: Copper,Copper,Copper,Copper,Silver,
     +1 Coin = 6 all together.
   BigMoney bought Gold.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Overgrown Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
 ROUND 8
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Estate,Salvager,Silver,Silver,
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Estate.
-    +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 6 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 7 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Festival.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Lookout into hand.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(3), Festival(1), Lookout(1), Salvager(1), Silver(2), 
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Copper,Copper,Forager,Necropolis,
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Forager.
+    +1 Actions = 2 all together.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Copper.
+    +1 Coin = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 3 all together.
+    ArmoryConspiratorForagerGreatHall reshuffled
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+    +1 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 4 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 5 all together.
+  ArmoryConspiratorForagerGreatHall bought Great Hall.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(3), Copper(5), Forager(1), Great Hall(3), Necropolis(1), Province(1), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
+With hand: Overgrown Estate,Silver,Silver,Silver,Silver,
   BigMoney Played Silver.
-    +2 Coin = 5 all together.
+    +2 Coin = 2 all together.
   BigMoney Played Silver.
-    +2 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney Played Copper.
-    +1 Coin = 9 all together.
+    +2 Coin = 4 all together.
+  BigMoney Played Silver.
+    +2 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
   BigMoney bought Gold.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
+  BigMoney Drew Necropolis into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), 
+  BigMoney ends turn with deck: Copper(7), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
 ROUND 9
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Festival,Lookout,Silver,
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 2 all together.
-    +1 Buys = 2 all together.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Copper,Copper,Great Hall,Great Hall,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Conspirator.
+      ... and placed card on top of deck
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 3 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 4 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
     +1 Coin = 5 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 6 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Library.
-  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(3), Festival(1), Library(1), Lookout(1), Salvager(1), Silver(2), 
+  ArmoryConspiratorForagerGreatHall bought Great Hall.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall reshuffled
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(4), Copper(5), Forager(1), Great Hall(4), Necropolis(1), Province(1), 
 
 BigMoney begins turn
-With hand: Estate,Estate,Estate,Silver,Silver,
+With hand: Copper,Copper,Copper,Necropolis,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
   BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
+  BigMoney Drew Hovel into hand.
   BigMoney reshuffled
-  BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Overgrown Estate into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(6), 
+  BigMoney ends turn with deck: Copper(7), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(7), 
 
 ROUND 10
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Festival,Salvager,Silver,Silver,
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 2 all together.
-    +1 Buys = 2 all together.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Conspirator,Copper,Copper,Great Hall,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Copper.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 6 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Festival.
-  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Lookout into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(2), Festival(2), Library(1), Lookout(1), Salvager(1), Silver(2), 
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 3 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 4 all together.
+  ArmoryConspiratorForagerGreatHall bought Conspirator.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(5), Copper(5), Forager(1), Great Hall(4), Necropolis(1), Province(1), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
+With hand: Copper,Hovel,Overgrown Estate,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Necropolis into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(8), 
+
+ROUND 11
+-------------
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Copper,Forager,Great Hall,Necropolis,
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+    +1 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Great Hall.
+      ... and placed card on top of deck
+  ArmoryConspiratorForagerGreatHall Played Forager.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Copper.
+    +1 Coin = 3 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 4 all together.
+  ArmoryConspiratorForagerGreatHall bought Conspirator.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall reshuffled
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(6), Copper(4), Forager(1), Great Hall(5), Necropolis(1), Province(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Necropolis,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Copper.
@@ -430,88 +506,38 @@ With hand: Copper,Copper,Copper,Estate,Silver,
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(7), 
-
-ROUND 11
--------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Library,Lookout,Salvager,
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Lookout.
-    +3 Coin = 3 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 5 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Highway.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(2), Festival(2), Highway(1), Library(1), Salvager(1), Silver(2), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
   BigMoney Drew Gold into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(7), 
+  BigMoney ends turn with deck: Copper(7), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(9), 
 
 ROUND 12
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Festival,Festival,Library,Silver,Silver,
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Copper,Copper,Great Hall,Great Hall,Province,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
     +2 Actions = 2 all together.
-    +1 Buys = 2 all together.
-    +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 3 all together.
-    +1 Buys = 3 all together.
-    +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Library.
-    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
-    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Salvager.
-    LookoutSalvagerLibraryHighwayFestival put Salvager into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
-    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
-    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
     +1 Actions = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Copper.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 6 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 8 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 9 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Highway.
-  LookoutSalvagerLibraryHighwayFestival bought Festival.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(1), Festival(3), Highway(2), Library(1), Salvager(1), Silver(2), 
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+  ArmoryConspiratorForagerGreatHall Played Forager.
+    +1 Actions = 2 all together.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Copper.
+    +1 Coin = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 2 all together.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(6), Copper(3), Forager(1), Great Hall(5), Necropolis(1), Province(1), 
 
 BigMoney begins turn
 With hand: Copper,Gold,Silver,Silver,Silver,
@@ -525,130 +551,35 @@ With hand: Copper,Gold,Silver,Silver,Silver,
     +2 Coin = 9 all together.
   BigMoney Played Copper.
     +1 Coin = 10 all together.
-  BigMoney bought Province.
+  BigMoney bought Gold.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Gold into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(7), 
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(9), 
 
 ROUND 13
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Festival,Highway,Highway,Silver,
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Conspirator,Conspirator,Copper,Great Hall,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
     +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
-    +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 2 all together.
-    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 3 all together.
-    +1 Buys = 3 all together.
-    +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 6 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 8 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 9 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Festival.
-  LookoutSalvagerLibraryHighwayFestival bought Library.
-  LookoutSalvagerLibraryHighwayFestival bought Festival.
-  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(1), Festival(5), Highway(2), Library(2), Salvager(1), Silver(2), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(2), Silver(7), 
-
-ROUND 14
--------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Festival,Festival,Highway,Library,Salvager,
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
-    +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 2 all together.
-    +1 Buys = 2 all together.
-    +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 3 all together.
-    +1 Buys = 3 all together.
-    +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Copper.
-  LookoutSalvagerLibraryHighwayFestival Played Library.
-    LookoutSalvagerLibraryHighwayFestival Revealed Library.
-    LookoutSalvagerLibraryHighwayFestival put Library into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
-    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
-    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
-    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
-    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
-    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
-    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
-    +1 Actions = 1 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 2 all together.
-    +1 Buys = 4 all together.
-    +2 Coin = 6 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 3 all together.
-    +1 Buys = 5 all together.
-    +2 Coin = 8 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 4 all together.
-    +1 Buys = 6 all together.
-    +2 Coin = 10 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Library.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 12 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 14 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Highway.
-  LookoutSalvagerLibraryHighwayFestival bought Highway.
-  LookoutSalvagerLibraryHighwayFestival bought Highway.
-  LookoutSalvagerLibraryHighwayFestival bought Highway.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Festival(5), Highway(6), Library(2), Salvager(1), Silver(2), 
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 3 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 4 all together.
+  ArmoryConspiratorForagerGreatHall bought Great Hall.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(6), Copper(3), Forager(1), Great Hall(6), Necropolis(1), Province(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Gold,Silver,Silver,
@@ -663,101 +594,374 @@ With hand: Copper,Copper,Gold,Silver,Silver,
   BigMoney Played Copper.
     +1 Coin = 9 all together.
   BigMoney bought Province.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Overgrown Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(1), Silver(9), 
+
+ROUND 14
+-------------
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Armory,Conspirator,Conspirator,Conspirator,Great Hall,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall reshuffled
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Conspirator.
+      ... and placed card on top of deck
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 4 all together.
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 6 all together.
+    ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 8 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 10 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Played Forager.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Copper.
+    +1 Coin = 11 all together.
+  ArmoryConspiratorForagerGreatHall bought Province.
+  ArmoryConspiratorForagerGreatHall bought Great Hall.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(7), Copper(2), Forager(1), Great Hall(7), Necropolis(1), Province(2), 
+
+BigMoney begins turn
+With hand: Copper,Gold,Gold,Overgrown Estate,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Province into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(3), Silver(7), 
+  BigMoney ends turn with deck: Copper(7), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(2), Silver(9), 
 
 ROUND 15
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Festival,Highway,Highway,Highway,Library,
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Copper,Copper,Great Hall,Great Hall,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
     +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
     +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
-    +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    ArmoryConspiratorForagerGreatHall reshuffled
+    ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
     +2 Actions = 2 all together.
-    +1 Buys = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 3 all together.
-    +1 Buys = 3 all together.
+    ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+    +1 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 4 all together.
-    +1 Buys = 4 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+    +1 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Conspirator.
+      ... and placed card on top of deck
+  ArmoryConspiratorForagerGreatHall Played Forager.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Copper.
+    +1 Coin = 5 all together.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 6 all together.
+  ArmoryConspiratorForagerGreatHall bought Great Hall.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(8), Copper(1), Forager(1), Great Hall(8), Necropolis(1), Province(2), 
+
+BigMoney begins turn
+With hand: Copper,Silver,Silver,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Silver.
     +2 Coin = 6 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Library.
-    LookoutSalvagerLibraryHighwayFestival Revealed Salvager.
-    LookoutSalvagerLibraryHighwayFestival put Salvager into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
-    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
-    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
-    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
-    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Library.
-    LookoutSalvagerLibraryHighwayFestival put Library into his hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
-    +1 Actions = 3 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
-    +1 Actions = 3 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
-    +1 Actions = 3 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 4 all together.
-    +1 Buys = 5 all together.
+  BigMoney Played Silver.
     +2 Coin = 8 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 5 all together.
-    +1 Buys = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Hovel into hand.
+  BigMoney Drew Necropolis into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(3), Silver(9), 
+
+ROUND 16
+-------------
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Conspirator,Conspirator,Great Hall,Great Hall,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 4 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 6 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 8 all together.
+    ArmoryConspiratorForagerGreatHall reshuffled
+    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 10 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Silver.
-  LookoutSalvagerLibraryHighwayFestival Played Library.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Conspirator.
+      ... and placed card on top of deck
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
     +2 Coin = 12 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Province.
-  LookoutSalvagerLibraryHighwayFestival bought Province.
-  LookoutSalvagerLibraryHighwayFestival bought Province.
-  LookoutSalvagerLibraryHighwayFestival bought Province.
-  LookoutSalvagerLibraryHighwayFestival bought Province.
-  LookoutSalvagerLibraryHighwayFestival bought Duchy.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Duchy(1), Festival(5), Highway(6), Library(2), Province(5), Salvager(1), Silver(1), 
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 14 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall Played Copper.
+    +1 Coin = 15 all together.
+  ArmoryConspiratorForagerGreatHall bought Province.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(9), Copper(1), Forager(1), Great Hall(8), Necropolis(1), Province(3), 
 
-Game ended in 15 turns.
-LookoutSalvagerLibraryHighwayFestival Won!
-LookoutSalvagerLibraryHighwayFestival total score: 33
-  Duchy(1), Festival(5), Highway(6), Library(2), Province(5), Salvager(1), Silver(1), 
-BigMoney total score: 21
-  Copper(7), Estate(3), Gold(4), Province(3), Silver(7), 
-Trash contains: Copper(7), Estate(3), Lookout(1), Silver(1), 
+BigMoney begins turn
+With hand: Copper,Copper,Hovel,Necropolis,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(1), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(3), Silver(9), 
 
-LookoutSalvagerLibraryHighwayFestival GainSequence is:
-  Salvager, Lookout, Silver, Silver, Festival, 
-  Library, Festival, Highway, Highway, Festival, 
-  Festival, Library, Festival, Highway, Highway, 
-  Highway, Highway, Province, Province, Province, 
-  Province, Province, Duchy, 
+ROUND 17
+-------------
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Conspirator,Forager,Great Hall,Great Hall,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall reshuffled
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 4 all together.
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 6 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 8 all together.
+    ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Necropolis.
+    +2 Actions = 2 all together.
+  ArmoryConspiratorForagerGreatHall bought Province.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(9), Copper(1), Forager(1), Great Hall(8), Necropolis(1), Province(4), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Duchy.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Overgrown Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(1), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(3), Silver(9), 
+
+ROUND 18
+-------------
+ArmoryConspiratorForagerGreatHall begins turn
+With hand: Conspirator,Copper,Great Hall,Great Hall,Great Hall,
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 2 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 4 all together.
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 6 all together.
+    ArmoryConspiratorForagerGreatHall reshuffled
+    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 8 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
+  ArmoryConspiratorForagerGreatHall Played Great Hall.
+    +1 Actions = 1 all together.
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 10 all together.
+    ArmoryConspiratorForagerGreatHall Drew Forager into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    +2 Coin = 12 all together.
+    ArmoryConspiratorForagerGreatHall Drew Province into hand.
+    +1 Actions = 1 all together.
+  ArmoryConspiratorForagerGreatHall Played Forager.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    ArmoryConspiratorForagerGreatHall trashed Copper.
+    +1 Coin = 13 all together.
+  ArmoryConspiratorForagerGreatHall Played Armory.
+    ArmoryConspiratorForagerGreatHall gained Conspirator.
+      ... and placed card on top of deck
+  ArmoryConspiratorForagerGreatHall bought Province.
+  ArmoryConspiratorForagerGreatHall bought Duchy.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
+  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(10), Duchy(1), Forager(1), Great Hall(8), Necropolis(1), Province(5), 
+
+Game ended in 18 turns.
+ArmoryConspiratorForagerGreatHall Won!
+ArmoryConspiratorForagerGreatHall total score: 41
+  Armory(1), Conspirator(10), Duchy(1), Forager(1), Great Hall(8), Necropolis(1), Province(5), 
+BigMoney total score: 22
+  Copper(7), Duchy(1), Estate(1), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(3), Silver(9), 
+Trash contains: Copper(7), Hovel(1), Overgrown Estate(1), 
+
+ArmoryConspiratorForagerGreatHall GainSequence is:
+  Armory, Forager, Conspirator, Great Hall, Conspirator, 
+  Great Hall, Conspirator, Province, Great Hall, Conspirator, 
+  Great Hall, Conspirator, Great Hall, Conspirator, Great Hall, 
+  Conspirator, Province, Great Hall, Conspirator, Great Hall, 
+  Conspirator, Province, Province, Conspirator, Province, 
+  Duchy, 
 BigMoney GainSequence is:
-  Silver, Silver, Silver, Silver, Gold, 
+  Silver, Silver, Silver, Silver, Silver, 
   Silver, Gold, Gold, Silver, Silver, 
-  Gold, Province, Province, Province, 
+  Silver, Gold, Province, Province, Province, 
+  Estate, Duchy, 

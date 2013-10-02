@@ -10,6 +10,7 @@ namespace Program
 {
     public static partial class Strategies
     {
+        // for forum post: http://forum.dominionstrategy.com/index.php?topic=9558.0
         public static class ArmoryConspiratorForagerGreatHall
         {
             // big money smithy player
@@ -36,8 +37,9 @@ namespace Program
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Armory>(gameState => CountAllOwned<CardTypes.Armory>(gameState) < 1),
                            CardAcceptance.For<CardTypes.Forager>(gameState => CountAllOwned<CardTypes.Forager>(gameState) < 1),
+                           //CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AvailableBuys == 2 && gameState.players.CurrentPlayer.AvailableCoins >= 16 || CountAllOwned<CardTypes.Province>(gameState) > 0),
                            CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) == 0),                           
+                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 1),                           
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) == 0),
                            CardAcceptance.For<CardTypes.GreatHall>(gameState => gameState.players.CurrentPlayer.AvailableBuys > 1 && gameState.players.CurrentPlayer.AvailableCoins == 6),
                            CardAcceptance.For<CardTypes.GreatHall>(gameState => gameState.players.CurrentPlayer.Hand.HasCard<CardTypes.Hovel>()),
@@ -53,7 +55,7 @@ namespace Program
                            CardAcceptance.For<CardTypes.Armory>(gameState => gameState.players.CurrentPlayer.AvailableActions > 0),                           
                            CardAcceptance.For<CardTypes.GreatHall>(),
                            CardAcceptance.For<CardTypes.Conspirator>(gameState => gameState.players.CurrentPlayer.CountCardsPlayedThisTurn >= 2),
-                           CardAcceptance.For<CardTypes.Forager>(gameState => HasCardFromInHand(TrashOrder(), gameState)),
+                           CardAcceptance.For<CardTypes.Forager>(gameState => HasCardFromInHand(TrashOrder(), gameState)),                           
                            CardAcceptance.For<CardTypes.Conspirator>(),
                            CardAcceptance.For<CardTypes.Armory>());
             }
@@ -63,8 +65,10 @@ namespace Program
                 return new CardPickByPriority(                           
                            CardAcceptance.For<CardTypes.OvergrownEstate>(),
                            CardAcceptance.For<CardTypes.Estate>(),                           
+                           CardAcceptance.For<CardTypes.Necropolis>(),
                            CardAcceptance.For<CardTypes.Copper>(),
-                           CardAcceptance.For<CardTypes.Hovel>());
+                           CardAcceptance.For<CardTypes.Hovel>(),
+                           CardAcceptance.For<CardTypes.Forager>(gameState => CountAllOwned<CardTypes.Copper>(gameState) <= 2 && CountAllOwned<CardTypes.Forager>(gameState) > 1));
             }
         }
     }
