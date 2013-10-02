@@ -815,6 +815,8 @@ namespace Dominion
             if (this.cardsBeingRevealed.Any)
             {
                 Type cardtoTrash = this.actions.GetCardFromRevealedCardsToTrash(gameState, this, acceptableCard => true);
+                if (cardtoTrash == typeof(CardTypes.Salvager))
+                { int i = 0; i++; }
                 if (cardtoTrash == null)
                 {
                     throw new Exception("Player must choose a card to trash");

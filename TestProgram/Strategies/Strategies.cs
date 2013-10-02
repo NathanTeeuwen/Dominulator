@@ -50,6 +50,25 @@ namespace Program
                 return CountInDeckAndDiscard<T>(gameState);            
         }
 
+        public static bool CardBeingPlayedIs<T>(GameState gameState)
+                where T : Card
+        {
+            var cardBeingPlayed = gameState.players.CurrentPlayer.CurrentCardBeingPlayed;
+            return cardBeingPlayed != null && cardBeingPlayed.Is<T>();
+        }
+
+        public static int CostOfCard<T>(GameState gameState)
+            where T : Card, new()
+        {
+            return Example<T>.Card.CurrentCoinCost(gameState.players.CurrentPlayer);
+        }
+
+        static class Example<T>
+            where T: Card, new()
+        {
+            static public readonly T Card = new T();
+        }
+
         public static int CountAllOwned<T>(GameState gameState)
         {
             return CountAllOwned(typeof(T), gameState);
@@ -209,7 +228,8 @@ namespace Program
                     CardAcceptance.For<CardTypes.Duchy>(),
                     CardAcceptance.For<CardTypes.Estate>(),
                     CardAcceptance.For<CardTypes.Ruin>(),
-                    CardAcceptance.For<CardTypes.Copper>());
+                    CardAcceptance.For<CardTypes.Copper>(),
+                    CardAcceptance.For<CardTypes.Curse>());
             }
 
             public static ICardPicker DefaultTrashOrder()
@@ -219,10 +239,23 @@ namespace Program
                     CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) == 8),                    
                     CardAcceptance.For<CardTypes.Copper>());                
             }
-
+            
             public static bool ShouldBuyProvinces(GameState gameState)
             {
                 return CountAllOwned<CardTypes.Gold>(gameState) > 2;                
+            }
+
+            public static bool ShouldPlaySalvager(ICardPicker trashOrder, GameState gameState)
+            {
+                return HasCardFromInHand(trashOrder, gameState);
+            }
+
+            public static GameStatePredicate ShouldPlaySalvager(ICardPicker trashOrder)
+            {
+                return delegate(GameState gameState)
+                {
+                    return HasCardFromInHand(trashOrder, gameState);
+                };
             }
 
             public static GameStatePredicate ShouldPlayLookout(GameStatePredicate shouldBuyProvinces = null)

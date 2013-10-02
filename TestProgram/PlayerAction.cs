@@ -139,7 +139,7 @@ namespace Program
 
         public override bool ShouldPutCardInHand(GameState gameState, Card card)
         {
-            return this.discardOrder.GetPreferredCard(gameState, testCard => testCard.Is(card.GetType())) != null;
+            return this.discardOrder.GetPreferredCard(gameState, testCard => testCard.Is(card.GetType())) == null;
         }
 
         public override bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card)

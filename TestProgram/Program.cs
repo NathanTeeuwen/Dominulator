@@ -12,8 +12,8 @@ namespace Program
     {        
         static void Main()
         {
-            ComparePlayers(Strategies.RatsWanderingMinstrelWatchtowerArmory.Player(1), Strategies.BigMoney.Player(2), useShelters: true);
-            //CompareStrategyVsAllKnownStrategies(Strategies.RatsWanderingMinstrelWatchtowerArmory.Player(1));
+            ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(1), Strategies.BigMoney.Player(2), shouldParallel: false);
+            //CompareStrategyVsAllKnownStrategies(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(1));
         }
 
         static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false)
@@ -24,7 +24,7 @@ namespace Program
             var type = assembly.GetType("Program.Strategies");
             foreach (Type innerType in type.GetNestedTypes())
             {
-                if (!innerType.IsClass)                
+                if (!innerType.IsClass)
                     continue;                                    
 
                 System.Reflection.MethodInfo playerMethodInfo = innerType.GetMethod("Player", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);

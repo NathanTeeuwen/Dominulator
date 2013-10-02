@@ -46,6 +46,7 @@
     <Compile Include="Strategies\BigMoneyDoubleSmithy.cs" />
     <Compile Include="Strategies\IllgottengainsMoneylender.cs" />
     <Compile Include="Strategies\IronworksGreathallRemodelHuntingGrounds.cs" />
+    <Compile Include="Strategies\LookoutSalvagerLibraryHighwayFestival.cs" />
     <Compile Include="Strategies\LookoutTraderNobles.cs" />
     <Compile Include="Strategies\RatsWanderingMinstrelWatchtowerArmory.cs" />
     <Compile Include="StrategyOptimizer\CardAcceptanceDescription.cs" />
