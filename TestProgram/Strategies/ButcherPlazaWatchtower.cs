@@ -33,11 +33,6 @@ namespace Program
                 override public Type GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
                 {
                     return typeof(CardTypes.Watchtower);
-                }
-                
-                public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
-                {
-                    return PlayerActionChoice.TopDeck;
                 }                
             }           
 

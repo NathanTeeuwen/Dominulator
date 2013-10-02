@@ -100,14 +100,19 @@ namespace Program
         {
             return delegate(GameState gameState)
             {
-                return gameState.players.CurrentPlayer.Hand.HasCard<T>();
+                return HasCardInHand<T>(gameState);                
             };            
+        }
+
+        private static bool HasCardInHand<T>(GameState gameState)
+        {
+            return gameState.players.CurrentPlayer.Hand.HasCard<T>();
         }
 
         internal static Type WhichCardFromInHand(ICardPicker matchingCards, GameState gameState)
         {
             return matchingCards.GetPreferredCard(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card));
-        }
+        }        
 
         private static bool HasCardFromInHand(ICardPicker matchingCards, GameState gameState)
         {

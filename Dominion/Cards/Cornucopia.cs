@@ -48,7 +48,7 @@ namespace Dominion.CardTypes
                 currentPlayer.MoveRevealedCardToHand(foundCard);
             }
 
-            currentPlayer.MoveRevealedCardToDiscard(cardToMove => true, gameState);
+            currentPlayer.MoveRevealedCardsToDiscard(cardToMove => true, gameState);
         }
     }
 
@@ -159,9 +159,24 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            Card discardedCard = otherPlayer.DiscardCardFromTopOfDeck();
+            if (discardedCard != null)
+            {
+                if (discardedCard.isVictory)
+                {
+                    otherPlayer.GainCardFromSupply<CardTypes.Curse>(gameState);
+                }
+                else if (currentPlayer.actions.ShouldGainCard(gameState, discardedCard))
+                {
+                    currentPlayer.GainCardFromSupply(gameState, discardedCard.GetType());
+                }
+                else
+                {
+                    otherPlayer.GainCardFromSupply(gameState, discardedCard.GetType());
+                }
+            }
         }
     }
 

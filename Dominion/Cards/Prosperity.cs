@@ -345,7 +345,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
             otherPlayer.RevealCardsFromDeck(3);
-            otherPlayer.MoveRevealedCardToDiscard(card => card.isAction || card.isTreasure, gameState);
+            otherPlayer.MoveRevealedCardsToDiscard(card => card.isAction || card.isTreasure, gameState);
             otherPlayer.RequestPlayerPutRevealedCardsBackOnDeck(gameState);
         }
     }
@@ -490,16 +490,7 @@ namespace Dominion.CardTypes
             }
 
             // how does the player know what card is being asked about?
-            PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState,
-                acceptableChoice => acceptableChoice == PlayerActionChoice.Trash ||
-                                    acceptableChoice == PlayerActionChoice.TopDeck);
-
-            switch (choice)
-            {
-                case PlayerActionChoice.Trash: return DeckPlacement.Trash;
-                case PlayerActionChoice.TopDeck: return DeckPlacement.TopOfDeck;                
-                default: throw new Exception("Invalid choice");
-            }
+            return currentPlayer.RequestPlayerChooseTrashOrTopDeck(gameState, gainedCard);            
         }             
     }
 

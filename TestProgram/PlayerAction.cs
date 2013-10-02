@@ -147,6 +147,14 @@ namespace Program
             return this.discardOrder.GetPreferredCard(gameState, testCard => testCard.Is(card.GetType())) != null;
         }
 
+        public override DeckPlacement ChooseBetweenTrashAndTopDeck(GameState gameState, Card card)
+        {
+            if (this.trashOrder.GetPreferredCard(gameState, c => c.Equals(card)) != null)
+                return DeckPlacement.Trash;
+
+            return DeckPlacement.TopOfDeck;
+        }
+
         public override Type GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer)
         {
             // discard the highest costing action or treasure.
@@ -394,6 +402,11 @@ namespace Program
                 new CardTypes.Survivors(),
                 new CardTypes.Curse(),
                 new CardTypes.Spoils(),
+                new CardTypes.OvergrownEstate(),
+                new CardTypes.Hovel(),
+                new CardTypes.Necropolis(),
+                new CardTypes.Madman(),
+                new CardTypes.Mercenary()
             };
 
             foreach (Card card in cardsToRemove)
@@ -407,7 +420,7 @@ namespace Program
         private static void AddCards(HashSet<Card> cardSet, ICardPicker matchingCards)
         {
             foreach (Card card in matchingCards.GetNeededCards())
-            {
+            {                
                 cardSet.Add(card);
             }
         }

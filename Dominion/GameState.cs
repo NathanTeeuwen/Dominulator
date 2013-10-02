@@ -48,7 +48,14 @@ namespace Dominion
             {
                 foreach (CardCountPair pair in pairs)
                 {
-                    player.GainCardsFromSupply(this, pair.Card.GetType(), pair.Count);
+                    if (pair.Card.isShelter)
+                    {
+                        player.GainCard(this, pair.Card);
+                    }
+                    else
+                    {
+                        player.GainCardsFromSupply(this, pair.Card.GetType(), pair.Count);
+                    }
                 }
             }
         }
@@ -406,7 +413,7 @@ namespace Dominion
         }
 
         public Card PlayerGainCardFromSupply(Type cardType, PlayerState playerState, DeckPlacement defaultLocation = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)
-        {
+        {            
             PileOfCards pile = this.GetPile(cardType);
             if (pile == null)
             {

@@ -35,6 +35,11 @@ namespace Dominion
             throw new NotImplementedException();
         }
 
+        private DeckPlacement PlayerMustMakeDeckPlacement()
+        {
+            throw new NotImplementedException();
+        }
+
         private int PlayerMustChooseNumber()
         {
             throw new NotImplementedException();
@@ -202,6 +207,11 @@ namespace Dominion
         virtual public PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
         {
             return PlayerMustMakeActionChoice();
+        }
+
+        virtual public DeckPlacement ChooseBetweenTrashAndTopDeck(GameState gameState, Card card)
+        {
+            return PlayerMustMakeDeckPlacement();
         }
 
         virtual public int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber)

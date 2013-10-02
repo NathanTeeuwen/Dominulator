@@ -62,6 +62,15 @@ namespace Program
             }
         }
 
+        public static class BigMoneyBridge
+        {
+            // big money smithy player
+            public static PlayerAction Player(int playerNumber)
+            {
+                return BigMoneyWithCard<CardTypes.Bridge>.Player(playerNumber, "BigMoneyBridge");
+            }
+        }        
+
         public static class BigMoneySingleSmithy
         {
             // big money smithy player

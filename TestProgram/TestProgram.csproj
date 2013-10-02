@@ -47,6 +47,7 @@
     <Compile Include="Strategies\IllgottengainsMoneylender.cs" />
     <Compile Include="Strategies\IronworksGreathallRemodelHuntingGrounds.cs" />
     <Compile Include="Strategies\LookoutTraderNobles.cs" />
+    <Compile Include="Strategies\RatsWanderingMinstrelWatchtowerArmory.cs" />
     <Compile Include="StrategyOptimizer\CardAcceptanceDescription.cs" />
     <Compile Include="CardPickByBuilderOrder.cs" />
     <Compile Include="CardPickByPriority.cs" />

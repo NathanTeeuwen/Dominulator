@@ -12,11 +12,11 @@ namespace Program
     {        
         static void Main()
         {
-            ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Plaza>.Player(1, cardCount:3), Strategies.BigMoney.Player(2));
-            //CompareStrategyVsAllKnownStrategies(Strategies.IronworksGreathallRemodelHuntingGrounds.Player(1));                        
+            ComparePlayers(Strategies.RatsWanderingMinstrelWatchtowerArmory.Player(1), Strategies.BigMoney.Player(2), useShelters: true);
+            //CompareStrategyVsAllKnownStrategies(Strategies.RatsWanderingMinstrelWatchtowerArmory.Player(1));
         }
 
-        static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction)
+        static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false)
         {
             var resultList = new List<System.Tuple<string, double>>();
 
@@ -38,7 +38,7 @@ namespace Program
                 if (otherPlayerAction == null)
                     continue;
 
-                double percentDiff = ComparePlayers(playerAction, otherPlayerAction, shouldParallel:false);
+                double percentDiff = ComparePlayers(playerAction, otherPlayerAction, shouldParallel:shouldParallel, useShelters: useShelters);
 
                 resultList.Add( new System.Tuple<string,double>(otherPlayerAction.PlayerName, percentDiff));
             }            

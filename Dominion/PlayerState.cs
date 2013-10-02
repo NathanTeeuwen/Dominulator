@@ -455,13 +455,15 @@ namespace Dominion
             this.MoveAllCardsToDiscard(this.hand, gameState);
         }
 
-        internal void DiscardCardFromTopOfDeck()
+        internal Card DiscardCardFromTopOfDeck()
         {
             Card card = this.deck.DrawCardFromTop();
             if (card != null)
             {
                 this.discard.AddCard(card);
             }
+
+            return card;
         }
 
         internal bool DiscardCardFromHand(GameState gameState, Card card)
@@ -1003,6 +1005,15 @@ namespace Dominion
             return cardToTopDeck;
         }
 
+        internal DeckPlacement RequestPlayerChooseTrashOrTopDeck(GameState gameState, Card card)
+        {
+            DeckPlacement choice = this.actions.ChooseBetweenTrashAndTopDeck(gameState, card);
+            if (choice != DeckPlacement.TopOfDeck && choice != DeckPlacement.Trash)
+                throw new Exception("Player made in invalid action choice");
+
+            return choice;
+        }
+
         internal PlayerActionChoice RequestPlayerChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
         {
             PlayerActionChoice choice = actions.ChooseBetween(gameState, acceptableChoice);
@@ -1257,7 +1268,7 @@ namespace Dominion
             MoveAllCardsToDiscard(this.cardsBeingRevealed, gameState);
         }
 
-        internal void MoveRevealedCardToDiscard(CardPredicate predicate, GameState gameState)
+        internal void MoveRevealedCardsToDiscard(CardPredicate predicate, GameState gameState)
         {            
             while (true)
             {

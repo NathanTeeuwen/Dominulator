@@ -710,7 +710,7 @@ namespace Dominion.CardTypes
                     break;
                 }
             }
-            currentPlayer.MoveRevealedCardToDiscard(cardToMove => !cardToMove.Equals(foundCard), gameState);
+            currentPlayer.MoveRevealedCardsToDiscard(cardToMove => !cardToMove.Equals(foundCard), gameState);
             gameState.gameLog.PopScope();
 
             if (foundCard != null)
@@ -846,7 +846,9 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            currentPlayer.RevealCardsFromDeck(3);
+            currentPlayer.MoveRevealedCardsToDiscard(card => !card.isAction, gameState);
+            currentPlayer.RequestPlayerPutRevealedCardsBackOnDeck(gameState);
         }
     }
 }
