@@ -1,13 +1,13 @@
-Lookout gained Copper.
-Lookout gained Copper.
-Lookout gained Copper.
-Lookout gained Copper.
-Lookout gained Copper.
-Lookout gained Copper.
-Lookout gained Copper.
-Lookout gained Hovel.
-Lookout gained Necropolis.
-Lookout gained Overgrown Estate.
+RatsWanderingMinstrelWatchtowerArmory gained Copper.
+RatsWanderingMinstrelWatchtowerArmory gained Copper.
+RatsWanderingMinstrelWatchtowerArmory gained Copper.
+RatsWanderingMinstrelWatchtowerArmory gained Copper.
+RatsWanderingMinstrelWatchtowerArmory gained Copper.
+RatsWanderingMinstrelWatchtowerArmory gained Copper.
+RatsWanderingMinstrelWatchtowerArmory gained Copper.
+RatsWanderingMinstrelWatchtowerArmory gained Hovel.
+RatsWanderingMinstrelWatchtowerArmory gained Necropolis.
+RatsWanderingMinstrelWatchtowerArmory gained Overgrown Estate.
 BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
@@ -18,12 +18,12 @@ BigMoney gained Copper.
 BigMoney gained Hovel.
 BigMoney gained Necropolis.
 BigMoney gained Overgrown Estate.
-Lookout reshuffled
-Lookout Drew Copper into hand.
-Lookout Drew Copper into hand.
-Lookout Drew Copper into hand.
-Lookout Drew Overgrown Estate into hand.
-Lookout Drew Copper into hand.
+RatsWanderingMinstrelWatchtowerArmory reshuffled
+RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+RatsWanderingMinstrelWatchtowerArmory Drew Overgrown Estate into hand.
+RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
 BigMoney reshuffled
 BigMoney Drew Necropolis into hand.
 BigMoney Drew Copper into hand.
@@ -32,23 +32,23 @@ BigMoney Drew Copper into hand.
 BigMoney Drew Overgrown Estate into hand.
 ROUND 1
 -------------
-Lookout begins turn
+RatsWanderingMinstrelWatchtowerArmory begins turn
 With hand: Copper,Copper,Copper,Copper,Overgrown Estate,
-  Lookout Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 1 all together.
-  Lookout Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 2 all together.
-  Lookout Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 3 all together.
-  Lookout Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 4 all together.
-  Lookout bought Lookout.
-  Lookout Drew Copper into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Necropolis into hand.
-  Lookout Drew Hovel into hand.
-  Lookout ends turn with deck: Copper(7), Hovel(1), Lookout(1), Necropolis(1), Overgrown Estate(1), 
+  RatsWanderingMinstrelWatchtowerArmory bought Armory.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Necropolis into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Hovel into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Necropolis,Overgrown Estate,
@@ -68,22 +68,24 @@ With hand: Copper,Copper,Copper,Necropolis,Overgrown Estate,
 
 ROUND 2
 -------------
-Lookout begins turn
+RatsWanderingMinstrelWatchtowerArmory begins turn
 With hand: Copper,Copper,Copper,Hovel,Necropolis,
-  Lookout Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Necropolis.
+    +2 Actions = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 1 all together.
-  Lookout Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 2 all together.
-  Lookout Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 3 all together.
-  Lookout bought Silver.
-  Lookout reshuffled
-  Lookout Drew Silver into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Lookout into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Copper into hand.
-  Lookout ends turn with deck: Copper(7), Hovel(1), Lookout(1), Necropolis(1), Overgrown Estate(1), Silver(1), 
+  RatsWanderingMinstrelWatchtowerArmory bought Watchtower.
+  RatsWanderingMinstrelWatchtowerArmory reshuffled
+  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Necropolis into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Watchtower(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Hovel,
@@ -106,35 +108,30 @@ With hand: Copper,Copper,Copper,Copper,Hovel,
 
 ROUND 3
 -------------
-Lookout begins turn
-With hand: Copper,Copper,Copper,Lookout,Silver,
-  Lookout Played Lookout.
-    +1 Actions = 1 all together.
-    Lookout Revealed Copper.
-    Lookout Revealed Overgrown Estate.
-    Lookout Revealed Necropolis.
-      Lookout trashed Overgrown Estate.
-        Lookout Drew Copper into hand.
-      Lookout Discarded Necropolis.
-      Lookout Placed Copper on top of his deck.
-  Lookout Played Silver.
-    +2 Coin = 2 all together.
-  Lookout Played Copper.
+RatsWanderingMinstrelWatchtowerArmory begins turn
+With hand: Armory,Copper,Copper,Necropolis,Watchtower,
+  RatsWanderingMinstrelWatchtowerArmory Played Necropolis.
+    +2 Actions = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Overgrown Estate into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Hovel into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played Armory.
+    RatsWanderingMinstrelWatchtowerArmory gained Rats.
+      ... and placed card on top of deck
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 1 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 3 all together.
-  Lookout Played Copper.
-    +1 Coin = 4 all together.
-  Lookout Played Copper.
-    +1 Coin = 5 all together.
-  Lookout Played Copper.
-    +1 Coin = 6 all together.
-  Lookout bought Gold.
-  Lookout Drew Copper into hand.
-  Lookout Drew Hovel into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Copper into hand.
-  Lookout reshuffled
-  Lookout Drew Copper into hand.
-  Lookout ends turn with deck: Copper(7), Gold(1), Hovel(1), Lookout(1), Necropolis(1), Silver(1), 
+  RatsWanderingMinstrelWatchtowerArmory bought Watchtower.
+  RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Rats(1), Watchtower(2), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Necropolis,
@@ -156,23 +153,24 @@ With hand: Copper,Copper,Copper,Copper,Necropolis,
 
 ROUND 4
 -------------
-Lookout begins turn
-With hand: Copper,Copper,Copper,Copper,Hovel,
-  Lookout Played Copper.
+RatsWanderingMinstrelWatchtowerArmory begins turn
+With hand: Copper,Copper,Copper,Copper,Rats,
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 1 all together.
-  Lookout Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 2 all together.
-  Lookout Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 3 all together.
-  Lookout Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 4 all together.
-  Lookout bought Silver.
-  Lookout Drew Gold into hand.
-  Lookout Drew Silver into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Necropolis into hand.
-  Lookout Drew Lookout into hand.
-  Lookout ends turn with deck: Copper(7), Gold(1), Hovel(1), Lookout(1), Necropolis(1), Silver(2), 
+  RatsWanderingMinstrelWatchtowerArmory bought WanderingMinstrell.
+  RatsWanderingMinstrelWatchtowerArmory reshuffled
+  RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Hovel into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Necropolis into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Rats(1), WanderingMinstrell(1), Watchtower(2), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Hovel,Overgrown Estate,Silver,
@@ -186,243 +184,444 @@ With hand: Copper,Copper,Hovel,Overgrown Estate,Silver,
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
   BigMoney reshuffled
-  BigMoney Drew Overgrown Estate into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
   BigMoney ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
 
 ROUND 5
 -------------
-Lookout begins turn
-With hand: Copper,Gold,Lookout,Necropolis,Silver,
-  Lookout Played Lookout.
-    +1 Actions = 1 all together.
-    Lookout Revealed Copper.
-    Lookout Revealed Copper.
-    Lookout reshuffled
-    Lookout Revealed Copper.
-      Lookout trashed Copper.
-      Lookout Discarded Copper.
-      Lookout Placed Copper on top of his deck.
-  Lookout Played Gold.
-    +3 Coin = 3 all together.
-  Lookout Played Silver.
-    +2 Coin = 5 all together.
-  Lookout Played Copper.
-    +1 Coin = 6 all together.
-  Lookout bought Gold.
-  Lookout Drew Copper into hand.
-  Lookout Drew Silver into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Copper into hand.
-  Lookout ends turn with deck: Copper(6), Gold(2), Hovel(1), Lookout(1), Necropolis(1), Silver(2), 
+RatsWanderingMinstrelWatchtowerArmory begins turn
+With hand: Copper,Copper,Hovel,Necropolis,Rats,
+  RatsWanderingMinstrelWatchtowerArmory Played Necropolis.
+    +2 Actions = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 1 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Rats(1), WanderingMinstrell(1), Watchtower(2), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Overgrown Estate,Silver,Silver,
+With hand: Copper,Copper,Silver,Silver,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Silver.
     +2 Coin = 4 all together.
+  BigMoney Played Silver.
+    +2 Coin = 6 all together.
   BigMoney Played Copper.
-    +1 Coin = 5 all together.
+    +1 Coin = 7 all together.
   BigMoney Played Copper.
-    +1 Coin = 6 all together.
+    +1 Coin = 8 all together.
   BigMoney bought Gold.
   BigMoney Drew Hovel into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Necropolis into hand.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
   BigMoney ends turn with deck: Copper(7), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
 
 ROUND 6
 -------------
-Lookout begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
-  Lookout Played Silver.
-    +2 Coin = 2 all together.
-  Lookout Played Copper.
+RatsWanderingMinstrelWatchtowerArmory begins turn
+With hand: Copper,Copper,WanderingMinstrell,Watchtower,Watchtower,
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Armory.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Overgrown Estate into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played Armory.
+    RatsWanderingMinstrelWatchtowerArmory gained WanderingMinstrell.
+      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+      ... and placed card on top of deck
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 1 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 3 all together.
-  Lookout Played Copper.
-    +1 Coin = 4 all together.
-  Lookout Played Copper.
-    +1 Coin = 5 all together.
-  Lookout Played Copper.
-    +1 Coin = 6 all together.
-  Lookout bought Gold.
-  Lookout Drew Hovel into hand.
-  Lookout reshuffled
-  Lookout Drew Gold into hand.
-  Lookout Drew Silver into hand.
-  Lookout Drew Necropolis into hand.
-  Lookout Drew Copper into hand.
-  Lookout ends turn with deck: Copper(6), Gold(3), Hovel(1), Lookout(1), Necropolis(1), Silver(2), 
+  RatsWanderingMinstrelWatchtowerArmory bought Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    ... and placed card on top of deck
+  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory reshuffled
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Rats(1), WanderingMinstrell(2), Watchtower(3), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Hovel,Silver,
+With hand: Copper,Copper,Hovel,Necropolis,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Copper.
     +1 Coin = 3 all together.
   BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
   BigMoney bought Silver.
-  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Necropolis into hand.
-  BigMoney reshuffled
   BigMoney Drew Overgrown Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
   BigMoney ends turn with deck: Copper(7), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(5), 
 
 ROUND 7
 -------------
-Lookout begins turn
-With hand: Copper,Gold,Hovel,Necropolis,Silver,
-  Lookout Played Gold.
-    +3 Coin = 3 all together.
-  Lookout Played Silver.
-    +2 Coin = 5 all together.
-  Lookout Played Copper.
-    +1 Coin = 6 all together.
-  Lookout bought Gold.
-  Lookout Drew Copper into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Gold into hand.
-  Lookout Drew Gold into hand.
-  Lookout Drew Copper into hand.
-  Lookout ends turn with deck: Copper(6), Gold(4), Hovel(1), Lookout(1), Necropolis(1), Silver(2), 
+RatsWanderingMinstrelWatchtowerArmory begins turn
+With hand: Copper,Copper,WanderingMinstrell,WanderingMinstrell,Watchtower,
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Hovel.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Overgrown Estate.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Hovel.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Overgrown Estate.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Necropolis.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Armory.
+    RatsWanderingMinstrelWatchtowerArmory gained WanderingMinstrell.
+      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+      ... and placed card on top of deck
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 1 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 3 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 4 all together.
+  RatsWanderingMinstrelWatchtowerArmory bought WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    ... and placed card on top of deck
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Necropolis into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Rats(1), WanderingMinstrell(4), Watchtower(3), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Necropolis,Overgrown Estate,Silver,
+With hand: Copper,Copper,Copper,Gold,Overgrown Estate,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Necropolis into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(5), 
+
+ROUND 8
+-------------
+RatsWanderingMinstrelWatchtowerArmory begins turn
+With hand: Copper,Copper,Necropolis,Rats,WanderingMinstrell,
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory reshuffled
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Hovel.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Armory.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Hovel.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Armory.
+    RatsWanderingMinstrelWatchtowerArmory gained WanderingMinstrell.
+      ... and placed card on top of deck
+  RatsWanderingMinstrelWatchtowerArmory Played Necropolis.
+    +2 Actions = 3 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 1 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Overgrown Estate into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Rats(1), WanderingMinstrell(5), Watchtower(3), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Necropolis,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Copper.
     +1 Coin = 3 all together.
   BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
-
-ROUND 8
--------------
-Lookout begins turn
-With hand: Copper,Copper,Copper,Gold,Gold,
-  Lookout Played Gold.
-    +3 Coin = 3 all together.
-  Lookout Played Gold.
-    +3 Coin = 6 all together.
-  Lookout Played Copper.
-    +1 Coin = 7 all together.
-  Lookout Played Copper.
-    +1 Coin = 8 all together.
-  Lookout Played Copper.
-    +1 Coin = 9 all together.
-  Lookout bought Province.
-  Lookout Drew Silver into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Lookout into hand.
-  Lookout Drew Copper into hand.
-  Lookout reshuffled
-  Lookout Drew Necropolis into hand.
-  Lookout ends turn with deck: Copper(6), Gold(4), Hovel(1), Lookout(1), Necropolis(1), Province(1), Silver(2), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
   BigMoney Played Copper.
     +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Hovel into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
   BigMoney ends turn with deck: Copper(7), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
 ROUND 9
 -------------
-Lookout begins turn
-With hand: Copper,Copper,Lookout,Necropolis,Silver,
-  Lookout Played Lookout.
-    +1 Actions = 1 all together.
-    Lookout Revealed Hovel.
-    Lookout Revealed Gold.
-    Lookout Revealed Province.
-      Lookout trashed Hovel.
-      Lookout Discarded Gold.
-      Lookout Placed Province on top of his deck.
-  Lookout Played Silver.
-    +2 Coin = 2 all together.
-  Lookout Played Copper.
+RatsWanderingMinstrelWatchtowerArmory begins turn
+With hand: Overgrown Estate,WanderingMinstrell,WanderingMinstrell,WanderingMinstrell,Watchtower,
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory reshuffled
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Rats.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Necropolis.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Armory.
+  RatsWanderingMinstrelWatchtowerArmory Played Rats.
+    +1 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory gained Rats.
+      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+      RatsWanderingMinstrelWatchtowerArmory trashed Rats.
+        RatsWanderingMinstrelWatchtowerArmory Drew Necropolis into hand.
+    RatsWanderingMinstrelWatchtowerArmory trashed Overgrown Estate.
+      RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played Armory.
+    RatsWanderingMinstrelWatchtowerArmory gained Bridge.
+      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+      ... and placed card on top of deck
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Hovel.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Hovel.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 2 all together.
+    +1 Coin = 1 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory reshuffled
+    RatsWanderingMinstrelWatchtowerArmory Revealed Hovel.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Hovel.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Necropolis.
+    +2 Actions = 3 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory reshuffled
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 3 all together.
-  Lookout Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
     +1 Coin = 4 all together.
-  Lookout bought Silver.
-  Lookout Drew Province into hand.
-  Lookout Drew Gold into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Gold into hand.
-  Lookout Drew Copper into hand.
-  Lookout ends turn with deck: Copper(6), Gold(4), Lookout(1), Necropolis(1), Province(1), Silver(3), 
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 5 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 6 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 7 all together.
+  RatsWanderingMinstrelWatchtowerArmory bought WanderingMinstrell.
+  RatsWanderingMinstrelWatchtowerArmory bought Bridge.
+  RatsWanderingMinstrelWatchtowerArmory Drew Hovel into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory reshuffled
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Bridge(2), Copper(7), Hovel(1), Necropolis(1), Rats(1), WanderingMinstrell(6), Watchtower(3), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Gold,Hovel,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
+With hand: Copper,Silver,Silver,Silver,Silver,
   BigMoney Played Silver.
-    +2 Coin = 5 all together.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Silver.
+    +2 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
   BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
+    +1 Coin = 9 all together.
   BigMoney bought Gold.
-  BigMoney Drew Silver into hand.
+  BigMoney Drew Hovel into hand.
   BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
   BigMoney ends turn with deck: Copper(7), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
 ROUND 10
 -------------
-Lookout begins turn
-With hand: Copper,Copper,Gold,Gold,Province,
-  Lookout Played Gold.
-    +3 Coin = 3 all together.
-  Lookout Played Gold.
-    +3 Coin = 6 all together.
-  Lookout Played Copper.
-    +1 Coin = 7 all together.
-  Lookout Played Copper.
-    +1 Coin = 8 all together.
-  Lookout bought Province.
-  Lookout Drew Silver into hand.
-  Lookout Drew Gold into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Copper into hand.
-  Lookout reshuffled
-  Lookout Drew Copper into hand.
-  Lookout ends turn with deck: Copper(6), Gold(4), Lookout(1), Necropolis(1), Province(2), Silver(3), 
+RatsWanderingMinstrelWatchtowerArmory begins turn
+With hand: Copper,Copper,Hovel,WanderingMinstrell,Watchtower,
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Rats.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Armory.
+  RatsWanderingMinstrelWatchtowerArmory Played Rats.
+    +1 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory gained Rats.
+      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+      RatsWanderingMinstrelWatchtowerArmory trashed Rats.
+        RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+    RatsWanderingMinstrelWatchtowerArmory trashed Hovel.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 4 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Armory.
+    RatsWanderingMinstrelWatchtowerArmory gained WanderingMinstrell.
+      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+      ... and placed card on top of deck
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 2 all together.
+    +1 Coin = 1 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Necropolis into hand.
+    RatsWanderingMinstrelWatchtowerArmory reshuffled
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory reshuffled
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 3 all together.
+    +1 Coin = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Necropolis.
+    +2 Actions = 3 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 3 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 4 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 5 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 6 all together.
+  RatsWanderingMinstrelWatchtowerArmory bought Bridge.
+  RatsWanderingMinstrelWatchtowerArmory bought WanderingMinstrell.
+  RatsWanderingMinstrelWatchtowerArmory bought Bridge.
+  RatsWanderingMinstrelWatchtowerArmory reshuffled
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Necropolis into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Bridge(4), Copper(7), Necropolis(1), Rats(1), WanderingMinstrell(8), Watchtower(3), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
+With hand: Copper,Copper,Hovel,Silver,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Silver.
@@ -431,119 +630,237 @@ With hand: Copper,Copper,Copper,Silver,Silver,
     +1 Coin = 5 all together.
   BigMoney Played Copper.
     +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
   BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
   BigMoney Drew Necropolis into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
   BigMoney ends turn with deck: Copper(7), Gold(4), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
 ROUND 11
 -------------
-Lookout begins turn
-With hand: Copper,Copper,Copper,Gold,Silver,
-  Lookout Played Gold.
-    +3 Coin = 3 all together.
-  Lookout Played Silver.
-    +2 Coin = 5 all together.
-  Lookout Played Copper.
-    +1 Coin = 6 all together.
-  Lookout Played Copper.
-    +1 Coin = 7 all together.
-  Lookout Played Copper.
-    +1 Coin = 8 all together.
-  Lookout bought Province.
-  Lookout Drew Silver into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Province into hand.
-  Lookout Drew Province into hand.
-  Lookout Drew Copper into hand.
-  Lookout ends turn with deck: Copper(6), Gold(4), Lookout(1), Necropolis(1), Province(3), Silver(3), 
+RatsWanderingMinstrelWatchtowerArmory begins turn
+With hand: Copper,Copper,Necropolis,WanderingMinstrell,WanderingMinstrell,
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Rats.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 2 all together.
+    +1 Coin = 1 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Necropolis.
+    +2 Actions = 3 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 3 all together.
+  RatsWanderingMinstrelWatchtowerArmory bought WanderingMinstrell.
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Bridge(4), Copper(7), Necropolis(1), Rats(1), WanderingMinstrell(9), Watchtower(3), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Necropolis,Silver,Silver,
+With hand: Copper,Copper,Gold,Necropolis,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
   BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
+    +2 Coin = 5 all together.
   BigMoney Played Copper.
     +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
   BigMoney bought Gold.
-  BigMoney Drew Gold into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Hovel into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Overgrown Estate into hand.
   BigMoney ends turn with deck: Copper(7), Gold(5), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
 ROUND 12
 -------------
-Lookout begins turn
-With hand: Copper,Copper,Province,Province,Silver,
-  Lookout Played Silver.
-    +2 Coin = 2 all together.
-  Lookout Played Copper.
+RatsWanderingMinstrelWatchtowerArmory begins turn
+With hand: Armory,Bridge,WanderingMinstrell,WanderingMinstrell,Watchtower,
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+  RatsWanderingMinstrelWatchtowerArmory Played Armory.
+    RatsWanderingMinstrelWatchtowerArmory gained Bridge.
+      ... and placed card on top of deck
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 2 all together.
+    +1 Coin = 1 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 3 all together.
+    +1 Coin = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory reshuffled
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 4 all together.
     +1 Coin = 3 all together.
-  Lookout Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played Rats.
+    +1 Actions = 1 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory gained Rats.
+      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+      RatsWanderingMinstrelWatchtowerArmory trashed Rats.
+        RatsWanderingMinstrelWatchtowerArmory Drew Necropolis into hand.
+    RatsWanderingMinstrelWatchtowerArmory trashed Necropolis.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory reshuffled
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 5 all together.
     +1 Coin = 4 all together.
-  Lookout bought Silver.
-  Lookout Drew Copper into hand.
-  Lookout Drew Silver into hand.
-  Lookout Drew Gold into hand.
-  Lookout Drew Gold into hand.
-  Lookout Drew Gold into hand.
-  Lookout ends turn with deck: Copper(6), Gold(4), Lookout(1), Necropolis(1), Province(3), Silver(4), 
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory reshuffled
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 6 all together.
+    +1 Coin = 5 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 6 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 7 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 8 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 9 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 10 all together.
+  RatsWanderingMinstrelWatchtowerArmory bought Province.
+  RatsWanderingMinstrelWatchtowerArmory bought Province.
+  RatsWanderingMinstrelWatchtowerArmory bought Province.
+  RatsWanderingMinstrelWatchtowerArmory bought Duchy.
+  RatsWanderingMinstrelWatchtowerArmory bought Duchy.
+  RatsWanderingMinstrelWatchtowerArmory bought Duchy.
+  RatsWanderingMinstrelWatchtowerArmory reshuffled
+  RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Duchy into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Bridge(5), Copper(7), Duchy(3), Province(3), Rats(1), WanderingMinstrell(9), Watchtower(3), 
 
 BigMoney begins turn
-With hand: Copper,Gold,Gold,Hovel,Silver,
+With hand: Copper,Gold,Overgrown Estate,Silver,Silver,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
   BigMoney Played Silver.
-    +2 Coin = 8 all together.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
   BigMoney Played Copper.
-    +1 Coin = 9 all together.
+    +1 Coin = 8 all together.
   BigMoney bought Province.
-    BigMoney trashed Hovel.
-  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Overgrown Estate into hand.
+  BigMoney Drew Gold into hand.
   BigMoney reshuffled
   BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Gold(5), Necropolis(1), Overgrown Estate(1), Province(1), Silver(6), 
+  BigMoney ends turn with deck: Copper(7), Gold(5), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(1), Silver(6), 
 
 ROUND 13
 -------------
-Lookout begins turn
-With hand: Copper,Gold,Gold,Gold,Silver,
-  Lookout Played Gold.
-    +3 Coin = 3 all together.
-  Lookout Played Gold.
-    +3 Coin = 6 all together.
-  Lookout Played Gold.
-    +3 Coin = 9 all together.
-  Lookout Played Silver.
-    +2 Coin = 11 all together.
-  Lookout Played Copper.
-    +1 Coin = 12 all together.
-  Lookout bought Province.
-  Lookout Drew Lookout into hand.
-  Lookout Drew Necropolis into hand.
-  Lookout reshuffled
-  Lookout Drew Copper into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Silver into hand.
-  Lookout ends turn with deck: Copper(6), Gold(4), Lookout(1), Necropolis(1), Province(4), Silver(4), 
+RatsWanderingMinstrelWatchtowerArmory begins turn
+With hand: Armory,Bridge,Copper,Duchy,Watchtower,
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 2 all together.
+    +1 Coin = 1 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Duchy into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Province into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Bridge(5), Copper(7), Duchy(3), Province(3), Rats(1), WanderingMinstrell(9), Watchtower(3), 
 
 BigMoney begins turn
-With hand: Copper,Gold,Gold,Overgrown Estate,Silver,
+With hand: Copper,Copper,Gold,Gold,Silver,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
   BigMoney Played Gold.
@@ -552,34 +869,120 @@ With hand: Copper,Gold,Gold,Overgrown Estate,Silver,
     +2 Coin = 8 all together.
   BigMoney Played Copper.
     +1 Coin = 9 all together.
+  BigMoney Played Copper.
+    +1 Coin = 10 all together.
   BigMoney bought Province.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
   BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Gold(5), Necropolis(1), Overgrown Estate(1), Province(2), Silver(6), 
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Province into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(5), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(2), Silver(6), 
 
 ROUND 14
 -------------
-Lookout begins turn
-With hand: Copper,Copper,Lookout,Necropolis,Silver,
-  Lookout Played Silver.
-    +2 Coin = 2 all together.
-  Lookout Played Copper.
+RatsWanderingMinstrelWatchtowerArmory begins turn
+With hand: Duchy,Province,WanderingMinstrell,WanderingMinstrell,WanderingMinstrell,
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Rats.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 4 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 5 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 6 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Province.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Province.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 7 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+  RatsWanderingMinstrelWatchtowerArmory Played Rats.
+    +1 Actions = 7 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory gained Rats.
+      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+      RatsWanderingMinstrelWatchtowerArmory trashed Rats.
+        RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+    RatsWanderingMinstrelWatchtowerArmory trashed Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 2 all together.
+    +1 Coin = 1 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 3 all together.
+    +1 Coin = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 5 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 4 all together.
     +1 Coin = 3 all together.
-  Lookout Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 5 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Province.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Province.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Duchy into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 5 all together.
     +1 Coin = 4 all together.
-  Lookout bought Estate.
-  Lookout Drew Province into hand.
-  Lookout Drew Silver into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Silver into hand.
-  Lookout Drew Copper into hand.
-  Lookout ends turn with deck: Copper(6), Estate(1), Gold(4), Lookout(1), Necropolis(1), Province(4), Silver(4), 
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 5 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    +1 Coin = 6 all together.
+  RatsWanderingMinstrelWatchtowerArmory bought Province.
+  RatsWanderingMinstrelWatchtowerArmory bought Duchy.
+  RatsWanderingMinstrelWatchtowerArmory bought Duchy.
+  RatsWanderingMinstrelWatchtowerArmory bought WanderingMinstrell.
+  RatsWanderingMinstrelWatchtowerArmory bought Bridge.
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory reshuffled
+  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Bridge(6), Copper(6), Duchy(5), Province(4), Rats(1), WanderingMinstrell(10), Watchtower(3), 
 
 BigMoney begins turn
-With hand: Copper,Gold,Gold,Silver,Silver,
+With hand: Gold,Gold,Province,Silver,Silver,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
   BigMoney Played Gold.
@@ -588,89 +991,162 @@ With hand: Copper,Gold,Gold,Silver,Silver,
     +2 Coin = 8 all together.
   BigMoney Played Silver.
     +2 Coin = 10 all together.
-  BigMoney Played Copper.
-    +1 Coin = 11 all together.
   BigMoney bought Province.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Province into hand.
+  BigMoney Drew Overgrown Estate into hand.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Gold(5), Necropolis(1), Overgrown Estate(1), Province(3), Silver(6), 
+  BigMoney ends turn with deck: Copper(7), Gold(5), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(3), Silver(6), 
 
 ROUND 15
 -------------
-Lookout begins turn
-With hand: Copper,Copper,Province,Silver,Silver,
-  Lookout Played Silver.
-    +2 Coin = 2 all together.
-  Lookout Played Silver.
-    +2 Coin = 4 all together.
-  Lookout Played Copper.
-    +1 Coin = 5 all together.
-  Lookout Played Copper.
-    +1 Coin = 6 all together.
-  Lookout bought Duchy.
-  Lookout Drew Province into hand.
-  Lookout Drew Gold into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Copper into hand.
-  Lookout Drew Gold into hand.
-  Lookout ends turn with deck: Copper(6), Duchy(1), Estate(1), Gold(4), Lookout(1), Necropolis(1), Province(4), Silver(4), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Province,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Copper.
+RatsWanderingMinstrelWatchtowerArmory begins turn
+With hand: Copper,Rats,WanderingMinstrell,WanderingMinstrell,Watchtower,
+  RatsWanderingMinstrelWatchtowerArmory Played Rats.
+    +1 Actions = 1 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory gained Rats.
+      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+      RatsWanderingMinstrelWatchtowerArmory trashed Rats.
+        RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory trashed Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Duchy.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Duchy.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 2 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Duchy.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Duchy.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 4 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Duchy.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Duchy.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 2 all together.
+    +1 Coin = 1 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Duchy into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Province.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Province.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Province.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Province.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 3 all together.
+    +1 Coin = 2 all together.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 4 all together.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 4 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+    RatsWanderingMinstrelWatchtowerArmory Drew Province into hand.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 5 all together.
     +1 Coin = 4 all together.
-  BigMoney Played Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Province.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Armory.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Province.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 6 all together.
     +1 Coin = 5 all together.
-  BigMoney bought Duchy.
-  BigMoney Drew Necropolis into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Gold(5), Necropolis(1), Overgrown Estate(1), Province(3), Silver(6), 
+  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
+    +2 Actions = 3 all together.
+    RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Duchy.
+    RatsWanderingMinstrelWatchtowerArmory reshuffled
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Duchy.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
+  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
+    +1 Buys = 7 all together.
+    +1 Coin = 6 all together.
+  RatsWanderingMinstrelWatchtowerArmory bought Province.
+  RatsWanderingMinstrelWatchtowerArmory bought Duchy.
+  RatsWanderingMinstrelWatchtowerArmory bought Duchy.
+  RatsWanderingMinstrelWatchtowerArmory bought Duchy.
+  RatsWanderingMinstrelWatchtowerArmory bought Estate.
+  RatsWanderingMinstrelWatchtowerArmory bought Estate.
+  RatsWanderingMinstrelWatchtowerArmory bought Estate.
+  RatsWanderingMinstrelWatchtowerArmory Drew Duchy into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Duchy into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Province into hand.
+  RatsWanderingMinstrelWatchtowerArmory Drew Duchy into hand.
+  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Bridge(6), Copper(5), Duchy(8), Estate(3), Province(5), Rats(1), WanderingMinstrell(10), Watchtower(3), 
 
-ROUND 16
--------------
-Lookout begins turn
-With hand: Copper,Copper,Gold,Gold,Province,
-  Lookout Played Gold.
-    +3 Coin = 3 all together.
-  Lookout Played Gold.
-    +3 Coin = 6 all together.
-  Lookout Played Copper.
-    +1 Coin = 7 all together.
-  Lookout Played Copper.
-    +1 Coin = 8 all together.
-  Lookout bought Province.
-  Lookout Drew Gold into hand.
-  Lookout Drew Gold into hand.
-  Lookout Drew Province into hand.
-  Lookout Drew Province into hand.
-  Lookout Drew Silver into hand.
-  Lookout ends turn with deck: Copper(6), Duchy(1), Estate(1), Gold(4), Lookout(1), Necropolis(1), Province(5), Silver(4), 
+Game ended in 15 turns.
+RatsWanderingMinstrelWatchtowerArmory Won!
+RatsWanderingMinstrelWatchtowerArmory total score: 57
+  Armory(1), Bridge(6), Copper(5), Duchy(8), Estate(3), Province(5), Rats(1), WanderingMinstrell(10), Watchtower(3), 
+BigMoney total score: 18
+  Copper(7), Gold(5), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(3), Silver(6), 
+Trash contains: Copper(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Rats(5), 
 
-Game ended in 16 turns.
-Lookout Won!
-Lookout total score: 34
-  Copper(6), Duchy(1), Estate(1), Gold(4), Lookout(1), Necropolis(1), Province(5), Silver(4), 
-BigMoney total score: 21
-  Copper(7), Duchy(1), Gold(5), Necropolis(1), Overgrown Estate(1), Province(3), Silver(6), 
-Trash contains: Copper(1), Hovel(2), Overgrown Estate(1), 
-
-Lookout GainSequence is:
-  Lookout, Silver, Gold, Silver, Gold, 
-  Gold, Gold, Province, Silver, Province, 
-  Province, Silver, Province, Estate, Duchy, 
-  Province, 
+RatsWanderingMinstrelWatchtowerArmory GainSequence is:
+  Armory, Watchtower, Rats, Watchtower, WanderingMinstrell, 
+  WanderingMinstrell, Watchtower, WanderingMinstrell, WanderingMinstrell, WanderingMinstrell, 
+  Rats, Bridge, WanderingMinstrell, Bridge, Rats, 
+  WanderingMinstrell, Bridge, WanderingMinstrell, Bridge, WanderingMinstrell, 
+  Bridge, Rats, Province, Province, Province, 
+  Duchy, Duchy, Duchy, Rats, Province, 
+  Duchy, Duchy, WanderingMinstrell, Bridge, Rats, 
+  Province, Duchy, Duchy, Duchy, Estate, 
+  Estate, Estate, 
 BigMoney GainSequence is:
   Silver, Silver, Silver, Silver, Gold, 
-  Silver, Silver, Gold, Gold, Gold, 
-  Gold, Province, Province, Province, Duchy, 
-
+  Silver, Gold, Silver, Gold, Gold, 
+  Gold, Province, Province, Province, 

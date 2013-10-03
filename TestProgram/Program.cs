@@ -12,8 +12,8 @@ namespace Program
     {        
         static void Main()
         {
-            ComparePlayers(Strategies.Lookout.Player(1), Strategies.BigMoney.Player(2), useShelters: true);
-            //CompareStrategyVsAllKnownStrategies(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(1));
+            ComparePlayers(Strategies.RatsWanderingMinstrelWatchtowerArmory.Player(1), Strategies.BigMoney.Player(2), useShelters:true);
+            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoneySmithyTest.Player(1));
         }
 
         static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false)
