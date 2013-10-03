@@ -1,13 +1,13 @@
-ArmoryConspiratorForagerGreatHall gained Copper.
-ArmoryConspiratorForagerGreatHall gained Copper.
-ArmoryConspiratorForagerGreatHall gained Copper.
-ArmoryConspiratorForagerGreatHall gained Copper.
-ArmoryConspiratorForagerGreatHall gained Copper.
-ArmoryConspiratorForagerGreatHall gained Copper.
-ArmoryConspiratorForagerGreatHall gained Copper.
-ArmoryConspiratorForagerGreatHall gained Hovel.
-ArmoryConspiratorForagerGreatHall gained Necropolis.
-ArmoryConspiratorForagerGreatHall gained Overgrown Estate.
+Lookout gained Copper.
+Lookout gained Copper.
+Lookout gained Copper.
+Lookout gained Copper.
+Lookout gained Copper.
+Lookout gained Copper.
+Lookout gained Copper.
+Lookout gained Hovel.
+Lookout gained Necropolis.
+Lookout gained Overgrown Estate.
 BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
@@ -18,12 +18,12 @@ BigMoney gained Copper.
 BigMoney gained Hovel.
 BigMoney gained Necropolis.
 BigMoney gained Overgrown Estate.
-ArmoryConspiratorForagerGreatHall reshuffled
-ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-ArmoryConspiratorForagerGreatHall Drew Overgrown Estate into hand.
-ArmoryConspiratorForagerGreatHall Drew Copper into hand.
+Lookout reshuffled
+Lookout Drew Copper into hand.
+Lookout Drew Copper into hand.
+Lookout Drew Copper into hand.
+Lookout Drew Overgrown Estate into hand.
+Lookout Drew Copper into hand.
 BigMoney reshuffled
 BigMoney Drew Necropolis into hand.
 BigMoney Drew Copper into hand.
@@ -32,23 +32,23 @@ BigMoney Drew Copper into hand.
 BigMoney Drew Overgrown Estate into hand.
 ROUND 1
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
+Lookout begins turn
 With hand: Copper,Copper,Copper,Copper,Overgrown Estate,
-  ArmoryConspiratorForagerGreatHall Played Copper.
+  Lookout Played Copper.
     +1 Coin = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+  Lookout Played Copper.
     +1 Coin = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+  Lookout Played Copper.
     +1 Coin = 3 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+  Lookout Played Copper.
     +1 Coin = 4 all together.
-  ArmoryConspiratorForagerGreatHall bought Armory.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
-  ArmoryConspiratorForagerGreatHall Drew Hovel into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), 
+  Lookout bought Lookout.
+  Lookout Drew Copper into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Necropolis into hand.
+  Lookout Drew Hovel into hand.
+  Lookout ends turn with deck: Copper(7), Hovel(1), Lookout(1), Necropolis(1), Overgrown Estate(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Necropolis,Overgrown Estate,
@@ -68,24 +68,22 @@ With hand: Copper,Copper,Copper,Necropolis,Overgrown Estate,
 
 ROUND 2
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
+Lookout begins turn
 With hand: Copper,Copper,Copper,Hovel,Necropolis,
-  ArmoryConspiratorForagerGreatHall Played Necropolis.
-    +2 Actions = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+  Lookout Played Copper.
     +1 Coin = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+  Lookout Played Copper.
     +1 Coin = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+  Lookout Played Copper.
     +1 Coin = 3 all together.
-  ArmoryConspiratorForagerGreatHall bought Forager.
-  ArmoryConspiratorForagerGreatHall reshuffled
-  ArmoryConspiratorForagerGreatHall Drew Forager into hand.
-  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
-  ArmoryConspiratorForagerGreatHall Drew Armory into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Copper(7), Forager(1), Hovel(1), Necropolis(1), Overgrown Estate(1), 
+  Lookout bought Silver.
+  Lookout reshuffled
+  Lookout Drew Silver into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Lookout into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Copper into hand.
+  Lookout ends turn with deck: Copper(7), Hovel(1), Lookout(1), Necropolis(1), Overgrown Estate(1), Silver(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Hovel,
@@ -108,26 +106,35 @@ With hand: Copper,Copper,Copper,Copper,Hovel,
 
 ROUND 3
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Armory,Copper,Copper,Forager,Necropolis,
-  ArmoryConspiratorForagerGreatHall Played Necropolis.
-    +2 Actions = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Armory.
-    ArmoryConspiratorForagerGreatHall gained Conspirator.
-      ... and placed card on top of deck
-  ArmoryConspiratorForagerGreatHall Played Forager.
+Lookout begins turn
+With hand: Copper,Copper,Copper,Lookout,Silver,
+  Lookout Played Lookout.
     +1 Actions = 1 all together.
-    +1 Buys = 2 all together.
-    ArmoryConspiratorForagerGreatHall trashed Copper.
-    +1 Coin = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 2 all together.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Overgrown Estate into hand.
-  ArmoryConspiratorForagerGreatHall Drew Hovel into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(1), Copper(6), Forager(1), Hovel(1), Necropolis(1), Overgrown Estate(1), 
+    Lookout Revealed Copper.
+    Lookout Revealed Overgrown Estate.
+    Lookout Revealed Necropolis.
+      Lookout trashed Overgrown Estate.
+        Lookout Drew Copper into hand.
+      Lookout Discarded Necropolis.
+      Lookout Placed Copper on top of his deck.
+  Lookout Played Silver.
+    +2 Coin = 2 all together.
+  Lookout Played Copper.
+    +1 Coin = 3 all together.
+  Lookout Played Copper.
+    +1 Coin = 4 all together.
+  Lookout Played Copper.
+    +1 Coin = 5 all together.
+  Lookout Played Copper.
+    +1 Coin = 6 all together.
+  Lookout bought Gold.
+  Lookout Drew Copper into hand.
+  Lookout Drew Hovel into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Copper into hand.
+  Lookout reshuffled
+  Lookout Drew Copper into hand.
+  Lookout ends turn with deck: Copper(7), Gold(1), Hovel(1), Lookout(1), Necropolis(1), Silver(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Necropolis,
@@ -149,23 +156,23 @@ With hand: Copper,Copper,Copper,Copper,Necropolis,
 
 ROUND 4
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Conspirator,Copper,Copper,Hovel,Overgrown Estate,
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+Lookout begins turn
+With hand: Copper,Copper,Copper,Copper,Hovel,
+  Lookout Played Copper.
+    +1 Coin = 1 all together.
+  Lookout Played Copper.
+    +1 Coin = 2 all together.
+  Lookout Played Copper.
     +1 Coin = 3 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+  Lookout Played Copper.
     +1 Coin = 4 all together.
-  ArmoryConspiratorForagerGreatHall bought Great Hall.
-    ArmoryConspiratorForagerGreatHall trashed Hovel.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall reshuffled
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Armory into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(1), Copper(6), Forager(1), Great Hall(1), Necropolis(1), Overgrown Estate(1), 
+  Lookout bought Silver.
+  Lookout Drew Gold into hand.
+  Lookout Drew Silver into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Necropolis into hand.
+  Lookout Drew Lookout into hand.
+  Lookout ends turn with deck: Copper(7), Gold(1), Hovel(1), Lookout(1), Necropolis(1), Silver(2), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Hovel,Overgrown Estate,Silver,
@@ -181,71 +188,76 @@ With hand: Copper,Copper,Hovel,Overgrown Estate,Silver,
   BigMoney reshuffled
   BigMoney Drew Overgrown Estate into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Necropolis into hand.
+  BigMoney Drew Copper into hand.
   BigMoney ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
 
 ROUND 5
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Armory,Conspirator,Copper,Copper,Copper,
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 3 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 4 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 5 all together.
-  ArmoryConspiratorForagerGreatHall bought Conspirator.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Overgrown Estate into hand.
-  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
-  ArmoryConspiratorForagerGreatHall Drew Forager into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(2), Copper(6), Forager(1), Great Hall(1), Necropolis(1), Overgrown Estate(1), 
+Lookout begins turn
+With hand: Copper,Gold,Lookout,Necropolis,Silver,
+  Lookout Played Lookout.
+    +1 Actions = 1 all together.
+    Lookout Revealed Copper.
+    Lookout Revealed Copper.
+    Lookout reshuffled
+    Lookout Revealed Copper.
+      Lookout trashed Copper.
+      Lookout Discarded Copper.
+      Lookout Placed Copper on top of his deck.
+  Lookout Played Gold.
+    +3 Coin = 3 all together.
+  Lookout Played Silver.
+    +2 Coin = 5 all together.
+  Lookout Played Copper.
+    +1 Coin = 6 all together.
+  Lookout bought Gold.
+  Lookout Drew Copper into hand.
+  Lookout Drew Silver into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Copper into hand.
+  Lookout ends turn with deck: Copper(6), Gold(2), Hovel(1), Lookout(1), Necropolis(1), Silver(2), 
 
 BigMoney begins turn
-With hand: Copper,Necropolis,Overgrown Estate,Silver,Silver,
+With hand: Copper,Copper,Overgrown Estate,Silver,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Silver.
     +2 Coin = 4 all together.
   BigMoney Played Copper.
     +1 Coin = 5 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
   BigMoney Drew Hovel into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(5), 
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
 
 ROUND 6
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Copper,Copper,Forager,Necropolis,Overgrown Estate,
-  ArmoryConspiratorForagerGreatHall Played Necropolis.
-    +2 Actions = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Forager.
-    +1 Actions = 2 all together.
-    +1 Buys = 2 all together.
-    ArmoryConspiratorForagerGreatHall trashed Overgrown Estate.
-      ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-    +1 Coin = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+Lookout begins turn
+With hand: Copper,Copper,Copper,Copper,Silver,
+  Lookout Played Silver.
+    +2 Coin = 2 all together.
+  Lookout Played Copper.
     +1 Coin = 3 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+  Lookout Played Copper.
     +1 Coin = 4 all together.
-  ArmoryConspiratorForagerGreatHall bought Great Hall.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall reshuffled
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(2), Copper(6), Forager(1), Great Hall(2), Necropolis(1), 
+  Lookout Played Copper.
+    +1 Coin = 5 all together.
+  Lookout Played Copper.
+    +1 Coin = 6 all together.
+  Lookout bought Gold.
+  Lookout Drew Hovel into hand.
+  Lookout reshuffled
+  Lookout Drew Gold into hand.
+  Lookout Drew Silver into hand.
+  Lookout Drew Necropolis into hand.
+  Lookout Drew Copper into hand.
+  Lookout ends turn with deck: Copper(6), Gold(3), Hovel(1), Lookout(1), Necropolis(1), Silver(2), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Hovel,Silver,
@@ -258,404 +270,277 @@ With hand: Copper,Copper,Copper,Hovel,Silver,
   BigMoney Played Copper.
     +1 Coin = 5 all together.
   BigMoney bought Silver.
-  BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
+  BigMoney Drew Necropolis into hand.
   BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
+  BigMoney Drew Overgrown Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(5), 
 
 ROUND 7
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Conspirator,Copper,Copper,Great Hall,Great Hall,
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 2 all together.
-    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 4 all together.
-    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Armory.
-    ArmoryConspiratorForagerGreatHall gained Conspirator.
-      ... and placed card on top of deck
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 5 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+Lookout begins turn
+With hand: Copper,Gold,Hovel,Necropolis,Silver,
+  Lookout Played Gold.
+    +3 Coin = 3 all together.
+  Lookout Played Silver.
+    +2 Coin = 5 all together.
+  Lookout Played Copper.
     +1 Coin = 6 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 7 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 8 all together.
-  ArmoryConspiratorForagerGreatHall bought Province.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
-  ArmoryConspiratorForagerGreatHall Drew Forager into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(3), Copper(6), Forager(1), Great Hall(2), Necropolis(1), Province(1), 
+  Lookout bought Gold.
+  Lookout Drew Copper into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Gold into hand.
+  Lookout Drew Gold into hand.
+  Lookout Drew Copper into hand.
+  Lookout ends turn with deck: Copper(6), Gold(4), Hovel(1), Lookout(1), Necropolis(1), Silver(2), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
+With hand: Copper,Copper,Necropolis,Overgrown Estate,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Copper.
     +1 Coin = 3 all together.
   BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Overgrown Estate into hand.
+  BigMoney Drew Copper into hand.
   BigMoney ends turn with deck: Copper(7), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
 ROUND 8
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Conspirator,Copper,Copper,Forager,Necropolis,
-  ArmoryConspiratorForagerGreatHall Played Necropolis.
-    +2 Actions = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Forager.
-    +1 Actions = 2 all together.
-    +1 Buys = 2 all together.
-    ArmoryConspiratorForagerGreatHall trashed Copper.
-    +1 Coin = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 3 all together.
-    ArmoryConspiratorForagerGreatHall reshuffled
-    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-    +1 Actions = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 4 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 5 all together.
-  ArmoryConspiratorForagerGreatHall bought Great Hall.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(3), Copper(5), Forager(1), Great Hall(3), Necropolis(1), Province(1), 
+Lookout begins turn
+With hand: Copper,Copper,Copper,Gold,Gold,
+  Lookout Played Gold.
+    +3 Coin = 3 all together.
+  Lookout Played Gold.
+    +3 Coin = 6 all together.
+  Lookout Played Copper.
+    +1 Coin = 7 all together.
+  Lookout Played Copper.
+    +1 Coin = 8 all together.
+  Lookout Played Copper.
+    +1 Coin = 9 all together.
+  Lookout bought Province.
+  Lookout Drew Silver into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Lookout into hand.
+  Lookout Drew Copper into hand.
+  Lookout reshuffled
+  Lookout Drew Necropolis into hand.
+  Lookout ends turn with deck: Copper(6), Gold(4), Hovel(1), Lookout(1), Necropolis(1), Province(1), Silver(2), 
 
 BigMoney begins turn
-With hand: Overgrown Estate,Silver,Silver,Silver,Silver,
+With hand: Copper,Copper,Copper,Silver,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Silver.
     +2 Coin = 4 all together.
-  BigMoney Played Silver.
-    +2 Coin = 6 all together.
-  BigMoney Played Silver.
-    +2 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
   BigMoney bought Gold.
-  BigMoney Drew Necropolis into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
+  BigMoney Drew Hovel into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
   BigMoney ends turn with deck: Copper(7), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
 ROUND 9
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Conspirator,Copper,Copper,Great Hall,Great Hall,
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
+Lookout begins turn
+With hand: Copper,Copper,Lookout,Necropolis,Silver,
+  Lookout Played Lookout.
     +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Province into hand.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
+    Lookout Revealed Hovel.
+    Lookout Revealed Gold.
+    Lookout Revealed Province.
+      Lookout trashed Hovel.
+      Lookout Discarded Gold.
+      Lookout Placed Province on top of his deck.
+  Lookout Played Silver.
     +2 Coin = 2 all together.
-    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Armory.
-    ArmoryConspiratorForagerGreatHall gained Conspirator.
-      ... and placed card on top of deck
-  ArmoryConspiratorForagerGreatHall Played Copper.
+  Lookout Played Copper.
     +1 Coin = 3 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+  Lookout Played Copper.
     +1 Coin = 4 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 5 all together.
-  ArmoryConspiratorForagerGreatHall bought Great Hall.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall reshuffled
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(4), Copper(5), Forager(1), Great Hall(4), Necropolis(1), Province(1), 
+  Lookout bought Silver.
+  Lookout Drew Province into hand.
+  Lookout Drew Gold into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Gold into hand.
+  Lookout Drew Copper into hand.
+  Lookout ends turn with deck: Copper(6), Gold(4), Lookout(1), Necropolis(1), Province(1), Silver(3), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Necropolis,Silver,
+With hand: Copper,Copper,Gold,Hovel,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
   BigMoney Played Silver.
-    +2 Coin = 2 all together.
+    +2 Coin = 5 all together.
   BigMoney Played Copper.
-    +1 Coin = 3 all together.
+    +1 Coin = 6 all together.
   BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney bought Silver.
-  BigMoney Drew Hovel into hand.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Silver into hand.
   BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Overgrown Estate into hand.
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(7), 
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
 ROUND 10
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Conspirator,Conspirator,Copper,Copper,Great Hall,
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 3 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 4 all together.
-  ArmoryConspiratorForagerGreatHall bought Conspirator.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Forager into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(5), Copper(5), Forager(1), Great Hall(4), Necropolis(1), Province(1), 
+Lookout begins turn
+With hand: Copper,Copper,Gold,Gold,Province,
+  Lookout Played Gold.
+    +3 Coin = 3 all together.
+  Lookout Played Gold.
+    +3 Coin = 6 all together.
+  Lookout Played Copper.
+    +1 Coin = 7 all together.
+  Lookout Played Copper.
+    +1 Coin = 8 all together.
+  Lookout bought Province.
+  Lookout Drew Silver into hand.
+  Lookout Drew Gold into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Copper into hand.
+  Lookout reshuffled
+  Lookout Drew Copper into hand.
+  Lookout ends turn with deck: Copper(6), Gold(4), Lookout(1), Necropolis(1), Province(2), Silver(3), 
 
 BigMoney begins turn
-With hand: Copper,Hovel,Overgrown Estate,Silver,Silver,
+With hand: Copper,Copper,Copper,Silver,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Silver.
     +2 Coin = 4 all together.
   BigMoney Played Copper.
     +1 Coin = 5 all together.
-  BigMoney bought Silver.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Necropolis into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Necropolis into hand.
-  BigMoney ends turn with deck: Copper(7), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(8), 
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(4), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
 ROUND 11
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Conspirator,Copper,Forager,Great Hall,Necropolis,
-  ArmoryConspiratorForagerGreatHall Played Necropolis.
-    +2 Actions = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 2 all together.
-    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 2 all together.
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-    +1 Actions = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 2 all together.
-    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
-  ArmoryConspiratorForagerGreatHall Played Armory.
-    ArmoryConspiratorForagerGreatHall gained Great Hall.
-      ... and placed card on top of deck
-  ArmoryConspiratorForagerGreatHall Played Forager.
-    +1 Actions = 1 all together.
-    +1 Buys = 2 all together.
-    ArmoryConspiratorForagerGreatHall trashed Copper.
-    +1 Coin = 3 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 4 all together.
-  ArmoryConspiratorForagerGreatHall bought Conspirator.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Province into hand.
-  ArmoryConspiratorForagerGreatHall reshuffled
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(6), Copper(4), Forager(1), Great Hall(5), Necropolis(1), Province(1), 
+Lookout begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  Lookout Played Gold.
+    +3 Coin = 3 all together.
+  Lookout Played Silver.
+    +2 Coin = 5 all together.
+  Lookout Played Copper.
+    +1 Coin = 6 all together.
+  Lookout Played Copper.
+    +1 Coin = 7 all together.
+  Lookout Played Copper.
+    +1 Coin = 8 all together.
+  Lookout bought Province.
+  Lookout Drew Silver into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Province into hand.
+  Lookout Drew Province into hand.
+  Lookout Drew Copper into hand.
+  Lookout ends turn with deck: Copper(6), Gold(4), Lookout(1), Necropolis(1), Province(3), Silver(3), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Necropolis,Silver,
+With hand: Copper,Copper,Necropolis,Silver,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
   BigMoney Played Copper.
     +1 Coin = 5 all together.
-  BigMoney bought Silver.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Gold into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
+  BigMoney Drew Hovel into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(9), 
+  BigMoney ends turn with deck: Copper(7), Gold(5), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
 ROUND 12
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Copper,Copper,Great Hall,Great Hall,Province,
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
-  ArmoryConspiratorForagerGreatHall Played Necropolis.
-    +2 Actions = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 2 all together.
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 2 all together.
-    ArmoryConspiratorForagerGreatHall Drew Forager into hand.
-  ArmoryConspiratorForagerGreatHall Played Forager.
-    +1 Actions = 2 all together.
-    +1 Buys = 2 all together.
-    ArmoryConspiratorForagerGreatHall trashed Copper.
-    +1 Coin = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 2 all together.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(6), Copper(3), Forager(1), Great Hall(5), Necropolis(1), Province(1), 
-
-BigMoney begins turn
-With hand: Copper,Gold,Silver,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
-  BigMoney Played Silver.
-    +2 Coin = 9 all together.
-  BigMoney Played Copper.
-    +1 Coin = 10 all together.
-  BigMoney bought Gold.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(9), 
-
-ROUND 13
--------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Conspirator,Conspirator,Conspirator,Copper,Great Hall,
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
+Lookout begins turn
+With hand: Copper,Copper,Province,Province,Silver,
+  Lookout Played Silver.
     +2 Coin = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+  Lookout Played Copper.
     +1 Coin = 3 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+  Lookout Played Copper.
     +1 Coin = 4 all together.
-  ArmoryConspiratorForagerGreatHall bought Great Hall.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Armory into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(6), Copper(3), Forager(1), Great Hall(6), Necropolis(1), Province(1), 
+  Lookout bought Silver.
+  Lookout Drew Copper into hand.
+  Lookout Drew Silver into hand.
+  Lookout Drew Gold into hand.
+  Lookout Drew Gold into hand.
+  Lookout Drew Gold into hand.
+  Lookout ends turn with deck: Copper(6), Gold(4), Lookout(1), Necropolis(1), Province(3), Silver(4), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
+With hand: Copper,Gold,Gold,Hovel,Silver,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
   BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
+    +2 Coin = 8 all together.
   BigMoney Played Copper.
     +1 Coin = 9 all together.
   BigMoney bought Province.
+    BigMoney trashed Hovel.
   BigMoney Drew Gold into hand.
-  BigMoney Drew Overgrown Estate into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
   BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(1), Silver(9), 
+  BigMoney Drew Overgrown Estate into hand.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(5), Necropolis(1), Overgrown Estate(1), Province(1), Silver(6), 
 
-ROUND 14
+ROUND 13
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Armory,Conspirator,Conspirator,Conspirator,Great Hall,
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall reshuffled
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
-  ArmoryConspiratorForagerGreatHall Played Necropolis.
-    +2 Actions = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Armory.
-    ArmoryConspiratorForagerGreatHall gained Conspirator.
-      ... and placed card on top of deck
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 2 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 4 all together.
-    ArmoryConspiratorForagerGreatHall Drew Province into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 6 all together.
-    ArmoryConspiratorForagerGreatHall Drew Forager into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 8 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 10 all together.
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Played Forager.
-    +1 Actions = 1 all together.
-    +1 Buys = 2 all together.
-    ArmoryConspiratorForagerGreatHall trashed Copper.
-    +1 Coin = 11 all together.
-  ArmoryConspiratorForagerGreatHall bought Province.
-  ArmoryConspiratorForagerGreatHall bought Great Hall.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(7), Copper(2), Forager(1), Great Hall(7), Necropolis(1), Province(2), 
+Lookout begins turn
+With hand: Copper,Gold,Gold,Gold,Silver,
+  Lookout Played Gold.
+    +3 Coin = 3 all together.
+  Lookout Played Gold.
+    +3 Coin = 6 all together.
+  Lookout Played Gold.
+    +3 Coin = 9 all together.
+  Lookout Played Silver.
+    +2 Coin = 11 all together.
+  Lookout Played Copper.
+    +1 Coin = 12 all together.
+  Lookout bought Province.
+  Lookout Drew Lookout into hand.
+  Lookout Drew Necropolis into hand.
+  Lookout reshuffled
+  Lookout Drew Copper into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Silver into hand.
+  Lookout ends turn with deck: Copper(6), Gold(4), Lookout(1), Necropolis(1), Province(4), Silver(4), 
 
 BigMoney begins turn
 With hand: Copper,Gold,Gold,Overgrown Estate,Silver,
@@ -669,299 +554,123 @@ With hand: Copper,Gold,Gold,Overgrown Estate,Silver,
     +1 Coin = 9 all together.
   BigMoney bought Province.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(5), Necropolis(1), Overgrown Estate(1), Province(2), Silver(6), 
+
+ROUND 14
+-------------
+Lookout begins turn
+With hand: Copper,Copper,Lookout,Necropolis,Silver,
+  Lookout Played Silver.
+    +2 Coin = 2 all together.
+  Lookout Played Copper.
+    +1 Coin = 3 all together.
+  Lookout Played Copper.
+    +1 Coin = 4 all together.
+  Lookout bought Estate.
+  Lookout Drew Province into hand.
+  Lookout Drew Silver into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Silver into hand.
+  Lookout Drew Copper into hand.
+  Lookout ends turn with deck: Copper(6), Estate(1), Gold(4), Lookout(1), Necropolis(1), Province(4), Silver(4), 
+
+BigMoney begins turn
+With hand: Copper,Gold,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Silver.
+    +2 Coin = 10 all together.
+  BigMoney Played Copper.
+    +1 Coin = 11 all together.
+  BigMoney bought Province.
   BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(2), Silver(9), 
+  BigMoney Drew Province into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(5), Necropolis(1), Overgrown Estate(1), Province(3), Silver(6), 
 
 ROUND 15
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Conspirator,Copper,Copper,Great Hall,Great Hall,
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall reshuffled
-    ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
-  ArmoryConspiratorForagerGreatHall Played Necropolis.
-    +2 Actions = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
+Lookout begins turn
+With hand: Copper,Copper,Province,Silver,Silver,
+  Lookout Played Silver.
     +2 Coin = 2 all together.
-    ArmoryConspiratorForagerGreatHall Drew Forager into hand.
-    +1 Actions = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
+  Lookout Played Silver.
     +2 Coin = 4 all together.
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-    +1 Actions = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 2 all together.
-    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
-  ArmoryConspiratorForagerGreatHall Played Armory.
-    ArmoryConspiratorForagerGreatHall gained Conspirator.
-      ... and placed card on top of deck
-  ArmoryConspiratorForagerGreatHall Played Forager.
-    +1 Actions = 1 all together.
-    +1 Buys = 2 all together.
-    ArmoryConspiratorForagerGreatHall trashed Copper.
+  Lookout Played Copper.
     +1 Coin = 5 all together.
-  ArmoryConspiratorForagerGreatHall Played Copper.
+  Lookout Played Copper.
     +1 Coin = 6 all together.
-  ArmoryConspiratorForagerGreatHall bought Great Hall.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(8), Copper(1), Forager(1), Great Hall(8), Necropolis(1), Province(2), 
+  Lookout bought Duchy.
+  Lookout Drew Province into hand.
+  Lookout Drew Gold into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Copper into hand.
+  Lookout Drew Gold into hand.
+  Lookout ends turn with deck: Copper(6), Duchy(1), Estate(1), Gold(4), Lookout(1), Necropolis(1), Province(4), Silver(4), 
 
 BigMoney begins turn
-With hand: Copper,Silver,Silver,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Silver.
-    +2 Coin = 6 all together.
-  BigMoney Played Silver.
-    +2 Coin = 8 all together.
-  BigMoney Played Copper.
-    +1 Coin = 9 all together.
-  BigMoney bought Province.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Hovel into hand.
-  BigMoney Drew Necropolis into hand.
-  BigMoney ends turn with deck: Copper(7), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(3), Silver(9), 
-
-ROUND 16
--------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Conspirator,Conspirator,Conspirator,Great Hall,Great Hall,
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 2 all together.
-    ArmoryConspiratorForagerGreatHall Drew Province into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 4 all together.
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Province into hand.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 6 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 8 all together.
-    ArmoryConspiratorForagerGreatHall reshuffled
-    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 10 all together.
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
-  ArmoryConspiratorForagerGreatHall Played Necropolis.
-    +2 Actions = 2 all together.
-  ArmoryConspiratorForagerGreatHall Played Armory.
-    ArmoryConspiratorForagerGreatHall gained Conspirator.
-      ... and placed card on top of deck
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 12 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 14 all together.
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall Played Copper.
-    +1 Coin = 15 all together.
-  ArmoryConspiratorForagerGreatHall bought Province.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Forager into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(9), Copper(1), Forager(1), Great Hall(8), Necropolis(1), Province(3), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Hovel,Necropolis,Silver,
+With hand: Copper,Copper,Copper,Province,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Copper.
     +1 Coin = 3 all together.
   BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Estate.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(1), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(3), Silver(9), 
-
-ROUND 17
--------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Conspirator,Conspirator,Forager,Great Hall,Great Hall,
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall reshuffled
-    ArmoryConspiratorForagerGreatHall Drew Province into hand.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 2 all together.
-    ArmoryConspiratorForagerGreatHall Drew Province into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 4 all together.
-    ArmoryConspiratorForagerGreatHall Drew Province into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 6 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 8 all together.
-    ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Necropolis.
-    +2 Actions = 2 all together.
-  ArmoryConspiratorForagerGreatHall bought Province.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Drew Copper into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(9), Copper(1), Forager(1), Great Hall(8), Necropolis(1), Province(4), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
   BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
+    +1 Coin = 5 all together.
   BigMoney bought Duchy.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Copper into hand.
+  BigMoney Drew Necropolis into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Overgrown Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(1), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(3), Silver(9), 
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Gold(5), Necropolis(1), Overgrown Estate(1), Province(3), Silver(6), 
 
-ROUND 18
+ROUND 16
 -------------
-ArmoryConspiratorForagerGreatHall begins turn
-With hand: Conspirator,Copper,Great Hall,Great Hall,Great Hall,
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Armory into hand.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 2 all together.
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 4 all together.
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 6 all together.
-    ArmoryConspiratorForagerGreatHall reshuffled
-    ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 8 all together.
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Great Hall into hand.
-  ArmoryConspiratorForagerGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    ArmoryConspiratorForagerGreatHall Drew Province into hand.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 10 all together.
-    ArmoryConspiratorForagerGreatHall Drew Forager into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Conspirator.
-    +2 Coin = 12 all together.
-    ArmoryConspiratorForagerGreatHall Drew Province into hand.
-    +1 Actions = 1 all together.
-  ArmoryConspiratorForagerGreatHall Played Forager.
-    +1 Actions = 1 all together.
-    +1 Buys = 2 all together.
-    ArmoryConspiratorForagerGreatHall trashed Copper.
-    +1 Coin = 13 all together.
-  ArmoryConspiratorForagerGreatHall Played Armory.
-    ArmoryConspiratorForagerGreatHall gained Conspirator.
-      ... and placed card on top of deck
-  ArmoryConspiratorForagerGreatHall bought Province.
-  ArmoryConspiratorForagerGreatHall bought Duchy.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Necropolis into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall Drew Conspirator into hand.
-  ArmoryConspiratorForagerGreatHall ends turn with deck: Armory(1), Conspirator(10), Duchy(1), Forager(1), Great Hall(8), Necropolis(1), Province(5), 
+Lookout begins turn
+With hand: Copper,Copper,Gold,Gold,Province,
+  Lookout Played Gold.
+    +3 Coin = 3 all together.
+  Lookout Played Gold.
+    +3 Coin = 6 all together.
+  Lookout Played Copper.
+    +1 Coin = 7 all together.
+  Lookout Played Copper.
+    +1 Coin = 8 all together.
+  Lookout bought Province.
+  Lookout Drew Gold into hand.
+  Lookout Drew Gold into hand.
+  Lookout Drew Province into hand.
+  Lookout Drew Province into hand.
+  Lookout Drew Silver into hand.
+  Lookout ends turn with deck: Copper(6), Duchy(1), Estate(1), Gold(4), Lookout(1), Necropolis(1), Province(5), Silver(4), 
 
-Game ended in 18 turns.
-ArmoryConspiratorForagerGreatHall Won!
-ArmoryConspiratorForagerGreatHall total score: 41
-  Armory(1), Conspirator(10), Duchy(1), Forager(1), Great Hall(8), Necropolis(1), Province(5), 
-BigMoney total score: 22
-  Copper(7), Duchy(1), Estate(1), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(3), Silver(9), 
-Trash contains: Copper(7), Hovel(1), Overgrown Estate(1), 
+Game ended in 16 turns.
+Lookout Won!
+Lookout total score: 34
+  Copper(6), Duchy(1), Estate(1), Gold(4), Lookout(1), Necropolis(1), Province(5), Silver(4), 
+BigMoney total score: 21
+  Copper(7), Duchy(1), Gold(5), Necropolis(1), Overgrown Estate(1), Province(3), Silver(6), 
+Trash contains: Copper(1), Hovel(2), Overgrown Estate(1), 
 
-ArmoryConspiratorForagerGreatHall GainSequence is:
-  Armory, Forager, Conspirator, Great Hall, Conspirator, 
-  Great Hall, Conspirator, Province, Great Hall, Conspirator, 
-  Great Hall, Conspirator, Great Hall, Conspirator, Great Hall, 
-  Conspirator, Province, Great Hall, Conspirator, Great Hall, 
-  Conspirator, Province, Province, Conspirator, Province, 
-  Duchy, 
+Lookout GainSequence is:
+  Lookout, Silver, Gold, Silver, Gold, 
+  Gold, Gold, Province, Silver, Province, 
+  Province, Silver, Province, Estate, Duchy, 
+  Province, 
 BigMoney GainSequence is:
-  Silver, Silver, Silver, Silver, Silver, 
-  Silver, Gold, Gold, Silver, Silver, 
-  Silver, Gold, Province, Province, Province, 
-  Estate, Duchy, 
+  Silver, Silver, Silver, Silver, Gold, 
+  Silver, Silver, Gold, Gold, Gold, 
+  Gold, Province, Province, Province, Duchy, 
+

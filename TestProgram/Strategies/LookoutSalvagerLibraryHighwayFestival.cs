@@ -72,6 +72,7 @@ namespace Program
                            CardAcceptance.For<CardTypes.Highway>(),
                            CardAcceptance.For<CardTypes.Festival>(),
                            CardAcceptance.For<CardTypes.Salvager>(Default.ShouldPlaySalvager(TrashOrder())),
+                           CardAcceptance.For<CardTypes.Necropolis>(),
                            CardAcceptance.For<CardTypes.Library>()
                            );
             }            
@@ -82,6 +83,9 @@ namespace Program
                            CardAcceptance.For<CardTypes.Curse>(),
                            CardAcceptance.For<CardTypes.Lookout>(gameState => CountAllOwned<CardTypes.Copper>(gameState) <= 4),                                               
                            CardAcceptance.For<CardTypes.Estate>(),
+                           CardAcceptance.For<CardTypes.OvergrownEstate>(),
+                           CardAcceptance.For<CardTypes.Hovel>(),
+                           CardAcceptance.For<CardTypes.Necropolis>(),
                            CardAcceptance.For<CardTypes.Silver>(gameState => gameState.players.CurrentPlayer.ExpectedCoinValueAtEndOfTurn == 4 && CardBeingPlayedIs<CardTypes.Salvager>(gameState)),
                            CardAcceptance.For<CardTypes.Copper>(),
                            CardAcceptance.For<CardTypes.Silver>());

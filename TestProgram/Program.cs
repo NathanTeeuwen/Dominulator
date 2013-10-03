@@ -12,7 +12,7 @@ namespace Program
     {        
         static void Main()
         {
-            ComparePlayers(Strategies.ArmoryConspiratorForagerGreatHall.Player(1), Strategies.BigMoney.Player(2), useShelters:true);
+            ComparePlayers(Strategies.Lookout.Player(1), Strategies.BigMoney.Player(2), useShelters: true);
             //CompareStrategyVsAllKnownStrategies(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(1));
         }
 

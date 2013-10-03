@@ -227,6 +227,8 @@ namespace Program
                     CardAcceptance.For<CardTypes.Province>(),
                     CardAcceptance.For<CardTypes.Duchy>(),
                     CardAcceptance.For<CardTypes.Estate>(),
+                    CardAcceptance.For<CardTypes.OvergrownEstate>(),
+                    CardAcceptance.For<CardTypes.Hovel>(),                    
                     CardAcceptance.For<CardTypes.Ruin>(),
                     CardAcceptance.For<CardTypes.Copper>(),
                     CardAcceptance.For<CardTypes.Curse>());
@@ -236,7 +238,9 @@ namespace Program
             {                
                 return new CardPickByPriority(
                     CardAcceptance.For<CardTypes.Curse>(),
-                    CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) == 8),                    
+                    CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) == 8),
+                    CardAcceptance.For<CardTypes.OvergrownEstate>(),
+                    CardAcceptance.For<CardTypes.Hovel>(),                    
                     CardAcceptance.For<CardTypes.Copper>());                
             }
             

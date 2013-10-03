@@ -47,6 +47,9 @@ namespace Program
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Estate>(),
+                           CardAcceptance.For<CardTypes.OvergrownEstate>(),
+                           CardAcceptance.For<CardTypes.Hovel>(),
+                           CardAcceptance.For<CardTypes.Necropolis>(),                    
                            CardAcceptance.For<CardTypes.Copper>(),
                            CardAcceptance.For<CardTypes.Lookout>(),
                            CardAcceptance.For<CardTypes.Silver>(),

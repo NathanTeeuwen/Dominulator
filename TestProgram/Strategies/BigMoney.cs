@@ -30,6 +30,6 @@ namespace Program
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
                            CardAcceptance.For<CardTypes.Silver>());
             }
-        }                            
+        }                           
     }
 }
