@@ -421,25 +421,30 @@ namespace Program
             AddCards(cards, playerAction2.gainOrder);
 
             var cardsToRemove = new Card[] { 
+                // treaures
                 new CardTypes.Platinum(),
                 new CardTypes.Gold(),
                 new CardTypes.Silver(),
                 new CardTypes.Copper(),
                 new CardTypes.Colony(),
+                new CardTypes.Potion(),
+                // victory
                 new CardTypes.Province(),
                 new CardTypes.Duchy(),
                 new CardTypes.Estate(),
-                new CardTypes.Curse(),
-                new CardTypes.Potion(),
+                new CardTypes.Curse(),                
+                // ruins
+                new CardTypes.AbandonedMine(),
                 new CardTypes.RuinedLibrary(),
                 new CardTypes.RuinedVillage(),
                 new CardTypes.RuinedMarket(),
                 new CardTypes.Survivors(),
-                new CardTypes.Curse(),
-                new CardTypes.Spoils(),
+                // shelters
                 new CardTypes.OvergrownEstate(),
                 new CardTypes.Hovel(),
                 new CardTypes.Necropolis(),
+                // non-supply piles
+                new CardTypes.Spoils(),                
                 new CardTypes.Madman(),
                 new CardTypes.Mercenary()
             };

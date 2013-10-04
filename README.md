@@ -11,9 +11,9 @@ The goals of the project are as follows, in priority order.
   3) Ability to easily extend the game engine with custom cards.
   4) Include a foundation for easily composing strategies from simple build orders.
   5) Include default strategies for playing most cards. 
-  5) Create a strategy optimizer that given a set of 10 cards, finds the best combination to play.
+  6) Create a strategy optimizer that given a set of 10 cards, finds the best combination to play.
   
-Goal 5 is lofty - but would be very nice :).
+Goal 6 is lofty - but would be very nice :).
 
 Setup:   
 ======

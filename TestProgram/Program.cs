@@ -13,7 +13,7 @@ namespace Program
         static void Main()
         {
             ComparePlayers(Strategies.RebuildAdvanced.Player(1), Strategies.RebuildAdvanced.Player(2), startingDeckPerPlayer: StartingDecksForRebuildWithEstateAdvantage.StartingDecks);            
-            //CompareStrategyVsAllKnownStrategies(Strategies.RatsWanderingMinstrelWatchtowerArmory.Player(1));
+            CompareStrategyVsAllKnownStrategies(Strategies.RebuildMonument.Player(1));
         }
         
         static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false)

@@ -1,379 +1,698 @@
-RebuildAdvanced gained Copper.
-RebuildAdvanced gained Copper.
-RebuildAdvanced gained Copper.
-RebuildAdvanced gained Copper.
-RebuildAdvanced gained Copper.
-RebuildAdvanced gained Copper.
-RebuildAdvanced gained Copper.
-RebuildAdvanced gained Estate.
-RebuildAdvanced gained Silver.
-RebuildAdvanced gained Silver.
-RebuildAdvanced gained Silver.
-RebuildAdvanced gained Silver.
-RebuildAdvanced gained Silver.
-RebuildAdvanced gained Gold.
-RebuildAdvanced gained Gold.
-RebuildAdvanced gained Rebuild.
-RebuildAdvanced gained Rebuild.
-RebuildAdvanced gained Duchy.
-RebuildAdvanced gained Duchy.
-RebuildAdvanced gained Duchy.
-RebuildAdvanced gained Duchy.
-RebuildAdvanced gained Copper.
-RebuildAdvanced gained Copper.
-RebuildAdvanced gained Copper.
-RebuildAdvanced gained Copper.
-RebuildAdvanced gained Copper.
-RebuildAdvanced gained Copper.
-RebuildAdvanced gained Copper.
-RebuildAdvanced gained Silver.
-RebuildAdvanced gained Silver.
-RebuildAdvanced gained Silver.
-RebuildAdvanced gained Silver.
-RebuildAdvanced gained Silver.
-RebuildAdvanced gained Gold.
-RebuildAdvanced gained Gold.
-RebuildAdvanced gained Rebuild.
-RebuildAdvanced gained Rebuild.
-RebuildAdvanced gained Duchy.
-RebuildAdvanced gained Duchy.
-RebuildAdvanced gained Duchy.
-RebuildAdvanced gained Duchy.
-RebuildAdvanced reshuffled
-RebuildAdvanced Drew Duchy into hand.
-RebuildAdvanced Drew Copper into hand.
-RebuildAdvanced Drew Silver into hand.
-RebuildAdvanced Drew Silver into hand.
-RebuildAdvanced Drew Gold into hand.
-RebuildAdvanced reshuffled
-RebuildAdvanced Drew Gold into hand.
-RebuildAdvanced Drew Copper into hand.
-RebuildAdvanced Drew Silver into hand.
-RebuildAdvanced Drew Copper into hand.
-RebuildAdvanced Drew Duchy into hand.
+RebuildMonument gained Copper.
+RebuildMonument gained Copper.
+RebuildMonument gained Copper.
+RebuildMonument gained Copper.
+RebuildMonument gained Copper.
+RebuildMonument gained Copper.
+RebuildMonument gained Copper.
+RebuildMonument gained Estate.
+RebuildMonument gained Estate.
+RebuildMonument gained Estate.
+BigMoneyDelayed gained Copper.
+BigMoneyDelayed gained Copper.
+BigMoneyDelayed gained Copper.
+BigMoneyDelayed gained Copper.
+BigMoneyDelayed gained Copper.
+BigMoneyDelayed gained Copper.
+BigMoneyDelayed gained Copper.
+BigMoneyDelayed gained Estate.
+BigMoneyDelayed gained Estate.
+BigMoneyDelayed gained Estate.
+RebuildMonument reshuffled
+RebuildMonument Drew Copper into hand.
+RebuildMonument Drew Copper into hand.
+RebuildMonument Drew Copper into hand.
+RebuildMonument Drew Estate into hand.
+RebuildMonument Drew Copper into hand.
+BigMoneyDelayed reshuffled
+BigMoneyDelayed Drew Estate into hand.
+BigMoneyDelayed Drew Copper into hand.
+BigMoneyDelayed Drew Copper into hand.
+BigMoneyDelayed Drew Copper into hand.
+BigMoneyDelayed Drew Estate into hand.
 ROUND 1
 -------------
-RebuildAdvanced begins turn
-With hand: Copper,Duchy,Gold,Silver,Silver,
-  RebuildAdvanced Played Gold.
-    +3 Coin = 3 all together.
-  RebuildAdvanced Played Silver.
-    +2 Coin = 5 all together.
-  RebuildAdvanced Played Silver.
-    +2 Coin = 7 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 8 all together.
-  RebuildAdvanced bought Province.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced ends turn with deck: Copper(7), Duchy(4), Estate(1), Gold(2), Province(1), Rebuild(2), Silver(5), 
+RebuildMonument begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  RebuildMonument Played Copper.
+    +1 Coin = 1 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 2 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 3 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 4 all together.
+  RebuildMonument bought Monument.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Estate into hand.
+  RebuildMonument Drew Estate into hand.
+  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(1), 
 
-RebuildAdvanced begins turn
-With hand: Copper,Copper,Duchy,Gold,Silver,
-  RebuildAdvanced Played Gold.
-    +3 Coin = 3 all together.
-  RebuildAdvanced Played Silver.
-    +2 Coin = 5 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 6 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 7 all together.
-  RebuildAdvanced bought Gold.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced ends turn with deck: Copper(7), Duchy(4), Gold(3), Rebuild(2), Silver(5), 
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-RebuildAdvanced begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  RebuildAdvanced Played Silver.
-    +2 Coin = 2 all together.
-  RebuildAdvanced Played Silver.
-    +2 Coin = 4 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 5 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 6 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 7 all together.
-  RebuildAdvanced bought Gold.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced Drew Duchy into hand.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced Drew Duchy into hand.
-  RebuildAdvanced ends turn with deck: Copper(7), Duchy(4), Estate(1), Gold(3), Province(1), Rebuild(2), Silver(5), 
+RebuildMonument begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  RebuildMonument Played Copper.
+    +1 Coin = 1 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 2 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 3 all together.
+  RebuildMonument bought Silver.
+  RebuildMonument reshuffled
+  RebuildMonument Drew Silver into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Monument into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(1), Silver(1), 
 
-RebuildAdvanced begins turn
-With hand: Copper,Copper,Silver,Silver,Silver,
-  RebuildAdvanced Played Silver.
-    +2 Coin = 2 all together.
-  RebuildAdvanced Played Silver.
-    +2 Coin = 4 all together.
-  RebuildAdvanced Played Silver.
-    +2 Coin = 6 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 7 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 8 all together.
-  RebuildAdvanced bought Province.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced Drew Rebuild into hand.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced Drew Gold into hand.
-  RebuildAdvanced ends turn with deck: Copper(7), Duchy(4), Gold(3), Province(1), Rebuild(2), Silver(5), 
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed reshuffled
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-RebuildAdvanced begins turn
-With hand: Copper,Copper,Duchy,Duchy,Silver,
-  RebuildAdvanced Played Silver.
+RebuildMonument begins turn
+With hand: Copper,Copper,Copper,Monument,Silver,
+  RebuildMonument Played Monument.
     +2 Coin = 2 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 3 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 4 all together.
-  RebuildAdvanced bought Silver.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced Drew Estate into hand.
-  RebuildAdvanced Drew Gold into hand.
-  RebuildAdvanced Drew Rebuild into hand.
-  RebuildAdvanced Drew Duchy into hand.
-  RebuildAdvanced ends turn with deck: Copper(7), Duchy(4), Estate(1), Gold(3), Province(1), Rebuild(2), Silver(6), 
-
-RebuildAdvanced begins turn
-With hand: Copper,Copper,Gold,Rebuild,Silver,
-  RebuildAdvanced Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildAdvanced named Province.
-      RebuildAdvanced Revealed Rebuild.
-      RebuildAdvanced Revealed Copper.
-      RebuildAdvanced Revealed Duchy.
-      RebuildAdvanced Discarded Rebuild.
-      RebuildAdvanced Discarded Copper.
-    RebuildAdvanced trashed Duchy.
-    RebuildAdvanced gained Province.
-  RebuildAdvanced Played Gold.
-    +3 Coin = 3 all together.
-  RebuildAdvanced Played Silver.
-    +2 Coin = 5 all together.
-  RebuildAdvanced Played Copper.
+  RebuildMonument Played Silver.
+    +2 Coin = 4 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 5 all together.
+  RebuildMonument Played Copper.
     +1 Coin = 6 all together.
-  RebuildAdvanced Played Copper.
+  RebuildMonument Played Copper.
     +1 Coin = 7 all together.
-  RebuildAdvanced bought Gold.
-  RebuildAdvanced Drew Duchy into hand.
-  RebuildAdvanced Drew Duchy into hand.
-  RebuildAdvanced reshuffled
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced Drew Province into hand.
-  RebuildAdvanced ends turn with deck: Copper(7), Duchy(3), Gold(4), Province(2), Rebuild(2), Silver(5), 
+  RebuildMonument bought Rebuild.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Estate into hand.
+  RebuildMonument Drew Estate into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Estate into hand.
+  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(1), Rebuild(1), Silver(1), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(3), 
 
 ROUND 4
 -------------
-RebuildAdvanced begins turn
-With hand: Copper,Duchy,Estate,Gold,Rebuild,
-  RebuildAdvanced Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildAdvanced named Province.
-      RebuildAdvanced Revealed Rebuild.
-      RebuildAdvanced reshuffled
-      RebuildAdvanced Revealed Copper.
-      RebuildAdvanced Revealed Province.
-      RebuildAdvanced Revealed Copper.
-      RebuildAdvanced Revealed Silver.
-      RebuildAdvanced Revealed Copper.
-      RebuildAdvanced Revealed Silver.
-      RebuildAdvanced Revealed Duchy.
-      RebuildAdvanced Discarded Rebuild.
-      RebuildAdvanced Discarded Copper.
-      RebuildAdvanced Discarded Silver.
-      RebuildAdvanced Discarded Copper.
-      RebuildAdvanced Discarded Silver.
-      RebuildAdvanced Discarded Copper.
-      RebuildAdvanced Discarded Province.
-    RebuildAdvanced trashed Duchy.
-    RebuildAdvanced gained Province.
-  RebuildAdvanced Played Gold.
-    +3 Coin = 3 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 4 all together.
-  RebuildAdvanced bought Silver.
-  RebuildAdvanced Drew Gold into hand.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced ends turn with deck: Copper(7), Duchy(3), Estate(1), Gold(3), Province(2), Rebuild(2), Silver(7), 
+RebuildMonument begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  RebuildMonument Played Copper.
+    +1 Coin = 1 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 2 all together.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument reshuffled
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Silver into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(1), Rebuild(1), Silver(1), 
 
-RebuildAdvanced begins turn
-With hand: Copper,Duchy,Duchy,Province,Silver,
-  RebuildAdvanced Played Silver.
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoneyDelayed Played Silver.
     +2 Coin = 2 all together.
-  RebuildAdvanced Played Copper.
+  BigMoneyDelayed Played Copper.
     +1 Coin = 3 all together.
-  RebuildAdvanced bought Silver.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced Drew Gold into hand.
-  RebuildAdvanced Drew Rebuild into hand.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced Drew Province into hand.
-  RebuildAdvanced ends turn with deck: Copper(7), Duchy(3), Gold(4), Province(2), Rebuild(2), Silver(6), 
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed reshuffled
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(4), 
 
 ROUND 5
 -------------
-RebuildAdvanced begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  RebuildAdvanced Played Gold.
-    +3 Coin = 3 all together.
-  RebuildAdvanced Played Silver.
-    +2 Coin = 5 all together.
-  RebuildAdvanced Played Silver.
-    +2 Coin = 7 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 8 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 9 all together.
-  RebuildAdvanced bought Province.
-  RebuildAdvanced Drew Gold into hand.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced Drew Duchy into hand.
-  RebuildAdvanced Drew Duchy into hand.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced ends turn with deck: Copper(7), Duchy(3), Estate(1), Gold(3), Province(3), Rebuild(2), Silver(7), 
-
-RebuildAdvanced begins turn
-With hand: Copper,Gold,Province,Rebuild,Silver,
-  RebuildAdvanced Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildAdvanced named Province.
-      RebuildAdvanced Revealed Silver.
-      RebuildAdvanced Revealed Silver.
-      RebuildAdvanced Revealed Rebuild.
-      RebuildAdvanced Revealed Copper.
-      RebuildAdvanced Revealed Copper.
-      RebuildAdvanced Revealed Gold.
-      RebuildAdvanced Revealed Gold.
-      RebuildAdvanced Revealed Copper.
-      RebuildAdvanced Revealed Silver.
-      RebuildAdvanced Revealed Duchy.
-      RebuildAdvanced Discarded Silver.
-      RebuildAdvanced Discarded Silver.
-      RebuildAdvanced Discarded Silver.
-      RebuildAdvanced Discarded Copper.
-      RebuildAdvanced Discarded Gold.
-      RebuildAdvanced Discarded Gold.
-      RebuildAdvanced Discarded Copper.
-      RebuildAdvanced Discarded Copper.
-      RebuildAdvanced Discarded Rebuild.
-    RebuildAdvanced trashed Duchy.
-    RebuildAdvanced gained Province.
-  RebuildAdvanced Played Gold.
-    +3 Coin = 3 all together.
-  RebuildAdvanced Played Silver.
-    +2 Coin = 5 all together.
-  RebuildAdvanced Played Copper.
+RebuildMonument begins turn
+With hand: Copper,Copper,Copper,Copper,Silver,
+  RebuildMonument Played Silver.
+    +2 Coin = 2 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 3 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 4 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 5 all together.
+  RebuildMonument Played Copper.
     +1 Coin = 6 all together.
-  RebuildAdvanced bought Estate.
-  RebuildAdvanced Drew Gold into hand.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced reshuffled
-  RebuildAdvanced Drew Copper into hand.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced ends turn with deck: Copper(7), Duchy(2), Estate(1), Gold(4), Province(3), Rebuild(2), Silver(6), 
+  RebuildMonument bought Rebuild.
+  RebuildMonument Drew Monument into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Estate into hand.
+  RebuildMonument Drew Estate into hand.
+  RebuildMonument Drew Rebuild into hand.
+  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(1), Rebuild(2), Silver(1), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Copper,Copper,Silver,
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDelayed bought Gold.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
 
 ROUND 6
 -------------
-RebuildAdvanced begins turn
-With hand: Copper,Duchy,Duchy,Gold,Silver,
-  RebuildAdvanced Played Gold.
-    +3 Coin = 3 all together.
-  RebuildAdvanced Played Silver.
-    +2 Coin = 5 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 6 all together.
-  RebuildAdvanced bought Estate.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced reshuffled
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced Drew Estate into hand.
-  RebuildAdvanced Drew Rebuild into hand.
-  RebuildAdvanced ends turn with deck: Copper(7), Duchy(3), Estate(2), Gold(3), Province(3), Rebuild(2), Silver(7), 
+RebuildMonument begins turn
+With hand: Copper,Estate,Estate,Monument,Rebuild,
+  RebuildMonument Played Rebuild.
+    +1 Actions = 1 all together.
+    RebuildMonument named Duchy.
+      RebuildMonument Revealed Copper.
+      RebuildMonument Revealed Estate.
+      RebuildMonument Discarded Copper.
+    RebuildMonument trashed Estate.
+    RebuildMonument gained Duchy.
+  RebuildMonument Played Monument.
+    +2 Coin = 2 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 3 all together.
+  RebuildMonument bought Silver.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument reshuffled
+  RebuildMonument Drew Monument into hand.
+  RebuildMonument Drew Silver into hand.
+  RebuildMonument Drew Duchy into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument ends turn with deck: Copper(7), Duchy(1), Estate(2), Monument(1), Rebuild(2), Silver(2), 
 
-RebuildAdvanced begins turn
-With hand: Copper,Copper,Copper,Gold,Silver,
-  RebuildAdvanced Played Gold.
-    +3 Coin = 3 all together.
-  RebuildAdvanced Played Silver.
-    +2 Coin = 5 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 6 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 7 all together.
-  RebuildAdvanced Played Copper.
-    +1 Coin = 8 all together.
-  RebuildAdvanced bought Province.
-  RebuildAdvanced Drew Gold into hand.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced Drew Gold into hand.
-  RebuildAdvanced Drew Province into hand.
-  RebuildAdvanced Drew Silver into hand.
-  RebuildAdvanced ends turn with deck: Copper(7), Duchy(2), Estate(1), Gold(4), Province(4), Rebuild(2), Silver(6), 
+BigMoneyDelayed begins turn
+With hand: Estate,Estate,Estate,Silver,Silver,
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDelayed bought Silver.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed reshuffled
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(5), 
 
 ROUND 7
 -------------
-RebuildAdvanced begins turn
-With hand: Estate,Rebuild,Silver,Silver,Silver,
-  RebuildAdvanced Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildAdvanced named Province.
-      RebuildAdvanced Revealed Silver.
-      RebuildAdvanced Revealed Copper.
-      RebuildAdvanced Revealed Copper.
-      RebuildAdvanced Revealed Silver.
-      RebuildAdvanced Revealed Duchy.
-      RebuildAdvanced Discarded Silver.
-      RebuildAdvanced Discarded Copper.
-      RebuildAdvanced Discarded Silver.
-      RebuildAdvanced Discarded Copper.
-    RebuildAdvanced trashed Duchy.
-    RebuildAdvanced gained Province.
-  RebuildAdvanced Played Silver.
+RebuildMonument begins turn
+With hand: Copper,Copper,Duchy,Monument,Silver,
+  RebuildMonument Played Monument.
     +2 Coin = 2 all together.
-  RebuildAdvanced Played Silver.
+  RebuildMonument Played Silver.
     +2 Coin = 4 all together.
-  RebuildAdvanced Played Silver.
-    +2 Coin = 6 all together.
-  RebuildAdvanced bought Estate.
-  RebuildAdvanced Drew Duchy into hand.
-  RebuildAdvanced Drew Province into hand.
-  RebuildAdvanced Drew Gold into hand.
-  RebuildAdvanced Drew Province into hand.
-  RebuildAdvanced Drew Estate into hand.
-  RebuildAdvanced ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(3), Province(4), Rebuild(2), Silver(7), 
+  RebuildMonument Played Copper.
+    +1 Coin = 5 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 6 all together.
+  RebuildMonument bought Rebuild.
+  RebuildMonument Drew Estate into hand.
+  RebuildMonument Drew Rebuild into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument ends turn with deck: Copper(7), Duchy(1), Estate(2), Monument(1), Rebuild(3), Silver(2), 
 
-Game ended in 7 turns.
-RebuildAdvanced Won!
-RebuildAdvanced total score: 33
-  Copper(7), Duchy(2), Estate(3), Gold(3), Province(4), Rebuild(2), Silver(7), 
-RebuildAdvanced total score: 31
-  Copper(7), Duchy(2), Estate(1), Gold(4), Province(4), Rebuild(2), Silver(6), 
-Trash contains: Duchy(4), 
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyDelayed bought Gold.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
 
-RebuildAdvanced GainSequence is:
-  Province, Gold, Silver, Province, Silver, 
-  Province, Estate, Province, Estate, 
-RebuildAdvanced GainSequence is:
-  Gold, Province, Province, Gold, Silver, 
-  Province, Estate, Province, 
+ROUND 8
+-------------
+RebuildMonument begins turn
+With hand: Copper,Copper,Copper,Estate,Rebuild,
+  RebuildMonument Played Rebuild.
+    +1 Actions = 1 all together.
+    RebuildMonument named Duchy.
+      RebuildMonument Revealed Copper.
+      RebuildMonument Revealed Rebuild.
+      RebuildMonument Revealed Silver.
+      RebuildMonument Revealed Estate.
+      RebuildMonument Discarded Copper.
+      RebuildMonument Discarded Rebuild.
+      RebuildMonument Discarded Silver.
+    RebuildMonument trashed Estate.
+    RebuildMonument gained Duchy.
+  RebuildMonument Played Copper.
+    +1 Coin = 1 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 2 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 3 all together.
+  RebuildMonument bought Silver.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument reshuffled
+  RebuildMonument Drew Silver into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument ends turn with deck: Copper(7), Duchy(2), Estate(1), Monument(1), Rebuild(3), Silver(3), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDelayed bought Gold.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), 
+
+ROUND 9
+-------------
+RebuildMonument begins turn
+With hand: Copper,Copper,Copper,Copper,Silver,
+  RebuildMonument Played Silver.
+    +2 Coin = 2 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 3 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 4 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 5 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 6 all together.
+  RebuildMonument bought Duchy.
+  RebuildMonument Drew Duchy into hand.
+  RebuildMonument Drew Duchy into hand.
+  RebuildMonument Drew Rebuild into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Rebuild into hand.
+  RebuildMonument ends turn with deck: Copper(7), Duchy(3), Estate(1), Monument(1), Rebuild(3), Silver(3), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyDelayed bought Gold.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed reshuffled
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(5), 
+
+ROUND 10
+-------------
+RebuildMonument begins turn
+With hand: Copper,Duchy,Duchy,Rebuild,Rebuild,
+  RebuildMonument Played Rebuild.
+    +1 Actions = 1 all together.
+    RebuildMonument named Duchy.
+      RebuildMonument Revealed Silver.
+      RebuildMonument Revealed Estate.
+      RebuildMonument Discarded Silver.
+    RebuildMonument trashed Estate.
+    RebuildMonument gained Duchy.
+  RebuildMonument Played Rebuild.
+    +1 Actions = 1 all together.
+    RebuildMonument named Province.
+      RebuildMonument Revealed Copper.
+      RebuildMonument Revealed Silver.
+      RebuildMonument Revealed Monument.
+      RebuildMonument Revealed Copper.
+      RebuildMonument Revealed Rebuild.
+      RebuildMonument reshuffled
+      RebuildMonument Revealed Duchy.
+      RebuildMonument Discarded Copper.
+      RebuildMonument Discarded Silver.
+      RebuildMonument Discarded Rebuild.
+      RebuildMonument Discarded Copper.
+      RebuildMonument Discarded Monument.
+    RebuildMonument trashed Duchy.
+    RebuildMonument gained Province.
+  RebuildMonument Played Copper.
+    +1 Coin = 1 all together.
+  RebuildMonument Drew Silver into hand.
+  RebuildMonument Drew Duchy into hand.
+  RebuildMonument Drew Silver into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument ends turn with deck: Copper(7), Duchy(3), Monument(1), Province(1), Rebuild(3), Silver(3), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyDelayed bought Province.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(5), 
+
+ROUND 11
+-------------
+RebuildMonument begins turn
+With hand: Copper,Copper,Duchy,Silver,Silver,
+  RebuildMonument Played Silver.
+    +2 Coin = 2 all together.
+  RebuildMonument Played Silver.
+    +2 Coin = 4 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 5 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 6 all together.
+  RebuildMonument bought Duchy.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument reshuffled
+  RebuildMonument Drew Duchy into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument ends turn with deck: Copper(7), Duchy(4), Monument(1), Province(1), Rebuild(3), Silver(3), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Copper,Copper,Gold,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyDelayed bought Gold.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(5), 
+
+ROUND 12
+-------------
+RebuildMonument begins turn
+With hand: Copper,Copper,Copper,Copper,Duchy,
+  RebuildMonument Played Copper.
+    +1 Coin = 1 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 2 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 3 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 4 all together.
+  RebuildMonument bought Monument.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Silver into hand.
+  RebuildMonument Drew Province into hand.
+  RebuildMonument Drew Rebuild into hand.
+  RebuildMonument ends turn with deck: Copper(7), Duchy(4), Monument(2), Province(1), Rebuild(3), Silver(3), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyDelayed bought Province.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed reshuffled
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(5), Province(2), Silver(5), 
+
+ROUND 13
+-------------
+RebuildMonument begins turn
+With hand: Copper,Copper,Province,Rebuild,Silver,
+  RebuildMonument Played Rebuild.
+    +1 Actions = 1 all together.
+    RebuildMonument named Province.
+      RebuildMonument Revealed Rebuild.
+      RebuildMonument Revealed Silver.
+      RebuildMonument Revealed Copper.
+      RebuildMonument Revealed Duchy.
+      RebuildMonument Discarded Rebuild.
+      RebuildMonument Discarded Silver.
+      RebuildMonument Discarded Copper.
+    RebuildMonument trashed Duchy.
+    RebuildMonument gained Province.
+  RebuildMonument Played Silver.
+    +2 Coin = 2 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 3 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 4 all together.
+  RebuildMonument bought Monument.
+  RebuildMonument Drew Duchy into hand.
+  RebuildMonument Drew Rebuild into hand.
+  RebuildMonument Drew Duchy into hand.
+  RebuildMonument Drew Silver into hand.
+  RebuildMonument Drew Monument into hand.
+  RebuildMonument ends turn with deck: Copper(7), Duchy(3), Monument(3), Province(2), Rebuild(3), Silver(3), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Estate,Gold,Gold,Silver,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyDelayed bought Province.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Province into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed Drew Estate into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(5), Province(3), Silver(5), 
+
+ROUND 14
+-------------
+RebuildMonument begins turn
+With hand: Duchy,Duchy,Monument,Rebuild,Silver,
+  RebuildMonument Played Rebuild.
+    +1 Actions = 1 all together.
+    RebuildMonument named Province.
+      RebuildMonument reshuffled
+      RebuildMonument Revealed Silver.
+      RebuildMonument Revealed Rebuild.
+      RebuildMonument Revealed Duchy.
+      RebuildMonument Discarded Silver.
+      RebuildMonument Discarded Rebuild.
+    RebuildMonument trashed Duchy.
+    RebuildMonument gained Province.
+  RebuildMonument Played Monument.
+    +2 Coin = 2 all together.
+  RebuildMonument Played Silver.
+    +2 Coin = 4 all together.
+  RebuildMonument bought Estate.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Rebuild into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument Drew Copper into hand.
+  RebuildMonument ends turn with deck: Copper(7), Duchy(2), Estate(1), Monument(3), Province(3), Rebuild(3), Silver(3), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Estate,Estate,Province,
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyDelayed bought Estate.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(4), Gold(5), Province(3), Silver(5), 
+
+ROUND 15
+-------------
+RebuildMonument begins turn
+With hand: Copper,Copper,Copper,Copper,Rebuild,
+  RebuildMonument Played Rebuild.
+    +1 Actions = 1 all together.
+    RebuildMonument named Province.
+      RebuildMonument Revealed Copper.
+      RebuildMonument Revealed Silver.
+      RebuildMonument Revealed Copper.
+      RebuildMonument Revealed Copper.
+      RebuildMonument Revealed Province.
+      RebuildMonument Revealed Monument.
+      RebuildMonument Revealed Monument.
+      RebuildMonument Revealed Province.
+      RebuildMonument reshuffled
+      RebuildMonument Revealed Duchy.
+      RebuildMonument Discarded Copper.
+      RebuildMonument Discarded Silver.
+      RebuildMonument Discarded Province.
+      RebuildMonument Discarded Monument.
+      RebuildMonument Discarded Monument.
+      RebuildMonument Discarded Province.
+      RebuildMonument Discarded Copper.
+      RebuildMonument Discarded Copper.
+    RebuildMonument trashed Duchy.
+    RebuildMonument gained Province.
+  RebuildMonument Played Copper.
+    +1 Coin = 1 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 2 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 3 all together.
+  RebuildMonument Played Copper.
+    +1 Coin = 4 all together.
+  RebuildMonument bought Estate.
+  RebuildMonument Drew Silver into hand.
+  RebuildMonument Drew Duchy into hand.
+  RebuildMonument Drew Rebuild into hand.
+  RebuildMonument Drew Monument into hand.
+  RebuildMonument Drew Province into hand.
+  RebuildMonument ends turn with deck: Copper(7), Duchy(1), Estate(2), Monument(3), Province(4), Rebuild(3), Silver(3), 
+
+BigMoneyDelayed begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoneyDelayed Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDelayed Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyDelayed Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyDelayed bought Province.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Silver into hand.
+  BigMoneyDelayed Drew Province into hand.
+  BigMoneyDelayed Drew Gold into hand.
+  BigMoneyDelayed Drew Copper into hand.
+  BigMoneyDelayed ends turn with deck: Copper(7), Estate(4), Gold(5), Province(4), Silver(5), 
+
+Game ended in 15 turns.
+RebuildMonument Won!
+RebuildMonument total score: 33
+  Copper(7), Duchy(1), Estate(2), Monument(3), Province(4), Rebuild(3), Silver(3), 
+BigMoneyDelayed total score: 28
+  Copper(7), Estate(4), Gold(5), Province(4), Silver(5), 
+Trash contains: Duchy(4), Estate(3), 
+
+RebuildMonument GainSequence is:
+  Monument, Silver, Rebuild, Rebuild, Duchy, 
+  Silver, Rebuild, Duchy, Silver, Duchy, 
+  Duchy, Province, Duchy, Monument, Province, 
+  Monument, Province, Estate, Province, Estate, 
+
+BigMoneyDelayed GainSequence is:
+  Silver, Silver, Silver, Silver, Gold, 
+  Silver, Gold, Gold, Gold, Province, 
+  Gold, Province, Province, Estate, Province, 
+
