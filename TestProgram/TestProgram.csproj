@@ -49,6 +49,7 @@
     <Compile Include="Strategies\LookoutSalvagerLibraryHighwayFestival.cs" />
     <Compile Include="Strategies\LookoutTraderNobles.cs" />
     <Compile Include="Strategies\RatsWanderingMinstrelWatchtowerArmory.cs" />
+    <Compile Include="Strategies\RebuildAdvanced.cs" />
     <Compile Include="StrategyOptimizer\CardAcceptanceDescription.cs" />
     <Compile Include="CardPickByBuilderOrder.cs" />
     <Compile Include="CardPickByPriority.cs" />
