@@ -33,7 +33,7 @@ namespace Program
             {
                 var highPriority = new CardPickByPriority(
                     CardAcceptance.For<CardTypes.Province>(),
-                    CardAcceptance.For<CardTypes.IllGottenGains>(),
+                    CardAcceptance.For<CardTypes.IllGottenGains>(Default.ShouldGainIllGottenGains),
                     CardAcceptance.For<CardTypes.Gold>(gameState => CountOfPile<CardTypes.Province>(gameState) >= 6),
                     CardAcceptance.For<CardTypes.Duchy>(),
                     CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2));                    
@@ -47,7 +47,7 @@ namespace Program
                            CardAcceptance.For<CardTypes.Copper>());
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
-            }                        
+            }            
         }
 
         public static class Illgottengains
@@ -73,7 +73,7 @@ namespace Program
             {
                 var highPriority = new CardPickByPriority(
                     CardAcceptance.For<CardTypes.Province>(),
-                    CardAcceptance.For<CardTypes.IllGottenGains>(),
+                    CardAcceptance.For<CardTypes.IllGottenGains>(Default.ShouldGainIllGottenGains),
                     CardAcceptance.For<CardTypes.Gold>(gameState => CountOfPile<CardTypes.Province>(gameState) >= 6),
                     CardAcceptance.For<CardTypes.Duchy>(),
                     CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2));

@@ -261,6 +261,14 @@ namespace Program
                 gameState,
                 card => acceptableCard(card) && gameState.GetPile(card).Any());
 
+            if (result == null &&
+                acceptableCard(Strategies.Example<CardTypes.Copper>.Card) &&
+                Strategies.CardBeingPlayedIs<CardTypes.IllGottenGains>(gameState))
+            {
+                if (ShouldGainCopper(gameState, this.purchaseOrder))
+                    result = typeof(CardTypes.Copper);
+            }
+
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null && !isOptional)
             {
@@ -274,6 +282,33 @@ namespace Program
             }
 
             return result;
+        }
+
+        private static bool ShouldGainCopper(GameState gameState, ICardPicker gainOrder)
+        {
+            PlayerState currentPlayer = gameState.players.CurrentPlayer;
+
+            int minValue = gameState.players.CurrentPlayer.ExpectedCoinValueAtEndOfTurn;
+            int maxValue = minValue + Strategies.CountInHand<CardTypes.IllGottenGains>(gameState);
+
+            if (maxValue == minValue)
+                return false;
+
+            CardPredicate shouldGainCard = delegate(Card card)
+            {
+                int currentCardCost = card.CurrentCoinCost(currentPlayer);
+
+                return currentCardCost >= minValue &&
+                        currentCardCost <= maxValue;
+            };
+
+            Type cardType = gainOrder.GetPreferredCard(gameState, shouldGainCard);
+            if (cardType == null)
+                return false;
+
+            int coppersToGain = PlayerAction.CostOfCard(cardType, gameState) - minValue;
+
+            return (coppersToGain > 0);
         }
 
         struct CompareCardByFirstToGain
@@ -331,7 +366,7 @@ namespace Program
 
         public int GetCoinAmountToSpend(GameState gameState, int numberOfGains, int minCoins, int maxCoins)
         {
-            PlayerState currentPlayer = gameState.players.CurrentPlayer;            
+            PlayerState currentPlayer = gameState.players.CurrentPlayer;
             int availableCoins = maxCoins;
             int coinTokensRemaining = currentPlayer.AvailableCoinTokens;
 
@@ -369,7 +404,7 @@ namespace Program
             return result;
         }    
     
-        private static int CostOfCard(Type cardType, GameState gameState)
+        public static int CostOfCard(Type cardType, GameState gameState)
         {
             return gameState.GetPile(cardType).ProtoTypeCard.CurrentCoinCost(gameState.players.CurrentPlayer);
         }

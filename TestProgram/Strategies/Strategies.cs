@@ -63,7 +63,7 @@ namespace Program
             return Example<T>.Card.CurrentCoinCost(gameState.players.CurrentPlayer);
         }
 
-        static class Example<T>
+        public static class Example<T>
             where T: Card, new()
         {
             static public readonly T Card = new T();
@@ -112,6 +112,11 @@ namespace Program
             }
 
             return result;
+        }
+
+        private static int PlayersPointLead(GameState gameState)
+        {
+            return gameState.players.CurrentPlayer.TotalScore() - gameState.players.OtherPlayers.First().TotalScore();
         }
 
         private static GameStatePredicate HasCardInHand<T>()
@@ -247,6 +252,11 @@ namespace Program
             public static bool ShouldBuyProvinces(GameState gameState)
             {
                 return CountAllOwned<CardTypes.Gold>(gameState) > 2;                
+            }
+
+            public static bool ShouldGainIllGottenGains(GameState gameState)
+            {
+                return CountOfPile<CardTypes.Curse>(gameState) > 0;
             }
 
             public static bool ShouldPlaySalvager(ICardPicker trashOrder, GameState gameState)

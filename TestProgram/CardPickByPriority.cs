@@ -12,7 +12,7 @@ namespace Program
 
         public CardPickByPriority(params CardAcceptance[] cardAcceptances)
         {
-            this.cardAcceptances = cardAcceptances;
+            this.cardAcceptances = cardAcceptances.Where( acceptance => acceptance.card != null).ToArray();
         }
 
         public int AmountWillingtoOverPayFor(Card card, GameState gameState)
