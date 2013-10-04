@@ -26,7 +26,8 @@ namespace Dominion
             IGameLog gameLog,
             IPlayerAction[] players,
             GameConfig gameConfig,
-            Random random)
+            Random random,
+            IEnumerable<CardCountPair>[] startingDeckPerPlayer = null)
         {
             int playerCount = players.Length;
             this.gameLog = gameLog;
@@ -37,16 +38,20 @@ namespace Dominion
             this.pileEmbargoTokenCount = new MapPileOfCardsToProperty<int>(this.supplyPiles);
             this.trash = new BagOfCards();
 
-            this.GainStartingCards(gameConfig.StartingDeck);            
+            if (startingDeckPerPlayer == null)
+                startingDeckPerPlayer = gameConfig.StartingDecks(players.Length);
+
+            this.GainStartingCards(startingDeckPerPlayer);
 
             this.players.AllPlayersDrawInitialCards();         
         }
         
-        private void GainStartingCards(IEnumerable<CardCountPair> pairs)
+        private void GainStartingCards(IEnumerable<CardCountPair>[] pairsPerPlayer)
         {
-            foreach (PlayerState player in this.players.AllPlayers)
+            for (int playerIndex = 0; playerIndex < this.players.PlayerCount; ++playerIndex)
             {
-                foreach (CardCountPair pair in pairs)
+                PlayerState player = this.players[playerIndex];
+                foreach (CardCountPair pair in pairsPerPlayer[playerIndex])
                 {
                     if (pair.Card.isShelter)
                     {
@@ -57,7 +62,7 @@ namespace Dominion
                         player.GainCardsFromSupply(this, pair.Card.GetType(), pair.Count);
                     }
                 }
-            }
+            }                                        
         }
 
         private static PileOfCards CreateRuins(int ruinsCount, Random random)

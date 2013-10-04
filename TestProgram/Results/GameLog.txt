@@ -1,1083 +1,379 @@
-RatsWanderingMinstrelWatchtowerArmory gained Copper.
-RatsWanderingMinstrelWatchtowerArmory gained Copper.
-RatsWanderingMinstrelWatchtowerArmory gained Copper.
-RatsWanderingMinstrelWatchtowerArmory gained Copper.
-RatsWanderingMinstrelWatchtowerArmory gained Copper.
-RatsWanderingMinstrelWatchtowerArmory gained Copper.
-RatsWanderingMinstrelWatchtowerArmory gained Copper.
-RatsWanderingMinstrelWatchtowerArmory gained Estate.
-RatsWanderingMinstrelWatchtowerArmory gained Estate.
-RatsWanderingMinstrelWatchtowerArmory gained Estate.
-RebuildMonument gained Copper.
-RebuildMonument gained Copper.
-RebuildMonument gained Copper.
-RebuildMonument gained Copper.
-RebuildMonument gained Copper.
-RebuildMonument gained Copper.
-RebuildMonument gained Copper.
-RebuildMonument gained Estate.
-RebuildMonument gained Estate.
-RebuildMonument gained Estate.
-RatsWanderingMinstrelWatchtowerArmory reshuffled
-RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-RatsWanderingMinstrelWatchtowerArmory Drew Estate into hand.
-RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-RebuildMonument reshuffled
-RebuildMonument Drew Estate into hand.
-RebuildMonument Drew Copper into hand.
-RebuildMonument Drew Copper into hand.
-RebuildMonument Drew Copper into hand.
-RebuildMonument Drew Estate into hand.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Estate.
+RebuildAdvanced gained Silver.
+RebuildAdvanced gained Silver.
+RebuildAdvanced gained Silver.
+RebuildAdvanced gained Silver.
+RebuildAdvanced gained Silver.
+RebuildAdvanced gained Gold.
+RebuildAdvanced gained Gold.
+RebuildAdvanced gained Rebuild.
+RebuildAdvanced gained Rebuild.
+RebuildAdvanced gained Duchy.
+RebuildAdvanced gained Duchy.
+RebuildAdvanced gained Duchy.
+RebuildAdvanced gained Duchy.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Silver.
+RebuildAdvanced gained Silver.
+RebuildAdvanced gained Silver.
+RebuildAdvanced gained Silver.
+RebuildAdvanced gained Silver.
+RebuildAdvanced gained Gold.
+RebuildAdvanced gained Gold.
+RebuildAdvanced gained Rebuild.
+RebuildAdvanced gained Rebuild.
+RebuildAdvanced gained Duchy.
+RebuildAdvanced gained Duchy.
+RebuildAdvanced gained Duchy.
+RebuildAdvanced gained Duchy.
+RebuildAdvanced reshuffled
+RebuildAdvanced Drew Duchy into hand.
+RebuildAdvanced Drew Copper into hand.
+RebuildAdvanced Drew Silver into hand.
+RebuildAdvanced Drew Silver into hand.
+RebuildAdvanced Drew Gold into hand.
+RebuildAdvanced reshuffled
+RebuildAdvanced Drew Gold into hand.
+RebuildAdvanced Drew Copper into hand.
+RebuildAdvanced Drew Silver into hand.
+RebuildAdvanced Drew Copper into hand.
+RebuildAdvanced Drew Duchy into hand.
 ROUND 1
 -------------
-RatsWanderingMinstrelWatchtowerArmory begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 1 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 2 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 3 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 4 all together.
-  RatsWanderingMinstrelWatchtowerArmory bought Armory.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Estate into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Estate into hand.
-  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Copper(7), Estate(3), 
+RebuildAdvanced begins turn
+With hand: Copper,Duchy,Gold,Silver,Silver,
+  RebuildAdvanced Played Gold.
+    +3 Coin = 3 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 5 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 7 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 8 all together.
+  RebuildAdvanced bought Province.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(4), Estate(1), Gold(2), Province(1), Rebuild(2), Silver(5), 
 
-RebuildMonument begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  RebuildMonument Played Copper.
-    +1 Coin = 1 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 2 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 3 all together.
-  RebuildMonument bought Silver.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument ends turn with deck: Copper(7), Estate(3), Silver(1), 
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Duchy,Gold,Silver,
+  RebuildAdvanced Played Gold.
+    +3 Coin = 3 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 5 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 6 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 7 all together.
+  RebuildAdvanced bought Gold.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(4), Gold(3), Rebuild(2), Silver(5), 
 
 ROUND 2
 -------------
-RatsWanderingMinstrelWatchtowerArmory begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 1 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 2 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 3 all together.
-  RatsWanderingMinstrelWatchtowerArmory bought Watchtower.
-  RatsWanderingMinstrelWatchtowerArmory reshuffled
-  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Copper(7), Estate(3), Watchtower(1), 
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  RebuildAdvanced Played Silver.
+    +2 Coin = 2 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 4 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 5 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 6 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 7 all together.
+  RebuildAdvanced bought Gold.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(4), Estate(1), Gold(3), Province(1), Rebuild(2), Silver(5), 
 
-RebuildMonument begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  RebuildMonument Played Copper.
-    +1 Coin = 1 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 2 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 3 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 4 all together.
-  RebuildMonument bought Monument.
-  RebuildMonument reshuffled
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(1), Silver(1), 
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Silver,Silver,Silver,
+  RebuildAdvanced Played Silver.
+    +2 Coin = 2 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 4 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 6 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 7 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 8 all together.
+  RebuildAdvanced bought Province.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Rebuild into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Gold into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(4), Gold(3), Province(1), Rebuild(2), Silver(5), 
 
 ROUND 3
 -------------
-RatsWanderingMinstrelWatchtowerArmory begins turn
-With hand: Armory,Copper,Copper,Copper,Watchtower,
-  RatsWanderingMinstrelWatchtowerArmory Played Armory.
-    RatsWanderingMinstrelWatchtowerArmory gained Rats.
-      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-      ... and placed card on top of deck
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 1 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 2 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Duchy,Duchy,Silver,
+  RebuildAdvanced Played Silver.
+    +2 Coin = 2 all together.
+  RebuildAdvanced Played Copper.
     +1 Coin = 3 all together.
-  RatsWanderingMinstrelWatchtowerArmory bought Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-    ... and placed card on top of deck
-  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Estate into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Estate into hand.
-  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Copper(7), Estate(3), Rats(1), Watchtower(2), 
-
-RebuildMonument begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  RebuildMonument Played Copper.
-    +1 Coin = 1 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 2 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 3 all together.
-  RebuildMonument Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 4 all together.
-  RebuildMonument bought Monument.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument Drew Monument into hand.
-  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(2), Silver(1), 
+  RebuildAdvanced bought Silver.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Estate into hand.
+  RebuildAdvanced Drew Gold into hand.
+  RebuildAdvanced Drew Rebuild into hand.
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(4), Estate(1), Gold(3), Province(1), Rebuild(2), Silver(6), 
+
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Gold,Rebuild,Silver,
+  RebuildAdvanced Played Rebuild.
+    +1 Actions = 1 all together.
+    RebuildAdvanced named Province.
+      RebuildAdvanced Revealed Rebuild.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Duchy.
+      RebuildAdvanced Discarded Rebuild.
+      RebuildAdvanced Discarded Copper.
+    RebuildAdvanced trashed Duchy.
+    RebuildAdvanced gained Province.
+  RebuildAdvanced Played Gold.
+    +3 Coin = 3 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 5 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 6 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 7 all together.
+  RebuildAdvanced bought Gold.
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced reshuffled
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Province into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(3), Gold(4), Province(2), Rebuild(2), Silver(5), 
 
 ROUND 4
 -------------
-RatsWanderingMinstrelWatchtowerArmory begins turn
-With hand: Copper,Estate,Estate,Rats,Watchtower,
-  RatsWanderingMinstrelWatchtowerArmory Played Rats.
+RebuildAdvanced begins turn
+With hand: Copper,Duchy,Estate,Gold,Rebuild,
+  RebuildAdvanced Played Rebuild.
     +1 Actions = 1 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-    RatsWanderingMinstrelWatchtowerArmory gained Rats.
-      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-      RatsWanderingMinstrelWatchtowerArmory trashed Rats.
-        RatsWanderingMinstrelWatchtowerArmory Drew Estate into hand.
-    RatsWanderingMinstrelWatchtowerArmory trashed Estate.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 1 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 2 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 3 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
+    RebuildAdvanced named Province.
+      RebuildAdvanced Revealed Rebuild.
+      RebuildAdvanced reshuffled
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Province.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Duchy.
+      RebuildAdvanced Discarded Rebuild.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Silver.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Silver.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Province.
+    RebuildAdvanced trashed Duchy.
+    RebuildAdvanced gained Province.
+  RebuildAdvanced Played Gold.
+    +3 Coin = 3 all together.
+  RebuildAdvanced Played Copper.
     +1 Coin = 4 all together.
-  RatsWanderingMinstrelWatchtowerArmory bought WanderingMinstrell.
-  RatsWanderingMinstrelWatchtowerArmory reshuffled
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
-  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Copper(7), Estate(2), Rats(1), WanderingMinstrell(1), Watchtower(2), 
+  RebuildAdvanced bought Silver.
+  RebuildAdvanced Drew Gold into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(3), Estate(1), Gold(3), Province(2), Rebuild(2), Silver(7), 
 
-RebuildMonument begins turn
-With hand: Copper,Copper,Estate,Estate,Monument,
-  RebuildMonument Played Monument.
+RebuildAdvanced begins turn
+With hand: Copper,Duchy,Duchy,Province,Silver,
+  RebuildAdvanced Played Silver.
     +2 Coin = 2 all together.
-  RebuildMonument Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 3 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 4 all together.
-  RebuildMonument bought Monument.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Silver into hand.
-  RebuildMonument reshuffled
-  RebuildMonument Drew Monument into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Monument into hand.
-  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(3), Silver(1), 
+  RebuildAdvanced bought Silver.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Gold into hand.
+  RebuildAdvanced Drew Rebuild into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Province into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(3), Gold(4), Province(2), Rebuild(2), Silver(6), 
 
 ROUND 5
 -------------
-RatsWanderingMinstrelWatchtowerArmory begins turn
-With hand: Armory,Copper,Copper,WanderingMinstrell,Watchtower,
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Estate.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Estate.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew Estate into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played Armory.
-    RatsWanderingMinstrelWatchtowerArmory gained WanderingMinstrell.
-      ... and placed card on top of deck
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 1 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 2 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 3 all together.
-  RatsWanderingMinstrelWatchtowerArmory bought Watchtower.
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-  RatsWanderingMinstrelWatchtowerArmory reshuffled
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Copper(7), Estate(2), Rats(1), WanderingMinstrell(2), Watchtower(3), 
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  RebuildAdvanced Played Gold.
+    +3 Coin = 3 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 5 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 7 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 8 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 9 all together.
+  RebuildAdvanced bought Province.
+  RebuildAdvanced Drew Gold into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(3), Estate(1), Gold(3), Province(3), Rebuild(2), Silver(7), 
 
-RebuildMonument begins turn
-With hand: Copper,Copper,Monument,Monument,Silver,
-  RebuildMonument Played Monument.
-    +2 Coin = 2 all together.
-  RebuildMonument Played Silver.
-    +2 Coin = 4 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 5 all together.
-  RebuildMonument Played Copper.
+RebuildAdvanced begins turn
+With hand: Copper,Gold,Province,Rebuild,Silver,
+  RebuildAdvanced Played Rebuild.
+    +1 Actions = 1 all together.
+    RebuildAdvanced named Province.
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Rebuild.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Gold.
+      RebuildAdvanced Revealed Gold.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Duchy.
+      RebuildAdvanced Discarded Silver.
+      RebuildAdvanced Discarded Silver.
+      RebuildAdvanced Discarded Silver.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Gold.
+      RebuildAdvanced Discarded Gold.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Rebuild.
+    RebuildAdvanced trashed Duchy.
+    RebuildAdvanced gained Province.
+  RebuildAdvanced Played Gold.
+    +3 Coin = 3 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 5 all together.
+  RebuildAdvanced Played Copper.
     +1 Coin = 6 all together.
-  RebuildMonument bought Rebuild.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Monument into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(3), Rebuild(1), Silver(1), 
+  RebuildAdvanced bought Estate.
+  RebuildAdvanced Drew Gold into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced reshuffled
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(2), Estate(1), Gold(4), Province(3), Rebuild(2), Silver(6), 
 
 ROUND 6
 -------------
-RatsWanderingMinstrelWatchtowerArmory begins turn
-With hand: Copper,Copper,Copper,WanderingMinstrell,Watchtower,
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Estate into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Armory.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played Armory.
-    RatsWanderingMinstrelWatchtowerArmory gained WanderingMinstrell.
-      ... and placed card on top of deck
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 1 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 2 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 3 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 4 all together.
-  RatsWanderingMinstrelWatchtowerArmory bought WanderingMinstrell.
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Estate into hand.
-  RatsWanderingMinstrelWatchtowerArmory reshuffled
-  RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
-  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Copper(7), Estate(2), Rats(1), WanderingMinstrell(4), Watchtower(3), 
+RebuildAdvanced begins turn
+With hand: Copper,Duchy,Duchy,Gold,Silver,
+  RebuildAdvanced Played Gold.
+    +3 Coin = 3 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 5 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 6 all together.
+  RebuildAdvanced bought Estate.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced reshuffled
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Estate into hand.
+  RebuildAdvanced Drew Rebuild into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(3), Estate(2), Gold(3), Province(3), Rebuild(2), Silver(7), 
 
-RebuildMonument begins turn
-With hand: Copper,Copper,Copper,Estate,Monument,
-  RebuildMonument Played Monument.
-    +2 Coin = 2 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 3 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 4 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 5 all together.
-  RebuildMonument bought Rebuild.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument reshuffled
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(3), Rebuild(2), Silver(1), 
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  RebuildAdvanced Played Gold.
+    +3 Coin = 3 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 5 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 6 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 7 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 8 all together.
+  RebuildAdvanced bought Province.
+  RebuildAdvanced Drew Gold into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Gold into hand.
+  RebuildAdvanced Drew Province into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(2), Estate(1), Gold(4), Province(4), Rebuild(2), Silver(6), 
 
 ROUND 7
 -------------
-RatsWanderingMinstrelWatchtowerArmory begins turn
-With hand: Armory,Estate,Rats,WanderingMinstrell,Watchtower,
-  RatsWanderingMinstrelWatchtowerArmory Played Rats.
+RebuildAdvanced begins turn
+With hand: Estate,Rebuild,Silver,Silver,Silver,
+  RebuildAdvanced Played Rebuild.
     +1 Actions = 1 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-    RatsWanderingMinstrelWatchtowerArmory gained Rats.
-      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-      RatsWanderingMinstrelWatchtowerArmory trashed Rats.
-        RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory trashed Estate.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Estate.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Estate.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 3 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory reshuffled
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Armory.
-    RatsWanderingMinstrelWatchtowerArmory gained WanderingMinstrell.
-      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-      ... and placed card on top of deck
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Estate into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory reshuffled
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 3 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-    RatsWanderingMinstrelWatchtowerArmory reshuffled
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory reshuffled
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 1 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 2 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 3 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 4 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 5 all together.
-  RatsWanderingMinstrelWatchtowerArmory bought Bridge.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory reshuffled
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Bridge(1), Copper(7), Estate(1), Rats(1), WanderingMinstrell(5), Watchtower(3), 
-
-RebuildMonument begins turn
-With hand: Copper,Copper,Estate,Estate,Rebuild,
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Duchy.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Silver.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Monument.
-      RebuildMonument Revealed Monument.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Monument.
-      RebuildMonument Revealed Estate.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Monument.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Monument.
-      RebuildMonument Discarded Monument.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Silver.
-    RebuildMonument trashed Estate.
-    RebuildMonument gained Duchy.
-  RebuildMonument Played Copper.
-    +1 Coin = 1 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 2 all together.
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument reshuffled
-  RebuildMonument Drew Monument into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument ends turn with deck: Copper(7), Duchy(1), Estate(2), Monument(3), Rebuild(2), Silver(1), 
-
-ROUND 8
--------------
-RatsWanderingMinstrelWatchtowerArmory begins turn
-With hand: Copper,Copper,Copper,WanderingMinstrell,WanderingMinstrell,
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Armory.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Armory.
-    RatsWanderingMinstrelWatchtowerArmory gained WanderingMinstrell.
-      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-      ... and placed card on top of deck
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 1 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 2 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 3 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 4 all together.
-  RatsWanderingMinstrelWatchtowerArmory bought Bridge.
-  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Estate into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Bridge(2), Copper(7), Estate(1), Rats(1), WanderingMinstrell(6), Watchtower(3), 
-
-RebuildMonument begins turn
-With hand: Copper,Copper,Estate,Monument,Rebuild,
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Duchy.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Monument.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Duchy.
-      RebuildMonument Revealed Rebuild.
-      RebuildMonument Revealed Silver.
-      RebuildMonument Revealed Monument.
-      RebuildMonument Revealed Estate.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Monument.
-      RebuildMonument Discarded Monument.
-      RebuildMonument Discarded Silver.
-      RebuildMonument Discarded Rebuild.
-      RebuildMonument Discarded Duchy.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Copper.
-    RebuildMonument trashed Estate.
-    RebuildMonument gained Duchy.
-  RebuildMonument Played Monument.
+    RebuildAdvanced named Province.
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Duchy.
+      RebuildAdvanced Discarded Silver.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Silver.
+      RebuildAdvanced Discarded Copper.
+    RebuildAdvanced trashed Duchy.
+    RebuildAdvanced gained Province.
+  RebuildAdvanced Played Silver.
     +2 Coin = 2 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 3 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 4 all together.
-  RebuildMonument bought Silver.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument reshuffled
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument ends turn with deck: Copper(7), Duchy(2), Estate(1), Monument(3), Rebuild(2), Silver(2), 
-
-ROUND 9
--------------
-RatsWanderingMinstrelWatchtowerArmory begins turn
-With hand: Bridge,Estate,Rats,WanderingMinstrell,Watchtower,
-  RatsWanderingMinstrelWatchtowerArmory Played Rats.
-    +1 Actions = 1 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory gained Rats.
-      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-      RatsWanderingMinstrelWatchtowerArmory trashed Rats.
-        RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-    RatsWanderingMinstrelWatchtowerArmory trashed Estate.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory reshuffled
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 3 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Armory.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
-    +1 Buys = 2 all together.
-    +1 Coin = 1 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Armory.
-    RatsWanderingMinstrelWatchtowerArmory gained WanderingMinstrell.
-      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-      ... and placed card on top of deck
-  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
-    +1 Buys = 3 all together.
-    +1 Coin = 2 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 3 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 4 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 5 all together.
-  RatsWanderingMinstrelWatchtowerArmory bought Bridge.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-    ... and placed card on top of deck
-  RatsWanderingMinstrelWatchtowerArmory bought WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-    ... and placed card on top of deck
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Bridge(3), Copper(7), Rats(1), WanderingMinstrell(8), Watchtower(3), 
-
-RebuildMonument begins turn
-With hand: Copper,Copper,Copper,Rebuild,Rebuild,
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Duchy.
-      RebuildMonument Revealed Silver.
-      RebuildMonument Revealed Duchy.
-      RebuildMonument Revealed Duchy.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Monument.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Estate.
-      RebuildMonument Discarded Silver.
-      RebuildMonument Discarded Duchy.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Monument.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Duchy.
-    RebuildMonument trashed Estate.
-    RebuildMonument gained Duchy.
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Province.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Monument.
-      RebuildMonument Revealed Monument.
-      RebuildMonument Revealed Silver.
-      RebuildMonument reshuffled
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Monument.
-      RebuildMonument Revealed Duchy.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Monument.
-      RebuildMonument Discarded Monument.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Silver.
-      RebuildMonument Discarded Monument.
-    RebuildMonument trashed Duchy.
-    RebuildMonument gained Province.
-  RebuildMonument Played Copper.
-    +1 Coin = 1 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 2 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 3 all together.
-  RebuildMonument bought Silver.
-  RebuildMonument Drew Silver into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Duchy into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Duchy into hand.
-  RebuildMonument ends turn with deck: Copper(7), Duchy(2), Monument(3), Province(1), Rebuild(2), Silver(3), 
-
-ROUND 10
--------------
-RatsWanderingMinstrelWatchtowerArmory begins turn
-With hand: Bridge,WanderingMinstrell,WanderingMinstrell,WanderingMinstrell,WanderingMinstrell,
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory reshuffled
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 3 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
-    +1 Buys = 2 all together.
-    +1 Coin = 1 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Rats.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 3 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-  RatsWanderingMinstrelWatchtowerArmory Played Armory.
-    RatsWanderingMinstrelWatchtowerArmory gained Bridge.
-      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-      ... and placed card on top of deck
-  RatsWanderingMinstrelWatchtowerArmory Played Rats.
-    +1 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
-    RatsWanderingMinstrelWatchtowerArmory gained Rats.
-      RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-      RatsWanderingMinstrelWatchtowerArmory trashed Rats.
-        RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory trashed Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 3 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
-    RatsWanderingMinstrelWatchtowerArmory reshuffled
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
-    +1 Buys = 3 all together.
-    +1 Coin = 2 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory reshuffled
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 3 all together.
-    RatsWanderingMinstrelWatchtowerArmory reshuffled
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
-    +1 Buys = 4 all together.
-    +1 Coin = 3 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
-    +1 Buys = 5 all together.
-    +1 Coin = 4 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 5 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 6 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 7 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 8 all together.
-  RatsWanderingMinstrelWatchtowerArmory bought Province.
-  RatsWanderingMinstrelWatchtowerArmory bought Province.
-  RatsWanderingMinstrelWatchtowerArmory bought WanderingMinstrell.
-  RatsWanderingMinstrelWatchtowerArmory bought Bridge.
-  RatsWanderingMinstrelWatchtowerArmory bought WanderingMinstrell.
-  RatsWanderingMinstrelWatchtowerArmory reshuffled
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Bridge(5), Copper(6), Province(2), Rats(1), WanderingMinstrell(10), Watchtower(3), 
-
-RebuildMonument begins turn
-With hand: Copper,Copper,Duchy,Duchy,Silver,
-  RebuildMonument Played Silver.
-    +2 Coin = 2 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 3 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 4 all together.
-  RebuildMonument bought Silver.
-  RebuildMonument reshuffled
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument Drew Monument into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument ends turn with deck: Copper(7), Duchy(2), Monument(3), Province(1), Rebuild(2), Silver(4), 
-
-ROUND 11
--------------
-RatsWanderingMinstrelWatchtowerArmory begins turn
-With hand: Copper,Copper,Copper,Rats,WanderingMinstrell,
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 3 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 4 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Armory.
-  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
-    +1 Buys = 2 all together.
-    +1 Coin = 1 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 2 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 3 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 4 all together.
-  RatsWanderingMinstrelWatchtowerArmory bought Bridge.
-  RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Bridge(6), Copper(6), Province(2), Rats(1), WanderingMinstrell(10), Watchtower(3), 
-
-RebuildMonument begins turn
-With hand: Copper,Copper,Monument,Rebuild,Rebuild,
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Province.
-      RebuildMonument Revealed Duchy.
-    RebuildMonument trashed Duchy.
-    RebuildMonument gained Province.
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Province.
-      RebuildMonument Revealed Silver.
-      RebuildMonument Revealed Silver.
-      RebuildMonument Revealed Monument.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Province.
-      RebuildMonument Revealed Silver.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Duchy.
-      RebuildMonument Discarded Silver.
-      RebuildMonument Discarded Silver.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Silver.
-      RebuildMonument Discarded Province.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Monument.
-    RebuildMonument trashed Duchy.
-    RebuildMonument gained Province.
-  RebuildMonument Played Monument.
-    +2 Coin = 2 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 3 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 4 all together.
-  RebuildMonument bought Estate.
-  RebuildMonument Drew Monument into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Silver into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument ends turn with deck: Copper(7), Estate(1), Monument(3), Province(3), Rebuild(2), Silver(4), 
-
-ROUND 12
--------------
-RatsWanderingMinstrelWatchtowerArmory begins turn
-With hand: Armory,Bridge,Bridge,WanderingMinstrell,Watchtower,
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Province.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Province.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 3 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
-    +1 Buys = 2 all together.
-    +1 Coin = 1 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Province.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Province.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 3 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
-    RatsWanderingMinstrelWatchtowerArmory reshuffled
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
-    +1 Buys = 3 all together.
-    +1 Coin = 2 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Watchtower.
-    RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
-    RatsWanderingMinstrelWatchtowerArmory Drew Province into hand.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Province into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Rats.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 3 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Bridge.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
-    +1 Buys = 4 all together.
-    +1 Coin = 3 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
-    +1 Buys = 5 all together.
-    +1 Coin = 4 all together.
-  RatsWanderingMinstrelWatchtowerArmory bought Province.
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Bridge(6), Copper(6), Province(3), Rats(1), WanderingMinstrell(10), Watchtower(3), 
-
-RebuildMonument begins turn
-With hand: Copper,Copper,Copper,Monument,Silver,
-  RebuildMonument Played Monument.
-    +2 Coin = 2 all together.
-  RebuildMonument Played Silver.
+  RebuildAdvanced Played Silver.
     +2 Coin = 4 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 5 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 6 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 7 all together.
-  RebuildMonument bought Rebuild.
-  RebuildMonument reshuffled
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument Drew Monument into hand.
-  RebuildMonument Drew Silver into hand.
-  RebuildMonument Drew Monument into hand.
-  RebuildMonument ends turn with deck: Copper(7), Estate(1), Monument(3), Province(3), Rebuild(3), Silver(4), 
+  RebuildAdvanced Played Silver.
+    +2 Coin = 6 all together.
+  RebuildAdvanced bought Estate.
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced Drew Province into hand.
+  RebuildAdvanced Drew Gold into hand.
+  RebuildAdvanced Drew Province into hand.
+  RebuildAdvanced Drew Estate into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(3), Province(4), Rebuild(2), Silver(7), 
 
-ROUND 13
--------------
-RatsWanderingMinstrelWatchtowerArmory begins turn
-With hand: Bridge,Bridge,Copper,WanderingMinstrell,WanderingMinstrell,
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 2 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Copper into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory reshuffled
-    RatsWanderingMinstrelWatchtowerArmory Revealed Copper.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Discarded Copper.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 3 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Armory.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Rats.
-  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
-    +1 Buys = 2 all together.
-    +1 Coin = 1 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played WanderingMinstrell.
-    +2 Actions = 3 all together.
-    RatsWanderingMinstrelWatchtowerArmory Drew Rats into hand.
-    RatsWanderingMinstrelWatchtowerArmory Revealed WanderingMinstrell.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Armory.
-    RatsWanderingMinstrelWatchtowerArmory Revealed Watchtower.
-  RatsWanderingMinstrelWatchtowerArmory Played Bridge.
-    +1 Buys = 3 all together.
-    +1 Coin = 2 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 3 all together.
-  RatsWanderingMinstrelWatchtowerArmory Played Copper.
-    +1 Coin = 4 all together.
-  RatsWanderingMinstrelWatchtowerArmory bought Duchy.
-  RatsWanderingMinstrelWatchtowerArmory Drew WanderingMinstrell into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Watchtower into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Armory into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Bridge into hand.
-  RatsWanderingMinstrelWatchtowerArmory Drew Province into hand.
-  RatsWanderingMinstrelWatchtowerArmory ends turn with deck: Armory(1), Bridge(6), Copper(6), Duchy(1), Province(3), Rats(1), WanderingMinstrell(10), Watchtower(3), 
+Game ended in 7 turns.
+RebuildAdvanced Won!
+RebuildAdvanced total score: 33
+  Copper(7), Duchy(2), Estate(3), Gold(3), Province(4), Rebuild(2), Silver(7), 
+RebuildAdvanced total score: 31
+  Copper(7), Duchy(2), Estate(1), Gold(4), Province(4), Rebuild(2), Silver(6), 
+Trash contains: Duchy(4), 
 
-RebuildMonument begins turn
-With hand: Monument,Monument,Rebuild,Rebuild,Silver,
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Estate.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Estate.
-      RebuildMonument Revealed Monument.
-      RebuildMonument Revealed Silver.
-      RebuildMonument Revealed Province.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Estate.
-      RebuildMonument Discarded Silver.
-      RebuildMonument Discarded Monument.
-    RebuildMonument trashed Province.
-    RebuildMonument gained Province.
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Estate.
-      RebuildMonument Revealed Rebuild.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Province.
-      RebuildMonument Discarded Rebuild.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Copper.
-    RebuildMonument trashed Province.
-    RebuildMonument gained Province.
-  RebuildMonument Played Monument.
-    +2 Coin = 2 all together.
-  RebuildMonument Played Silver.
-    +2 Coin = 4 all together.
-  RebuildMonument bought Estate.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Province into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Silver into hand.
-  RebuildMonument ends turn with deck: Copper(7), Estate(2), Monument(3), Province(3), Rebuild(3), Silver(4), 
-
-Game ended in 13 turns.
-RebuildMonument Won!
-RatsWanderingMinstrelWatchtowerArmory total score: 21
-  Armory(1), Bridge(6), Copper(6), Duchy(1), Province(3), Rats(1), WanderingMinstrell(10), Watchtower(3), 
-RebuildMonument total score: 27
-  Copper(7), Estate(2), Monument(3), Province(3), Rebuild(3), Silver(4), 
-Trash contains: Copper(1), Duchy(3), Estate(6), Province(2), Rats(4), 
-
-RatsWanderingMinstrelWatchtowerArmory GainSequence is:
-  Armory, Watchtower, Rats, Watchtower, Rats, 
-  WanderingMinstrell, WanderingMinstrell, Watchtower, WanderingMinstrell, WanderingMinstrell, 
-  Rats, WanderingMinstrell, Bridge, WanderingMinstrell, Bridge, 
-  Rats, WanderingMinstrell, Bridge, WanderingMinstrell, Bridge, 
-  Rats, Province, Province, WanderingMinstrell, Bridge, 
-  WanderingMinstrell, Bridge, Province, Duchy, 
-RebuildMonument GainSequence is:
-  Silver, Monument, Monument, Monument, Rebuild, 
-  Rebuild, Duchy, Duchy, Silver, Duchy, 
-  Province, Silver, Silver, Province, Province, 
-  Estate, Rebuild, Province, Province, Estate, 
-
+RebuildAdvanced GainSequence is:
+  Province, Gold, Silver, Province, Silver, 
+  Province, Estate, Province, Estate, 
+RebuildAdvanced GainSequence is:
+  Gold, Province, Province, Gold, Silver, 
+  Province, Estate, Province, 

@@ -12,12 +12,10 @@ namespace Program
     {        
         static void Main()
         {
-            ComparePlayers(Strategies.RatsWanderingMinstrelWatchtowerArmory.Player(1), Strategies.RebuildAdvanced.Player(2));
-            ComparePlayers(Strategies.RatsWanderingMinstrelWatchtowerArmory.Player(1), Strategies.RebuildJack.Player(2));
-            ComparePlayers(Strategies.RatsWanderingMinstrelWatchtowerArmory.Player(1), Strategies.RebuildMonument.Player(2));
+            ComparePlayers(Strategies.RebuildAdvanced.Player(1), Strategies.RebuildAdvanced.Player(2), startingDeckPerPlayer: StartingDecksForRebuildWithEstateAdvantage.StartingDecks);            
             //CompareStrategyVsAllKnownStrategies(Strategies.RatsWanderingMinstrelWatchtowerArmory.Player(1));
         }
-
+        
         static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false)
         {
             var resultList = new List<System.Tuple<string, double>>();
@@ -169,6 +167,38 @@ namespace Program
                 ComparePlayers(Strategies.FollowersTest.TestPlayer(1, i), Strategies.BigMoney.Player(2), showCompactScore: true);
             }
         }
+
+        static void AssymmetricStartingDeckTest()
+        {
+            ComparePlayers(Strategies.RebuildAdvanced.Player(1), Strategies.RebuildAdvanced.Player(2), startingDeckPerPlayer: StartingDecksForRebuildWithEstateAdvantage.StartingDecks);            
+        }
+
+        class StartingDecksForRebuildWithEstateAdvantage
+            : StartingDeckBuilder
+        {
+            static new public IEnumerable<CardCountPair>[] StartingDecks
+            {
+                get
+                {
+                    return StartingDecks(
+                       StartingDeck(
+                            CardWithCount<CardTypes.Copper>(7),
+                            CardWithCount<CardTypes.Estate>(1),
+                            CardWithCount<CardTypes.Silver>(5),
+                            CardWithCount<CardTypes.Gold>(2),
+                            CardWithCount<CardTypes.Rebuild>(2),
+                            CardWithCount<CardTypes.Duchy>(4)),
+                       StartingDeck(
+                            CardWithCount<CardTypes.Copper>(7),
+                            CardWithCount<CardTypes.Silver>(5),
+                            CardWithCount<CardTypes.Gold>(2),
+                            CardWithCount<CardTypes.Rebuild>(2),
+                            CardWithCount<CardTypes.Duchy>(4))
+                            );
+                }
+            }
+        }
+
         
         static IGameLog GetGameLogForIteration(int gameCount)
         {
@@ -190,11 +220,13 @@ namespace Program
             int numberOfGames = 1000, 
             int logGameCount = 100,
             CreateGameLog createGameLog = null,
-            IEnumerable<CardCountPair> startingDeck = null)
+            IEnumerable<CardCountPair>[] startingDeckPerPlayer = null)
         {            
             PlayerAction[] players = new PlayerAction[] { player1, player2 };
             int[] winnerCount = new int[2];
             int tieCount = 0;
+
+            var swappedStartingDeckPerPlayer = SwapTwoElementArray(startingDeckPerPlayer);
 
             var countbyBucket = new CountByBucket();
              
@@ -209,19 +241,24 @@ namespace Program
                     PlayerAction startPlayer = !swappedOrder ? player1 : player2;
                     PlayerAction otherPlayer = !swappedOrder ? player2 : player1;
 
+                    IEnumerable<CardCountPair>[] startingDecksToUse = 
+                        startingDeckPerPlayer == null ? null :
+                        swappedOrder ? swappedStartingDeckPerPlayer :
+                        startingDeckPerPlayer;
+
                     Random random = new Random(gameCount);
 
                     var gameConfig = new GameConfig(
                         useShelters,                        
                         useColonyAndPlatinum: false,
-                        supplyPiles: PlayerAction.GetKingdomCards(startPlayer, otherPlayer),
-                        startingDeck : startingDeck);
+                        supplyPiles: PlayerAction.GetKingdomCards(startPlayer, otherPlayer));
 
                     GameState gameState = new GameState(
                         gameLog,
                         new PlayerAction[] { startPlayer, otherPlayer },
                         gameConfig,
-                        random);
+                        random,
+                        startingDeckPerPlayer: startingDecksToUse);
 
                     gameState.PlayGameToEnd();
 
@@ -297,6 +334,17 @@ namespace Program
             return diff;
         }
 
+        static T[] SwapTwoElementArray<T>(T[] array)
+        {
+            if (array == null)
+                return null;
+
+            T[] result = new T[2];
+            result[0] = array[1];
+            result[1] = array[0];
+            return result;
+        }
+
         static double TiePercent(int tieCount, int numberOfGames)
         {
             return tieCount / (double)numberOfGames * 100;
@@ -329,6 +377,6 @@ namespace Program
                     writer.WriteLine("{0} points:   {2}% = {1}", pair.Key, pair.Value, (double)pair.Value / this.totalCount * 100);
                 }
             }
-        }
+        }       
     }            
 }

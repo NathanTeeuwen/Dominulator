@@ -36,6 +36,20 @@ namespace Dominion
             this.kingdomPiles = supplyPiles;            
         }
 
+        public IEnumerable<CardCountPair>[] StartingDecks(int playerCount)
+        {
+            return GetUniformStartingDecks(playerCount, this.StartingDeck);            
+        }
+
+        public static IEnumerable<CardCountPair>[] GetUniformStartingDecks(int playerCount, IEnumerable<CardCountPair> startingDeck)
+        {            
+            var result = new IEnumerable<CardCountPair>[playerCount];
+            for (int i = 0; i < playerCount; ++i)
+                result[i] = startingDeck;
+
+            return result;
+        }
+
         public IEnumerable<CardCountPair> StartingDeck
         {
             get

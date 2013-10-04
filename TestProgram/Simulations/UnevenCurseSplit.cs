@@ -56,7 +56,7 @@ namespace Program.Simulations.UnevenCurseSplit
                 firstPlayerAdvantage: true,
                 numberOfGames: gameCount,
                 createGameLog: new Program.CreateGameLog(gameLogFactory.CreateGameLog),
-                startingDeck: startingCards);
+                startingDeckPerPlayer: GameConfig.GetUniformStartingDecks(2, startingCards));
 
             System.Console.WriteLine("Curses Split was Uneven {0}%", gameLogFactory.UnEvenSplitPercent);
             System.Console.WriteLine();
