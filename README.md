@@ -1,4 +1,4 @@
-Dominion
+Dominulator
 ========
 
 A dominion simulator for playing the card game of dominion.
