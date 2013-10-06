@@ -323,9 +323,8 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RequestPlayerPlayActionFromHand(gameState, card => card.Is<Cultist>(), isOptional: true);
-            // may play another cultist from hand.
-            throw new NotImplementedException();
+            // may play another cultist from hand.            
+            currentPlayer.RequestPlayerPlayActionFromHand(gameState, card => card.Is<Cultist>(), isOptional: true);            
         }
 
         public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
