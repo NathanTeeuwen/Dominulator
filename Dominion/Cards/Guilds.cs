@@ -35,6 +35,14 @@ namespace Dominion.CardTypes
         {
             currentPlayer.AddCoinTokens(1);
         }
+
+        public override void DoSpecializedSetupIfInSupply(GameState gameState)
+        {
+            foreach (PlayerState player in gameState.players.AllPlayers)
+            {
+                player.AddCoinTokens(1);
+            }
+        }
     }
 
     public class Butcher

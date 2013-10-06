@@ -41,9 +41,14 @@ namespace Dominion
             if (startingDeckPerPlayer == null)
                 startingDeckPerPlayer = gameConfig.StartingDecks(players.Length);
 
-            this.GainStartingCards(startingDeckPerPlayer);
+            this.GainStartingCards(startingDeckPerPlayer);            
 
-            this.players.AllPlayersDrawInitialCards();         
+            this.players.AllPlayersDrawInitialCards();    
+     
+            foreach (PileOfCards cardPile in this.supplyPiles)
+            {
+                cardPile.ProtoTypeCard.DoSpecializedSetupIfInSupply(this);
+            }
         }
         
         private void GainStartingCards(IEnumerable<CardCountPair>[] pairsPerPlayer)

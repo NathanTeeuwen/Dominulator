@@ -277,5 +277,10 @@ namespace Dominion
         {
             throw new Exception("Card has overpay semantics to be implemented");
         }
+
+        virtual public void DoSpecializedSetupIfInSupply(GameState gameState)
+        {
+
+        }
     }
 }
