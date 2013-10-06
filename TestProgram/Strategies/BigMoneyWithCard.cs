@@ -19,8 +19,7 @@ namespace Program
                 return new PlayerAction(
                             playerName == null ? "BigMoneyWithCard<" + typeof(T).Name + ">" : playerName,
                             playerNumber,
-                            purchaseOrder: PurchaseOrder(cardCount, afterSilverCount),                            
-                            actionOrder: ActionOrder());
+                            purchaseOrder: PurchaseOrder(cardCount, afterSilverCount));
             }
 
             public static ICardPicker PurchaseOrder(int cardCount, int afterSilverCount)
@@ -33,14 +32,7 @@ namespace Program
                            CardAcceptance.For<T>(gameState => CountAllOwned<T>(gameState) < cardCount && CountAllOwned<CardTypes.Silver>(gameState) >= afterSilverCount),
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
                            CardAcceptance.For<CardTypes.Silver>(CardAcceptance.AlwaysMatch, CardAcceptance.OverPayZero));
-
-            }
-
-            private static ICardPicker ActionOrder()
-            {
-                return new CardPickByPriority(
-                           CardAcceptance.For<T>());
-            }
+            }           
         }
         
         /*
@@ -164,11 +156,8 @@ namespace Program
                 return new PlayerAction(
                             "BigMoneySingleCardCartographer",
                             playerNumber,
-                            purchaseOrder: PurchaseOrder(cardCount),
-                            treasurePlayOrder: Default.TreasurePlayOrder(),
-                            actionOrder: ActionOrder(),
-                            trashOrder: Default.EmptyPickOrder(),
-                            discardOrder: Default.EmptyPickOrder());
+                            purchaseOrder: PurchaseOrder(cardCount),                            
+                            actionOrder: ActionOrder());
             }
 
             private static ICardPicker PurchaseOrder(int cardCount)

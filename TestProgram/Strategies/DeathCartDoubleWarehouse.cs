@@ -80,7 +80,7 @@ namespace Program
             static bool ShouldDiscardRuin(GameState gameState)
             {
                 return !gameState.players.CurrentPlayer.Hand.HasCard<CardTypes.DeathCart>() ||
-                       gameState.players.CurrentPlayer.Hand.Where(card => card.isRuin).Count() > 1;
+                       gameState.players.CurrentPlayer.Hand.Where(card => card.isRuins).Count() > 1;
             }
 
             static bool HasActionInHandOtherThanDeathCart(GameState gameState)
@@ -90,7 +90,7 @@ namespace Program
 
             static bool HasNoRuinsInDeck(GameState gameState)
             {
-                return !gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card.isRuin).Any();
+                return !gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card.isRuins).Any();
             }
 
             static bool HasNoRuinsInDeckAndDeathCartInHand(GameState gameState)

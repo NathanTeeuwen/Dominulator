@@ -70,9 +70,15 @@ namespace Program
                     }
                 }
 
-                override public Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard)
+                override public Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
                 {
-                    return DiscardOrder().GetMatchingCardReverse(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card));
+                    Type result = this.discardOrder.GetPreferredCardReverse(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card) && acceptableCard(card));
+                    if (result != null)
+                    {
+                        return result;
+                    }
+
+                    return base.GetCardFromHandToTopDeck(gameState, acceptableCard, isOptional);
                 }
 
                 public override bool ShouldPutCardInHand(GameState gameState, Card card)

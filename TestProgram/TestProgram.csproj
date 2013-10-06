@@ -44,6 +44,7 @@
     <Compile Include="CardAcceptance.cs" />
     <Compile Include="Simulations\FishingVillageTests.cs" />
     <Compile Include="StartingDeckBuilder.cs" />
+    <Compile Include="Strategies\BigMoneyCultist.cs" />
     <Compile Include="Strategies\BigMoneyDoubleSmithy.cs" />
     <Compile Include="Strategies\IllgottengainsMoneylender.cs" />
     <Compile Include="Strategies\IronworksGreathallRemodelHuntingGrounds.cs" />
@@ -51,7 +52,7 @@
     <Compile Include="Strategies\LookoutTraderNobles.cs" />
     <Compile Include="Strategies\RatsWanderingMinstrelWatchtowerArmory.cs" />
     <Compile Include="Strategies\RebuildAdvanced.cs" />
-    <Compile Include="Strategies\RebuildDuchy.cs" />
+    <Compile Include="Strategies\RebuildDuke.cs" />
     <Compile Include="StrategyOptimizer\CardAcceptanceDescription.cs" />
     <Compile Include="CardPickByBuilderOrder.cs" />
     <Compile Include="CardPickByPriority.cs" />

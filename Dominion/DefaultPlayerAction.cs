@@ -128,7 +128,7 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard)
+        virtual public Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return PlayerMustMakeCardChoice();
         }

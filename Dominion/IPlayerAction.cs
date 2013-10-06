@@ -25,7 +25,7 @@ namespace Dominion
         Type GetCardFromRevealedCardsToTrash(GameState gameState, PlayerState player, CardPredicate acceptableCard);
         Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player);
         Type GetCardFromRevealedCardsToDiscard(GameState gameState, PlayerState player);
-        Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard);
+        Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Type GetCardFromHandToPassLeft(GameState gameState);
         Type GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, PlayerState player, bool isOptional);
         Type GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard); // always optional

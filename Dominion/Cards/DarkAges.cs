@@ -62,56 +62,66 @@ namespace Dominion.CardTypes
 
     // Ruins
 
-    public class Ruin :
+    public class Ruins :
         Card
     {
-        public Ruin()
-            : base("Ruin", coinCost: 0, isAction: true, isRuin: true)
+        public Ruins()
+            : this("Ruins")
+        {
+        }
+
+        public Ruins(
+            string name,
+            int plusCoins = 0,
+            int plusCards = 0,
+            int plusBuy = 0,
+            int plusActions = 0)
+            : base(name, coinCost: 0, isAction: true, isRuin: true, plusCoins:plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions:plusActions)
         {
         }
     }
 
     public class AbandonedMine :
-        Card
+        Ruins
     {
         public AbandonedMine()
-            : base("Abandoned Mine", coinCost: 0, isAction: true, plusCoins: 1, isRuin: true)
-        {
+            : base("Abandoned Mine", plusCoins: 1)
+        {            
         }
     }
 
     public class RuinedLibrary :
-        Card
+        Ruins
     {
         public RuinedLibrary()
-            : base("Ruined Library", coinCost: 0, isAction: true, plusCards: 1, isRuin: true)
+            : base("Ruined Library",  plusCards: 1)
         {
         }
     }
 
     public class RuinedMarket :
-        Card
+        Ruins
     {
         public RuinedMarket()
-            : base("Ruined Market", coinCost: 0, isAction: true, plusBuy: 1, isRuin: true)
+            : base("Ruined Market", plusBuy: 1)
         {
         }
     }
 
     public class RuinedVillage :
-        Card
+        Ruins
     {
         public RuinedVillage()
-            : base("Ruined Village", coinCost: 0, isAction: true, plusActions: 1, isRuin: true)
+            : base("Ruined Village", plusActions: 1)
         {
         }
     }
 
     public class Survivors :
-        Card
+        Ruins
     {
         public Survivors()
-            : base("Survivors", coinCost: 0, isAction: true, isRuin: true)
+            : base("Survivors")
         {
         }
 
@@ -312,13 +322,13 @@ namespace Dominion.CardTypes
         Card
     {
         public Cultist()
-            : base("Cultist", coinCost: 5, isAction: true, isAttack:true, requiresRuins:true, plusCards:2)
+            : base("Cultist", coinCost: 5, isAction: true, isAttack:true, requiresRuins:true, plusCards:2, isAttackBeforeAction:true)
         {
         }
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruin));            
+            otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruins));            
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
@@ -354,8 +364,8 @@ namespace Dominion.CardTypes
 
         public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruin));
-            currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruin));
+            currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruins));
+            currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruins));
             return DeckPlacement.Default;
         }
     }    
@@ -558,7 +568,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruin));
+            otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruins));
         }
     }
 

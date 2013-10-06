@@ -13,18 +13,23 @@ namespace Program
     {
         internal readonly string name;
         internal readonly int playerIndex;
-        internal readonly ICardPicker purchaseOrder;
-        internal readonly ICardPicker actionOrder;
-        internal readonly ICardPicker trashOrder;
-        internal readonly ICardPicker treasurePlayOrder;
-        internal readonly ICardPicker discardOrder;
-        internal readonly ICardPicker gainOrder;
+
+        protected readonly ICardPicker purchaseOrder;
+        protected readonly ICardPicker actionOrder;
+        protected readonly ICardPicker trashOrder;
+        protected readonly ICardPicker treasurePlayOrder;
+        protected readonly ICardPicker discardOrder;
+        protected bool chooseDefaultActionOnNone;
+        protected readonly ICardPicker gainOrder;
+
+        static readonly ICardPicker defaultActionOrder = Strategies.Default.ActionPlayOrder();
 
         public PlayerAction(
             string name,
             int playerIndex,
             ICardPicker purchaseOrder,
             ICardPicker actionOrder = null,
+            bool chooseDefaultActionOnNone = false,
             ICardPicker treasurePlayOrder = null,
             ICardPicker discardOrder = null,
             ICardPicker trashOrder = null,
@@ -32,11 +37,12 @@ namespace Program
         {
             this.playerIndex = playerIndex;
             this.purchaseOrder = purchaseOrder;
-            this.actionOrder = actionOrder == null ? Strategies.Default.ActionPlayOrder(this.purchaseOrder) : actionOrder;
+            this.actionOrder = actionOrder == null ? defaultActionOrder : actionOrder;
             this.discardOrder = discardOrder == null ? Strategies.Default.DefaultDiscardOrder() : discardOrder;
             this.trashOrder = trashOrder == null ? Strategies.Default.DefaultTrashOrder() : trashOrder;
             this.treasurePlayOrder = treasurePlayOrder == null ? Strategies.Default.TreasurePlayOrder() : treasurePlayOrder;            
             this.gainOrder = gainOrder != null ? gainOrder : purchaseOrder;
+            this.chooseDefaultActionOnNone = chooseDefaultActionOnNone;
             this.name = name;
         }
 
@@ -65,9 +71,50 @@ namespace Program
         public override Type GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             var currentPlayer = gameState.players.CurrentPlayer;
-            return this.actionOrder.GetPreferredCard(
+
+            if (!(currentPlayer.Hand.HasCard(acceptableCard)))
+            {
+                return null;
+            }
+
+            Type result = this.actionOrder.GetPreferredCard(
                 gameState,
                 card => currentPlayer.Hand.HasCard(card.GetType()) && acceptableCard(card));
+
+            if (result == null && this.chooseDefaultActionOnNone)
+            {
+                var candidateCards = new HashSet<Card>();
+                
+                foreach(Card card in currentPlayer.Hand)
+                {
+                    if (acceptableCard(card))
+                        candidateCards.Add(card);
+                }
+
+                if (candidateCards.Count > 0)
+                {
+                    foreach (Card card in this.actionOrder.GetNeededCards())
+                    {
+                        candidateCards.Remove(card);                        
+                    }
+                }
+
+                if (candidateCards.Count > 0)
+                {
+                    result = PlayerAction.defaultActionOrder.GetPreferredCard(
+                        gameState,
+                        card => candidateCards.Contains(card));
+                }                
+            }
+
+            if (result == null && !isOptional)
+            {
+                result = PlayerAction.defaultActionOrder.GetPreferredCard(
+                    gameState,
+                    card => currentPlayer.Hand.HasCard(card.GetType()) && acceptableCard(card));
+            }
+
+            return result;
         }
 
         public override Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
@@ -132,6 +179,23 @@ namespace Program
                 {
                     return card.GetType();
                 }
+            }
+
+            return null;
+        }
+
+        override public Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        {
+            Type result = this.discardOrder.GetPreferredCard(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card) && acceptableCard(card));
+            if (result != null)
+            {
+                return result;
+            }
+
+            if (result == null && !isOptional)
+            {
+                Card card = gameState.players.CurrentPlayer.Hand.Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();
+                return card != null ? card.GetType() : null;
             }
 
             return null;
@@ -321,9 +385,9 @@ namespace Program
                     return x.isCurse ? 1 : -1;
                 }
 
-                if (x.isRuin ^ y.isRuin)
+                if (x.isRuins ^ y.isRuins)
                 {
-                    return x.isRuin ? 1 : -1;
+                    return x.isRuins ? 1 : -1;
                 }
 
                 if (x.isTreasure ^ y.isTreasure)

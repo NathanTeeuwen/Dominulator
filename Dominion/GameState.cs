@@ -82,7 +82,7 @@ namespace Dominion
 
             allRuinsCards.Shuffle(random);
 
-            var result = new PileOfCards(new CardTypes.Ruin());
+            var result = new PileOfCards(new CardTypes.Ruins());
 
             for (int i = 0; i < ruinsCount; ++i)
             {
@@ -398,8 +398,8 @@ namespace Dominion
             if (result != null)
                 return result;
 
-            result = GetPile(this.nonSupplyPiles, cardType);            
-
+            result = GetPile(this.nonSupplyPiles, cardType);
+            
             return result;
         }
 

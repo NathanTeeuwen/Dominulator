@@ -43,7 +43,7 @@ namespace Program
             return null;
         }
 
-        public Type GetMatchingCardReverse(GameState gameState, CardPredicate cardPredicate)
+        public Type GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate)
         {
             for (int i = this.cardAcceptances.Length - 1; i >= 0; i--)
             {

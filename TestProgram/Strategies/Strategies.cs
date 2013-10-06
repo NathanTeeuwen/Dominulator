@@ -177,22 +177,107 @@ namespace Program
                 return new CardPickByPriority();
             }
 
-            public static CardPickByPriority ActionPlayOrder(ICardPicker purchaseOrder)
+            public static ICardPicker ActionPlayOrder()
             {
-                return new CardPickByPriority(
-                    purchaseOrder.GetNeededCards().Where(card => card.isAction).OrderBy(card => card, new SortCardByActionOrder()).Select(card => new CardAcceptance(card)).ToArray());
+                return new CardPickFromWhatsInHand( new SortCardByDefaultActionOrder());                    
             }
 
-            private struct SortCardByActionOrder
-                : IComparer<Card>
+            private class CardPickFromWhatsInHand
+                : ICardPicker
             {
-                public int Compare(Card first, Card second)
+                private readonly IComparerFactory comparerFactory;
+
+                public CardPickFromWhatsInHand(IComparerFactory comparerFactory)
                 {
-                    if (first.plusAction != 0 ^ second.plusAction != 0)
+                    this.comparerFactory = comparerFactory;
+                }
+
+                public int AmountWillingtoOverPayFor(Card card, GameState gameState)
+                {
+                    throw new NotImplementedException();
+                }
+
+                public Type GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
+                {
+                    IComparer<Card> comparer = this.comparerFactory.GetComparer(gameState);
+
+                    PlayerState currentPlayer = gameState.players.CurrentPlayer;
+
+                    Card cardToPlay = currentPlayer.Hand.Where(card => cardPredicate(card)).OrderBy(card => card, comparer).FirstOrDefault();
+                    if (cardToPlay == null)
+                        return null;
+
+                    return cardToPlay.GetType();
+                }
+
+                public Type GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate)
+                {
+                    IComparer<Card> comparer = this.comparerFactory.GetComparer(gameState);
+
+                    PlayerState currentPlayer = gameState.players.CurrentPlayer;
+
+                    Card cardToPlay = currentPlayer.Hand.Where(card => cardPredicate(card)).OrderByDescending(card => card, comparer).FirstOrDefault();
+                    if (cardToPlay == null)
+                        return null;
+
+                    return cardToPlay.GetType();
+                }
+                
+                public IEnumerable<Card> GetNeededCards()
+                {                    
+                    yield break;
+                }
+            }
+
+            private interface IComparerFactory
+            {
+                IComparer<Card> GetComparer(GameState gameState);
+            }
+
+            private class SortCardByDefaultActionOrder
+                : IComparerFactory
+            {
+                public IComparer<Card> GetComparer(GameState gameState)
+                {
+                    return new Comparer(gameState);
+                }
+
+                private class Comparer
+                    : IComparer<Card>
+                {
+                    private readonly GameState gameState;
+
+                    public Comparer(GameState gameState)
                     {
-                        return first.plusAction != 0 ? -1 : 1;
+                        this.gameState = gameState;
                     }
 
+                    public int Compare(Card first, Card second)
+                    {
+                        if (first.plusAction != 0 ^ second.plusAction != 0)
+                        {
+                            return first.plusAction != 0 ? -1 : 1;
+                        }
+
+                        if (first.DefaultCoinCost != second.DefaultCoinCost)
+                        {
+                            return first.DefaultCoinCost - second.DefaultCoinCost;
+                        }
+
+                        if (first.isRuins && second.isRuins)
+                        {
+                            int result = CompareRuins(first, second, this.gameState);
+                            if (result != 0)
+                                return result;
+                        }
+
+                        return 0;
+                    }                    
+                }
+
+                // TODO:  implement a better default choice of which Ruins to player.
+                private static int CompareRuins(Card first, Card second, GameState gameState)
+                {
                     return 0;
                 }
             }
@@ -234,7 +319,7 @@ namespace Program
                     CardAcceptance.For<CardTypes.Estate>(),
                     CardAcceptance.For<CardTypes.OvergrownEstate>(),
                     CardAcceptance.For<CardTypes.Hovel>(),                    
-                    CardAcceptance.For<CardTypes.Ruin>(),
+                    CardAcceptance.For<CardTypes.Ruins>(),
                     CardAcceptance.For<CardTypes.Copper>(),
                     CardAcceptance.For<CardTypes.Curse>());
             }
@@ -313,10 +398,8 @@ namespace Program
                 return new PlayerAction(
                             "DoubleWarehouse",
                             playerNumber,
-                            purchaseOrder: PurchaseOrder(),
-                            treasurePlayOrder: Default.TreasurePlayOrder(),
-                            actionOrder: ActionOrder(),
-                            trashOrder: Default.EmptyPickOrder(),
+                            purchaseOrder: PurchaseOrder(),                            
+                            actionOrder: ActionOrder(),                            
                             discardOrder: DiscardOrder());
             }
 
@@ -360,11 +443,7 @@ namespace Program
                 return new PlayerAction(
                             "BigMoneyDelayed",
                             playerNumber,
-                            purchaseOrder: PurchaseOrder(),
-                            treasurePlayOrder: Default.TreasurePlayOrder(),
-                            actionOrder: Default.EmptyPickOrder(),
-                            trashOrder: Default.EmptyPickOrder(),
-                            discardOrder: Default.EmptyPickOrder());
+                            purchaseOrder: PurchaseOrder());
             }
 
             private static CardPickByPriority PurchaseOrder()

@@ -8,6 +8,7 @@ namespace Program
     {
         int AmountWillingtoOverPayFor(Card card, GameState gameState);
         Type GetPreferredCard(GameState gameState, CardPredicate cardPredicate);
+        Type GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate);
         IEnumerable<Card> GetNeededCards();
     }
 }

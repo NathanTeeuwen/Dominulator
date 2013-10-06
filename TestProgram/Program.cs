@@ -12,9 +12,15 @@ namespace Program
     {        
         static void Main()
         {
-            Simulations.FishingVillageTests.Run();
-            //ComparePlayers(Strategies.BigMoney.Player(1), Strategies.BigMoneyFishingVillageAvailableForDeckCycle.Player(2));            
-            //CompareStrategyVsAllKnownStrategies(Strategies.RebuildMonument.Player(1));
+            var stopwatch = new System.Diagnostics.Stopwatch();
+            stopwatch.Start();
+            
+            ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.BigMoney.Player(2), numberOfGames:1000);
+            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoneyCultist.Player(1));
+            
+            stopwatch.Stop();
+            System.Console.WriteLine("");
+            System.Console.WriteLine("Elapsed Time per 1000 games: {0}ms", stopwatch.ElapsedMilliseconds * 1000 / totalGameCount);
         }
         
         static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false)
@@ -77,19 +83,6 @@ namespace Program
             ComparePlayers(Strategies.BigMoneyDoubleJack.Player(1), Strategies.ArmoryConspiratorForagerGreatHall.Player(2), useShelters: true);
             ComparePlayers(Strategies.BigMoneySingleSmithy.Player(1), Strategies.GovernorJunkdealer.Player(2), useShelters: true);
             ComparePlayers(Strategies.ArmoryConspiratorForagerGreatHall.Player(1), Strategies.GovernorJunkdealer.Player(2), useShelters: true);
-        }
-
-        static void PlayRemake()
-        {
-            var player1 = new PlayerAction("Player 1", 1,
-                Strategies.BigMoneyWithCard<CardTypes.Remake>.Player(1).purchaseOrder,
-                actionOrder: new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Remake>(gameState => Strategies.CountInHand<CardTypes.Copper>(gameState) + Strategies.CountInHand<CardTypes.Estate>(gameState) >= 2)),
-                trashOrder: new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Estate>(),
-                    CardAcceptance.For<CardTypes.Copper>()));
-
-            ComparePlayers(player1, Strategies.BigMoney.Player(2));            
         }
 
         static void EvaulateBestStrategyForFirstGame()
@@ -208,6 +201,8 @@ namespace Program
 
         public delegate IGameLog CreateGameLog();
 
+        static int totalGameCount = 0;
+
         public static double ComparePlayers(
             PlayerAction player1, 
             PlayerAction player2, 
@@ -233,6 +228,7 @@ namespace Program
              
             Action<int> loopBody = delegate(int gameCount)                    
             {
+                System.Threading.Interlocked.Increment(ref totalGameCount);
                 using (IGameLog gameLog = createGameLog != null ? createGameLog() :
                                           gameCount < logGameCount ? GetGameLogForIteration(gameCount) : 
                                           new EmptyGameLog())                

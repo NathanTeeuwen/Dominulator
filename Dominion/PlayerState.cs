@@ -267,9 +267,15 @@ namespace Dominion
                 this.AddCoins(currentCard.plusCoin);
                 this.victoryTokenCount += currentCard.plusVictoryToken;
                 this.DrawAdditionalCardsIntoHand(currentCard.plusCard);
+
+                if (currentCard.isAttack && currentCard.isAttackBeforeAction)
+                {
+                    AttackOtherPlayers(gameState, currentCard.DoSpecializedAttack);
+                }
                 
                 currentCard.DoSpecializedAction(gameState.players.CurrentPlayer, gameState);
-                if (currentCard.isAttack && !currentCard.attackDependsOnPlayerChoice)
+                
+                if (currentCard.isAttack && !currentCard.attackDependsOnPlayerChoice && !currentCard.isAttackBeforeAction)
                 {
                     AttackOtherPlayers(gameState, currentCard.DoSpecializedAttack);                    
                 }
@@ -860,7 +866,7 @@ namespace Dominion
                 return null;
             }
 
-            Type cardTypeToTopDeck = this.actions.GetCardFromHandToTopDeck(gameState, acceptableCard);
+            Type cardTypeToTopDeck = this.actions.GetCardFromHandToTopDeck(gameState, acceptableCard, isOptional);
             if (cardTypeToTopDeck == null)
             {
                 if (isOptional)

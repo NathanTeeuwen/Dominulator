@@ -1,687 +1,987 @@
-BigMoneyDoubleJack gained Copper.
-BigMoneyDoubleJack gained Copper.
-BigMoneyDoubleJack gained Copper.
-BigMoneyDoubleJack gained Copper.
-BigMoneyDoubleJack gained Copper.
-BigMoneyDoubleJack gained Copper.
-BigMoneyDoubleJack gained Copper.
-BigMoneyDoubleJack gained Estate.
-BigMoneyDoubleJack gained Estate.
-BigMoneyDoubleJack gained Estate.
-BigMoneyWithFishingDoubleJack gained Copper.
-BigMoneyWithFishingDoubleJack gained Copper.
-BigMoneyWithFishingDoubleJack gained Copper.
-BigMoneyWithFishingDoubleJack gained Copper.
-BigMoneyWithFishingDoubleJack gained Copper.
-BigMoneyWithFishingDoubleJack gained Copper.
-BigMoneyWithFishingDoubleJack gained Copper.
-BigMoneyWithFishingDoubleJack gained Estate.
-BigMoneyWithFishingDoubleJack gained Estate.
-BigMoneyWithFishingDoubleJack gained Estate.
-BigMoneyDoubleJack reshuffled
-BigMoneyDoubleJack Drew Copper into hand.
-BigMoneyDoubleJack Drew Copper into hand.
-BigMoneyDoubleJack Drew Copper into hand.
-BigMoneyDoubleJack Drew Estate into hand.
-BigMoneyDoubleJack Drew Copper into hand.
-BigMoneyWithFishingDoubleJack reshuffled
-BigMoneyWithFishingDoubleJack Drew Estate into hand.
-BigMoneyWithFishingDoubleJack Drew Copper into hand.
-BigMoneyWithFishingDoubleJack Drew Copper into hand.
-BigMoneyWithFishingDoubleJack Drew Copper into hand.
-BigMoneyWithFishingDoubleJack Drew Estate into hand.
+BigMoneyCultist gained Copper.
+BigMoneyCultist gained Copper.
+BigMoneyCultist gained Copper.
+BigMoneyCultist gained Copper.
+BigMoneyCultist gained Copper.
+BigMoneyCultist gained Copper.
+BigMoneyCultist gained Copper.
+BigMoneyCultist gained Estate.
+BigMoneyCultist gained Estate.
+BigMoneyCultist gained Estate.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoneyCultist reshuffled
+BigMoneyCultist Drew Estate into hand.
+BigMoneyCultist Drew Copper into hand.
+BigMoneyCultist Drew Copper into hand.
+BigMoneyCultist Drew Estate into hand.
+BigMoneyCultist Drew Copper into hand.
+BigMoney reshuffled
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
 ROUND 1
 -------------
-BigMoneyDoubleJack begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDoubleJack bought JackOfAllTrades.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Estate into hand.
-  BigMoneyDoubleJack Drew Estate into hand.
-  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(3), JackOfAllTrades(1), 
-
-BigMoneyWithFishingDoubleJack begins turn
+BigMoneyCultist begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithFishingDoubleJack bought Fishing Village.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Estate into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(3), Fishing Village(1), 
+  BigMoneyCultist bought Silver.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Estate(3), Silver(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Copper,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-BigMoneyDoubleJack begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDoubleJack bought Silver.
-  BigMoneyDoubleJack reshuffled
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew JackOfAllTrades into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(3), JackOfAllTrades(1), Silver(1), 
-
-BigMoneyWithFishingDoubleJack begins turn
+BigMoneyCultist begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithFishingDoubleJack bought JackOfAllTrades.
-  BigMoneyWithFishingDoubleJack reshuffled
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Estate into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(3), Fishing Village(1), JackOfAllTrades(1), 
+  BigMoneyCultist bought Silver.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Estate(3), Silver(2), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 3
 -------------
-BigMoneyDoubleJack begins turn
-With hand: Copper,Copper,Copper,JackOfAllTrades,Silver,
-  BigMoneyDoubleJack Played JackOfAllTrades.
-    BigMoneyDoubleJack gained Silver.
-    BigMoneyDoubleJack Revealed Copper.
-      BigMoneyDoubleJack Discarded Copper.
-      BigMoneyDoubleJack Discarded Copper.
-    BigMoneyDoubleJack Drew Estate into hand.
-    BigMoneyDoubleJack trashed Estate.
-  BigMoneyDoubleJack Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleJack bought Silver.
-  BigMoneyDoubleJack Drew Estate into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Estate into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), JackOfAllTrades(1), Silver(3), 
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(1), Estate(3), Silver(2), 
 
-BigMoneyWithFishingDoubleJack begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWithFishingDoubleJack Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithFishingDoubleJack bought JackOfAllTrades.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Estate into hand.
-  BigMoneyWithFishingDoubleJack Drew Estate into hand.
-  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
-  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(3), Fishing Village(1), JackOfAllTrades(2), 
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 4
 -------------
-BigMoneyDoubleJack begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDoubleJack Played Copper.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDoubleJack bought Silver.
-  BigMoneyDoubleJack reshuffled
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), JackOfAllTrades(1), Silver(4), 
+  BigMoneyCultist Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyCultist bought Silver.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(1), Estate(3), Silver(3), 
 
-BigMoneyWithFishingDoubleJack begins turn
-With hand: Copper,Copper,Estate,Estate,JackOfAllTrades,
-  BigMoneyWithFishingDoubleJack Played JackOfAllTrades.
-    BigMoneyWithFishingDoubleJack gained Silver.
-    BigMoneyWithFishingDoubleJack Revealed Copper.
-      BigMoneyWithFishingDoubleJack Discarded Copper.
-      BigMoneyWithFishingDoubleJack Discarded Copper.
-    BigMoneyWithFishingDoubleJack Drew Fishing Village into hand.
-    BigMoneyWithFishingDoubleJack trashed Estate.
-  BigMoneyWithFishingDoubleJack Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithFishingDoubleJack reshuffled
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Estate into hand.
-  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
-  BigMoneyWithFishingDoubleJack Drew Fishing Village into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(2), Fishing Village(1), JackOfAllTrades(2), Silver(1), 
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(3), 
 
 ROUND 5
 -------------
-BigMoneyDoubleJack begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyDoubleJack Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDoubleJack Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDoubleJack bought Gold.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew Estate into hand.
-  BigMoneyDoubleJack Drew Estate into hand.
-  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(1), JackOfAllTrades(1), Silver(4), 
-
-BigMoneyWithFishingDoubleJack begins turn
-With hand: Copper,Copper,Estate,Fishing Village,JackOfAllTrades,
-  BigMoneyWithFishingDoubleJack Played Fishing Village.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-  BigMoneyWithFishingDoubleJack Played JackOfAllTrades.
-    BigMoneyWithFishingDoubleJack gained Silver.
-    BigMoneyWithFishingDoubleJack Revealed JackOfAllTrades.
-    BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
-    BigMoneyWithFishingDoubleJack Drew Copper into hand.
-    BigMoneyWithFishingDoubleJack trashed Estate.
-  BigMoneyWithFishingDoubleJack Played JackOfAllTrades.
-    BigMoneyWithFishingDoubleJack gained Silver.
-    BigMoneyWithFishingDoubleJack Revealed Copper.
-      BigMoneyWithFishingDoubleJack Discarded Copper.
-      BigMoneyWithFishingDoubleJack Discarded Copper.
-    BigMoneyWithFishingDoubleJack Drew Copper into hand.
-    BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithFishingDoubleJack bought Gold.
-  BigMoneyWithFishingDoubleJack Drew Estate into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack reshuffled
-  BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(1), JackOfAllTrades(2), Silver(3), 
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(2), Estate(3), Silver(3), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(4), 
 
 ROUND 6
 -------------
-BigMoneyDoubleJack begins turn
-With hand: Copper,Estate,Estate,Silver,Silver,
-  BigMoneyDoubleJack Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDoubleJack Played Silver.
+  BigMoneyCultist Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleJack bought Silver.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew JackOfAllTrades into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack reshuffled
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(1), JackOfAllTrades(1), Silver(5), 
-
-BigMoneyWithFishingDoubleJack begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoneyWithFishingDoubleJack Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  BigMoneyWithFishingDoubleJack Played Silver.
-    +2 Coin = 3 all together.
-  BigMoneyWithFishingDoubleJack Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyWithFishingDoubleJack bought Gold.
-  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
-  BigMoneyWithFishingDoubleJack Drew Gold into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
-  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(2), JackOfAllTrades(2), Silver(3), 
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(3), Estate(3), Silver(3), 
+
+BigMoney begins turn
+With hand: Copper,Estate,Estate,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(5), 
 
 ROUND 7
 -------------
-BigMoneyDoubleJack begins turn
-With hand: Copper,Copper,Copper,Copper,JackOfAllTrades,
-  BigMoneyDoubleJack Played JackOfAllTrades.
-    BigMoneyDoubleJack gained Silver.
-    BigMoneyDoubleJack Revealed Estate.
-      BigMoneyDoubleJack Discarded Estate.
-      BigMoneyDoubleJack Discarded Estate.
-    BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Played Copper.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Estate,Estate,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Drew Estate into hand.
+    BigMoney gained Ruined Market.
+  BigMoneyCultist Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDoubleJack bought JackOfAllTrades.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew Estate into hand.
-  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(1), JackOfAllTrades(2), Silver(6), 
+  BigMoneyCultist bought Silver.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(3), Estate(3), Silver(4), 
 
-BigMoneyWithFishingDoubleJack begins turn
-With hand: Copper,Copper,Gold,JackOfAllTrades,JackOfAllTrades,
-  BigMoneyWithFishingDoubleJack Played JackOfAllTrades.
-    BigMoneyWithFishingDoubleJack gained Silver.
-    BigMoneyWithFishingDoubleJack Revealed Silver.
-    BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithFishingDoubleJack Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Silver,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Silver.
+    +2 Coin = 6 all together.
+  BigMoney Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyWithFishingDoubleJack bought Gold.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack reshuffled
-  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(3), JackOfAllTrades(2), Silver(4), 
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Ruined Market(1), Silver(5), 
 
 ROUND 8
 -------------
-BigMoneyDoubleJack begins turn
-With hand: Estate,Silver,Silver,Silver,Silver,
-  BigMoneyDoubleJack Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Cultist,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoney gained Survivors.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Copper into hand.
+      BigMoneyCultist Drew Silver into hand.
+      BigMoney gained Ruined Library.
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDoubleJack Played Silver.
+  BigMoneyCultist Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyDoubleJack Played Silver.
+  BigMoneyCultist Played Silver.
     +2 Coin = 6 all together.
-  BigMoneyDoubleJack Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyDoubleJack bought Gold.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Gold into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack reshuffled
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(2), JackOfAllTrades(2), Silver(6), 
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(4), Estate(3), Silver(4), 
 
-BigMoneyWithFishingDoubleJack begins turn
-With hand: Copper,Copper,Copper,Copper,JackOfAllTrades,
-  BigMoneyWithFishingDoubleJack Played JackOfAllTrades.
-    BigMoneyWithFishingDoubleJack gained Silver.
-    BigMoneyWithFishingDoubleJack Revealed Copper.
-      BigMoneyWithFishingDoubleJack Discarded Copper.
-      BigMoneyWithFishingDoubleJack Discarded Copper.
-    BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack Played Silver.
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyWithFishingDoubleJack bought Gold.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Gold into hand.
-  BigMoneyWithFishingDoubleJack Drew Estate into hand.
-  BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack Drew Gold into hand.
-  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Silver(5), 
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Ruined Library(1), Ruined Market(1), Silver(5), Survivors(1), 
 
 ROUND 9
 -------------
-BigMoneyDoubleJack begins turn
-With hand: Copper,Copper,Copper,Gold,Silver,
-  BigMoneyDoubleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDoubleJack Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDoubleJack Played Copper.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Silver,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoney gained Ruined Village.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 8 all together.
-  BigMoneyDoubleJack bought Gold.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew JackOfAllTrades into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(3), JackOfAllTrades(2), Silver(6), 
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Silver(4), 
 
-BigMoneyWithFishingDoubleJack begins turn
-With hand: Copper,Estate,Gold,Gold,Silver,
-  BigMoneyWithFishingDoubleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithFishingDoubleJack Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyWithFishingDoubleJack Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyWithFishingDoubleJack bought Province.
-  BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
-  BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack Drew Fishing Village into hand.
-  BigMoneyWithFishingDoubleJack Drew Gold into hand.
-  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Province(1), Silver(5), 
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney bought Silver.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Ruined Market into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Ruined Library(1), Ruined Market(1), Ruined Village(1), Silver(6), Survivors(1), 
 
 ROUND 10
 -------------
-BigMoneyDoubleJack begins turn
-With hand: Copper,JackOfAllTrades,Silver,Silver,Silver,
-  BigMoneyDoubleJack Played JackOfAllTrades.
-    BigMoneyDoubleJack gained Silver.
-    BigMoneyDoubleJack Revealed Silver.
-    BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDoubleJack Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleJack Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyDoubleJack Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyDoubleJack bought Province.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew JackOfAllTrades into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Estate into hand.
-  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(3), JackOfAllTrades(2), Province(1), Silver(7), 
+  BigMoneyCultist Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyCultist bought Silver.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Silver(5), 
 
-BigMoneyWithFishingDoubleJack begins turn
-With hand: Fishing Village,Gold,JackOfAllTrades,Silver,Silver,
-  BigMoneyWithFishingDoubleJack Played Fishing Village.
-    +2 Actions = 2 all together.
-    +1 Coin = 1 all together.
-  BigMoneyWithFishingDoubleJack Played JackOfAllTrades.
-    BigMoneyWithFishingDoubleJack gained Silver.
-    BigMoneyWithFishingDoubleJack Revealed Copper.
-      BigMoneyWithFishingDoubleJack Discarded Copper.
-      BigMoneyWithFishingDoubleJack Discarded Copper.
-    BigMoneyWithFishingDoubleJack reshuffled
-    BigMoneyWithFishingDoubleJack Drew Estate into hand.
-    BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Played Gold.
-    +3 Coin = 4 all together.
-  BigMoneyWithFishingDoubleJack Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyWithFishingDoubleJack Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyWithFishingDoubleJack bought Province.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack Drew Gold into hand.
-  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Province(2), Silver(6), 
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Ruined Market,Silver,
+  BigMoney Played Ruined Market.
+    +1 Buys = 2 all together.
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Ruined Library into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Ruined Library(1), Ruined Market(1), Ruined Village(1), Silver(6), Survivors(1), 
 
 ROUND 11
 -------------
-BigMoneyDoubleJack begins turn
-With hand: Copper,Copper,Copper,Estate,JackOfAllTrades,
-  BigMoneyDoubleJack Played JackOfAllTrades.
-    BigMoneyDoubleJack gained Silver.
-    BigMoneyDoubleJack Revealed Estate.
-      BigMoneyDoubleJack Discarded Estate.
-      BigMoneyDoubleJack Discarded Estate.
-    BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Cultist,Estate,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist reshuffled
+    BigMoneyCultist Drew Silver into hand.
+    BigMoney gained Ruined Village.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Estate into hand.
+      BigMoneyCultist Drew Estate into hand.
+      BigMoney gained Abandoned Mine.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Cultist into hand.
+        BigMoneyCultist Drew Copper into hand.
+        BigMoney gained Ruined Village.
+        BigMoneyCultist Played Cultist.
+          BigMoneyCultist Drew Copper into hand.
+          BigMoneyCultist Drew Silver into hand.
+          BigMoney gained Ruined Market.
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDoubleJack bought Silver.
-  BigMoneyDoubleJack Drew Gold into hand.
-  BigMoneyDoubleJack reshuffled
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew JackOfAllTrades into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(3), JackOfAllTrades(2), Province(1), Silver(9), 
-
-BigMoneyWithFishingDoubleJack begins turn
-With hand: Copper,Copper,Copper,Gold,Silver,
-  BigMoneyWithFishingDoubleJack Finished Playing Fishing Village.
-    +1 Coin = 1 all together.
-    +1 Actions = 2 all together.
-  BigMoneyWithFishingDoubleJack Played Gold.
-    +3 Coin = 4 all together.
-  BigMoneyWithFishingDoubleJack Played Silver.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Silver.
     +2 Coin = 6 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 8 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 9 all together.
-  BigMoneyWithFishingDoubleJack bought Province.
-  BigMoneyWithFishingDoubleJack Drew Province into hand.
-  BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack Drew Gold into hand.
-  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Province(3), Silver(6), 
+  BigMoneyCultist bought Gold.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(1), Silver(5), 
+
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Ruined Library,Silver,
+  BigMoney Played Ruined Library.
+    BigMoney Drew Silver into hand.
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Ruined Village into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(3), Province(1), Ruined Library(1), Ruined Market(2), Ruined Village(3), Silver(6), Survivors(1), 
 
 ROUND 12
 -------------
-BigMoneyDoubleJack begins turn
-With hand: Gold,JackOfAllTrades,Silver,Silver,Silver,
-  BigMoneyDoubleJack Played JackOfAllTrades.
-    BigMoneyDoubleJack gained Silver.
-    BigMoneyDoubleJack Revealed Silver.
-    BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDoubleJack Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDoubleJack Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyDoubleJack Played Silver.
-    +2 Coin = 9 all together.
-  BigMoneyDoubleJack Played Silver.
-    +2 Coin = 11 all together.
-  BigMoneyDoubleJack bought Province.
-  BigMoneyDoubleJack Drew Province into hand.
-  BigMoneyDoubleJack Drew Gold into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Gold into hand.
-  BigMoneyDoubleJack Drew JackOfAllTrades into hand.
-  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(3), JackOfAllTrades(2), Province(2), Silver(10), 
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyCultist bought Gold.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(2), Silver(5), 
 
-BigMoneyWithFishingDoubleJack begins turn
-With hand: Copper,Gold,Province,Silver,Silver,
-  BigMoneyWithFishingDoubleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithFishingDoubleJack Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithFishingDoubleJack Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWithFishingDoubleJack bought Province.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Gold into hand.
-  BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Province(4), Silver(6), 
+BigMoney begins turn
+With hand: Copper,Copper,Ruined Village,Silver,Silver,
+  BigMoney Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Survivors into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Province(1), Ruined Library(1), Ruined Market(2), Ruined Village(3), Silver(6), Survivors(1), 
 
 ROUND 13
 -------------
-BigMoneyDoubleJack begins turn
-With hand: Copper,Gold,Gold,JackOfAllTrades,Province,
-  BigMoneyDoubleJack Played JackOfAllTrades.
-    BigMoneyDoubleJack gained Silver.
-    BigMoneyDoubleJack Revealed Copper.
-      BigMoneyDoubleJack Discarded Copper.
-      BigMoneyDoubleJack Discarded Copper.
-    BigMoneyDoubleJack Drew Estate into hand.
-  BigMoneyDoubleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDoubleJack Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDoubleJack bought Duchy.
-  BigMoneyDoubleJack Drew Estate into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack ends turn with deck: Copper(7), Duchy(1), Estate(2), Gold(3), JackOfAllTrades(2), Province(2), Silver(11), 
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Cultist,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Estate into hand.
+    BigMoneyCultist Drew Estate into hand.
+    BigMoney gained Ruined Village.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Copper into hand.
+      BigMoneyCultist Drew Copper into hand.
+      BigMoney gained Survivors.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist bought Gold.
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(3), Silver(5), 
 
-BigMoneyWithFishingDoubleJack begins turn
-With hand: Copper,Copper,Gold,JackOfAllTrades,Silver,
-  BigMoneyWithFishingDoubleJack Played JackOfAllTrades.
-    BigMoneyWithFishingDoubleJack gained Silver.
-    BigMoneyWithFishingDoubleJack reshuffled
-    BigMoneyWithFishingDoubleJack Revealed Silver.
-    BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithFishingDoubleJack Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithFishingDoubleJack Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyWithFishingDoubleJack bought Province.
-  BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack Drew Fishing Village into hand.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Gold into hand.
-  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Province(5), Silver(7), 
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Survivors,
+  BigMoney Played Survivors.
+    BigMoney Revealed Silver.
+    BigMoney reshuffled
+    BigMoney Revealed Abandoned Mine.
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Drew Abandoned Mine into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Ruined Market into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Province(1), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(6), Survivors(2), 
 
 ROUND 14
 -------------
-BigMoneyDoubleJack begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyDoubleJack Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDoubleJack Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDoubleJack bought Duchy.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Copper into hand.
-  BigMoneyDoubleJack Drew Silver into hand.
-  BigMoneyDoubleJack ends turn with deck: Copper(7), Duchy(2), Estate(2), Gold(3), JackOfAllTrades(2), Province(2), Silver(11), 
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Gold,Silver,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 9 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 11 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 12 all together.
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(3), Province(1), Silver(5), 
 
-BigMoneyWithFishingDoubleJack begins turn
-With hand: Copper,Fishing Village,Gold,Silver,Silver,
-  BigMoneyWithFishingDoubleJack Played Fishing Village.
-    +2 Actions = 2 all together.
+BigMoney begins turn
+With hand: Abandoned Mine,Copper,Gold,Ruined Market,Silver,
+  BigMoney Played Abandoned Mine.
     +1 Coin = 1 all together.
-  BigMoneyWithFishingDoubleJack Played Gold.
+  BigMoney Played Gold.
     +3 Coin = 4 all together.
-  BigMoneyWithFishingDoubleJack Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 6 all together.
-  BigMoneyWithFishingDoubleJack Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyWithFishingDoubleJack Played Copper.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Ruined Village into hand.
+  BigMoney Drew Ruined Market into hand.
+  BigMoney ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(5), Province(1), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(6), Survivors(2), 
+
+ROUND 15
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Estate,Gold,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist reshuffled
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Cultist into hand.
+      BigMoneyCultist Drew Copper into hand.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Copper into hand.
+        BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist Played Copper.
     +1 Coin = 9 all together.
-  BigMoneyWithFishingDoubleJack bought Province.
-  BigMoneyWithFishingDoubleJack Drew Copper into hand.
-  BigMoneyWithFishingDoubleJack Drew Silver into hand.
-  BigMoneyWithFishingDoubleJack Drew Province into hand.
-  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
-  BigMoneyWithFishingDoubleJack Drew Estate into hand.
-  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Province(6), Silver(7), 
+  BigMoneyCultist Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Drew Province into hand.
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(3), Province(2), Silver(5), 
 
-Game ended in 14 turns.
-BigMoneyWithFishingDoubleJack Won!
-BigMoneyDoubleJack total score: 20
-  Copper(7), Duchy(2), Estate(2), Gold(3), JackOfAllTrades(2), Province(2), Silver(11), 
-BigMoneyWithFishingDoubleJack total score: 37
-  Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Province(6), Silver(7), 
-Trash contains: Estate(3), 
+BigMoney begins turn
+With hand: Gold,Province,Ruined Market,Ruined Village,Silver,
+  BigMoney Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoney Played Ruined Market.
+    +1 Buys = 2 all together.
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Ruined Village into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Ruined Village into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(5), Province(1), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
 
-BigMoneyDoubleJack GainSequence is:
-  JackOfAllTrades, Silver, Silver, Silver, Silver, 
-  Gold, Silver, Silver, JackOfAllTrades, Gold, 
-  Gold, Silver, Province, Silver, Silver, 
-  Silver, Province, Silver, Duchy, Duchy, 
+ROUND 16
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Gold,Province,Silver,
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyCultist bought Duchy.
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(1), Estate(3), Gold(3), Province(2), Silver(5), 
 
-BigMoneyWithFishingDoubleJack GainSequence is:
-  Fishing Village, JackOfAllTrades, JackOfAllTrades, Silver, Silver, 
-  Silver, Gold, Gold, Silver, Gold, 
-  Silver, Gold, Province, Silver, Province, 
-  Province, Province, Silver, Province, Province, 
+BigMoney begins turn
+With hand: Estate,Ruined Village,Ruined Village,Silver,Silver,
+  BigMoney Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoney Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Drew Ruined Library into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Ruined Village into hand.
+  BigMoney Drew Survivors into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(5), Province(1), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
 
+ROUND 17
+-------------
+BigMoneyCultist begins turn
+With hand: Cultist,Estate,Estate,Gold,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 9 all together.
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Province into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Province into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(1), Estate(3), Gold(3), Province(3), Silver(5), 
+
+BigMoney begins turn
+With hand: Copper,Gold,Ruined Library,Ruined Village,Survivors,
+  BigMoney Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoney Played Ruined Library.
+    BigMoney Drew Copper into hand.
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Duchy.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(1), Estate(3), Gold(5), Province(1), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+
+ROUND 18
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Cultist,Province,Province,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Gold into hand.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Silver into hand.
+      BigMoneyCultist Drew Cultist into hand.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Copper into hand.
+        BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Duchy into hand.
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(1), Estate(3), Gold(3), Province(4), Silver(5), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Province into hand.
+  BigMoney ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(1), Estate(3), Gold(5), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+
+ROUND 19
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Duchy,Estate,Gold,Silver,
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist bought Duchy.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(2), Estate(3), Gold(3), Province(4), Silver(5), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Province,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Duchy.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Ruined Village into hand.
+  BigMoney Drew Ruined Village into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(3), Gold(5), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+
+ROUND 20
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist bought Duchy.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(3), Estate(3), Gold(3), Province(4), Silver(5), 
+
+BigMoney begins turn
+With hand: Copper,Estate,Ruined Village,Ruined Village,Silver,
+  BigMoney Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoney Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney bought Estate.
+  BigMoney Drew Ruined Market into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Abandoned Mine into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Survivors into hand.
+  BigMoney ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(4), Gold(5), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+
+ROUND 21
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Cultist,Estate,Gold,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Province into hand.
+    BigMoneyCultist reshuffled
+    BigMoneyCultist Drew Duchy into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Cultist into hand.
+      BigMoneyCultist Drew Cultist into hand.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Gold into hand.
+        BigMoneyCultist Drew Copper into hand.
+        BigMoneyCultist Played Cultist.
+          BigMoneyCultist Drew Silver into hand.
+          BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 10 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 11 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 12 all together.
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Province into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(3), Estate(3), Gold(3), Province(5), Silver(5), 
+
+BigMoney begins turn
+With hand: Abandoned Mine,Gold,Ruined Market,Silver,Survivors,
+  BigMoney Played Ruined Market.
+    +1 Buys = 2 all together.
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney bought Duchy.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Ruined Village into hand.
+  BigMoney ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(3), Estate(4), Gold(5), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+
+ROUND 22
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Gold,Province,Silver,Silver,
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Duchy into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(3), Estate(3), Gold(3), Province(6), Silver(5), 
+
+Game ended in 22 turns.
+BigMoneyCultist Won!
+BigMoneyCultist total score: 48
+  Copper(7), Cultist(5), Duchy(3), Estate(3), Gold(3), Province(6), Silver(5), 
+BigMoney total score: 25
+  Abandoned Mine(1), Copper(7), Duchy(3), Estate(4), Gold(5), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+Trash contains: 
+
+BigMoneyCultist GainSequence is:
+  Silver, Silver, Cultist, Silver, Cultist, 
+  Cultist, Silver, Cultist, Cultist, Silver, 
+  Gold, Gold, Gold, Province, Province, 
+  Duchy, Province, Province, Duchy, Duchy, 
+  Province, Province, 
+BigMoney GainSequence is:
+  Silver, Silver, Silver, Silver, Silver, 
+  Ruined Market, Gold, Survivors, Ruined Library, Gold, 
+  Ruined Village, Silver, Gold, Ruined Village, Abandoned Mine, 
+  Ruined Village, Ruined Market, Province, Gold, Ruined Village, 
+  Survivors, Gold, Silver, Silver, Duchy, 
+  Province, Duchy, Estate, Duchy, 

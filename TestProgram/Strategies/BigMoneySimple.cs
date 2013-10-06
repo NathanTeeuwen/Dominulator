@@ -17,11 +17,7 @@ namespace Program
                 return new PlayerAction(
                             "BigMoneySimple",
                             playerNumber,
-                            purchaseOrder: PurchaseOrder(),
-                            treasurePlayOrder: Default.TreasurePlayOrder(),
-                            actionOrder: Default.EmptyPickOrder(),
-                            trashOrder: Default.EmptyPickOrder(),
-                            discardOrder: Default.EmptyPickOrder());
+                            purchaseOrder: PurchaseOrder());
             }
 
             private static CardPickByPriority PurchaseOrder()

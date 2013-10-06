@@ -20,6 +20,11 @@ namespace Program
             return int.MaxValue;
         }
 
+        public Type GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate)
+        {
+            throw new NotImplementedException();
+        }
+
         public Type GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
         {        
             var existingCards = new BagOfCards();

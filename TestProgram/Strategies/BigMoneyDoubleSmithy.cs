@@ -23,11 +23,7 @@ namespace Program
                 return new PlayerAction(
                             "BigMoneyDoubleSmithy",
                             playerNumber,
-                            purchaseOrder: PurchaseOrder(secondSmithy),
-                            treasurePlayOrder: Default.TreasurePlayOrder(),
-                            actionOrder: ActionOrder(),
-                            trashOrder: Default.EmptyPickOrder(),
-                            discardOrder: Default.EmptyPickOrder());
+                            purchaseOrder: PurchaseOrder(secondSmithy));
             }
 
             private static CardPickByPriority PurchaseOrder(int secondSmithy)
@@ -43,13 +39,7 @@ namespace Program
                                                                              gameState.players.CurrentPlayer.AllOwnedCards.Count() >= secondSmithy),
                            CardAcceptance.For<CardTypes.Silver>());
 
-            }
-
-            private static CardPickByPriority ActionOrder()
-            {
-                return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Smithy>());
-            }
+            }           
         }
     }
 }
