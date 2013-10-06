@@ -46,4 +46,17 @@ namespace Dominion.CardTypes.TestCards
         }        
     }
 
+    public class FishingVillageEmptyDuration :
+        Card
+    {
+        public FishingVillageEmptyDuration()
+            : base("FishingVillageAvailableForDeckCycle", coinCost: 3, isAction: true, plusCoins: 2, plusActions: 2, isDuration:true )
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+        }
+    }
+
 }

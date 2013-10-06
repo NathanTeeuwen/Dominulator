@@ -35,12 +35,7 @@ namespace Program
                 override public Type GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
                 {
                     return typeof(CardTypes.Watchtower);
-                }
-
-                override public bool ShouldGainCard(GameState gameState, Card card)
-                {
-                    return this.gainOrder.GetPreferredCard(gameState, c => c.Equals(card)) != null;
-                }
+                }                
             }
 
             private static ICardPicker PurchaseOrder()

@@ -282,7 +282,7 @@ namespace Program
             }
 
             return result;
-        }
+        }        
 
         private static bool ShouldGainCopper(GameState gameState, ICardPicker gainOrder)
         {
@@ -343,6 +343,11 @@ namespace Program
             {
                 return this.name;
             }
+        }
+
+        public override bool ShouldGainCard(GameState gameState, Card card)
+        {
+            return this.gainOrder.GetPreferredCard(gameState, c => c.Equals(card)) != null;
         }
 
         public override int GetCoinAmountToUseInButcher(GameState gameState)

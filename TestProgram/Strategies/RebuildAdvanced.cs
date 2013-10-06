@@ -238,7 +238,7 @@ namespace Program
                     : base(playerNumber,
                            "RebuildMonument",
                            Example<CardTypes.Monument>.Card,
-                           gameState => CountAllOwned<CardTypes.Monument>(gameState) < 3)
+                           gameState => CountAllOwned<CardTypes.Monument>(gameState) < 2)
                 {
                 }
             }

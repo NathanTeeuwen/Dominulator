@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CardAcceptance.cs" />
-    <Compile Include="Simulations\FishingVillageThatCanReshuffle.cs" />
+    <Compile Include="Simulations\FishingVillageTests.cs" />
     <Compile Include="StartingDeckBuilder.cs" />
     <Compile Include="Strategies\BigMoneyDoubleSmithy.cs" />
     <Compile Include="Strategies\IllgottengainsMoneylender.cs" />
@@ -51,6 +51,7 @@
     <Compile Include="Strategies\LookoutTraderNobles.cs" />
     <Compile Include="Strategies\RatsWanderingMinstrelWatchtowerArmory.cs" />
     <Compile Include="Strategies\RebuildAdvanced.cs" />
+    <Compile Include="Strategies\RebuildDuchy.cs" />
     <Compile Include="StrategyOptimizer\CardAcceptanceDescription.cs" />
     <Compile Include="CardPickByBuilderOrder.cs" />
     <Compile Include="CardPickByPriority.cs" />
@@ -69,7 +70,7 @@
     <Compile Include="Simulations\UnevenCurseSplit.cs" />
     <Compile Include="Strategies\ArmoryConspiratorForagerGreatHall.cs" />
     <Compile Include="Strategies\BigMoney.cs" />
-    <Compile Include="Strategies\BigMoneySingleCard.cs" />
+    <Compile Include="Strategies\BigMoneyWithCard.cs" />
     <Compile Include="Strategies\ButcherPlazaWatchtower.cs" />
     <Compile Include="Strategies\CaravanBridgeDukeCartographer.cs" />
     <Compile Include="Strategies\BigMoneySimple.cs" />

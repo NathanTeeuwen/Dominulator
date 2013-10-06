@@ -186,8 +186,8 @@ namespace Dominion.CardTypes
             currentPlayer.MoveCardFromPlayToTrash(gameState);
             currentPlayer.RequestPlayerGainCardFromSupply(
                 gameState,
-                card => card.CurrentCoinCost(currentPlayer) < 5
-                , "cost of card < 5");
+                card => card.CurrentCoinCost(currentPlayer) <= 5
+                , "cost of card up to 5");
         }
     }
 

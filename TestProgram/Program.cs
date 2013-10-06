@@ -12,8 +12,9 @@ namespace Program
     {        
         static void Main()
         {
-            ComparePlayers(Strategies.RebuildAdvanced.Player(1), Strategies.RebuildAdvanced.Player(2), startingDeckPerPlayer: StartingDecksForRebuildWithEstateAdvantage.StartingDecks);            
-            CompareStrategyVsAllKnownStrategies(Strategies.RebuildMonument.Player(1));
+            Simulations.FishingVillageTests.Run();
+            //ComparePlayers(Strategies.BigMoney.Player(1), Strategies.BigMoneyFishingVillageAvailableForDeckCycle.Player(2));            
+            //CompareStrategyVsAllKnownStrategies(Strategies.RebuildMonument.Player(1));
         }
         
         static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false)

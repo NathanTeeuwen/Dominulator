@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program.Simulations.UnevenCurseSplit
+namespace Program.Simulations
 {
-    static public class Simulation
+    static public class UnevenCurseSplit
     {
         public static void Run()
         {         

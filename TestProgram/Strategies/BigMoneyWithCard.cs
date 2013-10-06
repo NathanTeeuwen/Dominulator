@@ -126,16 +126,10 @@ namespace Program
                 public MyPlayerAction(int playerNumber, int cardCount)
                     : base("Thief",
                             playerNumber,
-                            purchaseOrder: PurchaseOrder(cardCount),
-                            actionOrder: ActionOrder(),
+                            purchaseOrder: PurchaseOrder(cardCount),                            
                             trashOrder: TrashOrder())
                 {
-                }
-
-                public override bool ShouldGainCard(GameState gameState, Card card)
-                {
-                    return card.Is<CardTypes.Copper>() ? false : true;
-                }
+                }                
             }
 
             public static ICardPicker PurchaseOrder(int cardCount)
@@ -149,12 +143,6 @@ namespace Program
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
                            CardAcceptance.For<CardTypes.Silver>());
 
-            }
-
-            private static ICardPicker ActionOrder()
-            {
-                return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Thief>());
             }
 
             private static ICardPicker TrashOrder()

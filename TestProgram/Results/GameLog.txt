@@ -1,698 +1,687 @@
-RebuildMonument gained Copper.
-RebuildMonument gained Copper.
-RebuildMonument gained Copper.
-RebuildMonument gained Copper.
-RebuildMonument gained Copper.
-RebuildMonument gained Copper.
-RebuildMonument gained Copper.
-RebuildMonument gained Estate.
-RebuildMonument gained Estate.
-RebuildMonument gained Estate.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Estate.
-BigMoneyDelayed gained Estate.
-BigMoneyDelayed gained Estate.
-RebuildMonument reshuffled
-RebuildMonument Drew Copper into hand.
-RebuildMonument Drew Copper into hand.
-RebuildMonument Drew Copper into hand.
-RebuildMonument Drew Estate into hand.
-RebuildMonument Drew Copper into hand.
-BigMoneyDelayed reshuffled
-BigMoneyDelayed Drew Estate into hand.
-BigMoneyDelayed Drew Copper into hand.
-BigMoneyDelayed Drew Copper into hand.
-BigMoneyDelayed Drew Copper into hand.
-BigMoneyDelayed Drew Estate into hand.
+BigMoneyDoubleJack gained Copper.
+BigMoneyDoubleJack gained Copper.
+BigMoneyDoubleJack gained Copper.
+BigMoneyDoubleJack gained Copper.
+BigMoneyDoubleJack gained Copper.
+BigMoneyDoubleJack gained Copper.
+BigMoneyDoubleJack gained Copper.
+BigMoneyDoubleJack gained Estate.
+BigMoneyDoubleJack gained Estate.
+BigMoneyDoubleJack gained Estate.
+BigMoneyWithFishingDoubleJack gained Copper.
+BigMoneyWithFishingDoubleJack gained Copper.
+BigMoneyWithFishingDoubleJack gained Copper.
+BigMoneyWithFishingDoubleJack gained Copper.
+BigMoneyWithFishingDoubleJack gained Copper.
+BigMoneyWithFishingDoubleJack gained Copper.
+BigMoneyWithFishingDoubleJack gained Copper.
+BigMoneyWithFishingDoubleJack gained Estate.
+BigMoneyWithFishingDoubleJack gained Estate.
+BigMoneyWithFishingDoubleJack gained Estate.
+BigMoneyDoubleJack reshuffled
+BigMoneyDoubleJack Drew Copper into hand.
+BigMoneyDoubleJack Drew Copper into hand.
+BigMoneyDoubleJack Drew Copper into hand.
+BigMoneyDoubleJack Drew Estate into hand.
+BigMoneyDoubleJack Drew Copper into hand.
+BigMoneyWithFishingDoubleJack reshuffled
+BigMoneyWithFishingDoubleJack Drew Estate into hand.
+BigMoneyWithFishingDoubleJack Drew Copper into hand.
+BigMoneyWithFishingDoubleJack Drew Copper into hand.
+BigMoneyWithFishingDoubleJack Drew Copper into hand.
+BigMoneyWithFishingDoubleJack Drew Estate into hand.
 ROUND 1
 -------------
-RebuildMonument begins turn
+BigMoneyDoubleJack begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  RebuildMonument Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 1 all together.
-  RebuildMonument Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 2 all together.
-  RebuildMonument Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 3 all together.
-  RebuildMonument Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 4 all together.
-  RebuildMonument bought Monument.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(1), 
+  BigMoneyDoubleJack bought JackOfAllTrades.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Estate into hand.
+  BigMoneyDoubleJack Drew Estate into hand.
+  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(3), JackOfAllTrades(1), 
 
-BigMoneyDelayed begins turn
+BigMoneyWithFishingDoubleJack begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyDelayed Played Copper.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoneyWithFishingDoubleJack bought Fishing Village.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Estate into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(3), Fishing Village(1), 
 
 ROUND 2
 -------------
-RebuildMonument begins turn
+BigMoneyDoubleJack begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  RebuildMonument Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 1 all together.
-  RebuildMonument Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 2 all together.
-  RebuildMonument Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 3 all together.
-  RebuildMonument bought Silver.
-  RebuildMonument reshuffled
-  RebuildMonument Drew Silver into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Monument into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(1), Silver(1), 
+  BigMoneyDoubleJack bought Silver.
+  BigMoneyDoubleJack reshuffled
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew JackOfAllTrades into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(3), JackOfAllTrades(1), Silver(1), 
 
-BigMoneyDelayed begins turn
+BigMoneyWithFishingDoubleJack begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyDelayed Played Copper.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoneyWithFishingDoubleJack bought JackOfAllTrades.
+  BigMoneyWithFishingDoubleJack reshuffled
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Estate into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(3), Fishing Village(1), JackOfAllTrades(1), 
 
 ROUND 3
 -------------
-RebuildMonument begins turn
-With hand: Copper,Copper,Copper,Monument,Silver,
-  RebuildMonument Played Monument.
+BigMoneyDoubleJack begins turn
+With hand: Copper,Copper,Copper,JackOfAllTrades,Silver,
+  BigMoneyDoubleJack Played JackOfAllTrades.
+    BigMoneyDoubleJack gained Silver.
+    BigMoneyDoubleJack Revealed Copper.
+      BigMoneyDoubleJack Discarded Copper.
+      BigMoneyDoubleJack Discarded Copper.
+    BigMoneyDoubleJack Drew Estate into hand.
+    BigMoneyDoubleJack trashed Estate.
+  BigMoneyDoubleJack Played Silver.
     +2 Coin = 2 all together.
-  RebuildMonument Played Silver.
-    +2 Coin = 4 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 5 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 6 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 7 all together.
-  RebuildMonument bought Rebuild.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(1), Rebuild(1), Silver(1), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(3), 
+  BigMoneyDoubleJack Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDoubleJack bought Silver.
+  BigMoneyDoubleJack Drew Estate into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Estate into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), JackOfAllTrades(1), Silver(3), 
+
+BigMoneyWithFishingDoubleJack begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWithFishingDoubleJack bought JackOfAllTrades.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Estate into hand.
+  BigMoneyWithFishingDoubleJack Drew Estate into hand.
+  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
+  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(3), Fishing Village(1), JackOfAllTrades(2), 
 
 ROUND 4
 -------------
-RebuildMonument begins turn
-With hand: Copper,Copper,Estate,Estate,Estate,
-  RebuildMonument Played Copper.
+BigMoneyDoubleJack begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 1 all together.
-  RebuildMonument Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 2 all together.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument reshuffled
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Silver into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(1), Rebuild(1), Silver(1), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(4), 
+  BigMoneyDoubleJack bought Silver.
+  BigMoneyDoubleJack reshuffled
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), JackOfAllTrades(1), Silver(4), 
+
+BigMoneyWithFishingDoubleJack begins turn
+With hand: Copper,Copper,Estate,Estate,JackOfAllTrades,
+  BigMoneyWithFishingDoubleJack Played JackOfAllTrades.
+    BigMoneyWithFishingDoubleJack gained Silver.
+    BigMoneyWithFishingDoubleJack Revealed Copper.
+      BigMoneyWithFishingDoubleJack Discarded Copper.
+      BigMoneyWithFishingDoubleJack Discarded Copper.
+    BigMoneyWithFishingDoubleJack Drew Fishing Village into hand.
+    BigMoneyWithFishingDoubleJack trashed Estate.
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyWithFishingDoubleJack reshuffled
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Estate into hand.
+  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
+  BigMoneyWithFishingDoubleJack Drew Fishing Village into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(2), Fishing Village(1), JackOfAllTrades(2), Silver(1), 
 
 ROUND 5
 -------------
-RebuildMonument begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
-  RebuildMonument Played Silver.
+BigMoneyDoubleJack begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneyDoubleJack Played Silver.
     +2 Coin = 2 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 3 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 4 all together.
-  RebuildMonument Played Copper.
+  BigMoneyDoubleJack Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 5 all together.
-  RebuildMonument Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 6 all together.
-  RebuildMonument bought Rebuild.
-  RebuildMonument Drew Monument into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument ends turn with deck: Copper(7), Estate(3), Monument(1), Rebuild(2), Silver(1), 
+  BigMoneyDoubleJack Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyDoubleJack bought Gold.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew Estate into hand.
+  BigMoneyDoubleJack Drew Estate into hand.
+  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(1), JackOfAllTrades(1), Silver(4), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+BigMoneyWithFishingDoubleJack begins turn
+With hand: Copper,Copper,Estate,Fishing Village,JackOfAllTrades,
+  BigMoneyWithFishingDoubleJack Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  BigMoneyWithFishingDoubleJack Played JackOfAllTrades.
+    BigMoneyWithFishingDoubleJack gained Silver.
+    BigMoneyWithFishingDoubleJack Revealed JackOfAllTrades.
+    BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
+    BigMoneyWithFishingDoubleJack Drew Copper into hand.
+    BigMoneyWithFishingDoubleJack trashed Estate.
+  BigMoneyWithFishingDoubleJack Played JackOfAllTrades.
+    BigMoneyWithFishingDoubleJack gained Silver.
+    BigMoneyWithFishingDoubleJack Revealed Copper.
+      BigMoneyWithFishingDoubleJack Discarded Copper.
+      BigMoneyWithFishingDoubleJack Discarded Copper.
+    BigMoneyWithFishingDoubleJack Drew Copper into hand.
+    BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
+  BigMoneyWithFishingDoubleJack bought Gold.
+  BigMoneyWithFishingDoubleJack Drew Estate into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack reshuffled
+  BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(1), JackOfAllTrades(2), Silver(3), 
 
 ROUND 6
 -------------
-RebuildMonument begins turn
-With hand: Copper,Estate,Estate,Monument,Rebuild,
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Duchy.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Estate.
-      RebuildMonument Discarded Copper.
-    RebuildMonument trashed Estate.
-    RebuildMonument gained Duchy.
-  RebuildMonument Played Monument.
+BigMoneyDoubleJack begins turn
+With hand: Copper,Estate,Estate,Silver,Silver,
+  BigMoneyDoubleJack Played Silver.
     +2 Coin = 2 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 3 all together.
-  RebuildMonument bought Silver.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument reshuffled
-  RebuildMonument Drew Monument into hand.
-  RebuildMonument Drew Silver into hand.
-  RebuildMonument Drew Duchy into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument ends turn with deck: Copper(7), Duchy(1), Estate(2), Monument(1), Rebuild(2), Silver(2), 
-
-BigMoneyDelayed begins turn
-With hand: Estate,Estate,Estate,Silver,Silver,
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
+  BigMoneyDoubleJack Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(5), 
+  BigMoneyDoubleJack Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDoubleJack bought Silver.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew JackOfAllTrades into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack reshuffled
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(1), JackOfAllTrades(1), Silver(5), 
+
+BigMoneyWithFishingDoubleJack begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoneyWithFishingDoubleJack Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  BigMoneyWithFishingDoubleJack Played Silver.
+    +2 Coin = 3 all together.
+  BigMoneyWithFishingDoubleJack Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithFishingDoubleJack bought Gold.
+  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
+  BigMoneyWithFishingDoubleJack Drew Gold into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
+  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(2), JackOfAllTrades(2), Silver(3), 
 
 ROUND 7
 -------------
-RebuildMonument begins turn
-With hand: Copper,Copper,Duchy,Monument,Silver,
-  RebuildMonument Played Monument.
-    +2 Coin = 2 all together.
-  RebuildMonument Played Silver.
-    +2 Coin = 4 all together.
-  RebuildMonument Played Copper.
+BigMoneyDoubleJack begins turn
+With hand: Copper,Copper,Copper,Copper,JackOfAllTrades,
+  BigMoneyDoubleJack Played JackOfAllTrades.
+    BigMoneyDoubleJack gained Silver.
+    BigMoneyDoubleJack Revealed Estate.
+      BigMoneyDoubleJack Discarded Estate.
+      BigMoneyDoubleJack Discarded Estate.
+    BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyDoubleJack Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyDoubleJack Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDoubleJack Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 5 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 6 all together.
-  RebuildMonument bought Rebuild.
-  RebuildMonument Drew Estate into hand.
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument ends turn with deck: Copper(7), Duchy(1), Estate(2), Monument(1), Rebuild(3), Silver(2), 
+  BigMoneyDoubleJack bought JackOfAllTrades.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew Estate into hand.
+  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(1), JackOfAllTrades(2), Silver(6), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
+BigMoneyWithFishingDoubleJack begins turn
+With hand: Copper,Copper,Gold,JackOfAllTrades,JackOfAllTrades,
+  BigMoneyWithFishingDoubleJack Played JackOfAllTrades.
+    BigMoneyWithFishingDoubleJack gained Silver.
+    BigMoneyWithFishingDoubleJack Revealed Silver.
+    BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithFishingDoubleJack Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
+  BigMoneyWithFishingDoubleJack bought Gold.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack reshuffled
+  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(3), JackOfAllTrades(2), Silver(4), 
 
 ROUND 8
 -------------
-RebuildMonument begins turn
-With hand: Copper,Copper,Copper,Estate,Rebuild,
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Duchy.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Rebuild.
-      RebuildMonument Revealed Silver.
-      RebuildMonument Revealed Estate.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Rebuild.
-      RebuildMonument Discarded Silver.
-    RebuildMonument trashed Estate.
-    RebuildMonument gained Duchy.
-  RebuildMonument Played Copper.
-    +1 Coin = 1 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 2 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 3 all together.
-  RebuildMonument bought Silver.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument reshuffled
-  RebuildMonument Drew Silver into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument ends turn with deck: Copper(7), Duchy(2), Estate(1), Monument(1), Rebuild(3), Silver(3), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoneyDelayed Played Silver.
+BigMoneyDoubleJack begins turn
+With hand: Estate,Silver,Silver,Silver,Silver,
+  BigMoneyDoubleJack Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
+  BigMoneyDoubleJack Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyDoubleJack Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneyDoubleJack Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyDoubleJack bought Gold.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Gold into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack reshuffled
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(2), JackOfAllTrades(2), Silver(6), 
+
+BigMoneyWithFishingDoubleJack begins turn
+With hand: Copper,Copper,Copper,Copper,JackOfAllTrades,
+  BigMoneyWithFishingDoubleJack Played JackOfAllTrades.
+    BigMoneyWithFishingDoubleJack gained Silver.
+    BigMoneyWithFishingDoubleJack Revealed Copper.
+      BigMoneyWithFishingDoubleJack Discarded Copper.
+      BigMoneyWithFishingDoubleJack Discarded Copper.
+    BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), 
+  BigMoneyWithFishingDoubleJack bought Gold.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Gold into hand.
+  BigMoneyWithFishingDoubleJack Drew Estate into hand.
+  BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack Drew Gold into hand.
+  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Silver(5), 
 
 ROUND 9
 -------------
-RebuildMonument begins turn
-With hand: Copper,Copper,Copper,Copper,Silver,
-  RebuildMonument Played Silver.
-    +2 Coin = 2 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 3 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 4 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 5 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 6 all together.
-  RebuildMonument bought Duchy.
-  RebuildMonument Drew Duchy into hand.
-  RebuildMonument Drew Duchy into hand.
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument ends turn with deck: Copper(7), Duchy(3), Estate(1), Monument(1), Rebuild(3), Silver(3), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoneyDelayed Played Gold.
+BigMoneyDoubleJack begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  BigMoneyDoubleJack Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
+  BigMoneyDoubleJack Played Silver.
     +2 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(5), 
+  BigMoneyDoubleJack Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyDoubleJack bought Gold.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew JackOfAllTrades into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(3), JackOfAllTrades(2), Silver(6), 
+
+BigMoneyWithFishingDoubleJack begins turn
+With hand: Copper,Estate,Gold,Gold,Silver,
+  BigMoneyWithFishingDoubleJack Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithFishingDoubleJack Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyWithFishingDoubleJack Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyWithFishingDoubleJack bought Province.
+  BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
+  BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack Drew Fishing Village into hand.
+  BigMoneyWithFishingDoubleJack Drew Gold into hand.
+  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Province(1), Silver(5), 
 
 ROUND 10
 -------------
-RebuildMonument begins turn
-With hand: Copper,Duchy,Duchy,Rebuild,Rebuild,
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Duchy.
-      RebuildMonument Revealed Silver.
-      RebuildMonument Revealed Estate.
-      RebuildMonument Discarded Silver.
-    RebuildMonument trashed Estate.
-    RebuildMonument gained Duchy.
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Province.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Silver.
-      RebuildMonument Revealed Monument.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Rebuild.
-      RebuildMonument reshuffled
-      RebuildMonument Revealed Duchy.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Silver.
-      RebuildMonument Discarded Rebuild.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Monument.
-    RebuildMonument trashed Duchy.
-    RebuildMonument gained Province.
-  RebuildMonument Played Copper.
-    +1 Coin = 1 all together.
-  RebuildMonument Drew Silver into hand.
-  RebuildMonument Drew Duchy into hand.
-  RebuildMonument Drew Silver into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument ends turn with deck: Copper(7), Duchy(3), Monument(1), Province(1), Rebuild(3), Silver(3), 
+BigMoneyDoubleJack begins turn
+With hand: Copper,JackOfAllTrades,Silver,Silver,Silver,
+  BigMoneyDoubleJack Played JackOfAllTrades.
+    BigMoneyDoubleJack gained Silver.
+    BigMoneyDoubleJack Revealed Silver.
+    BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDoubleJack Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDoubleJack Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneyDoubleJack Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyDoubleJack Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyDoubleJack bought Province.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew JackOfAllTrades into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Estate into hand.
+  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(3), JackOfAllTrades(2), Province(1), Silver(7), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyDelayed bought Province.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(5), 
+BigMoneyWithFishingDoubleJack begins turn
+With hand: Fishing Village,Gold,JackOfAllTrades,Silver,Silver,
+  BigMoneyWithFishingDoubleJack Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  BigMoneyWithFishingDoubleJack Played JackOfAllTrades.
+    BigMoneyWithFishingDoubleJack gained Silver.
+    BigMoneyWithFishingDoubleJack Revealed Copper.
+      BigMoneyWithFishingDoubleJack Discarded Copper.
+      BigMoneyWithFishingDoubleJack Discarded Copper.
+    BigMoneyWithFishingDoubleJack reshuffled
+    BigMoneyWithFishingDoubleJack Drew Estate into hand.
+    BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Played Gold.
+    +3 Coin = 4 all together.
+  BigMoneyWithFishingDoubleJack Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneyWithFishingDoubleJack Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyWithFishingDoubleJack bought Province.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack Drew Gold into hand.
+  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Province(2), Silver(6), 
 
 ROUND 11
 -------------
-RebuildMonument begins turn
-With hand: Copper,Copper,Duchy,Silver,Silver,
-  RebuildMonument Played Silver.
+BigMoneyDoubleJack begins turn
+With hand: Copper,Copper,Copper,Estate,JackOfAllTrades,
+  BigMoneyDoubleJack Played JackOfAllTrades.
+    BigMoneyDoubleJack gained Silver.
+    BigMoneyDoubleJack Revealed Estate.
+      BigMoneyDoubleJack Discarded Estate.
+      BigMoneyDoubleJack Discarded Estate.
+    BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Played Silver.
     +2 Coin = 2 all together.
-  RebuildMonument Played Silver.
-    +2 Coin = 4 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 5 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 6 all together.
-  RebuildMonument bought Duchy.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument reshuffled
-  RebuildMonument Drew Duchy into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument ends turn with deck: Copper(7), Duchy(4), Monument(1), Province(1), Rebuild(3), Silver(3), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Copper,Gold,
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyDoubleJack Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyDoubleJack bought Silver.
+  BigMoneyDoubleJack Drew Gold into hand.
+  BigMoneyDoubleJack reshuffled
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew JackOfAllTrades into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(3), JackOfAllTrades(2), Province(1), Silver(9), 
+
+BigMoneyWithFishingDoubleJack begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  BigMoneyWithFishingDoubleJack Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  BigMoneyWithFishingDoubleJack Played Gold.
+    +3 Coin = 4 all together.
+  BigMoneyWithFishingDoubleJack Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(5), 
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyWithFishingDoubleJack bought Province.
+  BigMoneyWithFishingDoubleJack Drew Province into hand.
+  BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack Drew Gold into hand.
+  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Province(3), Silver(6), 
 
 ROUND 12
 -------------
-RebuildMonument begins turn
-With hand: Copper,Copper,Copper,Copper,Duchy,
-  RebuildMonument Played Copper.
-    +1 Coin = 1 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 2 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 3 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 4 all together.
-  RebuildMonument bought Monument.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Silver into hand.
-  RebuildMonument Drew Province into hand.
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument ends turn with deck: Copper(7), Duchy(4), Monument(2), Province(1), Rebuild(3), Silver(3), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  BigMoneyDelayed Played Gold.
+BigMoneyDoubleJack begins turn
+With hand: Gold,JackOfAllTrades,Silver,Silver,Silver,
+  BigMoneyDoubleJack Played JackOfAllTrades.
+    BigMoneyDoubleJack gained Silver.
+    BigMoneyDoubleJack Revealed Silver.
+    BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
+  BigMoneyDoubleJack Played Silver.
     +2 Coin = 5 all together.
-  BigMoneyDelayed Played Silver.
+  BigMoneyDoubleJack Played Silver.
     +2 Coin = 7 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyDoubleJack Played Silver.
+    +2 Coin = 9 all together.
+  BigMoneyDoubleJack Played Silver.
+    +2 Coin = 11 all together.
+  BigMoneyDoubleJack bought Province.
+  BigMoneyDoubleJack Drew Province into hand.
+  BigMoneyDoubleJack Drew Gold into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Gold into hand.
+  BigMoneyDoubleJack Drew JackOfAllTrades into hand.
+  BigMoneyDoubleJack ends turn with deck: Copper(7), Estate(2), Gold(3), JackOfAllTrades(2), Province(2), Silver(10), 
+
+BigMoneyWithFishingDoubleJack begins turn
+With hand: Copper,Gold,Province,Silver,Silver,
+  BigMoneyWithFishingDoubleJack Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithFishingDoubleJack Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithFishingDoubleJack Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 8 all together.
-  BigMoneyDelayed bought Province.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(5), Province(2), Silver(5), 
+  BigMoneyWithFishingDoubleJack bought Province.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Gold into hand.
+  BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Province(4), Silver(6), 
 
 ROUND 13
 -------------
-RebuildMonument begins turn
-With hand: Copper,Copper,Province,Rebuild,Silver,
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Province.
-      RebuildMonument Revealed Rebuild.
-      RebuildMonument Revealed Silver.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Duchy.
-      RebuildMonument Discarded Rebuild.
-      RebuildMonument Discarded Silver.
-      RebuildMonument Discarded Copper.
-    RebuildMonument trashed Duchy.
-    RebuildMonument gained Province.
-  RebuildMonument Played Silver.
-    +2 Coin = 2 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 3 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 4 all together.
-  RebuildMonument bought Monument.
-  RebuildMonument Drew Duchy into hand.
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument Drew Duchy into hand.
-  RebuildMonument Drew Silver into hand.
-  RebuildMonument Drew Monument into hand.
-  RebuildMonument ends turn with deck: Copper(7), Duchy(3), Monument(3), Province(2), Rebuild(3), Silver(3), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Estate,Gold,Gold,Silver,
-  BigMoneyDelayed Played Gold.
+BigMoneyDoubleJack begins turn
+With hand: Copper,Gold,Gold,JackOfAllTrades,Province,
+  BigMoneyDoubleJack Played JackOfAllTrades.
+    BigMoneyDoubleJack gained Silver.
+    BigMoneyDoubleJack Revealed Copper.
+      BigMoneyDoubleJack Discarded Copper.
+      BigMoneyDoubleJack Discarded Copper.
+    BigMoneyDoubleJack Drew Estate into hand.
+  BigMoneyDoubleJack Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDelayed Played Gold.
+  BigMoneyDoubleJack Played Gold.
     +3 Coin = 6 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyDoubleJack Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyDoubleJack bought Duchy.
+  BigMoneyDoubleJack Drew Estate into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack ends turn with deck: Copper(7), Duchy(1), Estate(2), Gold(3), JackOfAllTrades(2), Province(2), Silver(11), 
+
+BigMoneyWithFishingDoubleJack begins turn
+With hand: Copper,Copper,Gold,JackOfAllTrades,Silver,
+  BigMoneyWithFishingDoubleJack Played JackOfAllTrades.
+    BigMoneyWithFishingDoubleJack gained Silver.
+    BigMoneyWithFishingDoubleJack reshuffled
+    BigMoneyWithFishingDoubleJack Revealed Silver.
+    BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithFishingDoubleJack Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithFishingDoubleJack Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 9 all together.
-  BigMoneyDelayed bought Province.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Province into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(5), Province(3), Silver(5), 
+  BigMoneyWithFishingDoubleJack bought Province.
+  BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack Drew Fishing Village into hand.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Gold into hand.
+  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Province(5), Silver(7), 
 
 ROUND 14
 -------------
-RebuildMonument begins turn
-With hand: Duchy,Duchy,Monument,Rebuild,Silver,
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Province.
-      RebuildMonument reshuffled
-      RebuildMonument Revealed Silver.
-      RebuildMonument Revealed Rebuild.
-      RebuildMonument Revealed Duchy.
-      RebuildMonument Discarded Silver.
-      RebuildMonument Discarded Rebuild.
-    RebuildMonument trashed Duchy.
-    RebuildMonument gained Province.
-  RebuildMonument Played Monument.
+BigMoneyDoubleJack begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoneyDoubleJack Played Silver.
     +2 Coin = 2 all together.
-  RebuildMonument Played Silver.
-    +2 Coin = 4 all together.
-  RebuildMonument bought Estate.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument Drew Copper into hand.
-  RebuildMonument ends turn with deck: Copper(7), Duchy(2), Estate(1), Monument(3), Province(3), Rebuild(3), Silver(3), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Estate,Estate,Province,
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDelayed bought Estate.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(4), Gold(5), Province(3), Silver(5), 
-
-ROUND 15
--------------
-RebuildMonument begins turn
-With hand: Copper,Copper,Copper,Copper,Rebuild,
-  RebuildMonument Played Rebuild.
-    +1 Actions = 1 all together.
-    RebuildMonument named Province.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Silver.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Copper.
-      RebuildMonument Revealed Province.
-      RebuildMonument Revealed Monument.
-      RebuildMonument Revealed Monument.
-      RebuildMonument Revealed Province.
-      RebuildMonument reshuffled
-      RebuildMonument Revealed Duchy.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Silver.
-      RebuildMonument Discarded Province.
-      RebuildMonument Discarded Monument.
-      RebuildMonument Discarded Monument.
-      RebuildMonument Discarded Province.
-      RebuildMonument Discarded Copper.
-      RebuildMonument Discarded Copper.
-    RebuildMonument trashed Duchy.
-    RebuildMonument gained Province.
-  RebuildMonument Played Copper.
-    +1 Coin = 1 all together.
-  RebuildMonument Played Copper.
-    +1 Coin = 2 all together.
-  RebuildMonument Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 3 all together.
-  RebuildMonument Played Copper.
+  BigMoneyDoubleJack Played Copper.
     +1 Coin = 4 all together.
-  RebuildMonument bought Estate.
-  RebuildMonument Drew Silver into hand.
-  RebuildMonument Drew Duchy into hand.
-  RebuildMonument Drew Rebuild into hand.
-  RebuildMonument Drew Monument into hand.
-  RebuildMonument Drew Province into hand.
-  RebuildMonument ends turn with deck: Copper(7), Duchy(1), Estate(2), Monument(3), Province(4), Rebuild(3), Silver(3), 
+  BigMoneyDoubleJack Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDoubleJack bought Duchy.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Copper into hand.
+  BigMoneyDoubleJack Drew Silver into hand.
+  BigMoneyDoubleJack ends turn with deck: Copper(7), Duchy(2), Estate(2), Gold(3), JackOfAllTrades(2), Province(2), Silver(11), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyDelayed Played Copper.
+BigMoneyWithFishingDoubleJack begins turn
+With hand: Copper,Fishing Village,Gold,Silver,Silver,
+  BigMoneyWithFishingDoubleJack Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  BigMoneyWithFishingDoubleJack Played Gold.
+    +3 Coin = 4 all together.
+  BigMoneyWithFishingDoubleJack Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneyWithFishingDoubleJack Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyWithFishingDoubleJack Played Copper.
     +1 Coin = 9 all together.
-  BigMoneyDelayed bought Province.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Province into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(4), Gold(5), Province(4), Silver(5), 
+  BigMoneyWithFishingDoubleJack bought Province.
+  BigMoneyWithFishingDoubleJack Drew Copper into hand.
+  BigMoneyWithFishingDoubleJack Drew Silver into hand.
+  BigMoneyWithFishingDoubleJack Drew Province into hand.
+  BigMoneyWithFishingDoubleJack Drew JackOfAllTrades into hand.
+  BigMoneyWithFishingDoubleJack Drew Estate into hand.
+  BigMoneyWithFishingDoubleJack ends turn with deck: Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Province(6), Silver(7), 
 
-Game ended in 15 turns.
-RebuildMonument Won!
-RebuildMonument total score: 33
-  Copper(7), Duchy(1), Estate(2), Monument(3), Province(4), Rebuild(3), Silver(3), 
-BigMoneyDelayed total score: 28
-  Copper(7), Estate(4), Gold(5), Province(4), Silver(5), 
-Trash contains: Duchy(4), Estate(3), 
+Game ended in 14 turns.
+BigMoneyWithFishingDoubleJack Won!
+BigMoneyDoubleJack total score: 20
+  Copper(7), Duchy(2), Estate(2), Gold(3), JackOfAllTrades(2), Province(2), Silver(11), 
+BigMoneyWithFishingDoubleJack total score: 37
+  Copper(7), Estate(1), Fishing Village(1), Gold(4), JackOfAllTrades(2), Province(6), Silver(7), 
+Trash contains: Estate(3), 
 
-RebuildMonument GainSequence is:
-  Monument, Silver, Rebuild, Rebuild, Duchy, 
-  Silver, Rebuild, Duchy, Silver, Duchy, 
-  Duchy, Province, Duchy, Monument, Province, 
-  Monument, Province, Estate, Province, Estate, 
+BigMoneyDoubleJack GainSequence is:
+  JackOfAllTrades, Silver, Silver, Silver, Silver, 
+  Gold, Silver, Silver, JackOfAllTrades, Gold, 
+  Gold, Silver, Province, Silver, Silver, 
+  Silver, Province, Silver, Duchy, Duchy, 
 
-BigMoneyDelayed GainSequence is:
-  Silver, Silver, Silver, Silver, Gold, 
-  Silver, Gold, Gold, Gold, Province, 
-  Gold, Province, Province, Estate, Province, 
+BigMoneyWithFishingDoubleJack GainSequence is:
+  Fishing Village, JackOfAllTrades, JackOfAllTrades, Silver, Silver, 
+  Silver, Gold, Gold, Silver, Gold, 
+  Silver, Gold, Province, Silver, Province, 
+  Province, Province, Silver, Province, Province, 
 
