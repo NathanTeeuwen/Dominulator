@@ -22,20 +22,21 @@ namespace Dominion
             this.protoType = protoType;
         }
 
-        public bool IsType(Type card)
+        public bool IsType(Card card)
         {
             if (this.protoType.Is(card))
                 return true;
 
-            if (card.BaseType != typeof(Card))
-                return IsType(card.BaseType);
+            if (card.isRuins && this.protoType.Equals(Card.Type<CardTypes.Ruins>()))
+                return true;            
 
             return false;
         }
 
         public bool IsType<T>()
+            where T: Card, new()
         {
-            return IsType(typeof(T));
+            return IsType(Card.Type<T>());
         }
 
         public Card ProtoTypeCard

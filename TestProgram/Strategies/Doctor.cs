@@ -35,7 +35,7 @@ namespace Program
                     return gameState.players.CurrentPlayer.AvailableCoins;
                 }
 
-                public override Type NameACard(GameState gameState)
+                public override Card NameACard(GameState gameState)
                 {                    
                     return GetCardTypeToTrash(gameState);
                 }
@@ -45,9 +45,9 @@ namespace Program
                     return PlayerActionChoice.Trash;
                 }
 
-                public override Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
+                public override Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
                 {
-                    return player.CardsBeingRevealed.FirstOrDefault().GetType();
+                    return player.CardsBeingRevealed.FirstOrDefault();
                 }
             }
 
@@ -56,14 +56,14 @@ namespace Program
                 return GetCardTypeToTrash(gameState) != null;
             }
 
-            static Type GetCardTypeToTrash(GameState gameState)
+            static Card GetCardTypeToTrash(GameState gameState)
             {
                 PlayerState currentPlayer = gameState.players.CurrentPlayer;
 
                 if (currentPlayer.CardsInDeck.Count() <= 3 &&
                     CountInDeck<CardTypes.Estate>(gameState) > 0)
                 {
-                    return typeof(CardTypes.Estate);
+                    return Card.Type<CardTypes.Estate>();
                 }
 
                 int countCopper = CountMightDraw<CardTypes.Copper>(gameState, 3);
@@ -75,7 +75,7 @@ namespace Program
                 if (countCopper + countEstate == 0)
                     return null;
                 
-                return countCopper > countEstate ? typeof(CardTypes.Copper) : typeof(CardTypes.Estate);
+                return countCopper > countEstate ? Card.Type<CardTypes.Copper>() : Card.Type<CardTypes.Estate>();
             }
 
             private static CardPickByPriority PurchaseOrder()

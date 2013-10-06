@@ -58,6 +58,20 @@ namespace Dominion
             return result;
         }
 
+        public bool HasCard(Card card)
+        {
+            for (int cardIndex = 0; cardIndex < this.cards.Count; ++cardIndex)
+            {
+                Card cardCurrent = this.cards[cardIndex];
+                if (cardCurrent.Equals(card))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public bool HasCard(CardPredicate predicate)
         {
             for (int cardIndex = 0; cardIndex < this.cards.Count; ++cardIndex)

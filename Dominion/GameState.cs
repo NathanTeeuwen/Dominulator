@@ -64,7 +64,7 @@ namespace Dominion
                     }
                     else
                     {
-                        player.GainCardsFromSupply(this, pair.Card.GetType(), pair.Count);
+                        player.GainCardsFromSupply(this, pair.Card, pair.Count);
                     }
                 }
             }                                        
@@ -291,7 +291,7 @@ namespace Dominion
             return currentPlayer.AvailableCoins >= card.CurrentCoinCost(currentPlayer) &&
                        this.GetPile(card).Any() &&
                        !card.IsRestrictedFromBuy(currentPlayer, this) &&
-                       !currentPlayer.turnCounters.cardsBannedFromPurchase.Contains(card.GetType());
+                       !currentPlayer.turnCounters.cardsBannedFromPurchase.Contains(card);
         }
 
         private void DoBuyPhase(PlayerState currentPlayer)
@@ -299,7 +299,7 @@ namespace Dominion
             currentPlayer.playPhase = PlayPhase.Buy;
             while (currentPlayer.turnCounters.AvailableBuys > 0)
             {
-                Type cardType = currentPlayer.actions.GetCardFromSupplyToBuy(this, CardAvailableForPurchaseForCurrentPlayer);
+                Card cardType = currentPlayer.actions.GetCardFromSupplyToBuy(this, CardAvailableForPurchaseForCurrentPlayer);
                 if (cardType == null)
                 {
                     return;
@@ -359,7 +359,7 @@ namespace Dominion
             currentPlayer.playPhase = PlayPhase.PlayTreasure;
             while (true)
             {
-                Type cardTypeToPlay = currentPlayer.actions.GetTreasureFromHandToPlay(this, acceptableCard => true, isOptional:true);
+                Card cardTypeToPlay = currentPlayer.actions.GetTreasureFromHandToPlay(this, acceptableCard => true, isOptional:true);
                 if (cardTypeToPlay == null)
                 {
                     break;
@@ -385,14 +385,9 @@ namespace Dominion
             {
                 throw new Exception("Card type does not have a special pile");
             }
-        }
+        }        
 
-        public PileOfCards GetPile(Card card)
-        {
-            return GetPile(card.GetType());
-        }
-
-        public PileOfCards GetPile(Type cardType)
+        public PileOfCards GetPile(Card cardType)
         {
             var result = GetPile(this.supplyPiles, cardType);
             if (result != null)
@@ -403,7 +398,7 @@ namespace Dominion
             return result;
         }
 
-        private static PileOfCards GetPile(PileOfCards[] piles, Type cardType)
+        private static PileOfCards GetPile(PileOfCards[] piles, Card cardType)
         {
             for (int i = 0; i < piles.Length; ++i)
             {
@@ -417,12 +412,13 @@ namespace Dominion
             return null;
         }       
 
-        public PileOfCards GetPile<cardType>()
+        public PileOfCards GetPile<T>()
+            where T: Card, new()
         {
-            return GetPile(typeof(cardType));            
+            return GetPile(Card.Type<T>());            
         }
 
-        public Card PlayerGainCardFromSupply(Type cardType, PlayerState playerState, DeckPlacement defaultLocation = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)
+        public Card PlayerGainCardFromSupply(Card cardType, PlayerState playerState, DeckPlacement defaultLocation = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)
         {            
             PileOfCards pile = this.GetPile(cardType);
             if (pile == null)
@@ -455,7 +451,7 @@ namespace Dominion
         }
 
         internal bool DoesSupplyHaveCard<T>()
-            where T : Card
+            where T : Card, new()
         {
             return this.supplyPiles.Select( pile => pile.ProtoTypeCard.Is<T>()).Any();
         }

@@ -29,21 +29,21 @@ namespace Program
             return result;
         }
 
-        public Type GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
+        public Card GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
         {
             foreach (CardAcceptance acceptance in this.cardAcceptances)
             {
                 if (cardPredicate(acceptance.card) &&
                     acceptance.match(gameState))
                 {                    
-                    return acceptance.card.GetType();
+                    return acceptance.card;
                 }
             }
             
             return null;
         }
 
-        public Type GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate)
+        public Card GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate)
         {
             for (int i = this.cardAcceptances.Length - 1; i >= 0; i--)
             {
@@ -51,7 +51,7 @@ namespace Program
                 if (cardPredicate(acceptance.card) &&
                     acceptance.match(gameState))
                 {
-                    return acceptance.card.GetType();
+                    return acceptance.card;
                 }
             }
 

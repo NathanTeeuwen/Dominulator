@@ -30,27 +30,27 @@ namespace Program
                 {
                 }
 
-                public override Type NameACard(GameState gameState)
+                public override Card NameACard(GameState gameState)
                 {
                     
                     PlayerState currentPlayer = gameState.players.CurrentPlayer;
                     
                     if (CountOfPile<CardTypes.Duchy>(gameState) == 0)
                     {
-                        return typeof(CardTypes.Estate);
+                        return Card.Type<CardTypes.Estate>();
                     }
 
                     if (CountInDeckAndDiscard<CardTypes.Province>(gameState) > 0)
                     {
-                        return typeof(CardTypes.Province);
+                        return Card.Type<CardTypes.Province>();
                     }
 
                     if (CountInDeckAndDiscard<CardTypes.Estate>(gameState) > 0)
                     {
-                        return typeof(CardTypes.Duchy);
+                        return Card.Type<CardTypes.Duchy>();
                     }                    
                     
-                    return typeof(CardTypes.Province);
+                    return Card.Type<CardTypes.Province>();
                 }
             }
 

@@ -34,9 +34,9 @@ namespace Program
                 }
 
                 // for scout
-                override public Type GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player)
+                override public Card GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player)
                 {
-                    return player.CardsBeingRevealed.OrderBy(card => card, new OrderCardByMostValued(player)).First().GetType();
+                    return player.CardsBeingRevealed.OrderBy(card => card, new OrderCardByMostValued(player)).First();
                 }
 
                 class OrderCardByMostValued
@@ -64,21 +64,21 @@ namespace Program
                 }
 
                 // for mystic
-                override public Type GuessCardTopOfDeck(GameState gameState)
+                override public Card GuessCardTopOfDeck(GameState gameState)
                 {
                     PlayerState currentPlayer = gameState.players.CurrentPlayer;
                     if (currentPlayer.KnownCardsInDeck.Any())
                     {
-                        return currentPlayer.KnownCardsInDeck.First().GetType();
+                        return currentPlayer.KnownCardsInDeck.First();
                     }
 
                     IEnumerable<Card> cards = currentPlayer.CardsInDeck.Any() ? currentPlayer.CardsInDeck : currentPlayer.CardsInDeckAndDiscard;
                     cards = cards.Where(card => !card.Is<CardTypes.Estate>() && !card.isShelter);
 
                     if (cards.Any())
-                        return MostCommonCard(cards).GetType();                    
+                        return MostCommonCard(cards);
                     else
-                        return typeof(CardTypes.Estate);
+                        return Card.Type<CardTypes.Estate>();
                 }
 
                 // for playing mining village

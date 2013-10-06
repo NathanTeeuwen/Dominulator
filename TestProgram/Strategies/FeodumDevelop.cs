@@ -71,7 +71,7 @@ namespace Program
             {
                 var currentPlayer = gameState.players.CurrentPlayer;
 
-                Type result;
+                Card result;
                 if (currentPlayer.Hand.Where(card => card.Is<CardTypes.Develop>()).Count() > 1)
                 {
                     result = TrashOrder().GetPreferredCard(gameState, card => currentPlayer.Hand.HasCard(card));

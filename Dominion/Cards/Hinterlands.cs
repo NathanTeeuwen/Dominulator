@@ -150,7 +150,7 @@ namespace Dominion.CardTypes
         {
             foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
             {
-                otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Silver));
+                otherPlayer.GainCardFromSupply(gameState, Card.Type<CardTypes.Silver>());
             }
 
             return DeckPlacement.Default;
@@ -366,7 +366,7 @@ namespace Dominion.CardTypes
             CardPredicate acceptableCards = card => card.Is<Silver>() || card.Is<Gold>();
             if (otherPlayer.cardsBeingRevealed.HasCard(acceptableCards))
             {
-                Type cardTypeToTrash = currentPlayer.actions.GetCardFromRevealedCardsToTrash(gameState, otherPlayer, acceptableCards);
+                Card cardTypeToTrash = currentPlayer.actions.GetCardFromRevealedCardsToTrash(gameState, otherPlayer, acceptableCards);
 
                 cardtoTrash = otherPlayer.cardsBeingRevealed.RemoveCard(cardTypeToTrash);
                 if (cardtoTrash == null)

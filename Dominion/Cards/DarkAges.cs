@@ -280,7 +280,7 @@ namespace Dominion.CardTypes
             switch (choice)
             {
                 case PlayerActionChoice.Discard: currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false); break;
-                case PlayerActionChoice.GainCard: currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Copper)); break;
+                case PlayerActionChoice.GainCard: currentPlayer.GainCardFromSupply<CardTypes.Copper>(gameState); break;
                 case PlayerActionChoice.TopDeck: currentPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard => true, isOptional: false); break;
             }
 
@@ -293,7 +293,7 @@ namespace Dominion.CardTypes
             {
                 case PlayerActionChoice.PlusCoin: currentPlayer.AddCoins(3); break;
                 case PlayerActionChoice.Trash: currentPlayer.TrashHand(gameState); break;
-                case PlayerActionChoice.GainCard: currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Duchy)); break;
+                case PlayerActionChoice.GainCard: currentPlayer.GainCardFromSupply<CardTypes.Duchy>(gameState); break;
             }
         }
     }
@@ -328,7 +328,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruins));            
+            otherPlayer.GainCardFromSupply<CardTypes.Ruins>(gameState);            
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
@@ -364,8 +364,8 @@ namespace Dominion.CardTypes
 
         public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruins));
-            currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruins));
+            currentPlayer.GainCardFromSupply<CardTypes.Ruins>(gameState);
+            currentPlayer.GainCardFromSupply<CardTypes.Ruins>(gameState);
             return DeckPlacement.Default;
         }
     }    
@@ -380,7 +380,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardsFromSupply(gameState, typeof(CardTypes.Silver), 3);
+            currentPlayer.GainCardsFromSupply(gameState, Card.Type<CardTypes.Silver>(), 3);
         }
 
         private static int CountVictoryPoints(PlayerState player)
@@ -568,7 +568,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Ruins));
+            otherPlayer.GainCardFromSupply<CardTypes.Ruins>(gameState);
         }
     }
 
@@ -597,7 +597,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             //currentPlayer.gameLog.LogDeck(gameState.players.CurrentPlayer);
-            Type cardType = currentPlayer.GuessCardTopOfDeck(gameState);
+            Card cardType = currentPlayer.GuessCardTopOfDeck(gameState);
             currentPlayer.RevealCardsFromDeck(1);
             if (currentPlayer.cardsBeingRevealed.HasCard(cardType))
             {
@@ -704,7 +704,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Type cardType = currentPlayer.RequestPlayerNameACard(gameState);
+            Card cardType = currentPlayer.RequestPlayerNameACard(gameState);
 
             Card foundCard = null;
             gameState.gameLog.PushScope();

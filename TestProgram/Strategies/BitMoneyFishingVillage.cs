@@ -28,7 +28,7 @@ namespace Program
                            CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count <= 4),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count <= 2),
                            CardAcceptance.For<CardTypes.Gold>(),
-                           new CardAcceptance(withCard, gameState => CountAllOwned(withCard.GetType(), gameState) < count),
+                           new CardAcceptance(withCard, gameState => CountAllOwned(withCard, gameState) < count),
                            CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count < 4),
                            CardAcceptance.For<T>());
             }   

@@ -13,7 +13,7 @@ namespace Dominion
         private int availableBuys;
         private int availableCoins;
         private int availableCoinTokens;
-        internal HashSet<Type> cardsBannedFromPurchase = new HashSet<Type>();
+        internal SetOfCards cardsBannedFromPurchase = new SetOfCards();
         internal int copperAdditionalValue = 0;
 
         internal void InitializeTurn()

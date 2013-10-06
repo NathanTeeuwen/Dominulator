@@ -38,6 +38,7 @@ namespace Program
             }
 
             private static bool ShouldByLastCard<T>(GameState gameState)
+                where T : Card, new()
             {
                 if (CountOfPile<T>(gameState) != 1)
                     return true;

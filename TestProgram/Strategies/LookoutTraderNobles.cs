@@ -30,7 +30,7 @@ namespace Program
                 {
                 }
 
-                override public Type GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
+                override public Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
                 {
                     return null;
                 }

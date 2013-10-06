@@ -30,11 +30,11 @@ namespace Program
                 {
                 }
 
-                public override Type GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player)                
+                public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player)                
                 {
                     BagOfCards revealedCards = player.CardsBeingRevealed;
                     var currentPlayer = gameState.players.CurrentPlayer;
-                    Type result = TopDeckOrder().GetPreferredCard(
+                    Card result = TopDeckOrder().GetPreferredCard(
                         gameState,
                         card => revealedCards.HasCard(card.GetType()));
 
@@ -48,16 +48,16 @@ namespace Program
                         bool shouldDiscard = card.isVictory || card.Is<Copper>();
                         if (!shouldDiscard)
                         {
-                            return card.GetType();
+                            return card;
                         }
                     }
 
                     return null;
                 }
 
-                public override Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
+                public override Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
                 {
-                    return player.CardsBeingRevealed.FirstOrDefault().GetType();
+                    return player.CardsBeingRevealed.FirstOrDefault();
                 }
 
                 public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)

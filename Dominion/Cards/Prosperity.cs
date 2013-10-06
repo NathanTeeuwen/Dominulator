@@ -89,7 +89,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Type cardTypeToBan = gameState.players.PlayerLeft.actions.BanCardForCurrentPlayerPurchase(gameState);
+            Card cardTypeToBan = gameState.players.PlayerLeft.actions.BanCardForCurrentPlayerPurchase(gameState);
 
             currentPlayer.turnCounters.cardsBannedFromPurchase.Add(cardTypeToBan);
         }
@@ -203,7 +203,7 @@ namespace Dominion.CardTypes
         {
             if (boughtCard.isVictory)
             {
-                currentPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Gold));
+                currentPlayer.GainCardFromSupply(gameState, Card.Type<CardTypes.Gold>());
             }
         }
     }
@@ -271,7 +271,7 @@ namespace Dominion.CardTypes
 
             if (revealedCard != null)
             {
-                currentPlayer.GainCardFromSupply(gameState, revealedCard.GetType());
+                currentPlayer.GainCardFromSupply(gameState, revealedCard);
             }
 
             currentPlayer.MoveRevealedCardToHand(revealedCard);
@@ -290,8 +290,8 @@ namespace Dominion.CardTypes
         {
             if (!otherPlayer.RequestPlayerDiscardCardFromHand(gameState, card => card.isCurse, true))
             {
-                otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Curse));
-                otherPlayer.GainCardFromSupply(gameState, typeof(CardTypes.Copper));
+                otherPlayer.GainCardFromSupply<CardTypes.Curse>(gameState);
+                otherPlayer.GainCardFromSupply<CardTypes.Copper>(gameState);
             }
         }
     }
@@ -382,7 +382,7 @@ namespace Dominion.CardTypes
         {
             if (boughtCard.CurrentCoinCost(currentPlayer) <= 4 && !boughtCard.isVictory)
             {
-                currentPlayer.GainCardFromSupply(gameState, boughtCard.GetType());
+                currentPlayer.GainCardFromSupply(gameState, boughtCard);
             }
         }
     }

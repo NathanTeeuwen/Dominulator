@@ -29,9 +29,9 @@ namespace Program
                 {
                 }
 
-                public override Type NameACard(GameState gameState)
+                public override Card NameACard(GameState gameState)
                 {
-                    return typeof(CardTypes.Duchy);
+                    return Card.Type<CardTypes.Duchy>();
                 }
             }
 

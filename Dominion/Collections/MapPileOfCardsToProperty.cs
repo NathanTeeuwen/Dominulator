@@ -28,20 +28,7 @@ namespace Dominion
             {
                 this.array[this.GetIndexForPile(GetPile(card))] = value;
             }
-        }
-
-        public T this[Type card]
-        {
-            get
-            {
-                return this.array[this.GetIndexForPile(GetPile(card))];
-            }
-
-            set
-            {
-                this.array[this.GetIndexForPile(GetPile(card))] = value;
-            }
-        }
+        }       
 
         public T this[PileOfCards pileOfCards]
         {
@@ -54,14 +41,9 @@ namespace Dominion
             {
                 this.array[this.GetIndexForPile(pileOfCards)] = value;
             }
-        }
+        }      
 
-        private PileOfCards GetPile(Card card)
-        {
-            return GetPile(card.GetType());
-        }
-
-        private PileOfCards GetPile(Type cardType)
+        private PileOfCards GetPile(Card cardType)
         {
             for (int i = 0; i < this.supplyPiles.Length; ++i)
             {

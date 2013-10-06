@@ -8,9 +8,9 @@ namespace Dominion
 {
     public class DefaultPlayerAction
         : IPlayerAction
-    {        
+    {
 
-        private Type NoCard()
+        private Card NoCard()
         {
             return null;
         }
@@ -20,7 +20,7 @@ namespace Dominion
 
         }
 
-        private Type PlayerMustMakeCardChoice()
+        private Card PlayerMustMakeCardChoice()
         {
             throw new NotImplementedException();
         }
@@ -45,7 +45,7 @@ namespace Dominion
             throw new NotImplementedException();
         }
 
-        private Type NoCardIfOptional(bool isOptional)
+        private Card NoCardIfOptional(bool isOptional)
         {
             if (isOptional)
             {
@@ -73,93 +73,93 @@ namespace Dominion
             NoDefaultAction();
         }
 
-        virtual public Type BanCardForCurrentPlayerRevealedCards(GameState gameState)
+        virtual public Card BanCardForCurrentPlayerRevealedCards(GameState gameState)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type BanCardForCurrentPlayerPurchase(GameState gameState)
+        virtual public Card BanCardForCurrentPlayerPurchase(GameState gameState)
         {            
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardPileFromSupply(GameState gameState)
+        virtual public Card GetCardPileFromSupply(GameState gameState)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        virtual public Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return NoCardIfOptional(isOptional);
         }
 
-        virtual public Type GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        virtual public Card GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
+        virtual public Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
         {
             return NoCard();
         }
 
-        virtual public Type GuessCardTopOfDeck(GameState gameState)
+        virtual public Card GuessCardTopOfDeck(GameState gameState)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type NameACard(GameState gameState)
+        virtual public Card NameACard(GameState gameState)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        virtual public Card GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return NoCardIfOptional(isOptional);   
         }
 
-        virtual public Type GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player)
+        virtual public Card GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromRevealedCardsToTrash(GameState gameState, PlayerState player, CardPredicate acceptableCard)
+        virtual public Card GetCardFromRevealedCardsToTrash(GameState gameState, PlayerState player, CardPredicate acceptableCard)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        virtual public Card GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromHandToPassLeft(GameState gameState)
+        virtual public Card GetCardFromHandToPassLeft(GameState gameState)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, PlayerState player, bool isOptional)
+        virtual public Card GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, PlayerState player, bool isOptional)
         {
             return NoCardIfOptional(isOptional);
         }
 
         // always optional
-        virtual public Type GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
+        virtual public Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        virtual public Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
+        virtual public Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromRevealedCardsToDiscard(GameState gameState, PlayerState player)
+        virtual public Card GetCardFromRevealedCardsToDiscard(GameState gameState, PlayerState player)
         {
             return PlayerMustMakeCardChoice();
         }
@@ -219,12 +219,12 @@ namespace Dominion
             return PlayerMustChooseNumber();
         }
 
-        virtual public Type GetCardFromHandToDeferToNextTurn(GameState gameState)
+        virtual public Card GetCardFromHandToDeferToNextTurn(GameState gameState)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromHandToIsland(GameState gameState)
+        virtual public Card GetCardFromHandToIsland(GameState gameState)
         {
             return PlayerMustMakeCardChoice();
         }
@@ -249,12 +249,12 @@ namespace Dominion
             return PlayerMustChooseNumber();
         }
 
-        virtual public Type GetCardFromPlayToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        virtual public Card GetCardFromPlayToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Type GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer)
+        virtual public Card GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer)
         {
             return PlayerMustMakeCardChoice();
         }

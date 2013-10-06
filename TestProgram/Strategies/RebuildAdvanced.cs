@@ -37,11 +37,10 @@ namespace Program
                 {
                 }
 
-                public override Type NameACard(GameState gameState)
+                public override Card NameACard(GameState gameState)
                 {
 
                     PlayerState currentPlayer = gameState.players.CurrentPlayer;
-
 
                     int pointLead = PlayersPointLead(gameState); 
 
@@ -53,7 +52,7 @@ namespace Program
                            CountInDeck<CardTypes.Duchy>(gameState) > 0 && 
                            CountInDeck<CardTypes.Estate>(gameState) > 0))
                     {
-                        return typeof(CardTypes.Duchy);
+                        return Card.Type<CardTypes.Duchy>();
                     }
 
                     //Name Province if you are ensured of gaining a Province
@@ -61,7 +60,7 @@ namespace Program
                         CountInDeck<CardTypes.Province>(gameState) >= 0 && 
                         CountInDeck<CardTypes.Duchy>(gameState) > 0)
                     {
-                        return typeof(CardTypes.Province);
+                        return Card.Type<CardTypes.Province>();
                     }
 
                     //Name Province if you are ensured of gaining a Province
@@ -69,14 +68,14 @@ namespace Program
                         && CountInDeckAndDiscard<CardTypes.Province>(gameState) >= 0
                         && CountInDeckAndDiscard<CardTypes.Duchy>(gameState) > 0)
                     {
-                        return typeof(CardTypes.Province);
+                        return Card.Type<CardTypes.Province>();
                     }
 
                     //Name Estate if you can end it with a win                    
                     if (CountInHand<CardTypes.Rebuild>(gameState) + 1 >= CountOfPile<CardTypes.Province>(gameState) && 
                         pointLead > 0)
                     {
-                        return typeof(CardTypes.Estate);
+                        return Card.Type<CardTypes.Estate>();
                     }
 
                     //Name Estate if it's the only thing left in your draw pile and the Duchies are gone
@@ -84,7 +83,7 @@ namespace Program
                         CountInDeck<CardTypes.Province>(gameState) == 0 && 
                         CountInDeck<CardTypes.Estate>(gameState) > 0)
                     {
-                        return typeof(CardTypes.Estate);
+                        return Card.Type<CardTypes.Estate>();
                     }
 
                     //Name Province if Duchy is in Draw and Draw contains more P than E
@@ -92,7 +91,7 @@ namespace Program
                         CountInDeck<CardTypes.Duchy>(gameState) > 0 && 
                         CountInDeck<CardTypes.Province>(gameState) > CountInDeck<CardTypes.Estate>(gameState))
                     {
-                        return typeof(CardTypes.Province);
+                        return Card.Type<CardTypes.Province>();
                     }
 
                     //Name Estate if you're ahead and both P and E are left in draw
@@ -101,7 +100,7 @@ namespace Program
                         CountInDeck<CardTypes.Estate>(gameState) > 0 && 
                         pointLead > 2)
                     {
-                        return typeof(CardTypes.Estate);
+                        return Card.Type<CardTypes.Estate>();
                     }
 
                     //Name Estate over Province if you're way ahead
@@ -111,7 +110,7 @@ namespace Program
                         CountInDeckAndDiscard<CardTypes.Estate>(gameState) > 0 && 
                         pointLead > 4)
                     {
-                        return typeof(CardTypes.Estate);
+                        return Card.Type<CardTypes.Estate>();
                     }
 
                     //Province -> Province when ahead without any Duchies left
@@ -119,7 +118,7 @@ namespace Program
                         CountAllOwned<CardTypes.Duchy>(gameState) == 0 &&
                         pointLead > 0)
                     {
-                        return typeof(CardTypes.Estate);
+                        return Card.Type<CardTypes.Estate>();
                     }
 
                     //Province -> Province when ahead without any Duchies not in hand
@@ -128,15 +127,15 @@ namespace Program
                         CountInDeckAndDiscard<CardTypes.Province>(gameState) > 0 && 
                         pointLead > 2)
                     {
-                        return typeof(CardTypes.Estate);
+                        return Card.Type<CardTypes.Estate>();
                     }
 
                     if (CountInDeckAndDiscard<CardTypes.Province>(gameState) > 0)
                     {
-                        return typeof(CardTypes.Province);
+                        return Card.Type<CardTypes.Province>();
                     }
 
-                    return typeof(CardTypes.Estate);
+                    return Card.Type<CardTypes.Estate>();
                 }
             }
 
@@ -216,7 +215,7 @@ namespace Program
                 public MyPlayerAction(int playerNumber)
                     : base(playerNumber,
                            "RebuildJack",
-                           Example<CardTypes.JackOfAllTrades>.Card,
+                           Card.Type<CardTypes.JackOfAllTrades>(),
                            gameState => CountAllOwned<CardTypes.JackOfAllTrades>(gameState) < 1)
                 {
                 }
@@ -237,7 +236,7 @@ namespace Program
                 public MyPlayerAction(int playerNumber)
                     : base(playerNumber,
                            "RebuildMonument",
-                           Example<CardTypes.Monument>.Card,
+                           Card.Type<CardTypes.Monument>(),
                            gameState => CountAllOwned<CardTypes.Monument>(gameState) < 2)
                 {
                 }

@@ -28,7 +28,7 @@ namespace Program
             private static ICardPicker PurchaseOrder(int followerCost)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(new CardTypes.TestCards.FollowersTest(followerCost), gameState => HasFollowers(gameState)),
+                           CardAcceptance.For(new CardTypes.TestCards.FollowersTest(followerCost), gameState => HasFollowers(gameState, followerCost)),
                            CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2 && ShouldBuyGreen(gameState)),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4 && ShouldBuyGreen(gameState)),
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2 && ShouldBuyGreen(gameState)),
@@ -44,9 +44,9 @@ namespace Program
                 return true;
             }
 
-            private static bool HasFollowers(GameState gameState)
+            private static bool HasFollowers(GameState gameState, int followersCost)
             {
-                return CountAllOwned<CardTypes.TestCards.FollowersTest>(gameState) == 0;
+                return CountAllOwned(new CardTypes.TestCards.FollowersTest(followersCost), gameState) == 0;
             }
 
             private static ICardPicker ActionOrder(int followersCost)

@@ -11,12 +11,12 @@ namespace Program
     public class MatchDescription
     {
         // e.g. countAllOwned<Province>(gameState) < 6
-        internal readonly Type cardType;
+        internal readonly Card cardType;
         internal readonly CountSource countSource;
         internal readonly Comparison comparison;
         internal int countThreshHold;
 
-        public MatchDescription(Type cardType, CountSource countSource, Comparison comparison, int threshhold)
+        public MatchDescription(Card cardType, CountSource countSource, Comparison comparison, int threshhold)
         {
             this.cardType = cardType;
             this.countSource = countSource;

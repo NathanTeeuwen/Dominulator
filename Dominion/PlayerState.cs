@@ -373,8 +373,14 @@ namespace Dominion
             }
         }
 
-        internal Card TrashCardFromHandOfType(GameState gameState, Type cardType, bool guaranteeInHand)
+        internal Card TrashCardFromHandOfType<T>(GameState gameState, bool guaranteeInHand)
+            where T : Card, new()
         {
+            return TrashCardFromHandOfType(gameState, Card.Type<T>(), guaranteeInHand);
+        }
+
+        internal Card TrashCardFromHandOfType(GameState gameState, Card cardType, bool guaranteeInHand)            
+        {            
             Card currentCard = this.RemoveCardFromHand(cardType);
             if (currentCard == null)
             {
@@ -443,7 +449,7 @@ namespace Dominion
             this.gameLog.PopScope();            
         }
 
-        internal Card RemoveCardFromHand(Type cardType)
+        internal Card RemoveCardFromHand(Card cardType)
         {
             return this.hand.RemoveCard(cardType);
         }
@@ -479,7 +485,7 @@ namespace Dominion
                 return false;
             }            
 
-            this.MoveCardFromHandToDiscard(card.GetType(), gameState);            
+            this.MoveCardFromHandToDiscard(card, gameState);            
 
             return true;        
         }
@@ -493,7 +499,7 @@ namespace Dominion
             }
         }
 
-        internal void MoveCardFromHandToIslandMat(Type cardType)
+        internal void MoveCardFromHandToIslandMat(Card cardType)
         {
             Card removedCard = this.Hand.RemoveCard(cardType);
             if (removedCard != null)
@@ -550,7 +556,7 @@ namespace Dominion
                 return null;
             }
 
-            Type cardTypeToPlay = isTreasure ? 
+            Card cardTypeToPlay = isTreasure ? 
                 this.actions.GetTreasureFromHandToPlay(gameState, acceptableCard, isOptional) :
                 this.actions.GetCardFromHandToPlay(gameState, acceptableCard, isOptional);
 
@@ -579,7 +585,7 @@ namespace Dominion
 
         internal PileOfCards RequestPlayerChooseCardPileFromSupply(GameState gameState)
         {
-            Type cardType = this.actions.GetCardPileFromSupply(gameState);
+            Card cardType = this.actions.GetCardPileFromSupply(gameState);
 
             PileOfCards pile = gameState.GetPile(cardType);
             if (pile == null)
@@ -617,8 +623,8 @@ namespace Dominion
             }
 
             // how do you know which player you are gaining for?
-            Type type = this.actions.GetCardFromSupplyToGain(gameState, acceptableCard, isOptional);
-            if (type == null)
+            Card cardType = this.actions.GetCardFromSupplyToGain(gameState, acceptableCard, isOptional);
+            if (cardType == null)
             {
                 if (isOptional)
                 {
@@ -627,7 +633,7 @@ namespace Dominion
                 throw new Exception("Must gain a card where " + description);
             }
 
-            Card gainedCard = gameState.PlayerGainCardFromSupply(type, playerGainingCard, defaultLocation);
+            Card gainedCard = gameState.PlayerGainCardFromSupply(cardType, playerGainingCard, defaultLocation);
             if (gainedCard == null)
             {
                 throw new Exception("Card specified can not be gained");
@@ -707,7 +713,7 @@ namespace Dominion
             {
                 return null;
             }
-            Type cardTypeToTrash = this.actions.GetCardFromHandToTrash(gameState, acceptableCardsToTrash, isOptional);
+            Card cardTypeToTrash = this.actions.GetCardFromHandToTrash(gameState, acceptableCardsToTrash, isOptional);
             if (cardTypeToTrash == null)
             {
                 if (isOptional)
@@ -753,7 +759,7 @@ namespace Dominion
                 return false;
             }
 
-            Type cardTypeToDiscard = this.actions.GetCardFromHandToDiscard(gameState, acceptableCardsToDiscard, this, isOptional);
+            Card cardTypeToDiscard = this.actions.GetCardFromHandToDiscard(gameState, acceptableCardsToDiscard, this, isOptional);
             if (cardTypeToDiscard == null)
             {
                 if (isOptional)
@@ -768,7 +774,7 @@ namespace Dominion
             else
             {
                 if (gameState.GetPile(cardTypeToDiscard) != null &&  // TODO: this currently can not find ruins ... rework this method so a card is returned instead of a type.
-                    !acceptableCardsToDiscard( gameState.GetPile(cardTypeToDiscard).ProtoTypeCard))
+                    !acceptableCardsToDiscard( cardTypeToDiscard))
                     throw new Exception("Card does not meet constraint: ");
             }
 
@@ -784,7 +790,7 @@ namespace Dominion
                 return false;
             }
 
-            Type cardTypeToDiscard = this.actions.GetCardFromOtherPlayersHandToDiscard(gameState, otherPlayer);
+            Card cardTypeToDiscard = this.actions.GetCardFromOtherPlayersHandToDiscard(gameState, otherPlayer);
             if (cardTypeToDiscard == null)
             {                
                 {
@@ -801,7 +807,7 @@ namespace Dominion
         {
             while (this.cardsBeingRevealed.Any)
             {
-                Type cardToPutOnTop = this.actions.GetCardFromRevealedCardsToPutOnDeck(gameState, this);
+                Card cardToPutOnTop = this.actions.GetCardFromRevealedCardsToPutOnDeck(gameState, this);
                 if (cardToPutOnTop == null)
                 {
                     throw new Exception("Player must choose a card to put on top of deck");
@@ -820,8 +826,8 @@ namespace Dominion
         {
             if (this.cardsBeingRevealed.Any)
             {
-                Type cardtoTrash = this.actions.GetCardFromRevealedCardsToTrash(gameState, this, acceptableCard => true);
-                if (cardtoTrash == typeof(CardTypes.Salvager))
+                Card cardtoTrash = this.actions.GetCardFromRevealedCardsToTrash(gameState, this, acceptableCard => true);
+                if (cardtoTrash.Is<CardTypes.Salvager>())
                 { int i = 0; i++; }
                 if (cardtoTrash == null)
                 {
@@ -836,7 +842,7 @@ namespace Dominion
         {
             if (this.cardsBeingRevealed.Any)
             {
-                Type cardToDiscard = this.actions.GetCardFromRevealedCardsToDiscard(gameState, this);
+                Card cardToDiscard = this.actions.GetCardFromRevealedCardsToDiscard(gameState, this);
                 if (cardToDiscard == null)
                 {
                     throw new Exception("Player must choose a card to trash");
@@ -851,7 +857,7 @@ namespace Dominion
             if (this.Hand.IsEmpty)
                 return null;
 
-            Type cardType = this.actions.GetCardFromHandToDeferToNextTurn(gameState);
+            Card cardType = this.actions.GetCardFromHandToDeferToNextTurn(gameState);
 
             Card cardToDefer = this.hand.RemoveCard(cardType);
             this.cardsToReturnToHandAtStartOfTurn.AddCard(cardToDefer);
@@ -866,7 +872,7 @@ namespace Dominion
                 return null;
             }
 
-            Type cardTypeToTopDeck = this.actions.GetCardFromHandToTopDeck(gameState, acceptableCard, isOptional);
+            Card cardTypeToTopDeck = this.actions.GetCardFromHandToTopDeck(gameState, acceptableCard, isOptional);
             if (cardTypeToTopDeck == null)
             {
                 if (isOptional)
@@ -908,7 +914,7 @@ namespace Dominion
                 return null;
             }
 
-            Type cardTypeToTopDeck = this.actions.GetCardFromPlayToTopDeck(gameState, acceptableCard, isOptional);
+            Card cardTypeToTopDeck = this.actions.GetCardFromPlayToTopDeck(gameState, acceptableCard, isOptional);
             if (cardTypeToTopDeck == null)
             {
                 if (isOptional)
@@ -945,7 +951,7 @@ namespace Dominion
                 return null;
             }
 
-            Type cardToReveal = this.actions.GetCardFromHandToReveal(gameState, 
+            Card cardToReveal = this.actions.GetCardFromHandToReveal(gameState, 
                 card => acceptableCard(card) && this.hand.HasCard(card));
             
             if (cardToReveal != null)
@@ -960,7 +966,7 @@ namespace Dominion
 
         internal Card RequestPlayerTopDeckCardFromRevealed(GameState gameState, bool isOptional)
         {
-            Type cardTypeToTopDeck = this.actions.GetCardFromRevealedCardsToTopDeck(gameState, this);
+            Card cardTypeToTopDeck = this.actions.GetCardFromRevealedCardsToTopDeck(gameState, this);
             if (cardTypeToTopDeck == null && !isOptional)
             {
                 throw new Exception("Must choose a card to top deck");
@@ -997,7 +1003,7 @@ namespace Dominion
                 return null;
             }
 
-            Type cardTypeToPassLeft = this.actions.GetCardFromHandToPassLeft(gameState);
+            Card cardTypeToPassLeft = this.actions.GetCardFromHandToPassLeft(gameState);
             if (cardTypeToPassLeft == null)
             {
                 throw new Exception("Player must choose a card to paass");
@@ -1057,50 +1063,52 @@ namespace Dominion
             this.MoveAllCardsToDiscard(this.hand, gameState);
         }
 
-        internal Type GuessCardTopOfDeck(GameState gameState)
+        internal Card GuessCardTopOfDeck(GameState gameState)
         {
-            Type cardType = this.actions.GuessCardTopOfDeck(gameState);
+            Card cardType = this.actions.GuessCardTopOfDeck(gameState);
             if (cardType == null)
             {
                 throw new Exception("Must name a card");
             }
 
-            gameState.gameLog.PlayerNamedCard(this, gameState.GetPile(cardType).ProtoTypeCard);
+            gameState.gameLog.PlayerNamedCard(this, cardType);
 
             return cardType;
         }
 
-        internal Type RequestPlayerNameACard(GameState gameState)
+        internal Card RequestPlayerNameACard(GameState gameState)
         {
-            Type cardType = this.actions.NameACard(gameState);
+            Card cardType = this.actions.NameACard(gameState);
             if (cardType == null)
             {
                 throw new Exception("Must name a card");
             }
 
-            gameState.gameLog.PlayerNamedCard(this, gameState.GetPile(cardType).ProtoTypeCard);
+            gameState.gameLog.PlayerNamedCard(this, cardType);
             return cardType;
         }        
 
-        internal Card GainCardFromSupply(GameState gameState, Type cardType, DeckPlacement defaultLocation = DeckPlacement.Discard)
+        internal Card GainCardFromSupply(GameState gameState, Card cardType, DeckPlacement defaultLocation = DeckPlacement.Discard)
         {
             return gameState.PlayerGainCardFromSupply(cardType, this, defaultLocation);
         }
 
-        internal void GainCardsFromSupply(GameState gameState, Type cardType, int count, DeckPlacement defaultLocation = DeckPlacement.Discard)
+        internal void GainCardsFromSupply(GameState gameState, Card cardType, int count, DeckPlacement defaultLocation = DeckPlacement.Discard)
         {
             for (int i = 0; i < count; ++i)
                 gameState.PlayerGainCardFromSupply(cardType, this, defaultLocation);
         }
 
-        internal void GainCardsFromSupply<CardType>(GameState gameState, int count, DeckPlacement defaultLocation = DeckPlacement.Discard)
+        internal void GainCardsFromSupply<T>(GameState gameState, int count, DeckPlacement defaultLocation = DeckPlacement.Discard)
+            where T: Card, new()
         {
-            GainCardsFromSupply(gameState, typeof(CardType), count, defaultLocation);
+            GainCardsFromSupply(gameState, Card.Type<T>(), count, defaultLocation);
         }
 
-        internal bool GainCardFromSupply<cardType>(GameState gameState)
+        internal bool GainCardFromSupply<T>(GameState gameState, DeckPlacement defaultLocation = DeckPlacement.Discard)
+            where T: Card, new()
         {
-            return gameState.PlayerGainCardFromSupply(typeof(cardType), this) != null;
+            return gameState.PlayerGainCardFromSupply(Card.Type<T>(), this, defaultLocation:defaultLocation) != null;
         }        
 
         internal void GainCard(GameState gameState, Card card, DeckPlacement defaultPlacement = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)
@@ -1214,7 +1222,7 @@ namespace Dominion
             // move Stash to where the user wants
         }
 
-        private Card RevealCardFromHand(Type cardTypeToDiscard, GameState gameState)
+        private Card RevealCardFromHand(Card cardTypeToDiscard, GameState gameState)
         {
             Card cardToReveal = this.hand.RemoveCard(cardTypeToDiscard);
             if (cardToReveal == null)
@@ -1228,7 +1236,7 @@ namespace Dominion
             return cardToReveal;
         }
 
-        private Card MoveCardFromHandToDiscard(Type cardTypeToDiscard, GameState gameState)
+        private Card MoveCardFromHandToDiscard(Card cardTypeToDiscard, GameState gameState)
         {
             Card cardToDiscard = this.hand.RemoveCard(cardTypeToDiscard);
             if (cardToDiscard == null)
@@ -1299,19 +1307,8 @@ namespace Dominion
             
             this.discard.AddCard(card);
         }
-
-        internal void MoveRevealedCardToDiscard(Card typeOfCard, GameState gameState)
-        {
-            Card card = this.cardsBeingRevealed.RemoveCard(typeOfCard);
-            if (card == null)
-            {
-                throw new Exception("Revealed cards did not have the specified card");
-            }
        
-            DiscardCard(card, gameState);
-        }
-
-        internal void MoveRevealedCardToDiscard(Type typeOfCard, GameState gameState)
+        internal void MoveRevealedCardToDiscard(Card typeOfCard, GameState gameState)
         {
             Card card = this.cardsBeingRevealed.RemoveCard(typeOfCard);
             if (card == null)
@@ -1321,13 +1318,8 @@ namespace Dominion
           
             this.DiscardCard(card, gameState);
         }
-
-        internal void MoveRevealedCardToTrash(Card card, GameState gameState)
-        {
-            MoveRevealedCardToTrash(card.GetType(), gameState);
-        }
-
-        internal void MoveRevealedCardToTrash(Type typeOfCard, GameState gameState)
+        
+        internal void MoveRevealedCardToTrash(Card typeOfCard, GameState gameState)
         {
             Card card = this.cardsBeingRevealed.RemoveCard(typeOfCard);
             if (card == null)
@@ -1360,14 +1352,9 @@ namespace Dominion
         internal void MoveLookedAtCardToTopOfDeck(Card card)
         {
             MoveRevealedCardToTopOfDeck(card);
-        }
+        }        
 
-        internal void MoveRevealedCardToTopOfDeck(Card card)
-        {
-            MoveRevealedCardToTopOfDeck(card.GetType());
-        }
-
-        internal void ReturnCardFromHandToSupply(Type typeOfCard, GameState gameState)
+        internal void ReturnCardFromHandToSupply(Card typeOfCard, GameState gameState)
         {
             Card cardToReturn = this.hand.RemoveCard(typeOfCard);
             if (cardToReturn == null)
@@ -1380,7 +1367,7 @@ namespace Dominion
             pile.AddCardToTop(cardToReturn);
         }
 
-        internal void MoveRevealedCardToTopOfDeck(Type typeOfCard)
+        internal void MoveRevealedCardToTopOfDeck(Card typeOfCard)
         {
             Card card = this.cardsBeingRevealed.RemoveCard(typeOfCard);
             if (card == null)
@@ -1410,14 +1397,9 @@ namespace Dominion
             this.cardsBeingRevealed.RemoveCard(card);
             this.hand.AddCard(card);
             return card;
-        }        
-
-        internal void MoveRevealedCardToHand(Card card)
-        {                        
-            MoveRevealedCardToHand(card.GetType());
-        }
+        }             
         
-        internal void MoveRevealedCardToHand(Type typeOfCard)
+        internal void MoveRevealedCardToHand(Card typeOfCard)
         {            
             Card card = this.cardsBeingRevealed.RemoveCard(typeOfCard);
             if (card == null)

@@ -306,7 +306,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Card card = currentPlayer.TrashCardFromHandOfType(gameState, typeof(Copper), guaranteeInHand: false);
+            Card card = currentPlayer.TrashCardFromHandOfType<Copper>(gameState, guaranteeInHand: false);
             if (card != null)
             {
                 currentPlayer.AddCoins(3);
@@ -384,7 +384,7 @@ namespace Dominion.CardTypes
             CardPredicate acceptableCards = card => card.isTreasure;
             if (otherPlayer.cardsBeingRevealed.HasCard(acceptableCards))
             {
-                Type cardTypeToTrash = currentPlayer.actions.GetCardFromRevealedCardsToTrash(gameState, otherPlayer, acceptableCards);
+                Card cardTypeToTrash = currentPlayer.actions.GetCardFromRevealedCardsToTrash(gameState, otherPlayer, acceptableCards);
 
                 cardtoTrash = otherPlayer.cardsBeingRevealed.RemoveCard(cardTypeToTrash);
                 if (cardtoTrash == null)

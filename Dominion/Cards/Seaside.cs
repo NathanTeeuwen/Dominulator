@@ -39,14 +39,14 @@ namespace Dominion.CardTypes
 
             for (int i = 0; i < returnCount; ++i)
             {
-                currentPlayer.ReturnCardFromHandToSupply(revealedCard.GetType(), gameState);
+                currentPlayer.ReturnCardFromHandToSupply(revealedCard, gameState);
             }
 
             foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
             {
                 if (!otherPlayer.IsAffectedByAttacks(gameState))
                 {
-                    otherPlayer.GainCardFromSupply(gameState, revealedCard.GetType());
+                    otherPlayer.GainCardFromSupply(gameState, revealedCard);
                 }
             }
         }
@@ -182,7 +182,7 @@ namespace Dominion.CardTypes
 
             if (!currentPlayer.hand.Any)
                 return;            
-            Type cardType = currentPlayer.actions.GetCardFromHandToIsland(gameState);            
+            Card cardType = currentPlayer.actions.GetCardFromHandToIsland(gameState);            
             currentPlayer.MoveCardFromHandToIslandMat(cardType);
         }
     }
@@ -393,7 +393,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
             otherPlayer.DiscardCardFromTopOfDeck();
-            otherPlayer.GainCardFromSupply(gameState, typeof(Curse), DeckPlacement.TopOfDeck);
+            otherPlayer.GainCardFromSupply<Curse>(gameState, DeckPlacement.TopOfDeck);
         }
     }
 
@@ -446,7 +446,7 @@ namespace Dominion.CardTypes
         {
             if (currentPlayer.MoveCardFromPlayToTrash(gameState))
             {
-                if (currentPlayer.TrashCardFromHandOfType(gameState, typeof(TreasureMap), guaranteeInHand: false) != null)
+                if (currentPlayer.TrashCardFromHandOfType<TreasureMap>(gameState, guaranteeInHand: false) != null)
                 {
                     currentPlayer.GainCardsFromSupply<Gold>(gameState, 4, DeckPlacement.TopOfDeck);
                 }

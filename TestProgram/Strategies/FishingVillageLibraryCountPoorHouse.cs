@@ -70,9 +70,9 @@ namespace Program
                     }
                 }
 
-                override public Type GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+                override public Card GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
                 {
-                    Type result = this.discardOrder.GetPreferredCardReverse(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card) && acceptableCard(card));
+                    Card result = this.discardOrder.GetPreferredCardReverse(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card) && acceptableCard(card));
                     if (result != null)
                     {
                         return result;

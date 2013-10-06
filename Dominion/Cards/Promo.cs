@@ -36,8 +36,8 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.RevealCardsFromDeck(5);
-            Type cardType = gameState.players.PlayerLeft.actions.BanCardForCurrentPlayerRevealedCards(gameState);
-            if (!currentPlayer.cardsBeingRevealed.HasCard(card => card.Is(cardType)))
+            Card cardType = gameState.players.PlayerLeft.actions.BanCardForCurrentPlayerRevealedCards(gameState);
+            if (!currentPlayer.cardsBeingRevealed.HasCard(cardType))
             {
                 throw new Exception("Must ban a card currently being revealed");
             }
@@ -74,10 +74,10 @@ namespace Dominion.CardTypes
                     }
                 case PlayerActionChoice.GainCard:
                     {
-                        currentPlayer.GainCardFromSupply(gameState, typeof(Gold));
+                        currentPlayer.GainCardFromSupply(gameState, Card.Type<Gold>());
                         foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
                         {
-                            otherPlayer.GainCardFromSupply(gameState, typeof(Silver));
+                            otherPlayer.GainCardFromSupply(gameState, Card.Type<Silver>());
                         }
                         break;
                     }

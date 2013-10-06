@@ -170,11 +170,11 @@ namespace Dominion.CardTypes
                 }
                 else if (currentPlayer.actions.ShouldGainCard(gameState, discardedCard))
                 {
-                    currentPlayer.GainCardFromSupply(gameState, discardedCard.GetType());
+                    currentPlayer.GainCardFromSupply(gameState, discardedCard);
                 }
                 else
                 {
-                    otherPlayer.GainCardFromSupply(gameState, discardedCard.GetType());
+                    otherPlayer.GainCardFromSupply(gameState, discardedCard);
                 }
             }
         }

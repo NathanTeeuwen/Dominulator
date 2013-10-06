@@ -28,7 +28,7 @@ namespace Dominion.CardTypes
             }
             else
             {
-                currentPlayer.GainCardFromSupply(gameState, typeof(Estate));
+                currentPlayer.GainCardFromSupply<Estate>(gameState);
             }
         }
     }
@@ -487,7 +487,7 @@ namespace Dominion.CardTypes
             switch (playerChoice)
             {
                 case PlayerActionChoice.Discard: otherPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false); break;
-                case PlayerActionChoice.GainCard: otherPlayer.GainCardFromSupply(gameState, typeof(Curse), DeckPlacement.Hand); break;
+                case PlayerActionChoice.GainCard: otherPlayer.GainCardFromSupply<Curse>(gameState, DeckPlacement.Hand); break;
                 default: throw new Exception("Invalid Choice");
             }
         }
@@ -507,7 +507,7 @@ namespace Dominion.CardTypes
             if (currentPlayer.RequestPlayerTrashCardsFromHand(gameState, 2, isOptional: false).Length == 2)
             {
                 // If you do, gain a silver card; put it into your hand
-                currentPlayer.GainCardFromSupply(gameState, typeof(Silver), DeckPlacement.Hand);
+                currentPlayer.GainCardFromSupply<Silver>(gameState, DeckPlacement.Hand);
             }
         }
     }
@@ -537,7 +537,7 @@ namespace Dominion.CardTypes
                 else
                 {
                     Card secondCard = card;
-                    if (!card.IsSameType(firstCard))
+                    if (!card.Is(firstCard))
                     {
                         GainBenefitFromCard(secondCard, currentPlayer);
                     }
@@ -598,7 +598,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Type cardType = currentPlayer.GuessCardTopOfDeck(gameState);
+            Card cardType = currentPlayer.GuessCardTopOfDeck(gameState);
 
             Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
             if (revealedCard.Is(cardType))

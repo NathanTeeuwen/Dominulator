@@ -84,6 +84,7 @@
     <Compile Include="Cards\TestCards.cs" />
     <Compile Include="Collections\MapPileOfCardsToProperty.cs" />
     <Compile Include="Collections\PileOfCards.cs" />
+    <Compile Include="Collections\SetOfCards.cs" />
     <Compile Include="SimpleDefinitions\CardCountPair.cs" />
     <Compile Include="SimpleDefinitions\CardPlacementPair.cs" />
     <Compile Include="SimpleDefinitions\CardRelativeCost.cs" />

@@ -14,11 +14,11 @@ namespace Program
             this.matchers = matchers;
         }
 
-        public Type GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
+        public Card GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
         {
             foreach (ICardPicker matcher in this.matchers)
             {
-                Type result = matcher.GetPreferredCard(gameState, cardPredicate);
+                Card result = matcher.GetPreferredCard(gameState, cardPredicate);
                 if (result != null)
                 {
                     return result;
@@ -28,12 +28,12 @@ namespace Program
             return null;
         }
 
-        public Type GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate)
+        public Card GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate)
         {
             for (int i = this.matchers.Length-1; i > 0; --i)            
             {
                 ICardPicker matcher = this.matchers[i];
-                Type result = matcher.GetPreferredCard(gameState, cardPredicate);
+                Card result = matcher.GetPreferredCard(gameState, cardPredicate);
                 if (result != null)
                 {
                     return result;

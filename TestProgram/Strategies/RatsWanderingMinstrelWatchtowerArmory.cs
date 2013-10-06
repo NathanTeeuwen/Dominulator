@@ -32,9 +32,9 @@ namespace Program
                 {
                 }
 
-                override public Type GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
+                override public Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
                 {
-                    return typeof(CardTypes.Watchtower);
+                    return Card.Type<CardTypes.Watchtower>();
                 }                
             }
 

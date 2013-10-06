@@ -20,6 +20,7 @@ namespace Program
         }        
 
         private static GameStatePredicate CountAllOwned<T>(RelativeAmount relativeAmount, int amount)
+            where T: Card, new()
         {
             switch (relativeAmount)
             {
@@ -51,7 +52,7 @@ namespace Program
         }
 
         public static bool CardBeingPlayedIs<T>(GameState gameState)
-                where T : Card
+                where T : Card, new()
         {
             var cardBeingPlayed = gameState.players.CurrentPlayer.CurrentCardBeingPlayed;
             return cardBeingPlayed != null && cardBeingPlayed.Is<T>();
@@ -60,41 +61,38 @@ namespace Program
         public static int CostOfCard<T>(GameState gameState)
             where T : Card, new()
         {
-            return Example<T>.Card.CurrentCoinCost(gameState.players.CurrentPlayer);
-        }
-
-        public static class Example<T>
-            where T: Card, new()
-        {
-            static public readonly T Card = new T();
-        }
+            return Card.Type<T>().CurrentCoinCost(gameState.players.CurrentPlayer);
+        }        
 
         public static int CountAllOwned<T>(GameState gameState)
+            where T : Card, new()
         {
-            return CountAllOwned(typeof(T), gameState);
+            return CountAllOwned(Card.Type<T>(), gameState);
         }
 
-        public static int CountAllOwned(Type cardType, GameState gameState)
+        public static int CountAllOwned(Card cardType, GameState gameState)
         {
-            return gameState.players.CurrentPlayer.AllOwnedCards.Where( card => card.Is(cardType)).Count();
+            return gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card.Is(cardType)).Count();
         }
 
-        public static int CountInHand(Type cardType, GameState gameState)
+        public static int CountInHand(Card cardType, GameState gameState)
         {
             return gameState.players.CurrentPlayer.Hand.Where(card => card.Is(cardType)).Count();
         }
 
         public static int CountInHand<T>(GameState gameState)
+            where T : Card, new()
         {
-            return CountInHand(typeof(T), gameState);
+            return CountInHand(Card.Type<T>(), gameState);
         }
 
         public static int CountOfPile<T>(GameState gameState)
+            where T: Card, new()
         {
-            return CountOfPile(typeof(T), gameState);
+            return CountOfPile(Card.Type<T>(), gameState);
         }
 
-        public static int CountOfPile(Type cardType, GameState gameState)
+        public static int CountOfPile(Card cardType, GameState gameState)
         {
             return gameState.GetPile(cardType).Count();
         }
@@ -105,7 +103,7 @@ namespace Program
 
             foreach (Card card in gameState.players.CurrentPlayer.AllOwnedCards)
             {
-                if (matchingCards.GetPreferredCard(gameState, testCard => testCard.Is(card.GetType())) != null)
+                if (matchingCards.GetPreferredCard(gameState, testCard => testCard.Is(card)) != null)
                 {
                     result += 1;
                 }
@@ -133,7 +131,7 @@ namespace Program
             return gameState.players.CurrentPlayer.Hand.HasCard<T>();
         }
 
-        internal static Type WhichCardFromInHand(ICardPicker matchingCards, GameState gameState)
+        internal static Card WhichCardFromInHand(ICardPicker matchingCards, GameState gameState)
         {
             return matchingCards.GetPreferredCard(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card));
         }        
@@ -147,7 +145,7 @@ namespace Program
         {
             foreach (Card card in gameState.players.CurrentPlayer.Hand)
             {
-                if (matchingCards.GetPreferredCard(gameState, current => current.Is(card.GetType())) == null)
+                if (matchingCards.GetPreferredCard(gameState, current => current.Is(card)) == null)
                 {
                     return false;
                 }
@@ -161,7 +159,7 @@ namespace Program
             int result = 0;
             foreach (Card card in gameState.players.CurrentPlayer.Hand)
             {
-                if (matchingCards.GetPreferredCard(gameState, current => current.Is(card.GetType())) != null)
+                if (matchingCards.GetPreferredCard(gameState, current => current.Is(card)) != null)
                 {
                     ++result;
                 }
@@ -197,7 +195,7 @@ namespace Program
                     throw new NotImplementedException();
                 }
 
-                public Type GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
+                public Card GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
                 {
                     IComparer<Card> comparer = this.comparerFactory.GetComparer(gameState);
 
@@ -207,10 +205,10 @@ namespace Program
                     if (cardToPlay == null)
                         return null;
 
-                    return cardToPlay.GetType();
+                    return cardToPlay;
                 }
 
-                public Type GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate)
+                public Card GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate)
                 {
                     IComparer<Card> comparer = this.comparerFactory.GetComparer(gameState);
 
@@ -220,7 +218,7 @@ namespace Program
                     if (cardToPlay == null)
                         return null;
 
-                    return cardToPlay.GetType();
+                    return cardToPlay;
                 }
                 
                 public IEnumerable<Card> GetNeededCards()

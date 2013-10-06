@@ -98,7 +98,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Type cardType = currentPlayer.RequestPlayerNameACard(gameState);
+            Card cardType = currentPlayer.RequestPlayerNameACard(gameState);
             currentPlayer.RevealCardsFromDeck(3);
 
             while (currentPlayer.cardsBeingRevealed.HasCard(cardType))

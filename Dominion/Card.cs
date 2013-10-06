@@ -93,21 +93,16 @@ namespace Dominion
             this.doSpecializedActionOnBuyWhileInPlay = doSpecializedActionOnBuyWhileInPlay;
         }
 
-        public bool Is(Type card)
+        public bool Is(Card card)
         {
-            return this.GetType().Equals(card);
+            return this.Equals(card);
         }
 
         public bool Is<T>()
-            where T : Card
+            where T : Card, new()
         {
-            return this.Is(typeof(T));
-        }
-
-        public bool IsSameType(Card second)
-        {
-            return this.Is(second.GetType());
-        }
+            return this.Is(Card.Type<T>());
+        }        
 
         public bool isVictory
         {
@@ -127,6 +122,16 @@ namespace Dominion
             if (other == null)
                 return false;
             return this.GetType() == other.GetType();
+        }
+
+        public override bool Equals(object obj)
+        {
+            return this.Equals((Card)obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return this.GetType().GetHashCode();
         }
 
         public int DefaultCoinCost
@@ -284,6 +289,18 @@ namespace Dominion
         virtual public void DoSpecializedSetupIfInSupply(GameState gameState)
         {
 
+        }
+
+        public static Card Type<T>()
+            where T : Card, new()
+        {
+            return Example<T>.Card;            
+        }
+
+        private static class Example<T>
+            where T : Card, new()
+        {
+            static public readonly T Card = new T();
         }
     }
 }
