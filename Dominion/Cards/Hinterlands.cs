@@ -389,7 +389,7 @@ namespace Dominion.CardTypes
 
             if (cardtoTrash != null)
             {
-                Card cardToGain = gameState.trash.RemoveCard(cardtoTrash.GetType());
+                Card cardToGain = gameState.trash.RemoveCard(cardtoTrash);
                 currentPlayer.GainCard(gameState, cardToGain, DeckPlacement.Discard);                
             }
 

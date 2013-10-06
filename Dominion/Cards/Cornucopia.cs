@@ -13,7 +13,7 @@ namespace Dominion.CardTypes
        : Card
     {
         public Fairgrounds()
-            : base("Fairgrounds", coinCost: 6, victoryPoints: playerState => playerState.AllOwnedCards.GroupBy(card => card.GetType()).Count() / 5 * 2)
+            : base("Fairgrounds", coinCost: 6, victoryPoints: playerState => playerState.AllOwnedCards.GroupBy(card => card).Count() / 5 * 2)
         {            
         }
     }

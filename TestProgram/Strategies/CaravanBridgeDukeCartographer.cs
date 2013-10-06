@@ -36,7 +36,7 @@ namespace Program
                     var currentPlayer = gameState.players.CurrentPlayer;
                     Card result = TopDeckOrder().GetPreferredCard(
                         gameState,
-                        card => revealedCards.HasCard(card.GetType()));
+                        card => revealedCards.HasCard(card));
 
                     if (result != null)
                     {

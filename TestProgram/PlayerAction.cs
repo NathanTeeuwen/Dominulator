@@ -65,7 +65,7 @@ namespace Program
             var currentPlayer = gameState.players.CurrentPlayer;
             return this.treasurePlayOrder.GetPreferredCard(
                 gameState,
-                card => currentPlayer.Hand.HasCard(card.GetType()) && acceptableCard(card));
+                card => currentPlayer.Hand.HasCard(card) && acceptableCard(card));
         }
 
         public override Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
@@ -79,7 +79,7 @@ namespace Program
 
             Card result = this.actionOrder.GetPreferredCard(
                 gameState,
-                card => currentPlayer.Hand.HasCard(card.GetType()) && acceptableCard(card));
+                card => currentPlayer.Hand.HasCard(card) && acceptableCard(card));
 
             if (result == null && this.chooseDefaultActionOnNone)
             {
@@ -111,7 +111,7 @@ namespace Program
             {
                 result = PlayerAction.defaultActionOrder.GetPreferredCard(
                     gameState,
-                    card => currentPlayer.Hand.HasCard(card.GetType()) && acceptableCard(card));
+                    card => currentPlayer.Hand.HasCard(card) && acceptableCard(card));
             }
 
             return result;
@@ -122,7 +122,7 @@ namespace Program
             var currentPlayer = gameState.players.CurrentPlayer;
             Card result = this.trashOrder.GetPreferredCard(
                 gameState,
-                card => currentPlayer.Hand.HasCard(card.GetType()) && acceptableCard(card));
+                card => currentPlayer.Hand.HasCard(card) && acceptableCard(card));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null && !isOptional)
@@ -138,7 +138,7 @@ namespace Program
             var currentPlayer = player;
             Card result = this.trashOrder.GetPreferredCard(
                 gameState,
-                card => currentPlayer.CardsBeingRevealed.HasCard(card.GetType()) && acceptableCard(card));
+                card => currentPlayer.CardsBeingRevealed.HasCard(card) && acceptableCard(card));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)
@@ -154,7 +154,7 @@ namespace Program
             var currentPlayer = gameState.players.CurrentPlayer;
             Card result = this.discardOrder.GetPreferredCard(
                 gameState,
-                card => currentPlayer.CardsBeingRevealed.HasCard(card.GetType()));
+                card => currentPlayer.CardsBeingRevealed.HasCard(card));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)
@@ -257,7 +257,7 @@ namespace Program
         {
             Card result = this.discardOrder.GetPreferredCard(
                 gameState,
-                card => player.Hand.HasCard(card.GetType()) && acceptableCard(card));
+                card => player.Hand.HasCard(card) && acceptableCard(card));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)
@@ -300,7 +300,7 @@ namespace Program
         {
             Card result = this.discardOrder.GetPreferredCard(
                 gameState,
-                card => player.CardsBeingRevealed.HasCard(card.GetType()));
+                card => player.CardsBeingRevealed.HasCard(card));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)

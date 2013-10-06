@@ -127,6 +127,7 @@ namespace Program
         }
 
         private static bool HasCardInHand<T>(GameState gameState)
+            where T: Card, new()
         {
             return gameState.players.CurrentPlayer.Hand.HasCard<T>();
         }

@@ -458,7 +458,7 @@ namespace Dominion
 
         internal int CountOfDifferentTreasuresInTrash()
         {
-            return this.trash.Where(card => card.isTreasure).GroupBy(card => card.GetType()).Count();
+            return this.trash.Where(card => card.isTreasure).GroupBy(card => card).Count();
         }        
     }          
 }

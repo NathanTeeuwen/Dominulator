@@ -26,17 +26,13 @@ namespace Dominion
 
         public bool HasCard(Card card)
         {
-            return HasCard(card.GetType());
-        }
-
-        public bool HasCard(Type t)
-        {
-            return this.FindCardIndexOfType(t) != -1;
-        }
+            return this.FindCardIndexOfType(card) != -1;
+        }        
 
         public bool HasCard<T>()
+            where T : Card, new()
         {
-            return this.HasCard(typeof(T));
+            return this.HasCard(Card.Type<T>());
         }
 
         internal Card RemoveCard()
@@ -56,13 +52,8 @@ namespace Dominion
             return this.RemoveFromEnd();
         }
 
-        public Card RemoveCard(Card card)
-        {
-            return RemoveCard(card.GetType());
-        }
-
-        internal Card RemoveCard(Type cardType)
-        {
+        public Card RemoveCard(Card cardType)
+        {            
             int cardIndex = this.FindCardIndexOfType(cardType);
             if (cardIndex == -1)
             {
@@ -73,7 +64,7 @@ namespace Dominion
             return this.RemoveFromEnd();
         }
 
-        public Card FindCard(Type cardType)
+        public Card FindCard(Card cardType)
         {
             int cardIndex = this.FindCardIndexOfType(cardType);
             if (cardIndex == -1)
@@ -98,12 +89,12 @@ namespace Dominion
             return -1;
         }
 
-        private int FindCardIndexOfType(Type cardEquivalent)
+        private int FindCardIndexOfType(Card cardEquivalent)
         {
             for (int i = 0; i < this.cards.Count; ++i)
             {
                 Card card = cards[i];
-                if (card.GetType().Equals(cardEquivalent))
+                if (card.Equals(cardEquivalent))
                 {
                     return i;
                 }

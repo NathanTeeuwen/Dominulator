@@ -8,28 +8,28 @@ BigMoneyCultist gained Copper.
 BigMoneyCultist gained Estate.
 BigMoneyCultist gained Estate.
 BigMoneyCultist gained Estate.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Estate.
-BigMoneyDelayed gained Estate.
-BigMoneyDelayed gained Estate.
+FishingVillageChapelPoorHouse gained Copper.
+FishingVillageChapelPoorHouse gained Copper.
+FishingVillageChapelPoorHouse gained Copper.
+FishingVillageChapelPoorHouse gained Copper.
+FishingVillageChapelPoorHouse gained Copper.
+FishingVillageChapelPoorHouse gained Copper.
+FishingVillageChapelPoorHouse gained Copper.
+FishingVillageChapelPoorHouse gained Estate.
+FishingVillageChapelPoorHouse gained Estate.
+FishingVillageChapelPoorHouse gained Estate.
 BigMoneyCultist reshuffled
 BigMoneyCultist Drew Estate into hand.
 BigMoneyCultist Drew Copper into hand.
 BigMoneyCultist Drew Copper into hand.
 BigMoneyCultist Drew Estate into hand.
 BigMoneyCultist Drew Copper into hand.
-BigMoneyDelayed reshuffled
-BigMoneyDelayed Drew Copper into hand.
-BigMoneyDelayed Drew Copper into hand.
-BigMoneyDelayed Drew Copper into hand.
-BigMoneyDelayed Drew Copper into hand.
-BigMoneyDelayed Drew Copper into hand.
+FishingVillageChapelPoorHouse reshuffled
+FishingVillageChapelPoorHouse Drew Copper into hand.
+FishingVillageChapelPoorHouse Drew Copper into hand.
+FishingVillageChapelPoorHouse Drew Copper into hand.
+FishingVillageChapelPoorHouse Drew Copper into hand.
+FishingVillageChapelPoorHouse Drew Copper into hand.
 ROUND 1
 -------------
 BigMoneyCultist begins turn
@@ -48,25 +48,25 @@ With hand: Copper,Copper,Copper,Estate,Estate,
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
-BigMoneyDelayed begins turn
+FishingVillageChapelPoorHouse begins turn
 With hand: Copper,Copper,Copper,Copper,Copper,
-  BigMoneyDelayed Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  FishingVillageChapelPoorHouse bought Fishing Village.
+  FishingVillageChapelPoorHouse Drew Estate into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Estate into hand.
+  FishingVillageChapelPoorHouse Drew Estate into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Copper(7), Estate(3), Fishing Village(1), 
 
 ROUND 2
 -------------
@@ -89,19 +89,20 @@ With hand: Copper,Copper,Copper,Copper,Estate,
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
-BigMoneyDelayed begins turn
+FishingVillageChapelPoorHouse begins turn
 With hand: Copper,Copper,Estate,Estate,Estate,
-  BigMoneyDelayed Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  FishingVillageChapelPoorHouse bought Chapel.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Chapel into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Estate into hand.
+  FishingVillageChapelPoorHouse Drew Estate into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(7), Estate(3), Fishing Village(1), 
 
 ROUND 3
 -------------
@@ -123,21 +124,19 @@ With hand: Copper,Copper,Copper,Estate,Silver,
   BigMoneyCultist Drew Estate into hand.
   BigMoneyCultist ends turn with deck: Copper(7), Cultist(1), Estate(3), Silver(2), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(2), 
+FishingVillageChapelPoorHouse begins turn
+With hand: Chapel,Copper,Copper,Estate,Estate,
+  FishingVillageChapelPoorHouse Played Chapel.
+    FishingVillageChapelPoorHouse trashed Estate.
+    FishingVillageChapelPoorHouse trashed Estate.
+    FishingVillageChapelPoorHouse trashed Copper.
+    FishingVillageChapelPoorHouse trashed Copper.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(5), Estate(1), Fishing Village(1), 
 
 ROUND 4
 -------------
@@ -158,24 +157,27 @@ With hand: Copper,Copper,Estate,Estate,Silver,
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist ends turn with deck: Copper(7), Cultist(1), Estate(3), Silver(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyDelayed Played Copper.
+FishingVillageChapelPoorHouse begins turn
+With hand: Copper,Copper,Copper,Copper,Fishing Village,
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 2 all together.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(3), 
+  FishingVillageChapelPoorHouse Played Copper.
+    +1 Coin = 5 all together.
+  FishingVillageChapelPoorHouse bought Fishing Village.
+  FishingVillageChapelPoorHouse Drew Estate into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Chapel into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(5), Estate(1), Fishing Village(2), 
 
 ROUND 5
 -------------
@@ -191,34 +193,39 @@ With hand: Copper,Copper,Copper,Estate,Silver,
     +1 Coin = 5 all together.
   BigMoneyCultist bought Cultist.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Estate into hand.
   BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist ends turn with deck: Copper(7), Cultist(2), Estate(3), Silver(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyDelayed Played Copper.
+FishingVillageChapelPoorHouse begins turn
+With hand: Chapel,Copper,Copper,Copper,Estate,
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(4), 
+    +1 Actions = 2 all together.
+  FishingVillageChapelPoorHouse Played Chapel.
+    FishingVillageChapelPoorHouse trashed Estate.
+    FishingVillageChapelPoorHouse trashed Copper.
+    FishingVillageChapelPoorHouse trashed Copper.
+    FishingVillageChapelPoorHouse trashed Copper.
+  FishingVillageChapelPoorHouse bought Poor House.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(2), Fishing Village(2), Poor House(1), 
 
 ROUND 6
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
+With hand: Copper,Copper,Cultist,Estate,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoneyCultist Drew Copper into hand.
+    FishingVillageChapelPoorHouse gained Ruined Market.
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
   BigMoneyCultist Played Silver.
@@ -231,84 +238,149 @@ With hand: Copper,Copper,Copper,Silver,Silver,
     +1 Coin = 7 all together.
   BigMoneyCultist bought Cultist.
   BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist ends turn with deck: Copper(7), Cultist(3), Estate(3), Silver(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Estate,Estate,Silver,Silver,
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
+FishingVillageChapelPoorHouse begins turn
+With hand: Copper,Copper,Fishing Village,Fishing Village,Poor House,
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 3 all together.
+    +1 Coin = 2 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 6 all together.
+    -2 Coin = 4 all together.
+  FishingVillageChapelPoorHouse Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(5), 
+  FishingVillageChapelPoorHouse Played Copper.
+    +1 Coin = 6 all together.
+  FishingVillageChapelPoorHouse bought Poor House.
+  FishingVillageChapelPoorHouse Drew Chapel into hand.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Copper into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Copper(2), Fishing Village(2), Poor House(2), Ruined Market(1), 
 
 ROUND 7
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Estate,Estate,
+With hand: Copper,Copper,Cultist,Cultist,Estate,
   BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Copper into hand.
-    BigMoneyCultist Drew Estate into hand.
-    BigMoneyDelayed gained Ruined Market.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyCultist bought Silver.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(3), Estate(3), Silver(4), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Silver,Silver,Silver,
-  BigMoneyDelayed Played Silver.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoneyCultist Drew Cultist into hand.
+    FishingVillageChapelPoorHouse gained Survivors.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Silver into hand.
+      BigMoneyCultist Drew Copper into hand.
+      FishingVillageChapelPoorHouse gained Ruined Library.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Estate into hand.
+        BigMoneyCultist Drew Copper into hand.
+        FishingVillageChapelPoorHouse gained Ruined Village.
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
+  BigMoneyCultist Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 8 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(1), Ruined Market(1), Silver(5), 
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(4), Estate(3), Silver(3), 
+
+FishingVillageChapelPoorHouse begins turn
+With hand: Chapel,Copper,Copper,Poor House,Poor House,
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
+    +1 Coin = 2 all together.
+    +1 Actions = 3 all together.
+  FishingVillageChapelPoorHouse Played Chapel.
+    FishingVillageChapelPoorHouse trashed Copper.
+    FishingVillageChapelPoorHouse trashed Copper.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 6 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 10 all together.
+  FishingVillageChapelPoorHouse bought Province.
+  FishingVillageChapelPoorHouse Drew Ruined Market into hand.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse Drew Ruined Library into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(2), Province(1), Ruined Library(1), Ruined Market(1), Ruined Village(1), Survivors(1), 
 
 ROUND 8
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Cultist,Silver,
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Silver(3), 
+
+FishingVillageChapelPoorHouse begins turn
+With hand: Fishing Village,Poor House,Province,Ruined Library,Ruined Market,
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 5 all together.
+  FishingVillageChapelPoorHouse bought Poor House.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse Drew Survivors into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Chapel into hand.
+  FishingVillageChapelPoorHouse Drew Ruined Village into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Chapel(1), Fishing Village(2), Poor House(3), Province(1), Ruined Library(1), Ruined Market(1), Ruined Village(1), Survivors(1), 
+
+ROUND 9
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Cultist,Silver,
   BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Copper into hand.
-    BigMoneyCultist Drew Silver into hand.
-    BigMoneyDelayed gained Survivors.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Drew Cultist into hand.
+    FishingVillageChapelPoorHouse gained Ruined Village.
     BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Copper into hand.
-      BigMoneyCultist Drew Silver into hand.
-      BigMoneyDelayed gained Ruined Library.
+      BigMoneyCultist Drew Estate into hand.
+      BigMoneyCultist Drew Estate into hand.
+      FishingVillageChapelPoorHouse gained Abandoned Mine.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Silver into hand.
+        BigMoneyCultist Drew Silver into hand.
+        FishingVillageChapelPoorHouse gained Ruined Village.
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
   BigMoneyCultist Played Silver.
@@ -321,47 +393,56 @@ With hand: Copper,Copper,Cultist,Cultist,Silver,
     +1 Coin = 8 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 9 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 10 all together.
   BigMoneyCultist bought Cultist.
-  BigMoneyCultist reshuffled
-  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(4), Estate(3), Silver(4), 
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(6), Estate(3), Silver(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(2), Ruined Library(1), Ruined Market(1), Silver(5), Survivors(1), 
+FishingVillageChapelPoorHouse begins turn
+With hand: Chapel,Fishing Village,Poor House,Ruined Village,Survivors,
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 3 all together.
+    +1 Coin = 2 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 6 all together.
+  FishingVillageChapelPoorHouse bought Poor House.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Abandoned Mine into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Ruined Library into hand.
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse Drew Ruined Village into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Abandoned Mine(1), Chapel(1), Fishing Village(2), Poor House(4), Province(1), Ruined Library(1), Ruined Market(1), Ruined Village(3), Survivors(1), 
 
-ROUND 9
+ROUND 10
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Silver,Silver,
+With hand: Copper,Copper,Copper,Cultist,Estate,
   BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Cultist into hand.
     BigMoneyCultist Drew Copper into hand.
-    BigMoneyCultist Drew Copper into hand.
-    BigMoneyDelayed gained Ruined Village.
+    FishingVillageChapelPoorHouse gained Ruined Market.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist reshuffled
+      BigMoneyCultist Drew Copper into hand.
+      BigMoneyCultist Drew Cultist into hand.
+      FishingVillageChapelPoorHouse gained Ruined Village.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Silver into hand.
+        BigMoneyCultist Drew Copper into hand.
+        FishingVillageChapelPoorHouse gained Survivors.
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 4 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 5 all together.
   BigMoneyCultist Played Copper.
@@ -370,325 +451,269 @@ With hand: Copper,Copper,Cultist,Silver,Silver,
     +1 Coin = 7 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 8 all together.
-  BigMoneyCultist bought Cultist.
+  BigMoneyCultist bought Gold.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Silver(4), 
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(6), Estate(3), Gold(1), Silver(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyDelayed Played Copper.
+FishingVillageChapelPoorHouse begins turn
+With hand: Abandoned Mine,Poor House,Province,Ruined Library,Ruined Village,
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Ruined Market into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(2), Ruined Library(1), Ruined Market(1), Ruined Village(1), Silver(6), Survivors(1), 
-
-ROUND 10
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyCultist bought Silver.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Silver(5), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Gold,Ruined Market,Silver,
-  BigMoneyDelayed Played Ruined Market.
-    +1 Buys = 2 all together.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Ruined Library into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(3), Ruined Library(1), Ruined Market(1), Ruined Village(1), Silver(6), Survivors(1), 
+    +1 Actions = 2 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 5 all together.
+  FishingVillageChapelPoorHouse bought Poor House.
+  FishingVillageChapelPoorHouse Drew Ruined Village into hand.
+  FishingVillageChapelPoorHouse Drew Survivors into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Abandoned Mine(1), Chapel(1), Fishing Village(2), Poor House(5), Province(1), Ruined Library(1), Ruined Market(2), Ruined Village(4), Survivors(2), 
 
 ROUND 11
 -------------
 BigMoneyCultist begins turn
 With hand: Copper,Cultist,Cultist,Estate,Silver,
   BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Estate into hand.
     BigMoneyCultist Drew Cultist into hand.
-    BigMoneyCultist reshuffled
-    BigMoneyCultist Drew Silver into hand.
-    BigMoneyDelayed gained Ruined Village.
     BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Estate into hand.
-      BigMoneyCultist Drew Estate into hand.
-      BigMoneyDelayed gained Abandoned Mine.
+      BigMoneyCultist Drew Silver into hand.
+      BigMoneyCultist reshuffled
+      BigMoneyCultist Drew Copper into hand.
       BigMoneyCultist Played Cultist.
-        BigMoneyCultist Drew Cultist into hand.
         BigMoneyCultist Drew Copper into hand.
-        BigMoneyDelayed gained Ruined Village.
-        BigMoneyCultist Played Cultist.
-          BigMoneyCultist Drew Copper into hand.
-          BigMoneyCultist Drew Silver into hand.
-          BigMoneyDelayed gained Ruined Market.
+        BigMoneyCultist Drew Estate into hand.
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
   BigMoneyCultist Played Silver.
     +2 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyCultist bought Gold.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(6), Estate(3), Gold(2), Silver(3), 
+
+FishingVillageChapelPoorHouse begins turn
+With hand: Fishing Village,Poor House,Poor House,Ruined Village,Survivors,
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 5 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 9 all together.
+  FishingVillageChapelPoorHouse bought Province.
+  FishingVillageChapelPoorHouse Drew Chapel into hand.
+  FishingVillageChapelPoorHouse Drew Ruined Village into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Ruined Market into hand.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Abandoned Mine into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Abandoned Mine(1), Chapel(1), Fishing Village(2), Poor House(5), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Survivors(2), 
+
+ROUND 12
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Cultist,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Gold into hand.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Cultist into hand.
+      BigMoneyCultist Drew Copper into hand.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist reshuffled
+        BigMoneyCultist Drew Copper into hand.
+        BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
   BigMoneyCultist Played Silver.
-    +2 Coin = 6 all together.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 7 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 8 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 9 all together.
-  BigMoneyCultist bought Gold.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 11 all together.
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Drew Gold into hand.
   BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(1), Silver(5), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Estate,Gold,Ruined Library,Silver,
-  BigMoneyDelayed Played Ruined Library.
-    BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Ruined Library(1), Ruined Market(2), Ruined Village(3), Silver(6), Survivors(1), 
-
-ROUND 12
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyCultist bought Gold.
+  BigMoneyCultist Drew Estate into hand.
   BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist reshuffled
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(2), Silver(5), 
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(6), Estate(3), Gold(2), Province(1), Silver(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Ruined Village,Silver,Silver,
-  BigMoneyDelayed Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Survivors into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(5), Ruined Library(1), Ruined Market(2), Ruined Village(3), Silver(6), Survivors(1), 
+FishingVillageChapelPoorHouse begins turn
+With hand: Abandoned Mine,Chapel,Poor House,Ruined Market,Ruined Village,
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 5 all together.
+  FishingVillageChapelPoorHouse bought Poor House.
+  FishingVillageChapelPoorHouse Drew Survivors into hand.
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse Drew Ruined Village into hand.
+  FishingVillageChapelPoorHouse Drew Ruined Market into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Abandoned Mine(1), Chapel(1), Fishing Village(2), Poor House(6), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Survivors(2), 
 
 ROUND 13
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Cultist,Silver,
+With hand: Copper,Cultist,Estate,Gold,Silver,
   BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Estate into hand.
-    BigMoneyCultist Drew Estate into hand.
-    BigMoneyDelayed gained Ruined Village.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Drew Cultist into hand.
     BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Silver into hand.
+      BigMoneyCultist Drew Estate into hand.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Estate into hand.
+        BigMoneyCultist reshuffled
+        BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Drew Province into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(6), Estate(3), Gold(2), Province(2), Silver(3), 
+
+FishingVillageChapelPoorHouse begins turn
+With hand: Poor House,Province,Ruined Market,Ruined Village,Survivors,
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 4 all together.
+  FishingVillageChapelPoorHouse bought Poor House.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Abandoned Mine(1), Chapel(1), Fishing Village(2), Poor House(7), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Survivors(2), 
+
+ROUND 14
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Cultist,Province,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Gold into hand.
       BigMoneyCultist Drew Copper into hand.
-      BigMoneyCultist Drew Copper into hand.
-      BigMoneyDelayed gained Survivors.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Province into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(6), Estate(3), Gold(2), Province(3), Silver(3), 
+
+FishingVillageChapelPoorHouse begins turn
+With hand: Fishing Village,Poor House,Poor House,Poor House,Province,
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 5 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 9 all together.
+  FishingVillageChapelPoorHouse bought Province.
+  FishingVillageChapelPoorHouse Drew Survivors into hand.
+  FishingVillageChapelPoorHouse Drew Ruined Library into hand.
+  FishingVillageChapelPoorHouse Drew Ruined Village into hand.
+  FishingVillageChapelPoorHouse Drew Ruined Village into hand.
+  FishingVillageChapelPoorHouse reshuffled
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Abandoned Mine(1), Chapel(1), Fishing Village(2), Poor House(7), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Survivors(2), 
+
+ROUND 15
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Estate,Province,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Drew Estate into hand.
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist bought Gold.
-  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist bought Estate.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(3), Silver(5), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Estate,Estate,Survivors,
-  BigMoneyDelayed Played Survivors.
-    BigMoneyDelayed Revealed Silver.
-    BigMoneyDelayed reshuffled
-    BigMoneyDelayed Revealed Abandoned Mine.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDelayed Drew Abandoned Mine into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Ruined Market into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(5), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(6), Survivors(2), 
-
-ROUND 14
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Cultist,Gold,Silver,Silver,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Silver into hand.
-    BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 9 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 11 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 12 all together.
-  BigMoneyCultist bought Province.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(3), Province(1), Silver(5), 
-
-BigMoneyDelayed begins turn
-With hand: Abandoned Mine,Copper,Gold,Ruined Market,Silver,
-  BigMoneyDelayed Played Abandoned Mine.
-    +1 Coin = 1 all together.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 4 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed Drew Ruined Market into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(6), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(6), Survivors(2), 
-
-ROUND 15
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Estate,Gold,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Cultist into hand.
-    BigMoneyCultist reshuffled
-    BigMoneyCultist Drew Copper into hand.
-    BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Cultist into hand.
-      BigMoneyCultist Drew Copper into hand.
-      BigMoneyCultist Played Cultist.
-        BigMoneyCultist Drew Copper into hand.
-        BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyCultist bought Province.
   BigMoneyCultist Drew Province into hand.
+  BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(3), Province(2), Silver(5), 
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(6), Estate(4), Gold(2), Province(3), Silver(3), 
 
-BigMoneyDelayed begins turn
-With hand: Gold,Gold,Ruined Market,Ruined Village,Silver,
-  BigMoneyDelayed Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDelayed Played Ruined Market.
-    +1 Buys = 2 all together.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyDelayed bought Province.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(6), Province(1), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(6), Survivors(2), 
+FishingVillageChapelPoorHouse begins turn
+With hand: Province,Ruined Library,Ruined Village,Ruined Village,Survivors,
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillageChapelPoorHouse bought Poor House.
+  FishingVillageChapelPoorHouse Drew Ruined Market into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Fishing Village into hand.
+  FishingVillageChapelPoorHouse Drew Ruined Village into hand.
+  FishingVillageChapelPoorHouse Drew Ruined Market into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Abandoned Mine(1), Chapel(1), Fishing Village(2), Poor House(8), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Survivors(2), 
 
 ROUND 16
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Gold,Province,Silver,
+With hand: Copper,Cultist,Cultist,Gold,Province,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Province into hand.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Silver into hand.
+      BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Played Gold.
     +3 Coin = 3 all together.
   BigMoneyCultist Played Silver.
@@ -697,295 +722,86 @@ With hand: Copper,Copper,Gold,Province,Silver,
     +1 Coin = 6 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyCultist bought Duchy.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(1), Estate(3), Gold(3), Province(2), Silver(5), 
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(6), Estate(4), Gold(2), Province(4), Silver(3), 
 
-BigMoneyDelayed begins turn
-With hand: Estate,Ruined Village,Ruined Village,Silver,Silver,
-  BigMoneyDelayed Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDelayed Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Drew Ruined Library into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed Drew Survivors into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(6), Province(1), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
+FishingVillageChapelPoorHouse begins turn
+With hand: Fishing Village,Poor House,Ruined Market,Ruined Market,Ruined Village,
+  FishingVillageChapelPoorHouse Played Fishing Village.
+    +2 Actions = 2 all together.
+    +1 Coin = 1 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 5 all together.
+  FishingVillageChapelPoorHouse bought Duchy.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Province into hand.
+  FishingVillageChapelPoorHouse Drew Abandoned Mine into hand.
+  FishingVillageChapelPoorHouse Drew Survivors into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Abandoned Mine(1), Chapel(1), Duchy(1), Fishing Village(2), Poor House(8), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Survivors(2), 
 
 ROUND 17
 -------------
 BigMoneyCultist begins turn
-With hand: Cultist,Estate,Estate,Gold,Silver,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Silver into hand.
-    BigMoneyCultist Drew Silver into hand.
+With hand: Copper,Copper,Estate,Gold,Silver,
   BigMoneyCultist Played Gold.
     +3 Coin = 3 all together.
   BigMoneyCultist Played Silver.
     +2 Coin = 5 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 9 all together.
-  BigMoneyCultist bought Province.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyCultist bought Duchy.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist reshuffled
-  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
   BigMoneyCultist Drew Province into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Province into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(1), Estate(3), Gold(3), Province(3), Silver(5), 
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(6), Duchy(1), Estate(4), Gold(2), Province(4), Silver(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Gold,Ruined Library,Ruined Village,Survivors,
-  BigMoneyDelayed Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDelayed Played Ruined Library.
-    BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDelayed bought Duchy.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(1), Estate(3), Gold(6), Province(1), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
+FishingVillageChapelPoorHouse begins turn
+With hand: Abandoned Mine,Poor House,Poor House,Province,Survivors,
+  FishingVillageChapelPoorHouse Finished Playing Fishing Village.
+    +1 Coin = 1 all together.
+    +1 Actions = 2 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 5 all together.
+  FishingVillageChapelPoorHouse Played Poor House.
+    +4 Coin = 9 all together.
+  FishingVillageChapelPoorHouse bought Province.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Chapel into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse Drew Poor House into hand.
+  FishingVillageChapelPoorHouse ends turn with deck: Abandoned Mine(1), Chapel(1), Duchy(1), Fishing Village(2), Poor House(8), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Survivors(2), 
 
-ROUND 18
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Cultist,Cultist,Province,Province,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Gold into hand.
-    BigMoneyCultist Drew Silver into hand.
-    BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Silver into hand.
-      BigMoneyCultist Drew Cultist into hand.
-      BigMoneyCultist Played Cultist.
-        BigMoneyCultist Drew Copper into hand.
-        BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyCultist bought Province.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Duchy into hand.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(1), Estate(3), Gold(3), Province(4), Silver(5), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyDelayed bought Province.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(1), Estate(3), Gold(6), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
-
-ROUND 19
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Duchy,Estate,Gold,Silver,
-  BigMoneyCultist Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist bought Duchy.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(2), Estate(3), Gold(3), Province(4), Silver(5), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDelayed bought Duchy.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(3), Gold(6), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
-
-ROUND 20
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist bought Duchy.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(3), Estate(3), Gold(3), Province(4), Silver(5), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Estate,Gold,Ruined Village,Ruined Village,
-  BigMoneyDelayed Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDelayed Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDelayed bought Estate.
-  BigMoneyDelayed Drew Ruined Market into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Abandoned Mine into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Survivors into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(4), Gold(6), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
-
-ROUND 21
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Cultist,Cultist,Estate,Gold,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Province into hand.
-    BigMoneyCultist reshuffled
-    BigMoneyCultist Drew Duchy into hand.
-    BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Cultist into hand.
-      BigMoneyCultist Drew Cultist into hand.
-      BigMoneyCultist Played Cultist.
-        BigMoneyCultist Drew Gold into hand.
-        BigMoneyCultist Drew Copper into hand.
-        BigMoneyCultist Played Cultist.
-          BigMoneyCultist Drew Silver into hand.
-          BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyCultist Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 10 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 11 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 12 all together.
-  BigMoneyCultist bought Province.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Province into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(3), Estate(3), Gold(3), Province(5), Silver(5), 
-
-BigMoneyDelayed begins turn
-With hand: Abandoned Mine,Gold,Ruined Market,Silver,Survivors,
-  BigMoneyDelayed Played Ruined Market.
-    +1 Buys = 2 all together.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed bought Duchy.
-  BigMoneyDelayed Drew Province into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(3), Estate(4), Gold(6), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
-
-ROUND 22
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Gold,Province,Silver,Silver,
-  BigMoneyCultist Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyCultist bought Province.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Duchy into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(3), Estate(3), Gold(3), Province(6), Silver(5), 
-
-Game ended in 22 turns.
+Game ended in 17 turns.
 BigMoneyCultist Won!
-BigMoneyCultist total score: 48
-  Copper(7), Cultist(5), Duchy(3), Estate(3), Gold(3), Province(6), Silver(5), 
-BigMoneyDelayed total score: 25
-  Abandoned Mine(1), Copper(7), Duchy(3), Estate(4), Gold(6), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
-Trash contains: 
+BigMoneyCultist total score: 31
+  Copper(7), Cultist(6), Duchy(1), Estate(4), Gold(2), Province(4), Silver(3), 
+FishingVillageChapelPoorHouse total score: 27
+  Abandoned Mine(1), Chapel(1), Duchy(1), Fishing Village(2), Poor House(8), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Survivors(2), 
+Trash contains: Copper(7), Estate(3), 
 
 BigMoneyCultist GainSequence is:
   Silver, Silver, Cultist, Silver, Cultist, 
-  Cultist, Silver, Cultist, Cultist, Silver, 
-  Gold, Gold, Gold, Province, Province, 
-  Duchy, Province, Province, Duchy, Duchy, 
-  Province, Province, 
-BigMoneyDelayed GainSequence is:
-  Silver, Silver, Silver, Silver, Silver, 
-  Ruined Market, Gold, Survivors, Ruined Library, Gold, 
-  Ruined Village, Silver, Gold, Ruined Village, Abandoned Mine, 
-  Ruined Village, Ruined Market, Gold, Gold, Ruined Village, 
-  Survivors, Gold, Province, Silver, Duchy, 
-  Province, Duchy, Estate, Duchy, 
+  Cultist, Cultist, Cultist, Cultist, Gold, 
+  Gold, Province, Province, Province, Estate, 
+  Province, Duchy, 
+FishingVillageChapelPoorHouse GainSequence is:
+  Fishing Village, Chapel, Fishing Village, Poor House, Ruined Market, 
+  Poor House, Survivors, Ruined Library, Ruined Village, Province, 
+  Poor House, Ruined Village, Abandoned Mine, Ruined Village, Poor House, 
+  Ruined Market, Ruined Village, Survivors, Poor House, Province, 
+  Poor House, Poor House, Province, Poor House, Duchy, 
+  Province, 

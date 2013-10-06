@@ -57,19 +57,19 @@ namespace Program
         public static CardAcceptance For<T>()
             where T : Card, new()
         {
-            return new CardAcceptance(new T());
+            return new CardAcceptance(Card.Type<T>());
         }
 
         public static CardAcceptance For<T>(GameStatePredicate match)
             where T : Card, new()
         {
-            return new CardAcceptance(new T(), match);
+            return new CardAcceptance(Card.Type<T>(), match);
         }
 
         public static CardAcceptance For<T>(GameStatePredicate match, GameStateIntValue overpayAmount)
             where T : Card, new()
         {
-            return new CardAcceptance(new T(), match, overpayAmount);
+            return new CardAcceptance(Card.Type<T>(), match, overpayAmount);
         }        
     }
 }
