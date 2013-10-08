@@ -18,7 +18,7 @@ namespace Dominion
         internal PlayPhase playPhase;
         internal Random random;                
 
-        internal PlayerTurnCounters turnCounters = new PlayerTurnCounters();
+        internal PlayerTurnCounters turnCounters;
         
         internal bool ownsCardThatMightProvideDiscountWhileInPlay;
         internal bool ownsCardThatHasSpecializedCleanupAtStartOfCleanup;
@@ -26,18 +26,18 @@ namespace Dominion
         internal bool ownsCardWithSpecializedActionOnTrashWhileInHand;
 
         // all of the cards the player owns.  Always move from one list to the other
-        internal ListOfCards deck = new ListOfCards();
-        internal BagOfCards discard = new BagOfCards();        
-        internal ListOfCards cardsBeingPlayed = new ListOfCards();  // a stack for recursion
-        internal BagOfCards cardsBeingRevealed = new BagOfCards();
-        internal BagOfCards hand = new BagOfCards();        
-        internal BagOfCards cardsPlayed = new BagOfCards();
-        internal BagOfCards durationCards = new BagOfCards();
-        internal BagOfCards cardsToReturnToHandAtStartOfTurn = new BagOfCards();
+        internal ListOfCards deck;
+        internal BagOfCards discard;
+        internal ListOfCards cardsBeingPlayed;  // a stack for recursion
+        internal BagOfCards cardsBeingRevealed;
+        internal BagOfCards hand;        
+        internal BagOfCards cardsPlayed;
+        internal BagOfCards durationCards;
+        internal BagOfCards cardsToReturnToHandAtStartOfTurn;
         internal Card cardToPass = null;
         internal Card cardBeingDiscarded = null;
-        internal BagOfCards islandMat = new BagOfCards();
-        internal BagOfCards nativeVillageMat = new BagOfCards();
+        internal BagOfCards islandMat;
+        internal BagOfCards nativeVillageMat;
 
         internal List<Action> actionsToExecuteAtBeginningOfNextTurn = new List<Action>();
 
@@ -57,19 +57,32 @@ namespace Dominion
         public int ExpectedCoinValueAtEndOfTurn { get { return this.AvailableCoins + this.hand.Where(card => card.isTreasure).Select(card => card.plusCoin).Sum(); } }
 
         // counters and duplicates.
-        internal BagOfCards cardsInPlayAtBeginningOfCleanupPhase = new BagOfCards();
+        internal BagOfCards cardsInPlayAtBeginningOfCleanupPhase;
 
         // persistent Counters
         internal int victoryTokenCount;
         internal int pirateShipTokenCount;
 
-        internal PlayerState(IPlayerAction actions, int playerIndex, IGameLog gameLog, Random random)
+        internal PlayerState(IPlayerAction actions, int playerIndex, IGameLog gameLog, Random random, CardGameSubset gameSubset)
         {
             this.gameLog = gameLog;
             this.actions = actions;
             this.playPhase = PlayPhase.NotMyTurn;
             this.random = random;
             this.playerIndex = playerIndex;
+
+            this.cardsInPlayAtBeginningOfCleanupPhase = new BagOfCards(gameSubset);
+            this.islandMat = new BagOfCards(gameSubset);
+            this.nativeVillageMat = new BagOfCards(gameSubset);
+            this.deck = new ListOfCards(gameSubset);
+            this.discard = new BagOfCards(gameSubset);
+            this.cardsBeingPlayed = new ListOfCards(gameSubset);  // a stack for recursion
+            this.cardsBeingRevealed = new BagOfCards(gameSubset);
+            this.hand = new BagOfCards(gameSubset);
+            this.cardsPlayed = new BagOfCards(gameSubset);
+            this.durationCards = new BagOfCards(gameSubset);
+            this.cardsToReturnToHandAtStartOfTurn = new BagOfCards(gameSubset);
+            this.turnCounters = new PlayerTurnCounters(gameSubset);
         }
 
         internal void InitializeTurn()

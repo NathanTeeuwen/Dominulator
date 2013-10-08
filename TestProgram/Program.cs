@@ -89,7 +89,9 @@ namespace Program
             var swappedStartingDeckPerPlayer = SwapTwoElementArray(startingDeckPerPlayer);
 
             var countbyBucket = new CountByBucket();
-             
+
+            Card[] supplyPiles = PlayerAction.GetKingdomCards(player1, player2);
+
             Action<int> loopBody = delegate(int gameCount)                    
             {
                 System.Threading.Interlocked.Increment(ref totalGameCount);
@@ -112,7 +114,7 @@ namespace Program
                     var gameConfig = new GameConfig(
                         useShelters,                        
                         useColonyAndPlatinum: false,
-                        supplyPiles: PlayerAction.GetKingdomCards(startPlayer, otherPlayer));
+                        supplyPiles: supplyPiles);
 
                     GameState gameState = new GameState(
                         gameLog,

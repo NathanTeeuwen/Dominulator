@@ -39,8 +39,8 @@ namespace Dominion
         protected GameStateCardPredicate doSpecializedActionOnTrashWhileInHand; //readonly
         protected GameStateCardMethod doSpecializedActionToCardWhileInPlay;  //readonly
 
-        internal int privateIndex = -1; //readonly
-        internal int hashCode = -1;
+        private int privateIndex; //readonly
+        private int hashCode;
 
         internal int index
         {
@@ -140,8 +140,8 @@ namespace Dominion
             if (other == null)
                 return false;
 
-            System.Diagnostics.Debug.Assert(this.index != -1);
-            System.Diagnostics.Debug.Assert(other.index != -1);
+            System.Diagnostics.Debug.Assert(this.index != 0);
+            System.Diagnostics.Debug.Assert(other.index != 0);
 
             return this.index == other.index;
         }
@@ -344,7 +344,7 @@ namespace Dominion
 
         public static void InitializeCustomCard(Card card)
         {
-            card.privateIndex = lastCardIndex++;
+            card.privateIndex = ++lastCardIndex;
             card.hashCode = card.privateIndex.GetHashCode();            
         }
 

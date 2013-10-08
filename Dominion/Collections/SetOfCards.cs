@@ -9,6 +9,12 @@ namespace Dominion
     public class SetOfCards
         : CollectionCards
     {
+
+        public SetOfCards(CardGameSubset gameSubset)
+            : base(gameSubset)
+        {
+        }
+
         public void Add(Card card)
         {
             if (this.HasCard(card))

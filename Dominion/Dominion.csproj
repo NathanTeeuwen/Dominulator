@@ -80,6 +80,7 @@
     <Compile Include="Cards\Seaside.cs" />
     <Compile Include="Collections\BagOfCards.cs" />
     <Compile Include="Card.cs" />
+    <Compile Include="Collections\CardGameSubset.cs" />
     <Compile Include="Collections\CollectionCards.cs" />
     <Compile Include="Cards\TestCards.cs" />
     <Compile Include="Collections\MapPileOfCardsToProperty.cs" />

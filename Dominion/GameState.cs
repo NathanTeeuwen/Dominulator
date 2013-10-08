@@ -19,6 +19,16 @@ namespace Dominion
         private MapPileOfCardsToProperty<bool> hasPileEverBeenGained;
         private MapPileOfCardsToProperty<int> pileEmbargoTokenCount;
 
+        private readonly CardGameSubset cardGameSubset;
+
+        public CardGameSubset CardGameSubset
+        {
+            get
+            {
+                return this.cardGameSubset;
+            }
+        }
+
         // special piles not in the supply - not available in every game
         private PileOfCards blackMarketDeck = null;
 
@@ -31,12 +41,17 @@ namespace Dominion
         {
             int playerCount = players.Length;
             this.gameLog = gameLog;
-            this.players = new PlayerCircle(playerCount, players, this.gameLog, random);                         
+            this.cardGameSubset = gameConfig.cardGameSubset;
             this.supplyPiles = gameConfig.GetSupplyPiles(playerCount, random);
             this.nonSupplyPiles = gameConfig.GetNonSupplyPiles();
+
+            this.cardGameSubset = new CardGameSubset();            
+
+            this.players = new PlayerCircle(playerCount, players, this.gameLog, random, this.cardGameSubset);
+
             this.hasPileEverBeenGained = new MapPileOfCardsToProperty<bool>(this.supplyPiles);
             this.pileEmbargoTokenCount = new MapPileOfCardsToProperty<int>(this.supplyPiles);
-            this.trash = new BagOfCards();
+            this.trash = new BagOfCards(this.cardGameSubset);
 
             if (startingDeckPerPlayer == null)
                 startingDeckPerPlayer = gameConfig.StartingDecks(players.Length);
@@ -49,7 +64,7 @@ namespace Dominion
             {
                 cardPile.ProtoTypeCard.DoSpecializedSetupIfInSupply(this);
             }
-        }
+        }      
         
         private void GainStartingCards(IEnumerable<CardCountPair>[] pairsPerPlayer)
         {

@@ -10,7 +10,13 @@ namespace Dominion
     public class CollectionCards
         : IEnumerable<Card>
     {
+        protected readonly CardGameSubset gameSubset;
         protected List<Card> cards = new List<Card>(20);
+
+        public CollectionCards(CardGameSubset gameSubset)
+        {
+            this.gameSubset = gameSubset;
+        }
 
         public int Count
         {

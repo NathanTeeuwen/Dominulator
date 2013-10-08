@@ -8,8 +8,13 @@ namespace Dominion
 {
     public class ListOfCards
         : CollectionCards
-    {
+    {     
         private int countKnownCard = 0;
+
+        public ListOfCards(CardGameSubset gameSubset)
+            : base(gameSubset)
+        {
+        }
 
         private static int NumberBetweenInclusive(Random random, int lowerBoundInclusive, int upperBoundInclusive)
         {

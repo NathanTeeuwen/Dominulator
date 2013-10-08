@@ -10,6 +10,11 @@ namespace Dominion
         : CollectionCards
     {
 
+        public BagOfCards(CardGameSubset gameSubset)
+            : base(gameSubset)
+        {            
+        }
+
         public void CopyFrom(BagOfCards other)
         {
             this.Clear();

@@ -12,6 +12,7 @@ namespace Dominion
         public readonly bool useColonyAndPlatinum;
         public readonly Card[] kingdomPiles;
         public readonly IEnumerable<CardCountPair> startingDeck;
+        public readonly CardGameSubset cardGameSubset;
 
         public GameConfig(bool useShelters, bool useColonyAndPlatinum, Card[] supplyPiles, IEnumerable<CardCountPair> startingDeck)
         {
@@ -19,21 +20,21 @@ namespace Dominion
             this.useColonyAndPlatinum = useColonyAndPlatinum;
             this.kingdomPiles = supplyPiles;
             this.startingDeck = startingDeck;
+            this.cardGameSubset = new CardGameSubset();
+
+            GetSupplyPiles(1, null, this.cardGameSubset);
+            GetNonSupplyPiles(this.cardGameSubset);
+            this.cardGameSubset.isInitializing = false;
         }
 
         public GameConfig(bool useShelters, bool useColonyAndPlatinum, params Card[] supplyPiles)
-        {
-            this.useShelters = useShelters;
-            this.useColonyAndPlatinum = useColonyAndPlatinum;
-            this.kingdomPiles = supplyPiles;
-            this.startingDeck = null;
+            : this(useShelters, useColonyAndPlatinum, supplyPiles, null)
+        {            
         }
 
         public GameConfig(params Card[] supplyPiles)
-        {
-            this.useShelters = false;
-            this.useColonyAndPlatinum = false;
-            this.kingdomPiles = supplyPiles;            
+            : this(false, false, supplyPiles, null)
+        {            
         }
 
         public IEnumerable<CardCountPair>[] StartingDecks(int playerCount)
@@ -80,46 +81,51 @@ namespace Dominion
 
         public PileOfCards[] GetSupplyPiles(int playerCount, Random random)
         {
-            var supplyCardPiles = new List<PileOfCards>(capacity: 20);            
+            return GetSupplyPiles(playerCount, random, this.cardGameSubset);
+        }
+
+        private PileOfCards[] GetSupplyPiles(int playerCount, Random random, CardGameSubset gameSubset)
+        {
+            var supplyCardPiles = new List<PileOfCards>(capacity: 20);
 
             int curseCount = (playerCount - 1) * 10;
             int ruinsCount = curseCount;
             int victoryCount = (playerCount == 2) ? 8 : 12;
 
             // cards always in the supply
-            Add<CardTypes.Copper>(supplyCardPiles, 60);
-            Add<CardTypes.Silver>(supplyCardPiles, 40);
-            Add<CardTypes.Gold>(supplyCardPiles, 30);
-            Add<CardTypes.Curse>(supplyCardPiles, curseCount);
-            Add<CardTypes.Estate>(supplyCardPiles, victoryCount + (!this.useShelters ? playerCount * 3 : 0));
-            Add<CardTypes.Duchy>(supplyCardPiles, victoryCount);
-            Add<CardTypes.Province>(supplyCardPiles, victoryCount);
+            Add<CardTypes.Copper>(gameSubset, supplyCardPiles, 60);
+            Add<CardTypes.Silver>(gameSubset, supplyCardPiles, 40);
+            Add<CardTypes.Gold>(gameSubset, supplyCardPiles, 30);
+            Add<CardTypes.Curse>(gameSubset, supplyCardPiles, curseCount);
+            Add<CardTypes.Estate>(gameSubset, supplyCardPiles, victoryCount + (!this.useShelters ? playerCount * 3 : 0));
+            Add<CardTypes.Duchy>(gameSubset, supplyCardPiles, victoryCount);
+            Add<CardTypes.Province>(gameSubset, supplyCardPiles, victoryCount);
             
             if (this.useColonyAndPlatinum)
             {
-                Add<CardTypes.Colony>(supplyCardPiles, victoryCount);
-                Add<CardTypes.Platinum>(supplyCardPiles, 20);
+                Add<CardTypes.Colony>(gameSubset, supplyCardPiles, victoryCount);
+                Add<CardTypes.Platinum>(gameSubset, supplyCardPiles, 20);
             }
 
             if (this.kingdomPiles.Where(card => card.potionCost != 0).Any())
             {
-                Add<CardTypes.Province>(supplyCardPiles, 16);
+                Add<CardTypes.Province>(gameSubset, supplyCardPiles, 16);
             }
 
             if (this.kingdomPiles.Where(card => card.requiresRuins).Any())
             {
-                supplyCardPiles.Add(CreateRuins(ruinsCount, random));
+                supplyCardPiles.Add(CreateRuins(gameSubset, ruinsCount, random));
             }          
 
             foreach (Card card in this.kingdomPiles)
             {
                 if (card.isVictory)
                 {
-                    Add(supplyCardPiles, victoryCount, card);
+                    Add(gameSubset, supplyCardPiles, victoryCount, card);
                 }
                 else
                 {
-                    Add(supplyCardPiles, card.defaultSupplyCount, card);
+                    Add(gameSubset, supplyCardPiles, card.defaultSupplyCount, card);
                 }                
             }
 
@@ -128,63 +134,87 @@ namespace Dominion
 
         public PileOfCards[] GetNonSupplyPiles()
         {
+            return GetNonSupplyPiles(this.cardGameSubset);
+        }
+
+        private PileOfCards[] GetNonSupplyPiles(CardGameSubset gameSubset)
+        {
             var nonSupplyCardPiles = new List<PileOfCards>();
             
             if (this.kingdomPiles.Where(card => card.requiresSpoils).Any())
             {
-                Add<CardTypes.Spoils>(nonSupplyCardPiles, 16);
+                Add<CardTypes.Spoils>(gameSubset, nonSupplyCardPiles, 16);
             }
 
             if (this.kingdomPiles.Where(card => card.Is<CardTypes.Hermit>()).Any())
             {
-                Add<CardTypes.Madman>(nonSupplyCardPiles, 10);
+                Add<CardTypes.Madman>(gameSubset, nonSupplyCardPiles, 10);
             }
             if (this.kingdomPiles.Where(card => card.Is<CardTypes.Urchin>()).Any())
             {
-                Add<CardTypes.Mercenary>(nonSupplyCardPiles, 10);
+                Add<CardTypes.Mercenary>(gameSubset, nonSupplyCardPiles, 10);
             }            
 
             return nonSupplyCardPiles.ToArray();
         }
 
-        private static PileOfCards CreateRuins(int ruinsCount, Random random)
+        private static PileOfCards CreateRuins(CardGameSubset gameSubset, int ruinsCount, Random random)
         {
-            int ruinCountPerPile = 10;
-            var allRuinsCards = new ListOfCards();
-            allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.AbandonedMine>(), ruinCountPerPile);
-            allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.RuinedMarket>(), ruinCountPerPile);
-            allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.RuinedLibrary>(), ruinCountPerPile);
-            allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.RuinedVillage>(), ruinCountPerPile);
-            allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.Survivors>(), ruinCountPerPile);
-
-            allRuinsCards.Shuffle(random);
-
-            var result = new PileOfCards(Card.Type<CardTypes.Ruins>());
-
-            for (int i = 0; i < ruinsCount; ++i)
+            if (gameSubset.isInitializing)
             {
-                Card card = allRuinsCards.DrawCardFromTop();
-                if (card == null)
-                {
-                    throw new Exception("Not enough ruins available.");
-                }
-                result.AddCardToTop(card);
+                gameSubset.AddCard(Card.Type<CardTypes.Ruins>());
+                gameSubset.AddCard(Card.Type<CardTypes.AbandonedMine>());
+                gameSubset.AddCard(Card.Type<CardTypes.RuinedMarket>());
+                gameSubset.AddCard(Card.Type<CardTypes.RuinedLibrary>());
+                gameSubset.AddCard(Card.Type<CardTypes.RuinedVillage>());
+                gameSubset.AddCard(Card.Type<CardTypes.Survivors>());
+                return null;
             }
-            result.EraseKnownCountKnowledge();
+            else
+            {
+                int ruinCountPerPile = 10;
+                var allRuinsCards = new ListOfCards(gameSubset);
+                allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.AbandonedMine>(), ruinCountPerPile);
+                allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.RuinedMarket>(), ruinCountPerPile);
+                allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.RuinedLibrary>(), ruinCountPerPile);
+                allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.RuinedVillage>(), ruinCountPerPile);
+                allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.Survivors>(), ruinCountPerPile);
 
-            return result;
+                allRuinsCards.Shuffle(random);
+
+                var result = new PileOfCards(gameSubset, Card.Type<CardTypes.Ruins>());
+
+                for (int i = 0; i < ruinsCount; ++i)
+                {
+                    Card card = allRuinsCards.DrawCardFromTop();
+                    if (card == null)
+                    {
+                        throw new Exception("Not enough ruins available.");
+                    }
+                    result.AddCardToTop(card);
+                }
+                result.EraseKnownCountKnowledge();
+
+                return result;
+            }
         }
 
-        private static void Add<CardType>(List<PileOfCards> cardPiles, int initialCount)
+        private static void Add<CardType>(CardGameSubset gameSubset, List<PileOfCards> cardPiles, int initialCount)
             where CardType : Card, new()
         {
-
-            Add(cardPiles, initialCount, Card.Type<CardType>());
+            Add(gameSubset, cardPiles, initialCount, Card.Type<CardType>());
         }
 
-        private static void Add(List<PileOfCards> cardPiles, int initialCount, Card protoType)
+        private static void Add(CardGameSubset gameSubset, List<PileOfCards> cardPiles, int initialCount, Card protoType)
         {
-            cardPiles.Add(new PileOfCards(protoType, initialCount));
+            if (gameSubset.isInitializing)
+            {
+                gameSubset.AddCard(protoType);
+            }
+            else
+            {
+                cardPiles.Add(new PileOfCards(gameSubset, protoType, initialCount));
+            }
         }
     }
 }

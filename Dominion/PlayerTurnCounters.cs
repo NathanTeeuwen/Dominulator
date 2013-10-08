@@ -14,8 +14,13 @@ namespace Dominion
         private int buysUsed;
         private int availableCoins;
         private int availableCoinTokens;
-        internal SetOfCards cardsBannedFromPurchase = new SetOfCards();
+        internal SetOfCards cardsBannedFromPurchase;
         internal int copperAdditionalValue = 0;
+
+        internal PlayerTurnCounters(CardGameSubset gameSubset)
+        {
+            cardsBannedFromPurchase = new SetOfCards(gameSubset);
+        }
 
         internal void InitializeTurn()
         {

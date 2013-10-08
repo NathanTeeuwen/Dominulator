@@ -84,7 +84,7 @@ namespace Program
 
             if (result == null && this.chooseDefaultActionOnNone)
             {
-                var candidateCards = new SetOfCards();
+                var candidateCards = new SetOfCards(gameState.CardGameSubset);
                 
                 foreach(Card card in currentPlayer.Hand)
                 {
@@ -515,7 +515,7 @@ namespace Program
 
         public static Card[] GetKingdomCards(PlayerAction playerAction1, PlayerAction playerAction2)
         {
-            var cards = new SetOfCards();
+            var cards = new HashSet<Card>();
 
             AddCards(cards, playerAction1.actionOrder);
             AddCards(cards, playerAction1.purchaseOrder);
@@ -561,7 +561,7 @@ namespace Program
             return cards.ToArray();
         }
 
-        private static void AddCards(SetOfCards cardSet, ICardPicker matchingCards)
+        private static void AddCards(HashSet<Card> cardSet, ICardPicker matchingCards)
         {
             foreach (Card card in matchingCards.GetNeededCards())
             {                
