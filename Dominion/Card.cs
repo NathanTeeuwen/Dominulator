@@ -36,6 +36,7 @@ namespace Dominion
         protected GameStateMethod doSpecializedCleanupAtStartOfCleanup; // readonly
         protected CardIntValue provideDiscountForWhileInPlay;           // readonly
         protected GameStateCardMethod doSpecializedActionOnBuyWhileInPlay; // readonly
+        protected GameStateCardPredicate doSpecializedActionOnTrashWhileInHand; //readonly
 
         internal Card(
             string name,
@@ -63,7 +64,8 @@ namespace Dominion
             bool canOverpay = false,
             CardIntValue provideDiscountForWhileInPlay = null,
             GameStateMethod doSpecializedCleanupAtStartOfCleanup = null,
-            GameStateCardMethod doSpecializedActionOnBuyWhileInPlay = null)
+            GameStateCardMethod doSpecializedActionOnBuyWhileInPlay = null,
+            GameStateCardPredicate doSpecializedActionOnTrashWhileInHand = null)
         {
             this.name = name;
             this.coinCost = coinCost;
@@ -91,6 +93,7 @@ namespace Dominion
             this.provideDiscountForWhileInPlay = provideDiscountForWhileInPlay;
             this.doSpecializedCleanupAtStartOfCleanup = doSpecializedCleanupAtStartOfCleanup;
             this.doSpecializedActionOnBuyWhileInPlay = doSpecializedActionOnBuyWhileInPlay;
+            this.doSpecializedActionOnTrashWhileInHand = doSpecializedActionOnTrashWhileInHand;
         }
 
         public bool Is(Card card)
@@ -169,6 +172,11 @@ namespace Dominion
 
         }
 
+        virtual public void DoSpecializedDiscardFromPlay(PlayerState currentPlayer, GameState gameState)
+        {
+
+        }
+
         // return true if the card chose to react in some way;
         virtual public bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
         {
@@ -233,6 +241,24 @@ namespace Dominion
             }
         }
 
+        public bool HasSpecializedActionOnTrashWhileInHand
+        {
+            get
+            {
+                return this.doSpecializedActionOnTrashWhileInHand != null;
+            }
+        }
+
+        public bool DoSpecializedActionOnTrashWhileInHand(PlayerState currentPlayer, GameState gameState, Card card)
+        {
+            if (this.HasSpecializedActionOnTrashWhileInHand)
+            {
+                return this.doSpecializedActionOnTrashWhileInHand(currentPlayer, gameState, card);
+            }
+            return false;
+        }
+
+
         virtual public void DoSpecializedDurationActionAtBeginningOfTurn(PlayerState currentPlayer, GameState gameState)
         {
 
@@ -251,7 +277,7 @@ namespace Dominion
         virtual public DeckPlacement DoSpecializedActionOnGainWhileInPlay(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
             return DeckPlacement.Default;
-        }
+        }        
 
         public bool MightProvideDiscountWhileInPlay
         {
@@ -289,7 +315,7 @@ namespace Dominion
         virtual public void DoSpecializedSetupIfInSupply(GameState gameState)
         {
 
-        }
+        }        
 
         public static Card Type<T>()
             where T : Card, new()
@@ -297,8 +323,8 @@ namespace Dominion
             return Example<T>.Card;            
         }
 
-        private static class Example<T>
-            where T : Card, new()
+        private static class Example<T>            
+            where T : Card, new()            
         {
             static public readonly T Card = new T();
         }

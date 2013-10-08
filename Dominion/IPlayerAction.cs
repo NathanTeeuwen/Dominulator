@@ -32,9 +32,11 @@ namespace Dominion
         Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Card GetCardFromHandToIsland(GameState gameState);
         Card GetCardFromHandToDeferToNextTurn(GameState gameState);
+        Card GetCardFromHandOrDiscardToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, out DeckPlacement deckPlacement);
         Card GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer);
         int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber);
         bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card);
+        bool ShouldPlayerDiscardCardFromHand(GameState gameState, PlayerState player, Card card);
         bool ShouldPutCardInHand(GameState gameState, Card card);
         bool WantToResign(GameState gameState);        
         bool ShouldPutDeckInDiscard(GameState gameState);

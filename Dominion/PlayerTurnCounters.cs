@@ -11,6 +11,7 @@ namespace Dominion
     {
         private int availableActionCount;
         private int availableBuys;
+        private int buysUsed;
         private int availableCoins;
         private int availableCoinTokens;
         internal SetOfCards cardsBannedFromPurchase = new SetOfCards();
@@ -20,6 +21,7 @@ namespace Dominion
         {
             this.availableActionCount = 1;
             this.availableBuys = 1;
+            this.buysUsed = 0;
             this.availableCoins = 0;            
             this.copperAdditionalValue = 0;
             this.cardsBannedFromPurchase.Clear();
@@ -58,6 +60,14 @@ namespace Dominion
             }
         }
 
+        internal int BuysUsed
+        {
+            get
+            {
+                return this.buysUsed;
+            }
+        }
+
         public void AddBuys(PlayerState playerState, int count)
         {
             if (count > 0)
@@ -79,6 +89,7 @@ namespace Dominion
         public void RemoveBuy()
         {
             this.availableBuys--;
+            this.buysUsed++;
         }
 
         public void RemoveAction()

@@ -12,7 +12,9 @@ namespace Dominion
         Discard,
         Play,
         Trash,
+        Deck,
         TopOfDeck,
+        Revealed,
         None,
         Default
     }   

@@ -23,10 +23,11 @@ namespace Dominion
         internal bool ownsCardThatMightProvideDiscountWhileInPlay;
         internal bool ownsCardThatHasSpecializedCleanupAtStartOfCleanup;
         internal bool ownsCardWithSpecializedActionOnBuyWhileInPlay;
+        internal bool ownsCardWithSpecializedActionOnTrashWhileInHand;
 
         // all of the cards the player owns.  Always move from one list to the other
         internal ListOfCards deck = new ListOfCards();
-        internal BagOfCards discard = new BagOfCards();
+        internal BagOfCards discard = new BagOfCards();        
         internal ListOfCards cardsBeingPlayed = new ListOfCards();  // a stack for recursion
         internal BagOfCards cardsBeingRevealed = new BagOfCards();
         internal BagOfCards hand = new BagOfCards();        
@@ -34,6 +35,7 @@ namespace Dominion
         internal BagOfCards durationCards = new BagOfCards();
         internal BagOfCards cardsToReturnToHandAtStartOfTurn = new BagOfCards();
         internal Card cardToPass = null;
+        internal Card cardBeingDiscarded = null;
         internal BagOfCards islandMat = new BagOfCards();
         internal BagOfCards nativeVillageMat = new BagOfCards();
 
@@ -47,6 +49,7 @@ namespace Dominion
         public int AvailableBuys { get { return this.turnCounters.AvailableBuys; } }        
         public BagOfCards Hand { get { return this.hand; } }
         public BagOfCards CardsBeingRevealed { get { return this.cardsBeingRevealed; } }
+        public BagOfCards Discard { get { return this.discard; } }
         public int TurnNumber { get { return this.numberOfTurnsPlayed; } }
         public Card CurrentCardBeingPlayed { get { return this.cardsBeingPlayed.TopCard(); } }
         public int PlayerIndex { get { return this.playerIndex; } }
@@ -399,6 +402,26 @@ namespace Dominion
             return currentCard;
         }
 
+        internal Card TrashCardFromDiscardOfType(GameState gameState, Card cardType, bool guaranteeInDiscard)
+        {
+            Card currentCard = this.RemoveCardFromDiscard(cardType);
+            if (currentCard == null)
+            {
+                if (!guaranteeInDiscard)
+                {
+                    return null;
+                }
+                else
+                {
+                    throw new Exception("Player tried to trash a card that wasn't available in the discard.");
+                }
+            }
+
+            MoveCardToTrash(currentCard, gameState);
+
+            return currentCard;
+        }
+
         internal void TrashHand(GameState gameState)
         {
             foreach (Card card in this.hand)
@@ -439,14 +462,45 @@ namespace Dominion
             return wasTrashed;
         }
 
-        internal void MoveCardToTrash(Card card, GameState gameState)
+        internal void MoveCardBeingDiscardedToTrash(GameState gameState)
         {
-            // reaction to trashing?
+            if (this.cardBeingDiscarded != null)
+            {
+                MoveCardToTrash(this.cardBeingDiscarded, gameState);
+                this.cardBeingDiscarded = null;
+            }
+        }
+
+        internal void MoveCardToTrash(Card card, GameState gameState)
+        {            
             this.gameLog.PlayerTrashedCard(this, card);
             gameState.trash.AddCard(card);
             this.gameLog.PushScope();
+
             card.DoSpecializedTrash(gameState.players.CurrentPlayer, gameState);
+
+            // cards in hand react to trashing.
+            if (this.ownsCardWithSpecializedActionOnTrashWhileInHand)
+            {
+                bool stateHasChanged = true;
+                while (stateHasChanged)
+                {
+                    stateHasChanged = false;
+                    foreach (Card cardInHand in this.hand)
+                    {
+                        stateHasChanged = cardInHand.DoSpecializedActionOnTrashWhileInHand(this, gameState, cardInHand);
+                        if (stateHasChanged)
+                            break;
+                    }
+                }
+            }            
+            
             this.gameLog.PopScope();            
+        }
+
+        internal Card RemoveCardFromDiscard(Card cardType)
+        {
+            return this.discard.RemoveCard(cardType);
         }
 
         internal Card RemoveCardFromHand(Card cardType)
@@ -464,7 +518,7 @@ namespace Dominion
 
         internal void DiscardHand(GameState gameState)
         {            
-            this.MoveAllCardsToDiscard(this.hand, gameState);
+            this.MoveAllCardsToDiscard(this.hand, gameState, DeckPlacement.Hand);
         }
 
         internal Card DiscardCardFromTopOfDeck()
@@ -727,6 +781,42 @@ namespace Dominion
             }
 
             return this.TrashCardFromHandOfType(gameState, cardTypeToTrash, guaranteeInHand: true);
+        }
+
+        internal Card RequestPlayerTrashCardFromHandOrDiscard(GameState gameState, CardPredicate acceptableCardsToTrash, bool isOptional)
+        {
+            if (!this.hand.HasCard(acceptableCardsToTrash) &&
+                !this.discard.HasCard(acceptableCardsToTrash))
+            {
+                return null;
+            }
+
+            DeckPlacement deckPlacement;
+            Card cardTypeToTrash = this.actions.GetCardFromHandOrDiscardToTrash(gameState, acceptableCardsToTrash, isOptional, out deckPlacement);
+            if (cardTypeToTrash == null)
+            {
+                if (isOptional)
+                {
+                    return null;
+                }
+                else
+                {
+                    throw new Exception("Player must choose a card to trash");
+                }
+            }
+
+            if (deckPlacement == DeckPlacement.Hand)
+            {
+                return this.TrashCardFromHandOfType(gameState, cardTypeToTrash, guaranteeInHand: true);
+            }
+            else if (deckPlacement == DeckPlacement.Discard)
+            {
+                return this.TrashCardFromDiscardOfType(gameState, cardTypeToTrash, guaranteeInDiscard: true);
+            }
+            else
+            {
+                throw new Exception("Must trash from hand or discard");
+            }
         }
 
         internal int RequestPlayerDiscardCardsFromHand(GameState gameState, int count, bool isOptional)
@@ -1059,8 +1149,8 @@ namespace Dominion
 
         internal void CleanupCardsToDiscard(GameState gameState)
         {
-            this.MoveAllCardsToDiscard(this.cardsPlayed, gameState);
-            this.MoveAllCardsToDiscard(this.hand, gameState);
+            this.MoveAllCardsToDiscard(this.cardsPlayed, gameState, DeckPlacement.Play);
+            this.MoveAllCardsToDiscard(this.hand, gameState, DeckPlacement.Hand);
         }
 
         internal Card GuessCardTopOfDeck(GameState gameState)
@@ -1175,6 +1265,7 @@ namespace Dominion
             this.ownsCardThatMightProvideDiscountWhileInPlay |= card.MightProvideDiscountWhileInPlay;
             this.ownsCardThatHasSpecializedCleanupAtStartOfCleanup |= card.HasSpecializedCleanupAtStartOfCleanup;
             this.ownsCardWithSpecializedActionOnBuyWhileInPlay |= card.HasSpecializedActionOnBuyWhileInPlay;
+            this.ownsCardWithSpecializedActionOnTrashWhileInHand |= card.HasSpecializedActionOnTrashWhileInHand;
         }
 
         internal void MoveAllCards(GameState gameState, CardPredicate acceptableCard, DeckPlacement from, DeckPlacement to)
@@ -1244,14 +1335,14 @@ namespace Dominion
                 throw new Exception("Could not remove Card From Hand");
             }
                         
-            this.DiscardCard(cardToDiscard, gameState);
+            this.DiscardCard(cardToDiscard, gameState, DeckPlacement.Hand);
 
             return cardToDiscard;
         }
 
         internal void MoveDeckToDiscard(GameState gameState)
         {
-            MoveAllCardsToDiscard(this.deck, gameState, shouldReact:false);
+            MoveAllCardsToDiscard(this.deck, gameState, DeckPlacement.Deck);
         }
 
         internal void MoveCardsFromPreviousTurnIntoHand()
@@ -1281,7 +1372,7 @@ namespace Dominion
         internal void MoveRevealedCardsToDiscard(GameState gameState)
         {
             // trigger discard effects
-            MoveAllCardsToDiscard(this.cardsBeingRevealed, gameState);
+            MoveAllCardsToDiscard(this.cardsBeingRevealed, gameState, DeckPlacement.Revealed);
         }
 
         internal void MoveRevealedCardsToDiscard(CardPredicate predicate, GameState gameState)
@@ -1293,19 +1384,35 @@ namespace Dominion
                 {
                     break;
                 }
-                DiscardCard(cardFound, gameState);
+                DiscardCard(cardFound, gameState, DeckPlacement.Revealed);
             }            
         }
 
-        internal void DiscardCard(Card card, GameState gameState, bool shouldReact = true)
+        internal void DiscardCard(Card card, GameState gameState, DeckPlacement source)
         {
-            if (gameState.players.CurrentPlayer.playPhase != PlayPhase.Cleanup && shouldReact)
+            this.cardBeingDiscarded = card;
+
+            if (source != DeckPlacement.Deck)
             {
                 this.gameLog.PlayerDiscardCard(this, card);
-                card.DoSpecializedDiscardNonCleanup(this, gameState);
+                this.gameLog.PushScope();
+                if (gameState.players.CurrentPlayer.playPhase != PlayPhase.Cleanup)
+                {                    
+                    card.DoSpecializedDiscardNonCleanup(this, gameState);                    
+                }
+                
+                if (source == DeckPlacement.Play)
+                {
+                    card.DoSpecializedDiscardFromPlay(this, gameState);
+                }
+                this.gameLog.PopScope();
             }
-            
-            this.discard.AddCard(card);
+
+            if (this.cardBeingDiscarded != null)
+            {
+                this.discard.AddCard(card);
+                this.cardBeingDiscarded = null;
+            }
         }
        
         internal void MoveRevealedCardToDiscard(Card typeOfCard, GameState gameState)
@@ -1316,7 +1423,7 @@ namespace Dominion
                 throw new Exception("Revealed cards did not have the specified card");
             }
           
-            this.DiscardCard(card, gameState);
+            this.DiscardCard(card, gameState, DeckPlacement.Revealed);
         }
         
         internal void MoveRevealedCardToTrash(Card typeOfCard, GameState gameState)
@@ -1410,11 +1517,11 @@ namespace Dominion
             this.hand.AddCard(card);
         }
 
-        private void MoveAllCardsToDiscard(CollectionCards cards, GameState gameState, bool shouldReact = true)
+        private void MoveAllCardsToDiscard(CollectionCards cards, GameState gameState, DeckPlacement source)
         {
             foreach (Card card in cards)
             {
-                this.DiscardCard(card, gameState, shouldReact);                
+                this.DiscardCard(card, gameState, source);                
             }
             cards.Clear();
         }

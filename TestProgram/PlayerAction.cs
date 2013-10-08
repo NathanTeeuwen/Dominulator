@@ -29,7 +29,7 @@ namespace Program
             int playerIndex,
             ICardPicker purchaseOrder,
             ICardPicker actionOrder = null,
-            bool chooseDefaultActionOnNone = false,
+            bool chooseDefaultActionOnNone = true,
             ICardPicker treasurePlayOrder = null,
             ICardPicker discardOrder = null,
             ICardPicker trashOrder = null,
@@ -128,6 +128,33 @@ namespace Program
             if (result == null && !isOptional)
             {
                 result = currentPlayer.Hand.OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();                
+            }
+
+            return result;
+        }
+
+        public override Card GetCardFromHandOrDiscardToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, out DeckPlacement deckPlacement)
+        {
+            var currentPlayer = gameState.players.CurrentPlayer;
+            Card result = this.trashOrder.GetPreferredCard(
+                gameState,
+                card => acceptableCard(card) && (currentPlayer.Hand.HasCard(card) || currentPlayer.Discard.HasCard(card)) );
+
+            // warning, strategy didnt' include what to, try to do a reasonable default.
+            if (result == null && !isOptional)
+            {
+                result = currentPlayer.Hand.OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();
+            }
+
+            deckPlacement = DeckPlacement.Discard;
+            if (result != null)
+            {
+                if (currentPlayer.Discard.HasCard(result))
+                    deckPlacement = DeckPlacement.Discard;
+                else if (currentPlayer.Hand.HasCard(result))
+                    deckPlacement = DeckPlacement.Hand;
+                else
+                    throw new Exception("Card should have been in hand or discard");
             }
 
             return result;
@@ -405,6 +432,14 @@ namespace Program
         public override bool ShouldGainCard(GameState gameState, Card card)
         {
             return this.gainOrder.GetPreferredCard(gameState, c => c.Equals(card)) != null;
+        }
+
+        public override bool ShouldPlayerDiscardCardFromHand(GameState gameState, PlayerState playerState, Card card)
+        {
+            if (card.Is<CardTypes.MarketSquare>())
+                return true;
+
+            return base.ShouldPlayerDiscardCardFromHand(gameState, playerState, card);
         }
 
         public override int GetCoinAmountToUseInButcher(GameState gameState)

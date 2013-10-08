@@ -154,6 +154,12 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
+        virtual public Card GetCardFromHandOrDiscardToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, out DeckPlacement deckPlacement)
+        {
+            deckPlacement = DeckPlacement.Default;
+            return PlayerMustMakeCardChoice();
+        }
+
         virtual public Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
         {
             return PlayerMustMakeCardChoice();
@@ -165,6 +171,11 @@ namespace Dominion
         }
 
         virtual public bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card)
+        {
+            return PlayerMustMakeChoice();
+        }
+
+        virtual public bool ShouldPlayerDiscardCardFromHand(GameState gameState, PlayerState playerState, Card card)
         {
             return PlayerMustMakeChoice();
         }

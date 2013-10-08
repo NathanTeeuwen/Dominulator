@@ -8,7 +8,8 @@ namespace Dominion
 {
     public delegate int VictoryPointCounter(PlayerState player);
     public delegate void GameStateMethod(PlayerState currentPlayer, GameState gameState);
-    public delegate void GameStateCardMethod(PlayerState currentPlayer, GameState gameState, Card boughtCard);
+    public delegate void GameStateCardMethod(PlayerState currentPlayer, GameState gameState, Card card);
+    public delegate bool GameStateCardPredicate(PlayerState currentPlayer, GameState gameState, Card card);
     public delegate int CardIntValue(Card card);
 
     public delegate DeckPlacement MapCardToPlacement(Card card);

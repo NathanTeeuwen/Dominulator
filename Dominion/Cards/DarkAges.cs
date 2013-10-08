@@ -452,7 +452,27 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            currentPlayer.RequestPlayerTrashCardFromHandOrDiscard(gameState,
+                CanTrashCard,
+                isOptional: true);
+
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState,
+                acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= 3,
+                "Gain a card costing up to 3");
+        }
+
+        public override void DoSpecializedDiscardFromPlay(PlayerState currentPlayer, GameState gameState)
+        {            
+            if (currentPlayer.turnCounters.BuysUsed == 0)
+            {                
+                currentPlayer.MoveCardBeingDiscardedToTrash(gameState);
+                currentPlayer.GainCardFromSupply<CardTypes.Madman>(gameState);            
+            }            
+        }
+
+        public static bool CanTrashCard(Card card)
+        {
+            return !card.isTreasure;
         }
     }
 
@@ -466,7 +486,10 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            if (currentPlayer.MoveCardFromPlayToPile(gameState))
+            {
+                currentPlayer.DrawAdditionalCardsIntoHand(currentPlayer.Hand.Count);
+            }
         }
     }
 
@@ -578,12 +601,20 @@ namespace Dominion.CardTypes
         public MarketSquare()
             : base("MarketSquare", coinCost: 3, isAction: true, plusCards:1, plusActions:1, plusBuy:1)
         {
+            this.doSpecializedActionOnTrashWhileInHand = DoSpecializedActionOnTrashWhileInHand;
         }
 
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        private bool DoSpecializedActionOnTrashWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
-            throw new NotImplementedException();
-        }
+            if (currentPlayer.actions.ShouldPlayerDiscardCardFromHand(gameState, currentPlayer, this))
+            {
+                currentPlayer.DiscardCardFromHand(gameState, this);
+                currentPlayer.GainCardFromSupply<Gold>(gameState);
+                return true;
+            }
+
+            return false;
+        }        
     }
 
     public class Mystic :

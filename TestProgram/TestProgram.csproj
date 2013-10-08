@@ -46,6 +46,7 @@
     <Compile Include="StartingDeckBuilder.cs" />
     <Compile Include="Strategies\BigMoneyCultist.cs" />
     <Compile Include="Strategies\BigMoneyDoubleSmithy.cs" />
+    <Compile Include="Strategies\HermitMarketSquare.cs" />
     <Compile Include="Strategies\IllgottengainsMoneylender.cs" />
     <Compile Include="Strategies\IronworksGreathallRemodelHuntingGrounds.cs" />
     <Compile Include="Strategies\LookoutSalvagerLibraryHighwayFestival.cs" />

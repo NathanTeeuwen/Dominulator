@@ -14,9 +14,9 @@ namespace Program
         {
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
-            
-            //ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.BigMoney.Player(2), numberOfGames:1000);
-            CompareStrategyVsAllKnownStrategies(Strategies.BigMoneyCultist.Player(1));
+
+            ComparePlayers(Strategies.HermitMarketSqaure.Player(1), Strategies.BigMoney.Player(2));
+            CompareStrategyVsAllKnownStrategies(Strategies.HermitMarketSqaure.Player(1));
             
             stopwatch.Stop();
             System.Console.WriteLine("");
