@@ -39,8 +39,8 @@ namespace Program
                     CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2));                    
 
                 var buildOrder = new CardPickByBuildOrder(
-                    new CardTypes.Moneylender(),
-                    new CardTypes.Silver());
+                    CardAcceptance.For<CardTypes.Moneylender>(),
+                    CardAcceptance.For<CardTypes.Silver>());
 
                 var lowPriority = new CardPickByPriority(                           
                            CardAcceptance.For<CardTypes.Silver>(),
@@ -78,8 +78,8 @@ namespace Program
                     CardAcceptance.For<CardTypes.Duchy>(),
                     CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2));
 
-                var buildOrder = new CardPickByBuildOrder(                    
-                    new CardTypes.Silver());
+                var buildOrder = new CardPickByBuildOrder(
+                    CardAcceptance.For<CardTypes.Silver>());
 
                 var lowPriority = new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Silver>(),

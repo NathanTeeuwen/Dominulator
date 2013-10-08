@@ -48,19 +48,19 @@ namespace Program
 
                 /*//  Intuitive guess as to the right build order, not correct it seeems.
                 var buildOrder = new CardPickByBuildOrder(
-                    new CardTypes.Armory(),
-                    new CardTypes.Silver(),
-                    new CardTypes.WanderingMinstrell(),
-                    new CardTypes.Watchtower(),
-                    new CardTypes.Rats(),
-                    new CardTypes.Watchtower());*/
+                    Card.Type<CardTypes.Armory>(),
+                    Card.Type<CardTypes.Silver>(),
+                    Card.Type<CardTypes.WanderingMinstrell>(),
+                    Card.Type<CardTypes.Watchtower>(),
+                    Card.Type<CardTypes.Rats>(),
+                    Card.Type<CardTypes.Watchtower>());*/
                 
 
                 var buildOrder = new CardPickByBuildOrder(
-                    new CardTypes.Armory(),
-                    new CardTypes.Watchtower(),                    
-                    new CardTypes.Rats(),                    
-                    new CardTypes.Watchtower());                                
+                    CardAcceptance.For<CardTypes.Armory>(),
+                    CardAcceptance.For<CardTypes.Watchtower>(),
+                    CardAcceptance.For<CardTypes.Rats>(),
+                    CardAcceptance.For<CardTypes.Watchtower>());                                
 
                 var lowPriority = new CardPickByPriority(
                        CardAcceptance.For<CardTypes.Bridge>(ShouldBuyBridge),                       

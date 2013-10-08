@@ -526,31 +526,31 @@ namespace Program
 
             var cardsToRemove = new Card[] { 
                 // treaures
-                new CardTypes.Platinum(),
-                new CardTypes.Gold(),
-                new CardTypes.Silver(),
-                new CardTypes.Copper(),
-                new CardTypes.Colony(),
-                new CardTypes.Potion(),
+                Card.Type<CardTypes.Platinum>(),
+                Card.Type<CardTypes.Gold>(),
+                Card.Type<CardTypes.Silver>(),
+                Card.Type<CardTypes.Copper>(),
+                Card.Type<CardTypes.Colony>(),
+                Card.Type<CardTypes.Potion>(),
                 // victory
-                new CardTypes.Province(),
-                new CardTypes.Duchy(),
-                new CardTypes.Estate(),
-                new CardTypes.Curse(),                
+                Card.Type<CardTypes.Province>(),
+                Card.Type<CardTypes.Duchy>(),
+                Card.Type<CardTypes.Estate>(),
+                Card.Type<CardTypes.Curse>(),                
                 // ruins
-                new CardTypes.AbandonedMine(),
-                new CardTypes.RuinedLibrary(),
-                new CardTypes.RuinedVillage(),
-                new CardTypes.RuinedMarket(),
-                new CardTypes.Survivors(),
+                Card.Type<CardTypes.AbandonedMine>(),
+                Card.Type<CardTypes.RuinedLibrary>(),
+                Card.Type<CardTypes.RuinedVillage>(),
+                Card.Type<CardTypes.RuinedMarket>(),
+                Card.Type<CardTypes.Survivors>(),
                 // shelters
-                new CardTypes.OvergrownEstate(),
-                new CardTypes.Hovel(),
-                new CardTypes.Necropolis(),
+                Card.Type<CardTypes.OvergrownEstate>(),
+                Card.Type<CardTypes.Hovel>(),
+                Card.Type<CardTypes.Necropolis>(),
                 // non-supply piles
-                new CardTypes.Spoils(),                
-                new CardTypes.Madman(),
-                new CardTypes.Mercenary()
+                Card.Type<CardTypes.Spoils>(),                
+                Card.Type<CardTypes.Madman>(),
+                Card.Type<CardTypes.Mercenary>()
             };
 
             foreach (Card card in cardsToRemove)

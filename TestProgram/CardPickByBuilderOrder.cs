@@ -8,11 +8,11 @@ namespace Program
     public class CardPickByBuildOrder
         : ICardPicker
     {
-        private readonly Card[] buildOrder;
+        private readonly CardAcceptance[] buildOrder;
 
-        public CardPickByBuildOrder(params Card[] buildOrer)
+        public CardPickByBuildOrder(params CardAcceptance[] buildOrer)
         {
-            this.buildOrder = buildOrer.Where(card => card != null).ToArray();
+            this.buildOrder = buildOrer.Where(acceptance => acceptance != null && acceptance.card != null).ToArray();
         }
 
         public int AmountWillingtoOverPayFor(Card card, GameState gameState)
@@ -38,10 +38,15 @@ namespace Program
 
             for (int index = 0; index < this.buildOrder.Length; ++index)
             {
-                Card currentCard = this.buildOrder[index];
+                CardAcceptance acceptance = this.buildOrder[index];
 
-                if (currentCard == null)
+                if (acceptance == null)
                     continue;
+
+                if (!acceptance.match(gameState))
+                    continue;
+
+                Card currentCard = acceptance.card;
 
                 if (existingCards.HasCard(currentCard))
                 {
@@ -66,7 +71,7 @@ namespace Program
 
         public IEnumerable<Card> GetNeededCards()
         {
-            return this.buildOrder;
+            return this.buildOrder.Select(acceptance => acceptance.card);
         }
     }
 }

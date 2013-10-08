@@ -35,10 +35,10 @@ namespace Program
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 3));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    new CardTypes.DeathCart(),
-                    new CardTypes.Silver(),
-                    new CardTypes.Warehouse(),
-                    new CardTypes.Warehouse());
+                    CardAcceptance.For<CardTypes.DeathCart>(),
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Warehouse>(),
+                    CardAcceptance.For<CardTypes.Warehouse>());
 
                 var lowPriority = new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Silver>());

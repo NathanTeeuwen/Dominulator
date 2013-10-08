@@ -33,8 +33,8 @@ namespace Program
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    new CardTypes.Talisman(),
-                    new CardTypes.Chapel());
+                    CardAcceptance.For<CardTypes.Talisman>(),
+                    CardAcceptance.For<CardTypes.Chapel>());
 
                 var lowPriority = new CardPickByPriority(
                            CardAcceptance.For<CardTypes.FishingVillage>(ShouldBuyFishingVillage),

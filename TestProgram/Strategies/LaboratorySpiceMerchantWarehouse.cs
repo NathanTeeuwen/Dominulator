@@ -49,10 +49,10 @@ namespace Program
                      CardAcceptance.For<CardTypes.Gold>(),
                      CardAcceptance.For<CardTypes.Laboratory>());
 
-                var buildOrder = new CardPickByBuildOrder(                    
-                    new CardTypes.SpiceMerchant(),
-                    new CardTypes.Silver(),                    
-                    new CardTypes.Warehouse());
+                var buildOrder = new CardPickByBuildOrder(
+                    CardAcceptance.For<CardTypes.SpiceMerchant>(),
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Warehouse>());
 
                 var lowPriority = new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Silver>(),

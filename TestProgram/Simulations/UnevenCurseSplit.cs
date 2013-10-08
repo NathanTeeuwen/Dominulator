@@ -25,11 +25,11 @@ namespace Program.Simulations
             
             ComparePlayers(gameCount,
                 new CardCountPair[] {
-                    new CardCountPair(new CardTypes.Copper(), 7),
-                    new CardCountPair(new CardTypes.Estate(), 3),
-                    new CardCountPair(new CardTypes.Silver(), 4),
-                    new CardCountPair(new CardTypes.Witch(), 2),
-                    new CardCountPair(new CardTypes.Curse(), 1)
+                    new CardCountPair(Card.Type<CardTypes.Copper>(), 7),
+                    new CardCountPair(Card.Type<CardTypes.Estate>(), 3),
+                    new CardCountPair(Card.Type<CardTypes.Silver>(), 4),
+                    new CardCountPair(Card.Type<CardTypes.Witch>(), 2),
+                    new CardCountPair(Card.Type<CardTypes.Curse>(), 1)
                 });
 
             System.Console.WriteLine("");
@@ -39,10 +39,10 @@ namespace Program.Simulations
                         
             ComparePlayers(gameCount,
                 new CardCountPair[] {
-                    new CardCountPair(new CardTypes.Copper(), 7),
-                    new CardCountPair(new CardTypes.Estate(), 3),
-                    new CardCountPair(new CardTypes.Silver(), 2),
-                    new CardCountPair(new CardTypes.Witch(), 2)                
+                    new CardCountPair(Card.Type<CardTypes.Copper>(), 7),
+                    new CardCountPair(Card.Type<CardTypes.Estate>(), 3),
+                    new CardCountPair(Card.Type<CardTypes.Silver>(), 2),
+                    new CardCountPair(Card.Type<CardTypes.Witch>(), 2)                
                 });
         }
 

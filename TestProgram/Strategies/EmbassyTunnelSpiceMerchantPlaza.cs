@@ -46,12 +46,12 @@ namespace Program
                      CardAcceptance.For<CardTypes.Province>(CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    shouldBuySpiceMerchant == true ? (Card)new CardTypes.SpiceMerchant() : (Card)new CardTypes.Silver(),
-                    new CardTypes.Silver(),
-                    new CardTypes.Embassy(),
-                    new CardTypes.Tunnel(),
-                    new CardTypes.Embassy(),
-                    shouldBuyPlaza ? new CardTypes.Plaza() : null);
+                    shouldBuySpiceMerchant == true ? CardAcceptance.For<CardTypes.SpiceMerchant>() : CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Embassy>(),
+                    CardAcceptance.For<CardTypes.Tunnel>(),
+                    CardAcceptance.For<CardTypes.Embassy>(),
+                    shouldBuyPlaza ? CardAcceptance.For<CardTypes.Plaza>() : null);
 
                 var lowPriority = new CardPickByPriority(                    
                            CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),                           

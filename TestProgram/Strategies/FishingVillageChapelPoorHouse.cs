@@ -32,8 +32,8 @@ namespace Program
                            CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    new CardTypes.FishingVillage(),
-                    new CardTypes.Chapel());
+                    CardAcceptance.For<CardTypes.FishingVillage>(),
+                    CardAcceptance.For<CardTypes.Chapel>());
 
                 var lowPriority = new CardPickByPriority(
                            CardAcceptance.For<CardTypes.FishingVillage>(gameState => CountAllOwned<CardTypes.FishingVillage>(gameState) < 2),

@@ -42,16 +42,16 @@ namespace Program
                      CardAcceptance.For<CardTypes.Silver>(gameState => CountAllOwned<CardTypes.Silver>(gameState) + CountAllOwned<CardTypes.Festival>(gameState) < 2)
                      );
                 
-                var buildOrder = new CardPickByBuildOrder(                    
-                    new CardTypes.Festival(),
-                    new CardTypes.Library(),
-                    new CardTypes.Festival(),
-                    new CardTypes.Highway(),
-                    new CardTypes.Highway(),
-                    new CardTypes.Festival(),                    
-                    new CardTypes.Festival(),
-                    new CardTypes.Library(),
-                    new CardTypes.Festival()
+                var buildOrder = new CardPickByBuildOrder(
+                    CardAcceptance.For<CardTypes.Festival>(),
+                    CardAcceptance.For<CardTypes.Library>(),
+                    CardAcceptance.For<CardTypes.Festival>(),
+                    CardAcceptance.For<CardTypes.Highway>(),
+                    CardAcceptance.For<CardTypes.Highway>(),
+                    CardAcceptance.For<CardTypes.Festival>(),
+                    CardAcceptance.For<CardTypes.Festival>(),
+                    CardAcceptance.For<CardTypes.Library>(),
+                    CardAcceptance.For<CardTypes.Festival>()
                     );
 
                 var lowPriority = new CardPickByPriority(

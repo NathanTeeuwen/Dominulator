@@ -42,8 +42,8 @@ namespace Program
                      CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    new CardTypes.IronWorks(),
-                    new CardTypes.Silver());
+                    CardAcceptance.For<CardTypes.IronWorks>(),
+                    CardAcceptance.For<CardTypes.Silver>());
 
                 var lowPriority = new CardPickByPriority(                       
                        CardAcceptance.For<CardTypes.IronWorks>(gameState => CountAllOwned<CardTypes.IronWorks>(gameState) < 2),

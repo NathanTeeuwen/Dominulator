@@ -39,6 +39,17 @@ namespace Dominion
         protected GameStateCardPredicate doSpecializedActionOnTrashWhileInHand; //readonly
         protected GameStateCardMethod doSpecializedActionToCardWhileInPlay;  //readonly
 
+        internal int privateIndex = -1; //readonly
+        internal int hashCode = -1;
+
+        internal int index
+        {
+            get
+            {
+                return this.privateIndex;
+            }
+        }        
+
         internal Card(
             string name,
             int coinCost,
@@ -68,6 +79,9 @@ namespace Dominion
             GameStateCardMethod doSpecializedActionOnBuyWhileInPlay = null,
             GameStateCardPredicate doSpecializedActionOnTrashWhileInHand = null)
         {
+            if (!isConstructing)
+                throw new Exception("Can not call new operator");
+
             this.name = name;
             this.coinCost = coinCost;
             this.potionCost = potionCost;
@@ -122,10 +136,14 @@ namespace Dominion
         }
 
         public bool Equals(Card other)
-        {
+        {            
             if (other == null)
                 return false;
-            return this.GetType() == other.GetType();
+
+            System.Diagnostics.Debug.Assert(this.index != -1);
+            System.Diagnostics.Debug.Assert(other.index != -1);
+
+            return this.index == other.index;
         }
 
         public override bool Equals(object obj)
@@ -135,7 +153,7 @@ namespace Dominion
 
         public override int GetHashCode()
         {
-            return this.GetType().GetHashCode();
+            return this.hashCode;
         }
 
         public int DefaultCoinCost
@@ -321,13 +339,37 @@ namespace Dominion
         public static Card Type<T>()
             where T : Card, new()
         {
-            return Example<T>.Card;            
+            return StaticInstance<T>.Card;            
         }
 
-        private static class Example<T>            
+        public static void InitializeCustomCard(Card card)
+        {
+            card.privateIndex = lastCardIndex++;
+            card.hashCode = card.privateIndex.GetHashCode();            
+        }
+
+        static object cardConstructorLock = new object();
+        static bool isConstructing = false;
+        static int lastCardIndex = 0;        
+
+        private static class StaticInstance<T>
             where T : Card, new()            
         {
-            static public readonly T Card = new T();
+            static public readonly T Card = InitializeCard();
+
+            private static T InitializeCard()
+            {       
+                T result;
+                lock (cardConstructorLock)
+                {
+                    isConstructing = true;
+                    result = new T();
+                    InitializeCustomCard(result);
+                    isConstructing = false;
+                }
+
+                return result;
+            }
         }
     }
 }

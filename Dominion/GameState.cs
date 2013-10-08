@@ -68,48 +68,8 @@ namespace Dominion
                     }
                 }
             }                                        
-        }
-
-        private static PileOfCards CreateRuins(int ruinsCount, Random random)
-        {
-            int ruinCountPerPile = 10;
-            var allRuinsCards = new ListOfCards();
-            allRuinsCards.AddNCardsToTop(new CardTypes.AbandonedMine(), ruinCountPerPile);
-            allRuinsCards.AddNCardsToTop(new CardTypes.RuinedMarket(), ruinCountPerPile);
-            allRuinsCards.AddNCardsToTop(new CardTypes.RuinedLibrary(), ruinCountPerPile);
-            allRuinsCards.AddNCardsToTop(new CardTypes.RuinedVillage(), ruinCountPerPile);
-            allRuinsCards.AddNCardsToTop(new CardTypes.Survivors(), ruinCountPerPile);
-
-            allRuinsCards.Shuffle(random);
-
-            var result = new PileOfCards(new CardTypes.Ruins());
-
-            for (int i = 0; i < ruinsCount; ++i)
-            {
-                Card card = allRuinsCards.DrawCardFromTop();
-                if (card == null)
-                {
-                    throw new Exception("Not enough ruins available.");
-                }
-                result.AddCardToTop(card);
-            }
-            result.EraseKnownCountKnowledge();
-                        
-            return result;
-        }
-
-        private static void Add<CardType>(List<PileOfCards> cardPiles, int initialCount)
-            where CardType : Card, new()
-        {
-            
-            Add(cardPiles, initialCount, new CardType());
-        }
-
-        private static void Add(List<PileOfCards> cardPiles, int initialCount, Card protoType)           
-        {                        
-            cardPiles.Add( new PileOfCards(protoType, initialCount));
-        }
-
+        }              
+      
         public bool IsVictoryConditionReached()
         {
             int countEmptyPiles = 0;

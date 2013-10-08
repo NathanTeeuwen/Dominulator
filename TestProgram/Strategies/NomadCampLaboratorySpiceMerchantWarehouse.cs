@@ -50,10 +50,10 @@ namespace Program
                      CardAcceptance.For<CardTypes.Laboratory>());
 
                 var buildOrder = new CardPickByBuildOrder(
-                    new CardTypes.NomadCamp(),                   
-                    new CardTypes.Silver(),
-                    new CardTypes.Warehouse(),
-                    new CardTypes.SpiceMerchant());
+                    CardAcceptance.For<CardTypes.NomadCamp>(),
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Warehouse>(),
+                    CardAcceptance.For<CardTypes.SpiceMerchant>());
 
                 var lowPriority = new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Silver>(),

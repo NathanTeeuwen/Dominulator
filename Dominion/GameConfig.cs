@@ -61,18 +61,18 @@ namespace Dominion
                 {
                     return 
                         new CardCountPair[] {
-                            new CardCountPair(new CardTypes.Copper(), 7),
-                            new CardCountPair(new CardTypes.Hovel(), 1),
-                            new CardCountPair(new CardTypes.Necropolis(), 1),
-                            new CardCountPair(new CardTypes.OvergrownEstate(), 1)
+                            new CardCountPair(Card.Type<CardTypes.Copper>(), 7),
+                            new CardCountPair(Card.Type<CardTypes.Hovel>(), 1),
+                            new CardCountPair(Card.Type<CardTypes.Necropolis>(), 1),
+                            new CardCountPair(Card.Type<CardTypes.OvergrownEstate>(), 1)
                         };
                 }
                 else
                 {
                     return
                         new CardCountPair[] {
-                            new CardCountPair(new CardTypes.Copper(), 7),
-                            new CardCountPair(new CardTypes.Estate(), 3) 
+                            new CardCountPair(Card.Type<CardTypes.Copper>(), 7),
+                            new CardCountPair(Card.Type<CardTypes.Estate>(), 3) 
                         };
                 }
             }
@@ -151,15 +151,15 @@ namespace Dominion
         {
             int ruinCountPerPile = 10;
             var allRuinsCards = new ListOfCards();
-            allRuinsCards.AddNCardsToTop(new CardTypes.AbandonedMine(), ruinCountPerPile);
-            allRuinsCards.AddNCardsToTop(new CardTypes.RuinedMarket(), ruinCountPerPile);
-            allRuinsCards.AddNCardsToTop(new CardTypes.RuinedLibrary(), ruinCountPerPile);
-            allRuinsCards.AddNCardsToTop(new CardTypes.RuinedVillage(), ruinCountPerPile);
-            allRuinsCards.AddNCardsToTop(new CardTypes.Survivors(), ruinCountPerPile);
+            allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.AbandonedMine>(), ruinCountPerPile);
+            allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.RuinedMarket>(), ruinCountPerPile);
+            allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.RuinedLibrary>(), ruinCountPerPile);
+            allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.RuinedVillage>(), ruinCountPerPile);
+            allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.Survivors>(), ruinCountPerPile);
 
             allRuinsCards.Shuffle(random);
 
-            var result = new PileOfCards(new CardTypes.Ruins());
+            var result = new PileOfCards(Card.Type<CardTypes.Ruins>());
 
             for (int i = 0; i < ruinsCount; ++i)
             {
@@ -179,7 +179,7 @@ namespace Dominion
             where CardType : Card, new()
         {
 
-            Add(cardPiles, initialCount, new CardType());
+            Add(cardPiles, initialCount, Card.Type<CardType>());
         }
 
         private static void Add(List<PileOfCards> cardPiles, int initialCount, Card protoType)

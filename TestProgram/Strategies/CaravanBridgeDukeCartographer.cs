@@ -82,10 +82,10 @@ namespace Program
                     CardAcceptance.For<Gold>(gameState => gameState.players.CurrentPlayer.AvailableBuys <= 1));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    new Bridge(),
-                    new Silver(),                    
-                    new Silver(),
-                    new Bridge());
+                    CardAcceptance.For<Bridge>(),
+                    CardAcceptance.For<Silver>(),
+                    CardAcceptance.For<Silver>(),
+                    CardAcceptance.For<Bridge>());
 
                 var lowPriority = new CardPickByPriority(
                            CardAcceptance.For<Caravan>(),

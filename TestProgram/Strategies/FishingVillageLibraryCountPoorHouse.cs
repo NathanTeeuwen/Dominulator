@@ -100,10 +100,10 @@ namespace Program
                            CardAcceptance.For<CardTypes.Count>(gameState => CountAllOwned<CardTypes.Count>(gameState) < 1));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    new CardTypes.FishingVillage(),
-                    new CardTypes.Library(),
-                    new CardTypes.Count(),
-                    new CardTypes.Library());
+                    CardAcceptance.For<CardTypes.FishingVillage>(),
+                    CardAcceptance.For<CardTypes.Library>(),
+                    CardAcceptance.For<CardTypes.Count>(),
+                    CardAcceptance.For<CardTypes.Library>());
 
                 var lowPriority = new CardPickByPriority(
                            CardAcceptance.For<CardTypes.PoorHouse>(gameState => CountAllOwned<CardTypes.PoorHouse>(gameState) < 2 &&

@@ -46,13 +46,11 @@ namespace Program
                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 3));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    new CardTypes.Silver(),
-                    new CardTypes.Watchtower(),
-                    new CardTypes.Plaza(),
-                    new CardTypes.Plaza(),
-                    new CardTypes.Watchtower()
-                    //new CardTypes.Plaza(),
-                    //new CardTypes.Watchtower()
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Watchtower>(),
+                    CardAcceptance.For<CardTypes.Plaza>(),
+                    CardAcceptance.For<CardTypes.Plaza>(),
+                    CardAcceptance.For<CardTypes.Watchtower>()                    
                     );
 
                 var lowPriority = new CardPickByPriority(

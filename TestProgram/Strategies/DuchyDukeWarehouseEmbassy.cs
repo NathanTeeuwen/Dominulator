@@ -33,18 +33,18 @@ namespace Program
                      CardAcceptance.For<CardTypes.Duke>());
 
                 var buildOrder = new CardPickByBuildOrder(
-                    new CardTypes.Silver(),
-                    new CardTypes.Warehouse(),
-                    new CardTypes.Silver(),
-                    new CardTypes.Silver(),
-                    new CardTypes.Silver(),
-                    new CardTypes.Silver(),
-                    new CardTypes.Warehouse(),
-                    new CardTypes.Silver(),
-                    new CardTypes.Silver(),
-                    new CardTypes.Silver(),
-                    new CardTypes.Silver(),
-                    new CardTypes.Warehouse());
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Warehouse>(),
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Warehouse>(),
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Silver>(),
+                    CardAcceptance.For<CardTypes.Warehouse>());
 
                 var lowPriority = new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Silver>());
