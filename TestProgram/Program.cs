@@ -15,8 +15,8 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            ComparePlayers(Strategies.HermitMarketSqaure.Player(1), Strategies.BigMoney.Player(2));
-            CompareStrategyVsAllKnownStrategies(Strategies.HermitMarketSqaure.Player(1));
+            ComparePlayers(Strategies.HermitMarketSquare.Player(1), Strategies.BigMoney.Player(2));
+            CompareStrategyVsAllKnownStrategies(Strategies.HermitMarketSquare.Player(1));
             
             stopwatch.Stop();
             System.Console.WriteLine("");
@@ -56,143 +56,7 @@ namespace Program
                     System.Console.Write("=====>");
                 System.Console.WriteLine("{0:F1}% difference for {1}", -result.Item2, result.Item1);
             }
-        }
-
-        static void FindAndCompareBestStrategy()
-        {
-            EvaulateBestStrategyForFirstGame();
-            FindBestStrategyForFirstGame();
-
-            //FindBestStrategy currently finds the following, which is better than BigMoneySimple, but not as good as BigMoney
-            //Province(1), Province, Gold, Market(1), Duchy(2), Militia(2), Silver, Estate(1),Workshop(1), Cellar(1),                                   
-        }
-
-        static void CompareGame1()
-        {
-            // possible strategies choen for Shanty Town, Swindler, lookout, spicemerchant, nomad camp, horse tradres, navigator, laboratory, warehouse, 
-            ComparePlayers(Strategies.NomadCampLaboratorySpiceMerchantWarehouse.Player(1), Strategies.BigMoney.Player(2));
-            ComparePlayers(Strategies.LaboratorySpiceMerchantWarehouse.Player(1), Strategies.BigMoney.Player(2));
-            ComparePlayers(Strategies.NomadCampLaboratorySpiceMerchantWarehouse.Player(1), Strategies.LaboratorySpiceMerchantWarehouse.Player(2));
-            ComparePlayers(Strategies.NomadCampLaboratorySpiceMerchantWarehouse.Player(1), Strategies.BigMoneyWithCard<CardTypes.Laboratory>.Player(2, cardCount: 3));
-        }
-
-        static void CompareGame2()
-        {
-            // possible strategies for armory, conspirator, forager, great hall, pawn, governor, mining village, pawn, junk dealdre
-            ComparePlayers(Strategies.BigMoneySingleSmithy.Player(1), Strategies.ArmoryConspiratorForagerGreatHall.Player(2), useShelters: true);
-            ComparePlayers(Strategies.BigMoneyDoubleJack.Player(1), Strategies.ArmoryConspiratorForagerGreatHall.Player(2), useShelters: true);
-            ComparePlayers(Strategies.BigMoneySingleSmithy.Player(1), Strategies.GovernorJunkdealer.Player(2), useShelters: true);
-            ComparePlayers(Strategies.ArmoryConspiratorForagerGreatHall.Player(1), Strategies.GovernorJunkdealer.Player(2), useShelters: true);
-        }
-
-        static void EvaulateBestStrategyForFirstGame()
-        {
-            //FindBestStrategy currently finds the following, which is better than BigMoneySimple, but not as good as BigMoney
-            //Province(1), Province, Gold, Market(1), Duchy(2), Militia(2), Silver, Estate(1),Workshop(1), Cellar(1),
-            var player1 = new PlayerAction("Player 1", 1, 
-                new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Province>(),
-                    CardAcceptance.For<CardTypes.Gold>(),
-                    CardAcceptance.For<CardTypes.Market>(gameState => Strategies.CountAllOwned<CardTypes.Market>(gameState) < 1),
-                    CardAcceptance.For<CardTypes.Duchy>(gameState => Strategies.CountAllOwned<CardTypes.Duchy>(gameState) < 2),
-                    CardAcceptance.For<CardTypes.Militia>(gameState => Strategies.CountAllOwned<CardTypes.Militia>(gameState) < 2),
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Estate>(gameState => Strategies.CountAllOwned<CardTypes.Militia>(gameState) < 1)
-                    ));
-            ComparePlayers(player1, Strategies.BigMoneySimple.Player(2), showVerboseScore: true);
-            ComparePlayers(player1, Strategies.BigMoney.Player(2), showVerboseScore:true);
-            ComparePlayers(player1, Strategies.BigMoneySingleSmithy.Player(2), showVerboseScore: true);            
-        }
-
-        static void FindBestStrategyForFirstGame()        
-        {
-            StrategyOptimizer.FindBestStrategyForGame(GameSets.FirstGame);
-        }
-       
-        static void DarkAgesBigMoney()
-        {
-            // for forum topic: http://forum.dominionstrategy.com/index.php?topic=6281.0
-            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoney.Player(2));
-            //ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Catacombs>.Player(1, 2), Strategies.BigMoney.Player(2));
-            //ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Count>.Player(1), Strategies.BigMoney.Player(2));
-            ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.HuntingGrounds>.Player(1), Strategies.BigMoney.Player(2));
-        }
-
-        static void HighestWinRateVsBigMoney()
-        {
-            // goal is to find a strategy that always beats big money.  Haven't found it yet.
-            // for forum topic: http://forum.dominionstrategy.com/index.php?topic=8580.0
-            //ComparePlayers(Strategies.FishingVillageChapelPoorHouseTalisman.Player(1), Strategies.BigMoney.Player(2));
-            //ComparePlayers(Strategies.FishingVillageChapelPoorHouse.Player(1), Strategies.BigMoney.Player(2));            
-            ComparePlayers(Strategies.GardensBeggarIronworks.Player(1), Strategies.BigMoney.Player(2), numberOfGames: 10000);
-        }
-
-        static void RebuildResults()
-        {
-            // for forum topic: http://forum.dominionstrategy.com/index.php?topic=8391.0
-            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoney.Player(2));
-            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Wharf>.Player(2, cardCount:2));
-            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Mountebank>.Player(2, cardCount: 2));
-            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2, cardCount: 2));
-            ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.YoungWitch>.Player(2, cardCount: 2));
-        }
-
-        static void GuildsSimulatorResults()
-        {
-            // for forum topic: http://forum.dominionstrategy.com/index.php?topic=8461.0
-            ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Soothsayer>.Player(1), Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2));
-        }
-
-        static void FeodumVsDuke()
-        {
-            // for forum topic: http://forum.dominionstrategy.com/index.php?topic=7476.msg212934#msg212934
-            ComparePlayers(Strategies.DuchyDukeWarehouseEmbassy.Player(1), Strategies.BigMoney.Player(2));
-            ComparePlayers(Strategies.FeodumDevelop.Player(1), Strategies.BigMoney.Player(2));
-            ComparePlayers(Strategies.DuchyDukeWarehouseEmbassy.Player(1), Strategies.FeodumDevelop.Player(2));
-        }
-
-        static void FollowersTest()
-        {
-            // for forum topic: http://forum.dominionstrategy.com/index.php?topic=6623.0
-            System.Console.WriteLine("Followers Cost, Player 1 Win %, Player 2 Win%, Tie%");
-            for (int i = 0; i < 16; ++i)
-            {
-                System.Console.Write("{0}, ", i);
-                ComparePlayers(Strategies.FollowersTest.TestPlayer(1, i), Strategies.BigMoney.Player(2), showCompactScore: true);
-            }
-        }
-
-        static void AssymmetricStartingDeckTest()
-        {
-            ComparePlayers(Strategies.RebuildAdvanced.Player(1), Strategies.RebuildAdvanced.Player(2), startingDeckPerPlayer: StartingDecksForRebuildWithEstateAdvantage.StartingDecks);            
-        }
-
-        class StartingDecksForRebuildWithEstateAdvantage
-            : StartingDeckBuilder
-        {
-            static new public IEnumerable<CardCountPair>[] StartingDecks
-            {
-                get
-                {
-                    return StartingDecks(
-                       StartingDeck(
-                            CardWithCount<CardTypes.Copper>(7),
-                            CardWithCount<CardTypes.Estate>(1),
-                            CardWithCount<CardTypes.Silver>(5),
-                            CardWithCount<CardTypes.Gold>(2),
-                            CardWithCount<CardTypes.Rebuild>(2),
-                            CardWithCount<CardTypes.Duchy>(4)),
-                       StartingDeck(
-                            CardWithCount<CardTypes.Copper>(7),
-                            CardWithCount<CardTypes.Silver>(5),
-                            CardWithCount<CardTypes.Gold>(2),
-                            CardWithCount<CardTypes.Rebuild>(2),
-                            CardWithCount<CardTypes.Duchy>(4))
-                            );
-                }
-            }
-        }
-
+        }                                                 
         
         static IGameLog GetGameLogForIteration(int gameCount)
         {

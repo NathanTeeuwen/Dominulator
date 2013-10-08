@@ -12,7 +12,7 @@ namespace Program
 {
     public static partial class Strategies
     {
-        public static class HermitMarketSqaure
+        public static class HermitMarketSquare
         {
             public static PlayerAction Player(int playerNumber)
             {
