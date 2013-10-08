@@ -22,7 +22,7 @@ namespace Program
         protected bool chooseDefaultActionOnNone;
         protected readonly ICardPicker gainOrder;
 
-        static readonly ICardPicker defaultActionOrder = Strategies.Default.ActionPlayOrder();
+        protected readonly ICardPicker defaultActionOrder;
 
         public PlayerAction(
             string name,
@@ -37,13 +37,14 @@ namespace Program
         {
             this.playerIndex = playerIndex;
             this.purchaseOrder = purchaseOrder;
-            this.actionOrder = actionOrder == null ? defaultActionOrder : actionOrder;
+            this.actionOrder = actionOrder == null ? Strategies.Default.ActionPlayOrder(purchaseOrder) : actionOrder;
             this.discardOrder = discardOrder == null ? Strategies.Default.DefaultDiscardOrder() : discardOrder;
             this.trashOrder = trashOrder == null ? Strategies.Default.DefaultTrashOrder() : trashOrder;
             this.treasurePlayOrder = treasurePlayOrder == null ? Strategies.Default.TreasurePlayOrder() : treasurePlayOrder;            
             this.gainOrder = gainOrder != null ? gainOrder : purchaseOrder;
             this.chooseDefaultActionOnNone = chooseDefaultActionOnNone;
             this.name = name;
+            this.defaultActionOrder = Strategies.Default.ActionPlayOrder(purchaseOrder);
         }
 
         public static int PlayIndexfor(IPlayerAction playerAction)
@@ -101,7 +102,7 @@ namespace Program
 
                 if (candidateCards.Count > 0)
                 {
-                    result = PlayerAction.defaultActionOrder.GetPreferredCard(
+                    result = this.defaultActionOrder.GetPreferredCard(
                         gameState,
                         card => candidateCards.Contains(card));
                 }                
@@ -109,7 +110,7 @@ namespace Program
 
             if (result == null && !isOptional)
             {
-                result = PlayerAction.defaultActionOrder.GetPreferredCard(
+                result = this.defaultActionOrder.GetPreferredCard(
                     gameState,
                     card => currentPlayer.Hand.HasCard(card) && acceptableCard(card));
             }

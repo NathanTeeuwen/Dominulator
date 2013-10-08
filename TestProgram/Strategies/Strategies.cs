@@ -176,15 +176,15 @@ namespace Program
                 return new CardPickByPriority();
             }
 
-            public static ICardPicker ActionPlayOrder()
+            public static ICardPicker ActionPlayOrder(ICardPicker purchaseOrder)
             {
-                return new CardPickFromWhatsInHand( new SortCardByDefaultActionOrder());                    
+                return new CardPickFromWhatsInHand( new SortCardByDefaultActionOrder(purchaseOrder));
             }
 
             private class CardPickFromWhatsInHand
                 : ICardPicker
             {
-                private readonly IComparerFactory comparerFactory;
+                private readonly IComparerFactory comparerFactory;                
 
                 public CardPickFromWhatsInHand(IComparerFactory comparerFactory)
                 {
@@ -236,19 +236,28 @@ namespace Program
             private class SortCardByDefaultActionOrder
                 : IComparerFactory
             {
+                private readonly ICardPicker purchaseOrder;
+
+                public SortCardByDefaultActionOrder(ICardPicker purchaseOrder)
+                {
+                    this.purchaseOrder = purchaseOrder;
+                }
+
                 public IComparer<Card> GetComparer(GameState gameState)
                 {
-                    return new Comparer(gameState);
+                    return new Comparer(gameState, purchaseOrder);
                 }
 
                 private class Comparer
                     : IComparer<Card>
                 {
                     private readonly GameState gameState;
+                    private readonly ICardPicker purchaseOrder;
 
-                    public Comparer(GameState gameState)
+                    public Comparer(GameState gameState, ICardPicker purchaseOrder)
                     {
                         this.gameState = gameState;
+                        this.purchaseOrder = purchaseOrder;
                     }
 
                     public int Compare(Card first, Card second)
@@ -265,7 +274,7 @@ namespace Program
 
                         if (first.isRuins && second.isRuins)
                         {
-                            int result = CompareRuins(first, second, this.gameState);
+                            int result = CompareRuins(first, second, this.gameState, this.purchaseOrder);
                             if (result != 0)
                                 return result;
                         }
@@ -275,8 +284,37 @@ namespace Program
                 }
 
                 // TODO:  implement a better default choice of which Ruins to player.
-                private static int CompareRuins(Card first, Card second, GameState gameState)
+                private static int CompareRuins(Card first, Card second, GameState gameState, ICardPicker purchaseOrder)
                 {
+                    PlayerState currentPlayer = gameState.players.CurrentPlayer;
+
+                    int coinsToSpend = gameState.players.CurrentPlayer.ExpectedCoinValueAtEndOfTurn;
+
+                    if (first.Is<CardTypes.AbandonedMine>() || second.Is<CardTypes.AbandonedMine>())
+                    {
+                        CardPredicate shouldGainCard = delegate(Card card)
+                        {
+                            int currentCardCost = card.CurrentCoinCost(currentPlayer);
+
+                            return currentCardCost == coinsToSpend + 1;
+                        };
+
+                        Card cardType = purchaseOrder.GetPreferredCard(gameState, shouldGainCard);
+                        if (cardType != null)
+                            return first.Is<CardTypes.AbandonedMine>() ? 0 : 1;
+
+                        //Card Card1 = purchaseOrder.GetPreferredCard(
+                        //        gameState,
+                        //        card => coinsToSpend >= card.CurrentCoinCost(currentPlayer) &&
+                        //        gameState.GetPile(card).Any());
+                        //Card Card2 = purchaseOrder.GetPreferredCard(
+                        //        gameState,
+                        //        card => coinsToSpend + 1 >= card.CurrentCoinCost(currentPlayer) &&
+                        //        gameState.GetPile(card).Any());
+
+                        //if (Card1 != Card2)
+                        //    return first.name == "Abandoned Mine" ? 0 : 1;
+                    }
                     return 0;
                 }
             }
