@@ -149,10 +149,14 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Card[] trashedCards = currentPlayer.RequestPlayerTrashCardsFromHand(gameState, -1, isOptional: true);
+            Card[] trashedCards = currentPlayer.RequestPlayerTrashCardsFromHand(gameState, currentPlayer.Hand.Count, isOptional: true);
 
             int totalCost = trashedCards.Select(card => card.CurrentCoinCost(currentPlayer)).Sum();
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == totalCost, "Must gain a card costing exactly equal to the total cost of the trashed cards>", isOptional: false);
+            currentPlayer.RequestPlayerGainCardFromSupply(
+                gameState, 
+                card => card.CurrentCoinCost(currentPlayer) == totalCost, 
+                "Must gain a card costing exactly equal to the total cost of the trashed cards>", 
+                isOptional: false);
         }
     }
 
