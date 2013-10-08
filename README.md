@@ -5,7 +5,7 @@ A dominion simulator for playing the card game of dominion.
 
 The goals of the project are as follows, in priority order.
 
-  1) Create a game engine which enforces the rules of Dominoin the game.
+  1) Create a game engine which enforces the rules of Dominion the game.
      Separation of Game Rules from AI or heuristics is required.  
   2) Simulation of all available dominion cards.
   3) Ability to easily extend the game engine with custom cards.
@@ -15,12 +15,12 @@ The goals of the project are as follows, in priority order.
   
 Goal 6 is lofty - but would be very nice :).
 
-Setup:   
-======
+Setup
+=====
 
   1) Install Visual Studio express desktop 2012.  You only need C#.   
-  2) Load Dominoin.sln from the root of the repository
-  3) Set a breakpoint at the end of main in Program.cs   (You dont want to lose the output)
+  2) Load Dominion.sln from the root of the repository
+  3) Set a breakpoint at the end of main in Program.cs   (You don't want to lose the output)
   3) Run the "TestProgram" from the ide.  
   
 What Does the Test Program do?
@@ -39,13 +39,13 @@ You will have to tweak the  main program to get it to do one of the above.  Ther
 Where Is The Output for the Program?
 =====================================
 
-All output is to the console right now.  Set a break point at end of main so you dont lose
+All output is to the console right now.  Set a break point at end of main so you don't lose
 the output under the debugger.
 
-You can also find invidual log files for examample games under TestProgram/Results.   These
+You can also find individual log files for example games under TestProgram/Results.   These
 log files are crucial when debugging the new strategy.
 
-What does a stratgy Look like?
+What Does a Strategy Look Like?
 ===============================
 
 You can write a strategy to behave any way you want, but that's a lot of work.  
@@ -63,7 +63,7 @@ I will try to get it included.
 
 Though the project is public, please refrain from forking the code.  When I'm making changes, 
 there will be large amounts of refactoring and re-organization.  I will keep everything checked in working, but
-will not be worred about breaking external dependencies.
+will not be worried about breaking external dependencies.
 
 What Should I Contribute?
 =========================
@@ -73,18 +73,18 @@ for people to play around with it.  Expect to find bugs.
 
 1) Many of the cards are implemented, but not all of them.  Goal is to eventually have them all complete.
 2) Write innovating strategies.  See how yours does on the leader board
-3) We need test case infrastucture.  Long term, I would like to see a test case for every clarifiction in the rule book.  
+3) We need test case infrastructure.  Long term, I would like to see a test case for every clarifiction in the rule book.  
 4) Contribute to the AI portion of the project.  
 
 Dominion has 205 kingdom cards.  There are currently 31 cards that can throw NotImplementedException.  
 
-Your Program Crashed or threw an exception.  It must be a piece of crap right?
+Your Program Crashed or Threw an Exception.  It must be a piece of crap right?
 ==============================================================================
 
 The game engine enforces the rules of the game.  If a strategy is breaking the rules, it will throw an exception.
 The correct fix here is to fix the strategy.
 
-The game will also throw an excpetion if you use a card that hasn't been implemented yet.
+The game will also throw an exception if you use a card that hasn't been implemented yet.
 
 There are also bugs ...
 
