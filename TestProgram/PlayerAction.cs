@@ -225,6 +225,12 @@ namespace Program
             return result;
         }
 
+        override public Card GetCardFromDiscardToTopDeck(GameState gameState, PlayerState currentPlayer, bool isOptional)
+        {
+            Card result = this.discardOrder.GetPreferredCardReverse(gameState, card => currentPlayer.Discard.HasCard(card));
+            return result;
+        }
+
         public override bool ShouldPutCardInHand(GameState gameState, Card card)
         {
             return this.discardOrder.GetPreferredCard(gameState, testCard => testCard.Is(card)) == null;

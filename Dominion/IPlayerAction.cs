@@ -21,6 +21,7 @@ namespace Dominion
         Card NameACard(GameState gameState);
         Card GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Card GetCardFromPlayToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional);
+        Card GetCardFromDiscardToTopDeck(GameState gameState, PlayerState player, bool isOptional);
         Card GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player);
         Card GetCardFromRevealedCardsToTrash(GameState gameState, PlayerState player, CardPredicate acceptableCard);
         Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player);

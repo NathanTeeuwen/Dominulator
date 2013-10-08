@@ -76,6 +76,8 @@ for people to play around with it.  Expect to find bugs.
 3) We need test case infrastucture.  Long term, I would like to see a test case for every clarifiction in the rule book.  
 4) Contribute to the AI portion of the project.  
 
+Dominion has 205 kingdom cards.  There are currently 31 cards that can throw NotImplementedException.  
+
 Your Program Crashed or threw an exception.  It must be a piece of crap right?
 ==============================================================================
 

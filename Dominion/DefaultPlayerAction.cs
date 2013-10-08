@@ -133,6 +133,11 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
+        virtual public Card GetCardFromDiscardToTopDeck(GameState gameState, PlayerState playerState, bool isOptional)
+        {
+            return PlayerMustMakeCardChoice();
+        }
+
         virtual public Card GetCardFromHandToPassLeft(GameState gameState)
         {
             return PlayerMustMakeCardChoice();

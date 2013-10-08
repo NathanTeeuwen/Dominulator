@@ -22,12 +22,7 @@ namespace Dominion
         public void AddCard(Card card)
         {
             this.cards.Add(card);
-        }
-
-        public bool HasCard(Card card)
-        {
-            return this.FindCardIndexOfType(card) != -1;
-        }        
+        }             
 
         public bool HasCard<T>()
             where T : Card, new()

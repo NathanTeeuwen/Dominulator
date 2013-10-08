@@ -16,7 +16,7 @@ namespace Program
             stopwatch.Start();
 
             ComparePlayers(Strategies.HermitMarketSquare.Player(1), Strategies.BigMoney.Player(2));
-            CompareStrategyVsAllKnownStrategies(Strategies.HermitMarketSquare.Player(1));
+            CompareStrategyVsAllKnownStrategies(Strategies.BigMoneyCultist.Player(1));
             
             stopwatch.Stop();
             System.Console.WriteLine("");

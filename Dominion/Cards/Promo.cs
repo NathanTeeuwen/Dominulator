@@ -20,8 +20,8 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             gameState.DoPlayTreasures(currentPlayer);
-            PileOfCards pile = gameState.GetSpecialPile(typeof(BlackMarket));
-            //TODO
+            PileOfCards pile = gameState.GetSpecialPile(typeof(BlackMarket));            
+            throw new NotImplementedException();
         }
     }
 

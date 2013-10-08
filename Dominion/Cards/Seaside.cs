@@ -195,7 +195,7 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override bool DoReactionToAttackWhileInPlay(PlayerState currentPlayer, GameState gameState)
+        public override bool DoReactionToAttackWhileInPlayAcrossTurns(PlayerState currentPlayer, GameState gameState)
         {
             return false;
         }

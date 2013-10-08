@@ -604,7 +604,7 @@ namespace Dominion.CardTypes
             this.doSpecializedActionOnTrashWhileInHand = DoSpecializedActionOnTrashWhileInHand;
         }
 
-        private bool DoSpecializedActionOnTrashWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        private new bool DoSpecializedActionOnTrashWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
             if (currentPlayer.actions.ShouldPlayerDiscardCardFromHand(gameState, currentPlayer, this))
             {
@@ -782,13 +782,24 @@ namespace Dominion.CardTypes
        Card
     {
         public Sage()
-            : base("Sage", coinCost: 3, isAction: true)
+            : base("Sage", coinCost: 3, isAction: true, plusActions:1)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            while (true)
+            {
+                Card card = currentPlayer.DrawAndRevealOneCardFromDeck();
+                if (card == null)
+                    break;
+                if (card.CurrentCoinCost(currentPlayer) >= 3)
+                {
+                    currentPlayer.MoveRevealedCardToHand(card);
+                    break;
+                }
+            }
+            currentPlayer.MoveRevealedCardsToDiscard(gameState);
         }
     }
 
@@ -802,7 +813,8 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            currentPlayer.actions.ShouldPutDeckInDiscard(gameState);
+            currentPlayer.RequestPlayerTopDeckCardFromDiscard(gameState, isOptional: true);
         }
     }
 
@@ -816,7 +828,24 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState,
+                acceptableChoice =>
+                    acceptableChoice == PlayerActionChoice.PlusAction ||
+                    acceptableChoice == PlayerActionChoice.PlusBuy ||
+                    acceptableChoice == PlayerActionChoice.GainCard);
+
+            switch (choice)
+            {
+                case PlayerActionChoice.PlusAction: currentPlayer.AddActions(2); break;
+                case PlayerActionChoice.PlusBuy: currentPlayer.AddBuys(2); break;
+                case PlayerActionChoice.GainCard: currentPlayer.GainCardFromSupply<CardTypes.Silver>(gameState); break;
+                default: throw new Exception();
+            }
+        }
+
+        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.isAttack, "Must gain an attack card", isOptional: false);
         }
     }
 
@@ -829,8 +858,14 @@ namespace Dominion.CardTypes
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
-        {
-            throw new NotImplementedException();
+        {            
+            int discardedCount = currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, currentPlayer.Hand.Count, isOptional:true);
+            currentPlayer.DrawAdditionalCardsIntoHand(discardedCount);
+            discardedCount = currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, currentPlayer.Hand.Count, isOptional: true);
+            currentPlayer.AddCoins(discardedCount);
+
+            // TODO:  How does the player know they are discarding for coins or for card?
+            // throw new NotImplementedException();
         }
     }
 
@@ -840,11 +875,26 @@ namespace Dominion.CardTypes
         public Urchin()
             : base("Urchin", coinCost: 3, isAction: true, isAttack:true, plusCards:1, plusActions:1)
         {
+            this.doSpecializedActionToCardWhileInPlay = DoSpecializedActionToCardWhileInPlay;
         }
 
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            otherPlayer.RequestPlayerDiscardDownToCountInHand(gameState, 4);
+        }
+
+        private void DoSpecializedActionToCardWhileInPlay(PlayerState currentPlayer, GameState gameState, Card card)
+        {
+            if (card.isAttack)
+            {
+                if (currentPlayer.actions.ShouldTrashCard(gameState, this))
+                {
+                    throw new NotImplementedException();
+                    // something like this:
+                    //currentPlayer.MoveCardFromPlayedCardToNativeVillageMatt(this);
+                    //currentPlayer.GainCardFromSupply<CardTypes.Mercenary>(gameState);
+                }
+            }
         }
     }
 
@@ -852,13 +902,36 @@ namespace Dominion.CardTypes
        Card
     {
         public Mercenary()
-            : base("Mercenary", coinCost: 0, isAction: true, isAttack: true)
+            : base("Mercenary", coinCost: 0, isAction: true, isAttack: true, attackDependsOnPlayerChoice:true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            bool[] otherPlayersAffectedByAttacks = new bool[gameState.players.OtherPlayers.Count()];
+
+            // from rule book
+            // "Players responding to this attack must choose to do so before you decide whether or not to trash 2 cards"
+            int otherIndex = 0;
+            foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
+            {
+                otherPlayersAffectedByAttacks[otherIndex++] = otherPlayer.IsAffectedByAttacks(gameState);                
+            }
+
+            if (currentPlayer.RequestPlayerTrashCardsFromHand(gameState, 2, isOptional: true, allOrNone:true).Length == 2)
+            {
+                currentPlayer.DrawAdditionalCardsIntoHand(2);
+                currentPlayer.AddCoins(2);
+
+                otherIndex = 0;
+                foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
+                {
+                    if (otherPlayersAffectedByAttacks[otherIndex++])
+                    {
+                        otherPlayer.RequestPlayerDiscardDownToCountInHand(gameState, 3);                        
+                    }
+                }
+            }           
         }
     }
 
@@ -872,7 +945,21 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            currentPlayer.RevealCardsFromDeck(1);
+            Card revealedCard = currentPlayer.cardsBeingRevealed.FirstOrDefault();
+            if (revealedCard == null)
+            {
+                return;
+            }
+
+            if (revealedCard.isCurse || revealedCard.isRuins || revealedCard.isShelter || revealedCard.isVictory)
+            {
+                currentPlayer.MoveRevealedCardToHand(revealedCard);
+            }
+            else
+            {
+                currentPlayer.MoveRevealedCardToTopOfDeck();
+            }
         }
     }
 

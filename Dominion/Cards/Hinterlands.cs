@@ -501,7 +501,7 @@ namespace Dominion.CardTypes
                         break;
                     }
                     default:
-                        throw new NotImplementedException();
+                        throw new Exception();
                 }
             }
         }

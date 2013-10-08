@@ -295,12 +295,10 @@ namespace Dominion
         {
             foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
             {
-                if (!otherPlayer.IsAffectedByAttacks(gameState))
+                if (otherPlayer.IsAffectedByAttacks(gameState))
                 {
-                    continue;
+                    action(gameState.players.CurrentPlayer, otherPlayer, gameState);
                 }
-
-                action(gameState.players.CurrentPlayer, otherPlayer, gameState);
             }
         }
 
@@ -701,9 +699,9 @@ namespace Dominion
             return gainedCard;
         }
 
-        internal Card[] RequestPlayerTrashCardsFromHand(GameState gameState, int cardCount, bool isOptional)
+        internal Card[] RequestPlayerTrashCardsFromHand(GameState gameState, int cardCount, bool isOptional, bool allOrNone = false)
         {
-            var trashedCards = new List<Card>();
+            var trashedCards = new List<Card>(cardCount);
             CardPredicate acceptableCardsToTrash = card => true;
             int countCardTrashed = 0;
             while (countCardTrashed < cardCount)
@@ -713,6 +711,9 @@ namespace Dominion
                 {
                     break;
                 }
+
+                if (allOrNone == true)
+                    isOptional = false;
 
                 trashedCards.Add(trashedCard);
             }
@@ -1071,6 +1072,33 @@ namespace Dominion
             if (cardToTopDeck == null)
             {
                 throw new Exception("Selected a card that wasn't being revealed");
+            }
+
+            this.gameLog.PlayerTopDeckedCard(this, cardToTopDeck);
+            this.deck.AddCardToTop(cardToTopDeck);
+            return cardToTopDeck;
+        }
+
+        internal Card RequestPlayerTopDeckCardFromDiscard(GameState gameState, bool isOptional)
+        {
+            if (this.Discard.Count == 0)
+                return null;
+
+            Card cardTypeToTopDeck = this.actions.GetCardFromDiscardToTopDeck(gameState, this, isOptional);
+            if (cardTypeToTopDeck == null && !isOptional)
+            {
+                throw new Exception("Must choose a card to top deck");
+            }
+
+            if (cardTypeToTopDeck == null)
+            {
+                return null;
+            }
+
+            Card cardToTopDeck = this.discard.RemoveCard(cardTypeToTopDeck);
+            if (cardToTopDeck == null)
+            {
+                throw new Exception("Selected a card that wasn't in the discard");
             }
 
             this.gameLog.PlayerTopDeckedCard(this, cardToTopDeck);
@@ -1548,7 +1576,7 @@ namespace Dominion
 
             foreach (Card durationCard in this.CardsInPlay)
             {
-                if (durationCard.DoReactionToAttackWhileInPlay(this, gameState))
+                if (durationCard.DoReactionToAttackWhileInPlayAcrossTurns(this, gameState))
                 {
                     doesCancelAttack = true;
                 }

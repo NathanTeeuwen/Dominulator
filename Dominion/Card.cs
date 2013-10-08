@@ -37,6 +37,7 @@ namespace Dominion
         protected CardIntValue provideDiscountForWhileInPlay;           // readonly
         protected GameStateCardMethod doSpecializedActionOnBuyWhileInPlay; // readonly
         protected GameStateCardPredicate doSpecializedActionOnTrashWhileInHand; //readonly
+        protected GameStateCardMethod doSpecializedActionToCardWhileInPlay;  //readonly
 
         internal Card(
             string name,
@@ -186,7 +187,7 @@ namespace Dominion
         }
 
         // return true if blocks attack;
-        virtual public bool DoReactionToAttackWhileInPlay(PlayerState currentPlayer, GameState gameState)
+        virtual public bool DoReactionToAttackWhileInPlayAcrossTurns(PlayerState currentPlayer, GameState gameState)
         {
             // by default, all cards are affected by attack
             return false;
