@@ -28,11 +28,6 @@ namespace Program
                             trashOrder: TrashOrder(),
                             discardOrder: DiscardOrder())
                 {
-                }
-
-                override public Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
-                {
-                    return Card.Type<CardTypes.Watchtower>();
                 }                
             }           
 

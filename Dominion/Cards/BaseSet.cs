@@ -281,18 +281,19 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
+        public override bool DoReactionToAttackWhileInHand(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
         {
-            Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(card => card.Is<CardTypes.Moat>(), gameState);
-            if (revealedCard == null)
+            if (currentPlayer.actions.ShouldRevealCardFromHand(gameState, this))
+            {
+                currentPlayer.RevealAndReturnCardToHand(this, gameState);                
+                cancelsAttack = true;
+                return true;
+            }
+            else
             {
                 cancelsAttack = false;
                 return false;
-            }
-            
-            currentPlayer.MoveRevealedCardToHand(revealedCard);
-            cancelsAttack = revealedCard != null;
-            return true;
+            }            
         }
     }
 
@@ -405,7 +406,7 @@ namespace Dominion.CardTypes
                 if (currentPlayer.actions.ShouldGainCard(gameState, cardtoTrash))
                 {
                     Card cardToGain = gameState.trash.RemoveCard(cardtoTrash);
-                    currentPlayer.GainCard(gameState, cardToGain, DeckPlacement.Discard);
+                    currentPlayer.GainCard(gameState, cardToGain, originalLocation:DeckPlacement.Trash, defaultPlacement:DeckPlacement.Discard);
                 }
             }
 

@@ -84,7 +84,7 @@ namespace Program
                 public override bool ShouldPutCardInHand(GameState gameState, Card card)
                 {
                     if (!ShouldBuyProvince(gameState) &&
-                        gameState.players.CurrentPlayer.Hand.CountOfCard<CardTypes.Copper>() > 0)
+                        gameState.players.CurrentPlayer.Hand.CountOf<CardTypes.Copper>() > 0)
                     {
                         return false;
                     }
@@ -170,7 +170,7 @@ namespace Program
                     return false;
                 }
 
-                if (gameState.players.CurrentPlayer.Hand.CountCards(card => card.isAction && !card.Is<CardTypes.Library>()) > 0 &&
+                if (gameState.players.CurrentPlayer.Hand.CountWhere(card => card.isAction && !card.Is<CardTypes.Library>()) > 0 &&
                     gameState.players.CurrentPlayer.AvailableActions == 1)
                 {
                     return false;
@@ -202,7 +202,7 @@ namespace Program
             private static bool HasExactlyOneAction(GameState gameState)
             {
                 var currentPlayer = gameState.players.CurrentPlayer;
-                if (currentPlayer.Hand.CountCards(card => card.isAction) == 1)
+                if (currentPlayer.Hand.CountWhere(card => card.isAction) == 1)
                 {
                     return true;
                 }
@@ -218,7 +218,7 @@ namespace Program
                     return false;
                 }
 
-                if (currentPlayer.Hand.CountCards(card => card.isAction) != 2)
+                if (currentPlayer.Hand.CountWhere(card => card.isAction) != 2)
                 {
                     return false;
                 }
@@ -234,7 +234,7 @@ namespace Program
             private static bool ShouldGainCopper(GameState gameState)
             {
                 var currentPlayer = gameState.players.CurrentPlayer;
-                if (currentPlayer.Hand.CountCards(card => card.isAction) > 0)
+                if (currentPlayer.Hand.CountWhere(card => card.isAction) > 0)
                 {
                     return false;
                 }

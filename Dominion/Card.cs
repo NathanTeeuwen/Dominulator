@@ -206,7 +206,7 @@ namespace Dominion
         }
 
         // return true if the card chose to react in some way;
-        virtual public bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
+        virtual public bool DoReactionToAttackWhileInHand(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
         {
             cancelsAttack = false;
             // by default, all cards are affected by attack
@@ -383,7 +383,12 @@ namespace Dominion
         virtual public void DoSpecializedSetupIfInSupply(GameState gameState)
         {
 
-        }        
+        }
+
+        virtual public void DoSpecializedActionOnReturnToHand(PlayerState currentPlayer, GameState gameState)
+        {
+
+        }
 
         public static Card Type<T>()
             where T : Card, new()

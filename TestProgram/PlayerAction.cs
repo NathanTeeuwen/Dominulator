@@ -233,17 +233,17 @@ namespace Program
 
         public override bool ShouldPutCardInHand(GameState gameState, Card card)
         {
-            return this.discardOrder.GetPreferredCard(gameState, testCard => testCard.Is(card)) == null;
+            return !DoesCardPickerMatch(this.discardOrder, gameState, card);            
         }
 
         public override bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card)
         {
-            return this.discardOrder.GetPreferredCard(gameState, testCard => testCard.Is(card)) != null;
+            return !DoesCardPickerMatch(this.discardOrder, gameState, card);            
         }
 
         public override DeckPlacement ChooseBetweenTrashAndTopDeck(GameState gameState, Card card)
-        {
-            if (this.trashOrder.GetPreferredCard(gameState, c => c.Equals(card)) != null)
+        {            
+            if (DoesCardPickerMatch(this.trashOrder, gameState, card))
                 return DeckPlacement.Trash;
 
             return DeckPlacement.TopOfDeck;
@@ -259,6 +259,24 @@ namespace Program
                 result = otherPlayer.Hand.OrderByDescending(c => c.DefaultCoinCost).FirstOrDefault();
 
             return result;
+        }
+
+        public override bool ShouldRevealCardFromHand(GameState gameState, Card card)
+        {
+            if (card.Is<CardTypes.Watchtower>())
+                return true;
+
+            return base.ShouldRevealCardFromHand(gameState, card);
+        }
+
+        public override bool ShouldRevealCardFromHandForCard(GameState gameState, Card card, Card cardFor)
+        {
+            if (card.Is<CardTypes.Trader>())
+            {
+                return DoesCardPickerMatch(this.trashOrder, gameState, cardFor) && !DoesCardPickerMatch(this.purchaseOrder, gameState, cardFor);
+            }
+
+            return base.ShouldRevealCardFromHand(gameState, card);
         }
 
         struct CompareCardByFirstToTrash
@@ -400,6 +418,11 @@ namespace Program
             int coppersToGain = PlayerAction.CostOfCard(cardType, gameState) - minValue;
 
             return (coppersToGain > 0);
+        }
+
+        private static bool DoesCardPickerMatch(ICardPicker pickOrder, GameState gameState, Card card)
+        {
+            return pickOrder.GetPreferredCard(gameState, c => c.Is(card)) != null;
         }
 
         struct CompareCardByFirstToGain

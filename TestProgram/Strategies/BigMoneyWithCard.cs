@@ -14,20 +14,21 @@ namespace Program
             where T : Card, new()
         {
             // big money smithy player
-            public static PlayerAction Player(int playerNumber, string playerName = null, int cardCount = 1, int afterSilverCount = 0)
+            public static PlayerAction Player(int playerNumber, string playerName = null, int cardCount = 1, int afterSilverCount = 0, int afterGoldCount = int.MaxValue)
             {
                 return new PlayerAction(
                             playerName == null ? "BigMoneyWithCard<" + typeof(T).Name + ">" : playerName,
                             playerNumber,
-                            purchaseOrder: PurchaseOrder(cardCount, afterSilverCount));
+                            purchaseOrder: PurchaseOrder(cardCount, afterSilverCount, afterGoldCount));
             }
 
-            public static ICardPicker PurchaseOrder(int cardCount, int afterSilverCount)
+            public static ICardPicker PurchaseOrder(int cardCount, int afterSilverCount, int afterGoldCount)
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2),                           
+                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2),
+                           CardAcceptance.For<T>(gameState => CountAllOwned<T>(gameState) < cardCount && CountAllOwned<CardTypes.Gold>(gameState) >= afterGoldCount),
                            CardAcceptance.For<CardTypes.Gold>(),
                            CardAcceptance.For<T>(gameState => CountAllOwned<T>(gameState) < cardCount && CountAllOwned<CardTypes.Silver>(gameState) >= afterSilverCount),
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
@@ -86,7 +87,7 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithCard<CardTypes.Witch>.Player(playerNumber, "BigMoneyDoubleWitch", cardCount:2);
+                return BigMoneyWithCard<CardTypes.Witch>.Player(playerNumber, "BigMoneyDoubleWitch", cardCount:2, afterGoldCount:0);
             }
         }
 

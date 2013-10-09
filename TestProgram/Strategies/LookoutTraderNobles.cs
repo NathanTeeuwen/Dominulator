@@ -28,12 +28,7 @@ namespace Program
                             actionOrder: ActionOrder(),
                             trashOrder: TrashOrder())
                 {
-                }
-
-                override public Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
-                {
-                    return null;
-                }
+                }                
 
                 override public PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
                 {
@@ -72,6 +67,7 @@ namespace Program
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
+                           CardAcceptance.For<CardTypes.Curse>(),
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountAllOwned<CardTypes.Silver>(gameState) >= 4 && !ShouldBuyEstates(gameState)),
                            CardAcceptance.For<CardTypes.Copper>(gameState => gameState.players.CurrentPlayer.CurrentCardBeingPlayed != null && gameState.players.CurrentPlayer.CurrentCardBeingPlayed.Is<CardTypes.Lookout>()),
                            CardAcceptance.For<CardTypes.Estate>(gameState => !ShouldBuyEstates(gameState)),

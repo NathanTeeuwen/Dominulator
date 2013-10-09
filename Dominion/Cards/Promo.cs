@@ -41,8 +41,8 @@ namespace Dominion.CardTypes
             {
                 throw new Exception("Must ban a card currently being revealed");
             }
-            currentPlayer.MoveRevealedCardToTopOfDeck(cardType);
-            currentPlayer.MoveRevealedCardsToHand(acceptableCard => true);
+            currentPlayer.MoveRevealedCardToDiscard(cardType, gameState);
+            currentPlayer.MoveAllRevealedCardsToHand();
         }
     }
 

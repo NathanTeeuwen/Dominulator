@@ -16,6 +16,7 @@ namespace Dominion
         TopOfDeck,
         Revealed,
         None,
+        Supply,
         Default
     }   
 }

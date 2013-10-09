@@ -62,8 +62,20 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            // TODO
-            throw new NotImplementedException();
+            // Each other player reveals cards from the top of his deck 
+            Card revealedCard = otherPlayer.DrawAndRevealOneCardFromDeck();
+            while (revealedCard != null)
+            {
+                // until he reveals a victory or curse card
+                if (revealedCard.isVictory || revealedCard.isCurse)                
+                {
+                    otherPlayer.MoveRevealedCardToTopOfDeck(revealedCard);
+                    break;
+                }
+                revealedCard = otherPlayer.DrawAndRevealOneCardFromDeck();
+            }            
+
+            otherPlayer.MoveRevealedCardsToDiscard(gameState);
         }        
     }
 
@@ -99,7 +111,9 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            currentPlayer.RevealCardsFromDeck(4);
+            currentPlayer.AddCoins(currentPlayer.cardsBeingRevealed.CountTypes);
+            currentPlayer.MoveRevealedCardsToDiscard(gameState);
         }
     }
 
@@ -113,7 +127,16 @@ namespace Dominion.CardTypes
   
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            int cardValue = currentPlayer.CardsInPlay.CountTypes;
+
+            Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState,
+                acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= cardValue,
+                "Must gain a card costing up to 1 per differently named cadr.");
+
+            if (gainedCard.isVictory)
+            {
+                currentPlayer.MoveCardFromPlayToTrash(gameState);
+            }
         }
     }
 
@@ -130,9 +153,23 @@ namespace Dominion.CardTypes
             currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false);
         }
 
-        public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
+        public override bool DoReactionToAttackWhileInHand(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
         {
-            throw new NotImplementedException();
+            cancelsAttack = false;            
+            if (currentPlayer.actions.ShouldRevealCardFromHand(gameState, this))
+            {
+                currentPlayer.SetAsideCardFromHandToNextTurn(this);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public override void DoSpecializedActionOnReturnToHand(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.DrawOneCardIntoHand();
         }
     }
 
@@ -147,7 +184,20 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            currentPlayer.RevealHand();            
+
+            Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+            while (revealedCard != null)
+            {                
+                if (!currentPlayer.Hand.HasCard(revealedCard))
+                {
+                    currentPlayer.MoveRevealedCardToHand(revealedCard);
+                    break;
+                }
+                revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+            }
+
+            currentPlayer.MoveRevealedCardsToDiscard(gameState);
         }        
     }
 
@@ -190,7 +240,16 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            currentPlayer.RevealHand();            
+
+            if (currentPlayer.hand.HasDuplicates())
+            {
+                currentPlayer.DrawOneCardIntoHand();
+            }
+            else
+            {
+                currentPlayer.DrawAdditionalCardsIntoHand(3);
+            }
         }
     }
 

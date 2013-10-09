@@ -155,18 +155,18 @@ namespace Program
                   CountInHand<CardTypes.MarketSquare>(gameState);
 
                 if (currentPlayer.Hand.Count < 5 ||
-                    currentPlayer.Hand.CountOfCard<CardTypes.Madman>() < 2 ||
+                    currentPlayer.Hand.CountOf<CardTypes.Madman>() < 2 ||
                     CountMSNotInPlay < 3)
                     return false;
 
                 if (PlayBigHermit(gameState))
                 {
-                    return currentPlayer.AllOwnedCards.CountOfCard<CardTypes.Madman>() >= 6 &&                           
+                    return currentPlayer.AllOwnedCards.CountOf<CardTypes.Madman>() >= 6 &&                           
                            CountHermitsEverGained(gameState) >= 9;
                 }
                 else
                 {
-                    return currentPlayer.AllOwnedCards.CountOfCard<CardTypes.Madman>() >= 4 &&
+                    return currentPlayer.AllOwnedCards.CountOf<CardTypes.Madman>() >= 4 &&
                            CountHermitsEverGained(gameState) >= 7;
                 }
             }

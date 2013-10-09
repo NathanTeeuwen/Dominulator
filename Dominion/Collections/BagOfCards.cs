@@ -37,7 +37,7 @@ namespace Dominion
             base.Add(card);
         }        
 
-        internal void MoveAllCardsFrom(CollectionCards other)
+        internal new void MoveAllCardsFrom(CollectionCards other)
         {
             base.MoveAllCardsFrom(other);
         }

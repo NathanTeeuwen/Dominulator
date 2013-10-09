@@ -185,6 +185,16 @@ namespace Dominion
             return PlayerMustMakeChoice();
         }
 
+        virtual public bool ShouldRevealCardFromHand(GameState gameState, Card card)
+        {
+            return PlayerMustMakeChoice();
+        }
+
+        virtual public bool ShouldRevealCardFromHandForCard(GameState gameState, Card card, Card cardFor)
+        {
+            return PlayerMustMakeChoice();
+        }
+
         virtual public bool ShouldPutCardInHand(GameState gameState, Card card)
         {
             return PlayerMustMakeChoice();
@@ -198,12 +208,7 @@ namespace Dominion
         virtual public bool ShouldPutDeckInDiscard(GameState gameState)
         {
             return PlayerMustMakeChoice();
-        }
-
-        virtual public bool ShouldRevealCardFromHand(GameState gameState, Card card)
-        {
-            return PlayerMustMakeChoice();
-        }
+        }        
 
         virtual public bool ShouldPutCardOnTopOfDeck(Card card, GameState gameState)
         {

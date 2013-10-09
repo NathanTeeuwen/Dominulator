@@ -390,7 +390,7 @@ namespace Dominion.CardTypes
             if (cardtoTrash != null)
             {
                 Card cardToGain = gameState.trash.RemoveCard(cardtoTrash);
-                currentPlayer.GainCard(gameState, cardToGain, DeckPlacement.Discard);                
+                currentPlayer.GainCard(gameState, cardToGain, DeckPlacement.Trash, DeckPlacement.Discard);                
             }
 
             otherPlayer.MoveRevealedCardsToDiscard(gameState);
@@ -545,12 +545,12 @@ namespace Dominion.CardTypes
 
         public new DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
-            Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(card => card.Is<Trader>(), gameState);
-            if (revealedCard != null)
+            if (currentPlayer.actions.ShouldRevealCardFromHandForCard(gameState, this, gainedCard))
             {
+                currentPlayer.RevealAndReturnCardToHand(this, gameState);
                 currentPlayer.GainCardFromSupply<Silver>(gameState);
                 return DeckPlacement.None;
-            }
+            }            
 
             return DeckPlacement.Default;
         }        

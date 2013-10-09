@@ -28,7 +28,7 @@ namespace Program
             static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.CountOfCard<CardTypes.Gold>() > 2),
+                           CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.CountOf<CardTypes.Gold>() > 2),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
                            CardAcceptance.For<CardTypes.Gold>(),
@@ -51,7 +51,7 @@ namespace Program
                 return new CardPickByPriority(
                     CardAcceptance.For<CardTypes.Warehouse>(gameState => !HasNoRuinsInDeckAndDeathCartInHand(gameState)),
                     CardAcceptance.For<CardTypes.DeathCart>(HasActionInHandOtherThanDeathCart),
-                    CardAcceptance.For<CardTypes.DeathCart>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.CountOfCard<CardTypes.Gold>() > 2),
+                    CardAcceptance.For<CardTypes.DeathCart>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.CountOf<CardTypes.Gold>() > 2),
                     CardAcceptance.For<CardTypes.AbandonedMine>(),
                     CardAcceptance.For<CardTypes.RuinedLibrary>(),
                     CardAcceptance.For<CardTypes.Survivors>(),
@@ -80,7 +80,7 @@ namespace Program
             static bool ShouldDiscardRuin(GameState gameState)
             {
                 return !gameState.players.CurrentPlayer.Hand.HasCard<CardTypes.DeathCart>() ||
-                       gameState.players.CurrentPlayer.Hand.CountCards(card => card.isRuins) > 1;
+                       gameState.players.CurrentPlayer.Hand.CountWhere(card => card.isRuins) > 1;
             }
 
             static bool HasActionInHandOtherThanDeathCart(GameState gameState)

@@ -28,7 +28,7 @@ namespace Dominion.CardTypes
             currentPlayer.MoveRevealedCardToHand(revealedCard);
 
             int maxReturnCount = 1;
-            if (currentPlayer.Hand.CountCards(card => card.Equals(revealedCard)) > 1)
+            if (currentPlayer.Hand.CountWhere(card => card.Equals(revealedCard)) > 1)
             {
                 maxReturnCount++;                
             }
@@ -301,7 +301,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            if (!currentPlayer.durationCards.Where(card => card.Is<Outpost>()).Any())
+            if (!currentPlayer.durationCards.HasCard<Outpost>())
             {
                 gameState.doesCurrentPlayerNeedOutpostTurn = true;
             }

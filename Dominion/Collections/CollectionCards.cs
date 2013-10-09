@@ -30,13 +30,30 @@ namespace Dominion
             }
         }
 
+        public int CountTypes
+        {
+            get
+            {
+                int result = 0;
+                for (int i = 0; i < this.mapGameCardIndexToCount.Length; ++i)
+                {
+                    if (this.mapGameCardIndexToCount[i] > 0)
+                    {
+                        result++;
+                    }
+                }
+
+                return result;
+            }
+        }
+
         public bool Any
         {
             get
             {
                 return this.Count > 0;
             }
-        }
+        }        
 
         public bool IsEmpty
         {
@@ -58,10 +75,12 @@ namespace Dominion
             this.mapGameCardIndexToCount[indexForCard] += 1;
             this.count++;
 
-            if (this.parent != null)
+            var parent = this.parent;
+            while (parent != null)
             {
-                this.parent.mapGameCardIndexToCount[indexForCard] += 1;
-                this.parent.count++;
+                parent.mapGameCardIndexToCount[indexForCard] += 1;
+                parent.count++;
+                parent = parent.parent;
             }                
         }
 
@@ -95,11 +114,14 @@ namespace Dominion
             this.mapGameCardIndexToCount[indexForCard] -= 1;
             this.count--;
 
-            if (this.parent != null)
+
+            var parent = this.parent;
+            while (parent != null)
             {
                 this.parent.mapGameCardIndexToCount[indexForCard] -= 1;
                 this.parent.count--;
-            }
+                parent = parent.parent;
+            }  
 
             return card;
         }
@@ -137,26 +159,28 @@ namespace Dominion
 
         virtual public void Clear()
         {
-            if (this.parent != null)
+            var parent = this.parent;
+            while (parent != null)
             {
                 for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)
                 {
                     parent.mapGameCardIndexToCount[index] -= this.mapGameCardIndexToCount[index];
                 }
                 parent.count -= this.count;
+                parent = parent.parent;
             }
 
             this.count = 0;
             Array.Clear(this.mapGameCardIndexToCount, 0, this.mapGameCardIndexToCount.Length);
         }
 
-        public int CountOfCard<T>()
+        public int CountOf<T>()
             where T : Card, new()
         {
-            return CountOfCard(Card.Type<T>());
+            return CountOf(Card.Type<T>());
         }
 
-        public int CountOfCard(Card card)
+        public int CountOf(Card card)
         {
             int index = this.gameSubset.GetIndexFor(card);
             if (index == -1)
@@ -164,7 +188,7 @@ namespace Dominion
             return this.mapGameCardIndexToCount[index];
         }
 
-        public int CountCards(CardPredicate predicate)
+        public int CountWhere(CardPredicate predicate)
         {
             int result = 0;
 
@@ -184,12 +208,20 @@ namespace Dominion
             return result;
         }
 
+        public bool HasDuplicates()
+        {
+            for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)
+            {
+                if (this.mapGameCardIndexToCount[index] > 1)
+                    return true;
+            }
+
+            return false;
+        }
+
         public bool HasCard(Card card)
         {
-            int subsetIndex = this.gameSubset.GetIndexFor(card);
-            if (subsetIndex == -1)
-                return false;
-            return this.mapGameCardIndexToCount[subsetIndex] > 0;            
+            return CountOf(card) > 0;
         }
 
         public bool HasCard<T>()

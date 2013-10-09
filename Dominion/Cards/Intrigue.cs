@@ -379,24 +379,24 @@ namespace Dominion.CardTypes
             }
         }
 
-        public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
+        public override bool DoReactionToAttackWhileInHand(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
         {
             cancelsAttack = false;
 
-            Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(card => card.Is<SecretChamber>(), gameState);
-            if (revealedCard == null)
+            if (currentPlayer.actions.ShouldRevealCardFromHand(gameState, this))
             {
-                return false;                
-            }
+                currentPlayer.DrawAdditionalCardsIntoHand(2);
+                for (int i = 0; i < 2; ++i)
+                {
+                    currentPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard => true, false);
+                }
 
-            currentPlayer.DrawAdditionalCardsIntoHand(2);
-            for (int i = 0; i < 2; ++i)
+                return true;
+            }
+            else
             {
-                currentPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard => true, false);
-            }
-            currentPlayer.MoveRevealedCardToHand(revealedCard);
-
-            return true;
+                return false;
+            }           
         }
     }
 
@@ -603,7 +603,7 @@ namespace Dominion.CardTypes
             Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
             if (revealedCard.Is(cardType))
             {
-                currentPlayer.MoveRevealedCardsToHand(acceptableCard => true);
+                currentPlayer.MoveAllRevealedCardsToHand();
             }
             else
             {

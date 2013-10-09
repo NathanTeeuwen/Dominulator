@@ -105,7 +105,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            int maxCoppers = currentPlayer.discard.CountCards(card => card.Is<CardTypes.Copper>());
+            int maxCoppers = currentPlayer.discard.CountWhere(card => card.Is<CardTypes.Copper>());
             int cardsToReveal = currentPlayer.actions.GetNumberOfCardsFromDiscardToPutInHand(gameState, maxCoppers);
 
             if (cardsToReveal < 0 || cardsToReveal > maxCoppers)
@@ -116,7 +116,7 @@ namespace Dominion.CardTypes
             if (cardsToReveal > 0)
             {
                 currentPlayer.RevealCardsFromDiscard(cardsToReveal, card => card.Is<CardTypes.Copper>());
-                currentPlayer.MoveRevealedCardsToHand(card => true);
+                currentPlayer.MoveAllRevealedCardsToHand();
             }
         }
     }
@@ -489,14 +489,16 @@ namespace Dominion.CardTypes
 
         public new DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
-            Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(card => card.Equals(this), gameState);
-            if (revealedCard == null)
+            if (currentPlayer.actions.ShouldRevealCardFromHand(gameState, this))
+            {
+                // how does the player know what card is being asked about?
+                // throw new NotImplementedException
+                return currentPlayer.RequestPlayerChooseTrashOrTopDeck(gameState, gainedCard);
+            }
+            else
             {
                 return DeckPlacement.Default;
-            }
-
-            // how does the player know what card is being asked about?
-            return currentPlayer.RequestPlayerChooseTrashOrTopDeck(gameState, gainedCard);            
+            }            
         }             
     }
 

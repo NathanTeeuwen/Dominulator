@@ -85,7 +85,7 @@ namespace Dominion
                 {
                     if (pair.Card.isShelter)
                     {
-                        player.GainCard(this, pair.Card);
+                        player.GainCard(this, pair.Card, DeckPlacement.Supply);
                     }
                     else
                     {
@@ -234,7 +234,7 @@ namespace Dominion
 
         private void ReturnCardsToHandAtStartOfTurn(PlayerState currentPlayer)
         {
-            currentPlayer.MoveCardsFromPreviousTurnIntoHand();
+            currentPlayer.MoveCardsFromPreviousTurnIntoHand(this);
         }
 
         private void DoActionsQueuedFromPreviousTurn(PlayerState currentPlayer)
@@ -431,7 +431,7 @@ namespace Dominion
                 return null;
             }
 
-            playerState.GainCard(this, card, defaultLocation, gainReason);
+            playerState.GainCard(this, card, DeckPlacement.Supply, defaultLocation, gainReason);
 
             return card;
         }       

@@ -36,14 +36,14 @@ namespace Program
         private static int CountInDeck<T>(GameState gameState)
             where T : Card, new()
         {
-            return gameState.players.CurrentPlayer.CardsInDeck.CountOfCard(Card.Type<T>());
+            return gameState.players.CurrentPlayer.CardsInDeck.CountOf(Card.Type<T>());
         }
 
         private static int CountInDeckAndDiscard<T>(GameState gameState)
             where T : Card, new()
         {
             var player = gameState.players.CurrentPlayer;
-            return player.CardsInDeck.CountOfCard<T>() + player.Discard.CountOfCard<T>();
+            return player.CardsInDeck.CountOf<T>() + player.Discard.CountOf<T>();
         }
 
         private static int CountMightDraw<T>(GameState gameState, int maxCount)
@@ -76,12 +76,12 @@ namespace Program
 
         public static int CountAllOwned(Card cardType, GameState gameState)
         {
-            return gameState.players.CurrentPlayer.AllOwnedCards.CountOfCard(cardType);
+            return gameState.players.CurrentPlayer.AllOwnedCards.CountOf(cardType);
         }
 
         public static int CountInHand(Card cardType, GameState gameState)
         {
-            return gameState.players.CurrentPlayer.Hand.CountOfCard(cardType);
+            return gameState.players.CurrentPlayer.Hand.CountOf(cardType);
         }
 
         public static int CountInHand<T>(GameState gameState)
@@ -103,7 +103,7 @@ namespace Program
 
         private static int CountAllOwnedMatching(ICardPicker matchingCards, GameState gameState)
         {            
-            return gameState.players.CurrentPlayer.AllOwnedCards.CountCards(
+            return gameState.players.CurrentPlayer.AllOwnedCards.CountWhere(
                 card => matchingCards.GetPreferredCard(gameState, testCard => testCard.Is(card)) != null);            
         }
 
@@ -139,7 +139,7 @@ namespace Program
       
         private static int CountInHandFrom(ICardPicker matchingCards, GameState gameState)
         {
-            return gameState.players.CurrentPlayer.Hand.CountCards( card => matchingCards.GetPreferredCard(gameState, current => current.Is(card)) != null);            
+            return gameState.players.CurrentPlayer.Hand.CountWhere( card => matchingCards.GetPreferredCard(gameState, current => current.Is(card)) != null);            
         }
 
         public static class Default

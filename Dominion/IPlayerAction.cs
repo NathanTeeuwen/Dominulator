@@ -38,6 +38,8 @@ namespace Dominion
         int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber);
         bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card);
         bool ShouldPlayerDiscardCardFromHand(GameState gameState, PlayerState player, Card card);
+        bool ShouldRevealCardFromHandForCard(GameState gameState, Card card, Card cardFor);
+        bool ShouldRevealCardFromHand(GameState gameState, Card card);
         bool ShouldPutCardInHand(GameState gameState, Card card);
         bool WantToResign(GameState gameState);        
         bool ShouldPutDeckInDiscard(GameState gameState);

@@ -211,7 +211,7 @@ namespace Dominion.CardTypes
             currentPlayer.GainCardsFromSupply<Copper>(gameState, 3, DeckPlacement.Hand);
         }
 
-        public override bool DoReactionToAttack(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
+        public override bool DoReactionToAttackWhileInHand(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
         {
             cancelsAttack = false;
 
@@ -249,7 +249,7 @@ namespace Dominion.CardTypes
                     }
                 case PlayerActionChoice.PutInHand:
                     {
-                        currentPlayer.MoveRevealedCardsToHand(acceptableCard => true);
+                        currentPlayer.MoveAllRevealedCardsToHand();
                         break;
                     }
                 default:
@@ -680,7 +680,7 @@ namespace Dominion.CardTypes
         {
             currentPlayer.RevealHand();
 
-            currentPlayer.AddCoins(0 - currentPlayer.Hand.CountCards(card => card.isTreasure));
+            currentPlayer.AddCoins(0 - currentPlayer.Hand.CountWhere(card => card.isTreasure));
         }
     }
 
