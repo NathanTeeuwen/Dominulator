@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//Author: SheCantSayNo
+//Author: Sparafucile + SheCantSayNo 
 
 namespace Program
 {
@@ -38,28 +38,54 @@ namespace Program
                                CardAcceptance.For<CardTypes.Duchy>(gameState => CountAllOwned<CardTypes.Province>(gameState) > 0),
                                CardAcceptance.For<CardTypes.Estate>(gameState => CountAllOwned<CardTypes.Province>(gameState) > 0),
                                CardAcceptance.For<CardTypes.Hermit>(ShouldGainHermit),
-                               CardAcceptance.For<CardTypes.MarketSquare>());
+                               CardAcceptance.For<CardTypes.MarketSquare>(ShouldGainMarketSquare));
                 }
 
                 private static CardPickByPriority ActionOrder(ICardPicker trashOrder)
                 {
                     return new CardPickByPriority(
                                CardAcceptance.For<CardTypes.Madman>(ShouldPlayMadman(trashOrder)),
+                               CardAcceptance.For<CardTypes.Hermit>(IsDoingMegaTurn),
                                CardAcceptance.For<CardTypes.MarketSquare>(ShouldPlayMarketSquare(trashOrder)),
-                               CardAcceptance.For<CardTypes.Hermit>());
+                               CardAcceptance.For<CardTypes.Hermit>(gameState => CountAllOwned<CardTypes.Madman>(gameState) - CountAllOwned<CardTypes.Hermit>(gameState) < 3),
+                               CardAcceptance.For<CardTypes.Hermit>(gameState => CountAllOwned<CardTypes.Province>(gameState) > 0));
                 }
 
                 private static CardPickByPriority TrashOrder()
                 {
                     return new CardPickByPriority(
-                               CardAcceptance.For<CardTypes.Estate>(gameState => (IsDoingMegaTurn(gameState) || CountAllOwned<CardTypes.Estate>(gameState) > 1) && CountAllOwned<CardTypes.Province>(gameState) == 0),
+                               CardAcceptance.For<CardTypes.Estate>(gameState => IsDoingMegaTurn(gameState) && CountAllOwned<CardTypes.Province>(gameState) == 0),
                                CardAcceptance.For<CardTypes.Hermit>(IsDoingMegaTurn));
-                }                     
+                }
             }
 
             private static bool ShouldGainHermit(GameState gameState)
             {
-                return CountHermitsEverGained(gameState) < 7;
+                if (PlayBigHermit(gameState))
+                    return CountHermitsEverGained(gameState) < 9 && CountAllOwned<CardTypes.MarketSquare>(gameState) == 0;
+
+                return CountHermitsEverGained(gameState) < 7 && CountAllOwned<CardTypes.MarketSquare>(gameState) == 0;
+            }
+
+            private static bool ShouldGainMarketSquare(GameState gameState)
+            {
+                PlayerState currentPlayer = gameState.players.CurrentPlayer;
+
+                //Prioritize gaining Madmen over buying Market Squares once you have three squares
+                if (CountAllOwned<CardTypes.Hermit>(gameState) > CountInDeckAndDiscard<CardTypes.Hermit>(gameState) + CountInHand<CardTypes.Hermit>(gameState) &&
+                    currentPlayer.Hand.Count < 4 &&
+                    CountAllOwned<CardTypes.MarketSquare>(gameState) > 2)
+                {
+                    return false;
+                }
+
+                return true;
+            }
+
+            private static bool PlayBigHermit(GameState gameState)
+            {
+                //Play the 9-Hermit version if possible
+                return CountOfPile<CardTypes.Hermit>(gameState) + CountHermitsEverGained(gameState) >= 9;
             }
 
             private static GameStatePredicate ShouldPlayMadman(ICardPicker trashOrder)
@@ -79,11 +105,6 @@ namespace Program
 
                     if (IsDoingMegaTurn(gameState))
                     {
-                        /*
-                        if (CountInHand<CardTypes.Madman>(gameState) == 1 && CanTrashForGold(gameState, trashOrder))
-                            return false;
-                        */
-
                         if (currentPlayer.CardsInDeckAndDiscard.Count() > 5)
                             return true;
                     }
@@ -100,10 +121,11 @@ namespace Program
 
                     if (!IsDoingMegaTurn(gameState))
                     {
-                        return !CanTrashForGold(gameState, trashOrder);                        
+                        return !CanTrashForGold(gameState, trashOrder);
                     }
                     else
                     {
+
                         if (ShouldPlayMadman(trashOrder)(gameState))
                             return false;
 
@@ -129,10 +151,24 @@ namespace Program
             {
                 PlayerState currentPlayer = gameState.players.CurrentPlayer;
 
-                return currentPlayer.Hand.Count >= 5 &&
-                       currentPlayer.Hand.CountOfCard<CardTypes.Madman>() >= 2 &&
-                       currentPlayer.AllOwnedCards.CountOfCard<CardTypes.Madman>() >= 4 &&
-                       CountHermitsEverGained(gameState) >= 7;
+                int CountMSNotInPlay = CountInDeckAndDiscard<CardTypes.MarketSquare>(gameState) +
+                  CountInHand<CardTypes.MarketSquare>(gameState);
+
+                if (currentPlayer.Hand.Count < 5 ||
+                    currentPlayer.Hand.CountOfCard<CardTypes.Madman>() < 2 ||
+                    CountMSNotInPlay < 3)
+                    return false;
+
+                if (PlayBigHermit(gameState))
+                {
+                    return currentPlayer.AllOwnedCards.CountOfCard<CardTypes.Madman>() >= 6 &&                           
+                           CountHermitsEverGained(gameState) >= 9;
+                }
+                else
+                {
+                    return currentPlayer.AllOwnedCards.CountOfCard<CardTypes.Madman>() >= 4 &&
+                           CountHermitsEverGained(gameState) >= 7;
+                }
             }
 
             private static bool IsDoingMegaTurn(GameState gameState)
