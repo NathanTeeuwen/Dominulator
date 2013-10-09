@@ -11,96 +11,50 @@ namespace Dominion
     {
 
         public BagOfCards(CardGameSubset gameSubset)
-            : base(gameSubset)
+            : this(gameSubset, null)
+        {
+        }
+
+        public BagOfCards(CardGameSubset gameSubset, BagOfCards parent)
+            : base(gameSubset, parent)
         {            
+        }
+
+        public BagOfCards Clone()
+        {
+            var result = new BagOfCards(this.gameSubset);
+            result.CopyFrom(this);
+            return result;
         }
 
         public void CopyFrom(BagOfCards other)
         {
-            this.Clear();
-            foreach (Card card in other)
-            {
-                this.AddCard(card);
-            }
+            base.CopyFrom(other);
         }
 
         public void AddCard(Card card)
         {
-            this.cards.Add(card);
-        }             
+            base.Add(card);
+        }        
 
-        public bool HasCard<T>()
-            where T : Card, new()
+        internal void MoveAllCardsFrom(CollectionCards other)
         {
-            return this.HasCard(Card.Type<T>());
+            base.MoveAllCardsFrom(other);
         }
 
-        internal Card RemoveCard()
+        internal new Card RemoveCard(CardPredicate acceptableCard)
         {
-            return this.RemoveFromEnd();
-        }
-
-        internal Card RemoveCard(CardPredicate acceptableCard)
-        {
-            int cardIndex = this.FindCardIndexThatMatchesPredicate(acceptableCard);
-            if (cardIndex == -1)
-            {
-                return null;
-            }
-
-            this.MoveCardToEnd(cardIndex);
-            return this.RemoveFromEnd();
+            return base.RemoveCard(acceptableCard);
         }
 
         public Card RemoveCard(Card cardType)
-        {            
-            int cardIndex = this.FindCardIndexOfType(cardType);
-            if (cardIndex == -1)
-            {
-                return null;
-            }
-
-            this.MoveCardToEnd(cardIndex);
-            return this.RemoveFromEnd();
-        }
-
-        public Card FindCard(Card cardType)
         {
-            int cardIndex = this.FindCardIndexOfType(cardType);
-            if (cardIndex == -1)
-            {
-                return null;
-            }
-
-            return this.cards[cardIndex];
+            return base.Remove(cardType);
         }
 
-        private int FindCardIndexThatMatchesPredicate(CardPredicate predicate)
+        internal new Card RemoveSomeCard()
         {
-            for (int i = 0; i < this.cards.Count; ++i)
-            {
-                Card card = cards[i];
-                if (predicate(card))
-                {
-                    return i;
-                }
-            }
-
-            return -1;
-        }
-
-        private int FindCardIndexOfType(Card cardEquivalent)
-        {
-            for (int i = 0; i < this.cards.Count; ++i)
-            {
-                Card card = cards[i];
-                if (card.Equals(cardEquivalent))
-                {
-                    return i;
-                }
-            }
-
-            return -1;
-        }
+            return base.RemoveSomeCard();
+        }  
     }
 }

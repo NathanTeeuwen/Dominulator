@@ -130,8 +130,8 @@ namespace Program
                 PlayerState currentPlayer = gameState.players.CurrentPlayer;
 
                 return currentPlayer.Hand.Count >= 5 &&
-                       currentPlayer.Hand.Where(c => c.Is<CardTypes.Madman>()).Count() >= 2 &&
-                       currentPlayer.AllOwnedCards.Where(c => c.Is<CardTypes.Madman>()).Count() >= 4 &&
+                       currentPlayer.Hand.CountOfCard<CardTypes.Madman>() >= 2 &&
+                       currentPlayer.AllOwnedCards.CountOfCard<CardTypes.Madman>() >= 4 &&
                        CountHermitsEverGained(gameState) >= 7;
             }
 

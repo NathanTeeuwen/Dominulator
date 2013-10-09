@@ -24,6 +24,11 @@ namespace Dominion
 
             GetSupplyPiles(1, null, this.cardGameSubset);
             GetNonSupplyPiles(this.cardGameSubset);
+            foreach (var pair in this.StartingDecks(1)[0])
+            {
+                this.cardGameSubset.AddCard(pair.Card);
+            }
+
             this.cardGameSubset.isInitializing = false;
         }
 

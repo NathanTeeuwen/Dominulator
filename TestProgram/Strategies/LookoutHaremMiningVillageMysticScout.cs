@@ -185,22 +185,15 @@ namespace Program
 
             static bool ShouldBuyScoutOverMystic(GameState gameState)
             {
-                return ((double)CountAllCardsBenefitFromScout(gameState)) / gameState.players.CurrentPlayer.AllOwnedCards.Count() >= 0.5;
+                return ((double)CountAllCardsBenefitFromScout(gameState)) / gameState.players.CurrentPlayer.AllOwnedCards.Count >= 0.5;
             }            
 
             static int CountAllCardsBenefitFromScout(GameState gameState)
             {
                 PlayerState currentPlayer = gameState.players.CurrentPlayer;
 
-                int result = 0;
-
-                foreach (Card card in currentPlayer.AllOwnedCards)
-                {
-                    if (card.isVictory || card.Is<CardTypes.Mystic>())
-                        result++;
-                }
-
-                return result;
+                return currentPlayer.AllOwnedCards.Count(card => card.isVictory || card.Is<CardTypes.Mystic>());
+                                
             }
         }
     }

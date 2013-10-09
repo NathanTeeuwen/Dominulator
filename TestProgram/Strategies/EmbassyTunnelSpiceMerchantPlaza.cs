@@ -55,7 +55,7 @@ namespace Program
 
                 var lowPriority = new CardPickByPriority(                    
                            CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),                           
-                           CardAcceptance.For<CardTypes.Tunnel>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Count() > 13),                          
+                           CardAcceptance.For<CardTypes.Tunnel>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Count > 13),                          
                            CardAcceptance.For<CardTypes.Silver>());
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);

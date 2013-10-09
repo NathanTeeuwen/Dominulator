@@ -24,6 +24,9 @@ namespace Dominion
         internal bool ownsCardThatHasSpecializedCleanupAtStartOfCleanup;
         internal bool ownsCardWithSpecializedActionOnBuyWhileInPlay;
         internal bool ownsCardWithSpecializedActionOnTrashWhileInHand;
+        internal bool ownsCardWithSpecializedActionOnGainWhileInPlay;
+        internal bool ownsCardWithSpecializedActionOnBuyWhileInHand;
+        internal bool ownsCardWithSpecializedActionOnGainWhileInHand;
 
         // all of the cards the player owns.  Always move from one list to the other
         internal ListOfCards deck;
@@ -34,8 +37,8 @@ namespace Dominion
         internal BagOfCards cardsPlayed;
         internal BagOfCards durationCards;
         internal BagOfCards cardsToReturnToHandAtStartOfTurn;
-        internal Card cardToPass = null;
-        internal Card cardBeingDiscarded = null;
+        internal SingletonCardHolder cardToPass;
+        internal SingletonCardHolder cardBeingDiscarded;
         internal BagOfCards islandMat;
         internal BagOfCards nativeVillageMat;
 
@@ -50,6 +53,7 @@ namespace Dominion
         public BagOfCards Hand { get { return this.hand; } }
         public BagOfCards CardsBeingRevealed { get { return this.cardsBeingRevealed; } }
         public BagOfCards Discard { get { return this.discard; } }
+        public CollectionCards CardsInDeck { get { return this.deck; } }
         public int TurnNumber { get { return this.numberOfTurnsPlayed; } }
         public Card CurrentCardBeingPlayed { get { return this.cardsBeingPlayed.TopCard(); } }
         public int PlayerIndex { get { return this.playerIndex; } }
@@ -57,6 +61,7 @@ namespace Dominion
         public int ExpectedCoinValueAtEndOfTurn { get { return this.AvailableCoins + this.hand.Where(card => card.isTreasure).Select(card => card.plusCoin).Sum(); } }
 
         // counters and duplicates.
+        internal BagOfCards allOwnedCards;
         internal BagOfCards cardsInPlayAtBeginningOfCleanupPhase;
 
         // persistent Counters
@@ -71,17 +76,25 @@ namespace Dominion
             this.random = random;
             this.playerIndex = playerIndex;
 
+            // duplicates
+            this.allOwnedCards = new BagOfCards(gameSubset);
             this.cardsInPlayAtBeginningOfCleanupPhase = new BagOfCards(gameSubset);
-            this.islandMat = new BagOfCards(gameSubset);
-            this.nativeVillageMat = new BagOfCards(gameSubset);
-            this.deck = new ListOfCards(gameSubset);
-            this.discard = new BagOfCards(gameSubset);
-            this.cardsBeingPlayed = new ListOfCards(gameSubset);  // a stack for recursion
-            this.cardsBeingRevealed = new BagOfCards(gameSubset);
-            this.hand = new BagOfCards(gameSubset);
-            this.cardsPlayed = new BagOfCards(gameSubset);
-            this.durationCards = new BagOfCards(gameSubset);
-            this.cardsToReturnToHandAtStartOfTurn = new BagOfCards(gameSubset);
+
+            // partition
+            this.islandMat = new BagOfCards(gameSubset, this.allOwnedCards);
+            this.nativeVillageMat = new BagOfCards(gameSubset, this.allOwnedCards);
+            this.deck = new ListOfCards(gameSubset, this.allOwnedCards);
+            this.discard = new BagOfCards(gameSubset, this.allOwnedCards);
+            this.cardsBeingPlayed = new ListOfCards(gameSubset, this.allOwnedCards);  // a stack for recursion
+            this.cardsBeingRevealed = new BagOfCards(gameSubset, this.allOwnedCards);
+            this.hand = new BagOfCards(gameSubset, this.allOwnedCards);
+            this.cardsPlayed = new BagOfCards(gameSubset, this.allOwnedCards);
+            this.durationCards = new BagOfCards(gameSubset, this.allOwnedCards);
+            this.cardsToReturnToHandAtStartOfTurn = new BagOfCards(gameSubset, this.allOwnedCards);
+            this.cardToPass = new SingletonCardHolder(this.allOwnedCards);
+            this.cardBeingDiscarded = new SingletonCardHolder(this.allOwnedCards);
+            
+            
             this.turnCounters = new PlayerTurnCounters(gameSubset);
         }
 
@@ -475,10 +488,10 @@ namespace Dominion
 
         internal void MoveCardBeingDiscardedToTrash(GameState gameState)
         {
-            if (this.cardBeingDiscarded != null)
+            if (this.cardBeingDiscarded.Card != null)
             {
-                MoveCardToTrash(this.cardBeingDiscarded, gameState);
-                this.cardBeingDiscarded = null;
+                MoveCardToTrash(this.cardBeingDiscarded.Card, gameState);
+                this.cardBeingDiscarded.Clear();
             }
         }
 
@@ -577,7 +590,7 @@ namespace Dominion
         {
             while (this.nativeVillageMat.Any())
             {
-                Card card = this.nativeVillageMat.RemoveCard();
+                Card card = this.nativeVillageMat.RemoveSomeCard();
                 this.hand.AddCard(card);
             }
         }
@@ -1255,31 +1268,41 @@ namespace Dominion
 
             this.gameLog.PushScope();
 
+            // technically, the hovel reaction can cause hand size to change.  This is not a problem though
+            // would only be a problem if cards were added that would subsequently needed to be enumerated.
             bool wasCardMoved = false;
-            foreach (Card cardInHand in this.Hand.ToArray())
+
+            if (this.ownsCardWithSpecializedActionOnBuyWhileInHand ||
+                this.ownsCardWithSpecializedActionOnGainWhileInHand)
             {
-                DeckPlacement preferredPlacement = (gainReason == GainReason.Buy) ?
-                    cardInHand.DoSpecializedActionOnBuyWhileInHand(this, gameState, card) : DeckPlacement.Default;
-
-                if (!wasCardMoved && preferredPlacement == DeckPlacement.Default)
+                foreach (Card cardInHand in this.Hand)
                 {
-                    preferredPlacement = cardInHand.DoSpecializedActionOnGainWhileInHand(this, gameState, card);
-                }
+                    DeckPlacement preferredPlacement = (gainReason == GainReason.Buy) ?
+                        cardInHand.DoSpecializedActionOnBuyWhileInHand(this, gameState, card) : DeckPlacement.Default;
 
-                if (!wasCardMoved && preferredPlacement != DeckPlacement.Default)
-                {
-                    defaultPlacement = preferredPlacement;
-                    wasCardMoved = true;
+                    if (!wasCardMoved && preferredPlacement == DeckPlacement.Default)
+                    {
+                        preferredPlacement = cardInHand.DoSpecializedActionOnGainWhileInHand(this, gameState, card);
+                    }
+
+                    if (!wasCardMoved && preferredPlacement != DeckPlacement.Default)
+                    {
+                        defaultPlacement = preferredPlacement;
+                        wasCardMoved = true;
+                    }
                 }
             }
 
-            foreach (Card cardInPlay in this.CardsInPlay)
+            if (this.ownsCardWithSpecializedActionOnGainWhileInPlay)
             {
-                DeckPlacement preferredPlacement = cardInPlay.DoSpecializedActionOnGainWhileInPlay(this, gameState, card);
-                if (!wasCardMoved && preferredPlacement != DeckPlacement.Default)
+                foreach (Card cardInPlay in this.CardsInPlay)
                 {
-                    defaultPlacement = preferredPlacement;
-                    wasCardMoved = true;
+                    DeckPlacement preferredPlacement = cardInPlay.DoSpecializedActionOnGainWhileInPlay(this, gameState, card);
+                    if (!wasCardMoved && preferredPlacement != DeckPlacement.Default)
+                    {
+                        defaultPlacement = preferredPlacement;
+                        wasCardMoved = true;
+                    }
                 }
             }
 
@@ -1307,34 +1330,10 @@ namespace Dominion
             this.ownsCardThatHasSpecializedCleanupAtStartOfCleanup |= card.HasSpecializedCleanupAtStartOfCleanup;
             this.ownsCardWithSpecializedActionOnBuyWhileInPlay |= card.HasSpecializedActionOnBuyWhileInPlay;
             this.ownsCardWithSpecializedActionOnTrashWhileInHand |= card.HasSpecializedActionOnTrashWhileInHand;
-        }
-
-        internal void MoveAllCards(GameState gameState, CardPredicate acceptableCard, DeckPlacement from, DeckPlacement to)
-        {
-            while (MoveOneCard(gameState, acceptableCard, from, to) != null)
-            {
-            }
-        }
-
-        internal Card MoveOneCard(GameState gameState, CardPredicate acceptableCard, DeckPlacement from, DeckPlacement to)
-        {
-            Card cardToMove = null;
-            switch (from)
-            {
-                case DeckPlacement.Play: cardToMove = this.cardsPlayed.RemoveCard(acceptableCard); break;
-                case DeckPlacement.Discard: cardToMove = this.discard.RemoveCard(acceptableCard); break;
-                case DeckPlacement.Hand: cardToMove = this.hand.RemoveCard(acceptableCard); break;
-                case DeckPlacement.Trash: cardToMove = this.hand.RemoveCard(acceptableCard); break;
-                default: throw new InvalidOperationException();
-            }
-
-            if (cardToMove != null)
-            {
-                this.PlaceCardFromPlacement(new CardPlacementPair(cardToMove, to), gameState);
-            }
-
-            return cardToMove;
-        }
+            this.ownsCardWithSpecializedActionOnGainWhileInPlay |= card.HasSpecializedActionOnGainWhileInPlay;
+            this.ownsCardWithSpecializedActionOnBuyWhileInHand |= card.HasSpecializedActionOnBuyWhileInHand;
+            this.ownsCardWithSpecializedActionOnGainWhileInHand |= card.HasSpecializedActionOnGainWhileInHand;
+        }           
 
         private void TriggerShuffleOfDiscardIntoDeck()
         {
@@ -1388,21 +1387,27 @@ namespace Dominion
 
         internal void MoveCardsFromPreviousTurnIntoHand()
         {
-            foreach (Card card in this.cardsToReturnToHandAtStartOfTurn)
+            if (this.cardsToReturnToHandAtStartOfTurn.Any)
             {
-                this.Hand.AddCard(card);
-                this.gameLog.PlayerReturnedCardToHand(this, card);
+                foreach (Card card in this.cardsToReturnToHandAtStartOfTurn)
+                {
+                    this.Hand.AddCard(card);
+                    this.gameLog.PlayerReturnedCardToHand(this, card);
+                }
+                this.cardsToReturnToHandAtStartOfTurn.Clear();
             }
-            this.cardsToReturnToHandAtStartOfTurn.Clear();
         }
 
         internal void MoveDurationCardsToInPlay()
         {
-            foreach (Card card in this.durationCards)
+            if (this.durationCards.Any)
             {
-                this.cardsPlayed.AddCard(card);
+                foreach (Card card in this.durationCards)
+                {
+                    this.cardsPlayed.AddCard(card);
+                }
+                this.durationCards.Clear();
             }
-            this.durationCards.Clear();
         }
 
         internal void MoveLookedAtCardsToDiscard(GameState gameState)
@@ -1417,21 +1422,24 @@ namespace Dominion
         }
 
         internal void MoveRevealedCardsToDiscard(CardPredicate predicate, GameState gameState)
-        {            
-            while (true)
+        {
+            if (this.cardsBeingRevealed.Any)
             {
-                Card cardFound = this.cardsBeingRevealed.RemoveCard(predicate);
-                if (cardFound == null)
+                while (true)
                 {
-                    break;
+                    Card cardFound = this.cardsBeingRevealed.RemoveCard(predicate);
+                    if (cardFound == null)
+                    {
+                        break;
+                    }
+                    DiscardCard(cardFound, gameState, DeckPlacement.Revealed);
                 }
-                DiscardCard(cardFound, gameState, DeckPlacement.Revealed);
-            }            
+            }
         }
 
         internal void DiscardCard(Card card, GameState gameState, DeckPlacement source)
         {
-            this.cardBeingDiscarded = card;
+            this.cardBeingDiscarded.Set(card);
 
             if (source != DeckPlacement.Deck)
             {
@@ -1449,10 +1457,10 @@ namespace Dominion
                 this.gameLog.PopScope();
             }
 
-            if (this.cardBeingDiscarded != null)
+            if (this.cardBeingDiscarded.Card != null)
             {
                 this.discard.AddCard(card);
-                this.cardBeingDiscarded = null;
+                this.cardBeingDiscarded.Clear();
             }
         }
        
@@ -1491,7 +1499,7 @@ namespace Dominion
                     throw new Exception("With more than one card in revealed cards it's ambiguous which order to move cards on top of deck");
                 }
 
-                Card card = this.cardsBeingRevealed.RemoveCard();
+                Card card = this.cardsBeingRevealed.RemoveSomeCard();
                 this.gameLog.PlayerTopDeckedCard(this, card);
                 this.deck.AddCardToTop(card);
             }
@@ -1636,77 +1644,13 @@ namespace Dominion
             {
                 return this.deck.KnownCards;
             }
-        }
+        }       
 
-        public IEnumerable<Card> CardsInDeck
+        public BagOfCards AllOwnedCards
         {
             get
             {
-                foreach (Card card in this.deck)
-                {
-                    yield return card;
-                }                
-            }
-        }
-
-        public IEnumerable<Card> AllOwnedCards
-        {
-            get
-            {
-                foreach (Card card in this.deck)
-                {
-                    yield return card;
-                }
-
-                foreach (Card card in this.hand)
-                {
-                    yield return card;
-                }
-
-                foreach (Card card in this.discard)
-                {
-                    yield return card;
-                }
-
-                foreach (Card card in this.cardsBeingRevealed)
-                {
-                    yield return card;
-                }
-
-                foreach (Card card in this.cardsBeingPlayed)
-                {
-                    yield return card;
-                }
-
-                foreach (Card card in this.durationCards)
-                {
-                    yield return card;
-                }
-
-                foreach (Card card in this.cardsToReturnToHandAtStartOfTurn)
-                {
-                    yield return card;
-                }
-
-                foreach (Card card in this.cardsPlayed)
-                {
-                    yield return card;
-                }
-
-                foreach (Card card in this.islandMat)
-                {
-                    yield return card;
-                }
-
-                foreach (Card card in this.nativeVillageMat)
-                {
-                    yield return card;
-                }
-
-                if (this.cardToPass != null)
-                {
-                    yield return this.cardToPass;
-                }
+                return this.allOwnedCards;
             }
         }
     }    

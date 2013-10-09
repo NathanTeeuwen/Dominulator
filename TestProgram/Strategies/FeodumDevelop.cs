@@ -19,11 +19,10 @@ namespace Program
                             "FeodumDevelop",
                             playerNumber,
                             purchaseOrder: PurchaseOrder(),
-                            treasurePlayOrder: Default.TreasurePlayOrder(),
                             actionOrder: ActionOrder(),
-                            trashOrder: TrashOrder(),
-                            discardOrder: Default.EmptyPickOrder(),
-                            gainOrder: GainOrder());
+                            trashOrder: TrashOrder(),                            
+                            gainOrder: GainOrder(),
+                            chooseDefaultActionOnNone:false);
             }
 
             private static ICardPicker PurchaseOrder()
@@ -72,7 +71,7 @@ namespace Program
                 var currentPlayer = gameState.players.CurrentPlayer;
 
                 Card result;
-                if (currentPlayer.Hand.Where(card => card.Is<CardTypes.Develop>()).Count() > 1)
+                if (currentPlayer.Hand.CountOfCard<CardTypes.Develop>() > 1)
                 {
                     result = TrashOrder().GetPreferredCard(gameState, card => currentPlayer.Hand.HasCard(card));
                 }

@@ -34,16 +34,20 @@ namespace Program
         }
 
         private static int CountInDeck<T>(GameState gameState)
+            where T : Card, new()
         {
-            return gameState.players.CurrentPlayer.CardsInDeck.Where(card => card is T).Count();
+            return gameState.players.CurrentPlayer.CardsInDeck.CountOfCard(Card.Type<T>());
         }
 
         private static int CountInDeckAndDiscard<T>(GameState gameState)
+            where T : Card, new()
         {
-            return gameState.players.CurrentPlayer.CardsInDeckAndDiscard.Where(card => card is T).Count();
+            var player = gameState.players.CurrentPlayer;
+            return player.CardsInDeck.CountOfCard<T>() + player.Discard.CountOfCard<T>();
         }
 
         private static int CountMightDraw<T>(GameState gameState, int maxCount)
+            where T: Card, new()
         {
             if (gameState.players.CurrentPlayer.CardsInDeck.Count() >= maxCount)
                 return CountInDeck<T>(gameState);
@@ -72,12 +76,12 @@ namespace Program
 
         public static int CountAllOwned(Card cardType, GameState gameState)
         {
-            return gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card.Is(cardType)).Count();
+            return gameState.players.CurrentPlayer.AllOwnedCards.CountOfCard(cardType);
         }
 
         public static int CountInHand(Card cardType, GameState gameState)
         {
-            return gameState.players.CurrentPlayer.Hand.Where(card => card.Is(cardType)).Count();
+            return gameState.players.CurrentPlayer.Hand.CountOfCard(cardType);
         }
 
         public static int CountInHand<T>(GameState gameState)
@@ -94,22 +98,13 @@ namespace Program
 
         public static int CountOfPile(Card cardType, GameState gameState)
         {
-            return gameState.GetPile(cardType).Count();
+            return gameState.GetPile(cardType).Count;
         }
 
         private static int CountAllOwnedMatching(ICardPicker matchingCards, GameState gameState)
-        {
-            int result = 0;
-
-            foreach (Card card in gameState.players.CurrentPlayer.AllOwnedCards)
-            {
-                if (matchingCards.GetPreferredCard(gameState, testCard => testCard.Is(card)) != null)
-                {
-                    result += 1;
-                }
-            }
-
-            return result;
+        {            
+            return gameState.players.CurrentPlayer.AllOwnedCards.CountCards(
+                card => matchingCards.GetPreferredCard(gameState, testCard => testCard.Is(card)) != null);            
         }
 
         private static int PlayersPointLead(GameState gameState)
@@ -141,32 +136,10 @@ namespace Program
         {
             return WhichCardFromInHand(matchingCards, gameState) != null;
         }
-
-        private static bool HandHasOnlyCardsFrom(ICardPicker matchingCards, GameState gameState)
-        {
-            foreach (Card card in gameState.players.CurrentPlayer.Hand)
-            {
-                if (matchingCards.GetPreferredCard(gameState, current => current.Is(card)) == null)
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-
+      
         private static int CountInHandFrom(ICardPicker matchingCards, GameState gameState)
         {
-            int result = 0;
-            foreach (Card card in gameState.players.CurrentPlayer.Hand)
-            {
-                if (matchingCards.GetPreferredCard(gameState, current => current.Is(card)) != null)
-                {
-                    ++result;
-                }
-            }
-
-            return result;
+            return gameState.players.CurrentPlayer.Hand.CountCards( card => matchingCards.GetPreferredCard(gameState, current => current.Is(card)) != null);            
         }
 
         public static class Default

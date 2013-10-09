@@ -15,6 +15,7 @@ namespace Dominion
         public PlayerCircle players;
         public PileOfCards[] supplyPiles;
         public PileOfCards[] nonSupplyPiles;
+        private MapOfCards<PileOfCards> mapCardToPile;
         public BagOfCards trash;
         private MapPileOfCardsToProperty<bool> hasPileEverBeenGained;
         private MapPileOfCardsToProperty<int> pileEmbargoTokenCount;
@@ -45,7 +46,8 @@ namespace Dominion
             this.supplyPiles = gameConfig.GetSupplyPiles(playerCount, random);
             this.nonSupplyPiles = gameConfig.GetNonSupplyPiles();
 
-            this.cardGameSubset = new CardGameSubset();            
+            this.mapCardToPile = new MapOfCards<PileOfCards>(this.cardGameSubset);
+            this.BuildMapOfCardToPile();
 
             this.players = new PlayerCircle(playerCount, players, this.gameLog, random, this.cardGameSubset);
 
@@ -64,7 +66,15 @@ namespace Dominion
             {
                 cardPile.ProtoTypeCard.DoSpecializedSetupIfInSupply(this);
             }
-        }      
+        }
+
+        private void BuildMapOfCardToPile()
+        {
+            foreach (Card card in this.cardGameSubset)
+            {
+                this.mapCardToPile[card] = this.GetPileBuilder(card);
+            }
+        }
         
         private void GainStartingCards(IEnumerable<CardCountPair>[] pairsPerPlayer)
         {
@@ -191,8 +201,11 @@ namespace Dominion
             return second.numberOfTurnsPlayed - first.numberOfTurnsPlayed;
         }
 
+        static public int turnTotalCount = 0;
+
         public void PlayTurn(PlayerState currentPlayer)
         {
+            System.Threading.Interlocked.Increment(ref turnTotalCount);
             currentPlayer.numberOfTurnsPlayed += 1;
             IPlayerAction currentPlayerAction = currentPlayer.actions;
 
@@ -234,13 +247,16 @@ namespace Dominion
         }
 
         private void DoDurationActionsFromPreviousTurn(PlayerState currentPlayer)
-        {            
-            foreach (Card card in currentPlayer.durationCards)
+        {
+            if (currentPlayer.durationCards.Any)
             {
-                this.gameLog.ReceivedDurationEffectFrom(currentPlayer, card);
-                this.gameLog.PushScope();
-                card.DoSpecializedDurationActionAtBeginningOfTurn(currentPlayer, this);
-                this.gameLog.PopScope();
+                foreach (Card card in currentPlayer.durationCards)
+                {
+                    this.gameLog.ReceivedDurationEffectFrom(currentPlayer, card);
+                    this.gameLog.PushScope();
+                    card.DoSpecializedDurationActionAtBeginningOfTurn(currentPlayer, this);
+                    this.gameLog.PopScope();
+                }
             }
 
             currentPlayer.MoveDurationCardsToInPlay();         
@@ -360,9 +376,14 @@ namespace Dominion
             {
                 throw new Exception("Card type does not have a special pile");
             }
-        }        
+        }
 
         public PileOfCards GetPile(Card cardType)
+        {
+            return this.mapCardToPile[cardType];
+        }
+
+        public PileOfCards GetPileBuilder(Card cardType)
         {
             var result = GetPile(this.supplyPiles, cardType);
             if (result != null)
@@ -425,10 +446,10 @@ namespace Dominion
             return this.hasPileEverBeenGained[pile];            
         }
 
-        internal bool DoesSupplyHaveCard<T>()
+        internal bool DoesGameHaveCard<T>()
             where T : Card, new()
         {
-            return this.supplyPiles.Select( pile => pile.ProtoTypeCard.Is<T>()).Any();
+            return this.cardGameSubset.HasCard(Card.Type<T>());
         }
 
         internal int CountOfDifferentTreasuresInTrash()

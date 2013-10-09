@@ -16,11 +16,13 @@ namespace Program
             stopwatch.Start();
 
             ComparePlayers(Strategies.HermitMarketSquare.Player(1), Strategies.BigMoney.Player(2));
-            CompareStrategyVsAllKnownStrategies(Strategies.BigMoneyCultist.Player(1));
+            CompareStrategyVsAllKnownStrategies(Strategies.HermitMarketSquare.Player(1));
             
             stopwatch.Stop();
+
             System.Console.WriteLine("");
-            System.Console.WriteLine("Elapsed Time per 1000 games: {0}ms", stopwatch.ElapsedMilliseconds * 1000 / totalGameCount);
+            System.Console.WriteLine("Elapsed Time per game: {0}us", stopwatch.ElapsedMilliseconds * 1000 / totalGameCount);
+            System.Console.WriteLine("Elapsed Time per Players Turn: {0}ns", (int)((double) stopwatch.ElapsedTicks / System.Diagnostics.Stopwatch.Frequency * 1000 * 1000 * 1000 / GameState.turnTotalCount));
         }
         
         static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false)
@@ -45,7 +47,7 @@ namespace Program
                 if (otherPlayerAction == null)
                     continue;
 
-                double percentDiff = ComparePlayers(playerAction, otherPlayerAction, shouldParallel:shouldParallel, useShelters: useShelters);
+                double percentDiff = ComparePlayers(playerAction, otherPlayerAction, shouldParallel:shouldParallel, useShelters: useShelters, logGameCount:0, numberOfGames:1000);
 
                 resultList.Add( new System.Tuple<string,double>(otherPlayerAction.PlayerName, percentDiff));
             }            

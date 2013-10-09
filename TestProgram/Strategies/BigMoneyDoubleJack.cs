@@ -29,7 +29,7 @@ namespace Program
                            CardAcceptance.For<CardTypes.Gold>(),
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
                            CardAcceptance.For<CardTypes.JackOfAllTrades>(gameState => CountAllOwned<CardTypes.JackOfAllTrades>(gameState) < 1),
-                           CardAcceptance.For<CardTypes.JackOfAllTrades>(gameState => CountAllOwned<CardTypes.JackOfAllTrades>(gameState) < 2 && gameState.players.CurrentPlayer.AllOwnedCards.Count() > 15),                           
+                           CardAcceptance.For<CardTypes.JackOfAllTrades>(gameState => CountAllOwned<CardTypes.JackOfAllTrades>(gameState) < 2 && gameState.players.CurrentPlayer.AllOwnedCards.Count > 15),                           
                            CardAcceptance.For<CardTypes.Silver>());
             }            
         }

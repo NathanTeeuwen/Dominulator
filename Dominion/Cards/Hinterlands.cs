@@ -531,6 +531,7 @@ namespace Dominion.CardTypes
         public Trader()
             : base("Trader", coinCost: 4, isReaction:true, isAction: true)
         {
+            this.doSpecializedActionOnGainWhileInHand = DoSpecializedActionOnGainWhileInHand;
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
@@ -542,7 +543,7 @@ namespace Dominion.CardTypes
             }
         }
 
-        public override DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        public new DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
             Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(card => card.Is<Trader>(), gameState);
             if (revealedCard != null)

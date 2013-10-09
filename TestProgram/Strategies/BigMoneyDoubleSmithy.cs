@@ -36,7 +36,7 @@ namespace Program
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
                            CardAcceptance.For<CardTypes.Smithy>(gameState => CountAllOwned<CardTypes.Smithy>(gameState) < 1),
                            CardAcceptance.For<CardTypes.Smithy>(gameState => CountAllOwned<CardTypes.Smithy>(gameState) < 2 &&
-                                                                             gameState.players.CurrentPlayer.AllOwnedCards.Count() >= secondSmithy),
+                                                                             gameState.players.CurrentPlayer.AllOwnedCards.Count >= secondSmithy),
                            CardAcceptance.For<CardTypes.Silver>());
 
             }           

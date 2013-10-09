@@ -1,1252 +1,1123 @@
-BigMoneyCultist gained Copper.
-BigMoneyCultist gained Copper.
-BigMoneyCultist gained Copper.
-BigMoneyCultist gained Copper.
-BigMoneyCultist gained Copper.
-BigMoneyCultist gained Copper.
-BigMoneyCultist gained Copper.
-BigMoneyCultist gained Estate.
-BigMoneyCultist gained Estate.
-BigMoneyCultist gained Estate.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Copper.
-BigMoneyDelayed gained Estate.
-BigMoneyDelayed gained Estate.
-BigMoneyDelayed gained Estate.
-BigMoneyCultist reshuffled
-BigMoneyCultist Drew Estate into hand.
-BigMoneyCultist Drew Copper into hand.
-BigMoneyCultist Drew Copper into hand.
-BigMoneyCultist Drew Estate into hand.
-BigMoneyCultist Drew Copper into hand.
-BigMoneyDelayed reshuffled
-BigMoneyDelayed Drew Copper into hand.
-BigMoneyDelayed Drew Copper into hand.
-BigMoneyDelayed Drew Copper into hand.
-BigMoneyDelayed Drew Copper into hand.
-BigMoneyDelayed Drew Copper into hand.
+HermitMarketSquare gained Copper.
+HermitMarketSquare gained Copper.
+HermitMarketSquare gained Copper.
+HermitMarketSquare gained Copper.
+HermitMarketSquare gained Copper.
+HermitMarketSquare gained Copper.
+HermitMarketSquare gained Copper.
+HermitMarketSquare gained Estate.
+HermitMarketSquare gained Estate.
+HermitMarketSquare gained Estate.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoney gained Estate.
+HermitMarketSquare reshuffled
+HermitMarketSquare Drew Copper into hand.
+HermitMarketSquare Drew Copper into hand.
+HermitMarketSquare Drew Copper into hand.
+HermitMarketSquare Drew Estate into hand.
+HermitMarketSquare Drew Copper into hand.
+BigMoney reshuffled
+BigMoney Drew Estate into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Estate into hand.
 ROUND 1
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyCultist Played Copper.
+HermitMarketSquare begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  HermitMarketSquare Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyCultist Played Copper.
+  HermitMarketSquare Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyCultist Played Copper.
+  HermitMarketSquare Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyCultist bought Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Estate(3), Silver(1), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Copper,Copper,
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
+  HermitMarketSquare Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  HermitMarketSquare bought Hermit.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Estate.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Estate into hand.
+  HermitMarketSquare Drew Estate into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Estate(3), Hermit(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyCultist Played Copper.
+HermitMarketSquare begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  HermitMarketSquare Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyCultist Played Copper.
+  HermitMarketSquare Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyCultist Played Copper.
+  HermitMarketSquare Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyCultist bought Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist reshuffled
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  HermitMarketSquare bought Hermit.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Estate.
+  HermitMarketSquare Discarded Estate.
+  HermitMarketSquare reshuffled
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Estate into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Estate into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Estate(3), Hermit(2), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Estate,Estate,Estate,
-  BigMoneyDelayed Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Copper.
+HermitMarketSquare begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  HermitMarketSquare Played Copper.
+    +1 Coin = 1 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 2 all together.
+  HermitMarketSquare Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist bought Cultist.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(1), Estate(3), Silver(2), 
+  HermitMarketSquare bought Hermit.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Estate.
+  HermitMarketSquare Discarded Estate.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Estate(3), Hermit(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoneyDelayed Played Silver.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
 ROUND 4
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyCultist bought Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist reshuffled
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(1), Estate(3), Silver(3), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyDelayed Played Copper.
+HermitMarketSquare begins turn
+With hand: Copper,Copper,Copper,Hermit,Hermit,
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare trashed Estate.
+    HermitMarketSquare gained Hermit.
+  HermitMarketSquare Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
+  HermitMarketSquare Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+  HermitMarketSquare Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(3), 
+  HermitMarketSquare bought Hermit.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Estate into hand.
+  HermitMarketSquare reshuffled
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Estate(2), Hermit(5), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
 ROUND 5
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist bought Cultist.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(2), Estate(3), Silver(3), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyDelayed Played Copper.
+HermitMarketSquare begins turn
+With hand: Copper,Copper,Copper,Estate,Hermit,
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare trashed Estate.
+    HermitMarketSquare gained Hermit.
+  HermitMarketSquare Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
+  HermitMarketSquare Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+  HermitMarketSquare Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
+  HermitMarketSquare bought Hermit.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Estate(1), Hermit(7), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(4), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), 
 
 ROUND 6
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyCultist bought Cultist.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist reshuffled
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(3), Estate(3), Silver(3), 
+HermitMarketSquare begins turn
+With hand: Copper,Copper,Hermit,Hermit,Hermit,
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare gained MarketSquare.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 1 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 2 all together.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Hermit.
+    HermitMarketSquare trashed Hermit.
+    HermitMarketSquare gained Madman.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew Estate into hand.
+  HermitMarketSquare reshuffled
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Estate(1), Hermit(6), Madman(1), MarketSquare(1), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Estate,Estate,Silver,Silver,
-  BigMoneyDelayed Played Silver.
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Silver(5), 
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
 
 ROUND 7
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Estate,Estate,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Copper into hand.
-    BigMoneyCultist Drew Estate into hand.
-    BigMoneyDelayed gained Ruined Market.
-  BigMoneyCultist Played Copper.
+HermitMarketSquare begins turn
+With hand: Copper,Copper,Estate,Hermit,MarketSquare,
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare gained MarketSquare.
+  HermitMarketSquare Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyCultist Played Copper.
+  HermitMarketSquare Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyCultist Played Copper.
+  HermitMarketSquare Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyCultist bought Silver.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(3), Estate(3), Silver(4), 
+  HermitMarketSquare bought MarketSquare.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Discarded Estate.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew Madman into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Estate(1), Hermit(6), Madman(1), MarketSquare(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Silver,Silver,Silver,
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyDelayed Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 8 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(1), Ruined Market(1), Silver(5), 
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), 
 
 ROUND 8
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Cultist,Silver,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Copper into hand.
-    BigMoneyCultist Drew Silver into hand.
-    BigMoneyDelayed gained Survivors.
-    BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Copper into hand.
-      BigMoneyCultist Drew Silver into hand.
-      BigMoneyDelayed gained Ruined Library.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyCultist bought Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist reshuffled
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(4), Estate(3), Silver(4), 
+HermitMarketSquare begins turn
+With hand: Hermit,Hermit,Hermit,Hermit,Madman,
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare gained MarketSquare.
+  HermitMarketSquare Discarded Hermit.
+    HermitMarketSquare trashed Hermit.
+    HermitMarketSquare gained Madman.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Discarded Madman.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Estate(1), Hermit(5), Madman(2), MarketSquare(4), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoneyDelayed Played Silver.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(2), Ruined Library(1), Ruined Market(1), Silver(5), Survivors(1), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
 
 ROUND 9
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Silver,Silver,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Copper into hand.
-    BigMoneyCultist Drew Copper into hand.
-    BigMoneyDelayed gained Ruined Village.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyCultist bought Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Silver(4), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyDelayed Played Copper.
+HermitMarketSquare begins turn
+With hand: Copper,Copper,Copper,Copper,Hermit,
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare gained MarketSquare.
+  HermitMarketSquare Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
+  HermitMarketSquare Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDelayed Played Copper.
+  HermitMarketSquare Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Ruined Market into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(2), Ruined Library(1), Ruined Market(1), Ruined Village(1), Silver(6), Survivors(1), 
+  HermitMarketSquare Played Copper.
+    +1 Coin = 4 all together.
+  HermitMarketSquare bought MarketSquare.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare reshuffled
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Estate into hand.
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Estate(1), Hermit(5), Madman(2), MarketSquare(6), 
+
+BigMoney begins turn
+With hand: Copper,Estate,Estate,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(6), 
 
 ROUND 10
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyCultist bought Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Silver(5), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Gold,Ruined Market,Silver,
-  BigMoneyDelayed Played Ruined Market.
+HermitMarketSquare begins turn
+With hand: Copper,Copper,Estate,MarketSquare,MarketSquare,
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
     +1 Buys = 2 all together.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
+    HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 3 all together.
+    HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 4 all together.
+    HermitMarketSquare Drew Madman into hand.
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare gained MarketSquare.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 1 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 2 all together.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded Hermit.
+    HermitMarketSquare trashed Hermit.
+    HermitMarketSquare gained Madman.
+  HermitMarketSquare Discarded Estate.
+  HermitMarketSquare Discarded Madman.
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Estate(1), Hermit(4), Madman(3), MarketSquare(7), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Discarded Ruined Market.
-  BigMoneyDelayed Discarded Gold.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Ruined Library into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Copper(7), Estate(3), Gold(3), Ruined Library(1), Ruined Market(1), Ruined Village(1), Silver(6), Survivors(1), 
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(6), 
 
 ROUND 11
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Cultist,Cultist,Estate,Silver,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Cultist into hand.
-    BigMoneyCultist reshuffled
-    BigMoneyCultist Drew Silver into hand.
-    BigMoneyDelayed gained Ruined Village.
-    BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Estate into hand.
-      BigMoneyCultist Drew Estate into hand.
-      BigMoneyDelayed gained Abandoned Mine.
-      BigMoneyCultist Played Cultist.
-        BigMoneyCultist Drew Cultist into hand.
-        BigMoneyCultist Drew Copper into hand.
-        BigMoneyDelayed gained Ruined Village.
-        BigMoneyCultist Played Cultist.
-          BigMoneyCultist Drew Copper into hand.
-          BigMoneyCultist Drew Silver into hand.
-          BigMoneyDelayed gained Ruined Market.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyCultist bought Gold.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(1), Silver(5), 
+HermitMarketSquare begins turn
+With hand: Copper,Copper,Hermit,MarketSquare,MarketSquare,
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    HermitMarketSquare Drew Madman into hand.
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 3 all together.
+    HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare gained MarketSquare.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 1 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 2 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 3 all together.
+  HermitMarketSquare bought MarketSquare.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Discarded Madman.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Estate(1), Hermit(4), Madman(3), MarketSquare(9), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Estate,Gold,Ruined Library,Silver,
-  BigMoneyDelayed Played Ruined Library.
-    BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Played Gold.
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 5 all together.
-  BigMoneyDelayed Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 7 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 8 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Discarded Ruined Library.
-  BigMoneyDelayed Discarded Gold.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Ruined Library(1), Ruined Market(2), Ruined Village(3), Silver(6), Survivors(1), 
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(6), 
 
 ROUND 12
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyCultist bought Gold.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist reshuffled
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(2), Silver(5), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Ruined Village,Silver,Silver,
-  BigMoneyDelayed Played Ruined Village.
+HermitMarketSquare begins turn
+With hand: Copper,Hermit,Hermit,Hermit,MarketSquare,
+  HermitMarketSquare Played MarketSquare.
     +1 Actions = 1 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Discarded Ruined Village.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Survivors into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(5), Ruined Library(1), Ruined Market(2), Ruined Village(3), Silver(6), Survivors(1), 
+    +1 Buys = 2 all together.
+    HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare gained MarketSquare.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 1 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 2 all together.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded Hermit.
+    HermitMarketSquare trashed Hermit.
+    HermitMarketSquare gained Madman.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare reshuffled
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew Estate into hand.
+  HermitMarketSquare Drew Madman into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Estate(1), Hermit(3), Madman(4), MarketSquare(10), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(2), Silver(6), 
 
 ROUND 13
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Cultist,Silver,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Estate into hand.
-    BigMoneyCultist Drew Estate into hand.
-    BigMoneyDelayed gained Ruined Village.
-    BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Copper into hand.
-      BigMoneyCultist Drew Copper into hand.
-      BigMoneyDelayed gained Survivors.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist bought Gold.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(3), Silver(5), 
+HermitMarketSquare begins turn
+With hand: Estate,Hermit,Madman,MarketSquare,MarketSquare,
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 3 all together.
+    HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 4 all together.
+    HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 5 all together.
+    HermitMarketSquare Drew Madman into hand.
+  HermitMarketSquare Played Madman.
+    +2 Actions = 2 all together.
+    HermitMarketSquare returned Madman to its pile
+    HermitMarketSquare Drew Copper into hand.
+    HermitMarketSquare Drew Copper into hand.
+    HermitMarketSquare Drew MarketSquare into hand.
+    HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Played Madman.
+    +2 Actions = 3 all together.
+    HermitMarketSquare returned Madman to its pile
+    HermitMarketSquare Drew Hermit into hand.
+    HermitMarketSquare Drew MarketSquare into hand.
+    HermitMarketSquare Drew MarketSquare into hand.
+    HermitMarketSquare Drew MarketSquare into hand.
+    HermitMarketSquare Drew Copper into hand.
+    HermitMarketSquare Drew Madman into hand.
+    HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare trashed Estate.
+      HermitMarketSquare Discarded MarketSquare.
+      HermitMarketSquare gained Gold.
+      HermitMarketSquare Discarded MarketSquare.
+      HermitMarketSquare gained Gold.
+      HermitMarketSquare Discarded MarketSquare.
+      HermitMarketSquare gained Gold.
+      HermitMarketSquare Discarded MarketSquare.
+      HermitMarketSquare gained Gold.
+      HermitMarketSquare Discarded MarketSquare.
+      HermitMarketSquare gained Gold.
+    HermitMarketSquare gained Hermit.
+  HermitMarketSquare Played Madman.
+    +2 Actions = 3 all together.
+    HermitMarketSquare returned Madman to its pile
+    HermitMarketSquare Drew Copper into hand.
+    HermitMarketSquare Drew Copper into hand.
+    HermitMarketSquare Drew Madman into hand.
+    HermitMarketSquare Drew MarketSquare into hand.
+    HermitMarketSquare Drew Copper into hand.
+    HermitMarketSquare reshuffled
+    HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare Played Madman.
+    +2 Actions = 4 all together.
+    HermitMarketSquare returned Madman to its pile
+    HermitMarketSquare Drew MarketSquare into hand.
+    HermitMarketSquare Drew Hermit into hand.
+    HermitMarketSquare Drew Gold into hand.
+    HermitMarketSquare Drew MarketSquare into hand.
+    HermitMarketSquare Drew Gold into hand.
+    HermitMarketSquare Drew MarketSquare into hand.
+    HermitMarketSquare Drew MarketSquare into hand.
+    HermitMarketSquare Drew Gold into hand.
+    HermitMarketSquare Drew MarketSquare into hand.
+    HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare trashed Hermit.
+      HermitMarketSquare Discarded MarketSquare.
+      HermitMarketSquare gained Gold.
+      HermitMarketSquare Discarded MarketSquare.
+      HermitMarketSquare gained Gold.
+      HermitMarketSquare Discarded MarketSquare.
+      HermitMarketSquare gained Gold.
+      HermitMarketSquare Discarded MarketSquare.
+      HermitMarketSquare gained Gold.
+      HermitMarketSquare Discarded MarketSquare.
+      HermitMarketSquare gained Gold.
+      HermitMarketSquare Discarded MarketSquare.
+      HermitMarketSquare gained Gold.
+    HermitMarketSquare gained Hermit.
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare trashed Hermit.
+    HermitMarketSquare gained Hermit.
+  HermitMarketSquare Played Gold.
+    +3 Coin = 3 all together.
+  HermitMarketSquare Played Gold.
+    +3 Coin = 6 all together.
+  HermitMarketSquare Played Gold.
+    +3 Coin = 9 all together.
+  HermitMarketSquare Played Gold.
+    +3 Coin = 12 all together.
+  HermitMarketSquare Played Gold.
+    +3 Coin = 15 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 16 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 17 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 18 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 19 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 20 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 21 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 22 all together.
+  HermitMarketSquare bought Province.
+  HermitMarketSquare bought Province.
+  HermitMarketSquare bought Duchy.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare reshuffled
+  HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Duchy(1), Gold(11), Hermit(4), MarketSquare(10), Province(2), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Estate,Estate,Survivors,
-  BigMoneyDelayed Played Survivors.
-    BigMoneyDelayed Revealed Silver.
-    BigMoneyDelayed reshuffled
-    BigMoneyDelayed Revealed Abandoned Mine.
-  BigMoneyDelayed Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDelayed Discarded Survivors.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Drew Abandoned Mine into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Ruined Market into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(5), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(6), Survivors(2), 
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(2), Silver(7), 
 
 ROUND 14
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Cultist,Gold,Silver,Silver,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Silver into hand.
-    BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Played Gold.
+HermitMarketSquare begins turn
+With hand: Gold,Gold,Hermit,MarketSquare,MarketSquare,
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 3 all together.
+    HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare gained Estate.
+  HermitMarketSquare Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 9 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 11 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 12 all together.
-  BigMoneyCultist bought Province.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Gold.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(3), Province(1), Silver(5), 
+  HermitMarketSquare Played Gold.
+    +3 Coin = 6 all together.
+  HermitMarketSquare Played Gold.
+    +3 Coin = 9 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 10 all together.
+  HermitMarketSquare bought Province.
+  HermitMarketSquare bought Estate.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Duchy(1), Estate(2), Gold(11), Hermit(4), MarketSquare(10), Province(3), 
 
-BigMoneyDelayed begins turn
-With hand: Abandoned Mine,Copper,Gold,Ruined Market,Silver,
-  BigMoneyDelayed Played Abandoned Mine.
-    +1 Coin = 1 all together.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 4 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDelayed bought Gold.
-  BigMoneyDelayed Discarded Abandoned Mine.
-  BigMoneyDelayed Discarded Gold.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Ruined Market.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed Drew Ruined Market into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(6), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(6), Survivors(2), 
+BigMoney begins turn
+With hand: Copper,Copper,Province,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Province.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(3), Province(2), Silver(7), 
 
 ROUND 15
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Estate,Gold,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Cultist into hand.
-    BigMoneyCultist reshuffled
-    BigMoneyCultist Drew Copper into hand.
-    BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Cultist into hand.
-      BigMoneyCultist Drew Copper into hand.
-      BigMoneyCultist Played Cultist.
-        BigMoneyCultist Drew Copper into hand.
-        BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyCultist bought Province.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Gold.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Province into hand.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Estate(3), Gold(3), Province(2), Silver(5), 
-
-BigMoneyDelayed begins turn
-With hand: Gold,Gold,Ruined Market,Ruined Village,Silver,
-  BigMoneyDelayed Played Ruined Village.
+HermitMarketSquare begins turn
+With hand: Hermit,MarketSquare,MarketSquare,MarketSquare,MarketSquare,
+  HermitMarketSquare Played MarketSquare.
     +1 Actions = 1 all together.
-  BigMoneyDelayed Played Ruined Market.
     +1 Buys = 2 all together.
-  BigMoneyDelayed Played Gold.
+    HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 3 all together.
+    HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 4 all together.
+    HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 5 all together.
+    HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 6 all together.
+    HermitMarketSquare Drew Duchy into hand.
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 7 all together.
+    HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare gained Estate.
+  HermitMarketSquare Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyDelayed bought Province.
-  BigMoneyDelayed Discarded Ruined Village.
-  BigMoneyDelayed Discarded Ruined Market.
-  BigMoneyDelayed Discarded Gold.
-  BigMoneyDelayed Discarded Gold.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(6), Province(1), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(6), Survivors(2), 
+  HermitMarketSquare Played Copper.
+    +1 Coin = 4 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 5 all together.
+  HermitMarketSquare bought Duchy.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Discarded Duchy.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare Drew Hermit into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(11), Hermit(4), MarketSquare(10), Province(3), 
+
+BigMoney begins turn
+With hand: Estate,Gold,Province,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Province.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(3), Province(2), Silver(7), 
 
 ROUND 16
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Gold,Province,Silver,
-  BigMoneyCultist Played Gold.
+HermitMarketSquare begins turn
+With hand: Copper,Gold,Hermit,Hermit,MarketSquare,
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 2 all together.
+    HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Played MarketSquare.
+    +1 Actions = 1 all together.
+    +1 Buys = 3 all together.
+    HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare Played Hermit.
+    HermitMarketSquare gained Estate.
+  HermitMarketSquare Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist Played Copper.
+  HermitMarketSquare Played Gold.
+    +3 Coin = 6 all together.
+  HermitMarketSquare Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyCultist bought Duchy.
-  BigMoneyCultist Discarded Gold.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Province.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(1), Estate(3), Gold(3), Province(2), Silver(5), 
+  HermitMarketSquare bought Duchy.
+  HermitMarketSquare bought Estate.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded MarketSquare.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Discarded Hermit.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Province into hand.
+  HermitMarketSquare Drew Province into hand.
+  HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Duchy(3), Estate(5), Gold(11), Hermit(4), MarketSquare(10), Province(3), 
 
-BigMoneyDelayed begins turn
-With hand: Estate,Ruined Village,Ruined Village,Silver,Silver,
-  BigMoneyDelayed Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDelayed Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDelayed bought Silver.
-  BigMoneyDelayed Discarded Ruined Village.
-  BigMoneyDelayed Discarded Ruined Village.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Drew Ruined Library into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed Drew Survivors into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(6), Province(1), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Gold into hand.
+  BigMoney reshuffled
+  BigMoney Drew Province into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(3), Province(3), Silver(7), 
 
 ROUND 17
 -------------
-BigMoneyCultist begins turn
-With hand: Cultist,Estate,Estate,Gold,Silver,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Silver into hand.
-    BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Played Gold.
+HermitMarketSquare begins turn
+With hand: Copper,Gold,Gold,Province,Province,
+  HermitMarketSquare Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 9 all together.
-  BigMoneyCultist bought Province.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Gold.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist reshuffled
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Province into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Province into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(1), Estate(3), Gold(3), Province(3), Silver(5), 
+  HermitMarketSquare Played Gold.
+    +3 Coin = 6 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 7 all together.
+  HermitMarketSquare bought Duchy.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded Province.
+  HermitMarketSquare Discarded Province.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare Drew Copper into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Duchy(4), Estate(5), Gold(11), Hermit(4), MarketSquare(10), Province(3), 
 
-BigMoneyDelayed begins turn
-With hand: Copper,Gold,Ruined Library,Ruined Village,Survivors,
-  BigMoneyDelayed Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDelayed Played Ruined Library.
-    BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Played Gold.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Gold,Province,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDelayed Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDelayed bought Duchy.
-  BigMoneyDelayed Discarded Ruined Village.
-  BigMoneyDelayed Discarded Ruined Library.
-  BigMoneyDelayed Discarded Gold.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Survivors.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(1), Estate(3), Gold(6), Province(1), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Province.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Duchy into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(3), Estate(3), Gold(3), Province(3), Silver(7), 
 
 ROUND 18
 -------------
-BigMoneyCultist begins turn
-With hand: Copper,Cultist,Cultist,Province,Province,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Gold into hand.
-    BigMoneyCultist Drew Silver into hand.
-    BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Silver into hand.
-      BigMoneyCultist Drew Cultist into hand.
-      BigMoneyCultist Played Cultist.
-        BigMoneyCultist Drew Copper into hand.
-        BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Played Gold.
+HermitMarketSquare begins turn
+With hand: Copper,Copper,Gold,Gold,Gold,
+  HermitMarketSquare Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyCultist bought Province.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Gold.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Province.
-  BigMoneyCultist Discarded Province.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Duchy into hand.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(1), Estate(3), Gold(3), Province(4), Silver(5), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyDelayed bought Province.
-  BigMoneyDelayed Discarded Gold.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed reshuffled
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(1), Estate(3), Gold(6), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
-
-ROUND 19
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Duchy,Estate,Gold,Silver,
-  BigMoneyCultist Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist bought Duchy.
-  BigMoneyCultist Discarded Gold.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Duchy.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(2), Estate(3), Gold(3), Province(4), Silver(5), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDelayed bought Duchy.
-  BigMoneyDelayed Discarded Gold.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Drew Copper into hand.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Estate into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(3), Gold(6), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
-
-ROUND 20
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist bought Duchy.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(3), Estate(3), Gold(3), Province(4), Silver(5), 
-
-BigMoneyDelayed begins turn
-With hand: Copper,Estate,Gold,Ruined Village,Ruined Village,
-  BigMoneyDelayed Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDelayed Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDelayed bought Estate.
-  BigMoneyDelayed Discarded Ruined Village.
-  BigMoneyDelayed Discarded Ruined Village.
-  BigMoneyDelayed Discarded Gold.
-  BigMoneyDelayed Discarded Copper.
-  BigMoneyDelayed Discarded Estate.
-  BigMoneyDelayed Drew Ruined Market into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Abandoned Mine into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Survivors into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(4), Gold(6), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
-
-ROUND 21
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Cultist,Cultist,Estate,Gold,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Province into hand.
-    BigMoneyCultist reshuffled
-    BigMoneyCultist Drew Duchy into hand.
-    BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Cultist into hand.
-      BigMoneyCultist Drew Cultist into hand.
-      BigMoneyCultist Played Cultist.
-        BigMoneyCultist Drew Gold into hand.
-        BigMoneyCultist Drew Copper into hand.
-        BigMoneyCultist Played Cultist.
-          BigMoneyCultist Drew Silver into hand.
-          BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyCultist Played Gold.
+  HermitMarketSquare Played Gold.
     +3 Coin = 6 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 10 all together.
-  BigMoneyCultist Played Copper.
+  HermitMarketSquare Played Gold.
+    +3 Coin = 9 all together.
+  HermitMarketSquare Played Copper.
+    +1 Coin = 10 all together.
+  HermitMarketSquare Played Copper.
     +1 Coin = 11 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 12 all together.
-  BigMoneyCultist bought Province.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Gold.
-  BigMoneyCultist Discarded Gold.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Province.
-  BigMoneyCultist Discarded Duchy.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Province into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(3), Estate(3), Gold(3), Province(5), Silver(5), 
+  HermitMarketSquare bought Province.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Copper.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare Discarded Gold.
+  HermitMarketSquare reshuffled
+  HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare Drew MarketSquare into hand.
+  HermitMarketSquare Drew Province into hand.
+  HermitMarketSquare Drew Gold into hand.
+  HermitMarketSquare ends turn with deck: Copper(7), Duchy(4), Estate(5), Gold(11), Hermit(4), MarketSquare(10), Province(4), 
 
-BigMoneyDelayed begins turn
-With hand: Abandoned Mine,Gold,Ruined Market,Silver,Survivors,
-  BigMoneyDelayed Played Ruined Market.
-    +1 Buys = 2 all together.
-  BigMoneyDelayed Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDelayed Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDelayed bought Duchy.
-  BigMoneyDelayed Discarded Ruined Market.
-  BigMoneyDelayed Discarded Gold.
-  BigMoneyDelayed Discarded Silver.
-  BigMoneyDelayed Discarded Survivors.
-  BigMoneyDelayed Discarded Abandoned Mine.
-  BigMoneyDelayed Drew Province into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Silver into hand.
-  BigMoneyDelayed Drew Gold into hand.
-  BigMoneyDelayed Drew Ruined Village into hand.
-  BigMoneyDelayed ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(3), Estate(4), Gold(6), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
+BigMoney begins turn
+With hand: Copper,Duchy,Estate,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Duchy.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(4), Estate(3), Gold(3), Province(3), Silver(7), 
 
-ROUND 22
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Gold,Province,Silver,Silver,
-  BigMoneyCultist Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyCultist bought Province.
-  BigMoneyCultist Discarded Gold.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Province.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Duchy into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(5), Duchy(3), Estate(3), Gold(3), Province(6), Silver(5), 
+Game ended in 18 turns.
+HermitMarketSquare Won!
+HermitMarketSquare total score: 41
+  Copper(7), Duchy(4), Estate(5), Gold(11), Hermit(4), MarketSquare(10), Province(4), 
+BigMoney total score: 33
+  Copper(7), Duchy(4), Estate(3), Gold(3), Province(3), Silver(7), 
+Trash contains: Estate(3), Hermit(6), 
 
-Game ended in 22 turns.
-BigMoneyCultist Won!
-BigMoneyCultist total score: 48
-  Copper(7), Cultist(5), Duchy(3), Estate(3), Gold(3), Province(6), Silver(5), 
-BigMoneyDelayed total score: 25
-  Abandoned Mine(1), Copper(7), Duchy(3), Estate(4), Gold(6), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
-Trash contains: 
-
-BigMoneyCultist GainSequence is:
-  Silver, Silver, Cultist, Silver, Cultist, 
-  Cultist, Silver, Cultist, Cultist, Silver, 
-  Gold, Gold, Gold, Province, Province, 
-  Duchy, Province, Province, Duchy, Duchy, 
-  Province, Province, 
-BigMoneyDelayed GainSequence is:
-  Silver, Silver, Silver, Silver, Silver, 
-  Ruined Market, Gold, Survivors, Ruined Library, Gold, 
-  Ruined Village, Silver, Gold, Ruined Village, Abandoned Mine, 
-  Ruined Village, Ruined Market, Gold, Gold, Ruined Village, 
-  Survivors, Gold, Province, Silver, Duchy, 
-  Province, Duchy, Estate, Duchy, 
+HermitMarketSquare GainSequence is:
+  Hermit, Hermit, Hermit, Hermit, Hermit, 
+  Hermit, Hermit, MarketSquare, Madman, MarketSquare, 
+  MarketSquare, MarketSquare, Madman, MarketSquare, MarketSquare, 
+  MarketSquare, Madman, MarketSquare, MarketSquare, MarketSquare, 
+  Madman, Gold, Gold, Gold, Gold, 
+  Gold, Hermit, Gold, Gold, Gold, 
+  Gold, Gold, Gold, Hermit, Hermit, 
+  Province, Province, Duchy, Estate, Province, 
+  Estate, Estate, Duchy, Estate, Duchy, 
+  Estate, Duchy, Province, 
+BigMoney GainSequence is:
+  Silver, Silver, Gold, Silver, Silver, 
+  Gold, Silver, Silver, Gold, Province, 
+  Province, Silver, Duchy, Duchy, Province, 
+  Duchy, Duchy, 

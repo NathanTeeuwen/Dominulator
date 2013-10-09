@@ -145,12 +145,12 @@ namespace Dominion.CardTypes
         {
             foreach (PlayerState player in gameState.players.AllPlayers)
             {
-                player.cardToPass = player.RequestPlayerGiveCardToPassLeft(gameState);
+                player.cardToPass.Set(player.RequestPlayerGiveCardToPassLeft(gameState));
             }
 
             for (int playerIndex = 0; playerIndex < gameState.players.PlayerCount; ++playerIndex)
             {
-                Card card = gameState.players[playerIndex].cardToPass;
+                Card card = gameState.players[playerIndex].cardToPass.Card;
                 if (card != null)
                 {
                     gameState.players[playerIndex + 1].hand.AddCard(card);
@@ -159,7 +159,7 @@ namespace Dominion.CardTypes
 
             foreach (PlayerState player in gameState.players.AllPlayers)
             {
-                player.cardToPass = null;
+                player.cardToPass.Clear();
             }
 
             currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCard => true, isOptional: true);

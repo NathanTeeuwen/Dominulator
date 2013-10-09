@@ -28,7 +28,7 @@ namespace Dominion.CardTypes
             currentPlayer.MoveRevealedCardToHand(revealedCard);
 
             int maxReturnCount = 1;
-            if (currentPlayer.Hand.Where(card => card.Equals(revealedCard)).Count() > 1)
+            if (currentPlayer.Hand.CountCards(card => card.Equals(revealedCard)) > 1)
             {
                 maxReturnCount++;                
             }
@@ -147,7 +147,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            while (currentPlayer.Hand.Count() > 3)
+            while (currentPlayer.Hand.Count > 3)
             {
                 currentPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard => true, isOptional: false);
             }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,22 +9,24 @@ namespace Dominion
 {
     public class ListOfCards
         : CollectionCards
-    {     
+    {
+        private List<Card> cards = new List<Card>(20);
         private int countKnownCard = 0;
 
         public ListOfCards(CardGameSubset gameSubset)
-            : base(gameSubset)
+            : base(gameSubset, null)
+        {
+        }
+
+        public ListOfCards(CardGameSubset gameSubset, BagOfCards parent)
+            : base(gameSubset, parent)
         {
         }
 
         private static int NumberBetweenInclusive(Random random, int lowerBoundInclusive, int upperBoundInclusive)
-        {
-            lock (random)
-            {
-                int count = upperBoundInclusive - lowerBoundInclusive + 1;
-
-                return random.Next(count) + lowerBoundInclusive;
-            }
+        {            
+            int count = upperBoundInclusive - lowerBoundInclusive + 1;
+            return random.Next(count) + lowerBoundInclusive;            
         }
 
         public void Shuffle(Random random)
@@ -38,12 +41,21 @@ namespace Dominion
             this.countKnownCard = 0;
         }
 
+        public override void Clear()
+        {
+            base.Clear();
+            this.cards.Clear();
+        }
+
         public Card DrawCardFromTop()
         {
             if (this.countKnownCard > 0)
                 this.countKnownCard--;
 
-            return this.RemoveFromEnd();            
+            Card result = this.RemoveFromEnd();
+            base.Remove(result);
+
+            return result;
         }
 
         public Card TopCard()
@@ -78,6 +90,7 @@ namespace Dominion
         {
             this.countKnownCard++;
             this.cards.Add(card);
+            base.Add(card);
         }
 
         public void AddNCardsToTop(Card card, int count)
@@ -110,6 +123,38 @@ namespace Dominion
         internal void EraseKnownCountKnowledge()
         {
             this.countKnownCard = 0;
+        }
+
+        protected void Swap(int indexfirst, int indexSecond)
+        {
+            Card temp = this.cards[indexfirst];
+            this.cards[indexfirst] = this.cards[indexSecond];
+            this.cards[indexSecond] = temp;
+        }
+
+        protected void MoveCardToEnd(int cardIndex)
+        {
+            if (this.cards.Count > 1)
+            {
+                this.Swap(cardIndex, this.cards.Count - 1);
+            }
+        }
+
+        protected Card RemoveFromEnd()
+        {
+            if (this.cards.Count == 0)
+            {
+                return null;
+            }
+
+            Card result = this.cards[this.cards.Count - 1];
+            this.cards.RemoveAt(this.cards.Count - 1);
+            return result;
+        }
+
+        public override IEnumerator<Card> GetEnumerator()
+        {
+            return this.cards.GetEnumerator();
         }        
     }
 }

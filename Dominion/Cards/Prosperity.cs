@@ -360,9 +360,10 @@ namespace Dominion.CardTypes
         public RoyalSeal()
             : base("Royal Seal", coinCost: 5, isTreasure: true, plusCoins: 2)
         {
+            this.doSpecializedActionOnGainWhileInPlay = DoSpecializedActionOnGainWhileInPlay;
         }
 
-        public override DeckPlacement DoSpecializedActionOnGainWhileInPlay(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        private new DeckPlacement DoSpecializedActionOnGainWhileInPlay(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
             if (currentPlayer.actions.ShouldPutCardOnTopOfDeck(gainedCard, gameState))
             {
@@ -478,6 +479,7 @@ namespace Dominion.CardTypes
         public Watchtower()
             : base("Watchtower", coinCost: 3, isReaction:true, isAction:true)
         {
+            this.doSpecializedActionOnGainWhileInHand = DoSpecializedActionOnGainWhileInHand;
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
@@ -485,7 +487,7 @@ namespace Dominion.CardTypes
             currentPlayer.DrawUntilCountInHand(6);
         }
 
-        override public DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        public new DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
             Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(card => card.Equals(this), gameState);
             if (revealedCard == null)

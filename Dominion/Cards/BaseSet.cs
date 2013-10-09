@@ -22,7 +22,7 @@ namespace Dominion.CardTypes
 
         public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
-            if (gameState.DoesSupplyHaveCard<Duchess>())
+            if (gameState.DoesGameHaveCard<Duchess>())
             {
                 currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.Is<Duchess>(), "may gain a duchess", isOptional: true);                
             }

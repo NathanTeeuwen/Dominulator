@@ -11,20 +11,20 @@ namespace Dominion
     {
 
         public SetOfCards(CardGameSubset gameSubset)
-            : base(gameSubset)
+            : base(gameSubset, null)
         {
-        }
+        }        
 
-        public void Add(Card card)
+        public new void Add(Card card)
         {
             if (this.HasCard(card))
                 return;
-            this.cards.Add(card);
+            base.Add(card);
         }
 
-        public void Remove(Card card)
-        {
-            this.cards.Remove(card);
+        public new void Remove(Card card)
+        {            
+            base.Remove(card);
         }
     }
 }

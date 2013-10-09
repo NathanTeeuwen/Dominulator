@@ -59,8 +59,8 @@ namespace Program
                            CardAcceptance.For<CardTypes.GreatHall>(),                           
                            CardAcceptance.For<CardTypes.IronWorks>(
                                 gameState => CountOfPile<CardTypes.GreatHall>(gameState) > 0 || 
-                                CountAllOwned<CardTypes.Remodel>(gameState) * 6 < gameState.players.CurrentPlayer.AllOwnedCards.Count() || 
-                                !gameState.players.CurrentPlayer.Hand.Where( c => c.isAction && !c.Is<CardTypes.IronWorks>()).Any()),
+                                CountAllOwned<CardTypes.Remodel>(gameState) * 6 < gameState.players.CurrentPlayer.AllOwnedCards.Count || 
+                                gameState.players.CurrentPlayer.Hand.CountCards( c => c.isAction && !c.Is<CardTypes.IronWorks>()) == 0),
                            CardAcceptance.For<CardTypes.Pillage>(),
                            CardAcceptance.For<CardTypes.Remodel>(),
                            CardAcceptance.For<CardTypes.HuntingGrounds>());

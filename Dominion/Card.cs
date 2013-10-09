@@ -38,6 +38,9 @@ namespace Dominion
         protected GameStateCardMethod doSpecializedActionOnBuyWhileInPlay; // readonly
         protected GameStateCardPredicate doSpecializedActionOnTrashWhileInHand; //readonly
         protected GameStateCardMethod doSpecializedActionToCardWhileInPlay;  //readonly
+        protected GameStateCardToPlacement doSpecializedActionOnGainWhileInPlay; //readonly
+        protected GameStateCardToPlacement doSpecializedActionOnBuyWhileInHand; //readonly 
+        protected GameStateCardToPlacement doSpecializedActionOnGainWhileInHand; //readonly
 
         private int privateIndex; //readonly
         private int hashCode;
@@ -77,7 +80,10 @@ namespace Dominion
             CardIntValue provideDiscountForWhileInPlay = null,
             GameStateMethod doSpecializedCleanupAtStartOfCleanup = null,
             GameStateCardMethod doSpecializedActionOnBuyWhileInPlay = null,
-            GameStateCardPredicate doSpecializedActionOnTrashWhileInHand = null)
+            GameStateCardPredicate doSpecializedActionOnTrashWhileInHand = null,
+            GameStateCardToPlacement doSpecializedActionOnGainWhileInPlay = null,
+            GameStateCardToPlacement doSpecializedActionOnBuyWhileInHand = null,
+            GameStateCardToPlacement doSpecializedActionOnGainWhileInHand = null)
         {
             if (!isConstructing)
                 throw new Exception("Can not call new operator");
@@ -109,6 +115,9 @@ namespace Dominion
             this.doSpecializedCleanupAtStartOfCleanup = doSpecializedCleanupAtStartOfCleanup;
             this.doSpecializedActionOnBuyWhileInPlay = doSpecializedActionOnBuyWhileInPlay;
             this.doSpecializedActionOnTrashWhileInHand = doSpecializedActionOnTrashWhileInHand;
+            this.doSpecializedActionOnGainWhileInPlay = doSpecializedActionOnGainWhileInPlay;
+            this.doSpecializedActionOnBuyWhileInHand = doSpecializedActionOnBuyWhileInHand;
+            this.doSpecializedActionOnGainWhileInHand = doSpecializedActionOnGainWhileInHand;
         }
 
         public bool Is(Card card)
@@ -282,19 +291,59 @@ namespace Dominion
         {
 
         }
-
-        virtual public DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        
+        public bool HasSpecializedActionOnGainWhileInHand
         {
-            return DeckPlacement.Default;
+            get
+            {
+                return this.doSpecializedActionOnGainWhileInHand != null;
+            }
         }
 
-        virtual public DeckPlacement DoSpecializedActionOnBuyWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        public DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
+            if (this.HasSpecializedActionOnGainWhileInHand)
+            {
+                return this.doSpecializedActionOnGainWhileInHand(currentPlayer, gameState, gainedCard);
+            }
+
             return DeckPlacement.Default;
+        }   
+
+        public bool HasSpecializedActionOnBuyWhileInHand
+        {
+            get
+            {
+                return this.doSpecializedActionOnBuyWhileInHand != null;
+            }
         }
 
-        virtual public DeckPlacement DoSpecializedActionOnGainWhileInPlay(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        public DeckPlacement DoSpecializedActionOnBuyWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
+            if (this.HasSpecializedActionOnBuyWhileInHand)
+            {
+                return this.doSpecializedActionOnBuyWhileInHand(currentPlayer, gameState, gainedCard);
+            }
+
+            return DeckPlacement.Default;
+        }   
+
+
+        public bool HasSpecializedActionOnGainWhileInPlay
+        {
+            get
+            {
+                return this.doSpecializedActionOnGainWhileInPlay != null;
+            }
+        }
+
+        public DeckPlacement DoSpecializedActionOnGainWhileInPlay(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        {
+            if (this.HasSpecializedActionOnGainWhileInPlay)
+            {
+                return this.doSpecializedActionOnGainWhileInPlay(currentPlayer, gameState, gainedCard);
+            }
+
             return DeckPlacement.Default;
         }        
 

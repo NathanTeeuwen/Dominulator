@@ -103,7 +103,7 @@ namespace Program
                            CardAcceptance.For<CardTypes.Armory>(gameState => CanPlay2TerminalsWhileChaining(gameState) && ShouldPlayArmory(gameState)),
                            CardAcceptance.For<CardTypes.Jester>(gameState => CanPlay2TerminalsWhileChaining(gameState)),
                            CardAcceptance.For<CardTypes.Bridge>(gameState => CanPlay2TerminalsWhileChaining(gameState)),
-                           CardAcceptance.For<CardTypes.Watchtower>(gameState => CanPlayTerminalWhileChaining(gameState) && !WillRatsComboWork(gameState) && gameState.players.CurrentPlayer.Hand.Count() <= 5),
+                           CardAcceptance.For<CardTypes.Watchtower>(gameState => CanPlayTerminalWhileChaining(gameState) && !WillRatsComboWork(gameState) && gameState.players.CurrentPlayer.Hand.Count <= 5),
                            CardAcceptance.For<CardTypes.Rats>(gameState => WillRatsComboWork(gameState)),
                            CardAcceptance.For<CardTypes.WanderingMinstrell>(),
                            CardAcceptance.For<CardTypes.Necropolis>(),

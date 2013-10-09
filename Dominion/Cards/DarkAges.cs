@@ -18,9 +18,10 @@ namespace Dominion.CardTypes
         public Hovel()
             : base("Hovel", coinCost: 1, isShelter: true)
         {
+            this.doSpecializedActionOnBuyWhileInHand = DoSpecializedActionOnBuyWhileInHand;
         }
 
-        public override DeckPlacement DoSpecializedActionOnBuyWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        private new DeckPlacement DoSpecializedActionOnBuyWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
             if (gainedCard.isVictory)
             {
@@ -655,7 +656,7 @@ namespace Dominion.CardTypes
 
             PlayerState.AttackAction attackAction = delegate(PlayerState currentPlayer2, PlayerState otherPlayer, GameState gameState2)
             {
-                if (otherPlayer.Hand.Count() >= 5)
+                if (otherPlayer.Hand.Count >= 5)
                 {
                     // TODO: make other player discard a good card
                     otherPlayer.RequestPlayerDiscardCardFromOtherPlayersHand(gameState, otherPlayer);
@@ -679,7 +680,7 @@ namespace Dominion.CardTypes
         {
             currentPlayer.RevealHand();
 
-            currentPlayer.AddCoins(0 - currentPlayer.Hand.Where(card => card.isTreasure).Count());
+            currentPlayer.AddCoins(0 - currentPlayer.Hand.CountCards(card => card.isTreasure));
         }
     }
 

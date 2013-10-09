@@ -139,7 +139,7 @@ namespace Program
             var currentPlayer = gameState.players.CurrentPlayer;
             Card result = this.trashOrder.GetPreferredCard(
                 gameState,
-                card => acceptableCard(card) && (currentPlayer.Hand.HasCard(card) || currentPlayer.Discard.HasCard(card)) );
+                card => (currentPlayer.Hand.HasCard(card) || currentPlayer.Discard.HasCard(card)) && acceptableCard(card));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null && !isOptional)

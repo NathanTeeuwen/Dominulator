@@ -26,13 +26,8 @@ namespace Program
         }
 
         public Card GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
-        {        
-            var existingCards = new BagOfCards(gameState.CardGameSubset);
-
-            foreach (Card card in gameState.players.CurrentPlayer.AllOwnedCards)
-            {
-                existingCards.AddCard(card);
-            }
+        {
+            var existingCards = gameState.players.CurrentPlayer.AllOwnedCards.Clone();
 
             int numberOfTries = 2;
 
