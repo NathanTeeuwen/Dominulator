@@ -15,8 +15,8 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            ComparePlayers(Strategies.LookoutTraderNobles.Player(1), Strategies.BigMoneyDoubleWitch.Player(2));
-            CompareStrategyVsAllKnownStrategies(Strategies.LookoutTraderNobles.Player(1));
+            ComparePlayers(Strategies.Illgottengains.Player(1), Strategies.BigMoney.Player(2));
+            CompareStrategyVsAllKnownStrategies(Strategies.Illgottengains.Player(1));
             
             stopwatch.Stop();
 

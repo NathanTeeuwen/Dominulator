@@ -1,1320 +1,1300 @@
-LookoutTraderNobles gained Copper.
-LookoutTraderNobles gained Copper.
-LookoutTraderNobles gained Copper.
-LookoutTraderNobles gained Copper.
-LookoutTraderNobles gained Copper.
-LookoutTraderNobles gained Copper.
-LookoutTraderNobles gained Copper.
-LookoutTraderNobles gained Estate.
-LookoutTraderNobles gained Estate.
-LookoutTraderNobles gained Estate.
-BigMoneyDoubleWitch gained Copper.
-BigMoneyDoubleWitch gained Copper.
-BigMoneyDoubleWitch gained Copper.
-BigMoneyDoubleWitch gained Copper.
-BigMoneyDoubleWitch gained Copper.
-BigMoneyDoubleWitch gained Copper.
-BigMoneyDoubleWitch gained Copper.
-BigMoneyDoubleWitch gained Estate.
-BigMoneyDoubleWitch gained Estate.
-BigMoneyDoubleWitch gained Estate.
-LookoutTraderNobles reshuffled
-LookoutTraderNobles Drew Copper into hand.
-LookoutTraderNobles Drew Copper into hand.
-LookoutTraderNobles Drew Copper into hand.
-LookoutTraderNobles Drew Estate into hand.
-LookoutTraderNobles Drew Copper into hand.
-BigMoneyDoubleWitch reshuffled
-BigMoneyDoubleWitch Drew Estate into hand.
-BigMoneyDoubleWitch Drew Copper into hand.
-BigMoneyDoubleWitch Drew Copper into hand.
-BigMoneyDoubleWitch Drew Copper into hand.
-BigMoneyDoubleWitch Drew Estate into hand.
+Illgottengains gained Copper.
+Illgottengains gained Copper.
+Illgottengains gained Copper.
+Illgottengains gained Copper.
+Illgottengains gained Copper.
+Illgottengains gained Copper.
+Illgottengains gained Copper.
+Illgottengains gained Estate.
+Illgottengains gained Estate.
+Illgottengains gained Estate.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoney gained Estate.
+Illgottengains reshuffled
+Illgottengains Drew Copper into hand.
+Illgottengains Drew Copper into hand.
+Illgottengains Drew Copper into hand.
+Illgottengains Drew Estate into hand.
+Illgottengains Drew Copper into hand.
+BigMoney reshuffled
+BigMoney Drew Estate into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Estate into hand.
 ROUND 1
 -------------
-LookoutTraderNobles begins turn
+Illgottengains begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  LookoutTraderNobles Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 1 all together.
-  LookoutTraderNobles Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 2 all together.
-  LookoutTraderNobles Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 3 all together.
-  LookoutTraderNobles Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 4 all together.
-  LookoutTraderNobles bought Trader.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles ends turn with deck: Copper(7), Estate(3), Trader(1), 
+  Illgottengains bought Silver.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Estate.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
-BigMoneyDoubleWitch begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyDoubleWitch Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDoubleWitch bought Silver.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-LookoutTraderNobles begins turn
+Illgottengains begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  LookoutTraderNobles Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 1 all together.
-  LookoutTraderNobles Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 2 all together.
-  LookoutTraderNobles Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 3 all together.
-  LookoutTraderNobles bought Lookout.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles reshuffled
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles ends turn with deck: Copper(7), Estate(3), Lookout(1), Trader(1), 
+  Illgottengains bought Silver.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Estate.
+  Illgottengains Discarded Estate.
+  Illgottengains reshuffled
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
-BigMoneyDoubleWitch begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyDoubleWitch Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDoubleWitch bought Silver.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch reshuffled
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-LookoutTraderNobles begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  LookoutTraderNobles Played Copper.
-    +1 Coin = 1 all together.
-  LookoutTraderNobles Played Copper.
-    +1 Coin = 2 all together.
-  LookoutTraderNobles Played Copper.
-    +1 Coin = 3 all together.
-  LookoutTraderNobles bought Lookout.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Trader into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Lookout into hand.
-  LookoutTraderNobles ends turn with deck: Copper(7), Estate(3), Lookout(2), Trader(1), 
-
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyDoubleWitch Played Silver.
+Illgottengains begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  Illgottengains Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
+  Illgottengains Played Copper.
+    +1 Coin = 3 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 4 all together.
+  Illgottengains Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Copper.
+  Illgottengains bought Ill-Gotten Gains.
+    BigMoney gained Curse.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Estate.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains ends turn with deck: Copper(7), Estate(3), Ill-Gotten Gains(1), Silver(2), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyDoubleWitch bought Witch.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Silver(2), Witch(1), 
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(1), Estate(3), Gold(1), Silver(2), 
 
 ROUND 4
 -------------
-LookoutTraderNobles begins turn
-With hand: Copper,Copper,Copper,Lookout,Trader,
-  LookoutTraderNobles Played Lookout.
-    +1 Actions = 1 all together.
-    LookoutTraderNobles Revealed Copper.
-    LookoutTraderNobles Revealed Estate.
-    LookoutTraderNobles reshuffled
-    LookoutTraderNobles Revealed Copper.
-      LookoutTraderNobles trashed Copper.
-      LookoutTraderNobles Discarded Estate.
-      LookoutTraderNobles Placed Copper on top of his deck.
-  LookoutTraderNobles Played Trader.
-    LookoutTraderNobles trashed Copper.
-  LookoutTraderNobles Played Copper.
+Illgottengains begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  Illgottengains Played Copper.
     +1 Coin = 1 all together.
-  LookoutTraderNobles Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 2 all together.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Lookout.
-  LookoutTraderNobles Discarded Trader.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Lookout into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles ends turn with deck: Copper(5), Estate(3), Lookout(2), Trader(1), 
+  Illgottengains Played Copper.
+    +1 Coin = 3 all together.
+  Illgottengains bought Silver.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Estate.
+  Illgottengains Discarded Estate.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains reshuffled
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains ends turn with deck: Copper(7), Estate(3), Ill-Gotten Gains(1), Silver(3), 
 
-BigMoneyDoubleWitch begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Estate,Estate,Estate,
-  BigMoneyDoubleWitch Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch reshuffled
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Silver(2), Witch(1), 
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(1), Estate(3), Gold(1), Silver(2), 
 
 ROUND 5
 -------------
-LookoutTraderNobles begins turn
-With hand: Copper,Copper,Copper,Estate,Lookout,
-  LookoutTraderNobles Played Lookout.
-    +1 Actions = 1 all together.
-    LookoutTraderNobles Revealed Estate.
-    LookoutTraderNobles reshuffled
-    LookoutTraderNobles Revealed Lookout.
-    LookoutTraderNobles Revealed Estate.
-      LookoutTraderNobles trashed Estate.
-      LookoutTraderNobles Discarded Estate.
-      LookoutTraderNobles Placed Lookout on top of his deck.
-  LookoutTraderNobles Played Copper.
-    +1 Coin = 1 all together.
-  LookoutTraderNobles Played Copper.
-    +1 Coin = 2 all together.
-  LookoutTraderNobles Played Copper.
-    +1 Coin = 3 all together.
-  LookoutTraderNobles bought Silver.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Lookout.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Drew Lookout into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Trader into hand.
-  LookoutTraderNobles reshuffled
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles ends turn with deck: Copper(5), Estate(2), Lookout(2), Silver(1), Trader(1), 
-
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Copper,Copper,Witch,
-  BigMoneyDoubleWitch Played Witch.
-    BigMoneyDoubleWitch Drew Copper into hand.
-    BigMoneyDoubleWitch Drew Estate into hand.
-    LookoutTraderNobles gained Curse.
-      LookoutTraderNobles Revealed Trader.
-      LookoutTraderNobles gained Silver.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
+Illgottengains begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  Illgottengains Played Silver.
+    +2 Coin = 2 all together.
+  Illgottengains Played Silver.
+    +2 Coin = 4 all together.
+  Illgottengains Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleWitch bought Witch.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Silver(2), Witch(2), 
+  Illgottengains Played Copper.
+    +1 Coin = 6 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 7 all together.
+  Illgottengains bought Ill-Gotten Gains.
+    BigMoney gained Curse.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Silver.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains ends turn with deck: Copper(7), Estate(3), Ill-Gotten Gains(2), Silver(3), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(1), Silver(3), 
 
 ROUND 6
 -------------
-LookoutTraderNobles begins turn
-With hand: Copper,Copper,Copper,Lookout,Trader,
-  LookoutTraderNobles Played Lookout.
-    +1 Actions = 1 all together.
-    LookoutTraderNobles Revealed Estate.
-    LookoutTraderNobles Revealed Copper.
-    LookoutTraderNobles Revealed Lookout.
-      LookoutTraderNobles trashed Copper.
-      LookoutTraderNobles Discarded Estate.
-      LookoutTraderNobles Placed Lookout on top of his deck.
-  LookoutTraderNobles Played Trader.
-    LookoutTraderNobles trashed Copper.
-  LookoutTraderNobles Played Copper.
+Illgottengains begins turn
+With hand: Copper,Copper,Estate,Estate,Ill-Gotten Gains,
+  Illgottengains Played Copper.
     +1 Coin = 1 all together.
-  LookoutTraderNobles Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 2 all together.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Lookout.
-  LookoutTraderNobles Discarded Trader.
-  LookoutTraderNobles Drew Lookout into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles reshuffled
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles ends turn with deck: Copper(3), Estate(2), Lookout(2), Silver(2), Trader(1), 
+  Illgottengains Played Ill-Gotten Gains.
+    +1 Coin = 3 all together.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
+    +1 Coin = 4 all together.
+  Illgottengains bought Silver.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Discarded Estate.
+  Illgottengains Discarded Estate.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains reshuffled
+  Illgottengains Drew Estate into hand.
+  Illgottengains ends turn with deck: Copper(8), Estate(3), Ill-Gotten Gains(2), Silver(4), 
 
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoneyDoubleWitch Played Silver.
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDoubleWitch bought Gold.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch reshuffled
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), Witch(2), 
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(1), Silver(4), 
 
 ROUND 7
 -------------
-LookoutTraderNobles begins turn
-With hand: Copper,Estate,Estate,Lookout,Silver,
-  LookoutTraderNobles Played Lookout.
-    +1 Actions = 1 all together.
-    LookoutTraderNobles Revealed Silver.
-    LookoutTraderNobles Revealed Copper.
-    LookoutTraderNobles Revealed Lookout.
-      LookoutTraderNobles trashed Copper.
-      LookoutTraderNobles Discarded Silver.
-      LookoutTraderNobles Placed Lookout on top of his deck.
-  LookoutTraderNobles Played Silver.
+Illgottengains begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  Illgottengains Played Silver.
     +2 Coin = 2 all together.
-  LookoutTraderNobles Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 3 all together.
-  LookoutTraderNobles bought Silver.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Lookout.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Drew Lookout into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Trader into hand.
-  LookoutTraderNobles reshuffled
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles ends turn with deck: Copper(2), Estate(2), Lookout(2), Silver(3), Trader(1), 
-
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDoubleWitch bought Silver.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), Witch(2), 
+  Illgottengains bought Silver.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Estate.
+  Illgottengains Discarded Estate.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains ends turn with deck: Copper(8), Estate(3), Ill-Gotten Gains(2), Silver(5), 
+
+BigMoney begins turn
+With hand: Copper,Curse,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(2), Silver(4), 
 
 ROUND 8
 -------------
-LookoutTraderNobles begins turn
-With hand: Copper,Copper,Lookout,Silver,Trader,
-  LookoutTraderNobles Played Trader.
-    LookoutTraderNobles trashed Lookout.
-    LookoutTraderNobles gained Silver.
-    LookoutTraderNobles gained Silver.
-    LookoutTraderNobles gained Silver.
-  LookoutTraderNobles Played Silver.
+Illgottengains begins turn
+With hand: Copper,Ill-Gotten Gains,Silver,Silver,Silver,
+  Illgottengains Played Silver.
     +2 Coin = 2 all together.
-  LookoutTraderNobles Played Copper.
-    +1 Coin = 3 all together.
-  LookoutTraderNobles Played Copper.
-    +1 Coin = 4 all together.
-  LookoutTraderNobles bought Silver.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Trader.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Lookout into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles ends turn with deck: Copper(2), Estate(2), Lookout(1), Silver(7), Trader(1), 
+  Illgottengains Played Silver.
+    +2 Coin = 4 all together.
+  Illgottengains Played Silver.
+    +2 Coin = 6 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 7 all together.
+  Illgottengains Played Ill-Gotten Gains.
+    +1 Coin = 8 all together.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
+    +1 Coin = 9 all together.
+  Illgottengains bought Province.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains ends turn with deck: Copper(9), Estate(3), Ill-Gotten Gains(2), Province(1), Silver(5), 
 
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyDoubleWitch Played Silver.
+BigMoney begins turn
+With hand: Copper,Copper,Curse,Estate,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDoubleWitch bought Silver.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Gold into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), Witch(2), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(2), Silver(5), 
 
 ROUND 9
 -------------
-LookoutTraderNobles begins turn
-With hand: Estate,Estate,Lookout,Silver,Silver,
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 4 all together.
-  LookoutTraderNobles bought Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Discarded Lookout.
-  LookoutTraderNobles reshuffled
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles ends turn with deck: Copper(2), Estate(2), Lookout(1), Silver(8), Trader(1), 
+Illgottengains begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  Illgottengains Played Copper.
+    +1 Coin = 1 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 2 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 3 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 4 all together.
+  Illgottengains bought Silver.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Estate.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains reshuffled
+  Illgottengains Drew Estate into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains ends turn with deck: Copper(9), Estate(3), Ill-Gotten Gains(2), Province(1), Silver(6), 
 
-BigMoneyDoubleWitch begins turn
-With hand: Estate,Gold,Silver,Witch,Witch,
-  BigMoneyDoubleWitch Played Witch.
-    BigMoneyDoubleWitch reshuffled
-    BigMoneyDoubleWitch Drew Copper into hand.
-    BigMoneyDoubleWitch Drew Copper into hand.
-    LookoutTraderNobles gained Curse.
-  BigMoneyDoubleWitch Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDoubleWitch bought Gold.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Gold.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), Witch(2), 
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(2), Silver(6), 
 
 ROUND 10
 -------------
-LookoutTraderNobles begins turn
-With hand: Copper,Estate,Silver,Silver,Silver,
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 4 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 6 all together.
-  LookoutTraderNobles Played Copper.
-    +1 Coin = 7 all together.
-  LookoutTraderNobles bought Nobles.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Lookout into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles ends turn with deck: Copper(2), Curse(1), Estate(2), Lookout(1), Nobles(1), Silver(8), Trader(1), 
-
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
+Illgottengains begins turn
+With hand: Copper,Copper,Copper,Estate,Ill-Gotten Gains,
+  Illgottengains Played Copper.
+    +1 Coin = 1 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 2 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 3 all together.
+  Illgottengains Played Ill-Gotten Gains.
+    +1 Coin = 4 all together.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDoubleWitch bought Gold.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(4), Witch(2), 
+  Illgottengains bought Ill-Gotten Gains.
+    BigMoney gained Curse.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Discarded Estate.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains ends turn with deck: Copper(10), Estate(3), Ill-Gotten Gains(3), Province(1), Silver(6), 
+
+BigMoney begins turn
+With hand: Copper,Estate,Silver,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Silver.
+    +2 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(3), Silver(6), 
 
 ROUND 11
 -------------
-LookoutTraderNobles begins turn
-With hand: Copper,Lookout,Silver,Silver,Silver,
-  LookoutTraderNobles Played Silver.
+Illgottengains begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  Illgottengains Played Silver.
     +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
+  Illgottengains Played Silver.
     +2 Coin = 4 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 6 all together.
-  LookoutTraderNobles Played Copper.
-    +1 Coin = 7 all together.
-  LookoutTraderNobles bought Nobles.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Lookout.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Trader into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles reshuffled
-  LookoutTraderNobles Drew Curse into hand.
-  LookoutTraderNobles ends turn with deck: Copper(2), Curse(1), Estate(2), Lookout(1), Nobles(2), Silver(8), Trader(1), 
-
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleWitch bought Silver.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch reshuffled
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), Witch(2), 
+  Illgottengains Played Copper.
+    +1 Coin = 6 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 7 all together.
+  Illgottengains bought Ill-Gotten Gains.
+    BigMoney gained Curse.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Silver.
+  Illgottengains Drew Province into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains ends turn with deck: Copper(10), Estate(3), Ill-Gotten Gains(4), Province(1), Silver(6), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Curse,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(4), Estate(3), Gold(4), Silver(6), 
 
 ROUND 12
 -------------
-LookoutTraderNobles begins turn
-With hand: Curse,Estate,Silver,Silver,Trader,
-  LookoutTraderNobles Played Trader.
-    LookoutTraderNobles trashed Curse.
-  LookoutTraderNobles Played Silver.
+Illgottengains begins turn
+With hand: Estate,Province,Silver,Silver,Silver,
+  Illgottengains Played Silver.
     +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
+  Illgottengains Played Silver.
     +2 Coin = 4 all together.
-  LookoutTraderNobles bought Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Trader.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Drew Nobles into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles ends turn with deck: Copper(2), Estate(2), Lookout(1), Nobles(2), Silver(9), Trader(1), 
+  Illgottengains Played Silver.
+    +2 Coin = 6 all together.
+  Illgottengains bought Ill-Gotten Gains.
+    BigMoney gained Curse.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Estate.
+  Illgottengains Discarded Province.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains ends turn with deck: Copper(10), Estate(3), Ill-Gotten Gains(5), Province(1), Silver(6), 
 
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoneyDoubleWitch Played Silver.
+BigMoney begins turn
+With hand: Curse,Estate,Silver,Silver,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDoubleWitch bought Silver.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(6), Witch(2), 
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Silver.
+    +2 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(5), Estate(3), Gold(5), Silver(6), 
 
 ROUND 13
 -------------
-LookoutTraderNobles begins turn
-With hand: Copper,Nobles,Silver,Silver,Silver,
-  LookoutTraderNobles Played Nobles.
-    LookoutTraderNobles Drew Lookout into hand.
-    LookoutTraderNobles Drew Copper into hand.
-    LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Played Silver.
+Illgottengains begins turn
+With hand: Copper,Copper,Copper,Ill-Gotten Gains,Silver,
+  Illgottengains Played Silver.
     +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 4 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 6 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 8 all together.
-  LookoutTraderNobles Played Copper.
-    +1 Coin = 9 all together.
-  LookoutTraderNobles Played Copper.
-    +1 Coin = 10 all together.
-  LookoutTraderNobles bought Province.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Nobles.
-  LookoutTraderNobles Discarded Lookout.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Nobles into hand.
-  LookoutTraderNobles reshuffled
-  LookoutTraderNobles Drew Trader into hand.
-  LookoutTraderNobles ends turn with deck: Copper(2), Estate(2), Lookout(1), Nobles(2), Province(1), Silver(9), Trader(1), 
-
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Estate,Silver,Silver,Witch,
-  BigMoneyDoubleWitch Played Witch.
-    BigMoneyDoubleWitch Drew Copper into hand.
-    BigMoneyDoubleWitch Drew Silver into hand.
-    LookoutTraderNobles gained Curse.
-      LookoutTraderNobles Revealed Trader.
-      LookoutTraderNobles gained Silver.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyDoubleWitch Played Copper.
+  Illgottengains Played Copper.
+    +1 Coin = 3 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 4 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 5 all together.
+  Illgottengains Played Ill-Gotten Gains.
+    +1 Coin = 6 all together.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyDoubleWitch bought Province.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Gold into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Gold into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(6), Witch(2), 
+  Illgottengains bought Ill-Gotten Gains.
+    BigMoney gained Curse.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Drew Estate into hand.
+  Illgottengains reshuffled
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains ends turn with deck: Copper(11), Estate(3), Ill-Gotten Gains(6), Province(1), Silver(6), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(6), Estate(3), Gold(6), Silver(6), 
 
 ROUND 14
 -------------
-LookoutTraderNobles begins turn
-With hand: Estate,Nobles,Silver,Silver,Trader,
-  LookoutTraderNobles Played Nobles.
-    LookoutTraderNobles Drew Silver into hand.
-    LookoutTraderNobles Drew Silver into hand.
-    LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Played Silver.
+Illgottengains begins turn
+With hand: Copper,Estate,Ill-Gotten Gains,Silver,Silver,
+  Illgottengains Played Silver.
     +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
+  Illgottengains Played Silver.
     +2 Coin = 4 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 6 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 8 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 10 all together.
-  LookoutTraderNobles bought Province.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Nobles.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Discarded Trader.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Nobles into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles ends turn with deck: Copper(2), Estate(2), Lookout(1), Nobles(2), Province(2), Silver(10), Trader(1), 
+  Illgottengains Played Copper.
+    +1 Coin = 5 all together.
+  Illgottengains Played Ill-Gotten Gains.
+    +1 Coin = 6 all together.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
+    +1 Coin = 7 all together.
+  Illgottengains bought Ill-Gotten Gains.
+    BigMoney gained Curse.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Discarded Estate.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains ends turn with deck: Copper(12), Estate(3), Ill-Gotten Gains(7), Province(1), Silver(6), 
 
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Gold,Gold,Silver,
-  BigMoneyDoubleWitch Played Gold.
+BigMoney begins turn
+With hand: Copper,Curse,Curse,Gold,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyDoubleWitch bought Province.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Gold.
-  BigMoneyDoubleWitch Discarded Gold.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch Drew Gold into hand.
-  BigMoneyDoubleWitch reshuffled
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Province into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(3), Province(2), Silver(6), Witch(2), 
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Curse.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(7), Estate(3), Gold(7), Silver(6), 
 
 ROUND 15
 -------------
-LookoutTraderNobles begins turn
-With hand: Copper,Copper,Nobles,Silver,Silver,
-  LookoutTraderNobles Played Nobles.
-    LookoutTraderNobles Drew Silver into hand.
-    LookoutTraderNobles Drew Estate into hand.
-    LookoutTraderNobles Drew Province into hand.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 4 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 6 all together.
-  LookoutTraderNobles Played Copper.
-    +1 Coin = 7 all together.
-  LookoutTraderNobles Played Copper.
-    +1 Coin = 8 all together.
-  LookoutTraderNobles bought Province.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Nobles.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Discarded Province.
-  LookoutTraderNobles Drew Lookout into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles reshuffled
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Province into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles ends turn with deck: Copper(2), Estate(2), Lookout(1), Nobles(2), Province(3), Silver(10), Trader(1), 
-
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Gold,Province,Witch,
-  BigMoneyDoubleWitch Played Witch.
-    BigMoneyDoubleWitch Drew Estate into hand.
-    BigMoneyDoubleWitch Drew Copper into hand.
-    LookoutTraderNobles gained Curse.
-  BigMoneyDoubleWitch Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Copper.
+Illgottengains begins turn
+With hand: Copper,Copper,Copper,Ill-Gotten Gains,Ill-Gotten Gains,
+  Illgottengains Played Copper.
+    +1 Coin = 1 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 2 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 3 all together.
+  Illgottengains Played Ill-Gotten Gains.
     +1 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Copper.
+  Illgottengains Played Ill-Gotten Gains.
     +1 Coin = 6 all together.
-  BigMoneyDoubleWitch bought Duchy.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Gold.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Province.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(3), Province(2), Silver(6), Witch(2), 
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
+    +1 Coin = 7 all together.
+  Illgottengains bought Ill-Gotten Gains.
+    BigMoney gained Curse.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains ends turn with deck: Copper(14), Estate(3), Ill-Gotten Gains(8), Province(1), Silver(6), 
+
+BigMoney begins turn
+With hand: Copper,Curse,Estate,Gold,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(8), Estate(3), Gold(8), Silver(6), 
 
 ROUND 16
 -------------
-LookoutTraderNobles begins turn
-With hand: Estate,Lookout,Province,Silver,Silver,
-  LookoutTraderNobles Played Silver.
+Illgottengains begins turn
+With hand: Copper,Copper,Ill-Gotten Gains,Silver,Silver,
+  Illgottengains Played Silver.
     +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
+  Illgottengains Played Silver.
     +2 Coin = 4 all together.
-  LookoutTraderNobles bought Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Discarded Province.
-  LookoutTraderNobles Discarded Lookout.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Nobles into hand.
-  LookoutTraderNobles Drew Province into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles ends turn with deck: Copper(2), Curse(1), Estate(2), Lookout(1), Nobles(2), Province(3), Silver(11), Trader(1), 
-
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyDoubleWitch bought Duchy.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Province into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(3), Province(2), Silver(6), Witch(2), 
+  Illgottengains Played Ill-Gotten Gains.
+    +1 Coin = 7 all together.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
+    +1 Coin = 8 all together.
+  Illgottengains bought Province.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains ends turn with deck: Copper(15), Estate(3), Ill-Gotten Gains(8), Province(2), Silver(6), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(8), Estate(3), Gold(9), Silver(6), 
 
 ROUND 17
 -------------
-LookoutTraderNobles begins turn
-With hand: Estate,Nobles,Province,Silver,Silver,
-  LookoutTraderNobles Played Nobles.
-    LookoutTraderNobles Drew Province into hand.
-    LookoutTraderNobles Drew Silver into hand.
-    LookoutTraderNobles Drew Nobles into hand.
-  LookoutTraderNobles Played Silver.
+Illgottengains begins turn
+With hand: Copper,Estate,Estate,Silver,Silver,
+  Illgottengains Played Silver.
     +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
+  Illgottengains Played Silver.
     +2 Coin = 4 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 6 all together.
-  LookoutTraderNobles bought Duchy.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Nobles.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Discarded Province.
-  LookoutTraderNobles Discarded Province.
-  LookoutTraderNobles Discarded Nobles.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Trader into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles ends turn with deck: Copper(2), Curse(1), Duchy(1), Estate(2), Lookout(1), Nobles(2), Province(3), Silver(11), Trader(1), 
+  Illgottengains Played Copper.
+    +1 Coin = 5 all together.
+  Illgottengains bought Ill-Gotten Gains.
+    BigMoney gained Curse.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Estate.
+  Illgottengains Discarded Estate.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains Drew Province into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains ends turn with deck: Copper(15), Estate(3), Ill-Gotten Gains(9), Province(2), Silver(6), 
 
-BigMoneyDoubleWitch begins turn
-With hand: Estate,Province,Silver,Silver,Silver,
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyDoubleWitch bought Duchy.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Province.
-  BigMoneyDoubleWitch Drew Gold into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Gold into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Duchy(3), Estate(3), Gold(3), Province(2), Silver(6), Witch(2), 
+BigMoney begins turn
+With hand: Curse,Curse,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(9), Estate(3), Gold(9), Silver(7), 
 
 ROUND 18
 -------------
-LookoutTraderNobles begins turn
-With hand: Copper,Copper,Silver,Silver,Trader,
-  LookoutTraderNobles Played Trader.
-    LookoutTraderNobles trashed Copper.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 4 all together.
-  LookoutTraderNobles Played Copper.
+Illgottengains begins turn
+With hand: Copper,Copper,Copper,Ill-Gotten Gains,Province,
+  Illgottengains Played Copper.
+    +1 Coin = 1 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 2 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 3 all together.
+  Illgottengains Played Ill-Gotten Gains.
+    +1 Coin = 4 all together.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
     +1 Coin = 5 all together.
-  LookoutTraderNobles bought Duchy.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Trader.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles reshuffled
-  LookoutTraderNobles Drew Province into hand.
-  LookoutTraderNobles Drew Duchy into hand.
-  LookoutTraderNobles ends turn with deck: Copper(1), Curse(1), Duchy(2), Estate(2), Lookout(1), Nobles(2), Province(3), Silver(11), Trader(1), 
+  Illgottengains bought Ill-Gotten Gains.
+    BigMoney gained Curse.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Discarded Province.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains reshuffled
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains Drew Province into hand.
+  Illgottengains ends turn with deck: Copper(16), Estate(3), Ill-Gotten Gains(10), Province(2), Silver(6), 
 
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Gold,Gold,Witch,
-  BigMoneyDoubleWitch Played Witch.
-    BigMoneyDoubleWitch Drew Silver into hand.
-    BigMoneyDoubleWitch reshuffled
-    BigMoneyDoubleWitch Drew Duchy into hand.
-    LookoutTraderNobles gained Curse.
-  BigMoneyDoubleWitch Played Gold.
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyDoubleWitch bought Province.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Gold.
-  BigMoneyDoubleWitch Discarded Gold.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Discarded Duchy.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Province into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Gold into hand.
-  BigMoneyDoubleWitch Drew Province into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Duchy(3), Estate(3), Gold(3), Province(3), Silver(6), Witch(2), 
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(9), Province(1), Silver(7), 
 
 ROUND 19
 -------------
-LookoutTraderNobles begins turn
-With hand: Duchy,Province,Silver,Silver,Silver,
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 4 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 6 all together.
-  LookoutTraderNobles bought Duchy.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Duchy.
-  LookoutTraderNobles Discarded Province.
-  LookoutTraderNobles Drew Trader into hand.
-  LookoutTraderNobles Drew Duchy into hand.
-  LookoutTraderNobles Drew Province into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles ends turn with deck: Copper(1), Curse(2), Duchy(3), Estate(2), Lookout(1), Nobles(2), Province(3), Silver(11), Trader(1), 
-
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Gold,Province,Province,
-  BigMoneyDoubleWitch Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Copper.
+Illgottengains begins turn
+With hand: Copper,Copper,Estate,Ill-Gotten Gains,Province,
+  Illgottengains Played Copper.
+    +1 Coin = 1 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 2 all together.
+  Illgottengains Played Ill-Gotten Gains.
+    +1 Coin = 3 all together.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDoubleWitch bought Duchy.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Gold.
-  BigMoneyDoubleWitch Discarded Province.
-  BigMoneyDoubleWitch Discarded Province.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Duchy(4), Estate(3), Gold(3), Province(3), Silver(6), Witch(2), 
+  Illgottengains bought Silver.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Discarded Estate.
+  Illgottengains Discarded Province.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains ends turn with deck: Copper(17), Estate(3), Ill-Gotten Gains(10), Province(2), Silver(7), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Curse,Gold,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(9), Province(2), Silver(7), 
 
 ROUND 20
 -------------
-LookoutTraderNobles begins turn
-With hand: Duchy,Province,Silver,Silver,Trader,
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 4 all together.
-  LookoutTraderNobles bought Estate.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Duchy.
-  LookoutTraderNobles Discarded Province.
-  LookoutTraderNobles Discarded Trader.
-  LookoutTraderNobles Drew Lookout into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles Drew Copper into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles ends turn with deck: Copper(1), Curse(2), Duchy(3), Estate(3), Lookout(1), Nobles(2), Province(3), Silver(11), Trader(1), 
-
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Estate,Estate,Silver,Witch,
-  BigMoneyDoubleWitch Played Witch.
-    BigMoneyDoubleWitch Drew Copper into hand.
-    BigMoneyDoubleWitch Drew Duchy into hand.
-    LookoutTraderNobles gained Curse.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
+Illgottengains begins turn
+With hand: Copper,Copper,Estate,Ill-Gotten Gains,Ill-Gotten Gains,
+  Illgottengains Played Copper.
+    +1 Coin = 1 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 2 all together.
+  Illgottengains Played Ill-Gotten Gains.
     +1 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Copper.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDoubleWitch bought Estate.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Duchy.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Duchy into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Duchy(4), Estate(4), Gold(3), Province(3), Silver(6), Witch(2), 
+  Illgottengains Played Ill-Gotten Gains.
+    +1 Coin = 5 all together.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
+    +1 Coin = 6 all together.
+  Illgottengains bought Duchy.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Discarded Estate.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains ends turn with deck: Copper(19), Duchy(1), Estate(3), Ill-Gotten Gains(10), Province(2), Silver(7), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Curse,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(9), Province(2), Silver(8), 
 
 ROUND 21
 -------------
-LookoutTraderNobles begins turn
-With hand: Copper,Estate,Estate,Lookout,Silver,
-  LookoutTraderNobles Played Silver.
+Illgottengains begins turn
+With hand: Copper,Copper,Ill-Gotten Gains,Ill-Gotten Gains,Silver,
+  Illgottengains Played Silver.
     +2 Coin = 2 all together.
-  LookoutTraderNobles Played Copper.
+  Illgottengains Played Copper.
     +1 Coin = 3 all together.
-  LookoutTraderNobles bought Estate.
-  LookoutTraderNobles Discarded Copper.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Discarded Lookout.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Nobles into hand.
-  LookoutTraderNobles ends turn with deck: Copper(1), Curse(3), Duchy(3), Estate(4), Lookout(1), Nobles(2), Province(3), Silver(11), Trader(1), 
-
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Duchy,Silver,Silver,Silver,
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyDoubleWitch Played Copper.
+  Illgottengains Played Copper.
+    +1 Coin = 4 all together.
+  Illgottengains Played Ill-Gotten Gains.
+    +1 Coin = 5 all together.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
+    +1 Coin = 6 all together.
+  Illgottengains Played Ill-Gotten Gains.
     +1 Coin = 7 all together.
-  BigMoneyDoubleWitch bought Duchy.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Duchy.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch reshuffled
-  BigMoneyDoubleWitch Drew Duchy into hand.
-  BigMoneyDoubleWitch Drew Province into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Duchy(5), Estate(4), Gold(3), Province(3), Silver(6), Witch(2), 
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
+    +1 Coin = 8 all together.
+  Illgottengains bought Province.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Estate into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains ends turn with deck: Copper(21), Duchy(1), Estate(3), Ill-Gotten Gains(10), Province(3), Silver(7), 
+
+BigMoney begins turn
+With hand: Copper,Curse,Gold,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(9), Province(3), Silver(8), 
 
 ROUND 22
 -------------
-LookoutTraderNobles begins turn
-With hand: Nobles,Silver,Silver,Silver,Silver,
-  LookoutTraderNobles Played Nobles.
-    LookoutTraderNobles Drew Nobles into hand.
-    LookoutTraderNobles Drew Curse into hand.
-    LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Played Silver.
+Illgottengains begins turn
+With hand: Copper,Estate,Ill-Gotten Gains,Ill-Gotten Gains,Silver,
+  Illgottengains Played Silver.
     +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 4 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 6 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 8 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 10 all together.
-  LookoutTraderNobles bought Province.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Nobles.
-  LookoutTraderNobles Discarded Curse.
-  LookoutTraderNobles Discarded Nobles.
-  LookoutTraderNobles Drew Province into hand.
-  LookoutTraderNobles reshuffled
-  LookoutTraderNobles Drew Province into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles Drew Duchy into hand.
-  LookoutTraderNobles ends turn with deck: Copper(1), Curse(3), Duchy(3), Estate(4), Lookout(1), Nobles(2), Province(4), Silver(11), Trader(1), 
+  Illgottengains Played Copper.
+    +1 Coin = 3 all together.
+  Illgottengains Played Ill-Gotten Gains.
+    +1 Coin = 4 all together.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
+    +1 Coin = 5 all together.
+  Illgottengains Played Ill-Gotten Gains.
+    +1 Coin = 6 all together.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
+    +1 Coin = 7 all together.
+  Illgottengains bought Duchy.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Discarded Estate.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains Drew Province into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains ends turn with deck: Copper(23), Duchy(2), Estate(3), Ill-Gotten Gains(10), Province(3), Silver(7), 
 
-BigMoneyDoubleWitch begins turn
-With hand: Duchy,Estate,Province,Silver,Silver,
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleWitch bought Estate.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Duchy.
-  BigMoneyDoubleWitch Discarded Province.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Duchy into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Duchy(5), Estate(5), Gold(3), Province(3), Silver(6), Witch(2), 
+BigMoney begins turn
+With hand: Curse,Estate,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(10), Duchy(1), Estate(3), Gold(9), Province(3), Silver(8), 
 
 ROUND 23
 -------------
-LookoutTraderNobles begins turn
-With hand: Duchy,Estate,Province,Province,Silver,
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 2 all together.
-  LookoutTraderNobles bought Estate.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Discarded Duchy.
-  LookoutTraderNobles Discarded Province.
-  LookoutTraderNobles Discarded Province.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Curse into hand.
-  LookoutTraderNobles Drew Duchy into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles Drew Nobles into hand.
-  LookoutTraderNobles ends turn with deck: Copper(1), Curse(3), Duchy(3), Estate(5), Lookout(1), Nobles(2), Province(4), Silver(11), Trader(1), 
-
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Duchy,Silver,Witch,
-  BigMoneyDoubleWitch Played Witch.
-    BigMoneyDoubleWitch Drew Copper into hand.
-    BigMoneyDoubleWitch Drew Copper into hand.
-    LookoutTraderNobles gained Curse.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
+Illgottengains begins turn
+With hand: Copper,Copper,Copper,Ill-Gotten Gains,Province,
+  Illgottengains Played Copper.
+    +1 Coin = 1 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 2 all together.
+  Illgottengains Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Copper.
+  Illgottengains Played Ill-Gotten Gains.
     +1 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDoubleWitch bought Estate.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Discarded Duchy.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Duchy into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Province into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Duchy(5), Estate(6), Gold(3), Province(3), Silver(6), Witch(2), 
+  Illgottengains bought Duchy.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Discarded Province.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Ill-Gotten Gains into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains ends turn with deck: Copper(24), Duchy(3), Estate(3), Ill-Gotten Gains(10), Province(3), Silver(7), 
+
+BigMoney begins turn
+With hand: Curse,Curse,Curse,Curse,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney bought Estate.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Curse.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(10), Duchy(1), Estate(4), Gold(9), Province(3), Silver(8), 
 
 ROUND 24
 -------------
-LookoutTraderNobles begins turn
-With hand: Curse,Duchy,Estate,Nobles,Silver,
-  LookoutTraderNobles Played Nobles.
-    LookoutTraderNobles Drew Silver into hand.
-    LookoutTraderNobles Drew Lookout into hand.
-    LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Played Silver.
+Illgottengains begins turn
+With hand: Copper,Copper,Ill-Gotten Gains,Ill-Gotten Gains,Silver,
+  Illgottengains Played Silver.
     +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 4 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 6 all together.
-  LookoutTraderNobles bought Estate.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Nobles.
-  LookoutTraderNobles Discarded Curse.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Discarded Duchy.
-  LookoutTraderNobles Discarded Lookout.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Estate into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles ends turn with deck: Copper(1), Curse(4), Duchy(3), Estate(6), Lookout(1), Nobles(2), Province(4), Silver(11), Trader(1), 
+  Illgottengains Played Copper.
+    +1 Coin = 3 all together.
+  Illgottengains Played Copper.
+    +1 Coin = 4 all together.
+  Illgottengains Played Ill-Gotten Gains.
+    +1 Coin = 5 all together.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
+    +1 Coin = 6 all together.
+  Illgottengains Played Ill-Gotten Gains.
+    +1 Coin = 7 all together.
+    Illgottengains gained Copper.
+      ... and placed card in hand
+  Illgottengains Played Copper.
+    +1 Coin = 8 all together.
+  Illgottengains bought Province.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Copper.
+  Illgottengains Discarded Silver.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Discarded Ill-Gotten Gains.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Silver into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains Drew Copper into hand.
+  Illgottengains ends turn with deck: Copper(26), Duchy(3), Estate(3), Ill-Gotten Gains(10), Province(4), Silver(7), 
 
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Duchy,Estate,Estate,Province,
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Duchy.
-  BigMoneyDoubleWitch Discarded Province.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Duchy into hand.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Duchy(5), Estate(6), Gold(3), Province(3), Silver(6), Witch(2), 
+BigMoney begins turn
+With hand: Copper,Curse,Gold,Gold,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Gold.
+    +3 Coin = 9 all together.
+  BigMoney Played Copper.
+    +1 Coin = 10 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Province into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(10), Duchy(1), Estate(4), Gold(9), Province(4), Silver(8), 
 
-ROUND 25
--------------
-LookoutTraderNobles begins turn
-With hand: Estate,Silver,Silver,Silver,Silver,
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 2 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 4 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 6 all together.
-  LookoutTraderNobles Played Silver.
-    +2 Coin = 8 all together.
-  LookoutTraderNobles bought Province.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Silver.
-  LookoutTraderNobles Discarded Estate.
-  LookoutTraderNobles Drew Province into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Silver into hand.
-  LookoutTraderNobles Drew Nobles into hand.
-  LookoutTraderNobles Drew Duchy into hand.
-  LookoutTraderNobles ends turn with deck: Copper(1), Curse(4), Duchy(3), Estate(6), Lookout(1), Nobles(2), Province(5), Silver(11), Trader(1), 
+Game ended in 24 turns.
+Illgottengains Won!
+Illgottengains total score: 36
+  Copper(26), Duchy(3), Estate(3), Ill-Gotten Gains(10), Province(4), Silver(7), 
+BigMoney total score: 21
+  Copper(7), Curse(10), Duchy(1), Estate(4), Gold(9), Province(4), Silver(8), 
+Trash contains: 
 
-Game ended in 25 turns.
-LookoutTraderNobles Won!
-LookoutTraderNobles total score: 45
-  Copper(1), Curse(4), Duchy(3), Estate(6), Lookout(1), Nobles(2), Province(5), Silver(11), Trader(1), 
-BigMoneyDoubleWitch total score: 39
-  Copper(7), Duchy(5), Estate(6), Gold(3), Province(3), Silver(6), Witch(2), 
-Trash contains: Copper(6), Curse(1), Estate(1), Lookout(1), 
-
-LookoutTraderNobles GainSequence is:
-  Trader, Lookout, Lookout, Silver, Curse, 
-  Silver, Silver, Silver, Silver, Silver, 
-  Silver, Silver, Curse, Nobles, Nobles, 
-  Silver, Province, Curse, Silver, Province, 
-  Province, Curse, Silver, Duchy, Duchy, 
-  Curse, Duchy, Estate, Curse, Estate, 
-  Province, Estate, Curse, Estate, Province, 
-
-BigMoneyDoubleWitch GainSequence is:
-  Silver, Silver, Witch, Witch, Gold, 
-  Silver, Silver, Gold, Gold, Silver, 
-  Silver, Province, Province, Duchy, Duchy, 
-  Duchy, Province, Duchy, Estate, Duchy, 
-  Estate, Estate, 
+Illgottengains GainSequence is:
+  Silver, Silver, Ill-Gotten Gains, Silver, Ill-Gotten Gains, 
+  Copper, Silver, Silver, Copper, Province, 
+  Silver, Copper, Ill-Gotten Gains, Ill-Gotten Gains, Ill-Gotten Gains, 
+  Copper, Ill-Gotten Gains, Copper, Ill-Gotten Gains, Copper, 
+  Copper, Ill-Gotten Gains, Copper, Province, Ill-Gotten Gains, 
+  Copper, Ill-Gotten Gains, Copper, Silver, Copper, 
+  Copper, Duchy, Copper, Copper, Province, 
+  Copper, Copper, Duchy, Copper, Duchy, 
+  Copper, Copper, Province, 
+BigMoney GainSequence is:
+  Silver, Silver, Curse, Gold, Curse, 
+  Silver, Silver, Gold, Silver, Silver, 
+  Curse, Gold, Curse, Gold, Curse, 
+  Gold, Curse, Gold, Curse, Gold, 
+  Curse, Gold, Gold, Curse, Silver, 
+  Curse, Province, Province, Silver, Province, 
+  Duchy, Estate, Province, 

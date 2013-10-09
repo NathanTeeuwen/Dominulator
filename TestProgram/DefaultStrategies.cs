@@ -10,138 +10,6 @@ namespace Program
 {
     public static partial class Strategies
     {
-        private enum RelativeAmount
-        {            
-            LessThan,
-            LessThanEqual,
-            GreaterThan,
-            GreaterThanEqual,
-            Equal
-        }        
-
-        private static GameStatePredicate CountAllOwned<T>(RelativeAmount relativeAmount, int amount)
-            where T: Card, new()
-        {
-            switch (relativeAmount)
-            {
-                case RelativeAmount.LessThan:          return delegate(GameState gameState) { return CountAllOwned<T>(gameState) < amount; };
-                case RelativeAmount.GreaterThan:       return delegate(GameState gameState) { return CountAllOwned<T>(gameState) > amount; };
-                case RelativeAmount.LessThanEqual:     return delegate(GameState gameState) { return CountAllOwned<T>(gameState) <= amount; };
-                case RelativeAmount.GreaterThanEqual:  return delegate(GameState gameState) { return CountAllOwned<T>(gameState) >= amount; };
-                case RelativeAmount.Equal:             return delegate(GameState gameState) { return CountAllOwned<T>(gameState) == amount; };
-                default: throw new System.Exception();
-            }            
-        }
-
-        private static int CountInDeck<T>(GameState gameState)
-            where T : Card, new()
-        {
-            return gameState.players.CurrentPlayer.CardsInDeck.CountOf(Card.Type<T>());
-        }
-
-        private static int CountInDeckAndDiscard<T>(GameState gameState)
-            where T : Card, new()
-        {
-            var player = gameState.players.CurrentPlayer;
-            return player.CardsInDeck.CountOf<T>() + player.Discard.CountOf<T>();
-        }
-
-        private static int CountMightDraw<T>(GameState gameState, int maxCount)
-            where T: Card, new()
-        {
-            if (gameState.players.CurrentPlayer.CardsInDeck.Count() >= maxCount)
-                return CountInDeck<T>(gameState);
-            else
-                return CountInDeckAndDiscard<T>(gameState);            
-        }
-
-        public static bool CardBeingPlayedIs<T>(GameState gameState)
-                where T : Card, new()
-        {
-            var cardBeingPlayed = gameState.players.CurrentPlayer.CurrentCardBeingPlayed;
-            return cardBeingPlayed != null && cardBeingPlayed.Is<T>();
-        }
-
-        public static int CostOfCard<T>(GameState gameState)
-            where T : Card, new()
-        {
-            return Card.Type<T>().CurrentCoinCost(gameState.players.CurrentPlayer);
-        }        
-
-        public static int CountAllOwned<T>(GameState gameState)
-            where T : Card, new()
-        {
-            return CountAllOwned(Card.Type<T>(), gameState);
-        }
-
-        public static int CountAllOwned(Card cardType, GameState gameState)
-        {
-            return gameState.players.CurrentPlayer.AllOwnedCards.CountOf(cardType);
-        }
-
-        public static int CountInHand(Card cardType, GameState gameState)
-        {
-            return gameState.players.CurrentPlayer.Hand.CountOf(cardType);
-        }
-
-        public static int CountInHand<T>(GameState gameState)
-            where T : Card, new()
-        {
-            return CountInHand(Card.Type<T>(), gameState);
-        }
-
-        public static int CountOfPile<T>(GameState gameState)
-            where T: Card, new()
-        {
-            return CountOfPile(Card.Type<T>(), gameState);
-        }
-
-        public static int CountOfPile(Card cardType, GameState gameState)
-        {
-            return gameState.GetPile(cardType).Count;
-        }
-
-        private static int CountAllOwnedMatching(ICardPicker matchingCards, GameState gameState)
-        {            
-            return gameState.players.CurrentPlayer.AllOwnedCards.CountWhere(
-                card => matchingCards.GetPreferredCard(gameState, testCard => testCard.Is(card)) != null);            
-        }
-
-        private static int PlayersPointLead(GameState gameState)
-        {
-            return gameState.players.CurrentPlayer.TotalScore() - gameState.players.OtherPlayers.First().TotalScore();
-        }
-
-        private static GameStatePredicate HasCardInHand<T>()
-            where T: Card, new()
-        {
-            return delegate(GameState gameState)
-            {
-                return HasCardInHand<T>(gameState);                
-            };            
-        }
-
-        private static bool HasCardInHand<T>(GameState gameState)
-            where T: Card, new()
-        {
-            return gameState.players.CurrentPlayer.Hand.HasCard<T>();
-        }
-
-        internal static Card WhichCardFromInHand(ICardPicker matchingCards, GameState gameState)
-        {
-            return matchingCards.GetPreferredCard(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card));
-        }        
-
-        private static bool HasCardFromInHand(ICardPicker matchingCards, GameState gameState)
-        {
-            return WhichCardFromInHand(matchingCards, gameState) != null;
-        }
-      
-        private static int CountInHandFrom(ICardPicker matchingCards, GameState gameState)
-        {
-            return gameState.players.CurrentPlayer.Hand.CountWhere( card => matchingCards.GetPreferredCard(gameState, current => current.Is(card)) != null);            
-        }
-
         public static class Default
         {
             public static CardPickByPriority EmptyPickOrder()
@@ -151,13 +19,13 @@ namespace Program
 
             public static ICardPicker ActionPlayOrder(ICardPicker purchaseOrder)
             {
-                return new CardPickFromWhatsInHand( new SortCardByDefaultActionOrder(purchaseOrder));
+                return new CardPickFromWhatsInHand(new SortCardByDefaultActionOrder(purchaseOrder));
             }
 
             private class CardPickFromWhatsInHand
                 : ICardPicker
             {
-                private readonly IComparerFactory comparerFactory;                
+                private readonly IComparerFactory comparerFactory;
 
                 public CardPickFromWhatsInHand(IComparerFactory comparerFactory)
                 {
@@ -194,9 +62,9 @@ namespace Program
 
                     return cardToPlay;
                 }
-                
+
                 public IEnumerable<Card> GetNeededCards()
-                {                    
+                {
                     yield break;
                 }
             }
@@ -253,7 +121,7 @@ namespace Program
                         }
 
                         return 0;
-                    }                    
+                    }
                 }
 
                 // TODO:  implement a better default choice of which Ruins to player.
@@ -308,7 +176,7 @@ namespace Program
                     CardAcceptance.For<CardTypes.Loan>(),
                     CardAcceptance.For<CardTypes.Harem>(),
                     CardAcceptance.For<CardTypes.Hoard>(),
-                    CardAcceptance.For<CardTypes.Masterpiece>(),                    
+                    CardAcceptance.For<CardTypes.Masterpiece>(),
                     CardAcceptance.For<CardTypes.PhilosophersStone>(),
                     CardAcceptance.For<CardTypes.Quarry>(),
                     CardAcceptance.For<CardTypes.Stash>(),
@@ -328,25 +196,25 @@ namespace Program
                     CardAcceptance.For<CardTypes.Duchy>(),
                     CardAcceptance.For<CardTypes.Estate>(),
                     CardAcceptance.For<CardTypes.OvergrownEstate>(),
-                    CardAcceptance.For<CardTypes.Hovel>(),                    
+                    CardAcceptance.For<CardTypes.Hovel>(),
                     CardAcceptance.For<CardTypes.Ruins>(),
                     CardAcceptance.For<CardTypes.Copper>(),
                     CardAcceptance.For<CardTypes.Curse>());
             }
 
             public static ICardPicker DefaultTrashOrder()
-            {                
+            {
                 return new CardPickByPriority(
                     CardAcceptance.For<CardTypes.Curse>(),
                     CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) == 8),
                     CardAcceptance.For<CardTypes.OvergrownEstate>(),
-                    CardAcceptance.For<CardTypes.Hovel>(),                    
-                    CardAcceptance.For<CardTypes.Copper>());                
+                    CardAcceptance.For<CardTypes.Hovel>(),
+                    CardAcceptance.For<CardTypes.Copper>());
             }
-            
+
             public static bool ShouldBuyProvinces(GameState gameState)
             {
-                return CountAllOwned<CardTypes.Gold>(gameState) > 2;                
+                return CountAllOwned<CardTypes.Gold>(gameState) > 2;
             }
 
             public static bool ShouldGainIllGottenGains(GameState gameState)
@@ -399,73 +267,5 @@ namespace Program
                 return ((double)cardCountToTrash) / totalCardsOwned > 0.4;
             }
         }
-
-        public static class DoubleWarehouse
-        {
-            // big money smithy player
-            public static PlayerAction Player(int playerNumber)
-            {
-                return new PlayerAction(
-                            "DoubleWarehouse",
-                            playerNumber,
-                            purchaseOrder: PurchaseOrder(),                            
-                            actionOrder: ActionOrder(),                            
-                            discardOrder: DiscardOrder());
-            }
-
-            static CardPickByPriority PurchaseOrder()
-            {
-                return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Gold).Count() > 2),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) < 5),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Warehouse>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Warehouse).Count() < 1),
-                           CardAcceptance.For<CardTypes.Warehouse>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Silver).Count() > 2 &&
-                                                                                gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Warehouse).Count() < 2),
-                           CardAcceptance.For<CardTypes.Silver>());
-
-            }
-
-            static CardPickByPriority ActionOrder()
-            {
-                return new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Warehouse>());
-            }
-
-            static CardPickByPriority DiscardOrder()
-            {
-                return new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Province>(),
-                    CardAcceptance.For<CardTypes.Duchy>(),
-                    CardAcceptance.For<CardTypes.Estate>(),
-                    CardAcceptance.For<CardTypes.Copper>(),
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Warehouse>(),
-                    CardAcceptance.For<CardTypes.Gold>());
-            }
-        }              
-
-        public static class BigMoneyDelayed
-        {
-            public static PlayerAction Player(int playerNumber)
-            {
-                return new PlayerAction(
-                            "BigMoneyDelayed",
-                            playerNumber,
-                            purchaseOrder: PurchaseOrder());
-            }
-
-            private static CardPickByPriority PurchaseOrder()
-            {
-                return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 3),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) < 5),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
-                           CardAcceptance.For<CardTypes.Silver>());
-            }
-        } 
     }
 }

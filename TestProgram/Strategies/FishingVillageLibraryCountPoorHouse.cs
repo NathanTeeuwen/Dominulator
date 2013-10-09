@@ -154,12 +154,12 @@ namespace Program
 
             private static bool ShouldBuyProvince(GameState gameState)
             {
-                return CountAllOwnedMatching(TrashOrder(), gameState) <= 3;
+                return CountAllOwned(TrashOrder(), gameState) <= 3;
             }
 
             private static bool ShouldPlayLibraryBeforeCount(GameState gameState)
             {
-                int countToTrash = CountAllOwnedMatching(TrashOrder(), gameState);
+                int countToTrash = CountAllOwned(TrashOrder(), gameState);
                 return countToTrash >= 3 ? true : false;
             }
 
