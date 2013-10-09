@@ -38,7 +38,7 @@ namespace Dominion
         internal BagOfCards durationCards;
         internal BagOfCards cardsToReturnToHandAtStartOfTurn;
         internal SingletonCardHolder cardToPass;
-        internal SingletonCardHolder cardBeingDiscarded;
+        internal ListOfCards cardBeingDiscarded; // a stack for recursion.
         internal BagOfCards islandMat;
         internal BagOfCards nativeVillageMat;
 
@@ -92,7 +92,7 @@ namespace Dominion
             this.durationCards = new BagOfCards(gameSubset, this.allOwnedCards);
             this.cardsToReturnToHandAtStartOfTurn = new BagOfCards(gameSubset, this.allOwnedCards);
             this.cardToPass = new SingletonCardHolder(this.allOwnedCards);
-            this.cardBeingDiscarded = new SingletonCardHolder(this.allOwnedCards);
+            this.cardBeingDiscarded = new ListOfCards(gameSubset, this.allOwnedCards);
             
             
             this.turnCounters = new PlayerTurnCounters(gameSubset);
@@ -488,11 +488,12 @@ namespace Dominion
 
         internal void MoveCardBeingDiscardedToTrash(GameState gameState)
         {
-            if (this.cardBeingDiscarded.Card != null)
+            Card cardBeingDiscarded = this.cardBeingDiscarded.DrawCardFromTop();
+            if (cardBeingDiscarded != null)
             {
-                MoveCardToTrash(this.cardBeingDiscarded.Card, gameState);
-                this.cardBeingDiscarded.Clear();
+                MoveCardToTrash(cardBeingDiscarded, gameState);                
             }
+            this.cardBeingDiscarded.AddCardToTop(null);
         }
 
         internal void MoveCardToTrash(Card card, GameState gameState)
@@ -1439,7 +1440,7 @@ namespace Dominion
 
         internal void DiscardCard(Card card, GameState gameState, DeckPlacement source)
         {
-            this.cardBeingDiscarded.Set(card);
+            this.cardBeingDiscarded.AddCardToTop(card);
 
             if (source != DeckPlacement.Deck)
             {
@@ -1457,10 +1458,10 @@ namespace Dominion
                 this.gameLog.PopScope();
             }
 
-            if (this.cardBeingDiscarded.Card != null)
+            Card cardBeingDiscarded = this.cardBeingDiscarded.DrawCardFromTop();
+            if (cardBeingDiscarded != null)
             {
-                this.discard.AddCard(card);
-                this.cardBeingDiscarded.Clear();
+                this.discard.AddCard(card);                
             }
         }
        
