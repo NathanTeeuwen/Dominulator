@@ -265,13 +265,12 @@ namespace Dominion.CardTypes
         {
             for (int i = 0; i < 2; ++i)
             {
-                Card trashedCard = currentPlayer.RequestPlayerTrashCardFromHand(gameState, card => true, isOptional: false);
-                if (trashedCard != null)
-                {
-                    currentPlayer.RequestPlayerGainCardFromSupply(gameState,
-                        acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) == trashedCard.CurrentCoinCost(currentPlayer) + 1,
-                        "Must gain a card costing exactly 1 more than the trashed card");
-                }
+                Card trashedCard = currentPlayer.RequestPlayerTrashCardFromHandAndGainCard(
+                    gameState, 
+                    card => true,
+                    CostConstraint.Exactly,
+                    1,
+                    CardRelativeCost.RelativeCost);                
             }
         }
     }

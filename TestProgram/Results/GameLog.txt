@@ -1,1300 +1,1587 @@
-Illgottengains gained Copper.
-Illgottengains gained Copper.
-Illgottengains gained Copper.
-Illgottengains gained Copper.
-Illgottengains gained Copper.
-Illgottengains gained Copper.
-Illgottengains gained Copper.
-Illgottengains gained Estate.
-Illgottengains gained Estate.
-Illgottengains gained Estate.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Estate.
-BigMoney gained Estate.
-BigMoney gained Estate.
-Illgottengains reshuffled
-Illgottengains Drew Copper into hand.
-Illgottengains Drew Copper into hand.
-Illgottengains Drew Copper into hand.
-Illgottengains Drew Estate into hand.
-Illgottengains Drew Copper into hand.
-BigMoney reshuffled
-BigMoney Drew Estate into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Estate into hand.
+BigMoneyCultist gained Copper.
+BigMoneyCultist gained Copper.
+BigMoneyCultist gained Copper.
+BigMoneyCultist gained Copper.
+BigMoneyCultist gained Copper.
+BigMoneyCultist gained Copper.
+BigMoneyCultist gained Copper.
+BigMoneyCultist gained Estate.
+BigMoneyCultist gained Estate.
+BigMoneyCultist gained Estate.
+BigMoneyDoubleMountebank gained Copper.
+BigMoneyDoubleMountebank gained Copper.
+BigMoneyDoubleMountebank gained Copper.
+BigMoneyDoubleMountebank gained Copper.
+BigMoneyDoubleMountebank gained Copper.
+BigMoneyDoubleMountebank gained Copper.
+BigMoneyDoubleMountebank gained Copper.
+BigMoneyDoubleMountebank gained Estate.
+BigMoneyDoubleMountebank gained Estate.
+BigMoneyDoubleMountebank gained Estate.
+BigMoneyCultist reshuffled
+BigMoneyCultist Drew Estate into hand.
+BigMoneyCultist Drew Copper into hand.
+BigMoneyCultist Drew Copper into hand.
+BigMoneyCultist Drew Estate into hand.
+BigMoneyCultist Drew Copper into hand.
+BigMoneyDoubleMountebank reshuffled
+BigMoneyDoubleMountebank Drew Copper into hand.
+BigMoneyDoubleMountebank Drew Copper into hand.
+BigMoneyDoubleMountebank Drew Copper into hand.
+BigMoneyDoubleMountebank Drew Copper into hand.
+BigMoneyDoubleMountebank Drew Copper into hand.
 ROUND 1
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  Illgottengains Played Copper.
-    +1 Coin = 1 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 2 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 3 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 4 all together.
-  Illgottengains bought Silver.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Estate.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains ends turn with deck: Copper(7), Estate(3), Silver(1), 
-
-BigMoney begins turn
+BigMoneyCultist begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoney Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoneyCultist bought Silver.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Estate(3), Silver(1), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Copper,Copper,Copper,
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDoubleMountebank bought Mountebank.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Mountebank(1), 
 
 ROUND 2
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  Illgottengains Played Copper.
-    +1 Coin = 1 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 2 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 3 all together.
-  Illgottengains bought Silver.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Estate.
-  Illgottengains Discarded Estate.
-  Illgottengains reshuffled
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains ends turn with deck: Copper(7), Estate(3), Silver(2), 
-
-BigMoney begins turn
+BigMoneyCultist begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoney Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoneyCultist bought Silver.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Estate(3), Silver(2), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank reshuffled
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Mountebank(1), 
 
 ROUND 3
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  Illgottengains Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Copper,Silver,
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 4 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 5 all together.
-  Illgottengains bought Ill-Gotten Gains.
-    BigMoney gained Curse.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Estate.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains ends turn with deck: Copper(7), Estate(3), Ill-Gotten Gains(1), Silver(2), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(1), Estate(3), Gold(1), Silver(2), 
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(1), Estate(3), Silver(2), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDoubleMountebank bought Silver.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Mountebank(1), Silver(1), 
 
 ROUND 4
 -------------
-Illgottengains begins turn
+BigMoneyCultist begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 1 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 2 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  Illgottengains bought Silver.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Estate.
-  Illgottengains Discarded Estate.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains reshuffled
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains ends turn with deck: Copper(7), Estate(3), Ill-Gotten Gains(1), Silver(3), 
+  BigMoneyCultist bought Silver.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(1), Estate(3), Silver(3), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Estate,Estate,
-  BigMoney Played Copper.
-    +1 Coin = 1 all together.
-  BigMoney Played Copper.
-    +1 Coin = 2 all together.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(1), Estate(3), Gold(1), Silver(2), 
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Copper,Estate,Mountebank,
+  BigMoneyDoubleMountebank Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist gained Curse.
+    BigMoneyCultist gained Copper.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDoubleMountebank bought Mountebank.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank reshuffled
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Mountebank(2), Silver(1), 
 
 ROUND 5
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  Illgottengains Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  Illgottengains Played Silver.
-    +2 Coin = 4 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 5 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 6 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 7 all together.
-  Illgottengains bought Ill-Gotten Gains.
-    BigMoney gained Curse.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Silver.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains ends turn with deck: Copper(7), Estate(3), Ill-Gotten Gains(2), Silver(3), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoney Played Copper.
-    +1 Coin = 1 all together.
-  BigMoney Played Copper.
-    +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(1), Silver(3), 
+  BigMoneyCultist bought Silver.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist ends turn with deck: Copper(8), Cultist(1), Curse(1), Estate(3), Silver(4), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Copper,Estate,Mountebank,
+  BigMoneyDoubleMountebank Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist gained Curse.
+    BigMoneyCultist gained Copper.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDoubleMountebank bought Mountebank.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Mountebank(3), Silver(1), 
 
 ROUND 6
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Estate,Estate,Ill-Gotten Gains,
-  Illgottengains Played Copper.
-    +1 Coin = 1 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 2 all together.
-  Illgottengains Played Ill-Gotten Gains.
-    +1 Coin = 3 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
-    +1 Coin = 4 all together.
-  Illgottengains bought Silver.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Discarded Estate.
-  Illgottengains Discarded Estate.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains reshuffled
-  Illgottengains Drew Estate into hand.
-  Illgottengains ends turn with deck: Copper(8), Estate(3), Ill-Gotten Gains(2), Silver(4), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoney Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(1), Silver(4), 
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist ends turn with deck: Copper(9), Cultist(2), Curse(2), Estate(3), Silver(4), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Copper,Mountebank,Silver,
+  BigMoneyDoubleMountebank Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist Discarded Curse.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyDoubleMountebank bought Gold.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank reshuffled
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(1), Mountebank(3), Silver(1), 
 
 ROUND 7
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  Illgottengains Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Estate,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Estate into hand.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoneyDoubleMountebank gained Ruined Market.
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 4 all together.
-  Illgottengains bought Silver.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Estate.
-  Illgottengains Discarded Estate.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains ends turn with deck: Copper(8), Estate(3), Ill-Gotten Gains(2), Silver(5), 
+  BigMoneyCultist bought Silver.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(9), Cultist(2), Curse(2), Estate(3), Silver(5), 
 
-BigMoney begins turn
-With hand: Copper,Curse,Gold,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Curse.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(2), Silver(4), 
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Estate,Estate,Mountebank,
+  BigMoneyDoubleMountebank Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist gained Curse.
+    BigMoneyCultist gained Copper.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDoubleMountebank bought Silver.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(1), Mountebank(3), Ruined Market(1), Silver(2), 
 
 ROUND 8
 -------------
-Illgottengains begins turn
-With hand: Copper,Ill-Gotten Gains,Silver,Silver,Silver,
-  Illgottengains Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  Illgottengains Played Silver.
-    +2 Coin = 4 all together.
-  Illgottengains Played Silver.
-    +2 Coin = 6 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 7 all together.
-  Illgottengains Played Ill-Gotten Gains.
-    +1 Coin = 8 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
-    +1 Coin = 9 all together.
-  Illgottengains bought Province.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains ends turn with deck: Copper(9), Estate(3), Ill-Gotten Gains(2), Province(1), Silver(5), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Curse,Estate,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Estate.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(2), Silver(5), 
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist ends turn with deck: Copper(10), Cultist(3), Curse(3), Estate(3), Silver(5), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Copper,Gold,Mountebank,
+  BigMoneyDoubleMountebank Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist Discarded Curse.
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 5 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyDoubleMountebank bought Gold.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(2), Mountebank(3), Ruined Market(1), Silver(2), 
 
 ROUND 9
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  Illgottengains Played Copper.
-    +1 Coin = 1 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 2 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 3 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 4 all together.
-  Illgottengains bought Silver.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Estate.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains reshuffled
-  Illgottengains Drew Estate into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains ends turn with deck: Copper(9), Estate(3), Ill-Gotten Gains(2), Province(1), Silver(6), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoney Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyDoubleMountebank gained Survivors.
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney Played Copper.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
     +1 Coin = 5 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(2), Silver(6), 
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist ends turn with deck: Copper(10), Cultist(4), Curse(3), Estate(3), Silver(5), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Estate,Mountebank,Silver,
+  BigMoneyDoubleMountebank Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist Discarded Curse.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDoubleMountebank bought Gold.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank reshuffled
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Ruined Market into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(3), Mountebank(3), Ruined Market(1), Silver(2), Survivors(1), 
 
 ROUND 10
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Copper,Estate,Ill-Gotten Gains,
-  Illgottengains Played Copper.
-    +1 Coin = 1 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 2 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 3 all together.
-  Illgottengains Played Ill-Gotten Gains.
-    +1 Coin = 4 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
-    +1 Coin = 5 all together.
-  Illgottengains bought Ill-Gotten Gains.
-    BigMoney gained Curse.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Discarded Estate.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains ends turn with deck: Copper(10), Estate(3), Ill-Gotten Gains(3), Province(1), Silver(6), 
-
-BigMoney begins turn
-With hand: Copper,Estate,Silver,Silver,Silver,
-  BigMoney Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Silver,Silver,
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Silver.
+  BigMoneyCultist Played Silver.
     +2 Coin = 4 all together.
-  BigMoney Played Silver.
-    +2 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(3), Silver(6), 
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(10), Cultist(5), Curse(3), Estate(3), Silver(5), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Mountebank,Ruined Market,Silver,
+  BigMoneyDoubleMountebank Played Ruined Market.
+    +1 Buys = 2 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDoubleMountebank bought Silver.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Ruined Market.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(3), Mountebank(3), Ruined Market(1), Silver(3), Survivors(1), 
 
 ROUND 11
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  Illgottengains Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Silver,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyDoubleMountebank gained Ruined Library.
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  Illgottengains Played Silver.
+  BigMoneyCultist Played Silver.
     +2 Coin = 4 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 5 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 6 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 7 all together.
-  Illgottengains bought Ill-Gotten Gains.
-    BigMoney gained Curse.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Silver.
-  Illgottengains Drew Province into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains ends turn with deck: Copper(10), Estate(3), Ill-Gotten Gains(4), Province(1), Silver(6), 
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist ends turn with deck: Copper(10), Cultist(6), Curse(3), Estate(3), Silver(5), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Curse,Gold,
-  BigMoney Played Gold.
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Estate,Estate,Gold,
+  BigMoneyDoubleMountebank Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Copper.
+  BigMoneyDoubleMountebank Played Copper.
     +1 Coin = 4 all together.
-  BigMoney Played Copper.
+  BigMoneyDoubleMountebank Played Copper.
     +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Curse.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(4), Estate(3), Gold(4), Silver(6), 
+  BigMoneyDoubleMountebank bought Silver.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Drew Survivors into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(3), Mountebank(3), Ruined Library(1), Ruined Market(1), Silver(4), Survivors(1), 
 
 ROUND 12
 -------------
-Illgottengains begins turn
-With hand: Estate,Province,Silver,Silver,Silver,
-  Illgottengains Played Silver.
-    +2 Coin = 2 all together.
-  Illgottengains Played Silver.
-    +2 Coin = 4 all together.
-  Illgottengains Played Silver.
-    +2 Coin = 6 all together.
-  Illgottengains bought Ill-Gotten Gains.
-    BigMoney gained Curse.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Estate.
-  Illgottengains Discarded Province.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains ends turn with deck: Copper(10), Estate(3), Ill-Gotten Gains(5), Province(1), Silver(6), 
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Curse,Estate,Estate,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyDoubleMountebank gained Ruined Village.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyCultist bought Silver.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist ends turn with deck: Copper(10), Cultist(6), Curse(3), Estate(3), Silver(6), 
 
-BigMoney begins turn
-With hand: Curse,Estate,Silver,Silver,Silver,
-  BigMoney Played Silver.
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Estate,Mountebank,Silver,Survivors,
+  BigMoneyDoubleMountebank Played Survivors.
+    BigMoneyDoubleMountebank Revealed Copper.
+    BigMoneyDoubleMountebank Revealed Gold.
+  BigMoneyDoubleMountebank Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Silver.
-    +2 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Estate.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(5), Estate(3), Gold(5), Silver(6), 
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDoubleMountebank bought Silver.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Survivors.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(3), Mountebank(3), Ruined Library(1), Ruined Market(1), Ruined Village(1), Silver(5), Survivors(1), 
 
 ROUND 13
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Copper,Ill-Gotten Gains,Silver,
-  Illgottengains Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Curse,Estate,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist reshuffled
+    BigMoneyCultist Drew Estate into hand.
+    BigMoneyDoubleMountebank gained Ruined Village.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Estate into hand.
+      BigMoneyCultist Drew Curse into hand.
+      BigMoneyDoubleMountebank gained Abandoned Mine.
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 4 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 5 all together.
-  Illgottengains Played Ill-Gotten Gains.
-    +1 Coin = 6 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
-    +1 Coin = 7 all together.
-  Illgottengains bought Ill-Gotten Gains.
-    BigMoney gained Curse.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Drew Estate into hand.
-  Illgottengains reshuffled
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains ends turn with deck: Copper(11), Estate(3), Ill-Gotten Gains(6), Province(1), Silver(6), 
+  BigMoneyCultist bought Silver.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(10), Cultist(6), Curse(3), Estate(3), Silver(7), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney reshuffled
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(6), Estate(3), Gold(6), Silver(6), 
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Gold,Gold,Mountebank,
+  BigMoneyDoubleMountebank Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist gained Curse.
+    BigMoneyCultist gained Copper.
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 5 all together.
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 8 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyDoubleMountebank bought Province.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank reshuffled
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank Drew Survivors into hand.
+  BigMoneyDoubleMountebank Drew Ruined Market into hand.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(3), Mountebank(3), Province(1), Ruined Library(1), Ruined Market(1), Ruined Village(2), Silver(5), Survivors(1), 
 
 ROUND 14
 -------------
-Illgottengains begins turn
-With hand: Copper,Estate,Ill-Gotten Gains,Silver,Silver,
-  Illgottengains Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Silver,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyDoubleMountebank gained Ruined Village.
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  Illgottengains Played Silver.
+  BigMoneyCultist Played Silver.
     +2 Coin = 4 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 5 all together.
-  Illgottengains Played Ill-Gotten Gains.
+  BigMoneyCultist Played Copper.
     +1 Coin = 6 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 7 all together.
-  Illgottengains bought Ill-Gotten Gains.
-    BigMoney gained Curse.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Discarded Estate.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains ends turn with deck: Copper(12), Estate(3), Ill-Gotten Gains(7), Province(1), Silver(6), 
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(11), Cultist(7), Curse(4), Estate(3), Silver(7), 
 
-BigMoney begins turn
-With hand: Copper,Curse,Curse,Gold,Silver,
-  BigMoney Played Gold.
+BigMoneyDoubleMountebank begins turn
+With hand: Gold,Gold,Ruined Market,Silver,Survivors,
+  BigMoneyDoubleMountebank Played Ruined Market.
+    +1 Buys = 2 all together.
+  BigMoneyDoubleMountebank Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Curse.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(7), Estate(3), Gold(7), Silver(6), 
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyDoubleMountebank bought Province.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Ruined Market.
+  BigMoneyDoubleMountebank Discarded Survivors.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(3), Mountebank(3), Province(2), Ruined Library(1), Ruined Market(1), Ruined Village(3), Silver(5), Survivors(1), 
 
 ROUND 15
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Copper,Ill-Gotten Gains,Ill-Gotten Gains,
-  Illgottengains Played Copper.
-    +1 Coin = 1 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 2 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 3 all together.
-  Illgottengains Played Ill-Gotten Gains.
-    +1 Coin = 4 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Curse,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyDoubleMountebank gained Ruined Market.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Cultist into hand.
+      BigMoneyCultist Drew Copper into hand.
+      BigMoneyDoubleMountebank gained Ruined Village.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Copper into hand.
+        BigMoneyCultist Drew Silver into hand.
+        BigMoneyDoubleMountebank gained Survivors.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
     +1 Coin = 5 all together.
-  Illgottengains Played Ill-Gotten Gains.
+  BigMoneyCultist Played Copper.
     +1 Coin = 6 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 7 all together.
-  Illgottengains bought Ill-Gotten Gains.
-    BigMoney gained Curse.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains ends turn with deck: Copper(14), Estate(3), Ill-Gotten Gains(8), Province(1), Silver(6), 
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyCultist bought Gold.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist ends turn with deck: Copper(11), Cultist(7), Curse(4), Estate(3), Gold(1), Silver(7), 
 
-BigMoney begins turn
-With hand: Copper,Curse,Estate,Gold,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Copper.
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Copper,Mountebank,Silver,
+  BigMoneyDoubleMountebank Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist Discarded Curse.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDoubleMountebank Played Copper.
     +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(8), Estate(3), Gold(8), Silver(6), 
+  BigMoneyDoubleMountebank bought Gold.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Drew Abandoned Mine into hand.
+  BigMoneyDoubleMountebank Drew Ruined Village into hand.
+  BigMoneyDoubleMountebank Drew Ruined Library into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(3), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(5), Survivors(2), 
 
 ROUND 16
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Ill-Gotten Gains,Silver,Silver,
-  Illgottengains Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Silver,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Silver into hand.
+      BigMoneyCultist Drew Copper into hand.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Copper into hand.
+        BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  Illgottengains Played Silver.
+  BigMoneyCultist Played Silver.
     +2 Coin = 4 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 5 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 6 all together.
-  Illgottengains Played Ill-Gotten Gains.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
     +1 Coin = 7 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 8 all together.
-  Illgottengains bought Province.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains ends turn with deck: Copper(15), Estate(3), Ill-Gotten Gains(8), Province(2), Silver(6), 
+  BigMoneyCultist Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyCultist bought Gold.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist ends turn with deck: Copper(11), Cultist(7), Curse(4), Estate(3), Gold(2), Silver(7), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(8), Estate(3), Gold(9), Silver(6), 
+BigMoneyDoubleMountebank begins turn
+With hand: Abandoned Mine,Estate,Gold,Ruined Library,Ruined Village,
+  BigMoneyDoubleMountebank Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoneyDoubleMountebank Played Abandoned Mine.
+    +1 Coin = 1 all together.
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 4 all together.
+  BigMoneyDoubleMountebank bought Silver.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Abandoned Mine.
+  BigMoneyDoubleMountebank Discarded Ruined Village.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Ruined Library.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Province into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(3), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(6), Survivors(2), 
 
 ROUND 17
 -------------
-Illgottengains begins turn
-With hand: Copper,Estate,Estate,Silver,Silver,
-  Illgottengains Played Silver.
-    +2 Coin = 2 all together.
-  Illgottengains Played Silver.
-    +2 Coin = 4 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 5 all together.
-  Illgottengains bought Ill-Gotten Gains.
-    BigMoney gained Curse.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Estate.
-  Illgottengains Discarded Estate.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains Drew Province into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains ends turn with deck: Copper(15), Estate(3), Ill-Gotten Gains(9), Province(2), Silver(6), 
-
-BigMoney begins turn
-With hand: Curse,Curse,Estate,Gold,Silver,
-  BigMoney Played Gold.
+BigMoneyCultist begins turn
+With hand: Copper,Curse,Gold,Silver,Silver,
+  BigMoneyCultist Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Silver.
+  BigMoneyCultist Played Silver.
     +2 Coin = 5 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(9), Estate(3), Gold(9), Silver(7), 
+  BigMoneyCultist Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Gold.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(11), Cultist(7), Curse(4), Estate(3), Gold(2), Province(1), Silver(7), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Estate,Province,Silver,
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDoubleMountebank bought Silver.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Province.
+  BigMoneyDoubleMountebank Drew Ruined Village into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(3), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
 
 ROUND 18
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Copper,Ill-Gotten Gains,Province,
-  Illgottengains Played Copper.
-    +1 Coin = 1 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 2 all together.
-  Illgottengains Played Copper.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Cultist,Cultist,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Estate into hand.
+    BigMoneyCultist Drew Curse into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Cultist into hand.
+      BigMoneyCultist Drew Copper into hand.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Curse into hand.
+        BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  Illgottengains Played Ill-Gotten Gains.
+  BigMoneyCultist Played Copper.
     +1 Coin = 4 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 5 all together.
-  Illgottengains bought Ill-Gotten Gains.
-    BigMoney gained Curse.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Discarded Province.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains reshuffled
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains Drew Province into hand.
-  Illgottengains ends turn with deck: Copper(16), Estate(3), Ill-Gotten Gains(10), Province(2), Silver(6), 
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist bought Duchy.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist ends turn with deck: Copper(11), Cultist(7), Curse(4), Duchy(1), Estate(3), Gold(2), Province(1), Silver(7), 
 
-BigMoney begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney reshuffled
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(9), Province(1), Silver(7), 
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Estate,Mountebank,Ruined Village,Silver,
+  BigMoneyDoubleMountebank Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoneyDoubleMountebank Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist gained Curse.
+    BigMoneyCultist gained Copper.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDoubleMountebank bought Silver.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Ruined Village.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank reshuffled
+  BigMoneyDoubleMountebank Drew Province into hand.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(3), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
 
 ROUND 19
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Estate,Ill-Gotten Gains,Province,
-  Illgottengains Played Copper.
-    +1 Coin = 1 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 2 all together.
-  Illgottengains Played Ill-Gotten Gains.
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Estate,Estate,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist reshuffled
+    BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 4 all together.
-  Illgottengains bought Silver.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Discarded Estate.
-  Illgottengains Discarded Province.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains ends turn with deck: Copper(17), Estate(3), Ill-Gotten Gains(10), Province(2), Silver(7), 
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist bought Duchy.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Duchy into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(2), Estate(3), Gold(2), Province(1), Silver(7), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Curse,Gold,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Gold,Mountebank,Province,Silver,
+  BigMoneyDoubleMountebank Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist Discarded Curse.
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 5 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyDoubleMountebank Played Copper.
     +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Curse.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(9), Province(2), Silver(7), 
+  BigMoneyDoubleMountebank bought Province.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Discarded Province.
+  BigMoneyDoubleMountebank Drew Ruined Market into hand.
+  BigMoneyDoubleMountebank Drew Abandoned Mine into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(3), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
 
 ROUND 20
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Estate,Ill-Gotten Gains,Ill-Gotten Gains,
-  Illgottengains Played Copper.
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Duchy,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Curse into hand.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Copper into hand.
+      BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Played Copper.
     +1 Coin = 1 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 2 all together.
-  Illgottengains Played Ill-Gotten Gains.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
-    +1 Coin = 4 all together.
-  Illgottengains Played Ill-Gotten Gains.
-    +1 Coin = 5 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
-    +1 Coin = 6 all together.
-  Illgottengains bought Duchy.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Discarded Estate.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains ends turn with deck: Copper(19), Duchy(1), Estate(3), Ill-Gotten Gains(10), Province(2), Silver(7), 
+  BigMoneyCultist bought Silver.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Duchy.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Province into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(2), Estate(3), Gold(2), Province(1), Silver(8), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Curse,Estate,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(9), Province(2), Silver(8), 
+BigMoneyDoubleMountebank begins turn
+With hand: Abandoned Mine,Copper,Ruined Market,Silver,Silver,
+  BigMoneyDoubleMountebank Played Abandoned Mine.
+    +1 Coin = 1 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDoubleMountebank bought Duchy.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Abandoned Mine.
+  BigMoneyDoubleMountebank Discarded Ruined Market.
+  BigMoneyDoubleMountebank Drew Survivors into hand.
+  BigMoneyDoubleMountebank Drew Ruined Market into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(1), Estate(3), Gold(4), Mountebank(3), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
 
 ROUND 21
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Ill-Gotten Gains,Ill-Gotten Gains,Silver,
-  Illgottengains Played Silver.
-    +2 Coin = 2 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 3 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 4 all together.
-  Illgottengains Played Ill-Gotten Gains.
-    +1 Coin = 5 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
-    +1 Coin = 6 all together.
-  Illgottengains Played Ill-Gotten Gains.
-    +1 Coin = 7 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
-    +1 Coin = 8 all together.
-  Illgottengains bought Province.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Estate into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains ends turn with deck: Copper(21), Duchy(1), Estate(3), Ill-Gotten Gains(10), Province(3), Silver(7), 
-
-BigMoney begins turn
-With hand: Copper,Curse,Gold,Gold,Silver,
-  BigMoney Played Gold.
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Province,Silver,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Gold into hand.
+    BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Silver.
-    +2 Coin = 8 all together.
-  BigMoney Played Copper.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist Played Copper.
     +1 Coin = 9 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Curse.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(10), Estate(3), Gold(9), Province(3), Silver(8), 
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Gold.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Province.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(2), Estate(3), Gold(2), Province(2), Silver(8), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Estate,Mountebank,Ruined Market,Silver,Survivors,
+  BigMoneyDoubleMountebank Played Ruined Market.
+    +1 Buys = 2 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDoubleMountebank bought Estate.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Ruined Market.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Survivors.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Ruined Village into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Province into hand.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(1), Estate(4), Gold(4), Mountebank(3), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
 
 ROUND 22
 -------------
-Illgottengains begins turn
-With hand: Copper,Estate,Ill-Gotten Gains,Ill-Gotten Gains,Silver,
-  Illgottengains Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Curse,Curse,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 3 all together.
-  Illgottengains Played Ill-Gotten Gains.
-    +1 Coin = 4 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
     +1 Coin = 5 all together.
-  Illgottengains Played Ill-Gotten Gains.
-    +1 Coin = 6 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
-    +1 Coin = 7 all together.
-  Illgottengains bought Duchy.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Discarded Estate.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains Drew Province into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains ends turn with deck: Copper(23), Duchy(2), Estate(3), Ill-Gotten Gains(10), Province(3), Silver(7), 
+  BigMoneyCultist bought Duchy.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(3), Estate(3), Gold(2), Province(2), Silver(8), 
 
-BigMoney begins turn
-With hand: Curse,Estate,Estate,Gold,Silver,
-  BigMoney Played Gold.
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Gold,Province,Ruined Village,Silver,
+  BigMoneyDoubleMountebank Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoneyDoubleMountebank Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Silver.
+  BigMoneyDoubleMountebank Played Silver.
     +2 Coin = 5 all together.
-  BigMoney bought Duchy.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(10), Duchy(1), Estate(3), Gold(9), Province(3), Silver(8), 
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDoubleMountebank bought Duchy.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Ruined Village.
+  BigMoneyDoubleMountebank Discarded Province.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Ruined Village into hand.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(4), Gold(4), Mountebank(3), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
 
 ROUND 23
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Copper,Ill-Gotten Gains,Province,
-  Illgottengains Played Copper.
-    +1 Coin = 1 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 2 all together.
-  Illgottengains Played Copper.
-    +1 Coin = 3 all together.
-  Illgottengains Played Ill-Gotten Gains.
-    +1 Coin = 4 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
-    +1 Coin = 5 all together.
-  Illgottengains bought Duchy.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Discarded Province.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Ill-Gotten Gains into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains ends turn with deck: Copper(24), Duchy(3), Estate(3), Ill-Gotten Gains(10), Province(3), Silver(7), 
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Gold,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Silver into hand.
+      BigMoneyCultist reshuffled
+      BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Gold.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Province into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(3), Estate(3), Gold(2), Province(3), Silver(8), 
 
-BigMoney begins turn
-With hand: Curse,Curse,Curse,Curse,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney bought Estate.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Curse.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(10), Duchy(1), Estate(4), Gold(9), Province(3), Silver(8), 
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Gold,Ruined Village,Silver,Silver,
+  BigMoneyDoubleMountebank Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyDoubleMountebank bought Province.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Ruined Village.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank Drew Ruined Library into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(4), Gold(4), Mountebank(3), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
 
 ROUND 24
 -------------
-Illgottengains begins turn
-With hand: Copper,Copper,Ill-Gotten Gains,Ill-Gotten Gains,Silver,
-  Illgottengains Played Silver.
+BigMoneyCultist begins turn
+With hand: Copper,Curse,Estate,Province,Silver,
+  BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
-  Illgottengains Played Copper.
+  BigMoneyCultist bought Estate.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Province.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Duchy into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(3), Estate(4), Gold(2), Province(3), Silver(8), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Estate,Mountebank,Ruined Library,
+  BigMoneyDoubleMountebank Played Ruined Library.
+    BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyDoubleMountebank bought Estate.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Ruined Library.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Survivors into hand.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank Drew Ruined Village into hand.
+  BigMoneyDoubleMountebank Drew Ruined Village into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(5), Gold(4), Mountebank(3), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+
+ROUND 25
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Duchy,Silver,
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyCultist Played Copper.
     +1 Coin = 4 all together.
-  Illgottengains Played Ill-Gotten Gains.
+  BigMoneyCultist Played Copper.
     +1 Coin = 5 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
-    +1 Coin = 6 all together.
-  Illgottengains Played Ill-Gotten Gains.
-    +1 Coin = 7 all together.
-    Illgottengains gained Copper.
-      ... and placed card in hand
-  Illgottengains Played Copper.
-    +1 Coin = 8 all together.
-  Illgottengains bought Province.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Copper.
-  Illgottengains Discarded Silver.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Discarded Ill-Gotten Gains.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Silver into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains Drew Copper into hand.
-  Illgottengains ends turn with deck: Copper(26), Duchy(3), Estate(3), Ill-Gotten Gains(10), Province(4), Silver(7), 
+  BigMoneyCultist bought Duchy.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Duchy.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(4), Estate(4), Gold(2), Province(3), Silver(8), 
 
-BigMoney begins turn
-With hand: Copper,Curse,Gold,Gold,Gold,
-  BigMoney Played Gold.
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Gold,Ruined Village,Ruined Village,Survivors,
+  BigMoneyDoubleMountebank Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoneyDoubleMountebank Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoneyDoubleMountebank Played Survivors.
+    BigMoneyDoubleMountebank Revealed Silver.
+    BigMoneyDoubleMountebank reshuffled
+    BigMoneyDoubleMountebank Revealed Estate.
+  BigMoneyDoubleMountebank Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Gold.
-    +3 Coin = 9 all together.
-  BigMoney Played Copper.
-    +1 Coin = 10 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Curse.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Province into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(10), Duchy(1), Estate(4), Gold(9), Province(4), Silver(8), 
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDoubleMountebank bought Estate.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Ruined Village.
+  BigMoneyDoubleMountebank Discarded Ruined Village.
+  BigMoneyDoubleMountebank Discarded Survivors.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Ruined Village into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(6), Gold(4), Mountebank(3), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
 
-Game ended in 24 turns.
-Illgottengains Won!
-Illgottengains total score: 36
-  Copper(26), Duchy(3), Estate(3), Ill-Gotten Gains(10), Province(4), Silver(7), 
-BigMoney total score: 21
-  Copper(7), Curse(10), Duchy(1), Estate(4), Gold(9), Province(4), Silver(8), 
+ROUND 26
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Curse,Gold,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Duchy into hand.
+    BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyCultist bought Duchy.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Gold.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Duchy.
+  BigMoneyCultist Drew Duchy into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(5), Estate(4), Gold(2), Province(3), Silver(8), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Estate,Ruined Village,Silver,
+  BigMoneyDoubleMountebank Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDoubleMountebank bought Estate.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Ruined Village.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(7), Gold(4), Mountebank(3), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+
+ROUND 27
+-------------
+BigMoneyCultist begins turn
+With hand: Cultist,Duchy,Estate,Estate,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Silver into hand.
+      BigMoneyCultist Drew Cultist into hand.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Curse into hand.
+        BigMoneyCultist Drew Province into hand.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist bought Duchy.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Duchy.
+  BigMoneyCultist Discarded Province.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(6), Estate(4), Gold(2), Province(3), Silver(8), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Estate,Estate,Silver,Silver,Silver,
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneyDoubleMountebank bought Estate.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Drew Duchy into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank Drew Duchy into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(8), Gold(4), Mountebank(3), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+
+ROUND 28
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Curse,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist reshuffled
+    BigMoneyCultist Drew Curse into hand.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Duchy into hand.
+      BigMoneyCultist Drew Cultist into hand.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Copper into hand.
+        BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist bought Estate.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Duchy.
+  BigMoneyCultist Drew Duchy into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Duchy into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(6), Estate(5), Gold(2), Province(3), Silver(8), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Duchy,Duchy,Estate,Mountebank,Silver,
+  BigMoneyDoubleMountebank Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist Discarded Curse.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDoubleMountebank bought Estate.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Duchy.
+  BigMoneyDoubleMountebank Discarded Duchy.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Province into hand.
+  BigMoneyDoubleMountebank Drew Province into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(9), Gold(4), Mountebank(3), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+
+Game ended in 28 turns.
+BigMoneyDoubleMountebank Won!
+BigMoneyCultist total score: 36
+  Copper(12), Cultist(7), Curse(5), Duchy(6), Estate(5), Gold(2), Province(3), Silver(8), 
+BigMoneyDoubleMountebank total score: 39
+  Abandoned Mine(1), Copper(7), Duchy(2), Estate(9), Gold(4), Mountebank(3), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
 Trash contains: 
 
-Illgottengains GainSequence is:
-  Silver, Silver, Ill-Gotten Gains, Silver, Ill-Gotten Gains, 
-  Copper, Silver, Silver, Copper, Province, 
-  Silver, Copper, Ill-Gotten Gains, Ill-Gotten Gains, Ill-Gotten Gains, 
-  Copper, Ill-Gotten Gains, Copper, Ill-Gotten Gains, Copper, 
-  Copper, Ill-Gotten Gains, Copper, Province, Ill-Gotten Gains, 
-  Copper, Ill-Gotten Gains, Copper, Silver, Copper, 
-  Copper, Duchy, Copper, Copper, Province, 
-  Copper, Copper, Duchy, Copper, Duchy, 
-  Copper, Copper, Province, 
-BigMoney GainSequence is:
-  Silver, Silver, Curse, Gold, Curse, 
-  Silver, Silver, Gold, Silver, Silver, 
-  Curse, Gold, Curse, Gold, Curse, 
-  Gold, Curse, Gold, Curse, Gold, 
-  Curse, Gold, Gold, Curse, Silver, 
-  Curse, Province, Province, Silver, Province, 
-  Duchy, Estate, Province, 
+BigMoneyCultist GainSequence is:
+  Silver, Silver, Cultist, Silver, Curse, 
+  Copper, Silver, Curse, Copper, Cultist, 
+  Silver, Curse, Copper, Cultist, Cultist, 
+  Cultist, Cultist, Silver, Silver, Curse, 
+  Copper, Cultist, Gold, Gold, Province, 
+  Duchy, Curse, Copper, Duchy, Silver, 
+  Province, Duchy, Province, Estate, Duchy, 
+  Duchy, Duchy, Estate, 
+BigMoneyDoubleMountebank GainSequence is:
+  Mountebank, Silver, Mountebank, Mountebank, Gold, 
+  Ruined Market, Silver, Gold, Survivors, Gold, 
+  Silver, Ruined Library, Silver, Ruined Village, Silver, 
+  Ruined Village, Abandoned Mine, Province, Ruined Village, Province, 
+  Ruined Market, Ruined Village, Survivors, Gold, Silver, 
+  Silver, Silver, Province, Duchy, Estate, 
+  Duchy, Province, Estate, Estate, Estate, 
+  Estate, Estate, 

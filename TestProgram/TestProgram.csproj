@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CardAcceptance.cs" />
+    <Compile Include="DefaultStrategies.cs" />
     <Compile Include="Simulations\DarkAgesBigMoney.cs" />
     <Compile Include="Simulations\EffectOfEstateOnRebuild.cs" />
     <Compile Include="Simulations\FeodumVsDuke.cs" />
@@ -56,7 +57,9 @@
     <Compile Include="Simulations\RebuildResults.cs" />
     <Compile Include="StartingDeckBuilder.cs" />
     <Compile Include="Strategies\BigMoneyCultist.cs" />
+    <Compile Include="Strategies\BigMoneyDelayed.cs" />
     <Compile Include="Strategies\BigMoneyDoubleSmithy.cs" />
+    <Compile Include="Strategies\DoubleWarehouse.cs" />
     <Compile Include="Strategies\HermitMarketSquare.cs" />
     <Compile Include="Strategies\IllgottengainsMoneylender.cs" />
     <Compile Include="Strategies\IronworksGreathallRemodelHuntingGrounds.cs" />
@@ -115,7 +118,7 @@
     <Compile Include="Strategies\FishingVillageLibraryCountPoorHouse.cs" />
     <Compile Include="Strategies\Lookout.cs" />
     <Compile Include="Strategies\RatsUpgrade.cs" />
-    <Compile Include="Strategies\Strategies.cs" />
+    <Compile Include="Strategies.cs" />
     <Compile Include="StrategyOptimizer\StrategyOptimizer.cs" />
   </ItemGroup>
   <ItemGroup>

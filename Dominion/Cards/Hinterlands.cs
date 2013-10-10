@@ -172,14 +172,12 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedWhenBuy(PlayerState currentPlayer, GameState gameState)
         {
-            Card card = currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCard => true, isOptional: false);
-            if (card != null)
-            {
-                currentPlayer.RequestPlayerGainCardFromSupply(
-                   gameState,
-                   acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) == this.CurrentCoinCost(currentPlayer) + 2,
-                   "Must gain a card costing exactly 2 more than the trashed card");
-            }
+            Card card = currentPlayer.RequestPlayerTrashCardFromHandAndGainCard(
+                gameState, 
+                acceptableCard => true,
+                CostConstraint.Exactly,
+                2,
+                CardRelativeCost.RelativeCost);                
         }        
     }
 

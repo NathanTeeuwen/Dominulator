@@ -144,11 +144,12 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCard => true, isOptional: false);
-            currentPlayer.RequestPlayerGainCardFromSupply(
+            currentPlayer.RequestPlayerTrashCardFromHandAndGainCard(
                 gameState,
-                card => card.CurrentCoinCost(currentPlayer) <= 5,
-                "Gain a card costing up to 5");
+                acceptableCard => true,
+                CostConstraint.UpTo,
+                5,
+                CardRelativeCost.AbsoluteCost);
         }
     }
 
