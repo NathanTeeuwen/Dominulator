@@ -9,15 +9,7 @@ using System.Threading.Tasks;
 namespace Program
 {
     public static partial class Strategies
-    {
-
-        public static bool CardInPlayIs<T>(GameState gameState)
-            where T : Card, new()
-        {
-            Card cardBeingPlayed = gameState.players.CurrentPlayer.CurrentCardBeingPlayed;
-            return cardBeingPlayed != null && cardBeingPlayed.Is<T>();
-        }
-
+    {      
         private enum RelativeAmount
         {            
             LessThan,

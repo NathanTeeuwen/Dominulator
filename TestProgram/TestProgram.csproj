@@ -65,6 +65,7 @@
     <Compile Include="Strategies\IronworksGreathallRemodelHuntingGrounds.cs" />
     <Compile Include="Strategies\LookoutSalvagerLibraryHighwayFestival.cs" />
     <Compile Include="Strategies\LookoutTraderNobles.cs" />
+    <Compile Include="Strategies\MountebankGovernor.cs" />
     <Compile Include="Strategies\RatsWanderingMinstrelWatchtowerArmory.cs" />
     <Compile Include="Strategies\RebuildAdvanced.cs" />
     <Compile Include="Strategies\RebuildDuke.cs" />

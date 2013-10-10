@@ -15,7 +15,7 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.BigMoneyWithCard<CardTypes.Mountebank>.Player(2, "BigMoneyDoubleMountebank", cardCount:2, afterGoldCount:0));
+            //ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.MountebankGovernor.Player(2));
             CompareStrategyVsAllKnownStrategies(Strategies.Illgottengains.Player(1));
             
             stopwatch.Stop();
@@ -41,7 +41,7 @@ namespace Program
                     continue;
 
                 if (playerMethodInfo.ContainsGenericParameters)
-                    continue;
+                    continue;                
 
                 PlayerAction otherPlayerAction = playerMethodInfo.Invoke(null, new object[]{2}) as PlayerAction;
                 if (otherPlayerAction == null)

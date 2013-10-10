@@ -11,7 +11,8 @@ namespace Dominion
     {
         internal bool hasCurrentPlayerGainedCard;
         internal bool doesCurrentPlayerNeedOutpostTurn;
-        public IGameLog gameLog;
+        internal PlayerState self;
+        public IGameLog gameLog;        
         public PlayerCircle players;
         public PileOfCards[] supplyPiles;
         public PileOfCards[] nonSupplyPiles;
@@ -27,6 +28,14 @@ namespace Dominion
             get
             {
                 return this.cardGameSubset;
+            }
+        }
+
+        public PlayerState Self
+        {
+            get
+            {
+                return this.self;
             }
         }
 
@@ -211,8 +220,7 @@ namespace Dominion
 
             this.gameLog.BeginTurn(currentPlayer);
             this.gameLog.PushScope();
-            currentPlayer.InitializeTurn();
-            currentPlayerAction.BeginTurn();
+            currentPlayer.InitializeTurn();            
 
             ReturnCardsToHandAtStartOfTurn(currentPlayer);
             DoActionsQueuedFromPreviousTurn(currentPlayer);
@@ -226,8 +234,7 @@ namespace Dominion
             int cardCountForNextTurn = this.doesCurrentPlayerNeedOutpostTurn ? 3 : 5;
             currentPlayer.DrawUntilCountInHand(cardCountForNextTurn);
             currentPlayer.playPhase = PlayPhase.NotMyTurn;
-
-            currentPlayerAction.EndTurn();            
+            
             this.gameLog.EndTurn(currentPlayer);
             this.gameLog.PopScope();
         }

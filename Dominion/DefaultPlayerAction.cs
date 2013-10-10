@@ -61,17 +61,7 @@ namespace Dominion
             {
                 throw new NotImplementedException();
             }
-        }
-
-        virtual public void BeginTurn()
-        {
-            NoDefaultAction();
-        }
-
-        virtual public void EndTurn()
-        {
-            NoDefaultAction();
-        }
+        }               
 
         virtual public Card BanCardForCurrentPlayerRevealedCards(GameState gameState)
         {

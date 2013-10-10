@@ -12,7 +12,7 @@ namespace Dominion
         internal int numberOfTurnsPlayed;
         
         internal readonly int playerIndex;
-        internal readonly IPlayerAction actions;
+        internal readonly PlayerActionWithSelf actions;
         internal readonly IGameLog gameLog;
         
         internal PlayPhase playPhase;
@@ -45,7 +45,7 @@ namespace Dominion
         internal List<Action> actionsToExecuteAtBeginningOfNextTurn = new List<Action>();
 
         // expose information for use by strategies
-        public IPlayerAction Actions { get { return this.actions; } }
+        public IPlayerAction Actions { get { return this.actions.actions; } }
         public int AvailableCoins { get { return this.turnCounters.AvailableCoins; } }
         public int AvailableCoinTokens { get { return this.turnCounters.AvailableCoinTokens; } }
         public int AvailableActions { get { return this.turnCounters.AvailableActions; } }
@@ -72,7 +72,7 @@ namespace Dominion
         internal PlayerState(IPlayerAction actions, int playerIndex, IGameLog gameLog, Random random, CardGameSubset gameSubset)
         {
             this.gameLog = gameLog;
-            this.actions = actions;
+            this.actions = new PlayerActionWithSelf(actions, this);
             this.playPhase = PlayPhase.NotMyTurn;
             this.random = random;
             this.playerIndex = playerIndex;
