@@ -13,10 +13,12 @@ namespace Program
         static void Main()
         {
             var stopwatch = new System.Diagnostics.Stopwatch();
-            stopwatch.Start();
-
-            //ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.MountebankGovernor.Player(2));
-            CompareStrategyVsAllKnownStrategies(Strategies.Illgottengains.Player(1));
+            stopwatch.Start();            
+            
+            ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Mountebank>.Player(1, "BigMoneyDoubleMount", cardCount:2, afterGoldCount:0), Strategies.MountebankGovernorMaurader.Player(2), useShelters: true);
+            ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Cultist>.Player(1, "BigMoneyTripleCultist", cardCount: 3, afterGoldCount: 0), Strategies.MountebankGovernorMaurader.Player(2), useShelters: true);
+            ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.MountebankGovernorMaurader.Player(2), useShelters: true);
+            CompareStrategyVsAllKnownStrategies(Strategies.MountebankGovernorMaurader.Player(1), useShelters: true);
             
             stopwatch.Stop();
 

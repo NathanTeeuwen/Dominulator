@@ -165,7 +165,7 @@ namespace Dominion.CardTypes
         {            
             currentPlayer.RequestPlayerGainCardFromSupply(
                 gameState,
-                card => card.CurrentCoinCost(currentPlayer) <= 4,
+                card => card.CurrentCoinCost(currentPlayer) <= 4 && card.potionCost == 0,
                 "Gain a card costing up to 4",
                 defaultLocation:DeckPlacement.TopOfDeck);
         }
@@ -260,7 +260,10 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) < this.CurrentCoinCost(currentPlayer), "Must gain a card cheaper than this");
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, 
+                card => card.CurrentCoinCost(currentPlayer) < this.CurrentCoinCost(currentPlayer) &&
+                        card.potionCost == 0, 
+                "Must gain a card cheaper than this");
         }
     }        
 
@@ -459,7 +462,7 @@ namespace Dominion.CardTypes
                 isOptional: true);
 
             currentPlayer.RequestPlayerGainCardFromSupply(gameState,
-                acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= 3,
+                acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= 3 && acceptableCard.potionCost == 0,
                 "Gain a card costing up to 3");
         }
 
@@ -760,7 +763,7 @@ namespace Dominion.CardTypes
                 int cardCost = foundCard.CurrentCoinCost(currentPlayer);
                 currentPlayer.MoveRevealedCardToTrash(foundCard, gameState);
                 currentPlayer.RequestPlayerGainCardFromSupply(gameState,
-                    acceptableCard => acceptableCard.isVictory && acceptableCard.CurrentCoinCost(currentPlayer) <= cardCost + 3,
+                    acceptableCard => acceptableCard.isVictory && acceptableCard.CurrentCoinCost(currentPlayer) <= cardCost + 3 && acceptableCard.potionCost == foundCard.potionCost,
                     "Gain a victory card costing up to 3 more than the trashed card.");
             }
         }
@@ -795,7 +798,7 @@ namespace Dominion.CardTypes
                 Card card = currentPlayer.DrawAndRevealOneCardFromDeck();
                 if (card == null)
                     break;
-                if (card.CurrentCoinCost(currentPlayer) >= 3)
+                if (card.CurrentCoinCost(currentPlayer) >= 3 && card.potionCost == 0)
                 {
                     currentPlayer.MoveRevealedCardToHand(card);
                     break;

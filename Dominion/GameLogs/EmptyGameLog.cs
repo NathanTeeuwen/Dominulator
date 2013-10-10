@@ -99,6 +99,10 @@ namespace Dominion
         {
         }
 
+        public virtual void PlayerGainedPotion(PlayerState playerState, int coinAmount)
+        {
+        }
+
         public virtual void PlayerGainedCoin(PlayerState playerState, int coinAmount)
         {
         }

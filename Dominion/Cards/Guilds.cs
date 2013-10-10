@@ -69,7 +69,8 @@ namespace Dominion.CardTypes
 
             currentPlayer.RequestPlayerGainCardFromSupply(
                 gameState,
-                card => card.CurrentCoinCost(currentPlayer) <= trashedCard.CurrentCoinCost(currentPlayer) + coinCount,
+                card => card.CurrentCoinCost(currentPlayer) == trashedCard.CurrentCoinCost(currentPlayer) + coinCount &&
+                        card.potionCost == trashedCard.potionCost,
                 "Must gain a card costing exactly equal to the cost of the card trashed plus any coin spent");
         }
     }
@@ -229,8 +230,9 @@ namespace Dominion.CardTypes
                 for (int i = 0; i < 2; ++i)
                 {
                     currentPlayer.RequestPlayerGainCardFromSupply(
-                        gameState, 
-                        acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) < card.CurrentCoinCost(currentPlayer),
+                        gameState,
+                        acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) < card.CurrentCoinCost(currentPlayer) &&
+                                          acceptableCard.potionCost <= card.potionCost,
                         "Must gain 2 cards less than the trashed card");
                 }
             }
@@ -238,6 +240,8 @@ namespace Dominion.CardTypes
 
         public override void OverpayOnPurchase(PlayerState currentPlayer, GameState gameState, int overpayAmount)
         {
+            // todo:  over pay by potion
+            // throw new NotImplementedException()
             for (int i = 0; i < 2; ++i)
             {
                 currentPlayer.RequestPlayerGainCardFromSupply(
@@ -273,7 +277,9 @@ namespace Dominion.CardTypes
                 };
 
                 currentPlayer.RequestPlayerGainCardFromSupply(gameState,
-                    acceptableCard => acceptableCard.isTreasure && acceptableCard.CurrentCoinCost(currentPlayer) <= trashedCard.CurrentCoinCost(currentPlayer) + 3,
+                    acceptableCard => acceptableCard.isTreasure && 
+                                      acceptableCard.CurrentCoinCost(currentPlayer) <= trashedCard.CurrentCoinCost(currentPlayer) + 3 && 
+                                      acceptableCard.potionCost == 0,
                     "Gain a card costing up to 3 more than the trashed card",
                     isOptional: false,
                     defaultLocation: DeckPlacement.TopOfDeck);

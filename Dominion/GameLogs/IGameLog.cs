@@ -33,6 +33,7 @@ namespace Dominion
         void ReshuffledDiscardIntoDeck(PlayerState playerState);
         void StartGame(GameState gameState);
         void EndGame(GameState gameState);
+        void PlayerGainedPotion(PlayerState playerState, int potionCount);
         void PlayerGainedCoin(PlayerState playerState, int coinAmount);
         void PlayerGainedCoinToken(PlayerState playerState, int coinAmount);
         void PlayerGainedActions(PlayerState playerState, int actionAmount);

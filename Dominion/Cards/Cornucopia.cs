@@ -130,8 +130,8 @@ namespace Dominion.CardTypes
             int cardValue = currentPlayer.CardsInPlay.CountTypes;
 
             Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState,
-                acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= cardValue,
-                "Must gain a card costing up to 1 per differently named cadr.");
+                acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= cardValue && acceptableCard.potionCost == 0,
+                "Must gain a card costing up to 1 per differently named card.");
 
             if (gainedCard.isVictory)
             {

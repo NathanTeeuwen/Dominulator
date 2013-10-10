@@ -9,7 +9,19 @@ namespace Dominion.CardTypes
 {
     using Dominion;
     
-    public class Potion : Card { public Potion() : base("Potion", coinCost: 4) { } }
+    public class Potion 
+        : Card 
+    { 
+        public Potion() 
+            : base("Potion", coinCost: 4, isTreasure:true) 
+        { 
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.AddPotions(1);
+        }
+    }
 
     public class Alchemist 
         : Card
@@ -184,8 +196,8 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
- 	         currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) <= 5,
-                 "May gain a card costing up to 5",
+ 	         currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.isAction && card.CurrentCoinCost(currentPlayer) <= 5 && card.potionCost == 0,
+                 "May gain an action card costing up to 5",
                  isOptional:true);
         }
     }

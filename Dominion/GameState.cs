@@ -287,9 +287,10 @@ namespace Dominion
         {
             PlayerState currentPlayer = this.players.CurrentPlayer;
             return currentPlayer.AvailableCoins >= card.CurrentCoinCost(currentPlayer) &&
-                       this.GetPile(card).Any() &&
-                       !card.IsRestrictedFromBuy(currentPlayer, this) &&
-                       !currentPlayer.turnCounters.cardsBannedFromPurchase.Contains(card);
+                   currentPlayer.AvailablePotions >= card.potionCost &&
+                   this.GetPile(card).Any() &&
+                   !card.IsRestrictedFromBuy(currentPlayer, this) &&
+                   !currentPlayer.turnCounters.cardsBannedFromPurchase.Contains(card);
         }
 
         private void DoBuyPhase(PlayerState currentPlayer)
@@ -301,6 +302,11 @@ namespace Dominion
                 if (cardType == null)
                 {
                     return;
+                }
+
+                if (!CardAvailableForPurchaseForCurrentPlayer(cardType))
+                {
+                    throw new Exception("Tried to buy card that didn't meet criteria");
                 }
 
                 Card boughtCard = this.PlayerGainCardFromSupply(cardType, currentPlayer, DeckPlacement.Discard, GainReason.Buy);
@@ -316,6 +322,7 @@ namespace Dominion
                 }
 
                 currentPlayer.turnCounters.RemoveCoins(boughtCard.CurrentCoinCost(currentPlayer));
+                currentPlayer.turnCounters.RemovePotions(boughtCard.potionCost);
                 currentPlayer.turnCounters.RemoveBuy();
 
                 if (boughtCard.canOverpay)

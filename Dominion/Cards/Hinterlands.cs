@@ -21,7 +21,7 @@ namespace Dominion.CardTypes
         {
             currentPlayer.RequestPlayerGainCardFromSupply(
                 gameState,
-                card => card.CurrentCoinCost(currentPlayer) < this.CurrentCoinCost(currentPlayer),
+                card => card.CurrentCoinCost(currentPlayer) < this.CurrentCoinCost(currentPlayer) && card.potionCost == 0,
                 "Must gain a card costing less than this");
 
             return DeckPlacement.Default;
@@ -102,8 +102,8 @@ namespace Dominion.CardTypes
 
             int trashedCardCost = trashedCard.CurrentCoinCost(currentPlayer);
 
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost - 1), "Must gain a card costing one less than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost + 1), "Must gain a card costing exactly one more than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost - 1) && card.potionCost == trashedCard.potionCost, "Must gain a card costing one less than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost + 1) && card.potionCost == trashedCard.potionCost, "Must gain a card costing exactly one more than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
 
             // TODO:  put the cards on top of your deck in either order.
             //throw new NotImplementedException();
@@ -214,7 +214,7 @@ namespace Dominion.CardTypes
         private new void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
             currentPlayer.RequestPlayerGainCardFromSupply(gameState,
-                card => !card.isVictory && card.CurrentCoinCost(currentPlayer) < boughtCard.CurrentCoinCost(currentPlayer),
+                card => !card.isVictory && card.CurrentCoinCost(currentPlayer) < boughtCard.CurrentCoinCost(currentPlayer) && card.potionCost <= boughtCard.potionCost,
                 "Must gain a non victory card costing less than the bought card");
         }
     }

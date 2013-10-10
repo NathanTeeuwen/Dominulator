@@ -149,6 +149,8 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
+            // TODO: trashing potion card is included in total cost
+            // throw NotImplemented()
             Card[] trashedCards = currentPlayer.RequestPlayerTrashCardsFromHand(gameState, currentPlayer.Hand.Count, isOptional: true);
 
             int totalCost = trashedCards.Select(card => card.CurrentCoinCost(currentPlayer)).Sum();
@@ -385,7 +387,7 @@ namespace Dominion.CardTypes
 
         private new void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
-            if (boughtCard.CurrentCoinCost(currentPlayer) <= 4 && !boughtCard.isVictory)
+            if (boughtCard.CurrentCoinCost(currentPlayer) <= 4 && boughtCard.potionCost == 0 && !boughtCard.isVictory)
             {
                 currentPlayer.GainCardFromSupply(gameState, boughtCard);
             }

@@ -202,6 +202,12 @@ namespace Dominion
             this.textWriter.WriteLine("{2}{0} Coin = {1} all together.", coinAmount, playerState.AvailableCoins, sign);
         }
 
+        public void PlayerGainedPotion(PlayerState playerState, int count)
+        {
+            var sign = count > 0 ? "+" : "";
+            this.textWriter.WriteLine("{2}{0} Potions = {1} all together.", count, playerState.AvailablePotions, sign);
+        }
+
         public void PlayerGainedActions(PlayerState playerState, int actionAmount)
         {
             this.textWriter.WriteLine("+{0} Actions = {1} all together.", actionAmount, playerState.AvailableActions);

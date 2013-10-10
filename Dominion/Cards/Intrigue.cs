@@ -114,7 +114,9 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= 4, "Any card");
+            Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, 
+                acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= 4 && acceptableCard.potionCost == 0, 
+                "Any card costing up to 4");
 
             if (gainedCard.isAction)
             {
@@ -333,7 +335,8 @@ namespace Dominion.CardTypes
                 // may gain a card costing at most 2 less than it.
                 otherPlayer.RequestPlayerGainCardFromSupply(
                     gameState,
-                    acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= revealedCard.CurrentCoinCost(currentPlayer) - 2,
+                    acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= revealedCard.CurrentCoinCost(currentPlayer) - 2 && 
+                                      acceptableCard.potionCost <= revealedCard.potionCost,
                     "Must gain a card costing at most 2 less than the trashed card",
                     isOptional: true);
             }
@@ -463,7 +466,7 @@ namespace Dominion.CardTypes
                 currentPlayer.RequestPlayerGainCardFromSupply(
                     gameState,
                     otherPlayer,
-                    acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) == trashedCard.CurrentCoinCost(currentPlayer),
+                    acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) == trashedCard.CurrentCoinCost(currentPlayer) && acceptableCard.potionCost == trashedCard.potionCost,
                     "Card costing equal trashed card");
             }
         }

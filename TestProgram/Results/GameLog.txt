@@ -5,35 +5,37 @@ BigMoneyCultist gained Copper.
 BigMoneyCultist gained Copper.
 BigMoneyCultist gained Copper.
 BigMoneyCultist gained Copper.
-BigMoneyCultist gained Estate.
-BigMoneyCultist gained Estate.
-BigMoneyCultist gained Estate.
-MountebankGovernor gained Copper.
-MountebankGovernor gained Copper.
-MountebankGovernor gained Copper.
-MountebankGovernor gained Copper.
-MountebankGovernor gained Copper.
-MountebankGovernor gained Copper.
-MountebankGovernor gained Copper.
-MountebankGovernor gained Estate.
-MountebankGovernor gained Estate.
-MountebankGovernor gained Estate.
+BigMoneyCultist gained Hovel.
+BigMoneyCultist gained Necropolis.
+BigMoneyCultist gained Overgrown Estate.
+MountebankGovernorMaurader gained Copper.
+MountebankGovernorMaurader gained Copper.
+MountebankGovernorMaurader gained Copper.
+MountebankGovernorMaurader gained Copper.
+MountebankGovernorMaurader gained Copper.
+MountebankGovernorMaurader gained Copper.
+MountebankGovernorMaurader gained Copper.
+MountebankGovernorMaurader gained Hovel.
+MountebankGovernorMaurader gained Necropolis.
+MountebankGovernorMaurader gained Overgrown Estate.
 BigMoneyCultist reshuffled
-BigMoneyCultist Drew Estate into hand.
+BigMoneyCultist Drew Necropolis into hand.
 BigMoneyCultist Drew Copper into hand.
 BigMoneyCultist Drew Copper into hand.
-BigMoneyCultist Drew Estate into hand.
+BigMoneyCultist Drew Overgrown Estate into hand.
 BigMoneyCultist Drew Copper into hand.
-MountebankGovernor reshuffled
-MountebankGovernor Drew Copper into hand.
-MountebankGovernor Drew Copper into hand.
-MountebankGovernor Drew Copper into hand.
-MountebankGovernor Drew Copper into hand.
-MountebankGovernor Drew Copper into hand.
+MountebankGovernorMaurader reshuffled
+MountebankGovernorMaurader Drew Copper into hand.
+MountebankGovernorMaurader Drew Copper into hand.
+MountebankGovernorMaurader Drew Copper into hand.
+MountebankGovernorMaurader Drew Copper into hand.
+MountebankGovernorMaurader Drew Copper into hand.
 ROUND 1
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
+With hand: Copper,Copper,Copper,Necropolis,Overgrown Estate,
+  BigMoneyCultist Played Necropolis.
+    +2 Actions = 2 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 1 all together.
   BigMoneyCultist Played Copper.
@@ -44,44 +46,44 @@ With hand: Copper,Copper,Copper,Estate,Estate,
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Necropolis.
+  BigMoneyCultist Discarded Overgrown Estate.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Hovel into hand.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoneyCultist ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(1), 
 
-MountebankGovernor begins turn
+MountebankGovernorMaurader begins turn
 With hand: Copper,Copper,Copper,Copper,Copper,
-  MountebankGovernor Played Copper.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 1 all together.
-  MountebankGovernor Played Copper.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 2 all together.
-  MountebankGovernor Played Copper.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 3 all together.
-  MountebankGovernor Played Copper.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 4 all together.
-  MountebankGovernor Played Copper.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 5 all together.
-  MountebankGovernor bought Mountebank.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Drew Estate into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Estate into hand.
-  MountebankGovernor Drew Estate into hand.
-  MountebankGovernor ends turn with deck: Copper(7), Estate(3), Mountebank(1), 
+  MountebankGovernorMaurader bought Mountebank.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Drew Overgrown Estate into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Hovel into hand.
+  MountebankGovernorMaurader Drew Necropolis into hand.
+  MountebankGovernorMaurader ends turn with deck: Copper(7), Hovel(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), 
 
 ROUND 2
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
+With hand: Copper,Copper,Copper,Copper,Hovel,
   BigMoneyCultist Played Copper.
     +1 Coin = 1 all together.
   BigMoneyCultist Played Copper.
@@ -95,33 +97,35 @@ With hand: Copper,Copper,Copper,Copper,Estate,
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Hovel.
   BigMoneyCultist reshuffled
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Silver into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoneyCultist ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(2), 
 
-MountebankGovernor begins turn
-With hand: Copper,Copper,Estate,Estate,Estate,
-  MountebankGovernor Played Copper.
+MountebankGovernorMaurader begins turn
+With hand: Copper,Copper,Hovel,Necropolis,Overgrown Estate,
+  MountebankGovernorMaurader Played Necropolis.
+    +2 Actions = 2 all together.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 1 all together.
-  MountebankGovernor Played Copper.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 2 all together.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Estate.
-  MountebankGovernor Discarded Estate.
-  MountebankGovernor Discarded Estate.
-  MountebankGovernor reshuffled
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Estate into hand.
-  MountebankGovernor Drew Estate into hand.
-  MountebankGovernor ends turn with deck: Copper(7), Estate(3), Mountebank(1), 
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Necropolis.
+  MountebankGovernorMaurader Discarded Hovel.
+  MountebankGovernorMaurader Discarded Overgrown Estate.
+  MountebankGovernorMaurader reshuffled
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Hovel into hand.
+  MountebankGovernorMaurader Drew Necropolis into hand.
+  MountebankGovernorMaurader ends turn with deck: Copper(7), Hovel(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), 
 
 ROUND 3
 -------------
@@ -144,37 +148,39 @@ With hand: Copper,Copper,Copper,Copper,Silver,
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Hovel into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Overgrown Estate into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(1), Estate(3), Silver(2), 
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(2), 
 
-MountebankGovernor begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  MountebankGovernor Played Copper.
+MountebankGovernorMaurader begins turn
+With hand: Copper,Copper,Copper,Hovel,Necropolis,
+  MountebankGovernorMaurader Played Necropolis.
+    +2 Actions = 2 all together.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 1 all together.
-  MountebankGovernor Played Copper.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 2 all together.
-  MountebankGovernor Played Copper.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 3 all together.
-  MountebankGovernor bought Silver.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Estate.
-  MountebankGovernor Discarded Estate.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Estate into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Mountebank into hand.
-  MountebankGovernor ends turn with deck: Copper(7), Estate(3), Mountebank(1), Silver(1), 
+  MountebankGovernorMaurader bought Silver.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Necropolis.
+  MountebankGovernorMaurader Discarded Hovel.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Mountebank into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Overgrown Estate into hand.
+  MountebankGovernorMaurader ends turn with deck: Copper(7), Hovel(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Silver(1), 
 
 ROUND 4
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
+With hand: Copper,Copper,Copper,Hovel,Overgrown Estate,
   BigMoneyCultist Played Copper.
     +1 Coin = 1 all together.
   BigMoneyCultist Played Copper.
@@ -185,46 +191,48 @@ With hand: Copper,Copper,Copper,Estate,Estate,
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Discarded Hovel.
+  BigMoneyCultist Discarded Overgrown Estate.
+  BigMoneyCultist Drew Necropolis into hand.
   BigMoneyCultist Drew Silver into hand.
   BigMoneyCultist reshuffled
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Hovel into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(7), Cultist(1), Estate(3), Silver(3), 
+  BigMoneyCultist ends turn with deck: Copper(7), Cultist(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(3), 
 
-MountebankGovernor begins turn
-With hand: Copper,Copper,Copper,Estate,Mountebank,
-  MountebankGovernor Played Mountebank.
+MountebankGovernorMaurader begins turn
+With hand: Copper,Copper,Copper,Mountebank,Overgrown Estate,
+  MountebankGovernorMaurader Played Mountebank.
     +2 Coin = 2 all together.
     BigMoneyCultist gained Curse.
     BigMoneyCultist gained Copper.
-  MountebankGovernor Played Copper.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 3 all together.
-  MountebankGovernor Played Copper.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 4 all together.
-  MountebankGovernor Played Copper.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 5 all together.
-  MountebankGovernor bought Mountebank.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Mountebank.
-  MountebankGovernor Discarded Estate.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor reshuffled
-  MountebankGovernor Drew Estate into hand.
-  MountebankGovernor Drew Mountebank into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor ends turn with deck: Copper(7), Estate(3), Mountebank(2), Silver(1), 
+  MountebankGovernorMaurader bought Governor.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Mountebank.
+  MountebankGovernorMaurader Discarded Overgrown Estate.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader reshuffled
+  MountebankGovernorMaurader Drew Hovel into hand.
+  MountebankGovernorMaurader Drew Necropolis into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader ends turn with deck: Copper(7), Governor(1), Hovel(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Silver(1), 
 
 ROUND 5
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
+With hand: Copper,Copper,Hovel,Necropolis,Silver,
+  BigMoneyCultist Played Necropolis.
+    +2 Actions = 2 all together.
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
   BigMoneyCultist Played Copper.
@@ -235,39 +243,37 @@ With hand: Copper,Copper,Estate,Estate,Silver,
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Necropolis.
+  BigMoneyCultist Discarded Hovel.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Silver into hand.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist ends turn with deck: Copper(8), Cultist(1), Curse(1), Estate(3), Silver(4), 
+  BigMoneyCultist ends turn with deck: Copper(8), Cultist(1), Curse(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
 
-MountebankGovernor begins turn
-With hand: Copper,Copper,Copper,Estate,Mountebank,
-  MountebankGovernor Played Mountebank.
-    +2 Coin = 2 all together.
-    BigMoneyCultist gained Curse.
-    BigMoneyCultist gained Copper.
-  MountebankGovernor Played Copper.
+MountebankGovernorMaurader begins turn
+With hand: Copper,Copper,Copper,Hovel,Necropolis,
+  MountebankGovernorMaurader Played Necropolis.
+    +2 Actions = 2 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 1 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 2 all together.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 3 all together.
-  MountebankGovernor Played Copper.
-    +1 Coin = 4 all together.
-  MountebankGovernor Played Copper.
-    +1 Coin = 5 all together.
-  MountebankGovernor bought Governor.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Mountebank.
-  MountebankGovernor Discarded Estate.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Silver into hand.
-  MountebankGovernor Drew Mountebank into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor ends turn with deck: Copper(7), Estate(3), Governor(1), Mountebank(2), Silver(1), 
+  MountebankGovernorMaurader bought Silver.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Necropolis.
+  MountebankGovernorMaurader Discarded Hovel.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Silver into hand.
+  MountebankGovernorMaurader Drew Overgrown Estate into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader ends turn with deck: Copper(7), Governor(1), Hovel(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Silver(2), 
 
 ROUND 6
 -------------
@@ -290,48 +296,239 @@ With hand: Copper,Copper,Copper,Silver,Silver,
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Overgrown Estate into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist reshuffled
-  BigMoneyCultist Drew Curse into hand.
-  BigMoneyCultist ends turn with deck: Copper(9), Cultist(2), Curse(2), Estate(3), Silver(4), 
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(8), Cultist(2), Curse(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
 
-MountebankGovernor begins turn
-With hand: Copper,Copper,Copper,Mountebank,Silver,
-  MountebankGovernor Played Mountebank.
+MountebankGovernorMaurader begins turn
+With hand: Copper,Copper,Copper,Overgrown Estate,Silver,
+  MountebankGovernorMaurader Played Silver.
     +2 Coin = 2 all together.
-    BigMoneyCultist Discarded Curse.
-  MountebankGovernor Played Silver.
-    +2 Coin = 4 all together.
-  MountebankGovernor Played Copper.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 3 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 4 all together.
+  MountebankGovernorMaurader Played Copper.
     +1 Coin = 5 all together.
-  MountebankGovernor Played Copper.
-    +1 Coin = 6 all together.
-  MountebankGovernor Played Copper.
-    +1 Coin = 7 all together.
-  MountebankGovernor bought Gold.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Silver.
-  MountebankGovernor Discarded Mountebank.
-  MountebankGovernor Drew Estate into hand.
-  MountebankGovernor Drew Estate into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor reshuffled
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Mountebank into hand.
-  MountebankGovernor ends turn with deck: Copper(7), Estate(3), Gold(1), Governor(1), Mountebank(2), Silver(1), 
+  MountebankGovernorMaurader bought Governor.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Silver.
+  MountebankGovernorMaurader Discarded Overgrown Estate.
+  MountebankGovernorMaurader Drew Governor into hand.
+  MountebankGovernorMaurader Drew Mountebank into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader reshuffled
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Silver into hand.
+  MountebankGovernorMaurader ends turn with deck: Copper(7), Governor(2), Hovel(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Silver(2), 
 
 ROUND 7
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Estate,
+With hand: Copper,Copper,Copper,Cultist,Overgrown Estate,
   BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Estate into hand.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Drew Copper into hand.
+    MountebankGovernorMaurader gained Ruined Market.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Overgrown Estate.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Hovel into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist ends turn with deck: Copper(8), Cultist(3), Curse(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
+
+MountebankGovernorMaurader begins turn
+With hand: Copper,Copper,Governor,Mountebank,Silver,
+  MountebankGovernorMaurader Played Governor.
+    +1 Actions = 1 all together.
+    MountebankGovernorMaurader Drew Copper into hand.
+    MountebankGovernorMaurader Drew Necropolis into hand.
+    MountebankGovernorMaurader Drew Governor into hand.
     BigMoneyCultist Drew Silver into hand.
-    MountebankGovernor gained Ruined Market.
+  MountebankGovernorMaurader Played Necropolis.
+    +2 Actions = 2 all together.
+  MountebankGovernorMaurader Played Governor.
+    +1 Actions = 2 all together.
+    MountebankGovernorMaurader Drew Copper into hand.
+    MountebankGovernorMaurader Drew Silver into hand.
+    MountebankGovernorMaurader Drew Copper into hand.
+    BigMoneyCultist Drew Silver into hand.
+  MountebankGovernorMaurader Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist Discarded Curse.
+  MountebankGovernorMaurader Played Silver.
+    +2 Coin = 4 all together.
+  MountebankGovernorMaurader Played Silver.
+    +2 Coin = 6 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 7 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 8 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 9 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 10 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 11 all together.
+  MountebankGovernorMaurader bought Province.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Silver.
+  MountebankGovernorMaurader Discarded Silver.
+  MountebankGovernorMaurader Discarded Mountebank.
+  MountebankGovernorMaurader Discarded Governor.
+  MountebankGovernorMaurader Discarded Governor.
+  MountebankGovernorMaurader Discarded Necropolis.
+  MountebankGovernorMaurader Drew Overgrown Estate into hand.
+  MountebankGovernorMaurader Drew Hovel into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader reshuffled
+  MountebankGovernorMaurader Drew Silver into hand.
+  MountebankGovernorMaurader ends turn with deck: Copper(7), Governor(2), Hovel(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Province(1), Ruined Market(1), Silver(2), 
+
+ROUND 8
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Hovel,Silver,Silver,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Necropolis into hand.
+    BigMoneyCultist Drew Silver into hand.
+    MountebankGovernorMaurader gained Survivors.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyCultist bought Gold.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Hovel.
+  BigMoneyCultist Discarded Necropolis.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist ends turn with deck: Copper(8), Cultist(3), Curse(1), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
+
+MountebankGovernorMaurader begins turn
+With hand: Copper,Copper,Hovel,Overgrown Estate,Silver,
+  MountebankGovernorMaurader Played Silver.
+    +2 Coin = 2 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 3 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 4 all together.
+  MountebankGovernorMaurader bought Marauder.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Silver.
+  MountebankGovernorMaurader Discarded Hovel.
+  MountebankGovernorMaurader Discarded Overgrown Estate.
+  MountebankGovernorMaurader Drew Province into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Necropolis into hand.
+  MountebankGovernorMaurader ends turn with deck: Copper(7), Governor(2), Hovel(1), Marauder(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Province(1), Ruined Market(1), Silver(2), Survivors(1), 
+
+ROUND 9
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyCultist bought Gold.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Hovel into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Necropolis into hand.
+  BigMoneyCultist ends turn with deck: Copper(8), Cultist(3), Curse(1), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
+
+MountebankGovernorMaurader begins turn
+With hand: Copper,Copper,Copper,Necropolis,Province,
+  MountebankGovernorMaurader Played Necropolis.
+    +2 Actions = 2 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 1 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 2 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 3 all together.
+  MountebankGovernorMaurader bought Silver.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Necropolis.
+  MountebankGovernorMaurader Discarded Province.
+  MountebankGovernorMaurader Drew Ruined Market into hand.
+  MountebankGovernorMaurader Drew Governor into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Mountebank into hand.
+  MountebankGovernorMaurader Drew Governor into hand.
+  MountebankGovernorMaurader ends turn with deck: Copper(7), Governor(2), Hovel(1), Marauder(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Province(1), Ruined Market(1), Silver(3), Survivors(1), 
+
+ROUND 10
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Hovel,Necropolis,Silver,
+  BigMoneyCultist Played Necropolis.
+    +2 Actions = 2 all together.
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Curse into hand.
+    BigMoneyCultist Drew Copper into hand.
+    MountebankGovernorMaurader gained Ruined Library.
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
   BigMoneyCultist Played Copper.
@@ -343,97 +540,221 @@ With hand: Copper,Copper,Cultist,Estate,
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Discarded Necropolis.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Hovel.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Overgrown Estate into hand.
   BigMoneyCultist Drew Silver into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Estate into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(9), Cultist(2), Curse(2), Estate(3), Silver(5), 
+  BigMoneyCultist ends turn with deck: Copper(8), Cultist(3), Curse(1), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(5), 
 
-MountebankGovernor begins turn
-With hand: Copper,Copper,Estate,Estate,Mountebank,
-  MountebankGovernor Played Mountebank.
+MountebankGovernorMaurader begins turn
+With hand: Copper,Governor,Governor,Mountebank,Ruined Market,
+  MountebankGovernorMaurader Played Governor.
+    +1 Actions = 1 all together.
+    MountebankGovernorMaurader Drew Silver into hand.
+    MountebankGovernorMaurader Drew Copper into hand.
+    MountebankGovernorMaurader reshuffled
+    MountebankGovernorMaurader Drew Silver into hand.
+    BigMoneyCultist Drew Copper into hand.
+  MountebankGovernorMaurader Played Governor.
+    +1 Actions = 1 all together.
+    MountebankGovernorMaurader Drew Necropolis into hand.
+    MountebankGovernorMaurader Drew Marauder into hand.
+    MountebankGovernorMaurader Drew Province into hand.
+    BigMoneyCultist Drew Gold into hand.
+  MountebankGovernorMaurader Played Necropolis.
+    +2 Actions = 2 all together.
+  MountebankGovernorMaurader Played Ruined Market.
+    +1 Buys = 2 all together.
+  MountebankGovernorMaurader Played Marauder.
+    MountebankGovernorMaurader gained Spoils.
+    BigMoneyCultist gained Ruined Village.
+  MountebankGovernorMaurader Played Silver.
     +2 Coin = 2 all together.
-    BigMoneyCultist gained Curse.
-    BigMoneyCultist gained Copper.
-  MountebankGovernor Played Copper.
-    +1 Coin = 3 all together.
-  MountebankGovernor Played Copper.
-    +1 Coin = 4 all together.
-  MountebankGovernor bought Silver.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Mountebank.
-  MountebankGovernor Discarded Estate.
-  MountebankGovernor Discarded Estate.
-  MountebankGovernor Drew Gold into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Mountebank into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor ends turn with deck: Copper(7), Estate(3), Gold(1), Governor(1), Mountebank(2), Ruined Market(1), Silver(2), 
+  MountebankGovernorMaurader Played Silver.
+    +2 Coin = 4 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 5 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 6 all together.
+  MountebankGovernorMaurader bought Gold.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Silver.
+  MountebankGovernorMaurader Discarded Silver.
+  MountebankGovernorMaurader Discarded Ruined Market.
+  MountebankGovernorMaurader Discarded Governor.
+  MountebankGovernorMaurader Discarded Governor.
+  MountebankGovernorMaurader Discarded Marauder.
+  MountebankGovernorMaurader Discarded Necropolis.
+  MountebankGovernorMaurader Discarded Province.
+  MountebankGovernorMaurader Discarded Mountebank.
+  MountebankGovernorMaurader Drew Silver into hand.
+  MountebankGovernorMaurader Drew Ruined Library into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Overgrown Estate into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader ends turn with deck: Copper(7), Gold(1), Governor(2), Hovel(1), Marauder(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Province(1), Ruined Library(1), Ruined Market(1), Silver(3), Spoils(1), Survivors(1), 
 
-ROUND 8
+ROUND 11
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
+With hand: Copper,Copper,Copper,Cultist,Gold,Overgrown Estate,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist reshuffled
+    BigMoneyCultist Drew Curse into hand.
+    MountebankGovernorMaurader gained Ruined Village.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Silver into hand.
+      BigMoneyCultist Drew Ruined Village into hand.
+      MountebankGovernorMaurader gained Abandoned Mine.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
   BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 7 all together.
   BigMoneyCultist Played Copper.
-    +1 Coin = 3 all together.
+    +1 Coin = 8 all together.
   BigMoneyCultist Played Copper.
-    +1 Coin = 4 all together.
+    +1 Coin = 9 all together.
   BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist bought Cultist.
+    +1 Coin = 10 all together.
+  BigMoneyCultist bought Province.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Gold.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Ruined Village.
+  BigMoneyCultist Discarded Overgrown Estate.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Curse into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Silver into hand.
   BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist ends turn with deck: Copper(10), Cultist(3), Curse(3), Estate(3), Silver(5), 
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist Drew Necropolis into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist ends turn with deck: Copper(8), Cultist(3), Curse(1), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(1), Ruined Village(1), Silver(5), 
 
-MountebankGovernor begins turn
-With hand: Copper,Copper,Copper,Gold,Mountebank,
-  MountebankGovernor Played Mountebank.
+MountebankGovernorMaurader begins turn
+With hand: Copper,Copper,Overgrown Estate,Ruined Library,Silver,
+  MountebankGovernorMaurader Played Ruined Library.
+    MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Played Silver.
     +2 Coin = 2 all together.
-    BigMoneyCultist Discarded Curse.
-  MountebankGovernor Played Gold.
-    +3 Coin = 5 all together.
-  MountebankGovernor Played Copper.
-    +1 Coin = 6 all together.
-  MountebankGovernor Played Copper.
-    +1 Coin = 7 all together.
-  MountebankGovernor Played Copper.
-    +1 Coin = 8 all together.
-  MountebankGovernor bought Gold.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Gold.
-  MountebankGovernor Discarded Mountebank.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Silver into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Governor into hand.
-  MountebankGovernor Drew Estate into hand.
-  MountebankGovernor ends turn with deck: Copper(7), Estate(3), Gold(2), Governor(1), Mountebank(2), Ruined Market(1), Silver(2), 
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 3 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 4 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 5 all together.
+  MountebankGovernorMaurader bought Governor.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Silver.
+  MountebankGovernorMaurader Discarded Ruined Library.
+  MountebankGovernorMaurader Discarded Overgrown Estate.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Survivors into hand.
+  MountebankGovernorMaurader Drew Hovel into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader reshuffled
+  MountebankGovernorMaurader Drew Governor into hand.
+  MountebankGovernorMaurader ends turn with deck: Abandoned Mine(1), Copper(7), Gold(1), Governor(3), Hovel(1), Marauder(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Province(1), Ruined Library(1), Ruined Market(1), Ruined Village(1), Silver(3), Spoils(1), Survivors(1), 
 
-ROUND 9
+ROUND 12
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Silver,
+With hand: Copper,Cultist,Gold,Necropolis,Silver,
+  BigMoneyCultist Played Necropolis.
+    +2 Actions = 2 all together.
   BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Silver into hand.
+    BigMoneyCultist Drew Hovel into hand.
     BigMoneyCultist Drew Copper into hand.
-    MountebankGovernor gained Survivors.
+    MountebankGovernorMaurader gained Ruined Village.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyCultist bought Gold.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Gold.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Necropolis.
+  BigMoneyCultist Discarded Hovel.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(8), Cultist(3), Curse(1), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(1), Ruined Village(1), Silver(5), 
+
+MountebankGovernorMaurader begins turn
+With hand: Copper,Copper,Governor,Hovel,Survivors,
+  MountebankGovernorMaurader Played Governor.
+    +1 Actions = 1 all together.
+    MountebankGovernorMaurader Drew Governor into hand.
+    MountebankGovernorMaurader Drew Silver into hand.
+    MountebankGovernorMaurader Drew Copper into hand.
+    BigMoneyCultist reshuffled
+    BigMoneyCultist Drew Necropolis into hand.
+  MountebankGovernorMaurader Played Governor.
+    +1 Actions = 1 all together.
+    MountebankGovernorMaurader Drew Spoils into hand.
+    MountebankGovernorMaurader Drew Ruined Market into hand.
+    MountebankGovernorMaurader Drew Marauder into hand.
+    BigMoneyCultist Drew Province into hand.
+  MountebankGovernorMaurader Played Ruined Market.
+    +1 Buys = 2 all together.
+  MountebankGovernorMaurader Played Silver.
+    +2 Coin = 2 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 3 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 4 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 5 all together.
+  MountebankGovernorMaurader Played Spoils.
+    +3 Coin = 8 all together.
+    MountebankGovernorMaurader returned Spoils to its pile
+  MountebankGovernorMaurader bought Province.
+    MountebankGovernorMaurader trashed Hovel.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Silver.
+  MountebankGovernorMaurader Discarded Ruined Market.
+  MountebankGovernorMaurader Discarded Governor.
+  MountebankGovernorMaurader Discarded Governor.
+  MountebankGovernorMaurader Discarded Survivors.
+  MountebankGovernorMaurader Discarded Marauder.
+  MountebankGovernorMaurader Drew Province into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Gold into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Ruined Village into hand.
+  MountebankGovernorMaurader ends turn with deck: Abandoned Mine(1), Copper(7), Gold(1), Governor(3), Marauder(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Province(2), Ruined Library(1), Ruined Market(1), Ruined Village(2), Silver(3), Survivors(1), 
+
+ROUND 13
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Necropolis,Province,Silver,Silver,
+  BigMoneyCultist Played Necropolis.
+    +2 Actions = 2 all together.
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
   BigMoneyCultist Played Silver.
@@ -444,101 +765,418 @@ With hand: Copper,Copper,Cultist,Silver,
     +1 Coin = 6 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyCultist bought Cultist.
+  BigMoneyCultist bought Duchy.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Necropolis.
+  BigMoneyCultist Discarded Province.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Overgrown Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist ends turn with deck: Copper(8), Cultist(3), Curse(1), Duchy(1), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(1), Ruined Village(1), Silver(5), 
+
+MountebankGovernorMaurader begins turn
+With hand: Copper,Copper,Gold,Province,Ruined Village,
+  MountebankGovernorMaurader Played Ruined Village.
+    +1 Actions = 1 all together.
+  MountebankGovernorMaurader Played Gold.
+    +3 Coin = 3 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 4 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 5 all together.
+  MountebankGovernorMaurader bought Governor.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Gold.
+  MountebankGovernorMaurader Discarded Ruined Village.
+  MountebankGovernorMaurader Discarded Province.
+  MountebankGovernorMaurader Drew Silver into hand.
+  MountebankGovernorMaurader Drew Necropolis into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Ruined Library into hand.
+  MountebankGovernorMaurader Drew Abandoned Mine into hand.
+  MountebankGovernorMaurader ends turn with deck: Abandoned Mine(1), Copper(7), Gold(1), Governor(4), Marauder(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Province(2), Ruined Library(1), Ruined Market(1), Ruined Village(2), Silver(3), Survivors(1), 
+
+ROUND 14
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Cultist,Overgrown Estate,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Drew Gold into hand.
+    MountebankGovernorMaurader gained Ruined Market.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Cultist into hand.
+      BigMoneyCultist Drew Silver into hand.
+      MountebankGovernorMaurader gained Ruined Village.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Hovel into hand.
+        BigMoneyCultist Drew Silver into hand.
+        MountebankGovernorMaurader gained Survivors.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyCultist bought Province.
+    BigMoneyCultist trashed Hovel.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Gold.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Overgrown Estate.
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist ends turn with deck: Copper(8), Cultist(3), Curse(1), Duchy(1), Gold(3), Necropolis(1), Overgrown Estate(1), Province(2), Ruined Village(1), Silver(5), 
+
+MountebankGovernorMaurader begins turn
+With hand: Abandoned Mine,Copper,Necropolis,Ruined Library,Silver,
+  MountebankGovernorMaurader Played Necropolis.
+    +2 Actions = 2 all together.
+  MountebankGovernorMaurader Played Abandoned Mine.
+    +1 Coin = 1 all together.
+  MountebankGovernorMaurader Played Ruined Library.
+    MountebankGovernorMaurader Drew Governor into hand.
+  MountebankGovernorMaurader Played Silver.
+    +2 Coin = 3 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 4 all together.
+  MountebankGovernorMaurader bought Silver.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Silver.
+  MountebankGovernorMaurader Discarded Abandoned Mine.
+  MountebankGovernorMaurader Discarded Ruined Library.
+  MountebankGovernorMaurader Discarded Necropolis.
+  MountebankGovernorMaurader Discarded Governor.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Overgrown Estate into hand.
+  MountebankGovernorMaurader Drew Silver into hand.
+  MountebankGovernorMaurader Drew Mountebank into hand.
+  MountebankGovernorMaurader reshuffled
+  MountebankGovernorMaurader Drew Governor into hand.
+  MountebankGovernorMaurader ends turn with deck: Abandoned Mine(1), Copper(7), Gold(1), Governor(4), Marauder(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(3), Silver(4), Survivors(2), 
+
+ROUND 15
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Curse,Gold,Gold,Silver,
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Gold.
+  BigMoneyCultist Discarded Gold.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Ruined Village into hand.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Province into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist ends turn with deck: Copper(8), Cultist(3), Curse(1), Duchy(1), Gold(3), Necropolis(1), Overgrown Estate(1), Province(3), Ruined Village(1), Silver(5), 
+
+MountebankGovernorMaurader begins turn
+With hand: Copper,Governor,Mountebank,Overgrown Estate,Silver,
+  MountebankGovernorMaurader Played Governor.
+    +1 Actions = 1 all together.
+    MountebankGovernorMaurader Drew Silver into hand.
+    MountebankGovernorMaurader Drew Gold into hand.
+    MountebankGovernorMaurader Drew Governor into hand.
+    BigMoneyCultist Drew Province into hand.
+  MountebankGovernorMaurader Played Governor.
+    +1 Actions = 1 all together.
+    MountebankGovernorMaurader trashed Gold.
+    MountebankGovernorMaurader gained Province.
+    BigMoneyCultist trashed Ruined Village.
+  MountebankGovernorMaurader Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist gained Curse.
+    BigMoneyCultist gained Copper.
+  MountebankGovernorMaurader Played Silver.
+    +2 Coin = 4 all together.
+  MountebankGovernorMaurader Played Silver.
+    +2 Coin = 6 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 7 all together.
+  MountebankGovernorMaurader bought Duchy.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Silver.
+  MountebankGovernorMaurader Discarded Silver.
+  MountebankGovernorMaurader Discarded Mountebank.
+  MountebankGovernorMaurader Discarded Governor.
+  MountebankGovernorMaurader Discarded Governor.
+  MountebankGovernorMaurader Discarded Overgrown Estate.
+  MountebankGovernorMaurader Drew Marauder into hand.
+  MountebankGovernorMaurader Drew Abandoned Mine into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Survivors into hand.
+  MountebankGovernorMaurader Drew Ruined Village into hand.
+  MountebankGovernorMaurader ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(1), Governor(4), Marauder(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(3), Silver(4), Survivors(2), 
+
+ROUND 16
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Province,Province,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoneyCultist Drew Province into hand.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist bought Duchy.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist reshuffled
+  BigMoneyCultist Discarded Province.
+  BigMoneyCultist Discarded Province.
+  BigMoneyCultist Discarded Province.
   BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Gold into hand.
   BigMoneyCultist Drew Silver into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Curse into hand.
-  BigMoneyCultist ends turn with deck: Copper(10), Cultist(4), Curse(3), Estate(3), Silver(5), 
+  BigMoneyCultist ends turn with deck: Copper(9), Cultist(3), Curse(2), Duchy(2), Gold(3), Necropolis(1), Overgrown Estate(1), Province(3), Silver(5), 
 
-MountebankGovernor begins turn
-With hand: Copper,Copper,Estate,Governor,Silver,
-  MountebankGovernor Played Governor.
+MountebankGovernorMaurader begins turn
+With hand: Abandoned Mine,Copper,Marauder,Ruined Village,Survivors,
+  MountebankGovernorMaurader Played Ruined Village.
     +1 Actions = 1 all together.
-    MountebankGovernor reshuffled
-    MountebankGovernor Drew Ruined Market into hand.
-    MountebankGovernor Drew Estate into hand.
-    MountebankGovernor Drew Copper into hand.
-    BigMoneyCultist Drew Silver into hand.
-  MountebankGovernor Played Ruined Market.
-    +1 Buys = 2 all together.
-  MountebankGovernor Played Silver.
-    +2 Coin = 2 all together.
-  MountebankGovernor Played Copper.
-    +1 Coin = 3 all together.
-  MountebankGovernor Played Copper.
-    +1 Coin = 4 all together.
-  MountebankGovernor Played Copper.
-    +1 Coin = 5 all together.
-  MountebankGovernor bought Governor.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Silver.
-  MountebankGovernor Discarded Ruined Market.
-  MountebankGovernor Discarded Governor.
-  MountebankGovernor Discarded Estate.
-  MountebankGovernor Discarded Estate.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Copper into hand.
-  MountebankGovernor Drew Gold into hand.
-  MountebankGovernor Drew Survivors into hand.
-  MountebankGovernor ends turn with deck: Copper(7), Estate(3), Gold(2), Governor(2), Mountebank(2), Ruined Market(1), Silver(2), Survivors(1), 
+  MountebankGovernorMaurader Played Abandoned Mine.
+    +1 Coin = 1 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 2 all together.
+  MountebankGovernorMaurader bought Estate.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Abandoned Mine.
+  MountebankGovernorMaurader Discarded Ruined Village.
+  MountebankGovernorMaurader Discarded Survivors.
+  MountebankGovernorMaurader Discarded Marauder.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Province into hand.
+  MountebankGovernorMaurader Drew Province into hand.
+  MountebankGovernorMaurader Drew Ruined Market into hand.
+  MountebankGovernorMaurader ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(1), Estate(1), Governor(4), Marauder(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(3), Silver(4), Survivors(2), 
 
-ROUND 10
+ROUND 17
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Curse,Silver,Silver,Silver,
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyCultist bought Province.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Gold.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Overgrown Estate into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Duchy into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(9), Cultist(3), Curse(2), Duchy(2), Gold(3), Necropolis(1), Overgrown Estate(1), Province(4), Silver(5), 
+
+MountebankGovernorMaurader begins turn
+With hand: Copper,Copper,Province,Province,Ruined Market,
+  MountebankGovernorMaurader Played Ruined Market.
+    +1 Buys = 2 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 1 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 2 all together.
+  MountebankGovernorMaurader bought Estate.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Ruined Market.
+  MountebankGovernorMaurader Discarded Province.
+  MountebankGovernorMaurader Discarded Province.
+  MountebankGovernorMaurader Drew Governor into hand.
+  MountebankGovernorMaurader Drew Necropolis into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Ruined Library into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(1), Estate(2), Governor(4), Marauder(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(3), Silver(4), Survivors(2), 
+
+ROUND 18
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Duchy,Overgrown Estate,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Drew Curse into hand.
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyCultist Played Silver.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyCultist bought Estate.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Duchy.
+  BigMoneyCultist Discarded Overgrown Estate.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Necropolis into hand.
+  BigMoneyCultist Drew Gold into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist ends turn with deck: Copper(9), Cultist(3), Curse(2), Duchy(2), Estate(1), Gold(3), Necropolis(1), Overgrown Estate(1), Province(4), Silver(5), 
+
+MountebankGovernorMaurader begins turn
+With hand: Copper,Copper,Governor,Necropolis,Ruined Library,
+  MountebankGovernorMaurader Played Necropolis.
+    +2 Actions = 2 all together.
+  MountebankGovernorMaurader Played Governor.
+    +1 Actions = 2 all together.
+    MountebankGovernorMaurader Drew Survivors into hand.
+    MountebankGovernorMaurader Drew Ruined Village into hand.
+    MountebankGovernorMaurader Drew Governor into hand.
+    BigMoneyCultist Drew Copper into hand.
+  MountebankGovernorMaurader Played Ruined Village.
+    +1 Actions = 2 all together.
+  MountebankGovernorMaurader Played Governor.
+    +1 Actions = 2 all together.
+    MountebankGovernorMaurader Drew Copper into hand.
+    MountebankGovernorMaurader Drew Ruined Market into hand.
+    MountebankGovernorMaurader Drew Silver into hand.
+    BigMoneyCultist Drew Gold into hand.
+  MountebankGovernorMaurader Played Ruined Market.
+    +1 Buys = 2 all together.
+  MountebankGovernorMaurader Played Ruined Library.
+    MountebankGovernorMaurader Drew Silver into hand.
+  MountebankGovernorMaurader Played Silver.
+    +2 Coin = 2 all together.
+  MountebankGovernorMaurader Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 6 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 5 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 6 all together.
+  MountebankGovernorMaurader Played Copper.
+    +1 Coin = 7 all together.
+  MountebankGovernorMaurader bought Duchy.
+  MountebankGovernorMaurader bought Estate.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Copper.
+  MountebankGovernorMaurader Discarded Silver.
+  MountebankGovernorMaurader Discarded Silver.
+  MountebankGovernorMaurader Discarded Ruined Market.
+  MountebankGovernorMaurader Discarded Ruined Library.
+  MountebankGovernorMaurader Discarded Ruined Village.
+  MountebankGovernorMaurader Discarded Governor.
+  MountebankGovernorMaurader Discarded Governor.
+  MountebankGovernorMaurader Discarded Necropolis.
+  MountebankGovernorMaurader Discarded Survivors.
+  MountebankGovernorMaurader Drew Ruined Village into hand.
+  MountebankGovernorMaurader reshuffled
+  MountebankGovernorMaurader Drew Overgrown Estate into hand.
+  MountebankGovernorMaurader Drew Silver into hand.
+  MountebankGovernorMaurader Drew Copper into hand.
+  MountebankGovernorMaurader Drew Estate into hand.
+  MountebankGovernorMaurader ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(3), Governor(4), Marauder(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(3), Silver(4), Survivors(2), 
+
+ROUND 19
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Copper,Cultist,Gold,Gold,Necropolis,
+  BigMoneyCultist Played Necropolis.
+    +2 Actions = 2 all together.
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist reshuffled
+    BigMoneyCultist Drew Province into hand.
+    BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyCultist Played Gold.
+    +3 Coin = 6 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 7 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 8 all together.
-  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyCultist bought Province.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Gold.
+  BigMoneyCultist Discarded Gold.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Necropolis.
+  BigMoneyCultist Discarded Province.
+  BigMoneyCultist Drew Province into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Curse into hand.
   BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(10), Cultist(5), Curse(3), Estate(3), Silver(5), 
+  BigMoneyCultist ends turn with deck: Copper(9), Cultist(3), Curse(2), Duchy(2), Estate(1), Gold(3), Necropolis(1), Overgrown Estate(1), Province(5), Silver(5), 
 
-MountebankGovernor begins turn
-With hand: Copper,Copper,Copper,Gold,Survivors,
-  MountebankGovernor Played Survivors.
-    MountebankGovernor Revealed Mountebank.
-    MountebankGovernor Revealed Silver.
-  MountebankGovernor Played Gold.
-    +3 Coin = 3 all together.
-  MountebankGovernor Played Copper.
-    +1 Coin = 4 all together.
-  MountebankGovernor Played Copper.
-    +1 Coin = 5 all together.
-  MountebankGovernor Played Copper.
-    +1 Coin = 6 all together.
-  MountebankGovernor bought Gold.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Copper.
-  MountebankGovernor Discarded Gold.
-  MountebankGovernor Discarded Survivors.
-  MountebankGovernor Drew Mountebank into hand.
+Game ended in 19 turns.
+BigMoneyCultist Won!
+BigMoneyCultist total score: 35
+  Copper(9), Cultist(3), Curse(2), Duchy(2), Estate(1), Gold(3), Necropolis(1), Overgrown Estate(1), Province(5), Silver(5), 
+MountebankGovernorMaurader total score: 27
+  Abandoned Mine(1), Copper(7), Duchy(2), Estate(3), Governor(4), Marauder(1), Mountebank(1), Necropolis(1), Overgrown Estate(1), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(3), Silver(4), Survivors(2), 
+Trash contains: Gold(1), Hovel(2), Ruined Village(1), 
+
+BigMoneyCultist GainSequence is:
+  Silver, Silver, Cultist, Silver, Curse, 
+  Copper, Silver, Cultist, Cultist, Gold, 
+  Gold, Silver, Ruined Village, Province, Gold, 
+  Duchy, Province, Province, Curse, Copper, 
+  Duchy, Province, Estate, Province, 
+MountebankGovernorMaurader GainSequence is:
+  Mountebank, Silver, Governor, Silver, Governor, 
+  Ruined Market, Province, Survivors, Marauder, Silver, 
+  Ruined Library, Spoils, Gold, Ruined Village, Abandoned Mine, 
+  Governor, Ruined Village, Province, Governor, Ruined Market, 
+  Ruined Village, Survivors, Silver, Province, Duchy, 
+  Estate, Estate, Duchy, Estate, 

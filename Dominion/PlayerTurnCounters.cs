@@ -13,6 +13,7 @@ namespace Dominion
         private int availableBuys;
         private int buysUsed;
         private int availableCoins;
+        private int availablePotions;
         private int availableCoinTokens;
         internal SetOfCards cardsBannedFromPurchase;
         internal int copperAdditionalValue = 0;
@@ -27,7 +28,8 @@ namespace Dominion
             this.availableActionCount = 1;
             this.availableBuys = 1;
             this.buysUsed = 0;
-            this.availableCoins = 0;            
+            this.availableCoins = 0;
+            this.availablePotions = 0;
             this.copperAdditionalValue = 0;
             this.cardsBannedFromPurchase.Clear();
         }
@@ -46,6 +48,14 @@ namespace Dominion
             get
             {
                 return this.availableCoins;
+            }
+        }
+
+        internal int AvailablePotions
+        {
+            get
+            {
+                return this.availablePotions;
             }
         }
 
@@ -102,6 +112,19 @@ namespace Dominion
             this.availableActionCount--;
         }
 
+        public void AddPotions(PlayerState playerState, int count)        
+        {
+            if (count != 0)
+            {
+                this.availablePotions += count;
+                if (availablePotions < 0)
+                {
+                    availablePotions = 0;
+                }
+                playerState.gameLog.PlayerGainedPotion(playerState, count);
+            }
+        }
+
         public void AddCoins(PlayerState playerState, int count)
         {
             if (count != 0)
@@ -143,6 +166,15 @@ namespace Dominion
             if (this.availableCoins < 0)
             {
                 this.availableCoins = 0;
+            }
+        }
+
+        internal void RemovePotions(int count)
+        {
+            this.availablePotions -= count;
+            if (this.availablePotions < 0)
+            {
+                this.availablePotions = 0;
             }
         }
     }

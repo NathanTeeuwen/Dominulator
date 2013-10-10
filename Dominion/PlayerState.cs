@@ -46,6 +46,7 @@ namespace Dominion
 
         // expose information for use by strategies
         public IPlayerAction Actions { get { return this.actions.actions; } }
+        public int AvailablePotions { get { return this.turnCounters.AvailablePotions; } }
         public int AvailableCoins { get { return this.turnCounters.AvailableCoins; } }
         public int AvailableCoinTokens { get { return this.turnCounters.AvailableCoinTokens; } }
         public int AvailableActions { get { return this.turnCounters.AvailableActions; } }
@@ -265,6 +266,11 @@ namespace Dominion
         internal void AddCoins(int coinAmount)
         {
             this.turnCounters.AddCoins(this, coinAmount);
+        }
+
+        internal void AddPotions(int potionAmount)
+        {
+            this.turnCounters.AddPotions(this, potionAmount);
         }
 
         internal void AddCoinTokens(int coinAmount)

@@ -186,7 +186,7 @@ namespace Dominion.CardTypes
             currentPlayer.MoveCardFromPlayToTrash(gameState);
             currentPlayer.RequestPlayerGainCardFromSupply(
                 gameState,
-                card => card.CurrentCoinCost(currentPlayer) <= 5
+                card => card.CurrentCoinCost(currentPlayer) <= 5 && card.potionCost == 0
                 , "cost of card up to 5");
         }
     }
@@ -460,7 +460,7 @@ namespace Dominion.CardTypes
         {
             currentPlayer.RequestPlayerGainCardFromSupply(
                 gameState,
-                acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= 4,
+                acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= 4 && acceptableCard.potionCost == 0,
                 "Card must cost up to 4");
         }
     }

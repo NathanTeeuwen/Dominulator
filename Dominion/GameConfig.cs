@@ -114,13 +114,17 @@ namespace Dominion
 
             if (this.kingdomPiles.Where(card => card.potionCost != 0).Any())
             {
-                Add<CardTypes.Province>(gameSubset, supplyCardPiles, 16);
+                Add<CardTypes.Potion>(gameSubset, supplyCardPiles, 16);
+            }
+            else
+            {
+                Add<CardTypes.Potion>(gameSubset, supplyCardPiles, 0);
             }
 
             if (this.kingdomPiles.Where(card => card.requiresRuins).Any())
             {
                 supplyCardPiles.Add(CreateRuins(gameSubset, ruinsCount, random));
-            }          
+            }           
 
             foreach (Card card in this.kingdomPiles)
             {
@@ -133,7 +137,7 @@ namespace Dominion
                     Add(gameSubset, supplyCardPiles, card.defaultSupplyCount, card);
                 }                
             }
-
+            
             return supplyCardPiles.ToArray();
         }
 

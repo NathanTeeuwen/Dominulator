@@ -57,8 +57,7 @@ namespace Program
             var self = gameState.Self;
             return this.purchaseOrder.GetPreferredCard(
                 gameState,
-                card => self.AvailableCoins >= card.CurrentCoinCost(self) &&
-                gameState.GetPile(card).Any());
+                cardPredicate);
         }
 
         public override Card GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
