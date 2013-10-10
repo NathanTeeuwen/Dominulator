@@ -60,7 +60,7 @@ namespace Program
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Necropolis>(),
                            CardAcceptance.For<CardTypes.Plaza>(),
-                           CardAcceptance.For<CardTypes.Watchtower>(gameState=> gameState.players.CurrentPlayer.AvailableActions == 1),
+                           CardAcceptance.For<CardTypes.Watchtower>(gameState => gameState.Self.AvailableActions == 1),
                            //CardAcceptance.For<CardTypes.Watchtower>(gameState => CountInHand<CardTypes.Estate>(gameState) + CountInHand<CardTypes.Copper>(gameState) == 0 && gameState.players.CurrentPlayer.AvailableActions > 1),
                            CardAcceptance.For<CardTypes.Butcher>(),
                            CardAcceptance.For<CardTypes.Watchtower>());

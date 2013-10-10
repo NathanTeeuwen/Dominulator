@@ -38,7 +38,7 @@ namespace Program
                     if (ShouldBuyProvinces(gameState))
                         return PlayerActionChoice.PlusCard;
 
-                    return gameState.players.CurrentPlayer.Hand.HasCard(card => card.isAction) ? PlayerActionChoice.PlusAction : PlayerActionChoice.PlusCard;
+                    return gameState.Self.Hand.HasCard(card => card.isAction) ? PlayerActionChoice.PlusAction : PlayerActionChoice.PlusCard;
                 }
             }
 

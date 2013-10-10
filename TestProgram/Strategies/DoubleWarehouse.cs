@@ -26,13 +26,13 @@ namespace Program
             static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Gold).Count() > 2),
+                           CardAcceptance.For<CardTypes.Province>(gameState => gameState.Self.AllOwnedCards.CountOf<CardTypes.Gold>() > 2),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) < 5),
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2),
                            CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Warehouse>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Warehouse).Count() < 1),
-                           CardAcceptance.For<CardTypes.Warehouse>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Silver).Count() > 2 &&
-                                                                                gameState.players.CurrentPlayer.AllOwnedCards.Where(card => card is CardTypes.Warehouse).Count() < 2),
+                           CardAcceptance.For<CardTypes.Warehouse>(gameState => gameState.Self.AllOwnedCards.CountOf<CardTypes.Warehouse>() < 1),
+                           CardAcceptance.For<CardTypes.Warehouse>(gameState => gameState.Self.AllOwnedCards.CountOf<CardTypes.Silver>() > 2 &&
+                                                                                gameState.Self.AllOwnedCards.CountOf<CardTypes.Warehouse>() < 2),
                            CardAcceptance.For<CardTypes.Silver>());
 
             }

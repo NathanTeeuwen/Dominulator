@@ -37,12 +37,12 @@ namespace Program
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Armory>(gameState => CountAllOwned<CardTypes.Armory>(gameState) < 1),
                            CardAcceptance.For<CardTypes.Forager>(gameState => CountAllOwned<CardTypes.Forager>(gameState) < 1),
-                           //CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AvailableBuys == 2 && gameState.players.CurrentPlayer.AvailableCoins >= 16 || CountAllOwned<CardTypes.Province>(gameState) > 0),
+                    //CardAcceptance.For<CardTypes.Province>(gameState => gameState.Self.AvailableBuys == 2 && gameState.Self.AvailableCoins >= 16 || CountAllOwned<CardTypes.Province>(gameState) > 0),
                            CardAcceptance.For<CardTypes.Province>(),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 1),                           
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) == 0),
-                           CardAcceptance.For<CardTypes.GreatHall>(gameState => gameState.players.CurrentPlayer.AvailableBuys > 1 && gameState.players.CurrentPlayer.AvailableCoins == 6),
-                           CardAcceptance.For<CardTypes.GreatHall>(gameState => gameState.players.CurrentPlayer.Hand.HasCard<CardTypes.Hovel>()),
+                           CardAcceptance.For<CardTypes.GreatHall>(gameState => gameState.Self.AvailableBuys > 1 && gameState.Self.AvailableCoins == 6),
+                           CardAcceptance.For<CardTypes.GreatHall>(gameState => gameState.Self.Hand.HasCard<CardTypes.Hovel>()),
                            CardAcceptance.For<CardTypes.GreatHall>(gameState => CountAllOwned<CardTypes.GreatHall>(gameState) < CountAllOwned<CardTypes.Conspirator>(gameState)),
                            CardAcceptance.For<CardTypes.Conspirator>(),
                            CardAcceptance.For<CardTypes.GreatHall>());
@@ -52,9 +52,9 @@ namespace Program
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Necropolis>(),
-                           CardAcceptance.For<CardTypes.Armory>(gameState => gameState.players.CurrentPlayer.AvailableActions > 0),                           
+                           CardAcceptance.For<CardTypes.Armory>(gameState => gameState.Self.AvailableActions > 0),                           
                            CardAcceptance.For<CardTypes.GreatHall>(),
-                           CardAcceptance.For<CardTypes.Conspirator>(gameState => gameState.players.CurrentPlayer.CountCardsPlayedThisTurn >= 2),
+                           CardAcceptance.For<CardTypes.Conspirator>(gameState => gameState.Self.CountCardsPlayedThisTurn >= 2),
                            CardAcceptance.For<CardTypes.Forager>(gameState => HasCardFromInHand(TrashOrder(), gameState)),                           
                            CardAcceptance.For<CardTypes.Conspirator>(),
                            CardAcceptance.For<CardTypes.Armory>());

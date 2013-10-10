@@ -54,39 +54,39 @@ namespace Program
 
         public override Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
         {
-            var currentPlayer = gameState.players.CurrentPlayer;
+            var self = gameState.Self;
             return this.purchaseOrder.GetPreferredCard(
                 gameState,
-                card => currentPlayer.AvailableCoins >= card.CurrentCoinCost(currentPlayer) &&
+                card => self.AvailableCoins >= card.CurrentCoinCost(self) &&
                 gameState.GetPile(card).Any());
         }
 
         public override Card GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            var currentPlayer = gameState.players.CurrentPlayer;
+            var self = gameState.Self;
             return this.treasurePlayOrder.GetPreferredCard(
                 gameState,
-                card => currentPlayer.Hand.HasCard(card) && acceptableCard(card));
+                card => self.Hand.HasCard(card) && acceptableCard(card));
         }
 
         public override Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            var currentPlayer = gameState.players.CurrentPlayer;
+            var self = gameState.Self;
 
-            if (!(currentPlayer.Hand.HasCard(acceptableCard)))
+            if (!(self.Hand.HasCard(acceptableCard)))
             {
                 return null;
             }
 
             Card result = this.actionOrder.GetPreferredCard(
                 gameState,
-                card => currentPlayer.Hand.HasCard(card) && acceptableCard(card));
+                card => self.Hand.HasCard(card) && acceptableCard(card));
 
             if (result == null && this.chooseDefaultActionOnNone)
             {
                 var candidateCards = new SetOfCards(gameState.CardGameSubset);
                 
-                foreach(Card card in currentPlayer.Hand)
+                foreach(Card card in self.Hand)
                 {
                     if (acceptableCard(card))
                         candidateCards.Add(card);
@@ -112,7 +112,7 @@ namespace Program
             {
                 result = this.defaultActionOrder.GetPreferredCard(
                     gameState,
-                    card => currentPlayer.Hand.HasCard(card) && acceptableCard(card));
+                    card => self.Hand.HasCard(card) && acceptableCard(card));
             }
 
             return result;
@@ -120,15 +120,15 @@ namespace Program
 
         public override Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            var currentPlayer = gameState.players.CurrentPlayer;
+            var self = gameState.Self;
             Card result = this.trashOrder.GetPreferredCard(
                 gameState,
-                card => currentPlayer.Hand.HasCard(card) && acceptableCard(card));
+                card => self.Hand.HasCard(card) && acceptableCard(card));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null && !isOptional)
             {
-                result = currentPlayer.Hand.OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();                
+                result = self.Hand.OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();                
             }
 
             return result;
@@ -136,23 +136,23 @@ namespace Program
 
         public override Card GetCardFromHandOrDiscardToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, out DeckPlacement deckPlacement)
         {
-            var currentPlayer = gameState.players.CurrentPlayer;
+            var self = gameState.Self;
             Card result = this.trashOrder.GetPreferredCard(
                 gameState,
-                card => (currentPlayer.Hand.HasCard(card) || currentPlayer.Discard.HasCard(card)) && acceptableCard(card));
+                card => (self.Hand.HasCard(card) || self.Discard.HasCard(card)) && acceptableCard(card));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null && !isOptional)
             {
-                result = currentPlayer.Hand.OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();
+                result = self.Hand.OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();
             }
 
             deckPlacement = DeckPlacement.Discard;
             if (result != null)
             {
-                if (currentPlayer.Discard.HasCard(result))
+                if (self.Discard.HasCard(result))
                     deckPlacement = DeckPlacement.Discard;
-                else if (currentPlayer.Hand.HasCard(result))
+                else if (self.Hand.HasCard(result))
                     deckPlacement = DeckPlacement.Hand;
                 else
                     throw new Exception("Card should have been in hand or discard");
@@ -179,15 +179,15 @@ namespace Program
 
         public override Card GetCardFromRevealedCardsToDiscard(GameState gameState, PlayerState player)
         {
-            var currentPlayer = gameState.players.CurrentPlayer;
+            var self = gameState.Self;
             Card result = this.discardOrder.GetPreferredCard(
                 gameState,
-                card => currentPlayer.CardsBeingRevealed.HasCard(card));
+                card => self.CardsBeingRevealed.HasCard(card));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)
             {
-                result = currentPlayer.CardsBeingRevealed.OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();                
+                result = self.CardsBeingRevealed.OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();                
             }
 
             return result;
@@ -211,7 +211,7 @@ namespace Program
 
         override public Card GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            Card result = this.discardOrder.GetPreferredCard(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card) && acceptableCard(card));
+            Card result = this.discardOrder.GetPreferredCard(gameState, card => gameState.Self.Hand.HasCard(card) && acceptableCard(card));
             if (result != null)
             {
                 return result;
@@ -219,7 +219,7 @@ namespace Program
 
             if (result == null && !isOptional)
             {
-                result = gameState.players.CurrentPlayer.Hand.Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();                
+                result = gameState.Self.Hand.Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();                
             }
 
             return result;
@@ -365,7 +365,8 @@ namespace Program
 
         public override Card GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            var currentPlayer = gameState.players.CurrentPlayer;
+            var self = gameState.Self;
+
             Card result = this.gainOrder.GetPreferredCard(
                 gameState,
                 card => acceptableCard(card) && gameState.GetPile(card).Any());
@@ -395,9 +396,9 @@ namespace Program
 
         private static bool ShouldGainCopper(GameState gameState, ICardPicker gainOrder)
         {
-            PlayerState currentPlayer = gameState.players.CurrentPlayer;
+            PlayerState self = gameState.Self;
 
-            int minValue = gameState.players.CurrentPlayer.ExpectedCoinValueAtEndOfTurn;
+            int minValue = self.ExpectedCoinValueAtEndOfTurn;
             int maxValue = minValue + Strategies.CountInHand<CardTypes.IllGottenGains>(gameState);
 
             if (maxValue == minValue)
@@ -405,7 +406,7 @@ namespace Program
 
             CardPredicate shouldGainCard = delegate(Card card)
             {
-                int currentCardCost = card.CurrentCoinCost(currentPlayer);
+                int currentCardCost = card.CurrentCoinCost(self);
 
                 return currentCardCost >= minValue &&
                         currentCardCost <= maxValue;
@@ -484,24 +485,24 @@ namespace Program
 
         public override int GetCoinAmountToSpendInBuyPhase(GameState gameState)
         {
-            PlayerState currentPlayer = gameState.players.CurrentPlayer;
-            int numberOfBuys = currentPlayer.AvailableBuys;
-            int availableCoins = currentPlayer.AvailableCoins;
+            PlayerState self = gameState.Self;
+            int numberOfBuys = self.AvailableBuys;
+            int availableCoins = self.AvailableCoins;
 
             return GetCoinAmountToSpend(gameState, numberOfBuys, minCoins:0, maxCoins:availableCoins);
         }
 
         public int GetCoinAmountToSpend(GameState gameState, int numberOfGains, int minCoins, int maxCoins)
         {
-            PlayerState currentPlayer = gameState.players.CurrentPlayer;
+            PlayerState self = gameState.Self;
             int availableCoins = maxCoins;
-            int coinTokensRemaining = currentPlayer.AvailableCoinTokens;
+            int coinTokensRemaining = self.AvailableCoinTokens;
 
             int result = 0;
 
             CardPredicate shouldGainCard = delegate(Card card)
             {
-                int currentCardCost = card.CurrentCoinCost(currentPlayer);
+                int currentCardCost = card.CurrentCoinCost(self);
                 
                 return currentCardCost >= minCoins &&
                        currentCardCost <= availableCoins + coinTokensRemaining &&
@@ -533,7 +534,7 @@ namespace Program
     
         public static int CostOfCard(Card cardType, GameState gameState)
         {
-            return cardType.CurrentCoinCost(gameState.players.CurrentPlayer);
+            return cardType.CurrentCoinCost(gameState.Self);
         }
 
         public static Card[] GetKingdomCards(PlayerAction playerAction1, PlayerAction playerAction2)

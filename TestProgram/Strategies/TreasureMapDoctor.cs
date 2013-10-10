@@ -32,7 +32,7 @@ namespace Program
                
                 override public int GetCoinAmountToOverpayForCard(GameState gameState, Card card)
                 {
-                    return gameState.players.CurrentPlayer.AvailableCoins;
+                    return gameState.Self.AvailableCoins;
                 }
 
                 public override Card NameACard(GameState gameState)
@@ -42,7 +42,7 @@ namespace Program
 
                 public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
                 {
-                    if (gameState.players.CurrentPlayer.CardsBeingRevealed.HasCard<CardTypes.Silver>())
+                    if (gameState.Self.CardsBeingRevealed.HasCard<CardTypes.Silver>())
                         return PlayerActionChoice.Discard;
                     return PlayerActionChoice.Trash;
                 }
@@ -54,9 +54,9 @@ namespace Program
 
                 static Card GetCardTypeToTrash(GameState gameState)
                 {
-                    PlayerState currentPlayer = gameState.players.CurrentPlayer;
+                    PlayerState self = gameState.Self;
 
-                    if (currentPlayer.CardsInDeck.Count() <= 3 &&
+                    if (self.CardsInDeck.Count() <= 3 &&
                         CountInDeck<CardTypes.Estate>(gameState) > 0)
                     {
                         return Card.Type<CardTypes.Estate>();
@@ -78,7 +78,7 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Doctor>(gameState => CountAllOwned<CardTypes.Doctor>(gameState) < 1 && gameState.players.CurrentPlayer.AvailableCoins >= 5),
+                           CardAcceptance.For<CardTypes.Doctor>(gameState => CountAllOwned<CardTypes.Doctor>(gameState) < 1 && gameState.Self.AvailableCoins >= 5),
                            CardAcceptance.For<CardTypes.Province>(),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 5),
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),

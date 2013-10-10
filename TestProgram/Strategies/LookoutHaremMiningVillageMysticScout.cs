@@ -66,13 +66,13 @@ namespace Program
                 // for mystic
                 override public Card GuessCardTopOfDeck(GameState gameState)
                 {
-                    PlayerState currentPlayer = gameState.players.CurrentPlayer;
-                    if (currentPlayer.KnownCardsInDeck.Any())
+                    PlayerState self = gameState.Self;
+                    if (self.KnownCardsInDeck.Any())
                     {
-                        return currentPlayer.KnownCardsInDeck.First();
+                        return self.KnownCardsInDeck.First();
                     }
 
-                    IEnumerable<Card> cards = currentPlayer.CardsInDeck.Any() ? currentPlayer.CardsInDeck : currentPlayer.CardsInDeckAndDiscard;
+                    IEnumerable<Card> cards = self.CardsInDeck.Any() ? self.CardsInDeck : self.CardsInDeckAndDiscard;
                     cards = cards.Where(card => !card.Is<CardTypes.Estate>() && !card.isShelter);
 
                     if (cards.Any())
@@ -168,29 +168,29 @@ namespace Program
 
             static bool CurrentPlayerHasKnownCardOnTopOfDeck(GameState gameState)
             {
-                PlayerState currentPlayer = gameState.players.CurrentPlayer;
-                return currentPlayer.KnownCardsInDeck.Any();                    
+                PlayerState self = gameState.Self;
+                return self.KnownCardsInDeck.Any();                    
             }
 
             static bool CurrentPlayerHasKnownCardToTrashOnTopOfDeck(GameState gameState)
             {
-                PlayerState currentPlayer = gameState.players.CurrentPlayer;
-                if (!currentPlayer.KnownCardsInDeck.Any())
+                PlayerState self = gameState.Self;
+                if (!self.KnownCardsInDeck.Any())
                     return false;
 
-                Card firstCard = currentPlayer.KnownCardsInDeck.First();
+                Card firstCard = self.KnownCardsInDeck.First();
 
                 return TrashOrder().GetPreferredCard(gameState, card => card.Equals(firstCard)) != null;
             }
 
             static bool ShouldBuyScoutOverMystic(GameState gameState)
             {
-                return ((double)CountAllCardsBenefitFromScout(gameState)) / gameState.players.CurrentPlayer.AllOwnedCards.Count >= 0.5;
+                return ((double)CountAllCardsBenefitFromScout(gameState)) / gameState.Self.AllOwnedCards.Count >= 0.5;
             }            
 
             static int CountAllCardsBenefitFromScout(GameState gameState)
             {
-                PlayerState currentPlayer = gameState.players.CurrentPlayer;
+                PlayerState currentPlayer = gameState.Self;
 
                 return currentPlayer.AllOwnedCards.Count(card => card.isVictory || card.Is<CardTypes.Mystic>());
                                 

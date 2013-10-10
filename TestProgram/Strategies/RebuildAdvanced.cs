@@ -40,7 +40,7 @@ namespace Program
                 public override Card NameACard(GameState gameState)
                 {
 
-                    PlayerState currentPlayer = gameState.players.CurrentPlayer;
+                    PlayerState self = gameState.Self;
 
                     int pointLead = PlayersPointLead(gameState); 
 

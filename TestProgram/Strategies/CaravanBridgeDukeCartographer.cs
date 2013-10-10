@@ -33,7 +33,7 @@ namespace Program
                 public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player)                
                 {
                     BagOfCards revealedCards = player.CardsBeingRevealed;
-                    var currentPlayer = gameState.players.CurrentPlayer;
+                    var self = gameState.Self;
                     Card result = TopDeckOrder().GetPreferredCard(
                         gameState,
                         card => revealedCards.HasCard(card));
@@ -79,7 +79,7 @@ namespace Program
                     CardAcceptance.For<Duke>(AtEndGame),                    
                     CardAcceptance.For<Caravan>(CanDoubleCaravan),
                     CardAcceptance.For<Cartographer>(gameState => CountAllOwned<Cartographer>(gameState) < 2),
-                    CardAcceptance.For<Gold>(gameState => gameState.players.CurrentPlayer.AvailableBuys <= 1));
+                    CardAcceptance.For<Gold>(gameState => gameState.Self.AvailableBuys <= 1));
 
                 var buildOrder = new CardPickByBuildOrder(
                     CardAcceptance.For<Bridge>(),
@@ -97,8 +97,8 @@ namespace Program
 
             private static bool CanDoubleCaravan(GameState gameState)
             {
-                return gameState.players.CurrentPlayer.AvailableCoins >= 6 &&
-                       gameState.players.CurrentPlayer.AvailableBuys > 1;
+                return gameState.Self.AvailableCoins >= 6 &&
+                       gameState.Self.AvailableBuys > 1;
             }
 
             private static bool AtEndGame(GameState gameState)
@@ -108,14 +108,14 @@ namespace Program
 
             private static bool ShouldBuyDuchyDukeOverPowerUp(GameState gameState)
             {
-                return (gameState.players.CurrentPlayer.AvailableBuys >= 1 &&
-                        gameState.players.CurrentPlayer.AvailableCoins >= 8);
+                return (gameState.Self.AvailableBuys >= 1 &&
+                        gameState.Self.AvailableCoins >= 8);
             }
 
             private static bool ShouldBuyProvinceOverDuchyDuke(GameState gameState)
-            {                
+            {
                 /*
-                if (gameState.players.CurrentPlayer.AvailableBuys == 1 &&
+                if (gameState.Self.AvailableBuys == 1 &&
                     CountOfPile<Province>(gameState) == 1)
                 {
                     return true;

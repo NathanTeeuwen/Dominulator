@@ -32,7 +32,7 @@ namespace Program
 
                 override public int GetCoinAmountToOverpayForCard(GameState gameState, Card card)
                 {
-                    return gameState.players.CurrentPlayer.AvailableCoins;
+                    return gameState.Self.AvailableCoins;
                 }
 
                 public override Card NameACard(GameState gameState)
@@ -58,9 +58,9 @@ namespace Program
 
             static Card GetCardTypeToTrash(GameState gameState)
             {
-                PlayerState currentPlayer = gameState.players.CurrentPlayer;
+                PlayerState self = gameState.Self;
 
-                if (currentPlayer.CardsInDeck.Count() <= 3 &&
+                if (self.CardsInDeck.Count() <= 3 &&
                     CountInDeck<CardTypes.Estate>(gameState) > 0)
                 {
                     return Card.Type<CardTypes.Estate>();

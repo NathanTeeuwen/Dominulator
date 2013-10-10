@@ -43,8 +43,8 @@ namespace Program
                         {
                             return PlayerActionChoice.Trash;
                         }
-                        else if (gameState.players.CurrentPlayer.AvailableCoins >= 5 &&
-                            gameState.players.CurrentPlayer.AvailableCoins < 8)
+                        else if (gameState.Self.AvailableCoins >= 5 &&
+                            gameState.Self.AvailableCoins < 8)
                         {
                             return PlayerActionChoice.PlusCoin;
                         }
@@ -72,7 +72,7 @@ namespace Program
 
                 override public Card GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
                 {
-                    Card result = this.discardOrder.GetPreferredCardReverse(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card) && acceptableCard(card));
+                    Card result = this.discardOrder.GetPreferredCardReverse(gameState, card => gameState.Self.Hand.HasCard(card) && acceptableCard(card));
                     if (result != null)
                     {
                         return result;
@@ -84,7 +84,7 @@ namespace Program
                 public override bool ShouldPutCardInHand(GameState gameState, Card card)
                 {
                     if (!ShouldBuyProvince(gameState) &&
-                        gameState.players.CurrentPlayer.Hand.CountOf<CardTypes.Copper>() > 0)
+                        gameState.Self.Hand.CountOf<CardTypes.Copper>() > 0)
                     {
                         return false;
                     }
@@ -147,7 +147,7 @@ namespace Program
             private static bool DoesHandHaveCombinationToTrash(GameState gameState)
             {
                 int countToTrash = CountInHandFrom(TrashOrder(), gameState);
-                int countInHand = gameState.players.CurrentPlayer.Hand.Count;
+                int countInHand = gameState.Self.Hand.Count;
 
                 return (countInHand - countToTrash <= 2);
             }
@@ -170,8 +170,8 @@ namespace Program
                     return false;
                 }
 
-                if (gameState.players.CurrentPlayer.Hand.CountWhere(card => card.isAction && !card.Is<CardTypes.Library>()) > 0 &&
-                    gameState.players.CurrentPlayer.AvailableActions == 1)
+                if (gameState.Self.Hand.CountWhere(card => card.isAction && !card.Is<CardTypes.Library>()) > 0 &&
+                    gameState.Self.AvailableActions == 1)
                 {
                     return false;
                 }
@@ -186,7 +186,7 @@ namespace Program
                     return false;
                 }
 
-                return gameState.players.CurrentPlayer.Hand.Where(card => card.isTreasure).Count() <= 3;
+                return gameState.Self.Hand.Where(card => card.isTreasure).Count() <= 3;
             }
 
             private static bool ShouldPlayAction(GameState gameState)
@@ -201,8 +201,8 @@ namespace Program
 
             private static bool HasExactlyOneAction(GameState gameState)
             {
-                var currentPlayer = gameState.players.CurrentPlayer;
-                if (currentPlayer.Hand.CountWhere(card => card.isAction) == 1)
+                var self = gameState.Self;
+                if (self.Hand.CountWhere(card => card.isAction) == 1)
                 {
                     return true;
                 }
@@ -212,18 +212,18 @@ namespace Program
 
             private static bool HasExactlyOneActionOtherThanCount(GameState gameState)
             {
-                var currentPlayer = gameState.players.CurrentPlayer;
-                if (!currentPlayer.Hand.HasCard<CardTypes.Count>())
+                var self = gameState.Self;
+                if (!self.Hand.HasCard<CardTypes.Count>())
                 {
                     return false;
                 }
 
-                if (currentPlayer.Hand.CountWhere(card => card.isAction) != 2)
+                if (self.Hand.CountWhere(card => card.isAction) != 2)
                 {
                     return false;
                 }
 
-                if (currentPlayer.Hand.HasCard<CardTypes.Library>() && currentPlayer.AvailableActions >= 2)
+                if (self.Hand.HasCard<CardTypes.Library>() && self.AvailableActions >= 2)
                 {
                     return false;
                 }
@@ -233,14 +233,14 @@ namespace Program
 
             private static bool ShouldGainCopper(GameState gameState)
             {
-                var currentPlayer = gameState.players.CurrentPlayer;
-                if (currentPlayer.Hand.CountWhere(card => card.isAction) > 0)
+                var self = gameState.Self;
+                if (self.Hand.CountWhere(card => card.isAction) > 0)
                 {
                     return false;
                 }
 
                 int countToTrash = CountInHandFrom(TrashOrder(), gameState);
-                int countInHand = gameState.players.CurrentPlayer.Hand.Count;
+                int countInHand = self.Hand.Count;
 
                 if (countInHand - countToTrash > 0)
                 {

@@ -36,7 +36,7 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                     CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AvailableBuys >= 4 || CountAllOwned<CardTypes.Province>(gameState) > 0),
+                     CardAcceptance.For<CardTypes.Province>(gameState => gameState.Self.AvailableBuys >= 4 || CountAllOwned<CardTypes.Province>(gameState) > 0),
                      CardAcceptance.For<CardTypes.Duchy>(gameState => CountAllOwned<CardTypes.Province>(gameState) >= 3),
                      CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 1));
                      //CardAcceptance.For<CardTypes.Jester>(gameState => CountAllOwned<CardTypes.Jester>(gameState) == 0));  // jester actually hurts in a non mirror match
@@ -77,12 +77,12 @@ namespace Program
 
             private static bool CanPlayTerminalWhileChaining(GameState gameState)
             {
-                return gameState.players.CurrentPlayer.AvailableActions >= 1;
+                return gameState.Self.AvailableActions >= 1;
             }
 
             private static bool CanPlay2TerminalsWhileChaining(GameState gameState)
             {
-                return gameState.players.CurrentPlayer.AvailableActions >= 2;
+                return gameState.Self.AvailableActions >= 2;
             }
 
             private static bool WillRatsComboWork(GameState gameState)
@@ -98,7 +98,7 @@ namespace Program
                            CardAcceptance.For<CardTypes.Armory>(gameState => CanPlay2TerminalsWhileChaining(gameState) && ShouldPlayArmory(gameState)),
                            CardAcceptance.For<CardTypes.Jester>(gameState => CanPlay2TerminalsWhileChaining(gameState)),
                            CardAcceptance.For<CardTypes.Bridge>(gameState => CanPlay2TerminalsWhileChaining(gameState)),
-                           CardAcceptance.For<CardTypes.Watchtower>(gameState => CanPlayTerminalWhileChaining(gameState) && !WillRatsComboWork(gameState) && gameState.players.CurrentPlayer.Hand.Count <= 5),
+                           CardAcceptance.For<CardTypes.Watchtower>(gameState => CanPlayTerminalWhileChaining(gameState) && !WillRatsComboWork(gameState) && gameState.Self.Hand.Count <= 5),
                            CardAcceptance.For<CardTypes.Rats>(gameState => WillRatsComboWork(gameState)),
                            CardAcceptance.For<CardTypes.WanderingMinstrell>(),
                            CardAcceptance.For<CardTypes.Necropolis>(),

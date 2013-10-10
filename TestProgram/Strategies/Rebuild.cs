@@ -32,8 +32,8 @@ namespace Program
 
                 public override Card NameACard(GameState gameState)
                 {
-                    
-                    PlayerState currentPlayer = gameState.players.CurrentPlayer;
+
+                    PlayerState self = gameState.Self;
                     
                     if (CountOfPile<CardTypes.Duchy>(gameState) == 0)
                     {

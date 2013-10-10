@@ -41,27 +41,27 @@ namespace Program
 
         private static int CountAllOwned(ICardPicker matchingCards, GameState gameState)
         {
-            return gameState.players.CurrentPlayer.AllOwnedCards.CountWhere(
+            return gameState.Self.AllOwnedCards.CountWhere(
                 card => matchingCards.GetPreferredCard(gameState, testCard => testCard.Is(card)) != null);
         }
 
         private static int CountInDeck<T>(GameState gameState)
             where T : Card, new()
         {
-            return gameState.players.CurrentPlayer.CardsInDeck.CountOf(Card.Type<T>());
+            return gameState.Self.CardsInDeck.CountOf(Card.Type<T>());
         }
 
         private static int CountInDeckAndDiscard<T>(GameState gameState)
             where T : Card, new()
         {
-            var player = gameState.players.CurrentPlayer;
+            var player = gameState.Self;
             return player.CardsInDeck.CountOf<T>() + player.Discard.CountOf<T>();
         }
 
         private static int CountMightDraw<T>(GameState gameState, int maxCount)
             where T: Card, new()
         {
-            if (gameState.players.CurrentPlayer.CardsInDeck.Count() >= maxCount)
+            if (gameState.Self.CardsInDeck.Count() >= maxCount)
                 return CountInDeck<T>(gameState);
             else
                 return CountInDeckAndDiscard<T>(gameState);            
@@ -70,24 +70,24 @@ namespace Program
         public static bool CardBeingPlayedIs<T>(GameState gameState)
                 where T : Card, new()
         {
-            var cardBeingPlayed = gameState.players.CurrentPlayer.CurrentCardBeingPlayed;
+            var cardBeingPlayed = gameState.Self.CurrentCardBeingPlayed;
             return cardBeingPlayed != null && cardBeingPlayed.Is<T>();
         }
 
         public static int CostOfCard<T>(GameState gameState)
             where T : Card, new()
         {
-            return Card.Type<T>().CurrentCoinCost(gameState.players.CurrentPlayer);
+            return Card.Type<T>().CurrentCoinCost(gameState.Self);
         }                
 
         public static int CountAllOwned(Card cardType, GameState gameState)
         {
-            return gameState.players.CurrentPlayer.AllOwnedCards.CountOf(cardType);
+            return gameState.Self.AllOwnedCards.CountOf(cardType);
         }
 
         public static int CountInHand(Card cardType, GameState gameState)
         {
-            return gameState.players.CurrentPlayer.Hand.CountOf(cardType);
+            return gameState.Self.Hand.CountOf(cardType);
         }
 
         public static int CountInHand<T>(GameState gameState)
@@ -109,7 +109,18 @@ namespace Program
 
         private static int PlayersPointLead(GameState gameState)
         {
-            return gameState.players.CurrentPlayer.TotalScore() - gameState.players.OtherPlayers.First().TotalScore();
+            int selfScore = gameState.Self.TotalScore();
+            int maxOtherScore = 0;
+
+            foreach (var player in gameState.players.AllPlayers)
+            {
+                if (player != gameState.Self)
+                {
+                    maxOtherScore = Math.Max(maxOtherScore, player.TotalScore());
+                }
+            }
+
+            return selfScore - maxOtherScore;
         }
 
         private static GameStatePredicate HasCardInHand<T>()
@@ -124,12 +135,12 @@ namespace Program
         private static bool HasCardInHand<T>(GameState gameState)
             where T: Card, new()
         {
-            return gameState.players.CurrentPlayer.Hand.HasCard<T>();
+            return gameState.Self.Hand.HasCard<T>();
         }
 
         internal static Card WhichCardFromInHand(ICardPicker matchingCards, GameState gameState)
         {
-            return matchingCards.GetPreferredCard(gameState, card => gameState.players.CurrentPlayer.Hand.HasCard(card));
+            return matchingCards.GetPreferredCard(gameState, card => gameState.Self.Hand.HasCard(card));
         }        
 
         private static bool HasCardFromInHand(ICardPicker matchingCards, GameState gameState)
@@ -139,7 +150,7 @@ namespace Program
       
         private static int CountInHandFrom(ICardPicker matchingCards, GameState gameState)
         {
-            return gameState.players.CurrentPlayer.Hand.CountWhere( card => matchingCards.GetPreferredCard(gameState, current => current.Is(card)) != null);            
+            return gameState.Self.Hand.CountWhere(card => matchingCards.GetPreferredCard(gameState, current => current.Is(card)) != null);            
         }                         
     }
 }

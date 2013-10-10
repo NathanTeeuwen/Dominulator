@@ -68,16 +68,16 @@ namespace Program
 
             private static bool ShouldPlayDevelop(GameState gameState)
             {
-                var currentPlayer = gameState.players.CurrentPlayer;
+                var self = gameState.Self;
 
                 Card result;
-                if (currentPlayer.Hand.CountOf<CardTypes.Develop>() > 1)
+                if (self.Hand.CountOf<CardTypes.Develop>() > 1)
                 {
-                    result = TrashOrder().GetPreferredCard(gameState, card => currentPlayer.Hand.HasCard(card));
+                    result = TrashOrder().GetPreferredCard(gameState, card => self.Hand.HasCard(card));
                 }
                 else
                 {
-                    result = TrashOrder().GetPreferredCard(gameState, card => currentPlayer.Hand.HasCard(card) && !card.Is<CardTypes.Develop>());
+                    result = TrashOrder().GetPreferredCard(gameState, card => self.Hand.HasCard(card) && !card.Is<CardTypes.Develop>());
                 }
 
                 return result != null;

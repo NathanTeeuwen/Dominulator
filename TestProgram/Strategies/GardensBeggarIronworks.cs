@@ -26,10 +26,10 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(                           
-                           CardAcceptance.For<CardTypes.IronWorks>(),                           
-                           CardAcceptance.For<CardTypes.Silver>(gameState => gameState.players.CurrentPlayer.Hand.CountWhere(c => c.isAction) == 0 && 
-                                                                gameState.players.CurrentPlayer.Hand.CountOf<CardTypes.Copper>() == 3),
-                           CardAcceptance.For<CardTypes.Beggar>(gameState => gameState.players.CurrentPlayer.Hand.CountWhere(c => c.isAction) > 0),                           
+                           CardAcceptance.For<CardTypes.IronWorks>(),
+                           CardAcceptance.For<CardTypes.Silver>(gameState => gameState.Self.Hand.CountWhere(c => c.isAction) == 0 &&
+                                                                gameState.Self.Hand.CountOf<CardTypes.Copper>() == 3),
+                           CardAcceptance.For<CardTypes.Beggar>(gameState => gameState.Self.Hand.CountWhere(c => c.isAction) > 0),                           
                            CardAcceptance.For<CardTypes.Gardens>(),
                            CardAcceptance.For<CardTypes.SilkRoad>(),
                            CardAcceptance.For<CardTypes.Beggar>(ShouldByLastCard<CardTypes.Beggar>),

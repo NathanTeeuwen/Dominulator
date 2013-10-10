@@ -40,10 +40,8 @@ namespace Program
                 public Card GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
                 {
                     IComparer<Card> comparer = this.comparerFactory.GetComparer(gameState);
-
-                    PlayerState currentPlayer = gameState.players.CurrentPlayer;
-
-                    Card cardToPlay = currentPlayer.Hand.Where(card => cardPredicate(card)).OrderBy(card => card, comparer).FirstOrDefault();
+                    
+                    Card cardToPlay = gameState.Self.Hand.Where(card => cardPredicate(card)).OrderBy(card => card, comparer).FirstOrDefault();
                     if (cardToPlay == null)
                         return null;
 
@@ -54,9 +52,7 @@ namespace Program
                 {
                     IComparer<Card> comparer = this.comparerFactory.GetComparer(gameState);
 
-                    PlayerState currentPlayer = gameState.players.CurrentPlayer;
-
-                    Card cardToPlay = currentPlayer.Hand.Where(card => cardPredicate(card)).OrderByDescending(card => card, comparer).FirstOrDefault();
+                    Card cardToPlay = gameState.Self.Hand.Where(card => cardPredicate(card)).OrderByDescending(card => card, comparer).FirstOrDefault();
                     if (cardToPlay == null)
                         return null;
 
@@ -127,15 +123,15 @@ namespace Program
                 // TODO:  implement a better default choice of which Ruins to player.
                 private static int CompareRuins(Card first, Card second, GameState gameState, ICardPicker purchaseOrder)
                 {
-                    PlayerState currentPlayer = gameState.players.CurrentPlayer;
+                    PlayerState self = gameState.Self;
 
-                    int coinsToSpend = gameState.players.CurrentPlayer.ExpectedCoinValueAtEndOfTurn;
+                    int coinsToSpend = self.ExpectedCoinValueAtEndOfTurn;
 
                     if (first.Is<CardTypes.AbandonedMine>() || second.Is<CardTypes.AbandonedMine>())
                     {
                         CardPredicate shouldGainCard = delegate(Card card)
                         {
-                            int currentCardCost = card.CurrentCoinCost(currentPlayer);
+                            int currentCardCost = card.CurrentCoinCost(self);
 
                             return currentCardCost == coinsToSpend + 1;
                         };
@@ -267,7 +263,7 @@ namespace Program
 
                 cardCountToTrash += CountInDeck<CardTypes.Lookout>(gameState);
 
-                int totalCardsOwned = gameState.players.CurrentPlayer.CardsInDeck.Count();
+                int totalCardsOwned = gameState.Self.CardsInDeck.Count;
 
                 return ((double)cardCountToTrash) / totalCardsOwned > 0.4;
             }

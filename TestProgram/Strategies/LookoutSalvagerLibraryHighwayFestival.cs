@@ -86,7 +86,7 @@ namespace Program
                            CardAcceptance.For<CardTypes.OvergrownEstate>(),
                            CardAcceptance.For<CardTypes.Hovel>(),
                            CardAcceptance.For<CardTypes.Necropolis>(),
-                           CardAcceptance.For<CardTypes.Silver>(gameState => gameState.players.CurrentPlayer.ExpectedCoinValueAtEndOfTurn == 4 && CardBeingPlayedIs<CardTypes.Salvager>(gameState)),
+                           CardAcceptance.For<CardTypes.Silver>(gameState => gameState.Self.ExpectedCoinValueAtEndOfTurn == 4 && CardBeingPlayedIs<CardTypes.Salvager>(gameState)),
                            CardAcceptance.For<CardTypes.Copper>(),
                            CardAcceptance.For<CardTypes.Silver>());
             }            

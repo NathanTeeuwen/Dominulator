@@ -27,7 +27,7 @@ namespace Program
 
         public Card GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
         {
-            var existingCards = gameState.players.CurrentPlayer.AllOwnedCards.Clone();
+            var existingCards = gameState.Self.AllOwnedCards.Clone();
 
             int numberOfTries = 2;
 
