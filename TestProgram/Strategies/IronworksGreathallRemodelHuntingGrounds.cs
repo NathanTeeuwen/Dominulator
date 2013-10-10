@@ -34,7 +34,7 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                     CardAcceptance.For<CardTypes.GreatHall>(gameState => gameState.players.CurrentPlayer.CurrentCardBeingPlayed != null && gameState.players.CurrentPlayer.CurrentCardBeingPlayed.Is<CardTypes.IronWorks>()),
+                     CardAcceptance.For<CardTypes.GreatHall>(gameState => CardBeingPlayedIs<CardTypes.IronWorks>(gameState)),
                      CardAcceptance.For<CardTypes.Province>(),
                      CardAcceptance.For<CardTypes.HuntingGrounds>(gameState => CountAllOwned<CardTypes.Gold>(gameState) >= 1 ),
                      CardAcceptance.For<CardTypes.Gold>(),

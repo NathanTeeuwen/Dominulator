@@ -69,9 +69,9 @@ namespace Program
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Curse>(),
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountAllOwned<CardTypes.Silver>(gameState) >= 4 && !ShouldBuyEstates(gameState)),
-                           CardAcceptance.For<CardTypes.Copper>(gameState => gameState.players.CurrentPlayer.CurrentCardBeingPlayed != null && gameState.players.CurrentPlayer.CurrentCardBeingPlayed.Is<CardTypes.Lookout>()),
+                           CardAcceptance.For<CardTypes.Copper>(gameState => CardBeingPlayedIs<CardTypes.Lookout>(gameState)),
                            CardAcceptance.For<CardTypes.Estate>(gameState => !ShouldBuyEstates(gameState)),
-                           CardAcceptance.For<CardTypes.Lookout>(gameState => gameState.players.CurrentPlayer.CurrentCardBeingPlayed != null && gameState.players.CurrentPlayer.CurrentCardBeingPlayed.Is<CardTypes.Trader>() && ShouldTrashLookout(gameState)),
+                           CardAcceptance.For<CardTypes.Lookout>(gameState => CardBeingPlayedIs<CardTypes.Trader>(gameState) && ShouldTrashLookout(gameState)),
                            CardAcceptance.For<CardTypes.Copper>(),
                            CardAcceptance.For<CardTypes.Lookout>());
             }

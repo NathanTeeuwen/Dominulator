@@ -16,7 +16,7 @@ namespace Program
             stopwatch.Start();
 
             ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.BigMoneyWithCard<CardTypes.Mountebank>.Player(2, "BigMoneyDoubleMountebank", cardCount:2, afterGoldCount:0));
-            //CompareStrategyVsAllKnownStrategies(Strategies.Illgottengains.Player(1));
+            CompareStrategyVsAllKnownStrategies(Strategies.Illgottengains.Player(1));
             
             stopwatch.Stop();
 

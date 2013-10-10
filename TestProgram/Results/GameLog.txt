@@ -256,7 +256,7 @@ With hand: Copper,Copper,Copper,Estate,Mountebank,
     +1 Coin = 4 all together.
   BigMoneyDoubleMountebank Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleMountebank bought Mountebank.
+  BigMoneyDoubleMountebank bought Silver.
   BigMoneyDoubleMountebank Discarded Copper.
   BigMoneyDoubleMountebank Discarded Copper.
   BigMoneyDoubleMountebank Discarded Copper.
@@ -267,7 +267,7 @@ With hand: Copper,Copper,Copper,Estate,Mountebank,
   BigMoneyDoubleMountebank Drew Silver into hand.
   BigMoneyDoubleMountebank Drew Mountebank into hand.
   BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Mountebank(3), Silver(1), 
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Mountebank(2), Silver(2), 
 
 ROUND 6
 -------------
@@ -322,7 +322,7 @@ With hand: Copper,Copper,Copper,Mountebank,Silver,
   BigMoneyDoubleMountebank reshuffled
   BigMoneyDoubleMountebank Drew Copper into hand.
   BigMoneyDoubleMountebank Drew Mountebank into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(1), Mountebank(3), Silver(1), 
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(1), Mountebank(2), Silver(2), 
 
 ROUND 7
 -------------
@@ -368,12 +368,12 @@ With hand: Copper,Copper,Estate,Estate,Mountebank,
   BigMoneyDoubleMountebank Discarded Mountebank.
   BigMoneyDoubleMountebank Discarded Estate.
   BigMoneyDoubleMountebank Discarded Estate.
-  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
   BigMoneyDoubleMountebank Drew Copper into hand.
   BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
   BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(1), Mountebank(3), Ruined Market(1), Silver(2), 
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(1), Mountebank(2), Ruined Market(1), Silver(3), 
 
 ROUND 8
 -------------
@@ -401,35 +401,32 @@ With hand: Copper,Copper,Copper,Estate,Silver,
   BigMoneyCultist ends turn with deck: Copper(10), Cultist(3), Curse(3), Estate(3), Silver(5), 
 
 BigMoneyDoubleMountebank begins turn
-With hand: Copper,Copper,Copper,Gold,Mountebank,
-  BigMoneyDoubleMountebank Played Mountebank.
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoneyDoubleMountebank Played Silver.
     +2 Coin = 2 all together.
-    BigMoneyCultist Discarded Curse.
-  BigMoneyDoubleMountebank Played Gold.
-    +3 Coin = 5 all together.
   BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 6 all together.
+    +1 Coin = 3 all together.
   BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 7 all together.
+    +1 Coin = 4 all together.
   BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyDoubleMountebank bought Gold.
+    +1 Coin = 5 all together.
+  BigMoneyDoubleMountebank bought Silver.
   BigMoneyDoubleMountebank Discarded Copper.
   BigMoneyDoubleMountebank Discarded Copper.
   BigMoneyDoubleMountebank Discarded Copper.
-  BigMoneyDoubleMountebank Discarded Gold.
-  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Estate.
   BigMoneyDoubleMountebank Drew Copper into hand.
   BigMoneyDoubleMountebank Drew Silver into hand.
   BigMoneyDoubleMountebank Drew Copper into hand.
   BigMoneyDoubleMountebank Drew Mountebank into hand.
-  BigMoneyDoubleMountebank Drew Estate into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(2), Mountebank(3), Ruined Market(1), Silver(2), 
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(1), Mountebank(2), Ruined Market(1), Silver(4), 
 
 ROUND 9
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Silver,
+With hand: Copper,Copper,Cultist,Curse,Silver,
   BigMoneyCultist Played Cultist.
     BigMoneyCultist Drew Silver into hand.
     BigMoneyCultist Drew Copper into hand.
@@ -451,6 +448,7 @@ With hand: Copper,Copper,Cultist,Silver,
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist reshuffled
   BigMoneyCultist Drew Silver into hand.
@@ -460,29 +458,31 @@ With hand: Copper,Copper,Cultist,Silver,
   BigMoneyCultist ends turn with deck: Copper(10), Cultist(4), Curse(3), Estate(3), Silver(5), 
 
 BigMoneyDoubleMountebank begins turn
-With hand: Copper,Copper,Estate,Mountebank,Silver,
+With hand: Copper,Copper,Gold,Mountebank,Silver,
   BigMoneyDoubleMountebank Played Mountebank.
     +2 Coin = 2 all together.
     BigMoneyCultist Discarded Curse.
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 5 all together.
   BigMoneyDoubleMountebank Played Silver.
-    +2 Coin = 4 all together.
+    +2 Coin = 7 all together.
   BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 5 all together.
+    +1 Coin = 8 all together.
   BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 6 all together.
+    +1 Coin = 9 all together.
   BigMoneyDoubleMountebank bought Gold.
   BigMoneyDoubleMountebank Discarded Copper.
   BigMoneyDoubleMountebank Discarded Copper.
   BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Gold.
   BigMoneyDoubleMountebank Discarded Mountebank.
-  BigMoneyDoubleMountebank Discarded Estate.
   BigMoneyDoubleMountebank reshuffled
   BigMoneyDoubleMountebank Drew Copper into hand.
   BigMoneyDoubleMountebank Drew Mountebank into hand.
   BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank Drew Ruined Market into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
   BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(3), Mountebank(3), Ruined Market(1), Silver(2), Survivors(1), 
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(2), Mountebank(2), Ruined Market(1), Silver(4), Survivors(1), 
 
 ROUND 10
 -------------
@@ -509,27 +509,29 @@ With hand: Copper,Copper,Silver,Silver,
   BigMoneyCultist ends turn with deck: Copper(10), Cultist(5), Curse(3), Estate(3), Silver(5), 
 
 BigMoneyDoubleMountebank begins turn
-With hand: Copper,Copper,Mountebank,Ruined Market,Silver,
-  BigMoneyDoubleMountebank Played Ruined Market.
-    +1 Buys = 2 all together.
-  BigMoneyDoubleMountebank Played Silver.
+With hand: Copper,Copper,Estate,Mountebank,Silver,
+  BigMoneyDoubleMountebank Played Mountebank.
     +2 Coin = 2 all together.
+    BigMoneyCultist gained Curse.
+    BigMoneyCultist gained Copper.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 4 all together.
   BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 3 all together.
+    +1 Coin = 5 all together.
   BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDoubleMountebank bought Silver.
+    +1 Coin = 6 all together.
+  BigMoneyDoubleMountebank bought Gold.
   BigMoneyDoubleMountebank Discarded Copper.
   BigMoneyDoubleMountebank Discarded Copper.
   BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Ruined Market.
   BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Discarded Estate.
   BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
   BigMoneyDoubleMountebank Drew Gold into hand.
   BigMoneyDoubleMountebank Drew Estate into hand.
-  BigMoneyDoubleMountebank Drew Estate into hand.
   BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(3), Mountebank(3), Ruined Market(1), Silver(3), Survivors(1), 
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(3), Mountebank(2), Ruined Market(1), Silver(4), Survivors(1), 
 
 ROUND 11
 -------------
@@ -564,28 +566,30 @@ With hand: Copper,Copper,Cultist,Silver,Silver,
   BigMoneyCultist Drew Estate into hand.
   BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist ends turn with deck: Copper(10), Cultist(6), Curse(3), Estate(3), Silver(5), 
+  BigMoneyCultist ends turn with deck: Copper(11), Cultist(6), Curse(4), Estate(3), Silver(5), 
 
 BigMoneyDoubleMountebank begins turn
-With hand: Copper,Copper,Estate,Estate,Gold,
+With hand: Copper,Copper,Estate,Gold,Silver,
   BigMoneyDoubleMountebank Played Gold.
     +3 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 5 all together.
   BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 4 all together.
+    +1 Coin = 6 all together.
   BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDoubleMountebank bought Silver.
+    +1 Coin = 7 all together.
+  BigMoneyDoubleMountebank bought Gold.
   BigMoneyDoubleMountebank Discarded Copper.
   BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
   BigMoneyDoubleMountebank Discarded Gold.
   BigMoneyDoubleMountebank Discarded Estate.
-  BigMoneyDoubleMountebank Discarded Estate.
-  BigMoneyDoubleMountebank Drew Survivors into hand.
+  BigMoneyDoubleMountebank Drew Ruined Market into hand.
   BigMoneyDoubleMountebank Drew Silver into hand.
   BigMoneyDoubleMountebank Drew Copper into hand.
   BigMoneyDoubleMountebank Drew Estate into hand.
-  BigMoneyDoubleMountebank Drew Mountebank into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(3), Mountebank(3), Ruined Library(1), Ruined Market(1), Silver(4), Survivors(1), 
+  BigMoneyDoubleMountebank Drew Survivors into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(4), Mountebank(2), Ruined Library(1), Ruined Market(1), Silver(4), Survivors(1), 
 
 ROUND 12
 -------------
@@ -614,13 +618,12 @@ With hand: Copper,Cultist,Curse,Estate,Estate,
   BigMoneyCultist Drew Estate into hand.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Curse into hand.
-  BigMoneyCultist ends turn with deck: Copper(10), Cultist(6), Curse(3), Estate(3), Silver(6), 
+  BigMoneyCultist ends turn with deck: Copper(11), Cultist(6), Curse(4), Estate(3), Silver(6), 
 
 BigMoneyDoubleMountebank begins turn
-With hand: Copper,Estate,Mountebank,Silver,Survivors,
-  BigMoneyDoubleMountebank Played Survivors.
-    BigMoneyDoubleMountebank Revealed Copper.
-    BigMoneyDoubleMountebank Revealed Gold.
+With hand: Copper,Estate,Ruined Market,Silver,Survivors,
+  BigMoneyDoubleMountebank Played Ruined Market.
+    +1 Buys = 2 all together.
   BigMoneyDoubleMountebank Played Silver.
     +2 Coin = 2 all together.
   BigMoneyDoubleMountebank Played Copper.
@@ -628,15 +631,15 @@ With hand: Copper,Estate,Mountebank,Silver,Survivors,
   BigMoneyDoubleMountebank bought Silver.
   BigMoneyDoubleMountebank Discarded Copper.
   BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Survivors.
+  BigMoneyDoubleMountebank Discarded Ruined Market.
   BigMoneyDoubleMountebank Discarded Estate.
-  BigMoneyDoubleMountebank Discarded Mountebank.
-  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank Discarded Survivors.
   BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Gold into hand.
   BigMoneyDoubleMountebank Drew Copper into hand.
   BigMoneyDoubleMountebank Drew Mountebank into hand.
-  BigMoneyDoubleMountebank Drew Gold into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(3), Mountebank(3), Ruined Library(1), Ruined Market(1), Ruined Village(1), Silver(5), Survivors(1), 
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Copper(7), Estate(3), Gold(4), Mountebank(2), Ruined Library(1), Ruined Market(1), Ruined Village(1), Silver(5), Survivors(1), 
 
 ROUND 13
 -------------
@@ -645,207 +648,190 @@ With hand: Copper,Cultist,Curse,Estate,Silver,
   BigMoneyCultist Played Cultist.
     BigMoneyCultist Drew Cultist into hand.
     BigMoneyCultist reshuffled
-    BigMoneyCultist Drew Estate into hand.
+    BigMoneyCultist Drew Cultist into hand.
     BigMoneyDoubleMountebank gained Ruined Village.
     BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Silver into hand.
       BigMoneyCultist Drew Estate into hand.
-      BigMoneyCultist Drew Curse into hand.
       BigMoneyDoubleMountebank gained Abandoned Mine.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Curse into hand.
+        BigMoneyCultist Drew Silver into hand.
+        BigMoneyDoubleMountebank gained Ruined Village.
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 6 all together.
   BigMoneyCultist Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyCultist bought Silver.
+    +1 Coin = 7 all together.
+  BigMoneyCultist bought Cultist.
   BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Cultist.
   BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
   BigMoneyCultist Discarded Curse.
   BigMoneyCultist Discarded Curse.
   BigMoneyCultist Discarded Estate.
   BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Curse into hand.
   BigMoneyCultist Drew Silver into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(10), Cultist(6), Curse(3), Estate(3), Silver(7), 
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(11), Cultist(7), Curse(4), Estate(3), Silver(6), 
 
 BigMoneyDoubleMountebank begins turn
-With hand: Copper,Copper,Gold,Gold,Mountebank,
+With hand: Copper,Copper,Gold,Mountebank,Silver,
   BigMoneyDoubleMountebank Played Mountebank.
     +2 Coin = 2 all together.
-    BigMoneyCultist gained Curse.
-    BigMoneyCultist gained Copper.
+    BigMoneyCultist Discarded Curse.
   BigMoneyDoubleMountebank Played Gold.
     +3 Coin = 5 all together.
-  BigMoneyDoubleMountebank Played Gold.
-    +3 Coin = 8 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 8 all together.
   BigMoneyDoubleMountebank Played Copper.
     +1 Coin = 9 all together.
-  BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 10 all together.
   BigMoneyDoubleMountebank bought Province.
   BigMoneyDoubleMountebank Discarded Copper.
   BigMoneyDoubleMountebank Discarded Copper.
-  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Silver.
   BigMoneyDoubleMountebank Discarded Gold.
   BigMoneyDoubleMountebank Discarded Mountebank.
   BigMoneyDoubleMountebank reshuffled
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
   BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank Drew Gold into hand.
-  BigMoneyDoubleMountebank Drew Survivors into hand.
-  BigMoneyDoubleMountebank Drew Ruined Market into hand.
-  BigMoneyDoubleMountebank Drew Gold into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(3), Mountebank(3), Province(1), Ruined Library(1), Ruined Market(1), Ruined Village(2), Silver(5), Survivors(1), 
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Ruined Village into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(2), Province(1), Ruined Library(1), Ruined Market(1), Ruined Village(3), Silver(5), Survivors(1), 
 
 ROUND 14
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Silver,Silver,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Copper into hand.
-    BigMoneyCultist Drew Copper into hand.
-    BigMoneyDoubleMountebank gained Ruined Village.
+With hand: Copper,Copper,Copper,Silver,
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 4 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 8 all together.
   BigMoneyCultist bought Cultist.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Curse into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(11), Cultist(7), Curse(4), Estate(3), Silver(7), 
+  BigMoneyCultist ends turn with deck: Copper(11), Cultist(8), Curse(4), Estate(3), Silver(6), 
 
 BigMoneyDoubleMountebank begins turn
-With hand: Gold,Gold,Ruined Market,Silver,Survivors,
-  BigMoneyDoubleMountebank Played Ruined Market.
-    +1 Buys = 2 all together.
-  BigMoneyDoubleMountebank Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDoubleMountebank Played Gold.
-    +3 Coin = 6 all together.
+With hand: Mountebank,Ruined Village,Silver,Silver,Silver,
+  BigMoneyDoubleMountebank Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoneyDoubleMountebank Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist gained Curse.
+    BigMoneyCultist gained Copper.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 6 all together.
   BigMoneyDoubleMountebank Played Silver.
     +2 Coin = 8 all together.
   BigMoneyDoubleMountebank bought Province.
   BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Gold.
-  BigMoneyDoubleMountebank Discarded Gold.
-  BigMoneyDoubleMountebank Discarded Ruined Market.
-  BigMoneyDoubleMountebank Discarded Survivors.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Ruined Village.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Drew Ruined Market into hand.
+  BigMoneyDoubleMountebank Drew Gold into hand.
   BigMoneyDoubleMountebank Drew Copper into hand.
   BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank Drew Mountebank into hand.
-  BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(3), Mountebank(3), Province(2), Ruined Library(1), Ruined Market(1), Ruined Village(3), Silver(5), Survivors(1), 
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(2), Province(2), Ruined Library(1), Ruined Market(1), Ruined Village(3), Silver(5), Survivors(1), 
 
 ROUND 15
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Curse,Silver,
+With hand: Copper,Copper,Copper,Cultist,Estate,
   BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Drew Curse into hand.
     BigMoneyCultist Drew Copper into hand.
     BigMoneyDoubleMountebank gained Ruined Market.
-    BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Cultist into hand.
-      BigMoneyCultist Drew Copper into hand.
-      BigMoneyDoubleMountebank gained Ruined Village.
-      BigMoneyCultist Played Cultist.
-        BigMoneyCultist Drew Copper into hand.
-        BigMoneyCultist Drew Silver into hand.
-        BigMoneyDoubleMountebank gained Survivors.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 4 all together.
   BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
+    +1 Coin = 1 all together.
   BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
+    +1 Coin = 2 all together.
   BigMoneyCultist Played Copper.
-    +1 Coin = 7 all together.
+    +1 Coin = 3 all together.
   BigMoneyCultist Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyCultist bought Gold.
+    +1 Coin = 4 all together.
+  BigMoneyCultist bought Silver.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
   BigMoneyCultist Discarded Cultist.
   BigMoneyCultist Discarded Curse.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist reshuffled
-  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Curse into hand.
-  BigMoneyCultist ends turn with deck: Copper(11), Cultist(7), Curse(4), Estate(3), Gold(1), Silver(7), 
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(8), Curse(5), Estate(3), Silver(7), 
 
 BigMoneyDoubleMountebank begins turn
-With hand: Copper,Copper,Copper,Mountebank,Silver,
-  BigMoneyDoubleMountebank Played Mountebank.
-    +2 Coin = 2 all together.
-    BigMoneyCultist Discarded Curse.
-  BigMoneyDoubleMountebank Played Silver.
-    +2 Coin = 4 all together.
+With hand: Copper,Copper,Estate,Gold,Ruined Market,
+  BigMoneyDoubleMountebank Played Ruined Market.
+    +1 Buys = 2 all together.
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 4 all together.
   BigMoneyDoubleMountebank Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDoubleMountebank bought Gold.
+  BigMoneyDoubleMountebank bought Silver.
   BigMoneyDoubleMountebank Discarded Copper.
   BigMoneyDoubleMountebank Discarded Copper.
-  BigMoneyDoubleMountebank Discarded Copper.
-  BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Mountebank.
-  BigMoneyDoubleMountebank Drew Abandoned Mine into hand.
-  BigMoneyDoubleMountebank Drew Ruined Village into hand.
-  BigMoneyDoubleMountebank Drew Ruined Library into hand.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Ruined Market.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Province into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
   BigMoneyDoubleMountebank Drew Estate into hand.
-  BigMoneyDoubleMountebank Drew Gold into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(3), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(5), Survivors(2), 
+  BigMoneyDoubleMountebank Drew Ruined Library into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(2), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(3), Silver(6), Survivors(1), 
 
 ROUND 16
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Cultist,Silver,Silver,
+With hand: Copper,Copper,Copper,Cultist,Cultist,
   BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Cultist into hand.
-    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoneyDoubleMountebank gained Ruined Village.
     BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Silver into hand.
+      BigMoneyCultist reshuffled
+      BigMoneyCultist Drew Cultist into hand.
       BigMoneyCultist Drew Copper into hand.
+      BigMoneyDoubleMountebank gained Survivors.
       BigMoneyCultist Played Cultist.
-        BigMoneyCultist Drew Copper into hand.
+        BigMoneyCultist Drew Silver into hand.
         BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
@@ -861,69 +847,264 @@ With hand: Copper,Cultist,Silver,Silver,
     +1 Coin = 9 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 10 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 11 all together.
   BigMoneyCultist bought Gold.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Cultist.
   BigMoneyCultist Discarded Cultist.
   BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Silver into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Curse into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist ends turn with deck: Copper(11), Cultist(7), Curse(4), Estate(3), Gold(2), Silver(7), 
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(8), Curse(5), Estate(3), Gold(1), Silver(7), 
 
 BigMoneyDoubleMountebank begins turn
-With hand: Abandoned Mine,Estate,Gold,Ruined Library,Ruined Village,
-  BigMoneyDoubleMountebank Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDoubleMountebank Played Abandoned Mine.
-    +1 Coin = 1 all together.
-  BigMoneyDoubleMountebank Played Gold.
-    +3 Coin = 4 all together.
+With hand: Copper,Estate,Province,Ruined Library,Silver,
+  BigMoneyDoubleMountebank Played Ruined Library.
+    BigMoneyDoubleMountebank Drew Abandoned Mine into hand.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 3 all together.
   BigMoneyDoubleMountebank bought Silver.
-  BigMoneyDoubleMountebank Discarded Gold.
-  BigMoneyDoubleMountebank Discarded Abandoned Mine.
-  BigMoneyDoubleMountebank Discarded Ruined Village.
-  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
   BigMoneyDoubleMountebank Discarded Ruined Library.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Discarded Province.
+  BigMoneyDoubleMountebank Discarded Abandoned Mine.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank Drew Gold into hand.
   BigMoneyDoubleMountebank Drew Copper into hand.
   BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank Drew Estate into hand.
-  BigMoneyDoubleMountebank Drew Province into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(3), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(6), Survivors(2), 
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(2), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
 
 ROUND 17
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Curse,Gold,Silver,Silver,
+With hand: Copper,Cultist,Estate,Estate,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist bought Cultist.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(9), Curse(5), Estate(3), Gold(1), Silver(7), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Gold,Gold,Mountebank,Silver,
+  BigMoneyDoubleMountebank Played Mountebank.
+    +2 Coin = 2 all together.
+    BigMoneyCultist Discarded Curse.
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 5 all together.
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 8 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 10 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 11 all together.
+  BigMoneyDoubleMountebank bought Province.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Ruined Village into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Ruined Village into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(2), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
+
+ROUND 18
+-------------
+BigMoneyCultist begins turn
+With hand: Cultist,Cultist,Silver,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Drew Curse into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Copper into hand.
+      BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist bought Duchy.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(9), Curse(5), Duchy(1), Estate(3), Gold(1), Silver(7), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Estate,Gold,Ruined Village,Ruined Village,
+  BigMoneyDoubleMountebank Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoneyDoubleMountebank Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDoubleMountebank bought Silver.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Ruined Village.
+  BigMoneyDoubleMountebank Discarded Ruined Village.
+  BigMoneyDoubleMountebank Discarded Estate.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Survivors into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank reshuffled
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(2), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+
+ROUND 19
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Curse,Curse,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyCultist bought Silver.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(9), Curse(5), Duchy(1), Estate(3), Gold(1), Silver(8), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Copper,Copper,Copper,Gold,Survivors,
+  BigMoneyDoubleMountebank Played Survivors.
+    BigMoneyDoubleMountebank Revealed Copper.
+    BigMoneyDoubleMountebank Revealed Silver.
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyDoubleMountebank bought Gold.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Survivors.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Province into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(5), Mountebank(2), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+
+ROUND 20
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Estate,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Curse into hand.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Gold into hand.
+      BigMoneyCultist Drew Cultist into hand.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Cultist into hand.
+        BigMoneyCultist Drew Curse into hand.
+        BigMoneyCultist Played Cultist.
+          BigMoneyCultist Drew Copper into hand.
+          BigMoneyCultist Drew Estate into hand.
   BigMoneyCultist Played Gold.
     +3 Coin = 3 all together.
   BigMoneyCultist Played Silver.
     +2 Coin = 5 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 7 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 8 all together.
-  BigMoneyCultist bought Province.
+  BigMoneyCultist bought Duchy.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Gold.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
   BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Estate.
   BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist Drew Cultist into hand.
   BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Curse into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(11), Cultist(7), Curse(4), Estate(3), Gold(2), Province(1), Silver(7), 
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(9), Curse(5), Duchy(2), Estate(3), Gold(1), Silver(8), 
 
 BigMoneyDoubleMountebank begins turn
 With hand: Copper,Copper,Estate,Province,Silver,
@@ -939,26 +1120,23 @@ With hand: Copper,Copper,Estate,Province,Silver,
   BigMoneyDoubleMountebank Discarded Silver.
   BigMoneyDoubleMountebank Discarded Estate.
   BigMoneyDoubleMountebank Discarded Province.
-  BigMoneyDoubleMountebank Drew Ruined Village into hand.
-  BigMoneyDoubleMountebank Drew Estate into hand.
-  BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Ruined Market into hand.
+  BigMoneyDoubleMountebank Drew Abandoned Mine into hand.
   BigMoneyDoubleMountebank Drew Mountebank into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(3), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(7), Survivors(2), 
+  BigMoneyDoubleMountebank Drew Ruined Village into hand.
+  BigMoneyDoubleMountebank Drew Ruined Village into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(5), Mountebank(2), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(9), Survivors(2), 
 
-ROUND 18
+ROUND 21
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Copper,Copper,Cultist,Cultist,
+With hand: Copper,Copper,Cultist,Cultist,Curse,
   BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Estate into hand.
-    BigMoneyCultist Drew Curse into hand.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoneyCultist Drew Duchy into hand.
     BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Cultist into hand.
       BigMoneyCultist Drew Copper into hand.
-      BigMoneyCultist Played Cultist.
-        BigMoneyCultist Drew Curse into hand.
-        BigMoneyCultist Drew Silver into hand.
+      BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
   BigMoneyCultist Played Copper.
@@ -977,364 +1155,274 @@ With hand: Copper,Copper,Copper,Cultist,Cultist,
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Cultist.
   BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
   BigMoneyCultist Discarded Curse.
-  BigMoneyCultist Discarded Curse.
-  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Discarded Duchy.
   BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Silver into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Estate into hand.
   BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist ends turn with deck: Copper(11), Cultist(7), Curse(4), Duchy(1), Estate(3), Gold(2), Province(1), Silver(7), 
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(9), Curse(5), Duchy(3), Estate(3), Gold(1), Silver(8), 
 
 BigMoneyDoubleMountebank begins turn
-With hand: Copper,Estate,Mountebank,Ruined Village,Silver,
+With hand: Abandoned Mine,Mountebank,Ruined Market,Ruined Village,Ruined Village,
   BigMoneyDoubleMountebank Played Ruined Village.
     +1 Actions = 1 all together.
-  BigMoneyDoubleMountebank Played Mountebank.
-    +2 Coin = 2 all together.
-    BigMoneyCultist gained Curse.
-    BigMoneyCultist gained Copper.
-  BigMoneyDoubleMountebank Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDoubleMountebank bought Silver.
-  BigMoneyDoubleMountebank Discarded Copper.
-  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoneyDoubleMountebank Played Abandoned Mine.
+    +1 Coin = 1 all together.
+  BigMoneyDoubleMountebank Discarded Abandoned Mine.
   BigMoneyDoubleMountebank Discarded Ruined Village.
+  BigMoneyDoubleMountebank Discarded Ruined Village.
+  BigMoneyDoubleMountebank Discarded Ruined Market.
   BigMoneyDoubleMountebank Discarded Mountebank.
-  BigMoneyDoubleMountebank Discarded Estate.
-  BigMoneyDoubleMountebank Drew Copper into hand.
   BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank Drew Mountebank into hand.
-  BigMoneyDoubleMountebank reshuffled
+  BigMoneyDoubleMountebank Drew Silver into hand.
   BigMoneyDoubleMountebank Drew Province into hand.
   BigMoneyDoubleMountebank Drew Gold into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(3), Province(2), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(5), Mountebank(2), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(9), Survivors(2), 
 
-ROUND 19
+ROUND 22
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Cultist,Estate,Estate,Silver,
+With hand: Copper,Copper,Cultist,Silver,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Curse into hand.
+    BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist bought Duchy.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(9), Curse(5), Duchy(4), Estate(3), Gold(1), Silver(8), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Gold,Province,Silver,Silver,Silver,
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 9 all together.
+  BigMoneyDoubleMountebank bought Province.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Province.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Ruined Library into hand.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Mountebank into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(5), Mountebank(2), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(9), Survivors(2), 
+
+ROUND 23
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Copper,Cultist,Estate,Silver,
+  BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Silver into hand.
+    BigMoneyCultist Drew Cultist into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Copper into hand.
+      BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyCultist Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyCultist Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyCultist bought Duchy.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Estate.
+  BigMoneyCultist Drew Curse into hand.
+  BigMoneyCultist reshuffled
+  BigMoneyCultist Drew Duchy into hand.
+  BigMoneyCultist Drew Silver into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Copper into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(9), Curse(5), Duchy(5), Estate(3), Gold(1), Silver(8), 
+
+BigMoneyDoubleMountebank begins turn
+With hand: Gold,Mountebank,Ruined Library,Silver,Silver,
+  BigMoneyDoubleMountebank Played Ruined Library.
+    BigMoneyDoubleMountebank Drew Ruined Market into hand.
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyDoubleMountebank bought Duchy.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Ruined Library.
+  BigMoneyDoubleMountebank Discarded Ruined Market.
+  BigMoneyDoubleMountebank Discarded Mountebank.
+  BigMoneyDoubleMountebank Drew Province into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(1), Estate(3), Gold(5), Mountebank(2), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(9), Survivors(2), 
+
+ROUND 24
+-------------
+BigMoneyCultist begins turn
+With hand: Copper,Cultist,Curse,Duchy,Silver,
   BigMoneyCultist Played Cultist.
     BigMoneyCultist Drew Copper into hand.
-    BigMoneyCultist reshuffled
-    BigMoneyCultist Drew Copper into hand.
+    BigMoneyCultist Drew Curse into hand.
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 3 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist bought Duchy.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Duchy into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Curse into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(2), Estate(3), Gold(2), Province(1), Silver(7), 
-
-BigMoneyDoubleMountebank begins turn
-With hand: Copper,Gold,Mountebank,Province,Silver,
-  BigMoneyDoubleMountebank Played Mountebank.
-    +2 Coin = 2 all together.
-    BigMoneyCultist Discarded Curse.
-  BigMoneyDoubleMountebank Played Gold.
-    +3 Coin = 5 all together.
-  BigMoneyDoubleMountebank Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyDoubleMountebank bought Province.
-  BigMoneyDoubleMountebank Discarded Copper.
-  BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Gold.
-  BigMoneyDoubleMountebank Discarded Mountebank.
-  BigMoneyDoubleMountebank Discarded Province.
-  BigMoneyDoubleMountebank Drew Ruined Market into hand.
-  BigMoneyDoubleMountebank Drew Abandoned Mine into hand.
-  BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Estate(3), Gold(4), Mountebank(3), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
-
-ROUND 20
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Duchy,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Curse into hand.
-    BigMoneyCultist Drew Cultist into hand.
-    BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Copper into hand.
-      BigMoneyCultist Drew Curse into hand.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 3 all together.
   BigMoneyCultist bought Silver.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Cultist.
+  BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Cultist.
   BigMoneyCultist Discarded Curse.
   BigMoneyCultist Discarded Curse.
   BigMoneyCultist Discarded Duchy.
   BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Province into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(2), Estate(3), Gold(2), Province(1), Silver(8), 
+  BigMoneyCultist Drew Duchy into hand.
+  BigMoneyCultist Drew Cultist into hand.
+  BigMoneyCultist Drew Estate into hand.
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(9), Curse(5), Duchy(5), Estate(3), Gold(1), Silver(9), 
 
 BigMoneyDoubleMountebank begins turn
-With hand: Abandoned Mine,Copper,Ruined Market,Silver,Silver,
-  BigMoneyDoubleMountebank Played Abandoned Mine.
-    +1 Coin = 1 all together.
-  BigMoneyDoubleMountebank Played Silver.
-    +2 Coin = 3 all together.
+With hand: Copper,Copper,Gold,Province,Silver,
+  BigMoneyDoubleMountebank Played Gold.
+    +3 Coin = 3 all together.
   BigMoneyDoubleMountebank Played Silver.
     +2 Coin = 5 all together.
   BigMoneyDoubleMountebank Played Copper.
     +1 Coin = 6 all together.
+  BigMoneyDoubleMountebank Played Copper.
+    +1 Coin = 7 all together.
   BigMoneyDoubleMountebank bought Duchy.
   BigMoneyDoubleMountebank Discarded Copper.
+  BigMoneyDoubleMountebank Discarded Copper.
   BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Abandoned Mine.
-  BigMoneyDoubleMountebank Discarded Ruined Market.
+  BigMoneyDoubleMountebank Discarded Gold.
+  BigMoneyDoubleMountebank Discarded Province.
   BigMoneyDoubleMountebank Drew Survivors into hand.
-  BigMoneyDoubleMountebank Drew Ruined Market into hand.
-  BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank Drew Mountebank into hand.
   BigMoneyDoubleMountebank Drew Estate into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(1), Estate(3), Gold(4), Mountebank(3), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
-
-ROUND 21
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Cultist,Province,Silver,Silver,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Gold into hand.
-    BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyCultist bought Province.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Gold.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Province.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Curse into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Curse into hand.
-  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(2), Estate(3), Gold(2), Province(2), Silver(8), 
-
-BigMoneyDoubleMountebank begins turn
-With hand: Estate,Mountebank,Ruined Market,Silver,Survivors,
-  BigMoneyDoubleMountebank Played Ruined Market.
-    +1 Buys = 2 all together.
-  BigMoneyDoubleMountebank Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleMountebank bought Estate.
-  BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Ruined Market.
-  BigMoneyDoubleMountebank Discarded Estate.
-  BigMoneyDoubleMountebank Discarded Survivors.
-  BigMoneyDoubleMountebank Discarded Mountebank.
-  BigMoneyDoubleMountebank Drew Copper into hand.
+  BigMoneyDoubleMountebank Drew Ruined Village into hand.
   BigMoneyDoubleMountebank Drew Ruined Village into hand.
   BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank Drew Province into hand.
-  BigMoneyDoubleMountebank Drew Gold into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(1), Estate(4), Gold(4), Mountebank(3), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(3), Gold(5), Mountebank(2), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(9), Survivors(2), 
 
-ROUND 22
+ROUND 25
 -------------
 BigMoneyCultist begins turn
-With hand: Copper,Cultist,Curse,Curse,Silver,
+With hand: Copper,Cultist,Duchy,Estate,Silver,
   BigMoneyCultist Played Cultist.
+    BigMoneyCultist Drew Cultist into hand.
     BigMoneyCultist Drew Silver into hand.
-    BigMoneyCultist Drew Estate into hand.
+    BigMoneyCultist Played Cultist.
+      BigMoneyCultist Drew Cultist into hand.
+      BigMoneyCultist Drew Silver into hand.
+      BigMoneyCultist Played Cultist.
+        BigMoneyCultist Drew Copper into hand.
+        BigMoneyCultist Drew Silver into hand.
   BigMoneyCultist Played Silver.
     +2 Coin = 2 all together.
   BigMoneyCultist Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist bought Duchy.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Curse.
-  BigMoneyCultist Discarded Curse.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(3), Estate(3), Gold(2), Province(2), Silver(8), 
-
-BigMoneyDoubleMountebank begins turn
-With hand: Copper,Gold,Province,Ruined Village,Silver,
-  BigMoneyDoubleMountebank Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDoubleMountebank Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDoubleMountebank Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDoubleMountebank bought Duchy.
-  BigMoneyDoubleMountebank Discarded Copper.
-  BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Gold.
-  BigMoneyDoubleMountebank Discarded Ruined Village.
-  BigMoneyDoubleMountebank Discarded Province.
-  BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank Drew Ruined Village into hand.
-  BigMoneyDoubleMountebank Drew Gold into hand.
-  BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(4), Gold(4), Mountebank(3), Province(3), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
-
-ROUND 23
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Gold,Silver,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Cultist into hand.
-    BigMoneyCultist Drew Copper into hand.
-    BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Silver into hand.
-      BigMoneyCultist reshuffled
-      BigMoneyCultist Drew Curse into hand.
-  BigMoneyCultist Played Gold.
-    +3 Coin = 3 all together.
   BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
+    +2 Coin = 6 all together.
   BigMoneyCultist Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 8 all together.
+    +2 Coin = 8 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 9 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 10 all together.
-  BigMoneyCultist bought Province.
-  BigMoneyCultist Discarded Copper.
+  BigMoneyCultist bought Duchy.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Gold.
+  BigMoneyCultist Discarded Silver.
+  BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Cultist.
   BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Curse.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Curse into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Province into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(3), Estate(3), Gold(2), Province(3), Silver(8), 
-
-BigMoneyDoubleMountebank begins turn
-With hand: Copper,Gold,Ruined Village,Silver,Silver,
-  BigMoneyDoubleMountebank Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDoubleMountebank Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDoubleMountebank Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDoubleMountebank Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyDoubleMountebank bought Province.
-  BigMoneyDoubleMountebank Discarded Copper.
-  BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Gold.
-  BigMoneyDoubleMountebank Discarded Ruined Village.
-  BigMoneyDoubleMountebank Drew Mountebank into hand.
-  BigMoneyDoubleMountebank Drew Ruined Library into hand.
-  BigMoneyDoubleMountebank Drew Estate into hand.
-  BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(4), Gold(4), Mountebank(3), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
-
-ROUND 24
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Curse,Estate,Province,Silver,
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyCultist bought Estate.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Curse.
+  BigMoneyCultist Discarded Cultist.
   BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Province.
+  BigMoneyCultist Discarded Duchy.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Silver into hand.
   BigMoneyCultist Drew Duchy into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(3), Estate(4), Gold(2), Province(3), Silver(8), 
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(9), Curse(5), Duchy(6), Estate(3), Gold(1), Silver(9), 
 
 BigMoneyDoubleMountebank begins turn
-With hand: Copper,Copper,Estate,Mountebank,Ruined Library,
-  BigMoneyDoubleMountebank Played Ruined Library.
-    BigMoneyDoubleMountebank Drew Estate into hand.
-  BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDoubleMountebank bought Estate.
-  BigMoneyDoubleMountebank Discarded Copper.
-  BigMoneyDoubleMountebank Discarded Copper.
-  BigMoneyDoubleMountebank Discarded Ruined Library.
+With hand: Estate,Ruined Village,Ruined Village,Silver,Survivors,
+  BigMoneyDoubleMountebank Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoneyDoubleMountebank Played Ruined Village.
+    +1 Actions = 1 all together.
+  BigMoneyDoubleMountebank Played Survivors.
+    BigMoneyDoubleMountebank Revealed Estate.
+    BigMoneyDoubleMountebank reshuffled
+    BigMoneyDoubleMountebank Revealed Ruined Market.
+  BigMoneyDoubleMountebank Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyDoubleMountebank Discarded Silver.
+  BigMoneyDoubleMountebank Discarded Ruined Village.
+  BigMoneyDoubleMountebank Discarded Ruined Village.
+  BigMoneyDoubleMountebank Discarded Survivors.
   BigMoneyDoubleMountebank Discarded Estate.
-  BigMoneyDoubleMountebank Discarded Estate.
-  BigMoneyDoubleMountebank Discarded Mountebank.
-  BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank Drew Survivors into hand.
-  BigMoneyDoubleMountebank Drew Gold into hand.
+  BigMoneyDoubleMountebank Drew Ruined Market into hand.
+  BigMoneyDoubleMountebank Drew Estate into hand.
+  BigMoneyDoubleMountebank Drew Silver into hand.
+  BigMoneyDoubleMountebank Drew Province into hand.
   BigMoneyDoubleMountebank Drew Ruined Village into hand.
-  BigMoneyDoubleMountebank Drew Ruined Village into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(5), Gold(4), Mountebank(3), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(3), Gold(5), Mountebank(2), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(9), Survivors(2), 
 
-ROUND 25
+ROUND 26
 -------------
 BigMoneyCultist begins turn
 With hand: Copper,Copper,Copper,Duchy,Silver,
@@ -1346,242 +1434,41 @@ With hand: Copper,Copper,Copper,Duchy,Silver,
     +1 Coin = 4 all together.
   BigMoneyCultist Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyCultist bought Duchy.
+  BigMoneyCultist bought Cultist.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Copper.
   BigMoneyCultist Discarded Silver.
   BigMoneyCultist Discarded Duchy.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist Drew Gold into hand.
-  BigMoneyCultist Drew Curse into hand.
-  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(4), Estate(4), Gold(2), Province(3), Silver(8), 
-
-BigMoneyDoubleMountebank begins turn
-With hand: Copper,Gold,Ruined Village,Ruined Village,Survivors,
-  BigMoneyDoubleMountebank Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDoubleMountebank Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDoubleMountebank Played Survivors.
-    BigMoneyDoubleMountebank Revealed Silver.
-    BigMoneyDoubleMountebank reshuffled
-    BigMoneyDoubleMountebank Revealed Estate.
-  BigMoneyDoubleMountebank Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDoubleMountebank bought Estate.
-  BigMoneyDoubleMountebank Discarded Copper.
-  BigMoneyDoubleMountebank Discarded Gold.
-  BigMoneyDoubleMountebank Discarded Ruined Village.
-  BigMoneyDoubleMountebank Discarded Ruined Village.
-  BigMoneyDoubleMountebank Discarded Survivors.
-  BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank Drew Estate into hand.
-  BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank Drew Ruined Village into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(6), Gold(4), Mountebank(3), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
-
-ROUND 26
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Curse,Gold,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Duchy into hand.
-    BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyCultist bought Duchy.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Gold.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Curse.
-  BigMoneyCultist Discarded Duchy.
-  BigMoneyCultist Drew Duchy into hand.
-  BigMoneyCultist Drew Estate into hand.
   BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(5), Estate(4), Gold(2), Province(3), Silver(8), 
-
-BigMoneyDoubleMountebank begins turn
-With hand: Copper,Copper,Estate,Ruined Village,Silver,
-  BigMoneyDoubleMountebank Played Ruined Village.
-    +1 Actions = 1 all together.
-  BigMoneyDoubleMountebank Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyDoubleMountebank Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyDoubleMountebank bought Estate.
-  BigMoneyDoubleMountebank Discarded Copper.
-  BigMoneyDoubleMountebank Discarded Copper.
-  BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Ruined Village.
-  BigMoneyDoubleMountebank Discarded Estate.
-  BigMoneyDoubleMountebank Drew Estate into hand.
-  BigMoneyDoubleMountebank Drew Estate into hand.
-  BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(7), Gold(4), Mountebank(3), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
-
-ROUND 27
--------------
-BigMoneyCultist begins turn
-With hand: Cultist,Duchy,Estate,Estate,Silver,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist Drew Cultist into hand.
-    BigMoneyCultist Drew Copper into hand.
-    BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Silver into hand.
-      BigMoneyCultist Drew Cultist into hand.
-      BigMoneyCultist Played Cultist.
-        BigMoneyCultist Drew Curse into hand.
-        BigMoneyCultist Drew Province into hand.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist bought Duchy.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Curse.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Duchy.
-  BigMoneyCultist Discarded Province.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Curse into hand.
   BigMoneyCultist Drew Copper into hand.
   BigMoneyCultist Drew Copper into hand.
-  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(6), Estate(4), Gold(2), Province(3), Silver(8), 
-
-BigMoneyDoubleMountebank begins turn
-With hand: Estate,Estate,Silver,Silver,Silver,
-  BigMoneyDoubleMountebank Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleMountebank Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleMountebank Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyDoubleMountebank bought Estate.
-  BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Estate.
-  BigMoneyDoubleMountebank Discarded Estate.
-  BigMoneyDoubleMountebank Drew Duchy into hand.
-  BigMoneyDoubleMountebank Drew Estate into hand.
-  BigMoneyDoubleMountebank Drew Mountebank into hand.
-  BigMoneyDoubleMountebank Drew Duchy into hand.
-  BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(8), Gold(4), Mountebank(3), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
-
-ROUND 28
--------------
-BigMoneyCultist begins turn
-With hand: Copper,Copper,Cultist,Curse,Silver,
-  BigMoneyCultist Played Cultist.
-    BigMoneyCultist reshuffled
-    BigMoneyCultist Drew Curse into hand.
-    BigMoneyCultist Drew Cultist into hand.
-    BigMoneyCultist Played Cultist.
-      BigMoneyCultist Drew Duchy into hand.
-      BigMoneyCultist Drew Cultist into hand.
-      BigMoneyCultist Played Cultist.
-        BigMoneyCultist Drew Copper into hand.
-        BigMoneyCultist Drew Estate into hand.
-  BigMoneyCultist Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyCultist Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyCultist bought Estate.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Copper.
-  BigMoneyCultist Discarded Silver.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Cultist.
-  BigMoneyCultist Discarded Curse.
-  BigMoneyCultist Discarded Curse.
-  BigMoneyCultist Discarded Estate.
-  BigMoneyCultist Discarded Duchy.
   BigMoneyCultist Drew Duchy into hand.
-  BigMoneyCultist Drew Cultist into hand.
-  BigMoneyCultist Drew Silver into hand.
-  BigMoneyCultist Drew Curse into hand.
   BigMoneyCultist Drew Duchy into hand.
-  BigMoneyCultist ends turn with deck: Copper(12), Cultist(7), Curse(5), Duchy(6), Estate(5), Gold(2), Province(3), Silver(8), 
+  BigMoneyCultist ends turn with deck: Copper(12), Cultist(10), Curse(5), Duchy(6), Estate(3), Gold(1), Silver(9), 
 
-BigMoneyDoubleMountebank begins turn
-With hand: Duchy,Duchy,Estate,Mountebank,Silver,
-  BigMoneyDoubleMountebank Played Mountebank.
-    +2 Coin = 2 all together.
-    BigMoneyCultist Discarded Curse.
-  BigMoneyDoubleMountebank Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleMountebank bought Estate.
-  BigMoneyDoubleMountebank Discarded Silver.
-  BigMoneyDoubleMountebank Discarded Mountebank.
-  BigMoneyDoubleMountebank Discarded Estate.
-  BigMoneyDoubleMountebank Discarded Duchy.
-  BigMoneyDoubleMountebank Discarded Duchy.
-  BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank Drew Copper into hand.
-  BigMoneyDoubleMountebank Drew Province into hand.
-  BigMoneyDoubleMountebank Drew Province into hand.
-  BigMoneyDoubleMountebank Drew Silver into hand.
-  BigMoneyDoubleMountebank ends turn with deck: Abandoned Mine(1), Copper(7), Duchy(2), Estate(9), Gold(4), Mountebank(3), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
-
-Game ended in 28 turns.
+Game ended in 26 turns.
 BigMoneyDoubleMountebank Won!
-BigMoneyCultist total score: 36
-  Copper(12), Cultist(7), Curse(5), Duchy(6), Estate(5), Gold(2), Province(3), Silver(8), 
-BigMoneyDoubleMountebank total score: 39
-  Abandoned Mine(1), Copper(7), Duchy(2), Estate(9), Gold(4), Mountebank(3), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(8), Survivors(2), 
+BigMoneyCultist total score: 16
+  Copper(12), Cultist(10), Curse(5), Duchy(6), Estate(3), Gold(1), Silver(9), 
+BigMoneyDoubleMountebank total score: 33
+  Abandoned Mine(1), Copper(7), Duchy(2), Estate(3), Gold(5), Mountebank(2), Province(4), Ruined Library(1), Ruined Market(2), Ruined Village(4), Silver(9), Survivors(2), 
 Trash contains: 
 
 BigMoneyCultist GainSequence is:
   Silver, Silver, Cultist, Silver, Curse, 
   Copper, Silver, Curse, Copper, Cultist, 
   Silver, Curse, Copper, Cultist, Cultist, 
-  Cultist, Cultist, Silver, Silver, Curse, 
-  Copper, Cultist, Gold, Gold, Province, 
-  Duchy, Curse, Copper, Duchy, Silver, 
-  Province, Duchy, Province, Estate, Duchy, 
-  Duchy, Duchy, Estate, 
+  Cultist, Curse, Copper, Cultist, Silver, 
+  Cultist, Cultist, Curse, Copper, Silver, 
+  Gold, Cultist, Duchy, Silver, Duchy, 
+  Duchy, Duchy, Duchy, Silver, Duchy, 
+  Cultist, 
 BigMoneyDoubleMountebank GainSequence is:
-  Mountebank, Silver, Mountebank, Mountebank, Gold, 
-  Ruined Market, Silver, Gold, Survivors, Gold, 
-  Silver, Ruined Library, Silver, Ruined Village, Silver, 
-  Ruined Village, Abandoned Mine, Province, Ruined Village, Province, 
-  Ruined Market, Ruined Village, Survivors, Gold, Silver, 
-  Silver, Silver, Province, Duchy, Estate, 
-  Duchy, Province, Estate, Estate, Estate, 
-  Estate, Estate, 
+  Mountebank, Silver, Mountebank, Silver, Gold, 
+  Ruined Market, Silver, Silver, Survivors, Gold, 
+  Gold, Ruined Library, Gold, Ruined Village, Silver, 
+  Ruined Village, Abandoned Mine, Ruined Village, Province, Province, 
+  Ruined Market, Silver, Ruined Village, Survivors, Silver, 
+  Province, Silver, Gold, Silver, Province, 
+  Duchy, Duchy, 
