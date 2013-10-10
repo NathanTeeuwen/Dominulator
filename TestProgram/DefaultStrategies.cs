@@ -17,7 +17,7 @@ namespace Program
                 return new CardPickByPriority();
             }
 
-            public static ICardPicker ActionPlayOrder(ICardPicker purchaseOrder)
+            public static ICardPicker DefaultActionPlayOrder(ICardPicker purchaseOrder)
             {
                 return new CardPickFromWhatsInHand(new SortCardByDefaultActionOrder(purchaseOrder));
             }
@@ -160,7 +160,7 @@ namespace Program
                 }
             }
 
-            public static CardPickByPriority TreasurePlayOrder()
+            public static CardPickByPriority DefaultTreasurePlayOrder()
             {
                 return new CardPickByPriority(
                     CardAcceptance.For<CardTypes.Contraband>(),       // play early to provide opponent as little information when banning
@@ -198,15 +198,20 @@ namespace Program
                     CardAcceptance.For<CardTypes.OvergrownEstate>(),
                     CardAcceptance.For<CardTypes.Hovel>(),
                     CardAcceptance.For<CardTypes.Ruins>(),
-                    CardAcceptance.For<CardTypes.Copper>(),
-                    CardAcceptance.For<CardTypes.Curse>());
+                    CardAcceptance.For<CardTypes.Curse>(),
+                    CardAcceptance.For<CardTypes.Copper>());
             }
 
             public static ICardPicker DefaultTrashOrder()
             {
                 return new CardPickByPriority(
                     CardAcceptance.For<CardTypes.Curse>(),
-                    CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) == 8),
+                    CardAcceptance.For<CardTypes.RuinedVillage>(),
+                    CardAcceptance.For<CardTypes.RuinedMarket>(),
+                    CardAcceptance.For<CardTypes.Survivors>(),
+                    CardAcceptance.For<CardTypes.RuinedLibrary>(),
+                    CardAcceptance.For<CardTypes.AbandonedMine>(), 
+                    CardAcceptance.For<CardTypes.Estate>(gameState => CountAllOwned<CardTypes.Province>(gameState) == 0),
                     CardAcceptance.For<CardTypes.OvergrownEstate>(),
                     CardAcceptance.For<CardTypes.Hovel>(),
                     CardAcceptance.For<CardTypes.Copper>());

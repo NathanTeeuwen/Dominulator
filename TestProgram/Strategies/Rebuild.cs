@@ -25,7 +25,7 @@ namespace Program
                     : base("Rebuild",
                         playerNumber,
                         purchaseOrder: PurchaseOrder(),
-                        treasurePlayOrder: Default.TreasurePlayOrder(),
+                        treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
                         actionOrder: ActionOrder())
                 {
                 }

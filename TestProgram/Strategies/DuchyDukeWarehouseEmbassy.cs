@@ -19,7 +19,7 @@ namespace Program
                             "DuchyDukeWarehouseEmbassy",
                             playerNumber,
                             purchaseOrder: PurchaseOrder(),
-                            treasurePlayOrder: Default.TreasurePlayOrder(),
+                            treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
                             actionOrder: ActionOrder(),
                             trashOrder: Default.EmptyPickOrder(),
                             discardOrder: DiscardOrder());

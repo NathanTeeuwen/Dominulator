@@ -37,14 +37,14 @@ namespace Program
         {
             this.playerIndex = playerIndex;
             this.purchaseOrder = purchaseOrder;
-            this.actionOrder = actionOrder == null ? Strategies.Default.ActionPlayOrder(purchaseOrder) : actionOrder;
+            this.actionOrder = actionOrder == null ? Strategies.Default.DefaultActionPlayOrder(purchaseOrder) : actionOrder;
             this.discardOrder = discardOrder == null ? Strategies.Default.DefaultDiscardOrder() : discardOrder;
             this.trashOrder = trashOrder == null ? Strategies.Default.DefaultTrashOrder() : trashOrder;
-            this.treasurePlayOrder = treasurePlayOrder == null ? Strategies.Default.TreasurePlayOrder() : treasurePlayOrder;            
+            this.treasurePlayOrder = treasurePlayOrder == null ? Strategies.Default.DefaultTreasurePlayOrder() : treasurePlayOrder;            
             this.gainOrder = gainOrder != null ? gainOrder : purchaseOrder;
             this.chooseDefaultActionOnNone = chooseDefaultActionOnNone;
             this.name = name;
-            this.defaultActionOrder = Strategies.Default.ActionPlayOrder(purchaseOrder);
+            this.defaultActionOrder = Strategies.Default.DefaultActionPlayOrder(purchaseOrder);
         }
 
         public static int PlayIndexfor(IPlayerAction playerAction)

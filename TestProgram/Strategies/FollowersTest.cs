@@ -19,7 +19,7 @@ namespace Program
                             "FollowersTest",
                             playerNumber,
                             purchaseOrder: PurchaseOrder(cardCost),
-                            treasurePlayOrder: Default.TreasurePlayOrder(),
+                            treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
                             actionOrder: ActionOrder(cardCost),
                             trashOrder: Default.EmptyPickOrder(),
                             discardOrder: Default.EmptyPickOrder());

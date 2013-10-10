@@ -32,7 +32,7 @@ namespace Program
                     : base(strategyName,
                         playerNumber,
                         purchaseOrder: PurchaseOrder(withCard, withCardPurchaseCondition),
-                        treasurePlayOrder: Default.TreasurePlayOrder(),
+                        treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
                         actionOrder: ActionOrder(withCard))
                 {
                 }
