@@ -118,7 +118,7 @@ namespace Dominion
             }
             else
             {
-                Add<CardTypes.Potion>(gameSubset, supplyCardPiles, 0);
+                gameSubset.AddCard(Card.Type<CardTypes.Potion>());
             }
 
             if (this.kingdomPiles.Where(card => card.requiresRuins).Any())

@@ -39,6 +39,14 @@ namespace Dominion
             }
         }
 
+        public Card CurrentCardBeingPlayed 
+        { 
+            get 
+            { 
+                return this.players.CurrentPlayer.CurrentCardBeingPlayed; 
+            } 
+        }
+
         // special piles not in the supply - not available in every game
         private PileOfCards blackMarketDeck = null;
 

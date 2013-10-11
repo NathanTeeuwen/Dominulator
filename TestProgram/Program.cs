@@ -13,12 +13,11 @@ namespace Program
         static void Main()
         {
             var stopwatch = new System.Diagnostics.Stopwatch();
-            stopwatch.Start();            
-            
-            ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Mountebank>.Player(1, "BigMoneyDoubleMount", cardCount:2, afterGoldCount:0), Strategies.MountebankGovernorMaurader.Player(2), useShelters: true);
-            ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Cultist>.Player(1, "BigMoneyTripleCultist", cardCount: 3, afterGoldCount: 0), Strategies.MountebankGovernorMaurader.Player(2), useShelters: true);
-            ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.MountebankGovernorMaurader.Player(2), useShelters: true);
-            CompareStrategyVsAllKnownStrategies(Strategies.MountebankGovernorMaurader.Player(1), useShelters: true);
+            stopwatch.Start();
+
+            Kingdoms.ShouldRemakeOrHorseTradersIntoSoothayer.Run();
+            //ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.MountebankGovernorMaurader.Player(2), useShelters: true);
+            //CompareStrategyVsAllKnownStrategies(Strategies.MountebankGovernorMaurader.Player(1), useShelters: true);
             
             stopwatch.Stop();
 
@@ -74,15 +73,16 @@ namespace Program
         public static double ComparePlayers(
             PlayerAction player1, 
             PlayerAction player2, 
-            bool useShelters = false, 
+            bool useShelters = false,
+            bool shouldParallel = true,
+            GameConfig gameConfigToUse = null,
             bool firstPlayerAdvantage = false, 
             bool showVerboseScore = true,
             bool showCompactScore = false, 
-            bool showDistribution = false,
-            bool shouldParallel = true,
+            bool showDistribution = false,            
             bool showPlayer2Wins = false,
             int numberOfGames = 1000, 
-            int logGameCount = 100,
+            int logGameCount = 100,            
             CreateGameLog createGameLog = null,
             IEnumerable<CardCountPair>[] startingDeckPerPlayer = null)
         {            
@@ -115,7 +115,7 @@ namespace Program
 
                     Random random = new Random(gameCount);
 
-                    var gameConfig = new GameConfig(
+                    var gameConfig = gameConfigToUse != null ? gameConfigToUse : new GameConfig(
                         useShelters,                        
                         useColonyAndPlatinum: false,
                         supplyPiles: supplyPiles);

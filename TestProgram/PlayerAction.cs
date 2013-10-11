@@ -264,6 +264,8 @@ namespace Program
         {
             if (card.Is<CardTypes.Watchtower>())
                 return true;
+            if (card.Is<CardTypes.HorseTraders>())
+                return true;
 
             return base.ShouldRevealCardFromHand(gameState, card);
         }

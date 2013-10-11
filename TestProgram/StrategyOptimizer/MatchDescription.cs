@@ -29,6 +29,11 @@ namespace Program
             return new MatchDescription(this.cardType, this.countSource, this.comparison, this.countThreshHold);
         }
 
+        public CardAcceptance ToCardAcceptance()
+        {
+            return CardAcceptance.For(this.cardType, this.GameStatePredicate);
+        }
+
         public bool GameStatePredicate(GameState gameState)
         {
             int countOfTheSource;

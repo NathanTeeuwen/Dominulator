@@ -151,6 +151,6 @@ namespace Program
         private static int CountInHandFrom(ICardPicker matchingCards, GameState gameState)
         {
             return gameState.Self.Hand.CountWhere(card => matchingCards.GetPreferredCard(gameState, current => current.Is(card)) != null);            
-        }                         
+        }        
     }
 }

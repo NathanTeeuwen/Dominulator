@@ -27,14 +27,14 @@ namespace Program
         {
             this.card = card;
             this.match = AlwaysMatch;
-            this.overpayAmount = OverPayMaxAmount;
+            this.overpayAmount = OverPayZero;
         }
 
         public CardAcceptance(Card card, GameStatePredicate match)
         {
             this.card = card;
             this.match = match;
-            this.overpayAmount = OverPayMaxAmount;
+            this.overpayAmount = OverPayZero;
         }
 
         public CardAcceptance(Card card, GameStatePredicate match, GameStateIntValue overpayAmount)
@@ -70,6 +70,34 @@ namespace Program
             where T : Card, new()
         {
             return new CardAcceptance(Card.Type<T>(), match, overpayAmount);
-        }        
+        }
+
+        public static CardAcceptance For<T>(int threshhold)
+            where T : Card, new()
+        {
+            return For<T>(CountSource.AllOwned, Comparison.LessThan, threshhold);
+        }
+
+        public static CardAcceptance For<T>(int threshhold, GameStatePredicate match)
+            where T : Card, new()
+        {
+            return For<T>(CountSource.AllOwned, Comparison.LessThan, threshhold, match);
+        }
+
+        public static CardAcceptance For<T>(CountSource countSource, Comparison comparison, int threshhold)
+           where T : Card, new()
+        {
+            MatchDescription descr = new MatchDescription(Card.Type<T>(), countSource, comparison, threshhold);
+
+            return descr.ToCardAcceptance();            
+        }
+
+        public static CardAcceptance For<T>(CountSource countSource, Comparison comparison, int threshhold, GameStatePredicate match)
+           where T : Card, new()
+        {
+            MatchDescription descr = new MatchDescription(Card.Type<T>(), countSource, comparison, threshhold);
+
+            return CardAcceptance.For(Card.Type<T>(), gameState => descr.GameStatePredicate(gameState) && match(gameState));
+        } 
     }
 }

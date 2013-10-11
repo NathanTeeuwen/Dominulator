@@ -269,17 +269,17 @@ namespace Dominion
 
         public void PlayerReturnedCardToHand(PlayerState playerState, Card card)
         {
-            throw new NotImplementedException();
+            this.textWriter.WriteLine("{0} returned {1} to hand", playerState.actions.PlayerName, card.name);
         }
 
         public void PlayerSetAsideCardFromHandForNextTurn(PlayerState playerState, Card card)
         {
-            throw new NotImplementedException();
+            this.textWriter.WriteLine("{0} set aside {1} for next turn", playerState.actions.PlayerName, card.name);
         }    
 
         public void PlayerOverpaidForCard(Card boughtCard, int overPayAmount)
         {
-            this.textWriter.WriteLine("Player overpayed by {0} for {1}", overPayAmount, boughtCard.name);
+            this.textWriter.WriteLine("Player overpayed by {2} for {2}", overPayAmount, boughtCard.name);
         }
 
         public void CardWentToLocation(DeckPlacement deckPlacement)

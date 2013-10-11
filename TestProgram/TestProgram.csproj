@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="CardAcceptance.cs" />
     <Compile Include="DefaultStrategies.cs" />
+    <Compile Include="Kingdoms\ShouldRemakeOrHorseTradersIntoSoothayer.cs" />
     <Compile Include="Simulations\DarkAgesBigMoney.cs" />
     <Compile Include="Simulations\EffectOfEstateOnRebuild.cs" />
     <Compile Include="Simulations\FeodumVsDuke.cs" />
