@@ -14,10 +14,9 @@ namespace Program
         {
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
-
-            Kingdoms.ShouldRemakeOrHorseTradersIntoSoothayer.Run();
-            //ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.MountebankGovernorMaurader.Player(2), useShelters: true);
-            //CompareStrategyVsAllKnownStrategies(Strategies.MountebankGovernorMaurader.Player(1), useShelters: true);
+            
+            ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.MountebankGovernorMaurader.Player(2), useShelters: true);
+            CompareStrategyVsAllKnownStrategies(Strategies.MountebankGovernorMaurader.Player(1), useShelters: true);
             
             stopwatch.Stop();
 
