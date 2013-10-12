@@ -45,19 +45,19 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Colony>(gameState => CountAllOwned<CardTypes.Platinum>(gameState) > 2),                           
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => GainsUntilEndGame(gameState) <= 2),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => GainsUntilEndGame(gameState) <= 2),
-                           CardAcceptance.For<CardTypes.Platinum>(),
-                           CardAcceptance.For<CardTypes.Province>(gameState => GainsUntilEndGame(gameState) <= 2),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => GainsUntilEndGame(gameState) < 4),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(Cards.Colony, gameState => CountAllOwned(Cards.Platinum, gameState) > 2),                           
+                           CardAcceptance.For(Cards.Duchy, gameState => GainsUntilEndGame(gameState) <= 2),
+                           CardAcceptance.For(Cards.Estate, gameState => GainsUntilEndGame(gameState) <= 2),
+                           CardAcceptance.For(Cards.Platinum),
+                           CardAcceptance.For(Cards.Province, gameState => GainsUntilEndGame(gameState) <= 2),
+                           CardAcceptance.For(Cards.Gold),
+                           CardAcceptance.For(Cards.Estate, gameState => GainsUntilEndGame(gameState) < 4),
+                           CardAcceptance.For(Cards.Silver));
             }
 
             private static int GainsUntilEndGame(GameState gameState)
             {
-                int result = Math.Min(CountOfPile<CardTypes.Colony>(gameState), CountOfPile<CardTypes.Province>(gameState));
+                int result = Math.Min(CountOfPile(Cards.Colony, gameState), CountOfPile(Cards.Province, gameState));
                 return result;
             }
         }           

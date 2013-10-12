@@ -26,35 +26,35 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Graverobber>(),
-                           CardAcceptance.For<CardTypes.Militia>(1),
-                           CardAcceptance.For<CardTypes.Feast>(),
-                           CardAcceptance.For<CardTypes.Procession>(),
-                           CardAcceptance.For<CardTypes.Silver>(1),
-                           CardAcceptance.For<CardTypes.Village>());
+                           CardAcceptance.For(Cards.Province),
+                           CardAcceptance.For(Cards.Graverobber),
+                           CardAcceptance.For(Cards.Militia, 1),
+                           CardAcceptance.For(Cards.Feast),
+                           CardAcceptance.For(Cards.Procession),
+                           CardAcceptance.For(Cards.Silver, 1),
+                           CardAcceptance.For(Cards.Village));
             }
 
             private static ICardPicker ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Procession>(),
-                           CardAcceptance.For<CardTypes.Graverobber>(gameState => CardBeingPlayedIs<CardTypes.Procession>(gameState)),
-                           CardAcceptance.For<CardTypes.Feast>(gameState => CardBeingPlayedIs<CardTypes.Procession>(gameState)),
-                           CardAcceptance.For<CardTypes.Village>(),
-                           CardAcceptance.For<CardTypes.Graverobber>(),
-                           CardAcceptance.For<CardTypes.Militia>(1),
-                           CardAcceptance.For<CardTypes.Feast>(),                           
-                           CardAcceptance.For<CardTypes.Silver>(1));
+                           CardAcceptance.For(Cards.Procession),
+                           CardAcceptance.For(Cards.Graverobber, gameState => CardBeingPlayedIs(Cards.Procession, gameState)),
+                           CardAcceptance.For(Cards.Feast, gameState => CardBeingPlayedIs(Cards.Procession, gameState)),
+                           CardAcceptance.For(Cards.Village),
+                           CardAcceptance.For(Cards.Graverobber),
+                           CardAcceptance.For(Cards.Militia, 1),
+                           CardAcceptance.For(Cards.Feast),                           
+                           CardAcceptance.For(Cards.Silver, 1));
             }
 
             private static ICardPicker TrashOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Graverobber>(),
-                           CardAcceptance.For<CardTypes.Feast>(),
-                           CardAcceptance.For<CardTypes.Village>(),
-                           CardAcceptance.For<CardTypes.Militia>());
+                           CardAcceptance.For(Cards.Graverobber),
+                           CardAcceptance.For(Cards.Feast),
+                           CardAcceptance.For(Cards.Village),
+                           CardAcceptance.For(Cards.Militia));
             }
         }
     }
