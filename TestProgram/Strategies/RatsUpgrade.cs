@@ -28,46 +28,46 @@ namespace Program
             static ICardPicker PurchaseOrder()
             {
                 return new CardPickByPriority(
-                         CardAcceptance.For(CardTypes.Province.card),
-                         CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 6),
-                         CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 2),
-                         CardAcceptance.For(CardTypes.Gold.card),
-                         CardAcceptance.For(CardTypes.Upgrade.card),
-                         CardAcceptance.For(CardTypes.Rats.card, gameState => CountAllOwned(CardTypes.Rats.card, gameState) == 0),
-                         CardAcceptance.For(CardTypes.Silver.card),
-                         CardAcceptance.For(CardTypes.Rats.card));               
+                         CardAcceptance.For(Cards.Province),
+                         CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) < 6),
+                         CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2),
+                         CardAcceptance.For(Cards.Gold),
+                         CardAcceptance.For(Cards.Upgrade),
+                         CardAcceptance.For(Cards.Rats, gameState => CountAllOwned(Cards.Rats, gameState) == 0),
+                         CardAcceptance.For(Cards.Silver),
+                         CardAcceptance.For(Cards.Rats));               
             }
 
             static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For(CardTypes.Rats.card, HasCardToRatsInHand),
-                    CardAcceptance.For(CardTypes.Upgrade.card, HasCardToUpgradeInHand));                    
+                    CardAcceptance.For(Cards.Rats, HasCardToRatsInHand),
+                    CardAcceptance.For(Cards.Upgrade, HasCardToUpgradeInHand));                    
             }
 
             static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For(CardTypes.Rats.card, gameState => CountAllOwned(CardTypes.Rats.card, gameState) > 1 || DoNotNeedRats(gameState)),
-                    CardAcceptance.For(CardTypes.Estate.card),
-                    CardAcceptance.For(CardTypes.Copper.card),
-                    CardAcceptance.For(CardTypes.Upgrade.card),
-                    CardAcceptance.For(CardTypes.Silver.card));
+                    CardAcceptance.For(Cards.Rats, gameState => CountAllOwned(Cards.Rats, gameState) > 1 || DoNotNeedRats(gameState)),
+                    CardAcceptance.For(Cards.Estate),
+                    CardAcceptance.For(Cards.Copper),
+                    CardAcceptance.For(Cards.Upgrade),
+                    CardAcceptance.For(Cards.Silver));
             }
 
             private static bool HasCardToUpgradeInHand(GameState gameState)
             {
-                if (CountInHand(CardTypes.Copper.card, gameState) != 0 ||
-                       CountInHand(CardTypes.Estate.card, gameState) != 0 ||
-                       CountInHand(CardTypes.Upgrade.card, gameState) > 1)
+                if (CountInHand(Cards.Copper, gameState) != 0 ||
+                       CountInHand(Cards.Estate, gameState) != 0 ||
+                       CountInHand(Cards.Upgrade, gameState) > 1)
                     return true;
 
-                int ratCount = CountInHand(CardTypes.Rats.card, gameState);
+                int ratCount = CountInHand(Cards.Rats, gameState);
 
                 if (ratCount > 1 || ratCount == 1 && DoNotNeedRats(gameState))
                     return true;
 
-                if (CountInHand(CardTypes.Silver.card, gameState) > 0)
+                if (CountInHand(Cards.Silver, gameState) > 0)
                     return true;
 
                 return false;
@@ -75,12 +75,12 @@ namespace Program
 
             private static bool HasCardToRatsInHand(GameState gameState)
             {
-                if (CountInHand(CardTypes.Estate.card, gameState) != 0)
+                if (CountInHand(Cards.Estate, gameState) != 0)
                     return true;
 
-                if (CountInHand(CardTypes.Copper.card, gameState) != 0 &&
-                    CountAllOwned(CardTypes.Upgrade.card, gameState) != 0 &&
-                    CountAllOwned(CardTypes.Rats.card, gameState) <= 4 )
+                if (CountInHand(Cards.Copper, gameState) != 0 &&
+                    CountAllOwned(Cards.Upgrade, gameState) != 0 &&
+                    CountAllOwned(Cards.Rats, gameState) <= 4 )
                     return true;
 
                 return false;
@@ -88,8 +88,8 @@ namespace Program
 
             private static bool DoNotNeedRats(GameState gameState)
             {
-                return CountAllOwned(CardTypes.Copper.card, gameState) == 0 &&
-                       CountAllOwned(CardTypes.Estate.card, gameState) == 0;
+                return CountAllOwned(Cards.Copper, gameState) == 0 &&
+                       CountAllOwned(Cards.Estate, gameState) == 0;
             }
         }
     }

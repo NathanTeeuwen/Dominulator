@@ -29,7 +29,7 @@ namespace Dominion
             if (this.protoType == card)
                 return true;
 
-            if (card.isRuins && this.protoType.Equals(CardTypes.Ruins.card))
+            if (card.isRuins && this.protoType.Equals(Cards.Ruins))
                 return true;            
 
             return false;

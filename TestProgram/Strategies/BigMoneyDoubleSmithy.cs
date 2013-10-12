@@ -29,15 +29,15 @@ namespace Program
             private static CardPickByPriority PurchaseOrder(int secondSmithy)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(CardTypes.Province.card, gameState => CountAllOwned(CardTypes.Gold.card, gameState) > 2),
-                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
-                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 2),
-                           CardAcceptance.For(CardTypes.Gold.card),
-                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
-                           CardAcceptance.For(CardTypes.Smithy.card, gameState => CountAllOwned(CardTypes.Smithy.card, gameState) < 1),
-                           CardAcceptance.For(CardTypes.Smithy.card, gameState => CountAllOwned(CardTypes.Smithy.card, gameState) < 2 &&
+                           CardAcceptance.For(Cards.Province, gameState => CountAllOwned(Cards.Gold, gameState) > 2),
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) < 4),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2),
+                           CardAcceptance.For(Cards.Gold),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 4),
+                           CardAcceptance.For(Cards.Smithy, gameState => CountAllOwned(Cards.Smithy, gameState) < 1),
+                           CardAcceptance.For(Cards.Smithy, gameState => CountAllOwned(Cards.Smithy, gameState) < 2 &&
                                                                              gameState.Self.AllOwnedCards.Count >= secondSmithy),
-                           CardAcceptance.For(CardTypes.Silver.card));
+                           CardAcceptance.For(Cards.Silver));
 
             }           
         }

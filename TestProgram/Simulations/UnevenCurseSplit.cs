@@ -25,11 +25,11 @@ namespace Program.Simulations
             
             ComparePlayers(gameCount,
                 new CardCountPair[] {
-                    new CardCountPair(CardTypes.Copper.card, 7),
-                    new CardCountPair(CardTypes.Estate.card, 3),
-                    new CardCountPair(CardTypes.Silver.card, 4),
-                    new CardCountPair(CardTypes.Witch.card, 2),
-                    new CardCountPair(CardTypes.Curse.card, 1)
+                    new CardCountPair(Cards.Copper, 7),
+                    new CardCountPair(Cards.Estate, 3),
+                    new CardCountPair(Cards.Silver, 4),
+                    new CardCountPair(Cards.Witch, 2),
+                    new CardCountPair(Cards.Curse, 1)
                 });
 
             System.Console.WriteLine("");
@@ -39,10 +39,10 @@ namespace Program.Simulations
                         
             ComparePlayers(gameCount,
                 new CardCountPair[] {
-                    new CardCountPair(CardTypes.Copper.card, 7),
-                    new CardCountPair(CardTypes.Estate.card, 3),
-                    new CardCountPair(CardTypes.Silver.card, 2),
-                    new CardCountPair(CardTypes.Witch.card, 2)                
+                    new CardCountPair(Cards.Copper, 7),
+                    new CardCountPair(Cards.Estate, 3),
+                    new CardCountPair(Cards.Silver, 2),
+                    new CardCountPair(Cards.Witch, 2)                
                 });
         }
 
@@ -50,8 +50,8 @@ namespace Program.Simulations
         {
             var gameLogFactory = new GameLogFactory();
 
-            var player1 = Strategies.BigMoneyWithCard.Player(CardTypes.Witch.card, 1, cardCount: 2);
-            var player2 = Strategies.BigMoneyWithCard.Player(CardTypes.Witch.card, 2, cardCount: 2);
+            var player1 = Strategies.BigMoneyWithCard.Player(Cards.Witch, 1, cardCount: 2);
+            var player2 = Strategies.BigMoneyWithCard.Player(Cards.Witch, 2, cardCount: 2);
 
             var builder = new GameConfigBuilder();
             PlayerAction.SetKingdomCards(builder, player1, player2);
@@ -61,8 +61,8 @@ namespace Program.Simulations
             var gameConfig = builder.ToGameConfig();
 
             Program.ComparePlayers(
-                Strategies.BigMoneyWithCard.Player(CardTypes.Witch.card, 1, cardCount: 2),
-                Strategies.BigMoneyWithCard.Player(CardTypes.Witch.card, 2, cardCount: 2),
+                Strategies.BigMoneyWithCard.Player(Cards.Witch, 1, cardCount: 2),
+                Strategies.BigMoneyWithCard.Player(Cards.Witch, 2, cardCount: 2),
                 gameConfig,
                 firstPlayerAdvantage: true,                
                 numberOfGames: gameCount,
@@ -131,7 +131,7 @@ namespace Program.Simulations
             {
                 if (playerState.TurnNumber == 2)
                 {
-                    if (playerState.AllOwnedCards.Where(card => card == CardTypes.Witch.card).Any())
+                    if (playerState.AllOwnedCards.Where(card => card == Cards.Witch).Any())
                     {
                         this.was25split[((PlayerAction)playerState.Actions).playerIndex - 1] = true;
                     }
@@ -142,7 +142,7 @@ namespace Program.Simulations
             {
                 lock (this.factory.theLock)
                 {
-                    if (gameState.GetPile(CardTypes.Curse.card).Any)
+                    if (gameState.GetPile(Cards.Curse).Any)
                         return;
 
                     int player1Count = CountCurses(gameState, 0);

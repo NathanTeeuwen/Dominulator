@@ -216,7 +216,7 @@ namespace Dominion.CardTypes
             {
                 if (discardedCard.isVictory)
                 {
-                    otherPlayer.GainCardFromSupply(CardTypes.Curse.card, gameState);
+                    otherPlayer.GainCardFromSupply(Cards.Curse, gameState);
                 }
                 else if (currentPlayer.actions.ShouldGainCard(gameState, discardedCard))
                 {

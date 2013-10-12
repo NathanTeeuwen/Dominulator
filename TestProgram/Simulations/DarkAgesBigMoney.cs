@@ -16,7 +16,7 @@ namespace Program.Simulations
             Program.ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoney.Player(2));
             //ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Catacombs>.Player(1, 2), Strategies.BigMoney.Player(2));
             //ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Count>.Player(1), Strategies.BigMoney.Player(2));
-            Program.ComparePlayers(Strategies.BigMoneyWithCard.Player(CardTypes.HuntingGrounds.card, 1), Strategies.BigMoney.Player(2));
+            Program.ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.HuntingGrounds, 1), Strategies.BigMoney.Player(2));
         }
     }
 }

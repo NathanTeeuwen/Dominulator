@@ -116,8 +116,8 @@ namespace Dominion
             {
                 if (pile.IsEmpty)
                 {
-                    if (pile.IsType(CardTypes.Province.card) ||
-                        pile.IsType(CardTypes.Colony.card))
+                    if (pile.IsType(Cards.Province) ||
+                        pile.IsType(Cards.Colony))
                     {
                         return true;
                     }
@@ -323,7 +323,7 @@ namespace Dominion
                 int embargoCount = this.pileEmbargoTokenCount[boughtCard];
                 for (int i = 0; i < embargoCount; ++i)
                 {
-                    currentPlayer.GainCardFromSupply(CardTypes.Curse.card, this);                    
+                    currentPlayer.GainCardFromSupply(Cards.Curse, this);                    
                 }
 
                 currentPlayer.turnCounters.RemoveCoins(boughtCard.CurrentCoinCost(currentPlayer));

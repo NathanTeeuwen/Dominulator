@@ -198,7 +198,7 @@ namespace Program
             // good for cartographer, not sure about anyone else.
             foreach (Card card in revealedCards)
             {
-                bool shouldDiscard = card.isVictory || card == CardTypes.Copper.card;
+                bool shouldDiscard = card.isVictory || card == Cards.Copper;
                 if (!shouldDiscard)
                 {
                     return card;
@@ -262,9 +262,9 @@ namespace Program
 
         public override bool ShouldRevealCardFromHand(GameState gameState, Card card)
         {
-            if (card == CardTypes.Watchtower.card)
+            if (card == Cards.Watchtower)
                 return true;
-            if (card == CardTypes.HorseTraders.card)
+            if (card == Cards.HorseTraders)
                 return true;
 
             return base.ShouldRevealCardFromHand(gameState, card);
@@ -272,7 +272,7 @@ namespace Program
 
         public override bool ShouldRevealCardFromHandForCard(GameState gameState, Card card, Card cardFor)
         {
-            if (card == CardTypes.Trader.card)
+            if (card == Cards.Trader)
             {
                 return DoesCardPickerMatch(this.trashOrder, gameState, cardFor) && !DoesCardPickerMatch(this.purchaseOrder, gameState, cardFor);
             }
@@ -373,12 +373,12 @@ namespace Program
                 card => acceptableCard(card) && gameState.GetPile(card).Any());
 
             if (result == null &&
-                acceptableCard(CardTypes.Copper.card) &&
-                Strategies.CardBeingPlayedIs(CardTypes.IllGottenGains.card, gameState))
+                acceptableCard(Cards.Copper) &&
+                Strategies.CardBeingPlayedIs(Cards.IllGottenGains, gameState))
             {
                 if (ShouldGainCopper(gameState, this.purchaseOrder))
                 {
-                    result = CardTypes.Copper.card;
+                    result = Cards.Copper;
                 }
             }
 
@@ -400,7 +400,7 @@ namespace Program
             PlayerState self = gameState.Self;
 
             int minValue = self.ExpectedCoinValueAtEndOfTurn;
-            int maxValue = minValue + Strategies.CountInHand(CardTypes.IllGottenGains.card, gameState);
+            int maxValue = minValue + Strategies.CountInHand(Cards.IllGottenGains, gameState);
 
             if (maxValue == minValue)
                 return false;
@@ -468,7 +468,7 @@ namespace Program
 
         public override bool ShouldPlayerDiscardCardFromHand(GameState gameState, PlayerState playerState, Card card)
         {
-            if (card == CardTypes.MarketSquare.card)
+            if (card == Cards.MarketSquare)
                 return true;
 
             return base.ShouldPlayerDiscardCardFromHand(gameState, playerState, card);

@@ -105,7 +105,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            int maxCoppers = currentPlayer.discard.CountWhere(card => card == CardTypes.Copper.card);
+            int maxCoppers = currentPlayer.discard.CountWhere(card => card == Cards.Copper);
             int cardsToReveal = currentPlayer.actions.GetNumberOfCardsFromDiscardToPutInHand(gameState, maxCoppers);
 
             if (cardsToReveal < 0 || cardsToReveal > maxCoppers)
@@ -115,7 +115,7 @@ namespace Dominion.CardTypes
 
             if (cardsToReveal > 0)
             {
-                currentPlayer.RevealCardsFromDiscard(cardsToReveal, card => card == CardTypes.Copper.card);
+                currentPlayer.RevealCardsFromDiscard(cardsToReveal, card => card == Cards.Copper);
                 currentPlayer.MoveAllRevealedCardsToHand();
             }
         }
@@ -209,7 +209,7 @@ namespace Dominion.CardTypes
         {
             if (boughtCard.isVictory)
             {
-                currentPlayer.GainCardFromSupply(gameState, CardTypes.Gold.card);
+                currentPlayer.GainCardFromSupply(gameState, Cards.Gold);
             }
         }
     }
@@ -296,8 +296,8 @@ namespace Dominion.CardTypes
         {
             if (!otherPlayer.RequestPlayerDiscardCardFromHand(gameState, card => card.isCurse, true))
             {
-                otherPlayer.GainCardFromSupply(CardTypes.Curse.card, gameState);
-                otherPlayer.GainCardFromSupply(CardTypes.Copper.card, gameState);
+                otherPlayer.GainCardFromSupply(Cards.Curse, gameState);
+                otherPlayer.GainCardFromSupply(Cards.Copper, gameState);
             }
         }
     }

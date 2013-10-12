@@ -32,19 +32,19 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                    CardAcceptance.For(CardTypes.Province.card),
-                    CardAcceptance.For(CardTypes.IllGottenGains.card, Default.ShouldGainIllGottenGains),
-                    CardAcceptance.For(CardTypes.Gold.card, gameState => CountOfPile(CardTypes.Province.card, gameState) >= 6),
-                    CardAcceptance.For(CardTypes.Duchy.card),
-                    CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 2));                    
+                    CardAcceptance.For(Cards.Province),
+                    CardAcceptance.For(Cards.IllGottenGains, Default.ShouldGainIllGottenGains),
+                    CardAcceptance.For(Cards.Gold, gameState => CountOfPile(Cards.Province, gameState) >= 6),
+                    CardAcceptance.For(Cards.Duchy),
+                    CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2));                    
 
                 var buildOrder = new CardPickByBuildOrder(
-                    CardAcceptance.For(CardTypes.Moneylender.card),
-                    CardAcceptance.For(CardTypes.Silver.card));
+                    CardAcceptance.For(Cards.Moneylender),
+                    CardAcceptance.For(Cards.Silver));
 
                 var lowPriority = new CardPickByPriority(                           
-                           CardAcceptance.For(CardTypes.Silver.card),
-                           CardAcceptance.For(CardTypes.Copper.card));
+                           CardAcceptance.For(Cards.Silver),
+                           CardAcceptance.For(Cards.Copper));
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
             }            
@@ -72,18 +72,18 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                    CardAcceptance.For(CardTypes.Province.card),
-                    CardAcceptance.For(CardTypes.IllGottenGains.card, Default.ShouldGainIllGottenGains),
-                    CardAcceptance.For(CardTypes.Gold.card, gameState => CountOfPile(CardTypes.Province.card, gameState) >= 6),
-                    CardAcceptance.For(CardTypes.Duchy.card),
-                    CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 2));
+                    CardAcceptance.For(Cards.Province),
+                    CardAcceptance.For(Cards.IllGottenGains, Default.ShouldGainIllGottenGains),
+                    CardAcceptance.For(Cards.Gold, gameState => CountOfPile(Cards.Province, gameState) >= 6),
+                    CardAcceptance.For(Cards.Duchy),
+                    CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    CardAcceptance.For(CardTypes.Silver.card));
+                    CardAcceptance.For(Cards.Silver));
 
                 var lowPriority = new CardPickByPriority(
-                           CardAcceptance.For(CardTypes.Silver.card),
-                           CardAcceptance.For(CardTypes.Copper.card));
+                           CardAcceptance.For(Cards.Silver),
+                           CardAcceptance.For(Cards.Copper));
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
             }

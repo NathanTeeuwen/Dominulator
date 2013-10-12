@@ -23,12 +23,12 @@ namespace Program
             private static CardPickByPriority PurchaseOrder(Card card, Card withCard, int count)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(CardTypes.Province.card, Default.ShouldBuyProvinces),
-                           CardAcceptance.For(CardTypes.Duchy.card, gameState => gameState.GetPile(CardTypes.Province.card).Count <= 4),
-                           CardAcceptance.For(CardTypes.Estate.card, gameState => gameState.GetPile(CardTypes.Province.card).Count <= 2),
-                           CardAcceptance.For(CardTypes.Gold.card),
+                           CardAcceptance.For(Cards.Province, Default.ShouldBuyProvinces),
+                           CardAcceptance.For(Cards.Duchy, gameState => gameState.GetPile(Cards.Province).Count <= 4),
+                           CardAcceptance.For(Cards.Estate, gameState => gameState.GetPile(Cards.Province).Count <= 2),
+                           CardAcceptance.For(Cards.Gold),
                            new CardAcceptance(withCard, gameState => CountAllOwned(withCard, gameState) < count),
-                           CardAcceptance.For(CardTypes.Estate.card, gameState => gameState.GetPile(CardTypes.Province.card).Count < 4),
+                           CardAcceptance.For(Cards.Estate, gameState => gameState.GetPile(Cards.Province).Count < 4),
                            CardAcceptance.For(card));
             }   
         }
@@ -38,7 +38,7 @@ namespace Program
             public static PlayerAction Player(int playerNumber)
             {
                 return BigMoneyWithSilverReplacement.Player(
-                            CardTypes.FishingVillage.card,
+                            Cards.FishingVillage,
                             "BigMoneyFishingVillageOverSilver",
                             playerNumber);
             }

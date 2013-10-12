@@ -171,7 +171,7 @@ namespace Dominion.CardTypes
 
         public override void OverpayOnPurchase(PlayerState currentPlayer, GameState gameState, int overpayAmount)
         {
-            currentPlayer.GainCardsFromSupply(gameState, CardTypes.Silver.card, overpayAmount);
+            currentPlayer.GainCardsFromSupply(gameState, Cards.Silver, overpayAmount);
         }
     }
 

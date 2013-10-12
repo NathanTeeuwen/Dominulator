@@ -24,14 +24,14 @@ namespace Program
             public static ICardPicker PurchaseOrder(Card card, int cardCount, int afterSilverCount, int afterGoldCount)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(CardTypes.Province.card, gameState => CountAllOwned(CardTypes.Gold.card, gameState) > 2),
-                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 4),
-                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 2),
-                           CardAcceptance.For(card, gameState => CountAllOwned(card, gameState) < cardCount && CountAllOwned(CardTypes.Gold.card, gameState) >= afterGoldCount),
-                           CardAcceptance.For(CardTypes.Gold.card),
-                           CardAcceptance.For(card, gameState => CountAllOwned(card, gameState) < cardCount && CountAllOwned(CardTypes.Silver.card, gameState) >= afterSilverCount),
-                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
-                           CardAcceptance.For(CardTypes.Silver.card, CardAcceptance.AlwaysMatch, CardAcceptance.OverPayZero));
+                           CardAcceptance.For(Cards.Province, gameState => CountAllOwned(Cards.Gold, gameState) > 2),
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2),
+                           CardAcceptance.For(card, gameState => CountAllOwned(card, gameState) < cardCount && CountAllOwned(Cards.Gold, gameState) >= afterGoldCount),
+                           CardAcceptance.For(Cards.Gold),
+                           CardAcceptance.For(card, gameState => CountAllOwned(card, gameState) < cardCount && CountAllOwned(Cards.Silver, gameState) >= afterSilverCount),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 4),
+                           CardAcceptance.For(Cards.Silver, CardAcceptance.AlwaysMatch, CardAcceptance.OverPayZero));
             }           
         }
         
@@ -50,7 +50,7 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithCard.Player(CardTypes.Wharf.card, playerNumber, "BigMoneyWharf");
+                return BigMoneyWithCard.Player(Cards.Wharf, playerNumber, "BigMoneyWharf");
             }
         }
 
@@ -59,7 +59,7 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithCard.Player(CardTypes.Bridge.card, playerNumber, "BigMoneyBridge");
+                return BigMoneyWithCard.Player(Cards.Bridge, playerNumber, "BigMoneyBridge");
             }
         }        
 
@@ -68,7 +68,7 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithCard.Player(CardTypes.Smithy.card, playerNumber, "BigMoneySingleSmithy");
+                return BigMoneyWithCard.Player(Cards.Smithy, playerNumber, "BigMoneySingleSmithy");
             }
         }
 
@@ -77,7 +77,7 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithCard.Player(CardTypes.Witch.card, playerNumber, "BigMoneySingleWitch");
+                return BigMoneyWithCard.Player(Cards.Witch, playerNumber, "BigMoneySingleWitch");
             }
         }
 
@@ -86,7 +86,7 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithCard.Player(CardTypes.Witch.card, playerNumber, "BigMoneyDoubleWitch", cardCount: 2, afterGoldCount: 0);
+                return BigMoneyWithCard.Player(Cards.Witch, playerNumber, "BigMoneyDoubleWitch", cardCount: 2, afterGoldCount: 0);
             }
         }
 
@@ -95,7 +95,7 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithCard.Player(CardTypes.Moneylender.card, playerNumber, cardCount: 2);
+                return BigMoneyWithCard.Player(Cards.Moneylender, playerNumber, cardCount: 2);
             }
         } 
 
@@ -127,22 +127,22 @@ namespace Program
             public static ICardPicker PurchaseOrder(int cardCount)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(CardTypes.Province.card),
-                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
-                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 2),
-                           CardAcceptance.For(CardTypes.Gold.card),
-                           CardAcceptance.For(CardTypes.Thief.card, gameState => CountAllOwned(CardTypes.Thief.card, gameState) < cardCount && CountAllOwned(CardTypes.Silver.card, gameState) >= 2),
-                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
-                           CardAcceptance.For(CardTypes.Silver.card));
+                           CardAcceptance.For(Cards.Province),
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) < 4),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2),
+                           CardAcceptance.For(Cards.Gold),
+                           CardAcceptance.For(Cards.Thief, gameState => CountAllOwned(Cards.Thief, gameState) < cardCount && CountAllOwned(Cards.Silver, gameState) >= 2),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 4),
+                           CardAcceptance.For(Cards.Silver));
 
             }
 
             private static ICardPicker TrashOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(CardTypes.Gold.card),
-                           CardAcceptance.For(CardTypes.Silver.card),
-                           CardAcceptance.For(CardTypes.Copper.card));
+                           CardAcceptance.For(Cards.Gold),
+                           CardAcceptance.For(Cards.Silver),
+                           CardAcceptance.For(Cards.Copper));
             }
         }
 
@@ -162,21 +162,21 @@ namespace Program
             private static ICardPicker PurchaseOrder(Card card, int cardCount)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(CardTypes.Province.card, gameState => CountAllOwned(CardTypes.Gold.card, gameState) > 2),
-                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
-                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 2),
+                           CardAcceptance.For(Cards.Province, gameState => CountAllOwned(Cards.Gold, gameState) > 2),
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) < 4),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2),
                            CardAcceptance.For(card, gameState => CountAllOwned(card, gameState) < cardCount),
-                           CardAcceptance.For(CardTypes.Gold.card),
-                           CardAcceptance.For(CardTypes.Cartographer.card),
-                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
-                           CardAcceptance.For(CardTypes.Silver.card));
+                           CardAcceptance.For(Cards.Gold),
+                           CardAcceptance.For(Cards.Cartographer),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 4),
+                           CardAcceptance.For(Cards.Silver));
 
             }
 
             private static ICardPicker ActionOrder(Card card)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(CardTypes.Cartographer.card),
+                           CardAcceptance.For(Cards.Cartographer),
                            CardAcceptance.For(card));
             }
         }

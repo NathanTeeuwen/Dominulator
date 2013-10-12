@@ -32,7 +32,7 @@ namespace Program
 
                 override public PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
                 {
-                    if (CountInHand(CardTypes.Nobles.card, gameState) > 0)
+                    if (CountInHand(Cards.Nobles, gameState) > 0)
                         return PlayerActionChoice.PlusAction;
 
                     if (ShouldBuyProvinces(gameState))
@@ -45,50 +45,50 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 return new CardPickByPriority(
-                       CardAcceptance.For(CardTypes.Province.card, ShouldBuyProvinces),
-                       CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 4),
-                       CardAcceptance.For(CardTypes.Estate.card, ShouldBuyEstates),
-                       CardAcceptance.For(CardTypes.Nobles.card),
-                       CardAcceptance.For(CardTypes.Trader.card, gameState => CountAllOwned(CardTypes.Trader.card, gameState) < 1),
-                       CardAcceptance.For(CardTypes.Lookout.card, gameState => CountAllOwned(CardTypes.Lookout.card, gameState) < 2 && !ShouldBuyProvinces(gameState)),                       
-                       CardAcceptance.For(CardTypes.Silver.card));
+                       CardAcceptance.For(Cards.Province, ShouldBuyProvinces),
+                       CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4),
+                       CardAcceptance.For(Cards.Estate, ShouldBuyEstates),
+                       CardAcceptance.For(Cards.Nobles),
+                       CardAcceptance.For(Cards.Trader, gameState => CountAllOwned(Cards.Trader, gameState) < 1),
+                       CardAcceptance.For(Cards.Lookout, gameState => CountAllOwned(Cards.Lookout, gameState) < 2 && !ShouldBuyProvinces(gameState)),                       
+                       CardAcceptance.For(Cards.Silver));
             }
 
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(CardTypes.Lookout.card, gameState => CountInHand(CardTypes.Lookout.card, gameState) > 1 ),
-                           CardAcceptance.For(CardTypes.Trader.card, gameState => CountAllOwned(CardTypes.Lookout.card, gameState) > 1 && CountInHand(CardTypes.Lookout.card, gameState) > 0 && ShouldTrashLookout(gameState)),
-                           CardAcceptance.For(CardTypes.Lookout.card, Default.ShouldPlayLookout(Default.ShouldBuyProvinces)),
-                           CardAcceptance.For(CardTypes.Nobles.card),
-                           CardAcceptance.For(CardTypes.Trader.card, gameState => HasCardFromInHand(TrashOrder(), gameState)));
+                           CardAcceptance.For(Cards.Lookout, gameState => CountInHand(Cards.Lookout, gameState) > 1 ),
+                           CardAcceptance.For(Cards.Trader, gameState => CountAllOwned(Cards.Lookout, gameState) > 1 && CountInHand(Cards.Lookout, gameState) > 0 && ShouldTrashLookout(gameState)),
+                           CardAcceptance.For(Cards.Lookout, Default.ShouldPlayLookout(Default.ShouldBuyProvinces)),
+                           CardAcceptance.For(Cards.Nobles),
+                           CardAcceptance.For(Cards.Trader, gameState => HasCardFromInHand(TrashOrder(), gameState)));
             }
 
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(CardTypes.Curse.card),
-                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountAllOwned(CardTypes.Silver.card, gameState) >= 4 && !ShouldBuyEstates(gameState)),
-                           CardAcceptance.For(CardTypes.Copper.card, gameState => CardBeingPlayedIs(CardTypes.Lookout.card, gameState)),
-                           CardAcceptance.For(CardTypes.Estate.card, gameState => !ShouldBuyEstates(gameState)),
-                           CardAcceptance.For(CardTypes.Lookout.card, gameState => CardBeingPlayedIs(CardTypes.Trader.card, gameState) && ShouldTrashLookout(gameState)),
-                           CardAcceptance.For(CardTypes.Copper.card),
-                           CardAcceptance.For(CardTypes.Lookout.card));
+                           CardAcceptance.For(Cards.Curse),
+                           CardAcceptance.For(Cards.Estate, gameState => CountAllOwned(Cards.Silver, gameState) >= 4 && !ShouldBuyEstates(gameState)),
+                           CardAcceptance.For(Cards.Copper, gameState => CardBeingPlayedIs(Cards.Lookout, gameState)),
+                           CardAcceptance.For(Cards.Estate, gameState => !ShouldBuyEstates(gameState)),
+                           CardAcceptance.For(Cards.Lookout, gameState => CardBeingPlayedIs(Cards.Trader, gameState) && ShouldTrashLookout(gameState)),
+                           CardAcceptance.For(Cards.Copper),
+                           CardAcceptance.For(Cards.Lookout));
             }
 
             private static bool ShouldBuyEstates(GameState gameState)
             {
-                return CountOfPile(CardTypes.Province.card, gameState) <= 2;
+                return CountOfPile(Cards.Province, gameState) <= 2;
             }
 
             private static bool ShouldTrashLookout(GameState gameState)
             {
-                return CountAllOwned(CardTypes.Copper.card, gameState) <= 4;
+                return CountAllOwned(Cards.Copper, gameState) <= 4;
             }
 
             private static bool ShouldBuyProvinces(GameState gameState)
             {
-                return CountAllOwned(CardTypes.Copper.card, gameState) <= 4;
+                return CountAllOwned(Cards.Copper, gameState) <= 4;
             }
         }        
     }

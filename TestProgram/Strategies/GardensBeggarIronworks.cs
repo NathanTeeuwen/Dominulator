@@ -26,15 +26,15 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(                           
-                           CardAcceptance.For(CardTypes.IronWorks.card),
-                           CardAcceptance.For(CardTypes.Silver.card, gameState => gameState.Self.Hand.CountWhere(c => c.isAction) == 0 &&
-                                                                gameState.Self.Hand.CountOf(CardTypes.Copper.card) == 3),
-                           CardAcceptance.For(CardTypes.Beggar.card, gameState => gameState.Self.Hand.CountWhere(c => c.isAction) > 0),                           
-                           CardAcceptance.For(CardTypes.Gardens.card),
-                           CardAcceptance.For(CardTypes.SilkRoad.card),
-                           CardAcceptance.For(CardTypes.Beggar.card, gameState => ShouldByLastCard(CardTypes.Beggar.card, gameState)),
-                           CardAcceptance.For(CardTypes.Estate.card),                           
-                           CardAcceptance.For(CardTypes.Copper.card));
+                           CardAcceptance.For(Cards.IronWorks),
+                           CardAcceptance.For(Cards.Silver, gameState => gameState.Self.Hand.CountWhere(c => c.isAction) == 0 &&
+                                                                gameState.Self.Hand.CountOf(Cards.Copper) == 3),
+                           CardAcceptance.For(Cards.Beggar, gameState => gameState.Self.Hand.CountWhere(c => c.isAction) > 0),                           
+                           CardAcceptance.For(Cards.Gardens),
+                           CardAcceptance.For(Cards.SilkRoad),
+                           CardAcceptance.For(Cards.Beggar, gameState => ShouldByLastCard(Cards.Beggar, gameState)),
+                           CardAcceptance.For(Cards.Estate),                           
+                           CardAcceptance.For(Cards.Copper));
             }
 
             private static bool ShouldByLastCard(Card card, GameState gameState)
@@ -42,23 +42,23 @@ namespace Program
                 if (CountOfPile(card, gameState) != 1)
                     return true;
                 
-                return CountOfPile(CardTypes.Province.card, gameState) == 1;                
+                return CountOfPile(Cards.Province, gameState) == 1;                
             }
 
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(                           
-                           CardAcceptance.For(CardTypes.IronWorks.card),
-                           CardAcceptance.For(CardTypes.NobleBrigand.card),
-                           CardAcceptance.For(CardTypes.YoungWitch.card),
-                           CardAcceptance.For(CardTypes.Beggar.card));
+                           CardAcceptance.For(Cards.IronWorks),
+                           CardAcceptance.For(Cards.NobleBrigand),
+                           CardAcceptance.For(Cards.YoungWitch),
+                           CardAcceptance.For(Cards.Beggar));
             }
 
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For(CardTypes.Gold.card),
-                    CardAcceptance.For(CardTypes.Silver.card));
+                    CardAcceptance.For(Cards.Gold),
+                    CardAcceptance.For(Cards.Silver));
             }
         }
     }

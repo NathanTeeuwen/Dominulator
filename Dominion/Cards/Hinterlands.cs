@@ -150,7 +150,7 @@ namespace Dominion.CardTypes
         {
             foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
             {
-                otherPlayer.GainCardFromSupply(gameState, CardTypes.Silver.card);
+                otherPlayer.GainCardFromSupply(gameState, Cards.Silver);
             }
 
             return DeckPlacement.Default;
@@ -247,7 +247,7 @@ namespace Dominion.CardTypes
         {
             foreach (PlayerState player in gameState.players.OtherPlayers)
             {
-                player.GainCardFromSupply(CardTypes.Curse.card, gameState);
+                player.GainCardFromSupply(Cards.Curse, gameState);
             }
 
             return DeckPlacement.Default;
@@ -255,7 +255,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card == CardTypes.Copper.card, "you may gain a copper", isOptional:true, defaultLocation: DeckPlacement.Hand);
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card == Cards.Copper, "you may gain a copper", isOptional:true, defaultLocation: DeckPlacement.Hand);
         }
     }
 

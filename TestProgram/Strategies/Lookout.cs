@@ -28,35 +28,35 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(CardTypes.Province.card, Default.ShouldBuyProvinces),
-                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 4),
-                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 2),
-                           CardAcceptance.For(CardTypes.Gold.card),
-                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 2),
-                           CardAcceptance.For(CardTypes.Lookout.card, gameState => CountAllOwned(CardTypes.Lookout.card, gameState) < 1),                           
-                           CardAcceptance.For(CardTypes.Silver.card));
+                           CardAcceptance.For(Cards.Province, Default.ShouldBuyProvinces),
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 2),
+                           CardAcceptance.For(Cards.Gold),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 2),
+                           CardAcceptance.For(Cards.Lookout, gameState => CountAllOwned(Cards.Lookout, gameState) < 1),                           
+                           CardAcceptance.For(Cards.Silver));
             }            
 
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(CardTypes.Lookout.card, Default.ShouldPlayLookout(Default.ShouldBuyProvinces)));
+                           CardAcceptance.For(Cards.Lookout, Default.ShouldPlayLookout(Default.ShouldBuyProvinces)));
             }            
 
             private static CardPickByPriority TrashAndDiscardOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(CardTypes.Estate.card),
-                           CardAcceptance.For(CardTypes.OvergrownEstate.card),
-                           CardAcceptance.For(CardTypes.Hovel.card),
-                           CardAcceptance.For(CardTypes.Necropolis.card),                    
-                           CardAcceptance.For(CardTypes.Copper.card),
-                           CardAcceptance.For(CardTypes.Lookout.card),
-                           CardAcceptance.For(CardTypes.Silver.card),
-                           CardAcceptance.For(CardTypes.Gold.card),
-                           CardAcceptance.For(CardTypes.Province.card),
-                           CardAcceptance.For(CardTypes.Duchy.card),
-                           CardAcceptance.For(CardTypes.Estate.card));
+                           CardAcceptance.For(Cards.Estate),
+                           CardAcceptance.For(Cards.OvergrownEstate),
+                           CardAcceptance.For(Cards.Hovel),
+                           CardAcceptance.For(Cards.Necropolis),                    
+                           CardAcceptance.For(Cards.Copper),
+                           CardAcceptance.For(Cards.Lookout),
+                           CardAcceptance.For(Cards.Silver),
+                           CardAcceptance.For(Cards.Gold),
+                           CardAcceptance.For(Cards.Province),
+                           CardAcceptance.For(Cards.Duchy),
+                           CardAcceptance.For(Cards.Estate));
             }        
         }
     }

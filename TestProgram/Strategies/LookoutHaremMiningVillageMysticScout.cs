@@ -51,8 +51,8 @@ namespace Program
 
                     public int Compare(Card left, Card right)
                     {
-                        bool leftHighValue = left.isTreasure || left == CardTypes.Mystic.card;
-                        bool rightHighValue = right.isTreasure || right == CardTypes.Mystic.card;
+                        bool leftHighValue = left.isTreasure || left == Cards.Mystic;
+                        bool rightHighValue = right.isTreasure || right == Cards.Mystic;
 
                         if (leftHighValue ^ rightHighValue)
                         {
@@ -73,12 +73,12 @@ namespace Program
                     }
 
                     IEnumerable<Card> cards = self.CardsInDeck.Any() ? self.CardsInDeck : self.CardsInDeckAndDiscard;
-                    cards = cards.Where(card => card != CardTypes.Estate.card && !card.isShelter);
+                    cards = cards.Where(card => card != Cards.Estate && !card.isShelter);
 
                     if (cards.Any())
                         return MostCommonCard(cards);
                     else
-                        return CardTypes.Estate.card;
+                        return Cards.Estate;
                 }
 
                 // for playing mining village
@@ -103,67 +103,67 @@ namespace Program
             static ICardPicker PurchaseOrder()
             {
                 return new CardPickByPriority(
-                         CardAcceptance.For(CardTypes.Province.card),
-                         CardAcceptance.For(CardTypes.Harem.card, gameState => CountOfPile(CardTypes.Province.card, gameState) > 1),
-                         CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 5),
-                         CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 3),                         
-                         CardAcceptance.For(CardTypes.Mystic.card),
-                         CardAcceptance.For(CardTypes.Scout.card, gameState => ShouldBuyScout(gameState)),
-                         //CardAcceptance.For(CardTypes.MiningVillage.card),                         
-                         //CardAcceptance.For(CardTypes.Scout.card, gameState => ShouldBuyScout2(gameState)),
-                         CardAcceptance.For(CardTypes.Lookout.card, gameState => CountAllOwned(CardTypes.Lookout.card, gameState) == 0 && CountAllOwned(CardTypes.Mystic.card, gameState) == 0),
-                         CardAcceptance.For(CardTypes.Silver.card));
+                         CardAcceptance.For(Cards.Province),
+                         CardAcceptance.For(Cards.Harem, gameState => CountOfPile(Cards.Province, gameState) > 1),
+                         CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) < 5),
+                         CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 3),                         
+                         CardAcceptance.For(Cards.Mystic),
+                         CardAcceptance.For(Cards.Scout, gameState => ShouldBuyScout(gameState)),
+                         //CardAcceptance.For(Cards.MiningVillage),                         
+                         //CardAcceptance.For(Cards.Scout, gameState => ShouldBuyScout2(gameState)),
+                         CardAcceptance.For(Cards.Lookout, gameState => CountAllOwned(Cards.Lookout, gameState) == 0 && CountAllOwned(Cards.Mystic, gameState) == 0),
+                         CardAcceptance.For(Cards.Silver));
             }
 
             static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(                    
-                    CardAcceptance.For(CardTypes.Lookout.card, CurrentPlayerHasKnownCardToTrashOnTopOfDeck),
-                    CardAcceptance.For(CardTypes.Mystic.card, CurrentPlayerHasKnownCardOnTopOfDeck),
-                    CardAcceptance.For(CardTypes.Scout.card),
-                    CardAcceptance.For(CardTypes.Lookout.card, Default.ShouldPlayLookout(ShouldBuyProvinces)),                    
-                    CardAcceptance.For(CardTypes.Mystic.card),                    
-                    CardAcceptance.For(CardTypes.MiningVillage.card));                    
+                    CardAcceptance.For(Cards.Lookout, CurrentPlayerHasKnownCardToTrashOnTopOfDeck),
+                    CardAcceptance.For(Cards.Mystic, CurrentPlayerHasKnownCardOnTopOfDeck),
+                    CardAcceptance.For(Cards.Scout),
+                    CardAcceptance.For(Cards.Lookout, Default.ShouldPlayLookout(ShouldBuyProvinces)),                    
+                    CardAcceptance.For(Cards.Mystic),                    
+                    CardAcceptance.For(Cards.MiningVillage));                    
             }
 
             private static bool ShouldBuyProvinces(GameState gameState)
             {
-                return CountAllOwned(CardTypes.Gold.card, gameState) > 2;
+                return CountAllOwned(Cards.Gold, gameState) > 2;
             }
 
             static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For(CardTypes.OvergrownEstate.card),
-                    CardAcceptance.For(CardTypes.Hovel.card),
-                    CardAcceptance.For(CardTypes.Necropolis.card),
-                    CardAcceptance.For(CardTypes.Estate.card, gameState => CountAllOwned(CardTypes.Scout.card, gameState) == 0),
-                    CardAcceptance.For(CardTypes.Copper.card),
-                    CardAcceptance.For(CardTypes.Estate.card));                    
+                    CardAcceptance.For(Cards.OvergrownEstate),
+                    CardAcceptance.For(Cards.Hovel),
+                    CardAcceptance.For(Cards.Necropolis),
+                    CardAcceptance.For(Cards.Estate, gameState => CountAllOwned(Cards.Scout, gameState) == 0),
+                    CardAcceptance.For(Cards.Copper),
+                    CardAcceptance.For(Cards.Estate));                    
             }
 
             static CardPickByPriority DiscardOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For(CardTypes.OvergrownEstate.card),
-                    CardAcceptance.For(CardTypes.Hovel.card),
-                    CardAcceptance.For(CardTypes.Necropolis.card),                    
-                    CardAcceptance.For(CardTypes.Estate.card),
-                    CardAcceptance.For(CardTypes.Duchy.card),
-                    CardAcceptance.For(CardTypes.Province.card),
-                    CardAcceptance.For(CardTypes.Copper.card));
+                    CardAcceptance.For(Cards.OvergrownEstate),
+                    CardAcceptance.For(Cards.Hovel),
+                    CardAcceptance.For(Cards.Necropolis),                    
+                    CardAcceptance.For(Cards.Estate),
+                    CardAcceptance.For(Cards.Duchy),
+                    CardAcceptance.For(Cards.Province),
+                    CardAcceptance.For(Cards.Copper));
             }
 
             static bool ShouldBuyScout(GameState gameState)
             {
-                return CountAllOwned(CardTypes.Scout.card, gameState) < 2 &&
+                return CountAllOwned(Cards.Scout, gameState) < 2 &&
                        ShouldBuyScoutOverMystic(gameState); 
             }
 
             static bool ShouldBuyScout2(GameState gameState)
             {
-                return CountAllOwned(CardTypes.Scout.card, gameState) < 2 &&
-                       CountAllOwned(CardTypes.Silver.card, gameState) + CountAllOwned(CardTypes.Harem.card, gameState) + CountAllOwned(CardTypes.Mystic.card, gameState) > 3;
+                return CountAllOwned(Cards.Scout, gameState) < 2 &&
+                       CountAllOwned(Cards.Silver, gameState) + CountAllOwned(Cards.Harem, gameState) + CountAllOwned(Cards.Mystic, gameState) > 3;
             }
 
             static bool CurrentPlayerHasKnownCardOnTopOfDeck(GameState gameState)
@@ -192,7 +192,7 @@ namespace Program
             {
                 PlayerState currentPlayer = gameState.Self;
 
-                return currentPlayer.AllOwnedCards.Count(card => card.isVictory || card == CardTypes.Mystic.card);
+                return currentPlayer.AllOwnedCards.Count(card => card.isVictory || card == Cards.Mystic);
                                 
             }
         }

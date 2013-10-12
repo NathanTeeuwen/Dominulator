@@ -393,7 +393,7 @@ namespace Dominion
 
             this.AddBuys(currentCard.plusBuy);
             this.AddCoins(currentCard.plusCoin);
-            if (currentCard == CardTypes.Copper.card)
+            if (currentCard == Cards.Copper)
             {
                 this.AddCoins(this.turnCounters.copperAdditionalValue);
             }
@@ -989,7 +989,7 @@ namespace Dominion
             if (this.cardsBeingRevealed.Any)
             {
                 Card cardtoTrash = this.actions.GetCardFromRevealedCardsToTrash(gameState, this, acceptableCard => true);
-                if (cardtoTrash == CardTypes.Salvager.card)
+                if (cardtoTrash == Cards.Salvager)
                 { int i = 0; i++; }
                 if (cardtoTrash == null)
                 {

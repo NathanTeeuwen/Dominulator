@@ -43,20 +43,20 @@ namespace Program
             private static ICardPicker PurchaseOrder(bool shouldBuySpiceMerchant, bool shouldBuyPlaza)
             {
                 var highPriority = new CardPickByPriority(                     
-                     CardAcceptance.For(CardTypes.Province.card, CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount));
+                     CardAcceptance.For(Cards.Province, CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    shouldBuySpiceMerchant == true ? CardAcceptance.For(CardTypes.SpiceMerchant.card) : CardAcceptance.For(CardTypes.Silver.card),
-                    CardAcceptance.For(CardTypes.Silver.card),
-                    CardAcceptance.For(CardTypes.Embassy.card),
-                    CardAcceptance.For(CardTypes.Tunnel.card),
-                    CardAcceptance.For(CardTypes.Embassy.card),
-                    shouldBuyPlaza ? CardAcceptance.For(CardTypes.Plaza.card) : null);
+                    shouldBuySpiceMerchant == true ? CardAcceptance.For(Cards.SpiceMerchant) : CardAcceptance.For(Cards.Silver),
+                    CardAcceptance.For(Cards.Silver),
+                    CardAcceptance.For(Cards.Embassy),
+                    CardAcceptance.For(Cards.Tunnel),
+                    CardAcceptance.For(Cards.Embassy),
+                    shouldBuyPlaza ? CardAcceptance.For(Cards.Plaza) : null);
 
                 var lowPriority = new CardPickByPriority(                    
-                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 4),
-                           CardAcceptance.For(CardTypes.Tunnel.card, gameState => gameState.Self.AllOwnedCards.Count > 13),                          
-                           CardAcceptance.For(CardTypes.Silver.card));
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4),
+                           CardAcceptance.For(Cards.Tunnel, gameState => gameState.Self.AllOwnedCards.Count > 13),                          
+                           CardAcceptance.For(Cards.Silver));
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
             }
@@ -64,22 +64,22 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(CardTypes.Plaza.card),
-                           CardAcceptance.For(CardTypes.SpiceMerchant.card),
-                           CardAcceptance.For(CardTypes.Embassy.card));
+                           CardAcceptance.For(Cards.Plaza),
+                           CardAcceptance.For(Cards.SpiceMerchant),
+                           CardAcceptance.For(Cards.Embassy));
             }
 
             private static CardPickByPriority DiscardOrder()
             {
                 return new CardPickByPriority(                    
-                    CardAcceptance.For(CardTypes.Tunnel.card),
-                    CardAcceptance.For(CardTypes.Curse.card),
-                    CardAcceptance.For(CardTypes.Province.card),
-                    CardAcceptance.For(CardTypes.Duchy.card),
-                    CardAcceptance.For(CardTypes.Estate.card),
-                    CardAcceptance.For(CardTypes.Copper.card),
-                    CardAcceptance.For(CardTypes.Silver.card),                    
-                    CardAcceptance.For(CardTypes.Gold.card));
+                    CardAcceptance.For(Cards.Tunnel),
+                    CardAcceptance.For(Cards.Curse),
+                    CardAcceptance.For(Cards.Province),
+                    CardAcceptance.For(Cards.Duchy),
+                    CardAcceptance.For(Cards.Estate),
+                    CardAcceptance.For(Cards.Copper),
+                    CardAcceptance.For(Cards.Silver),                    
+                    CardAcceptance.For(Cards.Gold));
             }
         }
     }

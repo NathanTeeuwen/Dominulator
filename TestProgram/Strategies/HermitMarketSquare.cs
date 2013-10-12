@@ -34,37 +34,37 @@ namespace Program
                 private static CardPickByPriority PurchaseOrder()
                 {
                     return new CardPickByPriority(
-                               CardAcceptance.For(CardTypes.Province.card),
-                               CardAcceptance.For(CardTypes.Duchy.card, gameState => CountAllOwned(CardTypes.Province.card, gameState) > 0),
-                               CardAcceptance.For(CardTypes.Estate.card, gameState => CountAllOwned(CardTypes.Province.card, gameState) > 0),
-                               CardAcceptance.For(CardTypes.Hermit.card, ShouldGainHermit),
-                               CardAcceptance.For(CardTypes.MarketSquare.card, ShouldGainMarketSquare));
+                               CardAcceptance.For(Cards.Province),
+                               CardAcceptance.For(Cards.Duchy, gameState => CountAllOwned(Cards.Province, gameState) > 0),
+                               CardAcceptance.For(Cards.Estate, gameState => CountAllOwned(Cards.Province, gameState) > 0),
+                               CardAcceptance.For(Cards.Hermit, ShouldGainHermit),
+                               CardAcceptance.For(Cards.MarketSquare, ShouldGainMarketSquare));
                 }
 
                 private static CardPickByPriority ActionOrder(ICardPicker trashOrder)
                 {
                     return new CardPickByPriority(
-                               CardAcceptance.For(CardTypes.Madman.card, ShouldPlayMadman(trashOrder)),
-                               CardAcceptance.For(CardTypes.Hermit.card, IsDoingMegaTurn),
-                               CardAcceptance.For(CardTypes.MarketSquare.card, ShouldPlayMarketSquare(trashOrder)),
-                               CardAcceptance.For(CardTypes.Hermit.card, gameState => CountAllOwned(CardTypes.Madman.card, gameState) - CountAllOwned(CardTypes.Hermit.card, gameState) < 3),
-                               CardAcceptance.For(CardTypes.Hermit.card, gameState => CountAllOwned(CardTypes.Province.card, gameState) > 0));
+                               CardAcceptance.For(Cards.Madman, ShouldPlayMadman(trashOrder)),
+                               CardAcceptance.For(Cards.Hermit, IsDoingMegaTurn),
+                               CardAcceptance.For(Cards.MarketSquare, ShouldPlayMarketSquare(trashOrder)),
+                               CardAcceptance.For(Cards.Hermit, gameState => CountAllOwned(Cards.Madman, gameState) - CountAllOwned(Cards.Hermit, gameState) < 3),
+                               CardAcceptance.For(Cards.Hermit, gameState => CountAllOwned(Cards.Province, gameState) > 0));
                 }
 
                 private static CardPickByPriority TrashOrder()
                 {
                     return new CardPickByPriority(
-                               CardAcceptance.For(CardTypes.Estate.card, gameState => IsDoingMegaTurn(gameState) && CountAllOwned(CardTypes.Province.card, gameState) == 0),
-                               CardAcceptance.For(CardTypes.Hermit.card, IsDoingMegaTurn));
+                               CardAcceptance.For(Cards.Estate, gameState => IsDoingMegaTurn(gameState) && CountAllOwned(Cards.Province, gameState) == 0),
+                               CardAcceptance.For(Cards.Hermit, IsDoingMegaTurn));
                 }
             }
 
             private static bool ShouldGainHermit(GameState gameState)
             {
                 if (PlayBigHermit(gameState))
-                    return CountHermitsEverGained(gameState) < 9 && CountAllOwned(CardTypes.MarketSquare.card, gameState) == 0;
+                    return CountHermitsEverGained(gameState) < 9 && CountAllOwned(Cards.MarketSquare, gameState) == 0;
 
-                return CountHermitsEverGained(gameState) < 7 && CountAllOwned(CardTypes.MarketSquare.card, gameState) == 0;
+                return CountHermitsEverGained(gameState) < 7 && CountAllOwned(Cards.MarketSquare, gameState) == 0;
             }
 
             private static bool ShouldGainMarketSquare(GameState gameState)
@@ -72,9 +72,9 @@ namespace Program
                 PlayerState self = gameState.Self;
 
                 //Prioritize gaining Madmen over buying Market Squares once you have three squares
-                if (CountAllOwned(CardTypes.Hermit.card, gameState) > CountInDeckAndDiscard(CardTypes.Hermit.card, gameState) + CountInHand(CardTypes.Hermit.card, gameState) &&
+                if (CountAllOwned(Cards.Hermit, gameState) > CountInDeckAndDiscard(Cards.Hermit, gameState) + CountInHand(Cards.Hermit, gameState) &&
                     self.Hand.Count < 4 &&
-                    CountAllOwned(CardTypes.MarketSquare.card, gameState) > 2)
+                    CountAllOwned(Cards.MarketSquare, gameState) > 2)
                 {
                     return false;
                 }
@@ -85,7 +85,7 @@ namespace Program
             private static bool PlayBigHermit(GameState gameState)
             {
                 //Play the 9-Hermit version if possible
-                return CountOfPile(CardTypes.Hermit.card, gameState) + CountHermitsEverGained(gameState) >= 9;
+                return CountOfPile(Cards.Hermit, gameState) + CountHermitsEverGained(gameState) >= 9;
             }
 
             private static GameStatePredicate ShouldPlayMadman(ICardPicker trashOrder)
@@ -94,10 +94,10 @@ namespace Program
                 {
                     PlayerState self = gameState.Self;
 
-                    if (!self.Hand.HasCard(CardTypes.Madman.card))
+                    if (!self.Hand.HasCard(Cards.Madman))
                         return false;
 
-                    if (CountAllOwned(CardTypes.Province.card, gameState) > 0)
+                    if (CountAllOwned(Cards.Province, gameState) > 0)
                         return true;
 
                     if (ShouldStartMegaTurn(gameState))
@@ -129,7 +129,7 @@ namespace Program
                         if (ShouldPlayMadman(trashOrder)(gameState))
                             return false;
 
-                        int numberOfProvincesCanAfford = self.ExpectedCoinValueAtEndOfTurn / CardTypes.Province.card.CurrentCoinCost(self);
+                        int numberOfProvincesCanAfford = self.ExpectedCoinValueAtEndOfTurn / Cards.Province.CurrentCoinCost(self);
                         if (self.AvailableBuys < numberOfProvincesCanAfford)
                             return true;
 
@@ -143,30 +143,30 @@ namespace Program
                 PlayerState self = gameState.Self;
 
                 return trashOrder.GetPreferredCard(gameState, c => (self.Hand.HasCard(c) || self.Discard.HasCard(c)) && CardTypes.Hermit.CanTrashCard(c)) != null &&
-                       self.Hand.HasCard(CardTypes.Hermit.card) &&
-                       self.Hand.HasCard(CardTypes.MarketSquare.card);
+                       self.Hand.HasCard(Cards.Hermit) &&
+                       self.Hand.HasCard(Cards.MarketSquare);
             }
 
             private static bool ShouldStartMegaTurn(GameState gameState)
             {
                 PlayerState self = gameState.Self;
 
-                int CountMSNotInPlay = CountInDeckAndDiscard(CardTypes.MarketSquare.card, gameState) +
-                  CountInHand(CardTypes.MarketSquare.card, gameState);
+                int CountMSNotInPlay = CountInDeckAndDiscard(Cards.MarketSquare, gameState) +
+                  CountInHand(Cards.MarketSquare, gameState);
 
                 if (self.Hand.Count < 5 ||
-                    self.Hand.CountOf(CardTypes.Madman.card) < 2 ||
+                    self.Hand.CountOf(Cards.Madman) < 2 ||
                     CountMSNotInPlay < 3)
                     return false;
 
                 if (PlayBigHermit(gameState))
                 {
-                    return self.AllOwnedCards.CountOf(CardTypes.Madman.card) >= 6 &&                           
+                    return self.AllOwnedCards.CountOf(Cards.Madman) >= 6 &&                           
                            CountHermitsEverGained(gameState) >= 9;
                 }
                 else
                 {
-                    return self.AllOwnedCards.CountOf(CardTypes.Madman.card) >= 4 &&
+                    return self.AllOwnedCards.CountOf(Cards.Madman) >= 4 &&
                            CountHermitsEverGained(gameState) >= 7;
                 }
             }
@@ -181,7 +181,7 @@ namespace Program
             private static int CountHermitsEverGained(GameState gameState)
             {
                 PlayerState self = gameState.Self;
-                return CountAllOwned(CardTypes.Hermit.card, gameState) + CountAllOwned(CardTypes.Madman.card, gameState);
+                return CountAllOwned(Cards.Hermit, gameState) + CountAllOwned(Cards.Madman, gameState);
             }
         }
     }
