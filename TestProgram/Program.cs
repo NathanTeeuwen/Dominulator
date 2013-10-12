@@ -14,11 +14,9 @@ namespace Program
         {
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
-
-            //Kingdoms.ShouldRemakeOrHorseTradersIntoSoothayer.Run();
-            //ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.MountebankGovernorMaurader.Player(2), useShelters:true);            
-            //CompareStrategyVsAllKnownStrategies(Strategies.HorseTraderSoothsayerMinionGreatHall.Player(1), useShelters: true);            
-            ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Envoy>.Player(1), Strategies.BigMoney.Player(2));            
+            
+            ComparePlayers(Strategies.BigMoney.Player(1), Strategies.BigMoneyColony.Player(2), useColonyAndPlatinum:true);            
+            //CompareStrategyVsAllKnownStrategies(Strategies.HorseTraderSoothsayerMinionGreatHall.Player(1), useShelters: true);                        
             stopwatch.Stop();
 
             System.Console.WriteLine("");

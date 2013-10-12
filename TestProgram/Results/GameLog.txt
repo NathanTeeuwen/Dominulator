@@ -1,13 +1,3 @@
-BigMoneyWithCard<Envoy> gained Copper.
-BigMoneyWithCard<Envoy> gained Copper.
-BigMoneyWithCard<Envoy> gained Copper.
-BigMoneyWithCard<Envoy> gained Copper.
-BigMoneyWithCard<Envoy> gained Copper.
-BigMoneyWithCard<Envoy> gained Copper.
-BigMoneyWithCard<Envoy> gained Copper.
-BigMoneyWithCard<Envoy> gained Estate.
-BigMoneyWithCard<Envoy> gained Estate.
-BigMoneyWithCard<Envoy> gained Estate.
 BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
@@ -18,137 +8,217 @@ BigMoney gained Copper.
 BigMoney gained Estate.
 BigMoney gained Estate.
 BigMoney gained Estate.
-BigMoneyWithCard<Envoy> reshuffled
-BigMoneyWithCard<Envoy> Drew Copper into hand.
-BigMoneyWithCard<Envoy> Drew Copper into hand.
-BigMoneyWithCard<Envoy> Drew Copper into hand.
-BigMoneyWithCard<Envoy> Drew Estate into hand.
-BigMoneyWithCard<Envoy> Drew Copper into hand.
+BigMoneyColony gained Copper.
+BigMoneyColony gained Copper.
+BigMoneyColony gained Copper.
+BigMoneyColony gained Copper.
+BigMoneyColony gained Copper.
+BigMoneyColony gained Copper.
+BigMoneyColony gained Copper.
+BigMoneyColony gained Estate.
+BigMoneyColony gained Estate.
+BigMoneyColony gained Estate.
 BigMoney reshuffled
-BigMoney Drew Estate into hand.
 BigMoney Drew Copper into hand.
 BigMoney Drew Copper into hand.
 BigMoney Drew Copper into hand.
 BigMoney Drew Estate into hand.
+BigMoney Drew Copper into hand.
+BigMoneyColony reshuffled
+BigMoneyColony Drew Estate into hand.
+BigMoneyColony Drew Copper into hand.
+BigMoneyColony Drew Copper into hand.
+BigMoneyColony Drew Copper into hand.
+BigMoneyColony Drew Estate into hand.
 ROUND 1
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> bought Envoy.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), 
-
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
+With hand: Copper,Copper,Copper,Copper,Estate,
   BigMoney Played Copper.
     +1 Coin = 1 all together.
   BigMoney Played Copper.
     +1 Coin = 2 all together.
   BigMoney Played Copper.
     +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
   BigMoney bought Silver.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
   BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
   BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
+
+BigMoneyColony begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoneyColony Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyColony bought Silver.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> bought Silver.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> reshuffled
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Silver(1), 
-
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
+With hand: Copper,Copper,Copper,Estate,Estate,
   BigMoney Played Copper.
     +1 Coin = 1 all together.
   BigMoney Played Copper.
     +1 Coin = 2 all together.
   BigMoney Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
   BigMoney bought Silver.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
   BigMoney Discarded Estate.
   BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
   BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
+
+BigMoneyColony begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoneyColony Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyColony bought Silver.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony reshuffled
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-BigMoneyWithCard<Envoy> begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyWithCard<Envoy> Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> bought Silver.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Envoy into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Silver(2), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(3), 
 
+BigMoneyColony begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneyColony Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyColony bought Gold.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+
+ROUND 4
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(4), 
+
+BigMoneyColony begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  BigMoneyColony Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony reshuffled
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+
+ROUND 5
+-------------
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
   BigMoney Played Silver.
@@ -167,53 +237,38 @@ With hand: Copper,Copper,Copper,Silver,Silver,
   BigMoney Discarded Copper.
   BigMoney Discarded Silver.
   BigMoney Discarded Silver.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Estate into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
 
-ROUND 4
--------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Copper,Envoy,Estate,
-  BigMoneyWithCard<Envoy> Played Envoy.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> reshuffled
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Played Copper.
+BigMoneyColony begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoneyColony Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  BigMoneyColony Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  BigMoneyColony Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  BigMoneyColony Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> bought Silver.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Envoy.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> reshuffled
-  BigMoneyWithCard<Envoy> Drew Envoy into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Silver(3), 
+  BigMoneyColony bought Silver.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), 
 
+ROUND 6
+-------------
 BigMoney begins turn
 With hand: Copper,Copper,Estate,Estate,Estate,
   BigMoney Played Copper.
@@ -227,172 +282,188 @@ With hand: Copper,Copper,Estate,Estate,Estate,
   BigMoney Discarded Estate.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
   BigMoney reshuffled
   BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
 
-ROUND 5
--------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Envoy,Silver,Silver,
-  BigMoneyWithCard<Envoy> Played Envoy.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Played Silver.
+BigMoneyColony begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoneyColony Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWithCard<Envoy> bought Gold.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Envoy.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> reshuffled
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(1), Silver(3), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(2), 
-
-ROUND 6
--------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  BigMoneyColony Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  BigMoneyColony Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> bought Silver.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> Drew Envoy into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(1), Silver(4), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(2), 
+  BigMoneyColony bought Silver.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Gold into hand.
+  BigMoneyColony reshuffled
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
 
 ROUND 7
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Envoy,Estate,Silver,
-  BigMoneyWithCard<Envoy> Played Envoy.
-    BigMoneyWithCard<Envoy> Revealed Silver.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Revealed Gold.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWithCard<Envoy> bought Gold.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Envoy.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> reshuffled
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(2), Silver(4), 
-
 BigMoney begins turn
-With hand: Copper,Copper,Estate,Estate,Gold,
+With hand: Copper,Copper,Silver,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Silver.
+    +2 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), 
+
+BigMoneyColony begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoneyColony Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyColony bought Platinum.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Gold.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(1), Platinum(1), Silver(4), 
+
+ROUND 8
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(4), 
+
+BigMoneyColony begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoneyColony Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyColony bought Silver.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(1), Platinum(1), Silver(5), 
+
+ROUND 9
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), 
+
+BigMoneyColony begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoneyColony Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyColony bought Silver.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony reshuffled
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(1), Platinum(1), Silver(6), 
+
+ROUND 10
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
   BigMoney Played Copper.
     +1 Coin = 4 all together.
   BigMoney Played Copper.
@@ -400,43 +471,139 @@ With hand: Copper,Copper,Estate,Estate,Gold,
   BigMoney bought Silver.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
   BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
   BigMoney Drew Gold into hand.
   BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(3), 
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(6), 
 
-ROUND 8
--------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyWithCard<Envoy> Played Silver.
+BigMoneyColony begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoneyColony Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
+  BigMoneyColony Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  BigMoneyColony Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  BigMoneyColony Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Envoy> bought Gold.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(3), Silver(4), 
+  BigMoneyColony bought Gold.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(2), Platinum(1), Silver(6), 
 
+ROUND 11
+-------------
+BigMoney begins turn
+With hand: Estate,Gold,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Silver.
+    +2 Coin = 10 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(6), 
+
+BigMoneyColony begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoneyColony Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyColony bought Silver.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(2), Platinum(1), Silver(7), 
+
+ROUND 12
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(7), 
+
+BigMoneyColony begins turn
+With hand: Copper,Estate,Platinum,Silver,Silver,
+  BigMoneyColony Played Platinum.
+    +5 Coin = 5 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 9 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyColony bought Platinum.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Gold into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony reshuffled
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(2), Platinum(2), Silver(7), 
+
+ROUND 13
+-------------
 BigMoney begins turn
 With hand: Copper,Copper,Gold,Silver,Silver,
   BigMoney Played Gold.
@@ -455,152 +622,569 @@ With hand: Copper,Copper,Gold,Silver,Silver,
   BigMoney Discarded Silver.
   BigMoney Discarded Silver.
   BigMoney Discarded Gold.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Gold into hand.
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(3), 
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(2), Silver(7), 
 
-ROUND 9
--------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoneyWithCard<Envoy> Played Gold.
+BigMoneyColony begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoneyColony Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
+  BigMoneyColony Played Silver.
     +2 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Envoy> bought Gold.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Envoy into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(4), Silver(4), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(3), 
-
-ROUND 10
--------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Envoy,Gold,Silver,
-  BigMoneyWithCard<Envoy> Played Envoy.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> reshuffled
-    BigMoneyWithCard<Envoy> Revealed Gold.
-    BigMoneyWithCard<Envoy> Revealed Gold.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  BigMoneyColony Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyColony Played Copper.
     +1 Coin = 9 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 11 all together.
-  BigMoneyWithCard<Envoy> bought Province.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Discarded Envoy.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(4), Province(1), Silver(4), 
+  BigMoneyColony bought Platinum.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Gold.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(2), Platinum(3), Silver(7), 
 
+ROUND 14
+-------------
 BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Gold,
+With hand: Copper,Estate,Gold,Silver,Silver,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
   BigMoney Played Copper.
     +1 Coin = 8 all together.
   BigMoney bought Province.
   BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(3), Silver(7), 
+
+BigMoneyColony begins turn
+With hand: Copper,Copper,Estate,Platinum,Silver,
+  BigMoneyColony Played Platinum.
+    +5 Coin = 5 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyColony bought Platinum.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(2), Platinum(4), Silver(7), 
+
+ROUND 15
+-------------
+BigMoney begins turn
+With hand: Copper,Estate,Estate,Province,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney bought Silver.
   BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Province.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(3), Silver(8), 
+
+BigMoneyColony begins turn
+With hand: Copper,Estate,Platinum,Silver,Silver,
+  BigMoneyColony Played Platinum.
+    +5 Coin = 5 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 9 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyColony bought Platinum.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Gold into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(2), Platinum(5), Silver(7), 
+
+ROUND 16
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Drew Gold into hand.
+  BigMoney reshuffled
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(3), Silver(8), 
+
+BigMoneyColony begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoneyColony Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyColony bought Gold.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Gold.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony reshuffled
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(3), Platinum(5), Silver(7), 
+
+ROUND 17
+-------------
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
   BigMoney Discarded Gold.
   BigMoney Discarded Gold.
   BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Gold into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(4), Silver(8), 
+
+BigMoneyColony begins turn
+With hand: Copper,Copper,Copper,Estate,Platinum,
+  BigMoneyColony Played Platinum.
+    +5 Coin = 5 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyColony bought Gold.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Gold into hand.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony ends turn with deck: Copper(7), Estate(3), Gold(4), Platinum(5), Silver(7), 
+
+ROUND 18
+-------------
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
   BigMoney Drew Province into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(2), Silver(3), 
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(5), Silver(8), 
 
-ROUND 11
+BigMoneyColony begins turn
+With hand: Estate,Gold,Platinum,Silver,Silver,
+  BigMoneyColony Played Platinum.
+    +5 Coin = 5 all together.
+  BigMoneyColony Played Gold.
+    +3 Coin = 8 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 10 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 12 all together.
+  BigMoneyColony bought Colony.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Gold.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony ends turn with deck: Colony(1), Copper(7), Estate(3), Gold(4), Platinum(5), Silver(7), 
+
+ROUND 19
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyWithCard<Envoy> Played Silver.
+BigMoney begins turn
+With hand: Copper,Copper,Province,Silver,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> bought Silver.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> reshuffled
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(4), Province(1), Silver(5), 
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Province.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(5), Silver(8), 
 
+BigMoneyColony begins turn
+With hand: Estate,Platinum,Platinum,Silver,Silver,
+  BigMoneyColony Played Platinum.
+    +5 Coin = 5 all together.
+  BigMoneyColony Played Platinum.
+    +5 Coin = 10 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 12 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 14 all together.
+  BigMoneyColony bought Colony.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Gold into hand.
+  BigMoneyColony Drew Gold into hand.
+  BigMoneyColony ends turn with deck: Colony(2), Copper(7), Estate(3), Gold(4), Platinum(5), Silver(7), 
+
+ROUND 20
+-------------
+BigMoney begins turn
+With hand: Estate,Gold,Province,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Province.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(4), Province(5), Silver(8), 
+
+BigMoneyColony begins turn
+With hand: Copper,Gold,Gold,Platinum,Silver,
+  BigMoneyColony Played Platinum.
+    +5 Coin = 5 all together.
+  BigMoneyColony Played Gold.
+    +3 Coin = 8 all together.
+  BigMoneyColony Played Gold.
+    +3 Coin = 11 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 13 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 14 all together.
+  BigMoneyColony bought Colony.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Gold.
+  BigMoneyColony Discarded Gold.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony ends turn with deck: Colony(3), Copper(7), Estate(3), Gold(4), Platinum(5), Silver(7), 
+
+ROUND 21
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Province,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Province.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(3), Estate(3), Gold(4), Province(5), Silver(8), 
+
+BigMoneyColony begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneyColony Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyColony bought Gold.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony reshuffled
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Gold into hand.
+  BigMoneyColony ends turn with deck: Colony(3), Copper(7), Estate(3), Gold(5), Platinum(5), Silver(7), 
+
+ROUND 22
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Drew Duchy into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Duchy into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(3), Estate(3), Gold(4), Province(6), Silver(8), 
+
+BigMoneyColony begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoneyColony Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyColony bought Duchy.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Gold.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Gold into hand.
+  BigMoneyColony ends turn with deck: Colony(3), Copper(7), Duchy(1), Estate(3), Gold(5), Platinum(5), Silver(7), 
+
+ROUND 23
+-------------
+BigMoney begins turn
+With hand: Copper,Duchy,Duchy,Estate,Province,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Duchy.
+  BigMoney Discarded Duchy.
+  BigMoney Discarded Province.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Duchy into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(3), Estate(3), Gold(4), Province(6), Silver(8), 
+
+BigMoneyColony begins turn
+With hand: Copper,Copper,Gold,Platinum,Platinum,
+  BigMoneyColony Played Platinum.
+    +5 Coin = 5 all together.
+  BigMoneyColony Played Platinum.
+    +5 Coin = 10 all together.
+  BigMoneyColony Played Gold.
+    +3 Coin = 13 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 14 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 15 all together.
+  BigMoneyColony bought Colony.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Gold.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Drew Gold into hand.
+  BigMoneyColony Drew Gold into hand.
+  BigMoneyColony Drew Colony into hand.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony ends turn with deck: Colony(4), Copper(7), Duchy(1), Estate(3), Gold(5), Platinum(5), Silver(7), 
+
+ROUND 24
+-------------
+BigMoney begins turn
+With hand: Copper,Duchy,Estate,Gold,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Duchy.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Province into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(4), Estate(3), Gold(4), Province(6), Silver(8), 
+
+BigMoneyColony begins turn
+With hand: Colony,Gold,Gold,Platinum,Silver,
+  BigMoneyColony Played Platinum.
+    +5 Coin = 5 all together.
+  BigMoneyColony Played Gold.
+    +3 Coin = 8 all together.
+  BigMoneyColony Played Gold.
+    +3 Coin = 11 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 13 all together.
+  BigMoneyColony bought Colony.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Gold.
+  BigMoneyColony Discarded Gold.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Discarded Colony.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Colony into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony ends turn with deck: Colony(5), Copper(7), Duchy(1), Estate(3), Gold(5), Platinum(5), Silver(7), 
+
+ROUND 25
+-------------
 BigMoney begins turn
 With hand: Copper,Gold,Province,Silver,Silver,
   BigMoney Played Gold.
@@ -617,153 +1201,36 @@ With hand: Copper,Gold,Province,Silver,Silver,
   BigMoney Discarded Silver.
   BigMoney Discarded Gold.
   BigMoney Discarded Province.
-  BigMoney Drew Silver into hand.
   BigMoney Drew Estate into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(3), Silver(3), 
-
-ROUND 12
--------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  BigMoneyWithCard<Envoy> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyWithCard<Envoy> bought Province.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Envoy into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(4), Province(2), Silver(5), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney bought Duchy.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(3), Silver(3), 
-
-ROUND 13
--------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Envoy,Gold,Silver,
-  BigMoneyWithCard<Envoy> Played Envoy.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Revealed Silver.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Revealed Province.
-    BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Envoy> bought Duchy.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Discarded Envoy.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Province.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Duchy(1), Envoy(1), Estate(3), Gold(4), Province(2), Silver(5), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
   BigMoney Drew Province into hand.
-  BigMoney Drew Duchy into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(4), Silver(3), 
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(4), Estate(3), Gold(4), Province(7), Silver(8), 
 
-ROUND 14
+BigMoneyColony begins turn
+With hand: Colony,Copper,Estate,Estate,Silver,
+  BigMoneyColony Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyColony bought Estate.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Discarded Colony.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Gold into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony ends turn with deck: Colony(5), Copper(7), Duchy(1), Estate(4), Gold(5), Platinum(5), Silver(7), 
+
+ROUND 26
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Gold,Gold,Silver,
-  BigMoneyWithCard<Envoy> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyWithCard<Envoy> bought Province.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> reshuffled
-  BigMoneyWithCard<Envoy> Drew Province into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Province into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Duchy(1), Envoy(1), Estate(3), Gold(4), Province(3), Silver(5), 
-
 BigMoney begins turn
-With hand: Copper,Duchy,Province,Silver,Silver,
+With hand: Copper,Estate,Province,Silver,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Silver.
@@ -774,123 +1241,193 @@ With hand: Copper,Duchy,Province,Silver,Silver,
   BigMoney Discarded Copper.
   BigMoney Discarded Silver.
   BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Province.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(5), Estate(3), Gold(4), Province(7), Silver(8), 
+
+BigMoneyColony begins turn
+With hand: Estate,Gold,Silver,Silver,Silver,
+  BigMoneyColony Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 9 all together.
+  BigMoneyColony bought Duchy.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Gold.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony Drew Colony into hand.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony ends turn with deck: Colony(5), Copper(7), Duchy(2), Estate(4), Gold(5), Platinum(5), Silver(7), 
+
+ROUND 27
+-------------
+BigMoney begins turn
+With hand: Copper,Province,Province,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Province.
+  BigMoney Discarded Province.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Duchy into hand.
+  BigMoney Drew Duchy into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(6), Estate(3), Gold(4), Province(7), Silver(8), 
+
+BigMoneyColony begins turn
+With hand: Colony,Copper,Copper,Platinum,Platinum,
+  BigMoneyColony Played Platinum.
+    +5 Coin = 5 all together.
+  BigMoneyColony Played Platinum.
+    +5 Coin = 10 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 11 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 12 all together.
+  BigMoneyColony bought Colony.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Discarded Colony.
+  BigMoneyColony reshuffled
+  BigMoneyColony Drew Colony into hand.
+  BigMoneyColony Drew Estate into hand.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony ends turn with deck: Colony(6), Copper(7), Duchy(2), Estate(4), Gold(5), Platinum(5), Silver(7), 
+
+ROUND 28
+-------------
+BigMoney begins turn
+With hand: Copper,Copper,Duchy,Duchy,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Estate.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Duchy.
+  BigMoney Discarded Duchy.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Duchy into hand.
+  BigMoney Drew Duchy into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(6), Estate(4), Gold(4), Province(7), Silver(8), 
+
+BigMoneyColony begins turn
+With hand: Colony,Copper,Estate,Platinum,Platinum,
+  BigMoneyColony Played Platinum.
+    +5 Coin = 5 all together.
+  BigMoneyColony Played Platinum.
+    +5 Coin = 10 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 11 all together.
+  BigMoneyColony bought Colony.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Discarded Estate.
+  BigMoneyColony Discarded Colony.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Gold into hand.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Platinum into hand.
+  BigMoneyColony ends turn with deck: Colony(7), Copper(7), Duchy(2), Estate(4), Gold(5), Platinum(5), Silver(7), 
+
+ROUND 29
+-------------
+BigMoney begins turn
+With hand: Duchy,Duchy,Estate,Province,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney bought Estate.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Duchy.
   BigMoney Discarded Duchy.
   BigMoney Discarded Province.
   BigMoney Drew Province into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Province into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(4), Province(4), Silver(3), 
-
-ROUND 15
--------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Province,Province,Silver,
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> bought Estate.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Province.
-  BigMoneyWithCard<Envoy> Discarded Province.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Province into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Duchy(1), Envoy(1), Estate(4), Gold(4), Province(3), Silver(5), 
-
-BigMoney begins turn
-With hand: Copper,Estate,Gold,Province,Province,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney bought Estate.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Province.
-  BigMoney Discarded Province.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
   BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(4), Province(4), Silver(3), 
+  BigMoney ends turn with deck: Copper(7), Duchy(6), Estate(5), Gold(4), Province(7), Silver(8), 
 
-ROUND 16
--------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Province,Silver,Silver,
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> bought Duchy.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Province.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Duchy(2), Envoy(1), Estate(4), Gold(4), Province(3), Silver(5), 
+BigMoneyColony begins turn
+With hand: Copper,Copper,Gold,Platinum,Silver,
+  BigMoneyColony Played Platinum.
+    +5 Coin = 5 all together.
+  BigMoneyColony Played Gold.
+    +3 Coin = 8 all together.
+  BigMoneyColony Played Silver.
+    +2 Coin = 10 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 11 all together.
+  BigMoneyColony Played Copper.
+    +1 Coin = 12 all together.
+  BigMoneyColony bought Colony.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Copper.
+  BigMoneyColony Discarded Silver.
+  BigMoneyColony Discarded Gold.
+  BigMoneyColony Discarded Platinum.
+  BigMoneyColony Drew Silver into hand.
+  BigMoneyColony Drew Copper into hand.
+  BigMoneyColony Drew Duchy into hand.
+  BigMoneyColony Drew Colony into hand.
+  BigMoneyColony Drew Gold into hand.
+  BigMoneyColony ends turn with deck: Colony(8), Copper(7), Duchy(2), Estate(4), Gold(5), Platinum(5), Silver(7), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Drew Estate into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Duchy into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(4), Province(5), Silver(3), 
-
-Game ended in 16 turns.
-BigMoney Won!
-BigMoneyWithCard<Envoy> total score: 28
-  Copper(7), Duchy(2), Envoy(1), Estate(4), Gold(4), Province(3), Silver(5), 
-BigMoney total score: 40
-  Copper(7), Duchy(2), Estate(4), Gold(4), Province(5), Silver(3), 
+Game ended in 29 turns.
+BigMoneyColony Won!
+BigMoney total score: 65
+  Copper(7), Duchy(6), Estate(5), Gold(4), Province(7), Silver(8), 
+BigMoneyColony total score: 90
+  Colony(8), Copper(7), Duchy(2), Estate(4), Gold(5), Platinum(5), Silver(7), 
 Trash contains: 
 
-BigMoneyWithCard<Envoy> GainSequence is:
-  Envoy, Silver, Silver, Silver, Gold, 
-  Silver, Gold, Gold, Gold, Province, 
-  Silver, Province, Duchy, Province, Estate, 
-  Duchy, 
 BigMoney GainSequence is:
-  Silver, Silver, Gold, Gold, Gold, 
-  Silver, Province, Gold, Province, Province, 
-  Duchy, Province, Duchy, Estate, Province, 
-
+  Silver, Silver, Silver, Silver, Gold, 
+  Gold, Gold, Silver, Silver, Province, 
+  Silver, Province, Province, Silver, Gold, 
+  Province, Province, Duchy, Duchy, Duchy, 
+  Province, Duchy, Province, Duchy, Duchy, 
+  Estate, Estate, 
+BigMoneyColony GainSequence is:
+  Silver, Silver, Gold, Silver, Silver, 
+  Platinum, Silver, Silver, Gold, Silver, 
+  Platinum, Platinum, Platinum, Platinum, Gold, 
+  Gold, Colony, Colony, Colony, Gold, 
+  Duchy, Colony, Colony, Estate, Duchy, 
+  Colony, Colony, Colony, 

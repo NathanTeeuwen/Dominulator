@@ -443,7 +443,27 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState, 
+                acceptableChoice => acceptableChoice == PlayerActionChoice.GainCard || acceptableChoice == PlayerActionChoice.Trash);
+
+            if (choice == PlayerActionChoice.GainCard)
+            {
+                currentPlayer.RequestPlayerGainCardFromTrash(gameState,
+                    acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) >= 3 && acceptableCard.CurrentCoinCost(currentPlayer) <= 6 && acceptableCard.potionCost == 0,
+                    "Must gain a card costing between 3 and 6",
+                    defaultLocation: DeckPlacement.TopOfDeck);
+            }
+            else
+            {
+                Card trashedCard = currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCard => acceptableCard.isAction, isOptional: false);
+                if (trashedCard != null)
+                {
+                    int maxCost = trashedCard.CurrentCoinCost(currentPlayer) + 3;
+                    currentPlayer.RequestPlayerGainCardFromSupply(gameState,
+                        acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= maxCost,
+                        "gain a card costing up to 3 more than the trashed card");
+                }
+            }
         }
     }
 
@@ -698,7 +718,16 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            Card cardToPlay = currentPlayer.RequestPlayerChooseCardToRemoveFromHandForPlay(gameState, acceptableCard => acceptableCard.isAction, isTreasure: false, isAction: true, isOptional: true);
+            if (cardToPlay != null)
+            {
+                currentPlayer.DoPlayAction(cardToPlay, gameState, countTimes: 2);
+                currentPlayer.MoveCardFromPlayToTrash(gameState);
+
+                currentPlayer.RequestPlayerGainCardFromSupply(gameState,
+                    acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) == cardToPlay.CurrentCoinCost(currentPlayer) && acceptableCard.potionCost == cardToPlay.potionCost,
+                    "must gain a card costing exactly one more than the trashed card");
+            }
         }
     }
 

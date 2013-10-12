@@ -17,6 +17,7 @@ namespace Dominion
         Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate acceptableCard);
         Card GuessCardTopOfDeck(GameState gameState);
         Card NameACard(GameState gameState);
+        Card GetCardFromTrashToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Card GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Card GetCardFromPlayToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Card GetCardFromDiscardToTopDeck(GameState gameState, PlayerState player, bool isOptional);
@@ -149,6 +150,15 @@ namespace Dominion
             var saved = gameState.self;
             gameState.self = this.self;
             var result = this.playerAction.NameACard(gameState);
+            gameState.self = saved;
+            return result;
+        }
+
+        public Card GetCardFromTrashToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        {
+            var saved = gameState.self;
+            gameState.self = this.self;
+            var result = this.playerAction.GetCardFromTrashToGain(gameState, acceptableCard, isOptional);
             gameState.self = saved;
             return result;
         }

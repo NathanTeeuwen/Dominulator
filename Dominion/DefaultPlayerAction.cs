@@ -103,6 +103,11 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
+        virtual public Card GetCardFromTrashToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        {
+            return NoCardIfOptional(isOptional);
+        }
+
         virtual public Card GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return NoCardIfOptional(isOptional);   

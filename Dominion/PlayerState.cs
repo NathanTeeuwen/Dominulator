@@ -732,6 +732,38 @@ namespace Dominion
             return true;
         }
 
+        internal Card RequestPlayerGainCardFromTrash(GameState gameState, CardPredicate acceptableCard, string description, bool isOptional = false, DeckPlacement defaultLocation = DeckPlacement.Discard)
+        {
+            if (!gameState.trash.HasCard(acceptableCard))
+                return null;
+
+            Card cardType = this.actions.GetCardFromTrashToGain(gameState, acceptableCard, isOptional);
+            if (cardType == null)
+            {
+                if (isOptional)
+                {
+                    return null;
+                }
+                throw new Exception("Must gain a card where " + description);
+            }
+
+            if (!acceptableCard(cardType))
+            {
+                throw new Exception("Card does not meet constraint: " + description);
+            }
+
+            Card cardFromTrash = gameState.trash.RemoveCard(cardType);
+            if (cardFromTrash == null)
+            {
+                throw new Exception("Card requested wasnt in the trash");
+            }
+
+            this.GainCard(gameState, cardFromTrash, DeckPlacement.Trash, defaultLocation, GainReason.Gain);
+            Card gainedCard = gameState.PlayerGainCardFromSupply(cardType, gameState.players.CurrentPlayer, defaultLocation);
+
+            return gainedCard;            
+        }
+
         internal Card RequestPlayerGainCardFromSupply(GameState gameState, CardPredicate acceptableCard, string description, bool isOptional = false, DeckPlacement defaultLocation = DeckPlacement.Discard)
         {
             return RequestPlayerGainCardFromSupply(gameState, this, acceptableCard, description, isOptional, defaultLocation);
