@@ -68,9 +68,6 @@
         public static readonly CardTypes.Feodum Feodum = CardTypes.Feodum.card;
         public static readonly CardTypes.Festival Festival = CardTypes.Festival.card;
         public static readonly CardTypes.FishingVillage FishingVillage = CardTypes.FishingVillage.card;
-        public static readonly CardTypes.FishingVillageAvailableForDeckCycle FishingVillageAvailableForDeckCycle = CardTypes.FishingVillageAvailableForDeckCycle.card;
-        public static readonly CardTypes.FishingVillageEmptyDuration FishingVillageEmptyDuration = CardTypes.FishingVillageEmptyDuration.card;
-        public static readonly CardTypes.FollowersTest FollowersTest = CardTypes.FollowersTest.card;
         public static readonly CardTypes.FoolsGold FoolsGold = CardTypes.FoolsGold.card;
         public static readonly CardTypes.Forager Forager = CardTypes.Forager.card;
         public static readonly CardTypes.Forge Forge = CardTypes.Forge.card;
