@@ -752,7 +752,7 @@ namespace Dominion.CardTypes
                 if (foundCard == null)
                     break;
 
-                if (foundCard.isVictory && !foundCard.Is(cardType))
+                if (foundCard.isVictory && foundCard != cardType)
                 {
                     break;
                 }

@@ -424,7 +424,7 @@ namespace Program
 
         private static bool DoesCardPickerMatch(ICardPicker pickOrder, GameState gameState, Card card)
         {
-            return pickOrder.GetPreferredCard(gameState, c => c.Is(card)) != null;
+            return pickOrder.GetPreferredCard(gameState, c => c == card) != null;
         }
 
         struct CompareCardByFirstToGain

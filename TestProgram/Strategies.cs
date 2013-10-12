@@ -35,7 +35,7 @@ namespace Program
         private static int CountAllOwned(ICardPicker matchingCards, GameState gameState)
         {
             return gameState.Self.AllOwnedCards.CountWhere(
-                card => matchingCards.GetPreferredCard(gameState, testCard => testCard.Is(card)) != null);
+                card => matchingCards.GetPreferredCard(gameState, testCard => testCard == card) != null);
         }
 
         private static int CountInDeck(Card card, GameState gameState)
@@ -124,7 +124,7 @@ namespace Program
       
         private static int CountInHandFrom(ICardPicker matchingCards, GameState gameState)
         {
-            return gameState.Self.Hand.CountWhere(card => matchingCards.GetPreferredCard(gameState, current => current.Is(card)) != null);            
+            return gameState.Self.Hand.CountWhere(card => matchingCards.GetPreferredCard(gameState, current => current == card) != null);            
         }        
     }
 }

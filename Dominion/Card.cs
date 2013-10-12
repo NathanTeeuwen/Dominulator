@@ -42,8 +42,7 @@ namespace Dominion
         protected GameStateCardToPlacement doSpecializedActionOnBuyWhileInHand; //readonly 
         protected GameStateCardToPlacement doSpecializedActionOnGainWhileInHand; //readonly
 
-        private int privateIndex; //readonly
-        private int hashCode;
+        private readonly int privateIndex;
 
         internal int index
         {
@@ -91,6 +90,8 @@ namespace Dominion
                 cardTypes.Add(this.GetType());
             }
 
+            this.privateIndex = ++lastCardIndex;
+
             this.name = name;
             this.coinCost = coinCost;
             this.potionCost = potionCost;
@@ -123,11 +124,6 @@ namespace Dominion
             this.doSpecializedActionOnGainWhileInHand = doSpecializedActionOnGainWhileInHand;
         }
 
-        public bool Is(Card card)
-        {
-            return this.Equals(card);
-        }
-
         public bool isVictory
         {
             get
@@ -143,23 +139,7 @@ namespace Dominion
 
         public bool Equals(Card other)
         {            
-            if (other == null)
-                return false;
-
-            System.Diagnostics.Debug.Assert(this.index != 0);
-            System.Diagnostics.Debug.Assert(other.index != 0);
-
-            return this.index == other.index;
-        }
-
-        public override bool Equals(object obj)
-        {
-            return this.Equals((Card)obj);
-        }
-
-        public override int GetHashCode()
-        {
-            return this.hashCode;
+            return this == other;
         }
 
         public int DefaultCoinCost
@@ -387,13 +367,7 @@ namespace Dominion
 
         }
 
-        public static void InitializeCustomCard(Card card)
-        {
-            card.privateIndex = ++lastCardIndex;
-            card.hashCode = card.privateIndex.GetHashCode();            
-        }
-
-        static int lastCardIndex = 0;        
+        private static int lastCardIndex = 0;        
 
         private static HashSet<Type> cardTypes = new HashSet<Type>();
     }

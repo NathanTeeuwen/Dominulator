@@ -540,7 +540,7 @@ namespace Dominion.CardTypes
                 else
                 {
                     Card secondCard = card;
-                    if (!card.Is(firstCard))
+                    if (card != firstCard)
                     {
                         GainBenefitFromCard(secondCard, currentPlayer);
                     }
@@ -604,7 +604,7 @@ namespace Dominion.CardTypes
             Card cardType = currentPlayer.GuessCardTopOfDeck(gameState);
 
             Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
-            if (revealedCard.Is(cardType))
+            if (revealedCard != cardType)
             {
                 currentPlayer.MoveAllRevealedCardsToHand();
             }
