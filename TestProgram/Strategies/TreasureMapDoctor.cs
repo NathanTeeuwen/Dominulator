@@ -57,13 +57,13 @@ namespace Program
                     PlayerState self = gameState.Self;
 
                     if (self.CardsInDeck.Count() <= 3 &&
-                        CountInDeck<CardTypes.Estate>(gameState) > 0)
+                        CountInDeck(CardTypes.Estate.card, gameState) > 0)
                     {
                         return CardTypes.Estate.card;
                     }
 
-                    int countCopper = CountMightDraw<CardTypes.Copper>(gameState, 3);
-                    int countEstate = CountMightDraw<CardTypes.Estate>(gameState, 3);
+                    int countCopper = CountMightDraw(CardTypes.Copper.card, gameState, 3);
+                    int countEstate = CountMightDraw(CardTypes.Estate.card, gameState, 3);
 
                     if (Default.ShouldBuyProvinces(gameState))
                         countEstate = 0;
@@ -71,42 +71,42 @@ namespace Program
                     if (countCopper + countEstate == 0)
                         return CardTypes.Estate.card;
 
-                    return countCopper > countEstate ? CardTypes.Copper.card : CardTypes.Estate.card;
+                    return countCopper > countEstate ? (Card) CardTypes.Copper.card : CardTypes.Estate.card;
                 }
             }
 
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Doctor>(gameState => CountAllOwned<CardTypes.Doctor>(gameState) < 1 && gameState.Self.AvailableCoins >= 5),
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 5),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.TreasureMap>(gameState => CountAllOwned<CardTypes.Gold>(gameState) == 0),
-                           //CardAcceptance.For<CardTypes.Doctor>(gameState => CountAllOwned<CardTypes.Doctor>(gameState) == 0),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
-                           CardAcceptance.For<CardTypes.Silver>());                           
+                           CardAcceptance.For(CardTypes.Doctor.card, gameState => CountAllOwned(CardTypes.Doctor.card, gameState) < 1 && gameState.Self.AvailableCoins >= 5),
+                           CardAcceptance.For(CardTypes.Province.card),
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 5),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 2),
+                           CardAcceptance.For(CardTypes.Gold.card),
+                           CardAcceptance.For(CardTypes.TreasureMap.card, gameState => CountAllOwned(CardTypes.Gold.card, gameState) == 0),
+                           //CardAcceptance.For(CardTypes.Doctor.card, gameState => CountAllOwned(CardTypes.Doctor.card, gameState) == 0),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
+                           CardAcceptance.For(CardTypes.Silver.card));                           
             }
 
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.TreasureMap>(gameState => CountInHand<CardTypes.TreasureMap>(gameState) == 2 || CountAllOwned<CardTypes.Gold>(gameState) > 0),
-                           CardAcceptance.For<CardTypes.Doctor>());
+                           CardAcceptance.For(CardTypes.TreasureMap.card, gameState => CountInHand(CardTypes.TreasureMap.card, gameState) == 2 || CountAllOwned(CardTypes.Gold.card, gameState) > 0),
+                           CardAcceptance.For(CardTypes.Doctor.card));
             }
 
             private static CardPickByPriority TrashAndDiscardOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Estate>(),
-                           CardAcceptance.For<CardTypes.Copper>(),
-                           CardAcceptance.For<CardTypes.Silver>(),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(),
-                           CardAcceptance.For<CardTypes.Estate>(),
-                           CardAcceptance.For<CardTypes.TreasureMap>());
+                           CardAcceptance.For(CardTypes.Estate.card),
+                           CardAcceptance.For(CardTypes.Copper.card),
+                           CardAcceptance.For(CardTypes.Silver.card),
+                           CardAcceptance.For(CardTypes.Gold.card),
+                           CardAcceptance.For(CardTypes.Province.card),
+                           CardAcceptance.For(CardTypes.Duchy.card),
+                           CardAcceptance.For(CardTypes.Estate.card),
+                           CardAcceptance.For(CardTypes.TreasureMap.card));
             }
         }
     }

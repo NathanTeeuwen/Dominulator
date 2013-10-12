@@ -34,21 +34,21 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                     CardAcceptance.For<CardTypes.GreatHall>(gameState => CardBeingPlayedIs<CardTypes.IronWorks>(gameState)),
-                     CardAcceptance.For<CardTypes.Province>(),
-                     CardAcceptance.For<CardTypes.HuntingGrounds>(gameState => CountAllOwned<CardTypes.Gold>(gameState) >= 1 ),
-                     CardAcceptance.For<CardTypes.Gold>(),
-                     CardAcceptance.For<CardTypes.Pillage>(gameState => CountAllOwned<CardTypes.Gold>(gameState) == 0),                     
-                     CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4));
+                     CardAcceptance.For(CardTypes.GreatHall.card, gameState => CardBeingPlayedIs(CardTypes.IronWorks.card, gameState)),
+                     CardAcceptance.For(CardTypes.Province.card),
+                     CardAcceptance.For(CardTypes.HuntingGrounds.card, gameState => CountAllOwned(CardTypes.Gold.card, gameState) >= 1 ),
+                     CardAcceptance.For(CardTypes.Gold.card),
+                     CardAcceptance.For(CardTypes.Pillage.card, gameState => CountAllOwned(CardTypes.Gold.card, gameState) == 0),                     
+                     CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 4));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    CardAcceptance.For<CardTypes.IronWorks>(),
-                    CardAcceptance.For<CardTypes.Silver>());
+                    CardAcceptance.For(CardTypes.IronWorks.card),
+                    CardAcceptance.For(CardTypes.Silver.card));
 
                 var lowPriority = new CardPickByPriority(                       
-                       CardAcceptance.For<CardTypes.IronWorks>(gameState => CountAllOwned<CardTypes.IronWorks>(gameState) < 2),
-                       CardAcceptance.For<CardTypes.Remodel>(),
-                       CardAcceptance.For<CardTypes.Silver>());
+                       CardAcceptance.For(CardTypes.IronWorks.card, gameState => CountAllOwned(CardTypes.IronWorks.card, gameState) < 2),
+                       CardAcceptance.For(CardTypes.Remodel.card),
+                       CardAcceptance.For(CardTypes.Silver.card));
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);                       
             }
@@ -56,25 +56,25 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.GreatHall>(),                           
-                           CardAcceptance.For<CardTypes.IronWorks>(
-                                gameState => CountOfPile<CardTypes.GreatHall>(gameState) > 0 ||
-                                CountAllOwned<CardTypes.Remodel>(gameState) * 6 < gameState.Self.AllOwnedCards.Count ||
-                                gameState.Self.Hand.CountWhere(c => c.isAction && !c == CardTypes.IronWorks.card) == 0),
-                           CardAcceptance.For<CardTypes.Pillage>(),
-                           CardAcceptance.For<CardTypes.Remodel>(),
-                           CardAcceptance.For<CardTypes.HuntingGrounds>());
+                           CardAcceptance.For(CardTypes.GreatHall.card),                           
+                           CardAcceptance.For(CardTypes.IronWorks.card,
+                                gameState => CountOfPile(CardTypes.GreatHall.card, gameState) > 0 ||
+                                CountAllOwned(CardTypes.Remodel.card, gameState) * 6 < gameState.Self.AllOwnedCards.Count ||
+                                gameState.Self.Hand.CountWhere(c => c.isAction && c != CardTypes.IronWorks.card) == 0),
+                           CardAcceptance.For(CardTypes.Pillage.card),
+                           CardAcceptance.For(CardTypes.Remodel.card),
+                           CardAcceptance.For(CardTypes.HuntingGrounds.card));
             }
 
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.HuntingGrounds>(),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Remodel>(),
-                           CardAcceptance.For<CardTypes.IronWorks>(),                           
-                           CardAcceptance.For<CardTypes.Estate>(),
-                           CardAcceptance.For<CardTypes.Copper>());
+                           CardAcceptance.For(CardTypes.HuntingGrounds.card),
+                           CardAcceptance.For(CardTypes.Gold.card),
+                           CardAcceptance.For(CardTypes.Remodel.card),
+                           CardAcceptance.For(CardTypes.IronWorks.card),                           
+                           CardAcceptance.For(CardTypes.Estate.card),
+                           CardAcceptance.For(CardTypes.Copper.card));
             }            
         }
     }

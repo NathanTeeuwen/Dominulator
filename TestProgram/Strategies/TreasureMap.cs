@@ -32,19 +32,19 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 5),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.TreasureMap>(gameState => CountAllOwned<CardTypes.Gold>(gameState) == 0),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(CardTypes.Province.card),
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 5),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 2),
+                           CardAcceptance.For(CardTypes.Gold.card),
+                           CardAcceptance.For(CardTypes.TreasureMap.card, gameState => CountAllOwned(CardTypes.Gold.card, gameState) == 0),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
+                           CardAcceptance.For(CardTypes.Silver.card));
             }
 
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.TreasureMap>(gameState => CountInHand<CardTypes.TreasureMap>(gameState) == 2 || CountAllOwned<CardTypes.Gold>(gameState) > 0));
+                           CardAcceptance.For(CardTypes.TreasureMap.card, gameState => CountInHand(CardTypes.TreasureMap.card, gameState) == 2 || CountAllOwned(CardTypes.Gold.card, gameState) > 0));
             }                        
         }
     }

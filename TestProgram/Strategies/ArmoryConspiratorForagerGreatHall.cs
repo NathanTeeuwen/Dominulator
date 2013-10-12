@@ -35,40 +35,40 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Armory>(gameState => CountAllOwned<CardTypes.Armory>(gameState) < 1),
-                           CardAcceptance.For<CardTypes.Forager>(gameState => CountAllOwned<CardTypes.Forager>(gameState) < 1),
-                    //CardAcceptance.For<CardTypes.Province>(gameState => gameState.Self.AvailableBuys == 2 && gameState.Self.AvailableCoins >= 16 || CountAllOwned<CardTypes.Province>(gameState) > 0),
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 1),                           
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) == 0),
-                           CardAcceptance.For<CardTypes.GreatHall>(gameState => gameState.Self.AvailableBuys > 1 && gameState.Self.AvailableCoins == 6),
-                           CardAcceptance.For<CardTypes.GreatHall>(gameState => gameState.Self.Hand.HasCard(CardTypes.Hovel.card)),
-                           CardAcceptance.For<CardTypes.GreatHall>(gameState => CountAllOwned<CardTypes.GreatHall>(gameState) < CountAllOwned<CardTypes.Conspirator>(gameState)),
-                           CardAcceptance.For<CardTypes.Conspirator>(),
-                           CardAcceptance.For<CardTypes.GreatHall>());
+                           CardAcceptance.For(CardTypes.Armory.card, gameState => CountAllOwned(CardTypes.Armory.card, gameState) < 1),
+                           CardAcceptance.For(CardTypes.Forager.card, gameState => CountAllOwned(CardTypes.Forager.card, gameState) < 1),
+                    //CardAcceptance.For(CardTypes.Province.card, gameState => gameState.Self.AvailableBuys == 2 && gameState.Self.AvailableCoins >= 16 || CountAllOwned(CardTypes.Province.card, gameState) > 0),
+                           CardAcceptance.For(CardTypes.Province.card),
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 1),                           
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) == 0),
+                           CardAcceptance.For(CardTypes.GreatHall.card, gameState => gameState.Self.AvailableBuys > 1 && gameState.Self.AvailableCoins == 6),
+                           CardAcceptance.For(CardTypes.GreatHall.card, gameState => gameState.Self.Hand.HasCard(CardTypes.Hovel.card)),
+                           CardAcceptance.For(CardTypes.GreatHall.card, gameState => CountAllOwned(CardTypes.GreatHall.card, gameState) < CountAllOwned(CardTypes.Conspirator.card, gameState)),
+                           CardAcceptance.For(CardTypes.Conspirator.card),
+                           CardAcceptance.For(CardTypes.GreatHall.card));
             }
 
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Necropolis>(),
-                           CardAcceptance.For<CardTypes.Armory>(gameState => gameState.Self.AvailableActions > 0),                           
-                           CardAcceptance.For<CardTypes.GreatHall>(),
-                           CardAcceptance.For<CardTypes.Conspirator>(gameState => gameState.Self.CountCardsPlayedThisTurn >= 2),
-                           CardAcceptance.For<CardTypes.Forager>(gameState => HasCardFromInHand(TrashOrder(), gameState)),                           
-                           CardAcceptance.For<CardTypes.Conspirator>(),
-                           CardAcceptance.For<CardTypes.Armory>());
+                           CardAcceptance.For(CardTypes.Necropolis.card),
+                           CardAcceptance.For(CardTypes.Armory.card, gameState => gameState.Self.AvailableActions > 0),                           
+                           CardAcceptance.For(CardTypes.GreatHall.card),
+                           CardAcceptance.For(CardTypes.Conspirator.card, gameState => gameState.Self.CountCardsPlayedThisTurn >= 2),
+                           CardAcceptance.For(CardTypes.Forager.card, gameState => HasCardFromInHand(TrashOrder(), gameState)),                           
+                           CardAcceptance.For(CardTypes.Conspirator.card),
+                           CardAcceptance.For(CardTypes.Armory.card));
             }
 
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(                           
-                           CardAcceptance.For<CardTypes.OvergrownEstate>(),
-                           CardAcceptance.For<CardTypes.Estate>(),                           
-                           CardAcceptance.For<CardTypes.Necropolis>(),
-                           CardAcceptance.For<CardTypes.Copper>(),
-                           CardAcceptance.For<CardTypes.Hovel>(),
-                           CardAcceptance.For<CardTypes.Forager>(gameState => CountAllOwned<CardTypes.Copper>(gameState) <= 2 && CountAllOwned<CardTypes.Forager>(gameState) > 1));
+                           CardAcceptance.For(CardTypes.OvergrownEstate.card),
+                           CardAcceptance.For(CardTypes.Estate.card),                           
+                           CardAcceptance.For(CardTypes.Necropolis.card),
+                           CardAcceptance.For(CardTypes.Copper.card),
+                           CardAcceptance.For(CardTypes.Hovel.card),
+                           CardAcceptance.For(CardTypes.Forager.card, gameState => CountAllOwned(CardTypes.Copper.card, gameState) <= 2 && CountAllOwned(CardTypes.Forager.card, gameState) > 1));
             }
         }
     }

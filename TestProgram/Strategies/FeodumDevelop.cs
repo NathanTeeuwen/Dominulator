@@ -28,42 +28,42 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Develop>(ShouldGainDevelop),
-                           CardAcceptance.For<CardTypes.Feodum>(ShouldGainFeodum),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(CardTypes.Province.card),
+                           CardAcceptance.For(CardTypes.Develop.card, ShouldGainDevelop),
+                           CardAcceptance.For(CardTypes.Feodum.card, ShouldGainFeodum),
+                           CardAcceptance.For(CardTypes.Silver.card));
             }
 
             private static ICardPicker GainOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Develop>(ShouldGainDevelop),
-                           CardAcceptance.For<CardTypes.Feodum>(ShouldGainFeodum),
-                           CardAcceptance.For<CardTypes.Silver>(),
-                           CardAcceptance.For<CardTypes.Duchy>(),
-                           CardAcceptance.For<CardTypes.Feodum>(),
-                           CardAcceptance.For<CardTypes.Develop>());
+                           CardAcceptance.For(CardTypes.Develop.card, ShouldGainDevelop),
+                           CardAcceptance.For(CardTypes.Feodum.card, ShouldGainFeodum),
+                           CardAcceptance.For(CardTypes.Silver.card),
+                           CardAcceptance.For(CardTypes.Duchy.card),
+                           CardAcceptance.For(CardTypes.Feodum.card),
+                           CardAcceptance.For(CardTypes.Develop.card));
             }
 
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Develop>(ShouldPlayDevelop));
+                           CardAcceptance.For(CardTypes.Develop.card, ShouldPlayDevelop));
             }
 
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Duchy>(),
-                           CardAcceptance.For<CardTypes.Feodum>(ShouldTrashFeodum),
-                           CardAcceptance.For<CardTypes.Estate>(),
-                           CardAcceptance.For<CardTypes.Copper>());
+                           CardAcceptance.For(CardTypes.Duchy.card),
+                           CardAcceptance.For(CardTypes.Feodum.card, ShouldTrashFeodum),
+                           CardAcceptance.For(CardTypes.Estate.card),
+                           CardAcceptance.For(CardTypes.Copper.card));
             }
 
             private static bool ShouldGainDevelop(GameState gameState)
             {
-                return CountAllOwned<CardTypes.Develop>(gameState) < 2 &&
-                       CountAllOwned<CardTypes.Feodum>(gameState) >= CountAllOwned<CardTypes.Develop>(gameState);
+                return CountAllOwned(CardTypes.Develop.card, gameState) < 2 &&
+                       CountAllOwned(CardTypes.Feodum.card, gameState) >= CountAllOwned(CardTypes.Develop.card, gameState);
             }
 
             private static bool ShouldPlayDevelop(GameState gameState)
@@ -85,10 +85,10 @@ namespace Program
 
             private static bool ShouldTrashFeodum(GameState gameState)
             {
-                int countFeodumRemaining = CountOfPile<CardTypes.Feodum>(gameState);
+                int countFeodumRemaining = CountOfPile(CardTypes.Feodum.card, gameState);
 
-                int countSilvers = CountAllOwned<CardTypes.Silver>(gameState);
-                int countFeodum = CountAllOwned<CardTypes.Feodum>(gameState);
+                int countSilvers = CountAllOwned(CardTypes.Silver.card, gameState);
+                int countFeodum = CountAllOwned(CardTypes.Feodum.card, gameState);
 
                 if (countSilvers < 12)
                 {
@@ -103,10 +103,10 @@ namespace Program
 
             private static bool ShouldGainFeodum(GameState gameState)
             {
-                int countFeodumRemaining = CountOfPile<CardTypes.Feodum>(gameState);
+                int countFeodumRemaining = CountOfPile(CardTypes.Feodum.card, gameState);
 
-                int countSilvers = CountAllOwned<CardTypes.Silver>(gameState);
-                int countFeodum = CountAllOwned<CardTypes.Feodum>(gameState);
+                int countSilvers = CountAllOwned(CardTypes.Silver.card, gameState);
+                int countFeodum = CountAllOwned(CardTypes.Feodum.card, gameState);
 
                 if (countSilvers < 1)
                 {

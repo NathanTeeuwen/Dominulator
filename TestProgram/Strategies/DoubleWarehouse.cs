@@ -26,33 +26,33 @@ namespace Program
             static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => gameState.Self.AllOwnedCards.CountOf(CardTypes.Gold.card) > 2),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) < 5),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Warehouse>(gameState => gameState.Self.AllOwnedCards.CountOf(CardTypes.Warehouse.card) < 1),
-                           CardAcceptance.For<CardTypes.Warehouse>(gameState => gameState.Self.AllOwnedCards.CountOf(CardTypes.Silver.card) > 2 &&
+                           CardAcceptance.For(CardTypes.Province.card, gameState => gameState.Self.AllOwnedCards.CountOf(CardTypes.Gold.card) > 2),
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 5),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 2),
+                           CardAcceptance.For(CardTypes.Gold.card),
+                           CardAcceptance.For(CardTypes.Warehouse.card, gameState => gameState.Self.AllOwnedCards.CountOf(CardTypes.Warehouse.card) < 1),
+                           CardAcceptance.For(CardTypes.Warehouse.card, gameState => gameState.Self.AllOwnedCards.CountOf(CardTypes.Silver.card) > 2 &&
                                                                                 gameState.Self.AllOwnedCards.CountOf(CardTypes.Warehouse.card) < 2),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(CardTypes.Silver.card));
 
             }
 
             static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Warehouse>());
+                    CardAcceptance.For(CardTypes.Warehouse.card));
             }
 
             static CardPickByPriority DiscardOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Province>(),
-                    CardAcceptance.For<CardTypes.Duchy>(),
-                    CardAcceptance.For<CardTypes.Estate>(),
-                    CardAcceptance.For<CardTypes.Copper>(),
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Warehouse>(),
-                    CardAcceptance.For<CardTypes.Gold>());
+                    CardAcceptance.For(CardTypes.Province.card),
+                    CardAcceptance.For(CardTypes.Duchy.card),
+                    CardAcceptance.For(CardTypes.Estate.card),
+                    CardAcceptance.For(CardTypes.Copper.card),
+                    CardAcceptance.For(CardTypes.Silver.card),
+                    CardAcceptance.For(CardTypes.Warehouse.card),
+                    CardAcceptance.For(CardTypes.Gold.card));
             }
         }     
     }

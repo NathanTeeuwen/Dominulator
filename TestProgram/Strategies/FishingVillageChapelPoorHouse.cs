@@ -28,16 +28,16 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4));
+                           CardAcceptance.For(CardTypes.Province.card),
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 4));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    CardAcceptance.For<CardTypes.FishingVillage>(),
-                    CardAcceptance.For<CardTypes.Chapel>());
+                    CardAcceptance.For(CardTypes.FishingVillage.card),
+                    CardAcceptance.For(CardTypes.Chapel.card));
 
                 var lowPriority = new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.FishingVillage>(gameState => CountAllOwned<CardTypes.FishingVillage>(gameState) < 2),
-                           CardAcceptance.For<CardTypes.PoorHouse>());
+                           CardAcceptance.For(CardTypes.FishingVillage.card, gameState => CountAllOwned(CardTypes.FishingVillage.card, gameState) < 2),
+                           CardAcceptance.For(CardTypes.PoorHouse.card));
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
             }
@@ -45,16 +45,16 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.FishingVillage>(),
-                           CardAcceptance.For<CardTypes.Chapel>(ShouldPlayChapel),
-                           CardAcceptance.For<CardTypes.PoorHouse>());
+                           CardAcceptance.For(CardTypes.FishingVillage.card),
+                           CardAcceptance.For(CardTypes.Chapel.card, ShouldPlayChapel),
+                           CardAcceptance.For(CardTypes.PoorHouse.card));
             }
 
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Estate>(),
-                           CardAcceptance.For<CardTypes.Copper>());
+                           CardAcceptance.For(CardTypes.Estate.card),
+                           CardAcceptance.For(CardTypes.Copper.card));
             }
 
             private static bool ShouldPlayChapel(GameState gameState)

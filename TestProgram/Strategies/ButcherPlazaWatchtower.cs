@@ -35,23 +35,23 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                         CardAcceptance.For<CardTypes.Province>(CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount),
-                          CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),                          
-                          CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
-                          CardAcceptance.For<CardTypes.Butcher>(gameState => CountAllOwned<CardTypes.Butcher>(gameState) < 2),                          
-                          CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 3));
+                         CardAcceptance.For(CardTypes.Province.card, CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount),
+                          CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 2),                          
+                          CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 2),
+                          CardAcceptance.For(CardTypes.Butcher.card, gameState => CountAllOwned(CardTypes.Butcher.card, gameState) < 2),                          
+                          CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 3));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Watchtower>(),
-                    CardAcceptance.For<CardTypes.Plaza>(),
-                    CardAcceptance.For<CardTypes.Plaza>(),
-                    CardAcceptance.For<CardTypes.Watchtower>()                    
+                    CardAcceptance.For(CardTypes.Silver.card),
+                    CardAcceptance.For(CardTypes.Watchtower.card),
+                    CardAcceptance.For(CardTypes.Plaza.card),
+                    CardAcceptance.For(CardTypes.Plaza.card),
+                    CardAcceptance.For(CardTypes.Watchtower.card)                    
                     );
 
                 var lowPriority = new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Plaza>(),
-                           CardAcceptance.For<CardTypes.Watchtower>());
+                           CardAcceptance.For(CardTypes.Plaza.card),
+                           CardAcceptance.For(CardTypes.Watchtower.card));
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);                
             }            
@@ -59,33 +59,33 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Necropolis>(),
-                           CardAcceptance.For<CardTypes.Plaza>(),
-                           CardAcceptance.For<CardTypes.Watchtower>(gameState => gameState.Self.AvailableActions == 1),
-                           //CardAcceptance.For<CardTypes.Watchtower>(gameState => CountInHand<CardTypes.Estate>(gameState) + CountInHand<CardTypes.Copper>(gameState) == 0 && gameState.players.CurrentPlayer.AvailableActions > 1),
-                           CardAcceptance.For<CardTypes.Butcher>(),
-                           CardAcceptance.For<CardTypes.Watchtower>());
+                           CardAcceptance.For(CardTypes.Necropolis.card),
+                           CardAcceptance.For(CardTypes.Plaza.card),
+                           CardAcceptance.For(CardTypes.Watchtower.card, gameState => gameState.Self.AvailableActions == 1),
+                           //CardAcceptance.For(CardTypes.Watchtower.card, gameState => CountInHand(CardTypes.Estate.card, gameState) + CountInHand(CardTypes.Copper.card, gameState) == 0 && gameState.players.CurrentPlayer.AvailableActions > 1),
+                           CardAcceptance.For(CardTypes.Butcher.card),
+                           CardAcceptance.For(CardTypes.Watchtower.card));
             }                        
 
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Estate>(),
-                           CardAcceptance.For<CardTypes.OvergrownEstate>(),
-                           CardAcceptance.For<CardTypes.Hovel>(),
-                           CardAcceptance.For<CardTypes.Copper>(),
-                           CardAcceptance.For<CardTypes.Silver>(),
-                           CardAcceptance.For<CardTypes.Butcher>(),
-                           CardAcceptance.For<CardTypes.Watchtower>(),
-                           CardAcceptance.For<CardTypes.Duchy>(),
-                           CardAcceptance.For<CardTypes.Province>());
+                           CardAcceptance.For(CardTypes.Estate.card),
+                           CardAcceptance.For(CardTypes.OvergrownEstate.card),
+                           CardAcceptance.For(CardTypes.Hovel.card),
+                           CardAcceptance.For(CardTypes.Copper.card),
+                           CardAcceptance.For(CardTypes.Silver.card),
+                           CardAcceptance.For(CardTypes.Butcher.card),
+                           CardAcceptance.For(CardTypes.Watchtower.card),
+                           CardAcceptance.For(CardTypes.Duchy.card),
+                           CardAcceptance.For(CardTypes.Province.card));
             }
 
             private static CardPickByPriority DiscardOrder()
             {
                 return new CardPickByPriority(                           
-                           CardAcceptance.For<CardTypes.Copper>(),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(CardTypes.Copper.card),
+                           CardAcceptance.For(CardTypes.Silver.card));
             }        
         }
     }

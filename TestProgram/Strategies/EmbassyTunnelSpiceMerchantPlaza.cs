@@ -43,20 +43,20 @@ namespace Program
             private static ICardPicker PurchaseOrder(bool shouldBuySpiceMerchant, bool shouldBuyPlaza)
             {
                 var highPriority = new CardPickByPriority(                     
-                     CardAcceptance.For<CardTypes.Province>(CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount));
+                     CardAcceptance.For(CardTypes.Province.card, CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    shouldBuySpiceMerchant == true ? CardAcceptance.For<CardTypes.SpiceMerchant>() : CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Embassy>(),
-                    CardAcceptance.For<CardTypes.Tunnel>(),
-                    CardAcceptance.For<CardTypes.Embassy>(),
-                    shouldBuyPlaza ? CardAcceptance.For<CardTypes.Plaza>() : null);
+                    shouldBuySpiceMerchant == true ? CardAcceptance.For(CardTypes.SpiceMerchant.card) : CardAcceptance.For(CardTypes.Silver.card),
+                    CardAcceptance.For(CardTypes.Silver.card),
+                    CardAcceptance.For(CardTypes.Embassy.card),
+                    CardAcceptance.For(CardTypes.Tunnel.card),
+                    CardAcceptance.For(CardTypes.Embassy.card),
+                    shouldBuyPlaza ? CardAcceptance.For(CardTypes.Plaza.card) : null);
 
                 var lowPriority = new CardPickByPriority(                    
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),
-                           CardAcceptance.For<CardTypes.Tunnel>(gameState => gameState.Self.AllOwnedCards.Count > 13),                          
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 4),
+                           CardAcceptance.For(CardTypes.Tunnel.card, gameState => gameState.Self.AllOwnedCards.Count > 13),                          
+                           CardAcceptance.For(CardTypes.Silver.card));
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
             }
@@ -64,22 +64,22 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Plaza>(),
-                           CardAcceptance.For<CardTypes.SpiceMerchant>(),
-                           CardAcceptance.For<CardTypes.Embassy>());
+                           CardAcceptance.For(CardTypes.Plaza.card),
+                           CardAcceptance.For(CardTypes.SpiceMerchant.card),
+                           CardAcceptance.For(CardTypes.Embassy.card));
             }
 
             private static CardPickByPriority DiscardOrder()
             {
                 return new CardPickByPriority(                    
-                    CardAcceptance.For<CardTypes.Tunnel>(),
-                    CardAcceptance.For<CardTypes.Curse>(),
-                    CardAcceptance.For<CardTypes.Province>(),
-                    CardAcceptance.For<CardTypes.Duchy>(),
-                    CardAcceptance.For<CardTypes.Estate>(),
-                    CardAcceptance.For<CardTypes.Copper>(),
-                    CardAcceptance.For<CardTypes.Silver>(),                    
-                    CardAcceptance.For<CardTypes.Gold>());
+                    CardAcceptance.For(CardTypes.Tunnel.card),
+                    CardAcceptance.For(CardTypes.Curse.card),
+                    CardAcceptance.For(CardTypes.Province.card),
+                    CardAcceptance.For(CardTypes.Duchy.card),
+                    CardAcceptance.For(CardTypes.Estate.card),
+                    CardAcceptance.For(CardTypes.Copper.card),
+                    CardAcceptance.For(CardTypes.Silver.card),                    
+                    CardAcceptance.For(CardTypes.Gold.card));
             }
         }
     }

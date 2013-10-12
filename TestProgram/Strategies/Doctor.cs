@@ -61,13 +61,13 @@ namespace Program
                 PlayerState self = gameState.Self;
 
                 if (self.CardsInDeck.Count() <= 3 &&
-                    CountInDeck<CardTypes.Estate>(gameState) > 0)
+                    CountInDeck(CardTypes.Estate.card, gameState) > 0)
                 {
                     return CardTypes.Estate.card;
                 }
 
-                int countCopper = CountMightDraw<CardTypes.Copper>(gameState, 3);
-                int countEstate = CountMightDraw<CardTypes.Estate>(gameState, 3);
+                int countCopper = CountMightDraw(CardTypes.Copper.card, gameState, 3);
+                int countEstate = CountMightDraw(CardTypes.Estate.card, gameState, 3);
 
                 if (Default.ShouldBuyProvinces(gameState))
                     countEstate = 0;
@@ -75,37 +75,37 @@ namespace Program
                 if (countCopper + countEstate == 0)
                     return null;
                 
-                return countCopper > countEstate ? CardTypes.Copper.card : CardTypes.Estate.card;
+                return countCopper > countEstate ? (Card) CardTypes.Copper.card : CardTypes.Estate.card;
             }
 
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(Default.ShouldBuyProvinces),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
-                           CardAcceptance.For<CardTypes.Doctor>(gameState => CountAllOwned<CardTypes.Doctor>(gameState) < 1),                           
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(CardTypes.Province.card, Default.ShouldBuyProvinces),
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 4),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 2),
+                           CardAcceptance.For(CardTypes.Gold.card),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 2),
+                           CardAcceptance.For(CardTypes.Doctor.card, gameState => CountAllOwned(CardTypes.Doctor.card, gameState) < 1),                           
+                           CardAcceptance.For(CardTypes.Silver.card));
             }            
 
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Doctor>(ShouldPlayerDoctor));
+                           CardAcceptance.For(CardTypes.Doctor.card, ShouldPlayerDoctor));
             }                        
 
             private static CardPickByPriority TrashAndDiscardOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Estate>(),
-                           CardAcceptance.For<CardTypes.Copper>(),                           
-                           CardAcceptance.For<CardTypes.Silver>(),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(),
-                           CardAcceptance.For<CardTypes.Estate>());
+                           CardAcceptance.For(CardTypes.Estate.card),
+                           CardAcceptance.For(CardTypes.Copper.card),                           
+                           CardAcceptance.For(CardTypes.Silver.card),
+                           CardAcceptance.For(CardTypes.Gold.card),
+                           CardAcceptance.For(CardTypes.Province.card),
+                           CardAcceptance.For(CardTypes.Duchy.card),
+                           CardAcceptance.For(CardTypes.Estate.card));
             }        
         }
     }

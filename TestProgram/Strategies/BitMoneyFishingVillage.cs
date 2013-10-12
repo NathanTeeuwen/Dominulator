@@ -24,13 +24,13 @@ namespace Program
             private static CardPickByPriority PurchaseOrder(Card withCard, int count)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(Default.ShouldBuyProvinces),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile(CardTypes.Province.card).Count <= 4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile(CardTypes.Province.card).Count <= 2),
-                           CardAcceptance.For<CardTypes.Gold>(),
+                           CardAcceptance.For(CardTypes.Province.card, Default.ShouldBuyProvinces),
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => gameState.GetPile(CardTypes.Province.card).Count <= 4),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => gameState.GetPile(CardTypes.Province.card).Count <= 2),
+                           CardAcceptance.For(CardTypes.Gold.card),
                            new CardAcceptance(withCard, gameState => CountAllOwned(withCard, gameState) < count),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile(CardTypes.Province.card).Count < 4),
-                           CardAcceptance.For<T>());
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => gameState.GetPile(CardTypes.Province.card).Count < 4),
+                           CardAcceptance.For(card));
             }   
         }
    

@@ -31,13 +31,13 @@ namespace Program
             private static CardPickByPriority PurchaseOrder(int secondCultist)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 1),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 5),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 3),
-                           CardAcceptance.For<CardTypes.Cultist>(gameState => CountAllOwned<CardTypes.Cultist>(gameState) < 3),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Cultist>(),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(CardTypes.Province.card, gameState => CountAllOwned(CardTypes.Gold.card, gameState) > 1),
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 5),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 3),
+                           CardAcceptance.For(CardTypes.Cultist.card, gameState => CountAllOwned(CardTypes.Cultist.card, gameState) < 3),
+                           CardAcceptance.For(CardTypes.Gold.card),
+                           CardAcceptance.For(CardTypes.Cultist.card),
+                           CardAcceptance.For(CardTypes.Silver.card));
             }            
         }     
     }

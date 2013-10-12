@@ -44,19 +44,19 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                     CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) >=2),
-                     CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),                     
-                     CardAcceptance.For<CardTypes.Gold>(),
-                     CardAcceptance.For<CardTypes.Laboratory>());
+                     CardAcceptance.For(CardTypes.Province.card, gameState => CountAllOwned(CardTypes.Gold.card, gameState) >=2),
+                     CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 4),                     
+                     CardAcceptance.For(CardTypes.Gold.card),
+                     CardAcceptance.For(CardTypes.Laboratory.card));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    CardAcceptance.For<CardTypes.SpiceMerchant>(),
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Warehouse>());
+                    CardAcceptance.For(CardTypes.SpiceMerchant.card),
+                    CardAcceptance.For(CardTypes.Silver.card),
+                    CardAcceptance.For(CardTypes.Warehouse.card));
 
                 var lowPriority = new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Silver>(),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4));
+                           CardAcceptance.For(CardTypes.Silver.card),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 4));
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
             }
@@ -64,15 +64,15 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Laboratory>(),
-                           CardAcceptance.For<CardTypes.SpiceMerchant>(gameState => CountInHand<CardTypes.Copper>(gameState) > 0),
-                           CardAcceptance.For<CardTypes.Warehouse>());
+                           CardAcceptance.For(CardTypes.Laboratory.card),
+                           CardAcceptance.For(CardTypes.SpiceMerchant.card, gameState => CountInHand(CardTypes.Copper.card, gameState) > 0),
+                           CardAcceptance.For(CardTypes.Warehouse.card));
             }
 
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Copper>());
+                           CardAcceptance.For(CardTypes.Copper.card));
             } 
         }
     }

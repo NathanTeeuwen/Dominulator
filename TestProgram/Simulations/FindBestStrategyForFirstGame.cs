@@ -30,13 +30,13 @@ namespace Program
             //Province(1), Province, Gold, Market(1), Duchy(2), Militia(2), Silver, Estate(1),Workshop(1), Cellar(1),
             var player1 = new PlayerAction("Player 1", 1,
                 new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Province>(),
-                    CardAcceptance.For<CardTypes.Gold>(),
-                    CardAcceptance.For<CardTypes.Market>(gameState => Strategies.CountAllOwned<CardTypes.Market>(gameState) < 1),
-                    CardAcceptance.For<CardTypes.Duchy>(gameState => Strategies.CountAllOwned<CardTypes.Duchy>(gameState) < 2),
-                    CardAcceptance.For<CardTypes.Militia>(gameState => Strategies.CountAllOwned<CardTypes.Militia>(gameState) < 2),
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Estate>(gameState => Strategies.CountAllOwned<CardTypes.Militia>(gameState) < 1)
+                    CardAcceptance.For(CardTypes.Province.card),
+                    CardAcceptance.For(CardTypes.Gold.card),
+                    CardAcceptance.For(CardTypes.Market.card, gameState => Strategies.CountAllOwned(CardTypes.Market.card, gameState) < 1),
+                    CardAcceptance.For(CardTypes.Duchy.card, gameState => Strategies.CountAllOwned(CardTypes.Duchy.card, gameState) < 2),
+                    CardAcceptance.For(CardTypes.Militia.card, gameState => Strategies.CountAllOwned(CardTypes.Militia.card, gameState) < 2),
+                    CardAcceptance.For(CardTypes.Silver.card),
+                    CardAcceptance.For(CardTypes.Estate.card, gameState => Strategies.CountAllOwned(CardTypes.Militia.card, gameState) < 1)
                     ));
             Program.ComparePlayers(player1, Strategies.BigMoneySimple.Player(2), showVerboseScore: true);
             Program.ComparePlayers(player1, Strategies.BigMoney.Player(2), showVerboseScore: true);

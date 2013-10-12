@@ -374,7 +374,7 @@ namespace Program
 
             if (result == null &&
                 acceptableCard(CardTypes.Copper.card) &&
-                Strategies.CardBeingPlayedIs<CardTypes.IllGottenGains>(gameState))
+                Strategies.CardBeingPlayedIs(CardTypes.IllGottenGains.card, gameState))
             {
                 if (ShouldGainCopper(gameState, this.purchaseOrder))
                 {
@@ -400,7 +400,7 @@ namespace Program
             PlayerState self = gameState.Self;
 
             int minValue = self.ExpectedCoinValueAtEndOfTurn;
-            int maxValue = minValue + Strategies.CountInHand<CardTypes.IllGottenGains>(gameState);
+            int maxValue = minValue + Strategies.CountInHand(CardTypes.IllGottenGains.card, gameState);
 
             if (maxValue == minValue)
                 return false;

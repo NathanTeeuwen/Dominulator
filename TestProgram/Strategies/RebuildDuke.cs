@@ -38,14 +38,14 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Rebuild>(gameState => CountAllOwned<CardTypes.Rebuild>(gameState) < 2),
-                           CardAcceptance.For<CardTypes.Duchy>(),
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duke>(),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountAllOwned<CardTypes.Estate>(gameState) == 0 && CountAllOwned<CardTypes.Rebuild>(gameState) >= 2),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Duchy>(gameState) == 0),
-                           CardAcceptance.For<CardTypes.Rebuild>(),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(CardTypes.Rebuild.card, gameState => CountAllOwned(CardTypes.Rebuild.card, gameState) < 2),
+                           CardAcceptance.For(CardTypes.Duchy.card),
+                           CardAcceptance.For(CardTypes.Province.card),
+                           CardAcceptance.For(CardTypes.Duke.card),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountAllOwned(CardTypes.Estate.card, gameState) == 0 && CountAllOwned(CardTypes.Rebuild.card, gameState) >= 2),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Duchy.card, gameState) == 0),
+                           CardAcceptance.For(CardTypes.Rebuild.card),
+                           CardAcceptance.For(CardTypes.Silver.card));
             }            
         }
     }

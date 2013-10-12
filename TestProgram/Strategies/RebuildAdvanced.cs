@@ -45,92 +45,92 @@ namespace Program
                     int pointLead = PlayersPointLead(gameState); 
 
                     //Name Duchy
-                    if (CountOfPile<CardTypes.Duchy>(gameState) > 0 &&
-                        CountInDeckAndDiscard<CardTypes.Estate>(gameState) > 0 &&
-                        (CountInDeckAndDiscard<CardTypes.Province>(gameState) == 0 || 
-                           CountInDeck<CardTypes.Province>(gameState) == 0 &&
-                           CountInDeck<CardTypes.Duchy>(gameState) > 0 && 
-                           CountInDeck<CardTypes.Estate>(gameState) > 0))
+                    if (CountOfPile(CardTypes.Duchy.card, gameState) > 0 &&
+                        CountInDeckAndDiscard(CardTypes.Estate.card, gameState) > 0 &&
+                        (CountInDeckAndDiscard(CardTypes.Province.card, gameState) == 0 || 
+                           CountInDeck(CardTypes.Province.card, gameState) == 0 &&
+                           CountInDeck(CardTypes.Duchy.card, gameState) > 0 && 
+                           CountInDeck(CardTypes.Estate.card, gameState) > 0))
                     {
                         return CardTypes.Duchy.card;
                     }
 
                     //Name Province if you are ensured of gaining a Province
-                    if (CountInDeck<CardTypes.Estate>(gameState) == 0 &&
-                        CountInDeck<CardTypes.Province>(gameState) >= 0 && 
-                        CountInDeck<CardTypes.Duchy>(gameState) > 0)
+                    if (CountInDeck(CardTypes.Estate.card, gameState) == 0 &&
+                        CountInDeck(CardTypes.Province.card, gameState) >= 0 && 
+                        CountInDeck(CardTypes.Duchy.card, gameState) > 0)
                     {
                         return CardTypes.Province.card;
                     }
 
                     //Name Province if you are ensured of gaining a Province
-                    if (CountInDeckAndDiscard<CardTypes.Estate>(gameState) == 0
-                        && CountInDeckAndDiscard<CardTypes.Province>(gameState) >= 0
-                        && CountInDeckAndDiscard<CardTypes.Duchy>(gameState) > 0)
+                    if (CountInDeckAndDiscard(CardTypes.Estate.card, gameState) == 0
+                        && CountInDeckAndDiscard(CardTypes.Province.card, gameState) >= 0
+                        && CountInDeckAndDiscard(CardTypes.Duchy.card, gameState) > 0)
                     {
                         return CardTypes.Province.card;
                     }
 
                     //Name Estate if you can end it with a win                    
-                    if (CountInHand<CardTypes.Rebuild>(gameState) + 1 >= CountOfPile<CardTypes.Province>(gameState) && 
+                    if (CountInHand(CardTypes.Rebuild.card, gameState) + 1 >= CountOfPile(CardTypes.Province.card, gameState) && 
                         pointLead > 0)
                     {
                         return CardTypes.Estate.card;
                     }
 
                     //Name Estate if it's the only thing left in your draw pile and the Duchies are gone
-                    if (CountOfPile<CardTypes.Duchy>(gameState) == 0 &&
-                        CountInDeck<CardTypes.Province>(gameState) == 0 && 
-                        CountInDeck<CardTypes.Estate>(gameState) > 0)
+                    if (CountOfPile(CardTypes.Duchy.card, gameState) == 0 &&
+                        CountInDeck(CardTypes.Province.card, gameState) == 0 && 
+                        CountInDeck(CardTypes.Estate.card, gameState) > 0)
                     {
                         return CardTypes.Estate.card;
                     }
 
                     //Name Province if Duchy is in Draw and Draw contains more P than E
-                    if (CountOfPile<CardTypes.Duchy>(gameState) == 0 && 
-                        CountInDeck<CardTypes.Duchy>(gameState) > 0 && 
-                        CountInDeck<CardTypes.Province>(gameState) > CountInDeck<CardTypes.Estate>(gameState))
+                    if (CountOfPile(CardTypes.Duchy.card, gameState) == 0 && 
+                        CountInDeck(CardTypes.Duchy.card, gameState) > 0 && 
+                        CountInDeck(CardTypes.Province.card, gameState) > CountInDeck(CardTypes.Estate.card, gameState))
                     {
                         return CardTypes.Province.card;
                     }
 
                     //Name Estate if you're ahead and both P and E are left in draw
-                    if (CountOfPile<CardTypes.Duchy>(gameState) == 0 && 
-                        CountInDeck<CardTypes.Province>(gameState) > 0 && 
-                        CountInDeck<CardTypes.Estate>(gameState) > 0 && 
+                    if (CountOfPile(CardTypes.Duchy.card, gameState) == 0 && 
+                        CountInDeck(CardTypes.Province.card, gameState) > 0 && 
+                        CountInDeck(CardTypes.Estate.card, gameState) > 0 && 
                         pointLead > 2)
                     {
                         return CardTypes.Estate.card;
                     }
 
                     //Name Estate over Province if you're way ahead
-                    if (CountOfPile<CardTypes.Duchy>(gameState) == 0 && 
-                        CountInDeckAndDiscard<CardTypes.Province>(gameState) > 0 &&
-                        CountInDeckAndDiscard<CardTypes.Duchy>(gameState) < 3 && 
-                        CountInDeckAndDiscard<CardTypes.Estate>(gameState) > 0 && 
+                    if (CountOfPile(CardTypes.Duchy.card, gameState) == 0 && 
+                        CountInDeckAndDiscard(CardTypes.Province.card, gameState) > 0 &&
+                        CountInDeckAndDiscard(CardTypes.Duchy.card, gameState) < 3 && 
+                        CountInDeckAndDiscard(CardTypes.Estate.card, gameState) > 0 && 
                         pointLead > 4)
                     {
                         return CardTypes.Estate.card;
                     }
 
                     //Province -> Province when ahead without any Duchies left
-                    if (CountOfPile<CardTypes.Duchy>(gameState) == 0 && 
-                        CountAllOwned<CardTypes.Duchy>(gameState) == 0 &&
+                    if (CountOfPile(CardTypes.Duchy.card, gameState) == 0 && 
+                        CountAllOwned(CardTypes.Duchy.card, gameState) == 0 &&
                         pointLead > 0)
                     {
                         return CardTypes.Estate.card;
                     }
 
                     //Province -> Province when ahead without any Duchies not in hand
-                    if (CountOfPile<CardTypes.Duchy>(gameState) == 0 && 
-                        CountInDeckAndDiscard<CardTypes.Duchy>(gameState) == 0 && 
-                        CountInDeckAndDiscard<CardTypes.Province>(gameState) > 0 && 
+                    if (CountOfPile(CardTypes.Duchy.card, gameState) == 0 && 
+                        CountInDeckAndDiscard(CardTypes.Duchy.card, gameState) == 0 && 
+                        CountInDeckAndDiscard(CardTypes.Province.card, gameState) > 0 && 
                         pointLead > 2)
                     {
                         return CardTypes.Estate.card;
                     }
 
-                    if (CountInDeckAndDiscard<CardTypes.Province>(gameState) > 0)
+                    if (CountInDeckAndDiscard(CardTypes.Province.card, gameState) > 0)
                     {
                         return CardTypes.Province.card;
                     }
@@ -142,62 +142,62 @@ namespace Program
             private static CardPickByPriority PurchaseOrder(Card withCard, GameStatePredicate withCardPurchaseCondition)
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Province>(),
+                    CardAcceptance.For(CardTypes.Province.card),
                            
-                    CardAcceptance.For<CardTypes.Rebuild>(gameState => 
-                        CountAllOwned<CardTypes.Rebuild>(gameState) < 2),
+                    CardAcceptance.For(CardTypes.Rebuild.card, gameState => 
+                        CountAllOwned(CardTypes.Rebuild.card, gameState) < 2),
                     
                     //In non-mirrors, get a 3rd Rebuild
-                    CardAcceptance.For<CardTypes.Rebuild>(gameState =>
-                        CountAllOwned<CardTypes.Rebuild>(gameState) < 3 && 
-                        CountOfPile<CardTypes.Rebuild>(gameState) > 7),
+                    CardAcceptance.For(CardTypes.Rebuild.card, gameState =>
+                        CountAllOwned(CardTypes.Rebuild.card, gameState) < 3 && 
+                        CountOfPile(CardTypes.Rebuild.card, gameState) > 7),
 
-                    CardAcceptance.For<CardTypes.Duchy>(),
+                    CardAcceptance.For(CardTypes.Duchy.card),
 
-                    CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 1),
+                    CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 1),
 
-                    CardAcceptance.For<CardTypes.Estate>(gameState =>
-                        CountOfPile<CardTypes.Province>(gameState) == 2 &&
+                    CardAcceptance.For(CardTypes.Estate.card, gameState =>
+                        CountOfPile(CardTypes.Province.card, gameState) == 2 &&
                         PlayersPointLead(gameState) > -8),
                            
-                    CardAcceptance.For<CardTypes.Gold>(),
+                    CardAcceptance.For(CardTypes.Gold.card),
                            
-                    CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
+                    CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 2),
 
-                    CardAcceptance.For<CardTypes.Rebuild>(gameState => 
-                        (CountAllOwned<CardTypes.Duchy>(gameState) > 0 || PlayersPointLead(gameState) > 2) && 
-                        (CountOfPile<CardTypes.Rebuild>(gameState) > 2 || 
+                    CardAcceptance.For(CardTypes.Rebuild.card, gameState => 
+                        (CountAllOwned(CardTypes.Duchy.card, gameState) > 0 || PlayersPointLead(gameState) > 2) && 
+                        (CountOfPile(CardTypes.Rebuild.card, gameState) > 2 || 
                         PlayersPointLead(gameState) > 3 || 
-                        (CountOfPile<CardTypes.Rebuild>(gameState) == 1 && PlayersPointLead(gameState) > 0))),
+                        (CountOfPile(CardTypes.Rebuild.card, gameState) == 1 && PlayersPointLead(gameState) > 0))),
 
-                    CardAcceptance.For<CardTypes.Estate>(gameState => 
-                        CountOfPile<CardTypes.Duchy>(gameState) >= 4 && 
-                        CountAllOwned<CardTypes.Duchy>(gameState) == 0 && 
-                        CountAllOwned<CardTypes.Estate>(gameState) == 0),
+                    CardAcceptance.For(CardTypes.Estate.card, gameState => 
+                        CountOfPile(CardTypes.Duchy.card, gameState) >= 4 && 
+                        CountAllOwned(CardTypes.Duchy.card, gameState) == 0 && 
+                        CountAllOwned(CardTypes.Estate.card, gameState) == 0),
 
-                    CardAcceptance.For<CardTypes.Estate>(gameState => 
-                        CountOfPile<CardTypes.Duchy>(gameState) == 0 && 
-                        CountAllOwned<CardTypes.Duchy>(gameState) == 0),
+                    CardAcceptance.For(CardTypes.Estate.card, gameState => 
+                        CountOfPile(CardTypes.Duchy.card, gameState) == 0 && 
+                        CountAllOwned(CardTypes.Duchy.card, gameState) == 0),
 
                     new CardAcceptance(withCard, withCardPurchaseCondition),
 
-                    CardAcceptance.For<CardTypes.Silver>());
+                    CardAcceptance.For(CardTypes.Silver.card));
             }
 
             private static CardPickByPriority ActionOrder(Card withCard)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Rebuild>(ShouldPlayRebuild),
+                           CardAcceptance.For(CardTypes.Rebuild.card, ShouldPlayRebuild),
                            new CardAcceptance(withCard)
                            );
             }            
 
             private static bool ShouldPlayRebuild(GameState gameState)
             {
-                return !(gameState.players.CurrentPlayer.ExpectedCoinValueAtEndOfTurn >= 8 && CountOfPile<CardTypes.Province>(gameState) == 1)
-                       && !(CountOfPile<CardTypes.Duchy>(gameState) == 0
-                       && CountInDeckAndDiscard<CardTypes.Duchy>(gameState) == 0 && PlayersPointLead(gameState) < 0)
-                       && CountOfPile<CardTypes.Province>(gameState) > 0;
+                return !(gameState.players.CurrentPlayer.ExpectedCoinValueAtEndOfTurn >= 8 && CountOfPile(CardTypes.Province.card, gameState) == 1)
+                       && !(CountOfPile(CardTypes.Duchy.card, gameState) == 0
+                       && CountInDeckAndDiscard(CardTypes.Duchy.card, gameState) == 0 && PlayersPointLead(gameState) < 0)
+                       && CountOfPile(CardTypes.Province.card, gameState) > 0;
             }
         }
 
@@ -216,7 +216,7 @@ namespace Program
                     : base(playerNumber,
                            "RebuildJack",
                            CardTypes.JackOfAllTrades.card,
-                           gameState => CountAllOwned<CardTypes.JackOfAllTrades>(gameState) < 1)
+                           gameState => CountAllOwned(CardTypes.JackOfAllTrades.card, gameState) < 1)
                 {
                 }
             }          
@@ -237,7 +237,7 @@ namespace Program
                     : base(playerNumber,
                            "RebuildMonument",
                            CardTypes.Monument.card,
-                           gameState => CountAllOwned<CardTypes.Monument>(gameState) < 2)
+                           gameState => CountAllOwned(CardTypes.Monument.card, gameState) < 2)
                 {
                 }
             }

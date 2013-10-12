@@ -67,16 +67,16 @@ namespace Program
                 {
                     if (gameState.CurrentCardBeingPlayed == CardTypes.Minion.card)
                     {
-                        if (CountInHand<CardTypes.Minion>(gameState) >= 2)
+                        if (CountInHand(CardTypes.Minion.card, gameState) >= 2)
                             return PlayerActionChoice.PlusCoin;
 
-                        if (HasCardInHand<CardTypes.Butcher>(gameState) && HasCardInHand<CardTypes.Gold>(gameState))
+                        if (HasCardInHand(CardTypes.Butcher.card, gameState) && HasCardInHand(CardTypes.Gold.card, gameState))
                             return PlayerActionChoice.PlusCoin;
 
-                        if(gameState.Self.ExpectedCoinValueAtEndOfTurn + CountInHand<CardTypes.Minion>(gameState) * 2 >= 6)
+                        if(gameState.Self.ExpectedCoinValueAtEndOfTurn + CountInHand(CardTypes.Minion.card, gameState) * 2 >= 6)
                             return PlayerActionChoice.PlusCoin;
 
-                        if (HasCardInHand<CardTypes.Soothsayer>(gameState))
+                        if (HasCardInHand(CardTypes.Soothsayer.card, gameState))
                         {                            
                             return PlayerActionChoice.PlusCoin;                            
                         }
@@ -98,40 +98,40 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>    (CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount),
-                           CardAcceptance.For<CardTypes.Duchy>       (gameState => CountOfPile<CardTypes.Province>(gameState) <= 6, CardAcceptance.OverPayMaxAmount),
-                           CardAcceptance.For<CardTypes.Soothsayer>  (1),
-                           CardAcceptance.For<CardTypes.Butcher>     (1, gameState => CountAllOwned<CardTypes.Minion>(gameState) >= 3),
-                           CardAcceptance.For<CardTypes.Gold>        (gameState => CountAllOwned<CardTypes.Minion>(gameState) >= 3),                           
-                           CardAcceptance.For<CardTypes.Minion>      (),
-                           CardAcceptance.For<CardTypes.HorseTraders>(1),
-                           CardAcceptance.For<CardTypes.Silver>      (1),
-                           CardAcceptance.For<CardTypes.GreatHall>   (gameState => CountOfPile<CardTypes.GreatHall>(gameState) >= 2),
-                           CardAcceptance.For<CardTypes.Estate>      (gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),
-                           CardAcceptance.For<CardTypes.Silver>      (),
-                           CardAcceptance.For<CardTypes.Estate>      (gameState => CardBeingPlayedIs<CardTypes.Butcher>(gameState))
+                           CardAcceptance.For(CardTypes.Province.card, CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount),
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 6, CardAcceptance.OverPayMaxAmount),
+                           CardAcceptance.For(CardTypes.Soothsayer.card, 1),
+                           CardAcceptance.For(CardTypes.Butcher.card, 1, gameState => CountAllOwned(CardTypes.Minion.card, gameState) >= 3),
+                           CardAcceptance.For(CardTypes.Gold.card, gameState => CountAllOwned(CardTypes.Minion.card, gameState) >= 3),                           
+                           CardAcceptance.For(CardTypes.Minion.card),
+                           CardAcceptance.For(CardTypes.HorseTraders.card, 1),
+                           CardAcceptance.For(CardTypes.Silver.card, 1),
+                           CardAcceptance.For(CardTypes.GreatHall.card, gameState => CountOfPile(CardTypes.GreatHall.card, gameState) >= 2),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 4),
+                           CardAcceptance.For(CardTypes.Silver.card),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CardBeingPlayedIs(CardTypes.Butcher.card, gameState))
                            );
             }
 
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.GreatHall>(),
-                           CardAcceptance.For<CardTypes.Minion>(),
-                           CardAcceptance.For<CardTypes.Butcher>(),
-                           CardAcceptance.For<CardTypes.Soothsayer>(),
-                           CardAcceptance.For<CardTypes.HorseTraders>());
+                           CardAcceptance.For(CardTypes.GreatHall.card),
+                           CardAcceptance.For(CardTypes.Minion.card),
+                           CardAcceptance.For(CardTypes.Butcher.card),
+                           CardAcceptance.For(CardTypes.Soothsayer.card),
+                           CardAcceptance.For(CardTypes.HorseTraders.card));
             }
 
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                        CardAcceptance.For<CardTypes.Gold>(gameState => CardBeingPlayedIs<CardTypes.Butcher>(gameState)),
-                        CardAcceptance.For<CardTypes.Soothsayer>(gameState => CardBeingPlayedIs<CardTypes.Butcher>(gameState)),
-                        CardAcceptance.For<CardTypes.HorseTraders>(gameState => CardBeingPlayedIs<CardTypes.Butcher>(gameState)),
-                        CardAcceptance.For<CardTypes.Curse>(),                        
-                        CardAcceptance.For<CardTypes.Copper>(gameState => gameState.Self.ExpectedCoinValueAtEndOfTurn < 8),
-                        CardAcceptance.For<CardTypes.Estate>());
+                        CardAcceptance.For(CardTypes.Gold.card, gameState => CardBeingPlayedIs(CardTypes.Butcher.card, gameState)),
+                        CardAcceptance.For(CardTypes.Soothsayer.card, gameState => CardBeingPlayedIs(CardTypes.Butcher.card, gameState)),
+                        CardAcceptance.For(CardTypes.HorseTraders.card, gameState => CardBeingPlayedIs(CardTypes.Butcher.card, gameState)),
+                        CardAcceptance.For(CardTypes.Curse.card),                        
+                        CardAcceptance.For(CardTypes.Copper.card, gameState => gameState.Self.ExpectedCoinValueAtEndOfTurn < 8),
+                        CardAcceptance.For(CardTypes.Estate.card));
             }
         }
     }
@@ -161,44 +161,44 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),
-                           CardAcceptance.For<CardTypes.Soothsayer>(1),                                                      
-                           CardAcceptance.For<CardTypes.Gold>(1),
-                           CardAcceptance.For<CardTypes.Soothsayer>(2),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CardBeingPlayedIs<CardTypes.Remake>(gameState)),
-                           CardAcceptance.For<CardTypes.Remake>(1),
-                           //CardAcceptance.For<CardTypes.Remake>(gameState => ((double)CountAllOwned(TrashOrderWithoutRemake(), gameState)) / gameState.Self.AllOwnedCards.Count > 0.4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
-                           CardAcceptance.For<CardTypes.GreatHall>(gameState => CountAllOwned<CardTypes.Silver>(gameState) >= 2),
-                           CardAcceptance.For<CardTypes.Silver>()
+                           CardAcceptance.For(CardTypes.Province.card),
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 4),
+                           CardAcceptance.For(CardTypes.Soothsayer.card1),                                                      
+                           CardAcceptance.For(CardTypes.Gold.card1),
+                           CardAcceptance.For(CardTypes.Soothsayer.card2),
+                           CardAcceptance.For(CardTypes.Gold.card),
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CardBeingPlayedIs(CardTypes.Remake.card, gameState)),
+                           CardAcceptance.For(CardTypes.Remake.card1),
+                           //CardAcceptance.For(CardTypes.Remake.card, gameState => ((double)CountAllOwned(TrashOrderWithoutRemake(), gameState)) / gameState.Self.AllOwnedCards.Count > 0.4),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 2),
+                           CardAcceptance.For(CardTypes.GreatHall.card, gameState => CountAllOwned(CardTypes.Silver.card, gameState) >= 2),
+                           CardAcceptance.For(CardTypes.Silver.card)
                            );
             }
 
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.GreatHall>(),
-                           CardAcceptance.For<CardTypes.Soothsayer>(),
-                           CardAcceptance.For<CardTypes.Remake>(ShouldPlayRemake));
+                           CardAcceptance.For(CardTypes.GreatHall.card),
+                           CardAcceptance.For(CardTypes.Soothsayer.card),
+                           CardAcceptance.For(CardTypes.Remake.card, ShouldPlayRemake));
             }
 
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                        CardAcceptance.For<CardTypes.Curse>(),
-                        CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) > 2),
-                        CardAcceptance.For<CardTypes.Remake>(),
-                        CardAcceptance.For<CardTypes.Copper>());
+                        CardAcceptance.For(CardTypes.Curse.card),
+                        CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) > 2),
+                        CardAcceptance.For(CardTypes.Remake.card),
+                        CardAcceptance.For(CardTypes.Copper.card));
             }
 
             private static CardPickByPriority TrashOrderWithoutRemake()
             {
                 return new CardPickByPriority(
-                        CardAcceptance.For<CardTypes.Curse>(),
-                        CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) > 2),                        
-                        CardAcceptance.For<CardTypes.Copper>());
+                        CardAcceptance.For(CardTypes.Curse.card),
+                        CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) > 2),                        
+                        CardAcceptance.For(CardTypes.Copper.card));
             }
 
             private static bool ShouldPlayRemake(GameState gameState)

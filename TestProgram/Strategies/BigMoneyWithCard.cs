@@ -25,14 +25,14 @@ namespace Program
             public static ICardPicker PurchaseOrder(int cardCount, int afterSilverCount, int afterGoldCount)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2),
-                           CardAcceptance.For<T>(gameState => CountAllOwned<T>(gameState) < cardCount && CountAllOwned<CardTypes.Gold>(gameState) >= afterGoldCount),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<T>(gameState => CountAllOwned<T>(gameState) < cardCount && CountAllOwned<CardTypes.Silver>(gameState) >= afterSilverCount),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
-                           CardAcceptance.For<CardTypes.Silver>(CardAcceptance.AlwaysMatch, CardAcceptance.OverPayZero));
+                           CardAcceptance.For(CardTypes.Province.card, gameState => CountAllOwned(CardTypes.Gold.card, gameState) > 2),
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 4),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 2),
+                           CardAcceptance.For(card, gameState => CountAllOwned(T.card, gameState) < cardCount && CountAllOwned(CardTypes.Gold.card, gameState) >= afterGoldCount),
+                           CardAcceptance.For(CardTypes.Gold.card),
+                           CardAcceptance.For(card, gameState => CountAllOwned(T.card, gameState) < cardCount && CountAllOwned(CardTypes.Silver.card, gameState) >= afterSilverCount),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
+                           CardAcceptance.For(CardTypes.Silver.card, CardAcceptance.AlwaysMatch, CardAcceptance.OverPayZero));
             }           
         }
         
@@ -128,22 +128,22 @@ namespace Program
             public static ICardPicker PurchaseOrder(int cardCount)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Thief>(gameState => CountAllOwned<CardTypes.Thief>(gameState) < cardCount && CountAllOwned<CardTypes.Silver>(gameState) >= 2),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(CardTypes.Province.card),
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 2),
+                           CardAcceptance.For(CardTypes.Gold.card),
+                           CardAcceptance.For(CardTypes.Thief.card, gameState => CountAllOwned(CardTypes.Thief.card, gameState) < cardCount && CountAllOwned(CardTypes.Silver.card, gameState) >= 2),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
+                           CardAcceptance.For(CardTypes.Silver.card));
 
             }
 
             private static ICardPicker TrashOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Silver>(),
-                           CardAcceptance.For<CardTypes.Copper>());
+                           CardAcceptance.For(CardTypes.Gold.card),
+                           CardAcceptance.For(CardTypes.Silver.card),
+                           CardAcceptance.For(CardTypes.Copper.card));
             }
         }
 
@@ -164,22 +164,22 @@ namespace Program
             private static ICardPicker PurchaseOrder(int cardCount)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2),
-                           CardAcceptance.For<T>(gameState => CountAllOwned<T>(gameState) < cardCount),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Cartographer>(),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(CardTypes.Province.card, gameState => CountAllOwned(CardTypes.Gold.card, gameState) > 2),
+                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 2),
+                           CardAcceptance.For(T.card, gameState => CountAllOwned(T.card, gameState) < cardCount),
+                           CardAcceptance.For(CardTypes.Gold.card),
+                           CardAcceptance.For(CardTypes.Cartographer.card),
+                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
+                           CardAcceptance.For(CardTypes.Silver.card));
 
             }
 
             private static ICardPicker ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Cartographer>(),
-                           CardAcceptance.For<T>());
+                           CardAcceptance.For(CardTypes.Cartographer.card),
+                           CardAcceptance.For(T.card));
             }
         }
     }

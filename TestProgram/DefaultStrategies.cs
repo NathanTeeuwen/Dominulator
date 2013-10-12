@@ -159,69 +159,69 @@ namespace Program
             public static CardPickByPriority DefaultTreasurePlayOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Contraband>(),       // play early to provide opponent as little information when banning
+                    CardAcceptance.For(CardTypes.Contraband.card),       // play early to provide opponent as little information when banning
                     // base set first
-                    CardAcceptance.For<CardTypes.Platinum>(),
-                    CardAcceptance.For<CardTypes.Gold>(),
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Copper>(),
-                    CardAcceptance.For<CardTypes.Spoils>(),
-                    CardAcceptance.For<CardTypes.Potion>(),
+                    CardAcceptance.For(CardTypes.Platinum.card),
+                    CardAcceptance.For(CardTypes.Gold.card),
+                    CardAcceptance.For(CardTypes.Silver.card),
+                    CardAcceptance.For(CardTypes.Copper.card),
+                    CardAcceptance.For(CardTypes.Spoils.card),
+                    CardAcceptance.For(CardTypes.Potion.card),
                     // alphabetical, all other treasures that dont really depend on order
-                    CardAcceptance.For<CardTypes.Cache>(),
-                    CardAcceptance.For<CardTypes.FoolsGold>(),
-                    CardAcceptance.For<CardTypes.Loan>(),
-                    CardAcceptance.For<CardTypes.Harem>(),
-                    CardAcceptance.For<CardTypes.Hoard>(),
-                    CardAcceptance.For<CardTypes.Masterpiece>(),
-                    CardAcceptance.For<CardTypes.PhilosophersStone>(),
-                    CardAcceptance.For<CardTypes.Quarry>(),
-                    CardAcceptance.For<CardTypes.Stash>(),
-                    CardAcceptance.For<CardTypes.Talisman>(),
+                    CardAcceptance.For(CardTypes.Cache.card),
+                    CardAcceptance.For(CardTypes.FoolsGold.card),
+                    CardAcceptance.For(CardTypes.Loan.card),
+                    CardAcceptance.For(CardTypes.Harem.card),
+                    CardAcceptance.For(CardTypes.Hoard.card),
+                    CardAcceptance.For(CardTypes.Masterpiece.card),
+                    CardAcceptance.For(CardTypes.PhilosophersStone.card),
+                    CardAcceptance.For(CardTypes.Quarry.card),
+                    CardAcceptance.For(CardTypes.Stash.card),
+                    CardAcceptance.For(CardTypes.Talisman.card),
                     // cards whose benefit is sensitive to ordering
-                    CardAcceptance.For<CardTypes.Venture>(),          // playing this card might increase the number of treasures played
-                    CardAcceptance.For<CardTypes.CounterFeit>(),      // after venture so that you have more variety to counterfeit
-                    CardAcceptance.For<CardTypes.IllGottenGains>(),   // by playing after venture, you have more information about whether to gain the copper
-                    CardAcceptance.For<CardTypes.HornOfPlenty>(),     // play relatively last so it has the most variety of cards to trigger with
-                    CardAcceptance.For<CardTypes.Bank>());            // try to make bank as valuable as possibile.
+                    CardAcceptance.For(CardTypes.Venture.card),          // playing this card might increase the number of treasures played
+                    CardAcceptance.For(CardTypes.CounterFeit.card),      // after venture so that you have more variety to counterfeit
+                    CardAcceptance.For(CardTypes.IllGottenGains.card),   // by playing after venture, you have more information about whether to gain the copper
+                    CardAcceptance.For(CardTypes.HornOfPlenty.card),     // play relatively last so it has the most variety of cards to trigger with
+                    CardAcceptance.For(CardTypes.Bank.card));            // try to make bank as valuable as possibile.
             }
 
             public static CardPickByPriority DefaultDiscardOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Province>(),
-                    CardAcceptance.For<CardTypes.Duchy>(),
-                    CardAcceptance.For<CardTypes.Estate>(),
-                    CardAcceptance.For<CardTypes.OvergrownEstate>(),
-                    CardAcceptance.For<CardTypes.Hovel>(),
-                    CardAcceptance.For<CardTypes.Ruins>(),
-                    CardAcceptance.For<CardTypes.Curse>(),
-                    CardAcceptance.For<CardTypes.Copper>());
+                    CardAcceptance.For(CardTypes.Province.card),
+                    CardAcceptance.For(CardTypes.Duchy.card),
+                    CardAcceptance.For(CardTypes.Estate.card),
+                    CardAcceptance.For(CardTypes.OvergrownEstate.card),
+                    CardAcceptance.For(CardTypes.Hovel.card),
+                    CardAcceptance.For(CardTypes.Ruins.card),
+                    CardAcceptance.For(CardTypes.Curse.card),
+                    CardAcceptance.For(CardTypes.Copper.card));
             }
 
             public static ICardPicker DefaultTrashOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Curse>(),
-                    CardAcceptance.For<CardTypes.RuinedVillage>(),
-                    CardAcceptance.For<CardTypes.RuinedMarket>(),
-                    CardAcceptance.For<CardTypes.Survivors>(),
-                    CardAcceptance.For<CardTypes.RuinedLibrary>(),
-                    CardAcceptance.For<CardTypes.AbandonedMine>(), 
-                    CardAcceptance.For<CardTypes.Estate>(gameState => CountAllOwned<CardTypes.Province>(gameState) == 0),
-                    CardAcceptance.For<CardTypes.OvergrownEstate>(),
-                    CardAcceptance.For<CardTypes.Hovel>(),
-                    CardAcceptance.For<CardTypes.Copper>());
+                    CardAcceptance.For(CardTypes.Curse.card),
+                    CardAcceptance.For(CardTypes.RuinedVillage.card),
+                    CardAcceptance.For(CardTypes.RuinedMarket.card),
+                    CardAcceptance.For(CardTypes.Survivors.card),
+                    CardAcceptance.For(CardTypes.RuinedLibrary.card),
+                    CardAcceptance.For(CardTypes.AbandonedMine.card), 
+                    CardAcceptance.For(CardTypes.Estate.card, gameState => CountAllOwned(CardTypes.Province.card, gameState) == 0),
+                    CardAcceptance.For(CardTypes.OvergrownEstate.card),
+                    CardAcceptance.For(CardTypes.Hovel.card),
+                    CardAcceptance.For(CardTypes.Copper.card));
             }
 
             public static bool ShouldBuyProvinces(GameState gameState)
             {
-                return CountAllOwned<CardTypes.Gold>(gameState) > 2;
+                return CountAllOwned(CardTypes.Gold.card, gameState) > 2;
             }
 
             public static bool ShouldGainIllGottenGains(GameState gameState)
             {
-                return CountOfPile<CardTypes.Curse>(gameState) > 0;
+                return CountOfPile(CardTypes.Curse.card, gameState) > 0;
             }
 
             public static bool ShouldPlaySalvager(ICardPicker trashOrder, GameState gameState)
@@ -251,18 +251,18 @@ namespace Program
 
             public static bool ShouldPlayLookout(GameState gameState, GameStatePredicate shouldBuyProvinces)
             {
-                int cardCountToTrash = CountInDeck<CardTypes.Copper>(gameState);
+                int cardCountToTrash = CountInDeck(CardTypes.Copper.card, gameState);
 
                 if (!shouldBuyProvinces(gameState))
                 {
-                    cardCountToTrash += CountInDeck<CardTypes.Estate>(gameState);
+                    cardCountToTrash += CountInDeck(CardTypes.Estate.card, gameState);
                 }
 
-                cardCountToTrash += CountInDeck<CardTypes.Hovel>(gameState);
-                cardCountToTrash += CountInDeck<CardTypes.Necropolis>(gameState);
-                cardCountToTrash += CountInDeck<CardTypes.OvergrownEstate>(gameState);
+                cardCountToTrash += CountInDeck(CardTypes.Hovel.card, gameState);
+                cardCountToTrash += CountInDeck(CardTypes.Necropolis.card, gameState);
+                cardCountToTrash += CountInDeck(CardTypes.OvergrownEstate.card, gameState);
 
-                cardCountToTrash += CountInDeck<CardTypes.Lookout>(gameState);
+                cardCountToTrash += CountInDeck(CardTypes.Lookout.card, gameState);
 
                 int totalCardsOwned = gameState.Self.CardsInDeck.Count;
 

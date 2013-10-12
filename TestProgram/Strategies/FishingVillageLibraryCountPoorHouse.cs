@@ -95,20 +95,20 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(ShouldBuyProvince),
-                           CardAcceptance.For<CardTypes.Library>(gameState => CountAllOwned<CardTypes.Library>(gameState) < 1),
-                           CardAcceptance.For<CardTypes.Count>(gameState => CountAllOwned<CardTypes.Count>(gameState) < 1));
+                           CardAcceptance.For(CardTypes.Province.card, ShouldBuyProvince),
+                           CardAcceptance.For(CardTypes.Library.card, gameState => CountAllOwned(CardTypes.Library.card, gameState) < 1),
+                           CardAcceptance.For(CardTypes.Count.card, gameState => CountAllOwned(CardTypes.Count.card, gameState) < 1));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    CardAcceptance.For<CardTypes.FishingVillage>(),
-                    CardAcceptance.For<CardTypes.Library>(),
-                    CardAcceptance.For<CardTypes.Count>(),
-                    CardAcceptance.For<CardTypes.Library>());
+                    CardAcceptance.For(CardTypes.FishingVillage.card),
+                    CardAcceptance.For(CardTypes.Library.card),
+                    CardAcceptance.For(CardTypes.Count.card),
+                    CardAcceptance.For(CardTypes.Library.card));
 
                 var lowPriority = new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.PoorHouse>(gameState => CountAllOwned<CardTypes.PoorHouse>(gameState) < 2 &&
-                                                                                CountAllOwned<CardTypes.Count>(gameState) >= 1),
-                           CardAcceptance.For<CardTypes.FishingVillage>());
+                           CardAcceptance.For(CardTypes.PoorHouse.card, gameState => CountAllOwned(CardTypes.PoorHouse.card, gameState) < 2 &&
+                                                                                CountAllOwned(CardTypes.Count.card, gameState) >= 1),
+                           CardAcceptance.For(CardTypes.FishingVillage.card));
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
             }
@@ -116,32 +116,32 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.FishingVillage>(ShouldPlayAction),
-                           CardAcceptance.For<CardTypes.PoorHouse>(ShouldPlayPoorHouse),
-                           CardAcceptance.For<CardTypes.Library>(ShouldPlayLibraryBeforeCount),
-                           CardAcceptance.For<CardTypes.Count>(),
-                           CardAcceptance.For<CardTypes.Library>(ShouldPlayLibrary));
+                           CardAcceptance.For(CardTypes.FishingVillage.card, ShouldPlayAction),
+                           CardAcceptance.For(CardTypes.PoorHouse.card, ShouldPlayPoorHouse),
+                           CardAcceptance.For(CardTypes.Library.card, ShouldPlayLibraryBeforeCount),
+                           CardAcceptance.For(CardTypes.Count.card),
+                           CardAcceptance.For(CardTypes.Library.card, ShouldPlayLibrary));
             }
 
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Estate>(),
-                           CardAcceptance.For<CardTypes.Copper>(),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(CardTypes.Estate.card),
+                           CardAcceptance.For(CardTypes.Copper.card),
+                           CardAcceptance.For(CardTypes.Silver.card));
             }
 
             private static CardPickByPriority DiscardOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(),
-                           CardAcceptance.For<CardTypes.Copper>(),
-                           CardAcceptance.For<CardTypes.Estate>(),
-                           CardAcceptance.For<CardTypes.PoorHouse>(),
-                           CardAcceptance.For<CardTypes.Library>(),
-                           CardAcceptance.For<CardTypes.FishingVillage>(),
-                           CardAcceptance.For<CardTypes.Count>());
+                           CardAcceptance.For(CardTypes.Province.card),
+                           CardAcceptance.For(CardTypes.Duchy.card),
+                           CardAcceptance.For(CardTypes.Copper.card),
+                           CardAcceptance.For(CardTypes.Estate.card),
+                           CardAcceptance.For(CardTypes.PoorHouse.card),
+                           CardAcceptance.For(CardTypes.Library.card),
+                           CardAcceptance.For(CardTypes.FishingVillage.card),
+                           CardAcceptance.For(CardTypes.Count.card));
             }
 
             private static bool DoesHandHaveCombinationToTrash(GameState gameState)
@@ -170,7 +170,7 @@ namespace Program
                     return false;
                 }
 
-                if (gameState.Self.Hand.CountWhere(card => card.isAction && !card == CardTypes.Library.card) > 0 &&
+                if (gameState.Self.Hand.CountWhere(card => card.isAction && card != CardTypes.Library.card) > 0 &&
                     gameState.Self.AvailableActions == 1)
                 {
                     return false;

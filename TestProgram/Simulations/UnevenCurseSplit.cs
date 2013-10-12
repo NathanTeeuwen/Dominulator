@@ -131,7 +131,7 @@ namespace Program.Simulations
             {
                 if (playerState.TurnNumber == 2)
                 {
-                    if (playerState.AllOwnedCards.Where(card => card.Is< CardTypes.Witch>()).Any())
+                    if (playerState.AllOwnedCards.Where(card => card == CardTypes.Witch.card).Any())
                     {
                         this.was25split[((PlayerAction)playerState.Actions).playerIndex - 1] = true;
                     }

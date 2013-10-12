@@ -20,10 +20,9 @@ namespace Program
             return result;
         }
 
-        protected static CardCountPair CardWithCount<T>(int count)
-            where T : Card, new()
+        protected static CardCountPair CardWithCount(Card card, int count)
         {
-            return new CardCountPair(T.card, count);
+            return new CardCountPair(card, count);
         }
     }
 }
