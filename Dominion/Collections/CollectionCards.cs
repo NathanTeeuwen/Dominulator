@@ -89,9 +89,24 @@ namespace Dominion
             for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)
             {
                 this.mapGameCardIndexToCount[index] += other.mapGameCardIndexToCount[index];
+
+                var parent = this.parent;
+                while (parent != null)
+                {
+                    parent.mapGameCardIndexToCount[index] += other.mapGameCardIndexToCount[index];
+                    parent = parent.parent;
+                }
             }
 
             this.count += other.count;
+            {
+                var parent = this.parent;
+                while (parent != null)
+                {
+                    this.count += other.count;
+                    parent = parent.parent;
+                }
+            }
 
             other.Clear();
         }

@@ -212,7 +212,7 @@ namespace Program
                     CardAcceptance.For(Cards.OvergrownEstate),
                     CardAcceptance.For(Cards.Hovel),
                     CardAcceptance.For(Cards.Copper));
-            }
+            }        
 
             public static bool ShouldBuyProvinces(GameState gameState)
             {
