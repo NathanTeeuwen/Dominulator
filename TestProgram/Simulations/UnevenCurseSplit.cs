@@ -12,7 +12,7 @@ namespace Program.Simulations
     {
         public static void Run()
         {         
-            int gameCount = 100000;
+            int gameCount = 10000;
 
             System.Console.WriteLine("Out of {0} games", gameCount);
             System.Console.WriteLine();
@@ -53,20 +53,20 @@ namespace Program.Simulations
             var player1 = Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(1, cardCount:2);
             var player2 = Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2, cardCount:2);
 
-            var gameConfig = new GameConfig(
-                useShelters:false,
-                useColonyAndPlatinum:false,
-                supplyPiles: PlayerAction.GetKingdomCards(player1, player2),
-                startingDeck: startingCards,
-                startingHand: null);
+            var builder = new GameConfigBuilder();
+            PlayerAction.SetKingdomCards(builder, player1, player2);
+            if (startingCards != null)
+                builder.SetStartingDeck(startingCards);                
+
+            var gameConfig = builder.ToGameConfig();
 
             Program.ComparePlayers(
                 Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(1, cardCount:2),
                 Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2, cardCount:2),
-                firstPlayerAdvantage: true,
+                gameConfig,
+                firstPlayerAdvantage: true,                
                 numberOfGames: gameCount,
-                createGameLog: new Program.CreateGameLog(gameLogFactory.CreateGameLog),
-                gameConfigToUse: gameConfig);
+                createGameLog: new Program.CreateGameLog(gameLogFactory.CreateGameLog));
 
             System.Console.WriteLine("Curses Split was Uneven {0}%", gameLogFactory.UnEvenSplitPercent);
             System.Console.WriteLine();

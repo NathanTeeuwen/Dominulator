@@ -33,10 +33,10 @@ namespace Program
                 {                    
                     if (HasCardInHand<CardTypes.Gold>(gameState))
                         return PlayerActionChoice.Trash;
-                    //else if (gameState.Self.ExpectedCoinValueAtEndOfTurn >= 6 && gameState.Self.ExpectedCoinValueAtEndOfTurn < 8)
-                        //return PlayerActionChoice.PlusCard;
-                    else
+                    else if (gameState.Self.ExpectedCoinValueAtEndOfTurn >= 6 && gameState.Self.ExpectedCoinValueAtEndOfTurn < 8)
                         return PlayerActionChoice.PlusCard;
+                    else
+                        return PlayerActionChoice.GainCard;
                 }
             }
 

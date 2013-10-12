@@ -26,7 +26,8 @@ namespace Program
                             purchaseOrder: PurchaseOrder(),
                             actionOrder: ActionOrder(),
                             trashOrder: TrashOrder(),
-                            discardOrder: DiscardOrder())
+                            discardOrder: DiscardOrder(),
+                            chooseDefaultActionOnNone:false)
                 {
                 }                
             }           
@@ -34,10 +35,10 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                         CardAcceptance.For<CardTypes.Province>(),
-                          CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
+                         CardAcceptance.For<CardTypes.Province>(CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount),
+                          CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),                          
                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
-                          CardAcceptance.For<CardTypes.Butcher>(gameState => CountAllOwned<CardTypes.Butcher>(gameState) < 2),
+                          CardAcceptance.For<CardTypes.Butcher>(gameState => CountAllOwned<CardTypes.Butcher>(gameState) < 2),                          
                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 3));
 
                 var buildOrder = new CardPickByBuildOrder(

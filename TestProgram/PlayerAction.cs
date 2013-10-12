@@ -538,55 +538,20 @@ namespace Program
             return cardType.CurrentCoinCost(gameState.Self);
         }
 
-        public static Card[] GetKingdomCards(PlayerAction playerAction1, PlayerAction playerAction2)
+        public static void SetKingdomCards(GameConfigBuilder builder, params PlayerAction[] players)
         {
-            var cards = new HashSet<Card>();
-
-            AddCards(cards, playerAction1.actionOrder);
-            AddCards(cards, playerAction1.purchaseOrder);
-            AddCards(cards, playerAction1.gainOrder);
-            AddCards(cards, playerAction2.actionOrder);
-            AddCards(cards, playerAction2.purchaseOrder);
-            AddCards(cards, playerAction2.gainOrder);
-
-            var cardsToRemove = new Card[] { 
-                // treaures
-                Card.Type<CardTypes.Platinum>(),
-                Card.Type<CardTypes.Gold>(),
-                Card.Type<CardTypes.Silver>(),
-                Card.Type<CardTypes.Copper>(),
-                Card.Type<CardTypes.Colony>(),
-                Card.Type<CardTypes.Potion>(),
-                // victory
-                Card.Type<CardTypes.Province>(),
-                Card.Type<CardTypes.Duchy>(),
-                Card.Type<CardTypes.Estate>(),
-                Card.Type<CardTypes.Curse>(),                
-                // ruins
-                Card.Type<CardTypes.AbandonedMine>(),
-                Card.Type<CardTypes.RuinedLibrary>(),
-                Card.Type<CardTypes.RuinedVillage>(),
-                Card.Type<CardTypes.RuinedMarket>(),
-                Card.Type<CardTypes.Survivors>(),
-                // shelters
-                Card.Type<CardTypes.OvergrownEstate>(),
-                Card.Type<CardTypes.Hovel>(),
-                Card.Type<CardTypes.Necropolis>(),
-                // non-supply piles
-                Card.Type<CardTypes.Spoils>(),                
-                Card.Type<CardTypes.Madman>(),
-                Card.Type<CardTypes.Mercenary>()
-            };
-
-            foreach (Card card in cardsToRemove)
+            var allCards = new List<Card>();
+            foreach (PlayerAction player in players)
             {
-                cards.Remove(card);
+                AddCards(allCards, player.actionOrder);
+                AddCards(allCards, player.purchaseOrder);
+                AddCards(allCards, player.gainOrder);
             }
 
-            return cards.ToArray();
+            builder.SetKingdomPiles(allCards);
         }
 
-        private static void AddCards(HashSet<Card> cardSet, ICardPicker matchingCards)
+        private static void AddCards(List<Card> cardSet, ICardPicker matchingCards)
         {
             foreach (Card card in matchingCards.GetNeededCards())
             {                

@@ -10,7 +10,7 @@ namespace Program.Simulations
 {
     static public class EffectOfEstateOnRebuild
     {
-        static void Run()
+        public static void Run()
         {
             Program.ComparePlayers(Strategies.RebuildAdvanced.Player(1), Strategies.RebuildAdvanced.Player(2), startingDeckPerPlayer: StartingDecksForRebuildWithEstateAdvantage.StartingDecks);            
         }

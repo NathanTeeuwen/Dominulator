@@ -14,28 +14,28 @@ namespace Program.Kingdoms
         /*  any attempt to get more than one remake, or more than 2 sooth sayers results in a loss ....  (but in real game, the plan was 3 remakes and 3 soothsayers ...)
          * 
          * 
-         * */
-
-        public static readonly GameConfig GameConfig = new GameConfig(
-           StartingCardSplit.Split43,
-           Card.Type<CardTypes.Butcher>(),
-           Card.Type<CardTypes.GreatHall>(),
-           Card.Type<CardTypes.HornOfPlenty>(),
-           Card.Type<CardTypes.HorseTraders>(),
-           Card.Type<CardTypes.Minion>(),
-           Card.Type<CardTypes.Pawn>(),
-           Card.Type<CardTypes.Remake>(),
-           Card.Type<CardTypes.Soothsayer>(),
-           Card.Type<CardTypes.StoneMason>(),
-           Card.Type<CardTypes.Swindler>()
-           );
+         * */        
 
         public static void Run()
         {
-            //Program.ComparePlayers(Strategies.HorseTraderSoothsayerMinionGreatHall.Player(1), Strategies.HorseTraderSoothsayerMinionGreatHall.Player(2, false), gameConfigToUse: GameConfig);
-            Program.ComparePlayers(Strategies.HorseTraderSoothsayerMinionGreatHall.Player(1), Strategies.BigMoney.Player(2), gameConfigToUse: GameConfig);            
-            Program.ComparePlayers(Strategies.RemakeSoothsayer.Player(1), Strategies.BigMoney.Player(2), gameConfigToUse: GameConfig);
-            Program.ComparePlayers(Strategies.RemakeSoothsayer.Player(1), Strategies.HorseTraderSoothsayerMinionGreatHall.Player(2), gameConfigToUse: GameConfig);
+            GameConfig gameConfig = GameConfigBuilder.Create(
+                StartingCardSplit.Split43,
+                Card.Type<CardTypes.Butcher>(),
+                Card.Type<CardTypes.GreatHall>(),
+                Card.Type<CardTypes.HornOfPlenty>(),
+                Card.Type<CardTypes.HorseTraders>(),
+                Card.Type<CardTypes.Minion>(),
+                Card.Type<CardTypes.Pawn>(),
+                Card.Type<CardTypes.Remake>(),
+                Card.Type<CardTypes.Soothsayer>(),
+                Card.Type<CardTypes.StoneMason>(),
+                Card.Type<CardTypes.Swindler>()
+                );
+
+            //Program.ComparePlayers(Strategies.HorseTraderSoothsayerMinionGreatHall.Player(1), Strategies.HorseTraderSoothsayerMinionGreatHall.Player(2, false), gameConfig);
+            Program.ComparePlayers(Strategies.HorseTraderSoothsayerMinionGreatHall.Player(1), Strategies.BigMoney.Player(2), gameConfig);
+            Program.ComparePlayers(Strategies.RemakeSoothsayer.Player(1), Strategies.BigMoney.Player(2), gameConfig);
+            Program.ComparePlayers(Strategies.RemakeSoothsayer.Player(1), Strategies.HorseTraderSoothsayerMinionGreatHall.Player(2), gameConfig);
         }
     }
 }
@@ -48,21 +48,16 @@ namespace Program
         {
             public static PlayerAction Player(int playerNumber)
             {
-                return new MyPlayerAction(playerNumber, shouldButcher:true);
-            }
-
-            public static PlayerAction Player(int playerNumber, bool shouldButcher)
-            {
-                return new MyPlayerAction(playerNumber, shouldButcher);
-            }
+                return new MyPlayerAction(playerNumber);
+            }           
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber, bool shouldButcher)
+                public MyPlayerAction(int playerNumber)
                     : base("HorseTraderSoothsayerMinionGreatHall",
                         playerNumber,
-                        purchaseOrder: PurchaseOrder(shouldButcher),
+                        purchaseOrder: PurchaseOrder(),
                         actionOrder: ActionOrder(),
                         trashOrder: TrashOrder())
                 {
@@ -100,7 +95,7 @@ namespace Program
                 }
             }
 
-            private static CardPickByPriority PurchaseOrder(bool shouldButcher)
+            private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Province>    (CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount),

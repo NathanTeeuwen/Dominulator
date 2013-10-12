@@ -70,14 +70,11 @@ namespace Dominion
 
             this.hasPileEverBeenGained = new MapPileOfCardsToProperty<bool>(this.supplyPiles);
             this.pileEmbargoTokenCount = new MapPileOfCardsToProperty<int>(this.supplyPiles);
-            this.trash = new BagOfCards(this.cardGameSubset);
+            this.trash = new BagOfCards(this.cardGameSubset);            
 
-            if (startingDeckPerPlayer == null)
-                startingDeckPerPlayer = gameConfig.StartingDecks(players.Length);
+            this.GainStartingCards(gameConfig);
 
-            this.GainStartingCards(startingDeckPerPlayer);
-
-            this.players.AllPlayersDrawInitialCards(gameConfig.StartingHands(players.Length));    
+            this.players.AllPlayersDrawInitialCards(gameConfig);    
      
             foreach (PileOfCards cardPile in this.supplyPiles)
             {
@@ -93,12 +90,12 @@ namespace Dominion
             }
         }
         
-        private void GainStartingCards(IEnumerable<CardCountPair>[] pairsPerPlayer)
+        private void GainStartingCards(GameConfig gameConfig)
         {
             for (int playerIndex = 0; playerIndex < this.players.PlayerCount; ++playerIndex)
             {
                 PlayerState player = this.players[playerIndex];
-                foreach (CardCountPair pair in pairsPerPlayer[playerIndex])
+                foreach (CardCountPair pair in gameConfig.StartingDeck(playerIndex))
                 {
                     if (pair.Card.isShelter)
                     {

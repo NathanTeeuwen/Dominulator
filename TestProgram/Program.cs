@@ -15,9 +15,9 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            Kingdoms.ShouldRemakeOrHorseTradersIntoSoothayer.Run();
-            //ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.MountebankGovernorMaurader.Player(2), useShelters: true);
-            //CompareStrategyVsAllKnownStrategies(Strategies.MountebankGovernorMaurader.Player(1), useShelters: true);
+            //Kingdoms.ShouldRemakeOrHorseTradersIntoSoothayer.Run();
+            //ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.MountebankGovernorMaurader.Player(2), useShelters:true);            
+            CompareStrategyVsAllKnownStrategies(Strategies.HorseTraderSoothsayerMinionGreatHall.Player(1), useShelters: true);            
             
             stopwatch.Stop();
 
@@ -71,35 +71,69 @@ namespace Program
         static int totalGameCount = 0;
 
         public static double ComparePlayers(
+            PlayerAction player1,
+            PlayerAction player2,
+            bool useShelters = false,
+            bool useColonyAndPlatinum = false,
+            bool firstPlayerAdvantage = false,
+            IEnumerable<CardCountPair>[] startingDeckPerPlayer = null,
+            bool shouldParallel = true,
+            bool showVerboseScore = true,
+            bool showCompactScore = false,
+            bool showDistribution = false,
+            bool showPlayer2Wins = false,
+            int numberOfGames = 1000,
+            int logGameCount = 100,
+            CreateGameLog createGameLog = null)
+        {            
+
+            GameConfigBuilder builder = new GameConfigBuilder();
+            PlayerAction.SetKingdomCards(builder, player1, player2);
+
+            builder.useColonyAndPlatinum = useColonyAndPlatinum;
+            builder.useShelters = useShelters;
+
+            if (startingDeckPerPlayer != null)
+                builder.SetStartingDeckPerPlayer(startingDeckPerPlayer);
+
+            var gameConfig = builder.ToGameConfig();
+
+            return ComparePlayers(
+                player1,
+                player2,
+                gameConfig,
+                firstPlayerAdvantage: firstPlayerAdvantage,
+                shouldParallel: shouldParallel,
+                showVerboseScore: showVerboseScore,
+                showCompactScore: showCompactScore,
+                showDistribution: showDistribution,
+                showPlayer2Wins: showPlayer2Wins,
+                numberOfGames: numberOfGames,
+                logGameCount: logGameCount,
+                createGameLog: createGameLog);
+        }
+
+        public static double ComparePlayers(
             PlayerAction player1, 
             PlayerAction player2, 
-            bool useShelters = false,
-            bool shouldParallel = true,
-            GameConfig gameConfigToUse = null,
+            GameConfig gameConfig,
             bool firstPlayerAdvantage = false, 
+            bool shouldParallel = true,
             bool showVerboseScore = true,
             bool showCompactScore = false, 
             bool showDistribution = false,            
             bool showPlayer2Wins = false,
             int numberOfGames = 1000, 
             int logGameCount = 100,            
-            CreateGameLog createGameLog = null,
-            IEnumerable<CardCountPair>[] startingDeckPerPlayer = null)
+            CreateGameLog createGameLog = null)
         {            
             PlayerAction[] players = new PlayerAction[] { player1, player2 };
             int[] winnerCount = new int[2];
             int tieCount = 0;
 
-            var swappedStartingDeckPerPlayer = SwapTwoElementArray(startingDeckPerPlayer);
+            GameConfig swappedPlayersConfig = GameConfigBuilder.CreateFromWithPlayPositionsSwapped(gameConfig);            
 
-            var countbyBucket = new CountByBucket();
-
-            Card[] supplyPiles = PlayerAction.GetKingdomCards(player1, player2);
-
-            var gameConfig = gameConfigToUse != null ? gameConfigToUse : new GameConfig(
-                        useShelters,
-                        useColonyAndPlatinum: false,
-                        supplyPiles: supplyPiles);
+            var countbyBucket = new CountByBucket();                        
 
             Action<int> loopBody = delegate(int gameCount)                    
             {
@@ -113,19 +147,15 @@ namespace Program
                     PlayerAction startPlayer = !swappedOrder ? player1 : player2;
                     PlayerAction otherPlayer = !swappedOrder ? player2 : player1;
 
-                    IEnumerable<CardCountPair>[] startingDecksToUse = 
-                        startingDeckPerPlayer == null ? null :
-                        swappedOrder ? swappedStartingDeckPerPlayer :
-                        startingDeckPerPlayer;
+                    var gameConfigToUse = swappedOrder ? swappedPlayersConfig : gameConfig;                    
 
                     Random random = new Random(gameCount);                    
 
                     GameState gameState = new GameState(
                         gameLog,
                         new PlayerAction[] { startPlayer, otherPlayer },
-                        gameConfig,
-                        random,
-                        startingDeckPerPlayer: startingDecksToUse);
+                        gameConfigToUse,
+                        random);
 
                     gameState.PlayGameToEnd();
 

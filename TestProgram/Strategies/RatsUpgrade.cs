@@ -21,7 +21,8 @@ namespace Program
                             purchaseOrder: PurchaseOrder(),
                             treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
                             actionOrder: ActionOrder(),
-                            trashOrder: TrashOrder());
+                            trashOrder: TrashOrder(),
+                            chooseDefaultActionOnNone:false);
             }
 
             static ICardPicker PurchaseOrder()

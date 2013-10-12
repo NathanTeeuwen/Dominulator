@@ -9,10 +9,10 @@ namespace Dominion
 {
     public static class GameSets
     {        
-        public static readonly GameConfig FirstGame = new GameConfig( new Cellar(), new Market(), new Militia(), new Mine(), new Moat(), new Remodel(), new Smithy(), new Village(), new WoodCutter(), new Workshop());
-        public static readonly GameConfig BigMoney = new GameConfig(new Adventurer(), new Bureaucrat(), new Chancellor(), new Chapel(), new Feast(), new Laboratory(), new Market(), new Mine(), new Moneylender(), new ThroneRoom());
-        public static readonly GameConfig Interaction = new GameConfig(new Bureaucrat(), new Chancellor(), new CouncilRoom(), new Festival(), new Library(), new Militia(), new Moat(), new Spy(), new Thief(), new Village());
-        public static readonly GameConfig SizeDistortion = new GameConfig(new Cellar(), new Chapel(), new Feast(), new Gardens(), new Laboratory(), new Thief(), new Village(), new Witch(), new WoodCutter(), new Workshop());
-        public static readonly GameConfig VillageSquare = new GameConfig(new Bureaucrat(), new Cellar(), new Festival(), new Library(), new Market(), new Remodel(), new Smithy(), new ThroneRoom(), new Village(), new WoodCutter());
+        public static readonly GameConfig FirstGame = GameConfigBuilder.Create( Card.Type<Cellar>(), Card.Type<Market>(), Card.Type<Militia>(), Card.Type<Mine>(), Card.Type<Moat>(), Card.Type<Remodel>(), Card.Type<Smithy>(), Card.Type<Village>(), Card.Type<WoodCutter>(), Card.Type<Workshop>());
+        public static readonly GameConfig BigMoney = GameConfigBuilder.Create(Card.Type<Adventurer>(), Card.Type<Bureaucrat>(), Card.Type<Chancellor>(), Card.Type<Chapel>(), Card.Type<Feast>(), Card.Type<Laboratory>(), Card.Type<Market>(), Card.Type<Mine>(), Card.Type<Moneylender>(), Card.Type<ThroneRoom>());
+        public static readonly GameConfig Interaction = GameConfigBuilder.Create(Card.Type<Bureaucrat>(), Card.Type<Chancellor>(), Card.Type<CouncilRoom>(), Card.Type<Festival>(), Card.Type<Library>(), Card.Type<Militia>(), Card.Type<Moat>(), Card.Type<Spy>(), Card.Type<Thief>(), Card.Type<Village>());
+        public static readonly GameConfig SizeDistortion = GameConfigBuilder.Create(Card.Type<Cellar>(), Card.Type<Chapel>(), Card.Type<Feast>(), Card.Type<Gardens>(), Card.Type<Laboratory>(), Card.Type<Thief>(), Card.Type<Village>(), Card.Type<Witch>(), Card.Type<WoodCutter>(), Card.Type<Workshop>());
+        public static readonly GameConfig VillageSquare = GameConfigBuilder.Create(Card.Type<Bureaucrat>(), Card.Type<Cellar>(), Card.Type<Festival>(), Card.Type<Library>(), Card.Type<Market>(), Card.Type<Remodel>(), Card.Type<Smithy>(), Card.Type<ThroneRoom>(), Card.Type<Village>(), Card.Type<WoodCutter>());
     }
 }

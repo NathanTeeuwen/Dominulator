@@ -102,6 +102,7 @@
     <Compile Include="GameLogs\IndentedTextWriter.cs" />
     <Compile Include="GameSets.cs" />
     <Compile Include="GameState.cs" />
+    <Compile Include="SimpleDefinitions\StartingCardSplit.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Collections\ListOfCards.cs" />

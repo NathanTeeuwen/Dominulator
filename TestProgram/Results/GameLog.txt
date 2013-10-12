@@ -22,10 +22,10 @@ RemakeSoothsayer reshuffled
 RemakeSoothsayer Drew Copper into hand.
 RemakeSoothsayer Drew Copper into hand.
 RemakeSoothsayer Drew Copper into hand.
-RemakeSoothsayer Drew Estate into hand.
 RemakeSoothsayer Drew Copper into hand.
+RemakeSoothsayer Drew Estate into hand.
 HorseTraderSoothsayerMinionGreatHall reshuffled
-HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
+HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
 HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
 HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
 HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
@@ -50,31 +50,33 @@ With hand: Copper,Copper,Copper,Copper,Estate,
   RemakeSoothsayer Discarded Estate.
   RemakeSoothsayer Drew Copper into hand.
   RemakeSoothsayer Drew Copper into hand.
+  RemakeSoothsayer Drew Estate into hand.
+  RemakeSoothsayer Drew Estate into hand.
   RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Estate into hand.
-  RemakeSoothsayer Drew Estate into hand.
   RemakeSoothsayer ends turn with deck: Copper(7), Estate(3), Remake(1), 
 
 HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
+With hand: Copper,Copper,Copper,Copper,Estate,
   HorseTraderSoothsayerMinionGreatHall Played Copper.
     +1 Coin = 1 all together.
   HorseTraderSoothsayerMinionGreatHall Played Copper.
     +1 Coin = 2 all together.
   HorseTraderSoothsayerMinionGreatHall Played Copper.
     +1 Coin = 3 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Silver.
+  HorseTraderSoothsayerMinionGreatHall Played Copper.
+    +1 Coin = 4 all together.
+  HorseTraderSoothsayerMinionGreatHall bought HorseTraders.
   HorseTraderSoothsayerMinionGreatHall Discarded Copper.
   HorseTraderSoothsayerMinionGreatHall Discarded Copper.
   HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Estate.
+  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
   HorseTraderSoothsayerMinionGreatHall Discarded Estate.
   HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
   HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
   HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
   HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
+  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Copper(7), Estate(3), HorseTraders(1), 
 
 ROUND 2
 -------------
@@ -101,20 +103,18 @@ With hand: Copper,Copper,Copper,Estate,Estate,
   RemakeSoothsayer ends turn with deck: Copper(7), Estate(3), Remake(1), Silver(1), 
 
 HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
+With hand: Copper,Copper,Copper,Estate,Estate,
   HorseTraderSoothsayerMinionGreatHall Played Copper.
     +1 Coin = 1 all together.
   HorseTraderSoothsayerMinionGreatHall Played Copper.
     +1 Coin = 2 all together.
   HorseTraderSoothsayerMinionGreatHall Played Copper.
     +1 Coin = 3 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 4 all together.
-  HorseTraderSoothsayerMinionGreatHall bought HorseTraders.
+  HorseTraderSoothsayerMinionGreatHall bought Silver.
   HorseTraderSoothsayerMinionGreatHall Discarded Copper.
   HorseTraderSoothsayerMinionGreatHall Discarded Copper.
   HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
+  HorseTraderSoothsayerMinionGreatHall Discarded Estate.
   HorseTraderSoothsayerMinionGreatHall Discarded Estate.
   HorseTraderSoothsayerMinionGreatHall reshuffled
   HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
@@ -1209,7 +1209,7 @@ RemakeSoothsayer GainSequence is:
   Gold, Duchy, Gold, Duchy, Province, 
   Duchy, Gold, Estate, 
 HorseTraderSoothsayerMinionGreatHall GainSequence is:
-  Silver, HorseTraders, Soothsayer, Minion, Minion, 
+  HorseTraders, Silver, Soothsayer, Minion, Minion, 
   Curse, Gold, Great Hall, Curse, Province, 
   Great Hall, Gold, Great Hall, Curse, Great Hall, 
   Curse, Gold, Minion, Curse, Gold, 

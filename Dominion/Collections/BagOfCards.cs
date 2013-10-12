@@ -9,7 +9,6 @@ namespace Dominion
     public class BagOfCards
         : CollectionCards
     {
-
         public BagOfCards(CardGameSubset gameSubset)
             : this(gameSubset, null)
         {

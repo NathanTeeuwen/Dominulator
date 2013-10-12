@@ -21,6 +21,8 @@ namespace Dominion
     public delegate bool GameStatePredicate(GameState gameState);
     public delegate int GameStateIntValue(GameState gameState);
 
+    public delegate IEnumerable<CardCountPair> MapPlayerGameConfigToCardSet(int playerPosition, GameConfig gameConfig);
+
     static class Delegates
     {
         public static bool AlwaysTrueCardPredicate(Card card)

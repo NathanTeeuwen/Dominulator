@@ -23,7 +23,7 @@ namespace Program
         protected static CardCountPair CardWithCount<T>(int count)
             where T : Card, new()
         {
-            return new CardCountPair(new T(), count);
+            return new CardCountPair(Card.Type<T>(), count);
         }
     }
 }
