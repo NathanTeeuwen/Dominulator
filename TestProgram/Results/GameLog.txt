@@ -1,1218 +1,896 @@
-RemakeSoothsayer gained Copper.
-RemakeSoothsayer gained Copper.
-RemakeSoothsayer gained Copper.
-RemakeSoothsayer gained Copper.
-RemakeSoothsayer gained Copper.
-RemakeSoothsayer gained Copper.
-RemakeSoothsayer gained Copper.
-RemakeSoothsayer gained Estate.
-RemakeSoothsayer gained Estate.
-RemakeSoothsayer gained Estate.
-HorseTraderSoothsayerMinionGreatHall gained Copper.
-HorseTraderSoothsayerMinionGreatHall gained Copper.
-HorseTraderSoothsayerMinionGreatHall gained Copper.
-HorseTraderSoothsayerMinionGreatHall gained Copper.
-HorseTraderSoothsayerMinionGreatHall gained Copper.
-HorseTraderSoothsayerMinionGreatHall gained Copper.
-HorseTraderSoothsayerMinionGreatHall gained Copper.
-HorseTraderSoothsayerMinionGreatHall gained Estate.
-HorseTraderSoothsayerMinionGreatHall gained Estate.
-HorseTraderSoothsayerMinionGreatHall gained Estate.
-RemakeSoothsayer reshuffled
-RemakeSoothsayer Drew Copper into hand.
-RemakeSoothsayer Drew Copper into hand.
-RemakeSoothsayer Drew Copper into hand.
-RemakeSoothsayer Drew Copper into hand.
-RemakeSoothsayer Drew Estate into hand.
-HorseTraderSoothsayerMinionGreatHall reshuffled
-HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
+BigMoneyWithCard<Envoy> gained Copper.
+BigMoneyWithCard<Envoy> gained Copper.
+BigMoneyWithCard<Envoy> gained Copper.
+BigMoneyWithCard<Envoy> gained Copper.
+BigMoneyWithCard<Envoy> gained Copper.
+BigMoneyWithCard<Envoy> gained Copper.
+BigMoneyWithCard<Envoy> gained Copper.
+BigMoneyWithCard<Envoy> gained Estate.
+BigMoneyWithCard<Envoy> gained Estate.
+BigMoneyWithCard<Envoy> gained Estate.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoneyWithCard<Envoy> reshuffled
+BigMoneyWithCard<Envoy> Drew Copper into hand.
+BigMoneyWithCard<Envoy> Drew Copper into hand.
+BigMoneyWithCard<Envoy> Drew Copper into hand.
+BigMoneyWithCard<Envoy> Drew Estate into hand.
+BigMoneyWithCard<Envoy> Drew Copper into hand.
+BigMoney reshuffled
+BigMoney Drew Estate into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Estate into hand.
 ROUND 1
 -------------
-RemakeSoothsayer begins turn
+BigMoneyWithCard<Envoy> begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  RemakeSoothsayer Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 1 all together.
-  RemakeSoothsayer Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 2 all together.
-  RemakeSoothsayer Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 3 all together.
-  RemakeSoothsayer Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 4 all together.
-  RemakeSoothsayer bought Remake.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Estate.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Estate into hand.
-  RemakeSoothsayer Drew Estate into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer ends turn with deck: Copper(7), Estate(3), Remake(1), 
+  BigMoneyWithCard<Envoy> bought Envoy.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Estate into hand.
+  BigMoneyWithCard<Envoy> Drew Estate into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), 
 
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 4 all together.
-  HorseTraderSoothsayerMinionGreatHall bought HorseTraders.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Copper(7), Estate(3), HorseTraders(1), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-RemakeSoothsayer begins turn
+BigMoneyWithCard<Envoy> begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  RemakeSoothsayer Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 1 all together.
-  RemakeSoothsayer Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 2 all together.
-  RemakeSoothsayer Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 3 all together.
-  RemakeSoothsayer bought Silver.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Estate.
-  RemakeSoothsayer Discarded Estate.
-  RemakeSoothsayer reshuffled
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Silver into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Estate into hand.
-  RemakeSoothsayer ends turn with deck: Copper(7), Estate(3), Remake(1), Silver(1), 
+  BigMoneyWithCard<Envoy> bought Silver.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> reshuffled
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Estate into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Silver(1), 
 
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Silver.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-  HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-  HorseTraderSoothsayerMinionGreatHall reshuffled
-  HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Silver into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Copper(7), Estate(3), HorseTraders(1), Silver(1), 
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-RemakeSoothsayer begins turn
+BigMoneyWithCard<Envoy> begins turn
 With hand: Copper,Copper,Copper,Estate,Silver,
-  RemakeSoothsayer Played Silver.
+  BigMoneyWithCard<Envoy> Played Silver.
     +2 Coin = 2 all together.
-  RemakeSoothsayer Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 3 all together.
-  RemakeSoothsayer Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 4 all together.
-  RemakeSoothsayer Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 5 all together.
-  RemakeSoothsayer bought Soothsayer.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Silver.
-  RemakeSoothsayer Discarded Estate.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Remake into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Estate into hand.
-  RemakeSoothsayer ends turn with deck: Copper(7), Estate(3), Remake(1), Silver(1), Soothsayer(1), 
+  BigMoneyWithCard<Envoy> bought Silver.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Envoy into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Estate into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Silver(2), 
 
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  HorseTraderSoothsayerMinionGreatHall Played Silver.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 3 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 4 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Soothsayer.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Silver.
-  HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-  HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew HorseTraders into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Copper(7), Estate(3), HorseTraders(1), Silver(1), Soothsayer(1), 
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
 ROUND 4
 -------------
-RemakeSoothsayer begins turn
-With hand: Copper,Copper,Copper,Estate,Remake,
-  RemakeSoothsayer Played Remake.
-    RemakeSoothsayer trashed Estate.
-    RemakeSoothsayer gained Silver.
-    RemakeSoothsayer trashed Copper.
-  RemakeSoothsayer Played Copper.
+BigMoneyWithCard<Envoy> begins turn
+With hand: Copper,Copper,Copper,Envoy,Estate,
+  BigMoneyWithCard<Envoy> Played Envoy.
+    BigMoneyWithCard<Envoy> Revealed Copper.
+    BigMoneyWithCard<Envoy> Revealed Estate.
+    BigMoneyWithCard<Envoy> reshuffled
+    BigMoneyWithCard<Envoy> Revealed Copper.
+    BigMoneyWithCard<Envoy> Revealed Estate.
+    BigMoneyWithCard<Envoy> Revealed Copper.
+    BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 1 all together.
-  RemakeSoothsayer Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 2 all together.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Remake.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Estate into hand.
-  RemakeSoothsayer reshuffled
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Silver into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer ends turn with deck: Copper(6), Estate(2), Remake(1), Silver(2), Soothsayer(1), 
-
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Copper,Estate,Estate,HorseTraders,
-  HorseTraderSoothsayerMinionGreatHall Played HorseTraders.
-    +1 Buys = 2 all together.
-    +3 Coin = 3 all together.
-    HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-    HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 4 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 5 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Minion.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded HorseTraders.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall reshuffled
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Copper(7), Estate(3), HorseTraders(1), Minion(1), Silver(1), Soothsayer(1), 
+  BigMoneyWithCard<Envoy> bought Silver.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Envoy.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> reshuffled
+  BigMoneyWithCard<Envoy> Drew Envoy into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Silver(3), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
 ROUND 5
 -------------
-RemakeSoothsayer begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  RemakeSoothsayer Played Silver.
+BigMoneyWithCard<Envoy> begins turn
+With hand: Copper,Copper,Envoy,Silver,Silver,
+  BigMoneyWithCard<Envoy> Played Envoy.
+    BigMoneyWithCard<Envoy> Revealed Copper.
+    BigMoneyWithCard<Envoy> Revealed Copper.
+    BigMoneyWithCard<Envoy> Revealed Estate.
+    BigMoneyWithCard<Envoy> Revealed Estate.
+    BigMoneyWithCard<Envoy> Revealed Copper.
+    BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Played Silver.
     +2 Coin = 2 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 3 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 4 all together.
-  RemakeSoothsayer Played Copper.
+  BigMoneyWithCard<Envoy> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 5 all together.
-  RemakeSoothsayer bought Soothsayer.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Silver.
-  RemakeSoothsayer Discarded Estate.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Remake into hand.
-  RemakeSoothsayer Drew Soothsayer into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer ends turn with deck: Copper(6), Estate(2), Remake(1), Silver(2), Soothsayer(2), 
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithCard<Envoy> bought Gold.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Envoy.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Estate into hand.
+  BigMoneyWithCard<Envoy> reshuffled
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(1), Silver(3), 
 
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Copper,Copper,Copper,Copper,
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 1 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 2 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 3 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 4 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Minion.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Drew Minion into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Soothsayer into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Copper(7), Estate(3), HorseTraders(1), Minion(2), Silver(1), Soothsayer(1), 
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(2), 
 
 ROUND 6
 -------------
-RemakeSoothsayer begins turn
-With hand: Copper,Copper,Copper,Remake,Soothsayer,
-  RemakeSoothsayer Played Soothsayer.
-    RemakeSoothsayer gained Gold.
-    HorseTraderSoothsayerMinionGreatHall gained Curse.
-    HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 1 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 2 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 3 all together.
-  RemakeSoothsayer bought Great Hall.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Soothsayer.
-  RemakeSoothsayer Discarded Remake.
-  RemakeSoothsayer Drew Estate into hand.
-  RemakeSoothsayer Drew Silver into hand.
-  RemakeSoothsayer reshuffled
-  RemakeSoothsayer Drew Silver into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer ends turn with deck: Copper(6), Estate(2), Gold(1), Great Hall(1), Remake(1), Silver(2), Soothsayer(2), 
-
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Estate,Estate,Estate,Minion,Soothsayer,
-  HorseTraderSoothsayerMinionGreatHall Played Minion.
-    +1 Actions = 1 all together.
+BigMoneyWithCard<Envoy> begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoneyWithCard<Envoy> Played Silver.
     +2 Coin = 2 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Soothsayer.
-    HorseTraderSoothsayerMinionGreatHall gained Gold.
-    RemakeSoothsayer gained Curse.
-    RemakeSoothsayer Drew Great Hall into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 3 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Minion.
-  HorseTraderSoothsayerMinionGreatHall Discarded Soothsayer.
-  HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-  HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-  HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-  HorseTraderSoothsayerMinionGreatHall Drew HorseTraders into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Silver into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall reshuffled
-  HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Minion into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Copper(7), Curse(1), Estate(3), Gold(1), Great Hall(1), HorseTraders(1), Minion(2), Silver(1), Soothsayer(1), 
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<Envoy> bought Silver.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Estate into hand.
+  BigMoneyWithCard<Envoy> Drew Envoy into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(1), Silver(4), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(2), 
 
 ROUND 7
 -------------
-RemakeSoothsayer begins turn
-With hand: Copper,Copper,Estate,Great Hall,Silver,Silver,
-  RemakeSoothsayer Played Great Hall.
-    +1 Actions = 1 all together.
-    RemakeSoothsayer Drew Soothsayer into hand.
-  RemakeSoothsayer Played Soothsayer.
-    RemakeSoothsayer gained Gold.
-    HorseTraderSoothsayerMinionGreatHall set aside HorseTraders for next turn
-    HorseTraderSoothsayerMinionGreatHall gained Curse.
-    HorseTraderSoothsayerMinionGreatHall Drew Gold into hand.
-  RemakeSoothsayer Played Silver.
+BigMoneyWithCard<Envoy> begins turn
+With hand: Copper,Copper,Envoy,Estate,Silver,
+  BigMoneyWithCard<Envoy> Played Envoy.
+    BigMoneyWithCard<Envoy> Revealed Silver.
+    BigMoneyWithCard<Envoy> Revealed Copper.
+    BigMoneyWithCard<Envoy> Revealed Gold.
+    BigMoneyWithCard<Envoy> Revealed Copper.
+    BigMoneyWithCard<Envoy> Revealed Estate.
+    BigMoneyWithCard<Envoy> Discarded Gold.
+  BigMoneyWithCard<Envoy> Played Silver.
     +2 Coin = 2 all together.
-  RemakeSoothsayer Played Silver.
+  BigMoneyWithCard<Envoy> Played Silver.
     +2 Coin = 4 all together.
-  RemakeSoothsayer Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 5 all together.
-  RemakeSoothsayer Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 6 all together.
-  RemakeSoothsayer bought Gold.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Silver.
-  RemakeSoothsayer Discarded Silver.
-  RemakeSoothsayer Discarded Great Hall.
-  RemakeSoothsayer Discarded Soothsayer.
-  RemakeSoothsayer Discarded Estate.
-  RemakeSoothsayer Drew Remake into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer ends turn with deck: Copper(6), Curse(1), Estate(2), Gold(3), Great Hall(1), Remake(1), Silver(2), Soothsayer(2), 
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithCard<Envoy> bought Gold.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Envoy.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> reshuffled
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(2), Silver(4), 
 
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Estate,Gold,Minion,Silver,
-  HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  HorseTraderSoothsayerMinionGreatHall returned HorseTraders to hand
-  HorseTraderSoothsayerMinionGreatHall Played Minion.
-    +1 Actions = 1 all together.
-    +2 Coin = 2 all together.
-  HorseTraderSoothsayerMinionGreatHall Played HorseTraders.
-    +1 Buys = 2 all together.
-    +3 Coin = 5 all together.
-    HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-    HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-  HorseTraderSoothsayerMinionGreatHall Played Gold.
-    +3 Coin = 8 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Silver.
-    +2 Coin = 10 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 11 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Province.
-  HorseTraderSoothsayerMinionGreatHall bought Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Silver.
-  HorseTraderSoothsayerMinionGreatHall Discarded Gold.
-  HorseTraderSoothsayerMinionGreatHall Discarded HorseTraders.
-  HorseTraderSoothsayerMinionGreatHall Discarded Minion.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Soothsayer into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(1), Great Hall(2), HorseTraders(1), Minion(2), Province(1), Silver(1), Soothsayer(1), 
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(3), 
 
 ROUND 8
 -------------
-RemakeSoothsayer begins turn
-With hand: Copper,Copper,Copper,Gold,Remake,
-  RemakeSoothsayer Played Remake.
-    RemakeSoothsayer trashed Copper.
-    RemakeSoothsayer trashed Copper.
-  RemakeSoothsayer Played Gold.
-    +3 Coin = 3 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 4 all together.
-  RemakeSoothsayer bought Great Hall.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Remake.
-  RemakeSoothsayer Drew Soothsayer into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Estate into hand.
-  RemakeSoothsayer reshuffled
-  RemakeSoothsayer Drew Curse into hand.
-  RemakeSoothsayer Drew Remake into hand.
-  RemakeSoothsayer ends turn with deck: Copper(4), Curse(1), Estate(2), Gold(3), Great Hall(2), Remake(1), Silver(2), Soothsayer(2), 
+BigMoneyWithCard<Envoy> begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoneyWithCard<Envoy> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<Envoy> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<Envoy> bought Gold.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Drew Gold into hand.
+  BigMoneyWithCard<Envoy> Drew Estate into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(3), Silver(4), 
 
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Copper,Copper,Curse,Soothsayer,
-  HorseTraderSoothsayerMinionGreatHall Played Soothsayer.
-    HorseTraderSoothsayerMinionGreatHall gained Gold.
-    RemakeSoothsayer gained Curse.
-    RemakeSoothsayer Drew Gold into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 1 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 2 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 3 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Soothsayer.
-  HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Minion into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Great Hall into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(2), Great Hall(3), HorseTraders(1), Minion(2), Province(1), Silver(1), Soothsayer(1), 
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(3), 
 
 ROUND 9
 -------------
-RemakeSoothsayer begins turn
-With hand: Copper,Curse,Estate,Gold,Remake,Soothsayer,
-  RemakeSoothsayer Played Soothsayer.
-    RemakeSoothsayer gained Gold.
-    HorseTraderSoothsayerMinionGreatHall gained Curse.
-    HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  RemakeSoothsayer Played Gold.
+BigMoneyWithCard<Envoy> begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoneyWithCard<Envoy> Played Gold.
     +3 Coin = 3 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 4 all together.
-  RemakeSoothsayer bought Great Hall.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Soothsayer.
-  RemakeSoothsayer Discarded Curse.
-  RemakeSoothsayer Discarded Estate.
-  RemakeSoothsayer Discarded Remake.
-  RemakeSoothsayer Drew Silver into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Drew Estate into hand.
-  RemakeSoothsayer Drew Silver into hand.
-  RemakeSoothsayer Drew Great Hall into hand.
-  RemakeSoothsayer ends turn with deck: Copper(4), Curse(2), Estate(2), Gold(4), Great Hall(3), Remake(1), Silver(2), Soothsayer(2), 
+  BigMoneyWithCard<Envoy> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<Envoy> bought Gold.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Gold.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Drew Gold into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> Drew Envoy into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(4), Silver(4), 
 
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Copper,Copper,Estate,Great Hall,Minion,
-  HorseTraderSoothsayerMinionGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall reshuffled
-    HorseTraderSoothsayerMinionGreatHall Drew Great Hall into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Minion.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-    HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-    HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-    HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-    HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-    HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Silver into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-    RemakeSoothsayer Discarded Silver.
-    RemakeSoothsayer Discarded Silver.
-    RemakeSoothsayer Discarded Gold.
-    RemakeSoothsayer Discarded Estate.
-    RemakeSoothsayer Discarded Great Hall.
-    RemakeSoothsayer Drew Gold into hand.
-    RemakeSoothsayer Drew Soothsayer into hand.
-    RemakeSoothsayer Drew Copper into hand.
-    RemakeSoothsayer Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Silver.
-    +2 Coin = 2 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 3 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Silver.
-  HorseTraderSoothsayerMinionGreatHall Discarded Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Minion.
-  HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew HorseTraders into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Gold into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Gold into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(2), Great Hall(4), HorseTraders(1), Minion(2), Province(1), Silver(1), Soothsayer(1), 
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(3), 
 
 ROUND 10
 -------------
-RemakeSoothsayer begins turn
-With hand: Copper,Copper,Gold,Soothsayer,
-  RemakeSoothsayer Played Soothsayer.
-    RemakeSoothsayer gained Gold.
-    HorseTraderSoothsayerMinionGreatHall set aside HorseTraders for next turn
-    HorseTraderSoothsayerMinionGreatHall gained Curse.
-    HorseTraderSoothsayerMinionGreatHall Drew Soothsayer into hand.
-  RemakeSoothsayer Played Gold.
+BigMoneyWithCard<Envoy> begins turn
+With hand: Copper,Copper,Envoy,Gold,Silver,
+  BigMoneyWithCard<Envoy> Played Envoy.
+    BigMoneyWithCard<Envoy> Revealed Estate.
+    BigMoneyWithCard<Envoy> Revealed Estate.
+    BigMoneyWithCard<Envoy> reshuffled
+    BigMoneyWithCard<Envoy> Revealed Gold.
+    BigMoneyWithCard<Envoy> Revealed Gold.
+    BigMoneyWithCard<Envoy> Revealed Copper.
+    BigMoneyWithCard<Envoy> Discarded Gold.
+  BigMoneyWithCard<Envoy> Played Gold.
     +3 Coin = 3 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 4 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 5 all together.
-  RemakeSoothsayer bought Great Hall.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Soothsayer.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Great Hall into hand.
-  RemakeSoothsayer reshuffled
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Drew Silver into hand.
-  RemakeSoothsayer Drew Great Hall into hand.
-  RemakeSoothsayer ends turn with deck: Copper(4), Curse(2), Estate(2), Gold(5), Great Hall(4), Remake(1), Silver(2), Soothsayer(2), 
-
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Estate,Gold,Gold,Soothsayer,
-  HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall returned HorseTraders to hand
-  HorseTraderSoothsayerMinionGreatHall Played Soothsayer.
-    HorseTraderSoothsayerMinionGreatHall gained Gold.
-    RemakeSoothsayer gained Curse.
-    RemakeSoothsayer Drew Soothsayer into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Gold.
-    +3 Coin = 3 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Gold.
+  BigMoneyWithCard<Envoy> Played Gold.
     +3 Coin = 6 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+  BigMoneyWithCard<Envoy> Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 11 all together.
+  BigMoneyWithCard<Envoy> bought Province.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Gold.
+  BigMoneyWithCard<Envoy> Discarded Gold.
+  BigMoneyWithCard<Envoy> Discarded Envoy.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Estate into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(4), Province(1), Silver(4), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Copper.
     +1 Coin = 7 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Minion.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Gold.
-  HorseTraderSoothsayerMinionGreatHall Discarded Gold.
-  HorseTraderSoothsayerMinionGreatHall Discarded Soothsayer.
-  HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-  HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-  HorseTraderSoothsayerMinionGreatHall Discarded HorseTraders.
-  HorseTraderSoothsayerMinionGreatHall Drew Minion into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Province into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Great Hall into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Copper(7), Curse(4), Estate(3), Gold(3), Great Hall(4), HorseTraders(1), Minion(3), Province(1), Silver(1), Soothsayer(1), 
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(2), Silver(3), 
 
 ROUND 11
 -------------
-RemakeSoothsayer begins turn
-With hand: Copper,Gold,Great Hall,Great Hall,Silver,Soothsayer,
-  RemakeSoothsayer Played Great Hall.
-    +1 Actions = 1 all together.
-    RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Played Great Hall.
-    +1 Actions = 1 all together.
-    RemakeSoothsayer Drew Estate into hand.
-  RemakeSoothsayer Played Soothsayer.
-    RemakeSoothsayer gained Gold.
-    HorseTraderSoothsayerMinionGreatHall gained Curse.
-    HorseTraderSoothsayerMinionGreatHall reshuffled
-    HorseTraderSoothsayerMinionGreatHall Drew Silver into hand.
-  RemakeSoothsayer Played Gold.
-    +3 Coin = 3 all together.
-  RemakeSoothsayer Played Silver.
-    +2 Coin = 5 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 6 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 7 all together.
-  RemakeSoothsayer bought Gold.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Silver.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Great Hall.
-  RemakeSoothsayer Discarded Great Hall.
-  RemakeSoothsayer Discarded Soothsayer.
-  RemakeSoothsayer Discarded Estate.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Drew Great Hall into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Drew Soothsayer into hand.
-  RemakeSoothsayer Drew Great Hall into hand.
-  RemakeSoothsayer ends turn with deck: Copper(4), Curse(3), Estate(2), Gold(7), Great Hall(4), Remake(1), Silver(2), Soothsayer(2), 
+BigMoneyWithCard<Envoy> begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoneyWithCard<Envoy> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<Envoy> bought Silver.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Drew Gold into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> reshuffled
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(4), Province(1), Silver(5), 
 
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Estate,Great Hall,Minion,Province,Silver,
-  HorseTraderSoothsayerMinionGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Minion.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-    HorseTraderSoothsayerMinionGreatHall Discarded Silver.
-    HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-    HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-    HorseTraderSoothsayerMinionGreatHall Discarded Province.
-    HorseTraderSoothsayerMinionGreatHall Drew Great Hall into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-    RemakeSoothsayer Discarded Gold.
-    RemakeSoothsayer Discarded Gold.
-    RemakeSoothsayer Discarded Great Hall.
-    RemakeSoothsayer Discarded Great Hall.
-    RemakeSoothsayer Discarded Soothsayer.
-    RemakeSoothsayer Drew Copper into hand.
-    RemakeSoothsayer Drew Gold into hand.
-    RemakeSoothsayer Drew Remake into hand.
-    RemakeSoothsayer Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Drew Soothsayer into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Soothsayer.
-    HorseTraderSoothsayerMinionGreatHall gained Gold.
-    RemakeSoothsayer gained Curse.
-    RemakeSoothsayer Drew Silver into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 1 all together.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Minion.
-  HorseTraderSoothsayerMinionGreatHall Discarded Soothsayer.
-  HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-  HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Gold into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Copper(7), Curse(5), Estate(3), Gold(4), Great Hall(4), HorseTraders(1), Minion(3), Province(1), Silver(1), Soothsayer(1), 
+BigMoney begins turn
+With hand: Copper,Gold,Province,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Province.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(3), Silver(3), 
 
 ROUND 12
 -------------
-RemakeSoothsayer begins turn
-With hand: Copper,Curse,Gold,Remake,Silver,
-  RemakeSoothsayer Played Remake.
-    RemakeSoothsayer trashed Curse.
-    RemakeSoothsayer trashed Copper.
-  RemakeSoothsayer Played Gold.
+BigMoneyWithCard<Envoy> begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoneyWithCard<Envoy> Played Gold.
     +3 Coin = 3 all together.
-  RemakeSoothsayer Played Silver.
+  BigMoneyWithCard<Envoy> Played Silver.
     +2 Coin = 5 all together.
-  RemakeSoothsayer bought Silver.
-  RemakeSoothsayer Discarded Silver.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Remake.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Drew Curse into hand.
-  RemakeSoothsayer Drew Estate into hand.
-  RemakeSoothsayer reshuffled
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer ends turn with deck: Copper(3), Curse(3), Estate(2), Gold(7), Great Hall(4), Remake(1), Silver(3), Soothsayer(2), 
+  BigMoneyWithCard<Envoy> Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyWithCard<Envoy> bought Province.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Gold.
+  BigMoneyWithCard<Envoy> Drew Gold into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Envoy into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(4), Province(2), Silver(5), 
 
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Copper,Copper,Curse,Gold,
-  HorseTraderSoothsayerMinionGreatHall Played Gold.
-    +3 Coin = 3 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 6 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Butcher.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Gold.
-  HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-  HorseTraderSoothsayerMinionGreatHall Drew Gold into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Minion into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Great Hall into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Gold into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Butcher(1), Copper(7), Curse(5), Estate(3), Gold(4), Great Hall(4), HorseTraders(1), Minion(3), Province(1), Silver(1), Soothsayer(1), 
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(3), Silver(3), 
 
 ROUND 13
 -------------
-RemakeSoothsayer begins turn
-With hand: Copper,Copper,Curse,Estate,Gold,
-  RemakeSoothsayer Played Gold.
+BigMoneyWithCard<Envoy> begins turn
+With hand: Copper,Copper,Envoy,Gold,Silver,
+  BigMoneyWithCard<Envoy> Played Envoy.
+    BigMoneyWithCard<Envoy> Revealed Estate.
+    BigMoneyWithCard<Envoy> Revealed Estate.
+    BigMoneyWithCard<Envoy> Revealed Silver.
+    BigMoneyWithCard<Envoy> Revealed Estate.
+    BigMoneyWithCard<Envoy> Revealed Province.
+    BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Played Gold.
     +3 Coin = 3 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 4 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 5 all together.
-  RemakeSoothsayer bought Silver.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Curse.
-  RemakeSoothsayer Discarded Estate.
-  RemakeSoothsayer Drew Soothsayer into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Drew Great Hall into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Drew Silver into hand.
-  RemakeSoothsayer ends turn with deck: Copper(3), Curse(3), Estate(2), Gold(7), Great Hall(4), Remake(1), Silver(4), Soothsayer(2), 
+  BigMoneyWithCard<Envoy> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<Envoy> bought Duchy.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Gold.
+  BigMoneyWithCard<Envoy> Discarded Envoy.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Discarded Estate.
+  BigMoneyWithCard<Envoy> Discarded Province.
+  BigMoneyWithCard<Envoy> Drew Gold into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Gold into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Duchy(1), Envoy(1), Estate(3), Gold(4), Province(2), Silver(5), 
 
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Gold,Gold,Great Hall,Minion,
-  HorseTraderSoothsayerMinionGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Drew Minion into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Minion.
-    +1 Actions = 1 all together.
-    +2 Coin = 2 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Minion.
-    +1 Actions = 1 all together.
-    +2 Coin = 4 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Gold.
-    +3 Coin = 7 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Gold.
-    +3 Coin = 10 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 11 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Province.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Gold.
-  HorseTraderSoothsayerMinionGreatHall Discarded Gold.
-  HorseTraderSoothsayerMinionGreatHall Discarded Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Minion.
-  HorseTraderSoothsayerMinionGreatHall Discarded Minion.
-  HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Great Hall into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew HorseTraders into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Butcher(1), Copper(7), Curse(5), Estate(3), Gold(4), Great Hall(4), HorseTraders(1), Minion(3), Province(2), Silver(1), Soothsayer(1), 
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Duchy into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(4), Silver(3), 
 
 ROUND 14
 -------------
-RemakeSoothsayer begins turn
-With hand: Gold,Gold,Great Hall,Silver,Soothsayer,
-  RemakeSoothsayer Played Great Hall.
-    +1 Actions = 1 all together.
-    RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Played Soothsayer.
-    RemakeSoothsayer gained Gold.
-    HorseTraderSoothsayerMinionGreatHall set aside HorseTraders for next turn
-    HorseTraderSoothsayerMinionGreatHall gained Curse.
-    HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  RemakeSoothsayer Played Gold.
+BigMoneyWithCard<Envoy> begins turn
+With hand: Copper,Copper,Gold,Gold,Silver,
+  BigMoneyWithCard<Envoy> Played Gold.
     +3 Coin = 3 all together.
-  RemakeSoothsayer Played Gold.
+  BigMoneyWithCard<Envoy> Played Gold.
     +3 Coin = 6 all together.
-  RemakeSoothsayer Played Gold.
-    +3 Coin = 9 all together.
-  RemakeSoothsayer Played Silver.
-    +2 Coin = 11 all together.
-  RemakeSoothsayer bought Province.
-  RemakeSoothsayer Discarded Silver.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Great Hall.
-  RemakeSoothsayer Discarded Soothsayer.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Great Hall into hand.
-  RemakeSoothsayer Drew Silver into hand.
-  RemakeSoothsayer Drew Great Hall into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer ends turn with deck: Copper(3), Curse(3), Estate(2), Gold(8), Great Hall(4), Province(1), Remake(1), Silver(4), Soothsayer(2), 
+  BigMoneyWithCard<Envoy> Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyWithCard<Envoy> bought Province.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Gold.
+  BigMoneyWithCard<Envoy> Discarded Gold.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> reshuffled
+  BigMoneyWithCard<Envoy> Drew Province into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Province into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Duchy(1), Envoy(1), Estate(3), Gold(4), Province(3), Silver(5), 
 
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Curse,Curse,Estate,Great Hall,
-  HorseTraderSoothsayerMinionGreatHall reshuffled
-  HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall returned HorseTraders to hand
-  HorseTraderSoothsayerMinionGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Drew Silver into hand.
-  HorseTraderSoothsayerMinionGreatHall Played HorseTraders.
-    +1 Buys = 2 all together.
-    +3 Coin = 3 all together.
-    HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-    HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-  HorseTraderSoothsayerMinionGreatHall Played Silver.
-    +2 Coin = 5 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 6 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Duchy.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Silver.
-  HorseTraderSoothsayerMinionGreatHall Discarded Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded HorseTraders.
-  HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-  HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-  HorseTraderSoothsayerMinionGreatHall Drew Province into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Minion into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Gold into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Butcher into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Butcher(1), Copper(7), Curse(6), Duchy(1), Estate(3), Gold(4), Great Hall(4), HorseTraders(1), Minion(3), Province(2), Silver(1), Soothsayer(1), 
+BigMoney begins turn
+With hand: Copper,Duchy,Province,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Duchy.
+  BigMoney Discarded Province.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Province into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(4), Province(4), Silver(3), 
 
 ROUND 15
 -------------
-RemakeSoothsayer begins turn
-With hand: Copper,Gold,Great Hall,Great Hall,Silver,
-  RemakeSoothsayer Played Great Hall.
-    +1 Actions = 1 all together.
-    RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Played Great Hall.
-    +1 Actions = 1 all together.
-    RemakeSoothsayer Drew Great Hall into hand.
-  RemakeSoothsayer Played Great Hall.
-    +1 Actions = 1 all together.
-    RemakeSoothsayer Drew Remake into hand.
-  RemakeSoothsayer Played Gold.
-    +3 Coin = 3 all together.
-  RemakeSoothsayer Played Gold.
-    +3 Coin = 6 all together.
-  RemakeSoothsayer Played Silver.
-    +2 Coin = 8 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 9 all together.
-  RemakeSoothsayer bought Province.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Silver.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Great Hall.
-  RemakeSoothsayer Discarded Great Hall.
-  RemakeSoothsayer Discarded Great Hall.
-  RemakeSoothsayer Discarded Remake.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Drew Curse into hand.
-  RemakeSoothsayer Drew Silver into hand.
-  RemakeSoothsayer Drew Soothsayer into hand.
-  RemakeSoothsayer Drew Curse into hand.
-  RemakeSoothsayer ends turn with deck: Copper(3), Curse(3), Estate(2), Gold(8), Great Hall(4), Province(2), Remake(1), Silver(4), Soothsayer(2), 
-
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Butcher,Estate,Gold,Minion,Province,
-  HorseTraderSoothsayerMinionGreatHall Played Minion.
-    +1 Actions = 1 all together.
+BigMoneyWithCard<Envoy> begins turn
+With hand: Copper,Copper,Province,Province,Silver,
+  BigMoneyWithCard<Envoy> Played Silver.
     +2 Coin = 2 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Butcher.
-    +2 coin tokens = 2 all together.
-    HorseTraderSoothsayerMinionGreatHall trashed Gold.
-    HorseTraderSoothsayerMinionGreatHall spent 2 coin tokens.  0 remaining
-    HorseTraderSoothsayerMinionGreatHall gained Province.
-  HorseTraderSoothsayerMinionGreatHall bought Estate.
-  HorseTraderSoothsayerMinionGreatHall Discarded Butcher.
-  HorseTraderSoothsayerMinionGreatHall Discarded Minion.
-  HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-  HorseTraderSoothsayerMinionGreatHall Discarded Province.
-  HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Great Hall into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Minion into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Butcher(1), Copper(7), Curse(6), Duchy(1), Estate(4), Gold(3), Great Hall(4), HorseTraders(1), Minion(3), Province(3), Silver(1), Soothsayer(1), 
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWithCard<Envoy> bought Estate.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Province.
+  BigMoneyWithCard<Envoy> Discarded Province.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Province into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Duchy(1), Envoy(1), Estate(4), Gold(4), Province(3), Silver(5), 
+
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Province,Province,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Estate.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Province.
+  BigMoney Discarded Province.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(4), Province(4), Silver(3), 
 
 ROUND 16
 -------------
-RemakeSoothsayer begins turn
-With hand: Curse,Curse,Gold,Silver,Soothsayer,
-  RemakeSoothsayer Played Soothsayer.
-    RemakeSoothsayer gained Gold.
-  RemakeSoothsayer Played Gold.
-    +3 Coin = 3 all together.
-  RemakeSoothsayer Played Silver.
-    +2 Coin = 5 all together.
-  RemakeSoothsayer bought Duchy.
-  RemakeSoothsayer Discarded Silver.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Soothsayer.
-  RemakeSoothsayer Discarded Curse.
-  RemakeSoothsayer Discarded Curse.
-  RemakeSoothsayer Drew Estate into hand.
-  RemakeSoothsayer reshuffled
-  RemakeSoothsayer Drew Great Hall into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Drew Remake into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer ends turn with deck: Copper(3), Curse(3), Duchy(1), Estate(2), Gold(9), Great Hall(4), Province(2), Remake(1), Silver(4), Soothsayer(2), 
-
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Copper,Curse,Great Hall,Minion,
-  HorseTraderSoothsayerMinionGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Drew Gold into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Minion.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-    HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-    HorseTraderSoothsayerMinionGreatHall Discarded Gold.
-    HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-    HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Great Hall into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-    RemakeSoothsayer Discarded Gold.
-    RemakeSoothsayer Discarded Gold.
-    RemakeSoothsayer Discarded Estate.
-    RemakeSoothsayer Discarded Great Hall.
-    RemakeSoothsayer Discarded Remake.
-    RemakeSoothsayer Drew Duchy into hand.
-    RemakeSoothsayer Drew Soothsayer into hand.
-    RemakeSoothsayer Drew Silver into hand.
-    RemakeSoothsayer Drew Gold into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Drew Soothsayer into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Soothsayer.
-    HorseTraderSoothsayerMinionGreatHall gained Gold.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 1 all together.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Minion.
-  HorseTraderSoothsayerMinionGreatHall Discarded Soothsayer.
-  HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-  HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-  HorseTraderSoothsayerMinionGreatHall Drew Province into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Gold into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Minion into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Gold into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Great Hall into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Butcher(1), Copper(7), Curse(6), Duchy(1), Estate(4), Gold(4), Great Hall(4), HorseTraders(1), Minion(3), Province(3), Silver(1), Soothsayer(1), 
-
-ROUND 17
--------------
-RemakeSoothsayer begins turn
-With hand: Duchy,Gold,Silver,Soothsayer,
-  RemakeSoothsayer Played Soothsayer.
-    RemakeSoothsayer gained Gold.
-  RemakeSoothsayer Played Gold.
-    +3 Coin = 3 all together.
-  RemakeSoothsayer Played Silver.
-    +2 Coin = 5 all together.
-  RemakeSoothsayer bought Duchy.
-  RemakeSoothsayer Discarded Silver.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Soothsayer.
-  RemakeSoothsayer Discarded Duchy.
-  RemakeSoothsayer Drew Province into hand.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Drew Great Hall into hand.
-  RemakeSoothsayer ends turn with deck: Copper(3), Curse(3), Duchy(2), Estate(2), Gold(10), Great Hall(4), Province(2), Remake(1), Silver(4), Soothsayer(2), 
-
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Gold,Gold,Great Hall,Minion,Province,
-  HorseTraderSoothsayerMinionGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Minion.
-    +1 Actions = 1 all together.
+BigMoneyWithCard<Envoy> begins turn
+With hand: Copper,Copper,Province,Silver,Silver,
+  BigMoneyWithCard<Envoy> Played Silver.
     +2 Coin = 2 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Gold.
-    +3 Coin = 5 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Gold.
-    +3 Coin = 8 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 9 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Province.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Gold.
-  HorseTraderSoothsayerMinionGreatHall Discarded Gold.
-  HorseTraderSoothsayerMinionGreatHall Discarded Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Minion.
-  HorseTraderSoothsayerMinionGreatHall Discarded Province.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall reshuffled
-  HorseTraderSoothsayerMinionGreatHall Drew Great Hall into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Butcher(1), Copper(7), Curse(6), Duchy(1), Estate(4), Gold(4), Great Hall(4), HorseTraders(1), Minion(3), Province(4), Silver(1), Soothsayer(1), 
-
-ROUND 18
--------------
-RemakeSoothsayer begins turn
-With hand: Copper,Gold,Gold,Great Hall,Province,
-  RemakeSoothsayer Played Great Hall.
-    +1 Actions = 1 all together.
-    RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Played Gold.
-    +3 Coin = 3 all together.
-  RemakeSoothsayer Played Gold.
-    +3 Coin = 6 all together.
-  RemakeSoothsayer Played Gold.
-    +3 Coin = 9 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 10 all together.
-  RemakeSoothsayer bought Province.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Great Hall.
-  RemakeSoothsayer Discarded Province.
-  RemakeSoothsayer Drew Copper into hand.
-  RemakeSoothsayer Drew Curse into hand.
-  RemakeSoothsayer Drew Curse into hand.
-  RemakeSoothsayer Drew Silver into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer ends turn with deck: Copper(3), Curse(3), Duchy(2), Estate(2), Gold(10), Great Hall(4), Province(3), Remake(1), Silver(4), Soothsayer(2), 
-
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Copper,Copper,Curse,Great Hall,
-  HorseTraderSoothsayerMinionGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Drew Gold into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Gold.
-    +3 Coin = 3 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 4 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+  BigMoneyWithCard<Envoy> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 5 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
+  BigMoneyWithCard<Envoy> Played Copper.
     +1 Coin = 6 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Duchy.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Gold.
-  HorseTraderSoothsayerMinionGreatHall Discarded Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-  HorseTraderSoothsayerMinionGreatHall Drew Province into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Great Hall into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Great Hall into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Butcher(1), Copper(7), Curse(6), Duchy(2), Estate(4), Gold(4), Great Hall(4), HorseTraders(1), Minion(3), Province(4), Silver(1), Soothsayer(1), 
+  BigMoneyWithCard<Envoy> bought Duchy.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Copper.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Silver.
+  BigMoneyWithCard<Envoy> Discarded Province.
+  BigMoneyWithCard<Envoy> Drew Silver into hand.
+  BigMoneyWithCard<Envoy> Drew Gold into hand.
+  BigMoneyWithCard<Envoy> Drew Gold into hand.
+  BigMoneyWithCard<Envoy> Drew Estate into hand.
+  BigMoneyWithCard<Envoy> Drew Copper into hand.
+  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Duchy(2), Envoy(1), Estate(4), Gold(4), Province(3), Silver(5), 
 
-ROUND 19
--------------
-RemakeSoothsayer begins turn
-With hand: Copper,Curse,Curse,Gold,Silver,
-  RemakeSoothsayer Played Gold.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  RemakeSoothsayer Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 5 all together.
-  RemakeSoothsayer Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 6 all together.
-  RemakeSoothsayer bought Duchy.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Silver.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Curse.
-  RemakeSoothsayer Discarded Curse.
-  RemakeSoothsayer Drew Estate into hand.
-  RemakeSoothsayer Drew Silver into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Drew Province into hand.
-  RemakeSoothsayer Drew Silver into hand.
-  RemakeSoothsayer ends turn with deck: Copper(3), Curse(3), Duchy(3), Estate(2), Gold(10), Great Hall(4), Province(3), Remake(1), Silver(4), Soothsayer(2), 
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Drew Estate into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Duchy into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(4), Province(5), Silver(3), 
 
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Copper,Curse,Great Hall,Great Hall,Province,
-  HorseTraderSoothsayerMinionGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Drew Minion into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Drew Great Hall into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Great Hall.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Drew Province into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Minion.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-    HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-    HorseTraderSoothsayerMinionGreatHall Discarded Province.
-    HorseTraderSoothsayerMinionGreatHall Discarded Province.
-    HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Minion into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Province into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Silver into hand.
-    RemakeSoothsayer Discarded Silver.
-    RemakeSoothsayer Discarded Silver.
-    RemakeSoothsayer Discarded Gold.
-    RemakeSoothsayer Discarded Estate.
-    RemakeSoothsayer Discarded Province.
-    RemakeSoothsayer Drew Soothsayer into hand.
-    RemakeSoothsayer Drew Gold into hand.
-    RemakeSoothsayer Drew Copper into hand.
-    RemakeSoothsayer Drew Great Hall into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Minion.
-    +1 Actions = 1 all together.
-    HorseTraderSoothsayerMinionGreatHall Discarded Silver.
-    HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-    HorseTraderSoothsayerMinionGreatHall Discarded Province.
-    HorseTraderSoothsayerMinionGreatHall Drew Estate into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Duchy into hand.
-    HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 1 all together.
-  HorseTraderSoothsayerMinionGreatHall Played Copper.
-    +1 Coin = 2 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Estate.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Copper.
-  HorseTraderSoothsayerMinionGreatHall Discarded Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Great Hall.
-  HorseTraderSoothsayerMinionGreatHall Discarded Minion.
-  HorseTraderSoothsayerMinionGreatHall Discarded Minion.
-  HorseTraderSoothsayerMinionGreatHall Discarded Estate.
-  HorseTraderSoothsayerMinionGreatHall Discarded Duchy.
-  HorseTraderSoothsayerMinionGreatHall Drew HorseTraders into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Gold into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Gold into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Butcher(1), Copper(7), Curse(6), Duchy(2), Estate(5), Gold(4), Great Hall(4), HorseTraders(1), Minion(3), Province(4), Silver(1), Soothsayer(1), 
+Game ended in 16 turns.
+BigMoney Won!
+BigMoneyWithCard<Envoy> total score: 28
+  Copper(7), Duchy(2), Envoy(1), Estate(4), Gold(4), Province(3), Silver(5), 
+BigMoney total score: 40
+  Copper(7), Duchy(2), Estate(4), Gold(4), Province(5), Silver(3), 
+Trash contains: 
 
-ROUND 20
--------------
-RemakeSoothsayer begins turn
-With hand: Copper,Gold,Great Hall,Soothsayer,
-  RemakeSoothsayer Played Great Hall.
-    +1 Actions = 1 all together.
-    RemakeSoothsayer Drew Curse into hand.
-  RemakeSoothsayer Played Soothsayer.
-    RemakeSoothsayer gained Gold.
-    HorseTraderSoothsayerMinionGreatHall set aside HorseTraders for next turn
-  RemakeSoothsayer Played Gold.
-    +3 Coin = 3 all together.
-  RemakeSoothsayer Played Copper.
-    +1 Coin = 4 all together.
-  RemakeSoothsayer bought Estate.
-  RemakeSoothsayer Discarded Copper.
-  RemakeSoothsayer Discarded Gold.
-  RemakeSoothsayer Discarded Great Hall.
-  RemakeSoothsayer Discarded Soothsayer.
-  RemakeSoothsayer Discarded Curse.
-  RemakeSoothsayer Drew Great Hall into hand.
-  RemakeSoothsayer reshuffled
-  RemakeSoothsayer Drew Curse into hand.
-  RemakeSoothsayer Drew Curse into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer Drew Gold into hand.
-  RemakeSoothsayer ends turn with deck: Copper(3), Curse(3), Duchy(3), Estate(3), Gold(11), Great Hall(4), Province(3), Remake(1), Silver(4), Soothsayer(2), 
+BigMoneyWithCard<Envoy> GainSequence is:
+  Envoy, Silver, Silver, Silver, Gold, 
+  Silver, Gold, Gold, Gold, Province, 
+  Silver, Province, Duchy, Province, Estate, 
+  Duchy, 
+BigMoney GainSequence is:
+  Silver, Silver, Gold, Gold, Gold, 
+  Silver, Province, Gold, Province, Province, 
+  Duchy, Province, Duchy, Estate, Province, 
 
-HorseTraderSoothsayerMinionGreatHall begins turn
-With hand: Curse,Curse,Gold,Gold,
-  HorseTraderSoothsayerMinionGreatHall Drew Butcher into hand.
-  HorseTraderSoothsayerMinionGreatHall returned HorseTraders to hand
-  HorseTraderSoothsayerMinionGreatHall Played Butcher.
-    +2 coin tokens = 2 all together.
-    HorseTraderSoothsayerMinionGreatHall trashed Gold.
-    HorseTraderSoothsayerMinionGreatHall spent 2 coin tokens.  0 remaining
-    HorseTraderSoothsayerMinionGreatHall gained Province.
-  HorseTraderSoothsayerMinionGreatHall Played Gold.
-    +3 Coin = 3 all together.
-  HorseTraderSoothsayerMinionGreatHall bought Estate.
-  HorseTraderSoothsayerMinionGreatHall Discarded Gold.
-  HorseTraderSoothsayerMinionGreatHall Discarded Butcher.
-  HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-  HorseTraderSoothsayerMinionGreatHall Discarded Curse.
-  HorseTraderSoothsayerMinionGreatHall Discarded HorseTraders.
-  HorseTraderSoothsayerMinionGreatHall Drew Soothsayer into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Copper into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Curse into hand.
-  HorseTraderSoothsayerMinionGreatHall Drew Province into hand.
-  HorseTraderSoothsayerMinionGreatHall ends turn with deck: Butcher(1), Copper(7), Curse(6), Duchy(2), Estate(6), Gold(3), Great Hall(4), HorseTraders(1), Minion(3), Province(5), Silver(1), Soothsayer(1), 
-
-Game ended in 20 turns.
-HorseTraderSoothsayerMinionGreatHall Won!
-RemakeSoothsayer total score: 31
-  Copper(3), Curse(3), Duchy(3), Estate(3), Gold(11), Great Hall(4), Province(3), Remake(1), Silver(4), Soothsayer(2), 
-HorseTraderSoothsayerMinionGreatHall total score: 40
-  Butcher(1), Copper(7), Curse(6), Duchy(2), Estate(6), Gold(3), Great Hall(4), HorseTraders(1), Minion(3), Province(5), Silver(1), Soothsayer(1), 
-Trash contains: Copper(4), Curse(1), Estate(1), Gold(2), 
-
-RemakeSoothsayer GainSequence is:
-  Remake, Silver, Soothsayer, Silver, Soothsayer, 
-  Gold, Great Hall, Curse, Gold, Gold, 
-  Great Hall, Curse, Gold, Great Hall, Gold, 
-  Great Hall, Curse, Gold, Gold, Curse, 
-  Silver, Silver, Gold, Province, Province, 
-  Gold, Duchy, Gold, Duchy, Province, 
-  Duchy, Gold, Estate, 
-HorseTraderSoothsayerMinionGreatHall GainSequence is:
-  HorseTraders, Silver, Soothsayer, Minion, Minion, 
-  Curse, Gold, Great Hall, Curse, Province, 
-  Great Hall, Gold, Great Hall, Curse, Great Hall, 
-  Curse, Gold, Minion, Curse, Gold, 
-  Butcher, Province, Curse, Duchy, Province, 
-  Estate, Gold, Province, Duchy, Estate, 
-  Province, Estate, 
