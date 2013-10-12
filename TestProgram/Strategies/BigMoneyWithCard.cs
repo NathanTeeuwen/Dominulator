@@ -10,27 +10,26 @@ namespace Program
 {
     public static partial class Strategies
     {
-        public static class BigMoneyWithCard<T>
-            where T : Card, new()
+        public static class BigMoneyWithCard
         {
             // big money smithy player
-            public static PlayerAction Player(int playerNumber, string playerName = null, int cardCount = 1, int afterSilverCount = 0, int afterGoldCount = int.MaxValue)
+            public static PlayerAction Player(Card card, int playerNumber, string playerName = null, int cardCount = 1, int afterSilverCount = 0, int afterGoldCount = int.MaxValue)
             {
                 return new PlayerAction(
-                            playerName == null ? "BigMoneyWithCard<" + typeof(T).Name + ">" : playerName,
+                            playerName == null ? "BigMoneyWithCard<" + card.GetType().Name + ">" : playerName,
                             playerNumber,
-                            purchaseOrder: PurchaseOrder(cardCount, afterSilverCount, afterGoldCount));
+                            purchaseOrder: PurchaseOrder(card, cardCount, afterSilverCount, afterGoldCount));
             }
 
-            public static ICardPicker PurchaseOrder(int cardCount, int afterSilverCount, int afterGoldCount)
+            public static ICardPicker PurchaseOrder(Card card, int cardCount, int afterSilverCount, int afterGoldCount)
             {
                 return new CardPickByPriority(
                            CardAcceptance.For(CardTypes.Province.card, gameState => CountAllOwned(CardTypes.Gold.card, gameState) > 2),
                            CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 4),
                            CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 2),
-                           CardAcceptance.For(card, gameState => CountAllOwned(T.card, gameState) < cardCount && CountAllOwned(CardTypes.Gold.card, gameState) >= afterGoldCount),
+                           CardAcceptance.For(card, gameState => CountAllOwned(card, gameState) < cardCount && CountAllOwned(CardTypes.Gold.card, gameState) >= afterGoldCount),
                            CardAcceptance.For(CardTypes.Gold.card),
-                           CardAcceptance.For(card, gameState => CountAllOwned(T.card, gameState) < cardCount && CountAllOwned(CardTypes.Silver.card, gameState) >= afterSilverCount),
+                           CardAcceptance.For(card, gameState => CountAllOwned(card, gameState) < cardCount && CountAllOwned(CardTypes.Silver.card, gameState) >= afterSilverCount),
                            CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
                            CardAcceptance.For(CardTypes.Silver.card, CardAcceptance.AlwaysMatch, CardAcceptance.OverPayZero));
             }           
@@ -51,7 +50,7 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithCard<CardTypes.Wharf>.Player(playerNumber, "BigMoneyWharf");
+                return BigMoneyWithCard.Player(CardTypes.Wharf.card, playerNumber, "BigMoneyWharf");
             }
         }
 
@@ -60,7 +59,7 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithCard<CardTypes.Bridge>.Player(playerNumber, "BigMoneyBridge");
+                return BigMoneyWithCard.Player(CardTypes.Bridge.card, playerNumber, "BigMoneyBridge");
             }
         }        
 
@@ -69,7 +68,7 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithCard<CardTypes.Smithy>.Player(playerNumber, "BigMoneySingleSmithy");
+                return BigMoneyWithCard.Player(CardTypes.Smithy.card, playerNumber, "BigMoneySingleSmithy");
             }
         }
 
@@ -78,7 +77,7 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithCard<CardTypes.Witch>.Player(playerNumber, "BigMoneySingleWitch");
+                return BigMoneyWithCard.Player(CardTypes.Witch.card, playerNumber, "BigMoneySingleWitch");
             }
         }
 
@@ -87,7 +86,7 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithCard<CardTypes.Witch>.Player(playerNumber, "BigMoneyDoubleWitch", cardCount:2, afterGoldCount:0);
+                return BigMoneyWithCard.Player(CardTypes.Witch.card, playerNumber, "BigMoneyDoubleWitch", cardCount: 2, afterGoldCount: 0);
             }
         }
 
@@ -96,7 +95,7 @@ namespace Program
             // big money smithy player
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithCard<CardTypes.Moneylender>.Player(playerNumber, cardCount: 2);
+                return BigMoneyWithCard.Player(CardTypes.Moneylender.card, playerNumber, cardCount: 2);
             }
         } 
 
@@ -148,26 +147,25 @@ namespace Program
         }
 
 
-        public static class BigMoneySingleCardCartographer<T>
-            where T : Card, new()
+        public static class BigMoneySingleCardCartographer
         {
             // big money smithy player
-            public static PlayerAction Player(int playerNumber, int cardCount = 1)
+            public static PlayerAction Player(Card card, int playerNumber, int cardCount = 1)
             {
                 return new PlayerAction(
                             "BigMoneySingleCardCartographer",
                             playerNumber,
-                            purchaseOrder: PurchaseOrder(cardCount),                            
-                            actionOrder: ActionOrder());
+                            purchaseOrder: PurchaseOrder(card, cardCount),                            
+                            actionOrder: ActionOrder(card));
             }
 
-            private static ICardPicker PurchaseOrder(int cardCount)
+            private static ICardPicker PurchaseOrder(Card card, int cardCount)
             {
                 return new CardPickByPriority(
                            CardAcceptance.For(CardTypes.Province.card, gameState => CountAllOwned(CardTypes.Gold.card, gameState) > 2),
                            CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
                            CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 2),
-                           CardAcceptance.For(T.card, gameState => CountAllOwned(T.card, gameState) < cardCount),
+                           CardAcceptance.For(card, gameState => CountAllOwned(T.card, gameState) < cardCount),
                            CardAcceptance.For(CardTypes.Gold.card),
                            CardAcceptance.For(CardTypes.Cartographer.card),
                            CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
@@ -175,11 +173,11 @@ namespace Program
 
             }
 
-            private static ICardPicker ActionOrder()
+            private static ICardPicker ActionOrder(Card card)
             {
                 return new CardPickByPriority(
                            CardAcceptance.For(CardTypes.Cartographer.card),
-                           CardAcceptance.For(T.card));
+                           CardAcceptance.For(card));
             }
         }
     }
