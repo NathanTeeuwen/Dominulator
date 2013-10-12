@@ -31,7 +31,7 @@ namespace Program
 
                 public override Card NameACard(GameState gameState)
                 {
-                    return Card.Type<CardTypes.Duchy>();
+                    return CardTypes.Duchy.card;
                 }
             }
 

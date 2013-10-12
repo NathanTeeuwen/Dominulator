@@ -45,7 +45,7 @@ namespace Program
 
                     foreach (Card card in revealedCards)
                     {
-                        bool shouldDiscard = card.isVictory || card.Is<Copper>();
+                        bool shouldDiscard = card.isVictory || card == Copper.card;
                         if (!shouldDiscard)
                         {
                             return card;

@@ -78,7 +78,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            if (!otherPlayer.RequestPlayerDiscardCardFromHand(gameState, card => card.Is<Copper>(), isOptional: false))
+            if (!otherPlayer.RequestPlayerDiscardCardFromHand(gameState, card => card == Copper.card, isOptional: false))
             {
                 otherPlayer.RevealHand();
             }
@@ -111,13 +111,13 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            if (currentPlayer.RequestPlayerRevealCardFromHand(card => card.Is<Province>(), gameState) != null)
+            if (currentPlayer.RequestPlayerRevealCardFromHand(card => card == Province.card, gameState) != null)
             {
-                currentPlayer.GainCardFromSupply<Gold>(gameState);
+                currentPlayer.GainCardFromSupply(Gold.card, gameState);
             }
             else
             {
-                currentPlayer.GainCardFromSupply<Silver>(gameState);
+                currentPlayer.GainCardFromSupply(Silver.card, gameState);
             }
         }
     }
@@ -301,7 +301,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            if (!currentPlayer.durationCards.HasCard<Outpost>())
+            if (!currentPlayer.durationCards.HasCard(Outpost.card))
             {
                 gameState.doesCurrentPlayerNeedOutpostTurn = true;
             }
@@ -393,7 +393,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
             otherPlayer.DiscardCardFromTopOfDeck();
-            otherPlayer.GainCardFromSupply<Curse>(gameState, DeckPlacement.TopOfDeck);
+            otherPlayer.GainCardFromSupply(Curse.card, gameState, DeckPlacement.TopOfDeck);
         }
     }
 
@@ -446,9 +446,9 @@ namespace Dominion.CardTypes
         {
             if (currentPlayer.MoveCardFromPlayToTrash(gameState))
             {
-                if (currentPlayer.TrashCardFromHandOfType<TreasureMap>(gameState, guaranteeInHand: false) != null)
+                if (currentPlayer.TrashCardFromHandOfType(TreasureMap.card, gameState, guaranteeInHand: false) != null)
                 {
-                    currentPlayer.GainCardsFromSupply<Gold>(gameState, 4, DeckPlacement.TopOfDeck);
+                    currentPlayer.GainCardsFromSupply(gameState, Gold.card, 4, DeckPlacement.TopOfDeck);
                 }
             }
         }

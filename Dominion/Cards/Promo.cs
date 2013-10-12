@@ -74,10 +74,10 @@ namespace Dominion.CardTypes
                     }
                 case PlayerActionChoice.GainCard:
                     {
-                        currentPlayer.GainCardFromSupply(gameState, Card.Type<Gold>());
+                        currentPlayer.GainCardFromSupply(gameState, Gold.card);
                         foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
                         {
-                            otherPlayer.GainCardFromSupply(gameState, Card.Type<Silver>());
+                            otherPlayer.GainCardFromSupply(gameState, Silver.card);
                         }
                         break;
                     }

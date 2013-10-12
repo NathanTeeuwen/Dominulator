@@ -71,13 +71,13 @@ namespace Program
                 var self = gameState.Self;
 
                 Card result;
-                if (self.Hand.CountOf<CardTypes.Develop>() > 1)
+                if (self.Hand.CountOf(CardTypes.Develop.card) > 1)
                 {
                     result = TrashOrder().GetPreferredCard(gameState, card => self.Hand.HasCard(card));
                 }
                 else
                 {
-                    result = TrashOrder().GetPreferredCard(gameState, card => self.Hand.HasCard(card) && !card.Is<CardTypes.Develop>());
+                    result = TrashOrder().GetPreferredCard(gameState, card => self.Hand.HasCard(card) && !card == CardTypes.Develop.card);
                 }
 
                 return result != null;

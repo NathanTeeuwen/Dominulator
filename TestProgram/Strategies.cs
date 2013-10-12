@@ -22,7 +22,7 @@ namespace Program
         public static int CountAllOwned<T>(GameState gameState)
             where T : Card, new()
         {
-            return CountAllOwned(Card.Type<T>(), gameState);
+            return CountAllOwned(T.card, gameState);
         }
 
         private static GameStatePredicate CountAllOwned<T>(RelativeAmount relativeAmount, int amount)
@@ -48,14 +48,14 @@ namespace Program
         private static int CountInDeck<T>(GameState gameState)
             where T : Card, new()
         {
-            return gameState.Self.CardsInDeck.CountOf(Card.Type<T>());
+            return gameState.Self.CardsInDeck.CountOf(T.card);
         }
 
         private static int CountInDeckAndDiscard<T>(GameState gameState)
             where T : Card, new()
         {
             var player = gameState.Self;
-            return player.CardsInDeck.CountOf<T>() + player.Discard.CountOf<T>();
+            return player.CardsInDeck.CountOf(T.card) + player.Discard.CountOf(T.card);
         }
 
         private static int CountMightDraw<T>(GameState gameState, int maxCount)
@@ -71,13 +71,13 @@ namespace Program
                 where T : Card, new()
         {
             var cardBeingPlayed = gameState.Self.CurrentCardBeingPlayed;
-            return cardBeingPlayed != null && cardBeingPlayed.Is<T>();
+            return cardBeingPlayed != null && cardBeingPlayed == T.card;
         }
 
         public static int CostOfCard<T>(GameState gameState)
             where T : Card, new()
         {
-            return Card.Type<T>().CurrentCoinCost(gameState.Self);
+            return T.card.CurrentCoinCost(gameState.Self);
         }                
 
         public static int CountAllOwned(Card cardType, GameState gameState)
@@ -93,13 +93,13 @@ namespace Program
         public static int CountInHand<T>(GameState gameState)
             where T : Card, new()
         {
-            return CountInHand(Card.Type<T>(), gameState);
+            return CountInHand(T.card, gameState);
         }
 
         public static int CountOfPile<T>(GameState gameState)
             where T: Card, new()
         {
-            return CountOfPile(Card.Type<T>(), gameState);
+            return CountOfPile(T.card, gameState);
         }
 
         public static int CountOfPile(Card cardType, GameState gameState)
@@ -135,7 +135,7 @@ namespace Program
         private static bool HasCardInHand<T>(GameState gameState)
             where T: Card, new()
         {
-            return gameState.Self.Hand.HasCard<T>();
+            return gameState.Self.Hand.HasCard(T.card);
         }
 
         internal static Card WhichCardFromInHand(ICardPicker matchingCards, GameState gameState)

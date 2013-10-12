@@ -84,7 +84,7 @@ namespace Program
                 public override bool ShouldPutCardInHand(GameState gameState, Card card)
                 {
                     if (!ShouldBuyProvince(gameState) &&
-                        gameState.Self.Hand.CountOf<CardTypes.Copper>() > 0)
+                        gameState.Self.Hand.CountOf(CardTypes.Copper.card) > 0)
                     {
                         return false;
                     }
@@ -170,7 +170,7 @@ namespace Program
                     return false;
                 }
 
-                if (gameState.Self.Hand.CountWhere(card => card.isAction && !card.Is<CardTypes.Library>()) > 0 &&
+                if (gameState.Self.Hand.CountWhere(card => card.isAction && !card == CardTypes.Library.card) > 0 &&
                     gameState.Self.AvailableActions == 1)
                 {
                     return false;
@@ -213,7 +213,7 @@ namespace Program
             private static bool HasExactlyOneActionOtherThanCount(GameState gameState)
             {
                 var self = gameState.Self;
-                if (!self.Hand.HasCard<CardTypes.Count>())
+                if (!self.Hand.HasCard(CardTypes.Count.card))
                 {
                     return false;
                 }
@@ -223,7 +223,7 @@ namespace Program
                     return false;
                 }
 
-                if (self.Hand.HasCard<CardTypes.Library>() && self.AvailableActions >= 2)
+                if (self.Hand.HasCard(CardTypes.Library.card) && self.AvailableActions >= 2)
                 {
                     return false;
                 }

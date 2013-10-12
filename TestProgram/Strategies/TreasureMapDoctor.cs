@@ -42,7 +42,7 @@ namespace Program
 
                 public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
                 {
-                    if (gameState.Self.CardsBeingRevealed.HasCard<CardTypes.Silver>())
+                    if (gameState.Self.CardsBeingRevealed.HasCard(CardTypes.Silver.card))
                         return PlayerActionChoice.Discard;
                     return PlayerActionChoice.Trash;
                 }
@@ -59,7 +59,7 @@ namespace Program
                     if (self.CardsInDeck.Count() <= 3 &&
                         CountInDeck<CardTypes.Estate>(gameState) > 0)
                     {
-                        return Card.Type<CardTypes.Estate>();
+                        return CardTypes.Estate.card;
                     }
 
                     int countCopper = CountMightDraw<CardTypes.Copper>(gameState, 3);
@@ -69,9 +69,9 @@ namespace Program
                         countEstate = 0;
 
                     if (countCopper + countEstate == 0)
-                        return Card.Type<CardTypes.Estate>();
+                        return CardTypes.Estate.card;
 
-                    return countCopper > countEstate ? Card.Type<CardTypes.Copper>() : Card.Type<CardTypes.Estate>();
+                    return countCopper > countEstate ? CardTypes.Copper.card : CardTypes.Estate.card;
                 }
             }
 

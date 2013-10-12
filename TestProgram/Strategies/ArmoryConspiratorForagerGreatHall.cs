@@ -42,7 +42,7 @@ namespace Program
                            CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 1),                           
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) == 0),
                            CardAcceptance.For<CardTypes.GreatHall>(gameState => gameState.Self.AvailableBuys > 1 && gameState.Self.AvailableCoins == 6),
-                           CardAcceptance.For<CardTypes.GreatHall>(gameState => gameState.Self.Hand.HasCard<CardTypes.Hovel>()),
+                           CardAcceptance.For<CardTypes.GreatHall>(gameState => gameState.Self.Hand.HasCard(CardTypes.Hovel.card)),
                            CardAcceptance.For<CardTypes.GreatHall>(gameState => CountAllOwned<CardTypes.GreatHall>(gameState) < CountAllOwned<CardTypes.Conspirator>(gameState)),
                            CardAcceptance.For<CardTypes.Conspirator>(),
                            CardAcceptance.For<CardTypes.GreatHall>());

@@ -25,11 +25,11 @@ namespace Program
             {
                 return new CardPickByPriority(
                            CardAcceptance.For<CardTypes.Province>(Default.ShouldBuyProvinces),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count <= 4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count <= 2),
+                           CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile(CardTypes.Province.card).Count <= 4),
+                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile(CardTypes.Province.card).Count <= 2),
                            CardAcceptance.For<CardTypes.Gold>(),
                            new CardAcceptance(withCard, gameState => CountAllOwned(withCard, gameState) < count),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count < 4),
+                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile(CardTypes.Province.card).Count < 4),
                            CardAcceptance.For<T>());
             }   
         }

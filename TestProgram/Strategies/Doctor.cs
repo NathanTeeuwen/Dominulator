@@ -63,7 +63,7 @@ namespace Program
                 if (self.CardsInDeck.Count() <= 3 &&
                     CountInDeck<CardTypes.Estate>(gameState) > 0)
                 {
-                    return Card.Type<CardTypes.Estate>();
+                    return CardTypes.Estate.card;
                 }
 
                 int countCopper = CountMightDraw<CardTypes.Copper>(gameState, 3);
@@ -75,7 +75,7 @@ namespace Program
                 if (countCopper + countEstate == 0)
                     return null;
                 
-                return countCopper > countEstate ? Card.Type<CardTypes.Copper>() : Card.Type<CardTypes.Estate>();
+                return countCopper > countEstate ? CardTypes.Copper.card : CardTypes.Estate.card;
             }
 
             private static CardPickByPriority PurchaseOrder()

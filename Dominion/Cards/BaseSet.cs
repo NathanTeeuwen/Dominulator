@@ -25,9 +25,9 @@ namespace Dominion.CardTypes
 
         public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
-            if (gameState.DoesGameHaveCard<Duchess>())
+            if (gameState.DoesGameHaveCard(Duchess.card))
             {
-                currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.Is<Duchess>(), "may gain a duchess", isOptional: true);                
+                currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card == Duchess.card, "may gain a duchess", isOptional: true);                
             }
 
             return DeckPlacement.Default;
@@ -86,7 +86,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardFromSupply<Silver>(gameState);
+            currentPlayer.GainCardFromSupply(Silver.card, gameState);
         }
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
@@ -310,7 +310,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Card card = currentPlayer.TrashCardFromHandOfType<Copper>(gameState, guaranteeInHand: false);
+            Card card = currentPlayer.TrashCardFromHandOfType(Copper.card, gameState, guaranteeInHand: false);
             if (card != null)
             {
                 currentPlayer.AddCoins(3);
@@ -446,7 +446,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.GainCardFromSupply<Curse>(gameState);
+            otherPlayer.GainCardFromSupply(Curse.card, gameState);
         }
     }
 

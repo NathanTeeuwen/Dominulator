@@ -20,16 +20,16 @@ namespace Program.Kingdoms
         {
             GameConfig gameConfig = GameConfigBuilder.Create(
                 StartingCardSplit.Split43,
-                Card.Type<CardTypes.Butcher>(),
-                Card.Type<CardTypes.GreatHall>(),
-                Card.Type<CardTypes.HornOfPlenty>(),
-                Card.Type<CardTypes.HorseTraders>(),
-                Card.Type<CardTypes.Minion>(),
-                Card.Type<CardTypes.Pawn>(),
-                Card.Type<CardTypes.Remake>(),
-                Card.Type<CardTypes.Soothsayer>(),
-                Card.Type<CardTypes.StoneMason>(),
-                Card.Type<CardTypes.Swindler>()
+                CardTypes.Butcher.card,
+                CardTypes.GreatHall.card,
+                CardTypes.HornOfPlenty.card,
+                CardTypes.HorseTraders.card,
+                CardTypes.Minion.card,
+                CardTypes.Pawn.card,
+                CardTypes.Remake.card,
+                CardTypes.Soothsayer.card,
+                CardTypes.StoneMason.card,
+                CardTypes.Swindler.card
                 );
 
             //Program.ComparePlayers(Strategies.HorseTraderSoothsayerMinionGreatHall.Player(1), Strategies.HorseTraderSoothsayerMinionGreatHall.Player(2, false), gameConfig);
@@ -65,7 +65,7 @@ namespace Program
 
                 public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
                 {
-                    if (gameState.CurrentCardBeingPlayed.Is<CardTypes.Minion>())
+                    if (gameState.CurrentCardBeingPlayed == CardTypes.Minion.card)
                     {
                         if (CountInHand<CardTypes.Minion>(gameState) >= 2)
                             return PlayerActionChoice.PlusCoin;
@@ -84,7 +84,7 @@ namespace Program
                         return PlayerActionChoice.Discard;
                     }
 
-                    if (gameState.CurrentCardBeingPlayed.Is<CardTypes.Pawn>())
+                    if (gameState.CurrentCardBeingPlayed == CardTypes.Pawn.card)
                     {
                         if (acceptableChoice(PlayerActionChoice.PlusAction))
                             return PlayerActionChoice.PlusAction;

@@ -198,7 +198,7 @@ namespace Program
             // good for cartographer, not sure about anyone else.
             foreach (Card card in revealedCards)
             {
-                bool shouldDiscard = card.isVictory || card.Is<CardTypes.Copper>();
+                bool shouldDiscard = card.isVictory || card == CardTypes.Copper.card;
                 if (!shouldDiscard)
                 {
                     return card;
@@ -262,9 +262,9 @@ namespace Program
 
         public override bool ShouldRevealCardFromHand(GameState gameState, Card card)
         {
-            if (card.Is<CardTypes.Watchtower>())
+            if (card == CardTypes.Watchtower.card)
                 return true;
-            if (card.Is<CardTypes.HorseTraders>())
+            if (card == CardTypes.HorseTraders.card)
                 return true;
 
             return base.ShouldRevealCardFromHand(gameState, card);
@@ -272,7 +272,7 @@ namespace Program
 
         public override bool ShouldRevealCardFromHandForCard(GameState gameState, Card card, Card cardFor)
         {
-            if (card.Is<CardTypes.Trader>())
+            if (card == CardTypes.Trader.card)
             {
                 return DoesCardPickerMatch(this.trashOrder, gameState, cardFor) && !DoesCardPickerMatch(this.purchaseOrder, gameState, cardFor);
             }
@@ -373,12 +373,12 @@ namespace Program
                 card => acceptableCard(card) && gameState.GetPile(card).Any());
 
             if (result == null &&
-                acceptableCard(Card.Type<CardTypes.Copper>()) &&
+                acceptableCard(CardTypes.Copper.card) &&
                 Strategies.CardBeingPlayedIs<CardTypes.IllGottenGains>(gameState))
             {
                 if (ShouldGainCopper(gameState, this.purchaseOrder))
                 {
-                    result = Card.Type<CardTypes.Copper>();
+                    result = CardTypes.Copper.card;
                 }
             }
 
@@ -468,7 +468,7 @@ namespace Program
 
         public override bool ShouldPlayerDiscardCardFromHand(GameState gameState, PlayerState playerState, Card card)
         {
-            if (card.Is<CardTypes.MarketSquare>())
+            if (card == CardTypes.MarketSquare.card)
                 return true;
 
             return base.ShouldPlayerDiscardCardFromHand(gameState, playerState, card);

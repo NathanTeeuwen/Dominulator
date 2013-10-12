@@ -29,16 +29,10 @@ namespace Dominion
             if (this.protoType.Is(card))
                 return true;
 
-            if (card.isRuins && this.protoType.Equals(Card.Type<CardTypes.Ruins>()))
+            if (card.isRuins && this.protoType.Equals(CardTypes.Ruins.card))
                 return true;            
 
             return false;
-        }
-
-        public bool IsType<T>()
-            where T: Card, new()
-        {
-            return IsType(Card.Type<T>());
         }
 
         public Card ProtoTypeCard

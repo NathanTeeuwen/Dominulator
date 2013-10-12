@@ -37,20 +37,20 @@ namespace Program
                     
                     if (CountOfPile<CardTypes.Duchy>(gameState) == 0)
                     {
-                        return Card.Type<CardTypes.Estate>();
+                        return CardTypes.Estate.card;
                     }
 
                     if (CountInDeckAndDiscard<CardTypes.Province>(gameState) > 0)
                     {
-                        return Card.Type<CardTypes.Province>();
+                        return CardTypes.Province.card;
                     }
 
                     if (CountInDeckAndDiscard<CardTypes.Estate>(gameState) > 0)
                     {
-                        return Card.Type<CardTypes.Duchy>();
+                        return CardTypes.Duchy.card;
                     }                    
                     
-                    return Card.Type<CardTypes.Province>();
+                    return CardTypes.Province.card;
                 }
             }
 

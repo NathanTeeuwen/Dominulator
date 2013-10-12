@@ -22,13 +22,13 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            if (currentPlayer.RequestPlayerDiscardCardFromHand(gameState, acceptableCard => acceptableCard.Is<Estate>(), isOptional: true))
+            if (currentPlayer.RequestPlayerDiscardCardFromHand(gameState, acceptableCard => acceptableCard == Estate.card, isOptional: true))
             {
                 currentPlayer.AddCoins(4);
             }
             else
             {
-                currentPlayer.GainCardFromSupply<Estate>(gameState);
+                currentPlayer.GainCardFromSupply(Estate.card, gameState);
             }
         }
     }
@@ -100,7 +100,7 @@ namespace Dominion.CardTypes
         public static Duke card; private Duke()
             : base("Duke", coinCost: 5, isAction: true)
         {
-            this.victoryPointCounter = player => player.AllOwnedCards.Where(card => card.Is<Duchy>()).Count();
+            this.victoryPointCounter = player => player.AllOwnedCards.Where(card => card == Duchy.card).Count();
         }
     }
 
@@ -490,7 +490,7 @@ namespace Dominion.CardTypes
             switch (playerChoice)
             {
                 case PlayerActionChoice.Discard: otherPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false); break;
-                case PlayerActionChoice.GainCard: otherPlayer.GainCardFromSupply<Curse>(gameState, DeckPlacement.Hand); break;
+                case PlayerActionChoice.GainCard: otherPlayer.GainCardFromSupply(Curse.card, gameState, DeckPlacement.Hand); break;
                 default: throw new Exception("Invalid Choice");
             }
         }
@@ -510,7 +510,7 @@ namespace Dominion.CardTypes
             if (currentPlayer.RequestPlayerTrashCardsFromHand(gameState, 2, isOptional: false).Length == 2)
             {
                 // If you do, gain a silver card; put it into your hand
-                currentPlayer.GainCardFromSupply<Silver>(gameState, DeckPlacement.Hand);
+                currentPlayer.GainCardFromSupply(Silver.card, gameState, DeckPlacement.Hand);
             }
         }
     }

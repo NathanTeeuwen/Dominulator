@@ -51,8 +51,8 @@ namespace Program
 
                     public int Compare(Card left, Card right)
                     {
-                        bool leftHighValue = left.isTreasure || left.Is<CardTypes.Mystic>();
-                        bool rightHighValue = right.isTreasure || right.Is<CardTypes.Mystic>();
+                        bool leftHighValue = left.isTreasure || left == CardTypes.Mystic.card;
+                        bool rightHighValue = right.isTreasure || right == CardTypes.Mystic.card;
 
                         if (leftHighValue ^ rightHighValue)
                         {
@@ -73,12 +73,12 @@ namespace Program
                     }
 
                     IEnumerable<Card> cards = self.CardsInDeck.Any() ? self.CardsInDeck : self.CardsInDeckAndDiscard;
-                    cards = cards.Where(card => !card.Is<CardTypes.Estate>() && !card.isShelter);
+                    cards = cards.Where(card => !card == CardTypes.Estate.card && !card.isShelter);
 
                     if (cards.Any())
                         return MostCommonCard(cards);
                     else
-                        return Card.Type<CardTypes.Estate>();
+                        return CardTypes.Estate.card;
                 }
 
                 // for playing mining village
@@ -192,7 +192,7 @@ namespace Program
             {
                 PlayerState currentPlayer = gameState.Self;
 
-                return currentPlayer.AllOwnedCards.Count(card => card.isVictory || card.Is<CardTypes.Mystic>());
+                return currentPlayer.AllOwnedCards.Count(card => card.isVictory || card == CardTypes.Mystic.card);
                                 
             }
         }

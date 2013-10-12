@@ -25,11 +25,11 @@ namespace Program.Simulations
             
             ComparePlayers(gameCount,
                 new CardCountPair[] {
-                    new CardCountPair(Card.Type<CardTypes.Copper>(), 7),
-                    new CardCountPair(Card.Type<CardTypes.Estate>(), 3),
-                    new CardCountPair(Card.Type<CardTypes.Silver>(), 4),
-                    new CardCountPair(Card.Type<CardTypes.Witch>(), 2),
-                    new CardCountPair(Card.Type<CardTypes.Curse>(), 1)
+                    new CardCountPair(CardTypes.Copper.card, 7),
+                    new CardCountPair(CardTypes.Estate.card, 3),
+                    new CardCountPair(CardTypes.Silver.card, 4),
+                    new CardCountPair(CardTypes.Witch.card, 2),
+                    new CardCountPair(CardTypes.Curse.card, 1)
                 });
 
             System.Console.WriteLine("");
@@ -39,10 +39,10 @@ namespace Program.Simulations
                         
             ComparePlayers(gameCount,
                 new CardCountPair[] {
-                    new CardCountPair(Card.Type<CardTypes.Copper>(), 7),
-                    new CardCountPair(Card.Type<CardTypes.Estate>(), 3),
-                    new CardCountPair(Card.Type<CardTypes.Silver>(), 2),
-                    new CardCountPair(Card.Type<CardTypes.Witch>(), 2)                
+                    new CardCountPair(CardTypes.Copper.card, 7),
+                    new CardCountPair(CardTypes.Estate.card, 3),
+                    new CardCountPair(CardTypes.Silver.card, 2),
+                    new CardCountPair(CardTypes.Witch.card, 2)                
                 });
         }
 
@@ -142,7 +142,7 @@ namespace Program.Simulations
             {
                 lock (this.factory.theLock)
                 {
-                    if (gameState.GetPile<CardTypes.Curse>().Any)
+                    if (gameState.GetPile(CardTypes.Curse.card).Any)
                         return;
 
                     int player1Count = CountCurses(gameState, 0);

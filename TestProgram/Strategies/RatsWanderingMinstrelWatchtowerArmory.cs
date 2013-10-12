@@ -43,12 +43,12 @@ namespace Program
 
                 /*//  Intuitive guess as to the right build order, not correct it seeems.
                 var buildOrder = new CardPickByBuildOrder(
-                    Card.Type<CardTypes.Armory>(),
-                    Card.Type<CardTypes.Silver>(),
-                    Card.Type<CardTypes.WanderingMinstrell>(),
-                    Card.Type<CardTypes.Watchtower>(),
-                    Card.Type<CardTypes.Rats>(),
-                    Card.Type<CardTypes.Watchtower>());*/
+                    CardTypes.Armory.card,
+                    CardTypes.Silver.card,
+                    CardTypes.WanderingMinstrell.card,
+                    CardTypes.Watchtower.card,
+                    CardTypes.Rats.card,
+                    CardTypes.Watchtower.card);*/
                 
 
                 var buildOrder = new CardPickByBuildOrder(

@@ -127,7 +127,7 @@ namespace Program
 
                     int coinsToSpend = self.ExpectedCoinValueAtEndOfTurn;
 
-                    if (first.Is<CardTypes.AbandonedMine>() || second.Is<CardTypes.AbandonedMine>())
+                    if (first == CardTypes.AbandonedMine.card || second == CardTypes.AbandonedMine.card)
                     {
                         CardPredicate shouldGainCard = delegate(Card card)
                         {
@@ -138,7 +138,7 @@ namespace Program
 
                         Card cardType = purchaseOrder.GetPreferredCard(gameState, shouldGainCard);
                         if (cardType != null)
-                            return first.Is<CardTypes.AbandonedMine>() ? 0 : 1;
+                            return first == CardTypes.AbandonedMine.card ? 0 : 1;
 
                         //Card Card1 = purchaseOrder.GetPreferredCard(
                         //        gameState,

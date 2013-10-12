@@ -35,7 +35,7 @@ namespace Dominion.CardTypes
         private new void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.RequestPlayerTopDeckCardsFromPlay(gameState,
-                acceptableCard => acceptableCard.Is<Alchemist>(),
+                acceptableCard => acceptableCard == Alchemist.card,
                 isOptional: true);
         }        
     }
@@ -51,7 +51,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.RevealCardsFromDeck(4);
-            currentPlayer.MoveRevealedCardsToHand(card => card.Is<Copper>() || card.Is<Potion>());
+            currentPlayer.MoveRevealedCardsToHand(card => card == Copper.card || card == Potion.card);
         }
     }
 
@@ -86,7 +86,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
- 	         otherPlayer.GainCardFromSupply<Curse>(gameState);
+ 	         otherPlayer.GainCardFromSupply(Curse.card, gameState);
         }
     }
 
@@ -176,13 +176,13 @@ namespace Dominion.CardTypes
             Card trashedCard = currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCard => true, isOptional: false);
 
             if (trashedCard.isAction)
-                currentPlayer.GainCardFromSupply<Duchy>(gameState);
+                currentPlayer.GainCardFromSupply(Duchy.card, gameState);
 
             if (trashedCard.isTreasure)
-                currentPlayer.GainCardFromSupply<Transmute>(gameState);
+                currentPlayer.GainCardFromSupply(Transmute.card, gameState);
 
             if (trashedCard.isVictory)
-                currentPlayer.GainCardFromSupply<Gold>(gameState);
+                currentPlayer.GainCardFromSupply(Gold.card, gameState);
         }
     }
 

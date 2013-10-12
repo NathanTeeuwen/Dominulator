@@ -28,7 +28,7 @@ namespace Program
             static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => gameState.Self.AllOwnedCards.CountOf<CardTypes.Gold>() > 2),
+                           CardAcceptance.For<CardTypes.Province>(gameState => gameState.Self.AllOwnedCards.CountOf(CardTypes.Gold.card) > 2),
                            CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),
                            CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
                            CardAcceptance.For<CardTypes.Gold>(),
@@ -51,7 +51,7 @@ namespace Program
                 return new CardPickByPriority(
                     CardAcceptance.For<CardTypes.Warehouse>(gameState => !HasNoRuinsInDeckAndDeathCartInHand(gameState)),
                     CardAcceptance.For<CardTypes.DeathCart>(HasActionInHandOtherThanDeathCart),
-                    CardAcceptance.For<CardTypes.DeathCart>(gameState => gameState.Self.AllOwnedCards.CountOf<CardTypes.Gold>() > 2),
+                    CardAcceptance.For<CardTypes.DeathCart>(gameState => gameState.Self.AllOwnedCards.CountOf(CardTypes.Gold.card) > 2),
                     CardAcceptance.For<CardTypes.AbandonedMine>(),
                     CardAcceptance.For<CardTypes.RuinedLibrary>(),
                     CardAcceptance.For<CardTypes.Survivors>(),
@@ -79,13 +79,13 @@ namespace Program
 
             static bool ShouldDiscardRuin(GameState gameState)
             {
-                return !gameState.Self.Hand.HasCard<CardTypes.DeathCart>() ||
+                return !gameState.Self.Hand.HasCard(CardTypes.DeathCart.card) ||
                        gameState.Self.Hand.CountWhere(card => card.isRuins) > 1;
             }
 
             static bool HasActionInHandOtherThanDeathCart(GameState gameState)
             {
-                return gameState.Self.Hand.HasCard(card => card.isAction && !(card.Is<CardTypes.DeathCart>()));
+                return gameState.Self.Hand.HasCard(card => card.isAction && !(card == CardTypes.DeathCart.card));
             }
 
             static bool HasNoRuinsInDeck(GameState gameState)
@@ -95,7 +95,7 @@ namespace Program
 
             static bool HasNoRuinsInDeckAndDeathCartInHand(GameState gameState)
             {
-                return HasNoRuinsInDeck(gameState) && gameState.Self.Hand.HasCard<CardTypes.DeathCart>();
+                return HasNoRuinsInDeck(gameState) && gameState.Self.Hand.HasCard(CardTypes.DeathCart.card);
             }
 
             public static CardPickByPriority TrashOrder()

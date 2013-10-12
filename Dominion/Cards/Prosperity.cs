@@ -105,7 +105,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            int maxCoppers = currentPlayer.discard.CountWhere(card => card.Is<CardTypes.Copper>());
+            int maxCoppers = currentPlayer.discard.CountWhere(card => card == CardTypes.Copper.card);
             int cardsToReveal = currentPlayer.actions.GetNumberOfCardsFromDiscardToPutInHand(gameState, maxCoppers);
 
             if (cardsToReveal < 0 || cardsToReveal > maxCoppers)
@@ -115,7 +115,7 @@ namespace Dominion.CardTypes
 
             if (cardsToReveal > 0)
             {
-                currentPlayer.RevealCardsFromDiscard(cardsToReveal, card => card.Is<CardTypes.Copper>());
+                currentPlayer.RevealCardsFromDiscard(cardsToReveal, card => card == CardTypes.Copper.card);
                 currentPlayer.MoveAllRevealedCardsToHand();
             }
         }
@@ -192,7 +192,7 @@ namespace Dominion.CardTypes
 
         public override bool IsRestrictedFromBuy(PlayerState currentPlayer, GameState gameState)
         {
-            return currentPlayer.CardsInPlay.Where(card => card.Is<Copper>()).Any();
+            return currentPlayer.CardsInPlay.Where(card => card == Copper.card).Any();
         }
     }
 
@@ -209,7 +209,7 @@ namespace Dominion.CardTypes
         {
             if (boughtCard.isVictory)
             {
-                currentPlayer.GainCardFromSupply(gameState, Card.Type<CardTypes.Gold>());
+                currentPlayer.GainCardFromSupply(gameState, CardTypes.Gold.card);
             }
         }
     }
@@ -296,8 +296,8 @@ namespace Dominion.CardTypes
         {
             if (!otherPlayer.RequestPlayerDiscardCardFromHand(gameState, card => card.isCurse, true))
             {
-                otherPlayer.GainCardFromSupply<CardTypes.Curse>(gameState);
-                otherPlayer.GainCardFromSupply<CardTypes.Copper>(gameState);
+                otherPlayer.GainCardFromSupply(CardTypes.Curse.card, gameState);
+                otherPlayer.GainCardFromSupply(CardTypes.Copper.card, gameState);
             }
         }
     }

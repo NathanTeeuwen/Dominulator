@@ -53,7 +53,7 @@ namespace Dominion
             }
         }        
 
-        internal Card(
+        protected Card(
             string name,
             int coinCost,
             int potionCost = 0,
@@ -85,8 +85,11 @@ namespace Dominion
             GameStateCardToPlacement doSpecializedActionOnBuyWhileInHand = null,
             GameStateCardToPlacement doSpecializedActionOnGainWhileInHand = null)
         {
-            if (!isConstructing)
-                throw new Exception("Can not call new operator");
+            if (cardTypes.Contains(this.GetType())) {
+                throw new Exception("Do not create duplicate cards.");
+            } else {
+                cardTypes.Add(this.GetType());
+            }
 
             this.name = name;
             this.coinCost = coinCost;
@@ -124,12 +127,6 @@ namespace Dominion
         {
             return this.Equals(card);
         }
-
-        public bool Is<T>()
-            where T : Card, new()
-        {
-            return this.Is(Card.Type<T>());
-        }        
 
         public bool isVictory
         {
@@ -390,40 +387,14 @@ namespace Dominion
 
         }
 
-        public static Card Type<T>()
-            where T : Card, new()
-        {
-            return StaticInstance<T>.Card;            
-        }
-
         public static void InitializeCustomCard(Card card)
         {
             card.privateIndex = ++lastCardIndex;
             card.hashCode = card.privateIndex.GetHashCode();            
         }
 
-        static object cardConstructorLock = new object();
-        static bool isConstructing = false;
         static int lastCardIndex = 0;        
 
-        private static class StaticInstance<T>
-            where T : Card, new()            
-        {
-            static public readonly T Card = InitializeCard();
-
-            private static T InitializeCard()
-            {       
-                T result;
-                lock (cardConstructorLock)
-                {
-                    isConstructing = true;
-                    result = new T();
-                    InitializeCustomCard(result);
-                    isConstructing = false;
-                }
-
-                return result;
-            }
-        }
+        private static HashSet<Type> cardTypes = new HashSet<Type>();
     }
 }

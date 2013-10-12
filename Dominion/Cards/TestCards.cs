@@ -19,12 +19,12 @@ namespace Dominion.CardTypes.TestCards
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardFromSupply<CardTypes.Estate>(gameState);
+            currentPlayer.GainCardFromSupply(CardTypes.Estate.card, gameState);
         }
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.GainCardFromSupply<CardTypes.Curse>(gameState);
+            otherPlayer.GainCardFromSupply(CardTypes.Curse.card, gameState);
             otherPlayer.DiscardHandDownToCount(gameState, 3);
         }
     }

@@ -216,7 +216,7 @@ namespace Dominion.CardTypes
             {
                 if (discardedCard.isVictory)
                 {
-                    otherPlayer.GainCardFromSupply<CardTypes.Curse>(gameState);
+                    otherPlayer.GainCardFromSupply(CardTypes.Curse.card, gameState);
                 }
                 else if (currentPlayer.actions.ShouldGainCard(gameState, discardedCard))
                 {
@@ -306,7 +306,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
             // TODO: BANE CARD
-            otherPlayer.GainCardFromSupply<Curse>(gameState);
+            otherPlayer.GainCardFromSupply(Curse.card, gameState);
         }
     }
 

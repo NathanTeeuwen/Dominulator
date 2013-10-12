@@ -171,7 +171,7 @@ namespace Dominion.CardTypes
 
         public override void OverpayOnPurchase(PlayerState currentPlayer, GameState gameState, int overpayAmount)
         {
-            currentPlayer.GainCardsFromSupply<CardTypes.Silver>(gameState, overpayAmount);
+            currentPlayer.GainCardsFromSupply(gameState, CardTypes.Silver.card, overpayAmount);
         }
     }
 
@@ -202,12 +202,12 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardFromSupply<Gold>(gameState);
+            currentPlayer.GainCardFromSupply(Gold.card, gameState);
         }
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            if (otherPlayer.GainCardFromSupply<Curse>(gameState))
+            if (otherPlayer.GainCardFromSupply(Curse.card, gameState))
             {
                 otherPlayer.DrawAdditionalCardsIntoHand(1);
             }

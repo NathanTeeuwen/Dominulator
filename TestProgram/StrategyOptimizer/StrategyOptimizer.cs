@@ -12,9 +12,9 @@ namespace Program
         {
             var initialDescription = new PickByPriorityDescription(new CardAcceptanceDescription[]
             {
-                new CardAcceptanceDescription( Card.Type<CardTypes.Province>(), new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)}),
-                new CardAcceptanceDescription( Card.Type<CardTypes.Gold>(), new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)}),
-                new CardAcceptanceDescription( Card.Type<CardTypes.Silver>(), new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)})
+                new CardAcceptanceDescription( CardTypes.Province.card, new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)}),
+                new CardAcceptanceDescription( CardTypes.Gold.card, new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)}),
+                new CardAcceptanceDescription( CardTypes.Silver.card, new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)})
             });
 
             Random random = new Random();

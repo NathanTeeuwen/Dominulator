@@ -52,7 +52,7 @@ namespace Program
                            CountInDeck<CardTypes.Duchy>(gameState) > 0 && 
                            CountInDeck<CardTypes.Estate>(gameState) > 0))
                     {
-                        return Card.Type<CardTypes.Duchy>();
+                        return CardTypes.Duchy.card;
                     }
 
                     //Name Province if you are ensured of gaining a Province
@@ -60,7 +60,7 @@ namespace Program
                         CountInDeck<CardTypes.Province>(gameState) >= 0 && 
                         CountInDeck<CardTypes.Duchy>(gameState) > 0)
                     {
-                        return Card.Type<CardTypes.Province>();
+                        return CardTypes.Province.card;
                     }
 
                     //Name Province if you are ensured of gaining a Province
@@ -68,14 +68,14 @@ namespace Program
                         && CountInDeckAndDiscard<CardTypes.Province>(gameState) >= 0
                         && CountInDeckAndDiscard<CardTypes.Duchy>(gameState) > 0)
                     {
-                        return Card.Type<CardTypes.Province>();
+                        return CardTypes.Province.card;
                     }
 
                     //Name Estate if you can end it with a win                    
                     if (CountInHand<CardTypes.Rebuild>(gameState) + 1 >= CountOfPile<CardTypes.Province>(gameState) && 
                         pointLead > 0)
                     {
-                        return Card.Type<CardTypes.Estate>();
+                        return CardTypes.Estate.card;
                     }
 
                     //Name Estate if it's the only thing left in your draw pile and the Duchies are gone
@@ -83,7 +83,7 @@ namespace Program
                         CountInDeck<CardTypes.Province>(gameState) == 0 && 
                         CountInDeck<CardTypes.Estate>(gameState) > 0)
                     {
-                        return Card.Type<CardTypes.Estate>();
+                        return CardTypes.Estate.card;
                     }
 
                     //Name Province if Duchy is in Draw and Draw contains more P than E
@@ -91,7 +91,7 @@ namespace Program
                         CountInDeck<CardTypes.Duchy>(gameState) > 0 && 
                         CountInDeck<CardTypes.Province>(gameState) > CountInDeck<CardTypes.Estate>(gameState))
                     {
-                        return Card.Type<CardTypes.Province>();
+                        return CardTypes.Province.card;
                     }
 
                     //Name Estate if you're ahead and both P and E are left in draw
@@ -100,7 +100,7 @@ namespace Program
                         CountInDeck<CardTypes.Estate>(gameState) > 0 && 
                         pointLead > 2)
                     {
-                        return Card.Type<CardTypes.Estate>();
+                        return CardTypes.Estate.card;
                     }
 
                     //Name Estate over Province if you're way ahead
@@ -110,7 +110,7 @@ namespace Program
                         CountInDeckAndDiscard<CardTypes.Estate>(gameState) > 0 && 
                         pointLead > 4)
                     {
-                        return Card.Type<CardTypes.Estate>();
+                        return CardTypes.Estate.card;
                     }
 
                     //Province -> Province when ahead without any Duchies left
@@ -118,7 +118,7 @@ namespace Program
                         CountAllOwned<CardTypes.Duchy>(gameState) == 0 &&
                         pointLead > 0)
                     {
-                        return Card.Type<CardTypes.Estate>();
+                        return CardTypes.Estate.card;
                     }
 
                     //Province -> Province when ahead without any Duchies not in hand
@@ -127,15 +127,15 @@ namespace Program
                         CountInDeckAndDiscard<CardTypes.Province>(gameState) > 0 && 
                         pointLead > 2)
                     {
-                        return Card.Type<CardTypes.Estate>();
+                        return CardTypes.Estate.card;
                     }
 
                     if (CountInDeckAndDiscard<CardTypes.Province>(gameState) > 0)
                     {
-                        return Card.Type<CardTypes.Province>();
+                        return CardTypes.Province.card;
                     }
 
-                    return Card.Type<CardTypes.Estate>();
+                    return CardTypes.Estate.card;
                 }
             }
 
@@ -215,7 +215,7 @@ namespace Program
                 public MyPlayerAction(int playerNumber)
                     : base(playerNumber,
                            "RebuildJack",
-                           Card.Type<CardTypes.JackOfAllTrades>(),
+                           CardTypes.JackOfAllTrades.card,
                            gameState => CountAllOwned<CardTypes.JackOfAllTrades>(gameState) < 1)
                 {
                 }
@@ -236,7 +236,7 @@ namespace Program
                 public MyPlayerAction(int playerNumber)
                     : base(playerNumber,
                            "RebuildMonument",
-                           Card.Type<CardTypes.Monument>(),
+                           CardTypes.Monument.card,
                            gameState => CountAllOwned<CardTypes.Monument>(gameState) < 2)
                 {
                 }

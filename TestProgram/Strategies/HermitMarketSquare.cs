@@ -94,7 +94,7 @@ namespace Program
                 {
                     PlayerState self = gameState.Self;
 
-                    if (!self.Hand.HasCard<CardTypes.Madman>())
+                    if (!self.Hand.HasCard(CardTypes.Madman.card))
                         return false;
 
                     if (CountAllOwned<CardTypes.Province>(gameState) > 0)
@@ -129,7 +129,7 @@ namespace Program
                         if (ShouldPlayMadman(trashOrder)(gameState))
                             return false;
 
-                        int numberOfProvincesCanAfford = self.ExpectedCoinValueAtEndOfTurn / Card.Type<CardTypes.Province>().CurrentCoinCost(self);
+                        int numberOfProvincesCanAfford = self.ExpectedCoinValueAtEndOfTurn / CardTypes.Province.card.CurrentCoinCost(self);
                         if (self.AvailableBuys < numberOfProvincesCanAfford)
                             return true;
 
@@ -143,8 +143,8 @@ namespace Program
                 PlayerState self = gameState.Self;
 
                 return trashOrder.GetPreferredCard(gameState, c => (self.Hand.HasCard(c) || self.Discard.HasCard(c)) && CardTypes.Hermit.CanTrashCard(c)) != null &&
-                       self.Hand.HasCard<CardTypes.Hermit>() &&
-                       self.Hand.HasCard<CardTypes.MarketSquare>();
+                       self.Hand.HasCard(CardTypes.Hermit.card) &&
+                       self.Hand.HasCard(CardTypes.MarketSquare.card);
             }
 
             private static bool ShouldStartMegaTurn(GameState gameState)
@@ -155,18 +155,18 @@ namespace Program
                   CountInHand<CardTypes.MarketSquare>(gameState);
 
                 if (self.Hand.Count < 5 ||
-                    self.Hand.CountOf<CardTypes.Madman>() < 2 ||
+                    self.Hand.CountOf(CardTypes.Madman.card) < 2 ||
                     CountMSNotInPlay < 3)
                     return false;
 
                 if (PlayBigHermit(gameState))
                 {
-                    return self.AllOwnedCards.CountOf<CardTypes.Madman>() >= 6 &&                           
+                    return self.AllOwnedCards.CountOf(CardTypes.Madman.card) >= 6 &&                           
                            CountHermitsEverGained(gameState) >= 9;
                 }
                 else
                 {
-                    return self.AllOwnedCards.CountOf<CardTypes.Madman>() >= 4 &&
+                    return self.AllOwnedCards.CountOf(CardTypes.Madman.card) >= 4 &&
                            CountHermitsEverGained(gameState) >= 7;
                 }
             }

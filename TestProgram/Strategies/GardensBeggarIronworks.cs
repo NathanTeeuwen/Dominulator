@@ -28,7 +28,7 @@ namespace Program
                 return new CardPickByPriority(                           
                            CardAcceptance.For<CardTypes.IronWorks>(),
                            CardAcceptance.For<CardTypes.Silver>(gameState => gameState.Self.Hand.CountWhere(c => c.isAction) == 0 &&
-                                                                gameState.Self.Hand.CountOf<CardTypes.Copper>() == 3),
+                                                                gameState.Self.Hand.CountOf(CardTypes.Copper.card) == 3),
                            CardAcceptance.For<CardTypes.Beggar>(gameState => gameState.Self.Hand.CountWhere(c => c.isAction) > 0),                           
                            CardAcceptance.For<CardTypes.Gardens>(),
                            CardAcceptance.For<CardTypes.SilkRoad>(),
