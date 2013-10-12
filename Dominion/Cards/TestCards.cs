@@ -12,7 +12,7 @@ namespace Dominion.CardTypes.TestCards
     public class FollowersTest :
         Card
     {
-        public static FollowersTest card; private FollowersTest(int cost)
+        public FollowersTest(int cost)
             : base("Followers", coinCost: cost, isAction: true, plusCards: 2, isAttack: true)
         {
         }

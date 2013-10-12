@@ -54,6 +54,21 @@ namespace Program
             return new CardAcceptance(card, match);
         }
 
+        public static CardAcceptance For(Card card, GameStatePredicate match, GameStateIntValue overpayAmount)
+        {
+            return new CardAcceptance(card, match, overpayAmount);
+        }
+
+        public static CardAcceptance For(Card card, int threshhold)
+        {
+            return For(card, CountSource.AllOwned, Comparison.LessThan, threshhold);
+        }
+
+        public static CardAcceptance For(Card card, int threshhold, GameStatePredicate match)
+        {
+            return For(card, CountSource.AllOwned, Comparison.LessThan, threshhold, match);
+        }
+
         public static CardAcceptance For(Card card, CountSource countSource, Comparison comparison, int threshhold)
         {
             MatchDescription descr = new MatchDescription(card, countSource, comparison, threshhold);
