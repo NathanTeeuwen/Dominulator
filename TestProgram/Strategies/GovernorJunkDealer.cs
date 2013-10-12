@@ -39,36 +39,36 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2),
-                           CardAcceptance.For<CardTypes.Conspirator>(gameState => CountAllOwned<CardTypes.Conspirator>(gameState) < 1),
-                           CardAcceptance.For<CardTypes.JunkDealer>(gameState => CountAllOwned<CardTypes.JunkDealer>(gameState) < 1),
-                           CardAcceptance.For<CardTypes.Governor>(gameState => CountAllOwned<CardTypes.Governor>(gameState) < 2),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Governor>(),
-                           CardAcceptance.For<CardTypes.Silver>()
+                           CardAcceptance.For(Cards.Province, gameState => CountAllOwned(Cards.Gold, gameState) > 2),
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) < 4),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2),
+                           CardAcceptance.For(Cards.Conspirator, gameState => CountAllOwned(Cards.Conspirator, gameState) < 1),
+                           CardAcceptance.For(Cards.JunkDealer, gameState => CountAllOwned(Cards.JunkDealer, gameState) < 1),
+                           CardAcceptance.For(Cards.Governor, gameState => CountAllOwned(Cards.Governor, gameState) < 2),
+                           CardAcceptance.For(Cards.Gold),
+                           CardAcceptance.For(Cards.Governor),
+                           CardAcceptance.For(Cards.Silver)
                            );
             }
 
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Governor>(),
-                           CardAcceptance.For<CardTypes.JunkDealer>(gameState => HasCardFromInHand(TrashOrder(), gameState)),
-                           CardAcceptance.For<CardTypes.Necropolis>(),
-                           CardAcceptance.For<CardTypes.Conspirator>()
+                           CardAcceptance.For(Cards.Governor),
+                           CardAcceptance.For(Cards.JunkDealer, gameState => HasCardFromInHand(TrashOrder(), gameState)),
+                           CardAcceptance.For(Cards.Necropolis),
+                           CardAcceptance.For(Cards.Conspirator)
                            );
             }
           
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(                  
-                           CardAcceptance.For<CardTypes.OvergrownEstate>(),
-                           CardAcceptance.For<CardTypes.Necropolis>(),
-                           CardAcceptance.For<CardTypes.Hovel>(),
-                           CardAcceptance.For<CardTypes.Estate>(),                           
-                           CardAcceptance.For<CardTypes.Copper>());
+                           CardAcceptance.For(Cards.OvergrownEstate),
+                           CardAcceptance.For(Cards.Necropolis),
+                           CardAcceptance.For(Cards.Hovel),
+                           CardAcceptance.For(Cards.Estate),                           
+                           CardAcceptance.For(Cards.Copper));
             }
         }
     }

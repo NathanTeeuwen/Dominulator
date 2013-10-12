@@ -54,50 +54,33 @@ namespace Program
             return new CardAcceptance(card, match);
         }
 
-        public static CardAcceptance For<T>()
-            where T : Card, new()
+        public static CardAcceptance For(Card card, GameStatePredicate match, GameStateIntValue overpayAmount)
         {
-            return new CardAcceptance(Card.Type<T>());
+            return new CardAcceptance(card, match, overpayAmount);
         }
 
-        public static CardAcceptance For<T>(GameStatePredicate match)
-            where T : Card, new()
+        public static CardAcceptance For(Card card, int threshhold)
         {
-            return new CardAcceptance(Card.Type<T>(), match);
+            return For(card, CountSource.AllOwned, Comparison.LessThan, threshhold);
         }
 
-        public static CardAcceptance For<T>(GameStatePredicate match, GameStateIntValue overpayAmount)
-            where T : Card, new()
+        public static CardAcceptance For(Card card, int threshhold, GameStatePredicate match)
         {
-            return new CardAcceptance(Card.Type<T>(), match, overpayAmount);
+            return For(card, CountSource.AllOwned, Comparison.LessThan, threshhold, match);
         }
 
-        public static CardAcceptance For<T>(int threshhold)
-            where T : Card, new()
+        public static CardAcceptance For(Card card, CountSource countSource, Comparison comparison, int threshhold)
         {
-            return For<T>(CountSource.AllOwned, Comparison.LessThan, threshhold);
-        }
-
-        public static CardAcceptance For<T>(int threshhold, GameStatePredicate match)
-            where T : Card, new()
-        {
-            return For<T>(CountSource.AllOwned, Comparison.LessThan, threshhold, match);
-        }
-
-        public static CardAcceptance For<T>(CountSource countSource, Comparison comparison, int threshhold)
-           where T : Card, new()
-        {
-            MatchDescription descr = new MatchDescription(Card.Type<T>(), countSource, comparison, threshhold);
+            MatchDescription descr = new MatchDescription(card, countSource, comparison, threshhold);
 
             return descr.ToCardAcceptance();            
         }
 
-        public static CardAcceptance For<T>(CountSource countSource, Comparison comparison, int threshhold, GameStatePredicate match)
-           where T : Card, new()
+        public static CardAcceptance For(Card card, CountSource countSource, Comparison comparison, int threshhold, GameStatePredicate match)
         {
-            MatchDescription descr = new MatchDescription(Card.Type<T>(), countSource, comparison, threshhold);
+            MatchDescription descr = new MatchDescription(card, countSource, comparison, threshhold);
 
-            return CardAcceptance.For(Card.Type<T>(), gameState => descr.GameStatePredicate(gameState) && match(gameState));
+            return CardAcceptance.For(card, gameState => descr.GameStatePredicate(gameState) && match(gameState));
         } 
     }
 }

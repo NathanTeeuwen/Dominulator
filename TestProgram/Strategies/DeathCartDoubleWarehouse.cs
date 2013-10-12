@@ -28,20 +28,20 @@ namespace Program
             static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(gameState => gameState.Self.AllOwnedCards.CountOf<CardTypes.Gold>() > 2),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 3));
+                           CardAcceptance.For(Cards.Province, gameState => gameState.Self.AllOwnedCards.CountOf(Cards.Gold) > 2),
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 2),
+                           CardAcceptance.For(Cards.Gold),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 3));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    CardAcceptance.For<CardTypes.DeathCart>(),
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Warehouse>(),
-                    CardAcceptance.For<CardTypes.Warehouse>());
+                    CardAcceptance.For(Cards.DeathCart),
+                    CardAcceptance.For(Cards.Silver),
+                    CardAcceptance.For(Cards.Warehouse),
+                    CardAcceptance.For(Cards.Warehouse));
 
                 var lowPriority = new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(Cards.Silver));
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
             }
@@ -49,43 +49,43 @@ namespace Program
             static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Warehouse>(gameState => !HasNoRuinsInDeckAndDeathCartInHand(gameState)),
-                    CardAcceptance.For<CardTypes.DeathCart>(HasActionInHandOtherThanDeathCart),
-                    CardAcceptance.For<CardTypes.DeathCart>(gameState => gameState.Self.AllOwnedCards.CountOf<CardTypes.Gold>() > 2),
-                    CardAcceptance.For<CardTypes.AbandonedMine>(),
-                    CardAcceptance.For<CardTypes.RuinedLibrary>(),
-                    CardAcceptance.For<CardTypes.Survivors>(),
-                    CardAcceptance.For<CardTypes.RuinedMarket>(),
-                    CardAcceptance.For<CardTypes.RuinedVillage>());
+                    CardAcceptance.For(Cards.Warehouse, gameState => !HasNoRuinsInDeckAndDeathCartInHand(gameState)),
+                    CardAcceptance.For(Cards.DeathCart, HasActionInHandOtherThanDeathCart),
+                    CardAcceptance.For(Cards.DeathCart, gameState => gameState.Self.AllOwnedCards.CountOf(Cards.Gold) > 2),
+                    CardAcceptance.For(Cards.AbandonedMine),
+                    CardAcceptance.For(Cards.RuinedLibrary),
+                    CardAcceptance.For(Cards.Survivors),
+                    CardAcceptance.For(Cards.RuinedMarket),
+                    CardAcceptance.For(Cards.RuinedVillage));
             }
 
             static CardPickByPriority DiscardOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Province>(),
-                    CardAcceptance.For<CardTypes.Duchy>(),
-                    CardAcceptance.For<CardTypes.Estate>(),
-                    CardAcceptance.For<CardTypes.RuinedVillage>(ShouldDiscardRuin),
-                    CardAcceptance.For<CardTypes.Survivors>(ShouldDiscardRuin),
-                    CardAcceptance.For<CardTypes.RuinedMarket>(ShouldDiscardRuin),
-                    CardAcceptance.For<CardTypes.RuinedLibrary>(ShouldDiscardRuin),
-                    CardAcceptance.For<CardTypes.AbandonedMine>(ShouldDiscardRuin),
-                    CardAcceptance.For<CardTypes.Copper>(),
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Warehouse>(),
-                    CardAcceptance.For<CardTypes.DeathCart>(),
-                    CardAcceptance.For<CardTypes.Gold>());
+                    CardAcceptance.For(Cards.Province),
+                    CardAcceptance.For(Cards.Duchy),
+                    CardAcceptance.For(Cards.Estate),
+                    CardAcceptance.For(Cards.RuinedVillage, ShouldDiscardRuin),
+                    CardAcceptance.For(Cards.Survivors, ShouldDiscardRuin),
+                    CardAcceptance.For(Cards.RuinedMarket, ShouldDiscardRuin),
+                    CardAcceptance.For(Cards.RuinedLibrary, ShouldDiscardRuin),
+                    CardAcceptance.For(Cards.AbandonedMine, ShouldDiscardRuin),
+                    CardAcceptance.For(Cards.Copper),
+                    CardAcceptance.For(Cards.Silver),
+                    CardAcceptance.For(Cards.Warehouse),
+                    CardAcceptance.For(Cards.DeathCart),
+                    CardAcceptance.For(Cards.Gold));
             }
 
             static bool ShouldDiscardRuin(GameState gameState)
             {
-                return !gameState.Self.Hand.HasCard<CardTypes.DeathCart>() ||
+                return !gameState.Self.Hand.HasCard(Cards.DeathCart) ||
                        gameState.Self.Hand.CountWhere(card => card.isRuins) > 1;
             }
 
             static bool HasActionInHandOtherThanDeathCart(GameState gameState)
             {
-                return gameState.Self.Hand.HasCard(card => card.isAction && !(card.Is<CardTypes.DeathCart>()));
+                return gameState.Self.Hand.HasCard(card => card.isAction && !(card == Cards.DeathCart));
             }
 
             static bool HasNoRuinsInDeck(GameState gameState)
@@ -95,18 +95,18 @@ namespace Program
 
             static bool HasNoRuinsInDeckAndDeathCartInHand(GameState gameState)
             {
-                return HasNoRuinsInDeck(gameState) && gameState.Self.Hand.HasCard<CardTypes.DeathCart>();
+                return HasNoRuinsInDeck(gameState) && gameState.Self.Hand.HasCard(Cards.DeathCart);
             }
 
             public static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.RuinedVillage>(),
-                    CardAcceptance.For<CardTypes.Survivors>(),
-                    CardAcceptance.For<CardTypes.RuinedMarket>(),
-                    CardAcceptance.For<CardTypes.RuinedLibrary>(),
-                    CardAcceptance.For<CardTypes.AbandonedMine>(),
-                    CardAcceptance.For<CardTypes.Warehouse>(HasNoRuinsInDeck));
+                    CardAcceptance.For(Cards.RuinedVillage),
+                    CardAcceptance.For(Cards.Survivors),
+                    CardAcceptance.For(Cards.RuinedMarket),
+                    CardAcceptance.For(Cards.RuinedLibrary),
+                    CardAcceptance.For(Cards.AbandonedMine),
+                    CardAcceptance.For(Cards.Warehouse, HasNoRuinsInDeck));
             }
 
         }

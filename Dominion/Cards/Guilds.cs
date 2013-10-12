@@ -12,7 +12,7 @@ namespace Dominion.CardTypes
     public class Advisor
         : Card
     {
-        public Advisor()
+        public static Advisor card = new Advisor(); private Advisor()
             : base("Advisor", coinCost: 4, isAction: true,  plusActions:1)
         {
         }
@@ -26,7 +26,7 @@ namespace Dominion.CardTypes
     public class Baker
         : Card
     {
-        public Baker()
+        public static Baker card = new Baker(); private Baker()
             : base("Baker", coinCost: 5, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
@@ -48,7 +48,7 @@ namespace Dominion.CardTypes
     public class Butcher
         : Card
     {
-        public Butcher()
+        public static Butcher card = new Butcher(); private Butcher()
             : base("Butcher", coinCost: 5, isAction: true)
         {
         }
@@ -78,7 +78,7 @@ namespace Dominion.CardTypes
     public class CandlestickMaker
         : Card
     {
-        public CandlestickMaker()
+        public static CandlestickMaker card = new CandlestickMaker(); private CandlestickMaker()
             : base("CandlestickMaker", coinCost: 2, isAction: true, plusActions:1, plusBuy:1)
         {
         }
@@ -92,7 +92,7 @@ namespace Dominion.CardTypes
     public class Doctor
         : Card
     {
-        public Doctor()
+        public static Doctor card = new Doctor(); private Doctor()
             : base("Doctor", coinCost: 3, isAction: true, canOverpay: true)
         {
         }
@@ -145,7 +145,7 @@ namespace Dominion.CardTypes
     public class Herald
        : Card
     {
-        public Herald()
+        public static Herald card = new Herald(); private Herald()
             : base("Herald", coinCost: 4, isAction: true, canOverpay: true, plusActions:1, plusCards:1)
         {
         }
@@ -160,7 +160,7 @@ namespace Dominion.CardTypes
     public class Masterpiece
         : Card
     {
-        public Masterpiece()
+        public static Masterpiece card = new Masterpiece(); private Masterpiece()
             : base("Masterpiece", coinCost: 3, isTreasure:true, canOverpay: true, plusCoins:1)
         {
         }
@@ -171,14 +171,14 @@ namespace Dominion.CardTypes
 
         public override void OverpayOnPurchase(PlayerState currentPlayer, GameState gameState, int overpayAmount)
         {
-            currentPlayer.GainCardsFromSupply<CardTypes.Silver>(gameState, overpayAmount);
+            currentPlayer.GainCardsFromSupply(gameState, Cards.Silver, overpayAmount);
         }
     }
 
     public class Plaza
         : Card
     {
-        public Plaza()
+        public static Plaza card = new Plaza(); private Plaza()
             : base("Plaza", coinCost: 4, isAction: true, plusActions: 2, plusCards: 1)
         {
         }
@@ -195,19 +195,19 @@ namespace Dominion.CardTypes
     public class Soothsayer
         : Card
     {
-        public Soothsayer()
+        public static Soothsayer card = new Soothsayer(); private Soothsayer()
             : base("Soothsayer", coinCost: 5, isAction: true, isAttack: true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardFromSupply<Gold>(gameState);
+            currentPlayer.GainCardFromSupply(Gold.card, gameState);
         }
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            if (otherPlayer.GainCardFromSupply<Curse>(gameState))
+            if (otherPlayer.GainCardFromSupply(Curse.card, gameState))
             {
                 otherPlayer.DrawAdditionalCardsIntoHand(1);
             }
@@ -217,7 +217,7 @@ namespace Dominion.CardTypes
     public class StoneMason
         : Card
     {
-        public StoneMason()
+        public static StoneMason card = new StoneMason(); private StoneMason()
             : base("StoneMason", coinCost: 2, isAction: true, canOverpay: true)
         {
         }
@@ -255,7 +255,7 @@ namespace Dominion.CardTypes
     public class Taxman
        : Card
     {
-        public Taxman()
+        public static Taxman card = new Taxman(); private Taxman()
             : base("Taxman", coinCost: 4, isAction: true, isAttack: true, attackDependsOnPlayerChoice: true)
         {
         }

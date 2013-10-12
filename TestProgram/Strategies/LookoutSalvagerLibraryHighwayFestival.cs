@@ -34,61 +34,61 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                     CardAcceptance.For<CardTypes.Province>(ShouldBuyProvinces),
-                     CardAcceptance.For<CardTypes.Duchy>(gameState => CountAllOwned<CardTypes.Province>(gameState) >= 3),
-                     CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 1),
-                     CardAcceptance.For<CardTypes.Salvager>(gameState => CountAllOwned<CardTypes.Copper>(gameState) >= 6 && CountAllOwned<CardTypes.Salvager>(gameState) == 0),
-                     CardAcceptance.For<CardTypes.Lookout>(gameState => CountAllOwned<CardTypes.Copper>(gameState) >= 6 && CountAllOwned<CardTypes.Lookout>(gameState) == 0),
-                     CardAcceptance.For<CardTypes.Silver>(gameState => CountAllOwned<CardTypes.Silver>(gameState) + CountAllOwned<CardTypes.Festival>(gameState) < 2)
+                     CardAcceptance.For(Cards.Province, ShouldBuyProvinces),
+                     CardAcceptance.For(Cards.Duchy, gameState => CountAllOwned(Cards.Province, gameState) >= 3),
+                     CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 1),
+                     CardAcceptance.For(Cards.Salvager, gameState => CountAllOwned(Cards.Copper, gameState) >= 6 && CountAllOwned(Cards.Salvager, gameState) == 0),
+                     CardAcceptance.For(Cards.Lookout, gameState => CountAllOwned(Cards.Copper, gameState) >= 6 && CountAllOwned(Cards.Lookout, gameState) == 0),
+                     CardAcceptance.For(Cards.Silver, gameState => CountAllOwned(Cards.Silver, gameState) + CountAllOwned(Cards.Festival, gameState) < 2)
                      );
                 
                 var buildOrder = new CardPickByBuildOrder(
-                    CardAcceptance.For<CardTypes.Festival>(),
-                    CardAcceptance.For<CardTypes.Library>(),
-                    CardAcceptance.For<CardTypes.Festival>(),
-                    CardAcceptance.For<CardTypes.Highway>(),
-                    CardAcceptance.For<CardTypes.Highway>(),
-                    CardAcceptance.For<CardTypes.Festival>(),
-                    CardAcceptance.For<CardTypes.Festival>(),
-                    CardAcceptance.For<CardTypes.Library>(),
-                    CardAcceptance.For<CardTypes.Festival>()
+                    CardAcceptance.For(Cards.Festival),
+                    CardAcceptance.For(Cards.Library),
+                    CardAcceptance.For(Cards.Festival),
+                    CardAcceptance.For(Cards.Highway),
+                    CardAcceptance.For(Cards.Highway),
+                    CardAcceptance.For(Cards.Festival),
+                    CardAcceptance.For(Cards.Festival),
+                    CardAcceptance.For(Cards.Library),
+                    CardAcceptance.For(Cards.Festival)
                     );
 
                 var lowPriority = new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Highway>());
+                    CardAcceptance.For(Cards.Highway));
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
             }
 
             private static bool ShouldBuyProvinces(GameState gameState)
             {
-                return CostOfCard<CardTypes.Province>(gameState) <= 4 || CountAllOwned<CardTypes.Province>(gameState) > 0;
+                return CostOfCard(Cards.Province, gameState) <= 4 || CountAllOwned(Cards.Province, gameState) > 0;
             }
 
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Lookout>(Default.ShouldPlayLookout(ShouldBuyProvinces)),
-                           CardAcceptance.For<CardTypes.Highway>(),
-                           CardAcceptance.For<CardTypes.Festival>(),
-                           CardAcceptance.For<CardTypes.Salvager>(Default.ShouldPlaySalvager(TrashOrder())),
-                           CardAcceptance.For<CardTypes.Necropolis>(),
-                           CardAcceptance.For<CardTypes.Library>()
+                           CardAcceptance.For(Cards.Lookout, Default.ShouldPlayLookout(ShouldBuyProvinces)),
+                           CardAcceptance.For(Cards.Highway),
+                           CardAcceptance.For(Cards.Festival),
+                           CardAcceptance.For(Cards.Salvager, Default.ShouldPlaySalvager(TrashOrder())),
+                           CardAcceptance.For(Cards.Necropolis),
+                           CardAcceptance.For(Cards.Library)
                            );
             }            
 
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(                           
-                           CardAcceptance.For<CardTypes.Curse>(),
-                           CardAcceptance.For<CardTypes.Lookout>(gameState => CountAllOwned<CardTypes.Copper>(gameState) <= 4),                                               
-                           CardAcceptance.For<CardTypes.Estate>(),
-                           CardAcceptance.For<CardTypes.OvergrownEstate>(),
-                           CardAcceptance.For<CardTypes.Hovel>(),
-                           CardAcceptance.For<CardTypes.Necropolis>(),
-                           CardAcceptance.For<CardTypes.Silver>(gameState => gameState.Self.ExpectedCoinValueAtEndOfTurn == 4 && CardBeingPlayedIs<CardTypes.Salvager>(gameState)),
-                           CardAcceptance.For<CardTypes.Copper>(),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(Cards.Curse),
+                           CardAcceptance.For(Cards.Lookout, gameState => CountAllOwned(Cards.Copper, gameState) <= 4),                                               
+                           CardAcceptance.For(Cards.Estate),
+                           CardAcceptance.For(Cards.OvergrownEstate),
+                           CardAcceptance.For(Cards.Hovel),
+                           CardAcceptance.For(Cards.Necropolis),
+                           CardAcceptance.For(Cards.Silver, gameState => gameState.Self.ExpectedCoinValueAtEndOfTurn == 4 && CardBeingPlayedIs(Cards.Salvager, gameState)),
+                           CardAcceptance.For(Cards.Copper),
+                           CardAcceptance.For(Cards.Silver));
             }            
         }
     }

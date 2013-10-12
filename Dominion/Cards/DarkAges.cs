@@ -10,12 +10,12 @@ namespace Dominion.CardTypes
     using Dominion;
 
     // Shelters
-    public class Necropolis : Card { public Necropolis() : base("Necropolis", coinCost: 1, plusActions: 2, isAction: true, isShelter: true) { } }
+    public class Necropolis : Card { public static Necropolis card = new Necropolis(); private Necropolis() : base("Necropolis", coinCost: 1, plusActions: 2, isAction: true, isShelter: true) { } }
 
     public class Hovel
         : Card
     {
-        public Hovel()
+        public static Hovel card = new Hovel(); private Hovel()
             : base("Hovel", coinCost: 1, isShelter: true)
         {
             this.doSpecializedActionOnBuyWhileInHand = DoSpecializedActionOnBuyWhileInHand;
@@ -25,7 +25,7 @@ namespace Dominion.CardTypes
         {
             if (gainedCard.isVictory)
             {
-                currentPlayer.RequestPlayerTrashCardFromHand(gameState, card => card.Is<Hovel>(), isOptional: true);
+                currentPlayer.RequestPlayerTrashCardFromHand(gameState, card => card == Hovel.card, isOptional: true);
             }
 
             return DeckPlacement.Default;
@@ -35,7 +35,7 @@ namespace Dominion.CardTypes
     public class OvergrownEstate
         : Card
     {
-        public OvergrownEstate()
+        public static OvergrownEstate card = new OvergrownEstate(); private OvergrownEstate()
             : base("Overgrown Estate", coinCost: 1, victoryPoints: PlayerState => 0, isShelter: true)
         {
 
@@ -50,7 +50,7 @@ namespace Dominion.CardTypes
     public class Spoils :
         Card
     {
-        public Spoils()
+        public static Spoils card = new Spoils(); private Spoils()
             : base("Spoils", coinCost: 0, plusCoins:3, isAction: true, isTreasure:true)
         {
         }
@@ -66,6 +66,8 @@ namespace Dominion.CardTypes
     public class Ruins :
         Card
     {
+        public static Ruins card = new Ruins();
+
         public Ruins()
             : this("Ruins")
         {
@@ -85,7 +87,7 @@ namespace Dominion.CardTypes
     public class AbandonedMine :
         Ruins
     {
-        public AbandonedMine()
+        new public static AbandonedMine card = new AbandonedMine(); private AbandonedMine()
             : base("Abandoned Mine", plusCoins: 1)
         {            
         }
@@ -94,7 +96,7 @@ namespace Dominion.CardTypes
     public class RuinedLibrary :
         Ruins
     {
-        public RuinedLibrary()
+        new public static RuinedLibrary card = new RuinedLibrary(); private RuinedLibrary()
             : base("Ruined Library",  plusCards: 1)
         {
         }
@@ -103,7 +105,7 @@ namespace Dominion.CardTypes
     public class RuinedMarket :
         Ruins
     {
-        public RuinedMarket()
+        new public static RuinedMarket card = new RuinedMarket(); private RuinedMarket()
             : base("Ruined Market", plusBuy: 1)
         {
         }
@@ -112,7 +114,7 @@ namespace Dominion.CardTypes
     public class RuinedVillage :
         Ruins
     {
-        public RuinedVillage()
+        new public static RuinedVillage card = new RuinedVillage(); private RuinedVillage()
             : base("Ruined Village", plusActions: 1)
         {
         }
@@ -121,7 +123,7 @@ namespace Dominion.CardTypes
     public class Survivors :
         Ruins
     {
-        public Survivors()
+        new public static Survivors card = new Survivors(); private Survivors()
             : base("Survivors")
         {
         }
@@ -137,7 +139,7 @@ namespace Dominion.CardTypes
     public class Altar :
         Card
     {
-        public Altar()
+        public static Altar card = new Altar(); private Altar()
             : base("Altar", coinCost: 6, isAction: true)
         {
         }
@@ -156,7 +158,7 @@ namespace Dominion.CardTypes
     public class Armory :
         Card
     {
-        public Armory()
+        public static Armory card = new Armory(); private Armory()
             : base("Armory", coinCost: 4, isAction: true)
         {
         }
@@ -174,7 +176,7 @@ namespace Dominion.CardTypes
     public class BandOfMisfits :
         Card
     {
-        public BandOfMisfits()
+        public static BandOfMisfits card = new BandOfMisfits(); private BandOfMisfits()
             : base("BandOfMisfits", coinCost: 5, isAction: true)
         {
         }
@@ -188,42 +190,42 @@ namespace Dominion.CardTypes
     public class BanditCamp :
         Card
     {
-        public BanditCamp()
+        public static BanditCamp card = new BanditCamp(); private BanditCamp()
             : base("BanditCamp", coinCost: 5, isAction: true, plusCards:1, plusActions:2, requiresSpoils:true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardFromSupply<CardTypes.Spoils>(gameState);
+            currentPlayer.GainCardFromSupply(Cards.Spoils, gameState);
         }
     }
 
     public class Beggar :
         Card
     {
-        public Beggar()
+        public static Beggar card = new Beggar(); private Beggar()
             : base("Beggar", coinCost: 2, isAction: true, isReaction:true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardsFromSupply<Copper>(gameState, 3, DeckPlacement.Hand);
+            currentPlayer.GainCardsFromSupply(gameState, Copper.card, 3, DeckPlacement.Hand);
         }
 
         public override bool DoReactionToAttackWhileInHand(PlayerState currentPlayer, GameState gameState, out bool cancelsAttack)
         {
             cancelsAttack = false;
 
-            bool wasDiscarded = currentPlayer.RequestPlayerDiscardCardFromHand(gameState, card => card.Is<Beggar>(), isOptional: true);
+            bool wasDiscarded = currentPlayer.RequestPlayerDiscardCardFromHand(gameState, card => card == Beggar.card, isOptional: true);
             if (!wasDiscarded)
             {
                 return false;                
             }
 
-            currentPlayer.GainCardsFromSupply<CardTypes.Silver>(gameState, 1, defaultLocation: DeckPlacement.TopOfDeck);
-            currentPlayer.GainCardFromSupply<CardTypes.Silver>(gameState);
+            currentPlayer.GainCardsFromSupply(gameState, Cards.Silver, 1, defaultLocation: DeckPlacement.TopOfDeck);
+            currentPlayer.GainCardFromSupply(Cards.Silver, gameState);
             return true;
         }
     }
@@ -231,7 +233,7 @@ namespace Dominion.CardTypes
     public class Catacombs :
         Card
     {
-        public Catacombs()
+        public static Catacombs card = new Catacombs(); private Catacombs()
             : base("Catacombs", coinCost: 5, isAction: true)
         {
         }
@@ -270,7 +272,7 @@ namespace Dominion.CardTypes
     public class Count :
         Card
     {
-        public Count()
+        public static Count card = new Count(); private Count()
             : base("Count", coinCost: 5, isAction: true)
         {
         }
@@ -285,7 +287,7 @@ namespace Dominion.CardTypes
             switch (choice)
             {
                 case PlayerActionChoice.Discard: currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false); break;
-                case PlayerActionChoice.GainCard: currentPlayer.GainCardFromSupply<CardTypes.Copper>(gameState); break;
+                case PlayerActionChoice.GainCard: currentPlayer.GainCardFromSupply(Cards.Copper, gameState); break;
                 case PlayerActionChoice.TopDeck: currentPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard => true, isOptional: false); break;
             }
 
@@ -298,7 +300,7 @@ namespace Dominion.CardTypes
             {
                 case PlayerActionChoice.PlusCoin: currentPlayer.AddCoins(3); break;
                 case PlayerActionChoice.Trash: currentPlayer.TrashHand(gameState); break;
-                case PlayerActionChoice.GainCard: currentPlayer.GainCardFromSupply<CardTypes.Duchy>(gameState); break;
+                case PlayerActionChoice.GainCard: currentPlayer.GainCardFromSupply(Cards.Duchy, gameState); break;
             }
         }
     }
@@ -306,7 +308,7 @@ namespace Dominion.CardTypes
     public class CounterFeit :
         Card
     {
-        public CounterFeit()
+        public static CounterFeit card = new CounterFeit(); private CounterFeit()
             : base("CounterFeit", coinCost: 5, isTreasure: true, plusCoins: 1, plusBuy: 1)
         {
         }
@@ -326,20 +328,20 @@ namespace Dominion.CardTypes
     public class Cultist :
         Card
     {
-        public Cultist()
+        public static Cultist card = new Cultist(); private Cultist()
             : base("Cultist", coinCost: 5, isAction: true, isAttack:true, requiresRuins:true, plusCards:2, isAttackBeforeAction:true)
         {
         }
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.GainCardFromSupply<CardTypes.Ruins>(gameState);            
+            otherPlayer.GainCardFromSupply(Cards.Ruins, gameState);            
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             // may play another cultist from hand.            
-            currentPlayer.RequestPlayerPlayActionFromHand(gameState, card => card.Is<Cultist>(), isOptional: true);            
+            currentPlayer.RequestPlayerPlayActionFromHand(gameState, card => card == Cultist.card, isOptional: true);            
         }
 
         public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
@@ -351,7 +353,7 @@ namespace Dominion.CardTypes
     public class DeathCart :
         Card
     {
-        public DeathCart()
+        public static DeathCart card = new DeathCart(); private DeathCart()
             : base("Death Cart", coinCost: 4, isAction: true, plusCoins: 5, requiresRuins: true)
         {
         }
@@ -369,8 +371,8 @@ namespace Dominion.CardTypes
 
         public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardFromSupply<CardTypes.Ruins>(gameState);
-            currentPlayer.GainCardFromSupply<CardTypes.Ruins>(gameState);
+            currentPlayer.GainCardFromSupply(Cards.Ruins, gameState);
+            currentPlayer.GainCardFromSupply(Cards.Ruins, gameState);
             return DeckPlacement.Default;
         }
     }    
@@ -378,19 +380,19 @@ namespace Dominion.CardTypes
     public class Feodum :
         Card
     {
-        public Feodum()
+        public static Feodum card = new Feodum(); private Feodum()
             : base("Feodum", coinCost: 4, victoryPoints: CountVictoryPoints)
         {
         }
 
         public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardsFromSupply(gameState, Card.Type<CardTypes.Silver>(), 3);
+            currentPlayer.GainCardsFromSupply(gameState, Cards.Silver, 3);
         }
 
         private static int CountVictoryPoints(PlayerState player)
         {
-            return VictoryCountForSilver(player.AllOwnedCards.Where(card => card.Is<CardTypes.Silver>()).Count());
+            return VictoryCountForSilver(player.AllOwnedCards.Where(card => card == Cards.Silver).Count());
         }
 
         public static int VictoryCountForSilver(int silvercount)
@@ -407,7 +409,7 @@ namespace Dominion.CardTypes
             return gameState.CountOfDifferentTreasuresInTrash();
         }
 
-        public Forager()
+        public static Forager card = new Forager(); private Forager()
             : base("Forager", coinCost: 3, isAction:true, plusBuy:1, plusActions:1)
         {
         }
@@ -422,7 +424,7 @@ namespace Dominion.CardTypes
     public class Fortress :
        Card
     {
-        public Fortress()
+        public static Fortress card = new Fortress(); private Fortress()
             : base("Fortress", coinCost: 4, isAction: true, plusActions: 2, plusCards:1)
         {
         }
@@ -436,7 +438,7 @@ namespace Dominion.CardTypes
     public class Graverobber :
        Card
     {
-        public Graverobber()
+        public static Graverobber card = new Graverobber(); private Graverobber()
             : base("Graverobber", coinCost: 5, isAction: true)
         {
         }
@@ -450,7 +452,7 @@ namespace Dominion.CardTypes
     public class Hermit :
        Card
     {
-        public Hermit()
+        public static Hermit card = new Hermit(); private Hermit()
             : base("Hermit", coinCost: 3, isAction: true)
         {
         }
@@ -471,7 +473,7 @@ namespace Dominion.CardTypes
             if (currentPlayer.turnCounters.BuysUsed == 0)
             {                
                 currentPlayer.MoveCardBeingDiscardedToTrash(gameState);
-                currentPlayer.GainCardFromSupply<CardTypes.Madman>(gameState);            
+                currentPlayer.GainCardFromSupply(Cards.Madman, gameState);            
             }            
         }
 
@@ -484,7 +486,7 @@ namespace Dominion.CardTypes
     public class Madman :
        Card
     {
-        public Madman()
+        public static Madman card = new Madman(); private Madman()
             : base("Madman", coinCost: 0, isAction: true, plusActions:2)
         {
         }
@@ -502,20 +504,20 @@ namespace Dominion.CardTypes
     public class HuntingGrounds :
         Card
     {
-        public HuntingGrounds()
+        public static HuntingGrounds card = new HuntingGrounds(); private HuntingGrounds()
             : base("Hunting Grounds", coinCost: 6, plusCards: 4, isAction: true)
         {
         }
 
         public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
         {
-            Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, acceptableCard => acceptableCard.Is<CardTypes.Duchy>() || acceptableCard.Is<CardTypes.Estate>(), "Choose Duchy or 3 Estate");
+            Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, acceptableCard => acceptableCard == Cards.Duchy || acceptableCard == Cards.Estate, "Choose Duchy or 3 Estate");
             if (gainedCard == null)
                 return;
             
-            if (gainedCard.Is<CardTypes.Estate>())
+            if (gainedCard == Cards.Estate)
             {
-                currentPlayer.GainCardsFromSupply<CardTypes.Estate>(gameState, 2); // gain 2 more for total of 3.                
+                currentPlayer.GainCardsFromSupply(gameState, Cards.Estate, 2); // gain 2 more for total of 3.                
             }
         }
     }
@@ -523,7 +525,7 @@ namespace Dominion.CardTypes
     public class IronMonger :
         Card
     {
-        public IronMonger()
+        public static IronMonger card = new IronMonger(); private IronMonger()
             : base("IronMongerGrounds", coinCost: 4, isAction: true)
         {
         }
@@ -556,7 +558,7 @@ namespace Dominion.CardTypes
     public class JunkDealer :
         Card
     {
-        public JunkDealer()
+        public static JunkDealer card = new JunkDealer(); private JunkDealer()
             : base("JunkDealer", coinCost: 5, isAction: true, plusCards:1, plusActions:1, plusCoins:1)
         {
         }
@@ -570,7 +572,7 @@ namespace Dominion.CardTypes
     public class Knights :
         Card
     {
-        public Knights()
+        public static Knights card = new Knights(); private Knights()
             : base("Knights", coinCost: 0, isAction: true, isAttack:true)
         {
         }
@@ -584,26 +586,26 @@ namespace Dominion.CardTypes
     public class Marauder :
         Card
     {
-        public Marauder()
+        public static Marauder card = new Marauder(); private Marauder()
             : base("Marauder", coinCost: 4, isAction: true, isAttack: true, requiresRuins:true, requiresSpoils:true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardFromSupply<CardTypes.Spoils>(gameState);
+            currentPlayer.GainCardFromSupply(Cards.Spoils, gameState);
         }
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.GainCardFromSupply<CardTypes.Ruins>(gameState);
+            otherPlayer.GainCardFromSupply(Cards.Ruins, gameState);
         }
     }
 
     public class MarketSquare :
         Card
     {
-        public MarketSquare()
+        public static MarketSquare card = new MarketSquare(); private MarketSquare()
             : base("MarketSquare", coinCost: 3, isAction: true, plusCards:1, plusActions:1, plusBuy:1)
         {
             this.doSpecializedActionOnTrashWhileInHand = DoSpecializedActionOnTrashWhileInHand;
@@ -614,7 +616,7 @@ namespace Dominion.CardTypes
             if (currentPlayer.actions.ShouldPlayerDiscardCardFromHand(gameState, currentPlayer, this))
             {
                 currentPlayer.DiscardCardFromHand(gameState, this);
-                currentPlayer.GainCardFromSupply<Gold>(gameState);
+                currentPlayer.GainCardFromSupply(Gold.card, gameState);
                 return true;
             }
 
@@ -625,7 +627,7 @@ namespace Dominion.CardTypes
     public class Mystic :
         Card
     {
-        public Mystic()
+        public static Mystic card = new Mystic(); private Mystic()
             : base("Mystic", coinCost: 5, isAction: true, plusCoins: 2, plusActions: 1)
         {
         }
@@ -649,7 +651,7 @@ namespace Dominion.CardTypes
     public class Pillage :
        Card
     {
-        public Pillage()
+        public static Pillage card = new Pillage(); private Pillage()
             : base("Pillage", coinCost: 5, isAction: true, attackDependsOnPlayerChoice: true, requiresSpoils:true)
         {
         }
@@ -668,14 +670,14 @@ namespace Dominion.CardTypes
             };
             currentPlayer.AttackOtherPlayers(gameState, attackAction);
 
-            currentPlayer.GainCardsFromSupply<CardTypes.Spoils>(gameState, 2);
+            currentPlayer.GainCardsFromSupply(gameState, Cards.Spoils, 2);
         }        
     }
 
     public class PoorHouse :
         Card
     {
-        public PoorHouse()
+        public static PoorHouse card = new PoorHouse(); private PoorHouse()
             : base("Poor House", coinCost: 1, isAction: true, plusCoins: 4)
         {
         }
@@ -691,7 +693,7 @@ namespace Dominion.CardTypes
     public class Procession :
        Card
     {
-        public Procession()
+        public static Procession card = new Procession(); private Procession()
             : base("Procession", coinCost: 4, isAction: true)
         {
         }
@@ -705,15 +707,15 @@ namespace Dominion.CardTypes
     public class Rats :
         Card
     {
-        public Rats()
+        public static Rats card = new Rats(); private Rats()
             : base("Rats", coinCost: 4, isAction: true, plusCards: 1, plusActions: 1, defaultSupplyCount: 20)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardFromSupply<CardTypes.Rats>(gameState);
-            CardPredicate cardsToTrash = card => !card.Is<Rats>();
+            currentPlayer.GainCardFromSupply(Cards.Rats, gameState);
+            CardPredicate cardsToTrash = card => card != Rats.card;
             if (currentPlayer.Hand.HasCard(cardsToTrash))
             {
                 currentPlayer.RequestPlayerTrashCardFromHand(gameState, cardsToTrash, isOptional: false);
@@ -733,7 +735,7 @@ namespace Dominion.CardTypes
     public class Rebuild :
         Card
     {
-        public Rebuild()
+        public static Rebuild card = new Rebuild(); private Rebuild()
             : base("Rebuild", coinCost: 5, plusActions: 1, isAction: true)
         {
         }
@@ -750,7 +752,7 @@ namespace Dominion.CardTypes
                 if (foundCard == null)
                     break;
 
-                if (foundCard.isVictory && !foundCard.Is(cardType))
+                if (foundCard.isVictory && foundCard != cardType)
                 {
                     break;
                 }
@@ -772,7 +774,7 @@ namespace Dominion.CardTypes
     public class Rogue :
        Card
     {
-        public Rogue()
+        public static Rogue card = new Rogue(); private Rogue()
             : base("Rogue", coinCost: 5, isAction: true, isAttack:true, plusCoins:2)
         {
         }
@@ -786,7 +788,7 @@ namespace Dominion.CardTypes
     public class Sage :
        Card
     {
-        public Sage()
+        public static Sage card = new Sage(); private Sage()
             : base("Sage", coinCost: 3, isAction: true, plusActions:1)
         {
         }
@@ -811,7 +813,7 @@ namespace Dominion.CardTypes
     public class Scavenger :
        Card
     {
-        public Scavenger()
+        public static Scavenger card = new Scavenger(); private Scavenger()
             : base("Scavenger", coinCost: 4, isAction: true, plusCoins:2)
         {
         }
@@ -826,7 +828,7 @@ namespace Dominion.CardTypes
     public class Squire :
        Card
     {
-        public Squire()
+        public static Squire card = new Squire(); private Squire()
             : base("Squire", coinCost: 2, isAction: true, plusCoins: 1)
         {
         }
@@ -843,7 +845,7 @@ namespace Dominion.CardTypes
             {
                 case PlayerActionChoice.PlusAction: currentPlayer.AddActions(2); break;
                 case PlayerActionChoice.PlusBuy: currentPlayer.AddBuys(2); break;
-                case PlayerActionChoice.GainCard: currentPlayer.GainCardFromSupply<CardTypes.Silver>(gameState); break;
+                case PlayerActionChoice.GainCard: currentPlayer.GainCardFromSupply(Cards.Silver, gameState); break;
                 default: throw new Exception();
             }
         }
@@ -857,7 +859,7 @@ namespace Dominion.CardTypes
     public class Storeroom :
        Card
     {
-        public Storeroom()
+        public static Storeroom card = new Storeroom(); private Storeroom()
             : base("Storeroom", coinCost: 3, isAction: true, plusBuy:1)
         {
         }
@@ -877,7 +879,7 @@ namespace Dominion.CardTypes
     public class Urchin :
        Card
     {
-        public Urchin()
+        public static Urchin card = new Urchin(); private Urchin()
             : base("Urchin", coinCost: 3, isAction: true, isAttack:true, plusCards:1, plusActions:1)
         {
             this.doSpecializedActionToCardWhileInPlay = DoSpecializedActionToCardWhileInPlay;
@@ -897,7 +899,7 @@ namespace Dominion.CardTypes
                     throw new NotImplementedException();
                     // something like this:
                     //currentPlayer.MoveCardFromPlayedCardToNativeVillageMatt(this);
-                    //currentPlayer.GainCardFromSupply<CardTypes.Mercenary>(gameState);
+                    //currentPlayer.GainCardFromSupply(Cards.Mercenary, gameState);
                 }
             }
         }
@@ -906,7 +908,7 @@ namespace Dominion.CardTypes
     public class Mercenary :
        Card
     {
-        public Mercenary()
+        public static Mercenary card = new Mercenary(); private Mercenary()
             : base("Mercenary", coinCost: 0, isAction: true, isAttack: true, attackDependsOnPlayerChoice:true)
         {
         }
@@ -943,7 +945,7 @@ namespace Dominion.CardTypes
     public class Vagrant :
        Card
     {
-        public Vagrant()
+        public static Vagrant card = new Vagrant(); private Vagrant()
             : base("Vagrant", coinCost: 2, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
@@ -971,7 +973,7 @@ namespace Dominion.CardTypes
     public class WanderingMinstrell :
        Card
     {
-        public WanderingMinstrell()
+        public static WanderingMinstrell card = new WanderingMinstrell(); private WanderingMinstrell()
             : base("WanderingMinstrell", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2)
         {
         }

@@ -393,7 +393,7 @@ namespace Dominion
 
             this.AddBuys(currentCard.plusBuy);
             this.AddCoins(currentCard.plusCoin);
-            if (currentCard.Is<CardTypes.Copper>())
+            if (currentCard == Cards.Copper)
             {
                 this.AddCoins(this.turnCounters.copperAdditionalValue);
             }
@@ -445,10 +445,9 @@ namespace Dominion
             }
         }
 
-        internal Card TrashCardFromHandOfType<T>(GameState gameState, bool guaranteeInHand)
-            where T : Card, new()
+        internal Card TrashCardFromHandOfType(Card card, GameState gameState, bool guaranteeInHand)
         {
-            return TrashCardFromHandOfType(gameState, Card.Type<T>(), guaranteeInHand);
+            return TrashCardFromHandOfType(gameState, card, guaranteeInHand);
         }
 
         internal Card TrashCardFromHandOfType(GameState gameState, Card cardType, bool guaranteeInHand)            
@@ -990,7 +989,7 @@ namespace Dominion
             if (this.cardsBeingRevealed.Any)
             {
                 Card cardtoTrash = this.actions.GetCardFromRevealedCardsToTrash(gameState, this, acceptableCard => true);
-                if (cardtoTrash.Is<CardTypes.Salvager>())
+                if (cardtoTrash == Cards.Salvager)
                 { int i = 0; i++; }
                 if (cardtoTrash == null)
                 {
@@ -1293,16 +1292,9 @@ namespace Dominion
                 gameState.PlayerGainCardFromSupply(cardType, this, defaultLocation);
         }
 
-        internal void GainCardsFromSupply<T>(GameState gameState, int count, DeckPlacement defaultLocation = DeckPlacement.Discard)
-            where T: Card, new()
+        internal bool GainCardFromSupply(Card card, GameState gameState, DeckPlacement defaultLocation = DeckPlacement.Discard)
         {
-            GainCardsFromSupply(gameState, Card.Type<T>(), count, defaultLocation);
-        }
-
-        internal bool GainCardFromSupply<T>(GameState gameState, DeckPlacement defaultLocation = DeckPlacement.Discard)
-            where T: Card, new()
-        {
-            return gameState.PlayerGainCardFromSupply(Card.Type<T>(), this, defaultLocation:defaultLocation) != null;
+            return gameState.PlayerGainCardFromSupply(card, this, defaultLocation:defaultLocation) != null;
         }        
 
         internal void GainCard(GameState gameState, Card card, DeckPlacement originalLocation, DeckPlacement defaultPlacement = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)

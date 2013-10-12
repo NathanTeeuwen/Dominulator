@@ -9,26 +9,26 @@ namespace Dominion.CardTypes
 {
     using Dominion;
 
-    public class GreatHall : Card { public GreatHall() : base("Great Hall", coinCost: 3, victoryPoints: playerState => 1, plusCards: 1, plusActions: 1, isAction: true) { } }
-    public class Harem : Card { public Harem() : base("Harem", coinCost: 6, victoryPoints: playerState => 2, plusCoins: 2, isTreasure: true) { } }
+    public class GreatHall : Card { public static GreatHall card = new GreatHall(); private GreatHall() : base("Great Hall", coinCost: 3, victoryPoints: playerState => 1, plusCards: 1, plusActions: 1, isAction: true) { } }
+    public class Harem : Card { public static Harem card = new Harem(); private Harem() : base("Harem", coinCost: 6, victoryPoints: playerState => 2, plusCoins: 2, isTreasure: true) { } }
 
     public class Baron :
         Card
     {
-        public Baron()
+        public static Baron card = new Baron(); private Baron()
             : base("Baron", coinCost: 4, plusBuy: 1, isAction: true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            if (currentPlayer.RequestPlayerDiscardCardFromHand(gameState, acceptableCard => acceptableCard.Is<Estate>(), isOptional: true))
+            if (currentPlayer.RequestPlayerDiscardCardFromHand(gameState, acceptableCard => acceptableCard == Estate.card, isOptional: true))
             {
                 currentPlayer.AddCoins(4);
             }
             else
             {
-                currentPlayer.GainCardFromSupply<Estate>(gameState);
+                currentPlayer.GainCardFromSupply(Estate.card, gameState);
             }
         }
     }
@@ -36,7 +36,7 @@ namespace Dominion.CardTypes
     public class Bridge :
         Card
     {
-        public Bridge()
+        public static Bridge card = new Bridge(); private Bridge()
             : base("Bridge", coinCost: 4, plusBuy: 1, plusCoins: 1, isAction: true)
         {
             this.provideDiscountForWhileInPlay = ProvideDiscountForWhileInPlay;
@@ -51,7 +51,7 @@ namespace Dominion.CardTypes
     public class Conspirator :
         Card
     {        
-        public Conspirator()
+        public static Conspirator card = new Conspirator(); private Conspirator()
             : base("Conspirator", coinCost: 4, plusCoins: 2, isAction: true)
         {
         }
@@ -69,7 +69,7 @@ namespace Dominion.CardTypes
     public class Coppersmith :
         Card
     {
-        public Coppersmith()
+        public static Coppersmith card = new Coppersmith(); private Coppersmith()
             : base("Coppersmith", coinCost: 4, isAction: true)
         {
         }
@@ -83,7 +83,7 @@ namespace Dominion.CardTypes
     public class Courtyard :
         Card
     {
-        public Courtyard()
+        public static Courtyard card = new Courtyard(); private Courtyard()
             : base("Courtyard", coinCost: 2, plusCards: 3, isAction: true)
         {
         }
@@ -97,17 +97,17 @@ namespace Dominion.CardTypes
     public class Duke :
         Card
     {
-        public Duke()
+        public static Duke card = new Duke(); private Duke()
             : base("Duke", coinCost: 5, isAction: true)
         {
-            this.victoryPointCounter = player => player.AllOwnedCards.Where(card => card.Is<Duchy>()).Count();
+            this.victoryPointCounter = player => player.AllOwnedCards.Where(card => card == Duchy.card).Count();
         }
     }
 
     public class IronWorks :
         Card
     {
-        public IronWorks()
+        public static IronWorks card = new IronWorks(); private IronWorks()
             : base("IronWorks", coinCost: 4, isAction:true)
         {
         }
@@ -138,7 +138,7 @@ namespace Dominion.CardTypes
     public class Masquerade :
         Card
     {
-        public Masquerade()
+        public static Masquerade card = new Masquerade(); private Masquerade()
             : base("Masquerade", coinCost: 3, plusCards: 2, isAction: true)
         {
         }
@@ -171,7 +171,7 @@ namespace Dominion.CardTypes
     public class MiningVillage :
         Card
     {
-        public MiningVillage()
+        public static MiningVillage card = new MiningVillage(); private MiningVillage()
             : base("MiningVillage", coinCost: 4, plusCards: 1, plusActions: 2, isAction: true)
         {
         }
@@ -193,7 +193,7 @@ namespace Dominion.CardTypes
     public class Minion :
         Card
     {
-        public Minion()
+        public static Minion card = new Minion(); private Minion()
             : base("Minion", coinCost: 5, plusActions: 1, isAttack: true, attackDependsOnPlayerChoice: true, isAction: true)
         {
         }
@@ -241,7 +241,7 @@ namespace Dominion.CardTypes
     public class Nobles :
         Card
     {
-        public Nobles()
+        public static Nobles card = new Nobles(); private Nobles()
             : base("Nobles", coinCost: 6, victoryPoints: playerState => 2, isAction: true)
         {
         }
@@ -266,7 +266,7 @@ namespace Dominion.CardTypes
     public class Pawn :
         Card
     {
-        public Pawn()
+        public static Pawn card = new Pawn(); private Pawn()
             : base("Pawn", coinCost: 2, isAction: true)
         {
         }
@@ -309,7 +309,7 @@ namespace Dominion.CardTypes
     public class Sabateur :
         Card
     {
-        public Sabateur()
+        public static Sabateur card = new Sabateur(); private Sabateur()
             : base("Sabateur", coinCost: 5, isAttack: true, isAction: true)
         {
         }
@@ -349,7 +349,7 @@ namespace Dominion.CardTypes
     public class Scout :
         Card
     {
-        public Scout()
+        public static Scout card = new Scout(); private Scout()
             : base("Scout", coinCost: 4, isAction: true, plusActions: 1)
         {
         }
@@ -365,7 +365,7 @@ namespace Dominion.CardTypes
     public class SecretChamber :
        Card
     {
-        public SecretChamber()
+        public static SecretChamber card = new SecretChamber(); private SecretChamber()
             : base("Secret Chamber", coinCost: 2, isAction: true)
         {
         }
@@ -406,7 +406,7 @@ namespace Dominion.CardTypes
     public class ShantyTown :
        Card
     {
-        public ShantyTown()
+        public static ShantyTown card = new ShantyTown(); private ShantyTown()
             : base("Shanty Town", coinCost: 3, plusActions: 2, isAction: true)
         {
         }
@@ -424,7 +424,7 @@ namespace Dominion.CardTypes
     public class Steward :
        Card
     {
-        public Steward()
+        public static Steward card = new Steward(); private Steward()
             : base("Steward", coinCost: 3, isAction: true)
         {
         }
@@ -451,7 +451,7 @@ namespace Dominion.CardTypes
     public class Swindler :
        Card
     {
-        public Swindler()
+        public static Swindler card = new Swindler(); private Swindler()
             : base("Swindler", coinCost: 3, plusCoins: 2, isAction: true, isAttack: true)
         {
         }
@@ -475,7 +475,7 @@ namespace Dominion.CardTypes
     public class Torturer :
       Card
     {
-        public Torturer()
+        public static Torturer card = new Torturer(); private Torturer()
             : base("Torturer", coinCost: 5, plusCards: 3, isAction: true, isAttack: true)
         {
         }
@@ -490,7 +490,7 @@ namespace Dominion.CardTypes
             switch (playerChoice)
             {
                 case PlayerActionChoice.Discard: otherPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false); break;
-                case PlayerActionChoice.GainCard: otherPlayer.GainCardFromSupply<Curse>(gameState, DeckPlacement.Hand); break;
+                case PlayerActionChoice.GainCard: otherPlayer.GainCardFromSupply(Curse.card, gameState, DeckPlacement.Hand); break;
                 default: throw new Exception("Invalid Choice");
             }
         }
@@ -499,7 +499,7 @@ namespace Dominion.CardTypes
     public class TradingPost :
         Card
     {
-        public TradingPost()
+        public static TradingPost card = new TradingPost(); private TradingPost()
             : base("Trading Post", coinCost: 5, isAction: true)
         {
         }
@@ -510,7 +510,7 @@ namespace Dominion.CardTypes
             if (currentPlayer.RequestPlayerTrashCardsFromHand(gameState, 2, isOptional: false).Length == 2)
             {
                 // If you do, gain a silver card; put it into your hand
-                currentPlayer.GainCardFromSupply<Silver>(gameState, DeckPlacement.Hand);
+                currentPlayer.GainCardFromSupply(Silver.card, gameState, DeckPlacement.Hand);
             }
         }
     }
@@ -518,7 +518,7 @@ namespace Dominion.CardTypes
     public class Tribute :
        Card
     {
-        public Tribute()
+        public static Tribute card = new Tribute(); private Tribute()
             : base("Tribute", coinCost: 5, isAction: true)
         {
         }
@@ -540,7 +540,7 @@ namespace Dominion.CardTypes
                 else
                 {
                     Card secondCard = card;
-                    if (!card.Is(firstCard))
+                    if (card != firstCard)
                     {
                         GainBenefitFromCard(secondCard, currentPlayer);
                     }
@@ -573,7 +573,7 @@ namespace Dominion.CardTypes
     public class Upgrade :
         Card
     {
-        public Upgrade()
+        public static Upgrade card = new Upgrade(); private Upgrade()
             : base("Upgrade", coinCost: 5, plusCards: 1, plusActions: 1, isAction: true)
         {
         }
@@ -594,7 +594,7 @@ namespace Dominion.CardTypes
     public class WishingWell :
         Card
     {
-        public WishingWell()
+        public static WishingWell card = new WishingWell(); private WishingWell()
             : base("Wishing Well", coinCost: 3, plusCards: 1, plusActions: 1, isAction: true)
         {
         }
@@ -604,7 +604,7 @@ namespace Dominion.CardTypes
             Card cardType = currentPlayer.GuessCardTopOfDeck(gameState);
 
             Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
-            if (revealedCard.Is(cardType))
+            if (revealedCard != cardType)
             {
                 currentPlayer.MoveAllRevealedCardsToHand();
             }
