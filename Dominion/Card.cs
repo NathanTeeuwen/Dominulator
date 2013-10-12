@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-    public class Card
+    public abstract class Card
         : IEquatable<Card>
     {
         public readonly string name;
@@ -42,8 +42,7 @@ namespace Dominion
         protected GameStateCardToPlacement doSpecializedActionOnBuyWhileInHand; //readonly 
         protected GameStateCardToPlacement doSpecializedActionOnGainWhileInHand; //readonly
 
-        private int privateIndex; //readonly
-        private int hashCode;
+        private readonly int privateIndex;
 
         internal int index
         {
@@ -53,7 +52,7 @@ namespace Dominion
             }
         }        
 
-        internal Card(
+        protected Card(
             string name,
             int coinCost,
             int potionCost = 0,
@@ -85,8 +84,13 @@ namespace Dominion
             GameStateCardToPlacement doSpecializedActionOnBuyWhileInHand = null,
             GameStateCardToPlacement doSpecializedActionOnGainWhileInHand = null)
         {
-            if (!isConstructing)
-                throw new Exception("Can not call new operator");
+            if (cardTypes.Contains(this.GetType())) {
+                throw new Exception("Do not create duplicate cards.");
+            } else {
+                cardTypes.Add(this.GetType());
+            }
+
+            this.privateIndex = ++lastCardIndex;
 
             this.name = name;
             this.coinCost = coinCost;
@@ -120,17 +124,6 @@ namespace Dominion
             this.doSpecializedActionOnGainWhileInHand = doSpecializedActionOnGainWhileInHand;
         }
 
-        public bool Is(Card card)
-        {
-            return this.Equals(card);
-        }
-
-        public bool Is<T>()
-            where T : Card, new()
-        {
-            return this.Is(Card.Type<T>());
-        }        
-
         public bool isVictory
         {
             get
@@ -146,23 +139,7 @@ namespace Dominion
 
         public bool Equals(Card other)
         {            
-            if (other == null)
-                return false;
-
-            System.Diagnostics.Debug.Assert(this.index != 0);
-            System.Diagnostics.Debug.Assert(other.index != 0);
-
-            return this.index == other.index;
-        }
-
-        public override bool Equals(object obj)
-        {
-            return this.Equals((Card)obj);
-        }
-
-        public override int GetHashCode()
-        {
-            return this.hashCode;
+            return this == other;
         }
 
         public int DefaultCoinCost
@@ -390,40 +367,8 @@ namespace Dominion
 
         }
 
-        public static Card Type<T>()
-            where T : Card, new()
-        {
-            return StaticInstance<T>.Card;            
-        }
+        private static int lastCardIndex = 0;        
 
-        public static void InitializeCustomCard(Card card)
-        {
-            card.privateIndex = ++lastCardIndex;
-            card.hashCode = card.privateIndex.GetHashCode();            
-        }
-
-        static object cardConstructorLock = new object();
-        static bool isConstructing = false;
-        static int lastCardIndex = 0;        
-
-        private static class StaticInstance<T>
-            where T : Card, new()            
-        {
-            static public readonly T Card = InitializeCard();
-
-            private static T InitializeCard()
-            {       
-                T result;
-                lock (cardConstructorLock)
-                {
-                    isConstructing = true;
-                    result = new T();
-                    InitializeCustomCard(result);
-                    isConstructing = false;
-                }
-
-                return result;
-            }
-        }
+        private static HashSet<Type> cardTypes = new HashSet<Type>();
     }
 }

@@ -31,21 +31,21 @@ namespace Program
 
                 public override Card NameACard(GameState gameState)
                 {
-                    return Card.Type<CardTypes.Duchy>();
+                    return Cards.Duchy;
                 }
             }
 
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Rebuild>(gameState => CountAllOwned<CardTypes.Rebuild>(gameState) < 2),
-                           CardAcceptance.For<CardTypes.Duchy>(),
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duke>(),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountAllOwned<CardTypes.Estate>(gameState) == 0 && CountAllOwned<CardTypes.Rebuild>(gameState) >= 2),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Duchy>(gameState) == 0),
-                           CardAcceptance.For<CardTypes.Rebuild>(),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(Cards.Rebuild, gameState => CountAllOwned(Cards.Rebuild, gameState) < 2),
+                           CardAcceptance.For(Cards.Duchy),
+                           CardAcceptance.For(Cards.Province),
+                           CardAcceptance.For(Cards.Duke),
+                           CardAcceptance.For(Cards.Estate, gameState => CountAllOwned(Cards.Estate, gameState) == 0 && CountAllOwned(Cards.Rebuild, gameState) >= 2),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Duchy, gameState) == 0),
+                           CardAcceptance.For(Cards.Rebuild),
+                           CardAcceptance.For(Cards.Silver));
             }            
         }
     }

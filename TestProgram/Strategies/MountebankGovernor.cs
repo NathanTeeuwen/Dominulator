@@ -31,7 +31,7 @@ namespace Program
 
                 public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
                 {                    
-                    if (HasCardInHand<CardTypes.Gold>(gameState))
+                    if (HasCardInHand(Cards.Gold, gameState))
                         return PlayerActionChoice.Trash;
                     else if (gameState.Self.ExpectedCoinValueAtEndOfTurn >= 6 && gameState.Self.ExpectedCoinValueAtEndOfTurn < 8)
                         return PlayerActionChoice.PlusCard;
@@ -43,25 +43,25 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2),
-                           CardAcceptance.For<CardTypes.University>(gameState => CountAllOwned<CardTypes.University>(gameState) < 1),                          
-                           CardAcceptance.For<CardTypes.Mountebank>(gameState => CountAllOwned<CardTypes.Mountebank>(gameState) < 1),                           
-                           CardAcceptance.For<CardTypes.Gold>(),                           
-                           CardAcceptance.For<CardTypes.Governor>(),                           
-                           CardAcceptance.For<CardTypes.University>(gameState => CountAllOwned<CardTypes.University>(gameState) < 2),
-                           //CardAcceptance.For<CardTypes.Potion>(gameState => CountAllOwned<CardTypes.Potion>(gameState) < 1),
-                           CardAcceptance.For<CardTypes.Marauder>(gameState => CountAllOwned<CardTypes.Marauder>(gameState) < 1),                           
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(Cards.Province),
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2),
+                           CardAcceptance.For(Cards.University, gameState => CountAllOwned(Cards.University, gameState) < 1),                          
+                           CardAcceptance.For(Cards.Mountebank, gameState => CountAllOwned(Cards.Mountebank, gameState) < 1),                           
+                           CardAcceptance.For(Cards.Gold),                           
+                           CardAcceptance.For(Cards.Governor),                           
+                           CardAcceptance.For(Cards.University, gameState => CountAllOwned(Cards.University, gameState) < 2),
+                           //CardAcceptance.For(Cards.Potion, gameState => CountAllOwned(Cards.Potion, gameState) < 1),
+                           CardAcceptance.For(Cards.Marauder, gameState => CountAllOwned(Cards.Marauder, gameState) < 1),                           
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 4),
+                           CardAcceptance.For(Cards.Silver));
             }
 
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Hovel>());
+                           CardAcceptance.For(Cards.Gold),
+                           CardAcceptance.For(Cards.Hovel));
             }
         }
 
@@ -88,7 +88,7 @@ namespace Program
 
                 public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
                 {
-                    if (HasCardInHand<CardTypes.Gold>(gameState) || HasCardInHand<CardTypes.MarketSquare>(gameState))
+                    if (HasCardInHand(Cards.Gold, gameState) || HasCardInHand(Cards.MarketSquare, gameState))
                         return PlayerActionChoice.Trash;
                     //else if (gameState.Self.ExpectedCoinValueAtEndOfTurn >= 6 && gameState.Self.ExpectedCoinValueAtEndOfTurn < 8)
                     //return PlayerActionChoice.PlusCard;
@@ -100,43 +100,43 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.University>(),
-                    CardAcceptance.For<CardTypes.MarketSquare>(gameState => CountInHand<CardTypes.Governor>(gameState) == 0),
-                    CardAcceptance.For<CardTypes.Governor>(),
-                    CardAcceptance.For<CardTypes.Mountebank>());
+                    CardAcceptance.For(Cards.University),
+                    CardAcceptance.For(Cards.MarketSquare, gameState => CountInHand(Cards.Governor, gameState) == 0),
+                    CardAcceptance.For(Cards.Governor),
+                    CardAcceptance.For(Cards.Mountebank));
             }
 
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2),                                                      
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           //CardAcceptance.For<CardTypes.Mountebank>(gameState => CountAllOwned<CardTypes.Mountebank>(gameState) < 1),
-                           CardAcceptance.For<CardTypes.Governor>(),
-                           CardAcceptance.For<CardTypes.University>(gameState => CountAllOwned<CardTypes.University>(gameState) < 2),
-                           CardAcceptance.For<CardTypes.Potion>(gameState => CountAllOwned<CardTypes.Potion>(gameState) < 1 && CountAllOwned<CardTypes.University>(gameState) == 0),
-                           //CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
-                           CardAcceptance.For<CardTypes.MarketSquare>(),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(Cards.Province),
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2),                                                      
+                           CardAcceptance.For(Cards.Gold),
+                           //CardAcceptance.For(Cards.Mountebank, gameState => CountAllOwned(Cards.Mountebank, gameState) < 1),
+                           CardAcceptance.For(Cards.Governor),
+                           CardAcceptance.For(Cards.University, gameState => CountAllOwned(Cards.University, gameState) < 2),
+                           CardAcceptance.For(Cards.Potion, gameState => CountAllOwned(Cards.Potion, gameState) < 1 && CountAllOwned(Cards.University, gameState) == 0),
+                           //CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 4),
+                           CardAcceptance.For(Cards.MarketSquare),
+                           CardAcceptance.For(Cards.Silver));
             }
 
             private static CardPickByPriority TrashOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           //CardAcceptance.For<CardTypes.Potion>(),
-                           CardAcceptance.For<CardTypes.Curse>(),
-                           CardAcceptance.For<CardTypes.OvergrownEstate>(),
-                           CardAcceptance.For<CardTypes.RuinedLibrary>(),
-                           CardAcceptance.For<CardTypes.RuinedVillage>(),
-                           CardAcceptance.For<CardTypes.RuinedMarket>(),
-                           CardAcceptance.For<CardTypes.AbandonedMine>(),
-                           CardAcceptance.For<CardTypes.Survivors>(),
-                           CardAcceptance.For<CardTypes.Estate>(),
-                           CardAcceptance.For<CardTypes.Hovel>(),
-                           CardAcceptance.For<CardTypes.Copper>());
+                           CardAcceptance.For(Cards.Gold),
+                           //CardAcceptance.For(Cards.Potion),
+                           CardAcceptance.For(Cards.Curse),
+                           CardAcceptance.For(Cards.OvergrownEstate),
+                           CardAcceptance.For(Cards.RuinedLibrary),
+                           CardAcceptance.For(Cards.RuinedVillage),
+                           CardAcceptance.For(Cards.RuinedMarket),
+                           CardAcceptance.For(Cards.AbandonedMine),
+                           CardAcceptance.For(Cards.Survivors),
+                           CardAcceptance.For(Cards.Estate),
+                           CardAcceptance.For(Cards.Hovel),
+                           CardAcceptance.For(Cards.Copper));
             }
         }
     }

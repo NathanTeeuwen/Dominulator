@@ -116,8 +116,8 @@ namespace Dominion
             {
                 if (pile.IsEmpty)
                 {
-                    if (pile.IsType<CardTypes.Province>() ||
-                        pile.IsType<CardTypes.Colony>())
+                    if (pile.IsType(Cards.Province) ||
+                        pile.IsType(Cards.Colony))
                     {
                         return true;
                     }
@@ -323,7 +323,7 @@ namespace Dominion
                 int embargoCount = this.pileEmbargoTokenCount[boughtCard];
                 for (int i = 0; i < embargoCount; ++i)
                 {
-                    currentPlayer.GainCardFromSupply<CardTypes.Curse>(this);                    
+                    currentPlayer.GainCardFromSupply(Cards.Curse, this);                    
                 }
 
                 currentPlayer.turnCounters.RemoveCoins(boughtCard.CurrentCoinCost(currentPlayer));
@@ -427,12 +427,6 @@ namespace Dominion
             return null;
         }       
 
-        public PileOfCards GetPile<T>()
-            where T: Card, new()
-        {
-            return GetPile(Card.Type<T>());            
-        }
-
         public Card PlayerGainCardFromSupply(Card cardType, PlayerState playerState, DeckPlacement defaultLocation = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)
         {            
             PileOfCards pile = this.GetPile(cardType);
@@ -465,10 +459,9 @@ namespace Dominion
             return this.hasPileEverBeenGained[pile];            
         }
 
-        internal bool DoesGameHaveCard<T>()
-            where T : Card, new()
+        internal bool DoesGameHaveCard(Card card)
         {
-            return this.cardGameSubset.HasCard(Card.Type<T>());
+            return this.cardGameSubset.HasCard(card);
         }
 
         internal int CountOfDifferentTreasuresInTrash()

@@ -19,12 +19,12 @@ namespace Dominion.CardTypes.TestCards
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardFromSupply<CardTypes.Estate>(gameState);
+            currentPlayer.GainCardFromSupply(Cards.Estate, gameState);
         }
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.GainCardFromSupply<CardTypes.Curse>(gameState);
+            otherPlayer.GainCardFromSupply(Cards.Curse, gameState);
             otherPlayer.DiscardHandDownToCount(gameState, 3);
         }
     }
@@ -32,7 +32,7 @@ namespace Dominion.CardTypes.TestCards
     public class FishingVillageAvailableForDeckCycle :
         Card
     {
-        public FishingVillageAvailableForDeckCycle()
+        public static FishingVillageAvailableForDeckCycle card = new FishingVillageAvailableForDeckCycle(); private FishingVillageAvailableForDeckCycle()
             : base("FishingVillageAvailableForDeckCycle", coinCost:3, isAction: true, plusCoins:1, plusActions:2)
         {
         }
@@ -49,7 +49,7 @@ namespace Dominion.CardTypes.TestCards
     public class FishingVillageEmptyDuration :
         Card
     {
-        public FishingVillageEmptyDuration()
+        public static FishingVillageEmptyDuration card = new FishingVillageEmptyDuration(); private FishingVillageEmptyDuration()
             : base("FishingVillageAvailableForDeckCycle", coinCost: 3, isAction: true, plusCoins: 2, plusActions: 2, isDuration:true )
         {
         }

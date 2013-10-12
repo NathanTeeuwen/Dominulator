@@ -18,14 +18,14 @@ namespace Program
             //Kingdoms.ShouldRemakeOrHorseTradersIntoSoothayer.Run();
             //ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.MountebankGovernorMaurader.Player(2), useShelters:true);            
             //CompareStrategyVsAllKnownStrategies(Strategies.HorseTraderSoothsayerMinionGreatHall.Player(1), useShelters: true);            
-            ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Envoy>.Player(1), Strategies.BigMoney.Player(2));            
+            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Envoy, 1), Strategies.BigMoney.Player(2));            
             stopwatch.Stop();
 
             System.Console.WriteLine("");
             System.Console.WriteLine("Elapsed Time per game: {0}us", stopwatch.ElapsedMilliseconds * 1000 / totalGameCount);
             System.Console.WriteLine("Elapsed Time per Players Turn: {0}ns", (int)((double) stopwatch.ElapsedTicks / System.Diagnostics.Stopwatch.Frequency * 1000 * 1000 * 1000 / GameState.turnTotalCount));
         }
-        
+
         static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false)
         {
             var resultList = new List<System.Tuple<string, double>>();
@@ -43,6 +43,10 @@ namespace Program
 
                 if (playerMethodInfo.ContainsGenericParameters)
                     continue;                
+
+                if (playerMethodInfo.GetParameters().Count() < 1 || playerMethodInfo.GetParameters()[0].ParameterType != typeof(int)) {
+                    continue;
+                }
 
                 PlayerAction otherPlayerAction = playerMethodInfo.Invoke(null, new object[]{2}) as PlayerAction;
                 if (otherPlayerAction == null)

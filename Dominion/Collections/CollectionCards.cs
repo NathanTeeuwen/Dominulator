@@ -189,12 +189,6 @@ namespace Dominion
             Array.Clear(this.mapGameCardIndexToCount, 0, this.mapGameCardIndexToCount.Length);
         }
 
-        public int CountOf<T>()
-            where T : Card, new()
-        {
-            return CountOf(Card.Type<T>());
-        }
-
         public int CountOf(Card card)
         {
             int index = this.gameSubset.GetIndexFor(card);
@@ -237,12 +231,6 @@ namespace Dominion
         public bool HasCard(Card card)
         {
             return CountOf(card) > 0;
-        }
-
-        public bool HasCard<T>()
-            where T : Card, new()
-        {
-            return this.HasCard(Card.Type<T>());
         }
 
         public Card FindCard(CardPredicate predicate)

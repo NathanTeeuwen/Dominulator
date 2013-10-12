@@ -23,9 +23,9 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(),                           
-                           CardAcceptance.For<CardTypes.Gold>(),                           
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(Cards.Province),                           
+                           CardAcceptance.For(Cards.Gold),                           
+                           CardAcceptance.For(Cards.Silver));
             }
         }
     }

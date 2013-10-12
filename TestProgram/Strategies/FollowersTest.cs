@@ -29,12 +29,12 @@ namespace Program
             {
                 return new CardPickByPriority(
                            CardAcceptance.For(new CardTypes.TestCards.FollowersTest(followerCost), gameState => HasFollowers(gameState, followerCost)),
-                           CardAcceptance.For<CardTypes.Province>(gameState => CountAllOwned<CardTypes.Gold>(gameState) > 2 && ShouldBuyGreen(gameState)),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4 && ShouldBuyGreen(gameState)),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2 && ShouldBuyGreen(gameState)),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2 && ShouldBuyGreen(gameState)),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(Cards.Province, gameState => CountAllOwned(Cards.Gold, gameState) > 2 && ShouldBuyGreen(gameState)),
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4 && ShouldBuyGreen(gameState)),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 2 && ShouldBuyGreen(gameState)),
+                           CardAcceptance.For(Cards.Gold),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 2 && ShouldBuyGreen(gameState)),
+                           CardAcceptance.For(Cards.Silver));
 
             }
 

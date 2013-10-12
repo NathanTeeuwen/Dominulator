@@ -83,31 +83,31 @@ namespace Dominion
 
         static readonly Card[] cardsIncludedbyDefault = new Card[] { 
                 // treaures
-                Card.Type<CardTypes.Platinum>(),
-                Card.Type<CardTypes.Gold>(),
-                Card.Type<CardTypes.Silver>(),
-                Card.Type<CardTypes.Copper>(),
-                Card.Type<CardTypes.Colony>(),
-                Card.Type<CardTypes.Potion>(),
+                Cards.Platinum,
+                Cards.Gold,
+                Cards.Silver,
+                Cards.Copper,
+                Cards.Colony,
+                Cards.Potion,
                 // victory
-                Card.Type<CardTypes.Province>(),
-                Card.Type<CardTypes.Duchy>(),
-                Card.Type<CardTypes.Estate>(),
-                Card.Type<CardTypes.Curse>(),                
+                Cards.Province,
+                Cards.Duchy,
+                Cards.Estate,
+                Cards.Curse,                
                 // ruins
-                Card.Type<CardTypes.AbandonedMine>(),
-                Card.Type<CardTypes.RuinedLibrary>(),
-                Card.Type<CardTypes.RuinedVillage>(),
-                Card.Type<CardTypes.RuinedMarket>(),
-                Card.Type<CardTypes.Survivors>(),
+                Cards.AbandonedMine,
+                Cards.RuinedLibrary,
+                Cards.RuinedVillage,
+                Cards.RuinedMarket,
+                Cards.Survivors,
                 // shelters
-                Card.Type<CardTypes.OvergrownEstate>(),
-                Card.Type<CardTypes.Hovel>(),
-                Card.Type<CardTypes.Necropolis>(),
+                Cards.OvergrownEstate,
+                Cards.Hovel,
+                Cards.Necropolis,
                 // non-supply piles
-                Card.Type<CardTypes.Spoils>(),                
-                Card.Type<CardTypes.Madman>(),
-                Card.Type<CardTypes.Mercenary>()
+                Cards.Spoils,                
+                Cards.Madman,
+                Cards.Mercenary
             };
 
         public StartingCardSplit CardSplit
@@ -124,29 +124,29 @@ namespace Dominion
         }
 
         static readonly CardCountPair[] ShelterStartingDeck = new CardCountPair[] {
-                            new CardCountPair(Card.Type<CardTypes.Copper>(), 7),
-                            new CardCountPair(Card.Type<CardTypes.Hovel>(), 1),
-                            new CardCountPair(Card.Type<CardTypes.Necropolis>(), 1),
-                            new CardCountPair(Card.Type<CardTypes.OvergrownEstate>(), 1)
+                            new CardCountPair(Cards.Copper, 7),
+                            new CardCountPair(Cards.Hovel, 1),
+                            new CardCountPair(Cards.Necropolis, 1),
+                            new CardCountPair(Cards.OvergrownEstate, 1)
                         };
 
         static readonly CardCountPair[] EstateStartingDeck = new CardCountPair[] {
-                            new CardCountPair(Card.Type<CardTypes.Copper>(), 7),
-                            new CardCountPair(Card.Type<CardTypes.Estate>(), 3) 
+                            new CardCountPair(Cards.Copper, 7),
+                            new CardCountPair(Cards.Estate, 3) 
                         };
 
         static readonly CardCountPair[] Starting52Split = new CardCountPair[] {
-                            new CardCountPair(Card.Type<CardTypes.Copper>(), 5)                            
+                            new CardCountPair(Cards.Copper, 5)                            
                         };
 
         static readonly CardCountPair[] Starting43SplitEstate = new CardCountPair[] {
-                            new CardCountPair(Card.Type<CardTypes.Copper>(), 4),
-                            new CardCountPair(Card.Type<CardTypes.Estate>(), 1)
+                            new CardCountPair(Cards.Copper, 4),
+                            new CardCountPair(Cards.Estate, 1)
                         };
 
         static readonly CardCountPair[] Starting43SplitShelter = new CardCountPair[] {
-                            new CardCountPair(Card.Type<CardTypes.Copper>(), 4),
-                            new CardCountPair(Card.Type<CardTypes.Necropolis>(), 1)
+                            new CardCountPair(Cards.Copper, 4),
+                            new CardCountPair(Cards.Necropolis, 1)
                         };
 
         static IEnumerable<CardCountPair> GetDefaultStartingDeck(int playerPosition, GameConfig gameConfig)
@@ -268,27 +268,27 @@ namespace Dominion
             int victoryCount = (playerCount == 2) ? 8 : 12;
 
             // cards always in the supply
-            Add<CardTypes.Copper>(gameSubset, supplyCardPiles, 60);
-            Add<CardTypes.Silver>(gameSubset, supplyCardPiles, 40);
-            Add<CardTypes.Gold>(gameSubset, supplyCardPiles, 30);
-            Add<CardTypes.Curse>(gameSubset, supplyCardPiles, curseCount);
-            Add<CardTypes.Estate>(gameSubset, supplyCardPiles, victoryCount + (!this.useShelters ? playerCount * 3 : 0));
-            Add<CardTypes.Duchy>(gameSubset, supplyCardPiles, victoryCount);
-            Add<CardTypes.Province>(gameSubset, supplyCardPiles, victoryCount);
+            Add(gameSubset, supplyCardPiles, 60, Cards.Copper);
+            Add(gameSubset, supplyCardPiles, 40, Cards.Silver);
+            Add(gameSubset, supplyCardPiles, 30, Cards.Gold);
+            Add(gameSubset, supplyCardPiles, curseCount, Cards.Curse);
+            Add(gameSubset, supplyCardPiles, victoryCount + (!this.useShelters ? playerCount * 3 : 0), Cards.Estate);
+            Add(gameSubset, supplyCardPiles, victoryCount, Cards.Duchy);
+            Add(gameSubset, supplyCardPiles, victoryCount, Cards.Province);
             
             if (this.useColonyAndPlatinum)
             {
-                Add<CardTypes.Colony>(gameSubset, supplyCardPiles, victoryCount);
-                Add<CardTypes.Platinum>(gameSubset, supplyCardPiles, 20);
+                Add(gameSubset, supplyCardPiles, victoryCount, Cards.Colony);
+                Add(gameSubset, supplyCardPiles, 20, Cards.Platinum);
             }
 
             if (this.kingdomPiles.Where(card => card.potionCost != 0).Any())
             {
-                Add<CardTypes.Potion>(gameSubset, supplyCardPiles, 16);
+                Add(gameSubset, supplyCardPiles, 16, Cards.Potion);
             }
             else
             {
-                gameSubset.AddCard(Card.Type<CardTypes.Potion>());
+                gameSubset.AddCard(Cards.Potion);
             }
 
             if (this.kingdomPiles.Where(card => card.requiresRuins).Any())
@@ -322,23 +322,23 @@ namespace Dominion
 
             if (this.useShelters)
             {
-                gameSubset.AddCard(Card.Type<CardTypes.Necropolis>());
-                gameSubset.AddCard(Card.Type<CardTypes.Hovel>());
-                gameSubset.AddCard(Card.Type<CardTypes.OvergrownEstate>());
+                gameSubset.AddCard(Cards.Necropolis);
+                gameSubset.AddCard(Cards.Hovel);
+                gameSubset.AddCard(Cards.OvergrownEstate);
             }
 
             if (this.kingdomPiles.Where(card => card.requiresSpoils).Any())
             {
-                Add<CardTypes.Spoils>(gameSubset, nonSupplyCardPiles, 16);
+                Add(gameSubset, nonSupplyCardPiles, 16, Cards.Spoils);
             }
 
-            if (this.kingdomPiles.Where(card => card.Is<CardTypes.Hermit>()).Any())
+            if (this.kingdomPiles.Where(card => card == Cards.Hermit).Any())
             {
-                Add<CardTypes.Madman>(gameSubset, nonSupplyCardPiles, 10);
+                Add(gameSubset, nonSupplyCardPiles, 10, Cards.Madman);
             }
-            if (this.kingdomPiles.Where(card => card.Is<CardTypes.Urchin>()).Any())
+            if (this.kingdomPiles.Where(card => card == Cards.Urchin).Any())
             {
-                Add<CardTypes.Mercenary>(gameSubset, nonSupplyCardPiles, 10);
+                Add(gameSubset, nonSupplyCardPiles, 10, Cards.Mercenary);
             }            
 
             return nonSupplyCardPiles.ToArray();
@@ -348,27 +348,27 @@ namespace Dominion
         {
             if (gameSubset.isInitializing)
             {
-                gameSubset.AddCard(Card.Type<CardTypes.Ruins>());
-                gameSubset.AddCard(Card.Type<CardTypes.AbandonedMine>());
-                gameSubset.AddCard(Card.Type<CardTypes.RuinedMarket>());
-                gameSubset.AddCard(Card.Type<CardTypes.RuinedLibrary>());
-                gameSubset.AddCard(Card.Type<CardTypes.RuinedVillage>());
-                gameSubset.AddCard(Card.Type<CardTypes.Survivors>());
+                gameSubset.AddCard(Cards.Ruins);
+                gameSubset.AddCard(Cards.AbandonedMine);
+                gameSubset.AddCard(Cards.RuinedMarket);
+                gameSubset.AddCard(Cards.RuinedLibrary);
+                gameSubset.AddCard(Cards.RuinedVillage);
+                gameSubset.AddCard(Cards.Survivors);
                 return null;
             }
             else
             {
                 int ruinCountPerPile = 10;
                 var allRuinsCards = new ListOfCards(gameSubset);
-                allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.AbandonedMine>(), ruinCountPerPile);
-                allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.RuinedMarket>(), ruinCountPerPile);
-                allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.RuinedLibrary>(), ruinCountPerPile);
-                allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.RuinedVillage>(), ruinCountPerPile);
-                allRuinsCards.AddNCardsToTop(Card.Type<CardTypes.Survivors>(), ruinCountPerPile);
+                allRuinsCards.AddNCardsToTop(Cards.AbandonedMine, ruinCountPerPile);
+                allRuinsCards.AddNCardsToTop(Cards.RuinedMarket, ruinCountPerPile);
+                allRuinsCards.AddNCardsToTop(Cards.RuinedLibrary, ruinCountPerPile);
+                allRuinsCards.AddNCardsToTop(Cards.RuinedVillage, ruinCountPerPile);
+                allRuinsCards.AddNCardsToTop(Cards.Survivors, ruinCountPerPile);
 
                 allRuinsCards.Shuffle(random);
 
-                var result = new PileOfCards(gameSubset, Card.Type<CardTypes.Ruins>());
+                var result = new PileOfCards(gameSubset, Cards.Ruins);
 
                 for (int i = 0; i < ruinsCount; ++i)
                 {
@@ -383,12 +383,6 @@ namespace Dominion
 
                 return result;
             }
-        }
-
-        private static void Add<CardType>(CardGameSubset gameSubset, List<PileOfCards> cardPiles, int initialCount)
-            where CardType : Card, new()
-        {
-            Add(gameSubset, cardPiles, initialCount, Card.Type<CardType>());
         }
 
         private static void Add(CardGameSubset gameSubset, List<PileOfCards> cardPiles, int initialCount, Card protoType)

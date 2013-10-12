@@ -245,7 +245,7 @@ namespace Program
             // good for cartographer, not sure about anyone else.
             foreach (Card card in revealedCards)
             {
-                bool shouldDiscard = card.isVictory || card.Is<CardTypes.Copper>();
+                bool shouldDiscard = card.isVictory || card == Cards.Copper;
                 if (!shouldDiscard)
                 {
                     return card;
@@ -309,9 +309,9 @@ namespace Program
 
         public override bool ShouldRevealCardFromHand(GameState gameState, Card card)
         {
-            if (card.Is<CardTypes.Watchtower>())
+            if (card == Cards.Watchtower)
                 return true;
-            if (card.Is<CardTypes.HorseTraders>())
+            if (card == Cards.HorseTraders)
                 return true;
 
             return base.ShouldRevealCardFromHand(gameState, card);
@@ -319,7 +319,7 @@ namespace Program
 
         public override bool ShouldRevealCardFromHandForCard(GameState gameState, Card card, Card cardFor)
         {
-            if (card.Is<CardTypes.Trader>())
+            if (card == Cards.Trader)
             {
                 return DoesCardPickerMatch(this.trashOrder, gameState, cardFor) && !DoesCardPickerMatch(this.purchaseOrder, gameState, cardFor);
             }
@@ -420,12 +420,12 @@ namespace Program
                 card => acceptableCard(card) && gameState.GetPile(card).Any());
 
             if (result == null &&
-                acceptableCard(Card.Type<CardTypes.Copper>()) &&
-                Strategies.CardBeingPlayedIs<CardTypes.IllGottenGains>(gameState))
+                acceptableCard(Cards.Copper) &&
+                Strategies.CardBeingPlayedIs(Cards.IllGottenGains, gameState))
             {
                 if (ShouldGainCopper(gameState, this.purchaseOrder))
                 {
-                    result = Card.Type<CardTypes.Copper>();
+                    result = Cards.Copper;
                 }
             }
 
@@ -447,7 +447,7 @@ namespace Program
             PlayerState self = gameState.Self;
 
             int minValue = self.ExpectedCoinValueAtEndOfTurn;
-            int maxValue = minValue + Strategies.CountInHand<CardTypes.IllGottenGains>(gameState);
+            int maxValue = minValue + Strategies.CountInHand(Cards.IllGottenGains, gameState);
 
             if (maxValue == minValue)
                 return false;
@@ -471,7 +471,7 @@ namespace Program
 
         private static bool DoesCardPickerMatch(ICardPicker pickOrder, GameState gameState, Card card)
         {
-            return pickOrder.GetPreferredCard(gameState, c => c.Is(card)) != null;
+            return pickOrder.GetPreferredCard(gameState, c => c == card) != null;
         }
 
         struct CompareCardByFirstToGain
@@ -515,7 +515,7 @@ namespace Program
 
         public override bool ShouldPlayerDiscardCardFromHand(GameState gameState, PlayerState playerState, Card card)
         {
-            if (card.Is<CardTypes.MarketSquare>())
+            if (card == Cards.MarketSquare)
                 return true;
 
             return base.ShouldPlayerDiscardCardFromHand(gameState, playerState, card);

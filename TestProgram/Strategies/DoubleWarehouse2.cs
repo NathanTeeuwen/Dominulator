@@ -28,20 +28,20 @@ namespace Program
             static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                         CardAcceptance.For<CardTypes.Province>(gameState => gameState.players.CurrentPlayer.AllOwnedCards.CountOf<CardTypes.Gold>() > 2),
-                         CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) < 5),
-                         CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 2),
-                         CardAcceptance.For<CardTypes.Gold>());
+                         CardAcceptance.For(Cards.Province, gameState => gameState.players.CurrentPlayer.AllOwnedCards.CountOf(Cards.Gold) > 2),
+                         CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) < 5),
+                         CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2),
+                         CardAcceptance.For(Cards.Gold));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Warehouse>(),
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Warehouse>());
+                    CardAcceptance.For(Cards.Silver),
+                    CardAcceptance.For(Cards.Warehouse),
+                    CardAcceptance.For(Cards.Silver),
+                    CardAcceptance.For(Cards.Silver),
+                    CardAcceptance.For(Cards.Warehouse));
 
                 var lowPriority = new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(Cards.Silver));
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
             }
@@ -49,19 +49,19 @@ namespace Program
             static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Warehouse>());
+                    CardAcceptance.For(Cards.Warehouse));
             }
 
             static CardPickByPriority DiscardOrder()
             {
                 return new CardPickByPriority(
-                    CardAcceptance.For<CardTypes.Province>(),
-                    CardAcceptance.For<CardTypes.Duchy>(),
-                    CardAcceptance.For<CardTypes.Estate>(),
-                    CardAcceptance.For<CardTypes.Copper>(),
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Warehouse>(),
-                    CardAcceptance.For<CardTypes.Gold>());
+                    CardAcceptance.For(Cards.Province),
+                    CardAcceptance.For(Cards.Duchy),
+                    CardAcceptance.For(Cards.Estate),
+                    CardAcceptance.For(Cards.Copper),
+                    CardAcceptance.For(Cards.Silver),
+                    CardAcceptance.For(Cards.Warehouse),
+                    CardAcceptance.For(Cards.Gold));
             }
         }
     }

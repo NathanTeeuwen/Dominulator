@@ -24,18 +24,18 @@ namespace Program.Simulations
                 {
                     return StartingDecks(
                        StartingDeck(
-                            CardWithCount<CardTypes.Copper>(7),
-                            CardWithCount<CardTypes.Estate>(1),
-                            CardWithCount<CardTypes.Silver>(5),
-                            CardWithCount<CardTypes.Gold>(2),
-                            CardWithCount<CardTypes.Rebuild>(2),
-                            CardWithCount<CardTypes.Duchy>(4)),
+                            CardWithCount(Cards.Copper, 7),
+                            CardWithCount(Cards.Estate, 1),
+                            CardWithCount(Cards.Silver, 5),
+                            CardWithCount(Cards.Gold, 2),
+                            CardWithCount(Cards.Rebuild, 2),
+                            CardWithCount(Cards.Duchy, 4)),
                        StartingDeck(
-                            CardWithCount<CardTypes.Copper>(7),
-                            CardWithCount<CardTypes.Silver>(5),
-                            CardWithCount<CardTypes.Gold>(2),
-                            CardWithCount<CardTypes.Rebuild>(2),
-                            CardWithCount<CardTypes.Duchy>(4))
+                            CardWithCount(Cards.Copper, 7),
+                            CardWithCount(Cards.Silver, 5),
+                            CardWithCount(Cards.Gold, 2),
+                            CardWithCount(Cards.Rebuild, 2),
+                            CardWithCount(Cards.Duchy, 4))
                             );
                 }
             }

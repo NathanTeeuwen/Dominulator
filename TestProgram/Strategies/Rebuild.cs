@@ -35,40 +35,40 @@ namespace Program
 
                     PlayerState self = gameState.Self;
                     
-                    if (CountOfPile<CardTypes.Duchy>(gameState) == 0)
+                    if (CountOfPile(Cards.Duchy, gameState) == 0)
                     {
-                        return Card.Type<CardTypes.Estate>();
+                        return Cards.Estate;
                     }
 
-                    if (CountInDeckAndDiscard<CardTypes.Province>(gameState) > 0)
+                    if (CountInDeckAndDiscard(Cards.Province, gameState) > 0)
                     {
-                        return Card.Type<CardTypes.Province>();
+                        return Cards.Province;
                     }
 
-                    if (CountInDeckAndDiscard<CardTypes.Estate>(gameState) > 0)
+                    if (CountInDeckAndDiscard(Cards.Estate, gameState) > 0)
                     {
-                        return Card.Type<CardTypes.Duchy>();
+                        return Cards.Duchy;
                     }                    
                     
-                    return Card.Type<CardTypes.Province>();
+                    return Cards.Province;
                 }
             }
 
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountAllOwned<CardTypes.Estate>(gameState) < CountAllOwned<CardTypes.Rebuild>(gameState)),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2 || CountOfPile<CardTypes.Duchy>(gameState) == 0),
-                           CardAcceptance.For<CardTypes.Rebuild>(gameState => CountAllOwned<CardTypes.Rebuild>(gameState) < 3),
-                           CardAcceptance.For<CardTypes.Gold>(),                           
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(Cards.Province),
+                           CardAcceptance.For(Cards.Duchy, gameState => CountAllOwned(Cards.Estate, gameState) < CountAllOwned(Cards.Rebuild, gameState)),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 2 || CountOfPile(Cards.Duchy, gameState) == 0),
+                           CardAcceptance.For(Cards.Rebuild, gameState => CountAllOwned(Cards.Rebuild, gameState) < 3),
+                           CardAcceptance.For(Cards.Gold),                           
+                           CardAcceptance.For(Cards.Silver));
             }
 
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Rebuild>());
+                           CardAcceptance.For(Cards.Rebuild));
             }                        
         }
     }

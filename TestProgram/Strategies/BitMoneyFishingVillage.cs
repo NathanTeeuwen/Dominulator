@@ -10,27 +10,26 @@ namespace Program
 {
     public static partial class Strategies
     {
-        public static class BigMoneyWithSilverReplacement<T>
-            where T : Card, new()
+        public static class BigMoneyWithSilverReplacement
         {
-            public static PlayerAction Player(string strategyName, int playerNumber, Card secondCard = null, int count = 1)
+            public static PlayerAction Player(Card card, string strategyName, int playerNumber, Card secondCard = null, int count = 1)
             {
                 return new PlayerAction(
                             strategyName,
                             playerNumber,                            
-                            purchaseOrder: PurchaseOrder(secondCard, count));
+                            purchaseOrder: PurchaseOrder(card, secondCard, count));
             }
 
-            private static CardPickByPriority PurchaseOrder(Card withCard, int count)
+            private static CardPickByPriority PurchaseOrder(Card card, Card withCard, int count)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(Default.ShouldBuyProvinces),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => gameState.GetPile<CardTypes.Province>().Count <= 4),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count <= 2),
-                           CardAcceptance.For<CardTypes.Gold>(),
+                           CardAcceptance.For(Cards.Province, Default.ShouldBuyProvinces),
+                           CardAcceptance.For(Cards.Duchy, gameState => gameState.GetPile(Cards.Province).Count <= 4),
+                           CardAcceptance.For(Cards.Estate, gameState => gameState.GetPile(Cards.Province).Count <= 2),
+                           CardAcceptance.For(Cards.Gold),
                            new CardAcceptance(withCard, gameState => CountAllOwned(withCard, gameState) < count),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => gameState.GetPile<CardTypes.Province>().Count < 4),
-                           CardAcceptance.For<T>());
+                           CardAcceptance.For(Cards.Estate, gameState => gameState.GetPile(Cards.Province).Count < 4),
+                           CardAcceptance.For(card));
             }   
         }
    
@@ -38,7 +37,8 @@ namespace Program
         {
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithSilverReplacement<CardTypes.FishingVillage>.Player(
+                return BigMoneyWithSilverReplacement.Player(
+                            Cards.FishingVillage,
                             "BigMoneyFishingVillageOverSilver",
                             playerNumber);
             }
@@ -48,7 +48,8 @@ namespace Program
         {
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithSilverReplacement<CardTypes.TestCards.FishingVillageAvailableForDeckCycle>.Player(
+                return BigMoneyWithSilverReplacement.Player(
+                            CardTypes.TestCards.FishingVillageAvailableForDeckCycle.card,
                             "BigMoneyFishingVillageAvailableForDeckCycle",
                             playerNumber);
             }
@@ -58,7 +59,8 @@ namespace Program
         {
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithSilverReplacement<CardTypes.TestCards.FishingVillageEmptyDuration>.Player(
+                return BigMoneyWithSilverReplacement.Player(
+                            CardTypes.TestCards.FishingVillageEmptyDuration.card,
                             "BigMoneyFishingVillageEmptyDuration",
                             playerNumber);
             }

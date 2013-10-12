@@ -14,10 +14,10 @@ namespace Program.Simulations
         {
             // for forum topic: http://forum.dominionstrategy.com/index.php?topic=8391.0
             Program.ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoney.Player(2));
-            Program.ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Wharf>.Player(2, cardCount: 2));
-            Program.ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Mountebank>.Player(2, cardCount: 2));
-            Program.ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2, cardCount: 2));
-            Program.ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard<CardTypes.YoungWitch>.Player(2, cardCount: 2));        
+            Program.ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard.Player(Cards.Wharf, 2, cardCount: 2));
+            Program.ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard.Player(Cards.Mountebank, 2, cardCount: 2));
+            Program.ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard.Player(Cards.Witch, 2, cardCount: 2));
+            Program.ComparePlayers(Strategies.Rebuild.Player(1), Strategies.BigMoneyWithCard.Player(Cards.YoungWitch, 2, cardCount: 2));        
         }
     }
 }

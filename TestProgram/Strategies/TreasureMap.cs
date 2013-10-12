@@ -32,19 +32,19 @@ namespace Program
             private static CardPickByPriority PurchaseOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Province>(),
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 5),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 2),
-                           CardAcceptance.For<CardTypes.Gold>(),
-                           CardAcceptance.For<CardTypes.TreasureMap>(gameState => CountAllOwned<CardTypes.Gold>(gameState) == 0),
-                           CardAcceptance.For<CardTypes.Estate>(gameState => CountOfPile<CardTypes.Province>(gameState) < 4),
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(Cards.Province),
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 5),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 2),
+                           CardAcceptance.For(Cards.Gold),
+                           CardAcceptance.For(Cards.TreasureMap, gameState => CountAllOwned(Cards.Gold, gameState) == 0),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 4),
+                           CardAcceptance.For(Cards.Silver));
             }
 
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.TreasureMap>(gameState => CountInHand<CardTypes.TreasureMap>(gameState) == 2 || CountAllOwned<CardTypes.Gold>(gameState) > 0));
+                           CardAcceptance.For(Cards.TreasureMap, gameState => CountInHand(Cards.TreasureMap, gameState) == 2 || CountAllOwned(Cards.Gold, gameState) > 0));
             }                        
         }
     }

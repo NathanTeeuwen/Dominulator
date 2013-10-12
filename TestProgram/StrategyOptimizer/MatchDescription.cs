@@ -10,7 +10,7 @@ namespace Program
 {
     public class MatchDescription
     {
-        // e.g. countAllOwned<Province>(gameState) < 6
+        // e.g. CountAllOwned(Province.card, gameState) < 6
         internal readonly Card cardType;
         internal readonly CountSource countSource;
         internal readonly Comparison comparison;

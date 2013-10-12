@@ -43,20 +43,20 @@ namespace Program
             private static ICardPicker PurchaseOrder(bool shouldBuySpiceMerchant, bool shouldBuyPlaza)
             {
                 var highPriority = new CardPickByPriority(                     
-                     CardAcceptance.For<CardTypes.Province>(CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount));
+                     CardAcceptance.For(Cards.Province, CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    shouldBuySpiceMerchant == true ? CardAcceptance.For<CardTypes.SpiceMerchant>() : CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Silver>(),
-                    CardAcceptance.For<CardTypes.Embassy>(),
-                    CardAcceptance.For<CardTypes.Tunnel>(),
-                    CardAcceptance.For<CardTypes.Embassy>(),
-                    shouldBuyPlaza ? CardAcceptance.For<CardTypes.Plaza>() : null);
+                    shouldBuySpiceMerchant == true ? CardAcceptance.For(Cards.SpiceMerchant) : CardAcceptance.For(Cards.Silver),
+                    CardAcceptance.For(Cards.Silver),
+                    CardAcceptance.For(Cards.Embassy),
+                    CardAcceptance.For(Cards.Tunnel),
+                    CardAcceptance.For(Cards.Embassy),
+                    shouldBuyPlaza ? CardAcceptance.For(Cards.Plaza) : null);
 
                 var lowPriority = new CardPickByPriority(                    
-                           CardAcceptance.For<CardTypes.Duchy>(gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),
-                           CardAcceptance.For<CardTypes.Tunnel>(gameState => gameState.Self.AllOwnedCards.Count > 13),                          
-                           CardAcceptance.For<CardTypes.Silver>());
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4),
+                           CardAcceptance.For(Cards.Tunnel, gameState => gameState.Self.AllOwnedCards.Count > 13),                          
+                           CardAcceptance.For(Cards.Silver));
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
             }
@@ -64,22 +64,22 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For<CardTypes.Plaza>(),
-                           CardAcceptance.For<CardTypes.SpiceMerchant>(),
-                           CardAcceptance.For<CardTypes.Embassy>());
+                           CardAcceptance.For(Cards.Plaza),
+                           CardAcceptance.For(Cards.SpiceMerchant),
+                           CardAcceptance.For(Cards.Embassy));
             }
 
             private static CardPickByPriority DiscardOrder()
             {
                 return new CardPickByPriority(                    
-                    CardAcceptance.For<CardTypes.Tunnel>(),
-                    CardAcceptance.For<CardTypes.Curse>(),
-                    CardAcceptance.For<CardTypes.Province>(),
-                    CardAcceptance.For<CardTypes.Duchy>(),
-                    CardAcceptance.For<CardTypes.Estate>(),
-                    CardAcceptance.For<CardTypes.Copper>(),
-                    CardAcceptance.For<CardTypes.Silver>(),                    
-                    CardAcceptance.For<CardTypes.Gold>());
+                    CardAcceptance.For(Cards.Tunnel),
+                    CardAcceptance.For(Cards.Curse),
+                    CardAcceptance.For(Cards.Province),
+                    CardAcceptance.For(Cards.Duchy),
+                    CardAcceptance.For(Cards.Estate),
+                    CardAcceptance.For(Cards.Copper),
+                    CardAcceptance.For(Cards.Silver),                    
+                    CardAcceptance.For(Cards.Gold));
             }
         }
     }
