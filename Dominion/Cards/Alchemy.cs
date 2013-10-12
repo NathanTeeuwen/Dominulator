@@ -12,7 +12,7 @@ namespace Dominion.CardTypes
     public class Potion 
         : Card 
     { 
-        public Potion() 
+        public static Potion card; private Potion() 
             : base("Potion", coinCost: 4, isTreasure:true) 
         { 
         }
@@ -26,7 +26,7 @@ namespace Dominion.CardTypes
     public class Alchemist 
         : Card
     {
-        public Alchemist()
+        public static Alchemist card; private Alchemist()
             : base("Alchemist", coinCost: 3, potionCost:1, isAction: true, plusCards:2, plusActions:1)
         {
             this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
@@ -43,7 +43,7 @@ namespace Dominion.CardTypes
     public class Apothecary
        : Card
     {
-        public Apothecary()
+        public static Apothecary card; private Apothecary()
             : base("Apothecary", coinCost: 2, potionCost: 1, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
@@ -58,7 +58,7 @@ namespace Dominion.CardTypes
     public class Apprentice
        : Card
     {
-        public Apprentice()
+        public static Apprentice card; private Apprentice()
             : base("Apprentice", coinCost: 5, isAction: true, plusActions: 1)
         {
         }
@@ -79,7 +79,7 @@ namespace Dominion.CardTypes
     public class Familiar
        : Card
     {
-        public Familiar()
+        public static Familiar card; private Familiar()
             : base("Familiar", coinCost: 3, potionCost: 1, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
@@ -93,7 +93,7 @@ namespace Dominion.CardTypes
     public class Golem
        : Card
     {
-        public Golem()
+        public static Golem card; private Golem()
             : base("Golem", coinCost: 4, potionCost: 1, isAction: true)
         {
         }
@@ -107,7 +107,7 @@ namespace Dominion.CardTypes
     public class Herbalist :
        Card
     {
-        public Herbalist()
+        public static Herbalist card; private Herbalist()
             : base("Herbalist", coinCost: 2, isAction: true, plusCoins:1, plusBuy:1)
         {
             this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
@@ -124,7 +124,7 @@ namespace Dominion.CardTypes
     public class PhilosophersStone
        : Card
     {
-        public PhilosophersStone()
+        public static PhilosophersStone card; private PhilosophersStone()
             : base("PhilosophersStone", coinCost: 3, potionCost:1, isTreasure: true)
         {
         }
@@ -138,7 +138,7 @@ namespace Dominion.CardTypes
     public class Possession
        : Card
     {
-        public Possession()
+        public static Possession card; private Possession()
             : base("Possession", coinCost: 6, potionCost:1, isAction: true)
         {
         }
@@ -152,7 +152,7 @@ namespace Dominion.CardTypes
     public class ScryingPool
        : Card
     {
-        public ScryingPool()
+        public static ScryingPool card; private ScryingPool()
             : base("ScryingPool", coinCost: 2, potionCost:1, isAction: true, isAttack:true, plusActions:1)
         {
         }
@@ -166,7 +166,7 @@ namespace Dominion.CardTypes
     public class Transmute
        : Card
     {
-        public Transmute()
+        public static Transmute card; private Transmute()
             : base("Transmute", coinCost: 0, potionCost:1, isAction: true)
         {
         }
@@ -189,7 +189,7 @@ namespace Dominion.CardTypes
     public class University
        : Card
     {
-        public University()
+        public static University card; private University()
             : base("University", coinCost: 2, potionCost:1, isAction: true, plusActions:2)
         {
         }
@@ -205,7 +205,7 @@ namespace Dominion.CardTypes
     public class Vineyard
        : Card
     {
-        public Vineyard()
+        public static Vineyard card; private Vineyard()
             : base("Vineyard", coinCost: 0, potionCost:1, isAction: true, victoryPoints: playerState => playerState.AllOwnedCards.Where(card => card.isAction).Count()/3)
         {
         }        

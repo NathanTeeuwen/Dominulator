@@ -12,7 +12,7 @@ namespace Dominion.CardTypes
     public class Ambassador :
         Card
     {
-        public Ambassador()
+        public static Ambassador card; private Ambassador()
             : base("Ambassador", coinCost: 3, isAction: true, attackDependsOnPlayerChoice: true)
         {
         }
@@ -52,12 +52,12 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Bazaar : Card { public Bazaar() : base("Bazaar", coinCost: 5, isAction: true, plusCoins: 1, plusCards: 1, plusActions: 2) { } }
+    public class Bazaar : Card { public static Bazaar card; private Bazaar() : base("Bazaar", coinCost: 5, isAction: true, plusCoins: 1, plusCards: 1, plusActions: 2) { } }
 
     public class Caravan :
         Card
     {
-        public Caravan()
+        public static Caravan card; private Caravan()
             : base("Caravan", coinCost: 4, isAction: true, isDuration: true, plusCards: 1, plusActions: 1)
         {
         }
@@ -71,7 +71,7 @@ namespace Dominion.CardTypes
     public class Cutpurse :
        Card
     {
-        public Cutpurse()
+        public static Cutpurse card; private Cutpurse()
             : base("Cutpurse", coinCost: 4, isAction: true, plusCoins: 2, isAttack: true)
         {
         }
@@ -88,7 +88,7 @@ namespace Dominion.CardTypes
     public class Embargo :
         Card
     {
-        public Embargo()
+        public static Embargo card; private Embargo()
             : base("Embargo", coinCost: 2, isAction: true)
         {
         }
@@ -104,7 +104,7 @@ namespace Dominion.CardTypes
     public class Explorer :
        Card
     {
-        public Explorer()
+        public static Explorer card; private Explorer()
             : base("Explorer", coinCost: 5, isAction: true)
         {
         }
@@ -125,7 +125,7 @@ namespace Dominion.CardTypes
     public class FishingVillage :
         Card
     {
-        public FishingVillage()
+        public static FishingVillage card; private FishingVillage()
             : base("Fishing Village", coinCost: 3, isAction: true, isDuration: true, plusCoins: 1, plusActions: 2)
         {
         }
@@ -140,7 +140,7 @@ namespace Dominion.CardTypes
     public class GhostShip :
         Card
     {
-        public GhostShip()
+        public static GhostShip card; private GhostShip()
             : base("Ghost Ship", coinCost: 5, isAction: true, isAttack: true, plusCards: 2)
         {
         }
@@ -157,7 +157,7 @@ namespace Dominion.CardTypes
     public class Haven :
         Card
     {
-        public Haven()
+        public static Haven card; private Haven()
             : base("Haven", coinCost: 2, isAction: true, isDuration: true, plusCards: 1, plusActions: 1)
         {
         }
@@ -171,7 +171,7 @@ namespace Dominion.CardTypes
     public class Island :
         Card
     {
-        public Island()
+        public static Island card; private Island()
             : base("Island", coinCost: 4, isAction: true, victoryPoints: playerState => 2)
         {
         }
@@ -190,7 +190,7 @@ namespace Dominion.CardTypes
     public class Lighthouse :
         Card
     {
-        public Lighthouse()
+        public static Lighthouse card; private Lighthouse()
             : base("Lighthouse", coinCost: 2, isAction: true, isDuration: true, plusCoins: 1, plusActions: 1)
         {
         }
@@ -204,7 +204,7 @@ namespace Dominion.CardTypes
     public class Lookout :
         Card
     {
-        public Lookout()
+        public static Lookout card; private Lookout()
             : base("Lookout", coinCost: 3, isAction: true, plusActions: 1)
         {
 
@@ -224,7 +224,7 @@ namespace Dominion.CardTypes
     public class MerchantShip :
         Card
     {
-        public MerchantShip()
+        public static MerchantShip card; private MerchantShip()
             : base("MerchantShip", coinCost: 5, isAction: true, isDuration: true, plusCoins: 2)
         {
         }
@@ -238,7 +238,7 @@ namespace Dominion.CardTypes
     public class NativeVillage :
         Card
     {
-        public NativeVillage()
+        public static NativeVillage card; private NativeVillage()
             : base("Native Village", coinCost: 2, isAction: true, plusActions: 2)
         {
         }
@@ -264,7 +264,7 @@ namespace Dominion.CardTypes
     public class Navigator :
         Card
     {
-        public Navigator()
+        public static Navigator card; private Navigator()
             : base("Navigator", coinCost: 4, isAction: true, plusCoins: 2)
         {
         }
@@ -290,7 +290,7 @@ namespace Dominion.CardTypes
     public class Outpost :
         Card
     {
-        public Outpost()
+        public static Outpost card; private Outpost()
             : base("Outpost", coinCost: 5, isAction: true, isDuration: true)
         {
         }
@@ -311,7 +311,7 @@ namespace Dominion.CardTypes
     public class PearlDiver :
         Card
     {
-        public PearlDiver()
+        public static PearlDiver card; private PearlDiver()
             : base("Pearl Diver", coinCost: 2, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
@@ -330,7 +330,7 @@ namespace Dominion.CardTypes
     public class PirateShip :
         Card
     {
-        public PirateShip()
+        public static PirateShip card; private PirateShip()
             : base("Pirate Ship", coinCost: 4, isAction: true, isAttack: true, attackDependsOnPlayerChoice:true)
         {
         }
@@ -367,7 +367,7 @@ namespace Dominion.CardTypes
     public class Salvager :
         Card
     {
-        public Salvager()
+        public static Salvager card; private Salvager()
             : base("Salvager", coinCost: 4, isAction: true)
         {
         }
@@ -385,7 +385,7 @@ namespace Dominion.CardTypes
     public class SeaHag :
         Card
     {
-        public SeaHag()
+        public static SeaHag card; private SeaHag()
             : base("Sea Hag", coinCost: 4, isAction: true, isAttack: true)
         {
         }
@@ -400,7 +400,7 @@ namespace Dominion.CardTypes
     public class Smugglers :
         Card
     {
-        public Smugglers()
+        public static Smugglers card; private Smugglers()
             : base("Smugglers", coinCost: 3, isAction: true)
         {
         }
@@ -415,7 +415,7 @@ namespace Dominion.CardTypes
     public class Tactician :
         Card
     {
-        public Tactician()
+        public static Tactician card; private Tactician()
             : base("Tactician", coinCost: 5, isAction: true, isDuration: true)
         {
         }
@@ -437,7 +437,7 @@ namespace Dominion.CardTypes
     public class TreasureMap :
         Card
     {
-        public TreasureMap()
+        public static TreasureMap card; private TreasureMap()
             : base("Treasure Map", coinCost: 4, isAction: true)
         {
         }
@@ -457,7 +457,7 @@ namespace Dominion.CardTypes
     public class Treasury :
         Card
     {
-        public Treasury()
+        public static Treasury card; private Treasury()
             : base("Treasury", coinCost: 5, isAction: true, plusActions: 1, plusCards: 1, plusCoins: 1)
         {
             this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
@@ -474,7 +474,7 @@ namespace Dominion.CardTypes
     public class Warehouse :
         Card
     {
-        public Warehouse()
+        public static Warehouse card; private Warehouse()
             : base("Warehouse", coinCost: 3, isAction: true, plusActions: 1, plusCards: 3)
         {
         }
@@ -488,7 +488,7 @@ namespace Dominion.CardTypes
     public class Wharf :
         Card
     {
-        public Wharf()
+        public static Wharf card; private Wharf()
             : base("Wharf", coinCost: 5, isAction: true, isDuration: true, plusCards: 2, plusBuy: 1)
         {
         }

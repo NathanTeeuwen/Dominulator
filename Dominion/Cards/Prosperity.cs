@@ -9,16 +9,16 @@ namespace Dominion.CardTypes
 {
     using Dominion;
 
-    public class Colony : Card { public Colony() : base("Colony", coinCost: 11, victoryPoints: playerState => 10) { } }
-    public class Platinum : Card { public Platinum() : base("Platinum", coinCost: 9, plusCoins: 5, isTreasure: true) { } }
+    public class Colony : Card { public static Colony card; private Colony() : base("Colony", coinCost: 11, victoryPoints: playerState => 10) { } }
+    public class Platinum : Card { public static Platinum card; private Platinum() : base("Platinum", coinCost: 9, plusCoins: 5, isTreasure: true) { } }
 
-    public class Monument : Card { public Monument() : base("Monument", coinCost: 4, isAction: true, plusCoins: 2, plusVictoryToken: 1) { } }
-    public class WorkersVillage : Card { public WorkersVillage() : base("Workers Village", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2, plusBuy: 1) { } }
+    public class Monument : Card { public static Monument card; private Monument() : base("Monument", coinCost: 4, isAction: true, plusCoins: 2, plusVictoryToken: 1) { } }
+    public class WorkersVillage : Card { public static WorkersVillage card; private WorkersVillage() : base("Workers Village", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2, plusBuy: 1) { } }
 
     public class Bank :
        Card
     {
-        public Bank()
+        public static Bank card; private Bank()
             : base("Bank", coinCost: 7, isTreasure: true)
         {
         }
@@ -33,7 +33,7 @@ namespace Dominion.CardTypes
     public class Bishop :
        Card
     {
-        public Bishop()
+        public static Bishop card; private Bishop()
             : base("Bishop", coinCost: 4, isAction: true)
         {
         }
@@ -57,7 +57,7 @@ namespace Dominion.CardTypes
     public class City :
        Card
     {
-        public City()
+        public static City card; private City()
             : base("City", coinCost: 5, plusActions: 2, plusCards: 1, isAction: true)
         {
         }
@@ -82,7 +82,7 @@ namespace Dominion.CardTypes
     public class Contraband :
         Card
     {
-        public Contraband()
+        public static Contraband card; private Contraband()
             : base("Contraband", coinCost: 5, plusCoins: 3, isTreasure: true)
         {
         }
@@ -98,7 +98,7 @@ namespace Dominion.CardTypes
     public class CountingHouse :
         Card
     {
-        public CountingHouse()
+        public static CountingHouse card; private CountingHouse()
             : base("CountingHouse", coinCost: 5, isAction: true)
         {
         }
@@ -124,7 +124,7 @@ namespace Dominion.CardTypes
     public class Expand :
         Card
     {
-        public Expand()
+        public static Expand card; private Expand()
             : base("Expand", coinCost: 7, isAction: true)
         {
         }
@@ -142,7 +142,7 @@ namespace Dominion.CardTypes
     public class Forge :
         Card
     {
-        public Forge()
+        public static Forge card; private Forge()
             : base("Forge", coinCost: 7, isAction: true)
         {
         }
@@ -165,7 +165,7 @@ namespace Dominion.CardTypes
     public class Goons :
         Card
     {
-        public Goons()
+        public static Goons card; private Goons()
             : base("Goons", coinCost: 6, isAction: true, isAttack: true)
         {
             this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
@@ -185,7 +185,7 @@ namespace Dominion.CardTypes
     public class GrandMarket :
         Card
     {
-        public GrandMarket()
+        public static GrandMarket card; private GrandMarket()
             : base("Grand Market", coinCost: 6, isAction: true, plusCards: 1, plusActions: 1, plusBuy: 1, plusCoins: 2)
         {
         }
@@ -199,7 +199,7 @@ namespace Dominion.CardTypes
     public class Hoard :
        Card
     {
-        public Hoard()
+        public static Hoard card; private Hoard()
             : base("Hoard", coinCost: 6, isTreasure: true, plusCoins: 2)
         {
             this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
@@ -217,7 +217,7 @@ namespace Dominion.CardTypes
     public class KingsCourt
         : Card
     {
-        public KingsCourt()
+        public static KingsCourt card; private KingsCourt()
             : base("Kings Court", coinCost: 7, isAction: true)
         {
         }
@@ -235,7 +235,7 @@ namespace Dominion.CardTypes
     public class Loan
         : Card
     {
-        public Loan()
+        public static Loan card; private Loan()
             : base("Loan", coinCost: 3, isTreasure: true)
         {
         }
@@ -266,7 +266,7 @@ namespace Dominion.CardTypes
     public class Mint
         : Card
     {
-        public Mint()
+        public static Mint card; private Mint()
             : base("Mint", coinCost: 5, isAction: true)
         {
         }
@@ -287,7 +287,7 @@ namespace Dominion.CardTypes
     public class Mountebank
         : Card
     {
-        public Mountebank()
+        public static Mountebank card; private Mountebank()
             : base("Mountebank", coinCost: 5, isAction: true, isAttack: true, plusCoins: 2)
         {
         }
@@ -305,7 +305,7 @@ namespace Dominion.CardTypes
     public class Peddler
         : Card
     {
-        public Peddler()
+        public static Peddler card; private Peddler()
             : base("Peddler", coinCost: 8, isAction: true, plusActions: 1, plusCards: 1, plusCoins: 1)
         {
         }
@@ -324,7 +324,7 @@ namespace Dominion.CardTypes
     public class Quarry
         : Card
     {
-        public Quarry()
+        public static Quarry card; private Quarry()
             : base("Quarry", coinCost: 4, isTreasure: true, plusCoins: 1)
         {
             this.provideDiscountForWhileInPlay = ProvideDiscountForWhileInPlay;
@@ -343,7 +343,7 @@ namespace Dominion.CardTypes
     public class Rabble
         : Card
     {
-        public Rabble()
+        public static Rabble card; private Rabble()
             : base("Rabble", coinCost: 5, isAction: true, plusCards: 3, isAttack: true)
         {
         }
@@ -359,7 +359,7 @@ namespace Dominion.CardTypes
     public class RoyalSeal
         : Card
     {
-        public RoyalSeal()
+        public static RoyalSeal card; private RoyalSeal()
             : base("Royal Seal", coinCost: 5, isTreasure: true, plusCoins: 2)
         {
             this.doSpecializedActionOnGainWhileInPlay = DoSpecializedActionOnGainWhileInPlay;
@@ -379,7 +379,7 @@ namespace Dominion.CardTypes
     public class Talisman
         : Card
     {
-        public Talisman()
+        public static Talisman card; private Talisman()
             : base("Talisman", coinCost: 4, isTreasure: true, plusCoins: 1)
         {
             this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
@@ -397,7 +397,7 @@ namespace Dominion.CardTypes
     public class TradeRoute
         : Card
     {
-        public TradeRoute()
+        public static TradeRoute card; private TradeRoute()
             : base("Trade Route", coinCost: 3, isAction: true, plusBuy: 1)
         {
         }
@@ -414,7 +414,7 @@ namespace Dominion.CardTypes
     public class Vault
         : Card
     {
-        public Vault()
+        public static Vault card; private Vault()
             : base("Vault", coinCost: 5, isAction: true, plusCards: 2)
         {
         }
@@ -449,7 +449,7 @@ namespace Dominion.CardTypes
     public class Venture
         : Card
     {
-        public Venture()
+        public static Venture card; private Venture()
             : base("Venture", coinCost: 5, plusCoins: 1)
         {
         }
@@ -478,7 +478,7 @@ namespace Dominion.CardTypes
     public class Watchtower
         : Card
     {
-        public Watchtower()
+        public static Watchtower card; private Watchtower()
             : base("Watchtower", coinCost: 3, isReaction:true, isAction:true)
         {
             this.doSpecializedActionOnGainWhileInHand = DoSpecializedActionOnGainWhileInHand;

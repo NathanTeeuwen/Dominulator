@@ -12,7 +12,7 @@ namespace Dominion.CardTypes
     public class Fairgrounds
        : Card
     {
-        public Fairgrounds()
+        public static Fairgrounds card; private Fairgrounds()
             : base("Fairgrounds", coinCost: 6, victoryPoints: playerState => playerState.AllOwnedCards.GroupBy(card => card).Count() / 5 * 2)
         {            
         }
@@ -21,7 +21,7 @@ namespace Dominion.CardTypes
     public class FarmingVillage 
         : Card
     {
-        public FarmingVillage()
+        public static FarmingVillage card; private FarmingVillage()
             : base("FarmingVillage", coinCost: 4, isAction: true, plusActions:2)
         {
         }
@@ -55,7 +55,7 @@ namespace Dominion.CardTypes
     public class FortuneTeller
         : Card
     {
-        public FortuneTeller()
+        public static FortuneTeller card; private FortuneTeller()
             : base("FortuneTeller", coinCost: 3, isAction: true, plusCoins:2, isAttack:true)
         {
         }
@@ -82,7 +82,7 @@ namespace Dominion.CardTypes
     public class Hamlet
         : Card
     {
-        public Hamlet()
+        public static Hamlet card; private Hamlet()
             : base("Hamlet", coinCost: 2, isAction: true, plusActions: 1, plusCards: 1)
         {
         }
@@ -104,7 +104,7 @@ namespace Dominion.CardTypes
     public class Harvest
         : Card
     {
-        public Harvest()
+        public static Harvest card; private Harvest()
             : base("Harvest", coinCost: 5, isAction: true)
         {
         }
@@ -120,7 +120,7 @@ namespace Dominion.CardTypes
     public class HornOfPlenty
         : Card
     {
-        public HornOfPlenty()
+        public static HornOfPlenty card; private HornOfPlenty()
             : base("HornOfPlenty", coinCost: 5, isTreasure: true)
         {
         }
@@ -143,7 +143,7 @@ namespace Dominion.CardTypes
     public class HorseTraders
         : Card
     {
-        public HorseTraders()
+        public static HorseTraders card; private HorseTraders()
             : base("HorseTraders", coinCost: 4, isAction: true, isReaction: true, plusBuy: 1, plusCoins: 3)
         {
         }
@@ -177,7 +177,7 @@ namespace Dominion.CardTypes
     public class HuntingParty
         : Card
     {
-        public HuntingParty()
+        public static HuntingParty card; private HuntingParty()
             : base("HuntingParty", coinCost: 5, isAction: true, plusActions: 1, plusCards: 1)
         {
         }
@@ -204,7 +204,7 @@ namespace Dominion.CardTypes
     public class Jester
         : Card
     {
-        public Jester()
+        public static Jester card; private Jester()
             : base("Jester", coinCost: 5, isAction: true, isAttack: true, plusCoins: 2)
         {
         }
@@ -233,7 +233,7 @@ namespace Dominion.CardTypes
     public class Menagerie
         : Card
     {
-        public Menagerie()
+        public static Menagerie card; private Menagerie()
             : base("Menagerie", coinCost: 3, isAction: true, plusActions: 1)
         {
         }
@@ -256,7 +256,7 @@ namespace Dominion.CardTypes
     public class Remake
         : Card
     {
-        public Remake()
+        public static Remake card; private Remake()
             : base("Remake", coinCost: 4, isAction: true)
         {
         }
@@ -278,7 +278,7 @@ namespace Dominion.CardTypes
     public class Tournament
         : Card
     {
-        public Tournament()
+        public static Tournament card; private Tournament()
             : base("Tournament", coinCost: 4, isAction: true, plusActions: 1)
         {
         }
@@ -292,7 +292,7 @@ namespace Dominion.CardTypes
     public class YoungWitch
        : Card
     {
-        public YoungWitch()
+        public static YoungWitch card; private YoungWitch()
             : base("Young Witch", coinCost: 4, plusCards: 2, isAction: true, isAttack: true)
         {
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-    public class Card
+    public abstract class Card
         : IEquatable<Card>
     {
         public readonly string name;
