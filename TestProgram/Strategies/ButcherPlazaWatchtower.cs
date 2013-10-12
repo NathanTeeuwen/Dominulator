@@ -35,7 +35,7 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                         CardAcceptance.For(CardTypes.Province.card, CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount),
+                          CardAcceptance.For(CardTypes.Province.card, CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount),
                           CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 2),                          
                           CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) <= 2),
                           CardAcceptance.For(CardTypes.Butcher.card, gameState => CountAllOwned(CardTypes.Butcher.card, gameState) < 2),                          

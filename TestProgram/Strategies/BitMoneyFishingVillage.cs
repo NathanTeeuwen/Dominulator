@@ -10,18 +10,17 @@ namespace Program
 {
     public static partial class Strategies
     {
-        public static class BigMoneyWithSilverReplacement<T>
-            where T : Card, new()
+        public static class BigMoneyWithSilverReplacement
         {
-            public static PlayerAction Player(string strategyName, int playerNumber, Card secondCard = null, int count = 1)
+            public static PlayerAction Player(Card card, string strategyName, int playerNumber, Card secondCard = null, int count = 1)
             {
                 return new PlayerAction(
                             strategyName,
                             playerNumber,                            
-                            purchaseOrder: PurchaseOrder(secondCard, count));
+                            purchaseOrder: PurchaseOrder(card, secondCard, count));
             }
 
-            private static CardPickByPriority PurchaseOrder(Card withCard, int count)
+            private static CardPickByPriority PurchaseOrder(Card card, Card withCard, int count)
             {
                 return new CardPickByPriority(
                            CardAcceptance.For(CardTypes.Province.card, Default.ShouldBuyProvinces),
@@ -38,7 +37,8 @@ namespace Program
         {
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithSilverReplacement<CardTypes.FishingVillage>.Player(
+                return BigMoneyWithSilverReplacement.Player(
+                            CardTypes.FishingVillage.card,
                             "BigMoneyFishingVillageOverSilver",
                             playerNumber);
             }
@@ -48,7 +48,8 @@ namespace Program
         {
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithSilverReplacement<CardTypes.TestCards.FishingVillageAvailableForDeckCycle>.Player(
+                return BigMoneyWithSilverReplacement.Player(
+                            CardTypes.TestCards.FishingVillageAvailableForDeckCycle.card,
                             "BigMoneyFishingVillageAvailableForDeckCycle",
                             playerNumber);
             }
@@ -58,7 +59,8 @@ namespace Program
         {
             public static PlayerAction Player(int playerNumber)
             {
-                return BigMoneyWithSilverReplacement<CardTypes.TestCards.FishingVillageEmptyDuration>.Player(
+                return BigMoneyWithSilverReplacement.Player(
+                            CardTypes.TestCards.FishingVillageEmptyDuration.card,
                             "BigMoneyFishingVillageEmptyDuration",
                             playerNumber);
             }
