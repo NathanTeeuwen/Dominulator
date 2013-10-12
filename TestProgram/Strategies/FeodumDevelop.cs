@@ -77,7 +77,7 @@ namespace Program
                 }
                 else
                 {
-                    result = TrashOrder().GetPreferredCard(gameState, card => self.Hand.HasCard(card) && !card == CardTypes.Develop.card);
+                    result = TrashOrder().GetPreferredCard(gameState, card => self.Hand.HasCard(card) && card != CardTypes.Develop.card);
                 }
 
                 return result != null;

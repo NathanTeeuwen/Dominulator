@@ -50,8 +50,8 @@ namespace Program.Simulations
         {
             var gameLogFactory = new GameLogFactory();
 
-            var player1 = Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(1, cardCount:2);
-            var player2 = Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2, cardCount:2);
+            var player1 = Strategies.BigMoneyWithCard.Player(CardTypes.Witch.card, 1, cardCount: 2);
+            var player2 = Strategies.BigMoneyWithCard.Player(CardTypes.Witch.card, 2, cardCount: 2);
 
             var builder = new GameConfigBuilder();
             PlayerAction.SetKingdomCards(builder, player1, player2);
@@ -61,8 +61,8 @@ namespace Program.Simulations
             var gameConfig = builder.ToGameConfig();
 
             Program.ComparePlayers(
-                Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(1, cardCount:2),
-                Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2, cardCount:2),
+                Strategies.BigMoneyWithCard.Player(CardTypes.Witch.card, 1, cardCount: 2),
+                Strategies.BigMoneyWithCard.Player(CardTypes.Witch.card, 2, cardCount: 2),
                 gameConfig,
                 firstPlayerAdvantage: true,                
                 numberOfGames: gameCount,

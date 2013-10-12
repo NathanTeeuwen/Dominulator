@@ -13,7 +13,7 @@ namespace Program.Simulations
         public static void Run()
         {
             // for forum topic: http://forum.dominionstrategy.com/index.php?topic=8461.0
-            Program.ComparePlayers(Strategies.BigMoneyWithCard<CardTypes.Soothsayer>.Player(1), Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2));
+            Program.ComparePlayers(Strategies.BigMoneyWithCard.Player(CardTypes.Soothsayer.card, 1), Strategies.BigMoneyWithCard.Player(CardTypes.Witch.card, 2));
         }
     }
 }

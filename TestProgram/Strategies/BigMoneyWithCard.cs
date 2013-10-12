@@ -165,7 +165,7 @@ namespace Program
                            CardAcceptance.For(CardTypes.Province.card, gameState => CountAllOwned(CardTypes.Gold.card, gameState) > 2),
                            CardAcceptance.For(CardTypes.Duchy.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
                            CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 2),
-                           CardAcceptance.For(card, gameState => CountAllOwned(T.card, gameState) < cardCount),
+                           CardAcceptance.For(card, gameState => CountAllOwned(card, gameState) < cardCount),
                            CardAcceptance.For(CardTypes.Gold.card),
                            CardAcceptance.For(CardTypes.Cartographer.card),
                            CardAcceptance.For(CardTypes.Estate.card, gameState => CountOfPile(CardTypes.Province.card, gameState) < 4),
