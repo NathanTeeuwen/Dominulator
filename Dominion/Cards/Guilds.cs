@@ -12,7 +12,7 @@ namespace Dominion.CardTypes
     public class Advisor
         : Card
     {
-        public static Advisor card; private Advisor()
+        public static Advisor card = new Advisor(); private Advisor()
             : base("Advisor", coinCost: 4, isAction: true,  plusActions:1)
         {
         }
@@ -26,7 +26,7 @@ namespace Dominion.CardTypes
     public class Baker
         : Card
     {
-        public static Baker card; private Baker()
+        public static Baker card = new Baker(); private Baker()
             : base("Baker", coinCost: 5, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
@@ -48,7 +48,7 @@ namespace Dominion.CardTypes
     public class Butcher
         : Card
     {
-        public static Butcher card; private Butcher()
+        public static Butcher card = new Butcher(); private Butcher()
             : base("Butcher", coinCost: 5, isAction: true)
         {
         }
@@ -78,7 +78,7 @@ namespace Dominion.CardTypes
     public class CandlestickMaker
         : Card
     {
-        public static CandlestickMaker card; private CandlestickMaker()
+        public static CandlestickMaker card = new CandlestickMaker(); private CandlestickMaker()
             : base("CandlestickMaker", coinCost: 2, isAction: true, plusActions:1, plusBuy:1)
         {
         }
@@ -92,7 +92,7 @@ namespace Dominion.CardTypes
     public class Doctor
         : Card
     {
-        public static Doctor card; private Doctor()
+        public static Doctor card = new Doctor(); private Doctor()
             : base("Doctor", coinCost: 3, isAction: true, canOverpay: true)
         {
         }
@@ -145,7 +145,7 @@ namespace Dominion.CardTypes
     public class Herald
        : Card
     {
-        public static Herald card; private Herald()
+        public static Herald card = new Herald(); private Herald()
             : base("Herald", coinCost: 4, isAction: true, canOverpay: true, plusActions:1, plusCards:1)
         {
         }
@@ -160,7 +160,7 @@ namespace Dominion.CardTypes
     public class Masterpiece
         : Card
     {
-        public static Masterpiece card; private Masterpiece()
+        public static Masterpiece card = new Masterpiece(); private Masterpiece()
             : base("Masterpiece", coinCost: 3, isTreasure:true, canOverpay: true, plusCoins:1)
         {
         }
@@ -178,7 +178,7 @@ namespace Dominion.CardTypes
     public class Plaza
         : Card
     {
-        public static Plaza card; private Plaza()
+        public static Plaza card = new Plaza(); private Plaza()
             : base("Plaza", coinCost: 4, isAction: true, plusActions: 2, plusCards: 1)
         {
         }
@@ -195,7 +195,7 @@ namespace Dominion.CardTypes
     public class Soothsayer
         : Card
     {
-        public static Soothsayer card; private Soothsayer()
+        public static Soothsayer card = new Soothsayer(); private Soothsayer()
             : base("Soothsayer", coinCost: 5, isAction: true, isAttack: true)
         {
         }
@@ -217,7 +217,7 @@ namespace Dominion.CardTypes
     public class StoneMason
         : Card
     {
-        public static StoneMason card; private StoneMason()
+        public static StoneMason card = new StoneMason(); private StoneMason()
             : base("StoneMason", coinCost: 2, isAction: true, canOverpay: true)
         {
         }
@@ -255,7 +255,7 @@ namespace Dominion.CardTypes
     public class Taxman
        : Card
     {
-        public static Taxman card; private Taxman()
+        public static Taxman card = new Taxman(); private Taxman()
             : base("Taxman", coinCost: 4, isAction: true, isAttack: true, attackDependsOnPlayerChoice: true)
         {
         }
