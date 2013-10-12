@@ -63,9 +63,11 @@ namespace Dominion.CardTypes
 
     // Ruins
 
-    public abstract class Ruins :
+    public class Ruins :
         Card
     {
+        public static Ruins card;
+
         public Ruins()
             : this("Ruins")
         {
@@ -85,7 +87,7 @@ namespace Dominion.CardTypes
     public class AbandonedMine :
         Ruins
     {
-        public static AbandonedMine card; private AbandonedMine()
+        new public static AbandonedMine card; private AbandonedMine()
             : base("Abandoned Mine", plusCoins: 1)
         {            
         }
@@ -94,7 +96,7 @@ namespace Dominion.CardTypes
     public class RuinedLibrary :
         Ruins
     {
-        public static RuinedLibrary card; private RuinedLibrary()
+        new public static RuinedLibrary card; private RuinedLibrary()
             : base("Ruined Library",  plusCards: 1)
         {
         }
@@ -103,7 +105,7 @@ namespace Dominion.CardTypes
     public class RuinedMarket :
         Ruins
     {
-        public static RuinedMarket card; private RuinedMarket()
+        new public static RuinedMarket card; private RuinedMarket()
             : base("Ruined Market", plusBuy: 1)
         {
         }
@@ -112,7 +114,7 @@ namespace Dominion.CardTypes
     public class RuinedVillage :
         Ruins
     {
-        public static RuinedVillage card; private RuinedVillage()
+        new public static RuinedVillage card; private RuinedVillage()
             : base("Ruined Village", plusActions: 1)
         {
         }
@@ -121,7 +123,7 @@ namespace Dominion.CardTypes
     public class Survivors :
         Ruins
     {
-        public static Survivors card; private Survivors()
+        new public static Survivors card; private Survivors()
             : base("Survivors")
         {
         }
