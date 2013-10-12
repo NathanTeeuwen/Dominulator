@@ -10,12 +10,14 @@ namespace Program.Kingdoms
 {
     static class ShouldRemakeOrHorseTradersIntoSoothayer
     {
+        // forum post:  http://forum.dominionstrategy.com/index.php?topic=9602.0
         /*  any attempt to get more than one remake, or more than 2 sooth sayers results in a loss ....  (but in real game, the plan was 3 remakes and 3 soothsayers ...)
          * 
          * 
          * */
 
         public static readonly GameConfig GameConfig = new GameConfig(
+           StartingCardSplit.Split43,
            Card.Type<CardTypes.Butcher>(),
            Card.Type<CardTypes.GreatHall>(),
            Card.Type<CardTypes.HornOfPlenty>(),
@@ -109,7 +111,7 @@ namespace Program
                            CardAcceptance.For<CardTypes.Minion>      (),
                            CardAcceptance.For<CardTypes.HorseTraders>(1),
                            CardAcceptance.For<CardTypes.Silver>      (1),
-                           CardAcceptance.For<CardTypes.GreatHall>   (gameState => CountOfPile<CardTypes.GreatHall>(gameState) >= 1),
+                           CardAcceptance.For<CardTypes.GreatHall>   (gameState => CountOfPile<CardTypes.GreatHall>(gameState) >= 2),
                            CardAcceptance.For<CardTypes.Estate>      (gameState => CountOfPile<CardTypes.Province>(gameState) <= 4),
                            CardAcceptance.For<CardTypes.Silver>      (),
                            CardAcceptance.For<CardTypes.Estate>      (gameState => CardBeingPlayedIs<CardTypes.Butcher>(gameState))

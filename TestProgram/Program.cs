@@ -14,9 +14,10 @@ namespace Program
         {
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
-            
-            ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.MountebankGovernorMaurader.Player(2), useShelters: true);
-            CompareStrategyVsAllKnownStrategies(Strategies.MountebankGovernorMaurader.Player(1), useShelters: true);
+
+            Kingdoms.ShouldRemakeOrHorseTradersIntoSoothayer.Run();
+            //ComparePlayers(Strategies.BigMoneyCultist.Player(1), Strategies.MountebankGovernorMaurader.Player(2), useShelters: true);
+            //CompareStrategyVsAllKnownStrategies(Strategies.MountebankGovernorMaurader.Player(1), useShelters: true);
             
             stopwatch.Stop();
 
@@ -95,6 +96,11 @@ namespace Program
 
             Card[] supplyPiles = PlayerAction.GetKingdomCards(player1, player2);
 
+            var gameConfig = gameConfigToUse != null ? gameConfigToUse : new GameConfig(
+                        useShelters,
+                        useColonyAndPlatinum: false,
+                        supplyPiles: supplyPiles);
+
             Action<int> loopBody = delegate(int gameCount)                    
             {
                 System.Threading.Interlocked.Increment(ref totalGameCount);
@@ -112,12 +118,7 @@ namespace Program
                         swappedOrder ? swappedStartingDeckPerPlayer :
                         startingDeckPerPlayer;
 
-                    Random random = new Random(gameCount);
-
-                    var gameConfig = gameConfigToUse != null ? gameConfigToUse : new GameConfig(
-                        useShelters,                        
-                        useColonyAndPlatinum: false,
-                        supplyPiles: supplyPiles);
+                    Random random = new Random(gameCount);                    
 
                     GameState gameState = new GameState(
                         gameLog,

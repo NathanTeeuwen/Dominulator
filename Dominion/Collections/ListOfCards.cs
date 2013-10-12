@@ -58,6 +58,20 @@ namespace Dominion
             return result;
         }
 
+        public Card FindAndRemoveCardOrderDestroyed(Card card)
+        {
+            if (this.countKnownCard > 0)
+                throw new System.Exception("not sure what to do with known cards");
+
+            int cardIndex = FindCardIndex(card);
+            if (cardIndex == -1)
+                throw new System.Exception("couldnt find card");
+
+            this.MoveCardToEnd(cardIndex);
+
+            return this.DrawCardFromTop();
+        } 
+
         public Card TopCard()
         {
             if (this.cards.Count == 0)
@@ -130,6 +144,17 @@ namespace Dominion
             Card temp = this.cards[indexfirst];
             this.cards[indexfirst] = this.cards[indexSecond];
             this.cards[indexSecond] = temp;
+        }
+
+        protected int FindCardIndex(Card card)
+        {
+            for (int i = 0; i < this.cards.Count; ++i)
+            {
+                if (this.cards[i] == card)
+                    return i;
+            }
+
+            return -1;
         }
 
         protected void MoveCardToEnd(int cardIndex)

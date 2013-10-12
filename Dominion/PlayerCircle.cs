@@ -80,11 +80,24 @@ namespace Dominion
             }
         }
 
-        public void AllPlayersDrawInitialCards()
+        public void AllPlayersDrawInitialCards(IEnumerable<CardCountPair>[] handPerPlayer)
         {
-            foreach (PlayerState playerState in this.players)
-            {                
-                playerState.DrawUntilCountInHand(5);
+            if (handPerPlayer == null)
+            {
+                foreach (PlayerState playerState in this.players)
+                {
+                    playerState.DrawUntilCountInHand(5);
+                }
+            }
+            else
+            {
+                for (int playerIndex = 0; playerIndex < this.players.Length; ++playerIndex)
+                {
+                    PlayerState playerState = this.players[playerIndex];
+                    IEnumerable<CardCountPair> startingHand = handPerPlayer[playerIndex];
+
+                    playerState.DrawCardsIntoHand(startingHand);
+                }
             }
         }
 

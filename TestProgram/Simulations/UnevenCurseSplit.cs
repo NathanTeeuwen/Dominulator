@@ -50,13 +50,23 @@ namespace Program.Simulations
         {
             var gameLogFactory = new GameLogFactory();
 
+            var player1 = Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(1, cardCount:2);
+            var player2 = Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2, cardCount:2);
+
+            var gameConfig = new GameConfig(
+                useShelters:false,
+                useColonyAndPlatinum:false,
+                supplyPiles: PlayerAction.GetKingdomCards(player1, player2),
+                startingDeck: startingCards,
+                startingHand: null);
+
             Program.ComparePlayers(
                 Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(1, cardCount:2),
                 Strategies.BigMoneyWithCard<CardTypes.Witch>.Player(2, cardCount:2),
                 firstPlayerAdvantage: true,
                 numberOfGames: gameCount,
                 createGameLog: new Program.CreateGameLog(gameLogFactory.CreateGameLog),
-                startingDeckPerPlayer: GameConfig.GetUniformStartingDecks(2, startingCards));
+                gameConfigToUse: gameConfig);
 
             System.Console.WriteLine("Curses Split was Uneven {0}%", gameLogFactory.UnEvenSplitPercent);
             System.Console.WriteLine();

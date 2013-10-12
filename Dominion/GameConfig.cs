@@ -6,20 +6,29 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
+    public enum StartingCardSplit
+    {
+        Random,
+        Split43,
+        Split52,
+    }
+
     public class GameConfig
     {
         public readonly bool useShelters;
         public readonly bool useColonyAndPlatinum;
         public readonly Card[] kingdomPiles;
         public readonly IEnumerable<CardCountPair> startingDeck;
+        public readonly IEnumerable<CardCountPair> startingHand;
         public readonly CardGameSubset cardGameSubset;
 
-        public GameConfig(bool useShelters, bool useColonyAndPlatinum, Card[] supplyPiles, IEnumerable<CardCountPair> startingDeck)
+        public GameConfig(bool useShelters, bool useColonyAndPlatinum, Card[] supplyPiles, IEnumerable<CardCountPair> startingDeck, IEnumerable<CardCountPair> startingHand)
         {
             this.useShelters = useShelters;
             this.useColonyAndPlatinum = useColonyAndPlatinum;
             this.kingdomPiles = supplyPiles;
             this.startingDeck = startingDeck;
+            this.startingHand = startingHand;
             this.cardGameSubset = new CardGameSubset();
 
             GetSupplyPiles(1, null, this.cardGameSubset);
@@ -33,25 +42,35 @@ namespace Dominion
         }
 
         public GameConfig(bool useShelters, bool useColonyAndPlatinum, params Card[] supplyPiles)
-            : this(useShelters, useColonyAndPlatinum, supplyPiles, null)
+            : this(useShelters, useColonyAndPlatinum, supplyPiles, null, null)
         {            
         }
 
         public GameConfig(params Card[] supplyPiles)
-            : this(false, false, supplyPiles, null)
+            : this(false, false, supplyPiles, null, null)
         {            
+        }
+
+        public GameConfig(StartingCardSplit split, params Card[] supplyPiles)
+            : this(false, false, supplyPiles, null, GetStartingHandForSplit(split))
+        {
+        }
+
+        public IEnumerable<CardCountPair>[] StartingHands(int playerCount)
+        {
+            return this.startingHand == null ? null : GetCardSetSameForAllPlayers(playerCount, this.startingHand);
         }
 
         public IEnumerable<CardCountPair>[] StartingDecks(int playerCount)
         {
-            return GetUniformStartingDecks(playerCount, this.StartingDeck);            
+            return GetCardSetSameForAllPlayers(playerCount, this.StartingDeck);            
         }
 
-        public static IEnumerable<CardCountPair>[] GetUniformStartingDecks(int playerCount, IEnumerable<CardCountPair> startingDeck)
+        public static IEnumerable<CardCountPair>[] GetCardSetSameForAllPlayers(int playerCount, IEnumerable<CardCountPair> cards)
         {            
             var result = new IEnumerable<CardCountPair>[playerCount];
             for (int i = 0; i < playerCount; ++i)
-                result[i] = startingDeck;
+                result[i] = cards;
 
             return result;
         }
@@ -165,6 +184,19 @@ namespace Dominion
             }            
 
             return nonSupplyCardPiles.ToArray();
+        }
+
+        private static IEnumerable<CardCountPair> GetStartingHandForSplit(StartingCardSplit split)
+        {
+            switch (split)
+            {
+                case StartingCardSplit.Random: return null;
+                case StartingCardSplit.Split52: return new CardCountPair[] { new CardCountPair(Card.Type<CardTypes.Copper>(), 5) };
+                case StartingCardSplit.Split43: return new CardCountPair[] { new CardCountPair(Card.Type<CardTypes.Copper>(), 4),  
+                                                                              new CardCountPair(Card.Type<CardTypes.Estate>(), 1)};
+                default:
+                    throw new Exception();
+            }
         }
 
         private static PileOfCards CreateRuins(CardGameSubset gameSubset, int ruinsCount, Random random)

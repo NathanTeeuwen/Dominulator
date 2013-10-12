@@ -148,6 +148,20 @@ namespace Dominion
             return card;
         }
 
+        internal bool DrawOneCardIntoHand(Card cardToDraw)
+        {
+            Card card = this.DrawOneCardDeckOrderDestroyed(cardToDraw);
+            if (card == null)
+            {
+                return false;
+            }
+
+            this.gameLog.DrewCardIntoHand(this, card);
+            this.hand.AddCard(card);
+
+            return true;
+        }
+
         internal bool DrawOneCardIntoHand()
         {
             Card card = this.DrawOneCard();
@@ -162,15 +176,37 @@ namespace Dominion
             return true;
         }
 
+        internal bool DrawCardsIntoHand(IEnumerable<CardCountPair> startingHand)
+        {
+            foreach (CardCountPair pair in startingHand)
+            {
+                for (int i = 0; i < pair.Count; ++i)
+                    if (!this.DrawOneCardIntoHand(pair.Card))
+                        return false;
+            }                       
+
+            return true;
+        }
+
         private Card DrawOneCard()
         {
             if (this.deck.IsEmpty && !this.discard.IsEmpty)
-            {
-                this.gameLog.ReshuffledDiscardIntoDeck(this);
+            {                
                 TriggerShuffleOfDiscardIntoDeck();
             }
 
             Card card = this.deck.DrawCardFromTop();            
+            return card;
+        }
+
+        private Card DrawOneCardDeckOrderDestroyed(Card cardToFind)
+        {
+            if (this.deck.IsEmpty && !this.discard.IsEmpty)
+            {                
+                TriggerShuffleOfDiscardIntoDeck();
+            }
+
+            Card card = this.deck.FindAndRemoveCardOrderDestroyed(cardToFind);
             return card;
         }
 
@@ -1351,6 +1387,8 @@ namespace Dominion
 
         private void TriggerShuffleOfDiscardIntoDeck()
         {
+            this.gameLog.ReshuffledDiscardIntoDeck(this);
+
             if (!this.deck.IsEmpty)
             {
                 throw new Exception("Can not move discard to deck unless deck is empty");
