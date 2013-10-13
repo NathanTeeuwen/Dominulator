@@ -84,13 +84,19 @@ namespace Dominion
             GameStateCardToPlacement doSpecializedActionOnBuyWhileInHand = null,
             GameStateCardToPlacement doSpecializedActionOnGainWhileInHand = null)
         {
-            if (cardTypes.Contains(this.GetType())) {
-                throw new Exception("Do not create duplicate cards.");
-            } else {
-                cardTypes.Add(this.GetType());
-            }
+            lock (Card.cardTypes)
+            {
+                if (Card.cardTypes.Contains(this.GetType()))
+                {
+                    throw new Exception("Do not create duplicate cards.");
+                }
+                else
+                {
+                    Card.cardTypes.Add(this.GetType());
+                }
 
-            this.privateIndex = ++lastCardIndex;
+                this.privateIndex = ++lastCardIndex;
+            }
 
             this.name = name;
             this.coinCost = coinCost;
