@@ -83,12 +83,12 @@ namespace Dominion.CardTypes
     {
         public static Ruins card = new Ruins();
 
-        public Ruins()
+        private Ruins()
             : this("Ruins")
         {
         }
 
-        public Ruins(
+        protected Ruins(
             string name,
             int plusCoins = 0,
             int plusCards = 0,
@@ -99,8 +99,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class AbandonedMine :
-        Ruins
+    public class AbandonedMine
+        : Ruins
     {
         new public static AbandonedMine card = new AbandonedMine();
 
@@ -110,8 +110,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class RuinedLibrary :
-        Ruins
+    public class RuinedLibrary 
+        : Ruins
     {
         new public static RuinedLibrary card = new RuinedLibrary();
 
@@ -121,8 +121,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class RuinedMarket :
-        Ruins
+    public class RuinedMarket 
+        : Ruins
     {
         new public static RuinedMarket card = new RuinedMarket();
 
@@ -132,8 +132,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class RuinedVillage :
-        Ruins
+    public class RuinedVillage 
+        : Ruins
     {
         new public static RuinedVillage card = new RuinedVillage();
 
@@ -143,8 +143,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Survivors :
-        Ruins
+    public class Survivors 
+        : Ruins
     {
         new public static Survivors card = new Survivors();
 
