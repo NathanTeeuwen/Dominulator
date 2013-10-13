@@ -13,7 +13,7 @@ namespace Program
         public static class ProcessionGraverobber
         {
             // big money smithy player
-            public static PlayerAction Player(int playerNumber)
+            private static PlayerAction Player(int playerNumber)
             {
                 return new PlayerAction(
                             "ProcessionGraverobber",
