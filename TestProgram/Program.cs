@@ -14,9 +14,9 @@ namespace Program
         {
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
-            
-            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Envoy, 1), Strategies.BigMoney.Player(2));
-            CompareStrategyVsAllKnownStrategies(Strategies.BigMoneyWithCard.Player(Cards.Envoy, 1), useShelters: true);            
+
+            ComparePlayers(Strategies.ButcherPlazaWatchtower.Player(1), Strategies.BigMoney.Player(2), useShelters:true);
+            CompareStrategyVsAllKnownStrategies(Strategies.ButcherPlazaWatchtower.Player(1), useShelters: true);            
             
             stopwatch.Stop();
 
@@ -51,7 +51,7 @@ namespace Program
                 if (otherPlayerAction == null)
                     continue;
 
-                double percentDiff = ComparePlayers(playerAction, otherPlayerAction, shouldParallel:shouldParallel, useShelters: useShelters, logGameCount:0, numberOfGames:1000);
+                double percentDiff = ComparePlayers(playerAction, otherPlayerAction, shouldParallel:shouldParallel, useShelters: useShelters, logGameCount:0, numberOfGames:1000, useColonyAndPlatinum:true);
 
                 resultList.Add( new System.Tuple<string,double>(otherPlayerAction.PlayerName, percentDiff));
             }            

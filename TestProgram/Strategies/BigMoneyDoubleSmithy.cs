@@ -17,7 +17,7 @@ namespace Program
             {
                 return CustomPlayer(playerNumber);
             }
-            // big money smithy player
+            
             public static PlayerAction CustomPlayer(int playerNumber, int secondSmithy = 15)
             {
                 return new PlayerAction(

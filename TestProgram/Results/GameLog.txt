@@ -1,13 +1,13 @@
-BigMoneyWithCard<Envoy> gained Copper.
-BigMoneyWithCard<Envoy> gained Copper.
-BigMoneyWithCard<Envoy> gained Copper.
-BigMoneyWithCard<Envoy> gained Copper.
-BigMoneyWithCard<Envoy> gained Copper.
-BigMoneyWithCard<Envoy> gained Copper.
-BigMoneyWithCard<Envoy> gained Copper.
-BigMoneyWithCard<Envoy> gained Estate.
-BigMoneyWithCard<Envoy> gained Estate.
-BigMoneyWithCard<Envoy> gained Estate.
+ButcherPlazaWatchtower gained Copper.
+ButcherPlazaWatchtower gained Copper.
+ButcherPlazaWatchtower gained Copper.
+ButcherPlazaWatchtower gained Copper.
+ButcherPlazaWatchtower gained Copper.
+ButcherPlazaWatchtower gained Copper.
+ButcherPlazaWatchtower gained Copper.
+ButcherPlazaWatchtower gained Hovel.
+ButcherPlazaWatchtower gained Necropolis.
+ButcherPlazaWatchtower gained Overgrown Estate.
 BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
@@ -15,48 +15,48 @@ BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
-BigMoney gained Estate.
-BigMoney gained Estate.
-BigMoney gained Estate.
-BigMoneyWithCard<Envoy> reshuffled
-BigMoneyWithCard<Envoy> Drew Copper into hand.
-BigMoneyWithCard<Envoy> Drew Copper into hand.
-BigMoneyWithCard<Envoy> Drew Copper into hand.
-BigMoneyWithCard<Envoy> Drew Estate into hand.
-BigMoneyWithCard<Envoy> Drew Copper into hand.
+BigMoney gained Hovel.
+BigMoney gained Necropolis.
+BigMoney gained Overgrown Estate.
+ButcherPlazaWatchtower reshuffled
+ButcherPlazaWatchtower Drew Copper into hand.
+ButcherPlazaWatchtower Drew Copper into hand.
+ButcherPlazaWatchtower Drew Copper into hand.
+ButcherPlazaWatchtower Drew Overgrown Estate into hand.
+ButcherPlazaWatchtower Drew Copper into hand.
 BigMoney reshuffled
-BigMoney Drew Estate into hand.
+BigMoney Drew Hovel into hand.
 BigMoney Drew Copper into hand.
 BigMoney Drew Copper into hand.
 BigMoney Drew Copper into hand.
-BigMoney Drew Estate into hand.
+BigMoney Drew Overgrown Estate into hand.
 ROUND 1
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWithCard<Envoy> Played Copper.
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Copper,Copper,Copper,Overgrown Estate,
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> bought Envoy.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), 
+  ButcherPlazaWatchtower bought Silver.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Overgrown Estate.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Hovel into hand.
+  ButcherPlazaWatchtower Drew Necropolis into hand.
+  ButcherPlazaWatchtower ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(1), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
+With hand: Copper,Copper,Copper,Hovel,Overgrown Estate,
   BigMoney Played Copper.
     +1 Coin = 1 all together.
   BigMoney Played Copper.
@@ -67,41 +67,45 @@ With hand: Copper,Copper,Copper,Estate,Estate,
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
+  BigMoney Discarded Hovel.
+  BigMoney Discarded Overgrown Estate.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
+  BigMoney Drew Necropolis into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoney ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(1), 
 
 ROUND 2
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyWithCard<Envoy> Played Copper.
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Copper,Copper,Hovel,Necropolis,
+  ButcherPlazaWatchtower Played Necropolis.
+    +2 Actions = 2 all together.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> bought Silver.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> reshuffled
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Silver(1), 
+  ButcherPlazaWatchtower bought Watchtower.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Necropolis.
+  ButcherPlazaWatchtower Discarded Hovel.
+  ButcherPlazaWatchtower reshuffled
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Silver into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Necropolis into hand.
+  ButcherPlazaWatchtower ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(1), Watchtower(1), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
+With hand: Copper,Copper,Copper,Copper,Necropolis,
+  BigMoney Played Necropolis.
+    +2 Actions = 2 all together.
   BigMoney Played Copper.
     +1 Coin = 1 all together.
   BigMoney Played Copper.
@@ -115,39 +119,41 @@ With hand: Copper,Copper,Copper,Copper,Estate,
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
+  BigMoney Discarded Necropolis.
   BigMoney reshuffled
   BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoney ends turn with deck: Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(2), 
 
 ROUND 3
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyWithCard<Envoy> Played Silver.
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Copper,Copper,Necropolis,Silver,
+  ButcherPlazaWatchtower Played Necropolis.
+    +2 Actions = 2 all together.
+  ButcherPlazaWatchtower Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> bought Silver.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Envoy into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Silver(2), 
+  ButcherPlazaWatchtower bought Butcher.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Silver.
+  ButcherPlazaWatchtower Discarded Necropolis.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Overgrown Estate into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Hovel into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(1), Watchtower(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
@@ -167,232 +173,266 @@ With hand: Copper,Copper,Copper,Silver,Silver,
   BigMoney Discarded Copper.
   BigMoney Discarded Silver.
   BigMoney Discarded Silver.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
+  BigMoney Drew Hovel into hand.
+  BigMoney Drew Necropolis into hand.
+  BigMoney Drew Overgrown Estate into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+  BigMoney ends turn with deck: Copper(7), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(2), 
 
 ROUND 4
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Copper,Envoy,Estate,
-  BigMoneyWithCard<Envoy> Played Envoy.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> reshuffled
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Played Copper.
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Copper,Copper,Hovel,Overgrown Estate,
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> bought Silver.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Envoy.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> reshuffled
-  BigMoneyWithCard<Envoy> Drew Envoy into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Silver(3), 
+  ButcherPlazaWatchtower bought Watchtower.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Hovel.
+  ButcherPlazaWatchtower Discarded Overgrown Estate.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower reshuffled
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Butcher into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(7), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(1), Watchtower(2), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Estate,Estate,Estate,
+With hand: Copper,Copper,Hovel,Necropolis,Overgrown Estate,
+  BigMoney Played Necropolis.
+    +2 Actions = 2 all together.
   BigMoney Played Copper.
     +1 Coin = 1 all together.
   BigMoney Played Copper.
     +1 Coin = 2 all together.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
+  BigMoney Discarded Necropolis.
+  BigMoney Discarded Hovel.
+  BigMoney Discarded Overgrown Estate.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney reshuffled
-  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+  BigMoney Drew Necropolis into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(2), 
 
 ROUND 5
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Envoy,Silver,Silver,
-  BigMoneyWithCard<Envoy> Played Envoy.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
+ButcherPlazaWatchtower begins turn
+With hand: Butcher,Copper,Copper,Copper,Watchtower,
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 2 all together.
+    ButcherPlazaWatchtower trashed Copper.
+    ButcherPlazaWatchtower gained Copper.
+      ButcherPlazaWatchtower trashed Copper.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 1 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 2 all together.
+  ButcherPlazaWatchtower spent 2 coin tokens.  0 remaining
     +2 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWithCard<Envoy> bought Gold.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Envoy.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> reshuffled
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(1), Silver(3), 
+  ButcherPlazaWatchtower bought Plaza.
+    ... and placed card on top of deck
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Butcher.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Necropolis into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Hovel into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(6), Hovel(1), Necropolis(1), Overgrown Estate(1), Plaza(1), Silver(1), Watchtower(2), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
+With hand: Copper,Copper,Copper,Copper,Necropolis,
+  BigMoney Played Necropolis.
+    +2 Actions = 2 all together.
   BigMoney Played Copper.
-    +1 Coin = 5 all together.
+    +1 Coin = 1 all together.
   BigMoney Played Copper.
-    +1 Coin = 6 all together.
+    +1 Coin = 2 all together.
   BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Necropolis.
   BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Hovel into hand.
+  BigMoney Drew Overgrown Estate into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(2), 
+  BigMoney ends turn with deck: Copper(7), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(3), 
 
 ROUND 6
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> bought Silver.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> Drew Envoy into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(1), Silver(4), 
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Copper,Hovel,Necropolis,Plaza,
+  ButcherPlazaWatchtower Played Necropolis.
+    +2 Actions = 2 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Overgrown Estate into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 1 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 1 all together.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Necropolis.
+  ButcherPlazaWatchtower Discarded Hovel.
+  ButcherPlazaWatchtower Discarded Overgrown Estate.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Silver into hand.
+  ButcherPlazaWatchtower reshuffled
+  ButcherPlazaWatchtower Drew Necropolis into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(6), Hovel(1), Necropolis(1), Overgrown Estate(1), Plaza(1), Silver(1), Watchtower(2), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
+With hand: Copper,Copper,Hovel,Overgrown Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
   BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
+  BigMoney bought Silver.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney reshuffled
+  BigMoney Discarded Silver.
+  BigMoney Discarded Hovel.
+  BigMoney Discarded Overgrown Estate.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(2), 
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(1), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
 
 ROUND 7
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Envoy,Estate,Silver,
-  BigMoneyWithCard<Envoy> Played Envoy.
-    BigMoneyWithCard<Envoy> Revealed Silver.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Revealed Gold.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Played Silver.
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Copper,Necropolis,Silver,Watchtower,
+  ButcherPlazaWatchtower Played Necropolis.
+    +2 Actions = 2 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Butcher into hand.
+    ButcherPlazaWatchtower Drew Hovel into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Watchtower into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 2 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 4 all together.
+    ButcherPlazaWatchtower trashed Hovel.
+    ButcherPlazaWatchtower spent 4 coin tokens.  0 remaining
+    ButcherPlazaWatchtower gained Butcher.
+  ButcherPlazaWatchtower Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 3 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 4 all together.
+  ButcherPlazaWatchtower Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWithCard<Envoy> bought Gold.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Envoy.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> reshuffled
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(2), Silver(4), 
+  ButcherPlazaWatchtower bought Plaza.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Silver.
+  ButcherPlazaWatchtower Discarded Butcher.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Necropolis.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Overgrown Estate into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower reshuffled
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Silver into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(6), Necropolis(1), Overgrown Estate(1), Plaza(2), Silver(1), Watchtower(2), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Estate,Estate,Gold,
+With hand: Copper,Copper,Gold,Silver,Silver,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(4), 
+
+ROUND 8
+-------------
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Copper,Copper,Overgrown Estate,Silver,
+  ButcherPlazaWatchtower Played Silver.
+    +2 Coin = 2 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 3 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 4 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 5 all together.
+  ButcherPlazaWatchtower bought Plaza.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Silver.
+  ButcherPlazaWatchtower Discarded Overgrown Estate.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Necropolis into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(6), Necropolis(1), Overgrown Estate(1), Plaza(3), Silver(1), Watchtower(2), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Copper,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
   BigMoney Played Copper.
     +1 Coin = 4 all together.
   BigMoney Played Copper.
@@ -400,95 +440,206 @@ With hand: Copper,Copper,Estate,Estate,Gold,
   BigMoney bought Silver.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(3), 
-
-ROUND 8
--------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Envoy> bought Gold.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(3), Silver(4), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney Played Copper.
-    +1 Coin = 9 all together.
-  BigMoney bought Province.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(3), 
+  BigMoney Discarded Copper.
+  BigMoney Drew Hovel into hand.
+  BigMoney Drew Necropolis into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Overgrown Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(5), 
 
 ROUND 9
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoneyWithCard<Envoy> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Envoy> bought Gold.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Envoy into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(4), Silver(4), 
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Copper,Necropolis,Plaza,Watchtower,
+  ButcherPlazaWatchtower Played Necropolis.
+    +2 Actions = 2 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Watchtower into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 1 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Butcher into hand.
+    ButcherPlazaWatchtower Drew Butcher into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower reshuffled
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 2 all together.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 4 all together.
+    ButcherPlazaWatchtower trashed Copper.
+    ButcherPlazaWatchtower spent 4 coin tokens.  0 remaining
+    ButcherPlazaWatchtower gained Plaza.
+      ... and placed card on top of deck
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Overgrown Estate into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 1 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Silver into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 2 all together.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 4 all together.
+    ButcherPlazaWatchtower trashed Overgrown Estate.
+      ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower spent 3 coin tokens.  1 remaining
+    ButcherPlazaWatchtower gained Plaza.
+  ButcherPlazaWatchtower Played Silver.
+    +2 Coin = 2 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 3 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 4 all together.
+  ButcherPlazaWatchtower bought Watchtower.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Silver.
+  ButcherPlazaWatchtower Discarded Butcher.
+  ButcherPlazaWatchtower Discarded Butcher.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Necropolis.
+  ButcherPlazaWatchtower reshuffled
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(5), Necropolis(1), Plaza(5), Silver(1), Watchtower(3), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
+With hand: Hovel,Necropolis,Overgrown Estate,Silver,Silver,
+  BigMoney Played Necropolis.
+    +2 Actions = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Necropolis.
+  BigMoney Discarded Hovel.
+  BigMoney Discarded Overgrown Estate.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(2), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
+
+ROUND 10
+-------------
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Plaza,Plaza,Watchtower,Watchtower,
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 2 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 3 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Butcher into hand.
+    ButcherPlazaWatchtower Drew Butcher into hand.
+    ButcherPlazaWatchtower Drew Silver into hand.
+    ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Necropolis into hand.
+    ButcherPlazaWatchtower Discarded Silver.
+    +1 coin tokens = 4 all together.
+  ButcherPlazaWatchtower Played Necropolis.
+    +2 Actions = 4 all together.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 6 all together.
+    ButcherPlazaWatchtower trashed Butcher.
+    ButcherPlazaWatchtower spent 3 coin tokens.  3 remaining
+    ButcherPlazaWatchtower gained Province.
+      ... and placed card on top of deck
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Province into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 4 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 4 all together.
+    ButcherPlazaWatchtower reshuffled
+    ButcherPlazaWatchtower Drew Silver into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 5 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Played Silver.
+    +2 Coin = 2 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 3 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 4 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 5 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 6 all together.
+  ButcherPlazaWatchtower spent 2 coin tokens.  3 remaining
+    +2 Coin = 8 all together.
+  ButcherPlazaWatchtower bought Province.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Silver.
+  ButcherPlazaWatchtower Discarded Butcher.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Necropolis.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower reshuffled
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Province into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Province into hand.
+  ButcherPlazaWatchtower Drew Butcher into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(5), Necropolis(1), Plaza(5), Province(2), Silver(1), Watchtower(3), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Gold,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
   BigMoney Played Copper.
@@ -497,273 +648,441 @@ With hand: Copper,Copper,Copper,Estate,Gold,
     +1 Coin = 5 all together.
   BigMoney Played Copper.
     +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
   BigMoney bought Gold.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(3), 
-
-ROUND 10
--------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Envoy,Gold,Silver,
-  BigMoneyWithCard<Envoy> Played Envoy.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> reshuffled
-    BigMoneyWithCard<Envoy> Revealed Gold.
-    BigMoneyWithCard<Envoy> Revealed Gold.
-    BigMoneyWithCard<Envoy> Revealed Copper.
-    BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 11 all together.
-  BigMoneyWithCard<Envoy> bought Province.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Discarded Envoy.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(4), Province(1), Silver(4), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
   BigMoney Discarded Copper.
   BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Province into hand.
+  BigMoney Drew Overgrown Estate into hand.
+  BigMoney Drew Necropolis into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(2), Silver(3), 
+  BigMoney Drew Hovel into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(6), 
 
 ROUND 11
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> bought Silver.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> reshuffled
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(4), Province(1), Silver(5), 
+ButcherPlazaWatchtower begins turn
+With hand: Butcher,Copper,Plaza,Province,Province,
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Watchtower into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 4 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 5 all together.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 7 all together.
+    ButcherPlazaWatchtower trashed Copper.
+    ButcherPlazaWatchtower spent 5 coin tokens.  2 remaining
+    ButcherPlazaWatchtower gained Butcher.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 1 all together.
+  ButcherPlazaWatchtower spent 2 coin tokens.  0 remaining
+    +2 Coin = 3 all together.
+  ButcherPlazaWatchtower bought Watchtower.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Butcher.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower Drew Necropolis into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(4), Necropolis(1), Plaza(5), Province(2), Silver(1), Watchtower(4), 
 
 BigMoney begins turn
-With hand: Copper,Gold,Province,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
+With hand: Copper,Hovel,Necropolis,Overgrown Estate,Silver,
+  BigMoney Played Necropolis.
+    +2 Actions = 2 all together.
   BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
+    +2 Coin = 2 all together.
   BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
+    +1 Coin = 3 all together.
+  BigMoney bought Silver.
   BigMoney Discarded Copper.
   BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Province.
+  BigMoney Discarded Necropolis.
+  BigMoney Discarded Hovel.
+  BigMoney Discarded Overgrown Estate.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(3), Silver(3), 
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Silver(7), 
 
 ROUND 12
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  BigMoneyWithCard<Envoy> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyWithCard<Envoy> bought Province.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Envoy into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Envoy(1), Estate(3), Gold(4), Province(2), Silver(5), 
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Necropolis,Plaza,Plaza,Watchtower,
+  ButcherPlazaWatchtower Played Necropolis.
+    +2 Actions = 2 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 1 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Watchtower into hand.
+    ButcherPlazaWatchtower Drew Silver into hand.
+    ButcherPlazaWatchtower reshuffled
+    ButcherPlazaWatchtower Drew Province into hand.
+    ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 2 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 4 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 3 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Province into hand.
+    ButcherPlazaWatchtower Drew Watchtower into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 4 all together.
+    ButcherPlazaWatchtower Drew Butcher into hand.
+    ButcherPlazaWatchtower Discarded Silver.
+    +1 coin tokens = 4 all together.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 6 all together.
+    ButcherPlazaWatchtower trashed Watchtower.
+    ButcherPlazaWatchtower spent 5 coin tokens.  1 remaining
+    ButcherPlazaWatchtower gained Province.
+      ... and placed card on top of deck
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Province into hand.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Drew Butcher into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 2 all together.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 4 all together.
+    ButcherPlazaWatchtower trashed Copper.
+    ButcherPlazaWatchtower spent 4 coin tokens.  0 remaining
+    ButcherPlazaWatchtower gained Plaza.
+  ButcherPlazaWatchtower Discarded Butcher.
+  ButcherPlazaWatchtower Discarded Butcher.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Necropolis.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower reshuffled
+  ButcherPlazaWatchtower Drew Butcher into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Butcher into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(2), Copper(3), Necropolis(1), Plaza(6), Province(3), Silver(1), Watchtower(3), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
+With hand: Copper,Gold,Silver,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
   BigMoney Played Silver.
-    +2 Coin = 2 all together.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Silver.
+    +2 Coin = 9 all together.
   BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney bought Duchy.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
+    +1 Coin = 10 all together.
+  BigMoney bought Province.
   BigMoney Discarded Copper.
   BigMoney Discarded Silver.
-  BigMoney Discarded Estate.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
   BigMoney reshuffled
+  BigMoney Drew Province into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(3), Silver(3), 
+  BigMoney ends turn with deck: Copper(7), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(1), Silver(7), 
 
 ROUND 13
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Envoy,Gold,Silver,
-  BigMoneyWithCard<Envoy> Played Envoy.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Revealed Silver.
-    BigMoneyWithCard<Envoy> Revealed Estate.
-    BigMoneyWithCard<Envoy> Revealed Province.
-    BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Envoy> bought Duchy.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Discarded Envoy.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Estate.
-  BigMoneyWithCard<Envoy> Discarded Province.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Duchy(1), Envoy(1), Estate(3), Gold(4), Province(2), Silver(5), 
+ButcherPlazaWatchtower begins turn
+With hand: Butcher,Butcher,Copper,Plaza,Plaza,
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Province into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 1 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 2 all together.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 4 all together.
+    ButcherPlazaWatchtower trashed Butcher.
+    ButcherPlazaWatchtower spent 3 coin tokens.  1 remaining
+    ButcherPlazaWatchtower gained Province.
+  ButcherPlazaWatchtower Discarded Butcher.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Province into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Drew Necropolis into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(3), Necropolis(1), Plaza(6), Province(4), Silver(1), Watchtower(3), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
+With hand: Copper,Copper,Province,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
   BigMoney Played Copper.
-    +1 Coin = 7 all together.
+    +1 Coin = 5 all together.
   BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
+    +1 Coin = 6 all together.
+  BigMoney bought Duchy.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Province.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Duchy into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(4), Silver(3), 
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(1), Silver(7), 
 
 ROUND 14
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Gold,Gold,Silver,
-  BigMoneyWithCard<Envoy> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyWithCard<Envoy> bought Province.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Discarded Gold.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> reshuffled
-  BigMoneyWithCard<Envoy> Drew Province into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Province into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Duchy(1), Envoy(1), Estate(3), Gold(4), Province(3), Silver(5), 
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Necropolis,Province,Watchtower,Watchtower,
+  ButcherPlazaWatchtower Played Necropolis.
+    +2 Actions = 2 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Province into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 2 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Silver into hand.
+    ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower reshuffled
+    ButcherPlazaWatchtower Drew Butcher into hand.
+    ButcherPlazaWatchtower Discarded Silver.
+    +1 coin tokens = 3 all together.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 5 all together.
+    ButcherPlazaWatchtower trashed Watchtower.
+    ButcherPlazaWatchtower spent 5 coin tokens.  0 remaining
+    ButcherPlazaWatchtower gained Province.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 4 all together.
+    ButcherPlazaWatchtower Drew Copper into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 1 all together.
+  ButcherPlazaWatchtower Discarded Butcher.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Necropolis.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower Drew Province into hand.
+  ButcherPlazaWatchtower Drew Province into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(3), Necropolis(1), Plaza(6), Province(5), Silver(1), Watchtower(2), 
 
 BigMoney begins turn
-With hand: Copper,Duchy,Province,Silver,Silver,
+With hand: Copper,Gold,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Silver.
+    +2 Coin = 10 all together.
+  BigMoney Played Copper.
+    +1 Coin = 11 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Overgrown Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(2), Silver(7), 
+
+ROUND 15
+-------------
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Copper,Plaza,Province,Province,
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower reshuffled
+    ButcherPlazaWatchtower Drew Butcher into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 2 all together.
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 4 all together.
+    ButcherPlazaWatchtower trashed Copper.
+    ButcherPlazaWatchtower spent 2 coin tokens.  2 remaining
+    ButcherPlazaWatchtower gained Estate.
+  ButcherPlazaWatchtower spent 2 coin tokens.  0 remaining
+    +2 Coin = 2 all together.
+  ButcherPlazaWatchtower bought Estate.
+  ButcherPlazaWatchtower Discarded Butcher.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Province into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Province into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(2), Estate(2), Necropolis(1), Plaza(6), Province(5), Silver(1), Watchtower(2), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Overgrown Estate,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Overgrown Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Hovel into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Necropolis into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Gold(3), Hovel(1), Necropolis(1), Overgrown Estate(1), Province(2), Silver(7), 
+
+ROUND 16
+-------------
+ButcherPlazaWatchtower begins turn
+With hand: Copper,Plaza,Plaza,Province,Province,
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 2 all together.
+    ButcherPlazaWatchtower Drew Province into hand.
+    ButcherPlazaWatchtower Discarded Copper.
+    +1 coin tokens = 1 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Necropolis into hand.
+    ButcherPlazaWatchtower Drew Watchtower into hand.
+    ButcherPlazaWatchtower Drew Silver into hand.
+  ButcherPlazaWatchtower Played Necropolis.
+    +2 Actions = 3 all together.
+  ButcherPlazaWatchtower Played Watchtower.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 3 all together.
+    ButcherPlazaWatchtower Drew Plaza into hand.
+    ButcherPlazaWatchtower Discarded Silver.
+    +1 coin tokens = 2 all together.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 4 all together.
+    ButcherPlazaWatchtower reshuffled
+    ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 5 all together.
+    ButcherPlazaWatchtower Drew Province into hand.
+  ButcherPlazaWatchtower Played Plaza.
+    +2 Actions = 6 all together.
+    ButcherPlazaWatchtower Drew Province into hand.
+  ButcherPlazaWatchtower spent 2 coin tokens.  0 remaining
+    +2 Coin = 2 all together.
+  ButcherPlazaWatchtower bought Estate.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Watchtower.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Plaza.
+  ButcherPlazaWatchtower Discarded Necropolis.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower Discarded Province.
+  ButcherPlazaWatchtower Drew Estate into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower Drew Estate into hand.
+  ButcherPlazaWatchtower Drew Butcher into hand.
+  ButcherPlazaWatchtower Drew Copper into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(2), Estate(3), Necropolis(1), Plaza(6), Province(5), Silver(1), Watchtower(2), 
+
+BigMoney begins turn
+With hand: Copper,Hovel,Necropolis,Silver,Silver,
+  BigMoney Played Necropolis.
+    +2 Actions = 2 all together.
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Silver.
@@ -771,126 +1090,86 @@ With hand: Copper,Duchy,Province,Silver,Silver,
   BigMoney Played Copper.
     +1 Coin = 5 all together.
   BigMoney bought Duchy.
+    BigMoney trashed Hovel.
   BigMoney Discarded Copper.
   BigMoney Discarded Silver.
   BigMoney Discarded Silver.
-  BigMoney Discarded Duchy.
-  BigMoney Discarded Province.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Gold into hand.
+  BigMoney Discarded Necropolis.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Province into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(4), Province(4), Silver(3), 
-
-ROUND 15
--------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Province,Province,Silver,
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> bought Estate.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Province.
-  BigMoneyWithCard<Envoy> Discarded Province.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Province into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Duchy(1), Envoy(1), Estate(4), Gold(4), Province(3), Silver(5), 
-
-BigMoney begins turn
-With hand: Copper,Estate,Gold,Province,Province,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney bought Estate.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Province.
-  BigMoney Discarded Province.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(4), Province(4), Silver(3), 
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(3), Gold(3), Necropolis(1), Overgrown Estate(1), Province(2), Silver(7), 
 
-ROUND 16
+ROUND 17
 -------------
-BigMoneyWithCard<Envoy> begins turn
-With hand: Copper,Copper,Province,Silver,Silver,
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Envoy> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Envoy> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Envoy> bought Duchy.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Copper.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Silver.
-  BigMoneyWithCard<Envoy> Discarded Province.
-  BigMoneyWithCard<Envoy> Drew Silver into hand.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> Drew Gold into hand.
-  BigMoneyWithCard<Envoy> Drew Estate into hand.
-  BigMoneyWithCard<Envoy> Drew Copper into hand.
-  BigMoneyWithCard<Envoy> ends turn with deck: Copper(7), Duchy(2), Envoy(1), Estate(4), Gold(4), Province(3), Silver(5), 
+ButcherPlazaWatchtower begins turn
+With hand: Butcher,Copper,Copper,Estate,Estate,
+  ButcherPlazaWatchtower Played Butcher.
+    +2 coin tokens = 2 all together.
+    ButcherPlazaWatchtower trashed Estate.
+    ButcherPlazaWatchtower gained Estate.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 1 all together.
+  ButcherPlazaWatchtower Played Copper.
+    +1 Coin = 2 all together.
+  ButcherPlazaWatchtower bought Estate.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Copper.
+  ButcherPlazaWatchtower Discarded Butcher.
+  ButcherPlazaWatchtower Discarded Estate.
+  ButcherPlazaWatchtower Drew Silver into hand.
+  ButcherPlazaWatchtower reshuffled
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Province into hand.
+  ButcherPlazaWatchtower Drew Plaza into hand.
+  ButcherPlazaWatchtower Drew Watchtower into hand.
+  ButcherPlazaWatchtower ends turn with deck: Butcher(1), Copper(2), Estate(4), Necropolis(1), Plaza(6), Province(5), Silver(1), Watchtower(2), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Gold,Silver,
+With hand: Copper,Gold,Silver,Silver,Silver,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
   BigMoney Played Silver.
     +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Silver.
+    +2 Coin = 9 all together.
   BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
+    +1 Coin = 10 all together.
   BigMoney bought Province.
   BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
   BigMoney Discarded Silver.
   BigMoney Discarded Gold.
-  BigMoney Drew Estate into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Province into hand.
   BigMoney Drew Duchy into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Overgrown Estate into hand.
   BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(4), Province(5), Silver(3), 
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(3), Gold(3), Necropolis(1), Overgrown Estate(1), Province(3), Silver(7), 
 
-Game ended in 16 turns.
-BigMoney Won!
-BigMoneyWithCard<Envoy> total score: 28
-  Copper(7), Duchy(2), Envoy(1), Estate(4), Gold(4), Province(3), Silver(5), 
-BigMoney total score: 40
-  Copper(7), Duchy(2), Estate(4), Gold(4), Province(5), Silver(3), 
-Trash contains: 
+Game ended in 17 turns.
+ButcherPlazaWatchtower Won!
+ButcherPlazaWatchtower total score: 34
+  Butcher(1), Copper(2), Estate(4), Necropolis(1), Plaza(6), Province(5), Silver(1), Watchtower(2), 
+BigMoney total score: 27
+  Copper(7), Duchy(3), Gold(3), Necropolis(1), Overgrown Estate(1), Province(3), Silver(7), 
+Trash contains: Butcher(2), Copper(6), Estate(1), Hovel(2), Overgrown Estate(1), Watchtower(2), 
 
-BigMoneyWithCard<Envoy> GainSequence is:
-  Envoy, Silver, Silver, Silver, Gold, 
-  Silver, Gold, Gold, Gold, Province, 
-  Silver, Province, Duchy, Province, Estate, 
-  Duchy, 
+ButcherPlazaWatchtower GainSequence is:
+  Silver, Watchtower, Butcher, Watchtower, Copper, 
+  Plaza, Butcher, Plaza, Plaza, Plaza, 
+  Plaza, Watchtower, Province, Province, Butcher, 
+  Watchtower, Province, Plaza, Province, Province, 
+  Estate, Estate, Estate, Estate, Estate, 
+
 BigMoney GainSequence is:
-  Silver, Silver, Gold, Gold, Gold, 
-  Silver, Province, Gold, Province, Province, 
-  Duchy, Province, Duchy, Estate, Province, 
-
+  Silver, Silver, Gold, Silver, Silver, 
+  Gold, Silver, Silver, Gold, Silver, 
+  Province, Duchy, Province, Duchy, Duchy, 
+  Province, 

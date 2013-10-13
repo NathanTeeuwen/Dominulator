@@ -80,6 +80,9 @@ namespace Program
 
         public static int CountOfPile(Card cardType, GameState gameState)
         {
+            if (!gameState.CardGameSubset.HasCard(cardType))
+                return 0;
+
             return gameState.GetPile(cardType).Count;
         }        
 
@@ -125,6 +128,11 @@ namespace Program
         private static int CountInHandFrom(ICardPicker matchingCards, GameState gameState)
         {
             return gameState.Self.Hand.CountWhere(card => matchingCards.GetPreferredCard(gameState, current => current == card) != null);            
-        }        
+        }
+
+        private static bool HasCardIn(Card card, ICardPicker matchingCards, GameState gameState)
+        {
+            return matchingCards.GetPreferredCard(gameState, c => c == card) != null;
+        }
     }
 }

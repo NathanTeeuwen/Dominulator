@@ -504,21 +504,31 @@ namespace Dominion.CardTypes
             if (choice == PlayerActionChoice.GainCard)
             {
                 currentPlayer.RequestPlayerGainCardFromTrash(gameState,
-                    acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) >= 3 && acceptableCard.CurrentCoinCost(currentPlayer) <= 6 && acceptableCard.potionCost == 0,
+                    acceptableCard => CardValidToGainFromTrash(acceptableCard, currentPlayer),
                     "Must gain a card costing between 3 and 6",
                     defaultLocation: DeckPlacement.TopOfDeck);
             }
             else
             {
-                Card trashedCard = currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCard => acceptableCard.isAction, isOptional: false);
+                Card trashedCard = currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCard => CardValidToTrash(acceptableCard), isOptional: false);
                 if (trashedCard != null)
                 {
                     int maxCost = trashedCard.CurrentCoinCost(currentPlayer) + 3;
                     currentPlayer.RequestPlayerGainCardFromSupply(gameState,
-                        acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= maxCost,
+                        acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) <= maxCost && acceptableCard.potionCost <= trashedCard.potionCost,
                         "gain a card costing up to 3 more than the trashed card");
                 }
             }
+        }
+
+        public static bool CardValidToGainFromTrash(Card card, PlayerState player)
+        {
+            return card.CurrentCoinCost(player) >= 3 && card.CurrentCoinCost(player) <= 6 && card.potionCost == 0;
+        }
+
+        public static bool CardValidToTrash(Card card)
+        {
+            return card.isAction;
         }
     }
 

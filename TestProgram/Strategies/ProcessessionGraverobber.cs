@@ -11,17 +11,51 @@ namespace Program
     public static partial class Strategies
     {
         public static class ProcessionGraverobber
-        {
-            // big money smithy player
+        {            
             private static PlayerAction Player(int playerNumber)
             {
-                return new PlayerAction(
-                            "ProcessionGraverobber",
+                return new MyPlayerAction(playerNumber);
+            }
+
+            class MyPlayerAction
+                : PlayerAction
+            {
+                public MyPlayerAction(int playerNumber)
+                    : base("ProcessionGraverobber",
                             playerNumber,
                             purchaseOrder: PurchaseOrder(),
                             actionOrder: ActionOrder(),
-                            trashOrder: TrashOrder());
-            }
+                            trashOrder: TrashOrder())
+                {
+                }
+
+                public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
+                {
+                    if (CardBeingPlayedIs(Cards.Graverobber, gameState))
+                    {                                               
+                        // always prefer trashing cards that might get convertd to victory points
+                        if (gameState.Self.Hand.AnyWhere(card => CardTypes.Graverobber.CardValidToTrash(card) && 
+                                                                   card.CurrentCoinCost(gameState.Self) >= 5 &&
+                                                                   HasCardIn(card, this.trashOrder, gameState)))
+                            return PlayerActionChoice.Trash;
+
+                        // otherwise prefer to gain a card from trash if you are trying to gain it
+                        if (gameState.trash.HasCard(c => CardTypes.Graverobber.CardValidToGainFromTrash(c, gameState.Self) &&
+                                                         HasCardIn(c, this.purchaseOrder, gameState)))
+                        {
+                            return PlayerActionChoice.GainCard;
+                        }
+
+                        // otherwise, you really want to do nothing
+
+
+                        // otherwise gain whatever u can from the trash
+                        return PlayerActionChoice.GainCard;
+                    }
+
+                    return base.ChooseBetween(gameState, acceptableChoice);
+                }
+            }           
 
             private static ICardPicker PurchaseOrder()
             {

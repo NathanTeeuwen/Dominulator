@@ -203,7 +203,7 @@ namespace Program
 
         public static class RebuildJack
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return new MyPlayerAction(playerNumber);
@@ -224,7 +224,7 @@ namespace Program
 
         public static class RebuildMonument
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return new MyPlayerAction(playerNumber);

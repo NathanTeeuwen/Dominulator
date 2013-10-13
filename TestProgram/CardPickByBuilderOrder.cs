@@ -17,7 +17,8 @@ namespace Program
 
         public int AmountWillingtoOverPayFor(Card card, GameState gameState)
         {
-            return int.MaxValue;
+            bool wantsToGainCard = this.GetPreferredCard(gameState, c => c == card) != null;
+            return wantsToGainCard ? CardAcceptance.DefaultOverpayAmount(gameState) : 0;
         }
 
         public Card GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate)

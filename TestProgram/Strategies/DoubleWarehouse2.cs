@@ -12,7 +12,7 @@ namespace Program
     {
         public static class DoubleWarehouse2
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return new PlayerAction(

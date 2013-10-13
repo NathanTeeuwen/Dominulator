@@ -293,6 +293,7 @@ namespace Dominion
             PlayerState currentPlayer = this.players.CurrentPlayer;
             return currentPlayer.AvailableCoins >= card.CurrentCoinCost(currentPlayer) &&
                    currentPlayer.AvailablePotions >= card.potionCost &&
+                   this.CardGameSubset.HasCard(card) &&
                    this.GetPile(card).Any() &&
                    !card.IsRestrictedFromBuy(currentPlayer, this) &&
                    !currentPlayer.turnCounters.cardsBannedFromPurchase.Contains(card);

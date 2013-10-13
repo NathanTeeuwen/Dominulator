@@ -34,7 +34,7 @@ namespace Program
 
         public static class BigMoneyColony
         {
-            private static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player(int playerNumber)
             {
                 return new PlayerAction(
                             "BigMoneyColony",

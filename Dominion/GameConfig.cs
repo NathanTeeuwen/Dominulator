@@ -9,7 +9,7 @@ namespace Dominion
     public class GameConfigBuilder
     {
         public bool useShelters;
-        public bool useColonyAndPlatinum;
+        public bool useColonyAndPlatinum;        
         private Card[] kingdomPiles;
         private MapPlayerGameConfigToCardSet startingDeck;
         private MapPlayerGameConfigToCardSet startingHand;        
@@ -107,7 +107,9 @@ namespace Dominion
                 // non-supply piles
                 Cards.Spoils,                
                 Cards.Madman,
-                Cards.Mercenary
+                Cards.Mercenary,
+                // base classes that should not be used
+                CardTypes.Ruins.card
             };
 
         public StartingCardSplit CardSplit
@@ -285,11 +287,7 @@ namespace Dominion
             if (this.kingdomPiles.Where(card => card.potionCost != 0).Any())
             {
                 Add(gameSubset, supplyCardPiles, 16, Cards.Potion);
-            }
-            else
-            {
-                gameSubset.AddCard(Cards.Potion);
-            }
+            }            
 
             if (this.kingdomPiles.Where(card => card.requiresRuins).Any())
             {

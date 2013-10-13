@@ -20,7 +20,7 @@ namespace Program
             int result = 0;
             foreach (CardAcceptance acceptance in this.cardAcceptances)
             {                
-                if (acceptance.card.Equals(card))
+                if (acceptance.match(gameState) && acceptance.card.Equals(card))
                 {
                     result = Math.Max(result, acceptance.overpayAmount(gameState));                    
                 }

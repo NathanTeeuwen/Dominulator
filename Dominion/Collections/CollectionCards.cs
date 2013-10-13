@@ -197,6 +197,29 @@ namespace Dominion
             return this.mapGameCardIndexToCount[index];
         }
 
+        public bool AnyOf(Card card)
+        {
+            return this.CountOf(card) > 0;
+        }
+
+        public bool AnyWhere(CardPredicate predicate)
+        {
+            for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)
+            {
+                if (this.mapGameCardIndexToCount[index] == 0)
+                    continue;
+
+                Card card = this.gameSubset.GetCardForIndex(index);
+
+                if (predicate(card))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public int CountWhere(CardPredicate predicate)
         {
             int result = 0;

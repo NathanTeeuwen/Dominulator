@@ -41,7 +41,7 @@ namespace Dominion
             return this.mapSubsetIndexToCard[index];
         }
 
-        internal bool HasCard(Card card)
+        public bool HasCard(Card card)
         {
             return this.GetIndexFor(card) != -1;
         }

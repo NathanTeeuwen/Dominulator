@@ -288,11 +288,11 @@ namespace Program
         }
 
         public override DeckPlacement ChooseBetweenTrashAndTopDeck(GameState gameState, Card card)
-        {            
-            if (DoesCardPickerMatch(this.trashOrder, gameState, card))
-                return DeckPlacement.Trash;
-
-            return DeckPlacement.TopOfDeck;
+        {
+            if (DoesCardPickerMatch(this.purchaseOrder, gameState, card))
+                return DeckPlacement.TopOfDeck;
+            
+            return DeckPlacement.Trash;            
         }
 
         public override Card GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer)

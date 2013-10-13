@@ -35,21 +35,22 @@ namespace Program
             private static ICardPicker PurchaseOrder()
             {
                 var highPriority = new CardPickByPriority(
-                          CardAcceptance.For(Cards.Province, CardAcceptance.AlwaysMatch, CardAcceptance.OverPayMaxAmount),
+                          CardAcceptance.For(Cards.Province),
                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 2),                          
                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 2),
-                          CardAcceptance.For(Cards.Butcher, gameState => CountAllOwned(Cards.Butcher, gameState) < 2),                          
+                          CardAcceptance.For(Cards.Butcher, gameState => CountAllOwned(Cards.Butcher, gameState) < 2),
                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 3));
 
                 var buildOrder = new CardPickByBuildOrder(
-                    CardAcceptance.For(Cards.Silver),
+                    CardAcceptance.For(Cards.Silver, gameState => CountAllOwned(Cards.Plaza, gameState) == 0),
                     CardAcceptance.For(Cards.Watchtower),
                     CardAcceptance.For(Cards.Plaza),
                     CardAcceptance.For(Cards.Plaza),
-                    CardAcceptance.For(Cards.Watchtower)                    
+                    CardAcceptance.For(Cards.Watchtower)
                     );
 
                 var lowPriority = new CardPickByPriority(
+                           CardAcceptance.For(Cards.Watchtower, gameState => CountAllOwned(Cards.Butcher, gameState) + CountAllOwned(Cards.Watchtower, gameState) < CountAllOwned(Cards.Plaza, gameState)),
                            CardAcceptance.For(Cards.Plaza),
                            CardAcceptance.For(Cards.Watchtower));
 
@@ -60,9 +61,10 @@ namespace Program
             {
                 return new CardPickByPriority(
                            CardAcceptance.For(Cards.Necropolis),
+                           CardAcceptance.For(Cards.Butcher, gameState => gameState.Self.AvailableActions > 1),
+                           CardAcceptance.For(Cards.Watchtower, gameState => gameState.Self.AvailableActions > 1 && !gameState.Self.Hand.AnyWhere(c => c.isTreasure) && gameState.Self.Hand.AnyOf(Cards.Plaza)),
                            CardAcceptance.For(Cards.Plaza),
-                           CardAcceptance.For(Cards.Watchtower, gameState => gameState.Self.AvailableActions == 1),
-                           //CardAcceptance.For(Cards.Watchtower, gameState => CountInHand(Cards.Estate, gameState) + CountInHand(Cards.Copper, gameState) == 0 && gameState.players.CurrentPlayer.AvailableActions > 1),
+                           CardAcceptance.For(Cards.Watchtower, gameState => gameState.Self.AvailableActions == 1),                           
                            CardAcceptance.For(Cards.Butcher),
                            CardAcceptance.For(Cards.Watchtower));
             }                        
@@ -72,11 +74,12 @@ namespace Program
                 return new CardPickByPriority(
                            CardAcceptance.For(Cards.Estate),
                            CardAcceptance.For(Cards.OvergrownEstate),
-                           CardAcceptance.For(Cards.Hovel),
+                           CardAcceptance.For(Cards.Necropolis),
+                           CardAcceptance.For(Cards.Hovel),                           
                            CardAcceptance.For(Cards.Copper),
                            CardAcceptance.For(Cards.Silver),
                            CardAcceptance.For(Cards.Butcher),
-                           CardAcceptance.For(Cards.Watchtower),
+                           CardAcceptance.For(Cards.Watchtower),                           
                            CardAcceptance.For(Cards.Duchy),
                            CardAcceptance.For(Cards.Province));
             }

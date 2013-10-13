@@ -13,7 +13,7 @@ namespace Program
         // for forum post: http://forum.dominionstrategy.com/index.php?topic=9558.0
         public static class ArmoryConspiratorForagerGreatHall
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return new MyPlayerAction(playerNumber);

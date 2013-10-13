@@ -12,7 +12,7 @@ namespace Program
     {
         public static class BigMoneyWithCard
         {
-            // big money smithy player
+            
             public static PlayerAction Player(Card card, int playerNumber, string playerName = null, int cardCount = 1, int afterSilverCount = 0, int afterGoldCount = int.MaxValue)
             {
                 return new PlayerAction(
@@ -38,7 +38,7 @@ namespace Program
         /*
         public static class BigMoneyTorturer
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return BigMoneyWithCard<CardTypes.Torturer>.Player(playerNumber, "BigMoneyTorturer");
@@ -47,7 +47,7 @@ namespace Program
 
         public static class BigMoneyWharf
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return BigMoneyWithCard.Player(Cards.Wharf, playerNumber, "BigMoneyWharf");
@@ -56,7 +56,7 @@ namespace Program
 
         public static class BigMoneyBridge
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return BigMoneyWithCard.Player(Cards.Bridge, playerNumber, "BigMoneyBridge");
@@ -65,7 +65,7 @@ namespace Program
 
         public static class BigMoneySingleSmithy
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return BigMoneyWithCard.Player(Cards.Smithy, playerNumber, "BigMoneySingleSmithy");
@@ -74,7 +74,7 @@ namespace Program
 
         public static class BigMoneySingleWitch
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return BigMoneyWithCard.Player(Cards.Witch, playerNumber, "BigMoneySingleWitch");
@@ -83,7 +83,7 @@ namespace Program
 
         public static class BigMoneyDoubleWitch
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return BigMoneyWithCard.Player(Cards.Witch, playerNumber, "BigMoneyDoubleWitch", cardCount: 2, afterGoldCount: 0);
@@ -92,7 +92,7 @@ namespace Program
 
         public static class BigMoneyMoneylender
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return BigMoneyWithCard.Player(Cards.Moneylender, playerNumber, cardCount: 2);
@@ -101,7 +101,7 @@ namespace Program
 
         public static class BigMoneyWithThief            
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return CustomPlayer(playerNumber);                
@@ -149,7 +149,7 @@ namespace Program
 
         public static class BigMoneySingleCardCartographer
         {
-            // big money smithy player
+            
             public static PlayerAction Player(Card card, int playerNumber, int cardCount = 1)
             {
                 return new PlayerAction(

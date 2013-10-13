@@ -12,7 +12,7 @@ namespace Program
     {
         public static class GovernorJunkdealer
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return new MyPlayerAction(playerNumber);

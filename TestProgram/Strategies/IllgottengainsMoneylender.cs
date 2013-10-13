@@ -12,7 +12,7 @@ namespace Program
     {
         public static class IllgottengainsMoneylender
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return new MyPlayerAction(playerNumber);
@@ -52,7 +52,7 @@ namespace Program
 
         public static class Illgottengains
         {
-            // big money smithy player
+            
             public static PlayerAction Player(int playerNumber)
             {
                 return new MyPlayerAction(playerNumber);

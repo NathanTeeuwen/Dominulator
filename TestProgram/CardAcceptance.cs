@@ -23,18 +23,20 @@ namespace Program
             return true;
         }
 
+        public static GameStateIntValue DefaultOverpayAmount = OverPayMaxAmount;
+
         public CardAcceptance(Card card)
         {
             this.card = card;
             this.match = AlwaysMatch;
-            this.overpayAmount = OverPayZero;
+            this.overpayAmount = DefaultOverpayAmount;
         }
 
         public CardAcceptance(Card card, GameStatePredicate match)
         {
             this.card = card;
             this.match = match;
-            this.overpayAmount = OverPayZero;
+            this.overpayAmount = DefaultOverpayAmount;
         }
 
         public CardAcceptance(Card card, GameStatePredicate match, GameStateIntValue overpayAmount)
