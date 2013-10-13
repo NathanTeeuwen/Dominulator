@@ -10,12 +10,16 @@ namespace Dominion.CardTypes
     using Dominion;
 
     // Shelters
-    public class Necropolis : Card { public static Necropolis card = new Necropolis(); private Necropolis() : base("Necropolis", coinCost: 1, plusActions: 2, isAction: true, isShelter: true) { } }
+    public class Necropolis : Card { public static Necropolis card = new Necropolis();
+
+        private Necropolis() : base("Necropolis", coinCost: 1, plusActions: 2, isAction: true, isShelter: true) { } }
 
     public class Hovel
         : Card
     {
-        public static Hovel card = new Hovel(); private Hovel()
+        public static Hovel card = new Hovel();
+
+        private Hovel()
             : base("Hovel", coinCost: 1, isShelter: true)
         {
             this.doSpecializedActionOnBuyWhileInHand = DoSpecializedActionOnBuyWhileInHand;
@@ -35,7 +39,9 @@ namespace Dominion.CardTypes
     public class OvergrownEstate
         : Card
     {
-        public static OvergrownEstate card = new OvergrownEstate(); private OvergrownEstate()
+        public static OvergrownEstate card = new OvergrownEstate();
+
+        private OvergrownEstate()
             : base("Overgrown Estate", coinCost: 1, victoryPoints: PlayerState => 0, isShelter: true)
         {
 
@@ -50,7 +56,9 @@ namespace Dominion.CardTypes
     public class Spoils :
         Card
     {
-        public static Spoils card = new Spoils(); private Spoils()
+        public static Spoils card = new Spoils();
+
+        private Spoils()
             : base("Spoils", coinCost: 0, plusCoins:3, isAction: true, isTreasure:true)
         {
         }
@@ -87,7 +95,9 @@ namespace Dominion.CardTypes
     public class AbandonedMine :
         Ruins
     {
-        new public static AbandonedMine card = new AbandonedMine(); private AbandonedMine()
+        new public static AbandonedMine card = new AbandonedMine();
+
+        private AbandonedMine()
             : base("Abandoned Mine", plusCoins: 1)
         {            
         }
@@ -96,7 +106,9 @@ namespace Dominion.CardTypes
     public class RuinedLibrary :
         Ruins
     {
-        new public static RuinedLibrary card = new RuinedLibrary(); private RuinedLibrary()
+        new public static RuinedLibrary card = new RuinedLibrary();
+
+        private RuinedLibrary()
             : base("Ruined Library",  plusCards: 1)
         {
         }
@@ -105,7 +117,9 @@ namespace Dominion.CardTypes
     public class RuinedMarket :
         Ruins
     {
-        new public static RuinedMarket card = new RuinedMarket(); private RuinedMarket()
+        new public static RuinedMarket card = new RuinedMarket();
+
+        private RuinedMarket()
             : base("Ruined Market", plusBuy: 1)
         {
         }
@@ -114,7 +128,9 @@ namespace Dominion.CardTypes
     public class RuinedVillage :
         Ruins
     {
-        new public static RuinedVillage card = new RuinedVillage(); private RuinedVillage()
+        new public static RuinedVillage card = new RuinedVillage();
+
+        private RuinedVillage()
             : base("Ruined Village", plusActions: 1)
         {
         }
@@ -123,7 +139,9 @@ namespace Dominion.CardTypes
     public class Survivors :
         Ruins
     {
-        new public static Survivors card = new Survivors(); private Survivors()
+        new public static Survivors card = new Survivors();
+
+        private Survivors()
             : base("Survivors")
         {
         }
@@ -139,7 +157,9 @@ namespace Dominion.CardTypes
     public class Altar :
         Card
     {
-        public static Altar card = new Altar(); private Altar()
+        public static Altar card = new Altar();
+
+        private Altar()
             : base("Altar", coinCost: 6, isAction: true)
         {
         }
@@ -158,7 +178,9 @@ namespace Dominion.CardTypes
     public class Armory :
         Card
     {
-        public static Armory card = new Armory(); private Armory()
+        public static Armory card = new Armory();
+
+        private Armory()
             : base("Armory", coinCost: 4, isAction: true)
         {
         }
@@ -176,7 +198,9 @@ namespace Dominion.CardTypes
     public class BandOfMisfits :
         Card
     {
-        public static BandOfMisfits card = new BandOfMisfits(); private BandOfMisfits()
+        public static BandOfMisfits card = new BandOfMisfits();
+
+        private BandOfMisfits()
             : base("BandOfMisfits", coinCost: 5, isAction: true)
         {
         }
@@ -190,7 +214,9 @@ namespace Dominion.CardTypes
     public class BanditCamp :
         Card
     {
-        public static BanditCamp card = new BanditCamp(); private BanditCamp()
+        public static BanditCamp card = new BanditCamp();
+
+        private BanditCamp()
             : base("BanditCamp", coinCost: 5, isAction: true, plusCards:1, plusActions:2, requiresSpoils:true)
         {
         }
@@ -204,7 +230,9 @@ namespace Dominion.CardTypes
     public class Beggar :
         Card
     {
-        public static Beggar card = new Beggar(); private Beggar()
+        public static Beggar card = new Beggar();
+
+        private Beggar()
             : base("Beggar", coinCost: 2, isAction: true, isReaction:true)
         {
         }
@@ -233,7 +261,9 @@ namespace Dominion.CardTypes
     public class Catacombs :
         Card
     {
-        public static Catacombs card = new Catacombs(); private Catacombs()
+        public static Catacombs card = new Catacombs();
+
+        private Catacombs()
             : base("Catacombs", coinCost: 5, isAction: true)
         {
         }
@@ -272,7 +302,9 @@ namespace Dominion.CardTypes
     public class Count :
         Card
     {
-        public static Count card = new Count(); private Count()
+        public static Count card = new Count();
+
+        private Count()
             : base("Count", coinCost: 5, isAction: true)
         {
         }
@@ -308,7 +340,9 @@ namespace Dominion.CardTypes
     public class CounterFeit :
         Card
     {
-        public static CounterFeit card = new CounterFeit(); private CounterFeit()
+        public static CounterFeit card = new CounterFeit();
+
+        private CounterFeit()
             : base("CounterFeit", coinCost: 5, isTreasure: true, plusCoins: 1, plusBuy: 1)
         {
         }
@@ -328,7 +362,9 @@ namespace Dominion.CardTypes
     public class Cultist :
         Card
     {
-        public static Cultist card = new Cultist(); private Cultist()
+        public static Cultist card = new Cultist();
+
+        private Cultist()
             : base("Cultist", coinCost: 5, isAction: true, isAttack:true, requiresRuins:true, plusCards:2, isAttackBeforeAction:true)
         {
         }
@@ -353,7 +389,9 @@ namespace Dominion.CardTypes
     public class DeathCart :
         Card
     {
-        public static DeathCart card = new DeathCart(); private DeathCart()
+        public static DeathCart card = new DeathCart();
+
+        private DeathCart()
             : base("Death Cart", coinCost: 4, isAction: true, plusCoins: 5, requiresRuins: true)
         {
         }
@@ -380,7 +418,9 @@ namespace Dominion.CardTypes
     public class Feodum :
         Card
     {
-        public static Feodum card = new Feodum(); private Feodum()
+        public static Feodum card = new Feodum();
+
+        private Feodum()
             : base("Feodum", coinCost: 4, victoryPoints: CountVictoryPoints)
         {
         }
@@ -409,7 +449,9 @@ namespace Dominion.CardTypes
             return gameState.CountOfDifferentTreasuresInTrash();
         }
 
-        public static Forager card = new Forager(); private Forager()
+        public static Forager card = new Forager();
+
+        private Forager()
             : base("Forager", coinCost: 3, isAction:true, plusBuy:1, plusActions:1)
         {
         }
@@ -424,7 +466,9 @@ namespace Dominion.CardTypes
     public class Fortress :
        Card
     {
-        public static Fortress card = new Fortress(); private Fortress()
+        public static Fortress card = new Fortress();
+
+        private Fortress()
             : base("Fortress", coinCost: 4, isAction: true, plusActions: 2, plusCards:1)
         {
         }
@@ -438,7 +482,9 @@ namespace Dominion.CardTypes
     public class Graverobber :
        Card
     {
-        public static Graverobber card = new Graverobber(); private Graverobber()
+        public static Graverobber card = new Graverobber();
+
+        private Graverobber()
             : base("Graverobber", coinCost: 5, isAction: true)
         {
         }
@@ -472,7 +518,9 @@ namespace Dominion.CardTypes
     public class Hermit :
        Card
     {
-        public static Hermit card = new Hermit(); private Hermit()
+        public static Hermit card = new Hermit();
+
+        private Hermit()
             : base("Hermit", coinCost: 3, isAction: true)
         {
         }
@@ -506,7 +554,9 @@ namespace Dominion.CardTypes
     public class Madman :
        Card
     {
-        public static Madman card = new Madman(); private Madman()
+        public static Madman card = new Madman();
+
+        private Madman()
             : base("Madman", coinCost: 0, isAction: true, plusActions:2)
         {
         }
@@ -524,7 +574,9 @@ namespace Dominion.CardTypes
     public class HuntingGrounds :
         Card
     {
-        public static HuntingGrounds card = new HuntingGrounds(); private HuntingGrounds()
+        public static HuntingGrounds card = new HuntingGrounds();
+
+        private HuntingGrounds()
             : base("Hunting Grounds", coinCost: 6, plusCards: 4, isAction: true)
         {
         }
@@ -545,7 +597,9 @@ namespace Dominion.CardTypes
     public class IronMonger :
         Card
     {
-        public static IronMonger card = new IronMonger(); private IronMonger()
+        public static IronMonger card = new IronMonger();
+
+        private IronMonger()
             : base("IronMongerGrounds", coinCost: 4, isAction: true)
         {
         }
@@ -578,7 +632,9 @@ namespace Dominion.CardTypes
     public class JunkDealer :
         Card
     {
-        public static JunkDealer card = new JunkDealer(); private JunkDealer()
+        public static JunkDealer card = new JunkDealer();
+
+        private JunkDealer()
             : base("JunkDealer", coinCost: 5, isAction: true, plusCards:1, plusActions:1, plusCoins:1)
         {
         }
@@ -592,7 +648,9 @@ namespace Dominion.CardTypes
     public class Knights :
         Card
     {
-        public static Knights card = new Knights(); private Knights()
+        public static Knights card = new Knights();
+
+        private Knights()
             : base("Knights", coinCost: 0, isAction: true, isAttack:true)
         {
         }
@@ -606,7 +664,9 @@ namespace Dominion.CardTypes
     public class Marauder :
         Card
     {
-        public static Marauder card = new Marauder(); private Marauder()
+        public static Marauder card = new Marauder();
+
+        private Marauder()
             : base("Marauder", coinCost: 4, isAction: true, isAttack: true, requiresRuins:true, requiresSpoils:true)
         {
         }
@@ -625,7 +685,9 @@ namespace Dominion.CardTypes
     public class MarketSquare :
         Card
     {
-        public static MarketSquare card = new MarketSquare(); private MarketSquare()
+        public static MarketSquare card = new MarketSquare();
+
+        private MarketSquare()
             : base("MarketSquare", coinCost: 3, isAction: true, plusCards:1, plusActions:1, plusBuy:1)
         {
             this.doSpecializedActionOnTrashWhileInHand = DoSpecializedActionOnTrashWhileInHand;
@@ -647,7 +709,9 @@ namespace Dominion.CardTypes
     public class Mystic :
         Card
     {
-        public static Mystic card = new Mystic(); private Mystic()
+        public static Mystic card = new Mystic();
+
+        private Mystic()
             : base("Mystic", coinCost: 5, isAction: true, plusCoins: 2, plusActions: 1)
         {
         }
@@ -671,7 +735,9 @@ namespace Dominion.CardTypes
     public class Pillage :
        Card
     {
-        public static Pillage card = new Pillage(); private Pillage()
+        public static Pillage card = new Pillage();
+
+        private Pillage()
             : base("Pillage", coinCost: 5, isAction: true, attackDependsOnPlayerChoice: true, requiresSpoils:true)
         {
         }
@@ -697,7 +763,9 @@ namespace Dominion.CardTypes
     public class PoorHouse :
         Card
     {
-        public static PoorHouse card = new PoorHouse(); private PoorHouse()
+        public static PoorHouse card = new PoorHouse();
+
+        private PoorHouse()
             : base("Poor House", coinCost: 1, isAction: true, plusCoins: 4)
         {
         }
@@ -713,7 +781,9 @@ namespace Dominion.CardTypes
     public class Procession :
        Card
     {
-        public static Procession card = new Procession(); private Procession()
+        public static Procession card = new Procession();
+
+        private Procession()
             : base("Procession", coinCost: 4, isAction: true)
         {
         }
@@ -736,7 +806,9 @@ namespace Dominion.CardTypes
     public class Rats :
         Card
     {
-        public static Rats card = new Rats(); private Rats()
+        public static Rats card = new Rats();
+
+        private Rats()
             : base("Rats", coinCost: 4, isAction: true, plusCards: 1, plusActions: 1, defaultSupplyCount: 20)
         {
         }
@@ -764,7 +836,9 @@ namespace Dominion.CardTypes
     public class Rebuild :
         Card
     {
-        public static Rebuild card = new Rebuild(); private Rebuild()
+        public static Rebuild card = new Rebuild();
+
+        private Rebuild()
             : base("Rebuild", coinCost: 5, plusActions: 1, isAction: true)
         {
         }
@@ -803,7 +877,9 @@ namespace Dominion.CardTypes
     public class Rogue :
        Card
     {
-        public static Rogue card = new Rogue(); private Rogue()
+        public static Rogue card = new Rogue();
+
+        private Rogue()
             : base("Rogue", coinCost: 5, isAction: true, isAttack:true, plusCoins:2)
         {
         }
@@ -817,7 +893,9 @@ namespace Dominion.CardTypes
     public class Sage :
        Card
     {
-        public static Sage card = new Sage(); private Sage()
+        public static Sage card = new Sage();
+
+        private Sage()
             : base("Sage", coinCost: 3, isAction: true, plusActions:1)
         {
         }
@@ -842,7 +920,9 @@ namespace Dominion.CardTypes
     public class Scavenger :
        Card
     {
-        public static Scavenger card = new Scavenger(); private Scavenger()
+        public static Scavenger card = new Scavenger();
+
+        private Scavenger()
             : base("Scavenger", coinCost: 4, isAction: true, plusCoins:2)
         {
         }
@@ -857,7 +937,9 @@ namespace Dominion.CardTypes
     public class Squire :
        Card
     {
-        public static Squire card = new Squire(); private Squire()
+        public static Squire card = new Squire();
+
+        private Squire()
             : base("Squire", coinCost: 2, isAction: true, plusCoins: 1)
         {
         }
@@ -888,7 +970,9 @@ namespace Dominion.CardTypes
     public class Storeroom :
        Card
     {
-        public static Storeroom card = new Storeroom(); private Storeroom()
+        public static Storeroom card = new Storeroom();
+
+        private Storeroom()
             : base("Storeroom", coinCost: 3, isAction: true, plusBuy:1)
         {
         }
@@ -908,7 +992,9 @@ namespace Dominion.CardTypes
     public class Urchin :
        Card
     {
-        public static Urchin card = new Urchin(); private Urchin()
+        public static Urchin card = new Urchin();
+
+        private Urchin()
             : base("Urchin", coinCost: 3, isAction: true, isAttack:true, plusCards:1, plusActions:1)
         {
             this.doSpecializedActionToCardWhileInPlay = DoSpecializedActionToCardWhileInPlay;
@@ -937,7 +1023,9 @@ namespace Dominion.CardTypes
     public class Mercenary :
        Card
     {
-        public static Mercenary card = new Mercenary(); private Mercenary()
+        public static Mercenary card = new Mercenary();
+
+        private Mercenary()
             : base("Mercenary", coinCost: 0, isAction: true, isAttack: true, attackDependsOnPlayerChoice:true)
         {
         }
@@ -974,7 +1062,9 @@ namespace Dominion.CardTypes
     public class Vagrant :
        Card
     {
-        public static Vagrant card = new Vagrant(); private Vagrant()
+        public static Vagrant card = new Vagrant();
+
+        private Vagrant()
             : base("Vagrant", coinCost: 2, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
@@ -1002,7 +1092,9 @@ namespace Dominion.CardTypes
     public class WanderingMinstrell :
        Card
     {
-        public static WanderingMinstrell card = new WanderingMinstrell(); private WanderingMinstrell()
+        public static WanderingMinstrell card = new WanderingMinstrell();
+
+        private WanderingMinstrell()
             : base("WanderingMinstrell", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2)
         {
         }

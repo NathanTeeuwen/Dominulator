@@ -32,7 +32,9 @@ namespace Dominion.CardTypes.TestCards
     public class FishingVillageAvailableForDeckCycle :
         Card
     {
-        public static FishingVillageAvailableForDeckCycle card = new FishingVillageAvailableForDeckCycle(); private FishingVillageAvailableForDeckCycle()
+        public static FishingVillageAvailableForDeckCycle card = new FishingVillageAvailableForDeckCycle();
+
+        private FishingVillageAvailableForDeckCycle()
             : base("FishingVillageAvailableForDeckCycle", coinCost:3, isAction: true, plusCoins:1, plusActions:2)
         {
         }
@@ -49,7 +51,9 @@ namespace Dominion.CardTypes.TestCards
     public class FishingVillageEmptyDuration :
         Card
     {
-        public static FishingVillageEmptyDuration card = new FishingVillageEmptyDuration(); private FishingVillageEmptyDuration()
+        public static FishingVillageEmptyDuration card = new FishingVillageEmptyDuration();
+
+        private FishingVillageEmptyDuration()
             : base("FishingVillageAvailableForDeckCycle", coinCost: 3, isAction: true, plusCoins: 2, plusActions: 2, isDuration:true )
         {
         }

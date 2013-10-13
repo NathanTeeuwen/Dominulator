@@ -12,7 +12,9 @@ namespace Dominion.CardTypes
     public class Potion 
         : Card 
     { 
-        public static Potion card = new Potion(); private Potion() 
+        public static Potion card = new Potion();
+
+        private Potion() 
             : base("Potion", coinCost: 4, isTreasure:true) 
         { 
         }
@@ -26,7 +28,9 @@ namespace Dominion.CardTypes
     public class Alchemist 
         : Card
     {
-        public static Alchemist card = new Alchemist(); private Alchemist()
+        public static Alchemist card = new Alchemist();
+
+        private Alchemist()
             : base("Alchemist", coinCost: 3, potionCost:1, isAction: true, plusCards:2, plusActions:1)
         {
             this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
@@ -43,7 +47,9 @@ namespace Dominion.CardTypes
     public class Apothecary
        : Card
     {
-        public static Apothecary card = new Apothecary(); private Apothecary()
+        public static Apothecary card = new Apothecary();
+
+        private Apothecary()
             : base("Apothecary", coinCost: 2, potionCost: 1, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
@@ -58,7 +64,9 @@ namespace Dominion.CardTypes
     public class Apprentice
        : Card
     {
-        public static Apprentice card = new Apprentice(); private Apprentice()
+        public static Apprentice card = new Apprentice();
+
+        private Apprentice()
             : base("Apprentice", coinCost: 5, isAction: true, plusActions: 1)
         {
         }
@@ -79,7 +87,9 @@ namespace Dominion.CardTypes
     public class Familiar
        : Card
     {
-        public static Familiar card = new Familiar(); private Familiar()
+        public static Familiar card = new Familiar();
+
+        private Familiar()
             : base("Familiar", coinCost: 3, potionCost: 1, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
@@ -93,7 +103,9 @@ namespace Dominion.CardTypes
     public class Golem
        : Card
     {
-        public static Golem card = new Golem(); private Golem()
+        public static Golem card = new Golem();
+
+        private Golem()
             : base("Golem", coinCost: 4, potionCost: 1, isAction: true)
         {
         }
@@ -107,7 +119,9 @@ namespace Dominion.CardTypes
     public class Herbalist :
        Card
     {
-        public static Herbalist card = new Herbalist(); private Herbalist()
+        public static Herbalist card = new Herbalist();
+
+        private Herbalist()
             : base("Herbalist", coinCost: 2, isAction: true, plusCoins:1, plusBuy:1)
         {
             this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
@@ -124,7 +138,9 @@ namespace Dominion.CardTypes
     public class PhilosophersStone
        : Card
     {
-        public static PhilosophersStone card = new PhilosophersStone(); private PhilosophersStone()
+        public static PhilosophersStone card = new PhilosophersStone();
+
+        private PhilosophersStone()
             : base("PhilosophersStone", coinCost: 3, potionCost:1, isTreasure: true)
         {
         }
@@ -138,7 +154,9 @@ namespace Dominion.CardTypes
     public class Possession
        : Card
     {
-        public static Possession card = new Possession(); private Possession()
+        public static Possession card = new Possession();
+
+        private Possession()
             : base("Possession", coinCost: 6, potionCost:1, isAction: true)
         {
         }
@@ -152,7 +170,9 @@ namespace Dominion.CardTypes
     public class ScryingPool
        : Card
     {
-        public static ScryingPool card = new ScryingPool(); private ScryingPool()
+        public static ScryingPool card = new ScryingPool();
+
+        private ScryingPool()
             : base("ScryingPool", coinCost: 2, potionCost:1, isAction: true, isAttack:true, plusActions:1)
         {
         }
@@ -166,7 +186,9 @@ namespace Dominion.CardTypes
     public class Transmute
        : Card
     {
-        public static Transmute card = new Transmute(); private Transmute()
+        public static Transmute card = new Transmute();
+
+        private Transmute()
             : base("Transmute", coinCost: 0, potionCost:1, isAction: true)
         {
         }
@@ -189,7 +211,9 @@ namespace Dominion.CardTypes
     public class University
        : Card
     {
-        public static University card = new University(); private University()
+        public static University card = new University();
+
+        private University()
             : base("University", coinCost: 2, potionCost:1, isAction: true, plusActions:2)
         {
         }
@@ -205,7 +229,9 @@ namespace Dominion.CardTypes
     public class Vineyard
        : Card
     {
-        public static Vineyard card = new Vineyard(); private Vineyard()
+        public static Vineyard card = new Vineyard();
+
+        private Vineyard()
             : base("Vineyard", coinCost: 0, potionCost:1, isAction: true, victoryPoints: playerState => playerState.AllOwnedCards.Where(card => card.isAction).Count()/3)
         {
         }        
