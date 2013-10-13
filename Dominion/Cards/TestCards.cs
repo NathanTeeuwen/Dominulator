@@ -9,8 +9,8 @@ namespace Dominion.CardTypes.TestCards
 {
     // Test Cards
 
-    public class FollowersTest :
-        Card
+    public class FollowersTest
+       : Card
     {
         public FollowersTest(int cost)
             : base("Followers", coinCost: cost, isAction: true, plusCards: 2, isAttack: true)
@@ -29,8 +29,8 @@ namespace Dominion.CardTypes.TestCards
         }
     }
 
-    public class FishingVillageAvailableForDeckCycle :
-        Card
+    public class FishingVillageAvailableForDeckCycle
+       : Card
     {
         public static FishingVillageAvailableForDeckCycle card = new FishingVillageAvailableForDeckCycle();
 
@@ -48,8 +48,8 @@ namespace Dominion.CardTypes.TestCards
         }        
     }
 
-    public class FishingVillageEmptyDuration :
-        Card
+    public class FishingVillageEmptyDuration
+       : Card
     {
         public static FishingVillageEmptyDuration card = new FishingVillageEmptyDuration();
 

@@ -29,8 +29,8 @@ namespace Dominion.CardTypes
         } 
     }
 
-    public class Baron :
-        Card
+    public class Baron
+       : Card
     {
         public static Baron card = new Baron();
 
@@ -52,8 +52,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Bridge :
-        Card
+    public class Bridge
+       : Card
     {
         public static Bridge card = new Bridge();
 
@@ -69,8 +69,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Conspirator :
-        Card
+    public class Conspirator
+       : Card
     {        
         public static Conspirator card = new Conspirator();
 
@@ -89,8 +89,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Coppersmith :
-        Card
+    public class Coppersmith
+       : Card
     {
         public static Coppersmith card = new Coppersmith();
 
@@ -105,8 +105,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Courtyard :
-        Card
+    public class Courtyard
+       : Card
     {
         public static Courtyard card = new Courtyard();
 
@@ -121,8 +121,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Duke :
-        Card
+    public class Duke
+       : Card
     {
         public static Duke card = new Duke();
 
@@ -133,8 +133,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class IronWorks :
-        Card
+    public class IronWorks
+       : Card
     {
         public static IronWorks card = new IronWorks();
 
@@ -166,8 +166,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Masquerade :
-        Card
+    public class Masquerade
+       : Card
     {
         public static Masquerade card = new Masquerade();
 
@@ -201,8 +201,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class MiningVillage :
-        Card
+    public class MiningVillage
+       : Card
     {
         public static MiningVillage card = new MiningVillage();
 
@@ -225,8 +225,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Minion :
-        Card
+    public class Minion
+       : Card
     {
         public static Minion card = new Minion();
 
@@ -275,8 +275,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Nobles :
-        Card
+    public class Nobles
+       : Card
     {
         public static Nobles card = new Nobles();
 
@@ -302,8 +302,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Pawn :
-        Card
+    public class Pawn
+       : Card
     {
         public static Pawn card = new Pawn();
 
@@ -347,8 +347,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Sabateur :
-        Card
+    public class Sabateur
+       : Card
     {
         public static Sabateur card = new Sabateur();
 
@@ -389,8 +389,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Scout :
-        Card
+    public class Scout
+       : Card
     {
         public static Scout card = new Scout();
 
@@ -407,8 +407,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class SecretChamber :
-       Card
+    public class SecretChamber
+      : Card
     {
         public static SecretChamber card = new SecretChamber();
 
@@ -450,8 +450,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class ShantyTown :
-       Card
+    public class ShantyTown
+      : Card
     {
         public static ShantyTown card = new ShantyTown();
 
@@ -470,8 +470,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Steward :
-       Card
+    public class Steward
+      : Card
     {
         public static Steward card = new Steward();
 
@@ -499,8 +499,8 @@ namespace Dominion.CardTypes
     }
 
 
-    public class Swindler :
-       Card
+    public class Swindler
+      : Card
     {
         public static Swindler card = new Swindler();
 
@@ -525,8 +525,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Torturer :
-      Card
+    public class Torturer
+     : Card
     {
         public static Torturer card = new Torturer();
 
@@ -551,8 +551,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class TradingPost :
-        Card
+    public class TradingPost
+       : Card
     {
         public static TradingPost card = new TradingPost();
 
@@ -572,8 +572,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Tribute :
-       Card
+    public class Tribute
+      : Card
     {
         public static Tribute card = new Tribute();
 
@@ -629,8 +629,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Upgrade :
-        Card
+    public class Upgrade
+       : Card
     {
         public static Upgrade card = new Upgrade();
 
@@ -652,8 +652,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class WishingWell :
-        Card
+    public class WishingWell
+       : Card
     {
         public static WishingWell card = new WishingWell();
 

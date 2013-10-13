@@ -116,8 +116,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Herbalist :
-       Card
+    public class Herbalist
+      : Card
     {
         public static Herbalist card = new Herbalist();
 

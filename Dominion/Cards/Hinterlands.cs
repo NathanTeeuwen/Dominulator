@@ -9,8 +9,8 @@ namespace Dominion.CardTypes
 {
     using Dominion;
 
-    public class BorderVillage :
-      Card
+    public class BorderVillage
+     : Card
     {
         public static BorderVillage card = new BorderVillage();
 
@@ -30,8 +30,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Cache :
-      Card
+    public class Cache
+     : Card
     {
         public static Cache card = new Cache();
 
@@ -47,8 +47,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Cartographer :
-        Card
+    public class Cartographer
+       : Card
     {
         public static Cartographer card = new Cartographer();
 
@@ -73,8 +73,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class CrossRoads :
-        Card
+    public class CrossRoads
+       : Card
     {
         public static CrossRoads card = new CrossRoads();
 
@@ -96,8 +96,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Develop :
-        Card
+    public class Develop
+       : Card
     {
         public static Develop card = new Develop();
 
@@ -120,8 +120,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Duchess :
-        Card
+    public class Duchess
+       : Card
     {
         public static Duchess card = new Duchess();
 
@@ -150,8 +150,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Embassy :
-        Card
+    public class Embassy
+       : Card
     {
         public static Embassy card = new Embassy();
 
@@ -176,8 +176,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Farmland :
-        Card
+    public class Farmland
+       : Card
     {
         public static Farmland card = new Farmland();
 
@@ -197,8 +197,8 @@ namespace Dominion.CardTypes
         }        
     }
 
-    public class FoolsGold :
-        Card
+    public class FoolsGold
+       : Card
     {
         public static FoolsGold card = new FoolsGold();
 
@@ -220,8 +220,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Haggler :
-        Card
+    public class Haggler
+       : Card
     {
         public static Haggler card = new Haggler();
 
@@ -239,8 +239,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Highway :
-        Card
+    public class Highway
+       : Card
     {
         public static Highway card = new Highway();
 
@@ -257,8 +257,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class IllGottenGains :
-        Card
+    public class IllGottenGains
+       : Card
     {
         public static IllGottenGains card = new IllGottenGains();
 
@@ -283,8 +283,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Inn :
-        Card
+    public class Inn
+       : Card
     {
         public static Inn card = new Inn();
 
@@ -305,8 +305,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class JackOfAllTrades :
-        Card
+    public class JackOfAllTrades
+       : Card
     {
         public static JackOfAllTrades card = new JackOfAllTrades();
 
@@ -342,8 +342,8 @@ namespace Dominion.CardTypes
         }        
     }
 
-    public class Mandarin :
-        Card
+    public class Mandarin
+       : Card
     {
         public static Mandarin card = new Mandarin();
 
@@ -363,8 +363,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Margrave :
-        Card
+    public class Margrave
+       : Card
     {
         public static Margrave card = new Margrave();
 
@@ -380,8 +380,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class NobleBrigand :
-        Card
+    public class NobleBrigand
+       : Card
     {
         public static NobleBrigand card = new NobleBrigand();
 
@@ -429,8 +429,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class NomadCamp :
-        Card
+    public class NomadCamp
+       : Card
     {
         public static NomadCamp card = new NomadCamp();
 
@@ -450,8 +450,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Oasis :
-        Card
+    public class Oasis
+       : Card
     {
         public static Oasis card = new Oasis();
 
@@ -466,8 +466,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Oracle :
-        Card
+    public class Oracle
+       : Card
     {
         public static Oracle card = new Oracle();
 
@@ -482,8 +482,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Scheme :
-        Card
+    public class Scheme
+       : Card
     {
         public static Scheme card = new Scheme();
 
@@ -501,8 +501,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class SilkRoad :
-        Card
+    public class SilkRoad
+       : Card
     {
         public static SilkRoad card = new SilkRoad();
 
@@ -512,8 +512,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class SpiceMerchant :
-        Card
+    public class SpiceMerchant
+       : Card
     {
         public static SpiceMerchant card = new SpiceMerchant();
 
@@ -551,8 +551,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Stables :
-        Card
+    public class Stables
+       : Card
     {
         public static Stables card = new Stables();
 
@@ -571,8 +571,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Trader :
-        Card
+    public class Trader
+       : Card
     {
         public static Trader card = new Trader();
 
@@ -604,8 +604,8 @@ namespace Dominion.CardTypes
         }        
     }
 
-    public class Tunnel :
-        Card
+    public class Tunnel
+       : Card
     {
         public static Tunnel card = new Tunnel();
 

@@ -9,8 +9,8 @@ namespace Dominion.CardTypes
 {
     using Dominion;
 
-    public class Ambassador :
-        Card
+    public class Ambassador
+       : Card
     {
         public static Ambassador card = new Ambassador();
 
@@ -65,8 +65,8 @@ namespace Dominion.CardTypes
         } 
     }
 
-    public class Caravan :
-        Card
+    public class Caravan
+       : Card
     {
         public static Caravan card = new Caravan();
 
@@ -81,8 +81,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Cutpurse :
-       Card
+    public class Cutpurse
+      : Card
     {
         public static Cutpurse card = new Cutpurse();
 
@@ -100,8 +100,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Embargo :
-        Card
+    public class Embargo
+       : Card
     {
         public static Embargo card = new Embargo();
 
@@ -118,8 +118,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Explorer :
-       Card
+    public class Explorer
+      : Card
     {
         public static Explorer card = new Explorer();
 
@@ -141,8 +141,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class FishingVillage :
-        Card
+    public class FishingVillage
+       : Card
     {
         public static FishingVillage card = new FishingVillage();
 
@@ -158,8 +158,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class GhostShip :
-        Card
+    public class GhostShip
+       : Card
     {
         public static GhostShip card = new GhostShip();
 
@@ -177,8 +177,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Haven :
-        Card
+    public class Haven
+       : Card
     {
         public static Haven card = new Haven();
 
@@ -193,8 +193,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Island :
-        Card
+    public class Island
+       : Card
     {
         public static Island card = new Island();
 
@@ -214,8 +214,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Lighthouse :
-        Card
+    public class Lighthouse
+       : Card
     {
         public static Lighthouse card = new Lighthouse();
 
@@ -230,8 +230,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Lookout :
-        Card
+    public class Lookout
+       : Card
     {
         public static Lookout card = new Lookout();
 
@@ -252,8 +252,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class MerchantShip :
-        Card
+    public class MerchantShip
+       : Card
     {
         public static MerchantShip card = new MerchantShip();
 
@@ -268,8 +268,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class NativeVillage :
-        Card
+    public class NativeVillage
+       : Card
     {
         public static NativeVillage card = new NativeVillage();
 
@@ -296,8 +296,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Navigator :
-        Card
+    public class Navigator
+       : Card
     {
         public static Navigator card = new Navigator();
 
@@ -324,8 +324,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Outpost :
-        Card
+    public class Outpost
+       : Card
     {
         public static Outpost card = new Outpost();
 
@@ -347,8 +347,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class PearlDiver :
-        Card
+    public class PearlDiver
+       : Card
     {
         public static PearlDiver card = new PearlDiver();
 
@@ -368,8 +368,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class PirateShip :
-        Card
+    public class PirateShip
+       : Card
     {
         public static PirateShip card = new PirateShip();
 
@@ -407,8 +407,8 @@ namespace Dominion.CardTypes
         }        
     }
 
-    public class Salvager :
-        Card
+    public class Salvager
+       : Card
     {
         public static Salvager card = new Salvager();
 
@@ -427,8 +427,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class SeaHag :
-        Card
+    public class SeaHag
+       : Card
     {
         public static SeaHag card = new SeaHag();
 
@@ -444,8 +444,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Smugglers :
-        Card
+    public class Smugglers
+       : Card
     {
         public static Smugglers card = new Smugglers();
 
@@ -461,8 +461,8 @@ namespace Dominion.CardTypes
         }
     }   
 
-    public class Tactician :
-        Card
+    public class Tactician
+       : Card
     {
         public static Tactician card = new Tactician();
 
@@ -485,8 +485,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class TreasureMap :
-        Card
+    public class TreasureMap
+       : Card
     {
         public static TreasureMap card = new TreasureMap();
 
@@ -507,8 +507,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Treasury :
-        Card
+    public class Treasury
+       : Card
     {
         public static Treasury card = new Treasury();
 
@@ -526,8 +526,8 @@ namespace Dominion.CardTypes
     }
 
 
-    public class Warehouse :
-        Card
+    public class Warehouse
+       : Card
     {
         public static Warehouse card = new Warehouse();
 
@@ -542,8 +542,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Wharf :
-        Card
+    public class Wharf
+       : Card
     {
         public static Wharf card = new Wharf();
 

@@ -194,8 +194,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Bureaucrat :
-       Card
+    public class Bureaucrat
+      : Card
     {
         public static Bureaucrat card = new Bureaucrat();
 

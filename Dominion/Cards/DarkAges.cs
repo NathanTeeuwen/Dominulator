@@ -60,8 +60,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Spoils :
-        Card
+    public class Spoils
+       : Card
     {
         public static Spoils card = new Spoils();
 
@@ -78,8 +78,8 @@ namespace Dominion.CardTypes
 
     // Ruins
 
-    public class Ruins :
-        Card
+    public class Ruins
+       : Card
     {
         public static Ruins card = new Ruins();
 
@@ -161,8 +161,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Altar :
-        Card
+    public class Altar
+       : Card
     {
         public static Altar card = new Altar();
 
@@ -182,8 +182,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Armory :
-        Card
+    public class Armory
+       : Card
     {
         public static Armory card = new Armory();
 
@@ -202,8 +202,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class BandOfMisfits :
-        Card
+    public class BandOfMisfits
+       : Card
     {
         public static BandOfMisfits card = new BandOfMisfits();
 
@@ -218,8 +218,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class BanditCamp :
-        Card
+    public class BanditCamp
+       : Card
     {
         public static BanditCamp card = new BanditCamp();
 
@@ -234,8 +234,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Beggar :
-        Card
+    public class Beggar
+       : Card
     {
         public static Beggar card = new Beggar();
 
@@ -265,8 +265,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Catacombs :
-        Card
+    public class Catacombs
+       : Card
     {
         public static Catacombs card = new Catacombs();
 
@@ -306,8 +306,8 @@ namespace Dominion.CardTypes
         }
     }        
 
-    public class Count :
-        Card
+    public class Count
+       : Card
     {
         public static Count card = new Count();
 
@@ -344,8 +344,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class CounterFeit :
-        Card
+    public class CounterFeit
+       : Card
     {
         public static CounterFeit card = new CounterFeit();
 
@@ -366,8 +366,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Cultist :
-        Card
+    public class Cultist
+       : Card
     {
         public static Cultist card = new Cultist();
 
@@ -393,8 +393,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class DeathCart :
-        Card
+    public class DeathCart
+       : Card
     {
         public static DeathCart card = new DeathCart();
 
@@ -422,8 +422,8 @@ namespace Dominion.CardTypes
         }
     }    
 
-    public class Feodum :
-        Card
+    public class Feodum
+       : Card
     {
         public static Feodum card = new Feodum();
 
@@ -448,8 +448,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Forager :
-       Card
+    public class Forager
+      : Card
     {
         public static int CurrentCoinValue(GameState gameState)
         {
@@ -470,8 +470,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Fortress :
-       Card
+    public class Fortress
+      : Card
     {
         public static Fortress card = new Fortress();
 
@@ -486,8 +486,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Graverobber :
-       Card
+    public class Graverobber
+      : Card
     {
         public static Graverobber card = new Graverobber();
 
@@ -522,8 +522,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Hermit :
-       Card
+    public class Hermit
+      : Card
     {
         public static Hermit card = new Hermit();
 
@@ -558,8 +558,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Madman :
-       Card
+    public class Madman
+      : Card
     {
         public static Madman card = new Madman();
 
@@ -578,8 +578,8 @@ namespace Dominion.CardTypes
     }
 
 
-    public class HuntingGrounds :
-        Card
+    public class HuntingGrounds
+       : Card
     {
         public static HuntingGrounds card = new HuntingGrounds();
 
@@ -601,8 +601,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class IronMonger :
-        Card
+    public class IronMonger
+       : Card
     {
         public static IronMonger card = new IronMonger();
 
@@ -636,8 +636,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class JunkDealer :
-        Card
+    public class JunkDealer
+       : Card
     {
         public static JunkDealer card = new JunkDealer();
 
@@ -652,8 +652,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Knights :
-        Card
+    public class Knights
+       : Card
     {
         public static Knights card = new Knights();
 
@@ -668,8 +668,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Marauder :
-        Card
+    public class Marauder
+       : Card
     {
         public static Marauder card = new Marauder();
 
@@ -689,8 +689,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class MarketSquare :
-        Card
+    public class MarketSquare
+       : Card
     {
         public static MarketSquare card = new MarketSquare();
 
@@ -713,8 +713,8 @@ namespace Dominion.CardTypes
         }        
     }
 
-    public class Mystic :
-        Card
+    public class Mystic
+       : Card
     {
         public static Mystic card = new Mystic();
 
@@ -739,8 +739,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Pillage :
-       Card
+    public class Pillage
+      : Card
     {
         public static Pillage card = new Pillage();
 
@@ -767,8 +767,8 @@ namespace Dominion.CardTypes
         }        
     }
 
-    public class PoorHouse :
-        Card
+    public class PoorHouse
+       : Card
     {
         public static PoorHouse card = new PoorHouse();
 
@@ -785,8 +785,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Procession :
-       Card
+    public class Procession
+      : Card
     {
         public static Procession card = new Procession();
 
@@ -810,8 +810,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Rats :
-        Card
+    public class Rats
+       : Card
     {
         public static Rats card = new Rats();
 
@@ -840,8 +840,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Rebuild :
-        Card
+    public class Rebuild
+       : Card
     {
         public static Rebuild card = new Rebuild();
 
@@ -881,8 +881,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Rogue :
-       Card
+    public class Rogue
+      : Card
     {
         public static Rogue card = new Rogue();
 
@@ -897,8 +897,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Sage :
-       Card
+    public class Sage
+      : Card
     {
         public static Sage card = new Sage();
 
@@ -924,8 +924,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Scavenger :
-       Card
+    public class Scavenger
+      : Card
     {
         public static Scavenger card = new Scavenger();
 
@@ -941,8 +941,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Squire :
-       Card
+    public class Squire
+      : Card
     {
         public static Squire card = new Squire();
 
@@ -974,8 +974,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Storeroom :
-       Card
+    public class Storeroom
+      : Card
     {
         public static Storeroom card = new Storeroom();
 
@@ -996,8 +996,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Urchin :
-       Card
+    public class Urchin
+      : Card
     {
         public static Urchin card = new Urchin();
 
@@ -1027,8 +1027,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Mercenary :
-       Card
+    public class Mercenary
+      : Card
     {
         public static Mercenary card = new Mercenary();
 
@@ -1066,8 +1066,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Vagrant :
-       Card
+    public class Vagrant
+      : Card
     {
         public static Vagrant card = new Vagrant();
 
@@ -1096,8 +1096,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class WanderingMinstrell :
-       Card
+    public class WanderingMinstrell
+      : Card
     {
         public static WanderingMinstrell card = new WanderingMinstrell();
 

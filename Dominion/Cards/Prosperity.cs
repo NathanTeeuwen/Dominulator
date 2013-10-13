@@ -53,8 +53,8 @@ namespace Dominion.CardTypes
         } 
     }
 
-    public class Bank :
-       Card
+    public class Bank
+      : Card
     {
         public static Bank card = new Bank();
 
@@ -70,8 +70,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Bishop :
-       Card
+    public class Bishop
+      : Card
     {
         public static Bishop card = new Bishop();
 
@@ -96,8 +96,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class City :
-       Card
+    public class City
+      : Card
     {
         public static City card = new City();
 
@@ -123,8 +123,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Contraband :
-        Card
+    public class Contraband
+       : Card
     {
         public static Contraband card = new Contraband();
 
@@ -141,8 +141,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class CountingHouse :
-        Card
+    public class CountingHouse
+       : Card
     {
         public static CountingHouse card = new CountingHouse();
 
@@ -169,8 +169,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Expand :
-        Card
+    public class Expand
+       : Card
     {
         public static Expand card = new Expand();
 
@@ -189,8 +189,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Forge :
-        Card
+    public class Forge
+       : Card
     {
         public static Forge card = new Forge();
 
@@ -214,8 +214,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Goons :
-        Card
+    public class Goons
+       : Card
     {
         public static Goons card = new Goons();
 
@@ -236,8 +236,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class GrandMarket :
-        Card
+    public class GrandMarket
+       : Card
     {
         public static GrandMarket card = new GrandMarket();
 
@@ -252,8 +252,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Hoard :
-       Card
+    public class Hoard
+      : Card
     {
         public static Hoard card = new Hoard();
 

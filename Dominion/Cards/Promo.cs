@@ -9,8 +9,8 @@ namespace Dominion.CardTypes
 {
     using Dominion;
 
-    public class BlackMarket :
-        Card
+    public class BlackMarket
+       : Card
     {
         public static BlackMarket card = new BlackMarket();
 
@@ -27,8 +27,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Envoy :
-        Card
+    public class Envoy
+       : Card
     {
         public static Envoy card = new Envoy();
 
@@ -50,8 +50,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Governor :
-        Card
+    public class Governor
+       : Card
     {
         public static Governor card = new Governor();
 
@@ -115,8 +115,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Stash :
-        Card
+    public class Stash
+       : Card
     {
         public static Stash card = new Stash();
 
@@ -126,8 +126,8 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class WalledVillage :
-        Card
+    public class WalledVillage
+       : Card
     {
         public static WalledVillage card = new WalledVillage();
 
