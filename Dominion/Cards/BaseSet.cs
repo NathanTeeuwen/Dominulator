@@ -9,13 +9,27 @@ namespace Dominion.CardTypes
 {
     using Dominion;
 
-    public class Curse : Card { 
+    public class Curse 
+        : Card 
+    { 
         public static Curse card = new Curse(); 
-        private Curse() : base("Curse", coinCost: 0, isCurse: true) { } 
+        
+        private Curse() 
+            : base("Curse", coinCost: 0, isCurse: true) 
+        {
+        } 
     }
-    public class Estate : Card { public static Estate card = new Estate();
 
-        private Estate() : base("Estate", coinCost: 2, victoryPoints: playerState => 1) { } }
+    public class Estate 
+        : Card 
+    { 
+        public static Estate card = new Estate();
+
+        private Estate() 
+            : base("Estate", coinCost: 2, victoryPoints: playerState => 1) 
+        {
+        } 
+    }
     
     public class Duchy 
         : Card 
@@ -38,37 +52,115 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Province : Card { public static Province card = new Province();
+    public class Province 
+        : Card 
+    { 
+        public static Province card = new Province();
 
-        private Province() : base("Province", coinCost: 8, victoryPoints: playerState => 6) { } }
-    public class Copper : Card { public static Copper card = new Copper();
+        private Province() 
+            : base("Province", coinCost: 8, victoryPoints: playerState => 6) 
+        {
+        } 
+    }
 
-        private Copper() : base("Copper", coinCost: 0, plusCoins: 1, isTreasure: true) { } }
-    public class Silver : Card { public static Silver card = new Silver();
+    public class Copper 
+        : Card 
+    { 
+        public static Copper card = new Copper();
 
-        private Silver() : base("Silver", coinCost: 3, plusCoins: 2, isTreasure: true) { } }
-    public class Gold : Card { public static Gold card = new Gold();
+        private Copper() 
+            : base("Copper", coinCost: 0, plusCoins: 1, isTreasure: true) 
+        {
+        } 
+    }
 
-        private Gold() : base("Gold", coinCost: 6, plusCoins: 3, isTreasure: true) { } }
+    public class Silver 
+        : Card 
+    { 
+        public static Silver card = new Silver();
 
-    public class Festival : Card { public static Festival card = new Festival();
+        private Silver() : base("Silver", coinCost: 3, plusCoins: 2, isTreasure: true) 
+        {
+        } 
+    }
 
-        private Festival() : base("Festival", coinCost: 5, plusActions: 2, plusBuy: 1, plusCoins: 2, isAction: true) { } }
-    public class Laboratory : Card { public static Laboratory card = new Laboratory();
+    public class Gold 
+        : Card 
+    { 
+        public static Gold card = new Gold();
 
-        private Laboratory() : base("Laboratory", coinCost: 5, plusCards: 2, plusActions: 1, isAction: true) { } }
-    public class Market : Card { public static Market card = new Market();
+        private Gold() 
+            : base("Gold", coinCost: 6, plusCoins: 3, isTreasure: true) 
+        {
+        } 
+    }
 
-        private Market() : base("Market", coinCost: 5, plusCards: 1, plusActions: 1, plusBuy: 1, plusCoins: 1, isAction: true) { } }
-    public class Smithy : Card { public static Smithy card = new Smithy();
+    public class Festival 
+        : Card 
+    { 
+        public static Festival card = new Festival();
 
-        private Smithy() : base("Smithy", coinCost: 4, plusCards: 3, isAction: true) { } }
-    public class Village : Card { public static Village card = new Village();
+        private Festival() 
+            : base("Festival", coinCost: 5, plusActions: 2, plusBuy: 1, plusCoins: 2, isAction: true) 
+        {
+        } 
+    }
 
-        private Village() : base("Village", coinCost: 3, plusCards: 1, plusActions: 2, isAction: true) { } }
-    public class WoodCutter : Card { public static WoodCutter card = new WoodCutter();
+    public class Laboratory 
+        : Card 
+    { 
+        public static Laboratory card = new Laboratory();
 
-        private WoodCutter() : base("WoodCutter", coinCost: 3, plusBuy: 1, plusCoins: 2, isAction: true) { } }
+        private Laboratory() 
+            : base("Laboratory", coinCost: 5, plusCards: 2, plusActions: 1, isAction: true) 
+        {
+        } 
+    }
+
+    public class Market 
+        : Card 
+    { 
+        public static Market card = new Market();
+
+        private Market() 
+            : base("Market", coinCost: 5, plusCards: 1, plusActions: 1, plusBuy: 1, plusCoins: 1, isAction: true) 
+        {
+        } 
+    }
+
+    public class Smithy 
+        : Card 
+    { 
+        public static Smithy card = new Smithy();
+
+        private Smithy() 
+            : base("Smithy", coinCost: 4, plusCards: 3, isAction: true) 
+        {
+        } 
+    }
+
+    public class Village 
+        : Card 
+    { 
+        public static Village card = new Village();
+
+        private Village() 
+            : base("Village", coinCost: 3, plusCards: 1, plusActions: 2, isAction: true) 
+        {
+        } 
+    }
+
+    public class WoodCutter 
+        : Card 
+    
+    { 
+        public static WoodCutter card = new WoodCutter();
+
+        private WoodCutter() 
+            : base("WoodCutter", coinCost: 3, plusBuy: 1, plusCoins: 2, isAction: true) 
+        { 
+        } 
+    }
 
     public class Adventurer
         : Card

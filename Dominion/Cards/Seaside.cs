@@ -54,9 +54,16 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Bazaar : Card { public static Bazaar card = new Bazaar();
+    public class Bazaar 
+        : Card 
+    { 
+        public static Bazaar card = new Bazaar();
 
-        private Bazaar() : base("Bazaar", coinCost: 5, isAction: true, plusCoins: 1, plusCards: 1, plusActions: 2) { } }
+        private Bazaar() 
+            : base("Bazaar", coinCost: 5, isAction: true, plusCoins: 1, plusCards: 1, plusActions: 2) 
+        { 
+        } 
+    }
 
     public class Caravan :
         Card

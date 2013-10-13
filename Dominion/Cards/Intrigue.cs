@@ -9,12 +9,25 @@ namespace Dominion.CardTypes
 {
     using Dominion;
 
-    public class GreatHall : Card { public static GreatHall card = new GreatHall();
+    public class GreatHall 
+        : Card 
+    { 
+        public static GreatHall card = new GreatHall();
 
-        private GreatHall() : base("Great Hall", coinCost: 3, victoryPoints: playerState => 1, plusCards: 1, plusActions: 1, isAction: true) { } }
-    public class Harem : Card { public static Harem card = new Harem();
+        private GreatHall() : base("Great Hall", coinCost: 3, victoryPoints: playerState => 1, plusCards: 1, plusActions: 1, isAction: true) 
+        { 
+        } 
+    }
 
-        private Harem() : base("Harem", coinCost: 6, victoryPoints: playerState => 2, plusCoins: 2, isTreasure: true) { } }
+    public class Harem 
+        : Card 
+    { 
+        public static Harem card = new Harem();
+
+        private Harem() : base("Harem", coinCost: 6, victoryPoints: playerState => 2, plusCoins: 2, isTreasure: true) 
+        { 
+        } 
+    }
 
     public class Baron :
         Card

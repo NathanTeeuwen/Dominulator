@@ -9,19 +9,49 @@ namespace Dominion.CardTypes
 {
     using Dominion;
 
-    public class Colony : Card { public static Colony card = new Colony();
+    public class Colony 
+        : Card 
+    { 
+        public static Colony card = new Colony();
 
-        private Colony() : base("Colony", coinCost: 11, victoryPoints: playerState => 10) { } }
-    public class Platinum : Card { public static Platinum card = new Platinum();
+        private Colony() 
+            : base("Colony", coinCost: 11, victoryPoints: playerState => 10) 
+        { 
+        } 
+    }
 
-        private Platinum() : base("Platinum", coinCost: 9, plusCoins: 5, isTreasure: true) { } }
+    public class Platinum 
+        : Card 
+    { 
+        public static Platinum card = new Platinum();
 
-    public class Monument : Card { public static Monument card = new Monument();
+        private Platinum() 
+            : base("Platinum", coinCost: 9, plusCoins: 5, isTreasure: true) 
+        { 
+        } 
+    }
 
-        private Monument() : base("Monument", coinCost: 4, isAction: true, plusCoins: 2, plusVictoryToken: 1) { } }
-    public class WorkersVillage : Card { public static WorkersVillage card = new WorkersVillage();
+    public class Monument 
+        : Card 
+    { 
+        public static Monument card = new Monument();
 
-        private WorkersVillage() : base("Workers Village", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2, plusBuy: 1) { } }
+        private Monument() 
+            : base("Monument", coinCost: 4, isAction: true, plusCoins: 2, plusVictoryToken: 1) 
+        { 
+        } 
+    }
+
+    public class WorkersVillage 
+        : Card 
+    { 
+        public static WorkersVillage card = new WorkersVillage();
+
+        private WorkersVillage() 
+            : base("Workers Village", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2, plusBuy: 1) 
+        { 
+        } 
+    }
 
     public class Bank :
        Card

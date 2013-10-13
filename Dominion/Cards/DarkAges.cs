@@ -10,9 +10,16 @@ namespace Dominion.CardTypes
     using Dominion;
 
     // Shelters
-    public class Necropolis : Card { public static Necropolis card = new Necropolis();
+    public class Necropolis 
+        : Card 
+    { 
+        public static Necropolis card = new Necropolis();
 
-        private Necropolis() : base("Necropolis", coinCost: 1, plusActions: 2, isAction: true, isShelter: true) { } }
+        private Necropolis() 
+            : base("Necropolis", coinCost: 1, plusActions: 2, isAction: true, isShelter: true) 
+        { 
+        } 
+    }
 
     public class Hovel
         : Card
