@@ -15,8 +15,8 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            ComparePlayers(Strategies.ButcherPlazaWatchtower.Player(1), Strategies.BigMoney.Player(2), useShelters:true);
-            CompareStrategyVsAllKnownStrategies(Strategies.ButcherPlazaWatchtower.Player(1), useShelters: true);            
+            ComparePlayers(Strategies.ButcherPlazaWatchtower.Player(), Strategies.BigMoney.Player(), useShelters:true);
+            CompareStrategyVsAllKnownStrategies(Strategies.ButcherPlazaWatchtower.Player(), useShelters: true);            
             
             stopwatch.Stop();
 
@@ -43,11 +43,11 @@ namespace Program
                 if (playerMethodInfo.ContainsGenericParameters)
                     continue;                
 
-                if (playerMethodInfo.GetParameters().Count() < 1 || playerMethodInfo.GetParameters()[0].ParameterType != typeof(int)) {
+                if (playerMethodInfo.GetParameters().Count() > 0) {
                     continue;
                 }
 
-                PlayerAction otherPlayerAction = playerMethodInfo.Invoke(null, new object[]{2}) as PlayerAction;
+                PlayerAction otherPlayerAction = playerMethodInfo.Invoke(null, new object[0]) as PlayerAction;
                 if (otherPlayerAction == null)
                     continue;
 
@@ -175,7 +175,7 @@ namespace Program
                         countbyBucket.AddOneToBucket(scoreDifference);
                         if (winners.Length == 1)
                         {
-                            int winningPlayerIndex = ((PlayerAction)winners[0].Actions).playerIndex - 1;
+                            int winningPlayerIndex = winners[0].Actions == player1 ? 0 : 1; 
                             winnerCount[winningPlayerIndex]++;
                             
                             if (winningPlayerIndex == 1 && showPlayer2Wins)

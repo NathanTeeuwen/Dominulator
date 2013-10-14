@@ -13,17 +13,16 @@ namespace Program
         public static class IronworksGreathallRemodelHuntingGrounds
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : base("IronworksGreathallRemodelHuntingGrounds",
-                            playerNumber,
+                public MyPlayerAction()
+                    : base("IronworksGreathallRemodelHuntingGrounds",                            
                             purchaseOrder: PurchaseOrder(),
                             actionOrder: ActionOrder(),
                             trashOrder: TrashOrder())

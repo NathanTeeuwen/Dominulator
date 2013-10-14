@@ -13,11 +13,10 @@ namespace Program
         public static class Lookout
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "Lookout",
-                            playerNumber,
+                            "Lookout",                            
                             purchaseOrder: PurchaseOrder(),
                             treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
                             actionOrder: ActionOrder(),

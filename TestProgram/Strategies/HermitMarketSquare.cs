@@ -14,17 +14,16 @@ namespace Program
     {
         public static class HermitMarketSquare
         {
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : base("HermitMarketSquare",
-                        playerNumber,
+                public MyPlayerAction()
+                    : base("HermitMarketSquare",                        
                         purchaseOrder: PurchaseOrder(),
                         actionOrder: ActionOrder(TrashOrder()),
                         trashOrder: TrashOrder())

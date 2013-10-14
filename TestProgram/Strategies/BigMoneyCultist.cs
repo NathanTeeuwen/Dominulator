@@ -15,16 +15,15 @@ namespace Program
         public static class BigMoneyCultist
         {
 
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return CustomPlayer(playerNumber);
+                return CustomPlayer();
             }
 
-            public static PlayerAction CustomPlayer(int playerNumber, int secondCultist = 15)
+            public static PlayerAction CustomPlayer(int secondCultist = 15)
             {
                 return new PlayerAction(
-                            "BigMoneyCultist",
-                            playerNumber,
+                            "BigMoneyCultist",                            
                             purchaseOrder: PurchaseOrder(secondCultist));
             }
 

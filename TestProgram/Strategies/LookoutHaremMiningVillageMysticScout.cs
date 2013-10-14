@@ -13,18 +13,17 @@ namespace Program
         public static class LookoutHaremMiningVillageMysticScout
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber)
+                public MyPlayerAction()
                     : base(
-                        "LookoutHaremMiningVillageMysticScout",
-                        playerNumber,
+                        "LookoutHaremMiningVillageMysticScout",                        
                         purchaseOrder: PurchaseOrder(),
                         treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
                         actionOrder: ActionOrder(),

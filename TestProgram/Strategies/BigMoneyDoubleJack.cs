@@ -12,11 +12,10 @@ namespace Program
     {
         public static class BigMoneyDoubleJack
         {
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "BigMoneyDoubleJack",
-                            playerNumber,
+                            "BigMoneyDoubleJack",                            
                             purchaseOrder: PurchaseOrder());
             }
 
@@ -36,11 +35,10 @@ namespace Program
 
         public static class BigMoneyDoubleJackSlog
         {
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "BigMoneyDoubleJackSlog",
-                            playerNumber,
+                            "BigMoneyDoubleJackSlog",                            
                             purchaseOrder: PurchaseOrder());
             }
 

@@ -16,7 +16,7 @@ namespace Program.Simulations
             // for forum topic: http://forum.dominionstrategy.com/index.php?topic=8580.0
             //ComparePlayers(Strategies.FishingVillageChapelPoorHouseTalisman.Player(1), Strategies.BigMoney.Player(2));
             //ComparePlayers(Strategies.FishingVillageChapelPoorHouse.Player(1), Strategies.BigMoney.Player(2));            
-            Program.ComparePlayers(Strategies.GardensBeggarIronworks.Player(1), Strategies.BigMoney.Player(2), numberOfGames: 10000);
+            Program.ComparePlayers(Strategies.GardensBeggarIronworks.Player(), Strategies.BigMoney.Player(), numberOfGames: 10000);
         }
     }
 }

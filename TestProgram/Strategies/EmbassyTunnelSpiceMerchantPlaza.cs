@@ -12,22 +12,21 @@ namespace Program
     {
         public static class EmbassyTunnelSpiceMerchantPlaza
         {
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return CustomPlayer(playerNumber);
+                return CustomPlayer();
             }
 
-            public static PlayerAction CustomPlayer(int playerNumber, bool shouldBuySpiceMerchant = false, bool shouldBuyPlaza = true)
+            public static PlayerAction CustomPlayer(bool shouldBuySpiceMerchant = false, bool shouldBuyPlaza = true)
             {
-                return new MyPlayerAction(playerNumber, shouldBuySpiceMerchant, shouldBuyPlaza);
+                return new MyPlayerAction(shouldBuySpiceMerchant, shouldBuyPlaza);
             }
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber, bool shouldBuySpiceMerchant, bool shouldBuyPlaza)
-                    : base("EmbassyTunnelSpiceMerchantPlaza",
-                            playerNumber,
+                public MyPlayerAction(bool shouldBuySpiceMerchant, bool shouldBuyPlaza)
+                    : base("EmbassyTunnelSpiceMerchantPlaza",                            
                             purchaseOrder: PurchaseOrder(shouldBuySpiceMerchant, shouldBuyPlaza),                            
                             actionOrder: ActionOrder(),                            
                             discardOrder: DiscardOrder())

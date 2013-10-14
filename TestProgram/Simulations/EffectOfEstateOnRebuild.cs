@@ -12,7 +12,7 @@ namespace Program.Simulations
     {
         public static void Run()
         {
-            Program.ComparePlayers(Strategies.RebuildAdvanced.Player(1), Strategies.RebuildAdvanced.Player(2), startingDeckPerPlayer: StartingDecksForRebuildWithEstateAdvantage.StartingDecks);            
+            Program.ComparePlayers(Strategies.RebuildAdvanced.Player(), Strategies.RebuildAdvanced.Player(), startingDeckPerPlayer: StartingDecksForRebuildWithEstateAdvantage.StartingDecks);            
         }
 
         class StartingDecksForRebuildWithEstateAdvantage

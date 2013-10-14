@@ -13,17 +13,16 @@ namespace Program
         public static class IllgottengainsMoneylender
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : base("IllgottengainsMoneylender",
-                            playerNumber,
+                public MyPlayerAction()
+                    : base("IllgottengainsMoneylender",                            
                             purchaseOrder: PurchaseOrder())
                 {
                 }              
@@ -53,17 +52,16 @@ namespace Program
         public static class Illgottengains
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : base("Illgottengains",
-                            playerNumber,
+                public MyPlayerAction()
+                    : base("Illgottengains",                            
                             purchaseOrder: PurchaseOrder())
                 {
                 }

@@ -50,8 +50,8 @@ namespace Program.Simulations
         {
             var gameLogFactory = new GameLogFactory();
 
-            var player1 = Strategies.BigMoneyWithCard.Player(Cards.Witch, 1, cardCount: 2);
-            var player2 = Strategies.BigMoneyWithCard.Player(Cards.Witch, 2, cardCount: 2);
+            var player1 = Strategies.BigMoneyWithCard.Player(Cards.Witch, cardCount: 2);
+            var player2 = Strategies.BigMoneyWithCard.Player(Cards.Witch, cardCount: 2);
 
             var builder = new GameConfigBuilder();
             PlayerAction.SetKingdomCards(builder, player1, player2);
@@ -61,8 +61,8 @@ namespace Program.Simulations
             var gameConfig = builder.ToGameConfig();
 
             Program.ComparePlayers(
-                Strategies.BigMoneyWithCard.Player(Cards.Witch, 1, cardCount: 2),
-                Strategies.BigMoneyWithCard.Player(Cards.Witch, 2, cardCount: 2),
+                Strategies.BigMoneyWithCard.Player(Cards.Witch, cardCount: 2),
+                Strategies.BigMoneyWithCard.Player(Cards.Witch, cardCount: 2),
                 gameConfig,
                 firstPlayerAdvantage: true,                
                 numberOfGames: gameCount,
@@ -133,7 +133,7 @@ namespace Program.Simulations
                 {
                     if (playerState.AllOwnedCards.Where(card => card == Cards.Witch).Any())
                     {
-                        this.was25split[((PlayerAction)playerState.Actions).playerIndex - 1] = true;
+                        this.was25split[PlayerAction.PlayIndexfor(playerState)] = true;
                     }
                 }
             }
@@ -159,7 +159,7 @@ namespace Program.Simulations
 
                 if (gameState.WinningPlayers.Count() > 1)
                 {
-                    int playerIndex = PlayerAction.PlayIndexfor(gameState.WinningPlayers[0].Actions);
+                    int playerIndex = PlayerAction.PlayIndexfor(gameState.WinningPlayers[0]);
                     //winningPlayerWas25++;
                 }
             }

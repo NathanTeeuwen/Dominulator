@@ -13,11 +13,10 @@ namespace Program
         public static class RatsUpgradeBazaar
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "RatsUpgradeBazaar",
-                            playerNumber,
+                            "RatsUpgradeBazaar",                            
                             purchaseOrder: PurchaseOrder(),
                             treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
                             actionOrder: ActionOrder(),

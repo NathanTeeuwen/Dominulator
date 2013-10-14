@@ -25,8 +25,7 @@ namespace Program
         protected readonly ICardPicker defaultActionOrder;
 
         public PlayerAction(
-            string name,
-            int playerIndex,
+            string name,            
             ICardPicker purchaseOrder,
             ICardPicker actionOrder = null,
             bool chooseDefaultActionOnNone = true,
@@ -34,8 +33,7 @@ namespace Program
             ICardPicker discardOrder = null,
             ICardPicker trashOrder = null,
             ICardPicker gainOrder = null)
-        {
-            this.playerIndex = playerIndex;
+        {            
             this.purchaseOrder = purchaseOrder;
             this.actionOrder = actionOrder == null ? Strategies.Default.DefaultActionPlayOrder(purchaseOrder) : actionOrder;
             this.discardOrder = discardOrder == null ? Strategies.Default.DefaultDiscardOrder() : discardOrder;
@@ -47,9 +45,9 @@ namespace Program
             this.defaultActionOrder = Strategies.Default.DefaultActionPlayOrder(purchaseOrder);
         }
 
-        public static int PlayIndexfor(IPlayerAction playerAction)
+        public static int PlayIndexfor(PlayerState playerState)
         {
-            return ((PlayerAction)playerAction).playerIndex;
+            return ((PlayerAction)playerState.Actions).playerIndex;
         }
 
         public override Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)

@@ -17,7 +17,7 @@ namespace Program.Simulations
             for (int i = 0; i < 16; ++i)
             {
                 System.Console.Write("{0}, ", i);
-                Program.ComparePlayers(Strategies.FollowersTest.TestPlayer(1, i), Strategies.BigMoney.Player(2), showCompactScore: true);
+                Program.ComparePlayers(Strategies.FollowersTest.TestPlayer(i), Strategies.BigMoney.Player(), showCompactScore: true);
             }
         }
     }

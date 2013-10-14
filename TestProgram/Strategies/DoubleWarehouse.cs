@@ -13,11 +13,10 @@ namespace Program
         public static class DoubleWarehouse
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "DoubleWarehouse",
-                            playerNumber,
+                            "DoubleWarehouse",                            
                             purchaseOrder: PurchaseOrder(),
                             actionOrder: ActionOrder(),
                             discardOrder: DiscardOrder());

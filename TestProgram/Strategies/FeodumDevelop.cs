@@ -13,11 +13,10 @@ namespace Program
         public static class FeodumDevelop
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "FeodumDevelop",
-                            playerNumber,
+                            "FeodumDevelop",                            
                             purchaseOrder: PurchaseOrder(),
                             actionOrder: ActionOrder(),
                             trashOrder: TrashOrder(),                            

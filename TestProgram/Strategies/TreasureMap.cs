@@ -12,17 +12,16 @@ namespace Program
     {
         public static class TreasureMap
         {            
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : base("TreasureMap",
-                        playerNumber,
+                public MyPlayerAction()
+                    : base("TreasureMap",                        
                         purchaseOrder: PurchaseOrder(),                        
                         actionOrder: ActionOrder())
                 {

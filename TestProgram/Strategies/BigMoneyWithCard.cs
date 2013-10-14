@@ -13,11 +13,10 @@ namespace Program
         public static class BigMoneyWithCard
         {
             
-            public static PlayerAction Player(Card card, int playerNumber, string playerName = null, int cardCount = 1, int afterSilverCount = 0, int afterGoldCount = int.MaxValue)
+            public static PlayerAction Player(Card card, string playerName = null, int cardCount = 1, int afterSilverCount = 0, int afterGoldCount = int.MaxValue)
             {
                 return new PlayerAction(
-                            playerName == null ? "BigMoneyWithCard<" + card.GetType().Name + ">" : playerName,
-                            playerNumber,
+                            playerName == null ? "BigMoneyWithCard<" + card.GetType().Name + ">" : playerName,                            
                             purchaseOrder: PurchaseOrder(card, cardCount, afterSilverCount, afterGoldCount));
             }
 
@@ -48,76 +47,75 @@ namespace Program
         public static class BigMoneyWharf
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return BigMoneyWithCard.Player(Cards.Wharf, playerNumber, "BigMoneyWharf");
+                return BigMoneyWithCard.Player(Cards.Wharf, "BigMoneyWharf");
             }
         }
 
         public static class BigMoneyBridge
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return BigMoneyWithCard.Player(Cards.Bridge, playerNumber, "BigMoneyBridge");
+                return BigMoneyWithCard.Player(Cards.Bridge, "BigMoneyBridge");
             }
         }        
 
         public static class BigMoneySingleSmithy
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return BigMoneyWithCard.Player(Cards.Smithy, playerNumber, "BigMoneySingleSmithy");
+                return BigMoneyWithCard.Player(Cards.Smithy, "BigMoneySingleSmithy");
             }
         }
 
         public static class BigMoneySingleWitch
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return BigMoneyWithCard.Player(Cards.Witch, playerNumber, "BigMoneySingleWitch");
+                return BigMoneyWithCard.Player(Cards.Witch, "BigMoneySingleWitch");
             }
         }
 
         public static class BigMoneyDoubleWitch
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return BigMoneyWithCard.Player(Cards.Witch, playerNumber, "BigMoneyDoubleWitch", cardCount: 2, afterGoldCount: 0);
+                return BigMoneyWithCard.Player(Cards.Witch, "BigMoneyDoubleWitch", cardCount: 2, afterGoldCount: 0);
             }
         }
 
         public static class BigMoneyMoneylender
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return BigMoneyWithCard.Player(Cards.Moneylender, playerNumber, cardCount: 2);
+                return BigMoneyWithCard.Player(Cards.Moneylender, cardCount: 2);
             }
         } 
 
         public static class BigMoneyWithThief            
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return CustomPlayer(playerNumber);                
+                return CustomPlayer();                
             }
 
-            public static PlayerAction CustomPlayer(int playerNumber, int cardCount = 1)
+            public static PlayerAction CustomPlayer(int cardCount = 1)
             {
-                return new MyPlayerAction(playerNumber, cardCount);                            
+                return new MyPlayerAction(cardCount);                            
             }
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber, int cardCount)
-                    : base("Thief",
-                            playerNumber,
+                public MyPlayerAction(int cardCount)
+                    : base("Thief",                           
                             purchaseOrder: PurchaseOrder(cardCount),                            
                             trashOrder: TrashOrder())
                 {
@@ -150,11 +148,10 @@ namespace Program
         public static class BigMoneySingleCardCartographer
         {
             
-            public static PlayerAction Player(Card card, int playerNumber, int cardCount = 1)
+            public static PlayerAction Player(Card card, int cardCount = 1)
             {
                 return new PlayerAction(
-                            "BigMoneySingleCardCartographer",
-                            playerNumber,
+                            "BigMoneySingleCardCartographer",                            
                             purchaseOrder: PurchaseOrder(card, cardCount),                            
                             actionOrder: ActionOrder(card));
             }

@@ -13,17 +13,16 @@ namespace Program
         public static class Rebuild
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : base("Rebuild",
-                        playerNumber,
+                public MyPlayerAction()
+                    : base("Rebuild",                        
                         purchaseOrder: PurchaseOrder(),
                         treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
                         actionOrder: ActionOrder())

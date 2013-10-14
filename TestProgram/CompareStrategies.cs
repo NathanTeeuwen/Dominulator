@@ -18,8 +18,8 @@ namespace Program
             //System.Console.WriteLine("");
             //right.Write(System.Console.Out);
             //System.Console.WriteLine("");
-            PlayerAction leftPlayer = new PlayerAction("Player1", 1, left.ToCardPicker());
-            PlayerAction rightPlayer = new PlayerAction("Player2", 2, right.ToCardPicker());
+            PlayerAction leftPlayer = new PlayerAction("Player1", left.ToCardPicker());
+            PlayerAction rightPlayer = new PlayerAction("Player2", right.ToCardPicker());
             return Program.ComparePlayers(leftPlayer, rightPlayer, numberOfGames: 33, logGameCount:0, showCompactScore:false, showVerboseScore:false);
         }
     }  

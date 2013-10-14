@@ -12,11 +12,10 @@ namespace Program
     {
         public static class GardensBeggarIronworks
         {
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "GardensBeggarIronworks",
-                            playerNumber,
+                            "GardensBeggarIronworks",                            
                             purchaseOrder: PurchaseOrder(),             
                             gainOrder: PurchaseOrder(),
                             actionOrder: ActionOrder(),

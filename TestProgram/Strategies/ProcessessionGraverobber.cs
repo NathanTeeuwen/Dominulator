@@ -12,17 +12,16 @@ namespace Program
     {
         public static class ProcessionGraverobber
         {            
-            private static PlayerAction Player(int playerNumber)
+            private static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : base("ProcessionGraverobber",
-                            playerNumber,
+                public MyPlayerAction()
+                    : base("ProcessionGraverobber",                            
                             purchaseOrder: PurchaseOrder(),
                             actionOrder: ActionOrder(),
                             trashOrder: TrashOrder())

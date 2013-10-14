@@ -28,7 +28,7 @@ namespace Program
         {
             //FindBestStrategy currently finds the following, which is better than BigMoneySimple, but not as good as BigMoney
             //Province(1), Province, Gold, Market(1), Duchy(2), Militia(2), Silver, Estate(1),Workshop(1), Cellar(1),
-            var player1 = new PlayerAction("Player 1", 1,
+            var player1 = new PlayerAction("Player 1",
                 new CardPickByPriority(
                     CardAcceptance.For(Cards.Province),
                     CardAcceptance.For(Cards.Gold),
@@ -38,9 +38,9 @@ namespace Program
                     CardAcceptance.For(Cards.Silver),
                     CardAcceptance.For(Cards.Estate, gameState => Strategies.CountAllOwned(Cards.Militia, gameState) < 1)
                     ));
-            Program.ComparePlayers(player1, Strategies.BigMoneySimple.Player(2), showVerboseScore: true);
-            Program.ComparePlayers(player1, Strategies.BigMoney.Player(2), showVerboseScore: true);
-            Program.ComparePlayers(player1, Strategies.BigMoneySingleSmithy.Player(2), showVerboseScore: true);
+            Program.ComparePlayers(player1, Strategies.BigMoneySimple.Player(), showVerboseScore: true);
+            Program.ComparePlayers(player1, Strategies.BigMoney.Player(), showVerboseScore: true);
+            Program.ComparePlayers(player1, Strategies.BigMoneySingleSmithy.Player(), showVerboseScore: true);
         }        
     }
 }

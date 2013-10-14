@@ -14,17 +14,16 @@ namespace Program
         {
 
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : base( "CaravanBridgeDukeCartographer",
-                            playerNumber,
+                public MyPlayerAction()
+                    : base( "CaravanBridgeDukeCartographer",                            
                             purchaseOrder: PurchaseOrder(),                            
                             actionOrder: ActionOrder())
                 {

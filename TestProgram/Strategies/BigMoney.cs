@@ -12,11 +12,10 @@ namespace Program
     {
         public static class BigMoney
         {
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "BigMoney",
-                            playerNumber,
+                            "BigMoney",                            
                             purchaseOrder: PurchaseOrder());
             }
 
@@ -34,11 +33,10 @@ namespace Program
 
         public static class BigMoneyColony
         {
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "BigMoneyColony",
-                            playerNumber,
+                            "BigMoneyColony",                            
                             purchaseOrder: PurchaseOrder());
             }
 
@@ -67,11 +65,10 @@ namespace Program
     {
         public static class BigMoneySmithyEarlyProvince
         {
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "BigMoneySmithyEarlyProvince",
-                            playerNumber,
+                            "BigMoneySmithyEarlyProvince",                            
                             purchaseOrder: PurchaseOrder());
             }
 
@@ -92,11 +89,10 @@ namespace Program
     {
         public static class BigMoneyCouncilRoomEarlyProvince
         {
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "BigMoneyCouncilRoomEarlyProvince",
-                            playerNumber,
+                            "BigMoneyCouncilRoomEarlyProvince",                            
                             purchaseOrder: PurchaseOrder());
             }
 

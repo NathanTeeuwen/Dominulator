@@ -12,11 +12,10 @@ namespace Program
     {
         public static class Harem
         {
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "Harem",
-                            playerNumber,
+                            "Harem",                            
                             purchaseOrder: PurchaseOrder());
             }
 

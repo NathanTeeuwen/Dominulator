@@ -13,16 +13,15 @@ namespace Program
         public static class BigMoneyDoubleSmithy
         {
 
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return CustomPlayer(playerNumber);
+                return CustomPlayer();
             }
             
-            public static PlayerAction CustomPlayer(int playerNumber, int secondSmithy = 15)
+            public static PlayerAction CustomPlayer(int secondSmithy = 15)
             {
                 return new PlayerAction(
-                            "BigMoneyDoubleSmithy",
-                            playerNumber,
+                            "BigMoneyDoubleSmithy",                            
                             purchaseOrder: PurchaseOrder(secondSmithy));
             }
 

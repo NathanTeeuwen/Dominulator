@@ -15,22 +15,21 @@ namespace Program
         public static class RebuildAdvanced
         {
 
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             public class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : this(playerNumber, "RebuildAdvanced", null, CardAcceptance.AlwaysMatch)                        
+                public MyPlayerAction()
+                    : this("RebuildAdvanced", null, CardAcceptance.AlwaysMatch)                        
                 {
                 }
 
-                public MyPlayerAction(int playerNumber, string strategyName, Card withCard, GameStatePredicate withCardPurchaseCondition)
-                    : base(strategyName,
-                        playerNumber,
+                public MyPlayerAction(string strategyName, Card withCard, GameStatePredicate withCardPurchaseCondition)
+                    : base(strategyName,                        
                         purchaseOrder: PurchaseOrder(withCard, withCardPurchaseCondition),
                         treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
                         actionOrder: ActionOrder(withCard))
@@ -204,17 +203,16 @@ namespace Program
         public static class RebuildJack
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             class MyPlayerAction
                 : RebuildAdvanced.MyPlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : base(playerNumber,
-                           "RebuildJack",
+                public MyPlayerAction()
+                    : base("RebuildJack",
                            Cards.JackOfAllTrades,
                            gameState => CountAllOwned(Cards.JackOfAllTrades, gameState) < 1)
                 {
@@ -225,17 +223,16 @@ namespace Program
         public static class RebuildMonument
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             class MyPlayerAction
                 : RebuildAdvanced.MyPlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : base(playerNumber,
-                           "RebuildMonument",
+                public MyPlayerAction()
+                    : base("RebuildMonument",
                            Cards.Monument,
                            gameState => CountAllOwned(Cards.Monument, gameState) < 2)
                 {

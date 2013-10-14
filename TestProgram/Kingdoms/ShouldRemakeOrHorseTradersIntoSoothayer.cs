@@ -33,9 +33,9 @@ namespace Program.Kingdoms
                 );
 
             //Program.ComparePlayers(Strategies.HorseTraderSoothsayerMinionGreatHall.Player(1), Strategies.HorseTraderSoothsayerMinionGreatHall.Player(2, false), gameConfig);
-            Program.ComparePlayers(Strategies.HorseTraderSoothsayerMinionGreatHall.Player(1), Strategies.BigMoney.Player(2), gameConfig);
-            Program.ComparePlayers(Strategies.RemakeSoothsayer.Player(1), Strategies.BigMoney.Player(2), gameConfig);
-            Program.ComparePlayers(Strategies.RemakeSoothsayer.Player(1), Strategies.HorseTraderSoothsayerMinionGreatHall.Player(2), gameConfig);
+            Program.ComparePlayers(Strategies.HorseTraderSoothsayerMinionGreatHall.Player(), Strategies.BigMoney.Player(), gameConfig);
+            Program.ComparePlayers(Strategies.RemakeSoothsayer.Player(), Strategies.BigMoney.Player(), gameConfig);
+            Program.ComparePlayers(Strategies.RemakeSoothsayer.Player(), Strategies.HorseTraderSoothsayerMinionGreatHall.Player(), gameConfig);
         }
     }
 }
@@ -46,17 +46,16 @@ namespace Program
     {
         public static class HorseTraderSoothsayerMinionGreatHall
         {
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }           
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : base("HorseTraderSoothsayerMinionGreatHall",
-                        playerNumber,
+                public MyPlayerAction()
+                    : base("HorseTraderSoothsayerMinionGreatHall",                        
                         purchaseOrder: PurchaseOrder(),
                         actionOrder: ActionOrder(),
                         trashOrder: TrashOrder())
@@ -140,17 +139,16 @@ namespace Program
     {
         public static class RemakeSoothsayer
         {
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : base("RemakeSoothsayer",
-                        playerNumber,
+                public MyPlayerAction()
+                    : base("RemakeSoothsayer",                        
                         purchaseOrder: PurchaseOrder(),
                         actionOrder: ActionOrder(),
                         trashOrder: TrashOrder())

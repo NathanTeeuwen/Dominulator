@@ -13,11 +13,10 @@ namespace Program
         public static class FollowersTest            
         {
             
-            public static PlayerAction TestPlayer(int playerNumber, int cardCost)
+            public static PlayerAction TestPlayer(int cardCost)
             {
                 return new PlayerAction(
-                            "FollowersTest",
-                            playerNumber,
+                            "FollowersTest",                            
                             purchaseOrder: PurchaseOrder(cardCost),
                             treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
                             actionOrder: ActionOrder(cardCost),

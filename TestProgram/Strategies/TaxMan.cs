@@ -12,17 +12,16 @@ namespace Program
     {
         public static class TaxMan
         {            
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : base("TaxMan",
-                        playerNumber,
+                public MyPlayerAction()
+                    : base("TaxMan",                        
                         purchaseOrder: PurchaseOrder(),                        
                         actionOrder: ActionOrder(),
                         trashOrder: TrashOrder())

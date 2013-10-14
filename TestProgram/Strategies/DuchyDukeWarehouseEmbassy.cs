@@ -13,11 +13,10 @@ namespace Program
         public static class DuchyDukeWarehouseEmbassy
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "DuchyDukeWarehouseEmbassy",
-                            playerNumber,
+                            "DuchyDukeWarehouseEmbassy",                            
                             purchaseOrder: PurchaseOrder(),
                             treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
                             actionOrder: ActionOrder(),

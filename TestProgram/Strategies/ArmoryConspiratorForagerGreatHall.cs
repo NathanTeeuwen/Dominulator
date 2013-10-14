@@ -14,17 +14,16 @@ namespace Program
         public static class ArmoryConspiratorForagerGreatHall
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
-                return new MyPlayerAction(playerNumber);
+                return new MyPlayerAction();
             }
 
             class MyPlayerAction
                 : PlayerAction
             {
-                public MyPlayerAction(int playerNumber)
-                    : base("ArmoryConspiratorForagerGreatHall",
-                        playerNumber,
+                public MyPlayerAction()
+                    : base("ArmoryConspiratorForagerGreatHall",                        
                         purchaseOrder: PurchaseOrder(),                        
                         actionOrder: ActionOrder(),
                         trashOrder: TrashOrder())

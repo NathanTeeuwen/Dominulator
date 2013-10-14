@@ -13,11 +13,10 @@ namespace Program
         public static class DeathCartDoubleWarehouse
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "DeathCartDoubleWarehouse",
-                            playerNumber,
+                            "DeathCartDoubleWarehouse",                            
                             purchaseOrder: PurchaseOrder(),
                             treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
                             actionOrder: ActionOrder(),

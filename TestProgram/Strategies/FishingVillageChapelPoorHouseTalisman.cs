@@ -13,11 +13,10 @@ namespace Program
         public static class FishingVillageChapelPoorHouseTalisman
         {
             
-            public static PlayerAction Player(int playerNumber)
+            public static PlayerAction Player()
             {
                 return new PlayerAction(
-                            "FishingVillageChapelPoorHouseTalisman",
-                            playerNumber,                            
+                            "FishingVillageChapelPoorHouseTalisman",            
                             purchaseOrder: PurchaseOrder(),
                             treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
                             actionOrder: ActionOrder(),

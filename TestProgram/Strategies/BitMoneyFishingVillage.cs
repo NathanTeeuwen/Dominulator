@@ -12,11 +12,10 @@ namespace Program
     {
         public static class BigMoneyWithSilverReplacement
         {
-            public static PlayerAction Player(Card card, string strategyName, int playerNumber, Card secondCard = null, int count = 1)
+            public static PlayerAction Player(Card card, string strategyName, Card secondCard = null, int count = 1)
             {
                 return new PlayerAction(
-                            strategyName,
-                            playerNumber,                            
+                            strategyName,                            
                             purchaseOrder: PurchaseOrder(card, secondCard, count));
             }
 
@@ -39,8 +38,7 @@ namespace Program
             {
                 return BigMoneyWithSilverReplacement.Player(
                             Cards.FishingVillage,
-                            "BigMoneyFishingVillageOverSilver",
-                            playerNumber);
+                            "BigMoneyFishingVillageOverSilver");
             }
         }
 
@@ -50,8 +48,7 @@ namespace Program
             {
                 return BigMoneyWithSilverReplacement.Player(
                             CardTypes.TestCards.FishingVillageAvailableForDeckCycle.card,
-                            "BigMoneyFishingVillageAvailableForDeckCycle",
-                            playerNumber);
+                            "BigMoneyFishingVillageAvailableForDeckCycle");
             }
         }
 
@@ -61,8 +58,7 @@ namespace Program
             {
                 return BigMoneyWithSilverReplacement.Player(
                             CardTypes.TestCards.FishingVillageEmptyDuration.card,
-                            "BigMoneyFishingVillageEmptyDuration",
-                            playerNumber);
+                            "BigMoneyFishingVillageEmptyDuration");
             }
         }
     }
