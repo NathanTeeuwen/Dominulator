@@ -247,7 +247,7 @@ namespace Dominion
         internal void MoveCardFromBottomOfDeckToTop()
         {
             this.deck.MoveBottomCardToTop();
-        }
+        }        
 
         internal void LookAtCardsFromDeck(int cardCount)
         {
@@ -1014,7 +1014,7 @@ namespace Dominion
         internal void RequestPlayerTrashLookedAtCard(GameState gameState)
         {
             RequestPlayerTrashRevealedCard(gameState);
-        }
+        }       
 
         internal void RequestPlayerTrashRevealedCard(GameState gameState)
         {

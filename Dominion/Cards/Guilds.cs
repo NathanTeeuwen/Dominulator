@@ -21,7 +21,14 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            currentPlayer.RevealCardsFromDeck(3);
+            Card cardType = gameState.players.PlayerLeft.actions.BanCardForCurrentPlayerRevealedCards(gameState);
+            if (!currentPlayer.cardsBeingRevealed.HasCard(cardType))
+            {
+                throw new Exception("Must ban a card currently being revealed");
+            }
+            currentPlayer.MoveRevealedCardToDiscard(cardType, gameState);
+            currentPlayer.MoveAllRevealedCardsToHand();
         }
     }
 
@@ -164,7 +171,24 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+            if (revealedCard.isAction)
+            {
+                currentPlayer.cardsBeingRevealed.RemoveCard(revealedCard);
+                currentPlayer.DoPlayAction(revealedCard, gameState);
+            }
+            else
+            {
+                currentPlayer.MoveRevealedCardToTopOfDeck();
+            }
+        }
+
+        public override void OverpayOnPurchase(PlayerState currentPlayer, GameState gameState, int overpayAmount)
+        {
+            for (int i = 0; i < overpayAmount; ++i)
+            {
+                currentPlayer.RequestPlayerTopDeckCardFromDiscard(gameState, isOptional: false);
+            }            
         }
     }    
 
