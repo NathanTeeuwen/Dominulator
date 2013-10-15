@@ -202,9 +202,11 @@ namespace Dominion
             // by default, all cards are affected by attack
             return false;
         }
-
-        virtual public void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        
+        // return true if the card should end up in the trash
+        virtual public bool DoSpecializedTrash(PlayerState selfPlayer, GameState gameState)
         {
+            return true;
         }
 
         virtual public void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)

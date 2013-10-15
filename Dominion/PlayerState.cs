@@ -542,11 +542,13 @@ namespace Dominion
 
         internal void MoveCardToTrash(Card card, GameState gameState)
         {            
-            this.gameLog.PlayerTrashedCard(this, card);
-            gameState.trash.AddCard(card);
+            this.gameLog.PlayerTrashedCard(this, card);            
             this.gameLog.PushScope();
 
-            card.DoSpecializedTrash(gameState.players.CurrentPlayer, gameState);
+            if (card.DoSpecializedTrash(this, gameState))
+            {
+                gameState.trash.AddCard(card);
+            }
 
             // cards in hand react to trashing.
             if (this.ownsCardWithSpecializedActionOnTrashWhileInHand)

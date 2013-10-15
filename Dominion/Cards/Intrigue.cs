@@ -347,13 +347,13 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Sabateur
+    public class Saboteur
        : Card
     {
-        public static Sabateur card = new Sabateur();
+        public static Saboteur card = new Saboteur();
 
-        private Sabateur()
-            : base("Sabateur", coinCost: 5, isAttack: true, isAction: true)
+        private Saboteur()
+            : base("Saboteur", coinCost: 5, isAttack: true, isAction: true)
         {
         }
 

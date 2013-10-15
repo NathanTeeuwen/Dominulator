@@ -68,12 +68,7 @@ namespace Program
 
         public override Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            var self = gameState.Self;
-
-            if (!(self.Hand.HasCard(acceptableCard)))
-            {
-                return null;
-            }
+            var self = gameState.Self;      
 
             Card result = this.actionOrder.GetPreferredCard(
                 gameState,

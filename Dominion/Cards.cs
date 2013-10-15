@@ -168,7 +168,7 @@
         public static readonly CardTypes.RuinedMarket RuinedMarket = CardTypes.RuinedMarket.card;
         public static readonly CardTypes.RuinedVillage RuinedVillage = CardTypes.RuinedVillage.card;
         public static readonly CardTypes.Ruins Ruins = CardTypes.Ruins.card;
-        public static readonly CardTypes.Sabateur Sabateur = CardTypes.Sabateur.card;
+        public static readonly CardTypes.Saboteur Saboteur = CardTypes.Saboteur.card;
         public static readonly CardTypes.Sage Sage = CardTypes.Sage.card;
         public static readonly CardTypes.Salvager Salvager = CardTypes.Salvager.card;
         public static readonly CardTypes.Scavenger Scavenger = CardTypes.Scavenger.card;

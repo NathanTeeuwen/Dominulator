@@ -54,9 +54,11 @@ namespace Dominion.CardTypes
 
         }
 
-        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        public override bool DoSpecializedTrash(PlayerState selfPlayer, GameState gameState)
         {
-            currentPlayer.DrawAdditionalCardsIntoHand(1);
+            selfPlayer.DrawAdditionalCardsIntoHand(1);
+
+            return true;
         }
     }
 
@@ -297,12 +299,14 @@ namespace Dominion.CardTypes
             }
         }
 
-        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        public override bool DoSpecializedTrash(PlayerState selfPlayer, GameState gameState)
         {
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, 
-                card => card.CurrentCoinCost(currentPlayer) < this.CurrentCoinCost(currentPlayer) &&
+            selfPlayer.RequestPlayerGainCardFromSupply(gameState, 
+                card => card.CurrentCoinCost(selfPlayer) < this.CurrentCoinCost(selfPlayer) &&
                         card.potionCost == 0, 
                 "Must gain a card cheaper than this");
+
+            return true;
         }
     }        
 
@@ -387,9 +391,11 @@ namespace Dominion.CardTypes
             currentPlayer.RequestPlayerPlayActionFromHand(gameState, card => card == Cultist.card, isOptional: true);            
         }
 
-        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        public override bool DoSpecializedTrash(PlayerState selfPlayer, GameState gameState)
         {
-            currentPlayer.DrawAdditionalCardsIntoHand(3);
+            selfPlayer.DrawAdditionalCardsIntoHand(3);
+
+            return true;
         }
     }
 
@@ -432,9 +438,11 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        public override bool DoSpecializedTrash(PlayerState selfPlayer, GameState gameState)
         {
-            currentPlayer.GainCardsFromSupply(gameState, Cards.Silver, 3);
+            selfPlayer.GainCardsFromSupply(gameState, Cards.Silver, 3);
+
+            return true;
         }
 
         private static int CountVictoryPoints(PlayerState player)
@@ -480,9 +488,12 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        public override bool DoSpecializedTrash(PlayerState selfPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            gameState.gameLog.PlayerPutCardInHand(selfPlayer, this);
+            selfPlayer.hand.AddCard(this);
+
+            return false;
         }
     }
 
@@ -598,16 +609,18 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        public override bool DoSpecializedTrash(PlayerState selfPlayer, GameState gameState)
         {
-            Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, acceptableCard => acceptableCard == Cards.Duchy || acceptableCard == Cards.Estate, "Choose Duchy or 3 Estate");
+            Card gainedCard = selfPlayer.RequestPlayerGainCardFromSupply(gameState, acceptableCard => acceptableCard == Cards.Duchy || acceptableCard == Cards.Estate, "Choose Duchy or 3 Estate");
             if (gainedCard == null)
-                return;
+                return true;
             
             if (gainedCard == Cards.Estate)
             {
-                currentPlayer.GainCardsFromSupply(gameState, Cards.Estate, 2); // gain 2 more for total of 3.                
+                selfPlayer.GainCardsFromSupply(gameState, Cards.Estate, 2); // gain 2 more for total of 3.                
             }
+
+            return true;
         }
     }
 
@@ -844,9 +857,11 @@ namespace Dominion.CardTypes
             }
         }
 
-        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        public override bool DoSpecializedTrash(PlayerState selfPlayer, GameState gameState)
         {
-            currentPlayer.DrawAdditionalCardsIntoHand(1);
+            selfPlayer.DrawAdditionalCardsIntoHand(1);
+
+            return true;
         }
     }
 
@@ -978,9 +993,11 @@ namespace Dominion.CardTypes
             }
         }
 
-        public override void DoSpecializedTrash(PlayerState currentPlayer, GameState gameState)
+        public override bool DoSpecializedTrash(PlayerState selfPlayer, GameState gameState)
         {
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.isAttack, "Must gain an attack card", isOptional: false);
+            selfPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.isAttack, "Must gain an attack card", isOptional: false);
+
+            return true;
         }
     }
 
