@@ -493,29 +493,13 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            ApplySpyEffect(currentPlayer, currentPlayer, gameState);
+            currentPlayer.RequestPlayerInspectTopOfDeckForDiscard(currentPlayer, gameState);
         }
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            ApplySpyEffect(otherPlayer, currentPlayer, gameState);
-        }
-
-        private static void ApplySpyEffect(PlayerState playerAffected, PlayerState decidingPlayer, GameState gameState)
-        {
-            Card revealedCard = playerAffected.DrawAndRevealOneCardFromDeck();
-            if (revealedCard != null)
-            {
-                if (decidingPlayer.actions.ShouldPlayerDiscardCardFromDeck(gameState, playerAffected, revealedCard))
-                {
-                    playerAffected.MoveRevealedCardsToDiscard(gameState);
-                }
-                else
-                {
-                    playerAffected.MoveRevealedCardToTopOfDeck(revealedCard);
-                }
-            }
-        }
+            otherPlayer.RequestPlayerInspectTopOfDeckForDiscard(currentPlayer, gameState);            
+        }        
     }
 
     public class Thief

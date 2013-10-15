@@ -134,18 +134,7 @@ namespace Dominion.CardTypes
         {
             foreach (PlayerState player in gameState.players.AllPlayers)
             {
-                Card card = player.DrawAndLookAtOneCardFromDeck();
-                if (card != null)
-                {
-                    if (player.actions.ShouldPlayerDiscardCardFromDeck(gameState, player, card))
-                    {
-                        player.MoveLookedAtCardsToDiscard(gameState);
-                    }
-                    else
-                    {
-                        player.MoveLookedAtCardToTopOfDeck(card);
-                    }
-                }
+                player.RequestPlayerInspectTopOfDeckForDiscard(player, gameState, shouldReveal:false);                
             }
         }
     }
@@ -318,24 +307,9 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.GainCardFromSupply(Silver.card, gameState);
-            
-            // look at the top card of the deck and discard or put it back
-            Card card = currentPlayer.DrawAndLookAtOneCardFromDeck();
-            if (card != null)
-            {
-                if (currentPlayer.actions.ShouldPlayerDiscardCardFromDeck(gameState, currentPlayer, card))
-                {
-                    currentPlayer.gameLog.PushScope();
-                    currentPlayer.MoveLookedAtCardsToDiscard(gameState);
-                    currentPlayer.gameLog.PlayerDiscardCard(currentPlayer, card);
-                    currentPlayer.gameLog.PopScope();
-                }
-                else
-                {
-                    currentPlayer.MoveLookedAtCardToTopOfDeck(card);
-                }
-            }
 
+            // look at the top card of the deck and discard or put it back
+            currentPlayer.RequestPlayerInspectTopOfDeckForDiscard(currentPlayer, gameState, shouldReveal: false);            
             currentPlayer.DrawUntilCountInHand(5);
 
             currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCard => !acceptableCard.isTreasure, isOptional: true);

@@ -111,7 +111,7 @@ namespace Dominion.CardTypes
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
-        {
+        {            
  	         throw new NotImplementedException();
         }
     }
@@ -180,8 +180,20 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
- 	         throw new NotImplementedException();
+            currentPlayer.RequestPlayerInspectTopOfDeckForDiscard(currentPlayer, gameState);
+            while (true)
+            {
+                Card card = currentPlayer.DrawAndRevealOneCardFromDeck();
+                if (card == null || !card.isAction)
+                    break;
+            }
+            currentPlayer.MoveAllRevealedCardsToHand();
         }
+
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
+            otherPlayer.RequestPlayerInspectTopOfDeckForDiscard(currentPlayer, gameState);            
+        }        
     }
 
     public class Transmute

@@ -940,6 +940,36 @@ namespace Dominion
             return cardDiscardedCount;
         }
 
+        internal void RequestPlayerInspectTopOfDeckForDiscard(PlayerState decidingPlayer, GameState gameState, bool shouldReveal = true)
+        {
+            Card movedCard = shouldReveal ? this.DrawAndRevealOneCardFromDeck() : this.DrawAndLookAtOneCardFromDeck();
+            gameState.gameLog.PushScope();
+            if (decidingPlayer.actions.ShouldPlayerDiscardCardFromDeck(gameState, this, movedCard))
+            {
+                if (shouldReveal)
+                {
+                    this.MoveRevealedCardToDiscard(movedCard, gameState);
+                }
+                else
+                {
+                    this.MoveLookedAtCardsToDiscard(gameState);
+                }
+                gameState.gameLog.PlayerDiscardCard(this, movedCard);
+            }
+            else
+            {
+                if (shouldReveal)
+                {
+                    this.MoveRevealedCardToTopOfDeck();
+                }
+                else
+                {
+                    this.MoveLookedAtCardToTopOfDeck();
+                }                
+            }
+            gameState.gameLog.PopScope();
+        }
+
         internal void RequestPlayerDiscardDownToCountInHand(GameState gameState, int count)
         {
             while (this.hand.Count > count)
