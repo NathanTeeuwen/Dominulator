@@ -147,7 +147,8 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
- 	         throw new NotImplementedException();
+            int stoneValue = (currentPlayer.CardsInDeck.Count + currentPlayer.discard.Count) / 5;
+            currentPlayer.AddCoins(stoneValue); 
         }
     }
 
