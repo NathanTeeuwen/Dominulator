@@ -576,9 +576,7 @@ namespace Dominion.CardTypes
         public new DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
             if (currentPlayer.actions.ShouldRevealCardFromHand(gameState, this))
-            {
-                // how does the player know what card is being asked about?
-                // throw new NotImplementedException
+            {                
                 return currentPlayer.RequestPlayerChooseTrashOrTopDeck(gameState, gainedCard);
             }
             else

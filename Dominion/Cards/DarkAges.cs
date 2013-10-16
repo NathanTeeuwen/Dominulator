@@ -822,13 +822,16 @@ namespace Dominion.CardTypes
         {
             Card cardToPlay = currentPlayer.RequestPlayerChooseCardToRemoveFromHandForPlay(gameState, acceptableCard => acceptableCard.isAction, isTreasure: false, isAction: true, isOptional: true);
             if (cardToPlay != null)
-            {
+            {                
                 currentPlayer.DoPlayAction(cardToPlay, gameState, countTimes: 2);
-                currentPlayer.MoveCardFromPlayToTrash(gameState);
+                currentPlayer.MoveCardFromPlayedAreaToTrash(cardToPlay, gameState);
 
                 currentPlayer.RequestPlayerGainCardFromSupply(gameState,
-                    acceptableCard => acceptableCard.CurrentCoinCost(currentPlayer) == cardToPlay.CurrentCoinCost(currentPlayer) && acceptableCard.potionCost == cardToPlay.potionCost,
-                    "must gain a card costing exactly one more than the trashed card");
+                    acceptableCard => 
+                        acceptableCard.CurrentCoinCost(currentPlayer) == cardToPlay.CurrentCoinCost(currentPlayer) + 1 && 
+                        acceptableCard.potionCost == cardToPlay.potionCost &&
+                        acceptableCard.isAction,
+                    "must gain an action card costing exactly one more than the trashed card");
             }
         }
     }

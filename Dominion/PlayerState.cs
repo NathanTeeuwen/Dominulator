@@ -320,13 +320,14 @@ namespace Dominion
             {
                 throw new Exception("Can't play a card that isn't a action");
             }
-
-            this.gameLog.PlayedCard(this, currentCard);
-            this.gameLog.PushScope();
+            
             this.cardsBeingPlayed.AddCardToTop(currentCard);
             
             for (int i = 0; i < countTimes; ++i)
             {
+                this.gameLog.PlayedCard(this, currentCard);
+                this.gameLog.PushScope();
+
                 this.AddActions(currentCard.plusAction);                
                 this.AddBuys(currentCard.plusBuy);
                 this.AddCoins(currentCard.plusCoin);
@@ -344,11 +345,11 @@ namespace Dominion
                 {
                     AttackOtherPlayers(gameState, currentCard.DoSpecializedAttack);                    
                 }
+
+                this.gameLog.PopScope();
             }
 
-            CardHasBeenPlayed();
-
-            this.gameLog.PopScope();
+            CardHasBeenPlayed();            
         }
 
         internal delegate void AttackAction(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState);
@@ -514,6 +515,15 @@ namespace Dominion
 
             this.cardsBeingPlayed.AddCardToTop(null);
             return wasReturned;
+        }
+
+        internal void MoveCardFromPlayedAreaToTrash(Card card, GameState gameState)
+        {            
+            Card cardInPlay = this.cardsPlayed.RemoveCard(card);
+            if (cardInPlay != null)
+            {
+                MoveCardToTrash(cardInPlay, gameState);
+            }                   
         }
 
         internal bool MoveCardFromPlayToTrash(GameState gameState)
@@ -760,9 +770,8 @@ namespace Dominion
             }
 
             this.GainCard(gameState, cardFromTrash, DeckPlacement.Trash, defaultLocation, GainReason.Gain);
-            Card gainedCard = gameState.PlayerGainCardFromSupply(cardType, gameState.players.CurrentPlayer, defaultLocation);
 
-            return gainedCard;            
+            return cardFromTrash;            
         }
 
         internal Card RequestPlayerGainCardFromSupply(GameState gameState, CardPredicate acceptableCard, string description, bool isOptional = false, DeckPlacement defaultLocation = DeckPlacement.Discard)

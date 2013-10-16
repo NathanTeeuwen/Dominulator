@@ -103,7 +103,7 @@ namespace Dominion
                 var parent = this.parent;
                 while (parent != null)
                 {
-                    this.count += other.count;
+                    parent.count += other.count;
                     parent = parent.parent;
                 }
             }
@@ -133,8 +133,8 @@ namespace Dominion
             var parent = this.parent;
             while (parent != null)
             {
-                this.parent.mapGameCardIndexToCount[indexForCard] -= 1;
-                this.parent.count--;
+                parent.mapGameCardIndexToCount[indexForCard] -= 1;
+                parent.count--;
                 parent = parent.parent;
             }  
 

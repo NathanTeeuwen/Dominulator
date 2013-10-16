@@ -404,14 +404,34 @@ namespace Program
             return result;
         }
 
+        public override Card GetCardFromTrashToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        {
+            var self = gameState.Self;
+
+            Card result = this.gainOrder.GetPreferredCard(
+                gameState,
+                card => acceptableCard(card) && gameState.trash.HasCard(card));
+
+            // warning, strategy didnt' include what to, try to do a reasonable default.
+            if (result == null && !isOptional)
+            {
+                result = gameState.trash.Where(c => acceptableCard(c))
+                                     .OrderBy(c => c, new CompareCardByFirstToGain())
+                                     .FirstOrDefault();
+            }
+
+            return result;
+        }
+
         public override Card GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             var self = gameState.Self;
 
             Card result = this.gainOrder.GetPreferredCard(
                 gameState,
-                card => acceptableCard(card) && gameState.GetPile(card).Any());
+                card => acceptableCard(card) && gameState.GetPile(card).Any);
 
+            // do a reasonable default for gainning copper on ill gotten gain
             if (result == null &&
                 acceptableCard(Cards.Copper) &&
                 Strategies.CardBeingPlayedIs(Cards.IllGottenGains, gameState))

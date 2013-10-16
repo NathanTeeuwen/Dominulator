@@ -12,7 +12,7 @@ namespace Program
     {
         public static class ProcessionGraverobber
         {            
-            private static PlayerAction Player()
+            public static PlayerAction Player()
             {
                 return new MyPlayerAction();
             }
@@ -24,7 +24,8 @@ namespace Program
                     : base("ProcessionGraverobber",                            
                             purchaseOrder: PurchaseOrder(),
                             actionOrder: ActionOrder(),
-                            trashOrder: TrashOrder())
+                            trashOrder: TrashOrder(),
+                            chooseDefaultActionOnNone:false)
                 {
                 }
 
@@ -60,11 +61,12 @@ namespace Program
             {
                 return new CardPickByPriority(
                            CardAcceptance.For(Cards.Province),
-                           CardAcceptance.For(Cards.Graverobber),
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 6),                           
                            CardAcceptance.For(Cards.Militia, 1),
-                           CardAcceptance.For(Cards.Feast),
+                           CardAcceptance.For(Cards.Procession, 1),
+                           CardAcceptance.For(Cards.Graverobber),
+                           CardAcceptance.For(Cards.Feast, 1, gameState => CountAllOwned(Cards.Procession, gameState) > 0),
                            CardAcceptance.For(Cards.Procession),
-                           CardAcceptance.For(Cards.Silver, 1),
                            CardAcceptance.For(Cards.Village));
             }
 
@@ -72,13 +74,19 @@ namespace Program
             {
                 return new CardPickByPriority(
                            CardAcceptance.For(Cards.Procession),
-                           CardAcceptance.For(Cards.Graverobber, gameState => CardBeingPlayedIs(Cards.Procession, gameState)),
+                           CardAcceptance.For(Cards.Village, gameState => CardBeingPlayedIs(Cards.Procession, gameState) && gameState.Self.AvailableActions == 0),
                            CardAcceptance.For(Cards.Feast, gameState => CardBeingPlayedIs(Cards.Procession, gameState)),
+                           CardAcceptance.For(Cards.Graverobber, gameState => CardBeingPlayedIs(Cards.Procession, gameState) && BenefitFromGraverobber(gameState)),
                            CardAcceptance.For(Cards.Village),
-                           CardAcceptance.For(Cards.Graverobber),
-                           CardAcceptance.For(Cards.Militia, 1),
-                           CardAcceptance.For(Cards.Feast),                           
-                           CardAcceptance.For(Cards.Silver, 1));
+                           CardAcceptance.For(Cards.Graverobber, BenefitFromGraverobber),
+                           CardAcceptance.For(Cards.Militia),
+                           CardAcceptance.For(Cards.Feast));
+            }
+
+            private static bool BenefitFromGraverobber(GameState gameState)
+            {
+                return gameState.trash.HasCard(c => CardTypes.Graverobber.CardValidToGainFromTrash(c, gameState.Self)) || 
+                       gameState.Self.Hand.CountWhere( c => CardTypes.Graverobber.CardValidToTrash(c)) > 1;
             }
 
             private static ICardPicker TrashOrder()

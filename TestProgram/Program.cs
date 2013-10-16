@@ -13,10 +13,10 @@ namespace Program
         static void Main()
         {
             var stopwatch = new System.Diagnostics.Stopwatch();
-            stopwatch.Start();
+            stopwatch.Start();                       
 
-            ComparePlayers(Strategies.ButcherPlazaWatchtower.Player(), Strategies.BigMoney.Player(), useShelters:true);
-            CompareStrategyVsAllKnownStrategies(Strategies.ButcherPlazaWatchtower.Player(), useShelters: true);            
+            ComparePlayers(Strategies.ProcessionGraverobber.Player(), Strategies.BigMoney.Player());
+            CompareStrategyVsAllKnownStrategies(Strategies.ProcessionGraverobber.Player());            
             
             stopwatch.Stop();
 
@@ -78,6 +78,7 @@ namespace Program
             PlayerAction player2,
             bool useShelters = false,
             bool useColonyAndPlatinum = false,
+            StartingCardSplit split = StartingCardSplit.Random,
             bool firstPlayerAdvantage = false,
             IEnumerable<CardCountPair>[] startingDeckPerPlayer = null,
             bool shouldParallel = true,
@@ -95,6 +96,7 @@ namespace Program
 
             builder.useColonyAndPlatinum = useColonyAndPlatinum;
             builder.useShelters = useShelters;
+            builder.CardSplit = split;
 
             if (startingDeckPerPlayer != null)
                 builder.SetStartingDeckPerPlayer(startingDeckPerPlayer);
