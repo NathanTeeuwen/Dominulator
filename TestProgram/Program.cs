@@ -13,10 +13,10 @@ namespace Program
         static void Main()
         {
             var stopwatch = new System.Diagnostics.Stopwatch();
-            stopwatch.Start();                       
+            stopwatch.Start();
 
-            ComparePlayers(Strategies.ProcessionGraverobber.Player(), Strategies.BigMoney.Player());
-            CompareStrategyVsAllKnownStrategies(Strategies.ProcessionGraverobber.Player());            
+            ComparePlayers(Strategies.KingsCourtRabbleExpandFarmingVillage.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum:true);
+            CompareStrategyVsAllKnownStrategies(Strategies.KingsCourtRabbleExpandFarmingVillage.Player());
             
             stopwatch.Stop();
 

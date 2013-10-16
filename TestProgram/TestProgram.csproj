@@ -60,6 +60,7 @@
     <Compile Include="Strategies\BigMoneyCultist.cs" />
     <Compile Include="Strategies\BigMoneyDelayed.cs" />
     <Compile Include="Strategies\BigMoneyDoubleSmithy.cs" />
+    <Compile Include="Strategies\KingsCourtRabbleExpandVillage.cs" />
     <Compile Include="Strategies\DoubleWarehouse.cs" />
     <Compile Include="Strategies\HermitMarketSquare.cs" />
     <Compile Include="Strategies\IllgottengainsMoneylender.cs" />

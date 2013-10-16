@@ -52,6 +52,13 @@ namespace Program
                         // otherwise gain whatever u can from the trash
                         return PlayerActionChoice.GainCard;
                     }
+                    else if (CardBeingPlayedIs(Cards.Squire, gameState))
+                    {
+                        if (gameState.Self.AvailableActions == 0)
+                            return PlayerActionChoice.PlusAction;
+                        else
+                            return PlayerActionChoice.PlusBuy;
+                    }
 
                     return base.ChooseBetween(gameState, acceptableChoice);
                 }
@@ -61,23 +68,26 @@ namespace Program
             {
                 return new CardPickByPriority(
                            CardAcceptance.For(Cards.Province),
-                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 6),                           
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 6),
                            CardAcceptance.For(Cards.Militia, 1),
                            CardAcceptance.For(Cards.Procession, 1),
                            CardAcceptance.For(Cards.Graverobber),
                            CardAcceptance.For(Cards.Feast, 1, gameState => CountAllOwned(Cards.Procession, gameState) > 0),
                            CardAcceptance.For(Cards.Procession),
-                           CardAcceptance.For(Cards.Village));
+                           CardAcceptance.For(Cards.Village)); 
+                           //CardAcceptance.For(Cards.Squire));
             }
 
             private static ICardPicker ActionOrder()
             {
                 return new CardPickByPriority(
                            CardAcceptance.For(Cards.Procession),
+                           CardAcceptance.For(Cards.Squire, gameState => CardBeingPlayedIs(Cards.Procession, gameState)),
                            CardAcceptance.For(Cards.Village, gameState => CardBeingPlayedIs(Cards.Procession, gameState) && gameState.Self.AvailableActions == 0),
                            CardAcceptance.For(Cards.Feast, gameState => CardBeingPlayedIs(Cards.Procession, gameState)),
                            CardAcceptance.For(Cards.Graverobber, gameState => CardBeingPlayedIs(Cards.Procession, gameState) && BenefitFromGraverobber(gameState)),
                            CardAcceptance.For(Cards.Village),
+                           CardAcceptance.For(Cards.Squire),
                            CardAcceptance.For(Cards.Graverobber, BenefitFromGraverobber),
                            CardAcceptance.For(Cards.Militia),
                            CardAcceptance.For(Cards.Feast));

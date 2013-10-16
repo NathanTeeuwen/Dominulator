@@ -57,6 +57,7 @@ namespace Dominion
         public CollectionCards CardsInDeck { get { return this.deck; } }
         public int TurnNumber { get { return this.numberOfTurnsPlayed; } }
         public Card CurrentCardBeingPlayed { get { return this.cardsBeingPlayed.TopCard(); } }
+        public CollectionCards CardsBeingPlayed { get { return this.cardsPlayed; } }
         public int PlayerIndex { get { return this.playerIndex; } }
 
         public int ExpectedCoinValueAtEndOfTurn { get { return this.AvailableCoins + this.hand.Where(card => card.isTreasure).Select(card => card.plusCoin).Sum(); } }

@@ -110,6 +110,11 @@ namespace Program
             return result;
         }
 
+        public override Card BanCardForCurrentPlayerPurchase(GameState gameState)
+        {
+            return Cards.Province;
+        }        
+
         public override Card BanCardForCurrentPlayerRevealedCards(GameState gameState)
         {
             return gameState.players.CurrentPlayer.CardsBeingRevealed.OrderBy(card => card, new CompareCardForBanning(gameState)).FirstOrDefault();

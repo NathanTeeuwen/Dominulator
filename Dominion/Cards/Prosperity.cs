@@ -129,7 +129,7 @@ namespace Dominion.CardTypes
         public static Contraband card = new Contraband();
 
         private Contraband()
-            : base("Contraband", coinCost: 5, plusCoins: 3, isTreasure: true)
+            : base("Contraband", coinCost: 5, plusCoins: 3, plusBuy:1, isTreasure: true)
         {
         }
 
