@@ -472,17 +472,25 @@ namespace Dominion.CardTypes
         }
 
         public override void DoSpecializedDurationActionAtBeginningOfTurn(PlayerState currentPlayer, GameState gameState)
-        {
-            // TODO
-            throw new NotImplementedException();
+        {    
+            // intentionally left empty.
+            // an action is added conditionally on the state of the players hand in the previous turn.
+            // still needs to be a duration card so that the tactician stays in play.
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            // TODO
-            throw new NotImplementedException();
-            //currentPlayer.DiscardHand();
-        }
+            if (currentPlayer.hand.Any)
+            {
+                currentPlayer.DiscardHand(gameState);
+                currentPlayer.actionsToExecuteAtBeginningOfNextTurn.Add(delegate()
+                {
+                    currentPlayer.DrawAdditionalCardsIntoHand(5);
+                    currentPlayer.AddBuys(1);
+                    currentPlayer.AddActions(1);
+                });
+            }
+        }        
     }
 
     public class TreasureMap
