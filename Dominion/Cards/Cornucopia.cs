@@ -470,6 +470,7 @@ namespace Dominion.CardTypes
                 case PlayerActionChoice.PlusCoin: currentPlayer.AddCoins(2); break;
                 case PlayerActionChoice.GainCard: currentPlayer.GainCardsFromSupply(gameState, Cards.Silver, 4); break;
                 default: throw new Exception();
+            }
         }
     }
 

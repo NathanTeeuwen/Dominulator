@@ -31,6 +31,7 @@ namespace Dominion
         // all of the cards the player owns.  Always move from one list to the other
         internal ListOfCards deck;
         internal BagOfCards discard;
+        internal BagOfCards cardsSetAside;
         internal ListOfCards cardsBeingPlayed;  // a stack for recursion
         internal BagOfCards cardsBeingRevealed;
         internal BagOfCards hand;        
@@ -97,6 +98,7 @@ namespace Dominion
             this.cardsToReturnToHandAtStartOfTurn = new BagOfCards(gameSubset, this.allOwnedCards);
             this.cardToPass = new SingletonCardHolder(this.allOwnedCards);
             this.cardBeingDiscarded = new ListOfCards(gameSubset, this.allOwnedCards);
+            this.cardsSetAside = new BagOfCards(gameSubset, this.allOwnedCards);
             
             
             this.turnCounters = new PlayerTurnCounters(gameSubset);
@@ -1544,6 +1546,11 @@ namespace Dominion
         {
             // trigger discard effects
             MoveAllCardsToDiscard(this.cardsBeingRevealed, gameState, DeckPlacement.Revealed);
+        }
+
+        internal void MoveRevealedCardsToSetAside()
+        {
+            this.cardsSetAside.MoveAllCardsFrom(this.cardsBeingRevealed);
         }
 
         internal void MoveRevealedCardsToDiscard(CardPredicate predicate, GameState gameState)

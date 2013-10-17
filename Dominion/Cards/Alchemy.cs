@@ -111,8 +111,60 @@ namespace Dominion.CardTypes
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
-        {            
- 	         throw new NotImplementedException();
+        {
+            gameState.gameLog.PushScope();
+
+            Card actionOne = DrawAndRevealTillFindAnActionIsntGolem(currentPlayer, gameState);            
+            Card actionTwo = DrawAndRevealTillFindAnActionIsntGolem(currentPlayer, gameState);
+            
+            currentPlayer.MoveRevealedCardsToDiscard(cardToMove => !cardToMove.Equals(actionOne) && !cardToMove.Equals(actionTwo), gameState);
+            // set the cards asside in case golem plays other cards that also must be revealed.
+            currentPlayer.MoveRevealedCardsToSetAside();
+
+            if (actionOne != null && actionTwo != null)
+            {
+                Card cardToPlayFirst = currentPlayer.actions.ChooseCardToPlayFirst(gameState, actionOne, actionTwo);
+                if (cardToPlayFirst != actionOne && cardToPlayFirst != actionTwo)
+                {
+                    throw new Exception("Must pick one of the actions to player first");
+                }
+
+                // swap order;
+                if (cardToPlayFirst == actionTwo)
+                {
+                    actionTwo = actionOne;
+                    actionOne = cardToPlayFirst;
+                }
+            }
+
+            if (actionOne != null)
+            {                
+                currentPlayer.cardsSetAside.RemoveCard(actionOne);
+                currentPlayer.DoPlayAction(actionOne, gameState);                
+            }
+
+            if (actionTwo != null)
+            {
+                currentPlayer.cardsSetAside.RemoveCard(actionTwo);
+                currentPlayer.DoPlayAction(actionTwo, gameState);
+            }
+
+            gameState.gameLog.PopScope();
+        }
+
+        private static Card DrawAndRevealTillFindAnActionIsntGolem(PlayerState currentPlayer, GameState gameState)
+        {
+            while (true)
+            {
+                Card result = currentPlayer.DrawAndRevealOneCardFromDeck();
+                if (result == null)
+                    return null;
+
+                if (result.isAction && result != Cards.Golem)
+                {
+                    return result;
+                }
+            }            
         }
     }
 

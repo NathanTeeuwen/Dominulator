@@ -12,7 +12,7 @@ namespace Program
         : DefaultPlayerAction
     {
         internal readonly string name;
-        internal readonly int playerIndex;
+        internal readonly int playerIndex = -1;
 
         protected readonly ICardPicker purchaseOrder;
         protected readonly ICardPicker actionOrder;
@@ -64,6 +64,23 @@ namespace Program
             return this.treasurePlayOrder.GetPreferredCard(
                 gameState,
                 card => self.Hand.HasCard(card) && acceptableCard(card));
+        }
+
+        public override Card ChooseCardToPlayFirst(GameState gameState, Card card1, Card card2)
+        {
+            Card result = this.actionOrder.GetPreferredCard(
+                gameState,
+                card => card == card1 || card == card2);
+
+            // choose a reasonable default
+            if (result == null)
+            {
+                result = this.defaultActionOrder.GetPreferredCard(
+                    gameState,
+                    card => card == card1 || card == card2);
+            }
+
+            return result;
         }
 
         public override Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)

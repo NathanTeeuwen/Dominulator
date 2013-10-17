@@ -12,6 +12,7 @@ namespace Dominion
         Card BanCardForCurrentPlayerRevealedCards(GameState gameState);
         Card BanCardForCurrentPlayerPurchase(GameState gameState);
         Card GetCardPileFromSupply(GameState gameState);
+        Card ChooseCardToPlayFirst(GameState gameState, Card card1, Card card2);
         Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Card GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate acceptableCard);
@@ -114,6 +115,15 @@ namespace Dominion
             var saved = gameState.self;
             gameState.self = this.self;
             var result = this.playerAction.GetCardFromHandToPlay(gameState, acceptableCard, isOptional);
+            gameState.self = saved;
+            return result;
+        }
+
+        public Card ChooseCardToPlayFirst(GameState gameState, Card card1, Card card2)
+        {
+            var saved = gameState.self;
+            gameState.self = this.self;
+            var result = this.playerAction.ChooseCardToPlayFirst(gameState, card1, card2);
             gameState.self = saved;
             return result;
         }

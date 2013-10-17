@@ -78,6 +78,11 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
+        virtual public Card ChooseCardToPlayFirst(GameState gameState, Card card1, Card card2)
+        {
+            return PlayerMustMakeCardChoice();
+        }
+
         virtual public Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return NoCardIfOptional(isOptional);
