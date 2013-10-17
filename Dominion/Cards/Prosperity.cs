@@ -346,6 +346,11 @@ namespace Dominion.CardTypes
 
             currentPlayer.MoveRevealedCardToHand(revealedCard);
         }
+
+        public override void DoSpecializedWhenBuy(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.MoveCardsFromPlayedAreaToTrash(card => card.isTreasure, gameState);            
+        } 
     }
 
     public class Mountebank

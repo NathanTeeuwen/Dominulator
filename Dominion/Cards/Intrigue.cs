@@ -667,13 +667,13 @@ namespace Dominion.CardTypes
             Card cardType = currentPlayer.GuessCardTopOfDeck(gameState);
 
             Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
-            if (revealedCard != cardType)
+            if (revealedCard == cardType)
             {
                 currentPlayer.MoveAllRevealedCardsToHand();
             }
             else
             {
-                currentPlayer.MoveRevealedCardsToDiscard(gameState);
+                currentPlayer.MoveRevealedCardToTopOfDeck();
             }
         }
     }

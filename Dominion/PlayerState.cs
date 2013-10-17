@@ -529,6 +529,15 @@ namespace Dominion
             }                   
         }
 
+        internal void MoveCardsFromPlayedAreaToTrash(CardPredicate acceptableCard, GameState gameState)
+        {
+            while (this.cardsPlayed.HasCard(acceptableCard))
+            {
+                Card cardRemoved = this.cardsPlayed.RemoveCard(acceptableCard);
+                MoveCardToTrash(cardRemoved, gameState);
+            }            
+        }
+
         internal bool MoveCardFromPlayToTrash(GameState gameState)
         {
             bool wasTrashed = false;
