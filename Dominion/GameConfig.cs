@@ -108,8 +108,15 @@ namespace Dominion
                 Cards.Spoils,                
                 Cards.Madman,
                 Cards.Mercenary,
+                // tournament prizes
+                Cards.BagOfGold, 
+                Cards.Diadem, 
+                Cards.Followers, 
+                Cards.Princess, 
+                Cards.TrustySteed,
                 // base classes that should not be used
-                CardTypes.Ruins.card
+                Cards.Ruins,
+                Cards.Prize
             };
 
         public StartingCardSplit CardSplit
@@ -334,13 +341,44 @@ namespace Dominion
             {
                 Add(gameSubset, nonSupplyCardPiles, 10, Cards.Madman);
             }
+
             if (this.kingdomPiles.Where(card => card == Cards.Urchin).Any())
+            {
+                Add(gameSubset, nonSupplyCardPiles, 10, Cards.Mercenary);
+            }
+
+            if (this.kingdomPiles.Where(card => card == Cards.Tournament).Any())
             {
                 Add(gameSubset, nonSupplyCardPiles, 10, Cards.Mercenary);
             }            
 
             return nonSupplyCardPiles.ToArray();
-        }      
+        }
+
+        private static PileOfCards CreateTournamentPrizes(CardGameSubset gameSubset)
+        {
+            Card[] prizes = { Cards.BagOfGold, Cards.Diadem, Cards.Followers, Cards.Princess, Cards.TrustySteed }; 
+
+            if (gameSubset.isInitializing)
+            {
+                gameSubset.AddCard(Cards.Prize);
+                foreach (Card prize in prizes)
+                {
+                    gameSubset.AddCard(prize);
+                }
+                return null;
+            }
+            else
+            {
+                var result = new PileOfCards(gameSubset, Cards.Prize);
+                foreach (Card prize in prizes)
+                {
+                    result.AddCardToTop(prize);
+                }
+
+                return result;
+            }            
+        }
 
         private static PileOfCards CreateRuins(CardGameSubset gameSubset, int ruinsCount, Random random)
         {

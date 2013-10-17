@@ -12,6 +12,7 @@
         public static readonly CardTypes.Apothecary Apothecary = CardTypes.Apothecary.card;
         public static readonly CardTypes.Apprentice Apprentice = CardTypes.Apprentice.card;
         public static readonly CardTypes.Armory Armory = CardTypes.Armory.card;
+        public static readonly CardTypes.BagOfGold BagOfGold = CardTypes.BagOfGold.card;
         public static readonly CardTypes.Baker Baker = CardTypes.Baker.card;
         public static readonly CardTypes.BanditCamp BanditCamp = CardTypes.BanditCamp.card;
         public static readonly CardTypes.BandOfMisfits BandOfMisfits = CardTypes.BandOfMisfits.card;
@@ -50,6 +51,7 @@
         public static readonly CardTypes.Cutpurse Cutpurse = CardTypes.Cutpurse.card;
         public static readonly CardTypes.DeathCart DeathCart = CardTypes.DeathCart.card;
         public static readonly CardTypes.Develop Develop = CardTypes.Develop.card;
+        public static readonly CardTypes.Diadem Diadem = CardTypes.Diadem.card;
         public static readonly CardTypes.Doctor Doctor = CardTypes.Doctor.card;
         public static readonly CardTypes.Duchess Duchess = CardTypes.Duchess.card;
         public static readonly CardTypes.Duchy Duchy = CardTypes.Duchy.card;
@@ -68,6 +70,7 @@
         public static readonly CardTypes.Feodum Feodum = CardTypes.Feodum.card;
         public static readonly CardTypes.Festival Festival = CardTypes.Festival.card;
         public static readonly CardTypes.FishingVillage FishingVillage = CardTypes.FishingVillage.card;
+        public static readonly CardTypes.Followers Followers = CardTypes.Followers.card;
         public static readonly CardTypes.FoolsGold FoolsGold = CardTypes.FoolsGold.card;
         public static readonly CardTypes.Forager Forager = CardTypes.Forager.card;
         public static readonly CardTypes.Forge Forge = CardTypes.Forge.card;
@@ -154,6 +157,8 @@
         public static readonly CardTypes.PoorHouse PoorHouse = CardTypes.PoorHouse.card;
         public static readonly CardTypes.Possession Possession = CardTypes.Possession.card;
         public static readonly CardTypes.Potion Potion = CardTypes.Potion.card;
+        public static readonly CardTypes.Princess Princess = CardTypes.Princess.card;
+        public static readonly CardTypes.Prize Prize = CardTypes.Prize.card;
         public static readonly CardTypes.Procession Procession = CardTypes.Procession.card;
         public static readonly CardTypes.Province Province = CardTypes.Province.card;
         public static readonly CardTypes.Quarry Quarry = CardTypes.Quarry.card;
@@ -208,6 +213,7 @@
         public static readonly CardTypes.TreasureMap TreasureMap = CardTypes.TreasureMap.card;
         public static readonly CardTypes.Treasury Treasury = CardTypes.Treasury.card;
         public static readonly CardTypes.Tribute Tribute = CardTypes.Tribute.card;
+        public static readonly CardTypes.TrustySteed TrustySteed = CardTypes.TrustySteed.card;
         public static readonly CardTypes.Tunnel Tunnel = CardTypes.Tunnel.card;
         public static readonly CardTypes.University University = CardTypes.University.card;
         public static readonly CardTypes.Upgrade Upgrade = CardTypes.Upgrade.card;

@@ -26,6 +26,7 @@ namespace Dominion
         public readonly bool isCurse;
         public readonly bool isReaction;
         public readonly bool isRuins;
+        public readonly bool isPrize;
         public readonly bool isTreasure;
         public readonly bool isDuration;
         public readonly bool requiresRuins;
@@ -69,7 +70,8 @@ namespace Dominion
             bool isAttackBeforeAction = false,
             bool isCurse = false,
             bool isReaction = false,
-            bool isRuin = false,
+            bool isPrize = false,
+            bool isRuins = false,            
             bool isTreasure = false,
             bool isDuration = false,
             bool requiresRuins = false,
@@ -113,7 +115,8 @@ namespace Dominion
             this.isAttackBeforeAction = isAttackBeforeAction;
             this.isCurse = isCurse;
             this.isReaction = isReaction;
-            this.isRuins = isRuin;
+            this.isPrize = isPrize;
+            this.isRuins = isRuins;
             this.isTreasure = isTreasure;
             this.defaultSupplyCount = defaultSupplyCount;
             this.requiresRuins = requiresRuins;
@@ -378,5 +381,19 @@ namespace Dominion
         private static int lastCardIndex = 0;        
 
         private static HashSet<Type> cardTypes = new HashSet<Type>();
+
+        public bool IsType(Card card)
+        {
+            if (this == card)
+                return true;
+
+            if (this.isRuins && card == Cards.Ruins)
+                return true;
+
+            if (this.isPrize && card == Cards.Prize)
+                return true;
+
+            return false;
+        }
     }
 }

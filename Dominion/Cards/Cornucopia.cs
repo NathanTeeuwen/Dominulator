@@ -309,7 +309,167 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            bool someOtherPlayerRevealedProvince = false;
+
+            bool didRevealProvince = currentPlayer.RequestPlayerRevealCardFromHand(card => card == Cards.Province, gameState) != null;            
+
+            foreach (PlayerState player in gameState.players.OtherPlayers)
+            {                
+                someOtherPlayerRevealedProvince |= player.RequestPlayerRevealCardFromHand(card => card == Cards.Province, gameState) != null;
+                player.MoveAllRevealedCardsToHand();
+            }
+
+            if (didRevealProvince)
+            {
+                currentPlayer.RequestPlayerGainCardFromSupply(gameState,
+                    card => card == Cards.Duchy || card.IsType(Cards.Prize),
+                    "Must gain a duchy or a prize",
+                    isOptional: false,
+                    defaultLocation: DeckPlacement.TopOfDeck);
+            }
+
+            if (!someOtherPlayerRevealedProvince)
+            {
+                currentPlayer.DrawOneCardIntoHand();
+                currentPlayer.AddCoins(1);
+            }
+        }
+    }
+
+    public class Prize
+        : Card
+    {
+        public static Prize card = new Prize();
+
+        private Prize()
+            : this("Prize")
+        {
+        }
+
+        protected Prize(
+            string name,
+            bool isAction = false,
+            bool isTreasure = false,
+            bool isAttack = false,
+            int plusCoins = 0,
+            int plusCards = 0,
+            int plusBuy = 0,
+            int plusActions = 0)
+            : base(name, coinCost: 0, isAction: isAction, isTreasure: isTreasure, isAttack: isAttack, isPrize: true, plusCoins: plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions: plusActions)
+        {
+        }
+    }
+
+    public class BagOfGold
+        : Prize
+    {
+        public static BagOfGold card = new BagOfGold();
+
+        private BagOfGold()
+            : base("BagOfGold", plusActions: 1, isAction:true)
+        {
+
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.GainCardFromSupply(Cards.Gold, gameState, DeckPlacement.TopOfDeck);
+        }
+    }
+
+    public class Diadem
+       : Prize
+    {
+        public static Diadem card = new Diadem();
+
+        private Diadem()
+            : base("Diadem", plusCoins:2, isTreasure:true)
+        {
+
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.AddCoins(currentPlayer.AvailableActions);
+        }
+    }
+
+    public class Followers
+       : Prize
+    {
+        public static Followers card = new Followers();
+
+        private Followers()
+            : base("Followers", isAction: true, plusCards:2, isAttack:true)
+        {
+
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.GainCardFromSupply(Cards.Estate, gameState);
+        }
+
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
+            otherPlayer.GainCardFromSupply(Cards.Curse, gameState);
+            otherPlayer.RequestPlayerDiscardDownToCountInHand(gameState, 3);
+        }
+    }
+
+    public class Princess
+       : Prize
+    {
+        public static Princess card = new Princess();
+
+        private Princess()
+            : base("Princess", isAction: true, plusBuy: 1)
+        {
+            this.provideDiscountForWhileInPlay = ProvideDiscountForWhileInPlay;
+        }
+
+        private new int ProvideDiscountForWhileInPlay(Card card)
+        {
+            return 2;
+        }
+    }
+
+    public class TrustySteed
+       : Prize
+    {
+        public static TrustySteed card = new TrustySteed();
+
+        private TrustySteed()
+            : base("TrustySteed", isAction: true)
+        {            
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            IsValidChoice choices = delegate(PlayerActionChoice choice)
+            {
+                return choice == PlayerActionChoice.PlusCard ||
+                       choice == PlayerActionChoice.PlusAction ||
+                       choice == PlayerActionChoice.PlusCoin ||
+                       choice == PlayerActionChoice.GainCard;
+            };
+            
+            PlayerActionChoice choice1 = currentPlayer.RequestPlayerChooseBetween(gameState, choices);
+            PlayerActionChoice choice2 = currentPlayer.RequestPlayerChooseBetween(gameState, c => choices(c) && c != choice1);
+
+            ApplyChoice(choice1, currentPlayer, gameState);
+            ApplyChoice(choice2, currentPlayer, gameState);
+        }
+
+        private static void ApplyChoice(PlayerActionChoice choice, PlayerState currentPlayer, GameState gameState)
+        {
+            switch (choice)
+            {
+                case PlayerActionChoice.PlusCard: currentPlayer.DrawAdditionalCardsIntoHand(2); break;
+                case PlayerActionChoice.PlusAction: currentPlayer.AddActions(2); break;
+                case PlayerActionChoice.PlusCoin: currentPlayer.AddCoins(2); break;
+                case PlayerActionChoice.GainCard: currentPlayer.GainCardsFromSupply(gameState, Cards.Silver, 4); break;
+                default: throw new Exception();
         }
     }
 

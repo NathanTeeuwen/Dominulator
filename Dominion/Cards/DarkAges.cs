@@ -96,7 +96,7 @@ namespace Dominion.CardTypes
             int plusCards = 0,
             int plusBuy = 0,
             int plusActions = 0)
-            : base(name, coinCost: 0, isAction: true, isRuin: true, plusCoins:plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions:plusActions)
+            : base(name, coinCost: 0, isAction: true, isRuins: true, plusCoins:plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions:plusActions)
         {
         }
     }
@@ -569,7 +569,11 @@ namespace Dominion.CardTypes
             if (currentPlayer.turnCounters.BuysUsed == 0)
             {                
                 currentPlayer.MoveCardBeingDiscardedToTrash(gameState);
-                currentPlayer.GainCardFromSupply(Cards.Madman, gameState);            
+                currentPlayer.RequestPlayerGainCardFromSupply(gameState,
+                    card => card == Cards.Duchy || card.IsType(Cards.Prize),
+                    "Must either gain a duchy or a prize",
+                    isOptional:false,
+                    defaultLocation:DeckPlacement.TopOfDeck);            
             }            
         }
 
