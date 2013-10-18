@@ -906,7 +906,7 @@ namespace Dominion.CardTypes
                 int cardCost = foundCard.CurrentCoinCost(currentPlayer);
                 currentPlayer.MoveRevealedCardToTrash(foundCard, gameState);
                 currentPlayer.RequestPlayerGainCardFromSupply(gameState,
-                    acceptableCard => acceptableCard.isVictory && acceptableCard.CurrentCoinCost(currentPlayer) <= cardCost + 3 && acceptableCard.potionCost == foundCard.potionCost,
+                    acceptableCard => acceptableCard.isVictory && acceptableCard.CurrentCoinCost(currentPlayer) <= cardCost + 3 && acceptableCard.potionCost <= foundCard.potionCost,
                     "Gain a victory card costing up to 3 more than the trashed card.");
             }
         }
