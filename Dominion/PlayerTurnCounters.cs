@@ -16,11 +16,15 @@ namespace Dominion
         private int availablePotions;
         private int availableCoinTokens;
         internal SetOfCards cardsBannedFromPurchase;
+        internal SetOfCards cardsBoughtThisTurn;
+        internal SetOfCards cardsGainedThisTurn;
         internal int copperAdditionalValue = 0;
 
         internal PlayerTurnCounters(CardGameSubset gameSubset)
         {
             cardsBannedFromPurchase = new SetOfCards(gameSubset);
+            cardsBoughtThisTurn = new SetOfCards(gameSubset);
+            cardsGainedThisTurn = new SetOfCards(gameSubset);
         }
 
         internal void InitializeTurn()
@@ -32,6 +36,8 @@ namespace Dominion
             this.availablePotions = 0;
             this.copperAdditionalValue = 0;
             this.cardsBannedFromPurchase.Clear();
+            this.cardsBoughtThisTurn.Clear();
+            this.cardsGainedThisTurn.Clear();
         }
 
         internal int AvailableActions

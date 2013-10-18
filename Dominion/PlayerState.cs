@@ -60,6 +60,8 @@ namespace Dominion
         public Card CurrentCardBeingPlayed { get { return this.cardsBeingPlayed.TopCard(); } }
         public CollectionCards CardsBeingPlayed { get { return this.cardsPlayed; } }
         public int PlayerIndex { get { return this.playerIndex; } }
+        public SetOfCards CardsBoughtThisTurn { get { return this.turnCounters.cardsBoughtThisTurn; } }
+        public SetOfCards CardsGainedThisTurn { get { return this.turnCounters.cardsGainedThisTurn; } }
 
         public int ExpectedCoinValueAtEndOfTurn { get { return this.AvailableCoins + this.hand.Where(card => card.isTreasure).Select(card => card.plusCoin).Sum(); } }
 
@@ -1036,6 +1038,7 @@ namespace Dominion
             {
                 return false;
             }
+            otherPlayer.RevealHand();
 
             Card cardTypeToDiscard = this.actions.GetCardFromOtherPlayersHandToDiscard(gameState, otherPlayer);
             if (cardTypeToDiscard == null)
@@ -1387,10 +1390,18 @@ namespace Dominion
             if (gainReason == GainReason.Buy)
             {
                 this.gameLog.PlayerBoughtCard(this, card);
+                this.turnCounters.cardsBoughtThisTurn.Add(card);
             }
             else
             {
                 this.gameLog.PlayerGainedCard(this, card);
+            }
+
+            // should only include cards gained on the players turned, not cards gained as a side effect on some other players turn
+            // important for smugglers ...
+            if (this == gameState.players.CurrentPlayer)
+            {
+                this.turnCounters.cardsGainedThisTurn.Add(card);
             }
 
             this.gameLog.PushScope();

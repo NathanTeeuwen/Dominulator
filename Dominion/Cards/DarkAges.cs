@@ -783,9 +783,8 @@ namespace Dominion.CardTypes
             PlayerState.AttackAction attackAction = delegate(PlayerState currentPlayer2, PlayerState otherPlayer, GameState gameState2)
             {
                 if (otherPlayer.Hand.Count >= 5)
-                {
-                    // TODO: make other player discard a good card
-                    otherPlayer.RequestPlayerDiscardCardFromOtherPlayersHand(gameState, otherPlayer);
+                {                    
+                    currentPlayer2.RequestPlayerDiscardCardFromOtherPlayersHand(gameState, otherPlayer);
                 }
             };
             currentPlayer.AttackOtherPlayers(gameState, attackAction);

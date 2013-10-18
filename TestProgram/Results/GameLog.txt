@@ -1,13 +1,13 @@
-KingsCourtRabbleExpandVillage gained Copper.
-KingsCourtRabbleExpandVillage gained Copper.
-KingsCourtRabbleExpandVillage gained Copper.
-KingsCourtRabbleExpandVillage gained Copper.
-KingsCourtRabbleExpandVillage gained Copper.
-KingsCourtRabbleExpandVillage gained Copper.
-KingsCourtRabbleExpandVillage gained Copper.
-KingsCourtRabbleExpandVillage gained Estate.
-KingsCourtRabbleExpandVillage gained Estate.
-KingsCourtRabbleExpandVillage gained Estate.
+BigMoneyWithCard<Smugglers> gained Copper.
+BigMoneyWithCard<Smugglers> gained Copper.
+BigMoneyWithCard<Smugglers> gained Copper.
+BigMoneyWithCard<Smugglers> gained Copper.
+BigMoneyWithCard<Smugglers> gained Copper.
+BigMoneyWithCard<Smugglers> gained Copper.
+BigMoneyWithCard<Smugglers> gained Copper.
+BigMoneyWithCard<Smugglers> gained Estate.
+BigMoneyWithCard<Smugglers> gained Estate.
+BigMoneyWithCard<Smugglers> gained Estate.
 BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
@@ -18,12 +18,12 @@ BigMoney gained Copper.
 BigMoney gained Estate.
 BigMoney gained Estate.
 BigMoney gained Estate.
-KingsCourtRabbleExpandVillage reshuffled
-KingsCourtRabbleExpandVillage Drew Copper into hand.
-KingsCourtRabbleExpandVillage Drew Copper into hand.
-KingsCourtRabbleExpandVillage Drew Copper into hand.
-KingsCourtRabbleExpandVillage Drew Estate into hand.
-KingsCourtRabbleExpandVillage Drew Copper into hand.
+BigMoneyWithCard<Smugglers> reshuffled
+BigMoneyWithCard<Smugglers> Drew Copper into hand.
+BigMoneyWithCard<Smugglers> Drew Copper into hand.
+BigMoneyWithCard<Smugglers> Drew Copper into hand.
+BigMoneyWithCard<Smugglers> Drew Estate into hand.
+BigMoneyWithCard<Smugglers> Drew Copper into hand.
 BigMoney reshuffled
 BigMoney Drew Estate into hand.
 BigMoney Drew Copper into hand.
@@ -32,28 +32,28 @@ BigMoney Drew Copper into hand.
 BigMoney Drew Estate into hand.
 ROUND 1
 -------------
-KingsCourtRabbleExpandVillage begins turn
+BigMoneyWithCard<Smugglers> begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 1 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 2 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 3 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 4 all together.
-  KingsCourtRabbleExpandVillage bought FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Estate into hand.
-  KingsCourtRabbleExpandVillage Drew Estate into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), 
+  BigMoneyWithCard<Smugglers> bought Smugglers.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Smugglers(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
@@ -78,27 +78,27 @@ With hand: Copper,Copper,Copper,Estate,Estate,
 
 ROUND 2
 -------------
-KingsCourtRabbleExpandVillage begins turn
+BigMoneyWithCard<Smugglers> begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 1 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 2 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 3 all together.
-  KingsCourtRabbleExpandVillage bought Silver.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage reshuffled
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Silver into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Estate into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Copper(7), Estate(3), FarmingVillage(1), Silver(1), 
+  BigMoneyWithCard<Smugglers> bought Silver.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> reshuffled
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Silver(1), Smugglers(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
@@ -126,28 +126,28 @@ With hand: Copper,Copper,Copper,Copper,Estate,
 
 ROUND 3
 -------------
-KingsCourtRabbleExpandVillage begins turn
+BigMoneyWithCard<Smugglers> begins turn
 With hand: Copper,Copper,Copper,Estate,Silver,
-  KingsCourtRabbleExpandVillage Played Silver.
+  BigMoneyWithCard<Smugglers> Played Silver.
     +2 Coin = 2 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 3 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 4 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 5 all together.
-  KingsCourtRabbleExpandVillage bought Contraband.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Estate into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(7), Estate(3), FarmingVillage(1), Silver(1), 
+  BigMoneyWithCard<Smugglers> bought Silver.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Smugglers into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Silver(2), Smugglers(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
@@ -176,33 +176,29 @@ With hand: Copper,Copper,Copper,Silver,Silver,
 
 ROUND 4
 -------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Copper,Copper,Copper,Estate,FarmingVillage,
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 2 all together.
-      KingsCourtRabbleExpandVillage Revealed Copper.
-    KingsCourtRabbleExpandVillage put Copper into his hand.
-  KingsCourtRabbleExpandVillage Played Copper.
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Copper,Copper,Copper,Estate,Smugglers,
+  BigMoneyWithCard<Smugglers> Played Smugglers.
+    BigMoneyWithCard<Smugglers> gained Gold.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 1 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 2 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 3 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 4 all together.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage Drew Estate into hand.
-  KingsCourtRabbleExpandVillage reshuffled
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Silver into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(7), Estate(3), FarmingVillage(1), Silver(1), 
+  BigMoneyWithCard<Smugglers> bought Silver.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Smugglers.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> reshuffled
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), Smugglers(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Estate,Estate,Estate,
@@ -220,130 +216,129 @@ With hand: Copper,Copper,Estate,Estate,Estate,
   BigMoney reshuffled
   BigMoney Drew Copper into hand.
   BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
   BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
 ROUND 5
 -------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  KingsCourtRabbleExpandVillage Played Silver.
-    +2 Coin = 2 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 3 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 4 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 5 all together.
-  KingsCourtRabbleExpandVillage bought Rabble.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage Drew Estate into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage Drew Contraband into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(7), Estate(3), FarmingVillage(1), Rabble(1), Silver(1), 
+  BigMoneyWithCard<Smugglers> bought Silver.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), Smugglers(1), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoney Played Copper.
-    +1 Coin = 1 all together.
-  BigMoney Played Copper.
-    +1 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
   BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
   BigMoney Discarded Estate.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), 
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(2), 
 
 ROUND 6
 -------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Contraband,Copper,Copper,Estate,FarmingVillage,
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 2 all together.
-      KingsCourtRabbleExpandVillage Revealed Copper.
-    KingsCourtRabbleExpandVillage put Copper into his hand.
-  KingsCourtRabbleExpandVillage Played Contraband.
-    +1 Buys = 2 all together.
-    +3 Coin = 3 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 4 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoneyWithCard<Smugglers> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<Smugglers> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 5 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 6 all together.
-  KingsCourtRabbleExpandVillage bought FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded Contraband.
-  KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage Drew Estate into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage reshuffled
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Estate into hand.
-  KingsCourtRabbleExpandVillage Drew Estate into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(7), Estate(3), FarmingVillage(2), Rabble(1), Silver(1), 
+  BigMoneyWithCard<Smugglers> bought Gold.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> Drew Smugglers into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Gold into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), Smugglers(1), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
+With hand: Copper,Copper,Copper,Estate,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
   BigMoney Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
   BigMoney bought Silver.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
+  BigMoney Discarded Copper.
   BigMoney Discarded Estate.
   BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney reshuffled
   BigMoney Drew Copper into hand.
   BigMoney Drew Gold into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(3), 
 
 ROUND 7
 -------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Copper,Copper,Estate,Estate,Estate,
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 1 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 2 all together.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage Drew Contraband into hand.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage Drew Silver into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(7), Estate(3), FarmingVillage(2), Rabble(1), Silver(1), 
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Copper,Copper,Gold,Silver,Smugglers,
+  BigMoneyWithCard<Smugglers> Played Smugglers.
+    BigMoneyWithCard<Smugglers> gained Silver.
+  BigMoneyWithCard<Smugglers> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Smugglers> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<Smugglers> bought Gold.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Gold.
+  BigMoneyWithCard<Smugglers> Discarded Smugglers.
+  BigMoneyWithCard<Smugglers> reshuffled
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), Smugglers(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Gold,Silver,Silver,
@@ -363,223 +358,138 @@ With hand: Copper,Copper,Gold,Silver,Silver,
   BigMoney Discarded Silver.
   BigMoney Discarded Silver.
   BigMoney Discarded Gold.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), 
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(3), 
 
 ROUND 8
 -------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Contraband,Copper,FarmingVillage,FarmingVillage,Silver,
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 2 all together.
-      KingsCourtRabbleExpandVillage Revealed Copper.
-    KingsCourtRabbleExpandVillage put Copper into his hand.
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 3 all together.
-      KingsCourtRabbleExpandVillage Revealed Copper.
-    KingsCourtRabbleExpandVillage put Copper into his hand.
-  KingsCourtRabbleExpandVillage Played Contraband.
-    +1 Buys = 2 all together.
-    +3 Coin = 3 all together.
-  KingsCourtRabbleExpandVillage Played Silver.
-    +2 Coin = 5 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 6 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 7 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 8 all together.
-  KingsCourtRabbleExpandVillage bought Expand.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded Contraband.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Rabble into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage reshuffled
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(7), Estate(3), Expand(1), FarmingVillage(2), Rabble(1), Silver(1), 
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Copper,Silver,Silver,Silver,Silver,
+  BigMoneyWithCard<Smugglers> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<Smugglers> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<Smugglers> Played Silver.
+    +2 Coin = 6 all together.
+  BigMoneyWithCard<Smugglers> Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyWithCard<Smugglers> bought Province.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Drew Smugglers into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> Drew Gold into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(5), Smugglers(1), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
+With hand: Copper,Estate,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
   BigMoney Played Silver.
-    +2 Coin = 2 all together.
+    +2 Coin = 5 all together.
   BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
   BigMoney Discarded Copper.
   BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
   BigMoney Discarded Estate.
   BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(3), 
 
 ROUND 9
 -------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Copper,Copper,Copper,FarmingVillage,Rabble,
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 2 all together.
-      KingsCourtRabbleExpandVillage Revealed Estate.
-      KingsCourtRabbleExpandVillage Revealed Silver.
-    KingsCourtRabbleExpandVillage put Silver into his hand.
-    KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage Played Rabble.
-    KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-    KingsCourtRabbleExpandVillage Drew Copper into hand.
-    KingsCourtRabbleExpandVillage Drew Contraband into hand.
-    BigMoney reshuffled
-    BigMoney Revealed Silver.
-    BigMoney Revealed Estate.
-    BigMoney Revealed Silver.
-    BigMoney Discarded Silver.
-    BigMoney Discarded Silver.
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 2 all together.
-      KingsCourtRabbleExpandVillage Revealed Copper.
-    KingsCourtRabbleExpandVillage put Copper into his hand.
-  KingsCourtRabbleExpandVillage Played Contraband.
-    +1 Buys = 2 all together.
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Copper,Copper,Estate,Gold,Smugglers,
+  BigMoneyWithCard<Smugglers> Played Smugglers.
+    BigMoneyWithCard<Smugglers> gained Gold.
+  BigMoneyWithCard<Smugglers> Played Gold.
     +3 Coin = 3 all together.
-  KingsCourtRabbleExpandVillage Played Silver.
-    +2 Coin = 5 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 6 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 7 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 8 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 9 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 10 all together.
-  KingsCourtRabbleExpandVillage bought Kings Court.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded Rabble.
-  KingsCourtRabbleExpandVillage Discarded Contraband.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Expand into hand.
-  KingsCourtRabbleExpandVillage Drew Estate into hand.
-  KingsCourtRabbleExpandVillage Drew Estate into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(7), Estate(3), Expand(1), FarmingVillage(2), Kings Court(1), Rabble(1), Silver(1), 
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<Smugglers> bought Silver.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Gold.
+  BigMoneyWithCard<Smugglers> Discarded Smugglers.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(6), Smugglers(1), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
   BigMoney Played Copper.
     +1 Coin = 3 all together.
   BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
   BigMoney bought Silver.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
+  BigMoney Discarded Copper.
   BigMoney Discarded Estate.
+  BigMoney reshuffled
   BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(6), 
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(4), 
 
 ROUND 10
 -------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Copper,Copper,Estate,Estate,Expand,
-  KingsCourtRabbleExpandVillage Played Expand.
-    KingsCourtRabbleExpandVillage trashed Estate.
-    KingsCourtRabbleExpandVillage gained FarmingVillage.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 1 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 2 all together.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Expand.
-  KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage reshuffled
-  KingsCourtRabbleExpandVillage Drew Estate into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Silver into hand.
-  KingsCourtRabbleExpandVillage Drew Kings Court into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(7), Estate(2), Expand(1), FarmingVillage(3), Kings Court(1), Rabble(1), Silver(1), 
-
-BigMoney begins turn
-With hand: Copper,Estate,Estate,Silver,Silver,
-  BigMoney Played Silver.
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoneyWithCard<Smugglers> Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(7), 
-
-ROUND 11
--------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Copper,Copper,Estate,Kings Court,Silver,
-  KingsCourtRabbleExpandVillage Played Kings Court.
-  KingsCourtRabbleExpandVillage Played Silver.
-    +2 Coin = 2 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 3 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 4 all together.
-  KingsCourtRabbleExpandVillage bought FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage Drew Rabble into hand.
-  KingsCourtRabbleExpandVillage Drew Estate into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(7), Estate(2), Expand(1), FarmingVillage(4), Kings Court(1), Rabble(1), Silver(1), 
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<Smugglers> bought Silver.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> Drew Gold into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> Drew Gold into hand.
+  BigMoneyWithCard<Smugglers> reshuffled
+  BigMoneyWithCard<Smugglers> Drew Province into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(7), Smugglers(1), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Gold,Gold,
+With hand: Copper,Copper,Estate,Gold,Gold,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
   BigMoney Played Gold.
@@ -588,250 +498,41 @@ With hand: Copper,Copper,Copper,Gold,Gold,
     +1 Coin = 7 all together.
   BigMoney Played Copper.
     +1 Coin = 8 all together.
-  BigMoney Played Copper.
-    +1 Coin = 9 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(7), 
-
-ROUND 12
--------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Copper,Copper,Estate,FarmingVillage,Rabble,
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 2 all together.
-      KingsCourtRabbleExpandVillage Revealed Contraband.
-    KingsCourtRabbleExpandVillage put Contraband into his hand.
-  KingsCourtRabbleExpandVillage Played Rabble.
-    KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-    KingsCourtRabbleExpandVillage Drew Copper into hand.
-    KingsCourtRabbleExpandVillage Drew Copper into hand.
-    BigMoney Revealed Estate.
-    BigMoney Revealed Estate.
-    BigMoney Revealed Gold.
-    BigMoney Discarded Gold.
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 2 all together.
-      KingsCourtRabbleExpandVillage Revealed Copper.
-    KingsCourtRabbleExpandVillage put Copper into his hand.
-  KingsCourtRabbleExpandVillage Played Contraband.
-    +1 Buys = 2 all together.
-    +3 Coin = 3 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 4 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 5 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 6 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 7 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 8 all together.
-  KingsCourtRabbleExpandVillage bought Kings Court.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded Rabble.
-  KingsCourtRabbleExpandVillage Discarded Contraband.
-  KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage Drew Expand into hand.
-  KingsCourtRabbleExpandVillage reshuffled
-  KingsCourtRabbleExpandVillage Drew Rabble into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Kings Court into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(7), Estate(2), Expand(1), FarmingVillage(4), Kings Court(2), Rabble(1), Silver(1), 
-
-BigMoney begins turn
-With hand: Copper,Gold,Silver,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
-  BigMoney Played Silver.
-    +2 Coin = 9 all together.
-  BigMoney Played Copper.
-    +1 Coin = 10 all together.
   BigMoney bought Province.
   BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(7), 
-
-ROUND 13
--------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Copper,Expand,FarmingVillage,Kings Court,Rabble,
-  KingsCourtRabbleExpandVillage Played Kings Court.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 2 all together.
-        KingsCourtRabbleExpandVillage Revealed Estate.
-        KingsCourtRabbleExpandVillage Revealed Copper.
-      KingsCourtRabbleExpandVillage put Copper into his hand.
-      KingsCourtRabbleExpandVillage Discarded Estate.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 4 all together.
-        KingsCourtRabbleExpandVillage Revealed Copper.
-      KingsCourtRabbleExpandVillage put Copper into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 6 all together.
-        KingsCourtRabbleExpandVillage Revealed Contraband.
-      KingsCourtRabbleExpandVillage put Contraband into his hand.
-  KingsCourtRabbleExpandVillage Played Rabble.
-    KingsCourtRabbleExpandVillage Drew Copper into hand.
-    KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-    KingsCourtRabbleExpandVillage Drew Estate into hand.
-    BigMoney Revealed Copper.
-    BigMoney Revealed Copper.
-    BigMoney Revealed Silver.
-    BigMoney Discarded Copper.
-    BigMoney Discarded Copper.
-    BigMoney Discarded Silver.
-  KingsCourtRabbleExpandVillage Played Expand.
-    KingsCourtRabbleExpandVillage trashed Estate.
-    KingsCourtRabbleExpandVillage gained FarmingVillage.
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 5 all together.
-      KingsCourtRabbleExpandVillage Revealed Silver.
-    KingsCourtRabbleExpandVillage put Silver into his hand.
-  KingsCourtRabbleExpandVillage Played Contraband.
-    +1 Buys = 2 all together.
-    +3 Coin = 3 all together.
-  KingsCourtRabbleExpandVillage Played Silver.
-    +2 Coin = 5 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 6 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 7 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 8 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 9 all together.
-  KingsCourtRabbleExpandVillage bought Kings Court.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded Rabble.
-  KingsCourtRabbleExpandVillage Discarded Expand.
-  KingsCourtRabbleExpandVillage Discarded Contraband.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage Drew Kings Court into hand.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(7), Estate(1), Expand(1), FarmingVillage(5), Kings Court(3), Rabble(1), Silver(1), 
-
-BigMoney begins turn
-With hand: Copper,Estate,Estate,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney bought Silver.
   BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
   BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
+  BigMoney Drew Estate into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
   BigMoney Drew Gold into hand.
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(8), 
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(4), 
 
-ROUND 14
+ROUND 11
 -------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Copper,Copper,FarmingVillage,FarmingVillage,Kings Court,
-  KingsCourtRabbleExpandVillage Played Kings Court.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 2 all together.
-        KingsCourtRabbleExpandVillage Revealed Copper.
-      KingsCourtRabbleExpandVillage put Copper into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 4 all together.
-        KingsCourtRabbleExpandVillage reshuffled
-        KingsCourtRabbleExpandVillage Revealed Silver.
-      KingsCourtRabbleExpandVillage put Silver into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 6 all together.
-        KingsCourtRabbleExpandVillage Revealed FarmingVillage.
-      KingsCourtRabbleExpandVillage put FarmingVillage into his hand.
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 7 all together.
-      KingsCourtRabbleExpandVillage Revealed Copper.
-    KingsCourtRabbleExpandVillage put Copper into his hand.
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 8 all together.
-      KingsCourtRabbleExpandVillage Revealed Estate.
-      KingsCourtRabbleExpandVillage Revealed FarmingVillage.
-    KingsCourtRabbleExpandVillage put FarmingVillage into his hand.
-    KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 9 all together.
-      KingsCourtRabbleExpandVillage Revealed Copper.
-    KingsCourtRabbleExpandVillage put Copper into his hand.
-  KingsCourtRabbleExpandVillage Played Silver.
-    +2 Coin = 2 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 3 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 4 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 5 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 6 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Copper,Estate,Gold,Gold,Province,
+  BigMoneyWithCard<Smugglers> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Smugglers> Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 7 all together.
-  KingsCourtRabbleExpandVillage bought Kings Court.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Drew Rabble into hand.
-  KingsCourtRabbleExpandVillage Drew Expand into hand.
-  KingsCourtRabbleExpandVillage Drew Kings Court into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(7), Estate(1), Expand(1), FarmingVillage(5), Kings Court(4), Rabble(1), Silver(1), 
+  BigMoneyWithCard<Smugglers> bought Gold.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Gold.
+  BigMoneyWithCard<Smugglers> Discarded Gold.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> Discarded Province.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(7), Smugglers(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Estate,Gold,Silver,
@@ -850,36 +551,185 @@ With hand: Copper,Copper,Estate,Gold,Silver,
   BigMoney Discarded Gold.
   BigMoney Discarded Estate.
   BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Gold into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(4), 
+
+ROUND 12
+-------------
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoneyWithCard<Smugglers> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWithCard<Smugglers> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<Smugglers> bought Gold.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Gold into hand.
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(6), Province(1), Silver(7), Smugglers(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
   BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(8), 
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(6), Province(1), Silver(4), 
+
+ROUND 13
+-------------
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Estate,Gold,Silver,Silver,Silver,
+  BigMoneyWithCard<Smugglers> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Smugglers> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<Smugglers> Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyWithCard<Smugglers> Played Silver.
+    +2 Coin = 9 all together.
+  BigMoneyWithCard<Smugglers> bought Province.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Gold.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Smugglers into hand.
+  BigMoneyWithCard<Smugglers> Drew Gold into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(6), Province(2), Silver(7), Smugglers(1), 
+
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(6), Province(2), Silver(4), 
+
+ROUND 14
+-------------
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Copper,Copper,Gold,Silver,Smugglers,
+  BigMoneyWithCard<Smugglers> Played Smugglers.
+  BigMoneyWithCard<Smugglers> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Smugglers> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWithCard<Smugglers> bought Duchy.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Gold.
+  BigMoneyWithCard<Smugglers> Discarded Smugglers.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> reshuffled
+  BigMoneyWithCard<Smugglers> Drew Gold into hand.
+  BigMoneyWithCard<Smugglers> Drew Gold into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(6), Province(2), Silver(7), Smugglers(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(6), Province(2), Silver(4), 
 
 ROUND 15
 -------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Copper,Copper,Expand,Kings Court,Rabble,
-  KingsCourtRabbleExpandVillage Played Kings Court.
-    KingsCourtRabbleExpandVillage Played Expand.
-      KingsCourtRabbleExpandVillage trashed Copper.
-      KingsCourtRabbleExpandVillage gained Silver.
-    KingsCourtRabbleExpandVillage Played Expand.
-      KingsCourtRabbleExpandVillage trashed Copper.
-      KingsCourtRabbleExpandVillage gained Silver.
-    KingsCourtRabbleExpandVillage Played Expand.
-      KingsCourtRabbleExpandVillage trashed Rabble.
-      KingsCourtRabbleExpandVillage gained Province.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Discarded Expand.
-  KingsCourtRabbleExpandVillage Drew Contraband into hand.
-  KingsCourtRabbleExpandVillage Drew Kings Court into hand.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage reshuffled
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(5), Estate(1), Expand(1), FarmingVillage(5), Kings Court(4), Province(1), Silver(3), 
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Copper,Copper,Gold,Gold,Silver,
+  BigMoneyWithCard<Smugglers> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWithCard<Smugglers> Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyWithCard<Smugglers> Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyWithCard<Smugglers> bought Province.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Gold.
+  BigMoneyWithCard<Smugglers> Discarded Gold.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Province into hand.
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(6), Province(3), Silver(7), Smugglers(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Estate,Gold,Gold,
@@ -898,486 +748,146 @@ With hand: Copper,Copper,Estate,Gold,Gold,
   BigMoney Discarded Gold.
   BigMoney Discarded Estate.
   BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Province into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(2), Silver(8), 
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(6), Province(3), Silver(4), 
 
 ROUND 16
 -------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Contraband,Copper,FarmingVillage,FarmingVillage,Kings Court,
-  KingsCourtRabbleExpandVillage Played Kings Court.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 2 all together.
-        KingsCourtRabbleExpandVillage Revealed Silver.
-      KingsCourtRabbleExpandVillage put Silver into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 4 all together.
-        KingsCourtRabbleExpandVillage Revealed Kings Court.
-      KingsCourtRabbleExpandVillage put Kings Court into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 6 all together.
-        KingsCourtRabbleExpandVillage Revealed FarmingVillage.
-      KingsCourtRabbleExpandVillage put FarmingVillage into his hand.
-  KingsCourtRabbleExpandVillage Played Kings Court.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 7 all together.
-        KingsCourtRabbleExpandVillage Revealed Copper.
-      KingsCourtRabbleExpandVillage put Copper into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 9 all together.
-        KingsCourtRabbleExpandVillage Revealed Kings Court.
-      KingsCourtRabbleExpandVillage put Kings Court into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 11 all together.
-        KingsCourtRabbleExpandVillage Revealed Copper.
-      KingsCourtRabbleExpandVillage put Copper into his hand.
-  KingsCourtRabbleExpandVillage Played Kings Court.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 12 all together.
-        KingsCourtRabbleExpandVillage Revealed Estate.
-        KingsCourtRabbleExpandVillage Revealed Copper.
-      KingsCourtRabbleExpandVillage put Copper into his hand.
-      KingsCourtRabbleExpandVillage Discarded Estate.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 14 all together.
-        KingsCourtRabbleExpandVillage Revealed Silver.
-      KingsCourtRabbleExpandVillage put Silver into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 16 all together.
-        KingsCourtRabbleExpandVillage Revealed FarmingVillage.
-      KingsCourtRabbleExpandVillage put FarmingVillage into his hand.
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 17 all together.
-      KingsCourtRabbleExpandVillage Revealed Copper.
-    KingsCourtRabbleExpandVillage put Copper into his hand.
-  KingsCourtRabbleExpandVillage Played Silver.
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Copper,Estate,Province,Silver,Silver,
+  BigMoneyWithCard<Smugglers> Played Silver.
     +2 Coin = 2 all together.
-  KingsCourtRabbleExpandVillage Played Silver.
+  BigMoneyWithCard<Smugglers> Played Silver.
     +2 Coin = 4 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 5 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 6 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 7 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 8 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 9 all together.
-  KingsCourtRabbleExpandVillage bought Platinum.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded Contraband.
-  KingsCourtRabbleExpandVillage Drew Province into hand.
-  KingsCourtRabbleExpandVillage Drew Silver into hand.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage Drew Kings Court into hand.
-  KingsCourtRabbleExpandVillage Drew Expand into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(5), Estate(1), Expand(1), FarmingVillage(5), Kings Court(4), Platinum(1), Province(1), Silver(3), 
+  BigMoneyWithCard<Smugglers> bought Duchy.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> Discarded Province.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> Drew Province into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(6), Province(3), Silver(7), Smugglers(1), 
 
 BigMoney begins turn
-With hand: Copper,Estate,Gold,Province,Silver,
+With hand: Copper,Gold,Gold,Silver,Silver,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
   BigMoney Played Silver.
-    +2 Coin = 5 all together.
+    +2 Coin = 8 all together.
+  BigMoney Played Silver.
+    +2 Coin = 10 all together.
   BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
+    +1 Coin = 11 all together.
+  BigMoney bought Province.
   BigMoney Discarded Copper.
   BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
   BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Province.
+  BigMoney Discarded Gold.
+  BigMoney Drew Province into hand.
+  BigMoney reshuffled
+  BigMoney Drew Duchy into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(2), Silver(8), 
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(6), Province(4), Silver(4), 
 
 ROUND 17
 -------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Expand,FarmingVillage,Kings Court,Province,Silver,
-  KingsCourtRabbleExpandVillage Played Kings Court.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 2 all together.
-        KingsCourtRabbleExpandVillage reshuffled
-        KingsCourtRabbleExpandVillage Revealed Copper.
-      KingsCourtRabbleExpandVillage put Copper into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 4 all together.
-        KingsCourtRabbleExpandVillage Revealed FarmingVillage.
-      KingsCourtRabbleExpandVillage put FarmingVillage into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 6 all together.
-        KingsCourtRabbleExpandVillage Revealed FarmingVillage.
-      KingsCourtRabbleExpandVillage put FarmingVillage into his hand.
-  KingsCourtRabbleExpandVillage Played Expand.
-    KingsCourtRabbleExpandVillage trashed Copper.
-    KingsCourtRabbleExpandVillage gained Silver.
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 6 all together.
-      KingsCourtRabbleExpandVillage Revealed Copper.
-    KingsCourtRabbleExpandVillage put Copper into his hand.
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 7 all together.
-      KingsCourtRabbleExpandVillage Revealed Estate.
-      KingsCourtRabbleExpandVillage Revealed Kings Court.
-    KingsCourtRabbleExpandVillage put Kings Court into his hand.
-    KingsCourtRabbleExpandVillage Discarded Estate.
-  KingsCourtRabbleExpandVillage Played Kings Court.
-  KingsCourtRabbleExpandVillage Played Silver.
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Copper,Copper,Estate,Province,Silver,
+  BigMoneyWithCard<Smugglers> Played Silver.
     +2 Coin = 2 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 3 all together.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded Expand.
-  KingsCourtRabbleExpandVillage Discarded Province.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage Drew Platinum into hand.
-  KingsCourtRabbleExpandVillage Drew Silver into hand.
-  KingsCourtRabbleExpandVillage Drew Kings Court into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Contraband(1), Copper(4), Estate(1), Expand(1), FarmingVillage(5), Kings Court(4), Platinum(1), Province(1), Silver(4), 
+  BigMoneyWithCard<Smugglers> Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWithCard<Smugglers> bought Estate.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Estate.
+  BigMoneyWithCard<Smugglers> Discarded Province.
+  BigMoneyWithCard<Smugglers> Drew Gold into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Smugglers into hand.
+  BigMoneyWithCard<Smugglers> Drew Gold into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(6), Province(3), Silver(7), Smugglers(1), 
 
 BigMoney begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
+With hand: Copper,Duchy,Province,Province,Silver,
   BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
+    +2 Coin = 2 all together.
   BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
+    +1 Coin = 3 all together.
+  BigMoney bought Estate.
   BigMoney Discarded Copper.
   BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Drew Silver into hand.
+  BigMoney Discarded Duchy.
+  BigMoney Discarded Province.
+  BigMoney Discarded Province.
+  BigMoney Drew Estate into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(3), Silver(8), 
+  BigMoney Drew Province into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(4), Gold(6), Province(4), Silver(4), 
 
 ROUND 18
 -------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Copper,FarmingVillage,Kings Court,Platinum,Silver,
-  KingsCourtRabbleExpandVillage Played Kings Court.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 2 all together.
-        KingsCourtRabbleExpandVillage Revealed Kings Court.
-      KingsCourtRabbleExpandVillage put Kings Court into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 4 all together.
-        KingsCourtRabbleExpandVillage Revealed Silver.
-      KingsCourtRabbleExpandVillage put Silver into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 6 all together.
-        KingsCourtRabbleExpandVillage Revealed Copper.
-      KingsCourtRabbleExpandVillage put Copper into his hand.
-  KingsCourtRabbleExpandVillage Played Kings Court.
-  KingsCourtRabbleExpandVillage Played Platinum.
-    +5 Coin = 5 all together.
-  KingsCourtRabbleExpandVillage Played Silver.
-    +2 Coin = 7 all together.
-  KingsCourtRabbleExpandVillage Played Silver.
-    +2 Coin = 9 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 10 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 11 all together.
-  KingsCourtRabbleExpandVillage bought Colony.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Platinum.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Contraband into hand.
-  KingsCourtRabbleExpandVillage reshuffled
-  KingsCourtRabbleExpandVillage Drew Province into hand.
-  KingsCourtRabbleExpandVillage Drew Kings Court into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Colony(1), Contraband(1), Copper(4), Estate(1), Expand(1), FarmingVillage(5), Kings Court(4), Platinum(1), Province(1), Silver(4), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Silver,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Silver.
-    +2 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Province into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(4), Silver(8), 
-
-ROUND 19
--------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Contraband,Copper,FarmingVillage,Kings Court,Province,
-  KingsCourtRabbleExpandVillage Played Kings Court.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 2 all together.
-        KingsCourtRabbleExpandVillage Revealed Estate.
-        KingsCourtRabbleExpandVillage Revealed Expand.
-      KingsCourtRabbleExpandVillage put Expand into his hand.
-      KingsCourtRabbleExpandVillage Discarded Estate.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 4 all together.
-        KingsCourtRabbleExpandVillage Revealed Silver.
-      KingsCourtRabbleExpandVillage put Silver into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 6 all together.
-        KingsCourtRabbleExpandVillage Revealed FarmingVillage.
-      KingsCourtRabbleExpandVillage put FarmingVillage into his hand.
-  KingsCourtRabbleExpandVillage Played Expand.
-    KingsCourtRabbleExpandVillage trashed Copper.
-    KingsCourtRabbleExpandVillage gained Silver.
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 6 all together.
-      KingsCourtRabbleExpandVillage Revealed Silver.
-    KingsCourtRabbleExpandVillage put Silver into his hand.
-  KingsCourtRabbleExpandVillage Played Contraband.
-    +1 Buys = 2 all together.
+BigMoneyWithCard<Smugglers> begins turn
+With hand: Copper,Gold,Gold,Silver,Smugglers,
+  BigMoneyWithCard<Smugglers> Played Smugglers.
+    BigMoneyWithCard<Smugglers> gained Estate.
+  BigMoneyWithCard<Smugglers> Played Gold.
     +3 Coin = 3 all together.
-  KingsCourtRabbleExpandVillage Played Silver.
-    +2 Coin = 5 all together.
-  KingsCourtRabbleExpandVillage Played Silver.
-    +2 Coin = 7 all together.
-  KingsCourtRabbleExpandVillage bought Kings Court.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded Expand.
-  KingsCourtRabbleExpandVillage Discarded Contraband.
-  KingsCourtRabbleExpandVillage Discarded Province.
-  KingsCourtRabbleExpandVillage Drew Copper into hand.
-  KingsCourtRabbleExpandVillage Drew Silver into hand.
-  KingsCourtRabbleExpandVillage Drew Silver into hand.
-  KingsCourtRabbleExpandVillage Drew Kings Court into hand.
-  KingsCourtRabbleExpandVillage Drew Kings Court into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Colony(1), Contraband(1), Copper(3), Estate(1), Expand(1), FarmingVillage(5), Kings Court(5), Platinum(1), Province(1), Silver(5), 
-
-BigMoney begins turn
-With hand: Copper,Gold,Province,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Province.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(5), Silver(8), 
-
-ROUND 20
--------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Copper,Kings Court,Kings Court,Silver,Silver,
-  KingsCourtRabbleExpandVillage Played Kings Court.
-    KingsCourtRabbleExpandVillage Played Kings Court.
-    KingsCourtRabbleExpandVillage Played Kings Court.
-    KingsCourtRabbleExpandVillage Played Kings Court.
-  KingsCourtRabbleExpandVillage Played Silver.
-    +2 Coin = 2 all together.
-  KingsCourtRabbleExpandVillage Played Silver.
-    +2 Coin = 4 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 5 all together.
-  KingsCourtRabbleExpandVillage bought FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Drew Platinum into hand.
-  KingsCourtRabbleExpandVillage Drew Colony into hand.
-  KingsCourtRabbleExpandVillage Drew Kings Court into hand.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Colony(1), Contraband(1), Copper(3), Estate(1), Expand(1), FarmingVillage(6), Kings Court(5), Platinum(1), Province(1), Silver(5), 
-
-BigMoney begins turn
-With hand: Copper,Estate,Gold,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
+  BigMoneyWithCard<Smugglers> Played Gold.
     +3 Coin = 6 all together.
-  BigMoney Played Silver.
+  BigMoneyWithCard<Smugglers> Played Silver.
     +2 Coin = 8 all together.
-  BigMoney Played Copper.
+  BigMoneyWithCard<Smugglers> Played Copper.
     +1 Coin = 9 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(6), Silver(8), 
+  BigMoneyWithCard<Smugglers> bought Province.
+  BigMoneyWithCard<Smugglers> Discarded Copper.
+  BigMoneyWithCard<Smugglers> Discarded Silver.
+  BigMoneyWithCard<Smugglers> Discarded Gold.
+  BigMoneyWithCard<Smugglers> Discarded Gold.
+  BigMoneyWithCard<Smugglers> Discarded Smugglers.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Silver into hand.
+  BigMoneyWithCard<Smugglers> Drew Copper into hand.
+  BigMoneyWithCard<Smugglers> Drew Estate into hand.
+  BigMoneyWithCard<Smugglers> Drew Duchy into hand.
+  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Duchy(2), Estate(5), Gold(6), Province(4), Silver(7), Smugglers(1), 
 
-ROUND 21
--------------
-KingsCourtRabbleExpandVillage begins turn
-With hand: Colony,FarmingVillage,FarmingVillage,Kings Court,Platinum,
-  KingsCourtRabbleExpandVillage Played Kings Court.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 2 all together.
-        KingsCourtRabbleExpandVillage Revealed FarmingVillage.
-      KingsCourtRabbleExpandVillage put FarmingVillage into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 4 all together.
-        KingsCourtRabbleExpandVillage Revealed Copper.
-      KingsCourtRabbleExpandVillage put Copper into his hand.
-    KingsCourtRabbleExpandVillage Played FarmingVillage.
-      +2 Actions = 6 all together.
-        KingsCourtRabbleExpandVillage Revealed Copper.
-      KingsCourtRabbleExpandVillage put Copper into his hand.
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 7 all together.
-      KingsCourtRabbleExpandVillage reshuffled
-      KingsCourtRabbleExpandVillage Revealed Silver.
-    KingsCourtRabbleExpandVillage put Silver into his hand.
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 8 all together.
-      KingsCourtRabbleExpandVillage Revealed Province.
-      KingsCourtRabbleExpandVillage Revealed FarmingVillage.
-    KingsCourtRabbleExpandVillage put FarmingVillage into his hand.
-    KingsCourtRabbleExpandVillage Discarded Province.
-  KingsCourtRabbleExpandVillage Played FarmingVillage.
-    +2 Actions = 9 all together.
-      KingsCourtRabbleExpandVillage Revealed Silver.
-    KingsCourtRabbleExpandVillage put Silver into his hand.
-  KingsCourtRabbleExpandVillage Played Platinum.
-    +5 Coin = 5 all together.
-  KingsCourtRabbleExpandVillage Played Silver.
-    +2 Coin = 7 all together.
-  KingsCourtRabbleExpandVillage Played Silver.
-    +2 Coin = 9 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 10 all together.
-  KingsCourtRabbleExpandVillage Played Copper.
-    +1 Coin = 11 all together.
-  KingsCourtRabbleExpandVillage bought Colony.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Copper.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Silver.
-  KingsCourtRabbleExpandVillage Discarded Platinum.
-  KingsCourtRabbleExpandVillage Discarded Kings Court.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded FarmingVillage.
-  KingsCourtRabbleExpandVillage Discarded Colony.
-  KingsCourtRabbleExpandVillage Drew Kings Court into hand.
-  KingsCourtRabbleExpandVillage Drew Estate into hand.
-  KingsCourtRabbleExpandVillage Drew FarmingVillage into hand.
-  KingsCourtRabbleExpandVillage Drew Kings Court into hand.
-  KingsCourtRabbleExpandVillage Drew Kings Court into hand.
-  KingsCourtRabbleExpandVillage ends turn with deck: Colony(2), Contraband(1), Copper(3), Estate(1), Expand(1), FarmingVillage(6), Kings Court(5), Platinum(1), Province(1), Silver(5), 
+Game ended in 18 turns.
+BigMoneyWithCard<Smugglers> Won!
+BigMoneyWithCard<Smugglers> total score: 35
+  Copper(7), Duchy(2), Estate(5), Gold(6), Province(4), Silver(7), Smugglers(1), 
+BigMoney total score: 31
+  Copper(7), Duchy(1), Estate(4), Gold(6), Province(4), Silver(4), 
+Trash contains: 
 
-BigMoney begins turn
-With hand: Estate,Gold,Gold,Province,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Silver.
-    +2 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Province.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(7), Silver(8), 
-
-Game ended in 21 turns.
-BigMoney Won!
-KingsCourtRabbleExpandVillage total score: 27
-  Colony(2), Contraband(1), Copper(3), Estate(1), Expand(1), FarmingVillage(6), Kings Court(5), Platinum(1), Province(1), Silver(5), 
-BigMoney total score: 45
-  Copper(7), Estate(3), Gold(5), Province(7), Silver(8), 
-Trash contains: Copper(4), Estate(2), Rabble(1), 
-
-KingsCourtRabbleExpandVillage GainSequence is:
-  FarmingVillage, Silver, Contraband, Rabble, FarmingVillage, 
-  Expand, Kings Court, FarmingVillage, FarmingVillage, Kings Court, 
-  FarmingVillage, Kings Court, Kings Court, Silver, Silver, 
-  Province, Platinum, Silver, Colony, Silver, 
-  Kings Court, FarmingVillage, Colony, 
+BigMoneyWithCard<Smugglers> GainSequence is:
+  Smugglers, Silver, Silver, Gold, Silver, 
+  Silver, Gold, Silver, Gold, Province, 
+  Gold, Silver, Silver, Gold, Gold, 
+  Province, Duchy, Province, Duchy, Estate, 
+  Estate, Province, 
 BigMoney GainSequence is:
-  Silver, Silver, Gold, Silver, Silver, 
-  Gold, Silver, Silver, Silver, Gold, 
-  Province, Silver, Gold, Province, Gold, 
-  Province, Province, Province, Province, Province, 
-
+  Silver, Silver, Gold, Gold, Silver, 
+  Gold, Gold, Silver, Province, Gold, 
+  Gold, Province, Duchy, Province, Province, 
+  Estate, 

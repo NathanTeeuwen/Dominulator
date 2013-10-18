@@ -75,6 +75,9 @@ namespace Dominion
         {
             get
             {
+                if (index < 0)
+                    index += this.players.Length;
+
                 int playerIndex = (this.currentPlayerIndex + index) % this.players.Length;
                 return players[playerIndex];
             }

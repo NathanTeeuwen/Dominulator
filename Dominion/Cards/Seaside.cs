@@ -456,8 +456,22 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            // TODO
-            throw new NotImplementedException();
+            Card smuggledCard = null;
+
+            var smuggleTargets = gameState.players.PlayerRight.CardsGainedThisTurn.Where(card =>
+                card.CurrentCoinCost(currentPlayer) <= 6 && card.potionCost == 0 && gameState.CardGameSubset.HasCard(card));
+
+            if (smuggleTargets.Count() == 1)
+            {
+                smuggledCard = currentPlayer.GainCardFromSupply(gameState, smuggleTargets.First());
+            }
+
+            
+            if (smuggleTargets.Count() > 1)
+            {
+                smuggledCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => smuggleTargets.Contains(card),
+                    "Choose a card to smuggle", isOptional: false);
+            }
         }
     }   
 
@@ -528,8 +542,12 @@ namespace Dominion.CardTypes
 
         private new void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
-            //todo
-            throw new NotImplementedException();
+            if (!currentPlayer.CardsBoughtThisTurn.AnyWhere(card => card.isVictory))
+            {
+                currentPlayer.RequestPlayerTopDeckCardsFromPlay(gameState,
+                    acceptableCard => acceptableCard == Treasury.card,
+                    isOptional: true);
+            }
         }
     }
 
