@@ -113,7 +113,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.MoveCardFromPlayToTrash(gameState);
-            PileOfCards cardPile = currentPlayer.RequestPlayerChooseCardPileFromSupply(gameState);
+            PileOfCards cardPile = currentPlayer.RequestPlayerEmbargoPileFromSupply(gameState);
             gameState.AddEmbargoTokenToPile(cardPile);
         }
     }
@@ -497,14 +497,16 @@ namespace Dominion.CardTypes
             if (currentPlayer.hand.Any)
             {
                 currentPlayer.DiscardHand(gameState);
-                currentPlayer.actionsToExecuteAtBeginningOfNextTurn.Add(delegate()
-                {
-                    currentPlayer.DrawAdditionalCardsIntoHand(5);
-                    currentPlayer.AddBuys(1);
-                    currentPlayer.AddActions(1);
-                });
+                currentPlayer.actionsToExecuteAtBeginningOfNextTurn.Add(DelayedAction);                
             }
-        }        
+        }
+
+        private static void DelayedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.DrawAdditionalCardsIntoHand(5);
+            currentPlayer.AddBuys(1);
+            currentPlayer.AddActions(1);
+        }
     }
 
     public class TreasureMap

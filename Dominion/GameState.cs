@@ -251,9 +251,9 @@ namespace Dominion
 
         private void DoActionsQueuedFromPreviousTurn(PlayerState currentPlayer)
         {
-            foreach (Action action in currentPlayer.actionsToExecuteAtBeginningOfNextTurn)
+            foreach (GameStateMethod method in currentPlayer.actionsToExecuteAtBeginningOfNextTurn)
             {
-                action();
+                method(currentPlayer, this);
             }
             currentPlayer.actionsToExecuteAtBeginningOfNextTurn.Clear();
         }
@@ -396,6 +396,11 @@ namespace Dominion
             {
                 throw new Exception("Card type does not have a special pile");
             }
+        }
+
+        public PileOfCards GetSupplyPile(Card cardType)
+        {
+            return GetPile(this.supplyPiles, cardType);
         }
 
         public PileOfCards GetPile(Card cardType)

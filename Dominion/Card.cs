@@ -176,6 +176,10 @@ namespace Dominion
             return (effectiveCost >= 0) ? effectiveCost : 0;
         }
 
+        virtual public Card CardToMimick(PlayerState currentPlayer, GameState gameState)
+        {
+            return this;
+        }
         
         virtual public void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {            

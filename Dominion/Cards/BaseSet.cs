@@ -561,6 +561,8 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
+            // TODO  Make sure throne room, Kings Court and procession stay in play when they play a duration card.
+            // throw new NotImplementedException
             Card cardToPlay = currentPlayer.RequestPlayerChooseCardToRemoveFromHandForPlay(gameState, Delegates.IsActionCardPredicate, isTreasure: false, isAction: true, isOptional: false);
             if (cardToPlay != null)
             {

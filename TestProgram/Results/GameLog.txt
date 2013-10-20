@@ -1,893 +1,1611 @@
-BigMoneyWithCard<Smugglers> gained Copper.
-BigMoneyWithCard<Smugglers> gained Copper.
-BigMoneyWithCard<Smugglers> gained Copper.
-BigMoneyWithCard<Smugglers> gained Copper.
-BigMoneyWithCard<Smugglers> gained Copper.
-BigMoneyWithCard<Smugglers> gained Copper.
-BigMoneyWithCard<Smugglers> gained Copper.
-BigMoneyWithCard<Smugglers> gained Estate.
-BigMoneyWithCard<Smugglers> gained Estate.
-BigMoneyWithCard<Smugglers> gained Estate.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Estate.
-BigMoney gained Estate.
-BigMoney gained Estate.
-BigMoneyWithCard<Smugglers> reshuffled
-BigMoneyWithCard<Smugglers> Drew Copper into hand.
-BigMoneyWithCard<Smugglers> Drew Copper into hand.
-BigMoneyWithCard<Smugglers> Drew Copper into hand.
-BigMoneyWithCard<Smugglers> Drew Estate into hand.
-BigMoneyWithCard<Smugglers> Drew Copper into hand.
-BigMoney reshuffled
-BigMoney Drew Estate into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Estate into hand.
+ColonyFamiliarMine gained Copper.
+ColonyFamiliarMine gained Copper.
+ColonyFamiliarMine gained Copper.
+ColonyFamiliarMine gained Copper.
+ColonyFamiliarMine gained Copper.
+ColonyFamiliarMine gained Copper.
+ColonyFamiliarMine gained Copper.
+ColonyFamiliarMine gained Estate.
+ColonyFamiliarMine gained Estate.
+ColonyFamiliarMine gained Estate.
+MineHoard gained Copper.
+MineHoard gained Copper.
+MineHoard gained Copper.
+MineHoard gained Copper.
+MineHoard gained Copper.
+MineHoard gained Copper.
+MineHoard gained Copper.
+MineHoard gained Estate.
+MineHoard gained Estate.
+MineHoard gained Estate.
+ColonyFamiliarMine reshuffled
+ColonyFamiliarMine Drew Copper into hand.
+ColonyFamiliarMine Drew Copper into hand.
+ColonyFamiliarMine Drew Copper into hand.
+ColonyFamiliarMine Drew Estate into hand.
+ColonyFamiliarMine Drew Copper into hand.
+MineHoard reshuffled
+MineHoard Drew Estate into hand.
+MineHoard Drew Copper into hand.
+MineHoard Drew Copper into hand.
+MineHoard Drew Copper into hand.
+MineHoard Drew Estate into hand.
 ROUND 1
 -------------
-BigMoneyWithCard<Smugglers> begins turn
+ColonyFamiliarMine begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<Smugglers> bought Smugglers.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Smugglers(1), 
+  ColonyFamiliarMine bought Potion.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(7), Estate(3), Potion(1), 
 
-BigMoney begins turn
+MineHoard begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoney Played Copper.
+  MineHoard Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  MineHoard Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  MineHoard Played Copper.
     +1 Coin = 3 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  MineHoard bought Silver.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Estate.
+  MineHoard Discarded Estate.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-BigMoneyWithCard<Smugglers> begins turn
+ColonyFamiliarMine begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Smugglers> bought Silver.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> reshuffled
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Silver(1), Smugglers(1), 
+  ColonyFamiliarMine bought Silver.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine reshuffled
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(7), Estate(3), Potion(1), Silver(1), 
 
-BigMoney begins turn
+MineHoard begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoney Played Copper.
+  MineHoard Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  MineHoard Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  MineHoard Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  MineHoard Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  MineHoard bought Silver.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Estate.
+  MineHoard reshuffled
+  MineHoard Drew Silver into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Silver into hand.
+  MineHoard ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-BigMoneyWithCard<Smugglers> begins turn
+ColonyFamiliarMine begins turn
 With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyWithCard<Smugglers> Played Silver.
+  ColonyFamiliarMine Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<Smugglers> bought Silver.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Smugglers into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Silver(2), Smugglers(1), 
+  ColonyFamiliarMine bought Mine.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Potion into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(7), Estate(3), Mine(1), Potion(1), Silver(1), 
 
-BigMoney begins turn
+MineHoard begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoney Played Silver.
+  MineHoard Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Silver.
+  MineHoard Played Silver.
     +2 Coin = 4 all together.
-  BigMoney Played Copper.
+  MineHoard Played Copper.
     +1 Coin = 5 all together.
-  BigMoney Played Copper.
+  MineHoard Played Copper.
     +1 Coin = 6 all together.
-  BigMoney Played Copper.
+  MineHoard Played Copper.
     +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+  MineHoard bought Hoard.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Silver.
+  MineHoard Drew Estate into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard ends turn with deck: Copper(7), Estate(3), Hoard(1), Silver(2), 
 
 ROUND 4
 -------------
-BigMoneyWithCard<Smugglers> begins turn
-With hand: Copper,Copper,Copper,Estate,Smugglers,
-  BigMoneyWithCard<Smugglers> Played Smugglers.
-    BigMoneyWithCard<Smugglers> gained Gold.
-  BigMoneyWithCard<Smugglers> Played Copper.
+ColonyFamiliarMine begins turn
+With hand: Copper,Copper,Copper,Estate,Potion,
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Smugglers> bought Silver.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Smugglers.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> reshuffled
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), Smugglers(1), 
+  ColonyFamiliarMine Played Potion.
+    +1 Potions = 1 all together.
+  ColonyFamiliarMine bought Familiar.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Potion.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine reshuffled
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(7), Estate(3), Familiar(1), Mine(1), Potion(1), Silver(1), 
 
-BigMoney begins turn
+MineHoard begins turn
 With hand: Copper,Copper,Estate,Estate,Estate,
-  BigMoney Played Copper.
+  MineHoard Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  MineHoard Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Estate.
+  MineHoard Discarded Estate.
+  MineHoard Discarded Estate.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard reshuffled
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard ends turn with deck: Copper(7), Estate(3), Hoard(1), Silver(2), 
 
 ROUND 5
 -------------
-BigMoneyWithCard<Smugglers> begins turn
+ColonyFamiliarMine begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Smugglers> bought Silver.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), Smugglers(1), 
+  ColonyFamiliarMine bought Silver.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Potion into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Mine into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(7), Estate(3), Familiar(1), Mine(1), Potion(1), Silver(2), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Copper.
+MineHoard begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  MineHoard Played Copper.
+    +1 Coin = 1 all together.
+  MineHoard Played Copper.
+    +1 Coin = 2 all together.
+  MineHoard Played Copper.
+    +1 Coin = 3 all together.
+  MineHoard Played Copper.
     +1 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(2), 
+  MineHoard bought Silver.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Estate.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Silver into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard Drew Hoard into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard ends turn with deck: Copper(7), Estate(3), Hoard(1), Silver(3), 
 
 ROUND 6
 -------------
-BigMoneyWithCard<Smugglers> begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Smugglers> bought Gold.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> Drew Smugglers into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Gold into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), Smugglers(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoney Played Copper.
+ColonyFamiliarMine begins turn
+With hand: Copper,Copper,Familiar,Mine,Potion,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Copper into hand.
+    MineHoard gained Curse.
+  ColonyFamiliarMine Played Mine.
+    ColonyFamiliarMine trashed Copper.
+    ColonyFamiliarMine gained Familiar.
+      ... and placed card in hand
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  ColonyFamiliarMine Played Potion.
+    +1 Potions = 1 all together.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Potion.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Discarded Mine.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine reshuffled
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(6), Estate(3), Familiar(2), Mine(1), Potion(1), Silver(2), 
+
+MineHoard begins turn
+With hand: Copper,Copper,Estate,Hoard,Silver,
+  MineHoard Played Silver.
+    +2 Coin = 2 all together.
+  MineHoard Played Copper.
     +1 Coin = 3 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(3), 
+  MineHoard Played Copper.
+    +1 Coin = 4 all together.
+  MineHoard Played Hoard.
+    +2 Coin = 6 all together.
+  MineHoard bought Duchy.
+    MineHoard gained Gold.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Hoard.
+  MineHoard Discarded Estate.
+  MineHoard Drew Silver into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard reshuffled
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Silver into hand.
+  MineHoard ends turn with deck: Copper(7), Curse(1), Duchy(1), Estate(3), Gold(1), Hoard(1), Silver(3), 
 
 ROUND 7
 -------------
-BigMoneyWithCard<Smugglers> begins turn
-With hand: Copper,Copper,Gold,Silver,Smugglers,
-  BigMoneyWithCard<Smugglers> Played Smugglers.
-    BigMoneyWithCard<Smugglers> gained Silver.
-  BigMoneyWithCard<Smugglers> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
+ColonyFamiliarMine begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 2 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 4 all together.
+  ColonyFamiliarMine Played Copper.
+    +1 Coin = 5 all together.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Smugglers> bought Gold.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Gold.
-  BigMoneyWithCard<Smugglers> Discarded Smugglers.
-  BigMoneyWithCard<Smugglers> reshuffled
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), Smugglers(1), 
+  ColonyFamiliarMine bought Gold.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Potion into hand.
+  ColonyFamiliarMine Drew Mine into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(6), Estate(3), Familiar(2), Gold(1), Mine(1), Potion(1), Silver(2), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Silver.
-    +2 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney Played Copper.
-    +1 Coin = 9 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(3), 
+MineHoard begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  MineHoard Played Silver.
+    +2 Coin = 2 all together.
+  MineHoard Played Silver.
+    +2 Coin = 4 all together.
+  MineHoard Played Copper.
+    +1 Coin = 5 all together.
+  MineHoard Played Copper.
+    +1 Coin = 6 all together.
+  MineHoard bought Hoard.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Estate.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Duchy into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Hoard into hand.
+  MineHoard ends turn with deck: Copper(7), Curse(1), Duchy(1), Estate(3), Gold(1), Hoard(2), Silver(3), 
 
 ROUND 8
 -------------
-BigMoneyWithCard<Smugglers> begins turn
-With hand: Copper,Silver,Silver,Silver,Silver,
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyWithCard<Smugglers> bought Province.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Drew Smugglers into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> Drew Gold into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(5), Smugglers(1), 
+ColonyFamiliarMine begins turn
+With hand: Estate,Estate,Familiar,Mine,Potion,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Copper into hand.
+    MineHoard gained Curse.
+  ColonyFamiliarMine Played Mine.
+    ColonyFamiliarMine trashed Copper.
+    ColonyFamiliarMine gained Familiar.
+      ... and placed card in hand
+  ColonyFamiliarMine Played Potion.
+    +1 Potions = 1 all together.
+  ColonyFamiliarMine Discarded Potion.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Discarded Mine.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine reshuffled
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(5), Estate(3), Familiar(3), Gold(1), Mine(1), Potion(1), Silver(2), 
 
-BigMoney begins turn
-With hand: Copper,Estate,Estate,Gold,Silver,
-  BigMoney Played Gold.
+MineHoard begins turn
+With hand: Copper,Copper,Duchy,Gold,Hoard,
+  MineHoard Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(3), 
+  MineHoard Played Copper.
+    +1 Coin = 4 all together.
+  MineHoard Played Copper.
+    +1 Coin = 5 all together.
+  MineHoard Played Hoard.
+    +2 Coin = 7 all together.
+  MineHoard bought Duchy.
+    MineHoard gained Gold.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Hoard.
+  MineHoard Discarded Duchy.
+  MineHoard Drew Silver into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard ends turn with deck: Copper(7), Curse(2), Duchy(2), Estate(3), Gold(2), Hoard(2), Silver(3), 
 
 ROUND 9
 -------------
-BigMoneyWithCard<Smugglers> begins turn
-With hand: Copper,Copper,Estate,Gold,Smugglers,
-  BigMoneyWithCard<Smugglers> Played Smugglers.
-    BigMoneyWithCard<Smugglers> gained Gold.
-  BigMoneyWithCard<Smugglers> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Smugglers> bought Silver.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Gold.
-  BigMoneyWithCard<Smugglers> Discarded Smugglers.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(6), Smugglers(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoney Played Copper.
+ColonyFamiliarMine begins turn
+With hand: Copper,Copper,Copper,Copper,Familiar,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Potion into hand.
+    MineHoard gained Curse.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney reshuffled
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(4), 
+  ColonyFamiliarMine Played Potion.
+    +1 Potions = 1 all together.
+  ColonyFamiliarMine bought Silver.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Potion.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Mine into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(5), Estate(3), Familiar(3), Gold(1), Mine(1), Potion(1), Silver(3), 
+
+MineHoard begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  MineHoard Played Silver.
+    +2 Coin = 2 all together.
+  MineHoard Played Copper.
+    +1 Coin = 3 all together.
+  MineHoard Played Copper.
+    +1 Coin = 4 all together.
+  MineHoard Played Copper.
+    +1 Coin = 5 all together.
+  MineHoard bought Mine.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Estate.
+  MineHoard Drew Estate into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard reshuffled
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard ends turn with deck: Copper(7), Curse(3), Duchy(2), Estate(3), Gold(2), Hoard(2), Mine(1), Silver(3), 
 
 ROUND 10
 -------------
-BigMoneyWithCard<Smugglers> begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Smugglers> bought Silver.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> Drew Gold into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> Drew Gold into hand.
-  BigMoneyWithCard<Smugglers> reshuffled
-  BigMoneyWithCard<Smugglers> Drew Province into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(7), Smugglers(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Gold,
-  BigMoney Played Gold.
+ColonyFamiliarMine begins turn
+With hand: Estate,Estate,Familiar,Gold,Mine,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Silver into hand.
+    MineHoard gained Curse.
+  ColonyFamiliarMine Played Mine.
+    ColonyFamiliarMine trashed Silver.
+    ColonyFamiliarMine gained Gold.
+      ... and placed card in hand
+  ColonyFamiliarMine Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Gold.
+  ColonyFamiliarMine Played Gold.
     +3 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(4), 
+  ColonyFamiliarMine bought Gold.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Discarded Mine.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine reshuffled
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(5), Estate(3), Familiar(3), Gold(3), Mine(1), Potion(1), Silver(2), 
+
+MineHoard begins turn
+With hand: Copper,Copper,Curse,Curse,Estate,
+  MineHoard Played Copper.
+    +1 Coin = 1 all together.
+  MineHoard Played Copper.
+    +1 Coin = 2 all together.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Estate.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Silver into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard ends turn with deck: Copper(7), Curse(4), Duchy(2), Estate(3), Gold(2), Hoard(2), Mine(1), Silver(3), 
 
 ROUND 11
 -------------
-BigMoneyWithCard<Smugglers> begins turn
-With hand: Copper,Estate,Gold,Gold,Province,
-  BigMoneyWithCard<Smugglers> Played Gold.
+ColonyFamiliarMine begins turn
+With hand: Copper,Estate,Familiar,Familiar,Silver,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Gold into hand.
+    MineHoard gained Curse.
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Potion into hand.
+    MineHoard gained Curse.
+  ColonyFamiliarMine Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyWithCard<Smugglers> Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Smugglers> bought Gold.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Gold.
-  BigMoneyWithCard<Smugglers> Discarded Gold.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> Discarded Province.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(7), Smugglers(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
+  ColonyFamiliarMine Played Silver.
     +2 Coin = 5 all together.
-  BigMoney Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 6 all together.
-  BigMoney Played Copper.
+  ColonyFamiliarMine Played Potion.
+    +1 Potions = 1 all together.
+  ColonyFamiliarMine bought Gold.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Potion.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Drew Mine into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(5), Estate(3), Familiar(3), Gold(4), Mine(1), Potion(1), Silver(2), 
+
+MineHoard begins turn
+With hand: Copper,Copper,Curse,Gold,Silver,
+  MineHoard Played Gold.
+    +3 Coin = 3 all together.
+  MineHoard Played Silver.
+    +2 Coin = 5 all together.
+  MineHoard Played Copper.
+    +1 Coin = 6 all together.
+  MineHoard Played Copper.
     +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(4), 
+  MineHoard bought Hoard.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Curse.
+  MineHoard Drew Mine into hand.
+  MineHoard Drew Silver into hand.
+  MineHoard Drew Silver into hand.
+  MineHoard Drew Hoard into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard ends turn with deck: Copper(7), Curse(6), Duchy(2), Estate(3), Gold(2), Hoard(3), Mine(1), Silver(3), 
 
 ROUND 12
 -------------
-BigMoneyWithCard<Smugglers> begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Smugglers> bought Gold.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Gold into hand.
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(6), Province(1), Silver(7), Smugglers(1), 
+ColonyFamiliarMine begins turn
+With hand: Copper,Familiar,Gold,Gold,Mine,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Copper into hand.
+    MineHoard gained Curse.
+  ColonyFamiliarMine Played Mine.
+    ColonyFamiliarMine trashed Copper.
+    ColonyFamiliarMine gained Silver.
+      ... and placed card in hand
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 3 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 6 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 8 all together.
+  ColonyFamiliarMine Played Copper.
+    +1 Coin = 9 all together.
+  ColonyFamiliarMine bought Platinum.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Discarded Mine.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(4), Estate(3), Familiar(3), Gold(4), Mine(1), Platinum(1), Potion(1), Silver(3), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Estate.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(6), Province(1), Silver(4), 
+MineHoard begins turn
+With hand: Gold,Hoard,Mine,Silver,Silver,
+  MineHoard Played Mine.
+    MineHoard trashed Silver.
+    MineHoard gained Hoard.
+      ... and placed card in hand
+  MineHoard Played Gold.
+    +3 Coin = 3 all together.
+  MineHoard Played Silver.
+    +2 Coin = 5 all together.
+  MineHoard Played Hoard.
+    +2 Coin = 7 all together.
+  MineHoard Played Hoard.
+    +2 Coin = 9 all together.
+  MineHoard bought Province.
+    MineHoard gained Gold.
+    MineHoard gained Gold.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Mine.
+  MineHoard Discarded Hoard.
+  MineHoard Discarded Hoard.
+  MineHoard Drew Hoard into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard Drew Duchy into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard ends turn with deck: Copper(7), Curse(7), Duchy(2), Estate(3), Gold(4), Hoard(4), Mine(1), Province(1), Silver(2), 
 
 ROUND 13
 -------------
-BigMoneyWithCard<Smugglers> begins turn
-With hand: Estate,Gold,Silver,Silver,Silver,
-  BigMoneyWithCard<Smugglers> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 9 all together.
-  BigMoneyWithCard<Smugglers> bought Province.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Gold.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Smugglers into hand.
-  BigMoneyWithCard<Smugglers> Drew Gold into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Estate(3), Gold(6), Province(2), Silver(7), Smugglers(1), 
+ColonyFamiliarMine begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 2 all together.
+  ColonyFamiliarMine Played Copper.
+    +1 Coin = 3 all together.
+  ColonyFamiliarMine Played Copper.
+    +1 Coin = 4 all together.
+  ColonyFamiliarMine bought Silver.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine reshuffled
+  ColonyFamiliarMine Drew Potion into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(4), Estate(3), Familiar(3), Gold(4), Mine(1), Platinum(1), Potion(1), Silver(4), 
 
-BigMoney begins turn
-With hand: Copper,Estate,Gold,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Silver.
-    +2 Coin = 8 all together.
-  BigMoney Played Copper.
-    +1 Coin = 9 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(6), Province(2), Silver(4), 
+MineHoard begins turn
+With hand: Copper,Duchy,Estate,Estate,Hoard,
+  MineHoard Played Copper.
+    +1 Coin = 1 all together.
+  MineHoard Played Hoard.
+    +2 Coin = 3 all together.
+  MineHoard bought Estate.
+    MineHoard gained Gold.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Hoard.
+  MineHoard Discarded Estate.
+  MineHoard Discarded Estate.
+  MineHoard Discarded Duchy.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Duchy into hand.
+  MineHoard reshuffled
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Hoard into hand.
+  MineHoard ends turn with deck: Copper(7), Curse(7), Duchy(2), Estate(4), Gold(5), Hoard(4), Mine(1), Province(1), Silver(2), 
 
 ROUND 14
 -------------
-BigMoneyWithCard<Smugglers> begins turn
-With hand: Copper,Copper,Gold,Silver,Smugglers,
-  BigMoneyWithCard<Smugglers> Played Smugglers.
-  BigMoneyWithCard<Smugglers> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Smugglers> bought Duchy.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Gold.
-  BigMoneyWithCard<Smugglers> Discarded Smugglers.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> reshuffled
-  BigMoneyWithCard<Smugglers> Drew Gold into hand.
-  BigMoneyWithCard<Smugglers> Drew Gold into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(6), Province(2), Silver(7), Smugglers(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoney Played Silver.
+ColonyFamiliarMine begins turn
+With hand: Copper,Copper,Familiar,Familiar,Potion,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Copper into hand.
+    MineHoard gained Curse.
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Silver into hand.
+    MineHoard gained Curse.
+  ColonyFamiliarMine Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 4 all together.
-  BigMoney Played Copper.
+  ColonyFamiliarMine Played Copper.
     +1 Coin = 5 all together.
-  BigMoney bought Duchy.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Estate.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(6), Province(2), Silver(4), 
+  ColonyFamiliarMine Played Potion.
+    +1 Potions = 1 all together.
+  ColonyFamiliarMine bought Mine.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Potion.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Mine into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(4), Estate(3), Familiar(3), Gold(4), Mine(2), Platinum(1), Potion(1), Silver(4), 
+
+MineHoard begins turn
+With hand: Copper,Copper,Duchy,Gold,Hoard,
+  MineHoard Played Gold.
+    +3 Coin = 3 all together.
+  MineHoard Played Copper.
+    +1 Coin = 4 all together.
+  MineHoard Played Copper.
+    +1 Coin = 5 all together.
+  MineHoard Played Hoard.
+    +2 Coin = 7 all together.
+  MineHoard bought Duchy.
+    MineHoard gained Gold.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Hoard.
+  MineHoard Discarded Duchy.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Mine into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard ends turn with deck: Copper(7), Curse(9), Duchy(3), Estate(4), Gold(6), Hoard(4), Mine(1), Province(1), Silver(2), 
 
 ROUND 15
 -------------
-BigMoneyWithCard<Smugglers> begins turn
-With hand: Copper,Copper,Gold,Gold,Silver,
-  BigMoneyWithCard<Smugglers> Played Gold.
+ColonyFamiliarMine begins turn
+With hand: Copper,Estate,Gold,Mine,Silver,
+  ColonyFamiliarMine Played Mine.
+    ColonyFamiliarMine trashed Copper.
+    ColonyFamiliarMine gained Silver.
+      ... and placed card in hand
+  ColonyFamiliarMine Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyWithCard<Smugglers> Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyWithCard<Smugglers> bought Province.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Gold.
-  BigMoneyWithCard<Smugglers> Discarded Gold.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Province into hand.
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(6), Province(3), Silver(7), Smugglers(1), 
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 5 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 7 all together.
+  ColonyFamiliarMine bought Gold.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Mine.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Drew Platinum into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(3), Estate(3), Familiar(3), Gold(5), Mine(2), Platinum(1), Potion(1), Silver(5), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Gold,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(6), Province(3), Silver(4), 
+MineHoard begins turn
+With hand: Copper,Copper,Curse,Estate,Mine,
+  MineHoard Played Mine.
+    MineHoard trashed Copper.
+    MineHoard gained Silver.
+      ... and placed card in hand
+  MineHoard Played Silver.
+    +2 Coin = 2 all together.
+  MineHoard Played Copper.
+    +1 Coin = 3 all together.
+  MineHoard bought Silver.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Mine.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Estate.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Duchy into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard ends turn with deck: Copper(6), Curse(9), Duchy(3), Estate(4), Gold(6), Hoard(4), Mine(1), Province(1), Silver(4), 
 
 ROUND 16
 -------------
-BigMoneyWithCard<Smugglers> begins turn
-With hand: Copper,Estate,Province,Silver,Silver,
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyWithCard<Smugglers> bought Duchy.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> Discarded Province.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> Drew Province into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(6), Province(3), Silver(7), Smugglers(1), 
-
-BigMoney begins turn
-With hand: Copper,Gold,Gold,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Silver.
-    +2 Coin = 8 all together.
-  BigMoney Played Silver.
+ColonyFamiliarMine begins turn
+With hand: Estate,Familiar,Gold,Platinum,Silver,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Estate into hand.
+    MineHoard gained Curse.
+  ColonyFamiliarMine Played Platinum.
+    +5 Coin = 5 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 8 all together.
+  ColonyFamiliarMine Played Silver.
     +2 Coin = 10 all together.
-  BigMoney Played Copper.
-    +1 Coin = 11 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Drew Province into hand.
-  BigMoney reshuffled
-  BigMoney Drew Duchy into hand.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(6), Province(4), Silver(4), 
+  ColonyFamiliarMine bought Platinum.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Platinum.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine reshuffled
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(3), Estate(3), Familiar(3), Gold(5), Mine(2), Platinum(2), Potion(1), Silver(5), 
+
+MineHoard begins turn
+With hand: Copper,Curse,Duchy,Gold,Gold,
+  MineHoard Played Gold.
+    +3 Coin = 3 all together.
+  MineHoard Played Gold.
+    +3 Coin = 6 all together.
+  MineHoard Played Copper.
+    +1 Coin = 7 all together.
+  MineHoard bought Hoard.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Duchy.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Province into hand.
+  MineHoard Drew Hoard into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard ends turn with deck: Copper(6), Curse(10), Duchy(3), Estate(4), Gold(6), Hoard(5), Mine(1), Province(1), Silver(4), 
 
 ROUND 17
 -------------
-BigMoneyWithCard<Smugglers> begins turn
-With hand: Copper,Copper,Estate,Province,Silver,
-  BigMoneyWithCard<Smugglers> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<Smugglers> bought Estate.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Estate.
-  BigMoneyWithCard<Smugglers> Discarded Province.
-  BigMoneyWithCard<Smugglers> Drew Gold into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Smugglers into hand.
-  BigMoneyWithCard<Smugglers> Drew Gold into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(6), Province(3), Silver(7), Smugglers(1), 
+ColonyFamiliarMine begins turn
+With hand: Estate,Gold,Gold,Silver,Silver,
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 3 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 6 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 8 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 10 all together.
+  ColonyFamiliarMine bought Platinum.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Platinum into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(3), Estate(3), Familiar(3), Gold(5), Mine(2), Platinum(3), Potion(1), Silver(5), 
 
-BigMoney begins turn
-With hand: Copper,Duchy,Province,Province,Silver,
-  BigMoney Played Silver.
+MineHoard begins turn
+With hand: Curse,Curse,Estate,Hoard,Province,
+  MineHoard Played Hoard.
     +2 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney bought Estate.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Duchy.
-  BigMoney Discarded Province.
-  BigMoney Discarded Province.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(4), Gold(6), Province(4), Silver(4), 
+  MineHoard bought Estate.
+    MineHoard gained Gold.
+  MineHoard Discarded Hoard.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Estate.
+  MineHoard Discarded Province.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard ends turn with deck: Copper(6), Curse(10), Duchy(3), Estate(5), Gold(7), Hoard(5), Mine(1), Province(1), Silver(4), 
 
 ROUND 18
 -------------
-BigMoneyWithCard<Smugglers> begins turn
-With hand: Copper,Gold,Gold,Silver,Smugglers,
-  BigMoneyWithCard<Smugglers> Played Smugglers.
-    BigMoneyWithCard<Smugglers> gained Estate.
-  BigMoneyWithCard<Smugglers> Played Gold.
+ColonyFamiliarMine begins turn
+With hand: Copper,Familiar,Familiar,Platinum,Silver,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Potion into hand.
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Played Platinum.
+    +5 Coin = 5 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 7 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 9 all together.
+  ColonyFamiliarMine Played Copper.
+    +1 Coin = 10 all together.
+  ColonyFamiliarMine Played Potion.
+    +1 Potions = 1 all together.
+  ColonyFamiliarMine bought Platinum.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Platinum.
+  ColonyFamiliarMine Discarded Potion.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Mine into hand.
+  ColonyFamiliarMine Drew Platinum into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine ends turn with deck: Copper(3), Estate(3), Familiar(3), Gold(5), Mine(2), Platinum(4), Potion(1), Silver(5), 
+
+MineHoard begins turn
+With hand: Copper,Curse,Estate,Estate,Gold,
+  MineHoard Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyWithCard<Smugglers> Played Gold.
+  MineHoard Played Copper.
+    +1 Coin = 4 all together.
+  MineHoard bought Silver.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Estate.
+  MineHoard Discarded Estate.
+  MineHoard Drew Hoard into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Silver into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Hoard into hand.
+  MineHoard ends turn with deck: Copper(6), Curse(10), Duchy(3), Estate(5), Gold(7), Hoard(5), Mine(1), Province(1), Silver(5), 
+
+ROUND 19
+-------------
+ColonyFamiliarMine begins turn
+With hand: Estate,Gold,Mine,Platinum,Silver,
+  ColonyFamiliarMine Played Mine.
+    ColonyFamiliarMine trashed Silver.
+    ColonyFamiliarMine gained Gold.
+      ... and placed card in hand
+  ColonyFamiliarMine Played Platinum.
+    +5 Coin = 5 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 8 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 11 all together.
+  ColonyFamiliarMine bought Colony.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Platinum.
+  ColonyFamiliarMine Discarded Mine.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Drew Mine into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine ends turn with deck: Colony(1), Copper(3), Estate(3), Familiar(3), Gold(6), Mine(2), Platinum(4), Potion(1), Silver(4), 
+
+MineHoard begins turn
+With hand: Copper,Curse,Hoard,Hoard,Silver,
+  MineHoard Played Silver.
+    +2 Coin = 2 all together.
+  MineHoard Played Copper.
+    +1 Coin = 3 all together.
+  MineHoard Played Hoard.
+    +2 Coin = 5 all together.
+  MineHoard Played Hoard.
+    +2 Coin = 7 all together.
+  MineHoard bought Duchy.
+    MineHoard gained Gold.
+    MineHoard gained Gold.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Hoard.
+  MineHoard Discarded Hoard.
+  MineHoard Discarded Curse.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Silver into hand.
+  MineHoard reshuffled
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard ends turn with deck: Copper(6), Curse(10), Duchy(4), Estate(5), Gold(9), Hoard(5), Mine(1), Province(1), Silver(5), 
+
+ROUND 20
+-------------
+ColonyFamiliarMine begins turn
+With hand: Copper,Copper,Familiar,Gold,Mine,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Played Mine.
+    ColonyFamiliarMine trashed Copper.
+    ColonyFamiliarMine gained Silver.
+      ... and placed card in hand
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 3 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 5 all together.
+  ColonyFamiliarMine Played Copper.
+    +1 Coin = 6 all together.
+  ColonyFamiliarMine bought Gold.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Discarded Mine.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine reshuffled
+  ColonyFamiliarMine Drew Platinum into hand.
+  ColonyFamiliarMine Drew Colony into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine ends turn with deck: Colony(1), Copper(2), Estate(3), Familiar(3), Gold(7), Mine(2), Platinum(4), Potion(1), Silver(5), 
+
+MineHoard begins turn
+With hand: Curse,Curse,Gold,Gold,Silver,
+  MineHoard Played Gold.
+    +3 Coin = 3 all together.
+  MineHoard Played Gold.
     +3 Coin = 6 all together.
-  BigMoneyWithCard<Smugglers> Played Silver.
+  MineHoard Played Silver.
     +2 Coin = 8 all together.
-  BigMoneyWithCard<Smugglers> Played Copper.
+  MineHoard bought Province.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Curse.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Hoard into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Mine into hand.
+  MineHoard ends turn with deck: Copper(6), Curse(10), Duchy(4), Estate(5), Gold(9), Hoard(5), Mine(1), Province(2), Silver(5), 
+
+ROUND 21
+-------------
+ColonyFamiliarMine begins turn
+With hand: Colony,Estate,Gold,Platinum,Silver,
+  ColonyFamiliarMine Played Platinum.
+    +5 Coin = 5 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 8 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 10 all together.
+  ColonyFamiliarMine bought Platinum.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Platinum.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Discarded Colony.
+  ColonyFamiliarMine Drew Potion into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Platinum into hand.
+  ColonyFamiliarMine Drew Mine into hand.
+  ColonyFamiliarMine ends turn with deck: Colony(1), Copper(2), Estate(3), Familiar(3), Gold(7), Mine(2), Platinum(5), Potion(1), Silver(5), 
+
+MineHoard begins turn
+With hand: Copper,Copper,Curse,Hoard,Mine,
+  MineHoard Played Mine.
+    MineHoard trashed Copper.
+    MineHoard gained Silver.
+      ... and placed card in hand
+  MineHoard Played Silver.
+    +2 Coin = 2 all together.
+  MineHoard Played Copper.
+    +1 Coin = 3 all together.
+  MineHoard Played Hoard.
+    +2 Coin = 5 all together.
+  MineHoard bought Duchy.
+    MineHoard gained Gold.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Mine.
+  MineHoard Discarded Hoard.
+  MineHoard Discarded Curse.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(5), Estate(5), Gold(10), Hoard(5), Mine(1), Province(2), Silver(6), 
+
+ROUND 22
+-------------
+ColonyFamiliarMine begins turn
+With hand: Familiar,Mine,Platinum,Potion,Silver,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Platinum into hand.
+  ColonyFamiliarMine Played Mine.
+    ColonyFamiliarMine trashed Silver.
+    ColonyFamiliarMine gained Gold.
+      ... and placed card in hand
+  ColonyFamiliarMine Played Platinum.
+    +5 Coin = 5 all together.
+  ColonyFamiliarMine Played Platinum.
+    +5 Coin = 10 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 13 all together.
+  ColonyFamiliarMine Played Potion.
+    +1 Potions = 1 all together.
+  ColonyFamiliarMine bought Colony.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Platinum.
+  ColonyFamiliarMine Discarded Platinum.
+  ColonyFamiliarMine Discarded Potion.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Discarded Mine.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine ends turn with deck: Colony(2), Copper(2), Estate(3), Familiar(3), Gold(8), Mine(2), Platinum(5), Potion(1), Silver(4), 
+
+MineHoard begins turn
+With hand: Curse,Estate,Estate,Gold,Gold,
+  MineHoard Played Gold.
+    +3 Coin = 3 all together.
+  MineHoard Played Gold.
+    +3 Coin = 6 all together.
+  MineHoard bought Hoard.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Estate.
+  MineHoard Discarded Estate.
+  MineHoard Drew Hoard into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(5), Estate(5), Gold(10), Hoard(6), Mine(1), Province(2), Silver(6), 
+
+ROUND 23
+-------------
+ColonyFamiliarMine begins turn
+With hand: Estate,Estate,Familiar,Gold,Gold,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 3 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 6 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 9 all together.
+  ColonyFamiliarMine bought Platinum.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine ends turn with deck: Colony(2), Copper(2), Estate(3), Familiar(3), Gold(8), Mine(2), Platinum(6), Potion(1), Silver(4), 
+
+MineHoard begins turn
+With hand: Copper,Estate,Estate,Gold,Hoard,
+  MineHoard Played Gold.
+    +3 Coin = 3 all together.
+  MineHoard Played Copper.
+    +1 Coin = 4 all together.
+  MineHoard Played Hoard.
+    +2 Coin = 6 all together.
+  MineHoard bought Duchy.
+    MineHoard gained Gold.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Hoard.
+  MineHoard Discarded Estate.
+  MineHoard Discarded Estate.
+  MineHoard Drew Province into hand.
+  MineHoard Drew Duchy into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Silver into hand.
+  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(6), Estate(5), Gold(11), Hoard(6), Mine(1), Province(2), Silver(6), 
+
+ROUND 24
+-------------
+ColonyFamiliarMine begins turn
+With hand: Copper,Familiar,Gold,Gold,Gold,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 3 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 6 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 9 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 11 all together.
+  ColonyFamiliarMine Played Copper.
+    +1 Coin = 12 all together.
+  ColonyFamiliarMine bought Colony.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Platinum into hand.
+  ColonyFamiliarMine Drew Mine into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine ends turn with deck: Colony(3), Copper(2), Estate(3), Familiar(3), Gold(8), Mine(2), Platinum(6), Potion(1), Silver(4), 
+
+MineHoard begins turn
+With hand: Copper,Curse,Duchy,Province,Silver,
+  MineHoard Played Silver.
+    +2 Coin = 2 all together.
+  MineHoard Played Copper.
+    +1 Coin = 3 all together.
+  MineHoard bought Silver.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Duchy.
+  MineHoard Discarded Province.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Silver into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Duchy into hand.
+  MineHoard Drew Estate into hand.
+  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(6), Estate(5), Gold(11), Hoard(6), Mine(1), Province(2), Silver(7), 
+
+ROUND 25
+-------------
+ColonyFamiliarMine begins turn
+With hand: Copper,Mine,Platinum,Silver,Silver,
+  ColonyFamiliarMine Played Mine.
+    ColonyFamiliarMine trashed Copper.
+    ColonyFamiliarMine gained Silver.
+      ... and placed card in hand
+  ColonyFamiliarMine Played Platinum.
+    +5 Coin = 5 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 7 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 9 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 11 all together.
+  ColonyFamiliarMine bought Colony.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Platinum.
+  ColonyFamiliarMine Discarded Mine.
+  ColonyFamiliarMine reshuffled
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Colony into hand.
+  ColonyFamiliarMine Drew Potion into hand.
+  ColonyFamiliarMine Drew Colony into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine ends turn with deck: Colony(4), Copper(1), Estate(3), Familiar(3), Gold(8), Mine(2), Platinum(6), Potion(1), Silver(5), 
+
+MineHoard begins turn
+With hand: Curse,Curse,Duchy,Estate,Silver,
+  MineHoard Played Silver.
+    +2 Coin = 2 all together.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Estate.
+  MineHoard Discarded Duchy.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Duchy into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Hoard into hand.
+  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(6), Estate(5), Gold(11), Hoard(6), Mine(1), Province(2), Silver(7), 
+
+ROUND 26
+-------------
+ColonyFamiliarMine begins turn
+With hand: Colony,Colony,Gold,Potion,Silver,
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 3 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 5 all together.
+  ColonyFamiliarMine Played Potion.
+    +1 Potions = 1 all together.
+  ColonyFamiliarMine bought Silver.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Potion.
+  ColonyFamiliarMine Discarded Colony.
+  ColonyFamiliarMine Discarded Colony.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Mine into hand.
+  ColonyFamiliarMine Drew Platinum into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine ends turn with deck: Colony(4), Copper(1), Estate(3), Familiar(3), Gold(8), Mine(2), Platinum(6), Potion(1), Silver(6), 
+
+MineHoard begins turn
+With hand: Curse,Duchy,Gold,Gold,Hoard,
+  MineHoard Played Gold.
+    +3 Coin = 3 all together.
+  MineHoard Played Gold.
+    +3 Coin = 6 all together.
+  MineHoard Played Hoard.
+    +2 Coin = 8 all together.
+  MineHoard bought Province.
+    MineHoard gained Gold.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Hoard.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Duchy.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Silver into hand.
+  MineHoard Drew Duchy into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(6), Estate(5), Gold(12), Hoard(6), Mine(1), Province(3), Silver(7), 
+
+ROUND 27
+-------------
+ColonyFamiliarMine begins turn
+With hand: Estate,Estate,Gold,Mine,Platinum,
+  ColonyFamiliarMine Played Mine.
+    ColonyFamiliarMine trashed Gold.
+    ColonyFamiliarMine gained Platinum.
+      ... and placed card in hand
+  ColonyFamiliarMine Played Platinum.
+    +5 Coin = 5 all together.
+  ColonyFamiliarMine Played Platinum.
+    +5 Coin = 10 all together.
+  ColonyFamiliarMine bought Platinum.
+  ColonyFamiliarMine Discarded Platinum.
+  ColonyFamiliarMine Discarded Platinum.
+  ColonyFamiliarMine Discarded Mine.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Colony into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine ends turn with deck: Colony(4), Copper(1), Estate(3), Familiar(3), Gold(7), Mine(2), Platinum(8), Potion(1), Silver(6), 
+
+MineHoard begins turn
+With hand: Copper,Curse,Curse,Duchy,Silver,
+  MineHoard Played Silver.
+    +2 Coin = 2 all together.
+  MineHoard Played Copper.
+    +1 Coin = 3 all together.
+  MineHoard bought Silver.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Curse.
+  MineHoard Discarded Duchy.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Copper into hand.
+  MineHoard Drew Silver into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Hoard into hand.
+  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(6), Estate(5), Gold(12), Hoard(6), Mine(1), Province(3), Silver(8), 
+
+ROUND 28
+-------------
+ColonyFamiliarMine begins turn
+With hand: Colony,Copper,Familiar,Gold,Silver,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Platinum into hand.
+  ColonyFamiliarMine Played Platinum.
+    +5 Coin = 5 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 8 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 10 all together.
+  ColonyFamiliarMine Played Copper.
+    +1 Coin = 11 all together.
+  ColonyFamiliarMine bought Colony.
+  ColonyFamiliarMine Discarded Copper.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Platinum.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Discarded Colony.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Colony into hand.
+  ColonyFamiliarMine Drew Platinum into hand.
+  ColonyFamiliarMine ends turn with deck: Colony(5), Copper(1), Estate(3), Familiar(3), Gold(7), Mine(2), Platinum(8), Potion(1), Silver(6), 
+
+MineHoard begins turn
+With hand: Copper,Gold,Gold,Hoard,Silver,
+  MineHoard Played Gold.
+    +3 Coin = 3 all together.
+  MineHoard Played Gold.
+    +3 Coin = 6 all together.
+  MineHoard Played Silver.
+    +2 Coin = 8 all together.
+  MineHoard Played Copper.
     +1 Coin = 9 all together.
-  BigMoneyWithCard<Smugglers> bought Province.
-  BigMoneyWithCard<Smugglers> Discarded Copper.
-  BigMoneyWithCard<Smugglers> Discarded Silver.
-  BigMoneyWithCard<Smugglers> Discarded Gold.
-  BigMoneyWithCard<Smugglers> Discarded Gold.
-  BigMoneyWithCard<Smugglers> Discarded Smugglers.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Silver into hand.
-  BigMoneyWithCard<Smugglers> Drew Copper into hand.
-  BigMoneyWithCard<Smugglers> Drew Estate into hand.
-  BigMoneyWithCard<Smugglers> Drew Duchy into hand.
-  BigMoneyWithCard<Smugglers> ends turn with deck: Copper(7), Duchy(2), Estate(5), Gold(6), Province(4), Silver(7), Smugglers(1), 
+  MineHoard Played Hoard.
+    +2 Coin = 11 all together.
+  MineHoard bought Province.
+    MineHoard gained Gold.
+  MineHoard Discarded Copper.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Hoard.
+  MineHoard Drew Hoard into hand.
+  MineHoard reshuffled
+  MineHoard Drew Duchy into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Duchy into hand.
+  MineHoard Drew Duchy into hand.
+  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(6), Estate(5), Gold(13), Hoard(6), Mine(1), Province(4), Silver(8), 
 
-Game ended in 18 turns.
-BigMoneyWithCard<Smugglers> Won!
-BigMoneyWithCard<Smugglers> total score: 35
-  Copper(7), Duchy(2), Estate(5), Gold(6), Province(4), Silver(7), Smugglers(1), 
-BigMoney total score: 31
-  Copper(7), Duchy(1), Estate(4), Gold(6), Province(4), Silver(4), 
-Trash contains: 
+ROUND 29
+-------------
+ColonyFamiliarMine begins turn
+With hand: Colony,Familiar,Gold,Gold,Platinum,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Platinum into hand.
+  ColonyFamiliarMine Played Platinum.
+    +5 Coin = 5 all together.
+  ColonyFamiliarMine Played Platinum.
+    +5 Coin = 10 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 13 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 16 all together.
+  ColonyFamiliarMine bought Colony.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Platinum.
+  ColonyFamiliarMine Discarded Platinum.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Discarded Colony.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine ends turn with deck: Colony(6), Copper(1), Estate(3), Familiar(3), Gold(7), Mine(2), Platinum(8), Potion(1), Silver(6), 
 
-BigMoneyWithCard<Smugglers> GainSequence is:
-  Smugglers, Silver, Silver, Gold, Silver, 
-  Silver, Gold, Silver, Gold, Province, 
-  Gold, Silver, Silver, Gold, Gold, 
-  Province, Duchy, Province, Duchy, Estate, 
-  Estate, Province, 
-BigMoney GainSequence is:
-  Silver, Silver, Gold, Gold, Silver, 
-  Gold, Gold, Silver, Province, Gold, 
-  Gold, Province, Duchy, Province, Province, 
-  Estate, 
+MineHoard begins turn
+With hand: Duchy,Duchy,Duchy,Gold,Hoard,
+  MineHoard Played Gold.
+    +3 Coin = 3 all together.
+  MineHoard Played Hoard.
+    +2 Coin = 5 all together.
+  MineHoard bought Duchy.
+    MineHoard gained Gold.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Hoard.
+  MineHoard Discarded Duchy.
+  MineHoard Discarded Duchy.
+  MineHoard Discarded Duchy.
+  MineHoard Drew Silver into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(7), Estate(5), Gold(14), Hoard(6), Mine(1), Province(4), Silver(8), 
+
+ROUND 30
+-------------
+ColonyFamiliarMine begins turn
+With hand: Familiar,Gold,Gold,Silver,Silver,
+  ColonyFamiliarMine Played Familiar.
+    +1 Actions = 1 all together.
+    ColonyFamiliarMine Drew Platinum into hand.
+  ColonyFamiliarMine Played Platinum.
+    +5 Coin = 5 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 8 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 11 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 13 all together.
+  ColonyFamiliarMine Played Silver.
+    +2 Coin = 15 all together.
+  ColonyFamiliarMine bought Colony.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Silver.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Platinum.
+  ColonyFamiliarMine Discarded Familiar.
+  ColonyFamiliarMine Drew Gold into hand.
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Mine into hand.
+  ColonyFamiliarMine Drew Platinum into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine ends turn with deck: Colony(7), Copper(1), Estate(3), Familiar(3), Gold(7), Mine(2), Platinum(8), Potion(1), Silver(6), 
+
+MineHoard begins turn
+With hand: Curse,Gold,Gold,Gold,Silver,
+  MineHoard Played Gold.
+    +3 Coin = 3 all together.
+  MineHoard Played Gold.
+    +3 Coin = 6 all together.
+  MineHoard Played Gold.
+    +3 Coin = 9 all together.
+  MineHoard Played Silver.
+    +2 Coin = 11 all together.
+  MineHoard bought Province.
+  MineHoard Discarded Silver.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Gold.
+  MineHoard Discarded Curse.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard Drew Gold into hand.
+  MineHoard Drew Silver into hand.
+  MineHoard Drew Curse into hand.
+  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(7), Estate(5), Gold(14), Hoard(6), Mine(1), Province(5), Silver(8), 
+
+ROUND 31
+-------------
+ColonyFamiliarMine begins turn
+With hand: Estate,Gold,Mine,Platinum,Silver,
+  ColonyFamiliarMine Played Mine.
+    ColonyFamiliarMine trashed Silver.
+    ColonyFamiliarMine gained Gold.
+      ... and placed card in hand
+  ColonyFamiliarMine Played Platinum.
+    +5 Coin = 5 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 8 all together.
+  ColonyFamiliarMine Played Gold.
+    +3 Coin = 11 all together.
+  ColonyFamiliarMine bought Colony.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Gold.
+  ColonyFamiliarMine Discarded Platinum.
+  ColonyFamiliarMine Discarded Mine.
+  ColonyFamiliarMine Discarded Estate.
+  ColonyFamiliarMine reshuffled
+  ColonyFamiliarMine Drew Silver into hand.
+  ColonyFamiliarMine Drew Familiar into hand.
+  ColonyFamiliarMine Drew Estate into hand.
+  ColonyFamiliarMine Drew Copper into hand.
+  ColonyFamiliarMine Drew Colony into hand.
+  ColonyFamiliarMine ends turn with deck: Colony(8), Copper(1), Estate(3), Familiar(3), Gold(8), Mine(2), Platinum(8), Potion(1), Silver(5), 
+
+Game ended in 31 turns.
+ColonyFamiliarMine Won!
+ColonyFamiliarMine total score: 83
+  Colony(8), Copper(1), Estate(3), Familiar(3), Gold(8), Mine(2), Platinum(8), Potion(1), Silver(5), 
+MineHoard total score: 46
+  Copper(5), Curse(10), Duchy(7), Estate(5), Gold(14), Hoard(6), Mine(1), Province(5), Silver(8), 
+Trash contains: Copper(8), Gold(1), Silver(5), 
+
+ColonyFamiliarMine GainSequence is:
+  Potion, Silver, Mine, Familiar, Silver, 
+  Familiar, Gold, Familiar, Silver, Gold, 
+  Gold, Gold, Silver, Platinum, Silver, 
+  Mine, Silver, Gold, Platinum, Platinum, 
+  Platinum, Gold, Colony, Silver, Gold, 
+  Platinum, Gold, Colony, Platinum, Colony, 
+  Silver, Colony, Silver, Platinum, Platinum, 
+  Colony, Colony, Colony, Gold, Colony, 
+
+MineHoard GainSequence is:
+  Silver, Silver, Hoard, Silver, Curse, 
+  Duchy, Gold, Hoard, Curse, Duchy, 
+  Gold, Curse, Mine, Curse, Curse, 
+  Curse, Hoard, Curse, Hoard, Province, 
+  Gold, Gold, Estate, Gold, Curse, 
+  Curse, Duchy, Gold, Silver, Silver, 
+  Curse, Hoard, Estate, Gold, Silver, 
+  Duchy, Gold, Gold, Province, Silver, 
+  Duchy, Gold, Hoard, Duchy, Gold, 
+  Silver, Province, Gold, Silver, Province, 
+  Gold, Duchy, Gold, Province, 

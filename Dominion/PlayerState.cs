@@ -43,7 +43,7 @@ namespace Dominion
         internal BagOfCards islandMat;
         internal BagOfCards nativeVillageMat;
 
-        internal List<Action> actionsToExecuteAtBeginningOfNextTurn = new List<Action>();
+        internal List<GameStateMethod> actionsToExecuteAtBeginningOfNextTurn = new List<GameStateMethod>();
 
         // expose information for use by strategies
         public IPlayerAction Actions { get { return this.actions.actions; } }
@@ -327,34 +327,36 @@ namespace Dominion
             }
             
             this.cardsBeingPlayed.AddCardToTop(currentCard);
+
+            Card cardToPlayAs = currentCard.CardToMimick(this, gameState);
             
             for (int i = 0; i < countTimes; ++i)
             {
                 this.gameLog.PlayedCard(this, currentCard);
                 this.gameLog.PushScope();
 
-                this.AddActions(currentCard.plusAction);                
-                this.AddBuys(currentCard.plusBuy);
-                this.AddCoins(currentCard.plusCoin);
-                this.victoryTokenCount += currentCard.plusVictoryToken;
-                this.DrawAdditionalCardsIntoHand(currentCard.plusCard);
+                this.AddActions(cardToPlayAs.plusAction);
+                this.AddBuys(cardToPlayAs.plusBuy);
+                this.AddCoins(cardToPlayAs.plusCoin);
+                this.victoryTokenCount += cardToPlayAs.plusVictoryToken;
+                this.DrawAdditionalCardsIntoHand(cardToPlayAs.plusCard);
 
-                if (currentCard.isAttack && currentCard.isAttackBeforeAction)
+                if (cardToPlayAs.isAttack && cardToPlayAs.isAttackBeforeAction)
                 {
-                    AttackOtherPlayers(gameState, currentCard.DoSpecializedAttack);
+                    AttackOtherPlayers(gameState, cardToPlayAs.DoSpecializedAttack);
                 }
-                
-                currentCard.DoSpecializedAction(gameState.players.CurrentPlayer, gameState);
-                
-                if (currentCard.isAttack && !currentCard.attackDependsOnPlayerChoice && !currentCard.isAttackBeforeAction)
+
+                cardToPlayAs.DoSpecializedAction(gameState.players.CurrentPlayer, gameState);
+
+                if (cardToPlayAs.isAttack && !cardToPlayAs.attackDependsOnPlayerChoice && !cardToPlayAs.isAttackBeforeAction)
                 {
-                    AttackOtherPlayers(gameState, currentCard.DoSpecializedAttack);                    
+                    AttackOtherPlayers(gameState, cardToPlayAs.DoSpecializedAttack);                    
                 }
 
                 this.gameLog.PopScope();
             }
 
-            CardHasBeenPlayed();            
+            CardHasBeenPlayed(cardToPlayAs);
         }
 
         internal delegate void AttackAction(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState);
@@ -370,7 +372,7 @@ namespace Dominion
             }
         }
 
-        private void CardHasBeenPlayed()
+        private void CardHasBeenPlayed(Card cardPlayedAs)
         {
             Card cardAfterPlay = this.cardsBeingPlayed.DrawCardFromTop();
             if (cardAfterPlay != null)
@@ -383,6 +385,17 @@ namespace Dominion
                 {
                     this.cardsPlayed.AddCard(cardAfterPlay);
                 }
+
+                if (cardPlayedAs != cardAfterPlay)
+                {
+                    if (cardPlayedAs.isDuration)
+                    {                        
+                        this.actionsToExecuteAtBeginningOfNextTurn.Add( delegate(PlayerState currentPlayer, GameState gameState)
+                        {
+                            cardPlayedAs.DoSpecializedDurationActionAtBeginningOfTurn(currentPlayer, gameState);
+                        });
+                    }
+                }                
             }
         }
 
@@ -406,7 +419,7 @@ namespace Dominion
 
             currentCard.DoSpecializedAction(gameState.players.CurrentPlayer, gameState);
 
-            CardHasBeenPlayed();
+            CardHasBeenPlayed(currentCard);
 
             this.gameLog.PopScope();
         }        
@@ -732,9 +745,9 @@ namespace Dominion
             return card.isTreasure;
         }
 
-        internal PileOfCards RequestPlayerChooseCardPileFromSupply(GameState gameState)
+        internal PileOfCards RequestPlayerEmbargoPileFromSupply(GameState gameState)
         {
-            Card cardType = this.actions.GetCardPileFromSupply(gameState);
+            Card cardType = this.actions.GetCardFromSupplyToEmbargo(gameState);
 
             PileOfCards pile = gameState.GetPile(cardType);
             if (pile == null)
@@ -743,6 +756,39 @@ namespace Dominion
             }
 
             return pile;
+        }
+
+        internal Card RequestPlayerChooseCardFromSupplyToPlay(GameState gameState, CardPredicate acceptableCard)
+        {
+            if (!gameState.supplyPiles.Where(pile => acceptableCard(pile.ProtoTypeCard)).Any())
+                return null;
+
+            Card cardType = this.actions.GetCardFromSupplyToPlay(gameState, delegate(Card c)
+            {
+                if (!acceptableCard(c))
+                    return false;
+                
+                PileOfCards pile = gameState.GetSupplyPile(c);
+                if (pile == null || pile.Count == 0)
+                {
+                    return false;
+                }
+
+                return true;
+            });
+
+            if (!acceptableCard(cardType))
+            {
+                throw new Exception("Card did not meet constraint");
+            }
+
+            PileOfCards foundPile = gameState.GetSupplyPile(cardType);
+            if (foundPile == null || foundPile.Count == 0)
+            {
+                throw new Exception("Must choose pile from supply");
+            }
+
+            return cardType;
         }
 
         internal bool RequestPlayerPlayActionFromHand(GameState gameState, CardPredicate acceptableCard, bool isOptional)
@@ -907,6 +953,11 @@ namespace Dominion
                 {
                     throw new Exception("Player must choose a card to trash");
                 }
+            }
+
+            if (!acceptableCardsToTrash(cardTypeToTrash))
+            {
+                throw new Exception("Tried to trash a card that didn't match the constraint");
             }
 
             return this.TrashCardFromHandOfType(gameState, cardTypeToTrash, guaranteeInHand: true);
@@ -1599,7 +1650,7 @@ namespace Dominion
                 this.gameLog.PushScope();
                 if (gameState.players.CurrentPlayer.playPhase != PlayPhase.Cleanup)
                 {                    
-                    card.DoSpecializedDiscardNonCleanup(this, gameState);                    
+                    card.DoSpecializedDiscardNonCleanup(this, gameState);
                 }
                 
                 if (source == DeckPlacement.Play)

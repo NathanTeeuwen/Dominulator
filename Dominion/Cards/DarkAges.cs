@@ -214,9 +214,21 @@ namespace Dominion.CardTypes
         {
         }
 
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        public override Card CardToMimick(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            // TODO:  Lots of edge cases to cover still:
+            // Make sure that when BandOfMisfits is played as cards such as hermit or scheme have an effect on cleanup, that effect still happens.
+            // Also check interactions when played as a duration after having been throne room, kings court etc ...
+            // Check to make sure cards like bridge that provide discount while in play work ...
+            // make sure procession BandOfMisfits as fortress causes band of misfits to return to hand (because of fortress effect), but gain a card costing up to 6 (procession effect)
+            // make sure can play as Sir Martin when that card is top of the knights
+
+            // throw new NOtImplementedException
+            Card cardToMimick = currentPlayer.RequestPlayerChooseCardFromSupplyToPlay(gameState, 
+                card => card.CurrentCoinCost(currentPlayer) < this.CurrentCoinCost(currentPlayer) && 
+                        card.potionCost == 0 && 
+                        card.isAction);            
+            return cardToMimick;
         }
     }
 

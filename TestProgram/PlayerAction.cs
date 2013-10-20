@@ -189,7 +189,7 @@ namespace Program
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null && !isOptional)
             {
-                result = self.Hand.OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();                
+                result = self.Hand.Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();                
             }
 
             return result;

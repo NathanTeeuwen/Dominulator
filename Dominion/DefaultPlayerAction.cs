@@ -73,7 +73,7 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Card GetCardPileFromSupply(GameState gameState)
+        virtual public Card GetCardFromSupplyToEmbargo(GameState gameState)
         {
             return PlayerMustMakeCardChoice();
         }
@@ -89,6 +89,11 @@ namespace Dominion
         }
 
         virtual public Card GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        {
+            return PlayerMustMakeCardChoice();
+        }
+
+        virtual public Card GetCardFromSupplyToPlay(GameState gameState, CardPredicate cardPredicate)
         {
             return PlayerMustMakeCardChoice();
         }

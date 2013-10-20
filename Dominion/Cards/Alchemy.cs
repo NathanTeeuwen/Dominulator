@@ -90,7 +90,7 @@ namespace Dominion.CardTypes
         public static Familiar card = new Familiar();
 
         private Familiar()
-            : base("Familiar", coinCost: 3, potionCost: 1, isAction: true, plusCards: 1, plusActions: 1)
+            : base("Familiar", coinCost: 3, potionCost: 1, isAction: true, plusCards: 1, plusActions: 1, isAttack:true)
         {
         }
 

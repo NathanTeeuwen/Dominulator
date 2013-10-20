@@ -15,8 +15,9 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Smugglers), Strategies.BigMoney.Player());
-            //CompareStrategyVsAllKnownStrategies(Strategies.KingsCourtRabbleExpandFarmingVillage.Player());
+            //ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Familiar, "BigMoneyFamiliar", 3, afterGoldCount: int.MaxValue), Strategies.MineHoard.Player());
+            //ComparePlayers(Strategies.ColonyFamiliarMine.Player(), Strategies.MineHoard.Player(), useColonyAndPlatinum:true);
+            CompareStrategyVsAllKnownStrategies(Strategies.KingsCourtRabbleExpandFarmingVillage.Player());
             
             stopwatch.Stop();
 

@@ -30,7 +30,8 @@ namespace Program
                            CardAcceptance.For(Cards.Gold),
                            CardAcceptance.For(card, gameState => CountAllOwned(card, gameState) < cardCount && CountAllOwned(Cards.Silver, gameState) >= afterSilverCount),
                            CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 4),
-                           CardAcceptance.For(Cards.Silver, CardAcceptance.AlwaysMatch, CardAcceptance.OverPayZero));
+                           CardAcceptance.For(Cards.Potion, 1, gameState => card.potionCost > 0),
+                           CardAcceptance.For(Cards.Silver));
             }           
         }
         

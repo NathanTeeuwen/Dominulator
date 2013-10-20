@@ -41,11 +41,13 @@ namespace Dominion.CardTypes.TestCards
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.actionsToExecuteAtBeginningOfNextTurn.Add( delegate()
-            {
-                currentPlayer.AddCoins(1);
-            });
-        }        
+            currentPlayer.actionsToExecuteAtBeginningOfNextTurn.Add( DelayedAction);
+        }
+
+        private static void DelayedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.AddCoins(1);
+        }
     }
 
     public class FishingVillageEmptyDuration
