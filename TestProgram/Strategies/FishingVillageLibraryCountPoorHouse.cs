@@ -82,7 +82,7 @@ namespace Program
                 public override bool ShouldPutCardInHand(GameState gameState, Card card)
                 {
                     if (!ShouldBuyProvince(gameState) &&
-                        gameState.Self.Hand.CountOf(Cards.Copper) > 0)
+                        gameState.Self.Hand.CountOf(Cards.Count) > 0)
                     {
                         return false;
                     }
