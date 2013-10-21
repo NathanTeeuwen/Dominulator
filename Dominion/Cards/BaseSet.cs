@@ -516,31 +516,13 @@ namespace Dominion.CardTypes
         {
             otherPlayer.RevealCardsFromDeck(2);
 
-            Card cardtoTrash = null;
-            CardPredicate acceptableCards = card => card.isTreasure;
-            if (otherPlayer.cardsBeingRevealed.HasCard(acceptableCards))
+            Card trashedCard = currentPlayer.RequestPlayerTrashOtherPlayersRevealedCard(gameState, card => card.isTreasure, otherPlayer);
+
+            if (trashedCard != null)
             {
-                Card cardTypeToTrash = currentPlayer.actions.GetCardFromRevealedCardsToTrash(gameState, otherPlayer, acceptableCards);
-
-                cardtoTrash = otherPlayer.cardsBeingRevealed.RemoveCard(cardTypeToTrash);
-                if (cardtoTrash == null)
+                if (currentPlayer.actions.ShouldGainCard(gameState, trashedCard))
                 {
-                    throw new Exception("Must choose a revealed card to trash");
-                }
-
-                if (!acceptableCards(cardtoTrash))
-                {
-                    throw new Exception("Player Must choose a treasure card to trash");
-                }
-
-                otherPlayer.MoveCardToTrash(cardtoTrash, gameState);
-            }
-
-            if (cardtoTrash != null)
-            {
-                if (currentPlayer.actions.ShouldGainCard(gameState, cardtoTrash))
-                {
-                    Card cardToGain = gameState.trash.RemoveCard(cardtoTrash);
+                    Card cardToGain = gameState.trash.RemoveCard(trashedCard);
                     currentPlayer.GainCard(gameState, cardToGain, originalLocation:DeckPlacement.Trash, defaultPlacement:DeckPlacement.Discard);
                 }
             }

@@ -200,15 +200,15 @@ namespace Dominion.CardTypes
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
-        {
-            // TODO: trashing potion card is included in total cost
-            // throw NotImplemented()
+        {            
             Card[] trashedCards = currentPlayer.RequestPlayerTrashCardsFromHand(gameState, currentPlayer.Hand.Count, isOptional: true);
 
-            int totalCost = trashedCards.Select(card => card.CurrentCoinCost(currentPlayer)).Sum();
+            int totalCoinCost = trashedCards.Select(card => card.CurrentCoinCost(currentPlayer)).Sum();
+            int totalPotionCost = trashedCards.Select(card => card.potionCost).Sum();
+
             currentPlayer.RequestPlayerGainCardFromSupply(
-                gameState, 
-                card => card.CurrentCoinCost(currentPlayer) == totalCost, 
+                gameState,
+                card => card.CurrentCoinCost(currentPlayer) == totalCoinCost && card.potionCost == totalPotionCost, 
                 "Must gain a card costing exactly equal to the total cost of the trashed cards>", 
                 isOptional: false);
         }
@@ -511,7 +511,9 @@ namespace Dominion.CardTypes
 
             foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
             {
-                PlayerActionChoice choice = otherPlayer.RequestPlayerChooseBetween(gameState, isValidChoice => isValidChoice == PlayerActionChoice.Discard || isValidChoice == PlayerActionChoice.Nothing);
+                PlayerActionChoice choice = otherPlayer.RequestPlayerChooseBetween(gameState, 
+                    isValidChoice => isValidChoice == PlayerActionChoice.Discard || 
+                                     isValidChoice == PlayerActionChoice.Nothing);
 
                 switch (choice)
                 {

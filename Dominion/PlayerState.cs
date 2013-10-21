@@ -963,6 +963,30 @@ namespace Dominion
             return this.TrashCardFromHandOfType(gameState, cardTypeToTrash, guaranteeInHand: true);
         }
 
+        internal Card RequestPlayerTrashOtherPlayersRevealedCard(GameState gameState, CardPredicate acceptableCard,  PlayerState otherPlayer)
+        {
+            Card cardtoTrash = null;
+            if (otherPlayer.cardsBeingRevealed.HasCard(acceptableCard))
+            {
+                Card cardTypeToTrash = this.actions.GetCardFromRevealedCardsToTrash(gameState, otherPlayer, acceptableCard);
+
+                cardtoTrash = otherPlayer.cardsBeingRevealed.RemoveCard(cardTypeToTrash);
+                if (cardtoTrash == null)
+                {
+                    throw new Exception("Must choose a revealed card to trash");
+                }
+
+                if (!acceptableCard(cardtoTrash))
+                {
+                    throw new Exception("Card constraint doesnt match.");
+                }
+
+                otherPlayer.MoveCardToTrash(cardtoTrash, gameState);
+            }
+
+            return cardtoTrash;
+        }
+
         internal Card RequestPlayerTrashCardFromHandOrDiscard(GameState gameState, CardPredicate acceptableCardsToTrash, bool isOptional)
         {
             if (!this.hand.HasCard(acceptableCardsToTrash) &&

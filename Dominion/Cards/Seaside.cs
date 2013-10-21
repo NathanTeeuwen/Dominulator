@@ -389,7 +389,13 @@ namespace Dominion.CardTypes
             }
             else if (choice == PlayerActionChoice.Trash)
             {
-                throw new NotImplementedException();
+                attackAction = delegate (PlayerState currentPlayer2, PlayerState otherPlayer, GameState gameState2)
+                {
+                    otherPlayer.RevealCardsFromDeck(2);
+                    Card trashedCard = currentPlayer2.RequestPlayerTrashOtherPlayersRevealedCard(gameState2, card => card.isTreasure, otherPlayer);
+                    otherPlayer.MoveRevealedCardsToDiscard(gameState);
+                    wasACardTrashed |= trashedCard != null;
+                };
             }
 
             currentPlayer.AttackOtherPlayers(gameState, attackAction);

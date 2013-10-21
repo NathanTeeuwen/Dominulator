@@ -368,35 +368,19 @@ namespace Dominion.CardTypes
         {
             otherPlayer.RevealCardsFromDeck(2);
 
-            Card cardtoTrash = null;
-            CardPredicate acceptableCards = card => card == Silver.card || card == Gold.card;
-            if (otherPlayer.cardsBeingRevealed.HasCard(acceptableCards))
-            {
-                Card cardTypeToTrash = currentPlayer.actions.GetCardFromRevealedCardsToTrash(gameState, otherPlayer, acceptableCards);
-
-                cardtoTrash = otherPlayer.cardsBeingRevealed.RemoveCard(cardTypeToTrash);
-                if (cardtoTrash == null)
-                {
-                    throw new Exception("Must choose a revealed card to trash");
-                }
-
-                if (!acceptableCards(cardtoTrash))
-                {
-                    throw new Exception("Player Must choose a treasure card to trash");
-                }
-
-                otherPlayer.MoveCardToTrash(cardtoTrash, gameState);
-            }
-            
-            if (!otherPlayer.CardsBeingRevealed.Where(card => card.isTreasure).Any())
+            if (!otherPlayer.CardsBeingRevealed.AnyWhere(card => card.isTreasure))
             {
                 otherPlayer.GainCardFromSupply(Copper.card, gameState);
             }
-
-            if (cardtoTrash != null)
+            else
             {
-                Card cardToGain = gameState.trash.RemoveCard(cardtoTrash);
-                currentPlayer.GainCard(gameState, cardToGain, DeckPlacement.Trash, DeckPlacement.Discard);                
+                CardPredicate acceptableCard = card => card == Silver.card || card == Gold.card;
+                Card trashedCard = currentPlayer.RequestPlayerTrashOtherPlayersRevealedCard(gameState, acceptableCard, otherPlayer);
+                if (trashedCard != null)
+                {
+                    Card cardToGain = gameState.trash.RemoveCard(trashedCard);
+                    currentPlayer.GainCard(gameState, cardToGain, DeckPlacement.Trash, DeckPlacement.Discard);
+                }
             }
 
             otherPlayer.MoveRevealedCardsToDiscard(gameState);
