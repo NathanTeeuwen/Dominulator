@@ -581,11 +581,7 @@ namespace Dominion.CardTypes
             if (currentPlayer.turnCounters.BuysUsed == 0)
             {                
                 currentPlayer.MoveCardBeingDiscardedToTrash(gameState);
-                currentPlayer.RequestPlayerGainCardFromSupply(gameState,
-                    card => card == Cards.Duchy || card.IsType(Cards.Prize),
-                    "Must either gain a duchy or a prize",
-                    isOptional:false,
-                    defaultLocation:DeckPlacement.TopOfDeck);            
+                currentPlayer.GainCardFromSupply(Cards.Madman, gameState);           
             }            
         }
 
