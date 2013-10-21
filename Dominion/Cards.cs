@@ -224,7 +224,7 @@
         public static readonly CardTypes.Village Village = CardTypes.Village.card;
         public static readonly CardTypes.Vineyard Vineyard = CardTypes.Vineyard.card;
         public static readonly CardTypes.WalledVillage WalledVillage = CardTypes.WalledVillage.card;
-        public static readonly CardTypes.WanderingMinstrell WanderingMinstrell = CardTypes.WanderingMinstrell.card;
+        public static readonly CardTypes.WanderingMinstrel WanderingMinstrel = CardTypes.WanderingMinstrel.card;
         public static readonly CardTypes.Warehouse Warehouse = CardTypes.Warehouse.card;
         public static readonly CardTypes.Watchtower Watchtower = CardTypes.Watchtower.card;
         public static readonly CardTypes.Wharf Wharf = CardTypes.Wharf.card;

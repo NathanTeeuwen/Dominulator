@@ -53,7 +53,16 @@ namespace Program
                 private static CardPickByPriority TrashOrder()
                 {
                     return new CardPickByPriority(
-                               CardAcceptance.For(Cards.Estate, gameState => IsDoingMegaTurn(gameState) && CountAllOwned(Cards.Province, gameState) == 0),
+                               CardAcceptance.For(Cards.Curse),
+                               CardAcceptance.For(Cards.RuinedVillage),
+                               CardAcceptance.For(Cards.RuinedMarket),
+                               CardAcceptance.For(Cards.Survivors),
+                               CardAcceptance.For(Cards.RuinedLibrary),
+                               CardAcceptance.For(Cards.AbandonedMine),
+                               CardAcceptance.For(Cards.Necropolis, gameState => IsDoingMegaTurn(gameState)),
+                               CardAcceptance.For(Cards.OvergrownEstate, gameState => IsDoingMegaTurn(gameState)),
+                               CardAcceptance.For(Cards.Hovel, gameState => IsDoingMegaTurn(gameState)),
+                               CardAcceptance.For(Cards.Estate, gameState => IsDoingMegaTurn(gameState)),
                                CardAcceptance.For(Cards.Hermit, IsDoingMegaTurn));
                 }
             }

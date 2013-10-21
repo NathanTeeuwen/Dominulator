@@ -581,11 +581,7 @@ namespace Dominion.CardTypes
             if (currentPlayer.turnCounters.BuysUsed == 0)
             {                
                 currentPlayer.MoveCardBeingDiscardedToTrash(gameState);
-                currentPlayer.RequestPlayerGainCardFromSupply(gameState,
-                    card => card == Cards.Duchy || card.IsType(Cards.Prize),
-                    "Must either gain a duchy or a prize",
-                    isOptional:false,
-                    defaultLocation:DeckPlacement.TopOfDeck);            
+                currentPlayer.GainCardFromSupply(Cards.Madman, gameState);           
             }            
         }
 
@@ -1141,13 +1137,13 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class WanderingMinstrell
+    public class WanderingMinstrel
       : Card
     {
-        public static WanderingMinstrell card = new WanderingMinstrell();
+        public static WanderingMinstrel card = new WanderingMinstrel();
 
-        private WanderingMinstrell()
-            : base("WanderingMinstrell", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2)
+        private WanderingMinstrel()
+            : base("WanderingMinstrel", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2)
         {
         }
 

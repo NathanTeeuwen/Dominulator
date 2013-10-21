@@ -446,13 +446,51 @@ namespace Dominion.CardTypes
         public static Oracle card = new Oracle();
 
         private Oracle()
-            : base("Oracle", coinCost: 3, isAction: true, plusCards: 2, isAttack:true)
+            : base("Oracle", coinCost: 3, isAction: true, isAttack: true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            currentPlayer.RevealCardsFromDeck(2);
+            PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState, actionChoice => actionChoice == PlayerActionChoice.Discard || actionChoice == PlayerActionChoice.PutInHand);
+            switch (choice)
+            {
+                case PlayerActionChoice.Discard:
+                    {
+                        currentPlayer.MoveRevealedCardsToDiscard(gameState);
+                        currentPlayer.DrawAdditionalCardsIntoHand(2);
+                        break;
+                    }
+                case PlayerActionChoice.PutInHand:
+                    {
+                        currentPlayer.MoveAllRevealedCardsToHand();
+                        break;
+                    }
+                default:
+                    throw new Exception();
+            }
+        }
+
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
+            otherPlayer.RevealCardsFromDeck(2);
+            PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState, actionChoice => actionChoice == PlayerActionChoice.Discard || actionChoice == PlayerActionChoice.TopDeck);
+            switch (choice)
+            {
+                case PlayerActionChoice.Discard:
+                    {
+                        otherPlayer.MoveRevealedCardsToDiscard(gameState);
+                        break;
+                    }
+                case PlayerActionChoice.TopDeck:
+                    {
+                        otherPlayer.RequestPlayerTopDeckRevealedCardsInAnyOrder(gameState);
+                        break;
+                    }
+                default:
+                    throw new Exception();
+            }
         }
     }
 
