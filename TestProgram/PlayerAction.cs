@@ -238,7 +238,7 @@ namespace Program
             return result;
         }
 
-        public override Card GetCardFromRevealedCardsToDiscard(GameState gameState, PlayerState player)
+        public override Card GetCardFromRevealedCardsToDiscard(GameState gameState)
         {
             var self = gameState.Self;
             Card result = this.discardOrder.GetPreferredCard(
@@ -254,9 +254,9 @@ namespace Program
             return result;
         }
 
-        public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player)
+        public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
         {
-            BagOfCards revealedCards = player.CardsBeingRevealed;
+            BagOfCards revealedCards = gameState.Self.CardsBeingRevealed;
             // good for cartographer, not sure about anyone else.
             foreach (Card card in revealedCards)
             {
@@ -286,9 +286,9 @@ namespace Program
             return result;
         }
 
-        override public Card GetCardFromDiscardToTopDeck(GameState gameState, PlayerState currentPlayer, bool isOptional)
+        override public Card GetCardFromDiscardToTopDeck(GameState gameState, bool isOptional)
         {
-            Card result = this.discardOrder.GetPreferredCardReverse(gameState, card => currentPlayer.Discard.HasCard(card));
+            Card result = this.discardOrder.GetPreferredCardReverse(gameState, card => gameState.Self.Discard.HasCard(card));
             return result;
         }
 
@@ -376,18 +376,18 @@ namespace Program
             }
         }
 
-        public override Card GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, PlayerState player, bool isOptional)
+        public override Card GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             Card result = this.discardOrder.GetPreferredCard(
                 gameState,
-                card => player.Hand.HasCard(card) && acceptableCard(card));
+                card => gameState.Self.Hand.HasCard(card) && acceptableCard(card));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)
             {
-                result = player.Hand.Where(c => acceptableCard(c))
-                                       .OrderBy(c => c, new CompareCardByFirstToDiscard())
-                                       .FirstOrDefault();
+                result = gameState.Self.Hand.Where(c => acceptableCard(c))
+                                            .OrderBy(c => c, new CompareCardByFirstToDiscard())
+                                            .FirstOrDefault();
             }
 
             return result;
@@ -419,16 +419,16 @@ namespace Program
             }
         }
 
-        public override Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
+        public override Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
         {
             Card result = this.discardOrder.GetPreferredCard(
                 gameState,
-                card => player.CardsBeingRevealed.HasCard(card));
+                card => gameState.Self.CardsBeingRevealed.HasCard(card));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)
             {
-                result = player.CardsBeingRevealed.OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();                
+                result = gameState.Self.CardsBeingRevealed.OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();                
             }
 
             return result;
@@ -556,12 +556,12 @@ namespace Program
             return this.gainOrder.GetPreferredCard(gameState, c => c.Equals(card)) != null;
         }
 
-        public override bool ShouldPlayerDiscardCardFromHand(GameState gameState, PlayerState playerState, Card card)
+        public override bool ShouldPlayerDiscardCardFromHand(GameState gameState, Card card)
         {
             if (card == Cards.MarketSquare)
                 return true;
 
-            return base.ShouldPlayerDiscardCardFromHand(gameState, playerState, card);
+            return base.ShouldPlayerDiscardCardFromHand(gameState, card);
         }
 
         public override int GetCoinAmountToUseInButcher(GameState gameState)

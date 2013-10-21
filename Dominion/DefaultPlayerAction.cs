@@ -122,7 +122,7 @@ namespace Dominion
             return NoCardIfOptional(isOptional);   
         }
 
-        virtual public Card GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player)
+        virtual public Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
         {
             return PlayerMustMakeCardChoice();
         }
@@ -137,7 +137,7 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Card GetCardFromDiscardToTopDeck(GameState gameState, PlayerState playerState, bool isOptional)
+        virtual public Card GetCardFromDiscardToTopDeck(GameState gameState, bool isOptional)
         {
             return PlayerMustMakeCardChoice();
         }
@@ -147,7 +147,7 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Card GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, PlayerState player, bool isOptional)
+        virtual public Card GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return NoCardIfOptional(isOptional);
         }
@@ -169,12 +169,12 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
+        virtual public Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
         {
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Card GetCardFromRevealedCardsToDiscard(GameState gameState, PlayerState player)
+        virtual public Card GetCardFromRevealedCardsToDiscard(GameState gameState)
         {
             return PlayerMustMakeCardChoice();
         }
@@ -184,7 +184,7 @@ namespace Dominion
             return PlayerMustMakeChoice();
         }
 
-        virtual public bool ShouldPlayerDiscardCardFromHand(GameState gameState, PlayerState playerState, Card card)
+        virtual public bool ShouldPlayerDiscardCardFromHand(GameState gameState, Card card)
         {
             return PlayerMustMakeChoice();
         }

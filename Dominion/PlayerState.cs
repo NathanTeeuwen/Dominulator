@@ -1083,7 +1083,7 @@ namespace Dominion
                 return false;
             }
 
-            Card cardTypeToDiscard = this.actions.GetCardFromHandToDiscard(gameState, acceptableCardsToDiscard, this, isOptional);
+            Card cardTypeToDiscard = this.actions.GetCardFromHandToDiscard(gameState, acceptableCardsToDiscard, isOptional);
             if (cardTypeToDiscard == null)
             {
                 if (isOptional)
@@ -1132,7 +1132,7 @@ namespace Dominion
         {
             while (this.cardsBeingRevealed.Any)
             {
-                Card cardToPutOnTop = this.actions.GetCardFromRevealedCardsToPutOnDeck(gameState, this);
+                Card cardToPutOnTop = this.actions.GetCardFromRevealedCardsToPutOnDeck(gameState);
                 if (cardToPutOnTop == null)
                 {
                     throw new Exception("Player must choose a card to put on top of deck");
@@ -1174,7 +1174,7 @@ namespace Dominion
         {
             if (this.cardsBeingRevealed.Any)
             {
-                Card cardToDiscard = this.actions.GetCardFromRevealedCardsToDiscard(gameState, this);
+                Card cardToDiscard = this.actions.GetCardFromRevealedCardsToDiscard(gameState);
                 if (cardToDiscard == null)
                 {
                     throw new Exception("Player must choose a card to trash");
@@ -1302,7 +1302,7 @@ namespace Dominion
 
         internal Card RequestPlayerTopDeckCardFromRevealed(GameState gameState, bool isOptional)
         {
-            Card cardTypeToTopDeck = this.actions.GetCardFromRevealedCardsToTopDeck(gameState, this);
+            Card cardTypeToTopDeck = this.actions.GetCardFromRevealedCardsToTopDeck(gameState);
             if (cardTypeToTopDeck == null && !isOptional)
             {
                 throw new Exception("Must choose a card to top deck");
@@ -1329,7 +1329,7 @@ namespace Dominion
             if (this.Discard.Count == 0)
                 return null;
 
-            Card cardTypeToTopDeck = this.actions.GetCardFromDiscardToTopDeck(gameState, this, isOptional);
+            Card cardTypeToTopDeck = this.actions.GetCardFromDiscardToTopDeck(gameState, isOptional);
             if (cardTypeToTopDeck == null && !isOptional)
             {
                 throw new Exception("Must choose a card to top deck");

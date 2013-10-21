@@ -16,9 +16,8 @@ namespace Program
             stopwatch.Start();
 
             //ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Familiar, "BigMoneyFamiliar", 3, afterGoldCount: int.MaxValue), Strategies.MineHoard.Player());
-            //ComparePlayers(Strategies.ColonyFamiliarMine.Player(), Strategies.MineHoard.Player(), useColonyAndPlatinum:true);
-            ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoney.Player());
-            CompareStrategyVsAllKnownStrategies(Strategies.KingsCourtRabbleExpandFarmingVillage.Player());
+            //ComparePlayers(Strategies.ColonyFamiliarMine.Player(), Strategies.MineHoard.Player(), useColonyAndPlatinum:true);            
+            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
             
             stopwatch.Stop();
 

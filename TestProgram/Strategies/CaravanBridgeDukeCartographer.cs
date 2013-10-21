@@ -29,9 +29,9 @@ namespace Program
                 {
                 }
 
-                public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player)                
+                public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
                 {
-                    BagOfCards revealedCards = player.CardsBeingRevealed;
+                    BagOfCards revealedCards = gameState.Self.CardsBeingRevealed;
                     var self = gameState.Self;
                     Card result = TopDeckOrder().GetPreferredCard(
                         gameState,
@@ -54,9 +54,9 @@ namespace Program
                     return null;
                 }
 
-                public override Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
+                public override Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
                 {
-                    return player.CardsBeingRevealed.FirstOrDefault();
+                    return gameState.Self.CardsBeingRevealed.FirstOrDefault();
                 }
 
                 public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)

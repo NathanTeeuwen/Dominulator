@@ -46,9 +46,9 @@ namespace Program
                     return PlayerActionChoice.Trash;
                 }
 
-                public override Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
+                public override Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
                 {
-                    return player.CardsBeingRevealed.FirstOrDefault();
+                    return gameState.Self.CardsBeingRevealed.FirstOrDefault();
                 }
 
                 static Card GetCardTypeToTrash(GameState gameState)

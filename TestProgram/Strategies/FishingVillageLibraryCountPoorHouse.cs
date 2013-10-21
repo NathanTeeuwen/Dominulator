@@ -23,8 +23,7 @@ namespace Program
             {
                 public MyPlayerAction()
                     : base( "FishingVillageLibraryCountPoorHouse",                            
-                            purchaseOrder: PurchaseOrder(),
-                            treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
+                            purchaseOrder: PurchaseOrder(),                            
                             actionOrder: ActionOrder(),
                             trashOrder: TrashOrder(),
                             discardOrder: DiscardOrder())

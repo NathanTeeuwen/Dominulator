@@ -33,9 +33,9 @@ namespace Program
                 }
 
                 // for scout
-                override public Card GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player)
+                override public Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
                 {
-                    return player.CardsBeingRevealed.OrderBy(card => card, new OrderCardByMostValued(player)).First();
+                    return gameState.Self.CardsBeingRevealed.OrderBy(card => card, new OrderCardByMostValued(gameState.Self)).First();
                 }
 
                 class OrderCardByMostValued

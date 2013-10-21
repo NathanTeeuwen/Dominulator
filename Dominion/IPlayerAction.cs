@@ -21,25 +21,25 @@ namespace Dominion
         Card NameACard(GameState gameState);
         Card GetCardFromTrashToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional);        
         Card GetCardFromPlayToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional);
-        Card GetCardFromDiscardToTopDeck(GameState gameState, PlayerState player, bool isOptional);
-        Card GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player);
+        Card GetCardFromDiscardToTopDeck(GameState gameState, bool isOptional);
+        Card GetCardFromRevealedCardsToTopDeck(GameState gameState);
         Card GetCardFromRevealedCardsToTrash(GameState gameState, CardPredicate acceptableCard);
-        Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player);
-        Card GetCardFromRevealedCardsToDiscard(GameState gameState, PlayerState player);
-        Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional);
-        Card GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional);
-        Card GetCardFromHandToPassLeft(GameState gameState);
-        Card GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, PlayerState player, bool isOptional);
-        Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard); // always optional
-        Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional);
-        Card GetCardFromHandToIsland(GameState gameState);
+        Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState);
+        Card GetCardFromRevealedCardsToDiscard(GameState gameState);
         Card GetCardFromHandToDeferToNextTurn(GameState gameState);
+        Card GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, bool isOptional);
+        Card GetCardFromHandToIsland(GameState gameState);
+        Card GetCardFromHandToPassLeft(GameState gameState);        
+        Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional);
+        Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard); // always optional
+        Card GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional);        
+        Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional);        
         Card GetCardFromHandOrDiscardToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, out DeckPlacement deckPlacement);
         Card GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer);
         Card GetCardFromOtherPlayersRevealedCardsToTrash(GameState gameState, PlayerState otherPlayer, CardPredicate acceptableCard);
         int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber);
         bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card);
-        bool ShouldPlayerDiscardCardFromHand(GameState gameState, PlayerState player, Card card);
+        bool ShouldPlayerDiscardCardFromHand(GameState gameState, Card card);
         bool ShouldRevealCardFromHandForCard(GameState gameState, Card card, Card cardFor);
         bool ShouldRevealCardFromHand(GameState gameState, Card card);
         bool ShouldPutCardInHand(GameState gameState, Card card);
@@ -202,20 +202,20 @@ namespace Dominion
             return result;
         }
 
-        public Card GetCardFromDiscardToTopDeck(GameState gameState, PlayerState player, bool isOptional)
+        public Card GetCardFromDiscardToTopDeck(GameState gameState, bool isOptional)
         {
             var saved = gameState.self;
             gameState.self = this.self;
-            var result = this.playerAction.GetCardFromDiscardToTopDeck(gameState, player, isOptional);
+            var result = this.playerAction.GetCardFromDiscardToTopDeck(gameState, isOptional);
             gameState.self = saved;
             return result;
         }
 
-        public Card GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player)
+        public Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
         {
             var saved = gameState.self;
             gameState.self = this.self;
-            var result = this.playerAction.GetCardFromRevealedCardsToTopDeck(gameState, player);
+            var result = this.playerAction.GetCardFromRevealedCardsToTopDeck(gameState);
             gameState.self = saved;
             return result;
         }
@@ -229,20 +229,20 @@ namespace Dominion
             return result;
         }
 
-        public Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player)
+        public Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
         {
             var saved = gameState.self;
             gameState.self = this.self;
-            var result = this.playerAction.GetCardFromRevealedCardsToPutOnDeck(gameState, player);
+            var result = this.playerAction.GetCardFromRevealedCardsToPutOnDeck(gameState);
             gameState.self = saved;
             return result;
         }
 
-        public Card GetCardFromRevealedCardsToDiscard(GameState gameState, PlayerState player)
+        public Card GetCardFromRevealedCardsToDiscard(GameState gameState)
         {
             var saved = gameState.self;
             gameState.self = this.self;
-            var result = this.playerAction.GetCardFromRevealedCardsToDiscard(gameState, player);
+            var result = this.playerAction.GetCardFromRevealedCardsToDiscard(gameState);
             gameState.self = saved;
             return result;
         }
@@ -265,11 +265,11 @@ namespace Dominion
             return result;
         }
 
-        public Card GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, PlayerState player, bool isOptional)
+        public Card GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             var saved = gameState.self;
             gameState.self = this.self;
-            var result = this.playerAction.GetCardFromHandToDiscard(gameState, acceptableCard, player, isOptional);
+            var result = this.playerAction.GetCardFromHandToDiscard(gameState, acceptableCard, isOptional);
             gameState.self = saved;
             return result;
         }
@@ -356,11 +356,11 @@ namespace Dominion
             return result;
         }
 
-        public bool ShouldPlayerDiscardCardFromHand(GameState gameState, PlayerState player, Card card)
+        public bool ShouldPlayerDiscardCardFromHand(GameState gameState, Card card)
         {
             var saved = gameState.self;
             gameState.self = this.self;
-            var result = this.playerAction.ShouldPlayerDiscardCardFromHand(gameState, player, card);
+            var result = this.playerAction.ShouldPlayerDiscardCardFromHand(gameState, card);
             gameState.self = saved;
             return result;
         }

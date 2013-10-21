@@ -95,7 +95,7 @@ namespace Program
             
             public static PlayerAction Player()
             {
-                return BigMoneyWithCard.Player(Cards.Moneylender, cardCount: 2);
+                return BigMoneyWithCard.Player(Cards.Moneylender);
             }
         } 
 

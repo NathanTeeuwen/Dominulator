@@ -737,7 +737,7 @@ namespace Dominion.CardTypes
 
         private new bool DoSpecializedActionOnTrashWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
-            if (currentPlayer.actions.ShouldPlayerDiscardCardFromHand(gameState, currentPlayer, this))
+            if (currentPlayer.actions.ShouldPlayerDiscardCardFromHand(gameState, this))
             {
                 currentPlayer.DiscardCardFromHand(gameState, this);
                 currentPlayer.GainCardFromSupply(Gold.card, gameState);
