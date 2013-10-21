@@ -15,42 +15,36 @@ namespace Dominion.CardTypes
         public static Ambassador card = new Ambassador();
 
         private Ambassador()
-            : base("Ambassador", coinCost: 3, isAction: true, attackDependsOnPlayerChoice: true)
+            : base("Ambassador", coinCost: 3, isAction: true, attackDependsOnPlayerChoice: true, isAttack:true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(acceptableCard => true, gameState);
-            if (revealedCard == null)
-            {
-                return;
-            }
+            PlayerState.AttackAction attackAction = this.DoEmptyAttack;
 
-            currentPlayer.MoveRevealedCardToHand(revealedCard);
-
-            int maxReturnCount = 1;
-            if (currentPlayer.Hand.CountWhere(card => card.Equals(revealedCard)) > 1)
+            if (revealedCard != null)
             {
-                maxReturnCount++;                
-            }
+                currentPlayer.MoveRevealedCardToHand(revealedCard);
+                int maxReturnCount = Math.Max(currentPlayer.Hand.CountOf(revealedCard), 2);            
             
-            int returnCount = currentPlayer.actions.GetCountToReturnToSupply(revealedCard, gameState);
-            returnCount = Math.Min(returnCount, maxReturnCount);
-            returnCount = Math.Max(returnCount, 0);                       
+                int returnCount = currentPlayer.actions.GetCountToReturnToSupply(revealedCard, gameState);
+                returnCount = Math.Min(returnCount, maxReturnCount);
+                returnCount = Math.Max(returnCount, 0);                       
 
-            for (int i = 0; i < returnCount; ++i)
-            {
-                currentPlayer.ReturnCardFromHandToSupply(revealedCard, gameState);
-            }
+                for (int i = 0; i < returnCount; ++i)
+                {
+                    currentPlayer.ReturnCardFromHandToSupply(revealedCard, gameState);
+                }
 
-            foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
-            {
-                if (!otherPlayer.IsAffectedByAttacks(gameState))
+                attackAction = delegate(PlayerState currentPlayer2, PlayerState otherPlayer, GameState gameState2)
                 {
                     otherPlayer.GainCardFromSupply(gameState, revealedCard);
-                }
+                };
             }
+
+            currentPlayer.AttackOtherPlayers(gameState, attackAction);
         }
     }
 
