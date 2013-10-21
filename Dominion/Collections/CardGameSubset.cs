@@ -28,10 +28,10 @@ namespace Dominion
         internal void AddCard(Card card)
         {
             GrowToHandleCard(card);
-            if (this.mapCardIndexToSubsetIndex[card.index] == sentinelIndex)
+            if (this.mapCardIndexToSubsetIndex[card.Index] == sentinelIndex)
             {
                 int subsetIndex = nextIndex++;
-                this.mapCardIndexToSubsetIndex[card.index] = subsetIndex;
+                this.mapCardIndexToSubsetIndex[card.Index] = subsetIndex;
                 this.mapSubsetIndexToCard.Add(card);
             }
         }
@@ -48,15 +48,15 @@ namespace Dominion
 
         internal int GetIndexFor(Card card)
         {
-            if (card.index >= this.mapCardIndexToSubsetIndex.Count)
+            if (card.Index >= this.mapCardIndexToSubsetIndex.Count)
                 return -1;
 
-            return this.mapCardIndexToSubsetIndex[card.index];
+            return this.mapCardIndexToSubsetIndex[card.Index];
         }
 
         private void GrowToHandleCard(Card card)
         {
-            while (this.mapCardIndexToSubsetIndex.Count < card.index + 1)
+            while (this.mapCardIndexToSubsetIndex.Count < card.Index + 1)
             {
                 if (!this.isInitializing)
                     throw new Exception("Can not use unexpected card after initializing");

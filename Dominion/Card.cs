@@ -45,7 +45,10 @@ namespace Dominion
 
         private readonly int privateIndex;
 
-        internal int index
+        private static int lastCardIndex = 0;
+        private static HashSet<Type> cardTypes = new HashSet<Type>();
+
+        internal int Index
         {
             get
             {
@@ -97,7 +100,7 @@ namespace Dominion
                     Card.cardTypes.Add(this.GetType());
                 }
 
-                this.privateIndex = ++lastCardIndex;
+                this.privateIndex = Card.lastCardIndex++;
             }
 
             this.name = name;
@@ -380,11 +383,7 @@ namespace Dominion
         virtual public void DoSpecializedActionOnReturnToHand(PlayerState currentPlayer, GameState gameState)
         {
 
-        }
-
-        private static int lastCardIndex = 0;        
-
-        private static HashSet<Type> cardTypes = new HashSet<Type>();
+        }        
 
         public bool IsType(Card card)
         {
