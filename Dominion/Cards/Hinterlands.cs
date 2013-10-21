@@ -268,7 +268,10 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card == Cards.Copper, "you may gain a copper", isOptional:true, defaultLocation: DeckPlacement.Hand);
+            if (currentPlayer.actions.ShouldGainCard(gameState, Cards.Copper))
+            {
+                currentPlayer.GainCardFromSupply(Cards.Copper, gameState, DeckPlacement.Hand);
+            }            
         }
     }
 

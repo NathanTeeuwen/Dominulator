@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-    public class DefaultPlayerAction
+    public class UnimplementedPlayerAction
         : IPlayerAction
     {
 
@@ -62,7 +62,7 @@ namespace Dominion
             }
         }               
 
-        virtual public Card BanCardForCurrentPlayerRevealedCards(GameState gameState)
+        virtual public Card BanCardToDrawnIntoHandFromRevealedCards(GameState gameState)
         {
             return PlayerMustMakeCardChoice();
         }
@@ -239,7 +239,7 @@ namespace Dominion
             return PlayerMustMakeDeckPlacement();
         }
 
-        virtual public int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber)
+        virtual public int GetNumberOfCoppersToPutInHandForCountingHouse(GameState gameState, int maxNumber)
         {
             return PlayerMustChooseNumber();
         }

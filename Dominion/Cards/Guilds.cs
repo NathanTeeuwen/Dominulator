@@ -22,7 +22,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.RevealCardsFromDeck(3);
-            Card cardType = gameState.players.PlayerLeft.actions.BanCardForCurrentPlayerRevealedCards(gameState);
+            Card cardType = gameState.players.PlayerLeft.actions.BanCardToDrawnIntoHandFromRevealedCards(gameState);
             if (!currentPlayer.cardsBeingRevealed.HasCard(cardType))
             {
                 throw new Exception("Must ban a card currently being revealed");

@@ -174,6 +174,9 @@ namespace Dominion
 
         virtual public void Clear()
         {
+            if (this.count == 0)
+                return;
+
             var parent = this.parent;
             while (parent != null)
             {
@@ -298,6 +301,17 @@ namespace Dominion
         IEnumerator IEnumerable.GetEnumerator()
         {
             return this.GetEnumerator();
+        }
+
+        public bool IsSubsetOf(CollectionCards other)
+        {
+            for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)
+            {
+                if (this.mapGameCardIndexToCount[index] > other.mapGameCardIndexToCount[index])
+                    return false;
+            }
+
+            return true;
         }
     }
 }

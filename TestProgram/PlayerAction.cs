@@ -5,24 +5,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Program.DefaultStrategies;
 
 namespace Program
 {
     public class PlayerAction
-        : DefaultPlayerAction
+        : UnimplementedPlayerAction
     {
         internal readonly string name;
         internal readonly int playerIndex = -1;
 
-        protected readonly ICardPicker purchaseOrder;
-        protected readonly ICardPicker actionOrder;
-        protected readonly ICardPicker trashOrder;
-        protected readonly ICardPicker treasurePlayOrder;
-        protected readonly ICardPicker discardOrder;
-        protected bool chooseDefaultActionOnNone;
-        protected readonly ICardPicker gainOrder;
+        internal readonly ICardPicker purchaseOrder;
+        internal readonly ICardPicker actionOrder;
+        internal readonly ICardPicker trashOrder;
+        internal readonly ICardPicker treasurePlayOrder;
+        internal readonly ICardPicker discardOrder;
+        internal bool chooseDefaultActionOnNone;
+        internal readonly ICardPicker gainOrder;
 
-        protected readonly ICardPicker defaultActionOrder;
+        internal readonly ICardPicker defaultActionOrder;
+
+        private readonly PlayerActionFromCardResponses cardResponses;
 
         public PlayerAction(
             string name,            
@@ -43,7 +46,9 @@ namespace Program
             this.chooseDefaultActionOnNone = chooseDefaultActionOnNone;
             this.name = name;
             this.defaultActionOrder = Strategies.Default.DefaultActionPlayOrder(purchaseOrder);
-        }
+
+            this.cardResponses = new PlayerActionFromCardResponses(DefaultStrategies.DefaultResponses.GetCardResponses(this));
+        }        
 
         public static int PlayIndexfor(PlayerState playerState)
         {
@@ -52,6 +57,11 @@ namespace Program
 
         public override Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
         {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromSupplyToBuy(gameState, cardPredicate);
+            }
+
             var self = gameState.Self;
             return this.purchaseOrder.GetPreferredCard(
                 gameState,
@@ -60,37 +70,31 @@ namespace Program
 
         public override Card GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetTreasureFromHandToPlay(gameState, acceptableCard, isOptional);
+            }
+
             var self = gameState.Self;
             return this.treasurePlayOrder.GetPreferredCard(
                 gameState,
                 card => self.Hand.HasCard(card) && acceptableCard(card));
-        }
-
-        public override Card ChooseCardToPlayFirst(GameState gameState, Card card1, Card card2)
-        {
-            Card result = this.actionOrder.GetPreferredCard(
-                gameState,
-                card => card == card1 || card == card2);
-
-            // choose a reasonable default
-            if (result == null)
-            {
-                result = this.defaultActionOrder.GetPreferredCard(
-                    gameState,
-                    card => card == card1 || card == card2);
-            }
-
-            return result;
-        }
+        }        
 
         public override Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromHandToPlay(gameState, acceptableCard, isOptional);
+            }
+
             var self = gameState.Self;      
 
             Card result = this.actionOrder.GetPreferredCard(
                 gameState,
                 card => self.Hand.HasCard(card) && acceptableCard(card));
 
+            // only choose default actions that weren't explicitly mentioned in the play order
             if (result == null && this.chooseDefaultActionOnNone)
             {
                 var candidateCards = new SetOfCards(gameState.CardGameSubset);
@@ -125,61 +129,19 @@ namespace Program
             }
 
             return result;
-        }
-
-        public override Card BanCardForCurrentPlayerPurchase(GameState gameState)
-        {
-            return Cards.Province;
         }        
 
-        public override Card BanCardForCurrentPlayerRevealedCards(GameState gameState)
-        {
-            return gameState.players.CurrentPlayer.CardsBeingRevealed.OrderBy(card => card, new CompareCardForBanning(gameState)).FirstOrDefault();
-        }
-
-        class CompareCardForBanning
-            : IComparer<Card>
-        {
-            GameState gameState;
-
-            public CompareCardForBanning(GameState gameState)
-            {
-                this.gameState = gameState;
-            }
-
-            public int Compare(Card first, Card second)
-            {
-                // no available actions.  Prefer to ban actions over non actions.
-                if (gameState.players.CurrentPlayer.AvailableActions == 0)
-                {                                        
-                    if (first.isAction ^ second.isAction)
-                    {
-                        return first.isAction ? -1 : 1;
-                    }
-                }
-
-                bool firstIsUseful = first.isTreasure || first.isAction;
-                bool secondIsUseful = second.isTreasure || second.isAction;
-                // only one of the cards is useful
-                if (firstIsUseful ^ secondIsUseful)
-                {
-                    return firstIsUseful ? -1 : 1;
-                }                                
-
-                int firstCost = first.CurrentCoinCost(gameState.players.CurrentPlayer);
-                int secondCost = second.CurrentCoinCost(gameState.players.CurrentPlayer);
-                if (firstCost != secondCost)
-                {
-                    // ban most expensive card first.
-                    return firstCost > secondCost ? -1 : 1;
-                }
-
-                // dont care on order
-                return 0;
-            }
-        }
-
         public override Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromHandToTrash(gameState, acceptableCard, isOptional);
+            }
+
+            return DefaultGetCardFromHandToTrash(gameState, acceptableCard, isOptional);           
+        }
+
+        public Card DefaultGetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             var self = gameState.Self;
             Card result = this.trashOrder.GetPreferredCard(
@@ -189,7 +151,7 @@ namespace Program
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null && !isOptional)
             {
-                result = self.Hand.Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();                
+                result = self.Hand.Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();
             }
 
             return result;
@@ -197,6 +159,11 @@ namespace Program
 
         public override Card GetCardFromHandOrDiscardToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, out DeckPlacement deckPlacement)
         {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromHandOrDiscardToTrash(gameState, acceptableCard, isOptional, out deckPlacement);
+            }
+
             var self = gameState.Self;
             Card result = this.trashOrder.GetPreferredCard(
                 gameState,
@@ -223,7 +190,12 @@ namespace Program
         }
 
         public override Card GetCardFromRevealedCardsToTrash(GameState gameState, CardPredicate acceptableCard)
-        {            
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromRevealedCardsToTrash(gameState, acceptableCard);
+            }
+
             var selfPlayer = gameState.Self;
             Card result = this.trashOrder.GetPreferredCard(
                 gameState,
@@ -240,6 +212,11 @@ namespace Program
 
         public override Card GetCardFromRevealedCardsToDiscard(GameState gameState)
         {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromRevealedCardsToDiscard(gameState);
+            }
+
             var self = gameState.Self;
             Card result = this.discardOrder.GetPreferredCard(
                 gameState,
@@ -252,26 +229,15 @@ namespace Program
             }
 
             return result;
-        }
-
-        public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
-        {
-            BagOfCards revealedCards = gameState.Self.CardsBeingRevealed;
-            // good for cartographer, not sure about anyone else.
-            foreach (Card card in revealedCards)
-            {
-                bool shouldDiscard = card.isVictory || card == Cards.Copper;
-                if (!shouldDiscard)
-                {
-                    return card;
-                }
-            }
-
-            return null;
-        }
+        }        
 
         override public Card GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromHandToTopDeck(gameState, acceptableCard, isOptional);
+            }
+
             Card result = this.discardOrder.GetPreferredCard(gameState, card => gameState.Self.Hand.HasCard(card) && acceptableCard(card));
             if (result != null)
             {
@@ -288,23 +254,33 @@ namespace Program
 
         override public Card GetCardFromDiscardToTopDeck(GameState gameState, bool isOptional)
         {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromDiscardToTopDeck(gameState, isOptional);
+            }
+
             Card result = this.discardOrder.GetPreferredCardReverse(gameState, card => gameState.Self.Discard.HasCard(card));
             return result;
         }
 
-        public override bool ShouldPutCardInHand(GameState gameState, Card card)
-        {
-            return !DoesCardPickerMatch(this.discardOrder, gameState, card);            
-        }
-
         public override bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card)
         {
-            return !DoesCardPickerMatch(this.discardOrder, gameState, card);            
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.ShouldPlayerDiscardCardFromDeck(gameState, player, card);
+            }
+
+            return !this.discardOrder.DoesCardPickerMatch(gameState, card);            
         }
 
         public override DeckPlacement ChooseBetweenTrashAndTopDeck(GameState gameState, Card card)
         {
-            if (DoesCardPickerMatch(this.purchaseOrder, gameState, card))
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.ChooseBetweenTrashAndTopDeck(gameState, card);
+            }
+
+            if (this.purchaseOrder.DoesCardPickerMatch(gameState, card))
                 return DeckPlacement.TopOfDeck;
             
             return DeckPlacement.Trash;            
@@ -312,6 +288,11 @@ namespace Program
 
         public override Card GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer)
         {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromOtherPlayersHandToDiscard(gameState, otherPlayer);
+            }
+
             // discard the highest costing action or treasure.
             Card result = otherPlayer.Hand.Where(c => c.isAction || c.isTreasure).OrderByDescending(c => c.DefaultCoinCost).FirstOrDefault();
 
@@ -324,59 +305,28 @@ namespace Program
 
         public override Card GetCardFromOtherPlayersRevealedCardsToTrash(GameState gameState, PlayerState otherPlayer, CardPredicate acceptableCard)
         {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromOtherPlayersRevealedCardsToTrash(gameState, otherPlayer, acceptableCard);
+            }
+
             // trash the highest costing matching card
             Card result = otherPlayer.CardsBeingRevealed.Where(c => acceptableCard(c)).OrderByDescending(c => c.DefaultCoinCost).FirstOrDefault();            
 
             return result;
-        }
-
-        public override bool ShouldRevealCardFromHand(GameState gameState, Card card)
-        {
-            if (card == Cards.Watchtower)
-                return true;
-            if (card == Cards.HorseTraders)
-                return true;
-
-            return base.ShouldRevealCardFromHand(gameState, card);
-        }
-
-        public override bool ShouldRevealCardFromHandForCard(GameState gameState, Card card, Card cardFor)
-        {
-            if (card == Cards.Trader)
-            {
-                return DoesCardPickerMatch(this.trashOrder, gameState, cardFor) && !DoesCardPickerMatch(this.purchaseOrder, gameState, cardFor);
-            }
-
-            return base.ShouldRevealCardFromHand(gameState, card);
-        }
-
-        struct CompareCardByFirstToTrash
-            : IComparer<Card>
-        {
-            public int Compare(Card x, Card y)
-            {
-                if (x.isCurse ^ y.isCurse)
-                {
-                    return x.isCurse ? -1 : 1;
-                }
-
-                if (x.isAction ^ y.isAction)
-                {
-                    return x.isAction ? -1 : 1;
-                }
-
-                if (x.isTreasure ^ y.isTreasure)
-                {
-                    return x.isTreasure ? -1 : 1;
-                }
-
-                return x.DefaultCoinCost < y.DefaultCoinCost ? -1 :
-                       x.DefaultCoinCost > y.DefaultCoinCost ? 1 :
-                       0;
-            }
-        }
-
+        }        
+        
         public override Card GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromHandToDiscard(gameState, acceptableCard, isOptional);
+            }
+
+            return DefaultGetCardFromHandToDiscard(gameState, acceptableCard, isOptional);            
+        }
+
+        public Card DefaultGetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             Card result = this.discardOrder.GetPreferredCard(
                 gameState,
@@ -391,36 +341,15 @@ namespace Program
             }
 
             return result;
-        }
-
-        struct CompareCardByFirstToDiscard
-            : IComparer<Card>
-        {
-            public int Compare(Card x, Card y)
-            {
-                if (x.isCurse ^ y.isCurse)
-                {
-                    return x.isCurse ? -1 : 1;
-                }
-
-                if (x.isAction ^ y.isAction)
-                {
-                    return x.isAction ? 1 : -1;
-                }
-
-                if (x.isVictory ^ y.isVictory)
-                {
-                    return x.isVictory ? -1 : 1;
-                }
-
-                return x.DefaultCoinCost < y.DefaultCoinCost ? -1 :
-                       x.DefaultCoinCost > y.DefaultCoinCost ? 1 :
-                       0;
-            }
-        }
+        }       
 
         public override Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
         {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromRevealedCardsToPutOnDeck(gameState);
+            }
+
             Card result = this.discardOrder.GetPreferredCard(
                 gameState,
                 card => gameState.Self.CardsBeingRevealed.HasCard(card));
@@ -436,6 +365,11 @@ namespace Program
 
         public override Card GetCardFromTrashToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromTrashToGain(gameState, acceptableCard, isOptional);
+            }
+
             var self = gameState.Self;
 
             Card result = this.gainOrder.GetPreferredCard(
@@ -455,22 +389,16 @@ namespace Program
 
         public override Card GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromSupplyToGain(gameState, acceptableCard, isOptional);
+            }
+
             var self = gameState.Self;
 
             Card result = this.gainOrder.GetPreferredCard(
                 gameState,
-                card => acceptableCard(card) && gameState.GetPile(card).Any);
-
-            // do a reasonable default for gainning copper on ill gotten gain
-            if (result == null &&
-                acceptableCard(Cards.Copper) &&
-                Strategies.CardBeingPlayedIs(Cards.IllGottenGains, gameState))
-            {
-                if (ShouldGainCopper(gameState, this.purchaseOrder))
-                {
-                    result = Cards.Copper;
-                }
-            }
+                card => acceptableCard(card) && gameState.GetPile(card).Any);         
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null && !isOptional)
@@ -483,66 +411,8 @@ namespace Program
             }
 
             return result;
-        }        
-
-        private static bool ShouldGainCopper(GameState gameState, ICardPicker gainOrder)
-        {
-            PlayerState self = gameState.Self;
-
-            int minValue = self.ExpectedCoinValueAtEndOfTurn;
-            int maxValue = minValue + Strategies.CountInHand(Cards.IllGottenGains, gameState);
-
-            if (maxValue == minValue)
-                return false;
-
-            CardPredicate shouldGainCard = delegate(Card card)
-            {
-                int currentCardCost = card.CurrentCoinCost(self);
-
-                return currentCardCost >= minValue &&
-                        currentCardCost <= maxValue;
-            };
-
-            Card cardType = gainOrder.GetPreferredCard(gameState, shouldGainCard);
-            if (cardType == null)
-                return false;
-
-            int coppersToGain = PlayerAction.CostOfCard(cardType, gameState) - minValue;
-
-            return (coppersToGain > 0);
-        }
-
-        private static bool DoesCardPickerMatch(ICardPicker pickOrder, GameState gameState, Card card)
-        {
-            return pickOrder.GetPreferredCard(gameState, c => c == card) != null;
-        }
-
-        struct CompareCardByFirstToGain
-            : IComparer<Card>
-        {
-            public int Compare(Card x, Card y)
-            {
-                if (x.isCurse ^ y.isCurse)
-                {
-                    return x.isCurse ? 1 : -1;
-                }
-
-                if (x.isRuins ^ y.isRuins)
-                {
-                    return x.isRuins ? 1 : -1;
-                }
-
-                if (x.isTreasure ^ y.isTreasure)
-                {
-                    return x.isTreasure ? -1 : 1;
-                }
-
-                return x.DefaultCoinCost > y.DefaultCoinCost ? -1 :
-                       x.DefaultCoinCost < y.DefaultCoinCost ? 1 :
-                       0;
-            }
-        }
-
+        }                      
+       
         public override string PlayerName
         {
             get
@@ -553,14 +423,21 @@ namespace Program
 
         public override bool ShouldGainCard(GameState gameState, Card card)
         {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.ShouldGainCard(gameState, card);
+            }
+
             return this.gainOrder.GetPreferredCard(gameState, c => c.Equals(card)) != null;
         }
 
         public override bool ShouldPlayerDiscardCardFromHand(GameState gameState, Card card)
         {
-            if (card == Cards.MarketSquare)
-                return true;
-
+            if (this.cardResponses.ShouldDeferForCard(card))
+            {
+                return this.cardResponses.ShouldPlayerDiscardCardFromHand(gameState, card);
+            }
+            
             return base.ShouldPlayerDiscardCardFromHand(gameState, card);
         }
 
@@ -621,7 +498,17 @@ namespace Program
             }
 
             return result;
-        }    
+        }
+
+        public override bool ShouldTrashCard(GameState gameState, Card card)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.ShouldTrashCard(gameState, card);
+            }
+
+            return this.trashOrder.DoesCardPickerMatch(gameState, card);
+        }        
     
         public static int CostOfCard(Card cardType, GameState gameState)
         {
@@ -648,5 +535,229 @@ namespace Program
                 cardSet.Add(card);
             }
         }
+
+        // default responses from cards
+        
+        public override int GetCountToReturnToSupply(Card card, GameState gameState)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCountToReturnToSupply(card, gameState);
+            }
+
+            return base.GetCountToReturnToSupply(card, gameState);
+        }
+
+        public override Card BanCardToDrawnIntoHandFromRevealedCards(GameState gameState)
+        {            
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.BanCardToDrawnIntoHandFromRevealedCards(gameState);
+            }
+
+            return gameState.players.CurrentPlayer.CardsBeingRevealed.OrderBy(card => card, new CompareCardForBanningForDrawIntoHand(gameState)).FirstOrDefault();            
+        }
+
+        public override Card BanCardForCurrentPlayerPurchase(GameState gameState)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.BanCardForCurrentPlayerPurchase(gameState);
+            }
+
+            return Cards.Province;
+        }
+
+        public override Card ChooseCardToPlayFirst(GameState gameState, Card card1, Card card2)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.ChooseCardToPlayFirst(gameState, card1, card2);
+            }
+
+            return base.ChooseCardToPlayFirst(gameState, card1, card2);
+        }        
+
+        public override Card GetCardFromSupplyToEmbargo(GameState gameState)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromSupplyToEmbargo(gameState);
+            }
+
+            return base.GetCardFromSupplyToEmbargo(gameState);
+        }
+
+        public override Card GetCardFromSupplyToPlay(GameState gameState, CardPredicate acceptableCard)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromSupplyToPlay(gameState, acceptableCard);
+            }
+
+            return base.GetCardFromSupplyToPlay(gameState, acceptableCard);
+        }              
+
+        public override Card GuessCardTopOfDeck(GameState gameState)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GuessCardTopOfDeck(gameState);
+            }
+
+            return base.GuessCardTopOfDeck(gameState);
+        }
+
+        public override Card NameACard(GameState gameState)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.NameACard(gameState);
+            }
+
+            return base.NameACard(gameState);
+        }        
+
+        public override Card GetCardFromPlayToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromPlayToTopDeck(gameState, acceptableCard, isOptional);
+            }
+
+            return base.GetCardFromPlayToTopDeck(gameState, acceptableCard, isOptional);
+        }
+
+        public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromRevealedCardsToTopDeck(gameState);
+            }
+
+            // should throw not implemented?
+            return null;
+        }
+
+        public override Card GetCardFromHandToDeferToNextTurn(GameState gameState)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromHandToDeferToNextTurn(gameState);
+            }
+
+            return base.GetCardFromHandToDeferToNextTurn(gameState);
+        }        
+
+        public override Card GetCardFromHandToIsland(GameState gameState)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromHandToIsland(gameState);
+            }
+
+            return base.GetCardFromHandToIsland(gameState);
+        }
+
+        public override Card GetCardFromHandToPassLeft(GameState gameState)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromHandToPassLeft(gameState);
+            }
+
+            return base.GetCardFromHandToPassLeft(gameState);
+        }       
+
+        public override Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetCardFromHandToReveal(gameState, acceptableCard);
+            }
+
+            return base.GetCardFromHandToReveal(gameState, acceptableCard);
+        }                                        
+
+        public override int GetNumberOfCoppersToPutInHandForCountingHouse(GameState gameState, int maxNumber)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.GetNumberOfCoppersToPutInHandForCountingHouse(gameState, maxNumber);
+            }
+
+            return maxNumber;
+        }
+
+        public override bool ShouldRevealCardFromHandForCard(GameState gameState, Card card, Card cardFor)
+        {
+            if (this.cardResponses.ShouldDeferForCard(card))
+            {
+                return this.cardResponses.ShouldRevealCardFromHandForCard(gameState, card, cardFor);
+            }            
+
+            return base.ShouldRevealCardFromHand(gameState, card);
+        }
+
+        public override bool ShouldRevealCardFromHand(GameState gameState, Card card)
+        {
+            if (this.cardResponses.ShouldDeferForCard(card))
+            {
+                return this.cardResponses.ShouldRevealCardFromHand(gameState, card);
+            }
+
+            return base.ShouldRevealCardFromHand(gameState, card);
+        }        
+
+        public override bool ShouldPutCardInHand(GameState gameState, Card card)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.ShouldPutCardInHand(gameState, card);
+            }
+
+            return base.ShouldPutCardInHand(gameState, card);
+        }        
+
+        public override bool ShouldPutDeckInDiscard(GameState gameState)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.ShouldPutDeckInDiscard(gameState);
+            }
+
+            return base.ShouldPutDeckInDiscard(gameState);
+        }
+
+        public override bool ShouldPutCardOnTopOfDeck(Card card, GameState gameState)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.ShouldPutCardOnTopOfDeck(card, gameState);
+            }
+
+            return base.ShouldPutCardOnTopOfDeck(card, gameState);
+        }      
+
+        public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
+        {
+            if (this.cardResponses.ShouldDeferForCard(gameState))
+            {
+                return this.cardResponses.ChooseBetween(gameState, acceptableChoice);
+            }
+
+            return base.ChooseBetween(gameState, acceptableChoice);
+        }
+            
+
+        public override int GetCoinAmountToOverpayForCard(GameState gameState, Card card)
+        {
+            if (this.cardResponses.ShouldDeferForCard(card))
+            {
+                return this.cardResponses.GetCoinAmountToOverpayForCard(gameState, card);
+            }
+
+            return base.GetCoinAmountToOverpayForCard(gameState, card);
+        }        
     }    
 }

@@ -11,4 +11,12 @@ namespace Program
         Card GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate);
         IEnumerable<Card> GetNeededCards();
     }
+
+    public static class ICardPickerExtensions
+    {
+        public static bool DoesCardPickerMatch(this ICardPicker pickOrder, GameState gameState, Card card)
+        {
+            return pickOrder.GetPreferredCard(gameState, c => c == card) != null;
+        }
+    }
 }

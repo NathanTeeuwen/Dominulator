@@ -236,17 +236,18 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            int countCardsDiscarded = 0;
+            currentPlayer.numberOfCardsToBeDrawn = 0;
             while (!currentPlayer.hand.IsEmpty)
             {
                 if (!currentPlayer.RequestPlayerDiscardCardFromHand(gameState, acceptableCard => true, isOptional: true))
                 {
                     break;
                 }
-                ++countCardsDiscarded;
+                ++currentPlayer.numberOfCardsToBeDrawn;
             }
 
-            currentPlayer.DrawAdditionalCardsIntoHand(countCardsDiscarded);
+            currentPlayer.DrawAdditionalCardsIntoHand(currentPlayer.numberOfCardsToBeDrawn);
+            currentPlayer.numberOfCardsToBeDrawn = 0;
         }
     }
 

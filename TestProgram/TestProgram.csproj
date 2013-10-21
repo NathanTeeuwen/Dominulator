@@ -46,7 +46,13 @@
   <ItemGroup>
     <Compile Include="CardAcceptance.cs" />
     <Compile Include="DefaultStrategies.cs" />
+    <Compile Include="DefaultStrategies\CardOverrides.cs" />
+    <Compile Include="DefaultStrategies\CompareCardByFirstToGain.cs" />
+    <Compile Include="DefaultStrategies\CompareCardFirstToTrash.cs" />
+    <Compile Include="DefaultStrategies\CompareCardForBanningForDrawIntoHand.cs" />
+    <Compile Include="DefaultStrategies\CompareCardFirstToDiscard.cs" />
     <Compile Include="Kingdoms\ShouldRemakeOrHorseTradersIntoSoothayer.cs" />
+    <Compile Include="PlayerActionFromCardResponses.cs" />
     <Compile Include="Simulations\DarkAgesBigMoney.cs" />
     <Compile Include="Simulations\EffectOfEstateOnRebuild.cs" />
     <Compile Include="Simulations\FeodumVsDuke.cs" />

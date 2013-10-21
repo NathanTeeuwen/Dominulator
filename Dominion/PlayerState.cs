@@ -52,7 +52,7 @@ namespace Dominion
         public int AvailableCoinTokens { get { return this.turnCounters.AvailableCoinTokens; } }
         public int AvailableActions { get { return this.turnCounters.AvailableActions; } }
         public int AvailableBuys { get { return this.turnCounters.AvailableBuys; } }        
-        public BagOfCards Hand { get { return this.hand; } }
+        public CollectionCards Hand { get { return this.hand; } }
         public BagOfCards CardsBeingRevealed { get { return this.cardsBeingRevealed; } }
         public BagOfCards Discard { get { return this.discard; } }
         public CollectionCards CardsInDeck { get { return this.deck; } }
@@ -62,6 +62,10 @@ namespace Dominion
         public int PlayerIndex { get { return this.playerIndex; } }
         public SetOfCards CardsBoughtThisTurn { get { return this.turnCounters.cardsBoughtThisTurn; } }
         public SetOfCards CardsGainedThisTurn { get { return this.turnCounters.cardsGainedThisTurn; } }
+
+        // Card specific state that strategies can query about
+        internal int numberOfCardsToBeDrawn;
+        public int NumberOfCardsToBeDrawn { get { return this.numberOfCardsToBeDrawn; } }
 
         public int ExpectedCoinValueAtEndOfTurn { get { return this.AvailableCoins + this.hand.Where(card => card.isTreasure).Select(card => card.plusCoin).Sum(); } }
 
@@ -663,7 +667,7 @@ namespace Dominion
 
         internal void MoveCardFromHandToIslandMat(Card cardType)
         {
-            Card removedCard = this.Hand.RemoveCard(cardType);
+            Card removedCard = this.hand.RemoveCard(cardType);
             if (removedCard != null)
             {                
                 this.islandMat.AddCard(removedCard);
@@ -1620,7 +1624,7 @@ namespace Dominion
                 foreach (Card card in this.cardsToReturnToHandAtStartOfTurn)
                 {
                     card.DoSpecializedActionOnReturnToHand(this, gameState);
-                    this.Hand.AddCard(card);
+                    this.hand.AddCard(card);
                     this.gameLog.PlayerReturnedCardToHand(this, card);
                 }
                 this.cardsToReturnToHandAtStartOfTurn.Clear();

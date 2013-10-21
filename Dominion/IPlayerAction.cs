@@ -9,7 +9,7 @@ namespace Dominion
     public interface IPlayerAction
     {        
         int GetCountToReturnToSupply(Card card, GameState gameState);
-        Card BanCardForCurrentPlayerRevealedCards(GameState gameState);
+        Card BanCardToDrawnIntoHandFromRevealedCards(GameState gameState);
         Card BanCardForCurrentPlayerPurchase(GameState gameState);        
         Card ChooseCardToPlayFirst(GameState gameState, Card card1, Card card2);        
         Card GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional);
@@ -37,7 +37,7 @@ namespace Dominion
         Card GetCardFromHandOrDiscardToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, out DeckPlacement deckPlacement);
         Card GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer);
         Card GetCardFromOtherPlayersRevealedCardsToTrash(GameState gameState, PlayerState otherPlayer, CardPredicate acceptableCard);
-        int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber);
+        int GetNumberOfCoppersToPutInHandForCountingHouse(GameState gameState, int maxNumber);
         bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card);
         bool ShouldPlayerDiscardCardFromHand(GameState gameState, Card card);
         bool ShouldRevealCardFromHandForCard(GameState gameState, Card card, Card cardFor);
@@ -85,11 +85,11 @@ namespace Dominion
             return result;
         }
 
-        public Card BanCardForCurrentPlayerRevealedCards(GameState gameState)
+        public Card BanCardToDrawnIntoHandFromRevealedCards(GameState gameState)
         {
             var saved = gameState.self;
             gameState.self = this.self;
-            var result = this.playerAction.BanCardForCurrentPlayerRevealedCards(gameState);
+            var result = this.playerAction.BanCardToDrawnIntoHandFromRevealedCards(gameState);
             gameState.self = saved;
             return result;
         }
@@ -338,11 +338,11 @@ namespace Dominion
             return result;
         }
 
-        public int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber)
+        public int GetNumberOfCoppersToPutInHandForCountingHouse(GameState gameState, int maxNumber)
         {
             var saved = gameState.self;
             gameState.self = this.self;
-            var result = this.playerAction.GetNumberOfCardsFromDiscardToPutInHand(gameState, maxNumber);
+            var result = this.playerAction.GetNumberOfCoppersToPutInHandForCountingHouse(gameState, maxNumber);
             gameState.self = saved;
             return result;
         }

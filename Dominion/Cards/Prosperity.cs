@@ -154,16 +154,16 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             int maxCoppers = currentPlayer.discard.CountWhere(card => card == Cards.Copper);
-            int cardsToReveal = currentPlayer.actions.GetNumberOfCardsFromDiscardToPutInHand(gameState, maxCoppers);
+            int cardsToPutInHand = currentPlayer.actions.GetNumberOfCoppersToPutInHandForCountingHouse(gameState, maxCoppers);
 
-            if (cardsToReveal < 0 || cardsToReveal > maxCoppers)
+            if (cardsToPutInHand < 0 || cardsToPutInHand > maxCoppers)
             {
                 throw new Exception("Requested number of cards to reveal is out of range");
             }
 
-            if (cardsToReveal > 0)
+            if (cardsToPutInHand > 0)
             {
-                currentPlayer.RevealCardsFromDiscard(cardsToReveal, card => card == Cards.Copper);
+                currentPlayer.RevealCardsFromDiscard(cardsToPutInHand, card => card == Cards.Copper);
                 currentPlayer.MoveAllRevealedCardsToHand();
             }
         }

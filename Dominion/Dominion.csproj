@@ -109,7 +109,7 @@
     <Compile Include="Collections\ListOfCards.cs" />
     <Compile Include="GameLogs\IGameLog.cs" />
     <Compile Include="IPlayerAction.cs" />
-    <Compile Include="DefaultPlayerAction.cs" />
+    <Compile Include="UnimplementedPlayerAction.cs" />
     <Compile Include="SimpleDefinitions\PlayerActionChoice.cs" />
     <Compile Include="PlayerCircle.cs" />
     <Compile Include="PlayerState.cs" />
