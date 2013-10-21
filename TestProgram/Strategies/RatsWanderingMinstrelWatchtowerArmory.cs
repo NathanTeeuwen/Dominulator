@@ -44,7 +44,7 @@ namespace Program
                 var buildOrder = new CardPickByBuildOrder(
                     Cards.Armory,
                     Cards.Silver,
-                    Cards.WanderingMinstrell,
+                    Cards.WanderingMinstrel,
                     Cards.Watchtower,
                     Cards.Rats,
                     Cards.Watchtower);*/
@@ -58,7 +58,7 @@ namespace Program
 
                 var lowPriority = new CardPickByPriority(
                        CardAcceptance.For(Cards.Bridge, ShouldBuyBridge),                       
-                       CardAcceptance.For(Cards.WanderingMinstrell),                       
+                       CardAcceptance.For(Cards.WanderingMinstrel),                       
                        CardAcceptance.For(Cards.Watchtower, gameState => CountAllOwned(Cards.Watchtower, gameState) < 3));
 
                 return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
@@ -66,7 +66,7 @@ namespace Program
 
             private static bool ShouldBuyBridge(GameState gameState)
             {
-                return CountAllOwned(Cards.WanderingMinstrell, gameState) > CountAllOwned(Cards.Bridge, gameState) + CountAllOwned(Cards.Watchtower, gameState) + 1;
+                return CountAllOwned(Cards.WanderingMinstrel, gameState) > CountAllOwned(Cards.Bridge, gameState) + CountAllOwned(Cards.Watchtower, gameState) + 1;
             }
 
             private static bool ShouldPlayArmory(GameState gameState)
@@ -99,7 +99,7 @@ namespace Program
                            CardAcceptance.For(Cards.Bridge, gameState => CanPlay2TerminalsWhileChaining(gameState)),
                            CardAcceptance.For(Cards.Watchtower, gameState => CanPlayTerminalWhileChaining(gameState) && !WillRatsComboWork(gameState) && gameState.Self.Hand.Count <= 5),
                            CardAcceptance.For(Cards.Rats, gameState => WillRatsComboWork(gameState)),
-                           CardAcceptance.For(Cards.WanderingMinstrell),
+                           CardAcceptance.For(Cards.WanderingMinstrel),
                            CardAcceptance.For(Cards.Necropolis),
                            CardAcceptance.For(Cards.Jester),
                            CardAcceptance.For(Cards.Armory, ShouldPlayArmory),
@@ -115,7 +115,7 @@ namespace Program
                     CardAcceptance.For(Cards.Bridge),
                     CardAcceptance.For(Cards.Necropolis),
                     CardAcceptance.For(Cards.Watchtower),
-                    CardAcceptance.For(Cards.WanderingMinstrell),
+                    CardAcceptance.For(Cards.WanderingMinstrel),
                     CardAcceptance.For(Cards.Rats));
             }
 

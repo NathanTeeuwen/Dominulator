@@ -1141,13 +1141,13 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class WanderingMinstrell
+    public class WanderingMinstrel
       : Card
     {
-        public static WanderingMinstrell card = new WanderingMinstrell();
+        public static WanderingMinstrel card = new WanderingMinstrel();
 
-        private WanderingMinstrell()
-            : base("WanderingMinstrell", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2)
+        private WanderingMinstrel()
+            : base("WanderingMinstrel", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2)
         {
         }
 
