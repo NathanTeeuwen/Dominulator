@@ -25,8 +25,7 @@ namespace Dominion
             throw new NotImplementedException();
         }
 
-        private bool PlayerMustMakeChoice()
-        {
+        private bool PlayerMustMakeChoice(){
             throw new NotImplementedException();
         }
 
@@ -128,7 +127,7 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Card GetCardFromRevealedCardsToTrash(GameState gameState, PlayerState player, CardPredicate acceptableCard)
+        virtual public Card GetCardFromRevealedCardsToTrash(GameState gameState, CardPredicate acceptableCard)
         {
             return PlayerMustMakeCardChoice();
         }
@@ -281,6 +280,11 @@ namespace Dominion
         }
 
         virtual public Card GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer)
+        {
+            return PlayerMustMakeCardChoice();
+        }
+
+        virtual public Card GetCardFromOtherPlayersRevealedCardsToTrash(GameState gameState, PlayerState otherPlayer, CardPredicate acceptableCard)
         {
             return PlayerMustMakeCardChoice();
         }

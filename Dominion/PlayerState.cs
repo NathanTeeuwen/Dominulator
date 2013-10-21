@@ -961,14 +961,14 @@ namespace Dominion
             }
 
             return this.TrashCardFromHandOfType(gameState, cardTypeToTrash, guaranteeInHand: true);
-        }
+        }      
 
         internal Card RequestPlayerTrashOtherPlayersRevealedCard(GameState gameState, CardPredicate acceptableCard,  PlayerState otherPlayer)
         {
             Card cardtoTrash = null;
             if (otherPlayer.cardsBeingRevealed.HasCard(acceptableCard))
             {
-                Card cardTypeToTrash = this.actions.GetCardFromRevealedCardsToTrash(gameState, otherPlayer, acceptableCard);
+                Card cardTypeToTrash = this.actions.GetCardFromOtherPlayersRevealedCardsToTrash(gameState, otherPlayer, acceptableCard);
 
                 cardtoTrash = otherPlayer.cardsBeingRevealed.RemoveCard(cardTypeToTrash);
                 if (cardtoTrash == null)
@@ -1144,23 +1144,30 @@ namespace Dominion
 
         internal void RequestPlayerTrashLookedAtCard(GameState gameState)
         {
-            RequestPlayerTrashRevealedCard(gameState);
+            RequestPlayerTrashRevealedCard(gameState, acceptableCard => true);
         }       
 
-        internal void RequestPlayerTrashRevealedCard(GameState gameState)
+        internal Card RequestPlayerTrashRevealedCard(GameState gameState, CardPredicate acceptableCard)
         {
-            if (this.cardsBeingRevealed.Any)
+            if (!this.cardsBeingRevealed.AnyWhere(acceptableCard))
             {
-                Card cardtoTrash = this.actions.GetCardFromRevealedCardsToTrash(gameState, this, acceptableCard => true);
-                if (cardtoTrash == Cards.Salvager)
-                { int i = 0; i++; }
-                if (cardtoTrash == null)
-                {
-                    throw new Exception("Player must choose a card to trash");
-                }
-
-                this.MoveRevealedCardToTrash(cardtoTrash, gameState);
+                return null;
             }
+
+            Card cardtoTrash = this.actions.GetCardFromRevealedCardsToTrash(gameState, acceptableCard);
+            if (cardtoTrash == null)
+            {
+                throw new Exception("Player must choose a card to trash");
+            }
+
+            if (!acceptableCard(cardtoTrash))
+            {
+                throw new Exception("Card did not meet constraint");
+            }
+
+            this.MoveRevealedCardToTrash(cardtoTrash, gameState);
+
+            return cardtoTrash;
         }
 
         internal void RequestPlayerDiscardRevealedCard(GameState gameState)

@@ -1,1611 +1,1109 @@
-ColonyFamiliarMine gained Copper.
-ColonyFamiliarMine gained Copper.
-ColonyFamiliarMine gained Copper.
-ColonyFamiliarMine gained Copper.
-ColonyFamiliarMine gained Copper.
-ColonyFamiliarMine gained Copper.
-ColonyFamiliarMine gained Copper.
-ColonyFamiliarMine gained Estate.
-ColonyFamiliarMine gained Estate.
-ColonyFamiliarMine gained Estate.
-MineHoard gained Copper.
-MineHoard gained Copper.
-MineHoard gained Copper.
-MineHoard gained Copper.
-MineHoard gained Copper.
-MineHoard gained Copper.
-MineHoard gained Copper.
-MineHoard gained Estate.
-MineHoard gained Estate.
-MineHoard gained Estate.
-ColonyFamiliarMine reshuffled
-ColonyFamiliarMine Drew Copper into hand.
-ColonyFamiliarMine Drew Copper into hand.
-ColonyFamiliarMine Drew Copper into hand.
-ColonyFamiliarMine Drew Estate into hand.
-ColonyFamiliarMine Drew Copper into hand.
-MineHoard reshuffled
-MineHoard Drew Estate into hand.
-MineHoard Drew Copper into hand.
-MineHoard Drew Copper into hand.
-MineHoard Drew Copper into hand.
-MineHoard Drew Estate into hand.
+LookoutSalvagerLibraryHighwayFestival gained Copper.
+LookoutSalvagerLibraryHighwayFestival gained Copper.
+LookoutSalvagerLibraryHighwayFestival gained Copper.
+LookoutSalvagerLibraryHighwayFestival gained Copper.
+LookoutSalvagerLibraryHighwayFestival gained Copper.
+LookoutSalvagerLibraryHighwayFestival gained Copper.
+LookoutSalvagerLibraryHighwayFestival gained Copper.
+LookoutSalvagerLibraryHighwayFestival gained Estate.
+LookoutSalvagerLibraryHighwayFestival gained Estate.
+LookoutSalvagerLibraryHighwayFestival gained Estate.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoney gained Estate.
+LookoutSalvagerLibraryHighwayFestival reshuffled
+LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+BigMoney reshuffled
+BigMoney Drew Estate into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Estate into hand.
 ROUND 1
 -------------
-ColonyFamiliarMine begins turn
+LookoutSalvagerLibraryHighwayFestival begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  ColonyFamiliarMine Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 1 all together.
-  ColonyFamiliarMine Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 2 all together.
-  ColonyFamiliarMine Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 3 all together.
-  ColonyFamiliarMine Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 4 all together.
-  ColonyFamiliarMine bought Potion.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(7), Estate(3), Potion(1), 
+  LookoutSalvagerLibraryHighwayFestival bought Salvager.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(7), Estate(3), Salvager(1), 
 
-MineHoard begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  MineHoard bought Silver.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Estate.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-ColonyFamiliarMine begins turn
+LookoutSalvagerLibraryHighwayFestival begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  ColonyFamiliarMine Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 1 all together.
-  ColonyFamiliarMine Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 2 all together.
-  ColonyFamiliarMine Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 3 all together.
-  ColonyFamiliarMine bought Silver.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine reshuffled
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(7), Estate(3), Potion(1), Silver(1), 
+  LookoutSalvagerLibraryHighwayFestival bought Lookout.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(7), Estate(3), Lookout(1), Salvager(1), 
 
-MineHoard begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  MineHoard bought Silver.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Estate.
-  MineHoard reshuffled
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-ColonyFamiliarMine begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 2 all together.
-  ColonyFamiliarMine Played Copper.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 1 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 2 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 3 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 4 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 5 all together.
-  ColonyFamiliarMine bought Mine.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Potion into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(7), Estate(3), Mine(1), Potion(1), Silver(1), 
+  LookoutSalvagerLibraryHighwayFestival bought Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Lookout into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(7), Estate(3), Lookout(1), Salvager(1), Silver(1), 
 
-MineHoard begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
-  MineHoard Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  MineHoard Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 4 all together.
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 6 all together.
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 7 all together.
-  MineHoard bought Hoard.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Silver.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard ends turn with deck: Copper(7), Estate(3), Hoard(1), Silver(2), 
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
 ROUND 4
 -------------
-ColonyFamiliarMine begins turn
-With hand: Copper,Copper,Copper,Estate,Potion,
-  ColonyFamiliarMine Played Copper.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Copper,Copper,Lookout,Salvager,
+  LookoutSalvagerLibraryHighwayFestival Played Lookout.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival Revealed Estate.
+    LookoutSalvagerLibraryHighwayFestival reshuffled
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+      LookoutSalvagerLibraryHighwayFestival trashed Estate.
+      LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+      LookoutSalvagerLibraryHighwayFestival Placed Copper on top of his deck.
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 1 all together.
-  ColonyFamiliarMine Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 2 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 3 all together.
-  ColonyFamiliarMine Played Potion.
-    +1 Potions = 1 all together.
-  ColonyFamiliarMine bought Familiar.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Potion.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine reshuffled
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(7), Estate(3), Familiar(1), Mine(1), Potion(1), Silver(1), 
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Lookout.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(6), Estate(2), Lookout(1), Salvager(1), Silver(1), 
 
-MineHoard begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Estate,Estate,Estate,
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Estate.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard reshuffled
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard ends turn with deck: Copper(7), Estate(3), Hoard(1), Silver(2), 
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
 ROUND 5
 -------------
-ColonyFamiliarMine begins turn
+LookoutSalvagerLibraryHighwayFestival begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  ColonyFamiliarMine Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 1 all together.
-  ColonyFamiliarMine Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 2 all together.
-  ColonyFamiliarMine Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 3 all together.
-  ColonyFamiliarMine bought Silver.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Potion into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Mine into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(7), Estate(3), Familiar(1), Mine(1), Potion(1), Silver(2), 
+  LookoutSalvagerLibraryHighwayFestival bought Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(6), Estate(2), Lookout(1), Salvager(1), Silver(2), 
 
-MineHoard begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  MineHoard Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  MineHoard bought Silver.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Estate.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard ends turn with deck: Copper(7), Estate(3), Hoard(1), Silver(3), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), 
 
 ROUND 6
 -------------
-ColonyFamiliarMine begins turn
-With hand: Copper,Copper,Familiar,Mine,Potion,
-  ColonyFamiliarMine Played Familiar.
-    +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Copper into hand.
-    MineHoard gained Curse.
-  ColonyFamiliarMine Played Mine.
-    ColonyFamiliarMine trashed Copper.
-    ColonyFamiliarMine gained Familiar.
-      ... and placed card in hand
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 1 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 2 all together.
-  ColonyFamiliarMine Played Potion.
-    +1 Potions = 1 all together.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Potion.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Discarded Mine.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine reshuffled
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(6), Estate(3), Familiar(2), Mine(1), Potion(1), Silver(2), 
-
-MineHoard begins turn
-With hand: Copper,Copper,Estate,Hoard,Silver,
-  MineHoard Played Silver.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Copper,Salvager,Silver,Silver,
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
     +2 Coin = 2 all together.
-  MineHoard Played Copper.
-    +1 Coin = 3 all together.
-  MineHoard Played Copper.
-    +1 Coin = 4 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 6 all together.
-  MineHoard bought Duchy.
-    MineHoard gained Gold.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Estate.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard reshuffled
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard ends turn with deck: Copper(7), Curse(1), Duchy(1), Estate(3), Gold(1), Hoard(1), Silver(3), 
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 5 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(5), Estate(2), Festival(1), Lookout(1), Salvager(1), Silver(2), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(3), 
 
 ROUND 7
 -------------
-ColonyFamiliarMine begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 2 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 4 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 5 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 6 all together.
-  ColonyFamiliarMine bought Gold.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Potion into hand.
-  ColonyFamiliarMine Drew Mine into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(6), Estate(3), Familiar(2), Gold(1), Mine(1), Potion(1), Silver(2), 
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 1 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 2 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 3 all together.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Lookout into hand.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(5), Estate(2), Festival(1), Lookout(1), Salvager(1), Silver(2), 
 
-MineHoard begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  MineHoard Played Silver.
-    +2 Coin = 2 all together.
-  MineHoard Played Silver.
-    +2 Coin = 4 all together.
-  MineHoard Played Copper.
-    +1 Coin = 5 all together.
-  MineHoard Played Copper.
-    +1 Coin = 6 all together.
-  MineHoard bought Hoard.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Estate.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard ends turn with deck: Copper(7), Curse(1), Duchy(1), Estate(3), Gold(1), Hoard(2), Silver(3), 
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(3), 
 
 ROUND 8
 -------------
-ColonyFamiliarMine begins turn
-With hand: Estate,Estate,Familiar,Mine,Potion,
-  ColonyFamiliarMine Played Familiar.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Copper,Estate,Lookout,Silver,
+  LookoutSalvagerLibraryHighwayFestival Played Lookout.
     +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Copper into hand.
-    MineHoard gained Curse.
-  ColonyFamiliarMine Played Mine.
-    ColonyFamiliarMine trashed Copper.
-    ColonyFamiliarMine gained Familiar.
-      ... and placed card in hand
-  ColonyFamiliarMine Played Potion.
-    +1 Potions = 1 all together.
-  ColonyFamiliarMine Discarded Potion.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Discarded Mine.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine reshuffled
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(5), Estate(3), Familiar(3), Gold(1), Mine(1), Potion(1), Silver(2), 
-
-MineHoard begins turn
-With hand: Copper,Copper,Duchy,Gold,Hoard,
-  MineHoard Played Gold.
-    +3 Coin = 3 all together.
-  MineHoard Played Copper.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
+      LookoutSalvagerLibraryHighwayFestival trashed Copper.
+      LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+      LookoutSalvagerLibraryHighwayFestival Placed Festival on top of his deck.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 2 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 3 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 4 all together.
-  MineHoard Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Lookout.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(4), Estate(2), Festival(1), Lookout(1), Salvager(1), Silver(2), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 7 all together.
-  MineHoard bought Duchy.
-    MineHoard gained Gold.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Duchy.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard ends turn with deck: Copper(7), Curse(2), Duchy(2), Estate(3), Gold(2), Hoard(2), Silver(3), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(4), 
 
 ROUND 9
 -------------
-ColonyFamiliarMine begins turn
-With hand: Copper,Copper,Copper,Copper,Familiar,
-  ColonyFamiliarMine Played Familiar.
-    +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Potion into hand.
-    MineHoard gained Curse.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 1 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 2 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 3 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 4 all together.
-  ColonyFamiliarMine Played Potion.
-    +1 Potions = 1 all together.
-  ColonyFamiliarMine bought Silver.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Potion.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Mine into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(5), Estate(3), Familiar(3), Gold(1), Mine(1), Potion(1), Silver(3), 
-
-MineHoard begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  MineHoard Played Silver.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Copper,Estate,Festival,Salvager,
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
     +2 Coin = 2 all together.
-  MineHoard Played Copper.
-    +1 Coin = 3 all together.
-  MineHoard Played Copper.
-    +1 Coin = 4 all together.
-  MineHoard Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Estate.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 5 all together.
-  MineHoard bought Mine.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Estate.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard reshuffled
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard ends turn with deck: Copper(7), Curse(3), Duchy(2), Estate(3), Gold(2), Hoard(2), Mine(1), Silver(3), 
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 6 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Library.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Lookout into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(4), Estate(1), Festival(1), Library(1), Lookout(1), Salvager(1), Silver(2), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(4), 
 
 ROUND 10
 -------------
-ColonyFamiliarMine begins turn
-With hand: Estate,Estate,Familiar,Gold,Mine,
-  ColonyFamiliarMine Played Familiar.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Estate,Festival,Lookout,Silver,
+  LookoutSalvagerLibraryHighwayFestival Played Lookout.
     +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Silver into hand.
-    MineHoard gained Curse.
-  ColonyFamiliarMine Played Mine.
-    ColonyFamiliarMine trashed Silver.
-    ColonyFamiliarMine gained Gold.
-      ... and placed card in hand
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 3 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 6 all together.
-  ColonyFamiliarMine bought Gold.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Discarded Mine.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine reshuffled
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(5), Estate(3), Familiar(3), Gold(3), Mine(1), Potion(1), Silver(2), 
+    LookoutSalvagerLibraryHighwayFestival Revealed Library.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+      LookoutSalvagerLibraryHighwayFestival trashed Copper.
+      LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+      LookoutSalvagerLibraryHighwayFestival Placed Library on top of his deck.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
+    +2 Coin = 2 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 5 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Lookout.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(3), Estate(1), Festival(2), Library(1), Lookout(1), Salvager(1), Silver(2), 
 
-MineHoard begins turn
-With hand: Copper,Copper,Curse,Curse,Estate,
-  MineHoard Played Copper.
-    +1 Coin = 1 all together.
-  MineHoard Played Copper.
-    +1 Coin = 2 all together.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Estate.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard ends turn with deck: Copper(7), Curse(4), Duchy(2), Estate(3), Gold(2), Hoard(2), Mine(1), Silver(3), 
+BigMoney begins turn
+With hand: Copper,Estate,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Silver(4), 
 
 ROUND 11
 -------------
-ColonyFamiliarMine begins turn
-With hand: Copper,Estate,Familiar,Familiar,Silver,
-  ColonyFamiliarMine Played Familiar.
-    +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Gold into hand.
-    MineHoard gained Curse.
-  ColonyFamiliarMine Played Familiar.
-    +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Potion into hand.
-    MineHoard gained Curse.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 3 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 5 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 6 all together.
-  ColonyFamiliarMine Played Potion.
-    +1 Potions = 1 all together.
-  ColonyFamiliarMine bought Gold.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Potion.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Drew Mine into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(5), Estate(3), Familiar(3), Gold(4), Mine(1), Potion(1), Silver(2), 
-
-MineHoard begins turn
-With hand: Copper,Copper,Curse,Gold,Silver,
-  MineHoard Played Gold.
-    +3 Coin = 3 all together.
-  MineHoard Played Silver.
-    +2 Coin = 5 all together.
-  MineHoard Played Copper.
-    +1 Coin = 6 all together.
-  MineHoard Played Copper.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Festival,Library,Salvager,Silver,
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
+    +2 Coin = 2 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
+    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Estate.
+    LookoutSalvagerLibraryHighwayFestival put Estate into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Lookout.
+    LookoutSalvagerLibraryHighwayFestival put Lookout into his hand.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 6 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 7 all together.
-  MineHoard bought Hoard.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Curse.
-  MineHoard Drew Mine into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard ends turn with deck: Copper(7), Curse(6), Duchy(2), Estate(3), Gold(2), Hoard(3), Mine(1), Silver(3), 
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 8 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Discarded Lookout.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(2), Estate(1), Festival(2), Highway(1), Library(1), Lookout(1), Salvager(1), Silver(2), 
+
+BigMoney begins turn
+With hand: Estate,Gold,Silver,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Silver.
+    +2 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(4), 
 
 ROUND 12
 -------------
-ColonyFamiliarMine begins turn
-With hand: Copper,Familiar,Gold,Gold,Mine,
-  ColonyFamiliarMine Played Familiar.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Estate,Festival,Highway,Library,
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
     +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Copper into hand.
-    MineHoard gained Curse.
-  ColonyFamiliarMine Played Mine.
-    ColonyFamiliarMine trashed Copper.
-    ColonyFamiliarMine gained Silver.
-      ... and placed card in hand
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 3 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 6 all together.
-  ColonyFamiliarMine Played Silver.
+    LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
+    +2 Coin = 2 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+    LookoutSalvagerLibraryHighwayFestival Revealed Salvager.
+    LookoutSalvagerLibraryHighwayFestival put Salvager into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Lookout.
+    LookoutSalvagerLibraryHighwayFestival put Lookout into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 3 all together.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Lookout.
+    +2 Coin = 6 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
     +2 Coin = 8 all together.
-  ColonyFamiliarMine Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 9 all together.
-  ColonyFamiliarMine bought Platinum.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Discarded Mine.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(4), Estate(3), Familiar(3), Gold(4), Mine(1), Platinum(1), Potion(1), Silver(3), 
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 10 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Highway.
+  LookoutSalvagerLibraryHighwayFestival bought Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(2), Estate(1), Festival(3), Highway(2), Library(1), Salvager(1), Silver(2), 
 
-MineHoard begins turn
-With hand: Gold,Hoard,Mine,Silver,Silver,
-  MineHoard Played Mine.
-    MineHoard trashed Silver.
-    MineHoard gained Hoard.
-      ... and placed card in hand
-  MineHoard Played Gold.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Gold,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  MineHoard Played Silver.
-    +2 Coin = 5 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 7 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 9 all together.
-  MineHoard bought Province.
-    MineHoard gained Gold.
-    MineHoard gained Gold.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Mine.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Hoard.
-  MineHoard Drew Hoard into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard ends turn with deck: Copper(7), Curse(7), Duchy(2), Estate(3), Gold(4), Hoard(4), Mine(1), Province(1), Silver(2), 
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(6), Province(1), Silver(4), 
 
 ROUND 13
 -------------
-ColonyFamiliarMine begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  ColonyFamiliarMine Played Silver.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Festival,Library,Salvager,Silver,
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
     +2 Coin = 2 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 3 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 4 all together.
-  ColonyFamiliarMine bought Silver.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine reshuffled
-  ColonyFamiliarMine Drew Potion into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(4), Estate(3), Familiar(3), Gold(4), Mine(1), Platinum(1), Potion(1), Silver(4), 
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
+    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
+    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Estate.
+    LookoutSalvagerLibraryHighwayFestival put Estate into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 6 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 7 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(1), Estate(1), Festival(4), Highway(2), Library(1), Salvager(1), Silver(2), 
 
-MineHoard begins turn
-With hand: Copper,Duchy,Estate,Estate,Hoard,
-  MineHoard Played Copper.
-    +1 Coin = 1 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 3 all together.
-  MineHoard bought Estate.
-    MineHoard gained Gold.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Duchy.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard reshuffled
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard ends turn with deck: Copper(7), Curse(7), Duchy(2), Estate(4), Gold(5), Hoard(4), Mine(1), Province(1), Silver(2), 
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney Played Copper.
+    +1 Coin = 10 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(6), Province(2), Silver(4), 
 
 ROUND 14
 -------------
-ColonyFamiliarMine begins turn
-With hand: Copper,Copper,Familiar,Familiar,Potion,
-  ColonyFamiliarMine Played Familiar.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Estate,Festival,Highway,Highway,Silver,
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
     +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Copper into hand.
-    MineHoard gained Curse.
-  ColonyFamiliarMine Played Familiar.
+    LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
     +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Silver into hand.
-    MineHoard gained Curse.
-  ColonyFamiliarMine Played Silver.
+    LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
     +2 Coin = 2 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 3 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 4 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 5 all together.
-  ColonyFamiliarMine Played Potion.
-    +1 Potions = 1 all together.
-  ColonyFamiliarMine bought Mine.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Potion.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Mine into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(4), Estate(3), Familiar(3), Gold(4), Mine(2), Platinum(1), Potion(1), Silver(4), 
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 3 all together.
+    +1 Buys = 3 all together.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Salvager.
+    LookoutSalvagerLibraryHighwayFestival put Salvager into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
+    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 3 all together.
+    +1 Buys = 4 all together.
+    +2 Coin = 6 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 4 all together.
+    +1 Buys = 5 all together.
+    +2 Coin = 8 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Estate.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 10 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 12 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 13 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Library.
+  LookoutSalvagerLibraryHighwayFestival bought Festival.
+  LookoutSalvagerLibraryHighwayFestival bought Highway.
+  LookoutSalvagerLibraryHighwayFestival bought Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(1), Festival(5), Highway(4), Library(2), Salvager(1), Silver(2), 
 
-MineHoard begins turn
-With hand: Copper,Copper,Duchy,Gold,Hoard,
-  MineHoard Played Gold.
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Gold,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  MineHoard Played Copper.
-    +1 Coin = 4 all together.
-  MineHoard Played Copper.
-    +1 Coin = 5 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 7 all together.
-  MineHoard bought Duchy.
-    MineHoard gained Gold.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Duchy.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Mine into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard ends turn with deck: Copper(7), Curse(9), Duchy(3), Estate(4), Gold(6), Hoard(4), Mine(1), Province(1), Silver(2), 
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(6), Province(3), Silver(4), 
 
 ROUND 15
 -------------
-ColonyFamiliarMine begins turn
-With hand: Copper,Estate,Gold,Mine,Silver,
-  ColonyFamiliarMine Played Mine.
-    ColonyFamiliarMine trashed Copper.
-    ColonyFamiliarMine gained Silver.
-      ... and placed card in hand
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 3 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 5 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 7 all together.
-  ColonyFamiliarMine bought Gold.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Mine.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Drew Platinum into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(3), Estate(3), Familiar(3), Gold(5), Mine(2), Platinum(1), Potion(1), Silver(5), 
-
-MineHoard begins turn
-With hand: Copper,Copper,Curse,Estate,Mine,
-  MineHoard Played Mine.
-    MineHoard trashed Copper.
-    MineHoard gained Silver.
-      ... and placed card in hand
-  MineHoard Played Silver.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Highway,Highway,Library,Salvager,Silver,
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
     +2 Coin = 2 all together.
-  MineHoard Played Copper.
-    +1 Coin = 3 all together.
-  MineHoard bought Silver.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Mine.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Estate.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard ends turn with deck: Copper(6), Curse(9), Duchy(3), Estate(4), Gold(6), Hoard(4), Mine(1), Province(1), Silver(4), 
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 3 all together.
+    +1 Buys = 3 all together.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Silver.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
+    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Library.
+    LookoutSalvagerLibraryHighwayFestival put Library into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
+    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 1 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 4 all together.
+    +2 Coin = 6 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 3 all together.
+    +1 Buys = 5 all together.
+    +2 Coin = 8 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 4 all together.
+    +1 Buys = 6 all together.
+    +2 Coin = 10 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 12 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 13 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Province.
+  LookoutSalvagerLibraryHighwayFestival bought Province.
+  LookoutSalvagerLibraryHighwayFestival bought Province.
+  LookoutSalvagerLibraryHighwayFestival bought Duchy.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Province into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(1), Duchy(1), Festival(5), Highway(4), Library(2), Province(3), Salvager(1), Silver(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(6), Province(3), Silver(4), 
 
 ROUND 16
 -------------
-ColonyFamiliarMine begins turn
-With hand: Estate,Familiar,Gold,Platinum,Silver,
-  ColonyFamiliarMine Played Familiar.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Festival,Festival,Highway,Highway,Province,
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
     +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Estate into hand.
-    MineHoard gained Curse.
-  ColonyFamiliarMine Played Platinum.
-    +5 Coin = 5 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 8 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 10 all together.
-  ColonyFamiliarMine bought Platinum.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Platinum.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine reshuffled
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(3), Estate(3), Familiar(3), Gold(5), Mine(2), Platinum(2), Potion(1), Silver(5), 
+    LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Drew Province into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
+    +2 Coin = 2 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 3 all together.
+    +1 Buys = 3 all together.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 4 all together.
+    +1 Buys = 4 all together.
+    +2 Coin = 6 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Province.
+  LookoutSalvagerLibraryHighwayFestival bought Estate.
+  LookoutSalvagerLibraryHighwayFestival bought Estate.
+  LookoutSalvagerLibraryHighwayFestival bought Estate.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Province.
+  LookoutSalvagerLibraryHighwayFestival Discarded Province.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Duchy into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Province into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(1), Duchy(1), Estate(3), Festival(5), Highway(4), Library(2), Province(4), Salvager(1), Silver(1), 
 
-MineHoard begins turn
-With hand: Copper,Curse,Duchy,Gold,Gold,
-  MineHoard Played Gold.
+BigMoney begins turn
+With hand: Estate,Gold,Province,Silver,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  MineHoard Played Gold.
-    +3 Coin = 6 all together.
-  MineHoard Played Copper.
-    +1 Coin = 7 all together.
-  MineHoard bought Hoard.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Duchy.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Province into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard ends turn with deck: Copper(6), Curse(10), Duchy(3), Estate(4), Gold(6), Hoard(5), Mine(1), Province(1), Silver(4), 
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Province.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Duchy into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(6), Province(3), Silver(4), 
 
 ROUND 17
 -------------
-ColonyFamiliarMine begins turn
-With hand: Estate,Gold,Gold,Silver,Silver,
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 3 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 6 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 8 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 10 all together.
-  ColonyFamiliarMine bought Platinum.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Platinum into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(3), Estate(3), Familiar(3), Gold(5), Mine(2), Platinum(3), Potion(1), Silver(5), 
-
-MineHoard begins turn
-With hand: Curse,Curse,Estate,Hoard,Province,
-  MineHoard Played Hoard.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Duchy,Festival,Festival,Library,Province,
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
     +2 Coin = 2 all together.
-  MineHoard bought Estate.
-    MineHoard gained Gold.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Province.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard ends turn with deck: Copper(6), Curse(10), Duchy(3), Estate(5), Gold(7), Hoard(5), Mine(1), Province(1), Silver(4), 
-
-ROUND 18
--------------
-ColonyFamiliarMine begins turn
-With hand: Copper,Familiar,Familiar,Platinum,Silver,
-  ColonyFamiliarMine Played Familiar.
-    +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Potion into hand.
-  ColonyFamiliarMine Played Familiar.
-    +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Played Platinum.
-    +5 Coin = 5 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 7 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 9 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 10 all together.
-  ColonyFamiliarMine Played Potion.
-    +1 Potions = 1 all together.
-  ColonyFamiliarMine bought Platinum.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Platinum.
-  ColonyFamiliarMine Discarded Potion.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Mine into hand.
-  ColonyFamiliarMine Drew Platinum into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine ends turn with deck: Copper(3), Estate(3), Familiar(3), Gold(5), Mine(2), Platinum(4), Potion(1), Silver(5), 
-
-MineHoard begins turn
-With hand: Copper,Curse,Estate,Estate,Gold,
-  MineHoard Played Gold.
-    +3 Coin = 3 all together.
-  MineHoard Played Copper.
-    +1 Coin = 4 all together.
-  MineHoard bought Silver.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Estate.
-  MineHoard Drew Hoard into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard ends turn with deck: Copper(6), Curse(10), Duchy(3), Estate(5), Gold(7), Hoard(5), Mine(1), Province(1), Silver(5), 
-
-ROUND 19
--------------
-ColonyFamiliarMine begins turn
-With hand: Estate,Gold,Mine,Platinum,Silver,
-  ColonyFamiliarMine Played Mine.
-    ColonyFamiliarMine trashed Silver.
-    ColonyFamiliarMine gained Gold.
-      ... and placed card in hand
-  ColonyFamiliarMine Played Platinum.
-    +5 Coin = 5 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 8 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 11 all together.
-  ColonyFamiliarMine bought Colony.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Platinum.
-  ColonyFamiliarMine Discarded Mine.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Drew Mine into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine ends turn with deck: Colony(1), Copper(3), Estate(3), Familiar(3), Gold(6), Mine(2), Platinum(4), Potion(1), Silver(4), 
-
-MineHoard begins turn
-With hand: Copper,Curse,Hoard,Hoard,Silver,
-  MineHoard Played Silver.
-    +2 Coin = 2 all together.
-  MineHoard Played Copper.
-    +1 Coin = 3 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 5 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 7 all together.
-  MineHoard bought Duchy.
-    MineHoard gained Gold.
-    MineHoard gained Gold.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Curse.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard reshuffled
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard ends turn with deck: Copper(6), Curse(10), Duchy(4), Estate(5), Gold(9), Hoard(5), Mine(1), Province(1), Silver(5), 
-
-ROUND 20
--------------
-ColonyFamiliarMine begins turn
-With hand: Copper,Copper,Familiar,Gold,Mine,
-  ColonyFamiliarMine Played Familiar.
-    +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Played Mine.
-    ColonyFamiliarMine trashed Copper.
-    ColonyFamiliarMine gained Silver.
-      ... and placed card in hand
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 3 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 5 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 6 all together.
-  ColonyFamiliarMine bought Gold.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Discarded Mine.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine reshuffled
-  ColonyFamiliarMine Drew Platinum into hand.
-  ColonyFamiliarMine Drew Colony into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine ends turn with deck: Colony(1), Copper(2), Estate(3), Familiar(3), Gold(7), Mine(2), Platinum(4), Potion(1), Silver(5), 
-
-MineHoard begins turn
-With hand: Curse,Curse,Gold,Gold,Silver,
-  MineHoard Played Gold.
-    +3 Coin = 3 all together.
-  MineHoard Played Gold.
-    +3 Coin = 6 all together.
-  MineHoard Played Silver.
-    +2 Coin = 8 all together.
-  MineHoard bought Province.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Curse.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Mine into hand.
-  MineHoard ends turn with deck: Copper(6), Curse(10), Duchy(4), Estate(5), Gold(9), Hoard(5), Mine(1), Province(2), Silver(5), 
-
-ROUND 21
--------------
-ColonyFamiliarMine begins turn
-With hand: Colony,Estate,Gold,Platinum,Silver,
-  ColonyFamiliarMine Played Platinum.
-    +5 Coin = 5 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 8 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 10 all together.
-  ColonyFamiliarMine bought Platinum.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Platinum.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Discarded Colony.
-  ColonyFamiliarMine Drew Potion into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Platinum into hand.
-  ColonyFamiliarMine Drew Mine into hand.
-  ColonyFamiliarMine ends turn with deck: Colony(1), Copper(2), Estate(3), Familiar(3), Gold(7), Mine(2), Platinum(5), Potion(1), Silver(5), 
-
-MineHoard begins turn
-With hand: Copper,Copper,Curse,Hoard,Mine,
-  MineHoard Played Mine.
-    MineHoard trashed Copper.
-    MineHoard gained Silver.
-      ... and placed card in hand
-  MineHoard Played Silver.
-    +2 Coin = 2 all together.
-  MineHoard Played Copper.
-    +1 Coin = 3 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 5 all together.
-  MineHoard bought Duchy.
-    MineHoard gained Gold.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Mine.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Curse.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(5), Estate(5), Gold(10), Hoard(5), Mine(1), Province(2), Silver(6), 
-
-ROUND 22
--------------
-ColonyFamiliarMine begins turn
-With hand: Familiar,Mine,Platinum,Potion,Silver,
-  ColonyFamiliarMine Played Familiar.
-    +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Platinum into hand.
-  ColonyFamiliarMine Played Mine.
-    ColonyFamiliarMine trashed Silver.
-    ColonyFamiliarMine gained Gold.
-      ... and placed card in hand
-  ColonyFamiliarMine Played Platinum.
-    +5 Coin = 5 all together.
-  ColonyFamiliarMine Played Platinum.
-    +5 Coin = 10 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 13 all together.
-  ColonyFamiliarMine Played Potion.
-    +1 Potions = 1 all together.
-  ColonyFamiliarMine bought Colony.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Platinum.
-  ColonyFamiliarMine Discarded Platinum.
-  ColonyFamiliarMine Discarded Potion.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Discarded Mine.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine ends turn with deck: Colony(2), Copper(2), Estate(3), Familiar(3), Gold(8), Mine(2), Platinum(5), Potion(1), Silver(4), 
-
-MineHoard begins turn
-With hand: Curse,Estate,Estate,Gold,Gold,
-  MineHoard Played Gold.
-    +3 Coin = 3 all together.
-  MineHoard Played Gold.
-    +3 Coin = 6 all together.
-  MineHoard bought Hoard.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Estate.
-  MineHoard Drew Hoard into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(5), Estate(5), Gold(10), Hoard(6), Mine(1), Province(2), Silver(6), 
-
-ROUND 23
--------------
-ColonyFamiliarMine begins turn
-With hand: Estate,Estate,Familiar,Gold,Gold,
-  ColonyFamiliarMine Played Familiar.
-    +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 3 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 6 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 9 all together.
-  ColonyFamiliarMine bought Platinum.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine ends turn with deck: Colony(2), Copper(2), Estate(3), Familiar(3), Gold(8), Mine(2), Platinum(6), Potion(1), Silver(4), 
-
-MineHoard begins turn
-With hand: Copper,Estate,Estate,Gold,Hoard,
-  MineHoard Played Gold.
-    +3 Coin = 3 all together.
-  MineHoard Played Copper.
-    +1 Coin = 4 all together.
-  MineHoard Played Hoard.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 3 all together.
+    +1 Buys = 3 all together.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+    LookoutSalvagerLibraryHighwayFestival Revealed Library.
+    LookoutSalvagerLibraryHighwayFestival put Library into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
+    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Salvager.
+    LookoutSalvagerLibraryHighwayFestival put Salvager into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
+    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 2 all together.
+    LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 2 all together.
+    LookoutSalvagerLibraryHighwayFestival reshuffled
+    LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 3 all together.
+    +1 Buys = 4 all together.
     +2 Coin = 6 all together.
-  MineHoard bought Duchy.
-    MineHoard gained Gold.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Estate.
-  MineHoard Drew Province into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(6), Estate(5), Gold(11), Hoard(6), Mine(1), Province(2), Silver(6), 
-
-ROUND 24
--------------
-ColonyFamiliarMine begins turn
-With hand: Copper,Familiar,Gold,Gold,Gold,
-  ColonyFamiliarMine Played Familiar.
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+    LookoutSalvagerLibraryHighwayFestival Revealed Province.
+    LookoutSalvagerLibraryHighwayFestival put Province into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Province.
+    LookoutSalvagerLibraryHighwayFestival put Province into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
+    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
     +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 3 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 6 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 9 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 11 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 12 all together.
-  ColonyFamiliarMine bought Colony.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Platinum into hand.
-  ColonyFamiliarMine Drew Mine into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine ends turn with deck: Colony(3), Copper(2), Estate(3), Familiar(3), Gold(8), Mine(2), Platinum(6), Potion(1), Silver(4), 
-
-MineHoard begins turn
-With hand: Copper,Curse,Duchy,Province,Silver,
-  MineHoard Played Silver.
-    +2 Coin = 2 all together.
-  MineHoard Played Copper.
-    +1 Coin = 3 all together.
-  MineHoard bought Silver.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Duchy.
-  MineHoard Discarded Province.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(6), Estate(5), Gold(11), Hoard(6), Mine(1), Province(2), Silver(7), 
-
-ROUND 25
--------------
-ColonyFamiliarMine begins turn
-With hand: Copper,Mine,Platinum,Silver,Silver,
-  ColonyFamiliarMine Played Mine.
-    ColonyFamiliarMine trashed Copper.
-    ColonyFamiliarMine gained Silver.
-      ... and placed card in hand
-  ColonyFamiliarMine Played Platinum.
-    +5 Coin = 5 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 7 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 9 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 11 all together.
-  ColonyFamiliarMine bought Colony.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Platinum.
-  ColonyFamiliarMine Discarded Mine.
-  ColonyFamiliarMine reshuffled
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Colony into hand.
-  ColonyFamiliarMine Drew Potion into hand.
-  ColonyFamiliarMine Drew Colony into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine ends turn with deck: Colony(4), Copper(1), Estate(3), Familiar(3), Gold(8), Mine(2), Platinum(6), Potion(1), Silver(5), 
-
-MineHoard begins turn
-With hand: Curse,Curse,Duchy,Estate,Silver,
-  MineHoard Played Silver.
-    +2 Coin = 2 all together.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Duchy.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(6), Estate(5), Gold(11), Hoard(6), Mine(1), Province(2), Silver(7), 
-
-ROUND 26
--------------
-ColonyFamiliarMine begins turn
-With hand: Colony,Colony,Gold,Potion,Silver,
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 3 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 5 all together.
-  ColonyFamiliarMine Played Potion.
-    +1 Potions = 1 all together.
-  ColonyFamiliarMine bought Silver.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Potion.
-  ColonyFamiliarMine Discarded Colony.
-  ColonyFamiliarMine Discarded Colony.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Mine into hand.
-  ColonyFamiliarMine Drew Platinum into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine ends turn with deck: Colony(4), Copper(1), Estate(3), Familiar(3), Gold(8), Mine(2), Platinum(6), Potion(1), Silver(6), 
-
-MineHoard begins turn
-With hand: Curse,Duchy,Gold,Gold,Hoard,
-  MineHoard Played Gold.
-    +3 Coin = 3 all together.
-  MineHoard Played Gold.
-    +3 Coin = 6 all together.
-  MineHoard Played Hoard.
+    LookoutSalvagerLibraryHighwayFestival Drew Province into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 5 all together.
     +2 Coin = 8 all together.
-  MineHoard bought Province.
-    MineHoard gained Gold.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Duchy.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(6), Estate(5), Gold(12), Hoard(6), Mine(1), Province(3), Silver(7), 
-
-ROUND 27
--------------
-ColonyFamiliarMine begins turn
-With hand: Estate,Estate,Gold,Mine,Platinum,
-  ColonyFamiliarMine Played Mine.
-    ColonyFamiliarMine trashed Gold.
-    ColonyFamiliarMine gained Platinum.
-      ... and placed card in hand
-  ColonyFamiliarMine Played Platinum.
-    +5 Coin = 5 all together.
-  ColonyFamiliarMine Played Platinum.
-    +5 Coin = 10 all together.
-  ColonyFamiliarMine bought Platinum.
-  ColonyFamiliarMine Discarded Platinum.
-  ColonyFamiliarMine Discarded Platinum.
-  ColonyFamiliarMine Discarded Mine.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Colony into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine ends turn with deck: Colony(4), Copper(1), Estate(3), Familiar(3), Gold(7), Mine(2), Platinum(8), Potion(1), Silver(6), 
-
-MineHoard begins turn
-With hand: Copper,Curse,Curse,Duchy,Silver,
-  MineHoard Played Silver.
-    +2 Coin = 2 all together.
-  MineHoard Played Copper.
-    +1 Coin = 3 all together.
-  MineHoard bought Silver.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Duchy.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(6), Estate(5), Gold(12), Hoard(6), Mine(1), Province(3), Silver(8), 
-
-ROUND 28
--------------
-ColonyFamiliarMine begins turn
-With hand: Colony,Copper,Familiar,Gold,Silver,
-  ColonyFamiliarMine Played Familiar.
-    +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Platinum into hand.
-  ColonyFamiliarMine Played Platinum.
-    +5 Coin = 5 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 8 all together.
-  ColonyFamiliarMine Played Silver.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
     +2 Coin = 10 all together.
-  ColonyFamiliarMine Played Copper.
-    +1 Coin = 11 all together.
-  ColonyFamiliarMine bought Colony.
-  ColonyFamiliarMine Discarded Copper.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Platinum.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Discarded Colony.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Colony into hand.
-  ColonyFamiliarMine Drew Platinum into hand.
-  ColonyFamiliarMine ends turn with deck: Colony(5), Copper(1), Estate(3), Familiar(3), Gold(7), Mine(2), Platinum(8), Potion(1), Silver(6), 
+  LookoutSalvagerLibraryHighwayFestival bought Province.
+  LookoutSalvagerLibraryHighwayFestival bought Duchy.
+  LookoutSalvagerLibraryHighwayFestival bought Duchy.
+  LookoutSalvagerLibraryHighwayFestival bought Estate.
+  LookoutSalvagerLibraryHighwayFestival bought Estate.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival Discarded Duchy.
+  LookoutSalvagerLibraryHighwayFestival Discarded Province.
+  LookoutSalvagerLibraryHighwayFestival Discarded Province.
+  LookoutSalvagerLibraryHighwayFestival Discarded Province.
+  LookoutSalvagerLibraryHighwayFestival Discarded Province.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Duchy(3), Estate(5), Festival(5), Highway(4), Library(2), Province(5), Salvager(1), Silver(1), 
 
-MineHoard begins turn
-With hand: Copper,Gold,Gold,Hoard,Silver,
-  MineHoard Played Gold.
-    +3 Coin = 3 all together.
-  MineHoard Played Gold.
-    +3 Coin = 6 all together.
-  MineHoard Played Silver.
-    +2 Coin = 8 all together.
-  MineHoard Played Copper.
-    +1 Coin = 9 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 11 all together.
-  MineHoard bought Province.
-    MineHoard gained Gold.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Hoard.
-  MineHoard Drew Hoard into hand.
-  MineHoard reshuffled
-  MineHoard Drew Duchy into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(6), Estate(5), Gold(13), Hoard(6), Mine(1), Province(4), Silver(8), 
+Game ended in 17 turns.
+LookoutSalvagerLibraryHighwayFestival Won!
+LookoutSalvagerLibraryHighwayFestival total score: 44
+  Duchy(3), Estate(5), Festival(5), Highway(4), Library(2), Province(5), Salvager(1), Silver(1), 
+BigMoney total score: 27
+  Copper(7), Duchy(2), Estate(3), Gold(6), Province(3), Silver(4), 
+Trash contains: Copper(7), Estate(3), Lookout(1), Silver(1), 
 
-ROUND 29
--------------
-ColonyFamiliarMine begins turn
-With hand: Colony,Familiar,Gold,Gold,Platinum,
-  ColonyFamiliarMine Played Familiar.
-    +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Platinum into hand.
-  ColonyFamiliarMine Played Platinum.
-    +5 Coin = 5 all together.
-  ColonyFamiliarMine Played Platinum.
-    +5 Coin = 10 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 13 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 16 all together.
-  ColonyFamiliarMine bought Colony.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Platinum.
-  ColonyFamiliarMine Discarded Platinum.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Discarded Colony.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine ends turn with deck: Colony(6), Copper(1), Estate(3), Familiar(3), Gold(7), Mine(2), Platinum(8), Potion(1), Silver(6), 
+LookoutSalvagerLibraryHighwayFestival GainSequence is:
+  Salvager, Lookout, Silver, Silver, Festival, 
+  Library, Festival, Highway, Highway, Festival, 
+  Festival, Library, Festival, Highway, Highway, 
+  Province, Province, Province, Duchy, Province, 
+  Estate, Estate, Estate, Province, Duchy, 
+  Duchy, Estate, Estate, 
+BigMoney GainSequence is:
+  Silver, Silver, Gold, Silver, Gold, 
+  Gold, Silver, Gold, Gold, Province, 
+  Gold, Province, Province, Duchy, Duchy, 
 
-MineHoard begins turn
-With hand: Duchy,Duchy,Duchy,Gold,Hoard,
-  MineHoard Played Gold.
-    +3 Coin = 3 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 5 all together.
-  MineHoard bought Duchy.
-    MineHoard gained Gold.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Duchy.
-  MineHoard Discarded Duchy.
-  MineHoard Discarded Duchy.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(7), Estate(5), Gold(14), Hoard(6), Mine(1), Province(4), Silver(8), 
-
-ROUND 30
--------------
-ColonyFamiliarMine begins turn
-With hand: Familiar,Gold,Gold,Silver,Silver,
-  ColonyFamiliarMine Played Familiar.
-    +1 Actions = 1 all together.
-    ColonyFamiliarMine Drew Platinum into hand.
-  ColonyFamiliarMine Played Platinum.
-    +5 Coin = 5 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 8 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 11 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 13 all together.
-  ColonyFamiliarMine Played Silver.
-    +2 Coin = 15 all together.
-  ColonyFamiliarMine bought Colony.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Silver.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Platinum.
-  ColonyFamiliarMine Discarded Familiar.
-  ColonyFamiliarMine Drew Gold into hand.
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Mine into hand.
-  ColonyFamiliarMine Drew Platinum into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine ends turn with deck: Colony(7), Copper(1), Estate(3), Familiar(3), Gold(7), Mine(2), Platinum(8), Potion(1), Silver(6), 
-
-MineHoard begins turn
-With hand: Curse,Gold,Gold,Gold,Silver,
-  MineHoard Played Gold.
-    +3 Coin = 3 all together.
-  MineHoard Played Gold.
-    +3 Coin = 6 all together.
-  MineHoard Played Gold.
-    +3 Coin = 9 all together.
-  MineHoard Played Silver.
-    +2 Coin = 11 all together.
-  MineHoard bought Province.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Curse.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(10), Duchy(7), Estate(5), Gold(14), Hoard(6), Mine(1), Province(5), Silver(8), 
-
-ROUND 31
--------------
-ColonyFamiliarMine begins turn
-With hand: Estate,Gold,Mine,Platinum,Silver,
-  ColonyFamiliarMine Played Mine.
-    ColonyFamiliarMine trashed Silver.
-    ColonyFamiliarMine gained Gold.
-      ... and placed card in hand
-  ColonyFamiliarMine Played Platinum.
-    +5 Coin = 5 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 8 all together.
-  ColonyFamiliarMine Played Gold.
-    +3 Coin = 11 all together.
-  ColonyFamiliarMine bought Colony.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Gold.
-  ColonyFamiliarMine Discarded Platinum.
-  ColonyFamiliarMine Discarded Mine.
-  ColonyFamiliarMine Discarded Estate.
-  ColonyFamiliarMine reshuffled
-  ColonyFamiliarMine Drew Silver into hand.
-  ColonyFamiliarMine Drew Familiar into hand.
-  ColonyFamiliarMine Drew Estate into hand.
-  ColonyFamiliarMine Drew Copper into hand.
-  ColonyFamiliarMine Drew Colony into hand.
-  ColonyFamiliarMine ends turn with deck: Colony(8), Copper(1), Estate(3), Familiar(3), Gold(8), Mine(2), Platinum(8), Potion(1), Silver(5), 
-
-Game ended in 31 turns.
-ColonyFamiliarMine Won!
-ColonyFamiliarMine total score: 83
-  Colony(8), Copper(1), Estate(3), Familiar(3), Gold(8), Mine(2), Platinum(8), Potion(1), Silver(5), 
-MineHoard total score: 46
-  Copper(5), Curse(10), Duchy(7), Estate(5), Gold(14), Hoard(6), Mine(1), Province(5), Silver(8), 
-Trash contains: Copper(8), Gold(1), Silver(5), 
-
-ColonyFamiliarMine GainSequence is:
-  Potion, Silver, Mine, Familiar, Silver, 
-  Familiar, Gold, Familiar, Silver, Gold, 
-  Gold, Gold, Silver, Platinum, Silver, 
-  Mine, Silver, Gold, Platinum, Platinum, 
-  Platinum, Gold, Colony, Silver, Gold, 
-  Platinum, Gold, Colony, Platinum, Colony, 
-  Silver, Colony, Silver, Platinum, Platinum, 
-  Colony, Colony, Colony, Gold, Colony, 
-
-MineHoard GainSequence is:
-  Silver, Silver, Hoard, Silver, Curse, 
-  Duchy, Gold, Hoard, Curse, Duchy, 
-  Gold, Curse, Mine, Curse, Curse, 
-  Curse, Hoard, Curse, Hoard, Province, 
-  Gold, Gold, Estate, Gold, Curse, 
-  Curse, Duchy, Gold, Silver, Silver, 
-  Curse, Hoard, Estate, Gold, Silver, 
-  Duchy, Gold, Gold, Province, Silver, 
-  Duchy, Gold, Hoard, Duchy, Gold, 
-  Silver, Province, Gold, Silver, Province, 
-  Gold, Duchy, Gold, Province, 

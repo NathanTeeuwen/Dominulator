@@ -546,7 +546,7 @@ namespace Dominion.CardTypes
 
         public static bool CardValidToGainFromTrash(Card card, PlayerState player)
         {
-            return card.CurrentCoinCost(player) >= 3 && card.CurrentCoinCost(player) <= 6 && card.potionCost == 0;
+            return Card.DoesCardCost3To6(card, player);
         }
 
         public static bool CardValidToTrash(Card card)
@@ -926,13 +926,32 @@ namespace Dominion.CardTypes
         public static Rogue card = new Rogue();
 
         private Rogue()
-            : base("Rogue", coinCost: 5, isAction: true, isAttack:true, plusCoins:2)
+            : base("Rogue", coinCost: 5, isAction: true, plusCoins:2, isAttack:true, attackDependsOnPlayerChoice:true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            PlayerState.AttackAction attackAction = this.DoEmptyAttack;
+            
+            CardPredicate acceptableCard = card => Card.DoesCardCost3To6(card, currentPlayer);
+            if (gameState.trash.AnyWhere(acceptableCard))
+            {
+                currentPlayer.RequestPlayerGainCardFromTrash(gameState, acceptableCard, "Card from 3 to 6");
+            }
+            else
+            {
+                attackAction = Rogue.AttackAction;
+            }
+
+            currentPlayer.AttackOtherPlayers(gameState, attackAction);
+        }
+
+        private static void AttackAction(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
+            otherPlayer.RevealCardsFromDeck(2);
+            otherPlayer.RequestPlayerTrashRevealedCard(gameState, card => Card.DoesCardCost3To6(card, otherPlayer));
+            otherPlayer.MoveRevealedCardsToDiscard(gameState);
         }
     }
 

@@ -239,7 +239,7 @@ namespace Dominion.CardTypes
         {
             currentPlayer.RevealCardsFromDeck(3);
             gameState.gameLog.PushScope();
-            currentPlayer.RequestPlayerTrashRevealedCard(gameState);
+            currentPlayer.RequestPlayerTrashRevealedCard(gameState, acceptableCard => true);
             currentPlayer.RequestPlayerDiscardRevealedCard(gameState);
             currentPlayer.MoveRevealedCardToTopOfDeck();
             gameState.gameLog.PopScope();

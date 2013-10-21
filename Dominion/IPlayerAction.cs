@@ -23,7 +23,7 @@ namespace Dominion
         Card GetCardFromPlayToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Card GetCardFromDiscardToTopDeck(GameState gameState, PlayerState player, bool isOptional);
         Card GetCardFromRevealedCardsToTopDeck(GameState gameState, PlayerState player);
-        Card GetCardFromRevealedCardsToTrash(GameState gameState, PlayerState player, CardPredicate acceptableCard);
+        Card GetCardFromRevealedCardsToTrash(GameState gameState, CardPredicate acceptableCard);
         Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState, PlayerState player);
         Card GetCardFromRevealedCardsToDiscard(GameState gameState, PlayerState player);
         Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional);
@@ -36,6 +36,7 @@ namespace Dominion
         Card GetCardFromHandToDeferToNextTurn(GameState gameState);
         Card GetCardFromHandOrDiscardToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, out DeckPlacement deckPlacement);
         Card GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer);
+        Card GetCardFromOtherPlayersRevealedCardsToTrash(GameState gameState, PlayerState otherPlayer, CardPredicate acceptableCard);
         int GetNumberOfCardsFromDiscardToPutInHand(GameState gameState, int maxNumber);
         bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card);
         bool ShouldPlayerDiscardCardFromHand(GameState gameState, PlayerState player, Card card);
@@ -219,11 +220,11 @@ namespace Dominion
             return result;
         }
 
-        public Card GetCardFromRevealedCardsToTrash(GameState gameState, PlayerState player, CardPredicate acceptableCard)
+        public Card GetCardFromRevealedCardsToTrash(GameState gameState, CardPredicate acceptableCard)
         {
             var saved = gameState.self;
             gameState.self = this.self;
-            var result = this.playerAction.GetCardFromRevealedCardsToTrash(gameState, player, acceptableCard);
+            var result = this.playerAction.GetCardFromRevealedCardsToTrash(gameState, acceptableCard);
             gameState.self = saved;
             return result;
         }
@@ -324,6 +325,15 @@ namespace Dominion
             var saved = gameState.self;
             gameState.self = this.self;
             var result = this.playerAction.GetCardFromOtherPlayersHandToDiscard(gameState, otherPlayer);
+            gameState.self = saved;
+            return result;
+        }
+
+        public Card GetCardFromOtherPlayersRevealedCardsToTrash(GameState gameState, PlayerState otherPlayer, CardPredicate acceptableCard)
+        {
+            var saved = gameState.self;
+            gameState.self = this.self;
+            var result = this.playerAction.GetCardFromOtherPlayersRevealedCardsToTrash(gameState, otherPlayer, acceptableCard);
             gameState.self = saved;
             return result;
         }

@@ -222,17 +222,17 @@ namespace Program
             return result;
         }
 
-        public override Card GetCardFromRevealedCardsToTrash(GameState gameState, PlayerState player, CardPredicate acceptableCard)
+        public override Card GetCardFromRevealedCardsToTrash(GameState gameState, CardPredicate acceptableCard)
         {            
-            var currentPlayer = player;
+            var selfPlayer = gameState.Self;
             Card result = this.trashOrder.GetPreferredCard(
                 gameState,
-                card => currentPlayer.CardsBeingRevealed.HasCard(card) && acceptableCard(card));
+                card => selfPlayer.CardsBeingRevealed.HasCard(card) && acceptableCard(card));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)
             {
-                result = currentPlayer.CardsBeingRevealed.Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();                
+                result = selfPlayer.CardsBeingRevealed.Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();                
             }
 
             return result;
@@ -318,6 +318,14 @@ namespace Program
             // or just discard the highest costing card
             if (result == null)
                 result = otherPlayer.Hand.OrderByDescending(c => c.DefaultCoinCost).FirstOrDefault();
+
+            return result;
+        }
+
+        public override Card GetCardFromOtherPlayersRevealedCardsToTrash(GameState gameState, PlayerState otherPlayer, CardPredicate acceptableCard)
+        {
+            // trash the highest costing matching card
+            Card result = otherPlayer.CardsBeingRevealed.Where(c => acceptableCard(c)).OrderByDescending(c => c.DefaultCoinCost).FirstOrDefault();            
 
             return result;
         }
