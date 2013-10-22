@@ -45,12 +45,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CardAcceptance.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Nobles.cs" />
     <Compile Include="DefaultStrategies.cs" />
-    <Compile Include="DefaultStrategies\CardOverrides.cs" />
-    <Compile Include="DefaultStrategies\CompareCardByFirstToGain.cs" />
-    <Compile Include="DefaultStrategies\CompareCardFirstToTrash.cs" />
-    <Compile Include="DefaultStrategies\CompareCardForBanningForDrawIntoHand.cs" />
-    <Compile Include="DefaultStrategies\CompareCardFirstToDiscard.cs" />
+    <Compile Include="DefaultPlayRules\CardOverrides.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Cartographer.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Catacombs.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Chancellor.cs" />
+    <Compile Include="DefaultPlayRules\CompareCardByFirstToGain.cs" />
+    <Compile Include="DefaultPlayRules\CompareCardFirstToTrash.cs" />
+    <Compile Include="DefaultPlayRules\CompareCardForBanningForDrawIntoHand.cs" />
+    <Compile Include="DefaultPlayRules\CompareCardFirstToDiscard.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Alchemist.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Ambassador.cs" />
+    <Compile Include="DefaultPlayRules\Cards\BandOfMisfits.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Count.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Golem.cs" />
+    <Compile Include="DefaultPlayRules\Cards\HorseTraders.cs" />
+    <Compile Include="DefaultPlayRules\Cards\IllGottenGains.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Library.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Lookout.cs" />
+    <Compile Include="DefaultPlayRules\Cards\MarketSquare.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Rebuild.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Trader.cs" />
+    <Compile Include="DefaultPlayRules\Cards\WatchTower.cs" />
     <Compile Include="Kingdoms\ShouldRemakeOrHorseTradersIntoSoothayer.cs" />
     <Compile Include="PlayerActionFromCardResponses.cs" />
     <Compile Include="Simulations\DarkAgesBigMoney.cs" />
@@ -134,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="DefaultPlayRules\Cards\Mystic.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dominion\Dominion.csproj">

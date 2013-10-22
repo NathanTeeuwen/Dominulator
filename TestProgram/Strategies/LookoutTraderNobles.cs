@@ -27,17 +27,6 @@ namespace Program
                             actionOrder: ActionOrder(),
                             trashOrder: TrashOrder())
                 {
-                }                
-
-                override public PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
-                {
-                    if (CountInHand(Cards.Nobles, gameState) > 0)
-                        return PlayerActionChoice.PlusAction;
-
-                    if (ShouldBuyProvinces(gameState))
-                        return PlayerActionChoice.PlusCard;
-
-                    return gameState.Self.Hand.HasCard(card => card.isAction) ? PlayerActionChoice.PlusAction : PlayerActionChoice.PlusCard;
                 }
             }
 

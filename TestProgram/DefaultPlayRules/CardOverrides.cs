@@ -23,6 +23,7 @@ namespace Program.DefaultStrategies
             result[Cards.Library] = new Library(playerAction);
             result[Cards.MarketSquare] = new MarketSquare(playerAction);
             result[Cards.Mystic] = new Mystic(playerAction);
+            result[Cards.Nobles] = new Nobles(playerAction);
             result[Cards.Rebuild] = new Rebuild(playerAction);
             result[Cards.Trader] = new Trader(playerAction);
             result[Cards.Watchtower] = new Watchtower(playerAction);

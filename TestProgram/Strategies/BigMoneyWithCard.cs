@@ -17,7 +17,7 @@ namespace Program
             {
                 return new PlayerAction(
                             playerName == null ? "BigMoneyWithCard<" + card.GetType().Name + ">" : playerName,                            
-                            purchaseOrder: PurchaseOrder(card, cardCount, afterSilverCount, afterGoldCount),
+                            purchaseOrder: PurchaseOrder(card, cardCount, afterSilverCount, afterGoldCount == int.MaxValue && card.DefaultCoinCost >= Cards.Gold.DefaultCoinCost ? 0 : afterGoldCount),
                             actionOrder:ActionOrder(card));
             }
 
@@ -27,7 +27,7 @@ namespace Program
                            CardAcceptance.For(Cards.Province, gameState => CountAllOwned(Cards.Gold, gameState) > 2),
                            CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4),
                            CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2),
-                           CardAcceptance.For(card, gameState => CountAllOwned(card, gameState) < cardCount && CountAllOwned(Cards.Gold, gameState) >= afterGoldCount),
+                           CardAcceptance.For(card, gameState => CountAllOwned(card, gameState) < cardCount && CountAllOwned(Cards.Gold, gameState) >= afterGoldCount),                           
                            CardAcceptance.For(Cards.Gold),
                            CardAcceptance.For(card, gameState => CountAllOwned(card, gameState) < cardCount && CountAllOwned(Cards.Silver, gameState) >= afterSilverCount),
                            CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 4),

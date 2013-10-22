@@ -15,10 +15,10 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            ComparePlayers(Strategies.LookoutHaremMiningVillageMysticScout.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Mystic), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
+            ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
+            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Nobles), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
             //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
-            //TestAllCardsWithBigMoney();
+            TestAllCardsWithBigMoney();
             
             stopwatch.Stop();
 
@@ -101,8 +101,7 @@ namespace Program
             Cards.Herald,
             Cards.Herbalist,
             Cards.Inn,
-            Cards.Island,
-            Cards.Knights,
+            Cards.Island,            
             Cards.Mandarin,
             Cards.Masquerade,
             Cards.Masterpiece,
@@ -130,6 +129,7 @@ namespace Program
             Cards.WishingWell,            
 
             // unimplemented cards.
+            Cards.Knights,
             Cards.Stash,      
             Cards.BandOfMisfits,
             Cards.BlackMarket,
