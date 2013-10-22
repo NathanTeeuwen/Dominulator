@@ -127,10 +127,11 @@ namespace Program
             Cards.Treasury,
             Cards.Vault,
             Cards.WalledVillage,
-            Cards.WishingWell,
+            Cards.WishingWell,            
 
             // unimplemented cards.
-            Cards.Stash,
+            Cards.Stash,      
+            Cards.BandOfMisfits,
             Cards.BlackMarket,
             Cards.Possession
         };
