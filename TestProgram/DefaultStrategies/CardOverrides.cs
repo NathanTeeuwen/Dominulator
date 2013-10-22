@@ -226,7 +226,7 @@ namespace Program.DefaultStrategies
 
         public override bool ShouldPutCardInHand(GameState gameState, Card card)
         {
-            return playerAction.discardOrder.DoesCardPickerMatch(gameState, card);
+            return !playerAction.discardOrder.DoesCardPickerMatch(gameState, card);
         }
     }
 
