@@ -43,7 +43,7 @@ namespace Program
             return gameState.Self.CardsInDeck.CountOf(card);
         }
 
-        private static int CountInDeckAndDiscard(Card card, GameState gameState)
+        public static int CountInDeckAndDiscard(Card card, GameState gameState)
         {
             var player = gameState.Self;
             return player.CardsInDeck.CountOf(card) + player.Discard.CountOf(card);
@@ -86,7 +86,7 @@ namespace Program
             return gameState.GetPile(cardType).Count;
         }        
 
-        private static int PlayersPointLead(GameState gameState)
+        public static int PlayersPointLead(GameState gameState)
         {
             int selfScore = gameState.Self.TotalScore();
             int maxOtherScore = 0;

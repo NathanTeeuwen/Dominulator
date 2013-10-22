@@ -411,11 +411,16 @@ namespace Program
                 return this.defaultCardResponses.GetCardFromSupplyToGain(gameState, acceptableCard, isOptional);
             }
 
+            return DefaultGetCardFromSupplyToGain(gameState, acceptableCard, isOptional);
+        }
+
+        public Card DefaultGetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        {
             var self = gameState.Self;
 
             Card result = this.gainOrder.GetPreferredCard(
                 gameState,
-                card => acceptableCard(card) && gameState.GetPile(card).Any);         
+                card => acceptableCard(card) && gameState.GetPile(card).Any);
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null && !isOptional)
@@ -424,11 +429,11 @@ namespace Program
                                      .Select(pile => pile.ProtoTypeCard)
                                      .Where(c => acceptableCard(c))
                                      .OrderBy(c => c, new CompareCardByFirstToGain())
-                                     .FirstOrDefault();                
+                                     .FirstOrDefault();
             }
 
             return result;
-        }                      
+        }      
        
         public override string PlayerName
         {
