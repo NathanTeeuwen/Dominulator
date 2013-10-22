@@ -48,6 +48,17 @@ namespace Program
                     return cardToPlay;
                 }
 
+                public Card GetPreferredCard(GameState gameState, CardPredicate cardPredicate, CardPredicate defaultPredicate)
+                {
+                    IComparer<Card> comparer = this.comparerFactory.GetComparer(gameState);
+
+                    Card cardToPlay = gameState.Self.Hand.Where(card => cardPredicate(card) && defaultPredicate(card)).OrderBy(card => card, comparer).FirstOrDefault();
+                    if (cardToPlay == null)
+                        return null;
+
+                    return cardToPlay;
+                }
+
                 public Card GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate)
                 {
                     IComparer<Card> comparer = this.comparerFactory.GetComparer(gameState);
@@ -222,52 +233,7 @@ namespace Program
             public static bool ShouldGainIllGottenGains(GameState gameState)
             {
                 return CountOfPile(Cards.Curse, gameState) > 0;
-            }
-
-            public static bool ShouldPlaySalvager(ICardPicker trashOrder, GameState gameState)
-            {
-                return HasCardFromInHand(trashOrder, gameState);
-            }
-
-            public static GameStatePredicate ShouldPlaySalvager(ICardPicker trashOrder)
-            {
-                return delegate(GameState gameState)
-                {
-                    return HasCardFromInHand(trashOrder, gameState);
-                };
-            }
-
-            public static GameStatePredicate ShouldPlayLookout(GameStatePredicate shouldBuyProvinces = null)
-            {
-                if (shouldBuyProvinces == null)
-                {
-                    shouldBuyProvinces = ShouldBuyProvinces;
-                }
-                return delegate(GameState gameState)
-                {
-                    return ShouldPlayLookout(gameState, shouldBuyProvinces);
-                };
-            }
-
-            public static bool ShouldPlayLookout(GameState gameState, GameStatePredicate shouldBuyProvinces)
-            {
-                int cardCountToTrash = CountInDeck(Cards.Copper, gameState);
-
-                if (!shouldBuyProvinces(gameState))
-                {
-                    cardCountToTrash += CountInDeck(Cards.Estate, gameState);
-                }
-
-                cardCountToTrash += CountInDeck(Cards.Hovel, gameState);
-                cardCountToTrash += CountInDeck(Cards.Necropolis, gameState);
-                cardCountToTrash += CountInDeck(Cards.OvergrownEstate, gameState);
-
-                cardCountToTrash += CountInDeck(Cards.Lookout, gameState);
-
-                int totalCardsOwned = gameState.Self.CardsInDeck.Count;
-
-                return ((double)cardCountToTrash) / totalCardsOwned > 0.4;
-            }
+            }                    
         }
     }
 }

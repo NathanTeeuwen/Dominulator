@@ -8,6 +8,9 @@ namespace Program
         internal readonly GameStatePredicate match;
         internal readonly GameStateIntValue overpayAmount;
 
+        public static readonly GameStatePredicate DefaultMatch = AlwaysMatch;
+        public static readonly GameStateIntValue DefaultOverpayAmount = OverPayMaxAmount;
+
         public static int OverPayZero(GameState gameState)
         {
             return 0;
@@ -23,12 +26,12 @@ namespace Program
             return true;
         }
 
-        public static GameStateIntValue DefaultOverpayAmount = OverPayMaxAmount;
+        
 
         public CardAcceptance(Card card)
         {
             this.card = card;
-            this.match = AlwaysMatch;
+            this.match = DefaultMatch;
             this.overpayAmount = DefaultOverpayAmount;
         }
 

@@ -58,7 +58,7 @@ namespace Program
                 return new CardPickByPriority(
                            CardAcceptance.For(Cards.Lookout, gameState => CountInHand(Cards.Lookout, gameState) > 1 ),
                            CardAcceptance.For(Cards.Trader, gameState => CountAllOwned(Cards.Lookout, gameState) > 1 && CountInHand(Cards.Lookout, gameState) > 0 && ShouldTrashLookout(gameState)),
-                           CardAcceptance.For(Cards.Lookout, Default.ShouldPlayLookout(Default.ShouldBuyProvinces)),
+                           CardAcceptance.For(Cards.Lookout),
                            CardAcceptance.For(Cards.Nobles),
                            CardAcceptance.For(Cards.Trader, gameState => HasCardFromInHand(TrashOrder(), gameState)));
             }

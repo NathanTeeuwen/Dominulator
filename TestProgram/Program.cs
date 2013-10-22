@@ -17,7 +17,7 @@ namespace Program
 
             //ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Familiar, "BigMoneyFamiliar", 3, afterGoldCount: int.MaxValue), Strategies.MineHoard.Player());
             //ComparePlayers(Strategies.ColonyFamiliarMine.Player(), Strategies.MineHoard.Player(), useColonyAndPlatinum:true);            
-            CompareStrategyVsAllKnownStrategies(Strategies.BigMoneySingleWitch.Player());
+            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
             
             stopwatch.Stop();
 

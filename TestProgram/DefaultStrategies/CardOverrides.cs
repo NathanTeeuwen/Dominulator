@@ -14,8 +14,8 @@ namespace Program.DefaultStrategies
             var result = new MapOfCardsFor<IPlayerAction>();
 
             result[Cards.Ambassador]       = new Ambassador(playerAction);
-            result[Cards.Cartographer]     = new Cartographer(playerAction);
-            result[Cards.BandOfMisfits]    = new BandOfMisfits(playerAction);
+            result[Cards.BandOfMisfits] = new BandOfMisfits(playerAction);
+            result[Cards.Cartographer]     = new Cartographer(playerAction);            
             result[Cards.Golem]            = new Golem(playerAction);
             result[Cards.HorseTraders]     = new HorseTraders(playerAction);
             result[Cards.IllGottenGains]   = new IllGottenGainsAlwaysGainCopper(playerAction);
@@ -23,6 +23,16 @@ namespace Program.DefaultStrategies
             result[Cards.MarketSquare]     = new MarketSquare(playerAction);
             result[Cards.Trader]           = new Trader(playerAction);
             result[Cards.Watchtower]       = new Watchtower(playerAction);
+
+            return result;
+        }
+
+        public static MapOfCardsFor<GameStatePlayerActionPredicate> GetCardShouldPlayDefaults(PlayerAction playerAction)
+        {
+            var result = new MapOfCardsFor<GameStatePlayerActionPredicate>();
+
+            result[Cards.Salvager] = Strategies.HasCardToTrashInHand;
+            result[Cards.Lookout] = Lookout.ShouldPlay;            
 
             return result;
         }
@@ -220,6 +230,33 @@ namespace Program.DefaultStrategies
         }
     }
 
+    internal class Lookout
+    {
+        public static bool ShouldPlay(GameState gameState, PlayerAction playerAction)
+        {            
+            int cardCountToTrash = Strategies.CountInDeck(Cards.Copper, gameState);
+
+            if (!playerAction.purchaseOrder.DoesCardPickerMatch(gameState, Cards.Estate))
+            {
+                cardCountToTrash += Strategies.CountInDeck(Cards.Estate, gameState);
+            }
+
+            cardCountToTrash += Strategies.CountInDeck(Cards.Curse, gameState);
+            cardCountToTrash += Strategies.CountInDeck(Cards.Hovel, gameState);
+            cardCountToTrash += Strategies.CountInDeck(Cards.Necropolis, gameState);
+            cardCountToTrash += Strategies.CountInDeck(Cards.OvergrownEstate, gameState);
+
+            if (!playerAction.purchaseOrder.DoesCardPickerMatch(gameState, Cards.Lookout))
+            {
+                cardCountToTrash += Strategies.CountInDeck(Cards.Lookout, gameState);
+            }           
+
+            int totalCardsOwned = gameState.Self.CardsInDeck.Count;
+
+            return ((double)cardCountToTrash) / totalCardsOwned > 0.4;
+        }
+    }
+
     internal class MarketSquare
       : UnimplementedPlayerAction
     {
@@ -234,7 +271,7 @@ namespace Program.DefaultStrategies
         {
             return true;
         }
-    }
+    }    
 
     internal class Trader
       : UnimplementedPlayerAction

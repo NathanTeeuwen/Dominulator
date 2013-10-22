@@ -83,7 +83,7 @@
     <Compile Include="CardPickByBuilderOrder.cs" />
     <Compile Include="CardPickByPriority.cs" />
     <Compile Include="CardPickConcatenator.cs" />
-    <Compile Include="CompareStrategies.cs" />
+    <Compile Include="StrategyOptimizer\CompareStrategies.cs" />
     <Compile Include="StrategyOptimizer\Comparison.cs" />
     <Compile Include="StrategyOptimizer\CountSource.cs" />
     <Compile Include="StrategyOptimizer\GeneticAlgorithm.cs" />

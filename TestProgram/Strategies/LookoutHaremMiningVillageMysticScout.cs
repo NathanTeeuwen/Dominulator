@@ -120,7 +120,7 @@ namespace Program
                     CardAcceptance.For(Cards.Lookout, CurrentPlayerHasKnownCardToTrashOnTopOfDeck),
                     CardAcceptance.For(Cards.Mystic, CurrentPlayerHasKnownCardOnTopOfDeck),
                     CardAcceptance.For(Cards.Scout),
-                    CardAcceptance.For(Cards.Lookout, Default.ShouldPlayLookout(ShouldBuyProvinces)),                    
+                    CardAcceptance.For(Cards.Lookout),                    
                     CardAcceptance.For(Cards.Mystic),                    
                     CardAcceptance.For(Cards.MiningVillage));                    
             }

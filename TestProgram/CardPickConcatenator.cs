@@ -28,6 +28,20 @@ namespace Program
             return null;
         }
 
+        public Card GetPreferredCard(GameState gameState, CardPredicate cardPredicate, CardPredicate defaultPredicate)
+        {
+            foreach (ICardPicker matcher in this.matchers)
+            {
+                Card result = matcher.GetPreferredCard(gameState, cardPredicate, defaultPredicate);
+                if (result != null)
+                {
+                    return result;
+                }
+            }
+
+            return null;
+        }
+
         public Card GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate)
         {
             for (int i = this.matchers.Length-1; i > 0; --i)            
@@ -41,7 +55,7 @@ namespace Program
             }
 
             return null;
-        }
+        }        
 
         public IEnumerable<Card> GetNeededCards()
         {

@@ -43,6 +43,23 @@ namespace Program
             return null;
         }
 
+        public Card GetPreferredCard(GameState gameState, CardPredicate cardPredicate, CardPredicate defaultPredicate)
+        {            
+            foreach (CardAcceptance acceptance in this.cardAcceptances)
+            {
+                if (cardPredicate(acceptance.card))
+                {
+                    if (acceptance.match == CardAcceptance.DefaultMatch && defaultPredicate(acceptance.card) ||
+                        acceptance.match != CardAcceptance.DefaultMatch && acceptance.match(gameState))
+                    {
+                        return acceptance.card;
+                    }
+                }
+            }
+
+            return null;
+        }
+
         public Card GetPreferredCardReverse(GameState gameState, CardPredicate cardPredicate)
         {
             for (int i = this.cardAcceptances.Length - 1; i >= 0; i--)

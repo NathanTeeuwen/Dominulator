@@ -39,7 +39,7 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(Cards.Lookout, Default.ShouldPlayLookout(Default.ShouldBuyProvinces)));
+                           CardAcceptance.For(Cards.Lookout));
             }            
 
             private static CardPickByPriority TrashAndDiscardOrder()

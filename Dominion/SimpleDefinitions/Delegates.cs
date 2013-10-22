@@ -11,7 +11,7 @@ namespace Dominion
     public delegate void GameStateCardMethod(PlayerState currentPlayer, GameState gameState, Card card);
     public delegate bool GameStateCardPredicate(PlayerState currentPlayer, GameState gameState, Card card);
     public delegate DeckPlacement GameStateCardToPlacement(PlayerState currentPlayer, GameState gameState, Card card);
-    public delegate int CardIntValue(Card card);
+    public delegate int CardIntValue(Card card);    
 
     public delegate DeckPlacement MapCardToPlacement(Card card);
     public delegate CardPlacementPair PlaceCardsFromList(BagOfCards cards);

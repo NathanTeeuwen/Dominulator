@@ -65,6 +65,11 @@ namespace Program
             return null;
         }
 
+        public Card GetPreferredCard(GameState gameState, CardPredicate cardPredicate, CardPredicate defaultPredicate)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Card> GetNeededCards()
         {
             return this.buildOrder.Select(acceptance => acceptance.card);

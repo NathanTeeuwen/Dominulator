@@ -67,10 +67,10 @@ namespace Program
             private static CardPickByPriority ActionOrder()
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(Cards.Lookout, Default.ShouldPlayLookout(ShouldBuyProvinces)),
+                           CardAcceptance.For(Cards.Lookout),
                            CardAcceptance.For(Cards.Highway),
                            CardAcceptance.For(Cards.Festival),
-                           CardAcceptance.For(Cards.Salvager, Default.ShouldPlaySalvager(TrashOrder())),
+                           CardAcceptance.For(Cards.Salvager),
                            CardAcceptance.For(Cards.Necropolis),
                            CardAcceptance.For(Cards.Library)
                            );

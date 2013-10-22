@@ -38,7 +38,7 @@ namespace Program
                 card => matchingCards.GetPreferredCard(gameState, testCard => testCard == card) != null);
         }
 
-        private static int CountInDeck(Card card, GameState gameState)
+        public static int CountInDeck(Card card, GameState gameState)
         {
             return gameState.Self.CardsInDeck.CountOf(card);
         }
@@ -120,7 +120,7 @@ namespace Program
             return matchingCards.GetPreferredCard(gameState, card => gameState.Self.Hand.HasCard(card));
         }        
 
-        private static bool HasCardFromInHand(ICardPicker matchingCards, GameState gameState)
+        public static bool HasCardFromInHand(ICardPicker matchingCards, GameState gameState)
         {
             return WhichCardFromInHand(matchingCards, gameState) != null;
         }
@@ -133,6 +133,11 @@ namespace Program
         private static bool HasCardIn(Card card, ICardPicker matchingCards, GameState gameState)
         {
             return matchingCards.GetPreferredCard(gameState, c => c == card) != null;
+        }
+
+        public static bool HasCardToTrashInHand(GameState gameState, PlayerAction playerAction)
+        {
+            return HasCardFromInHand(playerAction.trashOrder, gameState);
         }
     }
 }

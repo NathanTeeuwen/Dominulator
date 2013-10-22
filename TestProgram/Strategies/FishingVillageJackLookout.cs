@@ -37,7 +37,7 @@ namespace Program
             {
                 return new CardPickByPriority(
                            CardAcceptance.For(Cards.FishingVillage),
-                           CardAcceptance.For(Cards.Lookout, Default.ShouldPlayLookout()),
+                           CardAcceptance.For(Cards.Lookout),
                            CardAcceptance.For(Cards.JackOfAllTrades));
             }
         }
