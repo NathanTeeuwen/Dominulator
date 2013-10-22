@@ -16,9 +16,9 @@ namespace Program
             stopwatch.Start();
 
             ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Nobles), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
-            TestAllCardsWithBigMoney();
+            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Treasury), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
+            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
+            //TestAllCardsWithBigMoney();
             
             stopwatch.Stop();
 
@@ -122,13 +122,11 @@ namespace Program
             Cards.Steward,
             Cards.StoneMason,
             Cards.Torturer,
-            Cards.Tournament,
-            Cards.Treasury,
-            Cards.Vault,
-            Cards.WalledVillage,
-            Cards.WishingWell,            
+            Cards.Tournament,            
+            Cards.Vault,            
 
             // unimplemented cards.
+            Cards.WalledVillage,
             Cards.Knights,
             Cards.Stash,      
             Cards.BandOfMisfits,

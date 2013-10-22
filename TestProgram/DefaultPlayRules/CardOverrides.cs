@@ -22,11 +22,13 @@ namespace Program.DefaultStrategies
             result[Cards.IllGottenGains] = new IllGottenGainsAlwaysGainCopper(playerAction);
             result[Cards.Library] = new Library(playerAction);
             result[Cards.MarketSquare] = new MarketSquare(playerAction);
-            result[Cards.Mystic] = new Mystic(playerAction);
+            result[Cards.Mystic] = new MysticAndWishingWell(playerAction);
             result[Cards.Nobles] = new Nobles(playerAction);
             result[Cards.Rebuild] = new Rebuild(playerAction);
+            result[Cards.Treasury] = new Treasury(playerAction);
             result[Cards.Trader] = new Trader(playerAction);
             result[Cards.Watchtower] = new Watchtower(playerAction);
+            result[Cards.WishingWell] = result[Cards.Mystic];
 
             return result;
         }

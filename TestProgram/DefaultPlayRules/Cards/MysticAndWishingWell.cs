@@ -4,12 +4,12 @@ using System.Linq;
 
 namespace Program.DefaultStrategies
 {
-    internal class Mystic
+    internal class MysticAndWishingWell
        : UnimplementedPlayerAction
     {
         private readonly PlayerAction playerAction;
 
-        public Mystic(PlayerAction playerAction)
+        public MysticAndWishingWell(PlayerAction playerAction)
         {
             this.playerAction = playerAction;
         }

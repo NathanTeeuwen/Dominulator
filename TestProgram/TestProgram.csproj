@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CardAcceptance.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Treasury.cs" />
     <Compile Include="DefaultPlayRules\Cards\Nobles.cs" />
     <Compile Include="DefaultStrategies.cs" />
     <Compile Include="DefaultPlayRules\CardOverrides.cs" />
@@ -151,7 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <Compile Include="DefaultPlayRules\Cards\Mystic.cs" />
+    <Compile Include="DefaultPlayRules\Cards\MysticAndWishingWell.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dominion\Dominion.csproj">

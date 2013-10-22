@@ -548,9 +548,14 @@ namespace Dominion.CardTypes
         {
             if (!currentPlayer.CardsBoughtThisTurn.AnyWhere(card => card.isVictory))
             {
-                currentPlayer.RequestPlayerTopDeckCardsFromPlay(gameState,
-                    acceptableCard => acceptableCard == Treasury.card,
-                    isOptional: true);
+                if (currentPlayer.actions.ShouldPutCardOnTopOfDeck(card, gameState))
+                {
+                    var cardToTopDeck = currentPlayer.cardsPlayed.RemoveCard(this);
+                    if (cardToTopDeck != null)
+                    {
+                        currentPlayer.deck.AddCardToTop(cardToTopDeck);
+                    }
+                }                
             }
         }
     }
