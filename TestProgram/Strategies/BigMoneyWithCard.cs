@@ -39,7 +39,7 @@ namespace Program
             {
                 return new CardPickByPriority(
                     CardAcceptance.For(card));
-            }
+            }            
         }
         
         /*

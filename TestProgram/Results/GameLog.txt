@@ -1,13 +1,13 @@
-BigMoneyWithCard<Advisor> gained Copper.
-BigMoneyWithCard<Advisor> gained Copper.
-BigMoneyWithCard<Advisor> gained Copper.
-BigMoneyWithCard<Advisor> gained Copper.
-BigMoneyWithCard<Advisor> gained Copper.
-BigMoneyWithCard<Advisor> gained Copper.
-BigMoneyWithCard<Advisor> gained Copper.
-BigMoneyWithCard<Advisor> gained Estate.
-BigMoneyWithCard<Advisor> gained Estate.
-BigMoneyWithCard<Advisor> gained Estate.
+BigMoney<Outpost> gained Copper.
+BigMoney<Outpost> gained Copper.
+BigMoney<Outpost> gained Copper.
+BigMoney<Outpost> gained Copper.
+BigMoney<Outpost> gained Copper.
+BigMoney<Outpost> gained Copper.
+BigMoney<Outpost> gained Copper.
+BigMoney<Outpost> gained Estate.
+BigMoney<Outpost> gained Estate.
+BigMoney<Outpost> gained Estate.
 BigMoney gained Copper.
 BigMoney gained Copper.
 BigMoney gained Copper.
@@ -18,12 +18,12 @@ BigMoney gained Copper.
 BigMoney gained Estate.
 BigMoney gained Estate.
 BigMoney gained Estate.
-BigMoneyWithCard<Advisor> reshuffled
-BigMoneyWithCard<Advisor> Drew Copper into hand.
-BigMoneyWithCard<Advisor> Drew Copper into hand.
-BigMoneyWithCard<Advisor> Drew Copper into hand.
-BigMoneyWithCard<Advisor> Drew Estate into hand.
-BigMoneyWithCard<Advisor> Drew Copper into hand.
+BigMoney<Outpost> reshuffled
+BigMoney<Outpost> Drew Copper into hand.
+BigMoney<Outpost> Drew Copper into hand.
+BigMoney<Outpost> Drew Copper into hand.
+BigMoney<Outpost> Drew Estate into hand.
+BigMoney<Outpost> Drew Copper into hand.
 BigMoney reshuffled
 BigMoney Drew Estate into hand.
 BigMoney Drew Copper into hand.
@@ -32,28 +32,28 @@ BigMoney Drew Copper into hand.
 BigMoney Drew Estate into hand.
 ROUND 1
 -------------
-BigMoneyWithCard<Advisor> begins turn
+BigMoney<Outpost> begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<Advisor> bought Silver.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoney<Outpost> bought Silver.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
@@ -78,27 +78,27 @@ With hand: Copper,Copper,Copper,Estate,Estate,
 
 ROUND 2
 -------------
-BigMoneyWithCard<Advisor> begins turn
+BigMoney<Outpost> begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> bought Silver.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> reshuffled
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoney<Outpost> bought Silver.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> reshuffled
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
@@ -126,28 +126,28 @@ With hand: Copper,Copper,Copper,Copper,Estate,
 
 ROUND 3
 -------------
-BigMoneyWithCard<Advisor> begins turn
+BigMoney<Outpost> begins turn
 With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyWithCard<Advisor> Played Silver.
+  BigMoney<Outpost> Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<Advisor> bought Advisor.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(1), Copper(7), Estate(3), Silver(2), 
+  BigMoney<Outpost> bought Outpost.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Outpost(1), Silver(2), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
@@ -176,27 +176,27 @@ With hand: Copper,Copper,Copper,Silver,Silver,
 
 ROUND 4
 -------------
-BigMoneyWithCard<Advisor> begins turn
+BigMoney<Outpost> begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> bought Silver.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> reshuffled
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(1), Copper(7), Estate(3), Silver(3), 
+  BigMoney<Outpost> bought Silver.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> reshuffled
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Outpost(1), Silver(3), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Estate,Estate,Estate,
@@ -219,30 +219,30 @@ With hand: Copper,Copper,Estate,Estate,Estate,
 
 ROUND 5
 -------------
-BigMoneyWithCard<Advisor> begins turn
+BigMoney<Outpost> begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyWithCard<Advisor> Played Silver.
+  BigMoney<Outpost> Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<Advisor> Played Silver.
+  BigMoney<Outpost> Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyWithCard<Advisor> bought Gold.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> Drew Advisor into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(1), Copper(7), Estate(3), Gold(1), Silver(3), 
+  BigMoney<Outpost> bought Gold.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> Drew Outpost into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(1), Outpost(1), Silver(3), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
@@ -269,35 +269,42 @@ With hand: Copper,Copper,Copper,Copper,Estate,
 
 ROUND 6
 -------------
-BigMoneyWithCard<Advisor> begins turn
-With hand: Advisor,Copper,Copper,Estate,Estate,
-  BigMoneyWithCard<Advisor> Played Advisor.
-    +1 Actions = 1 all together.
-    BigMoneyWithCard<Advisor> Revealed Copper.
-    BigMoneyWithCard<Advisor> Revealed Copper.
-    BigMoneyWithCard<Advisor> Revealed Estate.
-    BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Played Copper.
+BigMoney<Outpost> begins turn
+With hand: Copper,Copper,Estate,Estate,Outpost,
+  BigMoney<Outpost> Played Outpost.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> bought Silver.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Advisor.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> reshuffled
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Gold into hand.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(1), Copper(7), Estate(3), Gold(1), Silver(4), 
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(1), Outpost(1), Silver(3), 
+
+ROUND 7
+-------------
+BigMoney<Outpost> begins turn
+With hand: Copper,Copper,Estate,
+  BigMoney<Outpost> Finished Playing Outpost.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Outpost.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> reshuffled
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(1), Outpost(1), Silver(3), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Estate,Estate,Silver,
@@ -317,165 +324,164 @@ With hand: Copper,Copper,Estate,Estate,Silver,
   BigMoney Drew Copper into hand.
   BigMoney Drew Gold into hand.
   BigMoney reshuffled
+  BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
   BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), 
 
-ROUND 7
+ROUND 8
 -------------
-BigMoneyWithCard<Advisor> begins turn
-With hand: Copper,Gold,Silver,Silver,Silver,
-  BigMoneyWithCard<Advisor> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<Advisor> Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWithCard<Advisor> Played Silver.
-    +2 Coin = 9 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyWithCard<Advisor> bought Gold.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Gold.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> Drew Advisor into hand.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(1), Copper(7), Estate(3), Gold(2), Silver(4), 
+BigMoney<Outpost> begins turn
+With hand: Copper,Estate,Silver,Silver,Silver,
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 6 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney<Outpost> bought Gold.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Drew Outpost into hand.
+  BigMoney<Outpost> Drew Gold into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(2), Outpost(1), Silver(3), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
+With hand: Copper,Copper,Gold,Silver,Silver,
   BigMoney Played Gold.
     +3 Coin = 3 all together.
   BigMoney Played Silver.
     +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
   BigMoney Played Copper.
-    +1 Coin = 6 all together.
+    +1 Coin = 8 all together.
   BigMoney Played Copper.
-    +1 Coin = 7 all together.
+    +1 Coin = 9 all together.
   BigMoney bought Gold.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
   BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
   BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
   BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), 
 
-ROUND 8
+ROUND 9
 -------------
-BigMoneyWithCard<Advisor> begins turn
-With hand: Advisor,Copper,Estate,Estate,Silver,
-  BigMoneyWithCard<Advisor> Played Advisor.
-    +1 Actions = 1 all together.
-    BigMoneyWithCard<Advisor> Revealed Copper.
-    BigMoneyWithCard<Advisor> Revealed Copper.
-    BigMoneyWithCard<Advisor> Revealed Copper.
-    BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+BigMoney<Outpost> begins turn
+With hand: Copper,Copper,Estate,Gold,Outpost,
+  BigMoney<Outpost> Played Outpost.
+  BigMoney<Outpost> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<Advisor> bought Advisor.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Advisor.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> reshuffled
-  BigMoneyWithCard<Advisor> Drew Gold into hand.
-  BigMoneyWithCard<Advisor> Drew Advisor into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(2), Copper(7), Estate(3), Gold(2), Silver(4), 
+  BigMoney<Outpost> bought Silver.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Gold.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(2), Outpost(1), Silver(4), 
+
+ROUND 10
+-------------
+BigMoney<Outpost> begins turn
+With hand: Copper,Copper,Copper,
+  BigMoney<Outpost> Finished Playing Outpost.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney<Outpost> bought Silver.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Outpost.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> reshuffled
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(2), Outpost(1), Silver(5), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Silver,Silver,Silver,
+With hand: Copper,Estate,Estate,Silver,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Silver.
     +2 Coin = 4 all together.
-  BigMoney Played Silver.
-    +2 Coin = 6 all together.
   BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(4), 
-
-ROUND 9
--------------
-BigMoneyWithCard<Advisor> begins turn
-With hand: Advisor,Copper,Copper,Estate,Gold,
-  BigMoneyWithCard<Advisor> Played Advisor.
-    +1 Actions = 1 all together.
-    BigMoneyWithCard<Advisor> Revealed Silver.
-    BigMoneyWithCard<Advisor> Revealed Estate.
-    BigMoneyWithCard<Advisor> Revealed Copper.
-    BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Advisor> bought Gold.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Gold.
-  BigMoneyWithCard<Advisor> Discarded Advisor.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Gold into hand.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(2), Copper(7), Estate(3), Gold(3), Silver(4), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
+
+ROUND 11
+-------------
+BigMoney<Outpost> begins turn
+With hand: Copper,Estate,Estate,Silver,Silver,
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney<Outpost> bought Silver.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Drew Gold into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(2), Outpost(1), Silver(6), 
 
 BigMoney begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
+With hand: Copper,Copper,Copper,Copper,Estate,
   BigMoney Played Copper.
     +1 Coin = 1 all together.
   BigMoney Played Copper.
     +1 Coin = 2 all together.
   BigMoney Played Copper.
     +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
   BigMoney bought Silver.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
+  BigMoney Discarded Copper.
   BigMoney Discarded Estate.
   BigMoney reshuffled
   BigMoney Drew Copper into hand.
@@ -483,34 +489,34 @@ With hand: Copper,Copper,Copper,Estate,Estate,
   BigMoney Drew Silver into hand.
   BigMoney Drew Copper into hand.
   BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), 
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(6), 
 
-ROUND 10
+ROUND 12
 -------------
-BigMoneyWithCard<Advisor> begins turn
-With hand: Copper,Gold,Silver,Silver,Silver,
-  BigMoneyWithCard<Advisor> Played Gold.
+BigMoney<Outpost> begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  BigMoney<Outpost> Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> Played Silver.
+  BigMoney<Outpost> Played Silver.
     +2 Coin = 5 all together.
-  BigMoneyWithCard<Advisor> Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWithCard<Advisor> Played Silver.
-    +2 Coin = 9 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyWithCard<Advisor> bought Province.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Gold.
-  BigMoneyWithCard<Advisor> Drew Advisor into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(2), Copper(7), Estate(3), Gold(3), Province(1), Silver(4), 
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney<Outpost> bought Gold.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Gold.
+  BigMoney<Outpost> Drew Gold into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> Drew Outpost into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(3), Outpost(1), Silver(6), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Copper,Gold,Silver,
@@ -524,7 +530,7 @@ With hand: Copper,Copper,Copper,Gold,Silver,
     +1 Coin = 7 all together.
   BigMoney Played Copper.
     +1 Coin = 8 all together.
-  BigMoney bought Province.
+  BigMoney bought Gold.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
   BigMoney Discarded Copper.
@@ -535,41 +541,52 @@ With hand: Copper,Copper,Copper,Gold,Silver,
   BigMoney Drew Copper into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(5), 
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(6), 
 
-ROUND 11
+ROUND 13
 -------------
-BigMoneyWithCard<Advisor> begins turn
-With hand: Advisor,Copper,Copper,Copper,Estate,
-  BigMoneyWithCard<Advisor> Played Advisor.
-    +1 Actions = 1 all together.
-    BigMoneyWithCard<Advisor> reshuffled
-    BigMoneyWithCard<Advisor> Revealed Copper.
-    BigMoneyWithCard<Advisor> Revealed Estate.
-    BigMoneyWithCard<Advisor> Revealed Silver.
-    BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+BigMoney<Outpost> begins turn
+With hand: Copper,Copper,Gold,Outpost,Silver,
+  BigMoney<Outpost> Played Outpost.
+  BigMoney<Outpost> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney<Outpost> bought Gold.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Gold.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(4), Outpost(1), Silver(6), 
+
+ROUND 14
+-------------
+BigMoney<Outpost> begins turn
+With hand: Copper,Estate,Silver,
+  BigMoney<Outpost> Finished Playing Outpost.
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<Advisor> bought Silver.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Advisor.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Advisor into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> Drew Gold into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(2), Copper(7), Estate(3), Gold(3), Province(1), Silver(5), 
+  BigMoney<Outpost> bought Silver.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Outpost.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> reshuffled
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(4), Outpost(1), Silver(7), 
 
 BigMoney begins turn
 With hand: Copper,Estate,Gold,Silver,Silver,
@@ -592,41 +609,32 @@ With hand: Copper,Estate,Gold,Silver,Silver,
   BigMoney Drew Estate into hand.
   BigMoney Drew Silver into hand.
   BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(2), Silver(5), 
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(6), 
 
-ROUND 12
+ROUND 15
 -------------
-BigMoneyWithCard<Advisor> begins turn
-With hand: Advisor,Copper,Copper,Estate,Gold,
-  BigMoneyWithCard<Advisor> Played Advisor.
-    +1 Actions = 1 all together.
-    BigMoneyWithCard<Advisor> Revealed Silver.
-    BigMoneyWithCard<Advisor> Revealed Province.
-    BigMoneyWithCard<Advisor> Revealed Silver.
-    BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWithCard<Advisor> bought Gold.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Gold.
-  BigMoneyWithCard<Advisor> Discarded Advisor.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Discarded Province.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Gold into hand.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> Drew Gold into hand.
-  BigMoneyWithCard<Advisor> reshuffled
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(2), Copper(7), Estate(3), Gold(4), Province(1), Silver(5), 
+BigMoney<Outpost> begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney<Outpost> bought Silver.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Drew Gold into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(4), Outpost(1), Silver(8), 
 
 BigMoney begins turn
 With hand: Copper,Copper,Estate,Estate,Silver,
@@ -643,205 +651,46 @@ With hand: Copper,Copper,Estate,Estate,Silver,
   BigMoney Discarded Estate.
   BigMoney Discarded Estate.
   BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Silver into hand.
   BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(2), Silver(6), 
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(7), 
 
-ROUND 13
+ROUND 16
 -------------
-BigMoneyWithCard<Advisor> begins turn
-With hand: Copper,Gold,Gold,Silver,Silver,
-  BigMoneyWithCard<Advisor> Played Gold.
+BigMoney<Outpost> begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoney<Outpost> Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyWithCard<Advisor> Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyWithCard<Advisor> Played Silver.
-    +2 Coin = 10 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 11 all together.
-  BigMoneyWithCard<Advisor> bought Province.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Gold.
-  BigMoneyWithCard<Advisor> Discarded Gold.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(2), Copper(7), Estate(3), Gold(4), Province(2), Silver(5), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
+  BigMoney<Outpost> Played Silver.
     +2 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(3), Silver(6), 
-
-ROUND 14
--------------
-BigMoneyWithCard<Advisor> begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWithCard<Advisor> bought Estate.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Drew Gold into hand.
-  BigMoneyWithCard<Advisor> Drew Advisor into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> Drew Province into hand.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(2), Copper(7), Estate(4), Gold(4), Province(2), Silver(5), 
+  BigMoney<Outpost> bought Province.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Gold.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Drew Gold into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> Drew Outpost into hand.
+  BigMoney<Outpost> Drew Gold into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(4), Outpost(1), Province(1), Silver(8), 
 
 BigMoney begins turn
-With hand: Copper,Estate,Silver,Silver,Silver,
+With hand: Copper,Silver,Silver,Silver,Silver,
   BigMoney Played Silver.
     +2 Coin = 2 all together.
   BigMoney Played Silver.
     +2 Coin = 4 all together.
   BigMoney Played Silver.
     +2 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Duchy.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Estate.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(3), Province(3), Silver(6), 
-
-ROUND 15
--------------
-BigMoneyWithCard<Advisor> begins turn
-With hand: Advisor,Estate,Gold,Province,Silver,
-  BigMoneyWithCard<Advisor> Played Advisor.
-    +1 Actions = 1 all together.
-    BigMoneyWithCard<Advisor> Revealed Estate.
-    BigMoneyWithCard<Advisor> Revealed Advisor.
-    BigMoneyWithCard<Advisor> Revealed Copper.
-    BigMoneyWithCard<Advisor> Discarded Advisor.
-  BigMoneyWithCard<Advisor> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWithCard<Advisor> bought Duchy.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Gold.
-  BigMoneyWithCard<Advisor> Discarded Advisor.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Discarded Province.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Gold into hand.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> reshuffled
-  BigMoneyWithCard<Advisor> Drew Advisor into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(2), Copper(7), Duchy(1), Estate(4), Gold(4), Province(2), Silver(5), 
-
-BigMoney begins turn
-With hand: Copper,Estate,Estate,Province,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney bought Estate.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Province.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(4), Gold(3), Province(3), Silver(6), 
-
-ROUND 16
--------------
-BigMoneyWithCard<Advisor> begins turn
-With hand: Advisor,Copper,Gold,Silver,Silver,
-  BigMoneyWithCard<Advisor> Played Advisor.
-    +1 Actions = 1 all together.
-    BigMoneyWithCard<Advisor> Revealed Copper.
-    BigMoneyWithCard<Advisor> Revealed Province.
-    BigMoneyWithCard<Advisor> Revealed Copper.
-    BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWithCard<Advisor> Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyWithCard<Advisor> bought Province.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Gold.
-  BigMoneyWithCard<Advisor> Discarded Advisor.
-  BigMoneyWithCard<Advisor> Discarded Province.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> Drew Province into hand.
-  BigMoneyWithCard<Advisor> Drew Duchy into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(2), Copper(7), Duchy(1), Estate(4), Gold(4), Province(3), Silver(5), 
-
-BigMoney begins turn
-With hand: Copper,Gold,Gold,Province,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
   BigMoney Played Silver.
     +2 Coin = 8 all together.
   BigMoney Played Copper.
@@ -849,39 +698,156 @@ With hand: Copper,Gold,Gold,Province,Silver,
   BigMoney bought Province.
   BigMoney Discarded Copper.
   BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Province.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
   BigMoney Drew Silver into hand.
-  BigMoney Drew Province into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
   BigMoney Drew Estate into hand.
   BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(4), Gold(3), Province(4), Silver(6), 
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(2), Silver(7), 
 
 ROUND 17
 -------------
-BigMoneyWithCard<Advisor> begins turn
-With hand: Copper,Copper,Duchy,Province,Silver,
-  BigMoneyWithCard<Advisor> Played Silver.
+BigMoney<Outpost> begins turn
+With hand: Gold,Gold,Outpost,Silver,Silver,
+  BigMoney<Outpost> Played Outpost.
+  BigMoney<Outpost> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney<Outpost> Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 10 all together.
+  BigMoney<Outpost> bought Province.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Gold.
+  BigMoney<Outpost> Discarded Gold.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(4), Outpost(1), Province(2), Silver(8), 
+
+ROUND 18
+-------------
+BigMoney<Outpost> begins turn
+With hand: Copper,Estate,Silver,
+  BigMoney<Outpost> Finished Playing Outpost.
+  BigMoney<Outpost> Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> bought Silver.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Outpost.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Gold into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> reshuffled
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(4), Outpost(1), Province(2), Silver(9), 
+
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(3), Silver(7), 
+
+ROUND 19
+-------------
+BigMoney<Outpost> begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoney<Outpost> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney<Outpost> bought Province.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Gold.
+  BigMoney<Outpost> Drew Province into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(3), Gold(4), Outpost(1), Province(3), Silver(9), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWithCard<Advisor> bought Estate.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Duchy.
-  BigMoneyWithCard<Advisor> Discarded Province.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> Drew Gold into hand.
-  BigMoneyWithCard<Advisor> Drew Gold into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(2), Copper(7), Duchy(1), Estate(5), Gold(4), Province(3), Silver(5), 
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(3), Province(3), Silver(7), 
+
+ROUND 20
+-------------
+BigMoney<Outpost> begins turn
+With hand: Copper,Copper,Copper,Estate,Province,
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney<Outpost> Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney<Outpost> bought Estate.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Discarded Province.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(4), Gold(4), Outpost(1), Province(3), Silver(9), 
 
 BigMoney begins turn
 With hand: Copper,Estate,Gold,Province,Silver,
@@ -897,53 +863,122 @@ With hand: Copper,Estate,Gold,Province,Silver,
   BigMoney Discarded Gold.
   BigMoney Discarded Estate.
   BigMoney Discarded Province.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Duchy into hand.
-  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
   BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(3), Province(4), Silver(6), 
+  BigMoney Drew Duchy into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(3), Province(3), Silver(7), 
 
-ROUND 18
+ROUND 21
 -------------
-BigMoneyWithCard<Advisor> begins turn
-With hand: Copper,Estate,Gold,Gold,Silver,
-  BigMoneyWithCard<Advisor> Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWithCard<Advisor> Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyWithCard<Advisor> Played Silver.
+BigMoney<Outpost> begins turn
+With hand: Copper,Silver,Silver,Silver,Silver,
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 6 all together.
+  BigMoney<Outpost> Played Silver.
     +2 Coin = 8 all together.
-  BigMoneyWithCard<Advisor> Played Copper.
+  BigMoney<Outpost> Played Copper.
     +1 Coin = 9 all together.
-  BigMoneyWithCard<Advisor> bought Province.
-  BigMoneyWithCard<Advisor> Discarded Copper.
-  BigMoneyWithCard<Advisor> Discarded Silver.
-  BigMoneyWithCard<Advisor> Discarded Gold.
-  BigMoneyWithCard<Advisor> Discarded Gold.
-  BigMoneyWithCard<Advisor> Discarded Estate.
-  BigMoneyWithCard<Advisor> Drew Silver into hand.
-  BigMoneyWithCard<Advisor> Drew Gold into hand.
-  BigMoneyWithCard<Advisor> Drew Advisor into hand.
-  BigMoneyWithCard<Advisor> Drew Estate into hand.
-  BigMoneyWithCard<Advisor> Drew Copper into hand.
-  BigMoneyWithCard<Advisor> ends turn with deck: Advisor(2), Copper(7), Duchy(1), Estate(5), Gold(4), Province(4), Silver(5), 
+  BigMoney<Outpost> bought Province.
+  BigMoney<Outpost> Discarded Copper.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> Drew Province into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> Drew Gold into hand.
+  BigMoney<Outpost> Drew Silver into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Estate(4), Gold(4), Outpost(1), Province(4), Silver(9), 
 
-Game ended in 18 turns.
+BigMoney begins turn
+With hand: Copper,Duchy,Estate,Estate,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Estate.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Duchy.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(3), Province(3), Silver(7), 
+
+ROUND 22
+-------------
+BigMoney<Outpost> begins turn
+With hand: Estate,Gold,Province,Silver,Silver,
+  BigMoney<Outpost> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney<Outpost> Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney<Outpost> bought Duchy.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Silver.
+  BigMoney<Outpost> Discarded Gold.
+  BigMoney<Outpost> Discarded Estate.
+  BigMoney<Outpost> Discarded Province.
+  BigMoney<Outpost> Drew Outpost into hand.
+  BigMoney<Outpost> Drew Copper into hand.
+  BigMoney<Outpost> Drew Gold into hand.
+  BigMoney<Outpost> Drew Gold into hand.
+  BigMoney<Outpost> Drew Estate into hand.
+  BigMoney<Outpost> ends turn with deck: Copper(7), Duchy(1), Estate(4), Gold(4), Outpost(1), Province(4), Silver(9), 
+
+BigMoney begins turn
+With hand: Copper,Gold,Province,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Province.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(3), Province(4), Silver(7), 
+
+Game ended in 22 turns.
 BigMoney Won!
-BigMoneyWithCard<Advisor> total score: 32
-  Advisor(2), Copper(7), Duchy(1), Estate(5), Gold(4), Province(4), Silver(5), 
+BigMoney<Outpost> total score: 31
+  Copper(7), Duchy(1), Estate(4), Gold(4), Outpost(1), Province(4), Silver(9), 
 BigMoney total score: 34
-  Copper(7), Duchy(2), Estate(4), Gold(3), Province(4), Silver(6), 
+  Copper(7), Duchy(2), Estate(4), Gold(3), Province(4), Silver(7), 
 Trash contains: 
 
-BigMoneyWithCard<Advisor> GainSequence is:
-  Silver, Silver, Advisor, Silver, Gold, 
-  Silver, Gold, Advisor, Gold, Province, 
-  Silver, Gold, Province, Estate, Duchy, 
-  Province, Estate, Province, 
+BigMoney<Outpost> GainSequence is:
+  Silver, Silver, Outpost, Silver, Gold, 
+  Gold, Silver, Silver, Silver, Gold, 
+  Gold, Silver, Silver, Province, Province, 
+  Silver, Province, Estate, Province, Duchy, 
+
 BigMoney GainSequence is:
   Silver, Silver, Gold, Silver, Silver, 
-  Gold, Gold, Silver, Province, Province, 
-  Silver, Province, Duchy, Estate, Province, 
-  Duchy, 
+  Gold, Silver, Silver, Gold, Province, 
+  Silver, Province, Province, Duchy, Duchy, 
+  Estate, Province, 

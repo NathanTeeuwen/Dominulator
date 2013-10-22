@@ -19,7 +19,7 @@ namespace Program
         internal readonly int playerIndex = -1;
 
         internal readonly ICardPicker purchaseOrder;
-        internal readonly ICardPicker actionOrder;
+        internal ICardPicker actionOrder; // readonly
         internal readonly ICardPicker trashOrder;
         internal readonly ICardPicker treasurePlayOrder;
         internal readonly ICardPicker discardOrder;
@@ -58,7 +58,7 @@ namespace Program
         public static int PlayIndexfor(PlayerState playerState)
         {
             return ((PlayerAction)playerState.Actions).playerIndex;
-        }
+        }        
 
         public override Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
         {
@@ -781,5 +781,13 @@ namespace Program
 
             return base.GetCoinAmountToOverpayForCard(gameState, card);
         }        
-    }    
+    }
+
+    public static class PlayerActionExtensionMethods
+    {
+        public static bool IsGainingCard(this PlayerAction playerAction, Card card, GameState gameState)
+        {
+            return playerAction.purchaseOrder.DoesCardPickerMatch(gameState, card);
+        }
+    }
 }

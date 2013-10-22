@@ -15,8 +15,9 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Advisor), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
+            ComparePlayers(Strategies.FishingVillageLibraryCountPoorHouse.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
+            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Count), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
+            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
             //TestAllCardsWithBigMoney();
             
             stopwatch.Stop();
@@ -90,8 +91,7 @@ namespace Program
 
         static Card[] notImplementedCards = new Card[]
         {
-            // implemented cards that require default behaviors
-            Cards.Count,
+            // implemented cards that require default behaviors            
             Cards.Doctor,
             Cards.Embargo,
             Cards.Explorer,

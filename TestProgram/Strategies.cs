@@ -125,7 +125,7 @@ namespace Program
             return WhichCardFromInHand(matchingCards, gameState) != null;
         }
       
-        private static int CountInHandFrom(ICardPicker matchingCards, GameState gameState)
+        public static int CountInHandFrom(ICardPicker matchingCards, GameState gameState)
         {
             return gameState.Self.Hand.CountWhere(card => matchingCards.GetPreferredCard(gameState, current => current == card) != null);            
         }
@@ -138,6 +138,17 @@ namespace Program
         public static bool HasCardToTrashInHand(GameState gameState, PlayerAction playerAction)
         {
             return HasCardFromInHand(playerAction.trashOrder, gameState);
+        }
+
+        public static bool HasExactlyOneActionInHand(GameState gameState)
+        {
+            var self = gameState.Self;
+            if (self.Hand.CountWhere(card => card.isAction) == 1)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }
