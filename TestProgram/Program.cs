@@ -15,9 +15,9 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            ComparePlayers(Strategies.FishingVillageLibraryCountPoorHouse.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Count), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
+            ComparePlayers(Strategies.LookoutHaremMiningVillageMysticScout.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
+            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Mystic), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
+            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
             //TestAllCardsWithBigMoney();
             
             stopwatch.Stop();
@@ -27,7 +27,7 @@ namespace Program
             System.Console.WriteLine("Elapsed Time per Players Turn: {0}ns", (int)((double) stopwatch.ElapsedTicks / System.Diagnostics.Stopwatch.Frequency * 1000 * 1000 * 1000 / GameState.turnTotalCount));
         }        
 
-        static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false)
+        static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false, int numberOfGames = 1000)
         {
             var resultList = new List<System.Tuple<string, double>>();
 
@@ -53,7 +53,7 @@ namespace Program
                 if (otherPlayerAction == null)
                     continue;
 
-                double percentDiff = ComparePlayers(playerAction, otherPlayerAction, shouldParallel:shouldParallel, useShelters: useShelters, logGameCount:0, numberOfGames:1000, useColonyAndPlatinum:true);
+                double percentDiff = ComparePlayers(playerAction, otherPlayerAction, shouldParallel: shouldParallel, useShelters: useShelters, logGameCount: 0, numberOfGames: numberOfGames, useColonyAndPlatinum: true);
 
                 resultList.Add( new System.Tuple<string,double>(otherPlayerAction.PlayerName, percentDiff));
             }            
@@ -107,8 +107,7 @@ namespace Program
             Cards.Masquerade,
             Cards.Masterpiece,
             Cards.Minion,
-            Cards.Mint,
-            Cards.Mystic,
+            Cards.Mint,            
             Cards.NativeVillage,
             Cards.Navigator,
             Cards.NomadCamp,

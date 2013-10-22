@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Program
 {
-    public static partial class Strategies
+    public static partial class Strategies  
     {
         public static class LookoutHaremMiningVillageMysticScout
         {
@@ -60,43 +60,13 @@ namespace Program
 
                         return left.CurrentCoinCost(this.player) - right.CurrentCoinCost(this.player);
                     }
-                }
-
-                // for mystic
-                override public Card GuessCardTopOfDeck(GameState gameState)
-                {
-                    PlayerState self = gameState.Self;
-                    if (self.KnownCardsInDeck.Any())
-                    {
-                        return self.KnownCardsInDeck.First();
-                    }
-
-                    IEnumerable<Card> cards = self.CardsInDeck.Any() ? self.CardsInDeck : self.CardsInDeckAndDiscard;
-                    cards = cards.Where(card => card != Cards.Estate && !card.isShelter);
-
-                    if (cards.Any())
-                        return MostCommonCard(cards);
-                    else
-                        return Cards.Estate;
-                }
+                }               
 
                 // for playing mining village
                 public override bool ShouldTrashCard(GameState gameState, Card card)
                 {
                     return true;
-                }
-
-                private Card MostCommonCard(IEnumerable<Card> cards)
-                {
-                    Card result = cards.GroupBy(
-                                    card => card,                                    
-                                    (key, group) => new { Card = key, Count = group.Count() })
-                                .OrderByDescending(group => group.Count)
-                                .First()
-                                .Card;
-
-                    return result;
-                }
+                }                
             }
 
             static ICardPicker PurchaseOrder()

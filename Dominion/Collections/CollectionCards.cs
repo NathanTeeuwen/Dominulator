@@ -313,5 +313,26 @@ namespace Dominion
 
             return true;
         }
+
+        public Card MostCommonCardWhere(CardPredicate predicate)
+        {
+            Card result = null;
+            int resultCount = -1;
+
+            for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)
+            {
+                Card card = this.gameSubset.GetCardForIndex(index);
+                if (!predicate(card))
+                    continue;
+
+                if (this.mapGameCardIndexToCount[index] > resultCount)
+                {
+                    resultCount = this.mapGameCardIndexToCount[index];
+                    result = card;
+                }
+            }
+
+            return result;
+        }
     }
 }
