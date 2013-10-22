@@ -14,8 +14,11 @@ namespace Program.DefaultStrategies
             var result = new MapOfCardsFor<IPlayerAction>();
 
             result[Cards.Ambassador]       = new Ambassador(playerAction);
+            result[Cards.Alchemist]        = new Alchemist(playerAction);
             result[Cards.BandOfMisfits]    = new BandOfMisfits(playerAction);
-            result[Cards.Cartographer]     = new Cartographer(playerAction);            
+            result[Cards.Cartographer]     = new Cartographer(playerAction);
+            result[Cards.Catacombs]        = new Catacombs(playerAction);            
+            result[Cards.Chancellor]       = new Chancellor(playerAction);
             result[Cards.Golem]            = new Golem(playerAction);
             result[Cards.HorseTraders]     = new HorseTraders(playerAction);
             result[Cards.IllGottenGains]   = new IllGottenGainsAlwaysGainCopper(playerAction);
@@ -32,10 +35,27 @@ namespace Program.DefaultStrategies
         {
             var result = new MapOfCardsFor<GameStatePlayerActionPredicate>();
 
+            result[Cards.Remodel] = Strategies.HasCardToTrashInHand;
             result[Cards.Salvager] = Strategies.HasCardToTrashInHand;
             result[Cards.Lookout] = Lookout.ShouldPlay;            
 
             return result;
+        }
+    }
+
+    internal class Alchemist
+      : UnimplementedPlayerAction
+    {
+        private readonly PlayerAction playerAction;
+
+        public Alchemist(PlayerAction playerAction)
+        {
+            this.playerAction = playerAction;
+        }
+
+        public override bool ShouldPutCardOnTopOfDeck(Card card, GameState gameState)
+        {
+            return true;
         }
     }
 
@@ -47,6 +67,11 @@ namespace Program.DefaultStrategies
         public Ambassador(PlayerAction playerAction)
         {
             this.playerAction = playerAction;
+        }
+
+        public override Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
+        {
+            return playerAction.trashOrder.GetPreferredCard(gameState, card => gameState.Self.Hand.HasCard(card) && acceptableCard(card));
         }
 
         public override int GetCountToReturnToSupply(Card card, GameState gameState)
@@ -94,6 +119,43 @@ namespace Program.DefaultStrategies
             }
 
             return null;
+        }
+    }
+
+    internal class Catacombs
+        : UnimplementedPlayerAction
+    {
+        private readonly PlayerAction playerAction;
+
+        public Catacombs(PlayerAction playerAction)
+        {
+            this.playerAction = playerAction;
+        }
+
+        public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
+        {
+            return PlayerActionChoice.PutInHand;
+        }
+
+        public override Card GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        {
+            return playerAction.DefaultGetCardFromSupplyToGain(gameState, acceptableCard, isOptional);
+        }
+    }
+
+    internal class Chancellor
+       : UnimplementedPlayerAction
+    {
+        private readonly PlayerAction playerAction;
+
+        public Chancellor(PlayerAction playerAction)
+        {
+            this.playerAction = playerAction;
+        }
+
+        public override bool ShouldPutDeckInDiscard(GameState gameState)
+        {
+            return true;
         }
     }
 

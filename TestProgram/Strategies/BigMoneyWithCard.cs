@@ -17,7 +17,8 @@ namespace Program
             {
                 return new PlayerAction(
                             playerName == null ? "BigMoneyWithCard<" + card.GetType().Name + ">" : playerName,                            
-                            purchaseOrder: PurchaseOrder(card, cardCount, afterSilverCount, afterGoldCount));
+                            purchaseOrder: PurchaseOrder(card, cardCount, afterSilverCount, afterGoldCount),
+                            actionOrder:ActionOrder(card));
             }
 
             public static ICardPicker PurchaseOrder(Card card, int cardCount, int afterSilverCount, int afterGoldCount)
@@ -32,7 +33,13 @@ namespace Program
                            CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 4),
                            CardAcceptance.For(Cards.Potion, 1, gameState => card.potionCost > 0),
                            CardAcceptance.For(Cards.Silver));
-            }           
+            }
+
+            public static ICardPicker ActionOrder(Card card)
+            {
+                return new CardPickByPriority(
+                    CardAcceptance.For(card));
+            }
         }
         
         /*

@@ -38,9 +38,14 @@ namespace Dominion.CardTypes
 
         private new void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RequestPlayerTopDeckCardsFromPlay(gameState,
-                acceptableCard => acceptableCard == Alchemist.card,
-                isOptional: true);
+            if (currentPlayer.actions.ShouldPutCardOnTopOfDeck(this, gameState))
+            {
+                var cardToTopDeck = currentPlayer.cardsPlayed.RemoveCard(this);
+                if (cardToTopDeck != null)
+                {
+                    currentPlayer.deck.AddCardToTop(cardToTopDeck);
+                }
+            }            
         }        
     }
 

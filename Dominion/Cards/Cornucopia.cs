@@ -493,6 +493,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
             // TODO: BANE CARD
+            // throw new NotImplementedException()
             otherPlayer.GainCardFromSupply(Curse.card, gameState);
         }
     }

@@ -642,7 +642,7 @@ namespace Dominion.CardTypes
         public static IronMonger card = new IronMonger();
 
         private IronMonger()
-            : base("IronMongerGrounds", coinCost: 4, isAction: true)
+            : base("IronMonger", coinCost: 4, isAction: true)
         {
         }
 

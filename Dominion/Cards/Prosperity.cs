@@ -539,12 +539,13 @@ namespace Dominion.CardTypes
         public static Venture card = new Venture();
 
         private Venture()
-            : base("Venture", coinCost: 5, plusCoins: 1)
+            : base("Venture", coinCost: 5, plusCoins: 1, isTreasure:true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
+            Card cardToPlay = null;
             while (true)
             {
                 Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
@@ -554,13 +555,17 @@ namespace Dominion.CardTypes
                 }
                 if (revealedCard.isTreasure)
                 {
-                    currentPlayer.cardsBeingRevealed.RemoveCard(revealedCard);
-                    currentPlayer.DoPlayTreasure(revealedCard, gameState);
+                    cardToPlay = currentPlayer.cardsBeingRevealed.RemoveCard(revealedCard);                    
                     break;
                 }
             }
-
             currentPlayer.MoveRevealedCardsToDiscard(gameState);
+
+            if (cardToPlay != null)
+            {
+                currentPlayer.DoPlayTreasure(cardToPlay, gameState);
+            }
+
         }
     }
 

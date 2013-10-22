@@ -753,7 +753,7 @@ namespace Program
 
         public override bool ShouldPutCardOnTopOfDeck(Card card, GameState gameState)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCard(card))
             {
                 return this.defaultCardResponses.ShouldPutCardOnTopOfDeck(card, gameState);
             }

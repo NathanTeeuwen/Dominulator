@@ -124,6 +124,12 @@ namespace Dominion.CardTypes
             : base("Stash", coinCost: 2, isTreasure: true)
         {
         }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            // on deck shuffles must give player an opporunity to place these anywhere.
+            throw new NotImplementedException();
+        }        
     }
 
     public class WalledVillage

@@ -333,31 +333,34 @@ namespace Dominion
             this.cardsBeingPlayed.AddCardToTop(currentCard);
 
             Card cardToPlayAs = currentCard.CardToMimick(this, gameState);
-            
-            for (int i = 0; i < countTimes; ++i)
+
+            if (cardToPlayAs != null)
             {
-                this.gameLog.PlayedCard(this, currentCard);
-                this.gameLog.PushScope();
-
-                this.AddActions(cardToPlayAs.plusAction);
-                this.AddBuys(cardToPlayAs.plusBuy);
-                this.AddCoins(cardToPlayAs.plusCoin);
-                this.victoryTokenCount += cardToPlayAs.plusVictoryToken;
-                this.DrawAdditionalCardsIntoHand(cardToPlayAs.plusCard);
-
-                if (cardToPlayAs.isAttack && cardToPlayAs.isAttackBeforeAction)
+                for (int i = 0; i < countTimes; ++i)
                 {
-                    AttackOtherPlayers(gameState, cardToPlayAs.DoSpecializedAttack);
+                    this.gameLog.PlayedCard(this, currentCard);
+                    this.gameLog.PushScope();
+
+                    this.AddActions(cardToPlayAs.plusAction);
+                    this.AddBuys(cardToPlayAs.plusBuy);
+                    this.AddCoins(cardToPlayAs.plusCoin);
+                    this.victoryTokenCount += cardToPlayAs.plusVictoryToken;
+                    this.DrawAdditionalCardsIntoHand(cardToPlayAs.plusCard);
+
+                    if (cardToPlayAs.isAttack && cardToPlayAs.isAttackBeforeAction)
+                    {
+                        AttackOtherPlayers(gameState, cardToPlayAs.DoSpecializedAttack);
+                    }
+
+                    cardToPlayAs.DoSpecializedAction(gameState.players.CurrentPlayer, gameState);
+
+                    if (cardToPlayAs.isAttack && !cardToPlayAs.attackDependsOnPlayerChoice && !cardToPlayAs.isAttackBeforeAction)
+                    {
+                        AttackOtherPlayers(gameState, cardToPlayAs.DoSpecializedAttack);
+                    }
+
+                    this.gameLog.PopScope();
                 }
-
-                cardToPlayAs.DoSpecializedAction(gameState.players.CurrentPlayer, gameState);
-
-                if (cardToPlayAs.isAttack && !cardToPlayAs.attackDependsOnPlayerChoice && !cardToPlayAs.isAttackBeforeAction)
-                {
-                    AttackOtherPlayers(gameState, cardToPlayAs.DoSpecializedAttack);                    
-                }
-
-                this.gameLog.PopScope();
             }
 
             CardHasBeenPlayed(cardToPlayAs);
@@ -390,7 +393,7 @@ namespace Dominion
                     this.cardsPlayed.AddCard(cardAfterPlay);
                 }
 
-                if (cardPlayedAs != cardAfterPlay)
+                if (cardPlayedAs != cardAfterPlay && cardPlayedAs != null)
                 {
                     if (cardPlayedAs.isDuration)
                     {                        
@@ -796,7 +799,7 @@ namespace Dominion
         }
 
         internal bool RequestPlayerPlayActionFromHand(GameState gameState, CardPredicate acceptableCard, bool isOptional)
-        {
+        {            
             Card cardToPlay = RequestPlayerChooseCardToRemoveFromHandForPlay(gameState, acceptableCard, isTreasure: false, isAction: true, isOptional: isOptional);
 
             if (cardToPlay != null)
@@ -844,7 +847,7 @@ namespace Dominion
         }
 
         internal Card RequestPlayerGainCardFromSupply(GameState gameState, PlayerState playerGainingCard, CardPredicate acceptableCard, string description, bool isOptional = false, DeckPlacement defaultLocation = DeckPlacement.Discard)
-        {
+        {            
             PileOfCards exampleCard = gameState.supplyPiles.Where(cardPile => !cardPile.IsEmpty && acceptableCard(cardPile.TopCard())).FirstOrDefault();
             bool hasCardOfCost = exampleCard != null;
             if (!hasCardOfCost)
@@ -852,8 +855,9 @@ namespace Dominion
                 return null;
             }
 
+            CardPredicate cardPredicate = card => gameState.GetSupplyPile(card) != null && acceptableCard(card);
             // how do you know which player you are gaining for?
-            Card cardType = this.actions.GetCardFromSupplyToGain(gameState, acceptableCard, isOptional);
+            Card cardType = this.actions.GetCardFromSupplyToGain(gameState, cardPredicate, isOptional);
             if (cardType == null)
             {
                 if (isOptional)

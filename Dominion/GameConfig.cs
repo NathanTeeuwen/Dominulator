@@ -81,6 +81,14 @@ namespace Dominion
             this.kingdomPiles = setCards.ToArray();
         }
 
+        public static bool IsKingdomCard(Card card)
+        {
+            if (cardsIncludedbyDefault.Contains(card))
+                return false;
+
+            return true;
+        }
+
         static readonly Card[] cardsIncludedbyDefault = new Card[] { 
                 // treaures
                 Cards.Platinum,

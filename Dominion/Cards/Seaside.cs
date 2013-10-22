@@ -22,11 +22,10 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(acceptableCard => true, gameState);
-            PlayerState.AttackAction attackAction = this.DoEmptyAttack;
+            PlayerState.AttackAction attackAction = this.DoEmptyAttack;            
 
             if (revealedCard != null)
-            {
-                currentPlayer.MoveRevealedCardToHand(revealedCard);
+            {                
                 int maxReturnCount = Math.Max(currentPlayer.Hand.CountOf(revealedCard), 2);            
             
                 int returnCount = currentPlayer.actions.GetCountToReturnToSupply(revealedCard, gameState);
@@ -35,7 +34,10 @@ namespace Dominion.CardTypes
 
                 for (int i = 0; i < returnCount; ++i)
                 {
-                    currentPlayer.ReturnCardFromHandToSupply(revealedCard, gameState);
+                    if (currentPlayer.hand.HasCard(revealedCard))
+                    {
+                        currentPlayer.ReturnCardFromHandToSupply(revealedCard, gameState);
+                    }
                 }
 
                 attackAction = delegate(PlayerState currentPlayer2, PlayerState otherPlayer, GameState gameState2)

@@ -15,16 +15,16 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            //ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Familiar, "BigMoneyFamiliar", 3, afterGoldCount: int.MaxValue), Strategies.MineHoard.Player());
-            //ComparePlayers(Strategies.ColonyFamiliarMine.Player(), Strategies.MineHoard.Player(), useColonyAndPlatinum:true);            
-            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
+            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Advisor), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
+            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
+            //TestAllCardsWithBigMoney();
             
             stopwatch.Stop();
 
             System.Console.WriteLine("");
             System.Console.WriteLine("Elapsed Time per game: {0}us", stopwatch.ElapsedMilliseconds * 1000 / totalGameCount);
             System.Console.WriteLine("Elapsed Time per Players Turn: {0}ns", (int)((double) stopwatch.ElapsedTicks / System.Diagnostics.Stopwatch.Frequency * 1000 * 1000 * 1000 / GameState.turnTotalCount));
-        }
+        }        
 
         static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false)
         {
@@ -63,7 +63,78 @@ namespace Program
                     System.Console.Write("=====>");
                 System.Console.WriteLine("{0:F1}% difference for {1}", -result.Item2, result.Item1);
             }
-        }                                                 
+        }
+
+        static void TestAllCardsWithBigMoney()
+        {
+            var bigMoneyPlayer = Strategies.BigMoney.Player();
+            foreach (var member in typeof(Cards).GetMembers(System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public))
+            {
+                if (member.MemberType == System.Reflection.MemberTypes.Field)                
+                {
+                    Card card = (Card)(typeof(Cards).GetField(member.Name).GetValue(null));
+                    if (!GameConfigBuilder.IsKingdomCard(card))
+                    {
+                        continue;
+                    }
+
+                    if (notImplementedCards.Contains(card))
+                        continue;
+
+                    var playerAction = Strategies.BigMoneyWithCard.Player(card, "BigMoney<" + card.name + ">");
+
+                    ComparePlayers(playerAction, bigMoneyPlayer, numberOfGames:100, shouldParallel:true);
+                }
+            }
+        }
+
+        static Card[] notImplementedCards = new Card[]
+        {
+            // implemented cards that require default behaviors
+            Cards.Count,
+            Cards.Doctor,
+            Cards.Embargo,
+            Cards.Explorer,
+            Cards.Governor,
+            Cards.Graverobber,
+            Cards.Haven,
+            Cards.Herald,
+            Cards.Herbalist,
+            Cards.Inn,
+            Cards.Island,
+            Cards.Knights,
+            Cards.Mandarin,
+            Cards.Masquerade,
+            Cards.Masterpiece,
+            Cards.Minion,
+            Cards.Mint,
+            Cards.Mystic,
+            Cards.NativeVillage,
+            Cards.Navigator,
+            Cards.NomadCamp,
+            Cards.Oracle,
+            Cards.Pawn,
+            Cards.PearlDiver,
+            Cards.PirateShip,
+            Cards.Scavenger,
+            Cards.Scheme,
+            Cards.Scout,
+            Cards.SpiceMerchant,
+            Cards.Squire,            
+            Cards.Steward,
+            Cards.StoneMason,
+            Cards.Torturer,
+            Cards.Tournament,
+            Cards.Treasury,
+            Cards.Vault,
+            Cards.WalledVillage,
+            Cards.WishingWell,
+
+            // unimplemented cards.
+            Cards.Stash,
+            Cards.BlackMarket,
+            Cards.Possession
+        };
         
         static IGameLog GetGameLogForIteration(int gameCount)
         {

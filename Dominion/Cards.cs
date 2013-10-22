@@ -234,5 +234,5 @@
         public static readonly CardTypes.WorkersVillage WorkersVillage = CardTypes.WorkersVillage.card;
         public static readonly CardTypes.Workshop Workshop = CardTypes.Workshop.card;
         public static readonly CardTypes.YoungWitch YoungWitch = CardTypes.YoungWitch.card;
-    }
+    }   
 }

@@ -263,7 +263,7 @@ namespace Program
 
         public bool ShouldPutCardOnTopOfDeck(Card card, GameState gameState)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
+            IPlayerAction playerAction = this.GetActionForCard(card);
             return playerAction.ShouldPutCardOnTopOfDeck(card, gameState);
         }
 
