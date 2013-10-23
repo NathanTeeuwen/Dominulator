@@ -26,6 +26,18 @@ namespace Program
             }
         }
 
+        public void InitializeAllBucketsUpTo(int number)
+        {
+            for (int i = 0; i < number; ++i)
+            {
+                int value;
+                if (!this.mapBucketToCount.TryGetValue(i, out value))
+                {
+                    this.mapBucketToCount[i] = 0;
+                }
+            }
+        }
+
         public int[] GetXAxis()
         {
             return this.mapBucketToCount.OrderBy(keyValuePair => keyValuePair.Key).Select(keyValuePair => keyValuePair.Key).ToArray();
@@ -34,6 +46,17 @@ namespace Program
         public float[] GetYAxis()
         {
             return this.mapBucketToCount.OrderBy(keyValuePair => keyValuePair.Key).Select(keyValuePair => (float)keyValuePair.Value / this.totalCount * 100).ToArray();
+        }
+
+        public float[] GetYAxisIntegrated()
+        {
+            float[] result = this.GetYAxis();
+            for (int i = 1; i < result.Length; ++i)
+            {
+                result[i] += result[i - 1];
+            }
+
+            return result;
         }
 
         public void WriteBuckets(System.IO.TextWriter writer)

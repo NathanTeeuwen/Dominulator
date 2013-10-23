@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CardAcceptance.cs" />
+    <Compile Include="DataGathering\HistogramData.cs" />
+    <Compile Include="DataGathering\PerTurnPlayerCounters.cs" />
     <Compile Include="DefaultPlayRules\Cards\Treasury.cs" />
     <Compile Include="DefaultPlayRules\Cards\Nobles.cs" />
     <Compile Include="DefaultStrategies.cs" />
@@ -82,7 +84,7 @@
     <Compile Include="Simulations\HighestWinRateVsBigMoney.cs" />
     <Compile Include="Simulations\RebuildResults.cs" />
     <Compile Include="StartingDeckBuilder.cs" />
-    <Compile Include="StatsPerTurnGameLog.cs" />
+    <Compile Include="DataGathering\StatsPerTurnGameLog.cs" />
     <Compile Include="Strategies\BigMoneyCultist.cs" />
     <Compile Include="Strategies\BigMoneyDelayed.cs" />
     <Compile Include="Strategies\BigMoneyDoubleSmithy.cs" />

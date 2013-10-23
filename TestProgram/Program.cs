@@ -16,7 +16,7 @@ namespace Program
             stopwatch.Start();
 
             //ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            ComparePlayers(Strategies.BigMoney.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: true, showDistribution:true, firstPlayerAdvantage:true);
+            ComparePlayers(Strategies.BigMoneySingleWitch.Player(), Strategies.HermitMarketSquare.Player(), useColonyAndPlatinum: true);
             //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
             //TestAllCardsWithBigMoney();                      
             
@@ -221,7 +221,9 @@ namespace Program
 
             var statGatherer = new StatsPerTurnGameLog(2);
 
-            var countbyBucket = new HistogramData();
+            var pointSpreadHistogramData = new HistogramData();
+            var gameEndOnTurnHistogramData = new HistogramData();
+            int maxTurnNumber = -1;
 
             Action<int> loopBody = delegate(int gameCount)
             {
@@ -253,7 +255,9 @@ namespace Program
                     int player1Score = gameState.players.OriginalPlayerOrder[playedPositions[0]].TotalScore();
                     int player2Score = gameState.players.OriginalPlayerOrder[playedPositions[1]].TotalScore();
                     int scoreDifference = player2Score - player1Score;
-                    countbyBucket.AddOneToBucket(scoreDifference);
+                    pointSpreadHistogramData.AddOneToBucket(scoreDifference);
+                    gameEndOnTurnHistogramData.AddOneToBucket(gameState.players.CurrentPlayer.TurnNumber);
+                    maxTurnNumber = Math.Max(gameState.players.CurrentPlayer.TurnNumber, maxTurnNumber);
 
                     lock (winnerCount)
                     {                        
@@ -285,6 +289,8 @@ namespace Program
                     loopBody(gameCount);
             }
 
+            gameEndOnTurnHistogramData.InitializeAllBucketsUpTo(maxTurnNumber);
+
             if (showVerboseScore)
             {
                 for (int index = 0; index < winnerCount.Length; ++index)
@@ -311,7 +317,7 @@ namespace Program
                 System.Console.WriteLine("");
                 System.Console.WriteLine("Player 1 Score Delta distribution");
                 System.Console.WriteLine("=================================");
-                countbyBucket.WriteBuckets(System.Console.Out);
+                pointSpreadHistogramData.WriteBuckets(System.Console.Out);
             }
 
             if (createHtmlReport)
@@ -322,7 +328,9 @@ namespace Program
                     {
                         var htmlWriter = new HtmlRenderer(textWriter);
                         htmlWriter.Begin();
-                        InsertHistogram(htmlWriter, "Point Spread:  " + player1.PlayerName + " score <= 0 >= " + player2.PlayerName + " score", "Percentage", countbyBucket);
+                        InsertHistogram(htmlWriter, "Point Spread:  " + player1.PlayerName + " score <= 0 >= " + player2.PlayerName + " score", "Percentage", pointSpreadHistogramData);
+                        InsertHistogram(htmlWriter, "Probablity of Game ending on Turn", "Percentage", gameEndOnTurnHistogramData);
+                        InsertHistogramIntegrated(htmlWriter, "Probablity of Game being over by turn", "Percentage", gameEndOnTurnHistogramData);
                         InsertLineGraph(htmlWriter, "Average Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal);
                         InsertLineGraph(htmlWriter, "Average Provinces Gained Per Turn", player1, player2, statGatherer.provincesGained);
                         InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend);
@@ -373,6 +381,21 @@ namespace Program
                         data.GetXAxis(),
                         data.GetYAxis()                        
                         );            
+        }
+
+        private static void InsertHistogramIntegrated(
+           HtmlRenderer htmlWriter,
+           string title,
+           string xAxisLabel,
+           HistogramData data)
+        {
+            htmlWriter.InsertLineGraph(
+                        title,
+                        "Turn",
+                        xAxisLabel,
+                        data.GetXAxis(),
+                        data.GetYAxisIntegrated()
+                        );
         }
 
         static double TiePercent(int tieCount, int numberOfGames)
