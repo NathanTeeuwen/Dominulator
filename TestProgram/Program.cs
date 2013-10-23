@@ -16,7 +16,7 @@ namespace Program
             stopwatch.Start();
 
             //ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            ComparePlayers(Strategies.BigMoneySingleWitch.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
+            ComparePlayers(Strategies.BigMoney.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: true, showDistribution:true, firstPlayerAdvantage:true);
             //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
             //TestAllCardsWithBigMoney();                      
             
@@ -214,14 +214,14 @@ namespace Program
             CreateGameLog createGameLog = null)
         {
             PlayerAction[] playerActions = new PlayerAction[] { player1, player2 };
-            int[] playerPositions = new int[] { 0, 1 };
+            int[] originalPositions = new int[] { 0, 1 };
             int[] swappedPlayerPositions = new int[] { 1, 0 };
             int[] winnerCount = new int[2];
             int tieCount = 0;            
 
             var statGatherer = new StatsPerTurnGameLog(2);
 
-            var countbyBucket = new CountByBucket();
+            var countbyBucket = new HistogramData();
 
             Action<int> loopBody = delegate(int gameCount)
             {
@@ -235,12 +235,14 @@ namespace Program
                     // swap order every other game
                     bool swappedOrder = !firstPlayerAdvantage && (gameCount % 2 == 1);
 
+                    int[] playedPositions = swappedOrder ? swappedPlayerPositions : originalPositions;                    
+
                     Random random = new Random(gameCount);
 
                     GameState gameState = new GameState(
                         gameLogMultiplexer,
                         playerActions,
-                        swappedOrder ? swappedPlayerPositions : playerPositions,
+                        playedPositions,
                         gameConfig,
                         random);
 
@@ -248,13 +250,13 @@ namespace Program
 
                     PlayerState[] winners = gameState.WinningPlayers;
 
-                    int player1Score = gameState.players[0].TotalScore();
-                    int player2Score = gameState.players[1].TotalScore();
-                    int scoreDifference = player1Score - player2Score;                    
+                    int player1Score = gameState.players.OriginalPlayerOrder[playedPositions[0]].TotalScore();
+                    int player2Score = gameState.players.OriginalPlayerOrder[playedPositions[1]].TotalScore();
+                    int scoreDifference = player2Score - player1Score;
+                    countbyBucket.AddOneToBucket(scoreDifference);
 
                     lock (winnerCount)
-                    {
-                        countbyBucket.AddOneToBucket(scoreDifference);
+                    {                        
                         if (winners.Length == 1)
                         {
                             int winningPlayerIndex = winners[0].Actions == player1 ? 0 : 1;
@@ -320,12 +322,14 @@ namespace Program
                     {
                         var htmlWriter = new HtmlRenderer(textWriter);
                         htmlWriter.Begin();
+                        InsertHistogram(htmlWriter, "Point Spread:  " + player1.PlayerName + " score <= 0 >= " + player2.PlayerName + " score", "Percentage", countbyBucket);
                         InsertLineGraph(htmlWriter, "Average Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal);
                         InsertLineGraph(htmlWriter, "Average Provinces Gained Per Turn", player1, player2, statGatherer.provincesGained);
                         InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend);
                         InsertLineGraph(htmlWriter, "Average Ruins Gained Per Turn", player1, player2, statGatherer.ruinsGained);
                         InsertLineGraph(htmlWriter, "Average Curses Gained Per Turn", player1, player2, statGatherer.cursesGained);
-                        InsertLineGraph(htmlWriter, "Total Curses At Turn", player1, player2, statGatherer.cursesTotal);
+                        InsertLineGraph(htmlWriter, "Average Curses Trashed Per Turn", player1, player2, statGatherer.cursesTrashed);
+                        InsertLineGraph(htmlWriter, "Total Curses At Turn", player1, player2, statGatherer.cursesTotal);                        
                         htmlWriter.End();
                     }
                 }
@@ -356,15 +360,19 @@ namespace Program
             }
         }
 
-        static T[] SwapTwoElementArray<T>(T[] array)
-        {
-            if (array == null)
-                return null;
-
-            T[] result = new T[2];
-            result[0] = array[1];
-            result[1] = array[0];
-            return result;
+        private static void InsertHistogram(
+           HtmlRenderer htmlWriter,
+           string title,           
+           string xAxisLabel,
+           HistogramData data)
+        {                     
+            htmlWriter.InsertLineGraph(
+                        title,
+                        "Turn",
+                        xAxisLabel,                        
+                        data.GetXAxis(),
+                        data.GetYAxis()                        
+                        );            
         }
 
         static double TiePercent(int tieCount, int numberOfGames)
@@ -375,30 +383,6 @@ namespace Program
         static double PlayerWinPercent(int player, int[] winnerCount, int numberOfGames)
         {
             return winnerCount[player] / (double)numberOfGames * 100;
-        }
-
-        class CountByBucket
-        {
-            int totalCount = 0;
-            Dictionary<int, int> mapBucketToCount = new Dictionary<int, int>();
-
-            public void AddOneToBucket(int bucket)
-            {
-                this.totalCount++;
-
-                int value = 0;
-                this.mapBucketToCount.TryGetValue(bucket, out value);
-                value += 1;
-                this.mapBucketToCount[bucket] = value;
-            }
-
-            public void WriteBuckets(System.IO.TextWriter writer)
-            {
-                foreach (var pair in this.mapBucketToCount.OrderByDescending(keyValuePair => keyValuePair.Key))
-                {
-                    writer.WriteLine("{0} points:   {2}% = {1}", pair.Key, pair.Value, (double)pair.Value / this.totalCount * 100);
-                }
-            }
-        }       
+        }              
     }            
 }

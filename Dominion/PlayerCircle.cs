@@ -102,6 +102,14 @@ namespace Dominion
             }            
         }
 
+        public PlayerState[] OriginalPlayerOrder
+        {
+            get
+            {
+                return this.players;
+            }
+        }
+
         public IEnumerable<PlayerState> AllPlayers
         {
             get

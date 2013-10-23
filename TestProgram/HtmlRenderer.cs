@@ -32,11 +32,31 @@ namespace Program
         public void InsertLineGraph(
             string title,
             string xAxisLabel,
+            string seriesLabel,            
+            int[] xAxis,
+            float[] seriesData)
+        {
+            InsertLineGraph(title, xAxisLabel, new string[] { seriesLabel }, xAxis, new float[][] { seriesData });
+        }
+
+        public void InsertLineGraph(
+            string title,
+            string xAxisLabel,
             string series1Label,
             string series2Label,
             int[] xAxis,
             float[] series1,
             float[] series2)
+        {
+            InsertLineGraph(title, xAxisLabel, new string[] { series1Label, series2Label }, xAxis, new float[][] { series1, series2 });
+        }
+
+        public void InsertLineGraph(
+            string title,
+            string xAxisLabel,
+            string[] seriesLabels,            
+            int[] xAxis,
+            float[][] seriesData)
         {
             int multiplesOfFifteen = (xAxis.Length + 14)/15;
 
@@ -49,10 +69,20 @@ namespace Program
             this.textWriter.Indent();
                 this.textWriter.WriteLine("var data = google.visualization.arrayToDataTable([");
                 this.textWriter.Indent();
-                    this.textWriter.WriteLine("['" + xAxisLabel + "', '" + series1Label + "', '" + series2Label + "'],");
-                    for (int seriesIndex = 0; seriesIndex < xAxis.Length; ++seriesIndex)
+                    this.textWriter.Write("['" + xAxisLabel + "'");
+                    for (int seriesIndex = 0; seriesIndex < seriesLabels.Length; ++seriesIndex)
                     {
-                        this.textWriter.WriteLine("[" + xAxis[seriesIndex] + ", " + series1[seriesIndex] + ", " + series2[seriesIndex] + "],");
+                        this.textWriter.Write(", '" + seriesLabels[seriesIndex] + "'");
+                    }
+                    this.textWriter.WriteLine("],");
+                    for (int dataIndex = 0; dataIndex < xAxis.Length; ++dataIndex)
+                    {
+                        this.textWriter.Write("[" + xAxis[dataIndex]);
+                        for (int seriesIndex = 0; seriesIndex < seriesData.Length; ++seriesIndex)
+                        {
+                            this.textWriter.Write(", " + seriesData[seriesIndex][dataIndex]);
+                        }
+                        this.textWriter.WriteLine("],");
                     }
                 this.textWriter.Unindent();
                 this.textWriter.WriteLine("]);");                                            
