@@ -52,14 +52,19 @@ namespace Program
             }
         }
 
-        public float[] GetAveragePerTurn(int playerIndex)
+        public float[] GetAveragePerTurn(int playerIndex, int throughTurn)
         {
+            if (throughTurn > PlayerTurnCount)
+            {
+                throw new Exception("There aren't that many turns");
+            }
+
             var totalGoldPerTurn = this.totalPerTurnByPlayer[playerIndex];
             var totalCountOfThisTurn = this.totalCountOfTurnPerPlayer[playerIndex];
 
-            float[] result = new float[totalGoldPerTurn.Count - 1];
+            float[] result = new float[throughTurn];
 
-            for (int turn = 1; turn < result.Length; ++turn)
+            for (int turn = 1; turn <= throughTurn; ++turn)
             {
                 result[turn - 1] = ((float)totalGoldPerTurn[turn]) / (totalCountOfThisTurn[turn] == 0 ? 1 : totalCountOfThisTurn[turn]);
             }

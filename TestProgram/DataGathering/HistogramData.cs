@@ -38,19 +38,40 @@ namespace Program
             }
         }
 
-        public int[] GetXAxis()
-        {
-            return this.mapBucketToCount.OrderBy(keyValuePair => keyValuePair.Key).Select(keyValuePair => keyValuePair.Key).ToArray();
+        public int GetXAxisValueCoveringUpTo(int threshhold)
+        {                        
+            float[] integratedData = GetYAxisIntegrated();
+            int dataPoint = 0;
+            for (; dataPoint < integratedData.Length-1; ++dataPoint)
+            {
+                if (integratedData[dataPoint] >= threshhold)
+                {                    
+                    break;
+                }
+            }
+
+            return GetXAxis()[dataPoint];
         }
 
-        public float[] GetYAxis()
+        public int[] GetXAxis(int threshHold = int.MaxValue)
         {
-            return this.mapBucketToCount.OrderBy(keyValuePair => keyValuePair.Key).Select(keyValuePair => (float)keyValuePair.Value / this.totalCount * 100).ToArray();
+            return this.mapBucketToCount.Where(keyValuePair => keyValuePair.Key <= threshHold)
+                                        .OrderBy(keyValuePair => keyValuePair.Key)
+                                        .Select(keyValuePair => keyValuePair.Key)
+                                        .ToArray();
         }
 
-        public float[] GetYAxisIntegrated()
+        public float[] GetYAxis(int threshHold = int.MaxValue)
         {
-            float[] result = this.GetYAxis();
+            return this.mapBucketToCount.Where(keyValuePair => keyValuePair.Key <= threshHold)
+                                        .OrderBy(keyValuePair => keyValuePair.Key)
+                                        .Select(keyValuePair => (float)keyValuePair.Value / this.totalCount * 100)
+                                        .ToArray();
+        }
+
+        public float[] GetYAxisIntegrated(int threshHold = int.MaxValue)
+        {
+            float[] result = this.GetYAxis(threshHold);
             for (int i = 1; i < result.Length; ++i)
             {
                 result[i] += result[i - 1];
