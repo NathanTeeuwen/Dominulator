@@ -326,7 +326,7 @@ namespace Program
             {
                 // write out HTML report summary
                 {
-                    using (var textWriter = new IndentedTextWriter(GetOuputFilename("SampleGraph.html")))
+                    using (var textWriter = new IndentedTextWriter(GetOuputFilename("Report.html")))
                     {
                         var htmlWriter = new HtmlRenderer(textWriter);
                         htmlWriter.Begin();
