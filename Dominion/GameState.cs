@@ -52,12 +52,13 @@ namespace Dominion
 
         public GameState(             
             IGameLog gameLog,
-            IPlayerAction[] players,
+            IPlayerAction[] playerActions,
+            int[] playerPositions,
             GameConfig gameConfig,
             Random random,
             IEnumerable<CardCountPair>[] startingDeckPerPlayer = null)
         {
-            int playerCount = players.Length;
+            int playerCount = playerActions.Length;
             this.gameLog = gameLog;
             this.cardGameSubset = gameConfig.cardGameSubset;
             this.supplyPiles = gameConfig.GetSupplyPiles(playerCount, random);
@@ -66,7 +67,7 @@ namespace Dominion
             this.mapCardToPile = new MapOfCardsForGameSubset<PileOfCards>(this.cardGameSubset);
             this.BuildMapOfCardToPile();
 
-            this.players = new PlayerCircle(playerCount, players, this.gameLog, random, this.cardGameSubset);
+            this.players = new PlayerCircle(playerCount, playerActions, playerPositions, this.gameLog, random, this.cardGameSubset);
 
             this.hasPileEverBeenGained = new MapPileOfCardsToProperty<bool>(this.supplyPiles);
             this.pileEmbargoTokenCount = new MapPileOfCardsToProperty<int>(this.supplyPiles);
@@ -80,7 +81,7 @@ namespace Dominion
             {
                 cardPile.ProtoTypeCard.DoSpecializedSetupIfInSupply(this);
             }
-        }
+        }        
 
         private void BuildMapOfCardToPile()
         {
@@ -92,10 +93,9 @@ namespace Dominion
         
         private void GainStartingCards(GameConfig gameConfig)
         {
-            for (int playerIndex = 0; playerIndex < this.players.PlayerCount; ++playerIndex)
-            {
-                PlayerState player = this.players[playerIndex];
-                foreach (CardCountPair pair in gameConfig.StartingDeck(playerIndex))
+            foreach (PlayerState player in this.players.AllPlayers)
+            {                 
+                foreach (CardCountPair pair in gameConfig.StartingDeck(player.PlayerIndex))
                 {
                     if (pair.Card.isShelter)
                     {

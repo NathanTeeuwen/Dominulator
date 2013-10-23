@@ -94,21 +94,15 @@ namespace Program
         }
 
         private void AddToCounterForPlayer(PlayerState playerState, int turn, int value, List<int>[] listPerPlayer)
-        {
-            int playerIndex = IndexForPlayerState(playerState);
-            List<int> list = listPerPlayer[playerIndex];
+        {            
+            List<int> list = listPerPlayer[playerState.PlayerIndex];
             while (list.Count <= turn)
             {
                 this.GrowListsBy1();
             }
 
             list[turn] += value;
-        }       
-
-        private int IndexForPlayerState(PlayerState playerState)
-        {
-            return playerState.PlayerIndex;
-        }        
+        }                    
     }
 
     public class StatsPerTurnGameLog

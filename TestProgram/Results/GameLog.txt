@@ -1,1096 +1,1028 @@
-BigMoneyDoubleWitch gained Copper.
-BigMoneyDoubleWitch gained Copper.
-BigMoneyDoubleWitch gained Copper.
-BigMoneyDoubleWitch gained Copper.
-BigMoneyDoubleWitch gained Copper.
-BigMoneyDoubleWitch gained Copper.
-BigMoneyDoubleWitch gained Copper.
-BigMoneyDoubleWitch gained Estate.
-BigMoneyDoubleWitch gained Estate.
-BigMoneyDoubleWitch gained Estate.
-HermitMarketSquare gained Copper.
-HermitMarketSquare gained Copper.
-HermitMarketSquare gained Copper.
-HermitMarketSquare gained Copper.
-HermitMarketSquare gained Copper.
-HermitMarketSquare gained Copper.
-HermitMarketSquare gained Copper.
-HermitMarketSquare gained Estate.
-HermitMarketSquare gained Estate.
-HermitMarketSquare gained Estate.
-BigMoneyDoubleWitch reshuffled
-BigMoneyDoubleWitch Drew Copper into hand.
-BigMoneyDoubleWitch Drew Copper into hand.
-BigMoneyDoubleWitch Drew Copper into hand.
-BigMoneyDoubleWitch Drew Estate into hand.
-BigMoneyDoubleWitch Drew Copper into hand.
-HermitMarketSquare reshuffled
-HermitMarketSquare Drew Estate into hand.
-HermitMarketSquare Drew Copper into hand.
-HermitMarketSquare Drew Copper into hand.
-HermitMarketSquare Drew Copper into hand.
-HermitMarketSquare Drew Estate into hand.
+BigMoneySingleWitch gained Copper.
+BigMoneySingleWitch gained Copper.
+BigMoneySingleWitch gained Copper.
+BigMoneySingleWitch gained Copper.
+BigMoneySingleWitch gained Copper.
+BigMoneySingleWitch gained Copper.
+BigMoneySingleWitch gained Copper.
+BigMoneySingleWitch gained Estate.
+BigMoneySingleWitch gained Estate.
+BigMoneySingleWitch gained Estate.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoneySingleWitch reshuffled
+BigMoneySingleWitch Drew Copper into hand.
+BigMoneySingleWitch Drew Copper into hand.
+BigMoneySingleWitch Drew Copper into hand.
+BigMoneySingleWitch Drew Estate into hand.
+BigMoneySingleWitch Drew Copper into hand.
+BigMoney reshuffled
+BigMoney Drew Estate into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Estate into hand.
 ROUND 1
 -------------
-BigMoneyDoubleWitch begins turn
+BigMoneySingleWitch begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDoubleWitch bought Silver.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoneySingleWitch bought Silver.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
-HermitMarketSquare begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  HermitMarketSquare Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  HermitMarketSquare Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  HermitMarketSquare Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  HermitMarketSquare bought Hermit.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Estate into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Estate(3), Hermit(1), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-BigMoneyDoubleWitch begins turn
+BigMoneySingleWitch begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDoubleWitch bought Silver.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch reshuffled
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoneySingleWitch bought Silver.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch reshuffled
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
-HermitMarketSquare begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  HermitMarketSquare Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  HermitMarketSquare Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  HermitMarketSquare Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  HermitMarketSquare Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  HermitMarketSquare bought Hermit.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare reshuffled
-  HermitMarketSquare Drew Estate into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Estate into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Estate(3), Hermit(2), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-BigMoneyDoubleWitch begins turn
+BigMoneySingleWitch begins turn
 With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyDoubleWitch Played Silver.
+  BigMoneySingleWitch Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleWitch bought Witch.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Silver(2), Witch(1), 
+  BigMoneySingleWitch bought Witch.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Silver(2), Witch(1), 
 
-HermitMarketSquare begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  HermitMarketSquare Played Copper.
-    +1 Coin = 1 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 2 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 3 all together.
-  HermitMarketSquare bought Hermit.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare Drew Estate into hand.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Estate(3), Hermit(3), 
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
 ROUND 4
 -------------
-BigMoneyDoubleWitch begins turn
+BigMoneySingleWitch begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDoubleWitch bought Silver.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch reshuffled
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Silver(3), Witch(1), 
+  BigMoneySingleWitch bought Silver.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch reshuffled
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Silver(3), Witch(1), 
 
-HermitMarketSquare begins turn
-With hand: Copper,Copper,Estate,Hermit,Hermit,
-  HermitMarketSquare Played Hermit.
-    HermitMarketSquare gained Hermit.
-  HermitMarketSquare Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  HermitMarketSquare Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Hermit.
-    HermitMarketSquare trashed Hermit.
-    HermitMarketSquare gained Madman.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Discarded Hermit.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare reshuffled
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Estate(3), Hermit(3), Madman(1), 
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
 ROUND 5
 -------------
-BigMoneyDoubleWitch begins turn
+BigMoneySingleWitch begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyDoubleWitch Played Silver.
+  BigMoneySingleWitch Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Silver.
+  BigMoneySingleWitch Played Silver.
     +2 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyDoubleWitch bought Witch.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Silver(3), Witch(2), 
+  BigMoneySingleWitch bought Gold.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Witch into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), Witch(1), 
 
-HermitMarketSquare begins turn
-With hand: Copper,Copper,Copper,Copper,Hermit,
-  HermitMarketSquare Played Hermit.
-    HermitMarketSquare gained Hermit.
-  HermitMarketSquare Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  HermitMarketSquare Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  HermitMarketSquare Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  HermitMarketSquare Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  HermitMarketSquare bought Hermit.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Hermit.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Estate into hand.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare Drew Madman into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Estate(3), Hermit(5), Madman(1), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), 
 
 ROUND 6
 -------------
-BigMoneyDoubleWitch begins turn
+BigMoneySingleWitch begins turn
 With hand: Copper,Copper,Estate,Estate,Witch,
-  BigMoneyDoubleWitch Played Witch.
-    BigMoneyDoubleWitch Drew Copper into hand.
-    BigMoneyDoubleWitch Drew Copper into hand.
-    HermitMarketSquare gained Curse.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Witch.
+    BigMoneySingleWitch Drew Copper into hand.
+    BigMoneySingleWitch Drew Copper into hand.
+    BigMoney gained Curse.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDoubleWitch bought Silver.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch reshuffled
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Silver(4), Witch(2), 
+  BigMoneySingleWitch bought Silver.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Witch.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch reshuffled
+  BigMoneySingleWitch Drew Gold into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), Witch(1), 
 
-HermitMarketSquare begins turn
-With hand: Copper,Copper,Estate,Hermit,Madman,
-  HermitMarketSquare Played Hermit.
-    HermitMarketSquare trashed Curse.
-    HermitMarketSquare gained Hermit.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 1 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 2 all together.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Hermit.
-    HermitMarketSquare trashed Hermit.
-    HermitMarketSquare gained Madman.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Discarded Madman.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Estate into hand.
-  HermitMarketSquare Drew Estate into hand.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare reshuffled
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Estate(3), Hermit(5), Madman(2), 
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(1), Estate(3), Gold(1), Silver(4), 
 
 ROUND 7
 -------------
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Estate,Silver,Silver,Silver,
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 6 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDoubleWitch bought Gold.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), Witch(2), 
+BigMoneySingleWitch begins turn
+With hand: Estate,Gold,Silver,Silver,Silver,
+  BigMoneySingleWitch Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneySingleWitch Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneySingleWitch Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneySingleWitch Played Silver.
+    +2 Coin = 9 all together.
+  BigMoneySingleWitch bought Gold.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Gold.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Witch into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), Witch(1), 
 
-HermitMarketSquare begins turn
-With hand: Copper,Estate,Estate,Hermit,Hermit,
-  HermitMarketSquare Played Hermit.
-    HermitMarketSquare gained Hermit.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 1 all together.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Hermit.
-    HermitMarketSquare trashed Hermit.
-    HermitMarketSquare gained Madman.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Discarded Hermit.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare Drew Madman into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Estate(3), Hermit(5), Madman(3), 
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(1), Estate(3), Gold(2), Silver(4), 
 
 ROUND 8
 -------------
-BigMoneyDoubleWitch begins turn
+BigMoneySingleWitch begins turn
 With hand: Copper,Copper,Estate,Silver,Witch,
-  BigMoneyDoubleWitch Played Witch.
-    BigMoneyDoubleWitch Drew Estate into hand.
-    BigMoneyDoubleWitch Drew Copper into hand.
-    HermitMarketSquare gained Curse.
-  BigMoneyDoubleWitch Played Silver.
+  BigMoneySingleWitch Played Witch.
+    BigMoneySingleWitch Drew Copper into hand.
+    BigMoneySingleWitch Drew Copper into hand.
+    BigMoney gained Curse.
+  BigMoneySingleWitch Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleWitch bought Silver.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch reshuffled
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(5), Witch(2), 
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneySingleWitch bought Gold.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Witch.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch reshuffled
+  BigMoneySingleWitch Drew Gold into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(4), Witch(1), 
 
-HermitMarketSquare begins turn
-With hand: Copper,Copper,Hermit,Hermit,Madman,
-  HermitMarketSquare Played Hermit.
-    HermitMarketSquare trashed Curse.
-    HermitMarketSquare gained Hermit.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 1 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 2 all together.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Hermit.
-    HermitMarketSquare trashed Hermit.
-    HermitMarketSquare gained Madman.
-  HermitMarketSquare Discarded Hermit.
-  HermitMarketSquare Discarded Madman.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Estate into hand.
-  HermitMarketSquare Drew Madman into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Estate(3), Hermit(5), Madman(4), 
+BigMoney begins turn
+With hand: Copper,Copper,Curse,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Curse.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(3), Silver(4), 
 
 ROUND 9
 -------------
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Copper,Silver,Witch,
-  BigMoneyDoubleWitch Played Witch.
-    BigMoneyDoubleWitch Drew Estate into hand.
-    BigMoneyDoubleWitch Drew Silver into hand.
-    HermitMarketSquare gained Curse.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
+BigMoneySingleWitch begins turn
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoneySingleWitch Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDoubleWitch bought Gold.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), Witch(2), 
+  BigMoneySingleWitch bought Gold.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Gold.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Gold into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(4), Witch(1), 
 
-HermitMarketSquare begins turn
-With hand: Copper,Copper,Copper,Estate,Madman,
-  HermitMarketSquare Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  HermitMarketSquare Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  HermitMarketSquare Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  HermitMarketSquare bought MarketSquare.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Discarded Madman.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare reshuffled
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew MarketSquare into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Curse(1), Estate(3), Hermit(5), Madman(4), MarketSquare(1), 
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Drew Estate into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(3), Silver(5), 
 
 ROUND 10
 -------------
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDoubleWitch bought Gold.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Gold into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), Witch(2), 
+BigMoneySingleWitch begins turn
+With hand: Estate,Gold,Silver,Silver,Silver,
+  BigMoneySingleWitch Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneySingleWitch Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneySingleWitch Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneySingleWitch Played Silver.
+    +2 Coin = 9 all together.
+  BigMoneySingleWitch bought Province.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Gold.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Gold into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Witch into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(4), Witch(1), 
 
-HermitMarketSquare begins turn
-With hand: Copper,Copper,Copper,Hermit,MarketSquare,
-  HermitMarketSquare Played MarketSquare.
-    +1 Actions = 1 all together.
-    +1 Buys = 2 all together.
-    HermitMarketSquare Drew Estate into hand.
-  HermitMarketSquare Played Hermit.
-    HermitMarketSquare gained MarketSquare.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 1 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 2 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 3 all together.
-  HermitMarketSquare bought MarketSquare.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Hermit.
-  HermitMarketSquare Discarded MarketSquare.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Madman into hand.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Curse(1), Estate(3), Hermit(5), Madman(4), MarketSquare(3), 
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(4), Silver(5), 
 
 ROUND 11
 -------------
-BigMoneyDoubleWitch begins turn
+BigMoneySingleWitch begins turn
 With hand: Copper,Copper,Gold,Silver,Witch,
-  BigMoneyDoubleWitch Played Witch.
-    BigMoneyDoubleWitch Drew Estate into hand.
-    BigMoneyDoubleWitch reshuffled
-    BigMoneyDoubleWitch Drew Copper into hand.
-    HermitMarketSquare gained Curse.
-  BigMoneyDoubleWitch Played Gold.
+  BigMoneySingleWitch Played Witch.
+    BigMoneySingleWitch Drew Copper into hand.
+    BigMoneySingleWitch Drew Copper into hand.
+    BigMoney gained Curse.
+  BigMoneySingleWitch Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Silver.
+  BigMoneySingleWitch Played Silver.
     +2 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 8 all together.
-  BigMoneyDoubleWitch bought Province.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Gold.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Gold into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(5), Witch(2), 
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneySingleWitch bought Province.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Gold.
+  BigMoneySingleWitch Discarded Witch.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch reshuffled
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Province into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Gold into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(4), Province(2), Silver(4), Witch(1), 
 
-HermitMarketSquare begins turn
-With hand: Copper,Copper,Copper,Hermit,Madman,
-  HermitMarketSquare Played Hermit.
-    HermitMarketSquare trashed Curse.
-    HermitMarketSquare gained MarketSquare.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 1 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 2 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 3 all together.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Hermit.
-    HermitMarketSquare trashed Hermit.
-    HermitMarketSquare gained Madman.
-  HermitMarketSquare Discarded Madman.
-  HermitMarketSquare Drew Estate into hand.
-  HermitMarketSquare Drew Madman into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Curse into hand.
-  HermitMarketSquare Drew Madman into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Curse(1), Estate(3), Hermit(4), Madman(5), MarketSquare(4), 
+BigMoney begins turn
+With hand: Copper,Copper,Curse,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Curse.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(5), Silver(5), 
 
 ROUND 12
 -------------
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Gold,Silver,Witch,
-  BigMoneyDoubleWitch Played Witch.
-    BigMoneyDoubleWitch Drew Estate into hand.
-    BigMoneyDoubleWitch Drew Silver into hand.
-    HermitMarketSquare gained Curse.
-  BigMoneyDoubleWitch Played Gold.
+BigMoneySingleWitch begins turn
+With hand: Estate,Estate,Gold,Province,Silver,
+  BigMoneySingleWitch Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Silver.
+  BigMoneySingleWitch Played Silver.
     +2 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyDoubleWitch bought Province.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Gold.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Gold into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(3), Province(2), Silver(5), Witch(2), 
+  BigMoneySingleWitch bought Silver.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Gold.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Discarded Province.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Gold into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(4), Province(2), Silver(5), Witch(1), 
 
-HermitMarketSquare begins turn
-With hand: Copper,Curse,Estate,Madman,Madman,
-  HermitMarketSquare Played Copper.
-    +1 Coin = 1 all together.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Curse.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Discarded Madman.
-  HermitMarketSquare Discarded Madman.
-  HermitMarketSquare Drew Estate into hand.
-  HermitMarketSquare Drew Madman into hand.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Curse(2), Estate(3), Hermit(4), Madman(5), MarketSquare(4), 
+BigMoney begins turn
+With hand: Copper,Curse,Estate,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(5), Silver(6), 
 
 ROUND 13
 -------------
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  BigMoneyDoubleWitch Played Gold.
+BigMoneySingleWitch begins turn
+With hand: Copper,Copper,Copper,Gold,Silver,
+  BigMoneySingleWitch Played Gold.
     +3 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Silver.
+  BigMoneySingleWitch Played Silver.
     +2 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyDoubleWitch Played Copper.
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneySingleWitch Played Copper.
     +1 Coin = 8 all together.
-  BigMoneyDoubleWitch bought Province.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Gold.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch reshuffled
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Gold into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(3), Province(3), Silver(5), Witch(2), 
+  BigMoneySingleWitch bought Province.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Gold.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Witch into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(4), Province(3), Silver(5), Witch(1), 
 
-HermitMarketSquare begins turn
-With hand: Estate,Hermit,Hermit,Hermit,Madman,
-  HermitMarketSquare Played Hermit.
-    HermitMarketSquare trashed Curse.
-    HermitMarketSquare gained MarketSquare.
-  HermitMarketSquare Discarded Hermit.
-    HermitMarketSquare trashed Hermit.
-    HermitMarketSquare gained Madman.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Discarded Hermit.
-  HermitMarketSquare Discarded Hermit.
-  HermitMarketSquare Discarded Madman.
-  HermitMarketSquare reshuffled
-  HermitMarketSquare Drew Estate into hand.
-  HermitMarketSquare Drew Madman into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Curse into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Curse(1), Estate(3), Hermit(3), Madman(6), MarketSquare(5), 
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(5), Province(1), Silver(6), 
 
 ROUND 14
 -------------
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  BigMoneyDoubleWitch Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyDoubleWitch bought Province.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Gold.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Drew Province into hand.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Estate(3), Gold(3), Province(4), Silver(5), Witch(2), 
+BigMoneySingleWitch begins turn
+With hand: Copper,Copper,Estate,Silver,Witch,
+  BigMoneySingleWitch Played Witch.
+    BigMoneySingleWitch Drew Province into hand.
+    BigMoneySingleWitch Drew Silver into hand.
+    BigMoney gained Curse.
+  BigMoneySingleWitch Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneySingleWitch Played Silver.
+    +2 Coin = 4 all together.
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneySingleWitch bought Duchy.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Witch.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Discarded Province.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Gold into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Gold into hand.
+  BigMoneySingleWitch reshuffled
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(3), Silver(5), Witch(1), 
 
-HermitMarketSquare begins turn
-With hand: Copper,Copper,Curse,Estate,Madman,
-  HermitMarketSquare Played Copper.
-    +1 Coin = 1 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 2 all together.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Curse.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Discarded Madman.
-  HermitMarketSquare Drew Madman into hand.
-  HermitMarketSquare Drew MarketSquare into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Curse(1), Estate(3), Hermit(3), Madman(6), MarketSquare(5), 
+BigMoney begins turn
+With hand: Copper,Gold,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Silver.
+    +2 Coin = 10 all together.
+  BigMoney Played Copper.
+    +1 Coin = 11 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(4), Estate(3), Gold(5), Province(2), Silver(6), 
 
 ROUND 15
 -------------
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Copper,Province,Silver,Witch,
-  BigMoneyDoubleWitch Played Witch.
-    BigMoneyDoubleWitch Drew Silver into hand.
-    BigMoneyDoubleWitch Drew Copper into hand.
-    HermitMarketSquare gained Curse.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyDoubleWitch Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyDoubleWitch bought Duchy.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Silver.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Discarded Province.
-  BigMoneyDoubleWitch Drew Witch into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch Drew Province into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Estate into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(3), Province(4), Silver(5), Witch(2), 
+BigMoneySingleWitch begins turn
+With hand: Copper,Copper,Gold,Gold,Silver,
+  BigMoneySingleWitch Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneySingleWitch Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneySingleWitch Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneySingleWitch bought Province.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Gold.
+  BigMoneySingleWitch Discarded Gold.
+  BigMoneySingleWitch Drew Province into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Gold into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(4), Silver(5), Witch(1), 
 
-HermitMarketSquare begins turn
-With hand: Copper,Copper,Hermit,Madman,MarketSquare,
-  HermitMarketSquare Played Copper.
-    +1 Coin = 1 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 2 all together.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Hermit.
-  HermitMarketSquare Discarded MarketSquare.
-  HermitMarketSquare Discarded Madman.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare Drew Madman into hand.
-  HermitMarketSquare Drew Madman into hand.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare Drew MarketSquare into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Curse(2), Estate(3), Hermit(3), Madman(6), MarketSquare(5), 
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Province,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Province.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(4), Duchy(1), Estate(3), Gold(5), Province(2), Silver(6), 
 
 ROUND 16
 -------------
-BigMoneyDoubleWitch begins turn
-With hand: Copper,Estate,Estate,Province,Witch,
-  BigMoneyDoubleWitch Played Witch.
-    BigMoneyDoubleWitch Drew Province into hand.
-    BigMoneyDoubleWitch Drew Copper into hand.
-    HermitMarketSquare gained Curse.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneyDoubleWitch Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Copper.
-  BigMoneyDoubleWitch Discarded Witch.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Estate.
-  BigMoneyDoubleWitch Discarded Province.
-  BigMoneyDoubleWitch Discarded Province.
-  BigMoneyDoubleWitch Drew Silver into hand.
-  BigMoneyDoubleWitch Drew Copper into hand.
-  BigMoneyDoubleWitch Drew Gold into hand.
-  BigMoneyDoubleWitch Drew Gold into hand.
-  BigMoneyDoubleWitch reshuffled
-  BigMoneyDoubleWitch Drew Duchy into hand.
-  BigMoneyDoubleWitch ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(3), Province(4), Silver(5), Witch(2), 
-
-HermitMarketSquare begins turn
-With hand: Hermit,Hermit,Madman,Madman,MarketSquare,
-  HermitMarketSquare Played Madman.
-    +2 Actions = 2 all together.
-    HermitMarketSquare returned Madman to its pile
-    HermitMarketSquare Drew Estate into hand.
-    HermitMarketSquare Drew Copper into hand.
-    HermitMarketSquare Drew Copper into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-  HermitMarketSquare Played Madman.
-    +2 Actions = 3 all together.
-    HermitMarketSquare returned Madman to its pile
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew Madman into hand.
-    HermitMarketSquare Drew Estate into hand.
-    HermitMarketSquare Drew Copper into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew Madman into hand.
-    HermitMarketSquare reshuffled
-    HermitMarketSquare Drew MarketSquare into hand.
-  HermitMarketSquare Played Madman.
-    +2 Actions = 4 all together.
-    HermitMarketSquare returned Madman to its pile
-    HermitMarketSquare Drew Hermit into hand.
-    HermitMarketSquare Drew Copper into hand.
-    HermitMarketSquare Drew Curse into hand.
-    HermitMarketSquare Drew Estate into hand.
-    HermitMarketSquare Drew Copper into hand.
-    HermitMarketSquare Drew Copper into hand.
-    HermitMarketSquare Drew Curse into hand.
-    HermitMarketSquare Drew Copper into hand.
-    HermitMarketSquare Drew Madman into hand.
-    HermitMarketSquare Drew Madman into hand.
-    HermitMarketSquare Drew Curse into hand.
-  HermitMarketSquare Played Hermit.
-    HermitMarketSquare trashed Curse.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-    HermitMarketSquare gained MarketSquare.
-  HermitMarketSquare Played Madman.
-    +2 Actions = 4 all together.
-    HermitMarketSquare returned Madman to its pile
-    HermitMarketSquare reshuffled
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-  HermitMarketSquare Played Hermit.
-    HermitMarketSquare trashed Curse.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-    HermitMarketSquare gained MarketSquare.
-  HermitMarketSquare Played Madman.
-    +2 Actions = 4 all together.
-    HermitMarketSquare returned Madman to its pile
-    HermitMarketSquare reshuffled
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew Gold into hand.
-  HermitMarketSquare Played Hermit.
-    HermitMarketSquare trashed Curse.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-      HermitMarketSquare Discarded MarketSquare.
-      HermitMarketSquare gained Gold.
-    HermitMarketSquare gained MarketSquare.
-  HermitMarketSquare Played Madman.
-    +2 Actions = 4 all together.
-    HermitMarketSquare returned Madman to its pile
-    HermitMarketSquare reshuffled
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew Gold into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-    HermitMarketSquare Drew MarketSquare into hand.
-  HermitMarketSquare Played MarketSquare.
-    +1 Actions = 4 all together.
-    +1 Buys = 2 all together.
-  HermitMarketSquare Played MarketSquare.
-    +1 Actions = 4 all together.
-    +1 Buys = 3 all together.
-  HermitMarketSquare Played MarketSquare.
-    +1 Actions = 4 all together.
-    +1 Buys = 4 all together.
-  HermitMarketSquare Played MarketSquare.
-    +1 Actions = 4 all together.
-    +1 Buys = 5 all together.
-  HermitMarketSquare Played MarketSquare.
-    +1 Actions = 4 all together.
-    +1 Buys = 6 all together.
-  HermitMarketSquare Played MarketSquare.
-    +1 Actions = 4 all together.
-    +1 Buys = 7 all together.
-  HermitMarketSquare Played MarketSquare.
-    +1 Actions = 4 all together.
-    +1 Buys = 8 all together.
-  HermitMarketSquare Played MarketSquare.
-    +1 Actions = 4 all together.
-    +1 Buys = 9 all together.
-  HermitMarketSquare Played Gold.
+BigMoneySingleWitch begins turn
+With hand: Copper,Estate,Gold,Province,Silver,
+  BigMoneySingleWitch Played Gold.
     +3 Coin = 3 all together.
-  HermitMarketSquare Played Gold.
+  BigMoneySingleWitch Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneySingleWitch bought Duchy.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Gold.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Discarded Province.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Duchy into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(4), Province(4), Silver(5), Witch(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Curse,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(4), Duchy(2), Estate(3), Gold(5), Province(2), Silver(6), 
+
+ROUND 17
+-------------
+BigMoneySingleWitch begins turn
+With hand: Copper,Copper,Duchy,Estate,Silver,
+  BigMoneySingleWitch Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneySingleWitch bought Estate.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Discarded Duchy.
+  BigMoneySingleWitch Drew Province into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Province into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(4), Province(4), Silver(5), Witch(1), 
+
+BigMoney begins turn
+With hand: Copper,Curse,Estate,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney bought Estate.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(4), Duchy(2), Estate(4), Gold(5), Province(2), Silver(6), 
+
+ROUND 18
+-------------
+BigMoneySingleWitch begins turn
+With hand: Copper,Estate,Province,Province,Silver,
+  BigMoneySingleWitch Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneySingleWitch bought Estate.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Discarded Province.
+  BigMoneySingleWitch Discarded Province.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Gold into hand.
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch Drew Witch into hand.
+  BigMoneySingleWitch reshuffled
+  BigMoneySingleWitch Drew Copper into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Duchy(2), Estate(5), Gold(4), Province(4), Silver(5), Witch(1), 
+
+BigMoney begins turn
+With hand: Copper,Curse,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Duchy into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Province into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(4), Duchy(3), Estate(4), Gold(5), Province(2), Silver(6), 
+
+ROUND 19
+-------------
+BigMoneySingleWitch begins turn
+With hand: Copper,Copper,Gold,Silver,Witch,
+  BigMoneySingleWitch Played Witch.
+    BigMoneySingleWitch Drew Copper into hand.
+    BigMoneySingleWitch Drew Gold into hand.
+    BigMoney gained Curse.
+  BigMoneySingleWitch Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneySingleWitch Played Gold.
     +3 Coin = 6 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 9 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 12 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 15 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 18 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 21 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 24 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 27 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 30 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 33 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 36 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 39 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 42 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 45 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 48 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 51 all together.
-  HermitMarketSquare Played Gold.
-    +3 Coin = 54 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 55 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 56 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 57 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 58 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 59 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 60 all together.
-  HermitMarketSquare Played Copper.
-    +1 Coin = 61 all together.
-  HermitMarketSquare bought Province.
-  HermitMarketSquare bought Province.
-  HermitMarketSquare bought Province.
-  HermitMarketSquare bought Province.
-  HermitMarketSquare bought Duchy.
-  HermitMarketSquare bought Duchy.
-  HermitMarketSquare bought Duchy.
-  HermitMarketSquare bought Duchy.
-  HermitMarketSquare bought Duchy.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Copper.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Gold.
-  HermitMarketSquare Discarded Hermit.
-  HermitMarketSquare Discarded Hermit.
-  HermitMarketSquare Discarded Hermit.
-  HermitMarketSquare Discarded MarketSquare.
-  HermitMarketSquare Discarded MarketSquare.
-  HermitMarketSquare Discarded MarketSquare.
-  HermitMarketSquare Discarded MarketSquare.
-  HermitMarketSquare Discarded MarketSquare.
-  HermitMarketSquare Discarded MarketSquare.
-  HermitMarketSquare Discarded MarketSquare.
-  HermitMarketSquare Discarded MarketSquare.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare Discarded Estate.
-  HermitMarketSquare reshuffled
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare Drew Duchy into hand.
-  HermitMarketSquare Drew Hermit into hand.
-  HermitMarketSquare Drew Province into hand.
-  HermitMarketSquare Drew Copper into hand.
-  HermitMarketSquare ends turn with deck: Copper(7), Duchy(5), Estate(3), Gold(18), Hermit(3), MarketSquare(8), Province(4), 
+  BigMoneySingleWitch Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneySingleWitch Played Copper.
+    +1 Coin = 11 all together.
+  BigMoneySingleWitch bought Province.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Copper.
+  BigMoneySingleWitch Discarded Silver.
+  BigMoneySingleWitch Discarded Gold.
+  BigMoneySingleWitch Discarded Gold.
+  BigMoneySingleWitch Discarded Witch.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Estate into hand.
+  BigMoneySingleWitch Drew Duchy into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Duchy(2), Estate(5), Gold(4), Province(5), Silver(5), Witch(1), 
 
-Game ended in 16 turns.
-HermitMarketSquare Won!
-BigMoneyDoubleWitch total score: 30
-  Copper(7), Duchy(1), Estate(3), Gold(3), Province(4), Silver(5), Witch(2), 
-HermitMarketSquare total score: 42
-  Copper(7), Duchy(5), Estate(3), Gold(18), Hermit(3), MarketSquare(8), Province(4), 
-Trash contains: Curse(7), Hermit(6), 
+BigMoney begins turn
+With hand: Curse,Duchy,Estate,Province,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney bought Estate.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Duchy.
+  BigMoney Discarded Province.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(5), Duchy(3), Estate(5), Gold(5), Province(2), Silver(6), 
 
-BigMoneyDoubleWitch GainSequence is:
-  Silver, Silver, Witch, Silver, Witch, 
-  Silver, Gold, Silver, Gold, Gold, 
-  Province, Province, Province, Province, Duchy, 
+ROUND 20
+-------------
+BigMoneySingleWitch begins turn
+With hand: Duchy,Estate,Estate,Estate,Estate,
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Discarded Estate.
+  BigMoneySingleWitch Discarded Duchy.
+  BigMoneySingleWitch Drew Province into hand.
+  BigMoneySingleWitch Drew Gold into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Silver into hand.
+  BigMoneySingleWitch Drew Duchy into hand.
+  BigMoneySingleWitch ends turn with deck: Copper(7), Duchy(2), Estate(5), Gold(4), Province(5), Silver(5), Witch(1), 
 
-HermitMarketSquare GainSequence is:
-  Hermit, Hermit, Hermit, Hermit, Madman, 
-  Hermit, Hermit, Curse, Hermit, Madman, 
-  Hermit, Madman, Curse, Hermit, Madman, 
-  Curse, MarketSquare, MarketSquare, MarketSquare, Curse, 
-  MarketSquare, Madman, Curse, MarketSquare, Madman, 
-  Curse, Curse, Gold, Gold, Gold, 
-  Gold, Gold, MarketSquare, Gold, Gold, 
-  Gold, Gold, Gold, Gold, MarketSquare, 
-  Gold, Gold, Gold, Gold, Gold, 
-  Gold, Gold, MarketSquare, Province, Province, 
-  Province, Province, Duchy, Duchy, Duchy, 
-  Duchy, Duchy, 
+BigMoney begins turn
+With hand: Copper,Gold,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Silver.
+    +2 Coin = 10 all together.
+  BigMoney Played Copper.
+    +1 Coin = 11 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Duchy into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(5), Duchy(3), Estate(5), Gold(5), Province(3), Silver(6), 
+
+Game ended in 20 turns.
+BigMoneySingleWitch Won!
+BigMoneySingleWitch total score: 41
+  Copper(7), Duchy(2), Estate(5), Gold(4), Province(5), Silver(5), Witch(1), 
+BigMoney total score: 27
+  Copper(7), Curse(5), Duchy(3), Estate(5), Gold(5), Province(3), Silver(6), 
+Trash contains: 
+
+BigMoneySingleWitch GainSequence is:
+  Silver, Silver, Witch, Silver, Gold, 
+  Silver, Gold, Gold, Gold, Province, 
+  Province, Silver, Province, Duchy, Province, 
+  Duchy, Estate, Estate, Province, 
+BigMoney GainSequence is:
+  Silver, Silver, Gold, Silver, Curse, 
+  Silver, Gold, Curse, Gold, Silver, 
+  Gold, Curse, Gold, Silver, Province, 
+  Curse, Province, Duchy, Duchy, Estate, 
+  Duchy, Curse, Estate, Province, 

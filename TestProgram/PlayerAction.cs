@@ -15,8 +15,7 @@ namespace Program
     public class PlayerAction
         : UnimplementedPlayerAction
     {
-        internal readonly string name;
-        internal readonly int playerIndex = -1;
+        internal readonly string name;        
 
         internal readonly ICardPicker purchaseOrder;
         internal ICardPicker actionOrder; // readonly
@@ -53,12 +52,7 @@ namespace Program
 
             this.defaultCardResponses = new PlayerActionFromCardResponses(DefaultStrategies.DefaultResponses.GetCardResponses(this));
             this.defaultShouldPlay = DefaultStrategies.DefaultResponses.GetCardShouldPlayDefaults(this);
-        }        
-
-        public static int PlayIndexfor(PlayerState playerState)
-        {
-            return ((PlayerAction)playerState.Actions).playerIndex;
-        }        
+        }                
 
         public override Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
         {

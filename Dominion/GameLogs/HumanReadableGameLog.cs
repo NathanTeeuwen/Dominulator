@@ -182,7 +182,7 @@ namespace Dominion
                 this.textWriter.WriteLine("{0} GainSequence is:", player.actions.PlayerName);
                 this.PushScope();
                 int count = 0;
-                foreach(Card card in this.gainSequenceByPlayer[player.playerIndex])
+                foreach(Card card in this.gainSequenceByPlayer[player.PlayerIndex])
                 {
                     this.textWriter.Write("{0}, ", card.name);
                     if (++count == 5)

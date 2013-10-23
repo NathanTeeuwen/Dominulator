@@ -11,12 +11,14 @@ namespace Dominion
         private PlayerState[] players;   // circular list, higher numbers to the left;
         private int currentPlayerIndex;
 
-        public PlayerCircle(int playerCount, IPlayerAction[] players, IGameLog gameLog, Random random, CardGameSubset gameSubset)
+        public PlayerCircle(int playerCount, IPlayerAction[] playerActions, int[] playerPosition, IGameLog gameLog, Random random, CardGameSubset gameSubset)
         {
             this.players = new PlayerState[playerCount];
             for (int playerIndex = 0; playerIndex < this.players.Length; ++playerIndex)
             {
-                this.players[playerIndex] = new PlayerState(players[playerIndex], playerIndex, gameLog, random, gameSubset);
+                int playPosition = playerPosition[playerIndex];
+                IPlayerAction playerAction = playerActions[playerIndex];
+                this.players[playPosition] = new PlayerState(playerAction, playerIndex, gameLog, random, gameSubset);
             }
 
             this.currentPlayerIndex = 0;
@@ -85,10 +87,9 @@ namespace Dominion
 
         public void AllPlayersDrawInitialCards(GameConfig gameConfig)
         {
-            for (int playerIndex = 0; playerIndex < this.players.Length; ++playerIndex)
-            {
-                PlayerState playerState = this.players[playerIndex];
-                IEnumerable<CardCountPair> startingHand = gameConfig.StartingHand(playerIndex);
+            foreach (PlayerState playerState in this.players)
+            {                
+                IEnumerable<CardCountPair> startingHand = gameConfig.StartingHand(playerState.PlayerIndex);
 
                 if (startingHand == null)
                 {

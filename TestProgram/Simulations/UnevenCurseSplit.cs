@@ -133,7 +133,7 @@ namespace Program.Simulations
                 {
                     if (playerState.AllOwnedCards.Where(card => card == Cards.Witch).Any())
                     {
-                        this.was25split[PlayerAction.PlayIndexfor(playerState)] = true;
+                        this.was25split[playerState.PlayerIndex] = true;
                     }
                 }
             }
@@ -159,7 +159,7 @@ namespace Program.Simulations
 
                 if (gameState.WinningPlayers.Count() > 1)
                 {
-                    int playerIndex = PlayerAction.PlayIndexfor(gameState.WinningPlayers[0]);
+                    int playerIndex = gameState.WinningPlayers[0].PlayerIndex;
                     //winningPlayerWas25++;
                 }
             }

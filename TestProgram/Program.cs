@@ -16,8 +16,8 @@ namespace Program
             stopwatch.Start();
 
             //ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            ComparePlayers(Strategies.BigMoneyDoubleWitch.Player(), Strategies.HermitMarketSquare.Player(), useColonyAndPlatinum: true, firstPlayerAdvantage:true);
-            CompareStrategyVsAllKnownStrategies(Strategies.HermitMarketSquare.Player());
+            ComparePlayers(Strategies.BigMoneySingleWitch.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
+            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
             //TestAllCardsWithBigMoney();                      
             
             stopwatch.Stop();
@@ -213,11 +213,11 @@ namespace Program
             int logGameCount = 100,            
             CreateGameLog createGameLog = null)
         {
-            PlayerAction[] players = new PlayerAction[] { player1, player2 };
+            PlayerAction[] playerActions = new PlayerAction[] { player1, player2 };
+            int[] playerPositions = new int[] { 0, 1 };
+            int[] swappedPlayerPositions = new int[] { 1, 0 };
             int[] winnerCount = new int[2];
-            int tieCount = 0;
-
-            GameConfig swappedPlayersConfig = GameConfigBuilder.CreateFromWithPlayPositionsSwapped(gameConfig);
+            int tieCount = 0;            
 
             var statGatherer = new StatsPerTurnGameLog(2);
 
@@ -234,28 +234,23 @@ namespace Program
 
                     // swap order every other game
                     bool swappedOrder = !firstPlayerAdvantage && (gameCount % 2 == 1);
-                    PlayerAction startPlayer = !swappedOrder ? player1 : player2;
-                    PlayerAction otherPlayer = !swappedOrder ? player2 : player1;
-
-                    var gameConfigToUse = swappedOrder ? swappedPlayersConfig : gameConfig;
 
                     Random random = new Random(gameCount);
 
                     GameState gameState = new GameState(
                         gameLogMultiplexer,
-                        new PlayerAction[] { startPlayer, otherPlayer },
-                        gameConfigToUse,
+                        playerActions,
+                        swappedOrder ? swappedPlayerPositions : playerPositions,
+                        gameConfig,
                         random);
 
                     gameState.PlayGameToEnd();
 
                     PlayerState[] winners = gameState.WinningPlayers;
 
-                    int startPlayerScore = gameState.players[0].TotalScore();
-                    int otherPlayerScore = gameState.players[1].TotalScore();
-                    int scoreDifference = startPlayerScore - otherPlayerScore;
-                    if (swappedOrder)
-                        scoreDifference = -scoreDifference;
+                    int player1Score = gameState.players[0].TotalScore();
+                    int player2Score = gameState.players[1].TotalScore();
+                    int scoreDifference = player1Score - player2Score;                    
 
                     lock (winnerCount)
                     {
@@ -292,7 +287,7 @@ namespace Program
             {
                 for (int index = 0; index < winnerCount.Length; ++index)
                 {
-                    System.Console.WriteLine("{1}% win for {0}", players[index].name, PlayerWinPercent(index, winnerCount, numberOfGames));
+                    System.Console.WriteLine("{1}% win for {0}", playerActions[index].name, PlayerWinPercent(index, winnerCount, numberOfGames));
                 }
                 if (tieCount > 0)
                 {

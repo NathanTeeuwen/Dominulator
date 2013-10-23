@@ -12,14 +12,7 @@ namespace Dominion
         public bool useColonyAndPlatinum;        
         private Card[] kingdomPiles;
         private MapPlayerGameConfigToCardSet startingDeck;
-        private MapPlayerGameConfigToCardSet startingHand;        
-
-        public static GameConfig CreateFromWithPlayPositionsSwapped(GameConfig gameConfig)
-        {
-            var result = new GameConfigBuilder(gameConfig);
-            result.SwapPlayerOneAndTwo();
-            return result.ToGameConfig();
-        }
+        private MapPlayerGameConfigToCardSet startingHand;               
 
         public static GameConfig Create(StartingCardSplit split, params Card[] cards)
         {
@@ -205,30 +198,7 @@ namespace Dominion
             {
                 return cards[playerIndex];
             };
-        }
-
-        static MapPlayerGameConfigToCardSet SwapPlayersInSet(MapPlayerGameConfigToCardSet original)
-        {
-            return delegate(int playerIndex, GameConfig gameConfig)
-            {
-                if (playerIndex == 0)
-                {
-                    return original(1, gameConfig);
-                }
-                else if (playerIndex == 1)
-                {
-                    return original(0, gameConfig);
-                }
-                else
-                    throw new Exception("Only expected 2 players");
-            };
-        }
-
-        private void SwapPlayerOneAndTwo()
-        {
-            this.startingDeck = SwapPlayersInSet(this.startingDeck);
-            this.startingHand = SwapPlayersInSet(this.startingHand);
-        }
+        }                
     }
 
 
