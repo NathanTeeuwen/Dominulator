@@ -15,16 +15,19 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Treasury), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
-            //TestAllCardsWithBigMoney();
+            //ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
+            ComparePlayers(Strategies.BigMoneyDoubleWitch.Player(), Strategies.HermitMarketSquare.Player(), useColonyAndPlatinum: true, firstPlayerAdvantage:true);
+            CompareStrategyVsAllKnownStrategies(Strategies.HermitMarketSquare.Player());
+            //TestAllCardsWithBigMoney();                      
             
             stopwatch.Stop();
 
-            System.Console.WriteLine("");
-            System.Console.WriteLine("Elapsed Time per game: {0}us", stopwatch.ElapsedMilliseconds * 1000 / totalGameCount);
-            System.Console.WriteLine("Elapsed Time per Players Turn: {0}ns", (int)((double) stopwatch.ElapsedTicks / System.Diagnostics.Stopwatch.Frequency * 1000 * 1000 * 1000 / GameState.turnTotalCount));
+            if (totalGameCount > 0)
+            {
+                System.Console.WriteLine("");
+                System.Console.WriteLine("Elapsed Time per game: {0}us", stopwatch.ElapsedMilliseconds * 1000 / totalGameCount);
+                System.Console.WriteLine("Elapsed Time per Players Turn: {0}ns", (int)((double)stopwatch.ElapsedTicks / System.Diagnostics.Stopwatch.Frequency * 1000 * 1000 * 1000 / GameState.turnTotalCount));
+            }
         }        
 
         static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false, int numberOfGames = 1000)
@@ -53,7 +56,7 @@ namespace Program
                 if (otherPlayerAction == null)
                     continue;
 
-                double percentDiff = ComparePlayers(playerAction, otherPlayerAction, shouldParallel: shouldParallel, useShelters: useShelters, logGameCount: 0, numberOfGames: numberOfGames, useColonyAndPlatinum: true);
+                double percentDiff = ComparePlayers(playerAction, otherPlayerAction, shouldParallel: shouldParallel, useShelters: useShelters, logGameCount: 0, numberOfGames: numberOfGames, useColonyAndPlatinum: true, createHtmlReport: false);
 
                 resultList.Add( new System.Tuple<string,double>(otherPlayerAction.PlayerName, percentDiff));
             }            
@@ -84,7 +87,7 @@ namespace Program
 
                     var playerAction = Strategies.BigMoneyWithCard.Player(card, "BigMoney<" + card.name + ">");
 
-                    ComparePlayers(playerAction, bigMoneyPlayer, numberOfGames:100, shouldParallel:true);
+                    ComparePlayers(playerAction, bigMoneyPlayer, numberOfGames:100, shouldParallel:true, createHtmlReport:false);
                 }
             }
         }
@@ -136,7 +139,12 @@ namespace Program
         
         static IGameLog GetGameLogForIteration(int gameCount)
         {
-            return new HumanReadableGameLog("..\\..\\Results\\GameLog" + (gameCount == 0 ? "" : gameCount.ToString()) + ".txt");
+            return new HumanReadableGameLog(GetOuputFilename("GameLog" + (gameCount == 0 ? "" : gameCount.ToString()) + ".txt"));
+        }
+
+        static string GetOuputFilename(string filename)
+        {
+            return "..\\..\\Results\\" + filename;
         }
 
         public delegate IGameLog CreateGameLog();
@@ -156,6 +164,7 @@ namespace Program
             bool showCompactScore = false,
             bool showDistribution = false,
             bool showPlayer2Wins = false,
+            bool createHtmlReport = true,
             int numberOfGames = 1000,
             int logGameCount = 100,
             CreateGameLog createGameLog = null)
@@ -183,6 +192,7 @@ namespace Program
                 showCompactScore: showCompactScore,
                 showDistribution: showDistribution,
                 showPlayer2Wins: showPlayer2Wins,
+                createHtmlReport: createHtmlReport,
                 numberOfGames: numberOfGames,
                 logGameCount: logGameCount,
                 createGameLog: createGameLog);
@@ -198,36 +208,41 @@ namespace Program
             bool showCompactScore = false, 
             bool showDistribution = false,            
             bool showPlayer2Wins = false,
+            bool createHtmlReport = true,
             int numberOfGames = 1000, 
             int logGameCount = 100,            
             CreateGameLog createGameLog = null)
-        {            
+        {
             PlayerAction[] players = new PlayerAction[] { player1, player2 };
             int[] winnerCount = new int[2];
             int tieCount = 0;
 
-            GameConfig swappedPlayersConfig = GameConfigBuilder.CreateFromWithPlayPositionsSwapped(gameConfig);            
+            GameConfig swappedPlayersConfig = GameConfigBuilder.CreateFromWithPlayPositionsSwapped(gameConfig);
 
-            var countbyBucket = new CountByBucket();                        
+            var statGatherer = new StatsPerTurnGameLog(2);
 
-            Action<int> loopBody = delegate(int gameCount)                    
+            var countbyBucket = new CountByBucket();
+
+            Action<int> loopBody = delegate(int gameCount)
             {
                 System.Threading.Interlocked.Increment(ref totalGameCount);
                 using (IGameLog gameLog = createGameLog != null ? createGameLog() :
-                                          gameCount < logGameCount ? GetGameLogForIteration(gameCount) : 
-                                          new EmptyGameLog())                
+                                          gameCount < logGameCount ? GetGameLogForIteration(gameCount) :
+                                          new EmptyGameLog())
                 {
+                    IGameLog gameLogMultiplexer = createHtmlReport ? new GameLogMultiplexer(statGatherer, gameLog) : gameLog;
+
                     // swap order every other game
                     bool swappedOrder = !firstPlayerAdvantage && (gameCount % 2 == 1);
                     PlayerAction startPlayer = !swappedOrder ? player1 : player2;
                     PlayerAction otherPlayer = !swappedOrder ? player2 : player1;
 
-                    var gameConfigToUse = swappedOrder ? swappedPlayersConfig : gameConfig;                    
+                    var gameConfigToUse = swappedOrder ? swappedPlayersConfig : gameConfig;
 
-                    Random random = new Random(gameCount);                    
+                    Random random = new Random(gameCount);
 
                     GameState gameState = new GameState(
-                        gameLog,
+                        gameLogMultiplexer,
                         new PlayerAction[] { startPlayer, otherPlayer },
                         gameConfigToUse,
                         random);
@@ -247,9 +262,9 @@ namespace Program
                         countbyBucket.AddOneToBucket(scoreDifference);
                         if (winners.Length == 1)
                         {
-                            int winningPlayerIndex = winners[0].Actions == player1 ? 0 : 1; 
+                            int winningPlayerIndex = winners[0].Actions == player1 ? 0 : 1;
                             winnerCount[winningPlayerIndex]++;
-                            
+
                             if (winningPlayerIndex == 1 && showPlayer2Wins)
                             {
                                 System.Console.WriteLine("Player 2 won game {0}. ", gameCount);
@@ -273,7 +288,7 @@ namespace Program
                     loopBody(gameCount);
             }
 
-            if (showVerboseScore) 
+            if (showVerboseScore)
             {
                 for (int index = 0; index < winnerCount.Length; ++index)
                 {
@@ -302,8 +317,48 @@ namespace Program
                 countbyBucket.WriteBuckets(System.Console.Out);
             }
 
+            if (createHtmlReport)
+            {
+                // write out HTML report summary
+                {
+                    using (var textWriter = new IndentedTextWriter(GetOuputFilename("SampleGraph.html")))
+                    {
+                        var htmlWriter = new HtmlRenderer(textWriter);
+                        htmlWriter.Begin();
+                        InsertLineGraph(htmlWriter, "Average Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal);
+                        InsertLineGraph(htmlWriter, "Average Provinces Gained Per Turn", player1, player2, statGatherer.provincesGained);
+                        InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend);
+                        InsertLineGraph(htmlWriter, "Average Ruins Gained Per Turn", player1, player2, statGatherer.ruinsGained);
+                        InsertLineGraph(htmlWriter, "Average Curses Gained Per Turn", player1, player2, statGatherer.cursesGained);
+                        InsertLineGraph(htmlWriter, "Total Curses At Turn", player1, player2, statGatherer.cursesTotal);
+                        htmlWriter.End();
+                    }
+                }
+            }
+
             double diff = PlayerWinPercent(0, winnerCount, numberOfGames) - PlayerWinPercent(1, winnerCount, numberOfGames);
             return diff;
+        }
+
+        private static void InsertLineGraph(
+            HtmlRenderer htmlWriter,
+            string title,
+            PlayerAction player1,
+            PlayerAction player2,
+            PerTurnPlayerCounters counters)
+        {
+            if (counters.HasNonZeroData)
+            {
+                htmlWriter.InsertLineGraph(
+                            title,
+                            "Turn",
+                            player1.PlayerName,
+                            player2.PlayerName,
+                            Enumerable.Range(1, counters.PlayerTurnCount).ToArray(),
+                            counters.GetAveragePerTurn(0),
+                            counters.GetAveragePerTurn(1)
+                            );
+            }
         }
 
         static T[] SwapTwoElementArray<T>(T[] array)

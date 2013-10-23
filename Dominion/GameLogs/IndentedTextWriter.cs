@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-    internal class IndentedTextWriter
+    public class IndentedTextWriter
         : IDisposable
     {
         private bool isNewLine = true;
@@ -37,7 +37,14 @@ namespace Dominion
         public void WriteLine(string format, params object[] args)
         {
             IndentIfNewLine();
-            this.textWriter.WriteLine(format, args);
+            if (args.Length == 0)
+            {
+                this.textWriter.WriteLine("{0}", format);
+            }
+            else
+            {
+                this.textWriter.WriteLine(format, args);
+            }
             this.isNewLine = true;
         }
 

@@ -89,6 +89,7 @@
     <Compile Include="Collections\PileOfCards.cs" />
     <Compile Include="Collections\SetOfCards.cs" />
     <Compile Include="Collections\SingletonCardHolder.cs" />
+    <Compile Include="GameLogs\GameLogMultiplexer.cs" />
     <Compile Include="SimpleDefinitions\CardCountPair.cs" />
     <Compile Include="SimpleDefinitions\CardPlacementPair.cs" />
     <Compile Include="SimpleDefinitions\CardRelativeCost.cs" />

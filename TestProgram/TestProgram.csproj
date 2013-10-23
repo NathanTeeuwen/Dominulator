@@ -69,6 +69,7 @@
     <Compile Include="DefaultPlayRules\Cards\Rebuild.cs" />
     <Compile Include="DefaultPlayRules\Cards\Trader.cs" />
     <Compile Include="DefaultPlayRules\Cards\WatchTower.cs" />
+    <Compile Include="HtmlRenderer.cs" />
     <Compile Include="Kingdoms\ShouldRemakeOrHorseTradersIntoSoothayer.cs" />
     <Compile Include="PlayerActionFromCardResponses.cs" />
     <Compile Include="Simulations\DarkAgesBigMoney.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Simulations\HighestWinRateVsBigMoney.cs" />
     <Compile Include="Simulations\RebuildResults.cs" />
     <Compile Include="StartingDeckBuilder.cs" />
+    <Compile Include="StatsPerTurnGameLog.cs" />
     <Compile Include="Strategies\BigMoneyCultist.cs" />
     <Compile Include="Strategies\BigMoneyDelayed.cs" />
     <Compile Include="Strategies\BigMoneyDoubleSmithy.cs" />
