@@ -48,6 +48,14 @@ namespace Dominion
             this.mapCardIndexToResult = new T[gameSubset.CountOfCardTypesInGame];
         }
 
+        public CardGameSubset GameSubset
+        {
+            get
+            {
+                return this.gameSubset;
+            }
+        }
+
         public T this[Card card]
         {
             set

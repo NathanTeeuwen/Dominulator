@@ -25,6 +25,9 @@ namespace Program
             BeginTag("html");
             BeginTag("head");
             this.textWriter.WriteLine(@"<script type='text/javascript' src='https://www.google.com/jsapi'></script>");
+            this.BeginJavascriptTag();
+            this.textWriter.WriteLine("google.load('visualization', '1', {packages:['corechart']});");
+            this.EndTag();
             EndTag(); //head
             BeginTag("body");
         }
@@ -62,8 +65,7 @@ namespace Program
 
             int currentChartIndex = this.chartIndex++;
             this.textWriter.WriteLine("<div id='chart_div" + currentChartIndex + @"' style='width: 900px; height: 500px;'></div>");
-            this.BeginJavascriptTag();
-            this.textWriter.WriteLine("google.load('visualization', '1', {packages:['corechart']});");
+            this.BeginJavascriptTag();            
             this.textWriter.WriteLine("google.setOnLoadCallback(drawChart);");
             this.textWriter.WriteLine("function drawChart() {");
             this.textWriter.Indent();
@@ -132,14 +134,34 @@ namespace Program
             this.openTags.Push("script");
         }
 
-        private void BeginTag(string tag)
+        public void WriteLine()
+        {
+            this.WriteTag("br");
+            this.textWriter.WriteLine();
+        }
+
+        public void WriteLine(string text)
+        {
+            this.textWriter.Write(text);
+            this.WriteTag("br");
+            this.textWriter.WriteLine();
+        }
+
+        public void WriteLine(string text, params object[] args)
+        {
+            this.textWriter.Write(text, args);
+            this.WriteTag("br");
+            this.textWriter.WriteLine();
+        }
+
+        public void BeginTag(string tag)
         {
             WriteTag(tag);
             this.textWriter.Indent();
             this.openTags.Push(tag);
         }
 
-        private void EndTag()
+        public void EndTag()
         {
             this.textWriter.Unindent();
             this.WriteEndTag(this.openTags.Pop());

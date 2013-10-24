@@ -16,8 +16,8 @@ namespace Program
             stopwatch.Start();
 
             //ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            ComparePlayers(Strategies.BigMoneySingleWitch.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player());
+            ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneyWharf.Player(), useColonyAndPlatinum: true);
+            //CompareStrategyVsAllKnownStrategies(Strategies.LookoutSalvagerLibraryHighwayFestival.Player());
             //TestAllCardsWithBigMoney();                      
             
             stopwatch.Stop();
@@ -219,7 +219,7 @@ namespace Program
             int[] winnerCount = new int[2];
             int tieCount = 0;            
 
-            var statGatherer = new StatsPerTurnGameLog(2);
+            var statGatherer = new StatsPerTurnGameLog(2, gameConfig.cardGameSubset);
 
             var pointSpreadHistogramData = new HistogramData();
             var gameEndOnTurnHistogramData = new HistogramData();
@@ -330,6 +330,22 @@ namespace Program
                     {
                         var htmlWriter = new HtmlRenderer(textWriter);
                         htmlWriter.Begin();
+                        htmlWriter.BeginTag("h1");
+                        htmlWriter.WriteLine(player1.PlayerName + " VS " + player2.PlayerName);
+                        htmlWriter.EndTag();
+                        htmlWriter.WriteLine("Number of Games: " + numberOfGames);
+                        htmlWriter.WriteLine(firstPlayerAdvantage ? player1.PlayerName + " always started first" : "Players took turns going first");
+                        htmlWriter.WriteLine();
+                        for (int index = 0; index < winnerCount.Length; ++index)
+                        {
+                            htmlWriter.WriteLine("{1}% win for {0}", playerActions[index].name, PlayerWinPercent(index, winnerCount, numberOfGames));
+                        }
+                        if (tieCount > 0)
+                        {
+                            htmlWriter.WriteLine("{0}% there is a tie.", TiePercent(tieCount, numberOfGames));
+                        }
+                        htmlWriter.WriteLine();
+
                         InsertHistogram(htmlWriter, "Point Spread:  " + player1.PlayerName + " score <= 0 >= " + player2.PlayerName + " score", "Percentage", pointSpreadHistogramData, int.MaxValue);
                         InsertHistogram(htmlWriter, "Probablity of Game ending on Turn", "Percentage", gameEndOnTurnHistogramData, maxTurn);
                         InsertHistogramIntegrated(htmlWriter, "Probablity of Game being over by turn", "Percentage", gameEndOnTurnHistogramData, maxTurn);
@@ -339,7 +355,12 @@ namespace Program
                         InsertLineGraph(htmlWriter, "Average Ruins Gained Per Turn", player1, player2, statGatherer.ruinsGained, maxTurn);
                         InsertLineGraph(htmlWriter, "Average Curses Gained Per Turn", player1, player2, statGatherer.cursesGained, maxTurn);
                         InsertLineGraph(htmlWriter, "Average Curses Trashed Per Turn", player1, player2, statGatherer.cursesTrashed, maxTurn);
-                        InsertLineGraph(htmlWriter, "Total Curses At Turn", player1, player2, statGatherer.cursesTotal, maxTurn);                        
+
+                        foreach (Card card in gameConfig.cardGameSubset.OrderBy(c => c.DefaultCoinCost))
+                        {
+                            InsertLineGraph(htmlWriter, "Total Count Of " + card.name + " Card At Turn", player1, player2, statGatherer.cardsTotalCount[card], maxTurn);                        
+                        }
+                        
                         htmlWriter.End();
                     }
                 }

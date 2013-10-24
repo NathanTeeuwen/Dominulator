@@ -1,1028 +1,1032 @@
-BigMoneySingleWitch gained Copper.
-BigMoneySingleWitch gained Copper.
-BigMoneySingleWitch gained Copper.
-BigMoneySingleWitch gained Copper.
-BigMoneySingleWitch gained Copper.
-BigMoneySingleWitch gained Copper.
-BigMoneySingleWitch gained Copper.
-BigMoneySingleWitch gained Estate.
-BigMoneySingleWitch gained Estate.
-BigMoneySingleWitch gained Estate.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Copper.
-BigMoney gained Estate.
-BigMoney gained Estate.
-BigMoney gained Estate.
-BigMoneySingleWitch reshuffled
-BigMoneySingleWitch Drew Copper into hand.
-BigMoneySingleWitch Drew Copper into hand.
-BigMoneySingleWitch Drew Copper into hand.
-BigMoneySingleWitch Drew Estate into hand.
-BigMoneySingleWitch Drew Copper into hand.
-BigMoney reshuffled
-BigMoney Drew Estate into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Copper into hand.
-BigMoney Drew Estate into hand.
+LookoutSalvagerLibraryHighwayFestival gained Copper.
+LookoutSalvagerLibraryHighwayFestival gained Copper.
+LookoutSalvagerLibraryHighwayFestival gained Copper.
+LookoutSalvagerLibraryHighwayFestival gained Copper.
+LookoutSalvagerLibraryHighwayFestival gained Copper.
+LookoutSalvagerLibraryHighwayFestival gained Copper.
+LookoutSalvagerLibraryHighwayFestival gained Copper.
+LookoutSalvagerLibraryHighwayFestival gained Estate.
+LookoutSalvagerLibraryHighwayFestival gained Estate.
+LookoutSalvagerLibraryHighwayFestival gained Estate.
+BigMoneyWharf gained Copper.
+BigMoneyWharf gained Copper.
+BigMoneyWharf gained Copper.
+BigMoneyWharf gained Copper.
+BigMoneyWharf gained Copper.
+BigMoneyWharf gained Copper.
+BigMoneyWharf gained Copper.
+BigMoneyWharf gained Estate.
+BigMoneyWharf gained Estate.
+BigMoneyWharf gained Estate.
+LookoutSalvagerLibraryHighwayFestival reshuffled
+LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+BigMoneyWharf reshuffled
+BigMoneyWharf Drew Estate into hand.
+BigMoneyWharf Drew Copper into hand.
+BigMoneyWharf Drew Copper into hand.
+BigMoneyWharf Drew Copper into hand.
+BigMoneyWharf Drew Estate into hand.
 ROUND 1
 -------------
-BigMoneySingleWitch begins turn
+LookoutSalvagerLibraryHighwayFestival begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneySingleWitch Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 1 all together.
-  BigMoneySingleWitch Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 2 all together.
-  BigMoneySingleWitch Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 3 all together.
-  BigMoneySingleWitch Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 4 all together.
-  BigMoneySingleWitch bought Silver.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  LookoutSalvagerLibraryHighwayFestival bought Salvager.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(7), Estate(3), Salvager(1), 
 
-BigMoney begins turn
+BigMoneyWharf begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
     +1 Coin = 3 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoneyWharf bought Silver.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Estate into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-BigMoneySingleWitch begins turn
+LookoutSalvagerLibraryHighwayFestival begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneySingleWitch Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 1 all together.
-  BigMoneySingleWitch Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 2 all together.
-  BigMoneySingleWitch Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 3 all together.
-  BigMoneySingleWitch bought Silver.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch reshuffled
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  LookoutSalvagerLibraryHighwayFestival bought Lookout.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(7), Estate(3), Lookout(1), Salvager(1), 
 
-BigMoney begins turn
+BigMoneyWharf begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoneyWharf bought Silver.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf reshuffled
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-BigMoneySingleWitch begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneySingleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneySingleWitch Played Copper.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 1 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 2 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 3 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneySingleWitch bought Witch.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Silver(2), Witch(1), 
+  LookoutSalvagerLibraryHighwayFestival bought Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Lookout into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(7), Estate(3), Lookout(1), Salvager(1), Silver(1), 
 
-BigMoney begins turn
+BigMoneyWharf begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoney Played Silver.
+  BigMoneyWharf Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Silver.
+  BigMoneyWharf Played Silver.
     +2 Coin = 4 all together.
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
     +1 Coin = 5 all together.
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
     +1 Coin = 6 all together.
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
     +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+  BigMoneyWharf bought Gold.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Silver.
+  BigMoneyWharf Discarded Silver.
+  BigMoneyWharf Drew Estate into hand.
+  BigMoneyWharf Drew Estate into hand.
+  BigMoneyWharf Drew Estate into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
 ROUND 4
 -------------
-BigMoneySingleWitch begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneySingleWitch Played Copper.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Copper,Copper,Lookout,Salvager,
+  LookoutSalvagerLibraryHighwayFestival Played Lookout.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival Revealed Estate.
+    LookoutSalvagerLibraryHighwayFestival reshuffled
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+      LookoutSalvagerLibraryHighwayFestival trashed Estate.
+      LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+      LookoutSalvagerLibraryHighwayFestival Placed Copper on top of his deck.
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 1 all together.
-  BigMoneySingleWitch Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 2 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneySingleWitch bought Silver.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch reshuffled
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Silver(3), Witch(1), 
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Lookout.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(6), Estate(2), Lookout(1), Salvager(1), Silver(1), 
 
-BigMoney begins turn
+BigMoneyWharf begins turn
 With hand: Copper,Copper,Estate,Estate,Estate,
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf reshuffled
+  BigMoneyWharf Drew Estate into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
 ROUND 5
 -------------
-BigMoneySingleWitch begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneySingleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneySingleWitch Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneySingleWitch bought Gold.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Witch into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), Witch(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoney Played Copper.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 1 all together.
-  BigMoney Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 2 all together.
-  BigMoney Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 3 all together.
-  BigMoney Played Copper.
+  LookoutSalvagerLibraryHighwayFestival bought Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(6), Estate(2), Lookout(1), Salvager(1), Silver(2), 
+
+BigMoneyWharf begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoneyWharf Played Copper.
+    +1 Coin = 1 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 2 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWharf Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), 
+  BigMoneyWharf bought Silver.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Estate into hand.
+  BigMoneyWharf Drew Gold into hand.
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), 
 
 ROUND 6
 -------------
-BigMoneySingleWitch begins turn
-With hand: Copper,Copper,Estate,Estate,Witch,
-  BigMoneySingleWitch Played Witch.
-    BigMoneySingleWitch Drew Copper into hand.
-    BigMoneySingleWitch Drew Copper into hand.
-    BigMoney gained Curse.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 1 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 2 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneySingleWitch bought Silver.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Witch.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch reshuffled
-  BigMoneySingleWitch Drew Gold into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(4), Witch(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Estate,Silver,
-  BigMoney Played Silver.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Copper,Salvager,Silver,Silver,
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney Played Copper.
-    +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(1), Estate(3), Gold(1), Silver(4), 
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 5 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(5), Estate(2), Festival(1), Lookout(1), Salvager(1), Silver(2), 
+
+BigMoneyWharf begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoneyWharf Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWharf Played Silver.
+    +2 Coin = 5 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWharf bought Gold.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Silver.
+  BigMoneyWharf Discarded Gold.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Estate into hand.
+  BigMoneyWharf reshuffled
+  BigMoneyWharf Drew Gold into hand.
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(3), 
 
 ROUND 7
 -------------
-BigMoneySingleWitch begins turn
-With hand: Estate,Gold,Silver,Silver,Silver,
-  BigMoneySingleWitch Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleWitch Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneySingleWitch Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneySingleWitch Played Silver.
-    +2 Coin = 9 all together.
-  BigMoneySingleWitch bought Gold.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Gold.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Witch into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), Witch(1), 
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 1 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 2 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 3 all together.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Lookout into hand.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(5), Estate(2), Festival(1), Lookout(1), Salvager(1), Silver(2), 
 
-BigMoney begins turn
+BigMoneyWharf begins turn
 With hand: Copper,Estate,Gold,Silver,Silver,
-  BigMoney Played Gold.
+  BigMoneyWharf Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Silver.
+  BigMoneyWharf Played Silver.
     +2 Coin = 5 all together.
-  BigMoney Played Silver.
+  BigMoneyWharf Played Silver.
     +2 Coin = 7 all together.
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
     +1 Coin = 8 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(1), Estate(3), Gold(2), Silver(4), 
+  BigMoneyWharf bought Gold.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Silver.
+  BigMoneyWharf Discarded Silver.
+  BigMoneyWharf Discarded Gold.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Estate into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(3), 
 
 ROUND 8
 -------------
-BigMoneySingleWitch begins turn
-With hand: Copper,Copper,Estate,Silver,Witch,
-  BigMoneySingleWitch Played Witch.
-    BigMoneySingleWitch Drew Copper into hand.
-    BigMoneySingleWitch Drew Copper into hand.
-    BigMoney gained Curse.
-  BigMoneySingleWitch Played Silver.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Copper,Estate,Lookout,Silver,
+  LookoutSalvagerLibraryHighwayFestival Played Lookout.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
+      LookoutSalvagerLibraryHighwayFestival trashed Copper.
+      LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+      LookoutSalvagerLibraryHighwayFestival Placed Festival on top of his deck.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
     +2 Coin = 2 all together.
-  BigMoneySingleWitch Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 3 all together.
-  BigMoneySingleWitch Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 4 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneySingleWitch bought Gold.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Witch.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch reshuffled
-  BigMoneySingleWitch Drew Gold into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(4), Witch(1), 
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Lookout.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(4), Estate(2), Festival(1), Lookout(1), Salvager(1), Silver(2), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Curse,Silver,Silver,
-  BigMoney Played Silver.
+BigMoneyWharf begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoneyWharf Played Silver.
     +2 Coin = 2 all together.
-  BigMoney Played Silver.
-    +2 Coin = 4 all together.
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 4 all together.
+  BigMoneyWharf Played Copper.
     +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Curse.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(3), Silver(4), 
+  BigMoneyWharf bought Wharf.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Silver.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Gold into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Estate into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(3), Wharf(1), 
 
 ROUND 9
 -------------
-BigMoneySingleWitch begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
-  BigMoneySingleWitch Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneySingleWitch Played Copper.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Copper,Estate,Festival,Salvager,
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
+    +2 Coin = 2 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Estate.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 5 all together.
-  BigMoneySingleWitch Played Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 6 all together.
-  BigMoneySingleWitch bought Gold.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Gold.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Gold into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(4), Witch(1), 
+  LookoutSalvagerLibraryHighwayFestival bought Library.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Lookout into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(4), Estate(1), Festival(1), Library(1), Lookout(1), Salvager(1), Silver(2), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoney Played Copper.
-    +1 Coin = 1 all together.
-  BigMoney Played Copper.
-    +1 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney Played Copper.
+BigMoneyWharf begins turn
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoneyWharf Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWharf Played Copper.
     +1 Coin = 4 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Estate.
-  BigMoney Drew Estate into hand.
-  BigMoney reshuffled
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(3), Silver(5), 
+  BigMoneyWharf Played Copper.
+    +1 Coin = 5 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 6 all together.
+  BigMoneyWharf bought Gold.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Gold.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf reshuffled
+  BigMoneyWharf Drew Gold into hand.
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf Drew Estate into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Estate into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(3), Wharf(1), 
 
 ROUND 10
 -------------
-BigMoneySingleWitch begins turn
-With hand: Estate,Gold,Silver,Silver,Silver,
-  BigMoneySingleWitch Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleWitch Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneySingleWitch Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneySingleWitch Played Silver.
-    +2 Coin = 9 all together.
-  BigMoneySingleWitch bought Province.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Gold.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Gold into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Witch into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(4), Province(1), Silver(4), Witch(1), 
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Estate,Festival,Lookout,Silver,
+  LookoutSalvagerLibraryHighwayFestival Played Lookout.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Revealed Library.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+      LookoutSalvagerLibraryHighwayFestival trashed Copper.
+      LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+      LookoutSalvagerLibraryHighwayFestival Placed Library on top of his deck.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
+    +2 Coin = 2 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 5 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Lookout.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(3), Estate(1), Festival(2), Library(1), Lookout(1), Salvager(1), Silver(2), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoney Played Gold.
+BigMoneyWharf begins turn
+With hand: Copper,Estate,Estate,Gold,Silver,
+  BigMoneyWharf Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Silver.
+  BigMoneyWharf Played Silver.
     +2 Coin = 5 all together.
-  BigMoney Played Copper.
+  BigMoneyWharf Played Copper.
     +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(4), Silver(5), 
+  BigMoneyWharf bought Gold.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Silver.
+  BigMoneyWharf Discarded Gold.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf Drew Gold into hand.
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf Drew Gold into hand.
+  BigMoneyWharf Drew Wharf into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(5), Silver(3), Wharf(1), 
 
 ROUND 11
 -------------
-BigMoneySingleWitch begins turn
-With hand: Copper,Copper,Gold,Silver,Witch,
-  BigMoneySingleWitch Played Witch.
-    BigMoneySingleWitch Drew Copper into hand.
-    BigMoneySingleWitch Drew Copper into hand.
-    BigMoney gained Curse.
-  BigMoneySingleWitch Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleWitch Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneySingleWitch bought Province.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Gold.
-  BigMoneySingleWitch Discarded Witch.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch reshuffled
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Province into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Gold into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(4), Province(2), Silver(4), Witch(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Curse,Silver,Silver,
-  BigMoney Played Silver.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Festival,Library,Salvager,Silver,
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
     +2 Coin = 2 all together.
-  BigMoney Played Silver.
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
+    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Estate.
+    LookoutSalvagerLibraryHighwayFestival put Estate into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Lookout.
+    LookoutSalvagerLibraryHighwayFestival put Lookout into his hand.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
     +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Gold.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Curse.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(5), Silver(5), 
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 6 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 7 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 8 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Discarded Lookout.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(2), Estate(1), Festival(2), Highway(1), Library(1), Lookout(1), Salvager(1), Silver(2), 
+
+BigMoneyWharf begins turn
+With hand: Gold,Gold,Silver,Silver,Wharf,
+  BigMoneyWharf Played Wharf.
+    +1 Buys = 2 all together.
+    BigMoneyWharf Drew Copper into hand.
+    BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWharf Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyWharf Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyWharf Played Silver.
+    +2 Coin = 10 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 11 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 12 all together.
+  BigMoneyWharf bought Province.
+  BigMoneyWharf bought Silver.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Silver.
+  BigMoneyWharf Discarded Silver.
+  BigMoneyWharf Discarded Gold.
+  BigMoneyWharf Discarded Gold.
+  BigMoneyWharf Drew Gold into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Estate into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(4), Wharf(1), 
 
 ROUND 12
 -------------
-BigMoneySingleWitch begins turn
-With hand: Estate,Estate,Gold,Province,Silver,
-  BigMoneySingleWitch Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleWitch Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneySingleWitch bought Silver.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Gold.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Discarded Province.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Gold into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(4), Province(2), Silver(5), Witch(1), 
-
-BigMoney begins turn
-With hand: Copper,Curse,Estate,Silver,Silver,
-  BigMoney Played Silver.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Estate,Festival,Highway,Library,
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
     +2 Coin = 2 all together.
-  BigMoney Played Silver.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+    LookoutSalvagerLibraryHighwayFestival Revealed Salvager.
+    LookoutSalvagerLibraryHighwayFestival put Salvager into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Lookout.
+    LookoutSalvagerLibraryHighwayFestival put Lookout into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 3 all together.
     +2 Coin = 4 all together.
-  BigMoney Played Copper.
-    +1 Coin = 5 all together.
-  BigMoney bought Silver.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Estate.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(5), Silver(6), 
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Lookout.
+    +2 Coin = 6 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 8 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 9 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
+    +1 Coin = 10 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Highway.
+  LookoutSalvagerLibraryHighwayFestival bought Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(2), Estate(1), Festival(3), Highway(2), Library(1), Salvager(1), Silver(2), 
+
+BigMoneyWharf begins turn
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoneyWharf Finished Playing Wharf.
+    BigMoneyWharf Drew Copper into hand.
+    BigMoneyWharf reshuffled
+    BigMoneyWharf Drew Gold into hand.
+    +1 Buys = 2 all together.
+  BigMoneyWharf Played Gold.
+    +3 Coin = 3 all together.
+  BigMoneyWharf Played Gold.
+    +3 Coin = 6 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 7 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 10 all together.
+  BigMoneyWharf bought Province.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Gold.
+  BigMoneyWharf Discarded Gold.
+  BigMoneyWharf Discarded Wharf.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf Drew Gold into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf Drew Gold into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(5), Province(2), Silver(4), Wharf(1), 
 
 ROUND 13
 -------------
-BigMoneySingleWitch begins turn
-With hand: Copper,Copper,Copper,Gold,Silver,
-  BigMoneySingleWitch Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleWitch Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneySingleWitch Played Copper.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Festival,Library,Salvager,Silver,
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
+    +2 Coin = 2 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
+    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
+    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Estate.
+    LookoutSalvagerLibraryHighwayFestival put Estate into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
+    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 6 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Copper.
     +1 Coin = 7 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneySingleWitch bought Province.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Gold.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Witch into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Estate(3), Gold(4), Province(3), Silver(5), Witch(1), 
+  LookoutSalvagerLibraryHighwayFestival bought Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(1), Estate(1), Festival(4), Highway(2), Library(1), Salvager(1), Silver(2), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Estate,Gold,Gold,
-  BigMoney Played Gold.
+BigMoneyWharf begins turn
+With hand: Copper,Gold,Gold,Silver,Silver,
+  BigMoneyWharf Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Gold.
+  BigMoneyWharf Played Gold.
     +3 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney Played Copper.
-    +1 Coin = 8 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Estate.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(5), Province(1), Silver(6), 
+  BigMoneyWharf Played Silver.
+    +2 Coin = 8 all together.
+  BigMoneyWharf Played Silver.
+    +2 Coin = 10 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 11 all together.
+  BigMoneyWharf bought Province.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Silver.
+  BigMoneyWharf Discarded Silver.
+  BigMoneyWharf Discarded Gold.
+  BigMoneyWharf Discarded Gold.
+  BigMoneyWharf Drew Estate into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Estate into hand.
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf Drew Province into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(5), Province(3), Silver(4), Wharf(1), 
 
 ROUND 14
 -------------
-BigMoneySingleWitch begins turn
-With hand: Copper,Copper,Estate,Silver,Witch,
-  BigMoneySingleWitch Played Witch.
-    BigMoneySingleWitch Drew Province into hand.
-    BigMoneySingleWitch Drew Silver into hand.
-    BigMoney gained Curse.
-  BigMoneySingleWitch Played Silver.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Copper,Festival,Highway,Highway,Salvager,
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
     +2 Coin = 2 all together.
-  BigMoneySingleWitch Played Silver.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 3 all together.
+    +1 Buys = 3 all together.
     +2 Coin = 4 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 5 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneySingleWitch bought Duchy.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Witch.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Discarded Province.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Gold into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Gold into hand.
-  BigMoneySingleWitch reshuffled
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(3), Silver(5), Witch(1), 
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Copper.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 6 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Library.
+  LookoutSalvagerLibraryHighwayFestival bought Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Estate(1), Festival(5), Highway(2), Library(2), Salvager(1), Silver(2), 
 
-BigMoney begins turn
-With hand: Copper,Gold,Gold,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Silver.
-    +2 Coin = 8 all together.
-  BigMoney Played Silver.
-    +2 Coin = 10 all together.
-  BigMoney Played Copper.
-    +1 Coin = 11 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Province into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(4), Estate(3), Gold(5), Province(2), Silver(6), 
+BigMoneyWharf begins turn
+With hand: Copper,Estate,Estate,Province,Silver,
+  BigMoneyWharf Played Silver.
+    +2 Coin = 2 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 3 all together.
+  BigMoneyWharf bought Silver.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Silver.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf Discarded Estate.
+  BigMoneyWharf Discarded Province.
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf Drew Gold into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf reshuffled
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(5), Province(3), Silver(5), Wharf(1), 
 
 ROUND 15
 -------------
-BigMoneySingleWitch begins turn
-With hand: Copper,Copper,Gold,Gold,Silver,
-  BigMoneySingleWitch Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleWitch Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneySingleWitch Played Silver.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Estate,Festival,Festival,Library,Silver,
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
+    +2 Coin = 2 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 3 all together.
+    +1 Buys = 3 all together.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+    LookoutSalvagerLibraryHighwayFestival reshuffled
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
+    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
+    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Library.
+    LookoutSalvagerLibraryHighwayFestival put Library into his hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 2 all together.
+    LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 2 all together.
+    LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 3 all together.
+    +1 Buys = 4 all together.
+    +2 Coin = 6 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 4 all together.
+    +1 Buys = 5 all together.
     +2 Coin = 8 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneySingleWitch bought Province.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Gold.
-  BigMoneySingleWitch Discarded Gold.
-  BigMoneySingleWitch Drew Province into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Gold into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(4), Silver(5), Witch(1), 
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Estate.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 3 all together.
+    +1 Buys = 6 all together.
+    +2 Coin = 10 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 12 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 14 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Highway.
+  LookoutSalvagerLibraryHighwayFestival bought Highway.
+  LookoutSalvagerLibraryHighwayFestival bought Highway.
+  LookoutSalvagerLibraryHighwayFestival bought Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Festival(5), Highway(6), Library(2), Salvager(1), Silver(2), 
 
-BigMoney begins turn
-With hand: Copper,Copper,Gold,Province,Silver,
-  BigMoney Played Gold.
+BigMoneyWharf begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoneyWharf Played Gold.
     +3 Coin = 3 all together.
-  BigMoney Played Silver.
+  BigMoneyWharf Played Silver.
     +2 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Duchy.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Province.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(4), Duchy(1), Estate(3), Gold(5), Province(2), Silver(6), 
+  BigMoneyWharf Played Silver.
+    +2 Coin = 7 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 8 all together.
+  BigMoneyWharf Played Copper.
+    +1 Coin = 9 all together.
+  BigMoneyWharf bought Province.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Copper.
+  BigMoneyWharf Discarded Silver.
+  BigMoneyWharf Discarded Silver.
+  BigMoneyWharf Discarded Gold.
+  BigMoneyWharf Drew Province into hand.
+  BigMoneyWharf Drew Province into hand.
+  BigMoneyWharf Drew Copper into hand.
+  BigMoneyWharf Drew Silver into hand.
+  BigMoneyWharf Drew Gold into hand.
+  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(5), Province(4), Silver(5), Wharf(1), 
 
 ROUND 16
 -------------
-BigMoneySingleWitch begins turn
-With hand: Copper,Estate,Gold,Province,Silver,
-  BigMoneySingleWitch Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleWitch Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneySingleWitch bought Duchy.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Gold.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Discarded Province.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Duchy into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(4), Province(4), Silver(5), Witch(1), 
-
-BigMoney begins turn
-With hand: Copper,Copper,Curse,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney Played Copper.
-    +1 Coin = 7 all together.
-  BigMoney bought Duchy.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Curse.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(4), Duchy(2), Estate(3), Gold(5), Province(2), Silver(6), 
-
-ROUND 17
--------------
-BigMoneySingleWitch begins turn
-With hand: Copper,Copper,Duchy,Estate,Silver,
-  BigMoneySingleWitch Played Silver.
+LookoutSalvagerLibraryHighwayFestival begins turn
+With hand: Festival,Festival,Festival,Highway,Library,
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 1 all together.
+    LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 2 all together.
+    +1 Buys = 2 all together.
     +2 Coin = 2 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneySingleWitch bought Estate.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Discarded Duchy.
-  BigMoneySingleWitch Drew Province into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Province into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(4), Province(4), Silver(5), Witch(1), 
-
-BigMoney begins turn
-With hand: Copper,Curse,Estate,Estate,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney Played Copper.
-    +1 Coin = 3 all together.
-  BigMoney bought Estate.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Estate.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(4), Duchy(2), Estate(4), Gold(5), Province(2), Silver(6), 
-
-ROUND 18
--------------
-BigMoneySingleWitch begins turn
-With hand: Copper,Estate,Province,Province,Silver,
-  BigMoneySingleWitch Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneySingleWitch bought Estate.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Discarded Province.
-  BigMoneySingleWitch Discarded Province.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Gold into hand.
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch Drew Witch into hand.
-  BigMoneySingleWitch reshuffled
-  BigMoneySingleWitch Drew Copper into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Duchy(2), Estate(5), Gold(4), Province(4), Silver(5), Witch(1), 
-
-BigMoney begins turn
-With hand: Copper,Curse,Estate,Gold,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Silver.
-    +2 Coin = 5 all together.
-  BigMoney Played Copper.
-    +1 Coin = 6 all together.
-  BigMoney bought Duchy.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Estate.
-  BigMoney reshuffled
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Duchy into hand.
-  BigMoney Drew Curse into hand.
-  BigMoney Drew Estate into hand.
-  BigMoney Drew Province into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(4), Duchy(3), Estate(4), Gold(5), Province(2), Silver(6), 
-
-ROUND 19
--------------
-BigMoneySingleWitch begins turn
-With hand: Copper,Copper,Gold,Silver,Witch,
-  BigMoneySingleWitch Played Witch.
-    BigMoneySingleWitch Drew Copper into hand.
-    BigMoneySingleWitch Drew Gold into hand.
-    BigMoney gained Curse.
-  BigMoneySingleWitch Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneySingleWitch Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneySingleWitch Played Silver.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 3 all together.
+    +1 Buys = 3 all together.
+    +2 Coin = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 4 all together.
+    +1 Buys = 4 all together.
+    +2 Coin = 6 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 5 all together.
+    +1 Buys = 5 all together.
     +2 Coin = 8 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneySingleWitch Played Copper.
-    +1 Coin = 11 all together.
-  BigMoneySingleWitch bought Province.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Copper.
-  BigMoneySingleWitch Discarded Silver.
-  BigMoneySingleWitch Discarded Gold.
-  BigMoneySingleWitch Discarded Gold.
-  BigMoneySingleWitch Discarded Witch.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Estate into hand.
-  BigMoneySingleWitch Drew Duchy into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Duchy(2), Estate(5), Gold(4), Province(5), Silver(5), Witch(1), 
-
-BigMoney begins turn
-With hand: Curse,Duchy,Estate,Province,Silver,
-  BigMoney Played Silver.
-    +2 Coin = 2 all together.
-  BigMoney bought Estate.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Curse.
-  BigMoney Discarded Estate.
-  BigMoney Discarded Duchy.
-  BigMoney Discarded Province.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(5), Duchy(3), Estate(5), Gold(5), Province(2), Silver(6), 
-
-ROUND 20
--------------
-BigMoneySingleWitch begins turn
-With hand: Duchy,Estate,Estate,Estate,Estate,
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Discarded Estate.
-  BigMoneySingleWitch Discarded Duchy.
-  BigMoneySingleWitch Drew Province into hand.
-  BigMoneySingleWitch Drew Gold into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Silver into hand.
-  BigMoneySingleWitch Drew Duchy into hand.
-  BigMoneySingleWitch ends turn with deck: Copper(7), Duchy(2), Estate(5), Gold(4), Province(5), Silver(5), Witch(1), 
-
-BigMoney begins turn
-With hand: Copper,Gold,Gold,Silver,Silver,
-  BigMoney Played Gold.
-    +3 Coin = 3 all together.
-  BigMoney Played Gold.
-    +3 Coin = 6 all together.
-  BigMoney Played Silver.
-    +2 Coin = 8 all together.
-  BigMoney Played Silver.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+    LookoutSalvagerLibraryHighwayFestival Revealed Salvager.
+    LookoutSalvagerLibraryHighwayFestival put Salvager into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
+    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
+    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
+    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
+    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
+    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
+    LookoutSalvagerLibraryHighwayFestival Revealed Library.
+    LookoutSalvagerLibraryHighwayFestival put Library into his hand.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    +1 Actions = 4 all together.
+  LookoutSalvagerLibraryHighwayFestival Played Festival.
+    +2 Actions = 5 all together.
+    +1 Buys = 6 all together.
     +2 Coin = 10 all together.
-  BigMoney Played Copper.
-    +1 Coin = 11 all together.
-  BigMoney bought Province.
-  BigMoney Discarded Copper.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Silver.
-  BigMoney Discarded Gold.
-  BigMoney Discarded Gold.
-  BigMoney Drew Silver into hand.
-  BigMoney Drew Duchy into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney Drew Copper into hand.
-  BigMoney Drew Gold into hand.
-  BigMoney ends turn with deck: Copper(7), Curse(5), Duchy(3), Estate(5), Gold(5), Province(3), Silver(6), 
+  LookoutSalvagerLibraryHighwayFestival Played Salvager.
+    LookoutSalvagerLibraryHighwayFestival trashed Silver.
+  LookoutSalvagerLibraryHighwayFestival Played Library.
+  LookoutSalvagerLibraryHighwayFestival Played Silver.
+    +2 Coin = 12 all together.
+  LookoutSalvagerLibraryHighwayFestival bought Province.
+  LookoutSalvagerLibraryHighwayFestival bought Province.
+  LookoutSalvagerLibraryHighwayFestival bought Province.
+  LookoutSalvagerLibraryHighwayFestival bought Province.
+  LookoutSalvagerLibraryHighwayFestival bought Duchy.
+  LookoutSalvagerLibraryHighwayFestival bought Duchy.
+  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
+  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival Discarded Library.
+  LookoutSalvagerLibraryHighwayFestival reshuffled
+  LookoutSalvagerLibraryHighwayFestival Drew Duchy into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Province into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
+  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
+  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Duchy(2), Festival(5), Highway(6), Library(2), Province(4), Salvager(1), Silver(1), 
 
-Game ended in 20 turns.
-BigMoneySingleWitch Won!
-BigMoneySingleWitch total score: 41
-  Copper(7), Duchy(2), Estate(5), Gold(4), Province(5), Silver(5), Witch(1), 
-BigMoney total score: 27
-  Copper(7), Curse(5), Duchy(3), Estate(5), Gold(5), Province(3), Silver(6), 
-Trash contains: 
+Game ended in 16 turns.
+LookoutSalvagerLibraryHighwayFestival Won!
+LookoutSalvagerLibraryHighwayFestival total score: 30
+  Duchy(2), Festival(5), Highway(6), Library(2), Province(4), Salvager(1), Silver(1), 
+BigMoneyWharf total score: 27
+  Copper(7), Estate(3), Gold(5), Province(4), Silver(5), Wharf(1), 
+Trash contains: Copper(7), Estate(3), Lookout(1), Silver(1), 
 
-BigMoneySingleWitch GainSequence is:
-  Silver, Silver, Witch, Silver, Gold, 
-  Silver, Gold, Gold, Gold, Province, 
-  Province, Silver, Province, Duchy, Province, 
-  Duchy, Estate, Estate, Province, 
-BigMoney GainSequence is:
-  Silver, Silver, Gold, Silver, Curse, 
-  Silver, Gold, Curse, Gold, Silver, 
-  Gold, Curse, Gold, Silver, Province, 
-  Curse, Province, Duchy, Duchy, Estate, 
-  Duchy, Curse, Estate, Province, 
+LookoutSalvagerLibraryHighwayFestival GainSequence is:
+  Salvager, Lookout, Silver, Silver, Festival, 
+  Library, Festival, Highway, Highway, Festival, 
+  Festival, Library, Festival, Highway, Highway, 
+  Highway, Highway, Province, Province, Province, 
+  Province, Duchy, Duchy, 
+BigMoneyWharf GainSequence is:
+  Silver, Silver, Gold, Silver, Gold, 
+  Gold, Wharf, Gold, Gold, Province, 
+  Silver, Province, Province, Silver, Province, 
+

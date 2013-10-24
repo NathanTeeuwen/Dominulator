@@ -31,7 +31,14 @@ namespace Dominion
         public void Write(string format, params object[] args)
         {
             IndentIfNewLine();
-            this.textWriter.Write(format, args);
+            if (args.Length == 0)
+            {
+                this.textWriter.Write("{0}", format);
+            }
+            else
+            {
+                this.textWriter.Write(format, args);
+            }            
         }
 
         public void WriteLine(string format, params object[] args)

@@ -84,7 +84,7 @@ namespace Program
             
             public static PlayerAction Player()
             {
-                return BigMoneyWithCard.Player(Cards.Witch, "BigMoneySingleWitch");
+                return BigMoneyWithCard.Player(Cards.Witch, "BigMoneySingleWitch", afterGoldCount:0);
             }
         }
 
