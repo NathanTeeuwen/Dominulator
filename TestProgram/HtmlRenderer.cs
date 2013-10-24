@@ -60,6 +60,7 @@ namespace Program
             this.textWriter.Unindent();
             this.textWriter.WriteLine("});");
 
+            // collapse after initialziation so the graphs draw correctly
             if (collapseByDefault)
             {
                 this.textWriter.WriteLine("$(  '#" + divId + "').accordion( 'option', 'active', false);");
@@ -147,6 +148,45 @@ namespace Program
             this.textWriter.Unindent();
             this.textWriter.WriteLine("}");
             this.EndTag();            
+        }
+
+        public void InsertPieChart(
+           string title,
+           string labelTitle,           
+           string dataTitle,
+           string[] labels,
+           float[] data)
+        {
+            int currentChartIndex = this.divIndex++;
+            string divId = "chart_div" + currentChartIndex;
+
+            this.textWriter.WriteLine("<div id='" + divId + @"' style='width: 900px; height: 500px;'></div>");
+            this.BeginJavascriptTag();
+            this.textWriter.WriteLine("google.setOnLoadCallback(drawChart);");
+            this.textWriter.WriteLine("function drawChart() {");
+            this.textWriter.Indent();
+            this.textWriter.WriteLine("var data = google.visualization.arrayToDataTable([");
+            this.textWriter.Indent();
+            this.textWriter.Write("['" + labelTitle + "', '" + dataTitle + "'],");            
+            for (int dataIndex = 0; dataIndex < labels.Length; ++dataIndex)
+            {
+                this.textWriter.Write("['" + labels[dataIndex] + "', " + data[dataIndex] + "],");                
+            }
+            this.textWriter.Unindent();
+            this.textWriter.WriteLine("]);");
+            this.textWriter.WriteLine();
+            this.textWriter.WriteLine("var options = {");
+            this.textWriter.Indent();
+                this.textWriter.WriteLine("title: '" + title + "',");
+                this.textWriter.WriteLine("is3D: true");            
+            this.textWriter.Unindent();
+            this.textWriter.WriteLine("};");
+            this.textWriter.WriteLine();
+            this.textWriter.WriteLine("var chart = new google.visualization.PieChart(document.getElementById('" + divId + "'));");
+            this.textWriter.WriteLine("chart.draw(data, options);");
+            this.textWriter.Unindent();
+            this.textWriter.WriteLine("}");
+            this.EndTag();
         }
 
         public void End()

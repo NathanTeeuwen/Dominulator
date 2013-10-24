@@ -332,27 +332,32 @@ namespace Program
                         htmlWriter.Begin();
                         htmlWriter.Header1(player1.PlayerName + " VS " + player2.PlayerName);                        
                         htmlWriter.WriteLine("Number of Games: " + numberOfGames);
-                        htmlWriter.WriteLine(firstPlayerAdvantage ? player1.PlayerName + " always started first" : "Players took turns going first");
-                        htmlWriter.WriteLine();
+                        htmlWriter.WriteLine(firstPlayerAdvantage ? player1.PlayerName + " always started first" : "Players took turns going first");                       
+
+                        var pieLabels = new List<string>();
+                        var pieData = new List<float>();
+
                         for (int index = 0; index < winnerCount.Length; ++index)
                         {
-                            htmlWriter.WriteLine("{1}% win for {0}", playerActions[index].name, PlayerWinPercent(index, winnerCount, numberOfGames));
+                            pieLabels.Add(playerActions[index].name);
+                            pieData.Add((float)PlayerWinPercent(index, winnerCount, numberOfGames));
                         }
                         if (tieCount > 0)
                         {
-                            htmlWriter.WriteLine("{0}% there is a tie.", TiePercent(tieCount, numberOfGames));
-                        }
-                        htmlWriter.WriteLine();
-
+                            pieLabels.Add("Tie");
+                            pieData.Add((float)TiePercent(tieCount, numberOfGames));
+                        }                        
+                        
                         htmlWriter.InsertExpander("Who Won?", delegate()
                         {
-                            InsertHistogram(htmlWriter, "Point Spread:  " + player1.PlayerName + " score <= 0 >= " + player2.PlayerName + " score", "Percentage", pointSpreadHistogramData, int.MaxValue);
-                            InsertLineGraph(htmlWriter, "Average Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal, maxTurn);
-                        });                        
+                            InsertPieChart(htmlWriter, "Game Breakdown", "Player", "Percent", pieLabels.ToArray(), pieData.ToArray(), colllapsebyDefault:false);
+                            InsertHistogram(htmlWriter, "Point Spread:  " + player1.PlayerName + " score <= 0 >= " + player2.PlayerName + " score", "Percentage", pointSpreadHistogramData, int.MaxValue);                            
+                        }, collapseByDefault:false);                        
                         htmlWriter.InsertExpander("When does the game end?", delegate()
                         {
                             InsertHistogram(htmlWriter, "Probablity of Game ending on Turn", "Percentage", gameEndOnTurnHistogramData, maxTurn);
-                            InsertHistogramIntegrated(htmlWriter, "Probablity of Game being over by turn", "Percentage", gameEndOnTurnHistogramData, maxTurn);                            
+                            InsertHistogramIntegrated(htmlWriter, "Probablity of Game being over by turn", "Percentage", gameEndOnTurnHistogramData, maxTurn);
+                            InsertLineGraph(htmlWriter, "Average Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal, maxTurn);
                         });
                         InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn);
                         InsertLineGraph(htmlWriter, "Average Provinces Gained Per Turn", player1, player2, statGatherer.provincesGained, maxTurn);                        
@@ -366,7 +371,7 @@ namespace Program
                             {
                                 htmlWriter.InsertExpander(card.name, delegate()
                                 {
-                                    InsertLineGraph(htmlWriter, "Total Count At Turn", player1, player2, statGatherer.cardsTotalCount[card], maxTurn);
+                                    InsertLineGraph(htmlWriter, "Total Count At Turn", player1, player2, statGatherer.cardsTotalCount[card], maxTurn, colllapsebyDefault:false);
                                 });
                             }
                         }
@@ -386,7 +391,8 @@ namespace Program
             PlayerAction player1,
             PlayerAction player2,
             PerTurnPlayerCounters counters,
-            int throughTurn)
+            int throughTurn,
+            bool colllapsebyDefault = true)
         {
             if (counters.HasNonZeroData)
             {
@@ -402,9 +408,31 @@ namespace Program
                                 counters.GetAveragePerTurn(1, throughTurn)
                                 );
                 },
-                collapseByDefault: true);
+                collapseByDefault: colllapsebyDefault);
             }
         }
+
+        private static void InsertPieChart(
+           HtmlRenderer htmlWriter,
+           string title,
+           string labelTitle,
+           string dataTitle,
+           string[] labels,
+           float[] data,
+           bool colllapsebyDefault = true)
+        {
+            htmlWriter.InsertExpander(title, delegate()
+            {
+                htmlWriter.InsertPieChart(
+                            title,
+                            labelTitle,
+                            dataTitle,
+                            labels,
+                            data);
+            },
+            collapseByDefault: colllapsebyDefault);
+        }
+
 
         private static void InsertHistogram(
            HtmlRenderer htmlWriter,
