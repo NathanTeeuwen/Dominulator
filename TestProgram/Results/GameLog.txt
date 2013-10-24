@@ -1,1032 +1,922 @@
-LookoutSalvagerLibraryHighwayFestival gained Copper.
-LookoutSalvagerLibraryHighwayFestival gained Copper.
-LookoutSalvagerLibraryHighwayFestival gained Copper.
-LookoutSalvagerLibraryHighwayFestival gained Copper.
-LookoutSalvagerLibraryHighwayFestival gained Copper.
-LookoutSalvagerLibraryHighwayFestival gained Copper.
-LookoutSalvagerLibraryHighwayFestival gained Copper.
-LookoutSalvagerLibraryHighwayFestival gained Estate.
-LookoutSalvagerLibraryHighwayFestival gained Estate.
-LookoutSalvagerLibraryHighwayFestival gained Estate.
-BigMoneyWharf gained Copper.
-BigMoneyWharf gained Copper.
-BigMoneyWharf gained Copper.
-BigMoneyWharf gained Copper.
-BigMoneyWharf gained Copper.
-BigMoneyWharf gained Copper.
-BigMoneyWharf gained Copper.
-BigMoneyWharf gained Estate.
-BigMoneyWharf gained Estate.
-BigMoneyWharf gained Estate.
-LookoutSalvagerLibraryHighwayFestival reshuffled
-LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-BigMoneyWharf reshuffled
-BigMoneyWharf Drew Estate into hand.
-BigMoneyWharf Drew Copper into hand.
-BigMoneyWharf Drew Copper into hand.
-BigMoneyWharf Drew Copper into hand.
-BigMoneyWharf Drew Estate into hand.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Copper.
+Rebuild gained Estate.
+Rebuild gained Estate.
+Rebuild gained Estate.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Copper.
+RebuildAdvanced gained Estate.
+RebuildAdvanced gained Estate.
+RebuildAdvanced gained Estate.
+Rebuild reshuffled
+Rebuild Drew Copper into hand.
+Rebuild Drew Copper into hand.
+Rebuild Drew Copper into hand.
+Rebuild Drew Estate into hand.
+Rebuild Drew Copper into hand.
+RebuildAdvanced reshuffled
+RebuildAdvanced Drew Estate into hand.
+RebuildAdvanced Drew Copper into hand.
+RebuildAdvanced Drew Copper into hand.
+RebuildAdvanced Drew Copper into hand.
+RebuildAdvanced Drew Estate into hand.
 ROUND 1
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
+Rebuild begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 1 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 3 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Salvager.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(7), Estate(3), Salvager(1), 
+  Rebuild bought Silver.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Estate.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
-BigMoneyWharf begins turn
+RebuildAdvanced begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWharf bought Silver.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Estate into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  RebuildAdvanced bought Silver.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Estate.
+  RebuildAdvanced Discarded Estate.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Estate into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
+Rebuild begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 1 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 3 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Lookout.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(7), Estate(3), Lookout(1), Salvager(1), 
+  Rebuild bought Silver.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Estate.
+  Rebuild Discarded Estate.
+  Rebuild reshuffled
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
-BigMoneyWharf begins turn
+RebuildAdvanced begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWharf bought Silver.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf reshuffled
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  RebuildAdvanced bought Silver.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Estate.
+  RebuildAdvanced reshuffled
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 1 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 3 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Lookout into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(7), Estate(3), Lookout(1), Salvager(1), Silver(1), 
-
-BigMoneyWharf begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  BigMoneyWharf Played Silver.
+Rebuild begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWharf Played Silver.
-    +2 Coin = 4 all together.
-  BigMoneyWharf Played Copper.
+  Rebuild Played Copper.
+    +1 Coin = 3 all together.
+  Rebuild Played Copper.
+    +1 Coin = 4 all together.
+  Rebuild Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWharf Played Copper.
+  Rebuild bought Rebuild.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Silver.
+  Rebuild Discarded Estate.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Rebuild(1), Silver(2), 
+
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  RebuildAdvanced Played Silver.
+    +2 Coin = 2 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 4 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 5 all together.
+  RebuildAdvanced Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 7 all together.
-  BigMoneyWharf bought Gold.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Silver.
-  BigMoneyWharf Discarded Silver.
-  BigMoneyWharf Drew Estate into hand.
-  BigMoneyWharf Drew Estate into hand.
-  BigMoneyWharf Drew Estate into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+  RebuildAdvanced bought Rebuild.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Drew Estate into hand.
+  RebuildAdvanced Drew Estate into hand.
+  RebuildAdvanced Drew Estate into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Estate(3), Rebuild(1), Silver(2), 
 
 ROUND 4
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Copper,Lookout,Salvager,
-  LookoutSalvagerLibraryHighwayFestival Played Lookout.
-    +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
-    LookoutSalvagerLibraryHighwayFestival Revealed Estate.
-    LookoutSalvagerLibraryHighwayFestival reshuffled
-    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
-      LookoutSalvagerLibraryHighwayFestival trashed Estate.
-      LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-      LookoutSalvagerLibraryHighwayFestival Placed Copper on top of his deck.
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Copper.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+Rebuild begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  Rebuild Played Copper.
     +1 Coin = 1 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Lookout.
-  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(6), Estate(2), Lookout(1), Salvager(1), Silver(1), 
+  Rebuild Played Copper.
+    +1 Coin = 3 all together.
+  Rebuild bought Silver.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Estate.
+  Rebuild Discarded Estate.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild reshuffled
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Rebuild(1), Silver(3), 
 
-BigMoneyWharf begins turn
+RebuildAdvanced begins turn
 With hand: Copper,Copper,Estate,Estate,Estate,
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf reshuffled
-  BigMoneyWharf Drew Estate into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Estate.
+  RebuildAdvanced Discarded Estate.
+  RebuildAdvanced Discarded Estate.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced reshuffled
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Estate into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Estate(3), Rebuild(1), Silver(2), 
 
 ROUND 5
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 1 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 3 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(6), Estate(2), Lookout(1), Salvager(1), Silver(2), 
+Rebuild begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  Rebuild Played Silver.
+    +2 Coin = 2 all together.
+  Rebuild Played Silver.
+    +2 Coin = 4 all together.
+  Rebuild Played Copper.
+    +1 Coin = 5 all together.
+  Rebuild Played Copper.
+    +1 Coin = 6 all together.
+  Rebuild Played Copper.
+    +1 Coin = 7 all together.
+  Rebuild bought Rebuild.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Silver.
+  Rebuild Discarded Silver.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild ends turn with deck: Copper(7), Estate(3), Rebuild(2), Silver(3), 
 
-BigMoneyWharf begins turn
+RebuildAdvanced begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 1 all together.
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 2 all together.
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWharf bought Silver.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Estate into hand.
-  BigMoneyWharf Drew Gold into hand.
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), 
+  RebuildAdvanced bought Silver.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Estate.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Estate into hand.
+  RebuildAdvanced Drew Rebuild into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Estate(3), Rebuild(1), Silver(3), 
 
 ROUND 6
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Salvager,Silver,Silver,
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Copper.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 5 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(5), Estate(2), Festival(1), Lookout(1), Salvager(1), Silver(2), 
+Rebuild begins turn
+With hand: Copper,Copper,Estate,Estate,Rebuild,
+  Rebuild Played Rebuild.
+    +1 Actions = 1 all together.
+    Rebuild named Duchy.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Estate.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+    Rebuild trashed Estate.
+    Rebuild gained Duchy.
+  Rebuild Played Copper.
+    +1 Coin = 1 all together.
+  Rebuild Played Copper.
+    +1 Coin = 2 all together.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Rebuild.
+  Rebuild Discarded Estate.
+  Rebuild Discarded Estate.
+  Rebuild Drew Silver into hand.
+  Rebuild reshuffled
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(1), Estate(2), Rebuild(2), Silver(3), 
 
-BigMoneyWharf begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  BigMoneyWharf Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWharf Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWharf Played Copper.
-    +1 Coin = 6 all together.
-  BigMoneyWharf Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWharf bought Gold.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Silver.
-  BigMoneyWharf Discarded Gold.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Estate into hand.
-  BigMoneyWharf reshuffled
-  BigMoneyWharf Drew Gold into hand.
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(3), 
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Estate,Rebuild,Silver,
+  RebuildAdvanced Played Rebuild.
+    +1 Actions = 1 all together.
+    RebuildAdvanced named Duchy.
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Estate.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Silver.
+    RebuildAdvanced trashed Estate.
+    RebuildAdvanced gained Duchy.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 2 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 3 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 4 all together.
+  RebuildAdvanced bought Silver.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Rebuild.
+  RebuildAdvanced Discarded Estate.
+  RebuildAdvanced reshuffled
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(1), Estate(2), Rebuild(1), Silver(4), 
 
 ROUND 7
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 1 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 3 all together.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Lookout into hand.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(5), Estate(2), Festival(1), Lookout(1), Salvager(1), Silver(2), 
+Rebuild begins turn
+With hand: Copper,Estate,Silver,Silver,Silver,
+  Rebuild Played Silver.
+    +2 Coin = 2 all together.
+  Rebuild Played Silver.
+    +2 Coin = 4 all together.
+  Rebuild Played Silver.
+    +2 Coin = 6 all together.
+  Rebuild Played Copper.
+    +1 Coin = 7 all together.
+  Rebuild bought Rebuild.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Silver.
+  Rebuild Discarded Silver.
+  Rebuild Discarded Silver.
+  Rebuild Discarded Estate.
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(1), Estate(2), Rebuild(3), Silver(3), 
 
-BigMoneyWharf begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  BigMoneyWharf Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWharf Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWharf Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWharf Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWharf bought Gold.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Silver.
-  BigMoneyWharf Discarded Silver.
-  BigMoneyWharf Discarded Gold.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Estate into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(3), 
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Duchy,Silver,Silver,
+  RebuildAdvanced Played Silver.
+    +2 Coin = 2 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 4 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 5 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 6 all together.
+  RebuildAdvanced bought Rebuild.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Duchy.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Rebuild into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(1), Estate(2), Rebuild(2), Silver(4), 
 
 ROUND 8
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Estate,Lookout,Silver,
-  LookoutSalvagerLibraryHighwayFestival Played Lookout.
+Rebuild begins turn
+With hand: Copper,Copper,Duchy,Estate,Rebuild,
+  Rebuild Played Rebuild.
     +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
-    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
-    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
-      LookoutSalvagerLibraryHighwayFestival trashed Copper.
-      LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-      LookoutSalvagerLibraryHighwayFestival Placed Festival on top of his deck.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 3 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Lookout.
-  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(4), Estate(2), Festival(1), Lookout(1), Salvager(1), Silver(2), 
+    Rebuild named Duchy.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Rebuild.
+      Rebuild Revealed Copper.
+      Rebuild reshuffled
+      Rebuild Revealed Silver.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Rebuild.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Estate.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Silver.
+      Rebuild Discarded Silver.
+      Rebuild Discarded Silver.
+      Rebuild Discarded Rebuild.
+      Rebuild Discarded Rebuild.
+    Rebuild trashed Estate.
+    Rebuild gained Duchy.
+  Rebuild Played Copper.
+    +1 Coin = 1 all together.
+  Rebuild Played Copper.
+    +1 Coin = 2 all together.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Rebuild.
+  Rebuild Discarded Estate.
+  Rebuild Discarded Duchy.
+  Rebuild reshuffled
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(2), Estate(1), Rebuild(3), Silver(3), 
 
-BigMoneyWharf begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  BigMoneyWharf Played Silver.
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Rebuild,Silver,Silver,
+  RebuildAdvanced Played Rebuild.
+    +1 Actions = 1 all together.
+    RebuildAdvanced named Duchy.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Estate.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Copper.
+    RebuildAdvanced trashed Estate.
+    RebuildAdvanced gained Duchy.
+  RebuildAdvanced Played Silver.
     +2 Coin = 2 all together.
-  BigMoneyWharf Played Copper.
-    +1 Coin = 3 all together.
-  BigMoneyWharf Played Copper.
-    +1 Coin = 4 all together.
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 4 all together.
+  RebuildAdvanced Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWharf bought Wharf.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Silver.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Gold into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Estate into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(3), Wharf(1), 
+  RebuildAdvanced Played Copper.
+    +1 Coin = 6 all together.
+  RebuildAdvanced bought Duchy.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Rebuild.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Estate into hand.
+  RebuildAdvanced reshuffled
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(3), Estate(1), Rebuild(2), Silver(4), 
 
 ROUND 9
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Copper,Estate,Festival,Salvager,
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 2 all together.
-    +1 Buys = 2 all together.
+Rebuild begins turn
+With hand: Copper,Copper,Duchy,Rebuild,Silver,
+  Rebuild Played Rebuild.
+    +1 Actions = 1 all together.
+    Rebuild named Duchy.
+      Rebuild Revealed Rebuild.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Duchy.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Rebuild.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Estate.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Silver.
+      Rebuild Discarded Silver.
+      Rebuild Discarded Duchy.
+      Rebuild Discarded Rebuild.
+      Rebuild Discarded Rebuild.
+    Rebuild trashed Estate.
+    Rebuild gained Duchy.
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Estate.
-    +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 5 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 6 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Library.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Lookout into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(4), Estate(1), Festival(1), Library(1), Lookout(1), Salvager(1), Silver(2), 
-
-BigMoneyWharf begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
-  BigMoneyWharf Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWharf Played Copper.
+  Rebuild Played Copper.
+    +1 Coin = 3 all together.
+  Rebuild Played Copper.
     +1 Coin = 4 all together.
-  BigMoneyWharf Played Copper.
+  Rebuild bought Silver.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Silver.
+  Rebuild Discarded Rebuild.
+  Rebuild Discarded Duchy.
+  Rebuild reshuffled
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(3), Rebuild(3), Silver(4), 
+
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  RebuildAdvanced Played Silver.
+    +2 Coin = 2 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 4 all together.
+  RebuildAdvanced Played Copper.
     +1 Coin = 5 all together.
-  BigMoneyWharf Played Copper.
+  RebuildAdvanced Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyWharf bought Gold.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Gold.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf reshuffled
-  BigMoneyWharf Drew Gold into hand.
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf Drew Estate into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Estate into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(3), Wharf(1), 
+  RebuildAdvanced bought Duchy.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Estate.
+  RebuildAdvanced Drew Rebuild into hand.
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(4), Estate(1), Rebuild(2), Silver(4), 
 
 ROUND 10
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Estate,Festival,Lookout,Silver,
-  LookoutSalvagerLibraryHighwayFestival Played Lookout.
+Rebuild begins turn
+With hand: Copper,Copper,Rebuild,Silver,Silver,
+  Rebuild Played Rebuild.
     +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Revealed Library.
-    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
-    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
-      LookoutSalvagerLibraryHighwayFestival trashed Copper.
-      LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-      LookoutSalvagerLibraryHighwayFestival Placed Library on top of his deck.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 2 all together.
-    +1 Buys = 2 all together.
+    Rebuild named Province.
+      Rebuild Revealed Duchy.
+    Rebuild trashed Duchy.
+    Rebuild gained Province.
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
+  Rebuild Played Silver.
     +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 5 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Lookout.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(3), Estate(1), Festival(2), Library(1), Lookout(1), Salvager(1), Silver(2), 
-
-BigMoneyWharf begins turn
-With hand: Copper,Estate,Estate,Gold,Silver,
-  BigMoneyWharf Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWharf Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWharf Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 6 all together.
-  BigMoneyWharf bought Gold.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Silver.
-  BigMoneyWharf Discarded Gold.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf Drew Gold into hand.
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf Drew Gold into hand.
-  BigMoneyWharf Drew Wharf into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(5), Silver(3), Wharf(1), 
+  Rebuild bought Duchy.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Silver.
+  Rebuild Discarded Silver.
+  Rebuild Discarded Rebuild.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(3), Province(1), Rebuild(3), Silver(4), 
+
+RebuildAdvanced begins turn
+With hand: Duchy,Duchy,Rebuild,Silver,Silver,
+  RebuildAdvanced Played Rebuild.
+    +1 Actions = 1 all together.
+    RebuildAdvanced named Province.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Rebuild.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced Revealed Duchy.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Rebuild.
+    RebuildAdvanced trashed Duchy.
+    RebuildAdvanced gained Province.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 2 all together.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 4 all together.
+  RebuildAdvanced bought Silver.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Rebuild.
+  RebuildAdvanced Discarded Duchy.
+  RebuildAdvanced Discarded Duchy.
+  RebuildAdvanced reshuffled
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Rebuild into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(3), Estate(1), Province(1), Rebuild(2), Silver(5), 
 
 ROUND 11
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Festival,Library,Salvager,Silver,
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 2 all together.
-    +1 Buys = 2 all together.
+Rebuild begins turn
+With hand: Copper,Copper,Duchy,Silver,Silver,
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Copper.
-  LookoutSalvagerLibraryHighwayFestival Played Library.
-    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
-    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
-    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Estate.
-    LookoutSalvagerLibraryHighwayFestival put Estate into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
-    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
-    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Lookout.
-    LookoutSalvagerLibraryHighwayFestival put Lookout into his hand.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
+  Rebuild Played Silver.
     +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 6 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 7 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 8 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Highway.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
-  LookoutSalvagerLibraryHighwayFestival Discarded Library.
-  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-  LookoutSalvagerLibraryHighwayFestival Discarded Lookout.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(2), Estate(1), Festival(2), Highway(1), Library(1), Lookout(1), Salvager(1), Silver(2), 
+  Rebuild Played Copper.
+    +1 Coin = 5 all together.
+  Rebuild Played Copper.
+    +1 Coin = 6 all together.
+  Rebuild bought Estate.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Silver.
+  Rebuild Discarded Silver.
+  Rebuild Discarded Duchy.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(3), Estate(1), Province(1), Rebuild(3), Silver(4), 
 
-BigMoneyWharf begins turn
-With hand: Gold,Gold,Silver,Silver,Wharf,
-  BigMoneyWharf Played Wharf.
-    +1 Buys = 2 all together.
-    BigMoneyWharf Drew Copper into hand.
-    BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWharf Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyWharf Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyWharf Played Silver.
-    +2 Coin = 10 all together.
-  BigMoneyWharf Played Copper.
-    +1 Coin = 11 all together.
-  BigMoneyWharf Played Copper.
-    +1 Coin = 12 all together.
-  BigMoneyWharf bought Province.
-  BigMoneyWharf bought Silver.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Silver.
-  BigMoneyWharf Discarded Silver.
-  BigMoneyWharf Discarded Gold.
-  BigMoneyWharf Discarded Gold.
-  BigMoneyWharf Drew Gold into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Estate into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(4), Wharf(1), 
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Duchy,Rebuild,Silver,
+  RebuildAdvanced Played Rebuild.
+    +1 Actions = 1 all together.
+    RebuildAdvanced named Province.
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Estate.
+      RebuildAdvanced Discarded Silver.
+      RebuildAdvanced Discarded Silver.
+    RebuildAdvanced trashed Estate.
+    RebuildAdvanced gained Estate.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 2 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 3 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 4 all together.
+  RebuildAdvanced bought Silver.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Rebuild.
+  RebuildAdvanced Discarded Duchy.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced Drew Province into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(3), Estate(1), Province(1), Rebuild(2), Silver(6), 
 
 ROUND 12
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Estate,Festival,Highway,Library,
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
+Rebuild begins turn
+With hand: Copper,Copper,Copper,Duchy,Rebuild,
+  Rebuild Played Rebuild.
     +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 2 all together.
-    +1 Buys = 2 all together.
-    +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Library.
-    LookoutSalvagerLibraryHighwayFestival Revealed Salvager.
-    LookoutSalvagerLibraryHighwayFestival put Salvager into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Lookout.
-    LookoutSalvagerLibraryHighwayFestival put Lookout into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
-    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
-    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 2 all together.
-    +1 Buys = 3 all together.
-    +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Lookout.
-    +2 Coin = 6 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 8 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 9 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 10 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Highway.
-  LookoutSalvagerLibraryHighwayFestival bought Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
-  LookoutSalvagerLibraryHighwayFestival Discarded Library.
-  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(2), Estate(1), Festival(3), Highway(2), Library(1), Salvager(1), Silver(2), 
+    Rebuild named Estate.
+      Rebuild Revealed Rebuild.
+      Rebuild reshuffled
+      Rebuild Revealed Copper.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Silver.
+      Rebuild Revealed Province.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Copper.
+      Rebuild Discarded Silver.
+      Rebuild Discarded Rebuild.
+    Rebuild trashed Province.
+    Rebuild gained Province.
+  Rebuild Played Copper.
+    +1 Coin = 1 all together.
+  Rebuild Played Copper.
+    +1 Coin = 2 all together.
+  Rebuild Played Copper.
+    +1 Coin = 3 all together.
+  Rebuild bought Estate.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Rebuild.
+  Rebuild Discarded Duchy.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(3), Estate(2), Province(1), Rebuild(3), Silver(4), 
 
-BigMoneyWharf begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
-  BigMoneyWharf Finished Playing Wharf.
-    BigMoneyWharf Drew Copper into hand.
-    BigMoneyWharf reshuffled
-    BigMoneyWharf Drew Gold into hand.
-    +1 Buys = 2 all together.
-  BigMoneyWharf Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWharf Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyWharf Played Copper.
-    +1 Coin = 7 all together.
-  BigMoneyWharf Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWharf Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyWharf Played Copper.
-    +1 Coin = 10 all together.
-  BigMoneyWharf bought Province.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Gold.
-  BigMoneyWharf Discarded Gold.
-  BigMoneyWharf Discarded Wharf.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf Drew Gold into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf Drew Gold into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(5), Province(2), Silver(4), Wharf(1), 
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Duchy,Province,Silver,
+  RebuildAdvanced Played Silver.
+    +2 Coin = 2 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 3 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 4 all together.
+  RebuildAdvanced bought Silver.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Duchy.
+  RebuildAdvanced Discarded Province.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Rebuild into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(3), Estate(1), Province(1), Rebuild(2), Silver(7), 
 
 ROUND 13
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Festival,Library,Salvager,Silver,
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 2 all together.
-    +1 Buys = 2 all together.
+Rebuild begins turn
+With hand: Copper,Copper,Rebuild,Silver,Silver,
+  Rebuild Played Rebuild.
+    +1 Actions = 1 all together.
+    Rebuild named Estate.
+      Rebuild Revealed Estate.
+      Rebuild Revealed Duchy.
+      Rebuild Discarded Estate.
+    Rebuild trashed Duchy.
+    Rebuild gained Province.
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Copper.
-  LookoutSalvagerLibraryHighwayFestival Played Library.
-    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
-    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
-    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Estate.
-    LookoutSalvagerLibraryHighwayFestival put Estate into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
-    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Copper.
-    LookoutSalvagerLibraryHighwayFestival put Copper into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
-    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
+  Rebuild Played Silver.
     +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 6 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Copper.
-    +1 Coin = 7 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Copper.
-  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
-  LookoutSalvagerLibraryHighwayFestival Discarded Library.
-  LookoutSalvagerLibraryHighwayFestival Discarded Estate.
-  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Copper into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Copper(1), Estate(1), Festival(4), Highway(2), Library(1), Salvager(1), Silver(2), 
+  Rebuild Played Copper.
+    +1 Coin = 5 all together.
+  Rebuild Played Copper.
+    +1 Coin = 6 all together.
+  Rebuild bought Estate.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Silver.
+  Rebuild Discarded Silver.
+  Rebuild Discarded Rebuild.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Duchy into hand.
+  Rebuild reshuffled
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Rebuild into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(2), Estate(3), Province(2), Rebuild(3), Silver(4), 
 
-BigMoneyWharf begins turn
-With hand: Copper,Gold,Gold,Silver,Silver,
-  BigMoneyWharf Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWharf Played Gold.
-    +3 Coin = 6 all together.
-  BigMoneyWharf Played Silver.
-    +2 Coin = 8 all together.
-  BigMoneyWharf Played Silver.
-    +2 Coin = 10 all together.
-  BigMoneyWharf Played Copper.
-    +1 Coin = 11 all together.
-  BigMoneyWharf bought Province.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Silver.
-  BigMoneyWharf Discarded Silver.
-  BigMoneyWharf Discarded Gold.
-  BigMoneyWharf Discarded Gold.
-  BigMoneyWharf Drew Estate into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Estate into hand.
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf Drew Province into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(5), Province(3), Silver(4), Wharf(1), 
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Duchy,Rebuild,Silver,
+  RebuildAdvanced Played Rebuild.
+    +1 Actions = 1 all together.
+    RebuildAdvanced named Province.
+      RebuildAdvanced Revealed Copper.
+      RebuildAdvanced reshuffled
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Duchy.
+      RebuildAdvanced Discarded Copper.
+      RebuildAdvanced Discarded Silver.
+      RebuildAdvanced Discarded Silver.
+      RebuildAdvanced Discarded Silver.
+      RebuildAdvanced Discarded Silver.
+    RebuildAdvanced trashed Duchy.
+    RebuildAdvanced gained Province.
+  RebuildAdvanced Played Silver.
+    +2 Coin = 2 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 3 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 4 all together.
+  RebuildAdvanced bought Silver.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Rebuild.
+  RebuildAdvanced Discarded Duchy.
+  RebuildAdvanced Drew Estate into hand.
+  RebuildAdvanced Drew Province into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(2), Estate(1), Province(2), Rebuild(2), Silver(8), 
 
 ROUND 14
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Copper,Festival,Highway,Highway,Salvager,
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
+Rebuild begins turn
+With hand: Copper,Duchy,Rebuild,Rebuild,Silver,
+  Rebuild Played Rebuild.
     +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
+    Rebuild named Estate.
+      Rebuild Revealed Duchy.
+    Rebuild trashed Duchy.
+    Rebuild gained Province.
+  Rebuild Played Rebuild.
     +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 2 all together.
-    +1 Buys = 2 all together.
+    Rebuild named Estate.
+      Rebuild Revealed Copper.
+      Rebuild Revealed Province.
+      Rebuild Discarded Copper.
+    Rebuild trashed Province.
+    Rebuild gained Province.
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 3 all together.
-    +1 Buys = 3 all together.
-    +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Copper.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 6 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Library.
-  LookoutSalvagerLibraryHighwayFestival bought Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
-  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Estate into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Estate(1), Festival(5), Highway(2), Library(2), Salvager(1), Silver(2), 
-
-BigMoneyWharf begins turn
-With hand: Copper,Estate,Estate,Province,Silver,
-  BigMoneyWharf Played Silver.
-    +2 Coin = 2 all together.
-  BigMoneyWharf Played Copper.
+  Rebuild Played Copper.
     +1 Coin = 3 all together.
-  BigMoneyWharf bought Silver.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Silver.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf Discarded Estate.
-  BigMoneyWharf Discarded Province.
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf Drew Gold into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf reshuffled
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(5), Province(3), Silver(5), Wharf(1), 
+  Rebuild bought Estate.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Silver.
+  Rebuild Discarded Rebuild.
+  Rebuild Discarded Rebuild.
+  Rebuild Discarded Duchy.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Province into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(1), Estate(4), Province(3), Rebuild(3), Silver(4), 
+
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Estate,Province,Silver,
+  RebuildAdvanced Played Silver.
+    +2 Coin = 2 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 3 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 4 all together.
+  RebuildAdvanced bought Estate.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Estate.
+  RebuildAdvanced Discarded Province.
+  RebuildAdvanced Drew Duchy into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Rebuild into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(2), Estate(2), Province(2), Rebuild(2), Silver(8), 
 
 ROUND 15
 -------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Estate,Festival,Festival,Library,Silver,
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 2 all together.
-    +1 Buys = 2 all together.
+Rebuild begins turn
+With hand: Copper,Copper,Copper,Province,Silver,
+  Rebuild Played Silver.
     +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 3 all together.
-    +1 Buys = 3 all together.
-    +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Library.
-    LookoutSalvagerLibraryHighwayFestival reshuffled
-    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
-    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
-    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
-    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
-    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Library.
-    LookoutSalvagerLibraryHighwayFestival put Library into his hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
-    +1 Actions = 2 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Silver into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
-    +1 Actions = 2 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Salvager into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 3 all together.
-    +1 Buys = 4 all together.
-    +2 Coin = 6 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 4 all together.
-    +1 Buys = 5 all together.
-    +2 Coin = 8 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Estate.
-  LookoutSalvagerLibraryHighwayFestival Played Library.
-    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
-    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 3 all together.
-    +1 Buys = 6 all together.
-    +2 Coin = 10 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 12 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 14 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Highway.
-  LookoutSalvagerLibraryHighwayFestival bought Highway.
-  LookoutSalvagerLibraryHighwayFestival bought Highway.
-  LookoutSalvagerLibraryHighwayFestival bought Highway.
-  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
-  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
-  LookoutSalvagerLibraryHighwayFestival Discarded Library.
-  LookoutSalvagerLibraryHighwayFestival Discarded Library.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Festival(5), Highway(6), Library(2), Salvager(1), Silver(2), 
+  Rebuild Played Copper.
+    +1 Coin = 3 all together.
+  Rebuild Played Copper.
+    +1 Coin = 4 all together.
+  Rebuild Played Copper.
+    +1 Coin = 5 all together.
+  Rebuild bought Estate.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Copper.
+  Rebuild Discarded Silver.
+  Rebuild Discarded Province.
+  Rebuild Drew Copper into hand.
+  Rebuild Drew Silver into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Estate into hand.
+  Rebuild Drew Copper into hand.
+  Rebuild ends turn with deck: Copper(7), Duchy(1), Estate(5), Province(3), Rebuild(3), Silver(4), 
 
-BigMoneyWharf begins turn
-With hand: Copper,Copper,Gold,Silver,Silver,
-  BigMoneyWharf Played Gold.
-    +3 Coin = 3 all together.
-  BigMoneyWharf Played Silver.
-    +2 Coin = 5 all together.
-  BigMoneyWharf Played Silver.
-    +2 Coin = 7 all together.
-  BigMoneyWharf Played Copper.
-    +1 Coin = 8 all together.
-  BigMoneyWharf Played Copper.
-    +1 Coin = 9 all together.
-  BigMoneyWharf bought Province.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Copper.
-  BigMoneyWharf Discarded Silver.
-  BigMoneyWharf Discarded Silver.
-  BigMoneyWharf Discarded Gold.
-  BigMoneyWharf Drew Province into hand.
-  BigMoneyWharf Drew Province into hand.
-  BigMoneyWharf Drew Copper into hand.
-  BigMoneyWharf Drew Silver into hand.
-  BigMoneyWharf Drew Gold into hand.
-  BigMoneyWharf ends turn with deck: Copper(7), Estate(3), Gold(5), Province(4), Silver(5), Wharf(1), 
-
-ROUND 16
--------------
-LookoutSalvagerLibraryHighwayFestival begins turn
-With hand: Festival,Festival,Festival,Highway,Library,
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
+RebuildAdvanced begins turn
+With hand: Copper,Copper,Duchy,Rebuild,Silver,
+  RebuildAdvanced Played Rebuild.
     +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
-    +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
-    +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
-    +1 Actions = 1 all together.
-    LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 2 all together.
-    +1 Buys = 2 all together.
+    RebuildAdvanced named Province.
+      RebuildAdvanced reshuffled
+      RebuildAdvanced Revealed Silver.
+      RebuildAdvanced Revealed Duchy.
+      RebuildAdvanced Discarded Silver.
+    RebuildAdvanced trashed Duchy.
+    RebuildAdvanced gained Province.
+  RebuildAdvanced Played Silver.
     +2 Coin = 2 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 3 all together.
-    +1 Buys = 3 all together.
-    +2 Coin = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 4 all together.
-    +1 Buys = 4 all together.
-    +2 Coin = 6 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 5 all together.
-    +1 Buys = 5 all together.
-    +2 Coin = 8 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Library.
-    LookoutSalvagerLibraryHighwayFestival Revealed Salvager.
-    LookoutSalvagerLibraryHighwayFestival put Salvager into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
-    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
-    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Highway.
-    LookoutSalvagerLibraryHighwayFestival put Highway into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Festival.
-    LookoutSalvagerLibraryHighwayFestival put Festival into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Silver.
-    LookoutSalvagerLibraryHighwayFestival put Silver into his hand.
-    LookoutSalvagerLibraryHighwayFestival Revealed Library.
-    LookoutSalvagerLibraryHighwayFestival put Library into his hand.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
-    +1 Actions = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Highway.
-    +1 Actions = 4 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Festival.
-    +2 Actions = 5 all together.
-    +1 Buys = 6 all together.
-    +2 Coin = 10 all together.
-  LookoutSalvagerLibraryHighwayFestival Played Salvager.
-    LookoutSalvagerLibraryHighwayFestival trashed Silver.
-  LookoutSalvagerLibraryHighwayFestival Played Library.
-  LookoutSalvagerLibraryHighwayFestival Played Silver.
-    +2 Coin = 12 all together.
-  LookoutSalvagerLibraryHighwayFestival bought Province.
-  LookoutSalvagerLibraryHighwayFestival bought Province.
-  LookoutSalvagerLibraryHighwayFestival bought Province.
-  LookoutSalvagerLibraryHighwayFestival bought Province.
-  LookoutSalvagerLibraryHighwayFestival bought Duchy.
-  LookoutSalvagerLibraryHighwayFestival bought Duchy.
-  LookoutSalvagerLibraryHighwayFestival Discarded Silver.
-  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
-  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
-  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
-  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
-  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
-  LookoutSalvagerLibraryHighwayFestival Discarded Highway.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Festival.
-  LookoutSalvagerLibraryHighwayFestival Discarded Salvager.
-  LookoutSalvagerLibraryHighwayFestival Discarded Library.
-  LookoutSalvagerLibraryHighwayFestival Discarded Library.
-  LookoutSalvagerLibraryHighwayFestival reshuffled
-  LookoutSalvagerLibraryHighwayFestival Drew Duchy into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Province into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Festival into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Highway into hand.
-  LookoutSalvagerLibraryHighwayFestival Drew Library into hand.
-  LookoutSalvagerLibraryHighwayFestival ends turn with deck: Duchy(2), Festival(5), Highway(6), Library(2), Province(4), Salvager(1), Silver(1), 
+  RebuildAdvanced Played Copper.
+    +1 Coin = 3 all together.
+  RebuildAdvanced Played Copper.
+    +1 Coin = 4 all together.
+  RebuildAdvanced bought Estate.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Copper.
+  RebuildAdvanced Discarded Silver.
+  RebuildAdvanced Discarded Rebuild.
+  RebuildAdvanced Discarded Duchy.
+  RebuildAdvanced Drew Copper into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Estate into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced Drew Silver into hand.
+  RebuildAdvanced ends turn with deck: Copper(7), Duchy(1), Estate(3), Province(3), Rebuild(2), Silver(8), 
 
-Game ended in 16 turns.
-LookoutSalvagerLibraryHighwayFestival Won!
-LookoutSalvagerLibraryHighwayFestival total score: 30
-  Duchy(2), Festival(5), Highway(6), Library(2), Province(4), Salvager(1), Silver(1), 
-BigMoneyWharf total score: 27
-  Copper(7), Estate(3), Gold(5), Province(4), Silver(5), Wharf(1), 
-Trash contains: Copper(7), Estate(3), Lookout(1), Silver(1), 
+Game ended in 15 turns.
+Rebuild Won!
+Rebuild total score: 26
+  Copper(7), Duchy(1), Estate(5), Province(3), Rebuild(3), Silver(4), 
+RebuildAdvanced total score: 24
+  Copper(7), Duchy(1), Estate(3), Province(3), Rebuild(2), Silver(8), 
+Trash contains: Duchy(6), Estate(6), Province(2), 
 
-LookoutSalvagerLibraryHighwayFestival GainSequence is:
-  Salvager, Lookout, Silver, Silver, Festival, 
-  Library, Festival, Highway, Highway, Festival, 
-  Festival, Library, Festival, Highway, Highway, 
-  Highway, Highway, Province, Province, Province, 
-  Province, Duchy, Duchy, 
-BigMoneyWharf GainSequence is:
-  Silver, Silver, Gold, Silver, Gold, 
-  Gold, Wharf, Gold, Gold, Province, 
-  Silver, Province, Province, Silver, Province, 
+Rebuild GainSequence is:
+  Silver, Silver, Rebuild, Silver, Rebuild, 
+  Duchy, Rebuild, Duchy, Duchy, Silver, 
+  Province, Duchy, Estate, Province, Estate, 
+  Province, Estate, Province, Province, Estate, 
+  Estate, 
+RebuildAdvanced GainSequence is:
+  Silver, Silver, Rebuild, Silver, Duchy, 
+  Silver, Rebuild, Duchy, Duchy, Duchy, 
+  Province, Silver, Estate, Silver, Silver, 
+  Province, Silver, Estate, Province, Estate, 
 

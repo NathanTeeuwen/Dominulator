@@ -16,7 +16,7 @@ namespace Program
             public static PlayerAction Player(Card card, string playerName = null, int cardCount = 1, int afterSilverCount = 0, int afterGoldCount = int.MaxValue)
             {
                 return new PlayerAction(
-                            playerName == null ? "BigMoneyWithCard<" + card.GetType().Name + ">" : playerName,                            
+                            playerName == null ? "BigMoneyWithCard" + card.GetType().Name : playerName,                            
                             purchaseOrder: PurchaseOrder(card, cardCount, afterSilverCount, afterGoldCount == int.MaxValue && card.DefaultCoinCost >= Cards.Gold.DefaultCoinCost ? 0 : afterGoldCount),
                             actionOrder:ActionOrder(card));
             }

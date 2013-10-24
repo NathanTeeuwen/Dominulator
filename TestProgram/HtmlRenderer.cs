@@ -136,22 +136,19 @@ namespace Program
 
         public void WriteLine()
         {
-            this.WriteTag("br");
-            this.textWriter.WriteLine();
+            LineBreak();
         }
 
         public void WriteLine(string text)
         {
             this.textWriter.Write(text);
-            this.WriteTag("br");
-            this.textWriter.WriteLine();
+            LineBreak();
         }
 
         public void WriteLine(string text, params object[] args)
         {
             this.textWriter.Write(text, args);
-            this.WriteTag("br");
-            this.textWriter.WriteLine();
+            this.LineBreak();
         }
 
         public void BeginTag(string tag)
@@ -165,6 +162,16 @@ namespace Program
         {
             this.textWriter.Unindent();
             this.WriteEndTag(this.openTags.Pop());
+        }
+
+        public void LineBreak()
+        {
+            this.textWriter.WriteLine("<br>");
+        }
+
+        public void Header1(string text)
+        {
+            this.textWriter.WriteLine("<h1>{0}</h1>", text);
         }
     }
 }

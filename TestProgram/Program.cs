@@ -16,8 +16,8 @@ namespace Program
             stopwatch.Start();
 
             //ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneyWharf.Player(), useColonyAndPlatinum: true);
-            //CompareStrategyVsAllKnownStrategies(Strategies.LookoutSalvagerLibraryHighwayFestival.Player());
+            ComparePlayers(Strategies.Rebuild.Player(), Strategies.RebuildAdvanced.Player(), useColonyAndPlatinum: false, createHtmlReport:true);
+            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
             //TestAllCardsWithBigMoney();                      
             
             stopwatch.Stop();
@@ -28,9 +28,9 @@ namespace Program
                 System.Console.WriteLine("Elapsed Time per game: {0}us", stopwatch.ElapsedMilliseconds * 1000 / totalGameCount);
                 System.Console.WriteLine("Elapsed Time per Players Turn: {0}ns", (int)((double)stopwatch.ElapsedTicks / System.Diagnostics.Stopwatch.Frequency * 1000 * 1000 * 1000 / GameState.turnTotalCount));
             }
-        }        
+        }
 
-        static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false, int numberOfGames = 1000)
+        static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false, int numberOfGames = 1000, bool createHtmlReport = false)
         {
             var resultList = new List<System.Tuple<string, double>>();
 
@@ -56,7 +56,7 @@ namespace Program
                 if (otherPlayerAction == null)
                     continue;
 
-                double percentDiff = ComparePlayers(playerAction, otherPlayerAction, shouldParallel: shouldParallel, useShelters: useShelters, logGameCount: 0, numberOfGames: numberOfGames, useColonyAndPlatinum: true, createHtmlReport: false);
+                double percentDiff = ComparePlayers(playerAction, otherPlayerAction, shouldParallel: shouldParallel, useShelters: useShelters, logGameCount: 0, numberOfGames: numberOfGames, useColonyAndPlatinum: true, createHtmlReport: createHtmlReport);
 
                 resultList.Add( new System.Tuple<string,double>(otherPlayerAction.PlayerName, percentDiff));
             }            
@@ -326,13 +326,11 @@ namespace Program
             {
                 // write out HTML report summary
                 {
-                    using (var textWriter = new IndentedTextWriter(GetOuputFilename("Report.html")))
+                    using (var textWriter = new IndentedTextWriter(GetOuputFilename(player1.PlayerName + " VS " + player2.PlayerName + ".html")))
                     {
                         var htmlWriter = new HtmlRenderer(textWriter);
                         htmlWriter.Begin();
-                        htmlWriter.BeginTag("h1");
-                        htmlWriter.WriteLine(player1.PlayerName + " VS " + player2.PlayerName);
-                        htmlWriter.EndTag();
+                        htmlWriter.Header1(player1.PlayerName + " VS " + player2.PlayerName);                        
                         htmlWriter.WriteLine("Number of Games: " + numberOfGames);
                         htmlWriter.WriteLine(firstPlayerAdvantage ? player1.PlayerName + " always started first" : "Players took turns going first");
                         htmlWriter.WriteLine();
