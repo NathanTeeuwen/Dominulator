@@ -17,6 +17,10 @@ namespace Dominion
         {
         }
 
+        public virtual void EndRound(GameState gameState)
+        {
+        }
+
         public virtual void PushScope()
         {
 

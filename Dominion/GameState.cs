@@ -174,6 +174,8 @@ namespace Dominion
                 {
                     this.players.PassTurnLeft();
                 }
+
+                this.gameLog.EndRound(this);
             }
 
             this.gameLog.EndGame(this);

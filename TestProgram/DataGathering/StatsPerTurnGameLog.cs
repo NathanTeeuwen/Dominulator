@@ -17,8 +17,9 @@ namespace Program
         public MapOfCardsForGameSubset<PerTurnPlayerCounters> cardsTotalCount;
         public MapOfCardsForGameSubset<PerTurnPlayerCounters> cardsGain;
         public PerTurnPlayerCounters cursesGained;        
-        public PerTurnPlayerCounters cursesTrashed;        
-        
+        public PerTurnPlayerCounters cursesTrashed;
+        public PerTurnPlayerCounters deckShuffleCount;
+        public PerTurnPlayerCounters oddsOfBeingAheadOnRoundEnd;
 
         public StatsPerTurnGameLog(int playerCount, CardGameSubset gameSubset)
         {
@@ -27,6 +28,8 @@ namespace Program
             this.cursesGained = new PerTurnPlayerCounters(playerCount);            
             this.cursesTrashed = new PerTurnPlayerCounters(playerCount);            
             this.victoryPointTotal = new PerTurnPlayerCounters(playerCount);
+            this.deckShuffleCount = new PerTurnPlayerCounters(playerCount);
+            this.oddsOfBeingAheadOnRoundEnd = new PerTurnPlayerCounters(playerCount);
 
             this.cardGameSubset = gameSubset;
 
@@ -48,6 +51,7 @@ namespace Program
             this.coinToSpend.BeginTurn(playerState);
             this.ruinsGained.BeginTurn(playerState);
             this.cursesGained.BeginTurn(playerState);
+            this.deckShuffleCount.BeginTurn(playerState);
             foreach (Card card in cardGameSubset)
             {
                 this.cardsTotalCount[card].BeginTurn(playerState);
@@ -61,14 +65,43 @@ namespace Program
             }
         }
 
+        public override void EndRound(GameState gameState)
+        {
+            PlayerState winningPlayer = null;
+            int winningScore = -1;
+
+            foreach (PlayerState player in gameState.players.AllPlayers)
+            {
+                int score = player.TotalScore();
+                if (score > winningScore)
+                {                    
+                    winningScore = score;
+                    winningPlayer = player;
+                }
+                else if (score == winningScore)
+                {
+                    winningPlayer = null;
+                }
+            }
+
+            foreach (PlayerState player in gameState.players.AllPlayers)
+            {
+                if (player == winningPlayer)
+                {
+                    oddsOfBeingAheadOnRoundEnd.IncrementCounter(player, 1);
+                }
+                oddsOfBeingAheadOnRoundEnd.BeginTurn(player);
+            }
+        }
+
         public override void EndTurn(PlayerState playerState)
         {
             this.victoryPointTotal.IncrementCounter(playerState, playerState.TotalScore());
             foreach (Card card in this.cardGameSubset)
             {
                 this.cardsTotalCount[card].IncrementCounter(playerState, playerState.AllOwnedCards.CountOf(card));            
-            }            
-        }
+            }                    
+        }        
 
         public override void PlayerTrashedCard(PlayerState playerState, Card card)
         {
@@ -108,5 +141,10 @@ namespace Program
                 this.cardsGain[card].IncrementCounter(playerState, 1);                
             }
         }
+
+        public override void ReshuffledDiscardIntoDeck(PlayerState playerState)
+        {
+            this.deckShuffleCount.IncrementCounter(playerState, 1);            
+        }        
     }     
 }

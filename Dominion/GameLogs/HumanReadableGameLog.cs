@@ -39,6 +39,10 @@ namespace Dominion
             this.textWriter.WriteLine("-------------");
         }
 
+        public void EndRound(GameState gameState)
+        {            
+        }
+
         public void BeginTurn(PlayerState playerState)
         {
             this.textWriter.WriteLine("{0} begins turn", playerState.actions.PlayerName);

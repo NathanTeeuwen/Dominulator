@@ -32,6 +32,14 @@ namespace Dominion
             }
         }
 
+        public void EndRound(GameState gameState)
+        {
+            for (int i = 0; i < this.gameLogs.Length; ++i)
+            {
+                this.gameLogs[i].EndRound(gameState);
+            }
+        }
+
         public void PushScope()
         {
             for (int i = 0; i < this.gameLogs.Length; ++i)

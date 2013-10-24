@@ -17,7 +17,7 @@ namespace Program
 
             //ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
             ComparePlayers(Strategies.Rebuild.Player(), Strategies.RebuildAdvanced.Player(), useColonyAndPlatinum: false, createHtmlReport:true);
-            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
+            CompareStrategyVsAllKnownStrategies(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), numberOfGames:1000, createHtmlReport:true);
             //TestAllCardsWithBigMoney();                      
             
             stopwatch.Stop();
@@ -358,12 +358,16 @@ namespace Program
                             InsertHistogram(htmlWriter, "Probablity of Game ending on Turn", "Percentage", gameEndOnTurnHistogramData, maxTurn);
                             InsertHistogramIntegrated(htmlWriter, "Probablity of Game being over by turn", "Percentage", gameEndOnTurnHistogramData, maxTurn);
                             InsertLineGraph(htmlWriter, "Average Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal, maxTurn);
+                            InsertLineGraph(htmlWriter, "Probability player is ahead in points at end of round ", player1, player2, statGatherer.oddsOfBeingAheadOnRoundEnd, maxTurn);
                         });
-                        InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn);                        
-                        InsertLineGraph(htmlWriter, "Average Ruins Gained Per Turn", player1, player2, statGatherer.ruinsGained, maxTurn);
-                        InsertLineGraph(htmlWriter, "Average Curses Gained Per Turn", player1, player2, statGatherer.cursesGained, maxTurn);
-                        InsertLineGraph(htmlWriter, "Average Curses Trashed Per Turn", player1, player2, statGatherer.cursesTrashed, maxTurn);
-
+                        htmlWriter.InsertExpander("Deck Strength", delegate()
+                        {
+                            InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn);
+                            InsertLineGraph(htmlWriter, "Shuffles Per Turn", player1, player2, statGatherer.deckShuffleCount, maxTurn);
+                            InsertLineGraph(htmlWriter, "Average Ruins Gained Per Turn", player1, player2, statGatherer.ruinsGained, maxTurn);
+                            InsertLineGraph(htmlWriter, "Average Curses Gained Per Turn", player1, player2, statGatherer.cursesGained, maxTurn);
+                            InsertLineGraph(htmlWriter, "Average Curses Trashed Per Turn", player1, player2, statGatherer.cursesTrashed, maxTurn);
+                        });                                                
                         foreach (Card card in gameConfig.cardGameSubset.OrderBy(c => c.DefaultCoinCost))
                         {
                             if (statGatherer.cardsTotalCount[card].HasNonZeroData ||
