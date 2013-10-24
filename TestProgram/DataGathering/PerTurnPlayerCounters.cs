@@ -7,6 +7,40 @@ using Dominion;
 
 namespace Program
 {
+    public class PlayerCounter
+    {
+        int[] totalDivisor;
+        int[] totalCount;
+
+        public PlayerCounter(int playerCount)
+        {
+            this.totalDivisor = new int[playerCount];
+            this.totalCount = new int[playerCount];            
+        }
+
+        public float GetAverage(int playerIndex)
+        {
+            return (float)this.totalCount[playerIndex] / this.totalDivisor[playerIndex];
+        }
+
+        public void IncrementDivisor(PlayerState playerState)
+        {
+            lock (this)
+            {
+                this.totalDivisor[playerState.PlayerIndex]++;
+            }
+        }
+
+        public void IncrementCounter(PlayerState playerState, int amount)
+        {
+            lock (this)
+            {
+                this.totalCount[playerState.PlayerIndex] += amount;
+            }
+        }
+    }
+
+
     public class PerTurnPlayerCounters
     {
         private List<int>[] totalPerTurnByPlayer;

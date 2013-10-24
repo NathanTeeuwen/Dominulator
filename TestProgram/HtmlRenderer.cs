@@ -189,6 +189,61 @@ namespace Program
             this.EndTag();
         }
 
+        public void InsertColumnChart(
+           string title,
+           string xAxisLabel,
+           string[] seriesLabels,
+           string[] xAxis,
+           float[][] seriesData)
+        {
+            int multiplesOfFifteen = (xAxis.Length + 14) / 15;
+
+            int currentChartIndex = this.divIndex++;
+            string divId = "chart_div" + currentChartIndex;
+
+            this.textWriter.WriteLine("<div id='" + divId + @"' style='width: 900px; height: 500px;'></div>");
+            this.BeginJavascriptTag();
+            this.textWriter.WriteLine("google.setOnLoadCallback(drawChart);");
+            this.textWriter.WriteLine("function drawChart() {");
+            this.textWriter.Indent();
+            this.textWriter.WriteLine("var data = google.visualization.arrayToDataTable([");
+            this.textWriter.Indent();
+            this.textWriter.Write("['" + xAxisLabel + "'");
+            for (int seriesIndex = 0; seriesIndex < seriesLabels.Length; ++seriesIndex)
+            {
+                this.textWriter.Write(", '" + seriesLabels[seriesIndex] + "'");
+            }
+            this.textWriter.WriteLine("],");
+            for (int dataIndex = 0; dataIndex < xAxis.Length; ++dataIndex)
+            {
+                this.textWriter.Write("['" + xAxis[dataIndex] + "'");
+                for (int seriesIndex = 0; seriesIndex < seriesData.Length; ++seriesIndex)
+                {
+                    this.textWriter.Write(", " + seriesData[seriesIndex][dataIndex]);
+                }
+                this.textWriter.WriteLine("],");
+            }
+            this.textWriter.Unindent();
+            this.textWriter.WriteLine("]);");
+            this.textWriter.WriteLine();
+            this.textWriter.WriteLine("var options = {");
+            this.textWriter.Indent();
+                this.textWriter.WriteLine("title: '" + title + "',");
+                this.textWriter.WriteLine("hAxis: {");
+                this.textWriter.Indent();
+                    this.textWriter.WriteLine("title: '" + xAxisLabel + "'");
+                    this.textWriter.Unindent();
+                this.textWriter.WriteLine("}");
+            this.textWriter.Unindent();
+            this.textWriter.WriteLine("};");
+            this.textWriter.WriteLine();
+            this.textWriter.WriteLine("var chart = new google.visualization.ColumnChart(document.getElementById('" + divId + "'));");
+            this.textWriter.WriteLine("chart.draw(data, options);");
+            this.textWriter.Unindent();
+            this.textWriter.WriteLine("}");
+            this.EndTag();
+        }
+
         public void End()
         {
             EndTag(); //body

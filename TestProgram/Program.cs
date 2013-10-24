@@ -16,8 +16,8 @@ namespace Program
             stopwatch.Start();
 
             //ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            ComparePlayers(Strategies.Rebuild.Player(), Strategies.RebuildAdvanced.Player(), useColonyAndPlatinum: false, createHtmlReport:true);
-            CompareStrategyVsAllKnownStrategies(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), numberOfGames:1000, createHtmlReport:true);
+            ComparePlayers(Strategies.BigMoney.Player(), Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), useColonyAndPlatinum: false, createHtmlReport: true);
+            //CompareStrategyVsAllKnownStrategies(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), numberOfGames:1000, createHtmlReport:true);
             //TestAllCardsWithBigMoney();                      
             
             stopwatch.Stop();
@@ -364,10 +364,12 @@ namespace Program
                         {
                             InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn);
                             InsertLineGraph(htmlWriter, "Shuffles Per Turn", player1, player2, statGatherer.deckShuffleCount, maxTurn);
+                            InsertCardData(htmlWriter, statGatherer.endOfGameCardCount, gameConfig.cardGameSubset, player1, player2);
                             InsertLineGraph(htmlWriter, "Average Ruins Gained Per Turn", player1, player2, statGatherer.ruinsGained, maxTurn);
                             InsertLineGraph(htmlWriter, "Average Curses Gained Per Turn", player1, player2, statGatherer.cursesGained, maxTurn);
                             InsertLineGraph(htmlWriter, "Average Curses Trashed Per Turn", player1, player2, statGatherer.cursesTrashed, maxTurn);
-                        });                                                
+                        });
+                        
                         foreach (Card card in gameConfig.cardGameSubset.OrderBy(c => c.DefaultCoinCost))
                         {
                             if (statGatherer.cardsTotalCount[card].HasNonZeroData ||
@@ -388,6 +390,29 @@ namespace Program
 
             double diff = PlayerWinPercent(0, winnerCount, numberOfGames) - PlayerWinPercent(1, winnerCount, numberOfGames);
             return diff;
+        }
+
+        private static void InsertCardData(HtmlRenderer htmlWriter, MapOfCardsForGameSubset<PlayerCounter> map, CardGameSubset gameSubset, PlayerAction player1, PlayerAction player2)
+        {
+            var cards = gameSubset.OrderBy(c => c.DefaultCoinCost);
+            var player1Data = new List<float>();
+            var player2Data = new List<float>();
+
+            foreach (Card card in cards)
+            {
+                player1Data.Add(map[card].GetAverage(playerIndex:0));
+                player2Data.Add(map[card].GetAverage(playerIndex:1));
+            }
+
+            htmlWriter.InsertExpander("Cards Report", delegate()
+            {
+                htmlWriter.InsertColumnChart(
+                    "Average Count of Cards Owned at End of Game",
+                    "Card",
+                    new string[] { player1.name, player2.name },
+                    cards.Select(c => c.name).ToArray(),
+                    new float[][] { player1Data.ToArray(), player2Data.ToArray() });
+            });
         }
 
         private static void InsertLineGraph(

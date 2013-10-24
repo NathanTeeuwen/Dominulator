@@ -16,6 +16,7 @@ namespace Program
         public PerTurnPlayerCounters ruinsGained;
         public MapOfCardsForGameSubset<PerTurnPlayerCounters> cardsTotalCount;
         public MapOfCardsForGameSubset<PerTurnPlayerCounters> cardsGain;
+        public MapOfCardsForGameSubset<PlayerCounter> endOfGameCardCount;
         public PerTurnPlayerCounters cursesGained;        
         public PerTurnPlayerCounters cursesTrashed;
         public PerTurnPlayerCounters deckShuffleCount;
@@ -33,35 +34,70 @@ namespace Program
 
             this.cardGameSubset = gameSubset;
 
-            this.cardsTotalCount = new MapOfCardsForGameSubset<PerTurnPlayerCounters>(gameSubset);
+            this.cardsTotalCount = ContstructCounterPerTurn(playerCount, gameSubset); 
+            this.cardsGain = ContstructCounterPerTurn(playerCount, gameSubset);
+            this.endOfGameCardCount = ContstructCounter(playerCount, gameSubset); 
+        }
+
+        private MapOfCardsForGameSubset<PerTurnPlayerCounters> ContstructCounterPerTurn(int playerCount, CardGameSubset gameSubset)
+        {
+            var result = new MapOfCardsForGameSubset<PerTurnPlayerCounters>(gameSubset);
             foreach (Card card in gameSubset)
             {
-                this.cardsTotalCount[card] = new PerTurnPlayerCounters(playerCount);
+                result[card] = new PerTurnPlayerCounters(playerCount);
             }
 
-            this.cardsGain = new MapOfCardsForGameSubset<PerTurnPlayerCounters>(gameSubset);
+            return result;
+        }
+
+        private MapOfCardsForGameSubset<PlayerCounter> ContstructCounter(int playerCount, CardGameSubset gameSubset)
+        {
+            var result = new MapOfCardsForGameSubset<PlayerCounter>(gameSubset);
             foreach (Card card in gameSubset)
             {
-                this.cardsGain[card] = new PerTurnPlayerCounters(playerCount);
+                result[card] = new PlayerCounter(playerCount);
             }
-        }        
+
+            return result;
+        }
+
+        private void BeginTurnAllCountersPerCard(MapOfCardsForGameSubset<PerTurnPlayerCounters> map, PlayerState playerState)
+        {
+            foreach (Card card in cardGameSubset)
+            {
+                map[card].BeginTurn(playerState);
+            }  
+        }
+
+        private void IncrementAllDivisors(MapOfCardsForGameSubset<PlayerCounter> map, PlayerState playerState)
+        {
+            foreach (Card card in cardGameSubset)
+            {
+                map[card].IncrementDivisor(playerState);
+            }
+        }
 
         public override void BeginTurn(PlayerState playerState)
         {
             this.coinToSpend.BeginTurn(playerState);
             this.ruinsGained.BeginTurn(playerState);
             this.cursesGained.BeginTurn(playerState);
-            this.deckShuffleCount.BeginTurn(playerState);
-            foreach (Card card in cardGameSubset)
-            {
-                this.cardsTotalCount[card].BeginTurn(playerState);
-            }            
+            this.deckShuffleCount.BeginTurn(playerState);            
             this.cursesTrashed.BeginTurn(playerState);            
             this.victoryPointTotal.BeginTurn(playerState);
+            BeginTurnAllCountersPerCard(this.cardsTotalCount, playerState);
+            BeginTurnAllCountersPerCard(this.cardsGain, playerState);
+        }
 
-            foreach (Card card in this.cardGameSubset)
+        public override void EndGame(GameState gameState)
+        {
+            foreach (PlayerState playerState in gameState.players.AllPlayers)
             {
-                this.cardsGain[card].BeginTurn(playerState);
+                IncrementAllDivisors(this.endOfGameCardCount, playerState);
+                foreach (Card card in this.cardGameSubset)
+                {
+                    this.endOfGameCardCount[card].IncrementCounter(playerState, playerState.AllOwnedCards.CountOf(card));
+                }
             }
         }
 
