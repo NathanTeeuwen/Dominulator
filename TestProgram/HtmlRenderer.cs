@@ -8,9 +8,11 @@ using Dominion;
 
 namespace Program
 {
+    delegate void HtmlContentInserter();
+
     class HtmlRenderer
     {
-        private int chartIndex = 0;
+        private int divIndex = 0;
         private readonly IndentedTextWriter textWriter;
         private readonly Stack<string> openTags;
 
@@ -25,11 +27,45 @@ namespace Program
             BeginTag("html");
             BeginTag("head");
             this.textWriter.WriteLine(@"<script type='text/javascript' src='https://www.google.com/jsapi'></script>");
-            this.BeginJavascriptTag();
-            this.textWriter.WriteLine("google.load('visualization', '1', {packages:['corechart']});");
-            this.EndTag();
+            this.UsingGoogleChartsAPI();
+            this.UsingJQuery();
+            this.UsingJQueryUI();
             EndTag(); //head
             BeginTag("body");
+        }
+
+        public void InsertExpander(
+            string title,
+            HtmlContentInserter content,
+            bool collapseByDefault = true)
+        {
+            int currentChartIndex = this.divIndex++;
+            string divId = "accordion_div" + currentChartIndex;
+
+            this.textWriter.WriteLine("<div id='" + divId + "'>");
+            this.textWriter.Indent();
+            this.Header3(title);
+            this.BeginTag("div");
+            this.textWriter.Indent();
+            content();
+            this.textWriter.Unindent();
+            this.EndTag();
+            this.textWriter.Unindent();
+            this.textWriter.WriteLine("</div>");
+            this.BeginJavascriptTag();
+            this.textWriter.WriteLine("$( '#" + divId + "' ).accordion({ ");
+            this.textWriter.Indent();
+            this.textWriter.WriteLine("collapsible: true,");
+            this.textWriter.WriteLine("heightStyle: 'content',");
+            this.textWriter.Unindent();
+            this.textWriter.WriteLine("});");
+
+            if (collapseByDefault)
+            {
+                this.textWriter.WriteLine("$(  '#" + divId + "').accordion( 'option', 'active', false);");
+            }
+            
+            this.EndTag();
         }
 
         public void InsertLineGraph(
@@ -63,8 +99,10 @@ namespace Program
         {
             int multiplesOfFifteen = (xAxis.Length + 14)/15;
 
-            int currentChartIndex = this.chartIndex++;
-            this.textWriter.WriteLine("<div id='chart_div" + currentChartIndex + @"' style='width: 900px; height: 500px;'></div>");
+            int currentChartIndex = this.divIndex++;
+            string divId = "chart_div" + currentChartIndex;
+
+            this.textWriter.WriteLine("<div id='" + divId + @"' style='width: 900px; height: 500px;'></div>");
             this.BeginJavascriptTag();            
             this.textWriter.WriteLine("google.setOnLoadCallback(drawChart);");
             this.textWriter.WriteLine("function drawChart() {");
@@ -104,7 +142,7 @@ namespace Program
                 this.textWriter.Unindent();
                 this.textWriter.WriteLine("};");                
                 this.textWriter.WriteLine();
-                this.textWriter.WriteLine("var chart = new google.visualization.LineChart(document.getElementById('chart_div" + currentChartIndex + "'));");
+                this.textWriter.WriteLine("var chart = new google.visualization.LineChart(document.getElementById('" + divId + "'));");
                 this.textWriter.WriteLine("chart.draw(data, options);");
             this.textWriter.Unindent();
             this.textWriter.WriteLine("}");
@@ -116,6 +154,8 @@ namespace Program
             EndTag(); //body
             EndTag(); //html
         }
+
+        // HTML writing helpers
 
         private void WriteTag(string tag)
         {
@@ -132,6 +172,24 @@ namespace Program
             this.textWriter.WriteLine("<script type='text/javascript'>");
             this.textWriter.Indent();
             this.openTags.Push("script");
+        }
+
+        private void UsingGoogleChartsAPI()
+        {
+            this.BeginJavascriptTag();
+            this.textWriter.WriteLine("google.load('visualization', '1', {packages:['corechart']});");
+            this.EndTag();
+        }
+
+        private void UsingJQuery()
+        {                        
+            this.textWriter.WriteLine(@"<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>");            
+        }
+
+        private void UsingJQueryUI()
+        {                        
+            this.textWriter.WriteLine(@"<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js'></script>");            
+            this.textWriter.WriteLine(@"<link href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/start/jquery-ui.css' type='text/css' rel='Stylesheet' />");   
         }
 
         public void WriteLine()
@@ -172,6 +230,11 @@ namespace Program
         public void Header1(string text)
         {
             this.textWriter.WriteLine("<h1>{0}</h1>", text);
+        }
+
+        public void Header3(string text)
+        {
+            this.textWriter.WriteLine("<h3>{0}</h3>", text);
         }
     }
 }

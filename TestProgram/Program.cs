@@ -344,19 +344,31 @@ namespace Program
                         }
                         htmlWriter.WriteLine();
 
-                        InsertHistogram(htmlWriter, "Point Spread:  " + player1.PlayerName + " score <= 0 >= " + player2.PlayerName + " score", "Percentage", pointSpreadHistogramData, int.MaxValue);
-                        InsertHistogram(htmlWriter, "Probablity of Game ending on Turn", "Percentage", gameEndOnTurnHistogramData, maxTurn);
-                        InsertHistogramIntegrated(htmlWriter, "Probablity of Game being over by turn", "Percentage", gameEndOnTurnHistogramData, maxTurn);
-                        InsertLineGraph(htmlWriter, "Average Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal, maxTurn);
-                        InsertLineGraph(htmlWriter, "Average Provinces Gained Per Turn", player1, player2, statGatherer.provincesGained, maxTurn);
+                        htmlWriter.InsertExpander("Who Won?", delegate()
+                        {
+                            InsertHistogram(htmlWriter, "Point Spread:  " + player1.PlayerName + " score <= 0 >= " + player2.PlayerName + " score", "Percentage", pointSpreadHistogramData, int.MaxValue);
+                            InsertLineGraph(htmlWriter, "Average Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal, maxTurn);
+                        });                        
+                        htmlWriter.InsertExpander("When does the game end?", delegate()
+                        {
+                            InsertHistogram(htmlWriter, "Probablity of Game ending on Turn", "Percentage", gameEndOnTurnHistogramData, maxTurn);
+                            InsertHistogramIntegrated(htmlWriter, "Probablity of Game being over by turn", "Percentage", gameEndOnTurnHistogramData, maxTurn);                            
+                        });
                         InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn);
+                        InsertLineGraph(htmlWriter, "Average Provinces Gained Per Turn", player1, player2, statGatherer.provincesGained, maxTurn);                        
                         InsertLineGraph(htmlWriter, "Average Ruins Gained Per Turn", player1, player2, statGatherer.ruinsGained, maxTurn);
                         InsertLineGraph(htmlWriter, "Average Curses Gained Per Turn", player1, player2, statGatherer.cursesGained, maxTurn);
                         InsertLineGraph(htmlWriter, "Average Curses Trashed Per Turn", player1, player2, statGatherer.cursesTrashed, maxTurn);
 
                         foreach (Card card in gameConfig.cardGameSubset.OrderBy(c => c.DefaultCoinCost))
                         {
-                            InsertLineGraph(htmlWriter, "Total Count Of " + card.name + " Card At Turn", player1, player2, statGatherer.cardsTotalCount[card], maxTurn);                        
+                            if (statGatherer.cardsTotalCount[card].HasNonZeroData)
+                            {
+                                htmlWriter.InsertExpander(card.name, delegate()
+                                {
+                                    InsertLineGraph(htmlWriter, "Total Count At Turn", player1, player2, statGatherer.cardsTotalCount[card], maxTurn);
+                                });
+                            }
                         }
                         
                         htmlWriter.End();
@@ -369,7 +381,7 @@ namespace Program
         }
 
         private static void InsertLineGraph(
-            HtmlRenderer htmlWriter,
+            HtmlRenderer htmlWriter,            
             string title,
             PlayerAction player1,
             PlayerAction player2,
@@ -378,15 +390,19 @@ namespace Program
         {
             if (counters.HasNonZeroData)
             {
-                htmlWriter.InsertLineGraph(
-                            title,
-                            "Turn",
-                            player1.PlayerName,
-                            player2.PlayerName,
-                            Enumerable.Range(1, throughTurn).ToArray(),
-                            counters.GetAveragePerTurn(0, throughTurn),
-                            counters.GetAveragePerTurn(1, throughTurn)
-                            );
+                htmlWriter.InsertExpander(title, delegate()
+                {
+                    htmlWriter.InsertLineGraph(
+                                title,
+                                "Turn",
+                                player1.PlayerName,
+                                player2.PlayerName,
+                                Enumerable.Range(1, throughTurn).ToArray(),
+                                counters.GetAveragePerTurn(0, throughTurn),
+                                counters.GetAveragePerTurn(1, throughTurn)
+                                );
+                },
+                collapseByDefault: true);
             }
         }
 
@@ -395,15 +411,20 @@ namespace Program
            string title,           
            string xAxisLabel,
            HistogramData data,
-           int xAxisMaxValue)
+           int xAxisMaxValue,
+           bool colllapsebyDefault = true)
         {                     
-            htmlWriter.InsertLineGraph(
-                        title,
-                        "Turn",
-                        xAxisLabel,
-                        data.GetXAxis(xAxisMaxValue),
-                        data.GetYAxis(xAxisMaxValue)                        
-                        );            
+            htmlWriter.InsertExpander(title, delegate()
+            {
+                htmlWriter.InsertLineGraph(
+                            title,
+                            "Turn",
+                            xAxisLabel,
+                            data.GetXAxis(xAxisMaxValue),
+                            data.GetYAxis(xAxisMaxValue)                        
+                            );            
+            },
+            collapseByDefault: colllapsebyDefault);
         }
 
         private static void InsertHistogramIntegrated(
@@ -413,13 +434,17 @@ namespace Program
            HistogramData data,
            int xAxisMaxValue)
         {
-            htmlWriter.InsertLineGraph(
-                        title,
-                        "Turn",
-                        xAxisLabel,
-                        data.GetXAxis(xAxisMaxValue),
-                        data.GetYAxisIntegrated(xAxisMaxValue)
-                        );
+            htmlWriter.InsertExpander(title, delegate()
+            {
+                htmlWriter.InsertLineGraph(
+                            title,
+                            "Turn",
+                            xAxisLabel,
+                            data.GetXAxis(xAxisMaxValue),
+                            data.GetYAxisIntegrated(xAxisMaxValue)
+                            );
+            },
+            collapseByDefault: true);
         }
 
         static double TiePercent(int tieCount, int numberOfGames)
