@@ -359,19 +359,20 @@ namespace Program
                             InsertHistogramIntegrated(htmlWriter, "Probablity of Game being over by turn", "Percentage", gameEndOnTurnHistogramData, maxTurn);
                             InsertLineGraph(htmlWriter, "Average Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal, maxTurn);
                         });
-                        InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn);
-                        InsertLineGraph(htmlWriter, "Average Provinces Gained Per Turn", player1, player2, statGatherer.provincesGained, maxTurn);                        
+                        InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn);                        
                         InsertLineGraph(htmlWriter, "Average Ruins Gained Per Turn", player1, player2, statGatherer.ruinsGained, maxTurn);
                         InsertLineGraph(htmlWriter, "Average Curses Gained Per Turn", player1, player2, statGatherer.cursesGained, maxTurn);
                         InsertLineGraph(htmlWriter, "Average Curses Trashed Per Turn", player1, player2, statGatherer.cursesTrashed, maxTurn);
 
                         foreach (Card card in gameConfig.cardGameSubset.OrderBy(c => c.DefaultCoinCost))
                         {
-                            if (statGatherer.cardsTotalCount[card].HasNonZeroData)
+                            if (statGatherer.cardsTotalCount[card].HasNonZeroData ||
+                                statGatherer.cardsGain[card].HasNonZeroData)
                             {
                                 htmlWriter.InsertExpander(card.name, delegate()
                                 {
                                     InsertLineGraph(htmlWriter, "Total Count At Turn", player1, player2, statGatherer.cardsTotalCount[card], maxTurn, colllapsebyDefault:false);
+                                    InsertLineGraph(htmlWriter, "Average Gained Per Turn", player1, player2, statGatherer.cardsGain[card], maxTurn, colllapsebyDefault: true);
                                 });
                             }
                         }
