@@ -4,13 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dominion;
+using Dominion.Collections;
 
 namespace Program
 {
     public class PlayerCounter
     {
-        int[] totalDivisor;
-        int[] totalCount;
+        private readonly object theLock = new object();
+        private readonly int[] totalDivisor;
+        private readonly int[] totalCount;
 
         public PlayerCounter(int playerCount)
         {
@@ -25,7 +27,7 @@ namespace Program
 
         public void IncrementDivisor(PlayerState playerState)
         {
-            lock (this)
+            lock (this.theLock)
             {
                 this.totalDivisor[playerState.PlayerIndex]++;
             }
@@ -33,31 +35,31 @@ namespace Program
 
         public void IncrementCounter(PlayerState playerState, int amount)
         {
-            lock (this)
+            lock (this.theLock)
             {
                 this.totalCount[playerState.PlayerIndex] += amount;
             }
         }
-    }
-
+    }  
 
     public class PerTurnPlayerCounters
     {
-        private List<int>[] totalPerTurnByPlayer;
-        private List<int>[] totalCountOfTurnPerPlayer;
+        private readonly object theLock = new object();
+        private List<int>[] sumAtTurnPerPlayer;
+        private List<int>[] countAtTurnPerPlayer;
 
         public PerTurnPlayerCounters(int playerCount)
         {
-            this.totalPerTurnByPlayer = new List<int>[2];
-            for (int playerIndex = 0; playerIndex < this.totalPerTurnByPlayer.Length; ++playerIndex)
+            this.sumAtTurnPerPlayer = new List<int>[2];
+            for (int playerIndex = 0; playerIndex < this.sumAtTurnPerPlayer.Length; ++playerIndex)
             {
-                this.totalPerTurnByPlayer[playerIndex] = new List<int>(capacity: 30);
+                this.sumAtTurnPerPlayer[playerIndex] = new List<int>(capacity: 30);
             }
 
-            this.totalCountOfTurnPerPlayer = new List<int>[2];
-            for (int playerIndex = 0; playerIndex < this.totalCountOfTurnPerPlayer.Length; ++playerIndex)
+            this.countAtTurnPerPlayer = new List<int>[2];
+            for (int playerIndex = 0; playerIndex < this.countAtTurnPerPlayer.Length; ++playerIndex)
             {
-                this.totalCountOfTurnPerPlayer[playerIndex] = new List<int>(capacity: 30);
+                this.countAtTurnPerPlayer[playerIndex] = new List<int>(capacity: 30);
             }
         }
 
@@ -65,7 +67,7 @@ namespace Program
         {
             get
             {
-                foreach (var list in this.totalPerTurnByPlayer)
+                foreach (var list in this.sumAtTurnPerPlayer)
                 {
                     for (int turn = 0; turn < list.Count; ++turn)
                     {
@@ -82,7 +84,7 @@ namespace Program
         {
             get
             {
-                return this.totalCountOfTurnPerPlayer[0].Count - 1;
+                return this.countAtTurnPerPlayer[0].Count - 1;
             }
         }
 
@@ -93,8 +95,8 @@ namespace Program
                 throw new Exception("There aren't that many turns");
             }
 
-            var totalGoldPerTurn = this.totalPerTurnByPlayer[playerIndex];
-            var totalCountOfThisTurn = this.totalCountOfTurnPerPlayer[playerIndex];
+            var totalGoldPerTurn = this.sumAtTurnPerPlayer[playerIndex];
+            var totalCountOfThisTurn = this.countAtTurnPerPlayer[playerIndex];
 
             float[] result = new float[throughTurn];
 
@@ -109,38 +111,57 @@ namespace Program
         // methods to be used by IGameLog
         public void BeginTurn(PlayerState playerState)
         {
-            lock (this)
+            lock (this.theLock)
             {
-                AddToCounterForPlayer(playerState, playerState.TurnNumber, 1, this.totalCountOfTurnPerPlayer);
+                AddToCounterForPlayer(playerState.PlayerIndex, playerState.TurnNumber, 1, this.countAtTurnPerPlayer);
             }
         }
 
         public void IncrementCounter(PlayerState playerState, int amount)
         {
-            lock (this)
+            lock (this.theLock)
             {
-                AddToCounterForPlayer(playerState, playerState.TurnNumber, amount, this.totalPerTurnByPlayer);
+                AddToCounterForPlayer(playerState.PlayerIndex, playerState.TurnNumber, amount, this.sumAtTurnPerPlayer);
             }
         }
 
         private void GrowListsBy1()
         {
-            for (int playerIndex = 0; playerIndex < this.totalCountOfTurnPerPlayer.Length; ++playerIndex)
+            for (int playerIndex = 0; playerIndex < this.countAtTurnPerPlayer.Length; ++playerIndex)
             {
-                this.totalCountOfTurnPerPlayer[playerIndex].Add(0);
-                this.totalPerTurnByPlayer[playerIndex].Add(0);
+                this.countAtTurnPerPlayer[playerIndex].Add(0);
+                this.sumAtTurnPerPlayer[playerIndex].Add(0);
             }
         }
 
-        private void AddToCounterForPlayer(PlayerState playerState, int turn, int value, List<int>[] listPerPlayer)
+        private void AddToCounterForPlayer(int playerIndex, int turn, int value, List<int>[] listPerPlayer)
         {
-            List<int> list = listPerPlayer[playerState.PlayerIndex];
+            List<int> list = listPerPlayer[playerIndex];
             while (list.Count <= turn)
             {
                 this.GrowListsBy1();
             }
 
             list[turn] += value;
+        }
+
+        static public PerTurnPlayerCounters Sum(IEnumerable<PerTurnPlayerCounters> counters, int playerCount)
+        {
+            var result = new PerTurnPlayerCounters(playerCount);
+
+            foreach (var counter in counters)
+            {
+                for (int turn = 0; turn < counter.PlayerTurnCount; ++turn)
+                {
+                    for (int playerIndex = 0; playerIndex < playerCount; ++playerIndex)
+                    {
+                        result.AddToCounterForPlayer(playerIndex, turn, counter.countAtTurnPerPlayer[playerIndex][turn], result.countAtTurnPerPlayer);
+                        result.AddToCounterForPlayer(playerIndex, turn, counter.sumAtTurnPerPlayer[playerIndex][turn], result.sumAtTurnPerPlayer);            
+                    }                    
+                }
+            }
+
+            return result;
         }
     }
 }

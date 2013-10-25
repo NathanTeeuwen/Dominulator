@@ -1,33 +1,32 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Dominion
-{            
+{   
     public class GameState
     {
+        private readonly Game game;
+
+        internal IGameLog gameLog { get { return this.game.GameLog; } }
         internal bool hasCurrentPlayerGainedCard;
         internal bool doesCurrentPlayerNeedOutpostTurn;
-        internal PlayerState self;
-        public IGameLog gameLog;        
+        internal PlayerState self;        
         public PlayerCircle players;
         public PileOfCards[] supplyPiles;
         public PileOfCards[] nonSupplyPiles;
         private MapOfCardsForGameSubset<PileOfCards> mapCardToPile;
         public BagOfCards trash;
         private MapPileOfCards<bool> hasPileEverBeenGained;
-        private MapPileOfCards<int> pileEmbargoTokenCount;
+        private MapPileOfCards<int> pileEmbargoTokenCount;                     
 
-        private readonly CardGameSubset cardGameSubset;
+        public int InProgressGameIndex;        
 
         public CardGameSubset CardGameSubset
         {
             get
             {
-                return this.cardGameSubset;
+                return this.game.CardGameSubset;
             }
         }
 
@@ -50,28 +49,27 @@ namespace Dominion
         // special piles not in the supply - not available in every game
         private PileOfCards blackMarketDeck = null;
 
-        public GameState(             
-            IGameLog gameLog,
+        public GameState(                         
             IPlayerAction[] playerActions,
-            int[] playerPositions,
-            GameConfig gameConfig,
-            Random random,
+            int[] playerPositions,            
+            Game game,
             IEnumerable<CardCountPair>[] startingDeckPerPlayer = null)
         {
-            int playerCount = playerActions.Length;
-            this.gameLog = gameLog;
-            this.cardGameSubset = gameConfig.cardGameSubset;
-            this.supplyPiles = gameConfig.GetSupplyPiles(playerCount, random);
+            this.game = game;
+            GameConfig gameConfig = game.GameConfig;
+
+            int playerCount = playerActions.Length;            
+            this.supplyPiles = gameConfig.GetSupplyPiles(playerCount, game.random);
             this.nonSupplyPiles = gameConfig.GetNonSupplyPiles();
 
-            this.mapCardToPile = new MapOfCardsForGameSubset<PileOfCards>(this.cardGameSubset);
+            this.mapCardToPile = new MapOfCardsForGameSubset<PileOfCards>(this.CardGameSubset);
             this.BuildMapOfCardToPile();
 
-            this.players = new PlayerCircle(playerCount, playerActions, playerPositions, this.gameLog, random, this.cardGameSubset);
+            this.players = new PlayerCircle(playerCount, playerActions, playerPositions, game);
 
             this.hasPileEverBeenGained = new MapPileOfCards<bool>(this.supplyPiles);
             this.pileEmbargoTokenCount = new MapPileOfCards<int>(this.supplyPiles);
-            this.trash = new BagOfCards(this.cardGameSubset);            
+            this.trash = new BagOfCards(this.CardGameSubset);            
 
             this.GainStartingCards(gameConfig);
 
@@ -85,7 +83,7 @@ namespace Dominion
 
         private void BuildMapOfCardToPile()
         {
-            foreach (Card card in this.cardGameSubset)
+            foreach (Card card in this.CardGameSubset)
             {
                 this.mapCardToPile[card] = this.GetPileBuilder(card);
             }
@@ -137,7 +135,7 @@ namespace Dominion
         public void PlayGameToEnd()
         {
             int noGainCount = 0;
-
+            
             this.gameLog.StartGame(this);
 
             while (!IsVictoryConditionReached())
@@ -469,12 +467,13 @@ namespace Dominion
 
         internal bool DoesGameHaveCard(Card card)
         {
-            return this.cardGameSubset.HasCard(card);
+            return this.CardGameSubset.HasCard(card);
         }
 
         internal int CountOfDifferentTreasuresInTrash()
         {
             return this.trash.Where(card => card.isTreasure).GroupBy(card => card).Count();
-        }        
+        }
+        
     }          
 }

@@ -11,14 +11,14 @@ namespace Dominion
         private PlayerState[] players;   // circular list, higher numbers to the left;
         private int currentPlayerIndex;
 
-        public PlayerCircle(int playerCount, IPlayerAction[] playerActions, int[] playerPosition, IGameLog gameLog, Random random, CardGameSubset gameSubset)
+        public PlayerCircle(int playerCount, IPlayerAction[] playerActions, int[] playerPosition, Game game)
         {
             this.players = new PlayerState[playerCount];
             for (int playerIndex = 0; playerIndex < this.players.Length; ++playerIndex)
             {
                 int playPosition = playerPosition[playerIndex];
                 IPlayerAction playerAction = playerActions[playerIndex];
-                this.players[playPosition] = new PlayerState(playerAction, playerIndex, gameLog, random, gameSubset);
+                this.players[playPosition] = new PlayerState(playerAction, playerIndex, game);
             }
 
             this.currentPlayerIndex = 0;

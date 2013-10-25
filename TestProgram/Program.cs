@@ -240,40 +240,39 @@ namespace Program
                     int[] playedPositions = swappedOrder ? swappedPlayerPositions : originalPositions;                    
 
                     Random random = new Random(gameCount);
+                    using (Game game = new Game(random, gameConfig, gameLogMultiplexer))
+                    {
 
-                    GameState gameState = new GameState(
-                        gameLogMultiplexer,
-                        playerActions,
-                        playedPositions,
-                        gameConfig,
-                        random);
+                        GameState gameState = new GameState(
+                            playerActions,
+                            playedPositions,
+                            game);
 
-                    gameState.PlayGameToEnd();
+                        gameState.PlayGameToEnd();
+                        PlayerState[] winners = gameState.WinningPlayers;
 
-                    PlayerState[] winners = gameState.WinningPlayers;
-
-                    int player1Score = gameState.players.OriginalPlayerOrder[playedPositions[0]].TotalScore();
-                    int player2Score = gameState.players.OriginalPlayerOrder[playedPositions[1]].TotalScore();
-                    int scoreDifference = player2Score - player1Score;
-                    pointSpreadHistogramData.AddOneToBucket(scoreDifference);
-                    gameEndOnTurnHistogramData.AddOneToBucket(gameState.players.CurrentPlayer.TurnNumber);
-                    maxTurnNumber = Math.Max(gameState.players.CurrentPlayer.TurnNumber, maxTurnNumber);
-
-                    lock (winnerCount)
-                    {                        
-                        if (winners.Length == 1)
+                        int player1Score = gameState.players.OriginalPlayerOrder[playedPositions[0]].TotalScore();
+                        int player2Score = gameState.players.OriginalPlayerOrder[playedPositions[1]].TotalScore();
+                        int scoreDifference = player2Score - player1Score;
+                        pointSpreadHistogramData.AddOneToBucket(scoreDifference);
+                        gameEndOnTurnHistogramData.AddOneToBucket(gameState.players.CurrentPlayer.TurnNumber);
+                        maxTurnNumber = Math.Max(gameState.players.CurrentPlayer.TurnNumber, maxTurnNumber);
+                        lock (winnerCount)
                         {
-                            int winningPlayerIndex = winners[0].Actions == player1 ? 0 : 1;
-                            winnerCount[winningPlayerIndex]++;
-
-                            if (winningPlayerIndex == 1 && showPlayer2Wins)
+                            if (winners.Length == 1)
                             {
-                                System.Console.WriteLine("Player 2 won game {0}. ", gameCount);
+                                int winningPlayerIndex = winners[0].Actions == player1 ? 0 : 1;
+                                winnerCount[winningPlayerIndex]++;
+
+                                if (winningPlayerIndex == 1 && showPlayer2Wins)
+                                {
+                                    System.Console.WriteLine("Player 2 won game {0}. ", gameCount);
+                                }
                             }
-                        }
-                        else
-                        {
-                            tieCount++;
+                            else
+                            {
+                                tieCount++;
+                            }
                         }
                     }
                 }

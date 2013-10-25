@@ -13,10 +13,11 @@ namespace Dominion
         
         internal readonly int playerIndex;
         internal readonly PlayerActionWithSelf actions;
-        internal readonly IGameLog gameLog;
+        internal readonly Game game;
+        internal IGameLog gameLog { get { return this.game.GameLog; } }
+        internal Random random { get { return this.game.random; } }
         
-        internal PlayPhase playPhase;
-        internal Random random;                
+        internal PlayPhase playPhase;        
 
         internal PlayerTurnCounters turnCounters;
         
@@ -63,6 +64,8 @@ namespace Dominion
         public SetOfCards CardsBoughtThisTurn { get { return this.turnCounters.cardsBoughtThisTurn; } }
         public SetOfCards CardsGainedThisTurn { get { return this.turnCounters.cardsGainedThisTurn; } }
 
+        public Game Game { get { return this.game; } }
+
         // Card specific state that strategies can query about
         internal int numberOfCardsToBeDrawn;
         public int NumberOfCardsToBeDrawn { get { return this.numberOfCardsToBeDrawn; } }
@@ -78,12 +81,13 @@ namespace Dominion
         internal int victoryTokenCount;
         internal int pirateShipTokenCount;
 
-        internal PlayerState(IPlayerAction actions, int playerIndex, IGameLog gameLog, Random random, CardGameSubset gameSubset)
+        internal PlayerState(IPlayerAction actions, int playerIndex, Game game)
         {
-            this.gameLog = gameLog;
+            this.game = game;
+
+            CardGameSubset gameSubset = game.CardGameSubset;            
             this.actions = new PlayerActionWithSelf(actions, this);
-            this.playPhase = PlayPhase.NotMyTurn;
-            this.random = random;
+            this.playPhase = PlayPhase.NotMyTurn;            
             this.playerIndex = playerIndex;
 
             // duplicates

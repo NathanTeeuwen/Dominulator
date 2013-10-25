@@ -86,6 +86,7 @@
     <Compile Include="Cards\TestCards.cs" />
     <Compile Include="Collections\MapOfCards.cs" />
     <Compile Include="Collections\MapOfCardsForGameSubset.cs" />
+    <Compile Include="Collections\MapOfGame.cs" />
     <Compile Include="Collections\MapPileOfCards.cs" />
     <Compile Include="Collections\PileOfCards.cs" />
     <Compile Include="Collections\SetOfCards.cs" />

@@ -15,7 +15,7 @@ namespace Program
 
         public void AddOneToBucket(int bucket)
         {
-            lock (this)
+            lock (this.mapBucketToCount)
             {
                 this.totalCount++;
 

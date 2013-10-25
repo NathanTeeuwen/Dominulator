@@ -8,11 +8,11 @@ namespace Dominion
 {
     public class MapOfCards<T>
     {        
-        List<T> mapCardIndexToResult;
+        private readonly List<T> mapCardIndexToResult;
 
         public MapOfCards()
-        {            
-            this.mapCardIndexToResult = new List<T>(capacity:250);
+        {
+            this.mapCardIndexToResult = new List<T>(capacity: Game.ApproxNumberOfDifferentCards);
         }
 
         public T this[Card card]
