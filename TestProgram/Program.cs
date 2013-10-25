@@ -367,6 +367,7 @@ namespace Program
                         {
                             InsertCardData(htmlWriter, statGatherer.endOfGameCardCount, gameConfig.cardGameSubset, player1, player2);
                             InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn);
+                            InsertLineGraph(htmlWriter, "Average Number of cards Gained Per Turn", player1, player2, statGatherer.cardsGained, maxTurn);
                             InsertLineGraph(htmlWriter, "Shuffles Per Turn", player1, player2, statGatherer.deckShuffleCount, maxTurn);
                             
                             InsertLineGraph(htmlWriter, "Average Ruins Gained Per Turn", player1, player2, statGatherer.ruinsGained, maxTurn);
@@ -377,12 +378,12 @@ namespace Program
                         foreach (Card card in gameConfig.cardGameSubset.OrderBy(c => c.DefaultCoinCost))
                         {
                             if (statGatherer.cardsTotalCount[card].HasNonZeroData ||
-                                statGatherer.cardsGain[card].HasNonZeroData)
+                                statGatherer.cardsOwnedAtEndOfGame[card].HasNonZeroData)
                             {
                                 htmlWriter.InsertExpander(card.name, delegate()
                                 {
                                     InsertLineGraph(htmlWriter, "Total Count At Turn", player1, player2, statGatherer.cardsTotalCount[card], maxTurn, colllapsebyDefault:false);
-                                    InsertLineGraph(htmlWriter, "Average Gained Per Turn", player1, player2, statGatherer.cardsGain[card], maxTurn, colllapsebyDefault: true);
+                                    InsertLineGraph(htmlWriter, "Average Gained Per Turn", player1, player2, statGatherer.cardsOwnedAtEndOfGame[card], maxTurn, colllapsebyDefault: true);
                                 });
                             }
                         }

@@ -12,10 +12,11 @@ namespace Program
     {
         private CardGameSubset cardGameSubset;
         public PerTurnPlayerCounters coinToSpend;
+        public PerTurnPlayerCounters cardsGained;
         public PerTurnPlayerCounters victoryPointTotal;
         public PerTurnPlayerCounters ruinsGained;
         public MapOfCardsForGameSubset<PerTurnPlayerCounters> cardsTotalCount;
-        public MapOfCardsForGameSubset<PerTurnPlayerCounters> cardsGain;
+        public MapOfCardsForGameSubset<PerTurnPlayerCounters> cardsOwnedAtEndOfGame;
         public MapOfCardsForGameSubset<PlayerCounter> endOfGameCardCount;
         public PerTurnPlayerCounters cursesGained;        
         public PerTurnPlayerCounters cursesTrashed;
@@ -25,6 +26,7 @@ namespace Program
         public StatsPerTurnGameLog(int playerCount, CardGameSubset gameSubset)
         {
             this.coinToSpend = new PerTurnPlayerCounters(playerCount);
+            this.cardsGained = new PerTurnPlayerCounters(playerCount);
             this.ruinsGained = new PerTurnPlayerCounters(playerCount);
             this.cursesGained = new PerTurnPlayerCounters(playerCount);            
             this.cursesTrashed = new PerTurnPlayerCounters(playerCount);            
@@ -35,7 +37,7 @@ namespace Program
             this.cardGameSubset = gameSubset;
 
             this.cardsTotalCount = ContstructCounterPerTurn(playerCount, gameSubset); 
-            this.cardsGain = ContstructCounterPerTurn(playerCount, gameSubset);
+            this.cardsOwnedAtEndOfGame = ContstructCounterPerTurn(playerCount, gameSubset);
             this.endOfGameCardCount = ContstructCounter(playerCount, gameSubset); 
         }
 
@@ -80,13 +82,14 @@ namespace Program
         public override void BeginTurn(PlayerState playerState)
         {
             this.coinToSpend.BeginTurn(playerState);
+            this.cardsGained.BeginTurn(playerState);
             this.ruinsGained.BeginTurn(playerState);
             this.cursesGained.BeginTurn(playerState);
             this.deckShuffleCount.BeginTurn(playerState);            
             this.cursesTrashed.BeginTurn(playerState);            
             this.victoryPointTotal.BeginTurn(playerState);
             BeginTurnAllCountersPerCard(this.cardsTotalCount, playerState);
-            BeginTurnAllCountersPerCard(this.cardsGain, playerState);
+            BeginTurnAllCountersPerCard(this.cardsOwnedAtEndOfGame, playerState);
         }
 
         public override void EndGame(GameState gameState)
@@ -164,6 +167,8 @@ namespace Program
 
         private void PlayerGainedOrBoughtCard(PlayerState playerState, Card card)
         {
+            this.cardsGained.IncrementCounter(playerState, 1);
+            
             if (card.isRuins)
             {
                 this.ruinsGained.IncrementCounter(playerState, 1);
@@ -174,7 +179,7 @@ namespace Program
             }
             else 
             {
-                this.cardsGain[card].IncrementCounter(playerState, 1);                
+                this.cardsOwnedAtEndOfGame[card].IncrementCounter(playerState, 1);                
             }
         }
 
