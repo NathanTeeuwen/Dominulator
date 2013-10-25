@@ -10,9 +10,9 @@ namespace Program
     class PlayerActionFromCardResponses
         : IPlayerAction
     {
-        private MapOfCardsFor<IPlayerAction> cardResponses;
+        private MapOfCards<IPlayerAction> cardResponses;
 
-        public PlayerActionFromCardResponses(MapOfCardsFor<IPlayerAction> cardResponses)
+        public PlayerActionFromCardResponses(MapOfCards<IPlayerAction> cardResponses)
         {
             this.cardResponses = cardResponses;
         }

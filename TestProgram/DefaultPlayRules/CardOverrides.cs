@@ -6,9 +6,9 @@ namespace Program.DefaultStrategies
 {    
     static class DefaultResponses
     {
-        public static MapOfCardsFor<IPlayerAction> GetCardResponses(PlayerAction playerAction)
+        public static MapOfCards<IPlayerAction> GetCardResponses(PlayerAction playerAction)
         {
-            var result = new MapOfCardsFor<IPlayerAction>();
+            var result = new MapOfCards<IPlayerAction>();
 
             result[Cards.Ambassador] = new Ambassador(playerAction);
             result[Cards.Alchemist] = new Alchemist(playerAction);
@@ -33,9 +33,9 @@ namespace Program.DefaultStrategies
             return result;
         }
 
-        public static MapOfCardsFor<GameStatePlayerActionPredicate> GetCardShouldPlayDefaults(PlayerAction playerAction)
+        public static MapOfCards<GameStatePlayerActionPredicate> GetCardShouldPlayDefaults(PlayerAction playerAction)
         {
-            var result = new MapOfCardsFor<GameStatePlayerActionPredicate>();
+            var result = new MapOfCards<GameStatePlayerActionPredicate>();
 
             result[Cards.Remodel] = Strategies.HasCardToTrashInHand;
             result[Cards.Salvager] = Strategies.HasCardToTrashInHand;

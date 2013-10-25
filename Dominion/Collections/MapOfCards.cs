@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-    public class MapOfCardsFor<T>
+    public class MapOfCards<T>
     {        
         List<T> mapCardIndexToResult;
 
-        public MapOfCardsFor()
+        public MapOfCards()
         {            
             this.mapCardIndexToResult = new List<T>(capacity:250);
         }
@@ -37,38 +37,4 @@ namespace Dominion
         }
     }
 
-    public class MapOfCardsForGameSubset<T>
-    {
-        private readonly CardGameSubset gameSubset;
-        T[] mapCardIndexToResult;
-
-        public MapOfCardsForGameSubset(CardGameSubset gameSubset)
-        {
-            this.gameSubset = gameSubset;
-            this.mapCardIndexToResult = new T[gameSubset.CountOfCardTypesInGame];
-        }
-
-        public CardGameSubset GameSubset
-        {
-            get
-            {
-                return this.gameSubset;
-            }
-        }
-
-        public T this[Card card]
-        {
-            set
-            {
-                int index = this.gameSubset.GetIndexFor(card);
-                this.mapCardIndexToResult[index] = value;
-            }
-
-            get
-            {
-                int index = this.gameSubset.GetIndexFor(card);
-                return this.mapCardIndexToResult[index];
-            }
-        }
-    }
 }

@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-    class MapPileOfCardsToProperty<T>
+    class MapPileOfCards<T>
     {
         PileOfCards[] supplyPiles;
         T[] array;
 
-        public MapPileOfCardsToProperty(PileOfCards[] supplyPiles)
+        public MapPileOfCards(PileOfCards[] supplyPiles)
         {
             this.supplyPiles = supplyPiles;
             this.array = new T[this.supplyPiles.Length];

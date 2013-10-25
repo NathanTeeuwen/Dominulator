@@ -28,7 +28,7 @@ namespace Program
         internal readonly ICardPicker defaultActionOrder;
 
         private readonly PlayerActionFromCardResponses defaultCardResponses;
-        private readonly MapOfCardsFor<GameStatePlayerActionPredicate> defaultShouldPlay;
+        private readonly MapOfCards<GameStatePlayerActionPredicate> defaultShouldPlay;
 
         public PlayerAction(
             string name,            

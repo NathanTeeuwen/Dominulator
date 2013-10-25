@@ -18,8 +18,8 @@ namespace Dominion
         public PileOfCards[] nonSupplyPiles;
         private MapOfCardsForGameSubset<PileOfCards> mapCardToPile;
         public BagOfCards trash;
-        private MapPileOfCardsToProperty<bool> hasPileEverBeenGained;
-        private MapPileOfCardsToProperty<int> pileEmbargoTokenCount;
+        private MapPileOfCards<bool> hasPileEverBeenGained;
+        private MapPileOfCards<int> pileEmbargoTokenCount;
 
         private readonly CardGameSubset cardGameSubset;
 
@@ -69,8 +69,8 @@ namespace Dominion
 
             this.players = new PlayerCircle(playerCount, playerActions, playerPositions, this.gameLog, random, this.cardGameSubset);
 
-            this.hasPileEverBeenGained = new MapPileOfCardsToProperty<bool>(this.supplyPiles);
-            this.pileEmbargoTokenCount = new MapPileOfCardsToProperty<int>(this.supplyPiles);
+            this.hasPileEverBeenGained = new MapPileOfCards<bool>(this.supplyPiles);
+            this.pileEmbargoTokenCount = new MapPileOfCards<int>(this.supplyPiles);
             this.trash = new BagOfCards(this.cardGameSubset);            
 
             this.GainStartingCards(gameConfig);
