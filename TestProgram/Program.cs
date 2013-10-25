@@ -255,10 +255,11 @@ namespace Program
                         int player2Score = gameState.players.OriginalPlayerOrder[playedPositions[1]].TotalScore();
                         int scoreDifference = player2Score - player1Score;
                         pointSpreadHistogramData.AddOneToBucket(scoreDifference);
-                        gameEndOnTurnHistogramData.AddOneToBucket(gameState.players.CurrentPlayer.TurnNumber);
-                        maxTurnNumber = Math.Max(gameState.players.CurrentPlayer.TurnNumber, maxTurnNumber);
+                        gameEndOnTurnHistogramData.AddOneToBucket(gameState.players.CurrentPlayer.TurnNumber);                        
+
                         lock (winnerCount)
                         {
+                            maxTurnNumber = Math.Max(gameState.players.CurrentPlayer.TurnNumber, maxTurnNumber);
                             if (winners.Length == 1)
                             {
                                 int winningPlayerIndex = winners[0].Actions == player1 ? 0 : 1;
@@ -317,83 +318,110 @@ namespace Program
                 System.Console.WriteLine("Player 1 Score Delta distribution");
                 System.Console.WriteLine("=================================");
                 pointSpreadHistogramData.WriteBuckets(System.Console.Out);
-            }
-
-            int maxTurn = gameEndOnTurnHistogramData.GetXAxisValueCoveringUpTo(97);
+            }            
 
             if (createHtmlReport)
             {
                 // write out HTML report summary
                 {
-                    using (var textWriter = new IndentedTextWriter(GetOuputFilename(player1.PlayerName + " VS " + player2.PlayerName + ".html")))
-                    {
-                        var htmlWriter = new HtmlRenderer(textWriter);
-                        htmlWriter.Begin();
-                        htmlWriter.Header1(player1.PlayerName + " VS " + player2.PlayerName);                        
-                        htmlWriter.WriteLine("Number of Games: " + numberOfGames);
-                        htmlWriter.WriteLine(firstPlayerAdvantage ? player1.PlayerName + " always started first" : "Players took turns going first");                       
-
-                        var pieLabels = new List<string>();
-                        var pieData = new List<float>();
-
-                        for (int index = 0; index < winnerCount.Length; ++index)
-                        {
-                            pieLabels.Add(playerActions[index].name);
-                            pieData.Add((float)PlayerWinPercent(index, winnerCount, numberOfGames));
-                        }
-                        if (tieCount > 0)
-                        {
-                            pieLabels.Add("Tie");
-                            pieData.Add((float)TiePercent(tieCount, numberOfGames));
-                        }                        
-                        
-                        htmlWriter.InsertExpander("Who Won?", delegate()
-                        {
-                            InsertPieChart(htmlWriter, "Game Breakdown", "Player", "Percent", pieLabels.ToArray(), pieData.ToArray(), colllapsebyDefault:false);
-                            InsertHistogram(htmlWriter, "Point Spread:  " + player1.PlayerName + " score <= 0 >= " + player2.PlayerName + " score", "Percentage", pointSpreadHistogramData, int.MaxValue, content: delegate()
-                            {
-                                htmlWriter.WriteLine("To the left of 0 are games won by " + player1.PlayerName + ".  To the right are games won by " + player2.PlayerName + ".  The xaxis (absolute value) indicates how many points the game was won by.  The area under the curve indicates the win rate for the corresponding player.");
-                            });
-                            InsertLineGraph(htmlWriter, "Probability player is ahead in points at end of round ", player1, player2, statGatherer.oddsOfBeingAheadOnRoundEnd, maxTurn);
-                            InsertLineGraph(htmlWriter, "Average Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal, maxTurn);                            
-                        }, collapseByDefault:false);                        
-                        htmlWriter.InsertExpander("When does the game end?", delegate()
-                        {
-                            InsertHistogram(htmlWriter, "Probablity of Game ending on Turn", "Percentage", gameEndOnTurnHistogramData, maxTurn, colllapsebyDefault:false);
-                            InsertHistogramIntegrated(htmlWriter, "Probablity of Game being over by turn", "Percentage", gameEndOnTurnHistogramData, maxTurn);                            
-                        });
-                        htmlWriter.InsertExpander("Deck Strength", delegate()
-                        {
-                            InsertCardData(htmlWriter, statGatherer.endOfGameCardCount, gameConfig.cardGameSubset, player1, player2);
-                            InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn);
-                            InsertLineGraph(htmlWriter, "Average Number of cards Gained Per Turn", player1, player2, statGatherer.cardsGained, maxTurn);
-                            InsertLineGraph(htmlWriter, "Shuffles Per Turn", player1, player2, statGatherer.deckShuffleCount, maxTurn);
-                            
-                            InsertLineGraph(htmlWriter, "Average Ruins Gained Per Turn", player1, player2, statGatherer.ruinsGained, maxTurn);
-                            InsertLineGraph(htmlWriter, "Average Curses Gained Per Turn", player1, player2, statGatherer.cursesGained, maxTurn);
-                            InsertLineGraph(htmlWriter, "Average Curses Trashed Per Turn", player1, player2, statGatherer.cursesTrashed, maxTurn);
-                        });
-                        
-                        foreach (Card card in gameConfig.cardGameSubset.OrderBy(c => c.DefaultCoinCost))
-                        {
-                            if (statGatherer.cardsTotalCount[card].HasNonZeroData ||
-                                statGatherer.cardsOwnedAtEndOfGame[card].HasNonZeroData)
-                            {
-                                htmlWriter.InsertExpander(card.name, delegate()
-                                {
-                                    InsertLineGraph(htmlWriter, "Total Count At Turn", player1, player2, statGatherer.cardsTotalCount[card], maxTurn, colllapsebyDefault:false);
-                                    InsertLineGraph(htmlWriter, "Average Gained Per Turn", player1, player2, statGatherer.cardsOwnedAtEndOfGame[card], maxTurn, colllapsebyDefault: true);
-                                });
-                            }
-                        }
-                        
-                        htmlWriter.End();
-                    }
+                    CreateHtmlReport(
+                        player1, 
+                        player2, 
+                        gameConfig, 
+                        firstPlayerAdvantage, 
+                        numberOfGames, 
+                        playerActions, 
+                        winnerCount, 
+                        tieCount, 
+                        statGatherer, 
+                        pointSpreadHistogramData, 
+                        gameEndOnTurnHistogramData);
                 }
             }
 
             double diff = PlayerWinPercent(0, winnerCount, numberOfGames) - PlayerWinPercent(1, winnerCount, numberOfGames);
             return diff;
+        }
+
+        private static void CreateHtmlReport(
+            PlayerAction player1, 
+            PlayerAction player2, 
+            GameConfig gameConfig, 
+            bool firstPlayerAdvantage, 
+            int numberOfGames, 
+            PlayerAction[] playerActions, 
+            int[] winnerCount, 
+            int tieCount, 
+            StatsPerTurnGameLog statGatherer, 
+            HistogramData pointSpreadHistogramData, 
+            HistogramData gameEndOnTurnHistogramData)
+        {
+            int maxTurn = gameEndOnTurnHistogramData.GetXAxisValueCoveringUpTo(97);
+
+            using (var textWriter = new IndentedTextWriter(GetOuputFilename(player1.PlayerName + " VS " + player2.PlayerName + ".html")))
+            {
+                var htmlWriter = new HtmlRenderer(textWriter);
+                htmlWriter.Begin();
+                htmlWriter.Header1(player1.PlayerName + " VS " + player2.PlayerName);
+                htmlWriter.WriteLine("Number of Games: " + numberOfGames);
+                htmlWriter.WriteLine(firstPlayerAdvantage ? player1.PlayerName + " always started first" : "Players took turns going first");
+
+                var pieLabels = new List<string>();
+                var pieData = new List<float>();
+
+                for (int index = 0; index < winnerCount.Length; ++index)
+                {
+                    pieLabels.Add(playerActions[index].name);
+                    pieData.Add((float)PlayerWinPercent(index, winnerCount, numberOfGames));
+                }
+                if (tieCount > 0)
+                {
+                    pieLabels.Add("Tie");
+                    pieData.Add((float)TiePercent(tieCount, numberOfGames));
+                }
+
+                htmlWriter.InsertExpander("Who Won?", delegate()
+                {
+                    InsertPieChart(htmlWriter, "Game Breakdown", "Player", "Percent", pieLabels.ToArray(), pieData.ToArray(), colllapsebyDefault: false);
+                    InsertHistogram(htmlWriter, "Point Spread:  " + player1.PlayerName + " score <= 0 >= " + player2.PlayerName + " score", "Percentage", pointSpreadHistogramData, int.MaxValue, content: delegate()
+                    {
+                        htmlWriter.WriteLine("To the left of 0 are games won by " + player1.PlayerName + ".  To the right are games won by " + player2.PlayerName + ".  The xaxis (absolute value) indicates how many points the game was won by.  The area under the curve indicates the win rate for the corresponding player.");
+                    });
+                    InsertLineGraph(htmlWriter, "Probability player is ahead in points at end of round ", player1, player2, statGatherer.oddsOfBeingAheadOnRoundEnd, maxTurn);
+                    InsertLineGraph(htmlWriter, "Average Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal, maxTurn);
+                }, collapseByDefault: false);
+                htmlWriter.InsertExpander("When does the game end?", delegate()
+                {
+                    InsertHistogram(htmlWriter, "Probablity of Game ending on Turn", "Percentage", gameEndOnTurnHistogramData, maxTurn, colllapsebyDefault: false);
+                    InsertHistogramIntegrated(htmlWriter, "Probablity of Game being over by turn", "Percentage", gameEndOnTurnHistogramData, maxTurn);
+                });
+                htmlWriter.InsertExpander("Deck Strength", delegate()
+                {
+                    InsertCardData(htmlWriter, statGatherer.endOfGameCardCount, gameConfig.cardGameSubset, player1, player2);
+                    InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn);
+                    InsertLineGraph(htmlWriter, "Average Number of cards Gained Per Turn", player1, player2, statGatherer.cardsGained, maxTurn);
+                    InsertLineGraph(htmlWriter, "Shuffles Per Turn", player1, player2, statGatherer.deckShuffleCount, maxTurn);
+
+                    InsertLineGraph(htmlWriter, "Average Ruins Gained Per Turn", player1, player2, statGatherer.ruinsGained, maxTurn);
+                    InsertLineGraph(htmlWriter, "Average Curses Gained Per Turn", player1, player2, statGatherer.cursesGained, maxTurn);
+                    InsertLineGraph(htmlWriter, "Average Curses Trashed Per Turn", player1, player2, statGatherer.cursesTrashed, maxTurn);
+                });
+
+                foreach (Card card in gameConfig.cardGameSubset.OrderBy(c => c.DefaultCoinCost))
+                {
+                    if (statGatherer.cardsTotalCount[card].HasNonZeroData ||
+                        statGatherer.cardsOwnedAtEndOfGame[card].HasNonZeroData)
+                    {
+                        htmlWriter.InsertExpander(card.name, delegate()
+                        {
+                            InsertLineGraph(htmlWriter, "Total Count At Turn", player1, player2, statGatherer.cardsTotalCount[card], maxTurn, colllapsebyDefault: false);
+                            InsertLineGraph(htmlWriter, "Average Gained Per Turn", player1, player2, statGatherer.cardsOwnedAtEndOfGame[card], maxTurn, colllapsebyDefault: true);
+                        });
+                    }
+                }
+
+                htmlWriter.End();
+            }
         }
 
         private static void InsertCardData(HtmlRenderer htmlWriter, MapOfCardsForGameSubset<PlayerCounter> map, CardGameSubset gameSubset, PlayerAction player1, PlayerAction player2)
