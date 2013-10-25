@@ -323,20 +323,21 @@ namespace Program
             if (createHtmlReport)
             {
                 // write out HTML report summary
+                Task.Factory.StartNew(delegate()
                 {
                     CreateHtmlReport(
-                        player1, 
-                        player2, 
-                        gameConfig, 
-                        firstPlayerAdvantage, 
-                        numberOfGames, 
-                        playerActions, 
-                        winnerCount, 
-                        tieCount, 
-                        statGatherer, 
-                        pointSpreadHistogramData, 
+                        player1,
+                        player2,
+                        gameConfig,
+                        firstPlayerAdvantage,
+                        numberOfGames,
+                        playerActions,
+                        winnerCount,
+                        tieCount,
+                        statGatherer,
+                        pointSpreadHistogramData,
                         gameEndOnTurnHistogramData);
-                }
+                });
             }
 
             double diff = PlayerWinPercent(0, winnerCount, numberOfGames) - PlayerWinPercent(1, winnerCount, numberOfGames);
@@ -424,7 +425,7 @@ namespace Program
             }
         }
 
-        private static void InsertCardData(HtmlRenderer htmlWriter, MapOfCardsForGameSubset<PlayerCounter> map, CardGameSubset gameSubset, PlayerAction player1, PlayerAction player2)
+        private static void InsertCardData(HtmlRenderer htmlWriter, MapOfCardsForGameSubset<PlayerCounterSeparatedByGame> map, CardGameSubset gameSubset, PlayerAction player1, PlayerAction player2)
         {
             var cards = gameSubset.OrderBy(c => c.DefaultCoinCost);
             var player1Data = new List<float>();
@@ -452,7 +453,7 @@ namespace Program
             string title,
             PlayerAction player1,
             PlayerAction player2,
-            PerTurnPlayerCounters counters,
+            PerTurnPlayerCountersSeparatedByGame counters,
             int throughTurn,
             bool colllapsebyDefault = true)
         {

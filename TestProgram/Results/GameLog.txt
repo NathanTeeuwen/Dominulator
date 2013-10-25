@@ -1,1264 +1,987 @@
-MineHoard gained Copper.
-MineHoard gained Copper.
-MineHoard gained Copper.
-MineHoard gained Copper.
-MineHoard gained Copper.
-MineHoard gained Copper.
-MineHoard gained Copper.
-MineHoard gained Estate.
-MineHoard gained Estate.
-MineHoard gained Estate.
-FamiliarPotionSilverOpenning gained Copper.
-FamiliarPotionSilverOpenning gained Copper.
-FamiliarPotionSilverOpenning gained Copper.
-FamiliarPotionSilverOpenning gained Copper.
-FamiliarPotionSilverOpenning gained Copper.
-FamiliarPotionSilverOpenning gained Copper.
-FamiliarPotionSilverOpenning gained Copper.
-FamiliarPotionSilverOpenning gained Estate.
-FamiliarPotionSilverOpenning gained Estate.
-FamiliarPotionSilverOpenning gained Estate.
-MineHoard reshuffled
-MineHoard Drew Copper into hand.
-MineHoard Drew Copper into hand.
-MineHoard Drew Copper into hand.
-MineHoard Drew Estate into hand.
-MineHoard Drew Copper into hand.
-FamiliarPotionSilverOpenning reshuffled
-FamiliarPotionSilverOpenning Drew Estate into hand.
-FamiliarPotionSilverOpenning Drew Copper into hand.
-FamiliarPotionSilverOpenning Drew Copper into hand.
-FamiliarPotionSilverOpenning Drew Copper into hand.
-FamiliarPotionSilverOpenning Drew Estate into hand.
+BigMoney<Young Witch> gained Copper.
+BigMoney<Young Witch> gained Copper.
+BigMoney<Young Witch> gained Copper.
+BigMoney<Young Witch> gained Copper.
+BigMoney<Young Witch> gained Copper.
+BigMoney<Young Witch> gained Copper.
+BigMoney<Young Witch> gained Copper.
+BigMoney<Young Witch> gained Estate.
+BigMoney<Young Witch> gained Estate.
+BigMoney<Young Witch> gained Estate.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoney<Young Witch> reshuffled
+BigMoney<Young Witch> Drew Copper into hand.
+BigMoney<Young Witch> Drew Copper into hand.
+BigMoney<Young Witch> Drew Copper into hand.
+BigMoney<Young Witch> Drew Estate into hand.
+BigMoney<Young Witch> Drew Copper into hand.
+BigMoney reshuffled
+BigMoney Drew Estate into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Estate into hand.
 ROUND 1
 -------------
-MineHoard begins turn
+BigMoney<Young Witch> begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 1 all together.
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 2 all together.
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 3 all together.
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 4 all together.
-  MineHoard bought Silver.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Estate.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoney<Young Witch> bought Young Witch.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Estate.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Estate into hand.
+  BigMoney<Young Witch> Drew Estate into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Estate(3), Young Witch(1), 
 
-FamiliarPotionSilverOpenning begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  FamiliarPotionSilverOpenning bought Silver.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-MineHoard begins turn
+BigMoney<Young Witch> begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 1 all together.
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 2 all together.
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 3 all together.
-  MineHoard bought Silver.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Estate.
-  MineHoard reshuffled
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoney<Young Witch> bought Silver.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Estate.
+  BigMoney<Young Witch> Discarded Estate.
+  BigMoney<Young Witch> reshuffled
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Estate into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Estate(3), Silver(1), Young Witch(1), 
 
-FamiliarPotionSilverOpenning begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  FamiliarPotionSilverOpenning bought Potion.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning reshuffled
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Potion(1), Silver(1), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-MineHoard begins turn
+BigMoney<Young Witch> begins turn
 With hand: Copper,Copper,Copper,Estate,Silver,
-  MineHoard Played Silver.
+  BigMoney<Young Witch> Played Silver.
     +2 Coin = 2 all together.
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 3 all together.
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 4 all together.
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 5 all together.
-  MineHoard bought Mine.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Estate.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard ends turn with deck: Copper(7), Estate(3), Mine(1), Silver(2), 
+  BigMoney<Young Witch> bought Silver.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Estate.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Young Witch into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Estate into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Estate(3), Silver(2), Young Witch(1), 
 
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  FamiliarPotionSilverOpenning Played Silver.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 4 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  FamiliarPotionSilverOpenning bought Silver.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Potion into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Potion(1), Silver(2), 
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
 ROUND 4
 -------------
-MineHoard begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  MineHoard Played Copper.
+BigMoney<Young Witch> begins turn
+With hand: Copper,Copper,Copper,Estate,Young Witch,
+  BigMoney<Young Witch> Played Young Witch.
+    BigMoney<Young Witch> Drew Copper into hand.
+    BigMoney<Young Witch> Drew Estate into hand.
+    BigMoney<Young Witch> Discarded Estate.
+    BigMoney<Young Witch> Discarded Estate.
+    BigMoney gained Curse.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 1 all together.
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 2 all together.
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 3 all together.
-  MineHoard bought Silver.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Estate.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard reshuffled
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard ends turn with deck: Copper(7), Estate(3), Mine(1), Silver(3), 
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney<Young Witch> bought Silver.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Young Witch.
+  BigMoney<Young Witch> reshuffled
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Estate into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Estate(3), Silver(3), Young Witch(1), 
 
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Copper,Estate,Estate,Potion,
-  FamiliarPotionSilverOpenning Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Estate,
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Potion.
-    +1 Potions = 1 all together.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Potion.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning reshuffled
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Potion(1), Silver(2), 
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(1), Estate(3), Gold(1), Silver(2), 
 
 ROUND 5
 -------------
-MineHoard begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  MineHoard Played Silver.
+BigMoney<Young Witch> begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoney<Young Witch> Played Silver.
     +2 Coin = 2 all together.
-  MineHoard Played Silver.
-    +2 Coin = 4 all together.
-  MineHoard Played Copper.
-    +1 Coin = 5 all together.
-  MineHoard Played Copper.
-    +1 Coin = 6 all together.
-  MineHoard Played Copper.
-    +1 Coin = 7 all together.
-  MineHoard bought Hoard.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Silver.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Mine into hand.
-  MineHoard ends turn with deck: Copper(7), Estate(3), Hoard(1), Mine(1), Silver(3), 
-
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 1 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 4 all together.
-  FamiliarPotionSilverOpenning bought Silver.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Potion into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Potion(1), Silver(3), 
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney<Young Witch> bought Silver.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Estate.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Estate into hand.
+  BigMoney<Young Witch> Drew Young Witch into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Estate(3), Silver(4), Young Witch(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(1), Estate(3), Gold(2), Silver(2), 
 
 ROUND 6
 -------------
-MineHoard begins turn
-With hand: Copper,Copper,Estate,Estate,Mine,
-  MineHoard Played Mine.
-    MineHoard trashed Copper.
-    MineHoard gained Silver.
-      ... and placed card in hand
-  MineHoard Played Silver.
+BigMoney<Young Witch> begins turn
+With hand: Copper,Copper,Estate,Silver,Young Witch,
+  BigMoney<Young Witch> Played Young Witch.
+    BigMoney<Young Witch> Drew Copper into hand.
+    BigMoney<Young Witch> Drew Copper into hand.
+    BigMoney<Young Witch> Discarded Estate.
+    BigMoney<Young Witch> Discarded Copper.
+    BigMoney gained Curse.
+  BigMoney<Young Witch> Played Silver.
     +2 Coin = 2 all together.
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 3 all together.
-  MineHoard bought Silver.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Mine.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Estate.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard reshuffled
-  MineHoard Drew Silver into hand.
-  MineHoard ends turn with deck: Copper(6), Estate(3), Hoard(1), Mine(1), Silver(5), 
-
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Copper,Estate,Potion,Silver,
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 4 all together.
-  FamiliarPotionSilverOpenning Played Potion.
-    +1 Potions = 1 all together.
-  FamiliarPotionSilverOpenning bought Familiar.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Potion.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning reshuffled
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Familiar(1), Potion(1), Silver(3), 
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney<Young Witch> bought Silver.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Young Witch.
+  BigMoney<Young Witch> Drew Estate into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> reshuffled
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Estate(3), Silver(5), Young Witch(1), 
+
+BigMoney begins turn
+With hand: Copper,Curse,Estate,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(2), Silver(3), 
 
 ROUND 7
 -------------
-MineHoard begins turn
-With hand: Copper,Copper,Estate,Silver,Silver,
-  MineHoard Played Silver.
+BigMoney<Young Witch> begins turn
+With hand: Estate,Silver,Silver,Silver,Silver,
+  BigMoney<Young Witch> Played Silver.
     +2 Coin = 2 all together.
-  MineHoard Played Silver.
+  BigMoney<Young Witch> Played Silver.
     +2 Coin = 4 all together.
-  MineHoard Played Copper.
-    +1 Coin = 5 all together.
-  MineHoard Played Copper.
-    +1 Coin = 6 all together.
-  MineHoard bought Hoard.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Estate.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Mine into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard ends turn with deck: Copper(6), Estate(3), Hoard(2), Mine(1), Silver(5), 
+  BigMoney<Young Witch> Played Silver.
+    +2 Coin = 6 all together.
+  BigMoney<Young Witch> Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney<Young Witch> bought Gold.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Estate.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Young Witch into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(5), Young Witch(1), 
 
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 4 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 5 all together.
-  FamiliarPotionSilverOpenning bought Silver.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Familiar into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Familiar(1), Potion(1), Silver(4), 
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(2), Estate(3), Gold(3), Silver(3), 
 
 ROUND 8
 -------------
-MineHoard begins turn
-With hand: Estate,Estate,Mine,Silver,Silver,
-  MineHoard Played Mine.
-    MineHoard trashed Silver.
-    MineHoard gained Hoard.
-      ... and placed card in hand
-  MineHoard Played Silver.
-    +2 Coin = 2 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 4 all together.
-  MineHoard bought Estate.
-    MineHoard gained Gold.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Mine.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Estate.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard ends turn with deck: Copper(6), Estate(4), Gold(1), Hoard(3), Mine(1), Silver(4), 
-
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Copper,Copper,Familiar,Silver,
-  FamiliarPotionSilverOpenning Played Familiar.
-    +1 Actions = 1 all together.
-    FamiliarPotionSilverOpenning Drew Estate into hand.
-    MineHoard gained Curse.
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+BigMoney<Young Witch> begins turn
+With hand: Copper,Copper,Copper,Copper,Young Witch,
+  BigMoney<Young Witch> Played Young Witch.
+    BigMoney<Young Witch> Drew Copper into hand.
+    BigMoney<Young Witch> Drew Estate into hand.
+    BigMoney<Young Witch> Discarded Estate.
+    BigMoney<Young Witch> Discarded Copper.
+    BigMoney gained Curse.
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 4 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney<Young Witch> bought Silver.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Young Witch.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Estate into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> reshuffled
+  BigMoney<Young Witch> Drew Estate into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(6), Young Witch(1), 
+
+BigMoney begins turn
+With hand: Copper,Curse,Estate,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  FamiliarPotionSilverOpenning bought Silver.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Familiar.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Potion into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning reshuffled
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Familiar(1), Potion(1), Silver(5), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(3), Silver(4), 
 
 ROUND 9
 -------------
-MineHoard begins turn
-With hand: Copper,Copper,Copper,Hoard,Silver,
-  MineHoard Played Silver.
+BigMoney<Young Witch> begins turn
+With hand: Copper,Copper,Estate,Estate,Silver,
+  BigMoney<Young Witch> Played Silver.
     +2 Coin = 2 all together.
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 3 all together.
-  MineHoard Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 4 all together.
-  MineHoard Played Copper.
-    +1 Coin = 5 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 7 all together.
-  MineHoard bought Duchy.
-    MineHoard gained Gold.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Hoard.
-  MineHoard Drew Copper into hand.
-  MineHoard reshuffled
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard ends turn with deck: Copper(6), Curse(1), Duchy(1), Estate(4), Gold(2), Hoard(3), Mine(1), Silver(4), 
+  BigMoney<Young Witch> bought Silver.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Estate.
+  BigMoney<Young Witch> Discarded Estate.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(7), Young Witch(1), 
 
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Copper,Estate,Potion,Silver,
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  FamiliarPotionSilverOpenning Played Potion.
-    +1 Potions = 1 all together.
-  FamiliarPotionSilverOpenning bought Familiar.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Potion.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Familiar into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Familiar(2), Potion(1), Silver(5), 
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(4), Silver(4), 
 
 ROUND 10
 -------------
-MineHoard begins turn
-With hand: Copper,Copper,Estate,Estate,Hoard,
-  MineHoard Played Copper.
-    +1 Coin = 1 all together.
-  MineHoard Played Copper.
-    +1 Coin = 2 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 4 all together.
-  MineHoard bought Estate.
-    MineHoard gained Gold.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Estate.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard ends turn with deck: Copper(6), Curse(1), Duchy(1), Estate(5), Gold(3), Hoard(3), Mine(1), Silver(4), 
-
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Estate,Familiar,Silver,Silver,
-  FamiliarPotionSilverOpenning Played Familiar.
-    +1 Actions = 1 all together.
-    FamiliarPotionSilverOpenning Drew Copper into hand.
-    MineHoard gained Curse.
-  FamiliarPotionSilverOpenning Played Silver.
+BigMoney<Young Witch> begins turn
+With hand: Copper,Copper,Copper,Silver,Silver,
+  BigMoney<Young Witch> Played Silver.
     +2 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Silver.
+  BigMoney<Young Witch> Played Silver.
     +2 Coin = 4 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 5 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 6 all together.
-  FamiliarPotionSilverOpenning bought Gold.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Familiar.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Familiar(2), Gold(1), Potion(1), Silver(5), 
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney<Young Witch> bought Gold.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Drew Estate into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(7), Young Witch(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Curse,Estate,Gold,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(4), Silver(5), 
 
 ROUND 11
 -------------
-MineHoard begins turn
-With hand: Copper,Copper,Gold,Hoard,Silver,
-  MineHoard Played Gold.
-    +3 Coin = 3 all together.
-  MineHoard Played Silver.
-    +2 Coin = 5 all together.
-  MineHoard Played Copper.
-    +1 Coin = 6 all together.
-  MineHoard Played Copper.
-    +1 Coin = 7 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 9 all together.
-  MineHoard bought Province.
-    MineHoard gained Gold.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Hoard.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Mine into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard ends turn with deck: Copper(6), Curse(2), Duchy(1), Estate(5), Gold(4), Hoard(3), Mine(1), Province(1), Silver(4), 
-
-FamiliarPotionSilverOpenning begins turn
+BigMoney<Young Witch> begins turn
 With hand: Copper,Copper,Estate,Silver,Silver,
-  FamiliarPotionSilverOpenning Played Silver.
+  BigMoney<Young Witch> Played Silver.
     +2 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Silver.
+  BigMoney<Young Witch> Played Silver.
     +2 Coin = 4 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 5 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 6 all together.
-  FamiliarPotionSilverOpenning bought Gold.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning reshuffled
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Gold into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Familiar(2), Gold(2), Potion(1), Silver(5), 
+  BigMoney<Young Witch> bought Gold.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Estate.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Young Witch into hand.
+  BigMoney<Young Witch> Drew Gold into hand.
+  BigMoney<Young Witch> reshuffled
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(7), Young Witch(1), 
+
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(3), Estate(3), Gold(4), Province(1), Silver(5), 
 
 ROUND 12
 -------------
-MineHoard begins turn
-With hand: Curse,Estate,Gold,Mine,Silver,
-  MineHoard Played Mine.
-    MineHoard trashed Silver.
-    MineHoard gained Hoard.
-      ... and placed card in hand
-  MineHoard Played Gold.
+BigMoney<Young Witch> begins turn
+With hand: Copper,Gold,Silver,Silver,Young Witch,
+  BigMoney<Young Witch> Played Young Witch.
+    BigMoney<Young Witch> Drew Estate into hand.
+    BigMoney<Young Witch> Drew Silver into hand.
+    BigMoney<Young Witch> Discarded Estate.
+    BigMoney<Young Witch> Discarded Copper.
+    BigMoney gained Curse.
+  BigMoney<Young Witch> Played Gold.
     +3 Coin = 3 all together.
-  MineHoard Played Hoard.
+  BigMoney<Young Witch> Played Silver.
     +2 Coin = 5 all together.
-  MineHoard bought Duchy.
-    MineHoard gained Gold.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Mine.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Estate.
-  MineHoard Drew Duchy into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard ends turn with deck: Copper(6), Curse(2), Duchy(2), Estate(5), Gold(5), Hoard(4), Mine(1), Province(1), Silver(3), 
+  BigMoney<Young Witch> Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney<Young Witch> Played Silver.
+    +2 Coin = 9 all together.
+  BigMoney<Young Witch> bought Province.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Gold.
+  BigMoney<Young Witch> Discarded Young Witch.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Gold into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(7), Young Witch(1), 
 
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  FamiliarPotionSilverOpenning Played Gold.
+BigMoney begins turn
+With hand: Curse,Curse,Gold,Silver,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 5 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 6 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 7 all together.
-  FamiliarPotionSilverOpenning bought Gold.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Gold.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Familiar into hand.
-  FamiliarPotionSilverOpenning Drew Potion into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Familiar(2), Gold(3), Potion(1), Silver(5), 
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Curse.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(4), Estate(3), Gold(5), Province(1), Silver(5), 
 
 ROUND 13
 -------------
-MineHoard begins turn
-With hand: Copper,Copper,Duchy,Estate,Silver,
-  MineHoard Played Silver.
-    +2 Coin = 2 all together.
-  MineHoard Played Copper.
-    +1 Coin = 3 all together.
-  MineHoard Played Copper.
-    +1 Coin = 4 all together.
-  MineHoard bought Silver.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Duchy.
-  MineHoard Drew Hoard into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard reshuffled
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard ends turn with deck: Copper(6), Curse(2), Duchy(2), Estate(5), Gold(5), Hoard(4), Mine(1), Province(1), Silver(4), 
+BigMoney<Young Witch> begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoney<Young Witch> Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney<Young Witch> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney<Young Witch> Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney<Young Witch> bought Province.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Gold.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Estate into hand.
+  BigMoney<Young Witch> Drew Gold into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Estate(3), Gold(3), Province(2), Silver(7), Young Witch(1), 
 
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Estate,Familiar,Potion,Silver,
-  FamiliarPotionSilverOpenning Played Familiar.
-    +1 Actions = 1 all together.
-    FamiliarPotionSilverOpenning Drew Copper into hand.
-    MineHoard gained Curse.
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  FamiliarPotionSilverOpenning Played Potion.
-    +1 Potions = 1 all together.
-  FamiliarPotionSilverOpenning bought Familiar.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Potion.
-  FamiliarPotionSilverOpenning Discarded Familiar.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Familiar into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Familiar(3), Gold(3), Potion(1), Silver(5), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Drew Gold into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(4), Estate(3), Gold(5), Province(1), Silver(6), 
 
 ROUND 14
 -------------
-MineHoard begins turn
-With hand: Estate,Gold,Gold,Hoard,Silver,
-  MineHoard Played Gold.
+BigMoney<Young Witch> begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney<Young Witch> Played Gold.
     +3 Coin = 3 all together.
-  MineHoard Played Gold.
-    +3 Coin = 6 all together.
-  MineHoard Played Silver.
-    +2 Coin = 8 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 10 all together.
-  MineHoard bought Province.
-    MineHoard gained Gold.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Estate.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard ends turn with deck: Copper(6), Curse(3), Duchy(2), Estate(5), Gold(6), Hoard(4), Mine(1), Province(2), Silver(4), 
-
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Copper,Familiar,Silver,Silver,
-  FamiliarPotionSilverOpenning Played Familiar.
-    +1 Actions = 1 all together.
-    FamiliarPotionSilverOpenning Drew Silver into hand.
-    MineHoard gained Curse.
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 4 all together.
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 6 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney<Young Witch> Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 7 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney<Young Witch> bought Gold.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Gold.
+  BigMoney<Young Witch> Discarded Estate.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Estate into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> reshuffled
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Estate(3), Gold(4), Province(2), Silver(7), Young Witch(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Silver,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
     +1 Coin = 8 all together.
-  FamiliarPotionSilverOpenning bought Province.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Familiar.
-  FamiliarPotionSilverOpenning Drew Gold into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning reshuffled
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Familiar into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Familiar(3), Gold(3), Potion(1), Province(1), Silver(5), 
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(4), Estate(3), Gold(5), Province(2), Silver(6), 
 
 ROUND 15
 -------------
-MineHoard begins turn
-With hand: Copper,Copper,Copper,Copper,Estate,
-  MineHoard Played Copper.
-    +1 Coin = 1 all together.
-  MineHoard Played Copper.
-    +1 Coin = 2 all together.
-  MineHoard Played Copper.
-    +1 Coin = 3 all together.
-  MineHoard Played Copper.
-    +1 Coin = 4 all together.
-  MineHoard bought Silver.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Estate.
-  MineHoard Drew Mine into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard ends turn with deck: Copper(6), Curse(4), Duchy(2), Estate(5), Gold(6), Hoard(4), Mine(1), Province(2), Silver(5), 
-
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Estate,Familiar,Gold,Silver,
-  FamiliarPotionSilverOpenning Played Familiar.
-    +1 Actions = 1 all together.
-    FamiliarPotionSilverOpenning Drew Copper into hand.
-    MineHoard gained Curse.
-  FamiliarPotionSilverOpenning Played Gold.
-    +3 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 5 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+BigMoney<Young Witch> begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoney<Young Witch> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney<Young Witch> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 6 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 7 all together.
-  FamiliarPotionSilverOpenning bought Gold.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Gold.
-  FamiliarPotionSilverOpenning Discarded Familiar.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Gold into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Province into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Familiar(3), Gold(4), Potion(1), Province(1), Silver(5), 
+  BigMoney<Young Witch> bought Duchy.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Estate.
+  BigMoney<Young Witch> Drew Province into hand.
+  BigMoney<Young Witch> Drew Province into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(4), Province(2), Silver(7), Young Witch(1), 
+
+BigMoney begins turn
+With hand: Copper,Curse,Estate,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(4), Duchy(1), Estate(3), Gold(5), Province(2), Silver(6), 
 
 ROUND 16
 -------------
-MineHoard begins turn
-With hand: Copper,Estate,Estate,Gold,Mine,
-  MineHoard Played Mine.
-    MineHoard trashed Copper.
-    MineHoard gained Silver.
-      ... and placed card in hand
-  MineHoard Played Gold.
-    +3 Coin = 3 all together.
-  MineHoard Played Silver.
-    +2 Coin = 5 all together.
-  MineHoard bought Mine.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Mine.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Estate.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Province into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(5), Duchy(2), Estate(5), Gold(6), Hoard(4), Mine(2), Province(2), Silver(6), 
+BigMoney<Young Witch> begins turn
+With hand: Copper,Province,Province,Silver,Silver,
+  BigMoney<Young Witch> Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney<Young Witch> Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney<Young Witch> bought Duchy.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Province.
+  BigMoney<Young Witch> Discarded Province.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Gold into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Gold into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(4), Province(2), Silver(7), Young Witch(1), 
 
-FamiliarPotionSilverOpenning begins turn
-With hand: Gold,Province,Silver,Silver,Silver,
-  FamiliarPotionSilverOpenning Played Gold.
+BigMoney begins turn
+With hand: Curse,Gold,Gold,Gold,Province,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 5 all together.
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 7 all together.
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 9 all together.
-  FamiliarPotionSilverOpenning bought Province.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Gold.
-  FamiliarPotionSilverOpenning Discarded Province.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Potion into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Familiar(3), Gold(4), Potion(1), Province(2), Silver(5), 
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Gold.
+    +3 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Province.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(4), Duchy(1), Estate(3), Gold(5), Province(3), Silver(6), 
 
 ROUND 17
 -------------
-MineHoard begins turn
-With hand: Duchy,Gold,Hoard,Province,Silver,
-  MineHoard Played Gold.
+BigMoney<Young Witch> begins turn
+With hand: Copper,Copper,Gold,Gold,Silver,
+  BigMoney<Young Witch> Played Gold.
     +3 Coin = 3 all together.
-  MineHoard Played Silver.
-    +2 Coin = 5 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 7 all together.
-  MineHoard bought Duchy.
-    MineHoard gained Gold.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Duchy.
-  MineHoard Discarded Province.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(5), Duchy(3), Estate(5), Gold(7), Hoard(4), Mine(2), Province(2), Silver(6), 
+  BigMoney<Young Witch> Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney<Young Witch> Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 10 all together.
+  BigMoney<Young Witch> bought Province.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Gold.
+  BigMoney<Young Witch> Discarded Gold.
+  BigMoney<Young Witch> Drew Young Witch into hand.
+  BigMoney<Young Witch> Drew Estate into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Gold into hand.
+  BigMoney<Young Witch> Drew Gold into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(4), Province(3), Silver(7), Young Witch(1), 
 
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Copper,Estate,Potion,Silver,
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Curse,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 4 all together.
-  FamiliarPotionSilverOpenning Played Potion.
-    +1 Potions = 1 all together.
-  FamiliarPotionSilverOpenning bought Silver.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Potion.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Familiar into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Gold into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Estate(3), Familiar(3), Gold(4), Potion(1), Province(2), Silver(6), 
+  BigMoney bought Estate.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(4), Duchy(1), Estate(4), Gold(5), Province(3), Silver(6), 
 
 ROUND 18
 -------------
-MineHoard begins turn
-With hand: Curse,Duchy,Gold,Hoard,Silver,
-  MineHoard Played Gold.
+BigMoney<Young Witch> begins turn
+With hand: Estate,Gold,Gold,Silver,Young Witch,
+  BigMoney<Young Witch> Played Young Witch.
+    BigMoney<Young Witch> Drew Estate into hand.
+    BigMoney<Young Witch> Drew Copper into hand.
+    BigMoney<Young Witch> Discarded Estate.
+    BigMoney<Young Witch> Discarded Estate.
+    BigMoney gained Curse.
+  BigMoney<Young Witch> Played Gold.
     +3 Coin = 3 all together.
-  MineHoard Played Silver.
-    +2 Coin = 5 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 7 all together.
-  MineHoard bought Duchy.
-    MineHoard gained Gold.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Duchy.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(5), Duchy(4), Estate(5), Gold(8), Hoard(4), Mine(2), Province(2), Silver(6), 
+  BigMoney<Young Witch> Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney<Young Witch> Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney<Young Witch> bought Province.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Gold.
+  BigMoney<Young Witch> Discarded Gold.
+  BigMoney<Young Witch> Discarded Young Witch.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> reshuffled
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Province into hand.
+  BigMoney<Young Witch> Drew Gold into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(4), Province(4), Silver(7), Young Witch(1), 
 
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Copper,Estate,Familiar,Gold,
-  FamiliarPotionSilverOpenning Played Familiar.
-    +1 Actions = 1 all together.
-    FamiliarPotionSilverOpenning Drew Copper into hand.
-    MineHoard gained Curse.
-  FamiliarPotionSilverOpenning Played Gold.
-    +3 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 4 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+BigMoney begins turn
+With hand: Copper,Curse,Estate,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 6 all together.
-  FamiliarPotionSilverOpenning bought Duchy.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Gold.
-  FamiliarPotionSilverOpenning Discarded Familiar.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Familiar into hand.
-  FamiliarPotionSilverOpenning reshuffled
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Gold into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Duchy(1), Estate(3), Familiar(3), Gold(4), Potion(1), Province(2), Silver(6), 
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Curse.
+  BigMoney Discarded Estate.
+  BigMoney Drew Gold into hand.
+  BigMoney reshuffled
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Curse into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(5), Duchy(2), Estate(4), Gold(5), Province(3), Silver(6), 
 
 ROUND 19
 -------------
-MineHoard begins turn
-With hand: Copper,Curse,Estate,Hoard,Silver,
-  MineHoard Played Silver.
-    +2 Coin = 2 all together.
-  MineHoard Played Copper.
-    +1 Coin = 3 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 5 all together.
-  MineHoard bought Duchy.
-    MineHoard gained Gold.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Estate.
-  MineHoard reshuffled
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Hoard into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(6), Duchy(5), Estate(5), Gold(9), Hoard(4), Mine(2), Province(2), Silver(6), 
-
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Estate,Familiar,Gold,Silver,
-  FamiliarPotionSilverOpenning Played Familiar.
-    +1 Actions = 1 all together.
-    FamiliarPotionSilverOpenning Drew Province into hand.
-    MineHoard gained Curse.
-  FamiliarPotionSilverOpenning Played Gold.
+BigMoney<Young Witch> begins turn
+With hand: Copper,Copper,Gold,Province,Silver,
+  BigMoney<Young Witch> Played Gold.
     +3 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Silver.
+  BigMoney<Young Witch> Played Silver.
     +2 Coin = 5 all together.
-  FamiliarPotionSilverOpenning Played Copper.
+  BigMoney<Young Witch> Played Copper.
     +1 Coin = 6 all together.
-  FamiliarPotionSilverOpenning bought Duchy.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Gold.
-  FamiliarPotionSilverOpenning Discarded Familiar.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Discarded Province.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Gold into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Duchy(2), Estate(3), Familiar(3), Gold(4), Potion(1), Province(2), Silver(6), 
+  BigMoney<Young Witch> Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney<Young Witch> bought Duchy.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Copper.
+  BigMoney<Young Witch> Discarded Silver.
+  BigMoney<Young Witch> Discarded Gold.
+  BigMoney<Young Witch> Discarded Province.
+  BigMoney<Young Witch> Drew Duchy into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Copper into hand.
+  BigMoney<Young Witch> Drew Silver into hand.
+  BigMoney<Young Witch> Drew Estate into hand.
+  BigMoney<Young Witch> ends turn with deck: Copper(7), Duchy(3), Estate(3), Gold(4), Province(4), Silver(7), Young Witch(1), 
 
-ROUND 20
--------------
-MineHoard begins turn
-With hand: Estate,Estate,Gold,Gold,Hoard,
-  MineHoard Played Gold.
+BigMoney begins turn
+With hand: Curse,Gold,Gold,Silver,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  MineHoard Played Gold.
+  BigMoney Played Gold.
     +3 Coin = 6 all together.
-  MineHoard Played Hoard.
+  BigMoney Played Silver.
     +2 Coin = 8 all together.
-  MineHoard bought Province.
-    MineHoard gained Gold.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Estate.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(7), Duchy(5), Estate(5), Gold(10), Hoard(4), Mine(2), Province(3), Silver(6), 
+  BigMoney Played Silver.
+    +2 Coin = 10 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Curse.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Province into hand.
+  BigMoney ends turn with deck: Copper(7), Curse(5), Duchy(2), Estate(4), Gold(5), Province(4), Silver(6), 
 
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Estate,Estate,Gold,Silver,
-  FamiliarPotionSilverOpenning Played Gold.
-    +3 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 5 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 6 all together.
-  FamiliarPotionSilverOpenning bought Duchy.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Gold.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Drew Potion into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Gold into hand.
-  FamiliarPotionSilverOpenning Drew Duchy into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Duchy(3), Estate(3), Familiar(3), Gold(4), Potion(1), Province(2), Silver(6), 
+Game ended in 19 turns.
+BigMoney<Young Witch> Won!
+BigMoney<Young Witch> total score: 36
+  Copper(7), Duchy(3), Estate(3), Gold(4), Province(4), Silver(7), Young Witch(1), 
+BigMoney total score: 29
+  Copper(7), Curse(5), Duchy(2), Estate(4), Gold(5), Province(4), Silver(6), 
+Trash contains: 
 
-ROUND 21
--------------
-MineHoard begins turn
-With hand: Copper,Curse,Gold,Gold,Silver,
-  MineHoard Played Gold.
-    +3 Coin = 3 all together.
-  MineHoard Played Gold.
-    +3 Coin = 6 all together.
-  MineHoard Played Silver.
-    +2 Coin = 8 all together.
-  MineHoard Played Copper.
-    +1 Coin = 9 all together.
-  MineHoard bought Province.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Curse.
-  MineHoard Drew Hoard into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Mine into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Province into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(7), Duchy(5), Estate(5), Gold(10), Hoard(4), Mine(2), Province(4), Silver(6), 
-
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Duchy,Gold,Potion,Silver,
-  FamiliarPotionSilverOpenning Played Gold.
-    +3 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 5 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 6 all together.
-  FamiliarPotionSilverOpenning Played Potion.
-    +1 Potions = 1 all together.
-  FamiliarPotionSilverOpenning bought Estate.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Gold.
-  FamiliarPotionSilverOpenning Discarded Potion.
-  FamiliarPotionSilverOpenning Discarded Duchy.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Familiar into hand.
-  FamiliarPotionSilverOpenning Drew Gold into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Duchy(3), Estate(4), Familiar(3), Gold(4), Potion(1), Province(2), Silver(6), 
-
-ROUND 22
--------------
-MineHoard begins turn
-With hand: Hoard,Mine,Province,Silver,Silver,
-  MineHoard Played Mine.
-    MineHoard trashed Silver.
-    MineHoard gained Hoard.
-      ... and placed card in hand
-  MineHoard Played Silver.
-    +2 Coin = 2 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 4 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 6 all together.
-  MineHoard bought Estate.
-    MineHoard gained Gold.
-    MineHoard gained Gold.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Mine.
-  MineHoard Discarded Province.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(7), Duchy(5), Estate(6), Gold(12), Hoard(5), Mine(2), Province(4), Silver(5), 
-
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Copper,Familiar,Gold,Silver,
-  FamiliarPotionSilverOpenning Played Familiar.
-    +1 Actions = 1 all together.
-    FamiliarPotionSilverOpenning Drew Familiar into hand.
-    MineHoard gained Curse.
-  FamiliarPotionSilverOpenning Played Familiar.
-    +1 Actions = 1 all together.
-    FamiliarPotionSilverOpenning Drew Silver into hand.
-    MineHoard gained Curse.
-  FamiliarPotionSilverOpenning Played Gold.
-    +3 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 5 all together.
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 7 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 8 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 9 all together.
-  FamiliarPotionSilverOpenning bought Province.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Gold.
-  FamiliarPotionSilverOpenning Discarded Familiar.
-  FamiliarPotionSilverOpenning Discarded Familiar.
-  FamiliarPotionSilverOpenning Drew Province into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning reshuffled
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Duchy(3), Estate(4), Familiar(3), Gold(4), Potion(1), Province(3), Silver(6), 
-
-ROUND 23
--------------
-MineHoard begins turn
-With hand: Copper,Copper,Curse,Duchy,Silver,
-  MineHoard Played Silver.
-    +2 Coin = 2 all together.
-  MineHoard Played Copper.
-    +1 Coin = 3 all together.
-  MineHoard Played Copper.
-    +1 Coin = 4 all together.
-  MineHoard bought Estate.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Silver.
-  MineHoard Discarded Curse.
-  MineHoard Discarded Duchy.
-  MineHoard Drew Hoard into hand.
-  MineHoard Drew Copper into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Estate into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(9), Duchy(5), Estate(7), Gold(12), Hoard(5), Mine(2), Province(4), Silver(5), 
-
-FamiliarPotionSilverOpenning begins turn
-With hand: Copper,Copper,Estate,Province,Silver,
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 2 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Copper.
-    +1 Coin = 4 all together.
-  FamiliarPotionSilverOpenning bought Estate.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Copper.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Discarded Province.
-  FamiliarPotionSilverOpenning Drew Estate into hand.
-  FamiliarPotionSilverOpenning Drew Gold into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Duchy into hand.
-  FamiliarPotionSilverOpenning Drew Familiar into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Duchy(3), Estate(5), Familiar(3), Gold(4), Potion(1), Province(3), Silver(6), 
-
-ROUND 24
--------------
-MineHoard begins turn
-With hand: Copper,Duchy,Estate,Gold,Hoard,
-  MineHoard Played Gold.
-    +3 Coin = 3 all together.
-  MineHoard Played Copper.
-    +1 Coin = 4 all together.
-  MineHoard Played Hoard.
-    +2 Coin = 6 all together.
-  MineHoard bought Estate.
-    MineHoard gained Gold.
-  MineHoard Discarded Copper.
-  MineHoard Discarded Gold.
-  MineHoard Discarded Hoard.
-  MineHoard Discarded Estate.
-  MineHoard Discarded Duchy.
-  MineHoard Drew Silver into hand.
-  MineHoard Drew Duchy into hand.
-  MineHoard Drew Gold into hand.
-  MineHoard Drew Province into hand.
-  MineHoard Drew Curse into hand.
-  MineHoard ends turn with deck: Copper(5), Curse(9), Duchy(5), Estate(8), Gold(13), Hoard(5), Mine(2), Province(4), Silver(5), 
-
-FamiliarPotionSilverOpenning begins turn
-With hand: Duchy,Estate,Familiar,Gold,Silver,
-  FamiliarPotionSilverOpenning Played Familiar.
-    +1 Actions = 1 all together.
-    FamiliarPotionSilverOpenning Drew Estate into hand.
-    MineHoard gained Curse.
-  FamiliarPotionSilverOpenning Played Gold.
-    +3 Coin = 3 all together.
-  FamiliarPotionSilverOpenning Played Silver.
-    +2 Coin = 5 all together.
-  FamiliarPotionSilverOpenning bought Estate.
-  FamiliarPotionSilverOpenning Discarded Silver.
-  FamiliarPotionSilverOpenning Discarded Gold.
-  FamiliarPotionSilverOpenning Discarded Familiar.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Discarded Estate.
-  FamiliarPotionSilverOpenning Discarded Duchy.
-  FamiliarPotionSilverOpenning Drew Province into hand.
-  FamiliarPotionSilverOpenning Drew Gold into hand.
-  FamiliarPotionSilverOpenning Drew Copper into hand.
-  FamiliarPotionSilverOpenning Drew Silver into hand.
-  FamiliarPotionSilverOpenning Drew Gold into hand.
-  FamiliarPotionSilverOpenning ends turn with deck: Copper(7), Duchy(3), Estate(6), Familiar(3), Gold(4), Potion(1), Province(3), Silver(6), 
-
-Game ended in 24 turns.
-MineHoard Won!
-MineHoard total score: 37
-  Copper(5), Curse(10), Duchy(5), Estate(8), Gold(13), Hoard(5), Mine(2), Province(4), Silver(5), 
-FamiliarPotionSilverOpenning total score: 33
-  Copper(7), Duchy(3), Estate(6), Familiar(3), Gold(4), Potion(1), Province(3), Silver(6), 
-Trash contains: Copper(2), Silver(3), 
-
-MineHoard GainSequence is:
-  Silver, Silver, Mine, Silver, Hoard, 
-  Silver, Silver, Hoard, Hoard, Estate, 
-  Gold, Curse, Duchy, Gold, Estate, 
-  Gold, Curse, Province, Gold, Hoard, 
-  Duchy, Gold, Silver, Curse, Province, 
-  Gold, Curse, Silver, Curse, Silver, 
-  Mine, Duchy, Gold, Duchy, Gold, 
-  Curse, Duchy, Gold, Curse, Province, 
-  Gold, Province, Hoard, Estate, Gold, 
-  Gold, Curse, Curse, Estate, Estate, 
-  Gold, Curse, 
-FamiliarPotionSilverOpenning GainSequence is:
-  Silver, Potion, Silver, Silver, Familiar, 
-  Silver, Silver, Familiar, Gold, Gold, 
-  Gold, Familiar, Province, Gold, Province, 
-  Silver, Duchy, Duchy, Duchy, Estate, 
-  Province, Estate, Estate, 
+BigMoney<Young Witch> GainSequence is:
+  Young Witch, Silver, Silver, Silver, Silver, 
+  Silver, Gold, Silver, Silver, Gold, 
+  Gold, Province, Province, Gold, Duchy, 
+  Duchy, Province, Province, Duchy, 
+BigMoney GainSequence is:
+  Silver, Silver, Gold, Curse, Gold, 
+  Curse, Silver, Gold, Curse, Silver, 
+  Gold, Silver, Province, Curse, Gold, 
+  Silver, Province, Duchy, Province, Estate, 
+  Curse, Duchy, Province, 

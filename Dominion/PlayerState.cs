@@ -121,9 +121,18 @@ namespace Dominion
 
         public int TotalScore()
         {
-            return this.AllOwnedCards.Where(card => card.isVictory).Select(card => card.VictoryPoints(this)).Sum() +
-                   this.victoryTokenCount -
-                   this.AllOwnedCards.Where(card => card.isCurse).Count();
+            int result = 0;
+
+            foreach(Card card in this.game.CardGameSubset)
+            {                
+                if (!card.isVictory)
+                    continue;
+                result += this.AllOwnedCards.CountOf(card) * card.VictoryPoints(this);
+            }
+
+            result -= this.AllOwnedCards.CountOf(Cards.Curse);
+            result += this.victoryTokenCount;
+            return result;            
         }
 
         internal void DrawUntilCountInHand(int totalCount)

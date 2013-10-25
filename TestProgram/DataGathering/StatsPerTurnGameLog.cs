@@ -11,28 +11,28 @@ namespace Program
         : EmptyGameLog
     {
         private CardGameSubset cardGameSubset;
-        public PerTurnPlayerCounters coinToSpend;
-        public PerTurnPlayerCounters cardsGained;
-        public PerTurnPlayerCounters victoryPointTotal;
-        public PerTurnPlayerCounters ruinsGained;
-        public MapOfCardsForGameSubset<PerTurnPlayerCounters> cardsTotalCount;
-        public MapOfCardsForGameSubset<PerTurnPlayerCounters> cardsOwnedAtEndOfGame;
-        public MapOfCardsForGameSubset<PlayerCounter> endOfGameCardCount;
-        public PerTurnPlayerCounters cursesGained;        
-        public PerTurnPlayerCounters cursesTrashed;
-        public PerTurnPlayerCounters deckShuffleCount;
-        public PerTurnPlayerCounters oddsOfBeingAheadOnRoundEnd;
+        public PerTurnPlayerCountersSeparatedByGame coinToSpend;
+        public PerTurnPlayerCountersSeparatedByGame cardsGained;
+        public PerTurnPlayerCountersSeparatedByGame victoryPointTotal;
+        public PerTurnPlayerCountersSeparatedByGame ruinsGained;
+        public MapOfCardsForGameSubset<PerTurnPlayerCountersSeparatedByGame> cardsTotalCount;
+        public MapOfCardsForGameSubset<PerTurnPlayerCountersSeparatedByGame> cardsOwnedAtEndOfGame;
+        public MapOfCardsForGameSubset<PlayerCounterSeparatedByGame> endOfGameCardCount;
+        public PerTurnPlayerCountersSeparatedByGame cursesGained;
+        public PerTurnPlayerCountersSeparatedByGame cursesTrashed;
+        public PerTurnPlayerCountersSeparatedByGame deckShuffleCount;
+        public PerTurnPlayerCountersSeparatedByGame oddsOfBeingAheadOnRoundEnd;
 
         public StatsPerTurnGameLog(int playerCount, CardGameSubset gameSubset)
         {
-            this.coinToSpend = new PerTurnPlayerCounters(playerCount);
-            this.cardsGained = new PerTurnPlayerCounters(playerCount);
-            this.ruinsGained = new PerTurnPlayerCounters(playerCount);
-            this.cursesGained = new PerTurnPlayerCounters(playerCount);            
-            this.cursesTrashed = new PerTurnPlayerCounters(playerCount);            
-            this.victoryPointTotal = new PerTurnPlayerCounters(playerCount);
-            this.deckShuffleCount = new PerTurnPlayerCounters(playerCount);
-            this.oddsOfBeingAheadOnRoundEnd = new PerTurnPlayerCounters(playerCount);
+            this.coinToSpend = new PerTurnPlayerCountersSeparatedByGame(playerCount);
+            this.cardsGained = new PerTurnPlayerCountersSeparatedByGame(playerCount);
+            this.ruinsGained = new PerTurnPlayerCountersSeparatedByGame(playerCount);
+            this.cursesGained = new PerTurnPlayerCountersSeparatedByGame(playerCount);
+            this.cursesTrashed = new PerTurnPlayerCountersSeparatedByGame(playerCount);
+            this.victoryPointTotal = new PerTurnPlayerCountersSeparatedByGame(playerCount);
+            this.deckShuffleCount = new PerTurnPlayerCountersSeparatedByGame(playerCount);
+            this.oddsOfBeingAheadOnRoundEnd = new PerTurnPlayerCountersSeparatedByGame(playerCount);
 
             this.cardGameSubset = gameSubset;
 
@@ -41,29 +41,29 @@ namespace Program
             this.endOfGameCardCount = ContstructCounter(playerCount, gameSubset); 
         }
 
-        private MapOfCardsForGameSubset<PerTurnPlayerCounters> ContstructCounterPerTurn(int playerCount, CardGameSubset gameSubset)
+        private MapOfCardsForGameSubset<PerTurnPlayerCountersSeparatedByGame> ContstructCounterPerTurn(int playerCount, CardGameSubset gameSubset)
         {
-            var result = new MapOfCardsForGameSubset<PerTurnPlayerCounters>(gameSubset);
+            var result = new MapOfCardsForGameSubset<PerTurnPlayerCountersSeparatedByGame>(gameSubset);
             foreach (Card card in gameSubset)
             {
-                result[card] = new PerTurnPlayerCounters(playerCount);
+                result[card] = new PerTurnPlayerCountersSeparatedByGame(playerCount);
             }
 
             return result;
         }
 
-        private MapOfCardsForGameSubset<PlayerCounter> ContstructCounter(int playerCount, CardGameSubset gameSubset)
+        private MapOfCardsForGameSubset<PlayerCounterSeparatedByGame> ContstructCounter(int playerCount, CardGameSubset gameSubset)
         {
-            var result = new MapOfCardsForGameSubset<PlayerCounter>(gameSubset);
+            var result = new MapOfCardsForGameSubset<PlayerCounterSeparatedByGame>(gameSubset);
             foreach (Card card in gameSubset)
             {
-                result[card] = new PlayerCounter(playerCount);
+                result[card] = new PlayerCounterSeparatedByGame(playerCount);
             }
 
             return result;
         }
 
-        private void BeginTurnAllCountersPerCard(MapOfCardsForGameSubset<PerTurnPlayerCounters> map, PlayerState playerState)
+        private void BeginTurnAllCountersPerCard(MapOfCardsForGameSubset<PerTurnPlayerCountersSeparatedByGame> map, PlayerState playerState)
         {
             foreach (Card card in cardGameSubset)
             {
@@ -71,7 +71,7 @@ namespace Program
             }  
         }
 
-        private void IncrementAllDivisors(MapOfCardsForGameSubset<PlayerCounter> map, PlayerState playerState)
+        private void IncrementAllDivisors(MapOfCardsForGameSubset<PlayerCounterSeparatedByGame> map, PlayerState playerState)
         {
             foreach (Card card in cardGameSubset)
             {

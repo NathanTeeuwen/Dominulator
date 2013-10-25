@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dominion.Collections
 {
-    public class MapOfGame<T>
+    public class MapOfGame<T>        
     {
         private readonly T[] mapGameIndexToResult;
 
@@ -15,16 +15,32 @@ namespace Dominion.Collections
             this.mapGameIndexToResult = new T[Game.MaxSimultaneousGames];
         }
 
-        public T this[GameState gameState]
+        public T this[Game game]
         {
             set
             {                
-                this.mapGameIndexToResult[gameState.InProgressGameIndex] = value;
+                this.mapGameIndexToResult[game.GameIndex] = value;
             }
 
             get
-            {                
-                return this.mapGameIndexToResult[gameState.InProgressGameIndex];
+            {
+                return this.mapGameIndexToResult[game.GameIndex];
+            }
+        }
+
+        public void InitAllEntries(Func<T> factory)
+        {
+            for (int i = 0; i < this.mapGameIndexToResult.Length; ++i)
+            {
+                this.mapGameIndexToResult[i] = factory();
+            }
+        }
+
+        public IEnumerable<T> AllEntries
+        {
+            get
+            {
+                return this.mapGameIndexToResult;
             }
         }
     }

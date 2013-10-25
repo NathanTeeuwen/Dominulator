@@ -8,6 +8,47 @@ using Dominion.Collections;
 
 namespace Program
 {
+    public class PlayerCounterSeparatedByGame
+    {
+        private int playerCount;
+        private MapOfGame<PlayerCounter> counters;
+        private PlayerCounter aggregatedResult = null;
+
+        public PlayerCounterSeparatedByGame(int playerCount)
+        {
+            this.playerCount = playerCount;
+            this.counters = new MapOfGame<PlayerCounter>();
+            this.counters.InitAllEntries(delegate()
+            {
+                return new PlayerCounter(playerCount);
+            });
+        }
+
+        private void AggregateAllDataIfNecessary()
+        {
+            if (aggregatedResult == null)
+            {
+                aggregatedResult = PlayerCounter.Sum(this.counters.AllEntries, playerCount);
+            }
+        }
+
+        public float GetAverage(int playerIndex)
+        {
+            this.AggregateAllDataIfNecessary();
+            return this.aggregatedResult.GetAverage(playerIndex);
+        }
+
+        public void IncrementDivisor(PlayerState playerState)
+        {
+            this.counters[playerState.Game].IncrementDivisor(playerState);
+        }
+
+        public void IncrementCounter(PlayerState playerState, int amount)
+        {
+            this.counters[playerState.Game].IncrementCounter(playerState, amount);
+        }
+    }
+    
     public class PlayerCounter
     {
         private readonly object theLock = new object();
@@ -27,20 +68,87 @@ namespace Program
 
         public void IncrementDivisor(PlayerState playerState)
         {
-            lock (this.theLock)
-            {
-                this.totalDivisor[playerState.PlayerIndex]++;
-            }
+            this.totalDivisor[playerState.PlayerIndex]++;        
         }
 
         public void IncrementCounter(PlayerState playerState, int amount)
         {
-            lock (this.theLock)
+            this.totalCount[playerState.PlayerIndex] += amount;
+        }
+        
+        static public PlayerCounter Sum(IEnumerable<PlayerCounter> counters, int playerCount)
+        {
+            var result = new PlayerCounter(playerCount);
+
+            foreach (var counter in counters)
             {
-                this.totalCount[playerState.PlayerIndex] += amount;
+                for (int playerIndex = 0; playerIndex < playerCount; ++playerIndex)
+                {
+                    result.totalDivisor[playerIndex] += counter.totalDivisor[playerIndex];
+                    result.totalCount[playerIndex] += counter.totalCount[playerIndex];                    
+                }               
+            }
+
+            return result;
+        }
+    }
+
+    public class PerTurnPlayerCountersSeparatedByGame
+    {
+        private int playerCount;
+        MapOfGame<PerTurnPlayerCounters> counters;
+        PerTurnPlayerCounters aggregatedResult;
+
+        public PerTurnPlayerCountersSeparatedByGame(int playerCount)
+        {
+            this.counters = new MapOfGame<PerTurnPlayerCounters>();
+            this.playerCount = playerCount;
+            this.counters.InitAllEntries(delegate()
+            {
+                return new PerTurnPlayerCounters(playerCount);
+            });
+            this.aggregatedResult = null;
+        }
+
+        public bool HasNonZeroData
+        {
+            get
+            {
+                AggregateAllDataIfNecessary();
+                return aggregatedResult.HasNonZeroData;
             }
         }
-    }  
+
+        public float[] GetAveragePerTurn(int playerIndex, int throughTurn)
+        {
+            AggregateAllDataIfNecessary();
+            return aggregatedResult.GetAveragePerTurn(playerIndex, throughTurn);
+        }
+
+        private void AggregateAllDataIfNecessary()
+        {
+            if (aggregatedResult == null)
+            {
+                aggregatedResult = PerTurnPlayerCounters.Sum(this.counters.AllEntries, playerCount);
+            }
+        }
+
+        private PerTurnPlayerCounters GetCounter(PlayerState playerState)
+        {
+            return this.counters[playerState.Game];            
+        }
+
+        public void BeginTurn(PlayerState playerState)
+        {
+            GetCounter(playerState).BeginTurn(playerState);
+        }
+
+        public void IncrementCounter(PlayerState playerState, int amount)
+        {
+            GetCounter(playerState).IncrementCounter(playerState, amount);
+        }
+
+    }
 
     public class PerTurnPlayerCounters
     {
@@ -111,18 +219,12 @@ namespace Program
         // methods to be used by IGameLog
         public void BeginTurn(PlayerState playerState)
         {
-            lock (this.theLock)
-            {
-                AddToCounterForPlayer(playerState.PlayerIndex, playerState.TurnNumber, 1, this.countAtTurnPerPlayer);
-            }
+            AddToCounterForPlayer(playerState.PlayerIndex, playerState.TurnNumber, 1, this.countAtTurnPerPlayer);            
         }
 
         public void IncrementCounter(PlayerState playerState, int amount)
         {
-            lock (this.theLock)
-            {
-                AddToCounterForPlayer(playerState.PlayerIndex, playerState.TurnNumber, amount, this.sumAtTurnPerPlayer);
-            }
+            AddToCounterForPlayer(playerState.PlayerIndex, playerState.TurnNumber, amount, this.sumAtTurnPerPlayer);            
         }
 
         private void GrowListsBy1()
