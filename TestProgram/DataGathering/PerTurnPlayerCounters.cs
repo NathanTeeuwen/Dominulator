@@ -148,11 +148,24 @@ namespace Program
             GetCounter(playerState).IncrementCounter(playerState, amount);
         }
 
+        public void Clear(GameState gameState)
+        {
+            this.counters[gameState.Game].Clear();
+        }
+
+        public void Add(GameState gameState, PerTurnPlayerCountersSeparatedByGame other)
+        {
+            this.counters[gameState.Game].Add(other.counters[gameState.Game]);
+        }
+
+        public void Reverse(GameState gameState)
+        {
+            this.counters[gameState.Game].Reverse();
+        }
     }
 
     public class PerTurnPlayerCounters
-    {
-        private readonly object theLock = new object();
+    {        
         private List<int>[] sumAtTurnPerPlayer;
         private List<int>[] countAtTurnPerPlayer;
 
@@ -188,17 +201,17 @@ namespace Program
         }
 
         // get the results
-        public int PlayerTurnCount
+        public int PlayerTurnLength
         {
             get
             {
-                return this.countAtTurnPerPlayer[0].Count - 1;
+                return this.countAtTurnPerPlayer[0].Count;
             }
         }
 
         public float[] GetAveragePerTurn(int playerIndex, int throughTurn)
         {
-            if (throughTurn > PlayerTurnCount)
+            if (throughTurn > PlayerTurnLength)
             {
                 throw new Exception("There aren't that many turns");
             }
@@ -214,6 +227,46 @@ namespace Program
             }
 
             return result;
+        }
+
+        public void Clear()
+        {
+            for (int playerIndex = 0; playerIndex < this.sumAtTurnPerPlayer.Length; ++playerIndex)
+            {
+                this.sumAtTurnPerPlayer[playerIndex].Clear();
+                this.countAtTurnPerPlayer[playerIndex].Clear();
+            }
+        }
+
+        public void Add(PerTurnPlayerCounters other)
+        {
+            for (int turn = 0; turn < other.PlayerTurnLength; ++turn)
+            {
+                for (int playerIndex = 0; playerIndex < this.sumAtTurnPerPlayer.Length; ++playerIndex)
+                {
+                    this.AddToCounterForPlayer(playerIndex, turn, other.countAtTurnPerPlayer[playerIndex][turn], this.countAtTurnPerPlayer);
+                    this.AddToCounterForPlayer(playerIndex, turn, other.sumAtTurnPerPlayer[playerIndex][turn], this.sumAtTurnPerPlayer);
+                }
+            }
+        }
+
+        private static void Reverse<T>(List<T> list)
+        {
+            for (int index = 1, otherIndex = list.Count-1; index < list.Count / 2; ++index, otherIndex--)
+            {
+                T temp = list[index];
+                list[index] = list[otherIndex];
+                list[otherIndex] = temp;
+            }
+        }
+
+        public void Reverse()
+        {
+            for (int playerIndex = 0; playerIndex < this.countAtTurnPerPlayer.Length; ++playerIndex)
+            {
+                Reverse(this.sumAtTurnPerPlayer[playerIndex]);
+                Reverse(this.countAtTurnPerPlayer[playerIndex]);
+            }
         }
 
         // methods to be used by IGameLog
@@ -253,14 +306,7 @@ namespace Program
 
             foreach (var counter in counters)
             {
-                for (int turn = 0; turn < counter.PlayerTurnCount; ++turn)
-                {
-                    for (int playerIndex = 0; playerIndex < playerCount; ++playerIndex)
-                    {
-                        result.AddToCounterForPlayer(playerIndex, turn, counter.countAtTurnPerPlayer[playerIndex][turn], result.countAtTurnPerPlayer);
-                        result.AddToCounterForPlayer(playerIndex, turn, counter.sumAtTurnPerPlayer[playerIndex][turn], result.sumAtTurnPerPlayer);            
-                    }                    
-                }
+                result.Add(counter);                
             }
 
             return result;

@@ -178,7 +178,7 @@ namespace Program
             this.textWriter.WriteLine("var options = {");
             this.textWriter.Indent();
                 this.textWriter.WriteLine("title: '" + title + "',");
-                this.textWriter.WriteLine("is3D: true");            
+                //this.textWriter.WriteLine("is3D: true");            
             this.textWriter.Unindent();
             this.textWriter.WriteLine("};");
             this.textWriter.WriteLine();

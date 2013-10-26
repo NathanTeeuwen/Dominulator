@@ -390,6 +390,7 @@ namespace Program
                     });
                     InsertLineGraph(htmlWriter, "Probability player is ahead in points at end of round ", player1, player2, statGatherer.oddsOfBeingAheadOnRoundEnd, maxTurn);
                     InsertLineGraph(htmlWriter, "Average Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal, maxTurn);
+                    InsertLineGraph(htmlWriter, "Average Victory Point Counting back from End of Game", player1, player2, statGatherer.victoryPointTotalReversed, maxTurn, reversed:true);
                 }, collapseByDefault: false);
                 htmlWriter.InsertExpander("When does the game end?", delegate()
                 {
@@ -455,18 +456,20 @@ namespace Program
             PlayerAction player2,
             PerTurnPlayerCountersSeparatedByGame counters,
             int throughTurn,
-            bool colllapsebyDefault = true)
+            bool colllapsebyDefault = true,
+            bool reversed = false)
         {
             if (counters.HasNonZeroData)
             {
                 htmlWriter.InsertExpander(title, delegate()
                 {
+                    int[] xAxis = !reversed ? Enumerable.Range(1, throughTurn).ToArray() : Enumerable.Range(0, throughTurn).Select( turn => -turn).ToArray();
                     htmlWriter.InsertLineGraph(
                                 title,
                                 "Turn",
                                 player1.PlayerName,
                                 player2.PlayerName,
-                                Enumerable.Range(1, throughTurn).ToArray(),
+                                xAxis,
                                 counters.GetAveragePerTurn(0, throughTurn),
                                 counters.GetAveragePerTurn(1, throughTurn)
                                 );

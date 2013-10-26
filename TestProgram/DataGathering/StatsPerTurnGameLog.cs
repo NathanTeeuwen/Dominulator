@@ -14,6 +14,8 @@ namespace Program
         public PerTurnPlayerCountersSeparatedByGame coinToSpend;
         public PerTurnPlayerCountersSeparatedByGame cardsGained;
         public PerTurnPlayerCountersSeparatedByGame victoryPointTotal;
+        public PerTurnPlayerCountersSeparatedByGame victoryPointTotalReversed;
+        public PerTurnPlayerCountersSeparatedByGame victoryPointTotalTemporary;
         public PerTurnPlayerCountersSeparatedByGame ruinsGained;
         public MapOfCardsForGameSubset<PerTurnPlayerCountersSeparatedByGame> cardsTotalCount;
         public MapOfCardsForGameSubset<PerTurnPlayerCountersSeparatedByGame> cardsOwnedAtEndOfGame;
@@ -31,6 +33,8 @@ namespace Program
             this.cursesGained = new PerTurnPlayerCountersSeparatedByGame(playerCount);
             this.cursesTrashed = new PerTurnPlayerCountersSeparatedByGame(playerCount);
             this.victoryPointTotal = new PerTurnPlayerCountersSeparatedByGame(playerCount);
+            this.victoryPointTotalReversed = new PerTurnPlayerCountersSeparatedByGame(playerCount);
+            this.victoryPointTotalTemporary = new PerTurnPlayerCountersSeparatedByGame(playerCount);
             this.deckShuffleCount = new PerTurnPlayerCountersSeparatedByGame(playerCount);
             this.oddsOfBeingAheadOnRoundEnd = new PerTurnPlayerCountersSeparatedByGame(playerCount);
 
@@ -88,6 +92,7 @@ namespace Program
             this.deckShuffleCount.BeginTurn(playerState);            
             this.cursesTrashed.BeginTurn(playerState);            
             this.victoryPointTotal.BeginTurn(playerState);
+            this.victoryPointTotalTemporary.BeginTurn(playerState);
             BeginTurnAllCountersPerCard(this.cardsTotalCount, playerState);
             BeginTurnAllCountersPerCard(this.cardsOwnedAtEndOfGame, playerState);
         }
@@ -102,6 +107,11 @@ namespace Program
                     this.endOfGameCardCount[card].IncrementCounter(playerState, playerState.AllOwnedCards.CountOf(card));
                 }
             }
+
+            this.victoryPointTotalTemporary.Reverse(gameState);
+            this.victoryPointTotalReversed.Add(gameState, this.victoryPointTotalTemporary);
+
+            this.victoryPointTotalTemporary.Clear(gameState);
         }
 
         public override void EndRound(GameState gameState)
@@ -136,6 +146,7 @@ namespace Program
         public override void EndTurn(PlayerState playerState)
         {
             this.victoryPointTotal.IncrementCounter(playerState, playerState.TotalScore());
+            this.victoryPointTotalTemporary.IncrementCounter(playerState, playerState.TotalScore());
             foreach (Card card in this.cardGameSubset)
             {
                 this.cardsTotalCount[card].IncrementCounter(playerState, playerState.AllOwnedCards.CountOf(card));            

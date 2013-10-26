@@ -20,7 +20,16 @@ namespace Dominion
         private MapPileOfCards<bool> hasPileEverBeenGained;
         private MapPileOfCards<int> pileEmbargoTokenCount;                     
 
-        public int InProgressGameIndex;        
+        public int InProgressGameIndex;
+
+        public Game Game
+        {
+            get
+            {
+                return this.game;
+            }
+        }
+
 
         public CardGameSubset CardGameSubset
         {
