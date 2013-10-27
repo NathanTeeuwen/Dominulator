@@ -16,7 +16,7 @@ namespace Program
             stopwatch.Start();
 
             ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: false, createHtmlReport:true);            
-            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
+            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
             //TestAllCardsWithBigMoney();            
             
             stopwatch.Stop();
@@ -322,7 +322,7 @@ namespace Program
             if (createHtmlReport)
             {
                 // write out HTML report summary
-                Task.Factory.StartNew(delegate()
+                //Task.Factory.StartNew(delegate()
                 {
                     CreateHtmlReport(
                         player1,
@@ -336,7 +336,8 @@ namespace Program
                         statGatherer,
                         pointSpreadHistogramData,
                         gameEndOnTurnHistogramData);
-                });
+                }
+                //);
             }
 
             double diff = PlayerWinPercent(0, winnerCount, numberOfGames) - PlayerWinPercent(1, winnerCount, numberOfGames);
@@ -399,6 +400,10 @@ namespace Program
                 htmlWriter.InsertExpander("Deck Strength", delegate()
                 {
                     InsertCardData(htmlWriter, statGatherer.endOfGameCardCount, gameConfig.cardGameSubset, player1, player2);
+                    InsertCardData(htmlWriter, "Average Total Count Of Card For " + player1.PlayerName, gameConfig.cardGameSubset, statGatherer.cardsTotalCount, 0, maxTurn);
+                    InsertCardData(htmlWriter, "Average Total Count Of Card For " + player2.PlayerName, gameConfig.cardGameSubset, statGatherer.cardsTotalCount, 1, maxTurn);
+                    InsertCardData(htmlWriter, "Average Gain Of Card For " + player1.PlayerName, gameConfig.cardGameSubset, statGatherer.carsGainedOnTurn, 0, maxTurn);
+                    InsertCardData(htmlWriter, "Average Gain Of Card For " + player2.PlayerName, gameConfig.cardGameSubset, statGatherer.carsGainedOnTurn, 1, maxTurn);
                     InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn);
                     InsertLineGraph(htmlWriter, "Average Number of cards Gained Per Turn", player1, player2, statGatherer.cardsGained, maxTurn);
                     InsertLineGraph(htmlWriter, "Shuffles Per Turn", player1, player2, statGatherer.deckShuffleCount, maxTurn);
@@ -411,18 +416,43 @@ namespace Program
                 foreach (Card card in gameConfig.cardGameSubset.OrderBy(c => c.DefaultCoinCost))
                 {
                     if (statGatherer.cardsTotalCount[card].HasNonZeroData ||
-                        statGatherer.cardsOwnedAtEndOfGame[card].HasNonZeroData)
+                        statGatherer.carsGainedOnTurn[card].HasNonZeroData)
                     {
                         htmlWriter.InsertExpander(card.name, delegate()
                         {
                             InsertLineGraph(htmlWriter, "Total Count At Turn", player1, player2, statGatherer.cardsTotalCount[card], maxTurn, colllapsebyDefault: false);
-                            InsertLineGraph(htmlWriter, "Average Gained Per Turn", player1, player2, statGatherer.cardsOwnedAtEndOfGame[card], maxTurn, colllapsebyDefault: true);
+                            InsertLineGraph(htmlWriter, "Average Gained Per Turn", player1, player2, statGatherer.carsGainedOnTurn[card], maxTurn, colllapsebyDefault: true);
                         });
                     }
-                }
+                }                
 
                 htmlWriter.End();
             }
+        }
+
+        private static void InsertCardData(
+            HtmlRenderer htmlWriter, 
+            string title,
+            CardGameSubset gameSubset, 
+            MapOfCardsForGameSubset<PerTurnPlayerCountersSeparatedByGame> statsPerCard,             
+            int playerIndex, 
+            int throughTurn)
+        {
+            Card[] cards = gameSubset.OrderBy(card => card.DefaultCoinCost).ToArray();
+            string[] seriesLabel = new string[cards.Length];
+            int[] xAxis = Enumerable.Range(1, throughTurn).ToArray();
+            float[][] seriesData = new float [cards.Length][]; 
+
+            for (int i=0; i < cards.Length; i++)
+            {
+                seriesLabel[i] = cards[i].name;
+                seriesData[i] = statsPerCard[cards[i]].GetAveragePerTurn(playerIndex, throughTurn);
+            }
+
+            htmlWriter.InsertExpander(title, delegate()
+            {
+                htmlWriter.InsertLineGraph(title, "Turn", seriesLabel, xAxis, seriesData);
+            }, collapseByDefault:true);
         }
 
         private static void InsertCardData(HtmlRenderer htmlWriter, MapOfCardsForGameSubset<PlayerCounterSeparatedByGame> map, CardGameSubset gameSubset, PlayerAction player1, PlayerAction player2)

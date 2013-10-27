@@ -1,1196 +1,973 @@
-cache gained Copper.
-cache gained Copper.
-cache gained Copper.
-cache gained Copper.
-cache gained Copper.
-cache gained Copper.
-cache gained Copper.
-cache gained Estate.
-cache gained Estate.
-cache gained Estate.
-gold gained Copper.
-gold gained Copper.
-gold gained Copper.
-gold gained Copper.
-gold gained Copper.
-gold gained Copper.
-gold gained Copper.
-gold gained Estate.
-gold gained Estate.
-gold gained Estate.
-cache reshuffled
-cache Drew Copper into hand.
-cache Drew Copper into hand.
-cache Drew Copper into hand.
-cache Drew Estate into hand.
-cache Drew Copper into hand.
-gold reshuffled
-gold Drew Estate into hand.
-gold Drew Copper into hand.
-gold Drew Copper into hand.
-gold Drew Copper into hand.
-gold Drew Estate into hand.
+LookoutTraderNobles gained Copper.
+LookoutTraderNobles gained Copper.
+LookoutTraderNobles gained Copper.
+LookoutTraderNobles gained Copper.
+LookoutTraderNobles gained Copper.
+LookoutTraderNobles gained Copper.
+LookoutTraderNobles gained Copper.
+LookoutTraderNobles gained Estate.
+LookoutTraderNobles gained Estate.
+LookoutTraderNobles gained Estate.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Copper.
+BigMoney gained Estate.
+BigMoney gained Estate.
+BigMoney gained Estate.
+LookoutTraderNobles reshuffled
+LookoutTraderNobles Drew Copper into hand.
+LookoutTraderNobles Drew Copper into hand.
+LookoutTraderNobles Drew Copper into hand.
+LookoutTraderNobles Drew Estate into hand.
+LookoutTraderNobles Drew Copper into hand.
+BigMoney reshuffled
+BigMoney Drew Estate into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Copper into hand.
+BigMoney Drew Estate into hand.
 ROUND 1
 -------------
-cache begins turn
+LookoutTraderNobles begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  cache Played Copper.
+  LookoutTraderNobles Played Copper.
     +1 Coin = 1 all together.
-  cache Played Copper.
+  LookoutTraderNobles Played Copper.
     +1 Coin = 2 all together.
-  cache Played Copper.
+  LookoutTraderNobles Played Copper.
     +1 Coin = 3 all together.
-  cache Played Copper.
+  LookoutTraderNobles Played Copper.
     +1 Coin = 4 all together.
-  cache bought Silver.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Estate.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Estate into hand.
-  cache Drew Estate into hand.
-  cache ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  LookoutTraderNobles bought Trader.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Estate.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Estate into hand.
+  LookoutTraderNobles Drew Estate into hand.
+  LookoutTraderNobles ends turn with deck: Copper(7), Estate(3), Trader(1), 
 
-gold begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  gold bought Silver.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Estate.
-  gold Discarded Estate.
-  gold Drew Copper into hand.
-  gold Drew Estate into hand.
-  gold Drew Copper into hand.
-  gold Drew Copper into hand.
-  gold Drew Copper into hand.
-  gold ends turn with deck: Copper(7), Estate(3), Silver(1), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(1), 
 
 ROUND 2
 -------------
-cache begins turn
+LookoutTraderNobles begins turn
 With hand: Copper,Copper,Copper,Estate,Estate,
-  cache Played Copper.
+  LookoutTraderNobles Played Copper.
     +1 Coin = 1 all together.
-  cache Played Copper.
+  LookoutTraderNobles Played Copper.
     +1 Coin = 2 all together.
-  cache Played Copper.
+  LookoutTraderNobles Played Copper.
     +1 Coin = 3 all together.
-  cache bought Silver.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Estate.
-  cache Discarded Estate.
-  cache reshuffled
-  cache Drew Copper into hand.
-  cache Drew Silver into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Estate into hand.
-  cache ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  LookoutTraderNobles bought Lookout.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Estate.
+  LookoutTraderNobles Discarded Estate.
+  LookoutTraderNobles reshuffled
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Estate into hand.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Estate into hand.
+  LookoutTraderNobles ends turn with deck: Copper(7), Estate(3), Lookout(1), Trader(1), 
 
-gold begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Copper,Estate,
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  gold bought Silver.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Estate.
-  gold reshuffled
-  gold Drew Silver into hand.
-  gold Drew Copper into hand.
-  gold Drew Copper into hand.
-  gold Drew Copper into hand.
-  gold Drew Silver into hand.
-  gold ends turn with deck: Copper(7), Estate(3), Silver(2), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Silver(2), 
 
 ROUND 3
 -------------
-cache begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  cache Played Silver.
-    +2 Coin = 2 all together.
-  cache Played Copper.
+LookoutTraderNobles begins turn
+With hand: Copper,Copper,Copper,Estate,Estate,
+  LookoutTraderNobles Played Copper.
+    +1 Coin = 1 all together.
+  LookoutTraderNobles Played Copper.
+    +1 Coin = 2 all together.
+  LookoutTraderNobles Played Copper.
     +1 Coin = 3 all together.
-  cache Played Copper.
-    +1 Coin = 4 all together.
-  cache Played Copper.
-    +1 Coin = 5 all together.
-  cache bought Cache.
-    cache gained Copper.
-    cache gained Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Silver.
-  cache Discarded Estate.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Estate into hand.
-  cache Drew Copper into hand.
-  cache Drew Estate into hand.
-  cache ends turn with deck: Cache(1), Copper(9), Estate(3), Silver(2), 
+  LookoutTraderNobles bought Lookout.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Estate.
+  LookoutTraderNobles Discarded Estate.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Trader into hand.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Lookout into hand.
+  LookoutTraderNobles ends turn with deck: Copper(7), Estate(3), Lookout(2), Trader(1), 
 
-gold begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Silver,Silver,
-  gold Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  gold Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 4 all together.
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 6 all together.
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 7 all together.
-  gold bought Gold.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Silver.
-  gold Discarded Silver.
-  gold Drew Estate into hand.
-  gold Drew Estate into hand.
-  gold Drew Estate into hand.
-  gold Drew Copper into hand.
-  gold Drew Copper into hand.
-  gold ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
 ROUND 4
 -------------
-cache begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  cache Played Copper.
+LookoutTraderNobles begins turn
+With hand: Copper,Copper,Copper,Lookout,Trader,
+  LookoutTraderNobles Played Lookout.
+    +1 Actions = 1 all together.
+    LookoutTraderNobles Revealed Copper.
+    LookoutTraderNobles Revealed Estate.
+    LookoutTraderNobles reshuffled
+    LookoutTraderNobles Revealed Copper.
+      LookoutTraderNobles trashed Copper.
+      LookoutTraderNobles Discarded Estate.
+      LookoutTraderNobles Placed Copper on top of his deck.
+  LookoutTraderNobles Played Trader.
+    LookoutTraderNobles trashed Copper.
+  LookoutTraderNobles Played Copper.
     +1 Coin = 1 all together.
-  cache Played Copper.
+  LookoutTraderNobles Played Copper.
     +1 Coin = 2 all together.
-  cache Played Copper.
-    +1 Coin = 3 all together.
-  cache bought Silver.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Estate.
-  cache Discarded Estate.
-  cache Drew Copper into hand.
-  cache Drew Silver into hand.
-  cache reshuffled
-  cache Drew Copper into hand.
-  cache Drew Silver into hand.
-  cache Drew Copper into hand.
-  cache ends turn with deck: Cache(1), Copper(9), Estate(3), Silver(3), 
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Lookout.
+  LookoutTraderNobles Discarded Trader.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Lookout into hand.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Estate into hand.
+  LookoutTraderNobles ends turn with deck: Copper(5), Estate(3), Lookout(2), Trader(1), 
 
-gold begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Estate,Estate,Estate,
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 1 all together.
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 2 all together.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Estate.
-  gold Discarded Estate.
-  gold Discarded Estate.
-  gold Drew Copper into hand.
-  gold Drew Copper into hand.
-  gold reshuffled
-  gold Drew Gold into hand.
-  gold Drew Copper into hand.
-  gold Drew Estate into hand.
-  gold ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(2), 
 
 ROUND 5
 -------------
-cache begins turn
-With hand: Copper,Copper,Copper,Silver,Silver,
-  cache Played Silver.
-    +2 Coin = 2 all together.
-  cache Played Silver.
-    +2 Coin = 4 all together.
-  cache Played Copper.
-    +1 Coin = 5 all together.
-  cache Played Copper.
-    +1 Coin = 6 all together.
-  cache Played Copper.
-    +1 Coin = 7 all together.
-  cache bought Gold.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Silver.
-  cache Discarded Silver.
-  cache Drew Estate into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Silver into hand.
-  cache ends turn with deck: Cache(1), Copper(9), Estate(3), Gold(1), Silver(3), 
+LookoutTraderNobles begins turn
+With hand: Copper,Copper,Copper,Estate,Lookout,
+  LookoutTraderNobles Played Lookout.
+    +1 Actions = 1 all together.
+    LookoutTraderNobles Revealed Estate.
+    LookoutTraderNobles reshuffled
+    LookoutTraderNobles Revealed Lookout.
+    LookoutTraderNobles Revealed Estate.
+      LookoutTraderNobles trashed Estate.
+      LookoutTraderNobles Discarded Estate.
+      LookoutTraderNobles Placed Lookout on top of his deck.
+  LookoutTraderNobles Played Copper.
+    +1 Coin = 1 all together.
+  LookoutTraderNobles Played Copper.
+    +1 Coin = 2 all together.
+  LookoutTraderNobles Played Copper.
+    +1 Coin = 3 all together.
+  LookoutTraderNobles bought Silver.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Lookout.
+  LookoutTraderNobles Discarded Estate.
+  LookoutTraderNobles Drew Lookout into hand.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Trader into hand.
+  LookoutTraderNobles reshuffled
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles ends turn with deck: Copper(5), Estate(2), Lookout(2), Silver(1), Trader(1), 
 
-gold begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
-  gold Played Gold.
-    +3 Coin = 3 all together.
-  gold Played Copper.
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Copper,Estate,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  gold Played Copper.
-    +1 Coin = 5 all together.
-  gold Played Copper.
-    +1 Coin = 6 all together.
-  gold bought Gold.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Gold.
-  gold Discarded Estate.
-  gold Drew Silver into hand.
-  gold Drew Copper into hand.
-  gold Drew Estate into hand.
-  gold Drew Copper into hand.
-  gold Drew Copper into hand.
-  gold ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(2), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(1), Silver(3), 
 
 ROUND 6
 -------------
-cache begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  cache Played Silver.
-    +2 Coin = 2 all together.
-  cache Played Copper.
-    +1 Coin = 3 all together.
-  cache Played Copper.
-    +1 Coin = 4 all together.
-  cache Played Copper.
-    +1 Coin = 5 all together.
-  cache bought Cache.
-    cache gained Copper.
-    cache gained Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Silver.
-  cache Discarded Estate.
-  cache Drew Estate into hand.
-  cache Drew Cache into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Estate into hand.
-  cache ends turn with deck: Cache(2), Copper(11), Estate(3), Gold(1), Silver(3), 
+LookoutTraderNobles begins turn
+With hand: Copper,Copper,Copper,Lookout,Trader,
+  LookoutTraderNobles Played Lookout.
+    +1 Actions = 1 all together.
+    LookoutTraderNobles Revealed Estate.
+    LookoutTraderNobles Revealed Copper.
+    LookoutTraderNobles Revealed Lookout.
+      LookoutTraderNobles trashed Copper.
+      LookoutTraderNobles Discarded Estate.
+      LookoutTraderNobles Placed Lookout on top of his deck.
+  LookoutTraderNobles Played Trader.
+    LookoutTraderNobles trashed Copper.
+  LookoutTraderNobles Played Copper.
+    +1 Coin = 1 all together.
+  LookoutTraderNobles Played Copper.
+    +1 Coin = 2 all together.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Lookout.
+  LookoutTraderNobles Discarded Trader.
+  LookoutTraderNobles Drew Lookout into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Estate into hand.
+  LookoutTraderNobles reshuffled
+  LookoutTraderNobles Drew Estate into hand.
+  LookoutTraderNobles ends turn with deck: Copper(3), Estate(2), Lookout(2), Silver(1), Trader(1), 
 
-gold begins turn
-With hand: Copper,Copper,Copper,Estate,Silver,
-  gold Played Silver.
-    +2 Coin = 2 all together.
-  gold Played Copper.
-    +1 Coin = 3 all together.
-  gold Played Copper.
-    +1 Coin = 4 all together.
-  gold Played Copper.
-    +1 Coin = 5 all together.
-  gold bought Silver.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Silver.
-  gold Discarded Estate.
-  gold Drew Estate into hand.
-  gold Drew Copper into hand.
-  gold Drew Silver into hand.
-  gold reshuffled
-  gold Drew Gold into hand.
-  gold Drew Silver into hand.
-  gold ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(3), 
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Gold,Silver,
+  BigMoney Played Gold.
+    +3 Coin = 3 all together.
+  BigMoney Played Silver.
+    +2 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney Played Copper.
+    +1 Coin = 7 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney reshuffled
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(3), 
 
 ROUND 7
 -------------
-cache begins turn
-With hand: Cache,Copper,Copper,Estate,Estate,
-  cache Played Copper.
-    +1 Coin = 1 all together.
-  cache Played Copper.
-    +1 Coin = 2 all together.
-  cache Played Cache.
-    +3 Coin = 5 all together.
-  cache bought Cache.
-    cache gained Copper.
-    cache gained Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Cache.
-  cache Discarded Estate.
-  cache Discarded Estate.
-  cache Drew Copper into hand.
-  cache reshuffled
-  cache Drew Copper into hand.
-  cache Drew Cache into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Estate(3), Gold(1), Silver(3), 
+LookoutTraderNobles begins turn
+With hand: Copper,Estate,Estate,Lookout,Silver,
+  LookoutTraderNobles Played Lookout.
+    +1 Actions = 1 all together.
+    LookoutTraderNobles Revealed Copper.
+    LookoutTraderNobles Revealed Lookout.
+    LookoutTraderNobles Revealed Copper.
+      LookoutTraderNobles trashed Copper.
+      LookoutTraderNobles Discarded Copper.
+      LookoutTraderNobles Placed Lookout on top of his deck.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 2 all together.
+  LookoutTraderNobles Played Copper.
+    +1 Coin = 3 all together.
+  LookoutTraderNobles bought Silver.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Lookout.
+  LookoutTraderNobles Discarded Estate.
+  LookoutTraderNobles Discarded Estate.
+  LookoutTraderNobles Drew Lookout into hand.
+  LookoutTraderNobles Drew Trader into hand.
+  LookoutTraderNobles reshuffled
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles Drew Estate into hand.
+  LookoutTraderNobles Drew Lookout into hand.
+  LookoutTraderNobles ends turn with deck: Copper(2), Estate(2), Lookout(2), Silver(2), Trader(1), 
 
-gold begins turn
-With hand: Copper,Estate,Gold,Silver,Silver,
-  gold Played Gold.
-    +3 Coin = 3 all together.
-  gold Played Silver.
-    +2 Coin = 5 all together.
-  gold Played Silver.
-    +2 Coin = 7 all together.
-  gold Played Copper.
-    +1 Coin = 8 all together.
-  gold bought Gold.
-  gold Discarded Copper.
-  gold Discarded Silver.
-  gold Discarded Silver.
-  gold Discarded Gold.
-  gold Discarded Estate.
-  gold Drew Copper into hand.
-  gold Drew Copper into hand.
-  gold Drew Estate into hand.
-  gold Drew Silver into hand.
-  gold Drew Copper into hand.
-  gold ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(3), 
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(4), 
 
 ROUND 8
 -------------
-cache begins turn
-With hand: Cache,Copper,Copper,Copper,Copper,
-  cache Played Copper.
+LookoutTraderNobles begins turn
+With hand: Copper,Estate,Lookout,Lookout,Trader,
+  LookoutTraderNobles Played Lookout.
+    +1 Actions = 1 all together.
+    LookoutTraderNobles Revealed Silver.
+    LookoutTraderNobles Revealed Estate.
+    LookoutTraderNobles Revealed Silver.
+      LookoutTraderNobles trashed Estate.
+      LookoutTraderNobles Discarded Silver.
+      LookoutTraderNobles Placed Silver on top of his deck.
+  LookoutTraderNobles Played Trader.
+    LookoutTraderNobles trashed Estate.
+    LookoutTraderNobles gained Silver.
+    LookoutTraderNobles gained Silver.
+  LookoutTraderNobles Played Copper.
     +1 Coin = 1 all together.
-  cache Played Copper.
-    +1 Coin = 2 all together.
-  cache Played Copper.
-    +1 Coin = 3 all together.
-  cache Played Copper.
-    +1 Coin = 4 all together.
-  cache Played Cache.
-    +3 Coin = 7 all together.
-  cache bought Gold.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Cache.
-  cache Drew Copper into hand.
-  cache Drew Cache into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Silver into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Estate(3), Gold(2), Silver(3), 
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Lookout.
+  LookoutTraderNobles Discarded Trader.
+  LookoutTraderNobles Discarded Lookout.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Copper into hand.
+  LookoutTraderNobles reshuffled
+  LookoutTraderNobles Drew Lookout into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles ends turn with deck: Copper(2), Lookout(2), Silver(4), Trader(1), 
 
-gold begins turn
+BigMoney begins turn
 With hand: Copper,Copper,Copper,Estate,Silver,
-  gold Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 2 all together.
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 3 all together.
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 4 all together.
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 5 all together.
-  gold bought Silver.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Silver.
-  gold Discarded Estate.
-  gold Drew Gold into hand.
-  gold Drew Copper into hand.
-  gold Drew Copper into hand.
-  gold Drew Copper into hand.
-  gold Drew Estate into hand.
-  gold ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(4), 
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(2), Silver(5), 
 
 ROUND 9
 -------------
-cache begins turn
-With hand: Cache,Copper,Copper,Copper,Silver,
-  cache Played Silver.
+LookoutTraderNobles begins turn
+With hand: Copper,Lookout,Silver,Silver,Silver,
+  LookoutTraderNobles Played Lookout.
+    +1 Actions = 1 all together.
+    LookoutTraderNobles Revealed Trader.
+    LookoutTraderNobles Revealed Silver.
+    LookoutTraderNobles Revealed Copper.
+      LookoutTraderNobles trashed Copper.
+      LookoutTraderNobles Discarded Silver.
+      LookoutTraderNobles Placed Trader on top of his deck.
+  LookoutTraderNobles Played Silver.
     +2 Coin = 2 all together.
-  cache Played Copper.
-    +1 Coin = 3 all together.
-  cache Played Copper.
-    +1 Coin = 4 all together.
-  cache Played Copper.
-    +1 Coin = 5 all together.
-  cache Played Cache.
-    +3 Coin = 8 all together.
-  cache bought Province.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Silver.
-  cache Discarded Cache.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Estate into hand.
-  cache Drew Silver into hand.
-  cache Drew Gold into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Estate(3), Gold(2), Province(1), Silver(3), 
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 4 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 6 all together.
+  LookoutTraderNobles Played Copper.
+    +1 Coin = 7 all together.
+  LookoutTraderNobles bought Nobles.
+  LookoutTraderNobles Discarded Copper.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Lookout.
+  LookoutTraderNobles Drew Trader into hand.
+  LookoutTraderNobles Drew Lookout into hand.
+  LookoutTraderNobles reshuffled
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Lookout into hand.
+  LookoutTraderNobles Drew Nobles into hand.
+  LookoutTraderNobles ends turn with deck: Copper(1), Lookout(2), Nobles(1), Silver(4), Trader(1), 
 
-gold begins turn
-With hand: Copper,Copper,Copper,Estate,Gold,
-  gold Played Gold.
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Gold,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  gold Played Copper.
-    +1 Coin = 4 all together.
-  gold Played Copper.
-    +1 Coin = 5 all together.
-  gold Played Copper.
-    +1 Coin = 6 all together.
-  gold bought Gold.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Gold.
-  gold Discarded Estate.
-  gold reshuffled
-  gold Drew Gold into hand.
-  gold Drew Silver into hand.
-  gold Drew Estate into hand.
-  gold Drew Copper into hand.
-  gold Drew Estate into hand.
-  gold ends turn with deck: Copper(7), Estate(3), Gold(4), Silver(4), 
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Gold.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney reshuffled
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Silver(5), 
 
 ROUND 10
 -------------
-cache begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  cache Played Gold.
-    +3 Coin = 3 all together.
-  cache Played Silver.
-    +2 Coin = 5 all together.
-  cache Played Copper.
-    +1 Coin = 6 all together.
-  cache Played Copper.
-    +1 Coin = 7 all together.
-  cache bought Gold.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Silver.
-  cache Discarded Gold.
-  cache Discarded Estate.
-  cache Drew Silver into hand.
-  cache Drew Copper into hand.
-  cache Drew Cache into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Estate(3), Gold(3), Province(1), Silver(3), 
+LookoutTraderNobles begins turn
+With hand: Lookout,Lookout,Nobles,Silver,Trader,
+  LookoutTraderNobles Played Lookout.
+    +1 Actions = 1 all together.
+    LookoutTraderNobles Revealed Silver.
+    LookoutTraderNobles Revealed Copper.
+    LookoutTraderNobles Revealed Silver.
+      LookoutTraderNobles trashed Copper.
+      LookoutTraderNobles Discarded Silver.
+      LookoutTraderNobles Placed Silver on top of his deck.
+  LookoutTraderNobles Played Trader.
+    LookoutTraderNobles trashed Lookout.
+    LookoutTraderNobles gained Silver.
+    LookoutTraderNobles gained Silver.
+    LookoutTraderNobles gained Silver.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 2 all together.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Lookout.
+  LookoutTraderNobles Discarded Trader.
+  LookoutTraderNobles Discarded Nobles.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles reshuffled
+  LookoutTraderNobles Drew Nobles into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles ends turn with deck: Lookout(1), Nobles(1), Silver(7), Trader(1), 
 
-gold begins turn
-With hand: Copper,Estate,Estate,Gold,Silver,
-  gold Played Gold.
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Silver,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  gold Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 5 all together.
-  gold Played Copper.
-    +1 Coin = 6 all together.
-  gold bought Gold.
-  gold Discarded Copper.
-  gold Discarded Silver.
-  gold Discarded Gold.
-  gold Discarded Estate.
-  gold Discarded Estate.
-  gold Drew Silver into hand.
-  gold Drew Gold into hand.
-  gold Drew Silver into hand.
-  gold Drew Silver into hand.
-  gold Drew Estate into hand.
-  gold ends turn with deck: Copper(7), Estate(3), Gold(5), Silver(4), 
+  BigMoney Played Silver.
+    +2 Coin = 7 all together.
+  BigMoney Played Copper.
+    +1 Coin = 8 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(5), 
 
 ROUND 11
 -------------
-cache begins turn
-With hand: Cache,Copper,Copper,Copper,Silver,
-  cache Played Silver.
+LookoutTraderNobles begins turn
+With hand: Nobles,Silver,Silver,Silver,Silver,
+  LookoutTraderNobles Played Nobles.
+    LookoutTraderNobles Drew Trader into hand.
+    LookoutTraderNobles Drew Silver into hand.
+    LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Played Silver.
     +2 Coin = 2 all together.
-  cache Played Copper.
-    +1 Coin = 3 all together.
-  cache Played Copper.
-    +1 Coin = 4 all together.
-  cache Played Copper.
-    +1 Coin = 5 all together.
-  cache Played Cache.
-    +3 Coin = 8 all together.
-  cache bought Province.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Silver.
-  cache Discarded Cache.
-  cache Drew Estate into hand.
-  cache Drew Copper into hand.
-  cache Drew Estate into hand.
-  cache reshuffled
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Estate(3), Gold(3), Province(2), Silver(3), 
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 4 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 6 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 8 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 10 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 12 all together.
+  LookoutTraderNobles bought Province.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Nobles.
+  LookoutTraderNobles Discarded Trader.
+  LookoutTraderNobles Drew Lookout into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles reshuffled
+  LookoutTraderNobles Drew Province into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles ends turn with deck: Lookout(1), Nobles(1), Province(1), Silver(7), Trader(1), 
 
-gold begins turn
-With hand: Estate,Gold,Silver,Silver,Silver,
-  gold Played Gold.
-    +3 Coin = 3 all together.
-  gold Played Silver.
-    +2 Coin = 5 all together.
-  gold Played Silver.
-    +2 Coin = 7 all together.
-  gold Played Silver.
-    +2 Coin = 9 all together.
-  gold bought Province.
-  gold Discarded Silver.
-  gold Discarded Silver.
-  gold Discarded Silver.
-  gold Discarded Gold.
-  gold Discarded Estate.
-  gold Drew Copper into hand.
-  gold Drew Copper into hand.
-  gold Drew Gold into hand.
-  gold Drew Copper into hand.
-  gold Drew Copper into hand.
-  gold ends turn with deck: Copper(7), Estate(3), Gold(5), Province(1), Silver(4), 
+BigMoney begins turn
+With hand: Copper,Copper,Copper,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Copper.
+    +1 Coin = 3 all together.
+  BigMoney Played Copper.
+    +1 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney bought Silver.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(1), Silver(6), 
 
 ROUND 12
 -------------
-cache begins turn
-With hand: Copper,Copper,Copper,Estate,Estate,
-  cache Played Copper.
-    +1 Coin = 1 all together.
-  cache Played Copper.
-    +1 Coin = 2 all together.
-  cache Played Copper.
-    +1 Coin = 3 all together.
-  cache bought Silver.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Estate.
-  cache Discarded Estate.
-  cache Drew Estate into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Gold into hand.
-  cache Drew Silver into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Estate(3), Gold(3), Province(2), Silver(4), 
+LookoutTraderNobles begins turn
+With hand: Lookout,Province,Silver,Silver,Silver,
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 2 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 4 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 6 all together.
+  LookoutTraderNobles bought Nobles.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Province.
+  LookoutTraderNobles Discarded Lookout.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Nobles into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles ends turn with deck: Lookout(1), Nobles(2), Province(1), Silver(7), Trader(1), 
 
-gold begins turn
-With hand: Copper,Copper,Copper,Copper,Gold,
-  gold Played Gold.
+BigMoney begins turn
+With hand: Copper,Estate,Gold,Gold,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  gold Played Copper.
-    +1 Coin = 4 all together.
-  gold Played Copper.
-    +1 Coin = 5 all together.
-  gold Played Copper.
-    +1 Coin = 6 all together.
-  gold Played Copper.
-    +1 Coin = 7 all together.
-  gold bought Duchy.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Gold.
-  gold Drew Copper into hand.
-  gold Drew Gold into hand.
-  gold Drew Copper into hand.
-  gold reshuffled
-  gold Drew Silver into hand.
-  gold Drew Gold into hand.
-  gold ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(5), Province(1), Silver(4), 
+  BigMoney Played Gold.
+    +3 Coin = 6 all together.
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Copper.
+    +1 Coin = 9 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Estate.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney reshuffled
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Estate(3), Gold(3), Province(2), Silver(6), 
 
 ROUND 13
 -------------
-cache begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  cache Played Gold.
-    +3 Coin = 3 all together.
-  cache Played Silver.
-    +2 Coin = 5 all together.
-  cache Played Copper.
-    +1 Coin = 6 all together.
-  cache Played Copper.
-    +1 Coin = 7 all together.
-  cache bought Duchy.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Silver.
-  cache Discarded Gold.
-  cache Discarded Estate.
-  cache Drew Province into hand.
-  cache Drew Copper into hand.
-  cache Drew Cache into hand.
-  cache Drew Province into hand.
-  cache Drew Copper into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Duchy(1), Estate(3), Gold(3), Province(2), Silver(4), 
-
-gold begins turn
-With hand: Copper,Copper,Gold,Gold,Silver,
-  gold Played Gold.
-    +3 Coin = 3 all together.
-  gold Played Gold.
-    +3 Coin = 6 all together.
-  gold Played Silver.
+LookoutTraderNobles begins turn
+With hand: Nobles,Silver,Silver,Silver,Silver,
+  LookoutTraderNobles Played Nobles.
+    LookoutTraderNobles Drew Trader into hand.
+    LookoutTraderNobles reshuffled
+    LookoutTraderNobles Drew Nobles into hand.
+    LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 2 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 4 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 6 all together.
+  LookoutTraderNobles Played Silver.
     +2 Coin = 8 all together.
-  gold Played Copper.
-    +1 Coin = 9 all together.
-  gold Played Copper.
-    +1 Coin = 10 all together.
-  gold bought Province.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Silver.
-  gold Discarded Gold.
-  gold Discarded Gold.
-  gold Drew Silver into hand.
-  gold Drew Gold into hand.
-  gold Drew Estate into hand.
-  gold Drew Copper into hand.
-  gold Drew Copper into hand.
-  gold ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(5), Province(2), Silver(4), 
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 10 all together.
+  LookoutTraderNobles bought Province.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Nobles.
+  LookoutTraderNobles Discarded Trader.
+  LookoutTraderNobles Discarded Nobles.
+  LookoutTraderNobles Drew Lookout into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Province into hand.
+  LookoutTraderNobles reshuffled
+  LookoutTraderNobles Drew Trader into hand.
+  LookoutTraderNobles ends turn with deck: Lookout(1), Nobles(2), Province(2), Silver(7), Trader(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Silver,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney Played Silver.
+    +2 Coin = 4 all together.
+  BigMoney Played Copper.
+    +1 Coin = 5 all together.
+  BigMoney Played Copper.
+    +1 Coin = 6 all together.
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Province into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(1), Estate(3), Gold(3), Province(2), Silver(6), 
 
 ROUND 14
 -------------
-cache begins turn
-With hand: Cache,Copper,Copper,Province,Province,
-  cache Played Copper.
-    +1 Coin = 1 all together.
-  cache Played Copper.
-    +1 Coin = 2 all together.
-  cache Played Cache.
-    +3 Coin = 5 all together.
-  cache bought Duchy.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Cache.
-  cache Discarded Province.
-  cache Discarded Province.
-  cache Drew Copper into hand.
-  cache Drew Cache into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Duchy(2), Estate(3), Gold(3), Province(2), Silver(4), 
+LookoutTraderNobles begins turn
+With hand: Lookout,Province,Silver,Silver,Trader,
+  LookoutTraderNobles Played Trader.
+    LookoutTraderNobles trashed Lookout.
+    LookoutTraderNobles gained Silver.
+    LookoutTraderNobles gained Silver.
+    LookoutTraderNobles gained Silver.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 2 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 4 all together.
+  LookoutTraderNobles bought Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Trader.
+  LookoutTraderNobles Discarded Province.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Nobles into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles ends turn with deck: Nobles(2), Province(2), Silver(11), Trader(1), 
 
-gold begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  gold Played Gold.
+BigMoney begins turn
+With hand: Copper,Copper,Gold,Province,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  gold Played Silver.
+  BigMoney Played Silver.
     +2 Coin = 5 all together.
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 6 all together.
-  gold Played Copper.
+  BigMoney Played Copper.
     +1 Coin = 7 all together.
-  gold bought Duchy.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Silver.
-  gold Discarded Gold.
-  gold Discarded Estate.
-  gold Drew Duchy into hand.
-  gold Drew Silver into hand.
-  gold Drew Copper into hand.
-  gold Drew Copper into hand.
-  gold Drew Province into hand.
-  gold ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(5), Province(2), Silver(4), 
+  BigMoney bought Duchy.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Province.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Province into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(3), Province(2), Silver(6), 
 
 ROUND 15
 -------------
-cache begins turn
-With hand: Cache,Copper,Copper,Copper,Copper,
-  cache Played Copper.
-    +1 Coin = 1 all together.
-  cache Played Copper.
-    +1 Coin = 2 all together.
-  cache Played Copper.
-    +1 Coin = 3 all together.
-  cache Played Copper.
-    +1 Coin = 4 all together.
-  cache Played Cache.
-    +3 Coin = 7 all together.
-  cache bought Duchy.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Cache.
-  cache Drew Copper into hand.
-  cache Drew Gold into hand.
-  cache Drew Gold into hand.
-  cache Drew Copper into hand.
-  cache Drew Silver into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Duchy(3), Estate(3), Gold(3), Province(2), Silver(4), 
-
-gold begins turn
-With hand: Copper,Copper,Duchy,Province,Silver,
-  gold Played Silver.
+LookoutTraderNobles begins turn
+With hand: Nobles,Silver,Silver,Silver,Silver,
+  LookoutTraderNobles Played Nobles.
+    LookoutTraderNobles Drew Silver into hand.
+    LookoutTraderNobles Drew Province into hand.
+    LookoutTraderNobles Drew Nobles into hand.
+  LookoutTraderNobles Played Silver.
     +2 Coin = 2 all together.
-  gold Played Copper.
-    +1 Coin = 3 all together.
-  gold Played Copper.
-    +1 Coin = 4 all together.
-  gold bought Silver.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Silver.
-  gold Discarded Duchy.
-  gold Discarded Province.
-  gold Drew Gold into hand.
-  gold Drew Estate into hand.
-  gold Drew Copper into hand.
-  gold Drew Gold into hand.
-  gold Drew Estate into hand.
-  gold ends turn with deck: Copper(7), Duchy(2), Estate(3), Gold(5), Province(2), Silver(5), 
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 4 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 6 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 8 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 10 all together.
+  LookoutTraderNobles bought Province.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Nobles.
+  LookoutTraderNobles Discarded Province.
+  LookoutTraderNobles Discarded Nobles.
+  LookoutTraderNobles reshuffled
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Nobles into hand.
+  LookoutTraderNobles Drew Province into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles ends turn with deck: Nobles(2), Province(3), Silver(11), Trader(1), 
+
+BigMoney begins turn
+With hand: Copper,Copper,Estate,Estate,Province,
+  BigMoney Played Copper.
+    +1 Coin = 1 all together.
+  BigMoney Played Copper.
+    +1 Coin = 2 all together.
+  BigMoney bought Estate.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Province.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(3), Province(2), Silver(6), 
 
 ROUND 16
 -------------
-cache begins turn
-With hand: Copper,Copper,Gold,Gold,Silver,
-  cache Played Gold.
-    +3 Coin = 3 all together.
-  cache Played Gold.
-    +3 Coin = 6 all together.
-  cache Played Silver.
+LookoutTraderNobles begins turn
+With hand: Nobles,Province,Silver,Silver,Silver,
+  LookoutTraderNobles Played Nobles.
+    LookoutTraderNobles Drew Province into hand.
+    LookoutTraderNobles Drew Silver into hand.
+    LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 2 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 4 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 6 all together.
+  LookoutTraderNobles Played Silver.
     +2 Coin = 8 all together.
-  cache Played Copper.
-    +1 Coin = 9 all together.
-  cache Played Copper.
-    +1 Coin = 10 all together.
-  cache bought Province.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Silver.
-  cache Discarded Gold.
-  cache Discarded Gold.
-  cache Drew Cache into hand.
-  cache Drew Silver into hand.
-  cache reshuffled
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Cache into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Duchy(3), Estate(3), Gold(3), Province(3), Silver(4), 
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 10 all together.
+  LookoutTraderNobles bought Province.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Nobles.
+  LookoutTraderNobles Discarded Province.
+  LookoutTraderNobles Discarded Province.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Province into hand.
+  LookoutTraderNobles Drew Trader into hand.
+  LookoutTraderNobles ends turn with deck: Nobles(2), Province(4), Silver(11), Trader(1), 
 
-gold begins turn
-With hand: Copper,Estate,Estate,Gold,Gold,
-  gold Played Gold.
+BigMoney begins turn
+With hand: Copper,Gold,Gold,Silver,Silver,
+  BigMoney Played Gold.
     +3 Coin = 3 all together.
-  gold Played Gold.
+  BigMoney Played Gold.
     +3 Coin = 6 all together.
-  gold Played Copper.
-    +1 Coin = 7 all together.
-  gold bought Duchy.
-  gold Discarded Copper.
-  gold Discarded Gold.
-  gold Discarded Gold.
-  gold Discarded Estate.
-  gold Discarded Estate.
-  gold Drew Silver into hand.
-  gold reshuffled
-  gold Drew Silver into hand.
-  gold Drew Copper into hand.
-  gold Drew Gold into hand.
-  gold Drew Gold into hand.
-  gold ends turn with deck: Copper(7), Duchy(3), Estate(3), Gold(5), Province(2), Silver(5), 
+  BigMoney Played Silver.
+    +2 Coin = 8 all together.
+  BigMoney Played Silver.
+    +2 Coin = 10 all together.
+  BigMoney Played Copper.
+    +1 Coin = 11 all together.
+  BigMoney bought Province.
+  BigMoney Discarded Copper.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Gold.
+  BigMoney Discarded Gold.
+  BigMoney Drew Silver into hand.
+  BigMoney reshuffled
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Duchy into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney Drew Estate into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(4), Gold(3), Province(3), Silver(6), 
 
 ROUND 17
 -------------
-cache begins turn
-With hand: Cache,Cache,Copper,Copper,Silver,
-  cache Played Silver.
+LookoutTraderNobles begins turn
+With hand: Province,Silver,Silver,Silver,Trader,
+  LookoutTraderNobles Played Silver.
     +2 Coin = 2 all together.
-  cache Played Copper.
-    +1 Coin = 3 all together.
-  cache Played Copper.
-    +1 Coin = 4 all together.
-  cache Played Cache.
-    +3 Coin = 7 all together.
-  cache Played Cache.
-    +3 Coin = 10 all together.
-  cache bought Province.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Silver.
-  cache Discarded Cache.
-  cache Discarded Cache.
-  cache Drew Province into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Duchy into hand.
-  cache Drew Silver into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Duchy(3), Estate(3), Gold(3), Province(4), Silver(4), 
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 4 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 6 all together.
+  LookoutTraderNobles bought Duchy.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Province.
+  LookoutTraderNobles Discarded Trader.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Nobles into hand.
+  LookoutTraderNobles reshuffled
+  LookoutTraderNobles Drew Province into hand.
+  LookoutTraderNobles ends turn with deck: Duchy(1), Nobles(2), Province(4), Silver(11), Trader(1), 
 
-gold begins turn
-With hand: Copper,Gold,Gold,Silver,Silver,
-  gold Played Gold.
-    +3 Coin = 3 all together.
-  gold Played Gold.
-    +3 Coin = 6 all together.
-  gold Played Silver.
-    +2 Coin = 8 all together.
-  gold Played Silver.
-    +2 Coin = 10 all together.
-  gold Played Copper.
-    +1 Coin = 11 all together.
-  gold bought Province.
-  gold Discarded Copper.
-  gold Discarded Silver.
-  gold Discarded Silver.
-  gold Discarded Gold.
-  gold Discarded Gold.
-  gold Drew Duchy into hand.
-  gold Drew Copper into hand.
-  gold Drew Estate into hand.
-  gold Drew Gold into hand.
-  gold Drew Copper into hand.
-  gold ends turn with deck: Copper(7), Duchy(3), Estate(3), Gold(5), Province(3), Silver(5), 
+BigMoney begins turn
+With hand: Duchy,Estate,Estate,Estate,Silver,
+  BigMoney Played Silver.
+    +2 Coin = 2 all together.
+  BigMoney bought Estate.
+  BigMoney Discarded Silver.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Estate.
+  BigMoney Discarded Duchy.
+  BigMoney Drew Gold into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney Drew Province into hand.
+  BigMoney Drew Copper into hand.
+  BigMoney Drew Silver into hand.
+  BigMoney ends turn with deck: Copper(7), Duchy(2), Estate(5), Gold(3), Province(3), Silver(6), 
 
 ROUND 18
 -------------
-cache begins turn
-With hand: Copper,Copper,Duchy,Province,Silver,
-  cache Played Silver.
+LookoutTraderNobles begins turn
+With hand: Nobles,Province,Silver,Silver,Silver,
+  LookoutTraderNobles Played Nobles.
+    LookoutTraderNobles Drew Silver into hand.
+    LookoutTraderNobles Drew Silver into hand.
+    LookoutTraderNobles Drew Province into hand.
+  LookoutTraderNobles Played Silver.
     +2 Coin = 2 all together.
-  cache Played Copper.
-    +1 Coin = 3 all together.
-  cache Played Copper.
-    +1 Coin = 4 all together.
-  cache bought Estate.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Silver.
-  cache Discarded Duchy.
-  cache Discarded Province.
-  cache Drew Gold into hand.
-  cache Drew Duchy into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Duchy(3), Estate(4), Gold(3), Province(4), Silver(4), 
-
-gold begins turn
-With hand: Copper,Copper,Duchy,Estate,Gold,
-  gold Played Gold.
-    +3 Coin = 3 all together.
-  gold Played Copper.
-    +1 Coin = 4 all together.
-  gold Played Copper.
-    +1 Coin = 5 all together.
-  gold bought Duchy.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Gold.
-  gold Discarded Estate.
-  gold Discarded Duchy.
-  gold Drew Estate into hand.
-  gold Drew Duchy into hand.
-  gold Drew Copper into hand.
-  gold Drew Silver into hand.
-  gold Drew Gold into hand.
-  gold ends turn with deck: Copper(7), Duchy(4), Estate(3), Gold(5), Province(3), Silver(5), 
-
-ROUND 19
--------------
-cache begins turn
-With hand: Copper,Copper,Copper,Duchy,Gold,
-  cache Played Gold.
-    +3 Coin = 3 all together.
-  cache Played Copper.
-    +1 Coin = 4 all together.
-  cache Played Copper.
-    +1 Coin = 5 all together.
-  cache Played Copper.
-    +1 Coin = 6 all together.
-  cache bought Duchy.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Gold.
-  cache Discarded Duchy.
-  cache Drew Copper into hand.
-  cache Drew Silver into hand.
-  cache Drew Copper into hand.
-  cache Drew Duchy into hand.
-  cache Drew Province into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Duchy(4), Estate(4), Gold(3), Province(4), Silver(4), 
-
-gold begins turn
-With hand: Copper,Duchy,Estate,Gold,Silver,
-  gold Played Gold.
-    +3 Coin = 3 all together.
-  gold Played Silver.
-    +2 Coin = 5 all together.
-  gold Played Copper.
-    +1 Coin = 6 all together.
-  gold bought Estate.
-  gold Discarded Copper.
-  gold Discarded Silver.
-  gold Discarded Gold.
-  gold Discarded Estate.
-  gold Discarded Duchy.
-  gold Drew Estate into hand.
-  gold Drew Silver into hand.
-  gold Drew Copper into hand.
-  gold Drew Province into hand.
-  gold Drew Gold into hand.
-  gold ends turn with deck: Copper(7), Duchy(4), Estate(4), Gold(5), Province(3), Silver(5), 
-
-ROUND 20
--------------
-cache begins turn
-With hand: Copper,Copper,Duchy,Province,Silver,
-  cache Played Silver.
-    +2 Coin = 2 all together.
-  cache Played Copper.
-    +1 Coin = 3 all together.
-  cache Played Copper.
-    +1 Coin = 4 all together.
-  cache bought Estate.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Silver.
-  cache Discarded Duchy.
-  cache Discarded Province.
-  cache Drew Silver into hand.
-  cache Drew Estate into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Gold into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Duchy(4), Estate(5), Gold(3), Province(4), Silver(4), 
-
-gold begins turn
-With hand: Copper,Estate,Gold,Province,Silver,
-  gold Played Gold.
-    +3 Coin = 3 all together.
-  gold Played Silver.
-    +2 Coin = 5 all together.
-  gold Played Copper.
-    +1 Coin = 6 all together.
-  gold bought Estate.
-  gold Discarded Copper.
-  gold Discarded Silver.
-  gold Discarded Gold.
-  gold Discarded Estate.
-  gold Discarded Province.
-  gold Drew Copper into hand.
-  gold Drew Province into hand.
-  gold Drew Copper into hand.
-  gold Drew Duchy into hand.
-  gold Drew Silver into hand.
-  gold ends turn with deck: Copper(7), Duchy(4), Estate(5), Gold(5), Province(3), Silver(5), 
-
-ROUND 21
--------------
-cache begins turn
-With hand: Copper,Copper,Estate,Gold,Silver,
-  cache Played Gold.
-    +3 Coin = 3 all together.
-  cache Played Silver.
-    +2 Coin = 5 all together.
-  cache Played Copper.
-    +1 Coin = 6 all together.
-  cache Played Copper.
-    +1 Coin = 7 all together.
-  cache bought Estate.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Silver.
-  cache Discarded Gold.
-  cache Discarded Estate.
-  cache Drew Estate into hand.
-  cache Drew Estate into hand.
-  cache Drew Province into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Duchy(4), Estate(6), Gold(3), Province(4), Silver(4), 
-
-gold begins turn
-With hand: Copper,Copper,Duchy,Province,Silver,
-  gold Played Silver.
-    +2 Coin = 2 all together.
-  gold Played Copper.
-    +1 Coin = 3 all together.
-  gold Played Copper.
-    +1 Coin = 4 all together.
-  gold bought Estate.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Silver.
-  gold Discarded Duchy.
-  gold Discarded Province.
-  gold reshuffled
-  gold Drew Duchy into hand.
-  gold Drew Silver into hand.
-  gold Drew Province into hand.
-  gold Drew Silver into hand.
-  gold Drew Estate into hand.
-  gold ends turn with deck: Copper(7), Duchy(4), Estate(6), Gold(5), Province(3), Silver(5), 
-
-ROUND 22
--------------
-cache begins turn
-With hand: Copper,Copper,Estate,Estate,Province,
-  cache Played Copper.
-    +1 Coin = 1 all together.
-  cache Played Copper.
-    +1 Coin = 2 all together.
-  cache bought Estate.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Estate.
-  cache Discarded Estate.
-  cache Discarded Province.
-  cache Drew Gold into hand.
-  cache Drew Cache into hand.
-  cache reshuffled
-  cache Drew Estate into hand.
-  cache Drew Duchy into hand.
-  cache Drew Duchy into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Duchy(4), Estate(7), Gold(3), Province(4), Silver(4), 
-
-gold begins turn
-With hand: Duchy,Estate,Province,Silver,Silver,
-  gold Played Silver.
-    +2 Coin = 2 all together.
-  gold Played Silver.
+  LookoutTraderNobles Played Silver.
     +2 Coin = 4 all together.
-  gold bought Estate.
-  gold Discarded Silver.
-  gold Discarded Silver.
-  gold Discarded Estate.
-  gold Discarded Duchy.
-  gold Discarded Province.
-  gold Drew Province into hand.
-  gold Drew Copper into hand.
-  gold Drew Silver into hand.
-  gold Drew Estate into hand.
-  gold Drew Copper into hand.
-  gold ends turn with deck: Copper(7), Duchy(4), Estate(7), Gold(5), Province(3), Silver(5), 
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 6 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 8 all together.
+  LookoutTraderNobles Played Silver.
+    +2 Coin = 10 all together.
+  LookoutTraderNobles bought Province.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Silver.
+  LookoutTraderNobles Discarded Nobles.
+  LookoutTraderNobles Discarded Province.
+  LookoutTraderNobles Discarded Province.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Duchy into hand.
+  LookoutTraderNobles Drew Province into hand.
+  LookoutTraderNobles Drew Silver into hand.
+  LookoutTraderNobles Drew Province into hand.
+  LookoutTraderNobles ends turn with deck: Duchy(1), Nobles(2), Province(5), Silver(11), Trader(1), 
 
-ROUND 23
--------------
-cache begins turn
-With hand: Cache,Duchy,Duchy,Estate,Gold,
-  cache Played Gold.
-    +3 Coin = 3 all together.
-  cache Played Cache.
-    +3 Coin = 6 all together.
-  cache bought Gold.
-  cache Discarded Gold.
-  cache Discarded Cache.
-  cache Discarded Estate.
-  cache Discarded Duchy.
-  cache Discarded Duchy.
-  cache Drew Duchy into hand.
-  cache Drew Estate into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Duchy(4), Estate(7), Gold(4), Province(4), Silver(4), 
+Game ended in 18 turns.
+LookoutTraderNobles Won!
+LookoutTraderNobles total score: 37
+  Duchy(1), Nobles(2), Province(5), Silver(11), Trader(1), 
+BigMoney total score: 29
+  Copper(7), Duchy(2), Estate(5), Gold(3), Province(3), Silver(6), 
+Trash contains: Copper(7), Estate(3), Lookout(2), 
 
-gold begins turn
-With hand: Copper,Copper,Estate,Province,Silver,
-  gold Played Silver.
-    +2 Coin = 2 all together.
-  gold Played Copper.
-    +1 Coin = 3 all together.
-  gold Played Copper.
-    +1 Coin = 4 all together.
-  gold bought Silver.
-  gold Discarded Copper.
-  gold Discarded Copper.
-  gold Discarded Silver.
-  gold Discarded Estate.
-  gold Discarded Province.
-  gold Drew Gold into hand.
-  gold Drew Gold into hand.
-  gold Drew Duchy into hand.
-  gold Drew Gold into hand.
-  gold Drew Copper into hand.
-  gold ends turn with deck: Copper(7), Duchy(4), Estate(7), Gold(5), Province(3), Silver(6), 
-
-ROUND 24
--------------
-cache begins turn
-With hand: Copper,Copper,Copper,Duchy,Estate,
-  cache Played Copper.
-    +1 Coin = 1 all together.
-  cache Played Copper.
-    +1 Coin = 2 all together.
-  cache Played Copper.
-    +1 Coin = 3 all together.
-  cache bought Silver.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Copper.
-  cache Discarded Estate.
-  cache Discarded Duchy.
-  cache Drew Copper into hand.
-  cache Drew Copper into hand.
-  cache Drew Cache into hand.
-  cache Drew Duchy into hand.
-  cache Drew Estate into hand.
-  cache ends turn with deck: Cache(3), Copper(13), Duchy(4), Estate(7), Gold(4), Province(4), Silver(5), 
-
-gold begins turn
-With hand: Copper,Duchy,Gold,Gold,Gold,
-  gold Played Gold.
-    +3 Coin = 3 all together.
-  gold Played Gold.
-    +3 Coin = 6 all together.
-  gold Played Gold.
-    +3 Coin = 9 all together.
-  gold Played Copper.
-    +1 Coin = 10 all together.
-  gold bought Province.
-  gold Discarded Copper.
-  gold Discarded Gold.
-  gold Discarded Gold.
-  gold Discarded Gold.
-  gold Discarded Duchy.
-  gold Drew Estate into hand.
-  gold Drew Estate into hand.
-  gold Drew Copper into hand.
-  gold Drew Silver into hand.
-  gold Drew Estate into hand.
-  gold ends turn with deck: Copper(7), Duchy(4), Estate(7), Gold(5), Province(4), Silver(6), 
-
-Game ended in 24 turns.
-There was a tie between: cache, gold, 
-cache total score: 43
-  Cache(3), Copper(13), Duchy(4), Estate(7), Gold(4), Province(4), Silver(5), 
-gold total score: 43
-  Copper(7), Duchy(4), Estate(7), Gold(5), Province(4), Silver(6), 
-Trash contains: 
-
-cache GainSequence is:
-  Silver, Silver, Cache, Copper, Copper, 
-  Silver, Gold, Cache, Copper, Copper, 
-  Cache, Copper, Copper, Gold, Province, 
-  Gold, Province, Silver, Duchy, Duchy, 
-  Duchy, Province, Province, Estate, Duchy, 
-  Estate, Estate, Estate, Gold, Silver, 
-
-gold GainSequence is:
-  Silver, Silver, Gold, Gold, Silver, 
-  Gold, Silver, Gold, Gold, Province, 
-  Duchy, Province, Duchy, Silver, Duchy, 
-  Province, Duchy, Estate, Estate, Estate, 
-  Estate, Silver, Province, 
+LookoutTraderNobles GainSequence is:
+  Trader, Lookout, Lookout, Silver, Silver, 
+  Silver, Silver, Nobles, Silver, Silver, 
+  Silver, Province, Nobles, Province, Silver, 
+  Silver, Silver, Silver, Province, Province, 
+  Duchy, Province, 
+BigMoney GainSequence is:
+  Silver, Silver, Gold, Silver, Gold, 
+  Silver, Silver, Gold, Province, Silver, 
+  Province, Duchy, Duchy, Estate, Province, 
+  Estate, 

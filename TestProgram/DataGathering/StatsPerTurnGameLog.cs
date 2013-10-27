@@ -18,7 +18,7 @@ namespace Program
         public PerTurnPlayerCountersSeparatedByGame victoryPointTotalTemporary;
         public PerTurnPlayerCountersSeparatedByGame ruinsGained;
         public MapOfCardsForGameSubset<PerTurnPlayerCountersSeparatedByGame> cardsTotalCount;
-        public MapOfCardsForGameSubset<PerTurnPlayerCountersSeparatedByGame> cardsOwnedAtEndOfGame;
+        public MapOfCardsForGameSubset<PerTurnPlayerCountersSeparatedByGame> carsGainedOnTurn;
         public MapOfCardsForGameSubset<PlayerCounterSeparatedByGame> endOfGameCardCount;
         public PerTurnPlayerCountersSeparatedByGame cursesGained;
         public PerTurnPlayerCountersSeparatedByGame cursesTrashed;
@@ -41,7 +41,7 @@ namespace Program
             this.cardGameSubset = gameSubset;
 
             this.cardsTotalCount = ContstructCounterPerTurn(playerCount, gameSubset); 
-            this.cardsOwnedAtEndOfGame = ContstructCounterPerTurn(playerCount, gameSubset);
+            this.carsGainedOnTurn = ContstructCounterPerTurn(playerCount, gameSubset);
             this.endOfGameCardCount = ContstructCounter(playerCount, gameSubset); 
         }
 
@@ -94,7 +94,7 @@ namespace Program
             this.victoryPointTotal.BeginTurn(playerState);
             this.victoryPointTotalTemporary.BeginTurn(playerState);
             BeginTurnAllCountersPerCard(this.cardsTotalCount, playerState);
-            BeginTurnAllCountersPerCard(this.cardsOwnedAtEndOfGame, playerState);
+            BeginTurnAllCountersPerCard(this.carsGainedOnTurn, playerState);
         }
 
         public override void EndGame(GameState gameState)
@@ -190,7 +190,7 @@ namespace Program
             }
             else 
             {
-                this.cardsOwnedAtEndOfGame[card].IncrementCounter(playerState, 1);                
+                this.carsGainedOnTurn[card].IncrementCounter(playerState, 1);                
             }
         }
 
