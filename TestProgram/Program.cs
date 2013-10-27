@@ -389,8 +389,7 @@ namespace Program
                         htmlWriter.WriteLine("To the left of 0 are games won by " + player1.PlayerName + ".  To the right are games won by " + player2.PlayerName + ".  The xaxis (absolute value) indicates how many points the game was won by.  The area under the curve indicates the win rate for the corresponding player.");
                     });
                     InsertLineGraph(htmlWriter, "Probability player is ahead in points at end of round ", player1, player2, statGatherer.oddsOfBeingAheadOnRoundEnd, maxTurn);
-                    InsertLineGraph(htmlWriter, "Average Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal, maxTurn);
-                    InsertLineGraph(htmlWriter, "Average Victory Point Counting back from End of Game", player1, player2, statGatherer.victoryPointTotalReversed, maxTurn, reversed:true);
+                    InsertLineGraph(htmlWriter, "Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal, maxTurn);                    
                 }, collapseByDefault: false);
                 htmlWriter.InsertExpander("When does the game end?", delegate()
                 {
@@ -400,31 +399,40 @@ namespace Program
                 htmlWriter.InsertExpander("Deck Strength", delegate()
                 {
                     InsertCardData(htmlWriter, statGatherer.endOfGameCardCount, gameConfig.cardGameSubset, player1, player2);
-                    InsertCardData(htmlWriter, "Average Total Count Of Card For " + player1.PlayerName, gameConfig.cardGameSubset, statGatherer.cardsTotalCount, 0, maxTurn);
-                    InsertCardData(htmlWriter, "Average Total Count Of Card For " + player2.PlayerName, gameConfig.cardGameSubset, statGatherer.cardsTotalCount, 1, maxTurn);
-                    InsertCardData(htmlWriter, "Average Gain Of Card For " + player1.PlayerName, gameConfig.cardGameSubset, statGatherer.carsGainedOnTurn, 0, maxTurn);
-                    InsertCardData(htmlWriter, "Average Gain Of Card For " + player2.PlayerName, gameConfig.cardGameSubset, statGatherer.carsGainedOnTurn, 1, maxTurn);
-                    InsertLineGraph(htmlWriter, "Average Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn);
-                    InsertLineGraph(htmlWriter, "Average Number of cards Gained Per Turn", player1, player2, statGatherer.cardsGained, maxTurn);
+                    InsertLineGraph(htmlWriter, "Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn);
+                    InsertLineGraph(htmlWriter, "Number of cards Gained Per Turn", player1, player2, statGatherer.cardsGained, maxTurn);                    
+                    htmlWriter.InsertExpander(player1.PlayerName, delegate()
+                    {
+                        InsertCardData(htmlWriter, "Total Count Of Card", gameConfig.cardGameSubset, statGatherer.cardsTotalCount, 0, maxTurn);
+                        InsertCardData(htmlWriter, "Gain Of Card", gameConfig.cardGameSubset, statGatherer.carsGainedOnTurn, 0, maxTurn);
+                    });
+                    htmlWriter.InsertExpander(player2.PlayerName, delegate()
+                    {
+                        InsertCardData(htmlWriter, "Total Count Of Card", gameConfig.cardGameSubset, statGatherer.cardsTotalCount, 1, maxTurn);
+                        InsertCardData(htmlWriter, "Gain Of Card", gameConfig.cardGameSubset, statGatherer.carsGainedOnTurn, 1, maxTurn);
+                    });                                                            
                     InsertLineGraph(htmlWriter, "Shuffles Per Turn", player1, player2, statGatherer.deckShuffleCount, maxTurn);
 
-                    InsertLineGraph(htmlWriter, "Average Ruins Gained Per Turn", player1, player2, statGatherer.ruinsGained, maxTurn);
-                    InsertLineGraph(htmlWriter, "Average Curses Gained Per Turn", player1, player2, statGatherer.cursesGained, maxTurn);
-                    InsertLineGraph(htmlWriter, "Average Curses Trashed Per Turn", player1, player2, statGatherer.cursesTrashed, maxTurn);
+                    InsertLineGraph(htmlWriter, "Ruins Gained Per Turn", player1, player2, statGatherer.ruinsGained, maxTurn);
+                    InsertLineGraph(htmlWriter, "Curses Gained Per Turn", player1, player2, statGatherer.cursesGained, maxTurn);
+                    InsertLineGraph(htmlWriter, "Curses Trashed Per Turn", player1, player2, statGatherer.cursesTrashed, maxTurn);
                 });
 
-                foreach (Card card in gameConfig.cardGameSubset.OrderBy(c => c.DefaultCoinCost))
+                htmlWriter.InsertExpander("Individual Card Graphs", delegate()
                 {
-                    if (statGatherer.cardsTotalCount[card].HasNonZeroData ||
-                        statGatherer.carsGainedOnTurn[card].HasNonZeroData)
+                    foreach (Card card in gameConfig.cardGameSubset.OrderBy(c => c.DefaultCoinCost))
                     {
-                        htmlWriter.InsertExpander(card.name, delegate()
+                        if (statGatherer.cardsTotalCount[card].forwardTotal.HasNonZeroData ||
+                            statGatherer.carsGainedOnTurn[card].forwardTotal.HasNonZeroData)
                         {
-                            InsertLineGraph(htmlWriter, "Total Count At Turn", player1, player2, statGatherer.cardsTotalCount[card], maxTurn, colllapsebyDefault: false);
-                            InsertLineGraph(htmlWriter, "Average Gained Per Turn", player1, player2, statGatherer.carsGainedOnTurn[card], maxTurn, colllapsebyDefault: true);
-                        });
+                            htmlWriter.InsertExpander(card.name, delegate()
+                            {
+                                InsertLineGraph(htmlWriter, "Card Total At Turn", player1, player2, statGatherer.cardsTotalCount[card], maxTurn, colllapsebyDefault: false);
+                                InsertLineGraph(htmlWriter, "Card Gained At Turn", player1, player2, statGatherer.carsGainedOnTurn[card], maxTurn, colllapsebyDefault: true);
+                            });
+                        }
                     }
-                }                
+                });
 
                 htmlWriter.End();
             }
@@ -433,11 +441,11 @@ namespace Program
         private static void InsertCardData(
             HtmlRenderer htmlWriter, 
             string title,
-            CardGameSubset gameSubset, 
-            MapOfCardsForGameSubset<PerTurnPlayerCountersSeparatedByGame> statsPerCard,             
+            CardGameSubset gameSubset,
+            MapOfCardsForGameSubset<ForwardAndReversePerTurnPlayerCounters> statsPerCard,             
             int playerIndex, 
             int throughTurn)
-        {
+        {            
             Card[] cards = gameSubset.OrderBy(card => card.DefaultCoinCost).ToArray();
             string[] seriesLabel = new string[cards.Length];
             int[] xAxis = Enumerable.Range(1, throughTurn).ToArray();
@@ -446,7 +454,7 @@ namespace Program
             for (int i=0; i < cards.Length; i++)
             {
                 seriesLabel[i] = cards[i].name;
-                seriesData[i] = statsPerCard[cards[i]].GetAveragePerTurn(playerIndex, throughTurn);
+                seriesData[i] = statsPerCard[cards[i]].forwardTotal.GetAveragePerTurn(playerIndex, throughTurn);
             }
 
             htmlWriter.InsertExpander(title, delegate()
@@ -483,25 +491,35 @@ namespace Program
             string title,
             PlayerAction player1,
             PlayerAction player2,
-            PerTurnPlayerCountersSeparatedByGame counters,
+            ForwardAndReversePerTurnPlayerCounters forwardAndReverseCounters,
             int throughTurn,
-            bool colllapsebyDefault = true,
-            bool reversed = false)
-        {
-            if (counters.HasNonZeroData)
+            bool colllapsebyDefault = true)
+        {            
+            if (forwardAndReverseCounters.forwardTotal.HasNonZeroData)
             {
                 htmlWriter.InsertExpander(title, delegate()
-                {
-                    int[] xAxis = !reversed ? Enumerable.Range(1, throughTurn).ToArray() : Enumerable.Range(0, throughTurn).Select( turn => -turn).ToArray();
+                {                    
                     htmlWriter.InsertLineGraph(
                                 title,
                                 "Turn",
                                 player1.PlayerName,
                                 player2.PlayerName,
-                                xAxis,
-                                counters.GetAveragePerTurn(0, throughTurn),
-                                counters.GetAveragePerTurn(1, throughTurn)
+                                Enumerable.Range(1, throughTurn).ToArray(),
+                                forwardAndReverseCounters.forwardTotal.GetAveragePerTurn(0, throughTurn),
+                                forwardAndReverseCounters.forwardTotal.GetAveragePerTurn(1, throughTurn)
                                 );
+                    htmlWriter.InsertExpander("Counting back from the end of the Game ...", delegate()
+                    {
+                        htmlWriter.InsertLineGraph(
+                                title,
+                                "Turn",
+                                player1.PlayerName,
+                                player2.PlayerName,
+                                Enumerable.Range(0, throughTurn).Select( turn => -turn).ToArray(),
+                                forwardAndReverseCounters.reverseTotal.GetAveragePerTurn(0, throughTurn),
+                                forwardAndReverseCounters.reverseTotal.GetAveragePerTurn(1, throughTurn)
+                                );
+                    });
                 },
                 collapseByDefault: colllapsebyDefault);
             }

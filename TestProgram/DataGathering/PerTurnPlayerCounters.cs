@@ -93,6 +93,40 @@ namespace Program
         }
     }
 
+    public class ForwardAndReversePerTurnPlayerCounters
+    {
+        public readonly PerTurnPlayerCountersSeparatedByGame forwardTotal;
+        public readonly PerTurnPlayerCountersSeparatedByGame reverseTotal;
+        private PerTurnPlayerCountersSeparatedByGame currentGameData;
+
+        public ForwardAndReversePerTurnPlayerCounters(int playerCount)
+        {
+            this.forwardTotal = new PerTurnPlayerCountersSeparatedByGame(playerCount);
+            this.reverseTotal = new PerTurnPlayerCountersSeparatedByGame(playerCount);
+            this.currentGameData = new PerTurnPlayerCountersSeparatedByGame(playerCount);
+        }
+
+        public void BeginTurn(PlayerState playerState)
+        {
+            currentGameData.BeginTurn(playerState);
+        }
+
+        public void IncrementCounter(PlayerState playerState, int amount)
+        {
+            currentGameData.IncrementCounter(playerState, amount);
+        }
+
+        public void EndGame(GameState gameState)
+        {
+            this.forwardTotal.Add(gameState, this.currentGameData);
+
+            this.currentGameData.Reverse(gameState);
+            this.reverseTotal.Add(gameState, this.currentGameData);
+
+            this.currentGameData.Clear(gameState);
+        }
+    }
+
     public class PerTurnPlayerCountersSeparatedByGame
     {
         private int playerCount;
