@@ -22,7 +22,7 @@ namespace Program
     {        
         public TSpecies[] currentMembers;
         private int nextMembersCount;
-        private SpeciesScorePair[] nextMembers;
+        public SpeciesScorePair[] nextMembers;
         private TScoreSpecies comparable;
         private UniqueSpeciesGenerator mutator;
         private readonly Random random;
@@ -62,7 +62,7 @@ namespace Program
             this.KeepBestMembers();
         }
 
-        private struct SpeciesScorePair
+        public struct SpeciesScorePair
         {
             public TSpecies species;
             public double score;               
@@ -192,6 +192,7 @@ namespace Program
                 {
                     TSpecies result = this.mutator.Mutate(member);
 
+                    
                     if (this.speciesGenerator.Contains(result))
                     {
                         continue;

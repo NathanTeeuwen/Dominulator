@@ -22,10 +22,10 @@ namespace Program
             Card[] supplyCards = gameConfig.GetSupplyPiles(2, random).Select(pile => pile.ProtoTypeCard).ToArray();
 
             var initialPopulation = Enumerable.Range(0, 10).Select(index => initialDescription).ToArray();
-            var algorithm = new GeneticAlgorithm<PickByPriorityDescription, MutatePickByPriorityDescription, CompareStrategies>(
+            var algorithm = new GeneticAlgorithm<PickByPriorityDescription, MutatePickByPriorityDescription, ComparePickByPriorityDescription>(
                 initialPopulation,
                 new MutatePickByPriorityDescription(random, supplyCards),
-                new CompareStrategies(),
+                new ComparePickByPriorityDescription(),
                 new Random());
 
             for (int i = 0; i < 1000; ++i)
@@ -42,7 +42,33 @@ namespace Program
 
                 System.Console.WriteLine();
             }
-        }                                  
+        }
 
+        public static void FindBestBigMoneyWithCardVsStrategy(PlayerAction playerAction, Card card)
+        {
+            Random random = new Random();
+            var initialPopulation = Enumerable.Range(0, 10).Select(index => new BigMoneyWithCardDescription(card)).ToArray();
+
+            var algorithm = new GeneticAlgorithm<BigMoneyWithCardDescription, MutateBigMoneyWithCardDescription, CompareBigMoneyWithCardDescription>(
+                initialPopulation,
+                new MutateBigMoneyWithCardDescription(random),
+                new CompareBigMoneyWithCardDescription(playerAction),
+                new Random());
+
+            for (int i = 0; i < 1000; ++i)
+            {
+                System.Console.WriteLine("Generation {0}", i);
+                System.Console.WriteLine("==============", i);
+                algorithm.RunOneGeneration();
+                for (int j = 0; j < 10; ++j)
+                {
+                    algorithm.nextMembers[j].species.GetScoreVs(playerAction, showReport:true);
+                    algorithm.nextMembers[j].species.Write(System.Console.Out);
+                    System.Console.WriteLine();
+                }                
+
+                System.Console.WriteLine();
+            }
+        }
     }
 }

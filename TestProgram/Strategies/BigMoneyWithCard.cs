@@ -13,24 +13,48 @@ namespace Program
         public static class BigMoneyWithCard
         {
             
-            public static PlayerAction Player(Card card, string playerName = null, int cardCount = 1, int afterSilverCount = 0, int afterGoldCount = int.MaxValue)
+            public static PlayerAction Player(Card card, 
+                string playerName = null, 
+                int cardCount = 1, 
+                int afterSilverCount = 0, 
+                int afterGoldCount = int.MaxValue,
+                int countGoldBeforeProvince = 3,
+                int countRemainingProvinceBeforeDuchy = 4,
+                int countRemainingProvinceBeforeEstateOverGold = 1,
+                int countRemainingProvinceBeforeEstateOverSilver = 3)
             {
                 return new PlayerAction(
                             playerName == null ? "BigMoneyWithCard" + card.GetType().Name : playerName,                            
-                            purchaseOrder: PurchaseOrder(card, cardCount, afterSilverCount, afterGoldCount == int.MaxValue && card.DefaultCoinCost >= Cards.Gold.DefaultCoinCost ? 0 : afterGoldCount),
+                            purchaseOrder: PurchaseOrder(
+                                card, 
+                                cardCount, 
+                                afterSilverCount, 
+                                afterGoldCount == int.MaxValue && card.DefaultCoinCost >= Cards.Gold.DefaultCoinCost ? 0 : afterGoldCount,
+                                countGoldBeforeProvince,
+                                countRemainingProvinceBeforeDuchy,
+                                countRemainingProvinceBeforeEstateOverGold,
+                                countRemainingProvinceBeforeEstateOverSilver),
                             actionOrder:ActionOrder(card));
             }
 
-            public static ICardPicker PurchaseOrder(Card card, int cardCount, int afterSilverCount, int afterGoldCount)
+            public static ICardPicker PurchaseOrder(
+                Card card, 
+                int cardCount, 
+                int afterSilverCount, 
+                int afterGoldCount, 
+                int countGoldBeforeProvince, 
+                int countRemainingProvinceBeforeDuchy,
+                int countRemainingProvinceBeforeEstateOverGold,
+                int countRemainingProvinceBeforeEstateOverSilver)
             {
                 return new CardPickByPriority(
-                           CardAcceptance.For(Cards.Province, gameState => CountAllOwned(Cards.Gold, gameState) > 2),
-                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4),
-                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2),
+                           CardAcceptance.For(Cards.Province, gameState => CountAllOwned(Cards.Gold, gameState) >= countGoldBeforeProvince),
+                           CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= countRemainingProvinceBeforeDuchy),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= countRemainingProvinceBeforeEstateOverGold),
                            CardAcceptance.For(card, gameState => CountAllOwned(card, gameState) < cardCount && CountAllOwned(Cards.Gold, gameState) >= afterGoldCount),                           
                            CardAcceptance.For(Cards.Gold),
                            CardAcceptance.For(card, gameState => CountAllOwned(card, gameState) < cardCount && CountAllOwned(Cards.Silver, gameState) >= afterSilverCount),
-                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 4),
+                           CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 3),
                            CardAcceptance.For(Cards.Potion, 1, gameState => card.potionCost > 0),
                            CardAcceptance.For(Cards.Silver));
             }

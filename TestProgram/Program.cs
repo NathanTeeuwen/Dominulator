@@ -15,10 +15,9 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            //ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: true);
-            ComparePlayers(Strategies.MineHoard.Player(), Strategies.FamiliarPotionSilverOpenning.Player(), useColonyAndPlatinum: false, createHtmlReport: true);
+            ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: false, createHtmlReport:true);            
             CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
-            //TestAllCardsWithBigMoney();                      
+            //TestAllCardsWithBigMoney();            
             
             stopwatch.Stop();
 
@@ -217,9 +216,9 @@ namespace Program
             int[] originalPositions = new int[] { 0, 1 };
             int[] swappedPlayerPositions = new int[] { 1, 0 };
             int[] winnerCount = new int[2];
-            int tieCount = 0;            
+            int tieCount = 0;
 
-            var statGatherer = new StatsPerTurnGameLog(2, gameConfig.cardGameSubset);
+            var statGatherer = createHtmlReport ? new StatsPerTurnGameLog(2, gameConfig.cardGameSubset) : null;            
 
             var pointSpreadHistogramData = new HistogramData();
             var gameEndOnTurnHistogramData = new HistogramData();

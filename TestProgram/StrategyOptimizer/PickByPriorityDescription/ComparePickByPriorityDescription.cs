@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Program
 {
-    class CompareStrategies
+    class ComparePickByPriorityDescription
              : IScoreSpecies<PickByPriorityDescription>
     {
         public double Compare(PickByPriorityDescription left, PickByPriorityDescription right)
@@ -20,7 +20,7 @@ namespace Program
             //System.Console.WriteLine("");
             PlayerAction leftPlayer = new PlayerAction("Player1", left.ToCardPicker());
             PlayerAction rightPlayer = new PlayerAction("Player2", right.ToCardPicker());
-            return Program.ComparePlayers(leftPlayer, rightPlayer, numberOfGames: 33, logGameCount:0, showCompactScore:false, showVerboseScore:false);
+            return Program.ComparePlayers(leftPlayer, rightPlayer, numberOfGames: 33, logGameCount:0, showCompactScore:false, showVerboseScore:false, createHtmlReport:false);
         }
     }  
 }
