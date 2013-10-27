@@ -18,12 +18,9 @@ namespace Program
             this.playerAction = playerAction;
         }
 
-        public double Compare(BigMoneyWithCardDescription left, BigMoneyWithCardDescription right)
+        public double GetScore(BigMoneyWithCardDescription current)     
         {
-            double leftScore = left.GetScoreVs(this.playerAction);
-            double rightScore = right.GetScoreVs(this.playerAction);
-
-            return leftScore - rightScore;
-        }        
+            return current.GetScoreVs(this.playerAction);
+        }            
     }  
 }

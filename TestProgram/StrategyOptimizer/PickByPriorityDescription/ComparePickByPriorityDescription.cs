@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Program
 {
     class ComparePickByPriorityDescription
-             : IScoreSpecies<PickByPriorityDescription>
+             : IScoreSpeciesVsEachOther<PickByPriorityDescription>
     {
         public double Compare(PickByPriorityDescription left, PickByPriorityDescription right)
         {

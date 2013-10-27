@@ -22,7 +22,7 @@ namespace Program
             Card[] supplyCards = gameConfig.GetSupplyPiles(2, random).Select(pile => pile.ProtoTypeCard).ToArray();
 
             var initialPopulation = Enumerable.Range(0, 10).Select(index => initialDescription).ToArray();
-            var algorithm = new GeneticAlgorithm<PickByPriorityDescription, MutatePickByPriorityDescription, ComparePickByPriorityDescription>(
+            var algorithm = new GeneticAlgorithmPopulationAgainstSelf<PickByPriorityDescription, MutatePickByPriorityDescription, ComparePickByPriorityDescription>(
                 initialPopulation,
                 new MutatePickByPriorityDescription(random, supplyCards),
                 new ComparePickByPriorityDescription(),
@@ -44,31 +44,66 @@ namespace Program
             }
         }
 
-        public static void FindBestBigMoneyWithCardVsStrategy(PlayerAction playerAction, Card card)
+        public static PlayerAction FindBestBigMoneyWithCardVsStrategy(PlayerAction playerAction, Card card, bool logProgress = false)
         {
             Random random = new Random();
             var initialPopulation = Enumerable.Range(0, 10).Select(index => new BigMoneyWithCardDescription(card)).ToArray();
 
-            var algorithm = new GeneticAlgorithm<BigMoneyWithCardDescription, MutateBigMoneyWithCardDescription, CompareBigMoneyWithCardDescription>(
+            var algorithm = new GeneticAlgorithmAgainstConstant<BigMoneyWithCardDescription, MutateBigMoneyWithCardDescription, CompareBigMoneyWithCardDescription>(
                 initialPopulation,
                 new MutateBigMoneyWithCardDescription(random),
                 new CompareBigMoneyWithCardDescription(playerAction),
                 new Random());
 
+            BigMoneyWithCardDescription result = new BigMoneyWithCardDescription(card);
+            double maxScore = -1;
+            double lastMaxScore = maxScore;
+            int countScoreUnchanged = 0;
+
             for (int i = 0; i < 1000; ++i)
             {
-                System.Console.WriteLine("Generation {0}", i);
-                System.Console.WriteLine("==============", i);
+                if (logProgress)
+                {
+                    System.Console.WriteLine("Generation {0}", i);
+                    System.Console.WriteLine("==============", i);
+                }
                 algorithm.RunOneGeneration();
                 for (int j = 0; j < 10; ++j)
                 {
-                    algorithm.nextMembers[j].species.GetScoreVs(playerAction, showReport:true);
-                    algorithm.nextMembers[j].species.Write(System.Console.Out);
-                    System.Console.WriteLine();
-                }                
+                    double currentScore = algorithm.nextMembers[j].species.GetScoreVs(playerAction, showReport:logProgress);
+                    if (currentScore > maxScore)
+                    {
+                        maxScore = currentScore;
+                        result = algorithm.nextMembers[j].species;
+                    }
+                    if (logProgress)
+                    {
+                        algorithm.nextMembers[j].species.Write(System.Console.Out);
+                        System.Console.WriteLine();
+                    }
+                }
 
-                System.Console.WriteLine();
+                if (lastMaxScore == maxScore)
+                {
+                    if (countScoreUnchanged++ >= 3)
+                        break;
+                }
+                else
+                {
+                    lastMaxScore = maxScore;
+                    countScoreUnchanged = 0;
+                }
+
+                if (logProgress)
+                {
+                    System.Console.WriteLine();
+                }
             }
+
+            result.Write(System.Console.Out);
+            System.Console.WriteLine();
+
+            return result.ToPlayerAction();
         }
     }
 }

@@ -307,6 +307,8 @@ namespace Dominion.CardTypes
             while (true)
             {
                 Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+                if (revealedCard == null)
+                    break;
                 if (revealedCard.isTreasure)
                 {
                     if (currentPlayer.actions.ShouldTrashCard(gameState, revealedCard))

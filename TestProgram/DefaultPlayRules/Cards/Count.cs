@@ -57,7 +57,7 @@ namespace Program.DefaultStrategies
                 return result;
             }
 
-            return base.GetCardFromHandToTopDeck(gameState, acceptableCard, isOptional);
+            return gameState.Self.Hand.FirstOrDefault();
         }
 
         public static bool WillPlayCountCardForTrash(PlayerAction playerAction, GameState gameState)

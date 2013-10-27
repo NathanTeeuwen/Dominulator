@@ -11,29 +11,31 @@ namespace Program
         TSpecies Mutate(TSpecies member);
     }
 
-    public interface IScoreSpecies<TSpecies>
+    public interface IScoreSpeciesVsEachOther<TSpecies>
     {
         double Compare(TSpecies left, TSpecies right);
     }
-    
-    public class GeneticAlgorithm<TSpecies, TSpeciesMutator, TScoreSpecies>
-        where TSpeciesMutator : ISpecidesMutator<TSpecies>
-        where TScoreSpecies : IScoreSpecies<TSpecies>
-    {        
+
+    public interface IScoreSpecies<TSpecies>
+    {
+        double GetScore(TSpecies member);
+    }
+
+    public abstract class GeneticAlgorithm<TSpecies, TSpeciesMutator>
+        where TSpeciesMutator : ISpecidesMutator<TSpecies>        
+    {
         public TSpecies[] currentMembers;
-        private int nextMembersCount;
-        public SpeciesScorePair[] nextMembers;
-        private TScoreSpecies comparable;
+        protected int nextMembersCount;
+        public SpeciesScorePair[] nextMembers;        
         private UniqueSpeciesGenerator mutator;
         private readonly Random random;
 
         private const int childMemberCount = 10;
         private const int numberOfGamesToPlayWhenScoring = 33;
 
-        public GeneticAlgorithm(IEnumerable<TSpecies> initialPopulation, TSpeciesMutator mutator, TScoreSpecies comparable, Random random)
+        public GeneticAlgorithm(IEnumerable<TSpecies> initialPopulation, TSpeciesMutator mutator, Random random)
         {
-            this.mutator = new UniqueSpeciesGenerator(mutator);
-            this.comparable = comparable;
+            this.mutator = new UniqueSpeciesGenerator(mutator);            
             this.currentMembers = initialPopulation.ToArray();
             this.nextMembers = new SpeciesScorePair[this.currentMembers.Length * (childMemberCount + 1)];  // enough for 10 variations plus the current members
             this.random = random;
@@ -65,7 +67,7 @@ namespace Program
         public struct SpeciesScorePair
         {
             public TSpecies species;
-            public double score;               
+            public double score;
 
             public SpeciesScorePair(TSpecies species, float score)
             {
@@ -96,16 +98,16 @@ namespace Program
             for (int memberIndex = 0; memberIndex < this.currentMembers.Length; ++memberIndex)
             {
                 TSpecies current = this.currentMembers[memberIndex];
-                this.nextMembers[memberIndex].species = current;                
+                this.nextMembers[memberIndex].species = current;
                 for (int i = 0; i < childMemberCount; ++i)
                 {
                     var next = current;
                     for (int j = 0; j < this.random.Next(5); ++j)
                         next = this.mutator.GetUniqueSpecies(next);
-                    
-                    this.nextMembers[memberIndex * childMemberCount + i + this.currentMembers.Length].species = next;                    
+
+                    this.nextMembers[memberIndex * childMemberCount + i + this.currentMembers.Length].species = next;
                 }
-            }            
+            }
 
             this.nextMembersCount = this.nextMembers.Length;
         }
@@ -126,33 +128,7 @@ namespace Program
             }
         }
 
-        private void ScoreCurrentPlayers()
-        {
-            //for (int currentCompetitorIndex = 0; currentCompetitorIndex < this.nextMembersCount; ++currentCompetitorIndex)
-
-            Parallel.ForEach(Enumerable.Range(0, this.nextMembersCount),
-                delegate(int currentCompetitorIndex)
-                {                    
-                    TSpecies current = this.nextMembers[currentCompetitorIndex].species;
-
-                    /*
-                    for (int gameCount = 0; gameCount < numberOfGamesToPlayWhenScoring; ++gameCount)
-                    {
-                        TSpecies other = PickRandomCompetitor(excluded: currentCompetitorIndex);
-                        int result = this.comparable.Compare(current, other);
-                        if (result > 0)
-                            this.nextMembers[currentCompetitorIndex].score += 2;
-                        else if (result == 0)
-                            this.nextMembers[currentCompetitorIndex].score += 1;
-                    }*/
-
-                    foreach (TSpecies other in this.currentMembers)
-                    {
-                        this.nextMembers[currentCompetitorIndex].score += this.comparable.Compare(current, other);                        
-                    }
-                }
-            );
-        }
+        abstract protected void ScoreCurrentPlayers();        
 
         private TSpecies PickRandomCompetitor(int excluded)
         {
@@ -165,7 +141,7 @@ namespace Program
             return this.nextMembers[competitorIndex].species;
         }
 
-        class UniqueSpeciesGenerator
+        private class UniqueSpeciesGenerator        
         {
             private readonly HashSet<TSpecies> speciesGenerator;
             private TSpeciesMutator mutator;
@@ -192,7 +168,7 @@ namespace Program
                 {
                     TSpecies result = this.mutator.Mutate(member);
 
-                    
+
                     if (this.speciesGenerator.Contains(result))
                     {
                         continue;
@@ -203,5 +179,74 @@ namespace Program
                 }
             }
         }
-    }    
+    }
+    
+    public class GeneticAlgorithmPopulationAgainstSelf<TSpecies, TSpeciesMutator, TScoreSpecies>
+        : GeneticAlgorithm<TSpecies, TSpeciesMutator>
+        where TSpeciesMutator : ISpecidesMutator<TSpecies>
+        where TScoreSpecies : IScoreSpeciesVsEachOther<TSpecies>        
+    {                
+        private TScoreSpecies comparable;        
+
+        public GeneticAlgorithmPopulationAgainstSelf(IEnumerable<TSpecies> initialPopulation, TSpeciesMutator mutator, TScoreSpecies comparable, Random random)
+            : base(initialPopulation, mutator, random)
+        {            
+            this.comparable = comparable;            
+        }        
+
+        override protected void ScoreCurrentPlayers()
+        {
+            //for (int currentCompetitorIndex = 0; currentCompetitorIndex < this.nextMembersCount; ++currentCompetitorIndex)
+
+            Parallel.ForEach(Enumerable.Range(0, this.nextMembersCount),
+                delegate(int currentCompetitorIndex)
+                {                    
+                    TSpecies current = this.nextMembers[currentCompetitorIndex].species;
+
+                    /*
+                    for (int gameCount = 0; gameCount < numberOfGamesToPlayWhenScoring; ++gameCount)
+                    {
+                        TSpecies other = PickRandomCompetitor(excluded: currentCompetitorIndex);
+                        int result = this.comparable.Compare(current, other);
+                        if (result > 0)
+                            this.nextMembers[currentCompetitorIndex].score += 2;
+                        else if (result == 0)
+                            this.nextMembers[currentCompetitorIndex].score += 1;
+                    }*/
+
+                    foreach (TSpecies other in this.currentMembers)
+                    {
+                        this.nextMembers[currentCompetitorIndex].score += this.comparable.Compare(current, other);                        
+                    }
+                }
+            );
+        }      
+    }
+
+    public class GeneticAlgorithmAgainstConstant<TSpecies, TSpeciesMutator, TScoreSpecies>
+       : GeneticAlgorithm<TSpecies, TSpeciesMutator>
+        where TSpeciesMutator : ISpecidesMutator<TSpecies>
+        where TScoreSpecies : IScoreSpecies<TSpecies>
+    {
+        private TScoreSpecies comparable;
+
+        public GeneticAlgorithmAgainstConstant(IEnumerable<TSpecies> initialPopulation, TSpeciesMutator mutator, TScoreSpecies comparable, Random random)
+            : base(initialPopulation, mutator, random)
+        {
+            this.comparable = comparable;
+        }
+
+        override protected void ScoreCurrentPlayers()
+        {
+            //for (int currentCompetitorIndex = 0; currentCompetitorIndex < this.nextMembersCount; ++currentCompetitorIndex)
+
+            Parallel.ForEach(Enumerable.Range(0, this.nextMembersCount),
+                delegate(int currentCompetitorIndex)
+                {
+                    TSpecies current = this.nextMembers[currentCompetitorIndex].species;
+                    this.nextMembers[currentCompetitorIndex].score += this.comparable.GetScore(current);
+                }
+            );
+        }
+    }
 }

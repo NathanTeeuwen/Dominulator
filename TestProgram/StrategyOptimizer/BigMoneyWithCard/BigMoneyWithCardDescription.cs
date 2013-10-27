@@ -55,7 +55,7 @@ namespace Program
             textwriter.Write(
                 //"{0}, cardCount: {1}, afterSilverCount: {2}, countGoldBeforeProvince: {3}, countRemainingProvinceBeforeDuchy: {4}, countRemainingProvinceBeforeEstateOverGold: {5}, countRemainingProvinceBeforeEstateOverSilver {6}",
                 "{0}, cardCount: {1}, {2}, {3}, {4}, {5}, {6}",
-                this.card,
+                this.card.name,
                 this.cardCount,
                 this.afterSilverCount,
                 this.countGoldBeforeProvince,

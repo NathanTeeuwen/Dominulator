@@ -15,9 +15,10 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            ComparePlayers(Strategies.LookoutTraderNobles.Player(), Strategies.BigMoney.Player(), useColonyAndPlatinum: false, createHtmlReport:true);            
-            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
-            //TestAllCardsWithBigMoney();            
+            //ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Witch), Strategies.BigMoneyWithCard.Player(Cards.Witch), useColonyAndPlatinum: false, createHtmlReport: true);
+            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Witch), StrategyOptimizer.FindBestBigMoneyWithCardVsStrategy(Strategies.BigMoney.Player(), Cards.Witch), useColonyAndPlatinum: false, createHtmlReport: true);            
+            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
+            //TestAllCardsWithBigMoney();                        
             
             stopwatch.Stop();
 
@@ -84,9 +85,32 @@ namespace Program
                     if (notImplementedCards.Contains(card))
                         continue;
 
-                    var playerAction = Strategies.BigMoneyWithCard.Player(card, "BigMoney<" + card.name + ">");
+                    var playerAction = Strategies.BigMoneyWithCard.Player(card);
 
-                    ComparePlayers(playerAction, bigMoneyPlayer, numberOfGames:100, shouldParallel:true, createHtmlReport:false);
+                    ComparePlayers(playerAction, bigMoneyPlayer, numberOfGames:1000, shouldParallel:true, createHtmlReport:false, logGameCount:0);
+                }
+            }
+        }
+
+        static void FindOptimalPlayForEachCardWithBigMoney()
+        {
+            var bigMoneyPlayer = Strategies.BigMoney.Player();
+            foreach (var member in typeof(Cards).GetMembers(System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public))
+            {
+                if (member.MemberType == System.Reflection.MemberTypes.Field)
+                {
+                    Card card = (Card)(typeof(Cards).GetField(member.Name).GetValue(null));
+                    if (!GameConfigBuilder.IsKingdomCard(card))
+                    {
+                        continue;
+                    }
+
+                    if (notImplementedCards.Contains(card))
+                        continue;
+
+                    var playerAction = StrategyOptimizer.FindBestBigMoneyWithCardVsStrategy(Strategies.BigMoney.Player(), card); // Strategies.BigMoneyWithCard.Player(card, "BigMoney<" + card.name + ">");
+
+                    ComparePlayers(playerAction, bigMoneyPlayer, numberOfGames: 1000, shouldParallel: true, createHtmlReport: true, logGameCount: 0);
                 }
             }
         }
