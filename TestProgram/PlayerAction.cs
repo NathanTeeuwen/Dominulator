@@ -43,7 +43,7 @@ namespace Program
             this.purchaseOrder = purchaseOrder;
             this.actionOrder = actionOrder == null ? Strategies.Default.DefaultActionPlayOrder(purchaseOrder) : actionOrder;
             this.discardOrder = discardOrder == null ? Strategies.Default.DefaultDiscardOrder() : discardOrder;
-            this.trashOrder = trashOrder == null ? Strategies.Default.DefaultTrashOrder() : trashOrder;
+            this.trashOrder = trashOrder == null ? Strategies.Default.DefaultTrashOrder(purchaseOrder) : trashOrder;
             this.treasurePlayOrder = treasurePlayOrder == null ? Strategies.Default.DefaultTreasurePlayOrder() : treasurePlayOrder;            
             this.gainOrder = gainOrder != null ? gainOrder : purchaseOrder;
             this.chooseDefaultActionOnNone = chooseDefaultActionOnNone;

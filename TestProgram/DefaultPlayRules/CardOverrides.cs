@@ -39,6 +39,7 @@ namespace Program.DefaultStrategies
 
             result[Cards.Remodel] = Strategies.HasCardToTrashInHand;
             result[Cards.Salvager] = Strategies.HasCardToTrashInHand;
+            result[Cards.Bishop] = Strategies.HasCardToTrashInHand;
             result[Cards.Lookout] = Lookout.ShouldPlay;
 
             return result;

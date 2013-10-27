@@ -16,9 +16,10 @@ namespace Program
             stopwatch.Start();
 
             //ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Witch), Strategies.BigMoneyWithCard.Player(Cards.Witch), useColonyAndPlatinum: false, createHtmlReport: true);
-            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Witch), StrategyOptimizer.FindBestBigMoneyWithCardVsStrategy(Strategies.BigMoney.Player(), Cards.Witch), useColonyAndPlatinum: false, createHtmlReport: true);            
-            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
+            //ComparePlayers(Strategies.BigMoney.Player(), StrategyOptimizer.FindBestBigMoneyWithCardVsStrategy(Strategies.BigMoney.Player(), Cards.Bishop), useColonyAndPlatinum: false, createHtmlReport: true);            
+            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
             //TestAllCardsWithBigMoney();                        
+            ComparePlayers(Strategies.BigMoney.Player(), StrategyOptimizer.FindBestBigMoneyWithCardVsStrategy(Strategies.BigMoney.Player(), Cards.Bishop, logProgress: true));
             
             stopwatch.Stop();
 

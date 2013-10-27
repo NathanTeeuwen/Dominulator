@@ -210,7 +210,7 @@ namespace Program
                     CardAcceptance.For(Cards.Copper));
             }
 
-            public static ICardPicker DefaultTrashOrder()
+            public static ICardPicker DefaultTrashOrder(ICardPicker purchaseOrder)
             {
                 return new CardPickByPriority(
                     CardAcceptance.For(Cards.Curse),
@@ -219,10 +219,10 @@ namespace Program
                     CardAcceptance.For(Cards.Survivors),
                     CardAcceptance.For(Cards.RuinedLibrary),
                     CardAcceptance.For(Cards.AbandonedMine), 
-                    CardAcceptance.For(Cards.Estate, gameState => CountAllOwned(Cards.Province, gameState) == 0),
+                    CardAcceptance.For(Cards.Estate, gameState => !purchaseOrder.DoesCardPickerMatch(gameState, Cards.Estate)),
                     CardAcceptance.For(Cards.OvergrownEstate),
                     CardAcceptance.For(Cards.Hovel),
-                    CardAcceptance.For(Cards.Copper));
+                    CardAcceptance.For(Cards.Copper, gameState => !purchaseOrder.DoesCardPickerMatch(gameState, Cards.Copper)));
             }        
 
             public static bool ShouldBuyProvinces(GameState gameState)
