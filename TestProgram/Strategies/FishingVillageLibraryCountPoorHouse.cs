@@ -69,7 +69,7 @@ namespace Program
                         return false;
                     }
 
-                    return gameState.Self.Hand.Where(card => card.isTreasure).Count() <= 3;
+                    return gameState.Self.Hand.CountWhere(card => card.isTreasure) <= 3;
                 }
 
                 public bool ShouldPlayAction(GameState gameState)

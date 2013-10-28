@@ -51,7 +51,7 @@ namespace Program
 
         private static int CountMightDraw(Card card, GameState gameState, int maxCount)
         {
-            if (gameState.Self.CardsInDeck.Count() >= maxCount)
+            if (gameState.Self.CardsInDeck.Count >= maxCount)
                 return CountInDeck(card, gameState);
             else
                 return CountInDeckAndDiscard(card, gameState);            

@@ -305,7 +305,7 @@ namespace Dominion.CardTypes
         public static Vineyard card = new Vineyard();
 
         private Vineyard()
-            : base("Vineyard", coinCost: 0, potionCost:1, victoryPoints: playerState => playerState.AllOwnedCards.Where(card => card.isAction).Count()/3)
+            : base("Vineyard", coinCost: 0, potionCost:1, victoryPoints: playerState => playerState.AllOwnedCards.CountWhere(card => card.isAction)/3)
         {
         }        
     }

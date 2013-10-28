@@ -15,7 +15,7 @@ namespace Dominion.CardTypes
         public static Fairgrounds card = new Fairgrounds();
 
         private Fairgrounds()
-            : base("Fairgrounds", coinCost: 6, victoryPoints: playerState => playerState.AllOwnedCards.GroupBy(card => card).Count() / 5 * 2)
+            : base("Fairgrounds", coinCost: 6, victoryPoints: playerState => playerState.AllOwnedCards.CountTypes / 5 * 2)
         {            
         }
     }

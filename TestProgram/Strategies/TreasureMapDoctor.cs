@@ -55,7 +55,7 @@ namespace Program
                 {
                     PlayerState self = gameState.Self;
 
-                    if (self.CardsInDeck.Count() <= 3 &&
+                    if (self.CardsInDeck.Count <= 3 &&
                         CountInDeck(Cards.Estate, gameState) > 0)
                     {
                         return Cards.Estate;

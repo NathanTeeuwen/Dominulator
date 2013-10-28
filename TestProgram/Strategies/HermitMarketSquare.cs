@@ -113,7 +113,7 @@ namespace Program
 
                     if (IsDoingMegaTurn(gameState))
                     {
-                        if (self.CardsInDeckAndDiscard.Count() > 5)
+                        if (self.CardsInDeck.Count + self.Discard.Count > 5)
                             return true;
                     }
 

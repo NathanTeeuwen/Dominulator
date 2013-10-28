@@ -31,7 +31,7 @@ namespace Dominion
 
         public void Shuffle(Random random)
         {
-            int lastIndex = this.cards.Count() - 1;
+            int lastIndex = this.cards.Count - 1;
             for (int currentIndex = 0; currentIndex < lastIndex; ++currentIndex)
             {
                 int swapIndex = NumberBetweenInclusive(random, currentIndex, lastIndex);

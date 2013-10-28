@@ -129,7 +129,7 @@ namespace Dominion.CardTypes
         private Duke()
             : base("Duke", coinCost: 5, isAction: true)
         {
-            this.victoryPointCounter = player => player.AllOwnedCards.Where(card => card == Duchy.card).Count();
+            this.victoryPointCounter = player => player.AllOwnedCards.CountOf(Duchy.card);
         }
     }
 

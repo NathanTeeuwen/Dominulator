@@ -67,7 +67,7 @@ namespace Dominion
         public void PassTurnLeft()
         {
             this.currentPlayerIndex++;
-            if (this.currentPlayerIndex >= this.players.Count())
+            if (this.currentPlayerIndex >= this.players.Length)
             {
                 this.currentPlayerIndex = 0;
             }

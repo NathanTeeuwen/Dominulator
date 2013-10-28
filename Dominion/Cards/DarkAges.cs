@@ -459,7 +459,7 @@ namespace Dominion.CardTypes
 
         private static int CountVictoryPoints(PlayerState player)
         {
-            return VictoryCountForSilver(player.AllOwnedCards.Where(card => card == Cards.Silver).Count());
+            return VictoryCountForSilver(player.AllOwnedCards.CountOf(Cards.Silver));
         }
 
         public static int VictoryCountForSilver(int silvercount)
@@ -1099,7 +1099,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            bool[] otherPlayersAffectedByAttacks = new bool[gameState.players.OtherPlayers.Count()];
+            bool[] otherPlayersAffectedByAttacks = new bool[gameState.players.PlayerCount-1];
 
             // from rule book
             // "Players responding to this attack must choose to do so before you decide whether or not to trash 2 cards"

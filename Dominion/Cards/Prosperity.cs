@@ -65,7 +65,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            int bankValue = currentPlayer.cardsBeingPlayed.Where(card => card.isTreasure).Count(); // +1 because bank is already in the played set
+            int bankValue = currentPlayer.cardsBeingPlayed.CountWhere(card => card.isTreasure); // +1 because bank is already in the played set
             currentPlayer.AddCoins(bankValue);
         }
     }
@@ -389,7 +389,7 @@ namespace Dominion.CardTypes
         {
             if (playerState.playPhase == PlayPhase.Buy)
             {
-                return playerState.CardsInPlay.Where(card => card.isAction).Count() * 2;
+                return playerState.CardsInPlay.CountWhere(card => card.isAction) * 2;
             }
 
             return 0;

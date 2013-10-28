@@ -512,7 +512,7 @@ namespace Dominion.CardTypes
         public static SilkRoad card = new SilkRoad();
 
         private SilkRoad()
-            : base("SilkRoad", coinCost: 4, victoryPoints: playerState => playerState.AllOwnedCards.Where(card => card.isVictory).Count()/4)
+            : base("SilkRoad", coinCost: 4, victoryPoints: playerState => playerState.AllOwnedCards.CountWhere(card => card.isVictory)/4)
         {
         }
     }
