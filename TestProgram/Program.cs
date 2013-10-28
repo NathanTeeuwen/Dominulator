@@ -15,13 +15,10 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            //ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Witch), Strategies.BigMoneyWithCard.Player(Cards.Witch), useColonyAndPlatinum: false, createHtmlReport: true);            
-            var alchemistSTrat = StrategyOptimizer.FindBestBigMoneyWithCardVsStrategy(Strategies.BigMoney.Player(), Cards.Alchemist, logProgress:true);
-
-            ComparePlayers(Strategies.BigMoney.Player(), Strategies.BigMoneyWithCard.Player(Cards.Alchemist), useColonyAndPlatinum: false, createHtmlReport: true);            
-            ComparePlayers(Strategies.BigMoney.Player(), alchemistSTrat, useColonyAndPlatinum: false, createHtmlReport: true);            
+            //ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Witch), Strategies.BigMoneyWithCard.Player(Cards.Witch), useColonyAndPlatinum: false, createHtmlReport: true);                    
             //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
-            //TestAllCardsWithBigMoney();            
+            //TestAllCardsWithBigMoney();    
+            FindOptimalPlayForEachCardWithBigMoney();
             
             stopwatch.Stop();
 

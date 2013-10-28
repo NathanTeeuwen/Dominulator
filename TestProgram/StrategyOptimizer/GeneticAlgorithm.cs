@@ -45,6 +45,38 @@ namespace Program.GeneticAlgorithm
             this.parameters.CopyTo(result, 0);
             return result;
         }
+
+        public bool Equals(Parameters other)
+        {
+            if (other == null)
+                return false;
+
+            if (this.parameters.Length != other.parameters.Length)
+                return false;
+
+            for (int i = 0; i < this.parameters.Length; ++i)
+            {
+                if (this.parameters[i].Value != other.parameters[i].Value)
+                    return false;
+            }
+
+            return true;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return this.Equals(obj as Parameters);
+        }
+
+        public override int GetHashCode()
+        {
+            int result = 0;
+            for (int i = 0; i < this.parameters.Length; ++i)
+            {
+                result ^= this.parameters[i].Value;
+            }
+            return result;
+        }
     }
 
     public interface ISpecidesMutator<TSpecies>
@@ -64,6 +96,7 @@ namespace Program.GeneticAlgorithm
 
     public abstract class GeneticAlgorithm<TSpecies, TSpeciesMutator>
         where TSpeciesMutator : ISpecidesMutator<TSpecies>        
+        where TSpecies : class
     {
         public TSpecies[] currentMembers;
         protected int nextMembersCount;
@@ -128,7 +161,7 @@ namespace Program.GeneticAlgorithm
 
         private void CreateNextGeneration()
         {
-            this.mutator.Reset();
+            //this.mutator.Reset();
 
             for (int memberIndex = 0; memberIndex < this.currentMembers.Length; ++memberIndex)
             {
@@ -142,9 +175,12 @@ namespace Program.GeneticAlgorithm
                 this.nextMembers[memberIndex].species = current;
                 for (int i = 0; i < childMemberCount; ++i)
                 {
-                    var next = current;
-                    for (int j = 0; j < this.random.Next(5); ++j)
-                        next = this.mutator.GetUniqueSpecies(next);
+                    var next = current;                    
+                    next = this.mutator.GetUniqueSpecies(next);
+                    if (next == default(TSpecies))
+                    {
+                        next = current;
+                    }
 
                     this.nextMembers[memberIndex * childMemberCount + i + this.currentMembers.Length].species = next;
                 }
@@ -180,7 +216,7 @@ namespace Program.GeneticAlgorithm
             }
 
             return this.nextMembers[competitorIndex].species;
-        }
+        }        
 
         private class UniqueSpeciesGenerator        
         {
@@ -205,19 +241,20 @@ namespace Program.GeneticAlgorithm
 
             public TSpecies GetUniqueSpecies(TSpecies member)
             {
-                while (true)
+                for (int count = 0; count < 100; ++count)
                 {
                     TSpecies result = this.mutator.Mutate(member);
 
-
                     if (this.speciesGenerator.Contains(result))
-                    {
+                    {                        
                         continue;
                     }
 
                     this.speciesGenerator.Add(result);
                     return result;
                 }
+
+                return default(TSpecies);
             }
         }
     }
@@ -225,7 +262,8 @@ namespace Program.GeneticAlgorithm
     public class GeneticAlgorithmPopulationAgainstSelf<TSpecies, TSpeciesMutator, TScoreSpecies>
         : GeneticAlgorithm<TSpecies, TSpeciesMutator>
         where TSpeciesMutator : ISpecidesMutator<TSpecies>
-        where TScoreSpecies : IScoreSpeciesVsEachOther<TSpecies>        
+        where TScoreSpecies : IScoreSpeciesVsEachOther<TSpecies>    
+        where TSpecies : class
     {                
         private TScoreSpecies comparable;        
 
@@ -268,13 +306,14 @@ namespace Program.GeneticAlgorithm
        : GeneticAlgorithm<TSpecies, TSpeciesMutator>
         where TSpeciesMutator : ISpecidesMutator<TSpecies>
         where TScoreSpecies : IScoreSpecies<TSpecies>
+        where TSpecies : class
     {
-        private TScoreSpecies comparable;
+        private SpeciesScoreCache scorer;
 
         public GeneticAlgorithmAgainstConstant(IEnumerable<TSpecies> initialPopulation, TSpeciesMutator mutator, TScoreSpecies comparable, Random random)
             : base(initialPopulation, mutator, random)
         {
-            this.comparable = comparable;
+            this.scorer = new SpeciesScoreCache(comparable);
         }
 
         override protected void ScoreCurrentPlayers()
@@ -285,9 +324,34 @@ namespace Program.GeneticAlgorithm
                 delegate(int currentCompetitorIndex)
                 {
                     TSpecies current = this.nextMembers[currentCompetitorIndex].species;
-                    this.nextMembers[currentCompetitorIndex].score += this.comparable.GetScore(current);
+                    this.nextMembers[currentCompetitorIndex].score += this.scorer.GetScore(current);
                 }
             );
+        }
+
+        private class SpeciesScoreCache
+        {
+            private TScoreSpecies comparable;
+
+            private Dictionary<TSpecies, double> mapSpeciesToScore = new Dictionary<TSpecies, double>();
+
+            public SpeciesScoreCache(TScoreSpecies comparable)
+            {
+                this.comparable = comparable;
+            }
+            
+            public double GetScore(TSpecies member)
+            {
+                double result;
+                if (!this.mapSpeciesToScore.TryGetValue(member, out result))
+                {
+                    result = this.comparable.GetScore(member);
+                    this.mapSpeciesToScore[member] = result;
+                    return result;
+                }
+                else
+                    return result;                
+            }
         }
     }
 }

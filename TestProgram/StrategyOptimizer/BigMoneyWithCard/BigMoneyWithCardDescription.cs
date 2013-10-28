@@ -22,7 +22,7 @@ namespace Program
 
         public BigMoneyWithCardDescription(Card card)
             : this( card,
-               new Parameter(1), // cardCount
+               new Parameter(1, 1, int.MaxValue), // cardCount
                new Parameter(0), // afterSilverCount
                new Parameter(3), // countGoldBeforeProvince
                new Parameter(4), // countRemainingProvinceBeforeDuchy
