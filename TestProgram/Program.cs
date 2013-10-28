@@ -15,10 +15,10 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            //ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Witch), Strategies.BigMoneyWithCard.Player(Cards.Witch), useColonyAndPlatinum: false, createHtmlReport: true);                    
+            ComparePlayers(StrategyOptimizer.FindBestBigMoneyWithCardVsStrategy(Strategies.BigMoneyWithCard.Player(Cards.Witch), Cards.Bishop), Strategies.BigMoneyWithCard.Player(Cards.Witch), useColonyAndPlatinum: false, createHtmlReport: true, split:StartingCardSplit.Split43);                    
             //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
             //TestAllCardsWithBigMoney();    
-            FindOptimalPlayForEachCardWithBigMoney();
+            //FindOptimalPlayForEachCardWithBigMoney();
             
             stopwatch.Stop();
 
@@ -423,7 +423,13 @@ namespace Program
                 htmlWriter.InsertExpander("Deck Strength", delegate()
                 {
                     InsertCardData(htmlWriter, statGatherer.endOfGameCardCount, gameConfig.cardGameSubset, player1, player2);
-                    InsertLineGraph(htmlWriter, "Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn);
+                    InsertLineGraph(htmlWriter, "Coin To Spend Per Turn", player1, player2, statGatherer.coinToSpend, maxTurn, content: delegate()
+                    {
+                        for (int i = 4; i < statGatherer.oddsOfHittingAtLeastACoinAmount.Length; ++i)
+                        {
+                            InsertLineGraph(htmlWriter, "Odds of Hitting at Least " + i + " coin", player1, player2, statGatherer.oddsOfHittingAtLeastACoinAmount[i], maxTurn);
+                        }
+                    });
                     InsertLineGraph(htmlWriter, "Number of cards Gained Per Turn", player1, player2, statGatherer.cardsGained, maxTurn);                    
                     htmlWriter.InsertExpander(player1.PlayerName, delegate()
                     {
@@ -517,7 +523,8 @@ namespace Program
             PlayerAction player2,
             ForwardAndReversePerTurnPlayerCounters forwardAndReverseCounters,
             int throughTurn,
-            bool colllapsebyDefault = true)
+            bool colllapsebyDefault = true,
+            HtmlContentInserter content = null)
         {            
             if (forwardAndReverseCounters.forwardTotal.HasNonZeroData)
             {
@@ -544,6 +551,11 @@ namespace Program
                                 forwardAndReverseCounters.reverseTotal.GetAveragePerTurn(1, throughTurn)
                                 );
                     });
+
+                    if (content != null)
+                    {
+                        content();
+                    }
                 },
                 collapseByDefault: colllapsebyDefault);
             }

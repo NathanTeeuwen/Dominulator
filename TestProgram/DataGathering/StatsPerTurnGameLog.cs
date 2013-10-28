@@ -18,6 +18,7 @@ namespace Program
         public MapOfCardsForGameSubset<ForwardAndReversePerTurnPlayerCounters> cardsTotalCount;
         public MapOfCardsForGameSubset<ForwardAndReversePerTurnPlayerCounters> carsGainedOnTurn;
         public MapOfCardsForGameSubset<PlayerCounterSeparatedByGame> endOfGameCardCount;
+        public ForwardAndReversePerTurnPlayerCounters[] oddsOfHittingAtLeastACoinAmount;
         public ForwardAndReversePerTurnPlayerCounters cursesGained;
         public ForwardAndReversePerTurnPlayerCounters cursesTrashed;
         public ForwardAndReversePerTurnPlayerCounters deckShuffleCount;
@@ -33,6 +34,12 @@ namespace Program
             this.victoryPointTotal = new ForwardAndReversePerTurnPlayerCounters(playerCount);            
             this.deckShuffleCount = new ForwardAndReversePerTurnPlayerCounters(playerCount);
             this.oddsOfBeingAheadOnRoundEnd = new ForwardAndReversePerTurnPlayerCounters(playerCount);
+
+            this.oddsOfHittingAtLeastACoinAmount = new ForwardAndReversePerTurnPlayerCounters[9];
+            for (int i = 0; i < this.oddsOfHittingAtLeastACoinAmount.Length; ++i)
+            {
+                this.oddsOfHittingAtLeastACoinAmount[i] = new ForwardAndReversePerTurnPlayerCounters(playerCount);
+            }
 
             this.cardGameSubset = gameSubset;
 
@@ -61,6 +68,22 @@ namespace Program
             }
 
             return result;
+        }
+
+        private void BeginTurnAllCounters(IEnumerable<ForwardAndReversePerTurnPlayerCounters> counters, PlayerState playerState)
+        {
+            foreach (var counter in counters)
+            {
+                counter.BeginTurn(playerState);
+            }
+        }
+
+        private void EndGameAllCounters(IEnumerable<ForwardAndReversePerTurnPlayerCounters> counters, GameState gameState)
+        {
+            foreach (var counter in counters)
+            {
+                counter.EndGame(gameState);
+            }
         }
 
         private void BeginTurnAllCountersPerCard(MapOfCardsForGameSubset<ForwardAndReversePerTurnPlayerCounters> map, PlayerState playerState)
@@ -98,6 +121,7 @@ namespace Program
             this.victoryPointTotal.BeginTurn(playerState);            
             BeginTurnAllCountersPerCard(this.cardsTotalCount, playerState);
             BeginTurnAllCountersPerCard(this.carsGainedOnTurn, playerState);
+            BeginTurnAllCounters(this.oddsOfHittingAtLeastACoinAmount, playerState);
         }
 
         public override void EndGame(GameState gameState)
@@ -119,7 +143,8 @@ namespace Program
             this.cursesTrashed.EndGame(gameState);
             this.victoryPointTotal.EndGame(gameState);
             EndGamePerCard(this.cardsTotalCount, gameState);
-            EndGamePerCard(this.carsGainedOnTurn, gameState);            
+            EndGamePerCard(this.carsGainedOnTurn, gameState);
+            EndGameAllCounters(this.oddsOfHittingAtLeastACoinAmount, gameState);
         }
 
         public override void EndRound(GameState gameState)
@@ -157,7 +182,16 @@ namespace Program
             foreach (Card card in this.cardGameSubset)
             {
                 this.cardsTotalCount[card].IncrementCounter(playerState, playerState.AllOwnedCards.CountOf(card));            
-            }                    
+            }
+
+            int totalCoinSpent = this.coinToSpend.GetSumForCurrentGameAndTurn(playerState);
+            for (int i = 1; i < this.oddsOfHittingAtLeastACoinAmount.Length; ++i)
+            {
+                if (totalCoinSpent >= i)
+                {
+                    this.oddsOfHittingAtLeastACoinAmount[i].IncrementCounter(playerState, 1);
+                }
+            }            
         }        
 
         public override void PlayerTrashedCard(PlayerState playerState, Card card)

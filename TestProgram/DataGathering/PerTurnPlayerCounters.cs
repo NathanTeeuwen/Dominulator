@@ -97,7 +97,7 @@ namespace Program
     {
         public readonly PerTurnPlayerCountersSeparatedByGame forwardTotal;
         public readonly PerTurnPlayerCountersSeparatedByGame reverseTotal;
-        private PerTurnPlayerCountersSeparatedByGame currentGameData;
+        private readonly PerTurnPlayerCountersSeparatedByGame currentGameData;
 
         public ForwardAndReversePerTurnPlayerCounters(int playerCount)
         {
@@ -114,6 +114,11 @@ namespace Program
         public void IncrementCounter(PlayerState playerState, int amount)
         {
             currentGameData.IncrementCounter(playerState, amount);
+        }
+
+        public int GetSumForCurrentGameAndTurn(PlayerState playerState)
+        {
+            return this.currentGameData.GetValueAtTurn(playerState);
         }
 
         public void EndGame(GameState gameState)
@@ -151,6 +156,11 @@ namespace Program
                 AggregateAllDataIfNecessary();
                 return aggregatedResult.HasNonZeroData;
             }
+        }
+
+        public int GetValueAtTurn(PlayerState playerState)
+        {
+            return this.counters[playerState.Game].GetSumAtTurn(playerState);
         }
 
         public float[] GetAveragePerTurn(int playerIndex, int throughTurn)
@@ -232,6 +242,11 @@ namespace Program
                 }
                 return false;
             }
+        }
+
+        public int GetSumAtTurn(PlayerState player)
+        {
+            return this.sumAtTurnPerPlayer[player.PlayerIndex][player.TurnNumber];
         }
 
         // get the results

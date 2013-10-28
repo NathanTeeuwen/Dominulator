@@ -120,7 +120,7 @@ namespace Dominion.CardTypes
             validCard = card => card.CurrentCoinCost(currentPlayer) == 2 * trashedCardCost - gainedCard.CurrentCoinCost(currentPlayer) 
                 && card.potionCost == trashedCard.potionCost;
 
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, validCard, "Must gain a card with the right cost.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck)
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, validCard, "Must gain a card with the right cost.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
         }
     }
 
