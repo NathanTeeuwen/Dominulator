@@ -114,13 +114,15 @@ namespace Dominion.CardTypes
 
             CardPredicate validCard = card => (card.CurrentCoinCost(currentPlayer) == (trashedCardCost - 1) 
                 ^ card.CurrentCoinCost(currentPlayer) == (trashedCardCost + 1)) && card.potionCost == trashedCard.potionCost;
-
+            
             Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, validCard, "Must gain a card costing one less or one more than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
+            if (gainedCard != null)
+            {
+                validCard = card => card.CurrentCoinCost(currentPlayer) == 2 * trashedCardCost - gainedCard.CurrentCoinCost(currentPlayer)
+                    && card.potionCost == trashedCard.potionCost;
 
-            validCard = card => card.CurrentCoinCost(currentPlayer) == 2 * trashedCardCost - gainedCard.CurrentCoinCost(currentPlayer) 
-                && card.potionCost == trashedCard.potionCost;
-
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, validCard, "Must gain a card with the right cost.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
+                currentPlayer.RequestPlayerGainCardFromSupply(gameState, validCard, "Must gain a card with the right cost.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
+            }
         }
     }
 
