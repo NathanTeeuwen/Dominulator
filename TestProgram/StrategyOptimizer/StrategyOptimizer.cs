@@ -22,7 +22,7 @@ namespace Program
             Card[] supplyCards = gameConfig.GetSupplyPiles(2, random).Select(pile => pile.ProtoTypeCard).ToArray();
 
             var initialPopulation = Enumerable.Range(0, 10).Select(index => initialDescription).ToArray();
-            var algorithm = new GeneticAlgorithmPopulationAgainstSelf<PickByPriorityDescription, MutatePickByPriorityDescription, ComparePickByPriorityDescription>(
+            var algorithm = new GeneticAlgorithm.GeneticAlgorithmPopulationAgainstSelf<PickByPriorityDescription, MutatePickByPriorityDescription, ComparePickByPriorityDescription>(
                 initialPopulation,
                 new MutatePickByPriorityDescription(random, supplyCards),
                 new ComparePickByPriorityDescription(),
@@ -49,14 +49,14 @@ namespace Program
             Random random = new Random();
             var initialPopulation = Enumerable.Range(0, 10).Select(index => new BigMoneyWithCardDescription(card)).ToArray();
 
-            var algorithm = new GeneticAlgorithmAgainstConstant<BigMoneyWithCardDescription, MutateBigMoneyWithCardDescription, CompareBigMoneyWithCardDescription>(
+            var algorithm = new GeneticAlgorithm.GeneticAlgorithmAgainstConstant<BigMoneyWithCardDescription, MutateBigMoneyWithCardDescription, CompareBigMoneyWithCardDescription>(
                 initialPopulation,
                 new MutateBigMoneyWithCardDescription(random),
                 new CompareBigMoneyWithCardDescription(playerAction),
                 new Random());
 
             BigMoneyWithCardDescription result = new BigMoneyWithCardDescription(card);
-            double maxScore = -1;
+            double maxScore = -100;
             double lastMaxScore = maxScore;
             int countScoreUnchanged = 0;
 

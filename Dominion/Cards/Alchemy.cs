@@ -38,14 +38,17 @@ namespace Dominion.CardTypes
 
         private new void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
-            if (currentPlayer.actions.ShouldPutCardOnTopOfDeck(this, gameState))
+            if (currentPlayer.cardsPlayed.HasCard(Cards.Potion))
             {
-                var cardToTopDeck = currentPlayer.cardsPlayed.RemoveCard(this);
-                if (cardToTopDeck != null)
+                if (currentPlayer.actions.ShouldPutCardOnTopOfDeck(this, gameState))
                 {
-                    currentPlayer.deck.AddCardToTop(cardToTopDeck);
+                    var cardToTopDeck = currentPlayer.cardsPlayed.RemoveCard(this);
+                    if (cardToTopDeck != null)
+                    {
+                        currentPlayer.deck.AddCardToTop(cardToTopDeck);
+                    }
                 }
-            }            
+            }
         }        
     }
 

@@ -4,8 +4,49 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program
+namespace Program.GeneticAlgorithm
 {
+    public struct Parameter
+    {
+        public int Value;
+        public readonly int LowerBound;
+        public readonly int UpperBound;
+
+        public Parameter(int value, int lowerBound, int upperBound)
+        {
+            this.Value = value;
+            this.LowerBound = lowerBound;
+            this.UpperBound = upperBound;
+        }
+
+        public Parameter(int value)
+            : this(value, 0, int.MaxValue)
+        {
+        }
+
+        public bool IsInRange()
+        {
+            return this.LowerBound <= this.Value && this.Value <= this.UpperBound;
+        }
+    }
+
+    public class Parameters
+    {
+        internal readonly Parameter[] parameters;
+
+        public Parameters(params Parameter[] parameters)
+        {
+            this.parameters = parameters;
+        }
+
+        public Parameter[] CloneParameters()
+        {
+            var result = new Parameter[this.parameters.Length];
+            this.parameters.CopyTo(result, 0);
+            return result;
+        }
+    }
+
     public interface ISpecidesMutator<TSpecies>
     {
         TSpecies Mutate(TSpecies member);

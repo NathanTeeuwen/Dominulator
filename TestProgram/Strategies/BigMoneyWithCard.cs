@@ -16,12 +16,12 @@ namespace Program
             public static PlayerAction Player(Card card, 
                 string playerName = null, 
                 int cardCount = 1, 
-                int afterSilverCount = 0, 
-                int afterGoldCount = int.MaxValue,
+                int afterSilverCount = 0,                 
                 int countGoldBeforeProvince = 3,
                 int countRemainingProvinceBeforeDuchy = 4,
                 int countRemainingProvinceBeforeEstateOverGold = 1,
-                int countRemainingProvinceBeforeEstateOverSilver = 3)
+                int countRemainingProvinceBeforeEstateOverSilver = 3,
+                int afterGoldCount = int.MaxValue)
             {
                 return new PlayerAction(
                             playerName == null ? "BigMoneyWithCard" + card.GetType().Name : playerName,                            

@@ -5,47 +5,49 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Program.GeneticAlgorithm;
 
 namespace Program
 {
     class BigMoneyWithCardDescription
+        : Parameters
     {
         public Card card;
-        public int cardCount = 1;
-        public int afterSilverCount = 0;          
-        public int countGoldBeforeProvince = 3;
-        public int countRemainingProvinceBeforeDuchy = 4;
-        public int countRemainingProvinceBeforeEstateOverGold = 1;
-        public int countRemainingProvinceBeforeEstateOverSilver = 3;
 
-        public BigMoneyWithCardDescription(Card card)
+        public BigMoneyWithCardDescription(Card card, params Parameter[] parameters)
+            : base(parameters)
         {
             this.card = card;
+        }
+
+        public BigMoneyWithCardDescription(Card card)
+            : this( card,
+               new Parameter(1), // cardCount
+               new Parameter(0), // afterSilverCount
+               new Parameter(3), // countGoldBeforeProvince
+               new Parameter(4), // countRemainingProvinceBeforeDuchy
+               new Parameter(1), // countRemainingProvinceBeforeEstateOverGold
+               new Parameter(3)  // countRemainingProvinceBeforeEstateOverSilver
+               )
+        {            
         }
 
         public PlayerAction ToPlayerAction()
         {
             return Strategies.BigMoneyWithCard.Player(
                 this.card, 
-                "BigMoneyWith" + card.name, 
-                this.cardCount, 
-                this.afterSilverCount, 
-                int.MaxValue,
-                countGoldBeforeProvince,
-                countRemainingProvinceBeforeDuchy,
-                countRemainingProvinceBeforeEstateOverGold,
-                countRemainingProvinceBeforeEstateOverSilver);
+                "BigMoneyWith" + card.name,
+                cardCount: this.parameters[0].Value,
+                afterSilverCount: this.parameters[1].Value,
+                countGoldBeforeProvince: this.parameters[2].Value,
+                countRemainingProvinceBeforeDuchy: this.parameters[3].Value,
+                countRemainingProvinceBeforeEstateOverGold: this.parameters[4].Value,
+                countRemainingProvinceBeforeEstateOverSilver: this.parameters[5].Value);
         }
 
         public BigMoneyWithCardDescription Clone()
         {
-            var result = new BigMoneyWithCardDescription(this.card);            
-            result.cardCount = this.cardCount;
-            result.afterSilverCount = this.afterSilverCount;
-            result.countGoldBeforeProvince = this.countGoldBeforeProvince;
-            result.countRemainingProvinceBeforeDuchy = this.countRemainingProvinceBeforeDuchy;
-            result.countRemainingProvinceBeforeEstateOverGold = this.countRemainingProvinceBeforeEstateOverGold;
-            result.countRemainingProvinceBeforeEstateOverSilver = this.countRemainingProvinceBeforeEstateOverSilver;
+            var result = new BigMoneyWithCardDescription(this.card, this.CloneParameters());            
 
             return result;
         }
@@ -54,18 +56,18 @@ namespace Program
         {
             textwriter.Write(
                 //"{0}, cardCount: {1}, afterSilverCount: {2}, countGoldBeforeProvince: {3}, countRemainingProvinceBeforeDuchy: {4}, countRemainingProvinceBeforeEstateOverGold: {5}, countRemainingProvinceBeforeEstateOverSilver {6}",
-                "{0}, cardCount: {1}, {2}, {3}, {4}, {5}, {6}",
+                "{0}, {1}, {2}, {3}, {4}, {5}, {6}",
                 this.card.name,
-                this.cardCount,
-                this.afterSilverCount,
-                this.countGoldBeforeProvince,
-                this.countRemainingProvinceBeforeDuchy,
-                this.countRemainingProvinceBeforeEstateOverGold,
-                this.countRemainingProvinceBeforeEstateOverSilver);            
-        }
+                this.parameters[0].Value,
+                this.parameters[1].Value,
+                this.parameters[2].Value,
+                this.parameters[3].Value,
+                this.parameters[4].Value,
+                this.parameters[5].Value);            
+        }        
 
         public double GetScoreVs(PlayerAction action, bool showReport = false)
-        {
+        {            
             return Program.ComparePlayers(
                 this.ToPlayerAction(), 
                 action, 
