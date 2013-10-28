@@ -112,11 +112,15 @@ namespace Dominion.CardTypes
 
             int trashedCardCost = trashedCard.CurrentCoinCost(currentPlayer);
 
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost - 1) && card.potionCost == trashedCard.potionCost, "Must gain a card costing one less than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
-            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) == (trashedCardCost + 1) && card.potionCost == trashedCard.potionCost, "Must gain a card costing exactly one more than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
+            CardPredicate validCard = card => (card.CurrentCoinCost(currentPlayer) == (trashedCardCost - 1) 
+                ^ card.CurrentCoinCost(currentPlayer) == (trashedCardCost + 1)) && card.potionCost == trashedCard.potionCost;
 
-            // TODO:  put the cards on top of your deck in either order.
-            //throw new NotImplementedException();
+            Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, validCard, "Must gain a card costing one less or one more than the trashed card.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck);
+
+            validCard = card => card.CurrentCoinCost(currentPlayer) == 2 * trashedCardCost - gainedCard.CurrentCoinCost(currentPlayer) 
+                && card.potionCost == trashedCard.potionCost;
+
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, validCard, "Must gain a card with the right cost.", isOptional: false, defaultLocation: DeckPlacement.TopOfDeck)
         }
     }
 
