@@ -22,6 +22,8 @@ namespace Program
             
             stopwatch.Stop();
 
+            WaitForAllBackgroundTasks();
+
             if (totalGameCount > 0)
             {
                 System.Console.WriteLine("");
@@ -346,8 +348,9 @@ namespace Program
 
             if (createHtmlReport)
             {
+                System.Threading.Interlocked.Increment(ref outstandingTasks);
                 // write out HTML report summary
-                //Task.Factory.StartNew(delegate()
+                Task.Factory.StartNew(delegate()
                 {
                     CreateHtmlReport(
                         player1,
@@ -361,12 +364,22 @@ namespace Program
                         statGatherer,
                         pointSpreadHistogramData,
                         gameEndOnTurnHistogramData);
-                }
-                //);
+                    System.Threading.Interlocked.Decrement(ref outstandingTasks);
+                });                
             }
 
             double diff = PlayerWinPercent(0, winnerCount, numberOfGames) - PlayerWinPercent(1, winnerCount, numberOfGames);
             return diff;
+        }
+
+        private static int outstandingTasks = 0;
+
+        private static void WaitForAllBackgroundTasks()
+        {
+            while (outstandingTasks > 0)
+            {
+                System.Threading.Thread.Sleep(1);
+            }
         }
 
         private static void CreateHtmlReport(
