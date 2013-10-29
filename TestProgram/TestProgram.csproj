@@ -47,6 +47,7 @@
     <Compile Include="CardAcceptance.cs" />
     <Compile Include="DataGathering\HistogramData.cs" />
     <Compile Include="DataGathering\PerTurnPlayerCounters.cs" />
+    <Compile Include="DefaultPlayRules\Cards\ScryingPool.cs" />
     <Compile Include="DefaultPlayRules\Cards\Treasury.cs" />
     <Compile Include="DefaultPlayRules\Cards\Nobles.cs" />
     <Compile Include="DefaultStrategies.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="DefaultPlayRules\Cards\Trader.cs" />
     <Compile Include="DefaultPlayRules\Cards\WatchTower.cs" />
     <Compile Include="HtmlRenderer.cs" />
+    <Compile Include="Kingdoms\ShouldMounteBankHoardOrVineyard.cs" />
     <Compile Include="Kingdoms\ShouldRemakeOrHorseTradersIntoSoothayer.cs" />
     <Compile Include="PlayerActionFromCardResponses.cs" />
     <Compile Include="Simulations\DarkAgesBigMoney.cs" />

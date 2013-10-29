@@ -344,7 +344,7 @@ namespace Program
                 card => gameState.Self.Hand.HasCard(card) && acceptableCard(card));
 
             // warning, strategy didnt' include what to, try to do a reasonable default.
-            if (result == null)
+            if (result == null && !isOptional)
             {
                 result = gameState.Self.Hand.Where(c => acceptableCard(c))
                                             .OrderBy(c => c, new CompareCardByFirstToDiscard())

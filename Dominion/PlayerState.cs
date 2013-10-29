@@ -1072,8 +1072,7 @@ namespace Dominion
                 else
                 {
                     this.MoveLookedAtCardsToDiscard(gameState);
-                }
-                gameState.gameLog.PlayerDiscardCard(this, movedCard);
+                }                
             }
             else
             {

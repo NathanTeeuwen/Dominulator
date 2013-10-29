@@ -15,10 +15,11 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: false, createHtmlReport: true, logGameCount: 0, numberOfGames:1000);
+            //ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: false, createHtmlReport: true, logGameCount: 0, numberOfGames:10000);
             //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();
+            Kingdoms.ShouldMounteBankHoardOrVineyard.Run();
             
             stopwatch.Stop();
 
