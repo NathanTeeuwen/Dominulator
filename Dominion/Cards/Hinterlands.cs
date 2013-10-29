@@ -258,7 +258,7 @@ namespace Dominion.CardTypes
         public static IllGottenGains card = new IllGottenGains();
 
         private IllGottenGains()
-            : base("Ill-Gotten Gains", coinCost: 5, isTreasure:true, plusCoins:1)
+            : base("Ill-Gotten Gains", pluralName: "Ill-Gotten Gains", coinCost: 5, isTreasure:true, plusCoins:1)
         {            
         }
 

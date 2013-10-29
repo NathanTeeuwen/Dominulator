@@ -84,13 +84,19 @@ namespace Dominion
             }
         }
 
-        private string GetPlayerName(PlayerState playerState)
+        private void WriteOutPlayedTreasuresIfNecessary(bool unindent = false)
         {
-            if (playerState.PlayPhase == PlayPhase.NotMyTurn)
+            if (this.playedTreasures.Count > 0)
             {
-                return this.is2Player ? "The other player" : playerState.actions.PlayerName;
+                if (unindent)
+                    this.PopScope();
+
+                this.textWriter.Write("Played ");
+                WriteAllCards(this.playedTreasures);
+                if (unindent)
+                    this.PushScope();
+                this.playedTreasures.Clear();
             }
-            return "... and";
         }
 
         private void WriteOutDrawnCardsIfNecessary()
@@ -103,6 +109,16 @@ namespace Dominion
             }
         }
 
+
+        private string GetPlayerName(PlayerState playerState)
+        {
+            if (playerState.PlayPhase == PlayPhase.NotMyTurn)
+            {
+                return this.is2Player ? "The other player" : playerState.actions.PlayerName;
+            }
+            return "... and";
+        }
+       
         public void EndRound(GameState gameState)
         {            
         }
@@ -145,6 +161,7 @@ namespace Dominion
         {
             if (this.roundNumber > 0)
             {
+                WriteOutPlayedTreasuresIfNecessary(unindent:true);
                 this.textWriter.WriteLine("{0} gains a {1}.", GetPlayerName(playerState), card.name);
             }
         }
@@ -337,7 +354,7 @@ namespace Dominion
 
         public void PlayerOverpaidForCard(Card boughtCard, int overPayAmount)
         {
-            this.textWriter.WriteLine("Player overpayed by {2} for {2}", overPayAmount, boughtCard.name);
+            this.textWriter.WriteLine("Player overpayed by {0} for {1}", overPayAmount, boughtCard.name);
         }
 
         public void CardWentToLocation(DeckPlacement deckPlacement)

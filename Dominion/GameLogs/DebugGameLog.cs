@@ -50,11 +50,13 @@ namespace Dominion
         public void BeginPhase(PlayerState playerState)
         {
             this.textWriter.WriteLine("Begins {0} phase", playerState.PlayPhase);
+            this.PushScope();
         }
 
         public void EndPhase(PlayerState playerState)
         {
-            this.textWriter.WriteLine("Begins {0} phase", playerState.PlayPhase);
+            this.PopScope();
+            //this.textWriter.WriteLine("Ends {0} phase", playerState.PlayPhase);
         }
 
         public void BeginTurn(PlayerState playerState)
@@ -265,7 +267,7 @@ namespace Dominion
 
         public void PlayerOverpaidForCard(Card boughtCard, int overPayAmount)
         {
-            this.textWriter.WriteLine("Player overpayed by {2} for {2}", overPayAmount, boughtCard.name);
+            this.textWriter.WriteLine("Player overpayed by {0} for {1}", overPayAmount, boughtCard.name);
         }
 
         public void CardWentToLocation(DeckPlacement deckPlacement)

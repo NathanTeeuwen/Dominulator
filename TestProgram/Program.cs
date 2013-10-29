@@ -16,7 +16,7 @@ namespace Program
             stopwatch.Start();
 
             ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: false, createHtmlReport: false, logGameCount: 1, numberOfGames:1000);
-            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
+            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:false, logGameCount:1, debugLogs:true);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();
             //Kingdoms.ShouldMounteBankHoardOrVineyard.Run();
@@ -35,7 +35,14 @@ namespace Program
             }
         }
 
-        static void CompareStrategyVsAllKnownStrategies(PlayerAction playerAction, bool shouldParallel = true, bool useShelters = false, int numberOfGames = 1000, bool createHtmlReport = false)
+        static void CompareStrategyVsAllKnownStrategies(
+            PlayerAction playerAction, 
+            bool shouldParallel = true, 
+            bool useShelters = false, 
+            int numberOfGames = 1000, 
+            bool createHtmlReport = false,
+            int logGameCount = 0,
+            bool debugLogs = false)
         {
             var resultList = new List<System.Tuple<string, double>>();
 
@@ -61,7 +68,16 @@ namespace Program
                 if (otherPlayerAction == null)
                     continue;
 
-                double percentDiff = ComparePlayers(playerAction, otherPlayerAction, shouldParallel: shouldParallel, useShelters: useShelters, logGameCount: 0, numberOfGames: numberOfGames, useColonyAndPlatinum: true, createHtmlReport: createHtmlReport);
+                double percentDiff = ComparePlayers(
+                    playerAction, 
+                    otherPlayerAction, 
+                    shouldParallel: shouldParallel, 
+                    useShelters: useShelters, 
+                    logGameCount: logGameCount, 
+                    debugLogs: debugLogs,
+                    numberOfGames: numberOfGames, 
+                    useColonyAndPlatinum: true, 
+                    createHtmlReport: createHtmlReport);
 
                 resultList.Add( new System.Tuple<string,double>(otherPlayerAction.PlayerName, percentDiff));
             }            
@@ -165,9 +181,14 @@ namespace Program
             Cards.Possession
         };
 
-        static IndentedTextWriter GetGameLogWriterForIteration(int gameCount)
+        static IndentedTextWriter GetGameLogWriterForIteration(PlayerAction player1, PlayerAction player2, int gameCount)
         {
-            return new IndentedTextWriter(GetOuputFilename("GameLog" + (gameCount == 0 ? "" : gameCount.ToString()) + ".txt"));
+            return new IndentedTextWriter(GetOuputFilename(player1.PlayerName + " VS " + player2.PlayerName + ".gamelog" + (gameCount == 0 ? "" : "." + gameCount.ToString()) + ".txt"));            
+        }
+
+        static IndentedTextWriter GetDebugLogWriterForIteration(PlayerAction player1, PlayerAction player2, int gameCount)
+        {
+            return new IndentedTextWriter(GetOuputFilename(player1.PlayerName + " VS " + player2.PlayerName + ".DebugLog" + (gameCount == 0 ? "" : "." + gameCount.ToString()) + ".txt"));
         }
         
         static string GetOuputFilename(string filename)
@@ -192,9 +213,10 @@ namespace Program
             bool showCompactScore = false,
             bool showDistribution = false,
             bool showPlayer2Wins = false,
-            bool createHtmlReport = true,
+            bool createHtmlReport = true,            
             int numberOfGames = 1000,
             int logGameCount = 10,
+            bool debugLogs = false,
             CreateGameLog createGameLog = null)
         {            
 
@@ -221,8 +243,9 @@ namespace Program
                 showDistribution: showDistribution,
                 showPlayer2Wins: showPlayer2Wins,
                 createHtmlReport: createHtmlReport,
-                numberOfGames: numberOfGames,
                 logGameCount: logGameCount,
+                debugLogs: debugLogs,
+                numberOfGames: numberOfGames,                
                 createGameLog: createGameLog);
         }
 
@@ -236,9 +259,10 @@ namespace Program
             bool showCompactScore = false, 
             bool showDistribution = false,            
             bool showPlayer2Wins = false,
-            bool createHtmlReport = true,
+            bool createHtmlReport = true,            
             int numberOfGames = 1000, 
             int logGameCount = 100,            
+            bool debugLogs = false,
             CreateGameLog createGameLog = null)
         {
             PlayerAction[] playerActions = new PlayerAction[] { player1, player2 };
@@ -256,7 +280,8 @@ namespace Program
             Action<int> loopBody = delegate(int gameCount)
             {
                 System.Threading.Interlocked.Increment(ref totalGameCount);
-                using (IndentedTextWriter textWriter = gameCount < logGameCount ? GetGameLogWriterForIteration(gameCount) : null)
+                using (IndentedTextWriter textWriter = gameCount < logGameCount ? GetGameLogWriterForIteration(player1, player2, gameCount) : null)
+                using (IndentedTextWriter debugWriter = debugLogs && gameCount < logGameCount ? GetDebugLogWriterForIteration(player1, player2, gameCount) : null)
                 {
                     var gameLogs = new List<IGameLog>();
                     if (createHtmlReport)
@@ -272,6 +297,13 @@ namespace Program
                         var humanReadableGameLog = new HumanReadableGameLog(textWriter);
                         gameLogs.Add(humanReadableGameLog);
                         var gainSequenceGameLog = new GainSequenceGameLog(textWriter);
+                        gameLogs.Add(gainSequenceGameLog);
+                    }
+                    if (debugWriter != null)
+                    {
+                        var debugLog = new DebugGameLog(debugWriter);
+                        gameLogs.Add(debugLog);
+                        var gainSequenceGameLog = new GainSequenceGameLog(debugWriter);
                         gameLogs.Add(gainSequenceGameLog);
                     }
 
