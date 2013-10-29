@@ -126,7 +126,7 @@ namespace Program
 
         public override void EndGame(GameState gameState)
         {
-            foreach (PlayerState playerState in gameState.players.AllPlayers)
+            foreach (PlayerState playerState in gameState.players.OriginalPlayerOrder)
             {
                 IncrementAllDivisors(this.endOfGameCardCount, playerState);
                 foreach (Card card in this.cardGameSubset)
@@ -152,7 +152,7 @@ namespace Program
             PlayerState winningPlayer = null;
             int winningScore = -1;
 
-            foreach (PlayerState player in gameState.players.AllPlayers)
+            foreach (PlayerState player in gameState.players.OriginalPlayerOrder)
             {
                 int score = player.TotalScore();
                 if (score > winningScore)
@@ -166,7 +166,7 @@ namespace Program
                 }
             }
 
-            foreach (PlayerState player in gameState.players.AllPlayers)
+            foreach (PlayerState player in gameState.players.OriginalPlayerOrder)
             {
                 if (player == winningPlayer)
                 {

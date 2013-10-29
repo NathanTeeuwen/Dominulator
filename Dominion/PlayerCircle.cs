@@ -108,7 +108,7 @@ namespace Dominion
             {
                 return this.players;
             }
-        }
+        }        
 
         public IEnumerable<PlayerState> AllPlayers
         {

@@ -289,14 +289,22 @@ namespace Program
 
         public void Add(PerTurnPlayerCounters other)
         {
-            for (int turn = 0; turn < other.PlayerTurnLength; ++turn)
+            for (int playerIndex = 0; playerIndex < this.sumAtTurnPerPlayer.Length; ++playerIndex)
             {
-                for (int playerIndex = 0; playerIndex < this.sumAtTurnPerPlayer.Length; ++playerIndex)
+                var thisSumAtTurn = this.sumAtTurnPerPlayer[playerIndex];
+                var thisCountAtTurn = this.countAtTurnPerPlayer[playerIndex];
+                var otherCountAtTurn = other.countAtTurnPerPlayer[playerIndex];
+                var otherSumAtTurn = other.sumAtTurnPerPlayer[playerIndex];
+
+                GrowListToTurn(thisSumAtTurn, other.PlayerTurnLength - 1);
+                GrowListToTurn(thisCountAtTurn, other.PlayerTurnLength - 1);
+
+                for (int turn = 0; turn < other.PlayerTurnLength; ++turn)
                 {
-                    this.AddToCounterForPlayer(playerIndex, turn, other.countAtTurnPerPlayer[playerIndex][turn], this.countAtTurnPerPlayer);
-                    this.AddToCounterForPlayer(playerIndex, turn, other.sumAtTurnPerPlayer[playerIndex][turn], this.sumAtTurnPerPlayer);
+                    thisSumAtTurn[turn] += otherSumAtTurn[turn];
+                    thisCountAtTurn[turn] += otherCountAtTurn[turn];                    
                 }
-            }
+            }            
         }
 
         private static void Reverse<T>(List<T> list)
@@ -335,6 +343,14 @@ namespace Program
             {
                 this.countAtTurnPerPlayer[playerIndex].Add(0);
                 this.sumAtTurnPerPlayer[playerIndex].Add(0);
+            }
+        }
+
+        private void GrowListToTurn(List<int> list, int turn)
+        {
+            while (list.Count <= turn)
+            {
+                list.Add(0);
             }
         }
 

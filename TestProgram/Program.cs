@@ -15,8 +15,8 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            //ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Bishop), Strategies.BigMoneyWithCard.Player(Cards.Witch), useColonyAndPlatinum: false, createHtmlReport: true, split:StartingCardSplit.Split43);                    
-            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
+            ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: false, createHtmlReport: true, logGameCount: 0, numberOfGames:1000);
+            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();
             
@@ -28,6 +28,7 @@ namespace Program
             {
                 System.Console.WriteLine("");
                 System.Console.WriteLine("Elapsed Time: {0}s", (double)stopwatch.ElapsedMilliseconds / 1000);
+                System.Console.WriteLine("Total Games Player: {0}", totalGameCount);
                 System.Console.WriteLine("Elapsed Time per game: {0}us", stopwatch.ElapsedMilliseconds * 1000 / totalGameCount);
                 System.Console.WriteLine("Elapsed Time per Players Turn: {0}ns", (int)((double)stopwatch.ElapsedTicks / System.Diagnostics.Stopwatch.Frequency * 1000 * 1000 * 1000 / GameState.turnTotalCount));
             }
@@ -167,7 +168,7 @@ namespace Program
         {
             return new HumanReadableGameLog(GetOuputFilename("GameLog" + (gameCount == 0 ? "" : gameCount.ToString()) + ".txt"));
         }
-
+        
         static string GetOuputFilename(string filename)
         {
             return "..\\..\\Results\\" + filename;
@@ -192,7 +193,7 @@ namespace Program
             bool showPlayer2Wins = false,
             bool createHtmlReport = true,
             int numberOfGames = 1000,
-            int logGameCount = 100,
+            int logGameCount = 10,
             CreateGameLog createGameLog = null)
         {            
 
@@ -350,7 +351,7 @@ namespace Program
             {
                 System.Threading.Interlocked.Increment(ref outstandingTasks);
                 // write out HTML report summary
-                Task.Factory.StartNew(delegate()
+                var thread = new System.Threading.Thread( delegate()
                 {
                     CreateHtmlReport(
                         player1,
@@ -365,7 +366,8 @@ namespace Program
                         pointSpreadHistogramData,
                         gameEndOnTurnHistogramData);
                     System.Threading.Interlocked.Decrement(ref outstandingTasks);
-                });                
+                });
+                thread.Start();
             }
 
             double diff = PlayerWinPercent(0, winnerCount, numberOfGames) - PlayerWinPercent(1, winnerCount, numberOfGames);
