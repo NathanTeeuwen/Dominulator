@@ -10,12 +10,16 @@ namespace Dominion
         : IGameLog, IDisposable
     {
         int roundNumber = 0;
-        IndentedTextWriter textWriter;
-        List<Card>[] gainSequenceByPlayer;
+        IndentedTextWriter textWriter;        
 
         public HumanReadableGameLog(string filename)
         {
             this.textWriter = new IndentedTextWriter(filename);            
+        }
+
+        public HumanReadableGameLog(IndentedTextWriter textWriter)
+        {
+            this.textWriter = textWriter;
         }
 
         public void Dispose()
@@ -67,10 +71,7 @@ namespace Dominion
 
         public void PlayerBoughtCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} bought {1}.", playerState.actions.PlayerName, card.name);
-
-            List<Card> gainedList = this.gainSequenceByPlayer[playerState.PlayerIndex];
-            gainedList.Add(card);
+            this.textWriter.WriteLine("{0} bought {1}.", playerState.actions.PlayerName, card.name);            
         }        
 
         public void DrewCardIntoHand(PlayerState playerState, Card card)
@@ -85,13 +86,7 @@ namespace Dominion
 
         public void PlayerGainedCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} gained {1}.", playerState.actions.PlayerName, card.name);
-
-            if (this.gainSequenceByPlayer != null)
-            {
-                List<Card> gainedList = this.gainSequenceByPlayer[playerState.PlayerIndex];
-                gainedList.Add(card);
-            }
+            this.textWriter.WriteLine("{0} gained {1}.", playerState.actions.PlayerName, card.name);            
         }
 
         public void PlayerNamedCard(PlayerState playerState, Card card)
@@ -140,12 +135,7 @@ namespace Dominion
         }
 
         public void StartGame(GameState gameState)
-        {
-            this.gainSequenceByPlayer = new List<Card>[gameState.players.PlayerCount];
-            for (int i = 0; i < gameState.players.PlayerCount; ++i)
-            {
-                this.gainSequenceByPlayer[i] = new List<Card>();
-            }
+        {            
         }
 
         public void EndGame(GameState gameState)
@@ -179,25 +169,7 @@ namespace Dominion
             this.textWriter.Write("Trash contains: ");
             this.WriteAllCards(gameState.trash);
 
-            this.textWriter.WriteLine();
-
-            foreach (PlayerState player in gameState.players.AllPlayers)
-            {
-                this.textWriter.WriteLine("{0} GainSequence is:", player.actions.PlayerName);
-                this.PushScope();
-                int count = 0;
-                foreach(Card card in this.gainSequenceByPlayer[player.PlayerIndex])
-                {
-                    this.textWriter.Write("{0}, ", card.name);
-                    if (++count == 5)
-                    {
-                        count = 0;
-                        this.textWriter.WriteLine();
-                    };                     
-                }
-                this.PopScope();
-                this.textWriter.WriteLine();
-            }
+            this.textWriter.WriteLine();           
         }
 
         public void PlayerGainedCoin(PlayerState playerState, int coinAmount)        

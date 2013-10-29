@@ -15,11 +15,11 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            //ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: false, createHtmlReport: true, logGameCount: 0, numberOfGames:10000);
+            ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: false, createHtmlReport: false, logGameCount: 0, numberOfGames:1000);
             //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:true);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();
-            Kingdoms.ShouldMounteBankHoardOrVineyard.Run();
+            //Kingdoms.ShouldMounteBankHoardOrVineyard.Run();
             
             stopwatch.Stop();
 
@@ -164,10 +164,10 @@ namespace Program
             Cards.BlackMarket,
             Cards.Possession
         };
-        
-        static IGameLog GetGameLogForIteration(int gameCount)
+
+        static IndentedTextWriter GetGameLogWriterForIteration(int gameCount)
         {
-            return new HumanReadableGameLog(GetOuputFilename("GameLog" + (gameCount == 0 ? "" : gameCount.ToString()) + ".txt"));
+            return new IndentedTextWriter(GetOuputFilename("GameLog" + (gameCount == 0 ? "" : gameCount.ToString()) + ".txt"));
         }
         
         static string GetOuputFilename(string filename)
@@ -247,7 +247,7 @@ namespace Program
             int[] winnerCount = new int[2];
             int tieCount = 0;
 
-            var statGatherer = createHtmlReport ? new StatsPerTurnGameLog(2, gameConfig.cardGameSubset) : null;            
+            var statGathererGameLog = createHtmlReport ? new StatsPerTurnGameLog(2, gameConfig.cardGameSubset) : null;            
 
             var pointSpreadHistogramData = new HistogramData();
             var gameEndOnTurnHistogramData = new HistogramData();
@@ -256,11 +256,26 @@ namespace Program
             Action<int> loopBody = delegate(int gameCount)
             {
                 System.Threading.Interlocked.Increment(ref totalGameCount);
-                using (IGameLog gameLog = createGameLog != null ? createGameLog() :
-                                          gameCount < logGameCount ? GetGameLogForIteration(gameCount) :
-                                          new EmptyGameLog())
+                using (IndentedTextWriter textWriter = gameCount < logGameCount ? GetGameLogWriterForIteration(gameCount) : null)
                 {
-                    IGameLog gameLogMultiplexer = createHtmlReport ? new GameLogMultiplexer(statGatherer, gameLog) : gameLog;
+                    var gameLogs = new List<IGameLog>();
+                    if (createHtmlReport)
+                    {
+                        gameLogs.Add(statGathererGameLog);
+                    }
+                    if (createGameLog != null)
+                    {
+                        gameLogs.Add(createGameLog());
+                    }
+                    if (textWriter != null)
+                    {
+                        var humanReadableGameLog = new HumanReadableGameLog(textWriter);
+                        gameLogs.Add(humanReadableGameLog);
+                        var gainSequenceGameLog = new GainSequenceGameLog(textWriter);
+                        gameLogs.Add(gainSequenceGameLog);
+                    }
+
+                    var gameLogMultiplexer = new GameLogMultiplexer(gameLogs.ToArray());
 
                     // swap order every other game
                     bool swappedOrder = !firstPlayerAdvantage && (gameCount % 2 == 1);
@@ -363,7 +378,7 @@ namespace Program
                         playerActions,
                         winnerCount,
                         tieCount,
-                        statGatherer,
+                        statGathererGameLog,
                         pointSpreadHistogramData,
                         gameEndOnTurnHistogramData);
                     System.Threading.Interlocked.Decrement(ref outstandingTasks);
