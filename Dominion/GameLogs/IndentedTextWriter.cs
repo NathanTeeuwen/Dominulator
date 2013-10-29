@@ -14,8 +14,13 @@ namespace Dominion
         System.IO.TextWriter textWriter;
 
         public IndentedTextWriter(string filename)
+            : this(new System.IO.StreamWriter(filename))
         {
-            this.textWriter = new System.IO.StreamWriter(filename);
+        }
+
+        public IndentedTextWriter(System.IO.TextWriter textWriter)
+        {
+            this.textWriter = textWriter;
         }
 
         public void Indent()

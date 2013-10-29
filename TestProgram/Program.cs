@@ -15,8 +15,8 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
 
-            ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: false, createHtmlReport: false, logGameCount: 1, numberOfGames:1000);
-            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:false, logGameCount:1, debugLogs:true);
+            ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames:1000);
+            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:false, logGameCount:1, debugLogs:true);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();
             //Kingdoms.ShouldMounteBankHoardOrVineyard.Run();
@@ -401,13 +401,11 @@ namespace Program
                 // write out HTML report summary
                 var thread = new System.Threading.Thread( delegate()
                 {
-                    CreateHtmlReport(
-                        player1,
-                        player2,
+                    CreateHtmlReport(                        
                         gameConfig,
                         firstPlayerAdvantage,
                         numberOfGames,
-                        playerActions,
+                        playerActions,                        
                         winnerCount,
                         tieCount,
                         statGathererGameLog,
@@ -432,19 +430,20 @@ namespace Program
             }
         }
 
-        private static void CreateHtmlReport(
-            PlayerAction player1, 
-            PlayerAction player2, 
+        private static void CreateHtmlReport(            
             GameConfig gameConfig, 
             bool firstPlayerAdvantage, 
             int numberOfGames, 
-            PlayerAction[] playerActions, 
+            PlayerAction[] playerActions,             
             int[] winnerCount, 
             int tieCount, 
             StatsPerTurnGameLog statGatherer, 
             HistogramData pointSpreadHistogramData, 
             HistogramData gameEndOnTurnHistogramData)
         {
+            PlayerAction player1 = playerActions[0];
+            PlayerAction player2 = playerActions[1];
+ 
             int maxTurn = gameEndOnTurnHistogramData.GetXAxisValueCoveringUpTo(97);
 
             using (var textWriter = new IndentedTextWriter(GetOuputFilename(player1.PlayerName + " VS " + player2.PlayerName + ".html")))
@@ -479,6 +478,16 @@ namespace Program
                     InsertLineGraph(htmlWriter, "Probability player is ahead in points at end of round ", player1, player2, statGatherer.oddsOfBeingAheadOnRoundEnd, maxTurn);
                     InsertLineGraph(htmlWriter, "Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal, maxTurn);                    
                 }, collapseByDefault: false);
+                htmlWriter.InsertExpander("Game logs", delegate()
+                {
+                    htmlWriter.Write("<textarea rows='30' cols='100'>");
+                    htmlWriter.Write(GetHumanReadableGameLog(
+                        playerActions,
+                        gameConfig,
+                        firstPlayerAdvantage,
+                        0));
+                    htmlWriter.WriteLine("</textarea>");
+                });
                 htmlWriter.InsertExpander("When does the game end?", delegate()
                 {
                     InsertHistogram(htmlWriter, "Probablity of Game ending on Turn", "Percentage", gameEndOnTurnHistogramData, maxTurn, colllapsebyDefault: false);
@@ -530,6 +539,33 @@ namespace Program
 
                 htmlWriter.End();
             }
+        }
+
+        static string GetHumanReadableGameLog(
+            PlayerAction[] playerActions,
+            GameConfig gameConfig,
+            bool firstPlayerAdvantage,
+            int gameNumber)
+        {
+            int[] originalPositions = new int[] { 0, 1 };
+            int[] swappedPlayerPositions = new int[] { 1, 0 };
+
+            bool swappedOrder = !firstPlayerAdvantage && (gameNumber % 2 == 1);
+            int[] playedPositions = swappedOrder ? swappedPlayerPositions : originalPositions;                    
+
+            var stringWriter = new System.IO.StringWriter();
+            var gameLog = new HumanReadableGameLog( new IndentedTextWriter(stringWriter));
+            Random random = new Random(gameNumber);
+            using (Game game = new Game(random, gameConfig, gameLog))
+            {
+                GameState gameState = new GameState(
+                    playerActions,
+                    playedPositions,
+                    game);
+                gameState.PlayGameToEnd();
+            }
+
+            return stringWriter.ToString();
         }
 
         private static void InsertCardData(

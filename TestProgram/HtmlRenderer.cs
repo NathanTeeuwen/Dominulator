@@ -25,11 +25,21 @@ namespace Program
         public void Begin()
         {
             BeginTag("html");
-            BeginTag("head");
+            BeginTag("head");            
             this.textWriter.WriteLine(@"<script type='text/javascript' src='https://www.google.com/jsapi'></script>");
             this.UsingGoogleChartsAPI();
             this.UsingJQuery();
             this.UsingJQueryUI();
+            this.textWriter.WriteLine("<style type='text/css'>");
+            this.textWriter.Indent();
+            this.textWriter.WriteLine(".ui-widget textarea{");
+            this.textWriter.Indent();
+            this.textWriter.WriteLine("font-size: 10pt;");
+            this.textWriter.WriteLine("font-family: Arial;");
+            this.textWriter.Unindent();
+            this.textWriter.WriteLine("}");
+            this.textWriter.Unindent();
+            this.textWriter.WriteLine("</style>");
             EndTag(); //head
             BeginTag("body");
         }
@@ -290,6 +300,11 @@ namespace Program
         public void WriteLine()
         {
             LineBreak();
+        }
+
+        public void Write(string text)
+        {
+            this.textWriter.Write(text);
         }
 
         public void WriteLine(string text)
