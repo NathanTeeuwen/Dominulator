@@ -29,19 +29,45 @@ namespace Program
             this.textWriter.WriteLine(@"<script type='text/javascript' src='https://www.google.com/jsapi'></script>");
             this.UsingGoogleChartsAPI();
             this.UsingJQuery();
-            this.UsingJQueryUI();
-            this.textWriter.WriteLine("<style type='text/css'>");
-            this.textWriter.Indent();
-            this.textWriter.WriteLine(".ui-widget textarea{");
-            this.textWriter.Indent();
-            this.textWriter.WriteLine("font-size: 10pt;");
-            this.textWriter.WriteLine("font-family: Arial;");
-            this.textWriter.Unindent();
-            this.textWriter.WriteLine("}");
-            this.textWriter.Unindent();
-            this.textWriter.WriteLine("</style>");
+            this.UsingJQueryUI();            
+
+            // pagination tools
+            this.WriteEmbeddedContent("Html.simplePagination.css");
+            this.WriteEmbeddedContent("Html.jquery.simplePagination.js");
+
+            // last ditch effort to write styles.
+            this.WriteEmbeddedContent("Html.DefaultStyles.css");
+
             EndTag(); //head
             BeginTag("body");
+        }
+
+        public void InsertPaginationControl(int numberOfGames)
+        {
+            int divIndex = this.divIndex++;
+            string divId = "pagination_div" + divIndex;
+            this.textWriter.WriteLine("<div id='" + divId + "' class='pagination'></div>");
+            this.BeginJavascriptTag();
+                this.textWriter.WriteLine("function onPageClick(pageNumber, event) {");
+                this.textWriter.WriteLine("document.getElementById('gameLogTextArea').value = document.getElementById('gamelog' + pageNumber).innerHTML;");
+                this.textWriter.WriteLine("};");
+
+                this.textWriter.WriteLine("$( '#" + divId + "' ).pagination({ ");
+                this.textWriter.Indent();
+                    this.textWriter.WriteLine("pages: " + numberOfGames + ",");
+                    this.textWriter.WriteLine("displayedPages: 5,");
+                    this.textWriter.WriteLine("cssStyle: 'light-theme',");
+                    this.textWriter.WriteLine("onPageClick: onPageClick");                    
+                this.textWriter.Unindent();
+                this.textWriter.WriteLine("});");
+            this.EndTag();
+        }
+
+        public void InsertDataDiv(string dataTag, string content)
+        {
+            this.textWriter.Write("<div id='" + dataTag + "' style='display:none;'>");
+            this.textWriter.Write(content);
+            this.textWriter.Write("</div>");
         }
 
         public void InsertExpander(
@@ -65,8 +91,8 @@ namespace Program
             this.BeginJavascriptTag();
             this.textWriter.WriteLine("$( '#" + divId + "' ).accordion({ ");
             this.textWriter.Indent();
-            this.textWriter.WriteLine("collapsible: true,");
-            this.textWriter.WriteLine("heightStyle: 'content',");
+                this.textWriter.WriteLine("collapsible: true,");
+                this.textWriter.WriteLine("heightStyle: 'content',");
             this.textWriter.Unindent();
             this.textWriter.WriteLine("});");
 
@@ -345,6 +371,43 @@ namespace Program
         public void Header3(string text)
         {
             this.textWriter.WriteLine("<h3>{0}</h3>", text);
+        }
+
+        private void WriteEmbeddedContent(string content)
+        {
+            string stringContents = GetEmbeddedContent(content);
+            if (content.EndsWith(".js"))
+            {
+                this.BeginJavascriptTag();                
+                this.textWriter.WriteLine(stringContents);
+                this.EndTag();
+            }
+            else if (content.EndsWith(".css"))
+            {
+                this.textWriter.Write("<style type='text/css'>");
+                foreach (string line in stringContents.Split('\n'))
+                {
+                    this.textWriter.WriteLine(line);
+                }
+                this.textWriter.Write("</style>");
+            }
+        }
+
+        private string GetEmbeddedContent(string content)
+        {
+            string defaultNamespace = "Program.";
+
+            var assembly = System.Reflection.Assembly.GetExecutingAssembly();
+            var resourceName = defaultNamespace + content;
+
+            string result;
+            using (System.IO.Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (var reader = new System.IO.StreamReader(stream))
+            {
+                result = reader.ReadToEnd();                
+            }
+
+            return result;
         }
     }
 }

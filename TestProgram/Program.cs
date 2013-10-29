@@ -14,7 +14,7 @@ namespace Program
         {
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
-
+           
             ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames:1000);
             //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames:1000, createHtmlReport:false, logGameCount:1, debugLogs:true);
             //TestAllCardsWithBigMoney();    
@@ -441,6 +441,7 @@ namespace Program
             HistogramData pointSpreadHistogramData, 
             HistogramData gameEndOnTurnHistogramData)
         {
+            int numberOfGamesToLog = 10;
             PlayerAction player1 = playerActions[0];
             PlayerAction player2 = playerActions[1];
  
@@ -450,6 +451,18 @@ namespace Program
             {
                 var htmlWriter = new HtmlRenderer(textWriter);
                 htmlWriter.Begin();
+                string game0Text = null;
+                for (int gameIndex = 0; gameIndex < numberOfGamesToLog; ++gameIndex)
+                {
+                    string currentGame = GetHumanReadableGameLog(
+                        playerActions,
+                        gameConfig,
+                        firstPlayerAdvantage,
+                        gameIndex);
+                    htmlWriter.InsertDataDiv("gamelog" + (gameIndex+1), currentGame);
+                    if (gameIndex == 0)
+                        game0Text = currentGame;
+                }
                 htmlWriter.Header1(player1.PlayerName + " VS " + player2.PlayerName);
                 htmlWriter.WriteLine("Number of Games: " + numberOfGames);
                 htmlWriter.WriteLine(firstPlayerAdvantage ? player1.PlayerName + " always started first" : "Players took turns going first");
@@ -478,14 +491,11 @@ namespace Program
                     InsertLineGraph(htmlWriter, "Probability player is ahead in points at end of round ", player1, player2, statGatherer.oddsOfBeingAheadOnRoundEnd, maxTurn);
                     InsertLineGraph(htmlWriter, "Victory Point Total Per Turn", player1, player2, statGatherer.victoryPointTotal, maxTurn);                    
                 }, collapseByDefault: false);
-                htmlWriter.InsertExpander("Game logs", delegate()
+                htmlWriter.InsertExpander("Game Logs", delegate()
                 {
-                    htmlWriter.Write("<textarea rows='30' cols='100'>");
-                    htmlWriter.Write(GetHumanReadableGameLog(
-                        playerActions,
-                        gameConfig,
-                        firstPlayerAdvantage,
-                        0));
+                    htmlWriter.InsertPaginationControl(numberOfGamesToLog);
+                    htmlWriter.Write("<textarea id='gameLogTextArea', rows='30' cols='100'>");
+                    htmlWriter.Write(game0Text);
                     htmlWriter.WriteLine("</textarea>");
                 });
                 htmlWriter.InsertExpander("When does the game end?", delegate()
@@ -554,9 +564,11 @@ namespace Program
             int[] playedPositions = swappedOrder ? swappedPlayerPositions : originalPositions;                    
 
             var stringWriter = new System.IO.StringWriter();
-            var gameLog = new HumanReadableGameLog( new IndentedTextWriter(stringWriter));
+            var textWriter = new IndentedTextWriter(stringWriter);
+            var readableLog = new HumanReadableGameLog( textWriter );
+            var gainSequenceLog = new GainSequenceGameLog(textWriter);
             Random random = new Random(gameNumber);
-            using (Game game = new Game(random, gameConfig, gameLog))
+            using (Game game = new Game(random, gameConfig, new GameLogMultiplexer(readableLog, gainSequenceLog)))
             {
                 GameState gameState = new GameState(
                     playerActions,
@@ -735,6 +747,6 @@ namespace Program
         static double PlayerWinPercent(int player, int[] winnerCount, int numberOfGames)
         {
             return winnerCount[player] / (double)numberOfGames * 100;
-        }              
+        }
     }            
 }

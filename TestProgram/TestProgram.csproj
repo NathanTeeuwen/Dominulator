@@ -7,7 +7,7 @@
     <ProjectGuid>{350F1B63-533B-423E-8327-A65543322AFE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestProgram.cs</RootNamespace>
+    <RootNamespace>Program</RootNamespace>
     <AssemblyName>TestProgram.cs</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -72,7 +72,7 @@
     <Compile Include="DefaultPlayRules\Cards\Rebuild.cs" />
     <Compile Include="DefaultPlayRules\Cards\Trader.cs" />
     <Compile Include="DefaultPlayRules\Cards\WatchTower.cs" />
-    <Compile Include="HtmlRenderer.cs" />
+    <Compile Include="Html\HtmlRenderer.cs" />
     <Compile Include="Kingdoms\ShouldMounteBankHoardOrVineyard.cs" />
     <Compile Include="Kingdoms\ShouldRemakeOrHorseTradersIntoSoothayer.cs" />
     <Compile Include="PlayerActionFromCardResponses.cs" />
@@ -171,6 +171,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="Html\jquery.simplePagination.js" />
+    <EmbeddedResource Include="Html\simplePagination.css" />
+    <EmbeddedResource Include="Html\DefaultStyles.css" />
     <Content Include="Results\GameLog.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
