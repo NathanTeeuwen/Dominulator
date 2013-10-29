@@ -9,17 +9,26 @@ namespace Dominion
     public class HumanReadableGameLog
         : IGameLog, IDisposable
     {
+        bool is2Player;
         int roundNumber = 0;
+        List<Card> playedTreasures;
+        List<Card> boughtCards;
+        List<Card> discardedCards;
+        List<Card> drawnCards;
         IndentedTextWriter textWriter;        
 
         public HumanReadableGameLog(string filename)
-        {
-            this.textWriter = new IndentedTextWriter(filename);            
+            : this(new IndentedTextWriter(filename))
+        {                     
         }
 
         public HumanReadableGameLog(IndentedTextWriter textWriter)
         {
             this.textWriter = textWriter;
+            this.playedTreasures = new List<Card>();
+            this.boughtCards = new List<Card>();
+            this.discardedCards = new List<Card>();
+            this.drawnCards = new List<Card>();
         }
 
         public void Dispose()
@@ -37,10 +46,61 @@ namespace Dominion
             this.textWriter.Unindent();
         }
 
-        public void BeginRound()
+        public void BeginRound(PlayerState playerState)
         {
-            this.textWriter.WriteLine("ROUND {0}", ++this.roundNumber);
-            this.textWriter.WriteLine("-------------");
+            ++this.roundNumber;            
+        }
+
+        public void BeginPhase(PlayerState playerState)
+        {
+        }
+
+        public void EndPhase(PlayerState playerState)
+        {
+            if (playerState.PlayPhase == PlayPhase.PlayTreasure)
+            {                
+                this.textWriter.Write("Played ");
+                WriteAllCards(this.playedTreasures);
+                this.playedTreasures.Clear();
+                this.PushScope();
+                this.textWriter.WriteLine(" ... and has {0} coins and {1} buys available.", playerState.AvailableCoins, playerState.AvailableBuys);
+                this.PopScope();
+            }
+            else if (playerState.PlayPhase == PlayPhase.Buy)
+            {
+                this.textWriter.Write("Bought ");                
+                WriteAllCards(this.boughtCards);
+                this.boughtCards.Clear();                
+            }
+            else if (playerState.PlayPhase == PlayPhase.Cleanup)
+            {
+                this.textWriter.Write("Discarded ");
+                WriteAllCards(this.discardedCards);
+                this.discardedCards.Clear();
+            }
+            else if (playerState.PlayPhase == PlayPhase.DrawCards)
+            {
+                WriteOutDrawnCardsIfNecessary();
+            }
+        }
+
+        private string GetPlayerName(PlayerState playerState)
+        {
+            if (playerState.PlayPhase == PlayPhase.NotMyTurn)
+            {
+                return this.is2Player ? "The other player" : playerState.actions.PlayerName;
+            }
+            return "... and";
+        }
+
+        private void WriteOutDrawnCardsIfNecessary()
+        {
+            if (this.drawnCards.Count > 0)
+            {
+                this.textWriter.Write("Draws into hand ");
+                WriteAllCards(this.drawnCards);
+                this.drawnCards.Clear();
+            }
         }
 
         public void EndRound(GameState gameState)
@@ -48,99 +108,135 @@ namespace Dominion
         }
 
         public void BeginTurn(PlayerState playerState)
-        {
-            this.textWriter.WriteLine("{0} begins turn", playerState.actions.PlayerName);
+        {           
+            this.textWriter.WriteLine("== {0}'s turn {1} ===", playerState.actions.PlayerName, this.roundNumber);
             this.textWriter.Write("With hand: ");
-
-            foreach (Card card in playerState.Hand.OrderBy(card => card.name))
-            {
-                this.textWriter.Write(card.name + ",");
-            }
-            this.textWriter.WriteLine();
+            this.WriteAllCards(playerState.hand);                        
         }
 
         public void EndTurn(PlayerState playerState)
         {
-            this.textWriter.Write("{0} ends turn with deck: ", playerState.actions.PlayerName);
-            //this.PushScope();
-            this.WriteAllCards(playerState);
-            //this.PopScope();
-            //this.textWriter.WriteLine();
-            this.textWriter.WriteLine();
+            this.textWriter.Write("Ends turn owning: ", playerState.actions.PlayerName);            
+            this.WriteAllOwnedCards(playerState);            
+            this.textWriter.WriteLine();            
         }
 
         public void PlayerBoughtCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} bought {1}.", playerState.actions.PlayerName, card.name);            
+            this.boughtCards.Add(card);
         }        
 
         public void DrewCardIntoHand(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} Drew {1} into hand.", playerState.actions.PlayerName, card.name);
-        }
-
-        public void DiscardedCard(PlayerState playerState, Card card)
-        {
-            this.textWriter.WriteLine("{0} Discarded {1}.", playerState.actions.PlayerName, card.name);
-        }
+            if (this.roundNumber > 0)
+            {
+                if (playerState.PlayPhase == PlayPhase.DrawCards)
+                {
+                    this.drawnCards.Add(card);
+                }
+                else
+                {
+                    this.textWriter.WriteLine("{0} Drew {1} into hand.", GetPlayerName(playerState), card.name);                    
+                }
+            }
+        }      
 
         public void PlayerGainedCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} gained {1}.", playerState.actions.PlayerName, card.name);            
+            if (this.roundNumber > 0)
+            {
+                this.textWriter.WriteLine("{0} gains a {1}.", GetPlayerName(playerState), card.name);
+            }
         }
 
         public void PlayerNamedCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} named {1}.", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} named {1}.", GetPlayerName(playerState), card.name);
         }
 
         public void PlayerTrashedCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} trashed {1}.", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} trashes {1}.", GetPlayerName(playerState), card.name);            
         }
 
         public void PlayerPutCardInHand(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} put {1} into his hand.", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} put {1} into his hand.", GetPlayerName(playerState), card.name);            
         }
 
         public void PlayerTopDeckedCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} Placed {1} on top of his deck.", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} Placed {1} on top of his deck.", GetPlayerName(playerState), card.name);
         }
 
         public void ReceivedDurationEffectFrom(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} Finished Playing {1}.", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} Finished Playing {1}.", GetPlayerName(playerState), card.name);
         }
 
         public void PlayedCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} Played {1}.", playerState.actions.PlayerName, card.name);
+            if (playerState.PlayPhase == PlayPhase.PlayTreasure)
+            {
+                this.playedTreasures.Add(card);
+            }
+            else
+            {
+                this.textWriter.WriteLine("Played {0}.", card.name);
+            }
+        }
+
+        public void DiscardedCard(PlayerState playerState, Card card)
+        {
+            if (playerState.PlayPhase == PlayPhase.Cleanup)
+            {
+                this.discardedCards.Add(card);
+            }
+            else
+            {
+                this.textWriter.WriteLine("{0} Discards {1}.", GetPlayerName(playerState), card.name);
+            }
         }
 
         public void PlayerDiscardCard(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} Discarded {1}.", playerState.actions.PlayerName, card.name);
+            if (playerState.PlayPhase == PlayPhase.Cleanup)
+            {
+                this.discardedCards.Add(card);
+            }
+            else
+            {
+                this.textWriter.WriteLine("{0} Discards {1}.", GetPlayerName(playerState), card.name);
+            }
         }
 
         public void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source)
         {
-            this.textWriter.WriteLine("{0} Revealed {1}.", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} Reveals {1}.", GetPlayerName(playerState), card.name);
         }
 
         public void ReshuffledDiscardIntoDeck(PlayerState playerState)
         {
-            this.textWriter.WriteLine("{0} reshuffled", playerState.actions.PlayerName);
+            if (this.roundNumber > 0)
+            {
+                if (playerState.PlayPhase != PlayPhase.NotMyTurn)
+                {
+                    WriteOutDrawnCardsIfNecessary();
+                    
+                }
+                this.textWriter.WriteLine("{0} reshuffles", GetPlayerName(playerState));                
+            }
         }
 
         public void StartGame(GameState gameState)
-        {            
+        {
+            this.is2Player = gameState.players.PlayerCount == 2;
         }
 
         public void EndGame(GameState gameState)
         {
             this.textWriter.WriteLine("Game ended in {0} turns.", this.roundNumber);
+            this.textWriter.WriteLine();
 
             PlayerState[] winners = gameState.WinningPlayers;
 
@@ -157,13 +253,15 @@ namespace Dominion
                 }
                 this.textWriter.WriteLine();
             }
+            this.textWriter.WriteLine();
 
             foreach (PlayerState player in gameState.players.AllPlayers)
             {
-                this.textWriter.WriteLine("{0} total score: {1}", player.actions.PlayerName, player.TotalScore());
+                this.textWriter.WriteLine("{0} Total Score is: {1}", player.actions.PlayerName, player.TotalScore());
                 this.PushScope();
-                this.WriteAllCards(player);
+                this.WriteAllOwnedCards(player);
                 this.PopScope();
+                this.textWriter.WriteLine();           
             }
 
             this.textWriter.Write("Trash contains: ");
@@ -174,8 +272,11 @@ namespace Dominion
 
         public void PlayerGainedCoin(PlayerState playerState, int coinAmount)        
         {
-            var sign = coinAmount > 0 ? "+" : "";
-            this.textWriter.WriteLine("{2}{0} Coin = {1} all together.", coinAmount, playerState.AvailableCoins, sign);
+            if (playerState.PlayPhase != PlayPhase.PlayTreasure)
+            {
+                var sign = coinAmount > 0 ? "+" : "";
+                this.textWriter.WriteLine("{2}{0} Coin = {1} all together.", coinAmount, playerState.AvailableCoins, sign);
+            }
         }
 
         public void PlayerGainedPotion(PlayerState playerState, int count)
@@ -191,7 +292,10 @@ namespace Dominion
 
         public void PlayerGainedBuys(PlayerState playerState, int buyAmount)
         {
-            this.textWriter.WriteLine("+{0} Buys = {1} all together.", buyAmount, playerState.AvailableBuys);
+            if (playerState.PlayPhase != PlayPhase.PlayTreasure)
+            {
+                this.textWriter.WriteLine("+{0} Buys = {1} all together.", buyAmount, playerState.AvailableBuys);
+            }
         }
 
         public void PlayerGainedCoinToken(PlayerState playerState, int coinAmount)
@@ -206,31 +310,9 @@ namespace Dominion
             }
         }
 
-        private void WriteAllCards(PlayerState playerState)
+        private void WriteAllOwnedCards(PlayerState playerState)
         {
             WriteAllCards(playerState.AllOwnedCards);
-        }
-
-        private void WriteAllCards(IEnumerable<Card> enumerable)
-        {
-            Card[] allCards = enumerable.ToArray<Card>();
-
-            var cardComparer = new CompareCardByType();
-            Array.Sort(allCards, cardComparer);
-
-            for (int index = 0; index < allCards.Length; )
-            {
-                Card currentCard = allCards[index];
-                int cardCount = 0;
-                do
-                {
-                    cardCount++;
-                    index++;
-                } while (index < allCards.Length && cardComparer.Equals(currentCard, allCards[index]));
-
-                this.textWriter.Write("{0}({1}), ", currentCard.name, cardCount);
-            }
-            this.textWriter.WriteLine();
         }
 
         public void LogDeck(PlayerState playerState)
@@ -270,6 +352,80 @@ namespace Dominion
         public void PlayerReturnedCardToPile(PlayerState playerState, Card card)
         {
             this.textWriter.WriteLine("{0} returned {1} to its pile", playerState.actions.PlayerName, card.name);
+        }
+
+        private void WriteAllCards(BagOfCards cards)
+        {
+            WriteAllCards((CollectionCards)cards);
+        }
+
+        private void WriteAllCards(CollectionCards cards)
+        {
+            bool needComma = false;
+            foreach (Card currentCard in cards.AllTypes.OrderBy(card => card.name))
+            {
+                int cardCount = cards.CountOf(currentCard);
+                if (!needComma)
+                {
+                    needComma = true;
+                }
+                else
+                {
+                    this.textWriter.Write(", ");
+                }
+                this.textWriter.Write("{0} {1}", cardCount, cardCount > 1 ? currentCard.pluralName : currentCard.name);
+            }
+            this.textWriter.WriteLine();
+        }
+
+        private void WriteAllCards(IEnumerable<Card> cards)
+        {
+            if (!cards.Any())
+            {
+                this.textWriter.WriteLine("nothing");
+                return;
+            }
+
+            bool needComma = false;
+            int cardCount = 0;
+            Card lastCardType = null;
+            foreach (Card currentCard in cards)
+            {                
+                if (currentCard != lastCardType)
+                {
+                    if (cardCount > 0)
+                    {
+                        if (!needComma)
+                        {
+                            needComma = true;
+                        }
+                        else
+                        {
+                            this.textWriter.Write(", ");
+                        }
+                        this.textWriter.Write("{0} {1}", cardCount, cardCount > 1 ? lastCardType.pluralName : lastCardType.name);
+                        cardCount = 0;
+                    }
+                    lastCardType = currentCard;
+                }                                
+                cardCount++;                
+            }
+
+            if (cardCount > 0)
+            {
+                if (!needComma)
+                {
+                    needComma = true;
+                }
+                else
+                {
+                    this.textWriter.Write(", ");
+                }
+                this.textWriter.Write("{0} {1}", cardCount, cardCount > 1 ? lastCardType.pluralName : lastCardType.name);
+                cardCount = 0;
+            }
+
+            this.textWriter.WriteLine();
         }
     }
 }

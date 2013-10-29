@@ -37,7 +37,7 @@ namespace Dominion.CardTypes
         public static Duchy card = new Duchy();
 
         private Duchy() 
-            : base("Duchy", coinCost: 5, victoryPoints: playerState => 3) 
+            : base("Duchy", pluralName: "Duchies", coinCost: 5, victoryPoints: playerState => 3) 
         { 
         }
 
@@ -346,7 +346,7 @@ namespace Dominion.CardTypes
         public static Library card = new Library();
 
         private Library()
-            : base("Library", coinCost: 5, isAction: true)
+            : base("Library", pluralName:"Libraries", coinCost: 5, isAction: true)
         {
         }
 

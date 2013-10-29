@@ -154,7 +154,7 @@ namespace Dominion
 
                 if (this.players.BeginningOfRound)
                 {
-                    this.gameLog.BeginRound();
+                    this.gameLog.BeginRound(this.players.CurrentPlayer);
                 }
 
                 PlayerState currentPlayer = this.players.CurrentPlayer;
@@ -246,11 +246,12 @@ namespace Dominion
             DoCleanupPhase(currentPlayer);
 
             int cardCountForNextTurn = this.doesCurrentPlayerNeedOutpostTurn ? 3 : 5;
+            currentPlayer.EnterPhase(PlayPhase.DrawCards);
             currentPlayer.DrawUntilCountInHand(cardCountForNextTurn);
-            currentPlayer.playPhase = PlayPhase.NotMyTurn;
-            
-            this.gameLog.EndTurn(currentPlayer);
+            currentPlayer.EnterPhase(PlayPhase.NotMyTurn);
+
             this.gameLog.PopScope();
+            this.gameLog.EndTurn(currentPlayer);            
         }
 
         private void ReturnCardsToHandAtStartOfTurn(PlayerState currentPlayer)
@@ -285,7 +286,7 @@ namespace Dominion
 
         private void DoActionPhase(PlayerState currentPlayer)
         {
-            currentPlayer.playPhase = PlayPhase.Action;
+            currentPlayer.EnterPhase(PlayPhase.Action);            
             while (currentPlayer.AvailableActions > 0)
             {
                 currentPlayer.turnCounters.RemoveAction();
@@ -310,7 +311,7 @@ namespace Dominion
 
         private void DoBuyPhase(PlayerState currentPlayer)
         {
-            currentPlayer.playPhase = PlayPhase.Buy;
+            currentPlayer.EnterPhase(PlayPhase.Buy);
             while (currentPlayer.turnCounters.AvailableBuys > 0)
             {
                 Card cardType = currentPlayer.actions.GetCardFromSupplyToBuy(this, CardAvailableForPurchaseForCurrentPlayer);
@@ -359,7 +360,7 @@ namespace Dominion
 
         private void DoCleanupPhase(PlayerState currentPlayer)
         {
-            currentPlayer.playPhase = PlayPhase.Cleanup;
+            currentPlayer.EnterPhase(PlayPhase.Cleanup);
 
             if (currentPlayer.ownsCardThatHasSpecializedCleanupAtStartOfCleanup)
             {
@@ -376,7 +377,7 @@ namespace Dominion
 
         internal void DoPlayTreasures(PlayerState currentPlayer)
         {
-            currentPlayer.playPhase = PlayPhase.PlayTreasure;
+            currentPlayer.EnterPhase(PlayPhase.PlayTreasure);
             while (true)
             {
                 Card cardTypeToPlay = currentPlayer.actions.GetTreasureFromHandToPlay(this, acceptableCard => true, isOptional:true);

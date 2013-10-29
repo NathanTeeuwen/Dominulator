@@ -10,8 +10,10 @@ namespace Dominion
     {
         Action,
         PlayTreasure,
+        SpendCoinTokens,
         Buy,
         Cleanup,
+        DrawCards,
         NotMyTurn
     }
 }

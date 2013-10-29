@@ -387,7 +387,7 @@ namespace Dominion.CardTypes
 
         public override int ProvideSelfDiscount(PlayerState playerState)
         {
-            if (playerState.playPhase == PlayPhase.Buy)
+            if (playerState.PlayPhase == PlayPhase.Buy)
             {
                 return playerState.CardsInPlay.CountWhere(card => card.isAction) * 2;
             }

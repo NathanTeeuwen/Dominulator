@@ -16,8 +16,23 @@ namespace Dominion
         internal readonly Game game;
         internal IGameLog gameLog { get { return this.game.GameLog; } }
         internal Random random { get { return this.game.random; } }
-        
-        internal PlayPhase playPhase;        
+
+        private PlayPhase playPhase;
+
+        internal PlayPhase PlayPhase
+        {
+            get
+            {
+                return this.playPhase;
+            }
+        }
+
+        internal void EnterPhase(PlayPhase phase)
+        {
+            this.gameLog.EndPhase(this);
+            this.playPhase = phase;
+            this.gameLog.BeginPhase(this);
+        }
 
         internal PlayerTurnCounters turnCounters;
         
@@ -87,7 +102,7 @@ namespace Dominion
 
             CardGameSubset gameSubset = game.CardGameSubset;            
             this.actions = new PlayerActionWithSelf(actions, this);
-            this.playPhase = PlayPhase.NotMyTurn;            
+            this.EnterPhase(PlayPhase.NotMyTurn);            
             this.playerIndex = playerIndex;
 
             // duplicates
@@ -719,6 +734,7 @@ namespace Dominion
 
         internal void RequestPlayerSpendCoinTokensBeforeBuyPhase(GameState gameState)
         {
+            this.EnterPhase(PlayPhase.SpendCoinTokens);
             int coinToSpend = this.actions.GetCoinAmountToSpendInBuyPhase(gameState);
             if (coinToSpend > this.AvailableCoinTokens || coinToSpend < 0)
                 throw new Exception("Can not spend that many coins");
@@ -1699,7 +1715,7 @@ namespace Dominion
             {
                 this.gameLog.PlayerDiscardCard(this, card);
                 this.gameLog.PushScope();
-                if (gameState.players.CurrentPlayer.playPhase != PlayPhase.Cleanup)
+                if (gameState.players.CurrentPlayer.PlayPhase != PlayPhase.Cleanup)
                 {                    
                     card.DoSpecializedDiscardNonCleanup(this, gameState);
                 }

@@ -53,8 +53,8 @@ namespace Dominion
         {
             foreach (PlayerState player in players)
             {
-                textWriter.WriteLine("{0} GainSequence is:", player.actions.PlayerName);
-                this.PushScope();
+                textWriter.WriteLine("{0} GainSequence was:", player.actions.PlayerName);
+                textWriter.Indent();
                 int count = 0;
                 foreach (Card card in this.gainSequenceByPlayer[player.PlayerIndex])
                 {
@@ -65,7 +65,8 @@ namespace Dominion
                         textWriter.WriteLine();
                     };
                 }
-                PopScope();
+                textWriter.Unindent();
+                textWriter.WriteLine();
                 textWriter.WriteLine();
             }
         }       

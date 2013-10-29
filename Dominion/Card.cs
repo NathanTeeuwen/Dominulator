@@ -11,6 +11,7 @@ namespace Dominion
         : IEquatable<Card>
     {
         public readonly string name;
+        public readonly string pluralName;
         private readonly int coinCost;
         public readonly int potionCost;
         public readonly int plusAction;
@@ -57,8 +58,9 @@ namespace Dominion
         }        
 
         protected Card(
-            string name,
+            string name,            
             int coinCost,
+            string pluralName = null,
             int potionCost = 0,
             int plusActions = 0,
             int plusBuy = 0,
@@ -104,6 +106,7 @@ namespace Dominion
             }
 
             this.name = name;
+            this.pluralName = pluralName != null ? pluralName : name + "s";
             this.coinCost = coinCost;
             this.potionCost = potionCost;
             this.plusAction = plusActions;

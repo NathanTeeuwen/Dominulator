@@ -47,6 +47,20 @@ namespace Dominion
             }
         }
 
+        public IEnumerable<Card> AllTypes
+        {
+            get
+            {                
+                for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)
+                {
+                    if (this.mapGameCardIndexToCount[index] > 0)
+                    {
+                        yield return this.gameSubset.GetCardForIndex(index);
+                    }
+                }                
+            }
+        }
+
         public bool Any
         {
             get
@@ -333,6 +347,6 @@ namespace Dominion
             }
 
             return result;
-        }
+        }        
     }
 }

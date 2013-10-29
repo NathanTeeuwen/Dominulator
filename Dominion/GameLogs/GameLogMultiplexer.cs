@@ -24,11 +24,11 @@ namespace Dominion
             }
         }
 
-        public void BeginRound()
+        public void BeginRound(PlayerState playerState)
         {
             for (int i = 0; i < this.gameLogs.Length; ++i)
             {
-                this.gameLogs[i].BeginRound();
+                this.gameLogs[i].BeginRound(playerState);
             }
         }
 
@@ -37,6 +37,22 @@ namespace Dominion
             for (int i = 0; i < this.gameLogs.Length; ++i)
             {
                 this.gameLogs[i].EndRound(gameState);
+            }
+        }
+
+        public void BeginPhase(PlayerState playerState)
+        {
+            for (int i = 0; i < this.gameLogs.Length; ++i)
+            {
+                this.gameLogs[i].BeginPhase(playerState);
+            }
+        }
+
+        public void EndPhase(PlayerState playerState)
+        {
+            for (int i = 0; i < this.gameLogs.Length; ++i)
+            {
+                this.gameLogs[i].EndPhase(playerState);
             }
         }
 

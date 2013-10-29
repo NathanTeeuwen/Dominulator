@@ -239,12 +239,10 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RevealCardsFromDeck(3);
-            gameState.gameLog.PushScope();
+            currentPlayer.RevealCardsFromDeck(3);            
             currentPlayer.RequestPlayerTrashRevealedCard(gameState, acceptableCard => true);
             currentPlayer.RequestPlayerDiscardRevealedCard(gameState);
-            currentPlayer.MoveRevealedCardToTopOfDeck();
-            gameState.gameLog.PopScope();
+            currentPlayer.MoveRevealedCardToTopOfDeck();            
         }
     }
 

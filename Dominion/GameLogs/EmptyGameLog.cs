@@ -13,7 +13,7 @@ namespace Dominion
         {
         }
 
-        public virtual void BeginRound()
+        public virtual void BeginRound(PlayerState playerState)
         {
         }
 
@@ -41,7 +41,17 @@ namespace Dominion
 
         public virtual void PlayerBoughtCard(PlayerState playerState, Card card)
         {
-        }        
+        }
+
+        public void BeginPhase(PlayerState playerState)
+        {
+
+        }
+
+        public void EndPhase(PlayerState playerState)
+        {
+
+        }
 
         public virtual void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source)
         {

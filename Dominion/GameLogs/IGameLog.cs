@@ -11,8 +11,10 @@ namespace Dominion
     {
         void PushScope();
         void PopScope();
-        void BeginRound();
+        void BeginRound(PlayerState playerState);
         void EndRound(GameState gameState);
+        void BeginPhase(PlayerState playerState);
+        void EndPhase(PlayerState playerState);
         void BeginTurn(PlayerState playerState);
         void EndTurn(PlayerState playerState);
         void PlayerNamedCard(PlayerState playerState, Card card);
