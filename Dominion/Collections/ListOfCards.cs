@@ -100,6 +100,17 @@ namespace Dominion
             }
         }
 
+        public void AddAllCardsFromInSomeOrder(CollectionCards other)
+        {
+            base.AddAllCardsFrom(other);
+            foreach (Card card in other.AllTypes)
+            {
+                int count = other.CountOf(card);
+                for (int i = 0; i < count; ++i)
+                    this.cards.Add(card);
+            }            
+        }
+
         public void AddCardToTop(Card card)
         {
             this.countKnownCard++;

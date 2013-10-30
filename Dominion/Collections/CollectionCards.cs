@@ -98,6 +98,27 @@ namespace Dominion
             }                
         }
 
+        protected void AddAllCardsFrom(CollectionCards other)
+        {
+            for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)
+            {
+                int count = other.mapGameCardIndexToCount[index];
+                if (count == 0)
+                    continue;
+
+                this.mapGameCardIndexToCount[index] += count;
+                this.count+=count;
+
+                var parent = this.parent;
+                while (parent != null)
+                {
+                    parent.mapGameCardIndexToCount[index] += count;
+                    parent.count+=count;
+                    parent = parent.parent;
+                }
+            }
+        }
+
         protected void MoveAllCardsFrom(CollectionCards other)
         {
             for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)

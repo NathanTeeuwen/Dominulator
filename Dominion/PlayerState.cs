@@ -1601,11 +1601,7 @@ namespace Dominion
             {
                 throw new Exception("Can not move discard to deck unless deck is empty");
             }
-            foreach (Card card in this.discard)
-            {
-                deck.AddCardToTop(card);
-            }
-
+            deck.AddAllCardsFromInSomeOrder(this.discard);            
             discard.Clear();
             // TODO:  Place stash where u want it to go
             deck.Shuffle(this.random);
@@ -1869,7 +1865,7 @@ namespace Dominion
             while (didCardAffectAnything)
             {
                 didCardAffectAnything = false;
-                foreach (Card reactionCard in this.hand)
+                foreach (Card reactionCard in this.hand.AllTypes)
                 {
                     bool didthisCardCancelAttack;
                     didCardAffectAnything = reactionCard.DoReactionToAttackWhileInHand(this, gameState, out didthisCardCancelAttack);
