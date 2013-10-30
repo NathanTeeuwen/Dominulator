@@ -15,11 +15,11 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
            
-            ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames:1000);
-            CompareStrategyVsAllKnownStrategies(Strategies.MountebankMonumentHamletVineyard.Player(), numberOfGames: 1000, createHtmlReport: true, debugLogs: true);
+            //ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames:1000);
+            //CompareStrategyVsAllKnownStrategies(Strategies.MountebankMonumentHamletVineyard.Player(), numberOfGames: 1000, createHtmlReport: true, debugLogs: true);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();                        
-            //new WebService().Run();
+            new WebService().Run();
 
             stopwatch.Stop();
 
@@ -35,6 +35,38 @@ namespace Program
             }
         }
 
+        public static PlayerAction[] AllBuiltInStrategies()
+        {
+            var result = new List<PlayerAction>();
+
+            var assembly = System.Reflection.Assembly.GetCallingAssembly();
+            var type = assembly.GetType("Program.Strategies");
+            foreach (Type innerType in type.GetNestedTypes())
+            {
+                if (!innerType.IsClass)
+                    continue;
+
+                System.Reflection.MethodInfo playerMethodInfo = innerType.GetMethod("Player", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
+                if (playerMethodInfo == null)
+                    continue;
+
+                if (playerMethodInfo.ContainsGenericParameters)
+                    continue;
+
+                if (playerMethodInfo.GetParameters().Count() > 0)
+                {
+                    continue;
+                }
+
+                PlayerAction playerAction = playerMethodInfo.Invoke(null, new object[0]) as PlayerAction;
+                if (playerAction == null)
+                    continue;
+
+                result.Add(playerAction);
+            }
+
+            return result.ToArray();
+        }
 
         static void CompareStrategyVsAllKnownStrategies(
             PlayerAction playerAction, 
@@ -47,28 +79,8 @@ namespace Program
         {
             var resultList = new List<System.Tuple<string, double>>();
 
-            var assembly = System.Reflection.Assembly.GetCallingAssembly();
-            var type = assembly.GetType("Program.Strategies");
-            foreach (Type innerType in type.GetNestedTypes())
-            {
-                if (!innerType.IsClass)
-                    continue;                                    
-
-                System.Reflection.MethodInfo playerMethodInfo = innerType.GetMethod("Player", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
-                if (playerMethodInfo == null)                
-                    continue;
-
-                if (playerMethodInfo.ContainsGenericParameters)
-                    continue;                
-
-                if (playerMethodInfo.GetParameters().Count() > 0) {
-                    continue;
-                }
-
-                PlayerAction otherPlayerAction = playerMethodInfo.Invoke(null, new object[0]) as PlayerAction;
-                if (otherPlayerAction == null)
-                    continue;
-
+            foreach (PlayerAction otherPlayerAction in AllBigMoneyWithCard())
+            {                
                 double percentDiff = ComparePlayers(
                     playerAction, 
                     otherPlayerAction, 
@@ -81,8 +93,8 @@ namespace Program
                     createHtmlReport: createHtmlReport);
 
                 resultList.Add( new System.Tuple<string,double>(otherPlayerAction.PlayerName, percentDiff));
-            }            
-
+            }
+            
             foreach(var result in resultList.OrderBy(t => t.Item2))
             {
                 if (result.Item1 == playerAction.name)
@@ -91,9 +103,10 @@ namespace Program
             }
         }
 
-        static void TestAllCardsWithBigMoney()
+        static PlayerAction[] AllBigMoneyWithCard()
         {
-            var bigMoneyPlayer = Strategies.BigMoney.Player();
+            var result = new List<PlayerAction>();
+
             foreach (var member in typeof(Cards).GetMembers(System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public))
             {
                 if (member.MemberType == System.Reflection.MemberTypes.Field)                
@@ -108,10 +121,21 @@ namespace Program
                         continue;
 
                     var playerAction = Strategies.BigMoneyWithCard.Player(card);
-
-                    ComparePlayers(playerAction, bigMoneyPlayer, numberOfGames:1000, shouldParallel:true, createHtmlReport:false, logGameCount:0);
+                    result.Add(playerAction);
                 }
             }
+
+            return result.ToArray();
+        }
+
+
+        static void TestAllCardsWithBigMoney()
+        {
+            var bigMoneyPlayer = Strategies.BigMoney.Player();
+            foreach (PlayerAction playerAction in AllBigMoneyWithCard())
+            {
+                ComparePlayers(playerAction, bigMoneyPlayer, numberOfGames: 1000, shouldParallel: true, createHtmlReport: false, logGameCount: 0);
+            }                    
         }
 
         static void FindOptimalPlayForEachCardWithBigMoney()

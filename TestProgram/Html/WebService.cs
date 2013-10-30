@@ -3,17 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 
 namespace Program
 {    
-    interface IJSONWithHtmlResponse
+    interface IRequestWithHtmlResponse
     {
         string GetResponse();
     }
 
+    interface IRequestWithJsonResponse
+    {
+        object GetResponse();
+    }
+
     [Serializable]
     public class StrategyComparisonRequest 
-        : IJSONWithHtmlResponse
+        : IRequestWithHtmlResponse
     {
         public string player1 { get; set; }
         public string player2 { get; set; }
@@ -22,12 +28,23 @@ namespace Program
         {
             return this.player1 + " vs " + this.player2;
         }
-    }        
+    }
+
+    [Serializable]
+    public class GetAvailableStrategies
+        : IRequestWithJsonResponse
+    {
+        public object GetResponse()
+        {
+            return Program.AllBuiltInStrategies().Select(action => action.PlayerName).OrderBy(name => name).ToArray();
+        }
+    }
 
     class WebService
     {
         static string baseUrl = "http://localhost:8081/dominion/";
         static string defaultPage = HtmlRenderer.GetEmbeddedContent("Dominulator.html");
+        static JavaScriptSerializer js = new JavaScriptSerializer();
 
         public void Run()
         {
@@ -44,7 +61,9 @@ namespace Program
 
                 string urlString = request.Url.ToString();
 
-                string responseText = null;                
+                string responseText = null;
+
+                urlString.TrimEnd('/');
 
                 if (urlString + "/" == baseUrl)
                 {
@@ -54,29 +73,43 @@ namespace Program
                 else if (urlString.StartsWith(baseUrl))
                 {
                     var streamReader = new System.IO.StreamReader(request.InputStream, request.ContentEncoding);
-                    var jsonRequest = streamReader.ReadToEnd();
-
-                    var js = new System.Web.Script.Serialization.JavaScriptSerializer();
-                    var data1 = Uri.UnescapeDataString(jsonRequest);
+                    var jsonRequest = streamReader.ReadToEnd();                                       
 
                     string requestedPage = urlString.Remove(0, baseUrl.Length);
                     object unserializedObject = null;
 
                     if (requestedPage == "StrategyComparisonRequest")                    
                     {
-                        unserializedObject = js.Deserialize(data1, typeof(StrategyComparisonRequest));
+                        unserializedObject = js.Deserialize(jsonRequest, typeof(StrategyComparisonRequest));
+                    }
+                    else if (requestedPage == "GetAvailableStrategies")
+                    {
+                        unserializedObject = new GetAvailableStrategies();
                     }
 
-                    if (unserializedObject is IJSONWithHtmlResponse)
+                    if (unserializedObject is IRequestWithHtmlResponse)
                     {
-                        responseText = ((IJSONWithHtmlResponse)unserializedObject).GetResponse();
+                        responseText = ((IRequestWithHtmlResponse)unserializedObject).GetResponse();
                         //These headers to allow all browsers to get the response
                         response.Headers.Add("Access-Control-Allow-Credentials", "true");
                         response.Headers.Add("Access-Control-Allow-Origin", "*");
                         response.Headers.Add("Access-Control-Origin", "*");
                         response.ContentType = "text/html";
                         response.ContentEncoding = System.Text.UTF8Encoding.UTF8;
-                    }                    
+                    }
+
+                    if (unserializedObject is IRequestWithJsonResponse)
+                    {
+                        object o = ((IRequestWithJsonResponse)unserializedObject).GetResponse();
+                        var serialized = js.Serialize(o);
+                        responseText = serialized;
+                        //These headers to allow all browsers to get the response
+                        response.Headers.Add("Access-Control-Allow-Credentials", "true");
+                        response.Headers.Add("Access-Control-Allow-Origin", "*");
+                        response.Headers.Add("Access-Control-Origin", "*");
+                        response.ContentType = "text/html";
+                        response.ContentEncoding = System.Text.UTF8Encoding.UTF8;
+                    }
                 }
 
                 if (responseText != null)
