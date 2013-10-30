@@ -104,12 +104,7 @@ namespace Program
             this.forwardTotal = new PerTurnPlayerCountersSeparatedByGame(playerCount);
             this.reverseTotal = new PerTurnPlayerCountersSeparatedByGame(playerCount);
             this.currentGameData = new PerTurnPlayerCountersSeparatedByGame(playerCount);
-        }
-
-        public void BeginTurn(PlayerState playerState)
-        {
-            currentGameData.BeginTurn(playerState);
-        }
+        }        
 
         public void IncrementCounter(PlayerState playerState, int amount)
         {
@@ -121,10 +116,16 @@ namespace Program
             return this.currentGameData.GetValueAtTurn(playerState);
         }
 
-        public void EndGame(GameState gameState)
-        {
+        public void EndGame(GameState gameState, ForwardAndReversePerTurnPlayerCounters turnCounters)
+        {            
             this.forwardTotal.Add(gameState, this.currentGameData);
 
+            if (turnCounters != null)
+            {
+                this.forwardTotal.GrowToSize(gameState, turnCounters.forwardTotal);
+                this.reverseTotal.GrowToSize(gameState, turnCounters.reverseTotal);
+                this.currentGameData.GrowToSize(gameState, turnCounters.currentGameData);
+            }
             this.currentGameData.Reverse(gameState);
             this.reverseTotal.Add(gameState, this.currentGameData);
 
@@ -163,10 +164,11 @@ namespace Program
             return this.counters[playerState.Game].GetSumAtTurn(playerState);
         }
 
-        public float[] GetAveragePerTurn(int playerIndex, int throughTurn)
+        public float[] GetAveragePerTurn(int playerIndex, int throughTurn, PerTurnPlayerCountersSeparatedByGame counts)
         {
+            counts.AggregateAllDataIfNecessary();
             AggregateAllDataIfNecessary();
-            return aggregatedResult.GetAveragePerTurn(playerIndex, throughTurn);
+            return aggregatedResult.GetAveragePerTurn(playerIndex, throughTurn, counts.aggregatedResult);
         }
 
         private void AggregateAllDataIfNecessary()
@@ -180,12 +182,7 @@ namespace Program
         private PerTurnPlayerCounters GetCounter(PlayerState playerState)
         {
             return this.counters[playerState.Game];            
-        }
-
-        public void BeginTurn(PlayerState playerState)
-        {
-            GetCounter(playerState).BeginTurn(playerState);
-        }
+        }      
 
         public void IncrementCounter(PlayerState playerState, int amount)
         {
@@ -202,6 +199,12 @@ namespace Program
             this.counters[gameState.Game].Add(other.counters[gameState.Game]);
         }
 
+        public void GrowToSize(GameState gameState, PerTurnPlayerCountersSeparatedByGame counts)
+        {
+            this.counters[gameState.Game].GrowToSize(counts.counters[gameState.Game]);
+        }
+
+
         public void Reverse(GameState gameState)
         {
             this.counters[gameState.Game].Reverse();
@@ -210,8 +213,7 @@ namespace Program
 
     public class PerTurnPlayerCounters
     {        
-        private List<int>[] sumAtTurnPerPlayer;
-        private List<int>[] countAtTurnPerPlayer;
+        private List<int>[] sumAtTurnPerPlayer;        
 
         public PerTurnPlayerCounters(int playerCount)
         {
@@ -219,13 +221,7 @@ namespace Program
             for (int playerIndex = 0; playerIndex < this.sumAtTurnPerPlayer.Length; ++playerIndex)
             {
                 this.sumAtTurnPerPlayer[playerIndex] = new List<int>(capacity: 30);
-            }
-
-            this.countAtTurnPerPlayer = new List<int>[2];
-            for (int playerIndex = 0; playerIndex < this.countAtTurnPerPlayer.Length; ++playerIndex)
-            {
-                this.countAtTurnPerPlayer[playerIndex] = new List<int>(capacity: 30);
-            }
+            }            
         }
 
         public bool HasNonZeroData
@@ -246,6 +242,7 @@ namespace Program
 
         public int GetSumAtTurn(PlayerState player)
         {
+            GrowListToTurn(this.sumAtTurnPerPlayer[player.PlayerIndex], player.TurnNumber);
             return this.sumAtTurnPerPlayer[player.PlayerIndex][player.TurnNumber];
         }
 
@@ -254,19 +251,19 @@ namespace Program
         {
             get
             {
-                return this.countAtTurnPerPlayer[0].Count;
+                return this.sumAtTurnPerPlayer[0].Count;
             }
         }
 
-        public float[] GetAveragePerTurn(int playerIndex, int throughTurn)
+        public float[] GetAveragePerTurn(int playerIndex, int throughTurn, PerTurnPlayerCounters counts)
         {
             if (throughTurn > PlayerTurnLength)
             {
                 throw new Exception("There aren't that many turns");
             }
 
-            var totalGoldPerTurn = this.sumAtTurnPerPlayer[playerIndex];
-            var totalCountOfThisTurn = this.countAtTurnPerPlayer[playerIndex];
+            List<int> totalGoldPerTurn = this.sumAtTurnPerPlayer[playerIndex];
+            List<int> totalCountOfThisTurn = counts.sumAtTurnPerPlayer[playerIndex];
 
             float[] result = new float[throughTurn];
 
@@ -282,8 +279,7 @@ namespace Program
         {
             for (int playerIndex = 0; playerIndex < this.sumAtTurnPerPlayer.Length; ++playerIndex)
             {
-                this.sumAtTurnPerPlayer[playerIndex].Clear();
-                this.countAtTurnPerPlayer[playerIndex].Clear();
+                this.sumAtTurnPerPlayer[playerIndex].Clear();                
             }
         }
 
@@ -292,17 +288,13 @@ namespace Program
             for (int playerIndex = 0; playerIndex < this.sumAtTurnPerPlayer.Length; ++playerIndex)
             {
                 var thisSumAtTurn = this.sumAtTurnPerPlayer[playerIndex];
-                var thisCountAtTurn = this.countAtTurnPerPlayer[playerIndex];
-                var otherCountAtTurn = other.countAtTurnPerPlayer[playerIndex];
                 var otherSumAtTurn = other.sumAtTurnPerPlayer[playerIndex];
 
-                GrowListToTurn(thisSumAtTurn, other.PlayerTurnLength - 1);
-                GrowListToTurn(thisCountAtTurn, other.PlayerTurnLength - 1);
+                GrowListToTurn(thisSumAtTurn, otherSumAtTurn.Count);
 
-                for (int turn = 0; turn < other.PlayerTurnLength; ++turn)
+                for (int turn = 0; turn < otherSumAtTurn.Count; ++turn)
                 {
-                    thisSumAtTurn[turn] += otherSumAtTurn[turn];
-                    thisCountAtTurn[turn] += otherCountAtTurn[turn];                    
+                    thisSumAtTurn[turn] += otherSumAtTurn[turn];                    
                 }
             }            
         }
@@ -317,20 +309,22 @@ namespace Program
             }
         }
 
-        public void Reverse()
+        public void GrowToSize(PerTurnPlayerCounters counts)
         {
-            for (int playerIndex = 0; playerIndex < this.countAtTurnPerPlayer.Length; ++playerIndex)
+            while (this.sumAtTurnPerPlayer[0].Count < counts.sumAtTurnPerPlayer[0].Count)
             {
-                Reverse(this.sumAtTurnPerPlayer[playerIndex]);
-                Reverse(this.countAtTurnPerPlayer[playerIndex]);
+                this.GrowListsBy1();
             }
         }
 
-        // methods to be used by IGameLog
-        public void BeginTurn(PlayerState playerState)
+        public void Reverse()
         {
-            AddToCounterForPlayer(playerState.PlayerIndex, playerState.TurnNumber, 1, this.countAtTurnPerPlayer);            
+            for (int playerIndex = 0; playerIndex < this.sumAtTurnPerPlayer.Length; ++playerIndex)
+            {
+                Reverse(this.sumAtTurnPerPlayer[playerIndex]);                
+            }
         }
+      
 
         public void IncrementCounter(PlayerState playerState, int amount)
         {
@@ -339,9 +333,8 @@ namespace Program
 
         private void GrowListsBy1()
         {
-            for (int playerIndex = 0; playerIndex < this.countAtTurnPerPlayer.Length; ++playerIndex)
-            {
-                this.countAtTurnPerPlayer[playerIndex].Add(0);
+            for (int playerIndex = 0; playerIndex < this.sumAtTurnPerPlayer.Length; ++playerIndex)
+            {                
                 this.sumAtTurnPerPlayer[playerIndex].Add(0);
             }
         }

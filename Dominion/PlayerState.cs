@@ -1078,6 +1078,8 @@ namespace Dominion
         internal void RequestPlayerInspectTopOfDeckForDiscard(PlayerState decidingPlayer, GameState gameState, bool shouldReveal = true)
         {
             Card movedCard = shouldReveal ? this.DrawAndRevealOneCardFromDeck() : this.DrawAndLookAtOneCardFromDeck();
+            if (movedCard == null)
+                return;
             gameState.gameLog.PushScope();
             if (decidingPlayer.actions.ShouldPlayerDiscardCardFromDeck(gameState, this, movedCard))
             {

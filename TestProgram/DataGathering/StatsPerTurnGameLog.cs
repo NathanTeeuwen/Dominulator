@@ -11,6 +11,7 @@ namespace Program
         : EmptyGameLog
     {
         private CardGameSubset cardGameSubset;
+        public ForwardAndReversePerTurnPlayerCounters turnCounters;
         public ForwardAndReversePerTurnPlayerCounters coinToSpend;
         public ForwardAndReversePerTurnPlayerCounters cardsGained;
         public ForwardAndReversePerTurnPlayerCounters victoryPointTotal;        
@@ -26,6 +27,7 @@ namespace Program
 
         public StatsPerTurnGameLog(int playerCount, CardGameSubset gameSubset)
         {
+            this.turnCounters = new ForwardAndReversePerTurnPlayerCounters(playerCount);
             this.coinToSpend = new ForwardAndReversePerTurnPlayerCounters(playerCount);
             this.cardsGained = new ForwardAndReversePerTurnPlayerCounters(playerCount);
             this.ruinsGained = new ForwardAndReversePerTurnPlayerCounters(playerCount);
@@ -68,37 +70,21 @@ namespace Program
             }
 
             return result;
-        }
-
-        private void BeginTurnAllCounters(IEnumerable<ForwardAndReversePerTurnPlayerCounters> counters, PlayerState playerState)
-        {
-            foreach (var counter in counters)
-            {
-                counter.BeginTurn(playerState);
-            }
-        }
+        }        
 
         private void EndGameAllCounters(IEnumerable<ForwardAndReversePerTurnPlayerCounters> counters, GameState gameState)
         {
             foreach (var counter in counters)
             {
-                counter.EndGame(gameState);
+                counter.EndGame(gameState, this.turnCounters);
             }
-        }
-
-        private void BeginTurnAllCountersPerCard(MapOfCardsForGameSubset<ForwardAndReversePerTurnPlayerCounters> map, PlayerState playerState)
-        {
-            foreach (Card card in cardGameSubset)
-            {
-                map[card].BeginTurn(playerState);
-            }  
-        }
+        }        
 
         private void EndGamePerCard(MapOfCardsForGameSubset<ForwardAndReversePerTurnPlayerCounters> map, GameState gameState)
         {
             foreach (Card card in cardGameSubset)
             {
-                map[card].EndGame(gameState);
+                map[card].EndGame(gameState, this.turnCounters);
             }
         }
 
@@ -112,16 +98,7 @@ namespace Program
 
         public override void BeginTurn(PlayerState playerState)
         {
-            this.coinToSpend.BeginTurn(playerState);
-            this.cardsGained.BeginTurn(playerState);
-            this.ruinsGained.BeginTurn(playerState);
-            this.cursesGained.BeginTurn(playerState);
-            this.deckShuffleCount.BeginTurn(playerState);            
-            this.cursesTrashed.BeginTurn(playerState);            
-            this.victoryPointTotal.BeginTurn(playerState);            
-            BeginTurnAllCountersPerCard(this.cardsTotalCount, playerState);
-            BeginTurnAllCountersPerCard(this.carsGainedOnTurn, playerState);
-            BeginTurnAllCounters(this.oddsOfHittingAtLeastACoinAmount, playerState);
+            this.turnCounters.IncrementCounter(playerState, 1);            
         }
 
         public override void EndGame(GameState gameState)
@@ -135,13 +112,14 @@ namespace Program
                 }
             }
 
-            this.coinToSpend.EndGame(gameState);
-            this.cardsGained.EndGame(gameState);
-            this.ruinsGained.EndGame(gameState);
-            this.cursesGained.EndGame(gameState);
-            this.deckShuffleCount.EndGame(gameState);
-            this.cursesTrashed.EndGame(gameState);
-            this.victoryPointTotal.EndGame(gameState);
+            this.turnCounters.EndGame(gameState, null);
+            this.coinToSpend.EndGame(gameState, this.turnCounters);
+            this.cardsGained.EndGame(gameState, this.turnCounters);
+            this.ruinsGained.EndGame(gameState, this.turnCounters);
+            this.cursesGained.EndGame(gameState, this.turnCounters);
+            this.deckShuffleCount.EndGame(gameState, this.turnCounters);
+            this.cursesTrashed.EndGame(gameState, this.turnCounters);
+            this.victoryPointTotal.EndGame(gameState, this.turnCounters);
             EndGamePerCard(this.cardsTotalCount, gameState);
             EndGamePerCard(this.carsGainedOnTurn, gameState);
             EndGameAllCounters(this.oddsOfHittingAtLeastACoinAmount, gameState);
@@ -171,8 +149,7 @@ namespace Program
                 if (player == winningPlayer)
                 {
                     oddsOfBeingAheadOnRoundEnd.IncrementCounter(player, 1);
-                }
-                oddsOfBeingAheadOnRoundEnd.BeginTurn(player);
+                }                
             }
         }
 
