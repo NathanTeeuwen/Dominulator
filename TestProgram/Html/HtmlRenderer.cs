@@ -74,7 +74,7 @@ namespace Program
             string title,
             HtmlContentInserter content,
             bool collapseByDefault = true)
-        {
+        {            
             int currentChartIndex = this.divIndex++;
             string divId = "accordion_div" + currentChartIndex;
 
@@ -99,7 +99,12 @@ namespace Program
             // collapse after initialziation so the graphs draw correctly
             if (collapseByDefault)
             {
-                this.textWriter.WriteLine("$(  '#" + divId + "').accordion( 'option', 'active', false);");
+                this.textWriter.WriteLine("google.setOnLoadCallback(setAccordionOptions);");
+                this.textWriter.WriteLine("function setAccordionOptions() {");
+                this.textWriter.Indent();
+                    this.textWriter.WriteLine("$(  '#" + divId + "').accordion( 'option', 'active', false);");
+                this.textWriter.WriteLine("};");
+                this.textWriter.WriteLine();                
             }
             
             this.EndTag();
@@ -177,7 +182,7 @@ namespace Program
                     this.textWriter.Unindent();
                     this.textWriter.WriteLine("}");
                 this.textWriter.Unindent();
-                this.textWriter.WriteLine("};");                
+                this.textWriter.WriteLine("};");
                 this.textWriter.WriteLine();
                 this.textWriter.WriteLine("var chart = new google.visualization.LineChart(document.getElementById('" + divId + "'));");
                 this.textWriter.WriteLine("chart.draw(data, options);");
