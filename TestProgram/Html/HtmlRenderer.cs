@@ -32,11 +32,11 @@ namespace Program
             this.UsingJQueryUI();            
 
             // pagination tools
-            this.WriteEmbeddedContent("Html.simplePagination.css");
-            this.WriteEmbeddedContent("Html.jquery.simplePagination.js");
+            this.WriteEmbeddedContent("simplePagination.css");
+            this.WriteEmbeddedContent("jquery.simplePagination.js");
 
             // last ditch effort to write styles.
-            this.WriteEmbeddedContent("Html.DefaultStyles.css");
+            this.WriteEmbeddedContent("DefaultStyles.css");
 
             EndTag(); //head
             BeginTag("body");
@@ -398,9 +398,9 @@ namespace Program
             }
         }
 
-        private string GetEmbeddedContent(string content)
+        public static string GetEmbeddedContent(string content)
         {
-            string defaultNamespace = "Program.";
+            string defaultNamespace = "Program.Html.Resources.";
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
             var resourceName = defaultNamespace + content;

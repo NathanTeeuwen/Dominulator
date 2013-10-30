@@ -36,6 +36,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -73,6 +75,8 @@
     <Compile Include="DefaultPlayRules\Cards\Trader.cs" />
     <Compile Include="DefaultPlayRules\Cards\WatchTower.cs" />
     <Compile Include="Html\HtmlRenderer.cs" />
+    <Compile Include="Html\HtmlReportGenerator.cs" />
+    <Compile Include="Html\WebService.cs" />
     <Compile Include="Kingdoms\ShouldMounteBankHoardOrVineyard.cs" />
     <Compile Include="Kingdoms\ShouldRemakeOrHorseTradersIntoSoothayer.cs" />
     <Compile Include="PlayerActionFromCardResponses.cs" />
@@ -171,9 +175,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Html\jquery.simplePagination.js" />
-    <EmbeddedResource Include="Html\simplePagination.css" />
-    <EmbeddedResource Include="Html\DefaultStyles.css" />
+    <EmbeddedResource Include="Html\Resources\jquery.simplePagination.js" />
+    <EmbeddedResource Include="Html\Resources\simplePagination.css" />
+    <EmbeddedResource Include="Html\Resources\DefaultStyles.css" />
+    <EmbeddedResource Include="Html\Resources\Dominulator.html" />
     <Content Include="Results\GameLog.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
