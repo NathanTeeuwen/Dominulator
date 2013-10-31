@@ -2,19 +2,18 @@
 <html>
 <title>Dominulator</title>
 <head>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  google.load("visualization", "1", {packages:["corechart"]});
+</script>
+  
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js'></script>
 <link href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/cupertino/jquery-ui.css' type='text/css' rel='Stylesheet' />
-
+ 
 <script type="text/javascript">
 
-function GetSelectedText(selectObject)
-{
-   alert(selectObject);
-   return selectObject.options[selectObject.selectedIndex].text;
-}
-
-PlayGame = function() {
+function PlayGame() {
 
     var resultDiv = $("#resultDivContainer");    
     var player1Strat = $("#player1Strategy :selected").text();
@@ -25,25 +24,63 @@ PlayGame = function() {
         data: JSON.stringify({ player1:player1Strat, player2:player2Strat}),
         dataType: "html",        
         success: function (result) {        
-            switch (result) {
-                case true:
-                    processResponse(result);
-                    break;
-                default:
-                    resultDiv.html(result);
-            }
-        },
-        error: function (xhr, ajaxOptions, thrownError) {
-            alert(xhr.status);
-            alert(thrownError);
+            resultDiv.contents().find('html').html(result);                    
         }
+    });
+};
+</script>
+  
+<script type="text/javascript">
+
+var nextId = 0;
+
+function CreateAndAppendGraphDiv()
+{
+  nextId += 1;
+  var chartId = "chart_div" + nextId;    
+  var newDiv = document.createElement('div');
+  newDiv.setAttribute('id', chartId);
+  newDiv.setAttribute('style', 'width: 900px; height: 500px');
+  var chartDiv = document.getElementById('chartarea');
+  chartDiv.appendChild(newDiv);
+  return newDiv;
+}
+
+function InsertGraph() {
+
+    var resultDiv = $("#resultDivContainer");    
+    var player1Strat = $("#player1Strategy :selected").text();
+    var player2Strat = $("#player2Strategy :selected").text();
+    var graphName = $("#selectedGraph :selected").text();
+    $.ajax({
+        url: "http://localhost:8081/dominion/" + graphName,
+        type: "POST",
+        data: JSON.stringify({ player1:player1Strat, player2:player2Strat}),
+        dataType: "json",        
+        success: function (json) {       
+          
+          var chartDiv = CreateAndAppendGraphDiv();
+          var data = google.visualization.arrayToDataTable(json.data);          
+          
+          var chart;
+          if (json.type == "pie")
+          {
+            chart = new google.visualization.PieChart(chartDiv);   
+          }
+          else if (json.type == "line")    
+          {
+            chart = new google.visualization.LineChart(chartDiv);   
+          }
+          
+          chart.draw(data, json.options);
+        }      
     });
 };
 </script>
 
 <script type="text/javascript">
 
-GetAvailableStrategies = function(id) {
+function GetAvailableStrategies(id) {
 
     $.ajax({
         url:'http://localhost:8081/dominion/GetAvailableStrategies',
@@ -57,6 +94,22 @@ GetAvailableStrategies = function(id) {
         },       
     });      
 };
+
+function GetAvailableGraphs(id) {
+
+    $.ajax({
+        url:'http://localhost:8081/dominion/GetAvailableGraphs',
+        type:'POST',
+        data: '',
+        dataType: 'json',
+        success: function( json ) {          
+            $.each(json, function(i, value) {
+                $(id).append($('<option>').text(value).attr('value', value));
+            });
+        },       
+    });      
+};
+
 </script>
 
 <!-- Style the combo boxees to be auto complete typeable boxes -->
@@ -218,24 +271,43 @@ GetAvailableStrategies = function(id) {
 <h1>Dominulator</h1>
 
 <br>
-<label>Player1: </label>
-<select id='player1Strategy'></select>
-<script type="text/javascript">    
-    $("#player1Strategy").combobox();    
-    GetAvailableStrategies("#player1Strategy");    
-</script>
-<br>
-<label>Player2: </label>
-<select id='player2Strategy'></select>
-<script type="text/javascript">    
-    $("#player2Strategy").combobox();    
-    GetAvailableStrategies("#player2Strategy");    
-</script>
-<br>
-<br>
-<button type="button" onclick="PlayGame()">Play Game</button>
+<div id =" player1Selection">
+  <label>Player1: </label>
+  <select id='player1Strategy'></select>
+  <script type="text/javascript">    
+      $("#player1Strategy").combobox();    
+      GetAvailableStrategies("#player1Strategy");    
+  </script>
+  <br>
+</div>
   
-<div id="resultDivContainer"></div>
+<div id = "player2Selection">
+  <label>Player2: </label>
+  <select id='player2Strategy'></select>
+  <script type="text/javascript">    
+      $("#player2Strategy").combobox();    
+      GetAvailableStrategies("#player2Strategy");    
+  </script>
+  <br>
+</div>
+
+<div id = "player2Selection">
+  <label>Graph</label>
+  <select id='selectedGraph'></select>
+  <script type="text/javascript">    
+      $("#selectedGraph").combobox();    
+      GetAvailableGraphs("#selectedGraph");    
+  </script>
+  <br>
+</div>
+
+  
+<br>
+<button type="button" onclick="InsertGraph()">Insert Graph</button>
+  
+<div id="chartarea">
+  
+</div>
 
 </body>
 </html> 

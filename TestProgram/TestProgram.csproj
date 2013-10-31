@@ -176,10 +176,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="Html\Resources\Dominulator.html" />
     <EmbeddedResource Include="Html\Resources\jquery.simplePagination.js" />
     <EmbeddedResource Include="Html\Resources\simplePagination.css" />
     <EmbeddedResource Include="Html\Resources\DefaultStyles.css" />
-    <EmbeddedResource Include="Html\Resources\Dominulator.html" />
     <Content Include="Results\GameLog.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
