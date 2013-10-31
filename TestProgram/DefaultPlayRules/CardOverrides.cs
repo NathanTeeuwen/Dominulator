@@ -26,9 +26,11 @@ namespace Program.DefaultStrategies
             result[Cards.Nobles] = new Nobles(playerAction);
             result[Cards.Rebuild] = new Rebuild(playerAction);
             result[Cards.ScryingPool] = new ScryingPool(playerAction);
+            result[Cards.Scheme] = new Scheme(playerAction);
             result[Cards.Treasury] = new Treasury(playerAction);
             result[Cards.Trader] = new Trader(playerAction);
             result[Cards.Watchtower] = new Watchtower(playerAction);
+            result[Cards.WalledVillage] = new WalledVillage(playerAction);
             result[Cards.WishingWell] = result[Cards.Mystic];
 
             return result;

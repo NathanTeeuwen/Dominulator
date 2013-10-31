@@ -274,7 +274,7 @@ namespace Dominion
             return PlayerMustChooseNumber();
         }
 
-        virtual public Card GetCardFromPlayToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        virtual public Card GetCardFromPlayToTopDeckDuringCleanup(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             return PlayerMustMakeCardChoice();
         }

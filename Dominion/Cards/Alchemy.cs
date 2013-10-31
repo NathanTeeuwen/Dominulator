@@ -40,14 +40,7 @@ namespace Dominion.CardTypes
         {
             if (currentPlayer.cardsPlayed.HasCard(Cards.Potion))
             {
-                if (currentPlayer.actions.ShouldPutCardOnTopOfDeck(this, gameState))
-                {
-                    var cardToTopDeck = currentPlayer.cardsPlayed.RemoveCard(this);
-                    if (cardToTopDeck != null)
-                    {
-                        currentPlayer.deck.AddCardToTop(cardToTopDeck);
-                    }
-                }
+                currentPlayer.RequestPlayerTopDeckCardFromCleanup(this, gameState);                
             }
         }        
     }

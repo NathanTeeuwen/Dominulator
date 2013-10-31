@@ -49,6 +49,8 @@
     <Compile Include="CardAcceptance.cs" />
     <Compile Include="DataGathering\HistogramData.cs" />
     <Compile Include="DataGathering\PerTurnPlayerCounters.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Scheme.cs" />
+    <Compile Include="DefaultPlayRules\Cards\WalledViillage.cs" />
     <Compile Include="DefaultPlayRules\Cards\ScryingPool.cs" />
     <Compile Include="DefaultPlayRules\Cards\Treasury.cs" />
     <Compile Include="DefaultPlayRules\Cards\Nobles.cs" />

@@ -90,7 +90,7 @@ namespace Dominion
             return this.cards[0];
         }
 
-        internal void MoveBottomCardToTop()
+        internal Card MoveBottomCardToTop()
         {
             Card bottomCard = this.BottomCard();
             if (bottomCard != null)
@@ -98,6 +98,7 @@ namespace Dominion
                 this.cards.RemoveAt(0);
                 this.AddCardToTop(bottomCard);
             }
+            return bottomCard;
         }
 
         public void AddAllCardsFromInSomeOrder(CollectionCards other)

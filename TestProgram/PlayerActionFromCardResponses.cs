@@ -28,11 +28,24 @@ namespace Program
                 return null;
 
             return this.cardResponses[gameState.CurrentCardBeingPlayed];
-        }
+        }   
 
-        public bool ShouldDeferForCard(GameState gameState)
+        public bool ShouldDeferForCardInPlay(GameState gameState)
         {
             return this.GetActionForCardInPlay(gameState) != null;
+        }
+
+        private IPlayerAction GetActionForCardBeingCleanedUp(GameState gameState)
+        {
+            if (gameState.Self.CurrentCardBeingCleanedUp == null)
+                return null;
+
+            return this.cardResponses[gameState.Self.CurrentCardBeingCleanedUp];
+        }
+
+        public bool ShouldDeferForCardBeingCleanedUp(GameState gameState)
+        {
+            return this.GetActionForCardBeingCleanedUp(gameState) != null;
         }
 
         public bool ShouldDeferForCard(Card card)
@@ -112,10 +125,10 @@ namespace Program
             return playerAction.GetCardFromTrashToGain(gameState, acceptableCard, isOptional);
         }
         
-        public Card GetCardFromPlayToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        public Card GetCardFromPlayToTopDeckDuringCleanup(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromPlayToTopDeck(gameState, acceptableCard, isOptional);
+            IPlayerAction playerAction = this.GetActionForCardBeingCleanedUp(gameState);
+            return playerAction.GetCardFromPlayToTopDeckDuringCleanup(gameState, acceptableCard, isOptional);
         }
 
         public Card GetCardFromDiscardToTopDeck(GameState gameState, bool isOptional)

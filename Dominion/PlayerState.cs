@@ -42,7 +42,7 @@ namespace Dominion
         internal bool ownsCardWithSpecializedActionOnTrashWhileInHand;
         internal bool ownsCardWithSpecializedActionOnGainWhileInPlay;
         internal bool ownsCardWithSpecializedActionOnBuyWhileInHand;
-        internal bool ownsCardWithSpecializedActionOnGainWhileInHand;
+        internal bool ownsCardWithSpecializedActionOnGainWhileInHand;        
 
         // all of the cards the player owns.  Always move from one list to the other
         internal ListOfCards deck;
@@ -74,6 +74,7 @@ namespace Dominion
         public CollectionCards CardsInDeck { get { return this.deck; } }
         public int TurnNumber { get { return this.numberOfTurnsPlayed; } }
         public Card CurrentCardBeingPlayed { get { return this.cardsBeingPlayed.TopCard(); } }
+        public Card CurrentCardBeingCleanedUp { get { return this.cardBeingCleanedUp; } }
         public CollectionCards CardsBeingPlayed { get { return this.cardsPlayed; } }
         public int PlayerIndex { get { return this.playerIndex; } }
         public SetOfCards CardsBoughtThisTurn { get { return this.turnCounters.cardsBoughtThisTurn; } }
@@ -91,6 +92,7 @@ namespace Dominion
         internal BagOfCards allOwnedCards;
         internal BagOfCards cardsInPlay;
         internal BagOfCards cardsInPlayAtBeginningOfCleanupPhase;
+        internal Card cardBeingCleanedUp = null;
 
         // persistent Counters
         internal int victoryTokenCount;
@@ -283,7 +285,11 @@ namespace Dominion
 
         internal void MoveCardFromBottomOfDeckToTop()
         {
-            this.deck.MoveBottomCardToTop();
+            Card cardMoved = this.deck.MoveBottomCardToTop();
+            if (cardMoved != null)
+            {
+                this.gameLog.PlayerTopDeckedCard(this, cardMoved);
+            }            
         }        
 
         internal void LookAtCardsFromDeck(int cardCount)
@@ -1276,10 +1282,18 @@ namespace Dominion
             return cardToTopDeck;
         }
 
-        internal void RequestPlayerTopDeckCardsFromPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
-        {
-            while (RequestPlayerTopDeckCardFromPlay(gameState, acceptableCard, isOptional) != null) ;
-        }
+        internal void RequestPlayerTopDeckCardFromCleanup(Card card, GameState gameState)
+        {            
+            if (this.actions.ShouldPutCardOnTopOfDeck(card, gameState))
+            {
+                var cardToTopDeck = this.cardsPlayed.RemoveCard(card);
+                if (cardToTopDeck != null)
+                {
+                    this.gameLog.PlayerTopDeckedCard(this, cardToTopDeck);
+                    this.deck.AddCardToTop(cardToTopDeck);
+                }
+            }            
+        }        
 
         internal Card RequestPlayerTopDeckCardFromPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
@@ -1288,7 +1302,7 @@ namespace Dominion
                 return null;
             }
 
-            Card cardTypeToTopDeck = this.actions.GetCardFromPlayToTopDeck(gameState, acceptableCard, isOptional);
+            Card cardTypeToTopDeck = this.actions.GetCardFromPlayToTopDeckDuringCleanup(gameState, acceptableCard, isOptional);
             if (cardTypeToTopDeck == null)
             {
                 if (isOptional)

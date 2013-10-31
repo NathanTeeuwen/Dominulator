@@ -56,7 +56,7 @@ namespace Program
 
         public override Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromSupplyToBuy(gameState, cardPredicate);
             }
@@ -69,7 +69,7 @@ namespace Program
 
         public override Card GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetTreasureFromHandToPlay(gameState, acceptableCard, isOptional);
             }
@@ -93,7 +93,7 @@ namespace Program
 
         public override Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromHandToPlay(gameState, acceptableCard, isOptional);
             }
@@ -144,7 +144,7 @@ namespace Program
 
         public override Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromHandToTrash(gameState, acceptableCard, isOptional);
             }
@@ -170,7 +170,7 @@ namespace Program
 
         public override Card GetCardFromHandOrDiscardToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, out DeckPlacement deckPlacement)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromHandOrDiscardToTrash(gameState, acceptableCard, isOptional, out deckPlacement);
             }
@@ -202,7 +202,7 @@ namespace Program
 
         public override Card GetCardFromRevealedCardsToTrash(GameState gameState, CardPredicate acceptableCard)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromRevealedCardsToTrash(gameState, acceptableCard);
             }
@@ -223,7 +223,7 @@ namespace Program
 
         public override Card GetCardFromRevealedCardsToDiscard(GameState gameState)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromRevealedCardsToDiscard(gameState);
             }
@@ -244,7 +244,7 @@ namespace Program
 
         override public Card GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromHandToTopDeck(gameState, acceptableCard, isOptional);
             }
@@ -265,7 +265,7 @@ namespace Program
 
         override public Card GetCardFromDiscardToTopDeck(GameState gameState, bool isOptional)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromDiscardToTopDeck(gameState, isOptional);
             }
@@ -276,7 +276,7 @@ namespace Program
 
         public override bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.ShouldPlayerDiscardCardFromDeck(gameState, player, card);
             }
@@ -286,7 +286,7 @@ namespace Program
 
         public override DeckPlacement ChooseBetweenTrashAndTopDeck(GameState gameState, Card card)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.ChooseBetweenTrashAndTopDeck(gameState, card);
             }
@@ -299,7 +299,7 @@ namespace Program
 
         public override Card GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromOtherPlayersHandToDiscard(gameState, otherPlayer);
             }
@@ -316,7 +316,7 @@ namespace Program
 
         public override Card GetCardFromOtherPlayersRevealedCardsToTrash(GameState gameState, PlayerState otherPlayer, CardPredicate acceptableCard)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromOtherPlayersRevealedCardsToTrash(gameState, otherPlayer, acceptableCard);
             }
@@ -329,7 +329,7 @@ namespace Program
         
         public override Card GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromHandToDiscard(gameState, acceptableCard, isOptional);
             }
@@ -356,7 +356,7 @@ namespace Program
 
         public override Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromRevealedCardsToPutOnDeck(gameState);
             }
@@ -376,7 +376,7 @@ namespace Program
 
         public override Card GetCardFromTrashToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromTrashToGain(gameState, acceptableCard, isOptional);
             }
@@ -400,7 +400,7 @@ namespace Program
 
         public override Card GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromSupplyToGain(gameState, acceptableCard, isOptional);
             }
@@ -439,7 +439,7 @@ namespace Program
 
         public override bool ShouldGainCard(GameState gameState, Card card)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.ShouldGainCard(gameState, card);
             }
@@ -518,7 +518,7 @@ namespace Program
 
         public override bool ShouldTrashCard(GameState gameState, Card card)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.ShouldTrashCard(gameState, card);
             }
@@ -556,7 +556,7 @@ namespace Program
         
         public override int GetCountToReturnToSupply(Card card, GameState gameState)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCountToReturnToSupply(card, gameState);
             }
@@ -566,7 +566,7 @@ namespace Program
 
         public override Card BanCardToDrawnIntoHandFromRevealedCards(GameState gameState)
         {            
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.BanCardToDrawnIntoHandFromRevealedCards(gameState);
             }
@@ -576,7 +576,7 @@ namespace Program
 
         public override Card BanCardForCurrentPlayerPurchase(GameState gameState)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.BanCardForCurrentPlayerPurchase(gameState);
             }
@@ -586,7 +586,7 @@ namespace Program
 
         public override Card ChooseCardToPlayFirst(GameState gameState, Card card1, Card card2)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.ChooseCardToPlayFirst(gameState, card1, card2);
             }
@@ -596,7 +596,7 @@ namespace Program
 
         public override Card GetCardFromSupplyToEmbargo(GameState gameState)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromSupplyToEmbargo(gameState);
             }
@@ -606,7 +606,7 @@ namespace Program
 
         public override Card GetCardFromSupplyToPlay(GameState gameState, CardPredicate acceptableCard)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromSupplyToPlay(gameState, acceptableCard);
             }
@@ -616,7 +616,7 @@ namespace Program
 
         public override Card GuessCardTopOfDeck(GameState gameState)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GuessCardTopOfDeck(gameState);
             }
@@ -626,7 +626,7 @@ namespace Program
 
         public override Card NameACard(GameState gameState)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.NameACard(gameState);
             }
@@ -634,19 +634,19 @@ namespace Program
             return base.NameACard(gameState);
         }        
 
-        public override Card GetCardFromPlayToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        public override Card GetCardFromPlayToTopDeckDuringCleanup(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardBeingCleanedUp(gameState))
             {
-                return this.defaultCardResponses.GetCardFromPlayToTopDeck(gameState, acceptableCard, isOptional);
+                return this.defaultCardResponses.GetCardFromPlayToTopDeckDuringCleanup(gameState, acceptableCard, isOptional);
             }
 
-            return base.GetCardFromPlayToTopDeck(gameState, acceptableCard, isOptional);
+            return base.GetCardFromPlayToTopDeckDuringCleanup(gameState, acceptableCard, isOptional);
         }
 
         public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromRevealedCardsToTopDeck(gameState);
             }
@@ -657,7 +657,7 @@ namespace Program
 
         public override Card GetCardFromHandToDeferToNextTurn(GameState gameState)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromHandToDeferToNextTurn(gameState);
             }
@@ -667,7 +667,7 @@ namespace Program
 
         public override Card GetCardFromHandToIsland(GameState gameState)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromHandToIsland(gameState);
             }
@@ -677,7 +677,7 @@ namespace Program
 
         public override Card GetCardFromHandToPassLeft(GameState gameState)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromHandToPassLeft(gameState);
             }
@@ -687,7 +687,7 @@ namespace Program
 
         public override Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetCardFromHandToReveal(gameState, acceptableCard);
             }
@@ -697,7 +697,7 @@ namespace Program
 
         public override int GetNumberOfCoppersToPutInHandForCountingHouse(GameState gameState, int maxNumber)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.GetNumberOfCoppersToPutInHandForCountingHouse(gameState, maxNumber);
             }
@@ -727,7 +727,7 @@ namespace Program
 
         public override bool ShouldPutCardInHand(GameState gameState, Card card)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.ShouldPutCardInHand(gameState, card);
             }
@@ -737,7 +737,7 @@ namespace Program
 
         public override bool ShouldPutDeckInDiscard(GameState gameState)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.ShouldPutDeckInDiscard(gameState);
             }
@@ -757,7 +757,7 @@ namespace Program
 
         public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
         {
-            if (this.defaultCardResponses.ShouldDeferForCard(gameState))
+            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.ChooseBetween(gameState, acceptableChoice);
             }

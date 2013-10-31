@@ -500,7 +500,7 @@ namespace Dominion.CardTypes
 
         private new void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RequestPlayerTopDeckCardsFromPlay(gameState,
+            currentPlayer.RequestPlayerTopDeckCardFromPlay(gameState,
                 acceptableCard => acceptableCard.isAction,
                 isOptional: true);
         }

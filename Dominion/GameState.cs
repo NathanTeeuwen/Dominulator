@@ -363,11 +363,13 @@ namespace Dominion
             currentPlayer.EnterPhase(PlayPhase.Cleanup);
 
             if (currentPlayer.ownsCardThatHasSpecializedCleanupAtStartOfCleanup)
-            {
+            {                
                 currentPlayer.cardsInPlayAtBeginningOfCleanupPhase.CopyFrom(currentPlayer.cardsPlayed);
                 foreach (Card cardInPlay in currentPlayer.cardsInPlayAtBeginningOfCleanupPhase)
                 {
+                    currentPlayer.cardBeingCleanedUp = cardInPlay;
                     cardInPlay.DoSpecializedCleanupAtStartOfCleanup(currentPlayer, this);
+                    currentPlayer.cardBeingCleanedUp = null;
                 }
                 currentPlayer.cardsInPlayAtBeginningOfCleanupPhase.Clear();
             }

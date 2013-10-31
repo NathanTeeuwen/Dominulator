@@ -145,8 +145,10 @@ namespace Dominion.CardTypes
 
         private new void DoSpecializedCleanupAtStartOfCleanup(PlayerState currentPlayer, GameState gameState)
         {
-            // TODO
-            throw new NotImplementedException();
+            if (currentPlayer.cardsPlayed.CountWhere(card => card.isAction == true) <= 2)
+            {
+                currentPlayer.RequestPlayerTopDeckCardFromCleanup(this, gameState);                
+            }
         }
     }
 }

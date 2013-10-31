@@ -15,11 +15,11 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
            
-            ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames:1000);
+            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Treasury, cardCount:4), Strategies.BigMoneyWithCard.Player(Cards.Scheme), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames:1000, shouldParallel:false);
             //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:10);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();                        
-            new WebService().Run();
+            //new WebService().Run();
 
             stopwatch.Stop();
 
@@ -187,7 +187,6 @@ namespace Program
             Cards.PearlDiver,
             Cards.PirateShip,
             Cards.Scavenger,
-            Cards.Scheme,
             Cards.Scout,
             Cards.SpiceMerchant,
             Cards.Squire,            
@@ -197,8 +196,7 @@ namespace Program
             Cards.Tournament,            
             Cards.Vault,            
 
-            // unimplemented cards.
-            Cards.WalledVillage,
+            // unimplemented cards.            
             Cards.Knights,
             Cards.Stash,      
             Cards.BandOfMisfits,

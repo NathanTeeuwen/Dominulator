@@ -20,7 +20,7 @@ namespace Dominion
         Card GuessCardTopOfDeck(GameState gameState);
         Card NameACard(GameState gameState);
         Card GetCardFromTrashToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional);        
-        Card GetCardFromPlayToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional);
+        Card GetCardFromPlayToTopDeckDuringCleanup(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Card GetCardFromDiscardToTopDeck(GameState gameState, bool isOptional);
         Card GetCardFromRevealedCardsToTopDeck(GameState gameState);
         Card GetCardFromRevealedCardsToTrash(GameState gameState, CardPredicate acceptableCard);
@@ -193,11 +193,11 @@ namespace Dominion
             return result;
         }
 
-        public Card GetCardFromPlayToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        public Card GetCardFromPlayToTopDeckDuringCleanup(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
             var saved = gameState.self;
             gameState.self = this.self;
-            var result = this.playerAction.GetCardFromPlayToTopDeck(gameState, acceptableCard, isOptional);
+            var result = this.playerAction.GetCardFromPlayToTopDeckDuringCleanup(gameState, acceptableCard, isOptional);
             gameState.self = saved;
             return result;
         }
