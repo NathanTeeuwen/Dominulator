@@ -7,7 +7,72 @@ using System.Web.Script.Serialization;
 using Dominion;
 
 namespace Program
-{    
+{
+    static class GoogleChartsHelper
+    {
+        public static object GetLineGraphOptions(            
+            string title,
+            string xAxisLabel,
+            string seriesLabel,
+            int[] xAxis,
+            float[] seriesData)
+        {
+            return GetLineGraphOptions(title, xAxisLabel, new string[] { seriesLabel }, xAxis, new float[][] { seriesData });
+        }
+
+        public static object GetLineGraphOptions(            
+            string title,
+            string xAxisLabel,
+            string[] seriesLabels,
+            int[] xAxis,
+            float[][] seriesData)
+        {
+            var data = new List<object>();
+
+            var labels = new List<string>();
+            labels.Add(xAxisLabel);
+            foreach (string label in seriesLabels)
+                labels.Add(label);
+
+            int numberOfDataPoints = seriesData[0].Length;
+            data.Add(labels);
+            for (int index = 0; index < numberOfDataPoints; ++index)
+            {
+                var row = new List<object>();
+                row.Add(xAxis[index]);
+                for (int i = 0; i < seriesData.Length; ++i)
+                {
+                    row.Add(seriesData[i][index]);
+                }
+                data.Add(row);
+            }
+
+            var options = new Dictionary<string, object>();
+            options.Add("title", "Point Spread");
+            options.Add("hAxis", GetHAxisOptions(xAxis));
+
+            var result = new Dictionary<string, object>();
+            result.Add("data", data);
+            result.Add("options", options);
+            result.Add("type", "line");
+            
+            return result;
+        }
+
+        public static object GetHAxisOptions(int[] xAxis)
+        {
+            int multiplesOfFifteen = (xAxis.Length + 14)/15;
+
+            var gridLines = new Dictionary<string, object>();
+            gridLines.Add("count", xAxis.Length / multiplesOfFifteen);
+
+            var hAxis = new Dictionary<string, object>();
+            hAxis.Add("gridlines", gridLines);
+
+            return hAxis;
+        }
+    }
+
     interface IRequestWithHtmlResponse
     {
         string GetResponse(WebService service);
@@ -79,7 +144,7 @@ namespace Program
     }
 
     [Serializable]
-    public class GetGameBreakdown
+    public class GameBreakdown
         : ComparisonDescription, 
           IRequestWithJsonResponse
     {
@@ -110,6 +175,25 @@ namespace Program
         }
     }
 
+    public class PointSpread
+     : ComparisonDescription, 
+       IRequestWithJsonResponse
+    {
+        public object GetResponse(WebService service)
+        {
+            StrategyComparisonResults comparisonResults = service.GetResultsFor(this);
+
+            var options = GoogleChartsHelper.GetLineGraphOptions(
+                "Point Spread",
+                "Score", 
+                "Percentage",
+                comparisonResults.pointSpreadHistogramData.GetXAxis(),
+                comparisonResults.pointSpreadHistogramData.GetYAxis());
+         
+            return options;
+        }
+    }
+
     [Serializable]
     public class GetAvailableStrategies
         : IRequestWithJsonResponse
@@ -122,30 +206,34 @@ namespace Program
 
     [Serializable]
     public class GetAvailableGraphs
-        : IRequestWithJsonResponse
+        : ComparisonDescription, 
+          IRequestWithJsonResponse
     {
         public object GetResponse(WebService service)
         {
             return new string[]
             {
-                typeof(GetGameBreakdown).Name
+                typeof(GameBreakdown).Name,
+                typeof(PointSpread).Name
             };
         }
     }
 
     public class WebService
     {
-        static string baseUrl = "http://localhost:8081/dominion/";
-        static string defaultPage = HtmlRenderer.GetEmbeddedContent("Dominulator.html");
+        static string baseUrl = "http://localhost:8081/dominion/";        
         static JavaScriptSerializer js = new JavaScriptSerializer();
         static Type[] services = new Type[]
-        {
-            typeof(GetGameBreakdown),
+        {            
             typeof(GetAvailableStrategies),
             typeof(StrategyComparisonRequest),
             typeof(GetAvailableGraphs),
+            // graphs
+            typeof(GameBreakdown),
+            typeof(PointSpread)
         };
 
+        private string defaultPage = HtmlRenderer.GetEmbeddedContent("Dominulator.html");
         private Dictionary<ComparisonDescription, StrategyComparisonResults> resultsCache = new Dictionary<ComparisonDescription, StrategyComparisonResults>();
         private Dictionary<string, Type> mapNameToServiceType;
 
