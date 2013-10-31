@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
+using Dominion;
 
 namespace Program
 {    
@@ -26,6 +27,27 @@ namespace Program
 
         public string GetResponse()
         {
+            /*
+            GameConfigBuilder builder = new GameConfigBuilder();
+            PlayerAction playerAction1;
+            PlayerAction playerAction2;
+            PlayerAction.SetKingdomCards(builder, player1, player2);
+
+            builder.useColonyAndPlatinum = useColonyAndPlatinum;
+            builder.useShelters = useShelters;
+            builder.CardSplit = split;
+
+            if (startingDeckPerPlayer != null)
+                builder.SetStartingDeckPerPlayer(startingDeckPerPlayer);
+
+            var gameConfig = builder.ToGameConfig();            
+
+            var generator = new HtmlReportGenerator(
+                gameConfig,
+                firstPlayerAdvantage:false,
+                numberOfGames:1000,
+                new PlayerAction[] { playerAction1, playerAction2},
+            */
             return this.player1 + " vs " + this.player2;
         }
     }
@@ -90,30 +112,24 @@ namespace Program
                     if (unserializedObject is IRequestWithHtmlResponse)
                     {
                         responseText = ((IRequestWithHtmlResponse)unserializedObject).GetResponse();
-                        //These headers to allow all browsers to get the response
-                        response.Headers.Add("Access-Control-Allow-Credentials", "true");
-                        response.Headers.Add("Access-Control-Allow-Origin", "*");
-                        response.Headers.Add("Access-Control-Origin", "*");
-                        response.ContentType = "text/html";
-                        response.ContentEncoding = System.Text.UTF8Encoding.UTF8;
                     }
-
-                    if (unserializedObject is IRequestWithJsonResponse)
+                    else if (unserializedObject is IRequestWithJsonResponse)
                     {
                         object o = ((IRequestWithJsonResponse)unserializedObject).GetResponse();
                         var serialized = js.Serialize(o);
-                        responseText = serialized;
-                        //These headers to allow all browsers to get the response
-                        response.Headers.Add("Access-Control-Allow-Credentials", "true");
-                        response.Headers.Add("Access-Control-Allow-Origin", "*");
-                        response.Headers.Add("Access-Control-Origin", "*");
-                        response.ContentType = "text/html";
-                        response.ContentEncoding = System.Text.UTF8Encoding.UTF8;
+                        responseText = serialized;                        
                     }
-                }
+                }                
 
                 if (responseText != null)
                 {
+                    //These headers to allow all browsers to get the response
+                    response.Headers.Add("Access-Control-Allow-Credentials", "true");
+                    response.Headers.Add("Access-Control-Allow-Origin", "*");
+                    response.Headers.Add("Access-Control-Origin", "*");
+                    response.ContentType = "text/html";
+                    response.ContentEncoding = System.Text.UTF8Encoding.UTF8;
+
                     response.StatusCode = 200;
                     response.StatusDescription = "OK";
                     byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseText);

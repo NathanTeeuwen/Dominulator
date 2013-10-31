@@ -107,6 +107,7 @@
     <Compile Include="Strategies\RatsWanderingMinstrelWatchtowerArmory.cs" />
     <Compile Include="Strategies\RebuildAdvanced.cs" />
     <Compile Include="Strategies\RebuildDuke.cs" />
+    <Compile Include="StrategyComparison.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\BigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\MutateBigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\CardAcceptanceDescription.cs" />

@@ -66,7 +66,7 @@ namespace Program.Simulations
                 gameConfig,
                 firstPlayerAdvantage: true,                
                 numberOfGames: gameCount,
-                createGameLog: new Program.CreateGameLog(gameLogFactory.CreateGameLog));
+                createGameLog: new CreateGameLog(gameLogFactory.CreateGameLog));
 
             System.Console.WriteLine("Curses Split was Uneven {0}%", gameLogFactory.UnEvenSplitPercent);
             System.Console.WriteLine();

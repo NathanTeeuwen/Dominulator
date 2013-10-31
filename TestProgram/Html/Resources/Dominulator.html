@@ -8,14 +8,21 @@
 
 <script type="text/javascript">
 
+function GetSelectedText(selectObject)
+{
+   alert(selectObject);
+   return selectObject.options[selectObject.selectedIndex].text;
+}
+
 PlayGame = function() {
 
-    var resultDiv = $("#resultDivContainer");
-
+    var resultDiv = $("#resultDivContainer");    
+    var player1Strat = $("#player1Strategy :selected").text();
+    var player2Strat = $("#player2Strategy :selected").text();    
     $.ajax({
         url: "http://localhost:8081/dominion/StrategyComparisonRequest",
         type: "POST",
-        data: JSON.stringify({ player1:"BigMoney", player2:"Ultimate"}),
+        data: JSON.stringify({ player1:player1Strat, player2:player2Strat}),
         dataType: "html",        
         success: function (result) {        
             switch (result) {
@@ -209,7 +216,6 @@ GetAvailableStrategies = function(id) {
 <body>
 
 <h1>Dominulator</h1>
-
 
 <br>
 <label>Player1: </label>

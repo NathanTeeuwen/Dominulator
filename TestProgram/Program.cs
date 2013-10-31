@@ -16,10 +16,10 @@ namespace Program
             stopwatch.Start();
            
             //ComparePlayers(Strategies.LookoutSalvagerLibraryHighwayFestival.Player(), Strategies.BigMoneySingleWitch.Player(), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames:1000);
-            //CompareStrategyVsAllKnownStrategies(Strategies.MountebankMonumentHamletVineyard.Player(), numberOfGames: 1000, createHtmlReport: true, debugLogs: true);
+            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:10);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();                        
-            new WebService().Run();
+            //new WebService().Run();
 
             stopwatch.Stop();
 
@@ -79,7 +79,7 @@ namespace Program
         {
             var resultList = new List<System.Tuple<string, double>>();
 
-            foreach (PlayerAction otherPlayerAction in AllBigMoneyWithCard())
+            foreach (PlayerAction otherPlayerAction in AllBuiltInStrategies())
             {                
                 double percentDiff = ComparePlayers(
                     playerAction, 
@@ -219,9 +219,7 @@ namespace Program
         static string GetOuputFilename(string filename)
         {
             return "..\\..\\Results\\" + filename;
-        }
-
-        public delegate IGameLog CreateGameLog();
+        }        
 
         static int totalGameCount = 0;
 
@@ -236,8 +234,7 @@ namespace Program
             bool shouldParallel = true,
             bool showVerboseScore = true,
             bool showCompactScore = false,
-            bool showDistribution = false,
-            bool showPlayer2Wins = false,
+            bool showDistribution = false,            
             bool createHtmlReport = true,            
             int numberOfGames = 1000,
             int logGameCount = 10,
@@ -265,8 +262,7 @@ namespace Program
                 shouldParallel: shouldParallel,
                 showVerboseScore: showVerboseScore,
                 showCompactScore: showCompactScore,
-                showDistribution: showDistribution,
-                showPlayer2Wins: showPlayer2Wins,
+                showDistribution: showDistribution,                
                 createHtmlReport: createHtmlReport,
                 logGameCount: logGameCount,
                 debugLogs: debugLogs,
@@ -282,134 +278,29 @@ namespace Program
             bool shouldParallel = true,
             bool showVerboseScore = true,
             bool showCompactScore = false, 
-            bool showDistribution = false,            
-            bool showPlayer2Wins = false,
+            bool showDistribution = false,                        
             bool createHtmlReport = true,            
             int numberOfGames = 1000, 
             int logGameCount = 100,            
             bool debugLogs = false,
             CreateGameLog createGameLog = null)
         {
-            PlayerAction[] playerActions = new PlayerAction[] { player1, player2 };
-            int[] originalPositions = new int[] { 0, 1 };
-            int[] swappedPlayerPositions = new int[] { 1, 0 };
-            int[] winnerCount = new int[2];
-            int tieCount = 0;
-
-            var statGathererGameLog = createHtmlReport ? new StatsPerTurnGameLog(2, gameConfig.cardGameSubset) : null;            
-
-            var pointSpreadHistogramData = new HistogramData();
-            var gameEndOnTurnHistogramData = new HistogramData();
-            int maxTurnNumber = -1;
-
-            Action<int> loopBody = delegate(int gameCount)
-            {
-                System.Threading.Interlocked.Increment(ref totalGameCount);
-                using (IndentedTextWriter textWriter = gameCount < logGameCount ? GetGameLogWriterForIteration(player1, player2, gameCount) : null)
-                using (IndentedTextWriter debugWriter = debugLogs && gameCount < logGameCount ? GetDebugLogWriterForIteration(player1, player2, gameCount) : null)
-                {
-                    var gameLogs = new List<IGameLog>();
-                    if (createHtmlReport)
-                    {
-                        gameLogs.Add(statGathererGameLog);
-                    }
-                    if (createGameLog != null)
-                    {
-                        gameLogs.Add(createGameLog());
-                    }
-                    if (textWriter != null)
-                    {
-                        var humanReadableGameLog = new HumanReadableGameLog(textWriter);
-                        gameLogs.Add(humanReadableGameLog);
-                        var gainSequenceGameLog = new GainSequenceGameLog(textWriter);
-                        gameLogs.Add(gainSequenceGameLog);
-                    }
-                    if (debugWriter != null)
-                    {
-                        var debugLog = new DebugGameLog(debugWriter);
-                        gameLogs.Add(debugLog);
-                        var gainSequenceGameLog = new GainSequenceGameLog(debugWriter);
-                        gameLogs.Add(gainSequenceGameLog);
-                    }
-
-                    var gameLogMultiplexer = new GameLogMultiplexer(gameLogs.ToArray());
-
-                    // swap order every other game
-                    bool swappedOrder = !firstPlayerAdvantage && (gameCount % 2 == 1);
-
-                    int[] playedPositions = swappedOrder ? swappedPlayerPositions : originalPositions;                    
-
-                    Random random = new Random(gameCount);
-                    using (Game game = new Game(random, gameConfig, gameLogMultiplexer))
-                    {
-
-                        GameState gameState = new GameState(
-                            playerActions,
-                            playedPositions,
-                            game);
-
-                        gameState.PlayGameToEnd();
-                        PlayerState[] winners = gameState.WinningPlayers;
-
-                        int player1Score = gameState.players.OriginalPlayerOrder[playedPositions[0]].TotalScore();
-                        int player2Score = gameState.players.OriginalPlayerOrder[playedPositions[1]].TotalScore();
-                        int scoreDifference = player2Score - player1Score;
-                        pointSpreadHistogramData.AddOneToBucket(scoreDifference);
-                        gameEndOnTurnHistogramData.AddOneToBucket(gameState.players.CurrentPlayer.TurnNumber);                        
-
-                        lock (winnerCount)
-                        {
-                            maxTurnNumber = Math.Max(gameState.players.CurrentPlayer.TurnNumber, maxTurnNumber);
-                            if (winners.Length == 1)
-                            {
-                                int winningPlayerIndex = winners[0].Actions == player1 ? 0 : 1;
-                                winnerCount[winningPlayerIndex]++;
-
-                                if (winningPlayerIndex == 1 && showPlayer2Wins)
-                                {
-                                    System.Console.WriteLine("Player 2 won game {0}. ", gameCount);
-                                }
-                            }
-                            else
-                            {
-                                tieCount++;
-                            }
-                        }
-                    }
-                }
-            };
-
-            if (shouldParallel)
-            {
-                Parallel.ForEach(Enumerable.Range(0, numberOfGames), loopBody);
-            }
-            else
-            {
-                for (int gameCount = 0; gameCount < numberOfGames; ++gameCount)
-                    loopBody(gameCount);
-            }
-
-            gameEndOnTurnHistogramData.InitializeAllBucketsUpTo(maxTurnNumber);
+            var strategyComparison = new StrategyComparison(player1, player2, gameConfig, firstPlayerAdvantage, numberOfGames);
+            var results = strategyComparison.ComparePlayers(
+                gameIndex => gameIndex < logGameCount ? GetGameLogWriterForIteration(player1, player2, gameIndex) : null,
+                gameIndex => debugLogs && gameIndex < logGameCount ? GetDebugLogWriterForIteration(player1, player2, gameIndex) : null,
+                shouldParallel: shouldParallel,
+                gatherStats: createHtmlReport,
+                createGameLog: createGameLog);               
 
             if (showVerboseScore)
             {
-                for (int index = 0; index < winnerCount.Length; ++index)
-                {
-                    System.Console.WriteLine("{1}% win for {0}", playerActions[index].name, PlayerWinPercent(index, winnerCount, numberOfGames));
-                }
-                if (tieCount > 0)
-                {
-                    System.Console.WriteLine("{0}% there is a tie.", TiePercent(tieCount, numberOfGames));
-                }
-                System.Console.WriteLine();
+                results.WriteVerboseScore(System.Console.Out);                
             }
 
             if (showCompactScore)
             {
-                System.Console.WriteLine("{0}, {1}, {2}",
-                    PlayerWinPercent(0, winnerCount, numberOfGames),
-                    PlayerWinPercent(1, winnerCount, numberOfGames),
-                    TiePercent(tieCount, numberOfGames));
+                results.WriteCompactScore(System.Console.Out);                
             }
 
             if (showDistribution)
@@ -417,7 +308,7 @@ namespace Program
                 System.Console.WriteLine("");
                 System.Console.WriteLine("Player 1 Score Delta distribution");
                 System.Console.WriteLine("=================================");
-                pointSpreadHistogramData.WriteBuckets(System.Console.Out);
+                results.pointSpreadHistogramData.WriteBuckets(System.Console.Out);
             }            
 
             if (createHtmlReport)
@@ -426,16 +317,7 @@ namespace Program
                 // write out HTML report summary
                 var thread = new System.Threading.Thread( delegate()
                 {
-                    var generator = new HtmlReportGenerator(                        
-                        gameConfig,
-                        firstPlayerAdvantage,
-                        numberOfGames,
-                        playerActions,                        
-                        winnerCount,
-                        tieCount,
-                        statGathererGameLog,
-                        pointSpreadHistogramData,
-                        gameEndOnTurnHistogramData);
+                    var generator = new HtmlReportGenerator(results);
 
                     generator.CreateHtmlReport(GetOuputFilename(player1.PlayerName + " VS " + player2.PlayerName + ".html"));
                     System.Threading.Interlocked.Decrement(ref outstandingTasks);
@@ -443,8 +325,8 @@ namespace Program
                 thread.Start();
             }
 
-            double diff = PlayerWinPercent(0, winnerCount, numberOfGames) - PlayerWinPercent(1, winnerCount, numberOfGames);
-            return diff;
+            
+            return results.WinDifference;
         }
 
         private static int outstandingTasks = 0;
@@ -455,16 +337,6 @@ namespace Program
             {
                 System.Threading.Thread.Sleep(1);
             }
-        }
-        
-        public static double TiePercent(int tieCount, int numberOfGames)
-        {
-            return tieCount / (double)numberOfGames * 100;
-        }
-
-        public static double PlayerWinPercent(int player, int[] winnerCount, int numberOfGames)
-        {
-            return winnerCount[player] / (double)numberOfGames * 100;
-        }
+        }                   
     }            
 }

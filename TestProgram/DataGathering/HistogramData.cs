@@ -14,16 +14,12 @@ namespace Program
         Dictionary<int, int> mapBucketToCount = new Dictionary<int, int>();
 
         public void AddOneToBucket(int bucket)
-        {
-            lock (this.mapBucketToCount)
-            {
-                this.totalCount++;
-
-                int value = 0;
-                this.mapBucketToCount.TryGetValue(bucket, out value);
-                value += 1;
-                this.mapBucketToCount[bucket] = value;
-            }
+        {            
+            this.totalCount++;
+            int value = 0;
+            this.mapBucketToCount.TryGetValue(bucket, out value);
+            value += 1;
+            this.mapBucketToCount[bucket] = value;            
         }
 
         public void InitializeAllBucketsUpTo(int number)
