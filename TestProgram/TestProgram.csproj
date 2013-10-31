@@ -182,6 +182,8 @@
     <EmbeddedResource Include="Html\Resources\jquery.simplePagination.js" />
     <EmbeddedResource Include="Html\Resources\simplePagination.css" />
     <EmbeddedResource Include="Html\Resources\DefaultStyles.css" />
+    <EmbeddedResource Include="Html\Resources\CompletionComboBox.css" />
+    <EmbeddedResource Include="Html\Resources\CompletionComboBox.js" />
     <Content Include="Results\GameLog.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

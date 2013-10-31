@@ -194,6 +194,22 @@ namespace Program
         }
     }
 
+    public class GetGameLog
+     : ComparisonDescription,
+       IRequestWithJsonResponse
+    {
+        public int gameNumber { get; set; }
+        
+        public object GetResponse(WebService service)
+        {
+            StrategyComparisonResults comparisonResults = service.GetResultsFor(this);
+
+            string result = comparisonResults.comparison.GetHumanReadableGameLog(gameNumber-1);
+
+            return result;
+        }
+    }
+
     [Serializable]
     public class GetAvailableStrategies
         : IRequestWithJsonResponse
@@ -221,19 +237,22 @@ namespace Program
 
     public class WebService
     {
-        static string baseUrl = "http://localhost:8081/dominion/";        
+        static string baseUrl = "http://localhost:8081/dominion/";
+        static string resourcePrefix = baseUrl + "resources/";
         static JavaScriptSerializer js = new JavaScriptSerializer();
         static Type[] services = new Type[]
         {            
             typeof(GetAvailableStrategies),
             typeof(StrategyComparisonRequest),
             typeof(GetAvailableGraphs),
+            typeof(GetGameLog),
             // graphs
             typeof(GameBreakdown),
             typeof(PointSpread)
         };
 
-        private string defaultPage = HtmlRenderer.GetEmbeddedContent("Dominulator.html");
+        private string defaultPage = HtmlRenderer.GetEmbeddedContent("Dominulator.html");        
+        
         private Dictionary<ComparisonDescription, StrategyComparisonResults> resultsCache = new Dictionary<ComparisonDescription, StrategyComparisonResults>();
         private Dictionary<string, Type> mapNameToServiceType;
 
@@ -299,10 +318,16 @@ namespace Program
                     responseText = defaultPage;
                     response.ContentType = "text/html";
                 }
+                else if (urlString.StartsWith(WebService.resourcePrefix))
+                {
+                    string resourceName = urlString.Remove(0, WebService.resourcePrefix.Length);
+                    responseText = HtmlRenderer.GetEmbeddedContent(resourceName);
+                    response.ContentType = "text/css";
+                }
                 else if (urlString.StartsWith(baseUrl))
                 {
                     var streamReader = new System.IO.StreamReader(request.InputStream, request.ContentEncoding);
-                    var jsonRequest = streamReader.ReadToEnd();                                       
+                    var jsonRequest = streamReader.ReadToEnd();
 
                     string requestedPage = urlString.Remove(0, baseUrl.Length);
                     object unserializedObject = null;
@@ -315,7 +340,7 @@ namespace Program
                         {
                             unserializedObject = Activator.CreateInstance(serviceType);
                         }
-                    }                   
+                    }
 
                     if (unserializedObject is IRequestWithHtmlResponse)
                     {
@@ -325,8 +350,9 @@ namespace Program
                     {
                         object o = ((IRequestWithJsonResponse)unserializedObject).GetResponse(this);
                         var serialized = js.Serialize(o);
-                        responseText = serialized;                        
+                        responseText = serialized;
                     }
+                    response.ContentType = "text/html";
                 }                
 
                 if (responseText != null)
@@ -334,8 +360,7 @@ namespace Program
                     //These headers to allow all browsers to get the response
                     response.Headers.Add("Access-Control-Allow-Credentials", "true");
                     response.Headers.Add("Access-Control-Allow-Origin", "*");
-                    response.Headers.Add("Access-Control-Origin", "*");
-                    response.ContentType = "text/html";
+                    response.Headers.Add("Access-Control-Origin", "*");    
                     response.ContentEncoding = System.Text.UTF8Encoding.UTF8;
 
                     response.StatusCode = 200;
