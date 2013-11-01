@@ -25,6 +25,9 @@ namespace Program
             }
             
             var loadedAssembly = LoadAllCustomStrategies();
+            if (loadedAssembly == null)
+                return false;
+
             this.playerActions = GetAllPlayerActions(loadedAssembly);
 
             return true;
@@ -134,7 +137,7 @@ namespace Program
             CompilerParams.GenerateExecutable = false;
             CompilerParams.CompilerOptions = "/optimize";            
 
-            string[] references = { "System.dll", "TestProgram.cs.exe", "Dominion.dll", "System.Core.dll", "System.Data.Dll" };
+            string[] references = { "System.dll", "Dominion.dll", "System.Core.dll", "System.Data.Dll", "Dominion.Strategy.dll" };
             CompilerParams.ReferencedAssemblies.AddRange(references);
 
             CSharpCodeProvider provider = new CSharpCodeProvider();

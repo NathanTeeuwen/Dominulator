@@ -46,44 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataGathering\StrategyComparison.cs" />
     <Compile Include="Resources.cs" />
-    <Compile Include="StrategyDefinition\CardAcceptance.cs" />
     <Compile Include="DataGathering\HistogramData.cs" />
     <Compile Include="DataGathering\PerTurnPlayerCounters.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Scheme.cs" />
-    <Compile Include="DefaultPlayRules\Cards\WalledViillage.cs" />
-    <Compile Include="DefaultPlayRules\Cards\ScryingPool.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Treasury.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Nobles.cs" />
-    <Compile Include="StrategyDefinition\DefaultStrategies.cs" />
-    <Compile Include="DefaultPlayRules\CardOverrides.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Cartographer.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Catacombs.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Chancellor.cs" />
-    <Compile Include="DefaultPlayRules\CompareCardByFirstToGain.cs" />
-    <Compile Include="DefaultPlayRules\CompareCardFirstToTrash.cs" />
-    <Compile Include="DefaultPlayRules\CompareCardForBanningForDrawIntoHand.cs" />
-    <Compile Include="DefaultPlayRules\CompareCardFirstToDiscard.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Alchemist.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Ambassador.cs" />
-    <Compile Include="DefaultPlayRules\Cards\BandOfMisfits.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Count.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Golem.cs" />
-    <Compile Include="DefaultPlayRules\Cards\HorseTraders.cs" />
-    <Compile Include="DefaultPlayRules\Cards\IllGottenGains.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Library.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Lookout.cs" />
-    <Compile Include="DefaultPlayRules\Cards\MarketSquare.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Rebuild.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Trader.cs" />
-    <Compile Include="DefaultPlayRules\Cards\WatchTower.cs" />
     <Compile Include="DynamicStrategyLoader.cs" />
     <Compile Include="Html\HtmlRenderer.cs" />
     <Compile Include="Html\HtmlReportGenerator.cs" />
     <Compile Include="Html\WebService.cs" />
     <Compile Include="Kingdoms\ShouldMounteBankHoardOrVineyard.cs" />
     <Compile Include="Kingdoms\ShouldRemakeOrHorseTradersIntoSoothayer.cs" />
-    <Compile Include="StrategyDefinition\PlayerActionFromCardResponses.cs" />
     <Compile Include="Simulations\DarkAgesBigMoney.cs" />
     <Compile Include="Simulations\EffectOfEstateOnRebuild.cs" />
     <Compile Include="Simulations\FeodumVsDuke.cs" />
@@ -93,8 +65,8 @@
     <Compile Include="Simulations\GuildsResults.cs" />
     <Compile Include="Simulations\HighestWinRateVsBigMoney.cs" />
     <Compile Include="Simulations\RebuildResults.cs" />
-    <Compile Include="StrategyDefinition\StartingDeckBuilder.cs" />
     <Compile Include="DataGathering\StatsPerTurnGameLog.cs" />
+    <Compile Include="StartingDeckBuilder.cs" />
     <Compile Include="Strategies\BigMoneyCultist.cs" />
     <Compile Include="Strategies\BigMoneyDelayed.cs" />
     <Compile Include="Strategies\BigMoneyDoubleSmithy.cs" />
@@ -111,23 +83,13 @@
     <Compile Include="Strategies\RatsWanderingMinstrelWatchtowerArmory.cs" />
     <Compile Include="Strategies\RebuildAdvanced.cs" />
     <Compile Include="Strategies\RebuildDuke.cs" />
-    <Compile Include="StrategyDefinition\StrategyComparison.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\BigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\MutateBigMoneyWithCardDescription.cs" />
-    <Compile Include="StrategyOptimizer\PickByPriorityDescription\CardAcceptanceDescription.cs" />
-    <Compile Include="StrategyDefinition\CardPickByBuilderOrder.cs" />
-    <Compile Include="StrategyDefinition\CardPickByPriority.cs" />
-    <Compile Include="StrategyDefinition\CardPickConcatenator.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\ComparePickByPriorityDescription.cs" />
-    <Compile Include="StrategyOptimizer\PickByPriorityDescription\Comparison.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\CompareBigMoneyWithCardDescription.cs" />
-    <Compile Include="StrategyOptimizer\PickByPriorityDescription\CountSource.cs" />
     <Compile Include="StrategyOptimizer\GeneticAlgorithm.cs" />
-    <Compile Include="StrategyDefinition\ICardPicker.cs" />
-    <Compile Include="StrategyOptimizer\PickByPriorityDescription\MatchDescription.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\MutatePickByPriorityDescription.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\PickByPriorityDescription.cs" />
-    <Compile Include="StrategyDefinition\PlayerAction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Simulations\UnevenCurseSplit.cs" />
@@ -165,14 +127,16 @@
     <Compile Include="Strategies\FishingVillageLibraryCountPoorHouse.cs" />
     <Compile Include="Strategies\Lookout.cs" />
     <Compile Include="Strategies\RatsUpgrade.cs" />
-    <Compile Include="StrategyDefinition\Strategy.cs" />
     <Compile Include="StrategyOptimizer\StrategyOptimizer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <Compile Include="DefaultPlayRules\Cards\MysticAndWishingWell.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj">
+      <Project>{6816a653-b44f-4614-b228-8c70d6747ca0}</Project>
+      <Name>Dominion.Strategy</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Dominion\Dominion.csproj">
       <Project>{d4a4d420-486e-489d-9db6-7fcba7d63359}</Project>
       <Name>Dominion</Name>

@@ -5,8 +5,8 @@ namespace Program
 {
     public class CardAcceptanceDescription
     {
-        internal readonly Card card;
-        internal readonly MatchDescription[] matchDescriptions;
+        public readonly Card card;
+        public readonly MatchDescription[] matchDescriptions;
 
         public CardAcceptanceDescription(Card card, MatchDescription[] matchDescriptions)
         {

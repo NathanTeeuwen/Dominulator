@@ -13,17 +13,17 @@ namespace Program
     public class PlayerAction
         : UnimplementedPlayerAction
     {
-        internal readonly string name;        
+        public readonly string name;
 
-        internal readonly ICardPicker purchaseOrder;
-        internal ICardPicker actionOrder; // readonly
-        internal readonly ICardPicker trashOrder;
-        internal readonly ICardPicker treasurePlayOrder;
-        internal readonly ICardPicker discardOrder;
-        internal bool chooseDefaultActionOnNone;
-        internal readonly ICardPicker gainOrder;
+        public readonly ICardPicker purchaseOrder;
+        public ICardPicker actionOrder; // readonly
+        public readonly ICardPicker trashOrder;
+        public readonly ICardPicker treasurePlayOrder;
+        public readonly ICardPicker discardOrder;
+        public bool chooseDefaultActionOnNone;
+        public readonly ICardPicker gainOrder;
 
-        internal readonly ICardPicker defaultActionOrder;
+        public readonly ICardPicker defaultActionOrder;
 
         private readonly PlayerActionFromCardResponses defaultCardResponses;
         private readonly MapOfCards<GameStatePlayerActionPredicate> defaultShouldPlay;

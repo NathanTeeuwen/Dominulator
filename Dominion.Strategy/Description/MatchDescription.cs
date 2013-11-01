@@ -11,10 +11,10 @@ namespace Program
     public class MatchDescription
     {
         // e.g. CountAllOwned(Province.card, gameState) < 6
-        internal readonly Card cardType;
-        internal readonly CountSource countSource;
-        internal readonly Comparison comparison;
-        internal int countThreshHold;
+        public readonly Card cardType;
+        public readonly CountSource countSource;
+        public readonly Comparison comparison;
+        public int countThreshHold;
 
         public MatchDescription(Card cardType, CountSource countSource, Comparison comparison, int threshhold)
         {

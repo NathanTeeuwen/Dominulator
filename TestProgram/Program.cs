@@ -11,16 +11,16 @@ namespace Program
     class Program    
     {        
         static void Main()
-        {
-            var stopwatch = new System.Diagnostics.Stopwatch();
-            stopwatch.Start();
-            
+        {                        
             var strategyLoader = new StrategyLoader();
             if (!strategyLoader.Load())
                 return;
+
+            var stopwatch = new System.Diagnostics.Stopwatch();
+            stopwatch.Start();
             
             ComparePlayers(Strategies.BigMoney.Player(), Strategies.BigMoneyDoubleJack.Player(), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames: 1000, shouldParallel: false);
-            //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:10);
+            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:10);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();                                    
 
