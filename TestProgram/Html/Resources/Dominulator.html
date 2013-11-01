@@ -212,26 +212,34 @@ function GetAvailableGraphs(id) {
   </tr>
 </table>
 <br>    
-<button type="button" onclick="ResetGraphArea(); ShowGraphArea();">Play ...</button>
-
-<div id="GraphArea" style="display: none;">
+<button type="button" id="PlayButton" onclick="ResetPlayedArea(); ShowPlayedArea();">Play ...</button>
+<script>    
+      $( "#PlayButton" ).button();    
+</script>
+  
+<div id="PlayedArea" style="display: none;">
   <script type="text/javascript">            
-  function ShowGraphArea()
+  function ShowPlayedArea()
   {
-    document.getElementById('GraphArea').style.display = "inline";
+    document.getElementById('PlayedArea').style.display = "inline";
     GetAvailableGraphs("#selectedGraph");
     PopulateGameLog(1);
     InsertGraph("GameBreakdown");
   }
   
-  function ResetGraphArea()
+  function ResetPlayedArea()
   {
-    document.getElementById('GraphArea').style.display = "none";
+    document.getElementById('PlayedArea').style.display = "none";
     $("#chartsInsertionPoint").empty();
   }
   </script>  
-  <div>
-      <h3>Game Logs</h3>
+  
+  <div id="PlayTabs">
+    <ul>
+      <li><a href="#GraphsTab">Graphs</a></li>
+      <li><a href="#GameLogTab">Game Logs</a></li>      
+    </ul>
+    <div id="GameLogTab">      
       <div id='gameLogPagination' class='pagination'></div>
       <script type='text/javascript'>
         function PopulateGameLog(gameNumber)
@@ -262,19 +270,23 @@ function GetAvailableGraphs(id) {
         });
       </script>
       <textarea id='gameLogTextArea' rows='30' cols='100'></textarea>      
-  </div>
+    </div>
   
-  <div>
-    <label>Add A graph ... </label>    
-    <select id='selectedGraph' onchange='InsertSelectedGraph()'></select>
-    <script type="text/javascript">    
-        $("#selectedGraph").combobox();       
-    </script>
-    <br>
-  </div> 
-  <br>  
-  <div id="chartsInsertionPoint"></div>
-</div>
+    <div id='GraphsTab'>
+      <label>Add A graph ... </label>    
+      <select id='selectedGraph' onchange='InsertSelectedGraph()'></select>
+      <script type="text/javascript">    
+          $("#selectedGraph").combobox();       
+      </script>
+      <br>
+      
+      <div id="chartsInsertionPoint"></div>
+    </div>      
+  </div>
+  <script>
+    $( "#PlayTabs" ).tabs();    
+  </script>
+</div> 
 
 </body>
 </html> 
