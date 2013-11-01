@@ -80,6 +80,7 @@
     <Compile Include="PlayerActionFromCardResponses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategy.cs" />
+    <Compile Include="StrategyTemplates\BigMoneyWithCard.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dominion\Dominion.csproj">

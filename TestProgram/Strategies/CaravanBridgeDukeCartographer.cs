@@ -1,12 +1,10 @@
 ﻿using Dominion;
 using Dominion.Strategy;
-using Dominion.CardTypes;
+using CardTypes = Dominion.CardTypes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Program;
+
 
 namespace Strategies
 {    
@@ -44,7 +42,7 @@ namespace Strategies
 
                 foreach (Card card in revealedCards)
                 {
-                    bool shouldDiscard = card.isVictory || card == Copper.card;
+                    bool shouldDiscard = card.isVictory || card == Cards.Copper;
                     if (!shouldDiscard)
                     {
                         return card;
@@ -68,28 +66,28 @@ namespace Strategies
         private static ICardPicker PurchaseOrder()
         {
             var highPriority = new CardPickByPriority(
-                CardAcceptance.For(Province.card, ShouldBuyProvinceOverDuchyDuke),
-                CardAcceptance.For(Duke.card, gameState => ShouldBuyDukeOverDuchy(gameState) && ShouldBuyDuchyDukeOverPowerUp(gameState)),
-                CardAcceptance.For(Duchy.card, ShouldBuyDuchyDukeOverPowerUp),
-                CardAcceptance.For(Duke.card, ShouldBuyDuchyDukeOverPowerUp),
-                CardAcceptance.For(Estate.card, gameState => CountOfPile(Province.card, gameState) < 2),                    
-                CardAcceptance.For(Duke.card, gameState => ShouldBuyDukeOverDuchy(gameState) && AtEndGame(gameState)),
-                CardAcceptance.For(Duchy.card, AtEndGame),
-                CardAcceptance.For(Duke.card, AtEndGame),                    
-                CardAcceptance.For(Caravan.card, CanDoubleCaravan),
-                CardAcceptance.For(Cartographer.card, gameState => CountAllOwned(Cartographer.card, gameState) < 2),
-                CardAcceptance.For(Gold.card, gameState => gameState.Self.AvailableBuys <= 1));
+                CardAcceptance.For(Cards.Province, ShouldBuyProvinceOverDuchyDuke),
+                CardAcceptance.For(Cards.Duke, gameState => ShouldBuyDukeOverDuchy(gameState) && ShouldBuyDuchyDukeOverPowerUp(gameState)),
+                CardAcceptance.For(Cards.Duchy, ShouldBuyDuchyDukeOverPowerUp),
+                CardAcceptance.For(Cards.Duke, ShouldBuyDuchyDukeOverPowerUp),
+                CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2),
+                CardAcceptance.For(Cards.Duke, gameState => ShouldBuyDukeOverDuchy(gameState) && AtEndGame(gameState)),
+                CardAcceptance.For(Cards.Duchy, AtEndGame),
+                CardAcceptance.For(Cards.Duke, AtEndGame),
+                CardAcceptance.For(Cards.Caravan, CanDoubleCaravan),
+                CardAcceptance.For(Cards.Cartographer, gameState => CountAllOwned(Cards.Cartographer, gameState) < 2),
+                CardAcceptance.For(Cards.Gold, gameState => gameState.Self.AvailableBuys <= 1));
 
             var buildOrder = new CardPickByBuildOrder(
-                CardAcceptance.For(Bridge.card),
-                CardAcceptance.For(Silver.card),
-                CardAcceptance.For(Silver.card),
-                CardAcceptance.For(Bridge.card));
+                CardAcceptance.For(Cards.Bridge),
+                CardAcceptance.For(Cards.Silver),
+                CardAcceptance.For(Cards.Silver),
+                CardAcceptance.For(Cards.Bridge));
 
             var lowPriority = new CardPickByPriority(
-                        CardAcceptance.For(Caravan.card),
-                        CardAcceptance.For(Estate.card, gameState => CountOfPile(Province.card, gameState) < 4),
-                        CardAcceptance.For(Silver.card));
+                        CardAcceptance.For(Cards.Caravan),
+                        CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 4),
+                        CardAcceptance.For(Cards.Silver));
 
             return new CardPickConcatenator(highPriority, buildOrder, lowPriority);               
         }
@@ -102,7 +100,7 @@ namespace Strategies
 
         private static bool AtEndGame(GameState gameState)
         {
-            return CountOfPile(Duchy.card, gameState) <= 6;
+            return CountOfPile(Cards.Duchy, gameState) <= 6;
         }
 
         private static bool ShouldBuyDuchyDukeOverPowerUp(GameState gameState)
@@ -127,18 +125,18 @@ namespace Strategies
         private static CardPickByPriority ActionOrder()
         {
             return new CardPickByPriority(
-                        CardAcceptance.For(Cartographer.card),
-                        CardAcceptance.For(Caravan.card),
-                        CardAcceptance.For(Bridge.card));
+                        CardAcceptance.For(Cards.Cartographer),
+                        CardAcceptance.For(Cards.Caravan),
+                        CardAcceptance.For(Cards.Bridge));
         }
 
         private static CardPickByPriority TopDeckOrder()
         {
-            return new CardPickByPriority(                           
-                        CardAcceptance.For(Cartographer.card),
-                        CardAcceptance.For(Bridge.card),
-                        CardAcceptance.For(Silver.card),                                                      
-                        CardAcceptance.For(Caravan.card));
+            return new CardPickByPriority(
+                        CardAcceptance.For(Cards.Cartographer),
+                        CardAcceptance.For(Cards.Bridge),
+                        CardAcceptance.For(Cards.Silver),
+                        CardAcceptance.For(Cards.Caravan));
         }
 
         private static bool ShouldBuyDukeOverDuchy(GameState gameState)

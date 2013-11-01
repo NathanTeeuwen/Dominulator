@@ -13,17 +13,16 @@ namespace Program
     {        
         static void Main()
         {                        
-            var strategyLoader = new StrategyLoader();
             if (!strategyLoader.Load())
                 return;
 
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
             
-            ComparePlayers(Strategies.BigMoney.Player(), Strategies.BigMoneyDoubleJack.Player(), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames: 1000, shouldParallel: false);
-            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:0);
+            ComparePlayers("BigMoney", "BigMoneyDoubleJack", useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames: 1000, shouldParallel: false);
+            CompareStrategyVsAllKnownStrategies("BigMoney", numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:0);
             //TestAllCardsWithBigMoney();    
-            //FindOptimalPlayForEachCardWithBigMoney();                                    
+            //FindOptimalPlayForEachCardWithBigMoney();
 
             stopwatch.Stop();
 
@@ -42,13 +41,18 @@ namespace Program
             new WebService().Run();
         }
 
-        public static PlayerAction[] AllBuiltInStrategies()
+        public static IEnumerable<PlayerAction> AllBuiltInStrategies()
         {
-            return StrategyLoader.GetAllPlayerActions(System.Reflection.Assembly.GetExecutingAssembly());
+            
+            foreach (PlayerAction player in strategyLoader.AllStrategies())
+                yield return player;
+            
+            foreach (PlayerAction player in StrategyLoader.GetAllPlayerActions(System.Reflection.Assembly.GetExecutingAssembly()))
+                yield return player;    
         }
 
         static void CompareStrategyVsAllKnownStrategies(
-            PlayerAction playerAction, 
+            object playerActionOrString, 
             bool shouldParallel = true, 
             bool useShelters = false, 
             int numberOfGames = 1000, 
@@ -56,10 +60,14 @@ namespace Program
             int logGameCount = 0,
             bool debugLogs = false)
         {
+            PlayerAction playerAction = strategyLoader.GetPlayerAction(playerActionOrString);
             var resultList = new List<System.Tuple<string, double>>();
 
             foreach (PlayerAction otherPlayerAction in AllBuiltInStrategies())
-            {                
+            {
+                if (playerAction == otherPlayerAction)
+                    continue;
+
                 double percentDiff = ComparePlayers(
                     playerAction, 
                     otherPlayerAction, 
@@ -71,14 +79,18 @@ namespace Program
                     useColonyAndPlatinum: true, 
                     createHtmlReport: createHtmlReport);
 
-                resultList.Add( new System.Tuple<string,double>(otherPlayerAction.PlayerName, percentDiff));
+                resultList.Add( new System.Tuple<string,double>(otherPlayerAction.PlayerName, -percentDiff));
             }
-            
-            foreach(var result in resultList.OrderBy(t => t.Item2))
+
+            bool firstNegative = true;
+            foreach(var result in resultList.OrderByDescending(t => t.Item2))
             {
-                if (result.Item1 == playerAction.name)
-                    System.Console.Write("=====>");
-                System.Console.WriteLine("{0:F1}% difference for {1}", -result.Item2, result.Item1);
+                if (result.Item2 < 0 && firstNegative)
+                {
+                    firstNegative = false;
+                    System.Console.WriteLine("=====>");
+                }
+                System.Console.WriteLine("{0:F1}% difference for {1}", result.Item2, result.Item1);
             }
         }
 
@@ -110,7 +122,7 @@ namespace Program
 
         static void TestAllCardsWithBigMoney()
         {
-            var bigMoneyPlayer = Strategies.BigMoney.Player();
+            var bigMoneyPlayer = "BigMoney";
             foreach (PlayerAction playerAction in AllBigMoneyWithCard())
             {
                 ComparePlayers(playerAction, bigMoneyPlayer, numberOfGames: 1000, shouldParallel: true, createHtmlReport: false, logGameCount: 0);
@@ -119,7 +131,7 @@ namespace Program
 
         static void FindOptimalPlayForEachCardWithBigMoney()
         {
-            var bigMoneyPlayer = Strategies.BigMoney.Player();
+            var bigMoneyPlayer = "BigMoney";
             foreach (var member in typeof(Cards).GetMembers(System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public))
             {
                 if (member.MemberType == System.Reflection.MemberTypes.Field)
@@ -133,7 +145,7 @@ namespace Program
                     if (notImplementedCards.Contains(card))
                         continue;
 
-                    var playerAction = StrategyOptimizer.FindBestBigMoneyWithCardVsStrategy(Strategies.BigMoney.Player(), card); // Strategies.BigMoneyWithCard.Player(card, "BigMoney<" + card.name + ">");
+                    var playerAction = StrategyOptimizer.FindBestBigMoneyWithCardVsStrategy("BigMoney", card); // Strategies.BigMoneyWithCard.Player(card, "BigMoney<" + card.name + ">");
 
                     ComparePlayers(playerAction, bigMoneyPlayer, numberOfGames: 1000, shouldParallel: true, createHtmlReport: true, logGameCount: 0);
                 }
@@ -198,9 +210,11 @@ namespace Program
             return "..\\..\\Results\\" + filename;
         }                
 
+        public static StrategyLoader strategyLoader = new StrategyLoader();        
+
         public static double ComparePlayers(
-            PlayerAction player1,
-            PlayerAction player2,
+            object player1OrString,
+            object player2OrString,
             bool useShelters = false,
             bool useColonyAndPlatinum = false,
             StartingCardSplit split = StartingCardSplit.Random,
@@ -216,6 +230,8 @@ namespace Program
             bool debugLogs = false,
             CreateGameLog createGameLog = null)
         {            
+            PlayerAction player1 = strategyLoader.GetPlayerAction(player1OrString);
+            PlayerAction player2 = strategyLoader.GetPlayerAction(player2OrString);
 
             GameConfigBuilder builder = new GameConfigBuilder();
             PlayerAction.SetKingdomCards(builder, player1, player2);
@@ -246,8 +262,8 @@ namespace Program
         }
 
         public static double ComparePlayers(
-            PlayerAction player1, 
-            PlayerAction player2, 
+            object player1OrString, 
+            object player2OrString, 
             GameConfig gameConfig,
             bool firstPlayerAdvantage = false, 
             bool shouldParallel = true,
@@ -260,6 +276,9 @@ namespace Program
             bool debugLogs = false,
             CreateGameLog createGameLog = null)
         {
+            PlayerAction player1 = strategyLoader.GetPlayerAction(player1OrString);
+            PlayerAction player2 = strategyLoader.GetPlayerAction(player2OrString);
+
             var strategyComparison = new StrategyComparison(player1, player2, gameConfig, firstPlayerAdvantage, numberOfGames);
             var results = strategyComparison.ComparePlayers(
                 gameIndex => gameIndex < logGameCount ? GetGameLogWriterForIteration(player1, player2, gameIndex) : null,

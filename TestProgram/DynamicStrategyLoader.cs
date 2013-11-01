@@ -34,7 +34,22 @@ namespace Program
             return true;
         }
 
-        public PlayerAction GetStrategy(string name)
+        public IEnumerable<PlayerAction> AllStrategies()
+        {
+            return this.playerActions;
+        }
+
+        public PlayerAction GetPlayerAction(object playerActionOrString)
+        {
+            if (playerActionOrString is PlayerAction)
+                return (PlayerAction)playerActionOrString;
+            else if (playerActionOrString is string)
+                return GetPlayerAction((string)playerActionOrString);
+            else 
+                throw new Exception("Must be PlayerAction or string");
+        }
+
+        public PlayerAction GetPlayerAction(string name)
         {
             return this.playerActions.Where(playerAction => playerAction.name == name).FirstOrDefault();
         }

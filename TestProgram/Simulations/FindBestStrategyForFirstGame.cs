@@ -39,9 +39,9 @@ namespace Program
                     CardAcceptance.For(Cards.Silver),
                     CardAcceptance.For(Cards.Estate, gameState => Strategy.CountAllOwned(Cards.Militia, gameState) < 1)
                     ));
-            Program.ComparePlayers(player1, Strategies.BigMoneySimple.Player(), showVerboseScore: true);
-            Program.ComparePlayers(player1, Strategies.BigMoney.Player(), showVerboseScore: true);
-            Program.ComparePlayers(player1, Strategies.BigMoneySingleSmithy.Player(), showVerboseScore: true);
+            Program.ComparePlayers(player1, "BigMoneySimple", showVerboseScore: true);
+            Program.ComparePlayers(player1, "BigMoney", showVerboseScore: true);
+            Program.ComparePlayers(player1, "BigMoneySingleSmithy", showVerboseScore: true);
         }        
     }
 }

@@ -13,11 +13,11 @@ namespace Program.Simulations
         public static void Run()
         {
             // for forum topic: http://forum.dominionstrategy.com/index.php?topic=8391.0
-            Program.ComparePlayers(Strategies.Rebuild.Player(), Strategies.BigMoney.Player());
-            Program.ComparePlayers(Strategies.Rebuild.Player(), Strategies.BigMoneyWithCard.Player(Cards.Wharf, cardCount: 2));
-            Program.ComparePlayers(Strategies.Rebuild.Player(), Strategies.BigMoneyWithCard.Player(Cards.Mountebank, cardCount: 2));
-            Program.ComparePlayers(Strategies.Rebuild.Player(), Strategies.BigMoneyWithCard.Player(Cards.Witch, cardCount: 2));
-            Program.ComparePlayers(Strategies.Rebuild.Player(), Strategies.BigMoneyWithCard.Player(Cards.YoungWitch, cardCount: 2));        
+            Program.ComparePlayers("Rebuild", "BigMoney");
+            Program.ComparePlayers("Rebuild", Strategies.BigMoneyWithCard.Player(Cards.Wharf, cardCount: 2));
+            Program.ComparePlayers("Rebuild", Strategies.BigMoneyWithCard.Player(Cards.Mountebank, cardCount: 2));
+            Program.ComparePlayers("Rebuild", Strategies.BigMoneyWithCard.Player(Cards.Witch, cardCount: 2));
+            Program.ComparePlayers("Rebuild", Strategies.BigMoneyWithCard.Player(Cards.YoungWitch, cardCount: 2));        
         }
     }
 }

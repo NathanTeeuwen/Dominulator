@@ -31,38 +31,5 @@ namespace Strategies
                         CardAcceptance.For(Cards.Estate, gameState => gameState.GetPile(Cards.Province).Count < 4),
                         CardAcceptance.For(card));
         }   
-    }
-   
-    public class BigMoneyFishingVillageOverSilver
-        : Strategy 
-    {
-        public static PlayerAction Player(int playerNumber)
-        {
-            return BigMoneyWithSilverReplacement.Player(
-                        Cards.FishingVillage,
-                        "BigMoneyFishingVillageOverSilver");
-        }
-    }
-
-    public class BigMoneyFishingVillageAvailableForDeckCycle
-        : Strategy 
-    {
-        public static PlayerAction Player(int playerNumber)
-        {
-            return BigMoneyWithSilverReplacement.Player(
-                        CardTypes.TestCards.FishingVillageAvailableForDeckCycle.card,
-                        "BigMoneyFishingVillageAvailableForDeckCycle");
-        }
-    }
-
-    public class BigMoneyFishingVillageEmptyDuration
-        : Strategy 
-    {
-        public static PlayerAction Player(int playerNumber)
-        {
-            return BigMoneyWithSilverReplacement.Player(
-                        CardTypes.TestCards.FishingVillageEmptyDuration.card,
-                        "BigMoneyFishingVillageEmptyDuration");
-        }
-    }
+    }     
 }

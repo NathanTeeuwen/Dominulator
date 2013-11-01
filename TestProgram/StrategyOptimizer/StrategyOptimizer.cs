@@ -46,8 +46,9 @@ namespace Program
             }
         }
 
-        public static PlayerAction FindBestBigMoneyWithCardVsStrategy(PlayerAction playerAction, Card card, bool logProgress = false)
+        public static PlayerAction FindBestBigMoneyWithCardVsStrategy(object playerActionOrString, Card card, bool logProgress = false)
         {
+            PlayerAction playerAction = Program.strategyLoader.GetPlayerAction(playerActionOrString);
             Random random = new Random();
             var initialPopulation = Enumerable.Range(0, 10).Select(index => new BigMoneyWithCardDescription(card)).ToArray();
 

@@ -13,9 +13,9 @@ namespace Program.Simulations
         public static void Run()
         {
             // for forum topic: http://forum.dominionstrategy.com/index.php?topic=7476.msg212934#msg212934
-            Program.ComparePlayers(Strategies.DuchyDukeWarehouseEmbassy.Player(), Strategies.BigMoney.Player());
-            Program.ComparePlayers(Strategies.FeodumDevelop.Player(), Strategies.BigMoney.Player());
-            Program.ComparePlayers(Strategies.DuchyDukeWarehouseEmbassy.Player(), Strategies.FeodumDevelop.Player());
+            Program.ComparePlayers("DuchyDukeWarehouseEmbassy", "BigMoney");
+            Program.ComparePlayers("FeodumDevelop", "BigMoney");
+            Program.ComparePlayers("DuchyDukeWarehouseEmbassy", "FeodumDevelop");
         }
     }
 }
