@@ -265,16 +265,14 @@ function GetAvailableGraphs(id) {
   </div>
   
   <div>
-    <label>Graph</label>
-    <select id='selectedGraph'></select>
+    <label>Add A graph ... </label>    
+    <select id='selectedGraph' onchange='InsertSelectedGraph()'></select>
     <script type="text/javascript">    
         $("#selectedGraph").combobox();       
     </script>
     <br>
-  </div>
- 
-  <br>
-  <button type="button" onclick="InsertSelectedGraph()">Insert Graph</button>  
+  </div> 
+  <br>  
   <div id="chartsInsertionPoint"></div>
 </div>
 

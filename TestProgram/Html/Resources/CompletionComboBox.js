@@ -27,7 +27,7 @@
 				.tooltip({
 					tooltipClass: "ui-state-highlight"
 				})
-                .on("autocompleteselect", function(event, ui) { 
+                .on("autocompletechange", function(event, ui) { 
                     selectElement.change(); 
                 });
 
