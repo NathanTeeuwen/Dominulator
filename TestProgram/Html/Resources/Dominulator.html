@@ -166,62 +166,123 @@ function GetAvailableGraphs(id) {
 <body>
 
 <h1>Dominulator</h1>
-
+  
 <table>
   <tr>
     <td width="600px">
-      <div>
-        <h2>Player 1</h2>
-        <br>
-          Pick your strategy ...
-        </br>        
-        <select id='player1Strategy' onchange='OnPlayer1StratChanged()'></select>
-        <script type="text/javascript">    
-            $("#player1Strategy").combobox();    
-            GetAvailableStrategies("#player1Strategy");    
+      <h2>Player 1</h2>
+      <select id='player1Strategy' onchange='OnPlayer1StratChanged()'></select>
+      <script type="text/javascript">    
+          $("#player1Strategy").combobox();    
+          GetAvailableStrategies("#player1Strategy");    
             
-            function OnPlayer1StratChanged()
-            {
-               UpdateStrategyText1();
-            };
-        </script>        
-        <br>
-        <textarea id="player1StrategyText" rows='30' cols='80'>my strategy goes here!</textarea>
-      </div>
-    </td>
-    <td width="600px">
-      <div>
-        <h2>Player 2</h2>
-        <br>
-          Pick your strategy ...
-        </br>        
-        <select id='player2Strategy'  onchange='OnPlayer2StratChanged()'></select>
-        <script type="text/javascript">    
-            $("#player2Strategy").combobox();    
-            GetAvailableStrategies("#player2Strategy");    
+          function OnPlayer1StratChanged()
+          {
+              UpdateStrategyText1();
+          };
+      </script>        
+    </td>   
+    <td>
+      <h2>Player 2</h2>        
+      <select id='player2Strategy'  onchange='OnPlayer2StratChanged()'></select>
+      <script type="text/javascript">    
+          $("#player2Strategy").combobox();    
+          GetAvailableStrategies("#player2Strategy");    
             
-            function OnPlayer2StratChanged()
-            {
-               UpdateStrategyText2();
-            };
-        </script>
-        <br>
-        <textarea id="player2StrategyText" rows='30' cols='80'>my strategy goes here!</textarea>
-      </div>
-    </td>
-  </tr>
+          function OnPlayer2StratChanged()
+          {
+              UpdateStrategyText2();
+          };
+      </script>      
+    </td>   
+  </tr>  
 </table>
-<br>    
-<button type="button" id="PlayButton" onclick="ResetPlayedArea(); ShowPlayedArea();">Play ...</button>
+
+<br>  
+<button type="button" id="PlayButton" onclick="OnPlayButtonClicked()">Play ...</button>
 <script>    
-      $( "#PlayButton" ).button();    
+ 
+  $( "#PlayButton" ).button();    
+      
+  function OnPlayButtonClicked()
+  {
+    ResetPlayedArea();
+    $("#StrategyArea").tabs("option", "active", 2);
+    ShowPlayedArea();
+  }
 </script>
+
+<div id="StrategyArea">
+  <ul>
+    <li><a href="#player1StrategyArea">Player 1</a></li>
+    <li><a href="#player2StrategyArea">Player 2</a></li>
+    <li><a href="#GraphsTab">Graphs</a></li>
+    <li><a href="#GameLogTab">Game Logs</a></li>      
+  </ul>
+  <div id="player1StrategyArea">
+    <textarea id="player1StrategyText" rows='30' style="width:100%; font-size: 10pt;"></textarea>      
+  </div>
+  <div id='player2StrategyArea'>
+    <textarea id="player2StrategyText" rows='30' style="width:100%; font-size: 10pt;"></textarea>      
+  </div>    
+
+  <div id="GameLogTab" style="display: none;">      
+    <div id='gameLogPagination' class='pagination'></div>
+    <script type='text/javascript'>
+      function PopulateGameLog(gameNumber)
+      {
+        var player1Strat = $("#player1Strategy :selected").text();
+        var player2Strat = $("#player2Strategy :selected").text();    
+        $.ajax({
+            url: "http://localhost:8081/dominion/GetGameLog",
+            type: "POST",
+            data: JSON.stringify({ player1:player1Strat, player2:player2Strat, gameNumber: gameNumber}),
+            dataType: "json",        
+            success: function (result) {        
+                document.getElementById('gameLogTextArea').value = result;
+            }
+        });  
+      }
+        
+      function onPageClick(pageNumber, event) 
+      {          
+          PopulateGameLog(pageNumber);              
+      };
+        
+      $( '#gameLogPagination' ).pagination({ 
+        pages: 1000,
+        displayedPages: 5,
+        cssStyle: 'light-theme',
+        onPageClick: onPageClick
+      });
+    </script>
+    <textarea id='gameLogTextArea' rows='30' style="width:100%; font-size: 10pt;"></textarea>      
+  </div>
+  
+  <div id='GraphsTab'>    
+    <button type="button" id="InsertGraphButton" onclick="InsertSelectedGraph();">Insert a Graph ...</button>
+    <script>    
+          $( "#InsertGraphButton" ).button();    
+    </script>
+    <select id='selectedGraph''></select>
+    <script type="text/javascript">    
+        $("#selectedGraph").combobox();       
+    </script>
+    <br>
+    <br>
+    <div id="chartsInsertionPoint"></div>
+  </div>  
+</div>
+<script>
+  $( "#StrategyArea" ).tabs();    
+</script>
+  
   
 <div id="PlayedArea" style="display: none;">
   <script type="text/javascript">            
   function ShowPlayedArea()
   {
-    document.getElementById('PlayedArea').style.display = "inline";
+    //document.getElementById('PlayedArea').style.display = "inline";
     GetAvailableGraphs("#selectedGraph");
     PopulateGameLog(1);
     InsertGraph("GameBreakdown");
@@ -229,64 +290,10 @@ function GetAvailableGraphs(id) {
   
   function ResetPlayedArea()
   {
-    document.getElementById('PlayedArea').style.display = "none";
+    //document.getElementById('PlayedArea').style.display = "none";
     $("#chartsInsertionPoint").empty();
   }
-  </script>  
-  
-  <div id="PlayTabs">
-    <ul>
-      <li><a href="#GraphsTab">Graphs</a></li>
-      <li><a href="#GameLogTab">Game Logs</a></li>      
-    </ul>
-    <div id="GameLogTab">      
-      <div id='gameLogPagination' class='pagination'></div>
-      <script type='text/javascript'>
-        function PopulateGameLog(gameNumber)
-        {
-          var player1Strat = $("#player1Strategy :selected").text();
-          var player2Strat = $("#player2Strategy :selected").text();    
-          $.ajax({
-              url: "http://localhost:8081/dominion/GetGameLog",
-              type: "POST",
-              data: JSON.stringify({ player1:player1Strat, player2:player2Strat, gameNumber: gameNumber}),
-              dataType: "json",        
-              success: function (result) {        
-                  document.getElementById('gameLogTextArea').value = result;
-              }
-          });  
-        }
-        
-        function onPageClick(pageNumber, event) 
-        {          
-           PopulateGameLog(pageNumber);              
-        };
-        
-        $( '#gameLogPagination' ).pagination({ 
-          pages: 1000,
-          displayedPages: 5,
-          cssStyle: 'light-theme',
-          onPageClick: onPageClick
-        });
-      </script>
-      <textarea id='gameLogTextArea' rows='30' cols='100'></textarea>      
-    </div>
-  
-    <div id='GraphsTab'>
-      <label>Add A graph ... </label>    
-      <select id='selectedGraph' onchange='InsertSelectedGraph()'></select>
-      <script type="text/javascript">    
-          $("#selectedGraph").combobox();       
-      </script>
-      <br>
-      
-      <div id="chartsInsertionPoint"></div>
-    </div>      
-  </div>
-  <script>
-    $( "#PlayTabs" ).tabs();    
-  </script>
-</div> 
+  </script>     
 
 </body>
 </html> 
