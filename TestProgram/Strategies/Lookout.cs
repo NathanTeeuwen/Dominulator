@@ -18,7 +18,7 @@ namespace Strategies
             return new PlayerAction(
                         "Lookout",                            
                         purchaseOrder: PurchaseOrder(),
-                        treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
+                        treasurePlayOrder: DefaultStrategies.DefaultTreasurePlayOrder(),
                         actionOrder: ActionOrder(),
                         trashOrder: TrashAndDiscardOrder(),
                         discardOrder: TrashAndDiscardOrder());
@@ -27,7 +27,7 @@ namespace Strategies
         private static CardPickByPriority PurchaseOrder()
         {
             return new CardPickByPriority(
-                        CardAcceptance.For(Cards.Province, Default.ShouldBuyProvinces),
+                        CardAcceptance.For(Cards.Province, DefaultStrategies.ShouldBuyProvinces),
                         CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4),
                         CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 2),
                         CardAcceptance.For(Cards.Gold),

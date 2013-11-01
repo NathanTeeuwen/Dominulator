@@ -18,10 +18,10 @@ namespace Strategies
             return new PlayerAction(
                         "FollowersTest",                            
                         purchaseOrder: PurchaseOrder(cardCost),
-                        treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
+                        treasurePlayOrder: DefaultStrategies.DefaultTreasurePlayOrder(),
                         actionOrder: ActionOrder(cardCost),
-                        trashOrder: Default.EmptyPickOrder(),
-                        discardOrder: Default.EmptyPickOrder());
+                        trashOrder: DefaultStrategies.EmptyPickOrder(),
+                        discardOrder: DefaultStrategies.EmptyPickOrder());
         }
 
         private static ICardPicker PurchaseOrder(int followerCost)

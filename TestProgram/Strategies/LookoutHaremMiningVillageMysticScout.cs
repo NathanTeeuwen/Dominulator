@@ -25,7 +25,7 @@ namespace Strategies
                 : base(
                     "LookoutHaremMiningVillageMysticScout",                        
                     purchaseOrder: PurchaseOrder(),
-                    treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
+                    treasurePlayOrder: DefaultStrategies.DefaultTreasurePlayOrder(),
                     actionOrder: ActionOrder(),
                     trashOrder: TrashOrder(),
                     discardOrder:DiscardOrder())

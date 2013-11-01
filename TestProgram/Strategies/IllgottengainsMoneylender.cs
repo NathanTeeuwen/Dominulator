@@ -32,7 +32,7 @@ namespace Strategies
         {
             var highPriority = new CardPickByPriority(
                 CardAcceptance.For(Cards.Province),
-                CardAcceptance.For(Cards.IllGottenGains, Default.ShouldGainIllGottenGains),
+                CardAcceptance.For(Cards.IllGottenGains, DefaultStrategies.ShouldGainIllGottenGains),
                 CardAcceptance.For(Cards.Gold, gameState => CountOfPile(Cards.Province, gameState) >= 6),
                 CardAcceptance.For(Cards.Duchy),
                 CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2));                    
@@ -72,7 +72,7 @@ namespace Strategies
         {
             var highPriority = new CardPickByPriority(
                 CardAcceptance.For(Cards.Province),
-                CardAcceptance.For(Cards.IllGottenGains, Default.ShouldGainIllGottenGains),
+                CardAcceptance.For(Cards.IllGottenGains, DefaultStrategies.ShouldGainIllGottenGains),
                 CardAcceptance.For(Cards.Gold, gameState => CountOfPile(Cards.Province, gameState) >= 6),
                 CardAcceptance.For(Cards.Duchy),
                 CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) < 2));

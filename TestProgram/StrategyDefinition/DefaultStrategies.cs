@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Program;
 
-namespace Strategies
+namespace Program
 {    
-    public class Default
+    public class DefaultStrategies
         : Strategy
     {
         public static CardPickByPriority EmptyPickOrder()

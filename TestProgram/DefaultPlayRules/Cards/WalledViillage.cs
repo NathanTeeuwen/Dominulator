@@ -1,6 +1,6 @@
 ﻿using Dominion;
 
-namespace Program.DefaultStrategies
+namespace Program.DefaultPlayRules
 {
     internal class WalledVillage
       : UnimplementedPlayerAction

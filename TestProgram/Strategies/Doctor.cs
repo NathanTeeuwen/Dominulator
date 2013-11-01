@@ -68,7 +68,7 @@ namespace Strategies
             int countCopper = CountMightDraw(Cards.Copper, gameState, 3);
             int countEstate = CountMightDraw(Cards.Estate, gameState, 3);
 
-            if (Default.ShouldBuyProvinces(gameState))
+            if (DefaultStrategies.ShouldBuyProvinces(gameState))
                 countEstate = 0;
 
             if (countCopper + countEstate == 0)
@@ -80,7 +80,7 @@ namespace Strategies
         private static CardPickByPriority PurchaseOrder()
         {
             return new CardPickByPriority(
-                        CardAcceptance.For(Cards.Province, Default.ShouldBuyProvinces),
+                        CardAcceptance.For(Cards.Province, DefaultStrategies.ShouldBuyProvinces),
                         CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4),
                         CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 2),
                         CardAcceptance.For(Cards.Gold),

@@ -17,9 +17,9 @@ namespace Strategies
             return new PlayerAction(
                         "DoubleWarehouse2",
                         purchaseOrder: PurchaseOrder(),
-                        treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
+                        treasurePlayOrder: DefaultStrategies.DefaultTreasurePlayOrder(),
                         actionOrder: ActionOrder(),
-                        trashOrder: Default.EmptyPickOrder(),
+                        trashOrder: DefaultStrategies.EmptyPickOrder(),
                         discardOrder: DiscardOrder());
         }
 

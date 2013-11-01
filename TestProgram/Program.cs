@@ -14,16 +14,19 @@ namespace Program
         {
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
-
+            
+            var strategyLoader = new StrategyLoader();
+            if (!strategyLoader.Load())
+                return;
+            
             ComparePlayers(Strategies.BigMoney.Player(), Strategies.BigMoneyDoubleJack.Player(), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames: 1000, shouldParallel: false);
             //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:10);
             //TestAllCardsWithBigMoney();    
-            //FindOptimalPlayForEachCardWithBigMoney();                        
-            new WebService().Run();
+            //FindOptimalPlayForEachCardWithBigMoney();                                    
 
             stopwatch.Stop();
 
-            WaitForAllBackgroundTasks();
+            WaitForAllBackgroundTasks();            
 
             if (totalGameCount > 0)
             {
@@ -33,41 +36,13 @@ namespace Program
                 System.Console.WriteLine("Elapsed Time per game: {0}us", stopwatch.ElapsedMilliseconds * 1000 / totalGameCount);
                 System.Console.WriteLine("Elapsed Time per Players Turn: {0}ns", (int)((double)stopwatch.ElapsedTicks / System.Diagnostics.Stopwatch.Frequency * 1000 * 1000 * 1000 / GameState.turnTotalCount));
             }
+
+            new WebService().Run();
         }
 
         public static PlayerAction[] AllBuiltInStrategies()
         {
-            var result = new List<PlayerAction>();
-
-            var assembly = System.Reflection.Assembly.GetCallingAssembly();            
-            foreach (Type innerType in assembly.GetTypes())
-            {
-                if (!innerType.IsClass)
-                    continue;
-
-                if (innerType.Namespace != "Strategies")
-                    continue;
-
-                System.Reflection.MethodInfo playerMethodInfo = innerType.GetMethod("Player", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
-                if (playerMethodInfo == null)
-                    continue;
-
-                if (playerMethodInfo.ContainsGenericParameters)
-                    continue;
-
-                if (playerMethodInfo.GetParameters().Count() > 0)
-                {
-                    continue;
-                }
-
-                PlayerAction playerAction = playerMethodInfo.Invoke(null, new object[0]) as PlayerAction;
-                if (playerAction == null)
-                    continue;
-
-                result.Add(playerAction);
-            }
-
-            return result.ToArray();
+            return StrategyLoader.GetAllPlayerActions(System.Reflection.Assembly.GetExecutingAssembly());
         }
 
         static void CompareStrategyVsAllKnownStrategies(

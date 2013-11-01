@@ -1,17 +1,131 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿using Microsoft.CSharp;
+using System;
 using System.CodeDom.Compiler;
-using System.IO;
-using Microsoft.CSharp;
+using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 
 namespace Program
 {
     class StrategyLoader
     {
-        public static PlayerAction DynamicallyLoad(string code)
+        static string strategyOutputFolder = "DominulatorStrategies";
+
+        PlayerAction[] playerActions = null;
+
+        public StrategyLoader()
+        {           
+        }
+
+        public bool Load()
+        {
+            if (!WriteOutAllEmbeddedStrategies())
+            {
+                return false;
+            }
+            
+            var loadedAssembly = LoadAllCustomStrategies();
+            this.playerActions = GetAllPlayerActions(loadedAssembly);
+
+            return true;
+        }
+
+        public PlayerAction GetStrategy(string name)
+        {
+            return this.playerActions.Where(playerAction => playerAction.name == name).FirstOrDefault();
+        }
+
+        public static PlayerAction[] GetAllPlayerActions(System.Reflection.Assembly assembly)
+        {
+            var result = new List<PlayerAction>();
+            
+            foreach (Type innerType in assembly.GetTypes())
+            {
+                if (!innerType.IsClass)
+                    continue;
+
+                if (innerType.Namespace != "Strategies")
+                    continue;
+
+                System.Reflection.MethodInfo playerMethodInfo = innerType.GetMethod("Player", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
+                if (playerMethodInfo == null)
+                    continue;
+
+                if (playerMethodInfo.ContainsGenericParameters)
+                    continue;
+
+                if (playerMethodInfo.GetParameters().Length > 0)
+                {
+                    continue;
+                }
+
+                PlayerAction playerAction = playerMethodInfo.Invoke(null, new object[0]) as PlayerAction;
+                if (playerAction == null)
+                    continue;
+
+                result.Add(playerAction);
+            }
+
+            return result.ToArray();
+        }
+
+        public static bool CreateStrategiesFolderIfNecessary()
+        {
+            if (!System.IO.Directory.Exists(strategyOutputFolder))
+            {
+                try
+                {
+                    System.IO.Directory.CreateDirectory(strategyOutputFolder);
+                }
+                catch
+                {
+                }
+            }
+
+            return System.IO.Directory.Exists(strategyOutputFolder);                
+        }
+
+        public static bool WriteOutAllEmbeddedStrategies()
+        {
+            string strategyResourcePath = "Program.Strategies.";
+
+            if (!CreateStrategiesFolderIfNecessary())
+                return false;
+
+            var assembly = System.Reflection.Assembly.GetExecutingAssembly();
+
+            foreach (string sourcefile in assembly.GetManifestResourceNames())
+            {
+                if (!sourcefile.StartsWith(strategyResourcePath))
+                {
+                    continue;
+                }
+
+                string fileContents = Resources.GetEmbeddedContent("", sourcefile);
+                string fileName = sourcefile.Remove(0, strategyResourcePath.Length);
+
+                try
+                {
+                    using (var textWriter = new System.IO.StreamWriter(strategyOutputFolder + "\\" + fileName))
+                    {
+                        textWriter.Write(fileContents);
+                    }
+                }
+                catch
+                {
+                }
+            }
+
+            return true;
+        }
+
+        public static System.Reflection.Assembly LoadAllCustomStrategies()
+        {
+            string[] files = System.IO.Directory.GetFiles(strategyOutputFolder);
+            return DynamicallyLoadFromFile(files);
+        }
+
+        public static System.Reflection.Assembly DynamicallyLoadFromFile(params string[] sourceFiles)
         {
             CompilerParameters CompilerParams = new CompilerParameters();            
 
@@ -24,7 +138,7 @@ namespace Program
             CompilerParams.ReferencedAssemblies.AddRange(references);
 
             CSharpCodeProvider provider = new CSharpCodeProvider();
-            CompilerResults compile = provider.CompileAssemblyFromSource(CompilerParams, code);
+            CompilerResults compile = provider.CompileAssemblyFromFile(CompilerParams, sourceFiles);
 
             if (compile.Errors.HasErrors)
             {
@@ -38,29 +152,7 @@ namespace Program
                 return null;
             }
 
-            //ExpoloreAssembly(compile.CompiledAssembly);
-
-            Module module = compile.CompiledAssembly.GetModules()[0];
-            Type mt = null;
-            MethodInfo methInfo = null;
-
-            if (module != null)
-            {
-                mt = module.GetType("Program.Strategies.TreasureMapDoctor");
-            }
-
-            if (mt != null)
-            {
-                methInfo = mt.GetMethod("Player");
-            }
-
-            if (methInfo != null)
-            {
-                PlayerAction playerAction = (PlayerAction)methInfo.Invoke(null, new object[] {});
-                return playerAction;
-            }
-
-            return null;
+            return compile.CompiledAssembly;
         }       
     }
 }

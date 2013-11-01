@@ -46,7 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CardAcceptance.cs" />
+    <Compile Include="Resources.cs" />
+    <Compile Include="StrategyDefinition\CardAcceptance.cs" />
     <Compile Include="DataGathering\HistogramData.cs" />
     <Compile Include="DataGathering\PerTurnPlayerCounters.cs" />
     <Compile Include="DefaultPlayRules\Cards\Scheme.cs" />
@@ -54,7 +55,7 @@
     <Compile Include="DefaultPlayRules\Cards\ScryingPool.cs" />
     <Compile Include="DefaultPlayRules\Cards\Treasury.cs" />
     <Compile Include="DefaultPlayRules\Cards\Nobles.cs" />
-    <Compile Include="DefaultStrategies.cs" />
+    <Compile Include="StrategyDefinition\DefaultStrategies.cs" />
     <Compile Include="DefaultPlayRules\CardOverrides.cs" />
     <Compile Include="DefaultPlayRules\Cards\Cartographer.cs" />
     <Compile Include="DefaultPlayRules\Cards\Catacombs.cs" />
@@ -82,7 +83,7 @@
     <Compile Include="Html\WebService.cs" />
     <Compile Include="Kingdoms\ShouldMounteBankHoardOrVineyard.cs" />
     <Compile Include="Kingdoms\ShouldRemakeOrHorseTradersIntoSoothayer.cs" />
-    <Compile Include="PlayerActionFromCardResponses.cs" />
+    <Compile Include="StrategyDefinition\PlayerActionFromCardResponses.cs" />
     <Compile Include="Simulations\DarkAgesBigMoney.cs" />
     <Compile Include="Simulations\EffectOfEstateOnRebuild.cs" />
     <Compile Include="Simulations\FeodumVsDuke.cs" />
@@ -92,7 +93,7 @@
     <Compile Include="Simulations\GuildsResults.cs" />
     <Compile Include="Simulations\HighestWinRateVsBigMoney.cs" />
     <Compile Include="Simulations\RebuildResults.cs" />
-    <Compile Include="StartingDeckBuilder.cs" />
+    <Compile Include="StrategyDefinition\StartingDeckBuilder.cs" />
     <Compile Include="DataGathering\StatsPerTurnGameLog.cs" />
     <Compile Include="Strategies\BigMoneyCultist.cs" />
     <Compile Include="Strategies\BigMoneyDelayed.cs" />
@@ -110,23 +111,23 @@
     <Compile Include="Strategies\RatsWanderingMinstrelWatchtowerArmory.cs" />
     <Compile Include="Strategies\RebuildAdvanced.cs" />
     <Compile Include="Strategies\RebuildDuke.cs" />
-    <Compile Include="StrategyComparison.cs" />
+    <Compile Include="StrategyDefinition\StrategyComparison.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\BigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\MutateBigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\CardAcceptanceDescription.cs" />
-    <Compile Include="CardPickByBuilderOrder.cs" />
-    <Compile Include="CardPickByPriority.cs" />
-    <Compile Include="CardPickConcatenator.cs" />
+    <Compile Include="StrategyDefinition\CardPickByBuilderOrder.cs" />
+    <Compile Include="StrategyDefinition\CardPickByPriority.cs" />
+    <Compile Include="StrategyDefinition\CardPickConcatenator.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\ComparePickByPriorityDescription.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\Comparison.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\CompareBigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\CountSource.cs" />
     <Compile Include="StrategyOptimizer\GeneticAlgorithm.cs" />
-    <Compile Include="ICardPicker.cs" />
+    <Compile Include="StrategyDefinition\ICardPicker.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\MatchDescription.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\MutatePickByPriorityDescription.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\PickByPriorityDescription.cs" />
-    <Compile Include="PlayerAction.cs" />
+    <Compile Include="StrategyDefinition\PlayerAction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Simulations\UnevenCurseSplit.cs" />
@@ -144,7 +145,7 @@
     <Compile Include="Strategies\EmbassyTunnelSpiceMerchantPlaza.cs" />
     <Compile Include="Strategies\Harem.cs" />
     <Compile Include="Strategies\GovernorJunkDealer.cs" />
-    <Compile Include="Strategies\TreasureMapDoctor.cs" />
+    <None Include="Strategies\TreasureMapDoctor.cs" />
     <Compile Include="Strategies\TaxMan.cs" />
     <Compile Include="Strategies\TreasureMap.cs" />
     <Compile Include="Strategies\Doctor.cs" />
@@ -164,7 +165,7 @@
     <Compile Include="Strategies\FishingVillageLibraryCountPoorHouse.cs" />
     <Compile Include="Strategies\Lookout.cs" />
     <Compile Include="Strategies\RatsUpgrade.cs" />
-    <Compile Include="Strategies.cs" />
+    <Compile Include="StrategyDefinition\Strategy.cs" />
     <Compile Include="StrategyOptimizer\StrategyOptimizer.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -177,7 +178,9 @@
       <Name>Dominion</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Results\" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Html\Resources\Dominulator.html">
       <SubType>Designer</SubType>
@@ -187,7 +190,6 @@
     <EmbeddedResource Include="Html\Resources\DefaultStyles.css" />
     <EmbeddedResource Include="Html\Resources\CompletionComboBox.css" />
     <EmbeddedResource Include="Html\Resources\CompletionComboBox.js" />
-    <Content Include="Results\GameLog.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -400,19 +400,7 @@ namespace Program
 
         public static string GetEmbeddedContent(string content)
         {
-            string defaultNamespace = "Program.Html.Resources.";
-
-            var assembly = System.Reflection.Assembly.GetExecutingAssembly();
-            var resourceName = defaultNamespace + content;
-
-            string result;
-            using (System.IO.Stream stream = assembly.GetManifestResourceStream(resourceName))
-            using (var reader = new System.IO.StreamReader(stream))
-            {
-                result = reader.ReadToEnd();                
-            }
-
-            return result;
+            return Resources.GetEmbeddedContent("Program.Html.Resources.", content);            
         }
     }
 }

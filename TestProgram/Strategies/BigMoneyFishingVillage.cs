@@ -22,7 +22,7 @@ namespace Strategies
         private static CardPickByPriority PurchaseOrder(Card card, Card withCard, int count)
         {
             return new CardPickByPriority(
-                        CardAcceptance.For(Cards.Province, Default.ShouldBuyProvinces),
+                        CardAcceptance.For(Cards.Province, DefaultStrategies.ShouldBuyProvinces),
                         CardAcceptance.For(Cards.Duchy, gameState => gameState.GetPile(Cards.Province).Count <= 4),
                         CardAcceptance.For(Cards.Estate, gameState => gameState.GetPile(Cards.Province).Count <= 2),
                         CardAcceptance.For(Cards.Gold),

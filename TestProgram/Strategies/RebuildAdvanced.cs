@@ -30,7 +30,7 @@ namespace Strategies
             public MyPlayerAction(string strategyName, Card withCard, GameStatePredicate withCardPurchaseCondition)
                 : base(strategyName,                        
                     purchaseOrder: PurchaseOrder(withCard, withCardPurchaseCondition),
-                    treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
+                    treasurePlayOrder: DefaultStrategies.DefaultTreasurePlayOrder(),
                     actionOrder: ActionOrder(withCard))
             {
             }               

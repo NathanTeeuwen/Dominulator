@@ -18,9 +18,9 @@ namespace Strategies
             return new PlayerAction(
                         "DuchyDukeWarehouseEmbassy",                            
                         purchaseOrder: PurchaseOrder(),
-                        treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
+                        treasurePlayOrder: DefaultStrategies.DefaultTreasurePlayOrder(),
                         actionOrder: ActionOrder(),
-                        trashOrder: Default.EmptyPickOrder(),
+                        trashOrder: DefaultStrategies.EmptyPickOrder(),
                         discardOrder: DiscardOrder());
         }
 

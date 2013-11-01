@@ -18,7 +18,7 @@ namespace Strategies
             return new PlayerAction(
                         "DeathCartDoubleWarehouse",                            
                         purchaseOrder: PurchaseOrder(),
-                        treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
+                        treasurePlayOrder: DefaultStrategies.DefaultTreasurePlayOrder(),
                         actionOrder: ActionOrder(),
                         trashOrder: TrashOrder(),
                         discardOrder: DiscardOrder());

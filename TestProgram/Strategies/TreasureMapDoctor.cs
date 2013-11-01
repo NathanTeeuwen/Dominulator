@@ -64,7 +64,7 @@ namespace Strategies
                 int countCopper = CountMightDraw(Cards.Copper, gameState, 3);
                 int countEstate = CountMightDraw(Cards.Estate, gameState, 3);
 
-                if (Default.ShouldBuyProvinces(gameState))
+                if (DefaultStrategies.ShouldBuyProvinces(gameState))
                     countEstate = 0;
 
                 if (countCopper + countEstate == 0)

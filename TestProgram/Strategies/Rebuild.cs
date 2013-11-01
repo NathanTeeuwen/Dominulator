@@ -23,7 +23,7 @@ namespace Strategies
             public MyPlayerAction()
                 : base("Rebuild",                        
                     purchaseOrder: PurchaseOrder(),
-                    treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
+                    treasurePlayOrder: DefaultStrategies.DefaultTreasurePlayOrder(),
                     actionOrder: ActionOrder())
             {
             }

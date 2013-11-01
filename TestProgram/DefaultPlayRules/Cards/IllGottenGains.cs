@@ -2,7 +2,7 @@
 using System;
 using System.Linq;
 
-namespace Program.DefaultStrategies
+namespace Program.DefaultPlayRules
 {
     internal class IllGottenGainsAlwaysGainCopper
         : UnimplementedPlayerAction

@@ -18,10 +18,10 @@ namespace Strategies
             return new PlayerAction(
                         "FishingVillageChapelPoorHouse",                            
                         purchaseOrder: PurchaseOrder(),
-                        treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
+                        treasurePlayOrder: DefaultStrategies.DefaultTreasurePlayOrder(),
                         actionOrder: ActionOrder(),
                         trashOrder: TrashOrder(),
-                        discardOrder: Default.EmptyPickOrder());
+                        discardOrder: DefaultStrategies.EmptyPickOrder());
         }
 
         private static ICardPicker PurchaseOrder()

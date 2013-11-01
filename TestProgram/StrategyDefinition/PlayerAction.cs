@@ -5,11 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Program.DefaultStrategies;
 
 namespace Program
 {
-
     public delegate bool GameStatePlayerActionPredicate(GameState gameState, PlayerAction playerAction);    
 
     public class PlayerAction
@@ -41,17 +39,17 @@ namespace Program
             ICardPicker gainOrder = null)
         {            
             this.purchaseOrder = purchaseOrder;
-            this.actionOrder = actionOrder == null ? Strategies.Default.DefaultActionPlayOrder(purchaseOrder) : actionOrder;
-            this.discardOrder = discardOrder == null ? Strategies.Default.DefaultDiscardOrder() : discardOrder;
-            this.trashOrder = trashOrder == null ? Strategies.Default.DefaultTrashOrder(purchaseOrder) : trashOrder;
-            this.treasurePlayOrder = treasurePlayOrder == null ? Strategies.Default.DefaultTreasurePlayOrder() : treasurePlayOrder;            
+            this.actionOrder = actionOrder == null ? DefaultStrategies.DefaultActionPlayOrder(purchaseOrder) : actionOrder;
+            this.discardOrder = discardOrder == null ? DefaultStrategies.DefaultDiscardOrder() : discardOrder;
+            this.trashOrder = trashOrder == null ? DefaultStrategies.DefaultTrashOrder(purchaseOrder) : trashOrder;
+            this.treasurePlayOrder = treasurePlayOrder == null ? DefaultStrategies.DefaultTreasurePlayOrder() : treasurePlayOrder;            
             this.gainOrder = gainOrder != null ? gainOrder : purchaseOrder;
             this.chooseDefaultActionOnNone = chooseDefaultActionOnNone;
             this.name = name;
-            this.defaultActionOrder = Strategies.Default.DefaultActionPlayOrder(purchaseOrder);
+            this.defaultActionOrder = DefaultStrategies.DefaultActionPlayOrder(purchaseOrder);
 
-            this.defaultCardResponses = new PlayerActionFromCardResponses(DefaultStrategies.DefaultResponses.GetCardResponses(this));
-            this.defaultShouldPlay = DefaultStrategies.DefaultResponses.GetCardShouldPlayDefaults(this);
+            this.defaultCardResponses = new PlayerActionFromCardResponses(DefaultPlayRules.DefaultResponses.GetCardResponses(this));
+            this.defaultShouldPlay = DefaultPlayRules.DefaultResponses.GetCardShouldPlayDefaults(this);
         }                
 
         public override Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
@@ -162,7 +160,7 @@ namespace Program
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null && !isOptional)
             {
-                result = self.Hand.Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();
+                result = self.Hand.Where(c => acceptableCard(c)).OrderBy(c => c, new DefaultPlayRules.CompareCardByFirstToTrash()).FirstOrDefault();
             }
 
             return result;
@@ -183,7 +181,7 @@ namespace Program
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null && !isOptional)
             {
-                result = self.Hand.OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();
+                result = self.Hand.OrderBy(c => c, new DefaultPlayRules.CompareCardByFirstToTrash()).FirstOrDefault();
             }
 
             deckPlacement = DeckPlacement.Discard;
@@ -215,7 +213,7 @@ namespace Program
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)
             {
-                result = selfPlayer.CardsBeingRevealed.Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToTrash()).FirstOrDefault();                
+                result = selfPlayer.CardsBeingRevealed.Where(c => acceptableCard(c)).OrderBy(c => c, new DefaultPlayRules.CompareCardByFirstToTrash()).FirstOrDefault();                
             }
 
             return result;
@@ -236,7 +234,7 @@ namespace Program
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)
             {
-                result = self.CardsBeingRevealed.OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();                
+                result = self.CardsBeingRevealed.OrderBy(c => c, new DefaultPlayRules.CompareCardByFirstToDiscard()).FirstOrDefault();                
             }
 
             return result;
@@ -257,7 +255,7 @@ namespace Program
 
             if (result == null && !isOptional)
             {
-                result = gameState.Self.Hand.Where(c => acceptableCard(c)).OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();                
+                result = gameState.Self.Hand.Where(c => acceptableCard(c)).OrderBy(c => c, new DefaultPlayRules.CompareCardByFirstToDiscard()).FirstOrDefault();                
             }
 
             return result;
@@ -347,7 +345,7 @@ namespace Program
             if (result == null && !isOptional)
             {
                 result = gameState.Self.Hand.Where(c => acceptableCard(c))
-                                            .OrderBy(c => c, new CompareCardByFirstToDiscard())
+                                            .OrderBy(c => c, new DefaultPlayRules.CompareCardByFirstToDiscard())
                                             .FirstOrDefault();
             }
 
@@ -368,7 +366,7 @@ namespace Program
             // warning, strategy didnt' include what to, try to do a reasonable default.
             if (result == null)
             {
-                result = gameState.Self.CardsBeingRevealed.OrderBy(c => c, new CompareCardByFirstToDiscard()).FirstOrDefault();                
+                result = gameState.Self.CardsBeingRevealed.OrderBy(c => c, new DefaultPlayRules.CompareCardByFirstToDiscard()).FirstOrDefault();                
             }
 
             return result;
@@ -391,7 +389,7 @@ namespace Program
             if (result == null && !isOptional)
             {
                 result = gameState.trash.Where(c => acceptableCard(c))
-                                     .OrderBy(c => c, new CompareCardByFirstToGain())
+                                     .OrderBy(c => c, new DefaultPlayRules.CompareCardByFirstToGain())
                                      .FirstOrDefault();
             }
 
@@ -422,7 +420,7 @@ namespace Program
                 result = gameState.supplyPiles.Where(supplyPile => !supplyPile.IsEmpty)
                                      .Select(pile => pile.ProtoTypeCard)
                                      .Where(c => acceptableCard(c))
-                                     .OrderBy(c => c, new CompareCardByFirstToGain())
+                                     .OrderBy(c => c, new DefaultPlayRules.CompareCardByFirstToGain())
                                      .FirstOrDefault();
             }
 
@@ -571,7 +569,7 @@ namespace Program
                 return this.defaultCardResponses.BanCardToDrawnIntoHandFromRevealedCards(gameState);
             }
 
-            return gameState.players.CurrentPlayer.CardsBeingRevealed.OrderBy(card => card, new CompareCardForBanningForDrawIntoHand(gameState)).FirstOrDefault();            
+            return gameState.players.CurrentPlayer.CardsBeingRevealed.OrderBy(card => card, new DefaultPlayRules.CompareCardForBanningForDrawIntoHand(gameState)).FirstOrDefault();            
         }
 
         public override Card BanCardForCurrentPlayerPurchase(GameState gameState)
