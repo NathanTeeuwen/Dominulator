@@ -8,21 +8,21 @@ namespace Program.DefaultStrategies
     {
         public static bool ShouldPlay(GameState gameState, PlayerAction playerAction)
         {
-            int cardCountToTrash = Strategies.CountInDeck(Cards.Copper, gameState);
+            int cardCountToTrash = Strategy.CountInDeck(Cards.Copper, gameState);
 
             if (!playerAction.purchaseOrder.DoesCardPickerMatch(gameState, Cards.Estate))
             {
-                cardCountToTrash += Strategies.CountInDeck(Cards.Estate, gameState);
+                cardCountToTrash += Strategy.CountInDeck(Cards.Estate, gameState);
             }
 
-            cardCountToTrash += Strategies.CountInDeck(Cards.Curse, gameState);
-            cardCountToTrash += Strategies.CountInDeck(Cards.Hovel, gameState);
-            cardCountToTrash += Strategies.CountInDeck(Cards.Necropolis, gameState);
-            cardCountToTrash += Strategies.CountInDeck(Cards.OvergrownEstate, gameState);
+            cardCountToTrash += Strategy.CountInDeck(Cards.Curse, gameState);
+            cardCountToTrash += Strategy.CountInDeck(Cards.Hovel, gameState);
+            cardCountToTrash += Strategy.CountInDeck(Cards.Necropolis, gameState);
+            cardCountToTrash += Strategy.CountInDeck(Cards.OvergrownEstate, gameState);
 
             if (!playerAction.purchaseOrder.DoesCardPickerMatch(gameState, Cards.Lookout))
             {
-                cardCountToTrash += Strategies.CountInDeck(Cards.Lookout, gameState);
+                cardCountToTrash += Strategy.CountInDeck(Cards.Lookout, gameState);
             }
 
             int totalCardsOwned = gameState.Self.CardsInDeck.Count;

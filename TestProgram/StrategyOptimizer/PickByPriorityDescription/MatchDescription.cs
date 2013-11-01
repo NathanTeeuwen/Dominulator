@@ -41,13 +41,13 @@ namespace Program
             switch (countSource)
             {
                 case CountSource.Pile:
-                    countOfTheSource = Strategies.CountOfPile(this.cardType, gameState);
+                    countOfTheSource = Strategy.CountOfPile(this.cardType, gameState);
                     break;
                 case CountSource.AllOwned:
-                    countOfTheSource = Strategies.CountAllOwned(this.cardType, gameState);
+                    countOfTheSource = Strategy.CountAllOwned(this.cardType, gameState);
                     break;
                 case CountSource.InHand:
-                    countOfTheSource = Strategies.CountInHand(this.cardType, gameState);
+                    countOfTheSource = Strategy.CountInHand(this.cardType, gameState);
                     break;
                 case CountSource.None:
                     return true;

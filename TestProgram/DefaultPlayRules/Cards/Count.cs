@@ -34,7 +34,7 @@ namespace Program.DefaultStrategies
             }
             else
             {
-                if (Strategies.HasExactlyOneActionInHand(gameState))
+                if (Strategy.HasExactlyOneActionInHand(gameState))
                 {
                     return PlayerActionChoice.TopDeck;
                 }
@@ -63,7 +63,7 @@ namespace Program.DefaultStrategies
         public static bool WillPlayCountCardForTrash(PlayerAction playerAction, GameState gameState)
         {
             return DoesHandHaveCombinationToTrash(playerAction, gameState) &&
-                   Strategies.HasCardFromInHand(playerAction.trashOrder, gameState) &&
+                   Strategy.HasCardFromInHand(playerAction.trashOrder, gameState) &&
                    !playerAction.IsGainingCard(Cards.Province, gameState);
         }
 
@@ -91,7 +91,7 @@ namespace Program.DefaultStrategies
 
         private static bool DoesHandHaveCombinationToTrash(PlayerAction playerAction, GameState gameState)
         {
-            int countToTrash = Strategies.CountInHandFrom(playerAction.trashOrder, gameState);
+            int countToTrash = Strategy.CountInHandFrom(playerAction.trashOrder, gameState);
             int countInHand = gameState.Self.Hand.Count;
 
             return (countInHand - countToTrash <= 2);
@@ -105,7 +105,7 @@ namespace Program.DefaultStrategies
                 return false;
             }
 
-            int countToTrash = Strategies.CountInHandFrom(this.playerAction.trashOrder, gameState);
+            int countToTrash = Strategy.CountInHandFrom(this.playerAction.trashOrder, gameState);
             int countInHand = self.Hand.Count;
 
             if (countInHand - countToTrash > 0)

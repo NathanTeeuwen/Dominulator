@@ -459,7 +459,7 @@ namespace Program
 
         public override int GetCoinAmountToUseInButcher(GameState gameState)
         {
-            Card cardToTrash = Strategies.WhichCardFromInHand(this.trashOrder, gameState);
+            Card cardToTrash = Strategy.WhichCardFromInHand(this.trashOrder, gameState);
             if (cardToTrash == null)
                 return 0;
 

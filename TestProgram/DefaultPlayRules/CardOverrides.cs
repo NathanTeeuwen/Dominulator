@@ -40,9 +40,9 @@ namespace Program.DefaultStrategies
         {
             var result = new MapOfCards<GameStatePlayerActionPredicate>();
 
-            result[Cards.Remodel] = Strategies.HasCardToTrashInHand;
-            result[Cards.Salvager] = Strategies.HasCardToTrashInHand;
-            result[Cards.Bishop] = Strategies.HasCardToTrashInHand;
+            result[Cards.Remodel] = Strategy.HasCardToTrashInHand;
+            result[Cards.Salvager] = Strategy.HasCardToTrashInHand;
+            result[Cards.Bishop] = Strategy.HasCardToTrashInHand;
             result[Cards.Lookout] = Lookout.ShouldPlay;
 
             return result;

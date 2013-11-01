@@ -76,6 +76,7 @@
     <Compile Include="DefaultPlayRules\Cards\Rebuild.cs" />
     <Compile Include="DefaultPlayRules\Cards\Trader.cs" />
     <Compile Include="DefaultPlayRules\Cards\WatchTower.cs" />
+    <Compile Include="DynamicStrategyLoader.cs" />
     <Compile Include="Html\HtmlRenderer.cs" />
     <Compile Include="Html\HtmlReportGenerator.cs" />
     <Compile Include="Html\WebService.cs" />
@@ -178,7 +179,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Html\Resources\Dominulator.html" />
+    <EmbeddedResource Include="Html\Resources\Dominulator.html">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Html\Resources\jquery.simplePagination.js" />
     <EmbeddedResource Include="Html\Resources\simplePagination.css" />
     <EmbeddedResource Include="Html\Resources\DefaultStyles.css" />

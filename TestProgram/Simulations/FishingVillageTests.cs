@@ -19,7 +19,7 @@ namespace Program.Simulations
 
             Program.ComparePlayers(Strategies.BigMoneyDoubleJack.Player(), Strategies.BigMoney.Player());
             Program.ComparePlayers(Strategies.BigMoneyWithSilverReplacement.Player(Cards.FishingVillage, "BigMoneyWithFishingDoubleJack", Cards.JackOfAllTrades, count: 2), Strategies.BigMoney.Player());
-            Program.ComparePlayers(Strategies.BigMoneyDoubleJack.Player(), Strategies.BigMoneyWithSilverReplacement.Player(Cards.FishingVillage, "BigMoneyWithFishingDoubleJack", Cards.JackOfAllTrades, count:2));
+            Program.ComparePlayers(Strategies.BigMoneyDoubleJack.Player(), Strategies.BigMoneyWithSilverReplacement.Player(Cards.FishingVillage, "BigMoneyWithFishingDoubleJack", Cards.JackOfAllTrades, count: 2));
         }
     }
 }

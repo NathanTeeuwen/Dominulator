@@ -50,7 +50,7 @@ namespace Program.DefaultStrategies
             PlayerState self = gameState.Self;
 
             int minValue = self.ExpectedCoinValueAtEndOfTurn;
-            int maxValue = minValue + Strategies.CountInHand(Cards.IllGottenGains, gameState);
+            int maxValue = minValue + Strategy.CountInHand(Cards.IllGottenGains, gameState);
 
             if (maxValue == minValue)
                 return false;

@@ -5,27 +5,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Program;
 
-namespace Program
-{
-    public static partial class Strategies
+namespace Strategies
+{    
+    public class BigMoneySimple
+        : Strategy 
     {
-        public static class BigMoneySimple
+        public static PlayerAction Player()
         {
-            public static PlayerAction Player()
-            {
-                return new PlayerAction(
-                            "BigMoneySimple",                            
-                            purchaseOrder: PurchaseOrder());
-            }
+            return new PlayerAction(
+                        "BigMoneySimple",                            
+                        purchaseOrder: PurchaseOrder());
+        }
 
-            private static CardPickByPriority PurchaseOrder()
-            {
-                return new CardPickByPriority(
-                           CardAcceptance.For(Cards.Province),                           
-                           CardAcceptance.For(Cards.Gold),                           
-                           CardAcceptance.For(Cards.Silver));
-            }
+        private static CardPickByPriority PurchaseOrder()
+        {
+            return new CardPickByPriority(
+                        CardAcceptance.For(Cards.Province),                           
+                        CardAcceptance.For(Cards.Gold),                           
+                        CardAcceptance.For(Cards.Silver));
         }
     }
 }

@@ -5,72 +5,71 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Program;
 
-namespace Program
-{
-    public static partial class Strategies
+namespace Strategies
+{    
+    public class DuchyDukeWarehouseEmbassy
+        : Strategy
     {
-        public static class DuchyDukeWarehouseEmbassy
-        {
             
-            public static PlayerAction Player()
-            {
-                return new PlayerAction(
-                            "DuchyDukeWarehouseEmbassy",                            
-                            purchaseOrder: PurchaseOrder(),
-                            treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
-                            actionOrder: ActionOrder(),
-                            trashOrder: Default.EmptyPickOrder(),
-                            discardOrder: DiscardOrder());
-            }
+        public static PlayerAction Player()
+        {
+            return new PlayerAction(
+                        "DuchyDukeWarehouseEmbassy",                            
+                        purchaseOrder: PurchaseOrder(),
+                        treasurePlayOrder: Default.DefaultTreasurePlayOrder(),
+                        actionOrder: ActionOrder(),
+                        trashOrder: Default.EmptyPickOrder(),
+                        discardOrder: DiscardOrder());
+        }
 
-            private static ICardPicker PurchaseOrder()
-            {
-                var highPriority = new CardPickByPriority(
-                     CardAcceptance.For(Cards.Embassy, gameState => CountAllOwned(Cards.Embassy, gameState) < 1),
-                     CardAcceptance.For(Cards.Duchy),
-                     CardAcceptance.For(Cards.Duke));
-
-                var buildOrder = new CardPickByBuildOrder(
-                    CardAcceptance.For(Cards.Silver),
-                    CardAcceptance.For(Cards.Warehouse),
-                    CardAcceptance.For(Cards.Silver),
-                    CardAcceptance.For(Cards.Silver),
-                    CardAcceptance.For(Cards.Silver),
-                    CardAcceptance.For(Cards.Silver),
-                    CardAcceptance.For(Cards.Warehouse),
-                    CardAcceptance.For(Cards.Silver),
-                    CardAcceptance.For(Cards.Silver),
-                    CardAcceptance.For(Cards.Silver),
-                    CardAcceptance.For(Cards.Silver),
-                    CardAcceptance.For(Cards.Warehouse));
-
-                var lowPriority = new CardPickByPriority(
-                           CardAcceptance.For(Cards.Silver));
-
-                return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
-            }
-
-            private static CardPickByPriority ActionOrder()
-            {
-                return new CardPickByPriority(
-                           CardAcceptance.For(Cards.Warehouse),
-                           CardAcceptance.For(Cards.Embassy));
-            }
-
-            private static CardPickByPriority DiscardOrder()
-            {
-                return new CardPickByPriority(
+        private static ICardPicker PurchaseOrder()
+        {
+            var highPriority = new CardPickByPriority(
+                    CardAcceptance.For(Cards.Embassy, gameState => CountAllOwned(Cards.Embassy, gameState) < 1),
                     CardAcceptance.For(Cards.Duchy),
-                    CardAcceptance.For(Cards.Duke),
-                    CardAcceptance.For(Cards.Estate),
-                    CardAcceptance.For(Cards.Copper),
-                    CardAcceptance.For(Cards.Warehouse),
-                    CardAcceptance.For(Cards.Copper),
-                    CardAcceptance.For(Cards.Silver),
-                    CardAcceptance.For(Cards.Embassy),
-                    CardAcceptance.For(Cards.Gold));
-            }
+                    CardAcceptance.For(Cards.Duke));
+
+            var buildOrder = new CardPickByBuildOrder(
+                CardAcceptance.For(Cards.Silver),
+                CardAcceptance.For(Cards.Warehouse),
+                CardAcceptance.For(Cards.Silver),
+                CardAcceptance.For(Cards.Silver),
+                CardAcceptance.For(Cards.Silver),
+                CardAcceptance.For(Cards.Silver),
+                CardAcceptance.For(Cards.Warehouse),
+                CardAcceptance.For(Cards.Silver),
+                CardAcceptance.For(Cards.Silver),
+                CardAcceptance.For(Cards.Silver),
+                CardAcceptance.For(Cards.Silver),
+                CardAcceptance.For(Cards.Warehouse));
+
+            var lowPriority = new CardPickByPriority(
+                        CardAcceptance.For(Cards.Silver));
+
+            return new CardPickConcatenator(highPriority, buildOrder, lowPriority);
+        }
+
+        private static CardPickByPriority ActionOrder()
+        {
+            return new CardPickByPriority(
+                        CardAcceptance.For(Cards.Warehouse),
+                        CardAcceptance.For(Cards.Embassy));
+        }
+
+        private static CardPickByPriority DiscardOrder()
+        {
+            return new CardPickByPriority(
+                CardAcceptance.For(Cards.Duchy),
+                CardAcceptance.For(Cards.Duke),
+                CardAcceptance.For(Cards.Estate),
+                CardAcceptance.For(Cards.Copper),
+                CardAcceptance.For(Cards.Warehouse),
+                CardAcceptance.For(Cards.Copper),
+                CardAcceptance.For(Cards.Silver),
+                CardAcceptance.For(Cards.Embassy),
+                CardAcceptance.For(Cards.Gold));
         }
     }
 }

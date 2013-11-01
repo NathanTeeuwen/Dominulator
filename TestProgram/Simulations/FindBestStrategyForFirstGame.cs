@@ -32,11 +32,11 @@ namespace Program
                 new CardPickByPriority(
                     CardAcceptance.For(Cards.Province),
                     CardAcceptance.For(Cards.Gold),
-                    CardAcceptance.For(Cards.Market, gameState => Strategies.CountAllOwned(Cards.Market, gameState) < 1),
-                    CardAcceptance.For(Cards.Duchy, gameState => Strategies.CountAllOwned(Cards.Duchy, gameState) < 2),
-                    CardAcceptance.For(Cards.Militia, gameState => Strategies.CountAllOwned(Cards.Militia, gameState) < 2),
+                    CardAcceptance.For(Cards.Market, gameState => Strategy.CountAllOwned(Cards.Market, gameState) < 1),
+                    CardAcceptance.For(Cards.Duchy, gameState => Strategy.CountAllOwned(Cards.Duchy, gameState) < 2),
+                    CardAcceptance.For(Cards.Militia, gameState => Strategy.CountAllOwned(Cards.Militia, gameState) < 2),
                     CardAcceptance.For(Cards.Silver),
-                    CardAcceptance.For(Cards.Estate, gameState => Strategies.CountAllOwned(Cards.Militia, gameState) < 1)
+                    CardAcceptance.For(Cards.Estate, gameState => Strategy.CountAllOwned(Cards.Militia, gameState) < 1)
                     ));
             Program.ComparePlayers(player1, Strategies.BigMoneySimple.Player(), showVerboseScore: true);
             Program.ComparePlayers(player1, Strategies.BigMoney.Player(), showVerboseScore: true);

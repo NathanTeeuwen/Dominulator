@@ -24,9 +24,7 @@ namespace Program
         public static bool AlwaysMatch(GameState gameState)
         {
             return true;
-        }
-
-        
+        }        
 
         public CardAcceptance(Card card)
         {

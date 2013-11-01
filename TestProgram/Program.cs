@@ -14,8 +14,8 @@ namespace Program
         {
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
-           
-            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Treasury, cardCount:4), Strategies.BigMoneyWithCard.Player(Cards.Scheme), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames:1000, shouldParallel:false);
+
+            ComparePlayers(Strategies.BigMoney.Player(), Strategies.BigMoneyDoubleJack.Player(), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames: 1000, shouldParallel: false);
             //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:10);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();                        
@@ -39,11 +39,13 @@ namespace Program
         {
             var result = new List<PlayerAction>();
 
-            var assembly = System.Reflection.Assembly.GetCallingAssembly();
-            var type = assembly.GetType("Program.Strategies");
-            foreach (Type innerType in type.GetNestedTypes())
+            var assembly = System.Reflection.Assembly.GetCallingAssembly();            
+            foreach (Type innerType in assembly.GetTypes())
             {
                 if (!innerType.IsClass)
+                    continue;
+
+                if (innerType.Namespace != "Strategies")
                     continue;
 
                 System.Reflection.MethodInfo playerMethodInfo = innerType.GetMethod("Player", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
