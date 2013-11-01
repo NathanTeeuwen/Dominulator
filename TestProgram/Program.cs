@@ -12,15 +12,17 @@ namespace Program
     class Program    
     {        
         static void Main()
-        {                        
+        {
+            System.Console.WriteLine("Loading strategies ...");
             if (!strategyLoader.Load())
                 return;
+            System.Console.WriteLine("Done");
 
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
             
-            ComparePlayers("BigMoney", "BigMoneyDoubleJack", useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames: 1000, shouldParallel: false);
-            CompareStrategyVsAllKnownStrategies("BigMoney", numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:0);
+            //ComparePlayers("BigMoney", "BigMoneyDoubleJack", useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames: 1000, shouldParallel: false);
+            //CompareStrategyVsAllKnownStrategies("BigMoney", numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:0);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();
 

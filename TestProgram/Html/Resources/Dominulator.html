@@ -35,6 +35,37 @@ function PlayGame() {
 </script>
   
 <script type="text/javascript">
+  
+function UpdateallStrategyText()
+{
+    var player1Strat = $("#player1Strategy :selected").text();
+    var player2Strat = $("#player2Strategy :selected").text();    
+    
+    GetStrategyText(player1Strat, function(result)
+    {
+        document.getElementById('player1StrategyText').value = result;
+    });
+    GetStrategyText(player2Strat, function(result)
+    {
+        document.getElementById('player2StrategyText').value = result;
+    });
+}
+
+function GetStrategyText(strategyName, callbackAnswer) {    
+    $.ajax({
+        url: "http://localhost:8081/dominion/GetStrategyText",
+        type: "POST",
+        data: JSON.stringify({name:strategyName}),
+        dataType: "JSON",        
+        success: function (result) {        
+            callbackAnswer(result);            
+        }
+    });
+};
+</script>
+
+  
+<script type="text/javascript">
 
 var nextId = 0;
 
@@ -133,28 +164,42 @@ function GetAvailableGraphs(id) {
 
 <h1>Dominulator</h1>
 
-<br>
-<div>
-  <label>Player1: </label>
-  <select id='player1Strategy'></select>
-  <script type="text/javascript" onChange ='ResetGraphArea()'>    
-      $("#player1Strategy").combobox();    
-      GetAvailableStrategies("#player1Strategy");    
-  </script>
-  <br>
-</div>
-  
-<div>
-  <label>Player2:</label>
-  <select id='player2Strategy'></select>
-  <script type="text/javascript">    
-      $("#player2Strategy").combobox();    
-      GetAvailableStrategies("#player2Strategy");    
-  </script>
-  <br>
-</div>
-  
-<button type="button" onclick="ResetGraphArea(); ShowGraphArea()">Play ...</button>
+<table>
+  <tr>
+    <td width="600px">
+      <div>
+        <h2>Player 1</h2>
+        <br>
+          Pick your strategy ...
+        </br>        
+        <select id='player1Strategy'></select>
+        <script type="text/javascript" onChange ='ResetGraphArea()'>    
+            $("#player1Strategy").combobox();    
+            GetAvailableStrategies("#player1Strategy");    
+        </script>        
+        <br>
+        <textarea id="player1StrategyText" rows='30' cols='80'>my strategy goes here!</textarea>
+      </div>
+    </td>
+    <td width="600px">
+      <div>
+        <h2>Player 2</h2>
+        <br>
+          Pick your strategy ...
+        </br>        
+        <select id='player2Strategy'></select>
+        <script type="text/javascript">    
+            $("#player2Strategy").combobox();    
+            GetAvailableStrategies("#player2Strategy");    
+        </script>
+        <br>
+        <textarea id="player2StrategyText" rows='30' cols='80'>my strategy goes here!</textarea>
+      </div>
+    </td>
+  </tr>
+</table>
+<br>    
+<button type="button" onclick="ResetGraphArea(); ShowGraphArea(); UpdateallStrategyText()">Play ...</button>
 
 <div id="GraphArea" style="display: none;">
   <script type="text/javascript">            
@@ -186,7 +231,7 @@ function GetAvailableGraphs(id) {
               data: JSON.stringify({ player1:player1Strat, player2:player2Strat, gameNumber: gameNumber}),
               dataType: "json",        
               success: function (result) {        
-                  document.getElementById('gameLogTextArea').value = result;                  
+                  document.getElementById('gameLogTextArea').value = result;
               }
           });  
         }

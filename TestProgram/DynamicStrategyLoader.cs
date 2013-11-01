@@ -10,12 +10,12 @@ namespace Program
 {
     class StrategyLoader
     {
-        static string strategyOutputFolder = "DominulatorStrategies";
-
-        PlayerAction[] playerActions = null;
+        static string strategyOutputFolder = "DominulatorStrategies";       
+        PlayerActionAndSource[] playerActions = null;
 
         public StrategyLoader()
-        {           
+        {
+            InitGetCompiler();
         }
 
         public bool Load()
@@ -24,19 +24,16 @@ namespace Program
             {
                 return false;
             }
-            
-            var loadedAssembly = LoadAllCustomStrategies();
-            if (loadedAssembly == null)
-                return false;
 
-            this.playerActions = GetAllPlayerActions(loadedAssembly);
+            if (!LoadAllCustomStrategies())
+                return false;                        
 
             return true;
         }
 
         public IEnumerable<PlayerAction> AllStrategies()
         {
-            return this.playerActions;
+            return this.playerActions.Select(a => a.playerAction);
         }
 
         public PlayerAction GetPlayerAction(object playerActionOrString)
@@ -51,7 +48,27 @@ namespace Program
 
         public PlayerAction GetPlayerAction(string name)
         {
-            return this.playerActions.Where(playerAction => playerAction.name == name).FirstOrDefault();
+            return this.playerActions.Where(playerAction => playerAction.playerAction.name == name).Select(playerAction => playerAction.playerAction).FirstOrDefault();            
+        }
+
+        public string GetPlayerSource(string name)
+        {
+            string fileName = this.playerActions.Where(playerAction => playerAction.playerAction.name == name).Select(action => action.fileName).FirstOrDefault();
+            if (fileName == null)
+                return "Strategy Not Found";
+
+            try
+            {
+                using (var reader = new System.IO.StreamReader(fileName))
+                {
+                    string result = reader.ReadToEnd();
+                    return result;
+                }
+            }
+            catch
+            {
+                return "Error loading file: " + name;
+            }
         }
 
         public static PlayerAction[] GetAllPlayerActions(System.Reflection.Assembly assembly)
@@ -138,26 +155,48 @@ namespace Program
             return true;
         }
 
-        public static System.Reflection.Assembly LoadAllCustomStrategies()
+        public bool LoadAllCustomStrategies()
         {
+            var result = new List<PlayerActionAndSource>();
+            
             string[] files = System.IO.Directory.GetFiles(strategyOutputFolder);
-            return DynamicallyLoadFromFile(files);
+            foreach (string file in files)
+            {
+                System.Reflection.Assembly assembly = DynamicallyLoadFromFile(file);
+                if (assembly == null)
+                    return false;
+                foreach (PlayerAction playerAction in GetAllPlayerActions(assembly))
+                {
+                    result.Add( new PlayerActionAndSource(file, playerAction));
+                }
+            }
+
+            this.playerActions = result.ToArray();
+
+            return true;
         }
 
-        public static System.Reflection.Assembly DynamicallyLoadFromFile(params string[] sourceFiles)
+        CSharpCodeProvider provider;
+        CompilerParameters CompilerParams;
+
+        void InitGetCompiler()
         {
-            CompilerParameters CompilerParams = new CompilerParameters();            
+            CompilerParams = new CompilerParameters();
 
             CompilerParams.GenerateInMemory = true;
             CompilerParams.TreatWarningsAsErrors = false;
             CompilerParams.GenerateExecutable = false;
-            CompilerParams.CompilerOptions = "/optimize";            
+            CompilerParams.CompilerOptions = "/optimize";
 
             string[] references = { "System.dll", "Dominion.dll", "System.Core.dll", "System.Data.Dll", "Dominion.Strategy.dll" };
             CompilerParams.ReferencedAssemblies.AddRange(references);
 
-            CSharpCodeProvider provider = new CSharpCodeProvider();
-            CompilerResults compile = provider.CompileAssemblyFromFile(CompilerParams, sourceFiles);
+            provider = new CSharpCodeProvider();            
+        }
+
+        public System.Reflection.Assembly DynamicallyLoadFromFile(params string[] sourceFiles)
+        {            
+            CompilerResults compile = provider.CompileAssemblyFromFile(CompilerParams, sourceFiles);            
 
             if (compile.Errors.HasErrors)
             {
@@ -172,6 +211,18 @@ namespace Program
             }
 
             return compile.CompiledAssembly;
-        }       
+        }
+
+        class PlayerActionAndSource
+        {
+            public PlayerActionAndSource(string fileName, PlayerAction playerAction)
+            {
+                this.fileName = fileName;
+                this.playerAction = playerAction;
+            }
+
+            public readonly string fileName;
+            public readonly PlayerAction playerAction;
+        }
     }
 }

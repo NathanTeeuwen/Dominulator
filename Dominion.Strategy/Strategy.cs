@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Dominion.Strategy
 {
     public class Strategy
-    {      
+    {        
         public enum RelativeAmount
         {            
             LessThan,

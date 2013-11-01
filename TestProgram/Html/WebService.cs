@@ -159,6 +159,17 @@ namespace Program
         }
     }
 
+    [Serializable]
+    public class GetStrategyText
+        : IRequestWithJsonResponse
+    {
+        public string name { get; set; }
+
+        public object GetResponse(WebService service)
+        {
+            return Program.strategyLoader.GetPlayerSource(this.name);
+        }
+    }
 
     [Serializable]
     public class StrategyComparisonRequest 
@@ -246,7 +257,7 @@ namespace Program
             return options;
         }
     }   
-
+    /*
     class ProbabilityPlayerIsAheadAtEndOfRound
         : PerTurnGraph,
           IRequestWithJsonResponse
@@ -260,7 +271,7 @@ namespace Program
                 comparisonResults.statGatherer.oddsOfBeingAheadOnRoundEnd);
         }
     }
-
+    */
     class VictoryPointTotalPerTurn
        : PerTurnGraph,
          IRequestWithJsonResponse
@@ -343,7 +354,7 @@ namespace Program
         {
             typeof(GameBreakdown),
             typeof(PointSpread),
-            typeof(ProbabilityPlayerIsAheadAtEndOfRound),
+            //typeof(ProbabilityPlayerIsAheadAtEndOfRound),
             typeof(VictoryPointTotalPerTurn),            
         };
 
@@ -351,8 +362,9 @@ namespace Program
         {            
             typeof(GetAvailableStrategies),
             typeof(StrategyComparisonRequest),
+            typeof(GetStrategyText),
             typeof(GetAvailableGraphs),
-            typeof(GetGameLog),            
+            typeof(GetGameLog),                        
         };
 
         private string defaultPage = HtmlRenderer.GetEmbeddedContent("Dominulator.html");        
