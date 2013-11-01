@@ -1,7 +1,7 @@
 ﻿using Dominion;
 using System.Collections.Generic;
 
-namespace Program.DefaultPlayRules
+namespace Dominion.Strategy.DefaultPlayRules
 {
     class CompareCardForBanningForDrawIntoHand
             : IComparer<Card>

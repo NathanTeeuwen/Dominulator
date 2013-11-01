@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CardTypes = Dominion.CardTypes;
 using Dominion;
+using Dominion.Strategy;
 
 namespace Program
 {

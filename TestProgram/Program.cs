@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 using CardTypes = Dominion.CardTypes;
 using Dominion;
+using Dominion.Strategy;
 
 namespace Program
 {
@@ -20,7 +21,7 @@ namespace Program
             stopwatch.Start();
             
             ComparePlayers(Strategies.BigMoney.Player(), Strategies.BigMoneyDoubleJack.Player(), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames: 1000, shouldParallel: false);
-            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:10);
+            CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:0);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();                                    
 
@@ -28,15 +29,16 @@ namespace Program
 
             WaitForAllBackgroundTasks();            
 
-            if (totalGameCount > 0)
+            if (StrategyComparison.totalGameCount > 0)
             {
                 System.Console.WriteLine("");
                 System.Console.WriteLine("Elapsed Time: {0}s", (double)stopwatch.ElapsedMilliseconds / 1000);
-                System.Console.WriteLine("Total Games Player: {0}", totalGameCount);
-                System.Console.WriteLine("Elapsed Time per game: {0}us", stopwatch.ElapsedMilliseconds * 1000 / totalGameCount);
+                System.Console.WriteLine("Total Games Player: {0}", StrategyComparison.totalGameCount);
+                System.Console.WriteLine("Elapsed Time per game: {0}us", stopwatch.ElapsedMilliseconds * 1000 / StrategyComparison.totalGameCount);
                 System.Console.WriteLine("Elapsed Time per Players Turn: {0}ns", (int)((double)stopwatch.ElapsedTicks / System.Diagnostics.Stopwatch.Frequency * 1000 * 1000 * 1000 / GameState.turnTotalCount));
             }
 
+            System.Console.WriteLine("Running Web Service ...");
             new WebService().Run();
         }
 
@@ -194,9 +196,7 @@ namespace Program
         static string GetOuputFilename(string filename)
         {
             return "..\\..\\Results\\" + filename;
-        }        
-
-        static int totalGameCount = 0;
+        }                
 
         public static double ComparePlayers(
             PlayerAction player1,

@@ -1,8 +1,9 @@
 ﻿using Dominion;
+using Dominion.Strategy;
 using System;
 using System.Linq;
 
-namespace Program.DefaultPlayRules
+namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class MarketSquare
       : UnimplementedPlayerAction

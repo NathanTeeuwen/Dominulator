@@ -1,4 +1,6 @@
 ﻿using Dominion;
+using Dominion.Strategy;
+using Dominion.Strategy.Description;
 using CardTypes = Dominion.CardTypes;
 using System;
 using System.Collections.Generic;

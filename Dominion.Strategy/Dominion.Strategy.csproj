@@ -40,9 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CardAcceptance.cs" />
-    <Compile Include="CardPickByBuilderOrder.cs" />
-    <Compile Include="CardPickByPriority.cs" />
-    <Compile Include="CardPickConcatenator.cs" />
+    <Compile Include="CardPicker\CardPickByBuilderOrder.cs" />
+    <Compile Include="CardPicker\CardPickByPriority.cs" />
+    <Compile Include="CardPicker\CardPickConcatenator.cs" />
     <Compile Include="DefaultPlayRules\CardOverrides.cs" />
     <Compile Include="DefaultPlayRules\Cards\Alchemist.cs" />
     <Compile Include="DefaultPlayRules\Cards\Ambassador.cs" />
@@ -75,7 +75,7 @@
     <Compile Include="Description\Comparison.cs" />
     <Compile Include="Description\CountSource.cs" />
     <Compile Include="Description\MatchDescription.cs" />
-    <Compile Include="ICardPicker.cs" />
+    <Compile Include="CardPicker\ICardPicker.cs" />
     <Compile Include="PlayerAction.cs" />
     <Compile Include="PlayerActionFromCardResponses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

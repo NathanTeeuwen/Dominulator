@@ -1,8 +1,9 @@
 ﻿using Dominion;
+using Dominion.Strategy;
 using System;
 using System.Linq;
 
-namespace Program.DefaultPlayRules
+namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Cartographer
         : UnimplementedPlayerAction
@@ -19,7 +20,7 @@ namespace Program.DefaultPlayRules
             // good for cartographer, not sure about anyone else.
             foreach (Card card in gameState.Self.CardsBeingRevealed)
             {
-                bool shouldDiscard = card.isVictory || card == Cards.Copper;
+                bool shouldDiscard = card.isVictory || card == Dominion.Cards.Copper;
                 if (!shouldDiscard)
                 {
                     return card;

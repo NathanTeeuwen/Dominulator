@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Program
+namespace Dominion.Strategy
 {
     public class CardPickByPriority
         : ICardPicker

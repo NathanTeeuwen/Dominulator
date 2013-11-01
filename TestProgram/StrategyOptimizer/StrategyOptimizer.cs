@@ -3,6 +3,8 @@ using System.Linq;
 
 using CardTypes = Dominion.CardTypes;
 using Dominion;
+using Dominion.Strategy;
+using Dominion.Strategy.Description;
 
 namespace Program
 {

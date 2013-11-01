@@ -1,4 +1,4 @@
-﻿namespace Program
+﻿namespace Dominion.Strategy.Description
 {
     public enum Comparison
     {

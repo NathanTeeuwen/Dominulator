@@ -1,8 +1,9 @@
 ﻿using Dominion;
+using Dominion.Strategy;
 using System;
 using System.Linq;
 
-namespace Program.DefaultPlayRules
+namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Rebuild
         : UnimplementedPlayerAction
@@ -26,97 +27,97 @@ namespace Program.DefaultPlayRules
             int pointLead = Strategy.PlayersPointLead(gameState);
 
             //Name Duchy
-            if (Strategy.CountOfPile(Cards.Duchy, gameState) > 0 &&
-                Strategy.CountInDeckAndDiscard(Cards.Estate, gameState) > 0 &&
-                (Strategy.CountInDeckAndDiscard(Cards.Province, gameState) == 0 ||
-                    Strategy.CountInDeck(Cards.Province, gameState) == 0 &&
-                    Strategy.CountInDeck(Cards.Duchy, gameState) > 0 &&
-                    Strategy.CountInDeck(Cards.Estate, gameState) > 0))
+            if (Strategy.CountOfPile(Dominion.Cards.Duchy, gameState) > 0 &&
+                Strategy.CountInDeckAndDiscard(Dominion.Cards.Estate, gameState) > 0 &&
+                (Strategy.CountInDeckAndDiscard(Dominion.Cards.Province, gameState) == 0 ||
+                    Strategy.CountInDeck(Dominion.Cards.Province, gameState) == 0 &&
+                    Strategy.CountInDeck(Dominion.Cards.Duchy, gameState) > 0 &&
+                    Strategy.CountInDeck(Dominion.Cards.Estate, gameState) > 0))
             {
-                return Cards.Duchy;
+                return Dominion.Cards.Duchy;
             }
 
             //Name Province if you are ensured of gaining a Province
-            if (Strategy.CountInDeck(Cards.Estate, gameState) == 0 &&
-                Strategy.CountInDeck(Cards.Province, gameState) >= 0 &&
-                Strategy.CountInDeck(Cards.Duchy, gameState) > 0)
+            if (Strategy.CountInDeck(Dominion.Cards.Estate, gameState) == 0 &&
+                Strategy.CountInDeck(Dominion.Cards.Province, gameState) >= 0 &&
+                Strategy.CountInDeck(Dominion.Cards.Duchy, gameState) > 0)
             {
-                return Cards.Province;
+                return Dominion.Cards.Province;
             }
 
             //Name Province if you are ensured of gaining a Province
-            if (Strategy.CountInDeckAndDiscard(Cards.Estate, gameState) == 0
-                && Strategy.CountInDeckAndDiscard(Cards.Province, gameState) >= 0
-                && Strategy.CountInDeckAndDiscard(Cards.Duchy, gameState) > 0)
+            if (Strategy.CountInDeckAndDiscard(Dominion.Cards.Estate, gameState) == 0
+                && Strategy.CountInDeckAndDiscard(Dominion.Cards.Province, gameState) >= 0
+                && Strategy.CountInDeckAndDiscard(Dominion.Cards.Duchy, gameState) > 0)
             {
-                return Cards.Province;
+                return Dominion.Cards.Province;
             }
 
             //Name Estate if you can end it with a win                    
-            if (Strategy.CountInHand(Cards.Rebuild, gameState) + 1 >= Strategy.CountOfPile(Cards.Province, gameState) &&
+            if (Strategy.CountInHand(Dominion.Cards.Rebuild, gameState) + 1 >= Strategy.CountOfPile(Dominion.Cards.Province, gameState) &&
                 pointLead > 0)
             {
-                return Cards.Estate;
+                return Dominion.Cards.Estate;
             }
 
             //Name Estate if it's the only thing left in your draw pile and the Duchies are gone
-            if (Strategy.CountOfPile(Cards.Duchy, gameState) == 0 &&
-                Strategy.CountInDeck(Cards.Province, gameState) == 0 &&
-                Strategy.CountInDeck(Cards.Estate, gameState) > 0)
+            if (Strategy.CountOfPile(Dominion.Cards.Duchy, gameState) == 0 &&
+                Strategy.CountInDeck(Dominion.Cards.Province, gameState) == 0 &&
+                Strategy.CountInDeck(Dominion.Cards.Estate, gameState) > 0)
             {
-                return Cards.Estate;
+                return Dominion.Cards.Estate;
             }
 
             //Name Province if Duchy is in Draw and Draw contains more P than E
-            if (Strategy.CountOfPile(Cards.Duchy, gameState) == 0 &&
-                Strategy.CountInDeck(Cards.Duchy, gameState) > 0 &&
-                Strategy.CountInDeck(Cards.Province, gameState) > Strategy.CountInDeck(Cards.Estate, gameState))
+            if (Strategy.CountOfPile(Dominion.Cards.Duchy, gameState) == 0 &&
+                Strategy.CountInDeck(Dominion.Cards.Duchy, gameState) > 0 &&
+                Strategy.CountInDeck(Dominion.Cards.Province, gameState) > Strategy.CountInDeck(Dominion.Cards.Estate, gameState))
             {
-                return Cards.Province;
+                return Dominion.Cards.Province;
             }
 
             //Name Estate if you're ahead and both P and E are left in draw
-            if (Strategy.CountOfPile(Cards.Duchy, gameState) == 0 &&
-                Strategy.CountInDeck(Cards.Province, gameState) > 0 &&
-                Strategy.CountInDeck(Cards.Estate, gameState) > 0 &&
+            if (Strategy.CountOfPile(Dominion.Cards.Duchy, gameState) == 0 &&
+                Strategy.CountInDeck(Dominion.Cards.Province, gameState) > 0 &&
+                Strategy.CountInDeck(Dominion.Cards.Estate, gameState) > 0 &&
                 pointLead > 2)
             {
-                return Cards.Estate;
+                return Dominion.Cards.Estate;
             }
 
             //Name Estate over Province if you're way ahead
-            if (Strategy.CountOfPile(Cards.Duchy, gameState) == 0 &&
-                Strategy.CountInDeckAndDiscard(Cards.Province, gameState) > 0 &&
-                Strategy.CountInDeckAndDiscard(Cards.Duchy, gameState) < 3 &&
-                Strategy.CountInDeckAndDiscard(Cards.Estate, gameState) > 0 &&
+            if (Strategy.CountOfPile(Dominion.Cards.Duchy, gameState) == 0 &&
+                Strategy.CountInDeckAndDiscard(Dominion.Cards.Province, gameState) > 0 &&
+                Strategy.CountInDeckAndDiscard(Dominion.Cards.Duchy, gameState) < 3 &&
+                Strategy.CountInDeckAndDiscard(Dominion.Cards.Estate, gameState) > 0 &&
                 pointLead > 4)
             {
-                return Cards.Estate;
+                return Dominion.Cards.Estate;
             }
 
             //Province -> Province when ahead without any Duchies left
-            if (Strategy.CountOfPile(Cards.Duchy, gameState) == 0 &&
-                Strategy.CountAllOwned(Cards.Duchy, gameState) == 0 &&
+            if (Strategy.CountOfPile(Dominion.Cards.Duchy, gameState) == 0 &&
+                Strategy.CountAllOwned(Dominion.Cards.Duchy, gameState) == 0 &&
                 pointLead > 0)
             {
-                return Cards.Estate;
+                return Dominion.Cards.Estate;
             }
 
             //Province -> Province when ahead without any Duchies not in hand
-            if (Strategy.CountOfPile(Cards.Duchy, gameState) == 0 &&
-                Strategy.CountInDeckAndDiscard(Cards.Duchy, gameState) == 0 &&
-                Strategy.CountInDeckAndDiscard(Cards.Province, gameState) > 0 &&
+            if (Strategy.CountOfPile(Dominion.Cards.Duchy, gameState) == 0 &&
+                Strategy.CountInDeckAndDiscard(Dominion.Cards.Duchy, gameState) == 0 &&
+                Strategy.CountInDeckAndDiscard(Dominion.Cards.Province, gameState) > 0 &&
                 pointLead > 2)
             {
-                return Cards.Estate;
+                return Dominion.Cards.Estate;
             }
 
-            if (Strategy.CountInDeckAndDiscard(Cards.Province, gameState) > 0)
+            if (Strategy.CountInDeckAndDiscard(Dominion.Cards.Province, gameState) > 0)
             {
-                return Cards.Province;
+                return Dominion.Cards.Province;
             }
 
-            return Cards.Estate;
+            return Dominion.Cards.Estate;
         }
     }
 }

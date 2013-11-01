@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program
+namespace Dominion.Strategy
 {
     class PlayerActionFromCardResponses
         : IPlayerAction

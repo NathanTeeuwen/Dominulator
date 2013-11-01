@@ -1,8 +1,9 @@
 ﻿using Dominion;
+using Dominion.Strategy;
 using System;
 using System.Linq;
 
-namespace Program.DefaultPlayRules
+namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class MysticAndWishingWell
        : UnimplementedPlayerAction
@@ -24,9 +25,9 @@ namespace Program.DefaultPlayRules
 
             CollectionCards cards = self.CardsInDeck.Any ? self.CardsInDeck : self.Discard;
             if (cards.Any)
-                return cards.MostCommonCardWhere(card => card != Cards.Estate && !card.isShelter);
+                return cards.MostCommonCardWhere(card => card != Dominion.Cards.Estate && !card.isShelter);
             else
-                return Cards.Estate;
+                return Dominion.Cards.Estate;
         }
     }
 }

@@ -1,8 +1,9 @@
 ﻿using Dominion;
+using Dominion.Strategy;
 using System;
 using System.Linq;
 
-namespace Program.DefaultPlayRules
+namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     public class Count
        : UnimplementedPlayerAction
@@ -64,21 +65,21 @@ namespace Program.DefaultPlayRules
         {
             return DoesHandHaveCombinationToTrash(playerAction, gameState) &&
                    Strategy.HasCardFromInHand(playerAction.trashOrder, gameState) &&
-                   !playerAction.IsGainingCard(Cards.Province, gameState);
+                   !playerAction.IsGainingCard(Dominion.Cards.Province, gameState);
         }
 
         private static bool PreferMoneyOverDuchy(PlayerAction playerAction, GameState gameState)
         {
-            if (!gameState.GetPile(Cards.Duchy).Any)
+            if (!gameState.GetPile(Dominion.Cards.Duchy).Any)
                 return true;
 
             int minCoin = gameState.Self.ExpectedCoinValueAtEndOfTurn;
             int maxCoin = minCoin + 3;
 
             Card mostExpensiveCard = playerAction.purchaseOrder.GetPreferredCard(gameState, card => card.CurrentCoinCost(gameState.Self) > minCoin && card.CurrentCoinCost(gameState.Self) <= maxCoin);
-            Card thatOrDuchy = playerAction.purchaseOrder.GetPreferredCard(gameState, card => card == Cards.Duchy || card == mostExpensiveCard);
+            Card thatOrDuchy = playerAction.purchaseOrder.GetPreferredCard(gameState, card => card == Dominion.Cards.Duchy || card == mostExpensiveCard);
 
-            if (mostExpensiveCard != null && thatOrDuchy != Cards.Duchy)
+            if (mostExpensiveCard != null && thatOrDuchy != Dominion.Cards.Duchy)
                 return true;
 
             return false;

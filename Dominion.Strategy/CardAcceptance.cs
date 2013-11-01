@@ -1,6 +1,7 @@
 ﻿using Dominion;
+using Dominion.Strategy.Description;
 
-namespace Program
+namespace Dominion.Strategy
 {  
     public class CardAcceptance
     {

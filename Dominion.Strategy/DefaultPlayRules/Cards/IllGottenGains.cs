@@ -1,8 +1,9 @@
 ﻿using Dominion;
+using Dominion.Strategy;
 using System;
 using System.Linq;
 
-namespace Program.DefaultPlayRules
+namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class IllGottenGainsAlwaysGainCopper
         : UnimplementedPlayerAction
@@ -50,7 +51,7 @@ namespace Program.DefaultPlayRules
             PlayerState self = gameState.Self;
 
             int minValue = self.ExpectedCoinValueAtEndOfTurn;
-            int maxValue = minValue + Strategy.CountInHand(Cards.IllGottenGains, gameState);
+            int maxValue = minValue + Strategy.CountInHand(Dominion.Cards.IllGottenGains, gameState);
 
             if (maxValue == minValue)
                 return false;

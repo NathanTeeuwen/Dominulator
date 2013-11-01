@@ -1,7 +1,7 @@
 ﻿using Dominion;
 using System.Linq;
 
-namespace Program
+namespace Dominion.Strategy.Description
 {
     public class CardAcceptanceDescription
     {

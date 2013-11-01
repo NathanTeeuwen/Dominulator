@@ -1,4 +1,5 @@
 ﻿using Dominion;
+using Dominion.Strategy.Description;
 using CardTypes = Dominion.CardTypes;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program
+namespace Dominion.Strategy
 {
     public delegate bool GameStatePlayerActionPredicate(GameState gameState, PlayerAction playerAction);    
 

@@ -1,6 +1,7 @@
 ﻿using Dominion;
+using Dominion.Strategy;
 
-namespace Program.DefaultPlayRules
+namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Alchemist
       : UnimplementedPlayerAction

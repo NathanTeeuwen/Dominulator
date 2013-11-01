@@ -1,8 +1,10 @@
 ﻿using Dominion;
+using Dominion.Strategy;
+using Dominion.Strategy.DefaultPlayRules.Cards;
 using System;
 using System.Linq;
 
-namespace Program.DefaultPlayRules
+namespace Dominion.Strategy.DefaultPlayRules
 {    
     static class DefaultResponses
     {
@@ -10,28 +12,28 @@ namespace Program.DefaultPlayRules
         {
             var result = new MapOfCards<IPlayerAction>();
 
-            result[Cards.Ambassador] = new Ambassador(playerAction);
-            result[Cards.Alchemist] = new Alchemist(playerAction);
-            result[Cards.BandOfMisfits] = new BandOfMisfits(playerAction);
-            result[Cards.Cartographer] = new Cartographer(playerAction);
-            result[Cards.Catacombs] = new Catacombs(playerAction);
-            result[Cards.Chancellor] = new Chancellor(playerAction);
-            result[Cards.Count] = new Count(playerAction);
-            result[Cards.Golem] = new Golem(playerAction);
-            result[Cards.HorseTraders] = new HorseTraders(playerAction);
-            result[Cards.IllGottenGains] = new IllGottenGainsAlwaysGainCopper(playerAction);
-            result[Cards.Library] = new Library(playerAction);
-            result[Cards.MarketSquare] = new MarketSquare(playerAction);
-            result[Cards.Mystic] = new MysticAndWishingWell(playerAction);
-            result[Cards.Nobles] = new Nobles(playerAction);
-            result[Cards.Rebuild] = new Rebuild(playerAction);
-            result[Cards.ScryingPool] = new ScryingPool(playerAction);
-            result[Cards.Scheme] = new Scheme(playerAction);
-            result[Cards.Treasury] = new Treasury(playerAction);
-            result[Cards.Trader] = new Trader(playerAction);
-            result[Cards.Watchtower] = new Watchtower(playerAction);
-            result[Cards.WalledVillage] = new WalledVillage(playerAction);
-            result[Cards.WishingWell] = result[Cards.Mystic];
+            result[Dominion.Cards.Ambassador] = new Ambassador(playerAction);
+            result[Dominion.Cards.Alchemist] = new Alchemist(playerAction);
+            result[Dominion.Cards.BandOfMisfits] = new BandOfMisfits(playerAction);
+            result[Dominion.Cards.Cartographer] = new Cartographer(playerAction);
+            result[Dominion.Cards.Catacombs] = new Catacombs(playerAction);
+            result[Dominion.Cards.Chancellor] = new Chancellor(playerAction);
+            result[Dominion.Cards.Count] = new Count(playerAction);
+            result[Dominion.Cards.Golem] = new Golem(playerAction);
+            result[Dominion.Cards.HorseTraders] = new HorseTraders(playerAction);
+            result[Dominion.Cards.IllGottenGains] = new IllGottenGainsAlwaysGainCopper(playerAction);
+            result[Dominion.Cards.Library] = new Library(playerAction);
+            result[Dominion.Cards.MarketSquare] = new MarketSquare(playerAction);
+            result[Dominion.Cards.Mystic] = new MysticAndWishingWell(playerAction);
+            result[Dominion.Cards.Nobles] = new Nobles(playerAction);
+            result[Dominion.Cards.Rebuild] = new Rebuild(playerAction);
+            result[Dominion.Cards.ScryingPool] = new ScryingPool(playerAction);
+            result[Dominion.Cards.Scheme] = new Scheme(playerAction);
+            result[Dominion.Cards.Treasury] = new Treasury(playerAction);
+            result[Dominion.Cards.Trader] = new Trader(playerAction);
+            result[Dominion.Cards.Watchtower] = new Watchtower(playerAction);
+            result[Dominion.Cards.WalledVillage] = new WalledVillage(playerAction);
+            result[Dominion.Cards.WishingWell] = result[Dominion.Cards.Mystic];
 
             return result;
         }
@@ -40,10 +42,10 @@ namespace Program.DefaultPlayRules
         {
             var result = new MapOfCards<GameStatePlayerActionPredicate>();
 
-            result[Cards.Remodel] = Strategy.HasCardToTrashInHand;
-            result[Cards.Salvager] = Strategy.HasCardToTrashInHand;
-            result[Cards.Bishop] = Strategy.HasCardToTrashInHand;
-            result[Cards.Lookout] = Lookout.ShouldPlay;
+            result[Dominion.Cards.Remodel] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Salvager] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Bishop] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Lookout] = Lookout.ShouldPlay;
 
             return result;
         }

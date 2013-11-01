@@ -1,8 +1,9 @@
 ﻿using Dominion;
+using Dominion.Strategy;
 using System;
 using System.Linq;
 
-namespace Program.DefaultPlayRules
+namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Nobles
        : UnimplementedPlayerAction
@@ -15,11 +16,11 @@ namespace Program.DefaultPlayRules
         }
 
         public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
-        {            
-            if (gameState.Self.Hand.HasCard(Cards.Nobles) && gameState.Self.AvailableActions == 0)
+        {
+            if (gameState.Self.Hand.HasCard(Dominion.Cards.Nobles) && gameState.Self.AvailableActions == 0)
                 return PlayerActionChoice.PlusAction;
 
-            if (playerAction.IsGainingCard(Cards.Province, gameState))
+            if (playerAction.IsGainingCard(Dominion.Cards.Province, gameState))
                 return PlayerActionChoice.PlusCard;
 
             if (gameState.Self.Hand.AnyWhere(card => card.isAction) && gameState.Self.AvailableActions == 0)
