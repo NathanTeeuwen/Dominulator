@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataGathering\Delegates.cs" />
+    <Compile Include="DataGathering\StrategyComparisonResults.cs" />
     <Compile Include="DataGathering\StrategyComparison.cs" />
     <Compile Include="Resources.cs" />
     <Compile Include="DataGathering\HistogramData.cs" />

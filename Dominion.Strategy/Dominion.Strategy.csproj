@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CardAcceptance.cs" />
+    <Compile Include="CardPicker\CardAcceptance.cs" />
     <Compile Include="CardPicker\CardPickByBuilderOrder.cs" />
     <Compile Include="CardPicker\CardPickByPriority.cs" />
     <Compile Include="CardPicker\CardPickConcatenator.cs" />
