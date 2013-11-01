@@ -178,6 +178,7 @@ function GetAvailableGraphs(id) {
             
           function OnPlayer1StratChanged()
           {
+              $("#StrategyArea").tabs("option", "active", 0);
               UpdateStrategyText1();
           };
       </script>        
@@ -191,6 +192,7 @@ function GetAvailableGraphs(id) {
             
           function OnPlayer2StratChanged()
           {
+              $("#StrategyArea").tabs("option", "active", 1);
               UpdateStrategyText2();
           };
       </script>      
@@ -264,11 +266,15 @@ function GetAvailableGraphs(id) {
     <script>    
           $( "#InsertGraphButton" ).button();    
     </script>
-    <select id='selectedGraph''></select>
+    <select id='selectedGraph'></select>
     <script type="text/javascript">    
         $("#selectedGraph").combobox();       
     </script>
-    <br>
+    <button type="button" id="ClearGraphsButton" onclick="ClearGraphs();" style="margin:50px;">Clear</button>
+    <script>    
+          $( "#ClearGraphsButton" ).button();    
+    </script>
+    <br>      
     <br>
     <div id="chartsInsertionPoint"></div>
   </div>  
@@ -288,10 +294,15 @@ function GetAvailableGraphs(id) {
     InsertGraph("GameBreakdown");
   }
   
+  function ClearGraphs()
+  {
+     $("#chartsInsertionPoint").empty();
+  }  
+  
   function ResetPlayedArea()
   {
     //document.getElementById('PlayedArea').style.display = "none";
-    $("#chartsInsertionPoint").empty();
+    ClearGraphs();
   }
   </script>     
 
