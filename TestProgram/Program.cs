@@ -15,7 +15,7 @@ namespace Program
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
            
-            //ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Treasury, cardCount:4), Strategies.BigMoneyWithCard.Player(Cards.Scheme), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames:1000, shouldParallel:false);
+            ComparePlayers(Strategies.BigMoneyWithCard.Player(Cards.Treasury, cardCount:4), Strategies.BigMoneyWithCard.Player(Cards.Scheme), useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames:1000, shouldParallel:false);
             //CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:10);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();                        

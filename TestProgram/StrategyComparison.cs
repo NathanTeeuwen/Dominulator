@@ -16,7 +16,7 @@ namespace Program
 
         public readonly HistogramData pointSpreadHistogramData;
         public readonly HistogramData gameEndOnTurnHistogramData;
-        public readonly StatsPerTurnGameLog statGathererGameLog;
+        public readonly StatsPerTurnGameLog statGatherer;
         public readonly int[] winnerCount;
         public int maxTurnNumber;                
         public int tieCount;
@@ -24,7 +24,7 @@ namespace Program
         public StrategyComparisonResults(StrategyComparison comparison, bool gatherStats)
         {
             this.comparison = comparison;
-            this.statGathererGameLog = gatherStats ? new StatsPerTurnGameLog(2, comparison.gameConfig.cardGameSubset) : null;
+            this.statGatherer = gatherStats ? new StatsPerTurnGameLog(2, comparison.gameConfig.cardGameSubset) : null;
             this.winnerCount = new int[2];
             this.tieCount = 0;
             this.maxTurnNumber = -1;
@@ -118,7 +118,7 @@ namespace Program
                     var gameLogs = new List<IGameLog>();
                     if (gatherStats)
                     {
-                        gameLogs.Add(result.statGathererGameLog);
+                        gameLogs.Add(result.statGatherer);
                     }
                     if (createGameLog != null)
                     {

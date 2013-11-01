@@ -166,8 +166,8 @@ namespace Program
 
         public float[] GetAveragePerTurn(int playerIndex, int throughTurn, PerTurnPlayerCountersSeparatedByGame counts)
         {
-            counts.AggregateAllDataIfNecessary();
             AggregateAllDataIfNecessary();
+            counts.AggregateAllDataIfNecessary();            
             return aggregatedResult.GetAveragePerTurn(playerIndex, throughTurn, counts.aggregatedResult);
         }
 

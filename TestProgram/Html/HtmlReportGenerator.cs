@@ -68,7 +68,7 @@ namespace Program
                 pieData.Add((float)this.comparisonResults.TiePercent);
             }
 
-            var statGatherer = this.comparisonResults.statGathererGameLog;
+            var statGatherer = this.comparisonResults.statGatherer;
             var gameConfig = this.comparisonResults.comparison.gameConfig;
             var gameEndOnTurnHistogramData = this.comparisonResults.gameEndOnTurnHistogramData;
 

@@ -10,6 +10,36 @@ namespace Program
 {
     static class GoogleChartsHelper
     {
+        public static object GetLineGraphOptions(           
+           string title,           
+           string player1Name,
+           string player2Name,
+           ForwardAndReversePerTurnPlayerCounters forwardAndReverseCounters,
+           ForwardAndReversePerTurnPlayerCounters turnCounters,
+           int throughTurn)
+        {
+            return GetLineGraphOptions(
+                title,
+                "Turn",                               
+                player1Name,
+                player2Name,
+                Enumerable.Range(1, throughTurn).ToArray(),
+                forwardAndReverseCounters.forwardTotal.GetAveragePerTurn(0, throughTurn, turnCounters.forwardTotal),
+                forwardAndReverseCounters.forwardTotal.GetAveragePerTurn(1, throughTurn, turnCounters.forwardTotal));
+        }
+
+        public static object GetLineGraphOptions(
+           string title,
+           string xAxisLabel,
+           string series1Label,
+           string series2Label,
+           int[] xAxis,
+           float[] series1,
+           float[] series2)
+        {
+            return GetLineGraphOptions(title, xAxisLabel, new string[] { series1Label, series2Label }, xAxis, new float[][] { series1, series2 });
+        }
+
         public static object GetLineGraphOptions(            
             string title,
             string xAxisLabel,
@@ -143,8 +173,30 @@ namespace Program
         }
     }
 
+    class PerTurnGraph
+       : ComparisonDescription
+    {
+        protected object GetLineGraphData(
+            StrategyComparisonResults comparisonResults,
+            string title,
+            ForwardAndReversePerTurnPlayerCounters counters)
+        {
+            int maxTurn = comparisonResults.gameEndOnTurnHistogramData.GetXAxisValueCoveringUpTo(97);
+
+            var options = GoogleChartsHelper.GetLineGraphOptions(
+               "title",
+               comparisonResults.comparison.playerActions[0].PlayerName,
+               comparisonResults.comparison.playerActions[1].PlayerName,
+               counters,
+               comparisonResults.statGatherer.turnCounters,
+               maxTurn);
+
+            return options;
+        }
+    }   
+
     [Serializable]
-    public class GameBreakdown
+    class GameBreakdown
         : ComparisonDescription, 
           IRequestWithJsonResponse
     {
@@ -192,9 +244,58 @@ namespace Program
          
             return options;
         }
+    }   
+
+    class ProbabilityPlayerIsAheadAtEndOfRound
+        : PerTurnGraph,
+          IRequestWithJsonResponse
+    {
+        public object GetResponse(WebService service)
+        {
+            StrategyComparisonResults comparisonResults = service.GetResultsFor(this);
+
+            return GetLineGraphData(comparisonResults,
+                "Probability player is ahead in points at end of round ",
+                comparisonResults.statGatherer.oddsOfBeingAheadOnRoundEnd);
+        }
     }
 
-    public class GetGameLog
+    class VictoryPointTotalPerTurn
+       : PerTurnGraph,
+         IRequestWithJsonResponse
+    {
+        public object GetResponse(WebService service)
+        {
+            StrategyComparisonResults comparisonResults = service.GetResultsFor(this);
+
+            return GetLineGraphData(comparisonResults,
+                "Victory Point Total Per Turn",
+                comparisonResults.statGatherer.victoryPointTotal);
+        }
+    }
+    /*
+    public class ProbabilityGameEndingOnTurn
+     : ComparisonDescription,
+       IRequestWithJsonResponse
+    {
+        public object GetResponse(WebService service)
+        {
+            StrategyComparisonResults comparisonResults = service.GetResultsFor(this);
+
+            var options = GoogleChartsHelper.GetLineGraphOptions(
+                "Probability of Game Ending on Turn",
+                "Score",
+                "Percentage",
+                comparisonResults.pointSpreadHistogramData.GetXAxis(),
+                comparisonResults.pointSpreadHistogramData.GetYAxis());
+
+            return options;
+        }
+    } */ 
+
+    // commmands
+
+    class GetGameLog
      : ComparisonDescription,
        IRequestWithJsonResponse
     {
@@ -211,7 +312,7 @@ namespace Program
     }
 
     [Serializable]
-    public class GetAvailableStrategies
+    class GetAvailableStrategies
         : IRequestWithJsonResponse
     {
         public object GetResponse(WebService service)
@@ -221,17 +322,13 @@ namespace Program
     }
 
     [Serializable]
-    public class GetAvailableGraphs
+    class GetAvailableGraphs
         : ComparisonDescription, 
           IRequestWithJsonResponse
     {
         public object GetResponse(WebService service)
         {
-            return new string[]
-            {
-                typeof(GameBreakdown).Name,
-                typeof(PointSpread).Name
-            };
+            return WebService.availaleGraphs.Select(t => t.Name).ToArray();            
         }
     }
 
@@ -240,15 +337,21 @@ namespace Program
         static string baseUrl = "http://localhost:8081/dominion/";
         static string resourcePrefix = baseUrl + "resources/";
         static JavaScriptSerializer js = new JavaScriptSerializer();
+
+        public static Type[] availaleGraphs = new Type[]
+        {
+            typeof(GameBreakdown),
+            typeof(PointSpread),
+            typeof(ProbabilityPlayerIsAheadAtEndOfRound),
+            typeof(VictoryPointTotalPerTurn),            
+        };
+
         static Type[] services = new Type[]
         {            
             typeof(GetAvailableStrategies),
             typeof(StrategyComparisonRequest),
             typeof(GetAvailableGraphs),
-            typeof(GetGameLog),
-            // graphs
-            typeof(GameBreakdown),
-            typeof(PointSpread)
+            typeof(GetGameLog),            
         };
 
         private string defaultPage = HtmlRenderer.GetEmbeddedContent("Dominulator.html");        
@@ -260,6 +363,10 @@ namespace Program
         {
             this.mapNameToServiceType = new Dictionary<string, Type>();
             foreach (var type in services)
+            {
+                this.mapNameToServiceType.Add(type.Name, type);
+            }
+            foreach (var type in availaleGraphs)
             {
                 this.mapNameToServiceType.Add(type.Name, type);
             }
