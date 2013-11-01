@@ -6,11 +6,11 @@
 				.insertAfter( this.element );
 
 			this.element.hide();
-			this._createAutocomplete();
+			this._createAutocomplete(this.element);
 			this._createShowAllButton();
 		},
 
-		_createAutocomplete: function() {
+		_createAutocomplete: function(selectElement) {
 			var selected = this.element.children( ":selected" ),
 				value = selected.val() ? selected.text() : "";
 
@@ -26,7 +26,10 @@
 				})
 				.tooltip({
 					tooltipClass: "ui-state-highlight"
-				});
+				})
+                .on("autocompleteselect", function(event, ui) { 
+                    selectElement.change(); 
+                });
 
 			this._on( this.input, {
 				autocompleteselect: function( event, ui ) {

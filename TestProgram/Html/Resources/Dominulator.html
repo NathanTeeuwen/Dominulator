@@ -36,15 +36,18 @@ function PlayGame() {
   
 <script type="text/javascript">
   
-function UpdateallStrategyText()
+function UpdateStrategyText1()
 {
     var player1Strat = $("#player1Strategy :selected").text();
-    var player2Strat = $("#player2Strategy :selected").text();    
-    
     GetStrategyText(player1Strat, function(result)
     {
         document.getElementById('player1StrategyText').value = result;
-    });
+    });       
+}
+
+function UpdateStrategyText2()
+{
+    var player2Strat = $("#player2Strategy :selected").text();           
     GetStrategyText(player2Strat, function(result)
     {
         document.getElementById('player2StrategyText').value = result;
@@ -172,10 +175,15 @@ function GetAvailableGraphs(id) {
         <br>
           Pick your strategy ...
         </br>        
-        <select id='player1Strategy'></select>
-        <script type="text/javascript" onChange ='ResetGraphArea()'>    
+        <select id='player1Strategy' onchange='OnPlayer1StratChanged()'></select>
+        <script type="text/javascript">    
             $("#player1Strategy").combobox();    
             GetAvailableStrategies("#player1Strategy");    
+            
+            function OnPlayer1StratChanged()
+            {
+               UpdateStrategyText1();
+            };
         </script>        
         <br>
         <textarea id="player1StrategyText" rows='30' cols='80'>my strategy goes here!</textarea>
@@ -187,10 +195,15 @@ function GetAvailableGraphs(id) {
         <br>
           Pick your strategy ...
         </br>        
-        <select id='player2Strategy'></select>
+        <select id='player2Strategy'  onchange='OnPlayer2StratChanged()'></select>
         <script type="text/javascript">    
             $("#player2Strategy").combobox();    
             GetAvailableStrategies("#player2Strategy");    
+            
+            function OnPlayer2StratChanged()
+            {
+               UpdateStrategyText2();
+            };
         </script>
         <br>
         <textarea id="player2StrategyText" rows='30' cols='80'>my strategy goes here!</textarea>
@@ -199,7 +212,7 @@ function GetAvailableGraphs(id) {
   </tr>
 </table>
 <br>    
-<button type="button" onclick="ResetGraphArea(); ShowGraphArea(); UpdateallStrategyText()">Play ...</button>
+<button type="button" onclick="ResetGraphArea(); ShowGraphArea();">Play ...</button>
 
 <div id="GraphArea" style="display: none;">
   <script type="text/javascript">            
