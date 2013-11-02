@@ -1,4 +1,8 @@
-﻿namespace Dominion
+﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace Dominion
 {
     // All of the Card Instances.
     public static class Cards
@@ -234,5 +238,16 @@
         public static readonly CardTypes.WorkersVillage WorkersVillage = CardTypes.WorkersVillage.card;
         public static readonly CardTypes.Workshop Workshop = CardTypes.Workshop.card;
         public static readonly CardTypes.YoungWitch YoungWitch = CardTypes.YoungWitch.card;
+
+        public static Card[] AllCards()
+        {
+            var result = new List<Card>();
+            foreach (System.Reflection.FieldInfo fieldInfo in typeof(Cards).GetFields())
+            {                
+                result.Add((Card)fieldInfo.GetValue(null));                
+            }
+            
+            return result.ToArray();
+        }
     }   
 }
