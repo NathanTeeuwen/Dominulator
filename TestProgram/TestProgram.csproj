@@ -91,6 +91,9 @@
     <EmbeddedResource Include="Strategies\RemakeSoothsayer.cs" />
     <EmbeddedResource Include="Strategies\BigMoneyCartographer.cs" />
     <EmbeddedResource Include="Strategies\BigMoneyVariants.cs" />
+    <EmbeddedResource Include="Strategies\BigMoneyColony.cs" />
+    <EmbeddedResource Include="Strategies\BigMoneyCouncilroomEarlyProvince.cs" />
+    <EmbeddedResource Include="Strategies\BigMoneySmithyEarlyProvince.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\BigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\MutateBigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\ComparePickByPriorityDescription.cs" />
