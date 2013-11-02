@@ -377,8 +377,10 @@ namespace Program
 
     public class WebService
     {
-        static string baseUrl = "http://localhost:8081/dominion/";
-        static string resourcePrefix = baseUrl + "resources/";
+        static string root = "/dominion";
+        static string baseUrl = "http://localhost:8081" + root + "/";
+        static string resourcePrefix = root + "/resources/";
+        
         static JavaScriptSerializer js = new JavaScriptSerializer();
 
         public static Type[] availaleGraphs = new Type[]
@@ -447,10 +449,38 @@ namespace Program
             return result;
         }
 
+        private string LocalIPAddress()
+        {            
+            System.Net.IPHostEntry host;
+            string localIP = "";
+            host = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName());
+            foreach (System.Net.IPAddress ip in host.AddressList)
+            {
+                if (ip.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                {
+                localIP = ip.ToString();
+                break;
+                }
+            }
+            return localIP;         
+        }
+
+        private bool IsConnectedToInternet()
+        {
+            return System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable();
+        }
+
         public void Run()
         {
+            if (!IsConnectedToInternet())
+            {
+                System.Console.WriteLine("Not connected to a network");
+                return;
+            }            
+
             var listener = new System.Net.HttpListener();
-            listener.Prefixes.Add(baseUrl);
+            listener.Prefixes.Add(baseUrl);            
+            listener.Prefixes.Add("http://" + LocalIPAddress() + ":8081" + root + "/");
             listener.Start();
             while (true)
             {
@@ -461,21 +491,23 @@ namespace Program
                 System.Net.HttpListenerResponse response = ctx.Response;                
 
                 string urlString = request.Url.ToString();
+                string rawUrl = request.RawUrl.ToString();
 
                 string responseText = null;
 
                 urlString.TrimEnd('/');
                 byte[] reponseBuffer = null;
-                if (urlString + "/" == baseUrl)
+                if (rawUrl == root)
                 {
                     responseText = defaultPage;
+                    responseText = responseText.Replace(baseUrl, urlString + "/");
                     response.ContentType = "text/HTML";
                 }
-                else if (urlString.StartsWith(WebService.resourcePrefix))
+                else if (rawUrl.StartsWith(WebService.resourcePrefix))
                 {
-                    string resourceName = urlString.Remove(0, WebService.resourcePrefix.Length);                    
+                    string resourceName = rawUrl.Remove(0, WebService.resourcePrefix.Length);                    
 
-                    if (urlString.EndsWith(".jpg"))
+                    if (rawUrl.EndsWith(".jpg"))
                     {
                         reponseBuffer = HtmlRenderer.GetEmbeddedContentAsBinary(resourceName);                                                
                         response.ContentType = System.Net.Mime.MediaTypeNames.Image.Jpeg;
@@ -486,12 +518,12 @@ namespace Program
                         response.ContentType = "text/css";
                     }
                 }
-                else if (urlString.StartsWith(baseUrl))
+                else if (rawUrl.StartsWith(root + "/"))
                 {
                     var streamReader = new System.IO.StreamReader(request.InputStream, request.ContentEncoding);
                     var jsonRequest = streamReader.ReadToEnd();
 
-                    string requestedPage = urlString.Remove(0, baseUrl.Length);
+                    string requestedPage = rawUrl.Remove(0, (root + "/").Length);
                     object unserializedObject = null;
 
                     Type serviceType;
@@ -516,8 +548,8 @@ namespace Program
                     }
                     response.ContentType = "text/html";
                 }
-                
-                if (response.ContentType.StartsWith("text"))
+
+                if (response.ContentType != null && response.ContentType.StartsWith("text"))
                 {
                     response.ContentEncoding = System.Text.UTF8Encoding.UTF8;
                     reponseBuffer = System.Text.Encoding.UTF8.GetBytes(responseText);
