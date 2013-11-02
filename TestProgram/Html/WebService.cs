@@ -171,7 +171,6 @@ namespace Program
         }
     }
 
-    [Serializable]
     public class StrategyComparisonRequest 
         : ComparisonDescription,
           IRequestWithHtmlResponse
@@ -182,6 +181,31 @@ namespace Program
             StrategyComparisonResults comparisonResults = service.GetResultsFor(this);            
             var HtmlReportGenerator = new HtmlReportGenerator(comparisonResults);
             return HtmlReportGenerator.CreateHtmlReport();           
+        }
+    }
+
+    public class KingdomCardImages
+        : ComparisonDescription,
+          IRequestWithJsonResponse
+    {
+        public object GetResponse(WebService service)
+        {
+            var playerActions = new List<PlayerAction>();
+            var player1 = this.Player1Action;
+            if (player1 != null)
+                playerActions.Add(player1);
+            var player2 = this.Player2Action;
+            if (player2 != null)
+                playerActions.Add(player2);
+
+            var builder = new GameConfigBuilder();
+            PlayerAction.SetKingdomCards(builder, playerActions.ToArray());            
+            return builder.ToGameConfig().kingdomPiles.OrderBy(card => card.DefaultCoinCost).Select(card => GetCardImageName(card)).ToArray();
+        }
+
+        private string GetCardImageName(Card card)
+        {
+            return "cards/" + card.ProgrammaticName + ".jpg";
         }
     }
 
@@ -369,6 +393,7 @@ namespace Program
         {            
             typeof(GetAvailableStrategies),
             typeof(StrategyComparisonRequest),
+            typeof(KingdomCardImages),
             typeof(GetStrategyText),
             typeof(GetAvailableGraphs),
             typeof(GetGameLog),                        
@@ -440,17 +465,26 @@ namespace Program
                 string responseText = null;
 
                 urlString.TrimEnd('/');
-
+                byte[] reponseBuffer = null;
                 if (urlString + "/" == baseUrl)
                 {
                     responseText = defaultPage;
-                    response.ContentType = "text/html";
+                    response.ContentType = "text/HTML";
                 }
                 else if (urlString.StartsWith(WebService.resourcePrefix))
                 {
-                    string resourceName = urlString.Remove(0, WebService.resourcePrefix.Length);
-                    responseText = HtmlRenderer.GetEmbeddedContent(resourceName);
-                    response.ContentType = "text/css";
+                    string resourceName = urlString.Remove(0, WebService.resourcePrefix.Length);                    
+
+                    if (urlString.EndsWith(".jpg"))
+                    {
+                        reponseBuffer = HtmlRenderer.GetEmbeddedContentAsBinary(resourceName);                                                
+                        response.ContentType = System.Net.Mime.MediaTypeNames.Image.Jpeg;
+                    }
+                    else
+                    {
+                        responseText = HtmlRenderer.GetEmbeddedContent(resourceName);
+                        response.ContentType = "text/css";
+                    }
                 }
                 else if (urlString.StartsWith(baseUrl))
                 {
@@ -481,23 +515,27 @@ namespace Program
                         responseText = serialized;
                     }
                     response.ContentType = "text/html";
+                }
+                
+                if (response.ContentType.StartsWith("text"))
+                {
+                    response.ContentEncoding = System.Text.UTF8Encoding.UTF8;
+                    reponseBuffer = System.Text.Encoding.UTF8.GetBytes(responseText);
                 }                
 
-                if (responseText != null)
+                if (reponseBuffer != null)
                 {
                     //These headers to allow all browsers to get the response
                     response.Headers.Add("Access-Control-Allow-Credentials", "true");
                     response.Headers.Add("Access-Control-Allow-Origin", "*");
-                    response.Headers.Add("Access-Control-Origin", "*");    
-                    response.ContentEncoding = System.Text.UTF8Encoding.UTF8;
+                    response.Headers.Add("Access-Control-Origin", "*");                       
 
-                    response.StatusCode = 200;
-                    response.StatusDescription = "OK";
-                    byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseText);
+                    //response.StatusCode = 200;
+                    //response.StatusDescription = "OK";                    
                     // Get a response stream and write the response to it.
-                    response.ContentLength64 = buffer.Length;
+                    response.ContentLength64 = reponseBuffer.Length;
                     System.IO.Stream output = response.OutputStream;
-                    output.Write(buffer, 0, buffer.Length);
+                    output.Write(reponseBuffer, 0, reponseBuffer.Length);
                     output.Close();
                 }
                 response.Close();

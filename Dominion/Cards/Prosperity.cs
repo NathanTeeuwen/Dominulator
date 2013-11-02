@@ -48,7 +48,7 @@ namespace Dominion.CardTypes
         public static WorkersVillage card = new WorkersVillage();
 
         private WorkersVillage() 
-            : base("Workers Village", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2, plusBuy: 1) 
+            : base("Worker's Village", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2, plusBuy: 1) 
         { 
         } 
     }
@@ -147,7 +147,7 @@ namespace Dominion.CardTypes
         public static CountingHouse card = new CountingHouse();
 
         private CountingHouse()
-            : base("CountingHouse", coinCost: 5, isAction: true)
+            : base("Counting House", coinCost: 5, isAction: true)
         {
         }
 
@@ -278,7 +278,7 @@ namespace Dominion.CardTypes
         public static KingsCourt card = new KingsCourt();
 
         private KingsCourt()
-            : base("Kings Court", coinCost: 7, isAction: true)
+            : base("King's Court", coinCost: 7, isAction: true)
         {
         }
 

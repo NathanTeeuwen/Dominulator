@@ -13,10 +13,14 @@ namespace Program
     {        
         static void Main()
         {
+            System.Console.WriteLine("Checking Card Images ...");
+            CheckForAllCardImages();
+
             System.Console.WriteLine("Loading strategies ...");
             if (!strategyLoader.Load())
                 return;
             System.Console.WriteLine("Done");
+           
 
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
@@ -51,6 +55,19 @@ namespace Program
             
             foreach (PlayerAction player in StrategyLoader.GetAllPlayerActions(System.Reflection.Assembly.GetExecutingAssembly()))
                 yield return player;    
+        }
+
+        private static void CheckForAllCardImages()
+        {
+            foreach (Card card in Cards.AllCards())
+            {
+                if (card == Cards.Prize || card == Cards.Ruins)
+                    continue;
+                if (Resources.GetEmbeddedContentAsBinary("Program.Html.Resources.cards.", card.ProgrammaticName + ".jpg") == null)
+                {
+                    System.Console.WriteLine("Warning, image missing for: {0}", card.name);
+                };
+            }
         }
 
         static void CompareStrategyVsAllKnownStrategies(

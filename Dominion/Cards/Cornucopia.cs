@@ -26,7 +26,7 @@ namespace Dominion.CardTypes
         public static FarmingVillage card = new FarmingVillage();
 
         private FarmingVillage()
-            : base("FarmingVillage", coinCost: 4, isAction: true, plusActions:2)
+            : base("Farming Village", coinCost: 4, isAction: true, plusActions:2)
         {
         }
         
@@ -62,7 +62,7 @@ namespace Dominion.CardTypes
         public static FortuneTeller card = new FortuneTeller();
 
         private FortuneTeller()
-            : base("FortuneTeller", coinCost: 3, isAction: true, plusCoins:2, isAttack:true)
+            : base("Fortune Teller", coinCost: 3, isAction: true, plusCoins:2, isAttack:true)
         {
         }
 
@@ -133,7 +133,7 @@ namespace Dominion.CardTypes
         public static HornOfPlenty card = new HornOfPlenty();
 
         private HornOfPlenty()
-            : base("HornOfPlenty", coinCost: 5, isTreasure: true)
+            : base("Horn Of Plenty", coinCost: 5, isTreasure: true)
         {
         }
   
@@ -158,7 +158,7 @@ namespace Dominion.CardTypes
         public static HorseTraders card = new HorseTraders();
 
         private HorseTraders()
-            : base("HorseTraders", coinCost: 4, isAction: true, isReaction: true, plusBuy: 1, plusCoins: 3)
+            : base("Horse Traders", coinCost: 4, isAction: true, isReaction: true, plusBuy: 1, plusCoins: 3)
         {
         }
         
@@ -194,7 +194,7 @@ namespace Dominion.CardTypes
         public static HuntingParty card = new HuntingParty();
 
         private HuntingParty()
-            : base("HuntingParty", coinCost: 5, isAction: true, plusActions: 1, plusCards: 1)
+            : base("Hunting Party", coinCost: 5, isAction: true, plusActions: 1, plusCards: 1)
         {
         }
 
@@ -366,7 +366,7 @@ namespace Dominion.CardTypes
         public static BagOfGold card = new BagOfGold();
 
         private BagOfGold()
-            : base("BagOfGold", plusActions: 1, isAction:true)
+            : base("Bag Of Gold", plusActions: 1, isAction:true)
         {
 
         }
@@ -440,7 +440,7 @@ namespace Dominion.CardTypes
         public static TrustySteed card = new TrustySteed();
 
         private TrustySteed()
-            : base("TrustySteed", isAction: true)
+            : base("Trusty Steed", isAction: true)
         {            
         }
 

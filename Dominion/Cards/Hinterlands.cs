@@ -198,7 +198,7 @@ namespace Dominion.CardTypes
         public static FoolsGold card = new FoolsGold();
 
         private FoolsGold()
-            : base("FoolsGold", coinCost: 2, isTreasure:true)
+            : base("Fool's Gold", coinCost: 2, isTreasure:true)
         {
         }
 
@@ -309,7 +309,7 @@ namespace Dominion.CardTypes
         public static JackOfAllTrades card = new JackOfAllTrades();
 
         private JackOfAllTrades()
-            : base("JackOfAllTrades", coinCost: 4, isAction: true)
+            : base("Jack Of All Trades", coinCost: 4, isAction: true)
         {
         }
 
@@ -369,7 +369,7 @@ namespace Dominion.CardTypes
         public static NobleBrigand card = new NobleBrigand();
 
         private NobleBrigand()
-            : base("NobleBrigand", coinCost: 4, isAction: true, plusCoins:1, isAttack: true)
+            : base("Noble Brigand", coinCost: 4, isAction: true, plusCoins:1, isAttack: true)
         {
         }
 
@@ -402,7 +402,7 @@ namespace Dominion.CardTypes
         public static NomadCamp card = new NomadCamp();
 
         private NomadCamp()
-            : base("NomadCamp", coinCost: 4, isAction: true, plusCoins: 2, plusBuy:1)
+            : base("Nomad Camp", coinCost: 4, isAction: true, plusCoins: 2, plusBuy:1)
         {
         }
 
@@ -512,7 +512,7 @@ namespace Dominion.CardTypes
         public static SilkRoad card = new SilkRoad();
 
         private SilkRoad()
-            : base("SilkRoad", coinCost: 4, victoryPoints: playerState => playerState.AllOwnedCards.CountWhere(card => card.isVictory)/4)
+            : base("Silk Road", coinCost: 4, victoryPoints: playerState => playerState.AllOwnedCards.CountWhere(card => card.isVictory)/4)
         {
         }
     }
@@ -523,7 +523,7 @@ namespace Dominion.CardTypes
         public static SpiceMerchant card = new SpiceMerchant();
 
         private SpiceMerchant()
-            : base("SpiceMerchant", coinCost: 4, isAction:true)
+            : base("Spice Merchant", coinCost: 4, isAction:true)
         {
         }
 

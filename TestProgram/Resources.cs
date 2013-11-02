@@ -22,10 +22,31 @@ namespace Program
             using (System.IO.Stream stream = assembly.GetManifestResourceStream(resourceName))
             using (var reader = new System.IO.StreamReader(stream))
             {
-                result = reader.ReadToEnd();
-            }
+                result = reader.ReadToEnd();                
+            }            
 
             return result;
+        }
+
+        public static byte[] GetEmbeddedContentAsBinary(string defaultNamespace, string content)
+        {
+            string resourceName1 = content.Replace("/", ".");
+            string resourceName2 = defaultNamespace + resourceName1;
+            string resourceName3 = resourceName2.ToLower();
+            string resourceName;
+            if (!mapCaseInsensitiveToCaseSensitive.TryGetValue(resourceName3, out resourceName))
+            {
+                return null;
+            }
+
+            var assembly = System.Reflection.Assembly.GetExecutingAssembly();            
+            using (System.IO.Stream stream = assembly.GetManifestResourceStream(resourceName))
+            using (var reader = new System.IO.BinaryReader(stream))
+            {
+                var result = new byte[stream.Length];
+                reader.Read(result, 0, (int)stream.Length);
+                return result;
+            }            
         }
 
         private static Dictionary<string, string> GetEmbeddedResourceMapping()

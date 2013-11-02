@@ -94,7 +94,7 @@ namespace Dominion.CardTypes
         public static CandlestickMaker card = new CandlestickMaker();
 
         private CandlestickMaker()
-            : base("CandlestickMaker", coinCost: 2, isAction: true, plusActions:1, plusBuy:1)
+            : base("Candlestick Maker", coinCost: 2, isAction: true, plusActions:1, plusBuy:1)
         {
         }
 

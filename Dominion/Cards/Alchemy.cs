@@ -194,7 +194,7 @@ namespace Dominion.CardTypes
         public static PhilosophersStone card = new PhilosophersStone();
 
         private PhilosophersStone()
-            : base("PhilosophersStone", coinCost: 3, potionCost:1, isTreasure: true)
+            : base("Philosopher's Stone", coinCost: 3, potionCost:1, isTreasure: true)
         {
         }
 
@@ -227,7 +227,7 @@ namespace Dominion.CardTypes
         public static ScryingPool card = new ScryingPool();
 
         private ScryingPool()
-            : base("ScryingPool", coinCost: 2, potionCost:1, isAction: true, isAttack:true, plusActions:1)
+            : base("Scrying Pool", coinCost: 2, potionCost:1, isAction: true, isAttack:true, plusActions:1)
         {
         }
 

@@ -207,7 +207,7 @@ namespace Dominion.CardTypes
         public static MiningVillage card = new MiningVillage();
 
         private MiningVillage()
-            : base("MiningVillage", coinCost: 4, plusCards: 1, plusActions: 2, isAction: true)
+            : base("Mining Village", coinCost: 4, plusCards: 1, plusActions: 2, isAction: true)
         {
         }
 

@@ -402,5 +402,10 @@ namespace Program
         {
             return Resources.GetEmbeddedContent("Program.Html.Resources.", content);            
         }
+
+        public static byte[] GetEmbeddedContentAsBinary(string content)
+        {
+            return Resources.GetEmbeddedContentAsBinary("Program.Html.Resources.", content);
+        }
     }
 }

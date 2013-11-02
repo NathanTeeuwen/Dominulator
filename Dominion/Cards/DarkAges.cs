@@ -210,7 +210,7 @@ namespace Dominion.CardTypes
         public static BandOfMisfits card = new BandOfMisfits();
 
         private BandOfMisfits()
-            : base("BandOfMisfits", coinCost: 5, isAction: true)
+            : base("Band Of Misfits", coinCost: 5, isAction: true)
         {
         }
 
@@ -238,7 +238,7 @@ namespace Dominion.CardTypes
         public static BanditCamp card = new BanditCamp();
 
         private BanditCamp()
-            : base("BanditCamp", coinCost: 5, isAction: true, plusCards:1, plusActions:2, requiresSpoils:true)
+            : base("Bandit Camp", coinCost: 5, isAction: true, plusCards:1, plusActions:2, requiresSpoils:true)
         {
         }
 
@@ -677,7 +677,7 @@ namespace Dominion.CardTypes
         public static JunkDealer card = new JunkDealer();
 
         private JunkDealer()
-            : base("JunkDealer", coinCost: 5, isAction: true, plusCards:1, plusActions:1, plusCoins:1)
+            : base("Junk Dealer", coinCost: 5, isAction: true, plusCards:1, plusActions:1, plusCoins:1)
         {
         }
 
@@ -730,7 +730,7 @@ namespace Dominion.CardTypes
         public static MarketSquare card = new MarketSquare();
 
         private MarketSquare()
-            : base("MarketSquare", coinCost: 3, isAction: true, plusCards:1, plusActions:1, plusBuy:1)
+            : base("Market Square", coinCost: 3, isAction: true, plusCards:1, plusActions:1, plusBuy:1)
         {
             this.doSpecializedActionOnTrashWhileInHand = DoSpecializedActionOnTrashWhileInHand;
         }
@@ -1162,7 +1162,7 @@ namespace Dominion.CardTypes
         public static WanderingMinstrel card = new WanderingMinstrel();
 
         private WanderingMinstrel()
-            : base("WanderingMinstrel", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2)
+            : base("Wandering Minstrel", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2)
         {
         }
 

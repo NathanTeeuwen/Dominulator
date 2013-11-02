@@ -252,7 +252,7 @@ namespace Dominion.CardTypes
         public static MerchantShip card = new MerchantShip();
 
         private MerchantShip()
-            : base("MerchantShip", coinCost: 5, isAction: true, isDuration: true, plusCoins: 2)
+            : base("Merchant Ship", coinCost: 5, isAction: true, isDuration: true, plusCoins: 2)
         {
         }
 

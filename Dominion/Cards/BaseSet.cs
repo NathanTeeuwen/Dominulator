@@ -292,7 +292,7 @@ namespace Dominion.CardTypes
         public static CouncilRoom card = new CouncilRoom();
 
         private CouncilRoom()
-            : base("CouncilRoom", coinCost: 5, plusCards: 4, plusBuy: 1, isAction: true)
+            : base("Council Room", coinCost: 5, plusCards: 4, plusBuy: 1, isAction: true)
         {
         }
 

@@ -46,6 +46,14 @@ namespace Dominion
 
         private readonly int privateIndex;
 
+        public string ProgrammaticName
+        {
+            get
+            {
+                return this.name.Replace(" ", "_");
+            }
+        }
+
         private static int lastCardIndex = 0;
         private static HashSet<Type> cardTypes = new HashSet<Type>();
 

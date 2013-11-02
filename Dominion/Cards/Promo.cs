@@ -138,7 +138,7 @@ namespace Dominion.CardTypes
         public static WalledVillage card = new WalledVillage();
 
         private WalledVillage()
-            : base("WalledVillage", coinCost: 4, plusCards: 1, plusActions: 2, isAction: true)
+            : base("Walled Village", coinCost: 4, plusCards: 1, plusActions: 2, isAction: true)
         {
             this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
         }
