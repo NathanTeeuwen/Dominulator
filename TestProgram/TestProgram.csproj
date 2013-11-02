@@ -80,7 +80,7 @@
     <EmbeddedResource Include="Strategies\LookoutSalvagerLibraryHighwayFestival.cs" />
     <EmbeddedResource Include="Strategies\LookoutTraderNobles.cs" />
     <EmbeddedResource Include="Strategies\MineHoard.cs" />
-    <EmbeddedResource Include="Strategies\MountebankGovernor.cs" />
+    <EmbeddedResource Include="Strategies\GovernorMarketsquare.cs" />
     <EmbeddedResource Include="Strategies\ProcessessionGraverobber.cs" />
     <EmbeddedResource Include="Strategies\RatsWanderingMinstrelWatchtowerArmory.cs" />
     <EmbeddedResource Include="Strategies\RebuildAdvanced.cs" />
@@ -99,6 +99,12 @@
     <EmbeddedResource Include="Strategies\BigMoneySingleSmithy.cs" />
     <EmbeddedResource Include="Strategies\BigMoneySingleWitch.cs" />
     <EmbeddedResource Include="Strategies\BigMoneyWharf.cs" />
+    <EmbeddedResource Include="Strategies\BigMoneyDoubleJackSlog.cs" />
+    <EmbeddedResource Include="Strategies\Illgottengains.cs" />
+    <EmbeddedResource Include="Strategies\ColonyFamiliarMine.cs" />
+    <EmbeddedResource Include="Strategies\FamiliarPotionSilverOpenning.cs" />
+    <EmbeddedResource Include="Strategies\FamiliarSilverSilverOpenning.cs" />
+    <EmbeddedResource Include="Strategies\MountebankGovernorMaurader.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\BigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\MutateBigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\ComparePickByPriorityDescription.cs" />

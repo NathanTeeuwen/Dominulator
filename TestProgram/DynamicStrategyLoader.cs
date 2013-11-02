@@ -178,7 +178,13 @@ namespace Program
                 System.Reflection.Assembly assembly = DynamicallyLoadFromFile(file);
                 if (assembly == null)
                     return false;
-                foreach (PlayerAction playerAction in GetAllPlayerActions(assembly))
+
+                PlayerAction[] playerActions = GetAllPlayerActions(assembly);
+                if (playerActions.Length > 1)
+                {
+                    System.Console.WriteLine("Warning, multiple strategies in file {0}", file);
+                }
+                foreach (PlayerAction playerAction in playerActions)
                 {
                     result.Add( new PlayerActionAndSource(file, playerAction));
                 }
