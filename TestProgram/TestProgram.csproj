@@ -90,10 +90,15 @@
     <EmbeddedResource Include="Strategies\MountebankMonumentHamletVineyard.cs" />
     <EmbeddedResource Include="Strategies\RemakeSoothsayer.cs" />
     <EmbeddedResource Include="Strategies\BigMoneyCartographer.cs" />
-    <EmbeddedResource Include="Strategies\BigMoneyVariants.cs" />
+    <EmbeddedResource Include="Strategies\BigMoneyThief.cs" />
     <EmbeddedResource Include="Strategies\BigMoneyColony.cs" />
     <EmbeddedResource Include="Strategies\BigMoneyCouncilroomEarlyProvince.cs" />
     <EmbeddedResource Include="Strategies\BigMoneySmithyEarlyProvince.cs" />
+    <EmbeddedResource Include="Strategies\BigMoneyBridge.cs" />
+    <EmbeddedResource Include="Strategies\BigMoneyDoubleWitch.cs" />
+    <EmbeddedResource Include="Strategies\BigMoneySingleSmithy.cs" />
+    <EmbeddedResource Include="Strategies\BigMoneySingleWitch.cs" />
+    <EmbeddedResource Include="Strategies\BigMoneyWharf.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\BigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\MutateBigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\ComparePickByPriorityDescription.cs" />
@@ -165,6 +170,9 @@
     <EmbeddedResource Include="Html\Resources\DefaultStyles.css" />
     <EmbeddedResource Include="Html\Resources\CompletionComboBox.css" />
     <EmbeddedResource Include="Html\Resources\CompletionComboBox.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Strategies\BigMoneyMoneylender.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -71,6 +71,19 @@ namespace Program
             }
         }
 
+        public PlayerAction GetPlayerActionFromCode(string code)
+        {
+            var assembly = DynamicallyLoadFromSource(code);
+            if (assembly == null)
+                return null;
+
+            PlayerAction[] actions = GetAllPlayerActions(assembly);
+            if (actions.Length != 1)
+                return null;
+                   
+            return actions[0];
+        }
+
         public static PlayerAction[] GetAllPlayerActions(System.Reflection.Assembly assembly)
         {
             var result = new List<PlayerAction>();
@@ -192,6 +205,25 @@ namespace Program
             CompilerParams.ReferencedAssemblies.AddRange(references);
 
             provider = new CSharpCodeProvider();            
+        }
+
+        public System.Reflection.Assembly DynamicallyLoadFromSource(string code)
+        {
+            CompilerResults compile = provider.CompileAssemblyFromSource(CompilerParams, code);
+
+            if (compile.Errors.HasErrors)
+            {
+                var builder = new System.Text.StringBuilder();
+                builder.AppendLine("Compile error:");
+                foreach (CompilerError ce in compile.Errors)
+                {
+                    builder.AppendLine(ce.ToString());
+                }
+                System.Console.WriteLine(builder.ToString());
+                return null;
+            }
+
+            return compile.CompiledAssembly;
         }
 
         public System.Reflection.Assembly DynamicallyLoadFromFile(params string[] sourceFiles)

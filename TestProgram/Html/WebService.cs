@@ -122,7 +122,7 @@ namespace Program
 
         public override bool Equals(object obj)
         {
- 	         return base.Equals(obj);
+            return this.Equals((ComparisonDescription)obj);
         }
 
         public bool Equals(ComparisonDescription other)
@@ -141,7 +141,7 @@ namespace Program
         {
             get
             {
-                return GetPlayerAction(this.player1);
+                return GetPlayerActionFromCode(this.player1);
             }
         }
 
@@ -149,13 +149,13 @@ namespace Program
         {
             get
             {
-                return GetPlayerAction(this.player2);
+                return GetPlayerActionFromCode(this.player2);
             }
         }
 
-        private PlayerAction GetPlayerAction(string name)
+        private PlayerAction GetPlayerActionFromCode(string code)
         {
-            return Program.AllBuiltInStrategies().Where(strategy => strategy.PlayerName == name).FirstOrDefault();
+            return Program.strategyLoader.GetPlayerActionFromCode(code);            
         }
     }
 
@@ -215,6 +215,11 @@ namespace Program
         public object GetResponse(WebService service)
         {
             StrategyComparisonResults comparisonResults = service.GetResultsFor(this);
+
+            if (comparisonResults == null)
+            {
+                return null;
+            }
 
             var data = new List<object>();
             data.Add(new string[] { "Player", "Percent" });
@@ -316,6 +321,8 @@ namespace Program
         public object GetResponse(WebService service)
         {
             StrategyComparisonResults comparisonResults = service.GetResultsFor(this);
+            if (comparisonResults == null)
+                return null;
 
             string result = comparisonResults.comparison.GetHumanReadableGameLog(gameNumber-1);
 
@@ -394,8 +401,9 @@ namespace Program
                 PlayerAction playerAction1 = descr.Player1Action;
                 PlayerAction playerAction2 = descr.Player2Action;
 
-                if (playerAction1 != null || playerAction2 != null)
+                if (playerAction1 != null && playerAction2 != null)
                 {
+                    System.Console.WriteLine("Playing {0} vs {1}", playerAction1.name, playerAction2.name);
                     PlayerAction.SetKingdomCards(builder, new PlayerAction[] { playerAction1, playerAction2 });
 
                     var gameConfig = builder.ToGameConfig();

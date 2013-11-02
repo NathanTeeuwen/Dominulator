@@ -19,8 +19,8 @@
 
 function GetGameParameters()
 {
-   var player1Strat = $("#player1Strategy :selected").text();
-   var player2Strat = $("#player2Strategy :selected").text();    
+   var player1Strat = document.getElementById('player1StrategyText').value; 
+   var player2Strat = document.getElementById('player2StrategyText').value;
    
    return { 
       player1:player1Strat, 
