@@ -14,13 +14,15 @@
 <!-- pagination styles -->
 <script type="text/javascript" src="http://localhost:8081/dominion/resources/jquery.simplePagination.js"/></script>
 <link href ="http://localhost:8081/dominion/resources/simplePagination.css" type="text/css" rel="Stylesheet"/> 
-  
+
+<script src="http://localhost:8081/dominion/resources/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+
 <script type="text/javascript">
 
 function GetGameParameters()
 {
-   var player1Strat = document.getElementById('player1StrategyText').value; 
-   var player2Strat = document.getElementById('player2StrategyText').value;
+   var player1Strat = player1Editor.getValue();   
+   var player2Strat = player2Editor.getValue();      
    
    return { 
       player1:player1Strat, 
@@ -50,7 +52,7 @@ function UpdateStrategyText1()
     var player1Strat = $("#player1Strategy :selected").text();
     GetStrategyText(player1Strat, function(result)
     {
-        document.getElementById('player1StrategyText').value = result;
+        player1Editor.setValue(result);        
     });       
 }
 
@@ -59,7 +61,7 @@ function UpdateStrategyText2()
     var player2Strat = $("#player2Strategy :selected").text();           
     GetStrategyText(player2Strat, function(result)
     {
-        document.getElementById('player2StrategyText').value = result;
+        player2Editor.setValue(result);        
     });
 }
 
@@ -226,12 +228,21 @@ function GetAvailableGraphs(id) {
     <li><a href="#GameLogTab">Game Logs</a></li>      
   </ul>
   <div id="player1StrategyArea">
-    <textarea id="player1StrategyText" rows='30' style="width:100%; font-size: 10pt;"></textarea>      
+    <div id="player1StrategyText" style="width:100%; height:500px"></div>    
+    <script>
+      var player1Editor = ace.edit("player1StrategyText");
+      player1Editor.setTheme("ace/theme/Crimson_Editor");
+      player1Editor.getSession().setMode("ace/mode/csharp");
+    </script>
   </div>
-  <div id='player2StrategyArea'>
-    <textarea id="player2StrategyText" rows='30' style="width:100%; font-size: 10pt;"></textarea>      
-  </div>    
-
+  <div id="player2StrategyArea">
+    <div id="player2StrategyText" style="width:100%; height:500px"></div>    
+    <script>
+      var player2Editor = ace.edit("player2StrategyText");
+      player2Editor.setTheme("ace/theme/Crimson_Editor");
+      player2Editor.getSession().setMode("ace/mode/csharp");
+    </script>
+  </div>   
   <div id="GameLogTab" style="display: none;">      
     <div id='gameLogPagination' class='pagination'></div>
     <script type='text/javascript'>
