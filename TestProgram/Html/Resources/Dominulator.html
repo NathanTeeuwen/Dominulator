@@ -17,15 +17,24 @@
   
 <script type="text/javascript">
 
+function GetGameParameters()
+{
+   var player1Strat = $("#player1Strategy :selected").text();
+   var player2Strat = $("#player2Strategy :selected").text();    
+   
+   return { 
+      player1:player1Strat, 
+      player2:player2Strat
+   };
+}
+
 function PlayGame() {
 
-    var resultDiv = $("#resultDivContainer");    
-    var player1Strat = $("#player1Strategy :selected").text();
-    var player2Strat = $("#player2Strategy :selected").text();    
+    var resultDiv = $("#resultDivContainer");        
     $.ajax({
         url: "http://localhost:8081/dominion/StrategyComparisonRequest",
         type: "POST",
-        data: JSON.stringify({ player1:player1Strat, player2:player2Strat}),
+        data: JSON.stringify(GetGameParameters()),
         dataType: "html",        
         success: function (result) {        
             resultDiv.contents().find('html').html(result);                    
@@ -88,15 +97,13 @@ function InsertSelectedGraph() {
     InsertGraph(graphName);
 }
 
-function InsertGraph(graphName) {    
-    var player1Strat = $("#player1Strategy :selected").text();
-    var player2Strat = $("#player2Strategy :selected").text();
+function InsertGraph(graphName) {        
     
     var resultDiv = $("#resultDivContainer");    
     $.ajax({
         url: "http://localhost:8081/dominion/" + graphName,
         type: "POST",
-        data: JSON.stringify({ player1:player1Strat, player2:player2Strat}),
+        data: JSON.stringify(GetGameParameters()),
         dataType: "json",        
         success: function (json) {       
           
@@ -137,15 +144,12 @@ function GetAvailableStrategies(id) {
     });      
 };
 
-function GetAvailableGraphs(id) {
-
-    var player1Strat = $("#player1Strategy :selected").text();
-    var player2Strat = $("#player2Strategy :selected").text();
+function GetAvailableGraphs(id) {    
 
     $.ajax({
         url:'http://localhost:8081/dominion/GetAvailableGraphs',
         type:'POST',
-        data: JSON.stringify({ player1:player1Strat, player2:player2Strat}),
+        data: JSON.stringify(GetGameParameters()),
         dataType: 'json',
         success: function( json ) {          
             $(id).empty();
@@ -233,12 +237,13 @@ function GetAvailableGraphs(id) {
     <script type='text/javascript'>
       function PopulateGameLog(gameNumber)
       {
-        var player1Strat = $("#player1Strategy :selected").text();
-        var player2Strat = $("#player2Strategy :selected").text();    
+        var parameters = GetGameParameters();
+        parameters.gameNumber = gameNumber;
+        
         $.ajax({
             url: "http://localhost:8081/dominion/GetGameLog",
             type: "POST",
-            data: JSON.stringify({ player1:player1Strat, player2:player2Strat, gameNumber: gameNumber}),
+            data: JSON.stringify(parameters),
             dataType: "json",        
             success: function (result) {        
                 document.getElementById('gameLogTextArea').value = result;
