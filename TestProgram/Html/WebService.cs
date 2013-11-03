@@ -21,8 +21,11 @@ namespace Program.WebService
         {
             typeof(GameBreakdown),
             typeof(PointSpread),
-            //typeof(ProbabilityPlayerIsAheadAtEndOfRound),
+            typeof(ProbabilityPlayerIsAheadAtEndOfRound),
+            typeof(ProbabilityGameEndingOnTurn),
+            typeof(ProbabilityGameBeingOverByTurn),
             typeof(VictoryPointTotalPerTurn),            
+            typeof(CoinToSpendPerTurn)
         };
 
         static Type[] services = new Type[]

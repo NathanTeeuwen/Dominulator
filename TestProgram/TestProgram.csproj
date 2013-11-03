@@ -54,9 +54,11 @@
     <Compile Include="Html\Responses\GetAvailableGraphs.cs" />
     <Compile Include="Html\Responses\GetAvailableStrategies.cs" />
     <Compile Include="Html\Responses\GetGameLog.cs" />
+    <Compile Include="Html\Responses\Graphs\CoinToSpendPerTurn.cs" />
     <Compile Include="Html\Responses\Graphs\GameBreakdown.cs" />
     <Compile Include="Html\Responses\GetStrategyText.cs" />
     <Compile Include="Html\Responses\Graphs\PointSpread.cs" />
+    <Compile Include="Html\Responses\Graphs\ProbabilityGameBeingOverByTurn.cs" />
     <Compile Include="Html\Responses\Graphs\ProbabilityGameEndingOnTurn.cs" />
     <Compile Include="Html\Responses\Graphs\ProbabilityPlayerIsAheadAtEndOfRound.cs" />
     <Compile Include="Html\Responses\Graphs\VictoryPointTotalPerTurn.cs" />

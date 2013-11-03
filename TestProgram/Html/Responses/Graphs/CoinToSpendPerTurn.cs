@@ -9,18 +9,17 @@ using Dominion.Strategy;
 
 namespace Program.WebService
 {
-    
-    class ProbabilityPlayerIsAheadAtEndOfRound
-        : PerTurnGraph,
-          IRequestWithJsonResponse
+    class CoinToSpendPerTurn
+     : PerTurnGraph,
+       IRequestWithJsonResponse
     {
         public object GetResponse(WebService service)
         {
             StrategyComparisonResults comparisonResults = service.GetResultsFor(this);
 
             return GetLineGraphData(comparisonResults,
-                "Probability player is ahead in points at end of round ",
-                comparisonResults.statGatherer.oddsOfBeingAheadOnRoundEnd);
+                "Coin To Spend Per Turn",
+                comparisonResults.statGatherer.coinToSpend);            
         }
-    }    
+    }
 }

@@ -115,14 +115,15 @@ namespace Program
             this.turnCounters.EndGame(gameState, null);
             this.coinToSpend.EndGame(gameState, this.turnCounters);
             this.cardsGained.EndGame(gameState, this.turnCounters);
-            this.ruinsGained.EndGame(gameState, this.turnCounters);
-            this.cursesGained.EndGame(gameState, this.turnCounters);
-            this.deckShuffleCount.EndGame(gameState, this.turnCounters);
-            this.cursesTrashed.EndGame(gameState, this.turnCounters);
             this.victoryPointTotal.EndGame(gameState, this.turnCounters);
+            this.ruinsGained.EndGame(gameState, this.turnCounters);
             EndGamePerCard(this.cardsTotalCount, gameState);
             EndGamePerCard(this.carsGainedOnTurn, gameState);
             EndGameAllCounters(this.oddsOfHittingAtLeastACoinAmount, gameState);
+            this.cursesGained.EndGame(gameState, this.turnCounters);
+            this.cursesTrashed.EndGame(gameState, this.turnCounters);
+            this.deckShuffleCount.EndGame(gameState, this.turnCounters);
+            this.oddsOfBeingAheadOnRoundEnd.EndGame(gameState, this.turnCounters);                                  
         }
 
         public override void EndRound(GameState gameState)

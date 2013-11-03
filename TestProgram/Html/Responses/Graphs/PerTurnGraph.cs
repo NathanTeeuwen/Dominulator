@@ -17,6 +17,11 @@ namespace Program.WebService
             string title,
             ForwardAndReversePerTurnPlayerCounters counters)
         {
+            if (!counters.forwardTotal.HasNonZeroData)
+            {
+                return null;
+            }
+
             int maxTurn = comparisonResults.gameEndOnTurnHistogramData.GetXAxisValueCoveringUpTo(97);
 
             var options = GoogleChartsHelper.GetLineGraphOptions(
@@ -28,6 +33,7 @@ namespace Program.WebService
                maxTurn);
 
             return options;
+
         }
     }
 }

@@ -11,6 +11,8 @@ namespace Program
 {
     static class GoogleChartsHelper
     {
+        // all of the objects are in fact JSON objects.
+
         public static object GetLineGraphOptions(
            string title,
            string player1Name,
@@ -79,7 +81,7 @@ namespace Program
             }
 
             var options = new Dictionary<string, object>();
-            options.Add("title", "Point Spread");
+            options.Add("title", title);
             options.Add("hAxis", GetHAxisOptions(xAxis));
 
             var result = new Dictionary<string, object>();
