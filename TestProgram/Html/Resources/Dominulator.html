@@ -167,7 +167,7 @@ function GetAvailableGraphs(id) {
 function PopulateKingdom(id) {    
 
     $.ajax({
-        url:'http://localhost:8081/dominion/KingdomCardImages',
+        url:'http://localhost:8081/dominion/GetKingdomCardImages',
         type:'POST',
         data: JSON.stringify(GetGameParameters()),
         dataType: 'json',

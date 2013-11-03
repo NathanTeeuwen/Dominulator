@@ -44,7 +44,7 @@ namespace Program
             }
 
             System.Console.WriteLine("Running Web Service ...");
-            new WebService().Run();
+            new WebService.WebService().Run();
         }
 
         public static IEnumerable<PlayerAction> AllBuiltInStrategies()
