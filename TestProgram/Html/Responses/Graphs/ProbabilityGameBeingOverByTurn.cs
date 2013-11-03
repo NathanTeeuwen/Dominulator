@@ -17,12 +17,14 @@ namespace Program.WebService
         {
             StrategyComparisonResults comparisonResults = service.GetResultsFor(this);
 
+            int maxTurn = comparisonResults.gameEndOnTurnHistogramData.GetXAxisValueCoveringUpTo(97);
+
             var options = GoogleChartsHelper.GetLineGraphOptions(
                 "Probablity of Game Being over by turn",
                 "Score",
                 "Percentage",
-                comparisonResults.pointSpreadHistogramData.GetXAxis(),
-                comparisonResults.pointSpreadHistogramData.GetYAxisIntegrated());
+                comparisonResults.gameEndOnTurnHistogramData.GetXAxis(maxTurn),
+                comparisonResults.gameEndOnTurnHistogramData.GetYAxisIntegrated(maxTurn));
 
             return options;
         }
