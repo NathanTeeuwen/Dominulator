@@ -53,7 +53,7 @@ namespace Program
             foreach (PlayerAction player in strategyLoader.AllStrategies())
                 yield return player;
             
-            foreach (PlayerAction player in StrategyLoader.GetAllPlayerActions(System.Reflection.Assembly.GetExecutingAssembly()))
+            foreach (PlayerAction player in DynamicStrategyLoader.GetAllPlayerActions(System.Reflection.Assembly.GetExecutingAssembly()))
                 yield return player;    
         }
 
@@ -229,7 +229,7 @@ namespace Program
             return "..\\..\\Results\\" + filename;
         }                
 
-        public static StrategyLoader strategyLoader = new StrategyLoader();        
+        public static DynamicStrategyLoader strategyLoader = new DynamicStrategyLoader();        
 
         public static double ComparePlayers(
             object player1OrString,

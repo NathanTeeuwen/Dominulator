@@ -19,6 +19,11 @@
 
 <script type="text/javascript">
 
+var player1TabIndex = 0;
+var player2TabIndex = 1;
+var graphsTabIndex = 2;
+var gameLogsTabIndex = 3;
+
 function GetGameParameters()
 {
    var player1Strat = player1Editor.getValue();   
@@ -53,6 +58,7 @@ function UpdateStrategyText1()
     GetStrategyText(player1Strat, function(result)
     {
         player1Editor.setValue(result);        
+        player1Editor.gotoLine(1);
         PopulateKingdom("#kingdomImages");
     });           
 }
@@ -63,6 +69,7 @@ function UpdateStrategyText2()
     GetStrategyText(player2Strat, function(result)
     {
         player2Editor.setValue(result);        
+        player2Editor.gotoLine(1);
         PopulateKingdom("#kingdomImages");
     });    
 }
@@ -78,6 +85,40 @@ function GetStrategyText(strategyName, callbackAnswer) {
         }
     });
 };
+
+function CheckStrategyCode(  
+  editor,                // the text editor to check
+  idForError,            // document JQuery ID of where to put the error
+  tabIndex,              // the tab index with the error message to focus
+  continuationOnNoError  // function to invoke on continuation
+  ) {    
+    var strategyText = editor.getValue();
+    $.ajax({
+        url: "http://localhost:8081/dominion/CheckStrategyCode",
+        type: "POST",
+        data: JSON.stringify({code:strategyText}),
+        dataType: "JSON",        
+        success: function (result) {        
+          $(idForError).empty();
+          if (result.message)
+          {          
+              var screenMessage = "(" + result.line + "," + result.column + "): " + result.message;              
+              $(idForError).append($('<div>').text(screenMessage));
+              
+              $("#StrategyArea").tabs("option", "active", tabIndex);
+              editor.gotoLine(result.line, result.column);              
+              editor.focus();              
+          }
+          else
+          {
+              continuationOnNoError();            
+          }
+        }
+    });
+};
+
+    
+  
 </script>
 
   
@@ -111,20 +152,23 @@ function InsertGraph(graphName) {
         dataType: "json",        
         success: function (json) {       
           
-          var chartDiv = CreateAndAppendGraphDiv();
-          var data = google.visualization.arrayToDataTable(json.data);          
-          
-          var chart;
-          if (json.type == "pie")
+          if (json)
           {
-            chart = new google.visualization.PieChart(chartDiv);   
-          }
-          else if (json.type == "line")    
-          {
-            chart = new google.visualization.LineChart(chartDiv);   
-          }
+            var chartDiv = CreateAndAppendGraphDiv();
+            var data = google.visualization.arrayToDataTable(json.data);          
           
-          chart.draw(data, json.options);
+            var chart;
+            if (json.type == "pie")
+            {
+              chart = new google.visualization.PieChart(chartDiv);   
+            }
+            else if (json.type == "line")    
+            {
+              chart = new google.visualization.LineChart(chartDiv);   
+            }
+          
+            chart.draw(data, json.options);
+          }
         }      
     });
 };
@@ -211,7 +255,7 @@ function PopulateKingdom(id) {
             
           function OnPlayer1StratChanged()
           {
-              $("#StrategyArea").tabs("option", "active", 0);
+              $("#StrategyArea").tabs("option", "active", player1TabIndex);
               UpdateStrategyText1();
           };
       </script>        
@@ -225,7 +269,7 @@ function PopulateKingdom(id) {
             
           function OnPlayer2StratChanged()
           {
-              $("#StrategyArea").tabs("option", "active", 1);
+              $("#StrategyArea").tabs("option", "active", player2TabIndex);
               UpdateStrategyText2();
           };
       </script>      
@@ -242,8 +286,25 @@ function PopulateKingdom(id) {
       
   function OnPlayButtonClicked()
   {
-    ResetPlayedArea();    
-    ShowPlayedArea();
+    ClearGraphs();    
+  
+    CheckStrategyCode( 
+      player1Editor,
+      "#player1Errors",
+      player1TabIndex,
+      function() {
+        CheckStrategyCode( 
+          player2Editor,
+          "#player2Errors",
+          player2TabIndex,
+          function() {
+            PopulateKingdom("#kingdomImages");
+            GetAvailableGraphs("#selectedGraph");
+            PopulateGameLog(1);
+            $("#StrategyArea").tabs("option", "active", graphsTabIndex);
+            InsertGraph("GameBreakdown");       
+          });
+    });          
   }
 </script>
 
@@ -255,20 +316,22 @@ function PopulateKingdom(id) {
     <li><a href="#GameLogTab">Game Logs</a></li>      
   </ul>
   <div id="player1StrategyArea">
+    <div id="player1Errors"></div>
     <div id="player1StrategyText" style="width:100%; height:500px"></div>    
     <script>
       var player1Editor = ace.edit("player1StrategyText");
       player1Editor.setTheme("ace/theme/Crimson_Editor");
       player1Editor.getSession().setMode("ace/mode/csharp");
-    </script>
+    </script>    
   </div>
   <div id="player2StrategyArea">
+    <div id="player2Errors"></div>
     <div id="player2StrategyText" style="width:100%; height:500px"></div>    
     <script>
       var player2Editor = ace.edit("player2StrategyText");
       player2Editor.setTheme("ace/theme/Crimson_Editor");
       player2Editor.getSession().setMode("ace/mode/csharp");
-    </script>
+    </script>    
   </div>   
   <div id="GameLogTab" style="display: none;">      
     <div id='gameLogPagination' class='pagination'></div>
@@ -327,27 +390,12 @@ function PopulateKingdom(id) {
 </script>
   
   
-<div id="PlayedArea" style="display: none;">
-  <script type="text/javascript">            
-  function ShowPlayedArea()
-  {      
-    PopulateKingdom("#kingdomImages");
-    GetAvailableGraphs("#selectedGraph");
-    PopulateGameLog(1);
-    $("#StrategyArea").tabs("option", "active", 2);
-    InsertGraph("GameBreakdown");
-  }
-  
+<script type="text/javascript">              
   function ClearGraphs()
   {
      $("#chartsInsertionPoint").empty();
-  }  
-  
-  function ResetPlayedArea()
-  {   
-    ClearGraphs();
-  }
-  </script>     
+  }   
+</script>     
 
 </body>
 </html> 

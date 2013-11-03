@@ -50,7 +50,7 @@ namespace Program.WebService
 
         private PlayerAction GetPlayerActionFromCode(string code)
         {
-            return Program.strategyLoader.GetPlayerActionFromCode(code);            
+            return WebService.GetPlayerActionFromCode(code);            
         }
     }
     

@@ -51,6 +51,7 @@
     <Compile Include="DataGathering\StrategyComparison.cs" />
     <Compile Include="Html\GoogleChartsHelper.cs" />
     <Compile Include="Html\Responses\ComparisonDescription.cs" />
+    <Compile Include="Html\Responses\CheckStrategyCode.cs" />
     <Compile Include="Html\Responses\GetAvailableGraphs.cs" />
     <Compile Include="Html\Responses\GetAvailableStrategies.cs" />
     <Compile Include="Html\Responses\GetGameLog.cs" />

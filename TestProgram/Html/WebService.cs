@@ -36,10 +36,24 @@ namespace Program.WebService
             typeof(GetStrategyText),
             typeof(GetAvailableGraphs),
             typeof(GetGameLog),                        
+            typeof(CheckStrategyCode),
         };
 
-        private string defaultPage = HtmlRenderer.GetEmbeddedContent("Dominulator.html");        
-        
+        private string defaultPage = HtmlRenderer.GetEmbeddedContent("Dominulator.html");
+
+        private static Dictionary<string, PlayerAction> playerActionCache = new Dictionary<string, PlayerAction>();
+
+        internal static PlayerAction GetPlayerActionFromCode(string code)
+        {
+            PlayerAction result;
+            if (!playerActionCache.TryGetValue(code, out result))
+            {
+                result = Program.strategyLoader.GetPlayerActionFromCode(code);
+                playerActionCache[code] = result;
+            }            
+            return result;
+        }
+
         private Dictionary<ComparisonDescription, StrategyComparisonResults> resultsCache = new Dictionary<ComparisonDescription, StrategyComparisonResults>();
         private Dictionary<string, Type> mapNameToServiceType;
 
@@ -80,7 +94,11 @@ namespace Program.WebService
                         gatherStats: true);
 
                     this.resultsCache.Add(descr, result);
-                }                
+                }
+                else
+                {
+                    this.resultsCache.Add(descr, null);
+                }
             }
 
             return result;

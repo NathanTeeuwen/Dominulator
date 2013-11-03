@@ -8,12 +8,12 @@ using System.Reflection;
 
 namespace Program
 {
-    class StrategyLoader
+    class DynamicStrategyLoader
     {
         static string strategyOutputFolder = "DominulatorStrategies";       
         PlayerActionAndSource[] playerActions = null;
 
-        public StrategyLoader()
+        public DynamicStrategyLoader()
         {
             InitGetCompiler();
         }
@@ -73,11 +73,11 @@ namespace Program
 
         public PlayerAction GetPlayerActionFromCode(string code)
         {
-            var assembly = DynamicallyLoadFromSource(code);
-            if (assembly == null)
+            CompiledResult result = DynamicallyLoadFromSource(code);            
+            if (result.assembly == null)
                 return null;
 
-            PlayerAction[] actions = GetAllPlayerActions(assembly);
+            PlayerAction[] actions = GetAllPlayerActions(result.assembly);
             if (actions.Length != 1)
                 return null;
                    
@@ -213,23 +213,41 @@ namespace Program
             provider = new CSharpCodeProvider();            
         }
 
-        public System.Reflection.Assembly DynamicallyLoadFromSource(string code)
+        public class CompiledResult
         {
+            public readonly System.Reflection.Assembly assembly;
+            public readonly CompilerError error;
+
+            public CompiledResult(System.Reflection.Assembly assembly, CompilerError error)
+            {
+                this.assembly = assembly;
+                this.error = error;
+            }
+        }
+
+        public CompiledResult DynamicallyLoadFromSource(string code)
+        {
+            CompilerError error = null;
+            System.Reflection.Assembly assembly = null;
+
             CompilerResults compile = provider.CompileAssemblyFromSource(CompilerParams, code);
 
             if (compile.Errors.HasErrors)
             {
-                var builder = new System.Text.StringBuilder();
-                builder.AppendLine("Compile error:");
+                error = compile.Errors[0];
+                System.Console.WriteLine("Compile error:");
                 foreach (CompilerError ce in compile.Errors)
                 {
-                    builder.AppendLine(ce.ToString());
+                    string strError = ce.ToString();
+                    System.Console.WriteLine(strError);                   
                 }
-                System.Console.WriteLine(builder.ToString());
-                return null;
+            }
+            else
+            {
+                assembly = compile.CompiledAssembly;
             }
 
-            return compile.CompiledAssembly;
+            return new CompiledResult(assembly, error);
         }
 
         public System.Reflection.Assembly DynamicallyLoadFromFile(params string[] sourceFiles)
