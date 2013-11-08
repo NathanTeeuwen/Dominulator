@@ -125,107 +125,148 @@ namespace Program.WebService
             return System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable();
         }
 
+        private bool TryConnectLocalIP()
+        {            
+            using (var listener = new System.Net.HttpListener())
+            {
+                listener.Prefixes.Add(ExternalUrl);                
+                try
+                {
+                    listener.Start();                    
+                }
+                catch(System.Net.HttpListenerException)
+                { 
+                    return false;
+                }
+                listener.Close();
+            }
+
+            return true;
+        }
+
+        private string ExternalUrl
+        {
+            get
+            {
+                return "http://" + LocalIPAddress() + ":8081" + root + "/";
+            }
+        }
+
         public void Run()
         {
             if (!IsConnectedToInternet())
             {
                 System.Console.WriteLine("Not connected to a network");
                 return;
-            }            
+            }
 
-            var listener = new System.Net.HttpListener();
-            listener.Prefixes.Add(baseUrl);            
-            listener.Prefixes.Add("http://" + LocalIPAddress() + ":8081" + root + "/");
-            listener.Start();
-            while (true)
+            bool useLocalIP = true;
+            if (!TryConnectLocalIP())
             {
-                System.Net.HttpListenerContext ctx = listener.GetContext();
-                System.Net.HttpListenerRequest request = ctx.Request;
-                System.Console.WriteLine(request.Url);
+                useLocalIP = false;
+                System.Console.WriteLine("Could not connect through local IP address");
+            }
 
-                System.Net.HttpListenerResponse response = ctx.Response;                
+            System.Console.WriteLine("Connect using {0}", baseUrl.TrimEnd('/'));
 
-                string urlString = request.Url.ToString();
-                string rawUrl = request.RawUrl.ToString();
-
-                string responseText = null;
-
-                urlString.TrimEnd('/');
-                byte[] reponseBuffer = null;
-                if (rawUrl == root)
-                {
-                    responseText = defaultPage;
-                    responseText = responseText.Replace(baseUrl, urlString + "/");
-                    response.ContentType = "text/HTML";
+            using (var listener = new System.Net.HttpListener())
+            {
+                listener.Prefixes.Add(baseUrl);
+                if (useLocalIP)
+                { 
+                    listener.Prefixes.Add(ExternalUrl);
                 }
-                else if (rawUrl.StartsWith(WebService.resourcePrefix))
+
+                listener.Start();
+                while (true)
                 {
-                    string resourceName = rawUrl.Remove(0, WebService.resourcePrefix.Length);                    
+                    System.Net.HttpListenerContext ctx = listener.GetContext();
+                    System.Net.HttpListenerRequest request = ctx.Request;
+                    System.Console.WriteLine(request.Url);
 
-                    if (rawUrl.EndsWith(".jpg"))
+                    System.Net.HttpListenerResponse response = ctx.Response;
+
+                    string urlString = request.Url.ToString();
+                    string rawUrl = request.RawUrl.ToString();
+
+                    string responseText = null;
+                    
+                    byte[] reponseBuffer = null;
+                    if (rawUrl == root)
                     {
-                        reponseBuffer = HtmlRenderer.GetEmbeddedContentAsBinary(resourceName);                                                
-                        response.ContentType = System.Net.Mime.MediaTypeNames.Image.Jpeg;
+                        responseText = defaultPage;
+                        responseText = responseText.Replace(baseUrl, urlString + "/");
+                        response.ContentType = "text/HTML";
                     }
-                    else
+                    else if (rawUrl.StartsWith(WebService.resourcePrefix))
                     {
-                        responseText = HtmlRenderer.GetEmbeddedContent(resourceName);
-                        response.ContentType = "text/css";
-                    }
-                }
-                else if (rawUrl.StartsWith(root + "/"))
-                {
-                    var streamReader = new System.IO.StreamReader(request.InputStream, request.ContentEncoding);
-                    var jsonRequest = streamReader.ReadToEnd();
+                        string resourceName = rawUrl.Remove(0, WebService.resourcePrefix.Length);
 
-                    string requestedPage = rawUrl.Remove(0, (root + "/").Length);
-                    object unserializedObject = null;
-
-                    Type serviceType;
-                    if (mapNameToServiceType.TryGetValue(requestedPage, out serviceType))
-                    {
-                        unserializedObject = js.Deserialize(jsonRequest, serviceType);
-                        if (unserializedObject == null)
+                        if (rawUrl.EndsWith(".jpg"))
                         {
-                            unserializedObject = Activator.CreateInstance(serviceType);
+                            reponseBuffer = HtmlRenderer.GetEmbeddedContentAsBinary(resourceName);
+                            response.ContentType = System.Net.Mime.MediaTypeNames.Image.Jpeg;
+                        }
+                        else
+                        {
+                            responseText = HtmlRenderer.GetEmbeddedContent(resourceName);
+                            response.ContentType = "text/css";
                         }
                     }
-
-                    if (unserializedObject is IRequestWithHtmlResponse)
+                    else if (rawUrl.StartsWith(root + "/"))
                     {
-                        responseText = ((IRequestWithHtmlResponse)unserializedObject).GetResponse(this);
+                        var streamReader = new System.IO.StreamReader(request.InputStream, request.ContentEncoding);
+                        var jsonRequest = streamReader.ReadToEnd();
+
+                        string requestedPage = rawUrl.Remove(0, (root + "/").Length);
+                        object unserializedObject = null;
+
+                        Type serviceType;
+                        if (mapNameToServiceType.TryGetValue(requestedPage, out serviceType))
+                        {
+                            unserializedObject = js.Deserialize(jsonRequest, serviceType);
+                            if (unserializedObject == null)
+                            {
+                                unserializedObject = Activator.CreateInstance(serviceType);
+                            }
+                        }
+
+                        if (unserializedObject is IRequestWithHtmlResponse)
+                        {
+                            responseText = ((IRequestWithHtmlResponse)unserializedObject).GetResponse(this);
+                        }
+                        else if (unserializedObject is IRequestWithJsonResponse)
+                        {
+                            object o = ((IRequestWithJsonResponse)unserializedObject).GetResponse(this);
+                            var serialized = js.Serialize(o);
+                            responseText = serialized;
+                        }
+                        response.ContentType = "text/html";
                     }
-                    else if (unserializedObject is IRequestWithJsonResponse)
+
+                    if (response.ContentType != null && response.ContentType.StartsWith("text") && responseText != null)
                     {
-                        object o = ((IRequestWithJsonResponse)unserializedObject).GetResponse(this);
-                        var serialized = js.Serialize(o);
-                        responseText = serialized;
+                        response.ContentEncoding = System.Text.UTF8Encoding.UTF8;
+                        reponseBuffer = System.Text.Encoding.UTF8.GetBytes(responseText);
                     }
-                    response.ContentType = "text/html";
+
+                    if (reponseBuffer != null)
+                    {
+                        //These headers to allow all browsers to get the response
+                        response.Headers.Add("Access-Control-Allow-Credentials", "true");
+                        response.Headers.Add("Access-Control-Allow-Origin", "*");
+                        response.Headers.Add("Access-Control-Origin", "*");
+
+                        //response.StatusCode = 200;
+                        //response.StatusDescription = "OK";                    
+                        // Get a response stream and write the response to it.
+                        response.ContentLength64 = reponseBuffer.Length;
+                        System.IO.Stream output = response.OutputStream;
+                        output.Write(reponseBuffer, 0, reponseBuffer.Length);
+                        output.Close();
+                    }
+                    response.Close();
                 }
-
-                if (response.ContentType != null && response.ContentType.StartsWith("text"))
-                {
-                    response.ContentEncoding = System.Text.UTF8Encoding.UTF8;
-                    reponseBuffer = System.Text.Encoding.UTF8.GetBytes(responseText);
-                }                
-
-                if (reponseBuffer != null)
-                {
-                    //These headers to allow all browsers to get the response
-                    response.Headers.Add("Access-Control-Allow-Credentials", "true");
-                    response.Headers.Add("Access-Control-Allow-Origin", "*");
-                    response.Headers.Add("Access-Control-Origin", "*");                       
-
-                    //response.StatusCode = 200;
-                    //response.StatusDescription = "OK";                    
-                    // Get a response stream and write the response to it.
-                    response.ContentLength64 = reponseBuffer.Length;
-                    System.IO.Stream output = response.OutputStream;
-                    output.Write(reponseBuffer, 0, reponseBuffer.Length);
-                    output.Close();
-                }
-                response.Close();
             }
         }
     }
