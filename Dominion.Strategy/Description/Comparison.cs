@@ -3,7 +3,9 @@
     public enum Comparison
     {
         LessThan,
+        LessThanEqual,
         GreaterThan,
+        GreaterThanEqual,
         None,
     }
  }

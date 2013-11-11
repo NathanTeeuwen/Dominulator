@@ -14,9 +14,9 @@ namespace Program
         {
             var initialDescription = new PickByPriorityDescription(new CardAcceptanceDescription[]
             {
-                new CardAcceptanceDescription( Cards.Province, new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)}),
-                new CardAcceptanceDescription( Cards.Gold, new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)}),
-                new CardAcceptanceDescription( Cards.Silver, new MatchDescription[] { new MatchDescription( null, CountSource.None, Comparison.None, 0)})
+                new CardAcceptanceDescription( Cards.Province, CountSource.None, null, Comparison.None, 0),
+                new CardAcceptanceDescription( Cards.Gold, CountSource.None, null, Comparison.None, 0),
+                new CardAcceptanceDescription( Cards.Silver, CountSource.None, null, Comparison.None, 0)
             });
 
             Random random = new Random();
@@ -52,9 +52,9 @@ namespace Program
             Random random = new Random();
             var initialPopulation = Enumerable.Range(0, 10).Select(index => new BigMoneyWithCardDescription(card)).ToArray();
 
-            var algorithm = new GeneticAlgorithm.GeneticAlgorithmAgainstConstant<BigMoneyWithCardDescription, MutateBigMoneyWithCardDescription, CompareBigMoneyWithCardDescription>(
+            var algorithm = new GeneticAlgorithm.GeneticAlgorithmAgainstConstant<BigMoneyWithCardDescription, MutateDescriptionFromParameters, CompareBigMoneyWithCardDescription>(
                 initialPopulation,
-                new MutateBigMoneyWithCardDescription(random),
+                new MutateDescriptionFromParameters(random),
                 new CompareBigMoneyWithCardDescription(playerAction),
                 new Random());
 

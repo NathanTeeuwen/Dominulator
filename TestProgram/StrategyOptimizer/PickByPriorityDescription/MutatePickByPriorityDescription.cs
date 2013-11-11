@@ -82,7 +82,7 @@ namespace Program
             if (card == null)
                 return false;
             int insertLocation = FindLocationByCost(descriptions, card);
-            descriptions.Insert(insertLocation, new CardAcceptanceDescription(card, new MatchDescription[] { new MatchDescription(null, CountSource.AllOwned, Comparison.LessThan, 10) }));
+            descriptions.Insert(insertLocation, new CardAcceptanceDescription(card, CountSource.CountAllOwned, null, Comparison.LessThan, 10));
 
             return true;
         }
@@ -114,7 +114,7 @@ namespace Program
             if (insertLocation < descriptions.Count - 1 && descriptions[insertLocation + 1].card.Equals(card))
                 return false;
 
-            descriptions.Insert(insertLocation, new CardAcceptanceDescription(card, new MatchDescription[] { new MatchDescription(null, CountSource.AllOwned, Comparison.LessThan, 1) }));
+            descriptions.Insert(insertLocation, new CardAcceptanceDescription(card, CountSource.CountAllOwned, null, Comparison.LessThan, 1));
 
             return true;
         }

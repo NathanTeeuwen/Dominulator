@@ -61,7 +61,7 @@ namespace Program.GeneticAlgorithm
             }
 
             return true;
-        }
+        }        
 
         public override bool Equals(object obj)
         {

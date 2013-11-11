@@ -16,7 +16,7 @@ namespace Dominion.Strategy.Description
         public readonly Comparison comparison;
         public int countThreshHold;
 
-        public MatchDescription(Card cardType, CountSource countSource, Comparison comparison, int threshhold)
+        public MatchDescription(CountSource countSource, Card cardType, Comparison comparison, int threshhold)
         {
             this.cardType = cardType;
             this.countSource = countSource;
@@ -26,7 +26,7 @@ namespace Dominion.Strategy.Description
 
         public MatchDescription Clone()
         {
-            return new MatchDescription(this.cardType, this.countSource, this.comparison, this.countThreshHold);
+            return new MatchDescription(this.countSource, this.cardType, this.comparison, this.countThreshHold);
         }
 
         public CardAcceptance ToCardAcceptance()
@@ -40,10 +40,10 @@ namespace Dominion.Strategy.Description
 
             switch (countSource)
             {
-                case CountSource.Pile:
+                case CountSource.CountOfPile:
                     countOfTheSource = Strategy.CountOfPile(this.cardType, gameState);
                     break;
-                case CountSource.AllOwned:
+                case CountSource.CountAllOwned:
                     countOfTheSource = Strategy.CountAllOwned(this.cardType, gameState);
                     break;
                 case CountSource.InHand:

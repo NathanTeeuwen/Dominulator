@@ -8,7 +8,12 @@ namespace Dominion.Strategy.Description
         public readonly Card card;
         public readonly MatchDescription[] matchDescriptions;
 
-        public CardAcceptanceDescription(Card card, MatchDescription[] matchDescriptions)
+        public CardAcceptanceDescription(Card card, CountSource countSource, Card matchOn, Comparison comparison, int threshhold)
+            : this(card, new MatchDescription(countSource, matchOn, comparison, threshhold))
+        {            
+        }
+
+        public CardAcceptanceDescription(Card card, params MatchDescription[] matchDescriptions)
         {
             this.card = card;
             this.matchDescriptions = matchDescriptions;

@@ -9,15 +9,15 @@ using Program.GeneticAlgorithm;
 
 namespace Program
 {
-    class MutateBigMoneyWithCardDescription
+    class MutateDescriptionFromParameters
            : ISpecidesMutator<BigMoneyWithCardDescription>    
     {        
         private readonly Random random;        
 
-        public MutateBigMoneyWithCardDescription(Random random)
+        public MutateDescriptionFromParameters(Random random)
         {
             this.random = random;            
-        }    
+        }
 
         public BigMoneyWithCardDescription Mutate(BigMoneyWithCardDescription descr)
         {

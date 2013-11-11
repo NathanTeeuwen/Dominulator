@@ -65,24 +65,24 @@ namespace Dominion.Strategy
 
         public static CardAcceptance For(Card card, int threshhold)
         {
-            return For(card, CountSource.AllOwned, Comparison.LessThan, threshhold);
+            return For(card, CountSource.CountAllOwned, Comparison.LessThan, threshhold);
         }
 
         public static CardAcceptance For(Card card, int threshhold, GameStatePredicate match)
         {
-            return For(card, CountSource.AllOwned, Comparison.LessThan, threshhold, match);
+            return For(card, CountSource.CountAllOwned, Comparison.LessThan, threshhold, match);
         }
 
         public static CardAcceptance For(Card card, CountSource countSource, Comparison comparison, int threshhold)
         {
-            MatchDescription descr = new MatchDescription(card, countSource, comparison, threshhold);
+            MatchDescription descr = new MatchDescription(countSource, card, comparison, threshhold);
 
             return descr.ToCardAcceptance();            
         }
 
         public static CardAcceptance For(Card card, CountSource countSource, Comparison comparison, int threshhold, GameStatePredicate match)
         {
-            MatchDescription descr = new MatchDescription(card, countSource, comparison, threshhold);
+            MatchDescription descr = new MatchDescription(countSource, card, comparison, threshhold);
 
             return CardAcceptance.For(card, gameState => descr.GameStatePredicate(gameState) && match(gameState));
         } 

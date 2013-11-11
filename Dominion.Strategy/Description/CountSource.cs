@@ -10,8 +10,8 @@ namespace Dominion.Strategy.Description
 {
     public enum CountSource
     {
-        Pile,
-        AllOwned,
+        CountOfPile,
+        CountAllOwned,
         InHand,
         None,
     }
