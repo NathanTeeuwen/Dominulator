@@ -13,10 +13,10 @@ namespace Strategies
 
         public static PlayerAction Player()            
         {
-            return Player("AmbassadorCaravanApprenticeMerchantGuild");
+            return PlayerCustom("AmbassadorCaravanApprenticeMerchantGuild");
         }
 
-        public static PlayerAction Player(string playerName, bool shouldApprentice = false)
+        public static PlayerAction PlayerCustom(string playerName, bool shouldApprentice = false)
         {
             return new PlayerAction(
                         playerName,

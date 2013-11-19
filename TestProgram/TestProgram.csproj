@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AmbassadorCaravanApprenticeMerchantGuild.cs" />
+    <EmbeddedResource Include="Strategies\AmbassadorCaravanApprenticeMerchantGuild.cs" />
     <Compile Include="DataGathering\Delegates.cs" />
     <Compile Include="DataGathering\StrategyComparisonResults.cs" />
     <Compile Include="DataGathering\StrategyComparison.cs" />
