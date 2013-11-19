@@ -213,6 +213,23 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class MerchantGuild
+        : Card
+    {
+        public static MerchantGuild card = new MerchantGuild();
+
+        private MerchantGuild()
+            : base("Merchant Guild", coinCost: 5, plusCoins: 1, plusBuy:1, isAction:true)
+        {
+            this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
+        }
+
+        private new void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
+        {
+            currentPlayer.AddCoinTokens(1);            
+        }
+    }
+
     public class Plaza
         : Card
     {

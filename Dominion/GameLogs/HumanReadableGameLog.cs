@@ -344,12 +344,12 @@ namespace Dominion
 
         public void PlayerReturnedCardToHand(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} returned {1} to hand", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} returned {1} to hand", GetPlayerName(playerState), card.name);
         }
 
         public void PlayerSetAsideCardFromHandForNextTurn(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} set aside {1} for next turn", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} set aside {1} for next turn", GetPlayerName(playerState), card.name);
         }    
 
         public void PlayerOverpaidForCard(Card boughtCard, int overPayAmount)
@@ -368,7 +368,7 @@ namespace Dominion
 
         public void PlayerReturnedCardToPile(PlayerState playerState, Card card)
         {
-            this.textWriter.WriteLine("{0} returned {1} to its pile", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} returned {1} to its pile", GetPlayerName(playerState), card.name);
         }
 
         private void WriteAllCards(BagOfCards cards)

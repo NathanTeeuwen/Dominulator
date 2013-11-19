@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmbassadorCaravanApprenticeMerchantGuild.cs" />
     <Compile Include="DataGathering\Delegates.cs" />
     <Compile Include="DataGathering\StrategyComparisonResults.cs" />
     <Compile Include="DataGathering\StrategyComparison.cs" />
@@ -276,7 +277,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Simulations\UnevenCurseSplit.cs" />
     <EmbeddedResource Include="Strategies\ArmoryConspiratorForagerGreatHall.cs" />
-    <Compile Include="Strategies\BigMoney.cs" />
+    <EmbeddedResource Include="Strategies\BigMoney.cs" />
     <EmbeddedResource Include="Strategies\ButcherPlazaWatchtower.cs" />
     <EmbeddedResource Include="Strategies\CaravanBridgeDukeCartographer.cs" />
     <EmbeddedResource Include="Strategies\BigMoneySimple.cs" />

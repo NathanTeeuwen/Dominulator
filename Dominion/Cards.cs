@@ -129,6 +129,7 @@ namespace Dominion
         public static readonly CardTypes.Masterpiece Masterpiece = CardTypes.Masterpiece.card;
         public static readonly CardTypes.Menagerie Menagerie = CardTypes.Menagerie.card;
         public static readonly CardTypes.Mercenary Mercenary = CardTypes.Mercenary.card;
+        public static readonly CardTypes.MerchantGuild MerchantGuild = CardTypes.MerchantGuild.card;
         public static readonly CardTypes.MerchantShip MerchantShip = CardTypes.MerchantShip.card;
         public static readonly CardTypes.Militia Militia = CardTypes.Militia.card;
         public static readonly CardTypes.Mine Mine = CardTypes.Mine.card;

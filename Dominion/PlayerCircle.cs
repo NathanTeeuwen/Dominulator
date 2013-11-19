@@ -89,17 +89,24 @@ namespace Dominion
         {
             foreach (PlayerState playerState in this.players)
             {                
-                IEnumerable<CardCountPair> startingHand = gameConfig.StartingHand(playerState.PlayerIndex);
+                IEnumerable<CardCountPair> shuffleLuck = gameConfig.ShuffleLuck(playerState.PlayerIndex);
 
-                if (startingHand == null)
+                if (shuffleLuck != null)
                 {
-                    playerState.DrawUntilCountInHand(5);                    
-                }
-                else
-                {
-                    playerState.DrawCardsIntoHand(startingHand);
-                }
+                    playerState.shuffleLuck = GetCardsInOrder(shuffleLuck).GetEnumerator();
+                }                
+
+                playerState.DrawUntilCountInHand(5);
             }            
+        }
+
+        static private IEnumerable<Card> GetCardsInOrder(IEnumerable<CardCountPair> pairs)
+        {
+            foreach (CardCountPair pair in pairs)
+            {
+                for (int i = 0; i < pair.Count; ++i)
+                    yield return pair.Card;
+            }
         }
 
         public PlayerState[] OriginalPlayerOrder

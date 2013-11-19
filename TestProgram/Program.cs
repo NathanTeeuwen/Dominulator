@@ -24,8 +24,39 @@ namespace Program
 
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
+            /*
+            var player1 = Strategies.AmbassadorCaravanApprenticeMerchantGuild.Player(playerName: "Unlucky", shouldApprentice:false);
+            var player2 = Strategies.AmbassadorCaravanApprenticeMerchantGuild.Player(playerName: "Lucky", shouldApprentice: true);            
+            //var player2 = Strategies.BigMoney.Player();
             
-            //ComparePlayers("BigMoney", "BigMoneyDoubleJack", useColonyAndPlatinum: false, createHtmlReport: true, numberOfGames: 1000, shouldParallel: false);
+
+            var builder = new GameConfigBuilder();
+            
+            builder.SetShuffleLuckPerPlayer( new CardCountPair[][] {                                 
+                new CardCountPair[] { new CardCountPair(Cards.Copper, 4), new CardCountPair(Cards.Estate, 1), 
+                                      new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 2),
+                                      new CardCountPair(Cards.Copper, 4), new CardCountPair(Cards.Estate, 1), 
+                                      new CardCountPair(Cards.Caravan, 1), new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 2), 
+                                      new CardCountPair(Cards.Ambassador, 1), new CardCountPair(Cards.Silver, 1), new CardCountPair(Cards.Copper, 4)
+                },               
+                new CardCountPair[] { new CardCountPair(Cards.Copper, 4), new CardCountPair(Cards.Estate, 1), 
+                                      new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 2),
+                                      new CardCountPair(Cards.Caravan, 1), new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 2), 
+                                      
+                },
+            });
+            
+            PlayerAction.SetKingdomCards(builder, player1, player2);
+
+            ComparePlayers(
+                player1, 
+                player2,                 
+                builder.ToGameConfig(),
+                firstPlayerAdvantage:true,
+                createHtmlReport: true, 
+                numberOfGames: 1000, 
+                shouldParallel: false);
+             */
             //CompareStrategyVsAllKnownStrategies("BigMoney", numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:0);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();

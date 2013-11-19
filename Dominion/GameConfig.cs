@@ -12,7 +12,7 @@ namespace Dominion
         public bool useColonyAndPlatinum;        
         private Card[] kingdomPiles;
         private MapPlayerGameConfigToCardSet startingDeck;
-        private MapPlayerGameConfigToCardSet startingHand;               
+        private MapPlayerGameConfigToCardSet shuffleLuck;               
 
         public static GameConfig Create(StartingCardSplit split, params Card[] cards)
         {
@@ -35,7 +35,7 @@ namespace Dominion
             this.useColonyAndPlatinum = false;
             this.kingdomPiles = null;
             this.startingDeck = GetDefaultStartingDeck;
-            this.startingHand = GetDefaultStartingHand;
+            this.shuffleLuck = GetDefaultStartingHand;
         }
 
         public GameConfigBuilder(GameConfig gameConfig)
@@ -44,7 +44,7 @@ namespace Dominion
             this.useColonyAndPlatinum = gameConfig.useColonyAndPlatinum;
             this.kingdomPiles = gameConfig.kingdomPiles;
             this.startingDeck = gameConfig.startingDeck;
-            this.startingHand = gameConfig.startingHand;
+            this.shuffleLuck = gameConfig.startingHand;
         }
 
         public void SetStartingDeck(IEnumerable<CardCountPair> startingCards)
@@ -55,6 +55,11 @@ namespace Dominion
         public void SetStartingDeckPerPlayer(IEnumerable<CardCountPair>[] cardPerPlayer)
         {
             this.startingDeck = GetCardSetFromArray(cardPerPlayer);
+        }
+
+        public void SetShuffleLuckPerPlayer(IEnumerable<CardCountPair>[] cardPerPlayer)
+        {
+            this.shuffleLuck = GetCardSetFromArray(cardPerPlayer);
         }
 
         public void SetKingdomPiles(IEnumerable<Card> cards)
@@ -124,13 +129,13 @@ namespace Dominion
         {
             set
             {
-                this.startingHand = GetStartingHandForSplit(value);
+                this.shuffleLuck = GetStartingHandForSplit(value);
             }
         }
 
         public GameConfig ToGameConfig()
         {
-            return new GameConfig(this.kingdomPiles, this.useShelters, this.useColonyAndPlatinum, this.startingDeck, this.startingHand);
+            return new GameConfig(this.kingdomPiles, this.useShelters, this.useColonyAndPlatinum, this.startingDeck, this.shuffleLuck);
         }
 
         static readonly CardCountPair[] ShelterStartingDeck = new CardCountPair[] {
@@ -231,7 +236,7 @@ namespace Dominion
             this.cardGameSubset.isInitializing = false;
         }      
 
-        public IEnumerable<CardCountPair> StartingHand(int playerIndex)
+        public IEnumerable<CardCountPair> ShuffleLuck(int playerIndex)
         {
             return this.startingHand(playerIndex, this);
         }

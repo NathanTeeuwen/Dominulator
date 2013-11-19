@@ -260,7 +260,7 @@ namespace Dominion
         {
             for (int i = 0; i < this.gameLogs.Length; ++i)
             {
-                this.gameLogs[i].BeginTurn(playerState);
+                this.gameLogs[i].PlayerGainedCoinToken(playerState, coinAmount);
             }
         }
 

@@ -42,7 +42,9 @@ namespace Dominion
         internal bool ownsCardWithSpecializedActionOnTrashWhileInHand;
         internal bool ownsCardWithSpecializedActionOnGainWhileInPlay;
         internal bool ownsCardWithSpecializedActionOnBuyWhileInHand;
-        internal bool ownsCardWithSpecializedActionOnGainWhileInHand;        
+        internal bool ownsCardWithSpecializedActionOnGainWhileInHand;
+
+        internal IEnumerator<Card> shuffleLuck = null;
 
         // all of the cards the player owns.  Always move from one list to the other
         internal ListOfCards deck;
@@ -234,6 +236,24 @@ namespace Dominion
                 TriggerShuffleOfDiscardIntoDeck();
             }
 
+            if (this.deck.IsEmpty)
+                return null;
+
+            if (this.shuffleLuck != null)
+            {
+                if (this.shuffleLuck.MoveNext())
+                {
+                    Card preferredCard = this.shuffleLuck.Current;
+                    Card result = this.deck.FindAndRemoveCardOrderDestroyed(preferredCard);
+                    if (result != null)
+                        return result;
+                }
+                else
+                {
+                    this.shuffleLuck = null;
+                }
+            }
+           
             Card card = this.deck.DrawCardFromTop();            
             return card;
         }
@@ -566,10 +586,8 @@ namespace Dominion
             Card cardInPlay = this.cardsBeingPlayed.DrawCardFromTop();
             if (cardInPlay != null)
             {
-                PileOfCards pile = gameState.GetPile(cardInPlay);
-                pile.AddCardToTop(cardInPlay);
-                wasReturned = true;
-                this.gameLog.PlayerReturnedCardToPile(this, cardInPlay);
+                this.ReturnCardToSupply(cardInPlay, gameState);              
+                wasReturned = true;                
             }
 
             this.cardsBeingPlayed.AddCardToTop(null);
@@ -744,10 +762,13 @@ namespace Dominion
             int coinToSpend = this.actions.GetCoinAmountToSpendInBuyPhase(gameState);
             if (coinToSpend > this.AvailableCoinTokens || coinToSpend < 0)
                 throw new Exception("Can not spend that many coins");
-            this.AddCoinTokens(-coinToSpend);
-            this.gameLog.PushScope();
-            this.AddCoins(coinToSpend);
-            this.gameLog.PopScope();
+            if (coinToSpend != 0)
+            {
+                this.AddCoinTokens(-coinToSpend);
+                this.gameLog.PushScope();
+                this.AddCoins(coinToSpend);
+                this.gameLog.PopScope();
+            }
         }
 
         internal Card RequestPlayerChooseCardToRemoveFromHandForPlay(GameState gameState, CardPredicate acceptableCard, bool isTreasure, bool isAction, bool isOptional)
@@ -1803,6 +1824,7 @@ namespace Dominion
 
         internal void ReturnCardToSupply(Card cardToReturn, GameState gameState)
         {
+            this.gameLog.PlayerReturnedCardToPile(this, cardToReturn);
             PileOfCards pile = gameState.GetPile(cardToReturn);
             if (pile == null)
                 throw new Exception("Could not find supply pile");

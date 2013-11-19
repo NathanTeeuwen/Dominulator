@@ -55,11 +55,6 @@ namespace Dominion.Strategy
 
         public override Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
         {
-            if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
-            {
-                return this.defaultCardResponses.GetCardFromSupplyToBuy(gameState, cardPredicate);
-            }
-
             var self = gameState.Self;
             return this.purchaseOrder.GetPreferredCard(
                 gameState,

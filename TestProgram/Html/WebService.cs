@@ -136,7 +136,8 @@ namespace Program.WebService
                 }
                 catch(System.Net.HttpListenerException e)
                 {
-                    System.Console.WriteLine(e);
+                    e.ToString();
+                    //System.Console.WriteLine(e);
                     return false;
                 }
                 listener.Close();
