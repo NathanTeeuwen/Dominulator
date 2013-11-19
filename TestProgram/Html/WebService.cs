@@ -134,8 +134,9 @@ namespace Program.WebService
                 {
                     listener.Start();                    
                 }
-                catch(System.Net.HttpListenerException)
-                { 
+                catch(System.Net.HttpListenerException e)
+                {
+                    System.Console.WriteLine(e);
                     return false;
                 }
                 listener.Close();
@@ -166,8 +167,12 @@ namespace Program.WebService
                 useLocalIP = false;
                 System.Console.WriteLine("Could not connect through local IP address");
             }
-
+            
             System.Console.WriteLine("Connect using {0}", baseUrl.TrimEnd('/'));
+            if (useLocalIP)
+            {
+                System.Console.WriteLine("Connect using {0}", ExternalUrl.TrimEnd('/'));
+            }
 
             using (var listener = new System.Net.HttpListener())
             {
