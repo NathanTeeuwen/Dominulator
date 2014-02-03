@@ -24,39 +24,66 @@ namespace Program
 
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
-            /*
-            var player1 = Strategies.AmbassadorCaravanApprenticeMerchantGuild.Player(playerName: "Unlucky", shouldApprentice:false);
-            var player2 = Strategies.AmbassadorCaravanApprenticeMerchantGuild.Player(playerName: "Lucky", shouldApprentice: true);            
-            //var player2 = Strategies.BigMoney.Player();
             
+            /*
+            //var player1 = Strategies.AmbassadorCaravanApprenticeMerchantGuild.PlayerCustom(playerName: "Unlucky", shouldApprentice:false);
+            //var player2 = Strategies.AmbassadorCaravanApprenticeMerchantGuild.PlayerCustom(playerName: "Lucky", shouldApprentice: true);                                    
+
+            var player1 = Strategies.AmbassadorCaravanLaboratory.PlayerCustom("AmbassadorMaxReturn");
+            player1.cardResponseMap[Cards.Ambassador] = new Dominion.Strategy.DefaultPlayRules.Cards.AmbassadorMaxReturn(player1);
+
+            var player2 = Strategies.AmbassadorCaravanLaboratory.PlayerCustom("AmbassadorReturnIfNotDisruptPurchase");
+            player2.cardResponseMap[Cards.Ambassador] = new Dominion.Strategy.DefaultPlayRules.Cards.AmbassadorReturnIfNotDisruptPurchase(player2);
+
+            var player3 = Strategies.AmbassadorCaravanLaboratory.PlayerCustom("AmbassadorAlwaysReturnBestTrash");
+            player3.cardResponseMap[Cards.Ambassador] = new Dominion.Strategy.DefaultPlayRules.Cards.AmbassadorAlwaysReturnBestTrash(player3);
 
             var builder = new GameConfigBuilder();
             
+            /*
             builder.SetShuffleLuckPerPlayer( new CardCountPair[][] {                                 
                 new CardCountPair[] { new CardCountPair(Cards.Copper, 4), new CardCountPair(Cards.Estate, 1), 
-                                      new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 2),
-                                      new CardCountPair(Cards.Copper, 4), new CardCountPair(Cards.Estate, 1), 
-                                      new CardCountPair(Cards.Caravan, 1), new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 2), 
-                                      new CardCountPair(Cards.Ambassador, 1), new CardCountPair(Cards.Silver, 1), new CardCountPair(Cards.Copper, 4)
+                                      new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 2),                                                                            
+                                      new CardCountPair(Cards.Ambassador, 1), new CardCountPair(Cards.Estate, 2), new CardCountPair(Cards.Copper, 2),
+                                      new CardCountPair(Cards.Silver, 1), new CardCountPair(Cards.Copper, 4)                                      
                 },               
+
                 new CardCountPair[] { new CardCountPair(Cards.Copper, 4), new CardCountPair(Cards.Estate, 1), 
-                                      new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 2),
-                                      new CardCountPair(Cards.Caravan, 1), new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 2), 
-                                      
+                                      new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 2),                                      
+                                      new CardCountPair(Cards.Ambassador, 1), new CardCountPair(Cards.Estate, 2), new CardCountPair(Cards.Copper, 2),
+                                      new CardCountPair(Cards.Ambassador, 1), new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 1)
                 },
             });
             
             PlayerAction.SetKingdomCards(builder, player1, player2);
 
             ComparePlayers(
-                player1, 
-                player2,                 
+                player1,
+                player2,
                 builder.ToGameConfig(),
-                firstPlayerAdvantage:true,
+                firstPlayerAdvantage:false,
                 createHtmlReport: true, 
-                numberOfGames: 1000, 
-                shouldParallel: false);
-             */
+                numberOfGames: 10000, 
+                shouldParallel: true);
+
+            ComparePlayers(
+                player3,
+                player2,
+                builder.ToGameConfig(),
+                firstPlayerAdvantage: false,
+                createHtmlReport: true,
+                numberOfGames: 10000,
+                shouldParallel: true);
+
+            ComparePlayers(
+                player1,
+                player3,
+                builder.ToGameConfig(),
+                firstPlayerAdvantage: false,
+                createHtmlReport: true,
+                numberOfGames: 10000,
+                shouldParallel: true);*/
+            
             //CompareStrategyVsAllKnownStrategies("BigMoney", numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:0);
             //TestAllCardsWithBigMoney();    
             //FindOptimalPlayForEachCardWithBigMoney();

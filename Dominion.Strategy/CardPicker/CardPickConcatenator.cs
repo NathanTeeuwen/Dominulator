@@ -47,7 +47,7 @@ namespace Dominion.Strategy
             for (int i = this.matchers.Length-1; i > 0; --i)            
             {
                 ICardPicker matcher = this.matchers[i];
-                Card result = matcher.GetPreferredCard(gameState, cardPredicate);
+                Card result = matcher.GetPreferredCardReverse(gameState, cardPredicate);
                 if (result != null)
                 {
                     return result;

@@ -42,6 +42,7 @@
     <Compile Include="CardPicker\CardAcceptance.cs" />
     <Compile Include="CardPicker\CardPickByBuilderOrder.cs" />
     <Compile Include="CardPicker\CardPickByPriority.cs" />
+    <Compile Include="CardPicker\CardPickForCondition.cs" />
     <Compile Include="CardPicker\CardPickConcatenator.cs" />
     <Compile Include="DefaultPlayRules\CardOverrides.cs" />
     <Compile Include="DefaultPlayRules\Cards\Alchemist.cs" />

@@ -26,6 +26,7 @@ namespace Dominion.Strategy
 
         public readonly ICardPicker defaultActionOrder;
 
+        public readonly MapOfCards<IPlayerAction> cardResponseMap;  // readonly, potentially mutable during setup.
         private readonly PlayerActionFromCardResponses defaultCardResponses;
         private readonly MapOfCards<GameStatePlayerActionPredicate> defaultShouldPlay;
 
@@ -49,7 +50,8 @@ namespace Dominion.Strategy
             this.name = name;
             this.defaultActionOrder = DefaultStrategies.DefaultActionPlayOrder(purchaseOrder);
 
-            this.defaultCardResponses = new PlayerActionFromCardResponses(DefaultPlayRules.DefaultResponses.GetCardResponses(this));
+            this.cardResponseMap = DefaultPlayRules.DefaultResponses.GetCardResponses(this);            
+            this.defaultCardResponses = new PlayerActionFromCardResponses(this.cardResponseMap);
             this.defaultShouldPlay = DefaultPlayRules.DefaultResponses.GetCardShouldPlayDefaults(this);
         }                
 

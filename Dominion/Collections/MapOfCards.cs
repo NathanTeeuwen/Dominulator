@@ -15,14 +15,19 @@ namespace Dominion
             this.mapCardIndexToResult = new List<T>(capacity: Game.ApproxNumberOfDifferentCards);
         }
 
+        private void GrowToSize(int maxIndex)
+        {
+            while (maxIndex >= this.mapCardIndexToResult.Count)
+            {
+                this.mapCardIndexToResult.Add(default(T));
+            }
+        }
+
         public T this[Card card]
         {
             set
             {
-                while (card.Index >= this.mapCardIndexToResult.Count)
-                {
-                    this.mapCardIndexToResult.Add(default(T));
-                }
+                GrowToSize(card.Index);                
                 this.mapCardIndexToResult[card.Index] = value;
             }
 
@@ -33,6 +38,18 @@ namespace Dominion
                     return default(T);
                 }
                 return this.mapCardIndexToResult[card.Index];
+            }
+        }
+
+        public void CopyNonSentinelValues(MapOfCards<T> other)
+        {
+            GrowToSize(other.mapCardIndexToResult.Count+1);
+            for (int index = 0; index < other.mapCardIndexToResult.Count; ++index)
+            {
+                if (!other.mapCardIndexToResult[index].Equals(default(T)))
+                {
+                    this.mapCardIndexToResult[index] = other.mapCardIndexToResult[index];
+                }
             }
         }
     }

@@ -5,12 +5,12 @@ using System.Linq;
 
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
-    internal class AmbassadorAlwaysReturn
+    public class AmbassadorAlwaysReturnBestTrash
       : UnimplementedPlayerAction
     {
         private readonly PlayerAction playerAction;
 
-        public AmbassadorAlwaysReturn(PlayerAction playerAction)
+        public AmbassadorAlwaysReturnBestTrash(PlayerAction playerAction)
         {
             this.playerAction = playerAction;
         }
@@ -27,7 +27,7 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
         }
     }
 
-    internal class AmbassadorReturnIfNotDisruptPurchase
+    public class AmbassadorReturnIfNotDisruptPurchase
       : UnimplementedPlayerAction
     {
         private readonly PlayerAction playerAction;
@@ -77,6 +77,38 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
             if (cardWithAllCoin != cardWithReturnedCard)
                 return 1;
             
+            return 2;
+        }
+    }
+
+    public class AmbassadorMaxReturn
+      : UnimplementedPlayerAction
+    {
+        private readonly PlayerAction playerAction;
+
+        public AmbassadorMaxReturn(PlayerAction playerAction)
+        {
+            this.playerAction = playerAction;
+        }
+
+        public override Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
+        {
+            int maxCount = 0;
+            // find out which card that is wanted to be trashed you have most of in hand.
+            foreach (Card card in playerAction.trashOrder.GetNeededCards())
+            {
+                maxCount = Math.Max(maxCount, gameState.Self.Hand.CountOf(card));
+            }
+
+            if (maxCount > 2)
+                maxCount = 2;
+
+            Card cardToReturn = playerAction.trashOrder.GetPreferredCard(gameState, card => gameState.Self.Hand.CountOf(card) >= maxCount && acceptableCard(card));
+            return cardToReturn;
+        }
+
+        public override int GetCountToReturnToSupply(Card cardToReturn, GameState gameState)
+        {
             return 2;
         }
     }

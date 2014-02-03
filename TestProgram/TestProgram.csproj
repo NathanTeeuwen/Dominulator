@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Strategies\AmbassadorCaravanLaboratory.cs" />
     <EmbeddedResource Include="Strategies\AmbassadorCaravanApprenticeMerchantGuild.cs" />
     <Compile Include="DataGathering\Delegates.cs" />
     <Compile Include="DataGathering\StrategyComparisonResults.cs" />
@@ -265,6 +266,7 @@
     <EmbeddedResource Include="Strategies\FamiliarPotionSilverOpenning.cs" />
     <EmbeddedResource Include="Strategies\FamiliarSilverSilverOpenning.cs" />
     <EmbeddedResource Include="Strategies\MountebankGovernorMaurader.cs" />
+    <EmbeddedResource Include="Strategies\ChapelCanTripKingsCourtMasquerade.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\BigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\MutateBigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\SimpleStrategyDescription.cs" />
