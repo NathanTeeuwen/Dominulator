@@ -444,5 +444,53 @@ namespace Dominion
 
             this.textWriter.WriteLine();
         }
+
+        public static void WriteAllCards(IEnumerable<Card> cards, System.IO.TextWriter textWriter)
+        {
+            if (!cards.Any())
+            {
+                textWriter.WriteLine("nothing");
+                return;
+            }
+
+            bool needComma = false;
+            int cardCount = 0;
+            Card lastCardType = null;
+            foreach (Card currentCard in cards)
+            {
+                if (currentCard != lastCardType)
+                {
+                    if (cardCount > 0)
+                    {
+                        if (!needComma)
+                        {
+                            needComma = true;
+                        }
+                        else
+                        {
+                            textWriter.Write(", ");
+                        }
+                        textWriter.Write("{0} {1}", cardCount, cardCount > 1 ? lastCardType.pluralName : lastCardType.name);
+                        cardCount = 0;
+                    }
+                    lastCardType = currentCard;
+                }
+                cardCount++;
+            }
+
+            if (cardCount > 0)
+            {
+                if (!needComma)
+                {
+                    needComma = true;
+                }
+                else
+                {
+                    textWriter.Write(", ");
+                }
+                textWriter.Write("{0} {1}", cardCount, cardCount > 1 ? lastCardType.pluralName : lastCardType.name);
+                cardCount = 0;
+            }            
+        }
     }
 }

@@ -24,6 +24,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.IllGottenGains] = new IllGottenGainsAlwaysGainCopper(playerAction);
             result[Dominion.Cards.Library] = new Library(playerAction);
             result[Dominion.Cards.MarketSquare] = new MarketSquare(playerAction);
+            result[Dominion.Cards.Mint] = new Mint(playerAction);
             result[Dominion.Cards.Mystic] = new MysticAndWishingWell(playerAction);
             result[Dominion.Cards.Nobles] = new Nobles(playerAction);
             result[Dominion.Cards.Rebuild] = new Rebuild(playerAction);

@@ -54,6 +54,13 @@ namespace Dominion
         internal new Card RemoveSomeCard()
         {
             return base.RemoveSomeCard();
-        }  
+        }
+
+        public override string ToString()
+        {
+            var builder = new StringBuilder();
+            Dominion.HumanReadableGameLog.WriteAllCards(this, new System.IO.StringWriter(builder));
+            return builder.ToString();
+        }
     }
 }

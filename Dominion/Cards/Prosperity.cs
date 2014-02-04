@@ -343,10 +343,8 @@ namespace Dominion.CardTypes
 
             if (revealedCard != null)
             {
-                currentPlayer.GainCardFromSupply(gameState, revealedCard);
-            }
-
-            currentPlayer.MoveRevealedCardToHand(revealedCard);
+                currentPlayer.GainCardFromSupply(gameState, revealedCard);                
+            }            
         }
 
         public override void DoSpecializedWhenBuy(PlayerState currentPlayer, GameState gameState)
