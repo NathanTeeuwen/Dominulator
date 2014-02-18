@@ -16,10 +16,11 @@ namespace Strategies
             return PlayerCustom("MintBaker");
         }
 
+        /*
         public static PlayerAction Player(string playerName)
         {
             return PlayerCustom(playerName);
-        }
+        }*/
 
         public static PlayerAction PlayerCustom(string playerName)
         {

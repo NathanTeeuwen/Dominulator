@@ -267,7 +267,7 @@
     <EmbeddedResource Include="Strategies\FamiliarSilverSilverOpenning.cs" />
     <EmbeddedResource Include="Strategies\MountebankGovernorMaurader.cs" />
     <EmbeddedResource Include="Strategies\ChapelCanTripKingsCourtMasquerade.cs" />
-    <Compile Include="Strategies\MintBaker.cs" />
+    <EmbeddedResource Include="Strategies\MintBaker.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\BigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\BigMoneyWithCard\MutateBigMoneyWithCardDescription.cs" />
     <Compile Include="StrategyOptimizer\PickByPriorityDescription\SimpleStrategyDescription.cs" />

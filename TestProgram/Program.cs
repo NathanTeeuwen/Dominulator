@@ -24,7 +24,7 @@ namespace Program
 
             var stopwatch = new System.Diagnostics.Stopwatch();
             stopwatch.Start();
-            
+            /*
             var player1 = Strategies.MintBaker.Player(playerName: "Start4");
             var player2 = Strategies.MintBaker.Player(playerName: "Start5");                                                           
 
@@ -49,7 +49,7 @@ namespace Program
                 firstPlayerAdvantage:false,
                 createHtmlReport: true, 
                 numberOfGames: 10000, 
-                shouldParallel: true);           
+                shouldParallel: true);*/           
             
             //CompareStrategyVsAllKnownStrategies("BigMoney", numberOfGames: 1000, createHtmlReport: true, debugLogs: true, logGameCount:0);
             //TestAllCardsWithBigMoney();    
