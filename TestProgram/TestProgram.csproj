@@ -230,6 +230,7 @@
     <EmbeddedResource Include="Html\Resources\cards\witch.jpg" />
     <EmbeddedResource Include="Html\Resources\cards\woodcutter.jpg" />
     <EmbeddedResource Include="Html\Resources\cards\workshop.jpg" />
+    <EmbeddedResource Include="Strategies\CacheCountingHouseBridgeTunnel.cs" />
     <EmbeddedResource Include="Strategies\BigMoneyCultist.cs" />
     <EmbeddedResource Include="Strategies\BigMoneyDelayed.cs" />
     <EmbeddedResource Include="Strategies\BigMoneyDoubleSmithy.cs" />
@@ -238,6 +239,7 @@
     <EmbeddedResource Include="Strategies\HermitMarketSquare.cs" />
     <EmbeddedResource Include="Strategies\IllgottengainsMoneylender.cs" />
     <EmbeddedResource Include="Strategies\IronworksGreathallRemodelHuntingGrounds.cs" />
+    <EmbeddedResource Include="Strategies\DevelopFeastMysticTunnel.cs" />
     <EmbeddedResource Include="Strategies\LookoutSalvagerLibraryHighwayFestival.cs" />
     <EmbeddedResource Include="Strategies\LookoutTraderNobles.cs" />
     <EmbeddedResource Include="Strategies\MineHoard.cs" />

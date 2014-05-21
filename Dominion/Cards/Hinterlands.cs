@@ -102,7 +102,7 @@ namespace Dominion.CardTypes
         public static Develop card = new Develop();
 
         private Develop()
-            : base("Develop", coinCost: 4, isAction: true)
+            : base("Develop", coinCost: 3, isAction: true)
         {
         }
 
