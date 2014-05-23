@@ -15,7 +15,7 @@ namespace Dominion.CardTypes
         public static BorderVillage card = new BorderVillage();
 
         private BorderVillage()
-            : base("Border Village", coinCost: 6, isAction: true, plusActions:2, plusCards:1)
+            : base("Border Village", Expansion.Hinterlands, coinCost: 6, isAction: true, plusActions:2, plusCards:1)
         {
         }
 
@@ -36,7 +36,7 @@ namespace Dominion.CardTypes
         public static Cache card = new Cache();
 
         private Cache()
-            : base("Cache", coinCost: 5, isTreasure:true, plusCoins:3)
+            : base("Cache", Expansion.Hinterlands, coinCost: 5, isTreasure:true, plusCoins:3)
         {
         }
 
@@ -53,7 +53,7 @@ namespace Dominion.CardTypes
         public static Cartographer card = new Cartographer();
 
         private Cartographer()
-            : base("Cartographer", coinCost: 5, isAction: true, plusCards: 1, plusActions: 1)
+            : base("Cartographer", Expansion.Hinterlands, coinCost: 5, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
 
@@ -79,7 +79,7 @@ namespace Dominion.CardTypes
         public static CrossRoads card = new CrossRoads();
 
         private CrossRoads()
-            : base("CrossRoads", coinCost: 2, isAction: true)
+            : base("CrossRoads", Expansion.Hinterlands, coinCost: 2, isAction: true)
         {
         }
 
@@ -102,7 +102,7 @@ namespace Dominion.CardTypes
         public static Develop card = new Develop();
 
         private Develop()
-            : base("Develop", coinCost: 3, isAction: true)
+            : base("Develop", Expansion.Hinterlands, coinCost: 3, isAction: true)
         {
         }
 
@@ -132,7 +132,7 @@ namespace Dominion.CardTypes
         public static Duchess card = new Duchess();
 
         private Duchess()
-            : base("Duchess", coinCost: 2, isAction: true, plusCoins:2)
+            : base("Duchess", Expansion.Hinterlands, coinCost: 2, isAction: true, plusCoins:2)
         {
         }
 
@@ -151,7 +151,7 @@ namespace Dominion.CardTypes
         public static Embassy card = new Embassy();
 
         private Embassy()
-            : base("Embassy", coinCost: 5, isAction: true, plusCards: 5)
+            : base("Embassy", Expansion.Hinterlands, coinCost: 5, isAction: true, plusCards: 5)
         {
         }
 
@@ -177,7 +177,7 @@ namespace Dominion.CardTypes
         public static Farmland card = new Farmland();
 
         private Farmland()
-            : base("Farmland", coinCost: 6, victoryPoints: PlayerState => 2)
+            : base("Farmland", Expansion.Hinterlands, coinCost: 6, victoryPoints: PlayerState => 2)
         {
         }
 
@@ -198,7 +198,7 @@ namespace Dominion.CardTypes
         public static FoolsGold card = new FoolsGold();
 
         private FoolsGold()
-            : base("Fool's Gold", coinCost: 2, isTreasure:true)
+            : base("Fool's Gold", Expansion.Hinterlands, coinCost: 2, isTreasure:true)
         {
         }
 
@@ -221,7 +221,7 @@ namespace Dominion.CardTypes
         public static Haggler card = new Haggler();
 
         private Haggler()
-            : base("Haggler", coinCost: 5, isAction:true, plusCoins:2)
+            : base("Haggler", Expansion.Hinterlands, coinCost: 5, isAction:true, plusCoins:2)
         {
             this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
         }
@@ -240,7 +240,7 @@ namespace Dominion.CardTypes
         public static Highway card = new Highway();
 
         private Highway()
-            : base("Highway", coinCost: 5, isAction: true, plusCards: 1, plusActions: 1)
+            : base("Highway", Expansion.Hinterlands, coinCost: 5, isAction: true, plusCards: 1, plusActions: 1)
         {
             this.provideDiscountForWhileInPlay = ProvideDiscountForWhileInPlay;
         }
@@ -258,7 +258,7 @@ namespace Dominion.CardTypes
         public static IllGottenGains card = new IllGottenGains();
 
         private IllGottenGains()
-            : base("Ill-Gotten Gains", pluralName: "Ill-Gotten Gains", coinCost: 5, isTreasure:true, plusCoins:1)
+            : base("Ill-Gotten Gains", Expansion.Hinterlands, pluralName: "Ill-Gotten Gains", coinCost: 5, isTreasure:true, plusCoins:1)
         {            
         }
 
@@ -287,7 +287,7 @@ namespace Dominion.CardTypes
         public static Inn card = new Inn();
 
         private Inn()
-            : base("Inn", coinCost: 5, isAction: true, plusCards: 2, plusActions: 2)
+            : base("Inn", Expansion.Hinterlands, coinCost: 5, isAction: true, plusCards: 2, plusActions: 2)
         {
         }
 
@@ -309,7 +309,7 @@ namespace Dominion.CardTypes
         public static JackOfAllTrades card = new JackOfAllTrades();
 
         private JackOfAllTrades()
-            : base("Jack Of All Trades", coinCost: 4, isAction: true)
+            : base("Jack Of All Trades", Expansion.Hinterlands, coinCost: 4, isAction: true)
         {
         }
 
@@ -331,7 +331,7 @@ namespace Dominion.CardTypes
         public static Mandarin card = new Mandarin();
 
         private Mandarin()
-            : base("Mandarin", coinCost: 5, isAction: true, plusCoins:3)
+            : base("Mandarin", Expansion.Hinterlands, coinCost: 5, isAction: true, plusCoins:3)
         {
         }
 
@@ -352,7 +352,7 @@ namespace Dominion.CardTypes
         public static Margrave card = new Margrave();
 
         private Margrave()
-            : base("Margrave", coinCost: 5, isAction: true, plusCards:3, plusBuy:1, isAttack:true)
+            : base("Margrave", Expansion.Hinterlands, coinCost: 5, isAction: true, plusCards:3, plusBuy:1, isAttack:true)
         {
         }
 
@@ -369,7 +369,7 @@ namespace Dominion.CardTypes
         public static NobleBrigand card = new NobleBrigand();
 
         private NobleBrigand()
-            : base("Noble Brigand", coinCost: 4, isAction: true, plusCoins:1, isAttack: true)
+            : base("Noble Brigand", Expansion.Hinterlands, coinCost: 4, isAction: true, plusCoins:1, isAttack: true)
         {
         }
 
@@ -402,7 +402,7 @@ namespace Dominion.CardTypes
         public static NomadCamp card = new NomadCamp();
 
         private NomadCamp()
-            : base("Nomad Camp", coinCost: 4, isAction: true, plusCoins: 2, plusBuy:1)
+            : base("Nomad Camp", Expansion.Hinterlands, coinCost: 4, isAction: true, plusCoins: 2, plusBuy:1)
         {
         }
 
@@ -423,7 +423,7 @@ namespace Dominion.CardTypes
         public static Oasis card = new Oasis();
 
         private Oasis()
-            : base("Oasis", coinCost: 3, isAction: true, plusCoins: 1, plusCards:1, plusActions:1)
+            : base("Oasis", Expansion.Hinterlands, coinCost: 3, isAction: true, plusCoins: 1, plusCards:1, plusActions:1)
         {
         }
 
@@ -439,7 +439,7 @@ namespace Dominion.CardTypes
         public static Oracle card = new Oracle();
 
         private Oracle()
-            : base("Oracle", coinCost: 3, isAction: true, isAttack: true)
+            : base("Oracle", Expansion.Hinterlands, coinCost: 3, isAction: true, isAttack: true)
         {
         }
 
@@ -493,7 +493,7 @@ namespace Dominion.CardTypes
         public static Scheme card = new Scheme();
 
         private Scheme()
-            : base("Scheme", coinCost: 3, isAction: true, plusCards: 1, plusActions:1)
+            : base("Scheme", Expansion.Hinterlands, coinCost: 3, isAction: true, plusCards: 1, plusActions:1)
         {
             this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
         }
@@ -512,7 +512,7 @@ namespace Dominion.CardTypes
         public static SilkRoad card = new SilkRoad();
 
         private SilkRoad()
-            : base("Silk Road", coinCost: 4, victoryPoints: playerState => playerState.AllOwnedCards.CountWhere(card => card.isVictory)/4)
+            : base("Silk Road", Expansion.Hinterlands, coinCost: 4, victoryPoints: playerState => playerState.AllOwnedCards.CountWhere(card => card.isVictory)/4)
         {
         }
     }
@@ -523,7 +523,7 @@ namespace Dominion.CardTypes
         public static SpiceMerchant card = new SpiceMerchant();
 
         private SpiceMerchant()
-            : base("Spice Merchant", coinCost: 4, isAction:true)
+            : base("Spice Merchant", Expansion.Hinterlands, coinCost: 4, isAction:true)
         {
         }
 
@@ -562,7 +562,7 @@ namespace Dominion.CardTypes
         public static Stables card = new Stables();
 
         private Stables()
-            : base("Stables", coinCost: 5, isAction: true)
+            : base("Stables", Expansion.Hinterlands, coinCost: 5, isAction: true)
         {
         }
 
@@ -582,7 +582,7 @@ namespace Dominion.CardTypes
         public static Trader card = new Trader();
 
         private Trader()
-            : base("Trader", coinCost: 4, isReaction:true, isAction: true)
+            : base("Trader", Expansion.Hinterlands, coinCost: 4, isReaction:true, isAction: true)
         {
             this.doSpecializedActionOnGainWhileInHand = DoSpecializedActionOnGainWhileInHand;
         }
@@ -615,7 +615,7 @@ namespace Dominion.CardTypes
         public static Tunnel card = new Tunnel();
 
         private Tunnel()
-            : base("Tunnel", coinCost: 3, isReaction: true, victoryPoints: playerState => 2)
+            : base("Tunnel", Expansion.Hinterlands, coinCost: 3, isReaction: true, victoryPoints: playerState => 2)
         {            
         }
 

@@ -15,7 +15,7 @@ namespace Dominion.CardTypes
         public static BlackMarket card = new BlackMarket();
 
         private BlackMarket()
-            : base("Black Market", coinCost: 3, plusCoins: 2, isAction: true)
+            : base("Black Market", Expansion.Promo, coinCost: 3, plusCoins: 2, isAction: true)
         {
         }
 
@@ -33,7 +33,7 @@ namespace Dominion.CardTypes
         public static Envoy card = new Envoy();
 
         private Envoy()
-            : base("Envoy", coinCost: 4, isAction: true)
+            : base("Envoy", Expansion.Promo, coinCost: 4, isAction: true)
         {
         }
 
@@ -56,7 +56,7 @@ namespace Dominion.CardTypes
         public static Governor card = new Governor();
 
         private Governor()
-            : base("Governor", coinCost: 5, isAction: true, plusActions:1)
+            : base("Governor", Expansion.Promo, coinCost: 5, isAction: true, plusActions:1)
         {
         }
 
@@ -121,7 +121,7 @@ namespace Dominion.CardTypes
         public static Stash card = new Stash();
 
         private Stash()
-            : base("Stash", coinCost: 2, isTreasure: true)
+            : base("Stash", Expansion.Promo, coinCost: 5, plusCoins:2, isTreasure: true)
         {
         }
 
@@ -138,7 +138,7 @@ namespace Dominion.CardTypes
         public static WalledVillage card = new WalledVillage();
 
         private WalledVillage()
-            : base("Walled Village", coinCost: 4, plusCards: 1, plusActions: 2, isAction: true)
+            : base("Walled Village", Expansion.Promo, coinCost: 4, plusCards: 1, plusActions: 2, isAction: true)
         {
             this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
         }

@@ -250,5 +250,43 @@ namespace Dominion
             
             return result.ToArray();
         }
+
+        public static Card[] AllKingdomCards()
+        {
+            var result = new List<Card>();
+            foreach (System.Reflection.FieldInfo fieldInfo in typeof(Cards).GetFields())
+            {
+                Card card = (Card)fieldInfo.GetValue(null);
+                if (card.isRuins || card.isPrize)
+                    continue;
+                if (NonKingdomCards.Contains(card))
+                    continue;
+                result.Add(card);
+            }
+
+            return result.ToArray();
+        }
+
+        static Card[] NonKingdomCards = new Card[]
+        {
+            Cards.Prize,
+            Cards.Ruins,
+            Cards.Curse,
+            Cards.Copper,
+            Cards.Silver,
+            Cards.Gold,
+            Cards.Platinum,
+            Cards.Estate,
+            Cards.Duchy,
+            Cards.Province,
+            Cards.Colony,
+            Cards.Mercenary,
+            Cards.Madman,
+            Cards.Spoils,
+            Cards.Necropolis,
+            Cards.OvergrownEstate,
+            Cards.Hovel,
+            Cards.Potion
+        };
     }   
 }

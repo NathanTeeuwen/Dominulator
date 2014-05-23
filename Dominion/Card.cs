@@ -7,11 +7,27 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
+    public enum Expansion
+    {
+        Alchemy,
+        Base,
+        Cornucopia,
+        DarkAges,
+        Guilds,
+        Hinterlands,        
+        Intrigue,                
+        Promo,
+        Prosperity,
+        Seaside,
+        Unknown
+    }
+
     public abstract class Card
         : IEquatable<Card>
     {
         public readonly string name;
         public readonly string pluralName;
+        public readonly Expansion expansion;
         private readonly int coinCost;
         public readonly int potionCost;
         public readonly int plusAction;
@@ -66,7 +82,8 @@ namespace Dominion
         }        
 
         protected Card(
-            string name,            
+            string name,
+            Expansion expansion,
             int coinCost,
             string pluralName = null,
             int potionCost = 0,
@@ -115,6 +132,7 @@ namespace Dominion
 
             this.name = name;
             this.pluralName = pluralName != null ? pluralName : name + "s";
+            this.expansion = expansion;
             this.coinCost = coinCost;
             this.potionCost = potionCost;
             this.plusAction = plusActions;

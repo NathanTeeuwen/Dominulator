@@ -37,6 +37,7 @@ namespace Program.WebService
             typeof(GetAvailableGraphs),
             typeof(GetGameLog),                        
             typeof(CheckStrategyCode),
+            typeof(GetAvailableKingdomCards)
         };
 
         private string defaultPage = HtmlRenderer.GetEmbeddedContent("Dominulator.html");
@@ -207,7 +208,6 @@ namespace Program.WebService
                     else if (rawUrl.StartsWith(WebService.resourcePrefix))
                     {
                         string resourceName = rawUrl.Remove(0, WebService.resourcePrefix.Length);
-
                         if (rawUrl.EndsWith(".jpg"))
                         {
                             reponseBuffer = HtmlRenderer.GetEmbeddedContentAsBinary(resourceName);
@@ -236,6 +236,10 @@ namespace Program.WebService
                                 unserializedObject = Activator.CreateInstance(serviceType);
                             }
                         }
+                        else
+                        {
+                            System.Console.WriteLine("Unrecognized Service");
+                        }
 
                         if (unserializedObject is IRequestWithHtmlResponse)
                         {
@@ -248,7 +252,7 @@ namespace Program.WebService
                             responseText = serialized;
                         }
                         response.ContentType = "text/html";
-                    }
+                    }                    
 
                     if (response.ContentType != null && response.ContentType.StartsWith("text") && responseText != null)
                     {

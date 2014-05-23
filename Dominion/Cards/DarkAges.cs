@@ -16,7 +16,7 @@ namespace Dominion.CardTypes
         public static Necropolis card = new Necropolis();
 
         private Necropolis() 
-            : base("Necropolis", coinCost: 1, plusActions: 2, isAction: true, isShelter: true) 
+            : base("Necropolis", Expansion.DarkAges, coinCost: 1, plusActions: 2, isAction: true, isShelter: true) 
         { 
         } 
     }
@@ -27,7 +27,7 @@ namespace Dominion.CardTypes
         public static Hovel card = new Hovel();
 
         private Hovel()
-            : base("Hovel", coinCost: 1, isShelter: true)
+            : base("Hovel", Expansion.DarkAges, coinCost: 1, isShelter: true)
         {
             this.doSpecializedActionOnBuyWhileInHand = DoSpecializedActionOnBuyWhileInHand;
         }
@@ -49,7 +49,7 @@ namespace Dominion.CardTypes
         public static OvergrownEstate card = new OvergrownEstate();
 
         private OvergrownEstate()
-            : base("Overgrown Estate", coinCost: 1, victoryPoints: PlayerState => 0, isShelter: true)
+            : base("Overgrown Estate", Expansion.DarkAges, coinCost: 1, victoryPoints: PlayerState => 0, isShelter: true)
         {
 
         }
@@ -68,7 +68,7 @@ namespace Dominion.CardTypes
         public static Spoils card = new Spoils();
 
         private Spoils()
-            : base("Spoils", coinCost: 0, plusCoins:3, isAction: true, isTreasure:true)
+            : base("Spoils", Expansion.DarkAges, coinCost: 0, plusCoins:3, isAction: true, isTreasure:true)
         {
         }
 
@@ -86,17 +86,18 @@ namespace Dominion.CardTypes
         public static Ruins card = new Ruins();
 
         private Ruins()
-            : this("Ruins")
+            : this("Ruins", Expansion.DarkAges)
         {
         }
 
         protected Ruins(
             string name,
+            Expansion expansion,
             int plusCoins = 0,
             int plusCards = 0,
             int plusBuy = 0,
             int plusActions = 0)
-            : base(name, coinCost: 0, isAction: true, isRuins: true, plusCoins:plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions:plusActions)
+            : base(name, expansion, coinCost: 0, isAction: true, isRuins: true, plusCoins: plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions: plusActions)
         {
         }
     }
@@ -107,7 +108,7 @@ namespace Dominion.CardTypes
         new public static AbandonedMine card = new AbandonedMine();
 
         private AbandonedMine()
-            : base("Abandoned Mine", plusCoins: 1)
+            : base("Abandoned Mine", Expansion.DarkAges, plusCoins: 1)
         {            
         }
     }
@@ -118,7 +119,7 @@ namespace Dominion.CardTypes
         new public static RuinedLibrary card = new RuinedLibrary();
 
         private RuinedLibrary()
-            : base("Ruined Library",  plusCards: 1)
+            : base("Ruined Library", Expansion.DarkAges,  plusCards: 1)
         {
         }
     }
@@ -129,7 +130,7 @@ namespace Dominion.CardTypes
         new public static RuinedMarket card = new RuinedMarket();
 
         private RuinedMarket()
-            : base("Ruined Market", plusBuy: 1)
+            : base("Ruined Market", Expansion.DarkAges, plusBuy: 1)
         {
         }
     }
@@ -140,7 +141,7 @@ namespace Dominion.CardTypes
         new public static RuinedVillage card = new RuinedVillage();
 
         private RuinedVillage()
-            : base("Ruined Village", plusActions: 1)
+            : base("Ruined Village", Expansion.DarkAges, plusActions: 1)
         {
         }
     }
@@ -151,7 +152,7 @@ namespace Dominion.CardTypes
         new public static Survivors card = new Survivors();
 
         private Survivors()
-            : base("Survivors")
+            : base("Survivors", Expansion.DarkAges)
         {
         }
 
@@ -169,7 +170,7 @@ namespace Dominion.CardTypes
         public static Altar card = new Altar();
 
         private Altar()
-            : base("Altar", coinCost: 6, isAction: true)
+            : base("Altar", Expansion.DarkAges, coinCost: 6, isAction: true)
         {
         }
 
@@ -190,7 +191,7 @@ namespace Dominion.CardTypes
         public static Armory card = new Armory();
 
         private Armory()
-            : base("Armory", coinCost: 4, isAction: true)
+            : base("Armory", Expansion.DarkAges, coinCost: 4, isAction: true)
         {
         }
 
@@ -210,7 +211,7 @@ namespace Dominion.CardTypes
         public static BandOfMisfits card = new BandOfMisfits();
 
         private BandOfMisfits()
-            : base("Band Of Misfits", coinCost: 5, isAction: true)
+            : base("Band Of Misfits", Expansion.DarkAges, coinCost: 5, isAction: true)
         {
         }
 
@@ -238,7 +239,7 @@ namespace Dominion.CardTypes
         public static BanditCamp card = new BanditCamp();
 
         private BanditCamp()
-            : base("Bandit Camp", coinCost: 5, isAction: true, plusCards:1, plusActions:2, requiresSpoils:true)
+            : base("Bandit Camp", Expansion.DarkAges, coinCost: 5, isAction: true, plusCards:1, plusActions:2, requiresSpoils:true)
         {
         }
 
@@ -254,7 +255,7 @@ namespace Dominion.CardTypes
         public static Beggar card = new Beggar();
 
         private Beggar()
-            : base("Beggar", coinCost: 2, isAction: true, isReaction:true)
+            : base("Beggar", Expansion.DarkAges, coinCost: 2, isAction: true, isReaction:true)
         {
         }
 
@@ -285,7 +286,7 @@ namespace Dominion.CardTypes
         public static Catacombs card = new Catacombs();
 
         private Catacombs()
-            : base("Catacombs", coinCost: 5, isAction: true)
+            : base("Catacombs", Expansion.DarkAges, coinCost: 5, isAction: true)
         {
         }
 
@@ -328,7 +329,7 @@ namespace Dominion.CardTypes
         public static Count card = new Count();
 
         private Count()
-            : base("Count", coinCost: 5, isAction: true)
+            : base("Count", Expansion.DarkAges, coinCost: 5, isAction: true)
         {
         }
 
@@ -366,7 +367,7 @@ namespace Dominion.CardTypes
         public static CounterFeit card = new CounterFeit();
 
         private CounterFeit()
-            : base("CounterFeit", coinCost: 5, isTreasure: true, plusCoins: 1, plusBuy: 1)
+            : base("CounterFeit", Expansion.DarkAges, coinCost: 5, isTreasure: true, plusCoins: 1, plusBuy: 1)
         {
         }
 
@@ -388,7 +389,7 @@ namespace Dominion.CardTypes
         public static Cultist card = new Cultist();
 
         private Cultist()
-            : base("Cultist", coinCost: 5, isAction: true, isAttack:true, requiresRuins:true, plusCards:2, isAttackBeforeAction:true)
+            : base("Cultist", Expansion.DarkAges, coinCost: 5, isAction: true, isAttack:true, requiresRuins:true, plusCards:2, isAttackBeforeAction:true)
         {
         }
 
@@ -417,7 +418,7 @@ namespace Dominion.CardTypes
         public static DeathCart card = new DeathCart();
 
         private DeathCart()
-            : base("Death Cart", coinCost: 4, isAction: true, plusCoins: 5, requiresRuins: true)
+            : base("Death Cart", Expansion.DarkAges, coinCost: 4, isAction: true, plusCoins: 5, requiresRuins: true)
         {
         }
 
@@ -446,7 +447,7 @@ namespace Dominion.CardTypes
         public static Feodum card = new Feodum();
 
         private Feodum()
-            : base("Feodum", coinCost: 4, victoryPoints: CountVictoryPoints)
+            : base("Feodum", Expansion.DarkAges, coinCost: 4, victoryPoints: CountVictoryPoints)
         {
         }
 
@@ -479,7 +480,7 @@ namespace Dominion.CardTypes
         public static Forager card = new Forager();
 
         private Forager()
-            : base("Forager", coinCost: 3, isAction:true, plusBuy:1, plusActions:1)
+            : base("Forager", Expansion.DarkAges, coinCost: 3, isAction:true, plusBuy:1, plusActions:1)
         {
         }
 
@@ -496,7 +497,7 @@ namespace Dominion.CardTypes
         public static Fortress card = new Fortress();
 
         private Fortress()
-            : base("Fortress", coinCost: 4, isAction: true, plusActions: 2, plusCards:1)
+            : base("Fortress", Expansion.DarkAges, coinCost: 4, isAction: true, plusActions: 2, plusCards:1)
         {
         }
 
@@ -515,7 +516,7 @@ namespace Dominion.CardTypes
         public static Graverobber card = new Graverobber();
 
         private Graverobber()
-            : base("Graverobber", coinCost: 5, isAction: true)
+            : base("Graverobber", Expansion.DarkAges, coinCost: 5, isAction: true)
         {
         }
 
@@ -561,7 +562,7 @@ namespace Dominion.CardTypes
         public static Hermit card = new Hermit();
 
         private Hermit()
-            : base("Hermit", coinCost: 3, isAction: true)
+            : base("Hermit", Expansion.DarkAges, coinCost: 3, isAction: true)
         {
         }
 
@@ -597,7 +598,7 @@ namespace Dominion.CardTypes
         public static Madman card = new Madman();
 
         private Madman()
-            : base("Madman", coinCost: 0, isAction: true, plusActions:2)
+            : base("Madman", Expansion.DarkAges, coinCost: 0, isAction: true, plusActions:2)
         {
         }
 
@@ -617,7 +618,7 @@ namespace Dominion.CardTypes
         public static HuntingGrounds card = new HuntingGrounds();
 
         private HuntingGrounds()
-            : base("Hunting Grounds", coinCost: 6, plusCards: 4, isAction: true)
+            : base("Hunting Grounds", Expansion.DarkAges, coinCost: 6, plusCards: 4, isAction: true)
         {
         }
 
@@ -642,7 +643,7 @@ namespace Dominion.CardTypes
         public static IronMonger card = new IronMonger();
 
         private IronMonger()
-            : base("IronMonger", coinCost: 4, isAction: true)
+            : base("IronMonger", Expansion.DarkAges, coinCost: 4, isAction: true)
         {
         }
 
@@ -677,7 +678,7 @@ namespace Dominion.CardTypes
         public static JunkDealer card = new JunkDealer();
 
         private JunkDealer()
-            : base("Junk Dealer", coinCost: 5, isAction: true, plusCards:1, plusActions:1, plusCoins:1)
+            : base("Junk Dealer", Expansion.DarkAges, coinCost: 5, isAction: true, plusCards:1, plusActions:1, plusCoins:1)
         {
         }
 
@@ -693,7 +694,7 @@ namespace Dominion.CardTypes
         public static Knights card = new Knights();
 
         private Knights()
-            : base("Knights", coinCost: 0, isAction: true, isAttack:true)
+            : base("Knights", Expansion.DarkAges, coinCost: 5, isAction: true, isAttack:true)
         {
         }
 
@@ -709,7 +710,7 @@ namespace Dominion.CardTypes
         public static Marauder card = new Marauder();
 
         private Marauder()
-            : base("Marauder", coinCost: 4, isAction: true, isAttack: true, requiresRuins:true, requiresSpoils:true)
+            : base("Marauder", Expansion.DarkAges, coinCost: 4, isAction: true, isAttack: true, requiresRuins:true, requiresSpoils:true)
         {
         }
 
@@ -730,7 +731,7 @@ namespace Dominion.CardTypes
         public static MarketSquare card = new MarketSquare();
 
         private MarketSquare()
-            : base("Market Square", coinCost: 3, isAction: true, plusCards:1, plusActions:1, plusBuy:1)
+            : base("Market Square", Expansion.DarkAges, coinCost: 3, isAction: true, plusCards:1, plusActions:1, plusBuy:1)
         {
             this.doSpecializedActionOnTrashWhileInHand = DoSpecializedActionOnTrashWhileInHand;
         }
@@ -754,7 +755,7 @@ namespace Dominion.CardTypes
         public static Mystic card = new Mystic();
 
         private Mystic()
-            : base("Mystic", coinCost: 5, isAction: true, plusCoins: 2, plusActions: 1)
+            : base("Mystic", Expansion.DarkAges, coinCost: 5, isAction: true, plusCoins: 2, plusActions: 1)
         {
         }
 
@@ -780,7 +781,7 @@ namespace Dominion.CardTypes
         public static Pillage card = new Pillage();
 
         private Pillage()
-            : base("Pillage", coinCost: 5, isAction: true, attackDependsOnPlayerChoice: true, requiresSpoils:true)
+            : base("Pillage", Expansion.DarkAges, coinCost: 5, isAction: true, attackDependsOnPlayerChoice: true, requiresSpoils:true)
         {
         }
 
@@ -807,7 +808,7 @@ namespace Dominion.CardTypes
         public static PoorHouse card = new PoorHouse();
 
         private PoorHouse()
-            : base("Poor House", coinCost: 1, isAction: true, plusCoins: 4)
+            : base("Poor House", Expansion.DarkAges, coinCost: 1, isAction: true, plusCoins: 4)
         {
         }
 
@@ -825,7 +826,7 @@ namespace Dominion.CardTypes
         public static Procession card = new Procession();
 
         private Procession()
-            : base("Procession", coinCost: 4, isAction: true)
+            : base("Procession", Expansion.DarkAges, coinCost: 4, isAction: true)
         {
         }
 
@@ -853,7 +854,7 @@ namespace Dominion.CardTypes
         public static Rats card = new Rats();
 
         private Rats()
-            : base("Rats", coinCost: 4, isAction: true, plusCards: 1, plusActions: 1, defaultSupplyCount: 20)
+            : base("Rats", Expansion.DarkAges, coinCost: 4, isAction: true, plusCards: 1, plusActions: 1, defaultSupplyCount: 20)
         {
         }
 
@@ -885,7 +886,7 @@ namespace Dominion.CardTypes
         public static Rebuild card = new Rebuild();
 
         private Rebuild()
-            : base("Rebuild", coinCost: 5, plusActions: 1, isAction: true)
+            : base("Rebuild", Expansion.DarkAges, coinCost: 5, plusActions: 1, isAction: true)
         {
         }
 
@@ -926,7 +927,7 @@ namespace Dominion.CardTypes
         public static Rogue card = new Rogue();
 
         private Rogue()
-            : base("Rogue", coinCost: 5, isAction: true, plusCoins:2, isAttack:true, attackDependsOnPlayerChoice:true)
+            : base("Rogue", Expansion.DarkAges, coinCost: 5, isAction: true, plusCoins:2, isAttack:true, attackDependsOnPlayerChoice:true)
         {
         }
 
@@ -961,7 +962,7 @@ namespace Dominion.CardTypes
         public static Sage card = new Sage();
 
         private Sage()
-            : base("Sage", coinCost: 3, isAction: true, plusActions:1)
+            : base("Sage", Expansion.DarkAges, coinCost: 3, isAction: true, plusActions:1)
         {
         }
 
@@ -988,7 +989,7 @@ namespace Dominion.CardTypes
         public static Scavenger card = new Scavenger();
 
         private Scavenger()
-            : base("Scavenger", coinCost: 4, isAction: true, plusCoins:2)
+            : base("Scavenger", Expansion.DarkAges, coinCost: 4, isAction: true, plusCoins:2)
         {
         }
 
@@ -1005,7 +1006,7 @@ namespace Dominion.CardTypes
         public static Squire card = new Squire();
 
         private Squire()
-            : base("Squire", coinCost: 2, isAction: true, plusCoins: 1)
+            : base("Squire", Expansion.DarkAges, coinCost: 2, isAction: true, plusCoins: 1)
         {
         }
 
@@ -1040,7 +1041,7 @@ namespace Dominion.CardTypes
         public static Storeroom card = new Storeroom();
 
         private Storeroom()
-            : base("Storeroom", coinCost: 3, isAction: true, plusBuy:1)
+            : base("Storeroom", Expansion.DarkAges, coinCost: 3, isAction: true, plusBuy:1)
         {
         }
 
@@ -1062,7 +1063,7 @@ namespace Dominion.CardTypes
         public static Urchin card = new Urchin();
 
         private Urchin()
-            : base("Urchin", coinCost: 3, isAction: true, isAttack:true, plusCards:1, plusActions:1)
+            : base("Urchin", Expansion.DarkAges, coinCost: 3, isAction: true, isAttack:true, plusCards:1, plusActions:1)
         {
             this.doSpecializedActionToCardWhileInPlay = DoSpecializedActionToCardWhileInPlay;
         }
@@ -1093,7 +1094,7 @@ namespace Dominion.CardTypes
         public static Mercenary card = new Mercenary();
 
         private Mercenary()
-            : base("Mercenary", coinCost: 0, isAction: true, isAttack: true, attackDependsOnPlayerChoice:true)
+            : base("Mercenary", Expansion.DarkAges, coinCost: 0, isAction: true, isAttack: true, attackDependsOnPlayerChoice:true)
         {
         }
 
@@ -1132,7 +1133,7 @@ namespace Dominion.CardTypes
         public static Vagrant card = new Vagrant();
 
         private Vagrant()
-            : base("Vagrant", coinCost: 2, isAction: true, plusCards: 1, plusActions: 1)
+            : base("Vagrant", Expansion.DarkAges, coinCost: 2, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
 
@@ -1162,7 +1163,7 @@ namespace Dominion.CardTypes
         public static WanderingMinstrel card = new WanderingMinstrel();
 
         private WanderingMinstrel()
-            : base("Wandering Minstrel", coinCost: 4, isAction: true, plusCards: 1, plusActions: 2)
+            : base("Wandering Minstrel", Expansion.DarkAges, coinCost: 4, isAction: true, plusCards: 1, plusActions: 2)
         {
         }
 

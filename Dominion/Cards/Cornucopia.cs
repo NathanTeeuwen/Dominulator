@@ -15,7 +15,7 @@ namespace Dominion.CardTypes
         public static Fairgrounds card = new Fairgrounds();
 
         private Fairgrounds()
-            : base("Fairgrounds", coinCost: 6, victoryPoints: playerState => playerState.AllOwnedCards.CountTypes / 5 * 2)
+            : base("Fairgrounds", Expansion.Cornucopia, coinCost: 6, victoryPoints: playerState => playerState.AllOwnedCards.CountTypes / 5 * 2)
         {            
         }
     }
@@ -26,7 +26,7 @@ namespace Dominion.CardTypes
         public static FarmingVillage card = new FarmingVillage();
 
         private FarmingVillage()
-            : base("Farming Village", coinCost: 4, isAction: true, plusActions:2)
+            : base("Farming Village", Expansion.Cornucopia, coinCost: 4, isAction: true, plusActions:2)
         {
         }
         
@@ -62,7 +62,7 @@ namespace Dominion.CardTypes
         public static FortuneTeller card = new FortuneTeller();
 
         private FortuneTeller()
-            : base("Fortune Teller", coinCost: 3, isAction: true, plusCoins:2, isAttack:true)
+            : base("Fortune Teller", Expansion.Cornucopia, coinCost: 3, isAction: true, plusCoins:2, isAttack:true)
         {
         }
 
@@ -91,7 +91,7 @@ namespace Dominion.CardTypes
         public static Hamlet card = new Hamlet();
 
         private Hamlet()
-            : base("Hamlet", coinCost: 2, isAction: true, plusActions: 1, plusCards: 1)
+            : base("Hamlet", Expansion.Cornucopia, coinCost: 2, isAction: true, plusActions: 1, plusCards: 1)
         {
         }
 
@@ -115,7 +115,7 @@ namespace Dominion.CardTypes
         public static Harvest card = new Harvest();
 
         private Harvest()
-            : base("Harvest", coinCost: 5, isAction: true)
+            : base("Harvest", Expansion.Cornucopia, coinCost: 5, isAction: true)
         {
         }
 
@@ -133,7 +133,7 @@ namespace Dominion.CardTypes
         public static HornOfPlenty card = new HornOfPlenty();
 
         private HornOfPlenty()
-            : base("Horn Of Plenty", coinCost: 5, isTreasure: true)
+            : base("Horn Of Plenty", Expansion.Cornucopia, coinCost: 5, isTreasure: true)
         {
         }
   
@@ -158,7 +158,7 @@ namespace Dominion.CardTypes
         public static HorseTraders card = new HorseTraders();
 
         private HorseTraders()
-            : base("Horse Traders", coinCost: 4, isAction: true, isReaction: true, plusBuy: 1, plusCoins: 3)
+            : base("Horse Traders", Expansion.Cornucopia, coinCost: 4, isAction: true, isReaction: true, plusBuy: 1, plusCoins: 3)
         {
         }
         
@@ -194,7 +194,7 @@ namespace Dominion.CardTypes
         public static HuntingParty card = new HuntingParty();
 
         private HuntingParty()
-            : base("Hunting Party", coinCost: 5, isAction: true, plusActions: 1, plusCards: 1)
+            : base("Hunting Party", Expansion.Cornucopia, coinCost: 5, isAction: true, plusActions: 1, plusCards: 1)
         {
         }
 
@@ -223,7 +223,7 @@ namespace Dominion.CardTypes
         public static Jester card = new Jester();
 
         private Jester()
-            : base("Jester", coinCost: 5, isAction: true, isAttack: true, plusCoins: 2)
+            : base("Jester", Expansion.Cornucopia, coinCost: 5, isAction: true, isAttack: true, plusCoins: 2)
         {
         }
 
@@ -254,7 +254,7 @@ namespace Dominion.CardTypes
         public static Menagerie card = new Menagerie();
 
         private Menagerie()
-            : base("Menagerie", coinCost: 3, isAction: true, plusActions: 1)
+            : base("Menagerie", Expansion.Cornucopia, coinCost: 3, isAction: true, plusActions: 1)
         {
         }
 
@@ -279,7 +279,7 @@ namespace Dominion.CardTypes
         public static Remake card = new Remake();
 
         private Remake()
-            : base("Remake", coinCost: 4, isAction: true)
+            : base("Remake", Expansion.Cornucopia, coinCost: 4, isAction: true)
         {
         }
 
@@ -303,7 +303,7 @@ namespace Dominion.CardTypes
         public static Tournament card = new Tournament();
 
         private Tournament()
-            : base("Tournament", coinCost: 4, isAction: true, plusActions: 1)
+            : base("Tournament", Expansion.Cornucopia, coinCost: 4, isAction: true, plusActions: 1)
         {
         }
 
@@ -342,12 +342,13 @@ namespace Dominion.CardTypes
         public static Prize card = new Prize();
 
         private Prize()
-            : this("Prize")
+            : this("Prize", Expansion.Cornucopia)
         {
         }
 
         protected Prize(
             string name,
+            Expansion expansion,
             bool isAction = false,
             bool isTreasure = false,
             bool isAttack = false,
@@ -355,7 +356,7 @@ namespace Dominion.CardTypes
             int plusCards = 0,
             int plusBuy = 0,
             int plusActions = 0)
-            : base(name, coinCost: 0, isAction: isAction, isTreasure: isTreasure, isAttack: isAttack, isPrize: true, plusCoins: plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions: plusActions)
+            : base(name, expansion, coinCost: 0, isAction: isAction, isTreasure: isTreasure, isAttack: isAttack, isPrize: true, plusCoins: plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions: plusActions)
         {
         }
     }
@@ -363,10 +364,10 @@ namespace Dominion.CardTypes
     public class BagOfGold
         : Prize
     {
-        public static BagOfGold card = new BagOfGold();
+        public static new BagOfGold card = new BagOfGold();
 
         private BagOfGold()
-            : base("Bag Of Gold", plusActions: 1, isAction:true)
+            : base("Bag Of Gold", Expansion.Cornucopia, plusActions: 1, isAction:true)
         {
 
         }
@@ -380,10 +381,10 @@ namespace Dominion.CardTypes
     public class Diadem
        : Prize
     {
-        public static Diadem card = new Diadem();
+        public static new Diadem card = new Diadem();
 
         private Diadem()
-            : base("Diadem", plusCoins:2, isTreasure:true)
+            : base("Diadem", Expansion.Cornucopia, plusCoins:2, isTreasure:true)
         {
 
         }
@@ -397,10 +398,10 @@ namespace Dominion.CardTypes
     public class Followers
        : Prize
     {
-        public static Followers card = new Followers();
+        public static new Followers card = new Followers();
 
         private Followers()
-            : base("Followers", isAction: true, plusCards:2, isAttack:true)
+            : base("Followers", Expansion.Cornucopia, isAction: true, plusCards:2, isAttack:true)
         {
 
         }
@@ -420,10 +421,10 @@ namespace Dominion.CardTypes
     public class Princess
        : Prize
     {
-        public static Princess card = new Princess();
+        public static new Princess card = new Princess();
 
         private Princess()
-            : base("Princess", isAction: true, plusBuy: 1)
+            : base("Princess", Expansion.Cornucopia, isAction: true, plusBuy: 1)
         {
             this.provideDiscountForWhileInPlay = ProvideDiscountForWhileInPlay;
         }
@@ -437,10 +438,10 @@ namespace Dominion.CardTypes
     public class TrustySteed
        : Prize
     {
-        public static TrustySteed card = new TrustySteed();
+        public static new TrustySteed card = new TrustySteed();
 
         private TrustySteed()
-            : base("Trusty Steed", isAction: true)
+            : base("Trusty Steed", Expansion.Cornucopia, isAction: true)
         {            
         }
 
@@ -480,7 +481,7 @@ namespace Dominion.CardTypes
         public static YoungWitch card = new YoungWitch();
 
         private YoungWitch()
-            : base("Young Witch", coinCost: 4, plusCards: 2, isAction: true, isAttack: true)
+            : base("Young Witch", Expansion.Cornucopia, coinCost: 4, plusCards: 2, isAction: true, isAttack: true)
         {
 
         }

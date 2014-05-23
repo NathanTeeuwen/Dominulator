@@ -15,7 +15,7 @@ namespace Dominion.CardTypes
         public static Advisor card = new Advisor();
 
         private Advisor()
-            : base("Advisor", coinCost: 4, isAction: true,  plusActions:1)
+            : base("Advisor", Expansion.Guilds, coinCost: 4, isAction: true,  plusActions:1)
         {
         }
 
@@ -38,7 +38,7 @@ namespace Dominion.CardTypes
         public static Baker card = new Baker();
 
         private Baker()
-            : base("Baker", coinCost: 5, isAction: true, plusCards: 1, plusActions: 1)
+            : base("Baker", Expansion.Guilds, coinCost: 5, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
 
@@ -62,7 +62,7 @@ namespace Dominion.CardTypes
         public static Butcher card = new Butcher();
 
         private Butcher()
-            : base("Butcher", coinCost: 5, isAction: true)
+            : base("Butcher", Expansion.Guilds, coinCost: 5, isAction: true)
         {
         }
 
@@ -94,7 +94,7 @@ namespace Dominion.CardTypes
         public static CandlestickMaker card = new CandlestickMaker();
 
         private CandlestickMaker()
-            : base("Candlestick Maker", coinCost: 2, isAction: true, plusActions:1, plusBuy:1)
+            : base("Candlestick Maker", Expansion.Guilds, coinCost: 2, isAction: true, plusActions:1, plusBuy:1)
         {
         }
 
@@ -110,7 +110,7 @@ namespace Dominion.CardTypes
         public static Doctor card = new Doctor();
 
         private Doctor()
-            : base("Doctor", coinCost: 3, isAction: true, canOverpay: true)
+            : base("Doctor", Expansion.Guilds, coinCost: 3, isAction: true, canOverpay: true)
         {
         }
 
@@ -165,7 +165,7 @@ namespace Dominion.CardTypes
         public static Herald card = new Herald();
 
         private Herald()
-            : base("Herald", coinCost: 4, isAction: true, canOverpay: true, plusActions:1, plusCards:1)
+            : base("Herald", Expansion.Guilds, coinCost: 4, isAction: true, canOverpay: true, plusActions:1, plusCards:1)
         {
         }
 
@@ -199,7 +199,7 @@ namespace Dominion.CardTypes
         public static Masterpiece card = new Masterpiece();
 
         private Masterpiece()
-            : base("Masterpiece", coinCost: 3, isTreasure:true, canOverpay: true, plusCoins:1)
+            : base("Masterpiece", Expansion.Guilds, coinCost: 3, isTreasure:true, canOverpay: true, plusCoins:1)
         {
         }
 
@@ -219,7 +219,7 @@ namespace Dominion.CardTypes
         public static MerchantGuild card = new MerchantGuild();
 
         private MerchantGuild()
-            : base("Merchant Guild", coinCost: 5, plusCoins: 1, plusBuy:1, isAction:true)
+            : base("Merchant Guild", Expansion.Guilds, coinCost: 5, plusCoins: 1, plusBuy:1, isAction:true)
         {
             this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
         }
@@ -236,7 +236,7 @@ namespace Dominion.CardTypes
         public static Plaza card = new Plaza();
 
         private Plaza()
-            : base("Plaza", coinCost: 4, isAction: true, plusActions: 2, plusCards: 1)
+            : base("Plaza", Expansion.Guilds, coinCost: 4, isAction: true, plusActions: 2, plusCards: 1)
         {
         }
 
@@ -255,7 +255,7 @@ namespace Dominion.CardTypes
         public static Soothsayer card = new Soothsayer();
 
         private Soothsayer()
-            : base("Soothsayer", coinCost: 5, isAction: true, isAttack: true)
+            : base("Soothsayer", Expansion.Guilds, coinCost: 5, isAction: true, isAttack: true)
         {
         }
 
@@ -279,7 +279,7 @@ namespace Dominion.CardTypes
         public static StoneMason card = new StoneMason();
 
         private StoneMason()
-            : base("StoneMason", coinCost: 2, isAction: true, canOverpay: true)
+            : base("StoneMason", Expansion.Guilds, coinCost: 2, isAction: true, canOverpay: true)
         {
         }
 
@@ -319,7 +319,7 @@ namespace Dominion.CardTypes
         public static Taxman card = new Taxman();
 
         private Taxman()
-            : base("Taxman", coinCost: 4, isAction: true, isAttack: true, attackDependsOnPlayerChoice: true)
+            : base("Taxman", Expansion.Guilds, coinCost: 4, isAction: true, isAttack: true, attackDependsOnPlayerChoice: true)
         {
         }
 

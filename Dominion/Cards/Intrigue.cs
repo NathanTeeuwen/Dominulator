@@ -14,7 +14,7 @@ namespace Dominion.CardTypes
     { 
         public static GreatHall card = new GreatHall();
 
-        private GreatHall() : base("Great Hall", coinCost: 3, victoryPoints: playerState => 1, plusCards: 1, plusActions: 1, isAction: true) 
+        private GreatHall() : base("Great Hall", Expansion.Intrigue, coinCost: 3, victoryPoints: playerState => 1, plusCards: 1, plusActions: 1, isAction: true) 
         { 
         } 
     }
@@ -24,7 +24,7 @@ namespace Dominion.CardTypes
     { 
         public static Harem card = new Harem();
 
-        private Harem() : base("Harem", coinCost: 6, victoryPoints: playerState => 2, plusCoins: 2, isTreasure: true) 
+        private Harem() : base("Harem", Expansion.Intrigue, coinCost: 6, victoryPoints: playerState => 2, plusCoins: 2, isTreasure: true) 
         { 
         } 
     }
@@ -35,7 +35,7 @@ namespace Dominion.CardTypes
         public static Baron card = new Baron();
 
         private Baron()
-            : base("Baron", coinCost: 4, plusBuy: 1, isAction: true)
+            : base("Baron", Expansion.Intrigue, coinCost: 4, plusBuy: 1, isAction: true)
         {
         }
 
@@ -58,7 +58,7 @@ namespace Dominion.CardTypes
         public static Bridge card = new Bridge();
 
         private Bridge()
-            : base("Bridge", coinCost: 4, plusBuy: 1, plusCoins: 1, isAction: true)
+            : base("Bridge", Expansion.Intrigue, coinCost: 4, plusBuy: 1, plusCoins: 1, isAction: true)
         {
             this.provideDiscountForWhileInPlay = ProvideDiscountForWhileInPlay;
         }
@@ -75,7 +75,7 @@ namespace Dominion.CardTypes
         public static Conspirator card = new Conspirator();
 
         private Conspirator()
-            : base("Conspirator", coinCost: 4, plusCoins: 2, isAction: true)
+            : base("Conspirator", Expansion.Intrigue, coinCost: 4, plusCoins: 2, isAction: true)
         {
         }
 
@@ -95,7 +95,7 @@ namespace Dominion.CardTypes
         public static Coppersmith card = new Coppersmith();
 
         private Coppersmith()
-            : base("Coppersmith", coinCost: 4, isAction: true)
+            : base("Coppersmith", Expansion.Intrigue, coinCost: 4, isAction: true)
         {
         }
 
@@ -111,7 +111,7 @@ namespace Dominion.CardTypes
         public static Courtyard card = new Courtyard();
 
         private Courtyard()
-            : base("Courtyard", coinCost: 2, plusCards: 3, isAction: true)
+            : base("Courtyard", Expansion.Intrigue, coinCost: 2, plusCards: 3, isAction: true)
         {
         }
 
@@ -127,7 +127,7 @@ namespace Dominion.CardTypes
         public static Duke card = new Duke();
 
         private Duke()
-            : base("Duke", coinCost: 5, isAction: true)
+            : base("Duke", Expansion.Intrigue, coinCost: 5, isAction: true)
         {
             this.victoryPointCounter = player => player.AllOwnedCards.CountOf(Duchy.card);
         }
@@ -139,7 +139,7 @@ namespace Dominion.CardTypes
         public static IronWorks card = new IronWorks();
 
         private IronWorks()
-            : base("IronWorks", coinCost: 4, isAction:true)
+            : base("IronWorks", Expansion.Intrigue, coinCost: 4, isAction:true)
         {
         }
 
@@ -172,7 +172,7 @@ namespace Dominion.CardTypes
         public static Masquerade card = new Masquerade();
 
         private Masquerade()
-            : base("Masquerade", coinCost: 3, plusCards: 2, isAction: true)
+            : base("Masquerade", Expansion.Intrigue, coinCost: 3, plusCards: 2, isAction: true)
         {
         }
 
@@ -207,7 +207,7 @@ namespace Dominion.CardTypes
         public static MiningVillage card = new MiningVillage();
 
         private MiningVillage()
-            : base("Mining Village", coinCost: 4, plusCards: 1, plusActions: 2, isAction: true)
+            : base("Mining Village", Expansion.Intrigue, coinCost: 4, plusCards: 1, plusActions: 2, isAction: true)
         {
         }
 
@@ -231,7 +231,7 @@ namespace Dominion.CardTypes
         public static Minion card = new Minion();
 
         private Minion()
-            : base("Minion", coinCost: 5, plusActions: 1, isAttack: true, attackDependsOnPlayerChoice: true, isAction: true)
+            : base("Minion", Expansion.Intrigue, coinCost: 5, plusActions: 1, isAttack: true, attackDependsOnPlayerChoice: true, isAction: true)
         {
         }
 
@@ -281,7 +281,7 @@ namespace Dominion.CardTypes
         public static Nobles card = new Nobles();
 
         private Nobles()
-            : base("Nobles", coinCost: 6, victoryPoints: playerState => 2, isAction: true)
+            : base("Nobles", Expansion.Intrigue, coinCost: 6, victoryPoints: playerState => 2, isAction: true)
         {
         }
 
@@ -308,7 +308,7 @@ namespace Dominion.CardTypes
         public static Pawn card = new Pawn();
 
         private Pawn()
-            : base("Pawn", coinCost: 2, isAction: true)
+            : base("Pawn", Expansion.Intrigue, coinCost: 2, isAction: true)
         {
         }
 
@@ -353,7 +353,7 @@ namespace Dominion.CardTypes
         public static Saboteur card = new Saboteur();
 
         private Saboteur()
-            : base("Saboteur", coinCost: 5, isAttack: true, isAction: true)
+            : base("Saboteur", Expansion.Intrigue, coinCost: 5, isAttack: true, isAction: true)
         {
         }
 
@@ -395,7 +395,7 @@ namespace Dominion.CardTypes
         public static Scout card = new Scout();
 
         private Scout()
-            : base("Scout", coinCost: 4, isAction: true, plusActions: 1)
+            : base("Scout", Expansion.Intrigue, coinCost: 4, isAction: true, plusActions: 1)
         {
         }
 
@@ -413,7 +413,7 @@ namespace Dominion.CardTypes
         public static SecretChamber card = new SecretChamber();
 
         private SecretChamber()
-            : base("Secret Chamber", coinCost: 2, isAction: true)
+            : base("Secret Chamber", Expansion.Intrigue, coinCost: 2, isAction: true)
         {
         }
 
@@ -456,7 +456,7 @@ namespace Dominion.CardTypes
         public static ShantyTown card = new ShantyTown();
 
         private ShantyTown()
-            : base("Shanty Town", coinCost: 3, plusActions: 2, isAction: true)
+            : base("Shanty Town", Expansion.Intrigue, coinCost: 3, plusActions: 2, isAction: true)
         {
         }
 
@@ -476,7 +476,7 @@ namespace Dominion.CardTypes
         public static Steward card = new Steward();
 
         private Steward()
-            : base("Steward", coinCost: 3, isAction: true)
+            : base("Steward", Expansion.Intrigue, coinCost: 3, isAction: true)
         {
         }
 
@@ -505,7 +505,7 @@ namespace Dominion.CardTypes
         public static Swindler card = new Swindler();
 
         private Swindler()
-            : base("Swindler", coinCost: 3, plusCoins: 2, isAction: true, isAttack: true)
+            : base("Swindler", Expansion.Intrigue, coinCost: 3, plusCoins: 2, isAction: true, isAttack: true)
         {
         }
 
@@ -531,7 +531,7 @@ namespace Dominion.CardTypes
         public static Torturer card = new Torturer();
 
         private Torturer()
-            : base("Torturer", coinCost: 5, plusCards: 3, isAction: true, isAttack: true)
+            : base("Torturer", Expansion.Intrigue, coinCost: 5, plusCards: 3, isAction: true, isAttack: true)
         {
         }
 
@@ -557,7 +557,7 @@ namespace Dominion.CardTypes
         public static TradingPost card = new TradingPost();
 
         private TradingPost()
-            : base("Trading Post", coinCost: 5, isAction: true)
+            : base("Trading Post", Expansion.Intrigue, coinCost: 5, isAction: true)
         {
         }
 
@@ -578,7 +578,7 @@ namespace Dominion.CardTypes
         public static Tribute card = new Tribute();
 
         private Tribute()
-            : base("Tribute", coinCost: 5, isAction: true)
+            : base("Tribute", Expansion.Intrigue, coinCost: 5, isAction: true)
         {
         }
 
@@ -635,7 +635,7 @@ namespace Dominion.CardTypes
         public static Upgrade card = new Upgrade();
 
         private Upgrade()
-            : base("Upgrade", coinCost: 5, plusCards: 1, plusActions: 1, isAction: true)
+            : base("Upgrade", Expansion.Intrigue, coinCost: 5, plusCards: 1, plusActions: 1, isAction: true)
         {
         }
 
@@ -658,7 +658,7 @@ namespace Dominion.CardTypes
         public static WishingWell card = new WishingWell();
 
         private WishingWell()
-            : base("Wishing Well", coinCost: 3, plusCards: 1, plusActions: 1, isAction: true)
+            : base("Wishing Well", Expansion.Intrigue, coinCost: 3, plusCards: 1, plusActions: 1, isAction: true)
         {
         }
 

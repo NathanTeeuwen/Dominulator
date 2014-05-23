@@ -13,7 +13,7 @@ namespace Dominion.CardTypes.TestCards
        : Card
     {
         public FollowersTest(int cost)
-            : base("Followers", coinCost: cost, isAction: true, plusCards: 2, isAttack: true)
+            : base("Followers", Expansion.Unknown, coinCost: cost, isAction: true, plusCards: 2, isAttack: true)
         {
         }
 
@@ -35,7 +35,7 @@ namespace Dominion.CardTypes.TestCards
         public static FishingVillageAvailableForDeckCycle card = new FishingVillageAvailableForDeckCycle();
 
         private FishingVillageAvailableForDeckCycle()
-            : base("FishingVillageAvailableForDeckCycle", coinCost:3, isAction: true, plusCoins:1, plusActions:2)
+            : base("FishingVillageAvailableForDeckCycle", Expansion.Unknown, coinCost:3, isAction: true, plusCoins:1, plusActions:2)
         {
         }
 
@@ -56,7 +56,7 @@ namespace Dominion.CardTypes.TestCards
         public static FishingVillageEmptyDuration card = new FishingVillageEmptyDuration();
 
         private FishingVillageEmptyDuration()
-            : base("FishingVillageAvailableForDeckCycle", coinCost: 3, isAction: true, plusCoins: 2, plusActions: 2, isDuration:true )
+            : base("FishingVillageAvailableForDeckCycle", Expansion.Unknown, coinCost: 3, isAction: true, plusCoins: 2, plusActions: 2, isDuration:true )
         {
         }
 

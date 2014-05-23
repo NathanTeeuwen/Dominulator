@@ -15,7 +15,7 @@ namespace Dominion.CardTypes
         public static Ambassador card = new Ambassador();
 
         private Ambassador()
-            : base("Ambassador", coinCost: 3, isAction: true, attackDependsOnPlayerChoice: true, isAttack:true)
+            : base("Ambassador", Expansion.Seaside, coinCost: 3, isAction: true, attackDependsOnPlayerChoice: true, isAttack:true)
         {
         }
 
@@ -56,7 +56,7 @@ namespace Dominion.CardTypes
         public static Bazaar card = new Bazaar();
 
         private Bazaar() 
-            : base("Bazaar", coinCost: 5, isAction: true, plusCoins: 1, plusCards: 1, plusActions: 2) 
+            : base("Bazaar", Expansion.Seaside, coinCost: 5, isAction: true, plusCoins: 1, plusCards: 1, plusActions: 2) 
         { 
         } 
     }
@@ -67,7 +67,7 @@ namespace Dominion.CardTypes
         public static Caravan card = new Caravan();
 
         private Caravan()
-            : base("Caravan", coinCost: 4, isAction: true, isDuration: true, plusCards: 1, plusActions: 1)
+            : base("Caravan", Expansion.Seaside, coinCost: 4, isAction: true, isDuration: true, plusCards: 1, plusActions: 1)
         {
         }
 
@@ -83,7 +83,7 @@ namespace Dominion.CardTypes
         public static Cutpurse card = new Cutpurse();
 
         private Cutpurse()
-            : base("Cutpurse", coinCost: 4, isAction: true, plusCoins: 2, isAttack: true)
+            : base("Cutpurse", Expansion.Seaside, coinCost: 4, isAction: true, plusCoins: 2, isAttack: true)
         {
         }
 
@@ -102,7 +102,7 @@ namespace Dominion.CardTypes
         public static Embargo card = new Embargo();
 
         private Embargo()
-            : base("Embargo", coinCost: 2, isAction: true)
+            : base("Embargo", Expansion.Seaside, coinCost: 2, isAction: true)
         {
         }
 
@@ -120,7 +120,7 @@ namespace Dominion.CardTypes
         public static Explorer card = new Explorer();
 
         private Explorer()
-            : base("Explorer", coinCost: 5, isAction: true)
+            : base("Explorer", Expansion.Seaside, coinCost: 5, isAction: true)
         {
         }
 
@@ -143,7 +143,7 @@ namespace Dominion.CardTypes
         public static FishingVillage card = new FishingVillage();
 
         private FishingVillage()
-            : base("Fishing Village", coinCost: 3, isAction: true, isDuration: true, plusCoins: 1, plusActions: 2)
+            : base("Fishing Village", Expansion.Seaside, coinCost: 3, isAction: true, isDuration: true, plusCoins: 1, plusActions: 2)
         {
         }
 
@@ -160,7 +160,7 @@ namespace Dominion.CardTypes
         public static GhostShip card = new GhostShip();
 
         private GhostShip()
-            : base("Ghost Ship", coinCost: 5, isAction: true, isAttack: true, plusCards: 2)
+            : base("Ghost Ship", Expansion.Seaside, coinCost: 5, isAction: true, isAttack: true, plusCards: 2)
         {
         }
 
@@ -179,7 +179,7 @@ namespace Dominion.CardTypes
         public static Haven card = new Haven();
 
         private Haven()
-            : base("Haven", coinCost: 2, isAction: true, isDuration: true, plusCards: 1, plusActions: 1)
+            : base("Haven", Expansion.Seaside, coinCost: 2, isAction: true, isDuration: true, plusCards: 1, plusActions: 1)
         {
         }
 
@@ -195,7 +195,7 @@ namespace Dominion.CardTypes
         public static Island card = new Island();
 
         private Island()
-            : base("Island", coinCost: 4, isAction: true, victoryPoints: playerState => 2)
+            : base("Island", Expansion.Seaside, coinCost: 4, isAction: true, victoryPoints: playerState => 2)
         {
         }
 
@@ -216,7 +216,7 @@ namespace Dominion.CardTypes
         public static Lighthouse card = new Lighthouse();
 
         private Lighthouse()
-            : base("Lighthouse", coinCost: 2, isAction: true, isDuration: true, plusCoins: 1, plusActions: 1)
+            : base("Lighthouse", Expansion.Seaside, coinCost: 2, isAction: true, isDuration: true, plusCoins: 1, plusActions: 1)
         {
         }
 
@@ -232,7 +232,7 @@ namespace Dominion.CardTypes
         public static Lookout card = new Lookout();
 
         private Lookout()
-            : base("Lookout", coinCost: 3, isAction: true, plusActions: 1)
+            : base("Lookout", Expansion.Seaside, coinCost: 3, isAction: true, plusActions: 1)
         {
 
         }
@@ -252,7 +252,7 @@ namespace Dominion.CardTypes
         public static MerchantShip card = new MerchantShip();
 
         private MerchantShip()
-            : base("Merchant Ship", coinCost: 5, isAction: true, isDuration: true, plusCoins: 2)
+            : base("Merchant Ship", Expansion.Seaside, coinCost: 5, isAction: true, isDuration: true, plusCoins: 2)
         {
         }
 
@@ -268,7 +268,7 @@ namespace Dominion.CardTypes
         public static NativeVillage card = new NativeVillage();
 
         private NativeVillage()
-            : base("Native Village", coinCost: 2, isAction: true, plusActions: 2)
+            : base("Native Village", Expansion.Seaside, coinCost: 2, isAction: true, plusActions: 2)
         {
         }
 
@@ -296,7 +296,7 @@ namespace Dominion.CardTypes
         public static Navigator card = new Navigator();
 
         private Navigator()
-            : base("Navigator", coinCost: 4, isAction: true, plusCoins: 2)
+            : base("Navigator", Expansion.Seaside, coinCost: 4, isAction: true, plusCoins: 2)
         {
         }
 
@@ -324,7 +324,7 @@ namespace Dominion.CardTypes
         public static Outpost card = new Outpost();
 
         private Outpost()
-            : base("Outpost", coinCost: 5, isAction: true, isDuration: true)
+            : base("Outpost", Expansion.Seaside, coinCost: 5, isAction: true, isDuration: true)
         {
         }
 
@@ -347,7 +347,7 @@ namespace Dominion.CardTypes
         public static PearlDiver card = new PearlDiver();
 
         private PearlDiver()
-            : base("Pearl Diver", coinCost: 2, isAction: true, plusCards: 1, plusActions: 1)
+            : base("Pearl Diver", Expansion.Seaside, coinCost: 2, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
 
@@ -368,7 +368,7 @@ namespace Dominion.CardTypes
         public static PirateShip card = new PirateShip();
 
         private PirateShip()
-            : base("Pirate Ship", coinCost: 4, isAction: true, isAttack: true, attackDependsOnPlayerChoice:true)
+            : base("Pirate Ship", Expansion.Seaside, coinCost: 4, isAction: true, isAttack: true, attackDependsOnPlayerChoice:true)
         {
         }
 
@@ -413,7 +413,7 @@ namespace Dominion.CardTypes
         public static Salvager card = new Salvager();
 
         private Salvager()
-            : base("Salvager", coinCost: 4, isAction: true)
+            : base("Salvager", Expansion.Seaside, coinCost: 4, isAction: true)
         {
         }
 
@@ -433,7 +433,7 @@ namespace Dominion.CardTypes
         public static SeaHag card = new SeaHag();
 
         private SeaHag()
-            : base("Sea Hag", coinCost: 4, isAction: true, isAttack: true)
+            : base("Sea Hag", Expansion.Seaside, coinCost: 4, isAction: true, isAttack: true)
         {
         }
 
@@ -450,7 +450,7 @@ namespace Dominion.CardTypes
         public static Smugglers card = new Smugglers();
 
         private Smugglers()
-            : base("Smugglers", coinCost: 3, isAction: true)
+            : base("Smugglers", Expansion.Seaside, coinCost: 3, isAction: true)
         {
         }
 
@@ -481,7 +481,7 @@ namespace Dominion.CardTypes
         public static Tactician card = new Tactician();
 
         private Tactician()
-            : base("Tactician", coinCost: 5, isAction: true, isDuration: true)
+            : base("Tactician", Expansion.Seaside, coinCost: 5, isAction: true, isDuration: true)
         {
         }
 
@@ -515,7 +515,7 @@ namespace Dominion.CardTypes
         public static TreasureMap card = new TreasureMap();
 
         private TreasureMap()
-            : base("Treasure Map", coinCost: 4, isAction: true)
+            : base("Treasure Map", Expansion.Seaside, coinCost: 4, isAction: true)
         {
         }
 
@@ -537,7 +537,7 @@ namespace Dominion.CardTypes
         public static Treasury card = new Treasury();
 
         private Treasury()
-            : base("Treasury", coinCost: 5, isAction: true, plusActions: 1, plusCards: 1, plusCoins: 1)
+            : base("Treasury", Expansion.Seaside, coinCost: 5, isAction: true, plusActions: 1, plusCards: 1, plusCoins: 1)
         {
             this.doSpecializedCleanupAtStartOfCleanup = DoSpecializedCleanupAtStartOfCleanup;
         }
@@ -558,7 +558,7 @@ namespace Dominion.CardTypes
         public static Warehouse card = new Warehouse();
 
         private Warehouse()
-            : base("Warehouse", coinCost: 3, isAction: true, plusActions: 1, plusCards: 3)
+            : base("Warehouse", Expansion.Seaside, coinCost: 3, isAction: true, plusActions: 1, plusCards: 3)
         {
         }
 
@@ -574,7 +574,7 @@ namespace Dominion.CardTypes
         public static Wharf card = new Wharf();
 
         private Wharf()
-            : base("Wharf", coinCost: 5, isAction: true, isDuration: true, plusCards: 2, plusBuy: 1)
+            : base("Wharf", Expansion.Seaside, coinCost: 5, isAction: true, isDuration: true, plusCards: 2, plusBuy: 1)
         {
         }
 
