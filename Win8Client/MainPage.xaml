@@ -1,0 +1,103 @@
+﻿<Page
+    x:Class="Win8Client.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Win8Client"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >    
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>            
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>        
+        <TextBlock Grid.Row="0" FontSize="100" VerticalAlignment="Center" HorizontalAlignment="Center">Dominion Picker</TextBlock>
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto">
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <!-- Page for Current Cards-->
+                <Grid>                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <Button Click="Randomize">Randomize</Button>
+                        <TextBlock FontSize="30">Sort:</TextBlock>
+                        <Button Click="SortCurrentByName">By Name</Button>
+                        <Button Click="SortCurrentByCost">By Cost</Button>
+                        <Button Click="SortCurrentByExpansion">By Expansion</Button>
+                    </StackPanel>
+                    <ScrollViewer Grid.Row="1">
+                        <ListView Name="CurrentCardsListView"  ItemsSource="{Binding CurrentDeck.Cards}" SelectionMode="Multiple" SelectionChanged="CurrentDeckSelectionChanged">
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+
+                    </ScrollViewer>
+                </Grid>
+                <!-- Horizontal Spacer-->
+                <StackPanel Width="100"></StackPanel>       
+                <StackPanel>
+                    <TextBlock FontSize="30">Enabled Expansions</TextBlock>
+                    <ItemsControl ItemsSource="{Binding Expansions}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel></StackPanel>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <CheckBox Content="{Binding Name}" IsChecked ="{Binding IsEnabled.Value, Mode=TwoWay}"></CheckBox>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <StackPanel Height="20"></StackPanel>
+                    <!-- Spacer-->
+                    <CheckBox IsChecked="{Binding Use3OrMoreFromExpansions.Value, Mode=TwoWay}">Use or 3 more cards from a set</CheckBox>
+                </StackPanel>
+                <!--Horizontal  Spacer-->
+                <StackPanel Width="100"></StackPanel>
+                <!-- Page for All Cards-->
+                <Grid>                
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <TextBlock FontSize="30">Sort:</TextBlock>
+                        <Button Click="SortAllByName">By Name</Button>
+                        <Button Click="SortAllByCost">By Cost</Button>
+                        <Button Click="SortAllByExpansion">By Expansion</Button>
+                    </StackPanel>
+                    <ScrollViewer Grid.Row="1">
+                        <ListView ItemsSource="{Binding AllCards.Cards}" SelectionMode="Multiple">
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </ScrollViewer>
+                </Grid>                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
