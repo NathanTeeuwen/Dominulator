@@ -42,7 +42,7 @@ namespace Win8Client
             return false;
         }
 
-        public DominionCard GetCard()
+        public DominionCard GetCard(Func<DominionCard, bool> meetConstraint)
         {
             while (maxIndex > 0)
             {
@@ -51,7 +51,7 @@ namespace Win8Client
                 remainingCards[resultCardIndex] = remainingCards[maxIndex];
                 --maxIndex;
 
-                if (!IsExcluded(currentCard))
+                if (!IsExcluded(currentCard) && meetConstraint(currentCard))
                     return currentCard;                    
             }
 

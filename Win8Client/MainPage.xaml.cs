@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Generic = System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Win8Client
 {
@@ -31,9 +32,15 @@ namespace Win8Client
         }
 
         private void Randomize(object sender, RoutedEventArgs e)
-        {
+        {            
             var selectedItems = this.CurrentCardsListView.SelectedItems.Select(item => (DominionCard)item).ToArray<DominionCard>();
-            this.appDatacontext.CurrentDeck.Generate10Random(this.appDatacontext.AllCards.Cards, itemsToReplace:selectedItems);
+            this.appDatacontext.CurrentDeck.Generate10Random(this.appDatacontext.AllCards.Cards, itemsToReplace:selectedItems);            
+
+            this.AllCardsListView.SelectedItems.Clear();
+            foreach(DominionCard card in this.appDatacontext.CurrentDeck.CurrentCards)
+            {
+                this.AllCardsListView.SelectedItems.Add(card);
+            }
         }
 
         private void SortAllByName(object sender, RoutedEventArgs e)
@@ -79,25 +86,8 @@ namespace Win8Client
         private System.Collections.ObjectModel.ObservableCollection<DominionCard> cards;
         private Func<DominionCard, bool> filter;
         private Func<DominionCard, object> keySelector;
-
-        public SortableCardList()
-        {
-            this.originalCards = new List<DominionCard>();
-            this.cards = new System.Collections.ObjectModel.ObservableCollection<DominionCard>();
-            this.filter = delegate(DominionCard card)
-            {
-                return true;
-            };
-            ClearSort();
-        }
-
-        private void ClearSort()
-        {
-            this.keySelector = delegate(DominionCard card)
-            {
-                return 0;
-            };
-        }
+        
+        public DependencyObjectDecl<string, DefaultEmpty> CurrentSort { get; private set;}
 
         public System.Collections.ObjectModel.ObservableCollection<DominionCard> Cards
         {
@@ -107,19 +97,51 @@ namespace Win8Client
             }
         }
 
+        public Generic.IEnumerable<DominionCard> CurrentCards
+        {
+            get
+            {
+                return this.originalCards.Where(this.filter).OrderBy<DominionCard, object>(this.keySelector);
+            }
+        }
+
+        public SortableCardList()
+        {
+            this.originalCards = new List<DominionCard>();
+            this.cards = new System.Collections.ObjectModel.ObservableCollection<DominionCard>();
+            this.filter = delegate(DominionCard card)
+            {
+                return true;
+            };
+            this.CurrentSort = new DependencyObjectDecl<string, DefaultEmpty>(this);
+            ClearSort();
+        }
+
+        private void ClearSort()
+        {
+            this.keySelector = delegate(DominionCard card)
+            {
+                return 0;
+            };
+            this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => this.CurrentSort.Value = "Not Sorted");            
+        }
+     
         public void SortByName()
         {
             SortCards(card => card.Name);
+            this.CurrentSort.Value = "By Name";
         }
 
         public void SortByCost()
         {
             SortCards(card => card.Coin);
+            this.CurrentSort.Value = "By Cost";
         }
 
         public void SortByExpansion()
         {
             SortCards(card => card.Expansion);
+            this.CurrentSort.Value = "By Expansion";
         }
 
         public void ApplyFilter(Func<DominionCard, bool> filter)
@@ -132,7 +154,7 @@ namespace Win8Client
             await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
             {
                 this.cards.Clear();
-                foreach (var item in this.originalCards.Where(this.filter).OrderBy<DominionCard, object>(this.keySelector))
+                foreach (var item in this.CurrentCards)
                 {
                     this.cards.Add(item);
                 }
@@ -188,7 +210,7 @@ namespace Win8Client
                         {
                             if (this.Cards[i] == cardToReplace)
                             {
-                                var nextCard = cardPicker.GetCard();
+                                var nextCard = cardPicker.GetCard(c => true);
                                 if (nextCard == null)
                                 {
                                     this.Cards.Remove(cardToReplace);
@@ -219,7 +241,7 @@ namespace Win8Client
 
             while (this.originalCards.Count < 10)
             {
-                DominionCard currentCard = cardPicker.GetCard();
+                DominionCard currentCard = cardPicker.GetCard( c => true);
                 if (currentCard == null)
                     break;
                 this.originalCards.Add(currentCard);
@@ -235,23 +257,28 @@ namespace Win8Client
     {        
         private SortableCardList allCards;
         private SortableCardList currentDeck;
-        private System.Collections.ObjectModel.ObservableCollection<Expansion> expansions;
-        private DependencyObjectDecl<bool, DefaultTrue> use3OrMoreFromExpansions;
+        private System.Collections.ObjectModel.ObservableCollection<Expansion> expansions;        
 
-        public DependencyObjectDecl<bool, DefaultTrue> Use3OrMoreFromExpansions
-        {
-            get
-            {
-                return use3OrMoreFromExpansions;
-            }
-        }
+        public DependencyObjectDecl<bool, DefaultTrue> Use3OrMoreFromExpansions { get; private set;}
+        public DependencyObjectDecl<bool, DefaultTrue> RequireTrashing { get; private set; }
+        public DependencyObjectDecl<bool, DefaultTrue> RequirePlusCards { get; private set; }
+        public DependencyObjectDecl<bool, DefaultTrue> RequirePlusBuy { get; private set; }
+        public DependencyObjectDecl<bool, DefaultTrue> RequirePlus2Actions { get; private set; }
+        public DependencyObjectDecl<bool, DefaultTrue> RequireAttack { get; private set; }
+        public DependencyObjectDecl<bool, DefaultTrue> AllowAttack { get; private set; }        
 
         public AppDataContext()
         {
             this.allCards = new SortableCardList();
             this.currentDeck = new SortableCardList();
             this.expansions = new System.Collections.ObjectModel.ObservableCollection<Expansion>();
-            this.use3OrMoreFromExpansions = new DependencyObjectDecl<bool, DefaultTrue>(this);
+            this.Use3OrMoreFromExpansions = new DependencyObjectDecl<bool, DefaultTrue>(this);
+            this.RequireTrashing = new DependencyObjectDecl<bool, DefaultTrue>(this);
+            this.RequirePlusCards = new DependencyObjectDecl<bool, DefaultTrue>(this);
+            this.RequirePlusBuy = new DependencyObjectDecl<bool, DefaultTrue>(this);
+            this.RequirePlus2Actions = new DependencyObjectDecl<bool, DefaultTrue>(this);
+            this.RequireAttack = new DependencyObjectDecl<bool, DefaultTrue>(this);
+            this.AllowAttack = new DependencyObjectDecl<bool, DefaultTrue>(this);
                         
             this.expansions.Add(new Expansion("Alchemy", ExpansionIndex.Base));
             this.expansions.Add(new Expansion("Base", ExpansionIndex.Alchemy));
@@ -266,10 +293,10 @@ namespace Win8Client
 
             foreach(var expansion in expansions)
             {
-                expansion.IsEnabled.Changed += ExpansionEnabledChangedEventHandler;
+                expansion.IsEnabled.PropertyChanged += ExpansionEnabledChangedEventHandler;
             }
 
-            this.use3OrMoreFromExpansions.Changed += Enable3orMoreFromExpansionsChangedEventHandler;
+            this.Use3OrMoreFromExpansions.PropertyChanged += Enable3orMoreFromExpansionsChangedEventHandler;
 
             this.allCards.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
             this.currentDeck.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
@@ -300,13 +327,13 @@ namespace Win8Client
             }
         }
         
-        public void ExpansionEnabledChangedEventHandler(object owner)
+        public void ExpansionEnabledChangedEventHandler(object sender, PropertyChangedEventArgs e)
         {
             this.allCards.UpdateUI();
             this.currentDeck.UpdateUI();
         }
 
-        public void Enable3orMoreFromExpansionsChangedEventHandler(object owner)
+        public void Enable3orMoreFromExpansionsChangedEventHandler(object sender, PropertyChangedEventArgs e)
         {
             this.currentDeck.UpdateUI();
         }

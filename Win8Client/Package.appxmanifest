@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="e2a34a6d-2768-49f4-a8f5-04195e5783f9" Publisher="CN=Nathan Teeuwen" Version="1.0.0.0" />
+  <Identity Name="e2a34a6d-2768-49f4-a8f5-04195e5783fA" Publisher="CN=Nathan Teeuwen" Version="1.0.0.2" />
   <Properties>
     <DisplayName>Win8Client</DisplayName>
     <PublisherDisplayName>Nathan Teeuwen</PublisherDisplayName>

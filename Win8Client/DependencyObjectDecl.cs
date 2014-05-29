@@ -1,15 +1,16 @@
 ﻿using Windows.UI.Xaml;
+using System.ComponentModel;    
 
 namespace Win8Client
 {
     delegate void PropertyChangedEvent(object owner);
 
     class DependencyObjectDecl<T, T2>
-        : DependencyObject
+        : DependencyObject, INotifyPropertyChanged
         where T2 : DependencyPolicy<T>, new()
     {
         private readonly object parent;
-        public event PropertyChangedEvent Changed;
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public DependencyObjectDecl(object parent)
         {
@@ -22,7 +23,7 @@ namespace Win8Client
             "Value",
             typeof(T),
             typeof(AppDataContext),
-            new PropertyMetadata(Policy.DefaultValue, PropertyChanged)
+            new PropertyMetadata(Policy.DefaultValue, PropertyChangedCallback)
         );
 
         public T Value
@@ -36,14 +37,14 @@ namespace Win8Client
             {
                 this.SetValue(DependencyProperty, value);
             }
-        }
+        }                
 
-        static void PropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        static void PropertyChangedCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             DependencyObjectDecl<T, T2> typed = (DependencyObjectDecl<T, T2>)d;
-            if (typed.Changed != null)
+            if (typed.PropertyChanged != null)
             {
-                typed.Changed(typed.parent);
+                typed.PropertyChanged(typed.parent, new PropertyChangedEventArgs("Value"));
             }
         }
     }
@@ -64,6 +65,18 @@ namespace Win8Client
             get
             {
                 return true;
+            }
+        }
+    }
+
+    class DefaultEmpty
+        : DependencyPolicy<string>
+    {
+        public string DefaultValue
+        {
+            get
+            {
+                return "";
             }
         }
     }
