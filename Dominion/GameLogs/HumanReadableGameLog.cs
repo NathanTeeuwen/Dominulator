@@ -17,8 +17,8 @@ namespace Dominion
         List<Card> drawnCards;
         IndentedTextWriter textWriter;        
 
-        public HumanReadableGameLog(string filename)
-            : this(new IndentedTextWriter(filename))
+        public HumanReadableGameLog(System.IO.TextWriter textWriter)
+            : this(new IndentedTextWriter(textWriter))
         {                     
         }
 

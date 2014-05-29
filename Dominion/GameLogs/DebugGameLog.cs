@@ -10,11 +10,11 @@ namespace Dominion
         : IGameLog, IDisposable
     {
         int roundNumber = 0;
-        IndentedTextWriter textWriter;        
+        IndentedTextWriter textWriter;
 
-        public DebugGameLog(string filename)
+        public DebugGameLog(System.IO.TextWriter textWriter)
         {
-            this.textWriter = new IndentedTextWriter(filename);            
+            this.textWriter = new IndentedTextWriter(textWriter);            
         }
 
         public DebugGameLog(IndentedTextWriter textWriter)
