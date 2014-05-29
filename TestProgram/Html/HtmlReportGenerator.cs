@@ -27,7 +27,8 @@ namespace Program
 
         public void CreateHtmlReport(string filename)
         {
-            using (var textWriter = new IndentedTextWriter(filename))
+            var streamWriter = new System.IO.StreamWriter(filename);
+            using (var textWriter = new IndentedTextWriter(streamWriter))
             {
                 CreateHtmlReport(textWriter);
             }

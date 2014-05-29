@@ -11,12 +11,7 @@ namespace Dominion
     {
         private bool isNewLine = true;
         int indentLevel = 0;
-        System.IO.TextWriter textWriter;
-
-        public IndentedTextWriter(string filename)
-            : this(new System.IO.StreamWriter(filename))
-        {
-        }
+        System.IO.TextWriter textWriter;        
 
         public IndentedTextWriter(System.IO.TextWriter textWriter)
         {
