@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7636A8DF-B2A9-4598-A7EF-D4F4DCF5AC9A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dominion.StrategyOptimizer</RootNamespace>
+    <AssemblyName>Dominion.StrategyOptimizer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BigMoneyWithCard\BigMoneyWithCardDescription.cs" />
+    <Compile Include="BigMoneyWithCard\CompareBigMoneyWithCardDescription.cs" />
+    <Compile Include="BigMoneyWithCard\MutateBigMoneyWithCardDescription.cs" />
+    <Compile Include="GeneticAlgorithm.cs" />
+    <Compile Include="PickByPriorityDescription\ComparePickByPriorityDescription.cs" />
+    <Compile Include="PickByPriorityDescription\MutatePickByPriorityDescription.cs" />
+    <Compile Include="PickByPriorityDescription\PickByPriorityDescription.cs" />
+    <Compile Include="PickByPriorityDescription\SimpleStrategyDescription.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StrategyOptimizer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataGathering\Dominion.DataGathering.csproj">
+      <Project>{992736aa-e61e-4ed5-88d9-3de4e8a214cb}</Project>
+      <Name>Dominion.DataGathering</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj">
+      <Project>{6816a653-b44f-4614-b228-8c70d6747ca0}</Project>
+      <Name>Dominion.Strategy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominion\Dominion.csproj">
+      <Project>{d4a4d420-486e-489d-9db6-7fcba7d63359}</Project>
+      <Name>Dominion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

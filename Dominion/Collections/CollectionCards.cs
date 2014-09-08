@@ -312,6 +312,21 @@ namespace Dominion
             return null;
         }
 
+        public Card SomeCard()
+        {
+            for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)
+            {
+                if (this.mapGameCardIndexToCount[index] == 0)
+                    continue;
+
+                Card card = this.gameSubset.GetCardForIndex(index);
+
+                return card;
+            }
+
+            return null;
+        }
+
         public bool HasCard(CardPredicate predicate)
         {
             return FindCard(predicate) != null;

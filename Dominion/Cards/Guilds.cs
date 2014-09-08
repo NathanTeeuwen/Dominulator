@@ -136,24 +136,21 @@ namespace Dominion.CardTypes
 
                 currentPlayer.LookAtCardsFromDeck(1);
 
-                PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState,
-                    acceptableChoice => acceptableChoice == PlayerActionChoice.Trash ||
-                                        acceptableChoice == PlayerActionChoice.Discard ||
-                                        acceptableChoice == PlayerActionChoice.TopDeck);
+                DeckPlacement deckPlacement = currentPlayer.actions.ChooseBetweenTrashTopDeckDiscard(gameState, currentPlayer.CardsBeingLookedAt.SomeCard());
 
-                switch (choice)
+                switch (deckPlacement)
                 {
-                    case PlayerActionChoice.Trash:
+                    case DeckPlacement.Trash:
                         currentPlayer.RequestPlayerTrashLookedAtCard(gameState);
                         break;
-                    case PlayerActionChoice.Discard:
+                    case DeckPlacement.Discard:
                         currentPlayer.MoveLookedAtCardsToDiscard(gameState);
                         break;
-                    case PlayerActionChoice.TopDeck:
+                    case DeckPlacement.Deck:
                         currentPlayer.MoveLookedAtCardToTopOfDeck();
                         break;
                     default:
-                        throw new Exception("Unhandled case");
+                        throw new Exception("Invalid option");
                 }
             }
         }

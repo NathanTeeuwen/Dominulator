@@ -752,7 +752,7 @@ namespace Dominion.Strategy
         }      
 
         public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
-        {
+        {            
             if (this.defaultCardResponses.ShouldDeferForCardInPlay(gameState))
             {
                 return this.defaultCardResponses.ChooseBetween(gameState, acceptableChoice);
@@ -760,7 +760,15 @@ namespace Dominion.Strategy
 
             return base.ChooseBetween(gameState, acceptableChoice);
         }
-            
+
+        public override DeckPlacement ChooseBetweenTrashTopDeckDiscard(GameState gameState, Card card)
+        {    
+            if (this.defaultCardResponses.ShouldDeferForCardBeingBought(gameState))
+            {
+                return this.defaultCardResponses.ChooseBetweenTrashTopDeckDiscard(gameState, card);
+            }
+            return base.ChooseBetweenTrashTopDeckDiscard(gameState, card);
+        }
 
         public override int GetCoinAmountToOverpayForCard(GameState gameState, Card card)
         {

@@ -22,6 +22,14 @@ namespace Dominion.Strategy
             return this.cardResponses[card];
         }
 
+        private IPlayerAction GetActionForCardBeingBought(GameState gameState)
+        {
+            if (gameState.CurrentCardBeingBought == null)
+                return null;
+
+            return this.cardResponses[gameState.CurrentCardBeingBought];
+        }
+
         private IPlayerAction GetActionForCardInPlay(GameState gameState)
         {
             if (gameState.CurrentCardBeingPlayed == null)
@@ -33,6 +41,11 @@ namespace Dominion.Strategy
         public bool ShouldDeferForCardInPlay(GameState gameState)
         {
             return this.GetActionForCardInPlay(gameState) != null;
+        }
+
+        public bool ShouldDeferForCardBeingBought(GameState gameState)
+        {
+            return this.GetActionForCardBeingBought(gameState) != null;
         }
 
         private IPlayerAction GetActionForCardBeingCleanedUp(GameState gameState)
@@ -302,6 +315,12 @@ namespace Dominion.Strategy
         {
             IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
             return playerAction.ChooseBetweenTrashAndTopDeck(gameState, card);
+        }
+
+        public DeckPlacement ChooseBetweenTrashTopDeckDiscard(GameState gameState, Card card)
+        {
+            IPlayerAction playerAction = this.GetActionForCardBeingBought(gameState);
+            return playerAction.ChooseBetweenTrashTopDeckDiscard(gameState, card);
         }
 
         public string PlayerName 

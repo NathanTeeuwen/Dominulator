@@ -432,7 +432,52 @@ namespace Win8Client
 
             return ExpansionIndex._Unknown;
         }            
-    }                
+    }
+
+    enum CountSource
+    {
+        CountOfPile,
+        CountAllOwned,
+        InHand,
+        None,
+    }
+
+    public enum Comparison
+    {
+        LessThan,
+        LessThanEqual,
+        GreaterThan,
+        GreaterThanEqual,
+        None,
+    }
+
+    class CardAcceptanceDescription
+    {
+        public DependencyObjectDecl<DominionCard> Card { get; private set; }
+        public DependencyObjectDecl<DominionCard> TestCard { get; private set; }
+        public DependencyObjectDecl<CountSource> CountSource { get; private set; }
+        public DependencyObjectDecl<Comparison> Comparison { get; private set; }
+        public DependencyObjectDecl<int> Threshhold { get; private set; }
+
+        public CardAcceptanceDescription()
+        {
+            this.Card = new DependencyObjectDecl<DominionCard>(this);
+            this.TestCard = new DependencyObjectDecl<DominionCard>(this);
+            this.CountSource = new DependencyObjectDecl<CountSource>(this);
+            this.Comparison = new DependencyObjectDecl<Comparison>(this);
+            this.Threshhold = new DependencyObjectDecl<int>(this);
+        }
+    }
+
+    class CardPicker
+    {
+        public System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> CardAcceptanceDescriptions { get; private set; }
+
+        public CardPicker()
+        {
+            this.CardAcceptanceDescriptions = new System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription>();
+        }
+    }
 }                    
                      
                      

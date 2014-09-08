@@ -271,12 +271,9 @@ namespace Dominion
         {
             var result = new List<Card>();
             foreach (Card card in AllCards())
-            {                
-                if (card.isRuins || card.isPrize)
-                    continue;
-                if (NonKingdomCards.Contains(card))
-                    continue;
-                result.Add(card);
+            {
+                if (GameConfigBuilder.IsKingdomCard(card))
+                    result.Add(card);
             }
 
             return result.ToArray();
@@ -517,27 +514,14 @@ namespace Dominion
             Cards.Workshop,
             Cards.YoungWitch,
         };
-
-        static Card[] NonKingdomCards = new Card[]
-        {
-            Cards.Prize,
-            Cards.Ruins,
-            Cards.Curse,
-            Cards.Copper,
-            Cards.Silver,
-            Cards.Gold,
-            Cards.Platinum,
-            Cards.Estate,
-            Cards.Duchy,
-            Cards.Province,
-            Cards.Colony,
-            Cards.Mercenary,
-            Cards.Madman,
-            Cards.Spoils,
-            Cards.Necropolis,
-            Cards.OvergrownEstate,
-            Cards.Hovel,
-            Cards.Potion
-        };
+  
+        public static Card[] UnimplementedCards = new Card[]
+        {          
+            Cards.Knights,
+            Cards.Stash,      
+            Cards.BandOfMisfits,
+            Cards.BlackMarket,
+            Cards.Possession
+        };        
     }   
 }

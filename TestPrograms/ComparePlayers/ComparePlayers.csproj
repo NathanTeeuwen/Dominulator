@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{350F1B63-533B-423E-8327-A65543322AFE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Program</RootNamespace>
+    <AssemblyName>TestProgram.cs</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Program.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Kingdoms\ShouldMounteBankHoardOrVineyard.cs" />
+    <Compile Include="Kingdoms\ShouldRemakeOrHorseTradersIntoSoothayer.cs" />
+    <Compile Include="Simulations\DarkAgesBigMoney.cs" />
+    <Compile Include="Simulations\EffectOfEstateOnRebuild.cs" />
+    <Compile Include="Simulations\FeodumVsDuke.cs" />
+    <Compile Include="Simulations\FindBestStrategyForFirstGame.cs" />
+    <Compile Include="Simulations\FishingVillageTests.cs" />
+    <Compile Include="Simulations\FollowersTest.cs" />
+    <Compile Include="Simulations\GuildsResults.cs" />
+    <Compile Include="Simulations\HighestWinRateVsBigMoney.cs" />
+    <Compile Include="Simulations\RebuildResults.cs" />
+    <Compile Include="StartingDeckBuilder.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Simulations\UnevenCurseSplit.cs" />
+    <Compile Include="StrategyTemplates\BigMoneyWithSilverReplacement.cs" />
+    <Compile Include="StrategyTemplates\FishingVillageVariants.cs" />
+    <Compile Include="StrategyTemplates\FollowersTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BuiltInStrategies\Dominion.BuiltInStrategies.csproj">
+      <Project>{ecffdbdf-f966-4076-98f9-9366dab6d7cd}</Project>
+      <Name>Dominion.BuiltInStrategies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataGathering\Dominion.DataGathering.csproj">
+      <Project>{992736aa-e61e-4ed5-88d9-3de4e8a214cb}</Project>
+      <Name>Dominion.DataGathering</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dominion.StrategyOptimizer\Dominion.Strategy.Optimizer.csproj">
+      <Project>{7636a8df-b2a9-4598-a7ef-d4f4dcf5ac9a}</Project>
+      <Name>Dominion.Strategy.Optimizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dominion.Strategy\Dominion.Strategy.csproj">
+      <Project>{6816a653-b44f-4614-b228-8c70d6747ca0}</Project>
+      <Name>Dominion.Strategy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dominion\Dominion.csproj">
+      <Project>{d4a4d420-486e-489d-9db6-7fcba7d63359}</Project>
+      <Name>Dominion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DynamicStrategyLoader\Dominion.DynamicStrategyLoader.csproj">
+      <Project>{56774744-f31a-4f22-a6ff-89c7488d243c}</Project>
+      <Name>Dominion.DynamicStrategyLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\HtmlRenderer\HtmlRenderer.csproj">
+      <Project>{31ce0f10-4472-4cff-b683-44b1f13b8d39}</Project>
+      <Name>HtmlRenderer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TestOutput\TestOutput.csproj">
+      <Project>{b75dcc9f-3a30-4934-b10b-11efb7049cfb}</Project>
+      <Name>TestOutput</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
