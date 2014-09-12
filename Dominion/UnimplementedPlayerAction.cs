@@ -239,6 +239,11 @@ namespace Dominion
             return PlayerMustMakeDeckPlacement();
         }
 
+        virtual public DeckPlacement ChooseBetweenTrashTopDeckDiscard(GameState gameState, Card card)
+        {
+            return PlayerMustMakeDeckPlacement();
+        }
+
         virtual public int GetNumberOfCoppersToPutInHandForCountingHouse(GameState gameState, int maxNumber)
         {
             return PlayerMustChooseNumber();

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECFFDBDF-F966-4076-98F9-9366DAB6D7CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BuiltInStrategies</RootNamespace>
+    <AssemblyName>BuiltInStrategies</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuiltIntStrategyLoader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategies\AmbassadorCaravanApprenticeMerchantGuild.cs" />
+    <Compile Include="Strategies\AmbassadorCaravanLaboratory.cs" />
+    <Compile Include="Strategies\ArmoryConspiratorForagerGreatHall.cs" />
+    <Compile Include="Strategies\BigMoney.cs" />
+    <Compile Include="Strategies\BigMoneyBridge.cs" />
+    <Compile Include="Strategies\BigMoneyCartographer.cs" />
+    <Compile Include="Strategies\BigMoneyColony.cs" />
+    <Compile Include="Strategies\BigMoneyCouncilroomEarlyProvince.cs" />
+    <Compile Include="Strategies\BigMoneyCultist.cs" />
+    <Compile Include="Strategies\BigMoneyDelayed.cs" />
+    <Compile Include="Strategies\BigMoneyDoubleJack.cs" />
+    <Compile Include="Strategies\BigMoneyDoubleJackSlog.cs" />
+    <Compile Include="Strategies\BigMoneyDoubleSmithy.cs" />
+    <Compile Include="Strategies\BigMoneyDoubleWitch.cs" />
+    <Compile Include="Strategies\BigMoneyMoneylender.cs" />
+    <Compile Include="Strategies\BigMoneySimple.cs" />
+    <Compile Include="Strategies\BigMoneySingleJack.cs" />
+    <Compile Include="Strategies\BigMoneySingleSmithy.cs" />
+    <Compile Include="Strategies\BigMoneySingleWitch.cs" />
+    <Compile Include="Strategies\BigMoneySmithyEarlyProvince.cs" />
+    <Compile Include="Strategies\BigMoneyThief.cs" />
+    <Compile Include="Strategies\BigMoneyWharf.cs" />
+    <Compile Include="Strategies\ButcherPlazaWatchtower.cs" />
+    <Compile Include="Strategies\CacheCountingHouseBridgeTunnel.cs" />
+    <Compile Include="Strategies\CaravanBridgeDukeCartographer.cs" />
+    <Compile Include="Strategies\ChapelCanTripKingsCourtMasquerade.cs" />
+    <Compile Include="Strategies\ColonyFamiliarMine.cs" />
+    <Compile Include="Strategies\DeathCartDoubleWarehouse.cs" />
+    <Compile Include="Strategies\DevelopFeastMysticTunnel.cs" />
+    <Compile Include="Strategies\Doctor.cs" />
+    <Compile Include="Strategies\DoubleWarehouse.cs" />
+    <Compile Include="Strategies\DoubleWarehouse2.cs" />
+    <Compile Include="Strategies\DuchyDukeWarehouseEmbassy.cs" />
+    <Compile Include="Strategies\EmbassyTunnelSpiceMerchantPlaza.cs" />
+    <Compile Include="Strategies\FamiliarPotionSilverOpenning.cs" />
+    <Compile Include="Strategies\FamiliarSilverSilverOpenning.cs" />
+    <Compile Include="Strategies\FeodumDevelop.cs" />
+    <Compile Include="Strategies\FishingVillageChapelPoorHouse.cs" />
+    <Compile Include="Strategies\FishingVillageChapelPoorHouseTalisman.cs" />
+    <Compile Include="Strategies\FishingVillageJack.cs" />
+    <Compile Include="Strategies\FishingVillageJackLookout.cs" />
+    <Compile Include="Strategies\FishingVillageLibraryCountPoorHouse.cs" />
+    <Compile Include="Strategies\GardensBeggarIronworks.cs" />
+    <Compile Include="Strategies\GovernorJunkDealer.cs" />
+    <Compile Include="Strategies\GovernorMarketsquare.cs" />
+    <Compile Include="Strategies\Harem.cs" />
+    <Compile Include="Strategies\HermitMarketSquare.cs" />
+    <Compile Include="Strategies\HorseTraderSoothsayerMinionGreatHall.cs" />
+    <Compile Include="Strategies\Illgottengains.cs" />
+    <Compile Include="Strategies\IllgottengainsMoneylender.cs" />
+    <Compile Include="Strategies\IronworksGreathallRemodelHuntingGrounds.cs" />
+    <Compile Include="Strategies\KingsCourtRabbleExpandFarmingVillage.cs" />
+    <Compile Include="Strategies\LaboratorySpiceMerchantWarehouse.cs" />
+    <Compile Include="Strategies\Lookout.cs" />
+    <Compile Include="Strategies\LookoutHaremMiningVillageMysticScout.cs" />
+    <Compile Include="Strategies\LookoutSalvagerLibraryHighwayFestival.cs" />
+    <Compile Include="Strategies\LookoutTraderNobles.cs" />
+    <Compile Include="Strategies\MineHoard.cs" />
+    <Compile Include="Strategies\MintBaker.cs" />
+    <Compile Include="Strategies\MountebankGovernorMaurader.cs" />
+    <Compile Include="Strategies\MountebankHoard.cs" />
+    <Compile Include="Strategies\MountebankMonumentHamletVineyard.cs" />
+    <Compile Include="Strategies\NomadCampLaboratorySpiceMerchantWarehouse.cs" />
+    <Compile Include="Strategies\ProcessessionGraverobber.cs" />
+    <Compile Include="Strategies\RatsUpgrade.cs" />
+    <Compile Include="Strategies\RatsUpgradeBazaar.cs" />
+    <Compile Include="Strategies\RatsWanderingMinstrelWatchtowerArmory.cs" />
+    <Compile Include="Strategies\Rebuild.cs" />
+    <Compile Include="Strategies\RebuildAdvanced.cs" />
+    <Compile Include="Strategies\RebuildDuke.cs" />
+    <Compile Include="Strategies\RemakeSoothsayer.cs" />
+    <Compile Include="Strategies\TaxMan.cs" />
+    <Compile Include="Strategies\TreasureMap.cs" />
+    <Compile Include="Strategies\TreasureMapDoctor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj">
+      <Project>{6816a653-b44f-4614-b228-8c70d6747ca0}</Project>
+      <Name>Dominion.Strategy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominion\Dominion.csproj">
+      <Project>{d4a4d420-486e-489d-9db6-7fcba7d63359}</Project>
+      <Name>Dominion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

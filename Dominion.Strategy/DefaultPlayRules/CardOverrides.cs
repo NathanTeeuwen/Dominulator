@@ -8,6 +8,7 @@ namespace Dominion.Strategy.DefaultPlayRules
 {    
     static class DefaultResponses
     {
+
         public static MapOfCards<IPlayerAction> GetCardResponses(PlayerAction playerAction)
         {
             var result = new MapOfCards<IPlayerAction>();
@@ -19,6 +20,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Catacombs] = new Catacombs(playerAction);
             result[Dominion.Cards.Chancellor] = new Chancellor(playerAction);
             result[Dominion.Cards.Count] = new Count(playerAction);
+            result[Dominion.Cards.Doctor] = new Doctor(playerAction);
             result[Dominion.Cards.Golem] = new Golem(playerAction);
             result[Dominion.Cards.HorseTraders] = new HorseTraders(playerAction);
             result[Dominion.Cards.IllGottenGains] = new IllGottenGainsAlwaysGainCopper(playerAction);

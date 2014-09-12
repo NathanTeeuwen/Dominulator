@@ -72,10 +72,12 @@ namespace Dominion
         public int AvailableBuys { get { return this.turnCounters.AvailableBuys; } }        
         public CollectionCards Hand { get { return this.hand; } }
         public BagOfCards CardsBeingRevealed { get { return this.cardsBeingRevealed; } }
+        public BagOfCards CardsBeingLookedAt { get { return this.cardsBeingRevealed; } }
         public BagOfCards Discard { get { return this.discard; } }
         public CollectionCards CardsInDeck { get { return this.deck; } }
         public int TurnNumber { get { return this.numberOfTurnsPlayed; } }
         public Card CurrentCardBeingPlayed { get { return this.cardsBeingPlayed.TopCard(); } }
+        public Card CurrentCardBeingBought { get { return this.cardBeingBought; } }
         public Card CurrentCardBeingCleanedUp { get { return this.cardBeingCleanedUp; } }
         public CollectionCards CardsBeingPlayed { get { return this.cardsPlayed; } }
         public int PlayerIndex { get { return this.playerIndex; } }
@@ -95,6 +97,7 @@ namespace Dominion
         internal BagOfCards cardsInPlay;
         internal BagOfCards cardsInPlayAtBeginningOfCleanupPhase;
         internal Card cardBeingCleanedUp = null;
+        internal Card cardBeingBought = null;
 
         // persistent Counters
         internal int victoryTokenCount;

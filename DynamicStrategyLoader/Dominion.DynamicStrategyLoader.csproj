@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56774744-F31A-4F22-A6FF-89C7488D243C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dominion.DynamicStrategyLoader</RootNamespace>
+    <AssemblyName>Dominion.DynamicStrategyLoader</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DynamicStrategyLoader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\AmbassadorCaravanApprenticeMerchantGuild.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\AmbassadorCaravanLaboratory.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\ArmoryConspiratorForagerGreatHall.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoney.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneyBridge.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneyCartographer.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneyColony.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneyCouncilroomEarlyProvince.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneyCultist.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneyDelayed.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneyDoubleJack.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneyDoubleJackSlog.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneyDoubleSmithy.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneyDoubleWitch.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneyMoneylender.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneySimple.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneySingleJack.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneySingleSmithy.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneySingleWitch.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneySmithyEarlyProvince.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneyThief.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\BigMoneyWharf.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\ButcherPlazaWatchtower.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\CacheCountingHouseBridgeTunnel.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\CaravanBridgeDukeCartographer.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\ChapelCanTripKingsCourtMasquerade.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\ColonyFamiliarMine.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\DeathCartDoubleWarehouse.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\DevelopFeastMysticTunnel.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\Doctor.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\DoubleWarehouse.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\DoubleWarehouse2.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\DuchyDukeWarehouseEmbassy.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\EmbassyTunnelSpiceMerchantPlaza.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\FamiliarPotionSilverOpenning.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\FamiliarSilverSilverOpenning.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\FeodumDevelop.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\FishingVillageChapelPoorHouse.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\FishingVillageChapelPoorHouseTalisman.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\FishingVillageJack.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\FishingVillageJackLookout.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\FishingVillageLibraryCountPoorHouse.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\GardensBeggarIronworks.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\GovernorJunkDealer.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\GovernorMarketsquare.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\Harem.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\HermitMarketSquare.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\HorseTraderSoothsayerMinionGreatHall.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\Illgottengains.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\IllgottengainsMoneylender.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\IronworksGreathallRemodelHuntingGrounds.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\KingsCourtRabbleExpandFarmingVillage.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\LaboratorySpiceMerchantWarehouse.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\Lookout.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\LookoutHaremMiningVillageMysticScout.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\LookoutSalvagerLibraryHighwayFestival.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\LookoutTraderNobles.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\MineHoard.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\MintBaker.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\MountebankGovernorMaurader.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\MountebankHoard.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\MountebankMonumentHamletVineyard.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\NomadCampLaboratorySpiceMerchantWarehouse.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\ProcessessionGraverobber.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\RatsUpgrade.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\RatsUpgradeBazaar.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\RatsWanderingMinstrelWatchtowerArmory.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\Rebuild.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\RebuildAdvanced.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\RebuildDuke.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\RemakeSoothsayer.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\TaxMan.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\TreasureMap.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\TreasureMapDoctor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BuiltInStrategies\Dominion.BuiltInStrategies.csproj">
+      <Project>{ecffdbdf-f966-4076-98f9-9366dab6d7cd}</Project>
+      <Name>Dominion.BuiltInStrategies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj">
+      <Project>{6816a653-b44f-4614-b228-8c70d6747ca0}</Project>
+      <Name>Dominion.Strategy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominion\Dominion.csproj">
+      <Project>{d4a4d420-486e-489d-9db6-7fcba7d63359}</Project>
+      <Name>Dominion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resources\Resources.csproj">
+      <Project>{197a9851-301c-4df5-9799-c34bfb7b6b34}</Project>
+      <Name>Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -50,6 +50,7 @@ namespace Dominion
         bool ShouldGainCard(GameState gameState, Card card);
         PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice);
         DeckPlacement ChooseBetweenTrashAndTopDeck(GameState gameState, Card card);
+        DeckPlacement ChooseBetweenTrashTopDeckDiscard(GameState gameState, Card card);
         string PlayerName { get; }        
         int GetCoinAmountToOverpayForCard(GameState gameState, Card card);
         int GetCoinAmountToSpendInBuyPhase(GameState gameState);
@@ -451,6 +452,15 @@ namespace Dominion
             var saved = gameState.self;
             gameState.self = this.self;
             var result = this.playerAction.ChooseBetweenTrashAndTopDeck(gameState, card);
+            gameState.self = saved;
+            return result;
+        }
+
+        public DeckPlacement ChooseBetweenTrashTopDeckDiscard(GameState gameState, Card card)
+        {
+            var saved = gameState.self;
+            gameState.self = this.self;
+            var result = this.playerAction.ChooseBetweenTrashTopDeckDiscard(gameState, card);
             gameState.self = saved;
             return result;
         }

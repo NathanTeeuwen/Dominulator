@@ -55,6 +55,14 @@ namespace Dominion
             } 
         }
 
+        public Card CurrentCardBeingBought
+        {
+            get
+            {
+                return this.players.CurrentPlayer.CurrentCardBeingBought;
+            }
+        }
+
         // special piles not in the supply - not available in every game
         private PileOfCards blackMarketDeck = null;
 
@@ -330,6 +338,8 @@ namespace Dominion
                 {
                     return;
                 }
+
+                currentPlayer.cardBeingBought = boughtCard;
                 
                 int embargoCount = this.pileEmbargoTokenCount[boughtCard];
                 for (int i = 0; i < embargoCount; ++i)
@@ -355,6 +365,8 @@ namespace Dominion
                         gameLog.PopScope();
                     }
                 }
+
+                currentPlayer.cardBeingBought = null;
             }
         }
 
