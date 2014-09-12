@@ -77,6 +77,7 @@
     <Compile Include="Strategies\EmbassyTunnelSpiceMerchantPlaza.cs" />
     <Compile Include="Strategies\FamiliarPotionSilverOpenning.cs" />
     <Compile Include="Strategies\FamiliarSilverSilverOpenning.cs" />
+    <Compile Include="Strategies\HermitFeodum.cs" />
     <Compile Include="Strategies\FeodumDevelop.cs" />
     <Compile Include="Strategies\FishingVillageChapelPoorHouse.cs" />
     <Compile Include="Strategies\FishingVillageChapelPoorHouseTalisman.cs" />

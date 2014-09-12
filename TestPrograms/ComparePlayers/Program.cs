@@ -16,8 +16,8 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.MintBaker.PlayerCustom(playerName: "Start4");
-                var player2 = Strategies.MintBaker.PlayerCustom(playerName: "Start5");
+                var player1 = Strategies.BigMoney.Player();
+                var player2 = Strategies.HermitFeodum.Player();
 
                 var builder = new GameConfigBuilder();
 

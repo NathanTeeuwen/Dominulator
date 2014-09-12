@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DynamicStrategyLoader.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\HermitFeodum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\AmbassadorCaravanApprenticeMerchantGuild.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\AmbassadorCaravanLaboratory.cs" />
