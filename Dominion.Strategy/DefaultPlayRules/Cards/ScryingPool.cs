@@ -4,13 +4,11 @@ using Dominion.Strategy;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class ScryingPool
-      : UnimplementedPlayerAction
+      : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public ScryingPool(PlayerAction playerAction)
+        public ScryingPool(DefaultPlayerAction playerAction)
+            : base(playerAction)
         {
-            this.playerAction = playerAction;
         }
 
         public override bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card)

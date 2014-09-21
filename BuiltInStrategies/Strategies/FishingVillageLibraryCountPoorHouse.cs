@@ -20,7 +20,7 @@ namespace Strategies
         {
             public MyPlayerAction()
                 : base( "FishingVillageLibraryCountPoorHouse",                            
-                        purchaseOrder: PurchaseOrder(TrashOrder()),                                                    
+                        purchaseOrder: PurchaseOrder(TrashOrder()),
                         trashOrder: TrashOrder(),
                         discardOrder: DiscardOrder())
             {

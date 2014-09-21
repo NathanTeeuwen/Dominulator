@@ -6,19 +6,12 @@ using System.Linq;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Rebuild
-        : UnimplementedPlayerAction
+        : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public Rebuild(PlayerAction playerAction)
+        public Rebuild(DefaultPlayerAction playerAction)
+            : base(playerAction)
         {
-            this.playerAction = playerAction;
-        }
-
-        public override Card GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
-        {
-            return playerAction.DefaultGetCardFromSupplyToGain(gameState, acceptableCard, isOptional);
-        }
+        }       
 
         public override Card NameACard(GameState gameState)
         {

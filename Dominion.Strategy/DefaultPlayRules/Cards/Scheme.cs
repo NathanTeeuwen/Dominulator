@@ -4,13 +4,11 @@ using Dominion.Strategy;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Scheme
-      : UnimplementedPlayerAction
+      : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public Scheme(PlayerAction playerAction)
+        public Scheme(DefaultPlayerAction playerAction)
+            : base(playerAction)
         {
-            this.playerAction = playerAction;
         }
         
         public override Card GetCardFromPlayToTopDeckDuringCleanup(GameState gameState, CardPredicate acceptableCard, bool isOptional)

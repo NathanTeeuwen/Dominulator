@@ -4,13 +4,11 @@ using Dominion.Strategy;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Doctor
-      : UnimplementedPlayerAction
+      : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public Doctor(PlayerAction playerAction)
+        public Doctor(DefaultPlayerAction playerAction)
+            : base(playerAction)
         {
-            this.playerAction = playerAction;
         }
 
         public override int GetCoinAmountToOverpayForCard(GameState gameState, Card card)
@@ -25,7 +23,7 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
 
         public override DeckPlacement ChooseBetweenTrashTopDeckDiscard(GameState gameState, Card card)
         {
-            if (gameState.Self.CurrentCardBeingBought != Dominion.Cards.Doctor)
+            if (gameState.CurrentContext.CurrentCard != Dominion.Cards.Doctor)
                 throw new System.Exception();
 
             var cardToDecide = gameState.Self.CardsBeingLookedAt.SomeCard();
@@ -43,7 +41,7 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
         {
             return gameState.Self.CardsBeingRevealed.SomeCard();
         }
-
+     
         static Card GetCardTypeToTrash(GameState gameState)
         {
             PlayerState self = gameState.Self;

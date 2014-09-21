@@ -59,8 +59,8 @@ namespace Dominion.Strategy
 
         public static bool CardBeingPlayedIs(Card card, GameState gameState)
         {
-            var cardBeingPlayed = gameState.Self.CurrentCardBeingPlayed;
-            return cardBeingPlayed != null && cardBeingPlayed == card;
+            var cardBeingPlayed = gameState.CurrentContext.CurrentCard;
+            return cardBeingPlayed == card;
         }
 
         public static int CostOfCard(Card card, GameState gameState)
@@ -135,7 +135,7 @@ namespace Dominion.Strategy
             return matchingCards.GetPreferredCard(gameState, c => c == card) != null;
         }
 
-        public static bool HasCardToTrashInHand(GameState gameState, PlayerAction playerAction)
+        public static bool HasCardToTrashInHand(GameState gameState, DefaultPlayerAction playerAction)
         {
             return HasCardFromInHand(playerAction.trashOrder, gameState);
         }

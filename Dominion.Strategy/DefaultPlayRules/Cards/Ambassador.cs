@@ -6,13 +6,12 @@ using System.Linq;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     public class AmbassadorAlwaysReturnBestTrash
-      : UnimplementedPlayerAction
+      : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
 
-        public AmbassadorAlwaysReturnBestTrash(PlayerAction playerAction)
-        {
-            this.playerAction = playerAction;
+        public AmbassadorAlwaysReturnBestTrash(DefaultPlayerAction playerAction)
+            : base(playerAction)
+        {            
         }
 
         public override Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
@@ -28,13 +27,11 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
     }
 
     public class AmbassadorReturnIfNotDisruptPurchase
-      : UnimplementedPlayerAction
+      : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public AmbassadorReturnIfNotDisruptPurchase(PlayerAction playerAction)
-        {
-            this.playerAction = playerAction;
+        public AmbassadorReturnIfNotDisruptPurchase(DefaultPlayerAction playerAction)
+            : base(playerAction)
+        {            
         }
 
         public override Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
@@ -82,13 +79,12 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
     }
 
     public class AmbassadorMaxReturn
-      : UnimplementedPlayerAction
+      : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public AmbassadorMaxReturn(PlayerAction playerAction)
-        {
-            this.playerAction = playerAction;
+        
+        public AmbassadorMaxReturn(DefaultPlayerAction playerAction)
+            : base(playerAction)
+        {            
         }
 
         public override Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)

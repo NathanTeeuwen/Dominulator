@@ -6,13 +6,11 @@ using System.Linq;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {   
     internal class BandOfMisfits
-       : UnimplementedPlayerAction
+       : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public BandOfMisfits(PlayerAction playerAction)
+        public BandOfMisfits(DefaultPlayerAction playerAction)
+            : base(playerAction)
         {
-            this.playerAction = playerAction;
         }
 
         public override Card GetCardFromSupplyToPlay(GameState gameState, CardPredicate acceptableCard)

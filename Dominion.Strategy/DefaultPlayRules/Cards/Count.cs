@@ -6,13 +6,11 @@ using System.Linq;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     public class Count
-       : UnimplementedPlayerAction
+       : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public Count(PlayerAction playerAction)
+        public Count(DefaultPlayerAction playerAction)
+            : base(playerAction)
         {
-            this.playerAction = playerAction;
         }
 
         public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
@@ -61,14 +59,14 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
             return gameState.Self.Hand.FirstOrDefault();
         }
 
-        public static bool WillPlayCountCardForTrash(PlayerAction playerAction, GameState gameState)
+        public static bool WillPlayCountCardForTrash(DefaultPlayerAction playerAction, GameState gameState)
         {
             return DoesHandHaveCombinationToTrash(playerAction, gameState) &&
                    Strategy.HasCardFromInHand(playerAction.trashOrder, gameState) &&
                    !playerAction.IsGainingCard(Dominion.Cards.Province, gameState);
         }
 
-        private static bool PreferMoneyOverDuchy(PlayerAction playerAction, GameState gameState)
+        private static bool PreferMoneyOverDuchy(DefaultPlayerAction playerAction, GameState gameState)
         {
             if (!gameState.GetPile(Dominion.Cards.Duchy).Any)
                 return true;
@@ -84,13 +82,8 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
 
             return false;
         }
-
-        public override Card GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, bool isOptional)
-        {
-            return this.playerAction.DefaultGetCardFromHandToDiscard(gameState, acceptableCard, isOptional);
-        }
-
-        private static bool DoesHandHaveCombinationToTrash(PlayerAction playerAction, GameState gameState)
+       
+        private static bool DoesHandHaveCombinationToTrash(DefaultPlayerAction playerAction, GameState gameState)
         {
             int countToTrash = Strategy.CountInHandFrom(playerAction.trashOrder, gameState);
             int countInHand = gameState.Self.Hand.Count;

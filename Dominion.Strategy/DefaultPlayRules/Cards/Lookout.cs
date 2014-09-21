@@ -7,7 +7,7 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Lookout
     {
-        public static bool ShouldPlay(GameState gameState, PlayerAction playerAction)
+        public static bool ShouldPlay(GameState gameState, DefaultPlayerAction playerAction)
         {
             int cardCountToTrash = Strategy.CountInDeck(Dominion.Cards.Copper, gameState);
 

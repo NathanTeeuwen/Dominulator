@@ -39,9 +39,14 @@ namespace Strategies
 
             public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
             {
-                if (gameState.Self.CardsBeingRevealed.HasCard(Cards.Silver))
-                    return PlayerActionChoice.Discard;
-                return PlayerActionChoice.Trash;
+                if (gameState.CurrentContext.CurrentCard == Cards.Doctor)
+                {
+                    if (gameState.Self.CardsBeingRevealed.HasCard(Cards.Silver))
+                        return PlayerActionChoice.Discard;
+                    return PlayerActionChoice.Trash;
+                }
+                else
+                    return base.ChooseBetween(gameState, acceptableChoice);
             }
 
             public override Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState)

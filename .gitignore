@@ -3,9 +3,9 @@
 *.ncb
 *.user
 *.aps
-bin
-obj
-Release
-Debug
-RECYCLER
-TestProgram/Results
+**/bin
+**/obj
+**/Release
+**/Debug
+**/RECYCLER
+**/Results

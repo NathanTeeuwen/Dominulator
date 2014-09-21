@@ -6,13 +6,11 @@ using System.Linq;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class IllGottenGainsAlwaysGainCopper
-        : UnimplementedPlayerAction
+        : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public IllGottenGainsAlwaysGainCopper(PlayerAction playerAction)
+        public IllGottenGainsAlwaysGainCopper(DefaultPlayerAction playerAction)
+            : base(playerAction)
         {
-            this.playerAction = playerAction;
         }
 
         public override bool ShouldGainCard(GameState gameState, Card card)
@@ -22,13 +20,11 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
     }
 
     internal class IllGottenGains
-        : UnimplementedPlayerAction
+        : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public IllGottenGains(PlayerAction playerAction)
+        public IllGottenGains(DefaultPlayerAction playerAction)
+            : base(playerAction)
         {
-            this.playerAction = playerAction;
         }
 
         public override bool ShouldGainCard(GameState gameState, Card card)
@@ -68,7 +64,7 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
             if (cardType == null)
                 return false;
 
-            int coppersToGain = PlayerAction.CostOfCard(cardType, gameState) - minValue;
+            int coppersToGain = DefaultPlayerAction.CostOfCard(cardType, gameState) - minValue;
 
             return (coppersToGain > 0);
         }

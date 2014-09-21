@@ -95,6 +95,8 @@
     <Compile Include="GameLogs\DebugGameLog.cs" />
     <Compile Include="GameLogs\GainSequenceGameLog.cs" />
     <Compile Include="GameLogs\GameLogMultiplexer.cs" />
+    <Compile Include="DerivedPlayerAction.cs" />
+    <Compile Include="PlayerActionWithSelf.cs" />
     <Compile Include="SimpleDefinitions\CardCountPair.cs" />
     <Compile Include="SimpleDefinitions\CardPlacementPair.cs" />
     <Compile Include="SimpleDefinitions\CardRelativeCost.cs" />

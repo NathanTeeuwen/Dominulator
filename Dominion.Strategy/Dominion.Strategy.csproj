@@ -55,6 +55,8 @@
     <Compile Include="DefaultPlayRules\Cards\Chancellor.cs" />
     <Compile Include="DefaultPlayRules\Cards\Count.cs" />
     <Compile Include="DefaultPlayRules\Cards\Golem.cs" />
+    <Compile Include="DefaultPlayRules\Cards\SpiceMerchant.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Governor.cs" />
     <Compile Include="DefaultPlayRules\Cards\HorseTraders.cs" />
     <Compile Include="DefaultPlayRules\Cards\IllGottenGains.cs" />
     <Compile Include="DefaultPlayRules\Cards\Library.cs" />
@@ -80,6 +82,7 @@
     <Compile Include="Description\CountSource.cs" />
     <Compile Include="Description\MatchDescription.cs" />
     <Compile Include="CardPicker\ICardPicker.cs" />
+    <Compile Include="DefaultPlayerAction.cs" />
     <Compile Include="PlayerAction.cs" />
     <Compile Include="PlayerActionFromCardResponses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

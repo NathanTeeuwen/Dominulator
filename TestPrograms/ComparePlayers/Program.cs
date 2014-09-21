@@ -16,9 +16,10 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.BigMoney.Player();
-                var player2 = Strategies.HermitFeodum.Player();
-
+                var player1 = Strategies.GovernorSpiceMerchantHorseTraderJunkDealer.PlayerCustom(true);
+                var player2 = Strategies.GovernorSpiceMerchantHorseTraderJunkDealer.PlayerCustom(false);
+                //var player2 = Strategies.BigMoney.Player();
+               
                 var builder = new GameConfigBuilder();
 
                 PlayerAction.SetKingdomCards(builder, player1, player2);
@@ -28,8 +29,8 @@ namespace Program
                     builder.ToGameConfig(),
                     firstPlayerAdvantage:false,
                     createHtmlReport: true, 
-                    numberOfGames: 10000, 
-                    shouldParallel: true);
+                    numberOfGames: 1000, 
+                    shouldParallel: false);
             }         
         }                
     }            

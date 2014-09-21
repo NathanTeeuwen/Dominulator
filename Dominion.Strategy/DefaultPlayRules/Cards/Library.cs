@@ -6,13 +6,11 @@ using System.Linq;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Library
-        : UnimplementedPlayerAction
+        : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public Library(PlayerAction playerAction)
+        public Library(DefaultPlayerAction playerAction)
+            : base(playerAction)
         {
-            this.playerAction = playerAction;
         }
 
         public override bool ShouldPutCardInHand(GameState gameState, Card card)

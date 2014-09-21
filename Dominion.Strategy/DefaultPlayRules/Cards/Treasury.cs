@@ -4,13 +4,11 @@ using Dominion.Strategy;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Treasury
-      : UnimplementedPlayerAction
+      : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public Treasury(PlayerAction playerAction)
-        {
-            this.playerAction = playerAction;
+        public Treasury(DefaultPlayerAction playerAction)
+            : base(playerAction)
+        {            
         }
 
         public override bool ShouldPutCardOnTopOfDeck(Card card, GameState gameState)

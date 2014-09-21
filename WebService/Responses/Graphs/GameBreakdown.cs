@@ -29,7 +29,7 @@ namespace Program.WebService
 
             for (int index = 0; index < comparisonResults.winnerCount.Length; ++index)
             {
-                data.Add(new object[] { comparisonResults.comparison.playerActions[index].name, comparisonResults.PlayerWinPercent(index) });
+                data.Add(new object[] { comparisonResults.comparison.playerActions[index].PlayerName, comparisonResults.PlayerWinPercent(index) });
             }
             if (comparisonResults.tieCount > 0)
             {

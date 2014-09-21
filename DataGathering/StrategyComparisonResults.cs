@@ -39,7 +39,7 @@ namespace Dominion.Data
         {            
             for (int index = 0; index < winnerCount.Length; ++index)
             {
-                textWriter.WriteLine("{1}% win for {0}", comparison.playerActions[index].name, PlayerWinPercent(index));
+                textWriter.WriteLine("{1}% win for {0}", comparison.playerActions[index].PlayerName, PlayerWinPercent(index));
             }
             if (tieCount > 0)
             {

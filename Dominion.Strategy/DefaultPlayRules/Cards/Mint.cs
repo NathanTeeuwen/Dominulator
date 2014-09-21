@@ -6,13 +6,11 @@ using System.Linq;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Mint
-      : UnimplementedPlayerAction
+      : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public Mint(PlayerAction playerAction)
+        public Mint(DefaultPlayerAction playerAction)
+            : base(playerAction)
         {
-            this.playerAction = playerAction;
         }
 
         public override Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)

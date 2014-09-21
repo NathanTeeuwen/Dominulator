@@ -75,10 +75,7 @@ namespace Dominion
         public BagOfCards CardsBeingLookedAt { get { return this.cardsBeingRevealed; } }
         public BagOfCards Discard { get { return this.discard; } }
         public CollectionCards CardsInDeck { get { return this.deck; } }
-        public int TurnNumber { get { return this.numberOfTurnsPlayed; } }
-        public Card CurrentCardBeingPlayed { get { return this.cardsBeingPlayed.TopCard(); } }
-        public Card CurrentCardBeingBought { get { return this.cardBeingBought; } }
-        public Card CurrentCardBeingCleanedUp { get { return this.cardBeingCleanedUp; } }
+        public int TurnNumber { get { return this.numberOfTurnsPlayed; } }        
         public CollectionCards CardsBeingPlayed { get { return this.cardsPlayed; } }
         public int PlayerIndex { get { return this.playerIndex; } }
         public SetOfCards CardsBoughtThisTurn { get { return this.turnCounters.cardsBoughtThisTurn; } }
@@ -96,8 +93,6 @@ namespace Dominion
         internal BagOfCards allOwnedCards;
         internal BagOfCards cardsInPlay;
         internal BagOfCards cardsInPlayAtBeginningOfCleanupPhase;
-        internal Card cardBeingCleanedUp = null;
-        internal Card cardBeingBought = null;
 
         // persistent Counters
         internal int victoryTokenCount;
@@ -387,9 +382,10 @@ namespace Dominion
                 throw new Exception("Can't play a card that isn't a action");
             }
             
-            this.cardsBeingPlayed.AddCardToTop(currentCard);
+            this.cardsBeingPlayed.AddCardToTop(currentCard);            
 
             Card cardToPlayAs = currentCard.CardToMimick(this, gameState);
+            gameState.cardContextStack.PushCardContext(this, cardToPlayAs, CardContextReason.CardBeingPlayed);
 
             if (cardToPlayAs != null)
             {
@@ -420,6 +416,7 @@ namespace Dominion
                 }
             }
 
+            gameState.cardContextStack.Pop();
             CardHasBeenPlayed(cardToPlayAs);
         }
 
@@ -427,12 +424,15 @@ namespace Dominion
 
         internal void AttackOtherPlayers(GameState gameState, AttackAction action)
         {
+            Card currentAttackCard = gameState.cardContextStack.CurrentCard;
             foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
             {
+                gameState.cardContextStack.PushCardContext(otherPlayer, currentAttackCard, CardContextReason.CardAttacking);
                 if (otherPlayer.IsAffectedByAttacks(gameState))
                 {
                     action(gameState.players.CurrentPlayer, otherPlayer, gameState);
                 }
+                gameState.cardContextStack.Pop();
             }
         }
 
@@ -456,7 +456,9 @@ namespace Dominion
                     {                        
                         this.actionsToExecuteAtBeginningOfNextTurn.Add( delegate(PlayerState currentPlayer, GameState gameState)
                         {
+                            gameState.cardContextStack.PushCardContext(this, cardPlayedAs, CardContextReason.CardFinishingDuration);
                             cardPlayedAs.DoSpecializedDurationActionAtBeginningOfTurn(currentPlayer, gameState);
+                            gameState.cardContextStack.Pop();
                         });
                     }
                 }                
@@ -473,6 +475,7 @@ namespace Dominion
             this.gameLog.PlayedCard(this, currentCard);
             this.gameLog.PushScope();
             this.cardsBeingPlayed.AddCardToTop(currentCard);
+            gameState.cardContextStack.PushCardContext(this, currentCard, CardContextReason.CardBeingPlayed);
 
             this.AddBuys(currentCard.plusBuy);
             this.AddCoins(currentCard.plusCoin);
@@ -484,7 +487,7 @@ namespace Dominion
             currentCard.DoSpecializedAction(gameState.players.CurrentPlayer, gameState);
 
             CardHasBeenPlayed(currentCard);
-
+            gameState.cardContextStack.Pop();
             this.gameLog.PopScope();
         }        
 
@@ -643,6 +646,7 @@ namespace Dominion
         {            
             this.gameLog.PlayerTrashedCard(this, card);            
             this.gameLog.PushScope();
+            gameState.cardContextStack.PushCardContext(this, card, CardContextReason.CardBeingTrashed);
 
             if (card.DoSpecializedTrash(this, gameState))
             {
@@ -658,13 +662,15 @@ namespace Dominion
                     stateHasChanged = false;
                     foreach (Card cardInHand in this.hand)
                     {
+                        gameState.cardContextStack.PushCardContext(this, cardInHand, CardContextReason.CardReacting);
                         stateHasChanged = cardInHand.DoSpecializedActionOnTrashWhileInHand(this, gameState, cardInHand);
+                        gameState.cardContextStack.Pop();
                         if (stateHasChanged)
                             break;
                     }
                 }
-            }            
-            
+            }
+            gameState.cardContextStack.Pop();
             this.gameLog.PopScope();            
         }
 
@@ -1549,10 +1555,12 @@ namespace Dominion
             {
                 this.gameLog.PlayerBoughtCard(this, card);
                 this.turnCounters.cardsBoughtThisTurn.Add(card);
+                gameState.cardContextStack.PushCardContext(this, card, CardContextReason.CardBeingBought);
             }
             else
             {
                 this.gameLog.PlayerGainedCard(this, card);
+                gameState.cardContextStack.PushCardContext(this, card, CardContextReason.CardBeingGained);
             }
 
             // should only include cards gained on the players turned, not cards gained as a side effect on some other players turn
@@ -1573,9 +1581,10 @@ namespace Dominion
             {
                 foreach (Card cardInHand in this.Hand)
                 {
+                    gameState.cardContextStack.PushCardContext(this, cardInHand, CardContextReason.CardReacting);                    
                     DeckPlacement preferredPlacement = (gainReason == GainReason.Buy) ?
                         cardInHand.DoSpecializedActionOnBuyWhileInHand(this, gameState, card) : DeckPlacement.Default;
-
+                  
                     if (!wasCardMoved && preferredPlacement == DeckPlacement.Default)
                     {
                         preferredPlacement = cardInHand.DoSpecializedActionOnGainWhileInHand(this, gameState, card);
@@ -1586,24 +1595,27 @@ namespace Dominion
                         defaultPlacement = preferredPlacement;
                         wasCardMoved = true;
                     }
-                }
+                    gameState.cardContextStack.Pop();
+                }                
             }
 
             if (this.ownsCardWithSpecializedActionOnGainWhileInPlay)
             {
                 foreach (Card cardInPlay in this.CardsInPlay)
                 {
+                    gameState.cardContextStack.PushCardContext(this, cardInPlay, CardContextReason.CardReacting);
                     DeckPlacement preferredPlacement = cardInPlay.DoSpecializedActionOnGainWhileInPlay(this, gameState, card);
                     if (!wasCardMoved && preferredPlacement != DeckPlacement.Default)
                     {
                         defaultPlacement = preferredPlacement;
                         wasCardMoved = true;
                     }
+                    gameState.cardContextStack.Pop();
                 }
             }
 
             // buys are also gains.
-            {
+            {                
                 DeckPlacement preferredPlacement = card.DoSpecializedWhenGain(this, gameState);
                 if (!wasCardMoved && preferredPlacement != DeckPlacement.Default)
                 {
@@ -1614,10 +1626,30 @@ namespace Dominion
 
             if (gainReason == GainReason.Buy)
             {
-                card.DoSpecializedWhenBuy(this, gameState);            
+                if (card.canOverpay)
+                {
+                    gameState.CurrentContext.PushCardContext(this, card, CardContextReason.CardReacting);
+                    this.RequestPlayerOverpayForCard(card, gameState);
+                    gameState.CurrentContext.Pop();
+                }
+
+                card.DoSpecializedWhenBuy(this, gameState);
+
+                if (this.ownsCardWithSpecializedActionOnBuyWhileInPlay)
+                {
+                    foreach (Card cardInPlay in this.CardsInPlay)
+                    {
+                        gameState.cardContextStack.PushCardContext(this, card, CardContextReason.CardReacting);
+                        gameLog.PushScope();
+                        cardInPlay.DoSpecializedActionOnBuyWhileInPlay(this, gameState, card);
+                        gameLog.PopScope();
+                        gameState.cardContextStack.Pop();
+                    }
+                }                            
             }            
             
             this.PlaceCardFromPlacement(new CardPlacementPair(card, defaultPlacement), gameState, originalLocation);
+            gameState.cardContextStack.Pop();
             this.gameLog.PopScope();
 
             gameState.hasCurrentPlayerGainedCard |= true;
@@ -1751,6 +1783,7 @@ namespace Dominion
             {
                 this.gameLog.PlayerDiscardCard(this, card);
                 this.gameLog.PushScope();
+                gameState.cardContextStack.PushCardContext(this, card, CardContextReason.CardBeingDiscarded);
                 if (gameState.players.CurrentPlayer.PlayPhase != PlayPhase.Cleanup)
                 {                    
                     card.DoSpecializedDiscardNonCleanup(this, gameState);
@@ -1760,6 +1793,7 @@ namespace Dominion
                 {
                     card.DoSpecializedDiscardFromPlay(this, gameState);
                 }
+                gameState.cardContextStack.Pop();
                 this.gameLog.PopScope();
             }
 
@@ -1906,9 +1940,11 @@ namespace Dominion
                 didCardAffectAnything = false;
                 foreach (Card reactionCard in this.hand.AllTypes)
                 {
+                    gameState.cardContextStack.PushCardContext(this, reactionCard, CardContextReason.CardReacting);
                     bool didthisCardCancelAttack;
                     didCardAffectAnything = reactionCard.DoReactionToAttackWhileInHand(this, gameState, out didthisCardCancelAttack);
                     doesCancelAttack |= didthisCardCancelAttack;
+                    gameState.cardContextStack.Pop();
 
                     if (didCardAffectAnything)
                         break;
@@ -1917,10 +1953,12 @@ namespace Dominion
 
             foreach (Card durationCard in this.CardsInPlay)
             {
+                gameState.cardContextStack.PushCardContext(this, durationCard, CardContextReason.CardReacting);
                 if (durationCard.DoReactionToAttackWhileInPlayAcrossTurns(this, gameState))
-                {
+                {                    
                     doesCancelAttack = true;
                 }
+                gameState.cardContextStack.Pop();
             }
 
             return !doesCancelAttack;

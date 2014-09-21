@@ -6,13 +6,11 @@ using System.Linq;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Chancellor
-       : UnimplementedPlayerAction
+       : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public Chancellor(PlayerAction playerAction)
+        public Chancellor(DefaultPlayerAction playerAction)
+            : base(playerAction)
         {
-            this.playerAction = playerAction;
         }
 
         public override bool ShouldPutDeckInDiscard(GameState gameState)

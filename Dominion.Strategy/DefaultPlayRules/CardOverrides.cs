@@ -9,7 +9,7 @@ namespace Dominion.Strategy.DefaultPlayRules
     static class DefaultResponses
     {
 
-        public static MapOfCards<IPlayerAction> GetCardResponses(PlayerAction playerAction)
+        public static MapOfCards<IPlayerAction> GetCardResponses(DefaultPlayerAction playerAction)
         {
             var result = new MapOfCards<IPlayerAction>();
 
@@ -22,6 +22,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Count] = new Count(playerAction);
             result[Dominion.Cards.Doctor] = new Doctor(playerAction);
             result[Dominion.Cards.Golem] = new Golem(playerAction);
+            result[Dominion.Cards.Governor] = new Governor(playerAction);
             result[Dominion.Cards.HorseTraders] = new HorseTraders(playerAction);
             result[Dominion.Cards.IllGottenGains] = new IllGottenGainsAlwaysGainCopper(playerAction);
             result[Dominion.Cards.Library] = new Library(playerAction);
@@ -30,6 +31,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Mystic] = new MysticAndWishingWell(playerAction);
             result[Dominion.Cards.Nobles] = new Nobles(playerAction);
             result[Dominion.Cards.Rebuild] = new Rebuild(playerAction);
+            result[Dominion.Cards.SpiceMerchant] = new SpiceMerchant(playerAction);
             result[Dominion.Cards.ScryingPool] = new ScryingPool(playerAction);
             result[Dominion.Cards.Scheme] = new Scheme(playerAction);
             result[Dominion.Cards.Treasury] = new Treasury(playerAction);
@@ -41,7 +43,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             return result;
         }
 
-        public static MapOfCards<GameStatePlayerActionPredicate> GetCardShouldPlayDefaults(PlayerAction playerAction)
+        public static MapOfCards<GameStatePlayerActionPredicate> GetCardShouldPlayDefaults(DefaultPlayerAction playerAction)
         {
             var result = new MapOfCards<GameStatePlayerActionPredicate>();
 
@@ -49,6 +51,8 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Remodel] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Salvager] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Bishop] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.SpiceMerchant] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.JunkDealer] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Lookout] = Lookout.ShouldPlay;
 
             return result;

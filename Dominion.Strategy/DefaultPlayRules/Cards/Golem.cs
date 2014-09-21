@@ -6,13 +6,11 @@ using System.Linq;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Golem
-       : UnimplementedPlayerAction
+       : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public Golem(PlayerAction playerAction)
+        public Golem(DefaultPlayerAction playerAction)
+            : base(playerAction)
         {
-            this.playerAction = playerAction;
         }
 
         public override Card ChooseCardToPlayFirst(GameState gameState, Card card1, Card card2)

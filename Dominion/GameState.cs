@@ -4,6 +4,80 @@ using System.Linq;
 
 namespace Dominion
 {   
+    public enum CardContextReason
+    {
+        CardBeingPlayed,
+        CardBeingCleanedUp,
+        CardBeingBought,
+        CardBeingGained,
+        CardReacting,
+        CardAttacking,
+        CardFinishingDuration,
+        CardBeingTrashed,
+        CardBeingDiscarded,
+        NoCardContext
+    }
+
+    public struct CardContext
+    {
+        public PlayerState playerState;
+        public Card card;
+        public CardContextReason reason;
+
+        public CardContext(PlayerState playerState, Card card, CardContextReason reason)
+        {
+            this.playerState = playerState;
+            this.card = card;
+            this.reason = reason;
+        }
+    }
+
+    public class CardContextStack
+    {
+        private List<CardContext> cardContexts = new List<CardContext>();
+
+        public CardContextStack()
+        {
+            PushCardContext(null, null, CardContextReason.NoCardContext);
+        }
+
+        internal void PushCardContext(PlayerState playerState, Card card, CardContextReason reason)
+        {
+            this.cardContexts.Add(new CardContext(playerState, card, reason));
+        }
+
+        internal void Pop()
+        {
+            this.cardContexts.RemoveAt(this.cardContexts.Count - 1);
+            if (this.cardContexts.Count < 1)
+                throw new Exception();
+        }
+
+        public PlayerState CurrentPlayerState
+        {
+            get
+            {
+                return this.cardContexts[this.cardContexts.Count - 1].playerState;
+            }
+        }
+
+        public Card CurrentCard
+        {
+            get
+            {
+                return this.cardContexts[this.cardContexts.Count - 1].card;
+            }
+        }
+
+        public CardContextReason Reason
+        {
+            get
+            {
+                return this.cardContexts[this.cardContexts.Count - 1].reason;
+            }
+        }
+    }
+
     public class GameState
     {
         private readonly Game game;
@@ -11,14 +85,15 @@ namespace Dominion
         internal IGameLog gameLog { get { return this.game.GameLog; } }
         internal bool hasCurrentPlayerGainedCard;
         internal bool doesCurrentPlayerNeedOutpostTurn;
-        internal PlayerState self;        
+        internal PlayerState self;
+        internal CardContextStack cardContextStack;
         public PlayerCircle players;
         public PileOfCards[] supplyPiles;
         public PileOfCards[] nonSupplyPiles;
         private MapOfCardsForGameSubset<PileOfCards> mapCardToPile;
         public BagOfCards trash;
         private MapPileOfCards<bool> hasPileEverBeenGained;
-        private MapPileOfCards<int> pileEmbargoTokenCount;                     
+        private MapPileOfCards<int> pileEmbargoTokenCount;          
 
         public int InProgressGameIndex;
 
@@ -47,19 +122,11 @@ namespace Dominion
             }
         }
 
-        public Card CurrentCardBeingPlayed 
-        { 
-            get 
-            { 
-                return this.players.CurrentPlayer.CurrentCardBeingPlayed; 
-            } 
-        }
-
-        public Card CurrentCardBeingBought
+        public CardContextStack CurrentContext
         {
             get
             {
-                return this.players.CurrentPlayer.CurrentCardBeingBought;
+                return this.cardContextStack;
             }
         }
 
@@ -86,7 +153,9 @@ namespace Dominion
 
             this.hasPileEverBeenGained = new MapPileOfCards<bool>(this.supplyPiles);
             this.pileEmbargoTokenCount = new MapPileOfCards<int>(this.supplyPiles);
-            this.trash = new BagOfCards(this.CardGameSubset);            
+            this.trash = new BagOfCards(this.CardGameSubset);
+
+            this.cardContextStack = new CardContextStack();
 
             this.GainStartingCards(gameConfig);
 
@@ -338,9 +407,7 @@ namespace Dominion
                 {
                     return;
                 }
-
-                currentPlayer.cardBeingBought = boughtCard;
-                
+                            
                 int embargoCount = this.pileEmbargoTokenCount[boughtCard];
                 for (int i = 0; i < embargoCount; ++i)
                 {
@@ -349,24 +416,7 @@ namespace Dominion
 
                 currentPlayer.turnCounters.RemoveCoins(boughtCard.CurrentCoinCost(currentPlayer));
                 currentPlayer.turnCounters.RemovePotions(boughtCard.potionCost);
-                currentPlayer.turnCounters.RemoveBuy();
-
-                if (boughtCard.canOverpay)
-                {
-                    currentPlayer.RequestPlayerOverpayForCard(boughtCard, this);
-                }
-
-                if (currentPlayer.ownsCardWithSpecializedActionOnBuyWhileInPlay)
-                {
-                    foreach (Card cardInPlay in currentPlayer.CardsInPlay)
-                    {
-                        gameLog.PushScope();
-                        cardInPlay.DoSpecializedActionOnBuyWhileInPlay(currentPlayer, this, boughtCard);
-                        gameLog.PopScope();
-                    }
-                }
-
-                currentPlayer.cardBeingBought = null;
+                currentPlayer.turnCounters.RemoveBuy();                                
             }
         }
 
@@ -379,9 +429,9 @@ namespace Dominion
                 currentPlayer.cardsInPlayAtBeginningOfCleanupPhase.CopyFrom(currentPlayer.cardsPlayed);
                 foreach (Card cardInPlay in currentPlayer.cardsInPlayAtBeginningOfCleanupPhase)
                 {
-                    currentPlayer.cardBeingCleanedUp = cardInPlay;
+                    this.cardContextStack.PushCardContext(currentPlayer, cardInPlay, CardContextReason.CardBeingCleanedUp);
                     cardInPlay.DoSpecializedCleanupAtStartOfCleanup(currentPlayer, this);
-                    currentPlayer.cardBeingCleanedUp = null;
+                    this.cardContextStack.Pop();
                 }
                 currentPlayer.cardsInPlayAtBeginningOfCleanupPhase.Clear();
             }

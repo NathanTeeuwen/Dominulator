@@ -7,346 +7,432 @@ using System.Threading.Tasks;
 
 namespace Dominion.Strategy
 {
-    class PlayerActionFromCardResponses
-        : IPlayerAction
+    public class PlayerActionFromCardResponses
+        : DerivedPlayerAction
     {
         private MapOfCards<IPlayerAction> cardResponses;
 
-        public PlayerActionFromCardResponses(MapOfCards<IPlayerAction> cardResponses)
+        public PlayerActionFromCardResponses(DefaultPlayerAction playerAction)
+            : base(playerAction)
         {
-            this.cardResponses = cardResponses;
+            this.cardResponses = DefaultPlayRules.DefaultResponses.GetCardResponses(playerAction);            
         }
 
-        private IPlayerAction GetActionForCard(Card card)
+        private IPlayerAction GetActionForCurrentCardContext(GameState gameState)
         {
-            return this.cardResponses[card];
-        }
-
-        private IPlayerAction GetActionForCardBeingBought(GameState gameState)
-        {
-            if (gameState.CurrentCardBeingBought == null)
+            if (gameState.CurrentContext.CurrentCard == null)
                 return null;
 
-            return this.cardResponses[gameState.CurrentCardBeingBought];
+            return this.cardResponses[gameState.CurrentContext.CurrentCard];
+        }           
+
+        public override int GetCountToReturnToSupply(Card card, GameState gameState)
+        {
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCountToReturnToSupply(card, gameState);
+            else
+                return base.GetCountToReturnToSupply(card, gameState);
         }
 
-        private IPlayerAction GetActionForCardInPlay(GameState gameState)
+        public override Card BanCardToDrawnIntoHandFromRevealedCards(GameState gameState)
         {
-            if (gameState.CurrentCardBeingPlayed == null)
-                return null;
-
-            return this.cardResponses[gameState.CurrentCardBeingPlayed];
-        }   
-
-        public bool ShouldDeferForCardInPlay(GameState gameState)
-        {
-            return this.GetActionForCardInPlay(gameState) != null;
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.BanCardToDrawnIntoHandFromRevealedCards(gameState);
+            else
+                return base.BanCardToDrawnIntoHandFromRevealedCards(gameState);
         }
 
-        public bool ShouldDeferForCardBeingBought(GameState gameState)
+        public override Card BanCardForCurrentPlayerPurchase(GameState gameState)
         {
-            return this.GetActionForCardBeingBought(gameState) != null;
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.BanCardForCurrentPlayerPurchase(gameState);
+            else
+                return base.BanCardForCurrentPlayerPurchase(gameState);
         }
 
-        private IPlayerAction GetActionForCardBeingCleanedUp(GameState gameState)
+        public override Card ChooseCardToPlayFirst(GameState gameState, Card card1, Card card2)
         {
-            if (gameState.Self.CurrentCardBeingCleanedUp == null)
-                return null;
-
-            return this.cardResponses[gameState.Self.CurrentCardBeingCleanedUp];
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.ChooseCardToPlayFirst(gameState, card1, card2);
+            else
+                return base.ChooseCardToPlayFirst(gameState, card1, card2);
         }
 
-        public bool ShouldDeferForCardBeingCleanedUp(GameState gameState)
+        public override Card GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            return this.GetActionForCardBeingCleanedUp(gameState) != null;
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetTreasureFromHandToPlay(gameState, acceptableCard, isOptional);
+            else
+                return base.GetTreasureFromHandToPlay(gameState, acceptableCard, isOptional);
         }
 
-        public bool ShouldDeferForCard(Card card)
+        public override Card GetCardFromSupplyToEmbargo(GameState gameState)
         {
-            return this.GetActionForCard(card) != null;
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromSupplyToEmbargo(gameState);
+            else
+                return base.GetCardFromSupplyToEmbargo(gameState);
         }
 
-        public int GetCountToReturnToSupply(Card card, GameState gameState)
+        public override Card GetCardFromSupplyToPlay(GameState gameState, CardPredicate acceptableCard)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCountToReturnToSupply(card, gameState);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromSupplyToPlay(gameState, acceptableCard);
+            else
+                return base.GetCardFromSupplyToPlay(gameState, acceptableCard);
         }
 
-        public Card BanCardToDrawnIntoHandFromRevealedCards(GameState gameState)
+        public override Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate acceptableCard)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.BanCardToDrawnIntoHandFromRevealedCards(gameState);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromSupplyToBuy(gameState, acceptableCard);
+            else
+                return base.GetCardFromSupplyToBuy(gameState, acceptableCard);
         }
 
-        public Card BanCardForCurrentPlayerPurchase(GameState gameState)
+        public override Card GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.BanCardForCurrentPlayerPurchase(gameState);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromSupplyToGain(gameState, acceptableCard, isOptional);
+            else
+                return base.GetCardFromSupplyToGain(gameState, acceptableCard, isOptional);
         }
 
-        public Card ChooseCardToPlayFirst(GameState gameState, Card card1, Card card2)
+        public override Card GuessCardTopOfDeck(GameState gameState)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.ChooseCardToPlayFirst(gameState, card1, card2);
-        }
-
-        public Card GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
-        {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetTreasureFromHandToPlay(gameState, acceptableCard, isOptional);
-        }
-        
-        public Card GetCardFromSupplyToEmbargo(GameState gameState)
-        {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromSupplyToEmbargo(gameState);
-        }
-
-        public Card GetCardFromSupplyToPlay(GameState gameState, CardPredicate acceptableCard)
-        {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromSupplyToPlay(gameState, acceptableCard);
-        }
-        
-        public Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate acceptableCard)
-        {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromSupplyToBuy(gameState, acceptableCard);
-        }
-
-        public Card GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
-        {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromSupplyToGain(gameState, acceptableCard, isOptional);
-        }
-
-        public Card GuessCardTopOfDeck(GameState gameState)
-        {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+            return playerAction.GuessCardTopOfDeck(gameState);
             return playerAction.GuessCardTopOfDeck(gameState);
         }
 
-        public Card NameACard(GameState gameState)
+        public override Card NameACard(GameState gameState)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.NameACard(gameState);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.NameACard(gameState);
+            else
+                return base.NameACard(gameState);
         }
 
-        public Card GetCardFromTrashToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        public override Card GetCardFromTrashToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromTrashToGain(gameState, acceptableCard, isOptional);
-        }
-        
-        public Card GetCardFromPlayToTopDeckDuringCleanup(GameState gameState, CardPredicate acceptableCard, bool isOptional)
-        {
-            IPlayerAction playerAction = this.GetActionForCardBeingCleanedUp(gameState);
-            return playerAction.GetCardFromPlayToTopDeckDuringCleanup(gameState, acceptableCard, isOptional);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromTrashToGain(gameState, acceptableCard, isOptional);
+            else
+                return base.GetCardFromTrashToGain(gameState, acceptableCard, isOptional);
         }
 
-        public Card GetCardFromDiscardToTopDeck(GameState gameState, bool isOptional)
+        public override Card GetCardFromPlayToTopDeckDuringCleanup(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromDiscardToTopDeck(gameState, isOptional);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromPlayToTopDeckDuringCleanup(gameState, acceptableCard, isOptional);
+            else
+                return base.GetCardFromPlayToTopDeckDuringCleanup(gameState, acceptableCard, isOptional);
         }
 
-        public Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
+        public override Card GetCardFromDiscardToTopDeck(GameState gameState, bool isOptional)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromRevealedCardsToTopDeck(gameState);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromDiscardToTopDeck(gameState, isOptional);
+            else
+                return base.GetCardFromDiscardToTopDeck(gameState, isOptional);
         }
 
-        public Card GetCardFromRevealedCardsToTrash(GameState gameState, CardPredicate acceptableCard)
+        public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromRevealedCardsToTrash(gameState, acceptableCard);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromRevealedCardsToTopDeck(gameState);
+            else
+                return base.GetCardFromRevealedCardsToTopDeck(gameState);
         }
 
-        public Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
+        public override Card GetCardFromRevealedCardsToTrash(GameState gameState, CardPredicate acceptableCard)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromRevealedCardsToPutOnDeck(gameState);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromRevealedCardsToTrash(gameState, acceptableCard);
+            else
+                return base.GetCardFromRevealedCardsToTrash(gameState, acceptableCard);
         }
 
-        public Card GetCardFromRevealedCardsToDiscard(GameState gameState)
+        public override Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromRevealedCardsToDiscard(gameState);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromRevealedCardsToPutOnDeck(gameState);
+            else
+                return base.GetCardFromRevealedCardsToPutOnDeck(gameState);
         }
 
-        public Card GetCardFromHandToDeferToNextTurn(GameState gameState)
+        public override Card GetCardFromRevealedCardsToDiscard(GameState gameState)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromHandToDeferToNextTurn(gameState);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromRevealedCardsToDiscard(gameState);
+            else
+                return base.GetCardFromRevealedCardsToDiscard(gameState);
         }
 
-        public Card GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        public override Card GetCardFromHandToDeferToNextTurn(GameState gameState)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromHandToDiscard(gameState, acceptableCard, isOptional);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromHandToDeferToNextTurn(gameState);
+            else
+                return base.GetCardFromHandToDeferToNextTurn(gameState);
         }
 
-        public Card GetCardFromHandToIsland(GameState gameState)
+        public override Card GetCardFromHandToDiscard(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromHandToIsland(gameState);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromHandToDiscard(gameState, acceptableCard, isOptional);
+            else
+                return base.GetCardFromHandToDiscard(gameState, acceptableCard, isOptional);
         }
 
-        public Card GetCardFromHandToPassLeft(GameState gameState)
+        public override Card GetCardFromHandToIsland(GameState gameState)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromHandToPassLeft(gameState);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromHandToIsland(gameState);
+            else
+                return base.GetCardFromHandToIsland(gameState);
         }
 
-        public Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        public override Card GetCardFromHandToPassLeft(GameState gameState)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromHandToPlay(gameState, acceptableCard, isOptional);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromHandToPassLeft(gameState);
+            else
+                return base.GetCardFromHandToPassLeft(gameState);
         }
 
-        public Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
+        public override Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromHandToReveal(gameState, acceptableCard);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromHandToPlay(gameState, acceptableCard, isOptional);
+            else
+                return base.GetCardFromHandToPlay(gameState, acceptableCard, isOptional);
         }
 
-        public Card GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        public override Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromHandToTopDeck(gameState, acceptableCard, isOptional);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromHandToReveal(gameState, acceptableCard);
+            else
+                return base.GetCardFromHandToReveal(gameState, acceptableCard);
         }
 
-        public Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        public override Card GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromHandToTrash(gameState, acceptableCard, isOptional);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromHandToTopDeck(gameState, acceptableCard, isOptional);
+            else
+                return base.GetCardFromHandToTopDeck(gameState, acceptableCard, isOptional);
         }
 
-        public Card GetCardFromHandOrDiscardToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, out DeckPlacement deckPlacement)
+        public override Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromHandOrDiscardToTrash(gameState, acceptableCard, isOptional, out deckPlacement);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromHandToTrash(gameState, acceptableCard, isOptional);
+            else
+                return base.GetCardFromHandToTrash(gameState, acceptableCard, isOptional);
         }
 
-        public Card GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer)
+        public override Card GetCardFromHandOrDiscardToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, out DeckPlacement deckPlacement)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromOtherPlayersHandToDiscard(gameState, otherPlayer);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromHandOrDiscardToTrash(gameState, acceptableCard, isOptional, out deckPlacement);
+            else
+                return base.GetCardFromHandOrDiscardToTrash(gameState, acceptableCard, isOptional, out deckPlacement);
         }
 
-        public Card GetCardFromOtherPlayersRevealedCardsToTrash(GameState gameState, PlayerState otherPlayer, CardPredicate acceptableCard)
+        public override Card GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCardFromOtherPlayersRevealedCardsToTrash(gameState, otherPlayer, acceptableCard);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromOtherPlayersHandToDiscard(gameState, otherPlayer);
+            else
+                return base.GetCardFromOtherPlayersHandToDiscard(gameState, otherPlayer);
         }
 
-        public int GetNumberOfCoppersToPutInHandForCountingHouse(GameState gameState, int maxNumber)
+        public override Card GetCardFromOtherPlayersRevealedCardsToTrash(GameState gameState, PlayerState otherPlayer, CardPredicate acceptableCard)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetNumberOfCoppersToPutInHandForCountingHouse(gameState, maxNumber);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromOtherPlayersRevealedCardsToTrash(gameState, otherPlayer, acceptableCard);
+            else
+                return base.GetCardFromOtherPlayersRevealedCardsToTrash(gameState, otherPlayer, acceptableCard);
         }
 
-        public bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card)
+        public override int GetNumberOfCoppersToPutInHandForCountingHouse(GameState gameState, int maxNumber)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.ShouldPlayerDiscardCardFromDeck(gameState, player, card);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetNumberOfCoppersToPutInHandForCountingHouse(gameState, maxNumber);
+            else
+                return base.GetNumberOfCoppersToPutInHandForCountingHouse(gameState, maxNumber);
         }
 
-        public bool ShouldPlayerDiscardCardFromHand(GameState gameState, Card card)
+        public override bool ShouldPlayerDiscardCardFromDeck(GameState gameState, PlayerState player, Card card)
         {
-            IPlayerAction playerAction = this.GetActionForCard(card);
-            return playerAction.ShouldPlayerDiscardCardFromHand(gameState, card);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.ShouldPlayerDiscardCardFromDeck(gameState, player, card);
+            else
+                return base.ShouldPlayerDiscardCardFromDeck(gameState, player, card);
         }
 
-        public bool ShouldRevealCardFromHandForCard(GameState gameState, Card card, Card cardFor)
+        public override bool ShouldPlayerDiscardCardFromHand(GameState gameState, Card card)
         {
-            IPlayerAction playerAction = this.GetActionForCard(card);
-            return playerAction.ShouldRevealCardFromHandForCard(gameState, card, cardFor);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.ShouldPlayerDiscardCardFromHand(gameState, card);
+            else
+                return base.ShouldPlayerDiscardCardFromHand(gameState, card);
         }
 
-        public bool ShouldRevealCardFromHand(GameState gameState, Card card)
+        public override bool ShouldRevealCardFromHandForCard(GameState gameState, Card card, Card cardFor)
         {
-            IPlayerAction playerAction = this.GetActionForCard(card);
-            return playerAction.ShouldRevealCardFromHand(gameState, card);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.ShouldRevealCardFromHandForCard(gameState, card, cardFor);
+            else
+                return base.ShouldRevealCardFromHandForCard(gameState, card, cardFor);
         }
 
-        public bool ShouldPutCardInHand(GameState gameState, Card card)
+        public override bool ShouldRevealCardFromHand(GameState gameState, Card card)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.ShouldPutCardInHand(gameState, card);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.ShouldRevealCardFromHand(gameState, card);
+            else
+                return base.ShouldRevealCardFromHand(gameState, card);
         }
 
-        public bool WantToResign(GameState gameState)
+        public override bool ShouldPutCardInHand(GameState gameState, Card card)
         {
-            throw new NotImplementedException();
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.ShouldPutCardInHand(gameState, card);
+            else
+                return base.ShouldPutCardInHand(gameState, card);
         }
 
-        public bool ShouldPutDeckInDiscard(GameState gameState)
+        public override bool WantToResign(GameState gameState)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.ShouldPutDeckInDiscard(gameState);
+            return base.WantToResign(gameState);
         }
 
-        public bool ShouldPutCardOnTopOfDeck(Card card, GameState gameState)
+        public override bool ShouldPutDeckInDiscard(GameState gameState)
         {
-            IPlayerAction playerAction = this.GetActionForCard(card);
-            return playerAction.ShouldPutCardOnTopOfDeck(card, gameState);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.ShouldPutDeckInDiscard(gameState);
+            else
+                return base.ShouldPutDeckInDiscard(gameState);
         }
 
-        public bool ShouldTrashCard(GameState gameState, Card card)
+        public override bool ShouldPutCardOnTopOfDeck(Card card, GameState gameState)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.ShouldTrashCard(gameState, card);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.ShouldPutCardOnTopOfDeck(card, gameState);
+            else
+                return base.ShouldPutCardOnTopOfDeck(card, gameState);
         }
 
-        public bool ShouldGainCard(GameState gameState, Card card)
+        public override bool ShouldTrashCard(GameState gameState, Card card)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.ShouldGainCard(gameState, card);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.ShouldTrashCard(gameState, card);
+            else
+                return base.ShouldTrashCard(gameState, card);
         }
 
-        public PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
+        public override bool ShouldGainCard(GameState gameState, Card card)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.ChooseBetween(gameState, acceptableChoice);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.ShouldGainCard(gameState, card);
+            else
+                return base.ShouldGainCard(gameState, card);
         }
 
-        public DeckPlacement ChooseBetweenTrashAndTopDeck(GameState gameState, Card card)
+        public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.ChooseBetweenTrashAndTopDeck(gameState, card);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.ChooseBetween(gameState, acceptableChoice);
+            else
+                return base.ChooseBetween(gameState, acceptableChoice);
         }
 
-        public DeckPlacement ChooseBetweenTrashTopDeckDiscard(GameState gameState, Card card)
+        public override DeckPlacement ChooseBetweenTrashAndTopDeck(GameState gameState, Card card)
         {
-            IPlayerAction playerAction = this.GetActionForCardBeingBought(gameState);
-            return playerAction.ChooseBetweenTrashTopDeckDiscard(gameState, card);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.ChooseBetweenTrashAndTopDeck(gameState, card);
+            else
+                return base.ChooseBetweenTrashAndTopDeck(gameState, card);
         }
 
-        public string PlayerName 
+        public override DeckPlacement ChooseBetweenTrashTopDeckDiscard(GameState gameState, Card card)
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.ChooseBetweenTrashTopDeckDiscard(gameState, card);
+            else
+                return base.ChooseBetweenTrashTopDeckDiscard(gameState, card);
+        }
+      
+        public override int GetCoinAmountToOverpayForCard(GameState gameState, Card card)
+        {
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCoinAmountToOverpayForCard(gameState, card);
+            else
+                return base.GetCoinAmountToOverpayForCard(gameState, card);
         }
 
-        public int GetCoinAmountToOverpayForCard(GameState gameState, Card card)
+        public override int GetCoinAmountToSpendInBuyPhase(GameState gameState)
         {
-            IPlayerAction playerAction = this.GetActionForCard(card);
-            return playerAction.GetCoinAmountToOverpayForCard(gameState, card);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCoinAmountToSpendInBuyPhase(gameState);
+            else
+                return base.GetCoinAmountToSpendInBuyPhase(gameState);
         }
 
-        public int GetCoinAmountToSpendInBuyPhase(GameState gameState)
+        public override int GetCoinAmountToUseInButcher(GameState gameState)
         {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCoinAmountToSpendInBuyPhase(gameState);
-        }
-
-        public int GetCoinAmountToUseInButcher(GameState gameState)
-        {
-            IPlayerAction playerAction = this.GetActionForCardInPlay(gameState);
-            return playerAction.GetCoinAmountToUseInButcher(gameState);
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCoinAmountToUseInButcher(gameState);
+            else
+                return base.GetCoinAmountToUseInButcher(gameState);
         }
     }
 }

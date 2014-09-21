@@ -4,13 +4,11 @@ using Dominion.Strategy;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Alchemist
-      : UnimplementedPlayerAction
+      : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public Alchemist(PlayerAction playerAction)
-        {
-            this.playerAction = playerAction;
+        public Alchemist(DefaultPlayerAction playerAction)
+            : base(playerAction)
+        {            
         }
 
         public override bool ShouldPutCardOnTopOfDeck(Card card, GameState gameState)

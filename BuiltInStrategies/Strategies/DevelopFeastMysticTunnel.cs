@@ -33,7 +33,7 @@ namespace Strategies
         {
             return new CardPickByPriority(
                         CardAcceptance.For(Cards.Province, gameState => CountAllOwned(Cards.Gold, gameState) >= 2),                        
-                        CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4 && gameState.CurrentCardBeingPlayed != Cards.Develop ),
+                        CardAcceptance.For(Cards.Duchy, gameState => CountOfPile(Cards.Province, gameState) <= 4 && gameState.CurrentContext.CurrentCard != Cards.Develop ),
                         CardAcceptance.For(Cards.Tunnel, gameState => CountOfPile(Cards.Province, gameState) <= 4),
                         CardAcceptance.For(Cards.Estate, gameState => CountOfPile(Cards.Province, gameState) <= 3),
                         CardAcceptance.For(Cards.Gold),

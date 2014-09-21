@@ -6,13 +6,11 @@ using System.Linq;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Nobles
-       : UnimplementedPlayerAction
+       : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public Nobles(PlayerAction playerAction)
+        public Nobles(DefaultPlayerAction playerAction)
+            : base(playerAction)
         {
-            this.playerAction = playerAction;
         }
 
         public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)

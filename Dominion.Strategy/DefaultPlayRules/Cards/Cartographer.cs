@@ -6,13 +6,11 @@ using System.Linq;
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
     internal class Cartographer
-        : UnimplementedPlayerAction
+        : DerivedPlayerAction
     {
-        private readonly PlayerAction playerAction;
-
-        public Cartographer(PlayerAction playerAction)
-        {
-            this.playerAction = playerAction;
+        public Cartographer(DefaultPlayerAction playerAction)
+            : base(playerAction)
+        {            
         }
 
         public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState)

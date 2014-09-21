@@ -48,12 +48,12 @@ namespace Program
 
         public PlayerAction GetPlayerAction(string name)
         {
-            return this.playerActions.Where(playerAction => playerAction.playerAction.name == name).Select(playerAction => playerAction.playerAction).FirstOrDefault();            
+            return this.playerActions.Where(playerAction => playerAction.playerAction.PlayerName == name).Select(playerAction => playerAction.playerAction).FirstOrDefault();            
         }
 
         public string GetPlayerSource(string name)
         {
-            string fileName = this.playerActions.Where(playerAction => playerAction.playerAction.name == name).Select(action => action.fileName).FirstOrDefault();
+            string fileName = this.playerActions.Where(playerAction => playerAction.playerAction.PlayerName == name).Select(action => action.fileName).FirstOrDefault();
             if (fileName == null)
                 return "Strategy Not Found";
 

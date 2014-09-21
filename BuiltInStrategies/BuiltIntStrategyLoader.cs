@@ -12,7 +12,7 @@ namespace BuiltInStrategies
 
         public static PlayerAction PlayerFromString(string playerStrategy)
         {
-            return GetAllPlayerActions().Where(player => player.name == playerStrategy).FirstOrDefault();
+            return GetAllPlayerActions().Where(player => player.PlayerName == playerStrategy).FirstOrDefault();
         }
 
         public static PlayerAction[] GetAllPlayerActions()

@@ -5,17 +5,17 @@ using System.Linq;
 
 namespace Dominion.Strategy.DefaultPlayRules.Cards
 {
-    internal class Catacombs
-        : DerivedPlayerAction
+    internal class SpiceMerchant
+       : DerivedPlayerAction
     {
-        public Catacombs(DefaultPlayerAction playerAction)
+        public SpiceMerchant(DefaultPlayerAction playerAction)
             : base(playerAction)
         {
         }
 
         public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
         {
-            return PlayerActionChoice.PutInHand;
-        }     
+            return PlayerActionChoice.PlusCard;
+        }        
     }
 }

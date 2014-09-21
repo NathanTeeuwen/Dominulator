@@ -62,7 +62,7 @@ namespace HtmlRenderer
 
             for (int index = 0; index < this.comparisonResults.winnerCount.Length; ++index)
             {
-                pieLabels.Add(this.comparisonResults.comparison.playerActions[index].name);
+                pieLabels.Add(this.comparisonResults.comparison.playerActions[index].PlayerName);
                 pieData.Add((float)this.comparisonResults.PlayerWinPercent(index));
             }
             if (this.comparisonResults.tieCount > 0)
@@ -216,7 +216,7 @@ namespace HtmlRenderer
                 htmlWriter.InsertColumnChart(
                     "Average Count of Cards Owned at End of Game",
                     "Card",
-                    new string[] { player1.name, player2.name },
+                    new string[] { player1.PlayerName, player2.PlayerName},
                     cards.Select(c => c.name).ToArray(),
                     new float[][] { player1Data.ToArray(), player2Data.ToArray() });
             }, collapseByDefault: false);
