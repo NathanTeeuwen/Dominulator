@@ -16,9 +16,8 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.GovernorSpiceMerchantHorseTraderJunkDealer.PlayerCustom(true);
-                var player2 = Strategies.GovernorSpiceMerchantHorseTraderJunkDealer.PlayerCustom(false);
-                //var player2 = Strategies.BigMoney.Player();
+                var player1 = Strategies.BigMoneyWithCard.Player(Cards.Explorer);                
+                var player2 = Strategies.BigMoney.Player();
                
                 var builder = new GameConfigBuilder();
 

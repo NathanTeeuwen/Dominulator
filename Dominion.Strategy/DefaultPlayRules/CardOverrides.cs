@@ -21,6 +21,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Chancellor] = new Chancellor(playerAction);
             result[Dominion.Cards.Count] = new Count(playerAction);
             result[Dominion.Cards.Doctor] = new Doctor(playerAction);
+            result[Dominion.Cards.Explorer] = new Explorer(playerAction);
             result[Dominion.Cards.Golem] = new Golem(playerAction);
             result[Dominion.Cards.Governor] = new Governor(playerAction);
             result[Dominion.Cards.HorseTraders] = new HorseTraders(playerAction);

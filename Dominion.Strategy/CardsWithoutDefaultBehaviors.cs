@@ -11,11 +11,10 @@ namespace Dominion.Strategy
 {
     public class MissingDefaults
     {
-        public static Card[] CardsWithoutDefualtBehaviors = new Card[]
+        public static Card[] CardsWithoutDefaultBehaviors = new Card[]
         {
             // implemented cards that require default behaviors            
-            Cards.Embargo,
-            Cards.Explorer,
+            Cards.Embargo,            
             Cards.Graverobber,
             Cards.Haven,
             Cards.Herald,
@@ -50,7 +49,7 @@ namespace Dominion.Strategy
             {
                 if (Cards.UnimplementedCards.Contains(card))
                     continue;
-                if (CardsWithoutDefualtBehaviors.Contains(card))
+                if (CardsWithoutDefaultBehaviors.Contains(card))
                     continue;
 
                 yield return card;

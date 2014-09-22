@@ -44,7 +44,7 @@ namespace TestAllCardsWithBigMoney
                     if (Dominion.Cards.UnimplementedCards.Contains(card))
                         continue;
 
-                    if (Dominion.Strategy.MissingDefaults.CardsWithoutDefualtBehaviors.Contains(card))
+                    if (Dominion.Strategy.MissingDefaults.CardsWithoutDefaultBehaviors.Contains(card))
                         continue;
 
                     var playerAction = Strategies.BigMoneyWithCard.Player(card);
