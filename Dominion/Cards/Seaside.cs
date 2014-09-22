@@ -128,11 +128,11 @@ namespace Dominion.CardTypes
         {
             if (currentPlayer.RequestPlayerRevealCardFromHand(card => card == Province.card, gameState) != null)
             {
-                currentPlayer.GainCardFromSupply(Gold.card, gameState);
+                currentPlayer.GainCardFromSupply(Gold.card, gameState, DeckPlacement.Hand);
             }
             else
             {
-                currentPlayer.GainCardFromSupply(Silver.card, gameState);
+                currentPlayer.GainCardFromSupply(Silver.card, gameState, DeckPlacement.Hand);
             }
         }
     }
