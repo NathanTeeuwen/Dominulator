@@ -166,9 +166,9 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            while (currentPlayer.Hand.Count > 3)
+            while (otherPlayer.Hand.Count > 3)
             {
-                currentPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard => true, isOptional: false);
+                otherPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard => true, isOptional: false);
             }
         }
     }

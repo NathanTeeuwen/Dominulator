@@ -49,13 +49,14 @@ namespace Dominion.Strategy.DefaultPlayRules
             var result = new MapOfCards<GameStatePlayerActionPredicate>();
 
             result[Dominion.Cards.Apprentice] = Strategy.HasCardToTrashInHand;
-            result[Dominion.Cards.Remodel] = Strategy.HasCardToTrashInHand;
-            result[Dominion.Cards.Salvager] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Bishop] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Remodel] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Salvager] = Strategy.HasCardToTrashInHand;            
             result[Dominion.Cards.SpiceMerchant] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.JunkDealer] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Lookout] = Lookout.ShouldPlay;
-
+            result[Dominion.Cards.Trader] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.TradingPost] = Strategy.HasAtLeast2ToTrashInHand;
             return result;
         }
     }

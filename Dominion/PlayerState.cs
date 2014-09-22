@@ -950,8 +950,7 @@ namespace Dominion
         {
             var trashedCards = new List<Card>(cardCount);
             CardPredicate acceptableCardsToTrash = card => true;
-            int countCardTrashed = 0;
-            while (countCardTrashed < cardCount)
+            while (trashedCards.Count < cardCount)
             {
                 Card trashedCard = this.RequestPlayerTrashCardFromHand(gameState, acceptableCardsToTrash, isOptional);
                 if (trashedCard == null)
