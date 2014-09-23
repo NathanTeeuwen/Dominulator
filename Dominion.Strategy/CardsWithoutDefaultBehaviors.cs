@@ -35,7 +35,7 @@ namespace Dominion.Strategy
             Cards.Scavenger,
             Cards.Scout,
             Cards.Squire,            
-            Cards.Steward,
+            //Cards.Steward,
             Cards.StoneMason,
             Cards.Torturer,
             Cards.Tournament,            
