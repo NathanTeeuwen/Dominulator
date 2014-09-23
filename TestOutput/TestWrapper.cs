@@ -180,18 +180,31 @@ namespace Dominion
         public static IndentedTextWriter GetGameLogWriterForIteration(PlayerAction player1, PlayerAction player2, int gameCount)
         {
             string fileName = GetOutputFilename(player1.PlayerName + " VS " + player2.PlayerName + ".gamelog" + (gameCount == 0 ? "" : "." + gameCount.ToString()) + ".txt");
+            if (fileName == null)
+                return null;
             return new IndentedTextWriter(new System.IO.StreamWriter(fileName));
         }
 
         public static IndentedTextWriter GetDebugLogWriterForIteration(PlayerAction player1, PlayerAction player2, int gameCount)
         {
             string fileName = GetOutputFilename(player1.PlayerName + " VS " + player2.PlayerName + ".DebugLog" + (gameCount == 0 ? "" : "." + gameCount.ToString()) + ".txt");
+            if (fileName == null)
+                return null;
             return new IndentedTextWriter(new System.IO.StreamWriter(fileName));
         }
 
+        static bool checkedPath = false;
         public static string GetOutputFilename(string filename)
         {
-            return "..\\..\\..\\Results\\" + filename;
+            string resultsDirectory = "..\\..\\..\\Results";
+            if (!System.IO.Directory.Exists(resultsDirectory))
+            {
+                if (!checkedPath)
+                    System.Console.WriteLine("Warning:  The directory " + System.IO.Path.GetFullPath(resultsDirectory) + " does not exist.  Logs can not be written");
+                checkedPath = true;
+                return null;
+            }                
+            return resultsDirectory + "\\" + filename;
         }
     }
 }

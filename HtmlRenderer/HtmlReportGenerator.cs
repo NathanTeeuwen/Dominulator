@@ -28,6 +28,8 @@ namespace HtmlRenderer
 
         public void CreateHtmlReport(string filename)
         {
+            if (filename == null)
+                return;
             var streamWriter = new System.IO.StreamWriter(filename);
             using (var textWriter = new IndentedTextWriter(streamWriter))
             {

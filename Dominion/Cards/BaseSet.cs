@@ -206,7 +206,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.GainCardFromSupply(Silver.card, gameState);
+            currentPlayer.GainCardFromSupply(Silver.card, gameState, DeckPlacement.TopOfDeck);
         }
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
