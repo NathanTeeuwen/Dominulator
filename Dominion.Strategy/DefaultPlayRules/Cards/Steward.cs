@@ -13,10 +13,9 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
 
         public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
         {
-
-            if ((Strategy.CountInHand(Dominion.Cards.Copper, gameState) > 0) && (Strategy.CountInHand(Dominion.Cards.Gold, gameState) < 0))
+            if ((Strategy.CountOfPile(Dominion.Cards.Province, gameState)>7)&&(Strategy.CountInHand(Dominion.Cards.Copper, gameState)>1))
                 return PlayerActionChoice.Trash;
-            else if ((Strategy.CountInHand(Dominion.Cards.Copper, gameState) > 0) && (Strategy.CountInHand(Dominion.Cards.Gold, gameState) > 0))
+            else if ((Strategy.CountInHand(Dominion.Cards.Silver, gameState) < 3) && (Strategy.CountInHand(Dominion.Cards.Gold, gameState) < 0))
                 return PlayerActionChoice.PlusCoin;
             else
                 return PlayerActionChoice.PlusCard;
