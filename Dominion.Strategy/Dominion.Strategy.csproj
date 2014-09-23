@@ -57,6 +57,7 @@
     <Compile Include="DefaultPlayRules\Cards\Chancellor.cs" />
     <Compile Include="DefaultPlayRules\Cards\Count.cs" />
     <Compile Include="DefaultPlayRules\Cards\Golem.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Steward.cs" />
     <Compile Include="DefaultPlayRules\Cards\SpiceMerchant.cs" />
     <Compile Include="DefaultPlayRules\Cards\Governor.cs" />
     <Compile Include="DefaultPlayRules\Cards\HorseTraders.cs" />
