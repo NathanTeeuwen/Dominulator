@@ -35,6 +35,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.SpiceMerchant] = new SpiceMerchant(playerAction);
             result[Dominion.Cards.ScryingPool] = new ScryingPool(playerAction);
             result[Dominion.Cards.Scheme] = new Scheme(playerAction);
+            result[Dominion.Cards.RoyalSeal] = new RoyalSeal(playerAction);
             result[Dominion.Cards.Treasury] = new Treasury(playerAction);
             result[Dominion.Cards.Trader] = new Trader(playerAction);
             result[Dominion.Cards.Watchtower] = new Watchtower(playerAction);
@@ -49,14 +50,15 @@ namespace Dominion.Strategy.DefaultPlayRules
             var result = new MapOfCards<GameStatePlayerActionPredicate>();
 
             result[Dominion.Cards.Apprentice] = Strategy.HasCardToTrashInHand;
-            result[Dominion.Cards.Bishop] = Strategy.HasCardToTrashInHand;
-            result[Dominion.Cards.Remodel] = Strategy.HasCardToTrashInHand;
-            result[Dominion.Cards.Salvager] = Strategy.HasCardToTrashInHand;            
-            result[Dominion.Cards.SpiceMerchant] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Bishop] = Strategy.HasCardToTrashInHand;            
             result[Dominion.Cards.JunkDealer] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Lookout] = Lookout.ShouldPlay;
+            result[Dominion.Cards.Remodel] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Salvager] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.SpiceMerchant] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Trader] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.TradingPost] = Strategy.HasAtLeast2ToTrashInHand;
+            result[Dominion.Cards.Transmute] = Strategy.HasCardToTrashInHand;
             return result;
         }
     }

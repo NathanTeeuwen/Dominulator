@@ -46,6 +46,7 @@
     <Compile Include="CardPicker\CardPickConcatenator.cs" />
     <Compile Include="CardsWithoutDefaultBehaviors.cs" />
     <Compile Include="DefaultPlayRules\CardOverrides.cs" />
+    <Compile Include="DefaultPlayRules\Cards\RoyalSeal.cs" />
     <Compile Include="DefaultPlayRules\Cards\Explorer.cs" />
     <Compile Include="DefaultPlayRules\Cards\Doctor.cs" />
     <Compile Include="DefaultPlayRules\Cards\Alchemist.cs" />

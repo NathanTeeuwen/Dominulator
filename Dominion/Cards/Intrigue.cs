@@ -589,7 +589,7 @@ namespace Dominion.CardTypes
 
             // for each differently named card
             Card firstCard = null;
-            foreach (Card card in currentPlayer.cardsBeingRevealed)
+            foreach (Card card in gameState.players.PlayerLeft.cardsBeingRevealed)
             {
                 if (firstCard == null)
                 {

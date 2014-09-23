@@ -187,6 +187,7 @@ namespace Dominion.Strategy
                 CardAcceptance.For(Cards.Masterpiece),
                 CardAcceptance.For(Cards.PhilosophersStone),
                 CardAcceptance.For(Cards.Quarry),
+                CardAcceptance.For(Cards.RoyalSeal),
                 CardAcceptance.For(Cards.Stash),
                 CardAcceptance.For(Cards.Talisman),
                 // cards whose benefit is sensitive to ordering
