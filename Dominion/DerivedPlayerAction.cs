@@ -132,9 +132,9 @@ namespace Dominion
             return this.playerAction.GetCardFromHandToReveal(gameState, acceptableCard);            
         }
 
-        public virtual Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        public virtual Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, CollectionCards cardsTrashedSoFar)
         {
-            return this.playerAction.GetCardFromHandToTrash(gameState, acceptableCard, isOptional); 
+            return this.playerAction.GetCardFromHandToTrash(gameState, acceptableCard, isOptional, cardsTrashedSoFar); 
         }
 
         public virtual Card GetCardFromHandToIsland(GameState gameState)

@@ -201,7 +201,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {            
-            Card[] trashedCards = currentPlayer.RequestPlayerTrashCardsFromHand(gameState, currentPlayer.Hand.Count, isOptional: true);
+            CollectionCards trashedCards = currentPlayer.RequestPlayerTrashCardsFromHand(gameState, currentPlayer.Hand.Count, isOptional: true);
 
             int totalCoinCost = trashedCards.Select(card => card.CurrentCoinCost(currentPlayer)).Sum();
             int totalPotionCost = trashedCards.Select(card => card.potionCost).Sum();

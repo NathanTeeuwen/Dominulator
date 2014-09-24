@@ -127,9 +127,9 @@ namespace Dominion.Strategy
             }
 
             return result;
-        }        
+        }
 
-        public override Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        public override Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, CollectionCards cardsTrashedSoFar)
         {
             var self = gameState.Self;
             Card result = this.trashOrder.GetPreferredCard(

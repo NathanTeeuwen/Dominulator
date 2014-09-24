@@ -1110,7 +1110,7 @@ namespace Dominion.CardTypes
                 otherPlayersAffectedByAttacks[otherIndex++] = otherPlayer.IsAffectedByAttacks(gameState);                
             }
 
-            if (currentPlayer.RequestPlayerTrashCardsFromHand(gameState, 2, isOptional: true, allOrNone:true).Length == 2)
+            if (currentPlayer.RequestPlayerTrashCardsFromHand(gameState, 2, isOptional: true, allOrNone:true).Count == 2)
             {
                 currentPlayer.DrawAdditionalCardsIntoHand(2);
                 currentPlayer.AddCoins(2);

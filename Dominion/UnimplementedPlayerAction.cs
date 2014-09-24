@@ -158,7 +158,7 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
-        virtual public Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        virtual public Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, CollectionCards cardsTrashedSoFar)
         {
             return PlayerMustMakeCardChoice();
         }

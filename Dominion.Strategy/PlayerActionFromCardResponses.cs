@@ -250,13 +250,13 @@ namespace Dominion.Strategy
                 return base.GetCardFromHandToTopDeck(gameState, acceptableCard, isOptional);
         }
 
-        public override Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        public override Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, CollectionCards cardsTrashedSoFar)
         {
             IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
             if (playerAction != null)
-                return playerAction.GetCardFromHandToTrash(gameState, acceptableCard, isOptional);
+                return playerAction.GetCardFromHandToTrash(gameState, acceptableCard, isOptional, cardsTrashedSoFar);
             else
-                return base.GetCardFromHandToTrash(gameState, acceptableCard, isOptional);
+                return base.GetCardFromHandToTrash(gameState, acceptableCard, isOptional, cardsTrashedSoFar);
         }
 
         public override Card GetCardFromHandOrDiscardToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, out DeckPlacement deckPlacement)

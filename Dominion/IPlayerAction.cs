@@ -33,7 +33,7 @@ namespace Dominion
         Card GetCardFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Card GetCardFromHandToReveal(GameState gameState, CardPredicate acceptableCard); // always optional
         Card GetCardFromHandToTopDeck(GameState gameState, CardPredicate acceptableCard, bool isOptional);        
-        Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional);        
+        Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, CollectionCards cardsTrashedSoFar);        
         Card GetCardFromHandOrDiscardToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, out DeckPlacement deckPlacement);
         Card GetCardFromOtherPlayersHandToDiscard(GameState gameState, PlayerState otherPlayer);
         Card GetCardFromOtherPlayersRevealedCardsToTrash(GameState gameState, PlayerState otherPlayer, CardPredicate acceptableCard);

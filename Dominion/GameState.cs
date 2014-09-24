@@ -93,7 +93,9 @@ namespace Dominion
         private MapOfCardsForGameSubset<PileOfCards> mapCardToPile;
         public BagOfCards trash;
         private MapPileOfCards<bool> hasPileEverBeenGained;
-        private MapPileOfCards<int> pileEmbargoTokenCount;          
+        private MapPileOfCards<int> pileEmbargoTokenCount;
+
+        internal readonly CollectionCards emptyCardCollection;
 
         public int InProgressGameIndex;
 
@@ -104,7 +106,6 @@ namespace Dominion
                 return this.game;
             }
         }
-
 
         public CardGameSubset CardGameSubset
         {
@@ -141,6 +142,8 @@ namespace Dominion
         {
             this.game = game;
             GameConfig gameConfig = game.GameConfig;
+
+            this.emptyCardCollection = new CollectionCards(this.CardGameSubset, null);
 
             int playerCount = playerActions.Length;            
             this.supplyPiles = gameConfig.GetSupplyPiles(playerCount, game.random);

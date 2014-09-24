@@ -24,15 +24,15 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
 
             return PlayerActionChoice.PlusCard;
         }
-        
-        public override Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+
+        public override Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, CollectionCards cardsTrashedSoFar)
         {
             if (gameState.Self == gameState.players.CurrentPlayer)
             {
                 if (Strategy.CountInHand(Dominion.Cards.Gold, gameState) > 0)
                     return Dominion.Cards.Gold;
             }
-            return base.GetCardFromHandToTrash(gameState, acceptableCard, isOptional);
+            return base.GetCardFromHandToTrash(gameState, acceptableCard, isOptional, cardsTrashedSoFar);
         }     
     }
 }

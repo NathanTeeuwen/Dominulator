@@ -564,7 +564,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             // Trash 2 cards from your hand
-            if (currentPlayer.RequestPlayerTrashCardsFromHand(gameState, 2, isOptional: false).Length == 2)
+            if (currentPlayer.RequestPlayerTrashCardsFromHand(gameState, 2, isOptional: false).Count == 2)
             {
                 // If you do, gain a silver card; put it into your hand
                 currentPlayer.GainCardFromSupply(Silver.card, gameState, DeckPlacement.Hand);

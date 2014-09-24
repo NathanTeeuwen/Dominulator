@@ -946,13 +946,13 @@ namespace Dominion
             return gainedCard;
         }
 
-        internal Card[] RequestPlayerTrashCardsFromHand(GameState gameState, int cardCount, bool isOptional, bool allOrNone = false)
+        internal CollectionCards RequestPlayerTrashCardsFromHand(GameState gameState, int cardCount, bool isOptional, bool allOrNone = false)
         {
-            var trashedCards = new List<Card>(cardCount);
+            var trashedCards = new BagOfCards(gameState.CardGameSubset);
             CardPredicate acceptableCardsToTrash = card => true;
             while (trashedCards.Count < cardCount)
             {
-                Card trashedCard = this.RequestPlayerTrashCardFromHand(gameState, acceptableCardsToTrash, isOptional);
+                Card trashedCard = this.RequestPlayerTrashCardFromHandButDontTrash(gameState, acceptableCardsToTrash, isOptional);
                 if (trashedCard == null)
                 {
                     break;
@@ -961,10 +961,14 @@ namespace Dominion
                 if (allOrNone == true)
                     isOptional = false;
 
-                trashedCards.Add(trashedCard);
+                trashedCards.AddCard(trashedCard);
+                this.RemoveCardFromHand(trashedCard);
             }
 
-            return trashedCards.ToArray();
+            foreach (var trashedCard in trashedCards)
+                this.MoveCardToTrash(trashedCard, gameState);
+
+            return trashedCards;
         }
 
         internal Card RequestPlayerTrashCardFromHandAndGainCard(
@@ -1008,13 +1012,17 @@ namespace Dominion
             return null;
         }
 
-        internal Card RequestPlayerTrashCardFromHand(GameState gameState, CardPredicate acceptableCardsToTrash, bool isOptional)
+        internal Card RequestPlayerTrashCardFromHandButDontTrash(GameState gameState, CardPredicate acceptableCardsToTrash, bool isOptional, CollectionCards cardsTrashedSoFar = null)
         {
             if (!this.hand.HasCard(acceptableCardsToTrash))
             {
                 return null;
             }
-            Card cardTypeToTrash = this.actions.GetCardFromHandToTrash(gameState, acceptableCardsToTrash, isOptional);
+
+            if (cardsTrashedSoFar == null)
+                cardsTrashedSoFar = gameState.emptyCardCollection;
+
+            Card cardTypeToTrash = this.actions.GetCardFromHandToTrash(gameState, acceptableCardsToTrash, isOptional, cardsTrashedSoFar);
             if (cardTypeToTrash == null)
             {
                 if (isOptional)
@@ -1032,7 +1040,17 @@ namespace Dominion
                 throw new Exception("Tried to trash a card that didn't match the constraint");
             }
 
-            return this.TrashCardFromHandOfType(gameState, cardTypeToTrash, guaranteeInHand: true);
+            return cardTypeToTrash;
+        }
+
+        internal Card RequestPlayerTrashCardFromHand(GameState gameState, CardPredicate acceptableCardsToTrash, bool isOptional, CollectionCards cardsTrashedSoFar = null)
+        {
+            Card cardTypeToTrash = RequestPlayerTrashCardFromHandButDontTrash(gameState, acceptableCardsToTrash, isOptional, cardsTrashedSoFar);
+            
+            if (cardTypeToTrash != null)
+                this.TrashCardFromHandOfType(gameState, cardTypeToTrash, guaranteeInHand: true);
+
+            return cardTypeToTrash;
         }      
 
         internal Card RequestPlayerTrashOtherPlayersRevealedCard(GameState gameState, CardPredicate acceptableCard,  PlayerState otherPlayer)

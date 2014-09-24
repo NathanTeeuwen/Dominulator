@@ -234,11 +234,11 @@ namespace Dominion
         }
 
         // always optional
-        public Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional)
+        public Card GetCardFromHandToTrash(GameState gameState, CardPredicate acceptableCard, bool isOptional, CollectionCards cardsTrashedSoFar)
         {
             var saved = gameState.self;
             gameState.self = this.self;
-            var result = this.playerAction.GetCardFromHandToTrash(gameState, acceptableCard, isOptional);
+            var result = this.playerAction.GetCardFromHandToTrash(gameState, acceptableCard, isOptional, cardsTrashedSoFar);
             gameState.self = saved;
             return result;
         }
