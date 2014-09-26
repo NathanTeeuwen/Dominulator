@@ -240,6 +240,11 @@ namespace Dominion
             return this.CountOf(card) > 0;
         }
 
+        public bool Contains(Card card)
+        {
+            return this.AnyOf(card);
+        }
+
         public bool AnyWhere(CardPredicate predicate)
         {
             for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)
