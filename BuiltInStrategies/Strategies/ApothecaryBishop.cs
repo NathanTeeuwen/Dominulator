@@ -11,14 +11,30 @@ namespace Strategies
     public class ApothecaryBishop
             : Strategy
     {
-
         public static PlayerAction Player()
         {
-            return new PlayerAction(
-                        "ApothecaryBishop",
-                        purchaseOrder: PurchaseOrder(),
-                        actionOrder: ActionOrder(),
-                        trashOrder: TrashOrder());
+            return new MyPlayerAction();
+        }
+
+        class MyPlayerAction
+            : PlayerAction
+        {
+            public MyPlayerAction()
+                : base("ApothecaryBishop",
+                    purchaseOrder: PurchaseOrder(),
+                    actionOrder: ActionOrder(),
+                    trashOrder: TrashOrder())
+            {
+            }
+
+            public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState, bool isOptional)
+            {
+                var result = gameState.Self.CardsBeingRevealed.FindCard(card => card != Cards.Apothecary);
+                
+                if (result != null) return result;
+                
+                return base.GetCardFromRevealedCardsToTopDeck(gameState, isOptional);
+            }
         }
 
         private static ICardPicker PurchaseOrder()
@@ -46,9 +62,22 @@ namespace Strategies
         {
             return new CardPickByPriority(
                         CardAcceptance.For(Cards.Curse),
+                        CardAcceptance.For(Cards.Potion, ShouldTrashPotion),
                         CardAcceptance.For(Cards.Province, ShouldTrashProvince),
                         CardAcceptance.For(Cards.Estate, gameState => CountAllOwned(Cards.Estate, gameState) > 1 || ShouldTrashLastEstate(gameState)),
                         CardAcceptance.For(Cards.Bishop, gameState => CountAllOwned(Cards.Bishop, gameState) > 1));
+        }
+
+        private static bool ShouldTrashPotion(GameState gameState)
+        {
+            bool isSelfPlaying = gameState.CurrentContext.IsSelfPlaying(gameState);
+            if (!isSelfPlaying)
+                return false;
+
+            if (gameState.Self.ExpectedCoinValueAtEndOfTurn >= 7 && CountOfPile(Cards.Province, gameState) <= 3)
+                return true;
+
+            return false;
         }
 
         private static bool ShouldTrashProvince(GameState gameState)
