@@ -76,23 +76,25 @@ namespace Dominion.CardTypes
         public static Bishop card = new Bishop();
 
         private Bishop()
-            : base("Bishop", Expansion.Prosperity, coinCost: 4, isAction: true)
+            : base("Bishop", Expansion.Prosperity, coinCost: 4, isAction: true, plusCoins:1 )
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.victoryTokenCount += 1;
+            int cardValue = 0;
             Card trashedCard = currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCardsToTrash => true, isOptional: false);
             if (trashedCard != null)
             {
-                currentPlayer.victoryTokenCount += trashedCard.CurrentCoinCost(currentPlayer) / 2;
-            }
+                cardValue = trashedCard.CurrentCoinCost(currentPlayer) / 2;
+            }            
 
             foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
             {
                 otherPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCardsToTrash => true, isOptional: true);
             }
+
+            currentPlayer.AddVictoryTokens(1 + cardValue);
         }
     }
 
@@ -232,7 +234,7 @@ namespace Dominion.CardTypes
 
         private new void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
-            currentPlayer.victoryTokenCount += 1;
+            currentPlayer.AddVictoryTokens(1);
         }
     }
 

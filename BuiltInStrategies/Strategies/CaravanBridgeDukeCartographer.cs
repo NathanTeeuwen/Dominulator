@@ -27,7 +27,7 @@ namespace Strategies
             {
             }
 
-            public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
+            public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState, bool isOptional)
             {
                 BagOfCards revealedCards = gameState.Self.CardsBeingRevealed;
                 var self = gameState.Self;

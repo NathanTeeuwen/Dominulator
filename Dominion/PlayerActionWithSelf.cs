@@ -161,11 +161,11 @@ namespace Dominion
             return result;
         }
 
-        public Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
+        public Card GetCardFromRevealedCardsToTopDeck(GameState gameState, bool isOptional)
         {
             var saved = gameState.self;
             gameState.self = this.self;
-            var result = this.playerAction.GetCardFromRevealedCardsToTopDeck(gameState);
+            var result = this.playerAction.GetCardFromRevealedCardsToTopDeck(gameState, isOptional);
             gameState.self = saved;
             return result;
         }

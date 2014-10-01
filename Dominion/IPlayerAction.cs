@@ -22,7 +22,7 @@ namespace Dominion
         Card GetCardFromTrashToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional);        
         Card GetCardFromPlayToTopDeckDuringCleanup(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Card GetCardFromDiscardToTopDeck(GameState gameState, bool isOptional);
-        Card GetCardFromRevealedCardsToTopDeck(GameState gameState);
+        Card GetCardFromRevealedCardsToTopDeck(GameState gameState, bool isOptional);
         Card GetCardFromRevealedCardsToTrash(GameState gameState, CardPredicate acceptableCard);
         Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState);
         Card GetCardFromRevealedCardsToDiscard(GameState gameState);

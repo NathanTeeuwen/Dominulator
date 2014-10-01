@@ -163,6 +163,11 @@ namespace Dominion
         public virtual void PlayerReturnedCardToPile(PlayerState playerState, Card card)
         {
 
-        }        
+        }   
+     
+        public virtual void PlayerGainedVictoryTokens(PlayerState playerState, int amount)
+        {
+
+        }
     }
 }

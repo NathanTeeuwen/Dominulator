@@ -122,7 +122,7 @@ namespace Dominion
             return NoCardIfOptional(isOptional);   
         }
 
-        virtual public Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
+        virtual public Card GetCardFromRevealedCardsToTopDeck(GameState gameState, bool isOptional)
         {
             return PlayerMustMakeCardChoice();
         }

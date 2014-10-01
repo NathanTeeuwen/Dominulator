@@ -61,6 +61,12 @@ namespace Dominion
             }
         }
 
+        public bool IsSelfPlaying(GameState gameState)
+        {
+            var currentPlayerState = CurrentPlayerState;
+            return gameState.Self == currentPlayerState || currentPlayerState == null;
+        }
+
         public Card CurrentCard
         {
             get

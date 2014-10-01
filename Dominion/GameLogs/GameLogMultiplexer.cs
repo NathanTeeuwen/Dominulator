@@ -224,6 +224,14 @@ namespace Dominion
             }
         }
 
+        public void PlayerGainedVictoryTokens(PlayerState playerState, int amount)
+        {
+            for (int i = 0; i < this.gameLogs.Length; ++i)
+            {
+                this.gameLogs[i].PlayerGainedVictoryTokens(playerState, amount);
+            }
+        }
+
         public void PlayerGainedActions(PlayerState playerState, int amount)
         {
             for (int i = 0; i < this.gameLogs.Length; ++i)

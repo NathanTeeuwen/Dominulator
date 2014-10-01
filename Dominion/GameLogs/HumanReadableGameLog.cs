@@ -275,8 +275,10 @@ namespace Dominion
             foreach (PlayerState player in gameState.players.AllPlayers)
             {
                 this.textWriter.WriteLine("{0} Total Score is: {1}", player.actions.PlayerName, player.TotalScore());
-                this.PushScope();
+                this.PushScope();                
                 this.WriteAllOwnedCards(player);
+                if (player.VictoryTokenCount > 0)
+                    this.textWriter.WriteLine("{0} points from Victory Tokens.", player.VictoryTokenCount);
                 this.PopScope();
                 this.textWriter.WriteLine();           
             }
@@ -294,6 +296,12 @@ namespace Dominion
                 var sign = coinAmount > 0 ? "+" : "";
                 this.textWriter.WriteLine("{2}{0} Coin = {1} all together.", coinAmount, playerState.AvailableCoins, sign);
             }
+        }
+
+        public void PlayerGainedVictoryTokens(PlayerState playerState, int amount)
+        {
+            var sign = amount > 0 ? "+" : "";
+            this.textWriter.WriteLine("{2}{0} Victory Points = {1} all together.", amount, playerState.VictoryTokenCount, sign);
         }
 
         public void PlayerGainedPotion(PlayerState playerState, int count)

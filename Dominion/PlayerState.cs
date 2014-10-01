@@ -95,7 +95,9 @@ namespace Dominion
         internal BagOfCards cardsInPlayAtBeginningOfCleanupPhase;
 
         // persistent Counters
-        internal int victoryTokenCount;
+        private int victoryTokenCount;
+        internal int VictoryTokenCount { get { return this.victoryTokenCount; } }
+
         internal int pirateShipTokenCount;
 
         internal PlayerState(IPlayerAction actions, int playerIndex, Game game)
@@ -372,7 +374,16 @@ namespace Dominion
 
         internal void AddCoinTokens(int coinAmount)
         {
-            this.turnCounters.AddCoinTokens(this, coinAmount);
+            this.turnCounters.AddCoinTokens(this, coinAmount);   
+        }
+
+        internal void AddVictoryTokens(int amount)
+        {
+            if (amount == 0)
+                return;
+
+            this.victoryTokenCount += amount;
+            this.gameLog.PlayerGainedVictoryTokens(this, amount);
         }
 
         internal void DoPlayAction(Card currentCard, GameState gameState, int countTimes = 1)
@@ -397,7 +408,7 @@ namespace Dominion
                     this.AddActions(cardToPlayAs.plusAction);
                     this.AddBuys(cardToPlayAs.plusBuy);
                     this.AddCoins(cardToPlayAs.plusCoin);
-                    this.victoryTokenCount += cardToPlayAs.plusVictoryToken;
+                    this.AddVictoryTokens(cardToPlayAs.plusVictoryToken);
                     this.DrawAdditionalCardsIntoHand(cardToPlayAs.plusCard);
 
                     if (cardToPlayAs.isAttack && cardToPlayAs.isAttackBeforeAction)
@@ -1401,7 +1412,7 @@ namespace Dominion
 
         internal Card RequestPlayerTopDeckCardFromRevealed(GameState gameState, bool isOptional)
         {
-            Card cardTypeToTopDeck = this.actions.GetCardFromRevealedCardsToTopDeck(gameState);
+            Card cardTypeToTopDeck = this.actions.GetCardFromRevealedCardsToTopDeck(gameState, isOptional);
             if (cardTypeToTopDeck == null && !isOptional)
             {
                 throw new Exception("Must choose a card to top deck");
@@ -1917,8 +1928,8 @@ namespace Dominion
             {
                 return null;
             }
-
-            this.cardsBeingRevealed.RemoveCard(card);
+        
+            this.gameLog.PlayerPutCardInHand(this, card);
             this.hand.AddCard(card);
             return card;
         }             

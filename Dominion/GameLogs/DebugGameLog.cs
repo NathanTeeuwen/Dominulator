@@ -283,5 +283,11 @@ namespace Dominion
         {
             this.textWriter.WriteLine("{0} returned {1} to its pile", playerState.actions.PlayerName, card.name);
         }
+
+        public void PlayerGainedVictoryTokens(PlayerState playerState, int amount)
+        {
+            var sign = amount > 0 ? "+" : "";
+            this.textWriter.WriteLine("{2}{0} Coin = {1} all together.", amount, playerState.VictoryTokenCount, sign);
+        }
     }
 }

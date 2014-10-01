@@ -51,7 +51,7 @@ namespace Dominion.CardTypes
         public static Apothecary card = new Apothecary();
 
         private Apothecary()
-            : base("Apothecary", Expansion.Alchemy, coinCost: 2, potionCost: 1, isAction: true, plusCards: 1, plusActions: 1)
+            : base("Apothecary", Expansion.Alchemy, pluralName: "Apothecaries", coinCost: 2, potionCost: 1, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
 
@@ -59,6 +59,7 @@ namespace Dominion.CardTypes
         {
             currentPlayer.RevealCardsFromDeck(4);
             currentPlayer.MoveRevealedCardsToHand(card => card == Copper.card || card == Potion.card);
+            currentPlayer.RequestPlayerTopDeckRevealedCardsInAnyOrder(gameState); 
         }
     }
 

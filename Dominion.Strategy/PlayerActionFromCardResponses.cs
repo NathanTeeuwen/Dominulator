@@ -151,13 +151,13 @@ namespace Dominion.Strategy
                 return base.GetCardFromDiscardToTopDeck(gameState, isOptional);
         }
 
-        public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
+        public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState, bool isOptional)
         {
             IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
             if (playerAction != null)
-                return playerAction.GetCardFromRevealedCardsToTopDeck(gameState);
+                return playerAction.GetCardFromRevealedCardsToTopDeck(gameState, isOptional);
             else
-                return base.GetCardFromRevealedCardsToTopDeck(gameState);
+                return base.GetCardFromRevealedCardsToTopDeck(gameState, isOptional);
         }
 
         public override Card GetCardFromRevealedCardsToTrash(GameState gameState, CardPredicate acceptableCard)

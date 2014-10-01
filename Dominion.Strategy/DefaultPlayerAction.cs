@@ -465,10 +465,12 @@ namespace Dominion.Strategy
             return base.GetCardFromPlayToTopDeckDuringCleanup(gameState, acceptableCard, isOptional);
         }
 
-        public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
-        {            
-            // should throw not implemented?
-            return null;
+        public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState, bool isOptional)
+        {
+            if (isOptional)
+                return null;
+
+            return gameState.Self.CardsBeingRevealed.SomeCard();
         }
 
         public override Card GetCardFromHandToDeferToNextTurn(GameState gameState)

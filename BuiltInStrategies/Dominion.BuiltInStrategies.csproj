@@ -46,6 +46,7 @@
     <Compile Include="Strategies\ArmoryConspiratorForagerGreatHall.cs" />
     <Compile Include="Strategies\BigMoney.cs" />
     <Compile Include="Strategies\BigMoneyBridge.cs" />
+    <Compile Include="Strategies\ApothecaryBishop.cs" />
     <Compile Include="Strategies\BigMoneyCartographer.cs" />
     <Compile Include="Strategies\BigMoneyColony.cs" />
     <Compile Include="Strategies\BigMoneyCouncilroomEarlyProvince.cs" />
