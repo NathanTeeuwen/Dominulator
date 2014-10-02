@@ -295,6 +295,24 @@ namespace Dominion
             }
         }
 
+        public int SmallestScoreDifference(PlayerState currentPlayer)
+        {
+            int scoreDiff = 0;
+            int currentScore = currentPlayer.TotalScore();
+            
+            foreach(var otherPlayer in this.players.AllPlayers)
+            {
+                if (otherPlayer == currentPlayer)
+                    continue;
+                int otherScore = otherPlayer.TotalScore();
+                int diff = currentScore - otherScore;
+                if (scoreDiff == 0 || diff > scoreDiff)
+                    scoreDiff = diff;
+            }
+
+            return scoreDiff;
+        }
+
         static int ComparePlayerWinner(PlayerState first, PlayerState second)
         {
             int scoreDifference = second.TotalScore() - first.TotalScore();

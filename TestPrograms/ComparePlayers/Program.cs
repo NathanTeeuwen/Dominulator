@@ -28,8 +28,8 @@ namespace Program
                     builder.ToGameConfig(),
                     firstPlayerAdvantage:false,
                     createHtmlReport: true, 
-                    numberOfGames: 1000, 
-                    shouldParallel: false);
+                    numberOfGames: 10000, 
+                    shouldParallel: true);
             }         
         }                
     }            

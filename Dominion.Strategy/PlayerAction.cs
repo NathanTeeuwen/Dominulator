@@ -19,11 +19,12 @@ namespace Dominion.Strategy
             ICardPicker purchaseOrder,
             ICardPicker actionOrder = null,
             bool chooseDefaultActionOnNone = true,
+            bool enablePenultimateProvinceRule = false,
             ICardPicker treasurePlayOrder = null,
             ICardPicker discardOrder = null,
             ICardPicker trashOrder = null,
             ICardPicker gainOrder = null)
-            : base(new DefaultPlayerAction(name, purchaseOrder, actionOrder, chooseDefaultActionOnNone, treasurePlayOrder, discardOrder, trashOrder, gainOrder))
+            : base(new DefaultPlayerAction(name, purchaseOrder, actionOrder, chooseDefaultActionOnNone, enablePenultimateProvinceRule, treasurePlayOrder, discardOrder, trashOrder, gainOrder))
         {
 
         }

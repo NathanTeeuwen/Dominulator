@@ -18,6 +18,14 @@ namespace Strategies
                         purchaseOrder: PurchaseOrder());
         }
 
+        public static PlayerAction Player(bool ppr)
+        {
+            return new PlayerAction(
+                        "BigMoney",
+                        enablePenultimateProvinceRule: ppr,
+                        purchaseOrder: PurchaseOrder());
+        }
+
         private static CardPickByPriority PurchaseOrder()
         {
             return new CardPickByPriority(

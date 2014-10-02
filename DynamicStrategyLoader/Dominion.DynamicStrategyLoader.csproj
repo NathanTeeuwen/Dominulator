@@ -40,10 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DynamicStrategyLoader.cs" />
-    <EmbeddedResource Include="EmbeddedStrategies\HermitFeodum.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\AmbassadorCaravanApprenticeMerchantGuild.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\AmbassadorCaravanLaboratory.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\ApothecaryBishop.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\ArmoryConspiratorForagerGreatHall.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\BigMoney.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\BigMoneyBridge.cs" />
@@ -79,6 +78,7 @@
     <EmbeddedResource Include="EmbeddedStrategies\FamiliarPotionSilverOpenning.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\FamiliarSilverSilverOpenning.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\FeodumDevelop.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\FirstGame.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\FishingVillageChapelPoorHouse.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\FishingVillageChapelPoorHouseTalisman.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\FishingVillageJack.cs" />
@@ -87,7 +87,9 @@
     <EmbeddedResource Include="EmbeddedStrategies\GardensBeggarIronworks.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\GovernorJunkDealer.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\GovernorMarketsquare.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\GovernorSpiceMerchantHorseTradersJunkDealer.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\Harem.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\HermitFeodum.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\HermitMarketSquare.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\HorseTraderSoothsayerMinionGreatHall.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\Illgottengains.cs" />
@@ -116,6 +118,7 @@
     <EmbeddedResource Include="EmbeddedStrategies\TaxMan.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\TreasureMap.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\TreasureMapDoctor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BuiltInStrategies\Dominion.BuiltInStrategies.csproj">

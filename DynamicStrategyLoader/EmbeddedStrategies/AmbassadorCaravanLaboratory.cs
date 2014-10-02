@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Strategies
 {
-    class AmbassadorCaravanLaboratory
+    public class AmbassadorCaravanLaboratory
         : Strategy    
     {
 
