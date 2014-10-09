@@ -16,7 +16,7 @@ namespace TestCompareStrategyVsAllKnownStrategies
         {
             using (var testOutput = new TestOutput())
             {
-                CompareStrategyVsAllKnownStrategies(Strategies.ApothecaryBishop.Player(), testOutput);
+                CompareStrategyVsAllKnownStrategies(Strategies.RatsScryingPoolVillagePoorHouseSeahag.Player(), testOutput);
             }
         }
 

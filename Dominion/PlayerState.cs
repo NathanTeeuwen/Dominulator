@@ -708,13 +708,13 @@ namespace Dominion
             this.MoveAllCardsToDiscard(this.hand, gameState, DeckPlacement.Hand);
         }
 
-        internal Card DiscardCardFromTopOfDeck()
+        internal Card DiscardCardFromTopOfDeck(GameState gameState)
         {
             Card card = this.deck.DrawCardFromTop();
             if (card != null)
             {
-                this.discard.AddCard(card);
-            }
+                this.DiscardCard(card, gameState, source:DeckPlacement.TopOfDeck);                
+            }            
 
             return card;
         }
@@ -1809,7 +1809,7 @@ namespace Dominion
 
             if (source != DeckPlacement.Deck)
             {
-                this.gameLog.PlayerDiscardCard(this, card);
+                this.gameLog.PlayerDiscardCard(this, card, source);
                 this.gameLog.PushScope();
                 gameState.cardContextStack.PushCardContext(this, card, CardContextReason.CardBeingDiscarded);
                 if (gameState.players.CurrentPlayer.PlayPhase != PlayPhase.Cleanup)

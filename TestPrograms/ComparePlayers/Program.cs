@@ -16,8 +16,8 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.ApothecaryBishop.Player();
-                var player2 = Strategies.BigMoney.Player();
+                var player1 = Strategies.RatsScryingPoolVillagePoorHouseSeahag.Player();
+                var player2 = Strategies.TreasurySeaHag.Player();
                
                 var builder = new GameConfigBuilder();
 

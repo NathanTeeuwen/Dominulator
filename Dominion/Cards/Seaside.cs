@@ -439,7 +439,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.DiscardCardFromTopOfDeck();
+            otherPlayer.DiscardCardFromTopOfDeck(gameState);
             otherPlayer.GainCardFromSupply(Curse.card, gameState, DeckPlacement.TopOfDeck);
         }
     }

@@ -136,11 +136,11 @@ namespace Dominion
             }
         }
 
-        public void PlayerDiscardCard(PlayerState playerState, Card card)
+        public void PlayerDiscardCard(PlayerState playerState, Card card, DeckPlacement source)
         {
             for (int i = 0; i < this.gameLogs.Length; ++i)
             {
-                this.gameLogs[i].PlayerDiscardCard(playerState, card);
+                this.gameLogs[i].PlayerDiscardCard(playerState, card, source);
             }
         }
 

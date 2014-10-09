@@ -854,7 +854,7 @@ namespace Dominion.CardTypes
         public static Rats card = new Rats();
 
         private Rats()
-            : base("Rats", Expansion.DarkAges, coinCost: 4, isAction: true, plusCards: 1, plusActions: 1, defaultSupplyCount: 20)
+            : base("Rats", Expansion.DarkAges, pluralName:"Rats", coinCost: 4, isAction: true, plusCards: 1, plusActions: 1, defaultSupplyCount: 20)
         {
         }
 

@@ -215,7 +215,7 @@ namespace Dominion
             }
         }
 
-        public void PlayerDiscardCard(PlayerState playerState, Card card)
+        public void PlayerDiscardCard(PlayerState playerState, Card card, DeckPlacement source)
         {
             if (playerState.PlayPhase == PlayPhase.Cleanup)
             {
@@ -223,7 +223,7 @@ namespace Dominion
             }
             else
             {
-                this.textWriter.WriteLine("{0} Discards {1}.", GetPlayerName(playerState), card.name);
+                this.textWriter.WriteLine("{0} Discards {1} from {2}.", GetPlayerName(playerState), card.name, TextForDeckPlacement(source));
             }
         }
 
@@ -499,6 +499,31 @@ namespace Dominion
                 textWriter.Write("{0} {1}", cardCount, cardCount > 1 ? lastCardType.pluralName : lastCardType.name);
                 cardCount = 0;
             }            
+        }
+
+        private string TextForDeckPlacement(DeckPlacement source)
+        {
+            switch (source)
+            {
+                case DeckPlacement.Discard:
+                    return "discard";
+                case DeckPlacement.TopOfDeck:
+                    return "top of deck";
+                case DeckPlacement.Default:
+                    throw new Exception();
+                case DeckPlacement.Hand:
+                    return "hand";
+                case DeckPlacement.Play:
+                    return "play";
+                case DeckPlacement.Revealed:
+                    return "revealed cards";
+                case DeckPlacement.Supply:
+                    return "supply";
+                case DeckPlacement.Trash:
+                    return "trash";
+                default:
+                    throw new Exception();
+            }
         }
     }
 }

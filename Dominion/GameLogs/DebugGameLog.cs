@@ -131,9 +131,9 @@ namespace Dominion
             this.textWriter.WriteLine("{0} Discarded {1}.", playerState.actions.PlayerName, card.name);
         }
 
-        public void PlayerDiscardCard(PlayerState playerState, Card card)
+        public void PlayerDiscardCard(PlayerState playerState, Card card, DeckPlacement source)
         {
-            this.textWriter.WriteLine("{0} Discarded {1}.", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} Discarded {1} from {2}.", playerState.actions.PlayerName, card.name, TextForDeckPlacement(source));
         }
 
         public void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source)
@@ -288,6 +288,31 @@ namespace Dominion
         {
             var sign = amount > 0 ? "+" : "";
             this.textWriter.WriteLine("{2}{0} Coin = {1} all together.", amount, playerState.VictoryTokenCount, sign);
+        }
+
+        private string TextForDeckPlacement(DeckPlacement source)
+        {
+            switch (source)
+            {
+                case DeckPlacement.Discard:
+                    return "discard";
+                case DeckPlacement.TopOfDeck:
+                    return "top of deck";
+                case DeckPlacement.Default:
+                    return "default";
+                case DeckPlacement.Hand:
+                    return "hand";
+                case DeckPlacement.Play:
+                    return "play";
+                case DeckPlacement.Revealed:
+                    return "revealed cards";
+                case DeckPlacement.Supply:
+                    return "supply";
+                case DeckPlacement.Trash:
+                    return "trash";
+                default:
+                    throw new Exception();
+            }
         }
     }
 }

@@ -75,7 +75,7 @@ namespace Dominion
         {
         }
 
-        public virtual void PlayerDiscardCard(PlayerState playerState, Card card)
+        public virtual void PlayerDiscardCard(PlayerState playerState, Card card, DeckPlacement source)
         {
         }
 

@@ -60,6 +60,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Trader] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.TradingPost] = Strategy.HasAtLeast2ToTrashInHand;
             result[Dominion.Cards.Transmute] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Rats] = Strategy.HasCardToTrashInHand;
             return result;
         }
     }

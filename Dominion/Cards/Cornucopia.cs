@@ -229,7 +229,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            Card discardedCard = otherPlayer.DiscardCardFromTopOfDeck();
+            Card discardedCard = otherPlayer.DiscardCardFromTopOfDeck(gameState);
             if (discardedCard != null)
             {
                 if (discardedCard.isVictory)
