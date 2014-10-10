@@ -23,7 +23,7 @@ namespace Strategies
         {
             return new CardPickByPriority(
                         CardAcceptance.For(Cards.Province),
-                        CardAcceptance.For(Cards.Potion, 1),
+                        CardAcceptance.For(Cards.Potion, 1, gameState => !ShouldTrashPotion(gameState)),
                         CardAcceptance.For(Cards.Rats, 1),
                         CardAcceptance.For(Cards.SeaHag, 1),                        
                         CardAcceptance.For(Cards.ScryingPool, 5),
