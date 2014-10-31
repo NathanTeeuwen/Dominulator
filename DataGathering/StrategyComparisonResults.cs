@@ -22,8 +22,8 @@ namespace Dominion.Data
         public StrategyComparisonResults(StrategyComparison comparison, bool gatherStats)
         {
             this.comparison = comparison;
-            this.statGatherer = gatherStats ? new StatsPerTurnGameLog(2, comparison.gameConfig.cardGameSubset) : null;
-            this.winnerCount = new int[2];
+            this.statGatherer = gatherStats ? new StatsPerTurnGameLog(comparison.NumberOfPlayers, comparison.gameConfig.cardGameSubset) : null;
+            this.winnerCount = new int[comparison.NumberOfPlayers];
             this.tieCount = 0;
             this.maxTurnNumber = -1;
             this.pointSpreadHistogramData = new HistogramData();

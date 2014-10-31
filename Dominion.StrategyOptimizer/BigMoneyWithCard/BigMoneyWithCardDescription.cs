@@ -76,10 +76,10 @@ namespace Program
             PlayerAction.SetKingdomCards(builder, player1Action, player1Action);
 
             var gameConfig = builder.ToGameConfig();
-            var firstPlayerAdvantage = false;
+            var rotateWhoStartsFirst = true;
             var numberOfGames = 100;
 
-            var strategyComparison = new Dominion.Data.StrategyComparison(player1Action, player2Action, gameConfig, firstPlayerAdvantage, numberOfGames);
+            var strategyComparison = new Dominion.Data.StrategyComparison(player1Action, player2Action, gameConfig, rotateWhoStartsFirst, numberOfGames);
 
             var results = strategyComparison.ComparePlayers(
                 gameIndex => null,

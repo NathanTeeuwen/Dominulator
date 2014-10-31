@@ -39,10 +39,9 @@ namespace Dominion
         }
 
         public double ComparePlayers(
-            PlayerAction player1,
-            PlayerAction player2,
+            PlayerAction[] playerActions,
             GameConfig gameConfig,
-            bool firstPlayerAdvantage = false,
+            bool rotateWhoStartsFirst = true,
             bool shouldParallel = true,
             bool showVerboseScore = true,
             bool showCompactScore = false,
@@ -53,10 +52,10 @@ namespace Dominion
             bool debugLogs = false,
             CreateGameLog createGameLog = null)
         {
-            var strategyComparison = new StrategyComparison(player1, player2, gameConfig, firstPlayerAdvantage, numberOfGames);
+            var strategyComparison = new StrategyComparison(playerActions, gameConfig, rotateWhoStartsFirst, numberOfGames);
             var results = strategyComparison.ComparePlayers(
-                gameIndex => gameIndex < logGameCount ? GetGameLogWriterForIteration(player1, player2, gameIndex) : null,
-                gameIndex => debugLogs && gameIndex < logGameCount ? GetDebugLogWriterForIteration(player1, player2, gameIndex) : null,
+                gameIndex => gameIndex < logGameCount ? GetGameLogWriterForIteration(playerActions, gameIndex) : null,
+                gameIndex => debugLogs && gameIndex < logGameCount ? GetDebugLogWriterForIteration(playerActions, gameIndex) : null,
                 shouldParallel: shouldParallel,
                 gatherStats: createHtmlReport,
                 createGameLog: createGameLog);
@@ -88,10 +87,39 @@ namespace Dominion
         public double ComparePlayers(
             PlayerAction player1,
             PlayerAction player2,
+            GameConfig gameConfig,
+            bool rotateWhoStartsFirst = true,
+            bool shouldParallel = true,
+            bool showVerboseScore = true,
+            bool showCompactScore = false,
+            bool showDistribution = false,
+            bool createHtmlReport = true,
+            int numberOfGames = 1000,
+            int logGameCount = 100,
+            bool debugLogs = false,
+            CreateGameLog createGameLog = null)
+        {
+            return ComparePlayers(new PlayerAction[] { player1, player2 },
+                gameConfig,
+                rotateWhoStartsFirst,
+                shouldParallel,
+                showVerboseScore,
+                showCompactScore,
+                showDistribution,
+                createHtmlReport,
+                numberOfGames,
+                logGameCount,
+                debugLogs,
+                createGameLog);
+        }
+
+        public double ComparePlayers(
+            PlayerAction player1,
+            PlayerAction player2,
             bool useShelters = false,
             bool useColonyAndPlatinum = false,
             StartingCardSplit split = StartingCardSplit.Random,
-            bool firstPlayerAdvantage = false,
+            bool rotateWhoStartsFirst = true,
             IEnumerable<CardCountPair>[] startingDeckPerPlayer = null,
             bool shouldParallel = true,
             bool showVerboseScore = true,
@@ -119,7 +147,7 @@ namespace Dominion
                 player1,
                 player2,
                 gameConfig,
-                firstPlayerAdvantage: firstPlayerAdvantage,
+                rotateWhoStartsFirst: rotateWhoStartsFirst,
                 shouldParallel: shouldParallel,
                 showVerboseScore: showVerboseScore,
                 showCompactScore: showCompactScore,
@@ -137,7 +165,7 @@ namespace Dominion
           bool useShelters = false,
           bool useColonyAndPlatinum = false,
           StartingCardSplit split = StartingCardSplit.Random,
-          bool firstPlayerAdvantage = false,
+          bool rotateWhoStartsFirst = false,
           IEnumerable<CardCountPair>[] startingDeckPerPlayer = null,
           bool shouldParallel = true,
           bool showVerboseScore = true,
@@ -155,7 +183,7 @@ namespace Dominion
                 useShelters,
                 useColonyAndPlatinum,
                 split,
-                firstPlayerAdvantage,
+                rotateWhoStartsFirst,
                 startingDeckPerPlayer,
                 shouldParallel,
                 showVerboseScore,
@@ -177,17 +205,38 @@ namespace Dominion
             }
         }
 
-        public static IndentedTextWriter GetGameLogWriterForIteration(PlayerAction player1, PlayerAction player2, int gameCount)
+        private static string GetFileNameForType(PlayerAction[] playerActions, int gameCount, string logType)
         {
-            string fileName = GetOutputFilename(player1.PlayerName + " VS " + player2.PlayerName + ".gamelog" + (gameCount == 0 ? "" : "." + gameCount.ToString()) + ".txt");
+            var stringBuilder = new System.Text.StringBuilder();
+            stringBuilder.Append(playerActions[0].PlayerName);
+            for (int i = 1; i < playerActions.Length; ++i)
+            {
+                stringBuilder.Append(" VS ");
+                stringBuilder.Append(playerActions[i].PlayerName);
+            }
+            stringBuilder.Append(".");
+            stringBuilder.Append(logType);
+            stringBuilder.Append(gameCount == 0 ? "" : "." + gameCount.ToString());
+            stringBuilder.Append(".txt");
+
+            string fileName = GetOutputFilename(stringBuilder.ToString());
+
+            return fileName;
+        }
+
+        public static IndentedTextWriter GetGameLogWriterForIteration(PlayerAction[] playerActions, int gameCount)
+        {
+            string fileName = GetFileNameForType(playerActions, gameCount, "GameLog");
+
             if (fileName == null)
                 return null;
             return new IndentedTextWriter(new System.IO.StreamWriter(fileName));
         }
 
-        public static IndentedTextWriter GetDebugLogWriterForIteration(PlayerAction player1, PlayerAction player2, int gameCount)
+        public static IndentedTextWriter GetDebugLogWriterForIteration(PlayerAction[] playerActions, int gameCount)
         {
-            string fileName = GetOutputFilename(player1.PlayerName + " VS " + player2.PlayerName + ".DebugLog" + (gameCount == 0 ? "" : "." + gameCount.ToString()) + ".txt");
+            string fileName = GetFileNameForType(playerActions, gameCount, "DebugLog");
+
             if (fileName == null)
                 return null;
             return new IndentedTextWriter(new System.IO.StreamWriter(fileName));

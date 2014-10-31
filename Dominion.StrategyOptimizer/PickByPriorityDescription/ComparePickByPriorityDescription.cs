@@ -28,9 +28,9 @@ namespace Program
             PlayerAction.SetKingdomCards(builder, leftPlayer, rightPlayer);
 
             var gameConfig = builder.ToGameConfig();
-            var firstPlayerAdvantage = false;
+            var rotateWhoStartsFirst = true;
 
-            var strategyComparison = new Dominion.Data.StrategyComparison(leftPlayer, rightPlayer, gameConfig, firstPlayerAdvantage, numberOfGames);
+            var strategyComparison = new Dominion.Data.StrategyComparison(leftPlayer, rightPlayer, gameConfig, rotateWhoStartsFirst, numberOfGames);
 
             var results = strategyComparison.ComparePlayers(
                 gameIndex => null,

@@ -57,7 +57,7 @@ namespace HtmlRenderer
             }
             htmlWriter.Header1(player1.PlayerName + " VS " + player2.PlayerName);
             htmlWriter.WriteLine("Number of Games: " + this.comparisonResults.comparison.numberOfGames);
-            htmlWriter.WriteLine(this.comparisonResults.comparison.firstPlayerAdvantage ? player1.PlayerName + " always started first" : "Players took turns going first");
+            htmlWriter.WriteLine(!this.comparisonResults.comparison.rotateWhoStartsFirst ? player1.PlayerName + " always started first" : "Players took turns going first");
 
             var pieLabels = new List<string>();
             var pieData = new List<float>();
@@ -144,35 +144,6 @@ namespace HtmlRenderer
             });
 
             htmlWriter.End();            
-        }
-
-        static string GetHumanReadableGameLog(
-            PlayerAction[] playerActions,
-            GameConfig gameConfig,
-            bool firstPlayerAdvantage,
-            int gameNumber)
-        {
-            int[] originalPositions = new int[] { 0, 1 };
-            int[] swappedPlayerPositions = new int[] { 1, 0 };
-
-            bool swappedOrder = !firstPlayerAdvantage && (gameNumber % 2 == 1);
-            int[] playedPositions = swappedOrder ? swappedPlayerPositions : originalPositions;
-
-            var stringWriter = new System.IO.StringWriter();
-            var textWriter = new IndentedTextWriter(stringWriter);
-            var readableLog = new HumanReadableGameLog(textWriter);
-            var gainSequenceLog = new GainSequenceGameLog(textWriter);
-            Random random = new Random(gameNumber);
-            using (Game game = new Game(random, gameConfig, new GameLogMultiplexer(readableLog, gainSequenceLog)))
-            {
-                GameState gameState = new GameState(
-                    playerActions,
-                    playedPositions,
-                    game);
-                gameState.PlayGameToEnd();
-            }
-
-            return stringWriter.ToString();
         }
 
         private static void InsertCardData(

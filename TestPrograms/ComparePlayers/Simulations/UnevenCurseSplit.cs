@@ -65,7 +65,7 @@ namespace Program.Simulations
                 Strategies.BigMoneyWithCard.Player(Cards.Witch, cardCount: 2),
                 Strategies.BigMoneyWithCard.Player(Cards.Witch, cardCount: 2),
                 gameConfig,
-                firstPlayerAdvantage: true,                
+                rotateWhoStartsFirst: true,                
                 numberOfGames: gameCount,
                 createGameLog: new Dominion.Data.CreateGameLog(gameLogFactory.CreateGameLog));
 

@@ -16,8 +16,9 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.RatsScryingPoolVillagePoorHouseSeahag.Player();
-                var player2 = Strategies.TreasurySeaHag.Player();
+                var player1 = Strategies.OasisTunnelForagerMineVenture.Player();
+                //var player2 = Strategies.BigMoneyCultist.Player();
+                var player2 = Strategies.BigMoney.Player();
                
                 var builder = new GameConfigBuilder();
 
@@ -25,10 +26,11 @@ namespace Program
                 testOutput.ComparePlayers(
                     player1,
                     player2,
+                    //player2,
                     builder.ToGameConfig(),
-                    firstPlayerAdvantage:false,
+                    rotateWhoStartsFirst:true,
                     createHtmlReport: true, 
-                    numberOfGames: 10000, 
+                    numberOfGames: 1000, 
                     shouldParallel: true);
             }         
         }                

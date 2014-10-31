@@ -146,6 +146,9 @@ namespace Dominion
             Game game,
             IEnumerable<CardCountPair>[] startingDeckPerPlayer = null)
         {
+            if (playerActions.Length != playerPositions.Length)
+                throw new Exception();
+
             this.game = game;
             GameConfig gameConfig = game.GameConfig;
 

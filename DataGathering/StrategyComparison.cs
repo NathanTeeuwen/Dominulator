@@ -12,16 +12,44 @@ namespace Dominion.Data
     {
         public static int totalGameCount;
 
-        public PlayerAction[] playerActions;        
-        public GameConfig gameConfig;
-        public bool firstPlayerAdvantage;
-        public int numberOfGames;
+        public readonly PlayerAction[] playerActions;
+        public readonly GameConfig gameConfig;
+        public readonly bool rotateWhoStartsFirst;
+        public readonly int numberOfGames;
 
+        // state used to populate game orders without recreating every game needed order
+        
+        static int[][] rotated2PlayerPostions = new int[][] {
+            new int[] { 0, 1 },
+            new int[] { 1, 0 },
+        };
+
+        static int[][] rotated3PlayerPostions = new int[][] {
+            new int[] { 0, 1, 2 },
+            new int[] { 1, 2, 0 },
+            new int[] { 2, 0, 1 },
+        };
+
+        static int[][] rotated4PlayerPostions = new int[][] {
+            new int[] { 0, 1, 2, 3 },
+            new int[] { 1, 2, 3, 0 },
+            new int[] { 2, 3, 0, 1 },
+            new int[] { 3, 0, 1, 2},
+        };
+
+        public int NumberOfPlayers
+        {
+            get
+            {
+                return this.playerActions.Length;
+            }
+        }
+        
         public static StrategyComparisonResults Compare(
             PlayerAction player1,
             PlayerAction player2,
             int numberOfGames = 100,
-            bool firstPlayerAdvantage = false,
+            bool rotateWhoStartsFirst = false,
             bool shouldParalell = false,
             bool gatherStats = true)
         {           
@@ -29,7 +57,7 @@ namespace Dominion.Data
             PlayerAction.SetKingdomCards(builder, player1, player2);
 
             var gameConfig = builder.ToGameConfig();
-            var strategyComparison = new Dominion.Data.StrategyComparison(player1, player2, gameConfig, firstPlayerAdvantage, numberOfGames);
+            var strategyComparison = new Dominion.Data.StrategyComparison(player1, player2, gameConfig, rotateWhoStartsFirst, numberOfGames);
 
             var results = strategyComparison.ComparePlayers(
                 gameIndex => null,
@@ -45,12 +73,32 @@ namespace Dominion.Data
             PlayerAction player1,
             PlayerAction player2,
             GameConfig gameConfig,
-            bool firstPlayerAdvantage,
+            bool rotateWhoStartsFirst,
+            int numberOfGames)
+            : this(new PlayerAction[] { player1, player2}, gameConfig, rotateWhoStartsFirst, numberOfGames)
+        {           
+        }
+
+        public StrategyComparison(
+            PlayerAction player1,
+            PlayerAction player2,
+            PlayerAction player3,
+            GameConfig gameConfig,
+            bool rotateWhoStartsFirst,
+            int numberOfGames)
+            : this(new PlayerAction[] { player1, player2, player3},gameConfig, rotateWhoStartsFirst, numberOfGames )
+        {            
+        }
+
+        public StrategyComparison(
+            PlayerAction[] playerActions,            
+            GameConfig gameConfig,
+            bool rotateWhoStartsFirst,
             int numberOfGames)
         {
-            this.playerActions = new PlayerAction[] { player1, player2 };
+            this.playerActions = playerActions;
             this.gameConfig = gameConfig;
-            this.firstPlayerAdvantage = firstPlayerAdvantage;
+            this.rotateWhoStartsFirst = rotateWhoStartsFirst;
             this.numberOfGames = numberOfGames;
         }
 
@@ -63,9 +111,7 @@ namespace Dominion.Data
         {
             PlayerAction player1 = playerActions[0];
             PlayerAction player2 = playerActions[1];
-            int[] originalPositions = new int[] { 0, 1 };
-            int[] swappedPlayerPositions = new int[] { 1, 0 };
-
+            
             var result = new StrategyComparisonResults(this, gatherStats);            
 
             Action<int> loopBody = delegate(int gameCount)
@@ -100,10 +146,8 @@ namespace Dominion.Data
 
                     var gameLogMultiplexer = new GameLogMultiplexer(gameLogs.ToArray());
 
-                    // swap order every other game
-                    bool swappedOrder = !firstPlayerAdvantage && (gameCount % 2 == 1);
-
-                    int[] playedPositions = swappedOrder ? swappedPlayerPositions : originalPositions;
+                    // swap order every game if needed                    
+                    int[] playedPositions = this.GetPlayerOrderForGameNumber(gameCount);
 
                     Random random = new Random(gameCount);
                     using (Game game = new Game(random, gameConfig, gameLogMultiplexer))
@@ -157,11 +201,8 @@ namespace Dominion.Data
 
         public string GetHumanReadableGameLog(int gameNumber)
         {
-            int[] originalPositions = new int[] { 0, 1 };
-            int[] swappedPlayerPositions = new int[] { 1, 0 };
-
-            bool swappedOrder = !firstPlayerAdvantage && (gameNumber % 2 == 1);
-            int[] playedPositions = swappedOrder ? swappedPlayerPositions : originalPositions;
+            // swap order every game if needed                    
+            int[] playedPositions = this.GetPlayerOrderForGameNumber(gameNumber);
 
             var stringWriter = new System.IO.StringWriter();
             var textWriter = new IndentedTextWriter(stringWriter);
@@ -178,6 +219,20 @@ namespace Dominion.Data
             }
 
             return stringWriter.ToString();
+        }      
+
+        public int[] GetPlayerOrderForGameNumber(int gameNumber)
+        {
+            int[][] result =
+                this.NumberOfPlayers == 2 ? rotated2PlayerPostions :
+                this.NumberOfPlayers == 3 ? rotated3PlayerPostions :
+                this.NumberOfPlayers == 4 ? rotated4PlayerPostions :
+                null;
+
+            if (!this.rotateWhoStartsFirst)
+                return result[0];
+
+            return result[gameNumber % this.NumberOfPlayers];
         }
     }
 }
