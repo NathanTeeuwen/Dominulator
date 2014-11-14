@@ -16,9 +16,11 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.OasisTunnelForagerMineVenture.Player();
+                //var player1 = Strategies.OasisTunnelForagerMineVenture.Player();
                 //var player2 = Strategies.BigMoneyCultist.Player();
-                var player2 = Strategies.BigMoney.Player();
+
+                var player1 = Strategies.FeodumTraderCountingHouse.Player();
+                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Witch);
                
                 var builder = new GameConfigBuilder();
 
@@ -31,7 +33,7 @@ namespace Program
                     rotateWhoStartsFirst:true,
                     createHtmlReport: true, 
                     numberOfGames: 1000, 
-                    shouldParallel: true);
+                    shouldParallel: false);
             }         
         }                
     }            
