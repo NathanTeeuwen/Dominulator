@@ -16,12 +16,17 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.SeaHagWareHouse.Player(false, true);
-                var player2 = Strategies.BigMoneyWithCard.Player(Cards.SeaHag);
-               
+                var player1 = Strategies.BigMoneyWithCard.Player(Cards.Embassy, "Embassy", cardCount:3, countGoldBeforeProvince:3, enablePenultimateProvinceRule:false);
+                //var player3 = Strategies.BigMoneyWithCard.Player(Cards.Smithy, "Smithy", cardCount: 2);
+                var player2 = Strategies.TreasurySmithyMerchantShip.Player();
+
+                //player1 = player3;
+
                 var builder = new GameConfigBuilder();
+                //builder.CardSplit = StartingCardSplit.Split43;
 
                 PlayerAction.SetKingdomCards(builder, player1, player2);
+                //builder.SetShuffleLuckPerPlayer(new Dominion.CardCountPair[][] { shuffleLuckDoubleFiveOpenning, shuffleLuckDoubleFiveOpenning });
                 testOutput.ComparePlayers(
                     player1,
                     player2,
@@ -32,6 +37,14 @@ namespace Program
                     numberOfGames: 1000, 
                     shouldParallel: false);
             }         
-        }                
+        }
+
+        static Dominion.CardCountPair[] shuffleLuckDoubleFiveOpenning = new Dominion.CardCountPair[]
+        {
+            new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 2),
+            new CardCountPair(Cards.Copper, 4), new CardCountPair(Cards.Estate, 1),
+            new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 1), new CardCountPair(Cards.Silver, 1),
+            new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 1), new CardCountPair(Cards.Silver, 1)
+        };
     }            
 }

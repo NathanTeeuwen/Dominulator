@@ -19,7 +19,8 @@ namespace Strategies
             int countRemainingProvinceBeforeDuchy = 4,
             int countRemainingProvinceBeforeEstateOverGold = 1,
             int countRemainingProvinceBeforeEstateOverSilver = 3,
-            int afterGoldCount = int.MaxValue)
+            int afterGoldCount = int.MaxValue,
+            bool enablePenultimateProvinceRule = false)
         {
             return new PlayerAction(
                         playerName == null ? "BigMoney" + card.GetType().Name : playerName,                            
@@ -32,7 +33,8 @@ namespace Strategies
                             countRemainingProvinceBeforeDuchy,
                             countRemainingProvinceBeforeEstateOverGold,
                             countRemainingProvinceBeforeEstateOverSilver),
-                        actionOrder:ActionOrder(card));
+                        actionOrder:ActionOrder(card),
+                        enablePenultimateProvinceRule:enablePenultimateProvinceRule);
         }
 
         public static ICardPicker PurchaseOrder(
