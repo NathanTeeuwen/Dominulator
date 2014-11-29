@@ -16,11 +16,8 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                //var player1 = Strategies.OasisTunnelForagerMineVenture.Player();
-                //var player2 = Strategies.BigMoneyCultist.Player();
-
-                var player1 = Strategies.FeodumTraderCountingHouse.Player();
-                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Witch);
+                var player1 = Strategies.SeaHagWareHouse.Player(false, true);
+                var player2 = Strategies.BigMoneyWithCard.Player(Cards.SeaHag);
                
                 var builder = new GameConfigBuilder();
 
