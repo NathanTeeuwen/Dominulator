@@ -30,6 +30,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.MarketSquare] = new MarketSquare(playerAction);
             result[Dominion.Cards.Mint] = new Mint(playerAction);
             result[Dominion.Cards.Mystic] = new MysticAndWishingWell(playerAction);
+            result[Dominion.Cards.NomadCamp] = new NomadCamp(playerAction);
             result[Dominion.Cards.Nobles] = new Nobles(playerAction);
             result[Dominion.Cards.Rebuild] = new Rebuild(playerAction);
             result[Dominion.Cards.SpiceMerchant] = new SpiceMerchant(playerAction);

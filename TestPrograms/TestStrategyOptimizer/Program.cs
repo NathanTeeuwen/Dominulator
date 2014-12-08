@@ -24,10 +24,14 @@ namespace Program
             {
                 foreach (Card card in Dominion.Strategy.MissingDefaults.FullyImplementedKingdomCards())
                 {
-                    var playerAction = StrategyOptimizer.FindBestBigMoneyWithCardVsStrategy(bigMoneyPlayer, card, logProgress:false);
+                    var playerAction = StrategyOptimizer.FindBestBigMoneyWithCardVsStrategy(bigMoneyPlayer, card, logProgress:false);                                       
                     var results = Dominion.Data.StrategyComparison.Compare(playerAction, bigMoneyPlayer, shouldParalell: true);
                     htmlRender.AddResults(results, TestOutput.GetOutputFilename);
-                    testoutput.ComparePlayers(playerAction, bigMoneyPlayer, createHtmlReport:false);
+                    
+                    System.Console.WriteLine("Before Optimization");
+                    testoutput.ComparePlayers(Strategies.BigMoneyWithCard.Player(card), bigMoneyPlayer, createHtmlReport: false);
+                    System.Console.WriteLine("After Optimization");
+                    testoutput.ComparePlayers(playerAction, bigMoneyPlayer, createHtmlReport:false);                    
                 }
             }
         }      

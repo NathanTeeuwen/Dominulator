@@ -16,17 +16,13 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.BigMoneyWithCard.Player(Cards.Embassy, "Embassy", cardCount:3, countGoldBeforeProvince:3, enablePenultimateProvinceRule:false);
-                //var player3 = Strategies.BigMoneyWithCard.Player(Cards.Smithy, "Smithy", cardCount: 2);
-                var player2 = Strategies.TreasurySmithyMerchantShip.Player();
-
-                //player1 = player3;
-
+                var player1 = Strategies.BigMoney.Player();
+                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Oracle);
+                
                 var builder = new GameConfigBuilder();
                 //builder.CardSplit = StartingCardSplit.Split43;
 
                 PlayerAction.SetKingdomCards(builder, player1, player2);
-                //builder.SetShuffleLuckPerPlayer(new Dominion.CardCountPair[][] { shuffleLuckDoubleFiveOpenning, shuffleLuckDoubleFiveOpenning });
                 testOutput.ComparePlayers(
                     player1,
                     player2,

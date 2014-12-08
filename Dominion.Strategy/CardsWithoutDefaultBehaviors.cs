@@ -27,7 +27,6 @@ namespace Dominion.Strategy
             Cards.Minion,          
             Cards.NativeVillage,
             Cards.Navigator,
-            Cards.NomadCamp,
             Cards.Oracle,
             Cards.Pawn,
             Cards.PearlDiver,
