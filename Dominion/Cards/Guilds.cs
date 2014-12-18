@@ -187,7 +187,39 @@ namespace Dominion.CardTypes
                 currentPlayer.RequestPlayerTopDeckCardFromDiscard(gameState, isOptional: false);
             }            
         }
-    }    
+    }
+    
+    public class Journeyman
+        : Card
+    {
+        public static Journeyman card = new Journeyman();
+
+        private Journeyman()
+            : base("Journeyman", Expansion.Guilds, coinCost:5, isAction:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            Card namedCard = currentPlayer.RequestPlayerNameACard(gameState);
+
+            int cardFoundCount = 0;
+            while(true)
+            {
+                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+                if (revealedCard == null)
+                    break;
+                if (revealedCard == namedCard)
+                    continue;
+                cardFoundCount++;
+                if (cardFoundCount >= 3)
+                    break;
+            }
+           
+            currentPlayer.MoveRevealedCardsToHand(card => card != namedCard);
+            currentPlayer.MoveRevealedCardsToDiscard(gameState);                
+        }
+    }
 
 
     public class Masterpiece

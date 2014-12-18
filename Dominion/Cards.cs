@@ -111,6 +111,7 @@ namespace Dominion
         public static readonly CardTypes.Island Island = CardTypes.Island.card;
         public static readonly CardTypes.JackOfAllTrades JackOfAllTrades = CardTypes.JackOfAllTrades.card;
         public static readonly CardTypes.Jester Jester = CardTypes.Jester.card;
+        public static readonly CardTypes.Journeyman Journeyman = CardTypes.Journeyman.card;
         public static readonly CardTypes.JunkDealer JunkDealer = CardTypes.JunkDealer.card;
         public static readonly CardTypes.KingsCourt KingsCourt = CardTypes.KingsCourt.card;
         public static readonly CardTypes.Knights Knights = CardTypes.Knights.card;

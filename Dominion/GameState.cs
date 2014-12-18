@@ -358,7 +358,11 @@ namespace Dominion
             currentPlayer.EnterPhase(PlayPhase.NotMyTurn);
 
             this.gameLog.PopScope();
-            this.gameLog.EndTurn(currentPlayer);            
+            this.gameLog.EndTurn(currentPlayer);
+
+            // turn counters need to be 0 such that if this player ends up looking at the state while not it's turn
+            // e.g. as reaction or attack, it can make correct choices on current state such as AvailableCoin.
+            currentPlayer.InitializeTurn();
         }
 
         private void ReturnCardsToHandAtStartOfTurn(PlayerState currentPlayer)
