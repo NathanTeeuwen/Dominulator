@@ -39,7 +39,7 @@
                         </Button>                        
                     </StackPanel>
                     <ScrollViewer Grid.Row="1">
-                        <ListView Name="CurrentCardsListView"  ItemsSource="{Binding CurrentDeck.Cards}" SelectionMode="Multiple" SelectionChanged="CurrentDeckSelectionChanged">
+                        <ListView Name="CurrentCardsListView"  ItemsSource="{Binding CurrentDeck.Cards}" SelectionMode="Multiple" SelectionChanged="CurrentDeckSelectionChanged" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
                             <ListView.ItemsPanel>
                                 <ItemsPanelTemplate>
                                     <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
@@ -57,9 +57,49 @@
                     </ScrollViewer>
                 </Grid>
                 <!-- Horizontal Spacer-->
-                <StackPanel Width="100"></StackPanel>       
+                <StackPanel Width="100"></StackPanel>
+                <!-- Page for Strategies -->
                 <StackPanel>
-                    <TextBlock FontSize="30">Enabled Expansions</TextBlock>
+                    <TextBlock FontSize="30">Strategies</TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <RadioButton>Player 1</RadioButton>
+                        <RadioButton>Player 2</RadioButton>
+                    </StackPanel>
+
+                    <!-- items control of System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> -->
+                    <ListView Name="CurrentStrategyListView"  ItemsSource="{Binding CurrentStrategy.Value.CardAcceptanceDescriptions}" CanReorderItems="True" AllowDrop="True" Drop="CurrentCardsListView_Drop" BorderBrush="Blue" BorderThickness="1">                        
+                        <ListView.ItemTemplate>
+                            <!-- Data Template for CardAcceptanceDescription -->
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                <TextBlock Padding="0,0,5,0">Buy</TextBlock>
+                                    <TextBlock Padding="0,0,5,0" Text="{Binding CountText}"></TextBlock>                                    
+                                    <ComboBox Padding="0,0,5,0">
+                                        <ComboBoxItem>0</ComboBoxItem>
+                                        <ComboBoxItem IsSelected="True">1</ComboBoxItem>
+                                        <ComboBoxItem>2</ComboBoxItem>
+                                        <ComboBoxItem>3</ComboBoxItem>
+                                        <ComboBoxItem>4</ComboBoxItem>
+                                        <ComboBoxItem>5</ComboBoxItem>
+                                        <ComboBoxItem>6</ComboBoxItem>
+                                        <ComboBoxItem>7</ComboBoxItem>
+                                        <ComboBoxItem>8</ComboBoxItem>
+                                        <ComboBoxItem>9</ComboBoxItem>
+                                        <ComboBoxItem>10</ComboBoxItem>
+                                    </ComboBox>
+                                <TextBlock Padding="0,0,5,0" Text="{Binding Card.Value.Name}"></TextBlock>
+                                <TextBlock Padding="0,0,5,0">when</TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <TextBlock FontSize="20" AllowDrop="True" Drop="CurrentCardsListView_Drop">Drag Cards here to include in strategy</TextBlock>
+                </StackPanel>
+                <!-- Horizontal Spacer-->
+                <StackPanel Width="100"></StackPanel>
+                <!-- Page for Settings -->
+                <StackPanel>
+                    <TextBlock FontSize="30">Enabled Expansions</TextBlock>                    
                     <ItemsControl ItemsSource="{Binding Expansions}">
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>
@@ -81,7 +121,7 @@
                     <CheckBox IsChecked="{Binding RequireTrashing.Value, Mode=TwoWay}">Require Trashing</CheckBox>
                     <CheckBox IsChecked="{Binding RequireAttack.Value, Mode=TwoWay}">Require Attack</CheckBox>
                     <CheckBox IsChecked="{Binding AllowAttack.Value, Mode=TwoWay}">Allow Attacks</CheckBox>
-                </StackPanel>
+                </StackPanel>                
                 <!--Horizontal  Spacer-->
                 <StackPanel Width="100"></StackPanel>
                 <!-- Page for All Cards-->

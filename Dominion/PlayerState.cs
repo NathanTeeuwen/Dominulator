@@ -1096,7 +1096,7 @@ namespace Dominion
                 return null;
             }
 
-            DeckPlacement deckPlacement;
+            DeckPlacement deckPlacement = DeckPlacement.Default;
             Card cardTypeToTrash = this.actions.GetCardFromHandOrDiscardToTrash(gameState, acceptableCardsToTrash, isOptional, out deckPlacement);
             if (cardTypeToTrash == null)
             {

@@ -110,7 +110,7 @@ namespace Win8Client
         }
     }
 
-    class DefaultEmpty
+    class DefaultEmptyString
         : DependencyPolicy<string>
     {
         public string DefaultValue
@@ -118,6 +118,18 @@ namespace Win8Client
             get
             {
                 return "";
+            }
+        }
+    }
+
+    class DefaultEmptyStrategyDescription
+        : DependencyPolicy<StrategyDescription>
+    {
+        public StrategyDescription DefaultValue
+        {
+            get
+            {
+                return new StrategyDescription();
             }
         }
     }

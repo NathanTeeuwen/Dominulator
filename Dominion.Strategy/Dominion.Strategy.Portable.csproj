@@ -43,6 +43,8 @@
     <Compile Include="CardPicker\CardPickConcatenator.cs" />
     <Compile Include="CardPicker\CardPickForCondition.cs" />
     <Compile Include="CardPicker\ICardPicker.cs" />
+    <Compile Include="CardsWithoutDefaultBehaviors.cs" />
+    <Compile Include="DefaultPlayerAction.cs" />
     <Compile Include="DefaultPlayRules\CardOverrides.cs" />
     <Compile Include="DefaultPlayRules\Cards\Alchemist.cs" />
     <Compile Include="DefaultPlayRules\Cards\Ambassador.cs" />
@@ -51,7 +53,10 @@
     <Compile Include="DefaultPlayRules\Cards\Catacombs.cs" />
     <Compile Include="DefaultPlayRules\Cards\Chancellor.cs" />
     <Compile Include="DefaultPlayRules\Cards\Count.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Doctor.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Explorer.cs" />
     <Compile Include="DefaultPlayRules\Cards\Golem.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Governor.cs" />
     <Compile Include="DefaultPlayRules\Cards\HorseTraders.cs" />
     <Compile Include="DefaultPlayRules\Cards\IllGottenGains.cs" />
     <Compile Include="DefaultPlayRules\Cards\Library.cs" />
@@ -60,9 +65,13 @@
     <Compile Include="DefaultPlayRules\Cards\Mint.cs" />
     <Compile Include="DefaultPlayRules\Cards\MysticAndWishingWell.cs" />
     <Compile Include="DefaultPlayRules\Cards\Nobles.cs" />
+    <Compile Include="DefaultPlayRules\Cards\NomadCamp.cs" />
     <Compile Include="DefaultPlayRules\Cards\Rebuild.cs" />
+    <Compile Include="DefaultPlayRules\Cards\RoyalSeal.cs" />
     <Compile Include="DefaultPlayRules\Cards\Scheme.cs" />
     <Compile Include="DefaultPlayRules\Cards\ScryingPool.cs" />
+    <Compile Include="DefaultPlayRules\Cards\SpiceMerchant.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Steward.cs" />
     <Compile Include="DefaultPlayRules\Cards\Trader.cs" />
     <Compile Include="DefaultPlayRules\Cards\Treasury.cs" />
     <Compile Include="DefaultPlayRules\Cards\WalledViillage.cs" />

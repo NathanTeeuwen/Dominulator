@@ -28,7 +28,12 @@ namespace Win8Client
             this.DataContext = this.appDatacontext;
             var initTask = appDatacontext.AllCards.Populate();
 
-            initTask.ContinueWith((continuation) => appDatacontext.CurrentDeck.Generate10Random(appDatacontext.AllCards.Cards, null));
+            initTask.ContinueWith(
+                delegate(System.Threading.Tasks.Task task)
+                {
+                    appDatacontext.PopulateAllCardsMap();
+                    appDatacontext.CurrentDeck.Generate10Random(appDatacontext.AllCards.Cards, null);
+                });
         }
 
         private void Randomize(object sender, RoutedEventArgs e)
@@ -76,18 +81,32 @@ namespace Win8Client
         private void CurrentDeckSelectionChanged(object sender, SelectionChangedEventArgs e)
         {                               
         }
+
+        private async void CurrentCardsListView_Drop(object sender, DragEventArgs e)
+        {
+            string cardName = (string)await e.Data.GetView().GetTextAsync("data");
+
+            DominionCard card = this.appDatacontext.mapNameToCard[cardName];
+                this.appDatacontext.currentStrategy.Value.CardAcceptanceDescriptions.Add(
+                    new CardAcceptanceDescription(card));
+        }
+
+        private void CurrentCardsListView_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
+        {            
+            e.Data.SetData("data", (e.Items[0] as DominionCard).Name);
+        }
         
     }
 
     class SortableCardList
         : DependencyObject
-    {
+    {        
         System.Collections.Generic.List<DominionCard> originalCards;
         private System.Collections.ObjectModel.ObservableCollection<DominionCard> cards;
         private Func<DominionCard, bool> filter;
         private Func<DominionCard, object> keySelector;
         
-        public DependencyObjectDecl<string, DefaultEmpty> CurrentSort { get; private set;}
+        public DependencyObjectDecl<string, DefaultEmptyString> CurrentSort { get; private set;}
 
         public System.Collections.ObjectModel.ObservableCollection<DominionCard> Cards
         {
@@ -113,7 +132,7 @@ namespace Win8Client
             {
                 return true;
             };
-            this.CurrentSort = new DependencyObjectDecl<string, DefaultEmpty>(this);
+            this.CurrentSort = new DependencyObjectDecl<string, DefaultEmptyString>(this);
             ClearSort();
         }
 
@@ -254,7 +273,8 @@ namespace Win8Client
 
     class AppDataContext
         : DependencyObject
-    {        
+    {
+        public System.Collections.Generic.Dictionary<string, DominionCard> mapNameToCard = new System.Collections.Generic.Dictionary<string, DominionCard>();
         private SortableCardList allCards;
         private SortableCardList currentDeck;
         private System.Collections.ObjectModel.ObservableCollection<Expansion> expansions;        
@@ -265,7 +285,11 @@ namespace Win8Client
         public DependencyObjectDecl<bool, DefaultTrue> RequirePlusBuy { get; private set; }
         public DependencyObjectDecl<bool, DefaultTrue> RequirePlus2Actions { get; private set; }
         public DependencyObjectDecl<bool, DefaultTrue> RequireAttack { get; private set; }
-        public DependencyObjectDecl<bool, DefaultTrue> AllowAttack { get; private set; }        
+        public DependencyObjectDecl<bool, DefaultTrue> AllowAttack { get; private set; }
+
+        public DependencyObjectDecl<StrategyDescription, DefaultEmptyStrategyDescription> currentStrategy { get; private set; }
+        public StrategyDescription player1Strategy { get; private set; }
+        public StrategyDescription player2Strategy { get; private set; }
 
         public AppDataContext()
         {
@@ -279,7 +303,12 @@ namespace Win8Client
             this.RequirePlus2Actions = new DependencyObjectDecl<bool, DefaultTrue>(this);
             this.RequireAttack = new DependencyObjectDecl<bool, DefaultTrue>(this);
             this.AllowAttack = new DependencyObjectDecl<bool, DefaultTrue>(this);
-                        
+
+            this.player1Strategy = new StrategyDescription();
+            this.player2Strategy = new StrategyDescription();
+            this.currentStrategy = new DependencyObjectDecl<StrategyDescription, DefaultEmptyStrategyDescription>(this);
+            this.currentStrategy.Value = this.player1Strategy;
+                                    
             this.expansions.Add(new Expansion("Alchemy", ExpansionIndex.Base));
             this.expansions.Add(new Expansion("Base", ExpansionIndex.Alchemy));
             this.expansions.Add(new Expansion("Cornucopia", ExpansionIndex.Cornucopia));
@@ -326,6 +355,14 @@ namespace Win8Client
                 return this.expansions;
             }
         }
+
+        public DependencyObjectDecl<StrategyDescription, DefaultEmptyStrategyDescription> CurrentStrategy
+        {
+            get
+            {
+                return this.currentStrategy;
+            }
+        }
         
         public void ExpansionEnabledChangedEventHandler(object sender, PropertyChangedEventArgs e)
         {
@@ -336,6 +373,14 @@ namespace Win8Client
         public void Enable3orMoreFromExpansionsChangedEventHandler(object sender, PropertyChangedEventArgs e)
         {
             this.currentDeck.UpdateUI();
+        }
+
+        public void PopulateAllCardsMap()
+        {
+            foreach(DominionCard card in this.AllCards.Cards)
+            {
+                this.mapNameToCard[card.Name] = card;
+            }
         }
     }
 
@@ -381,6 +426,11 @@ namespace Win8Client
 
     class DominionCard
     {
+
+        public DominionCard(string name)
+        {
+            this.Name = name;
+        }
 
         public DominionCard(Windows.Data.Json.JsonValue jsonDescription)
         {
@@ -453,6 +503,7 @@ namespace Win8Client
 
     class CardAcceptanceDescription
     {
+        public DependencyObjectDecl<int> Count { get; private set; }
         public DependencyObjectDecl<DominionCard> Card { get; private set; }
         public DependencyObjectDecl<DominionCard> TestCard { get; private set; }
         public DependencyObjectDecl<CountSource> CountSource { get; private set; }
@@ -462,20 +513,43 @@ namespace Win8Client
         public CardAcceptanceDescription()
         {
             this.Card = new DependencyObjectDecl<DominionCard>(this);
+            this.Count = new DependencyObjectDecl<int>(this);
             this.TestCard = new DependencyObjectDecl<DominionCard>(this);
             this.CountSource = new DependencyObjectDecl<CountSource>(this);
             this.Comparison = new DependencyObjectDecl<Comparison>(this);
             this.Threshhold = new DependencyObjectDecl<int>(this);
         }
+
+        public CardAcceptanceDescription(string name)
+            : this()
+        {
+            this.Card.Value = new DominionCard(name);
+        }
+
+        public CardAcceptanceDescription(DominionCard card)
+            : this()
+        {
+            this.Card.Value = card;
+            this.Count.Value = 1;
+        }
+
+        public string CountText
+        {
+            get
+            {
+                return this.Count.Value.ToString();
+            }
+        }
     }
 
-    class CardPicker
+    class StrategyDescription
     {
         public System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> CardAcceptanceDescriptions { get; private set; }
 
-        public CardPicker()
+        public StrategyDescription()
         {
             this.CardAcceptanceDescriptions = new System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription>();
+            //this.CardAcceptanceDescriptions.Add(new CardAcceptanceDescription("test"));
         }
     }
 }                    

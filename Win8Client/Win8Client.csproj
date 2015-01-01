@@ -111,7 +111,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DependencyObjectDecl.cs" />
+    <Compile Include="Utilities\DependencyObjectDecl.cs" />
     <Compile Include="DominulatorWebClient.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
