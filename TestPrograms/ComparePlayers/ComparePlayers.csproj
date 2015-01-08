@@ -58,6 +58,7 @@
     <Compile Include="Simulations\FollowersTest.cs" />
     <Compile Include="Simulations\GuildsResults.cs" />
     <Compile Include="Simulations\HighestWinRateVsBigMoney.cs" />
+    <Compile Include="Simulations\OddsOfScryingPoolAndCrossroadsAllDraw.cs" />
     <Compile Include="Simulations\RebuildResults.cs" />
     <Compile Include="StartingDeckBuilder.cs" />
     <Compile Include="Program.cs" />

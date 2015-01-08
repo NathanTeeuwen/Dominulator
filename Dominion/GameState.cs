@@ -143,8 +143,7 @@ namespace Dominion
         public GameState(                         
             IPlayerAction[] playerActions,
             int[] playerPositions,            
-            Game game,
-            IEnumerable<CardCountPair>[] startingDeckPerPlayer = null)
+            Game game)
         {
             if (playerActions.Length != playerPositions.Length)
                 throw new Exception();
