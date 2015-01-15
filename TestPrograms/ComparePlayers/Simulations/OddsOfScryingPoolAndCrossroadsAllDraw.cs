@@ -99,7 +99,9 @@ namespace Program.Simulations
             {
                 return new CardPickByPriority(
                             CardAcceptance.For(Cards.Estate),
-                            CardAcceptance.For(Cards.Remake));
+                    // place remake in the buy order, even though it isn't bought during this part of the game.  
+                    // It needs to be in the set of cards available for play.
+                            CardAcceptance.For(Cards.Remake));   
             }
 
             private static CardPickByPriority ActionOrder()

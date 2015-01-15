@@ -10,14 +10,14 @@ using Dominion.Data;
 
 namespace Program
 {
-    class Program    
+    class Program
     {        
         static void Main()
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.VenturePillageJourneyman.Player();
-                var player2 = Strategies.VenturePillageJourneymanFamiliar.Player();
+                var player1 = Strategies.BigMoneyTrader.Player();
+                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Smithy);
                 
                 var builder = new GameConfigBuilder();
                 builder.CardSplit = StartingCardSplit.Split43;

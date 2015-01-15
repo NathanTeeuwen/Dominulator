@@ -42,6 +42,7 @@
     <Compile Include="BuiltIntStrategyLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategies\AmbassadorCaravanApprenticeMerchantGuild.cs" />
+    <Compile Include="Strategies\BigMoneyTrader.cs" />
     <Compile Include="Strategies\VenturePillageJourneymanFamiliar.cs" />
     <Compile Include="Strategies\TreasurySmithyMerchantShip.cs" />
     <Compile Include="Strategies\SeaHagWarehouse.cs" />
