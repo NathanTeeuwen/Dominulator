@@ -294,6 +294,19 @@ namespace Dominion
             return false;
         }
 
+        public bool HasDuplicatesExceptMenagerie()
+        {
+            for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)
+            {
+                if (this.gameSubset.GetCardForIndex(index) == Cards.Menagerie)
+                    continue;
+                if (this.mapGameCardIndexToCount[index] > 1)
+                    return true;
+            }
+
+            return false;
+        }
+
         public bool HasCard(Card card)
         {
             return CountOf(card) > 0;
