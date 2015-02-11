@@ -16,9 +16,8 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.UnivesityStewardCityMountebank.Player();
-                var player2 = Strategies.AltarStewardCityMountebank.Player();
-                //var player2 = Strategies.BigMoneyWithCard.Player(Cards.Mountebank);
+                var player1 = Strategies.BigMoney.Player();
+                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Island, playerName:"island2", cardCount:8);
                 
                 var builder = new GameConfigBuilder();
                 builder.CardSplit = StartingCardSplit.Split43;

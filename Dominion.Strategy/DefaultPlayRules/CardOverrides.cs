@@ -26,6 +26,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Governor] = new Governor(playerAction);
             result[Dominion.Cards.HorseTraders] = new HorseTraders(playerAction);
             result[Dominion.Cards.IllGottenGains] = new IllGottenGainsAlwaysGainCopper(playerAction);
+            result[Dominion.Cards.Island] = new Island(playerAction);            
             result[Dominion.Cards.Library] = new Library(playerAction);
             result[Dominion.Cards.MarketSquare] = new MarketSquare(playerAction);
             result[Dominion.Cards.Mint] = new Mint(playerAction);

@@ -16,7 +16,7 @@ namespace TestCompareStrategyVsAllKnownStrategies
         {
             using (var testOutput = new TestOutput())
             {
-                CompareStrategyVsAllKnownStrategies(Strategies.BigMoneyTrader.Player(), testOutput);
+                CompareStrategyVsAllKnownStrategies(Strategies.BigMoneyWithCard.Player(Cards.Island, cardCount:3), testOutput);
             }
         }
 

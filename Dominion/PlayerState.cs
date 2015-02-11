@@ -733,10 +733,10 @@ namespace Dominion
 
         internal void MoveCardFromPlayedCardToIslandMat(Card card)
         {
-            Card removedCard = this.cardsPlayed.RemoveCard(card);
-            if (removedCard != null)
+            Card cardBeingPlayed = this.cardsBeingPlayed.DrawCardFromTop();
+            if (cardBeingPlayed != null)
             {
-                this.islandMat.AddCard(removedCard);
+                this.islandMat.AddCard(cardBeingPlayed);
             }
         }
 
