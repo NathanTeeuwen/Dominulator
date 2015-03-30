@@ -59,6 +59,7 @@
     <Compile Include="DefaultPlayRules\Cards\Governor.cs" />
     <Compile Include="DefaultPlayRules\Cards\HorseTraders.cs" />
     <Compile Include="DefaultPlayRules\Cards\IllGottenGains.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Island.cs" />
     <Compile Include="DefaultPlayRules\Cards\Library.cs" />
     <Compile Include="DefaultPlayRules\Cards\Lookout.cs" />
     <Compile Include="DefaultPlayRules\Cards\MarketSquare.cs" />

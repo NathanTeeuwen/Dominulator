@@ -92,8 +92,13 @@ namespace Win8Client
         }
 
         private void CurrentCardsListView_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
-        {            
-            e.Data.SetData("data", (e.Items[0] as DominionCard).Name);
+        {
+            try
+            {
+                e.Data.SetData("data", (e.Items[0] as DominionCard).Name);
+            }
+            catch
+            { }
         }
         
     }
@@ -188,6 +193,22 @@ namespace Win8Client
 
         public async System.Threading.Tasks.Task Populate()
         {
+            await PopulateFromResources().ContinueWith(async (continuation) =>
+            {
+                await this.UpdateUI();
+            });
+        }
+
+        public async System.Threading.Tasks.Task PopulateFromResources()
+        {
+            foreach (Dominion.Card card in Dominion.Cards.AllKingdomCards())
+            {
+                this.originalCards.Add(new DominionCard(card));
+            }
+        }
+        
+        public async System.Threading.Tasks.Task PopulateFromWeb()
+        {
             var client = new DominulatorWebClient();
             var allCards = client.GetAllCards();
 
@@ -205,9 +226,7 @@ namespace Win8Client
                 foreach (Windows.Data.Json.JsonValue currentItem in jsonArray)
                 {
                     this.originalCards.Add(new DominionCard(currentItem));
-                }
-
-                await this.UpdateUI();
+                }               
             }
             );
         }
@@ -383,9 +402,7 @@ namespace Win8Client
             }
         }
     }
-
-    
-
+   
     enum ExpansionIndex
     {
         Alchemy = 0,
@@ -424,65 +441,7 @@ namespace Win8Client
         }
     }
 
-    class DominionCard
-    {
-
-        public DominionCard(string name)
-        {
-            this.Name = name;
-        }
-
-        public DominionCard(Windows.Data.Json.JsonValue jsonDescription)
-        {
-            var dictionary = jsonDescription.GetObject();
-            this.Id = dictionary.GetNamedString("id");
-            this.Name = dictionary.GetNamedString("name");
-            this.Coin = (int)dictionary.GetNamedNumber("coin");
-            this.Potion = (int)dictionary.GetNamedNumber("potion");
-            this.Expansion = GetExpansionIndex(dictionary.GetNamedString("expansion"));
-            this.IsAction = dictionary.GetNamedBoolean("isAction");
-            this.IsAttack = dictionary.GetNamedBoolean("isAttack");
-            this.IsReaction = dictionary.GetNamedBoolean("isReaction");
-            this.IsDuration = dictionary.GetNamedBoolean("isDuration");
-        }
-
-        public string Name { get; private set; }
-        public string Id { get; private set; }
-        public int Coin { get; private set; }
-        public int Potion { get; private set; }
-        public ExpansionIndex Expansion { get; private set; }
-        public bool IsAction { get; private set; }
-        public bool IsAttack { get; private set; }
-        public bool IsReaction { get; private set; }
-        public bool IsDuration { get; private set; }
-
-        public string ImageUrl
-        {
-            get
-            {
-                return "http://localhost:8081/dominion" + "/resources/cards/" + this.Id + ".jpg";
-            }
-        }
-
-        private static ExpansionIndex GetExpansionIndex(string value)
-        {
-            switch (value)
-            {
-                case "Alchemy": return ExpansionIndex.Alchemy;
-                case "Base": return ExpansionIndex.Base;
-                case "Cornucopia": return ExpansionIndex.Cornucopia;
-                case "DarkAges": return ExpansionIndex.DarkAges;
-                case "Guilds": return ExpansionIndex.Guilds;
-                case "Hinterlands": return ExpansionIndex.Hinterlands;
-                case "Intrigue": return ExpansionIndex.Intrigue;
-                case "Promo": return ExpansionIndex.Promo;
-                case "Prosperity": return ExpansionIndex.Prosperity;
-                case "Seaside": return ExpansionIndex.Seaside;                
-            }
-
-            return ExpansionIndex._Unknown;
-        }            
-    }
+    
 
     enum CountSource
     {
