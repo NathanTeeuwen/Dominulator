@@ -245,7 +245,7 @@ namespace Dominion
         static bool checkedPath = false;
         public static string GetOutputFilename(string filename)
         {
-            string resultsDirectory = "..\\..\\..\\Results";
+            string resultsDirectory = "..\\..\\..\\..\\Results";
             if (!System.IO.Directory.Exists(resultsDirectory))
             {
                 if (!checkedPath)
