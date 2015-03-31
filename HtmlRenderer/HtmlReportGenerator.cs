@@ -24,18 +24,7 @@ namespace HtmlRenderer
             var indentedWriter = new IndentedTextWriter(stringWriter);
             CreateHtmlReport(indentedWriter);
             return stringWriter.ToString();
-        }
-
-        public void CreateHtmlReport(string filename)
-        {
-            if (filename == null)
-                return;
-            var streamWriter = new System.IO.StreamWriter(filename);
-            using (var textWriter = new IndentedTextWriter(streamWriter))
-            {
-                CreateHtmlReport(textWriter);
-            }
-        }
+        }       
                
         public void CreateHtmlReport(IndentedTextWriter textWriter)
         {

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\Common.Targets"/>
+  <Import Project="..\Common.Targets" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -41,8 +41,8 @@
     <Compile Include="DeferredHtmlGenerator.cs" />
     <Compile Include="HtmlContentInserter.cs" />
     <Compile Include="HtmlRenderer.cs" />
+    <Compile Include="HtmlRenderer.Resources.cs" />
     <Compile Include="HtmlReportGenerator.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataGathering\Dominion.DataGathering.csproj">
@@ -62,7 +62,9 @@
       <Name>Resources</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\jquery.simplePagination.js" />
   </ItemGroup>
