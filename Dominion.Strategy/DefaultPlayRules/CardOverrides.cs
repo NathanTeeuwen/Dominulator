@@ -41,6 +41,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.RoyalSeal] = new RoyalSeal(playerAction);
             result[Dominion.Cards.Treasury] = new Treasury(playerAction);
             result[Dominion.Cards.Trader] = new Trader(playerAction);
+            result[Dominion.Cards.Vault] = new Vault(playerAction);
             result[Dominion.Cards.Watchtower] = new Watchtower(playerAction);
             result[Dominion.Cards.WalledVillage] = new WalledVillage(playerAction);
             result[Dominion.Cards.WishingWell] = result[Dominion.Cards.Mystic];
@@ -61,7 +62,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Remodel] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Salvager] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.SpiceMerchant] = Strategy.HasCardToTrashInHand;
-            result[Dominion.Cards.Trader] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Trader] = Strategy.HasCardToTrashInHand;            
             result[Dominion.Cards.TradingPost] = Strategy.HasAtLeast2ToTrashInHand;
             result[Dominion.Cards.Transmute] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Rats] = Strategy.HasCardToTrashInHand;

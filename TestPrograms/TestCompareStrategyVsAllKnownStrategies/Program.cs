@@ -16,8 +16,7 @@ namespace TestCompareStrategyVsAllKnownStrategies
         {
             using (var testOutput = new TestOutput())
             {
-                //CompareStrategyVsAllKnownStrategies(Strategies.BigMoneyWithCard.Player(Cards.Stash, cardCount:int.MaxValue), testOutput);
-                CompareStrategyVsAllKnownStrategies(Strategies.ButcherPlazaWatchtower.Player(), testOutput);
+                CompareStrategyVsAllKnownStrategies(Strategies.BigMoneyWithCard.Player(Cards.Vault, cardCount:int.MaxValue), testOutput);                
             }
         }
 

@@ -36,8 +36,7 @@ namespace Dominion.Strategy
             Cards.Squire,            
             Cards.StoneMason,
             Cards.Torturer,
-            Cards.Tournament,            
-            Cards.Vault,                   
+            Cards.Tournament,              
         };
 
         public static IEnumerable<Card> FullyImplementedKingdomCards()

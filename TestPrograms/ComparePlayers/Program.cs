@@ -17,7 +17,7 @@ namespace Program
             using (var testOutput = new TestOutput())
             {
                 var player1 = Strategies.BigMoney.Player();
-                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Stash, cardCount:int.MaxValue);                
+                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Vault);                
                 
                 var builder = new GameConfigBuilder();
                 builder.CardSplit = StartingCardSplit.Split43;

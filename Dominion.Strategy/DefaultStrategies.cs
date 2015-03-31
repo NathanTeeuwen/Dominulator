@@ -36,7 +36,7 @@ namespace Dominion.Strategy
             {
                 throw new NotImplementedException();
             }
-
+         
             public Card GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
             {
                 IComparer<Card> comparer = this.comparerFactory.GetComparer(gameState);
