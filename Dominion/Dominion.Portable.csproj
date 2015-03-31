@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cards.cs" />
+    <Compile Include="Cards\Adventures.cs" />
     <Compile Include="Cards\Alchemy.cs" />
     <Compile Include="Cards\BaseSet.cs" />
     <Compile Include="Cards\Cornucopia.cs" />
