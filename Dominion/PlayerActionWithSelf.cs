@@ -447,5 +447,13 @@ namespace Dominion
             gameState.self = saved;
             return result;
         }
+
+        public virtual void ChooseLocationForStashAfterShuffle(GameState gameState, int[] locations)
+        {
+            var saved = gameState.self;
+            gameState.self = this.self;
+            this.playerAction.ChooseLocationForStashAfterShuffle(gameState, locations);
+            gameState.self = saved;            
+        }
     }
 }

@@ -254,5 +254,10 @@ namespace Dominion
         {
             return this.playerAction.GetCoinAmountToUseInButcher(gameState);
         }
+
+        public virtual void ChooseLocationForStashAfterShuffle(GameState gameState, int[] locations)
+        {
+            this.playerAction.ChooseLocationForStashAfterShuffle(gameState, locations);
+        }
     }
 }
