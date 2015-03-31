@@ -57,7 +57,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RevealCardsFromDeck(4);
+            currentPlayer.RevealCardsFromDeck(4, gameState);
             currentPlayer.MoveRevealedCardsToHand(card => card == Copper.card || card == Potion.card);
             currentPlayer.RequestPlayerTopDeckRevealedCardsInAnyOrder(gameState); 
         }
@@ -81,7 +81,7 @@ namespace Dominion.CardTypes
             {
                 int cardsToDraw = card.CurrentCoinCost(currentPlayer) + 2 * card.potionCost;
 
-                currentPlayer.DrawAdditionalCardsIntoHand(cardsToDraw);
+                currentPlayer.DrawAdditionalCardsIntoHand(cardsToDraw, gameState);
             }
         }
     }
@@ -158,7 +158,7 @@ namespace Dominion.CardTypes
         {
             while (true)
             {
-                Card result = currentPlayer.DrawAndRevealOneCardFromDeck();
+                Card result = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
                 if (result == null)
                     return null;
 
@@ -237,7 +237,7 @@ namespace Dominion.CardTypes
             currentPlayer.RequestPlayerInspectTopOfDeckForDiscard(currentPlayer, gameState);
             while (true)
             {
-                Card card = currentPlayer.DrawAndRevealOneCardFromDeck();
+                Card card = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
                 if (card == null || !card.isAction)
                     break;
             }

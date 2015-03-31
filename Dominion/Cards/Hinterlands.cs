@@ -59,7 +59,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RevealCardsFromDeck(4);
+            currentPlayer.RevealCardsFromDeck(4, gameState);
 
             while (currentPlayer.cardsBeingRevealed.Any())
             {
@@ -92,7 +92,7 @@ namespace Dominion.CardTypes
 
             int countVictoryCards = currentPlayer.hand.Count(card => card.isVictory);
 
-            currentPlayer.DrawAdditionalCardsIntoHand(countVictoryCards);
+            currentPlayer.DrawAdditionalCardsIntoHand(countVictoryCards, gameState);
         }
     }
 
@@ -319,7 +319,7 @@ namespace Dominion.CardTypes
 
             // look at the top card of the deck and discard or put it back
             currentPlayer.RequestPlayerInspectTopOfDeckForDiscard(currentPlayer, gameState, shouldReveal: false);            
-            currentPlayer.DrawUntilCountInHand(5);
+            currentPlayer.DrawUntilCountInHand(5, gameState);
 
             currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCard => !acceptableCard.isTreasure, isOptional: true);
         }        
@@ -358,7 +358,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.DrawOneCardIntoHand();
+            otherPlayer.DrawOneCardIntoHand(gameState);
             otherPlayer.RequestPlayerDiscardDownToCountInHand(gameState, 3);
         }
     }
@@ -375,7 +375,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.RevealCardsFromDeck(2);
+            otherPlayer.RevealCardsFromDeck(2, gameState);
 
             if (!otherPlayer.CardsBeingRevealed.AnyWhere(card => card.isTreasure))
             {
@@ -445,14 +445,14 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RevealCardsFromDeck(2);
+            currentPlayer.RevealCardsFromDeck(2, gameState);
             PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState, actionChoice => actionChoice == PlayerActionChoice.Discard || actionChoice == PlayerActionChoice.PutInHand);
             switch (choice)
             {
                 case PlayerActionChoice.Discard:
                     {
                         currentPlayer.MoveRevealedCardsToDiscard(gameState);
-                        currentPlayer.DrawAdditionalCardsIntoHand(2);
+                        currentPlayer.DrawAdditionalCardsIntoHand(2, gameState);
                         break;
                     }
                 case PlayerActionChoice.PutInHand:
@@ -467,7 +467,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.RevealCardsFromDeck(2);
+            otherPlayer.RevealCardsFromDeck(2, gameState);
             PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState, actionChoice => actionChoice == PlayerActionChoice.Discard || actionChoice == PlayerActionChoice.TopDeck);
             switch (choice)
             {
@@ -539,7 +539,7 @@ namespace Dominion.CardTypes
                 {
                     case PlayerActionChoice.PlusCard:
                     {
-                        currentPlayer.DrawAdditionalCardsIntoHand(2);
+                        currentPlayer.DrawAdditionalCardsIntoHand(2, gameState);
                         currentPlayer.AddActions(1);
                         break;
                     }
@@ -570,7 +570,7 @@ namespace Dominion.CardTypes
         {
             if (currentPlayer.RequestPlayerDiscardCardFromHand(gameState, card => card.isTreasure, isOptional: true))
             {
-                currentPlayer.DrawAdditionalCardsIntoHand(3);
+                currentPlayer.DrawAdditionalCardsIntoHand(3, gameState);
                 currentPlayer.AddActions(1);
             }
         }

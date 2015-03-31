@@ -84,6 +84,18 @@ namespace Dominion
             }
         }
 
+        public void PlayerChoseLocationForStash(PlayerState playerState, int[] positions)
+        {
+            this.textWriter.Write("... and placed stash at locations: ");
+            for (int i = 0; i < positions.Length; ++i)
+            {
+                if (i != 0)
+                    this.textWriter.Write(", ");
+                this.textWriter.Write("{0}", positions[i]);
+            }
+            this.textWriter.WriteLine();
+        }
+
         private void WriteOutPlayedTreasuresIfNecessary(bool unindent = false)
         {
             if (this.playedTreasures.Count > 0)

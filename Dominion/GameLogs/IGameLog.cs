@@ -43,5 +43,6 @@ namespace Dominion
         void PlayerGainedBuys(PlayerState playerState, int actionAmount);
         void PlayerOverpaidForCard(Card boughtCard, int overPayAmount);
         void PlayerGainedVictoryTokens(PlayerState playerState, int amount);
+        void PlayerChoseLocationForStash(PlayerState playerState, int[] positions);
     }
 }

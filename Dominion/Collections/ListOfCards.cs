@@ -73,10 +73,7 @@ namespace Dominion
         } 
 
         public void SwapCardsInPlace(int position1, int position2)
-        {
-            if (this.countKnownCard > 0)
-                throw new System.Exception("not sure what to do with known cards");
-
+        {           
             int lastIndex = this.cards.Count - 1;
             // the top of deck, or position 0, as at the end of the array.
             position1 = lastIndex - position1;
@@ -129,7 +126,9 @@ namespace Dominion
 
         public void AddCardToTop(Card card)
         {
-            this.countKnownCard++;
+            if (card != null)
+                this.countKnownCard++;
+
             this.cards.Add(card);
             base.Add(card);
         }

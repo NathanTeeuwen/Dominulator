@@ -170,12 +170,12 @@ namespace Dominion
 
             this.GainStartingCards(gameConfig);
 
-            this.players.AllPlayersDrawInitialCards(gameConfig);    
-     
             foreach (PileOfCards cardPile in this.supplyPiles)
             {
                 cardPile.ProtoTypeCard.DoSpecializedSetupIfInSupply(this);
             }
+
+            this.players.AllPlayersDrawInitialCards(gameConfig, this);                    
         }        
 
         private void BuildMapOfCardToPile()
@@ -353,7 +353,7 @@ namespace Dominion
 
             int cardCountForNextTurn = this.doesCurrentPlayerNeedOutpostTurn ? 3 : 5;
             currentPlayer.EnterPhase(PlayPhase.DrawCards);
-            currentPlayer.DrawUntilCountInHand(cardCountForNextTurn);
+            currentPlayer.DrawUntilCountInHand(cardCountForNextTurn, this);
             currentPlayer.EnterPhase(PlayPhase.NotMyTurn);
 
             this.gameLog.PopScope();

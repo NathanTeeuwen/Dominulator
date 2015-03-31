@@ -295,5 +295,13 @@ namespace Dominion
                 this.gameLogs[i].PlayerReturnedCardToPile(playerState, card);
             }
         }        
+
+        public void PlayerChoseLocationForStash(PlayerState playerState, int[] positions)
+        {
+            for (int i = 0; i < this.gameLogs.Length; ++i)
+            {
+                this.gameLogs[i].PlayerChoseLocationForStash(playerState, positions);
+            }
+        }
     }
 }

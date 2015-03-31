@@ -218,6 +218,18 @@ namespace Dominion
             }
         }
 
+        public void PlayerChoseLocationForStash(PlayerState playerState, int[] positions)
+        {
+            this.textWriter.Write("{0} placed stash at locations: ", playerState.actions.PlayerName);
+            for (int i = 0; i < positions.Length; ++i)
+            {
+                if (i != 0)
+                    this.textWriter.Write(", ");
+                this.textWriter.Write("{0}", positions[i]);
+            }
+            this.textWriter.WriteLine();
+        }
+
         private void WriteAllCards(PlayerState playerState)
         {
             WriteAllCards(playerState.AllOwnedCards);

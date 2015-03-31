@@ -39,7 +39,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RevealCardsFromDeck(5);
+            currentPlayer.RevealCardsFromDeck(5, gameState);
             Card cardType = gameState.players.PlayerLeft.actions.BanCardToDrawnIntoHandFromRevealedCards(gameState);
             if (!currentPlayer.cardsBeingRevealed.HasCard(cardType))
             {
@@ -71,10 +71,10 @@ namespace Dominion.CardTypes
             {
                 case PlayerActionChoice.PlusCard:
                     {
-                        currentPlayer.DrawAdditionalCardsIntoHand(3);
+                        currentPlayer.DrawAdditionalCardsIntoHand(3, gameState);
                         foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
                         {
-                            otherPlayer.DrawAdditionalCardsIntoHand(1);
+                            otherPlayer.DrawAdditionalCardsIntoHand(1, gameState);
                         }
                         break;
                     }
@@ -121,15 +121,34 @@ namespace Dominion.CardTypes
         public static Stash card = new Stash();
 
         private Stash()
-            : base("Stash", Expansion.Promo, coinCost: 5, plusCoins:2, isTreasure: true)
+            : base("Stash", Expansion.Promo, coinCost: 5, plusCoins:2, isTreasure: true, pluralName:"Stashes")
         {
         }
-
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+   
+        public static int[] GetStashPlacementBeginningOfDeck(int stashCount)
         {
-            // on deck shuffles must give player an opporunity to place these anywhere.
-            throw new NotImplementedException();
-        }        
+            var result = new int[stashCount];
+            for(int i = 0; i < stashCount; ++i)
+            {
+                result[i] = i;
+            }
+            return result;
+        }
+
+        public static void VerifyStashPlacementInDeck(int[] placements, int deckCount)
+        {
+            System.Array.Sort(placements);
+            for (int i = 0; i < placements.Length; ++i)
+            {
+                if (placements[i] >= deckCount)
+                {
+                    throw new Exception("Placement is out of deck range");
+                }
+
+                if (i > 0 && placements[i] == placements[i - 1] )
+                    throw new Exception("Two stashes have chosen to be in the same place");                
+            }            
+        }
     }
 
     public class WalledVillage

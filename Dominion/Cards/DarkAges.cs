@@ -56,7 +56,7 @@ namespace Dominion.CardTypes
 
         public override bool DoSpecializedTrash(PlayerState selfPlayer, GameState gameState)
         {
-            selfPlayer.DrawAdditionalCardsIntoHand(1);
+            selfPlayer.DrawAdditionalCardsIntoHand(1, gameState);
 
             return true;
         }
@@ -158,7 +158,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RevealCardsFromDeck(2);
+            currentPlayer.RevealCardsFromDeck(2, gameState);
             // TODO: Require option to put ruins back.
             currentPlayer.RequestPlayerPutRevealedCardsBackOnDeck(gameState);
         }
@@ -292,14 +292,14 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RevealCardsFromDeck(3);
+            currentPlayer.RevealCardsFromDeck(3, gameState);
             PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState, actionChoice => actionChoice == PlayerActionChoice.Discard || actionChoice == PlayerActionChoice.PutInHand);
             switch (choice)
             {
                 case PlayerActionChoice.Discard:
                     {
                         currentPlayer.MoveRevealedCardsToDiscard(gameState);
-                        currentPlayer.DrawAdditionalCardsIntoHand(3);
+                        currentPlayer.DrawAdditionalCardsIntoHand(3, gameState);
                         break;
                     }
                 case PlayerActionChoice.PutInHand:
@@ -406,7 +406,7 @@ namespace Dominion.CardTypes
 
         public override bool DoSpecializedTrash(PlayerState selfPlayer, GameState gameState)
         {
-            selfPlayer.DrawAdditionalCardsIntoHand(3);
+            selfPlayer.DrawAdditionalCardsIntoHand(3, gameState);
 
             return true;
         }
@@ -606,7 +606,7 @@ namespace Dominion.CardTypes
         {
             if (currentPlayer.MoveCardFromPlayToPile(gameState))
             {
-                currentPlayer.DrawAdditionalCardsIntoHand(currentPlayer.Hand.Count);
+                currentPlayer.DrawAdditionalCardsIntoHand(currentPlayer.Hand.Count, gameState);
             }
         }
     }
@@ -649,7 +649,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RevealCardsFromDeck(1);
+            currentPlayer.RevealCardsFromDeck(1, gameState);
             Card revealedCard  = currentPlayer.CardsBeingRevealed.First();
 
             currentPlayer.RequestPlayerDiscardRevealedCard(gameState);
@@ -667,7 +667,7 @@ namespace Dominion.CardTypes
 
             if (revealedCard.isVictory)
             {
-                currentPlayer.DrawOneCardIntoHand();
+                currentPlayer.DrawOneCardIntoHand(gameState);
             }
         }
     }
@@ -763,7 +763,7 @@ namespace Dominion.CardTypes
         {
             //currentPlayer.gameLog.LogDeck(gameState.players.CurrentPlayer);
             Card cardType = currentPlayer.GuessCardTopOfDeck(gameState);
-            currentPlayer.RevealCardsFromDeck(1);
+            currentPlayer.RevealCardsFromDeck(1, gameState);
             if (currentPlayer.cardsBeingRevealed.HasCard(cardType))
             {
                 currentPlayer.MoveRevealedCardToHand(cardType);
@@ -874,7 +874,7 @@ namespace Dominion.CardTypes
 
         public override bool DoSpecializedTrash(PlayerState selfPlayer, GameState gameState)
         {
-            selfPlayer.DrawAdditionalCardsIntoHand(1);
+            selfPlayer.DrawAdditionalCardsIntoHand(1, gameState);
 
             return true;
         }
@@ -898,7 +898,7 @@ namespace Dominion.CardTypes
             gameState.gameLog.PushScope();
             while (true)
             {
-                foundCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+                foundCard = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
                 if (foundCard == null)
                     break;
 
@@ -950,7 +950,7 @@ namespace Dominion.CardTypes
 
         private static void AttackAction(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.RevealCardsFromDeck(2);
+            otherPlayer.RevealCardsFromDeck(2, gameState);
             otherPlayer.RequestPlayerTrashRevealedCard(gameState, card => Card.DoesCardCost3To6(card, otherPlayer));
             otherPlayer.MoveRevealedCardsToDiscard(gameState);
         }
@@ -970,7 +970,7 @@ namespace Dominion.CardTypes
         {
             while (true)
             {
-                Card card = currentPlayer.DrawAndRevealOneCardFromDeck();
+                Card card = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
                 if (card == null)
                     break;
                 if (card.CurrentCoinCost(currentPlayer) >= 3 && card.potionCost == 0)
@@ -1048,7 +1048,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {            
             int discardedCount = currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, currentPlayer.Hand.Count, isOptional:true);
-            currentPlayer.DrawAdditionalCardsIntoHand(discardedCount);
+            currentPlayer.DrawAdditionalCardsIntoHand(discardedCount, gameState);
             discardedCount = currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, currentPlayer.Hand.Count, isOptional: true);
             currentPlayer.AddCoins(discardedCount);
 
@@ -1112,7 +1112,7 @@ namespace Dominion.CardTypes
 
             if (currentPlayer.RequestPlayerTrashCardsFromHand(gameState, 2, isOptional: true, allOrNone:true).Count == 2)
             {
-                currentPlayer.DrawAdditionalCardsIntoHand(2);
+                currentPlayer.DrawAdditionalCardsIntoHand(2, gameState);
                 currentPlayer.AddCoins(2);
 
                 otherIndex = 0;
@@ -1139,7 +1139,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RevealCardsFromDeck(1);
+            currentPlayer.RevealCardsFromDeck(1, gameState);
             Card revealedCard = currentPlayer.cardsBeingRevealed.FirstOrDefault();
             if (revealedCard == null)
             {
@@ -1169,7 +1169,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RevealCardsFromDeck(3);
+            currentPlayer.RevealCardsFromDeck(3, gameState);
             currentPlayer.MoveRevealedCardsToDiscard(card => !card.isAction, gameState);
             currentPlayer.RequestPlayerPutRevealedCardsBackOnDeck(gameState);
         }

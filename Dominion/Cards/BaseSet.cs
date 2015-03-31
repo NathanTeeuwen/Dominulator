@@ -177,7 +177,7 @@ namespace Dominion.CardTypes
             int countTreasureFound = 0;
             while (countTreasureFound < 2)
             {
-                Card card = currentPlayer.DrawAndRevealOneCardFromDeck();
+                Card card = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
                 if (card == null)
                 {
                     break;
@@ -246,7 +246,7 @@ namespace Dominion.CardTypes
                 ++currentPlayer.numberOfCardsToBeDrawn;
             }
 
-            currentPlayer.DrawAdditionalCardsIntoHand(currentPlayer.numberOfCardsToBeDrawn);
+            currentPlayer.DrawAdditionalCardsIntoHand(currentPlayer.numberOfCardsToBeDrawn, gameState);
             currentPlayer.numberOfCardsToBeDrawn = 0;
         }
     }
@@ -300,7 +300,7 @@ namespace Dominion.CardTypes
         {
             foreach (PlayerState player in gameState.players.OtherPlayers)
             {
-                player.DrawAdditionalCardsIntoHand(1);
+                player.DrawAdditionalCardsIntoHand(1, gameState);
             }
         }
     }
@@ -354,7 +354,7 @@ namespace Dominion.CardTypes
         {
             while (currentPlayer.hand.Count < 7)
             {
-                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
                 if (revealedCard == null)
                 {
                     break;
@@ -515,7 +515,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.RevealCardsFromDeck(2);
+            otherPlayer.RevealCardsFromDeck(2, gameState);
 
             Card trashedCard = currentPlayer.RequestPlayerTrashOtherPlayersRevealedCard(gameState, card => card.isTreasure, otherPlayer);
 

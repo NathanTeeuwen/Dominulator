@@ -87,7 +87,7 @@ namespace Dominion
             }
         }
 
-        public void AllPlayersDrawInitialCards(GameConfig gameConfig)
+        public void AllPlayersDrawInitialCards(GameConfig gameConfig, GameState gameState)
         {
             foreach (PlayerState playerState in this.players)
             {                
@@ -98,7 +98,7 @@ namespace Dominion
                     playerState.shuffleLuck = GetCardsInOrder(shuffleLuck).GetEnumerator();
                 }                
 
-                playerState.DrawUntilCountInHand(5);
+                playerState.DrawUntilCountInHand(5, gameState);
             }            
         }
 

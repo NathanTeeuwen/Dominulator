@@ -571,7 +571,13 @@ namespace Dominion.Strategy
         public override int GetCoinAmountToOverpayForCard(GameState gameState, Card card)
         {            
             return base.GetCoinAmountToOverpayForCard(gameState, card);
-        }        
+        }
+
+        public override void ChooseLocationForStashAfterShuffle(GameState gameState, int[] locations)
+        {
+            // just use the default order of 0-location.length;
+            return;
+        }
     }
 
     public static class PlayerActionExtensionMethods

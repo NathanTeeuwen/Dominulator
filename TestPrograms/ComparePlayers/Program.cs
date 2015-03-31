@@ -17,7 +17,7 @@ namespace Program
             using (var testOutput = new TestOutput())
             {
                 var player1 = Strategies.BigMoney.Player();
-                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Island, playerName:"island2", cardCount:8);
+                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Stash, cardCount:int.MaxValue);                
                 
                 var builder = new GameConfigBuilder();
                 builder.CardSplit = StartingCardSplit.Split43;
@@ -25,8 +25,7 @@ namespace Program
                 PlayerAction.SetKingdomCards(builder, player1, player2);
                 testOutput.ComparePlayers(
                     player1,
-                    player2,
-                    //player2,
+                    player2,                    
                     builder.ToGameConfig(),
                     rotateWhoStartsFirst:true,
                     createHtmlReport: true, 

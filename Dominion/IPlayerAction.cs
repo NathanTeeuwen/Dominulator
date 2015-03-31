@@ -55,5 +55,6 @@ namespace Dominion
         int GetCoinAmountToOverpayForCard(GameState gameState, Card card);
         int GetCoinAmountToSpendInBuyPhase(GameState gameState);
         int GetCoinAmountToUseInButcher(GameState gameState);
+        void ChooseLocationForStashAfterShuffle(GameState gameState, int[] locations);
     }   
 }

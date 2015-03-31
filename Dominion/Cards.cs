@@ -519,7 +519,6 @@ namespace Dominion
         public static Card[] UnimplementedCards = new Card[]
         {          
             Cards.Knights,
-            Cards.Stash,      
             Cards.BandOfMisfits,
             Cards.BlackMarket,
             Cards.Possession

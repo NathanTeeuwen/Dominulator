@@ -114,7 +114,7 @@ namespace Dominion.CardTypes
 
             if (countEmpty >= 1)
             {
-                currentPlayer.DrawOneCardIntoHand();
+                currentPlayer.DrawOneCardIntoHand(gameState);
 
                 if (countEmpty >= 2)
                 {
@@ -308,7 +308,7 @@ namespace Dominion.CardTypes
         {
             while (true)
             {
-                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
                 if (revealedCard == null)
                     break;
                 if (revealedCard.isTreasure)
@@ -429,7 +429,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.RevealCardsFromDeck(3);
+            otherPlayer.RevealCardsFromDeck(3, gameState);
             otherPlayer.MoveRevealedCardsToDiscard(card => card.isAction || card.isTreasure, gameState);
             otherPlayer.RequestPlayerPutRevealedCardsBackOnDeck(gameState);
         }
@@ -524,7 +524,7 @@ namespace Dominion.CardTypes
                             int cardCount = otherPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false);
                             if (cardCount == 2)
                             {
-                                otherPlayer.DrawOneCardIntoHand();
+                                otherPlayer.DrawOneCardIntoHand(gameState);
                             }
                             break;
                         }
@@ -550,7 +550,7 @@ namespace Dominion.CardTypes
             Card cardToPlay = null;
             while (true)
             {
-                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
                 if (revealedCard == null)
                 {
                     break;
@@ -584,7 +584,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.DrawUntilCountInHand(6);
+            currentPlayer.DrawUntilCountInHand(6, gameState);
         }
 
         public new DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)

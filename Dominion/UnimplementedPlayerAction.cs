@@ -293,5 +293,10 @@ namespace Dominion
         {
             return PlayerMustMakeCardChoice();
         }
+
+        public virtual void ChooseLocationForStashAfterShuffle(GameState gameState, int[] locations)
+        {
+            throw new NotImplementedException();
+        }
     }    
 }

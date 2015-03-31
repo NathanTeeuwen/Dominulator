@@ -169,5 +169,10 @@ namespace Dominion
         {
 
         }
+
+        public virtual void PlayerChoseLocationForStash(PlayerState playerState, int[] positions)
+        {
+
+        }
     }
 }
