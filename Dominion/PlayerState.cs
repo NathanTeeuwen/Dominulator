@@ -1932,7 +1932,9 @@ namespace Dominion
         }
 
         internal void MoveAllRevealedCardsToHand()
-        {
+        {            
+            foreach (var card in this.cardsBeingRevealed)
+                this.gameLog.DrewCardIntoHand(this, card);
             this.hand.MoveAllCardsFrom(this.cardsBeingRevealed);            
         }
 

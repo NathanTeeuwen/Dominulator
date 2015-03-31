@@ -15,9 +15,9 @@ namespace Program
         static void Main()
         {            
             using (var testOutput = new TestOutput())
-            {
-                var player1 = Strategies.BigMoney.Player();
-                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Vault);                
+            {                
+                var player1 = Strategies.BigMoneyWithCard.Player(Cards.Magpie, cardCount:2);                
+                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Magpie);                
                 
                 var builder = new GameConfigBuilder();
                 builder.CardSplit = StartingCardSplit.Split43;

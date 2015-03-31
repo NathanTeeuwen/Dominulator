@@ -12,15 +12,15 @@ namespace TestAllCardsWithBigMoney
     class Program
     {
         static void Main(string[] args)
-        {
+        {            
             using (var testOutput = new TestOutput())
-            {
-                var bigMoneyPlayer = Strategies.BigMoney.Player();
+            {                
+                var bigMoneyPlayer = Strategies.BigMoneyWithCard.Player(Cards.Magpie, playerName:"single magpie");
                 foreach (PlayerAction playerAction in AllBigMoneyWithCard())
                 {
-                    testOutput.ComparePlayers(playerAction, bigMoneyPlayer, numberOfGames: 1000, shouldParallel: true, createHtmlReport: false, logGameCount: 0);
-                }
-            }
+                    testOutput.ComparePlayers(bigMoneyPlayer, playerAction, numberOfGames: 1000, shouldParallel: true, createHtmlReport: false, createRankingReport: true, logGameCount: 0);
+                }                
+            }          
         }
 
         static PlayerAction[] AllBigMoneyWithCard()

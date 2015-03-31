@@ -15,6 +15,7 @@ namespace Dominion
     {
         System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
         HtmlRenderer.DeferredHtmlGenerator deferredHtmlGenerator = new HtmlRenderer.DeferredHtmlGenerator();
+        ResultSetRanker resultRanker = new ResultSetRanker();
 
         public TestOutput()
         {
@@ -24,6 +25,9 @@ namespace Dominion
         public void Dispose()
         {
             this.stopwatch.Stop();
+
+            this.resultRanker.WriteRanking();
+
             this.deferredHtmlGenerator.Dispose();
 
             if (StrategyComparison.totalGameCount > 0)
@@ -47,6 +51,7 @@ namespace Dominion
             bool showCompactScore = false,
             bool showDistribution = false,
             bool createHtmlReport = true,
+            bool createRankingReport = false,
             int numberOfGames = 1000,
             int logGameCount = 100,
             bool debugLogs = false,
@@ -80,6 +85,11 @@ namespace Dominion
                 deferredHtmlGenerator.AddResults(results, GetOutputFilename);
             }
 
+            if (createRankingReport)
+            {
+                this.resultRanker.AddResult(playerActions[0].PlayerName, playerActions[1].PlayerName, results.WinDifference);
+            }
+
 
             return results.WinDifference;
         }
@@ -94,6 +104,7 @@ namespace Dominion
             bool showCompactScore = false,
             bool showDistribution = false,
             bool createHtmlReport = true,
+            bool createRankingReport = false,
             int numberOfGames = 1000,
             int logGameCount = 100,
             bool debugLogs = false,
@@ -107,6 +118,7 @@ namespace Dominion
                 showCompactScore,
                 showDistribution,
                 createHtmlReport,
+                createRankingReport,
                 numberOfGames,
                 logGameCount,
                 debugLogs,
@@ -126,6 +138,7 @@ namespace Dominion
             bool showCompactScore = false,
             bool showDistribution = false,
             bool createHtmlReport = true,
+            bool createRankingReport = false,
             int numberOfGames = 1000,
             int logGameCount = 10,
             bool debugLogs = false,
@@ -153,6 +166,7 @@ namespace Dominion
                 showCompactScore: showCompactScore,
                 showDistribution: showDistribution,
                 createHtmlReport: createHtmlReport,
+                createRankingReport: createRankingReport,
                 logGameCount: logGameCount,
                 debugLogs: debugLogs,
                 numberOfGames: numberOfGames,
@@ -172,6 +186,7 @@ namespace Dominion
           bool showCompactScore = false,
           bool showDistribution = false,
           bool createHtmlReport = true,
+          bool createRankingReport = false,
           int numberOfGames = 1000,
           int logGameCount = 10,
           bool debugLogs = false,
@@ -190,6 +205,7 @@ namespace Dominion
                 showCompactScore,
                 showDistribution,
                 createHtmlReport,
+                createRankingReport,
                 numberOfGames,
                 logGameCount,
                 debugLogs,

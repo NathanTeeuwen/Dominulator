@@ -477,20 +477,31 @@ namespace Dominion
             currentPlayer.EnterPhase(PlayPhase.PlayTreasure);
             while (true)
             {
-                Card cardTypeToPlay = currentPlayer.actions.GetTreasureFromHandToPlay(this, acceptableCard => true, isOptional:true);
-                if (cardTypeToPlay == null)
+                Card cardPlayed = DoPlayOneTreasure(currentPlayer);
+                if (cardPlayed == null)
                 {
                     break;
-                }
-
-                Card currentCard = currentPlayer.RemoveCardFromHand(cardTypeToPlay);
-                if (currentCard == null)
-                {
-                    throw new Exception("Player tried to remove a card that wasn't available in hand");
-                }
-                
-                currentPlayer.DoPlayTreasure(currentCard, this);
+                }                
             }
+        }
+
+        internal Card DoPlayOneTreasure(PlayerState currentPlayer)
+        {
+            Card cardTypeToPlay = currentPlayer.actions.GetTreasureFromHandToPlay(this, acceptableCard => true, isOptional: true);
+            if (cardTypeToPlay == null)
+            {
+                return null;
+            }
+
+            Card currentCard = currentPlayer.RemoveCardFromHand(cardTypeToPlay);
+            if (currentCard == null)
+            {
+                throw new Exception("Player tried to remove a card that wasn't available in hand");
+            }
+
+            currentPlayer.DoPlayTreasure(currentCard, this);
+
+            return cardTypeToPlay;
         }
 
         internal PileOfCards GetSpecialPile(Type cardType)

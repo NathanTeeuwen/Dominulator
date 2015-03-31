@@ -10,6 +10,7 @@ namespace Dominion
     public enum Expansion
     {
         Alchemy,
+        Adventures,
         Base,
         Cornucopia,
         DarkAges,
@@ -49,6 +50,8 @@ namespace Dominion
         public readonly bool requiresRuins;
         public readonly bool requiresSpoils;
         public readonly bool isShelter;
+        public readonly bool isTraveller;
+        public readonly bool isReserve;
         public readonly bool canOverpay;
         protected VictoryPointCounter victoryPointCounter;              // readonly
         protected GameStateMethod doSpecializedCleanupAtStartOfCleanup; // readonly
@@ -107,6 +110,8 @@ namespace Dominion
             bool requiresRuins = false,
             bool requiresSpoils = false,
             bool isShelter = false,
+            bool isTraveller = false,
+            bool isReserve = false,
             bool canOverpay = false,
             CardIntValue provideDiscountForWhileInPlay = null,
             GameStateMethod doSpecializedCleanupAtStartOfCleanup = null,
@@ -154,6 +159,8 @@ namespace Dominion
             this.requiresRuins = requiresRuins;
             this.isDuration = isDuration;
             this.isShelter = isShelter;
+            this.isTraveller = isTraveller;
+            this.isReserve = isReserve;
             this.requiresSpoils = requiresSpoils;
             this.canOverpay = canOverpay;
             this.provideDiscountForWhileInPlay = provideDiscountForWhileInPlay;

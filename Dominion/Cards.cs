@@ -95,6 +95,7 @@ namespace Dominion
         public static readonly CardTypes.Harvest Harvest = CardTypes.Harvest.card;
         public static readonly CardTypes.Haven Haven = CardTypes.Haven.card;
         public static readonly CardTypes.Herald Herald = CardTypes.Herald.card;
+        public static readonly CardTypes.Hero Hero = CardTypes.Hero.card;
         public static readonly CardTypes.Herbalist Herbalist = CardTypes.Herbalist.card;
         public static readonly CardTypes.Hermit Hermit = CardTypes.Hermit.card;
         public static readonly CardTypes.Highway Highway = CardTypes.Highway.card;
@@ -120,8 +121,10 @@ namespace Dominion
         public static readonly CardTypes.Lighthouse Lighthouse = CardTypes.Lighthouse.card;
         public static readonly CardTypes.Loan Loan = CardTypes.Loan.card;
         public static readonly CardTypes.Lookout Lookout = CardTypes.Lookout.card;
+        public static readonly CardTypes.LostCity LostCity = CardTypes.LostCity.card;
         public static readonly CardTypes.Madman Madman = CardTypes.Madman.card;
         public static readonly CardTypes.Mandarin Mandarin = CardTypes.Mandarin.card;
+        public static readonly CardTypes.Magpie Magpie = CardTypes.Magpie.card;
         public static readonly CardTypes.Marauder Marauder = CardTypes.Marauder.card;
         public static readonly CardTypes.Margrave Margrave = CardTypes.Margrave.card;
         public static readonly CardTypes.Market Market = CardTypes.Market.card;
@@ -203,6 +206,7 @@ namespace Dominion
         public static readonly CardTypes.Steward Steward = CardTypes.Steward.card;
         public static readonly CardTypes.StoneMason StoneMason = CardTypes.StoneMason.card;
         public static readonly CardTypes.Storeroom Storeroom = CardTypes.Storeroom.card;
+        public static readonly CardTypes.Storyteller Storyteller = CardTypes.Storyteller.card;
         public static readonly CardTypes.Survivors Survivors = CardTypes.Survivors.card;
         public static readonly CardTypes.Swindler Swindler = CardTypes.Swindler.card;
         public static readonly CardTypes.Tactician Tactician = CardTypes.Tactician.card;
@@ -521,6 +525,7 @@ namespace Dominion
             Cards.Knights,
             Cards.BandOfMisfits,
             Cards.BlackMarket,
+            Cards.Hero,
             Cards.Possession
         };        
     }   
