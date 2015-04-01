@@ -272,6 +272,11 @@ namespace Dominion
             return AllCardsList;
         }
 
+        public static Card[] CommonCards()
+        {
+            return new GameConfig(new Card[0], useShelters: false, useColonyAndPlatinum: false).GetNonSupplyPiles().Select(p => p.ProtoTypeCard).ToArray();
+        }
+
         public static Card[] AllKingdomCards()
         {
             var result = new List<Card>();

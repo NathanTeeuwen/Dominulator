@@ -29,11 +29,17 @@ namespace Win8Client
             var initTask = appDatacontext.AllCards.Populate();
 
             initTask.ContinueWith(
-                delegate(System.Threading.Tasks.Task task)
-                {
-                    appDatacontext.PopulateAllCardsMap();
-                    appDatacontext.CurrentDeck.Generate10Random(appDatacontext.AllCards.Cards, null);
-                });
+                        delegate(System.Threading.Tasks.Task task)
+                        {
+                            var nextTask = appDatacontext.CommonCards.PopulateCommon();
+                            nextTask.Wait();
+                        })                        
+                    .ContinueWith(
+                        delegate(System.Threading.Tasks.Task task)
+                        {
+                            appDatacontext.PopulateAllCardsMap();
+                            appDatacontext.CurrentDeck.Generate10Random(appDatacontext.AllCards.Cards, null);
+                        });            
         }
 
         private void Randomize(object sender, RoutedEventArgs e)
@@ -76,11 +82,7 @@ namespace Win8Client
         private void SortCurrentByExpansion(object sender, RoutedEventArgs e)
         {
             this.appDatacontext.CurrentDeck.SortByExpansion();
-        }
-
-        private void CurrentDeckSelectionChanged(object sender, SelectionChangedEventArgs e)
-        {                               
-        }
+        }        
 
         private async void CurrentCardsListView_Drop(object sender, DragEventArgs e)
         {
@@ -199,15 +201,39 @@ namespace Win8Client
             });
         }
 
-        public async System.Threading.Tasks.Task PopulateFromResources()
+        public async System.Threading.Tasks.Task PopulateCommon()
+        {
+            await PopulateCommonFromResources().ContinueWith(async (continuation) =>
+            {
+                await this.UpdateUI();
+            });
+        }
+
+        private async System.Threading.Tasks.Task PopulateFromResources()
         {
             foreach (Dominion.Card card in Dominion.Cards.AllKingdomCards())
             {
                 this.originalCards.Add(new DominionCard(card));
             }
         }
-        
-        public async System.Threading.Tasks.Task PopulateFromWeb()
+
+        private async System.Threading.Tasks.Task PopulateCommonFromResources()
+        {
+            Dominion.Card[] commonCards = new Dominion.Card[] {
+                Dominion.Cards.Province,
+                Dominion.Cards.Duchy,
+                Dominion.Cards.Estate,
+                Dominion.Cards.Gold,
+                Dominion.Cards.Silver,
+                Dominion.Cards.Copper,
+            };
+            foreach (Dominion.Card card in commonCards)
+            {
+                this.originalCards.Add(new DominionCard(card));
+            }
+        }
+
+        private async System.Threading.Tasks.Task PopulateFromWeb()
         {
             var client = new DominulatorWebClient();
             var allCards = client.GetAllCards();
@@ -296,6 +322,7 @@ namespace Win8Client
         public System.Collections.Generic.Dictionary<string, DominionCard> mapNameToCard = new System.Collections.Generic.Dictionary<string, DominionCard>();
         private SortableCardList allCards;
         private SortableCardList currentDeck;
+        private SortableCardList commonCards;
         private System.Collections.ObjectModel.ObservableCollection<Expansion> expansions;        
 
         public DependencyObjectDecl<bool, DefaultTrue> Use3OrMoreFromExpansions { get; private set;}
@@ -314,6 +341,7 @@ namespace Win8Client
         {
             this.allCards = new SortableCardList();
             this.currentDeck = new SortableCardList();
+            this.commonCards = new SortableCardList();
             this.expansions = new System.Collections.ObjectModel.ObservableCollection<Expansion>();
             this.Use3OrMoreFromExpansions = new DependencyObjectDecl<bool, DefaultTrue>(this);
             this.RequireTrashing = new DependencyObjectDecl<bool, DefaultTrue>(this);
@@ -347,8 +375,7 @@ namespace Win8Client
             this.Use3OrMoreFromExpansions.PropertyChanged += Enable3orMoreFromExpansionsChangedEventHandler;
 
             this.allCards.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
-            this.currentDeck.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
-
+            this.currentDeck.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);            
         }
 
         public SortableCardList AllCards
@@ -364,6 +391,14 @@ namespace Win8Client
             get
             {
                 return this.currentDeck;
+            }
+        }
+
+        public SortableCardList CommonCards
+        {
+            get
+            {
+                return this.commonCards;
             }
         }
 
@@ -397,6 +432,11 @@ namespace Win8Client
         public void PopulateAllCardsMap()
         {
             foreach(DominionCard card in this.AllCards.Cards)
+            {
+                this.mapNameToCard[card.Name] = card;
+            }
+
+            foreach (DominionCard card in this.CommonCards.Cards)
             {
                 this.mapNameToCard[card.Name] = card;
             }
