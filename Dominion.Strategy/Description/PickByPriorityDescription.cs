@@ -1,16 +1,8 @@
-﻿using Dominion;
-using Dominion.Strategy;
-using Dominion.Strategy.Description;
-using CardTypes = Dominion.CardTypes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
-namespace Program
+namespace Dominion.Strategy.Description
 {
-    class PickByPriorityDescription
+    public class PickByPriorityDescription
     {
         public readonly CardAcceptanceDescription[] descriptions;
 

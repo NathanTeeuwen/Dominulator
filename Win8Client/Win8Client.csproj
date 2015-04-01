@@ -106,9 +106,21 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <ProjectReference Include="..\DataGathering\Dominion.DataGathering.Portable.csproj">
+      <Project>{fbeb2733-2b59-4e3f-b1c6-7266953a5961}</Project>
+      <Name>Dominion.DataGathering.Portable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.Portable.csproj">
+      <Project>{de60f275-b1b5-40f4-be3e-35805f42cce3}</Project>
+      <Name>Dominion.Strategy.Portable</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Dominion\Dominion.Portable.csproj">
       <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
       <Name>Dominion.Portable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HtmlRenderer\HtmlRenderer.Portable.csproj">
+      <Project>{37debcec-cc13-4f96-adae-bc75850d6452}</Project>
+      <Name>HtmlRenderer.Portable</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +128,8 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="DominionCard.cs" />
+    <Compile Include="StrategyDescription\CardAcceptanceDescription.cs" />
+    <Compile Include="StrategyDescription\StrategyDescription.cs" />
     <Compile Include="Utilities\DependencyObjectDecl.cs" />
     <Compile Include="DominulatorWebClient.cs" />
     <Compile Include="MainPage.xaml.cs">

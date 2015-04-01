@@ -27,6 +27,7 @@ namespace Win8Client
             this.IsReaction = dictionary.GetNamedBoolean("isReaction");
             this.IsDuration = dictionary.GetNamedBoolean("isDuration");
             this.isWebCard = true;
+            this.dominionCard = null;
         }
 
         public DominionCard(Dominion.Card card)
@@ -41,8 +42,10 @@ namespace Win8Client
             this.IsReaction = card.isReaction;
             this.IsDuration = card.isDuration;
             this.isWebCard = false;
+            this.dominionCard = card;
         }
 
+        public readonly Dominion.Card dominionCard;
         public string Name { get; private set; }
         public string Id { get; private set; }
         public int Coin { get; private set; }

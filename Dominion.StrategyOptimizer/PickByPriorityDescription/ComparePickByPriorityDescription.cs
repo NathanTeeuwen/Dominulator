@@ -7,21 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Program.GeneticAlgorithm;
+using Dominion.Strategy.Description;
 
 namespace Program
 {
     class ComparePickByPriorityDescription
              : IScoreSpeciesVsEachOther<PickByPriorityDescription>
     {
-        public double Compare(PickByPriorityDescription left, PickByPriorityDescription right)
+        public double Compare(PickByPriorityDescription leftPurchaseOrder, PickByPriorityDescription rightPurchaseOrder)
         {
             //System.Console.WriteLine("Comparing: ");
             //left.Write(System.Console.Out);
             //System.Console.WriteLine("");
             //right.Write(System.Console.Out);
             //System.Console.WriteLine("");
-            PlayerAction leftPlayer = new PlayerAction("Player1", left.ToCardPicker());
-            PlayerAction rightPlayer = new PlayerAction("Player2", right.ToCardPicker());
+            PlayerAction leftPlayer = new PlayerAction("Player1", leftPurchaseOrder.ToCardPicker());
+            PlayerAction rightPlayer = new PlayerAction("Player2", rightPurchaseOrder.ToCardPicker());
             int numberOfGames = 33;
 
             GameConfigBuilder builder = new GameConfigBuilder();

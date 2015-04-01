@@ -88,6 +88,8 @@
     <Compile Include="Description\MatchDescription.cs" />
     <Compile Include="CardPicker\ICardPicker.cs" />
     <Compile Include="DefaultPlayerAction.cs" />
+    <Compile Include="Description\PickByPriorityDescription.cs" />
+    <Compile Include="Description\StrategyDescription.cs" />
     <Compile Include="PlayerAction.cs" />
     <Compile Include="PlayerActionFromCardResponses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
