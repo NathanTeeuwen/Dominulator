@@ -1,11 +1,12 @@
 ﻿namespace Dominion.Strategy.Description
 {
+    // integer values assumed by Win8Client UI
     public enum Comparison
     {
-        LessThan,
-        LessThanEqual,
-        GreaterThan,
-        GreaterThanEqual,
-        None,
+        LessThan = 0,
+        LessThanEqual = 1,
+        GreaterThan = 2,
+        GreaterThanEqual = 3,
+        None = 4,
     }
  }

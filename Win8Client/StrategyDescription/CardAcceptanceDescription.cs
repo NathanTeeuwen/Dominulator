@@ -47,6 +47,7 @@ namespace Win8Client
         {
             this.Card.Value = card;
             this.Count.Value = 1;
+            this.Threshhold.Value = 1;
             this.CountSource.Value = Dominion.Strategy.Description.CountSource.CountAllOwned;
         }
 

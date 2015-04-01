@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Page.Resources>        
-        <ResourceDictionary Source="StandardStyles.xaml" />            
+        <ResourceDictionary Source="StandardStyles.xaml" />        
     </Page.Resources>
     
 
@@ -85,20 +85,48 @@
                     </StackPanel>
 
                     <!-- items control of System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> -->
-                    <ListView Name="CurrentStrategyListView"  ItemsSource="{Binding CurrentStrategy.Value.CardAcceptanceDescriptions}" CanReorderItems="True" AllowDrop="True" Drop="CurrentCardsListView_Drop" BorderBrush="Blue" BorderThickness="1">                        
+                    <ListView Name="CurrentStrategyListView"  ItemsSource="{Binding CurrentStrategy.Value.CardAcceptanceDescriptions}" CanReorderItems="True" AllowDrop="True" Drop="CurrentCardsListView_Drop" BorderBrush="Blue" BorderThickness="1">
+                        <ListView.Resources>
+                            <local:ComparisonToIntegerConverter x:Key="ComparisonToIntegerConverter" />
+                            <local:CountSourceToIntegerConverter x:Key="CountSourceToIntegerConverter" />                            
+                        </ListView.Resources>
                         <ListView.ItemTemplate>
                             <!-- Data Template for CardAcceptanceDescription -->
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock Padding="0,0,5,0">Buy</TextBlock>
+                                    <TextBlock Padding="0,0,5,0">Have up to </TextBlock>
+                                    <ComboBox Margin="5" SelectedIndex="{Binding Count.Value, Mode=TwoWay}">
+                                        <ComboBoxItem>0</ComboBoxItem>
+                                        <ComboBoxItem>1</ComboBoxItem>
+                                        <ComboBoxItem>2</ComboBoxItem>
+                                        <ComboBoxItem>3</ComboBoxItem>
+                                        <ComboBoxItem>4</ComboBoxItem>
+                                        <ComboBoxItem>5</ComboBoxItem>
+                                        <ComboBoxItem>6</ComboBoxItem>
+                                        <ComboBoxItem>7</ComboBoxItem>
+                                        <ComboBoxItem>8</ComboBoxItem>
+                                        <ComboBoxItem>9</ComboBoxItem>
+                                        <ComboBoxItem>10</ComboBoxItem>
+                                    </ComboBox>
                                     <TextBlock Padding="0,0,5,0" Text="{Binding Card.Value.Name}"></TextBlock>
                                     <TextBlock Padding="0,0,5,0">when</TextBlock>
-                                    <TextBlock Padding="0,0,5,0" Text="{Binding CountSource.Value}"></TextBlock>
-                                    <TextBlock Padding="0,0,5,0" Text="{Binding Comparison.Value}"></TextBlock>
-                                    <TextBlock Padding="0,0,5,0" Text="{Binding CountText}"></TextBlock>                                    
-                                    <ComboBox Padding="0,0,5,0">
+                                    <ComboBox Margin="5" SelectedIndex="{Binding CountSource.Value, Mode=TwoWay, Converter={StaticResource CountSourceToIntegerConverter}}">
+                                        <ComboBoxItem>Count Of Pile</ComboBoxItem>
+                                        <ComboBoxItem>Count All Owned</ComboBoxItem>
+                                        <ComboBoxItem>Count In Hand</ComboBoxItem>                                        
+                                        <ComboBoxItem>None</ComboBoxItem>
+                                    </ComboBox>
+                                    <TextBlock Padding="0,0,5,0">is</TextBlock>
+                                    <ComboBox Margin="5" SelectedIndex="{Binding Comparison.Value, Mode=TwoWay, Converter={StaticResource ComparisonToIntegerConverter}}">                                        
+                                        <ComboBoxItem>Less Than</ComboBoxItem>
+                                        <ComboBoxItem>Less Than Or Equal</ComboBoxItem>
+                                        <ComboBoxItem>Greater Than</ComboBoxItem>
+                                        <ComboBoxItem>Greater Than Equal</ComboBoxItem>
+                                        <ComboBoxItem>None</ComboBoxItem>                                        
+                                    </ComboBox>
+                                    <ComboBox Margin="5" SelectedIndex="{Binding Threshhold.Value, Mode=TwoWay}">
                                         <ComboBoxItem>0</ComboBoxItem>
-                                        <ComboBoxItem IsSelected="True">1</ComboBoxItem>
+                                        <ComboBoxItem>1</ComboBoxItem>
                                         <ComboBoxItem>2</ComboBoxItem>
                                         <ComboBoxItem>3</ComboBoxItem>
                                         <ComboBoxItem>4</ComboBoxItem>
@@ -134,13 +162,14 @@
                     </ItemsControl>
                     <StackPanel Height="20"></StackPanel>
                     <!-- Spacer-->
+                    <!--
                     <CheckBox IsChecked="{Binding Use3OrMoreFromExpansions.Value, Mode=TwoWay}">Use or 3 more cards from a set</CheckBox>                    
                     <CheckBox IsChecked="{Binding RequirePlusBuy.Value, Mode=TwoWay}">Require + Buy</CheckBox>
                     <CheckBox IsChecked="{Binding RequirePlusCards.Value, Mode=TwoWay}">Require + Cards</CheckBox>
                     <CheckBox IsChecked="{Binding RequirePlus2Actions.Value, Mode=TwoWay}">Require + 2 Actions</CheckBox>
                     <CheckBox IsChecked="{Binding RequireTrashing.Value, Mode=TwoWay}">Require Trashing</CheckBox>
                     <CheckBox IsChecked="{Binding RequireAttack.Value, Mode=TwoWay}">Require Attack</CheckBox>
-                    <CheckBox IsChecked="{Binding AllowAttack.Value, Mode=TwoWay}">Allow Attacks</CheckBox>
+                    <CheckBox IsChecked="{Binding AllowAttack.Value, Mode=TwoWay}">Allow Attacks</CheckBox> -->
                 </StackPanel>                
                 <!--Horizontal  Spacer-->
                 <StackPanel Width="100"></StackPanel>

@@ -480,6 +480,36 @@ namespace Win8Client
             }
         }
     }
+
+    public class ComparisonToIntegerConverter
+        : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            var comparison = (Dominion.Strategy.Description.Comparison)value;
+            return (int)comparison;
+        }
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            int intValue = (int)value;
+            return (Dominion.Strategy.Description.Comparison)intValue;
+        }
+    }
+
+    public class CountSourceToIntegerConverter
+        : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            var comparison = (Dominion.Strategy.Description.CountSource)value;
+            return (int)comparison;
+        }
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            int intValue = (int)value;
+            return (Dominion.Strategy.Description.CountSource)intValue;
+        }
+    }
 }                    
                      
                      
