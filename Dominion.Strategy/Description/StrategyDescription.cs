@@ -2,7 +2,7 @@
 
 namespace Dominion.Strategy.Description
 {
-    class StrategyDescription
+    public class StrategyDescription
     {
         public readonly PickByPriorityDescription purchaseOrderDescription;
 

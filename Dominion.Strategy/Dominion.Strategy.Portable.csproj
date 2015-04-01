@@ -87,6 +87,8 @@
     <Compile Include="Description\Comparison.cs" />
     <Compile Include="Description\CountSource.cs" />
     <Compile Include="Description\MatchDescription.cs" />
+    <Compile Include="Description\PickByPriorityDescription.cs" />
+    <Compile Include="Description\StrategyDescription.cs" />
     <Compile Include="PlayerAction.cs" />
     <Compile Include="PlayerActionFromCardResponses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

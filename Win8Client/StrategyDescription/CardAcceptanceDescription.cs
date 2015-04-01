@@ -68,5 +68,16 @@ namespace Win8Client
             this.TestCard.Value = new DominionCard(matchDescr.cardType);
             this.Count.Value = matchDescr.countThreshHold;
         }
+
+        public Dominion.Strategy.Description.CardAcceptanceDescription ConvertToDominionStrategy()
+        {
+            return new Dominion.Strategy.Description.CardAcceptanceDescription(
+                this.Card.Value.dominionCard,
+                new Dominion.Strategy.Description.MatchDescription(
+                    this.CountSource.Value,
+                    this.TestCard.Value.dominionCard,
+                    this.Comparison.Value,
+                    this.Count.Value));
+        }
     }
 }
