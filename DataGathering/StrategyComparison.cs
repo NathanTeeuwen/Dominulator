@@ -103,8 +103,8 @@ namespace Dominion.Data
         }
 
         public StrategyComparisonResults ComparePlayers(
-            GetLogForGame getHumanReadableLogWriter,
-            GetLogForGame getDebugLogWriter,
+            GetLogForGame getHumanReadableLogWriter = null,
+            GetLogForGame getDebugLogWriter = null,
             bool shouldParallel = true,                        
             bool gatherStats = true,            
             CreateGameLog createGameLog = null)
@@ -117,8 +117,8 @@ namespace Dominion.Data
             Action<int> loopBody = delegate(int gameCount)
             {
                 System.Threading.Interlocked.Increment(ref totalGameCount);
-                using (IndentedTextWriter textWriter = getHumanReadableLogWriter(gameCount))
-                using (IndentedTextWriter debugWriter = getDebugLogWriter(gameCount))
+                using (IndentedTextWriter textWriter = getHumanReadableLogWriter != null ? getHumanReadableLogWriter(gameCount) :  null)
+                using (IndentedTextWriter debugWriter = getDebugLogWriter != null ? getDebugLogWriter(gameCount) : null)
                 {
                     var gameLogs = new List<IGameLog>();
                     if (gatherStats)

@@ -120,6 +120,51 @@ namespace Win8Client
         private void Player2RadioButtonChecked(object sender, RoutedEventArgs e)
         {
             appDatacontext.CurrentStrategy.Value = appDatacontext.player2Strategy;
+        }
+
+        private void SimulateGameButtonClick(object sender, RoutedEventArgs e)
+        {
+            var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext(); 
+          
+            Dominion.Strategy.Description.StrategyDescription player1Descr = this.appDatacontext.player1Strategy.ConvertToDominionStrategy();
+            Dominion.Strategy.Description.StrategyDescription player2Descr = this.appDatacontext.player2Strategy.ConvertToDominionStrategy();
+
+            System.Threading.Tasks.Task<string>.Factory.StartNew(() =>
+            {
+
+                var playerActions = new Dominion.Strategy.PlayerAction[] 
+                {
+                    player1Descr.ToPlayerAction("Player 1"),
+                    player1Descr.ToPlayerAction("Player 2")
+                };
+
+                var builder = new Dominion.GameConfigBuilder();
+                Dominion.Strategy.PlayerAction.SetKingdomCards(builder, playerActions[0], playerActions[1]);
+
+                builder.useColonyAndPlatinum = false;
+                builder.useShelters = false;
+                builder.CardSplit = Dominion.StartingCardSplit.Split43;
+
+                bool rotateWhoStartsFirst = true;
+                int numberOfGames = 1000;
+
+                Dominion.GameConfig gameConfig = builder.ToGameConfig();
+                var strategyComparison = new Dominion.Data.StrategyComparison(playerActions, gameConfig, rotateWhoStartsFirst, numberOfGames);
+
+                Dominion.Data.StrategyComparisonResults strategyComparisonResults = strategyComparison.ComparePlayers();
+
+                var htmlGenerator = new HtmlRenderer.HtmlReportGenerator(strategyComparisonResults);
+
+                var stringWriter = new System.IO.StringWriter();
+                var textWriter = new Dominion.IndentedTextWriter(stringWriter);
+                htmlGenerator.CreateHtmlReport(textWriter);
+                stringWriter.Flush();
+                string resultHtml = stringWriter.GetStringBuilder().ToString();
+                return resultHtml;
+            }).ContinueWith(async (continuation) =>
+            {
+                this.ResultsWebView.NavigateToString(continuation.Result);
+            }, uiScheduler);
         }   
     }
 

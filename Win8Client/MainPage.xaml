@@ -145,7 +145,11 @@
                         </ListView.ItemTemplate>
                     </ListView>
                     <TextBlock FontSize="20" AllowDrop="True" Drop="CurrentCardsListView_Drop">Drag Cards here to include in strategy</TextBlock>
+                    <Button Click="SimulateGameButtonClick">Simulate Game</Button>
                 </StackPanel>
+                <!-- Horizontal Spacer-->
+                <StackPanel Width="100"></StackPanel>
+                <WebView x:Name="ResultsWebView" Width="1000" Height="800"></WebView>
                 <!-- Horizontal Spacer-->
                 <StackPanel Width="100"></StackPanel>
                 <!-- Page for Settings -->

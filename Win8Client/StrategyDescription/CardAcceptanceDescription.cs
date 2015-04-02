@@ -116,14 +116,35 @@ namespace Win8Client
         }
 
         public Dominion.Strategy.Description.CardAcceptanceDescription ConvertToDominionStrategy()
+
         {
+            var list = new List<Dominion.Strategy.Description.MatchDescription>();
+
+            if (this.Count.Value == CountAsManyAsPossible)
+            {
+                list.Add(new Dominion.Strategy.Description.MatchDescription());
+            }
+            else
+            {
+                list.Add(new Dominion.Strategy.Description.MatchDescription(
+                    Dominion.Strategy.Description.CountSource.CountAllOwned,
+                    this.Card.Value.dominionCard,
+                    Dominion.Strategy.Description.Comparison.LessThanEqual,
+                    this.Count.Value));
+            }
+
+            if (this.CountSource.Value != Dominion.Strategy.Description.CountSource.Always)
+            {
+                list.Add(new Dominion.Strategy.Description.MatchDescription(
+                        this.CountSource.Value,
+                        this.TestCard.Value.dominionCard,
+                        this.Comparison.Value,
+                        this.Threshhold.Value));
+            }
+            
             return new Dominion.Strategy.Description.CardAcceptanceDescription(
                 this.Card.Value.dominionCard,
-                new Dominion.Strategy.Description.MatchDescription(
-                    this.CountSource.Value,
-                    this.TestCard.Value.dominionCard,
-                    this.Comparison.Value,
-                    this.Count.Value));
+                list.ToArray());               
         }
     }
 }

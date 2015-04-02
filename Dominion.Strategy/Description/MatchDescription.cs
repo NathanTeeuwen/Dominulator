@@ -16,6 +16,14 @@ namespace Dominion.Strategy.Description
         public readonly Comparison comparison;
         public int countThreshHold;
 
+        public MatchDescription()
+        {
+            this.cardType = null;
+            this.countSource = CountSource.Always;
+            this.comparison = Comparison.Equals;
+            this.countThreshHold = 1;
+        }
+
         public MatchDescription(CountSource countSource, Card cardType, Comparison comparison, int threshhold)
         {
             this.cardType = cardType;
