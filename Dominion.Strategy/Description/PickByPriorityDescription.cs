@@ -24,5 +24,40 @@ namespace Dominion.Strategy.Description
                 writer.Write(", ");
             }
         }
+
+        public PickByPriorityDescription AddCardInBestLocation(Card card)
+        {
+            var resultDescriptions = new CardAcceptanceDescription[this.descriptions.Length+1];
+
+            int currentReadLocation = 0;
+            int currentWriteLocation = 0;
+
+            while (currentReadLocation < this.descriptions.Length)
+            {
+                if (this.descriptions[currentReadLocation].card.DefaultCoinCost < card.DefaultCoinCost)
+                    break;
+                resultDescriptions[currentWriteLocation++] = this.descriptions[currentReadLocation++];
+            }
+
+            resultDescriptions[currentWriteLocation++] = new CardAcceptanceDescription(card, new MatchDescription(CountSource.Always, null, Comparison.LessThanEqual, 1));
+
+            while (currentReadLocation < this.descriptions.Length)
+            {
+                resultDescriptions[currentWriteLocation++] = this.descriptions[currentReadLocation++];
+            }
+
+            var result = new PickByPriorityDescription(resultDescriptions);
+            if (card.potionCost > 0 && !result.CanPurchasePotion())
+            {
+                return result.AddCardInBestLocation(Cards.Potion);
+            }
+
+            return result;
+        }
+
+        private bool CanPurchasePotion()
+        {
+            return this.descriptions.Where(descr => descr.card.potionCost > 0).Any();
+        }
     }
 }

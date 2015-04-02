@@ -89,9 +89,18 @@ namespace Win8Client
             string cardName = (string)await e.Data.GetView().GetTextAsync("data");
 
             DominionCard card = this.appDatacontext.mapNameToCard[cardName];
+
+            if (this.appDatacontext.currentStrategy.Value.CardAcceptanceDescriptions.Count == 0)
+            {
+                var defaultDescr = Dominion.Strategy.Description.StrategyDescription.GetDefaultStrategyDescription(card.dominionCard);
+                this.appDatacontext.currentStrategy.Value.PopulateFrom(defaultDescr);
+            }
+            else
+            {
                 this.appDatacontext.currentStrategy.Value.CardAcceptanceDescriptions.Add(
                     new CardAcceptanceDescription(card));
-        }
+            }
+        }             
 
         private void CurrentCardsListView_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
         {

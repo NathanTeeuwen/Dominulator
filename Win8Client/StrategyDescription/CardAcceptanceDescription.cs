@@ -75,17 +75,44 @@ namespace Win8Client
             {
                 return this.Count.Value.ToString();
             }
-        }
+        }        
 
-        public void PopulateFrom(Dominion.Strategy.Description.CardAcceptanceDescription descr)
+        public static CardAcceptanceDescription PopulateFrom(Dominion.Strategy.Description.CardAcceptanceDescription descr)
         {
-            this.Card.Value = new DominionCard(descr.card);
+            var result = new CardAcceptanceDescription();
+            result.Card.Value = new DominionCard(descr.card);
 
-            if (descr.matchDescriptions.Length != 1)
-                throw new Exception("Support only one match description");
-            Dominion.Strategy.Description.MatchDescription matchDescr = descr.matchDescriptions[0];
-            this.TestCard.Value = new DominionCard(matchDescr.cardType);
-            this.Count.Value = matchDescr.countThreshHold;
+            if (descr.matchDescriptions.Length != 1 && descr.matchDescriptions.Length != 2)
+                throw new Exception("Support only one match description in addition to count all owned");
+
+            if (descr.matchDescriptions[0].countSource == Dominion.Strategy.Description.CountSource.Always)
+            {
+                result.Count.Value = CountAsManyAsPossible;
+            }
+            else if (descr.matchDescriptions[0].countSource == Dominion.Strategy.Description.CountSource.CountAllOwned &&
+                     descr.matchDescriptions[0].cardType == descr.card && 
+                     descr.matchDescriptions[0].comparison == Dominion.Strategy.Description.Comparison.LessThanEqual) 
+            {
+                result.Count.Value = descr.matchDescriptions[0].countThreshHold;
+            }
+            else
+            {
+                throw new Exception("First match description needs to describe how many of the card to own");
+            }
+
+            if (descr.matchDescriptions.Length == 2)
+            {
+                result.TestCard.Value = new DominionCard(descr.matchDescriptions[1].cardType);
+                result.Threshhold.Value = descr.matchDescriptions[1].countThreshHold;
+                result.Comparison.Value = descr.matchDescriptions[1].comparison;
+                result.CountSource.Value = descr.matchDescriptions[1].countSource;
+            }
+            else
+            {
+                result.CountSource.Value = Dominion.Strategy.Description.CountSource.Always;
+            }
+            
+            return result;
         }
 
         public Dominion.Strategy.Description.CardAcceptanceDescription ConvertToDominionStrategy()
