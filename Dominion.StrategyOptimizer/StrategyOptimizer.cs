@@ -14,9 +14,9 @@ namespace Program
         {
             var initialDescription = new PickByPriorityDescription(new CardAcceptanceDescription[]
             {
-                new CardAcceptanceDescription( Cards.Province, CountSource.None, null, Comparison.None, 0),
-                new CardAcceptanceDescription( Cards.Gold, CountSource.None, null, Comparison.None, 0),
-                new CardAcceptanceDescription( Cards.Silver, CountSource.None, null, Comparison.None, 0)
+                new CardAcceptanceDescription( Cards.Province, CountSource.Always, null, Comparison.Sentinel, 0),
+                new CardAcceptanceDescription( Cards.Gold, CountSource.Always, null, Comparison.Sentinel, 0),
+                new CardAcceptanceDescription( Cards.Silver, CountSource.Always, null, Comparison.Sentinel, 0)
             });
 
             Random random = new Random();

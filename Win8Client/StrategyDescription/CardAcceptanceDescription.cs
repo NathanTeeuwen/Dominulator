@@ -19,12 +19,18 @@ namespace Win8Client
 {
     class CardAcceptanceDescription
     {
-        public DependencyObjectDecl<int> Count { get; private set; }
-        public DependencyObjectDecl<DominionCard> Card { get; private set; }
+        public const int CountAsManyAsPossible = 11;  // this value comes from the 12th index in the combo box.  0-10 + always
+
+        public DependencyObjectDecl<DominionCard> Card { get; private set; }  // card being bought
+        public DependencyObjectDecl<int> Count { get; private set; }          // how many to get
+
+        // secondary match description.  optional
         public DependencyObjectDecl<DominionCard> TestCard { get; private set; }
         public DependencyObjectDecl<Dominion.Strategy.Description.CountSource> CountSource { get; private set; }
         public DependencyObjectDecl<Dominion.Strategy.Description.Comparison> Comparison { get; private set; }
         public DependencyObjectDecl<int> Threshhold { get; private set; }
+
+        public DependencyObjectDecl<bool> SecondaryMatchVisible{ get; private set; }
 
         public CardAcceptanceDescription()
         {
@@ -34,6 +40,14 @@ namespace Win8Client
             this.CountSource = new DependencyObjectDecl<Dominion.Strategy.Description.CountSource>(this);
             this.Comparison = new DependencyObjectDecl<Dominion.Strategy.Description.Comparison>(this);
             this.Threshhold = new DependencyObjectDecl<int>(this);
+            this.SecondaryMatchVisible = new DependencyObjectDecl<bool>(this);
+
+            this.CountSource.PropertyChanged += CountSource_PropertyChanged;
+        }
+
+        void CountSource_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            this.SecondaryMatchVisible.Value = this.CountSource.Value == Dominion.Strategy.Description.CountSource.Always ? false : true;
         }
 
         public CardAcceptanceDescription(string name)
@@ -46,9 +60,13 @@ namespace Win8Client
             : this()
         {
             this.Card.Value = card;
-            this.Count.Value = 1;
+            this.Count.Value = CountAsManyAsPossible;
+            this.SecondaryMatchVisible.Value = false;
+
+            this.TestCard.Value = card;
+            this.Comparison.Value = Dominion.Strategy.Description.Comparison.LessThan;
             this.Threshhold.Value = 1;
-            this.CountSource.Value = Dominion.Strategy.Description.CountSource.CountAllOwned;
+            this.CountSource.Value = Dominion.Strategy.Description.CountSource.Always;
         }
 
         public string CountText

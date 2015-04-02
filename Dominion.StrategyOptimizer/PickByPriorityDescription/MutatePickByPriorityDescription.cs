@@ -125,7 +125,7 @@ namespace Program
 
             while (insertLocation < descriptions.Count)
             {
-                if (descriptions[insertLocation].matchDescriptions[0].countSource != CountSource.None ||
+                if (descriptions[insertLocation].matchDescriptions[0].countSource != CountSource.Always ||
                     descriptions[insertLocation].card.DefaultCoinCost > card.DefaultCoinCost)
                 {
                     insertLocation++;
@@ -144,7 +144,7 @@ namespace Program
 
             int removeLocation = this.random.Next(descriptions.Count);
 
-            if (descriptions[removeLocation].matchDescriptions[0].countSource == CountSource.None)
+            if (descriptions[removeLocation].matchDescriptions[0].countSource == CountSource.Always)
                 return false;
 
             descriptions.RemoveAt(removeLocation);

@@ -49,7 +49,7 @@ namespace Dominion.Strategy.Description
                 case CountSource.InHand:
                     countOfTheSource = Strategy.CountInHand(this.cardType, gameState);
                     break;
-                case CountSource.None:
+                case CountSource.Always:
                     return true;
                 default:
                     throw new Exception("Unhandled source case");
@@ -64,6 +64,18 @@ namespace Dominion.Strategy.Description
                 case Comparison.LessThan:
                     {
                         return countOfTheSource < this.countThreshHold;
+                    }
+                case Comparison.GreaterThanEqual:
+                    {
+                        return countOfTheSource >= this.countThreshHold;
+                    }
+                case Comparison.LessThanEqual:
+                    {
+                        return countOfTheSource <= this.countThreshHold;
+                    }
+                case Comparison.Equals:
+                    {
+                        return countOfTheSource == this.countThreshHold;
                     }
                 default:
                     throw new Exception("Unhandled comparison case");

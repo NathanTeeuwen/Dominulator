@@ -101,8 +101,7 @@ namespace Win8Client
             }
             catch
             { }
-        }
-        
+        }   
     }
 
     class SortableCardList
@@ -508,6 +507,21 @@ namespace Win8Client
         {
             int intValue = (int)value;
             return (Dominion.Strategy.Description.CountSource)intValue;
+        }
+    }
+
+    public class BoolToVisibilityConverter
+        : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            var boolValue = (bool)value;
+            return boolValue ? Visibility.Visible : Visibility.Collapsed;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
         }
     }
 }                    

@@ -7,6 +7,7 @@
         LessThanEqual = 1,
         GreaterThan = 2,
         GreaterThanEqual = 3,
-        None = 4,
+        Equals = 4,
+        Sentinel,
     }
  }

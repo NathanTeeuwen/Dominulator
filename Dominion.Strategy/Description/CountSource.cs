@@ -14,7 +14,7 @@ namespace Dominion.Strategy.Description
         CountOfPile = 0,
         CountAllOwned = 1,
         InHand = 2,
-        None = 3,
+        Always = 3,
     }
 
 }
