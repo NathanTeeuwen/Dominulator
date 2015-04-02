@@ -101,6 +101,16 @@ namespace Win8Client
             }
             catch
             { }
+        }
+
+        private void Player1RadioButtonChecked(object sender, RoutedEventArgs e)
+        {
+            appDatacontext.CurrentStrategy.Value = appDatacontext.player1Strategy;
+        }
+
+        private void Player2RadioButtonChecked(object sender, RoutedEventArgs e)
+        {
+            appDatacontext.CurrentStrategy.Value = appDatacontext.player2Strategy;
         }   
     }
 

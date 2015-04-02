@@ -80,8 +80,8 @@
                 <StackPanel>
                     <TextBlock FontSize="30">Strategies</TextBlock>
                     <StackPanel Orientation="Horizontal">
-                        <RadioButton>Player 1</RadioButton>
-                        <RadioButton>Player 2</RadioButton>
+                        <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="True" Checked="Player1RadioButtonChecked">Player 1</RadioButton>
+                        <RadioButton GroupName="PlayerStrategyRadioGroup" Checked="Player2RadioButtonChecked">Player 2</RadioButton>
                     </StackPanel>
 
                     <!-- items control of System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> -->
