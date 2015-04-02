@@ -122,6 +122,11 @@ namespace Win8Client
             appDatacontext.CurrentStrategy.Value = appDatacontext.player2Strategy;
         }
 
+        private void ClearStrategyButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.appDatacontext.currentStrategy.Value.CardAcceptanceDescriptions.Clear();
+        }
+
         private void SimulateGameButtonClick(object sender, RoutedEventArgs e)
         {
             var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext(); 
@@ -135,7 +140,7 @@ namespace Win8Client
                 var playerActions = new Dominion.Strategy.PlayerAction[] 
                 {
                     player1Descr.ToPlayerAction("Player 1"),
-                    player1Descr.ToPlayerAction("Player 2")
+                    player2Descr.ToPlayerAction("Player 2")
                 };
 
                 var builder = new Dominion.GameConfigBuilder();

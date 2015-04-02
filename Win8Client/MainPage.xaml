@@ -145,7 +145,10 @@
                         </ListView.ItemTemplate>
                     </ListView>
                     <TextBlock FontSize="20" AllowDrop="True" Drop="CurrentCardsListView_Drop">Drag Cards here to include in strategy</TextBlock>
-                    <Button Click="SimulateGameButtonClick">Simulate Game</Button>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Click="SimulateGameButtonClick">Simulate Game</Button>
+                        <Button Click="ClearStrategyButtonClick">Clear Strategy</Button>
+                    </StackPanel>                    
                 </StackPanel>
                 <!-- Horizontal Spacer-->
                 <StackPanel Width="100"></StackPanel>

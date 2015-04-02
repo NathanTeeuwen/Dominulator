@@ -39,7 +39,7 @@ namespace Dominion.Strategy.Description
                 resultDescriptions[currentWriteLocation++] = this.descriptions[currentReadLocation++];
             }
 
-            resultDescriptions[currentWriteLocation++] = new CardAcceptanceDescription(card, new MatchDescription());
+            resultDescriptions[currentWriteLocation++] = new CardAcceptanceDescription(card, new MatchDescription(CountSource.CountAllOwned, card, Comparison.LessThan, 1));
 
             while (currentReadLocation < this.descriptions.Length)
             {

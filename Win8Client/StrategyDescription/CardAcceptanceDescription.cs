@@ -91,7 +91,7 @@ namespace Win8Client
             }
             else if (descr.matchDescriptions[0].countSource == Dominion.Strategy.Description.CountSource.CountAllOwned &&
                      descr.matchDescriptions[0].cardType == descr.card && 
-                     descr.matchDescriptions[0].comparison == Dominion.Strategy.Description.Comparison.LessThanEqual) 
+                     descr.matchDescriptions[0].comparison == Dominion.Strategy.Description.Comparison.LessThan) 
             {
                 result.Count.Value = descr.matchDescriptions[0].countThreshHold;
             }
@@ -129,7 +129,7 @@ namespace Win8Client
                 list.Add(new Dominion.Strategy.Description.MatchDescription(
                     Dominion.Strategy.Description.CountSource.CountAllOwned,
                     this.Card.Value.dominionCard,
-                    Dominion.Strategy.Description.Comparison.LessThanEqual,
+                    Dominion.Strategy.Description.Comparison.LessThan,
                     this.Count.Value));
             }
 
