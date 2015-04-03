@@ -193,7 +193,8 @@ namespace Win8Client
 
         internal static void Generate10Random(IList<DominionCard> resultList, IList<DominionCard> sourceList, IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
         {
-            bool isReplacingItems = itemsToReplace != null && itemsToReplace.Count > 0;
+            bool isReplacingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count <= 10;
+            bool isReducingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count > 10;
             var cardPicker = new UniqueCardPicker(allCards);
 
             if (isReplacingItems)
@@ -236,6 +237,13 @@ namespace Win8Client
                 {
                     resultList.Remove(card);
                 }                       
+            }
+            else if (isReducingItems)
+            {
+                foreach (var card in itemsToReplace)
+                {
+                    resultList.Remove(card);
+                }
             }
             else
             {

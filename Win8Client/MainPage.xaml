@@ -19,7 +19,7 @@
         </Grid.RowDefinitions>        
         <TextBlock Grid.Row="0" FontSize="100" VerticalAlignment="Center" HorizontalAlignment="Center">Dominion Picker</TextBlock>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto">
-            <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal">
                 <!-- Page for Current Cards-->
                 <Grid>                    
                     <Grid.RowDefinitions>
@@ -77,7 +77,14 @@
                 <!-- Horizontal Spacer-->
                 <StackPanel Width="100"></StackPanel>
                 <!-- Page for Strategies -->
-                <StackPanel>
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                    
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0">
                     <TextBlock FontSize="30">Strategies</TextBlock>
                     <StackPanel Orientation="Horizontal">
                         <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="True" Checked="Player1RadioButtonChecked">Player 1</RadioButton>
@@ -149,9 +156,10 @@
                         <Button Click="SimulateGameButtonClick">Simulate Game</Button>
                         <Button Click="ClearStrategyButtonClick">Clear Strategy</Button>
                     </StackPanel>
-                    <WebView x:Name="ResultsWebView" Width="1000" Height="800"></WebView>
-                </StackPanel>
-               
+                        </StackPanel>
+                        <WebView Grid.Row="1" x:Name="ResultsWebView" Width="1000" Height="800"></WebView>
+                </Grid>
+                </ScrollViewer>
                 <!-- Horizontal Spacer-->
                 <StackPanel Width="100"></StackPanel>
                 <!-- Page for Settings -->
