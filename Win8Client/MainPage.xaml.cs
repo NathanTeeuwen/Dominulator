@@ -19,12 +19,15 @@ namespace Win8Client
 {
     public sealed partial class MainPage : Page
     {
-        AppDataContext appDatacontext = new AppDataContext();
+        AppDataContext appDatacontext;
 
         public MainPage()
         {
+            this.appDatacontext = new AppDataContext(this);
+  
             this.InitializeComponent();
-                       
+
+      
             this.DataContext = this.appDatacontext;
             var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();           
 
@@ -57,16 +60,16 @@ namespace Win8Client
             UpdateAllCardsListSelection();
         }
 
-        private bool isIgnoringUpdates = false;
-        private void UpdateAllCardsListSelection()
+        internal bool isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
+        internal void UpdateAllCardsListSelection()
         {
-            this.isIgnoringUpdates = true;
+            this.isCurrentDeckIgnoringAllDeckSelectionUpdates = true;
             this.AllCardsListView.SelectedItems.Clear();
             foreach (DominionCard card in this.appDatacontext.CurrentDeck.CurrentCards)
             {
                 this.AllCardsListView.SelectedItems.Add(card);
             }
-            this.isIgnoringUpdates = false;
+            this.isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
         }
 
 
@@ -251,7 +254,7 @@ namespace Win8Client
 
         private void AllCardsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (this.isIgnoringUpdates)
+            if (this.isCurrentDeckIgnoringAllDeckSelectionUpdates)
                 return;
             this.appDatacontext.CurrentDeck.UpdateOriginalCards(e.AddedItems.Select(item => (DominionCard)item), e.RemovedItems.Select(item => (DominionCard)item));            
         }
@@ -457,8 +460,12 @@ namespace Win8Client
         public StrategyDescription player1Strategy { get; private set; }
         public StrategyDescription player2Strategy { get; private set; }
 
-        public AppDataContext()
+        private MainPage mainPage;
+
+        public AppDataContext(MainPage mainPage)
         {
+            this.mainPage = mainPage;
+
             this.allCards = new SortableCardList();
             this.currentDeck = new SortableCardList();
             this.commonCards = new SortableCardList();
@@ -540,8 +547,11 @@ namespace Win8Client
         
         public void ExpansionEnabledChangedEventHandler(object sender, PropertyChangedEventArgs e)
         {
-            this.allCards.UpdateUI();
-            this.currentDeck.UpdateUI();
+            this.mainPage.isCurrentDeckIgnoringAllDeckSelectionUpdates = true;
+            this.allCards.UpdateUIFromUIThread();
+            this.currentDeck.UpdateUIFromUIThread();
+            this.mainPage.isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
+            this.mainPage.UpdateAllCardsListSelection();
         }
 
         public void Enable3orMoreFromExpansionsChangedEventHandler(object sender, PropertyChangedEventArgs e)

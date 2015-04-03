@@ -148,11 +148,10 @@
                     <StackPanel Orientation="Horizontal">
                         <Button Click="SimulateGameButtonClick">Simulate Game</Button>
                         <Button Click="ClearStrategyButtonClick">Clear Strategy</Button>
-                    </StackPanel>                    
+                    </StackPanel>
+                    <WebView x:Name="ResultsWebView" Width="1000" Height="800"></WebView>
                 </StackPanel>
-                <!-- Horizontal Spacer-->
-                <StackPanel Width="100"></StackPanel>
-                <WebView x:Name="ResultsWebView" Width="1000" Height="800"></WebView>
+               
                 <!-- Horizontal Spacer-->
                 <StackPanel Width="100"></StackPanel>
                 <!-- Page for Settings -->
