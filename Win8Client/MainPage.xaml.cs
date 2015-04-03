@@ -170,7 +170,68 @@ namespace Win8Client
             {
                 this.ResultsWebView.NavigateToString(continuation.Result);
             }, uiScheduler);
-        }   
+        }
+
+        internal static void Generate10Random(IList<DominionCard> resultList, IList<DominionCard> sourceList, IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
+        {
+            bool isReplacingItems = itemsToReplace != null && itemsToReplace.Count > 0;
+            var cardPicker = new UniqueCardPicker(allCards);
+
+            if (isReplacingItems)
+            {
+                cardPicker.ExcludeCards(itemsToReplace);
+
+                if (itemsToReplace != null)
+                {
+                    foreach (DominionCard cardToReplace in itemsToReplace)
+                    {
+                        for (int i = 0; i < resultList.Count; ++i)
+                        {
+                            if (resultList[i] == cardToReplace)
+                            {
+                                var nextCard = cardPicker.GetCard(c => true);
+                                if (nextCard == null)
+                                {
+                                    resultList.Remove(cardToReplace);
+                                    i--;  // do this index again
+                                }
+                                else
+                                {
+                                    resultList[i] = nextCard;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            else if (sourceList.Count != 10)
+            {
+                var listRemoved = new List<DominionCard>();
+                foreach(var card in resultList)
+                {
+                    if (!sourceList.Contains(card))
+                        listRemoved.Add(card);
+                }
+
+                foreach(var card in listRemoved)
+                {
+                    resultList.Remove(card);
+                }                       
+            }
+            else
+            {
+                resultList.Clear();
+            }
+
+            
+            while (resultList.Count < 10)
+            {
+                DominionCard currentCard = cardPicker.GetCard(c => true);
+                if (currentCard == null)
+                    break;
+                resultList.Add(currentCard);
+            }
+        }
     }
 
     class SortableCardList
@@ -327,61 +388,9 @@ namespace Win8Client
 
         public void Generate10Random(IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
         {
-            bool isReplacingItems = itemsToReplace != null && itemsToReplace.Count > 0;
-            var cardPicker = new UniqueCardPicker(allCards);
-
-            if (isReplacingItems)
-            {
-                cardPicker.ExcludeCards(itemsToReplace);
-
-                if (itemsToReplace != null)
-                {
-                    foreach (DominionCard cardToReplace in itemsToReplace)
-                    {
-                        for (int i = 0; i < this.Cards.Count; ++i)
-                        {
-                            if (this.Cards[i] == cardToReplace)
-                            {
-                                var nextCard = cardPicker.GetCard(c => true);
-                                if (nextCard == null)
-                                {
-                                    this.Cards.Remove(cardToReplace);
-                                }
-                                else
-                                {
-                                    this.Cards[i] = nextCard;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            this.originalCards.Clear();
-
-            if (this.cards.Count < 10 || isReplacingItems)
-            {
-                this.originalCards.Clear();
-                cardPicker.ExcludeCards(this.cards);
-                foreach (DominionCard card in this.cards)
-                {
-                    if (itemsToReplace == null || !itemsToReplace.Contains(card))
-                        this.originalCards.Add(card);
-                }
-                this.ClearSort();
-            }
-
-            while (this.originalCards.Count < 10)
-            {
-                DominionCard currentCard = cardPicker.GetCard( c => true);
-                if (currentCard == null)
-                    break;
-                this.originalCards.Add(currentCard);
-            }
-
+            MainPage.Generate10Random(this.originalCards, this.Cards, allCards, itemsToReplace);
             this.UpdateUI();
-        }
-
+        }       
     }
 
     class AppDataContext
