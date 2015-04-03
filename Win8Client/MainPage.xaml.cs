@@ -26,33 +26,46 @@ namespace Win8Client
             this.InitializeComponent();
                        
             this.DataContext = this.appDatacontext;
-            var initTask = appDatacontext.AllCards.Populate();
+            var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();           
 
-            initTask.ContinueWith(
-                        delegate(System.Threading.Tasks.Task task)
-                        {
-                            var nextTask = appDatacontext.CommonCards.PopulateCommon();
-                            nextTask.Wait();
-                        })                        
-                    .ContinueWith(
-                        delegate(System.Threading.Tasks.Task task)
-                        {
-                            appDatacontext.PopulateAllCardsMap();
-                            appDatacontext.CurrentDeck.Generate10Random(appDatacontext.AllCards.Cards, null);
-                        });            
+            System.Threading.Tasks.Task.WhenAll(
+                appDatacontext.AllCards.Populate(),
+                appDatacontext.CommonCards.PopulateCommon()
+                ).ContinueWith(delegate(System.Threading.Tasks.Task task)
+                    {
+                        appDatacontext.PopulateAllCardsMap();
+                        Randomize10Cards();                 
+                    }, uiScheduler);
+
+            this.Loaded += MainPage_Loaded;
         }
 
-        private void Randomize(object sender, RoutedEventArgs e)
-        {            
-            var selectedItems = this.CurrentCardsListView.SelectedItems.Select(item => (DominionCard)item).ToArray<DominionCard>();
-            this.appDatacontext.CurrentDeck.Generate10Random(this.appDatacontext.AllCards.Cards, itemsToReplace:selectedItems);            
+        void MainPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            UpdateAllCardsListSelection();
+        }
 
+        private void RandomizeButtonClick(object sender, RoutedEventArgs e)
+        {            
+            Randomize10Cards();
+        }
+
+        private void Randomize10Cards()
+        {
+            var selectedItems = this.CurrentCardsListView.SelectedItems.Select(item => (DominionCard)item).ToArray<DominionCard>();
+            this.appDatacontext.CurrentDeck.Generate10Random(this.appDatacontext.AllCards.Cards, itemsToReplace: selectedItems);
+            UpdateAllCardsListSelection();
+        }
+
+        private void UpdateAllCardsListSelection()
+        {
             this.AllCardsListView.SelectedItems.Clear();
-            foreach(DominionCard card in this.appDatacontext.CurrentDeck.CurrentCards)
+            foreach (DominionCard card in this.appDatacontext.CurrentDeck.CurrentCards)
             {
                 this.AllCardsListView.SelectedItems.Add(card);
             }
         }
+
 
         private void SortAllByName(object sender, RoutedEventArgs e)
         {
@@ -304,16 +317,21 @@ namespace Win8Client
             this.filter = filter;
         }
 
-        public async System.Threading.Tasks.Task UpdateUI()
+        public System.Threading.Tasks.Task UpdateUI()
         {
-            await this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+            return this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
             {
-                this.cards.Clear();
-                foreach (var item in this.CurrentCards)
-                {
-                    this.cards.Add(item);
-                }
-            });
+                UpdateUIFromUIThread();
+            }).AsTask();
+        }
+
+        public void UpdateUIFromUIThread()
+        {
+            this.cards.Clear();
+            foreach (var item in this.CurrentCards)
+            {
+                this.cards.Add(item);
+            }
         }
 
         private void SortCards(Func<DominionCard, object> keySelector)
@@ -322,17 +340,17 @@ namespace Win8Client
             this.UpdateUI();
         }
 
-        public async System.Threading.Tasks.Task Populate()
+        public System.Threading.Tasks.Task Populate()
         {
-            await PopulateFromResources().ContinueWith(async (continuation) =>
+            return PopulateFromResources().ContinueWith(async (continuation) =>
             {
                 await this.UpdateUI();
             });
         }
 
-        public async System.Threading.Tasks.Task PopulateCommon()
+        public System.Threading.Tasks.Task PopulateCommon()
         {
-            await PopulateCommonFromResources().ContinueWith(async (continuation) =>
+            return PopulateCommonFromResources().ContinueWith(async (continuation) =>
             {
                 await this.UpdateUI();
             });
@@ -389,7 +407,7 @@ namespace Win8Client
         public void Generate10Random(IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
         {
             MainPage.Generate10Random(this.originalCards, this.Cards, allCards, itemsToReplace);
-            this.UpdateUI();
+            this.UpdateUIFromUIThread();
         }       
     }
 
