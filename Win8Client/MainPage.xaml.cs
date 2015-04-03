@@ -57,13 +57,16 @@ namespace Win8Client
             UpdateAllCardsListSelection();
         }
 
+        private bool isIgnoringUpdates = false;
         private void UpdateAllCardsListSelection()
         {
+            this.isIgnoringUpdates = true;
             this.AllCardsListView.SelectedItems.Clear();
             foreach (DominionCard card in this.appDatacontext.CurrentDeck.CurrentCards)
             {
                 this.AllCardsListView.SelectedItems.Add(card);
             }
+            this.isIgnoringUpdates = false;
         }
 
 
@@ -217,7 +220,7 @@ namespace Win8Client
                     }
                 }
             }
-            else if (sourceList.Count != 10)
+            else if (sourceList.Count < 10)
             {
                 var listRemoved = new List<DominionCard>();
                 foreach(var card in resultList)
@@ -244,6 +247,13 @@ namespace Win8Client
                     break;
                 resultList.Add(currentCard);
             }
+        }
+
+        private void AllCardsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (this.isIgnoringUpdates)
+                return;
+            this.appDatacontext.CurrentDeck.UpdateOriginalCards(e.AddedItems.Select(item => (DominionCard)item), e.RemovedItems.Select(item => (DominionCard)item));            
         }
     }
 
@@ -409,6 +419,21 @@ namespace Win8Client
             MainPage.Generate10Random(this.originalCards, this.Cards, allCards, itemsToReplace);
             this.UpdateUIFromUIThread();
         }       
+
+        public void UpdateOriginalCards(IEnumerable<DominionCard> addedCards, IEnumerable<DominionCard> removedCards)
+        {
+            foreach(var card in addedCards)
+            {
+                this.originalCards.Add(card);
+            }
+
+            foreach (var card in removedCards)
+            {
+                this.originalCards.Remove(card);
+            }
+
+            this.UpdateUIFromUIThread();
+        }
     }
 
     class AppDataContext

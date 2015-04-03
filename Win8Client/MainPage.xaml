@@ -201,7 +201,7 @@
                         </Button>                                              
                     </StackPanel>
                     <ScrollViewer Grid.Row="1">
-                        <ListView Name="AllCardsListView" ItemsSource="{Binding AllCards.Cards}" SelectionMode="Multiple">
+                        <ListView Name="AllCardsListView" ItemsSource="{Binding AllCards.Cards}" SelectionMode="Multiple" SelectionChanged="AllCardsListView_SelectionChanged">
                             <ListView.ItemsPanel>
                                 <ItemsPanelTemplate>
                                     <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
