@@ -105,30 +105,33 @@ namespace Win8Client
 
         private async void CurrentCardsListView_Drop(object sender, DragEventArgs e)
         {
-            string cardName = (string)await e.Data.GetView().GetTextAsync("data");
+            string cardNames = (string)await e.Data.GetView().GetTextAsync("text");
 
-            DominionCard card = this.appDatacontext.mapNameToCard[cardName];
+            Dominion.Strategy.Description.StrategyDescription strategy = this.appDatacontext.currentStrategy.Value.ConvertToDominionStrategy();
+            
 
-            if (this.appDatacontext.currentStrategy.Value.CardAcceptanceDescriptions.Count == 0)
+            foreach (var cardName in cardNames.Split(','))
             {
-                var defaultDescr = Dominion.Strategy.Description.StrategyDescription.GetDefaultStrategyDescription(card.dominionCard);
-                this.appDatacontext.currentStrategy.Value.PopulateFrom(defaultDescr);
+                DominionCard card = this.appDatacontext.mapNameToCard[cardName];
+
+                if (strategy.purchaseOrderDescription.descriptions.Length == 0)
+                {
+                    strategy = Dominion.Strategy.Description.StrategyDescription.GetDefaultStrategyDescription(card.dominionCard);
+                }                
+                else
+                {                    
+                    strategy = strategy.AddCardToPurchaseOrder(card.dominionCard);                    
+                }
             }
-            else
-            {
-                this.appDatacontext.currentStrategy.Value.CardAcceptanceDescriptions.Add(
-                    new CardAcceptanceDescription(card));
-            }
+            
+            this.appDatacontext.currentStrategy.Value.PopulateFrom(strategy);
         }             
 
         private void CurrentCardsListView_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
-        {
-            try
-            {
-                e.Data.SetData("data", (e.Items[0] as DominionCard).Name);
-            }
-            catch
-            { }
+        {            
+            var cardListAsString = string.Join(",", e.Items.Select(card => ((DominionCard)card).dominionCard.name));
+
+            e.Data.SetData("text", cardListAsString);            
         }
 
         private void Player1RadioButtonChecked(object sender, RoutedEventArgs e)

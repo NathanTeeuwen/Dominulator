@@ -222,7 +222,7 @@ namespace Dominion.CardTypes
         public static Goons card = new Goons();
 
         private Goons()
-            : base("Goons", Expansion.Prosperity, coinCost: 6, isAction: true, isAttack: true)
+            : base("Goons", Expansion.Prosperity, coinCost: 6, isAction: true, isAttack: true, plusBuy:1, plusCoins:2, pluralName:"Goons")
         {
             this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
         }
