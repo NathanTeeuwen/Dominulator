@@ -663,6 +663,21 @@ namespace Win8Client
             throw new NotImplementedException();
         }
     }
+
+    public class BoolToInVisibilityConverter
+        : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            var boolValue = (bool)value;
+            return boolValue ? Visibility.Collapsed : Visibility.Visible;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }                    
                      
                      

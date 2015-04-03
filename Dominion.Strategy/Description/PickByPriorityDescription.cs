@@ -47,7 +47,7 @@ namespace Dominion.Strategy.Description
             }
 
             var result = new PickByPriorityDescription(resultDescriptions);
-            if (card.potionCost > 0 && !result.CanPurchasePotion())
+            if (card.potionCost > 0 && !result.HasPotionCard())
             {
                 return result.AddCardInBestLocation(Cards.Potion);
             }
@@ -55,9 +55,9 @@ namespace Dominion.Strategy.Description
             return result;
         }
 
-        private bool CanPurchasePotion()
+        private bool HasPotionCard()
         {
-            return this.descriptions.Where(descr => descr.card.potionCost > 0).Any();
+            return this.descriptions.Where(descr => descr.card == Cards.Potion).Any();
         }
     }
 }

@@ -50,6 +50,20 @@ namespace Dominion.Strategy
 
                 yield return card;
             }
+        }
+
+        public static IEnumerable<Card> UnImplementedKingdomCards()
+        {
+
+            foreach (Card card in Cards.UnimplementedCards)
+            {                                
+                yield return card;
+            }
+
+            foreach (Card card in CardsWithoutDefaultBehaviors)
+            {                
+                yield return card;
+            }
         }        
     }
 }

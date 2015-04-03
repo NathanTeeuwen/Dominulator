@@ -31,6 +31,7 @@ namespace Win8Client
         public DependencyObjectDecl<int> Threshhold { get; private set; }
 
         public DependencyObjectDecl<bool> SecondaryMatchVisible{ get; private set; }
+        public DependencyObjectDecl<bool> CanSimulateCard { get; private set; }
 
         public CardAcceptanceDescription()
         {
@@ -41,8 +42,15 @@ namespace Win8Client
             this.Comparison = new DependencyObjectDecl<Dominion.Strategy.Description.Comparison>(this);
             this.Threshhold = new DependencyObjectDecl<int>(this);
             this.SecondaryMatchVisible = new DependencyObjectDecl<bool>(this);
+            this.CanSimulateCard = new DependencyObjectDecl<bool>(this);
 
             this.CountSource.PropertyChanged += CountSource_PropertyChanged;
+            this.Card.PropertyChanged += Card_PropertyChanged;
+        }
+
+        void Card_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            this.CanSimulateCard.Value = !Dominion.Strategy.MissingDefaults.UnImplementedKingdomCards().Contains(this.Card.Value.dominionCard);
         }
 
         void CountSource_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -62,11 +70,10 @@ namespace Win8Client
             this.Card.Value = card;
             this.Count.Value = CountAsManyAsPossible;
             this.SecondaryMatchVisible.Value = false;
-
             this.TestCard.Value = card;
             this.Comparison.Value = Dominion.Strategy.Description.Comparison.LessThan;
             this.Threshhold.Value = 1;
-            this.CountSource.Value = Dominion.Strategy.Description.CountSource.Always;
+            this.CountSource.Value = Dominion.Strategy.Description.CountSource.Always;            
         }
 
         public string CountText
