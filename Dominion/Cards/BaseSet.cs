@@ -538,7 +538,7 @@ namespace Dominion.CardTypes
         public static ThroneRoom card = new ThroneRoom();
 
         private ThroneRoom()
-            : base("Throne Room", Expansion.Base, coinCost: 4, isAction: true)
+            : base("Throne Room", Expansion.Base, coinCost: 4, isAction: true, mightMultiplyActions:true)
         {
         }
 

@@ -65,6 +65,10 @@ namespace Dominion
 
         private readonly int privateIndex;
 
+        // properties of cards used that don't affect behavior
+        public readonly bool mightMultiplyActions;
+
+
         public string ProgrammaticName
         {
             get
@@ -113,6 +117,7 @@ namespace Dominion
             bool isTraveller = false,
             bool isReserve = false,
             bool canOverpay = false,
+            bool mightMultiplyActions = false,
             CardIntValue provideDiscountForWhileInPlay = null,
             GameStateMethod doSpecializedCleanupAtStartOfCleanup = null,
             GameStateCardMethod doSpecializedActionOnBuyWhileInPlay = null,
@@ -163,6 +168,7 @@ namespace Dominion
             this.isReserve = isReserve;
             this.requiresSpoils = requiresSpoils;
             this.canOverpay = canOverpay;
+            this.mightMultiplyActions = mightMultiplyActions;
             this.provideDiscountForWhileInPlay = provideDiscountForWhileInPlay;
             this.doSpecializedCleanupAtStartOfCleanup = doSpecializedCleanupAtStartOfCleanup;
             this.doSpecializedActionOnBuyWhileInPlay = doSpecializedActionOnBuyWhileInPlay;

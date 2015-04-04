@@ -826,7 +826,7 @@ namespace Dominion.CardTypes
         public static Procession card = new Procession();
 
         private Procession()
-            : base("Procession", Expansion.DarkAges, coinCost: 4, isAction: true)
+            : base("Procession", Expansion.DarkAges, coinCost: 4, isAction: true, mightMultiplyActions: true)
         {
         }
 

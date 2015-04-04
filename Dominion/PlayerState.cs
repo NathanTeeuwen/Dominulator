@@ -428,7 +428,7 @@ namespace Dominion
             }
 
             gameState.cardContextStack.Pop();
-            CardHasBeenPlayed(cardToPlayAs);
+            CardHasBeenPlayed(cardToPlayAs, countTimes);
         }
 
         internal delegate void AttackAction(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState);
@@ -447,7 +447,7 @@ namespace Dominion
             }
         }
 
-        private void CardHasBeenPlayed(Card cardPlayedAs)
+        private void CardHasBeenPlayed(Card cardPlayedAs, int count)
         {
             Card cardAfterPlay = this.cardsBeingPlayed.DrawCardFromTop();
             if (cardAfterPlay != null)
@@ -455,6 +455,15 @@ namespace Dominion
                 if (cardAfterPlay.isDuration)
                 {
                     this.durationCards.AddCard(cardAfterPlay);
+                    for (int i = 1; i < count; ++i)
+                    {
+                        this.actionsToExecuteAtBeginningOfNextTurn.Add(delegate(PlayerState currentPlayer, GameState gameState)
+                        {
+                            gameState.cardContextStack.PushCardContext(this, cardPlayedAs, CardContextReason.CardFinishingDuration);
+                            cardPlayedAs.DoSpecializedDurationActionAtBeginningOfTurn(currentPlayer, gameState);
+                            gameState.cardContextStack.Pop();
+                        });
+                    }
                 }
                 else
                 {
@@ -497,7 +506,7 @@ namespace Dominion
 
             currentCard.DoSpecializedAction(gameState.players.CurrentPlayer, gameState);
 
-            CardHasBeenPlayed(currentCard);
+            CardHasBeenPlayed(currentCard, 1);
             gameState.cardContextStack.Pop();
             this.gameLog.PopScope();
         }        

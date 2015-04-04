@@ -110,6 +110,11 @@ namespace Dominion.Strategy
 
                 public int Compare(Card first, Card second)
                 {
+                    if (first.mightMultiplyActions ^ second.mightMultiplyActions)
+                    {
+                        return first.mightMultiplyActions ? -1 : 1;
+                    }
+
                     if (first.plusAction != 0 ^ second.plusAction != 0)
                     {
                         return first.plusAction != 0 ? -1 : 1;
@@ -129,7 +134,7 @@ namespace Dominion.Strategy
 
                     return 0;
                 }
-            }
+            }            
 
             // TODO:  implement a better default choice of which Ruins to player.
             private static int CompareRuins(Card first, Card second, GameState gameState, ICardPicker purchaseOrder)

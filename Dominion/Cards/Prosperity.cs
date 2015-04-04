@@ -280,7 +280,7 @@ namespace Dominion.CardTypes
         public static KingsCourt card = new KingsCourt();
 
         private KingsCourt()
-            : base("King's Court", Expansion.Prosperity, coinCost: 7, isAction: true)
+            : base("King's Court", Expansion.Prosperity, coinCost: 7, isAction: true, mightMultiplyActions: true)
         {
         }
 
