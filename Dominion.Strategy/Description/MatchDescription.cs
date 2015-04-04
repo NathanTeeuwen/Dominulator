@@ -96,6 +96,6 @@ namespace Dominion.Strategy.Description
             {
                 writer.Write("({0})", this.countThreshHold);
             }
-        }
+        }        
     }
 }

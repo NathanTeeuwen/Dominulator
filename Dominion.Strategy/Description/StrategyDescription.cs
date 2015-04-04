@@ -16,6 +16,11 @@ namespace Dominion.Strategy.Description
             this.purchaseOrderDescription = purchaseOrderDescription;
         }
 
+        public StrategyDescription(params CardAcceptanceDescription[] purchaseOrder)
+        {
+            this.purchaseOrderDescription = new PickByPriorityDescription(purchaseOrder);
+        }
+
         public Dominion.Strategy.PlayerAction ToPlayerAction(string playerName)
         {
             return new Dominion.Strategy.PlayerAction(
@@ -30,12 +35,13 @@ namespace Dominion.Strategy.Description
 
         public static StrategyDescription GetDefaultStrategyDescription(Card card)
         {
-            StrategyDescription result = new StrategyDescription();
-            result = result.AddCardToPurchaseOrder(Cards.Province);
-            result = result.AddCardToPurchaseOrder(Cards.Gold);
-            result = result.AddCardToPurchaseOrder(Cards.Duchy);
-            result = result.AddCardToPurchaseOrder(Cards.Silver);
-            result = result.AddCardToPurchaseOrder(Cards.Estate);
+            var result = new StrategyDescription(
+                CardAcceptanceDescription.For(Cards.Province),
+                CardAcceptanceDescription.For(Cards.Gold),
+                CardAcceptanceDescription.For(Cards.Duchy),
+                CardAcceptanceDescription.For(Cards.Silver),
+                CardAcceptanceDescription.For(Cards.Estate));
+            
             result = result.AddCardToPurchaseOrder(card);
             return result;
         }

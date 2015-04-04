@@ -149,8 +149,26 @@ namespace Win8Client
             this.appDatacontext.currentStrategy.Value.CardAcceptanceDescriptions.Clear();
         }
 
+        private bool CanSimulateStrategies(StrategyDescription strategyDescription)
+        {
+            foreach(var descr in strategyDescription.CardAcceptanceDescriptions)
+            {
+                if (!descr.CanSimulateCard.Value)
+                    return false;
+            }
+            return true;
+        }
+
+        private bool CanSimulateStrategies()
+        {
+            return CanSimulateStrategies(this.appDatacontext.player1Strategy) && CanSimulateStrategies(this.appDatacontext.player2Strategy);
+        }
+
         private void SimulateGameButtonClick(object sender, RoutedEventArgs e)
         {
+            if (!CanSimulateStrategies())
+                return;
+
             var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext(); 
           
             Dominion.Strategy.Description.StrategyDescription player1Descr = this.appDatacontext.player1Strategy.ConvertToDominionStrategy();

@@ -11,7 +11,7 @@ namespace Dominion.Strategy.Description
         public CardAcceptanceDescription(Card card, CountSource countSource, Card matchOn, Comparison comparison, int threshhold)
             : this(card, new MatchDescription(countSource, matchOn, comparison, threshhold))
         {            
-        }
+        }        
 
         public CardAcceptanceDescription(Card card, params MatchDescription[] matchDescriptions)
         {
@@ -43,6 +43,33 @@ namespace Dominion.Strategy.Description
         {
             writer.Write(card.name);
             this.matchDescriptions[0].WriteText(writer);
+        }
+
+        public static CardAcceptanceDescription For(Card card)
+        {
+            return new CardAcceptanceDescription(card, new MatchDescription[]
+            {
+                new MatchDescription(CountSource.Always, card, Comparison.GreaterThan, 0),                
+            });
+        }
+
+        public static CardAcceptanceDescription For(Card card, int count)
+        {
+            return new CardAcceptanceDescription(card, new MatchDescription[]
+            {
+                new MatchDescription(CountSource.Always, card, Comparison.GreaterThan, 0),                
+                new MatchDescription(CountSource.CountAllOwned, card, Comparison.LessThan, count),                
+            });
+        }
+
+
+        public static CardAcceptanceDescription For(Card card, int count, Card testCard, CountSource countSouce, Comparison comparison, int threshhold)
+        {
+            return new CardAcceptanceDescription(card, new MatchDescription[]
+            {
+                new MatchDescription(CountSource.CountAllOwned, card, Comparison.LessThan, count),
+                new MatchDescription(countSouce, testCard, comparison, threshhold),
+            });
         }
     }
 }
