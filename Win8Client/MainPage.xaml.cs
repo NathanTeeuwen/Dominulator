@@ -19,21 +19,20 @@ namespace Win8Client
 {
     public sealed partial class MainPage : Page
     {
-        AppDataContext appDatacontext;
+        AppDataContext appDataContext;
 
         public MainPage()
         {
-            this.appDatacontext = new AppDataContext(this);
-  
-            this.InitializeComponent();
+            this.appDataContext = new AppDataContext(this);  
 
-      
-            this.DataContext = this.appDatacontext;
+            this.InitializeComponent();
+                  
+            this.DataContext = this.appDataContext;
             var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();           
 
             System.Threading.Tasks.Task.WhenAll(
-                appDatacontext.AllCards.Populate(),
-                appDatacontext.CommonCards.PopulateCommon()
+                appDataContext.AllCards.Populate(),
+                appDataContext.CommonCards.PopulateCommon()
                 ).ContinueWith(delegate(System.Threading.Tasks.Task task)
                     {                        
                         Randomize10Cards();                 
@@ -55,77 +54,38 @@ namespace Win8Client
         private void Randomize10Cards()
         {
             var selectedItems = this.CurrentCardsListView.SelectedItems.Select(item => (DominionCard)item).ToArray<DominionCard>();
-            this.appDatacontext.CurrentDeck.Generate10Random(this.appDatacontext.AllCards.Cards, itemsToReplace: selectedItems);
+            this.appDataContext.CurrentDeck.Generate10Random(this.appDataContext.AllCards.Cards, itemsToReplace: selectedItems);
             UpdateAllCardsListSelection();
         }
-
-        internal bool isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
+        
         internal void UpdateAllCardsListSelection()
         {
-            this.isCurrentDeckIgnoringAllDeckSelectionUpdates = true;
-            this.AllCardsListView.SelectedItems.Clear();
-            foreach (DominionCard card in this.appDatacontext.CurrentDeck.CurrentCards)
+            this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = true;
+            this.AllCards.SelectedItems.Clear();
+            foreach (DominionCard card in this.appDataContext.CurrentDeck.CurrentCards)
             {
-                this.AllCardsListView.SelectedItems.Add(card);
+                this.AllCards.SelectedItems.Add(card);
             }
-            this.isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
+            this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
         }
-
-
-        private void SortAllByName(object sender, RoutedEventArgs e)
-        {
-            this.appDatacontext.AllCards.SortByName();
-        }
-
-        private void SortAllByCost(object sender, RoutedEventArgs e)
-        {
-            this.appDatacontext.AllCards.SortByCost();
-        }
-
-        private void SortAllByExpansion(object sender, RoutedEventArgs e)
-        {
-            this.appDatacontext.AllCards.SortByExpansion();
-        }
+        
 
         private void SortCurrentByName(object sender, RoutedEventArgs e)
         {
-            this.appDatacontext.CurrentDeck.SortByName();
+            this.appDataContext.CurrentDeck.SortByName();
         }
 
         private void SortCurrentByCost(object sender, RoutedEventArgs e)
         {
-            this.appDatacontext.CurrentDeck.SortByCost();
+            this.appDataContext.CurrentDeck.SortByCost();
         }
 
         private void SortCurrentByExpansion(object sender, RoutedEventArgs e)
         {
-            this.appDatacontext.CurrentDeck.SortByExpansion();
+            this.appDataContext.CurrentDeck.SortByExpansion();
         }        
 
-        private async void CurrentCardsListView_Drop(object sender, DragEventArgs e)
-        {
-            string cardNames = (string)await e.Data.GetView().GetTextAsync("text");
-
-            Dominion.Strategy.Description.StrategyDescription strategy = this.appDatacontext.currentStrategy.Value.ConvertToDominionStrategy();
-            
-
-            foreach (var cardName in cardNames.Split(','))
-            {
-                DominionCard card = DominionCard.Create(cardName);
-
-                if (strategy.purchaseOrderDescription.descriptions.Length == 0)
-                {
-                    strategy = Dominion.Strategy.Description.StrategyDescription.GetDefaultStrategyDescription(card.dominionCard);
-                }                
-                else
-                {                    
-                    strategy = strategy.AddCardToPurchaseOrder(card.dominionCard);                    
-                }
-            }
-            
-            this.appDatacontext.currentStrategy.Value.PopulateFrom(strategy);
-        }             
-
+        
         private void CurrentCardsListView_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
         {            
             var cardListAsString = string.Join(",", e.Items.Select(card => ((DominionCard)card).dominionCard.name));
@@ -133,115 +93,7 @@ namespace Win8Client
             e.Data.SetData("text", cardListAsString);            
         }
 
-        private void Player1RadioButtonChecked(object sender, RoutedEventArgs e)
-        {
-            appDatacontext.CurrentStrategy.Value = appDatacontext.player1Strategy;
-        }
-
-        private void Player2RadioButtonChecked(object sender, RoutedEventArgs e)
-        {
-            appDatacontext.CurrentStrategy.Value = appDatacontext.player2Strategy;
-        }
-
-        private void ClearStrategyButtonClick(object sender, RoutedEventArgs e)
-        {
-            this.appDatacontext.currentStrategy.Value.CardAcceptanceDescriptions.Clear();
-        }
-
-        private bool CanSimulateStrategies(StrategyDescription strategyDescription)
-        {
-            foreach(var descr in strategyDescription.CardAcceptanceDescriptions)
-            {
-                if (!descr.CanSimulateCard.Value)
-                    return false;
-            }
-            return true;
-        }
-
-        private bool CanSimulateStrategies()
-        {
-            return CanSimulateStrategies(this.appDatacontext.player1Strategy) && CanSimulateStrategies(this.appDatacontext.player2Strategy);
-        }
-
-        private void GetStrategyNames(Dominion.Strategy.Description.StrategyDescription player1Descr, Dominion.Strategy.Description.StrategyDescription player2Descr, out string player1Name, out string player2Name)
-        {
-            var player1Uniques = new HashSet<Dominion.Card>();
-            var player2Uniques = new HashSet<Dominion.Card>();
-
-            foreach(Dominion.Card card in player1Descr.purchaseOrderDescription.descriptions.Select(descr => descr.card))
-            {
-                player1Uniques.Add(card);
-            }
-
-            foreach (Dominion.Card card in player2Descr.purchaseOrderDescription.descriptions.Select(descr => descr.card))
-            {
-                player2Uniques.Add(card);
-                player1Uniques.Remove(card);
-            }
-
-            foreach (Dominion.Card card in player1Descr.purchaseOrderDescription.descriptions.Select(descr => descr.card))
-            {
-                player2Uniques.Remove(card);
-            }
-
-            
-            player1Name = string.Join(" ", player1Uniques.Select(c => c.name));
-            player2Name = string.Join(" ", player2Uniques.Select(c => c.name));
-
-            return;
-        }
-
-        private void SimulateGameButtonClick(object sender, RoutedEventArgs e)
-        {
-            if (!CanSimulateStrategies())
-                return;
-
-            var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext(); 
-          
-            Dominion.Strategy.Description.StrategyDescription player1Descr = this.appDatacontext.player1Strategy.ConvertToDominionStrategy();
-            Dominion.Strategy.Description.StrategyDescription player2Descr = this.appDatacontext.player2Strategy.ConvertToDominionStrategy();
-
-            System.Threading.Tasks.Task<string>.Factory.StartNew(() =>
-            {
-
-                string player1nameAppend, player2nameAppend;
-                GetStrategyNames(player1Descr, player2Descr, out player1nameAppend, out player2nameAppend);
-
-                var playerActions = new Dominion.Strategy.PlayerAction[] 
-                {
-                    player1Descr.ToPlayerAction("Player 1: " + player1nameAppend),
-                    player2Descr.ToPlayerAction("Player 2: " + player2nameAppend)
-                };
-
-                var builder = new Dominion.GameConfigBuilder();
-                Dominion.Strategy.PlayerAction.SetKingdomCards(builder, playerActions[0], playerActions[1]);
-
-                builder.useColonyAndPlatinum = false;
-                builder.useShelters = false;
-                builder.CardSplit = Dominion.StartingCardSplit.Split43;
-
-                bool rotateWhoStartsFirst = true;
-                int numberOfGames = 1000;
-
-                Dominion.GameConfig gameConfig = builder.ToGameConfig();
-                var strategyComparison = new Dominion.Data.StrategyComparison(playerActions, gameConfig, rotateWhoStartsFirst, numberOfGames);
-
-                Dominion.Data.StrategyComparisonResults strategyComparisonResults = strategyComparison.ComparePlayers();
-
-                var htmlGenerator = new HtmlRenderer.HtmlReportGenerator(strategyComparisonResults);
-
-                var stringWriter = new System.IO.StringWriter();
-                var textWriter = new Dominion.IndentedTextWriter(stringWriter);
-                htmlGenerator.CreateHtmlReport(textWriter);
-                stringWriter.Flush();
-                string resultHtml = stringWriter.GetStringBuilder().ToString();
-                return resultHtml;
-            }).ContinueWith(async (continuation) =>
-            {
-                this.ResultsWebView.NavigateToString(continuation.Result);
-            }, uiScheduler);
-        }
-
+      
         internal static void Generate10Random(IList<DominionCard> resultList, IList<DominionCard> sourceList, IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
         {
             bool isReplacingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count <= 10;
@@ -309,14 +161,7 @@ namespace Win8Client
                     break;
                 resultList.Add(currentCard);
             }
-        }
-
-        private void AllCardsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (this.isCurrentDeckIgnoringAllDeckSelectionUpdates)
-                return;
-            this.appDatacontext.CurrentDeck.UpdateOriginalCards(e.AddedItems.Select(item => (DominionCard)item), e.RemovedItems.Select(item => (DominionCard)item));            
-        }
+        }        
     }
 
     class SortableCardList
@@ -501,161 +346,7 @@ namespace Win8Client
 
             this.UpdateUIFromUIThread();
         }
-    }
-
-    class AppDataContext
-        : DependencyObject
-    {        
-        System.Collections.ObjectModel.ObservableCollection<DominionCard> availableCards;
-        private SortableCardList allCards;
-        private SortableCardList currentDeck;
-        private SortableCardList commonCards;
-        private System.Collections.ObjectModel.ObservableCollection<Expansion> expansions;        
-
-        public DependencyObjectDecl<bool, DefaultTrue> Use3OrMoreFromExpansions { get; private set;}
-        public DependencyObjectDecl<bool, DefaultTrue> RequireTrashing { get; private set; }
-        public DependencyObjectDecl<bool, DefaultTrue> RequirePlusCards { get; private set; }
-        public DependencyObjectDecl<bool, DefaultTrue> RequirePlusBuy { get; private set; }
-        public DependencyObjectDecl<bool, DefaultTrue> RequirePlus2Actions { get; private set; }
-        public DependencyObjectDecl<bool, DefaultTrue> RequireAttack { get; private set; }
-        public DependencyObjectDecl<bool, DefaultTrue> AllowAttack { get; private set; }
-
-        public DependencyObjectDecl<StrategyDescription, DefaultEmptyStrategyDescription> currentStrategy { get; private set; }
-        public StrategyDescription player1Strategy { get; private set; }
-        public StrategyDescription player2Strategy { get; private set; }
-
-        private MainPage mainPage;
-
-        public AppDataContext(MainPage mainPage)
-        {
-            this.mainPage = mainPage;
-
-            this.allCards = new SortableCardList();
-            this.currentDeck = new SortableCardList();
-            this.commonCards = new SortableCardList();
-            this.availableCards = new System.Collections.ObjectModel.ObservableCollection<DominionCard>();
-            this.expansions = new System.Collections.ObjectModel.ObservableCollection<Expansion>();
-            this.Use3OrMoreFromExpansions = new DependencyObjectDecl<bool, DefaultTrue>(this);
-            this.RequireTrashing = new DependencyObjectDecl<bool, DefaultTrue>(this);
-            this.RequirePlusCards = new DependencyObjectDecl<bool, DefaultTrue>(this);
-            this.RequirePlusBuy = new DependencyObjectDecl<bool, DefaultTrue>(this);
-            this.RequirePlus2Actions = new DependencyObjectDecl<bool, DefaultTrue>(this);
-            this.RequireAttack = new DependencyObjectDecl<bool, DefaultTrue>(this);
-            this.AllowAttack = new DependencyObjectDecl<bool, DefaultTrue>(this);
-
-            this.player1Strategy = new StrategyDescription();
-            this.player2Strategy = new StrategyDescription();
-            this.currentStrategy = new DependencyObjectDecl<StrategyDescription, DefaultEmptyStrategyDescription>(this);
-            this.currentStrategy.Value = this.player1Strategy;
-                                    
-            this.expansions.Add(new Expansion("Alchemy", ExpansionIndex.Base));
-            this.expansions.Add(new Expansion("Base", ExpansionIndex.Alchemy));
-            this.expansions.Add(new Expansion("Cornucopia", ExpansionIndex.Cornucopia));
-            this.expansions.Add(new Expansion("Dark Ages", ExpansionIndex.DarkAges));
-            this.expansions.Add(new Expansion("Guilds", ExpansionIndex.Guilds));
-            this.expansions.Add(new Expansion("Hinterlands", ExpansionIndex.Hinterlands));
-            this.expansions.Add(new Expansion("Intrigue", ExpansionIndex.Intrigue));
-            this.expansions.Add(new Expansion("Promo", ExpansionIndex.Promo));
-            this.expansions.Add(new Expansion("Prosperity", ExpansionIndex.Prosperity));
-            this.expansions.Add(new Expansion("Seaside", ExpansionIndex.Seaside));
-
-            foreach(var expansion in expansions)
-            {
-                expansion.IsEnabled.PropertyChanged += ExpansionEnabledChangedEventHandler;
-            }
-            
-            this.commonCards.PropertyChanged += AvailableCards_PropetyChanged;
-            this.currentDeck.PropertyChanged += AvailableCards_PropetyChanged;
-            
-
-            this.Use3OrMoreFromExpansions.PropertyChanged += Enable3orMoreFromExpansionsChangedEventHandler;
-
-            this.allCards.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
-            this.currentDeck.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);            
-        }
-
-        void AvailableCards_PropetyChanged(object sender, PropertyChangedEventArgs e)
-        {   
-            var listCards = new List<DominionCard>();
-            foreach(var card in this.currentDeck.Cards)
-            {
-                listCards.Add(card);
-            }
-
-            foreach (var card in this.commonCards.Cards)
-            {
-                listCards.Add(card);
-            }            
-
-            this.availableCards.Clear();
-            foreach(var card in listCards.OrderBy( c => c.Name))
-            {
-                this.availableCards.Add(card);
-            }
-        }
-
-        public SortableCardList AllCards
-        {
-            get
-            {
-                return this.allCards;
-            }
-        }
-
-        public SortableCardList CurrentDeck
-        {
-            get
-            {
-                return this.currentDeck;
-            }
-        }
-
-        public System.Collections.ObjectModel.ObservableCollection<DominionCard> AvailableCards
-        {
-            get
-            {
-                return this.availableCards;
-            }
-        }
-
-        public SortableCardList CommonCards
-        {
-            get
-            {
-                return this.commonCards;
-            }
-        }
-
-        public System.Collections.ObjectModel.ObservableCollection<Expansion> Expansions
-        {
-            get
-            {
-                return this.expansions;
-            }
-        }
-
-        public DependencyObjectDecl<StrategyDescription, DefaultEmptyStrategyDescription> CurrentStrategy
-        {
-            get
-            {
-                return this.currentStrategy;
-            }
-        }
-        
-        public void ExpansionEnabledChangedEventHandler(object sender, PropertyChangedEventArgs e)
-        {
-            this.mainPage.isCurrentDeckIgnoringAllDeckSelectionUpdates = true;
-            this.allCards.UpdateUIFromUIThread();
-            this.currentDeck.UpdateUIFromUIThread();
-            this.mainPage.isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
-            this.mainPage.UpdateAllCardsListSelection();
-        }
-
-        public void Enable3orMoreFromExpansionsChangedEventHandler(object sender, PropertyChangedEventArgs e)
-        {
-            this.currentDeck.UpdateUI();
-        }        
-    }
+    }    
    
     enum ExpansionIndex
     {

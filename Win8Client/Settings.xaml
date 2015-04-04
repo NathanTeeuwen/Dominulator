@@ -1,0 +1,37 @@
+﻿<UserControl
+    x:Class="Win8Client.Settings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Win8Client"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+        
+    <StackPanel>
+        <TextBlock FontSize="30">Enabled Expansions</TextBlock>
+        <ItemsControl ItemsSource="{Binding Expansions}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel></StackPanel>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <CheckBox Content="{Binding Name}" IsChecked ="{Binding IsEnabled.Value, Mode=TwoWay}"></CheckBox>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <StackPanel Height="20"></StackPanel>
+        <!-- Spacer-->
+        <!--
+                <CheckBox IsChecked="{Binding Use3OrMoreFromExpansions.Value, Mode=TwoWay}">Use or 3 more cards from a set</CheckBox>                    
+                <CheckBox IsChecked="{Binding RequirePlusBuy.Value, Mode=TwoWay}">Require + Buy</CheckBox>
+                <CheckBox IsChecked="{Binding RequirePlusCards.Value, Mode=TwoWay}">Require + Cards</CheckBox>
+                <CheckBox IsChecked="{Binding RequirePlus2Actions.Value, Mode=TwoWay}">Require + 2 Actions</CheckBox>
+                <CheckBox IsChecked="{Binding RequireTrashing.Value, Mode=TwoWay}">Require Trashing</CheckBox>
+                <CheckBox IsChecked="{Binding RequireAttack.Value, Mode=TwoWay}">Require Attack</CheckBox>
+                <CheckBox IsChecked="{Binding AllowAttack.Value, Mode=TwoWay}">Allow Attacks</CheckBox> -->
+    </StackPanel>    
+</UserControl>

@@ -110,6 +110,18 @@ namespace Win8Client
         }
     }
 
+    class DefaultFalse
+        : DependencyPolicy<bool>
+    {
+        public bool DefaultValue
+        {
+            get
+            {
+                return false;
+            }
+        }
+    }
+
     class DefaultEmptyString
         : DependencyPolicy<string>
     {
