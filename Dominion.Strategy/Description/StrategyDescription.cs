@@ -37,10 +37,10 @@ namespace Dominion.Strategy.Description
         {
             var result = new StrategyDescription(
                 CardAcceptanceDescription.For(Cards.Province),
-                CardAcceptanceDescription.For(Cards.Gold),
-                CardAcceptanceDescription.For(Cards.Duchy),
-                CardAcceptanceDescription.For(Cards.Silver),
-                CardAcceptanceDescription.For(Cards.Estate));
+                CardAcceptanceDescription.For(Cards.Duchy, CountSource.CountOfPile, Cards.Province, Comparison.LessThan, 4),
+                CardAcceptanceDescription.For(Cards.Estate, CountSource.CountOfPile, Cards.Province, Comparison.LessThan, 2),
+                CardAcceptanceDescription.For(Cards.Gold),                
+                CardAcceptanceDescription.For(Cards.Silver));
             
             result = result.AddCardToPurchaseOrder(card);
             return result;

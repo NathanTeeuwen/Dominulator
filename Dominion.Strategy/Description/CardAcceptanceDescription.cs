@@ -62,6 +62,14 @@ namespace Dominion.Strategy.Description
             });
         }
 
+        public static CardAcceptanceDescription For(Card card, CountSource countSouce, Card testCard, Comparison comparison, int threshhold)
+        {
+            return new CardAcceptanceDescription(card, new MatchDescription[]
+            {
+                new MatchDescription(CountSource.Always, card, Comparison.GreaterThan, 0),                
+                new MatchDescription(countSouce, testCard, Comparison.LessThan, threshhold),                
+            });
+        }
 
         public static CardAcceptanceDescription For(Card card, int count, Card testCard, CountSource countSouce, Comparison comparison, int threshhold)
         {

@@ -10,12 +10,12 @@ namespace Win8Client
             this.CardAcceptanceDescriptions = new System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription>();            
         }
 
-        public void PopulateFrom(Dominion.Strategy.Description.StrategyDescription descr)
+        public void PopulateFrom(Dominion.Strategy.Description.StrategyDescription descr, System.Collections.Generic.Dictionary<string, DominionCard> mapNameToCard)
         {
             this.CardAcceptanceDescriptions.Clear();
             foreach (Dominion.Strategy.Description.CardAcceptanceDescription cardAcceptanceDescription in descr.purchaseOrderDescription.descriptions)
             {
-                this.CardAcceptanceDescriptions.Add(CardAcceptanceDescription.PopulateFrom(cardAcceptanceDescription));
+                this.CardAcceptanceDescriptions.Add(CardAcceptanceDescription.PopulateFrom(cardAcceptanceDescription, mapNameToCard));
             }
         }
 

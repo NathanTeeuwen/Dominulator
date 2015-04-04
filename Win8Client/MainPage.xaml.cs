@@ -124,7 +124,7 @@ namespace Win8Client
                 }
             }
             
-            this.appDatacontext.currentStrategy.Value.PopulateFrom(strategy);
+            this.appDatacontext.currentStrategy.Value.PopulateFrom(strategy, this.appDatacontext.mapNameToCard);
         }             
 
         private void CurrentCardsListView_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
@@ -299,6 +299,8 @@ namespace Win8Client
         
         public DependencyObjectDecl<string, DefaultEmptyString> CurrentSort { get; private set;}
 
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public System.Collections.ObjectModel.ObservableCollection<DominionCard> Cards
         {
             get
@@ -374,6 +376,9 @@ namespace Win8Client
             {
                 this.cards.Add(item);
             }
+
+            if (this.PropertyChanged != null)
+                this.PropertyChanged(this, null);
         }
 
         private void SortCards(Func<DominionCard, object> keySelector)
@@ -472,6 +477,7 @@ namespace Win8Client
         : DependencyObject
     {
         public System.Collections.Generic.Dictionary<string, DominionCard> mapNameToCard = new System.Collections.Generic.Dictionary<string, DominionCard>();
+        System.Collections.ObjectModel.ObservableCollection<DominionCard> availableCards;
         private SortableCardList allCards;
         private SortableCardList currentDeck;
         private SortableCardList commonCards;
@@ -498,6 +504,7 @@ namespace Win8Client
             this.allCards = new SortableCardList();
             this.currentDeck = new SortableCardList();
             this.commonCards = new SortableCardList();
+            this.availableCards = new System.Collections.ObjectModel.ObservableCollection<DominionCard>();
             this.expansions = new System.Collections.ObjectModel.ObservableCollection<Expansion>();
             this.Use3OrMoreFromExpansions = new DependencyObjectDecl<bool, DefaultTrue>(this);
             this.RequireTrashing = new DependencyObjectDecl<bool, DefaultTrue>(this);
@@ -528,10 +535,33 @@ namespace Win8Client
                 expansion.IsEnabled.PropertyChanged += ExpansionEnabledChangedEventHandler;
             }
 
+            this.commonCards.PropertyChanged += AvailableCards_PropetyChanged;
+            this.currentDeck.PropertyChanged += AvailableCards_PropetyChanged;
+
             this.Use3OrMoreFromExpansions.PropertyChanged += Enable3orMoreFromExpansionsChangedEventHandler;
 
             this.allCards.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
             this.currentDeck.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);            
+        }
+
+        void AvailableCards_PropetyChanged(object sender, PropertyChangedEventArgs e)
+        {   
+            var listCards = new List<DominionCard>();
+            foreach(var card in this.currentDeck.Cards)
+            {
+                listCards.Add(card);
+            }
+
+            foreach (var card in this.commonCards.Cards)
+            {
+                listCards.Add(card);
+            }            
+
+            this.availableCards.Clear();
+            foreach(var card in listCards.OrderBy( c => c.Name))
+            {
+                this.availableCards.Add(card);
+            }
         }
 
         public SortableCardList AllCards
@@ -547,6 +577,14 @@ namespace Win8Client
             get
             {
                 return this.currentDeck;
+            }
+        }
+
+        public System.Collections.ObjectModel.ObservableCollection<DominionCard> AvailableCards
+        {
+            get
+            {
+                return this.availableCards;
             }
         }
 

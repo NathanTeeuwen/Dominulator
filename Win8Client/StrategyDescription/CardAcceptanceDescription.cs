@@ -84,10 +84,10 @@ namespace Win8Client
             }
         }        
 
-        public static CardAcceptanceDescription PopulateFrom(Dominion.Strategy.Description.CardAcceptanceDescription descr)
+        public static CardAcceptanceDescription PopulateFrom(Dominion.Strategy.Description.CardAcceptanceDescription descr, System.Collections.Generic.Dictionary<string, DominionCard> mapNameToCard)
         {
             var result = new CardAcceptanceDescription();
-            result.Card.Value = new DominionCard(descr.card);
+            result.Card.Value = mapNameToCard[descr.card.name];
 
             if (descr.matchDescriptions.Length != 1 && descr.matchDescriptions.Length != 2)
                 throw new Exception("Support only one match description in addition to count all owned");
@@ -109,7 +109,7 @@ namespace Win8Client
 
             if (descr.matchDescriptions.Length == 2)
             {
-                result.TestCard.Value = new DominionCard(descr.matchDescriptions[1].cardType);
+                result.TestCard.Value = mapNameToCard[descr.matchDescriptions[1].cardType.name];
                 result.Threshhold.Value = descr.matchDescriptions[1].countThreshHold;
                 result.Comparison.Value = descr.matchDescriptions[1].comparison;
                 result.CountSource.Value = descr.matchDescriptions[1].countSource;

@@ -5,7 +5,8 @@
     xmlns:local="using:Win8Client"        
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    Name="Page">
 
     <Page.Resources>        
         <ResourceDictionary Source="StandardStyles.xaml" />        
@@ -119,14 +120,21 @@
                                             <ComboBoxItem>10</ComboBoxItem>
                                             <ComboBoxItem>As Many as possible</ComboBoxItem>
                                         </ComboBox>
-                                        <TextBlock Padding="0,0,5,0" Text="{Binding Card.Value.Name}"></TextBlock>
+                                        <TextBlock Padding="0,0,5,0" Text="{Binding  Card.Value.Name}"></TextBlock>
                                         <ComboBox Margin="5" SelectedIndex="{Binding CountSource.Value, Mode=TwoWay, Converter={StaticResource CountSourceToIntegerConverter}}">
                                             <ComboBoxItem>When Count Of Pile</ComboBoxItem>
                                             <ComboBoxItem>When Count All Owned</ComboBoxItem>
                                             <ComboBoxItem>When Count In Hand</ComboBoxItem>
                                             <ComboBoxItem>Always</ComboBoxItem>
-                                        </ComboBox>
+                                        </ComboBox>                                                
                                         <StackPanel Orientation="Horizontal" Visibility="{Binding SecondaryMatchVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">
+                                            <ComboBox Margin="5" ItemsSource="{Binding ElementName=Page, Path=DataContext.AvailableCards}" SelectedItem="{Binding TestCard.Value, Mode=TwoWay}">
+                                                <ComboBox.ItemTemplate>
+                                                   <DataTemplate>
+                                                        <TextBlock Text="{Binding Name}"></TextBlock>
+                                                   </DataTemplate>
+                                                </ComboBox.ItemTemplate>
+                                            </ComboBox>
                                             <TextBlock Padding="0,0,5,0">is</TextBlock>
                                             <ComboBox Margin="5" SelectedIndex="{Binding Comparison.Value, Mode=TwoWay, Converter={StaticResource ComparisonToIntegerConverter}}">
                                                 <ComboBoxItem>Less Than</ComboBoxItem>
