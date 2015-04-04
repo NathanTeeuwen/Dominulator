@@ -30,7 +30,7 @@ namespace Win8Client
             this.dominionCard = null;
         }
 
-        public DominionCard(Dominion.Card card)
+        private DominionCard(Dominion.Card card)
         {
             this.Id = card.ProgrammaticName;
             this.Name = card.name;
@@ -43,6 +43,30 @@ namespace Win8Client
             this.IsDuration = card.isDuration;
             this.isWebCard = false;
             this.dominionCard = card;
+        }
+
+        static System.Collections.Generic.Dictionary<string, DominionCard> mpCardNameToCard = BuildNameMap();
+
+        static System.Collections.Generic.Dictionary<string, DominionCard> BuildNameMap()
+        {
+            var result = new System.Collections.Generic.Dictionary<string, DominionCard>();
+            
+            foreach(Dominion.Card card in Dominion.Cards.AllCards())
+            {
+                result[card.name] = new DominionCard(card);
+            }
+
+            return result;
+        }
+
+        public static DominionCard Create(Dominion.Card card)
+        {
+            return mpCardNameToCard[card.name];
+        }
+
+        public static DominionCard Create(string name)
+        {
+            return mpCardNameToCard[name];
         }
 
         public readonly Dominion.Card dominionCard;

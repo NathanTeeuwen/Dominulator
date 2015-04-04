@@ -35,8 +35,7 @@ namespace Win8Client
                 appDatacontext.AllCards.Populate(),
                 appDatacontext.CommonCards.PopulateCommon()
                 ).ContinueWith(delegate(System.Threading.Tasks.Task task)
-                    {
-                        appDatacontext.PopulateAllCardsMap();
+                    {                        
                         Randomize10Cards();                 
                     }, uiScheduler);
 
@@ -112,7 +111,7 @@ namespace Win8Client
 
             foreach (var cardName in cardNames.Split(','))
             {
-                DominionCard card = this.appDatacontext.mapNameToCard[cardName];
+                DominionCard card = DominionCard.Create(cardName);
 
                 if (strategy.purchaseOrderDescription.descriptions.Length == 0)
                 {
@@ -124,7 +123,7 @@ namespace Win8Client
                 }
             }
             
-            this.appDatacontext.currentStrategy.Value.PopulateFrom(strategy, this.appDatacontext.mapNameToCard);
+            this.appDatacontext.currentStrategy.Value.PopulateFrom(strategy);
         }             
 
         private void CurrentCardsListView_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
@@ -164,6 +163,34 @@ namespace Win8Client
             return CanSimulateStrategies(this.appDatacontext.player1Strategy) && CanSimulateStrategies(this.appDatacontext.player2Strategy);
         }
 
+        private void GetStrategyNames(Dominion.Strategy.Description.StrategyDescription player1Descr, Dominion.Strategy.Description.StrategyDescription player2Descr, out string player1Name, out string player2Name)
+        {
+            var player1Uniques = new HashSet<Dominion.Card>();
+            var player2Uniques = new HashSet<Dominion.Card>();
+
+            foreach(Dominion.Card card in player1Descr.purchaseOrderDescription.descriptions.Select(descr => descr.card))
+            {
+                player1Uniques.Add(card);
+            }
+
+            foreach (Dominion.Card card in player2Descr.purchaseOrderDescription.descriptions.Select(descr => descr.card))
+            {
+                player2Uniques.Add(card);
+                player1Uniques.Remove(card);
+            }
+
+            foreach (Dominion.Card card in player1Descr.purchaseOrderDescription.descriptions.Select(descr => descr.card))
+            {
+                player2Uniques.Remove(card);
+            }
+
+            
+            player1Name = string.Join(" ", player1Uniques.Select(c => c.name));
+            player2Name = string.Join(" ", player2Uniques.Select(c => c.name));
+
+            return;
+        }
+
         private void SimulateGameButtonClick(object sender, RoutedEventArgs e)
         {
             if (!CanSimulateStrategies())
@@ -177,10 +204,13 @@ namespace Win8Client
             System.Threading.Tasks.Task<string>.Factory.StartNew(() =>
             {
 
+                string player1nameAppend, player2nameAppend;
+                GetStrategyNames(player1Descr, player2Descr, out player1nameAppend, out player2nameAppend);
+
                 var playerActions = new Dominion.Strategy.PlayerAction[] 
                 {
-                    player1Descr.ToPlayerAction("Player 1"),
-                    player2Descr.ToPlayerAction("Player 2")
+                    player1Descr.ToPlayerAction("Player 1: " + player1nameAppend),
+                    player2Descr.ToPlayerAction("Player 2: " + player2nameAppend)
                 };
 
                 var builder = new Dominion.GameConfigBuilder();
@@ -407,7 +437,7 @@ namespace Win8Client
         {
             foreach (Dominion.Card card in Dominion.Cards.AllKingdomCards())
             {
-                this.originalCards.Add(new DominionCard(card));
+                this.originalCards.Add(DominionCard.Create(card));
             }
         }
 
@@ -423,7 +453,7 @@ namespace Win8Client
             };
             foreach (Dominion.Card card in commonCards)
             {
-                this.originalCards.Add(new DominionCard(card));
+                this.originalCards.Add(DominionCard.Create(card));
             }
         }
 
@@ -475,8 +505,7 @@ namespace Win8Client
 
     class AppDataContext
         : DependencyObject
-    {
-        public System.Collections.Generic.Dictionary<string, DominionCard> mapNameToCard = new System.Collections.Generic.Dictionary<string, DominionCard>();
+    {        
         System.Collections.ObjectModel.ObservableCollection<DominionCard> availableCards;
         private SortableCardList allCards;
         private SortableCardList currentDeck;
@@ -534,9 +563,10 @@ namespace Win8Client
             {
                 expansion.IsEnabled.PropertyChanged += ExpansionEnabledChangedEventHandler;
             }
-
+            
             this.commonCards.PropertyChanged += AvailableCards_PropetyChanged;
             this.currentDeck.PropertyChanged += AvailableCards_PropetyChanged;
+            
 
             this.Use3OrMoreFromExpansions.PropertyChanged += Enable3orMoreFromExpansionsChangedEventHandler;
 
@@ -624,20 +654,7 @@ namespace Win8Client
         public void Enable3orMoreFromExpansionsChangedEventHandler(object sender, PropertyChangedEventArgs e)
         {
             this.currentDeck.UpdateUI();
-        }
-
-        public void PopulateAllCardsMap()
-        {
-            foreach(DominionCard card in this.AllCards.Cards)
-            {
-                this.mapNameToCard[card.Name] = card;
-            }
-
-            foreach (DominionCard card in this.CommonCards.Cards)
-            {
-                this.mapNameToCard[card.Name] = card;
-            }
-        }
+        }        
     }
    
     enum ExpansionIndex

@@ -16,9 +16,9 @@ namespace Dominion.Strategy.Description
         public readonly Comparison comparison;
         public int countThreshHold;
 
-        public MatchDescription()
+        public MatchDescription(Card card)
         {
-            this.cardType = null;
+            this.cardType = card;
             this.countSource = CountSource.Always;
             this.comparison = Comparison.Equals;
             this.countThreshHold = 1;
