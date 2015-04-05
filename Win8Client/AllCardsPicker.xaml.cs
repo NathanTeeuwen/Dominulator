@@ -62,9 +62,6 @@ namespace Win8Client
         private void SortAllByExpansion(object sender, RoutedEventArgs e)
         {            
             this.appDataContext.AllCards.SortByExpansion();         
-        }
-
-        
-        
+        }                
     }
 }

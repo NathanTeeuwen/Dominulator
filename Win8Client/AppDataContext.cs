@@ -14,13 +14,14 @@ namespace Win8Client
         private SortableCardList commonCards;
         private System.Collections.ObjectModel.ObservableCollection<Expansion> expansions;
 
+        /*
         public DependencyObjectDecl<bool, DefaultTrue> Use3OrMoreFromExpansions { get; private set; }
         public DependencyObjectDecl<bool, DefaultTrue> RequireTrashing { get; private set; }
         public DependencyObjectDecl<bool, DefaultTrue> RequirePlusCards { get; private set; }
         public DependencyObjectDecl<bool, DefaultTrue> RequirePlusBuy { get; private set; }
         public DependencyObjectDecl<bool, DefaultTrue> RequirePlus2Actions { get; private set; }
         public DependencyObjectDecl<bool, DefaultTrue> RequireAttack { get; private set; }
-        public DependencyObjectDecl<bool, DefaultTrue> AllowAttack { get; private set; }
+        public DependencyObjectDecl<bool, DefaultTrue> AllowAttack { get; private set; }*/
 
         public DependencyObjectDecl<bool, DefaultTrue> IsPlayer1StrategyChecked { get; private set; }
         public DependencyObjectDecl<bool, DefaultFalse> IsPlayer2StrategyChecked { get; private set; }
@@ -29,6 +30,8 @@ namespace Win8Client
         public StrategyDescription player1Strategy { get; private set; }
         public StrategyDescription player2Strategy { get; private set; }
         private bool isStrategy1Selected;
+
+        public DependencyObjectDecl<CardVisibility, DefaultCurrent> CardVisibility{ get; private set; }        
 
         internal bool isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
 
@@ -43,13 +46,14 @@ namespace Win8Client
             this.commonCards = new SortableCardList();
             this.availableCards = new System.Collections.ObjectModel.ObservableCollection<DominionCard>();
             this.expansions = new System.Collections.ObjectModel.ObservableCollection<Expansion>();
+            /*
             this.Use3OrMoreFromExpansions = new DependencyObjectDecl<bool, DefaultTrue>(this);
             this.RequireTrashing = new DependencyObjectDecl<bool, DefaultTrue>(this);
             this.RequirePlusCards = new DependencyObjectDecl<bool, DefaultTrue>(this);
             this.RequirePlusBuy = new DependencyObjectDecl<bool, DefaultTrue>(this);
             this.RequirePlus2Actions = new DependencyObjectDecl<bool, DefaultTrue>(this);
             this.RequireAttack = new DependencyObjectDecl<bool, DefaultTrue>(this);
-            this.AllowAttack = new DependencyObjectDecl<bool, DefaultTrue>(this);
+            this.AllowAttack = new DependencyObjectDecl<bool, DefaultTrue>(this);*/
 
             this.player1Strategy = new StrategyDescription();
             this.player2Strategy = new StrategyDescription();
@@ -57,6 +61,8 @@ namespace Win8Client
             this.currentStrategy.Value = this.player1Strategy;
             this.IsPlayer1StrategyChecked = new DependencyObjectDecl<bool, DefaultTrue>(this);
             this.IsPlayer2StrategyChecked = new DependencyObjectDecl<bool, DefaultFalse>(this);
+
+            this.CardVisibility = new DependencyObjectDecl<CardVisibility, DefaultCurrent>(this);
 
             this.expansions.Add(new Expansion("Alchemy", ExpansionIndex.Base));
             this.expansions.Add(new Expansion("Base", ExpansionIndex.Alchemy));
@@ -79,7 +85,7 @@ namespace Win8Client
             this.IsPlayer1StrategyChecked.PropertyChanged += Player1RadioButtonChecked;
             this.IsPlayer2StrategyChecked.PropertyChanged += Player2RadioButtonChecked;
 
-            this.Use3OrMoreFromExpansions.PropertyChanged += Enable3orMoreFromExpansionsChangedEventHandler;
+            //this.Use3OrMoreFromExpansions.PropertyChanged += Enable3orMoreFromExpansionsChangedEventHandler;
 
             this.allCards.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
             this.currentDeck.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
@@ -178,9 +184,29 @@ namespace Win8Client
             this.mainPage.UpdateAllCardsListSelection();
         }
 
+        /*
         public void Enable3orMoreFromExpansionsChangedEventHandler(object sender, PropertyChangedEventArgs e)
         {
             this.currentDeck.UpdateUI();
-        }
+        }*/
     }
+
+    public enum CardVisibility
+    {
+        Current,
+        All,
+        Settings
+    }
+
+    class DefaultCurrent
+        : DependencyPolicy<CardVisibility>
+    {
+        public CardVisibility DefaultValue
+        {
+            get
+            {
+                return CardVisibility.Current;
+            }
+        }
+    }  
 }
