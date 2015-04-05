@@ -130,6 +130,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AppDataContext.cs" />
+    <Compile Include="CurrentDeckPicker.xaml.cs">
+      <DependentUpon>CurrentDeckPicker.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DominionCard.cs" />
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
@@ -165,6 +168,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="AllCardsPicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CurrentDeckPicker.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

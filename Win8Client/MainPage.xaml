@@ -22,59 +22,7 @@
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto">
             <StackPanel Orientation="Horizontal">
                 <!-- Page for Current Cards-->
-                <Grid>                    
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <StackPanel Grid.Row="0" Orientation="Horizontal">
-                        <Button Click="RandomizeButtonClick" Style="{StaticResource RefreshAppBarButtonStyle}"></Button>
-                        <Button Style="{StaticResource SortAppBarButtonStyle}" BorderThickness="0">                            
-                            <Button.Flyout>
-                                <MenuFlyout>
-                                    <MenuFlyoutItem Text="By Name" Click="SortCurrentByName"/>
-                                    <MenuFlyoutItem Text="By Cost" Click="SortCurrentByCost"/>
-                                    <MenuFlyoutItem Text="By Expansion" Click="SortCurrentByExpansion"/>
-                                </MenuFlyout>                                    
-                            </Button.Flyout>
-                        </Button>                        
-                    </StackPanel>
-                    <ScrollViewer Grid.Row="1">
-                        <ListView Name="CurrentCardsListView"  ItemsSource="{Binding CurrentDeck.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
-                            <ListView.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
-                                </ItemsPanelTemplate>
-                            </ListView.ItemsPanel>
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <StackPanel>
-                                        <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
-                                    </StackPanel>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-
-                    </ScrollViewer>
-                    <ScrollViewer Grid.Row="2">
-                        <ListView Name="CommonCardsListView"  ItemsSource="{Binding CommonCards.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
-                            <ListView.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
-                                </ItemsPanelTemplate>
-                            </ListView.ItemsPanel>
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <StackPanel>
-                                        <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
-                                    </StackPanel>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-
-                    </ScrollViewer>
-                </Grid>
+                <local:CurrentDeckPicker x:Name="CurrentCards"/>
                 <StackPanel Width="100"></StackPanel>                
                 <local:Strategies/>                
                 <StackPanel Width="100"></StackPanel>                

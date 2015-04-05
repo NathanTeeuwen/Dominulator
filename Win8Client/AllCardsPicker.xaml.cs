@@ -63,5 +63,8 @@ namespace Win8Client
         {            
             this.appDataContext.AllCards.SortByExpansion();         
         }
+
+        
+        
     }
 }

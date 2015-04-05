@@ -28,14 +28,16 @@ namespace Win8Client
             this.InitializeComponent();
                   
             this.DataContext = this.appDataContext;
-            var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();           
+            var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();
+
+            this.CurrentCards.CurrentCardsChanged += UpdateAllCardsListSelection;
 
             System.Threading.Tasks.Task.WhenAll(
                 appDataContext.AllCards.Populate(),
                 appDataContext.CommonCards.PopulateCommon()
                 ).ContinueWith(delegate(System.Threading.Tasks.Task task)
                     {                        
-                        Randomize10Cards();                 
+                        this.CurrentCards.Randomize10Cards();                 
                     }, uiScheduler);
 
             this.Loaded += MainPage_Loaded;
@@ -43,18 +45,6 @@ namespace Win8Client
 
         void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            UpdateAllCardsListSelection();
-        }
-
-        private void RandomizeButtonClick(object sender, RoutedEventArgs e)
-        {            
-            Randomize10Cards();
-        }
-
-        private void Randomize10Cards()
-        {
-            var selectedItems = this.CurrentCardsListView.SelectedItems.Select(item => (DominionCard)item).ToArray<DominionCard>();
-            this.appDataContext.CurrentDeck.Generate10Random(this.appDataContext.AllCards.Cards, itemsToReplace: selectedItems);
             UpdateAllCardsListSelection();
         }
         
@@ -68,31 +58,7 @@ namespace Win8Client
             }
             this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
         }
-        
-
-        private void SortCurrentByName(object sender, RoutedEventArgs e)
-        {
-            this.appDataContext.CurrentDeck.SortByName();
-        }
-
-        private void SortCurrentByCost(object sender, RoutedEventArgs e)
-        {
-            this.appDataContext.CurrentDeck.SortByCost();
-        }
-
-        private void SortCurrentByExpansion(object sender, RoutedEventArgs e)
-        {
-            this.appDataContext.CurrentDeck.SortByExpansion();
-        }        
-
-        
-        private void CurrentCardsListView_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
-        {            
-            var cardListAsString = string.Join(",", e.Items.Select(card => ((DominionCard)card).dominionCard.name));
-
-            e.Data.SetData("text", cardListAsString);            
-        }
-
+              
       
         internal static void Generate10Random(IList<DominionCard> resultList, IList<DominionCard> sourceList, IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
         {
