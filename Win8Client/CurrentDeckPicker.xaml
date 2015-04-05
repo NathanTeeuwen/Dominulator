@@ -19,8 +19,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Orientation="Horizontal">
-            <Button Click="RandomizeButtonClick" Style="{StaticResource RefreshAppBarButtonStyle}"></Button>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">            
             <Button Style="{StaticResource SortAppBarButtonStyle}" BorderThickness="0">
                 <Button.Flyout>
                     <MenuFlyout>
@@ -30,6 +29,7 @@
                     </MenuFlyout>
                 </Button.Flyout>
             </Button>
+            <Button Click="RandomizeButtonClick" Style="{StaticResource RefreshAppBarButtonStyle}"></Button>
         </StackPanel>
         <ScrollViewer Grid.Row="1">
             <ListView Name="CurrentCardsListView"  ItemsSource="{Binding CurrentDeck.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">

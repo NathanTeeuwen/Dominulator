@@ -131,14 +131,14 @@ namespace Win8Client
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
-            this.appDataContext.CardVisibility.Value = CardVisibility.Settings;
+            this.appDataContext.CardVisibility.Value =
+             this.appDataContext.CardVisibility.Value == CardVisibility.Settings ? CardVisibility.Current : CardVisibility.Settings;
         }
 
         private void AllCardsButton_Click(object sender, RoutedEventArgs e)
-        {
-            ;
+        {            
             this.appDataContext.CardVisibility.Value =
-                this.appDataContext.CardVisibility.Value == CardVisibility.Current ? CardVisibility.All : CardVisibility.Current;
+                this.appDataContext.CardVisibility.Value == CardVisibility.All ? CardVisibility.Current: CardVisibility.All;
         }        
     }
 

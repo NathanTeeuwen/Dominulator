@@ -142,11 +142,14 @@ namespace Win8Client
 
             if (this.CountSource.Value != Dominion.Strategy.Description.CountSource.Always)
             {
-                list.Add(new Dominion.Strategy.Description.MatchDescription(
-                        this.CountSource.Value,
-                        this.TestCard.Value.dominionCard,
-                        this.Comparison.Value,
-                        this.Threshhold.Value));
+                if (this.TestCard.Value != null)
+                {
+                    list.Add(new Dominion.Strategy.Description.MatchDescription(
+                            this.CountSource.Value,
+                            this.TestCard.Value.dominionCard,
+                            this.Comparison.Value,
+                            this.Threshhold.Value));
+                }
             }
             
             return new Dominion.Strategy.Description.CardAcceptanceDescription(
