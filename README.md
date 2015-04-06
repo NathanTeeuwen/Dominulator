@@ -3,7 +3,7 @@ Dominulator
 
 A dominion simulator for playing the card game of dominion.  It now includes a front end UI.   The UI is a card picking UI that will help you setup a game of dominion.   Unlike most card pickers, you have the ability to run simulations of simple card combinations.  A report will be generated which gives insights that can guide you into how to play this set of cards
 
-![Alt text](https://github.com/NathanTeeuwen/Dominulator/Documentation/Win8Client.png "Optional title")
+![Alt text](https://github.com/NathanTeeuwen/Dominulator/blob/master/Documentation/Win8Client.png "Windows 8 Dominulator front end")
 
 The goals of the project are as follows.
 
@@ -29,9 +29,8 @@ Setup
 
 OR to contribute to the UI
 
- 1. Install Visual Studio express 2013.  You only need C#.   
- 2. Load Dominion.sln from the root of the repository
- 3. In the TestPrograms folder, select one of the test programs for startup.
+ 1. Install Visual Studio express 2013.   
+ 2. Load Win8Client.sln from the root of the repository
 
 Module Structure
 =================
