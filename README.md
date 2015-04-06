@@ -1,26 +1,37 @@
 Dominulator
 ===========
 
-A dominion simulator for playing the card game of dominion.
+A dominion simulator for playing the card game of dominion.  It now includes a front end UI.   The UI is a card picking UI that will help you setup a game of dominion.   Unlike most card pickers, you have the ability to run simulations of simple card combinations.  A report will be generated which gives insights that can guide you into how to play this set of cards
 
-The goals of the project are as follows, in priority order.
+![Alt text](https://github.com/NathanTeeuwen/Dominulator/Documentation/Win8Client.png "Optional title")
 
-  1. Create a game engine which enforces the rules of Dominion the game.
+The goals of the project are as follows.
+
+ 1. Create a game engine which enforces the rules of Dominion the game.
      Separation of Game Rules from AI or heuristics is required.  
-  2. Simulation of all available dominion cards.
-  3. Ability to easily extend the game engine with custom cards.
-  4. Include a foundation for easily composing strategies from simple build orders.
-  5. Include default strategies for playing most cards. 
-  6. Create a strategy optimizer that given a set of 10 cards, finds the best combination to play.
+ 2. Simulation of all available dominion cards.
+ 3. Ability to easily extend the game engine with custom cards.
+ 4. Include a foundation for easily composing strategies from simple build orders.
+ 5. Include default strategies for playing most cards. 
+ 6. Create a strategy optimizer that given a set of 10 cards, finds the best combination to play.
+ 7. Includes ability to generate a standalone HTML report, detailing the play of the strategies
+ 8. A windows 8 UI for composing strategies
+
   
 Goal 6 is lofty - but would be very nice :).
 
 Setup
 =====
 
-  1. Install Visual Studio express desktop 2013.  You only need C#.   
-  2. Load Dominion.sln from the root of the repository
-  3. In the TestPrograms folder, select one of the test programs for startup.
+ 1. Install Visual Studio express desktop 2013.  You only need C#.   
+ 2. Load Dominion.sln from the root of the repository
+ 3. In the TestPrograms folder, select one of the test programs for startup.
+
+OR to contribute to the UI
+
+ 1. Install Visual Studio express 2013.  You only need C#.   
+ 2. Load Dominion.sln from the root of the repository
+ 3. In the TestPrograms folder, select one of the test programs for startup.
 
 Module Structure
 =================
@@ -107,8 +118,13 @@ You can also set the Default Startup project to the Webservice project.
 WebService
 -------------
 The webservice is a playground I have been using.  Once launched, browse to http://localhost:8081/dominion    You will see a webapp
-that is capable of dynamically loading all included strategies (in the dynamic strategy loader module).  You can edit the strategies in the
+that is capable of dynamically loading all included strategies (in the dynamic strategy loader module).  You can edit 
+the strategies in the
 web browser and get some quick reports on how they compare.
+
+Win8Client
+-------------
+This folder contains the UI of the project.
 
 Where Is The Output for the Program?
 =====================================
