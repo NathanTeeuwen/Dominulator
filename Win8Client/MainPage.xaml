@@ -14,12 +14,17 @@
     
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >    
+        <Grid.Resources>
+            <local:SettingsButtonVisibilityConverter x:Key="SettingsButtonVisibilityConverter" />
+            <local:SettingsBackButtonVisibilityConverter x:Key="SettingsBackButtonVisibilityConverter" />
+        </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>            
             <RowDefinition Height="*"/>            
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal">
-            <Button Style="{StaticResource SettingsAppBarButtonStyle}" BorderThickness="0" Click="SettingsButton_Click"/>
+            <Button Style="{StaticResource SettingsAppBarButtonStyle}" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsButtonVisibilityConverter}}" BorderThickness="0" Click="SettingsButton_Click"/>
+            <Button Style="{StaticResource BackAppBarButtonStyle}" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsBackButtonVisibilityConverter}}" BorderThickness="0" Click="SettingsBackButton_Click"/>
             <Button Style="{StaticResource AllCardsAppBarButtonStyle}" BorderThickness="0" Click="AllCardsButton_Click"/>
         </StackPanel>
         <TextBlock Grid.Row="0"  FontSize="100" VerticalAlignment="Center" HorizontalAlignment="Center">Dominulator</TextBlock>

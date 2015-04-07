@@ -31,7 +31,8 @@ namespace Win8Client
         public StrategyDescription player2Strategy { get; private set; }
         private bool isStrategy1Selected;
 
-        public DependencyObjectDecl<CardVisibility, DefaultCurrent> CardVisibility{ get; private set; }        
+        public DependencyObjectDecl<CardVisibility, DefaultCurrent> CardVisibility{ get; private set; }
+        public DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton> SettingsButtonVisibility { get; private set; } 
 
         internal bool isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
 
@@ -63,6 +64,7 @@ namespace Win8Client
             this.IsPlayer2StrategyChecked = new DependencyObjectDecl<bool, DefaultFalse>(this);
 
             this.CardVisibility = new DependencyObjectDecl<CardVisibility, DefaultCurrent>(this);
+            this.SettingsButtonVisibility = new DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton>(this);
 
             this.expansions.Add(new Expansion("Alchemy", ExpansionIndex.Base));
             this.expansions.Add(new Expansion("Base", ExpansionIndex.Alchemy));
@@ -198,6 +200,12 @@ namespace Win8Client
         Settings
     }
 
+    public enum SettingsButtonVisibility
+    {
+        Settings,
+        Back        
+    }
+
     class DefaultCurrent
         : DependencyPolicy<CardVisibility>
     {
@@ -208,5 +216,17 @@ namespace Win8Client
                 return CardVisibility.Current;
             }
         }
-    }  
+    }
+
+    class DefaultSettingsButton
+        : DependencyPolicy<SettingsButtonVisibility>
+    {
+        public SettingsButtonVisibility DefaultValue
+        {
+            get
+            {
+                return SettingsButtonVisibility.Settings;
+            }
+        }
+    }
 }
