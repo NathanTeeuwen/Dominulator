@@ -34,7 +34,8 @@ namespace Dominion.Strategy.Description
 
             while (currentReadLocation < this.descriptions.Length)
             {
-                if (this.descriptions[currentReadLocation].card.DefaultCoinCost < card.DefaultCoinCost)
+                if (this.descriptions[currentReadLocation].card.DefaultCoinCost <= card.DefaultCoinCost &&
+                    this.descriptions[currentReadLocation].IsConditionedOnlyOnSelfOwnership())
                     break;
                 resultDescriptions[currentWriteLocation++] = this.descriptions[currentReadLocation++];
             }

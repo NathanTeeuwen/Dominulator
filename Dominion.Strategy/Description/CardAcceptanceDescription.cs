@@ -39,6 +39,21 @@ namespace Dominion.Strategy.Description
             return new CardAcceptanceDescription(this.card, matchDescriptions.Select(m => m.Clone()).ToArray());
         }
 
+        public bool IsConditionedOnlyOnSelfOwnership()
+        {
+            foreach(var matchDescription in this.matchDescriptions)
+            {
+                bool fSelfOwnership = matchDescription.countSource == CountSource.CountAllOwned && matchDescription.cardType == this.card;
+                if (matchDescription.countSource != CountSource.Always &&
+                    !fSelfOwnership)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
         public void WriteText(System.IO.TextWriter writer)
         {
             writer.Write(card.name);
