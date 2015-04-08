@@ -124,6 +124,8 @@ namespace Win8Client
             if (!CanSimulateStrategies())
                 return;
 
+            this.appDataContext.StrategyResultsAvailable.Value = false;
+
             var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();
 
             Dominion.Strategy.Description.StrategyDescription player1Descr = this.appDataContext.player1Strategy.ConvertToDominionStrategy();
