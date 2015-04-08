@@ -47,6 +47,9 @@ namespace Win8Client
 
         private async void CurrentCardsListView_Drop(object sender, DragEventArgs e)
         {
+            if (!e.Data.GetView().AvailableFormats.Contains("text"))
+                return;
+
             string cardNames = (string)await e.Data.GetView().GetTextAsync("text");
 
             Dominion.Strategy.Description.StrategyDescription strategy = this.appDataContext.currentStrategy.Value.ConvertToDominionStrategy();
