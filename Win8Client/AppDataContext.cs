@@ -36,6 +36,8 @@ namespace Win8Client
         public DependencyObjectDecl<PageConfig, DefaultPageConfig> PageConfig { get; private set; }
 
         public DependencyObjectDecl<bool, DefaultFalse> StrategyResultsAvailable { get; private set; }
+        public bool strategyReportDirty = false;
+        public Dominion.Data.StrategyComparisonResults strategyComparisonResults;
         public DependencyObjectDecl<string, DefaultEmptyString> StrategyReport { get; private set; }
         public DependencyObjectDecl<string, DefaultEmptyString> Player1Name { get; private set; }
         public DependencyObjectDecl<string, DefaultEmptyString> Player2Name { get; private set; }        

@@ -159,19 +159,10 @@ namespace Win8Client
                 Dominion.GameConfig gameConfig = builder.ToGameConfig();
                 var strategyComparison = new Dominion.Data.StrategyComparison(playerActions, gameConfig, rotateWhoStartsFirst, numberOfGames);
 
-                Dominion.Data.StrategyComparisonResults strategyComparisonResults = strategyComparison.ComparePlayers();
-
-                var htmlGenerator = new HtmlRenderer.HtmlReportGenerator(strategyComparisonResults);
-
-                var stringWriter = new System.IO.StringWriter();
-                var textWriter = new Dominion.IndentedTextWriter(stringWriter);                
-
-                htmlGenerator.CreateHtmlReport(textWriter);
-                stringWriter.Flush();
-                string resultHtml = stringWriter.GetStringBuilder().ToString();
+                Dominion.Data.StrategyComparisonResults strategyComparisonResults = strategyComparison.ComparePlayers();               
                 return new StrategyUIResults()
                 {
-                    StrategyReport = resultHtml,
+                    strategyComparisonResults = strategyComparisonResults,
                     Player1Name = player1Name,
                     Player2Name = player2Name,
                     Player1WinPercent = strategyComparisonResults.PlayerWinPercent(0),
@@ -182,7 +173,8 @@ namespace Win8Client
             {
                 var results = (StrategyUIResults )continuation.Result;
 
-                this.appDataContext.StrategyReport.Value = results.StrategyReport;
+                this.appDataContext.strategyReportDirty = true;
+                this.appDataContext.strategyComparisonResults = results.strategyComparisonResults;
                 this.appDataContext.Player1Name.Value = results.Player1Name;
                 this.appDataContext.Player2Name.Value = results.Player2Name;
                 this.appDataContext.Player1WinPercent.Value = results.Player1WinPercent;
@@ -194,7 +186,7 @@ namespace Win8Client
 
         private class StrategyUIResults
         {
-            public string StrategyReport;
+            public Dominion.Data.StrategyComparisonResults strategyComparisonResults;
             public string Player1Name;
             public string Player2Name;
             public double Player1WinPercent;

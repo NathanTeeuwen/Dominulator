@@ -18,6 +18,13 @@ namespace HtmlRenderer
             this.comparisonResults = comparisonResults;
         }
 
+        public static string GetHtmlReport(StrategyComparisonResults comparisonResults)
+        {
+            var htmlGenerator = new HtmlReportGenerator(comparisonResults);
+
+            return htmlGenerator.CreateHtmlReport();
+        }
+
         public string CreateHtmlReport()
         {
             var stringWriter = new System.IO.StringWriter();

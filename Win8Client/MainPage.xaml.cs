@@ -160,6 +160,19 @@ namespace Win8Client
 
         private void ReportButton_Click(object sender, RoutedEventArgs e)
         {
+            if (this.appDataContext.strategyReportDirty)
+            {
+                this.appDataContext.strategyReportDirty = false;
+                var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();
+                System.Threading.Tasks.Task<string>.Factory.StartNew(() =>
+                {
+                    return HtmlRenderer.HtmlReportGenerator.GetHtmlReport(this.appDataContext.strategyComparisonResults);
+                }).ContinueWith(async (continuation) =>
+                {
+                    this.appDataContext.StrategyReport.Value = continuation.Result;
+                }, uiScheduler);
+            }
+
             this.appDataContext.PageConfig.Value = PageConfig.StrategyReport;            
         }
 
