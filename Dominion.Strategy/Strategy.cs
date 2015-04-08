@@ -140,6 +140,11 @@ namespace Dominion.Strategy
             return HasCardFromInHand(playerAction.trashOrder, gameState);
         }
 
+        public static bool HasCardToDiscardInHand(GameState gameState, DefaultPlayerAction playerAction)
+        {
+            return HasCardFromInHand(playerAction.discardOrder, gameState);
+        }
+
         public static bool HasAtLeast2ToTrashInHand(GameState gameState, DefaultPlayerAction playerAction)
         {
             return CountInHandFrom(playerAction.trashOrder, gameState) >= 2;

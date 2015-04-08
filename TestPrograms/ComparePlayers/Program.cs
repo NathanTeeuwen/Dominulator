@@ -15,9 +15,9 @@ namespace Program
         static void Main()
         {            
             using (var testOutput = new TestOutput())
-            {                
-                var player1 = Strategies.IronworksIsland.Player();
-                var player2 = Strategies.BigMoneyRabbleVsIsland.Player();                
+            {
+                var player1 = Strategies.BigMoneyWithCard.Player(Cards.Island);
+                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Herbalist);                
                 
                 var builder = new GameConfigBuilder();
                 builder.CardSplit = StartingCardSplit.Split43;

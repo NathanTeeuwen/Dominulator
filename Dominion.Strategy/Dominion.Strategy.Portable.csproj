@@ -20,14 +20,14 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>    
+    <Optimize>false</Optimize>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>    
+    <Optimize>true</Optimize>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -56,6 +56,7 @@
     <Compile Include="DefaultPlayRules\Cards\Explorer.cs" />
     <Compile Include="DefaultPlayRules\Cards\Golem.cs" />
     <Compile Include="DefaultPlayRules\Cards\Governor.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Herbalist.cs" />
     <Compile Include="DefaultPlayRules\Cards\HorseTraders.cs" />
     <Compile Include="DefaultPlayRules\Cards\IllGottenGains.cs" />
     <Compile Include="DefaultPlayRules\Cards\Island.cs" />

@@ -24,6 +24,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Explorer] = new Explorer(playerAction);
             result[Dominion.Cards.Golem] = new Golem(playerAction);
             result[Dominion.Cards.Governor] = new Governor(playerAction);
+            result[Dominion.Cards.Herbalist] = new Herbalist(playerAction);
             result[Dominion.Cards.HorseTraders] = new HorseTraders(playerAction);
             result[Dominion.Cards.IllGottenGains] = new IllGottenGainsAlwaysGainCopper(playerAction);
             result[Dominion.Cards.Island] = new Island(playerAction);            
@@ -57,6 +58,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Altar] = Strategy.HasCardToTrashInHand;    
             result[Dominion.Cards.Bishop] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Forager] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Island] = Strategy.HasCardToDiscardInHand;
             result[Dominion.Cards.JunkDealer] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Lookout] = Lookout.ShouldPlay;
             result[Dominion.Cards.Remodel] = Strategy.HasCardToTrashInHand;
