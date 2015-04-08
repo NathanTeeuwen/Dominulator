@@ -16,10 +16,9 @@
                 <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
             </Grid.Resources>
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>                
             </Grid.RowDefinitions>
-            <StackPanel Grid.Row="0">
+            <StackPanel Grid.Row="0" Background="Transparent" AllowDrop="True" Drop="CurrentCardsListView_Drop">
                 <TextBlock FontSize="30">Strategies</TextBlock>
                 <StackPanel Orientation="Horizontal">
                     <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer1StrategyChecked.Value, Mode=TwoWay}">Player 1</RadioButton>
@@ -27,7 +26,7 @@
                 </StackPanel>
 
                 <!-- items control of System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> -->
-                <ListView Name="CurrentStrategyListView"  ItemsSource="{Binding CurrentStrategy.Value.CardAcceptanceDescriptions}" CanReorderItems="True" AllowDrop="True" Drop="CurrentCardsListView_Drop">
+                <ListView Name="CurrentStrategyListView"  ItemsSource="{Binding CurrentStrategy.Value.CardAcceptanceDescriptions}" CanReorderItems="True">
                     <ListView.Resources>
                         <local:ComparisonToIntegerConverter x:Key="ComparisonToIntegerConverter" />
                         <local:CountSourceToIntegerConverter x:Key="CountSourceToIntegerConverter" />
@@ -126,7 +125,7 @@
                         <TextBlock FontSize="20">%</TextBlock>
                     </StackPanel>
                 </StackPanel>
-            </StackPanel>
+            </StackPanel>            
         </Grid>
     </ScrollViewer>
 </UserControl>
