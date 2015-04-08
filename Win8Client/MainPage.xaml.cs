@@ -31,6 +31,8 @@ namespace Win8Client
             var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();
 
             this.CurrentCards.CurrentCardsChanged += UpdateAllCardsListSelection;
+            this.appDataContext.StrategyReport.PropertyChanged += StrategyReport_PropertyChanged;
+            this.appDataContext.PageConfig.PropertyChanged += PageConfig_PropertyChanged;
 
             System.Threading.Tasks.Task.WhenAll(
                 appDataContext.AllCards.Populate(),
@@ -43,6 +45,14 @@ namespace Win8Client
             this.Loaded += MainPage_Loaded;
         }
 
+        void PageConfig_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if (this.appDataContext.PageConfig.Value == PageConfig.StrategyReport)
+            {
+                this.appDataContext.SettingsButtonVisibility.Value = SettingsButtonVisibility.Back;
+            }
+        }
+        
         void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
             UpdateAllCardsListSelection();
@@ -139,13 +149,25 @@ namespace Win8Client
         {
             this.appDataContext.CardVisibility.Value = CardVisibility.Current;
             this.appDataContext.SettingsButtonVisibility.Value = SettingsButtonVisibility.Settings;
+            this.appDataContext.PageConfig.Value = PageConfig.Design;
         }
 
         private void AllCardsButton_Click(object sender, RoutedEventArgs e)
         {            
             this.appDataContext.CardVisibility.Value =
                 this.appDataContext.CardVisibility.Value == CardVisibility.All ? CardVisibility.Current: CardVisibility.All;
-        }        
+        }
+
+        private void ReportButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.appDataContext.PageConfig.Value = PageConfig.StrategyReport;            
+        }
+
+        void StrategyReport_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            this.ResultsWebView.NavigateToString(this.appDataContext.StrategyReport.Value);            
+        }
+
     }
 
     class SortableCardList
@@ -502,6 +524,36 @@ namespace Win8Client
         {
             var cardVisibility = (SettingsButtonVisibility)value;
             return cardVisibility == SettingsButtonVisibility.Back ? Visibility.Visible : Visibility.Collapsed;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class PageConfigDesignVisibilityConverter
+      : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            var localValue = (PageConfig)value;
+            return localValue == PageConfig.Design? Visibility.Visible : Visibility.Collapsed;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class PageConfigStrategyReportVisibilityConverter
+        : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            var localValue = (PageConfig)value;
+            return localValue == PageConfig.StrategyReport ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)

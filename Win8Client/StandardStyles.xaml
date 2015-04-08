@@ -553,7 +553,12 @@
         <Setter Property="AutomationProperties.AutomationId" Value="AllCardsAppBarButton"/>
         <Setter Property="AutomationProperties.Name" Value="View All"/>
         <Setter Property="Content" Value="&#xE13C;"/>
-    </Style>    
+    </Style>
+    <Style x:Key="ReportAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ReportAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Report"/>
+        <Setter Property="Content" Value="&#xE130;"/>
+    </Style>
     <Style x:Key="SortAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
         <Setter Property="AutomationProperties.AutomationId" Value="SortAppBarButton"/>
         <Setter Property="AutomationProperties.Name" Value="Sort"/>

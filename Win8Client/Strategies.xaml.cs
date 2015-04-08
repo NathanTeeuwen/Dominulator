@@ -166,7 +166,8 @@ namespace Win8Client
                 return resultHtml;
             }).ContinueWith(async (continuation) =>
             {
-                this.ResultsWebView.NavigateToString(continuation.Result);
+                this.appDataContext.StrategyReport.Value = continuation.Result;
+                this.appDataContext.PageConfig.Value = PageConfig.StrategyReport;
             }, uiScheduler);
         }
     }

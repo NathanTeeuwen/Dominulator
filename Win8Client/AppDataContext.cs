@@ -32,7 +32,10 @@ namespace Win8Client
         private bool isStrategy1Selected;
 
         public DependencyObjectDecl<CardVisibility, DefaultCurrent> CardVisibility{ get; private set; }
-        public DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton> SettingsButtonVisibility { get; private set; } 
+        public DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton> SettingsButtonVisibility { get; private set; }
+        public DependencyObjectDecl<PageConfig, DefaultPageConfig> PageConfig { get; private set; }
+
+        public DependencyObjectDecl<string, DefaultEmptyString> StrategyReport { get; private set; }
 
         internal bool isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
 
@@ -65,6 +68,8 @@ namespace Win8Client
 
             this.CardVisibility = new DependencyObjectDecl<CardVisibility, DefaultCurrent>(this);
             this.SettingsButtonVisibility = new DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton>(this);
+            this.PageConfig = new DependencyObjectDecl<PageConfig, DefaultPageConfig>(this);
+            this.StrategyReport = new DependencyObjectDecl<string, DefaultEmptyString>(this);
 
             this.expansions.Add(new Expansion("Alchemy", ExpansionIndex.Base));
             this.expansions.Add(new Expansion("Base", ExpansionIndex.Alchemy));
@@ -206,6 +211,12 @@ namespace Win8Client
         Back        
     }
 
+    public enum PageConfig
+    {
+        StrategyReport,
+        Design
+    }
+
     class DefaultCurrent
         : DependencyPolicy<CardVisibility>
     {
@@ -226,6 +237,18 @@ namespace Win8Client
             get
             {
                 return SettingsButtonVisibility.Settings;
+            }
+        }
+    }
+
+    class DefaultPageConfig
+        : DependencyPolicy<PageConfig>
+    {
+        public PageConfig DefaultValue
+        {
+            get
+            {
+                return PageConfig.Design;
             }
         }
     }

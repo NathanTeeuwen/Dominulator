@@ -101,8 +101,7 @@
                 <StackPanel Orientation="Horizontal">
                     <Button Click="SimulateGameButtonClick">Simulate Game</Button>
                     <Button Click="ClearStrategyButtonClick">Clear Strategy</Button>
-                </StackPanel>
-                <WebView Grid.Row="1" x:Name="ResultsWebView" Width="1000" Height="800"></WebView>
+                </StackPanel>                
             </StackPanel>
         </Grid>
     </ScrollViewer>
