@@ -25,7 +25,8 @@ Setup
 
  1. Install Visual Studio express desktop 2013.  You only need C#.   
  2. Load Dominion.sln from the root of the repository
- 3. In the TestPrograms folder, select one of the test programs for startup.
+ 3. Make sure a Results folder exists in the root of your enlistment
+ 4. In the TestPrograms folder, select one of the test programs for startup.
 
 OR to contribute to the UI
 
@@ -128,7 +129,7 @@ This folder contains the UI of the project.
 Where Is The Output for the Program?
 =====================================
 
-Test programs output to the console.
+Test programs output to the console.   They will also output files in the Results directory of the root of the git repository.
 
 Most test programs can be configured to output individual game logs and also an html summary report.  
 
