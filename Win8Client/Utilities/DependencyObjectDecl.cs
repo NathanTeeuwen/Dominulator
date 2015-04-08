@@ -134,6 +134,18 @@ namespace Win8Client
         }
     }
 
+    class DefaultDoubleZero
+        : DependencyPolicy<double>
+    {
+        public double DefaultValue
+        {
+            get
+            {
+                return 0;
+            }
+        }
+    }
+
     class DefaultEmptyStrategyDescription
         : DependencyPolicy<StrategyDescription>
     {

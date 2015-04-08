@@ -35,7 +35,13 @@ namespace Win8Client
         public DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton> SettingsButtonVisibility { get; private set; }
         public DependencyObjectDecl<PageConfig, DefaultPageConfig> PageConfig { get; private set; }
 
+        public DependencyObjectDecl<bool, DefaultFalse> StrategyResultsAvailable { get; private set; }
         public DependencyObjectDecl<string, DefaultEmptyString> StrategyReport { get; private set; }
+        public DependencyObjectDecl<string, DefaultEmptyString> Player1Name { get; private set; }
+        public DependencyObjectDecl<string, DefaultEmptyString> Player2Name { get; private set; }        
+        public DependencyObjectDecl<double, DefaultDoubleZero> Player1WinPercent { get; private set; }
+        public DependencyObjectDecl<double, DefaultDoubleZero> Player2WinPercent { get; private set; }
+        public DependencyObjectDecl<double, DefaultDoubleZero> TiePercent { get; private set; }
 
         internal bool isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
 
@@ -68,8 +74,15 @@ namespace Win8Client
 
             this.CardVisibility = new DependencyObjectDecl<CardVisibility, DefaultCurrent>(this);
             this.SettingsButtonVisibility = new DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton>(this);
-            this.PageConfig = new DependencyObjectDecl<PageConfig, DefaultPageConfig>(this);
+            this.PageConfig = new DependencyObjectDecl<PageConfig, DefaultPageConfig>(this);                             
+
+            this.StrategyResultsAvailable = new DependencyObjectDecl<bool, DefaultFalse>(this);
             this.StrategyReport = new DependencyObjectDecl<string, DefaultEmptyString>(this);
+            this.Player1Name = new DependencyObjectDecl<string, DefaultEmptyString>(this);
+            this.Player2Name = new DependencyObjectDecl<string, DefaultEmptyString>(this);            
+            this.Player1WinPercent = new DependencyObjectDecl<double, DefaultDoubleZero>(this);
+            this.Player2WinPercent = new DependencyObjectDecl<double, DefaultDoubleZero>(this);
+            this.TiePercent = new DependencyObjectDecl<double, DefaultDoubleZero>(this);
 
             this.expansions.Add(new Expansion("Alchemy", ExpansionIndex.Base));
             this.expansions.Add(new Expansion("Base", ExpansionIndex.Alchemy));

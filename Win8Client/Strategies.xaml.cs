@@ -129,16 +129,19 @@ namespace Win8Client
             Dominion.Strategy.Description.StrategyDescription player1Descr = this.appDataContext.player1Strategy.ConvertToDominionStrategy();
             Dominion.Strategy.Description.StrategyDescription player2Descr = this.appDataContext.player2Strategy.ConvertToDominionStrategy();
 
-            System.Threading.Tasks.Task<string>.Factory.StartNew(() =>
+            System.Threading.Tasks.Task<StrategyUIResults>.Factory.StartNew(() =>
             {
 
                 string player1nameAppend, player2nameAppend;
                 GetStrategyNames(player1Descr, player2Descr, out player1nameAppend, out player2nameAppend);
 
+                string player1Name = "Player 1: " + player1nameAppend;
+                string player2Name = "Player 2: " + player2nameAppend;
+
                 var playerActions = new Dominion.Strategy.PlayerAction[] 
                 {
-                    player1Descr.ToPlayerAction("Player 1: " + player1nameAppend),
-                    player2Descr.ToPlayerAction("Player 2: " + player2nameAppend)
+                    player1Descr.ToPlayerAction(player1Name),
+                    player2Descr.ToPlayerAction(player2Name)
                 };
 
                 var builder = new Dominion.GameConfigBuilder();
@@ -159,16 +162,42 @@ namespace Win8Client
                 var htmlGenerator = new HtmlRenderer.HtmlReportGenerator(strategyComparisonResults);
 
                 var stringWriter = new System.IO.StringWriter();
-                var textWriter = new Dominion.IndentedTextWriter(stringWriter);
+                var textWriter = new Dominion.IndentedTextWriter(stringWriter);                
+
                 htmlGenerator.CreateHtmlReport(textWriter);
                 stringWriter.Flush();
                 string resultHtml = stringWriter.GetStringBuilder().ToString();
-                return resultHtml;
+                return new StrategyUIResults()
+                {
+                    StrategyReport = resultHtml,
+                    Player1Name = player1Name,
+                    Player2Name = player2Name,
+                    Player1WinPercent = strategyComparisonResults.PlayerWinPercent(0),
+                    Player2WinPercent = strategyComparisonResults.PlayerWinPercent(1),
+                    TiePercent = strategyComparisonResults.TiePercent,
+                };
             }).ContinueWith(async (continuation) =>
             {
-                this.appDataContext.StrategyReport.Value = continuation.Result;
-                this.appDataContext.PageConfig.Value = PageConfig.StrategyReport;
+                var results = (StrategyUIResults )continuation.Result;
+
+                this.appDataContext.StrategyReport.Value = results.StrategyReport;
+                this.appDataContext.Player1Name.Value = results.Player1Name;
+                this.appDataContext.Player2Name.Value = results.Player2Name;
+                this.appDataContext.Player1WinPercent.Value = results.Player1WinPercent;
+                this.appDataContext.Player2WinPercent.Value = results.Player2WinPercent;
+                this.appDataContext.TiePercent.Value = results.TiePercent;                
+                this.appDataContext.StrategyResultsAvailable.Value = true;
             }, uiScheduler);
+        }
+
+        private class StrategyUIResults
+        {
+            public string StrategyReport;
+            public string Player1Name;
+            public string Player2Name;
+            public double Player1WinPercent;
+            public double Player2WinPercent;
+            public double TiePercent;
         }
     }
 }
