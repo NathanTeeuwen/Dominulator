@@ -60,6 +60,7 @@ namespace Win8Client
             var cardListAsString = string.Join(",", e.Items.Select(card => ((DominionCard)card).dominionCard.name));
 
             e.Data.SetData("text", cardListAsString);
+            this.CurrentCardsListView.SelectedItems.Clear();
         }     
 
         public void Randomize10Cards()
