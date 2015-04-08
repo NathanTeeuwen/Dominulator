@@ -742,10 +742,14 @@ namespace Dominion
 
         internal void MoveCardFromPlayedCardToIslandMat(Card card)
         {
-            Card cardBeingPlayed = this.cardsBeingPlayed.DrawCardFromTop();
+            Card cardBeingPlayed = this.cardsBeingPlayed.DrawCardFromTop();            
             if (cardBeingPlayed != null)
             {
+                if (card != cardBeingPlayed)
+                    throw new Exception("Expected card to be same as that was being played");
+
                 this.islandMat.AddCard(cardBeingPlayed);
+                this.gameLog.PlayerPlacedCardOnIslandMat(this, card);
             }
         }
 

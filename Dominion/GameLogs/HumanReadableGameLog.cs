@@ -537,5 +537,10 @@ namespace Dominion
                     throw new Exception();
             }
         }
+
+        public void PlayerPlacedCardOnIslandMat(PlayerState playerState, Card card)
+        {
+            this.textWriter.WriteLine("{0} placed {1} on the island mat.", GetPlayerName(playerState), card.name);            
+        }
     }
 }

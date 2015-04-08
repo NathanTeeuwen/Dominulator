@@ -174,5 +174,10 @@ namespace Dominion
         {
 
         }
+
+        public virtual void PlayerPlacedCardOnIslandMat(PlayerState playerState, Card card)
+        {
+
+        }
     }
 }

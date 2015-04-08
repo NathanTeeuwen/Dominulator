@@ -303,5 +303,13 @@ namespace Dominion
                 this.gameLogs[i].PlayerChoseLocationForStash(playerState, positions);
             }
         }
+
+        public void PlayerPlacedCardOnIslandMat(PlayerState playerState, Card card)
+        {
+            for (int i = 0; i < this.gameLogs.Length; ++i)
+            {
+                this.gameLogs[i].PlayerPlacedCardOnIslandMat(playerState, card);
+            }
+        }
     }
 }

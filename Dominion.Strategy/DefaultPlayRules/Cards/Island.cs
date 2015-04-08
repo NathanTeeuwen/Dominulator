@@ -20,7 +20,14 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
             if (gameState.Self.Hand.HasCard(Dominion.Cards.Island))
                 return Dominion.Cards.Island;
 
-            return this.playerAction.discardOrder.GetPreferredCard(gameState, gameState.Self.Hand.HasCard);
+            if (!gameState.Self.Hand.Any)
+                return null;
+
+            result = this.playerAction.discardOrder.GetPreferredCard(gameState, gameState.Self.Hand.HasCard);
+            if (result != null)
+                return result;
+
+            return base.GetCardFromHandToDiscard(gameState, c => true, isOptional: false);
         }
     }
 

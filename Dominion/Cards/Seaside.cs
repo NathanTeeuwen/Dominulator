@@ -205,8 +205,14 @@ namespace Dominion.CardTypes
 
             if (!currentPlayer.hand.Any)
                 return;            
-            Card cardType = currentPlayer.actions.GetCardFromHandToIsland(gameState);            
-            currentPlayer.MoveCardFromHandToIslandMat(cardType);
+            Card cardType = currentPlayer.actions.GetCardFromHandToIsland(gameState);
+            if (currentPlayer.Hand.Any && cardType == null)
+                throw new Exception("Player must island a card from his hand");
+            if (cardType != null)
+            {
+                currentPlayer.MoveCardFromHandToIslandMat(cardType);
+                gameState.gameLog.PlayerPlacedCardOnIslandMat(currentPlayer, cardType);
+            }
         }
     }
 
