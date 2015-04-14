@@ -64,6 +64,7 @@
     <Compile Include="DefaultPlayRules\Cards\Lookout.cs" />
     <Compile Include="DefaultPlayRules\Cards\MarketSquare.cs" />
     <Compile Include="DefaultPlayRules\Cards\Masquerade.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Masterpiece.cs" />
     <Compile Include="DefaultPlayRules\Cards\Mint.cs" />
     <Compile Include="DefaultPlayRules\Cards\MysticAndWishingWell.cs" />
     <Compile Include="DefaultPlayRules\Cards\Nobles.cs" />

@@ -21,7 +21,6 @@ namespace Dominion.Strategy
             Cards.Inn,
             Cards.Journeyman,        
             Cards.Mandarin,            
-            Cards.Masterpiece,
             Cards.Minion,          
             Cards.NativeVillage,
             Cards.Navigator,

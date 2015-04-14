@@ -45,6 +45,7 @@
     <Compile Include="CardPicker\CardPickConcatenator.cs" />
     <Compile Include="CardsWithoutDefaultBehaviors.cs" />
     <Compile Include="DefaultPlayRules\CardOverrides.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Masterpiece.cs" />
     <Compile Include="DefaultPlayRules\Cards\Masquerade.cs" />
     <Compile Include="DefaultPlayRules\Cards\Herbalist.cs" />
     <Compile Include="DefaultPlayRules\Cards\Vault.cs" />

@@ -15,6 +15,7 @@ namespace Dominion.Strategy.Description
         CountAllOwned = 1,
         InHand = 2,
         Always = 3,
+        AvailableCoin = 4
     }
 
 }

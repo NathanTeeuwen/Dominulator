@@ -44,6 +44,7 @@ namespace Dominion.Strategy.Description
 
         public bool GameStatePredicate(GameState gameState)
         {
+            System.Diagnostics.Debug.WriteLine(this);
             int countOfTheSource;
 
             switch (countSource)
@@ -59,6 +60,9 @@ namespace Dominion.Strategy.Description
                     break;
                 case CountSource.Always:
                     return true;
+                case CountSource.AvailableCoin:
+                    countOfTheSource = gameState.Self.AvailableCoins;
+                    break;
                 default:
                     throw new Exception("Unhandled source case");
             }
@@ -92,10 +96,14 @@ namespace Dominion.Strategy.Description
 
         public void WriteText(System.IO.TextWriter writer)
         {
-            if (this.countThreshHold > 0)
-            {
-                writer.Write("({0})", this.countThreshHold);
-            }
-        }        
+            writer.Write("({0} {1} {2} {3})", this.cardType.name, this.countSource, this.comparison, this.countThreshHold);            
+        }
+
+        public override string ToString()
+        {
+            var writer = new System.IO.StringWriter();
+            WriteText(writer);
+            return writer.ToString();
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.BigMoneyWithCard.Player(Cards.Masquerade);
+                var player1 = Strategies.BigMoneyWithCard.Player(Cards.Masterpiece, cardCount:10, countGoldBeforeProvince:0, afterGoldCount:0);
                 var player2 = Strategies.BigMoneyWithCard.Player(Cards.Gold);                
                 
                 var builder = new GameConfigBuilder();

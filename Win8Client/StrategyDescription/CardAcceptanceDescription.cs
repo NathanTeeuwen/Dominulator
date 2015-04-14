@@ -31,6 +31,7 @@ namespace Win8Client
         public DependencyObjectDecl<int> Threshhold { get; private set; }
 
         public DependencyObjectDecl<bool> SecondaryMatchVisible{ get; private set; }
+        public DependencyObjectDecl<bool> SecondaryMatchCardVisible{ get; private set; }
         public DependencyObjectDecl<bool> CanSimulateCard { get; private set; }
 
         public CardAcceptanceDescription()
@@ -42,6 +43,7 @@ namespace Win8Client
             this.Comparison = new DependencyObjectDecl<Dominion.Strategy.Description.Comparison>(this);
             this.Threshhold = new DependencyObjectDecl<int>(this);
             this.SecondaryMatchVisible = new DependencyObjectDecl<bool>(this);
+            this.SecondaryMatchCardVisible = new DependencyObjectDecl<bool>(this);
             this.CanSimulateCard = new DependencyObjectDecl<bool>(this);
 
             this.CountSource.PropertyChanged += CountSource_PropertyChanged;
@@ -55,7 +57,27 @@ namespace Win8Client
 
         void CountSource_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            this.SecondaryMatchVisible.Value = this.CountSource.Value == Dominion.Strategy.Description.CountSource.Always ? false : true;
+            switch(this.CountSource.Value)
+            {
+                case Dominion.Strategy.Description.CountSource.Always:
+                {
+                    this.SecondaryMatchVisible.Value = false;
+                    this.SecondaryMatchCardVisible.Value = false;
+                    break;
+                }
+                case Dominion.Strategy.Description.CountSource.AvailableCoin:
+                {
+                    this.SecondaryMatchVisible.Value = true;
+                    this.SecondaryMatchCardVisible.Value = false;
+                    break;
+                }    
+                default:
+                {
+                    this.SecondaryMatchVisible.Value = true;
+                    this.SecondaryMatchCardVisible.Value = true;
+                    break;
+                }
+            }
         }
 
         public CardAcceptanceDescription(string name)

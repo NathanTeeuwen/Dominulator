@@ -60,9 +60,13 @@
                                         <ComboBoxItem>When Count All Owned</ComboBoxItem>
                                         <ComboBoxItem>When Count In Hand</ComboBoxItem>
                                         <ComboBoxItem>Always</ComboBoxItem>
+                                        <ComboBoxItem>Coin Available</ComboBoxItem>
                                     </ComboBox>
                                     <StackPanel Orientation="Horizontal" Visibility="{Binding SecondaryMatchVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">
-                                        <ComboBox Margin="5" ItemsSource="{Binding ElementName=Page, Path=DataContext.AvailableCards}" SelectedItem="{Binding TestCard.Value, Mode=TwoWay}">
+                                        <ComboBox Margin="5"
+                                                  Visibility="{Binding SecondaryMatchCardVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}"
+                                                  ItemsSource="{Binding ElementName=Page, Path=DataContext.AvailableCards}" 
+                                                  SelectedItem="{Binding TestCard.Value, Mode=TwoWay}">
                                             <ComboBox.ItemTemplate>
                                                 <DataTemplate>
                                                     <TextBlock Text="{Binding Name}"></TextBlock>

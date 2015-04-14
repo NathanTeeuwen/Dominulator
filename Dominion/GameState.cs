@@ -435,21 +435,26 @@ namespace Dominion
                     throw new Exception("Tried to buy card that didn't meet criteria");
                 }
 
+                if (!this.CanGainCardFromSupply(cardType))
+                {
+                    return;
+                }
+
+                currentPlayer.turnCounters.RemoveCoins(cardType.CurrentCoinCost(currentPlayer));
+                currentPlayer.turnCounters.RemovePotions(cardType.potionCost);
+                currentPlayer.turnCounters.RemoveBuy();
+
                 Card boughtCard = this.PlayerGainCardFromSupply(cardType, currentPlayer, DeckPlacement.Discard, GainReason.Buy);
                 if (boughtCard == null)
                 {
-                    return;
+                    throw new Exception("CanGainCardFromSupply said we could buy a card when we couldn't");
                 }
                             
                 int embargoCount = this.pileEmbargoTokenCount[boughtCard];
                 for (int i = 0; i < embargoCount; ++i)
                 {
                     currentPlayer.GainCardFromSupply(Cards.Curse, this);                    
-                }
-
-                currentPlayer.turnCounters.RemoveCoins(boughtCard.CurrentCoinCost(currentPlayer));
-                currentPlayer.turnCounters.RemovePotions(boughtCard.potionCost);
-                currentPlayer.turnCounters.RemoveBuy();                                
+                }                                              
             }
         }
 
@@ -551,24 +556,47 @@ namespace Dominion
             return null;
         }       
 
-        public Card PlayerGainCardFromSupply(Card cardType, PlayerState playerState, DeckPlacement defaultLocation = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)
-        {            
+        public bool CanGainCardFromSupply(Card cardType)
+        {
             PileOfCards pile = this.GetPile(cardType);
             if (pile == null)
             {
+                return false;
+            }
+
+            return pile.TopCard() == cardType;
+        }
+
+        public Card PlayerGainCardFromSupply(Card cardType, PlayerState playerState, DeckPlacement defaultLocation = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)
+        {   
+            bool canGainCardFromSupply = CanGainCardFromSupply(cardType);
+            PileOfCards pile = this.GetPile(cardType);
+            if (pile == null)
+            {
+                System.Diagnostics.Debug.Assert(!canGainCardFromSupply);
                 return null;
             }
 
             if (GetPile(this.supplyPiles, cardType) != null)
                 this.hasPileEverBeenGained[pile] = true;            
 
-            Card card = pile.DrawCardFromTop();
-            if (card == null)
+            if (pile.TopCard() != cardType)
             {
+                System.Diagnostics.Debug.Assert(!canGainCardFromSupply);
                 return null;
             }
 
+            Card card = pile.DrawCardFromTop();
+            if (card == null)
+            {
+                System.Diagnostics.Debug.Assert(!canGainCardFromSupply);
+                return null;
+            }
+
+            System.Diagnostics.Debug.Assert(canGainCardFromSupply);
+
             playerState.GainCard(this, card, DeckPlacement.Supply, defaultLocation, gainReason);
+
 
             return card;
         }       
