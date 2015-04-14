@@ -29,6 +29,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.IllGottenGains] = new IllGottenGainsAlwaysGainCopper(playerAction);
             result[Dominion.Cards.Island] = new Island(playerAction);            
             result[Dominion.Cards.Library] = new Library(playerAction);
+            result[Dominion.Cards.Masquerade] = new Masquerade(playerAction);
             result[Dominion.Cards.MarketSquare] = new MarketSquare(playerAction);
             result[Dominion.Cards.Mint] = new Mint(playerAction);
             result[Dominion.Cards.Mystic] = new MysticAndWishingWell(playerAction);
@@ -61,6 +62,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Island] = Strategy.HasCardToDiscardInHand;
             result[Dominion.Cards.JunkDealer] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Lookout] = Lookout.ShouldPlay;
+            result[Dominion.Cards.Masquerade] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Remodel] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Salvager] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.SpiceMerchant] = Strategy.HasCardToTrashInHand;

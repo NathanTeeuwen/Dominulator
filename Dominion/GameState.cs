@@ -101,7 +101,7 @@ namespace Dominion
         private MapPileOfCards<bool> hasPileEverBeenGained;
         private MapPileOfCards<int> pileEmbargoTokenCount;
 
-        internal readonly CollectionCards emptyCardCollection;
+        public readonly CollectionCards emptyCardCollection;
 
         public int InProgressGameIndex;
 

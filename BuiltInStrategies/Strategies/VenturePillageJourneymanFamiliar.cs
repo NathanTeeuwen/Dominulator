@@ -295,9 +295,7 @@ namespace Strategies
                     return PlayerActionChoice.Trash;
                 }
                 else
-                    return PlayerActionChoice.GainCard;
-
-                return base.ChooseBetween(gameState, acceptableChoice);
+                    return PlayerActionChoice.GainCard;                
             }
         }
 
