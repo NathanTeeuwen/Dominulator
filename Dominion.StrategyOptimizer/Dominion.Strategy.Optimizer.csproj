@@ -49,17 +49,17 @@
     <Compile Include="StrategyOptimizer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataGathering\Dominion.DataGathering.csproj">
-      <Project>{992736aa-e61e-4ed5-88d9-3de4e8a214cb}</Project>
-      <Name>Dominion.DataGathering</Name>
+    <ProjectReference Include="..\DataGathering\Dominion.DataGathering.Portable.csproj">
+      <Project>{fbeb2733-2b59-4e3f-b1c6-7266953a5961}</Project>
+      <Name>Dominion.DataGathering.Portable</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj">
-      <Project>{6816a653-b44f-4614-b228-8c70d6747ca0}</Project>
-      <Name>Dominion.Strategy</Name>
+    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.Portable.csproj">
+      <Project>{de60f275-b1b5-40f4-be3e-35805f42cce3}</Project>
+      <Name>Dominion.Strategy.Portable</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Dominion\Dominion.csproj">
-      <Project>{d4a4d420-486e-489d-9db6-7fcba7d63359}</Project>
-      <Name>Dominion</Name>
+    <ProjectReference Include="..\Dominion\Dominion.Portable.csproj">
+      <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
+      <Name>Dominion.Portable</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

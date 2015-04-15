@@ -9,8 +9,8 @@
     <ProjectGuid>{BF6E2A5E-E0C3-4461-8EBE-40F942B4BFC8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Dominion.Portable</RootNamespace>
-    <AssemblyName>Dominion.Portable</AssemblyName>
+    <RootNamespace>Dominion</RootNamespace>
+    <AssemblyName>Dominion</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
