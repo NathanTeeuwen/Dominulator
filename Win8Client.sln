@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Windows
-VisualStudioVersion = 12.0.30501.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win8Client", "Win8Client\Win8Client.csproj", "{1B2628D2-A246-4117-96E9-BD000963732D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.Strategy.Portable", "Dominion.Strategy\Dominion.Strategy.Portable.csproj", "{DE60F275-B1B5-40F4-BE3E-35805F42CCE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.Strategy", "Dominion.Strategy\Dominion.Strategy.csproj", "{DE60F275-B1B5-40F4-BE3E-35805F42CCE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.Portable", "Dominion\Dominion.Portable.csproj", "{BF6E2A5E-E0C3-4461-8EBE-40F942B4BFC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion", "Dominion\Dominion.csproj", "{BF6E2A5E-E0C3-4461-8EBE-40F942B4BFC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.DataGathering.Portable", "DataGathering\Dominion.DataGathering.Portable.csproj", "{FBEB2733-2B59-4E3F-B1C6-7266953A5961}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.DataGathering", "DataGathering\Dominion.DataGathering.csproj", "{FBEB2733-2B59-4E3F-B1C6-7266953A5961}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlRenderer.Portable", "HtmlRenderer\HtmlRenderer.Portable.csproj", "{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlRenderer.Windows", "HtmlRenderer\HtmlRenderer.Windows.csproj", "{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

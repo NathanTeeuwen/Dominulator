@@ -1,17 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\Common.Targets" />
+  <Import Project="..\Common.Portable.Targets" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{31CE0F10-4472-4CFF-B683-44B1F13B8D39}</ProjectGuid>
+    <ProjectGuid>{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HtmlRenderer</RootNamespace>
-    <AssemblyName>HtmlRenderer</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>HtmlRenderer.Portable</RootNamespace>
+    <AssemblyName>HtmlRenderer.Portable</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile32</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,52 +33,40 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <ProjectReference Include="..\DataGathering\Dominion.DataGathering.csproj">
+      <Project>{fbeb2733-2b59-4e3f-b1c6-7266953a5961}</Project>
+      <Name>Dominion.DataGathering</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj">
+      <Project>{de60f275-b1b5-40f4-be3e-35805f42cce3}</Project>
+      <Name>Dominion.Strategy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominion\Dominion.csproj">
+      <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
+      <Name>Dominion</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DeferredHtmlGenerator.cs" />
+    <TargetPlatform Include="WindowsPhoneApp, Version=8.1" />
+    <TargetPlatform Include="Windows, Version=8.1" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="HtmlContentInserter.cs" />
     <Compile Include="HtmlRenderer.cs" />
-    <Compile Include="HtmlRenderer.Resources.cs" />
+    <Compile Include="HtmlRenderer.Resources.Windows.cs" />
     <Compile Include="HtmlReportGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataGathering\Dominion.DataGathering.Portable.csproj">
-      <Project>{fbeb2733-2b59-4e3f-b1c6-7266953a5961}</Project>
-      <Name>Dominion.DataGathering.Portable</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.Portable.csproj">
-      <Project>{de60f275-b1b5-40f4-be3e-35805f42cce3}</Project>
-      <Name>Dominion.Strategy.Portable</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Dominion\Dominion.Portable.csproj">
-      <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
-      <Name>Dominion.Portable</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Resources\Resources.csproj">
-      <Project>{197a9851-301c-4df5-9799-c34bfb7b6b34}</Project>
-      <Name>Resources</Name>
-    </ProjectReference>
+    <Content Include="Resources\jquery.simplePagination.js" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <Content Include="Resources\simplePagination.css" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\jquery.simplePagination.js" />
+    <Content Include="Resources\DefaultStyles.css" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\simplePagination.css" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\DefaultStyles.css" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

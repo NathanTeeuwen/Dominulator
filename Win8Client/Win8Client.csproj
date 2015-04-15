@@ -105,21 +105,21 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <ProjectReference Include="..\DataGathering\Dominion.DataGathering.Portable.csproj">
+    <ProjectReference Include="..\DataGathering\Dominion.DataGathering.csproj">
       <Project>{fbeb2733-2b59-4e3f-b1c6-7266953a5961}</Project>
-      <Name>Dominion.DataGathering.Portable</Name>
+      <Name>Dominion.DataGathering</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.Portable.csproj">
+    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj">
       <Project>{de60f275-b1b5-40f4-be3e-35805f42cce3}</Project>
-      <Name>Dominion.Strategy.Portable</Name>
+      <Name>Dominion.Strategy</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Dominion\Dominion.Portable.csproj">
+    <ProjectReference Include="..\Dominion\Dominion.csproj">
       <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
-      <Name>Dominion.Portable</Name>
+      <Name>Dominion</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HtmlRenderer\HtmlRenderer.Portable.csproj">
+    <ProjectReference Include="..\HtmlRenderer\HtmlRenderer.Windows.csproj">
       <Project>{37debcec-cc13-4f96-adae-bc75850d6452}</Project>
-      <Name>HtmlRenderer.Portable</Name>
+      <Name>HtmlRenderer.Windows</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -30,13 +30,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.Portable", "Dominion\Dominion.Portable.csproj", "{BF6E2A5E-E0C3-4461-8EBE-40F942B4BFC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion", "Dominion\Dominion.csproj", "{BF6E2A5E-E0C3-4461-8EBE-40F942B4BFC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.Strategy.Portable", "Dominion.Strategy\Dominion.Strategy.Portable.csproj", "{DE60F275-B1B5-40F4-BE3E-35805F42CCE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.Strategy", "Dominion.Strategy\Dominion.Strategy.csproj", "{DE60F275-B1B5-40F4-BE3E-35805F42CCE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.DataGathering.Portable", "DataGathering\Dominion.DataGathering.Portable.csproj", "{FBEB2733-2B59-4E3F-B1C6-7266953A5961}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.DataGathering", "DataGathering\Dominion.DataGathering.csproj", "{FBEB2733-2B59-4E3F-B1C6-7266953A5961}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlRenderer", "HtmlRenderer\HtmlRenderer.csproj", "{31CE0F10-4472-4CFF-B683-44B1F13B8D39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlRenderer.Native", "HtmlRenderer\HtmlRenderer.Native.csproj", "{31CE0F10-4472-4CFF-B683-44B1F13B8D39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -98,9 +98,9 @@
     <Compile Include="StrategyTemplates\BigMoneyWithCard.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dominion\Dominion.Portable.csproj">
+    <ProjectReference Include="..\Dominion\Dominion.csproj">
       <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
-      <Name>Dominion.Portable</Name>
+      <Name>Dominion</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

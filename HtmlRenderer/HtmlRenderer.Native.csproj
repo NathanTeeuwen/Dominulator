@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7636A8DF-B2A9-4598-A7EF-D4F4DCF5AC9A}</ProjectGuid>
+    <ProjectGuid>{31CE0F10-4472-4CFF-B683-44B1F13B8D39}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Dominion.StrategyOptimizer</RootNamespace>
-    <AssemblyName>Dominion.StrategyOptimizer</AssemblyName>
+    <RootNamespace>HtmlRenderer</RootNamespace>
+    <AssemblyName>HtmlRenderer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -38,15 +38,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BigMoneyWithCard\BigMoneyWithCardDescription.cs" />
-    <Compile Include="BigMoneyWithCard\CompareBigMoneyWithCardDescription.cs" />
-    <Compile Include="BigMoneyWithCard\MutateBigMoneyWithCardDescription.cs" />
-    <Compile Include="GeneticAlgorithm.cs" />
-    <Compile Include="PickByPriorityDescription\ComparePickByPriorityDescription.cs" />
-    <Compile Include="PickByPriorityDescription\MutatePickByPriorityDescription.cs" />
-    <Compile Include="PickByPriorityDescription\SimpleStrategyDescription.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StrategyOptimizer.cs" />
+    <Compile Include="DeferredHtmlGenerator.cs" />
+    <Compile Include="HtmlContentInserter.cs" />
+    <Compile Include="HtmlRenderer.cs" />
+    <Compile Include="HtmlRenderer.Resources.Native.cs" />
+    <Compile Include="HtmlReportGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataGathering\Dominion.DataGathering.csproj">
@@ -61,6 +57,22 @@
       <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
       <Name>Dominion</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Resources\Resources.csproj">
+      <Project>{197a9851-301c-4df5-9799-c34bfb7b6b34}</Project>
+      <Name>Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\jquery.simplePagination.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\simplePagination.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DefaultStyles.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

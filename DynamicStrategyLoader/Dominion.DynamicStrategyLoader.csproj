@@ -124,13 +124,13 @@
       <Project>{ecffdbdf-f966-4076-98f9-9366dab6d7cd}</Project>
       <Name>Dominion.BuiltInStrategies</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.Portable.csproj">
+    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj">
       <Project>{de60f275-b1b5-40f4-be3e-35805f42cce3}</Project>
-      <Name>Dominion.Strategy.Portable</Name>
+      <Name>Dominion.Strategy</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Dominion\Dominion.Portable.csproj">
+    <ProjectReference Include="..\Dominion\Dominion.csproj">
       <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
-      <Name>Dominion.Portable</Name>
+      <Name>Dominion</Name>
     </ProjectReference>
     <ProjectReference Include="..\Resources\Resources.csproj">
       <Project>{197a9851-301c-4df5-9799-c34bfb7b6b34}</Project>
