@@ -57,9 +57,7 @@ namespace Win8Client
 
         private void CurrentCardsListView_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
         {
-            var cardListAsString = string.Join(",", e.Items.Select(card => ((DominionCard)card).dominionCard.name));
-
-            e.Data.SetData("text", cardListAsString);
+            Win8Client.Strategies.PrepareDragAndDrop(e);
             this.CurrentCardsListView.SelectedItems.Clear();
         }     
 

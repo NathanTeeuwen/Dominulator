@@ -131,7 +131,7 @@ namespace Win8Client
 
             if (descr.matchDescriptions.Length == 2)
             {
-                result.TestCard.Value = DominionCard.Create(descr.matchDescriptions[1].cardType);
+                result.TestCard.Value = descr.matchDescriptions[1].cardType != null ? DominionCard.Create(descr.matchDescriptions[1].cardType) : null;
                 result.Threshhold.Value = descr.matchDescriptions[1].countThreshHold;
                 result.Comparison.Value = descr.matchDescriptions[1].comparison;
                 result.CountSource.Value = descr.matchDescriptions[1].countSource;

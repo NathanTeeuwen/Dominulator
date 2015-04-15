@@ -62,6 +62,18 @@ namespace Win8Client
         private void SortAllByExpansion(object sender, RoutedEventArgs e)
         {            
             this.appDataContext.AllCards.SortByExpansion();         
-        }                
+        }
+
+        private void DragItemsStarting(object sender, DragItemsStartingEventArgs e)
+        {
+            Win8Client.Strategies.PrepareDragAndDrop(e);
+            foreach (var item in e.Items)
+            {
+                if (!this.AllCardsListView.SelectedItems.Contains(item))
+                {
+                    this.AllCardsListView.SelectedItems.Add(item);
+                }
+            }            
+        }
     }
 }

@@ -45,6 +45,13 @@ namespace Win8Client
             }
         }
 
+        public static void PrepareDragAndDrop(DragItemsStartingEventArgs e)
+        {
+            var cardListAsString = string.Join(",", e.Items.Select(card => ((DominionCard)card).dominionCard.name));
+
+            e.Data.SetData("text", cardListAsString);
+        }
+
         private async void CurrentCardsListView_Drop(object sender, DragEventArgs e)
         {
             if (!e.Data.GetView().AvailableFormats.Contains("text"))
