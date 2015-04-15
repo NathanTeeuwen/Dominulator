@@ -57,6 +57,7 @@ namespace Dominion.Strategy.Description
         public void WriteText(System.IO.TextWriter writer)
         {
             writer.Write(card.name);
+            writer.Write(" whern ");
             this.matchDescriptions[0].WriteText(writer);
         }
 

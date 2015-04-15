@@ -44,7 +44,6 @@ namespace Dominion.Strategy.Description
 
         public bool GameStatePredicate(GameState gameState)
         {
-            System.Diagnostics.Debug.WriteLine(this);
             int countOfTheSource;
 
             switch (countSource)
@@ -96,14 +95,7 @@ namespace Dominion.Strategy.Description
 
         public void WriteText(System.IO.TextWriter writer)
         {
-            writer.Write("({0} {1} {2} {3})", this.cardType.name, this.countSource, this.comparison, this.countThreshHold);            
-        }
-
-        public override string ToString()
-        {
-            var writer = new System.IO.StringWriter();
-            WriteText(writer);
-            return writer.ToString();
+            writer.Write("({0} {1} {2} {3})", this.countSource, this.cardType.name, this.comparison, this.countThreshHold);            
         }
     }
 }

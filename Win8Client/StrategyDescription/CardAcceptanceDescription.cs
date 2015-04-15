@@ -163,15 +163,12 @@ namespace Win8Client
             }
 
             if (this.CountSource.Value != Dominion.Strategy.Description.CountSource.Always)
-            {
-                if (this.TestCard.Value != null)
-                {
-                    list.Add(new Dominion.Strategy.Description.MatchDescription(
-                            this.CountSource.Value,
-                            this.TestCard.Value.dominionCard,
-                            this.Comparison.Value,
-                            this.Threshhold.Value));
-                }
+            {                                
+                list.Add(new Dominion.Strategy.Description.MatchDescription(
+                        this.CountSource.Value,
+                        this.TestCard.Value != null ? this.TestCard.Value.dominionCard : null,
+                        this.Comparison.Value,
+                        this.Threshhold.Value));             
             }
             
             return new Dominion.Strategy.Description.CardAcceptanceDescription(

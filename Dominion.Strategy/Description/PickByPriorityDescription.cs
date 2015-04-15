@@ -18,11 +18,13 @@ namespace Dominion.Strategy.Description
 
         public void Write(System.IO.TextWriter writer)
         {
+            writer.WriteLine("Pick By Priority: {");
             foreach (var acceptance in descriptions)
             {
                 acceptance.WriteText(writer);
-                writer.Write(", ");
+                writer.WriteLine("");
             }
+            writer.WriteLine("}");
         }
 
         public PickByPriorityDescription AddCardInBestLocation(Card card)

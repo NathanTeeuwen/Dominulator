@@ -45,5 +45,13 @@ namespace Dominion.Strategy.Description
             result = result.AddCardToPurchaseOrder(card);
             return result;
         }
+
+        public override string ToString()
+        {
+            var writer = new System.IO.StringWriter();
+            writer.Write("Purchase Order: ");
+            this.purchaseOrderDescription.Write(writer);
+            return writer.ToString();
+        }
     }
 }

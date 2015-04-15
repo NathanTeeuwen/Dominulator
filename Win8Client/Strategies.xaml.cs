@@ -134,6 +134,12 @@ namespace Win8Client
             Dominion.Strategy.Description.StrategyDescription player1Descr = this.appDataContext.player1Strategy.ConvertToDominionStrategy();
             Dominion.Strategy.Description.StrategyDescription player2Descr = this.appDataContext.player2Strategy.ConvertToDominionStrategy();
 
+            System.Diagnostics.Debug.WriteLine("Player 1: ");
+            System.Diagnostics.Debug.WriteLine(player1Descr.ToString());
+            System.Diagnostics.Debug.WriteLine("Player 2: ");
+            System.Diagnostics.Debug.WriteLine(player2Descr.ToString());
+
+
             System.Threading.Tasks.Task<StrategyUIResults>.Factory.StartNew(() =>
             {
 
