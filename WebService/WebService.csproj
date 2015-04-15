@@ -70,10 +70,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BuiltInStrategies\Dominion.BuiltInStrategies.csproj">
-      <Project>{ecffdbdf-f966-4076-98f9-9366dab6d7cd}</Project>
-      <Name>Dominion.BuiltInStrategies</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DataGathering\Dominion.DataGathering.csproj">
       <Project>{fbeb2733-2b59-4e3f-b1c6-7266953a5961}</Project>
       <Name>Dominion.DataGathering</Name>

@@ -38,7 +38,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuiltIntStrategyLoader.cs" />
+    <Compile Include="BuiltInStrategyLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategies\AmbassadorCaravanApprenticeMerchantGuild.cs" />
     <Compile Include="Strategies\AltarStewardCityMountebank.cs" />

@@ -9,8 +9,8 @@
     <ProjectGuid>{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HtmlRenderer.Portable</RootNamespace>
-    <AssemblyName>HtmlRenderer.Portable</AssemblyName>
+    <RootNamespace>HtmlRenderer.Windows</RootNamespace>
+    <AssemblyName>HtmlRenderer.Windows</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
