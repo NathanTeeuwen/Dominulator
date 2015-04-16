@@ -31,16 +31,14 @@ namespace Win8Client
             var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();
 
             this.CurrentCards.CurrentCardsChanged += UpdateAllCardsListSelection;
+            this.appDataContext.CurrentDeck.PropertyChanged += UpdateCommonCardsFromKingdom;
             this.appDataContext.StrategyReport.PropertyChanged += StrategyReport_PropertyChanged;
             this.appDataContext.PageConfig.PropertyChanged += PageConfig_PropertyChanged;
 
-            System.Threading.Tasks.Task.WhenAll(
-                appDataContext.AllCards.Populate(),
-                appDataContext.CommonCards.PopulateCommon()
-                ).ContinueWith(delegate(System.Threading.Tasks.Task task)
-                    {                        
-                        this.CurrentCards.Randomize10Cards();                 
-                    }, uiScheduler);
+            appDataContext.AllCards.Populate().ContinueWith(delegate(System.Threading.Tasks.Task task)
+            {                        
+                this.CurrentCards.Randomize10Cards();                 
+            }, uiScheduler);
 
             this.Loaded += MainPage_Loaded;
         }
@@ -67,6 +65,13 @@ namespace Win8Client
                 this.AllCards.SelectedItems.Add(card);
             }
             this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
+        }
+
+        internal void UpdateCommonCardsFromKingdom(object sender, PropertyChangedEventArgs e)
+        {
+            var currentKingdom = this.appDataContext.CurrentDeck.Cards.Select(c => c.dominionCard).ToArray<Dominion.Card>();
+            Dominion.GameConfig gameConfig = Dominion.GameConfigBuilder.Create(currentKingdom);
+            this.appDataContext.CommonCards.PopulateCommon(gameConfig);
         }
               
       
@@ -294,9 +299,9 @@ namespace Win8Client
             });
         }
 
-        public System.Threading.Tasks.Task PopulateCommon()
+        public System.Threading.Tasks.Task PopulateCommon(Dominion.GameConfig gameConfig)
         {
-            return PopulateCommonFromResources().ContinueWith(async (continuation) =>
+            return PopulateCommonFromResources(gameConfig).ContinueWith(async (continuation) =>
             {
                 await this.UpdateUI();
             });
@@ -310,19 +315,15 @@ namespace Win8Client
             }
         }
 
-        private async System.Threading.Tasks.Task PopulateCommonFromResources()
-        {
-            Dominion.Card[] commonCards = new Dominion.Card[] {
-                Dominion.Cards.Province,
-                Dominion.Cards.Duchy,
-                Dominion.Cards.Estate,
-                Dominion.Cards.Gold,
-                Dominion.Cards.Silver,
-                Dominion.Cards.Copper,
-            };
-            foreach (Dominion.Card card in commonCards)
+        private async System.Threading.Tasks.Task PopulateCommonFromResources(Dominion.GameConfig gameConfig)
+        {            
+            this.originalCards.Clear();
+
+            Dominion.CardGainAvailablility[] availabilities = gameConfig.GetCardAvailability(1, Dominion.CardAvailabilityType.AdditionalCardsAfterKingdom);
+
+            foreach (var availability in availabilities)
             {
-                this.originalCards.Add(DominionCard.Create(card));
+                this.originalCards.Add(DominionCard.Create(availability.card));
             }
         }
 

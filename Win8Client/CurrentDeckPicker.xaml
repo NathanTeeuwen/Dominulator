@@ -16,8 +16,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal">            
             <Button Style="{StaticResource SortAppBarButtonStyle}" BorderThickness="0">
@@ -32,37 +31,36 @@
             <Button Click="RandomizeButtonClick" Style="{StaticResource RefreshAppBarButtonStyle}"></Button>
         </StackPanel>
         <ScrollViewer Grid.Row="1">
-            <ListView Name="CurrentCardsListView"  ItemsSource="{Binding CurrentDeck.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
-                <ListView.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
-                    </ItemsPanelTemplate>
-                </ListView.ItemsPanel>
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel>
-                            <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-
-        </ScrollViewer>
-        <ScrollViewer Grid.Row="2">
-            <ListView ItemsSource="{Binding CommonCards.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
-                <ListView.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
-                    </ItemsPanelTemplate>
-                </ListView.ItemsPanel>
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel>
-                            <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <StackPanel Orientation="Vertical">            
+                <ListView Name="CurrentCardsListView"  ItemsSource="{Binding CurrentDeck.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <ListView ItemsSource="{Binding CommonCards.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
         </ScrollViewer>
     </Grid>
 </UserControl>

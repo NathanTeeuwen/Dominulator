@@ -234,6 +234,7 @@ namespace Dominion
     {
         AllPossibleCardsInGame,    // used for enumerating the types of cards available in the game
         TypesForBuyingOrGaining,   // used for showing in a UI what cards a player can choose between when buying or gaining        
+        AdditionalCardsAfterKingdom
     }
 
     class CardGainAvailabilityBuilder
@@ -326,15 +327,18 @@ namespace Dominion
                 builder.AddSupply(16, Cards.Potion);
             }
 
-            foreach (Card card in this.kingdomPiles)
+            if (cardAvailabilityType != CardAvailabilityType.AdditionalCardsAfterKingdom)
             {
-                if (card.isVictory)
+                foreach (Card card in this.kingdomPiles)
                 {
-                    builder.AddSupply(victoryCount, card);
-                }
-                else
-                {
-                    builder.AddSupply(card.defaultSupplyCount, card);
+                    if (card.isVictory)
+                    {
+                        builder.AddSupply(victoryCount, card);
+                    }
+                    else
+                    {
+                        builder.AddSupply(card.defaultSupplyCount, card);
+                    }
                 }
             }
 
@@ -342,17 +346,14 @@ namespace Dominion
             {
                 switch (cardAvailabilityType)
                 {
+                    case CardAvailabilityType.AdditionalCardsAfterKingdom:
                     case CardAvailabilityType.AllPossibleCardsInGame:
                         {
                             builder.AddStartingCard(Cards.Necropolis);
                             builder.AddStartingCard(Cards.Hovel);
                             builder.AddStartingCard(Cards.OvergrownEstate);
                             break;
-                        }
-                    case CardAvailabilityType.TypesForBuyingOrGaining:
-                        {                            
-                            break;
-                        }
+                        }                    
                 }                
             }
 
@@ -361,12 +362,17 @@ namespace Dominion
                 switch (cardAvailabilityType)
                 {
                     case CardAvailabilityType.AllPossibleCardsInGame:
+                    case CardAvailabilityType.AdditionalCardsAfterKingdom:
                         {
-                            builder.AddSupply(ruinsCount, Cards.Ruins);
                             foreach (var card in ruins)
                                 builder.AddSupply(1, card);
                             break;
                         }
+                }
+
+                switch (cardAvailabilityType)
+                {
+                    case CardAvailabilityType.AllPossibleCardsInGame:
                     case CardAvailabilityType.TypesForBuyingOrGaining:
                         {
                             builder.AddSupply(ruinsCount, Cards.Ruins);
