@@ -155,7 +155,7 @@ namespace Dominion
 
             int playerCount = playerActions.Length;            
             this.supplyPiles = gameConfig.GetSupplyPiles(playerCount, game.random);
-            this.nonSupplyPiles = gameConfig.GetNonSupplyPiles();
+            this.nonSupplyPiles = gameConfig.GetNonSupplyPiles(playerCount);
 
             this.mapCardToPile = new MapOfCardsForGameSubset<PileOfCards>(this.CardGameSubset);
             this.BuildMapOfCardToPile();
@@ -194,7 +194,7 @@ namespace Dominion
                 {
                     if (pair.Card.isShelter)
                     {
-                        player.GainCard(this, pair.Card, DeckPlacement.Supply);
+                        player.GainCard(this, pair.Card, DeckPlacement.GameStart);
                     }
                     else
                     {

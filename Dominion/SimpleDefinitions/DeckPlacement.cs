@@ -17,6 +17,7 @@ namespace Dominion
         Revealed,
         None,
         Supply,
+        GameStart,
         Default
     }   
 }

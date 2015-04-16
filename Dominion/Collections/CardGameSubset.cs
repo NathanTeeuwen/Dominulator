@@ -16,8 +16,6 @@ namespace Dominion
         private int[] mapCardIndexToSubsetIndex = new int[countSupportedCards];
         private Card[] mapSubsetIndexToCard = new Card[countSupportedCards];
 
-        internal bool isInitializing = true;
-
         public CardGameSubset()
         {
             for (int i = 0; i < countSupportedCards; ++i)
