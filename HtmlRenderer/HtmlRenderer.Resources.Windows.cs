@@ -19,7 +19,7 @@ namespace HtmlRenderer
 
         public static async Task<string> GetEmbeddedContentAsync(string content)
         {
-            string fullPath = "HtmlRenderer.Portable\\Resources\\" + content;
+            string fullPath = "HtmlRenderer.Windows\\Resources\\" + content;
             Windows.Storage.StorageFile manifestFile = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync(fullPath);            
             string result = await Windows.Storage.FileIO.ReadTextAsync(manifestFile);
             return result;
