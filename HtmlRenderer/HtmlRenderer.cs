@@ -174,7 +174,7 @@ namespace HtmlRenderer
                     this.textWriter.Indent();
                         this.textWriter.WriteLine("gridlines: {");
                         this.textWriter.Indent();
-                            this.textWriter.WriteLine("count: " + xAxis.Length/multiplesOfFifteen); 
+                        this.textWriter.WriteLine("count: " + (multiplesOfFifteen > 0 ? xAxis.Length / multiplesOfFifteen : xAxis.Length).ToString()); 
                         this.textWriter.Unindent();
                         this.textWriter.WriteLine("}");
                     this.textWriter.Unindent();
