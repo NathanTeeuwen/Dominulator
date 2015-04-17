@@ -256,8 +256,19 @@ namespace Dominion.Strategy
         }
 
         override public Card GetCardFromDiscardToTopDeck(GameState gameState, bool isOptional)
-        {            
-            Card result = this.discardOrder.GetPreferredCardReverse(gameState, card => gameState.Self.Discard.HasCard(card));
+        {
+            Card result = this.purchaseOrder.GetPreferredCard(gameState, card => gameState.Self.Discard.HasCard(card) && (card.isAction || card.isTreasure));
+            
+            if (!isOptional && result == null)
+            {
+                result = gameState.Self.Discard.Where(c=>c.isTreasure || c.isAction).OrderByDescending(c=>c.DefaultCoinCost).FirstOrDefault();
+            }
+
+            if (!isOptional && result == null)
+            {
+                result = gameState.Self.Discard.SomeCard();
+            }
+
             return result;
         }
 

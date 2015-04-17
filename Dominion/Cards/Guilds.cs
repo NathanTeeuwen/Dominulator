@@ -169,6 +169,9 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
+            if (revealedCard == null)
+                return;
+
             if (revealedCard.isAction)
             {
                 currentPlayer.cardsBeingRevealed.RemoveCard(revealedCard);

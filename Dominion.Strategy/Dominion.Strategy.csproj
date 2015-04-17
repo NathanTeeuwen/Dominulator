@@ -45,6 +45,7 @@
     <Compile Include="CardsWithoutDefaultBehaviors.cs" />
     <Compile Include="DefaultPlayerAction.cs" />
     <Compile Include="DefaultPlayRules\CardOverrides.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Herald.cs" />
     <Compile Include="DefaultPlayRules\Cards\Alchemist.cs" />
     <Compile Include="DefaultPlayRules\Cards\Ambassador.cs" />
     <Compile Include="DefaultPlayRules\Cards\BandOfMisfits.cs" />

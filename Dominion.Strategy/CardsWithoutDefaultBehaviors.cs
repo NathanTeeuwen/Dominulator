@@ -16,8 +16,7 @@ namespace Dominion.Strategy
             // implemented cards that require default behaviors            
             Cards.Embargo,            
             Cards.Graverobber,
-            Cards.Haven,
-            Cards.Herald,           
+            Cards.Haven,            
             Cards.Inn,
             Cards.Journeyman,        
             Cards.Mandarin,            

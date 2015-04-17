@@ -25,6 +25,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Golem] = new Golem(playerAction);
             result[Dominion.Cards.Governor] = new Governor(playerAction);
             result[Dominion.Cards.Herbalist] = new Herbalist(playerAction);
+            result[Dominion.Cards.Herald] = new Herald(playerAction);
             result[Dominion.Cards.HorseTraders] = new HorseTraders(playerAction);
             result[Dominion.Cards.IllGottenGains] = new IllGottenGainsAlwaysGainCopper(playerAction);
             result[Dominion.Cards.Island] = new Island(playerAction);            
