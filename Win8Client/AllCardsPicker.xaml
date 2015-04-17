@@ -30,20 +30,36 @@
             </Button>
         </StackPanel>
         <ScrollViewer Grid.Row="1">
-            <ListView Name="AllCardsListView" ItemsSource="{Binding AllCards.Cards}" SelectionMode="Multiple" SelectionChanged="AllCardsListView_SelectionChanged" CanDragItems="True" DragItemsStarting="DragItemsStarting">
-                <ListView.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
-                    </ItemsPanelTemplate>
-                </ListView.ItemsPanel>
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel>
-                            <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <StackPanel Orientation="Vertical">
+                <ListView Name="SheltersListView" ItemsSource="{Binding ShelterCards.Cards}" SelectionMode="Multiple" SelectionChanged="SheltersListView_SelectionChanged" CanDragItems="True" DragItemsStarting="DragItemsStarting">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <ListView Name="AllCardsListView" ItemsSource="{Binding AllCards.Cards}" SelectionMode="Multiple" SelectionChanged="AllCardsListView_SelectionChanged" CanDragItems="True" DragItemsStarting="DragItemsStarting">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
         </ScrollViewer>
     </Grid>
 </UserControl>

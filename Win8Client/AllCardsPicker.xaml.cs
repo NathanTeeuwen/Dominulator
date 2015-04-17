@@ -41,6 +41,29 @@ namespace Win8Client
             }
         }
 
+        private bool ignoreShelterChanges = false;
+
+        private void SheltersListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ignoreShelterChanges)
+                return;
+
+            ignoreShelterChanges = true;
+
+            if (e.RemovedItems.Any())
+            {
+                this.SheltersListView.SelectedItems.Clear();
+                this.appDataContext.UseShelters.Value = false;
+            }
+            else if (e.AddedItems.Any())
+            {
+                this.SheltersListView.SelectAll();
+                this.appDataContext.UseShelters.Value = true;
+            }
+
+            ignoreShelterChanges = false;
+        }
+
         private void AllCardsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (this.AppDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates)

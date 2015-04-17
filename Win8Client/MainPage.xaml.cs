@@ -34,11 +34,15 @@ namespace Win8Client
             this.appDataContext.CurrentDeck.PropertyChanged += UpdateCommonCardsFromKingdom;
             this.appDataContext.StrategyReport.PropertyChanged += StrategyReport_PropertyChanged;
             this.appDataContext.PageConfig.PropertyChanged += PageConfig_PropertyChanged;
+            this.appDataContext.UseShelters.PropertyChanged += UpdateCommonCardsFromKingdom;
 
-            appDataContext.AllCards.Populate().ContinueWith(delegate(System.Threading.Tasks.Task task)
-            {                        
-                this.CurrentCards.Randomize10Cards();                 
-            }, uiScheduler);
+            appDataContext.ShelterCards.PopulateShelters();
+
+            appDataContext.AllCards.Populate().ContinueWith(
+                delegate(System.Threading.Tasks.Task task)
+                {                        
+                    this.CurrentCards.Randomize10Cards();                 
+                }, uiScheduler);
 
             this.Loaded += MainPage_Loaded;
         }
@@ -69,11 +73,9 @@ namespace Win8Client
 
         internal void UpdateCommonCardsFromKingdom(object sender, PropertyChangedEventArgs e)
         {
-            var currentKingdom = this.appDataContext.CurrentDeck.Cards.Select(c => c.dominionCard).ToArray<Dominion.Card>();
-            Dominion.GameConfig gameConfig = Dominion.GameConfigBuilder.Create(currentKingdom);
+            Dominion.GameConfig gameConfig = this.appDataContext.GetGameConfig();
             this.appDataContext.CommonCards.PopulateCommon(gameConfig);
-        }
-              
+        }              
       
         internal static void Generate10Random(IList<DominionCard> resultList, IList<DominionCard> sourceList, IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
         {
@@ -299,12 +301,28 @@ namespace Win8Client
             });
         }
 
+        public System.Threading.Tasks.Task PopulateShelters()
+        {
+            return PopulateSheltersFromResources().ContinueWith(async (continuation) =>
+            {
+                await this.UpdateUI();
+            });
+        }
+
         public System.Threading.Tasks.Task PopulateCommon(Dominion.GameConfig gameConfig)
         {
             return PopulateCommonFromResources(gameConfig).ContinueWith(async (continuation) =>
             {
                 await this.UpdateUI();
             });
+        }
+
+        private async System.Threading.Tasks.Task PopulateSheltersFromResources()
+        {
+            foreach (Dominion.Card card in Dominion.Cards.Shelters)
+            {
+                this.originalCards.Add(DominionCard.Create(card));
+            }
         }
 
         private async System.Threading.Tasks.Task PopulateFromResources()

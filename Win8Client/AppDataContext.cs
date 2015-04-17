@@ -10,6 +10,7 @@ namespace Win8Client
     {
         System.Collections.ObjectModel.ObservableCollection<DominionCard> availableCards;
         private SortableCardList allCards;
+        private SortableCardList shelterCards;
         private SortableCardList currentDeck;
         private SortableCardList commonCards;
         private System.Collections.ObjectModel.ObservableCollection<Expansion> expansions;
@@ -45,6 +46,8 @@ namespace Win8Client
         public DependencyObjectDecl<double, DefaultDoubleZero> Player2WinPercent { get; private set; }
         public DependencyObjectDecl<double, DefaultDoubleZero> TiePercent { get; private set; }
 
+        public DependencyObjectDecl<bool, DefaultFalse> UseShelters { get; private set; }
+
         internal bool isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
 
         private MainPage mainPage;
@@ -54,6 +57,7 @@ namespace Win8Client
             this.mainPage = mainPage;
 
             this.allCards = new SortableCardList();
+            this.shelterCards = new SortableCardList();
             this.currentDeck = new SortableCardList();
             this.commonCards = new SortableCardList();
             this.availableCards = new System.Collections.ObjectModel.ObservableCollection<DominionCard>();
@@ -85,6 +89,8 @@ namespace Win8Client
             this.Player1WinPercent = new DependencyObjectDecl<double, DefaultDoubleZero>(this);
             this.Player2WinPercent = new DependencyObjectDecl<double, DefaultDoubleZero>(this);
             this.TiePercent = new DependencyObjectDecl<double, DefaultDoubleZero>(this);
+
+            this.UseShelters = new DependencyObjectDecl<bool, DefaultFalse>(this);
 
             this.expansions.Add(new Expansion("Alchemy", ExpansionIndex.Base));
             this.expansions.Add(new Expansion("Base", ExpansionIndex.Alchemy));
@@ -157,6 +163,14 @@ namespace Win8Client
             }
         }
 
+        public SortableCardList ShelterCards
+        {
+            get
+            {
+                return this.shelterCards;
+            }
+        }
+
         public SortableCardList CurrentDeck
         {
             get
@@ -206,11 +220,21 @@ namespace Win8Client
             this.mainPage.UpdateAllCardsListSelection();
         }
 
-        /*
-        public void Enable3orMoreFromExpansionsChangedEventHandler(object sender, PropertyChangedEventArgs e)
+        public Dominion.GameConfig GetGameConfig()
         {
-            this.currentDeck.UpdateUI();
-        }*/
+
+            Dominion.StartingCardSplit player1Split = this.player1Strategy.GetStartingCardSplit();
+            Dominion.StartingCardSplit player2Split = this.player2Strategy.GetStartingCardSplit();
+            Dominion.Card[] kingdomCards = this.currentDeck.Cards.Select(c => c.dominionCard).ToArray();
+
+            var builder = new Dominion.GameConfigBuilder();
+            builder.SetKingdomPiles(kingdomCards);
+            builder.useColonyAndPlatinum = false;
+            builder.useShelters = this.UseShelters.Value;
+            builder.SetCardSplitPerPlayer(new Dominion.StartingCardSplit[] { player1Split, player2Split });
+
+            return builder.ToGameConfig();
+        }
     }
 
     public enum CardVisibility

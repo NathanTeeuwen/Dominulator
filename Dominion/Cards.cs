@@ -272,6 +272,11 @@ namespace Dominion
             return AllCardsList;
         }
 
+        public static Card[] Shelters = new Card[] {
+            Cards.OvergrownEstate,
+            Cards.Hovel,
+            Cards.Necropolis};
+
         public static Card[] AllKingdomCards()
         {
             var result = new List<Card>();

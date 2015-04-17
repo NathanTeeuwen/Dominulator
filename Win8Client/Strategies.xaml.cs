@@ -141,14 +141,12 @@ namespace Win8Client
             Dominion.Strategy.Description.StrategyDescription player1Descr = this.appDataContext.player1Strategy.ConvertToDominionStrategy();
             Dominion.Strategy.Description.StrategyDescription player2Descr = this.appDataContext.player2Strategy.ConvertToDominionStrategy();
 
-            Dominion.StartingCardSplit player1Split = this.appDataContext.player1Strategy.GetStartingCardSplit();
-            Dominion.StartingCardSplit player2Split = this.appDataContext.player2Strategy.GetStartingCardSplit();
+            Dominion.GameConfig gameConfig = this.appDataContext.GetGameConfig();
 
             System.Diagnostics.Debug.WriteLine("Player 1: ");
             System.Diagnostics.Debug.WriteLine(player1Descr.ToString());
             System.Diagnostics.Debug.WriteLine("Player 2: ");
             System.Diagnostics.Debug.WriteLine(player2Descr.ToString());
-
 
             System.Threading.Tasks.Task<StrategyUIResults>.Factory.StartNew(() =>
             {
@@ -165,17 +163,9 @@ namespace Win8Client
                     player2Descr.ToPlayerAction(player2Name)
                 };
 
-                var builder = new Dominion.GameConfigBuilder();
-                Dominion.Strategy.PlayerAction.SetKingdomCards(builder, playerActions[0], playerActions[1]);
-
-                builder.useColonyAndPlatinum = false;
-                builder.useShelters = false;
-                builder.SetCardSplitPerPlayer(new Dominion.StartingCardSplit[] { player1Split, player2Split });
-
                 bool rotateWhoStartsFirst = true;
                 int numberOfGames = 1000;
 
-                Dominion.GameConfig gameConfig = builder.ToGameConfig();
                 var strategyComparison = new Dominion.Data.StrategyComparison(playerActions, gameConfig, rotateWhoStartsFirst, numberOfGames);
 
                 Dominion.Data.StrategyComparisonResults strategyComparisonResults = strategyComparison.ComparePlayers();               
