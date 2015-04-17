@@ -71,13 +71,17 @@ namespace Dominion
             {
                 setCards.Add(card);
             }
+            KeepOnlyKingdomCard(setCards);
+            
+            this.kingdomPiles = setCards.ToArray();
+        }
 
+        public static void KeepOnlyKingdomCard(HashSet<Card> setCards)
+        {
             foreach (Card card in cardsIncludedbyDefault)
             {
                 setCards.Remove(card);
             }
-
-            this.kingdomPiles = setCards.ToArray();
         }
 
         public static bool IsKingdomCard(Card card)

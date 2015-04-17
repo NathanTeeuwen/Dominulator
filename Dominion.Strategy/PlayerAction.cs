@@ -39,18 +39,23 @@ namespace Dominion.Strategy
 
         public static void SetKingdomCards(GameConfigBuilder builder, params PlayerAction[] players)
         {
-            var allCards = new List<Card>();
+            var allCards = new HashSet<Card>();
             foreach (PlayerAction player in players)
             {
-                AddCards(allCards, player.actionOrder);
-                AddCards(allCards, player.purchaseOrder);
-                AddCards(allCards, player.gainOrder);
+                AddAllCards(allCards, player);
             }
 
             builder.SetKingdomPiles(allCards);
         }
 
-        private static void AddCards(List<Card> cardSet, ICardPicker matchingCards)
+        public static void AddAllCards(HashSet<Card> cardSet, PlayerAction playerAction)
+        {
+            AddAllCards(cardSet, playerAction.actionOrder);
+            AddAllCards(cardSet, playerAction.purchaseOrder);
+            AddAllCards(cardSet, playerAction.gainOrder);
+        }
+
+        public static void AddAllCards(HashSet<Card> cardSet, ICardPicker matchingCards)
         {
             foreach (Card card in matchingCards.GetNeededCards())
             {

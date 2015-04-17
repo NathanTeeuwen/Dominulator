@@ -46,6 +46,12 @@ namespace Dominion.Strategy.Description
             return result;
         }
 
+        public void GetAllCardsInStrategy(System.Collections.Generic.HashSet<Card> cardSet)
+        {
+            Dominion.Strategy.PlayerAction playerAction = this.ToPlayerAction("GetAllCardsInStategy");
+            PlayerAction.AddAllCards(cardSet, playerAction);
+        }
+
         public override string ToString()
         {
             var writer = new System.IO.StringWriter();

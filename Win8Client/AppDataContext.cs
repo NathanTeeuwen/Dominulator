@@ -114,8 +114,8 @@ namespace Win8Client
 
             this.commonCards.PropertyChanged += AvailableCards_PropetyChanged;
             this.currentDeck.PropertyChanged += AvailableCards_PropetyChanged;
-            this.IsPlayer1StrategyChecked.PropertyChanged += Player1RadioButtonChecked;
-            this.IsPlayer2StrategyChecked.PropertyChanged += Player2RadioButtonChecked;
+            this.IsPlayer1StrategyChecked.PropertyChanged += PlayerRadioButtonChecked;
+            this.IsPlayer2StrategyChecked.PropertyChanged += PlayerRadioButtonChecked;
 
             //this.Use3OrMoreFromExpansions.PropertyChanged += Enable3orMoreFromExpansionsChangedEventHandler;
 
@@ -123,41 +123,73 @@ namespace Win8Client
             this.currentDeck.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
         }
 
-        private void Player1RadioButtonChecked(object sender, PropertyChangedEventArgs e)
+        private void PlayerRadioButtonChecked(object sender, PropertyChangedEventArgs e)
+        {
+            AttachCurrentStrategy();
+        }
+
+        private void AttachCurrentStrategy()
         {
             if (this.IsPlayer1StrategyChecked.Value)
             {
                 this.CurrentStrategy.Value = this.player1Strategy;
             }
-        }
-
-        private void Player2RadioButtonChecked(object sender, PropertyChangedEventArgs e)
-        {
-            if (this.IsPlayer2StrategyChecked.Value)
+            else if (this.IsPlayer2StrategyChecked.Value)
             {
                 this.CurrentStrategy.Value = this.player2Strategy;
             }
+            else
+                throw new System.Exception();
         }
 
         void AvailableCards_PropetyChanged(object sender, PropertyChangedEventArgs e)
         {
-            var listCards = new List<DominionCard>();
+            var setCards = new HashSet<Dominion.Card>();
             foreach (var card in this.currentDeck.Cards)
-            {
-                listCards.Add(card);
+            {                
+                setCards.Add(card.dominionCard);
             }
 
             foreach (var card in this.commonCards.Cards)
             {
-                listCards.Add(card);
+                setCards.Add(card.dominionCard);
             }
 
-            this.availableCards.Clear();
-            foreach (var card in listCards.OrderBy(c => c.Name))
+            this.player1Strategy.ConvertToDominionStrategy().GetAllCardsInStrategy(setCards);
+            this.player2Strategy.ConvertToDominionStrategy().GetAllCardsInStrategy(setCards);
+            
+            var extraCards = new List<DominionCard>();
+
+            foreach (var card in this.availableCards)
             {
-                this.availableCards.Add(card);
+                if (!setCards.Contains(card.dominionCard))
+                    extraCards.Add(card);
             }
+
+            foreach (var card in setCards)
+            {
+                var dominionCard = DominionCard.Create(card);
+                if (!this.availableCards.Contains(dominionCard))
+                    this.availableCards.Add(dominionCard);
+            }
+            
+            foreach (var card in extraCards)
+            {
+                this.availableCards.Remove(card);
+            }
+
+            // this sort method will order but cause items in strategy to be data bound empty
+            //Sort(this.availableCards, c => c.dominionCard.name);
         }
+
+        public static void Sort<T, T2>(System.Collections.ObjectModel.ObservableCollection<T> collection, System.Func<T, T2> func) 
+            where T2 : System.IComparable
+        {
+            List<T> sorted = collection.OrderBy(x => func(x)).ToList();
+            for (int i = 0; i < sorted.Count(); i++)
+                collection.Move(collection.IndexOf(sorted[i]), i);
+        }
+
 
         public SortableCardList AllCards
         {

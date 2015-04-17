@@ -19,7 +19,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <StackPanel Grid.Row="0" Background="Transparent" >
+            <StackPanel Grid.Row="0" Background="Transparent" AllowDrop="True" Drop="CurrentCardsListView_Drop">
                 <TextBlock FontSize="30">Strategies</TextBlock>
                 <StackPanel Margin="0,20,0,0" Orientation="Horizontal">
                     <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer1StrategyChecked.Value, Mode=TwoWay}">Player 1</RadioButton>
@@ -35,7 +35,7 @@
                 </StackPanel>
 
                 <!-- items control of System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> -->
-                <ListView Margin="0,20,0,0" Name="CurrentStrategyListView"  ItemsSource="{Binding CurrentStrategy.Value.CardAcceptanceDescriptions}" CanReorderItems="True" AllowDrop="True" Drop="CurrentCardsListView_Drop">
+                <ListView Margin="0,20,0,0" Name="CurrentStrategyListView"  ItemsSource="{Binding CurrentStrategy.Value.CardAcceptanceDescriptions}" CanReorderItems="True">
                     <ListView.Resources>
                         <local:ComparisonToIntegerConverter x:Key="ComparisonToIntegerConverter" />
                         <local:CountSourceToIntegerConverter x:Key="CountSourceToIntegerConverter" />
@@ -112,7 +112,7 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <StackPanel Background="Transparent" AllowDrop="True" Drop="CurrentCardsListView_Drop">
+                <StackPanel>
                     <TextBlock FontSize="20">Drag Cards here to include in strategy</TextBlock>
                     <StackPanel Height="20"/>
                     <StackPanel Orientation="Horizontal">

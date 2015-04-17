@@ -39,6 +39,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Nobles] = new Nobles(playerAction);
             result[Dominion.Cards.Rebuild] = new Rebuild(playerAction);
             result[Dominion.Cards.SpiceMerchant] = new SpiceMerchant(playerAction);
+            result[Dominion.Cards.Scavenger] = new Scavenger(playerAction);
             result[Dominion.Cards.ScryingPool] = new ScryingPool(playerAction);
             result[Dominion.Cards.Scheme] = new Scheme(playerAction);
             result[Dominion.Cards.Steward] = new Steward(playerAction);
