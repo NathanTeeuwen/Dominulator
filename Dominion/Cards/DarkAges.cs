@@ -1006,7 +1006,7 @@ namespace Dominion.CardTypes
         public static Squire card = new Squire();
 
         private Squire()
-            : base("Squire", Expansion.DarkAges, coinCost: 2, isAction: true, plusCoins: 1)
+            : base("Squire", Expansion.DarkAges, coinCost: 2, isAction: true, plusCoins: 1, canGivePlusAction:true)
         {
         }
 

@@ -139,7 +139,7 @@ namespace Dominion.CardTypes
         public static IronWorks card = new IronWorks();
 
         private IronWorks()
-            : base("IronWorks", Expansion.Intrigue, coinCost: 4, isAction:true)
+            : base("IronWorks", Expansion.Intrigue, coinCost: 4, isAction:true, canGivePlusAction:true)
         {
         }
 
@@ -281,7 +281,7 @@ namespace Dominion.CardTypes
         public static Nobles card = new Nobles();
 
         private Nobles()
-            : base("Nobles", Expansion.Intrigue, coinCost: 6, victoryPoints: playerState => 2, isAction: true)
+            : base("Nobles", Expansion.Intrigue, coinCost: 6, victoryPoints: playerState => 2, isAction: true, canGivePlusAction:true)
         {
         }
 
@@ -578,7 +578,7 @@ namespace Dominion.CardTypes
         public static Tribute card = new Tribute();
 
         private Tribute()
-            : base("Tribute", Expansion.Intrigue, coinCost: 5, isAction: true)
+            : base("Tribute", Expansion.Intrigue, coinCost: 5, isAction: true, canGivePlusAction:true)
         {
         }
 

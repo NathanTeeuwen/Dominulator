@@ -562,7 +562,7 @@ namespace Dominion.CardTypes
         public static Stables card = new Stables();
 
         private Stables()
-            : base("Stables", Expansion.Hinterlands, coinCost: 5, isAction: true)
+            : base("Stables", Expansion.Hinterlands, coinCost: 5, isAction: true, canGivePlusAction:true)
         {
         }
 

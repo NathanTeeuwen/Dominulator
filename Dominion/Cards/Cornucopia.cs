@@ -355,8 +355,9 @@ namespace Dominion.CardTypes
             int plusCoins = 0,
             int plusCards = 0,
             int plusBuy = 0,
-            int plusActions = 0)
-            : base(name, expansion, coinCost: 0, isAction: isAction, isTreasure: isTreasure, isAttack: isAttack, isPrize: true, plusCoins: plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions: plusActions)
+            int plusActions = 0,
+            bool canGivePlusAction = false)
+            : base(name, expansion, coinCost: 0, isAction: isAction, isTreasure: isTreasure, isAttack: isAttack, isPrize: true, plusCoins: plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions: plusActions, canGivePlusAction:canGivePlusAction)
         {
         }
     }
@@ -441,7 +442,7 @@ namespace Dominion.CardTypes
         public static new TrustySteed card = new TrustySteed();
 
         private TrustySteed()
-            : base("Trusty Steed", Expansion.Cornucopia, isAction: true)
+            : base("Trusty Steed", Expansion.Cornucopia, isAction: true, canGivePlusAction:true)
         {            
         }
 

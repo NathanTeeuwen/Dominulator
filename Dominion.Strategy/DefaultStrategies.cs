@@ -120,6 +120,11 @@ namespace Dominion.Strategy
                         return first.plusAction != 0 ? -1 : 1;
                     }
 
+                    if (first.canGivePlusAction ^ second.canGivePlusAction)
+                    {
+                        return first.canGivePlusAction ? -1 : 1;
+                    }
+
                     if (first.DefaultCoinCost != second.DefaultCoinCost)
                     {
                         return first.DefaultCoinCost - second.DefaultCoinCost;
