@@ -31,20 +31,36 @@
         </StackPanel>
         <ScrollViewer Grid.Row="1">
             <StackPanel Orientation="Vertical">
-                <ListView Name="SheltersListView" ItemsSource="{Binding ShelterCards.Cards}" SelectionMode="Multiple" SelectionChanged="SheltersListView_SelectionChanged" CanDragItems="True" DragItemsStarting="DragItemsStarting">
-                    <ListView.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
-                        </ItemsPanelTemplate>
-                    </ListView.ItemsPanel>
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel>
-                                <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                <StackPanel Orientation="Horizontal">                                    
+                    <ListView Name="SheltersListView" ItemsSource="{Binding ShelterCards.Cards}" SelectionMode="Multiple" SelectionChanged="SheltersListView_SelectionChanged" CanDragItems="True" DragItemsStarting="DragItemsStarting">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapGrid MaximumRowsOrColumns="3" Orientation="Horizontal"/>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <ListView Name="ColonyPlatinumListView" ItemsSource="{Binding ColonyPlatinumCards.Cards}" SelectionMode="Multiple" SelectionChanged="ColonyPlatinumListView_SelectionChanged" CanDragItems="True" DragItemsStarting="DragItemsStarting">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapGrid MaximumRowsOrColumns="2" Orientation="Horizontal"/>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackPanel>
                 <ListView Name="AllCardsListView" ItemsSource="{Binding AllCards.Cards}" SelectionMode="Multiple" SelectionChanged="AllCardsListView_SelectionChanged" CanDragItems="True" DragItemsStarting="DragItemsStarting">
                     <ListView.ItemsPanel>
                         <ItemsPanelTemplate>

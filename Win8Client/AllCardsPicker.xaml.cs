@@ -64,6 +64,29 @@ namespace Win8Client
             ignoreShelterChanges = false;
         }
 
+        private bool ignoreColonyPlatinumChanges = false;
+
+        private void ColonyPlatinumListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ignoreColonyPlatinumChanges)
+                return;
+
+            ignoreColonyPlatinumChanges = true;
+
+            if (e.RemovedItems.Any())
+            {
+                this.ColonyPlatinumListView.SelectedItems.Clear();
+                this.appDataContext.UseColonyPlatinum.Value = false;
+            }
+            else if (e.AddedItems.Any())
+            {
+                this.ColonyPlatinumListView.SelectAll();
+                this.appDataContext.UseColonyPlatinum.Value = true;
+            }
+
+            ignoreColonyPlatinumChanges = false;
+        }
+
         private void AllCardsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (this.AppDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates)

@@ -35,8 +35,10 @@ namespace Win8Client
             this.appDataContext.StrategyReport.PropertyChanged += StrategyReport_PropertyChanged;
             this.appDataContext.PageConfig.PropertyChanged += PageConfig_PropertyChanged;
             this.appDataContext.UseShelters.PropertyChanged += UpdateCommonCardsFromKingdom;
+            this.appDataContext.UseColonyPlatinum.PropertyChanged += UpdateCommonCardsFromKingdom;
 
             appDataContext.ShelterCards.PopulateShelters();
+            appDataContext.ColonyPlatinumCards.PopulateColonyPlatinum();
 
             appDataContext.AllCards.Populate().ContinueWith(
                 delegate(System.Threading.Tasks.Task task)
@@ -309,6 +311,14 @@ namespace Win8Client
             });
         }
 
+        public System.Threading.Tasks.Task PopulateColonyPlatinum()
+        {
+            return PopulatColonyPlatinumFromResources().ContinueWith(async (continuation) =>
+            {
+                await this.UpdateUI();
+            });
+        }
+
         public System.Threading.Tasks.Task PopulateCommon(Dominion.GameConfig gameConfig)
         {
             return PopulateCommonFromResources(gameConfig).ContinueWith(async (continuation) =>
@@ -323,6 +333,12 @@ namespace Win8Client
             {
                 this.originalCards.Add(DominionCard.Create(card));
             }
+        }
+
+        private async System.Threading.Tasks.Task PopulatColonyPlatinumFromResources()
+        {            
+            this.originalCards.Add(DominionCard.Create(Dominion.Cards.Platinum));
+            this.originalCards.Add(DominionCard.Create(Dominion.Cards.Colony));         
         }
 
         private async System.Threading.Tasks.Task PopulateFromResources()
