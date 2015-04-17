@@ -21,13 +21,21 @@
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="0" Background="Transparent" >
                 <TextBlock FontSize="30">Strategies</TextBlock>
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Margin="0,20,0,0" Orientation="Horizontal">
                     <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer1StrategyChecked.Value, Mode=TwoWay}">Player 1</RadioButton>
                     <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer2StrategyChecked.Value, Mode=TwoWay}">Player 2</RadioButton>
                 </StackPanel>
+                <StackPanel Margin="0,20,0,0" Orientation="Horizontal">
+                    <TextBlock FontSize="20">Openning Buying Power: </TextBlock>
+                    <RadioButton GroupName="OpenSplitRadioGroup" IsChecked="{Binding CurrentStrategy.Value.IsOpenRandomSplitChecked.Value, Mode=TwoWay}">Random</RadioButton>
+                    <RadioButton GroupName="OpenSplitRadioGroup" IsChecked="{Binding CurrentStrategy.Value.IsOpen2SplitChecked.Value, Mode=TwoWay}">2</RadioButton>
+                    <RadioButton GroupName="OpenSplitRadioGroup" IsChecked="{Binding CurrentStrategy.Value.IsOpen3SplitChecked.Value, Mode=TwoWay}">3</RadioButton>
+                    <RadioButton GroupName="OpenSplitRadioGroup" IsChecked="{Binding CurrentStrategy.Value.IsOpen4SplitChecked.Value, Mode=TwoWay}">4</RadioButton>
+                    <RadioButton GroupName="OpenSplitRadioGroup" IsChecked="{Binding CurrentStrategy.Value.IsOpen5SplitChecked.Value, Mode=TwoWay}">5</RadioButton>
+                </StackPanel>
 
                 <!-- items control of System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> -->
-                <ListView Name="CurrentStrategyListView"  ItemsSource="{Binding CurrentStrategy.Value.CardAcceptanceDescriptions}" CanReorderItems="True" AllowDrop="True" Drop="CurrentCardsListView_Drop">
+                <ListView Margin="0,20,0,0" Name="CurrentStrategyListView"  ItemsSource="{Binding CurrentStrategy.Value.CardAcceptanceDescriptions}" CanReorderItems="True" AllowDrop="True" Drop="CurrentCardsListView_Drop">
                     <ListView.Resources>
                         <local:ComparisonToIntegerConverter x:Key="ComparisonToIntegerConverter" />
                         <local:CountSourceToIntegerConverter x:Key="CountSourceToIntegerConverter" />

@@ -141,6 +141,9 @@ namespace Win8Client
             Dominion.Strategy.Description.StrategyDescription player1Descr = this.appDataContext.player1Strategy.ConvertToDominionStrategy();
             Dominion.Strategy.Description.StrategyDescription player2Descr = this.appDataContext.player2Strategy.ConvertToDominionStrategy();
 
+            Dominion.StartingCardSplit player1Split = this.appDataContext.player1Strategy.GetStartingCardSplit();
+            Dominion.StartingCardSplit player2Split = this.appDataContext.player2Strategy.GetStartingCardSplit();
+
             System.Diagnostics.Debug.WriteLine("Player 1: ");
             System.Diagnostics.Debug.WriteLine(player1Descr.ToString());
             System.Diagnostics.Debug.WriteLine("Player 2: ");
@@ -167,7 +170,7 @@ namespace Win8Client
 
                 builder.useColonyAndPlatinum = false;
                 builder.useShelters = false;
-                builder.CardSplit = Dominion.StartingCardSplit.Split43;
+                builder.SetCardSplitPerPlayer(new Dominion.StartingCardSplit[] { player1Split, player2Split });
 
                 bool rotateWhoStartsFirst = true;
                 int numberOfGames = 1000;

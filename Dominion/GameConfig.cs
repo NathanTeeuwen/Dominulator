@@ -134,6 +134,11 @@ namespace Dominion
             }
         }
 
+        public void SetCardSplitPerPlayer(StartingCardSplit[] splits)
+        {
+            this.shuffleLuck = GetStartingHandForSplit(splits);            
+        }
+
         public GameConfig ToGameConfig()
         {
             return new GameConfig(this.kingdomPiles, this.baneCard, this.useShelters, this.useColonyAndPlatinum, this.startingDeck, this.shuffleLuck);
@@ -155,6 +160,17 @@ namespace Dominion
                             new CardCountPair(Cards.Copper, 5)                            
                         };
 
+        static readonly CardCountPair[] Starting25Split = new CardCountPair[] {
+                            new CardCountPair(Cards.Copper, 2),
+                            new CardCountPair(Cards.Estate, 3)
+                        };
+        static readonly CardCountPair[] Starting25SplitShelter = new CardCountPair[] {
+                            new CardCountPair(Cards.Copper, 2),
+                            new CardCountPair(Cards.Necropolis, 1),
+                            new CardCountPair(Cards.Hovel, 1),
+                            new CardCountPair(Cards.OvergrownEstate, 1)
+                        };
+
         static readonly CardCountPair[] Starting43SplitEstate = new CardCountPair[] {
                             new CardCountPair(Cards.Copper, 4),
                             new CardCountPair(Cards.Estate, 1)
@@ -163,6 +179,17 @@ namespace Dominion
         static readonly CardCountPair[] Starting43SplitShelter = new CardCountPair[] {
                             new CardCountPair(Cards.Copper, 4),
                             new CardCountPair(Cards.Necropolis, 1)
+                        };
+
+        static readonly CardCountPair[] Starting34SplitEstate = new CardCountPair[] {
+                            new CardCountPair(Cards.Copper, 4),
+                            new CardCountPair(Cards.Estate, 1)
+                        };
+
+        static readonly CardCountPair[] Starting34SplitShelter = new CardCountPair[] {
+                            new CardCountPair(Cards.Copper, 3),
+                            new CardCountPair(Cards.OvergrownEstate, 1),
+                            new CardCountPair(Cards.Hovel, 1)
                         };
 
         static IEnumerable<CardCountPair> GetDefaultStartingDeck(int playerPosition, GameConfig gameConfig)
@@ -179,15 +206,31 @@ namespace Dominion
         {
             return delegate(int playerIndex, GameConfig gameConfig)
             {
-                switch (split)
-                {
-                    case StartingCardSplit.Random: return null;
-                    case StartingCardSplit.Split52: return Starting52Split;
-                    case StartingCardSplit.Split43: return gameConfig.useShelters ? Starting43SplitShelter : Starting43SplitEstate;
-                    default:
-                        throw new Exception();
-                }
+                return GetCardsForSplit(split, gameConfig);                
             };
+        }
+
+        static MapPlayerGameConfigToCardSet GetStartingHandForSplit(StartingCardSplit[] splits)
+        {
+            return delegate(int playerIndex, GameConfig gameConfig)
+            {
+                return GetCardsForSplit(splits[playerIndex], gameConfig);
+            };
+        }
+
+        private static CardCountPair[] GetCardsForSplit(StartingCardSplit split, GameConfig gameConfig)
+        {
+            switch (split)
+            {
+                case StartingCardSplit.Random: return null;
+                case StartingCardSplit.Split52: return Starting52Split;
+                case StartingCardSplit.Split43: return gameConfig.useShelters ? Starting43SplitShelter : Starting43SplitEstate;
+                case StartingCardSplit.Split25: return gameConfig.useShelters ? Starting25SplitShelter : Starting25Split;
+                case StartingCardSplit.Split34: return gameConfig.useShelters ? Starting34SplitShelter : Starting34SplitEstate;
+
+                default:
+                    throw new Exception();
+            }
         }
 
         static MapPlayerGameConfigToCardSet GetCardSetSameForAllPlayers(IEnumerable<CardCountPair> cards)
