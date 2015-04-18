@@ -37,6 +37,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Mystic] = new MysticAndWishingWell(playerAction);
             result[Dominion.Cards.NomadCamp] = new NomadCamp(playerAction);
             result[Dominion.Cards.Nobles] = new Nobles(playerAction);
+            result[Dominion.Cards.PearlDiver] = new PearlDiver(playerAction);
             result[Dominion.Cards.Rebuild] = new Rebuild(playerAction);
             result[Dominion.Cards.SpiceMerchant] = new SpiceMerchant(playerAction);
             result[Dominion.Cards.Scavenger] = new Scavenger(playerAction);

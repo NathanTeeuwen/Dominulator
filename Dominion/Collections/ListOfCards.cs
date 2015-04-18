@@ -108,6 +108,7 @@ namespace Dominion
             if (bottomCard != null)
             {
                 this.cards.RemoveAt(0);
+                base.Remove(bottomCard);
                 this.AddCardToTop(bottomCard);
             }
             return bottomCard;

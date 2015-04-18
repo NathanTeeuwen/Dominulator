@@ -211,6 +211,7 @@ namespace Dominion.Strategy
         public static CardPickByPriority DefaultDiscardOrder()
         {
             return new CardPickByPriority(
+                CardAcceptance.For(Cards.Colony),
                 CardAcceptance.For(Cards.Province),
                 CardAcceptance.For(Cards.Duchy),
                 CardAcceptance.For(Cards.Estate),
