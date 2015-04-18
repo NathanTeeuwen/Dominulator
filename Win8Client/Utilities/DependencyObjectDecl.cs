@@ -63,7 +63,7 @@ namespace Win8Client
         public static readonly DependencyProperty DependencyProperty = DependencyProperty.Register(
             "Value",
             typeof(T),
-            typeof(AppDataContext),
+            typeof(DependencyObjectDecl<T, T2>),
             new PropertyMetadata(Policy.DefaultValue, PropertyChangedCallback)
         );
 
@@ -122,6 +122,18 @@ namespace Win8Client
         }
     }
 
+    class DefaultSplit4
+        : DependencyPolicy<Dominion.StartingCardSplit>
+    {
+        public Dominion.StartingCardSplit DefaultValue
+        {
+            get
+            {
+                return Dominion.StartingCardSplit.Split43;
+            }
+        }
+    }
+
     class DefaultEmptyString
         : DependencyPolicy<string>
     {
@@ -156,5 +168,5 @@ namespace Win8Client
                 return new StrategyDescription();
             }
         }
-    }
+    }   
 }

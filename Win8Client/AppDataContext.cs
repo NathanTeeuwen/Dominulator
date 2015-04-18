@@ -113,34 +113,11 @@ namespace Win8Client
             }
 
             this.commonCards.PropertyChanged += AvailableCards_PropetyChanged;
-            this.currentDeck.PropertyChanged += AvailableCards_PropetyChanged;
-            this.IsPlayer1StrategyChecked.PropertyChanged += PlayerRadioButtonChecked;
-            this.IsPlayer2StrategyChecked.PropertyChanged += PlayerRadioButtonChecked;
-
-            //this.Use3OrMoreFromExpansions.PropertyChanged += Enable3orMoreFromExpansionsChangedEventHandler;
+            this.currentDeck.PropertyChanged += AvailableCards_PropetyChanged;            
 
             this.allCards.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
             this.currentDeck.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
-        }
-
-        private void PlayerRadioButtonChecked(object sender, PropertyChangedEventArgs e)
-        {
-            AttachCurrentStrategy();
-        }
-
-        private void AttachCurrentStrategy()
-        {
-            if (this.IsPlayer1StrategyChecked.Value)
-            {
-                this.CurrentStrategy.Value = this.player1Strategy;
-            }
-            else if (this.IsPlayer2StrategyChecked.Value)
-            {
-                this.CurrentStrategy.Value = this.player2Strategy;
-            }
-            else
-                throw new System.Exception();
-        }
+        }              
 
         void AvailableCards_PropetyChanged(object sender, PropertyChangedEventArgs e)
         {
@@ -267,8 +244,8 @@ namespace Win8Client
         public Dominion.GameConfig GetGameConfig()
         {
 
-            Dominion.StartingCardSplit player1Split = this.player1Strategy.GetStartingCardSplit();
-            Dominion.StartingCardSplit player2Split = this.player2Strategy.GetStartingCardSplit();
+            Dominion.StartingCardSplit player1Split = this.player1Strategy.StartingCardSplit.Value;
+            Dominion.StartingCardSplit player2Split = this.player2Strategy.StartingCardSplit.Value;
             Dominion.Card[] kingdomCards = this.currentDeck.Cards.Select(c => c.dominionCard).ToArray();
 
             var builder = new Dominion.GameConfigBuilder();

@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Win8Client"
+    xmlns:dominion="using:Dominion"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
@@ -14,6 +15,7 @@
         <Grid>
             <Grid.Resources>
                 <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+                <local:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />                
             </Grid.Resources>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -22,16 +24,16 @@
             <StackPanel Grid.Row="0" Background="Transparent" AllowDrop="True" Drop="CurrentCardsListView_Drop">
                 <TextBlock FontSize="30">Strategies</TextBlock>
                 <StackPanel Margin="0,20,0,0" Orientation="Horizontal">
-                    <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer1StrategyChecked.Value, Mode=TwoWay}">Player 1</RadioButton>
-                    <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer2StrategyChecked.Value, Mode=TwoWay}">Player 2</RadioButton>
+                    <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer1StrategyChecked.Value, Mode=TwoWay}" Checked="PlayerRadioButtonChecked">Player 1</RadioButton>
+                    <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer2StrategyChecked.Value, Mode=TwoWay}" Checked="PlayerRadioButtonChecked2">Player 2</RadioButton>
                 </StackPanel>
                 <StackPanel Margin="0,20,0,0" Orientation="Horizontal">
                     <TextBlock FontSize="20">Openning Buying Power: </TextBlock>
-                    <RadioButton GroupName="OpenSplitRadioGroup" IsChecked="{Binding CurrentStrategy.Value.IsOpenRandomSplitChecked.Value, Mode=TwoWay}">Random</RadioButton>
-                    <RadioButton GroupName="OpenSplitRadioGroup" IsChecked="{Binding CurrentStrategy.Value.IsOpen2SplitChecked.Value, Mode=TwoWay}">2</RadioButton>
-                    <RadioButton GroupName="OpenSplitRadioGroup" IsChecked="{Binding CurrentStrategy.Value.IsOpen3SplitChecked.Value, Mode=TwoWay}">3</RadioButton>
-                    <RadioButton GroupName="OpenSplitRadioGroup" IsChecked="{Binding CurrentStrategy.Value.IsOpen4SplitChecked.Value, Mode=TwoWay}">4</RadioButton>
-                    <RadioButton GroupName="OpenSplitRadioGroup" IsChecked="{Binding CurrentStrategy.Value.IsOpen5SplitChecked.Value, Mode=TwoWay}">5</RadioButton>
+                    <RadioButton Name="OpenRandomRadioButton" GroupName="OpenSplitRadioGroup" Checked="OpenSplitRandom_Checked">Random</RadioButton>
+                    <RadioButton Name="Open2RadioButton" GroupName="OpenSplitRadioGroup" Checked="OpenSplit2_Checked">2</RadioButton>
+                    <RadioButton Name="Open3RadioButton" GroupName="OpenSplitRadioGroup" Checked="OpenSplit3_Checked">3</RadioButton>
+                    <RadioButton Name="Open4RadioButton" GroupName="OpenSplitRadioGroup" Checked="OpenSplit4_Checked">4</RadioButton>
+                    <RadioButton Name="Open5RadioButton" GroupName="OpenSplitRadioGroup" Checked="OpenSplit5_Checked">5</RadioButton>
                 </StackPanel>
 
                 <!-- items control of System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> -->

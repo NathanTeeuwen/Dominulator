@@ -609,6 +609,19 @@ namespace Win8Client
             throw new NotImplementedException();
         }
     }
+
+    public class EnumToBooleanConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            return ((Dominion.StartingCardSplit)value).HasFlag((Dominion.StartingCardSplit)int.Parse((string)parameter));
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }                    
                      
                      
