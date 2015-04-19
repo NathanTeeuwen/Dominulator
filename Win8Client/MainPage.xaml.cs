@@ -19,6 +19,8 @@ namespace Win8Client
 {
     public sealed partial class MainPage : Page
     {
+        public static Random random = new System.Random();
+
         AppDataContext appDataContext;
 
         public MainPage()
@@ -165,7 +167,7 @@ namespace Win8Client
         {            
             this.appDataContext.CardVisibility.Value =
                 this.appDataContext.CardVisibility.Value == CardVisibility.All ? CardVisibility.Current: CardVisibility.All;
-        }
+        }        
 
         private void ReportButton_Click(object sender, RoutedEventArgs e)
         {

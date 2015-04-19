@@ -8,8 +8,7 @@ using Generic = System.Collections.Generic;
 namespace Win8Client
 {
     class UniqueCardPicker
-    {
-        Random random = new System.Random();
+    {        
         Generic.Dictionary<DominionCard, bool> excludes;
         IList<DominionCard> allCards;
         int[] remainingCards;
@@ -46,7 +45,7 @@ namespace Win8Client
         {
             while (maxIndex > 0)
             {
-                int resultCardIndex = NumberBetweenInclusive(this.random, 0, maxIndex);
+                int resultCardIndex = NumberBetweenInclusive(MainPage.random, 0, maxIndex);
                 DominionCard currentCard = this.allCards[remainingCards[resultCardIndex]];
                 remainingCards[resultCardIndex] = remainingCards[maxIndex];
                 --maxIndex;
