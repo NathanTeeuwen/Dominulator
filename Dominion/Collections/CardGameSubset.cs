@@ -10,7 +10,7 @@ namespace Dominion
     public class CardGameSubset
         : IEnumerable<Card>
     {
-        static private readonly int countSupportedCards = 250;
+        static private readonly int countSupportedCards = 300;
         static private readonly int sentinelIndex = -1;
         private int nextIndex = 0;
         private int[] mapCardIndexToSubsetIndex = new int[countSupportedCards];

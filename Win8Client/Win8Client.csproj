@@ -340,6 +340,7 @@
     <Content Include="Resources\Loan.jpg" />
     <Content Include="Resources\Lookout.jpg" />
     <Content Include="Resources\Lost_Arts.jpg" />
+    <Content Include="Resources\Lost_City.jpg" />
     <Content Include="Resources\Madman.jpg" />
     <Content Include="Resources\Magpie.jpg" />
     <Content Include="Resources\Mandarin.jpg" />
@@ -455,6 +456,7 @@
     <Content Include="Resources\Steward.jpg" />
     <Content Include="Resources\Stonemason.jpg" />
     <Content Include="Resources\Storeroom.jpg" />
+    <Content Include="Resources\Storyteller.jpg" />
     <Content Include="Resources\Survivors.jpg" />
     <Content Include="Resources\Swamp_Hag.jpg" />
     <Content Include="Resources\Swindler.jpg" />

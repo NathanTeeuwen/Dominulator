@@ -241,13 +241,13 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Artificier
+    public class Artificer
         : Card
     {
-        public static Artificier card = new Artificier();
+        public static Artificer card = new Artificer();
 
-        private Artificier()
-            : base("Artificier", Expansion.Adventures, coinCost: 5, plusCoins: 1, plusCards:1, plusActions:1, isAction: true)
+        private Artificer()
+            : base("Artificer", Expansion.Adventures, coinCost: 5, plusCoins: 1, plusCards:1, plusActions:1, isAction: true)
         {
         }
 
@@ -257,13 +257,13 @@ namespace Dominion.CardTypes
         }        
     }
 
-    public class BridgeToll
+    public class BridgeTroll
        : Card
     {
-        public static BridgeToll card = new BridgeToll();
+        public static BridgeTroll card = new BridgeTroll();
 
-        private BridgeToll()
-            : base("BridgeToll", Expansion.Adventures, coinCost: 5, plusBuy:1, isAction: true, isDuration:true)
+        private BridgeTroll()
+            : base("Bridge Troll", Expansion.Adventures, coinCost: 5, plusBuy:1, isAction: true, isDuration:true)
         {
         }
 
@@ -295,7 +295,7 @@ namespace Dominion.CardTypes
         public static Champion card = new Champion();
 
         private Champion()
-            : base("Champion", Expansion.Adventures, coinCost: 6, isAction: true, isDuration: true, plusActions:1)
+            : base("Champion", Expansion.Adventures, coinCost: 6, isAction: true, isDuration: true, plusActions:1, isKingdomCard:false)
         {
         }
 
@@ -327,7 +327,7 @@ namespace Dominion.CardTypes
         public static Disciple card = new Disciple();
 
         private Disciple()
-            : base("Disciple", Expansion.Adventures, coinCost: 5, isAction: true)
+            : base("Disciple", Expansion.Adventures, coinCost: 5, isAction: true, isKingdomCard:false)
         {
         }
 
@@ -391,7 +391,7 @@ namespace Dominion.CardTypes
         public static Fugitive card = new Fugitive();
 
         private Fugitive()
-            : base("Fugitive", Expansion.Adventures, coinCost: 4, isAction: true, plusCards:2, plusActions:1)
+            : base("Fugitive", Expansion.Adventures, coinCost: 4, isAction: true, plusCards:2, plusActions:1, isKingdomCard:false)
         {
         }        
 
@@ -471,7 +471,7 @@ namespace Dominion.CardTypes
         public static Hero card = new Hero();
 
         private Hero()
-            : base("Hero", Expansion.Adventures, coinCost: 5, plusCoins: 2, isAction: true, isTraveller:true)
+            : base("Hero", Expansion.Adventures, coinCost: 5, plusCoins: 2, isAction: true, isTraveller:true, isKingdomCard:false)
         {
         }
 
@@ -677,7 +677,7 @@ namespace Dominion.CardTypes
         public static RatCatcher card = new RatCatcher();
 
         private RatCatcher()
-            : base("Rat Catcher", Expansion.Adventures, coinCost: 2, isReserve:true, isAction: true, plusCards:1, plusActions:1)
+            : base("Ratcatcher", Expansion.Adventures, coinCost: 2, isReserve:true, isAction: true, plusCards:1, plusActions:1)
         {
         }        
 
@@ -741,7 +741,7 @@ namespace Dominion.CardTypes
         public static Solider card = new Solider();
 
         private Solider()
-            : base("Solider", Expansion.Adventures, coinCost: 3, isAction:true, plusCoins:2)
+            : base("Solider", Expansion.Adventures, coinCost: 3, isAction:true, plusCoins:2, isKingdomCard:false)
         {
         }        
 
@@ -797,7 +797,7 @@ namespace Dominion.CardTypes
         public static Teacher card = new Teacher();
 
         private Teacher()
-            : base("Teacher", Expansion.Adventures, coinCost: 6, isAction:true)
+            : base("Teacher", Expansion.Adventures, coinCost: 6, isAction:true, isKingdomCard:false)
         {
         }        
 
@@ -807,13 +807,13 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Transmorgrify
+    public class Transmogrify
        : Card
     {
-        public static Transmorgrify card = new Transmorgrify();
+        public static Transmogrify card = new Transmogrify();
 
-        private Transmorgrify()
-            : base("Transmorgrify", Expansion.Adventures, coinCost: 4, isAction: true, isReserve:true, plusActions:1)
+        private Transmogrify()
+            : base("Transmogrify", Expansion.Adventures, coinCost: 4, isAction: true, isReserve:true, plusActions:1)
         {
         }
 
@@ -829,7 +829,7 @@ namespace Dominion.CardTypes
         public static TreasureHunter card = new TreasureHunter();
 
         private TreasureHunter()
-            : base("Treasure Hunter", Expansion.Adventures, coinCost: 3, isAction:true, plusActions:1, plusCoins:1)
+            : base("Treasure Hunter", Expansion.Adventures, coinCost: 3, isAction:true, plusActions:1, plusCoins:1, isKingdomCard:false)
         {
         }        
 
@@ -861,7 +861,7 @@ namespace Dominion.CardTypes
         public static Warrior card = new Warrior();
 
         private Warrior()
-            : base("Warrior", Expansion.Adventures, coinCost: 4, isAction:true, plusCards:2)
+            : base("Warrior", Expansion.Adventures, coinCost: 4, isAction:true, plusCards:2, isKingdomCard:false)
         {
         }        
 
