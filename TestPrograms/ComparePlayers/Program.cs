@@ -16,7 +16,7 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.BigMoneyWithCard.Player(Cards.PearlDiver, cardCount:2);
+                var player1 = Strategies.BigMoneyWithCard.Player(Cards.Magpie, cardCount:10);
                 var player2 = Strategies.BigMoneyWithCard.Player(Cards.Gold);                
                 
                 var builder = new GameConfigBuilder();

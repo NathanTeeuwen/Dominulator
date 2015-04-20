@@ -29,7 +29,30 @@ namespace Dominion.Strategy
             Cards.Squire,            
             Cards.StoneMason,
             Cards.Torturer,
-            Cards.Tournament,              
+            Cards.Tournament,       
+       
+            // events
+
+            Cards.Alms,
+            Cards.Ball,
+            Cards.Borrow,
+            Cards.Bonfire,
+            Cards.Expedition,
+            Cards.Ferry,
+            Cards.Inheritance,
+            Cards.LostArts,
+            Cards.Mission,
+            Cards.PathFinding,
+            Cards.Pilgrimage,
+            Cards.Plan,
+            Cards.Quest,
+            Cards.Raid,
+            Cards.Save,
+            Cards.ScoutingParty,
+            Cards.Seaway,
+            Cards.Trade,
+            Cards.Training,
+            Cards.TravellingFair
         };
 
         public static IEnumerable<Card> FullyImplementedKingdomCards()

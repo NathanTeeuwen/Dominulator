@@ -3,17 +3,15 @@
 namespace Dominion.CardTypes
 {
     using Dominion;
-
-    public class Event 
-        : Card
+  
+    public class Alms
+        : Event
     {
-        protected Event(
-            string name,
-            Expansion expansion,
-            string pluralName = null)
-            : base(name:name, expansion:expansion, coinCost:0, isEvent:true, pluralName:null)
-        {
+        public static Alms card = new Alms();
 
+        private Alms()
+            : base("Alms", Expansion.Adventures)
+        {
         }
     }
 
@@ -24,6 +22,17 @@ namespace Dominion.CardTypes
 
         private Ball()
             : base("Ball", Expansion.Adventures)
+        {
+        }
+    }
+
+    public class Borrow
+        : Event
+    {
+        public static Borrow card = new Borrow();
+
+        private Borrow()
+            : base("Borrow", Expansion.Adventures)
         {
         }
     }
@@ -39,6 +48,17 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Expedition
+        : Event
+    {
+        public static Expedition card = new Expedition();
+
+        private Expedition()
+            : base("Expedition", Expansion.Adventures)
+        {
+        }
+    }
+
     public class Ferry
         : Event
     {
@@ -46,6 +66,39 @@ namespace Dominion.CardTypes
 
         private Ferry()
             : base("Ferry", Expansion.Adventures)
+        {
+        }
+    }
+
+    public class Inheritance
+        : Event
+    {
+        public static Inheritance card = new Inheritance();
+
+        private Inheritance()
+            : base("Inheritance", Expansion.Adventures)
+        {
+        }
+    }
+
+    public class LostArts
+        : Event
+    {
+        public static LostArts card = new LostArts();
+
+        private LostArts()
+            : base("LostArts", Expansion.Adventures)
+        {
+        }
+    }
+
+    public class Mission
+        : Event
+    {
+        public static Mission card = new Mission();
+
+        private Mission()
+            : base("Mission", Expansion.Adventures)
         {
         }
     }
@@ -83,6 +136,17 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Quest
+        : Event
+    {
+        public static Quest card = new Quest();
+
+        private Quest()
+            : base("Quest", Expansion.Adventures)
+        {
+        }
+    }
+
     public class Raid
         : Event
     {
@@ -105,6 +169,17 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class ScoutingParty
+        : Event
+    {
+        public static ScoutingParty card = new ScoutingParty();
+
+        private ScoutingParty()
+            : base("ScoutingParty", Expansion.Adventures)
+        {
+        }
+    }
+
     public class Seaway
         : Event
     {
@@ -116,6 +191,16 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Trade
+        : Event
+    {
+        public static Trade card = new Trade();
+
+        private Trade()
+            : base("Trade", Expansion.Adventures)
+        {
+        }
+    }
 
     public class Training
         : Event

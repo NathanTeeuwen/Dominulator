@@ -421,8 +421,9 @@ namespace Win8Client
         Promo = 7,
         Prosperity = 8,
         Seaside = 9,
-        _Unknown = 10,
-        _Count = 11
+        Adventures = 10,
+        _Unknown = 11,
+        _Count = 12
     }
 
     class Expansion         

@@ -78,58 +78,19 @@ namespace Dominion
 
         public static void KeepOnlyKingdomCard(HashSet<Card> setCards)
         {
-            foreach (Card card in cardsIncludedbyDefault)
+            var cardsToRemove = new List<Card>();
+            foreach (Card card in setCards)
+            {
+                if (!card.isKingdomCard)
+                    cardsToRemove.Add(card);                
+            }
+
+            foreach(var card in cardsToRemove)
             {
                 setCards.Remove(card);
             }
         }
-
-        public static bool IsKingdomCard(Card card)
-        {
-            if (cardsIncludedbyDefault.Contains(card))
-                return false;
-
-            return true;
-        }
-
-        static readonly Card[] cardsIncludedbyDefault = new Card[] { 
-                // treaures
-                Cards.Platinum,
-                Cards.Gold,
-                Cards.Silver,
-                Cards.Copper,                
-                Cards.Potion,
-                // victory
-                Cards.Colony,
-                Cards.Province,
-                Cards.Duchy,
-                Cards.Estate,
-                Cards.Curse,                
-                // ruins
-                Cards.AbandonedMine,
-                Cards.RuinedLibrary,
-                Cards.RuinedVillage,
-                Cards.RuinedMarket,
-                Cards.Survivors,
-                // shelters
-                Cards.OvergrownEstate,
-                Cards.Hovel,
-                Cards.Necropolis,
-                // non-supply piles
-                Cards.Spoils,                
-                Cards.Madman,
-                Cards.Mercenary,
-                // tournament prizes
-                Cards.BagOfGold, 
-                Cards.Diadem, 
-                Cards.Followers, 
-                Cards.Princess, 
-                Cards.TrustySteed,
-                // base classes that should not be used
-                Cards.Ruins,
-                Cards.Prize
-            };
-
+    
         public StartingCardSplit CardSplit
         {
             set

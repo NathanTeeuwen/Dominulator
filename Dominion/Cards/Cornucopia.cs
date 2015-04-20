@@ -357,7 +357,7 @@ namespace Dominion.CardTypes
             int plusBuy = 0,
             int plusActions = 0,
             bool canGivePlusAction = false)
-            : base(name, expansion, coinCost: 0, isAction: isAction, isTreasure: isTreasure, isAttack: isAttack, isPrize: true, plusCoins: plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions: plusActions, canGivePlusAction:canGivePlusAction)
+            : base(name, expansion, coinCost: 0, isAction: isAction, isTreasure: isTreasure, isAttack: isAttack, isPrize: true, plusCoins: plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions: plusActions, canGivePlusAction: canGivePlusAction, isKingdomCard: false)
         {
         }
     }

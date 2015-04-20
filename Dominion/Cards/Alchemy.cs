@@ -9,8 +9,8 @@ namespace Dominion.CardTypes
     { 
         public static Potion card = new Potion();
 
-        private Potion() 
-            : base("Potion", Expansion.Alchemy, coinCost: 4, isTreasure:true) 
+        private Potion()
+            : base("Potion", Expansion.Alchemy, coinCost: 4, isTreasure: true, isKingdomCard: false) 
         { 
         }
 

@@ -14,8 +14,8 @@ namespace Dominion.CardTypes
     { 
         public static Colony card = new Colony();
 
-        private Colony() 
-            : base("Colony", Expansion.Prosperity, coinCost: 11, victoryPoints: playerState => 10) 
+        private Colony()
+            : base("Colony", Expansion.Prosperity, coinCost: 11, victoryPoints: playerState => 10, isKingdomCard: false) 
         { 
         } 
     }
@@ -26,7 +26,7 @@ namespace Dominion.CardTypes
         public static Platinum card = new Platinum();
 
         private Platinum() 
-            : base("Platinum", Expansion.Prosperity, coinCost: 9, plusCoins: 5, isTreasure: true) 
+            : base("Platinum", Expansion.Prosperity, coinCost: 9, plusCoins: 5, isTreasure: true, isKingdomCard:false) 
         { 
         } 
     }

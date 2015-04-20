@@ -36,7 +36,7 @@ namespace TestAllCardsWithBigMoney
                     if (card == null)
                         continue;
 
-                    if (!GameConfigBuilder.IsKingdomCard(card))
+                    if (!card.isKingdomCard)
                     {
                         continue;
                     }

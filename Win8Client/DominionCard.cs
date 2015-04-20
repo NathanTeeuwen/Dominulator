@@ -105,6 +105,7 @@ namespace Win8Client
                 case Dominion.Expansion.Promo: return ExpansionIndex.Promo;
                 case Dominion.Expansion.Prosperity: return ExpansionIndex.Prosperity;
                 case Dominion.Expansion.Seaside: return ExpansionIndex.Seaside;
+                case Dominion.Expansion.Adventures: return ExpansionIndex.Adventures;
                 case Dominion.Expansion.Unknown: return ExpansionIndex._Unknown;
             }
             throw new Exception("Expansion not found");

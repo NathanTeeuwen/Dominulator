@@ -167,6 +167,7 @@ namespace Dominion
         public static readonly CardTypes.Possession Possession = CardTypes.Possession.card;
         public static readonly CardTypes.Potion Potion = CardTypes.Potion.card;
         public static readonly CardTypes.Princess Princess = CardTypes.Princess.card;
+        public static readonly CardTypes.Prince Prince = CardTypes.Prince.card;
         public static readonly CardTypes.Prize Prize = CardTypes.Prize.card;
         public static readonly CardTypes.Procession Procession = CardTypes.Procession.card;
         public static readonly CardTypes.Province Province = CardTypes.Province.card;
@@ -245,6 +246,29 @@ namespace Dominion
         public static readonly CardTypes.Workshop Workshop = CardTypes.Workshop.card;
         public static readonly CardTypes.YoungWitch YoungWitch = CardTypes.YoungWitch.card;
 
+        // Events
+
+        public static readonly CardTypes.Alms Alms = CardTypes.Alms.card;
+        public static readonly CardTypes.Ball Ball = CardTypes.Ball.card;
+        public static readonly CardTypes.Borrow Borrow = CardTypes.Borrow.card;
+        public static readonly CardTypes.Bonfire Bonfire = CardTypes.Bonfire.card;
+        public static readonly CardTypes.Expedition Expedition = CardTypes.Expedition.card;
+        public static readonly CardTypes.Ferry Ferry = CardTypes.Ferry.card;
+        public static readonly CardTypes.Inheritance Inheritance = CardTypes.Inheritance.card;
+        public static readonly CardTypes.LostArts LostArts = CardTypes.LostArts.card;
+        public static readonly CardTypes.Mission Mission = CardTypes.Mission.card;
+        public static readonly CardTypes.PathFinding PathFinding = CardTypes.PathFinding.card;
+        public static readonly CardTypes.Pilgrimage Pilgrimage = CardTypes.Pilgrimage.card;
+        public static readonly CardTypes.Plan Plan = CardTypes.Plan.card;
+        public static readonly CardTypes.Quest Quest = CardTypes.Quest.card;
+        public static readonly CardTypes.Raid Raid = CardTypes.Raid.card;
+        public static readonly CardTypes.Save Save = CardTypes.Save.card;
+        public static readonly CardTypes.ScoutingParty ScoutingParty = CardTypes.ScoutingParty.card;
+        public static readonly CardTypes.Seaway Seaway = CardTypes.Seaway.card;
+        public static readonly CardTypes.Trade Trade = CardTypes.Trade.card;
+        public static readonly CardTypes.Training Training = CardTypes.Training.card;
+        public static readonly CardTypes.TravellingFair TravellingFair = CardTypes.TravellingFair.card;
+
         /* 
         public static void PrintAllCards()
         {            
@@ -282,7 +306,7 @@ namespace Dominion
             var result = new List<Card>();
             foreach (Card card in AllCards())
             {
-                if (GameConfigBuilder.IsKingdomCard(card))
+                if (card.isKingdomCard)
                     result.Add(card);
             }
 
@@ -447,6 +471,7 @@ namespace Dominion
             Cards.Possession,
             Cards.Potion,
             Cards.Princess,
+            Cards.Prince,
             Cards.Prize,
             Cards.Procession,
             Cards.Province,
@@ -523,6 +548,29 @@ namespace Dominion
             Cards.WorkersVillage,
             Cards.Workshop,
             Cards.YoungWitch,
+
+            // events
+
+            Cards.Alms,
+            Cards.Ball,
+            Cards.Borrow,
+            Cards.Bonfire,
+            Cards.Expedition,
+            Cards.Ferry,
+            Cards.Inheritance,
+            Cards.LostArts,
+            Cards.Mission,
+            Cards.PathFinding,
+            Cards.Pilgrimage,
+            Cards.Plan,
+            Cards.Quest,
+            Cards.Raid,
+            Cards.Save,
+            Cards.ScoutingParty,
+            Cards.Seaway,
+            Cards.Trade,
+            Cards.Training,
+            Cards.TravellingFair
         };
   
         public static Card[] UnimplementedCards = new Card[]
@@ -531,7 +579,30 @@ namespace Dominion
             Cards.BandOfMisfits,
             Cards.BlackMarket,
             Cards.Hero,
-            Cards.Possession
+            Cards.Possession,
+            Cards.Prince,
+
+            // events
+            Cards.Alms,
+            Cards.Ball,
+            Cards.Borrow,
+            Cards.Bonfire,
+            Cards.Expedition,
+            Cards.Ferry,
+            Cards.Inheritance,
+            Cards.LostArts,
+            Cards.Mission,
+            Cards.PathFinding,
+            Cards.Pilgrimage,
+            Cards.Plan,
+            Cards.Quest,
+            Cards.Raid,
+            Cards.Save,
+            Cards.ScoutingParty,
+            Cards.Seaway,
+            Cards.Trade,
+            Cards.Training,
+            Cards.TravellingFair
         };        
     }   
 }

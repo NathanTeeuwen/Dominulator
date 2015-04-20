@@ -115,6 +115,22 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Prince
+       : Card
+    {
+        public static Prince card = new Prince();
+
+        private Prince()
+            : base("Prince", Expansion.Promo, coinCost: 8, isAction:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     public class Stash
        : Card
     {
