@@ -33,6 +33,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Masquerade] = new Masquerade(playerAction);
             result[Dominion.Cards.MarketSquare] = new MarketSquare(playerAction);
             result[Dominion.Cards.Masterpiece] = new Masterpiece(playerAction);
+            result[Dominion.Cards.Messenger] = new Messenger(playerAction);
             result[Dominion.Cards.Mint] = new Mint(playerAction);
             result[Dominion.Cards.Mystic] = new MysticAndWishingWell(playerAction);
             result[Dominion.Cards.NomadCamp] = new NomadCamp(playerAction);

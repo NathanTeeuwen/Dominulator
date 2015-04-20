@@ -64,7 +64,31 @@ namespace Win8Client
         public void Randomize10Cards()
         {
             var selectedItems = this.CurrentCardsListView.SelectedItems.Select(item => (DominionCard)item).ToArray<DominionCard>();
-            this.appDataContext.CurrentDeck.Generate10Random(this.appDataContext.AllCards.Cards, itemsToReplace: selectedItems);
+
+            bool useShelter = this.appDataContext.UseShelters.Value;
+            bool useColony = this.appDataContext.UseColonyPlatinum.Value;
+            DominionCard baneCard = this.appDataContext.BaneCards.CurrentCards.FirstOrDefault();
+
+            bool isCleanRoll = this.appDataContext.CurrentDeck.Generate10Random(ref baneCard, this.appDataContext.AllCards.Cards, itemsToReplace: selectedItems);
+            this.appDataContext.BaneCards.PopulateBaneCard(baneCard);            
+
+            if (isCleanRoll)
+            {
+                // reroll shelter
+                {
+                    int cProsperity = this.appDataContext.CurrentDeck.CurrentCards.Select(c => c.dominionCard).Where(c => c.expansion == Dominion.Expansion.Prosperity).Count();
+                    int roll = MainPage.random.Next(1, 10);
+                    this.appDataContext.UseColonyPlatinum.Value = cProsperity >= roll ? true : false;
+                }
+
+                // reroll shelter
+                {
+                    int cDarkAges = this.appDataContext.CurrentDeck.CurrentCards.Select(c => c.dominionCard).Where(c => c.expansion == Dominion.Expansion.DarkAges).Count();
+                    int roll = MainPage.random.Next(1, 10);
+                    this.appDataContext.UseShelters.Value  = cDarkAges >= roll ? true : false;
+                }
+            }
+            
             if (this.CurrentCardsChanged != null)
                 this.CurrentCardsChanged();            
         }

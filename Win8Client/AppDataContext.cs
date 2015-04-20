@@ -13,6 +13,7 @@ namespace Win8Client
         private SortableCardList shelterCards;
         private SortableCardList colonyPlatinumCards;
         private SortableCardList currentDeck;
+        private SortableCardList baneCard;
         private SortableCardList commonCards;
         private System.Collections.ObjectModel.ObservableCollection<Expansion> expansions;
 
@@ -63,6 +64,7 @@ namespace Win8Client
             this.shelterCards = new SortableCardList();
             this.currentDeck = new SortableCardList();
             this.commonCards = new SortableCardList();
+            this.baneCard = new SortableCardList();
             this.availableCards = new System.Collections.ObjectModel.ObservableCollection<DominionCard>();
             this.expansions = new System.Collections.ObjectModel.ObservableCollection<Expansion>();
             /*
@@ -201,6 +203,14 @@ namespace Win8Client
             }
         }
 
+        public SortableCardList BaneCards
+        {
+            get
+            {
+                return this.baneCard;
+            }
+        }
+
         public System.Collections.ObjectModel.ObservableCollection<DominionCard> AvailableCards
         {
             get
@@ -248,9 +258,14 @@ namespace Win8Client
             Dominion.StartingCardSplit player1Split = this.player1Strategy.StartingCardSplit.Value;
             Dominion.StartingCardSplit player2Split = this.player2Strategy.StartingCardSplit.Value;
             Dominion.Card[] kingdomCards = this.currentDeck.Cards.Select(c => c.dominionCard).ToArray();
+            DominionCard baneCard = this.BaneCards.CurrentCards.FirstOrDefault();            
 
-            var builder = new Dominion.GameConfigBuilder();
+            var builder = new Dominion.GameConfigBuilder();            
+                
             builder.SetKingdomPiles(kingdomCards);
+            if (baneCard != null)
+                builder.SetBaneCard(baneCard.dominionCard);
+
             builder.useColonyAndPlatinum = this.UseColonyPlatinum.Value;
             builder.useShelters = this.UseShelters.Value;
             builder.SetCardSplitPerPlayer(new Dominion.StartingCardSplit[] { player1Split, player2Split });

@@ -63,6 +63,11 @@ namespace Dominion
             this.shuffleLuck = GetCardSetFromArray(cardPerPlayer);
         }
 
+        public void SetBaneCard(Card card)
+        {
+            this.baneCard = card;
+        }
+
         public void SetKingdomPiles(IEnumerable<Card> cards)
         {
             var setCards = new HashSet<Card>();
@@ -319,35 +324,17 @@ namespace Dominion
             builder.AddSupply(60, Cards.Copper);
             builder.AddSupply(40, Cards.Silver);
             builder.AddSupply(30, Cards.Gold);
-            builder.AddSupply(curseCount, Cards.Curse);
-            builder.AddSupply(victoryCount + (!this.useShelters ? numberOfPlayers * 3 : 0), Cards.Estate);
-            builder.AddSupply(victoryCount, Cards.Duchy);
-            builder.AddSupply(victoryCount, Cards.Province);
-
             if (this.useColonyAndPlatinum)
             {
-                builder.AddSupply(victoryCount, Cards.Colony);
                 builder.AddSupply(20, Cards.Platinum);
-            }
-
+            }            
             if (this.kingdomPiles.Where(card => card.potionCost != 0).Any())
             {
                 builder.AddSupply(16, Cards.Potion);
             }
-
-            if (cardAvailabilityType != CardAvailabilityType.AdditionalCardsAfterKingdom)
+            if (this.kingdomPiles.Where(card => card.requiresSpoils).Any())
             {
-                foreach (Card card in this.kingdomPiles)
-                {
-                    if (card.isVictory)
-                    {
-                        builder.AddSupply(victoryCount, card);
-                    }
-                    else
-                    {
-                        builder.AddSupply(card.defaultSupplyCount, card);
-                    }
-                }
+                builder.AddNonSupply(16, Cards.Spoils);
             }
 
             if (this.useShelters)
@@ -361,10 +348,48 @@ namespace Dominion
                             builder.AddStartingCard(Cards.Hovel);
                             builder.AddStartingCard(Cards.OvergrownEstate);
                             break;
-                        }                    
-                }                
+                        }
+                }
             }
 
+            
+            builder.AddSupply(victoryCount + (!this.useShelters ? numberOfPlayers * 3 : 0), Cards.Estate);
+            builder.AddSupply(victoryCount, Cards.Duchy);
+            builder.AddSupply(victoryCount, Cards.Province);
+            if (this.useColonyAndPlatinum)
+            {
+                builder.AddSupply(victoryCount, Cards.Colony);
+                
+            }
+            builder.AddSupply(curseCount, Cards.Curse);
+
+            if (cardAvailabilityType != CardAvailabilityType.AdditionalCardsAfterKingdom)
+            {
+                foreach (Card card in this.kingdomPiles)
+                {
+                    if (card.isVictory)
+                    {
+                        builder.AddSupply(victoryCount, card);
+                    }
+                    else
+                    {
+                        builder.AddSupply(card.defaultSupplyCount, card);
+                    }
+
+                    if (card == Cards.YoungWitch && baneCard != null)
+                    {
+                        if (baneCard.isVictory)
+                        {
+                            builder.AddSupply(victoryCount, baneCard);
+                        }
+                        else
+                        {
+                            builder.AddSupply(card.defaultSupplyCount, baneCard);
+                        }                        
+                    }
+                }
+            }
+         
             if (this.kingdomPiles.Where(card => card.requiresRuins).Any())
             {
                 switch (cardAvailabilityType)
@@ -387,12 +412,7 @@ namespace Dominion
                             break;
                         }
                 }
-            }
-
-            if (this.kingdomPiles.Where(card => card.requiresSpoils).Any())
-            {
-                builder.AddNonSupply(16, Cards.Spoils);
-            }
+            }            
 
             if (this.kingdomPiles.Where(card => card == Cards.Hermit).Any())
             {

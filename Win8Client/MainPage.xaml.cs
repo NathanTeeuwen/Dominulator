@@ -36,7 +36,10 @@ namespace Win8Client
             this.appDataContext.StrategyReport.PropertyChanged += StrategyReport_PropertyChanged;
             this.appDataContext.PageConfig.PropertyChanged += PageConfig_PropertyChanged;
             this.appDataContext.UseShelters.PropertyChanged += UpdateCommonCardsFromKingdom;
-            this.appDataContext.UseColonyPlatinum.PropertyChanged += UpdateCommonCardsFromKingdom;            
+            this.appDataContext.UseColonyPlatinum.PropertyChanged += UpdateCommonCardsFromKingdom;
+
+            this.appDataContext.CurrentDeck.SortByCost();
+            this.appDataContext.AllCards.SortByName();
 
             this.Loaded += MainPage_Loaded;
         }
@@ -74,11 +77,18 @@ namespace Win8Client
             this.appDataContext.CommonCards.PopulateCommon(gameConfig);
         }              
       
-        internal static void Generate10Random(IList<DominionCard> resultList, IList<DominionCard> sourceList, IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
+        internal static bool Generate10Random(            
+            ref DominionCard baneCard,
+            IList<DominionCard> resultList, 
+            IList<DominionCard> sourceList, 
+            IList<DominionCard> allCards, 
+            IList<DominionCard> itemsToReplace)
         {
             bool isReplacingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count <= 10;
             bool isReducingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count > 10;
             var cardPicker = new UniqueCardPicker(allCards);
+
+            bool isCleanRoll = false;
 
             if (isReplacingItems)
             {
@@ -131,8 +141,8 @@ namespace Win8Client
             else
             {
                 resultList.Clear();
+                isCleanRoll = true;
             }
-
             
             while (resultList.Count < 10)
             {
@@ -140,7 +150,11 @@ namespace Win8Client
                 if (currentCard == null)
                     break;
                 resultList.Add(currentCard);
-            }
+            }          
+
+            baneCard = cardPicker.GetCard(c => c.dominionCard.DefaultCoinCost == 2 || c.dominionCard.DefaultCoinCost == 3);
+
+            return isCleanRoll;
         }
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
@@ -197,6 +211,7 @@ namespace Win8Client
         private Func<DominionCard, object> keySelector;
         
         public DependencyObjectDecl<string, DefaultEmptyString> CurrentSort { get; private set;}
+        private SortOrder currentSortOrder;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -238,6 +253,14 @@ namespace Win8Client
             this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => this.CurrentSort.Value = "Not Sorted");            
         }
 
+        enum SortOrder
+        {
+            Default,
+            ByName,
+            ByCost,
+            ByExpansion
+        }
+
         public void DefaultOrderNoSort()
         {
             this.keySelector = delegate(DominionCard card)
@@ -250,18 +273,31 @@ namespace Win8Client
         {
             SortCards(card => card.Name);
             this.CurrentSort.Value = "By Name";
+            this.currentSortOrder = SortOrder.ByName;
         }
 
         public void SortByCost()
         {
-            SortCards(card => card.Coin);
+            SortCards(card => card.Coin);            
             this.CurrentSort.Value = "By Cost";
+            this.currentSortOrder = SortOrder.ByCost;
         }
 
         public void SortByExpansion()
         {
             SortCards(card => card.Expansion);
             this.CurrentSort.Value = "By Expansion";
+            this.currentSortOrder = SortOrder.ByExpansion;
+        }
+
+        public void ReapplySortOrder()
+        {
+            switch (this.currentSortOrder)
+            {
+                case SortOrder.ByExpansion: SortByExpansion(); break;
+                case SortOrder.ByName: SortByName(); break;
+                case SortOrder.ByCost: SortByCost(); break;
+            }
         }
 
         public void ApplyFilter(Func<DominionCard, bool> filter)
@@ -297,6 +333,9 @@ namespace Win8Client
         private void SortCards(Func<DominionCard, object> keySelector)
         {
             this.keySelector = keySelector;            
+            var newCards = this.originalCards.OrderBy(this.keySelector).ToArray();
+            this.originalCards.Clear();
+            this.originalCards.AddRange(newCards);
         }
 
         public System.Threading.Tasks.Task Populate()
@@ -353,6 +392,15 @@ namespace Win8Client
             }
         }
 
+        public void PopulateBaneCard(DominionCard card)
+        {
+            if (this.originalCards.Contains(card))
+                return;
+            if (this.originalCards.Any())
+                this.originalCards.Clear();
+            this.originalCards.Add(card);
+        }
+
         private async System.Threading.Tasks.Task PopulateCommonFromResources(Dominion.GameConfig gameConfig)
         {            
             this.originalCards.Clear();
@@ -389,10 +437,20 @@ namespace Win8Client
             );
         }
 
-        public void Generate10Random(IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
-        {
-            MainPage.Generate10Random(this.originalCards, this.Cards, allCards, itemsToReplace);
+        public bool Generate10Random(ref DominionCard baneCard, IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
+        {            
+            bool isCleanRoll = MainPage.Generate10Random(                
+                ref baneCard,
+                this.originalCards, this.Cards, allCards, itemsToReplace);
+
+            if (!isCleanRoll)
+                this.ClearSort();
+            else
+                ReapplySortOrder();    
+
             this.UpdateUIFromUIThread();
+
+            return isCleanRoll;
         }       
 
         public void UpdateOriginalCards(IEnumerable<DominionCard> addedCards, IEnumerable<DominionCard> removedCards)
