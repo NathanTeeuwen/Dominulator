@@ -180,7 +180,7 @@ namespace Win8Client
 
                 var strategyComparison = new Dominion.Data.StrategyComparison(playerActions, gameConfig, rotateWhoStartsFirst, numberOfGames);
 
-                Dominion.Data.StrategyComparisonResults strategyComparisonResults = strategyComparison.ComparePlayers();               
+                Dominion.Data.StrategyComparisonResults strategyComparisonResults = strategyComparison.ComparePlayers(randomSeed: MainPage.random.Next());               
                 return new StrategyUIResults()
                 {
                     strategyComparisonResults = strategyComparisonResults,

@@ -107,7 +107,8 @@ namespace Dominion.Data
             GetLogForGame getDebugLogWriter = null,
             bool shouldParallel = true,                        
             bool gatherStats = true,            
-            CreateGameLog createGameLog = null)
+            CreateGameLog createGameLog = null,
+            int randomSeed = 0)
         {
             PlayerAction player1 = playerActions[0];
             PlayerAction player2 = playerActions[1];
@@ -149,7 +150,7 @@ namespace Dominion.Data
                     // swap order every game if needed                    
                     int[] playedPositions = this.GetPlayerOrderForGameNumber(gameCount);
 
-                    Random random = new Random(gameCount);
+                    Random random = new Random(gameCount + randomSeed);
                     using (Game game = new Game(random, gameConfig, gameLogMultiplexer))
                     {
 
