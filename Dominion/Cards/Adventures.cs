@@ -850,8 +850,9 @@ namespace Dominion.CardTypes
         }        
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
-        {
-            throw new NotImplementedException();
+        {            
+            currentPlayer.GainCardFromSupply(Cards.Gold, gameState);
+            currentPlayer.GainCardFromSupply(Cards.Copper, gameState);
         }
     }
 

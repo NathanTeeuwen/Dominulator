@@ -190,6 +190,7 @@ namespace Dominion.Strategy
                 CardAcceptance.For(Cards.Potion),
                 // alphabetical, all other treasures that dont really depend on order
                 CardAcceptance.For(Cards.Cache),
+                CardAcceptance.For(Cards.TreasureTrove),
                 CardAcceptance.For(Cards.FoolsGold),
                 CardAcceptance.For(Cards.Loan),
                 CardAcceptance.For(Cards.Harem),
@@ -198,7 +199,7 @@ namespace Dominion.Strategy
                 CardAcceptance.For(Cards.PhilosophersStone),
                 CardAcceptance.For(Cards.Quarry),
                 CardAcceptance.For(Cards.RoyalSeal),
-                CardAcceptance.For(Cards.Stash),
+                CardAcceptance.For(Cards.Stash),                
                 CardAcceptance.For(Cards.Talisman),
                 // cards whose benefit is sensitive to ordering
                 CardAcceptance.For(Cards.Venture),          // playing this card might increase the number of treasures played

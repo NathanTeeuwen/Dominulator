@@ -687,8 +687,7 @@ namespace Dominion
             Cards.SwampHag,
             Cards.Teacher,
             Cards.Transmogrify,
-            Cards.TreasureHunter,
-            Cards.TreasureTrove,
+            Cards.TreasureHunter,            
             Cards.Warrior,
             Cards.WineMerchant,
 
