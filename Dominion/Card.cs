@@ -54,6 +54,7 @@ namespace Dominion
         public readonly bool isReserve;
         public readonly bool canOverpay;
         public readonly bool canGivePlusAction;
+        public readonly bool isEvent;
         protected VictoryPointCounter victoryPointCounter;              // readonly
         protected GameStateMethod doSpecializedCleanupAtStartOfCleanup; // readonly
         protected CardIntValue provideDiscountForWhileInPlay;           // readonly
@@ -117,9 +118,10 @@ namespace Dominion
             bool isShelter = false,
             bool isTraveller = false,
             bool isReserve = false,
+            bool isEvent = false,
             bool canOverpay = false,
             bool canGivePlusAction = false,
-            bool mightMultiplyActions = false,
+            bool mightMultiplyActions = false,            
             CardIntValue provideDiscountForWhileInPlay = null,
             GameStateMethod doSpecializedCleanupAtStartOfCleanup = null,
             GameStateCardMethod doSpecializedActionOnBuyWhileInPlay = null,
@@ -168,6 +170,7 @@ namespace Dominion
             this.isShelter = isShelter;
             this.isTraveller = isTraveller;
             this.isReserve = isReserve;
+            this.isEvent = isEvent;
             this.requiresSpoils = requiresSpoils;
             this.canOverpay = canOverpay;
             this.canGivePlusAction = canGivePlusAction;
