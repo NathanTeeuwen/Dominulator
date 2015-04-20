@@ -66,6 +66,7 @@ namespace Strategies
         {
             return new CardPickByPriority(
                         CardAcceptance.For(Cards.Feodum, ShouldTrashFeodum),
+                        CardAcceptance.For(Cards.Curse),
                         CardAcceptance.For(Cards.Estate),
                         CardAcceptance.For(Cards.Copper));
         }

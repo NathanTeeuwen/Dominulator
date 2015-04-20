@@ -136,11 +136,11 @@ namespace Dominion
             }
         }
 
-        public void PlayerDiscardCard(PlayerState playerState, Card card)
+        public void PlayerDiscardCard(PlayerState playerState, Card card, DeckPlacement source)
         {
             for (int i = 0; i < this.gameLogs.Length; ++i)
             {
-                this.gameLogs[i].PlayerDiscardCard(playerState, card);
+                this.gameLogs[i].PlayerDiscardCard(playerState, card, source);
             }
         }
 
@@ -224,6 +224,14 @@ namespace Dominion
             }
         }
 
+        public void PlayerGainedVictoryTokens(PlayerState playerState, int amount)
+        {
+            for (int i = 0; i < this.gameLogs.Length; ++i)
+            {
+                this.gameLogs[i].PlayerGainedVictoryTokens(playerState, amount);
+            }
+        }
+
         public void PlayerGainedActions(PlayerState playerState, int amount)
         {
             for (int i = 0; i < this.gameLogs.Length; ++i)
@@ -287,5 +295,21 @@ namespace Dominion
                 this.gameLogs[i].PlayerReturnedCardToPile(playerState, card);
             }
         }        
+
+        public void PlayerChoseLocationForStash(PlayerState playerState, int[] positions)
+        {
+            for (int i = 0; i < this.gameLogs.Length; ++i)
+            {
+                this.gameLogs[i].PlayerChoseLocationForStash(playerState, positions);
+            }
+        }
+
+        public void PlayerPlacedCardOnIslandMat(PlayerState playerState, Card card)
+        {
+            for (int i = 0; i < this.gameLogs.Length; ++i)
+            {
+                this.gameLogs[i].PlayerPlacedCardOnIslandMat(playerState, card);
+            }
+        }
     }
 }

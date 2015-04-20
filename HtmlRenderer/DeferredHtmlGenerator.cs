@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dominion.Data;
+using Dominion;
+using Dominion.Strategy;
 
 namespace HtmlRenderer
 {
@@ -20,10 +22,21 @@ namespace HtmlRenderer
             {
                 var generator = new HtmlReportGenerator(results);
 
-                generator.CreateHtmlReport(GetOutputFilename(results.comparison.playerActions[0].PlayerName + " VS " + results.comparison.playerActions[1].PlayerName + ".html"));
+                CreateHtmlReport(generator, GetOutputFilename(results.comparison.playerActions[0].PlayerName + " VS " + results.comparison.playerActions[1].PlayerName + ".html"));
                 System.Threading.Interlocked.Decrement(ref outstandingTasks);
             });
             thread.Start();
+        }
+
+        public void CreateHtmlReport(HtmlReportGenerator generator, string filename)
+        {
+            if (filename == null)
+                return;
+            var streamWriter = new System.IO.StreamWriter(filename);
+            using (var textWriter = new IndentedTextWriter(streamWriter))
+            {
+                generator.CreateHtmlReport(textWriter);
+            }
         }
 
         public void Dispose()

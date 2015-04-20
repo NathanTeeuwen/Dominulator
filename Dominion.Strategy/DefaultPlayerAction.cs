@@ -29,6 +29,7 @@ namespace Dominion.Strategy
         public readonly ICardPicker treasurePlayOrder;
         public readonly ICardPicker discardOrder;
         public bool chooseDefaultActionOnNone;
+        public bool enablePenultimateProvinceRule;
         public readonly ICardPicker gainOrder;
 
         public readonly ICardPicker defaultActionOrder;        
@@ -37,12 +38,13 @@ namespace Dominion.Strategy
         public DefaultPlayerAction(
             string name,            
             ICardPicker purchaseOrder,
-            ICardPicker actionOrder = null,
-            bool chooseDefaultActionOnNone = true,
-            ICardPicker treasurePlayOrder = null,
-            ICardPicker discardOrder = null,
-            ICardPicker trashOrder = null,
-            ICardPicker gainOrder = null)
+            ICardPicker actionOrder,
+            bool chooseDefaultActionOnNone,
+            bool enablePenultimateProvinceRule,
+            ICardPicker treasurePlayOrder,
+            ICardPicker discardOrder,
+            ICardPicker trashOrder,
+            ICardPicker gainOrder)
         {            
             this.purchaseOrder = purchaseOrder;
             this.actionOrder = actionOrder == null ? DefaultStrategies.DefaultActionPlayOrder(purchaseOrder) : actionOrder;
@@ -51,17 +53,50 @@ namespace Dominion.Strategy
             this.treasurePlayOrder = treasurePlayOrder == null ? DefaultStrategies.DefaultTreasurePlayOrder() : treasurePlayOrder;            
             this.gainOrder = gainOrder != null ? gainOrder : purchaseOrder;
             this.chooseDefaultActionOnNone = chooseDefaultActionOnNone;
+            this.enablePenultimateProvinceRule = enablePenultimateProvinceRule;
             this.name = name;
             this.defaultActionOrder = DefaultStrategies.DefaultActionPlayOrder(purchaseOrder);            
             this.defaultShouldPlay = DefaultPlayRules.DefaultResponses.GetCardShouldPlayDefaults(this);
         }                
 
         public override Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
-        {
-            var self = gameState.Self;
-            return this.purchaseOrder.GetPreferredCard(
+        {        
+            Card preferredCard = this.purchaseOrder.GetPreferredCard(
                 gameState,
                 cardPredicate);
+
+            if (!this.enablePenultimateProvinceRule)
+                return preferredCard;
+
+            // implement some version of PPR
+            if (preferredCard != Cards.Province)
+            {
+                return preferredCard;
+            }
+
+            int countProvincesRemaining = Strategy.CountOfPile(Cards.Province, gameState);
+            if (countProvincesRemaining == 1)
+            {
+                // if you are down more than the points of a province
+                // and you buy the last province, you will lose instantly.  don't do that.
+                int curScoreDiff = gameState.SmallestScoreDifference(gameState.Self);
+                if (curScoreDiff < 0 && (-curScoreDiff) > Cards.Province.VictoryPoints(gameState.Self))
+                {
+                    return this.purchaseOrder.GetPreferredCard(gameState, card => card != Cards.Province && cardPredicate(card));
+                }
+            }
+            else if (countProvincesRemaining == 2)
+            {
+                // do not buy the last province if you are currently losing by just a little bit.  
+                // the other play can buy the province and just win it.
+                int curScoreDiff = gameState.SmallestScoreDifference(gameState.Self);
+                if (curScoreDiff < 0 && (-curScoreDiff) < Cards.Province.VictoryPoints(gameState.Self))
+                {
+                    return this.purchaseOrder.GetPreferredCard(gameState, card => card != Cards.Province && cardPredicate(card));
+                }
+            }
+
+            return preferredCard;
         }
 
         public override Card GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional)
@@ -221,8 +256,19 @@ namespace Dominion.Strategy
         }
 
         override public Card GetCardFromDiscardToTopDeck(GameState gameState, bool isOptional)
-        {            
-            Card result = this.discardOrder.GetPreferredCardReverse(gameState, card => gameState.Self.Discard.HasCard(card));
+        {
+            Card result = this.purchaseOrder.GetPreferredCard(gameState, card => gameState.Self.Discard.HasCard(card) && (card.isAction || card.isTreasure));
+            
+            if (!isOptional && result == null)
+            {
+                result = gameState.Self.Discard.Where(c=>c.isTreasure || c.isAction).OrderByDescending(c=>c.DefaultCoinCost).FirstOrDefault();
+            }
+
+            if (!isOptional && result == null)
+            {
+                result = gameState.Self.Discard.SomeCard();
+            }
+
             return result;
         }
 
@@ -465,10 +511,12 @@ namespace Dominion.Strategy
             return base.GetCardFromPlayToTopDeckDuringCleanup(gameState, acceptableCard, isOptional);
         }
 
-        public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
-        {            
-            // should throw not implemented?
-            return null;
+        public override Card GetCardFromRevealedCardsToTopDeck(GameState gameState, bool isOptional)
+        {
+            if (isOptional)
+                return null;
+
+            return gameState.Self.CardsBeingRevealed.SomeCard();
         }
 
         public override Card GetCardFromHandToDeferToNextTurn(GameState gameState)
@@ -534,7 +582,13 @@ namespace Dominion.Strategy
         public override int GetCoinAmountToOverpayForCard(GameState gameState, Card card)
         {            
             return base.GetCoinAmountToOverpayForCard(gameState, card);
-        }        
+        }
+
+        public override void ChooseLocationForStashAfterShuffle(GameState gameState, int[] locations)
+        {
+            // just use the default order of 0-location.length;
+            return;
+        }
     }
 
     public static class PlayerActionExtensionMethods

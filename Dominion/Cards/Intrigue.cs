@@ -83,7 +83,7 @@ namespace Dominion.CardTypes
         {
             if (currentPlayer.CountCardsPlayedThisTurn >= 3)
             {
-                currentPlayer.DrawOneCardIntoHand();
+                currentPlayer.DrawOneCardIntoHand(gameState);
                 currentPlayer.AddActions(1);
             }
         }
@@ -139,7 +139,7 @@ namespace Dominion.CardTypes
         public static IronWorks card = new IronWorks();
 
         private IronWorks()
-            : base("IronWorks", Expansion.Intrigue, coinCost: 4, isAction:true)
+            : base("IronWorks", Expansion.Intrigue, coinCost: 4, isAction:true, canGivePlusAction:true)
         {
         }
 
@@ -161,7 +161,7 @@ namespace Dominion.CardTypes
 
             if (gainedCard.isVictory)
             {
-                currentPlayer.DrawOneCardIntoHand();
+                currentPlayer.DrawOneCardIntoHand(gameState);
             }
         }
     }
@@ -254,7 +254,7 @@ namespace Dominion.CardTypes
                 // discard your hand, 
                 currentPlayer.DiscardHand(gameState);
                 // +4 cards
-                currentPlayer.DrawAdditionalCardsIntoHand(4);
+                currentPlayer.DrawAdditionalCardsIntoHand(4, gameState);
 
                 attackAction = this.DoSpecializedAttackInternal;
             }
@@ -270,7 +270,7 @@ namespace Dominion.CardTypes
                 // discards his hand
                 otherPlayer.DiscardHand(gameState);
                 // and draws 4 cards
-                otherPlayer.DrawAdditionalCardsIntoHand(4);
+                otherPlayer.DrawAdditionalCardsIntoHand(4, gameState);
             }
         }
     }
@@ -281,7 +281,7 @@ namespace Dominion.CardTypes
         public static Nobles card = new Nobles();
 
         private Nobles()
-            : base("Nobles", Expansion.Intrigue, coinCost: 6, victoryPoints: playerState => 2, isAction: true)
+            : base("Nobles", Expansion.Intrigue, coinCost: 6, victoryPoints: playerState => 2, isAction: true, canGivePlusAction:true)
         {
         }
 
@@ -293,7 +293,7 @@ namespace Dominion.CardTypes
 
             if (actionChoice == PlayerActionChoice.PlusCard)
             {
-                currentPlayer.DrawAdditionalCardsIntoHand(3);
+                currentPlayer.DrawAdditionalCardsIntoHand(3, gameState);
             }
             else
             {
@@ -330,15 +330,15 @@ namespace Dominion.CardTypes
                 gameState,
                 acceptableSecondChoice => acceptableSecondChoice != firstChoice && acceptableFirstChoice(acceptableSecondChoice));
 
-            DoActionChoice(currentPlayer, firstChoice);
-            DoActionChoice(currentPlayer, secondChoice);
+            DoActionChoice(currentPlayer, firstChoice, gameState);
+            DoActionChoice(currentPlayer, secondChoice, gameState);
         }
 
-        private void DoActionChoice(PlayerState currentPlayer, PlayerActionChoice actionChoice)
+        private void DoActionChoice(PlayerState currentPlayer, PlayerActionChoice actionChoice, GameState gameState)
         {
             switch (actionChoice)
             {
-                case PlayerActionChoice.PlusCard: currentPlayer.DrawOneCardIntoHand(); break;
+                case PlayerActionChoice.PlusCard: currentPlayer.DrawOneCardIntoHand(gameState); break;
                 case PlayerActionChoice.PlusAction: currentPlayer.AddActions(1); break;
                 case PlayerActionChoice.PlusBuy: currentPlayer.AddBuys(1); break;
                 case PlayerActionChoice.PlusCoin: currentPlayer.AddCoins(1); break;
@@ -360,7 +360,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
             // Each other player reveals cards from the top of his deck 
-            Card revealedCard = otherPlayer.DrawAndRevealOneCardFromDeck();
+            Card revealedCard = otherPlayer.DrawAndRevealOneCardFromDeck(gameState);
             while (revealedCard != null)
             {
                 // until revealing one costing 3 or more
@@ -368,7 +368,7 @@ namespace Dominion.CardTypes
                 {
                     break;
                 }
-                revealedCard = otherPlayer.DrawAndRevealOneCardFromDeck();
+                revealedCard = otherPlayer.DrawAndRevealOneCardFromDeck(gameState);
             }
 
             if (revealedCard != null)
@@ -401,7 +401,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RevealCardsFromDeck(4);
+            currentPlayer.RevealCardsFromDeck(4, gameState);
             currentPlayer.MoveRevealedCardsToHand(card => card.isVictory);
             currentPlayer.RequestPlayerTopDeckRevealedCardsInAnyOrder(gameState);            
         }
@@ -435,7 +435,7 @@ namespace Dominion.CardTypes
 
             if (currentPlayer.actions.ShouldRevealCardFromHand(gameState, this))
             {
-                currentPlayer.DrawAdditionalCardsIntoHand(2);
+                currentPlayer.DrawAdditionalCardsIntoHand(2, gameState);
                 for (int i = 0; i < 2; ++i)
                 {
                     currentPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard => true, false);
@@ -465,7 +465,7 @@ namespace Dominion.CardTypes
             currentPlayer.RevealHand();
             if (!currentPlayer.hand.Where(card => card.isAction).Any())
             {
-                currentPlayer.DrawAdditionalCardsIntoHand(2);
+                currentPlayer.DrawAdditionalCardsIntoHand(2, gameState);
             }
         }
     }
@@ -490,7 +490,7 @@ namespace Dominion.CardTypes
 
             switch (actionChoice)
             {
-                case PlayerActionChoice.PlusCard: currentPlayer.DrawAdditionalCardsIntoHand(2); break;
+                case PlayerActionChoice.PlusCard: currentPlayer.DrawAdditionalCardsIntoHand(2, gameState); break;
                 case PlayerActionChoice.PlusCoin: currentPlayer.AddCoins(2); break;
                 case PlayerActionChoice.Trash: currentPlayer.RequestPlayerTrashCardsFromHand(gameState, 2, false); break;
                 default: throw new Exception("Invalid case");
@@ -578,14 +578,14 @@ namespace Dominion.CardTypes
         public static Tribute card = new Tribute();
 
         private Tribute()
-            : base("Tribute", Expansion.Intrigue, coinCost: 5, isAction: true)
+            : base("Tribute", Expansion.Intrigue, coinCost: 5, isAction: true, canGivePlusAction:true)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             // The player to your left reveals (...then discards) the top 2 cards of his deck.
-            gameState.players.PlayerLeft.RevealCardsFromDeck(2);
+            gameState.players.PlayerLeft.RevealCardsFromDeck(2, gameState);
 
             // for each differently named card
             Card firstCard = null;
@@ -594,14 +594,14 @@ namespace Dominion.CardTypes
                 if (firstCard == null)
                 {
                     firstCard = card;
-                    GainBenefitFromCard(firstCard, currentPlayer);
+                    GainBenefitFromCard(firstCard, currentPlayer, gameState);
                 }
                 else
                 {
                     Card secondCard = card;
                     if (card != firstCard)
                     {
-                        GainBenefitFromCard(secondCard, currentPlayer);
+                        GainBenefitFromCard(secondCard, currentPlayer, gameState);
                     }
                 }
             }
@@ -610,7 +610,7 @@ namespace Dominion.CardTypes
             gameState.players.PlayerLeft.MoveRevealedCardsToDiscard(gameState);
         }
 
-        private void GainBenefitFromCard(Card card, PlayerState currentPlayer)
+        private void GainBenefitFromCard(Card card, PlayerState currentPlayer, GameState gameState)
         {
             if (card.isAction)
             {
@@ -624,7 +624,7 @@ namespace Dominion.CardTypes
 
             if (card.isVictory)
             {
-                currentPlayer.DrawAdditionalCardsIntoHand(2);
+                currentPlayer.DrawAdditionalCardsIntoHand(2, gameState);
             }
         }
     }
@@ -666,7 +666,7 @@ namespace Dominion.CardTypes
         {
             Card cardType = currentPlayer.GuessCardTopOfDeck(gameState);
 
-            Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+            Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
             if (revealedCard == cardType)
             {
                 currentPlayer.MoveAllRevealedCardsToHand();

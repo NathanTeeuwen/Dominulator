@@ -61,6 +61,12 @@ namespace Dominion
             }
         }
 
+        public bool IsSelfPlaying(GameState gameState)
+        {
+            var currentPlayerState = CurrentPlayerState;
+            return gameState.Self == currentPlayerState || currentPlayerState == null;
+        }
+
         public Card CurrentCard
         {
             get
@@ -95,7 +101,7 @@ namespace Dominion
         private MapPileOfCards<bool> hasPileEverBeenGained;
         private MapPileOfCards<int> pileEmbargoTokenCount;
 
-        internal readonly CollectionCards emptyCardCollection;
+        public readonly CollectionCards emptyCardCollection;
 
         public int InProgressGameIndex;
 
@@ -137,9 +143,11 @@ namespace Dominion
         public GameState(                         
             IPlayerAction[] playerActions,
             int[] playerPositions,            
-            Game game,
-            IEnumerable<CardCountPair>[] startingDeckPerPlayer = null)
+            Game game)
         {
+            if (playerActions.Length != playerPositions.Length)
+                throw new Exception();
+
             this.game = game;
             GameConfig gameConfig = game.GameConfig;
 
@@ -147,7 +155,7 @@ namespace Dominion
 
             int playerCount = playerActions.Length;            
             this.supplyPiles = gameConfig.GetSupplyPiles(playerCount, game.random);
-            this.nonSupplyPiles = gameConfig.GetNonSupplyPiles();
+            this.nonSupplyPiles = gameConfig.GetNonSupplyPiles(playerCount);
 
             this.mapCardToPile = new MapOfCardsForGameSubset<PileOfCards>(this.CardGameSubset);
             this.BuildMapOfCardToPile();
@@ -162,12 +170,12 @@ namespace Dominion
 
             this.GainStartingCards(gameConfig);
 
-            this.players.AllPlayersDrawInitialCards(gameConfig);    
-     
             foreach (PileOfCards cardPile in this.supplyPiles)
             {
                 cardPile.ProtoTypeCard.DoSpecializedSetupIfInSupply(this);
             }
+
+            this.players.AllPlayersDrawInitialCards(gameConfig, this);                    
         }        
 
         private void BuildMapOfCardToPile()
@@ -186,7 +194,7 @@ namespace Dominion
                 {
                     if (pair.Card.isShelter)
                     {
-                        player.GainCard(this, pair.Card, DeckPlacement.Supply);
+                        player.GainCard(this, pair.Card, DeckPlacement.GameStart);
                     }
                     else
                     {
@@ -289,6 +297,24 @@ namespace Dominion
             }
         }
 
+        public int SmallestScoreDifference(PlayerState currentPlayer)
+        {
+            int scoreDiff = 0;
+            int currentScore = currentPlayer.TotalScore();
+            
+            foreach(var otherPlayer in this.players.AllPlayers)
+            {
+                if (otherPlayer == currentPlayer)
+                    continue;
+                int otherScore = otherPlayer.TotalScore();
+                int diff = currentScore - otherScore;
+                if (scoreDiff == 0 || diff > scoreDiff)
+                    scoreDiff = diff;
+            }
+
+            return scoreDiff;
+        }
+
         static int ComparePlayerWinner(PlayerState first, PlayerState second)
         {
             int scoreDifference = second.TotalScore() - first.TotalScore();
@@ -327,11 +353,15 @@ namespace Dominion
 
             int cardCountForNextTurn = this.doesCurrentPlayerNeedOutpostTurn ? 3 : 5;
             currentPlayer.EnterPhase(PlayPhase.DrawCards);
-            currentPlayer.DrawUntilCountInHand(cardCountForNextTurn);
+            currentPlayer.DrawUntilCountInHand(cardCountForNextTurn, this);
             currentPlayer.EnterPhase(PlayPhase.NotMyTurn);
 
             this.gameLog.PopScope();
-            this.gameLog.EndTurn(currentPlayer);            
+            this.gameLog.EndTurn(currentPlayer);
+
+            // turn counters need to be 0 such that if this player ends up looking at the state while not it's turn
+            // e.g. as reaction or attack, it can make correct choices on current state such as AvailableCoin.
+            currentPlayer.InitializeTurn();
         }
 
         private void ReturnCardsToHandAtStartOfTurn(PlayerState currentPlayer)
@@ -405,21 +435,26 @@ namespace Dominion
                     throw new Exception("Tried to buy card that didn't meet criteria");
                 }
 
+                if (!this.CanGainCardFromSupply(cardType))
+                {
+                    return;
+                }
+
+                currentPlayer.turnCounters.RemoveCoins(cardType.CurrentCoinCost(currentPlayer));
+                currentPlayer.turnCounters.RemovePotions(cardType.potionCost);
+                currentPlayer.turnCounters.RemoveBuy();
+
                 Card boughtCard = this.PlayerGainCardFromSupply(cardType, currentPlayer, DeckPlacement.Discard, GainReason.Buy);
                 if (boughtCard == null)
                 {
-                    return;
+                    throw new Exception("CanGainCardFromSupply said we could buy a card when we couldn't");
                 }
                             
                 int embargoCount = this.pileEmbargoTokenCount[boughtCard];
                 for (int i = 0; i < embargoCount; ++i)
                 {
                     currentPlayer.GainCardFromSupply(Cards.Curse, this);                    
-                }
-
-                currentPlayer.turnCounters.RemoveCoins(boughtCard.CurrentCoinCost(currentPlayer));
-                currentPlayer.turnCounters.RemovePotions(boughtCard.potionCost);
-                currentPlayer.turnCounters.RemoveBuy();                                
+                }                                              
             }
         }
 
@@ -447,20 +482,31 @@ namespace Dominion
             currentPlayer.EnterPhase(PlayPhase.PlayTreasure);
             while (true)
             {
-                Card cardTypeToPlay = currentPlayer.actions.GetTreasureFromHandToPlay(this, acceptableCard => true, isOptional:true);
-                if (cardTypeToPlay == null)
+                Card cardPlayed = DoPlayOneTreasure(currentPlayer);
+                if (cardPlayed == null)
                 {
                     break;
-                }
-
-                Card currentCard = currentPlayer.RemoveCardFromHand(cardTypeToPlay);
-                if (currentCard == null)
-                {
-                    throw new Exception("Player tried to remove a card that wasn't available in hand");
-                }
-                
-                currentPlayer.DoPlayTreasure(currentCard, this);
+                }                
             }
+        }
+
+        internal Card DoPlayOneTreasure(PlayerState currentPlayer)
+        {
+            Card cardTypeToPlay = currentPlayer.actions.GetTreasureFromHandToPlay(this, acceptableCard => true, isOptional: true);
+            if (cardTypeToPlay == null)
+            {
+                return null;
+            }
+
+            Card currentCard = currentPlayer.RemoveCardFromHand(cardTypeToPlay);
+            if (currentCard == null)
+            {
+                throw new Exception("Player tried to remove a card that wasn't available in hand");
+            }
+
+            currentPlayer.DoPlayTreasure(currentCard, this);
+
+            return cardTypeToPlay;
         }
 
         internal PileOfCards GetSpecialPile(Type cardType)
@@ -510,24 +556,47 @@ namespace Dominion
             return null;
         }       
 
-        public Card PlayerGainCardFromSupply(Card cardType, PlayerState playerState, DeckPlacement defaultLocation = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)
-        {            
+        public bool CanGainCardFromSupply(Card cardType)
+        {
             PileOfCards pile = this.GetPile(cardType);
             if (pile == null)
             {
+                return false;
+            }
+
+            return pile.TopCard() == cardType;
+        }
+
+        public Card PlayerGainCardFromSupply(Card cardType, PlayerState playerState, DeckPlacement defaultLocation = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)
+        {   
+            bool canGainCardFromSupply = CanGainCardFromSupply(cardType);
+            PileOfCards pile = this.GetPile(cardType);
+            if (pile == null)
+            {
+                System.Diagnostics.Debug.Assert(!canGainCardFromSupply);
                 return null;
             }
 
             if (GetPile(this.supplyPiles, cardType) != null)
                 this.hasPileEverBeenGained[pile] = true;            
 
-            Card card = pile.DrawCardFromTop();
-            if (card == null)
+            if (pile.TopCard() != cardType)
             {
+                System.Diagnostics.Debug.Assert(!canGainCardFromSupply);
                 return null;
             }
 
+            Card card = pile.DrawCardFromTop();
+            if (card == null)
+            {
+                System.Diagnostics.Debug.Assert(!canGainCardFromSupply);
+                return null;
+            }
+
+            System.Diagnostics.Debug.Assert(canGainCardFromSupply);
+
             playerState.GainCard(this, card, DeckPlacement.Supply, defaultLocation, gainReason);
+
 
             return card;
         }       

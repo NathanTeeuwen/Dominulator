@@ -10,6 +10,7 @@ namespace Dominion
     public enum Expansion
     {
         Alchemy,
+        Adventures,
         Base,
         Cornucopia,
         DarkAges,
@@ -36,20 +37,31 @@ namespace Dominion
         public readonly int plusCoin;
         public readonly int plusVictoryToken;
         public readonly int defaultSupplyCount;        
-        public readonly bool isAction;
-        public readonly bool isAttack;
         public readonly bool attackDependsOnPlayerChoice;
         public readonly bool isAttackBeforeAction;
+
+        public readonly bool requiresRuins;
+        public readonly bool requiresSpoils;
+        public readonly bool canOverpay;
+
+        // types
+        public readonly bool isAction;
+        public readonly bool isAttack;        
         public readonly bool isCurse;
         public readonly bool isReaction;
         public readonly bool isRuins;
         public readonly bool isPrize;
         public readonly bool isTreasure;
         public readonly bool isDuration;
-        public readonly bool requiresRuins;
-        public readonly bool requiresSpoils;
         public readonly bool isShelter;
-        public readonly bool canOverpay;
+        public readonly bool isTraveller;
+        public readonly bool isReserve;
+        public readonly bool isEvent;        
+
+        // useful properites about the card
+        public readonly bool canGivePlusAction;
+        public readonly bool isKingdomCard;
+        
         protected VictoryPointCounter victoryPointCounter;              // readonly
         protected GameStateMethod doSpecializedCleanupAtStartOfCleanup; // readonly
         protected CardIntValue provideDiscountForWhileInPlay;           // readonly
@@ -61,6 +73,10 @@ namespace Dominion
         protected GameStateCardToPlacement doSpecializedActionOnGainWhileInHand; //readonly
 
         private readonly int privateIndex;
+
+        // properties of cards used that don't affect behavior
+        public readonly bool mightMultiplyActions;
+
 
         public string ProgrammaticName
         {
@@ -107,7 +123,13 @@ namespace Dominion
             bool requiresRuins = false,
             bool requiresSpoils = false,
             bool isShelter = false,
+            bool isTraveller = false,
+            bool isReserve = false,
+            bool isEvent = false,
             bool canOverpay = false,
+            bool canGivePlusAction = false,
+            bool mightMultiplyActions = false,     
+            bool isKingdomCard = true,
             CardIntValue provideDiscountForWhileInPlay = null,
             GameStateMethod doSpecializedCleanupAtStartOfCleanup = null,
             GameStateCardMethod doSpecializedActionOnBuyWhileInPlay = null,
@@ -154,8 +176,14 @@ namespace Dominion
             this.requiresRuins = requiresRuins;
             this.isDuration = isDuration;
             this.isShelter = isShelter;
+            this.isTraveller = isTraveller;
+            this.isReserve = isReserve;
+            this.isEvent = isEvent;
+            this.isKingdomCard = isKingdomCard;
             this.requiresSpoils = requiresSpoils;
             this.canOverpay = canOverpay;
+            this.canGivePlusAction = canGivePlusAction;
+            this.mightMultiplyActions = mightMultiplyActions;
             this.provideDiscountForWhileInPlay = provideDiscountForWhileInPlay;
             this.doSpecializedCleanupAtStartOfCleanup = doSpecializedCleanupAtStartOfCleanup;
             this.doSpecializedActionOnBuyWhileInPlay = doSpecializedActionOnBuyWhileInPlay;
@@ -433,4 +461,18 @@ namespace Dominion
             return card.CurrentCoinCost(player) >= 3 && card.CurrentCoinCost(player) <= 6 && card.potionCost == 0;
         }        
     }
+
+    public class Event
+      : Card
+    {
+        protected Event(
+            string name,
+            Expansion expansion,
+            string pluralName = null)
+            : base(name: name, expansion: expansion, coinCost: 0, isEvent: true, pluralName: null, isKingdomCard:false)
+        {
+
+        }
+    }
+
 }

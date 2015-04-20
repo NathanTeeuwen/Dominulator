@@ -161,11 +161,11 @@ namespace Dominion
             return result;
         }
 
-        public Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
+        public Card GetCardFromRevealedCardsToTopDeck(GameState gameState, bool isOptional)
         {
             var saved = gameState.self;
             gameState.self = this.self;
-            var result = this.playerAction.GetCardFromRevealedCardsToTopDeck(gameState);
+            var result = this.playerAction.GetCardFromRevealedCardsToTopDeck(gameState, isOptional);
             gameState.self = saved;
             return result;
         }
@@ -446,6 +446,14 @@ namespace Dominion
             var result = this.playerAction.GetCoinAmountToUseInButcher(gameState);
             gameState.self = saved;
             return result;
+        }
+
+        public virtual void ChooseLocationForStashAfterShuffle(GameState gameState, int[] locations)
+        {
+            var saved = gameState.self;
+            gameState.self = this.self;
+            this.playerAction.ChooseLocationForStashAfterShuffle(gameState, locations);
+            gameState.self = saved;            
         }
     }
 }

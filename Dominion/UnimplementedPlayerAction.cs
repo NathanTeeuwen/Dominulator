@@ -122,7 +122,7 @@ namespace Dominion
             return NoCardIfOptional(isOptional);   
         }
 
-        virtual public Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
+        virtual public Card GetCardFromRevealedCardsToTopDeck(GameState gameState, bool isOptional)
         {
             return PlayerMustMakeCardChoice();
         }
@@ -292,6 +292,11 @@ namespace Dominion
         virtual public Card GetCardFromOtherPlayersRevealedCardsToTrash(GameState gameState, PlayerState otherPlayer, CardPredicate acceptableCard)
         {
             return PlayerMustMakeCardChoice();
+        }
+
+        public virtual void ChooseLocationForStashAfterShuffle(GameState gameState, int[] locations)
+        {
+            throw new NotImplementedException();
         }
     }    
 }

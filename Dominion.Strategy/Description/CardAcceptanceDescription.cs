@@ -11,7 +11,7 @@ namespace Dominion.Strategy.Description
         public CardAcceptanceDescription(Card card, CountSource countSource, Card matchOn, Comparison comparison, int threshhold)
             : this(card, new MatchDescription(countSource, matchOn, comparison, threshhold))
         {            
-        }
+        }        
 
         public CardAcceptanceDescription(Card card, params MatchDescription[] matchDescriptions)
         {
@@ -39,10 +39,61 @@ namespace Dominion.Strategy.Description
             return new CardAcceptanceDescription(this.card, matchDescriptions.Select(m => m.Clone()).ToArray());
         }
 
+        public bool IsConditionedOnlyOnSelfOwnership()
+        {
+            foreach(var matchDescription in this.matchDescriptions)
+            {
+                bool fSelfOwnership = matchDescription.countSource == CountSource.CountAllOwned && matchDescription.cardType == this.card;
+                if (matchDescription.countSource != CountSource.Always &&
+                    !fSelfOwnership)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
         public void WriteText(System.IO.TextWriter writer)
         {
             writer.Write(card.name);
+            writer.Write(" whern ");
             this.matchDescriptions[0].WriteText(writer);
+        }
+
+        public static CardAcceptanceDescription For(Card card)
+        {
+            return new CardAcceptanceDescription(card, new MatchDescription[]
+            {
+                new MatchDescription(CountSource.Always, card, Comparison.GreaterThan, 0),                
+            });
+        }
+
+        public static CardAcceptanceDescription For(Card card, int count)
+        {
+            return new CardAcceptanceDescription(card, new MatchDescription[]
+            {
+                new MatchDescription(CountSource.Always, card, Comparison.GreaterThan, 0),                
+                new MatchDescription(CountSource.CountAllOwned, card, Comparison.LessThan, count),                
+            });
+        }
+
+        public static CardAcceptanceDescription For(Card card, CountSource countSouce, Card testCard, Comparison comparison, int threshhold)
+        {
+            return new CardAcceptanceDescription(card, new MatchDescription[]
+            {
+                new MatchDescription(CountSource.Always, card, Comparison.GreaterThan, 0),                
+                new MatchDescription(countSouce, testCard, Comparison.LessThan, threshhold),                
+            });
+        }
+
+        public static CardAcceptanceDescription For(Card card, int count, Card testCard, CountSource countSouce, Comparison comparison, int threshhold)
+        {
+            return new CardAcceptanceDescription(card, new MatchDescription[]
+            {
+                new MatchDescription(CountSource.CountAllOwned, card, Comparison.LessThan, count),
+                new MatchDescription(countSouce, testCard, comparison, threshhold),
+            });
         }
     }
 }

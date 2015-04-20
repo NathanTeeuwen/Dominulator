@@ -16,51 +16,24 @@ namespace TestCompareStrategyVsAllKnownStrategies
         {
             using (var testOutput = new TestOutput())
             {
-                CompareStrategyVsAllKnownStrategies(Strategies.BigMoney.Player(), testOutput);
-            }
-        }
-
-        static void CompareStrategyVsAllKnownStrategies(
-           PlayerAction playerAction,
-           TestOutput testOutput,
-           bool shouldParallel = true,
-           bool useShelters = false,
-           int numberOfGames = 1000,
-           bool createHtmlReport = false,
-           int logGameCount = 0,
-           bool debugLogs = false)
-        {            
-            var resultList = new List<System.Tuple<string, double>>();
-
-            foreach (PlayerAction otherPlayerAction in BuiltInStrategies.StrategyLoader.GetAllPlayerActions())
-            {
-                if (playerAction == otherPlayerAction)
-                    continue;
-
-                double percentDiff = testOutput.ComparePlayers(
-                    playerAction,
-                    otherPlayerAction,
-                    shouldParallel: shouldParallel,
-                    useShelters: useShelters,
-                    logGameCount: logGameCount,
-                    debugLogs: debugLogs,
-                    numberOfGames: numberOfGames,
-                    useColonyAndPlatinum: true,
-                    createHtmlReport: createHtmlReport);
-
-                resultList.Add(new System.Tuple<string, double>(otherPlayerAction.PlayerName, -percentDiff));
-            }
-
-            bool firstNegative = true;
-            foreach (var result in resultList.OrderByDescending(t => t.Item2))
-            {
-                if (result.Item2 < 0 && firstNegative)
+                var playerAction = Strategies.BigMoneyWithCard.Player(Cards.Magpie, cardCount:2, playerName: "DoubleMagpie");
+                foreach (PlayerAction otherPlayerAction in BuiltInStrategies.StrategyLoader.GetAllPlayerActions())
                 {
-                    firstNegative = false;
-                    System.Console.WriteLine("=====>");
-                }
-                System.Console.WriteLine("{0:F1}% difference for {1}", result.Item2, result.Item1);
-            }            
-        }   
+                    if (playerAction == otherPlayerAction)
+                        continue;
+
+                    testOutput.ComparePlayers(
+                        playerAction,
+                        otherPlayerAction,
+                        shouldParallel: true,                        
+                        logGameCount: 0,
+                        debugLogs: false,
+                        numberOfGames: 1000,
+                        useColonyAndPlatinum: true,
+                        createHtmlReport: false,
+                        createRankingReport: true);
+                }                
+            }
+        }        
     }
 }

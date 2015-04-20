@@ -92,9 +92,9 @@ namespace Dominion
             return this.playerAction.GetCardFromDiscardToTopDeck(gameState, isOptional);            
         }
 
-        public virtual Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
+        public virtual Card GetCardFromRevealedCardsToTopDeck(GameState gameState, bool isOptional)
         {
-            return this.playerAction.GetCardFromRevealedCardsToTopDeck(gameState);            
+            return this.playerAction.GetCardFromRevealedCardsToTopDeck(gameState, isOptional);            
         }
 
         public virtual Card GetCardFromRevealedCardsToTrash(GameState gameState, CardPredicate acceptableCard)
@@ -253,6 +253,11 @@ namespace Dominion
         public virtual int GetCoinAmountToUseInButcher(GameState gameState)
         {
             return this.playerAction.GetCoinAmountToUseInButcher(gameState);
+        }
+
+        public virtual void ChooseLocationForStashAfterShuffle(GameState gameState, int[] locations)
+        {
+            this.playerAction.ChooseLocationForStashAfterShuffle(gameState, locations);
         }
     }
 }

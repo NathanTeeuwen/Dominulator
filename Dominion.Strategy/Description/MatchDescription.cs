@@ -16,6 +16,14 @@ namespace Dominion.Strategy.Description
         public readonly Comparison comparison;
         public int countThreshHold;
 
+        public MatchDescription(Card card)
+        {
+            this.cardType = card;
+            this.countSource = CountSource.Always;
+            this.comparison = Comparison.Equals;
+            this.countThreshHold = 1;
+        }
+
         public MatchDescription(CountSource countSource, Card cardType, Comparison comparison, int threshhold)
         {
             this.cardType = cardType;
@@ -49,8 +57,11 @@ namespace Dominion.Strategy.Description
                 case CountSource.InHand:
                     countOfTheSource = Strategy.CountInHand(this.cardType, gameState);
                     break;
-                case CountSource.None:
+                case CountSource.Always:
                     return true;
+                case CountSource.AvailableCoin:
+                    countOfTheSource = gameState.Self.AvailableCoins;
+                    break;
                 default:
                     throw new Exception("Unhandled source case");
             }
@@ -65,6 +76,18 @@ namespace Dominion.Strategy.Description
                     {
                         return countOfTheSource < this.countThreshHold;
                     }
+                case Comparison.GreaterThanEqual:
+                    {
+                        return countOfTheSource >= this.countThreshHold;
+                    }
+                case Comparison.LessThanEqual:
+                    {
+                        return countOfTheSource <= this.countThreshHold;
+                    }
+                case Comparison.Equals:
+                    {
+                        return countOfTheSource == this.countThreshHold;
+                    }
                 default:
                     throw new Exception("Unhandled comparison case");
             }
@@ -72,10 +95,7 @@ namespace Dominion.Strategy.Description
 
         public void WriteText(System.IO.TextWriter writer)
         {
-            if (this.countThreshHold > 0)
-            {
-                writer.Write("({0})", this.countThreshHold);
-            }
+            writer.Write("({0} {1} {2} {3})", this.countSource, this.cardType.name, this.comparison, this.countThreshHold);            
         }
     }
 }

@@ -84,6 +84,18 @@ namespace Dominion
             }
         }
 
+        public void PlayerChoseLocationForStash(PlayerState playerState, int[] positions)
+        {
+            this.textWriter.Write("... and placed stash at locations: ");
+            for (int i = 0; i < positions.Length; ++i)
+            {
+                if (i != 0)
+                    this.textWriter.Write(", ");
+                this.textWriter.Write("{0}", positions[i]);
+            }
+            this.textWriter.WriteLine();
+        }
+
         private void WriteOutPlayedTreasuresIfNecessary(bool unindent = false)
         {
             if (this.playedTreasures.Count > 0)
@@ -215,7 +227,7 @@ namespace Dominion
             }
         }
 
-        public void PlayerDiscardCard(PlayerState playerState, Card card)
+        public void PlayerDiscardCard(PlayerState playerState, Card card, DeckPlacement source)
         {
             if (playerState.PlayPhase == PlayPhase.Cleanup)
             {
@@ -223,7 +235,7 @@ namespace Dominion
             }
             else
             {
-                this.textWriter.WriteLine("{0} Discards {1}.", GetPlayerName(playerState), card.name);
+                this.textWriter.WriteLine("{0} Discards {1} from {2}.", GetPlayerName(playerState), card.name, TextForDeckPlacement(source));
             }
         }
 
@@ -275,8 +287,10 @@ namespace Dominion
             foreach (PlayerState player in gameState.players.AllPlayers)
             {
                 this.textWriter.WriteLine("{0} Total Score is: {1}", player.actions.PlayerName, player.TotalScore());
-                this.PushScope();
+                this.PushScope();                
                 this.WriteAllOwnedCards(player);
+                if (player.VictoryTokenCount > 0)
+                    this.textWriter.WriteLine("{0} points from Victory Tokens.", player.VictoryTokenCount);
                 this.PopScope();
                 this.textWriter.WriteLine();           
             }
@@ -294,6 +308,12 @@ namespace Dominion
                 var sign = coinAmount > 0 ? "+" : "";
                 this.textWriter.WriteLine("{2}{0} Coin = {1} all together.", coinAmount, playerState.AvailableCoins, sign);
             }
+        }
+
+        public void PlayerGainedVictoryTokens(PlayerState playerState, int amount)
+        {
+            var sign = amount > 0 ? "+" : "";
+            this.textWriter.WriteLine("{2}{0} Victory Points = {1} all together.", amount, playerState.VictoryTokenCount, sign);
         }
 
         public void PlayerGainedPotion(PlayerState playerState, int count)
@@ -491,6 +511,36 @@ namespace Dominion
                 textWriter.Write("{0} {1}", cardCount, cardCount > 1 ? lastCardType.pluralName : lastCardType.name);
                 cardCount = 0;
             }            
+        }
+
+        private string TextForDeckPlacement(DeckPlacement source)
+        {
+            switch (source)
+            {
+                case DeckPlacement.Discard:
+                    return "discard";
+                case DeckPlacement.TopOfDeck:
+                    return "top of deck";
+                case DeckPlacement.Default:
+                    throw new Exception();
+                case DeckPlacement.Hand:
+                    return "hand";
+                case DeckPlacement.Play:
+                    return "play";
+                case DeckPlacement.Revealed:
+                    return "revealed cards";
+                case DeckPlacement.Supply:
+                    return "supply";
+                case DeckPlacement.Trash:
+                    return "trash";
+                default:
+                    throw new Exception();
+            }
+        }
+
+        public void PlayerPlacedCardOnIslandMat(PlayerState playerState, Card card)
+        {
+            this.textWriter.WriteLine("{0} placed {1} on the island mat.", GetPlayerName(playerState), card.name);            
         }
     }
 }

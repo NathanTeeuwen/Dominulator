@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="Win8Client.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Win8Client"        
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Name="Page">
+
+    <Page.Resources>        
+        <ResourceDictionary Source="StandardStyles.xaml" />        
+    </Page.Resources>
+    
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >    
+        <Grid.Resources>
+            <local:SettingsButtonVisibilityConverter x:Key="SettingsButtonVisibilityConverter" />
+            <local:SettingsBackButtonVisibilityConverter x:Key="SettingsBackButtonVisibilityConverter" />
+            <local:PageConfigStrategyReportVisibilityConverter x:Key="PageConfigStrategyReportVisibilityConverter" />
+            <local:PageConfigDesignVisibilityConverter x:Key="PageConfigDesignVisibilityConverter" />            
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>            
+            <RowDefinition Height="*"/>            
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button Style="{StaticResource BackAppBarButtonStyle}" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsBackButtonVisibilityConverter}}" BorderThickness="0" Click="SettingsBackButton_Click"/>
+            <StackPanel Orientation="Horizontal" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsButtonVisibilityConverter}}">                
+                <Button Style="{StaticResource AllCardsAppBarButtonStyle}" BorderThickness="0" Click="AllCardsButton_Click"/>
+                <Button Style="{StaticResource ReportAppBarButtonStyle}" BorderThickness="0" Click="ReportButton_Click"/>                
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsButtonVisibilityConverter}}">
+            <Button Style="{StaticResource SettingsAppBarButtonStyle}" BorderThickness="0" Click="SettingsButton_Click"/>
+        </StackPanel>
+        <TextBlock Grid.Row="0"  FontSize="100" VerticalAlignment="Center" HorizontalAlignment="Center">Dominulator</TextBlock>
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto">
+            <Grid>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" Visibility="{Binding PageConfig.Value, Converter={StaticResource PageConfigDesignVisibilityConverter}}">
+                    <StackPanel.Resources>
+                        <local:CurrentCardVisibilityConverter x:Key="CurrentCardVisibilityConverter" />
+                        <local:AllCardVisibilityConverter x:Key="AllCardVisibilityConverter" />
+                        <local:SettingsVisibilityConverter x:Key="SettingsVisibilityConverter" />
+                    </StackPanel.Resources>
+                    <local:CurrentDeckPicker x:Name="CurrentCards" Visibility="{Binding CardVisibility.Value, Converter={StaticResource CurrentCardVisibilityConverter}}"/>
+                    <local:AllCardsPicker x:Name="AllCards" Visibility="{Binding CardVisibility.Value, Converter={StaticResource AllCardVisibilityConverter}}"/>
+                    <local:Settings Visibility="{Binding CardVisibility.Value, Converter={StaticResource SettingsVisibilityConverter}}"/>
+                    <StackPanel Width="100"></StackPanel>
+                    <local:Strategies/>
+                </StackPanel>
+                <WebView Grid.Row="0" x:Name="ResultsWebView" Width="Auto" Height="Auto" Visibility="{Binding PageConfig.Value, Converter={StaticResource PageConfigStrategyReportVisibilityConverter}}"></WebView>
+            </Grid>            
+        </ScrollViewer>
+    </Grid>
+</Page>

@@ -24,21 +24,30 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Explorer] = new Explorer(playerAction);
             result[Dominion.Cards.Golem] = new Golem(playerAction);
             result[Dominion.Cards.Governor] = new Governor(playerAction);
+            result[Dominion.Cards.Herbalist] = new Herbalist(playerAction);
+            result[Dominion.Cards.Herald] = new Herald(playerAction);
             result[Dominion.Cards.HorseTraders] = new HorseTraders(playerAction);
             result[Dominion.Cards.IllGottenGains] = new IllGottenGainsAlwaysGainCopper(playerAction);
+            result[Dominion.Cards.Island] = new Island(playerAction);            
             result[Dominion.Cards.Library] = new Library(playerAction);
+            result[Dominion.Cards.Masquerade] = new Masquerade(playerAction);
             result[Dominion.Cards.MarketSquare] = new MarketSquare(playerAction);
+            result[Dominion.Cards.Masterpiece] = new Masterpiece(playerAction);
             result[Dominion.Cards.Mint] = new Mint(playerAction);
             result[Dominion.Cards.Mystic] = new MysticAndWishingWell(playerAction);
+            result[Dominion.Cards.NomadCamp] = new NomadCamp(playerAction);
             result[Dominion.Cards.Nobles] = new Nobles(playerAction);
+            result[Dominion.Cards.PearlDiver] = new PearlDiver(playerAction);
             result[Dominion.Cards.Rebuild] = new Rebuild(playerAction);
             result[Dominion.Cards.SpiceMerchant] = new SpiceMerchant(playerAction);
+            result[Dominion.Cards.Scavenger] = new Scavenger(playerAction);
             result[Dominion.Cards.ScryingPool] = new ScryingPool(playerAction);
             result[Dominion.Cards.Scheme] = new Scheme(playerAction);
             result[Dominion.Cards.Steward] = new Steward(playerAction);
             result[Dominion.Cards.RoyalSeal] = new RoyalSeal(playerAction);
             result[Dominion.Cards.Treasury] = new Treasury(playerAction);
             result[Dominion.Cards.Trader] = new Trader(playerAction);
+            result[Dominion.Cards.Vault] = new Vault(playerAction);
             result[Dominion.Cards.Watchtower] = new Watchtower(playerAction);
             result[Dominion.Cards.WalledVillage] = new WalledVillage(playerAction);
             result[Dominion.Cards.WishingWell] = result[Dominion.Cards.Mystic];
@@ -51,15 +60,20 @@ namespace Dominion.Strategy.DefaultPlayRules
             var result = new MapOfCards<GameStatePlayerActionPredicate>();
 
             result[Dominion.Cards.Apprentice] = Strategy.HasCardToTrashInHand;
-            result[Dominion.Cards.Bishop] = Strategy.HasCardToTrashInHand;            
+            result[Dominion.Cards.Altar] = Strategy.HasCardToTrashInHand;    
+            result[Dominion.Cards.Bishop] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Forager] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Island] = Strategy.HasCardToDiscardInHand;
             result[Dominion.Cards.JunkDealer] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Lookout] = Lookout.ShouldPlay;
+            result[Dominion.Cards.Masquerade] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Remodel] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Salvager] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.SpiceMerchant] = Strategy.HasCardToTrashInHand;
-            result[Dominion.Cards.Trader] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Trader] = Strategy.HasCardToTrashInHand;            
             result[Dominion.Cards.TradingPost] = Strategy.HasAtLeast2ToTrashInHand;
             result[Dominion.Cards.Transmute] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Rats] = Strategy.HasCardToTrashInHand;
             return result;
         }
     }

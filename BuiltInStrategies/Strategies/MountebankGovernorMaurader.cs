@@ -25,14 +25,18 @@ namespace Strategies
             {
             }
 
-            public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
+            public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)            
             {
-                if (HasCardInHand(Cards.Gold, gameState))
-                    return PlayerActionChoice.Trash;
-                else if (gameState.Self.ExpectedCoinValueAtEndOfTurn >= 6 && gameState.Self.ExpectedCoinValueAtEndOfTurn < 8)
-                    return PlayerActionChoice.PlusCard;
-                else
-                    return PlayerActionChoice.GainCard;
+                if (gameState.CurrentContext.CurrentCard == Cards.Governor)
+                {
+                    if (HasCardInHand(Cards.Gold, gameState))
+                        return PlayerActionChoice.Trash;
+                    else if (gameState.Self.ExpectedCoinValueAtEndOfTurn >= 6 && gameState.Self.ExpectedCoinValueAtEndOfTurn < 8)
+                        return PlayerActionChoice.PlusCard;
+                    else
+                        return PlayerActionChoice.GainCard;
+                }
+                return base.ChooseBetween(gameState, acceptableChoice);
             }
         }
 

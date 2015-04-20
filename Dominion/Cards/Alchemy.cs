@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Dominion.CardTypes
 {
@@ -14,8 +9,8 @@ namespace Dominion.CardTypes
     { 
         public static Potion card = new Potion();
 
-        private Potion() 
-            : base("Potion", Expansion.Alchemy, coinCost: 4, isTreasure:true) 
+        private Potion()
+            : base("Potion", Expansion.Alchemy, coinCost: 4, isTreasure: true, isKingdomCard: false) 
         { 
         }
 
@@ -51,14 +46,15 @@ namespace Dominion.CardTypes
         public static Apothecary card = new Apothecary();
 
         private Apothecary()
-            : base("Apothecary", Expansion.Alchemy, coinCost: 2, potionCost: 1, isAction: true, plusCards: 1, plusActions: 1)
+            : base("Apothecary", Expansion.Alchemy, pluralName: "Apothecaries", coinCost: 2, potionCost: 1, isAction: true, plusCards: 1, plusActions: 1)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RevealCardsFromDeck(4);
+            currentPlayer.RevealCardsFromDeck(4, gameState);
             currentPlayer.MoveRevealedCardsToHand(card => card == Copper.card || card == Potion.card);
+            currentPlayer.RequestPlayerTopDeckRevealedCardsInAnyOrder(gameState); 
         }
     }
 
@@ -80,7 +76,7 @@ namespace Dominion.CardTypes
             {
                 int cardsToDraw = card.CurrentCoinCost(currentPlayer) + 2 * card.potionCost;
 
-                currentPlayer.DrawAdditionalCardsIntoHand(cardsToDraw);
+                currentPlayer.DrawAdditionalCardsIntoHand(cardsToDraw, gameState);
             }
         }
     }
@@ -157,7 +153,7 @@ namespace Dominion.CardTypes
         {
             while (true)
             {
-                Card result = currentPlayer.DrawAndRevealOneCardFromDeck();
+                Card result = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
                 if (result == null)
                     return null;
 
@@ -236,7 +232,7 @@ namespace Dominion.CardTypes
             currentPlayer.RequestPlayerInspectTopOfDeckForDiscard(currentPlayer, gameState);
             while (true)
             {
-                Card card = currentPlayer.DrawAndRevealOneCardFromDeck();
+                Card card = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
                 if (card == null || !card.isAction)
                     break;
             }

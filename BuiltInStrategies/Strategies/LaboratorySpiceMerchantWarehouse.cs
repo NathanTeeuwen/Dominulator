@@ -29,12 +29,7 @@ namespace Strategies
             public override bool ShouldPutCardOnTopOfDeck(Card card, GameState gameState)
             {
                 return true;
-            }
-
-            public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
-            {
-                return PlayerActionChoice.PlusCard;
-            }
+            }         
         }
 
         private static ICardPicker PurchaseOrder()

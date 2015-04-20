@@ -14,7 +14,7 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
         }
         
         
-        private bool ShouldPutDeckInDiscardBasedOnAverageValue(GameState gameState)
+        static public bool ShouldPutDeckInDiscardBasedOnAverageValue(GameState gameState)
         {
             double averageValueOfDeck = 0;
             double averageValueOfDiscard = 0;
@@ -31,13 +31,7 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
 
             // add 0.5 to average value of discard to prefer discarding.  This takes into account the advantages of preferring a quicker deck to get cards bought in play earlier.
             return averageValueOfDiscard + 0.5 > averageValueOfDeck;
-        }
-
-        /*
-        public override bool ShouldPutDeckInDiscard(GameState gameState)
-        {
-            return true;
-        }*/
+        }      
         
         public override bool ShouldPutDeckInDiscard(GameState gameState)
         {            

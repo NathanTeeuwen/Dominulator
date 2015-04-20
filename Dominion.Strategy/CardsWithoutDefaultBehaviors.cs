@@ -16,29 +16,80 @@ namespace Dominion.Strategy
             // implemented cards that require default behaviors            
             Cards.Embargo,            
             Cards.Graverobber,
-            Cards.Haven,
-            Cards.Herald,
-            Cards.Herbalist,
+            Cards.Haven,            
             Cards.Inn,
-            Cards.Island,            
-            Cards.Mandarin,
-            Cards.Masquerade,
-            Cards.Masterpiece,
+            Cards.Journeyman,        
+            Cards.Mandarin,            
             Cards.Minion,          
             Cards.NativeVillage,
             Cards.Navigator,
-            Cards.NomadCamp,
             Cards.Oracle,
             Cards.Pawn,
-            Cards.PearlDiver,
-            Cards.PirateShip,
-            Cards.Scavenger,
-            Cards.Scout,
+            Cards.PirateShip,            
             Cards.Squire,            
             Cards.StoneMason,
             Cards.Torturer,
-            Cards.Tournament,            
-            Cards.Vault,                   
+            Cards.Tournament,       
+       
+            // Adventures
+
+            Cards.Amulet,
+            Cards.Artificer,
+            Cards.BridgeTroll,
+            Cards.CaravanGuard,
+            Cards.Champion,
+            Cards.CoinOfTheRealm,
+            Cards.Disciple,
+            Cards.DistantLands,
+            Cards.Duplicate,
+            Cards.Dungeon,
+            Cards.Fugitive,
+            Cards.Gear,
+            Cards.Giant,
+            Cards.Guide,
+            Cards.HauntedWoods,
+            Cards.Hero,
+            Cards.Hireling,            
+            Cards.Miser,
+            Cards.Page,
+            Cards.Peasant,
+            Cards.Port,
+            Cards.Ranger,
+            Cards.RatCatcher,
+            Cards.Raze,
+            Cards.Relic,
+            Cards.RoyalCarriage,
+            Cards.Solider,            
+            Cards.SwampHag,
+            Cards.Teacher,
+            Cards.Transmogrify,
+            Cards.TreasureHunter,
+            Cards.TreasureTrove,
+            Cards.Warrior,
+            Cards.WineMerchant,
+
+            // events
+
+            Cards.Alms,
+            Cards.Ball,
+            Cards.Borrow,
+            Cards.Bonfire,
+            Cards.Expedition,
+            Cards.Ferry,
+            Cards.Inheritance,
+            Cards.LostArts,
+            Cards.Mission,
+            Cards.PathFinding,
+            Cards.Pilgrimage,
+            Cards.Plan,
+            Cards.Quest,
+            Cards.Raid,
+            Cards.Save,
+            Cards.ScoutingParty,
+            Cards.Seaway,
+            Cards.Trade,
+            Cards.Training,
+            Cards.TravellingFair
         };
 
         public static IEnumerable<Card> FullyImplementedKingdomCards()
@@ -50,6 +101,20 @@ namespace Dominion.Strategy
                 if (CardsWithoutDefaultBehaviors.Contains(card))
                     continue;
 
+                yield return card;
+            }
+        }
+
+        public static IEnumerable<Card> UnImplementedKingdomCards()
+        {
+
+            foreach (Card card in Cards.UnimplementedCards)
+            {                                
+                yield return card;
+            }
+
+            foreach (Card card in CardsWithoutDefaultBehaviors)
+            {                
                 yield return card;
             }
         }        

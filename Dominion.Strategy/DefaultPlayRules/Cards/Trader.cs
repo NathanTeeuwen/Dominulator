@@ -15,8 +15,7 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
 
         public override bool ShouldRevealCardFromHandForCard(GameState gameState, Card card, Card cardFor)
         {
-            return playerAction.trashOrder.DoesCardPickerMatch(gameState, cardFor) &&
-                   !playerAction.purchaseOrder.DoesCardPickerMatch(gameState, cardFor);
+            return cardFor != Dominion.Cards.Silver && playerAction.ShouldTrashCard(gameState, cardFor);         
         }
     }
 }

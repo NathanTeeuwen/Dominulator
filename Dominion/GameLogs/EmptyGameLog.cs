@@ -75,7 +75,7 @@ namespace Dominion
         {
         }
 
-        public virtual void PlayerDiscardCard(PlayerState playerState, Card card)
+        public virtual void PlayerDiscardCard(PlayerState playerState, Card card, DeckPlacement source)
         {
         }
 
@@ -163,6 +163,21 @@ namespace Dominion
         public virtual void PlayerReturnedCardToPile(PlayerState playerState, Card card)
         {
 
-        }        
+        }   
+     
+        public virtual void PlayerGainedVictoryTokens(PlayerState playerState, int amount)
+        {
+
+        }
+
+        public virtual void PlayerChoseLocationForStash(PlayerState playerState, int[] positions)
+        {
+
+        }
+
+        public virtual void PlayerPlacedCardOnIslandMat(PlayerState playerState, Card card)
+        {
+
+        }
     }
 }

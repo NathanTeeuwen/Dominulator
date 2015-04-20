@@ -131,9 +131,9 @@ namespace Dominion
             this.textWriter.WriteLine("{0} Discarded {1}.", playerState.actions.PlayerName, card.name);
         }
 
-        public void PlayerDiscardCard(PlayerState playerState, Card card)
+        public void PlayerDiscardCard(PlayerState playerState, Card card, DeckPlacement source)
         {
-            this.textWriter.WriteLine("{0} Discarded {1}.", playerState.actions.PlayerName, card.name);
+            this.textWriter.WriteLine("{0} Discarded {1} from {2}.", playerState.actions.PlayerName, card.name, TextForDeckPlacement(source));
         }
 
         public void PlayerRevealedCard(PlayerState playerState, Card card, DeckPlacement source)
@@ -218,6 +218,18 @@ namespace Dominion
             }
         }
 
+        public void PlayerChoseLocationForStash(PlayerState playerState, int[] positions)
+        {
+            this.textWriter.Write("{0} placed stash at locations: ", playerState.actions.PlayerName);
+            for (int i = 0; i < positions.Length; ++i)
+            {
+                if (i != 0)
+                    this.textWriter.Write(", ");
+                this.textWriter.Write("{0}", positions[i]);
+            }
+            this.textWriter.WriteLine();
+        }
+
         private void WriteAllCards(PlayerState playerState)
         {
             WriteAllCards(playerState.AllOwnedCards);
@@ -282,6 +294,42 @@ namespace Dominion
         public void PlayerReturnedCardToPile(PlayerState playerState, Card card)
         {
             this.textWriter.WriteLine("{0} returned {1} to its pile", playerState.actions.PlayerName, card.name);
+        }
+
+        public void PlayerGainedVictoryTokens(PlayerState playerState, int amount)
+        {
+            var sign = amount > 0 ? "+" : "";
+            this.textWriter.WriteLine("{2}{0} Coin = {1} all together.", amount, playerState.VictoryTokenCount, sign);
+        }
+
+        private string TextForDeckPlacement(DeckPlacement source)
+        {
+            switch (source)
+            {
+                case DeckPlacement.Discard:
+                    return "discard";
+                case DeckPlacement.TopOfDeck:
+                    return "top of deck";
+                case DeckPlacement.Default:
+                    return "default";
+                case DeckPlacement.Hand:
+                    return "hand";
+                case DeckPlacement.Play:
+                    return "play";
+                case DeckPlacement.Revealed:
+                    return "revealed cards";
+                case DeckPlacement.Supply:
+                    return "supply";
+                case DeckPlacement.Trash:
+                    return "trash";
+                default:
+                    throw new Exception();
+            }
+        }
+
+        public void PlayerPlacedCardOnIslandMat(PlayerState playerState, Card card)
+        {
+            this.textWriter.WriteLine("{0} placed {1} on it's island matt", playerState.actions.PlayerName, card.name);
         }
     }
 }

@@ -7,20 +7,14 @@ using System.Linq;
 
 namespace Strategies
 {
-    class MintBaker
+    public class MintBaker
         : Strategy    
     {
 
         public static PlayerAction Player()                        
         {
             return PlayerCustom("MintBaker");
-        }
-
-        /*
-        public static PlayerAction Player(string playerName)
-        {
-            return PlayerCustom(playerName);
-        }*/
+        }               
 
         public static PlayerAction PlayerCustom(string playerName)
         {

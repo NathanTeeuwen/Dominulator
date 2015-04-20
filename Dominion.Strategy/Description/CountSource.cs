@@ -8,12 +8,14 @@ using System.Threading.Tasks;
 
 namespace Dominion.Strategy.Description
 {
+    // Win8client depends on these integer values
     public enum CountSource
     {
-        CountOfPile,
-        CountAllOwned,
-        InHand,
-        None,
+        CountOfPile = 0,
+        CountAllOwned = 1,
+        InHand = 2,
+        Always = 3,
+        AvailableCoin = 4
     }
 
 }

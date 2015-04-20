@@ -10,12 +10,19 @@ namespace Dominion
     public class CardGameSubset
         : IEnumerable<Card>
     {
+        static private readonly int countSupportedCards = 300;
         static private readonly int sentinelIndex = -1;
         private int nextIndex = 0;
-        private List<int> mapCardIndexToSubsetIndex = new List<int>(250);
-        private List<Card> mapSubsetIndexToCard = new List<Card>(250);
+        private int[] mapCardIndexToSubsetIndex = new int[countSupportedCards];
+        private Card[] mapSubsetIndexToCard = new Card[countSupportedCards];
 
-        internal bool isInitializing = true;
+        public CardGameSubset()
+        {
+            for (int i = 0; i < countSupportedCards; ++i)
+            {
+                this.mapCardIndexToSubsetIndex[i] = sentinelIndex;
+            }
+        }
 
         internal int CountOfCardTypesInGame
         {
@@ -27,12 +34,11 @@ namespace Dominion
 
         internal void AddCard(Card card)
         {
-            GrowToHandleCard(card);
             if (this.mapCardIndexToSubsetIndex[card.Index] == sentinelIndex)
             {
                 int subsetIndex = nextIndex++;
                 this.mapCardIndexToSubsetIndex[card.Index] = subsetIndex;
-                this.mapSubsetIndexToCard.Add(card);
+                this.mapSubsetIndexToCard[subsetIndex] = card;
             }
         }
 
@@ -47,27 +53,18 @@ namespace Dominion
         }
 
         internal int GetIndexFor(Card card)
-        {
-            if (card.Index >= this.mapCardIndexToSubsetIndex.Count)
-                return -1;
-
+        {            
             return this.mapCardIndexToSubsetIndex[card.Index];
-        }
-
-        private void GrowToHandleCard(Card card)
-        {
-            while (this.mapCardIndexToSubsetIndex.Count < card.Index + 1)
-            {
-                if (!this.isInitializing)
-                    throw new Exception("Can not use unexpected card after initializing");
-
-                this.mapCardIndexToSubsetIndex.Add(sentinelIndex);                
-            }
-        }
+        }      
 
         public IEnumerator<Card> GetEnumerator()
         {
-            return mapSubsetIndexToCard.GetEnumerator();
+            for (int i = 0; i < this.mapSubsetIndexToCard.Length; ++i )
+            {
+                if (this.mapSubsetIndexToCard[i] == null)
+                    yield break;
+                yield return this.mapSubsetIndexToCard[i];
+            }
         }
 
         IEnumerator IEnumerable.GetEnumerator()

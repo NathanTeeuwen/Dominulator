@@ -11,6 +11,8 @@ namespace Dominion
         private PlayerState[] players;   // circular list, higher numbers to the left;
         private int currentPlayerIndex;
 
+        // we use a playerposition array instead of just using the order in the playerActions array so that
+        // we can gather stats about a player using it's player index - which will be constant from game to game
         public PlayerCircle(int playerCount, IPlayerAction[] playerActions, int[] playerPosition, Game game)
         {
             this.players = new PlayerState[playerCount];
@@ -85,7 +87,7 @@ namespace Dominion
             }
         }
 
-        public void AllPlayersDrawInitialCards(GameConfig gameConfig)
+        public void AllPlayersDrawInitialCards(GameConfig gameConfig, GameState gameState)
         {
             foreach (PlayerState playerState in this.players)
             {                
@@ -96,7 +98,7 @@ namespace Dominion
                     playerState.shuffleLuck = GetCardsInOrder(shuffleLuck).GetEnumerator();
                 }                
 
-                playerState.DrawUntilCountInHand(5);
+                playerState.DrawUntilCountInHand(5, gameState);
             }            
         }
 

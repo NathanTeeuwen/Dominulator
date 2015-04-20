@@ -14,8 +14,8 @@ namespace Dominion.CardTypes
     { 
         public static Colony card = new Colony();
 
-        private Colony() 
-            : base("Colony", Expansion.Prosperity, coinCost: 11, victoryPoints: playerState => 10) 
+        private Colony()
+            : base("Colony", Expansion.Prosperity, coinCost: 11, victoryPoints: playerState => 10, isKingdomCard: false) 
         { 
         } 
     }
@@ -26,7 +26,7 @@ namespace Dominion.CardTypes
         public static Platinum card = new Platinum();
 
         private Platinum() 
-            : base("Platinum", Expansion.Prosperity, coinCost: 9, plusCoins: 5, isTreasure: true) 
+            : base("Platinum", Expansion.Prosperity, coinCost: 9, plusCoins: 5, isTreasure: true, isKingdomCard:false) 
         { 
         } 
     }
@@ -76,23 +76,25 @@ namespace Dominion.CardTypes
         public static Bishop card = new Bishop();
 
         private Bishop()
-            : base("Bishop", Expansion.Prosperity, coinCost: 4, isAction: true)
+            : base("Bishop", Expansion.Prosperity, coinCost: 4, isAction: true, plusCoins:1 )
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.victoryTokenCount += 1;
+            int cardValue = 0;
             Card trashedCard = currentPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCardsToTrash => true, isOptional: false);
             if (trashedCard != null)
             {
-                currentPlayer.victoryTokenCount += trashedCard.CurrentCoinCost(currentPlayer) / 2;
-            }
+                cardValue = trashedCard.CurrentCoinCost(currentPlayer) / 2;
+            }            
 
             foreach (PlayerState otherPlayer in gameState.players.OtherPlayers)
             {
                 otherPlayer.RequestPlayerTrashCardFromHand(gameState, acceptableCardsToTrash => true, isOptional: true);
             }
+
+            currentPlayer.AddVictoryTokens(1 + cardValue);
         }
     }
 
@@ -112,7 +114,7 @@ namespace Dominion.CardTypes
 
             if (countEmpty >= 1)
             {
-                currentPlayer.DrawOneCardIntoHand();
+                currentPlayer.DrawOneCardIntoHand(gameState);
 
                 if (countEmpty >= 2)
                 {
@@ -220,7 +222,7 @@ namespace Dominion.CardTypes
         public static Goons card = new Goons();
 
         private Goons()
-            : base("Goons", Expansion.Prosperity, coinCost: 6, isAction: true, isAttack: true)
+            : base("Goons", Expansion.Prosperity, coinCost: 6, isAction: true, isAttack: true, plusBuy:1, plusCoins:2, pluralName:"Goons")
         {
             this.doSpecializedActionOnBuyWhileInPlay = DoSpecializedActionOnBuyWhileInPlay;
         }
@@ -232,7 +234,7 @@ namespace Dominion.CardTypes
 
         private new void DoSpecializedActionOnBuyWhileInPlay(PlayerState currentPlayer, GameState gameState, Card boughtCard)
         {
-            currentPlayer.victoryTokenCount += 1;
+            currentPlayer.AddVictoryTokens(1);
         }
     }
 
@@ -278,7 +280,7 @@ namespace Dominion.CardTypes
         public static KingsCourt card = new KingsCourt();
 
         private KingsCourt()
-            : base("King's Court", Expansion.Prosperity, coinCost: 7, isAction: true)
+            : base("King's Court", Expansion.Prosperity, coinCost: 7, isAction: true, mightMultiplyActions: true)
         {
         }
 
@@ -306,7 +308,7 @@ namespace Dominion.CardTypes
         {
             while (true)
             {
-                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
                 if (revealedCard == null)
                     break;
                 if (revealedCard.isTreasure)
@@ -427,7 +429,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.RevealCardsFromDeck(3);
+            otherPlayer.RevealCardsFromDeck(3, gameState);
             otherPlayer.MoveRevealedCardsToDiscard(card => card.isAction || card.isTreasure, gameState);
             otherPlayer.RequestPlayerPutRevealedCardsBackOnDeck(gameState);
         }
@@ -522,7 +524,7 @@ namespace Dominion.CardTypes
                             int cardCount = otherPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false);
                             if (cardCount == 2)
                             {
-                                otherPlayer.DrawOneCardIntoHand();
+                                otherPlayer.DrawOneCardIntoHand(gameState);
                             }
                             break;
                         }
@@ -548,7 +550,7 @@ namespace Dominion.CardTypes
             Card cardToPlay = null;
             while (true)
             {
-                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
                 if (revealedCard == null)
                 {
                     break;
@@ -582,7 +584,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.DrawUntilCountInHand(6);
+            currentPlayer.DrawUntilCountInHand(6, gameState);
         }
 
         public new DeckPlacement DoSpecializedActionOnGainWhileInHand(PlayerState currentPlayer, GameState gameState, Card gainedCard)

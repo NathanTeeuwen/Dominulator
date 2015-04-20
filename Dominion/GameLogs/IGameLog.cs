@@ -24,11 +24,12 @@ namespace Dominion
         void CardWentToLocation(DeckPlacement deckPlacement);
         void ReceivedDurationEffectFrom(PlayerState playerState, Card card);
         void PlayerGainedCard(PlayerState playerState, Card card);
-        void PlayerDiscardCard(PlayerState playerState, Card card);
+        void PlayerDiscardCard(PlayerState playerState, Card card, DeckPlacement source);
         void PlayerTrashedCard(PlayerState playerState, Card card);
         void PlayerPutCardInHand(PlayerState playerState, Card card);
         void PlayerTopDeckedCard(PlayerState playerState, Card card);
         void PlayerSetAsideCardFromHandForNextTurn(PlayerState playerState, Card card);
+        void PlayerPlacedCardOnIslandMat(PlayerState playerState, Card card);
         void PlayerReturnedCardToHand(PlayerState playerState, Card card);
         void PlayerReturnedCardToPile(PlayerState playerState, Card card);
         void DrewCardIntoHand(PlayerState playerState, Card card);
@@ -41,6 +42,8 @@ namespace Dominion
         void PlayerGainedCoinToken(PlayerState playerState, int coinAmount);
         void PlayerGainedActions(PlayerState playerState, int actionAmount);
         void PlayerGainedBuys(PlayerState playerState, int actionAmount);
-        void PlayerOverpaidForCard(Card boughtCard, int overPayAmount);        
+        void PlayerOverpaidForCard(Card boughtCard, int overPayAmount);
+        void PlayerGainedVictoryTokens(PlayerState playerState, int amount);
+        void PlayerChoseLocationForStash(PlayerState playerState, int[] positions);
     }
 }

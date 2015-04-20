@@ -72,6 +72,18 @@ namespace Dominion
             return this.DrawCardFromTop();
         } 
 
+        public void SwapCardsInPlace(int position1, int position2)
+        {           
+            int lastIndex = this.cards.Count - 1;
+            // the top of deck, or position 0, as at the end of the array.
+            position1 = lastIndex - position1;
+            position2 = lastIndex - position2;
+
+            Card card1 = this.cards[position1];
+            this.cards[position1] = this.cards[position2];
+            this.cards[position2] = card1;
+        }
+
         public Card TopCard()
         {
             if (this.cards.Count == 0)
@@ -96,6 +108,7 @@ namespace Dominion
             if (bottomCard != null)
             {
                 this.cards.RemoveAt(0);
+                base.Remove(bottomCard);
                 this.AddCardToTop(bottomCard);
             }
             return bottomCard;
@@ -114,7 +127,9 @@ namespace Dominion
 
         public void AddCardToTop(Card card)
         {
-            this.countKnownCard++;
+            if (card != null)
+                this.countKnownCard++;
+
             this.cards.Add(card);
             base.Add(card);
         }

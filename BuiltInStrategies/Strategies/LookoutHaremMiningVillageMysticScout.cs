@@ -31,7 +31,7 @@ namespace Strategies
             }
 
             // for scout
-            override public Card GetCardFromRevealedCardsToTopDeck(GameState gameState)
+            override public Card GetCardFromRevealedCardsToTopDeck(GameState gameState, bool isOptional)
             {
                 return gameState.Self.CardsBeingRevealed.OrderBy(card => card, new OrderCardByMostValued(gameState.Self)).First();
             }

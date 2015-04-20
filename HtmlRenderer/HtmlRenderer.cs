@@ -8,7 +8,7 @@ using Dominion;
 
 namespace HtmlRenderer
 {    
-    class HtmlRenderer
+    partial class HtmlRenderer
     {
         private int divIndex = 0;
         private readonly IndentedTextWriter textWriter;
@@ -174,7 +174,7 @@ namespace HtmlRenderer
                     this.textWriter.Indent();
                         this.textWriter.WriteLine("gridlines: {");
                         this.textWriter.Indent();
-                            this.textWriter.WriteLine("count: " + xAxis.Length/multiplesOfFifteen); 
+                        this.textWriter.WriteLine("count: " + (multiplesOfFifteen > 0 ? xAxis.Length / multiplesOfFifteen : xAxis.Length).ToString()); 
                         this.textWriter.Unindent();
                         this.textWriter.WriteLine("}");
                     this.textWriter.Unindent();
@@ -394,18 +394,6 @@ namespace HtmlRenderer
                 }
                 this.textWriter.Write("</style>");
             }
-        }
-
-        static Resources.ResourceLoader resourceLoader = new Resources.ResourceLoader(System.Reflection.Assembly.GetExecutingAssembly());
-
-        public static string GetEmbeddedContent(string content)
-        {
-            return resourceLoader.GetEmbeddedContent("HtmlRenderer.Resources.", content);            
-        }
-
-        public static byte[] GetEmbeddedContentAsBinary(string content)
-        {
-            return resourceLoader.GetEmbeddedContentAsBinary("HtmlRenderer.Resources.", content);
         }
     }
 }

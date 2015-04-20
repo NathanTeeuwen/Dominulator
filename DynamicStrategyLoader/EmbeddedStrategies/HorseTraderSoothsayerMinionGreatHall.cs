@@ -28,7 +28,7 @@ namespace Strategies
 
             public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
             {
-                if (gameState.CurrentCardBeingPlayed == Cards.Minion)
+                if (gameState.CurrentContext.CurrentCard == Cards.Minion)
                 {
                     if (CountInHand(Cards.Minion, gameState) >= 2)
                         return PlayerActionChoice.PlusCoin;
@@ -47,7 +47,7 @@ namespace Strategies
                     return PlayerActionChoice.Discard;
                 }
 
-                if (gameState.CurrentCardBeingPlayed == Cards.Pawn)
+                if (gameState.CurrentContext.CurrentCard == Cards.Pawn)
                 {
                     if (acceptableChoice(PlayerActionChoice.PlusAction))
                         return PlayerActionChoice.PlusAction;

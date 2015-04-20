@@ -21,7 +21,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            currentPlayer.RevealCardsFromDeck(3);
+            currentPlayer.RevealCardsFromDeck(3, gameState);
             Card cardType = gameState.players.PlayerLeft.actions.BanCardToDrawnIntoHandFromRevealedCards(gameState);
             if (!currentPlayer.cardsBeingRevealed.HasCard(cardType))
             {
@@ -117,7 +117,7 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             Card cardType = currentPlayer.RequestPlayerNameACard(gameState);
-            currentPlayer.RevealCardsFromDeck(3);
+            currentPlayer.RevealCardsFromDeck(3, gameState);
 
             while (currentPlayer.cardsBeingRevealed.HasCard(cardType))
             {
@@ -134,7 +134,7 @@ namespace Dominion.CardTypes
                 if (!currentPlayer.deck.Any())
                     break;
 
-                currentPlayer.LookAtCardsFromDeck(1);
+                currentPlayer.LookAtCardsFromDeck(1, gameState);
 
                 DeckPlacement deckPlacement = currentPlayer.actions.ChooseBetweenTrashTopDeckDiscard(gameState, currentPlayer.CardsBeingLookedAt.SomeCard());
 
@@ -168,7 +168,10 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+            Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
+            if (revealedCard == null)
+                return;
+
             if (revealedCard.isAction)
             {
                 currentPlayer.cardsBeingRevealed.RemoveCard(revealedCard);
@@ -187,7 +190,39 @@ namespace Dominion.CardTypes
                 currentPlayer.RequestPlayerTopDeckCardFromDiscard(gameState, isOptional: false);
             }            
         }
-    }    
+    }
+    
+    public class Journeyman
+        : Card
+    {
+        public static Journeyman card = new Journeyman();
+
+        private Journeyman()
+            : base("Journeyman", Expansion.Guilds, coinCost:5, isAction:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            Card namedCard = currentPlayer.RequestPlayerNameACard(gameState);
+
+            int cardFoundCount = 0;
+            while(true)
+            {
+                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
+                if (revealedCard == null)
+                    break;
+                if (revealedCard == namedCard)
+                    continue;
+                cardFoundCount++;
+                if (cardFoundCount >= 3)
+                    break;
+            }
+           
+            currentPlayer.MoveRevealedCardsToHand(card => card != namedCard);
+            currentPlayer.MoveRevealedCardsToDiscard(gameState);                
+        }
+    }
 
 
     public class Masterpiece
@@ -265,7 +300,7 @@ namespace Dominion.CardTypes
         {
             if (otherPlayer.GainCardFromSupply(Curse.card, gameState))
             {
-                otherPlayer.DrawAdditionalCardsIntoHand(1);
+                otherPlayer.DrawAdditionalCardsIntoHand(1, gameState);
             }
         }
     }

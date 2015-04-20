@@ -29,7 +29,10 @@ namespace Strategies
 
             public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
             {
-                return PlayerActionChoice.GainCard;
+                if (gameState.CurrentContext.CurrentCard == Cards.Governor)
+                    return PlayerActionChoice.GainCard;
+
+                return base.ChooseBetween(gameState, acceptableChoice);
             }
         }
 

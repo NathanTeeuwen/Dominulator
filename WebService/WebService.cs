@@ -88,7 +88,7 @@ namespace Program.WebService
 
                     var gameConfig = builder.ToGameConfig();
 
-                    var strategyComparison = new StrategyComparison(playerAction1, playerAction2, gameConfig, firstPlayerAdvantage: false, numberOfGames: 1000);
+                    var strategyComparison = new StrategyComparison(playerAction1, playerAction2, gameConfig, rotateWhoStartsFirst: true, numberOfGames: 1000);
                     result = strategyComparison.ComparePlayers(
                         gameIndex => null,
                         gameIndex => null,

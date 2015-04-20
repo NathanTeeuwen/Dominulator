@@ -14,8 +14,8 @@ namespace Dominion.CardTypes
     { 
         public static Curse card = new Curse(); 
         
-        private Curse() 
-            : base("Curse", Expansion.Base, coinCost: 0, isCurse: true) 
+        private Curse()
+            : base("Curse", Expansion.Base, coinCost: 0, isCurse: true, isKingdomCard: false) 
         {
         } 
     }
@@ -25,8 +25,8 @@ namespace Dominion.CardTypes
     { 
         public static Estate card = new Estate();
 
-        private Estate() 
-            : base("Estate", Expansion.Base, coinCost: 2, victoryPoints: playerState => 1) 
+        private Estate()
+            : base("Estate", Expansion.Base, coinCost: 2, victoryPoints: playerState => 1, isKingdomCard: false) 
         {
         } 
     }
@@ -36,8 +36,8 @@ namespace Dominion.CardTypes
     { 
         public static Duchy card = new Duchy();
 
-        private Duchy() 
-            : base("Duchy", Expansion.Base, pluralName: "Duchies", coinCost: 5, victoryPoints: playerState => 3) 
+        private Duchy()
+            : base("Duchy", Expansion.Base, pluralName: "Duchies", coinCost: 5, victoryPoints: playerState => 3, isKingdomCard: false) 
         { 
         }
 
@@ -57,8 +57,8 @@ namespace Dominion.CardTypes
     { 
         public static Province card = new Province();
 
-        private Province() 
-            : base("Province", Expansion.Base, coinCost: 8, victoryPoints: playerState => 6) 
+        private Province()
+            : base("Province", Expansion.Base, coinCost: 8, victoryPoints: playerState => 6, isKingdomCard: false) 
         {
         } 
     }
@@ -68,8 +68,8 @@ namespace Dominion.CardTypes
     { 
         public static Copper card = new Copper();
 
-        private Copper() 
-            : base("Copper", Expansion.Base, coinCost: 0, plusCoins: 1, isTreasure: true) 
+        private Copper()
+            : base("Copper", Expansion.Base, coinCost: 0, plusCoins: 1, isTreasure: true, isKingdomCard: false) 
         {
         } 
     }
@@ -79,7 +79,8 @@ namespace Dominion.CardTypes
     { 
         public static Silver card = new Silver();
 
-        private Silver() : base("Silver", Expansion.Base, coinCost: 3, plusCoins: 2, isTreasure: true) 
+        private Silver()
+            : base("Silver", Expansion.Base, coinCost: 3, plusCoins: 2, isTreasure: true, isKingdomCard: false) 
         {
         } 
     }
@@ -89,8 +90,8 @@ namespace Dominion.CardTypes
     { 
         public static Gold card = new Gold();
 
-        private Gold() 
-            : base("Gold", Expansion.Base, coinCost: 6, plusCoins: 3, isTreasure: true) 
+        private Gold()
+            : base("Gold", Expansion.Base, coinCost: 6, plusCoins: 3, isTreasure: true, isKingdomCard: false) 
         {
         } 
     }
@@ -177,7 +178,7 @@ namespace Dominion.CardTypes
             int countTreasureFound = 0;
             while (countTreasureFound < 2)
             {
-                Card card = currentPlayer.DrawAndRevealOneCardFromDeck();
+                Card card = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
                 if (card == null)
                 {
                     break;
@@ -246,7 +247,7 @@ namespace Dominion.CardTypes
                 ++currentPlayer.numberOfCardsToBeDrawn;
             }
 
-            currentPlayer.DrawAdditionalCardsIntoHand(currentPlayer.numberOfCardsToBeDrawn);
+            currentPlayer.DrawAdditionalCardsIntoHand(currentPlayer.numberOfCardsToBeDrawn, gameState);
             currentPlayer.numberOfCardsToBeDrawn = 0;
         }
     }
@@ -300,7 +301,7 @@ namespace Dominion.CardTypes
         {
             foreach (PlayerState player in gameState.players.OtherPlayers)
             {
-                player.DrawAdditionalCardsIntoHand(1);
+                player.DrawAdditionalCardsIntoHand(1, gameState);
             }
         }
     }
@@ -354,7 +355,7 @@ namespace Dominion.CardTypes
         {
             while (currentPlayer.hand.Count < 7)
             {
-                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck();
+                Card revealedCard = currentPlayer.DrawAndRevealOneCardFromDeck(gameState);
                 if (revealedCard == null)
                 {
                     break;
@@ -515,7 +516,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
         {
-            otherPlayer.RevealCardsFromDeck(2);
+            otherPlayer.RevealCardsFromDeck(2, gameState);
 
             Card trashedCard = currentPlayer.RequestPlayerTrashOtherPlayersRevealedCard(gameState, card => card.isTreasure, otherPlayer);
 
@@ -538,7 +539,7 @@ namespace Dominion.CardTypes
         public static ThroneRoom card = new ThroneRoom();
 
         private ThroneRoom()
-            : base("Throne Room", Expansion.Base, coinCost: 4, isAction: true)
+            : base("Throne Room", Expansion.Base, coinCost: 4, isAction: true, mightMultiplyActions:true)
         {
         }
 

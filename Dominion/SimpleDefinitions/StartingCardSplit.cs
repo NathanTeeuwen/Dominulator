@@ -9,6 +9,8 @@ namespace Dominion
     public enum StartingCardSplit
     {
         Random,
+        Split25,
+        Split34,
         Split43,
         Split52,
     }

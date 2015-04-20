@@ -13,6 +13,11 @@ namespace Dominion.Strategy.DefaultPlayRules
                 return x.isCurse ? -1 : 1;
             }
 
+            if (x.isRuins ^ y.isRuins)
+            {
+                return x.isRuins ? -1 : 1;
+            }
+
             if (x.isAction ^ y.isAction)
             {
                 return x.isAction ? -1 : 1;

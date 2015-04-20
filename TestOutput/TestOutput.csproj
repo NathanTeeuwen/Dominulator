@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\Common.Targets" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -16,7 +17,6 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -24,7 +24,6 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -40,6 +39,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultSetRanker.cs" />
     <Compile Include="TestWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -48,20 +48,20 @@
       <Name>Dominion.BuiltInStrategies</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataGathering\Dominion.DataGathering.csproj">
-      <Project>{992736aa-e61e-4ed5-88d9-3de4e8a214cb}</Project>
+      <Project>{fbeb2733-2b59-4e3f-b1c6-7266953a5961}</Project>
       <Name>Dominion.DataGathering</Name>
     </ProjectReference>
     <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj">
-      <Project>{6816a653-b44f-4614-b228-8c70d6747ca0}</Project>
+      <Project>{de60f275-b1b5-40f4-be3e-35805f42cce3}</Project>
       <Name>Dominion.Strategy</Name>
     </ProjectReference>
     <ProjectReference Include="..\Dominion\Dominion.csproj">
-      <Project>{d4a4d420-486e-489d-9db6-7fcba7d63359}</Project>
+      <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
       <Name>Dominion</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HtmlRenderer\HtmlRenderer.csproj">
+    <ProjectReference Include="..\HtmlRenderer\HtmlRenderer.Native.csproj">
       <Project>{31ce0f10-4472-4cff-b683-44b1f13b8d39}</Project>
-      <Name>HtmlRenderer</Name>
+      <Name>HtmlRenderer.Native</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

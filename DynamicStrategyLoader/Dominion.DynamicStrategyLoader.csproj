@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\Common.Targets" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -16,7 +17,6 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -24,7 +24,6 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -40,10 +39,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DynamicStrategyLoader.cs" />
-    <EmbeddedResource Include="EmbeddedStrategies\HermitFeodum.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\AmbassadorCaravanApprenticeMerchantGuild.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\AmbassadorCaravanLaboratory.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\ApothecaryBishop.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\ArmoryConspiratorForagerGreatHall.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\BigMoney.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\BigMoneyBridge.cs" />
@@ -79,6 +77,7 @@
     <EmbeddedResource Include="EmbeddedStrategies\FamiliarPotionSilverOpenning.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\FamiliarSilverSilverOpenning.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\FeodumDevelop.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\FirstGame.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\FishingVillageChapelPoorHouse.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\FishingVillageChapelPoorHouseTalisman.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\FishingVillageJack.cs" />
@@ -87,7 +86,9 @@
     <EmbeddedResource Include="EmbeddedStrategies\GardensBeggarIronworks.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\GovernorJunkDealer.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\GovernorMarketsquare.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\GovernorSpiceMerchantHorseTradersJunkDealer.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\Harem.cs" />
+    <EmbeddedResource Include="EmbeddedStrategies\HermitFeodum.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\HermitMarketSquare.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\HorseTraderSoothsayerMinionGreatHall.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\Illgottengains.cs" />
@@ -116,6 +117,7 @@
     <EmbeddedResource Include="EmbeddedStrategies\TaxMan.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\TreasureMap.cs" />
     <EmbeddedResource Include="EmbeddedStrategies\TreasureMapDoctor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BuiltInStrategies\Dominion.BuiltInStrategies.csproj">
@@ -123,11 +125,11 @@
       <Name>Dominion.BuiltInStrategies</Name>
     </ProjectReference>
     <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj">
-      <Project>{6816a653-b44f-4614-b228-8c70d6747ca0}</Project>
+      <Project>{de60f275-b1b5-40f4-be3e-35805f42cce3}</Project>
       <Name>Dominion.Strategy</Name>
     </ProjectReference>
     <ProjectReference Include="..\Dominion\Dominion.csproj">
-      <Project>{d4a4d420-486e-489d-9db6-7fcba7d63359}</Project>
+      <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
       <Name>Dominion</Name>
     </ProjectReference>
     <ProjectReference Include="..\Resources\Resources.csproj">

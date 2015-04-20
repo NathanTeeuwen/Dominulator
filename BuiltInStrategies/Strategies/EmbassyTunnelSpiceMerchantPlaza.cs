@@ -29,12 +29,7 @@ namespace Strategies
                         actionOrder: ActionOrder(),                            
                         discardOrder: DiscardOrder())
             {
-            }
-
-            public override PlayerActionChoice ChooseBetween(GameState gameState, IsValidChoice acceptableChoice)
-            {
-                return PlayerActionChoice.PlusCard;
-            }
+            }       
         }                       
 
         private static ICardPicker PurchaseOrder(bool shouldBuySpiceMerchant, bool shouldBuyPlaza)

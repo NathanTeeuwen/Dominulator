@@ -20,9 +20,10 @@ namespace Dominion.Strategy.DefaultPlayRules.Cards
 
         public override DeckPlacement ChooseBetweenTrashAndTopDeck(GameState gameState, Card card)
         {
-            if (playerAction.trashOrder.GetPreferredCard(gameState, c => c == card) != null)
-                return DeckPlacement.Trash;
-            return DeckPlacement.TopOfDeck;
+            if (playerAction.gainOrder.DoesCardPickerMatch(gameState, card))
+                return DeckPlacement.TopOfDeck;
+            
+            return DeckPlacement.Trash;            
         }
     }
 }

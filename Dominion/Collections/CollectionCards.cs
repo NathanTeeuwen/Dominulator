@@ -240,6 +240,11 @@ namespace Dominion
             return this.CountOf(card) > 0;
         }
 
+        public bool Contains(Card card)
+        {
+            return this.AnyOf(card);
+        }
+
         public bool AnyWhere(CardPredicate predicate)
         {
             for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)
@@ -282,6 +287,19 @@ namespace Dominion
         {
             for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)
             {
+                if (this.mapGameCardIndexToCount[index] > 1)
+                    return true;
+            }
+
+            return false;
+        }
+
+        public bool HasDuplicatesExceptMenagerie()
+        {
+            for (int index = 0; index < this.mapGameCardIndexToCount.Length; ++index)
+            {
+                if (this.gameSubset.GetCardForIndex(index) == Cards.Menagerie)
+                    continue;
                 if (this.mapGameCardIndexToCount[index] > 1)
                     return true;
             }

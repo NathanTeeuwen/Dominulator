@@ -36,7 +36,7 @@ namespace Dominion.Strategy
             {
                 throw new NotImplementedException();
             }
-
+         
             public Card GetPreferredCard(GameState gameState, CardPredicate cardPredicate)
             {
                 IComparer<Card> comparer = this.comparerFactory.GetComparer(gameState);
@@ -110,9 +110,19 @@ namespace Dominion.Strategy
 
                 public int Compare(Card first, Card second)
                 {
+                    if (first.mightMultiplyActions ^ second.mightMultiplyActions)
+                    {
+                        return first.mightMultiplyActions ? -1 : 1;
+                    }
+
                     if (first.plusAction != 0 ^ second.plusAction != 0)
                     {
                         return first.plusAction != 0 ? -1 : 1;
+                    }
+
+                    if (first.canGivePlusAction ^ second.canGivePlusAction)
+                    {
+                        return first.canGivePlusAction ? -1 : 1;
                     }
 
                     if (first.DefaultCoinCost != second.DefaultCoinCost)
@@ -129,7 +139,7 @@ namespace Dominion.Strategy
 
                     return 0;
                 }
-            }
+            }            
 
             // TODO:  implement a better default choice of which Ruins to player.
             private static int CompareRuins(Card first, Card second, GameState gameState, ICardPicker purchaseOrder)
@@ -201,6 +211,7 @@ namespace Dominion.Strategy
         public static CardPickByPriority DefaultDiscardOrder()
         {
             return new CardPickByPriority(
+                CardAcceptance.For(Cards.Colony),
                 CardAcceptance.For(Cards.Province),
                 CardAcceptance.For(Cards.Duchy),
                 CardAcceptance.For(Cards.Estate),

@@ -10,27 +10,36 @@ using Dominion.Data;
 
 namespace Program
 {
-    class Program    
+    class Program
     {        
         static void Main()
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.BigMoneyWithCard.Player(Cards.Steward);                
-                var player2 = Strategies.BigMoney.Player();
-               
+                var player1 = Strategies.BigMoneyWithCard.Player(Cards.Magpie, cardCount:10);
+                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Gold);                
+                
                 var builder = new GameConfigBuilder();
+                builder.CardSplit = StartingCardSplit.Split43;
 
                 PlayerAction.SetKingdomCards(builder, player1, player2);
                 testOutput.ComparePlayers(
                     player1,
-                    player2,
+                    player2,                    
                     builder.ToGameConfig(),
-                    firstPlayerAdvantage:false,
+                    rotateWhoStartsFirst:true,
                     createHtmlReport: true, 
                     numberOfGames: 1000, 
                     shouldParallel: false);
             }         
-        }                
+        }
+
+        static Dominion.CardCountPair[] shuffleLuckDoubleFiveOpenning = new Dominion.CardCountPair[]
+        {
+            new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 2),
+            new CardCountPair(Cards.Copper, 4), new CardCountPair(Cards.Estate, 1),
+            new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 1), new CardCountPair(Cards.Silver, 1),
+            new CardCountPair(Cards.Copper, 3), new CardCountPair(Cards.Estate, 1), new CardCountPair(Cards.Silver, 1)
+        };
     }            
 }
