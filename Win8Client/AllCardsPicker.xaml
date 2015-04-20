@@ -28,6 +28,19 @@
                     </MenuFlyout>
                 </Button.Flyout>
             </Button>
+            <Border BorderBrush="White" BorderThickness="2">
+                <StackPanel Orientation="Horizontal">
+                    <Button Style="{StaticResource SearchAppBarButtonStyle}" BorderThickness="0"/>
+
+                    <Grid Width="Auto">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBox Name="SearchTextBox" Grid.Column="0" Text="hello" VerticalAlignment="Center" TextChanged="SearchTextBox_TextChanged"/>
+                    </Grid>
+                </StackPanel>            
+            </Border>
+
         </StackPanel>
         <ScrollViewer Grid.Row="1">
             <StackPanel Orientation="Vertical">

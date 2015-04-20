@@ -200,6 +200,7 @@ namespace Win8Client
         System.Collections.Generic.List<DominionCard> originalCards;
         private System.Collections.ObjectModel.ObservableCollection<DominionCard> cards;
         private Func<DominionCard, bool> filter;
+        private Func<DominionCard, bool> filter2;
         private Func<DominionCard, object> keySelector;
         
         public DependencyObjectDecl<string, DefaultEmptyString> CurrentSort { get; private set;}
@@ -218,7 +219,7 @@ namespace Win8Client
         {
             get
             {
-                return this.originalCards.Where(this.filter).OrderBy<DominionCard, object>(this.keySelector);
+                return this.originalCards.Where(this.filter).Where(this.filter2).OrderBy<DominionCard, object>(this.keySelector);
             }
         }
 
@@ -227,6 +228,10 @@ namespace Win8Client
             this.originalCards = new List<DominionCard>();
             this.cards = new System.Collections.ObjectModel.ObservableCollection<DominionCard>();
             this.filter = delegate(DominionCard card)
+            {
+                return true;
+            };
+            this.filter2 = delegate(DominionCard card)
             {
                 return true;
             };
@@ -267,6 +272,11 @@ namespace Win8Client
         }
 
         public void ApplyFilter(Func<DominionCard, bool> filter)
+        {
+            this.filter = filter;
+        }
+
+        public void ApplyFilter2(Func<DominionCard, bool> filter)
         {
             this.filter = filter;
         }
