@@ -69,10 +69,26 @@ namespace Win8Client
             bool useColony = this.appDataContext.UseColonyPlatinum.Value;
             DominionCard baneCard = this.appDataContext.BaneCards.CurrentCards.FirstOrDefault();
 
-            this.appDataContext.CurrentDeck.Generate10Random(ref useShelter, ref useColony, ref baneCard, this.appDataContext.AllCards.Cards, itemsToReplace: selectedItems);
-            this.appDataContext.UseShelters.Value = useShelter;
-            this.appDataContext.UseColonyPlatinum.Value = useColony;
+            bool isCleanRoll = this.appDataContext.CurrentDeck.Generate10Random(ref baneCard, this.appDataContext.AllCards.Cards, itemsToReplace: selectedItems);
             this.appDataContext.BaneCards.PopulateBaneCard(baneCard);            
+
+            if (isCleanRoll)
+            {
+                // reroll shelter
+                {
+                    int cProsperity = this.appDataContext.CurrentDeck.CurrentCards.Select(c => c.dominionCard).Where(c => c.expansion == Dominion.Expansion.Prosperity).Count();
+                    int roll = MainPage.random.Next(1, 10);
+                    this.appDataContext.UseColonyPlatinum.Value = cProsperity >= roll ? true : false;
+                }
+
+                // reroll shelter
+                {
+                    int cDarkAges = this.appDataContext.CurrentDeck.CurrentCards.Select(c => c.dominionCard).Where(c => c.expansion == Dominion.Expansion.DarkAges).Count();
+                    int roll = MainPage.random.Next(1, 10);
+                    this.appDataContext.UseShelters.Value  = cDarkAges >= roll ? true : false;
+                }
+            }
+            
             if (this.CurrentCardsChanged != null)
                 this.CurrentCardsChanged();            
         }

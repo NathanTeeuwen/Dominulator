@@ -77,9 +77,7 @@ namespace Win8Client
             this.appDataContext.CommonCards.PopulateCommon(gameConfig);
         }              
       
-        internal static void Generate10Random(
-            ref bool useShelter,
-            ref bool useColony,
+        internal static bool Generate10Random(            
             ref DominionCard baneCard,
             IList<DominionCard> resultList, 
             IList<DominionCard> sourceList, 
@@ -152,26 +150,11 @@ namespace Win8Client
                 if (currentCard == null)
                     break;
                 resultList.Add(currentCard);
-            }
+            }          
 
-            if (isCleanRoll)
-            {
-                // reroll shelter
-                {
-                    int cProsperity = resultList.Select(c => c.dominionCard).Where(c => c.expansion == Dominion.Expansion.Prosperity).Count();
-                    int roll = MainPage.random.Next(1, 10);
-                    useColony = cProsperity >= roll ? true : false;
-                }
+            baneCard = cardPicker.GetCard(c => c.dominionCard.DefaultCoinCost == 2 || c.dominionCard.DefaultCoinCost == 3);
 
-                // reroll shelter
-                {
-                    int cDarkAges = resultList.Select(c => c.dominionCard).Where(c => c.expansion == Dominion.Expansion.DarkAges).Count();
-                    int roll = MainPage.random.Next(1, 10);
-                    useShelter = cDarkAges >= roll ? true : false;
-                }
-            }
-
-            baneCard = cardPicker.GetCard(c => c.dominionCard.DefaultCoinCost == 2 || c.dominionCard.DefaultCoinCost == 3);            
+            return isCleanRoll;
         }
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
@@ -228,6 +211,7 @@ namespace Win8Client
         private Func<DominionCard, object> keySelector;
         
         public DependencyObjectDecl<string, DefaultEmptyString> CurrentSort { get; private set;}
+        private SortOrder currentSortOrder;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -269,6 +253,14 @@ namespace Win8Client
             this.Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => this.CurrentSort.Value = "Not Sorted");            
         }
 
+        enum SortOrder
+        {
+            Default,
+            ByName,
+            ByCost,
+            ByExpansion
+        }
+
         public void DefaultOrderNoSort()
         {
             this.keySelector = delegate(DominionCard card)
@@ -281,18 +273,31 @@ namespace Win8Client
         {
             SortCards(card => card.Name);
             this.CurrentSort.Value = "By Name";
+            this.currentSortOrder = SortOrder.ByName;
         }
 
         public void SortByCost()
         {
-            SortCards(card => card.Coin);
+            SortCards(card => card.Coin);            
             this.CurrentSort.Value = "By Cost";
+            this.currentSortOrder = SortOrder.ByCost;
         }
 
         public void SortByExpansion()
         {
             SortCards(card => card.Expansion);
             this.CurrentSort.Value = "By Expansion";
+            this.currentSortOrder = SortOrder.ByExpansion;
+        }
+
+        public void ReapplySortOrder()
+        {
+            switch (this.currentSortOrder)
+            {
+                case SortOrder.ByExpansion: SortByExpansion(); break;
+                case SortOrder.ByName: SortByName(); break;
+                case SortOrder.ByCost: SortByCost(); break;
+            }
         }
 
         public void ApplyFilter(Func<DominionCard, bool> filter)
@@ -328,6 +333,9 @@ namespace Win8Client
         private void SortCards(Func<DominionCard, object> keySelector)
         {
             this.keySelector = keySelector;            
+            var newCards = this.originalCards.OrderBy(this.keySelector).ToArray();
+            this.originalCards.Clear();
+            this.originalCards.AddRange(newCards);
         }
 
         public System.Threading.Tasks.Task Populate()
@@ -429,15 +437,20 @@ namespace Win8Client
             );
         }
 
-        public void Generate10Random(ref bool useShelter, ref bool useColony, ref DominionCard baneCard, IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
+        public bool Generate10Random(ref DominionCard baneCard, IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
         {            
-            MainPage.Generate10Random(
-                ref useShelter, 
-                ref useColony, 
+            bool isCleanRoll = MainPage.Generate10Random(                
                 ref baneCard,
-                this.originalCards, this.Cards, allCards, itemsToReplace);            
+                this.originalCards, this.Cards, allCards, itemsToReplace);
+
+            if (!isCleanRoll)
+                this.ClearSort();
+            else
+                ReapplySortOrder();    
 
             this.UpdateUIFromUIThread();
+
+            return isCleanRoll;
         }       
 
         public void UpdateOriginalCards(IEnumerable<DominionCard> addedCards, IEnumerable<DominionCard> removedCards)
