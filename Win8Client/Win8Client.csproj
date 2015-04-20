@@ -188,6 +188,7 @@
     <Content Include="Resources\Alms.jpg" />
     <Content Include="Resources\Altar.jpg" />
     <Content Include="Resources\Ambassador.jpg" />
+    <Content Include="Resources\Amulet.jpg" />
     <Content Include="Resources\Apothecary.jpg" />
     <Content Include="Resources\Apprentice.jpg" />
     <Content Include="Resources\Armory.jpg" />
@@ -262,6 +263,7 @@
     <Content Include="Resources\Duchy.jpg" />
     <Content Include="Resources\Duke.jpg" />
     <Content Include="Resources\Dungeon.jpg" />
+    <Content Include="Resources\Duplicate.jpg" />
     <Content Include="Resources\Embargo.jpg" />
     <Content Include="Resources\Embassy.jpg" />
     <Content Include="Resources\Envoy.jpg" />
@@ -289,6 +291,7 @@
     <Content Include="Resources\Gardens.jpg" />
     <Content Include="Resources\Gear.jpg" />
     <Content Include="Resources\Ghost_Ship.jpg" />
+    <Content Include="Resources\Giant.jpg" />
     <Content Include="Resources\Gold-new.jpg" />
     <Content Include="Resources\Gold.jpg" />
     <Content Include="Resources\Golem.jpg" />
@@ -297,11 +300,13 @@
     <Content Include="Resources\Grand_Market.jpg" />
     <Content Include="Resources\Graverobber.jpg" />
     <Content Include="Resources\Great_Hall.jpg" />
+    <Content Include="Resources\Guide.jpg" />
     <Content Include="Resources\Guilds.jpg" />
     <Content Include="Resources\Haggler.jpg" />
     <Content Include="Resources\Hamlet.jpg" />
     <Content Include="Resources\Harem.jpg" />
     <Content Include="Resources\Harvest.jpg" />
+    <Content Include="Resources\Haunted_Woods.jpg" />
     <Content Include="Resources\Haven.jpg" />
     <Content Include="Resources\Herald.jpg" />
     <Content Include="Resources\Herbalist.jpg" />
@@ -309,6 +314,7 @@
     <Content Include="Resources\Hero.jpg" />
     <Content Include="Resources\Highway.jpg" />
     <Content Include="Resources\Hinterlands.jpg" />
+    <Content Include="Resources\Hireling.jpg" />
     <Content Include="Resources\Hoard.jpg" />
     <Content Include="Resources\Horn_of_Plenty.jpg" />
     <Content Include="Resources\Horse_Traders.jpg" />
@@ -347,6 +353,7 @@
     <Content Include="Resources\Mercenary.jpg" />
     <Content Include="Resources\Merchant_Guild.jpg" />
     <Content Include="Resources\Merchant_Ship.jpg" />
+    <Content Include="Resources\Messenger.jpg" />
     <Content Include="Resources\Militia.jpg" />
     <Content Include="Resources\Mine.jpg" />
     <Content Include="Resources\Mining_Village.jpg" />
@@ -388,6 +395,7 @@
     <Content Include="Resources\Possession.jpg" />
     <Content Include="Resources\Potion-new.jpg" />
     <Content Include="Resources\Potion.jpg" />
+    <Content Include="Resources\Prince.jpg" />
     <Content Include="Resources\Princess.jpg" />
     <Content Include="Resources\Procession.jpg" />
     <Content Include="Resources\Prosperity.jpg" />
@@ -448,6 +456,7 @@
     <Content Include="Resources\Stonemason.jpg" />
     <Content Include="Resources\Storeroom.jpg" />
     <Content Include="Resources\Survivors.jpg" />
+    <Content Include="Resources\Swamp_Hag.jpg" />
     <Content Include="Resources\Swindler.jpg" />
     <Content Include="Resources\Tactician.jpg" />
     <Content Include="Resources\Talisman.jpg" />
@@ -462,6 +471,7 @@
     <Content Include="Resources\Trade_Route.jpg" />
     <Content Include="Resources\Trading_Post.jpg" />
     <Content Include="Resources\Training.jpg" />
+    <Content Include="Resources\Transmogrify.jpg" />
     <Content Include="Resources\Transmute.jpg" />
     <Content Include="Resources\Trash.jpg" />
     <Content Include="Resources\Travelling_Fair.jpg" />

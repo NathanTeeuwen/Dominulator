@@ -225,7 +225,21 @@ namespace Dominion.CardTypes
     }
 
     //****************************************
+    public class Amulet
+        : Card
+    {
+        public static Amulet card = new Amulet();
 
+        private Amulet()
+            : base("Amulet", Expansion.Adventures, coinCost: 3, isAction: true, isDuration:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
 
     public class Artificier
         : Card
@@ -291,6 +305,22 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class CoinOfTheRealm
+       : Card
+    {
+        public static CoinOfTheRealm card = new CoinOfTheRealm();
+
+        private CoinOfTheRealm()
+            : base("Coin Of The Realm", Expansion.Adventures, coinCost: 2, isTreasure: true, isReserve:true, plusCoins:1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     public class Disciple
        : Card
     {
@@ -316,6 +346,22 @@ namespace Dominion.CardTypes
             : base("Distant Lands", Expansion.Adventures, coinCost: 5, isAction: true, isReserve:true, victoryPoints:delegate(PlayerState player){ throw new NotImplementedException(); } )
         {
         }        
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Duplicate
+       : Card
+    {
+        public static Duplicate card = new Duplicate();
+
+        private Duplicate()
+            : base("Duplicate", Expansion.Adventures, coinCost: 4, isAction: true, isReserve: true)
+        {
+        }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
@@ -371,6 +417,53 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Giant
+       : Card
+    {
+        public static Giant card = new Giant();
+
+        private Giant()
+            : base("Giant", Expansion.Adventures, coinCost: 5, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Guide
+       : Card
+    {
+        public static Guide card = new Guide();
+
+        private Guide()
+            : base("Guide", Expansion.Adventures, coinCost: 3, isAction: true, isReserve: true, plusCards: 1, plusActions:1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class HauntedWoods
+        : Card
+    {
+        public static HauntedWoods card = new HauntedWoods();
+
+        private HauntedWoods()
+            : base("Haunted Woods", Expansion.Adventures, coinCost: 5, isAttack:true, isDuration:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }        
+    }
 
     public class Hero
         : Card
@@ -392,6 +485,28 @@ namespace Dominion.CardTypes
             throw new NotImplementedException();
         }
     }
+
+    public class Hireling
+       : Card
+    {
+        public static Hireling card = new Hireling();
+
+        private Hireling()
+            : base("Hireling", Expansion.Adventures, coinCost: 6, isDuration:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.isTreasure, "Gain a Treasure");
+        }
+
+        public override void DoSpecializedDiscardFromPlay(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
 
     public class LostCity
         : Card
@@ -438,6 +553,41 @@ namespace Dominion.CardTypes
             {
                 currentPlayer.GainCardFromSupply(Cards.Magpie, gameState);
             }            
+        }
+    }
+
+    public class Messenger
+        : Card
+    {
+        public static Messenger card = new Messenger();
+
+        private Messenger()
+            : base("Messenger", Expansion.Adventures, coinCost: 4, isAction: true, plusBuy:1, plusCoins:2)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            if (currentPlayer.actions.ShouldPutDeckInDiscard(gameState))
+            {
+                currentPlayer.MoveDeckToDiscard(gameState);
+            }
+        }
+
+        public override void DoSpecializedWhenBuy(PlayerState currentPlayer, GameState gameState)
+        {
+            // if the first card bought this turn is messenger ...
+            if (currentPlayer.CardsBoughtThisTurn.Count == 1)
+            {
+                Card gainedCard = currentPlayer.RequestPlayerGainCardFromSupply(gameState, card => card.CurrentCoinCost(currentPlayer) <= 4, "Gain a card costing up to 4");
+                if (gainedCard != null)
+                {
+                    foreach(var player in gameState.players.OtherPlayers)
+                    {
+                        player.GainCardFromSupply(gainedCard, gameState);
+                    }
+                }
+            }
         }
     }
 
@@ -625,6 +775,22 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class SwampHag
+       : Card
+    {
+        public static SwampHag card = new SwampHag();
+
+        private SwampHag()
+            : base("Swamp Hag", Expansion.Adventures, coinCost: 5, isAction: true, isAttack:true, isDuration:true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     public class Teacher
        : Card
     {
@@ -634,6 +800,22 @@ namespace Dominion.CardTypes
             : base("Teacher", Expansion.Adventures, coinCost: 6, isAction:true)
         {
         }        
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Transmorgrify
+       : Card
+    {
+        public static Transmorgrify card = new Transmorgrify();
+
+        private Transmorgrify()
+            : base("Transmorgrify", Expansion.Adventures, coinCost: 4, isAction: true, isReserve:true, plusActions:1)
+        {
+        }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
