@@ -64,7 +64,15 @@ namespace Win8Client
         public void Randomize10Cards()
         {
             var selectedItems = this.CurrentCardsListView.SelectedItems.Select(item => (DominionCard)item).ToArray<DominionCard>();
-            this.appDataContext.CurrentDeck.Generate10Random(this.appDataContext.AllCards.Cards, itemsToReplace: selectedItems);
+
+            bool useShelter = this.appDataContext.UseShelters.Value;
+            bool useColony = this.appDataContext.UseColonyPlatinum.Value;
+            DominionCard baneCard = this.appDataContext.BaneCards.CurrentCards.FirstOrDefault();
+
+            this.appDataContext.CurrentDeck.Generate10Random(ref useShelter, ref useColony, ref baneCard, this.appDataContext.AllCards.Cards, itemsToReplace: selectedItems);
+            this.appDataContext.UseShelters.Value = useShelter;
+            this.appDataContext.UseColonyPlatinum.Value = useColony;
+            this.appDataContext.BaneCards.PopulateBaneCard(baneCard);            
             if (this.CurrentCardsChanged != null)
                 this.CurrentCardsChanged();            
         }

@@ -63,6 +63,11 @@ namespace Dominion
             this.shuffleLuck = GetCardSetFromArray(cardPerPlayer);
         }
 
+        public void SetBaneCard(Card card)
+        {
+            this.baneCard = card;
+        }
+
         public void SetKingdomPiles(IEnumerable<Card> cards)
         {
             var setCards = new HashSet<Card>();
@@ -319,21 +324,24 @@ namespace Dominion
             builder.AddSupply(60, Cards.Copper);
             builder.AddSupply(40, Cards.Silver);
             builder.AddSupply(30, Cards.Gold);
-            builder.AddSupply(curseCount, Cards.Curse);
-            builder.AddSupply(victoryCount + (!this.useShelters ? numberOfPlayers * 3 : 0), Cards.Estate);
-            builder.AddSupply(victoryCount, Cards.Duchy);
-            builder.AddSupply(victoryCount, Cards.Province);
-
             if (this.useColonyAndPlatinum)
             {
-                builder.AddSupply(victoryCount, Cards.Colony);
                 builder.AddSupply(20, Cards.Platinum);
-            }
-
+            }            
             if (this.kingdomPiles.Where(card => card.potionCost != 0).Any())
             {
                 builder.AddSupply(16, Cards.Potion);
             }
+            
+            builder.AddSupply(victoryCount + (!this.useShelters ? numberOfPlayers * 3 : 0), Cards.Estate);
+            builder.AddSupply(victoryCount, Cards.Duchy);
+            builder.AddSupply(victoryCount, Cards.Province);
+            if (this.useColonyAndPlatinum)
+            {
+                builder.AddSupply(victoryCount, Cards.Colony);
+                
+            }
+            builder.AddSupply(curseCount, Cards.Curse);
 
             if (cardAvailabilityType != CardAvailabilityType.AdditionalCardsAfterKingdom)
             {
@@ -346,6 +354,18 @@ namespace Dominion
                     else
                     {
                         builder.AddSupply(card.defaultSupplyCount, card);
+                    }
+
+                    if (card == Cards.YoungWitch && baneCard != null)
+                    {
+                        if (baneCard.isVictory)
+                        {
+                            builder.AddSupply(victoryCount, baneCard);
+                        }
+                        else
+                        {
+                            builder.AddSupply(card.defaultSupplyCount, baneCard);
+                        }                        
                     }
                 }
             }

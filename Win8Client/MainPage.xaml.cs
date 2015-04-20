@@ -36,7 +36,10 @@ namespace Win8Client
             this.appDataContext.StrategyReport.PropertyChanged += StrategyReport_PropertyChanged;
             this.appDataContext.PageConfig.PropertyChanged += PageConfig_PropertyChanged;
             this.appDataContext.UseShelters.PropertyChanged += UpdateCommonCardsFromKingdom;
-            this.appDataContext.UseColonyPlatinum.PropertyChanged += UpdateCommonCardsFromKingdom;            
+            this.appDataContext.UseColonyPlatinum.PropertyChanged += UpdateCommonCardsFromKingdom;
+
+            this.appDataContext.CurrentDeck.SortByCost();
+            this.appDataContext.AllCards.SortByName();
 
             this.Loaded += MainPage_Loaded;
         }
@@ -74,11 +77,20 @@ namespace Win8Client
             this.appDataContext.CommonCards.PopulateCommon(gameConfig);
         }              
       
-        internal static void Generate10Random(IList<DominionCard> resultList, IList<DominionCard> sourceList, IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
+        internal static void Generate10Random(
+            ref bool useShelter,
+            ref bool useColony,
+            ref DominionCard baneCard,
+            IList<DominionCard> resultList, 
+            IList<DominionCard> sourceList, 
+            IList<DominionCard> allCards, 
+            IList<DominionCard> itemsToReplace)
         {
             bool isReplacingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count <= 10;
             bool isReducingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count > 10;
             var cardPicker = new UniqueCardPicker(allCards);
+
+            bool isCleanRoll = false;
 
             if (isReplacingItems)
             {
@@ -131,8 +143,8 @@ namespace Win8Client
             else
             {
                 resultList.Clear();
+                isCleanRoll = true;
             }
-
             
             while (resultList.Count < 10)
             {
@@ -141,6 +153,25 @@ namespace Win8Client
                     break;
                 resultList.Add(currentCard);
             }
+
+            if (isCleanRoll)
+            {
+                // reroll shelter
+                {
+                    int cProsperity = resultList.Select(c => c.dominionCard).Where(c => c.expansion == Dominion.Expansion.Prosperity).Count();
+                    int roll = MainPage.random.Next(1, 10);
+                    useColony = cProsperity >= roll ? true : false;
+                }
+
+                // reroll shelter
+                {
+                    int cDarkAges = resultList.Select(c => c.dominionCard).Where(c => c.expansion == Dominion.Expansion.DarkAges).Count();
+                    int roll = MainPage.random.Next(1, 10);
+                    useShelter = cDarkAges >= roll ? true : false;
+                }
+            }
+
+            baneCard = cardPicker.GetCard(c => c.dominionCard.DefaultCoinCost == 2 || c.dominionCard.DefaultCoinCost == 3);            
         }
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
@@ -353,6 +384,15 @@ namespace Win8Client
             }
         }
 
+        public void PopulateBaneCard(DominionCard card)
+        {
+            if (this.originalCards.Contains(card))
+                return;
+            if (this.originalCards.Any())
+                this.originalCards.Clear();
+            this.originalCards.Add(card);
+        }
+
         private async System.Threading.Tasks.Task PopulateCommonFromResources(Dominion.GameConfig gameConfig)
         {            
             this.originalCards.Clear();
@@ -389,9 +429,14 @@ namespace Win8Client
             );
         }
 
-        public void Generate10Random(IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
-        {
-            MainPage.Generate10Random(this.originalCards, this.Cards, allCards, itemsToReplace);
+        public void Generate10Random(ref bool useShelter, ref bool useColony, ref DominionCard baneCard, IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
+        {            
+            MainPage.Generate10Random(
+                ref useShelter, 
+                ref useColony, 
+                ref baneCard,
+                this.originalCards, this.Cards, allCards, itemsToReplace);            
+
             this.UpdateUIFromUIThread();
         }       
 
