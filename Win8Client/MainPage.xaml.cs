@@ -411,17 +411,17 @@ namespace Win8Client
    
     enum ExpansionIndex
     {
-        Alchemy = 0,
-        Base = 1,
-        Cornucopia = 2,
-        DarkAges = 3,
-        Guilds = 4,
-        Hinterlands = 5,
-        Intrigue = 6,
-        Promo = 7,
-        Prosperity = 8,
-        Seaside = 9,
-        Adventures = 10,
+        Adventures = 0,
+        Alchemy = 1,
+        Base = 2,
+        Cornucopia = 3,
+        DarkAges = 4,
+        Guilds = 5,
+        Hinterlands = 6,
+        Intrigue = 7,
+        Promo = 8,
+        Prosperity = 9,
+        Seaside = 10,        
         _Unknown = 11,
         _Count = 12
     }

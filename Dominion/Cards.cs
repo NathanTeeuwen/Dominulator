@@ -428,6 +428,7 @@ namespace Dominion
             Cards.Loan,
             Cards.Lookout,
             Cards.Madman,
+            Cards.Magpie,
             Cards.Mandarin,
             Cards.Marauder,
             Cards.Margrave,

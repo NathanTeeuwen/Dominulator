@@ -96,8 +96,9 @@ namespace Win8Client
             this.UseShelters = new DependencyObjectDecl<bool, DefaultFalse>(this);
             this.UseColonyPlatinum = new DependencyObjectDecl<bool, DefaultFalse>(this);
 
-            this.expansions.Add(new Expansion("Alchemy", ExpansionIndex.Base));
-            this.expansions.Add(new Expansion("Base", ExpansionIndex.Alchemy));
+            this.expansions.Add(new Expansion("Adventures", ExpansionIndex.Adventures));
+            this.expansions.Add(new Expansion("Alchemy", ExpansionIndex.Alchemy));
+            this.expansions.Add(new Expansion("Base", ExpansionIndex.Base));
             this.expansions.Add(new Expansion("Cornucopia", ExpansionIndex.Cornucopia));
             this.expansions.Add(new Expansion("Dark Ages", ExpansionIndex.DarkAges));
             this.expansions.Add(new Expansion("Guilds", ExpansionIndex.Guilds));
@@ -105,7 +106,7 @@ namespace Win8Client
             this.expansions.Add(new Expansion("Intrigue", ExpansionIndex.Intrigue));
             this.expansions.Add(new Expansion("Promo", ExpansionIndex.Promo));
             this.expansions.Add(new Expansion("Prosperity", ExpansionIndex.Prosperity));
-            this.expansions.Add(new Expansion("Seaside", ExpansionIndex.Seaside));
+            this.expansions.Add(new Expansion("Seaside", ExpansionIndex.Seaside));            
 
             foreach (var expansion in expansions)
             {
