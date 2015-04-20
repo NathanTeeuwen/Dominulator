@@ -14,6 +14,9 @@
     </UserControl.Resources>
 
     <Grid>
+        <Grid.Resources>
+            <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+        </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -46,6 +49,23 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+                <StackPanel Orientation="Vertical" Visibility="{Binding IsBaneCardVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">
+                    <TextBlock FontSize="20">Bane Card</TextBlock>
+                    <ListView ItemsSource="{Binding BaneCard.Cards}" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <Image Width="150" Height="240" Source="{Binding ImageUrl}"></Image>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackPanel>
                 <ListView ItemsSource="{Binding CommonCards.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
                     <ListView.ItemsPanel>
                         <ItemsPanelTemplate>

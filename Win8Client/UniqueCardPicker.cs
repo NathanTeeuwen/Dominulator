@@ -43,15 +43,19 @@ namespace Win8Client
 
         public DominionCard GetCard(Func<DominionCard, bool> meetConstraint)
         {
-            while (maxIndex > 0)
+            int curIndex = this.maxIndex;
+            while (curIndex >= 0)
             {
                 int resultCardIndex = NumberBetweenInclusive(MainPage.random, 0, maxIndex);
-                DominionCard currentCard = this.allCards[remainingCards[resultCardIndex]];
-                remainingCards[resultCardIndex] = remainingCards[maxIndex];
-                --maxIndex;
+                DominionCard currentCard = this.allCards[remainingCards[resultCardIndex]];                
 
                 if (!IsExcluded(currentCard) && meetConstraint(currentCard))
+                {
+                    remainingCards[resultCardIndex] = remainingCards[maxIndex];
+                    --maxIndex;
                     return currentCard;                    
+                }
+                --curIndex;    
             }
 
             return null;

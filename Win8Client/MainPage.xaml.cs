@@ -93,29 +93,31 @@ namespace Win8Client
             if (isReplacingItems)
             {
                 cardPicker.ExcludeCards(itemsToReplace);
+            }
 
-                if (itemsToReplace != null)
+            baneCard = cardPicker.GetCard(c => c.dominionCard.DefaultCoinCost == 2 || c.dominionCard.DefaultCoinCost == 3);
+
+            if (isReplacingItems)
+            {                                
+                foreach (DominionCard cardToReplace in itemsToReplace)
                 {
-                    foreach (DominionCard cardToReplace in itemsToReplace)
+                    for (int i = 0; i < resultList.Count; ++i)
                     {
-                        for (int i = 0; i < resultList.Count; ++i)
+                        if (resultList[i] == cardToReplace)
                         {
-                            if (resultList[i] == cardToReplace)
+                            var nextCard = cardPicker.GetCard(c => true);
+                            if (nextCard == null)
                             {
-                                var nextCard = cardPicker.GetCard(c => true);
-                                if (nextCard == null)
-                                {
-                                    resultList.Remove(cardToReplace);
-                                    i--;  // do this index again
-                                }
-                                else
-                                {
-                                    resultList[i] = nextCard;
-                                }
+                                resultList.Remove(cardToReplace);
+                                i--;  // do this index again
+                            }
+                            else
+                            {
+                                resultList[i] = nextCard;
                             }
                         }
                     }
-                }
+                }                
             }
             else if (sourceList.Count < 10)
             {
@@ -150,9 +152,7 @@ namespace Win8Client
                 if (currentCard == null)
                     break;
                 resultList.Add(currentCard);
-            }          
-
-            baneCard = cardPicker.GetCard(c => c.dominionCard.DefaultCoinCost == 2 || c.dominionCard.DefaultCoinCost == 3);
+            }                      
 
             return isCleanRoll;
         }
@@ -398,7 +398,9 @@ namespace Win8Client
                 return;
             if (this.originalCards.Any())
                 this.originalCards.Clear();
-            this.originalCards.Add(card);
+            if (card != null)
+                this.originalCards.Add(card);
+            this.UpdateUIFromUIThread();
         }
 
         private async System.Threading.Tasks.Task PopulateCommonFromResources(Dominion.GameConfig gameConfig)

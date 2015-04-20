@@ -67,10 +67,10 @@ namespace Win8Client
 
             bool useShelter = this.appDataContext.UseShelters.Value;
             bool useColony = this.appDataContext.UseColonyPlatinum.Value;
-            DominionCard baneCard = this.appDataContext.BaneCards.CurrentCards.FirstOrDefault();
+            DominionCard baneCard = this.appDataContext.BaneCard.CurrentCards.FirstOrDefault();
 
             bool isCleanRoll = this.appDataContext.CurrentDeck.Generate10Random(ref baneCard, this.appDataContext.AllCards.Cards, itemsToReplace: selectedItems);
-            this.appDataContext.BaneCards.PopulateBaneCard(baneCard);            
+            this.appDataContext.BaneCard.PopulateBaneCard(baneCard);            
 
             if (isCleanRoll)
             {

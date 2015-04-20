@@ -51,6 +51,8 @@ namespace Win8Client
         public DependencyObjectDecl<bool, DefaultFalse> UseShelters { get; private set; }
         public DependencyObjectDecl<bool, DefaultFalse> UseColonyPlatinum { get; private set; }
 
+        public DependencyObjectDecl<bool, DefaultFalse> IsBaneCardVisible { get; private set; }
+
         internal bool isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
 
         private MainPage mainPage;
@@ -85,7 +87,8 @@ namespace Win8Client
 
             this.CardVisibility = new DependencyObjectDecl<CardVisibility, DefaultCurrent>(this);
             this.SettingsButtonVisibility = new DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton>(this);
-            this.PageConfig = new DependencyObjectDecl<PageConfig, DefaultPageConfig>(this);                             
+            this.PageConfig = new DependencyObjectDecl<PageConfig, DefaultPageConfig>(this);   
+            this.IsBaneCardVisible = new DependencyObjectDecl<bool, DefaultFalse>(this);
 
             this.StrategyResultsAvailable = new DependencyObjectDecl<bool, DefaultFalse>(this);
             this.StrategyReport = new DependencyObjectDecl<string, DefaultEmptyString>(this);
@@ -116,7 +119,8 @@ namespace Win8Client
             }
 
             this.commonCards.PropertyChanged += AvailableCards_PropetyChanged;
-            this.currentDeck.PropertyChanged += AvailableCards_PropetyChanged;            
+            this.currentDeck.PropertyChanged += AvailableCards_PropetyChanged;
+            this.currentDeck.PropertyChanged += UpdateBaneCard_PropetyChanged;
 
             this.allCards.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
             this.currentDeck.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
@@ -162,6 +166,16 @@ namespace Win8Client
             //Sort(this.availableCards, c => c.dominionCard.name);
         }
 
+        void UpdateBaneCard_PropetyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            UpdateBaneCard();
+        }
+
+        void UpdateBaneCard()
+        {
+            this.IsBaneCardVisible.Value = this.currentDeck.CurrentCards.Where(c => c.dominionCard == Dominion.Cards.YoungWitch).Any();
+        }
+
         public static void Sort<T, T2>(System.Collections.ObjectModel.ObservableCollection<T> collection, System.Func<T, T2> func) 
             where T2 : System.IComparable
         {
@@ -203,7 +217,7 @@ namespace Win8Client
             }
         }
 
-        public SortableCardList BaneCards
+        public SortableCardList BaneCard
         {
             get
             {
@@ -258,7 +272,7 @@ namespace Win8Client
             Dominion.StartingCardSplit player1Split = this.player1Strategy.StartingCardSplit.Value;
             Dominion.StartingCardSplit player2Split = this.player2Strategy.StartingCardSplit.Value;
             Dominion.Card[] kingdomCards = this.currentDeck.Cards.Select(c => c.dominionCard).ToArray();
-            DominionCard baneCard = this.BaneCards.CurrentCards.FirstOrDefault();            
+            DominionCard baneCard = this.BaneCard.CurrentCards.FirstOrDefault();            
 
             var builder = new Dominion.GameConfigBuilder();            
                 
