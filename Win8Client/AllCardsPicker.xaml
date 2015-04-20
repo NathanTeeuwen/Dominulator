@@ -36,7 +36,7 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
-                        <TextBox Name="SearchTextBox" Grid.Column="0" Text="hello" VerticalAlignment="Center" TextChanged="SearchTextBox_TextChanged"/>
+                        <TextBox Name="SearchTextBox" Grid.Column="0" VerticalAlignment="Center" TextChanged="SearchTextBox_TextChanged"/>
                     </Grid>
                 </StackPanel>            
             </Border>

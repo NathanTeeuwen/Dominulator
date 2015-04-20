@@ -29,24 +29,14 @@ namespace Win8Client
 
             this.InitializeComponent();
                   
-            this.DataContext = this.appDataContext;
-            var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();
+            this.DataContext = this.appDataContext;            
 
-            this.CurrentCards.CurrentCardsChanged += UpdateAllCardsListSelection;
+            this.CurrentCards.CurrentCardsChanged += this.AllCards.UpdateAllCardsListSelection;
             this.appDataContext.CurrentDeck.PropertyChanged += UpdateCommonCardsFromKingdom;
             this.appDataContext.StrategyReport.PropertyChanged += StrategyReport_PropertyChanged;
             this.appDataContext.PageConfig.PropertyChanged += PageConfig_PropertyChanged;
             this.appDataContext.UseShelters.PropertyChanged += UpdateCommonCardsFromKingdom;
-            this.appDataContext.UseColonyPlatinum.PropertyChanged += UpdateCommonCardsFromKingdom;
-
-            appDataContext.ShelterCards.PopulateShelters();
-            appDataContext.ColonyPlatinumCards.PopulateColonyPlatinum();
-
-            appDataContext.AllCards.Populate().ContinueWith(
-                delegate(System.Threading.Tasks.Task task)
-                {                        
-                    this.CurrentCards.Randomize10Cards();                 
-                }, uiScheduler);
+            this.appDataContext.UseColonyPlatinum.PropertyChanged += UpdateCommonCardsFromKingdom;            
 
             this.Loaded += MainPage_Loaded;
         }
@@ -61,20 +51,23 @@ namespace Win8Client
         
         void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            UpdateAllCardsListSelection();
-        }
-        
-        internal void UpdateAllCardsListSelection()
-        {
-            this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = true;
-            this.AllCards.SelectedItems.Clear();
-            foreach (DominionCard card in this.appDataContext.CurrentDeck.CurrentCards)
-            {
-                this.AllCards.SelectedItems.Add(card);
-            }
-            this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
+            var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();
+
+            appDataContext.ShelterCards.PopulateShelters();
+            appDataContext.ColonyPlatinumCards.PopulateColonyPlatinum();
+
+            appDataContext.AllCards.Populate().ContinueWith(
+                delegate(System.Threading.Tasks.Task task)
+                {
+                    this.CurrentCards.Randomize10Cards();
+                }, uiScheduler);
         }
 
+        public void UpdateAllCardsListSelection()
+        {
+            this.AllCards.UpdateAllCardsListSelection();
+        }
+               
         internal void UpdateCommonCardsFromKingdom(object sender, PropertyChangedEventArgs e)
         {
             Dominion.GameConfig gameConfig = this.appDataContext.GetGameConfig();
@@ -303,8 +296,7 @@ namespace Win8Client
 
         private void SortCards(Func<DominionCard, object> keySelector)
         {
-            this.keySelector = keySelector;
-            this.UpdateUI();
+            this.keySelector = keySelector;            
         }
 
         public System.Threading.Tasks.Task Populate()

@@ -77,16 +77,19 @@ namespace Win8Client
         private void SortCurrentByName(object sender, RoutedEventArgs e)
         {
             this.appDataContext.CurrentDeck.SortByName();
+            this.appDataContext.CurrentDeck.UpdateUIFromUIThread();
         }
 
         private void SortCurrentByCost(object sender, RoutedEventArgs e)
         {
             this.appDataContext.CurrentDeck.SortByCost();
+            this.appDataContext.CurrentDeck.UpdateUIFromUIThread();
         }
 
         private void SortCurrentByExpansion(object sender, RoutedEventArgs e)
         {
             this.appDataContext.CurrentDeck.SortByExpansion();
+            this.appDataContext.CurrentDeck.UpdateUIFromUIThread();
         }        
     }
 }

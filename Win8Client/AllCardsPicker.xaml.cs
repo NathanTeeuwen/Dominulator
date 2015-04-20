@@ -42,6 +42,17 @@ namespace Win8Client
             }
         }
 
+        internal void UpdateAllCardsListSelection()
+        {
+            this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = true;
+            this.SelectedItems.Clear();
+            foreach (DominionCard card in this.appDataContext.CurrentDeck.CurrentCards)
+            {
+                this.SelectedItems.Add(card);
+            }
+            this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
+        }
+
         private bool ignoreShelterChanges = false;
 
         private void SheltersListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -97,18 +108,30 @@ namespace Win8Client
         }
 
         private void SortAllByName(object sender, RoutedEventArgs e)
-        {            
-            this.appDataContext.AllCards.SortByName();         
+        {
+            this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = true;
+            this.appDataContext.AllCards.SortByName();
+            this.appDataContext.AllCards.UpdateUIFromUIThread();
+            this.UpdateAllCardsListSelection();
+            this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
         }
 
         private void SortAllByCost(object sender, RoutedEventArgs e)
-        {            
-            this.appDataContext.AllCards.SortByCost();            
+        {
+            this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = true;
+            this.appDataContext.AllCards.SortByCost();
+            this.appDataContext.AllCards.UpdateUIFromUIThread();
+            this.UpdateAllCardsListSelection();
+            this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
         }
 
         private void SortAllByExpansion(object sender, RoutedEventArgs e)
-        {            
-            this.appDataContext.AllCards.SortByExpansion();         
+        {
+            this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = true;
+            this.appDataContext.AllCards.SortByExpansion();
+            this.appDataContext.AllCards.UpdateUIFromUIThread();
+            this.UpdateAllCardsListSelection();
+            this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
         }
 
         private void DragItemsStarting(object sender, DragItemsStartingEventArgs e)
@@ -141,8 +164,11 @@ namespace Win8Client
             {
                 string searchString = this.SearchTextBox.Text;
 
-                this.appDataContext.AllCards.ApplyFilter2(Search(searchString));            
+                this.appDataContext.AllCards.ApplyFilter2(Search(searchString));
+                this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = true;
                 this.appDataContext.AllCards.UpdateUIFromUIThread();
+                this.UpdateAllCardsListSelection();
+                this.appDataContext.isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
             }).AsTask();
         }
 
