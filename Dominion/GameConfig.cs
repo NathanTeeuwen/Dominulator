@@ -332,6 +332,26 @@ namespace Dominion
             {
                 builder.AddSupply(16, Cards.Potion);
             }
+            if (this.kingdomPiles.Where(card => card.requiresSpoils).Any())
+            {
+                builder.AddNonSupply(16, Cards.Spoils);
+            }
+
+            if (this.useShelters)
+            {
+                switch (cardAvailabilityType)
+                {
+                    case CardAvailabilityType.AdditionalCardsAfterKingdom:
+                    case CardAvailabilityType.AllPossibleCardsInGame:
+                        {
+                            builder.AddStartingCard(Cards.Necropolis);
+                            builder.AddStartingCard(Cards.Hovel);
+                            builder.AddStartingCard(Cards.OvergrownEstate);
+                            break;
+                        }
+                }
+            }
+
             
             builder.AddSupply(victoryCount + (!this.useShelters ? numberOfPlayers * 3 : 0), Cards.Estate);
             builder.AddSupply(victoryCount, Cards.Duchy);
@@ -369,22 +389,7 @@ namespace Dominion
                     }
                 }
             }
-
-            if (this.useShelters)
-            {
-                switch (cardAvailabilityType)
-                {
-                    case CardAvailabilityType.AdditionalCardsAfterKingdom:
-                    case CardAvailabilityType.AllPossibleCardsInGame:
-                        {
-                            builder.AddStartingCard(Cards.Necropolis);
-                            builder.AddStartingCard(Cards.Hovel);
-                            builder.AddStartingCard(Cards.OvergrownEstate);
-                            break;
-                        }                    
-                }                
-            }
-
+         
             if (this.kingdomPiles.Where(card => card.requiresRuins).Any())
             {
                 switch (cardAvailabilityType)
@@ -407,12 +412,7 @@ namespace Dominion
                             break;
                         }
                 }
-            }
-
-            if (this.kingdomPiles.Where(card => card.requiresSpoils).Any())
-            {
-                builder.AddNonSupply(16, Cards.Spoils);
-            }
+            }            
 
             if (this.kingdomPiles.Where(card => card == Cards.Hermit).Any())
             {
