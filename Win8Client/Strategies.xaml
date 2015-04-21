@@ -11,7 +11,7 @@
     d:DesignWidth="400"
     Name="Page">
 
-    <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+    <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" ZoomMode="Disabled">
         <Grid>
             <Grid.Resources>
                 <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />

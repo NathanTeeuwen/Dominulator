@@ -35,7 +35,7 @@
             <Button Style="{StaticResource SettingsAppBarButtonStyle}" BorderThickness="0" Click="SettingsButton_Click"/>
         </StackPanel>
         <TextBlock Grid.Row="0"  FontSize="100" VerticalAlignment="Center" HorizontalAlignment="Center">Dominulator</TextBlock>
-        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto">
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto" ZoomMode="Disabled">
             <Grid>
                 <StackPanel Grid.Row="0" Orientation="Horizontal" Visibility="{Binding PageConfig.Value, Converter={StaticResource PageConfigDesignVisibilityConverter}}">
                     <StackPanel.Resources>

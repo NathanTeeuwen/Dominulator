@@ -42,7 +42,7 @@
             </Border>
 
         </StackPanel>
-        <ScrollViewer Grid.Row="1">
+        <ScrollViewer Grid.Row="1" ZoomMode="Disabled">
             <StackPanel Orientation="Vertical">
                 <StackPanel Orientation="Horizontal">                                    
                     <ListView Name="SheltersListView" ItemsSource="{Binding ShelterCards.Cards}" SelectionMode="Multiple" SelectionChanged="SheltersListView_SelectionChanged" CanDragItems="True" DragItemsStarting="DragItemsStarting">

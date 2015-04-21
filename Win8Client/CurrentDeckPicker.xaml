@@ -33,7 +33,7 @@
             </Button>
             <Button Click="RandomizeButtonClick" Style="{StaticResource RefreshAppBarButtonStyle}"></Button>
         </StackPanel>
-        <ScrollViewer Grid.Row="1">
+        <ScrollViewer Grid.Row="1" ZoomMode="Disabled">
             <StackPanel Orientation="Vertical">            
                 <ListView Name="CurrentCardsListView"  ItemsSource="{Binding CurrentDeck.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
                     <ListView.ItemsPanel>
