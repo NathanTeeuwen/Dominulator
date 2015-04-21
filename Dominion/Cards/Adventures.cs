@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Dominion.CardTypes
 {
@@ -234,10 +234,22 @@ namespace Dominion.CardTypes
             : base("Amulet", Expansion.Adventures, coinCost: 3, isAction: true, isDuration:true)
         {
         }
-
+       
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            PlayerActionChoice actionChoice = currentPlayer.RequestPlayerChooseBetween(
+                gameState,
+                acceptableChoice => acceptableChoice == PlayerActionChoice.GainCard ||
+                                    acceptableChoice == PlayerActionChoice.PlusCoin ||
+                                    acceptableChoice == PlayerActionChoice.Trash);
+
+            switch (actionChoice)
+            {
+                case PlayerActionChoice.GainCard: currentPlayer.GainCardFromSupply(Silver.card, gameState); break;
+                case PlayerActionChoice.PlusCoin: currentPlayer.AddCoins(1); break;
+                case PlayerActionChoice.Trash: currentPlayer.RequestPlayerTrashCardsFromHand(gameState, 1, false); break;
+                default: throw new Exception("Invalid case");
+            }
         }
     }
 
