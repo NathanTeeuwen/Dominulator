@@ -148,12 +148,11 @@ There are many example strategies included already.  Look in the Dominion.BuiltI
 How Do I Contribute?
 ====================
 
-I am the only ones making checkins right now, but please send me a changelist of anything you would like and 
-I will try to get it included.
+Feel free to make a fork of the code in order to prepare contributions back to the main branch.
 
-Though the project is public, please refrain from forking the code.  When I'm making changes, 
-there will be large amounts of refactoring and re-organization.  I will keep everything checked in working, but
-will not be worried about breaking external dependencies.
+Though the project is public, please refrain from letting the code diverge in private branches.  When I'm making changes, there will be large amounts of refactoring and re-organization.  I will keep everything checked in working, butwill not be worried about breaking external dependencies. 
+
+Please do not use this code for any commercial use.   The code is available for research or personal use.
 
 What Should I Contribute?
 =========================
@@ -167,7 +166,7 @@ for people to play around with it.  Expect to find bugs.
  4. We need test case infrastructure.  Long term, I would like to see a test case for every clarifiction in the rule book.
  5. Contribute to the strategy optimizer
 
-Dominion has 205 kingdom cards.  There are currently 31 cards that can throw NotImplementedException.  
+Dominion has more than 250 kingdom cards.  There's a few card not implemented, and a few more that do not have default strategies coded for them yet.  
 
 Your Program Crashed or Threw an Exception.  Why?
 =================================================
