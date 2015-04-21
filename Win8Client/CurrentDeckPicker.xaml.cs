@@ -103,10 +103,10 @@ namespace Win8Client
             var uriBuilder = new System.Text.StringBuilder();
             uriBuilder.Append("https://www.google.com/?gws_rd=ssl#safe=off&q=dominion");
 
-            foreach(DominionCard card in this.CurrentCardsListView.SelectedItems)
+            foreach(Dominion.Card card in this.GetSelectedCardsAndClear(fShouldClear:false))
             {
                 uriBuilder.Append("+");
-                uriBuilder.Append(card.dominionCard.name.Replace(" ", "%20"));
+                uriBuilder.Append(card.name.Replace(" ", "%20"));
             }
             
             string uriToLaunch = uriBuilder.ToString();
@@ -114,27 +114,36 @@ namespace Win8Client
             Windows.System.Launcher.LaunchUriAsync(uri);
         }
 
-        Dominion.Card[] GetSelectedCardsAndClear()
+        Dominion.Card[] GetSelectedCardsAndClear(bool fShouldClear = true)
         {
             var result = new List<Dominion.Card>();
+            
             foreach(DominionCard card in this.CurrentCardsListView.SelectedItems)
             {
                 result.Add(card.dominionCard);
             }
-            this.CurrentCardsListView.SelectedItems.Clear();            
+            if (fShouldClear)
+                this.CurrentCardsListView.SelectedItems.Clear();            
+            
             if (this.appDataContext.IsBaneCardVisible.Value)
             {                
                 foreach (DominionCard card in this.BaneCardsListView.SelectedItems)
                 {
                     result.Add(card.dominionCard);
                 }
-                this.BaneCardsListView.SelectedItem = null;
+                if (fShouldClear)
+                {
+                    this.BaneCardsListView.SelectedItem = null;
+                }
             }
+
             foreach (DominionCard card in this.CommonCardsListView.SelectedItems)
             {
                 result.Add(card.dominionCard);
             }
-            this.CommonCardsListView.SelectedItems.Clear();
+            
+            if (fShouldClear)
+                this.CommonCardsListView.SelectedItems.Clear();
             return result.ToArray();
         }
         
