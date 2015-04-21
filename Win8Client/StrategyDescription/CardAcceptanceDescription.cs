@@ -32,6 +32,7 @@ namespace Win8Client
 
         public DependencyObjectDecl<bool> SecondaryMatchVisible{ get; private set; }
         public DependencyObjectDecl<bool> SecondaryMatchCardVisible{ get; private set; }
+        public DependencyObjectDecl<bool> CountConditionVisible { get; private set; }
         public DependencyObjectDecl<bool> CanSimulateCard { get; private set; }
 
         public CardAcceptanceDescription()
@@ -44,6 +45,7 @@ namespace Win8Client
             this.Threshhold = new DependencyObjectDecl<int>(this);
             this.SecondaryMatchVisible = new DependencyObjectDecl<bool>(this);
             this.SecondaryMatchCardVisible = new DependencyObjectDecl<bool>(this);
+            this.CountConditionVisible = new DependencyObjectDecl<bool>(this);
             this.CanSimulateCard = new DependencyObjectDecl<bool>(this);
 
             this.CountSource.PropertyChanged += CountSource_PropertyChanged;
@@ -63,18 +65,28 @@ namespace Win8Client
                 {
                     this.SecondaryMatchVisible.Value = false;
                     this.SecondaryMatchCardVisible.Value = false;
+                    this.CountConditionVisible.Value = false;
                     break;
                 }
                 case Dominion.Strategy.Description.CountSource.AvailableCoin:
                 {
                     this.SecondaryMatchVisible.Value = true;
                     this.SecondaryMatchCardVisible.Value = false;
+                    this.CountConditionVisible.Value = true;
                     break;
-                }    
+                }
+                case Dominion.Strategy.Description.CountSource.CardBeingPlayedIs:
+                {
+                    this.SecondaryMatchVisible.Value = true;
+                    this.SecondaryMatchCardVisible.Value = true;
+                    this.CountConditionVisible.Value = false;
+                    break;
+                }  
                 default:
                 {
                     this.SecondaryMatchVisible.Value = true;
                     this.SecondaryMatchCardVisible.Value = true;
+                    this.CountConditionVisible.Value = true;
                     break;
                 }
             }

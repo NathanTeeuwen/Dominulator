@@ -69,10 +69,11 @@
                                     </ComboBox>
                                     <TextBlock Padding="0,0,5,0" Text="{Binding  Card.Value.Name}"></TextBlock>
                                     <ComboBox Margin="5" SelectedIndex="{Binding CountSource.Value, Mode=TwoWay, Converter={StaticResource CountSourceToIntegerConverter}}">
-                                        <ComboBoxItem>When Count Of Pile</ComboBoxItem>
-                                        <ComboBoxItem>When Count All Owned</ComboBoxItem>
-                                        <ComboBoxItem>When Count In Hand</ComboBoxItem>
                                         <ComboBoxItem>Always</ComboBoxItem>
+                                        <ComboBoxItem>When count Of Pile</ComboBoxItem>
+                                        <ComboBoxItem>When count all Owned</ComboBoxItem>
+                                        <ComboBoxItem>When count in Hand</ComboBoxItem>
+                                        <ComboBoxItem>When card in Play is</ComboBoxItem>
                                         <ComboBoxItem>Coin Available</ComboBoxItem>
                                     </ComboBox>
                                     <StackPanel Orientation="Horizontal" Visibility="{Binding SecondaryMatchVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">
@@ -86,27 +87,29 @@
                                                 </DataTemplate>
                                             </ComboBox.ItemTemplate>
                                         </ComboBox>
-                                        <TextBlock Padding="0,0,5,0">is</TextBlock>
-                                        <ComboBox Margin="5" SelectedIndex="{Binding Comparison.Value, Mode=TwoWay, Converter={StaticResource ComparisonToIntegerConverter}}">
-                                            <ComboBoxItem>Less Than</ComboBoxItem>
-                                            <ComboBoxItem>Less Than Or Equal</ComboBoxItem>
-                                            <ComboBoxItem>Greater Than</ComboBoxItem>
-                                            <ComboBoxItem>Greater Than Equal</ComboBoxItem>
-                                            <ComboBoxItem>Equals</ComboBoxItem>
-                                        </ComboBox>
-                                        <ComboBox Margin="5" SelectedIndex="{Binding Threshhold.Value, Mode=TwoWay}">
-                                            <ComboBoxItem>0</ComboBoxItem>
-                                            <ComboBoxItem>1</ComboBoxItem>
-                                            <ComboBoxItem>2</ComboBoxItem>
-                                            <ComboBoxItem>3</ComboBoxItem>
-                                            <ComboBoxItem>4</ComboBoxItem>
-                                            <ComboBoxItem>5</ComboBoxItem>
-                                            <ComboBoxItem>6</ComboBoxItem>
-                                            <ComboBoxItem>7</ComboBoxItem>
-                                            <ComboBoxItem>8</ComboBoxItem>
-                                            <ComboBoxItem>9</ComboBoxItem>
-                                            <ComboBoxItem>10</ComboBoxItem>
-                                        </ComboBox>
+                                        <StackPanel Orientation="Horizontal" Visibility="{Binding CountConditionVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">
+                                            <TextBlock Padding="0,0,5,0">is</TextBlock>
+                                            <ComboBox Margin="5" SelectedIndex="{Binding Comparison.Value, Mode=TwoWay, Converter={StaticResource ComparisonToIntegerConverter}}">
+                                                <ComboBoxItem>Less Than</ComboBoxItem>
+                                                <ComboBoxItem>Less Than Or Equal</ComboBoxItem>
+                                                <ComboBoxItem>Greater Than</ComboBoxItem>
+                                                <ComboBoxItem>Greater Than Equal</ComboBoxItem>
+                                                <ComboBoxItem>Equals</ComboBoxItem>
+                                            </ComboBox>
+                                            <ComboBox Margin="5" SelectedIndex="{Binding Threshhold.Value, Mode=TwoWay}">
+                                                <ComboBoxItem>0</ComboBoxItem>
+                                                <ComboBoxItem>1</ComboBoxItem>
+                                                <ComboBoxItem>2</ComboBoxItem>
+                                                <ComboBoxItem>3</ComboBoxItem>
+                                                <ComboBoxItem>4</ComboBoxItem>
+                                                <ComboBoxItem>5</ComboBoxItem>
+                                                <ComboBoxItem>6</ComboBoxItem>
+                                                <ComboBoxItem>7</ComboBoxItem>
+                                                <ComboBoxItem>8</ComboBoxItem>
+                                                <ComboBoxItem>9</ComboBoxItem>
+                                                <ComboBoxItem>10</ComboBoxItem>
+                                            </ComboBox>
+                                        </StackPanel>
                                     </StackPanel>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Visibility="{Binding CanSimulateCard.Value, Converter={StaticResource BoolToInVisibilityConverter}}">

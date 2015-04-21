@@ -54,7 +54,7 @@ namespace Dominion.Strategy.Description
                 case CountSource.CountAllOwned:
                     countOfTheSource = Strategy.CountAllOwned(this.cardType, gameState);
                     break;
-                case CountSource.InHand:
+                case CountSource.CountInHand:
                     countOfTheSource = Strategy.CountInHand(this.cardType, gameState);
                     break;
                 case CountSource.Always:
@@ -62,6 +62,8 @@ namespace Dominion.Strategy.Description
                 case CountSource.AvailableCoin:
                     countOfTheSource = gameState.Self.AvailableCoins;
                     break;
+                case CountSource.CardBeingPlayedIs:
+                    return Strategy.CardBeingPlayedIs(this.cardType, gameState);
                 default:
                     throw new Exception("Unhandled source case");
             }
