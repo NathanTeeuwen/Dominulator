@@ -226,6 +226,11 @@ namespace Dominion.CardTypes
         {
         }
 
+        public override bool DoReactionToAttackWhileInPlayAcrossTurns(PlayerState currentPlayer, GameState gameState)
+        {
+            return true;
+        }
+
         public override void DoSpecializedDurationActionAtBeginningOfTurn(PlayerState currentPlayer, GameState gameState)
         {
             currentPlayer.AddCoins(1);
