@@ -119,7 +119,7 @@ namespace Win8Client
                     }
                 }                
             }
-            else if (sourceList.Count < 10)
+            else if (sourceList.Count < 10 && sourceList.Count > 0)
             {
                 var listRemoved = new List<DominionCard>();
                 foreach(var card in resultList)
