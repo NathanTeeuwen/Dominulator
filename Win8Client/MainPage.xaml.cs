@@ -480,7 +480,7 @@ namespace Win8Client
         {
             this.Name = name;
             this.Index = index;
-            this.isEnabled = new DependencyObjectDecl<bool, DefaultTrue>(this);
+            this.isEnabled = new DependencyObjectDeclWithSettings<bool, DefaultTrue>(this, SettingsString());                  
         }        
 
         public DependencyObjectDecl<bool, DefaultTrue> IsEnabled
@@ -489,6 +489,11 @@ namespace Win8Client
             {
                 return this.isEnabled;
             }
+        }       
+
+        private string SettingsString()
+        {
+            return "Is Expansion Enabled" + this.Name;
         }
     }
 

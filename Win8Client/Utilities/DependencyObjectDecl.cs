@@ -45,6 +45,36 @@ namespace Win8Client
             }
         }
     }
+ 
+    class DependencyObjectDeclWithSettings<T, T2>
+        : DependencyObjectDecl<T, T2>
+        where T2 : DependencyPolicy<T>, new()
+    {
+        public readonly string settingsName;
+
+        public DependencyObjectDeclWithSettings(object parent, string settingsName)
+            : base(parent)
+        {
+            this.settingsName = settingsName;
+
+            object currentValue = Windows.Storage.ApplicationData.Current.LocalSettings.Values[this.settingsName]; 
+            if (currentValue == null)
+            {
+                Windows.Storage.ApplicationData.Current.LocalSettings.Values[this.settingsName] = Policy.DefaultValue;
+            }
+            else
+            {
+                this.Value = (T)currentValue;
+            }
+
+            this.PropertyChanged += UpdateLocalSettings_PropertyChanged;
+        }
+
+        void UpdateLocalSettings_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+ 	        Windows.Storage.ApplicationData.Current.LocalSettings.Values[this.settingsName] = this.Value;
+        }
+    }
 
     class DependencyObjectDecl<T, T2>
         : DependencyObject, INotifyPropertyChanged
@@ -58,7 +88,7 @@ namespace Win8Client
             this.parent = parent;
         }
 
-        private static T2 Policy = new T2();        
+        protected static T2 Policy = new T2();        
 
         public static readonly DependencyProperty DependencyProperty = DependencyProperty.Register(
             "Value",
