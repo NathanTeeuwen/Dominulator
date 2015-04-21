@@ -51,7 +51,7 @@ namespace Program.Simulations
                 }
             });
 
-            PlayerAction.SetKingdomCards(builder, player1, player2);
+            builder.SetKingdomCards(player1, player2);
             GameConfig gameConfig = builder.ToGameConfig();
 
             var playerActions = new PlayerAction[] { player1, player2 };

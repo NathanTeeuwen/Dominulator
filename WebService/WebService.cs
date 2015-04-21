@@ -84,7 +84,7 @@ namespace Program.WebService
                 if (playerAction1 != null && playerAction2 != null)
                 {
                     System.Console.WriteLine("Playing {0} vs {1}", playerAction1.PlayerName, playerAction2.PlayerName);
-                    PlayerAction.SetKingdomCards(builder, new PlayerAction[] { playerAction1, playerAction2 });
+                    builder.SetKingdomCards(new PlayerAction[] { playerAction1, playerAction2 });
 
                     var gameConfig = builder.ToGameConfig();
 

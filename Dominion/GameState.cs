@@ -113,6 +113,14 @@ namespace Dominion
             }
         }
 
+        public Card BaneCard
+        {
+            get
+            {
+                return this.game.GameConfig.baneCard;
+            }
+        }
+
         public CardGameSubset CardGameSubset
         {
             get

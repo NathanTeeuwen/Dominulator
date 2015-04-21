@@ -52,6 +52,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Watchtower] = new Watchtower(playerAction);
             result[Dominion.Cards.WalledVillage] = new WalledVillage(playerAction);
             result[Dominion.Cards.WishingWell] = result[Dominion.Cards.Mystic];
+            result[Dominion.Cards.YoungWitch] = new YoungWitch(playerAction);
 
             return result;
         }

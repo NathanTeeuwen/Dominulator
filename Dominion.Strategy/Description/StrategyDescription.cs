@@ -33,7 +33,7 @@ namespace Dominion.Strategy.Description
             return new StrategyDescription(this.purchaseOrderDescription.AddCardInBestLocation(card));
         }
 
-        public static StrategyDescription GetDefaultStrategyDescription(Card card)
+        public static StrategyDescription GetDefaultStrategyDescription()
         {
             var result = new StrategyDescription(
                 CardAcceptanceDescription.For(Cards.Province),
@@ -41,8 +41,7 @@ namespace Dominion.Strategy.Description
                 CardAcceptanceDescription.For(Cards.Estate, CountSource.CountOfPile, Cards.Province, Comparison.LessThan, 2),
                 CardAcceptanceDescription.For(Cards.Gold),                
                 CardAcceptanceDescription.For(Cards.Silver));
-            
-            result = result.AddCardToPurchaseOrder(card);
+                        
             return result;
         }
 

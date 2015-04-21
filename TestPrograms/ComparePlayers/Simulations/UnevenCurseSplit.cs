@@ -55,7 +55,7 @@ namespace Program.Simulations
             var player2 = Strategies.BigMoneyWithCard.Player(Cards.Witch, cardCount: 2);
 
             var builder = new GameConfigBuilder();
-            PlayerAction.SetKingdomCards(builder, player1, player2);
+            builder.SetKingdomCards(player1, player2);
             if (startingCards != null)
                 builder.SetStartingDeck(startingCards);                
 

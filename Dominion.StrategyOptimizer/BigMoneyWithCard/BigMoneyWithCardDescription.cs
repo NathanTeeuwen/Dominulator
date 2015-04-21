@@ -73,7 +73,7 @@ namespace Program
             var player2Action = action;
 
             GameConfigBuilder builder = new GameConfigBuilder();
-            PlayerAction.SetKingdomCards(builder, player1Action, player1Action);
+            builder.SetKingdomCards(player1Action, player1Action);
 
             var gameConfig = builder.ToGameConfig();
             var rotateWhoStartsFirst = true;

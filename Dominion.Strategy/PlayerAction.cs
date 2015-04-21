@@ -11,6 +11,20 @@ namespace Dominion.Strategy
 {
     public delegate bool GameStatePlayerActionPredicate(GameState gameState, DefaultPlayerAction playerAction);
 
+    public static class PlayerActionExtensions
+    {
+        public static void SetKingdomCards(this GameConfigBuilder builder, params PlayerAction[] players)
+        {
+            var allCards = new HashSet<Card>();
+            foreach (PlayerAction player in players)
+            {
+                PlayerAction.AddAllCards(allCards, player);
+            }
+
+            builder.SetKingdomPiles(allCards);
+        }
+    }
+
     public class PlayerAction
         : PlayerActionFromCardResponses
     {
@@ -36,18 +50,7 @@ namespace Dominion.Strategy
         public ICardPicker discardOrder { get { return this.playerAction.discardOrder; } }
         public ICardPicker trashOrder { get { return this.playerAction.trashOrder; } }
         public ICardPicker gainOrder { get { return this.playerAction.gainOrder; } }
-
-        public static void SetKingdomCards(GameConfigBuilder builder, params PlayerAction[] players)
-        {
-            var allCards = new HashSet<Card>();
-            foreach (PlayerAction player in players)
-            {
-                AddAllCards(allCards, player);
-            }
-
-            builder.SetKingdomPiles(allCards);
-        }
-
+        
         public static void AddAllCards(HashSet<Card> cardSet, PlayerAction playerAction)
         {
             AddAllCards(cardSet, playerAction.actionOrder);

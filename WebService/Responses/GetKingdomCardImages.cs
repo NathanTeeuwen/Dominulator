@@ -24,7 +24,7 @@ namespace Program.WebService
                 playerActions.Add(player2);
 
             var builder = new GameConfigBuilder();
-            PlayerAction.SetKingdomCards(builder, playerActions.ToArray());
+            builder.SetKingdomCards(playerActions.ToArray());
             return builder.ToGameConfig().kingdomPiles.OrderBy(card => card.DefaultCoinCost).Select(card => GetCardImageName(card)).ToArray();
         }
 

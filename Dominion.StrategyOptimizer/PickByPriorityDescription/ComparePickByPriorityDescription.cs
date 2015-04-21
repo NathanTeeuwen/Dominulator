@@ -26,7 +26,7 @@ namespace Program
             int numberOfGames = 33;
 
             GameConfigBuilder builder = new GameConfigBuilder();
-            PlayerAction.SetKingdomCards(builder, leftPlayer, rightPlayer);
+            builder.SetKingdomCards(leftPlayer, rightPlayer);
 
             var gameConfig = builder.ToGameConfig();
             var rotateWhoStartsFirst = true;

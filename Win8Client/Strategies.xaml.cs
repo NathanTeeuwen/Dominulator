@@ -80,12 +80,10 @@ namespace Win8Client
 
                 if (strategy.purchaseOrderDescription.descriptions.Length == 0)
                 {
-                    strategy = Dominion.Strategy.Description.StrategyDescription.GetDefaultStrategyDescription(card.dominionCard);
+                    strategy = Dominion.Strategy.Description.StrategyDescription.GetDefaultStrategyDescription();
                 }
-                else
-                {
-                    strategy = strategy.AddCardToPurchaseOrder(card.dominionCard);
-                }
+                
+                strategy = strategy.AddCardToPurchaseOrder(card.dominionCard);
             }
 
             this.appDataContext.currentStrategy.Value.PopulateFrom(strategy);

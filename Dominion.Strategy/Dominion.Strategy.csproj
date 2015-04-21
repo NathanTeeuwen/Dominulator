@@ -83,6 +83,7 @@
     <Compile Include="DefaultPlayRules\Cards\Treasury.cs" />
     <Compile Include="DefaultPlayRules\Cards\Vault.cs" />
     <Compile Include="DefaultPlayRules\Cards\WalledViillage.cs" />
+    <Compile Include="DefaultPlayRules\Cards\YoungWitch.cs" />
     <Compile Include="DefaultPlayRules\Cards\WatchTower.cs" />
     <Compile Include="DefaultPlayRules\CompareCardByFirstToGain.cs" />
     <Compile Include="DefaultPlayRules\CompareCardFirstToDiscard.cs" />

@@ -493,10 +493,14 @@ namespace Dominion.CardTypes
         }
 
         public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
-        {
-            // TODO: BANE CARD
-            // throw new NotImplementedException()
-            otherPlayer.GainCardFromSupply(Curse.card, gameState);
+        {            
+            Card baneCard = gameState.BaneCard;
+            bool wasBaneRevelaed = otherPlayer.RequestPlayerRevealCardFromHand(card => card == baneCard, gameState) != null;
+
+            if (!wasBaneRevelaed)
+            {
+                otherPlayer.GainCardFromSupply(Curse.card, gameState);
+            }         
         }
     }
 

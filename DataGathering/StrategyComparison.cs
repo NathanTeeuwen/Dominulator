@@ -54,7 +54,7 @@ namespace Dominion.Data
             bool gatherStats = true)
         {           
             GameConfigBuilder builder = new GameConfigBuilder();
-            PlayerAction.SetKingdomCards(builder, player1, player2);
+            builder.SetKingdomCards(player1, player2);
 
             var gameConfig = builder.ToGameConfig();
             var strategyComparison = new Dominion.Data.StrategyComparison(player1, player2, gameConfig, rotateWhoStartsFirst, numberOfGames);

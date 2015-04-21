@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 using CardTypes = Dominion.CardTypes;
 using Dominion;
+using Dominion.Strategy.Description;
 using Dominion.Strategy;
 using Dominion.Data;
 
@@ -16,13 +17,20 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.BigMoneyWithCard.Player(Cards.TreasureTrove, cardCount:10);
-                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Gold);                
+                StrategyDescription descr1 = StrategyDescription.GetDefaultStrategyDescription().AddCardToPurchaseOrder(Cards.YoungWitch).AddCardToPurchaseOrder(Cards.Sage);
+                StrategyDescription descr2 = StrategyDescription.GetDefaultStrategyDescription().AddCardToPurchaseOrder(Cards.SeaHag).AddCardToPurchaseOrder(Cards.Sage);
+                
+                //var player1 = Strategies.BigMoneyWithCard.Player(Cards.TreasureTrove, cardCount:10);
+                //var player2 = Strategies.BigMoneyWithCard.Player(Cards.Gold);                
+
+                var player1 = descr1.ToPlayerAction("young witch");
+                var player2 = descr2.ToPlayerAction("sea hag");
                 
                 var builder = new GameConfigBuilder();
+                builder.SetBaneCard(Cards.Sage);
                 builder.CardSplit = StartingCardSplit.Split43;
-
-                PlayerAction.SetKingdomCards(builder, player1, player2);
+                builder.SetKingdomCards(player1, player2);
+                
                 testOutput.ComparePlayers(
                     player1,
                     player2,                    

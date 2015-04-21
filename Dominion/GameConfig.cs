@@ -68,6 +68,19 @@ namespace Dominion
             this.baneCard = card;
         }
 
+        public StartingCardSplit CardSplit
+        {
+            set
+            {
+                this.shuffleLuck = GetStartingHandForSplit(value);
+            }
+        }
+
+        public void SetCardSplitPerPlayer(StartingCardSplit[] splits)
+        {
+            this.shuffleLuck = GetStartingHandForSplit(splits);
+        }
+
         public void SetKingdomPiles(IEnumerable<Card> cards)
         {
             var setCards = new HashSet<Card>();
@@ -95,20 +108,7 @@ namespace Dominion
                 setCards.Remove(card);
             }
         }
-    
-        public StartingCardSplit CardSplit
-        {
-            set
-            {
-                this.shuffleLuck = GetStartingHandForSplit(value);
-            }
-        }
-
-        public void SetCardSplitPerPlayer(StartingCardSplit[] splits)
-        {
-            this.shuffleLuck = GetStartingHandForSplit(splits);            
-        }
-
+          
         public GameConfig ToGameConfig()
         {
             return new GameConfig(this.kingdomPiles, this.baneCard, this.useShelters, this.useColonyAndPlatinum, this.startingDeck, this.shuffleLuck);

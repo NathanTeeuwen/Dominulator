@@ -145,8 +145,8 @@ namespace Dominion
             CreateGameLog createGameLog = null)
         {
             GameConfigBuilder builder = new GameConfigBuilder();
-            PlayerAction.SetKingdomCards(builder, player1, player2);
-
+            builder.SetKingdomCards(player1, player2);
+            
             builder.useColonyAndPlatinum = useColonyAndPlatinum;
             builder.useShelters = useShelters;
             builder.CardSplit = split;
