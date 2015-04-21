@@ -96,6 +96,22 @@ namespace Win8Client
         private void RandomizeButtonClick(object sender, RoutedEventArgs e)
         {
             Randomize10Cards();
+        }
+
+        private void GoogleButtonClick(object sender, RoutedEventArgs e)
+        {
+            var uriBuilder = new System.Text.StringBuilder();
+            uriBuilder.Append("https://www.google.com/?gws_rd=ssl#safe=off&q=dominion");
+
+            foreach(DominionCard card in this.CurrentCardsListView.SelectedItems)
+            {
+                uriBuilder.Append("+");
+                uriBuilder.Append(card.dominionCard.name.Replace(" ", "%20"));
+            }
+            
+            string uriToLaunch = uriBuilder.ToString();
+            var uri = new Uri(uriToLaunch);
+            Windows.System.Launcher.LaunchUriAsync(uri);
         }   
 
         private void SortCurrentByName(object sender, RoutedEventArgs e)

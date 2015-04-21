@@ -571,6 +571,11 @@
         <Setter Property="AutomationProperties.Name" Value="Simulate"/>
         <Setter Property="Content" Value="&#xE130;"/>
     </Style>
+    <Style x:Key="GoogleAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="GoogleAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Google"/>
+        <Setter Property="Content" Value="&#xE128;"/>
+    </Style>
     <Style x:Key="ClearAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
         <Setter Property="AutomationProperties.AutomationId" Value="ClearAppBarButton"/>
         <Setter Property="AutomationProperties.Name" Value="Clear"/>
