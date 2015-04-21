@@ -14,6 +14,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             var result = new MapOfCards<IPlayerAction>();
 
             result[Dominion.Cards.Ambassador] = new AmbassadorAlwaysReturnBestTrash(playerAction);
+            result[Dominion.Cards.Amulet] = new Amulet(playerAction);
             result[Dominion.Cards.Alchemist] = new Alchemist(playerAction);
             result[Dominion.Cards.BandOfMisfits] = new BandOfMisfits(playerAction);
             result[Dominion.Cards.Cartographer] = new Cartographer(playerAction);
