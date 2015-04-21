@@ -255,5 +255,10 @@ namespace Win8Client
                 SetSplit(this.appDataContext.currentStrategy.Value.StartingCardSplit.Value);
             }
         }
+
+        private void ReportButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.appDataContext.ShowReport();
+        }
     }
 }

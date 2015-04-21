@@ -8,6 +8,8 @@
     private copy.
 -->
 
+<!-- More Styles at:  https://msdn.microsoft.com/en-us/library/windows/apps/jj841126.aspx-->
+
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
@@ -554,10 +556,25 @@
         <Setter Property="AutomationProperties.Name" Value="View All"/>
         <Setter Property="Content" Value="&#xE13C;"/>
     </Style>
+    <Style x:Key="CurrentCardsAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="CurrentCardsAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="View Deck"/>
+        <Setter Property="Content" Value="&#xE13C;"/>
+    </Style>
     <Style x:Key="ReportAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
         <Setter Property="AutomationProperties.AutomationId" Value="ReportAppBarButton"/>
-        <Setter Property="AutomationProperties.Name" Value="Report"/>
+        <Setter Property="AutomationProperties.Name" Value="Details"/>
+        <Setter Property="Content" Value="&#xE15C;"/>
+    </Style>
+    <Style x:Key="SimulateAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="SimulateAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Simulate"/>
         <Setter Property="Content" Value="&#xE130;"/>
+    </Style>
+    <Style x:Key="ClearAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ClearAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Clear"/>
+        <Setter Property="Content" Value="&#xE10A;"/>
     </Style>
     <Style x:Key="SortAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
         <Setter Property="AutomationProperties.AutomationId" Value="SortAppBarButton"/>

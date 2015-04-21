@@ -286,6 +286,25 @@ namespace Win8Client
 
             return builder.ToGameConfig();
         }
+
+        public void ShowReport()
+        {
+            if (this.strategyReportDirty)
+            {
+                this.strategyReportDirty = false;
+                var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();
+                System.Threading.Tasks.Task<string>.Factory.StartNew(() =>
+                {
+                    return HtmlRenderer.HtmlReportGenerator.GetHtmlReport(this.strategyComparisonResults);
+                }).ContinueWith(async (continuation) =>
+                {
+                    this.StrategyReport.Value = continuation.Result;
+                }, uiScheduler);
+            }
+
+            this.PageConfig.Value = Win8Client.PageConfig.StrategyReport;
+        }
+
     }
 
     public enum CardVisibility

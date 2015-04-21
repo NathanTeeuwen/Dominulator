@@ -10,6 +10,9 @@
     d:DesignHeight="300"
     d:DesignWidth="400"
     Name="Page">
+    <UserControl.Resources>
+        <ResourceDictionary Source="StandardStyles.xaml" />
+    </UserControl.Resources>
 
     <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" ZoomMode="Disabled">
         <Grid>
@@ -118,8 +121,9 @@
                     <TextBlock FontSize="20">Drag Cards here to include in strategy</TextBlock>
                     <StackPanel Height="20"/>
                     <StackPanel Orientation="Horizontal">
-                        <Button Click="SimulateGameButtonClick">Simulate Game</Button>
-                        <Button Click="ClearStrategyButtonClick">Clear Strategy</Button>
+                        <Button Style="{StaticResource SimulateAppBarButtonStyle}" BorderThickness="0" Click="SimulateGameButtonClick"/>
+                        <Button Style="{StaticResource ClearAppBarButtonStyle}" BorderThickness="0" Click="ClearStrategyButtonClick" />
+                        <Button Style="{StaticResource ReportAppBarButtonStyle}" BorderThickness="0" Click="ReportButton_Click"/>
                     </StackPanel>
                     <StackPanel Height="20"/>
                     <StackPanel Visibility="{Binding StrategyResultsAvailable.Value, Converter={StaticResource BoolToVisibilityConverter}}">
