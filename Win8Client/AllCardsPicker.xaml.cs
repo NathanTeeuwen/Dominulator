@@ -255,6 +255,13 @@ namespace Win8Client
             if (card.potionCost != 0)
                 result.Add("potion");
 
+            if (this.appDataContext.CurrentDeck.CurrentCards.Where(c => c.dominionCard == card).Any())
+            {
+                result.Add("current");
+                result.Add("deck");
+                result.Add("selected");
+            }
+
             return result.ToArray();
         }
     }
