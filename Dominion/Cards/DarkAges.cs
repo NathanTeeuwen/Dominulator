@@ -704,6 +704,212 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Knight
+       : Card
+    {
+        protected Knight(
+            string name, 
+            int coinCost = 5,
+            int plusActions = 0,
+            int plusCoins = 0,
+            int plusBuy = 0,
+            int plusCards = 0,
+            VictoryPointCounter victoryPoints = null)
+            : base(
+                name, 
+                Expansion.DarkAges, 
+                coinCost: coinCost,
+                plusActions: plusActions,
+                plusCoins: plusCoins,
+                plusCards: plusCards,
+                plusBuy: plusBuy,
+                isAction: true, 
+                isAttack: true, 
+                victoryPoints:victoryPoints)
+        {
+        }
+
+        public override void DoSpecializedAttack(PlayerState currentPlayer, PlayerState otherPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+
+        protected void DoKnightAttack(GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class DameAnna
+       : Knight
+    {
+        public static DameAnna card = new DameAnna();
+
+        private DameAnna()
+            : base("Dame Anna")
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RequestPlayerTrashCardsFromHand(gameState, 2, isOptional: true);
+            DoKnightAttack(gameState);
+        }
+    }
+
+    public class DameJosephine
+       : Knight
+    {
+        public static DameJosephine card = new DameJosephine();
+
+        private DameJosephine()
+            : base("Dame Josephine", victoryPoints: player => 2)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {       
+            DoKnightAttack(gameState);
+        }
+    }
+
+    public class DameMolly
+       : Knight
+    {
+        public static DameMolly card = new DameMolly();
+
+        private DameMolly()
+            : base("Dame Josephine", plusActions:2)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            DoKnightAttack(gameState);
+        }
+    }
+
+    public class DameNatalie
+       : Knight
+    {
+        public static DameNatalie card = new DameNatalie();
+
+        private DameNatalie()
+            : base("Dame Natalie")
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, c => c.CurrentCoinCost(currentPlayer) <= 3, "Gain a card costing up to 3", isOptional:true);
+            DoKnightAttack(gameState);
+        }
+    }
+
+    public class DameSylvia
+       : Knight
+    {
+        public static DameSylvia card = new DameSylvia();
+
+        private DameSylvia()
+            : base("Dame Sylvia", plusCoins:2)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            DoKnightAttack(gameState);
+        }
+    }
+
+    public class SirBailey
+       : Knight
+    {
+        public static SirBailey card = new SirBailey();
+
+        private SirBailey()
+            : base("Sir Bailey", plusCards:1, plusActions:1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            DoKnightAttack(gameState);
+        }
+    }
+
+    public class SirDestry
+       : Knight
+    {
+        public static SirDestry card = new SirDestry();
+
+        private SirDestry()
+            : base("Sir Destroy", plusCards:2)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            DoKnightAttack(gameState);
+        }
+    }
+
+    public class SirMartin
+       : Knight
+    {
+        public static SirMartin card = new SirMartin();
+
+        private SirMartin()
+            : base("Sir Martin", coinCost:4, plusBuy:2)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            DoKnightAttack(gameState);
+        }
+    }
+
+    public class SirMichael
+       : Knight
+    {
+        public static SirMichael card = new SirMichael();
+
+        private SirMichael()
+            : base("Sir Michael")
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            /// each other player discards down to 3
+            throw new NotImplementedException();
+            //DoKnightAttack(gameState);
+        }
+    }
+
+    public class SirVander
+       : Knight
+    {
+        public static SirVander card = new SirVander();
+
+        private SirVander()
+            : base("Sir Vander")
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            DoKnightAttack(gameState);
+        }
+
+        public override bool DoSpecializedTrash(PlayerState selfPlayer, GameState gameState)
+        {
+ 	        selfPlayer.GainCardFromSupply(Cards.Gold, gameState);
+            return true;
+        }
+    }
+
     public class Marauder
        : Card
     {
