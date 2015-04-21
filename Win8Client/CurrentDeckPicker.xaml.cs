@@ -69,24 +69,14 @@ namespace Win8Client
             bool useColony = this.appDataContext.UseColonyPlatinum.Value;
             DominionCard baneCard = this.appDataContext.BaneCard.CurrentCards.FirstOrDefault();
 
-            bool isCleanRoll = this.appDataContext.CurrentDeck.Generate10Random(ref baneCard, this.appDataContext.AllCards.Cards, itemsToReplace: selectedItems);
+            bool isCleanRoll = this.appDataContext.CurrentDeck.GenerateRandom(10, ref baneCard, this.appDataContext.AllCards.Cards, itemsToReplace: selectedItems);
             this.appDataContext.BaneCard.PopulateBaneCard(baneCard);            
 
             if (isCleanRoll)
-            {
-                // reroll shelter
-                {
-                    int cProsperity = this.appDataContext.CurrentDeck.CurrentCards.Select(c => c.dominionCard).Where(c => c.expansion == Dominion.Expansion.Prosperity).Count();
-                    int roll = MainPage.random.Next(1, 10);
-                    this.appDataContext.UseColonyPlatinum.Value = cProsperity >= roll ? true : false;
-                }
-
-                // reroll shelter
-                {
-                    int cDarkAges = this.appDataContext.CurrentDeck.CurrentCards.Select(c => c.dominionCard).Where(c => c.expansion == Dominion.Expansion.DarkAges).Count();
-                    int roll = MainPage.random.Next(1, 10);
-                    this.appDataContext.UseShelters.Value  = cDarkAges >= roll ? true : false;
-                }
+            {                
+                this.appDataContext.UseColonyPlatinum.Value = ShouldIncludeExpansion(Dominion.Expansion.Prosperity);
+                this.appDataContext.UseShelters.Value = ShouldIncludeExpansion(Dominion.Expansion.DarkAges);
+                ReRollEvents();
 
                 this.appDataContext.player1Strategy.CardAcceptanceDescriptions.Clear();
                 this.appDataContext.player2Strategy.CardAcceptanceDescriptions.Clear();
@@ -94,6 +84,40 @@ namespace Win8Client
             
             if (this.CurrentCardsChanged != null)
                 this.CurrentCardsChanged();            
+        }
+
+        private bool ShouldIncludeExpansion(Dominion.Expansion expansion)
+        {
+            int cExpansion = this.appDataContext.CurrentDeck.CurrentCards.Select(c => c.dominionCard).Where(c => c.expansion == expansion).Count();
+            int roll = MainPage.random.Next(1, 10);
+            return cExpansion >= roll ? true : false;
+        }
+
+        private void ReRollEvents()
+        {
+            int cEventsToInclude = 0;
+            
+            int cEventRemaining = 20;
+            int totalKingdomCount = Dominion.Cards.AllKingdomCards().Count();
+            for (int i = 0; i < 10; ++i)
+            {
+                int roll = MainPage.random.Next(totalKingdomCount);
+                if (roll <= cEventRemaining)
+                {
+                    cEventsToInclude++;
+                    cEventRemaining--;
+                    i--;
+                    continue;
+                }                
+                totalKingdomCount--;
+            }
+
+            var allEventsCards = Dominion.Cards.AllCards().Where(c => c.isEvent).Select(c => DominionCard.Create(c)).ToArray();
+            var selectedItems = this.EventCardsListView.SelectedItems.Select(item => (DominionCard)item).ToArray<DominionCard>();
+
+            var cardPicker = new UniqueCardPicker(allEventsCards);
+            DominionCard baneCard = null;
+            this.appDataContext.EventCards.GenerateRandom(cEventsToInclude, ref baneCard, allEventsCards, itemsToReplace: selectedItems);
         }
 
         private void RandomizeButtonClick(object sender, RoutedEventArgs e)
@@ -147,6 +171,15 @@ namespace Win8Client
             
             if (fShouldClear)
                 this.CommonCardsListView.SelectedItems.Clear();
+
+            foreach (DominionCard card in this.EventCardsListView.SelectedItems)
+            {
+                result.Add(card.dominionCard);
+            }
+
+            if (fShouldClear)
+                this.EventCardsListView.SelectedItem = null;
+
             return result.ToArray();
         }
         

@@ -14,6 +14,7 @@ namespace Win8Client
         private SortableCardList colonyPlatinumCards;
         private SortableCardList currentDeck;
         private SortableCardList baneCard;
+        private SortableCardList eventCards;
         private SortableCardList commonCards;
         private System.Collections.ObjectModel.ObservableCollection<Expansion> expansions;
 
@@ -52,6 +53,7 @@ namespace Win8Client
         public DependencyObjectDecl<bool, DefaultFalse> UseColonyPlatinum { get; private set; }
 
         public DependencyObjectDecl<bool, DefaultFalse> IsBaneCardVisible { get; private set; }
+        public DependencyObjectDecl<bool, DefaultFalse> AreEventCardsVisible { get; private set; }
 
         internal bool isCurrentDeckIgnoringAllDeckSelectionUpdates = false;
 
@@ -67,6 +69,7 @@ namespace Win8Client
             this.currentDeck = new SortableCardList();
             this.commonCards = new SortableCardList();
             this.baneCard = new SortableCardList();
+            this.eventCards = new SortableCardList();
             this.availableCards = new System.Collections.ObjectModel.ObservableCollection<DominionCard>();
             this.expansions = new System.Collections.ObjectModel.ObservableCollection<Expansion>();
             /*
@@ -89,6 +92,7 @@ namespace Win8Client
             this.SettingsButtonVisibility = new DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton>(this);
             this.PageConfig = new DependencyObjectDecl<PageConfig, DefaultPageConfig>(this);   
             this.IsBaneCardVisible = new DependencyObjectDecl<bool, DefaultFalse>(this);
+            this.AreEventCardsVisible = new DependencyObjectDecl<bool, DefaultFalse>(this);
 
             this.StrategyResultsAvailable = new DependencyObjectDecl<bool, DefaultFalse>(this);
             this.StrategyReport = new DependencyObjectDecl<string, DefaultEmptyString>(this);
@@ -121,9 +125,11 @@ namespace Win8Client
             this.commonCards.PropertyChanged += AvailableCards_PropetyChanged;
             this.currentDeck.PropertyChanged += AvailableCards_PropetyChanged;
             this.currentDeck.PropertyChanged += UpdateBaneCard_PropetyChanged;
+            this.eventCards.PropertyChanged += UpdateEventCard_PropertyChanged;
 
             this.allCards.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
             this.currentDeck.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
+            this.eventCards.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
         }              
 
         void AvailableCards_PropetyChanged(object sender, PropertyChangedEventArgs e)
@@ -176,6 +182,16 @@ namespace Win8Client
             this.IsBaneCardVisible.Value = this.currentDeck.CurrentCards.Where(c => c.dominionCard == Dominion.Cards.YoungWitch).Any();
         }
 
+        void UpdateEventCard_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            UpdateEventCard();
+        }
+
+        void UpdateEventCard()
+        {
+            this.AreEventCardsVisible.Value = this.eventCards.CurrentCards.Any();
+        }
+
         public static void Sort<T, T2>(System.Collections.ObjectModel.ObservableCollection<T> collection, System.Func<T, T2> func) 
             where T2 : System.IComparable
         {
@@ -222,6 +238,14 @@ namespace Win8Client
             get
             {
                 return this.baneCard;
+            }
+        }
+
+        public SortableCardList EventCards
+        {
+            get
+            {
+                return this.eventCards;
             }
         }
 

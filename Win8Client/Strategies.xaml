@@ -114,7 +114,7 @@
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Visibility="{Binding CanSimulateCard.Value, Converter={StaticResource BoolToInVisibilityConverter}}">
                                     <TextBlock Padding="0,0,5,0" Text="{Binding Card.Value.Name}"></TextBlock>
-                                    <TextBlock Padding="0,0,5,0">Can not be simulated</TextBlock>
+                                    <TextBlock Padding="0,0,5,0">can not be simulated.</TextBlock>
                                 </StackPanel>
                             </StackPanel>
                         </DataTemplate>

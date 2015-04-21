@@ -87,7 +87,7 @@ namespace Dominion.CardTypes
         public static LostArts card = new LostArts();
 
         private LostArts()
-            : base("LostArts", Expansion.Adventures)
+            : base("Lost Arts", Expansion.Adventures)
         {
         }
     }
@@ -175,7 +175,7 @@ namespace Dominion.CardTypes
         public static ScoutingParty card = new ScoutingParty();
 
         private ScoutingParty()
-            : base("ScoutingParty", Expansion.Adventures)
+            : base("Scouting Party", Expansion.Adventures)
         {
         }
     }

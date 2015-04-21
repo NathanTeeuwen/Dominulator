@@ -77,15 +77,16 @@ namespace Win8Client
             this.appDataContext.CommonCards.PopulateCommon(gameConfig);
         }              
       
-        internal static bool Generate10Random(            
+        internal static bool GenerateRandom(
+            int targetCount,
             ref DominionCard baneCard,
             IList<DominionCard> resultList, 
             IList<DominionCard> sourceList, 
             IList<DominionCard> allCards, 
             IList<DominionCard> itemsToReplace)
         {
-            bool isReplacingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count <= 10;
-            bool isReducingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count > 10;
+            bool isReplacingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count <= targetCount;
+            bool isReducingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count > targetCount;
             var cardPicker = new UniqueCardPicker(allCards);
 
             bool isCleanRoll = false;
@@ -119,7 +120,7 @@ namespace Win8Client
                     }
                 }                
             }
-            else if (sourceList.Count < 10 && sourceList.Count > 0)
+            else if (sourceList.Count < targetCount && sourceList.Count > 0)
             {
                 var listRemoved = new List<DominionCard>();
                 foreach(var card in resultList)
@@ -146,7 +147,7 @@ namespace Win8Client
                 isCleanRoll = true;
             }
             
-            while (resultList.Count < 10)
+            while (resultList.Count < targetCount)
             {
                 DominionCard currentCard = cardPicker.GetCard(c => true);
                 if (currentCard == null)
@@ -328,6 +329,12 @@ namespace Win8Client
             });
         }
 
+        public async void Clear()
+        {
+            this.originalCards.Clear();
+            await this.UpdateUI();            
+        }
+
         public System.Threading.Tasks.Task PopulateShelters()
         {
             return PopulateSheltersFromResources().ContinueWith(async (continuation) =>
@@ -421,9 +428,14 @@ namespace Win8Client
             );
         }
 
-        public bool Generate10Random(ref DominionCard baneCard, IList<DominionCard> allCards, IList<DominionCard> itemsToReplace)
+        public bool GenerateRandom(
+            int targetCount, 
+            ref DominionCard baneCard, 
+            IList<DominionCard> allCards, 
+            IList<DominionCard> itemsToReplace)
         {            
-            bool isCleanRoll = MainPage.Generate10Random(                
+            bool isCleanRoll = MainPage.GenerateRandom(
+                targetCount,
                 ref baneCard,
                 this.originalCards, this.Cards, allCards, itemsToReplace);
 
