@@ -33,6 +33,23 @@ namespace Dominion.Strategy.Description
             return new StrategyDescription(this.purchaseOrderDescription.AddCardInBestLocation(card));
         }
 
+        public StrategyDescription AddCardsToPurchaseOrder(Card[] cards)
+        {
+            var result = this;
+
+            foreach (var card in cards)
+            {
+                if (result.purchaseOrderDescription.descriptions.Length == 0)
+                {
+                    result = Dominion.Strategy.Description.StrategyDescription.GetDefaultStrategyDescription();
+                }
+
+                result = result.AddCardToPurchaseOrder(card);
+            }
+
+            return result;
+        }
+
         public static StrategyDescription GetDefaultStrategyDescription()
         {
             var result = new StrategyDescription(

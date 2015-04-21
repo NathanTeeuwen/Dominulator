@@ -112,7 +112,53 @@ namespace Win8Client
             string uriToLaunch = uriBuilder.ToString();
             var uri = new Uri(uriToLaunch);
             Windows.System.Launcher.LaunchUriAsync(uri);
-        }   
+        }
+
+        Dominion.Card[] GetSelectedCardsAndClear()
+        {
+            var result = new List<Dominion.Card>();
+            foreach(DominionCard card in this.CurrentCardsListView.SelectedItems)
+            {
+                result.Add(card.dominionCard);
+            }
+            this.CurrentCardsListView.SelectedItems.Clear();            
+            if (this.appDataContext.IsBaneCardVisible.Value)
+            {                
+                foreach (DominionCard card in this.BaneCardsListView.SelectedItems)
+                {
+                    result.Add(card.dominionCard);
+                }
+                this.BaneCardsListView.SelectedItem = null;
+            }
+            foreach (DominionCard card in this.CommonCardsListView.SelectedItems)
+            {
+                result.Add(card.dominionCard);
+            }
+            this.CommonCardsListView.SelectedItems.Clear();
+            return result.ToArray();
+        }
+        
+        private void AddSelectedCardsToStrateyDescription(StrategyDescription strategyDescription)
+        {
+            Dominion.Card[] cards = GetSelectedCardsAndClear();
+            var originalDescription = strategyDescription.ConvertToDominionStrategy();
+            var newDescription = originalDescription.AddCardsToPurchaseOrder(cards);
+            strategyDescription.PopulateFrom(newDescription);
+        }
+
+        private void AddToStrategy1Click(object sender, RoutedEventArgs e)
+        {
+            AddSelectedCardsToStrateyDescription(this.appDataContext.player1Strategy);
+            this.appDataContext.IsPlayer1StrategyChecked.Value = true;
+            this.appDataContext.IsPlayer2StrategyChecked.Value = false;
+        }
+
+        private void AddToStrategy2Click(object sender, RoutedEventArgs e)
+        {
+            AddSelectedCardsToStrateyDescription(this.appDataContext.player2Strategy);
+            this.appDataContext.IsPlayer1StrategyChecked.Value = false;
+            this.appDataContext.IsPlayer2StrategyChecked.Value = true;
+        }
 
         private void SortCurrentByName(object sender, RoutedEventArgs e)
         {

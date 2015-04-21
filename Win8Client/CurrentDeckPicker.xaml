@@ -34,6 +34,8 @@
             <Button Click="RandomizeButtonClick" Style="{StaticResource RefreshAppBarButtonStyle}"></Button>
         </StackPanel>
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Style="{StaticResource AddToStrategy1BarButtonStyle}" BorderThickness="0" Click="AddToStrategy1Click"/>
+            <Button Style="{StaticResource AddToStrategy2BarButtonStyle}" BorderThickness="0" Click="AddToStrategy2Click"/>
             <Button Style="{StaticResource GoogleAppBarButtonStyle}" BorderThickness="0" Click="GoogleButtonClick"/>               
         </StackPanel>
         <ScrollViewer Grid.Row="1" ZoomMode="Disabled">
@@ -54,7 +56,7 @@
                 </ListView>
                 <StackPanel Orientation="Vertical" Visibility="{Binding IsBaneCardVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">
                     <TextBlock FontSize="20">Bane Card</TextBlock>
-                    <ListView ItemsSource="{Binding BaneCard.Cards}" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
+                    <ListView Name="BaneCardsListView" ItemsSource="{Binding BaneCard.Cards}" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
                         <ListView.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
@@ -69,7 +71,7 @@
                         </ListView.ItemTemplate>
                     </ListView>
                 </StackPanel>
-                <ListView ItemsSource="{Binding CommonCards.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
+                <ListView Name="CommonCardsListView" ItemsSource="{Binding CommonCards.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
                     <ListView.ItemsPanel>
                         <ItemsPanelTemplate>
                             <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>

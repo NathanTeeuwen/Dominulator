@@ -70,22 +70,9 @@ namespace Win8Client
                 return;
 
             string cardNames = (string)await e.Data.GetView().GetTextAsync("text");
-
+            Dominion.Card[] cards = cardNames.Split(',').Select(cardName => DominionCard.Create(cardName).dominionCard).ToArray();
             Dominion.Strategy.Description.StrategyDescription strategy = this.appDataContext.currentStrategy.Value.ConvertToDominionStrategy();
-
-
-            foreach (var cardName in cardNames.Split(','))
-            {
-                DominionCard card = DominionCard.Create(cardName);
-
-                if (strategy.purchaseOrderDescription.descriptions.Length == 0)
-                {
-                    strategy = Dominion.Strategy.Description.StrategyDescription.GetDefaultStrategyDescription();
-                }
-                
-                strategy = strategy.AddCardToPurchaseOrder(card.dominionCard);
-            }
-
+            strategy = strategy.AddCardsToPurchaseOrder(cards);
             this.appDataContext.currentStrategy.Value.PopulateFrom(strategy);
         }             
 

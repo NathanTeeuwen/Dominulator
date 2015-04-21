@@ -8,7 +8,7 @@
     private copy.
 -->
 
-<!-- More Styles at:  https://msdn.microsoft.com/en-us/library/windows/apps/jj841126.aspx-->
+<!-- More Styles at:  https://msdn.microsoft.com/en-us/library/windows/apps/jj841126.aspx or Segoe UI symbol in character map-->
 
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -575,6 +575,16 @@
         <Setter Property="AutomationProperties.AutomationId" Value="GoogleAppBarButton"/>
         <Setter Property="AutomationProperties.Name" Value="Google"/>
         <Setter Property="Content" Value="&#xE128;"/>
+    </Style>
+    <Style x:Key="AddToStrategy1BarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="AddToStrategy1AppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Add To Strategy"/>
+        <Setter Property="Content" Value="&#x31;"/>
+    </Style>
+    <Style x:Key="AddToStrategy2BarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="AddToStrategy2AppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="Add To Strategy"/>
+        <Setter Property="Content" Value="&#x32;"/>
     </Style>
     <Style x:Key="ClearAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
         <Setter Property="AutomationProperties.AutomationId" Value="ClearAppBarButton"/>
