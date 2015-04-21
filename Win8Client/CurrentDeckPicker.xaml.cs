@@ -87,6 +87,9 @@ namespace Win8Client
                     int roll = MainPage.random.Next(1, 10);
                     this.appDataContext.UseShelters.Value  = cDarkAges >= roll ? true : false;
                 }
+
+                this.appDataContext.player1Strategy.CardAcceptanceDescriptions.Clear();
+                this.appDataContext.player2Strategy.CardAcceptanceDescriptions.Clear();
             }
             
             if (this.CurrentCardsChanged != null)
