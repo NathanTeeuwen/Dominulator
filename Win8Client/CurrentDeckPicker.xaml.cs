@@ -117,6 +117,7 @@ namespace Win8Client
 
             var cardPicker = new UniqueCardPicker(allEventsCards.Select(c => c.dominionCard));
             DominionCard baneCard = null;
+            this.appDataContext.EventCards.Clear();
             this.appDataContext.EventCards.GenerateRandom(cEventsToInclude, ref baneCard, allEventsCards, itemsToReplace: selectedItems);
         }
 
