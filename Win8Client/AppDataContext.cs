@@ -17,15 +17,14 @@ namespace Win8Client
         private SortableCardList eventCards;
         private SortableCardList commonCards;
         private System.Collections.ObjectModel.ObservableCollection<Expansion> expansions;
-
-        /*
-        public DependencyObjectDecl<bool, DefaultTrue> Use3OrMoreFromExpansions { get; private set; }
-        public DependencyObjectDecl<bool, DefaultTrue> RequireTrashing { get; private set; }
-        public DependencyObjectDecl<bool, DefaultTrue> RequirePlusCards { get; private set; }
-        public DependencyObjectDecl<bool, DefaultTrue> RequirePlusBuy { get; private set; }
-        public DependencyObjectDecl<bool, DefaultTrue> RequirePlus2Actions { get; private set; }
-        public DependencyObjectDecl<bool, DefaultTrue> RequireAttack { get; private set; }
-        public DependencyObjectDecl<bool, DefaultTrue> AllowAttack { get; private set; }*/
+        
+        public DependencyObjectDeclWithSettings<bool, DefaultTrue> Use3OrMoreFromExpansions { get; private set; }
+        public DependencyObjectDeclWithSettings<bool, DefaultFalse> RequireTrashing { get; private set; }
+        public DependencyObjectDeclWithSettings<bool, DefaultFalse> RequirePlusCards { get; private set; }
+        public DependencyObjectDeclWithSettings<bool, DefaultFalse> RequirePlusBuy { get; private set; }
+        public DependencyObjectDeclWithSettings<bool, DefaultFalse> RequirePlus2Actions { get; private set; }
+        public DependencyObjectDeclWithSettings<bool, DefaultFalse> RequireAttack { get; private set; }
+        public DependencyObjectDeclWithSettings<bool, DefaultTrue> AllowAttack { get; private set; }
 
         public DependencyObjectDecl<bool, DefaultTrue> IsPlayer1StrategyChecked { get; private set; }
         public DependencyObjectDecl<bool, DefaultFalse> IsPlayer2StrategyChecked { get; private set; }
@@ -72,14 +71,15 @@ namespace Win8Client
             this.eventCards = new SortableCardList();
             this.availableCards = new System.Collections.ObjectModel.ObservableCollection<DominionCard>();
             this.expansions = new System.Collections.ObjectModel.ObservableCollection<Expansion>();
-            /*
-            this.Use3OrMoreFromExpansions = new DependencyObjectDecl<bool, DefaultTrue>(this);
-            this.RequireTrashing = new DependencyObjectDecl<bool, DefaultTrue>(this);
-            this.RequirePlusCards = new DependencyObjectDecl<bool, DefaultTrue>(this);
-            this.RequirePlusBuy = new DependencyObjectDecl<bool, DefaultTrue>(this);
-            this.RequirePlus2Actions = new DependencyObjectDecl<bool, DefaultTrue>(this);
-            this.RequireAttack = new DependencyObjectDecl<bool, DefaultTrue>(this);
-            this.AllowAttack = new DependencyObjectDecl<bool, DefaultTrue>(this);*/
+
+
+            this.Use3OrMoreFromExpansions = new DependencyObjectDeclWithSettings<bool, DefaultTrue>(this, "Use3OrMoreFromExpansions");
+            this.RequireTrashing = new DependencyObjectDeclWithSettings<bool, DefaultFalse>(this, "Require Trashing");
+            this.RequirePlusCards = new DependencyObjectDeclWithSettings<bool, DefaultFalse>(this, "Require Plus Card");
+            this.RequirePlusBuy = new DependencyObjectDeclWithSettings<bool, DefaultFalse>(this, "Require Plus Buy");
+            this.RequirePlus2Actions = new DependencyObjectDeclWithSettings<bool, DefaultFalse>(this, "Require Plus 2 Actions");
+            this.RequireAttack = new DependencyObjectDeclWithSettings<bool, DefaultFalse>(this, "Require Attack");
+            this.AllowAttack = new DependencyObjectDeclWithSettings<bool, DefaultTrue>(this, "Allow Attack");
 
             this.player1Strategy = new StrategyDescription();
             this.player2Strategy = new StrategyDescription();

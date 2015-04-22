@@ -115,7 +115,7 @@ namespace Win8Client
             var allEventsCards = Dominion.Cards.AllCards().Where(c => c.isEvent).Select(c => DominionCard.Create(c)).ToArray();
             var selectedItems = this.EventCardsListView.SelectedItems.Select(item => (DominionCard)item).ToArray<DominionCard>();
 
-            var cardPicker = new UniqueCardPicker(allEventsCards);
+            var cardPicker = new UniqueCardPicker(allEventsCards.Select(c => c.dominionCard));
             DominionCard baneCard = null;
             this.appDataContext.EventCards.GenerateRandom(cEventsToInclude, ref baneCard, allEventsCards, itemsToReplace: selectedItems);
         }

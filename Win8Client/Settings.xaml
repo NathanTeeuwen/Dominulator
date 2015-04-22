@@ -9,29 +9,31 @@
     d:DesignHeight="300"
     d:DesignWidth="400">
         
-    <StackPanel>
-        <TextBlock FontSize="30">Enabled Expansions</TextBlock>
-        <ItemsControl ItemsSource="{Binding Expansions}">
-            <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <StackPanel></StackPanel>
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <CheckBox Content="{Binding Name}" IsChecked ="{Binding IsEnabled.Value, Mode=TwoWay}"></CheckBox>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
-        <StackPanel Height="20"></StackPanel>
-        <!-- Spacer-->
-        <!--
-                <CheckBox IsChecked="{Binding Use3OrMoreFromExpansions.Value, Mode=TwoWay}">Use or 3 more cards from a set</CheckBox>                    
-                <CheckBox IsChecked="{Binding RequirePlusBuy.Value, Mode=TwoWay}">Require + Buy</CheckBox>
-                <CheckBox IsChecked="{Binding RequirePlusCards.Value, Mode=TwoWay}">Require + Cards</CheckBox>
-                <CheckBox IsChecked="{Binding RequirePlus2Actions.Value, Mode=TwoWay}">Require + 2 Actions</CheckBox>
-                <CheckBox IsChecked="{Binding RequireTrashing.Value, Mode=TwoWay}">Require Trashing</CheckBox>
-                <CheckBox IsChecked="{Binding RequireAttack.Value, Mode=TwoWay}">Require Attack</CheckBox>
-                <CheckBox IsChecked="{Binding AllowAttack.Value, Mode=TwoWay}">Allow Attacks</CheckBox> -->
-    </StackPanel>    
+    <StackPanel Orientation="Horizontal">
+        <StackPanel Margin="30, 0, 0, 0">
+            <TextBlock FontSize="30">Enabled Expansions</TextBlock>
+            <ItemsControl ItemsSource="{Binding Expansions}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel></StackPanel>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <CheckBox Content="{Binding Name}" IsChecked ="{Binding IsEnabled.Value, Mode=TwoWay}"></CheckBox>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>                                
+        </StackPanel>    
+        <StackPanel Margin="30, 0, 0, 0">
+            <TextBlock FontSize="30">Additional Constraints</TextBlock>
+            <CheckBox IsChecked="{Binding Use3OrMoreFromExpansions.Value, Mode=TwoWay}">Use or 3 more cards from a set</CheckBox>
+            <CheckBox IsChecked="{Binding RequirePlusBuy.Value, Mode=TwoWay}">Require + Buy</CheckBox>
+            <CheckBox IsChecked="{Binding RequirePlusCards.Value, Mode=TwoWay}">Require + Cards</CheckBox>
+            <CheckBox IsChecked="{Binding RequirePlus2Actions.Value, Mode=TwoWay}">Require + 2 Actions</CheckBox>
+            <CheckBox IsChecked="{Binding RequireTrashing.Value, Mode=TwoWay}">Require Trashing</CheckBox>
+            <CheckBox IsChecked="{Binding RequireAttack.Value, Mode=TwoWay}">Require Attack</CheckBox>
+            <CheckBox IsChecked="{Binding AllowAttack.Value, Mode=TwoWay}">Allow Attacks</CheckBox>
+        </StackPanel>
+    </StackPanel>
 </UserControl>

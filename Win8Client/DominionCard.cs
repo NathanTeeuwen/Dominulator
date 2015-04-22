@@ -61,6 +61,8 @@ namespace Win8Client
 
         public static DominionCard Create(Dominion.Card card)
         {
+            if (card == null)
+                return null;
             return mpCardNameToCard[card.name];
         }
 

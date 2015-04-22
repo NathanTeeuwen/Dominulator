@@ -87,16 +87,16 @@ namespace Win8Client
         {
             bool isReplacingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count <= targetCount;
             bool isReducingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count > targetCount;
-            var cardPicker = new UniqueCardPicker(allCards);
+            var cardPicker = new UniqueCardPicker(allCards.Select(c => c.dominionCard));
 
             bool isCleanRoll = false;
 
             if (isReplacingItems)
             {
-                cardPicker.ExcludeCards(itemsToReplace);
+                cardPicker.ExcludeCards(itemsToReplace.Select(c => c.dominionCard));
             }
 
-            baneCard = cardPicker.GetCard(c => c.dominionCard.DefaultCoinCost == 2 || c.dominionCard.DefaultCoinCost == 3);
+            baneCard = DominionCard.Create(cardPicker.GetCard(c => c.DefaultCoinCost == 2 || c.DefaultCoinCost == 3));
 
             if (isReplacingItems)
             {                                
@@ -114,7 +114,7 @@ namespace Win8Client
                             }
                             else
                             {
-                                resultList[i] = nextCard;
+                                resultList[i] = DominionCard.Create(nextCard);
                             }
                         }
                     }
@@ -149,10 +149,10 @@ namespace Win8Client
             
             while (resultList.Count < targetCount)
             {
-                DominionCard currentCard = cardPicker.GetCard(c => true);
+                Dominion.Card currentCard = cardPicker.GetCard(c => true);
                 if (currentCard == null)
                     break;
-                resultList.Add(currentCard);
+                resultList.Add(DominionCard.Create(currentCard));
             }                      
 
             return isCleanRoll;
@@ -606,6 +606,21 @@ namespace Win8Client
         {
             var cardVisibility = (CardVisibility)value;
             return cardVisibility == CardVisibility.Settings ? Visibility.Visible : Visibility.Collapsed;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class StrategyVisibilityConverter
+      : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            var cardVisibility = (CardVisibility)value;
+            return cardVisibility != CardVisibility.Settings ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)

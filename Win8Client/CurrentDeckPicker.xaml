@@ -53,24 +53,7 @@
                             </StackPanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>
-                </ListView>                
-                <StackPanel Orientation="Vertical" Visibility="{Binding AreEventCardsVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">
-                    <TextBlock FontSize="20">Events</TextBlock>
-                    <ListView Name="EventCardsListView" ItemsSource="{Binding EventCards.Cards}" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
-                        <ListView.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <WrapGrid MaximumRowsOrColumns="2" Orientation="Horizontal"/>
-                            </ItemsPanelTemplate>
-                        </ListView.ItemsPanel>
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel>
-                                    <Image Width="384" Height="240" Source="{Binding ImageUrl}"></Image>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </StackPanel>
+                </ListView>
                 <StackPanel Orientation="Vertical" Visibility="{Binding IsBaneCardVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">
                     <TextBlock FontSize="20">Bane Card</TextBlock>
                     <ListView Name="BaneCardsListView" ItemsSource="{Binding BaneCard.Cards}" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
@@ -88,6 +71,23 @@
                         </ListView.ItemTemplate>
                     </ListView>
                 </StackPanel>
+                <StackPanel Orientation="Vertical" Visibility="{Binding AreEventCardsVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">
+                    <TextBlock FontSize="20">Events</TextBlock>
+                    <ListView Name="EventCardsListView" ItemsSource="{Binding EventCards.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapGrid MaximumRowsOrColumns="2" Orientation="Horizontal"/>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <Image Width="384" Height="240" Source="{Binding ImageUrl}"></Image>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackPanel>                
                 <ListView Name="CommonCardsListView" ItemsSource="{Binding CommonCards.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
                     <ListView.ItemsPanel>
                         <ItemsPanelTemplate>
