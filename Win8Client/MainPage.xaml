@@ -32,11 +32,13 @@
             <Button Style="{StaticResource BackAppBarButtonStyle}" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsBackButtonVisibilityConverter}}" BorderThickness="0" Click="SettingsBackButton_Click"/>
             <StackPanel Orientation="Horizontal" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsButtonVisibilityConverter}}">
                 <Button Style="{StaticResource AllCardsAppBarButtonStyle}" BorderThickness="0" Click="AllCardsButton_Click" Visibility="{Binding CardVisibility.Value, Converter={StaticResource CurrentCardVisibilityConverter}}"/>
-                <Button Style="{StaticResource CurrentCardsAppBarButtonStyle}" BorderThickness="0" Click="AllCardsButton_Click" Visibility="{Binding CardVisibility.Value, Converter={StaticResource AllCardVisibilityConverter}}"/>
+                <Button Style="{StaticResource CurrentCardsAppBarButtonStyle}" BorderThickness="0" Click="AllCardsButton_Click" Visibility="{Binding CardVisibility.Value, Converter={StaticResource AllCardVisibilityConverter}}"/>                
             </StackPanel>
+            <Button Style="{StaticResource SaveAppBarButtonStyle}" BorderThickness="0" Click="SaveReportButton_Click" Visibility="{Binding PageConfig.Value, Converter={StaticResource PageConfigStrategyReportVisibilityConverter}}"/>
         </StackPanel>
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsButtonVisibilityConverter}}">
             <Button Style="{StaticResource SettingsAppBarButtonStyle}" BorderThickness="0" Click="SettingsButton_Click"/>
+            <Button Style="{StaticResource HelpAppBarButtonStyle}" BorderThickness="0" Click="HelpButton_Click"/>
         </StackPanel>
         <TextBlock Grid.Row="0"  FontSize="100" VerticalAlignment="Center" HorizontalAlignment="Center">Dominulator</TextBlock>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto" ZoomMode="Disabled">

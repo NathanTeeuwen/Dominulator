@@ -164,6 +164,12 @@ namespace Win8Client
             this.appDataContext.SettingsButtonVisibility.Value = SettingsButtonVisibility.Back;
         }
 
+        private void HelpButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.appDataContext.CardVisibility.Value = CardVisibility.Settings;
+            this.appDataContext.SettingsButtonVisibility.Value = SettingsButtonVisibility.Back;
+        }
+
         private void SettingsBackButton_Click(object sender, RoutedEventArgs e)
         {
             this.appDataContext.CardVisibility.Value = CardVisibility.Current;
@@ -175,6 +181,21 @@ namespace Win8Client
         {            
             this.appDataContext.CardVisibility.Value =
                 this.appDataContext.CardVisibility.Value == CardVisibility.All ? CardVisibility.Current: CardVisibility.All;
+        }
+
+        private void SaveReportButton_Click(object sender, RoutedEventArgs e)
+        {
+            var picker = new Windows.Storage.Pickers.FileSavePicker();
+            picker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.DocumentsLibrary;
+            picker.SuggestedFileName = this.appDataContext.Player1Name.Value + " vs " + this.appDataContext.Player2Name.Value;
+            picker.DefaultFileExtension = ".html";            
+            picker.FileTypeChoices.Add("Web Page", new string[] { ".html" });
+            string htmlString = this.appDataContext.StrategyReport.Value;            
+            picker.PickSaveFileAsync().AsTask().ContinueWith( (storageFile) =>
+            {
+                Windows.Storage.StorageFile result = storageFile.Result;
+                Windows.Storage.FileIO.WriteTextAsync(result, htmlString );                
+            });
         }              
 
         void StrategyReport_PropertyChanged(object sender, PropertyChangedEventArgs e)
