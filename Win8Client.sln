@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win8Client", "Win8Client\Win8Client.csproj", "{1B2628D2-A246-4117-96E9-BD000963732D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominulator", "Win8Client\Dominulator.csproj", "{1B2628D2-A246-4117-96E9-BD000963732D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.Strategy", "Dominion.Strategy\Dominion.Strategy.csproj", "{DE60F275-B1B5-40F4-BE3E-35805F42CCE3}"
 EndProject

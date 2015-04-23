@@ -25,7 +25,7 @@
                 </ItemsControl.ItemTemplate>
             </ItemsControl>                                
         </StackPanel>    
-        <StackPanel Margin="30, 0, 0, 0">
+        <StackPanel Margin="30, 0, 0, 0" Visibility="Collapsed">
             <TextBlock FontSize="30">Additional Constraints</TextBlock>
             <CheckBox IsChecked="{Binding Use3OrMoreFromExpansions.Value, Mode=TwoWay}">Use or 3 more cards from a set</CheckBox>
             <CheckBox IsChecked="{Binding RequirePlusBuy.Value, Mode=TwoWay}">Require + Buy</CheckBox>

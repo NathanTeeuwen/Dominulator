@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="e2a34a6d-2768-49f4-a8f5-04195e5783fA" Publisher="CN=Nathan Teeuwen" Version="1.0.0.2" />
+  <Identity Name="e2a34a6d-2768-49f4-a8f5-04195e5783fA" Publisher="CN=Nathan Teeuwen" Version="1.0.0.9" />
   <Properties>
-    <DisplayName>Win8Client</DisplayName>
+    <DisplayName>Dominulator</DisplayName>
     <PublisherDisplayName>Nathan Teeuwen</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -14,9 +14,12 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Win8Client.App">
-      <m2:VisualElements DisplayName="Dominion Deck Builder" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Win8Client" ForegroundText="light" BackgroundColor="#464646">
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Dominulator.App">
+      <m2:VisualElements DisplayName="Dominulator" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Dominion Deck builder and Simulator" ForegroundText="light" BackgroundColor="#464646">
         <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="landscape" />
+        </m2:InitialRotationPreference>
       </m2:VisualElements>
     </Application>
   </Applications>

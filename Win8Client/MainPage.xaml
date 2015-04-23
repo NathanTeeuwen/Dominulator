@@ -22,7 +22,7 @@
             <local:CurrentCardVisibilityConverter x:Key="CurrentCardVisibilityConverter" />
             <local:AllCardVisibilityConverter x:Key="AllCardVisibilityConverter" />
             <local:SettingsVisibilityConverter x:Key="SettingsVisibilityConverter" />
-            <local:StrategyVisibilityConverter x:Key="StrategyVisibilityConverter" />            
+            <local:StrategyVisibilityConverter x:Key="StrategyVisibilityConverter" />
         </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>            
@@ -38,7 +38,7 @@
         </StackPanel>
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsButtonVisibilityConverter}}">
             <Button Style="{StaticResource SettingsAppBarButtonStyle}" BorderThickness="0" Click="SettingsButton_Click"/>
-            <Button Style="{StaticResource HelpAppBarButtonStyle}" BorderThickness="0" Click="HelpButton_Click"/>
+            <Button Style="{StaticResource HelpAppBarButtonStyle}" BorderThickness="0" Click="HelpButton_Click" Visibility="Collapsed"/>
         </StackPanel>
         <TextBlock Grid.Row="0"  FontSize="100" VerticalAlignment="Center" HorizontalAlignment="Center">Dominulator</TextBlock>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto" ZoomMode="Disabled">
