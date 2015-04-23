@@ -1,7 +1,7 @@
 Dominulator
 ===========
 
-A dominion simulator for playing the card game of dominion.  This application features an app card picker designed to help you make choices in which cards to buy in a given deck.  The UI is a card picking UI that will help you setup a game of dominion.   Unlike most card pickers, you have the ability to run simulations of simple card combinations.  A report will be generated which gives insights that can guide you into how to play this set of cards
+A dominion simulator for playing the card game of dominion.  This is not your regular randomizer for picking a set of dominion cards for play. It will also help you learn about the combination of cards before the game starts.  After using the refresh button to find the perfect set of cards, run simple simulations of simple card combinations to help gain intuition.  To run a simulation, 1) create customized purchase orders for the two players. 2)Simulate.   After completion, a summary of the winning player is presented, but hitting details will show how the simulator choose to play the cards.
 
 ![Windows 8 Front End Example Picture](https://github.com/NathanTeeuwen/Dominulator/blob/master/Documentation/Win8Client.png "Windows 8 Dominulator front end")
 
@@ -28,14 +28,14 @@ Goals
 The goals of the project are as follows.
 
  1. Create a game engine which enforces the rules of Dominion the game.
-     Separation of Game Rules from AI or heuristics is required.  
- 2. Simulation of all available dominion cards.
- 3. Ability to easily extend the game engine with custom cards.
- 4. Include a foundation for easily composing strategies from simple build orders.
- 5. Include default strategies for playing most cards. 
- 6. Create a strategy optimizer that given a set of 10 cards, finds the best combination to play.
- 7. Includes ability to generate a standalone HTML report, detailing the play of the strategies
- 8. A windows 8 UI for composing strategies
+ 2. Separation of Game Rules from AI or heuristics is required.  
+ 3. Simulation of all available dominion cards.
+ 4. Ability to easily extend the game engine with custom cards.
+ 5. Include a foundation for easily composing strategies from simple build orders.
+ 6. Include default strategies for playing most cards. 
+ 7. Create a strategy optimizer that given a set of 10 cards, finds the best combination to play.
+ 8. Includes ability to generate a standalone HTML report, detailing the play of the strategies
+ 9. A windows 8 UI for composing strategies
 
   
 Goal 6 is lofty - but would be very nice :).
