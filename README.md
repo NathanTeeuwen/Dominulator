@@ -18,7 +18,7 @@ Installation
 ============
 Eventually this app will be deployed to the window store.  Right now it is in beta - please help us beta test
 
- 1. Download the installation package of the [latest release](https://rawgit.com/NathanTeeuwen/Dominulator/blob/master/Releases/Dominulator_1.0.0.9.zip)
+ 1. Download the installation package of the [latest release](https://rawgit.com/NathanTeeuwen/Dominulator/master/Releases/Dominulator_1.0.0.9.zip)
  2. Obtain a [developer license](https://msdn.microsoft.com/en-us/library/windows/apps/hh974578.aspx).    Don't worry, it's free
  3. Unzip the contents of the release.  From windows explorer, right click on Add-AppDevPackage.ps1 and "Run in Powershell"
 
