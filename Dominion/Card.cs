@@ -136,7 +136,8 @@ namespace Dominion
             GameStateCardPredicate doSpecializedActionOnTrashWhileInHand = null,
             GameStateCardToPlacement doSpecializedActionOnGainWhileInPlay = null,
             GameStateCardToPlacement doSpecializedActionOnBuyWhileInHand = null,
-            GameStateCardToPlacement doSpecializedActionOnGainWhileInHand = null)
+            GameStateCardToPlacement doSpecializedActionOnGainWhileInHand = null,
+            GameStateCardMethod      doSpecializedActionToCardWhileInPlay = null)
         {
             lock (Card.cardTypes)
             {
@@ -191,6 +192,7 @@ namespace Dominion
             this.doSpecializedActionOnGainWhileInPlay = doSpecializedActionOnGainWhileInPlay;
             this.doSpecializedActionOnBuyWhileInHand = doSpecializedActionOnBuyWhileInHand;
             this.doSpecializedActionOnGainWhileInHand = doSpecializedActionOnGainWhileInHand;
+            this.doSpecializedActionToCardWhileInPlay = doSpecializedActionToCardWhileInPlay;
         }
 
         public bool isVictory
@@ -397,7 +399,23 @@ namespace Dominion
             }
 
             return DeckPlacement.Default;
-        }        
+        }
+        
+        public bool HasSpecializedActionToCardWhileInPlay
+        {
+            get
+            {
+                return this.doSpecializedActionToCardWhileInPlay != null;
+            }
+        }
+
+        public void DoSpecializedActionToCardWhileInPlay(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        {
+            if (this.HasSpecializedActionToCardWhileInPlay)
+            {
+                this.doSpecializedActionToCardWhileInPlay(currentPlayer, gameState, gainedCard);
+            }
+        }
 
         public bool MightProvideDiscountWhileInPlay
         {

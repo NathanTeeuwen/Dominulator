@@ -49,6 +49,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.RoyalSeal] = new RoyalSeal(playerAction);
             result[Dominion.Cards.Treasury] = new Treasury(playerAction);
             result[Dominion.Cards.Trader] = new Trader(playerAction);
+            result[Dominion.Cards.Urchin] = new Urchin(playerAction);
             result[Dominion.Cards.Vault] = new Vault(playerAction);
             result[Dominion.Cards.Watchtower] = new Watchtower(playerAction);
             result[Dominion.Cards.WalledVillage] = new WalledVillage(playerAction);
@@ -70,6 +71,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.JunkDealer] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Lookout] = Lookout.ShouldPlay;
             result[Dominion.Cards.Masquerade] = Strategy.HasCardToTrashInHand;
+            result[Dominion.Cards.Mercenary] = Strategy.HasAtLeast2ToTrashInHand;
             result[Dominion.Cards.Remodel] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.Salvager] = Strategy.HasCardToTrashInHand;
             result[Dominion.Cards.SpiceMerchant] = Strategy.HasCardToTrashInHand;

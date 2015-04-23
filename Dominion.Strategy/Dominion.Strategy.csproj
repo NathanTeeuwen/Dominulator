@@ -81,6 +81,7 @@
     <Compile Include="DefaultPlayRules\Cards\Amulet.cs" />
     <Compile Include="DefaultPlayRules\Cards\Steward.cs" />
     <Compile Include="DefaultPlayRules\Cards\Trader.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Urchin.cs" />
     <Compile Include="DefaultPlayRules\Cards\Treasury.cs" />
     <Compile Include="DefaultPlayRules\Cards\Vault.cs" />
     <Compile Include="DefaultPlayRules\Cards\WalledViillage.cs" />

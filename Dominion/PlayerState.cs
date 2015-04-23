@@ -43,6 +43,7 @@ namespace Dominion
         internal bool ownsCardWithSpecializedActionOnGainWhileInPlay;
         internal bool ownsCardWithSpecializedActionOnBuyWhileInHand;
         internal bool ownsCardWithSpecializedActionOnGainWhileInHand;
+        internal bool ownsCardWithSpecializedActionToCardWhileInPlay;
 
         internal IEnumerator<Card> shuffleLuck = null;
 
@@ -423,6 +424,19 @@ namespace Dominion
                         AttackOtherPlayers(gameState, cardToPlayAs.DoSpecializedAttack);
                     }
 
+                    if (this.ownsCardWithSpecializedActionToCardWhileInPlay)
+                    {
+                        foreach(var cardInPlay in this.cardsInPlay)
+                        {
+                            if (cardInPlay.HasSpecializedActionToCardWhileInPlay)
+                            {
+                                gameState.cardContextStack.PushCardContext(this, cardInPlay, CardContextReason.CardReacting);
+                                cardInPlay.DoSpecializedActionToCardWhileInPlay(this, gameState, cardToPlayAs);
+                                gameState.cardContextStack.Pop();
+                            }
+                        }
+                    }
+                    
                     this.gameLog.PopScope();
                 }
             }
@@ -1702,6 +1716,7 @@ namespace Dominion
             this.ownsCardWithSpecializedActionOnGainWhileInPlay |= card.HasSpecializedActionOnGainWhileInPlay;
             this.ownsCardWithSpecializedActionOnBuyWhileInHand |= card.HasSpecializedActionOnBuyWhileInHand;
             this.ownsCardWithSpecializedActionOnGainWhileInHand |= card.HasSpecializedActionOnGainWhileInHand;
+            this.ownsCardWithSpecializedActionToCardWhileInPlay |= card.HasSpecializedActionToCardWhileInPlay;
         }           
 
         private void TriggerShuffleOfDiscardIntoDeck(GameState gameState)

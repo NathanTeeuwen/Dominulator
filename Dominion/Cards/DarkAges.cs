@@ -1282,14 +1282,12 @@ namespace Dominion.CardTypes
         private void DoSpecializedActionToCardWhileInPlay(PlayerState currentPlayer, GameState gameState, Card card)
         {
             if (card.isAttack)
-            {
+            {                
                 if (currentPlayer.actions.ShouldTrashCard(gameState, this))
                 {
-                    throw new NotImplementedException();
-                    // something like this:
-                    //currentPlayer.MoveCardFromPlayedCardToNativeVillageMatt(this);
-                    //currentPlayer.GainCardFromSupply(Cards.Mercenary, gameState);
-                }
+                    currentPlayer.MoveCardFromPlayedAreaToTrash(Cards.Urchin, gameState);
+                    currentPlayer.GainCardFromSupply(Cards.Mercenary, gameState);                    
+                }             
             }
         }
     }
