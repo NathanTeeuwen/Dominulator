@@ -45,6 +45,7 @@
     <Compile Include="CardsWithoutDefaultBehaviors.cs" />
     <Compile Include="DefaultPlayerAction.cs" />
     <Compile Include="DefaultPlayRules\CardOverrides.cs" />
+    <Compile Include="DefaultPlayRules\Cards\Stonemason.cs" />
     <Compile Include="DefaultPlayRules\Cards\PearlDiver.cs" />
     <Compile Include="DefaultPlayRules\Cards\Messenger.cs" />
     <Compile Include="DefaultPlayRules\Cards\Scavenger.cs" />

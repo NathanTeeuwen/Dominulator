@@ -26,8 +26,7 @@ namespace Dominion.Strategy
             Cards.Oracle,
             Cards.Pawn,
             Cards.PirateShip,            
-            Cards.Squire,            
-            Cards.StoneMason,
+            Cards.Squire,                        
             Cards.Torturer,
             Cards.Tournament,       
        
