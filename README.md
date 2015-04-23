@@ -1,9 +1,29 @@
 Dominulator
 ===========
 
-A dominion simulator for playing the card game of dominion.  It now includes a front end UI.   The UI is a card picking UI that will help you setup a game of dominion.   Unlike most card pickers, you have the ability to run simulations of simple card combinations.  A report will be generated which gives insights that can guide you into how to play this set of cards
+A dominion simulator for playing the card game of dominion.  This application features an app card picker designed to help you make choices in which cards to buy in a given deck.  The UI is a card picking UI that will help you setup a game of dominion.   Unlike most card pickers, you have the ability to run simulations of simple card combinations.  A report will be generated which gives insights that can guide you into how to play this set of cards
 
 ![Windows 8 Front End Example Picture](https://github.com/NathanTeeuwen/Dominulator/blob/master/Documentation/Win8Client.png "Windows 8 Dominulator front end")
+
+![Detailed Html Report Screenshot](https://github.com/NathanTeeuwen/Dominulator/blob/master/Documentation/DetailedReport.png "Detailed Strategy Report")
+
+[Example Report](https://github.com/NathanTeeuwen/Dominulator/blob/master/Documentation/ExampleReport.html)
+
+Requirements
+============
+* Windows 8.1
+* A develop licence (until it is released to the app store)
+
+Installation
+============
+Eventually this app will be deployed to the window store.  Right now it is in beta - please help us beta test
+
+ 1. Download the installation package of the [latest release](https://github.com/NathanTeeuwen/Dominulator/blob/master/Releases/Dominulator_1.0.0.9.zip)
+ 2. Obtain a [developer license](https://msdn.microsoft.com/en-us/library/windows/apps/hh974578.aspx).    Don't worry, it's free
+ 3. Unzip the contents of the release.  From windows explorer, right click on Add-AppDevPackage.ps1 and "Run in Powershell"
+
+Goals
+====
 
 The goals of the project are as follows.
 
