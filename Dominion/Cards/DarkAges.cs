@@ -27,7 +27,7 @@ namespace Dominion.CardTypes
         public static Hovel card = new Hovel();
 
         private Hovel()
-            : base("Hovel", Expansion.DarkAges, coinCost: 1, isShelter: true, isKingdomCard: false)
+            : base("Hovel", Expansion.DarkAges, coinCost: 1, isShelter: true, isKingdomCard: false, isReaction:true)
         {
             this.doSpecializedActionOnBuyWhileInHand = DoSpecializedActionOnBuyWhileInHand;
         }
@@ -937,7 +937,7 @@ namespace Dominion.CardTypes
         public static MarketSquare card = new MarketSquare();
 
         private MarketSquare()
-            : base("Market Square", Expansion.DarkAges, coinCost: 3, isAction: true, plusCards:1, plusActions:1, plusBuy:1)
+            : base("Market Square", Expansion.DarkAges, coinCost: 3, isAction: true, plusCards:1, plusActions:1, plusBuy:1, isReaction:true)
         {
             this.doSpecializedActionOnTrashWhileInHand = DoSpecializedActionOnTrashWhileInHand;
         }

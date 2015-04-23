@@ -422,7 +422,7 @@ namespace Dominion.CardTypes
         public static Moat card = new Moat();
 
         private Moat()
-            : base("Moat", Expansion.Base, coinCost: 2, plusCards: 2, isAction: true)
+            : base("Moat", Expansion.Base, coinCost: 2, plusCards: 2, isAction: true, isReaction:true)
         {
         }
 

@@ -413,7 +413,7 @@ namespace Dominion.CardTypes
         public static SecretChamber card = new SecretChamber();
 
         private SecretChamber()
-            : base("Secret Chamber", Expansion.Intrigue, coinCost: 2, isAction: true)
+            : base("Secret Chamber", Expansion.Intrigue, coinCost: 2, isAction: true, isReaction:true)
         {
         }
 

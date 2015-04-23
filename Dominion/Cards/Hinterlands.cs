@@ -198,7 +198,7 @@ namespace Dominion.CardTypes
         public static FoolsGold card = new FoolsGold();
 
         private FoolsGold()
-            : base("Fool's Gold", Expansion.Hinterlands, coinCost: 2, isTreasure:true)
+            : base("Fool's Gold", Expansion.Hinterlands, coinCost: 2, isTreasure:true, isReaction:true)
         {
         }
 
