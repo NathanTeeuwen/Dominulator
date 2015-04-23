@@ -389,8 +389,8 @@ namespace Dominion
                     }
                 }
             }
-         
-            if (this.kingdomPiles.Where(card => card.requiresRuins).Any())
+
+            if (this.NeedsRuins)
             {
                 switch (cardAvailabilityType)
                 {
@@ -433,6 +433,14 @@ namespace Dominion
             }
 
             return builder.Result;
+        }
+
+        public bool NeedsRuins
+        {
+            get
+            {
+                return this.kingdomPiles.Where(card => card.requiresRuins).Any();
+            }
         }
 
         public IEnumerable<CardCountPair> ShuffleLuck(int playerIndex)
