@@ -69,7 +69,7 @@ namespace Win8Client
             bool useColony = this.appDataContext.UseColonyPlatinum.Value;
             DominionCard baneCard = this.appDataContext.BaneCard.CurrentCards.FirstOrDefault();
 
-            bool isCleanRoll = this.appDataContext.CurrentDeck.GenerateRandom(10, ref baneCard, this.appDataContext.AllCards.Cards, itemsToReplace: selectedItems);
+            bool isCleanRoll = this.appDataContext.CurrentDeck.GenerateRandom(10, ref baneCard, this.appDataContext.AllCards.CurrentCards, itemsToReplace: selectedItems);
             this.appDataContext.BaneCard.PopulateBaneCard(baneCard);            
 
             if (isCleanRoll)

@@ -82,11 +82,11 @@ namespace Win8Client
             ref DominionCard baneCard,
             IList<DominionCard> resultList, 
             IList<DominionCard> sourceList, 
-            IList<DominionCard> allCards, 
-            IList<DominionCard> itemsToReplace)
+            IEnumerable<DominionCard> allCards, 
+            IEnumerable<DominionCard> itemsToReplace)
         {
-            bool isReplacingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count <= targetCount;
-            bool isReducingItems = itemsToReplace != null && itemsToReplace.Count > 0 && sourceList.Count > targetCount;
+            bool isReplacingItems = itemsToReplace != null && itemsToReplace.Any() && sourceList.Count <= targetCount;
+            bool isReducingItems = itemsToReplace != null && itemsToReplace.Any() && sourceList.Count > targetCount;
             var cardPicker = new UniqueCardPicker(allCards.Select(c => c.dominionCard));
 
             bool isCleanRoll = false;
@@ -452,8 +452,8 @@ namespace Win8Client
         public bool GenerateRandom(
             int targetCount, 
             ref DominionCard baneCard, 
-            IList<DominionCard> allCards, 
-            IList<DominionCard> itemsToReplace)
+            IEnumerable<DominionCard> allCards, 
+            IEnumerable<DominionCard> itemsToReplace)
         {            
             bool isCleanRoll = MainPage.GenerateRandom(
                 targetCount,
