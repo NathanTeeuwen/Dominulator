@@ -4,9 +4,7 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Win8Client
 {
-
-
-    class DominionCard
+    public class DominionCard
     {
 
         public DominionCard(string name)

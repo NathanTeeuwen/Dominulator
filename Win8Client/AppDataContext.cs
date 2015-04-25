@@ -5,7 +5,7 @@ using System.ComponentModel;
 
 namespace Win8Client
 {
-    class AppDataContext
+    public class AppDataContext
         : DependencyObject
     {
         System.Collections.ObjectModel.ObservableCollection<DominionCard> availableCards;
@@ -350,7 +350,7 @@ namespace Win8Client
         Design
     }
 
-    class DefaultCurrent
+    public class DefaultCurrent
         : DependencyPolicy<CardVisibility>
     {
         public CardVisibility DefaultValue
@@ -362,7 +362,7 @@ namespace Win8Client
         }
     }
 
-    class DefaultSettingsButton
+    public class DefaultSettingsButton
         : DependencyPolicy<SettingsButtonVisibility>
     {
         public SettingsButtonVisibility DefaultValue
@@ -374,7 +374,7 @@ namespace Win8Client
         }
     }
 
-    class DefaultPageConfig
+    public class DefaultPageConfig
         : DependencyPolicy<PageConfig>
     {
         public PageConfig DefaultValue

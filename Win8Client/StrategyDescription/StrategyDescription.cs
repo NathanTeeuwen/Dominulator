@@ -1,7 +1,7 @@
 ﻿
 namespace Win8Client
 {
-    class StrategyDescription
+    public class StrategyDescription
     {
         public System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> CardAcceptanceDescriptions { get; private set; }       
         public DependencyObjectDecl<Dominion.StartingCardSplit, DefaultSplit4> StartingCardSplit { get; private set; }

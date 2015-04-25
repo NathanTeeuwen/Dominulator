@@ -205,7 +205,7 @@ namespace Win8Client
 
     }
 
-    class SortableCardList
+    public class SortableCardList
         : DependencyObject
     {        
         System.Collections.Generic.List<DominionCard> originalCards;
@@ -486,7 +486,7 @@ namespace Win8Client
         }
     }    
    
-    enum ExpansionIndex
+    public enum ExpansionIndex
     {
         Adventures = 0,
         Alchemy = 1,
@@ -503,7 +503,7 @@ namespace Win8Client
         _Count = 12
     }
 
-    class Expansion         
+    public class Expansion         
     {
         public string Name { get; private set; }
         public ExpansionIndex Index { get; private set; }

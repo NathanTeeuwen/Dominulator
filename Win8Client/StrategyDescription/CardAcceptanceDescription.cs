@@ -17,7 +17,7 @@ using System.ComponentModel;
 
 namespace Win8Client
 {
-    class CardAcceptanceDescription
+    public class CardAcceptanceDescription
     {
         public const int CountAsManyAsPossible = 11;  // this value comes from the 12th index in the combo box.  0-10 + always
 

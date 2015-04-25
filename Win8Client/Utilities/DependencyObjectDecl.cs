@@ -5,7 +5,7 @@ namespace Win8Client
 {
     delegate void PropertyChangedEvent(object owner);
 
-    class DependencyObjectDecl<T>
+    public class DependencyObjectDecl<T>
         : DependencyObject, INotifyPropertyChanged        
     {
         private readonly object parent;
@@ -46,7 +46,7 @@ namespace Win8Client
         }
     }
  
-    class DependencyObjectDeclWithSettings<T, T2>
+    public class DependencyObjectDeclWithSettings<T, T2>
         : DependencyObjectDecl<T, T2>
         where T2 : DependencyPolicy<T>, new()
     {
@@ -76,7 +76,7 @@ namespace Win8Client
         }
     }
 
-    class DependencyObjectDecl<T, T2>
+    public class DependencyObjectDecl<T, T2>
         : DependencyObject, INotifyPropertyChanged
         where T2 : DependencyPolicy<T>, new()
     {
@@ -120,7 +120,7 @@ namespace Win8Client
         }
     }
 
-    interface DependencyPolicy<T>
+    public interface DependencyPolicy<T>
     {
         T DefaultValue
         {
@@ -128,7 +128,7 @@ namespace Win8Client
         }
     }
 
-    class DefaultTrue
+    public class DefaultTrue
         : DependencyPolicy<bool>
     {
         public bool DefaultValue
@@ -140,7 +140,7 @@ namespace Win8Client
         }
     }
 
-    class DefaultFalse
+    public class DefaultFalse
         : DependencyPolicy<bool>
     {
         public bool DefaultValue
@@ -152,7 +152,7 @@ namespace Win8Client
         }
     }
 
-    class DefaultSplit4
+    public class DefaultSplit4
         : DependencyPolicy<Dominion.StartingCardSplit>
     {
         public Dominion.StartingCardSplit DefaultValue
@@ -164,7 +164,7 @@ namespace Win8Client
         }
     }
 
-    class DefaultEmptyString
+    public class DefaultEmptyString
         : DependencyPolicy<string>
     {
         public string DefaultValue
@@ -176,7 +176,7 @@ namespace Win8Client
         }
     }
 
-    class DefaultDoubleZero
+    public class DefaultDoubleZero
         : DependencyPolicy<double>
     {
         public double DefaultValue
@@ -188,7 +188,7 @@ namespace Win8Client
         }
     }
 
-    class DefaultEmptyStrategyDescription
+    public class DefaultEmptyStrategyDescription
         : DependencyPolicy<StrategyDescription>
     {
         public StrategyDescription DefaultValue

@@ -24,7 +24,7 @@ namespace Win8Client
             this.InitializeComponent();            
         }
 
-        private AppDataContext appDataContext
+        internal AppDataContext appDataContext
         {
             get
             {
@@ -32,7 +32,7 @@ namespace Win8Client
             }
         }
 
-        internal AppDataContext AppDataContext
+        public AppDataContext AppDataContext
         {
             get
             {
@@ -50,20 +50,7 @@ namespace Win8Client
             var cardListAsString = string.Join(",", e.Items.Select(card => ((DominionCard)card).dominionCard.name));
 
             e.Data.SetData("text", cardListAsString);
-        }
-
-        private async void CurrentCardsListView_Drop(object sender, DragEventArgs e)
-        {
-            if (!e.Data.GetView().AvailableFormats.Contains("text"))
-                return;
-
-            string cardNames = (string)await e.Data.GetView().GetTextAsync("text");
-            Dominion.Card[] cards = cardNames.Split(',').Select(cardName => DominionCard.Create(cardName).dominionCard).ToArray();
-            Dominion.Strategy.Description.StrategyDescription strategy = this.appDataContext.currentStrategy.Value.ConvertToDominionStrategy();
-            strategy = strategy.AddCardsToPurchaseOrder(cards);
-            this.appDataContext.currentStrategy.Value.PopulateFrom(strategy);
-        }             
-
+        }       
 
         private bool CanSimulateStrategies(StrategyDescription strategyDescription)
         {

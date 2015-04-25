@@ -141,6 +141,9 @@
     <Compile Include="Strategies.xaml.cs">
       <DependentUpon>Strategies.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Strategy.xaml.cs">
+      <DependentUpon>Strategy.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StrategyDescription\CardAcceptanceDescription.cs" />
     <Compile Include="StrategyDescription\StrategyDescription.cs" />
     <Compile Include="Utilities\DependencyObjectDecl.cs" />
@@ -515,6 +518,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Strategies.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Strategy.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
