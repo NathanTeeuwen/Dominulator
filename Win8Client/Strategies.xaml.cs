@@ -102,8 +102,8 @@ namespace Win8Client
             }
 
 
-            player1Name = string.Join(" ", player1Uniques.Select(c => c.name));
-            player2Name = string.Join(" ", player2Uniques.Select(c => c.name));
+            player1Name = string.Join(", ", player1Uniques.Select(c => c.name));
+            player2Name = string.Join(", ", player2Uniques.Select(c => c.name));
 
             return;
         }        
@@ -139,8 +139,8 @@ namespace Win8Client
                 string player1nameAppend, player2nameAppend;
                 GetStrategyNames(player1Descr, player2Descr, out player1nameAppend, out player2nameAppend);
 
-                string player1Name = "Player 1: " + player1nameAppend;
-                string player2Name = "Player 2: " + player2nameAppend;
+                string player1Name = "Player 1 " + (!string.IsNullOrEmpty(player1nameAppend) ? "(" + player1nameAppend + ")" : "");
+                string player2Name = "Player 2 " + (!string.IsNullOrEmpty(player1nameAppend) ? "(" + player2nameAppend + ")" : "");
 
                 var playerActions = new Dominion.Strategy.PlayerAction[] 
                 {

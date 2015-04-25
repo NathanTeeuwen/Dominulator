@@ -14,31 +14,58 @@
         <ResourceDictionary Source="StandardStyles.xaml" />
     </UserControl.Resources>
 
-    <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" ZoomMode="Disabled">
-        <Grid>
-            <Grid.Resources>
-                <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
-                <local:OpenningSplitConverter x:Key="OpenningSplitConverter" />                
-            </Grid.Resources>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <StackPanel Grid.Row="0" Background="Transparent" AllowDrop="True" Drop="CurrentCardsListView_Drop">
-                <TextBlock FontSize="30">Strategies</TextBlock>
-                <StackPanel Margin="0,20,0,0" Orientation="Horizontal">
-                    <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer1StrategyChecked.Value, Mode=TwoWay}" Checked="PlayerRadioButtonChecked">Player 1</RadioButton>
-                    <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer2StrategyChecked.Value, Mode=TwoWay}" Checked="PlayerRadioButtonChecked2">Player 2</RadioButton>
+    <Grid>
+        <Grid.Resources>
+            <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+            <local:OpenningSplitConverter x:Key="OpenningSplitConverter" />
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Visibility="{Binding StrategyResultsAvailable.Value, Converter={StaticResource BoolToVisibilityConverter}}">
+            <StackPanel>
+                <TextBlock FontSize="30">Simulation Results</TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20" Text="{Binding Player1Name.Value}"/>
+                    <TextBlock FontSize="20" Padding="5,0,0,0" >wins</TextBlock>
+                    <TextBlock FontSize="20" Padding="5,0,0,0" Text="{Binding  Player1WinPercent.Value}"/>
+                    <TextBlock FontSize="20">%</TextBlock>
                 </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20" Text="{Binding Player2Name.Value}"/>
+                    <TextBlock FontSize="20" Padding="5,0,0,0" >wins</TextBlock>
+                    <TextBlock FontSize="20" Padding="5,0,0,0" Text="{Binding  Player2WinPercent.Value}"/>
+                    <TextBlock FontSize="20">%</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="20">Tie:</TextBlock>
+                    <TextBlock FontSize="20" Padding="5,0, 0,0" Text="{Binding  TiePercent.Value}"/>
+                    <TextBlock FontSize="20">%</TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <Button VerticalAlignment="Center" Style="{StaticResource DetailsAppBarButtonStyle}" BorderThickness="0" Click="DetailsButton_Click"/>
+        </StackPanel>
+        <StackPanel Margin="0,5,0,0" Grid.Row="1">            
+            <StackPanel Orientation="Horizontal">
+                <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer1StrategyChecked.Value, Mode=TwoWay}" Checked="PlayerRadioButtonChecked">Player 1</RadioButton>
+                <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer2StrategyChecked.Value, Mode=TwoWay}" Checked="PlayerRadioButtonChecked2">Player 2</RadioButton>
+                <Button Style="{StaticResource ClearAppBarButtonStyle}" BorderThickness="0" Click="ClearStrategyButtonClick" />
+                <Button Style="{StaticResource SimulateAppBarButtonStyle}" BorderThickness="0" Click="SimulateGameButtonClick"/>                
+            </StackPanel>
+        </StackPanel>
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" ZoomMode="Disabled">
+            <StackPanel Background="Transparent" AllowDrop="True" Drop="CurrentCardsListView_Drop">
                 <StackPanel Margin="0,20,0,0" Orientation="Horizontal">
                     <TextBlock VerticalAlignment="Center" FontSize="18">Starting Coppers:</TextBlock>
-                    <ComboBox Margin="20,0,0,0" SelectedIndex="{Binding CurrentStrategy.Value.StartingCardSplit.Value, Converter={StaticResource OpenningSplitConverter}, Mode=TwoWay}" >                        
+                    <ComboBox Margin="20,0,0,0" SelectedIndex="{Binding CurrentStrategy.Value.StartingCardSplit.Value, Converter={StaticResource OpenningSplitConverter}, Mode=TwoWay}" >
                         <ComboBoxItem>Random</ComboBoxItem>
                         <ComboBoxItem>2</ComboBoxItem>
                         <ComboBoxItem>3</ComboBoxItem>
                         <ComboBoxItem>4</ComboBoxItem>
                         <ComboBoxItem>5</ComboBoxItem>
-                    </ComboBox>                 
+                    </ComboBox>                    
                 </StackPanel>
 
                 <!-- items control of System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> -->
@@ -56,7 +83,7 @@
                     <ListView.ItemTemplate>
                         <!-- Data Template for CardAcceptanceDescription -->
                         <DataTemplate>
-                            <Grid>       
+                            <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="*"/>
@@ -131,37 +158,8 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <StackPanel>
-                    <TextBlock FontSize="20">Drag Cards here to include in strategy</TextBlock>
-                    <StackPanel Height="20"/>
-                    <StackPanel Orientation="Horizontal">
-                        <Button Style="{StaticResource SimulateAppBarButtonStyle}" BorderThickness="0" Click="SimulateGameButtonClick"/>
-                        <Button Style="{StaticResource ClearAppBarButtonStyle}" BorderThickness="0" Click="ClearStrategyButtonClick" />
-                        <Button Style="{StaticResource DetailsAppBarButtonStyle}" BorderThickness="0" Click="DetailsButton_Click" Visibility="{Binding StrategyResultsAvailable.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
-                    </StackPanel>
-                    <StackPanel Height="20"/>
-                    <StackPanel Visibility="{Binding StrategyResultsAvailable.Value, Converter={StaticResource BoolToVisibilityConverter}}">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock FontSize="20" Text="{Binding Player1Name.Value}"/>
-                            <TextBlock FontSize="20" Padding="5,0,0,0" >wins</TextBlock>
-                            <TextBlock FontSize="20" Padding="5,0,0,0" Text="{Binding  Player1WinPercent.Value}"/>
-                            <TextBlock FontSize="20">%</TextBlock>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock FontSize="20" Text="{Binding Player2Name.Value}"/>
-                            <TextBlock FontSize="20" Padding="5,0,0,0" >wins</TextBlock>
-                            <TextBlock FontSize="20" Padding="5,0,0,0" Text="{Binding  Player2WinPercent.Value}"/>
-                            <TextBlock FontSize="20">%</TextBlock>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock FontSize="20">Tie:</TextBlock>
-                            <TextBlock FontSize="20" Padding="5,0, 0,0" Text="{Binding  TiePercent.Value}"/>
-                            <TextBlock FontSize="20">%</TextBlock>
-                        </StackPanel>
-                    </StackPanel>
-                </StackPanel>
+                <TextBlock FontSize="20">Drag Cards here to include in strategy</TextBlock>
             </StackPanel>
-            <StackPanel Grid.Row="1" Background="Transparent" AllowDrop="True" Drop="CurrentCardsListView_Drop"/>
-        </Grid>
-    </ScrollViewer>
+        </ScrollViewer>        
+    </Grid>
 </UserControl>

@@ -18,7 +18,7 @@
             <local:SettingsButtonVisibilityConverter x:Key="SettingsButtonVisibilityConverter" />
             <local:SettingsBackButtonVisibilityConverter x:Key="SettingsBackButtonVisibilityConverter" />
             <local:PageConfigStrategyReportVisibilityConverter x:Key="PageConfigStrategyReportVisibilityConverter" />
-            <local:PageConfigDesignVisibilityConverter x:Key="PageConfigDesignVisibilityConverter" />            
+            <local:PageConfigDesignVisibilityConverter x:Key="PageConfigDesignVisibilityConverter" />
             <local:CurrentCardVisibilityConverter x:Key="CurrentCardVisibilityConverter" />
             <local:AllCardVisibilityConverter x:Key="AllCardVisibilityConverter" />
             <local:SettingsVisibilityConverter x:Key="SettingsVisibilityConverter" />
