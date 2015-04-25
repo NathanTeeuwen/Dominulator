@@ -18,7 +18,7 @@
         <Grid>
             <Grid.Resources>
                 <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
-                <local:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />                
+                <local:OpenningSplitConverter x:Key="OpenningSplitConverter" />                
             </Grid.Resources>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -31,12 +31,14 @@
                     <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer2StrategyChecked.Value, Mode=TwoWay}" Checked="PlayerRadioButtonChecked2">Player 2</RadioButton>
                 </StackPanel>
                 <StackPanel Margin="0,20,0,0" Orientation="Horizontal">
-                    <TextBlock FontSize="20">Openning Buying Power: </TextBlock>
-                    <RadioButton Name="OpenRandomRadioButton" GroupName="OpenSplitRadioGroup" Checked="OpenSplitRandom_Checked">Random</RadioButton>
-                    <RadioButton Name="Open2RadioButton" GroupName="OpenSplitRadioGroup" Checked="OpenSplit2_Checked">2</RadioButton>
-                    <RadioButton Name="Open3RadioButton" GroupName="OpenSplitRadioGroup" Checked="OpenSplit3_Checked">3</RadioButton>
-                    <RadioButton Name="Open4RadioButton" GroupName="OpenSplitRadioGroup" Checked="OpenSplit4_Checked">4</RadioButton>
-                    <RadioButton Name="Open5RadioButton" GroupName="OpenSplitRadioGroup" Checked="OpenSplit5_Checked">5</RadioButton>
+                    <TextBlock FontSize="20">Starting Coppers:</TextBlock>
+                    <ComboBox Margin="20,0,0,0" SelectedIndex="{Binding CurrentStrategy.Value.StartingCardSplit.Value, Converter={StaticResource OpenningSplitConverter}, Mode=TwoWay}" >                        
+                        <ComboBoxItem>Random</ComboBoxItem>
+                        <ComboBoxItem>2</ComboBoxItem>
+                        <ComboBoxItem>3</ComboBoxItem>
+                        <ComboBoxItem>4</ComboBoxItem>
+                        <ComboBoxItem>5</ComboBoxItem>
+                    </ComboBox>                 
                 </StackPanel>
 
                 <!-- items control of System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> -->

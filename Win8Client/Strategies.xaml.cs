@@ -43,19 +43,7 @@ namespace Win8Client
             {
                 this.DataContext = value;
             }
-        }
-
-        public void SetSplit(Dominion.StartingCardSplit split)
-        {
-            switch (split)
-            {
-                case Dominion.StartingCardSplit.Random: this.OpenRandomRadioButton.IsChecked = true; break;
-                case Dominion.StartingCardSplit.Split25: this.Open2RadioButton.IsChecked = true; break;
-                case Dominion.StartingCardSplit.Split34: this.Open3RadioButton.IsChecked = true; break;
-                case Dominion.StartingCardSplit.Split43: this.Open4RadioButton.IsChecked = true; break;
-                case Dominion.StartingCardSplit.Split52: this.Open5RadioButton.IsChecked = true; break;
-            }
-        }
+        }     
 
         public static void PrepareDragAndDrop(DragItemsStartingEventArgs e)
         {                        
@@ -200,37 +188,11 @@ namespace Win8Client
             public double TiePercent;
         }
 
-        private void OpenSplitRandom_Checked(object sender, RoutedEventArgs e)
-        {
-            this.appDataContext.currentStrategy.Value.StartingCardSplit.Value = Dominion.StartingCardSplit.Random;
-        }
-
-        private void OpenSplit2_Checked(object sender, RoutedEventArgs e)
-        {
-            this.appDataContext.currentStrategy.Value.StartingCardSplit.Value = Dominion.StartingCardSplit.Split25;
-        }
-
-        private void OpenSplit3_Checked(object sender, RoutedEventArgs e)
-        {
-            this.appDataContext.currentStrategy.Value.StartingCardSplit.Value = Dominion.StartingCardSplit.Split34;
-        }
-
-        private void OpenSplit4_Checked(object sender, RoutedEventArgs e)
-        {
-            this.appDataContext.currentStrategy.Value.StartingCardSplit.Value = Dominion.StartingCardSplit.Split43;
-        }
-
-        private void OpenSplit5_Checked(object sender, RoutedEventArgs e)
-        {
-            this.appDataContext.currentStrategy.Value.StartingCardSplit.Value = Dominion.StartingCardSplit.Split52;
-        }
-
         private void PlayerRadioButtonChecked(object sender, RoutedEventArgs e)
         {
             if (this.appDataContext.IsPlayer1StrategyChecked.Value)
             {
-                this.appDataContext.CurrentStrategy.Value = this.appDataContext.player1Strategy;
-                SetSplit(this.appDataContext.currentStrategy.Value.StartingCardSplit.Value);                
+                this.appDataContext.CurrentStrategy.Value = this.appDataContext.player1Strategy;                
             }
         }
 
@@ -238,8 +200,7 @@ namespace Win8Client
         {
             if (this.appDataContext.IsPlayer2StrategyChecked.Value)
             {
-                this.appDataContext.CurrentStrategy.Value = this.appDataContext.player2Strategy;
-                SetSplit(this.appDataContext.currentStrategy.Value.StartingCardSplit.Value);
+                this.appDataContext.CurrentStrategy.Value = this.appDataContext.player2Strategy;                
             }
         }
 
@@ -247,5 +208,5 @@ namespace Win8Client
         {
             this.appDataContext.ShowReport();
         }
-    }
+    }   
 }

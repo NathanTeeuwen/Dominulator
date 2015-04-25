@@ -130,6 +130,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="AppDataContext.cs" />
+    <Compile Include="Converters.cs" />
     <Compile Include="CurrentDeckPicker.xaml.cs">
       <DependentUpon>CurrentDeckPicker.xaml</DependentUpon>
     </Compile>
