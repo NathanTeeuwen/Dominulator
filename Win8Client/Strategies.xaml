@@ -31,7 +31,7 @@
                     <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer2StrategyChecked.Value, Mode=TwoWay}" Checked="PlayerRadioButtonChecked2">Player 2</RadioButton>
                 </StackPanel>
                 <StackPanel Margin="0,20,0,0" Orientation="Horizontal">
-                    <TextBlock FontSize="20">Starting Coppers:</TextBlock>
+                    <TextBlock VerticalAlignment="Center" FontSize="18">Starting Coppers:</TextBlock>
                     <ComboBox Margin="20,0,0,0" SelectedIndex="{Binding CurrentStrategy.Value.StartingCardSplit.Value, Converter={StaticResource OpenningSplitConverter}, Mode=TwoWay}" >                        
                         <ComboBoxItem>Random</ComboBoxItem>
                         <ComboBoxItem>2</ComboBoxItem>
@@ -42,7 +42,11 @@
                 </StackPanel>
 
                 <!-- items control of System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> -->
-                <ListView Margin="0,20,0,0" Name="CurrentStrategyListView"  ItemsSource="{Binding CurrentStrategy.Value.CardAcceptanceDescriptions}" CanReorderItems="True" AllowDrop="True">
+                <ListView Margin="0,20,0,0" Name="CurrentStrategyListView"  
+                          ItemsSource="{Binding CurrentStrategy.Value.CardAcceptanceDescriptions}" 
+                          CanReorderItems="True" 
+                          AllowDrop="True"
+                          SelectionMode="None">
                     <ListView.Resources>
                         <local:ComparisonToIntegerConverter x:Key="ComparisonToIntegerConverter" />
                         <local:CountSourceToIntegerConverter x:Key="CountSourceToIntegerConverter" />
@@ -52,9 +56,14 @@
                     <ListView.ItemTemplate>
                         <!-- Data Template for CardAcceptanceDescription -->
                         <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <StackPanel Orientation="Horizontal" Visibility="{Binding CanSimulateCard.Value, Converter={StaticResource BoolToVisibilityConverter}}">
-                                    <TextBlock Padding="0,0,5,0">Get</TextBlock>
+                            <Grid>       
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.Column="0" Width="40" Height="64" Source="{Binding Card.Value.ImageUrl}"></Image>
+                                <StackPanel Grid.Column="1" VerticalAlignment="Center" Orientation="Horizontal" Visibility="{Binding CanSimulateCard.Value, Converter={StaticResource BoolToVisibilityConverter}}">
+                                    <TextBlock VerticalAlignment="Center" Padding="5,0,0,0">Get</TextBlock>
                                     <ComboBox Margin="5" SelectedIndex="{Binding Count.Value, Mode=TwoWay}">
                                         <ComboBoxItem>0</ComboBoxItem>
                                         <ComboBoxItem>1</ComboBoxItem>
@@ -69,7 +78,7 @@
                                         <ComboBoxItem>10</ComboBoxItem>
                                         <ComboBoxItem>As Many as possible</ComboBoxItem>
                                     </ComboBox>
-                                    <TextBlock Padding="0,0,5,0" Text="{Binding  Card.Value.Name}"></TextBlock>
+                                    <TextBlock VerticalAlignment="Center" Padding="0,0,5,0" Text="{Binding  Card.Value.Name}"></TextBlock>
                                     <ComboBox Margin="5" SelectedIndex="{Binding CountSource.Value, Mode=TwoWay, Converter={StaticResource CountSourceToIntegerConverter}}">
                                         <ComboBoxItem>Always</ComboBoxItem>
                                         <ComboBoxItem>When count Of Pile</ComboBoxItem>
@@ -90,7 +99,7 @@
                                             </ComboBox.ItemTemplate>
                                         </ComboBox>
                                         <StackPanel Orientation="Horizontal" Visibility="{Binding CountConditionVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">
-                                            <TextBlock Padding="0,0,5,0">is</TextBlock>
+                                            <TextBlock VerticalAlignment="Center" Padding="0,0,5,0">is</TextBlock>
                                             <ComboBox Margin="5" SelectedIndex="{Binding Comparison.Value, Mode=TwoWay, Converter={StaticResource ComparisonToIntegerConverter}}">
                                                 <ComboBoxItem>Less Than</ComboBoxItem>
                                                 <ComboBoxItem>Less Than Or Equal</ComboBoxItem>
@@ -114,11 +123,11 @@
                                         </StackPanel>
                                     </StackPanel>
                                 </StackPanel>
-                                <StackPanel Orientation="Horizontal" Visibility="{Binding CanSimulateCard.Value, Converter={StaticResource BoolToInVisibilityConverter}}">
-                                    <TextBlock Padding="0,0,5,0" Text="{Binding Card.Value.Name}"></TextBlock>
-                                    <TextBlock Padding="0,0,5,0">can not be simulated.</TextBlock>
+                                <StackPanel Grid.Column="1" VerticalAlignment = "Center" Orientation="Horizontal" Visibility="{Binding CanSimulateCard.Value, Converter={StaticResource BoolToInVisibilityConverter}}">
+                                    <TextBlock Padding="5,0,0,0" Text="{Binding Card.Value.Name}"></TextBlock>
+                                    <TextBlock Padding="5,0,0,0">can not be simulated.</TextBlock>
                                 </StackPanel>
-                            </StackPanel>
+                            </Grid>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
@@ -128,7 +137,7 @@
                     <StackPanel Orientation="Horizontal">
                         <Button Style="{StaticResource SimulateAppBarButtonStyle}" BorderThickness="0" Click="SimulateGameButtonClick"/>
                         <Button Style="{StaticResource ClearAppBarButtonStyle}" BorderThickness="0" Click="ClearStrategyButtonClick" />
-                        <Button Style="{StaticResource ReportAppBarButtonStyle}" BorderThickness="0" Click="ReportButton_Click"/>
+                        <Button Style="{StaticResource DetailsAppBarButtonStyle}" BorderThickness="0" Click="DetailsButton_Click" Visibility="{Binding StrategyResultsAvailable.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
                     </StackPanel>
                     <StackPanel Height="20"/>
                     <StackPanel Visibility="{Binding StrategyResultsAvailable.Value, Converter={StaticResource BoolToVisibilityConverter}}">

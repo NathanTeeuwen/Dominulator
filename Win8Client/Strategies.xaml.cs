@@ -204,7 +204,7 @@ namespace Win8Client
             }
         }
 
-        private void ReportButton_Click(object sender, RoutedEventArgs e)
+        private void DetailsButton_Click(object sender, RoutedEventArgs e)
         {
             this.appDataContext.ShowReport();
         }
