@@ -20,29 +20,7 @@
             <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
             <local:OpenningSplitConverter x:Key="OpenningSplitConverter" />
         </StackPanel.Resources>
-        <StackPanel Orientation="Horizontal" Visibility="{Binding StrategyResultsAvailable.Value, Converter={StaticResource BoolToVisibilityConverter}}">
-            <StackPanel>
-                <TextBlock FontSize="30">Simulation Results</TextBlock>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock FontSize="20" Text="{Binding Player1Name.Value}"/>
-                    <TextBlock FontSize="20" Padding="5,0,0,0" >wins</TextBlock>
-                    <TextBlock FontSize="20" Padding="5,0,0,0" Text="{Binding  Player1WinPercent.Value}"/>
-                    <TextBlock FontSize="20">%</TextBlock>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock FontSize="20" Text="{Binding Player2Name.Value}"/>
-                    <TextBlock FontSize="20" Padding="5,0,0,0" >wins</TextBlock>
-                    <TextBlock FontSize="20" Padding="5,0,0,0" Text="{Binding  Player2WinPercent.Value}"/>
-                    <TextBlock FontSize="20">%</TextBlock>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock FontSize="20">Tie:</TextBlock>
-                    <TextBlock FontSize="20" Padding="5,0, 0,0" Text="{Binding  TiePercent.Value}"/>
-                    <TextBlock FontSize="20">%</TextBlock>
-                </StackPanel>
-            </StackPanel>
-            <Button VerticalAlignment="Center" Style="{StaticResource DetailsAppBarButtonStyle}" BorderThickness="0" Click="DetailsButton_Click"/>
-        </StackPanel>
+        <local:SimulationResults/>
         <Grid Visibility="{Binding UseSideBySideStrategy.Value, Converter={StaticResource BoolToInVisibilityConverter}}">            
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>

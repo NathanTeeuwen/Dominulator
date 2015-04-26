@@ -138,6 +138,9 @@
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SimulationResults.xaml.cs">
+      <DependentUpon>SimulationResults.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Strategies.xaml.cs">
       <DependentUpon>Strategies.xaml</DependentUpon>
     </Compile>
@@ -514,6 +517,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Page Include="Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SimulationResults.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
