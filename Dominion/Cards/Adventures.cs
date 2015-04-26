@@ -10,7 +10,7 @@ namespace Dominion.CardTypes
         public static Alms card = new Alms();
 
         private Alms()
-            : base("Alms", Expansion.Adventures)
+            : base("Alms", Expansion.Adventures, coinCost:0)
         {
         }
     }
@@ -21,7 +21,7 @@ namespace Dominion.CardTypes
         public static Ball card = new Ball();
 
         private Ball()
-            : base("Ball", Expansion.Adventures)
+            : base("Ball", Expansion.Adventures, coinCost:5)
         {
         }
     }
@@ -32,7 +32,7 @@ namespace Dominion.CardTypes
         public static Borrow card = new Borrow();
 
         private Borrow()
-            : base("Borrow", Expansion.Adventures)
+            : base("Borrow", Expansion.Adventures, coinCost:0)
         {
         }
     }
@@ -43,7 +43,7 @@ namespace Dominion.CardTypes
         public static Bonfire card = new Bonfire();
 
         private Bonfire()
-            : base("Bonfire", Expansion.Adventures)
+            : base("Bonfire", Expansion.Adventures, coinCost:3)
         {
         }
     }
@@ -54,7 +54,7 @@ namespace Dominion.CardTypes
         public static Expedition card = new Expedition();
 
         private Expedition()
-            : base("Expedition", Expansion.Adventures)
+            : base("Expedition", Expansion.Adventures, coinCost:3)
         {
         }
     }
@@ -65,7 +65,7 @@ namespace Dominion.CardTypes
         public static Ferry card = new Ferry();
 
         private Ferry()
-            : base("Ferry", Expansion.Adventures)
+            : base("Ferry", Expansion.Adventures, coinCost:3)
         {
         }
     }
@@ -76,7 +76,7 @@ namespace Dominion.CardTypes
         public static Inheritance card = new Inheritance();
 
         private Inheritance()
-            : base("Inheritance", Expansion.Adventures)
+            : base("Inheritance", Expansion.Adventures, 7)
         {
         }
     }
@@ -87,7 +87,7 @@ namespace Dominion.CardTypes
         public static LostArts card = new LostArts();
 
         private LostArts()
-            : base("Lost Arts", Expansion.Adventures)
+            : base("Lost Arts", Expansion.Adventures, coinCost:6)
         {
         }
     }
@@ -98,7 +98,7 @@ namespace Dominion.CardTypes
         public static Mission card = new Mission();
 
         private Mission()
-            : base("Mission", Expansion.Adventures)
+            : base("Mission", Expansion.Adventures, coinCost:4)
         {
         }
     }
@@ -109,7 +109,7 @@ namespace Dominion.CardTypes
         public static PathFinding card = new PathFinding();
 
         private PathFinding()
-            : base("Path Finding", Expansion.Adventures)
+            : base("Path Finding", Expansion.Adventures, coinCost:8)
         {
         }
     }
@@ -120,7 +120,7 @@ namespace Dominion.CardTypes
         public static Pilgrimage card = new Pilgrimage();
 
         private Pilgrimage()
-            : base("Pilgrimage", Expansion.Adventures)
+            : base("Pilgrimage", Expansion.Adventures, coinCost:4)
         {
         }
     }
@@ -131,7 +131,7 @@ namespace Dominion.CardTypes
         public static Plan card = new Plan();
 
         private Plan()
-            : base("Plan", Expansion.Adventures)
+            : base("Plan", Expansion.Adventures, coinCost:3)
         {
         }
     }
@@ -142,7 +142,7 @@ namespace Dominion.CardTypes
         public static Quest card = new Quest();
 
         private Quest()
-            : base("Quest", Expansion.Adventures)
+            : base("Quest", Expansion.Adventures, coinCost:0)
         {
         }
     }
@@ -153,7 +153,7 @@ namespace Dominion.CardTypes
         public static Raid card = new Raid();
 
         private Raid()
-            : base("Raid", Expansion.Adventures)
+            : base("Raid", Expansion.Adventures, coinCost:5)
         {
         }
     }
@@ -164,7 +164,7 @@ namespace Dominion.CardTypes
         public static Save card = new Save();
 
         private Save()
-            : base("Save", Expansion.Adventures)
+            : base("Save", Expansion.Adventures, coinCost:1)
         {
         }
     }
@@ -175,7 +175,7 @@ namespace Dominion.CardTypes
         public static ScoutingParty card = new ScoutingParty();
 
         private ScoutingParty()
-            : base("Scouting Party", Expansion.Adventures)
+            : base("Scouting Party", Expansion.Adventures, coinCost:2)
         {
         }
     }
@@ -186,7 +186,7 @@ namespace Dominion.CardTypes
         public static Seaway card = new Seaway();
 
         private Seaway()
-            : base("Seaway", Expansion.Adventures)
+            : base("Seaway", Expansion.Adventures, coinCost:5)
         {
         }
     }
@@ -197,7 +197,7 @@ namespace Dominion.CardTypes
         public static Trade card = new Trade();
 
         private Trade()
-            : base("Trade", Expansion.Adventures)
+            : base("Trade", Expansion.Adventures, coinCost:5)
         {
         }
     }
@@ -208,7 +208,7 @@ namespace Dominion.CardTypes
         public static Training card = new Training();
 
         private Training()
-            : base("Training", Expansion.Adventures)
+            : base("Training", Expansion.Adventures, coinCost:6)
         {
         }
     }
@@ -219,7 +219,7 @@ namespace Dominion.CardTypes
         public static TravellingFair card = new TravellingFair();
 
         private TravellingFair()
-            : base("Travelling Fair", Expansion.Adventures)
+            : base("Travelling Fair", Expansion.Adventures, coinCost:2)
         {
         }
     }

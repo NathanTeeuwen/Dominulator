@@ -15,6 +15,7 @@ namespace Dominion
         CardFinishingDuration,
         CardBeingTrashed,
         CardBeingDiscarded,
+        EventBeingResolved,
         NoCardContext
     }
 
@@ -443,7 +444,7 @@ namespace Dominion
                     throw new Exception("Tried to buy card that didn't meet criteria");
                 }
 
-                if (!this.CanGainCardFromSupply(cardType))
+                if (!this.CanGainCardFromSupply(cardType) && !cardType.isEvent)
                 {
                     return;
                 }
@@ -452,17 +453,26 @@ namespace Dominion
                 currentPlayer.turnCounters.RemovePotions(cardType.potionCost);
                 currentPlayer.turnCounters.RemoveBuy();
 
-                Card boughtCard = this.PlayerGainCardFromSupply(cardType, currentPlayer, DeckPlacement.Discard, GainReason.Buy);
-                if (boughtCard == null)
+                if (cardType.isEvent)
                 {
-                    throw new Exception("CanGainCardFromSupply said we could buy a card when we couldn't");
+                    this.cardContextStack.PushCardContext(currentPlayer, cardType, CardContextReason.EventBeingResolved);
+                    cardType.DoSpecializedAction(currentPlayer, this);
+                    this.cardContextStack.Pop();
                 }
-                            
-                int embargoCount = this.pileEmbargoTokenCount[boughtCard];
-                for (int i = 0; i < embargoCount; ++i)
+                else
                 {
-                    currentPlayer.GainCardFromSupply(Cards.Curse, this);                    
-                }                                              
+                    Card boughtCard = this.PlayerGainCardFromSupply(cardType, currentPlayer, DeckPlacement.Discard, GainReason.Buy);
+                    if (boughtCard == null)
+                    {
+                        throw new Exception("CanGainCardFromSupply said we could buy a card when we couldn't");
+                    }
+
+                    int embargoCount = this.pileEmbargoTokenCount[boughtCard];
+                    for (int i = 0; i < embargoCount; ++i)
+                    {
+                        currentPlayer.GainCardFromSupply(Cards.Curse, this);
+                    }
+                }                                                              
             }
         }
 

@@ -490,10 +490,16 @@ namespace Dominion
         protected Event(
             string name,
             Expansion expansion,
+            int coinCost,
             string pluralName = null)
-            : base(name: name, expansion: expansion, coinCost: 0, isEvent: true, pluralName: null, isKingdomCard:false, isInSupply:false)
+            : base(name: name, expansion: expansion, coinCost: coinCost, isEvent: true, pluralName: null, isKingdomCard:false, isInSupply:false)
         {
 
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
         }
     }
 
