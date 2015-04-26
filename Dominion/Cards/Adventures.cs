@@ -725,7 +725,8 @@ namespace Dominion.CardTypes
             Card trashedCard = null;
             if (currentPlayer.actions.ShouldTrashCard(gameState, Cards.Raze))
             {
-                trashedCard = currentPlayer.MoveCardFromPlayToTrash(gameState);
+                if (currentPlayer.MoveCardFromPlayToTrash(gameState))
+                    trashedCard = Cards.Raze;
             }
             else
             {
