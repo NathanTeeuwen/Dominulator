@@ -56,7 +56,9 @@ namespace Dominion
         public readonly bool isShelter;
         public readonly bool isTraveller;
         public readonly bool isReserve;
-        public readonly bool isEvent;        
+        public readonly bool isEvent;
+
+        public readonly bool isInSupply;
 
         // useful properites about the card
         public readonly bool canGivePlusAction;
@@ -130,6 +132,7 @@ namespace Dominion
             bool canGivePlusAction = false,
             bool mightMultiplyActions = false,     
             bool isKingdomCard = true,
+            bool isInSupply = true,
             CardIntValue provideDiscountForWhileInPlay = null,
             GameStateMethod doSpecializedCleanupAtStartOfCleanup = null,
             GameStateCardMethod doSpecializedActionOnBuyWhileInPlay = null,
@@ -181,6 +184,7 @@ namespace Dominion
             this.isReserve = isReserve;
             this.isEvent = isEvent;
             this.isKingdomCard = isKingdomCard;
+            this.isInSupply = isInSupply;
             this.requiresSpoils = requiresSpoils;
             this.canOverpay = canOverpay;
             this.canGivePlusAction = canGivePlusAction;
@@ -487,7 +491,7 @@ namespace Dominion
             string name,
             Expansion expansion,
             string pluralName = null)
-            : base(name: name, expansion: expansion, coinCost: 0, isEvent: true, pluralName: null, isKingdomCard:false)
+            : base(name: name, expansion: expansion, coinCost: 0, isEvent: true, pluralName: null, isKingdomCard:false, isInSupply:false)
         {
 
         }
