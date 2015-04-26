@@ -561,6 +561,11 @@
         <Setter Property="AutomationProperties.Name" Value="View Deck"/>
         <Setter Property="Content" Value="&#xE13C;"/>
     </Style>
+    <Style x:Key="ViewStrategiesAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.AutomationId" Value="ViewStrategiesAppBarButton"/>
+        <Setter Property="AutomationProperties.Name" Value="View Strategies"/>
+        <Setter Property="Content" Value="&#xE13C;"/>
+    </Style>
     <Style x:Key="DetailsAppBarButtonStyle" TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
         <Setter Property="AutomationProperties.AutomationId" Value="ReportAppBarButton"/>
         <Setter Property="AutomationProperties.Name" Value="Details"/>

@@ -117,7 +117,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <TextBlock FontSize="20">Drag Cards here to include in strategy</TextBlock>
+            <TextBlock FontSize="20" Visibility="{Binding ElementName=Page, Path=AppDataContext.UseSideBySideStrategy.Value, Converter={StaticResource BoolToVisibilityConverter}}">Drag Cards here to include in strategy</TextBlock>
         </StackPanel>
     </ScrollViewer>
 </UserControl>

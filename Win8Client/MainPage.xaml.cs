@@ -170,7 +170,7 @@ namespace Win8Client
             this.appDataContext.SettingsButtonVisibility.Value = SettingsButtonVisibility.Back;
         }
 
-        private void SettingsBackButton_Click(object sender, RoutedEventArgs e)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             this.appDataContext.CardVisibility.Value = CardVisibility.Current;
             this.appDataContext.SettingsButtonVisibility.Value = SettingsButtonVisibility.Settings;
@@ -180,7 +180,12 @@ namespace Win8Client
         private void AllCardsButton_Click(object sender, RoutedEventArgs e)
         {            
             this.appDataContext.CardVisibility.Value =
-                this.appDataContext.CardVisibility.Value == CardVisibility.All ? CardVisibility.Current: CardVisibility.All;
+                this.appDataContext.CardVisibility.Value == CardVisibility.Current ? CardVisibility.All: CardVisibility.Current;
+        }
+
+        private void StrategyButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.appDataContext.CardVisibility.Value = CardVisibility.Strategy;
         }
 
         private void SaveReportButton_Click(object sender, RoutedEventArgs e)

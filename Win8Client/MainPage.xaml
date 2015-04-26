@@ -16,23 +16,25 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >    
         <Grid.Resources>
             <local:SettingsButtonVisibilityConverter x:Key="SettingsButtonVisibilityConverter" />
-            <local:SettingsBackButtonVisibilityConverter x:Key="SettingsBackButtonVisibilityConverter" />
+            <local:BackButtonVisibilityConverter x:Key="BackButtonVisibilityConverter" />
             <local:PageConfigStrategyReportVisibilityConverter x:Key="PageConfigStrategyReportVisibilityConverter" />
             <local:PageConfigDesignVisibilityConverter x:Key="PageConfigDesignVisibilityConverter" />
             <local:CurrentCardVisibilityConverter x:Key="CurrentCardVisibilityConverter" />
             <local:AllCardVisibilityConverter x:Key="AllCardVisibilityConverter" />
             <local:SettingsVisibilityConverter x:Key="SettingsVisibilityConverter" />
-            <local:StrategyVisibilityConverter x:Key="StrategyVisibilityConverter" />
+            <local:StrategyVisibilityConverter x:Key="StrategyVisibilityConverter" />            
+            
         </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>            
             <RowDefinition Height="*"/>            
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal">
-            <Button Style="{StaticResource BackAppBarButtonStyle}" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsBackButtonVisibilityConverter}}" BorderThickness="0" Click="SettingsBackButton_Click"/>
+            <Button Style="{StaticResource BackAppBarButtonStyle}" Visibility="{Binding CardVisibility.Value, Converter={StaticResource BackButtonVisibilityConverter}}" BorderThickness="0" Click="BackButton_Click"/>
             <StackPanel Orientation="Horizontal" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsButtonVisibilityConverter}}">
                 <Button Style="{StaticResource AllCardsAppBarButtonStyle}" BorderThickness="0" Click="AllCardsButton_Click" Visibility="{Binding CardVisibility.Value, Converter={StaticResource CurrentCardVisibilityConverter}}"/>
-                <Button Style="{StaticResource CurrentCardsAppBarButtonStyle}" BorderThickness="0" Click="AllCardsButton_Click" Visibility="{Binding CardVisibility.Value, Converter={StaticResource AllCardVisibilityConverter}}"/>                
+                <!-- <Button Style="{StaticResource CurrentCardsAppBarButtonStyle}" BorderThickness="0" Click="AllCardsButton_Click" Visibility="{Binding CardVisibility.Value, Converter={StaticResource AllCardVisibilityConverter}}"/> -->
+                <Button Style="{StaticResource ViewStrategiesAppBarButtonStyle}" BorderThickness="0" Click="StrategyButton_Click" Visibility="{Binding CardVisibility.Value, Converter={StaticResource CurrentCardVisibilityConverter}}"/>
             </StackPanel>
             <Button Style="{StaticResource SaveAppBarButtonStyle}" BorderThickness="0" Click="SaveReportButton_Click" Visibility="{Binding PageConfig.Value, Converter={StaticResource PageConfigStrategyReportVisibilityConverter}}"/>
         </StackPanel>
@@ -47,7 +49,6 @@
                     <local:CurrentDeckPicker x:Name="CurrentCards" Visibility="{Binding CardVisibility.Value, Converter={StaticResource CurrentCardVisibilityConverter}}"/>
                     <local:AllCardsPicker x:Name="AllCards" Visibility="{Binding CardVisibility.Value, Converter={StaticResource AllCardVisibilityConverter}}"/>
                     <local:Settings Visibility="{Binding CardVisibility.Value, Converter={StaticResource SettingsVisibilityConverter}}"/>
-                    <StackPanel Width="100"></StackPanel>
                     <local:Strategies Visibility="{Binding CardVisibility.Value, Converter={StaticResource StrategyVisibilityConverter}}"/>
                 </StackPanel>
                 <WebView Grid.Row="0" x:Name="ResultsWebView" Width="Auto" Height="Auto" Visibility="{Binding PageConfig.Value, Converter={StaticResource PageConfigStrategyReportVisibilityConverter}}"></WebView>

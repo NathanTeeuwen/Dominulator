@@ -91,7 +91,7 @@ namespace Win8Client
             throw new NotImplementedException();
         }
     }
-
+    
     public class AllCardVisibilityConverter
       : IValueConverter
     {
@@ -99,6 +99,21 @@ namespace Win8Client
         {
             var cardVisibility = (CardVisibility)value;
             return cardVisibility == CardVisibility.All ? Visibility.Visible : Visibility.Collapsed;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class StrategyVisibilityConverter
+      : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            var cardVisibility = (CardVisibility)value;
+            return cardVisibility == CardVisibility.Strategy ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)
@@ -120,22 +135,7 @@ namespace Win8Client
         {
             throw new NotImplementedException();
         }
-    }
-
-    public class StrategyVisibilityConverter
-      : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, string language)
-        {
-            var cardVisibility = (CardVisibility)value;
-            return cardVisibility != CardVisibility.Settings ? Visibility.Visible : Visibility.Collapsed;
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, string language)
-        {
-            throw new NotImplementedException();
-        }
-    }
+    }    
 
     public class SettingsButtonVisibilityConverter
       : IValueConverter
@@ -152,13 +152,13 @@ namespace Win8Client
         }
     }
 
-    public class SettingsBackButtonVisibilityConverter
+    public class BackButtonVisibilityConverter
       : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            var cardVisibility = (SettingsButtonVisibility)value;
-            return cardVisibility == SettingsButtonVisibility.Back ? Visibility.Visible : Visibility.Collapsed;
+            var cardVisibility = (CardVisibility)value;
+            return cardVisibility == CardVisibility.Current ? Visibility.Collapsed : Visibility.Visible;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)

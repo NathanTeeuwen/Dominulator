@@ -60,11 +60,21 @@ namespace Win8Client
                     return false;
             }
             return true;
-        }       
+        }
 
         private void ClearStrategyButtonClick(object sender, RoutedEventArgs e)
         {
             this.appDataContext.currentStrategy.Value.CardAcceptanceDescriptions.Clear();
+        }
+
+        private void ClearStrategy1ButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.appDataContext.player1Strategy.CardAcceptanceDescriptions.Clear();
+        }
+
+        private void ClearStrategy2ButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.appDataContext.player2Strategy.CardAcceptanceDescriptions.Clear();
         }
 
         private void GetStrategyNames(Dominion.Strategy.Description.StrategyDescription player1Descr, Dominion.Strategy.Description.StrategyDescription player2Descr, out string player1Name, out string player2Name)
