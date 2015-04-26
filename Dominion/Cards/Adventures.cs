@@ -390,10 +390,21 @@ namespace Dominion.CardTypes
             : base("Dungeon", Expansion.Adventures, coinCost: 3, isAction: true, isDuration:true, plusActions:1)
         {
         }
-        
+
+        public override void DoSpecializedDurationActionAtBeginningOfTurn(PlayerState currentPlayer, GameState gameState)
+        {
+            DoNowAndAtStartOfTurn(currentPlayer, gameState);
+        }
+
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            DoNowAndAtStartOfTurn(currentPlayer, gameState);            
+        }
+
+        private void DoNowAndAtStartOfTurn(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.DrawAdditionalCardsIntoHand(2, gameState);
+            currentPlayer.RequestPlayerDiscardCardsFromHand(gameState, 2, isOptional: false);
         }
     }
 
@@ -659,12 +670,12 @@ namespace Dominion.CardTypes
         private Port()
             : base("Port", Expansion.Adventures, coinCost: 4, isAction: true, plusCards:1, plusActions:2)
         {
-        }        
-
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
-        {
-            throw new NotImplementedException();
         }
+
+        public override void DoSpecializedWhenBuy(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.GainCardFromSupply(Cards.Port, gameState);
+        }        
     }
 
     public class Ranger
@@ -711,6 +722,27 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
+            Card trashedCard = null;
+            if (currentPlayer.actions.ShouldTrashCard(gameState, Cards.Raze))
+            {
+                trashedCard = currentPlayer.MoveCardFromPlayToTrash(gameState);
+            }
+            else
+            {
+                trashedCard = currentPlayer.RequestPlayerTrashCardFromHand(gameState, c => true, isOptional: false);
+            }
+
+            if (trashedCard == null)
+                return;
+
+            int cardsToLookAt = trashedCard.CurrentCoinCost(currentPlayer);
+            if (cardsToLookAt == 0)
+                return;
+
+            currentPlayer.LookAtCardsFromDeck(cardsToLookAt, gameState);
+            // TODO: ask player to put one card in hand.
+            currentPlayer.MoveLookedAtCardsToDiscard(gameState);
+
             throw new NotImplementedException();
         }
     }
