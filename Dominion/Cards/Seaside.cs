@@ -24,7 +24,7 @@ namespace Dominion.CardTypes
             Card revealedCard = currentPlayer.RequestPlayerRevealCardFromHand(acceptableCard => true, gameState);
             PlayerState.AttackAction attackAction = this.DoEmptyAttack;            
 
-            if (revealedCard != null)
+            if (revealedCard != null && !revealedCard.isShelter)
             {                
                 int maxReturnCount = Math.Max(currentPlayer.Hand.CountOf(revealedCard), 2);            
             
