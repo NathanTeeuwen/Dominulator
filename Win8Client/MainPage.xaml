@@ -47,7 +47,7 @@
                 <StackPanel Grid.Row="0" Orientation="Horizontal">
                     <local:CurrentDeckPicker x:Name="CurrentCards" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource CurrentDeckVisibilityConverter}}"/>
                     <local:AllCardsPicker x:Name="AllCards" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource AllCardVisibilityConverter}}"/>
-                    <local:SideBySideStrategyView Visibility="{Binding SideBySideVisibility.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                    <local:SideBySideStrategyView Margin="10,0,0,0" Visibility="{Binding SideBySideVisibility.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
                     <local:Settings Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource SettingsVisibilityConverter}}"/>
                     <local:DualStrategyView Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource StrategyVisibilityConverter}}"/>
                 </StackPanel>
