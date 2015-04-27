@@ -83,7 +83,7 @@ namespace Dominion.Strategy.Description
             return new CardAcceptanceDescription(card, new MatchDescription[]
             {
                 new MatchDescription(CountSource.Always, card, Comparison.GreaterThan, 0),                
-                new MatchDescription(countSouce, testCard, Comparison.LessThan, threshhold),                
+                new MatchDescription(countSouce, testCard, comparison, threshhold),                
             });
         }
 
