@@ -355,7 +355,7 @@ namespace Dominion.CardTypes
         public static DistantLands card = new DistantLands();
 
         private DistantLands()
-            : base("Distant Lands", Expansion.Adventures, coinCost: 5, isAction: true, isReserve:true, victoryPoints:delegate(PlayerState player){ throw new NotImplementedException(); } )
+            : base("Distant Lands", Expansion.Adventures, coinCost: 5, isAction: true, isReserve: true, victoryPoints: delegate(PlayerState player) { return 0; })
         {
         }        
 
