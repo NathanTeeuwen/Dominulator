@@ -135,6 +135,7 @@
       <DependentUpon>CurrentDeckPicker.xaml</DependentUpon>
     </Compile>
     <Compile Include="DominionCard.cs" />
+    <Compile Include="Expansion.cs" />
     <Compile Include="SideBySideStrategyView.xaml.cs">
       <DependentUpon>SideBySideStrategyView.xaml</DependentUpon>
     </Compile>
@@ -147,6 +148,7 @@
     <Compile Include="DualStrategyView.xaml.cs">
       <DependentUpon>DualStrategyView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SortableCardList.cs" />
     <Compile Include="Strategy.xaml.cs">
       <DependentUpon>Strategy.xaml</DependentUpon>
     </Compile>
