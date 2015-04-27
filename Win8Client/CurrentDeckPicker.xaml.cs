@@ -227,9 +227,10 @@ namespace Win8Client
                 !this.appDataContext.CanSimulateCardsInSelection();
         }
 
-        private void StrategyButton_Click(object sender, RoutedEventArgs e)
+        
+        private void SimulateGameButtonClick(object sender, RoutedEventArgs e)
         {
-            this.appDataContext.CurrentPageConfig.Value = PageConfig.Strategy;
+            this.appDataContext.SimulateGameButtonClick();
         }
     }
 }

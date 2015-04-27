@@ -43,8 +43,7 @@
             <TextBlock FontSize="20" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=MakeSelectionForPlayer2}">Select cards for Player 2.</TextBlock>
             <Button Style="{StaticResource AddToStrategy2BarButtonStyle}" BorderThickness="0" Click="AddToStrategy2Click" Visibility="{Binding IsAddToPlayer2ButtonVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
             <TextBlock FontSize="20" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=Player2CanNotBeSimulated}">Player 2 can not be simulated.</TextBlock>
-            <TextBlock VerticalAlignment="Center" FontSize="20" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=ReviewAndSimulate}">Review And Simulate</TextBlock>
-            <Button Style="{StaticResource ViewStrategiesAppBarButtonStyle}" BorderThickness="0" Click="StrategyButton_Click" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=ReviewAndSimulate}"/>
+            <Button Style="{StaticResource SimulateAppBarButtonStyle}" BorderThickness="0" Click="SimulateGameButtonClick" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=ReviewAndSimulate}"/>            
         </StackPanel>
         <ScrollViewer Grid.Row="1" ZoomMode="Disabled">
             <StackPanel Orientation="Vertical">            

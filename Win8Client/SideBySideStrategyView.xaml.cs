@@ -56,12 +56,7 @@ namespace Win8Client
         {
             this.appDataContext.currentStrategy.Value.CardAcceptanceDescriptions.Clear();
             this.appDataContext.UpdateSimulationStep();
-        }
-
-        private void SimulateGameButtonClick(object sender, RoutedEventArgs e)
-        {
-            this.appDataContext.SimulateGameButtonClick();
-        }
+        }        
 
         private void PlayerRadioButtonChecked(object sender, RoutedEventArgs e)
         {
@@ -79,5 +74,9 @@ namespace Win8Client
             }
         }
 
+        private void StrategyButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.appDataContext.CurrentPageConfig.Value = PageConfig.Strategy;
+        }
     }   
 }

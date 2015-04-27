@@ -232,7 +232,7 @@ namespace Win8Client
             {
                 if (this.UseSideBySideStrategy.Value)
                     this.SideBySideVisibility.Value = true;
-                else if (this.NextSimulationStep.Value == SimulationStep.ReviewAndSimulate)
+                else if (this.player1Strategy.CardAcceptanceDescriptions.Any() || this.player2Strategy.CardAcceptanceDescriptions.Any())
                     this.SideBySideVisibility.Value = true;
                 else
                     this.SideBySideVisibility.Value = false;

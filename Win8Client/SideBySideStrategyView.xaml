@@ -29,8 +29,8 @@
         <StackPanel Grid.Row="1" Orientation="Horizontal" >
             <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer1StrategyChecked.Value, Mode=TwoWay}" Checked="PlayerRadioButtonChecked">Player 1</RadioButton>
             <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer2StrategyChecked.Value, Mode=TwoWay}" Checked="PlayerRadioButtonChecked2">Player 2</RadioButton>
-            <Button Style="{StaticResource ClearAppBarButtonStyle}" BorderThickness="0" Click="ClearStrategyButtonClick" />
-            <Button Style="{StaticResource SimulateAppBarButtonStyle}" BorderThickness="0" Click="SimulateGameButtonClick"/>
+            <Button Style="{StaticResource ClearAppBarButtonStyle}" BorderThickness="0" Click="ClearStrategyButtonClick" />            
+            <Button Style="{StaticResource ViewStrategiesAppBarButtonStyle}" BorderThickness="0" Click="StrategyButton_Click"/>
         </StackPanel>
         <local:Strategy Grid.Row="2" DataContext="{Binding CurrentStrategy.Value}" AppDataContext="{Binding ElementName=Page, Path=AppDataContext}"/>
     </Grid>    
