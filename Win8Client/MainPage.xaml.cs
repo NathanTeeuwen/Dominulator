@@ -33,8 +33,7 @@ namespace Win8Client
 
             this.CurrentCards.CurrentCardsChanged += this.AllCards.UpdateAllCardsListSelection;
             this.appDataContext.CurrentDeck.PropertyChanged += UpdateCommonCardsFromKingdom;
-            this.appDataContext.StrategyReport.PropertyChanged += StrategyReport_PropertyChanged;
-            this.appDataContext.PageConfig.PropertyChanged += PageConfig_PropertyChanged;
+            this.appDataContext.StrategyReport.PropertyChanged += StrategyReport_PropertyChanged;         
             this.appDataContext.UseShelters.PropertyChanged += UpdateCommonCardsFromKingdom;
             this.appDataContext.UseColonyPlatinum.PropertyChanged += UpdateCommonCardsFromKingdom;
 
@@ -42,15 +41,7 @@ namespace Win8Client
             this.appDataContext.AllCards.SortByName();
 
             this.Loaded += MainPage_Loaded;
-        }
-
-        void PageConfig_PropertyChanged(object sender, PropertyChangedEventArgs e)
-        {
-            if (this.appDataContext.PageConfig.Value == PageConfig.StrategyReport)
-            {
-                this.appDataContext.SettingsButtonVisibility.Value = SettingsButtonVisibility.Back;
-            }
-        }
+        }        
         
         void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
@@ -160,32 +151,31 @@ namespace Win8Client
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
-            this.appDataContext.CardVisibility.Value = CardVisibility.Settings;
+            this.appDataContext.CurrentPageConfig.Value = PageConfig.Settings;
             this.appDataContext.SettingsButtonVisibility.Value = SettingsButtonVisibility.Back;
         }
 
         private void HelpButton_Click(object sender, RoutedEventArgs e)
         {
-            this.appDataContext.CardVisibility.Value = CardVisibility.Settings;
+            this.appDataContext.CurrentPageConfig.Value = PageConfig.Settings;
             this.appDataContext.SettingsButtonVisibility.Value = SettingsButtonVisibility.Back;
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            this.appDataContext.CardVisibility.Value = CardVisibility.Current;
-            this.appDataContext.SettingsButtonVisibility.Value = SettingsButtonVisibility.Settings;
-            this.appDataContext.PageConfig.Value = PageConfig.Design;
+            this.appDataContext.CurrentPageConfig.Value = PageConfig.CurrentDeck;
+            this.appDataContext.SettingsButtonVisibility.Value = SettingsButtonVisibility.Settings;            
         }
 
         private void AllCardsButton_Click(object sender, RoutedEventArgs e)
         {            
-            this.appDataContext.CardVisibility.Value =
-                this.appDataContext.CardVisibility.Value == CardVisibility.Current ? CardVisibility.All: CardVisibility.Current;
+            this.appDataContext.CurrentPageConfig.Value =
+                this.appDataContext.CurrentPageConfig.Value == PageConfig.CurrentDeck ? PageConfig.AllCards: PageConfig.CurrentDeck;
         }
 
         private void StrategyButton_Click(object sender, RoutedEventArgs e)
         {
-            this.appDataContext.CardVisibility.Value = CardVisibility.Strategy;
+            this.appDataContext.CurrentPageConfig.Value = PageConfig.Strategy;
         }
 
         private void SaveReportButton_Click(object sender, RoutedEventArgs e)

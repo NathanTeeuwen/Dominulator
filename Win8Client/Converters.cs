@@ -77,13 +77,13 @@ namespace Win8Client
         }
     }
 
-    public class CurrentCardVisibilityConverter
+    public class CurrentDeckVisibilityConverter
       : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            var cardVisibility = (CardVisibility)value;
-            return cardVisibility == CardVisibility.Current ? Visibility.Visible : Visibility.Collapsed;
+            var cardVisibility = (PageConfig)value;
+            return cardVisibility == PageConfig.CurrentDeck ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)
@@ -97,8 +97,8 @@ namespace Win8Client
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            var cardVisibility = (CardVisibility)value;
-            return cardVisibility == CardVisibility.All ? Visibility.Visible : Visibility.Collapsed;
+            var cardVisibility = (PageConfig)value;
+            return cardVisibility == PageConfig.AllCards ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)
@@ -112,8 +112,8 @@ namespace Win8Client
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            var cardVisibility = (CardVisibility)value;
-            return cardVisibility == CardVisibility.Strategy ? Visibility.Visible : Visibility.Collapsed;
+            var cardVisibility = (PageConfig)value;
+            return cardVisibility == PageConfig.Strategy ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)
@@ -127,15 +127,30 @@ namespace Win8Client
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            var cardVisibility = (CardVisibility)value;
-            return cardVisibility == CardVisibility.Settings ? Visibility.Visible : Visibility.Collapsed;
+            var cardVisibility = (PageConfig)value;
+            return cardVisibility == PageConfig.Settings ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)
         {
             throw new NotImplementedException();
         }
-    }    
+    }
+
+    public class ReportVisibilityConverter
+      : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            var cardVisibility = (PageConfig)value;
+            return cardVisibility == PageConfig.Report ? Visibility.Visible : Visibility.Collapsed;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
 
     public class SettingsButtonVisibilityConverter
       : IValueConverter
@@ -157,46 +172,15 @@ namespace Win8Client
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            var cardVisibility = (CardVisibility)value;
-            return cardVisibility == CardVisibility.Current ? Visibility.Collapsed : Visibility.Visible;
+            var cardVisibility = (PageConfig)value;
+            return cardVisibility == PageConfig.CurrentDeck ? Visibility.Collapsed : Visibility.Visible;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)
         {
             throw new NotImplementedException();
         }
-    }
-
-    public class PageConfigDesignVisibilityConverter
-      : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, string language)
-        {
-            var localValue = (PageConfig)value;
-            return localValue == PageConfig.Design ? Visibility.Visible : Visibility.Collapsed;
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, string language)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class PageConfigStrategyReportVisibilityConverter
-        : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, string language)
-        {
-            var localValue = (PageConfig)value;
-            return localValue == PageConfig.StrategyReport ? Visibility.Visible : Visibility.Collapsed;
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, string language)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
+    }       
 
     public class EnumToIndexConverter<T, T2> : IValueConverter
     {

@@ -34,9 +34,8 @@ namespace Win8Client
         public StrategyDescription player2Strategy { get; private set; }
         private bool isStrategy1Selected;
 
-        public DependencyObjectDecl<CardVisibility, DefaultCurrent> CardVisibility{ get; private set; }
-        public DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton> SettingsButtonVisibility { get; private set; }
-        public DependencyObjectDecl<PageConfig, DefaultPageConfig> PageConfig { get; private set; }
+        public DependencyObjectDecl<PageConfig, DefaultCurrent> CurrentPageConfig{ get; private set; }
+        public DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton> SettingsButtonVisibility { get; private set; }        
         public DependencyObjectDeclWithSettings<bool, DefaultFalse> UseSideBySideStrategy { get; private set; }
         public DependencyObjectDecl<bool, DefaultFalse> SideBySideVisibility { get; private set; }
 
@@ -90,9 +89,8 @@ namespace Win8Client
             this.IsPlayer1StrategyChecked = new DependencyObjectDecl<bool, DefaultTrue>(this);
             this.IsPlayer2StrategyChecked = new DependencyObjectDecl<bool, DefaultFalse>(this);
 
-            this.CardVisibility = new DependencyObjectDecl<CardVisibility, DefaultCurrent>(this);
-            this.SettingsButtonVisibility = new DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton>(this);
-            this.PageConfig = new DependencyObjectDecl<PageConfig, DefaultPageConfig>(this);
+            this.CurrentPageConfig = new DependencyObjectDecl<PageConfig, DefaultCurrent>(this);
+            this.SettingsButtonVisibility = new DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton>(this);            
             this.UseSideBySideStrategy = new DependencyObjectDeclWithSettings<bool, DefaultFalse>(this, "View Strategy Side By Side");
             this.SideBySideVisibility = new DependencyObjectDecl<bool, DefaultFalse>(this);
 
@@ -132,7 +130,7 @@ namespace Win8Client
             this.currentDeck.PropertyChanged += UpdateBaneCard_PropetyChanged;
             this.eventCards.PropertyChanged += UpdateEventCard_PropertyChanged;
 
-            this.CardVisibility.PropertyChanged += CalculateSideBySideViewVisibility;
+            this.CurrentPageConfig.PropertyChanged += CalculateSideBySideViewVisibility;
             this.UseSideBySideStrategy.PropertyChanged += CalculateSideBySideViewVisibility;
 
             this.CalculateSideBySideViewVisibility(this, null);
@@ -185,7 +183,7 @@ namespace Win8Client
         void CalculateSideBySideViewVisibility(object sender, PropertyChangedEventArgs e)
         {
             this.SideBySideVisibility.Value = this.UseSideBySideStrategy.Value && 
-                (this.CardVisibility.Value == Win8Client.CardVisibility.All || this.CardVisibility.Value == Win8Client.CardVisibility.Current);
+                (this.CurrentPageConfig.Value == Win8Client.PageConfig.AllCards || this.CurrentPageConfig.Value == Win8Client.PageConfig.CurrentDeck);
         }
 
         void UpdateBaneCard_PropetyChanged(object sender, PropertyChangedEventArgs e)
@@ -342,7 +340,7 @@ namespace Win8Client
                 }, uiScheduler);
             }
 
-            this.PageConfig.Value = Win8Client.PageConfig.StrategyReport;
+            this.CurrentPageConfig.Value = Win8Client.PageConfig.Report;
         }
 
         private void GetStrategyNames(Dominion.Strategy.Description.StrategyDescription player1Descr, Dominion.Strategy.Description.StrategyDescription player2Descr, out string player1Name, out string player2Name)
@@ -464,34 +462,29 @@ namespace Win8Client
 
     }
 
-    public enum CardVisibility
+    public enum PageConfig
     {
-        Current,
-        All,
+        CurrentDeck,
+        AllCards,
         Strategy,
-        Settings
+        Settings,
+        Report
     }
 
     public enum SettingsButtonVisibility
     {
         Settings,
         Back        
-    }
-
-    public enum PageConfig
-    {
-        StrategyReport,
-        Design
-    }
+    }    
 
     public class DefaultCurrent
-        : DependencyPolicy<CardVisibility>
+        : DependencyPolicy<PageConfig>
     {
-        public CardVisibility DefaultValue
+        public PageConfig DefaultValue
         {
             get
             {
-                return CardVisibility.Current;
+                return PageConfig.CurrentDeck;
             }
         }
     }
@@ -504,18 +497,6 @@ namespace Win8Client
             get
             {
                 return SettingsButtonVisibility.Settings;
-            }
-        }
-    }
-
-    public class DefaultPageConfig
-        : DependencyPolicy<PageConfig>
-    {
-        public PageConfig DefaultValue
-        {
-            get
-            {
-                return PageConfig.Design;
             }
         }
     }
