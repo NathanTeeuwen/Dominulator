@@ -29,9 +29,9 @@ namespace Dominion.Strategy.Description
                 this.purchaseOrderDescription.ToCardPicker());
         }
 
-        public StrategyDescription AddCardToPurchaseOrder(Card card)
+        public StrategyDescription AddCardToPurchaseOrder(Card card, int count)
         {
-            return new StrategyDescription(this.purchaseOrderDescription.AddCardInBestLocation(card));
+            return new StrategyDescription(this.purchaseOrderDescription.AddCardInBestLocation(card, count));
         }
 
         public StrategyDescription AddCardsToPurchaseOrder(Card[] cards)
@@ -45,10 +45,33 @@ namespace Dominion.Strategy.Description
                     result = Dominion.Strategy.Description.StrategyDescription.GetDefaultPurchaseDescription();
                 }
 
-                result = result.AddCardToPurchaseOrder(card);
+                result = result.AddCardToPurchaseOrder(card, GetDefaultCountForCard(card));
             }
 
             return result;
+        }
+
+        private const int CountAsManyAsPossible = 11;
+
+        private int GetDefaultCountForCard(Card card)
+        {
+            if (card.isTreasure)
+            {
+                return card == Cards.Potion ? 1 : CountAsManyAsPossible;
+            }
+
+            if (card.isVictory)
+            {
+                return CountAsManyAsPossible;
+            }
+
+            if (card.isAction && card.plusAction == 0)
+                return 1;
+
+            if (card.isAction && card.plusAction > 0)
+                return CountAsManyAsPossible;
+
+            return 1;
         }
 
         public static StrategyDescription GetDefaultPurchaseDescription()

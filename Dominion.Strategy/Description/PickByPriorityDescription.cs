@@ -27,7 +27,7 @@ namespace Dominion.Strategy.Description
             writer.WriteLine("}");
         }
 
-        public PickByPriorityDescription AddCardInBestLocation(Card card)
+        public PickByPriorityDescription AddCardInBestLocation(Card card, int count)
         {
             var resultDescriptions = new CardAcceptanceDescription[this.descriptions.Length+1];
 
@@ -42,7 +42,7 @@ namespace Dominion.Strategy.Description
                 resultDescriptions[currentWriteLocation++] = this.descriptions[currentReadLocation++];
             }
 
-            resultDescriptions[currentWriteLocation++] = new CardAcceptanceDescription(card, new MatchDescription(CountSource.CountAllOwned, card, Comparison.LessThan, 1));
+            resultDescriptions[currentWriteLocation++] = new CardAcceptanceDescription(card, new MatchDescription(CountSource.CountAllOwned, card, Comparison.LessThan, count));
 
             while (currentReadLocation < this.descriptions.Length)
             {
@@ -52,7 +52,7 @@ namespace Dominion.Strategy.Description
             var result = new PickByPriorityDescription(resultDescriptions);
             if (card.potionCost > 0 && !result.HasPotionCard())
             {
-                return result.AddCardInBestLocation(Cards.Potion);
+                return result.AddCardInBestLocation(Cards.Potion, 1);
             }
 
             return result;
