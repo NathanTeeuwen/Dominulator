@@ -38,8 +38,9 @@
             <Button Style="{StaticResource SaveAppBarButtonStyle}" BorderThickness="0" Click="SaveReportButton_Click" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource ReportVisibilityConverter}}"/>
         </StackPanel>
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsButtonVisibilityConverter}}">
+            <Button Style="{StaticResource GoogleAppBarButtonStyle}" BorderThickness="0" Click="GoogleButtonClick" Visibility="{Binding IsSelectionPresentOnCurrentDeck.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
             <Button Style="{StaticResource SettingsAppBarButtonStyle}" BorderThickness="0" Click="SettingsButton_Click"/>
-            <Button Style="{StaticResource HelpAppBarButtonStyle}" BorderThickness="0" Click="HelpButton_Click" Visibility="Collapsed"/>
+            <Button Style="{StaticResource HelpAppBarButtonStyle}" BorderThickness="0" Click="HelpButton_Click" Visibility="Collapsed"/>            
         </StackPanel>
         <TextBlock Grid.Row="0"  FontSize="100" VerticalAlignment="Center" HorizontalAlignment="Center">Dominulator</TextBlock>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto" ZoomMode="Disabled">

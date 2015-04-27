@@ -34,13 +34,17 @@
             <Button Click="RandomizeButtonClick" Style="{StaticResource RefreshAppBarButtonStyle}"></Button>
         </StackPanel>
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Style="{StaticResource AddToStrategy1BarButtonStyle}" BorderThickness="0" Click="AddToStrategy1Click"/>
-            <Button Style="{StaticResource AddToStrategy2BarButtonStyle}" BorderThickness="0" Click="AddToStrategy2Click"/>
-            <Button Style="{StaticResource GoogleAppBarButtonStyle}" BorderThickness="0" Click="GoogleButtonClick"/>               
+            <Button Style="{StaticResource AddToStrategy1BarButtonStyle}" BorderThickness="0" Click="AddToStrategy1Click" Visibility="{Binding IsSelectionPresentOnCurrentDeck.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
+            <Button Style="{StaticResource AddToStrategy2BarButtonStyle}" BorderThickness="0" Click="AddToStrategy2Click" Visibility="{Binding IsSelectionPresentOnCurrentDeck.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>            
         </StackPanel>
         <ScrollViewer Grid.Row="1" ZoomMode="Disabled">
             <StackPanel Orientation="Vertical">            
-                <ListView Name="CurrentCardsListView"  ItemsSource="{Binding CurrentDeck.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
+                <ListView Name="CurrentCardsListView"  
+                          ItemsSource="{Binding CurrentDeck.Cards}" 
+                          SelectionMode="Multiple" 
+                          CanDragItems="True" 
+                          DragItemsStarting="CurrentCardsListView_DragItemsStarting"
+                          SelectionChanged="CurrentCardsListView_SelectionChanged">
                     <ListView.ItemsPanel>
                         <ItemsPanelTemplate>
                             <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>

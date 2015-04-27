@@ -124,25 +124,9 @@ namespace Win8Client
         private void RandomizeButtonClick(object sender, RoutedEventArgs e)
         {
             Randomize10Cards();
-        }
+        }        
 
-        private void GoogleButtonClick(object sender, RoutedEventArgs e)
-        {
-            var uriBuilder = new System.Text.StringBuilder();
-            uriBuilder.Append("https://www.google.com/?gws_rd=ssl#safe=off&q=dominion");
-
-            foreach(Dominion.Card card in this.GetSelectedCardsAndClear(fShouldClear:false))
-            {
-                uriBuilder.Append("+");
-                uriBuilder.Append(card.name.Replace(" ", "%20"));
-            }
-            
-            string uriToLaunch = uriBuilder.ToString();
-            var uri = new Uri(uriToLaunch);
-            Windows.System.Launcher.LaunchUriAsync(uri);
-        }
-
-        Dominion.Card[] GetSelectedCardsAndClear(bool fShouldClear = true)
+        public Dominion.Card[] GetSelectedCardsAndClear(bool fShouldClear = true)
         {
             var result = new List<Dominion.Card>();
             
@@ -222,6 +206,11 @@ namespace Win8Client
         {
             this.appDataContext.CurrentDeck.SortByExpansion();
             this.appDataContext.CurrentDeck.UpdateUIFromUIThread();
+        }
+
+        private void CurrentCardsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            this.appDataContext.IsSelectionPresentOnCurrentDeck.Value = this.CurrentCardsListView.SelectedItems.Any();
         }        
     }
 }

@@ -38,6 +38,7 @@ namespace Win8Client
         public DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton> SettingsButtonVisibility { get; private set; }        
         public DependencyObjectDeclWithSettings<bool, DefaultFalse> UseSideBySideStrategy { get; private set; }
         public DependencyObjectDecl<bool, DefaultFalse> SideBySideVisibility { get; private set; }
+        public DependencyObjectDecl<bool, DefaultFalse> IsSelectionPresentOnCurrentDeck { get; private set; }
 
         public DependencyObjectDecl<bool, DefaultFalse> StrategyResultsAvailable { get; private set; }
         public bool strategyReportDirty = false;
@@ -93,6 +94,7 @@ namespace Win8Client
             this.SettingsButtonVisibility = new DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton>(this);            
             this.UseSideBySideStrategy = new DependencyObjectDeclWithSettings<bool, DefaultFalse>(this, "View Strategy Side By Side");
             this.SideBySideVisibility = new DependencyObjectDecl<bool, DefaultFalse>(this);
+            this.IsSelectionPresentOnCurrentDeck = new DependencyObjectDecl<bool, DefaultFalse>(this);
 
             this.IsBaneCardVisible = new DependencyObjectDecl<bool, DefaultFalse>(this);
             this.AreEventCardsVisible = new DependencyObjectDecl<bool, DefaultFalse>(this);

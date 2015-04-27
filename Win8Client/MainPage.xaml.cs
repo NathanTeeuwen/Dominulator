@@ -198,6 +198,21 @@ namespace Win8Client
             this.ResultsWebView.NavigateToString(this.appDataContext.StrategyReport.Value);            
         }
 
+        private void GoogleButtonClick(object sender, RoutedEventArgs e)
+        {
+            var uriBuilder = new System.Text.StringBuilder();
+            uriBuilder.Append("https://www.google.com/?gws_rd=ssl#safe=off&q=dominion");
+
+            foreach (Dominion.Card card in this.CurrentCards.GetSelectedCardsAndClear(fShouldClear: false))
+            {
+                uriBuilder.Append("+");
+                uriBuilder.Append(card.name.Replace(" ", "%20"));
+            }
+
+            string uriToLaunch = uriBuilder.ToString();
+            var uri = new Uri(uriToLaunch);
+            Windows.System.Launcher.LaunchUriAsync(uri);
+        }
     }
 
     public class SortableCardList
