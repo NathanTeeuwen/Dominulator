@@ -38,6 +38,7 @@ namespace Win8Client
         public DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton> SettingsButtonVisibility { get; private set; }
         public DependencyObjectDecl<PageConfig, DefaultPageConfig> PageConfig { get; private set; }
         public DependencyObjectDeclWithSettings<bool, DefaultFalse> UseSideBySideStrategy { get; private set; }
+        public DependencyObjectDecl<bool, DefaultFalse> SideBySideVisibility { get; private set; }
 
         public DependencyObjectDecl<bool, DefaultFalse> StrategyResultsAvailable { get; private set; }
         public bool strategyReportDirty = false;
@@ -93,6 +94,7 @@ namespace Win8Client
             this.SettingsButtonVisibility = new DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton>(this);
             this.PageConfig = new DependencyObjectDecl<PageConfig, DefaultPageConfig>(this);
             this.UseSideBySideStrategy = new DependencyObjectDeclWithSettings<bool, DefaultFalse>(this, "View Strategy Side By Side");
+            this.SideBySideVisibility = new DependencyObjectDecl<bool, DefaultFalse>(this);
 
             this.IsBaneCardVisible = new DependencyObjectDecl<bool, DefaultFalse>(this);
             this.AreEventCardsVisible = new DependencyObjectDecl<bool, DefaultFalse>(this);
@@ -129,6 +131,11 @@ namespace Win8Client
             this.currentDeck.PropertyChanged += AvailableCards_PropetyChanged;
             this.currentDeck.PropertyChanged += UpdateBaneCard_PropetyChanged;
             this.eventCards.PropertyChanged += UpdateEventCard_PropertyChanged;
+
+            this.CardVisibility.PropertyChanged += CalculateSideBySideViewVisibility;
+            this.UseSideBySideStrategy.PropertyChanged += CalculateSideBySideViewVisibility;
+
+            this.CalculateSideBySideViewVisibility(this, null);
 
             this.allCards.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
             this.currentDeck.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
@@ -173,6 +180,12 @@ namespace Win8Client
 
             // this sort method will order but cause items in strategy to be data bound empty
             //Sort(this.availableCards, c => c.dominionCard.name);
+        }
+
+        void CalculateSideBySideViewVisibility(object sender, PropertyChangedEventArgs e)
+        {
+            this.SideBySideVisibility.Value = this.UseSideBySideStrategy.Value && 
+                (this.CardVisibility.Value == Win8Client.CardVisibility.All || this.CardVisibility.Value == Win8Client.CardVisibility.Current);
         }
 
         void UpdateBaneCard_PropetyChanged(object sender, PropertyChangedEventArgs e)
