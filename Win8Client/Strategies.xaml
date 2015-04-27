@@ -14,48 +14,56 @@
         <ResourceDictionary Source="StandardStyles.xaml" />
     </UserControl.Resources>
 
-    <StackPanel Orientation="Vertical">
-        <StackPanel.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.Resources>
             <local:BoolToInVisibilityConverter x:Key="BoolToInVisibilityConverter" />
             <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
             <local:OpenningSplitConverter x:Key="OpenningSplitConverter" />
-        </StackPanel.Resources>
+        </Grid.Resources>
         <local:SimulationResults/>
-        <Grid Visibility="{Binding UseSideBySideStrategy.Value, Converter={StaticResource BoolToInVisibilityConverter}}">            
+        <Grid Grid.Row="1" Visibility="{Binding UseSideBySideStrategy.Value, Converter={StaticResource BoolToInVisibilityConverter}}">            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Margin="0,5,0,0" Grid.Row="0" Grid.ColumnSpan="3">
+                <StackPanel Orientation="Horizontal">
+                    <Button Style="{StaticResource SimulateAppBarButtonStyle}" BorderThickness="0" Click="SimulateGameButtonClick"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                <TextBlock VerticalAlignment="Center" FontSize="30">Player 1</TextBlock>
+                <Button VerticalAlignment="Center" Style="{StaticResource ClearAppBarButtonStyle}" BorderThickness="0" Click="ClearStrategy1ButtonClick" />
+            </StackPanel>
+            <local:Strategy Grid.Row="2" Grid.Column="0" DataContext="{Binding player1Strategy}" AppDataContext="{Binding ElementName=Page, Path=AppDataContext}"/>
+
+            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+                <TextBlock VerticalAlignment="Center" FontSize="30">Player 2</TextBlock>
+                <Button VerticalAlignment="Center" Style="{StaticResource ClearAppBarButtonStyle}" BorderThickness="0" Click="ClearStrategy2ButtonClick" />
+            </StackPanel>
+            <local:Strategy Grid.Row="2" Grid.Column="1" DataContext="{Binding player2Strategy}" AppDataContext="{Binding ElementName=Page, Path=AppDataContext}"/>            
+        </Grid>
+        <Grid Grid.Row="1" Visibility="{Binding UseSideBySideStrategy.Value, Converter={StaticResource BoolToVisibilityConverter}}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <StackPanel Margin="0,5,0,0" Grid.Row="0">
-                <StackPanel Orientation="Horizontal">
-                    <Button Style="{StaticResource SimulateAppBarButtonStyle}" BorderThickness="0" Click="SimulateGameButtonClick"/>
-                </StackPanel>
-            </StackPanel>            
-            <StackPanel Orientation="Horizontal" Grid.Row="1">
-                <StackPanel Orientation="Vertical">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock VerticalAlignment="Center" FontSize="30">Player 1</TextBlock>
-                        <Button VerticalAlignment="Center" Style="{StaticResource ClearAppBarButtonStyle}" BorderThickness="0" Click="ClearStrategy1ButtonClick" />
-                    </StackPanel>
-                    <local:Strategy DataContext="{Binding player1Strategy}" AppDataContext="{Binding ElementName=Page, Path=AppDataContext}"/>
-                </StackPanel>
-                <StackPanel Orientation="Vertical">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock VerticalAlignment="Center" FontSize="30">Player 2</TextBlock>
-                        <Button VerticalAlignment="Center" Style="{StaticResource ClearAppBarButtonStyle}" BorderThickness="0" Click="ClearStrategy2ButtonClick" />
-                    </StackPanel>
-                    <local:Strategy DataContext="{Binding player2Strategy}" AppDataContext="{Binding ElementName=Page, Path=AppDataContext}"/>
-                </StackPanel>
-            </StackPanel>
-        </Grid>
-        <StackPanel Orientation="Vertical" Grid.Row="1" Visibility="{Binding UseSideBySideStrategy.Value, Converter={StaticResource BoolToVisibilityConverter}}">
-            <StackPanel Orientation="Horizontal" >
+            <StackPanel Grid.Row="0" Orientation="Horizontal" >
                 <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer1StrategyChecked.Value, Mode=TwoWay}" Checked="PlayerRadioButtonChecked">Player 1</RadioButton>
                 <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer2StrategyChecked.Value, Mode=TwoWay}" Checked="PlayerRadioButtonChecked2">Player 2</RadioButton>
                 <Button Style="{StaticResource ClearAppBarButtonStyle}" BorderThickness="0" Click="ClearStrategyButtonClick" />
                 <Button Style="{StaticResource SimulateAppBarButtonStyle}" BorderThickness="0" Click="SimulateGameButtonClick"/>
             </StackPanel>
-            <local:Strategy DataContext="{Binding CurrentStrategy.Value}" AppDataContext="{Binding ElementName=Page, Path=AppDataContext}"/>
-        </StackPanel>        
-    </StackPanel>    
+            <local:Strategy Grid.Row="1" DataContext="{Binding CurrentStrategy.Value}" AppDataContext="{Binding ElementName=Page, Path=AppDataContext}"/>
+        </Grid>
+    </Grid>    
 </UserControl>
