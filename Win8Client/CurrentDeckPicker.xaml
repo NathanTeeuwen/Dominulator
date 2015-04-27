@@ -16,6 +16,7 @@
     <Grid>
         <Grid.Resources>
             <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+            <local:EnumVisibility x:Key="EnumVisibility"/>
         </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -31,11 +32,19 @@
                     </MenuFlyout>
                 </Button.Flyout>
             </Button>
-            <Button Click="RandomizeButtonClick" Style="{StaticResource RefreshAppBarButtonStyle}"></Button>
+            <Button Click="RefreshButtonClick" Style="{StaticResource RefreshAppBarButtonStyle}"></Button>
         </StackPanel>
-        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Style="{StaticResource AddToStrategy1BarButtonStyle}" BorderThickness="0" Click="AddToStrategy1Click" Visibility="{Binding IsSelectionPresentOnCurrentDeck.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
-            <Button Style="{StaticResource AddToStrategy2BarButtonStyle}" BorderThickness="0" Click="AddToStrategy2Click" Visibility="{Binding IsSelectionPresentOnCurrentDeck.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>            
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <TextBlock FontSize="20" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=MakeSelection}">To begin simulation select some cards.</TextBlock>
+            <TextBlock FontSize="20" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=MakeSelectionForPlayer1}">Select cards for Player 1.</TextBlock>
+            <Button Style="{StaticResource AddToStrategy1BarButtonStyle}" BorderThickness="0" Click="AddToStrategy1Click" Visibility="{Binding IsAddToPlayer1ButtonVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
+            <TextBlock FontSize="20" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=Player1CanNotBeSimulated}">Player 1 can not be simulated.</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="20" Visibility="{Binding HintSelectedCardNotSimulatedButtonVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">One of the selected cards can not be simulated.</TextBlock>
+            <TextBlock FontSize="20" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=MakeSelectionForPlayer2}">Select cards for Player 2.</TextBlock>
+            <Button Style="{StaticResource AddToStrategy2BarButtonStyle}" BorderThickness="0" Click="AddToStrategy2Click" Visibility="{Binding IsAddToPlayer2ButtonVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
+            <TextBlock FontSize="20" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=Player2CanNotBeSimulated}">Player 2 can not be simulated.</TextBlock>
+            <TextBlock VerticalAlignment="Center" FontSize="20" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=ReviewAndSimulate}">Review And Simulate</TextBlock>
+            <Button Style="{StaticResource ViewStrategiesAppBarButtonStyle}" BorderThickness="0" Click="StrategyButton_Click" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=ReviewAndSimulate}"/>
         </StackPanel>
         <ScrollViewer Grid.Row="1" ZoomMode="Disabled">
             <StackPanel Orientation="Vertical">            
@@ -44,7 +53,7 @@
                           SelectionMode="Multiple" 
                           CanDragItems="True" 
                           DragItemsStarting="CurrentCardsListView_DragItemsStarting"
-                          SelectionChanged="CurrentCardsListView_SelectionChanged">
+                          SelectionChanged="SelectedCards_SelectionChanged">
                     <ListView.ItemsPanel>
                         <ItemsPanelTemplate>
                             <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
@@ -60,7 +69,11 @@
                 </ListView>
                 <StackPanel Orientation="Vertical" Visibility="{Binding IsBaneCardVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">
                     <TextBlock FontSize="20">Bane Card</TextBlock>
-                    <ListView Name="BaneCardsListView" ItemsSource="{Binding BaneCard.Cards}" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
+                    <ListView Name="BaneCardsListView" 
+                              ItemsSource="{Binding BaneCard.Cards}" 
+                              CanDragItems="True" 
+                              DragItemsStarting="CurrentCardsListView_DragItemsStarting"
+                              SelectionChanged="SelectedCards_SelectionChanged">
                         <ListView.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
@@ -77,7 +90,12 @@
                 </StackPanel>
                 <StackPanel Orientation="Vertical" Visibility="{Binding AreEventCardsVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">
                     <TextBlock FontSize="20">Events</TextBlock>
-                    <ListView Name="EventCardsListView" ItemsSource="{Binding EventCards.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
+                    <ListView Name="EventCardsListView" 
+                              ItemsSource="{Binding EventCards.Cards}" 
+                              SelectionMode="Multiple" 
+                              CanDragItems="True" 
+                              DragItemsStarting="CurrentCardsListView_DragItemsStarting"
+                              SelectionChanged="SelectedCards_SelectionChanged">
                         <ListView.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <WrapGrid MaximumRowsOrColumns="2" Orientation="Horizontal"/>
@@ -92,7 +110,12 @@
                         </ListView.ItemTemplate>
                     </ListView>
                 </StackPanel>                
-                <ListView Name="CommonCardsListView" ItemsSource="{Binding CommonCards.Cards}" SelectionMode="Multiple" CanDragItems="True" DragItemsStarting="CurrentCardsListView_DragItemsStarting">
+                <ListView Name="CommonCardsListView" 
+                          ItemsSource="{Binding CommonCards.Cards}" 
+                          SelectionMode="Multiple" 
+                          CanDragItems="True" 
+                          DragItemsStarting="CurrentCardsListView_DragItemsStarting"
+                          SelectionChanged="SelectedCards_SelectionChanged">
                     <ListView.ItemsPanel>
                         <ItemsPanelTemplate>
                             <WrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>

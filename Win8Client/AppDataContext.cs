@@ -9,6 +9,7 @@ namespace Win8Client
         : DependencyObject
     {
         System.Collections.ObjectModel.ObservableCollection<DominionCard> availableCards;
+        public System.Collections.ObjectModel.ObservableCollection<DominionCard> selectedCards;
         private SortableCardList allCards;
         private SortableCardList shelterCards;
         private SortableCardList colonyPlatinumCards;
@@ -35,10 +36,14 @@ namespace Win8Client
         private bool isStrategy1Selected;
 
         public DependencyObjectDecl<PageConfig, DefaultCurrent> CurrentPageConfig{ get; private set; }
-        public DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton> SettingsButtonVisibility { get; private set; }        
+        public DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton> SettingsButtonVisibility { get; private set; }
+        public DependencyObjectDecl<SimulationStep, DefaultSimulationStep> NextSimulationStep { get; private set; }        
         public DependencyObjectDeclWithSettings<bool, DefaultFalse> UseSideBySideStrategy { get; private set; }
         public DependencyObjectDecl<bool, DefaultFalse> SideBySideVisibility { get; private set; }
         public DependencyObjectDecl<bool, DefaultFalse> IsSelectionPresentOnCurrentDeck { get; private set; }
+        public DependencyObjectDecl<bool, DefaultFalse> IsAddToPlayer1ButtonVisible { get; private set; }
+        public DependencyObjectDecl<bool, DefaultFalse> IsAddToPlayer2ButtonVisible { get; private set; }
+        public DependencyObjectDecl<bool, DefaultFalse> HintSelectedCardNotSimulatedButtonVisible { get; private set; }
 
         public DependencyObjectDecl<bool, DefaultFalse> StrategyResultsAvailable { get; private set; }
         public bool strategyReportDirty = false;
@@ -72,6 +77,7 @@ namespace Win8Client
             this.baneCard = new SortableCardList();
             this.eventCards = new SortableCardList();
             this.availableCards = new System.Collections.ObjectModel.ObservableCollection<DominionCard>();
+            this.selectedCards = new System.Collections.ObjectModel.ObservableCollection<DominionCard>();
             this.expansions = new System.Collections.ObjectModel.ObservableCollection<Expansion>();
 
 
@@ -95,6 +101,10 @@ namespace Win8Client
             this.UseSideBySideStrategy = new DependencyObjectDeclWithSettings<bool, DefaultFalse>(this, "View Strategy Side By Side");
             this.SideBySideVisibility = new DependencyObjectDecl<bool, DefaultFalse>(this);
             this.IsSelectionPresentOnCurrentDeck = new DependencyObjectDecl<bool, DefaultFalse>(this);
+            this.NextSimulationStep = new DependencyObjectDecl<SimulationStep, DefaultSimulationStep>(this);
+            this.IsAddToPlayer1ButtonVisible = new DependencyObjectDecl<bool, DefaultFalse>(this);
+            this.IsAddToPlayer2ButtonVisible = new DependencyObjectDecl<bool, DefaultFalse>(this);
+            this.HintSelectedCardNotSimulatedButtonVisible = new DependencyObjectDecl<bool, DefaultFalse>(this);
 
             this.IsBaneCardVisible = new DependencyObjectDecl<bool, DefaultFalse>(this);
             this.AreEventCardsVisible = new DependencyObjectDecl<bool, DefaultFalse>(this);
@@ -134,6 +144,9 @@ namespace Win8Client
 
             this.CurrentPageConfig.PropertyChanged += CalculateSideBySideViewVisibility;
             this.UseSideBySideStrategy.PropertyChanged += CalculateSideBySideViewVisibility;
+            this.IsSelectionPresentOnCurrentDeck.PropertyChanged += UpdateSimulationStepEvent;
+            this.NextSimulationStep.PropertyChanged += UpdatePlayerButtonVisibilitiesEvent;            
+            this.NextSimulationStep.PropertyChanged += CalculateSideBySideViewVisibility;            
 
             this.CalculateSideBySideViewVisibility(this, null);
 
@@ -182,10 +195,52 @@ namespace Win8Client
             //Sort(this.availableCards, c => c.dominionCard.name);
         }
 
+        public void UpdatePlayerButtonVisibilities()
+        {
+            if (!this.IsSelectionPresentOnCurrentDeck.Value)
+            {
+                this.IsAddToPlayer1ButtonVisible.Value = false;
+                this.IsAddToPlayer2ButtonVisible.Value = false;
+                return;
+            }
+
+            if (this.NextSimulationStep.Value == SimulationStep.AddToPlayer1 ||
+                this.NextSimulationStep.Value == SimulationStep.ReviewAndSimulate && CanSimulateCardsInSelection())
+            {
+                this.IsAddToPlayer1ButtonVisible.Value = true;
+            }
+            else
+                this.IsAddToPlayer1ButtonVisible.Value = false;
+
+            if (this.NextSimulationStep.Value == SimulationStep.AddToPlayer2 ||
+                this.NextSimulationStep.Value == SimulationStep.ReviewAndSimulate && CanSimulateCardsInSelection())
+            {
+                this.IsAddToPlayer2ButtonVisible.Value = true;
+            }
+            else
+                this.IsAddToPlayer2ButtonVisible.Value = false;
+        }
+
+        void UpdatePlayerButtonVisibilitiesEvent(object sender, PropertyChangedEventArgs e)
+        {
+            UpdatePlayerButtonVisibilities();
+        }
+
         void CalculateSideBySideViewVisibility(object sender, PropertyChangedEventArgs e)
         {
-            this.SideBySideVisibility.Value = this.UseSideBySideStrategy.Value && 
-                (this.CurrentPageConfig.Value == Win8Client.PageConfig.AllCards || this.CurrentPageConfig.Value == Win8Client.PageConfig.CurrentDeck);
+            if (this.CurrentPageConfig.Value == Win8Client.PageConfig.AllCards || this.CurrentPageConfig.Value == Win8Client.PageConfig.CurrentDeck)
+            {
+                if (this.UseSideBySideStrategy.Value)
+                    this.SideBySideVisibility.Value = true;
+                else if (this.NextSimulationStep.Value == SimulationStep.ReviewAndSimulate)
+                    this.SideBySideVisibility.Value = true;
+                else
+                    this.SideBySideVisibility.Value = false;
+            }
+            else
+            {
+                this.SideBySideVisibility.Value = false;
+            }                
         }
 
         void UpdateBaneCard_PropetyChanged(object sender, PropertyChangedEventArgs e)
@@ -371,21 +426,11 @@ namespace Win8Client
             player2Name = string.Join(", ", player2Uniques.Select(c => c.name));
 
             return;
-        }
-
-        private bool CanSimulateStrategies(StrategyDescription strategyDescription)
-        {
-            foreach (var descr in strategyDescription.CardAcceptanceDescriptions)
-            {
-                if (!descr.CanSimulateCard.Value)
-                    return false;
-            }
-            return true;
-        }
+        }    
 
         private bool CanSimulateStrategies()
         {
-            return CanSimulateStrategies(this.player1Strategy) && CanSimulateStrategies(this.player2Strategy);
+            return this.player1Strategy.CanSimulate() && this.player2Strategy.CanSimulate();
         }
 
         public void SimulateGameButtonClick()
@@ -462,6 +507,78 @@ namespace Win8Client
             public double TiePercent;
         }
 
+        public bool CanSimulateCardsInSelection()
+        {
+            foreach(var card in this.selectedCards)
+            {
+                if (!card.CanSimulate)
+                    return false;
+            }
+            return true;
+        }
+
+        public void UpdateSimulationStep()
+        {
+            this.NextSimulationStep.Value = EvaluateNextSimulationStep();
+        }
+
+        void UpdateSimulationStepEvent(object sender, PropertyChangedEventArgs e)
+        {
+            this.UpdateSimulationStep();
+        }
+
+        public SimulationStep EvaluateNextSimulationStep()
+        {
+            bool hasStrategy1 = this.player1Strategy.CardAcceptanceDescriptions.Any();
+            bool hasStrategy2 = this.player2Strategy.CardAcceptanceDescriptions.Any();
+            bool hasSelection = this.IsSelectionPresentOnCurrentDeck.Value;
+
+            if (!hasStrategy1 && !hasStrategy2 && !hasSelection)
+                return SimulationStep.MakeSelection;
+
+            if (!hasStrategy1)
+            {
+                if (!hasSelection)
+                    return SimulationStep.MakeSelectionForPlayer1;
+
+                if (!CanSimulateCardsInSelection())
+                    return SimulationStep.SelectedCardCanNotBeSimulated;
+
+                return SimulationStep.AddToPlayer1;
+            }
+                
+            if (!this.player1Strategy.CanSimulate())
+                return SimulationStep.Player1CanNotBeSimulated;
+
+            if (!hasStrategy2)
+            {
+                if (!hasSelection)
+                    return SimulationStep.MakeSelectionForPlayer2;
+
+                if (!CanSimulateCardsInSelection())
+                    return SimulationStep.SelectedCardCanNotBeSimulated;
+
+                return SimulationStep.AddToPlayer2;
+            }
+
+            if (!this.player2Strategy.CanSimulate())
+                return SimulationStep.Player2CanNotBeSimulated;
+
+            return SimulationStep.ReviewAndSimulate;
+        }
+    }
+
+    public enum SimulationStep
+    {        
+        MakeSelection,
+        MakeSelectionForPlayer1,
+        AddToPlayer1,
+        Player1CanNotBeSimulated,
+        SelectedCardCanNotBeSimulated,
+        MakeSelectionForPlayer2,
+        AddToPlayer2,
+        Player2CanNotBeSimulated,
+        ReviewAndSimulate
     }
 
     public enum PageConfig
@@ -477,29 +594,5 @@ namespace Win8Client
     {
         Settings,
         Back        
-    }    
-
-    public class DefaultCurrent
-        : DependencyPolicy<PageConfig>
-    {
-        public PageConfig DefaultValue
-        {
-            get
-            {
-                return PageConfig.CurrentDeck;
-            }
-        }
-    }
-
-    public class DefaultSettingsButton
-        : DependencyPolicy<SettingsButtonVisibility>
-    {
-        public SettingsButtonVisibility DefaultValue
-        {
-            get
-            {
-                return SettingsButtonVisibility.Settings;
-            }
-        }
-    }
+    }        
 }

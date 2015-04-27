@@ -171,12 +171,7 @@ namespace Win8Client
         {            
             this.appDataContext.CurrentPageConfig.Value =
                 this.appDataContext.CurrentPageConfig.Value == PageConfig.CurrentDeck ? PageConfig.AllCards: PageConfig.CurrentDeck;
-        }
-
-        private void StrategyButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.appDataContext.CurrentPageConfig.Value = PageConfig.Strategy;
-        }
+        }        
 
         private void SaveReportButton_Click(object sender, RoutedEventArgs e)
         {
@@ -213,7 +208,7 @@ namespace Win8Client
             var uri = new Uri(uriToLaunch);
             Windows.System.Launcher.LaunchUriAsync(uri);
         }
-    }          
+    }             
 }                    
                      
                      

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 
@@ -80,6 +81,14 @@ namespace Win8Client
         public bool IsReaction { get; private set; }
         public bool IsDuration { get; private set; }
         private bool isWebCard;
+
+        public bool CanSimulate
+        {
+            get
+            {
+                return !Dominion.Strategy.MissingDefaults.UnImplementedKingdomCards().Contains(this.dominionCard);
+            }
+        }
 
         public string ImageUrl
         {

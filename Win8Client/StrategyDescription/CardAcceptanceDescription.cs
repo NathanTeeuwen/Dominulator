@@ -54,7 +54,7 @@ namespace Win8Client
 
         void Card_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            this.CanSimulateCard.Value = !Dominion.Strategy.MissingDefaults.UnImplementedKingdomCards().Contains(this.Card.Value.dominionCard);
+            this.CanSimulateCard.Value = this.Card.Value.CanSimulate;
         }
 
         void CountSource_PropertyChanged(object sender, PropertyChangedEventArgs e)

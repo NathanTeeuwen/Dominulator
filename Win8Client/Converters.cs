@@ -75,7 +75,7 @@ namespace Win8Client
         {
             throw new NotImplementedException();
         }
-    }
+    }    
 
     public class CurrentDeckVisibilityConverter
       : IValueConverter
@@ -180,7 +180,21 @@ namespace Win8Client
         {
             throw new NotImplementedException();
         }
-    }       
+    }
+
+    public class EnumVisibility
+      : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            return value.ToString() == (string)parameter ? Visibility.Visible : Visibility.Collapsed;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
 
     public class EnumToIndexConverter<T, T2> : IValueConverter
     {

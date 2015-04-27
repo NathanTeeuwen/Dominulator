@@ -48,11 +48,13 @@ namespace Win8Client
         private void ClearStrategy1ButtonClick(object sender, RoutedEventArgs e)
         {
             this.appDataContext.player1Strategy.CardAcceptanceDescriptions.Clear();
+            this.appDataContext.UpdateSimulationStep();
         }
 
         private void ClearStrategy2ButtonClick(object sender, RoutedEventArgs e)
         {
             this.appDataContext.player2Strategy.CardAcceptanceDescriptions.Clear();
+            this.appDataContext.UpdateSimulationStep();
         }
 
         private void SimulateGameButtonClick(object sender, RoutedEventArgs e)

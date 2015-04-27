@@ -38,5 +38,15 @@ namespace Win8Client
 
             return result;
         }
+
+        public bool CanSimulate()
+        {                    
+            foreach (var descr in this.CardAcceptanceDescriptions)
+            {
+                if (!descr.CanSimulateCard.Value)
+                    return false;
+            }
+            return true;        
+        }
     }
 }

@@ -80,6 +80,7 @@ namespace Win8Client
 
                 this.appDataContext.player1Strategy.CardAcceptanceDescriptions.Clear();
                 this.appDataContext.player2Strategy.CardAcceptanceDescriptions.Clear();
+                this.appDataContext.UpdateSimulationStep();
             }
             
             if (this.CurrentCardsChanged != null)
@@ -121,7 +122,7 @@ namespace Win8Client
             this.appDataContext.EventCards.GenerateRandom(cEventsToInclude, ref baneCard, allEventsCards, itemsToReplace: selectedItems);
         }
 
-        private void RandomizeButtonClick(object sender, RoutedEventArgs e)
+        private void RefreshButtonClick(object sender, RoutedEventArgs e)
         {
             Randomize10Cards();
         }        
@@ -181,6 +182,7 @@ namespace Win8Client
             AddSelectedCardsToStrateyDescription(this.appDataContext.player1Strategy);
             this.appDataContext.IsPlayer1StrategyChecked.Value = true;
             this.appDataContext.IsPlayer2StrategyChecked.Value = false;
+            this.appDataContext.UpdateSimulationStep();
         }
 
         private void AddToStrategy2Click(object sender, RoutedEventArgs e)
@@ -188,6 +190,7 @@ namespace Win8Client
             AddSelectedCardsToStrateyDescription(this.appDataContext.player2Strategy);
             this.appDataContext.IsPlayer1StrategyChecked.Value = false;
             this.appDataContext.IsPlayer2StrategyChecked.Value = true;
+            this.appDataContext.UpdateSimulationStep();
         }
 
         private void SortCurrentByName(object sender, RoutedEventArgs e)
@@ -208,9 +211,25 @@ namespace Win8Client
             this.appDataContext.CurrentDeck.UpdateUIFromUIThread();
         }
 
-        private void CurrentCardsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void SelectedCards_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            this.appDataContext.IsSelectionPresentOnCurrentDeck.Value = this.CurrentCardsListView.SelectedItems.Any();
-        }        
+            this.appDataContext.selectedCards.Clear();
+            foreach (var item in this.GetSelectedCardsAndClear(fShouldClear:false))
+            {
+                this.appDataContext.selectedCards.Add(DominionCard.Create(item));
+            }
+            this.appDataContext.IsSelectionPresentOnCurrentDeck.Value = this.appDataContext.selectedCards.Any();
+            this.appDataContext.UpdateSimulationStep();
+            this.appDataContext.UpdatePlayerButtonVisibilities();
+
+            this.appDataContext.HintSelectedCardNotSimulatedButtonVisible.Value = 
+                this.appDataContext.IsSelectionPresentOnCurrentDeck.Value &&
+                !this.appDataContext.CanSimulateCardsInSelection();
+        }
+
+        private void StrategyButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.appDataContext.CurrentPageConfig.Value = PageConfig.Strategy;
+        }
     }
 }

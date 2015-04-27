@@ -48,7 +48,7 @@ namespace Win8Client
  
     public class DependencyObjectDeclWithSettings<T, T2>
         : DependencyObjectDecl<T, T2>
-        where T2 : DependencyPolicy<T>, new()
+        where T2 : DefaultValuePolicy<T>, new()
     {
         public readonly string settingsName;
 
@@ -78,7 +78,7 @@ namespace Win8Client
 
     public class DependencyObjectDecl<T, T2>
         : DependencyObject, INotifyPropertyChanged
-        where T2 : DependencyPolicy<T>, new()
+        where T2 : DefaultValuePolicy<T>, new()
     {
         private readonly object parent;
         public event PropertyChangedEventHandler PropertyChanged;
@@ -119,8 +119,8 @@ namespace Win8Client
             }
         }
     }
-
-    public interface DependencyPolicy<T>
+   
+    public interface DefaultValuePolicy<T>
     {
         T DefaultValue
         {
@@ -129,7 +129,7 @@ namespace Win8Client
     }
 
     public class DefaultTrue
-        : DependencyPolicy<bool>
+        : DefaultValuePolicy<bool>
     {
         public bool DefaultValue
         {
@@ -141,7 +141,7 @@ namespace Win8Client
     }
 
     public class DefaultFalse
-        : DependencyPolicy<bool>
+        : DefaultValuePolicy<bool>
     {
         public bool DefaultValue
         {
@@ -153,7 +153,7 @@ namespace Win8Client
     }
 
     public class DefaultSplit4
-        : DependencyPolicy<Dominion.StartingCardSplit>
+        : DefaultValuePolicy<Dominion.StartingCardSplit>
     {
         public Dominion.StartingCardSplit DefaultValue
         {
@@ -165,7 +165,7 @@ namespace Win8Client
     }
 
     public class DefaultEmptyString
-        : DependencyPolicy<string>
+        : DefaultValuePolicy<string>
     {
         public string DefaultValue
         {
@@ -177,7 +177,7 @@ namespace Win8Client
     }
 
     public class DefaultDoubleZero
-        : DependencyPolicy<double>
+        : DefaultValuePolicy<double>
     {
         public double DefaultValue
         {
@@ -189,7 +189,7 @@ namespace Win8Client
     }
 
     public class DefaultEmptyStrategyDescription
-        : DependencyPolicy<StrategyDescription>
+        : DefaultValuePolicy<StrategyDescription>
     {
         public StrategyDescription DefaultValue
         {
@@ -198,5 +198,41 @@ namespace Win8Client
                 return new StrategyDescription();
             }
         }
-    }   
+    }
+
+    public class DefaultCurrent
+        : DefaultValuePolicy<PageConfig>
+    {
+        public PageConfig DefaultValue
+        {
+            get
+            {
+                return PageConfig.CurrentDeck;
+            }
+        }
+    }
+
+    public class DefaultSettingsButton
+        : DefaultValuePolicy<SettingsButtonVisibility>
+    {
+        public SettingsButtonVisibility DefaultValue
+        {
+            get
+            {
+                return SettingsButtonVisibility.Settings;
+            }
+        }
+    }
+
+    public class DefaultSimulationStep
+        : DefaultValuePolicy<SimulationStep>
+    {
+        public SimulationStep DefaultValue
+        {
+            get
+            {
+                return SimulationStep.MakeSelection;
+            }
+        }
+    }
 }

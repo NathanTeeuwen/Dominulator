@@ -55,6 +55,7 @@ namespace Win8Client
         private void ClearStrategyButtonClick(object sender, RoutedEventArgs e)
         {
             this.appDataContext.currentStrategy.Value.CardAcceptanceDescriptions.Clear();
+            this.appDataContext.UpdateSimulationStep();
         }
 
         private void SimulateGameButtonClick(object sender, RoutedEventArgs e)
