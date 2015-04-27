@@ -22,8 +22,8 @@
             <local:CurrentCardVisibilityConverter x:Key="CurrentCardVisibilityConverter" />
             <local:AllCardVisibilityConverter x:Key="AllCardVisibilityConverter" />
             <local:SettingsVisibilityConverter x:Key="SettingsVisibilityConverter" />
-            <local:StrategyVisibilityConverter x:Key="StrategyVisibilityConverter" />            
-            
+            <local:StrategyVisibilityConverter x:Key="StrategyVisibilityConverter" />
+            <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
         </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>            
@@ -48,8 +48,9 @@
                 <StackPanel Grid.Row="0" Orientation="Horizontal" Visibility="{Binding PageConfig.Value, Converter={StaticResource PageConfigDesignVisibilityConverter}}">                   
                     <local:CurrentDeckPicker x:Name="CurrentCards" Visibility="{Binding CardVisibility.Value, Converter={StaticResource CurrentCardVisibilityConverter}}"/>
                     <local:AllCardsPicker x:Name="AllCards" Visibility="{Binding CardVisibility.Value, Converter={StaticResource AllCardVisibilityConverter}}"/>
+                    <local:SideBySideStrategyView Visibility="{Binding UseSideBySideStrategy.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
                     <local:Settings Visibility="{Binding CardVisibility.Value, Converter={StaticResource SettingsVisibilityConverter}}"/>
-                    <local:Strategies Visibility="{Binding CardVisibility.Value, Converter={StaticResource StrategyVisibilityConverter}}"/>
+                    <local:DualStrategyView Visibility="{Binding CardVisibility.Value, Converter={StaticResource StrategyVisibilityConverter}}"/>
                 </StackPanel>
                 <WebView Grid.Row="0" x:Name="ResultsWebView" Width="Auto" Height="Auto" Visibility="{Binding PageConfig.Value, Converter={StaticResource PageConfigStrategyReportVisibilityConverter}}"></WebView>
             </Grid>            

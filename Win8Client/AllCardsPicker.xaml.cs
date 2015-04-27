@@ -136,7 +136,7 @@ namespace Win8Client
 
         private void DragItemsStarting(object sender, DragItemsStartingEventArgs e)
         {
-            Win8Client.Strategies.PrepareDragAndDrop(e);
+            Win8Client.SideBySideStrategyView.PrepareDragAndDrop(e);
             foreach (var item in e.Items)
             {
                 if (!this.AllCardsListView.SelectedItems.Contains(item))

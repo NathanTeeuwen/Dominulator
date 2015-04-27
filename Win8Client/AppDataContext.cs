@@ -332,6 +332,123 @@ namespace Win8Client
             this.PageConfig.Value = Win8Client.PageConfig.StrategyReport;
         }
 
+        private void GetStrategyNames(Dominion.Strategy.Description.StrategyDescription player1Descr, Dominion.Strategy.Description.StrategyDescription player2Descr, out string player1Name, out string player2Name)
+        {
+            var player1Uniques = new HashSet<Dominion.Card>();
+            var player2Uniques = new HashSet<Dominion.Card>();
+
+            foreach (Dominion.Card card in player1Descr.purchaseOrderDescription.descriptions.Select(descr => descr.card))
+            {
+                player1Uniques.Add(card);
+            }
+
+            foreach (Dominion.Card card in player2Descr.purchaseOrderDescription.descriptions.Select(descr => descr.card))
+            {
+                player2Uniques.Add(card);
+                player1Uniques.Remove(card);
+            }
+
+            foreach (Dominion.Card card in player1Descr.purchaseOrderDescription.descriptions.Select(descr => descr.card))
+            {
+                player2Uniques.Remove(card);
+            }
+
+
+            player1Name = string.Join(", ", player1Uniques.Select(c => c.name));
+            player2Name = string.Join(", ", player2Uniques.Select(c => c.name));
+
+            return;
+        }
+
+        private bool CanSimulateStrategies(StrategyDescription strategyDescription)
+        {
+            foreach (var descr in strategyDescription.CardAcceptanceDescriptions)
+            {
+                if (!descr.CanSimulateCard.Value)
+                    return false;
+            }
+            return true;
+        }
+
+        private bool CanSimulateStrategies()
+        {
+            return CanSimulateStrategies(this.player1Strategy) && CanSimulateStrategies(this.player2Strategy);
+        }
+
+        public void SimulateGameButtonClick()
+        {
+            if (!CanSimulateStrategies())
+                return;
+
+            this.StrategyResultsAvailable.Value = false;
+
+            var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();
+
+            Dominion.Strategy.Description.StrategyDescription player1Descr = this.player1Strategy.ConvertToDominionStrategy();
+            Dominion.Strategy.Description.StrategyDescription player2Descr = this.player2Strategy.ConvertToDominionStrategy();
+
+            Dominion.GameConfig gameConfig = this.GetGameConfig();
+
+            System.Diagnostics.Debug.WriteLine("Player 1: ");
+            System.Diagnostics.Debug.WriteLine(player1Descr.ToString());
+            System.Diagnostics.Debug.WriteLine("Player 2: ");
+            System.Diagnostics.Debug.WriteLine(player2Descr.ToString());
+
+            System.Threading.Tasks.Task<StrategyUIResults>.Factory.StartNew(() =>
+            {
+
+                string player1nameAppend, player2nameAppend;
+                GetStrategyNames(player1Descr, player2Descr, out player1nameAppend, out player2nameAppend);
+
+                string player1Name = "Player 1 " + (!string.IsNullOrEmpty(player1nameAppend) ? "(" + player1nameAppend + ")" : "");
+                string player2Name = "Player 2 " + (!string.IsNullOrEmpty(player1nameAppend) ? "(" + player2nameAppend + ")" : "");
+
+                var playerActions = new Dominion.Strategy.PlayerAction[] 
+                {
+                    player1Descr.ToPlayerAction(player1Name),
+                    player2Descr.ToPlayerAction(player2Name)
+                };
+
+                bool rotateWhoStartsFirst = true;
+                int numberOfGames = 1000;
+
+                var strategyComparison = new Dominion.Data.StrategyComparison(playerActions, gameConfig, rotateWhoStartsFirst, numberOfGames);
+
+                Dominion.Data.StrategyComparisonResults strategyComparisonResults = strategyComparison.ComparePlayers(randomSeed: MainPage.random.Next());
+                return new StrategyUIResults()
+                {
+                    strategyComparisonResults = strategyComparisonResults,
+                    Player1Name = player1Name,
+                    Player2Name = player2Name,
+                    Player1WinPercent = strategyComparisonResults.PlayerWinPercent(0),
+                    Player2WinPercent = strategyComparisonResults.PlayerWinPercent(1),
+                    TiePercent = strategyComparisonResults.TiePercent,
+                };
+            }).ContinueWith(async (continuation) =>
+            {
+                var results = (StrategyUIResults)continuation.Result;
+
+                this.strategyReportDirty = true;
+                this.strategyComparisonResults = results.strategyComparisonResults;
+                this.Player1Name.Value = results.Player1Name;
+                this.Player2Name.Value = results.Player2Name;
+                this.Player1WinPercent.Value = results.Player1WinPercent;
+                this.Player2WinPercent.Value = results.Player2WinPercent;
+                this.TiePercent.Value = results.TiePercent;
+                this.StrategyResultsAvailable.Value = true;
+            }, uiScheduler);
+        }
+
+        private class StrategyUIResults
+        {
+            public Dominion.Data.StrategyComparisonResults strategyComparisonResults;
+            public string Player1Name;
+            public string Player2Name;
+            public double Player1WinPercent;
+            public double Player2WinPercent;
+            public double TiePercent;
+        }
+
     }
 
     public enum CardVisibility

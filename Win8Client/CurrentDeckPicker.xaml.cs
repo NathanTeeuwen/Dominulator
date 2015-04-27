@@ -57,7 +57,7 @@ namespace Win8Client
 
         private void CurrentCardsListView_DragItemsStarting(object sender, DragItemsStartingEventArgs e)
         {
-            Win8Client.Strategies.PrepareDragAndDrop(e);
+            Win8Client.SideBySideStrategyView.PrepareDragAndDrop(e);
             this.CurrentCardsListView.SelectedItems.Clear();
         }     
 

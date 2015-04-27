@@ -1,0 +1,37 @@
+﻿<UserControl
+    x:Class="Win8Client.SideBySideStrategyView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Win8Client"
+    xmlns:dominion="using:Dominion"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400"
+    Name="Page">
+    <UserControl.Resources>
+        <ResourceDictionary Source="StandardStyles.xaml" />
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.Resources>
+            <local:BoolToInVisibilityConverter x:Key="BoolToInVisibilityConverter" />
+            <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+            <local:OpenningSplitConverter x:Key="OpenningSplitConverter" />
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <local:SimulationResults Grid.Row="0"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" >
+            <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer1StrategyChecked.Value, Mode=TwoWay}" Checked="PlayerRadioButtonChecked">Player 1</RadioButton>
+            <RadioButton GroupName="PlayerStrategyRadioGroup" IsChecked="{Binding IsPlayer2StrategyChecked.Value, Mode=TwoWay}" Checked="PlayerRadioButtonChecked2">Player 2</RadioButton>
+            <Button Style="{StaticResource ClearAppBarButtonStyle}" BorderThickness="0" Click="ClearStrategyButtonClick" />
+            <Button Style="{StaticResource SimulateAppBarButtonStyle}" BorderThickness="0" Click="SimulateGameButtonClick"/>
+        </StackPanel>
+        <local:Strategy Grid.Row="2" DataContext="{Binding CurrentStrategy.Value}" AppDataContext="{Binding ElementName=Page, Path=AppDataContext}"/>
+    </Grid>    
+</UserControl>

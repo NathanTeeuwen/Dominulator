@@ -135,14 +135,17 @@
       <DependentUpon>CurrentDeckPicker.xaml</DependentUpon>
     </Compile>
     <Compile Include="DominionCard.cs" />
+    <Compile Include="SideBySideStrategyView.xaml.cs">
+      <DependentUpon>SideBySideStrategyView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
     <Compile Include="SimulationResults.xaml.cs">
       <DependentUpon>SimulationResults.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Strategies.xaml.cs">
-      <DependentUpon>Strategies.xaml</DependentUpon>
+    <Compile Include="DualStrategyView.xaml.cs">
+      <DependentUpon>DualStrategyView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Strategy.xaml.cs">
       <DependentUpon>Strategy.xaml</DependentUpon>
@@ -181,6 +184,10 @@
     <Page Include="CurrentDeckPicker.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SideBySideStrategyView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -524,7 +531,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Strategies.xaml">
+    <Page Include="DualStrategyView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
