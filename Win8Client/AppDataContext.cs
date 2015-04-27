@@ -459,7 +459,7 @@ namespace Win8Client
                 GetStrategyNames(player1Descr, player2Descr, out player1nameAppend, out player2nameAppend);
 
                 string player1Name = "Player 1 " + (!string.IsNullOrEmpty(player1nameAppend) ? "(" + player1nameAppend + ")" : "");
-                string player2Name = "Player 2 " + (!string.IsNullOrEmpty(player1nameAppend) ? "(" + player2nameAppend + ")" : "");
+                string player2Name = "Player 2 " + (!string.IsNullOrEmpty(player2nameAppend) ? "(" + player2nameAppend + ")" : "");
 
                 var playerActions = new Dominion.Strategy.PlayerAction[] 
                 {
