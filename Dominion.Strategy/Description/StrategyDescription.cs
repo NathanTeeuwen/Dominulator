@@ -57,6 +57,9 @@ namespace Dominion.Strategy.Description
 
         private int GetDefaultCountForCard(Card card)
         {
+            if (MapCardToDefaultCount.ContainsKey(card))
+                return MapCardToDefaultCount[card];
+
             if (card.isTreasure)
             {
                 return card == Cards.Potion ? 1 : CountAsManyAsPossible;
@@ -75,6 +78,20 @@ namespace Dominion.Strategy.Description
 
             return 1;
         }
+
+        static private Dictionary<Card, int> MapCardToDefaultCount = new Dictionary<Card, int>()
+        {
+            { Cards.Loan, 1},
+            { Cards.Upgrade, 1},
+            { Cards.Warehouse, 1},
+            { Cards.Dungeon, 1},
+            { Cards.Stables, CountAsManyAsPossible},
+            { Cards.Cellar, 1},
+            { Cards.Contraband, 1},
+            { Cards.CounterFeit, 2},
+            { Cards.Forager, 2},
+            { Cards.Rats, 1}
+        };
 
         public static StrategyDescription GetDefaultDescription(GameConfig gameConfig)
         {
