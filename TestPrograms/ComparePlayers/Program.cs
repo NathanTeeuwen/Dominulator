@@ -17,14 +17,8 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                StrategyDescription descr1 = StrategyDescription.GetDefaultPurchaseDescription().AddCardToPurchaseOrder(Cards.StoneMason);
-                StrategyDescription descr2 = StrategyDescription.GetDefaultPurchaseDescription().AddCardToPurchaseOrder(Cards.SeaHag).AddCardToPurchaseOrder(Cards.Sage);
-                
-                //var player1 = Strategies.BigMoneyWithCard.Player(Cards.TreasureTrove, cardCount:10);
-                //var player2 = Strategies.BigMoneyWithCard.Player(Cards.Gold);                
-
-                var player1 = descr1.ToPlayerAction("young witch");
-                var player2 = descr2.ToPlayerAction("sea hag");
+                var player1 = Strategies.BigMoneyWithCard.Player(Cards.TreasureTrove, cardCount:10);
+                var player2 = Strategies.BigMoneyWithCard.Player(Cards.Gold);                                
                 
                 var builder = new GameConfigBuilder();
                 builder.SetBaneCard(Cards.Sage);
