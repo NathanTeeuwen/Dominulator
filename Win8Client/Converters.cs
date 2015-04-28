@@ -248,5 +248,17 @@ namespace Win8Client
         {
 
         }
-    }      
+    }
+
+    public class EditingDescriptionConverter
+        : EnumToIndexConverter<PriorityDescription, int>
+    {
+        public EditingDescriptionConverter()
+            : base(
+                Pair(PriorityDescription.PurchaseOrder, 0),
+                Pair(PriorityDescription.TrashOrder, 1))
+        {
+
+        }
+    }
 }

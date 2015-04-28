@@ -1,17 +1,46 @@
 ﻿
 namespace Win8Client
 {
+    public enum PriorityDescription
+    {
+        PurchaseOrder,
+        TrashOrder
+    }
+
     public class StrategyDescription
     {
         public System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> PurchaseOrderDescriptions { get; private set; }
         public System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> TrashOrderDescriptions { get; private set; }   
         public DependencyObjectDecl<Dominion.StartingCardSplit, DefaultSplit4> StartingCardSplit { get; private set; }
+        public DependencyObjectDecl<PriorityDescription, DefaultPriorityDescription> EditingDescription { get; private set; }
+        public DependencyObjectDecl<System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription>, DefaultObservableCollection> CurrentDescription { get; private set; }
         
         public StrategyDescription()
         {
             this.PurchaseOrderDescriptions = new System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription>();
             this.TrashOrderDescriptions = new System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription>();
-            this.StartingCardSplit = new DependencyObjectDecl<Dominion.StartingCardSplit, DefaultSplit4>(this);            
+            this.StartingCardSplit = new DependencyObjectDecl<Dominion.StartingCardSplit, DefaultSplit4>(this);
+            this.EditingDescription = new DependencyObjectDecl<PriorityDescription, DefaultPriorityDescription>(this);
+            this.CurrentDescription = new DependencyObjectDecl<System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription>, DefaultObservableCollection>(this);
+
+            this.EditingDescription.PropertyChanged += EditingDescription_PropertyChanged;
+
+            SetCurrentDescription();
+        }
+
+        void EditingDescription_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            SetCurrentDescription();
+        }
+
+        private void SetCurrentDescription()
+        {
+            switch(this.EditingDescription.Value)
+            {
+                case PriorityDescription.PurchaseOrder: this.CurrentDescription.Value = this.PurchaseOrderDescriptions; break;
+                case PriorityDescription.TrashOrder: this.CurrentDescription.Value = this.TrashOrderDescriptions; break;
+                default: throw new System.Exception();
+            }
         }
 
         public void PopulateFrom(Dominion.Strategy.Description.StrategyDescription descr)

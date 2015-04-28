@@ -11,14 +11,19 @@
     Name="Page">
 
     <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" ZoomMode="Disabled">
-        <ScrollViewer.Resources>
+        <ScrollViewer.Resources>            
             <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+            <local:EditingDescriptionConverter x:Key="EditingDescriptionConverter" />
             <local:OpenningSplitConverter x:Key="OpenningSplitConverter" />
         </ScrollViewer.Resources>
         <StackPanel Background="Transparent" AllowDrop="True" Drop="CurrentCardsListView_Drop">
             <StackPanel Margin="0,20,0,0" Orientation="Horizontal">
-                <TextBlock VerticalAlignment="Center" FontSize="18">Starting Coppers:</TextBlock>
-                <ComboBox Margin="20,0,0,0" SelectedIndex="{Binding StartingCardSplit.Value, Converter={StaticResource OpenningSplitConverter}, Mode=TwoWay}" >
+                <ComboBox SelectedIndex="{Binding EditingDescription.Value, Converter={StaticResource EditingDescriptionConverter}, Mode=TwoWay}">
+                    <ComboBoxItem>Purchase Order</ComboBoxItem>
+                    <ComboBoxItem>Trash Order</ComboBoxItem>
+                </ComboBox>
+                <TextBlock Margin="10,0,0,0" VerticalAlignment="Center" FontSize="18">Starting Coppers:</TextBlock>
+                <ComboBox Margin="5,0,0,0" SelectedIndex="{Binding StartingCardSplit.Value, Converter={StaticResource OpenningSplitConverter}, Mode=TwoWay}" >
                     <ComboBoxItem>Random</ComboBoxItem>
                     <ComboBoxItem>2</ComboBoxItem>
                     <ComboBoxItem>3</ComboBoxItem>
@@ -29,7 +34,7 @@
 
             <!-- items control of System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> -->
             <ListView Margin="0,20,0,0" Name="CurrentStrategyListView"  
-                          ItemsSource="{Binding PurchaseOrderDescriptions}" 
+                          ItemsSource="{Binding CurrentDescription.Value}" 
                           CanReorderItems="True" 
                           AllowDrop="True"
                           SelectionMode="None">

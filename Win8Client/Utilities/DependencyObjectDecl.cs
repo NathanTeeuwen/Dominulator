@@ -188,6 +188,31 @@ namespace Win8Client
         }
     }
 
+    public class DefaultObservableCollection
+        : DefaultValuePolicy<System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription>>
+    {
+        public System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> DefaultValue
+        {
+            get
+            {
+                return null;
+            }
+        }
+    }
+
+
+    public class DefaultPriorityDescription
+        : DefaultValuePolicy<PriorityDescription>
+    {
+        public PriorityDescription DefaultValue
+        {
+            get
+            {
+                return PriorityDescription.PurchaseOrder;
+            }
+        }
+    }
+
     public class DefaultEmptyStrategyDescription
         : DefaultValuePolicy<StrategyDescription>
     {
