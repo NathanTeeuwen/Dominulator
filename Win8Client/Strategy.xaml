@@ -108,6 +108,7 @@
                                         </ComboBox>
                                     </StackPanel>
                                 </StackPanel>
+                                <local:CardAcceptanceButton Content="x" Click="CloseButton_Click" StrategyDescription="{Binding ElementName=CurrentStrategyListView, Path=DataContext}"/>
                             </StackPanel>
                             <StackPanel Grid.Column="1" VerticalAlignment = "Center" Orientation="Horizontal" Visibility="{Binding CanSimulateCard.Value, Converter={StaticResource BoolToInVisibilityConverter}}">
                                 <TextBlock Padding="5,0,0,0" Text="{Binding Card.Value.Name}"></TextBlock>

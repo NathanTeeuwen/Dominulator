@@ -65,7 +65,44 @@ namespace Win8Client
             Dominion.Strategy.Description.StrategyDescription strategy = this.StrategyDescription.ConvertToDominionStrategy();
             strategy = strategy.AddCardsToPurchaseOrder(cards);
             this.StrategyDescription.PopulateFrom(strategy);
-        }             
+        }
 
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            var button = e.OriginalSource as CardAcceptanceButton;
+            CardAcceptanceDescription descr = button.CardAcceptanceDescription;
+            StrategyDescription strategy = button.StrategyDescription;
+            strategy.CardAcceptanceDescriptions.Remove(descr);
+        }             
+    }
+
+    public class CardAcceptanceButton
+        : Button
+    {
+        public static readonly DependencyProperty DependencyProperty = DependencyProperty.Register(
+            "StrategyDescription",
+            typeof(StrategyDescription),
+            typeof(CardAcceptanceButton), new PropertyMetadata(null));
+
+        public StrategyDescription StrategyDescription
+        {
+            get
+            {
+                return (StrategyDescription)this.GetValue(DependencyProperty);
+            }
+
+            set
+            {
+                this.SetValue(DependencyProperty, value);
+            }
+        }
+
+        public CardAcceptanceDescription CardAcceptanceDescription
+        {
+            get
+            {
+                return (CardAcceptanceDescription)this.DataContext;
+            }
+        }
     }
 }
