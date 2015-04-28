@@ -29,7 +29,7 @@
 
             <!-- items control of System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> -->
             <ListView Margin="0,20,0,0" Name="CurrentStrategyListView"  
-                          ItemsSource="{Binding CardAcceptanceDescriptions}" 
+                          ItemsSource="{Binding PurchaseOrderDescriptions}" 
                           CanReorderItems="True" 
                           AllowDrop="True"
                           SelectionMode="None">

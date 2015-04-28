@@ -6,20 +6,25 @@ namespace Dominion.Strategy.Description
     public class StrategyDescription
     {
         public readonly PickByPriorityDescription purchaseOrderDescription;
+        public readonly PickByPriorityDescription trashOrderDescription;
 
-        public StrategyDescription()
+        public bool IsEmptyPurchaseOrder
         {
-            this.purchaseOrderDescription = new PickByPriorityDescription(new CardAcceptanceDescription[0]);
+            get
+            {
+                return this.purchaseOrderDescription.descriptions.Length == 0;
+            }
+            
         }
+            
 
-        public StrategyDescription(PickByPriorityDescription purchaseOrderDescription)
+        public StrategyDescription(
+            PickByPriorityDescription purchaseOrderDescription,
+            PickByPriorityDescription trashOrderDescription
+            )
         {
             this.purchaseOrderDescription = purchaseOrderDescription;
-        }
-
-        public StrategyDescription(params CardAcceptanceDescription[] purchaseOrder)
-        {
-            this.purchaseOrderDescription = new PickByPriorityDescription(purchaseOrder);
+            this.trashOrderDescription = trashOrderDescription;
         }
 
         public Dominion.Strategy.PlayerAction ToPlayerAction(string playerName)
@@ -31,7 +36,9 @@ namespace Dominion.Strategy.Description
 
         public StrategyDescription AddCardToPurchaseOrder(Card card, int count)
         {
-            return new StrategyDescription(this.purchaseOrderDescription.AddCardInBestLocation(card, count));
+            return new StrategyDescription(
+                this.purchaseOrderDescription.AddCardInBestLocation(card, count),
+                this.trashOrderDescription);
         }
 
         public StrategyDescription AddCardsToPurchaseOrder(Card[] cards)
@@ -39,12 +46,7 @@ namespace Dominion.Strategy.Description
             var result = this;
 
             foreach (var card in cards)
-            {
-                if (result.purchaseOrderDescription.descriptions.Length == 0)
-                {
-                    result = Dominion.Strategy.Description.StrategyDescription.GetDefaultPurchaseDescription();
-                }
-
+            {               
                 result = result.AddCardToPurchaseOrder(card, GetDefaultCountForCard(card));
             }
 
@@ -74,16 +76,23 @@ namespace Dominion.Strategy.Description
             return 1;
         }
 
-        public static StrategyDescription GetDefaultPurchaseDescription()
+        public static StrategyDescription GetDefaultDescription(GameConfig gameConfig)
         {
             var result = new StrategyDescription(
+                GetDefaultPurchaseOrder(gameConfig),
+                GetDefaultTrashDescription(gameConfig));
+                        
+            return result;
+        }
+
+        public static PickByPriorityDescription GetDefaultPurchaseOrder(GameConfig gameConfig)
+        {
+            return new PickByPriorityDescription(
                 CardAcceptanceDescription.For(Cards.Province, CountSource.CountAllOwned, Cards.Gold, Comparison.GreaterThanEqual, 2),
                 CardAcceptanceDescription.For(Cards.Duchy, CountSource.CountOfPile, Cards.Province, Comparison.LessThanEqual, 4),
                 CardAcceptanceDescription.For(Cards.Estate, CountSource.CountOfPile, Cards.Province, Comparison.LessThanEqual, 2),
                 CardAcceptanceDescription.For(Cards.Gold),                
                 CardAcceptanceDescription.For(Cards.Silver));
-                        
-            return result;
         }
 
         public static PickByPriorityDescription GetDefaultTrashDescription(GameConfig gameConfig)

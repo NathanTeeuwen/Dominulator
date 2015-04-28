@@ -72,7 +72,7 @@ namespace Win8Client
             var button = e.OriginalSource as CardAcceptanceButton;
             CardAcceptanceDescription descr = button.CardAcceptanceDescription;
             StrategyDescription strategy = button.StrategyDescription;
-            strategy.CardAcceptanceDescriptions.Remove(descr);
+            strategy.PurchaseOrderDescriptions.Remove(descr);
         }             
     }
 

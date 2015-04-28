@@ -6,7 +6,7 @@ namespace Dominion.Strategy.Description
     {
         public readonly CardAcceptanceDescription[] descriptions;
 
-        public PickByPriorityDescription(CardAcceptanceDescription[] descriptions)
+        public PickByPriorityDescription(params CardAcceptanceDescription[] descriptions)
         {
             this.descriptions = descriptions;
         }

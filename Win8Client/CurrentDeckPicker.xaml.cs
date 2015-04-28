@@ -78,8 +78,8 @@ namespace Win8Client
                 this.appDataContext.UseShelters.Value = ShouldIncludeExpansion(Dominion.Expansion.DarkAges);
                 ReRollEvents();
 
-                this.appDataContext.player1Strategy.CardAcceptanceDescriptions.Clear();
-                this.appDataContext.player2Strategy.CardAcceptanceDescriptions.Clear();
+                this.appDataContext.player1Strategy.PurchaseOrderDescriptions.Clear();
+                this.appDataContext.player2Strategy.PurchaseOrderDescriptions.Clear();
                 this.appDataContext.UpdateSimulationStep();
             }
             
@@ -173,6 +173,10 @@ namespace Win8Client
         {
             Dominion.Card[] cards = GetSelectedCardsAndClear();
             var originalDescription = strategyDescription.ConvertToDominionStrategy();
+            if (originalDescription.IsEmptyPurchaseOrder)
+            {
+                originalDescription = Dominion.Strategy.Description.StrategyDescription.GetDefaultDescription(this.appDataContext.GetGameConfig());
+            }
             var newDescription = originalDescription.AddCardsToPurchaseOrder(cards);
             strategyDescription.PopulateFrom(newDescription);
         }

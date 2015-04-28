@@ -232,7 +232,7 @@ namespace Win8Client
             {
                 if (this.UseSideBySideStrategy.Value)
                     this.SideBySideVisibility.Value = true;
-                else if (this.player1Strategy.CardAcceptanceDescriptions.Any() || this.player2Strategy.CardAcceptanceDescriptions.Any())
+                else if (this.player1Strategy.PurchaseOrderDescriptions.Any() || this.player2Strategy.PurchaseOrderDescriptions.Any())
                     this.SideBySideVisibility.Value = true;
                 else
                     this.SideBySideVisibility.Value = false;
@@ -529,8 +529,8 @@ namespace Win8Client
 
         public SimulationStep EvaluateNextSimulationStep()
         {
-            bool hasStrategy1 = this.player1Strategy.CardAcceptanceDescriptions.Any();
-            bool hasStrategy2 = this.player2Strategy.CardAcceptanceDescriptions.Any();
+            bool hasStrategy1 = this.player1Strategy.PurchaseOrderDescriptions.Any();
+            bool hasStrategy2 = this.player2Strategy.PurchaseOrderDescriptions.Any();
             bool hasSelection = this.IsSelectionPresentOnCurrentDeck.Value;
 
             if (!hasStrategy1 && !hasStrategy2 && !hasSelection)
