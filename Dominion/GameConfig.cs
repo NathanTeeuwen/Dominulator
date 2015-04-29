@@ -111,7 +111,14 @@ namespace Dominion
           
         public GameConfig ToGameConfig()
         {
-            return new GameConfig(this.kingdomPiles, this.baneCard, this.useShelters, this.useColonyAndPlatinum, this.startingDeck, this.shuffleLuck);
+            return new GameConfig(
+                new GameDescription(
+                    this.kingdomPiles, 
+                    this.baneCard, 
+                    this.useShelters, 
+                    this.useColonyAndPlatinum),
+                this.startingDeck, 
+                this.shuffleLuck);
         }
 
         static readonly CardCountPair[] ShelterStartingDeck = new CardCountPair[] {
@@ -281,31 +288,28 @@ namespace Dominion
     public class GameConfig
     {
         static Card[] prizes = { Cards.BagOfGold, Cards.Diadem, Cards.Followers, Cards.Princess, Cards.TrustySteed };
-        static Card[] ruins = { Cards.AbandonedMine, Cards.RuinedMarket, Cards.RuinedLibrary, Cards.RuinedVillage, Cards.Survivors };                         
+        static Card[] ruins = { Cards.AbandonedMine, Cards.RuinedMarket, Cards.RuinedLibrary, Cards.RuinedVillage, Cards.Survivors };
 
-        public readonly bool useShelters;
-        public readonly bool useColonyAndPlatinum;
-        public readonly Card[] kingdomPiles;
-        public readonly Card baneCard;
+        public readonly GameDescription gameDescription;
+
+        public bool useShelters { get { return this.gameDescription.useShelters; } }
+        public bool useColonyAndPlatinum { get { return this.gameDescription.useColonyAndPlatinum; } }
+        public Card[] kingdomPiles { get { return this.gameDescription.kingdomPiles; } }
+        public Card baneCard { get { return this.gameDescription.baneCard; } }
 
         public readonly MapPlayerGameConfigToCardSet startingDeck;
         public readonly MapPlayerGameConfigToCardSet startingHand;        
         public readonly CardGameSubset cardGameSubset;
 
         public GameConfig(            
-            Card[] kingdomPiles, 
-            Card baneCard,
-            bool useShelters, 
-            bool useColonyAndPlatinum,            
+            GameDescription gameDescription,
             MapPlayerGameConfigToCardSet startingDecks = null,
             MapPlayerGameConfigToCardSet startingHands = null)
         {
-            this.useShelters = useShelters;
-            this.useColonyAndPlatinum = useColonyAndPlatinum;
-            this.kingdomPiles = kingdomPiles;
+            this.gameDescription = gameDescription;
             this.startingDeck = startingDecks; 
             this.startingHand = startingHands;            
-            this.baneCard = baneCard;
+            
             
             this.cardGameSubset = new CardGameSubset();
             var availabilities = GetCardAvailability(1, CardAvailabilityType.AllPossibleCardsInGame);

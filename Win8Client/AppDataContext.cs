@@ -2,6 +2,7 @@
 using System.Linq;
 using Windows.UI.Xaml;
 using System.ComponentModel;
+using Dominion;
 
 namespace Win8Client
 {

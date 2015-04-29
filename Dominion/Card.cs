@@ -7,6 +7,29 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
+
+    public static class ExpansionExtensionMethods
+    {
+        public static string ExpansionToString(this Dominion.Expansion expansion)
+        {
+            switch (expansion)
+            {
+                case Dominion.Expansion.Alchemy: return "Alchemy";
+                case Dominion.Expansion.Base: return "Base";
+                case Dominion.Expansion.Cornucopia: return "Cornucopia";
+                case Dominion.Expansion.DarkAges: return "Dark Ages";
+                case Dominion.Expansion.Guilds: return "Guilds";
+                case Dominion.Expansion.Hinterlands: return "Hinterlands";
+                case Dominion.Expansion.Intrigue: return "Intrigue";
+                case Dominion.Expansion.Promo: return "Promo";
+                case Dominion.Expansion.Prosperity: return "Prosperity";
+                case Dominion.Expansion.Seaside: return "Seaside";
+                case Dominion.Expansion.Adventures: return "Adventures";
+                default: throw new NotImplementedException();
+            }
+        }       
+    }
+
     public enum Expansion
     {
         Alchemy,
@@ -20,7 +43,8 @@ namespace Dominion
         Promo,
         Prosperity,
         Seaside,
-        Unknown
+        Unknown,
+        Count = Unknown
     }
 
     public abstract class Card

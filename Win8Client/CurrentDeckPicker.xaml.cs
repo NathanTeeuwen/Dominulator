@@ -81,6 +81,11 @@ namespace Win8Client
                 this.appDataContext.player1Strategy.PurchaseOrderDescriptions.Clear();
                 this.appDataContext.player2Strategy.PurchaseOrderDescriptions.Clear();
                 this.appDataContext.UpdateSimulationStep();
+
+                string jsonDescription = GameDescriptionParser.ToJson(this.appDataContext.GetGameConfig().gameDescription);
+                System.Diagnostics.Debug.WriteLine("New Kingdom");
+                System.Diagnostics.Debug.WriteLine("===========");                
+                System.Diagnostics.Debug.WriteLine(jsonDescription);                
             }
             
             if (this.CurrentCardsChanged != null)

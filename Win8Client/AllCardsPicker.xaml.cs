@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Dominion;
 
 namespace Win8Client
 {
@@ -195,32 +196,13 @@ namespace Win8Client
 
                 return true;
             };
-        }
-
-        string ExpansionToString(Dominion.Expansion expansion)
-        {
-            switch (expansion)
-            {
-                case Dominion.Expansion.Alchemy: return "alchemy";
-                case Dominion.Expansion.Base: return "base";
-                case Dominion.Expansion.Cornucopia: return "cornucopia";
-                case Dominion.Expansion.DarkAges: return "dark ages";
-                case Dominion.Expansion.Guilds: return "guilds";
-                case Dominion.Expansion.Hinterlands: return "hinterlands";
-                case Dominion.Expansion.Intrigue: return "intrigue";
-                case Dominion.Expansion.Promo: return "promo";
-                case Dominion.Expansion.Prosperity: return "prosperity";
-                case Dominion.Expansion.Seaside: return "seaside";
-                case Dominion.Expansion.Adventures: return "adventures";
-                default: throw new NotImplementedException();
-            }
-        }
+        }        
 
         string[] GetSearchWordsForCard(Dominion.Card card)
         {
             var result = new List<string>();
             result.Add(card.name);
-            result.Add(ExpansionToString(card.expansion));
+            result.Add(card.expansion.ExpansionToString());
             result.Add(card.DefaultCoinCost.ToString());
             if (card.isAction)
                 result.Add("action");
