@@ -37,7 +37,8 @@
         </StackPanel>
         <StackPanel Margin="30, 0, 0, 0">
             <TextBlock FontSize="30">View</TextBlock>
-            <CheckBox IsChecked="{Binding UseSideBySideStrategy.Value, Mode=TwoWay}">View Strategies Next To Deck</CheckBox>            
+            <CheckBox IsChecked="{Binding UseSideBySideStrategy.Value, Mode=TwoWay}">View Strategies Next To Deck</CheckBox>
+            <CheckBox IsChecked="{Binding GetDecksFromWeb.Value, Mode=TwoWay}">Get Strategies From the Web</CheckBox>
         </StackPanel>
     </StackPanel>
 </UserControl>

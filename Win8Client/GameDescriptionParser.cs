@@ -80,7 +80,7 @@ namespace Win8Client
             return root;
         }        
 
-        public static Dominion.GameDescription FromJson(string jsonString)
+        public static Dominion.GameDescription GetGameDescriptionFromJson(string jsonString)
         {
             try
             {
@@ -121,7 +121,6 @@ namespace Win8Client
             using (var request = new Windows.Web.Http.HttpRequestMessage())
             {
                 request.RequestUri = new System.Uri(fullUrl.ToString());
-                System.Diagnostics.Debug.WriteLine(request.ToString());
                 using (Windows.Web.Http.HttpResponseMessage responseMessage = await client.SendRequestAsync(request).AsTask())
                 {
                     string strResult = await responseMessage.Content.ReadAsStringAsync().AsTask();
@@ -145,14 +144,13 @@ namespace Win8Client
             using (var request = new Windows.Web.Http.HttpRequestMessage())
             {
                 request.RequestUri = new System.Uri(fullUrl.ToString());
-                System.Diagnostics.Debug.WriteLine(request.ToString());
-
+                
                 using (Windows.Web.Http.HttpResponseMessage responseMessage = await client.SendRequestAsync(request).AsTask())
                 {
                     if (responseMessage.IsSuccessStatusCode)
                     {
                         string strResult = await responseMessage.Content.ReadAsStringAsync().AsTask();
-                        Dominion.GameDescription description = WebService.FromJson(strResult);
+                        Dominion.GameDescription description = WebService.GetGameDescriptionFromJson(strResult);
                         return description;
                     }
                 }

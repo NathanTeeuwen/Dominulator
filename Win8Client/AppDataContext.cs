@@ -49,6 +49,8 @@ namespace Win8Client
         public DependencyObjectDecl<bool, DefaultFalse> IsAddToPlayer2ButtonVisible { get; private set; }
         public DependencyObjectDecl<bool, DefaultFalse> HintSelectedCardNotSimulatedButtonVisible { get; private set; }
 
+        public DependencyObjectDeclWithSettings<bool, DefaultFalse> GetDecksFromWeb { get; private set; }
+
         public DependencyObjectDecl<bool, DefaultFalse> StrategyResultsAvailable { get; private set; }
         public bool strategyReportDirty = false;
         public Dominion.Data.StrategyComparisonResults strategyComparisonResults;
@@ -100,6 +102,7 @@ namespace Win8Client
             this.currentStrategy.Value = this.player1Strategy;
             this.IsPlayer1StrategyChecked = new DependencyObjectDecl<bool, DefaultTrue>(this);
             this.IsPlayer2StrategyChecked = new DependencyObjectDecl<bool, DefaultFalse>(this);
+            this.GetDecksFromWeb = new DependencyObjectDeclWithSettings<bool, DefaultFalse>(this, "GetDecksFromWeb");
 
             this.CurrentPageConfig = new DependencyObjectDecl<PageConfig, DefaultCurrent>(this);
             this.SettingsButtonVisibility = new DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton>(this);            
