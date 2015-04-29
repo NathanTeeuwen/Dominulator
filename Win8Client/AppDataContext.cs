@@ -3,6 +3,7 @@ using System.Linq;
 using Windows.UI.Xaml;
 using System.ComponentModel;
 using Dominion;
+using Windows.Data.Json;
 
 namespace Win8Client
 {
@@ -580,7 +581,7 @@ namespace Win8Client
                 return SimulationStep.Player2CanNotBeSimulated;
 
             return SimulationStep.ReviewAndSimulate;
-        }
+        }        
     }
 
     public enum SimulationStep

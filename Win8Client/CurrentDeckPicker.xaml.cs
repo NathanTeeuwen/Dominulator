@@ -93,7 +93,7 @@ namespace Win8Client
                 this.appDataContext.BaneCard.PopulateBaneCard(baneCard);                
             }
 
-            string jsonDescription = GameDescriptionParser.ToJson(this.appDataContext.GetGameConfig().gameDescription, 5).Stringify();
+            string jsonDescription = WebService.ToJson(this.appDataContext.GetGameConfig().gameDescription, 5).Stringify();
             System.Diagnostics.Debug.WriteLine("New Kingdom");
             System.Diagnostics.Debug.WriteLine("===========");
             System.Diagnostics.Debug.WriteLine(jsonDescription);
@@ -249,6 +249,7 @@ namespace Win8Client
             else
                 this.appDataContext.DeckRating.Value = value;
 
-        }
+            WebService.SendGameConfigToServer(this.appDataContext);            
+        }        
     }
 }

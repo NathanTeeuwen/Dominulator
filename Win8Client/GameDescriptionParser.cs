@@ -8,10 +8,24 @@ using Dominion;
 
 namespace Win8Client
 {
-    public static class GameDescriptionParser
+    public static class WebService
     {
+        public static JsonObject ToJsonForGetExpansions(Dominion.GameDescription gameDescription)
+        {
+            JsonObject root = new Windows.Data.Json.JsonObject();
+
+            JsonArray expansionArray = new JsonArray();
+            foreach (var expansion in gameDescription.GetRequiredExpansions())
+            {
+                expansionArray.Add(JsonValue.CreateStringValue(expansion.ExpansionToString()));
+            }
+            root.Add(jsonNameRequiredExpansions, expansionArray);
+
+            return root;
+        }
+
         const string jsonNameRequiredExpansions = "expansions";
-        const string jsonNamePayload = "payload";
+        const string jsonNamePayload = "deck";
         const string jsonNameRating = "rating";
 
         public static JsonObject ToJson(Dominion.GameDescription gameDescription, int starRating)
@@ -87,6 +101,63 @@ namespace Win8Client
             {
                 return null;
             }
+        }
+
+        private static string webUrl = "http://1-dot-mystic-planet-93017.appspot.com/dominiondeck";
+
+        public static async void SendGameConfigToServer(AppDataContext appDataContext)
+        {
+            GameDescription gameDescription = appDataContext.GetGameConfig().gameDescription;
+
+            JsonObject json = WebService.ToJson(gameDescription, appDataContext.DeckRating.Value);
+            string parameter = json.Stringify();
+
+            var fullUrl = new System.Text.StringBuilder();
+            fullUrl.Append(WebService.webUrl);
+            fullUrl.Append("?action=RECORD&values=");
+            fullUrl.Append(parameter.Replace(" ", "%20"));
+
+            using (var client = new Windows.Web.Http.HttpClient())
+            using (var request = new Windows.Web.Http.HttpRequestMessage())
+            {
+                request.RequestUri = new System.Uri(fullUrl.ToString());
+                System.Diagnostics.Debug.WriteLine(request.ToString());
+                using (Windows.Web.Http.HttpResponseMessage responseMessage = await client.SendRequestAsync(request).AsTask())
+                {
+                    string strResult = await responseMessage.Content.ReadAsStringAsync().AsTask();
+                    System.Diagnostics.Debug.WriteLine("RECORD Reponse from server:");
+                    System.Diagnostics.Debug.WriteLine(strResult);
+                }
+            }
+        }
+
+        public static async Task<GameDescription> GetGameConfigFomServer(AppDataContext appDataContext)
+        {
+            JsonObject jsonParameter = ToJsonForGetExpansions(appDataContext.GetGameConfig().gameDescription);
+            string parameter = jsonParameter.Stringify();
+
+            var fullUrl = new System.Text.StringBuilder();
+            fullUrl.Append(WebService.webUrl);
+            fullUrl.Append("?action=GET&values=");
+            fullUrl.Append(parameter.Replace(" ", "%20"));
+
+            using (var client = new Windows.Web.Http.HttpClient())
+            using (var request = new Windows.Web.Http.HttpRequestMessage())
+            {
+                request.RequestUri = new System.Uri(fullUrl.ToString());
+                System.Diagnostics.Debug.WriteLine(request.ToString());
+
+                using (Windows.Web.Http.HttpResponseMessage responseMessage = await client.SendRequestAsync(request).AsTask())
+                {
+                    if (responseMessage.IsSuccessStatusCode)
+                    {
+                        string strResult = await responseMessage.Content.ReadAsStringAsync().AsTask();
+                        Dominion.GameDescription description = WebService.FromJson(strResult);
+                        return description;
+                    }
+                }
+            }
+            return null;
         }
     }
 }
