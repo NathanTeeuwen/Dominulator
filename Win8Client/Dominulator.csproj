@@ -136,7 +136,7 @@
     </Compile>
     <Compile Include="DominionCard.cs" />
     <Compile Include="Expansion.cs" />
-    <Compile Include="GameDescription.cs" />
+    <Compile Include="GameDescriptionParser.cs" />
     <Compile Include="SideBySideStrategyView.xaml.cs">
       <DependentUpon>SideBySideStrategyView.xaml</DependentUpon>
     </Compile>

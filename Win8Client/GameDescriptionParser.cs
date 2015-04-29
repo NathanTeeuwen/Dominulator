@@ -15,6 +15,7 @@ namespace Win8Client
         const string jsonNameKingdomPiles = "kingdomPiles";
         const string jsonNameBane = "baneCard";
         const string jsonNameRequiredExpansions = "expansions";
+        const string jsonNameEvents = "events";
 
         public static string ToJson(Dominion.GameDescription gameDescription)
         {
@@ -30,6 +31,13 @@ namespace Win8Client
                 kingdomArray.Add(JsonValue.CreateStringValue(cardName));
             }
             root.Add(jsonNameKingdomPiles, kingdomArray);
+
+            JsonArray eventArray = new JsonArray();
+            foreach (var cardName in gameDescription.EventNames())
+            {
+                eventArray.Add(JsonValue.CreateStringValue(cardName));
+            }
+            root.Add(jsonNameEvents, eventArray);
 
             JsonArray expansionArray = new JsonArray();
             foreach (var expansion in gameDescription.GetRequiredExpansions())
@@ -51,10 +59,12 @@ namespace Win8Client
                 bool useColonyAndPlatinum = root.GetNamedBoolean(jsonNameUseColonyAndPlatinum, defaultValue: false);            
                 string baneCardName = root.GetNamedString(jsonNameBane, defaultValue: null);
                 JsonArray kingdomArray = root.GetNamedArray(jsonNameKingdomPiles);
-                                
                 string[] kingdomPileNames = kingdomArray.Select(jsonValue => jsonValue.GetString()).ToArray();
+
+                JsonArray eventArray = root.GetNamedArray(jsonNameEvents);
+                string[] eventNames = eventArray.Select(jsonValue => jsonValue.GetString()).ToArray();
                 
-                return new Dominion.GameDescription(kingdomPileNames, baneCardName, useShelters, useColonyAndPlatinum);
+                return new Dominion.GameDescription(kingdomPileNames, eventNames, baneCardName, useShelters, useColonyAndPlatinum);
             }
             catch(System.Exception)
             {

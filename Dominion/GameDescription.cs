@@ -9,26 +9,33 @@ namespace Dominion
     public class GameDescription
     {
         public readonly Card[] kingdomPiles;
+        public readonly Card[] events;
         public readonly Card baneCard;
         public readonly bool useShelters;
         public readonly bool useColonyAndPlatinum;
 
-        public GameDescription(Card[] kingdomPiles, Card baneCard, bool useShelters, bool useColonyAndPlatinum)
+        public GameDescription(Card[] kingdomPiles, Card[] events, Card baneCard, bool useShelters, bool useColonyAndPlatinum)
         {
             this.kingdomPiles = kingdomPiles;
             this.baneCard = baneCard;
+            this.events = events;
             this.useShelters = useShelters;
             this.useColonyAndPlatinum = useColonyAndPlatinum;
         }
 
-        public GameDescription(string[] kingdomPiles, string baneCard, bool useShelters, bool useColonyAndPlatinum)
-            : this(GetCardsFromNames(kingdomPiles), GetCardFromName(baneCard), useShelters, useColonyAndPlatinum)
+        public GameDescription(string[] kingdomPiles, string[] events, string baneCard, bool useShelters, bool useColonyAndPlatinum)
+            : this(GetCardsFromNames(kingdomPiles), GetCardsFromNames(events), GetCardFromName(baneCard), useShelters, useColonyAndPlatinum)
         {            
         }
 
         public string[] KingdomPileNames()
         {
             return this.kingdomPiles.Select(c => c.name).ToArray();
+        }
+
+        public string[] EventNames()
+        {
+            return this.events.Select(c => c.name).ToArray();
         }
 
         public string BanePileName()
@@ -41,6 +48,11 @@ namespace Dominion
             var isExpansionRequired = new bool[(int)Expansion.Count];
 
             foreach(Card card in kingdomPiles)
+            {
+                isExpansionRequired[(int)card.expansion] = true;
+            }
+
+            foreach (Card card in events)
             {
                 isExpansionRequired[(int)card.expansion] = true;
             }

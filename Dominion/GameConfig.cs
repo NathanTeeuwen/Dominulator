@@ -11,6 +11,7 @@ namespace Dominion
         public bool useShelters;
         public bool useColonyAndPlatinum;        
         private Card[] kingdomPiles;
+        private Card[] events;
         private Card baneCard;
         private MapPlayerGameConfigToCardSet startingDeck;
         private MapPlayerGameConfigToCardSet shuffleLuck;               
@@ -81,6 +82,19 @@ namespace Dominion
             this.shuffleLuck = GetStartingHandForSplit(splits);
         }
 
+        public void SetEvents(IEnumerable<Card> cards)
+        {
+            var setCards = new HashSet<Card>();
+
+            foreach (Card card in cards)
+            {
+                setCards.Add(card);
+            }
+            KeepOnlyKingdomCard(setCards);
+
+            this.events = setCards.ToArray();
+        }
+
         public void SetKingdomPiles(IEnumerable<Card> cards)
         {
             var setCards = new HashSet<Card>();
@@ -114,6 +128,7 @@ namespace Dominion
             return new GameConfig(
                 new GameDescription(
                     this.kingdomPiles, 
+                    this.events,
                     this.baneCard, 
                     this.useShelters, 
                     this.useColonyAndPlatinum),
