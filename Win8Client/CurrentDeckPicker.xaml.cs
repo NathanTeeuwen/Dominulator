@@ -77,13 +77,28 @@ namespace Win8Client
                 this.appDataContext.player1Strategy.PurchaseOrderDescriptions.Clear();
                 this.appDataContext.player2Strategy.PurchaseOrderDescriptions.Clear();
                 this.appDataContext.UpdateSimulationStep();
-                this.appDataContext.DeckRating.Value = 0;
-
-                var kingdomBuilder = new Dominion.GameConfigBuilder();
-                kingdomBuilder.GenerateCompletelyRandomKingdom(this.appDataContext.AllCards.CurrentCards.Select(c => c.dominionCard), MainPage.random);
-                Dominion.GameDescription gameDescription = kingdomBuilder.ToGameDescription();
                 this.appDataContext.CurrentDeck.ReapplySortOrder();
-                this.appDataContext.PopulateFromGameDescription(gameDescription);                
+
+                if (this.appDataContext.GetDecksFromWeb.Value)
+                {
+                    var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();
+                    WebService.GetGameConfigFomServer(this.appDataContext).ContinueWith( descrTask =>
+                        {
+                            Dominion.GameDescription gameDescription = descrTask.Result;
+                            if (gameDescription != null)
+                            {
+                                this.appDataContext.PopulateFromGameDescription(gameDescription);
+                            }
+                        }, uiScheduler);
+                }
+                else
+                {
+                    this.appDataContext.DeckRating.Value = 0;
+                    var kingdomBuilder = new Dominion.GameConfigBuilder();
+                    kingdomBuilder.GenerateCompletelyRandomKingdom(this.appDataContext.AllCards.CurrentCards.Select(c => c.dominionCard), MainPage.random);
+                    Dominion.GameDescription gameDescription = kingdomBuilder.ToGameDescription();                    
+                    this.appDataContext.PopulateFromGameDescription(gameDescription);
+                }
             }
             else
             {

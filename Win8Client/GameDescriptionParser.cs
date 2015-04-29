@@ -25,14 +25,14 @@ namespace Win8Client
         }
 
         const string jsonNameRequiredExpansions = "expansions";
-        const string jsonNamePayload = "deck";
+        const string jsonNameDeck = "deck";
         const string jsonNameRating = "rating";
 
         public static JsonObject ToJson(Dominion.GameDescription gameDescription, int starRating)
         {
             JsonObject root = new Windows.Data.Json.JsonObject();
 
-            root.Add(jsonNamePayload, ToJson(gameDescription));
+            root.Add(jsonNameDeck, ToJson(gameDescription));
 
             JsonArray expansionArray = new JsonArray();
             foreach (var expansion in gameDescription.GetRequiredExpansions())
@@ -86,19 +86,23 @@ namespace Win8Client
             {
                 JsonObject root = Windows.Data.Json.JsonObject.Parse(jsonString);
 
-                bool useShelters = root.GetNamedBoolean(jsonNameUseShelters, defaultValue: false);
-                bool useColonyAndPlatinum = root.GetNamedBoolean(jsonNameUseColonyAndPlatinum, defaultValue: false);            
-                string baneCardName = root.GetNamedString(jsonNameBane, defaultValue: null);
-                JsonArray kingdomArray = root.GetNamedArray(jsonNameKingdomPiles);
+                JsonObject jsonDeck = root.GetNamedObject(jsonNameDeck);
+
+
+                bool useShelters = jsonDeck.GetNamedBoolean(jsonNameUseShelters, defaultValue: false);
+                bool useColonyAndPlatinum = jsonDeck.GetNamedBoolean(jsonNameUseColonyAndPlatinum, defaultValue: false);
+                string baneCardName = jsonDeck.GetNamedString(jsonNameBane, defaultValue: "");
+                JsonArray kingdomArray = jsonDeck.GetNamedArray(jsonNameKingdomPiles);
                 string[] kingdomPileNames = kingdomArray.Select(jsonValue => jsonValue.GetString()).ToArray();
 
-                JsonArray eventArray = root.GetNamedArray(jsonNameEvents);
+                JsonArray eventArray = jsonDeck.GetNamedArray(jsonNameEvents);
                 string[] eventNames = eventArray.Select(jsonValue => jsonValue.GetString()).ToArray();
                 
                 return new Dominion.GameDescription(kingdomPileNames, eventNames, baneCardName, useShelters, useColonyAndPlatinum);
             }
-            catch(System.Exception)
+            catch(System.Exception e)
             {
+                System.Diagnostics.Debug.WriteLine(e);
                 return null;
             }
         }
