@@ -10,14 +10,34 @@ namespace Win8Client
 {
     public static class GameDescriptionParser
     {
+        const string jsonNameRequiredExpansions = "expansions";
+        const string jsonNamePayload = "payload";
+        const string jsonNameRating = "rating";
+
+        public static JsonObject ToJson(Dominion.GameDescription gameDescription, int starRating)
+        {
+            JsonObject root = new Windows.Data.Json.JsonObject();
+
+            root.Add(jsonNamePayload, ToJson(gameDescription));
+
+            JsonArray expansionArray = new JsonArray();
+            foreach (var expansion in gameDescription.GetRequiredExpansions())
+            {
+                expansionArray.Add(JsonValue.CreateStringValue(expansion.ExpansionToString()));
+            }
+            root.Add(jsonNameRequiredExpansions, expansionArray);
+
+            root.Add(jsonNameRating, JsonValue.CreateNumberValue(starRating));
+
+            return root;
+        }
+
         const string jsonNameUseShelters = "useShelters";
         const string jsonNameUseColonyAndPlatinum = "useColonyAndPlatinum";
         const string jsonNameKingdomPiles = "kingdomPiles";
         const string jsonNameBane = "baneCard";
-        const string jsonNameRequiredExpansions = "expansions";
         const string jsonNameEvents = "events";
-
-        public static string ToJson(Dominion.GameDescription gameDescription)
+        public static JsonObject ToJson(Dominion.GameDescription gameDescription)
         {
             JsonObject root = new Windows.Data.Json.JsonObject();
 
@@ -43,14 +63,7 @@ namespace Win8Client
             }
             root.Add(jsonNameEvents, eventArray);
 
-            JsonArray expansionArray = new JsonArray();
-            foreach (var expansion in gameDescription.GetRequiredExpansions())
-            {
-                expansionArray.Add(JsonValue.CreateStringValue(expansion.ExpansionToString()));
-            }
-            root.Add(jsonNameRequiredExpansions, expansionArray);
-
-            return root.Stringify();
+            return root;
         }        
 
         public static Dominion.GameDescription FromJson(string jsonString)

@@ -92,7 +92,7 @@ namespace Win8Client
                 this.appDataContext.BaneCard.PopulateBaneCard(baneCard);                
             }
 
-            string jsonDescription = GameDescriptionParser.ToJson(this.appDataContext.GetGameConfig().gameDescription);
+            string jsonDescription = GameDescriptionParser.ToJson(this.appDataContext.GetGameConfig().gameDescription, 5).Stringify();
             System.Diagnostics.Debug.WriteLine("New Kingdom");
             System.Diagnostics.Debug.WriteLine("===========");
             System.Diagnostics.Debug.WriteLine(jsonDescription);
