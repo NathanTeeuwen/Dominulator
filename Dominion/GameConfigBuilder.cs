@@ -90,7 +90,7 @@ namespace Dominion
             {
                 setCards.Add(card);
             }
-            KeepOnlyKingdomCard(setCards);
+            KeepOnlyEvents(setCards);
 
             this.events = setCards.ToArray();
         }
@@ -114,6 +114,21 @@ namespace Dominion
             foreach (Card card in setCards)
             {
                 if (!card.isKingdomCard)
+                    cardsToRemove.Add(card);
+            }
+
+            foreach (var card in cardsToRemove)
+            {
+                setCards.Remove(card);
+            }
+        }
+
+        public static void KeepOnlyEvents(HashSet<Card> setCards)
+        {
+            var cardsToRemove = new List<Card>();
+            foreach (Card card in setCards)
+            {
+                if (!card.isEvent)
                     cardsToRemove.Add(card);
             }
 
