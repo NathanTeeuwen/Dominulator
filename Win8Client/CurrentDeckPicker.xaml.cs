@@ -77,6 +77,7 @@ namespace Win8Client
                 this.appDataContext.player1Strategy.PurchaseOrderDescriptions.Clear();
                 this.appDataContext.player2Strategy.PurchaseOrderDescriptions.Clear();
                 this.appDataContext.UpdateSimulationStep();
+                this.appDataContext.DeckRating.Value = 0;
 
                 var kingdomBuilder = new Dominion.GameConfigBuilder();
                 kingdomBuilder.GenerateCompletelyRandomKingdom(this.appDataContext.AllCards.CurrentCards.Select(c => c.dominionCard), MainPage.random);
@@ -214,6 +215,40 @@ namespace Win8Client
         private void SimulateGameButtonClick(object sender, RoutedEventArgs e)
         {
             this.appDataContext.SimulateGameButtonClick();
+        }
+
+        private void Star1Button_Click(object sender, RoutedEventArgs e)
+        {
+            ToggleDeckRating(1);
+        }
+
+        private void Star2Button_Click(object sender, RoutedEventArgs e)
+        {
+            ToggleDeckRating(2);
+        }
+
+        private void Star3Button_Click(object sender, RoutedEventArgs e)
+        {
+            ToggleDeckRating(3);
+        }
+
+        private void Star4Button_Click(object sender, RoutedEventArgs e)
+        {
+            ToggleDeckRating(4);
+        }
+
+        private void Star5Button_Click(object sender, RoutedEventArgs e)
+        {
+            ToggleDeckRating(5);
+        }
+
+        private void ToggleDeckRating(int value)
+        {
+            if (this.appDataContext.DeckRating.Value == value)
+                this.appDataContext.DeckRating.Value = 0;
+            else
+                this.appDataContext.DeckRating.Value = value;
+
         }
     }
 }

@@ -188,6 +188,18 @@ namespace Win8Client
         }
     }
 
+    public class DefaultIntZero
+        : DefaultValuePolicy<int>
+    {
+        public int DefaultValue
+        {
+            get
+            {
+                return 0;
+            }
+        }
+    }
+
     public class DefaultObservableCollection
         : DefaultValuePolicy<System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription>>
     {

@@ -182,6 +182,22 @@ namespace Win8Client
         }
     }
 
+    public class DeckRatingConverter
+      : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            int typedParam = 0;
+            int.TryParse((string)parameter, out typedParam);
+            return (int)value >= typedParam ? ((char)0xE1CF).ToString() : ((char)0xE1CE).ToString();
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
+    
     public class EnumVisibility
       : IValueConverter
     {

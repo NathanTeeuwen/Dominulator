@@ -17,6 +17,7 @@
         <Grid.Resources>
             <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
             <local:EnumVisibility x:Key="EnumVisibility"/>
+            <local:DeckRatingConverter x:Key="DeckRatingConverter"/>
         </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -33,6 +34,13 @@
                 </Button.Flyout>
             </Button>
             <Button Click="RefreshButtonClick" Style="{StaticResource RefreshAppBarButtonStyle}"></Button>
+            <StackPanel Orientation="Horizontal">
+                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=1}" Click="Star1Button_Click"/>
+                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=2}" Click="Star2Button_Click"/>
+                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=3}" Click="Star3Button_Click"/>
+                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=4}" Click="Star4Button_Click"/>
+                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=5}" Click="Star5Button_Click"/>
+            </StackPanel>
         </StackPanel>
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
             <TextBlock FontSize="20" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=MakeSelection}">To begin simulation select some cards.</TextBlock>

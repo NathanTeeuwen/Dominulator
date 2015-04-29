@@ -19,6 +19,8 @@ namespace Win8Client
         private SortableCardList eventCards;
         private SortableCardList commonCards;
         private System.Collections.ObjectModel.ObservableCollection<Expansion> expansions;
+
+        public DependencyObjectDecl<int, DefaultIntZero> DeckRating{ get; private set; }
         
         public DependencyObjectDeclWithSettings<bool, DefaultTrue> Use3OrMoreFromExpansions { get; private set; }
         public DependencyObjectDeclWithSettings<bool, DefaultFalse> RequireTrashing { get; private set; }
@@ -81,6 +83,7 @@ namespace Win8Client
             this.selectedCards = new System.Collections.ObjectModel.ObservableCollection<DominionCard>();
             this.expansions = new System.Collections.ObjectModel.ObservableCollection<Expansion>();
 
+            this.DeckRating = new DependencyObjectDecl<int,DefaultIntZero>(this);
 
             this.Use3OrMoreFromExpansions = new DependencyObjectDeclWithSettings<bool, DefaultTrue>(this, "Use3OrMoreFromExpansions");
             this.RequireTrashing = new DependencyObjectDeclWithSettings<bool, DefaultFalse>(this, "Require Trashing");
