@@ -78,7 +78,7 @@ namespace Win8Client
         {
             bool isReplacingItems = itemsToReplace != null && itemsToReplace.Any() && sourceList.Count <= targetCount;
             bool isReducingItems = itemsToReplace != null && itemsToReplace.Any() && sourceList.Count > targetCount;
-            var cardPicker = new UniqueCardPicker(allCards.Select(c => c.dominionCard));
+            var cardPicker = new Dominion.UniqueCardPicker(allCards.Select(c => c.dominionCard), MainPage.random);
 
             bool isCleanRoll = false;
 
