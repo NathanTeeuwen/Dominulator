@@ -62,6 +62,7 @@
     <Compile Include="Collections\SingletonCardHolder.cs" />
     <Compile Include="DerivedPlayerAction.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="GameConfigBuilder.cs" />
     <Compile Include="GameDescription.cs" />
     <Compile Include="GameLogs\DebugGameLog.cs" />
     <Compile Include="GameLogs\GainSequenceGameLog.cs" />
