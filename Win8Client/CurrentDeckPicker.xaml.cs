@@ -63,69 +63,43 @@ namespace Win8Client
 
         public void Randomize10Cards()
         {
-            var selectedItems = this.CurrentCardsListView.SelectedItems.Select(item => (DominionCard)item).ToArray<DominionCard>();
+            var currentDeckSelectedItems = this.CurrentCardsListView.SelectedItems.Select(item => (DominionCard)item).ToArray<DominionCard>();
+            var baneSelectedItems = this.BaneCardsListView.SelectedItems.Select(item => (DominionCard)item).ToArray<DominionCard>();
+            var eventsSelectedItems = this.EventCardsListView.SelectedItems.Select(item => (DominionCard)item).ToArray<DominionCard>();
 
-            bool useShelter = this.appDataContext.UseShelters.Value;
-            bool useColony = this.appDataContext.UseColonyPlatinum.Value;
-            DominionCard baneCard = this.appDataContext.BaneCard.CurrentCards.FirstOrDefault();
+            bool isReplacing = currentDeckSelectedItems.Any() || baneSelectedItems.Any() || eventsSelectedItems.Any();
+            bool isReducing = this.appDataContext.CurrentDeck.CurrentCards.Count() > 10 && currentDeckSelectedItems.Any();
+            bool isGrowing = this.appDataContext.CurrentDeck.CurrentCards.Count() < 10 && this.appDataContext.CurrentDeck.CurrentCards.Any();
 
-            bool isCleanRoll = this.appDataContext.CurrentDeck.GenerateRandom(10, ref baneCard, this.appDataContext.AllCards.CurrentCards, itemsToReplace: selectedItems);
-            this.appDataContext.BaneCard.PopulateBaneCard(baneCard);            
-
-            if (isCleanRoll)
-            {                
-                this.appDataContext.UseColonyPlatinum.Value = ShouldIncludeExpansion(Dominion.Expansion.Prosperity);
-                this.appDataContext.UseShelters.Value = ShouldIncludeExpansion(Dominion.Expansion.DarkAges);
-                ReRollEvents();
-
+            if (!isReplacing && !isGrowing && !isReducing)
+            {
+                // clean roll
                 this.appDataContext.player1Strategy.PurchaseOrderDescriptions.Clear();
                 this.appDataContext.player2Strategy.PurchaseOrderDescriptions.Clear();
                 this.appDataContext.UpdateSimulationStep();
 
-                string jsonDescription = GameDescriptionParser.ToJson(this.appDataContext.GetGameConfig().gameDescription);
-                System.Diagnostics.Debug.WriteLine("New Kingdom");
-                System.Diagnostics.Debug.WriteLine("===========");                
-                System.Diagnostics.Debug.WriteLine(jsonDescription);                
+                var kingdomBuilder = new Dominion.GameConfigBuilder();
+                kingdomBuilder.GenerateCompletelyRandomKingdom(this.appDataContext.AllCards.CurrentCards.Select(c => c.dominionCard), MainPage.random);
+                Dominion.GameDescription gameDescription = kingdomBuilder.ToGameDescription();
+                this.appDataContext.CurrentDeck.ReapplySortOrder();
+                this.appDataContext.PopulateFromGameDescription(gameDescription);                
             }
+            else
+            {
+                this.appDataContext.CurrentDeck.CopyOrder();
+                DominionCard baneCard = this.appDataContext.BaneCard.CurrentCards.FirstOrDefault();
+                bool isCleanRoll = this.appDataContext.CurrentDeck.GenerateRandom(10, ref baneCard, this.appDataContext.AllCards.CurrentCards, itemsToReplace: currentDeckSelectedItems);
+                this.appDataContext.BaneCard.PopulateBaneCard(baneCard);                
+            }
+
+            string jsonDescription = GameDescriptionParser.ToJson(this.appDataContext.GetGameConfig().gameDescription);
+            System.Diagnostics.Debug.WriteLine("New Kingdom");
+            System.Diagnostics.Debug.WriteLine("===========");
+            System.Diagnostics.Debug.WriteLine(jsonDescription);
             
             if (this.CurrentCardsChanged != null)
                 this.CurrentCardsChanged();            
-        }
-
-        private bool ShouldIncludeExpansion(Dominion.Expansion expansion)
-        {
-            int cExpansion = this.appDataContext.CurrentDeck.CurrentCards.Select(c => c.dominionCard).Where(c => c.expansion == expansion).Count();
-            int roll = MainPage.random.Next(1, 10);
-            return cExpansion >= roll ? true : false;
-        }
-
-        private void ReRollEvents()
-        {
-            int cEventsToInclude = 0;
-            
-            int cEventRemaining = 20;
-            int totalKingdomCount = Dominion.Cards.AllKingdomCards().Count();
-            for (int i = 0; i < 10; ++i)
-            {
-                int roll = MainPage.random.Next(totalKingdomCount);
-                if (roll <= cEventRemaining)
-                {
-                    cEventsToInclude++;
-                    cEventRemaining--;
-                    i--;
-                    continue;
-                }                
-                totalKingdomCount--;
-            }
-
-            var allEventsCards = Dominion.Cards.AllCards().Where(c => c.isEvent).Select(c => DominionCard.Create(c)).ToArray();
-            var selectedItems = this.EventCardsListView.SelectedItems.Select(item => (DominionCard)item).ToArray<DominionCard>();
-
-            var cardPicker = new Dominion.UniqueCardPicker(allEventsCards.Select(c => c.dominionCard), MainPage.random);
-            DominionCard baneCard = null;
-            this.appDataContext.EventCards.Clear();
-            this.appDataContext.EventCards.GenerateRandom(cEventsToInclude, ref baneCard, allEventsCards, itemsToReplace: selectedItems);
-        }
+        }        
 
         private void RefreshButtonClick(object sender, RoutedEventArgs e)
         {

@@ -23,7 +23,11 @@ namespace Win8Client
 
             root.Add(jsonNameUseShelters, JsonValue.CreateBooleanValue(gameDescription.useShelters));
             root.Add(jsonNameUseColonyAndPlatinum, JsonValue.CreateBooleanValue(gameDescription.useColonyAndPlatinum));
-            root.Add(jsonNameBane, JsonValue.CreateStringValue(gameDescription.BanePileName()));
+            string banePileName = gameDescription.BanePileName();
+            if (banePileName != null)
+            {
+                root.Add(jsonNameBane, JsonValue.CreateStringValue(banePileName));
+            }
 
             JsonArray kingdomArray = new JsonArray();
             foreach (var cardName in gameDescription.KingdomPileNames())

@@ -272,6 +272,20 @@ namespace Win8Client
             return isCleanRoll;
         }
 
+        public void PopulateCards(IEnumerable<DominionCard> cards)
+        {
+            this.originalCards.Clear();
+            this.originalCards.AddRange(cards);
+            this.UpdateUIFromUIThread();
+        }
+
+        public void CopyOrder()
+        {
+            var currentCards = CurrentCards.ToArray();
+            this.originalCards.Clear();
+            this.originalCards.AddRange(currentCards);
+        }
+
         public void UpdateOriginalCards(IEnumerable<DominionCard> addedCards, IEnumerable<DominionCard> removedCards)
         {
             foreach (var card in addedCards)

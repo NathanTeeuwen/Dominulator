@@ -371,7 +371,7 @@ namespace Win8Client
             Dominion.Card[] events = this.eventCards.Cards.Select(c => c.dominionCard).ToArray();
             DominionCard baneCard = this.BaneCard.CurrentCards.FirstOrDefault();            
 
-            var builder = new Dominion.GameConfigBuilder();            
+            var builder = new Dominion.GameConfigBuilder();
                 
             builder.SetKingdomPiles(kingdomCards);
             builder.SetEvents(events);
@@ -383,6 +383,15 @@ namespace Win8Client
             builder.SetCardSplitPerPlayer(new Dominion.StartingCardSplit[] { player1Split, player2Split });
 
             return builder.ToGameConfig();
+        }
+
+        public void PopulateFromGameDescription(GameDescription gameDescription)
+        {            
+            this.currentDeck.PopulateCards(gameDescription.kingdomPiles.Select(c => DominionCard.Create(c)));
+            this.baneCard.PopulateBaneCard(DominionCard.Create(gameDescription.baneCard));
+            this.eventCards.PopulateCards(gameDescription.events.Select(c => DominionCard.Create(c)));
+            this.UseShelters.Value = gameDescription.useShelters;
+            this.UseColonyPlatinum.Value = gameDescription.useColonyAndPlatinum;
         }
 
         public void ShowReport()

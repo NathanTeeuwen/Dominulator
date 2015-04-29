@@ -10,8 +10,8 @@ namespace Dominion
     {
         public bool useShelters;
         public bool useColonyAndPlatinum;
-        private Card[] kingdomPiles;
-        private Card[] events;
+        private List<Card> kingdomPiles;
+        private List<Card> events;
         private Card baneCard;
         private MapPlayerGameConfigToCardSet startingDeck;
         private MapPlayerGameConfigToCardSet shuffleLuck;
@@ -19,7 +19,7 @@ namespace Dominion
         public static GameConfig Create(StartingCardSplit split, params Card[] cards)
         {
             var result = new GameConfigBuilder();
-            result.kingdomPiles = cards;
+            result.kingdomPiles.AddRange(cards);            
             result.CardSplit = split;
             return result.ToGameConfig();
         }
@@ -27,7 +27,8 @@ namespace Dominion
         public static GameConfig Create(params Card[] cards)
         {
             var result = new GameConfigBuilder();
-            result.kingdomPiles = cards;
+            result.kingdomPiles.AddRange(cards);
+            result.events = new List<Card>();
             return result.ToGameConfig();
         }
 
@@ -35,7 +36,8 @@ namespace Dominion
         {
             this.useShelters = false;
             this.useColonyAndPlatinum = false;
-            this.kingdomPiles = null;
+            this.kingdomPiles = new List<Card>();
+            this.events = new List<Card>();
             this.startingDeck = GetDefaultStartingDeck;
             this.shuffleLuck = GetDefaultStartingHand;
         }
@@ -44,7 +46,9 @@ namespace Dominion
         {
             this.useShelters = gameConfig.useShelters;
             this.useColonyAndPlatinum = gameConfig.useColonyAndPlatinum;
-            this.kingdomPiles = gameConfig.kingdomPiles;
+            this.baneCard = gameConfig.baneCard;
+            this.kingdomPiles = new List<Card>(gameConfig.kingdomPiles);
+            this.events = new List<Card>(gameConfig.gameDescription.events);
             this.startingDeck = gameConfig.startingDeck;
             this.shuffleLuck = gameConfig.startingHand;
         }
@@ -92,7 +96,8 @@ namespace Dominion
             }
             KeepOnlyEvents(setCards);
 
-            this.events = setCards.ToArray();
+            this.events.Clear();
+            this.events.AddRange(setCards.ToArray());
         }
 
         public void SetKingdomPiles(IEnumerable<Card> cards)
@@ -105,7 +110,8 @@ namespace Dominion
             }
             KeepOnlyKingdomCard(setCards);
 
-            this.kingdomPiles = setCards.ToArray();
+            this.kingdomPiles.Clear();
+            this.kingdomPiles.AddRange(setCards);
         }
 
         public static void KeepOnlyKingdomCard(HashSet<Card> setCards)
@@ -141,14 +147,19 @@ namespace Dominion
         public GameConfig ToGameConfig()
         {
             return new GameConfig(
-                new GameDescription(
-                    this.kingdomPiles,
-                    this.events,
-                    this.baneCard,
-                    this.useShelters,
-                    this.useColonyAndPlatinum),
+                this.ToGameDescription(),
                 this.startingDeck,
                 this.shuffleLuck);
+        }
+
+        public GameDescription ToGameDescription()
+        {
+            return new GameDescription(
+                    this.kingdomPiles.ToArray(),
+                    this.events.ToArray(),
+                    this.baneCard,
+                    this.useShelters,
+                    this.useColonyAndPlatinum);
         }
 
         static readonly CardCountPair[] ShelterStartingDeck = new CardCountPair[] {
@@ -254,6 +265,84 @@ namespace Dominion
             {
                 return cards[playerIndex];
             };
+        }        
+
+        public void GenerateCompletelyRandomKingdom(IEnumerable<Card> allCards, Random random)
+        {
+            var cardPicker = new UniqueCardPicker(allCards, random);
+
+            this.RandomizeKingdom(allCards, random);
+            this.RandomizeEvents(random);
+            this.ReRollPlatinumColony(random);
+            this.ReRollShelter(random);
+        }
+
+        public void RandomizeKingdom(IEnumerable<Card> allCards, Random random)
+        {
+            this.kingdomPiles.Clear();
+            var cardPicker = new UniqueCardPicker(allCards, random);
+            PopulateCardListToCount(10, this.kingdomPiles, cardPicker, c => c.isKingdomCard);
+
+            if (this.kingdomPiles.Contains(Cards.YoungWitch))
+            {
+                this.baneCard = cardPicker.GetCard(c => c.isKingdomCard && (c.DefaultCoinCost == 2 || c.DefaultCoinCost == 3));
+            }
+            else
+                this.baneCard = null;
+        }
+
+        public void RandomizeEvents(Random random)
+        {            
+            int cEventsToInclude = 0;
+
+            int cEventRemaining = 20;
+            int totalKingdomCount = Dominion.Cards.AllKingdomCards().Count();
+            for (int i = 0; i < 10; ++i)
+            {
+                int roll = random.Next(totalKingdomCount);
+                if (roll <= cEventRemaining)
+                {
+                    cEventsToInclude++;
+                    cEventRemaining--;
+                    i--;
+                    continue;
+                }
+                totalKingdomCount--;
+            }
+
+            var allEventsCards = Dominion.Cards.AllCards().Where(c => c.isEvent).ToArray<Dominion.Card>();
+
+            var cardPicker = new Dominion.UniqueCardPicker(allEventsCards, random);            
+            this.events.Clear();
+            PopulateCardListToCount(cEventsToInclude, this.events, cardPicker, c => true);        
+        }
+
+        public void ReRollPlatinumColony(Random random)
+        {
+            this.useColonyAndPlatinum = ShouldIncludeExpansion(Dominion.Expansion.Prosperity, random);
+        }
+
+        public void ReRollShelter(Random random)
+        {
+            this.useShelters = ShouldIncludeExpansion(Dominion.Expansion.DarkAges, random);
+        }
+
+        private bool ShouldIncludeExpansion(Dominion.Expansion expansion, Random random)
+        {
+            int cExpansion = this.kingdomPiles.Where(c => c.expansion == expansion).Count();
+            int roll = random.Next(1, 10);
+            return cExpansion >= roll ? true : false;
+        }
+
+        private static void PopulateCardListToCount(int targetCount, List<Card> list, UniqueCardPicker cardPicker, Func<Dominion.Card, bool> meetConstraint)
+        {
+            while (list.Count < targetCount)
+            {
+                Dominion.Card currentCard = cardPicker.GetCard(meetConstraint);
+                if (currentCard == null)
+                    break;
+                list.Add(currentCard);
+            }
         }
     }
 }
