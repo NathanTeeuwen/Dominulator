@@ -84,20 +84,21 @@ namespace Win8Client
                     var uiScheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();
                     WebService.GetGameConfigFomServer(this.appDataContext).ContinueWith( descrTask =>
                         {
-                            Dominion.GameDescription gameDescription = descrTask.Result;
-                            if (gameDescription != null)
+                            GameDescriptionAndRating gameDescriptionAndRating = descrTask.Result;
+                            if (gameDescriptionAndRating != null)
                             {
-                                this.appDataContext.PopulateFromGameDescription(gameDescription);
+                                this.appDataContext.PopulateFromGameDescription(gameDescriptionAndRating.gameDescription);
+                                this.appDataContext.DeckRating.Value = (int)(gameDescriptionAndRating.rating + 0.5);
+                            }
+                            else
+                            {
+                                GenerateRandomDeck();
                             }
                         }, uiScheduler);
                 }
                 else
                 {
-                    this.appDataContext.DeckRating.Value = 0;
-                    var kingdomBuilder = new Dominion.GameConfigBuilder();
-                    kingdomBuilder.GenerateCompletelyRandomKingdom(this.appDataContext.AllCards.CurrentCards.Select(c => c.dominionCard), MainPage.random);
-                    Dominion.GameDescription gameDescription = kingdomBuilder.ToGameDescription();                    
-                    this.appDataContext.PopulateFromGameDescription(gameDescription);
+                    GenerateRandomDeck();
                 }
             }
             else
@@ -105,7 +106,8 @@ namespace Win8Client
                 this.appDataContext.CurrentDeck.CopyOrder();
                 DominionCard baneCard = this.appDataContext.BaneCard.CurrentCards.FirstOrDefault();
                 bool isCleanRoll = this.appDataContext.CurrentDeck.GenerateRandom(10, ref baneCard, this.appDataContext.AllCards.CurrentCards, itemsToReplace: currentDeckSelectedItems);
-                this.appDataContext.BaneCard.PopulateBaneCard(baneCard);                
+                this.appDataContext.BaneCard.PopulateBaneCard(baneCard);
+                this.appDataContext.DeckRating.Value = 0;
             }
 
             string jsonDescription = WebService.ToJson(this.appDataContext.GetGameConfig().gameDescription, 5).Stringify();
@@ -116,6 +118,15 @@ namespace Win8Client
             if (this.CurrentCardsChanged != null)
                 this.CurrentCardsChanged();            
         }        
+
+        private void GenerateRandomDeck()
+        {
+            this.appDataContext.DeckRating.Value = 0;
+            var kingdomBuilder = new Dominion.GameConfigBuilder();
+            kingdomBuilder.GenerateCompletelyRandomKingdom(this.appDataContext.AllCards.CurrentCards.Select(c => c.dominionCard), MainPage.random);
+            Dominion.GameDescription gameDescription = kingdomBuilder.ToGameDescription();
+            this.appDataContext.PopulateFromGameDescription(gameDescription);
+        }
 
         private void RefreshButtonClick(object sender, RoutedEventArgs e)
         {

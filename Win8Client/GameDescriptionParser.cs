@@ -8,6 +8,14 @@ using Dominion;
 
 namespace Win8Client
 {
+
+    public class GameDescriptionAndRating
+    {
+        public GameDescription gameDescription;
+        public double rating;
+    }
+
+
     public static class WebService
     {
         public static JsonObject ToJsonForGetExpansions(Dominion.GameDescription gameDescription)
@@ -80,7 +88,7 @@ namespace Win8Client
             return root;
         }        
 
-        public static Dominion.GameDescription GetGameDescriptionFromJson(string jsonString)
+        public static GameDescriptionAndRating GetGameDescriptionFromJson(string jsonString)
         {
             try
             {
@@ -97,8 +105,15 @@ namespace Win8Client
 
                 JsonArray eventArray = jsonDeck.GetNamedArray(jsonNameEvents);
                 string[] eventNames = eventArray.Select(jsonValue => jsonValue.GetString()).ToArray();
-                
-                return new Dominion.GameDescription(kingdomPileNames, eventNames, baneCardName, useShelters, useColonyAndPlatinum);
+
+                double rating = root.GetNamedNumber(jsonNameRating);
+
+                return new GameDescriptionAndRating() 
+                {
+                    gameDescription = new Dominion.GameDescription(kingdomPileNames, eventNames, baneCardName, useShelters, useColonyAndPlatinum),
+                    rating = rating
+                };
+                    
             }
             catch(System.Exception e)
             {
@@ -121,20 +136,25 @@ namespace Win8Client
             fullUrl.Append("?action=RECORD&values=");
             fullUrl.Append(parameter.Replace(" ", "%20"));
 
-            using (var client = new Windows.Web.Http.HttpClient())
-            using (var request = new Windows.Web.Http.HttpRequestMessage())
+            try
             {
-                request.RequestUri = new System.Uri(fullUrl.ToString());
-                using (Windows.Web.Http.HttpResponseMessage responseMessage = await client.SendRequestAsync(request).AsTask())
+                using (var client = new Windows.Web.Http.HttpClient())
+                using (var request = new Windows.Web.Http.HttpRequestMessage())
                 {
-                    string strResult = await responseMessage.Content.ReadAsStringAsync().AsTask();
-                    System.Diagnostics.Debug.WriteLine("RECORD Reponse from server:");
-                    System.Diagnostics.Debug.WriteLine(strResult);
+                    request.RequestUri = new System.Uri(fullUrl.ToString());
+                    using (Windows.Web.Http.HttpResponseMessage responseMessage = await client.SendRequestAsync(request).AsTask())
+                    {
+                        string strResult = await responseMessage.Content.ReadAsStringAsync().AsTask();
+                        System.Diagnostics.Debug.WriteLine("RECORD Reponse from server:");
+                        System.Diagnostics.Debug.WriteLine(strResult);
+                    }
                 }
             }
+            catch (System.Exception)
+            { }
         }
 
-        public static async Task<GameDescription> GetGameConfigFomServer(AppDataContext appDataContext)
+        public static async Task<GameDescriptionAndRating> GetGameConfigFomServer(AppDataContext appDataContext)
         {
             JsonObject jsonParameter = ToJsonForGetExpansions(appDataContext.GetGameConfig().gameDescription);
             string parameter = jsonParameter.Stringify();
@@ -144,20 +164,26 @@ namespace Win8Client
             fullUrl.Append("?action=GET&values=");
             fullUrl.Append(parameter.Replace(" ", "%20"));
 
-            using (var client = new Windows.Web.Http.HttpClient())
-            using (var request = new Windows.Web.Http.HttpRequestMessage())
+            try
             {
-                request.RequestUri = new System.Uri(fullUrl.ToString());
-                
-                using (Windows.Web.Http.HttpResponseMessage responseMessage = await client.SendRequestAsync(request).AsTask())
+                using (var client = new Windows.Web.Http.HttpClient())
+                using (var request = new Windows.Web.Http.HttpRequestMessage())
                 {
-                    if (responseMessage.IsSuccessStatusCode)
+                    request.RequestUri = new System.Uri(fullUrl.ToString());
+
+                    using (Windows.Web.Http.HttpResponseMessage responseMessage = await client.SendRequestAsync(request).AsTask())
                     {
-                        string strResult = await responseMessage.Content.ReadAsStringAsync().AsTask();
-                        Dominion.GameDescription description = WebService.GetGameDescriptionFromJson(strResult);
-                        return description;
+                        if (responseMessage.IsSuccessStatusCode)
+                        {
+                            string strResult = await responseMessage.Content.ReadAsStringAsync().AsTask();
+                            GameDescriptionAndRating description = WebService.GetGameDescriptionFromJson(strResult);
+                            return description;
+                        }
                     }
                 }
+            } catch (System.Exception)
+            {
+
             }
             return null;
         }
