@@ -31,7 +31,7 @@ namespace Win8Client
         public App()
         {
             this.InitializeComponent();
-            this.Suspending += OnSuspending;
+            this.Suspending += OnSuspending;            
         }
 
         /// <summary>
@@ -103,6 +103,8 @@ namespace Win8Client
         {
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: Save application state and stop any background activity
+
+            MainPage.appDataContextStatic.SendRatingToWebIfNecessary().Wait();
             deferral.Complete();
         }
     }

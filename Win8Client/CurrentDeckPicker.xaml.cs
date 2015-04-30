@@ -130,6 +130,7 @@ namespace Win8Client
 
         private void RefreshButtonClick(object sender, RoutedEventArgs e)
         {
+            this.appDataContext.SendRatingToWebIfNecessary();
             Randomize10Cards();
         }        
 
@@ -274,8 +275,6 @@ namespace Win8Client
                 this.appDataContext.DeckRating.Value = 0;
             else
                 this.appDataContext.DeckRating.Value = value;
-
-            WebService.SendGameConfigToServer(this.appDataContext);            
         }        
     }
 }

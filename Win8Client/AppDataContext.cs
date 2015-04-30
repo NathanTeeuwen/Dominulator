@@ -585,6 +585,14 @@ namespace Win8Client
 
             return SimulationStep.ReviewAndSimulate;
         }        
+
+        public async System.Threading.Tasks.Task SendRatingToWebIfNecessary()
+        {
+            if (this.DeckRating.Value != 0)
+            {
+                await WebService.SendGameConfigToServer(this);
+            }
+        }
     }
 
     public enum SimulationStep

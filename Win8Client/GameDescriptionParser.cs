@@ -124,7 +124,7 @@ namespace Win8Client
 
         private static string webUrl = "http://1-dot-mystic-planet-93017.appspot.com/dominiondeck";
 
-        public static async void SendGameConfigToServer(AppDataContext appDataContext)
+        public static async Task SendGameConfigToServer(AppDataContext appDataContext)
         {
             GameDescription gameDescription = appDataContext.GetGameConfig().gameDescription;
 

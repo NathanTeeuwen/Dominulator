@@ -20,12 +20,14 @@ namespace Win8Client
     public sealed partial class MainPage : Page
     {
         public static Random random = new System.Random();
+        public static AppDataContext appDataContextStatic;
 
-        AppDataContext appDataContext;
+        public AppDataContext appDataContext;
 
         public MainPage()
         {
-            this.appDataContext = new AppDataContext(this);  
+            MainPage.appDataContextStatic = new AppDataContext(this);
+            this.appDataContext = MainPage.appDataContextStatic;  
 
             this.InitializeComponent();
                   
