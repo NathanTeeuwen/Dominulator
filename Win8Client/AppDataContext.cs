@@ -240,7 +240,7 @@ namespace Win8Client
             {
                 if (this.UseSideBySideStrategy.Value)
                     this.SideBySideVisibility.Value = true;
-                else if (this.player1Strategy.PurchaseOrderDescriptions.Any() || this.player2Strategy.PurchaseOrderDescriptions.Any())
+                else if (this.NextSimulationStep.Value == SimulationStep.ReviewAndSimulate)
                     this.SideBySideVisibility.Value = true;
                 else
                     this.SideBySideVisibility.Value = false;
