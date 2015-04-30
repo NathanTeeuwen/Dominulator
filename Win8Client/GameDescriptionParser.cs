@@ -18,14 +18,18 @@ namespace Win8Client
 
     public static class WebService
     {
-        public static JsonObject ToJsonForGetExpansions(Dominion.GameDescription gameDescription)
+        public static JsonObject ToJsonForGetExpansions(AppDataContext appDataContext)
         {
             JsonObject root = new Windows.Data.Json.JsonObject();
 
             JsonArray expansionArray = new JsonArray();
-            foreach (var expansion in gameDescription.GetRequiredExpansions())
+
+            foreach (var expansion in appDataContext.Expansions)
             {
-                expansionArray.Add(JsonValue.CreateStringValue(expansion.ExpansionToString()));
+                JsonObject expansionObject = new JsonObject();
+                expansionObject.Add("name", JsonValue.CreateStringValue(expansion.DominionExpansion.ToProgramaticName()));
+                expansionObject.Add("present", JsonValue.CreateBooleanValue(expansion.IsEnabled.Value));
+                expansionArray.Add(expansionObject);
             }
             root.Add(jsonNameRequiredExpansions, expansionArray);
 
@@ -43,10 +47,26 @@ namespace Win8Client
             root.Add(jsonNameDeck, ToJson(gameDescription));
 
             JsonArray expansionArray = new JsonArray();
-            foreach (var expansion in gameDescription.GetRequiredExpansions())
+            Dominion.Expansion[] presentExpansions;
+            Dominion.Expansion[] missingExpansions;
+            gameDescription.GetRequiredExpansions(out presentExpansions, out missingExpansions);
+
+            foreach (var expansion in presentExpansions)
             {
-                expansionArray.Add(JsonValue.CreateStringValue(expansion.ToProgramaticName()));
+                JsonObject expansionObject = new JsonObject();
+                expansionObject.Add("name", JsonValue.CreateStringValue(expansion.ToProgramaticName()));
+                expansionObject.Add("present", JsonValue.CreateBooleanValue(true));
+                expansionArray.Add(expansionObject);
             }
+
+            foreach (var expansion in missingExpansions)
+            {
+                JsonObject expansionObject = new JsonObject();
+                expansionObject.Add("name", JsonValue.CreateStringValue(expansion.ToProgramaticName()));
+                expansionObject.Add("present", JsonValue.CreateBooleanValue(false));
+                expansionArray.Add(expansionObject);
+            }
+
             root.Add(jsonNameRequiredExpansions, expansionArray);
 
             root.Add(jsonNameRating, JsonValue.CreateNumberValue(starRating));
@@ -144,9 +164,12 @@ namespace Win8Client
                     request.RequestUri = new System.Uri(fullUrl.ToString());
                     using (Windows.Web.Http.HttpResponseMessage responseMessage = await client.SendRequestAsync(request).AsTask())
                     {
-                        string strResult = await responseMessage.Content.ReadAsStringAsync().AsTask();
-                        System.Diagnostics.Debug.WriteLine("RECORD Reponse from server:");
-                        System.Diagnostics.Debug.WriteLine(strResult);
+                        if (responseMessage.IsSuccessStatusCode)
+                        {
+                            string strResult = await responseMessage.Content.ReadAsStringAsync().AsTask();
+                            System.Diagnostics.Debug.WriteLine("RECORD Reponse from server:");
+                            System.Diagnostics.Debug.WriteLine(strResult);
+                        }
                     }
                 }
             }
@@ -156,7 +179,7 @@ namespace Win8Client
 
         public static async Task<GameDescriptionAndRating> GetGameConfigFomServer(AppDataContext appDataContext)
         {
-            JsonObject jsonParameter = ToJsonForGetExpansions(appDataContext.GetGameConfig().gameDescription);
+            JsonObject jsonParameter = ToJsonForGetExpansions(appDataContext);
             string parameter = jsonParameter.Stringify();
 
             var fullUrl = new System.Text.StringBuilder();
@@ -169,14 +192,15 @@ namespace Win8Client
                 using (var client = new Windows.Web.Http.HttpClient())
                 using (var request = new Windows.Web.Http.HttpRequestMessage())
                 {
-                    request.RequestUri = new System.Uri(fullUrl.ToString());
-
+                    request.RequestUri = new System.Uri(fullUrl.ToString());                    
                     using (Windows.Web.Http.HttpResponseMessage responseMessage = await client.SendRequestAsync(request).AsTask())
                     {
                         if (responseMessage.IsSuccessStatusCode)
                         {
                             string strResult = await responseMessage.Content.ReadAsStringAsync().AsTask();
                             GameDescriptionAndRating description = WebService.GetGameDescriptionFromJson(strResult);
+                            System.Diagnostics.Debug.WriteLine("Get Response from server:");
+                            System.Diagnostics.Debug.WriteLine(strResult);
                             return description;
                         }
                     }

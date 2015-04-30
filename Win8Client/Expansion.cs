@@ -6,6 +6,14 @@
         public ExpansionIndex Index { get; private set; }
         private DependencyObjectDecl<bool, DefaultTrue> isEnabled;
 
+        public Dominion.Expansion DominionExpansion 
+        { 
+            get
+            {
+                return DominionCard.GetExpansionForIndex(this.Index);
+            }
+        }
+
         public Expansion(string name, ExpansionIndex index)
         {
             this.Name = name;

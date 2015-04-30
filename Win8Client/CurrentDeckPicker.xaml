@@ -21,9 +21,29 @@
         </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Orientation="Horizontal">            
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBlock FontSize="20">Web Rating:</TextBlock>
+            <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding WebRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=1}"/>
+            <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding WebRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=2}"/>
+            <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding WebRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=3}"/>
+            <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding WebRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=4}"/>
+            <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding WebRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=5}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <TextBlock FontSize="20">My Rating:</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=1}" Click="Star1Button_Click"/>
+                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=2}" Click="Star2Button_Click"/>
+                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=3}" Click="Star3Button_Click"/>
+                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=4}" Click="Star4Button_Click"/>
+                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=5}" Click="Star5Button_Click"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">            
             <Button Style="{StaticResource SortAppBarButtonStyle}" BorderThickness="0">
                 <Button.Flyout>
                     <MenuFlyout>
@@ -34,15 +54,8 @@
                 </Button.Flyout>
             </Button>
             <Button Click="RefreshButtonClick" Style="{StaticResource RefreshAppBarButtonStyle}"></Button>
-            <StackPanel Orientation="Horizontal">
-                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=1}" Click="Star1Button_Click"/>
-                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=2}" Click="Star2Button_Click"/>
-                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=3}" Click="Star3Button_Click"/>
-                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=4}" Click="Star4Button_Click"/>
-                <Button FontFamily="Segoe UI Symbol" FontSize="20" BorderThickness="0" Content="{Binding DeckRating.Value, Converter={StaticResource DeckRatingConverter}, ConverterParameter=5}" Click="Star5Button_Click"/>
-            </StackPanel>
         </StackPanel>
-        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
             <TextBlock FontSize="20" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=MakeSelection}">To begin simulation select some cards.</TextBlock>
             <TextBlock FontSize="20" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=MakeSelectionForPlayer1}">Select cards for Player 1.</TextBlock>
             <Button Style="{StaticResource AddToStrategy1BarButtonStyle}" BorderThickness="0" Click="AddToStrategy1Click" Visibility="{Binding IsAddToPlayer1ButtonVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
@@ -53,7 +66,7 @@
             <TextBlock FontSize="20" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=Player2CanNotBeSimulated}">Player 2 can not be simulated.</TextBlock>
             <Button Style="{StaticResource SimulateAppBarButtonStyle}" BorderThickness="0" Click="SimulateGameButtonClick" Visibility="{Binding NextSimulationStep.Value, Converter={StaticResource EnumVisibility}, ConverterParameter=ReviewAndSimulate}"/>            
         </StackPanel>
-        <ScrollViewer Grid.Row="1" ZoomMode="Disabled">
+        <ScrollViewer Grid.Row="3" ZoomMode="Disabled">
             <StackPanel Orientation="Vertical">            
                 <ListView Name="CurrentCardsListView"  
                           ItemsSource="{Binding CurrentDeck.Cards}" 

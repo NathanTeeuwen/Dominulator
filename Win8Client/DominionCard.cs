@@ -100,6 +100,25 @@ namespace Win8Client
             }
         }
 
+        public static Dominion.Expansion GetExpansionForIndex(ExpansionIndex index)
+        {
+            switch (index)
+            {
+                case ExpansionIndex.Alchemy: return Dominion.Expansion.Alchemy;
+                case ExpansionIndex.Base: return Dominion.Expansion.Base;
+                case ExpansionIndex.Cornucopia: return Dominion.Expansion.Cornucopia;
+                case ExpansionIndex.DarkAges: return Dominion.Expansion.DarkAges;
+                case ExpansionIndex.Guilds: return Dominion.Expansion.Guilds;
+                case ExpansionIndex.Hinterlands: return Dominion.Expansion.Hinterlands;
+                case ExpansionIndex.Intrigue: return Dominion.Expansion.Intrigue;
+                case ExpansionIndex.Promo: return Dominion.Expansion.Promo;
+                case ExpansionIndex.Prosperity: return Dominion.Expansion.Prosperity;
+                case ExpansionIndex.Seaside: return Dominion.Expansion.Seaside;
+                case ExpansionIndex.Adventures: return Dominion.Expansion.Adventures;
+            }
+            throw new Exception("Expansion not found");
+        }
+
         private static ExpansionIndex GetExpansionIndex(Dominion.Expansion expansion)
         {
             switch (expansion)

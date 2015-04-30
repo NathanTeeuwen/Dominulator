@@ -88,7 +88,8 @@ namespace Win8Client
                             if (gameDescriptionAndRating != null)
                             {
                                 this.appDataContext.PopulateFromGameDescription(gameDescriptionAndRating.gameDescription);
-                                this.appDataContext.DeckRating.Value = (int)(gameDescriptionAndRating.rating + 0.5);
+                                this.appDataContext.WebRating.Value = (int)(gameDescriptionAndRating.rating + 0.5);
+                                this.appDataContext.DeckRating.Value = 0;
                             }
                             else
                             {
@@ -108,6 +109,7 @@ namespace Win8Client
                 bool isCleanRoll = this.appDataContext.CurrentDeck.GenerateRandom(10, ref baneCard, this.appDataContext.AllCards.CurrentCards, itemsToReplace: currentDeckSelectedItems);
                 this.appDataContext.BaneCard.PopulateBaneCard(baneCard);
                 this.appDataContext.DeckRating.Value = 0;
+                this.appDataContext.WebRating.Value = 0;
             }
 
             string jsonDescription = WebService.ToJson(this.appDataContext.GetGameConfig().gameDescription, 5).Stringify();
@@ -122,6 +124,7 @@ namespace Win8Client
         private void GenerateRandomDeck()
         {
             this.appDataContext.DeckRating.Value = 0;
+            this.appDataContext.WebRating.Value = 0;          
             var kingdomBuilder = new Dominion.GameConfigBuilder();
             kingdomBuilder.GenerateCompletelyRandomKingdom(this.appDataContext.AllCards.CurrentCards.Select(c => c.dominionCard), MainPage.random);
             Dominion.GameDescription gameDescription = kingdomBuilder.ToGameDescription();

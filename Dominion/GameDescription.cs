@@ -43,7 +43,7 @@ namespace Dominion
             return this.baneCard != null ? baneCard.ProgrammaticName : null;
         }
 
-        public Expansion[] GetRequiredExpansions()
+        public void GetRequiredExpansions(out Expansion[] present, out Expansion[] missing)
         {
             var isExpansionRequired = new bool[(int)Expansion.Count];
 
@@ -62,16 +62,22 @@ namespace Dominion
                 isExpansionRequired[(int)baneCard.expansion] = true;
             }
 
-            var result = new List<Expansion>();
+            var presentList = new List<Expansion>();
+            var missingList = new List<Expansion>();
             for (int i = 0; i < isExpansionRequired.Length; ++i)
             {
                 if (isExpansionRequired[i])
                 {
-                    result.Add((Expansion)i);
+                    presentList.Add((Expansion)i);
+                }
+                else
+                {
+                    missingList.Add((Expansion)i);
                 }
             }
 
-            return result.ToArray();
+            present = presentList.ToArray();
+            missing = missingList.ToArray();
         }
 
         public static Card GetCardFromProgrammaticName(string name)
