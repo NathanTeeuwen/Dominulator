@@ -158,9 +158,9 @@ namespace Win8Client
 
             this.CalculateSideBySideViewVisibility(this, null);
 
-            this.allCards.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
-            this.currentDeck.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
-            this.eventCards.ApplyFilter(card => card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
+            this.allCards.ApplyFilter(card => card != null && card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
+            this.currentDeck.ApplyFilter(card => card != null && card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
+            this.eventCards.ApplyFilter(card => card != null && card.Expansion != ExpansionIndex._Unknown && this.expansions[(int)card.Expansion].IsEnabled.Value);
         }              
 
         void AvailableCards_PropetyChanged(object sender, PropertyChangedEventArgs e)

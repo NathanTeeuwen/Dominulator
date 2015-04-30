@@ -24,23 +24,23 @@ namespace Dominion
         }
 
         public GameDescription(string[] kingdomPiles, string[] events, string baneCard, bool useShelters, bool useColonyAndPlatinum)
-            : this(GetCardsFromNames(kingdomPiles), GetCardsFromNames(events), GetCardFromName(baneCard), useShelters, useColonyAndPlatinum)
+            : this(GetCardsFromProgrammaticNames(kingdomPiles), GetCardsFromProgrammaticNames(events), GetCardFromProgrammaticName(baneCard), useShelters, useColonyAndPlatinum)
         {            
         }
 
-        public string[] KingdomPileNames()
+        public string[] KingdomPileProgramaticNames()
         {
-            return this.kingdomPiles.Select(c => c.name).ToArray();
+            return this.kingdomPiles.Select(c => c.ProgrammaticName).ToArray();
         }
 
-        public string[] EventNames()
+        public string[] EventProgramaticNames()
         {
-            return this.events.Select(c => c.name).ToArray();
+            return this.events.Select(c => c.ProgrammaticName).ToArray();
         }
 
-        public string BanePileName()
+        public string BanePileProgrammaticName()
         {
-            return this.baneCard != null ? baneCard.name : null;
+            return this.baneCard != null ? baneCard.ProgrammaticName : null;
         }
 
         public Expansion[] GetRequiredExpansions()
@@ -74,14 +74,14 @@ namespace Dominion
             return result.ToArray();
         }
 
-        public static Card GetCardFromName(string name)
+        public static Card GetCardFromProgrammaticName(string name)
         {
-            return Cards.AllCards().Where(c => c.name == name).FirstOrDefault();
+            return Cards.AllCards().Where(c => c.ProgrammaticName == name).FirstOrDefault();
         }
 
-        public static Card[] GetCardsFromNames(string[] cardNames)
+        public static Card[] GetCardsFromProgrammaticNames(string[] cardNames)
         {
-            return cardNames.Select(name => GetCardFromName(name)).ToArray();
+            return cardNames.Select(name => GetCardFromProgrammaticName(name)).ToArray();
         }
     }
 }

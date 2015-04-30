@@ -10,6 +10,11 @@ namespace Dominion
 
     public static class ExpansionExtensionMethods
     {
+        public static string ToProgramaticName(this Dominion.Expansion expansion)
+        {
+            return ExpansionToString(expansion).Replace(" ", "_");
+        }
+
         public static string ExpansionToString(this Dominion.Expansion expansion)
         {
             switch (expansion)

@@ -37,7 +37,7 @@ namespace Win8Client
             JsonArray expansionArray = new JsonArray();
             foreach (var expansion in gameDescription.GetRequiredExpansions())
             {
-                expansionArray.Add(JsonValue.CreateStringValue(expansion.ExpansionToString()));
+                expansionArray.Add(JsonValue.CreateStringValue(expansion.ToProgramaticName()));
             }
             root.Add(jsonNameRequiredExpansions, expansionArray);
 
@@ -57,21 +57,21 @@ namespace Win8Client
 
             root.Add(jsonNameUseShelters, JsonValue.CreateBooleanValue(gameDescription.useShelters));
             root.Add(jsonNameUseColonyAndPlatinum, JsonValue.CreateBooleanValue(gameDescription.useColonyAndPlatinum));
-            string banePileName = gameDescription.BanePileName();
+            string banePileName = gameDescription.BanePileProgrammaticName();
             if (banePileName != null)
             {
                 root.Add(jsonNameBane, JsonValue.CreateStringValue(banePileName));
             }
 
             JsonArray kingdomArray = new JsonArray();
-            foreach (var cardName in gameDescription.KingdomPileNames())
+            foreach (var cardName in gameDescription.KingdomPileProgramaticNames())
             {
                 kingdomArray.Add(JsonValue.CreateStringValue(cardName));
             }
             root.Add(jsonNameKingdomPiles, kingdomArray);
 
             JsonArray eventArray = new JsonArray();
-            foreach (var cardName in gameDescription.EventNames())
+            foreach (var cardName in gameDescription.EventProgramaticNames())
             {
                 eventArray.Add(JsonValue.CreateStringValue(cardName));
             }
