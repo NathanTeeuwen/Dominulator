@@ -47,13 +47,13 @@ namespace Win8Client
        
         private void ClearStrategy1ButtonClick(object sender, RoutedEventArgs e)
         {
-            this.appDataContext.player1Strategy.PurchaseOrderDescriptions.Clear();
+            this.appDataContext.player1Strategy.Clear();
             this.appDataContext.UpdateSimulationStep();
         }
 
         private void ClearStrategy2ButtonClick(object sender, RoutedEventArgs e)
         {
-            this.appDataContext.player2Strategy.PurchaseOrderDescriptions.Clear();
+            this.appDataContext.player2Strategy.Clear();
             this.appDataContext.UpdateSimulationStep();
         }
 

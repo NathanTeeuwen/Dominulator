@@ -54,7 +54,7 @@ namespace Win8Client
 
         private void ClearStrategyButtonClick(object sender, RoutedEventArgs e)
         {
-            this.appDataContext.currentStrategy.Value.PurchaseOrderDescriptions.Clear();
+            this.appDataContext.currentStrategy.Value.Clear();
             this.appDataContext.UpdateSimulationStep();
         }        
 

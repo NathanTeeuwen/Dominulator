@@ -43,15 +43,22 @@ namespace Win8Client
             }
         }
 
-        public void PopulateFrom(Dominion.Strategy.Description.StrategyDescription descr)
+        public void Clear()
         {
             this.PurchaseOrderDescriptions.Clear();
+            this.TrashOrderDescriptions.Clear();
+            this.EditingDescription.Value = PriorityDescription.PurchaseOrder;
+        }
+
+        public void PopulateFrom(Dominion.Strategy.Description.StrategyDescription descr)
+        {
+            this.Clear();
+            
             foreach (Dominion.Strategy.Description.CardAcceptanceDescription cardAcceptanceDescription in descr.purchaseOrderDescription.descriptions)
             {
                 this.PurchaseOrderDescriptions.Add(CardAcceptanceDescription.PopulateFrom(cardAcceptanceDescription));
             }
 
-            this.TrashOrderDescriptions.Clear();
             foreach (Dominion.Strategy.Description.CardAcceptanceDescription cardAcceptanceDescription in descr.trashOrderDescription.descriptions)
             {
                 this.TrashOrderDescriptions.Add(CardAcceptanceDescription.PopulateFrom(cardAcceptanceDescription));

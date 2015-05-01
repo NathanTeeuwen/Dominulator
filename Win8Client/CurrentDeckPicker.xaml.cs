@@ -74,8 +74,8 @@ namespace Win8Client
             if (!isReplacing && !isGrowing && !isReducing)
             {
                 // clean roll
-                this.appDataContext.player1Strategy.PurchaseOrderDescriptions.Clear();
-                this.appDataContext.player2Strategy.PurchaseOrderDescriptions.Clear();
+                this.appDataContext.player1Strategy.Clear();
+                this.appDataContext.player2Strategy.Clear();
                 this.appDataContext.UpdateSimulationStep();
                 this.appDataContext.CurrentDeck.ReapplySortOrder();
 
