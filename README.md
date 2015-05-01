@@ -40,8 +40,8 @@ The goals of the project are as follows.
   
 Goal 6 is lofty - but would be very nice :).
 
-Setup
-=====
+Setup For Developing Windows 8 Client
+=====================================
 
 Install [Visual Studio community edition](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx)
 
@@ -52,6 +52,23 @@ Install [Visual Studio community edition](https://www.visualstudio.com/en-us/pro
 OR to contribute to the UI
 
  1. Load Win8Client.sln from the root of the repository
+ 
+Setup for Developing AppEngine Web Service
+==========================================
+
+Install [ Google App Engine SDK for Java](https://cloud.google.com/appengine/downloads) 
+
+Recommended Development Environment
+
+  1. [Java 1.7] (http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
+  2. [AppEngine Java SDK] (https://storage.googleapis.com/appengine-sdks/featured/appengine-java-sdk-1.9.19.zip)
+  3. [Eclipse] (http://www.eclipse.org/downloads)
+  4. [Check out More Info on Google Plugin For Eclipse] (https://developers.google.com/eclipse/docs/getting_started)
+  5. [Install the following plugins into eclipse] https://developers.google.com/eclipse/docs/install-eclipse-4.4
+     a. Google Plugin for Eclipse
+     b. Google App Engine Java SDK
+     c. Maven Integration
+  
 
 Module Structure
 =================
