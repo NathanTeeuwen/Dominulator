@@ -57,14 +57,59 @@ namespace Dominion
             return this.mapCardIndexToSubsetIndex[card.Index];
         }      
 
-        public IEnumerator<Card> GetEnumerator()
+        public struct Enumerator
+            : IEnumerator<Card>
         {
-            for (int i = 0; i < this.mapSubsetIndexToCard.Length; ++i )
+            int currentIndex;
+            private CardGameSubset cardGameSubset;
+
+            public Enumerator(CardGameSubset cardGameSubset)
             {
-                if (this.mapSubsetIndexToCard[i] == null)
-                    yield break;
-                yield return this.mapSubsetIndexToCard[i];
+                this.currentIndex = -1;
+                this.cardGameSubset = cardGameSubset;                
             }
+
+            public void Reset()
+            {
+                this.currentIndex = -1;
+            }
+
+            public bool MoveNext()
+            {
+                this.currentIndex++;
+                return this.currentIndex < this.cardGameSubset.nextIndex;
+            }
+
+            public Card Current
+            {
+                get
+                {
+                    return this.cardGameSubset.GetCardForIndex(this.currentIndex);
+                }
+            }
+
+            public void Dispose()
+            {
+
+            }
+
+            object IEnumerator.Current
+            {
+                get
+                {
+                    return this.Current;
+                }
+            }
+        }
+
+        public Enumerator GetEnumerator()
+        {
+            return new Enumerator(this);
+        }
+
+        IEnumerator<Card> IEnumerable<Card>.GetEnumerator()
+        {
+            return this.GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()

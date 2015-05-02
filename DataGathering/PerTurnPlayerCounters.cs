@@ -217,7 +217,7 @@ namespace Dominion.Data
 
         public PerTurnPlayerCounters(int playerCount)
         {
-            this.sumAtTurnPerPlayer = new List<int>[2];
+            this.sumAtTurnPerPlayer = new List<int>[playerCount];
             for (int playerIndex = 0; playerIndex < this.sumAtTurnPerPlayer.Length; ++playerIndex)
             {
                 this.sumAtTurnPerPlayer[playerIndex] = new List<int>(capacity: 30);
