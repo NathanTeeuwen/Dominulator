@@ -90,7 +90,10 @@ namespace Dominion.Strategy.Description
             { Cards.Contraband, 1},
             { Cards.CounterFeit, 2},
             { Cards.Forager, 2},
-            { Cards.Rats, 1}
+            { Cards.Rats, 1},
+            { Cards.Raze, 1},
+            { Cards.HornOfPlenty, 1},
+            { Cards.Cultist, CountAsManyAsPossible}
         };
 
         public static StrategyDescription GetDefaultDescription(GameConfig gameConfig)
