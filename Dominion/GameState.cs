@@ -582,7 +582,23 @@ namespace Dominion
                 return false;
             }
 
-            return pile.TopCard() == cardType;
+            return IsCardEqualOrOfType(pile.TopCard(), cardType);
+        }
+
+        private bool IsCardEqualOrOfType(Card card, Card cardOrType)
+        {
+            if (card == cardOrType)
+                return true;
+
+            if (card == null)
+                return false;
+
+            if(cardOrType == Cards.Ruins)
+            {
+                return card.isRuins;
+            }
+
+            return false;
         }
 
         public Card PlayerGainCardFromSupply(Card cardType, PlayerState playerState, DeckPlacement defaultLocation = DeckPlacement.Discard, GainReason gainReason = GainReason.Gain)
@@ -596,9 +612,9 @@ namespace Dominion
             }
 
             if (GetPile(this.supplyPiles, cardType) != null)
-                this.hasPileEverBeenGained[pile] = true;            
+                this.hasPileEverBeenGained[pile] = true;
 
-            if (pile.TopCard() != cardType)
+            if (!IsCardEqualOrOfType(pile.TopCard(), cardType))
             {
                 System.Diagnostics.Debug.Assert(!canGainCardFromSupply);
                 return null;
