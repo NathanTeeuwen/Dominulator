@@ -39,13 +39,13 @@ namespace Win8Client
         public DependencyObjectDecl<StrategyDescription, DefaultEmptyStrategyDescription> currentStrategy { get; private set; }
         public StrategyDescription player1Strategy { get; private set; }
         public StrategyDescription player2Strategy { get; private set; }
-        private bool isStrategy1Selected;
-
+  
         public DependencyObjectDecl<PageConfig, DefaultCurrent> CurrentPageConfig{ get; private set; }
         public DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton> SettingsButtonVisibility { get; private set; }
         public DependencyObjectDecl<SimulationStep, DefaultSimulationStep> NextSimulationStep { get; private set; }        
         public DependencyObjectDeclWithSettings<bool, DefaultFalse> UseSideBySideStrategy { get; private set; }
         public DependencyObjectDecl<bool, DefaultFalse> SideBySideVisibility { get; private set; }
+        public DependencyObjectDecl<bool, DefaultFalse> CompactStrategyVisibility { get; private set; }
         public DependencyObjectDecl<bool, DefaultFalse> IsSelectionPresentOnCurrentDeck { get; private set; }
         public DependencyObjectDecl<bool, DefaultFalse> IsAddToPlayer1ButtonVisible { get; private set; }
         public DependencyObjectDecl<bool, DefaultFalse> IsAddToPlayer2ButtonVisible { get; private set; }
@@ -111,6 +111,7 @@ namespace Win8Client
             this.SettingsButtonVisibility = new DependencyObjectDecl<SettingsButtonVisibility, DefaultSettingsButton>(this);            
             this.UseSideBySideStrategy = new DependencyObjectDeclWithSettings<bool, DefaultFalse>(this, "View Strategy Side By Side");
             this.SideBySideVisibility = new DependencyObjectDecl<bool, DefaultFalse>(this);
+            this.CompactStrategyVisibility = new DependencyObjectDecl<bool, DefaultFalse>(this);
             this.IsSelectionPresentOnCurrentDeck = new DependencyObjectDecl<bool, DefaultFalse>(this);
             this.NextSimulationStep = new DependencyObjectDecl<SimulationStep, DefaultSimulationStep>(this);
             this.IsAddToPlayer1ButtonVisible = new DependencyObjectDecl<bool, DefaultFalse>(this);
@@ -153,11 +154,13 @@ namespace Win8Client
             this.currentDeck.PropertyChanged += UpdateBaneCard_PropetyChanged;
             this.eventCards.PropertyChanged += UpdateEventCard_PropertyChanged;
 
+            this.CurrentPageConfig.PropertyChanged += CalculateCompactStrategyVisibility;
             this.CurrentPageConfig.PropertyChanged += CalculateSideBySideViewVisibility;
             this.UseSideBySideStrategy.PropertyChanged += CalculateSideBySideViewVisibility;
             this.IsSelectionPresentOnCurrentDeck.PropertyChanged += UpdateSimulationStepEvent;
             this.NextSimulationStep.PropertyChanged += UpdatePlayerButtonVisibilitiesEvent;            
-            this.NextSimulationStep.PropertyChanged += CalculateSideBySideViewVisibility;            
+            this.NextSimulationStep.PropertyChanged += CalculateSideBySideViewVisibility;
+            this.NextSimulationStep.PropertyChanged += CalculateCompactStrategyVisibility;
 
             this.CalculateSideBySideViewVisibility(this, null);
 
@@ -242,16 +245,32 @@ namespace Win8Client
             if (this.CurrentPageConfig.Value == Win8Client.PageConfig.AllCards || this.CurrentPageConfig.Value == Win8Client.PageConfig.CurrentDeck)
             {
                 if (this.UseSideBySideStrategy.Value)
-                    this.SideBySideVisibility.Value = true;
-                else if (this.NextSimulationStep.Value == SimulationStep.ReviewAndSimulate)
-                    this.SideBySideVisibility.Value = true;
-                else
-                    this.SideBySideVisibility.Value = false;
+                {
+                    if (this.player1Strategy.KingdomCards.Any() || this.player2Strategy.KingdomCards.Any())
+                    {
+                        this.SideBySideVisibility.Value = true;
+                        return;
+                    }
+                }
             }
-            else
+            this.SideBySideVisibility.Value = false;
+        }
+
+        void CalculateCompactStrategyVisibility(object sender, PropertyChangedEventArgs e)
+        {
+            if (this.CurrentPageConfig.Value == Win8Client.PageConfig.AllCards || this.CurrentPageConfig.Value == Win8Client.PageConfig.CurrentDeck)
             {
-                this.SideBySideVisibility.Value = false;
-            }                
+                if (!this.UseSideBySideStrategy.Value)
+                {    
+                      if (this.player1Strategy.KingdomCards.Any() || this.player2Strategy.KingdomCards.Any())
+                      {
+                           this.CompactStrategyVisibility.Value = true;
+                           return;
+                      }                 
+                }
+            }
+
+            this.CompactStrategyVisibility.Value = false;            
         }
 
         void UpdateBaneCard_PropetyChanged(object sender, PropertyChangedEventArgs e)
@@ -494,7 +513,7 @@ namespace Win8Client
 
                 var strategyComparison = new Dominion.Data.StrategyComparison(playerActions, gameConfig, rotateWhoStartsFirst, numberOfGames);
 
-                Dominion.Data.StrategyComparisonResults strategyComparisonResults = strategyComparison.ComparePlayers(randomSeed: MainPage.random.Next());
+                Dominion.Data.StrategyComparisonResults strategyComparisonResults = strategyComparison.ComparePlayers(randomSeed: MainPage.random.Next(), shouldParallel:false);
                 return new StrategyUIResults()
                 {
                     strategyComparisonResults = strategyComparisonResults,
@@ -595,6 +614,11 @@ namespace Win8Client
             {
                 await WebService.SendGameConfigToServer(this);
             }
+        }
+
+        public void ViewStrategiesFullScreen()
+        {
+            this.CurrentPageConfig.Value = PageConfig.Strategy;
         }
     }
 

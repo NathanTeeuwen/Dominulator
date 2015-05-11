@@ -1,4 +1,6 @@
-﻿
+﻿using System;
+using System.Linq;
+
 namespace Win8Client
 {
     public enum PriorityDescription
@@ -9,6 +11,7 @@ namespace Win8Client
 
     public class StrategyDescription
     {
+        public System.Collections.ObjectModel.ObservableCollection<DominionCard> KingdomCards { get; private set; }
         public System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> PurchaseOrderDescriptions { get; private set; }
         public System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> TrashOrderDescriptions { get; private set; }   
         public DependencyObjectDecl<Dominion.StartingCardSplit, DefaultSplit4> StartingCardSplit { get; private set; }
@@ -17,6 +20,7 @@ namespace Win8Client
         
         public StrategyDescription()
         {
+            this.KingdomCards = new System.Collections.ObjectModel.ObservableCollection<DominionCard>();
             this.PurchaseOrderDescriptions = new System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription>();
             this.TrashOrderDescriptions = new System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription>();
             this.StartingCardSplit = new DependencyObjectDecl<Dominion.StartingCardSplit, DefaultSplit4>(this);
@@ -24,8 +28,18 @@ namespace Win8Client
             this.CurrentDescription = new DependencyObjectDecl<System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription>, DefaultObservableCollection>(this);
 
             this.EditingDescription.PropertyChanged += EditingDescription_PropertyChanged;
+            this.PurchaseOrderDescriptions.CollectionChanged += PurchaseOrderDescriptions_CollectionChanged;
 
             SetCurrentDescription();
+        }
+
+        void PurchaseOrderDescriptions_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            this.KingdomCards.Clear();
+            foreach (var card in this.PurchaseOrderDescriptions.GroupBy(c => c.Card.Value).Select(group => group.Key).Where(c => c.dominionCard.isKingdomCard))
+            {
+                this.KingdomCards.Add(card);
+            }
         }
 
         void EditingDescription_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)

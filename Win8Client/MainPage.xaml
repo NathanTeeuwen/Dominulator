@@ -21,7 +21,7 @@
             <local:CurrentDeckVisibilityConverter x:Key="CurrentDeckVisibilityConverter" />
             <local:AllCardVisibilityConverter x:Key="AllCardVisibilityConverter" />
             <local:SettingsVisibilityConverter x:Key="SettingsVisibilityConverter" />
-            <local:StrategyVisibilityConverter x:Key="StrategyVisibilityConverter" />
+            <local:StrategyVisibilityConverter x:Key="StrategyVisibilityConverter" />            
             <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
         </Grid.Resources>
         <Grid.RowDefinitions>
@@ -50,6 +50,7 @@
                     <local:SideBySideStrategyView Margin="10,0,0,0" Visibility="{Binding SideBySideVisibility.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
                     <local:Settings Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource SettingsVisibilityConverter}}"/>
                     <local:DualStrategyView Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource StrategyVisibilityConverter}}"/>
+                    <local:CompactyStrategyView Visibility="{Binding CompactStrategyVisibility.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
                 </StackPanel>
                 <WebView Grid.Row="0" x:Name="ResultsWebView" Width="Auto" Height="Auto" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource ReportVisibilityConverter}}"></WebView>
             </Grid>            

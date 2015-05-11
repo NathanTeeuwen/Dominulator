@@ -76,7 +76,7 @@ namespace Win8Client
 
         private void StrategyButton_Click(object sender, RoutedEventArgs e)
         {
-            this.appDataContext.CurrentPageConfig.Value = PageConfig.Strategy;
+            this.appDataContext.ViewStrategiesFullScreen();
         }
     }   
 }
