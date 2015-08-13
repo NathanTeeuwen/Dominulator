@@ -1299,6 +1299,29 @@ namespace Dominion
             return cardtoTrash;
         }
 
+         internal Card RequestPlayerMoveRevealedCardToHand(GameState gameState, CardPredicate acceptableCard)
+        {
+            if (!this.cardsBeingRevealed.AnyWhere(acceptableCard))
+            {
+                return null;
+            }
+
+            Card cardToPutInHand = this.actions.GetCardFromRevealedCardsToPutInHand(gameState, acceptableCard);
+            if (cardToPutInHand == null)
+            {
+                throw new Exception("Player must choose a card to put in hand");
+            }
+
+            if (!acceptableCard(cardToPutInHand))
+            {
+                throw new Exception("Card did not meet constraint");
+            }
+
+            this.MoveRevealedCardToHand(cardToPutInHand);
+
+            return cardToPutInHand;
+        }       
+
         internal void RequestPlayerDiscardRevealedCard(GameState gameState)
         {
             if (this.cardsBeingRevealed.Any)

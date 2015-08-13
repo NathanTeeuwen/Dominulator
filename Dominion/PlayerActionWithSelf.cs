@@ -179,6 +179,15 @@ namespace Dominion
             return result;
         }
 
+        public Card GetCardFromRevealedCardsToPutInHand(GameState gameState, CardPredicate acceptableCard)
+        {
+            var saved = gameState.self;
+            gameState.self = this.self;
+            var result = this.playerAction.GetCardFromRevealedCardsToPutInHand(gameState, acceptableCard);
+            gameState.self = saved;
+            return result;
+        }        
+
         public Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
         {
             var saved = gameState.self;

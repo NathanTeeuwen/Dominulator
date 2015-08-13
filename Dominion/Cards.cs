@@ -678,7 +678,6 @@ namespace Dominion
             Cards.Peasant,            
             Cards.Ranger,
             Cards.RatCatcher,
-            Cards.Raze,
             Cards.Relic,
             Cards.RoyalCarriage,
             Cards.Solider,            

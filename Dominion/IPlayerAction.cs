@@ -24,6 +24,7 @@ namespace Dominion
         Card GetCardFromDiscardToTopDeck(GameState gameState, bool isOptional);
         Card GetCardFromRevealedCardsToTopDeck(GameState gameState, bool isOptional);
         Card GetCardFromRevealedCardsToTrash(GameState gameState, CardPredicate acceptableCard);
+        Card GetCardFromRevealedCardsToPutInHand(GameState gameState, CardPredicate acceptableCard);
         Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState);
         Card GetCardFromRevealedCardsToDiscard(GameState gameState);
         Card GetCardFromHandToDeferToNextTurn(GameState gameState);

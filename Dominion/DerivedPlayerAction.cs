@@ -102,6 +102,11 @@ namespace Dominion
             return this.playerAction.GetCardFromRevealedCardsToTrash(gameState, acceptableCard);            
         }
 
+        public virtual Card GetCardFromRevealedCardsToPutInHand(GameState gameState, CardPredicate acceptableCard)
+        {
+            return this.playerAction.GetCardFromRevealedCardsToPutInHand(gameState, acceptableCard);            
+        }      
+
         public virtual Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
         {
             return this.playerAction.GetCardFromRevealedCardsToPutOnDeck(gameState);            

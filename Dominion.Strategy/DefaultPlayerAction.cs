@@ -223,6 +223,23 @@ namespace Dominion.Strategy
             return result;
         }
 
+        public override Card GetCardFromRevealedCardsToPutInHand(GameState gameState, CardPredicate acceptableCard)
+        {
+            var selfPlayer = gameState.Self;
+
+            Card result = this.discardOrder.GetPreferredCardReverse(
+                gameState,
+                card => selfPlayer.CardsBeingRevealed.HasCard(card) && acceptableCard(card));
+
+            // warning, strategy didnt' include what to, try to do a reasonable default.
+            if (result == null)
+            {
+                result = selfPlayer.CardsBeingRevealed.Where(c => acceptableCard(c)).OrderByDescending(c => c, new DefaultPlayRules.CompareCardByFirstToDiscard()).FirstOrDefault();
+            }
+
+            return result;
+        }
+
         public override Card GetCardFromRevealedCardsToDiscard(GameState gameState)
         {           
             var self = gameState.Self;

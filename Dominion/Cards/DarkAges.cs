@@ -1279,7 +1279,7 @@ namespace Dominion.CardTypes
             otherPlayer.RequestPlayerDiscardDownToCountInHand(gameState, 4);
         }
 
-        private void DoSpecializedActionToCardWhileInPlay(PlayerState currentPlayer, GameState gameState, Card card)
+        private new void DoSpecializedActionToCardWhileInPlay(PlayerState currentPlayer, GameState gameState, Card card)
         {
             if (card.isAttack)
             {                

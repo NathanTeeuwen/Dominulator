@@ -169,6 +169,15 @@ namespace Dominion.Strategy
                 return base.GetCardFromRevealedCardsToTrash(gameState, acceptableCard);
         }
 
+        public override Card GetCardFromRevealedCardsToPutInHand(GameState gameState, CardPredicate acceptableCard)
+        {
+            IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);
+            if (playerAction != null)
+                return playerAction.GetCardFromRevealedCardsToPutInHand(gameState, acceptableCard);
+            else
+                return base.GetCardFromRevealedCardsToPutInHand(gameState, acceptableCard);
+        }        
+
         public override Card GetCardFromRevealedCardsToPutOnDeck(GameState gameState)
         {
             IPlayerAction playerAction = this.GetActionForCurrentCardContext(gameState);

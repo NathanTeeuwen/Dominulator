@@ -741,10 +741,8 @@ namespace Dominion.CardTypes
                 return;
 
             currentPlayer.LookAtCardsFromDeck(cardsToLookAt, gameState);
-            // TODO: ask player to put one card in hand.
+            currentPlayer.RequestPlayerMoveRevealedCardToHand(gameState, c => true);            
             currentPlayer.MoveLookedAtCardsToDiscard(gameState);
-
-            throw new NotImplementedException();
         }
     }
 
