@@ -30,6 +30,7 @@ namespace Dominion
         void PlayerTopDeckedCard(PlayerState playerState, Card card);
         void PlayerSetAsideCardFromHandForNextTurn(PlayerState playerState, Card card);
         void PlayerPlacedCardOnIslandMat(PlayerState playerState, Card card);
+        void PlayerPlacedCardOnNativeVillageMat(PlayerState playerState, Card card);
         void PlayerReturnedCardToHand(PlayerState playerState, Card card);
         void PlayerReturnedCardToPile(PlayerState playerState, Card card);
         void DrewCardIntoHand(PlayerState playerState, Card card);

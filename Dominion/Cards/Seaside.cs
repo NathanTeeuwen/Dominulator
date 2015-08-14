@@ -291,7 +291,7 @@ namespace Dominion.CardTypes
 
             if (choice == PlayerActionChoice.PutNativeVillageMatInHand)
             {
-                currentPlayer.MoveNativeVillageMatToHand();
+                currentPlayer.MoveNativeVillageMatToHand();                
             }
             else if (choice == PlayerActionChoice.SetAsideTopCardOnNativeVillageMat)
             {

@@ -331,5 +331,10 @@ namespace Dominion
         {
             this.textWriter.WriteLine("{0} placed {1} on it's island matt", playerState.actions.PlayerName, card.name);
         }
+
+        public void PlayerPlacedCardOnNativeVillageMat(PlayerState playerState, Card card)
+        {
+            this.textWriter.WriteLine("{0} placed {1} on it's native village matt", playerState.actions.PlayerName, card.name);
+        }
     }
 }

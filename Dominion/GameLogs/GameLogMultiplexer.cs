@@ -311,5 +311,13 @@ namespace Dominion
                 this.gameLogs[i].PlayerPlacedCardOnIslandMat(playerState, card);
             }
         }
+
+        public void PlayerPlacedCardOnNativeVillageMat(PlayerState playerState, Card card)
+        {
+            for (int i = 0; i < this.gameLogs.Length; ++i)
+            {
+                this.gameLogs[i].PlayerPlacedCardOnNativeVillageMat(playerState, card);
+            }
+        }
     }
 }

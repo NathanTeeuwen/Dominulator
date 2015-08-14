@@ -78,6 +78,7 @@ namespace Dominion
         public CollectionCards CardsInDeck { get { return this.deck; } }
         public int TurnNumber { get { return this.numberOfTurnsPlayed; } }        
         public CollectionCards CardsBeingPlayed { get { return this.cardsPlayed; } }
+        public BagOfCards CardsOnNativeVillageMat { get { return this.nativeVillageMat; } } 
         public int PlayerIndex { get { return this.playerIndex; } }
         public SetOfCards CardsBoughtThisTurn { get { return this.turnCounters.cardsBoughtThisTurn; } }
         public SetOfCards CardsGainedThisTurn { get { return this.turnCounters.cardsGainedThisTurn; } }
@@ -790,8 +791,10 @@ namespace Dominion
             Card card = this.DrawOneCard(gameState);
             if (card != null)
             {
-                this.nativeVillageMat.AddCard(card);
+                this.nativeVillageMat.AddCard(card);                
             }
+
+            gameState.gameLog.PlayerPlacedCardOnNativeVillageMat(this, card);
         }
 
         internal void MoveCardFromPlayedCardToNativeVillageMatt(Card card)
