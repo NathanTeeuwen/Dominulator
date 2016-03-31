@@ -17,16 +17,15 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = SilverCutpurse.Player();
-                var player2 = NativeVillageCutpurse.Player();
-                var player3 = NativeVillageCutpurseOnly.Player();                
+                var player1 = Strategies.BigMoney.Player();
+                var player2 = Strategies.Miser.Player();                
                 
                 var builder = new GameConfigBuilder();                
                 builder.CardSplit = StartingCardSplit.Split43;
-                builder.SetKingdomCards(player1, player2, player3);
+                builder.SetKingdomCards(player1, player2);
                 
                 testOutput.ComparePlayers(
-                    new PlayerAction[] { player1, player2, player3},                    
+                    new PlayerAction[] { player1, player2},                    
                     builder.ToGameConfig(),
                     rotateWhoStartsFirst:true,
                     createHtmlReport: true, 

@@ -319,5 +319,13 @@ namespace Dominion
                 this.gameLogs[i].PlayerPlacedCardOnNativeVillageMat(playerState, card);
             }
         }
+
+        public void PlayerPlacedCardOnTavernMat(PlayerState playerState, Card card)
+        {
+            for (int i = 0; i < this.gameLogs.Length; ++i)
+            {
+                this.gameLogs[i].PlayerPlacedCardOnTavernMat(playerState, card);
+            }
+        }
     }
 }

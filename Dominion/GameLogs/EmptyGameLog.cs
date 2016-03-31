@@ -184,5 +184,10 @@ namespace Dominion
         {
 
         }
+
+        public virtual void PlayerPlacedCardOnTavernMat(PlayerState playerState, Card card)
+        {
+
+        }
     }
 }

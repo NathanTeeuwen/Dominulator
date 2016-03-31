@@ -543,6 +543,16 @@ namespace Dominion
             this.textWriter.WriteLine("{0} placed {1} on the island mat.", GetPlayerName(playerState), card.name);            
         }
 
+        public void PlayerPlacedCardOnTavernMat(PlayerState playerState, Card card)
+        {
+            this.textWriter.WriteLine("{0} placed {1} on the Tavern mat.", GetPlayerName(playerState), card.name);
+
+            if (playerState.cardsBeingPlayed.TopCard() == Cards.Miser)
+            {
+                this.textWriter.WriteLine("Miser is now worth {0}", CardTypes.Miser.PlayerMiserValue(playerState));
+            }
+        }
+
         public void PlayerPlacedCardOnNativeVillageMat(PlayerState playerState, Card card)
         {
             this.textWriter.WriteLine("{0} placed {1} on the native village mat.", GetPlayerName(playerState), card.name);

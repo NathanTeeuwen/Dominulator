@@ -61,6 +61,7 @@ namespace Dominion
         internal ListOfCards cardBeingDiscarded; // a stack for recursion.
         internal BagOfCards islandMat;
         internal BagOfCards nativeVillageMat;
+        internal BagOfCards tavernMat;
 
         internal List<GameStateMethod> actionsToExecuteAtBeginningOfNextTurn = new List<GameStateMethod>();
 
@@ -78,7 +79,8 @@ namespace Dominion
         public CollectionCards CardsInDeck { get { return this.deck; } }
         public int TurnNumber { get { return this.numberOfTurnsPlayed; } }        
         public CollectionCards CardsBeingPlayed { get { return this.cardsPlayed; } }
-        public BagOfCards CardsOnNativeVillageMat { get { return this.nativeVillageMat; } } 
+        public BagOfCards CardsOnNativeVillageMat { get { return this.nativeVillageMat; } }
+        public BagOfCards CardsOnTavernMat { get { return this.tavernMat; } }
         public int PlayerIndex { get { return this.playerIndex; } }
         public SetOfCards CardsBoughtThisTurn { get { return this.turnCounters.cardsBoughtThisTurn; } }
         public SetOfCards CardsGainedThisTurn { get { return this.turnCounters.cardsGainedThisTurn; } }
@@ -119,6 +121,7 @@ namespace Dominion
             // partition
             this.islandMat = new BagOfCards(gameSubset, this.allOwnedCards);
             this.nativeVillageMat = new BagOfCards(gameSubset, this.allOwnedCards);
+            this.tavernMat = new BagOfCards(gameSubset, this.allOwnedCards);
             this.deck = new ListOfCards(gameSubset, this.allOwnedCards);
             this.discard = new BagOfCards(gameSubset, this.allOwnedCards);
             this.cardsBeingPlayed = new ListOfCards(gameSubset, this.allOwnedCards);  // a stack for recursion
@@ -803,6 +806,16 @@ namespace Dominion
             if (removedCard != null)
             {
                 this.nativeVillageMat.AddCard(removedCard);
+            }
+        }
+
+        internal void MoveCardFromHandToTavernMatt(Card card)
+        {
+            Card removedCard = this.hand.RemoveCard(card);
+            if (removedCard != null)
+            {
+                this.tavernMat.AddCard(removedCard);
+                this.gameLog.PlayerPlacedCardOnTavernMat(this, card);
             }
         }
 

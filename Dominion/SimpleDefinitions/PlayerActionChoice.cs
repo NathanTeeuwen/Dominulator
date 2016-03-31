@@ -19,6 +19,8 @@ namespace Dominion
         Trash,
         Nothing,
         SetAsideTopCardOnNativeVillageMat,
-        PutNativeVillageMatInHand
+        PutNativeVillageMatInHand,
+        PutCopperOnTavernMat,
+        PlusCoinPerCoppperOnTavernMat
     }   
 }

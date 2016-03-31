@@ -626,7 +626,29 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            PlayerActionChoice choice = currentPlayer.RequestPlayerChooseBetween(gameState, c =>
+                c == PlayerActionChoice.PutCopperOnTavernMat ||
+                c == PlayerActionChoice.PlusCoinPerCoppperOnTavernMat);
+
+            switch (choice)
+            {              
+                case PlayerActionChoice.PutCopperOnTavernMat:
+                {
+                    currentPlayer.MoveCardFromHandToTavernMatt(Cards.Copper);
+                    break;
+                }
+                case PlayerActionChoice.PlusCoinPerCoppperOnTavernMat:
+                {
+                    int copperCount = PlayerMiserValue(currentPlayer);
+                    currentPlayer.AddCoins(copperCount);
+                    break;
+                }
+            }
+        }
+
+        public static int PlayerMiserValue(PlayerState currentPlayer)
+        {
+            return currentPlayer.tavernMat.CountOf(Cards.Copper);
         }
     }
 
