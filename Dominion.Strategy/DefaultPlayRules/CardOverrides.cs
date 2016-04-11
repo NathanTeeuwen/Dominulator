@@ -36,6 +36,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Masterpiece] = new Masterpiece(playerAction);
             result[Dominion.Cards.Messenger] = new Messenger(playerAction);
             result[Dominion.Cards.Mint] = new Mint(playerAction);
+            result[Dominion.Cards.Miser] = new Miser(playerAction);
             result[Dominion.Cards.Mystic] = new MysticAndWishingWell(playerAction);
             result[Dominion.Cards.NomadCamp] = new NomadCamp(playerAction);
             result[Dominion.Cards.Nobles] = new Nobles(playerAction);

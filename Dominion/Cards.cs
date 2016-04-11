@@ -673,7 +673,6 @@ namespace Dominion
             Cards.HauntedWoods,
             Cards.Hero,
             Cards.Hireling,            
-            Cards.Miser,
             Cards.Page,
             Cards.Peasant,            
             Cards.Ranger,

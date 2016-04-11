@@ -14,8 +14,8 @@ namespace TestAllCardsWithBigMoney
         static void Main(string[] args)
         {            
             using (var testOutput = new TestOutput())
-            {                
-                var bigMoneyPlayer = Strategies.BigMoneyWithCard.Player(Cards.Magpie, playerName:"single magpie");
+            {
+                var bigMoneyPlayer = Strategies.Miser.Player();
                 foreach (PlayerAction playerAction in AllBigMoneyWithCard())
                 {
                     testOutput.ComparePlayers(bigMoneyPlayer, playerAction, numberOfGames: 1000, shouldParallel: true, createHtmlReport: false, createRankingReport: true, logGameCount: 0);
