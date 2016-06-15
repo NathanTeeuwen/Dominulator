@@ -14,6 +14,7 @@ namespace Dominion
         Card ChooseCardToPlayFirst(GameState gameState, Card card1, Card card2);        
         Card GetTreasureFromHandToPlay(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Card GetCardFromSupplyToEmbargo(GameState gameState);
+        Card GetCardFromSupplyToInherit(GameState gameState, CardPredicate acceptableCard);
         Card GetCardFromSupplyToPlay(GameState gameState, CardPredicate acceptableCard);
         Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate acceptableCard);
         Card GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional);

@@ -77,6 +77,11 @@ namespace Dominion
             return PlayerMustMakeCardChoice();
         }
 
+        virtual public Card GetCardFromSupplyToInherit(GameState gameState, CardPredicate acceptableCard)
+        {
+            return PlayerMustMakeCardChoice();
+        }
+
         virtual public Card ChooseCardToPlayFirst(GameState gameState, Card card1, Card card2)
         {
             return PlayerMustMakeCardChoice();

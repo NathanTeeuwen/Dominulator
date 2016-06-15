@@ -62,6 +62,16 @@ namespace Dominion
             return result;
         }
 
+        public Card GetCardFromSupplyToInherit(GameState gameState, CardPredicate acceptableCard)
+        {
+            var saved = gameState.self;
+            gameState.self = this.self;
+            var result = this.playerAction.GetCardFromSupplyToInherit(gameState, acceptableCard);
+            gameState.self = saved;
+            return result;
+        }
+
+
         public Card GetCardFromSupplyToPlay(GameState gameState, CardPredicate acceptableCard)
         {
             var saved = gameState.self;

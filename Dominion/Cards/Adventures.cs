@@ -79,6 +79,30 @@ namespace Dominion.CardTypes
             : base("Inheritance", Expansion.Adventures, 7)
         {
         }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            if (currentPlayer.inheritanceSetAside != null)
+            {
+                CardPredicate acceptableCard = (Card c) =>
+                c.CurrentCoinCost(currentPlayer) <= 4 &&
+                !gameState.GetPile(c).IsEmpty &&
+                c.isAction &&
+                !c.isVictory;
+
+                Card cardToInherit = currentPlayer.actions.GetCardFromSupplyToInherit(gameState, acceptableCard);
+                if (!acceptableCard(cardToInherit))
+                {
+                    throw new Exception("Card chosen could not be inherited");
+                }
+
+                Card card = gameState.GetPile(cardToInherit).DrawCardFromTop();
+                currentPlayer.inheritanceSetAside = card;
+
+                // dont have implemented what to do with card once its inherited
+                throw new NotImplementedException();
+            }
+        }
     }
 
     public class LostArts

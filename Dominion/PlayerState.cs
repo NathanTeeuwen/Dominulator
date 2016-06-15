@@ -101,8 +101,8 @@ namespace Dominion
         // persistent Counters
         private int victoryTokenCount;
         internal int VictoryTokenCount { get { return this.victoryTokenCount; } }
-
         internal int pirateShipTokenCount;
+        internal Card inheritanceSetAside = null;
 
         internal PlayerState(IPlayerAction actions, int playerIndex, Game game)
         {

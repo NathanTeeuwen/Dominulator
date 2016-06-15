@@ -36,6 +36,11 @@ namespace Dominion
         {
             return this.playerAction.GetCardFromSupplyToEmbargo(gameState);            
         }
+     
+        public virtual Card GetCardFromSupplyToInherit(GameState gameState, CardPredicate acceptableCard)
+        {
+            return this.playerAction.GetCardFromSupplyToInherit(gameState, acceptableCard);
+        }        
 
         public virtual Card GetCardFromSupplyToPlay(GameState gameState, CardPredicate acceptableCard)
         {
