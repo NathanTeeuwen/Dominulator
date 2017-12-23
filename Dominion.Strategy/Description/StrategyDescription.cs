@@ -92,7 +92,8 @@ namespace Dominion.Strategy.Description
             { Cards.Rats, 1},
             { Cards.Raze, 1},
             { Cards.HornOfPlenty, 1},
-            { Cards.Cultist, CountAsManyAsPossible}
+            { Cards.Cultist, CountAsManyAsPossible},
+            { Cards.Storyteller, 2}
         };
 
         public static StrategyDescription GetDefaultDescription(GameConfig gameConfig)

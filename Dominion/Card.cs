@@ -7,55 +7,6 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-
-    public static class ExpansionExtensionMethods
-    {
-        public static string ToProgramaticName(this Dominion.Expansion expansion)
-        {
-            return ExpansionToString(expansion).Replace(" ", "_");
-        }
-
-        public static string ExpansionToString(this Dominion.Expansion expansion)
-        {
-            switch (expansion)
-            {
-                case Dominion.Expansion.Alchemy: return "Alchemy";
-                case Dominion.Expansion.Base: return "Base";
-                case Dominion.Expansion.Cornucopia: return "Cornucopia";
-                case Dominion.Expansion.DarkAges: return "Dark Ages";
-                case Dominion.Expansion.Guilds: return "Guilds";
-                case Dominion.Expansion.Hinterlands: return "Hinterlands";
-                case Dominion.Expansion.Intrigue: return "Intrigue";
-                case Dominion.Expansion.Promo: return "Promo";
-                case Dominion.Expansion.Prosperity: return "Prosperity";
-                case Dominion.Expansion.Seaside: return "Seaside";
-                case Dominion.Expansion.Adventures: return "Adventures";
-                case Dominion.Expansion.Empires: return "Empires";
-                case Dominion.Expansion.Nocturne: return "Nocturne";
-                default: throw new NotImplementedException();
-            }
-        }       
-    }
-
-    public enum Expansion
-    {
-        Alchemy,
-        Adventures,
-        Base,
-        Cornucopia,
-        DarkAges,
-        Empires,
-        Guilds,
-        Hinterlands,
-        Intrigue,
-        Nocturne,
-        Promo,
-        Prosperity,
-        Seaside,
-        Unknown,
-        Count = Unknown
-    }
-
     public abstract class Card
         : IEquatable<Card>
     {
@@ -69,7 +20,7 @@ namespace Dominion
         public readonly int plusCard;
         public readonly int plusCoin;
         public readonly int plusVictoryToken;
-        public readonly int defaultSupplyCount;        
+        public readonly int defaultSupplyCount;
         public readonly bool attackDependsOnPlayerChoice;
         public readonly bool isAttackBeforeAction;
 
@@ -95,6 +46,37 @@ namespace Dominion
             get
             {
                 return this.victoryPointCounter != null;
+            }
+        }
+
+        public IEnumerable<CardType> CardTypes
+        {
+            get
+            {
+                if (this.isAction)
+                    yield return CardType.Action;
+                if (this.isAttack)
+                    yield return CardType.Attack;
+                if (this.isCurse)
+                    yield return CardType.Curse;
+                if (this.isDuration)
+                    yield return CardType.Duration;
+                if (this.isGathering)
+                    yield return CardType.Gathering;
+                if (this.isPrize)
+                    yield return CardType.Prize;
+                if (this.isReaction)
+                    yield return CardType.Reaction;
+                if (this.isReserve)
+                    yield return CardType.Reserve;
+                if (this.isRuins)
+                    yield return CardType.Ruins;
+                if (this.isShelter)
+                    yield return CardType.Shelter;
+                if (this.isTreasure)
+                    yield return CardType.Treasure;
+                if (this.isTraveller)
+                    yield return CardType.Traveller;
             }
         }
 

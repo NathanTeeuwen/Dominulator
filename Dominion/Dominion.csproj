@@ -49,6 +49,7 @@
     <Compile Include="Cards\Promo.cs" />
     <Compile Include="Cards\Prosperity.cs" />
     <Compile Include="Cards\Seaside.cs" />
+    <Compile Include="CardType.cs" />
     <Compile Include="Collections\BagOfCards.cs" />
     <Compile Include="Card.cs" />
     <Compile Include="Collections\CardGameSubset.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Collections\SetOfCards.cs" />
     <Compile Include="Collections\SingletonCardHolder.cs" />
     <Compile Include="DerivedPlayerAction.cs" />
+    <Compile Include="Expansion.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameConfigBuilder.cs" />
     <Compile Include="GameDescription.cs" />

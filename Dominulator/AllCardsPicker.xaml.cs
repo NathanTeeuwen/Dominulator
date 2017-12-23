@@ -204,36 +204,20 @@ namespace Dominulator
             result.Add(card.name);
             result.Add(card.expansion.ExpansionToString());
             result.Add(card.DefaultCoinCost.ToString());
-            if (card.isAction)
-                result.Add("action");
-            if (card.isAttack)
-                result.Add("attack");
-            if (card.isReaction)
-                result.Add("reaction");
-            if (card.isVictory)
-                result.Add("victory");
-            if (card.isTreasure)
-                result.Add("treasure");
-            if (card.isShelter)
-                result.Add("shelter");
-            if (card.isReserve)
-                result.Add("reserve");
-            if (card.isTraveller)
-                result.Add("traveller");
+
+            foreach(Dominion.CardType cardType in card.CardTypes)
+            {
+                result.Add(cardType.CardTypeToString());
+                var pluralName = cardType.CardTypeToStringPlural();
+                if (pluralName != null)
+                    result.Add(pluralName);
+            }
             if (card.isEvent)
                 result.Add("event");
-            if (card.isDuration)
-                result.Add("duration");
             if (card.requiresRuins)
                 result.Add("ruins");
             if (card.requiresSpoils)
                 result.Add("spoils");
-            if (card.isPrize)
-                result.Add("prize");
-            if (card.isRuins)
-                result.Add("ruins");
-            if (card.isRuins)
-                result.Add("ruins");
             if (card.potionCost != 0)
                 result.Add("potion");
 
