@@ -16,7 +16,6 @@ namespace Dominion.Strategy.Description
             }
             
         }
-            
 
         public StrategyDescription(
             PickByPriorityDescription purchaseOrderDescription,
@@ -111,7 +110,7 @@ namespace Dominion.Strategy.Description
                 CardAcceptanceDescription.For(Cards.Province, CountSource.CountAllOwned, Cards.Gold, Comparison.GreaterThanEqual, 2),
                 CardAcceptanceDescription.For(Cards.Duchy, CountSource.CountOfPile, Cards.Province, Comparison.LessThanEqual, 4),
                 CardAcceptanceDescription.For(Cards.Estate, CountSource.CountOfPile, Cards.Province, Comparison.LessThanEqual, 2),
-                CardAcceptanceDescription.For(Cards.Gold),                
+                CardAcceptanceDescription.For(Cards.Gold),
                 CardAcceptanceDescription.For(Cards.Silver));
         }
 
