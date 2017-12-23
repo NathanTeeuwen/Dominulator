@@ -11,3 +11,4 @@
 **/Results
 *.class
 **/WEB-INF
+.vs

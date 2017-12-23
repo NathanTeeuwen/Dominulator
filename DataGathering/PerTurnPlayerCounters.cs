@@ -50,8 +50,7 @@ namespace Dominion.Data
     }
     
     public class PlayerCounter
-    {
-        private readonly object theLock = new object();
+    {        
         private readonly int[] totalDivisor;
         private readonly int[] totalCount;
 

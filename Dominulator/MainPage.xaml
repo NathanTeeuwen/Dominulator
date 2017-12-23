@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="Dominulator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Dominulator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Name="Page">
+
+    <Page.Resources>
+        <ResourceDictionary Source="StandardStyles.xaml" />
+    </Page.Resources>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+            <Grid.Resources>
+                <local:ReportVisibilityConverter x:Key="ReportVisibilityConverter" />
+                <local:SettingsButtonVisibilityConverter x:Key="SettingsButtonVisibilityConverter" />
+                <local:BackButtonVisibilityConverter x:Key="BackButtonVisibilityConverter" />
+                <local:CurrentDeckVisibilityConverter x:Key="CurrentDeckVisibilityConverter" />
+                <local:AllCardVisibilityConverter x:Key="AllCardVisibilityConverter" />
+                <local:SettingsVisibilityConverter x:Key="SettingsVisibilityConverter" />
+                <local:StrategyVisibilityConverter x:Key="StrategyVisibilityConverter" />
+                <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+            </Grid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Button Style="{StaticResource BackAppBarButtonStyle}" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource BackButtonVisibilityConverter}}" BorderThickness="0" Click="BackButton_Click"/>
+                <StackPanel Orientation="Horizontal" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsButtonVisibilityConverter}}">
+                    <Button Style="{StaticResource AllCardsAppBarButtonStyle}" BorderThickness="0" Click="AllCardsButton_Click" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource CurrentDeckVisibilityConverter}}"/>
+                    <!-- <Button Style="{StaticResource CurrentCardsAppBarButtonStyle}" BorderThickness="0" Click="AllCardsButton_Click" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource AllCardVisibilityConverter}}"/> -->
+                </StackPanel>
+                <Button Style="{StaticResource SaveAppBarButtonStyle}" BorderThickness="0" Click="SaveReportButton_Click" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource ReportVisibilityConverter}}"/>
+            </StackPanel>
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsButtonVisibilityConverter}}">
+                <Button Style="{StaticResource GoogleAppBarButtonStyle}" BorderThickness="0" Click="GoogleButtonClick" Visibility="{Binding IsSelectionPresentOnCurrentDeck.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                <Button Style="{StaticResource SettingsAppBarButtonStyle}" BorderThickness="0" Click="SettingsButton_Click"/>
+                <Button Style="{StaticResource HelpAppBarButtonStyle}" BorderThickness="0" Click="HelpButton_Click" Visibility="Collapsed"/>
+            </StackPanel>
+            <TextBlock Grid.Row="0"  FontSize="100" VerticalAlignment="Center" HorizontalAlignment="Center">Dominulator</TextBlock>
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto" ZoomMode="Disabled">
+                <Grid>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <local:CurrentDeckPicker x:Name="CurrentCards" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource CurrentDeckVisibilityConverter}}"/>
+                        <local:AllCardsPicker x:Name="AllCards" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource AllCardVisibilityConverter}}"/>
+                        <local:SideBySideStrategyView Margin="10,0,0,0" Visibility="{Binding SideBySideVisibility.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                        <local:Settings Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource SettingsVisibilityConverter}}"/>
+                        <local:DualStrategyView Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource StrategyVisibilityConverter}}"/>
+                        <local:CompactyStrategyView Visibility="{Binding CompactStrategyVisibility.Value, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                    </StackPanel>
+                    <WebView Grid.Row="0" x:Name="ResultsWebView" Width="Auto" Height="Auto" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource ReportVisibilityConverter}}"></WebView>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+</Page>

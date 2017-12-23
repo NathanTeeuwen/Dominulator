@@ -1,0 +1,128 @@
+﻿<UserControl
+    x:Class="Dominulator.Strategy"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Dominulator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" ZoomMode="Disabled">
+        <ScrollViewer.Resources>
+            <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+            <local:EditingDescriptionConverter x:Key="EditingDescriptionConverter" />
+            <local:OpenningSplitConverter x:Key="OpenningSplitConverter" />
+        </ScrollViewer.Resources>
+        <StackPanel Background="Transparent" AllowDrop="True" Drop="CurrentCardsListView_Drop">
+            <StackPanel Margin="0,20,0,0" Orientation="Horizontal">
+                <ComboBox SelectedIndex="{Binding EditingDescription.Value, Converter={StaticResource EditingDescriptionConverter}, Mode=TwoWay}">
+                    <ComboBoxItem>Purchase Order</ComboBoxItem>
+                    <ComboBoxItem>Trash Order</ComboBoxItem>
+                </ComboBox>
+                <TextBlock Margin="10,0,0,0" VerticalAlignment="Center" FontSize="18">Starting Coppers:</TextBlock>
+                <ComboBox Margin="5,0,0,0" SelectedIndex="{Binding StartingCardSplit.Value, Converter={StaticResource OpenningSplitConverter}, Mode=TwoWay}" >
+                    <ComboBoxItem>Random</ComboBoxItem>
+                    <ComboBoxItem>2</ComboBoxItem>
+                    <ComboBoxItem>3</ComboBoxItem>
+                    <ComboBoxItem>4</ComboBoxItem>
+                    <ComboBoxItem>5</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+            <!-- items control of System.Collections.ObjectModel.ObservableCollection<CardAcceptanceDescription> -->
+            <ListView Margin="0,20,0,0" Name="CurrentStrategyListView"  
+                          ItemsSource="{Binding CurrentDescription.Value}" 
+                          CanReorderItems="True" 
+                          AllowDrop="True"
+                          SelectionMode="None">
+                <ListView.Resources>
+                    <local:ComparisonToIntegerConverter x:Key="ComparisonToIntegerConverter" />
+                    <local:CountSourceToIntegerConverter x:Key="CountSourceToIntegerConverter" />
+                    <local:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+                    <local:BoolToInVisibilityConverter x:Key="BoolToInVisibilityConverter" />
+                </ListView.Resources>
+                <ListView.ItemTemplate>
+                    <!-- Data Template for CardAcceptanceDescription -->
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Width="40" Height="64" Source="{Binding Card.Value.ImageUrl}"></Image>
+                            <StackPanel Grid.Column="1" VerticalAlignment="Center" Orientation="Horizontal" Visibility="{Binding CanSimulateCard.Value, Converter={StaticResource BoolToVisibilityConverter}}">
+                                <TextBlock VerticalAlignment="Center" Padding="5,0,0,0">Get</TextBlock>
+                                <ComboBox Margin="5" SelectedIndex="{Binding Count.Value, Mode=TwoWay}">
+                                    <ComboBoxItem>0</ComboBoxItem>
+                                    <ComboBoxItem>1</ComboBoxItem>
+                                    <ComboBoxItem>2</ComboBoxItem>
+                                    <ComboBoxItem>3</ComboBoxItem>
+                                    <ComboBoxItem>4</ComboBoxItem>
+                                    <ComboBoxItem>5</ComboBoxItem>
+                                    <ComboBoxItem>6</ComboBoxItem>
+                                    <ComboBoxItem>7</ComboBoxItem>
+                                    <ComboBoxItem>8</ComboBoxItem>
+                                    <ComboBoxItem>9</ComboBoxItem>
+                                    <ComboBoxItem>10</ComboBoxItem>
+                                    <ComboBoxItem>As Many as possible</ComboBoxItem>
+                                </ComboBox>
+                                <TextBlock VerticalAlignment="Center" Padding="0,0,5,0" Text="{Binding  Card.Value.Name}"></TextBlock>
+                                <ComboBox Margin="5" SelectedIndex="{Binding CountSource.Value, Mode=TwoWay, Converter={StaticResource CountSourceToIntegerConverter}}">
+                                    <ComboBoxItem>Always</ComboBoxItem>
+                                    <ComboBoxItem>When count Of Pile</ComboBoxItem>
+                                    <ComboBoxItem>When count all Owned</ComboBoxItem>
+                                    <ComboBoxItem>When count in Hand</ComboBoxItem>
+                                    <ComboBoxItem>When card in Play is</ComboBoxItem>
+                                    <ComboBoxItem>Coin Available</ComboBoxItem>
+                                </ComboBox>
+                                <StackPanel Orientation="Horizontal" Visibility="{Binding SecondaryMatchVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">
+                                    <ComboBox Margin="5"
+                                                  Visibility="{Binding SecondaryMatchCardVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}"
+                                                  ItemsSource="{Binding ElementName=Page, Path=AppDataContext.AvailableCards}" 
+                                                  SelectedItem="{Binding TestCard.Value, Mode=TwoWay}">
+                                        <ComboBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Name}"></TextBlock>
+                                            </DataTemplate>
+                                        </ComboBox.ItemTemplate>
+                                    </ComboBox>
+                                    <StackPanel Orientation="Horizontal" Visibility="{Binding CountConditionVisible.Value, Converter={StaticResource BoolToVisibilityConverter}}">
+                                        <TextBlock VerticalAlignment="Center" Padding="0,0,5,0">is</TextBlock>
+                                        <ComboBox Margin="5" SelectedIndex="{Binding Comparison.Value, Mode=TwoWay, Converter={StaticResource ComparisonToIntegerConverter}}">
+                                            <ComboBoxItem>Less Than</ComboBoxItem>
+                                            <ComboBoxItem>Less Than Or Equal</ComboBoxItem>
+                                            <ComboBoxItem>Greater Than</ComboBoxItem>
+                                            <ComboBoxItem>Greater Than Equal</ComboBoxItem>
+                                            <ComboBoxItem>Equals</ComboBoxItem>
+                                        </ComboBox>
+                                        <ComboBox Margin="5" SelectedIndex="{Binding Threshhold.Value, Mode=TwoWay}">
+                                            <ComboBoxItem>0</ComboBoxItem>
+                                            <ComboBoxItem>1</ComboBoxItem>
+                                            <ComboBoxItem>2</ComboBoxItem>
+                                            <ComboBoxItem>3</ComboBoxItem>
+                                            <ComboBoxItem>4</ComboBoxItem>
+                                            <ComboBoxItem>5</ComboBoxItem>
+                                            <ComboBoxItem>6</ComboBoxItem>
+                                            <ComboBoxItem>7</ComboBoxItem>
+                                            <ComboBoxItem>8</ComboBoxItem>
+                                            <ComboBoxItem>9</ComboBoxItem>
+                                            <ComboBoxItem>10</ComboBoxItem>
+                                        </ComboBox>
+                                    </StackPanel>
+                                </StackPanel>
+                                <local:CardAcceptanceButton Content="x" Click="CloseButton_Click" StrategyDescription="{Binding ElementName=CurrentStrategyListView, Path=DataContext}"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" VerticalAlignment = "Center" Orientation="Horizontal" Visibility="{Binding CanSimulateCard.Value, Converter={StaticResource BoolToInVisibilityConverter}}">
+                                <TextBlock Padding="5,0,0,0" Text="{Binding Card.Value.Name}"></TextBlock>
+                                <TextBlock Padding="5,0,0,0">can not be simulated.</TextBlock>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <TextBlock FontSize="20" Visibility="{Binding ElementName=Page, Path=AppDataContext.SideBySideVisibility.Value, Converter={StaticResource BoolToVisibilityConverter}}">Drag Cards here to include in strategy</TextBlock>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

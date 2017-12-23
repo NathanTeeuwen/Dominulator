@@ -443,10 +443,10 @@ namespace Dominion.CardTypes
         private RoyalSeal()
             : base("Royal Seal", Expansion.Prosperity, coinCost: 5, isTreasure: true, plusCoins: 2)
         {
-            this.doSpecializedActionOnGainWhileInPlay = DoSpecializedActionOnGainWhileInPlay;
+            this.doSpecializedActionOnGainWhileInPlay = RoyalSeal.DoSpecializedActionOnGainWhileInPlay;
         }
 
-        private new DeckPlacement DoSpecializedActionOnGainWhileInPlay(PlayerState currentPlayer, GameState gameState, Card gainedCard)
+        private static new DeckPlacement DoSpecializedActionOnGainWhileInPlay(PlayerState currentPlayer, GameState gameState, Card gainedCard)
         {
             if (currentPlayer.actions.ShouldPutCardOnTopOfDeck(gainedCard, gameState))
             {

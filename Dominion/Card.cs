@@ -30,6 +30,8 @@ namespace Dominion
                 case Dominion.Expansion.Prosperity: return "Prosperity";
                 case Dominion.Expansion.Seaside: return "Seaside";
                 case Dominion.Expansion.Adventures: return "Adventures";
+                case Dominion.Expansion.Empires: return "Empires";
+                case Dominion.Expansion.Nocturne: return "Nocturne";
                 default: throw new NotImplementedException();
             }
         }       
@@ -42,9 +44,11 @@ namespace Dominion
         Base,
         Cornucopia,
         DarkAges,
+        Empires,
         Guilds,
-        Hinterlands,        
-        Intrigue,                
+        Hinterlands,
+        Intrigue,
+        Nocturne,
         Promo,
         Prosperity,
         Seaside,
@@ -75,18 +79,27 @@ namespace Dominion
 
         // types
         public readonly bool isAction;
-        public readonly bool isAttack;        
+        public readonly bool isAttack;
         public readonly bool isCurse;
-        public readonly bool isReaction;
-        public readonly bool isRuins;
-        public readonly bool isPrize;
-        public readonly bool isTreasure;
         public readonly bool isDuration;
-        public readonly bool isShelter;
-        public readonly bool isTraveller;
+        public readonly bool isGathering;
+        public readonly bool isPrize;
+        public readonly bool isReaction;
         public readonly bool isReserve;
-        public readonly bool isEvent;
+        public readonly bool isRuins;
+        public readonly bool isShelter;
+        public readonly bool isTreasure;
+        public readonly bool isTraveller;
+        public bool isVictory
+        {
+            get
+            {
+                return this.victoryPointCounter != null;
+            }
+        }
 
+        // other flags
+        public readonly bool isEvent;
         public readonly bool isInSupply;
 
         // useful properites about the card
@@ -132,6 +145,7 @@ namespace Dominion
             string name,
             Expansion expansion,
             int coinCost,
+            int debtCost = 0,
             string pluralName = null,
             int potionCost = 0,
             int plusActions = 0,
@@ -148,7 +162,7 @@ namespace Dominion
             bool isCurse = false,
             bool isReaction = false,
             bool isPrize = false,
-            bool isRuins = false,            
+            bool isRuins = false,
             bool isTreasure = false,
             bool isDuration = false,
             bool requiresRuins = false,
@@ -156,10 +170,12 @@ namespace Dominion
             bool isShelter = false,
             bool isTraveller = false,
             bool isReserve = false,
+            bool isGathering = false,
             bool isEvent = false,
+            bool isLandmark = false,
             bool canOverpay = false,
             bool canGivePlusAction = false,
-            bool mightMultiplyActions = false,     
+            bool mightMultiplyActions = false,
             bool isKingdomCard = true,
             bool isInSupply = true,
             CardIntValue provideDiscountForWhileInPlay = null,
@@ -211,6 +227,8 @@ namespace Dominion
             this.isShelter = isShelter;
             this.isTraveller = isTraveller;
             this.isReserve = isReserve;
+            this.isGathering = isGathering;
+
             this.isEvent = isEvent;
             this.isKingdomCard = isKingdomCard;
             this.isInSupply = isInSupply;
@@ -226,14 +244,6 @@ namespace Dominion
             this.doSpecializedActionOnBuyWhileInHand = doSpecializedActionOnBuyWhileInHand;
             this.doSpecializedActionOnGainWhileInHand = doSpecializedActionOnGainWhileInHand;
             this.doSpecializedActionToCardWhileInPlay = doSpecializedActionToCardWhileInPlay;
-        }
-
-        public bool isVictory
-        {
-            get
-            {
-                return this.victoryPointCounter != null;
-            }
         }
 
         public int VictoryPoints(PlayerState playerState)
@@ -520,8 +530,27 @@ namespace Dominion
             string name,
             Expansion expansion,
             int coinCost,
+            int debtCost = 0,
             string pluralName = null)
-            : base(name: name, expansion: expansion, coinCost: coinCost, isEvent: true, pluralName: null, isKingdomCard:false, isInSupply:false)
+            : base(name: name, expansion: expansion, coinCost: coinCost, debtCost: debtCost, isEvent: true, pluralName: pluralName, isKingdomCard:false, isInSupply:false)
+        {
+
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Landmark
+      : Card
+    {
+        protected Landmark(
+            string name,
+            Expansion expansion,
+            string pluralName = null)
+            : base(name: name, expansion: expansion, coinCost: 0, isLandmark: true, pluralName: null, isKingdomCard: false, isInSupply: false)
         {
 
         }

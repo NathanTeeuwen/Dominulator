@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService", "WebService\WebService.csproj", "{630872C0-2437-4A8F-81D5-1369098BB16B}"
 EndProject
@@ -39,8 +39,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlRenderer.Native", "HtmlRenderer\HtmlRenderer.Native.csproj", "{31CE0F10-4472-4CFF-B683-44B1F13B8D39}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlRenderer.Windows", "HtmlRenderer\HtmlRenderer.Windows.csproj", "{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominulator", "Win8Client\Dominulator.csproj", "{1B2628D2-A246-4117-96E9-BD000963732D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,7 +193,6 @@ Global
 		{31CE0F10-4472-4CFF-B683-44B1F13B8D39}.Release|x64.ActiveCfg = Release|Any CPU
 		{31CE0F10-4472-4CFF-B683-44B1F13B8D39}.Release|x86.ActiveCfg = Release|Any CPU
 		{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}.Debug|ARM.ActiveCfg = Debug|Any CPU
 		{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -204,30 +201,6 @@ Global
 		{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}.Release|ARM.ActiveCfg = Release|Any CPU
 		{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}.Release|x64.ActiveCfg = Release|Any CPU
 		{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}.Release|x86.ActiveCfg = Release|Any CPU
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Debug|ARM.ActiveCfg = Debug|ARM
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Debug|ARM.Build.0 = Debug|ARM
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Debug|ARM.Deploy.0 = Debug|ARM
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Debug|x64.ActiveCfg = Debug|x64
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Debug|x64.Build.0 = Debug|x64
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Debug|x64.Deploy.0 = Debug|x64
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Debug|x86.ActiveCfg = Debug|x86
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Debug|x86.Build.0 = Debug|x86
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Debug|x86.Deploy.0 = Debug|x86
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Release|ARM.ActiveCfg = Release|ARM
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Release|ARM.Build.0 = Release|ARM
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Release|ARM.Deploy.0 = Release|ARM
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Release|x64.ActiveCfg = Release|x64
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Release|x64.Build.0 = Release|x64
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Release|x64.Deploy.0 = Release|x64
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Release|x86.ActiveCfg = Release|x86
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Release|x86.Build.0 = Release|x86
-		{1B2628D2-A246-4117-96E9-BD000963732D}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

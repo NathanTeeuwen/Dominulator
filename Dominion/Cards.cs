@@ -183,6 +183,7 @@ namespace Dominion
         public static readonly CardTypes.PirateShip PirateShip = CardTypes.PirateShip.card;
         public static readonly CardTypes.Platinum Platinum = CardTypes.Platinum.card;
         public static readonly CardTypes.Plaza Plaza = CardTypes.Plaza.card;
+        public static readonly CardTypes.Plunder Plunder = CardTypes.Plunder.card;
         public static readonly CardTypes.PoorHouse PoorHouse = CardTypes.PoorHouse.card;
         public static readonly CardTypes.Port Port = CardTypes.Port.card;
         public static readonly CardTypes.Possession Possession = CardTypes.Possession.card;
@@ -269,7 +270,7 @@ namespace Dominion
         public static readonly CardTypes.WalledVillage WalledVillage = CardTypes.WalledVillage.card;
         public static readonly CardTypes.WanderingMinstrel WanderingMinstrel = CardTypes.WanderingMinstrel.card;
         public static readonly CardTypes.Warehouse Warehouse = CardTypes.Warehouse.card;
-        public static readonly CardTypes.Warrior Warrior = CardTypes.Warrior.card;        
+        public static readonly CardTypes.Warrior Warrior = CardTypes.Warrior.card;
         public static readonly CardTypes.Watchtower Watchtower = CardTypes.Watchtower.card;
         public static readonly CardTypes.Wharf Wharf = CardTypes.Wharf.card;
         public static readonly CardTypes.WineMerchant WineMerchant = CardTypes.WineMerchant.card;
@@ -471,7 +472,7 @@ namespace Dominion
             Cards.MarketSquare,
             Cards.Masquerade,
             Cards.Masterpiece,
-            Cards.Menagerie,            
+            Cards.Menagerie,
             Cards.Mercenary,
             Cards.MerchantGuild,
             Cards.MerchantShip,

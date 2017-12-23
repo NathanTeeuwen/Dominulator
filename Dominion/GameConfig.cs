@@ -183,7 +183,7 @@ namespace Dominion
             {
                 foreach (Card prize in prizes)
                 {
-                    builder.AddNonSupply(1, prize);                    
+                    builder.AddNonSupply(1, prize);
                 }                
             }
 
