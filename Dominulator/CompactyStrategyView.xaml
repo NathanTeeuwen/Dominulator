@@ -7,7 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     d:DesignHeight="300"
-    d:DesignWidth="400">
+    d:DesignWidth="400"
+    Name="CompactyStrategyViewPage">
 
     <UserControl.Resources>
         <ResourceDictionary Source="StandardStyles.xaml" />
@@ -30,12 +31,12 @@
         <Button Grid.Row="1" Style="{StaticResource ViewStrategiesAppBarButtonStyle}" BorderThickness="0" Click="StrategyButton_Click"/>
         <StackPanel Grid.Row="2" Orientation="Horizontal" >
             <TextBlock FontSize="20" VerticalAlignment="Center">Player 1</TextBlock>
-            <local:CompactStrategy DataContext="{Binding player1Strategy}" AppDataContext="{Binding ElementName=Page, Path=AppDataContext}"/>
+            <local:CompactStrategy DataContext="{Binding player1Strategy}" AppDataContext="{Binding ElementName=CompactyStrategyViewPage, Path=AppDataContext}"/>
             <Button Style="{StaticResource ClearAppBarButtonStyle}" BorderThickness="0" Click="ClearStrategy1ButtonClick" />
         </StackPanel>
         <StackPanel Grid.Row="3" Orientation="Horizontal" >
             <TextBlock FontSize="20" VerticalAlignment="Center">Player 2</TextBlock>
-            <local:CompactStrategy DataContext="{Binding player2Strategy}" AppDataContext="{Binding ElementName=Page, Path=AppDataContext}"/>
+            <local:CompactStrategy DataContext="{Binding player2Strategy}" AppDataContext="{Binding ElementName=CompactyStrategyViewPage, Path=AppDataContext}"/>
             <Button Style="{StaticResource ClearAppBarButtonStyle}" BorderThickness="0" Click="ClearStrategy2ButtonClick" />
         </StackPanel>
     </Grid>

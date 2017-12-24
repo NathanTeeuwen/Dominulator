@@ -30,7 +30,7 @@
                 <Button Style="{StaticResource BackAppBarButtonStyle}" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource BackButtonVisibilityConverter}}" BorderThickness="0" Click="BackButton_Click"/>
                 <StackPanel Orientation="Horizontal" Visibility="{Binding SettingsButtonVisibility.Value, Converter={StaticResource SettingsButtonVisibilityConverter}}">
                     <Button Style="{StaticResource AllCardsAppBarButtonStyle}" BorderThickness="0" Click="AllCardsButton_Click" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource CurrentDeckVisibilityConverter}}"/>
-                    <!-- <Button Style="{StaticResource CurrentCardsAppBarButtonStyle}" BorderThickness="0" Click="AllCardsButton_Click" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource AllCardVisibilityConverter}}"/> -->
+                    <Button Style="{StaticResource CurrentCardsAppBarButtonStyle}" BorderThickness="0" Click="AllCardsButton_Click" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource AllCardVisibilityConverter}}"/>
                 </StackPanel>
                 <Button Style="{StaticResource SaveAppBarButtonStyle}" BorderThickness="0" Click="SaveReportButton_Click" Visibility="{Binding CurrentPageConfig.Value, Converter={StaticResource ReportVisibilityConverter}}"/>
             </StackPanel>

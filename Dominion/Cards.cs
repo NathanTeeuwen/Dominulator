@@ -284,9 +284,16 @@ namespace Dominion
         // Events
 
         public static readonly CardTypes.Alms Alms = CardTypes.Alms.card;
+        public static readonly CardTypes.Advance Advance = CardTypes.Advance.card;
+        public static readonly CardTypes.Annex Annex = CardTypes.Annex.card;
         public static readonly CardTypes.Ball Ball = CardTypes.Ball.card;
+        public static readonly CardTypes.Banquet Banquet = CardTypes.Banquet.card;
         public static readonly CardTypes.Borrow Borrow = CardTypes.Borrow.card;
         public static readonly CardTypes.Bonfire Bonfire = CardTypes.Bonfire.card;
+        public static readonly CardTypes.Conquest Conquest = CardTypes.Conquest.card;
+        public static readonly CardTypes.Delve Delve = CardTypes.Delve.card;
+        public static readonly CardTypes.Dominate Dominate = CardTypes.Dominate.card;
+        public static readonly CardTypes.Donate Donate = CardTypes.Donate.card;
         public static readonly CardTypes.Expedition Expedition = CardTypes.Expedition.card;
         public static readonly CardTypes.Ferry Ferry = CardTypes.Ferry.card;
         public static readonly CardTypes.Inheritance Inheritance = CardTypes.Inheritance.card;
@@ -297,28 +304,34 @@ namespace Dominion
         public static readonly CardTypes.Plan Plan = CardTypes.Plan.card;
         public static readonly CardTypes.Quest Quest = CardTypes.Quest.card;
         public static readonly CardTypes.Raid Raid = CardTypes.Raid.card;
+        public static readonly CardTypes.Ritual Ritual = CardTypes.Ritual.card;
+        public static readonly CardTypes.SaltTheEarth SalthTheEarth = CardTypes.SaltTheEarth.card;
         public static readonly CardTypes.Save Save = CardTypes.Save.card;
         public static readonly CardTypes.ScoutingParty ScoutingParty = CardTypes.ScoutingParty.card;
         public static readonly CardTypes.Seaway Seaway = CardTypes.Seaway.card;
+        public static readonly CardTypes.Tax Tax = CardTypes.Tax.card;
         public static readonly CardTypes.Trade Trade = CardTypes.Trade.card;
         public static readonly CardTypes.Training Training = CardTypes.Training.card;
         public static readonly CardTypes.TravellingFair TravellingFair = CardTypes.TravellingFair.card;
+        public static readonly CardTypes.Triumph Triumph = CardTypes.Triumph.card;
+        public static readonly CardTypes.Wedding Wedding = CardTypes.Wedding.card;
+        public static readonly CardTypes.Windfall Windfall = CardTypes.Windfall.card;
 
         /* 
         public static void PrintAllCards()
-        {            
+        {
             foreach (System.Reflection.FieldInfo fieldInfo in typeof(Cards).GetFields())
             {
                 System.Console.WriteLine("Cards.{0},", fieldInfo.Name);
-            }            
+            }
         }
         
         public static Card[] AllCards()
         {
             var result = new List<Card>();
             foreach (System.Reflection.FieldInfo fieldInfo in typeof(Cards).GetFields())
-            {                
-                result.Add((Card)fieldInfo.GetValue(null));                
+            {
+                result.Add((Card)fieldInfo.GetValue(null));
             }
             
             return result.ToArray();
@@ -605,7 +618,7 @@ namespace Dominion
             Cards.Guide,
             Cards.HauntedWoods,
             Cards.Hero,
-            Cards.Hireling,            
+            Cards.Hireling,
             Cards.Miser,
             Cards.Page,
             Cards.Peasant,
@@ -615,7 +628,7 @@ namespace Dominion
             Cards.Raze,
             Cards.Relic,
             Cards.RoyalCarriage,
-            Cards.Solider,            
+            Cards.Solider,
             Cards.SwampHag,
             Cards.Teacher,
             Cards.Transmogrify,
@@ -645,7 +658,22 @@ namespace Dominion
             Cards.Seaway,
             Cards.Trade,
             Cards.Training,
-            Cards.TravellingFair
+            Cards.TravellingFair,
+            
+            // Empires events
+            Cards.Advance,
+            Cards.Annex,
+            Cards.Banquet,
+            Cards.Conquest,
+            Cards.Delve,
+            Cards.Dominate,
+            Cards.Donate,
+            Cards.Ritual,
+            Cards.SalthTheEarth,
+            Cards.Tax,
+            Cards.Triumph,
+            Cards.Wedding,
+            Cards.Windfall
         };
   
         public static Card[] UnimplementedCards = new Card[]
@@ -666,25 +694,25 @@ namespace Dominion
             Cards.CoinOfTheRealm,
             Cards.Disciple,
             Cards.DistantLands,
-            Cards.Duplicate,            
+            Cards.Duplicate,
             Cards.Fugitive,
             Cards.Gear,
             Cards.Giant,
             Cards.Guide,
             Cards.HauntedWoods,
             Cards.Hero,
-            Cards.Hireling,            
+            Cards.Hireling,
             Cards.Page,
-            Cards.Peasant,            
+            Cards.Peasant,
             Cards.Ranger,
             Cards.RatCatcher,
             Cards.Relic,
             Cards.RoyalCarriage,
-            Cards.Solider,            
+            Cards.Solider,
             Cards.SwampHag,
             Cards.Teacher,
             Cards.Transmogrify,
-            Cards.TreasureHunter,            
+            Cards.TreasureHunter,
             Cards.Warrior,
             Cards.WineMerchant,
 
@@ -708,7 +736,21 @@ namespace Dominion
             Cards.Seaway,
             Cards.Trade,
             Cards.Training,
-            Cards.TravellingFair
-        };        
+            Cards.TravellingFair,
+            // Empires events
+            Cards.Advance,
+            Cards.Annex,
+            Cards.Banquet,
+            Cards.Conquest,
+            Cards.Delve,
+            Cards.Dominate,
+            Cards.Donate,
+            Cards.Ritual,
+            Cards.SalthTheEarth,
+            Cards.Tax,
+            Cards.Triumph,
+            Cards.Wedding,
+            Cards.Windfall
+        };
     }   
 }

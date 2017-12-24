@@ -48,6 +48,7 @@
         Promo = 8,
         Prosperity = 9,
         Seaside = 10,
+        Empires = 11,
         _Unknown = 11,
         _Count = 12
     }

@@ -132,6 +132,7 @@ namespace Dominulator
                 case Dominion.Expansion.Prosperity: return ExpansionIndex.Prosperity;
                 case Dominion.Expansion.Seaside: return ExpansionIndex.Seaside;
                 case Dominion.Expansion.Adventures: return ExpansionIndex.Adventures;
+                case Dominion.Expansion.Empires: return ExpansionIndex.Empires;
                 case Dominion.Expansion.Unknown: return ExpansionIndex._Unknown;
             }
             throw new Exception("Expansion not found");
@@ -151,6 +152,7 @@ namespace Dominulator
                 case "Promo": return ExpansionIndex.Promo;
                 case "Prosperity": return ExpansionIndex.Prosperity;
                 case "Seaside": return ExpansionIndex.Seaside;
+                case "Empires": return ExpansionIndex.Empires;
             }
 
             return ExpansionIndex._Unknown;

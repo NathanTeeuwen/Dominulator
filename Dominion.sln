@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService", "WebService\WebService.csproj", "{630872C0-2437-4A8F-81D5-1369098BB16B}"
 EndProject
@@ -39,6 +39,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlRenderer.Native", "HtmlRenderer\HtmlRenderer.Native.csproj", "{31CE0F10-4472-4CFF-B683-44B1F13B8D39}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlRenderer.Windows", "HtmlRenderer\HtmlRenderer.Windows.csproj", "{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominulator", "Dominulator\Dominulator.csproj", "{743F549A-E38C-4703-B15B-DB591610720F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +203,26 @@ Global
 		{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}.Release|ARM.ActiveCfg = Release|Any CPU
 		{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}.Release|x64.ActiveCfg = Release|Any CPU
 		{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}.Release|x86.ActiveCfg = Release|Any CPU
+		{743F549A-E38C-4703-B15B-DB591610720F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{743F549A-E38C-4703-B15B-DB591610720F}.Debug|ARM.ActiveCfg = Debug|ARM
+		{743F549A-E38C-4703-B15B-DB591610720F}.Debug|ARM.Build.0 = Debug|ARM
+		{743F549A-E38C-4703-B15B-DB591610720F}.Debug|ARM.Deploy.0 = Debug|ARM
+		{743F549A-E38C-4703-B15B-DB591610720F}.Debug|x64.ActiveCfg = Debug|x64
+		{743F549A-E38C-4703-B15B-DB591610720F}.Debug|x64.Build.0 = Debug|x64
+		{743F549A-E38C-4703-B15B-DB591610720F}.Debug|x64.Deploy.0 = Debug|x64
+		{743F549A-E38C-4703-B15B-DB591610720F}.Debug|x86.ActiveCfg = Debug|x86
+		{743F549A-E38C-4703-B15B-DB591610720F}.Debug|x86.Build.0 = Debug|x86
+		{743F549A-E38C-4703-B15B-DB591610720F}.Debug|x86.Deploy.0 = Debug|x86
+		{743F549A-E38C-4703-B15B-DB591610720F}.Release|Any CPU.ActiveCfg = Release|x86
+		{743F549A-E38C-4703-B15B-DB591610720F}.Release|ARM.ActiveCfg = Release|ARM
+		{743F549A-E38C-4703-B15B-DB591610720F}.Release|ARM.Build.0 = Release|ARM
+		{743F549A-E38C-4703-B15B-DB591610720F}.Release|ARM.Deploy.0 = Release|ARM
+		{743F549A-E38C-4703-B15B-DB591610720F}.Release|x64.ActiveCfg = Release|x64
+		{743F549A-E38C-4703-B15B-DB591610720F}.Release|x64.Build.0 = Release|x64
+		{743F549A-E38C-4703-B15B-DB591610720F}.Release|x64.Deploy.0 = Release|x64
+		{743F549A-E38C-4703-B15B-DB591610720F}.Release|x86.ActiveCfg = Release|x86
+		{743F549A-E38C-4703-B15B-DB591610720F}.Release|x86.Build.0 = Release|x86
+		{743F549A-E38C-4703-B15B-DB591610720F}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -210,5 +232,8 @@ Global
 		{350F1B63-533B-423E-8327-A65543322AFE} = {34A40E3A-AE7A-4CE2-A21D-E3E607296019}
 		{22F3BF86-B040-4065-A332-9745E8111F10} = {34A40E3A-AE7A-4CE2-A21D-E3E607296019}
 		{C8249921-CAD7-471E-AB09-44CDF411851D} = {34A40E3A-AE7A-4CE2-A21D-E3E607296019}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C660EE75-966D-482F-94B7-80C17779888F}
 	EndGlobalSection
 EndGlobal
