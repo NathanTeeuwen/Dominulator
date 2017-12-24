@@ -103,14 +103,14 @@ namespace Dominion.Strategy
         {
 
             foreach (Card card in Cards.UnimplementedCards)
-            {                                
+            {
                 yield return card;
             }
 
             foreach (Card card in CardsWithoutDefaultBehaviors)
-            {                
+            {
                 yield return card;
             }
-        }        
+        }
     }
 }

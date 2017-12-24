@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Reflection;
 using System.Collections.Generic;
 
 namespace Dominion
@@ -317,31 +318,40 @@ namespace Dominion
         public static readonly CardTypes.Wedding Wedding = CardTypes.Wedding.card;
         public static readonly CardTypes.Windfall Windfall = CardTypes.Windfall.card;
 
-        /* 
-        public static void PrintAllCards()
-        {
-            foreach (System.Reflection.FieldInfo fieldInfo in typeof(Cards).GetFields())
-            {
-                System.Console.WriteLine("Cards.{0},", fieldInfo.Name);
-            }
-        }
-        
+        //Landmarks
+        public static readonly CardTypes.Aqueduct aqueduct = CardTypes.Aqueduct.card;
+        public static readonly CardTypes.Arena arena = CardTypes.Arena.card;
+        public static readonly CardTypes.BanditFort banditFort = CardTypes.BanditFort.card;
+        public static readonly CardTypes.Basilica basilica = CardTypes.Basilica.card;
+        public static readonly CardTypes.Baths baths = CardTypes.Baths.card;
+        public static readonly CardTypes.BattleField battleField = CardTypes.BattleField.card;
+        public static readonly CardTypes.Colonnade colonnade = CardTypes.Colonnade.card;
+        public static readonly CardTypes.DefiledShrine defiledShrine = CardTypes.DefiledShrine.card;
+        public static readonly CardTypes.Fountain fountain = CardTypes.Fountain.card;
+        public static readonly CardTypes.Keep keep = CardTypes.Keep.card;
+        public static readonly CardTypes.Labyrinth labyrinth = CardTypes.Labyrinth.card;
+        public static readonly CardTypes.MountainPass mountainPass = CardTypes.MountainPass.card;
+        public static readonly CardTypes.Museum museum = CardTypes.Museum.card;
+        public static readonly CardTypes.Obelisk obelisk = CardTypes.Obelisk.card;
+        public static readonly CardTypes.Orchard orchard = CardTypes.Orchard.card;
+        public static readonly CardTypes.Palace palace = CardTypes.Palace.card;
+        public static readonly CardTypes.Tomb tomb = CardTypes.Tomb.card;
+        public static readonly CardTypes.Tower tower = CardTypes.Tower.card;
+        public static readonly CardTypes.TriumphalArch triumphalArch = CardTypes.TriumphalArch.card;
+        public static readonly CardTypes.Wall wall = CardTypes.Wall.card;
+        public static readonly CardTypes.WolfDen wolfDen = CardTypes.WolfDen.card;
+
         public static Card[] AllCards()
         {
             var result = new List<Card>();
-            foreach (System.Reflection.FieldInfo fieldInfo in typeof(Cards).GetFields())
+            foreach (System.Reflection.FieldInfo fieldInfo in typeof(Cards).GetTypeInfo().DeclaredFields)
             {
-                result.Add((Card)fieldInfo.GetValue(null));
+                var fieldValue = fieldInfo.GetValue(null);
+                if (fieldValue is Card card)
+                result.Add(card);
             }
             
             return result.ToArray();
-        }
-
-        */
-
-        public static Card[] AllCards()
-        {
-            return AllCardsList;
         }
 
         public static Card[] Shelters = new Card[] {
@@ -361,321 +371,8 @@ namespace Dominion
             return result.ToArray();
         }
 
-        private static Card[] AllCardsList = new Card[]
-        {
-            Cards.AbandonedMine,
-            Cards.Adventurer,
-            Cards.Advisor,
-            Cards.Alchemist,
-            Cards.Altar,
-            Cards.Ambassador,
-            Cards.Apothecary,
-            Cards.Apprentice,
-            Cards.Armory,
-            Cards.BagOfGold,
-            Cards.Baker,
-            Cards.BanditCamp,
-            Cards.BandOfMisfits,
-            Cards.Bank,
-            Cards.Baron,
-            Cards.Bazaar,
-            Cards.Beggar,
-            Cards.Bishop,
-            Cards.BlackMarket,
-            Cards.BorderVillage,
-            Cards.Bridge,
-            Cards.Bureaucrat,
-            Cards.Butcher,
-            Cards.Cache,
-            Cards.CandlestickMaker,
-            Cards.Caravan,
-            Cards.Cartographer,
-            Cards.Catacombs,
-            Cards.Cellar,
-            Cards.Chancellor,
-            Cards.Chapel,
-            Cards.City,
-            Cards.Colony,
-            Cards.Conspirator,
-            Cards.Contraband,
-            Cards.Copper,
-            Cards.Coppersmith,
-            Cards.CouncilRoom,
-            Cards.Count,
-            Cards.CounterFeit,
-            Cards.CountingHouse,
-            Cards.Courtyard,
-            Cards.CrossRoads,
-            Cards.Cultist,
-            Cards.Curse,
-            Cards.Cutpurse,
-            Cards.DeathCart,
-            Cards.Develop,
-            Cards.Diadem,
-            Cards.Doctor,
-            Cards.Duchess,
-            Cards.Duchy,
-            Cards.Duke,
-            Cards.Embargo,
-            Cards.Embassy,
-            Cards.Envoy,
-            Cards.Estate,
-            Cards.Expand,
-            Cards.Explorer,
-            Cards.Fairgrounds,
-            Cards.Familiar,
-            Cards.FarmingVillage,
-            Cards.Farmland,
-            Cards.Feast,
-            Cards.Feodum,
-            Cards.Festival,
-            Cards.FishingVillage,
-            Cards.Followers,
-            Cards.FoolsGold,
-            Cards.Forager,
-            Cards.Forge,
-            Cards.Fortress,
-            Cards.FortuneTeller,
-            Cards.Gardens,
-            Cards.GhostShip,
-            Cards.Gold,
-            Cards.Golem,
-            Cards.Goons,
-            Cards.Governor,
-            Cards.GrandMarket,
-            Cards.Graverobber,
-            Cards.GreatHall,
-            Cards.Haggler,
-            Cards.Hamlet,
-            Cards.Harem,
-            Cards.Harvest,
-            Cards.Haven,
-            Cards.Herald,
-            Cards.Herbalist,
-            Cards.Hermit,
-            Cards.Highway,
-            Cards.Hoard,
-            Cards.HornOfPlenty,
-            Cards.HorseTraders,
-            Cards.Hovel,
-            Cards.HuntingGrounds,
-            Cards.HuntingParty,
-            Cards.IllGottenGains,
-            Cards.Inn,
-            Cards.IronMonger,
-            Cards.IronWorks,
-            Cards.Island,
-            Cards.JackOfAllTrades,
-            Cards.Jester,
-            Cards.JunkDealer,
-            Cards.KingsCourt,
-            Cards.Knights,
-            Cards.Laboratory,
-            Cards.Library,
-            Cards.Lighthouse,
-            Cards.Loan,
-            Cards.Lookout,
-            Cards.LostCity,
-            Cards.Madman,
-            Cards.Magpie,
-            Cards.Mandarin,
-            Cards.Marauder,
-            Cards.Margrave,
-            Cards.Market,
-            Cards.MarketSquare,
-            Cards.Masquerade,
-            Cards.Masterpiece,
-            Cards.Menagerie,
-            Cards.Mercenary,
-            Cards.MerchantGuild,
-            Cards.MerchantShip,
-            Cards.Messenger,
-            Cards.Militia,
-            Cards.Mine,
-            Cards.MiningVillage,
-            Cards.Minion,
-            Cards.Mint,
-            Cards.Moat,
-            Cards.Moneylender,
-            Cards.Monument,
-            Cards.Mountebank,
-            Cards.Mystic,
-            Cards.NativeVillage,
-            Cards.Navigator,
-            Cards.Necropolis,
-            Cards.NobleBrigand,
-            Cards.Nobles,
-            Cards.NomadCamp,
-            Cards.Oasis,
-            Cards.Oracle,
-            Cards.Outpost,
-            Cards.OvergrownEstate,
-            Cards.Pawn,
-            Cards.PearlDiver,
-            Cards.Peddler,
-            Cards.PhilosophersStone,
-            Cards.Pillage,
-            Cards.PirateShip,
-            Cards.Platinum,
-            Cards.Plaza,
-            Cards.PoorHouse,
-            Cards.Possession,
-            Cards.Potion,
-            Cards.Princess,
-            Cards.Prince,
-            Cards.Prize,
-            Cards.Procession,
-            Cards.Province,
-            Cards.Quarry,
-            Cards.Rabble,
-            Cards.Rats,
-            Cards.Rebuild,
-            Cards.Remake,
-            Cards.Remodel,
-            Cards.Rogue,
-            Cards.RoyalSeal,
-            Cards.RuinedLibrary,
-            Cards.RuinedMarket,
-            Cards.RuinedVillage,
-            Cards.Ruins,
-            Cards.Saboteur,
-            Cards.Sage,
-            Cards.Salvager,
-            Cards.Scavenger,
-            Cards.Scheme,
-            Cards.Scout,
-            Cards.ScryingPool,
-            Cards.SeaHag,
-            Cards.SecretChamber,
-            Cards.ShantyTown,
-            Cards.SilkRoad,
-            Cards.Silver,
-            Cards.Smithy,
-            Cards.Smugglers,
-            Cards.Soothsayer,
-            Cards.SpiceMerchant,
-            Cards.Spoils,
-            Cards.Spy,
-            Cards.Squire,
-            Cards.Stables,
-            Cards.Stash,
-            Cards.Steward,
-            Cards.StoneMason,
-            Cards.Storeroom,
-            Cards.Storyteller,
-            Cards.Survivors,
-            Cards.Swindler,
-            Cards.Tactician,
-            Cards.Talisman,
-            Cards.Taxman,
-            Cards.Thief,
-            Cards.ThroneRoom,
-            Cards.Torturer,
-            Cards.Tournament,
-            Cards.Trader,
-            Cards.TradeRoute,
-            Cards.TradingPost,
-            Cards.Transmute,
-            Cards.TreasureMap,
-            Cards.Treasury,
-            Cards.Tribute,
-            Cards.TrustySteed,
-            Cards.Tunnel,
-            Cards.University,
-            Cards.Upgrade,
-            Cards.Urchin,
-            Cards.Vagrant,
-            Cards.Vault,
-            Cards.Venture,
-            Cards.Village,
-            Cards.Vineyard,
-            Cards.WalledVillage,
-            Cards.WanderingMinstrel,
-            Cards.Warehouse,
-            Cards.Watchtower,
-            Cards.Wharf,
-            Cards.WishingWell,
-            Cards.Witch,
-            Cards.WoodCutter,
-            Cards.WorkersVillage,
-            Cards.Workshop,
-            Cards.YoungWitch,
+        public static Card[] AllCardsList = Dominion.Cards.AllCards();
 
-            // Adventures
-            Cards.Amulet,
-            Cards.Artificer,
-            Cards.BridgeTroll,
-            Cards.CaravanGuard,
-            Cards.Champion,
-            Cards.CoinOfTheRealm,
-            Cards.Disciple,
-            Cards.DistantLands,
-            Cards.Duplicate,
-            Cards.Dungeon,
-            Cards.Fugitive,
-            Cards.Gear,
-            Cards.Giant,
-            Cards.Guide,
-            Cards.HauntedWoods,
-            Cards.Hero,
-            Cards.Hireling,
-            Cards.Miser,
-            Cards.Page,
-            Cards.Peasant,
-            Cards.Port,
-            Cards.Ranger,
-            Cards.RatCatcher,
-            Cards.Raze,
-            Cards.Relic,
-            Cards.RoyalCarriage,
-            Cards.Solider,
-            Cards.SwampHag,
-            Cards.Teacher,
-            Cards.Transmogrify,
-            Cards.TreasureHunter,
-            Cards.TreasureTrove,
-            Cards.Warrior,
-            Cards.WineMerchant,
-
-            // events
-
-            Cards.Alms,
-            Cards.Ball,
-            Cards.Borrow,
-            Cards.Bonfire,
-            Cards.Expedition,
-            Cards.Ferry,
-            Cards.Inheritance,
-            Cards.LostArts,
-            Cards.Mission,
-            Cards.PathFinding,
-            Cards.Pilgrimage,
-            Cards.Plan,
-            Cards.Quest,
-            Cards.Raid,
-            Cards.Save,
-            Cards.ScoutingParty,
-            Cards.Seaway,
-            Cards.Trade,
-            Cards.Training,
-            Cards.TravellingFair,
-            
-            // Empires events
-            Cards.Advance,
-            Cards.Annex,
-            Cards.Banquet,
-            Cards.Conquest,
-            Cards.Delve,
-            Cards.Dominate,
-            Cards.Donate,
-            Cards.Ritual,
-            Cards.SalthTheEarth,
-            Cards.Tax,
-            Cards.Triumph,
-            Cards.Wedding,
-            Cards.Windfall
-        };
-  
         public static Card[] UnimplementedCards = new Card[]
         {          
             Cards.Knights,
