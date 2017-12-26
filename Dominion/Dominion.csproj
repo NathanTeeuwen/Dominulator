@@ -46,6 +46,7 @@
     <Compile Include="Cards\Guilds.cs" />
     <Compile Include="Cards\Hinterlands.cs" />
     <Compile Include="Cards\Intrigue.cs" />
+    <Compile Include="Cards\Nocturne.cs" />
     <Compile Include="Cards\Promo.cs" />
     <Compile Include="Cards\Prosperity.cs" />
     <Compile Include="Cards\Seaside.cs" />

@@ -141,7 +141,9 @@ namespace Dominulator
             this.expansions.Add(new Expansion("Intrigue", ExpansionIndex.Intrigue));
             this.expansions.Add(new Expansion("Promo", ExpansionIndex.Promo));
             this.expansions.Add(new Expansion("Prosperity", ExpansionIndex.Prosperity));
-            this.expansions.Add(new Expansion("Seaside", ExpansionIndex.Seaside));            
+            this.expansions.Add(new Expansion("Seaside", ExpansionIndex.Seaside));
+            this.expansions.Add(new Expansion("Empires", ExpansionIndex.Empires));
+            this.expansions.Add(new Expansion("Nocturne", ExpansionIndex.Nocturne));
 
             foreach (var expansion in expansions)
             {

@@ -413,7 +413,7 @@ namespace Dominion
                 if (!currentPlayer.RequestPlayerPlayActionFromHand(this, Delegates.IsActionCardPredicate, isOptional: true))
                 {
                     break;
-                }                
+                }
             }
         }
 

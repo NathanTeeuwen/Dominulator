@@ -133,6 +133,7 @@ namespace Dominulator
                 case Dominion.Expansion.Seaside: return ExpansionIndex.Seaside;
                 case Dominion.Expansion.Adventures: return ExpansionIndex.Adventures;
                 case Dominion.Expansion.Empires: return ExpansionIndex.Empires;
+                case Dominion.Expansion.Nocturne: return ExpansionIndex.Nocturne;
                 case Dominion.Expansion.Unknown: return ExpansionIndex._Unknown;
             }
             throw new Exception("Expansion not found");

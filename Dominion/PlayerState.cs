@@ -923,10 +923,11 @@ namespace Dominion
 
             if (cardToPlay != null)
             {
-                this.DoPlayAction(cardToPlay, gameState);                
+                this.DoPlayAction(cardToPlay, gameState);
+                return true;
             }
 
-            return true;
+            return false;
         }
 
         internal Card RequestPlayerGainCardFromTrash(GameState gameState, CardPredicate acceptableCard, string description, bool isOptional = false, DeckPlacement defaultLocation = DeckPlacement.Discard)

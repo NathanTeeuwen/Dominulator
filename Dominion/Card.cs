@@ -8,11 +8,9 @@ using System.Threading.Tasks;
 namespace Dominion
 {
     public abstract class Card
-        : IEquatable<Card>
+        : CardShapedObject,
+          IEquatable<Card>
     {
-        public readonly string name;
-        public readonly string pluralName;
-        public readonly Expansion expansion;
         private readonly int coinCost;
         public readonly int potionCost;
         public readonly int plusAction;
@@ -33,12 +31,18 @@ namespace Dominion
         public readonly bool isAttack;
         public readonly bool isCurse;
         public readonly bool isDuration;
+        public readonly bool isFate;
+        public readonly bool isDoom;
         public readonly bool isGathering;
+        public readonly bool isHeirloom;
+        public readonly bool isNight;
         public readonly bool isPrize;
         public readonly bool isReaction;
         public readonly bool isReserve;
         public readonly bool isRuins;
         public readonly bool isShelter;
+        public readonly bool isSpirit;
+        public readonly bool isZombie;
         public readonly bool isTreasure;
         public readonly bool isTraveller;
         public bool isVictory
@@ -53,6 +57,8 @@ namespace Dominion
         {
             get
             {
+                if (this.isVictory)
+                    yield return CardType.Victory;
                 if (this.isAction)
                     yield return CardType.Action;
                 if (this.isAttack)
@@ -61,8 +67,16 @@ namespace Dominion
                     yield return CardType.Curse;
                 if (this.isDuration)
                     yield return CardType.Duration;
+                if (this.isFate)
+                    yield return CardType.Fate;
+                if (this.isDoom)
+                    yield return CardType.Doom;
                 if (this.isGathering)
                     yield return CardType.Gathering;
+                if (this.isHeirloom)
+                    yield return CardType.Heirloom;
+                if (this.isNight)
+                    yield return CardType.Night;
                 if (this.isPrize)
                     yield return CardType.Prize;
                 if (this.isReaction)
@@ -73,6 +87,10 @@ namespace Dominion
                     yield return CardType.Ruins;
                 if (this.isShelter)
                     yield return CardType.Shelter;
+                if (this.isSpirit)
+                    yield return CardType.Spirit;
+                if (this.isZombie)
+                    yield return CardType.Zombie;
                 if (this.isTreasure)
                     yield return CardType.Treasure;
                 if (this.isTraveller)
@@ -98,8 +116,6 @@ namespace Dominion
         protected GameStateCardToPlacement doSpecializedActionOnBuyWhileInHand; //readonly 
         protected GameStateCardToPlacement doSpecializedActionOnGainWhileInHand; //readonly
 
-        private readonly int privateIndex;
-
         // properties of cards used that don't affect behavior
         public readonly bool mightMultiplyActions;
 
@@ -108,20 +124,9 @@ namespace Dominion
         {
             get
             {
-                return this.name.Replace(" ", "_");
+                return this.name.Replace(" ", "_").Replace("'", "").Replace("-", "_");
             }
         }
-
-        private static int lastCardIndex = 0;
-        private static HashSet<Type> cardTypes = new HashSet<Type>();
-
-        internal int Index
-        {
-            get
-            {
-                return this.privateIndex;
-            }
-        }        
 
         protected Card(
             string name,
@@ -143,6 +148,7 @@ namespace Dominion
             bool isAttackBeforeAction = false,
             bool isCurse = false,
             bool isReaction = false,
+            bool isNight = false,
             bool isPrize = false,
             bool isRuins = false,
             bool isTreasure = false,
@@ -153,6 +159,11 @@ namespace Dominion
             bool isTraveller = false,
             bool isReserve = false,
             bool isGathering = false,
+            bool isHeirloom = false,
+            bool isFate = false,
+            bool isDoom = false,
+            bool isZombie = false,
+            bool isSpirit = false,
             bool isEvent = false,
             bool isLandmark = false,
             bool canOverpay = false,
@@ -168,24 +179,8 @@ namespace Dominion
             GameStateCardToPlacement doSpecializedActionOnBuyWhileInHand = null,
             GameStateCardToPlacement doSpecializedActionOnGainWhileInHand = null,
             GameStateCardMethod      doSpecializedActionToCardWhileInPlay = null)
+            : base(name, expansion, pluralName)
         {
-            lock (Card.cardTypes)
-            {
-                if (Card.cardTypes.Contains(this.GetType()))
-                {
-                    throw new Exception("Do not create duplicate cards.");
-                }
-                else
-                {
-                    Card.cardTypes.Add(this.GetType());
-                }
-
-                this.privateIndex = Card.lastCardIndex++;
-            }
-
-            this.name = name;
-            this.pluralName = pluralName != null ? pluralName : name + "s";
-            this.expansion = expansion;
             this.coinCost = coinCost;
             this.potionCost = potionCost;
             this.plusAction = plusActions;
@@ -200,9 +195,15 @@ namespace Dominion
             this.isAttackBeforeAction = isAttackBeforeAction;
             this.isCurse = isCurse;
             this.isReaction = isReaction;
+            this.isNight = isNight;
             this.isPrize = isPrize;
             this.isRuins = isRuins;
             this.isTreasure = isTreasure;
+            this.isFate = isFate;
+            this.isDoom = isDoom;
+            this.isHeirloom = isHeirloom;
+            this.isSpirit = isSpirit;
+            this.isZombie = isZombie;
             this.defaultSupplyCount = defaultSupplyCount;
             this.requiresRuins = requiresRuins;
             this.isDuration = isDuration;
@@ -543,4 +544,83 @@ namespace Dominion
         }
     }
 
+    public class CardShapedObject
+    {
+        public readonly string name;
+        public readonly string pluralName;
+        public readonly Expansion expansion;
+        private readonly int privateIndex;
+
+        private static int lastCardIndex = 0;
+        private static HashSet<Type> cardTypes = new HashSet<Type>();
+
+        internal int Index
+        {
+            get
+            {
+                return this.privateIndex;
+            }
+        }        
+
+
+        public CardShapedObject(string name, Expansion expansion, string pluralName = null)
+        {
+            lock (CardShapedObject.cardTypes)
+            {
+                if (CardShapedObject.cardTypes.Contains(this.GetType()))
+                {
+                    throw new Exception("Do not create duplicate cards.");
+                }
+                else
+                {
+                    CardShapedObject.cardTypes.Add(this.GetType());
+                }
+
+                this.privateIndex = CardShapedObject.lastCardIndex++;
+            }
+
+            this.name = name;
+            this.expansion = expansion;
+            this.pluralName = pluralName != null ? pluralName : name + "s";
+        }
+
+        public string ProgrammaticName
+        {
+            get
+            {
+                return this.name.Replace(" ", "_").Replace("'", "").Replace("-", "_");
+            }
+        }
+    }
+
+    public abstract class Hex
+        : CardShapedObject
+    {
+        public Hex(string name, Expansion expansion, string pluralName = null)
+            : base(name, expansion, pluralName)
+        {
+        }
+
+        public abstract void DoSpecializedHex(PlayerState currentPlayer, GameState gameState);
+    }
+
+    public class State
+        : CardShapedObject
+    {
+        public State(string name, Expansion expansion, string pluralName = null)
+            : base(name, expansion, pluralName)
+        {
+        }
+    }
+
+    public abstract class Boon
+        : CardShapedObject
+    {
+        public Boon(string name, Expansion expansion, string pluralName = null)
+            : base(name, expansion, pluralName)
+        {
+        }
+
+        public abstract void DoSpecializedBoon(PlayerState currentPlayer, GameState gameState);
+    }
 }

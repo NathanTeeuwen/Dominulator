@@ -49,7 +49,8 @@
         Prosperity = 9,
         Seaside = 10,
         Empires = 11,
-        _Unknown = 11,
-        _Count = 12
+        Nocturne = 12,
+        _Unknown = 13,
+        _Count = 13
     }
 }

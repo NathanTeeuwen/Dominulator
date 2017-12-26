@@ -11,15 +11,22 @@ namespace Dominion
         Action,
         Attack,
         Curse,
+        Doom,
         Duration,
+        Fate,
         Gathering,
+        Heirloom,
         Prize,
+        Night,
         Reaction,
         Reserve,
         Ruins,
         Shelter,
+        Spirit,
         Treasure,
-        Traveller
+        Traveller,
+        Victory,
+        Zombie
     }
 
     public static class CardTypeExtensionMethods
