@@ -56,13 +56,13 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Cemetary
+    public class Cemetery
         : Card
     {
-        public static Cemetary card = new Cemetary();
+        public static Cemetery card = new Cemetery();
 
-        private Cemetary()
-            : base("Cemetary", Expansion.Nocturne, coinCost: 4, victoryPoints: c => 2)
+        private Cemetery()
+            : base("Cemetery", Expansion.Nocturne, coinCost: 4, victoryPoints: c => 2)
         {
         }
 

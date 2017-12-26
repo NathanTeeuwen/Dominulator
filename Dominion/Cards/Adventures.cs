@@ -824,13 +824,13 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Solider
+    public class Soldier
        : Card
     {
-        public static Solider card = new Solider();
+        public static Soldier card = new Soldier();
 
-        private Solider()
-            : base("Solider", Expansion.Adventures, coinCost: 3, isAction: true, plusCoins: 2, isKingdomCard: false, isInSupply: false)
+        private Soldier()
+            : base("Soldier", Expansion.Adventures, coinCost: 3, isAction: true, plusCoins: 2, isKingdomCard: false, isInSupply: false)
         {
         }        
 

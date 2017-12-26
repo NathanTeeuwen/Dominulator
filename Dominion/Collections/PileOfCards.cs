@@ -14,8 +14,8 @@ namespace Dominion
         public PileOfCards(CardGameSubset gameSubset, Card protoType, int count)
             : base(gameSubset)
         {
-            this.AddNCardsToTop(protoType, count);           
-            this.protoType = protoType;            
+            this.AddNCardsToTop(protoType, count);
+            this.protoType = protoType;
         }
 
         public PileOfCards(CardGameSubset gameSubset, Card protoType)
@@ -26,7 +26,7 @@ namespace Dominion
 
         public bool IsType(Card card)
         {
-            return card.IsType(this.protoType);            
+            return card.IsType(this.protoType);
         }
 
         public Card ProtoTypeCard

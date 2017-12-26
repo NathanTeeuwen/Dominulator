@@ -19,7 +19,7 @@ namespace Dominion
         public static readonly CardTypes.Apprentice Apprentice = CardTypes.Apprentice.card;
         public static readonly CardTypes.Armory Armory = CardTypes.Armory.card;
         public static readonly CardTypes.Artificer Artificer = CardTypes.Artificer.card;
-        public static readonly CardTypes.Avonto Avonto = CardTypes.Avonto.card;
+        public static readonly CardTypes.Avanto Avanto = CardTypes.Avanto.card;
         public static readonly CardTypes.BagOfGold BagOfGold = CardTypes.BagOfGold.card;
         public static readonly CardTypes.Baker Baker = CardTypes.Baker.card;
         public static readonly CardTypes.BanditCamp BanditCamp = CardTypes.BanditCamp.card;
@@ -45,7 +45,7 @@ namespace Dominion
         public static readonly CardTypes.Cartographer Cartographer = CardTypes.Cartographer.card;
         public static readonly CardTypes.Catacombs Catacombs = CardTypes.Catacombs.card;
         public static readonly CardTypes.Cellar Cellar = CardTypes.Cellar.card;
-        public static readonly CardTypes.Cemetary Cemetary = CardTypes.Cemetary.card;
+        public static readonly CardTypes.Cemetery Cemetary = CardTypes.Cemetery.card;
         public static readonly CardTypes.Champion Champion = CardTypes.Champion.card;
         public static readonly CardTypes.Chancellor Chancellor = CardTypes.Chancellor.card;
         public static readonly CardTypes.Changeling Changeling = CardTypes.Changeling.card;
@@ -273,7 +273,7 @@ namespace Dominion
         public static readonly CardTypes.SmallCastle SmallCastle = CardTypes.SmallCastle.card;
         public static readonly CardTypes.Smithy Smithy = CardTypes.Smithy.card;
         public static readonly CardTypes.Smugglers Smugglers = CardTypes.Smugglers.card;
-        public static readonly CardTypes.Solider Solider = CardTypes.Solider.card;
+        public static readonly CardTypes.Soldier Solider = CardTypes.Soldier.card;
         public static readonly CardTypes.Soothsayer Soothsayer = CardTypes.Soothsayer.card;
         public static readonly CardTypes.SpiceMerchant SpiceMerchant = CardTypes.SpiceMerchant.card;
         public static readonly CardTypes.Spoils Spoils = CardTypes.Spoils.card;

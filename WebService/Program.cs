@@ -29,7 +29,7 @@ namespace Program
         {
             foreach (Card card in Cards.AllCards())
             {
-                if (card == Cards.Prize || card == Cards.Ruins)
+                if (card == CardTypes.Prize.card || card == CardTypes.Ruins.card)
                     continue;
                 if (resourceLoader.GetEmbeddedContentAsBinary("Webservice.Resources.cards.", card.ProgrammaticName + ".jpg") == null)
                 {

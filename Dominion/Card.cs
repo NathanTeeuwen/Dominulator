@@ -122,15 +122,6 @@ namespace Dominion
         // properties of cards used that don't affect behavior
         public readonly bool mightMultiplyActions;
 
-
-        public string ProgrammaticName
-        {
-            get
-            {
-                return this.name.Replace(" ", "_").Replace("'", "").Replace("-", "_");
-            }
-        }
-
         protected Card(
             string name,
             Expansion expansion,
@@ -489,7 +480,7 @@ namespace Dominion
         virtual public void DoSpecializedActionOnReturnToHand(PlayerState currentPlayer, GameState gameState)
         {
 
-        }        
+        }
 
         public bool IsType(Card card)
         {
@@ -565,8 +556,7 @@ namespace Dominion
             {
                 return this.privateIndex;
             }
-        }        
-
+        }
 
         public CardShapedObject(string name, Expansion expansion, string pluralName = null)
         {
@@ -589,11 +579,23 @@ namespace Dominion
             this.pluralName = pluralName != null ? pluralName : name + "s";
         }
 
+        public static string GetProgrammaticName(string str)
+        {
+            var stringBuilder = new System.Text.StringBuilder();
+            foreach(char c in str)
+            {
+                if (System.Char.IsLetter(c))
+                    stringBuilder.Append(c);
+            }
+
+            return stringBuilder.ToString();
+        }
+
         public string ProgrammaticName
         {
             get
             {
-                return this.name.Replace(" ", "_").Replace("'", "").Replace("-", "_");
+                return GetProgrammaticName(this.name);
             }
         }
     }

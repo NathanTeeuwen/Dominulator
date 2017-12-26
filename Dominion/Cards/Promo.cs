@@ -147,13 +147,13 @@ namespace Dominion.CardTypes
         }
     }
 
-    public class Avonto
+    public class Avanto
        : Card
     {
-        public static Avonto card = new Avonto();
+        public static Avanto card = new Avanto();
 
-        private Avonto()
-            : base("Avonto", Expansion.Promo, coinCost: 5, isAction: true, plusCards: 3)
+        private Avanto()
+            : base("Avanto", Expansion.Promo, coinCost: 5, isAction: true, plusCards: 3)
         {
         }
 
