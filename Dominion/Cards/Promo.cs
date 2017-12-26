@@ -131,6 +131,70 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class Sauna
+       : Card
+    {
+        public static Sauna card = new Sauna();
+
+        private Sauna()
+            : base("Sauna", Expansion.Promo, coinCost: 4, isAction:true, plusCards:1, plusActions:1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Avonto
+       : Card
+    {
+        public static Avonto card = new Avonto();
+
+        private Avonto()
+            : base("Avonto", Expansion.Promo, coinCost: 5, isAction: true, plusCards: 3)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Dismantle
+       : Card
+    {
+        public static Dismantle card = new Dismantle();
+
+        private Dismantle()
+            : base("Dismantle", Expansion.Promo, coinCost: 4, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Summon
+       : Event
+    {
+        public static Summon card = new Summon();
+
+        private Summon()
+            : base("Summon", Expansion.Promo, coinCost: 4)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     public class Stash
        : Card
     {

@@ -19,6 +19,7 @@ namespace Dominion
         public static readonly CardTypes.Apprentice Apprentice = CardTypes.Apprentice.card;
         public static readonly CardTypes.Armory Armory = CardTypes.Armory.card;
         public static readonly CardTypes.Artificer Artificer = CardTypes.Artificer.card;
+        public static readonly CardTypes.Avonto Avonto = CardTypes.Avonto.card;
         public static readonly CardTypes.BagOfGold BagOfGold = CardTypes.BagOfGold.card;
         public static readonly CardTypes.Baker Baker = CardTypes.Baker.card;
         public static readonly CardTypes.BanditCamp BanditCamp = CardTypes.BanditCamp.card;
@@ -76,6 +77,7 @@ namespace Dominion
         public static readonly CardTypes.Develop Develop = CardTypes.Develop.card;
         public static readonly CardTypes.DevilsWorkshop DevilsWorkshop = CardTypes.DevilsWorkshop.card;
         public static readonly CardTypes.Diadem Diadem = CardTypes.Diadem.card;
+        public static readonly CardTypes.Dismantle Dismantle = CardTypes.Dismantle.card;
         public static readonly CardTypes.Disciple Disciple = CardTypes.Disciple.card;
         public static readonly CardTypes.DistantLands DistantLands = CardTypes.DistantLands.card;
         public static readonly CardTypes.Doctor Doctor = CardTypes.Doctor.card;
@@ -255,6 +257,7 @@ namespace Dominion
         public static readonly CardTypes.SacredGrove SacredGrove = CardTypes.SacredGrove.card;
         public static readonly CardTypes.Sage Sage = CardTypes.Sage.card;
         public static readonly CardTypes.Salvager Salvager = CardTypes.Salvager.card;
+        public static readonly CardTypes.Sauna Sauna = CardTypes.Sauna.card;
         public static readonly CardTypes.Scavenger Scavenger = CardTypes.Scavenger.card;
         public static readonly CardTypes.Scheme Scheme = CardTypes.Scheme.card;
         public static readonly CardTypes.Scout Scout = CardTypes.Scout.card;
@@ -366,6 +369,7 @@ namespace Dominion
         public static readonly CardTypes.Save Save = CardTypes.Save.card;
         public static readonly CardTypes.ScoutingParty ScoutingParty = CardTypes.ScoutingParty.card;
         public static readonly CardTypes.Seaway Seaway = CardTypes.Seaway.card;
+        public static readonly CardTypes.Summon Summon = CardTypes.Summon.card;
         public static readonly CardTypes.Tax Tax = CardTypes.Tax.card;
         public static readonly CardTypes.Trade Trade = CardTypes.Trade.card;
         public static readonly CardTypes.Training Training = CardTypes.Training.card;
@@ -373,6 +377,7 @@ namespace Dominion
         public static readonly CardTypes.Triumph Triumph = CardTypes.Triumph.card;
         public static readonly CardTypes.Wedding Wedding = CardTypes.Wedding.card;
         public static readonly CardTypes.Windfall Windfall = CardTypes.Windfall.card;
+
 
         //Landmarks
         public static readonly CardTypes.Aqueduct aqueduct = CardTypes.Aqueduct.card;
