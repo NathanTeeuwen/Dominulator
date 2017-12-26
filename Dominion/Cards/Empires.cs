@@ -444,6 +444,133 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class HumbleCastle
+       : Card
+    {
+        public static HumbleCastle card = new HumbleCastle();
+
+        private HumbleCastle()
+            : base("Humble Castle", Expansion.Empires, coinCost: 3, plusCoins:1, isTreasure:true, isCastle:true, victoryPoints: player => player.AllOwnedCards.CountWhere(c => c.isCastle))
+        {
+        }
+    }
+
+    public class CrumblingCastle
+       : Card
+    {
+        public static CrumblingCastle card = new CrumblingCastle();
+
+        private CrumblingCastle()
+            : base("Crumbling Castle", Expansion.Empires, coinCost: 4, isCastle: true, victoryPoints: player => 1)
+        {
+        }
+
+        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.GainCardFromSupply(Cards.Silver, gameState);
+            currentPlayer.AddVictoryTokens(1);
+            return base.DoSpecializedWhenGain(currentPlayer, gameState);
+        }
+
+        public override bool DoSpecializedTrash(PlayerState selfPlayer, GameState gameState)
+        {
+            selfPlayer.GainCardFromSupply(Cards.Silver, gameState);
+            selfPlayer.AddVictoryTokens(1);
+            return base.DoSpecializedTrash(selfPlayer, gameState);
+        }
+    }
+
+    public class SmallCastle
+       : Card
+    {
+        public static SmallCastle card = new SmallCastle();
+
+        private SmallCastle()
+            : base("Small Castle", Expansion.Empires, coinCost: 5, isAction: true, isCastle:true, victoryPoints: player => 2)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class HauntedCastle
+       : Card
+    {
+        public static HauntedCastle card = new HauntedCastle();
+
+        private HauntedCastle()
+            : base("Haunted Castle", Expansion.Empires, coinCost: 6, isCastle: true, victoryPoints: player => 2)
+        {
+        }
+
+        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class OpulentCastle
+       : Card
+    {
+        public static OpulentCastle card = new OpulentCastle();
+
+        private OpulentCastle()
+            : base("Opulent Castle", Expansion.Empires, coinCost: 7, isCastle: true, victoryPoints: player => 3)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class SprawlingCastle
+       : Card
+    {
+        public static SprawlingCastle card = new SprawlingCastle();
+
+        private SprawlingCastle()
+            : base("Sprawling Castle", Expansion.Empires, coinCost: 8, isCastle: true, victoryPoints: player => 4)
+        {
+        }
+
+        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class GrandCastle
+       : Card
+    {
+        public static GrandCastle card = new GrandCastle();
+
+        private GrandCastle()
+            : base("Grand Castle", Expansion.Empires, coinCost: 9, isCastle: true, victoryPoints: player => 5)
+        {
+        }
+
+        public override DeckPlacement DoSpecializedWhenGain(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class KingsCastle
+       : Card
+    {
+        public static KingsCastle card = new KingsCastle();
+
+        private KingsCastle()
+            : base("Kings Castle", Expansion.Empires, coinCost: 10, isCastle: true, victoryPoints: player => player.AllOwnedCards.CountWhere(c => c.isCastle)*2)
+        {
+        }
+    }
+
     public class Catapult
        : Card
     {

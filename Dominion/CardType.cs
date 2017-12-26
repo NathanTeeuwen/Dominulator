@@ -10,6 +10,7 @@ namespace Dominion
     {
         Action,
         Attack,
+        Castle,
         Curse,
         Doom,
         Duration,

@@ -63,6 +63,7 @@ namespace Dominion
         public static readonly CardTypes.CounterFeit CounterFeit = CardTypes.CounterFeit.card;
         public static readonly CardTypes.CountingHouse CountingHouse = CardTypes.CountingHouse.card;
         public static readonly CardTypes.Courtyard Courtyard = CardTypes.Courtyard.card;
+        public static readonly CardTypes.CrumblingCastle CrumblingCastle = CardTypes.CrumblingCastle.card;
         public static readonly CardTypes.CrossRoads CrossRoads = CardTypes.CrossRoads.card;
         public static readonly CardTypes.Crypt Crypt = CardTypes.Crypt.card;
         public static readonly CardTypes.Cultist Cultist = CardTypes.Cultist.card;
@@ -121,6 +122,7 @@ namespace Dominion
         public static readonly CardTypes.Governor Governor = CardTypes.Governor.card;
         public static readonly CardTypes.Guardian Guardian = CardTypes.Guardian.card;
         public static readonly CardTypes.Guide Guide = CardTypes.Guide.card;
+        public static readonly CardTypes.GrandCastle GrandCastle = CardTypes.GrandCastle.card;
         public static readonly CardTypes.GrandMarket GrandMarket = CardTypes.GrandMarket.card;
         public static readonly CardTypes.Graverobber Graverobber = CardTypes.Graverobber.card;
         public static readonly CardTypes.GreatHall GreatHall = CardTypes.GreatHall.card;
@@ -128,6 +130,7 @@ namespace Dominion
         public static readonly CardTypes.Hamlet Hamlet = CardTypes.Hamlet.card;
         public static readonly CardTypes.Harem Harem = CardTypes.Harem.card;
         public static readonly CardTypes.Harvest Harvest = CardTypes.Harvest.card;
+        public static readonly CardTypes.HauntedCastle HauntedCastle = CardTypes.HauntedCastle.card;
         public static readonly CardTypes.HauntedMirror HauntedMirror = CardTypes.HauntedMirror.card;
         public static readonly CardTypes.HauntedWoods HauntedWoods = CardTypes.HauntedWoods.card;
         public static readonly CardTypes.Haven Haven = CardTypes.Haven.card;
@@ -141,6 +144,7 @@ namespace Dominion
         public static readonly CardTypes.HornOfPlenty HornOfPlenty = CardTypes.HornOfPlenty.card;
         public static readonly CardTypes.HorseTraders HorseTraders = CardTypes.HorseTraders.card;
         public static readonly CardTypes.Hovel Hovel = CardTypes.Hovel.card;
+        public static readonly CardTypes.HumbleCastle HumbleCastle = CardTypes.HumbleCastle.card;
         public static readonly CardTypes.HuntingGrounds HuntingGrounds = CardTypes.HuntingGrounds.card;
         public static readonly CardTypes.HuntingParty HuntingParty = CardTypes.HuntingParty.card;
         public static readonly CardTypes.Idol Idol = CardTypes.Idol.card;
@@ -154,6 +158,7 @@ namespace Dominion
         public static readonly CardTypes.Jester Jester = CardTypes.Jester.card;
         public static readonly CardTypes.Journeyman Journeyman = CardTypes.Journeyman.card;
         public static readonly CardTypes.JunkDealer JunkDealer = CardTypes.JunkDealer.card;
+        public static readonly CardTypes.KingsCastle KingsCastle = CardTypes.KingsCastle.card;
         public static readonly CardTypes.KingsCourt KingsCourt = CardTypes.KingsCourt.card;
         public static readonly CardTypes.Knights Knights = CardTypes.Knights.card;
         public static readonly CardTypes.Laboratory Laboratory = CardTypes.Laboratory.card;
@@ -200,6 +205,7 @@ namespace Dominion
         public static readonly CardTypes.Necromancer Necromancer = CardTypes.Necromancer.card;
         public static readonly CardTypes.NightWatchman NightWatchman = CardTypes.NightWatchman.card;
         public static readonly CardTypes.Oasis Oasis = CardTypes.Oasis.card;
+        public static readonly CardTypes.OpulentCastle OpulentCastle = CardTypes.OpulentCastle.card;
         public static readonly CardTypes.Oracle Oracle = CardTypes.Oracle.card;
         public static readonly CardTypes.Outpost Outpost = CardTypes.Outpost.card;
         public static readonly CardTypes.OvergrownEstate OvergrownEstate = CardTypes.OvergrownEstate.card;
@@ -261,12 +267,14 @@ namespace Dominion
         public static readonly CardTypes.SilkRoad SilkRoad = CardTypes.SilkRoad.card;
         public static readonly CardTypes.Silver Silver = CardTypes.Silver.card;
         public static readonly CardTypes.Skulk Skulk = CardTypes.Skulk.card;
+        public static readonly CardTypes.SmallCastle SmallCastle = CardTypes.SmallCastle.card;
         public static readonly CardTypes.Smithy Smithy = CardTypes.Smithy.card;
         public static readonly CardTypes.Smugglers Smugglers = CardTypes.Smugglers.card;
         public static readonly CardTypes.Solider Solider = CardTypes.Solider.card;
         public static readonly CardTypes.Soothsayer Soothsayer = CardTypes.Soothsayer.card;
         public static readonly CardTypes.SpiceMerchant SpiceMerchant = CardTypes.SpiceMerchant.card;
         public static readonly CardTypes.Spoils Spoils = CardTypes.Spoils.card;
+        public static readonly CardTypes.SprawlingCastle SprawlingCastle = CardTypes.SprawlingCastle.card;
         public static readonly CardTypes.Spy Spy = CardTypes.Spy.card;
         public static readonly CardTypes.Squire Squire = CardTypes.Squire.card;
         public static readonly CardTypes.Stables Stables = CardTypes.Stables.card;

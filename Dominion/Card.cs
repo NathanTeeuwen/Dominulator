@@ -29,6 +29,7 @@ namespace Dominion
         // types
         public readonly bool isAction;
         public readonly bool isAttack;
+        public readonly bool isCastle;
         public readonly bool isCurse;
         public readonly bool isDuration;
         public readonly bool isFate;
@@ -63,6 +64,8 @@ namespace Dominion
                     yield return CardType.Action;
                 if (this.isAttack)
                     yield return CardType.Attack;
+                if (this.isCastle)
+                    yield return CardType.Castle;
                 if (this.isCurse)
                     yield return CardType.Curse;
                 if (this.isDuration)
@@ -164,6 +167,7 @@ namespace Dominion
             bool isDoom = false,
             bool isZombie = false,
             bool isSpirit = false,
+            bool isCastle = false,
             bool isEvent = false,
             bool isLandmark = false,
             bool canOverpay = false,
@@ -204,6 +208,7 @@ namespace Dominion
             this.isHeirloom = isHeirloom;
             this.isSpirit = isSpirit;
             this.isZombie = isZombie;
+            this.isCastle = isCastle;
             this.defaultSupplyCount = defaultSupplyCount;
             this.requiresRuins = requiresRuins;
             this.isDuration = isDuration;
