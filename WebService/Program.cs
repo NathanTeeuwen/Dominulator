@@ -27,7 +27,7 @@ namespace Program
 
         private static void CheckForAllCardImages()
         {
-            foreach (Card card in Cards.AllCards())
+            foreach (Card card in Cards.AllCardsList)
             {
                 if (card == CardTypes.Prize.card || card == CardTypes.Ruins.card)
                     continue;

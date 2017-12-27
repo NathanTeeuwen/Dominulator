@@ -295,7 +295,9 @@ namespace Dominion
         {            
             int cEventsToInclude = 0;
 
-            int cEventRemaining = 20;
+            var allEventsCards = Dominion.Cards.AllCardsList.Where(c => c.isEvent || c is Landmark).ToArray<Dominion.Card>();
+
+            int cEventRemaining = allEventsCards.Length;
             int totalKingdomCount = Dominion.Cards.AllKingdomCards().Count();
             for (int i = 0; i < 10; ++i)
             {
@@ -305,16 +307,16 @@ namespace Dominion
                     cEventsToInclude++;
                     cEventRemaining--;
                     i--;
-                    continue;
                 }
-                totalKingdomCount--;
+                else
+                {
+                    totalKingdomCount--;
+                }
             }
 
-            var allEventsCards = Dominion.Cards.AllCards().Where(c => c.isEvent).ToArray<Dominion.Card>();
-
-            var cardPicker = new Dominion.UniqueCardPicker(allEventsCards, random);            
+            var cardPicker = new Dominion.UniqueCardPicker(allEventsCards, random);
             this.events.Clear();
-            PopulateCardListToCount(cEventsToInclude, this.events, cardPicker, c => true);        
+            PopulateCardListToCount(cEventsToInclude, this.events, cardPicker, c => true);
         }
 
         public void ReRollPlatinumColony(Random random)

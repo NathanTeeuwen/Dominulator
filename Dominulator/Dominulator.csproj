@@ -165,6 +165,7 @@
     <Content Include="Resources\Apothecary.jpg" />
     <Content Include="Resources\Apprentice.jpg" />
     <Content Include="Resources\Aqueduct.jpg" />
+    <Content Include="Resources\Archive.jpg" />
     <Content Include="Resources\Arena.jpg" />
     <Content Include="Resources\Armory.jpg" />
     <Content Include="Resources\Artificer.jpg" />
@@ -194,20 +195,28 @@
     <Content Include="Resources\Bridge.jpg" />
     <Content Include="Resources\BridgeTroll.jpg" />
     <Content Include="Resources\Bureaucrat.jpg" />
+    <Content Include="Resources\BustlingVillage.jpg" />
     <Content Include="Resources\Butcher.jpg" />
     <Content Include="Resources\Cache.jpg" />
     <Content Include="Resources\CandlestickMaker.jpg" />
+    <Content Include="Resources\Capital.jpg" />
     <Content Include="Resources\Caravan.jpg" />
     <Content Include="Resources\CaravanGuard.jpg" />
     <Content Include="Resources\Cartographer.jpg" />
+    <Content Include="Resources\Castles.jpg" />
     <Content Include="Resources\Catacombs.jpg" />
+    <Content Include="Resources\Catapult.jpg" />
+    <Content Include="Resources\CatapultRocks.jpg" />
     <Content Include="Resources\Cellar.jpg" />
     <Content Include="Resources\Cemetery.jpg" />
     <Content Include="Resources\Champion.jpg" />
     <Content Include="Resources\Chancellor.jpg" />
     <Content Include="Resources\Changeling.jpg" />
     <Content Include="Resources\Chapel.jpg" />
+    <Content Include="Resources\ChariotRace.jpg" />
+    <Content Include="Resources\Charm.jpg" />
     <Content Include="Resources\City.jpg" />
+    <Content Include="Resources\CityQuarter.jpg" />
     <Content Include="Resources\Cobbler.jpg" />
     <Content Include="Resources\CoinOfTheRealm.jpg" />
     <Content Include="Resources\Colonnade.jpg" />
@@ -224,6 +233,7 @@
     <Content Include="Resources\CountingHouse.jpg" />
     <Content Include="Resources\Courtyard.jpg" />
     <Content Include="Resources\CrossRoads.jpg" />
+    <Content Include="Resources\Crown.jpg" />
     <Content Include="Resources\CrumblingCastle.jpg" />
     <Content Include="Resources\Crypt.jpg" />
     <Content Include="Resources\Cultist.jpg" />
@@ -252,6 +262,11 @@
     <Content Include="Resources\Duplicate.jpg" />
     <Content Include="Resources\Embargo.jpg" />
     <Content Include="Resources\Embassy.jpg" />
+    <Content Include="Resources\Emporium.jpg" />
+    <Content Include="Resources\Encampment.jpg" />
+    <Content Include="Resources\EncampmentPlunder.jpg" />
+    <Content Include="Resources\Enchantress.jpg" />
+    <Content Include="Resources\Engineer.jpg" />
     <Content Include="Resources\Envoy.jpg" />
     <Content Include="Resources\Estate.jpg" />
     <Content Include="Resources\Exorcist.jpg" />
@@ -261,6 +276,7 @@
     <Content Include="Resources\Fairgrounds.jpg" />
     <Content Include="Resources\FaithfulHound.jpg" />
     <Content Include="Resources\Familiar.jpg" />
+    <Content Include="Resources\FarmersMarket.jpg" />
     <Content Include="Resources\FarmingVillage.jpg" />
     <Content Include="Resources\Farmland.jpg" />
     <Content Include="Resources\Feast.jpg" />
@@ -274,7 +290,9 @@
     <Content Include="Resources\Forager.jpg" />
     <Content Include="Resources\Forge.jpg" />
     <Content Include="Resources\Fortress.jpg" />
+    <Content Include="Resources\Fortune.jpg" />
     <Content Include="Resources\FortuneTeller.jpg" />
+    <Content Include="Resources\Forum.jpg" />
     <Content Include="Resources\Fountain.jpg" />
     <Content Include="Resources\Fugitive.jpg" />
     <Content Include="Resources\Gardens.jpg" />
@@ -283,6 +301,8 @@
     <Content Include="Resources\GhostShip.jpg" />
     <Content Include="Resources\GhostTown.jpg" />
     <Content Include="Resources\Giant.jpg" />
+    <Content Include="Resources\Gladiator.jpg" />
+    <Content Include="Resources\GladiatorFortune.jpg" />
     <Content Include="Resources\Goat.jpg" />
     <Content Include="Resources\Gold.jpg" />
     <Content Include="Resources\Golem.jpg" />
@@ -292,6 +312,7 @@
     <Content Include="Resources\GrandMarket.jpg" />
     <Content Include="Resources\Graverobber.jpg" />
     <Content Include="Resources\GreatHall.jpg" />
+    <Content Include="Resources\Groundskeeper.jpg" />
     <Content Include="Resources\Guardian.jpg" />
     <Content Include="Resources\Guide.jpg" />
     <Content Include="Resources\Haggler.jpg" />
@@ -333,6 +354,7 @@
     <Content Include="Resources\Knights.jpg" />
     <Content Include="Resources\Laboratory.jpg" />
     <Content Include="Resources\Labyrinth.jpg" />
+    <Content Include="Resources\Legionary.jpg" />
     <Content Include="Resources\Leprechaun.jpg" />
     <Content Include="Resources\Library.jpg" />
     <Content Include="Resources\Lighthouse.jpg" />
@@ -386,10 +408,13 @@
     <Content Include="Resources\Orchard.jpg" />
     <Content Include="Resources\Outpost.jpg" />
     <Content Include="Resources\OvergrownEstate.jpg" />
+    <Content Include="Resources\Overlord.jpg" />
     <Content Include="Resources\Page.jpg" />
     <Content Include="Resources\Palace.jpg" />
     <Content Include="Resources\Pasture.jpg" />
     <Content Include="Resources\PathFinding.jpg" />
+    <Content Include="Resources\Patrician.jpg" />
+    <Content Include="Resources\PatricianEmporium.jpg" />
     <Content Include="Resources\Pawn.jpg" />
     <Content Include="Resources\PearlDiver.jpg" />
     <Content Include="Resources\Peasant.jpg" />
@@ -427,7 +452,9 @@
     <Content Include="Resources\Remake.jpg" />
     <Content Include="Resources\Remodel.jpg" />
     <Content Include="Resources\Ritual.jpg" />
+    <Content Include="Resources\Rocks.jpg" />
     <Content Include="Resources\Rogue.jpg" />
+    <Content Include="Resources\RoyalBlacksmith.jpg" />
     <Content Include="Resources\RoyalCarriage.jpg" />
     <Content Include="Resources\RoyalSeal.jpg" />
     <Content Include="Resources\RuinedLibrary.jpg" />
@@ -435,6 +462,7 @@
     <Content Include="Resources\RuinedVillage.jpg" />
     <Content Include="Resources\Saboteur.jpg" />
     <Content Include="Resources\SacredGrove.jpg" />
+    <Content Include="Resources\Sacrifice.jpg" />
     <Content Include="Resources\Sage.jpg" />
     <Content Include="Resources\SaltTheEarth.jpg" />
     <Content Include="Resources\Salvager.jpg" />
@@ -449,6 +477,8 @@
     <Content Include="Resources\Seaway.jpg" />
     <Content Include="Resources\SecretCave.jpg" />
     <Content Include="Resources\SecretChamber.jpg" />
+    <Content Include="Resources\Settlers.jpg" />
+    <Content Include="Resources\SettlersBustlingVillage.jpg" />
     <Content Include="Resources\ShantyTown.jpg" />
     <Content Include="Resources\Shepherd.jpg" />
     <Content Include="Resources\SilkRoad.jpg" />
@@ -479,6 +509,7 @@
     <Content Include="Resources\Tax.jpg" />
     <Content Include="Resources\Taxman.jpg" />
     <Content Include="Resources\Teacher.jpg" />
+    <Content Include="Resources\Temple.jpg" />
     <Content Include="Resources\Thief.jpg" />
     <Content Include="Resources\ThroneRoom.jpg" />
     <Content Include="Resources\Tomb.jpg" />
@@ -512,6 +543,7 @@
     <Content Include="Resources\Vampire.jpg" />
     <Content Include="Resources\Vault.jpg" />
     <Content Include="Resources\Venture.jpg" />
+    <Content Include="Resources\Villa.jpg" />
     <Content Include="Resources\Village.jpg" />
     <Content Include="Resources\Vineyard.jpg" />
     <Content Include="Resources\Wall.jpg" />
@@ -523,6 +555,7 @@
     <Content Include="Resources\Wedding.jpg" />
     <Content Include="Resources\Werewolf.jpg" />
     <Content Include="Resources\Wharf.jpg" />
+    <Content Include="Resources\WildHunt.jpg" />
     <Content Include="Resources\WilloWisp.jpg" />
     <Content Include="Resources\Windfall.jpg" />
     <Content Include="Resources\WineMerchant.jpg" />

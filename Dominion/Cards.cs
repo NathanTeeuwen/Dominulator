@@ -17,6 +17,7 @@ namespace Dominion
         public static readonly CardTypes.Amulet Amulet = CardTypes.Amulet.card;
         public static readonly CardTypes.Apothecary Apothecary = CardTypes.Apothecary.card;
         public static readonly CardTypes.Apprentice Apprentice = CardTypes.Apprentice.card;
+        public static readonly CardTypes.Archive Archive = CardTypes.Archive.card;
         public static readonly CardTypes.Armory Armory = CardTypes.Armory.card;
         public static readonly CardTypes.Artificer Artificer = CardTypes.Artificer.card;
         public static readonly CardTypes.Avanto Avanto = CardTypes.Avanto.card;
@@ -37,20 +38,28 @@ namespace Dominion
         public static readonly CardTypes.Bridge Bridge = CardTypes.Bridge.card;
         public static readonly CardTypes.BridgeTroll BridgeTroll = CardTypes.BridgeTroll.card;
         public static readonly CardTypes.Bureaucrat Bureaucrat = CardTypes.Bureaucrat.card;
+        public static readonly CardTypes.BustlingVillage BustlingVillage = CardTypes.BustlingVillage.card;
         public static readonly CardTypes.Butcher Butcher = CardTypes.Butcher.card;
         public static readonly CardTypes.Cache Cache = CardTypes.Cache.card;
         public static readonly CardTypes.CandlestickMaker CandlestickMaker = CardTypes.CandlestickMaker.card;
+        public static readonly CardTypes.Capital Capital = CardTypes.Capital.card;
+        public static readonly CardTypes.Castles Castles = CardTypes.Castles.card;
         public static readonly CardTypes.Caravan Caravan = CardTypes.Caravan.card;
         public static readonly CardTypes.CaravanGuard CaravanGuard = CardTypes.CaravanGuard.card;
         public static readonly CardTypes.Cartographer Cartographer = CardTypes.Cartographer.card;
         public static readonly CardTypes.Catacombs Catacombs = CardTypes.Catacombs.card;
+        public static readonly CardTypes.Catapult Catapult = CardTypes.Catapult.card;
+        public static readonly CardTypes.CatapultRocks CatapultRocks = CardTypes.CatapultRocks.card;
         public static readonly CardTypes.Cellar Cellar = CardTypes.Cellar.card;
         public static readonly CardTypes.Cemetery Cemetary = CardTypes.Cemetery.card;
         public static readonly CardTypes.Champion Champion = CardTypes.Champion.card;
         public static readonly CardTypes.Chancellor Chancellor = CardTypes.Chancellor.card;
         public static readonly CardTypes.Changeling Changeling = CardTypes.Changeling.card;
         public static readonly CardTypes.Chapel Chapel = CardTypes.Chapel.card;
+        public static readonly CardTypes.ChariotRace ChariotRace = CardTypes.ChariotRace.card;
+        public static readonly CardTypes.Charm Charm = CardTypes.Charm.card;
         public static readonly CardTypes.City City = CardTypes.City.card;
+        public static readonly CardTypes.CityQuarter CityQuarter = CardTypes.CityQuarter.card;
         public static readonly CardTypes.Cobbler Cobbler = CardTypes.Cobbler.card;
         public static readonly CardTypes.Colony Colony = CardTypes.Colony.card;
         public static readonly CardTypes.CoinOfTheRealm CoinOfTheRealm = CardTypes.CoinOfTheRealm.card;
@@ -66,6 +75,7 @@ namespace Dominion
         public static readonly CardTypes.Courtyard Courtyard = CardTypes.Courtyard.card;
         public static readonly CardTypes.CrumblingCastle CrumblingCastle = CardTypes.CrumblingCastle.card;
         public static readonly CardTypes.CrossRoads CrossRoads = CardTypes.CrossRoads.card;
+        public static readonly CardTypes.Crown Crown = CardTypes.Crown.card;
         public static readonly CardTypes.Crypt Crypt = CardTypes.Crypt.card;
         public static readonly CardTypes.Cultist Cultist = CardTypes.Cultist.card;
         public static readonly CardTypes.Curse Curse = CardTypes.Curse.card;
@@ -89,6 +99,11 @@ namespace Dominion
         public static readonly CardTypes.Duplicate Duplicate = CardTypes.Duplicate.card;
         public static readonly CardTypes.Embargo Embargo = CardTypes.Embargo.card;
         public static readonly CardTypes.Embassy Embassy = CardTypes.Embassy.card;
+        public static readonly CardTypes.Emporium Emporium = CardTypes.Emporium.card;
+        public static readonly CardTypes.Encampment Encampment = CardTypes.Encampment.card;
+        public static readonly CardTypes.EncampmentPlunder EncampmentPlunder = CardTypes.EncampmentPlunder.card;
+        public static readonly CardTypes.Enchantress Enchantress = CardTypes.Enchantress.card;
+        public static readonly CardTypes.Engineer Engineer = CardTypes.Engineer.card;
         public static readonly CardTypes.Envoy Envoy = CardTypes.Envoy.card;
         public static readonly CardTypes.Estate Estate = CardTypes.Estate.card;
         public static readonly CardTypes.Exorcist Exorcist = CardTypes.Exorcist.card;
@@ -98,6 +113,7 @@ namespace Dominion
         public static readonly CardTypes.FaithfulHound FaithfulHound = CardTypes.FaithfulHound.card;
         public static readonly CardTypes.Familiar Familiar = CardTypes.Familiar.card;
         public static readonly CardTypes.FarmingVillage FarmingVillage = CardTypes.FarmingVillage.card;
+        public static readonly CardTypes.FarmersMarket FarmersMarket = CardTypes.FarmersMarket.card;
         public static readonly CardTypes.Farmland Farmland = CardTypes.Farmland.card;
         public static readonly CardTypes.Feast Feast = CardTypes.Feast.card;
         public static readonly CardTypes.Feodum Feodum = CardTypes.Feodum.card;
@@ -109,13 +125,17 @@ namespace Dominion
         public static readonly CardTypes.Forager Forager = CardTypes.Forager.card;
         public static readonly CardTypes.Forge Forge = CardTypes.Forge.card;
         public static readonly CardTypes.Fortress Fortress = CardTypes.Fortress.card;
+        public static readonly CardTypes.Fortune Fortune = CardTypes.Fortune.card;
         public static readonly CardTypes.FortuneTeller FortuneTeller = CardTypes.FortuneTeller.card;
+        public static readonly CardTypes.Forum Forum = CardTypes.Forum.card;
         public static readonly CardTypes.Fugitive Fugitive = CardTypes.Fugitive.card;
         public static readonly CardTypes.Gardens Gardens = CardTypes.Gardens.card;
         public static readonly CardTypes.Gear Gear = CardTypes.Gear.card;
         public static readonly CardTypes.Ghost Ghost = CardTypes.Ghost.card;
         public static readonly CardTypes.GhostShip GhostShip = CardTypes.GhostShip.card;
         public static readonly CardTypes.GhostTown GhostTown = CardTypes.GhostTown.card;
+        public static readonly CardTypes.Gladiator Gladiator = CardTypes.Gladiator.card;
+        public static readonly CardTypes.GladiatorFortune GladiatorFortune = CardTypes.GladiatorFortune.card;
         public static readonly CardTypes.Giant Giant = CardTypes.Giant.card;
         public static readonly CardTypes.Goat Goat = CardTypes.Goat.card;
         public static readonly CardTypes.Gold Gold = CardTypes.Gold.card;
@@ -128,6 +148,7 @@ namespace Dominion
         public static readonly CardTypes.GrandMarket GrandMarket = CardTypes.GrandMarket.card;
         public static readonly CardTypes.Graverobber Graverobber = CardTypes.Graverobber.card;
         public static readonly CardTypes.GreatHall GreatHall = CardTypes.GreatHall.card;
+        public static readonly CardTypes.Groundskeeper Groundskeeper = CardTypes.Groundskeeper.card;
         public static readonly CardTypes.Haggler Haggler = CardTypes.Haggler.card;
         public static readonly CardTypes.Hamlet Hamlet = CardTypes.Hamlet.card;
         public static readonly CardTypes.Harem Harem = CardTypes.Harem.card;
@@ -164,6 +185,7 @@ namespace Dominion
         public static readonly CardTypes.KingsCourt KingsCourt = CardTypes.KingsCourt.card;
         public static readonly CardTypes.Knights Knights = CardTypes.Knights.card;
         public static readonly CardTypes.Laboratory Laboratory = CardTypes.Laboratory.card;
+        public static readonly CardTypes.Legionary Legionary = CardTypes.Legionary.card;
         public static readonly CardTypes.Leprechaun Leprechaun = CardTypes.Leprechaun.card;
         public static readonly CardTypes.Library Library = CardTypes.Library.card;
         public static readonly CardTypes.Lighthouse Lighthouse = CardTypes.Lighthouse.card;
@@ -211,8 +233,11 @@ namespace Dominion
         public static readonly CardTypes.Oracle Oracle = CardTypes.Oracle.card;
         public static readonly CardTypes.Outpost Outpost = CardTypes.Outpost.card;
         public static readonly CardTypes.OvergrownEstate OvergrownEstate = CardTypes.OvergrownEstate.card;
+        public static readonly CardTypes.Overlord Overlord = CardTypes.Overlord.card;
         public static readonly CardTypes.Page Page = CardTypes.Page.card;
         public static readonly CardTypes.Pasture Pasture = CardTypes.Pasture.card;
+        public static readonly CardTypes.PatricianEmporium PatricianEmporium = CardTypes.PatricianEmporium.card;
+        public static readonly CardTypes.Patrician Patrician = CardTypes.Patrician.card;
         public static readonly CardTypes.Pawn Pawn = CardTypes.Pawn.card;
         public static readonly CardTypes.Peasant Peasant = CardTypes.Peasant.card;
         public static readonly CardTypes.PearlDiver PearlDiver = CardTypes.PearlDiver.card;
@@ -246,7 +271,9 @@ namespace Dominion
         public static readonly CardTypes.Relic Relic = CardTypes.Relic.card;
         public static readonly CardTypes.Remake Remake = CardTypes.Remake.card;
         public static readonly CardTypes.Remodel Remodel = CardTypes.Remodel.card;
+        public static readonly CardTypes.Rocks Rocks = CardTypes.Rocks.card;
         public static readonly CardTypes.Rogue Rogue = CardTypes.Rogue.card;
+        public static readonly CardTypes.RoyalBlacksmith RoyalBlacksmith = CardTypes.RoyalBlacksmith.card;
         public static readonly CardTypes.RoyalSeal RoyalSeal = CardTypes.RoyalSeal.card;
         public static readonly CardTypes.RoyalCarriage RoyalCarriage = CardTypes.RoyalCarriage.card;
         public static readonly CardTypes.RuinedLibrary RuinedLibrary = CardTypes.RuinedLibrary.card;
@@ -255,6 +282,7 @@ namespace Dominion
         public static readonly CardTypes.Ruins Ruins = CardTypes.Ruins.card;
         public static readonly CardTypes.Saboteur Saboteur = CardTypes.Saboteur.card;
         public static readonly CardTypes.SacredGrove SacredGrove = CardTypes.SacredGrove.card;
+        public static readonly CardTypes.Sacrifice Sacrifice = CardTypes.Sacrifice.card;
         public static readonly CardTypes.Sage Sage = CardTypes.Sage.card;
         public static readonly CardTypes.Salvager Salvager = CardTypes.Salvager.card;
         public static readonly CardTypes.Sauna Sauna = CardTypes.Sauna.card;
@@ -265,6 +293,8 @@ namespace Dominion
         public static readonly CardTypes.SeaHag SeaHag = CardTypes.SeaHag.card;
         public static readonly CardTypes.SecretCave SecretCave = CardTypes.SecretCave.card;
         public static readonly CardTypes.SecretChamber SecretChamber = CardTypes.SecretChamber.card;
+        public static readonly CardTypes.Settlers Settlers = CardTypes.Settlers.card;
+        public static readonly CardTypes.SettlersBustlingVillage SettlersBustlingVillage = CardTypes.SettlersBustlingVillage.card;
         public static readonly CardTypes.ShantyTown ShantyTown = CardTypes.ShantyTown.card;
         public static readonly CardTypes.Shepherd Shepherd = CardTypes.Shepherd.card;
         public static readonly CardTypes.SilkRoad SilkRoad = CardTypes.SilkRoad.card;
@@ -293,6 +323,7 @@ namespace Dominion
         public static readonly CardTypes.Talisman Talisman = CardTypes.Talisman.card;
         public static readonly CardTypes.Taxman Taxman = CardTypes.Taxman.card;
         public static readonly CardTypes.Teacher Teacher = CardTypes.Teacher.card;
+        public static readonly CardTypes.Temple Temple = CardTypes.Temple.card;
         public static readonly CardTypes.Thief Thief = CardTypes.Thief.card;
         public static readonly CardTypes.ThroneRoom ThroneRoom = CardTypes.ThroneRoom.card;
         public static readonly CardTypes.Tormentor Tormentor = CardTypes.Tormentor.card;
@@ -319,6 +350,7 @@ namespace Dominion
         public static readonly CardTypes.Vampire Vampire = CardTypes.Vampire.card;
         public static readonly CardTypes.Vault Vault = CardTypes.Vault.card;
         public static readonly CardTypes.Venture Venture = CardTypes.Venture.card;
+        public static readonly CardTypes.Villa Villa = CardTypes.Villa.card;
         public static readonly CardTypes.Village Village = CardTypes.Village.card;
         public static readonly CardTypes.Vineyard Vineyard = CardTypes.Vineyard.card;
         public static readonly CardTypes.WalledVillage WalledVillage = CardTypes.WalledVillage.card;
@@ -327,6 +359,7 @@ namespace Dominion
         public static readonly CardTypes.Warrior Warrior = CardTypes.Warrior.card;
         public static readonly CardTypes.Watchtower Watchtower = CardTypes.Watchtower.card;
         public static readonly CardTypes.Werewolf Werewolf = CardTypes.Werewolf.card;
+        public static readonly CardTypes.WildHunt WildHunt = CardTypes.WildHunt.card;
         public static readonly CardTypes.WilloWisp WilloWisp = CardTypes.WilloWisp.card;
         public static readonly CardTypes.Wish Wish = CardTypes.Wish.card;
         public static readonly CardTypes.Wharf Wharf = CardTypes.Wharf.card;
@@ -436,7 +469,7 @@ namespace Dominion
         public static readonly CardTypes.Miserable Miserable = CardTypes.Miserable.card;
         public static readonly CardTypes.TwiceMiserable TwiceMiserable = CardTypes.TwiceMiserable.card;
 
-        public static Card[] AllCards()
+        private static Card[] AllCards()
         {
             var result = new List<Card>();
             foreach (System.Reflection.FieldInfo fieldInfo in typeof(Cards).GetTypeInfo().DeclaredFields)

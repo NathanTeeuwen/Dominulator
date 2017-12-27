@@ -12,6 +12,7 @@ namespace Dominion
           IEquatable<Card>
     {
         private readonly int coinCost;
+        public readonly bool isRandomizer;
         public readonly int potionCost;
         public readonly int plusAction;
         public readonly int plusBuy;
@@ -46,6 +47,7 @@ namespace Dominion
         public readonly bool isZombie;
         public readonly bool isTreasure;
         public readonly bool isTraveller;
+
         public bool isVictory
         {
             get
@@ -126,6 +128,7 @@ namespace Dominion
             string name,
             Expansion expansion,
             int coinCost,
+            bool isRandomizer = true,
             int debtCost = 0,
             string pluralName = null,
             int potionCost = 0,
@@ -178,6 +181,7 @@ namespace Dominion
         {
             this.coinCost = coinCost;
             this.potionCost = potionCost;
+            this.isRandomizer = isRandomizer;
             this.plusAction = plusActions;
             this.plusBuy = plusBuy;
             this.plusCard = plusCards;

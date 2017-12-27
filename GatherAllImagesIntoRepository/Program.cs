@@ -10,9 +10,9 @@ namespace GatherAllImagesIntoRepository
             var missingCards = new Generic.List<Dominion.Card>();
 
             var cardImagesList = new CardImagesList("c:\\trash\\CardImagesList.txt");
-            var destinationDir = "c:\\trash\\Images";
+            var destinationDir = "C:\\Dropbox\\nathant\\Projects\\Dominion\\Dominulator\\Resources";
 
-            foreach(var card in Dominion.Cards.AllCards())
+            foreach(var card in Dominion.Cards.AllCardsList)
             {
                 if (card == Dominion.Cards.Ruins || card == Dominion.Cards.Prize)
                     continue;
@@ -21,7 +21,8 @@ namespace GatherAllImagesIntoRepository
                 {
                     System.Console.WriteLine(imagePath);
                     var destPath = System.IO.Path.Combine(destinationDir, card.ProgrammaticName + System.IO.Path.GetExtension(imagePath));
-                    System.IO.File.Copy(imagePath, destPath, overwrite:true);
+                    if (!System.IO.File.Exists(destPath))
+                        System.IO.File.Copy(imagePath, destPath, overwrite:false);
                 }
                 else
                     missingCards.Add(card);

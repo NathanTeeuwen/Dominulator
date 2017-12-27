@@ -719,6 +719,7 @@ namespace Dominion.CardTypes
                 name, 
                 Expansion.DarkAges, 
                 coinCost: coinCost,
+                isRandomizer:false,
                 plusActions: plusActions,
                 plusCoins: plusCoins,
                 plusCards: plusCards,

@@ -48,7 +48,7 @@ namespace Dominulator
         {
             var result = new System.Collections.Generic.Dictionary<string, DominionCard>();
             
-            foreach(Dominion.Card card in Dominion.Cards.AllCards())
+            foreach(Dominion.Card card in Dominion.Cards.AllCardsList)
             {
                 result[card.name] = new DominionCard(card);
             }

@@ -402,7 +402,7 @@ namespace Dominion.CardTypes
         public static BustlingVillage card = new BustlingVillage();
 
         private BustlingVillage()
-            : base("BustlingVillage", Expansion.Empires, coinCost: 5, isAction: true, plusActions: 3, plusCards: 1)
+            : base("BustlingVillage", Expansion.Empires, coinCost: 5, isAction: true, plusActions: 3, plusCards: 1, isRandomizer:false)
         {
         }
 
@@ -450,7 +450,7 @@ namespace Dominion.CardTypes
         public static HumbleCastle card = new HumbleCastle();
 
         private HumbleCastle()
-            : base("Humble Castle", Expansion.Empires, coinCost: 3, plusCoins:1, isTreasure:true, isCastle:true, victoryPoints: player => player.AllOwnedCards.CountWhere(c => c.isCastle))
+            : base("Humble Castle", Expansion.Empires, coinCost: 3, plusCoins:1, isTreasure:true, isCastle:true, victoryPoints: player => player.AllOwnedCards.CountWhere(c => c.isCastle), isRandomizer:false)
         {
         }
     }
@@ -461,7 +461,7 @@ namespace Dominion.CardTypes
         public static CrumblingCastle card = new CrumblingCastle();
 
         private CrumblingCastle()
-            : base("Crumbling Castle", Expansion.Empires, coinCost: 4, isCastle: true, victoryPoints: player => 1)
+            : base("Crumbling Castle", Expansion.Empires, coinCost: 4, isCastle: true, victoryPoints: player => 1, isRandomizer: false)
         {
         }
 
@@ -486,7 +486,7 @@ namespace Dominion.CardTypes
         public static SmallCastle card = new SmallCastle();
 
         private SmallCastle()
-            : base("Small Castle", Expansion.Empires, coinCost: 5, isAction: true, isCastle:true, victoryPoints: player => 2)
+            : base("Small Castle", Expansion.Empires, coinCost: 5, isAction: true, isCastle:true, victoryPoints: player => 2, isRandomizer: false)
         {
         }
 
@@ -502,7 +502,7 @@ namespace Dominion.CardTypes
         public static HauntedCastle card = new HauntedCastle();
 
         private HauntedCastle()
-            : base("Haunted Castle", Expansion.Empires, coinCost: 6, isCastle: true, victoryPoints: player => 2)
+            : base("Haunted Castle", Expansion.Empires, coinCost: 6, isCastle: true, victoryPoints: player => 2, isRandomizer: false)
         {
         }
 
@@ -518,7 +518,7 @@ namespace Dominion.CardTypes
         public static OpulentCastle card = new OpulentCastle();
 
         private OpulentCastle()
-            : base("Opulent Castle", Expansion.Empires, coinCost: 7, isCastle: true, victoryPoints: player => 3)
+            : base("Opulent Castle", Expansion.Empires, coinCost: 7, isCastle: true, victoryPoints: player => 3, isRandomizer: false)
         {
         }
 
@@ -534,7 +534,7 @@ namespace Dominion.CardTypes
         public static SprawlingCastle card = new SprawlingCastle();
 
         private SprawlingCastle()
-            : base("Sprawling Castle", Expansion.Empires, coinCost: 8, isCastle: true, victoryPoints: player => 4)
+            : base("Sprawling Castle", Expansion.Empires, coinCost: 8, isCastle: true, victoryPoints: player => 4, isRandomizer: false)
         {
         }
 
@@ -550,7 +550,7 @@ namespace Dominion.CardTypes
         public static GrandCastle card = new GrandCastle();
 
         private GrandCastle()
-            : base("Grand Castle", Expansion.Empires, coinCost: 9, isCastle: true, victoryPoints: player => 5)
+            : base("Grand Castle", Expansion.Empires, coinCost: 9, isCastle: true, victoryPoints: player => 5, isRandomizer: false)
         {
         }
 
@@ -566,7 +566,7 @@ namespace Dominion.CardTypes
         public static KingsCastle card = new KingsCastle();
 
         private KingsCastle()
-            : base("Kings Castle", Expansion.Empires, coinCost: 10, isCastle: true, victoryPoints: player => player.AllOwnedCards.CountWhere(c => c.isCastle)*2)
+            : base("Kings Castle", Expansion.Empires, coinCost: 10, isCastle: true, victoryPoints: player => player.AllOwnedCards.CountWhere(c => c.isCastle)*2, isRandomizer: false)
         {
         }
     }
@@ -577,7 +577,7 @@ namespace Dominion.CardTypes
         public static Catapult card = new Catapult();
 
         private Catapult()
-            : base("Catapult", Expansion.Empires, coinCost: 3, isAction: true, plusCoins: 1, isAttack: true)
+            : base("Catapult", Expansion.Empires, coinCost: 3, isAction: true, plusCoins: 1, isAttack: true, isRandomizer:false)
         {
         }
 
@@ -600,6 +600,22 @@ namespace Dominion.CardTypes
                         otherPlayer.RequestPlayerDiscardDownToCountInHand(gameState, 3);
                 }
             }
+        }
+    }
+
+    public class CatapultRocks
+       : Card
+    {
+        public static CatapultRocks card = new CatapultRocks();
+
+        private CatapultRocks()
+            : base("Catapult/Rocks", Expansion.Empires, coinCost: 3, isAction: true, isAttack:true, plusCoins: 1)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
         }
     }
 
@@ -675,7 +691,7 @@ namespace Dominion.CardTypes
         public static Emporium card = new Emporium();
 
         private Emporium()
-            : base("Emporium", Expansion.Empires, coinCost: 5, isAction: true, plusCards: 1, plusActions: 1, plusCoins: 1)
+            : base("Emporium", Expansion.Empires, coinCost: 5, isAction: true, plusCards: 1, plusActions: 1, plusCoins: 1, isRandomizer:false)
         {
         }
 
@@ -698,7 +714,7 @@ namespace Dominion.CardTypes
         public static Encampment card = new Encampment();
 
         private Encampment()
-            : base("Encampment", Expansion.Empires, coinCost: 2, isAction: true, plusCards: 2, plusActions: 2)
+            : base("Encampment", Expansion.Empires, coinCost: 2, isAction: true, plusCards: 2, plusActions: 2, isRandomizer:false)
         {
         }
 
@@ -709,6 +725,21 @@ namespace Dominion.CardTypes
                 // TODO
                 throw new NotImplementedException();
             }
+        }
+    }
+
+    public class EncampmentPlunder
+       : Card
+    {
+        public static EncampmentPlunder card = new EncampmentPlunder();
+
+        private EncampmentPlunder()
+            : base("Encampment/Plunder", Expansion.Empires, coinCost: 2, isAction: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
         }
     }
 
@@ -783,7 +814,7 @@ namespace Dominion.CardTypes
         public static Fortune card = new Fortune();
 
         private Fortune()
-            : base("Fortune", Expansion.Empires, coinCost: 8, debtCost:8, isTreasure:true, plusBuy:1)
+            : base("Fortune", Expansion.Empires, coinCost: 8, debtCost:8, isTreasure:true, plusBuy:1, isRandomizer:false)
         {
         }
 
@@ -820,7 +851,23 @@ namespace Dominion.CardTypes
         public static Gladiator card = new Gladiator();
 
         private Gladiator()
-            : base("Gladiator", Expansion.Empires, coinCost: 3, isAction: true, plusCoins:2)
+            : base("Gladiator", Expansion.Empires, coinCost: 3, isAction: true, plusCoins:2, isRandomizer:false)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class GladiatorFortune
+       : Card
+    {
+        public static GladiatorFortune card = new GladiatorFortune();
+
+        private GladiatorFortune()
+            : base("Gladiator/Fortune", Expansion.Empires, coinCost: 3, isAction: true)
         {
         }
 
@@ -893,7 +940,7 @@ namespace Dominion.CardTypes
         public static Patrician card = new Patrician();
 
         private Patrician()
-            : base("Patrician", Expansion.Empires, coinCost: 2, isAction: true, plusCards: 1, plusActions: 1)
+            : base("Patrician", Expansion.Empires, coinCost: 2, isAction: true, plusCards: 1, plusActions: 1, isRandomizer:false)
         {
         }
 
@@ -911,13 +958,29 @@ namespace Dominion.CardTypes
         }
     }
 
+    public class PatricianEmporium
+       : Card
+    {
+        public static PatricianEmporium card = new PatricianEmporium();
+
+        private PatricianEmporium()
+            : base("Patrician/Emporium", Expansion.Empires, coinCost: 2, isAction: true, isRandomizer: true)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     public class Plunder
        : Card
     {
         public static Plunder card = new Plunder();
 
         private Plunder()
-            : base("Plunder", Expansion.Empires, coinCost: 5, isTreasure: true, plusCoins: 2, plusVictoryToken: 1)
+            : base("Plunder", Expansion.Empires, coinCost: 5, isTreasure: true, plusCoins: 2, plusVictoryToken: 1, isRandomizer:false)
         {
         }
     }
@@ -928,7 +991,7 @@ namespace Dominion.CardTypes
         public static Rocks card = new Rocks();
 
         private Rocks()
-            : base("Rocks", Expansion.Empires, coinCost: 4, isTreasure: true, plusCoins:1)
+            : base("Rocks", Expansion.Empires, coinCost: 4, isTreasure: true, plusCoins:1, isRandomizer:false)
         {
         }
 
@@ -1004,7 +1067,23 @@ namespace Dominion.CardTypes
         public static Settlers card = new Settlers();
 
         private Settlers()
-            : base("Settlers", Expansion.Empires, coinCost: 2, isAction: true, plusCards:1, plusActions:1)
+            : base("Settlers", Expansion.Empires, coinCost: 2, isAction: true, plusCards:1, plusActions:1, isRandomizer:false)
+        {
+        }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class SettlersBustlingVillage
+       : Card
+    {
+        public static SettlersBustlingVillage card = new SettlersBustlingVillage();
+
+        private SettlersBustlingVillage()
+            : base("Settlers/BustlingVillage", Expansion.Empires, coinCost: 2, isAction: true)
         {
         }
 

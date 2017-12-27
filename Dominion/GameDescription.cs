@@ -82,7 +82,7 @@ namespace Dominion
 
         public static Card GetCardFromProgrammaticName(string name)
         {
-            return Cards.AllCards().Where(c => c.ProgrammaticName == name).FirstOrDefault();
+            return Cards.AllCardsList.Where(c => c.ProgrammaticName == name).FirstOrDefault();
         }
 
         public static Card[] GetCardsFromProgrammaticNames(string[] cardNames)
