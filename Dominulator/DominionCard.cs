@@ -92,7 +92,8 @@ namespace Dominulator
         {
             get
             {
-                string uri = "ms-appx://Win8Client/Resources/" + this.Id + ".jpg";                
+                // from testing - the name of Dominulator seems to be irrelevent.  you could put blah blah here and it still works
+                string uri = "ms-appx://Dominulator/Resources/" + this.Id + ".jpg";
                 return isWebCard ? "http://localhost:8081/dominion" + "/resources/cards/" + this.Id + ".jpg"
                     : uri;
             }
