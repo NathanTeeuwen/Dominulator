@@ -28,7 +28,7 @@ namespace Resources
             using (System.IO.Stream stream = this.assembly.GetManifestResourceStream(resourceName))
             using (var reader = new System.IO.StreamReader(stream))
             {
-                result = reader.ReadToEnd();                
+                result = reader.ReadToEnd();
             }            
 
             return result;

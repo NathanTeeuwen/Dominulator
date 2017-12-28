@@ -12,8 +12,9 @@ namespace Dominion
           IEquatable<Card>
     {
         private readonly int coinCost;
-        public readonly bool isRandomizer;
         public readonly int potionCost;
+        public readonly bool isKingdomCard;    // all cards that can be used to shuffle and make up the 10 cards of a kingdom.   For split piles, the randomizer card isKingdom and the cards that make up the piles are not
+
         public readonly int plusAction;
         public readonly int plusBuy;
         public readonly int plusCard;
@@ -104,13 +105,12 @@ namespace Dominion
         }
 
         // other flags
+
         public readonly bool isEvent;
-        public readonly bool isInSupply;
 
         // useful properites about the card
         public readonly bool canGivePlusAction;
-        public readonly bool isKingdomCard;
-        
+
         protected VictoryPointCounter victoryPointCounter;              // readonly
         protected GameStateMethod doSpecializedCleanupAtStartOfCleanup; // readonly
         protected CardIntValue provideDiscountForWhileInPlay;           // readonly
@@ -128,7 +128,6 @@ namespace Dominion
             string name,
             Expansion expansion,
             int coinCost,
-            bool isRandomizer = true,
             int debtCost = 0,
             string pluralName = null,
             int potionCost = 0,
@@ -168,7 +167,6 @@ namespace Dominion
             bool canGivePlusAction = false,
             bool mightMultiplyActions = false,
             bool isKingdomCard = true,
-            bool isInSupply = true,
             CardIntValue provideDiscountForWhileInPlay = null,
             GameStateMethod doSpecializedCleanupAtStartOfCleanup = null,
             GameStateCardMethod doSpecializedActionOnBuyWhileInPlay = null,
@@ -181,7 +179,6 @@ namespace Dominion
         {
             this.coinCost = coinCost;
             this.potionCost = potionCost;
-            this.isRandomizer = isRandomizer;
             this.plusAction = plusActions;
             this.plusBuy = plusBuy;
             this.plusCard = plusCards;
@@ -211,10 +208,8 @@ namespace Dominion
             this.isTraveller = isTraveller;
             this.isReserve = isReserve;
             this.isGathering = isGathering;
-
             this.isEvent = isEvent;
             this.isKingdomCard = isKingdomCard;
-            this.isInSupply = isInSupply;
             this.requiresSpoils = requiresSpoils;
             this.canOverpay = canOverpay;
             this.canGivePlusAction = canGivePlusAction;
@@ -515,7 +510,7 @@ namespace Dominion
             int coinCost,
             int debtCost = 0,
             string pluralName = null)
-            : base(name: name, expansion: expansion, coinCost: coinCost, debtCost: debtCost, isEvent: true, pluralName: pluralName, isKingdomCard:false, isInSupply:false)
+            : base(name: name, expansion: expansion, coinCost: coinCost, debtCost: debtCost, isEvent: true, pluralName: pluralName, isKingdomCard:false)
         {
 
         }
@@ -533,7 +528,7 @@ namespace Dominion
             string name,
             Expansion expansion,
             string pluralName = null)
-            : base(name: name, expansion: expansion, coinCost: 0, isLandmark: true, pluralName: null, isKingdomCard: false, isInSupply: false)
+            : base(name: name, expansion: expansion, coinCost: 0, isLandmark: true, pluralName: null, isKingdomCard: false)
         {
 
         }

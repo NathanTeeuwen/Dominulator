@@ -16,7 +16,7 @@ namespace Dominion.CardTypes
         public static Necropolis card = new Necropolis();
 
         private Necropolis()
-            : base("Necropolis", Expansion.DarkAges, coinCost: 1, plusActions: 2, isAction: true, isShelter: true, isKingdomCard: false, isInSupply: false) 
+            : base("Necropolis", Expansion.DarkAges, coinCost: 1, plusActions: 2, isAction: true, isShelter: true, isKingdomCard: false) 
         { 
         } 
     }
@@ -27,7 +27,7 @@ namespace Dominion.CardTypes
         public static Hovel card = new Hovel();
 
         private Hovel()
-            : base("Hovel", Expansion.DarkAges, coinCost: 1, isShelter: true, isKingdomCard: false, isReaction: true, isInSupply: false)
+            : base("Hovel", Expansion.DarkAges, coinCost: 1, isShelter: true, isKingdomCard: false, isReaction: true)
         {
             this.doSpecializedActionOnBuyWhileInHand = DoSpecializedActionOnBuyWhileInHand;
         }
@@ -49,7 +49,7 @@ namespace Dominion.CardTypes
         public static OvergrownEstate card = new OvergrownEstate();
 
         private OvergrownEstate()
-            : base("Overgrown Estate", Expansion.DarkAges, coinCost: 1, victoryPoints: PlayerState => 0, isShelter: true, isKingdomCard: false, isInSupply: false)
+            : base("Overgrown Estate", Expansion.DarkAges, coinCost: 1, victoryPoints: PlayerState => 0, isShelter: true, isKingdomCard: false)
         {
 
         }
@@ -598,7 +598,7 @@ namespace Dominion.CardTypes
         public static Madman card = new Madman();
 
         private Madman()
-            : base("Madman", Expansion.DarkAges, coinCost: 0, isAction: true, plusActions: 2, isKingdomCard: false, isInSupply: false)
+            : base("Madman", Expansion.DarkAges, coinCost: 0, isAction: true, plusActions: 2, isKingdomCard: false)
         {
         }
 
@@ -719,13 +719,13 @@ namespace Dominion.CardTypes
                 name, 
                 Expansion.DarkAges, 
                 coinCost: coinCost,
-                isRandomizer:false,
                 plusActions: plusActions,
                 plusCoins: plusCoins,
                 plusCards: plusCards,
                 plusBuy: plusBuy,
                 isAction: true, 
                 isAttack: true, 
+                isKingdomCard:false,
                 victoryPoints:victoryPoints)
         {
         }
@@ -1299,7 +1299,7 @@ namespace Dominion.CardTypes
         public static Mercenary card = new Mercenary();
 
         private Mercenary()
-            : base("Mercenary", Expansion.DarkAges, coinCost: 0, isAction: true, isAttack: true, attackDependsOnPlayerChoice: true, isKingdomCard: false, isInSupply: false)
+            : base("Mercenary", Expansion.DarkAges, coinCost: 0, isAction: true, isAttack: true, attackDependsOnPlayerChoice: true, isKingdomCard: false)
         {
         }
 

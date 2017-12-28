@@ -137,7 +137,7 @@ namespace Dominion.CardTypes
         public static Sauna card = new Sauna();
 
         private Sauna()
-            : base("Sauna", Expansion.Promo, coinCost: 4, isAction:true, plusCards:1, plusActions:1, isRandomizer:false)
+            : base("Sauna", Expansion.Promo, coinCost: 4, isAction:true, plusCards:1, plusActions:1, isKingdomCard:false)
         {
         }
 
@@ -169,7 +169,7 @@ namespace Dominion.CardTypes
         public static Avanto card = new Avanto();
 
         private Avanto()
-            : base("Avanto", Expansion.Promo, coinCost: 5, isAction: true, plusCards: 3, isRandomizer:false)
+            : base("Avanto", Expansion.Promo, coinCost: 5, isAction: true, plusCards: 3, isKingdomCard: false)
         {
         }
 

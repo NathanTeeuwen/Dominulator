@@ -30,7 +30,7 @@ namespace Dominion.CardTypes
         public static Bat card = new Bat();
 
         private Bat()
-            : base("Bat", Expansion.Nocturne, coinCost: 2, isNight:true)
+            : base("Bat", Expansion.Nocturne, coinCost: 2, isNight:true, isKingdomCard:false)
         {
         }
 
@@ -148,7 +148,7 @@ namespace Dominion.CardTypes
         public static CursedGold card = new CursedGold();
 
         private CursedGold()
-            : base("Cursed Gold", Expansion.Nocturne, coinCost: 4, isTreasure: true, isHeirloom: true, plusCoins: 3)
+            : base("Cursed Gold", Expansion.Nocturne, coinCost: 4, isTreasure: true, isHeirloom: true, isKingdomCard:false, plusCoins: 3)
         {
         }
 
@@ -281,7 +281,7 @@ namespace Dominion.CardTypes
         public static Ghost card = new Ghost();
 
         private Ghost()
-            : base("Ghost", Expansion.Nocturne, coinCost: 4, isNight: true, isDuration: true, isSpirit:true)
+            : base("Ghost", Expansion.Nocturne, coinCost: 4, isNight: true, isDuration: true, isSpirit:true, isKingdomCard:false)
         {
         }
 
@@ -313,7 +313,7 @@ namespace Dominion.CardTypes
         public static Goat card = new Goat();
 
         private Goat()
-            : base("Goat", Expansion.Nocturne, coinCost: 2, isTreasure:true, isHeirloom:true, plusCoins:1)
+            : base("Goat", Expansion.Nocturne, coinCost: 2, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins:1)
         {
         }
 
@@ -345,7 +345,7 @@ namespace Dominion.CardTypes
         public static HauntedMirror card = new HauntedMirror();
 
         private HauntedMirror()
-            : base("Haunted Mirror", Expansion.Nocturne, coinCost: 0, isTreasure:true, isHeirloom:true, plusCoins:1)
+            : base("Haunted Mirror", Expansion.Nocturne, coinCost: 0, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins:1)
         {
         }
 
@@ -377,7 +377,7 @@ namespace Dominion.CardTypes
         public static Imp card = new Imp();
 
         private Imp()
-            : base("Imp", Expansion.Nocturne, coinCost: 2, plusCards:2, isAction:true, isSpirit:true)
+            : base("Imp", Expansion.Nocturne, coinCost: 2, plusCards:2, isAction:true, isSpirit:true, isKingdomCard:false)
         {
         }
 
@@ -409,7 +409,7 @@ namespace Dominion.CardTypes
         public static LuckyCoin card = new LuckyCoin();
 
         private LuckyCoin()
-            : base("Lucky Coin", Expansion.Nocturne, coinCost: 4, isTreasure:true, isHeirloom:true, plusCoins:1)
+            : base("Lucky Coin", Expansion.Nocturne, coinCost: 4, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins:1)
         {
         }
 
@@ -425,7 +425,7 @@ namespace Dominion.CardTypes
         public static MagicLamp card = new MagicLamp();
 
         private MagicLamp()
-            : base("Magic Lamp", Expansion.Nocturne, coinCost:0, isTreasure:true, isHeirloom:true, plusCoins:1)
+            : base("Magic Lamp", Expansion.Nocturne, coinCost:0, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins: 1)
         {
         }
 
@@ -489,7 +489,7 @@ namespace Dominion.CardTypes
         public static Pasture card = new Pasture();
 
         private Pasture()
-            : base("Pasture", Expansion.Nocturne, coinCost: 2, isTreasure:true, isHeirloom:true, plusCoins:1, victoryPoints: player => player.AllOwnedCards.Count)
+            : base("Pasture", Expansion.Nocturne, coinCost: 2, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins: 1, victoryPoints: player => player.AllOwnedCards.Count)
         {
         }
 
@@ -537,7 +537,7 @@ namespace Dominion.CardTypes
         public static Pouch card = new Pouch();
 
         private Pouch()
-            : base("Pouch", Expansion.Nocturne, coinCost: 2, isTreasure:true, isHeirloom:true, plusCoins:1, plusBuy:1)
+            : base("Pouch", Expansion.Nocturne, coinCost: 2, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins: 1, plusBuy:1)
         {
         }
     }
@@ -708,7 +708,7 @@ namespace Dominion.CardTypes
         public static WilloWisp card = new WilloWisp();
 
         private WilloWisp()
-            : base("Will-o'-Wisp", Expansion.Nocturne, coinCost: 0, plusCards:1, plusActions:1, isAction:true, isSpirit:true)
+            : base("Will-o'-Wisp", Expansion.Nocturne, coinCost: 0, plusCards:1, plusActions:1, isAction:true, isSpirit:true, isKingdomCard:false)
         {
         }
 
@@ -740,7 +740,7 @@ namespace Dominion.CardTypes
         public static ZombieApprentice card = new ZombieApprentice();
 
         private ZombieApprentice()
-            : base("Zombie Apprentice", Expansion.Nocturne, coinCost: 3, isAction:true, isZombie:true)
+            : base("Zombie Apprentice", Expansion.Nocturne, coinCost: 3, isAction:true, isZombie:true, isKingdomCard:false)
         {
         }
 
@@ -756,7 +756,7 @@ namespace Dominion.CardTypes
         public static ZombieMason card = new ZombieMason();
 
         private ZombieMason()
-            : base("Zombie Mason", Expansion.Nocturne, coinCost: 3, isAction: true, isZombie: true)
+            : base("Zombie Mason", Expansion.Nocturne, coinCost: 3, isAction: true, isZombie: true, isKingdomCard: false)
         {
         }
 
@@ -772,7 +772,7 @@ namespace Dominion.CardTypes
         public static ZombieSpy card = new ZombieSpy();
 
         private ZombieSpy()
-            : base("Zombie Spy", Expansion.Nocturne, coinCost: 3, plusCards:1, plusActions:1, isAction: true, isZombie: true)
+            : base("Zombie Spy", Expansion.Nocturne, coinCost: 3, plusCards:1, plusActions:1, isAction: true, isZombie: true, isKingdomCard: false)
         {
         }
 
