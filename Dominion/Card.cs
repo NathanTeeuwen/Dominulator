@@ -13,19 +13,11 @@ namespace Dominion
     {
         private readonly int coinCost;
         public readonly int potionCost;
+        public readonly int debtCost;
+
         public readonly bool isKingdomCard;    // all cards that can be used to shuffle and make up the 10 cards of a kingdom.   For split piles, the randomizer card isKingdom and the cards that make up the piles are not
         public readonly StartingLocation startingLocation;     // cards are either in your hand, in the supply or in the non-supply
-        public readonly int plusAction;
-        public readonly int plusBuy;
-        public readonly int plusCard;
-        public readonly int plusCoin;
-        public readonly int plusVictoryToken;
         public readonly int defaultSupplyCount;
-        public readonly bool attackDependsOnPlayerChoice;
-        public readonly bool isAttackBeforeAction;
-
-        public readonly bool requiresSpoils;
-        public readonly bool canOverpay;
 
         // types
         public readonly bool isAction;
@@ -106,13 +98,26 @@ namespace Dominion
             }
         }
 
-        // other flags
+        // part of action
+        public readonly int plusAction;
+        public readonly int plusBuy;
+        public readonly int plusCard;
+        public readonly int plusCoin;
+        public readonly int plusVictoryToken;
 
-        public readonly bool isEvent;
+        // affects behavior
+        public readonly bool isAttackBeforeAction;
+        public readonly bool canOverpay;
 
         // useful properites about the card
         public readonly bool canGivePlusAction;
+        public readonly bool attackDependsOnPlayerChoice;
+        public readonly bool requiresSpoils;
 
+        // to deprecate
+        public readonly bool isEvent;
+
+        // attached methods
         protected VictoryPointCounter victoryPointCounter;              // readonly
         protected GameStateMethod doSpecializedCleanupAtStartOfCleanup; // readonly
         protected CardIntValue provideDiscountForWhileInPlay;           // readonly
@@ -129,11 +134,13 @@ namespace Dominion
         protected Card(
             string name,
             Expansion expansion,
-            int coinCost,
+            int coinCost = 0,
+            int potionCost = 0,
             int debtCost = 0,
+            Edition edition = Edition.First,
+            bool isDeprecated = false,
             string pluralName = null,
             StartingLocation startingLocation = Dominion.StartingLocation.Supply,
-            int potionCost = 0,
             int plusActions = 0,
             int plusBuy = 0,
             int plusCards = 0,
@@ -178,10 +185,11 @@ namespace Dominion
             GameStateCardToPlacement doSpecializedActionOnBuyWhileInHand = null,
             GameStateCardToPlacement doSpecializedActionOnGainWhileInHand = null,
             GameStateCardMethod      doSpecializedActionToCardWhileInPlay = null)
-            : base(name, expansion, pluralName)
+            : base(name, expansion, edition, isDeprecated, pluralName)
         {
             this.coinCost = coinCost;
             this.potionCost = potionCost;
+            this.debtCost = debtCost;
             this.plusAction = plusActions;
             this.plusBuy = plusBuy;
             this.plusCard = plusCards;
@@ -204,7 +212,7 @@ namespace Dominion
             this.isSpirit = isSpirit;
             this.isZombie = isZombie;
             this.isCastle = isCastle;
-            this.isLooter = this.isLooter;
+            this.isLooter = isLooter;
             this.defaultSupplyCount = defaultSupplyCount;
             this.isLooter = isLooter;
             this.isDuration = isDuration;
@@ -552,10 +560,12 @@ namespace Dominion
         public readonly string name;
         public readonly string pluralName;
         public readonly Expansion expansion;
-        private readonly int privateIndex;
+        public readonly Edition edition;
+        public readonly bool isDeprecated;
 
+        private readonly int privateIndex;
         private static int lastCardIndex = 0;
-        private static HashSet<Type> cardTypes = new HashSet<Type>();
+        private static HashSet<Type> initializedCardTypes = new HashSet<Type>();
 
         internal int Index
         {
@@ -565,17 +575,17 @@ namespace Dominion
             }
         }
 
-        public CardShapedObject(string name, Expansion expansion, string pluralName = null)
+        public CardShapedObject(string name, Expansion expansion, Edition edition = Edition.First, bool isDeprecated = false, string pluralName = null)
         {
-            lock (CardShapedObject.cardTypes)
+            lock (CardShapedObject.initializedCardTypes)
             {
-                if (CardShapedObject.cardTypes.Contains(this.GetType()))
+                if (CardShapedObject.initializedCardTypes.Contains(this.GetType()))
                 {
                     throw new Exception("Do not create duplicate cards.");
                 }
                 else
                 {
-                    CardShapedObject.cardTypes.Add(this.GetType());
+                    CardShapedObject.initializedCardTypes.Add(this.GetType());
                 }
 
                 this.privateIndex = CardShapedObject.lastCardIndex++;
@@ -583,7 +593,9 @@ namespace Dominion
 
             this.name = name;
             this.expansion = expansion;
+            this.edition = edition;
             this.pluralName = pluralName != null ? pluralName : name + "s";
+            this.isDeprecated = isDeprecated;
         }
 
         public static string GetProgrammaticName(string str)
@@ -611,7 +623,7 @@ namespace Dominion
         : CardShapedObject
     {
         public Hex(string name, Expansion expansion, string pluralName = null)
-            : base(name, expansion, pluralName)
+            : base(name, expansion, pluralName:pluralName)
         {
         }
 
@@ -622,7 +634,7 @@ namespace Dominion
         : CardShapedObject
     {
         public State(string name, Expansion expansion, string pluralName = null)
-            : base(name, expansion, pluralName)
+            : base(name, expansion, pluralName:pluralName)
         {
         }
     }
@@ -631,7 +643,7 @@ namespace Dominion
         : CardShapedObject
     {
         public Boon(string name, Expansion expansion, string pluralName = null)
-            : base(name, expansion, pluralName)
+            : base(name, expansion, pluralName:pluralName)
         {
         }
 

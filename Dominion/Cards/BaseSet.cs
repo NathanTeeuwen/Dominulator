@@ -158,7 +158,7 @@ namespace Dominion.CardTypes
         public static WoodCutter card = new WoodCutter();
 
         private WoodCutter() 
-            : base("WoodCutter", Expansion.Base, coinCost: 3, plusBuy: 1, plusCoins: 2, isAction: true) 
+            : base("WoodCutter", Expansion.Base, coinCost: 3, plusBuy: 1, plusCoins: 2, isAction: true, isDeprecated:true) 
         { 
         } 
     }
@@ -169,7 +169,7 @@ namespace Dominion.CardTypes
         public static Adventurer card = new Adventurer();
 
         private Adventurer()
-            : base("Adventurer", Expansion.Base, coinCost: 6, isAction: true)
+            : base("Adventurer", Expansion.Base, coinCost: 6, isAction: true, isDeprecated: true)
         {
         }
 
@@ -258,7 +258,7 @@ namespace Dominion.CardTypes
         public static Chancellor card = new Chancellor();
 
         private Chancellor()
-            : base("Chancellor", Expansion.Base, coinCost: 3, plusCoins: 2, isAction: true)
+            : base("Chancellor", Expansion.Base, coinCost: 3, plusCoins: 2, isAction: true, isDeprecated:true)
         {
         }
 
@@ -312,7 +312,7 @@ namespace Dominion.CardTypes
         public static Feast card = new Feast();
 
         private Feast()
-            : base("Feast", Expansion.Base, coinCost: 4, isAction: true)
+            : base("Feast", Expansion.Base, coinCost: 4, isAction: true, isDeprecated: true)
         {
         }
 
@@ -489,7 +489,7 @@ namespace Dominion.CardTypes
         public static Spy card = new Spy();
 
         private Spy()
-            : base("Spy", Expansion.Base, coinCost: 4, plusCards: 1, plusActions: 1, isAction: true, isAttack: true)
+            : base("Spy", Expansion.Base, coinCost: 4, plusCards: 1, plusActions: 1, isAction: true, isAttack: true, isDeprecated: true)
         {
         }
 
@@ -510,7 +510,7 @@ namespace Dominion.CardTypes
         public static Thief card = new Thief();
 
         private Thief()
-            : base("Thief", Expansion.Base, coinCost: 4, isAction: true, isAttack: true)
+            : base("Thief", Expansion.Base, coinCost: 4, isAction: true, isAttack: true, isDeprecated: true)
         {
         }
 

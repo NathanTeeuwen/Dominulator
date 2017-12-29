@@ -983,7 +983,7 @@ namespace Dominion.CardTypes
         public static WineMerchant card = new WineMerchant();
 
         private WineMerchant()
-            : base("Wine Merchant", Expansion.Adventures, coinCost: 4, isAction:true, isReserve:true, plusBuy:1, plusCoins:4)
+            : base("Wine Merchant", Expansion.Adventures, coinCost: 5, isAction:true, isReserve:true, plusBuy:1, plusCoins:4)
         {
         }        
 

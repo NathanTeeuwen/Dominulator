@@ -169,10 +169,12 @@
     <Content Include="Resources\Arena.jpg" />
     <Content Include="Resources\Armory.jpg" />
     <Content Include="Resources\Artificer.jpg" />
+    <Content Include="Resources\Artisan.jpg" />
     <Content Include="Resources\Avanto.jpg" />
     <Content Include="Resources\BagOfGold.jpg" />
     <Content Include="Resources\Baker.jpg" />
     <Content Include="Resources\Ball.jpg" />
+    <Content Include="Resources\Bandit.jpg" />
     <Content Include="Resources\BanditCamp.jpg" />
     <Content Include="Resources\BanditFort.jpg" />
     <Content Include="Resources\BandOfMisfits.jpg" />
@@ -231,6 +233,7 @@
     <Content Include="Resources\Count.jpg" />
     <Content Include="Resources\CounterFeit.jpg" />
     <Content Include="Resources\CountingHouse.jpg" />
+    <Content Include="Resources\Courtier.jpg" />
     <Content Include="Resources\Courtyard.jpg" />
     <Content Include="Resources\CrossRoads.jpg" />
     <Content Include="Resources\Crown.jpg" />
@@ -248,6 +251,7 @@
     <Content Include="Resources\Develop.jpg" />
     <Content Include="Resources\DevilsWorkshop.jpg" />
     <Content Include="Resources\Diadem.jpg" />
+    <Content Include="Resources\Diplomat.jpg" />
     <Content Include="Resources\Disciple.jpg" />
     <Content Include="Resources\Dismantle.jpg" />
     <Content Include="Resources\DistantLands.jpg" />
@@ -317,6 +321,7 @@
     <Content Include="Resources\Guide.jpg" />
     <Content Include="Resources\Haggler.jpg" />
     <Content Include="Resources\Hamlet.jpg" />
+    <Content Include="Resources\Harbinger.jpg" />
     <Content Include="Resources\Harem.jpg" />
     <Content Include="Resources\Harvest.jpg" />
     <Content Include="Resources\HauntedCastle.jpg" />
@@ -363,6 +368,7 @@
     <Content Include="Resources\LostArts.jpg" />
     <Content Include="Resources\LostCity.jpg" />
     <Content Include="Resources\LuckyCoin.jpg" />
+    <Content Include="Resources\Lurker.jpg" />
     <Content Include="Resources\Madman.jpg" />
     <Content Include="Resources\MagicLamp.jpg" />
     <Content Include="Resources\Magpie.jpg" />
@@ -375,10 +381,12 @@
     <Content Include="Resources\Masterpiece.jpg" />
     <Content Include="Resources\Menagerie.jpg" />
     <Content Include="Resources\Mercenary.jpg" />
+    <Content Include="Resources\Merchant.jpg" />
     <Content Include="Resources\MerchantGuild.jpg" />
     <Content Include="Resources\MerchantShip.jpg" />
     <Content Include="Resources\Messenger.jpg" />
     <Content Include="Resources\Militia.jpg" />
+    <Content Include="Resources\Mill.jpg" />
     <Content Include="Resources\Mine.jpg" />
     <Content Include="Resources\MiningVillage.jpg" />
     <Content Include="Resources\Minion.jpg" />
@@ -415,6 +423,7 @@
     <Content Include="Resources\PathFinding.jpg" />
     <Content Include="Resources\Patrician.jpg" />
     <Content Include="Resources\PatricianEmporium.jpg" />
+    <Content Include="Resources\Patrol.jpg" />
     <Content Include="Resources\Pawn.jpg" />
     <Content Include="Resources\PearlDiver.jpg" />
     <Content Include="Resources\Peasant.jpg" />
@@ -428,6 +437,7 @@
     <Content Include="Resources\Platinum.jpg" />
     <Content Include="Resources\Plaza.jpg" />
     <Content Include="Resources\Plunder.jpg" />
+    <Content Include="Resources\Poacher.jpg" />
     <Content Include="Resources\Pooka.jpg" />
     <Content Include="Resources\PoorHouse.jpg" />
     <Content Include="Resources\Port.jpg" />
@@ -451,6 +461,7 @@
     <Content Include="Resources\Relic.jpg" />
     <Content Include="Resources\Remake.jpg" />
     <Content Include="Resources\Remodel.jpg" />
+    <Content Include="Resources\Replace.jpg" />
     <Content Include="Resources\Ritual.jpg" />
     <Content Include="Resources\Rocks.jpg" />
     <Content Include="Resources\Rogue.jpg" />
@@ -467,6 +478,7 @@
     <Content Include="Resources\SaltTheEarth.jpg" />
     <Content Include="Resources\Salvager.jpg" />
     <Content Include="Resources\Sauna.jpg" />
+    <Content Include="Resources\SaunaAvanto.jpg" />
     <Content Include="Resources\Save.jpg" />
     <Content Include="Resources\Scavenger.jpg" />
     <Content Include="Resources\Scheme.jpg" />
@@ -477,6 +489,8 @@
     <Content Include="Resources\Seaway.jpg" />
     <Content Include="Resources\SecretCave.jpg" />
     <Content Include="Resources\SecretChamber.jpg" />
+    <Content Include="Resources\SecretPassage.jpg" />
+    <Content Include="Resources\Sentry.jpg" />
     <Content Include="Resources\Settlers.jpg" />
     <Content Include="Resources\SettlersBustlingVillage.jpg" />
     <Content Include="Resources\ShantyTown.jpg" />
@@ -541,6 +555,7 @@
     <Content Include="Resources\Urchin.jpg" />
     <Content Include="Resources\Vagrant.jpg" />
     <Content Include="Resources\Vampire.jpg" />
+    <Content Include="Resources\Vassal.jpg" />
     <Content Include="Resources\Vault.jpg" />
     <Content Include="Resources\Venture.jpg" />
     <Content Include="Resources\Villa.jpg" />

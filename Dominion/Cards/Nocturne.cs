@@ -243,7 +243,7 @@ namespace Dominion.CardTypes
         public static Exorcist card = new Exorcist();
 
         private Exorcist()
-            : base("Exorcist", Expansion.Nocturne, coinCost: 2, isNight:true)
+            : base("Exorcist", Expansion.Nocturne, coinCost: 4, isNight:true)
         {
         }
 

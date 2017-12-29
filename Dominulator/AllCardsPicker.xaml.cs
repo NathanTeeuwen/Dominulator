@@ -203,6 +203,7 @@ namespace Dominulator
             var result = new List<string>();
             result.Add(card.name);
             result.Add(card.expansion.ExpansionToString());
+            result.Add(card.edition.EditionToString());
             result.Add(card.DefaultCoinCost.ToString());
 
             foreach(Dominion.CardType cardType in card.CardTypes)
@@ -212,14 +213,28 @@ namespace Dominulator
                 if (pluralName != null)
                     result.Add(pluralName);
             }
+
+            result.Add(card.DefaultCoinCost.ToString());
+
             if (card.isEvent)
                 result.Add("event");
+            if (card.isDeprecated)
+                result.Add("deprecated");
             if (card.isLooter)
                 result.Add("ruins");
             if (card.requiresSpoils)
                 result.Add("spoils");
             if (card.potionCost != 0)
                 result.Add("potion");
+            if (card.debtCost != 0)
+                result.Add("debt");
+            if (card.canOverpay)
+                result.Add("overpay");
+            if (card.plusBuy > 0)
+            {
+                result.Add("buy");
+                result.Add("buys");
+            }
 
             if (this.appDataContext.CurrentDeck.CurrentCards.Where(c => c.dominionCard == card).Any())
             {

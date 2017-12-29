@@ -14,7 +14,7 @@ namespace Dominion.CardTypes
     { 
         public static GreatHall card = new GreatHall();
 
-        private GreatHall() : base("Great Hall", Expansion.Intrigue, coinCost: 3, victoryPoints: playerState => 1, plusCards: 1, plusActions: 1, isAction: true) 
+        private GreatHall() : base("Great Hall", Expansion.Intrigue, coinCost: 3, victoryPoints: playerState => 1, plusCards: 1, plusActions: 1, isAction: true, isDeprecated: true) 
         { 
         } 
     }
@@ -95,7 +95,7 @@ namespace Dominion.CardTypes
         public static Coppersmith card = new Coppersmith();
 
         private Coppersmith()
-            : base("Coppersmith", Expansion.Intrigue, coinCost: 4, isAction: true)
+            : base("Coppersmith", Expansion.Intrigue, coinCost: 4, isAction: true, isDeprecated: true)
         {
         }
 
@@ -353,7 +353,7 @@ namespace Dominion.CardTypes
         public static Saboteur card = new Saboteur();
 
         private Saboteur()
-            : base("Saboteur", Expansion.Intrigue, coinCost: 5, isAttack: true, isAction: true)
+            : base("Saboteur", Expansion.Intrigue, coinCost: 5, isAttack: true, isAction: true, isDeprecated: true)
         {
         }
 
@@ -395,7 +395,7 @@ namespace Dominion.CardTypes
         public static Scout card = new Scout();
 
         private Scout()
-            : base("Scout", Expansion.Intrigue, coinCost: 4, isAction: true, plusActions: 1)
+            : base("Scout", Expansion.Intrigue, coinCost: 4, isAction: true, plusActions: 1, isDeprecated: true)
         {
         }
 
@@ -413,7 +413,7 @@ namespace Dominion.CardTypes
         public static SecretChamber card = new SecretChamber();
 
         private SecretChamber()
-            : base("Secret Chamber", Expansion.Intrigue, coinCost: 2, isAction: true, isReaction:true)
+            : base("Secret Chamber", Expansion.Intrigue, coinCost: 2, isAction: true, isReaction:true, isDeprecated: true)
         {
         }
 
@@ -578,7 +578,7 @@ namespace Dominion.CardTypes
         public static Tribute card = new Tribute();
 
         private Tribute()
-            : base("Tribute", Expansion.Intrigue, coinCost: 5, isAction: true, canGivePlusAction:true)
+            : base("Tribute", Expansion.Intrigue, coinCost: 5, isAction: true, canGivePlusAction:true, isDeprecated: true)
         {
         }
 
