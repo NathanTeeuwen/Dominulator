@@ -54,7 +54,7 @@ namespace Dominion.Strategy
             Cards.RatCatcher,            
             Cards.Relic,
             Cards.RoyalCarriage,
-            Cards.Solider,            
+            Cards.Soldier,
             Cards.SwampHag,
             Cards.Teacher,
             Cards.Transmogrify,

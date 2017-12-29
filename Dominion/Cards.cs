@@ -303,7 +303,7 @@ namespace Dominion
         public static readonly CardTypes.SmallCastle SmallCastle = CardTypes.SmallCastle.card;
         public static readonly CardTypes.Smithy Smithy = CardTypes.Smithy.card;
         public static readonly CardTypes.Smugglers Smugglers = CardTypes.Smugglers.card;
-        public static readonly CardTypes.Soldier Solider = CardTypes.Soldier.card;
+        public static readonly CardTypes.Soldier Soldier = CardTypes.Soldier.card;
         public static readonly CardTypes.Soothsayer Soothsayer = CardTypes.Soothsayer.card;
         public static readonly CardTypes.SpiceMerchant SpiceMerchant = CardTypes.SpiceMerchant.card;
         public static readonly CardTypes.Spoils Spoils = CardTypes.Spoils.card;
@@ -533,7 +533,7 @@ namespace Dominion
             Cards.RatCatcher,
             Cards.Relic,
             Cards.RoyalCarriage,
-            Cards.Solider,
+            Cards.Soldier,
             Cards.SwampHag,
             Cards.Teacher,
             Cards.Transmogrify,

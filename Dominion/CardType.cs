@@ -16,6 +16,7 @@ namespace Dominion
         Duration,
         Fate,
         Gathering,
+        Looter,
         Heirloom,
         Prize,
         Night,
@@ -45,6 +46,7 @@ namespace Dominion
                 case CardType.Fate:      return "Fate";
                 case CardType.Gathering: return "Gathering";
                 case CardType.Heirloom:  return "Heirloom";
+                case CardType.Looter:    return "Looter";
                 case CardType.Prize:     return "Prize";
                 case CardType.Night:     return "Night";
                 case CardType.Reaction:  return "Reaction";
@@ -72,8 +74,9 @@ namespace Dominion
                 case CardType.Duration: return "Durations";
                 case CardType.Fate: return null;
                 case CardType.Gathering: return null;
-                case CardType.Night: return null;
                 case CardType.Heirloom: return "Heirlooms";
+                case CardType.Looter: return "Looters";
+                case CardType.Night: return null;
                 case CardType.Prize: return "Prizes";
                 case CardType.Reaction: return "Reactions";
                 case CardType.Reserve: return null;

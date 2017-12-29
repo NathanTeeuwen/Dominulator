@@ -219,11 +219,12 @@ namespace Dominulator
         {
             this.originalCards.Clear();
 
-            Dominion.CardGainAvailablility[] availabilities = gameConfig.GetCardAvailability(1, Dominion.CardAvailabilityType.AdditionalCardsAfterKingdom);
+            Dominion.CardGainAvailablility[] availabilities = gameConfig.GetCardAvailability(1, Dominion.CardAvailabilityType.AllPossibleCardsInGame);
 
             foreach (var availability in availabilities)
             {
-                this.originalCards.Add(DominionCard.Create(availability.card));
+                if (!gameConfig.kingdomPiles.Contains(availability.card) && gameConfig.baneCard != availability.card)
+                    this.originalCards.Add(DominionCard.Create(availability.card));
             }
         }
 

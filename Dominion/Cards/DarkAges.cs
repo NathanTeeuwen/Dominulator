@@ -68,7 +68,7 @@ namespace Dominion.CardTypes
         public static Spoils card = new Spoils();
 
         private Spoils()
-            : base("Spoils", Expansion.DarkAges, coinCost: 0, plusCoins: 3, isAction: true, isTreasure: true, isKingdomCard: false)
+            : base("Spoils", Expansion.DarkAges, coinCost: 0, plusCoins: 3, isAction: true, isTreasure: true, isKingdomCard: false, defaultSupplyCount:16)
         {
         }
 
@@ -97,8 +97,32 @@ namespace Dominion.CardTypes
             int plusCards = 0,
             int plusBuy = 0,
             int plusActions = 0)
-            : base(name, expansion, coinCost: 0, isAction: true, isRuins: true, plusCoins: plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions: plusActions, isKingdomCard: false)
+            : base(name, expansion, coinCost: 0, isAction: true, isRuins: true, plusCoins: plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions: plusActions, isKingdomCard: false, startingLocation:StartingLocation.Special)
         {
+        }
+
+        static Card[] ruins = { AbandonedMine.card, RuinedMarket.card, RuinedLibrary.card, RuinedVillage.card, Survivors.card };
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            int ruinsCount = (builder.numberOfPlayers - 1) * 10;
+
+            switch (builder.cardAvailabilityType)
+            {
+                case CardAvailabilityType.AllPossibleCardsInGame:
+                    {
+                        foreach (var card in ruins)
+                            builder.AddSupply(1, card);
+                        break;
+                    }
+                case CardAvailabilityType.TypesForBuyingOrGaining:
+                    {
+                        builder.AddSupply(ruinsCount, Cards.Ruins);
+                        break;
+                    }
+                default:
+                    throw new NotImplementedException();
+            }
         }
     }
 
@@ -389,7 +413,7 @@ namespace Dominion.CardTypes
         public static Cultist card = new Cultist();
 
         private Cultist()
-            : base("Cultist", Expansion.DarkAges, coinCost: 5, isAction: true, isAttack:true, requiresRuins:true, plusCards:2, isAttackBeforeAction:true)
+            : base("Cultist", Expansion.DarkAges, coinCost: 5, isAction: true, isAttack:true, isLooter: true, plusCards:2, isAttackBeforeAction:true)
         {
         }
 
@@ -418,7 +442,7 @@ namespace Dominion.CardTypes
         public static DeathCart card = new DeathCart();
 
         private DeathCart()
-            : base("Death Cart", Expansion.DarkAges, coinCost: 4, isAction: true, plusCoins: 5, requiresRuins: true)
+            : base("Death Cart", Expansion.DarkAges, coinCost: 4, isAction: true, plusCoins: 5, isLooter: true)
         {
         }
 
@@ -590,6 +614,11 @@ namespace Dominion.CardTypes
         {
             return !card.isTreasure;
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Madman);
+        }
     }
 
     public class Madman
@@ -598,7 +627,7 @@ namespace Dominion.CardTypes
         public static Madman card = new Madman();
 
         private Madman()
-            : base("Madman", Expansion.DarkAges, coinCost: 0, isAction: true, plusActions: 2, isKingdomCard: false)
+            : base("Madman", Expansion.DarkAges, coinCost: 0, isAction: true, plusActions: 2, isKingdomCard: false, startingLocation:StartingLocation.NonSupply)
         {
         }
 
@@ -917,7 +946,7 @@ namespace Dominion.CardTypes
         public static Marauder card = new Marauder();
 
         private Marauder()
-            : base("Marauder", Expansion.DarkAges, coinCost: 4, isAction: true, isAttack: true, requiresRuins:true, requiresSpoils:true)
+            : base("Marauder", Expansion.DarkAges, coinCost: 4, isAction: true, isAttack: true, isLooter:true, requiresSpoils:true)
         {
         }
 
@@ -1291,6 +1320,11 @@ namespace Dominion.CardTypes
                 }             
             }
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Mercenary);
+        }
     }
 
     public class Mercenary
@@ -1299,7 +1333,7 @@ namespace Dominion.CardTypes
         public static Mercenary card = new Mercenary();
 
         private Mercenary()
-            : base("Mercenary", Expansion.DarkAges, coinCost: 0, isAction: true, isAttack: true, attackDependsOnPlayerChoice: true, isKingdomCard: false)
+            : base("Mercenary", Expansion.DarkAges, coinCost: 0, isAction: true, isAttack: true, attackDependsOnPlayerChoice: true, isKingdomCard: false, startingLocation:StartingLocation.NonSupply)
         {
         }
 
@@ -1325,10 +1359,10 @@ namespace Dominion.CardTypes
                 {
                     if (otherPlayersAffectedByAttacks[otherIndex++])
                     {
-                        otherPlayer.RequestPlayerDiscardDownToCountInHand(gameState, 3);                        
+                        otherPlayer.RequestPlayerDiscardDownToCountInHand(gameState, 3);
                     }
                 }
-            }           
+            }
         }
     }
 

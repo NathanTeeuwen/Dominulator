@@ -12,7 +12,7 @@ namespace Dominion
         public readonly Card[] events;
         public readonly Card baneCard;
         public readonly bool useShelters;
-        public readonly bool useColonyAndPlatinum;        
+        public readonly bool useColonyAndPlatinum;
 
         public GameDescription(Card[] kingdomPiles, Card[] events, Card baneCard, bool useShelters, bool useColonyAndPlatinum)
         {

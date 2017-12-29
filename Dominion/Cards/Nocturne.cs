@@ -30,7 +30,7 @@ namespace Dominion.CardTypes
         public static Bat card = new Bat();
 
         private Bat()
-            : base("Bat", Expansion.Nocturne, coinCost: 2, isNight:true, isKingdomCard:false)
+            : base("Bat", Expansion.Nocturne, coinCost: 2, isNight:true, isKingdomCard:false, startingLocation:StartingLocation.NonSupply)
         {
         }
 
@@ -70,6 +70,11 @@ namespace Dominion.CardTypes
         {
             selfPlayer.RequestPlayerTrashCardsFromHand(gameState, 4, isOptional:true);
             return true;
+        }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddStartingCard(Cards.HauntedMirror);
         }
     }
 
@@ -148,7 +153,7 @@ namespace Dominion.CardTypes
         public static CursedGold card = new CursedGold();
 
         private CursedGold()
-            : base("Cursed Gold", Expansion.Nocturne, coinCost: 4, isTreasure: true, isHeirloom: true, isKingdomCard:false, plusCoins: 3)
+            : base("Cursed Gold", Expansion.Nocturne, coinCost: 4, isTreasure: true, isHeirloom: true, isKingdomCard:false, plusCoins: 3, startingLocation:StartingLocation.Hand, defaultSupplyCount:1)
         {
         }
 
@@ -209,6 +214,11 @@ namespace Dominion.CardTypes
         {
             throw new NotImplementedException();
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Imp);
+        }
     }
 
     public class Druid
@@ -240,6 +250,11 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             throw new NotImplementedException();
+        }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddSpirits();
         }
     }
 
@@ -273,6 +288,11 @@ namespace Dominion.CardTypes
         {
             throw new NotImplementedException();
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.LuckyCoin);
+        }
     }
 
     public class Ghost
@@ -281,7 +301,7 @@ namespace Dominion.CardTypes
         public static Ghost card = new Ghost();
 
         private Ghost()
-            : base("Ghost", Expansion.Nocturne, coinCost: 4, isNight: true, isDuration: true, isSpirit:true, isKingdomCard:false)
+            : base("Ghost", Expansion.Nocturne, coinCost: 4, isNight: true, isDuration: true, isSpirit:true, isKingdomCard:false, defaultSupplyCount: 6)
         {
         }
 
@@ -313,7 +333,7 @@ namespace Dominion.CardTypes
         public static Goat card = new Goat();
 
         private Goat()
-            : base("Goat", Expansion.Nocturne, coinCost: 2, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins:1)
+            : base("Goat", Expansion.Nocturne, coinCost: 2, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins:1, startingLocation: StartingLocation.Hand, defaultSupplyCount:1)
         {
         }
 
@@ -352,6 +372,11 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             throw new NotImplementedException();
+        }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Ghost);
         }
     }
 
@@ -401,6 +426,11 @@ namespace Dominion.CardTypes
         {
             throw new NotImplementedException();
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Wish);
+        }
     }
 
     public class LuckyCoin
@@ -409,7 +439,7 @@ namespace Dominion.CardTypes
         public static LuckyCoin card = new LuckyCoin();
 
         private LuckyCoin()
-            : base("Lucky Coin", Expansion.Nocturne, coinCost: 4, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins:1)
+            : base("Lucky Coin", Expansion.Nocturne, coinCost: 4, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins:1, startingLocation: StartingLocation.Hand, defaultSupplyCount:1)
         {
         }
 
@@ -425,13 +455,18 @@ namespace Dominion.CardTypes
         public static MagicLamp card = new MagicLamp();
 
         private MagicLamp()
-            : base("Magic Lamp", Expansion.Nocturne, coinCost:0, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins: 1)
+            : base("Magic Lamp", Expansion.Nocturne, coinCost:0, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins: 1, startingLocation:StartingLocation.Hand, defaultSupplyCount:1)
         {
         }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             throw new NotImplementedException();
+        }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Wish);
         }
     }
 
@@ -465,6 +500,13 @@ namespace Dominion.CardTypes
         {
             throw new NotImplementedException();
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.ZombieApprentice);
+            builder.AddCardTypeIfNotPresent(Cards.ZombieMason);
+            builder.AddCardTypeIfNotPresent(Cards.ZombieSpy);
+        }
     }
 
     public class NightWatchman
@@ -489,7 +531,7 @@ namespace Dominion.CardTypes
         public static Pasture card = new Pasture();
 
         private Pasture()
-            : base("Pasture", Expansion.Nocturne, coinCost: 2, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins: 1, victoryPoints: player => player.AllOwnedCards.Count)
+            : base("Pasture", Expansion.Nocturne, coinCost: 2, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins: 1, victoryPoints: player => player.AllOwnedCards.Count, startingLocation: StartingLocation.Hand, defaultSupplyCount:1)
         {
         }
 
@@ -513,6 +555,11 @@ namespace Dominion.CardTypes
         {
             throw new NotImplementedException();
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Goat);
+        }
     }
 
     public class Pooka
@@ -529,6 +576,11 @@ namespace Dominion.CardTypes
         {
             throw new NotImplementedException();
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.CursedGold);
+        }
     }
 
     public class Pouch
@@ -537,7 +589,7 @@ namespace Dominion.CardTypes
         public static Pouch card = new Pouch();
 
         private Pouch()
-            : base("Pouch", Expansion.Nocturne, coinCost: 2, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins: 1, plusBuy:1)
+            : base("Pouch", Expansion.Nocturne, coinCost: 2, isTreasure:true, isHeirloom:true, isKingdomCard: false, plusCoins: 1, plusBuy:1, defaultSupplyCount:1, startingLocation: StartingLocation.Hand)
         {
         }
     }
@@ -588,6 +640,11 @@ namespace Dominion.CardTypes
         {
             throw new NotImplementedException();
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.MagicLamp);
+        }
     }
 
     public class Shepherd
@@ -603,6 +660,11 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             throw new NotImplementedException();
+        }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Pasture);
         }
     }
 
@@ -636,6 +698,11 @@ namespace Dominion.CardTypes
         {
             throw new NotImplementedException();
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Imp);
+        }
     }
 
     public class Tracker
@@ -651,6 +718,11 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             throw new NotImplementedException();
+        }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Pouch);
         }
     }
 
@@ -683,6 +755,11 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             throw new NotImplementedException();
+        }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Bat);
         }
     }
 
@@ -724,7 +801,7 @@ namespace Dominion.CardTypes
         public static Wish card = new Wish();
 
         private Wish()
-            : base("Wish", Expansion.Nocturne, coinCost: 0, plusActions:1, isAction: true)
+            : base("Wish", Expansion.Nocturne, coinCost: 0, plusActions:1, isAction: true, isKingdomCard:false, startingLocation:StartingLocation.NonSupply)
         {
         }
 
@@ -740,7 +817,7 @@ namespace Dominion.CardTypes
         public static ZombieApprentice card = new ZombieApprentice();
 
         private ZombieApprentice()
-            : base("Zombie Apprentice", Expansion.Nocturne, coinCost: 3, isAction:true, isZombie:true, isKingdomCard:false)
+            : base("Zombie Apprentice", Expansion.Nocturne, coinCost: 3, isAction:true, isZombie:true, isKingdomCard:false, startingLocation:StartingLocation.Trash, defaultSupplyCount:1)
         {
         }
 
@@ -756,7 +833,7 @@ namespace Dominion.CardTypes
         public static ZombieMason card = new ZombieMason();
 
         private ZombieMason()
-            : base("Zombie Mason", Expansion.Nocturne, coinCost: 3, isAction: true, isZombie: true, isKingdomCard: false)
+            : base("Zombie Mason", Expansion.Nocturne, coinCost: 3, isAction: true, isZombie: true, isKingdomCard: false, startingLocation: StartingLocation.Trash, defaultSupplyCount: 1)
         {
         }
 
@@ -772,7 +849,7 @@ namespace Dominion.CardTypes
         public static ZombieSpy card = new ZombieSpy();
 
         private ZombieSpy()
-            : base("Zombie Spy", Expansion.Nocturne, coinCost: 3, plusCards:1, plusActions:1, isAction: true, isZombie: true, isKingdomCard: false)
+            : base("Zombie Spy", Expansion.Nocturne, coinCost: 3, plusCards:1, plusActions:1, isAction: true, isZombie: true, isKingdomCard: false, startingLocation: StartingLocation.Trash, defaultSupplyCount: 1)
         {
         }
 

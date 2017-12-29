@@ -14,7 +14,7 @@ namespace Dominion
         private readonly int coinCost;
         public readonly int potionCost;
         public readonly bool isKingdomCard;    // all cards that can be used to shuffle and make up the 10 cards of a kingdom.   For split piles, the randomizer card isKingdom and the cards that make up the piles are not
-
+        public readonly StartingLocation startingLocation;     // cards are either in your hand, in the supply or in the non-supply
         public readonly int plusAction;
         public readonly int plusBuy;
         public readonly int plusCard;
@@ -24,7 +24,6 @@ namespace Dominion
         public readonly bool attackDependsOnPlayerChoice;
         public readonly bool isAttackBeforeAction;
 
-        public readonly bool requiresRuins;
         public readonly bool requiresSpoils;
         public readonly bool canOverpay;
 
@@ -38,6 +37,7 @@ namespace Dominion
         public readonly bool isDoom;
         public readonly bool isGathering;
         public readonly bool isHeirloom;
+        public readonly bool isLooter;
         public readonly bool isNight;
         public readonly bool isPrize;
         public readonly bool isReaction;
@@ -79,6 +79,8 @@ namespace Dominion
                     yield return CardType.Doom;
                 if (this.isGathering)
                     yield return CardType.Gathering;
+                if (this.isLooter)
+                    yield return CardType.Looter;
                 if (this.isHeirloom)
                     yield return CardType.Heirloom;
                 if (this.isNight)
@@ -130,6 +132,7 @@ namespace Dominion
             int coinCost,
             int debtCost = 0,
             string pluralName = null,
+            StartingLocation startingLocation = Dominion.StartingLocation.Supply,
             int potionCost = 0,
             int plusActions = 0,
             int plusBuy = 0,
@@ -149,7 +152,7 @@ namespace Dominion
             bool isRuins = false,
             bool isTreasure = false,
             bool isDuration = false,
-            bool requiresRuins = false,
+            bool isLooter = false,
             bool requiresSpoils = false,
             bool isShelter = false,
             bool isTraveller = false,
@@ -201,8 +204,9 @@ namespace Dominion
             this.isSpirit = isSpirit;
             this.isZombie = isZombie;
             this.isCastle = isCastle;
+            this.isLooter = this.isLooter;
             this.defaultSupplyCount = defaultSupplyCount;
-            this.requiresRuins = requiresRuins;
+            this.isLooter = isLooter;
             this.isDuration = isDuration;
             this.isShelter = isShelter;
             this.isTraveller = isTraveller;
@@ -481,6 +485,10 @@ namespace Dominion
 
         }
 
+        internal virtual void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+        }
+
         public bool IsType(Card card)
         {
             if (this == card)
@@ -496,9 +504,9 @@ namespace Dominion
         }
 
         public static bool DoesCardCost3To6(Card card, PlayerState player)
-        {            
+        {
             return card.CurrentCoinCost(player) >= 3 && card.CurrentCoinCost(player) <= 6 && card.potionCost == 0;
-        }        
+        }
     }
 
     public class Event

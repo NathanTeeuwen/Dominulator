@@ -214,7 +214,7 @@ namespace Dominulator
             }
             if (card.isEvent)
                 result.Add("event");
-            if (card.requiresRuins)
+            if (card.isLooter)
                 result.Add("ruins");
             if (card.requiresSpoils)
                 result.Add("spoils");

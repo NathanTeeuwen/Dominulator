@@ -26,7 +26,7 @@ namespace Dominion.CardTypes
         public static Platinum card = new Platinum();
 
         private Platinum() 
-            : base("Platinum", Expansion.Prosperity, coinCost: 9, plusCoins: 5, isTreasure: true, isKingdomCard:false) 
+            : base("Platinum", Expansion.Prosperity, coinCost: 9, plusCoins: 5, isTreasure: true, isKingdomCard:false, defaultSupplyCount:20) 
         { 
         } 
     }

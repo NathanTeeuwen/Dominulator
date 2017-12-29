@@ -69,7 +69,7 @@ namespace Dominion.CardTypes
         public static Copper card = new Copper();
 
         private Copper()
-            : base("Copper", Expansion.Base, coinCost: 0, plusCoins: 1, isTreasure: true, isKingdomCard: false) 
+            : base("Copper", Expansion.Base, coinCost: 0, plusCoins: 1, isTreasure: true, isKingdomCard: false, defaultSupplyCount:60) 
         {
         } 
     }
@@ -80,7 +80,7 @@ namespace Dominion.CardTypes
         public static Silver card = new Silver();
 
         private Silver()
-            : base("Silver", Expansion.Base, coinCost: 3, plusCoins: 2, isTreasure: true, isKingdomCard: false) 
+            : base("Silver", Expansion.Base, coinCost: 3, plusCoins: 2, isTreasure: true, isKingdomCard: false, defaultSupplyCount:40) 
         {
         } 
     }
@@ -91,7 +91,7 @@ namespace Dominion.CardTypes
         public static Gold card = new Gold();
 
         private Gold()
-            : base("Gold", Expansion.Base, coinCost: 6, plusCoins: 3, isTreasure: true, isKingdomCard: false) 
+            : base("Gold", Expansion.Base, coinCost: 6, plusCoins: 3, isTreasure: true, isKingdomCard: false, defaultSupplyCount:30) 
         {
         } 
     }

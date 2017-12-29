@@ -300,6 +300,7 @@ namespace Dominion.CardTypes
     public class Tournament
         : Card
     {
+        static Card[] prizes = { BagOfGold.card, Diadem.card, Followers.card, Princess.card, TrustySteed.card };
         public static Tournament card = new Tournament();
 
         private Tournament()
@@ -332,6 +333,14 @@ namespace Dominion.CardTypes
             {
                 currentPlayer.DrawOneCardIntoHand(gameState);
                 currentPlayer.AddCoins(1);
+            }
+        }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            foreach (Card prize in prizes)
+            {
+                builder.AddNonSupply(1, prize);
             }
         }
     }

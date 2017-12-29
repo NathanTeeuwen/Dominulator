@@ -331,7 +331,7 @@ namespace Dominion.CardTypes
         public static Champion card = new Champion();
 
         private Champion()
-            : base("Champion", Expansion.Adventures, coinCost: 6, isAction: true, isDuration: true, plusActions:1, isKingdomCard:false)
+            : base("Champion", Expansion.Adventures, coinCost: 6, isAction: true, isDuration: true, plusActions:1, isKingdomCard:false, startingLocation: StartingLocation.NonSupply)
         {
         }
 
@@ -363,7 +363,7 @@ namespace Dominion.CardTypes
         public static Disciple card = new Disciple();
 
         private Disciple()
-            : base("Disciple", Expansion.Adventures, coinCost: 5, isAction: true, isKingdomCard:false)
+            : base("Disciple", Expansion.Adventures, coinCost: 5, isAction: true, isKingdomCard:false, startingLocation:StartingLocation.NonSupply, isTraveller:true)
         {
         }
 
@@ -438,9 +438,9 @@ namespace Dominion.CardTypes
         public static Fugitive card = new Fugitive();
 
         private Fugitive()
-            : base("Fugitive", Expansion.Adventures, coinCost: 4, isAction: true, plusCards: 2, plusActions: 1, isKingdomCard: false)
+            : base("Fugitive", Expansion.Adventures, coinCost: 4, isAction: true, plusCards: 2, plusActions: 1, isKingdomCard: false, startingLocation: StartingLocation.NonSupply, isTraveller: true)
         {
-        }        
+        }
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
@@ -518,7 +518,7 @@ namespace Dominion.CardTypes
         public static Hero card = new Hero();
 
         private Hero()
-            : base("Hero", Expansion.Adventures, coinCost: 5, plusCoins: 2, isAction: true, isTraveller: true, isKingdomCard: false)
+            : base("Hero", Expansion.Adventures, coinCost: 5, plusCoins: 2, isAction: true, isTraveller: true, isKingdomCard: false, startingLocation: StartingLocation.NonSupply)
         {
         }
 
@@ -690,6 +690,14 @@ namespace Dominion.CardTypes
         {
             throw new NotImplementedException();
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.TreasureHunter);
+            builder.AddCardTypeIfNotPresent(Cards.Warrior);
+            builder.AddCardTypeIfNotPresent(Cards.Hero);
+            builder.AddCardTypeIfNotPresent(Cards.Champion);
+        }
     }
 
     public class Peasant
@@ -698,13 +706,21 @@ namespace Dominion.CardTypes
         public static Peasant card = new Peasant();
 
         private Peasant()
-            : base("Peasant", Expansion.Adventures, coinCost: 2, isAction: true, plusBuy:1, plusCoins:1)
+            : base("Peasant", Expansion.Adventures, coinCost: 2, isAction: true, plusBuy:1, plusCoins:1, isTraveller:true)
         {
         }        
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             throw new NotImplementedException();
+        }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Soldier);
+            builder.AddCardTypeIfNotPresent(Cards.Fugitive);
+            builder.AddCardTypeIfNotPresent(Cards.Disciple);
+            builder.AddCardTypeIfNotPresent(Cards.Teacher);
         }
     }
 
@@ -830,7 +846,7 @@ namespace Dominion.CardTypes
         public static Soldier card = new Soldier();
 
         private Soldier()
-            : base("Soldier", Expansion.Adventures, coinCost: 3, isAction: true, plusCoins: 2, isKingdomCard: false)
+            : base("Soldier", Expansion.Adventures, coinCost: 3, isAction: true, plusCoins: 2, isKingdomCard: false, startingLocation: StartingLocation.NonSupply, isTraveller: true)
         {
         }        
 
@@ -886,7 +902,7 @@ namespace Dominion.CardTypes
         public static Teacher card = new Teacher();
 
         private Teacher()
-            : base("Teacher", Expansion.Adventures, coinCost: 6, isAction: true, isKingdomCard: false)
+            : base("Teacher", Expansion.Adventures, coinCost: 6, isAction: true, isKingdomCard: false, startingLocation:StartingLocation.NonSupply)
         {
         }        
 
@@ -918,7 +934,7 @@ namespace Dominion.CardTypes
         public static TreasureHunter card = new TreasureHunter();
 
         private TreasureHunter()
-            : base("Treasure Hunter", Expansion.Adventures, coinCost: 3, isAction: true, plusActions: 1, plusCoins: 1, isKingdomCard: false)
+            : base("Treasure Hunter", Expansion.Adventures, coinCost: 3, isAction: true, plusActions: 1, plusCoins: 1, isKingdomCard: false, startingLocation: StartingLocation.NonSupply, isTraveller: true)
         {
         }        
 
@@ -951,7 +967,7 @@ namespace Dominion.CardTypes
         public static Warrior card = new Warrior();
 
         private Warrior()
-            : base("Warrior", Expansion.Adventures, coinCost: 4, isAction: true, plusCards: 2, isKingdomCard: false)
+            : base("Warrior", Expansion.Adventures, coinCost: 4, isAction: true, plusCards: 2, isKingdomCard: false, startingLocation: StartingLocation.NonSupply, isTraveller: true)
         {
         }        
 
