@@ -442,6 +442,18 @@ namespace Dominion.CardTypes
         {
             throw new NotImplementedException();
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.HumbleCastle);
+            builder.AddCardTypeIfNotPresent(Cards.CrumblingCastle);
+            builder.AddCardTypeIfNotPresent(Cards.SmallCastle);
+            builder.AddCardTypeIfNotPresent(Cards.HauntedCastle);
+            builder.AddCardTypeIfNotPresent(Cards.OpulentCastle);
+            builder.AddCardTypeIfNotPresent(Cards.SprawlingCastle);
+            builder.AddCardTypeIfNotPresent(Cards.GrandCastle);
+            builder.AddCardTypeIfNotPresent(Cards.KingsCastle);
+        }
     }
 
     public class HumbleCastle
@@ -617,6 +629,12 @@ namespace Dominion.CardTypes
         {
             throw new NotImplementedException();
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Catapult);
+            builder.AddCardTypeIfNotPresent(Cards.Rocks);
+        }
     }
 
     public class ChariotRace
@@ -740,6 +758,12 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
+        }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Encampment);
+            builder.AddCardTypeIfNotPresent(Cards.Plunder);
         }
     }
 
@@ -875,6 +899,12 @@ namespace Dominion.CardTypes
         {
             throw new NotImplementedException();
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Gladiator);
+            builder.AddCardTypeIfNotPresent(Cards.Fortune);
+        }
     }
 
     public class Groundskeeper
@@ -971,6 +1001,12 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             throw new NotImplementedException();
+        }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Patrician);
+            builder.AddCardTypeIfNotPresent(Cards.Emporium);
         }
     }
 
@@ -1090,6 +1126,12 @@ namespace Dominion.CardTypes
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             throw new NotImplementedException();
+        }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Settlers);
+            builder.AddCardTypeIfNotPresent(Cards.BustlingVillage);
         }
     }
 

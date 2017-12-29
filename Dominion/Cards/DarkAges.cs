@@ -731,6 +731,20 @@ namespace Dominion.CardTypes
         {
             throw new NotImplementedException();
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.DameAnna);
+            builder.AddCardTypeIfNotPresent(Cards.DameJosephine);
+            builder.AddCardTypeIfNotPresent(Cards.DameMolly);
+            builder.AddCardTypeIfNotPresent(Cards.DameNatalie);
+            builder.AddCardTypeIfNotPresent(Cards.DameSylvia);
+            builder.AddCardTypeIfNotPresent(Cards.SirBailey);
+            builder.AddCardTypeIfNotPresent(Cards.SirDestry);
+            builder.AddCardTypeIfNotPresent(Cards.SirMartin);
+            builder.AddCardTypeIfNotPresent(Cards.SirMichael);
+            builder.AddCardTypeIfNotPresent(Cards.SirVander);
+        }
     }
 
     public class Knight
@@ -809,7 +823,7 @@ namespace Dominion.CardTypes
         public static DameMolly card = new DameMolly();
 
         private DameMolly()
-            : base("Dame Josephine", plusActions:2)
+            : base("Dame Molly", plusActions:2)
         {
         }
 
@@ -874,7 +888,7 @@ namespace Dominion.CardTypes
         public static SirDestry card = new SirDestry();
 
         private SirDestry()
-            : base("Sir Destroy", plusCards:2)
+            : base("Sir Destry", plusCards:2)
         {
         }
 

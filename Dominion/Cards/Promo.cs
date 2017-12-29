@@ -161,6 +161,12 @@ namespace Dominion.CardTypes
         {
             throw new NotImplementedException();
         }
+
+        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+        {
+            builder.AddCardTypeIfNotPresent(Cards.Sauna);
+            builder.AddCardTypeIfNotPresent(Cards.Avanto);
+        }
     }
 
     public class Avanto

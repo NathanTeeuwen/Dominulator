@@ -244,6 +244,11 @@
     <Content Include="Resources\CursedGold.jpg" />
     <Content Include="Resources\CursedVillage.jpg" />
     <Content Include="Resources\Cutpurse.jpg" />
+    <Content Include="Resources\DameAnna.jpg" />
+    <Content Include="Resources\DameJosephine.jpg" />
+    <Content Include="Resources\DameMolly.jpg" />
+    <Content Include="Resources\DameNatalie.jpg" />
+    <Content Include="Resources\DameSylvia.jpg" />
     <Content Include="Resources\DeathCart.jpg" />
     <Content Include="Resources\DefiledShrine.jpg" />
     <Content Include="Resources\Delve.jpg" />
@@ -497,6 +502,11 @@
     <Content Include="Resources\Shepherd.jpg" />
     <Content Include="Resources\SilkRoad.jpg" />
     <Content Include="Resources\Silver.jpg" />
+    <Content Include="Resources\SirBailey.jpg" />
+    <Content Include="Resources\SirDestry.jpg" />
+    <Content Include="Resources\SirMartin.jpg" />
+    <Content Include="Resources\SirMichael.jpg" />
+    <Content Include="Resources\SirVander.jpg" />
     <Content Include="Resources\Skulk.jpg" />
     <Content Include="Resources\SmallCastle.jpg" />
     <Content Include="Resources\Smithy.jpg" />

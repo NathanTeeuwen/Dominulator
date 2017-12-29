@@ -85,6 +85,11 @@ namespace Dominion
         public static readonly CardTypes.CursedGold CursedGold = CardTypes.CursedGold.card;
         public static readonly CardTypes.CursedVillage CursedVillage = CardTypes.CursedVillage.card;
         public static readonly CardTypes.Cutpurse Cutpurse = CardTypes.Cutpurse.card;
+        public static readonly CardTypes.DameAnna DameAnna = CardTypes.DameAnna.card;
+        public static readonly CardTypes.DameJosephine DameJosephine = CardTypes.DameJosephine.card;
+        public static readonly CardTypes.DameMolly DameMolly = CardTypes.DameMolly.card;
+        public static readonly CardTypes.DameNatalie DameNatalie = CardTypes.DameNatalie.card;
+        public static readonly CardTypes.DameSylvia DameSylvia = CardTypes.DameSylvia.card;
         public static readonly CardTypes.DeathCart DeathCart = CardTypes.DeathCart.card;
         public static readonly CardTypes.DenOfSin DenOfSin = CardTypes.DenOfSin.card;
         public static readonly CardTypes.Develop Develop = CardTypes.Develop.card;
@@ -311,6 +316,11 @@ namespace Dominion
         public static readonly CardTypes.SettlersBustlingVillage SettlersBustlingVillage = CardTypes.SettlersBustlingVillage.card;
         public static readonly CardTypes.ShantyTown ShantyTown = CardTypes.ShantyTown.card;
         public static readonly CardTypes.Shepherd Shepherd = CardTypes.Shepherd.card;
+        public static readonly CardTypes.SirBailey SirBailey = CardTypes.SirBailey.card;
+        public static readonly CardTypes.SirDestry SirDestry = CardTypes.SirDestry.card;
+        public static readonly CardTypes.SirMartin SirMartin = CardTypes.SirMartin.card;
+        public static readonly CardTypes.SirMichael SirMichael = CardTypes.SirMichael.card;
+        public static readonly CardTypes.SirVander SirVander = CardTypes.SirVander.card;
         public static readonly CardTypes.SilkRoad SilkRoad = CardTypes.SilkRoad.card;
         public static readonly CardTypes.Silver Silver = CardTypes.Silver.card;
         public static readonly CardTypes.Skulk Skulk = CardTypes.Skulk.card;
