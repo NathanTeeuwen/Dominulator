@@ -88,7 +88,7 @@ namespace Dominion.Strategy
 
         public static IEnumerable<Card> FullyImplementedKingdomCards()
         {
-            foreach(Card card in Dominion.Cards.AllKingdomCards())
+            foreach(Card card in Dominion.Cards.AllKingdomCardsList)
             {
                 if (Cards.UnimplementedCards.Contains(card))
                     continue;

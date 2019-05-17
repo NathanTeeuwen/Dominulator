@@ -494,13 +494,13 @@ namespace Dominion
         public static readonly CardTypes.Miserable Miserable = CardTypes.Miserable.card;
         public static readonly CardTypes.TwiceMiserable TwiceMiserable = CardTypes.TwiceMiserable.card;
 
-        private static Card[] AllCards()
+        private static CardShapedObject[] AllCards()
         {
-            var result = new List<Card>();
+            var result = new List<CardShapedObject>();
             foreach (System.Reflection.FieldInfo fieldInfo in typeof(Cards).GetTypeInfo().DeclaredFields)
             {
                 var fieldValue = fieldInfo.GetValue(null);
-                if (fieldValue is Card card)
+                if (fieldValue is CardShapedObject card)
                 result.Add(card);
             }
             
@@ -512,19 +512,41 @@ namespace Dominion
             Cards.Hovel,
             Cards.Necropolis};
 
-        public static Card[] AllKingdomCards()
+        private static Card[] AllKingdomCards()
         {
             var result = new List<Card>();
-            foreach (Card card in AllCards())
+            foreach (CardShapedObject cardShapedObject in AllCardsList)
             {
-                if (card.isKingdomCard)
-                    result.Add(card);
+                if (cardShapedObject is Dominion.Card card)
+                {
+                    if (card.isKingdomCard)
+                        result.Add(card);
+                }
             }
-
             return result.ToArray();
         }
 
-        public static Card[] AllCardsList = Dominion.Cards.AllCards();
+        public static Card[] AllKingdomCardsListCache; 
+        static public Card[] AllKingdomCardsList
+        {
+            get
+            {
+                if (AllKingdomCardsListCache == null)
+                    AllKingdomCardsListCache = AllKingdomCards();
+                return AllKingdomCardsListCache;
+            }
+        }
+
+        static CardShapedObject[] AllCardsListcache;
+        static public CardShapedObject[] AllCardsList
+        {
+            get
+            {
+                if (AllCardsListcache == null)
+                    AllCardsListcache = AllCards();
+                return AllCardsListcache;
+            }
+        }
 
         public static Card[] UnimplementedCards = new Card[]
         {          

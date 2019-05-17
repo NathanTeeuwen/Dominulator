@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace Dominion
 {
-    public class UniqueCardPicker
+    public class UniqueCardPicker<T>
+        where T : Dominion.CardShapedObject
     {
         private readonly Random random;
-        private readonly Dictionary<Dominion.Card, bool> excludes;
-        private readonly Dominion.Card[] allCards;
+        private readonly Dictionary<T, bool> excludes;
+        private readonly T[] allCards;
         private readonly int[] remainingCards;
         int maxIndex;
 
-        public UniqueCardPicker(IEnumerable<Dominion.Card> allCards, Random random)
+        public UniqueCardPicker(IEnumerable<T> allCards, Random random)
         {
             this.random = random;
             this.allCards = allCards.ToArray();
@@ -24,16 +25,16 @@ namespace Dominion
 
             this.maxIndex = remainingCards.Length - 1;
 
-            this.excludes = new Dictionary<Dominion.Card, bool>();
+            this.excludes = new Dictionary<T, bool>();
         }
 
-        public void ExcludeCards(IEnumerable<Dominion.Card> excludes)
+        public void ExcludeCards(IEnumerable<T> excludes)
         {
             foreach (var card in excludes)
                 this.excludes[card] = true;
         }
 
-        public bool IsExcluded(Dominion.Card card)
+        public bool IsExcluded(T card)
         {
             bool unused;
             if (this.excludes.TryGetValue(card, out unused))
@@ -42,13 +43,13 @@ namespace Dominion
             return false;
         }
 
-        public Dominion.Card GetCard(Func<Dominion.Card, bool> meetConstraint)
+        public T GetCard(Func<T, bool> meetConstraint)
         {
             int curIndex = this.maxIndex;
             while (curIndex >= 0)
             {
                 int resultCardIndex = NumberBetweenInclusive(this.random, 0, maxIndex);
-                Dominion.Card currentCard = this.allCards[remainingCards[resultCardIndex]];
+                T currentCard = this.allCards[remainingCards[resultCardIndex]];
 
                 if (!IsExcluded(currentCard) && meetConstraint(currentCard))
                 {

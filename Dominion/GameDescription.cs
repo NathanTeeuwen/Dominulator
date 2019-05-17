@@ -9,22 +9,24 @@ namespace Dominion
     public class GameDescription
     {
         public readonly Card[] kingdomPiles;
-        public readonly Card[] events;
+        public readonly Event[] events;
+        public readonly Landmark[] landmarks;
         public readonly Card baneCard;
         public readonly bool useShelters;
         public readonly bool useColonyAndPlatinum;
 
-        public GameDescription(Card[] kingdomPiles, Card[] events, Card baneCard, bool useShelters, bool useColonyAndPlatinum)
+        public GameDescription(Card[] kingdomPiles, Event[] events, Landmark[] landmarks, Card baneCard, bool useShelters, bool useColonyAndPlatinum)
         {
             this.kingdomPiles = kingdomPiles;
             this.baneCard = baneCard;
             this.events = events;
+            this.landmarks = landmarks;
             this.useShelters = useShelters;
             this.useColonyAndPlatinum = useColonyAndPlatinum;
         }
 
-        public GameDescription(string[] kingdomPiles, string[] events, string baneCard, bool useShelters, bool useColonyAndPlatinum)
-            : this(GetCardsFromProgrammaticNames(kingdomPiles), GetCardsFromProgrammaticNames(events), GetCardFromProgrammaticName(baneCard), useShelters, useColonyAndPlatinum)
+        public GameDescription(string[] kingdomPiles, string[] events, string[] landmarks, string baneCard, bool useShelters, bool useColonyAndPlatinum)
+            : this(GetCardsFromProgrammaticNames<Card>(kingdomPiles), GetCardsFromProgrammaticNames<Event>(events), GetCardsFromProgrammaticNames<Landmark>(landmarks), GetCardFromProgrammaticName<Card>(baneCard), useShelters, useColonyAndPlatinum)
         {            
         }
 
@@ -80,14 +82,16 @@ namespace Dominion
             missing = missingList.ToArray();
         }
 
-        public static Card GetCardFromProgrammaticName(string name)
+        public static T GetCardFromProgrammaticName<T>(string name)
+            where T : CardShapedObject
         {
-            return Cards.AllCardsList.Where(c => c.ProgrammaticName == name).FirstOrDefault();
+            return (T)(Cards.AllCardsList.Where(c => c.ProgrammaticName == name).FirstOrDefault());
         }
 
-        public static Card[] GetCardsFromProgrammaticNames(string[] cardNames)
+        public static T[] GetCardsFromProgrammaticNames<T>(string[] cardNames)
+            where T: CardShapedObject
         {
-            return cardNames.Select(name => GetCardFromProgrammaticName(name)).ToArray();
+            return cardNames.Select(name => GetCardFromProgrammaticName<T>(name)).ToArray();
         }
     }
 }

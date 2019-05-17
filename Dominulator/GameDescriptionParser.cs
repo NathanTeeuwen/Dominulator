@@ -126,9 +126,11 @@ namespace Dominulator
 
                 double rating = root.GetNamedNumber(jsonNameRating);
 
+                string[] landmarkNames = new string[0];
+
                 return new GameDescriptionAndRating() 
                 {
-                    gameDescription = new Dominion.GameDescription(kingdomPileNames, eventNames, baneCardName, useShelters, useColonyAndPlatinum),
+                    gameDescription = new Dominion.GameDescription(kingdomPileNames, eventNames, landmarkNames, baneCardName, useShelters, useColonyAndPlatinum),
                     rating = rating
                 };
                     

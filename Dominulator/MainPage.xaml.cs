@@ -80,7 +80,7 @@ namespace Dominulator
         {
             bool isReplacingItems = itemsToReplace != null && itemsToReplace.Any() && sourceList.Count <= targetCount;
             bool isReducingItems = itemsToReplace != null && itemsToReplace.Any() && sourceList.Count > targetCount;
-            var cardPicker = new Dominion.UniqueCardPicker(allCards.Select(c => c.dominionCard), MainPage.random);
+            var cardPicker = new Dominion.UniqueCardPicker<Dominion.Card>(allCards.Select(c => c.dominionCard), MainPage.random);
 
             bool isCleanRoll = false;
 

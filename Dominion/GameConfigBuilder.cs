@@ -11,7 +11,8 @@ namespace Dominion
         public bool useShelters;
         public bool useColonyAndPlatinum;
         private List<Card> kingdomPiles;
-        private List<Card> events;
+        private List<Event> events;
+        private List<Landmark> landmarks;
         private Card baneCard;
         private MapPlayerGameConfigToCardSet startingDeck;
         private MapPlayerGameConfigToCardSet shuffleLuck;
@@ -19,7 +20,7 @@ namespace Dominion
         public static GameConfig Create(StartingCardSplit split, params Card[] cards)
         {
             var result = new GameConfigBuilder();
-            result.kingdomPiles.AddRange(cards);            
+            result.kingdomPiles.AddRange(cards);
             result.CardSplit = split;
             return result.ToGameConfig();
         }
@@ -28,7 +29,8 @@ namespace Dominion
         {
             var result = new GameConfigBuilder();
             result.kingdomPiles.AddRange(cards);
-            result.events = new List<Card>();
+            result.events = new List<Event>();
+            result.landmarks = new List<Landmark>();
             return result.ToGameConfig();
         }
 
@@ -37,7 +39,8 @@ namespace Dominion
             this.useShelters = false;
             this.useColonyAndPlatinum = false;
             this.kingdomPiles = new List<Card>();
-            this.events = new List<Card>();
+            this.events = new List<Event>();
+            this.landmarks = new List<Landmark>();
             this.startingDeck = GetDefaultStartingDeck;
             this.shuffleLuck = GetDefaultStartingHand;
         }
@@ -48,7 +51,8 @@ namespace Dominion
             this.useColonyAndPlatinum = gameConfig.useColonyAndPlatinum;
             this.baneCard = gameConfig.baneCard;
             this.kingdomPiles = new List<Card>(gameConfig.kingdomPiles);
-            this.events = new List<Card>(gameConfig.gameDescription.events);
+            this.events = new List<Event>(gameConfig.gameDescription.events);
+            this.landmarks = new List<Landmark>(gameConfig.gameDescription.landmarks);
             this.startingDeck = gameConfig.startingDeck;
             this.shuffleLuck = gameConfig.startingHand;
         }
@@ -86,18 +90,10 @@ namespace Dominion
             this.shuffleLuck = GetStartingHandForSplit(splits);
         }
 
-        public void SetEvents(IEnumerable<Card> cards)
+        public void SetEvents(IEnumerable<Event> cards)
         {
-            var setCards = new HashSet<Card>();
-
-            foreach (Card card in cards)
-            {
-                setCards.Add(card);
-            }
-            KeepOnlyEvents(setCards);
-
             this.events.Clear();
-            this.events.AddRange(setCards.ToArray());
+            this.events.AddRange(cards);
         }
 
         public void SetKingdomPiles(IEnumerable<Card> cards)
@@ -129,21 +125,6 @@ namespace Dominion
             }
         }
 
-        public static void KeepOnlyEvents(HashSet<Card> setCards)
-        {
-            var cardsToRemove = new List<Card>();
-            foreach (Card card in setCards)
-            {
-                if (!card.isEvent)
-                    cardsToRemove.Add(card);
-            }
-
-            foreach (var card in cardsToRemove)
-            {
-                setCards.Remove(card);
-            }
-        }
-
         public GameConfig ToGameConfig()
         {
             return new GameConfig(
@@ -157,6 +138,7 @@ namespace Dominion
             return new GameDescription(
                     this.kingdomPiles.ToArray(),
                     this.events.ToArray(),
+                    this.landmarks.ToArray(),
                     this.baneCard,
                     this.useShelters,
                     this.useColonyAndPlatinum);
@@ -171,11 +153,11 @@ namespace Dominion
 
         static readonly CardCountPair[] EstateStartingDeck = new CardCountPair[] {
                             new CardCountPair(Cards.Copper, 7),
-                            new CardCountPair(Cards.Estate, 3) 
+                            new CardCountPair(Cards.Estate, 3)
                         };
 
         static readonly CardCountPair[] Starting52Split = new CardCountPair[] {
-                            new CardCountPair(Cards.Copper, 5)                            
+                            new CardCountPair(Cards.Copper, 5)
                         };
 
         static readonly CardCountPair[] Starting25Split = new CardCountPair[] {
@@ -265,11 +247,15 @@ namespace Dominion
             {
                 return cards[playerIndex];
             };
-        }        
+        }
 
-        public void GenerateCompletelyRandomKingdom(IEnumerable<Card> allCards, Random random)
+        public void GenerateCompletelyRandomKingdom(
+            IEnumerable<Card> allCards,
+            IEnumerable<Event> allEvents,
+            IEnumerable<Landmark> allLandMarks,
+            Random random)
         {
-            var cardPicker = new UniqueCardPicker(allCards, random);
+            var cardPicker = new UniqueCardPicker<Card>(allCards, random);
 
             this.RandomizeKingdom(allCards, random);
             this.RandomizeEvents(random);
@@ -280,7 +266,7 @@ namespace Dominion
         public void RandomizeKingdom(IEnumerable<Card> allCards, Random random)
         {
             this.kingdomPiles.Clear();
-            var cardPicker = new UniqueCardPicker(allCards, random);
+            var cardPicker = new UniqueCardPicker<Card>(allCards, random);
             PopulateCardListToCount(10, this.kingdomPiles, cardPicker, c => c.isKingdomCard);
 
             if (this.kingdomPiles.Contains(Cards.YoungWitch))
@@ -292,13 +278,15 @@ namespace Dominion
         }
 
         public void RandomizeEvents(Random random)
-        {            
+        {
             int cEventsToInclude = 0;
+            int cLandmarksToInclude = 0;
 
-            var allEventsCards = Dominion.Cards.AllCardsList.Where(c => c.isEvent || c is Landmark).ToArray<Dominion.Card>();
+            var allEventsCards = Dominion.Cards.AllCardsList.Where(c => c is Event).Select(c=> (Event)c).ToArray();
+            var allLandmarkCards = Dominion.Cards.AllCardsList.Where(c => c is Landmark).Select(c => (Landmark)c).ToArray();
 
             int cEventRemaining = allEventsCards.Length;
-            int totalKingdomCount = Dominion.Cards.AllKingdomCards().Count();
+            int totalKingdomCount = Dominion.Cards.AllKingdomCardsList.Length;
             for (int i = 0; i < 10; ++i)
             {
                 int roll = random.Next(totalKingdomCount);
@@ -314,9 +302,13 @@ namespace Dominion
                 }
             }
 
-            var cardPicker = new Dominion.UniqueCardPicker(allEventsCards, random);
+            var cardPicker = new Dominion.UniqueCardPicker<Event>(allEventsCards, random);
             this.events.Clear();
-            PopulateCardListToCount(cEventsToInclude, this.events, cardPicker, c => true);
+            PopulateCardListToCount<Event>(cEventsToInclude, this.events, cardPicker, c => true);
+
+            var cardPicker2 = new Dominion.UniqueCardPicker<Landmark>(allLandmarkCards, random);
+            this.landmarks.Clear();
+            PopulateCardListToCount<Landmark>(cLandmarksToInclude, this.landmarks, cardPicker2, c => true);
         }
 
         public void ReRollPlatinumColony(Random random)
@@ -336,11 +328,12 @@ namespace Dominion
             return cExpansion >= roll ? true : false;
         }
 
-        private static void PopulateCardListToCount(int targetCount, List<Card> list, UniqueCardPicker cardPicker, Func<Dominion.Card, bool> meetConstraint)
+        private static void PopulateCardListToCount<T>(int targetCount, List<T> list, UniqueCardPicker<T> cardPicker, Func<T, bool> meetConstraint)
+            where T : CardShapedObject
         {
             while (list.Count < targetCount)
             {
-                Dominion.Card currentCard = cardPicker.GetCard(meetConstraint);
+                T currentCard = cardPicker.GetCard(meetConstraint);
                 if (currentCard == null)
                     break;
                 list.Add(currentCard);

@@ -7,25 +7,25 @@ namespace GatherAllImagesIntoRepository
     {
         static void Main(string[] args)
         {
-            var missingCards = new Generic.List<Dominion.Card>();
+            var missingCards = new Generic.List<Dominion.CardShapedObject>();
 
             var cardImagesList = new CardImagesList("c:\\trash\\CardImagesList.txt");
             var destinationDir = "C:\\Dropbox\\nathant\\Projects\\Dominion\\Dominulator\\Resources";
 
-            foreach(var card in Dominion.Cards.AllCardsList)
+            foreach(var cardShapedObject in Dominion.Cards.AllCardsList)
             {
-                if (card == Dominion.Cards.Ruins || card == Dominion.Cards.Prize)
+                if (cardShapedObject == Dominion.Cards.Ruins || cardShapedObject == Dominion.Cards.Prize)
                     continue;
-                var imagePath = cardImagesList.GetPathForCard(card);
+                var imagePath = cardImagesList.GetPathForCard(cardShapedObject);
                 if (imagePath != null)
                 {
                     System.Console.WriteLine(imagePath);
-                    var destPath = System.IO.Path.Combine(destinationDir, card.ProgrammaticName + System.IO.Path.GetExtension(imagePath));
+                    var destPath = System.IO.Path.Combine(destinationDir, cardShapedObject.ProgrammaticName + System.IO.Path.GetExtension(imagePath));
                     if (!System.IO.File.Exists(destPath))
                         System.IO.File.Copy(imagePath, destPath, overwrite:false);
                 }
                 else
-                    missingCards.Add(card);
+                    missingCards.Add(cardShapedObject);
             }
 
             if (missingCards.Count > 0)
@@ -62,7 +62,7 @@ namespace GatherAllImagesIntoRepository
             }
         }
         
-        public string GetPathForCard(Dominion.Card card)
+        public string GetPathForCard(Dominion.CardShapedObject card)
         {
             string result = null;
             this.mpProgramaticNameToPath.TryGetValue(card.ProgrammaticName.ToLower(), out result);

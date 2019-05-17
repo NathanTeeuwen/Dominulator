@@ -198,7 +198,7 @@ namespace Dominulator
 
         private async System.Threading.Tasks.Task PopulateFromResources()
         {
-            foreach (Dominion.Card card in Dominion.Cards.AllKingdomCards())
+            foreach (Dominion.Card card in Dominion.Cards.AllKingdomCardsList)
             {
                 this.originalCards.Add(DominionCard.Create(card));
             }

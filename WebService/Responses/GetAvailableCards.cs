@@ -17,7 +17,7 @@ namespace Program.WebService
 
         public object GetResponse(WebService service)
         {
-            return Cards.AllKingdomCards().Select(c => GetCardForJason(c)).ToArray();
+            return Cards.AllKingdomCardsList.Select(c => GetCardForJason(c)).ToArray();
         }
 
         private static object GetCardForJason(Card card)

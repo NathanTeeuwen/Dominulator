@@ -115,7 +115,10 @@ namespace Dominulator
             this.appDataContext.DeckRating.Value = 0;
             this.appDataContext.WebRating.Value = 0;
             var kingdomBuilder = new Dominion.GameConfigBuilder();
-            kingdomBuilder.GenerateCompletelyRandomKingdom(this.appDataContext.AllCards.CurrentCards.Select(c => c.dominionCard), MainPage.random);
+            Dominion.Card[] allCards = this.appDataContext.AllCards.CurrentCards.Select(c => c.cardShapedObject as Dominion.Card).Where(c => c != null).ToArray();
+            IEnumerable<Dominion.Event> allEvents = this.appDataContext.AllCards.CurrentCards.Select(c => c.cardShapedObject as Dominion.Event).Where(c => c != null);
+            IEnumerable< Dominion.Landmark> allLandMarks = this.appDataContext.AllCards.CurrentCards.Select(c => c.cardShapedObject as Dominion.Landmark).Where(c => c != null);
+            kingdomBuilder.GenerateCompletelyRandomKingdom(allCards, allEvents, allLandMarks, MainPage.random);
             Dominion.GameDescription gameDescription = kingdomBuilder.ToGameDescription();
             this.appDataContext.PopulateFromGameDescription(gameDescription);
         }

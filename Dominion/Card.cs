@@ -537,19 +537,19 @@ namespace Dominion
         }
     }
 
-    public class Landmark
-      : Card
+    public abstract class Landmark
+      : CardShapedObject
     {
         protected Landmark(
             string name,
             Expansion expansion,
             string pluralName = null)
-            : base(name: name, expansion: expansion, coinCost: 0, isLandmark: true, pluralName: null, isKingdomCard: false)
+            : base(name: name, expansion: expansion, pluralName: null)
         {
 
         }
 
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        public virtual void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             throw new NotImplementedException();
         }
@@ -558,6 +558,7 @@ namespace Dominion
     public class CardShapedObject
     {
         public readonly string name;
+        public readonly string backName;
         public readonly string pluralName;
         public readonly Expansion expansion;
         public readonly Edition edition;

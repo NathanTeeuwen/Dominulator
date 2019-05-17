@@ -175,12 +175,12 @@ namespace Dominulator
             var setCards = new HashSet<Dominion.Card>();
             foreach (var card in this.currentDeck.Cards)
             {                
-                setCards.Add(card.dominionCard);
+                setCards.Add((Dominion.Card)card.dominionCard);
             }
 
             foreach (var card in this.commonCards.Cards)
             {
-                setCards.Add(card.dominionCard);
+                setCards.Add((Dominion.Card)card.dominionCard);
             }
 
             this.player1Strategy.ConvertToDominionStrategy().GetAllCardsInStrategy(setCards);
@@ -397,16 +397,16 @@ namespace Dominulator
 
             Dominion.StartingCardSplit player1Split = this.player1Strategy.StartingCardSplit.Value;
             Dominion.StartingCardSplit player2Split = this.player2Strategy.StartingCardSplit.Value;
-            Dominion.Card[] kingdomCards = this.currentDeck.Cards.Select(c => c.dominionCard).ToArray();
-            Dominion.Card[] events = this.eventCards.Cards.Select(c => c.dominionCard).ToArray();
-            DominionCard baneCard = this.BaneCard.CurrentCards.FirstOrDefault();            
+            Dominion.Card[] kingdomCards = this.currentDeck.Cards.Select(c => (Card)c.dominionCard).ToArray();
+            Dominion.Event[] events = this.eventCards.Cards.Select(c => (Event)c.dominionCard).ToArray();
+            DominionCard baneCard = this.BaneCard.CurrentCards.FirstOrDefault();
 
             var builder = new Dominion.GameConfigBuilder();
                 
             builder.SetKingdomPiles(kingdomCards);
             builder.SetEvents(events);
             if (baneCard != null)
-                builder.SetBaneCard(baneCard.dominionCard);
+                builder.SetBaneCard((Card)baneCard.dominionCard);
 
             builder.useColonyAndPlatinum = this.UseColonyPlatinum.Value;
             builder.useShelters = this.UseShelters.Value;

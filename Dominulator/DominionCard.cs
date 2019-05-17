@@ -24,22 +24,25 @@ namespace Dominulator
             this.IsReaction = dictionary.GetNamedBoolean("isReaction");
             this.IsDuration = dictionary.GetNamedBoolean("isDuration");
             this.isWebCard = true;
-            this.dominionCard = null;
+            this.cardShapedObject = null;
         }
 
-        private DominionCard(Dominion.Card card)
+        private DominionCard(Dominion.CardShapedObject cardShapedObject)
         {
-            this.Id = card.ProgrammaticName;
-            this.Name = card.name;
-            this.Coin = card.DefaultCoinCost;
-            this.Potion = card.potionCost;
-            this.Expansion = GetExpansionIndex(card.expansion);
-            this.IsAttack = card.isAttack;
-            this.IsAction = card.isAction;
-            this.IsReaction = card.isReaction;
-            this.IsDuration = card.isDuration;
+            this.Id = cardShapedObject.ProgrammaticName;
+            this.Name = cardShapedObject.name;
+            this.Expansion = GetExpansionIndex(cardShapedObject.expansion);
+            if (cardShapedObject is Dominion.Card card)
+            {
+                this.IsAttack = card.isAttack;
+                this.IsAction = card.isAction;
+                this.IsReaction = card.isReaction;
+                this.IsDuration = card.isDuration;
+                this.Coin = card.DefaultCoinCost;
+                this.Potion = card.potionCost;
+            }
             this.isWebCard = false;
-            this.dominionCard = card;
+            this.cardShapedObject = cardShapedObject;
         }
 
         static System.Collections.Generic.Dictionary<string, DominionCard> mpCardNameToCard = BuildNameMap();
@@ -47,8 +50,8 @@ namespace Dominulator
         static System.Collections.Generic.Dictionary<string, DominionCard> BuildNameMap()
         {
             var result = new System.Collections.Generic.Dictionary<string, DominionCard>();
-            
-            foreach(Dominion.Card card in Dominion.Cards.AllCardsList)
+
+            foreach (Dominion.CardShapedObject card in Dominion.Cards.AllCardsList)
             {
                 result[card.name] = new DominionCard(card);
             }
@@ -68,7 +71,8 @@ namespace Dominulator
             return mpCardNameToCard[name];
         }
 
-        public readonly Dominion.Card dominionCard;
+        public readonly Dominion.CardShapedObject cardShapedObject;
+        public Dominion.Card dominionCard { get { return (Dominion.Card) this.cardShapedObject; }  }
         public string Name { get; private set; }
         public string Id { get; private set; }
         public int Coin { get; private set; }
@@ -114,6 +118,8 @@ namespace Dominulator
                 case ExpansionIndex.Prosperity: return Dominion.Expansion.Prosperity;
                 case ExpansionIndex.Seaside: return Dominion.Expansion.Seaside;
                 case ExpansionIndex.Adventures: return Dominion.Expansion.Adventures;
+                case ExpansionIndex.Empires: return Dominion.Expansion.Empires;
+                case ExpansionIndex.Nocturne: return Dominion.Expansion.Nocturne;
             }
             throw new Exception("Expansion not found");
         }
