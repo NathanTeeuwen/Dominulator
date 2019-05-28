@@ -333,7 +333,7 @@ namespace Program.GeneticAlgorithm
         {
             private TScoreSpecies comparable;
 
-            private Dictionary<TSpecies, double> mapSpeciesToScore = new Dictionary<TSpecies, double>();
+            private System.Collections.Concurrent.ConcurrentDictionary<TSpecies, double> mapSpeciesToScore = new System.Collections.Concurrent.ConcurrentDictionary<TSpecies, double>();
 
             public SpeciesScoreCache(TScoreSpecies comparable)
             {
@@ -350,7 +350,7 @@ namespace Program.GeneticAlgorithm
                     return result;
                 }
                 else
-                    return result;                
+                    return result;
             }
         }
     }

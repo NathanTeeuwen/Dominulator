@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TestCompareStrategyVsAllKnownStrategies</RootNamespace>
     <AssemblyName>TestCompareStrategyVsAllKnownStrategies</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,34 +48,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BuiltInStrategies\Dominion.BuiltInStrategies.csproj">
-      <Project>{ecffdbdf-f966-4076-98f9-9366dab6d7cd}</Project>
-      <Name>Dominion.BuiltInStrategies</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\DataGathering\Dominion.DataGathering.csproj">
-      <Project>{fbeb2733-2b59-4e3f-b1c6-7266953a5961}</Project>
-      <Name>Dominion.DataGathering</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Dominion.StrategyOptimizer\Dominion.Strategy.Optimizer.csproj">
-      <Project>{7636a8df-b2a9-4598-a7ef-d4f4dcf5ac9a}</Project>
-      <Name>Dominion.Strategy.Optimizer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Dominion.Strategy\Dominion.Strategy.csproj">
-      <Project>{de60f275-b1b5-40f4-be3e-35805f42cce3}</Project>
-      <Name>Dominion.Strategy</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Dominion\Dominion.csproj">
-      <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
-      <Name>Dominion</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\HtmlRenderer\HtmlRenderer.Native.csproj">
-      <Project>{31ce0f10-4472-4cff-b683-44b1f13b8d39}</Project>
-      <Name>HtmlRenderer.Native</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\TestOutput\TestOutput.csproj">
-      <Project>{b75dcc9f-3a30-4934-b10b-11efb7049cfb}</Project>
-      <Name>TestOutput</Name>
-    </ProjectReference>
+    <ProjectReference Include="..\..\BuiltInStrategies\Dominion.BuiltInStrategies.csproj" />
+    <ProjectReference Include="..\..\DataGathering\Dominion.DataGathering.csproj" />
+    <ProjectReference Include="..\..\Dominion.StrategyOptimizer\Dominion.Strategy.Optimizer.csproj" />
+    <ProjectReference Include="..\..\Dominion.Strategy\Dominion.Strategy.csproj" />
+    <ProjectReference Include="..\..\Dominion\Dominion.csproj" />
+    <ProjectReference Include="..\..\HtmlRenderer\HtmlRenderer.csproj" />
+    <ProjectReference Include="..\..\TestOutput\TestOutput.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

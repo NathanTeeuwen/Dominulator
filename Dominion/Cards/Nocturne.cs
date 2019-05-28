@@ -124,7 +124,7 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            if (currentPlayer.RequestPlayerPlayActionFromHand(gameState, c => !currentPlayer.CardsInPlay.Contains(c), isOptional: true))
+            if (currentPlayer.RequestPlayerPlayActionFromHand(gameState, c => !currentPlayer.CardsInPlay.Contains(c) && Delegates.IsActionCardPredicate(c), isOptional: true))
             {
                 currentPlayer.AddActions(1);
             }

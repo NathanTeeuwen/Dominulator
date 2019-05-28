@@ -85,6 +85,10 @@ namespace Dominion.CardTypes
     {
         public static Ruins card = new Ruins();
 
+        static Ruins()
+        {
+        }
+
         private Ruins()
             : this("Ruins", Expansion.DarkAges)
         {
@@ -100,10 +104,15 @@ namespace Dominion.CardTypes
             : base(name, expansion, coinCost: 0, isAction: true, isRuins: true, plusCoins: plusCoins, plusCards: plusCards, plusBuy: plusBuy, plusActions: plusActions, isKingdomCard: false, startingLocation:StartingLocation.Special)
         {
         }
-
-        static Card[] ruins = { AbandonedMine.card, RuinedMarket.card, RuinedLibrary.card, RuinedVillage.card, Survivors.card };
-
-        internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
+            
+        static Card[] ruins = null;
+        static Card[] GetRuins()
+        { 
+            if (ruins == null)
+                ruins = new Card[] { AbandonedMine.card, RuinedMarket.card, RuinedLibrary.card, RuinedVillage.card, Survivors.card };
+            return ruins;
+        }
+internal override void AddAdditionalCardsNeeded(GameConfig.CardGainAvailabilityBuilder builder)
         {
             int ruinsCount = (builder.numberOfPlayers - 1) * 10;
 
@@ -111,7 +120,7 @@ namespace Dominion.CardTypes
             {
                 case CardAvailabilityType.AllPossibleCardsInGame:
                     {
-                        foreach (var card in ruins)
+                        foreach (var card in GetRuins())
                             builder.AddSupply(1, card);
                         break;
                     }
@@ -129,7 +138,12 @@ namespace Dominion.CardTypes
     public class AbandonedMine
         : Ruins
     {
-        new public static AbandonedMine card = new AbandonedMine();
+        static AbandonedMine()
+        {
+            card = new AbandonedMine();
+        }
+
+        new public static AbandonedMine card;
 
         private AbandonedMine()
             : base("Abandoned Mine", Expansion.DarkAges, plusCoins: 1)
@@ -140,7 +154,12 @@ namespace Dominion.CardTypes
     public class RuinedLibrary 
         : Ruins
     {
-        new public static RuinedLibrary card = new RuinedLibrary();
+        static RuinedLibrary()
+        {
+            card = new RuinedLibrary();
+        }
+
+        new public static RuinedLibrary card;
 
         private RuinedLibrary()
             : base("Ruined Library", Expansion.DarkAges,  plusCards: 1)
@@ -151,7 +170,12 @@ namespace Dominion.CardTypes
     public class RuinedMarket 
         : Ruins
     {
-        new public static RuinedMarket card = new RuinedMarket();
+        static RuinedMarket()
+        {
+            card = new RuinedMarket();
+        }
+
+        new public static RuinedMarket card;
 
         private RuinedMarket()
             : base("Ruined Market", Expansion.DarkAges, plusBuy: 1)
@@ -162,7 +186,12 @@ namespace Dominion.CardTypes
     public class RuinedVillage 
         : Ruins
     {
-        new public static RuinedVillage card = new RuinedVillage();
+        static RuinedVillage()
+        {
+            card = new RuinedVillage();
+        }
+
+        new public static RuinedVillage card;
 
         private RuinedVillage()
             : base("Ruined Village", Expansion.DarkAges, plusActions: 1)
@@ -173,7 +202,12 @@ namespace Dominion.CardTypes
     public class Survivors 
         : Ruins
     {
-        new public static Survivors card = new Survivors();
+        static Survivors()
+        {
+            card = new Survivors();
+        }
+
+        new public static Survivors card;
 
         private Survivors()
             : base("Survivors", Expansion.DarkAges)

@@ -8,9 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>GatherAllImagesIntoRepository</RootNamespace>
     <AssemblyName>GatherAllImagesIntoRepository</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,10 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dominion\Dominion.csproj">
-      <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
-      <Name>Dominion</Name>
-    </ProjectReference>
+    <ProjectReference Include="..\Dominion\Dominion.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

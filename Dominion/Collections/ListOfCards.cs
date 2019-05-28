@@ -86,11 +86,17 @@ namespace Dominion
 
         public Card TopCard()
         {
-            if (this.cards.Count == 0)
+            return PeekTopCard(0);
+        }
+
+        // depth of 0 is the top of deck
+        public Card PeekTopCard(int depth)
+        {
+            if (this.cards.Count <= depth)
             {
                 return null;
             }
-            return this.cards[this.cards.Count - 1];
+            return this.cards[this.cards.Count - depth - 1];
         }
 
         public Card BottomCard()

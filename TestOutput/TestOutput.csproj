@@ -1,75 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\Common.Targets" />
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B75DCC9F-3A30-4934-B10B-11EFB7049CFB}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestOutput</RootNamespace>
-    <AssemblyName>TestOutput</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <!--<PackageReference Include="" Version=""/>-->
+
+    <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResultSetRanker.cs" />
-    <Compile Include="TestWrapper.cs" />
+    <ProjectReference Include="..\BuiltInStrategies\Dominion.BuiltInStrategies.csproj" />
+    <ProjectReference Include="..\DataGathering\Dominion.DataGathering.csproj" />
+    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj" />
+    <ProjectReference Include="..\Dominion\Dominion.csproj" />
+    <ProjectReference Include="..\Resources\Resources.csproj" />
+    <ProjectReference Include="..\HtmlRenderer\HtmlRenderer.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BuiltInStrategies\Dominion.BuiltInStrategies.csproj">
-      <Project>{ecffdbdf-f966-4076-98f9-9366dab6d7cd}</Project>
-      <Name>Dominion.BuiltInStrategies</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataGathering\Dominion.DataGathering.csproj">
-      <Project>{fbeb2733-2b59-4e3f-b1c6-7266953a5961}</Project>
-      <Name>Dominion.DataGathering</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj">
-      <Project>{de60f275-b1b5-40f4-be3e-35805f42cce3}</Project>
-      <Name>Dominion.Strategy</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Dominion\Dominion.csproj">
-      <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
-      <Name>Dominion</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HtmlRenderer\HtmlRenderer.Native.csproj">
-      <Project>{31ce0f10-4472-4cff-b683-44b1f13b8d39}</Project>
-      <Name>HtmlRenderer.Native</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

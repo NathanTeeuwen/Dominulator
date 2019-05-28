@@ -432,7 +432,7 @@ namespace Dominion.CardTypes
             {
                 currentPlayer.RevealAndReturnCardToHand(this, gameState);                
                 cancelsAttack = true;
-                return true;
+                return false;
             }
             else
             {

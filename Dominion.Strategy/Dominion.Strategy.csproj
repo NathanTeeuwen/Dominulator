@@ -1,123 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\Common.Portable.Targets" />
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DE60F275-B1B5-40F4-BE3E-35805F42CCE3}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Dominion.Strategy</RootNamespace>
-    <AssemblyName>Dominion.Strategy</AssemblyName>
-    <DefaultLanguage>en-US</DefaultLanguage>
-    <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="CardPicker\CardAcceptance.cs" />
-    <Compile Include="CardPicker\CardPickByBuilderOrder.cs" />
-    <Compile Include="CardPicker\CardPickByPriority.cs" />
-    <Compile Include="CardPicker\CardPickConcatenator.cs" />
-    <Compile Include="CardPicker\CardPickForCondition.cs" />
-    <Compile Include="CardPicker\ICardPicker.cs" />
-    <Compile Include="CardsWithoutDefaultBehaviors.cs" />
-    <Compile Include="DefaultPlayerAction.cs" />
-    <Compile Include="DefaultPlayRules\CardOverrides.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Miser.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Stonemason.cs" />
-    <Compile Include="DefaultPlayRules\Cards\PearlDiver.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Messenger.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Scavenger.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Herald.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Alchemist.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Ambassador.cs" />
-    <Compile Include="DefaultPlayRules\Cards\BandOfMisfits.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Cartographer.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Catacombs.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Chancellor.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Count.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Doctor.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Explorer.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Golem.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Governor.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Herbalist.cs" />
-    <Compile Include="DefaultPlayRules\Cards\HorseTraders.cs" />
-    <Compile Include="DefaultPlayRules\Cards\IllGottenGains.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Island.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Library.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Lookout.cs" />
-    <Compile Include="DefaultPlayRules\Cards\MarketSquare.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Masquerade.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Masterpiece.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Mint.cs" />
-    <Compile Include="DefaultPlayRules\Cards\MysticAndWishingWell.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Nobles.cs" />
-    <Compile Include="DefaultPlayRules\Cards\NomadCamp.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Rebuild.cs" />
-    <Compile Include="DefaultPlayRules\Cards\RoyalSeal.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Scheme.cs" />
-    <Compile Include="DefaultPlayRules\Cards\ScryingPool.cs" />
-    <Compile Include="DefaultPlayRules\Cards\SpiceMerchant.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Amulet.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Steward.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Trader.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Urchin.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Treasury.cs" />
-    <Compile Include="DefaultPlayRules\Cards\Vault.cs" />
-    <Compile Include="DefaultPlayRules\Cards\WalledViillage.cs" />
-    <Compile Include="DefaultPlayRules\Cards\YoungWitch.cs" />
-    <Compile Include="DefaultPlayRules\Cards\WatchTower.cs" />
-    <Compile Include="DefaultPlayRules\CompareCardByFirstToGain.cs" />
-    <Compile Include="DefaultPlayRules\CompareCardFirstToDiscard.cs" />
-    <Compile Include="DefaultPlayRules\CompareCardFirstToTrash.cs" />
-    <Compile Include="DefaultPlayRules\CompareCardForBanningForDrawIntoHand.cs" />
-    <Compile Include="DefaultStrategies.cs" />
-    <Compile Include="Description\CardAcceptanceDescription.cs" />
-    <Compile Include="Description\Comparison.cs" />
-    <Compile Include="Description\CountSource.cs" />
-    <Compile Include="Description\MatchDescription.cs" />
-    <Compile Include="Description\PickByPriorityDescription.cs" />
-    <Compile Include="Description\StrategyDescription.cs" />
-    <Compile Include="PlayerAction.cs" />
-    <Compile Include="PlayerActionFromCardResponses.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Strategy.cs" />
-    <Compile Include="StrategyTemplates\BigMoneyWithCard.cs" />
+    <!--<PackageReference Include="" Version=""/>-->
+
+    <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dominion\Dominion.csproj">
-      <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
-      <Name>Dominion</Name>
-    </ProjectReference>
+    <ProjectReference Include="..\Dominion\Dominion.csproj" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

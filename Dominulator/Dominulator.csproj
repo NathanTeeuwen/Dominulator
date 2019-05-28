@@ -12,7 +12,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.16299.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -652,22 +652,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataGathering\Dominion.DataGathering.csproj">
-      <Project>{fbeb2733-2b59-4e3f-b1c6-7266953a5961}</Project>
-      <Name>Dominion.DataGathering</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj">
-      <Project>{de60f275-b1b5-40f4-be3e-35805f42cce3}</Project>
-      <Name>Dominion.Strategy</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Dominion\Dominion.csproj">
-      <Project>{bf6e2a5e-e0c3-4461-8ebe-40f942b4bfc8}</Project>
-      <Name>Dominion</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HtmlRenderer\HtmlRenderer.Windows.csproj">
-      <Project>{37debcec-cc13-4f96-adae-bc75850d6452}</Project>
-      <Name>HtmlRenderer.Windows</Name>
-    </ProjectReference>
+    <ProjectReference Include="..\DataGathering\Dominion.DataGathering.csproj" />
+    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj" />
+    <ProjectReference Include="..\Dominion\Dominion.csproj" />
+    <ProjectReference Include="..\HtmlRenderer\HtmlRenderer.csproj" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -1067,7 +1067,8 @@ namespace Dominion.CardTypes
             currentPlayer.RevealHand();
             while (currentPlayer.hand.Contains(Cards.Copper))
             {
-                currentPlayer.DiscardCard(Cards.Copper, gameState, source:DeckPlacement.Hand);
+                Card current_copper = currentPlayer.RemoveCardFromHand(Cards.Copper);
+                currentPlayer.DiscardCard(current_copper, gameState, source:DeckPlacement.Hand);
             }
         }
     }

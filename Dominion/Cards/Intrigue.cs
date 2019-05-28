@@ -435,13 +435,17 @@ namespace Dominion.CardTypes
 
             if (currentPlayer.actions.ShouldRevealCardFromHand(gameState, this))
             {
+                Dominion.Card topCard = currentPlayer.deck.TopCard();
+                Dominion.Card secondCard = currentPlayer.deck.PeekTopCard(1);
+
                 currentPlayer.DrawAdditionalCardsIntoHand(2, gameState);
                 for (int i = 0; i < 2; ++i)
                 {
                     currentPlayer.RequestPlayerTopDeckCardFromHand(gameState, acceptableCard => true, false);
                 }
 
-                return true;
+                return topCard != currentPlayer.deck.TopCard() ||
+                       secondCard != currentPlayer.deck.PeekTopCard(1);
             }
             else
             {

@@ -37,6 +37,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Messenger] = new Messenger(playerAction);
             result[Dominion.Cards.Mint] = new Mint(playerAction);
             result[Dominion.Cards.Miser] = new Miser(playerAction);
+            result[Dominion.Cards.Moat] = new Moat(playerAction);
             result[Dominion.Cards.Mystic] = new MysticAndWishingWell(playerAction);
             result[Dominion.Cards.NomadCamp] = new NomadCamp(playerAction);
             result[Dominion.Cards.Nobles] = new Nobles(playerAction);
@@ -49,6 +50,7 @@ namespace Dominion.Strategy.DefaultPlayRules
             result[Dominion.Cards.Steward] = new Steward(playerAction);
             result[Dominion.Cards.StoneMason] = new StoneMason(playerAction);            
             result[Dominion.Cards.RoyalSeal] = new RoyalSeal(playerAction);
+            result[Dominion.Cards.SecretChamber] = new SecretChamber(playerAction);
             result[Dominion.Cards.Treasury] = new Treasury(playerAction);
             result[Dominion.Cards.Trader] = new Trader(playerAction);
             result[Dominion.Cards.Urchin] = new Urchin(playerAction);

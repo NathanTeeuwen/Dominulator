@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--<PackageReference Include="" Version=""/>-->
+
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataGathering\Dominion.DataGathering.csproj"/>
+    <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj"/>
+    <ProjectReference Include="..\Dominion\Dominion.csproj"/>
+    <ProjectReference Include="..\Resources\Resources.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\jquery.simplePagination.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\simplePagination.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DefaultStyles.css" />
+  </ItemGroup>
+</Project>

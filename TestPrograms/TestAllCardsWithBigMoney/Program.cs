@@ -15,7 +15,7 @@ namespace TestAllCardsWithBigMoney
         {            
             using (var testOutput = new TestOutput())
             {
-                var bigMoneyPlayer = Strategies.Miser.Player();
+                var bigMoneyPlayer = Strategies.BigMoneyWithCard.Player(Cards.Witch);
                 foreach (PlayerAction playerAction in AllBigMoneyWithCard())
                 {
                     testOutput.ComparePlayers(bigMoneyPlayer, playerAction, numberOfGames: 1000, shouldParallel: true, createHtmlReport: false, createRankingReport: true, logGameCount: 0);

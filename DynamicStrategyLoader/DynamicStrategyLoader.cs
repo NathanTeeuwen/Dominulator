@@ -181,7 +181,7 @@ namespace Program
             CompilerParams.GenerateExecutable = false;
             CompilerParams.CompilerOptions = "/optimize";
 
-            string[] references = { "System.dll", "System.Runtime.dll", "System.Core.dll", "System.Data.Dll", "Dominion.dll", "Dominion.Strategy.dll" };
+            string[] references = { "System.dll", "System.Runtime.dll", "System.Core.dll", "System.Data.Dll", "Dominion.dll", "Dominion.Strategy.dll", "netstandard.dll" };
             CompilerParams.ReferencedAssemblies.AddRange(references);
 
             provider = new CSharpCodeProvider();            
