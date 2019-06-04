@@ -17,8 +17,8 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.BigMoney.Player();
-                var player2 = Strategies.Miser.Player();                
+                var player1 = Strategies.GardensCounterPlay.Player();
+                var player2 = Strategies.GardensWorkshop.Player();                
                 
                 var builder = new GameConfigBuilder();                
                 builder.CardSplit = StartingCardSplit.Split43;

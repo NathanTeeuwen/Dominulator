@@ -317,13 +317,13 @@ namespace HtmlRenderer
 
         private void UsingJQuery()
         {                        
-            this.textWriter.WriteLine(@"<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>");            
+            this.textWriter.WriteLine(@"<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>");            
         }
 
         private void UsingJQueryUI()
         {                        
-            this.textWriter.WriteLine(@"<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js'></script>");            
-            this.textWriter.WriteLine(@"<link href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/cupertino/jquery-ui.css' type='text/css' rel='Stylesheet' />");   
+            this.textWriter.WriteLine(@"<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js'></script>");            
+            this.textWriter.WriteLine(@"<link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/cupertino/jquery-ui.css' type='text/css' rel='Stylesheet' />");   
         }
 
         public void WriteLine()
