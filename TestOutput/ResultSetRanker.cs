@@ -57,7 +57,7 @@ namespace Dominion
 
         private static string FormatName(string name, int maxLength)
         {
-            const int capLength = 25;
+            const int capLength = 50;
             var result = name.PadRight(maxLength);
             if (result.Length > capLength)
                 result = result.Substring(0, capLength);

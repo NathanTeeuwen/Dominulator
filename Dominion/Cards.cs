@@ -603,7 +603,6 @@ namespace Dominion
             Cards.KingsCastle,
             Cards.Catapult,
             Cards.CatapultRocks,
-            Cards.ChariotRace,
             Cards.Charm,
             Cards.Crown,
             Cards.Encampment,

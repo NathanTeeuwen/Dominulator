@@ -10,15 +10,15 @@ namespace Strategies
     public class GardensCounterPlay
         : Strategy
     {
-        public static PlayerAction Player()
+        public static PlayerAction Player(Card card)
         {
             return new PlayerAction(
-                        "GardensCounterPlay",
-                        purchaseOrder: PurchaseOrder(),
-                        gainOrder: PurchaseOrder());
+                        string.Format("GardensCounterPlay({0})", card.name),
+                        purchaseOrder: PurchaseOrder(card),
+                        gainOrder: PurchaseOrder(card));
         }
 
-        private static CardPickByPriority PurchaseOrder()
+        private static CardPickByPriority PurchaseOrder(Card card)
         {
             return new CardPickByPriority(
                         CardAcceptance.For(Cards.Province, gameState => gameState.GetPile(Cards.Gardens).Count < 8),
@@ -28,7 +28,7 @@ namespace Strategies
                         CardAcceptance.For(Cards.Duchy, gameState => gameState.GetPile(Cards.Province).Count <= 4),
                         CardAcceptance.For(Cards.Duchy, gameState => gameState.GetPile(Cards.Estate).Count <= 4),
                         CardAcceptance.For(Cards.Gold),
-                        CardAcceptance.For(Cards.Smithy, 2),
+                        CardAcceptance.For(card, 2),
                         CardAcceptance.For(Cards.Estate, gameState => gameState.GetPile(Cards.Estate).Count <= 4),
                         CardAcceptance.For(Cards.Silver));
         }

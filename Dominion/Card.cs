@@ -271,6 +271,15 @@ namespace Dominion
             return (effectiveCost >= 0) ? effectiveCost : 0;
         }
 
+        public CostComparison GetRelativeCost(GameState gameState, Card otherCard)
+        {
+            return new CostComparison(
+                this.CurrentCoinCost(gameState.players.CurrentPlayer) - otherCard.CurrentCoinCost(gameState.players.CurrentPlayer),
+                this.potionCost - otherCard.potionCost,
+                this.debtCost - otherCard.debtCost
+                );
+        }
+
         virtual public Card CardToMimick(PlayerState currentPlayer, GameState gameState)
         {
             return this;
@@ -552,6 +561,32 @@ namespace Dominion
         public virtual void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             throw new NotImplementedException();
+        }
+    }
+
+    public struct CostComparison
+    {
+        int coinDifference;
+        int potionDifference;
+        int debtDifference;
+
+        public CostComparison(int coinDifference, int potionDifference, int debtDifference)
+        {
+            this.coinDifference = coinDifference;
+            this.potionDifference = potionDifference;
+            this.debtDifference = debtDifference;
+        }
+
+        public bool ExactlyEquals()
+        {
+            return this.coinDifference == 0 && this.potionDifference == 0 && this.debtDifference == 0;
+        }
+
+        public bool CostsMoreThan()
+        {
+            var costsMoreOnSome = this.coinDifference > 0 || this.potionDifference > 0 || this.debtDifference > 0;
+            var costsAtLeastAsMuchOnAll = this.coinDifference >= 0 && this.potionDifference >= 0 && this.debtDifference >= 0;
+            return costsMoreOnSome && costsAtLeastAsMuchOnAll;
         }
     }
 

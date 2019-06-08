@@ -649,7 +649,22 @@ namespace Dominion.CardTypes
 
         public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
-            throw new NotImplementedException();
+            currentPlayer.RevealCardsFromDeck(1, gameState);
+            Card revealedCard = currentPlayer.cardsBeingRevealed.SomeCard();
+            currentPlayer.MoveAllRevealedCardsToHand();
+
+            gameState.players.PlayerLeft.RevealCardsFromDeck(1, gameState);
+            Card otherRevealedCard = currentPlayer.cardsBeingRevealed.SomeCard();
+            currentPlayer.MoveRevealedCardToTopOfDeck();
+
+            if (revealedCard == null || otherRevealedCard == null)
+                return;
+
+            if (revealedCard.GetRelativeCost(gameState, otherRevealedCard).CostsMoreThan())
+            {
+                currentPlayer.turnCounters.AddCoins(currentPlayer, 1);
+                currentPlayer.AddVictoryTokens(1);
+            }
         }
     }
 

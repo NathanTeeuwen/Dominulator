@@ -17,7 +17,7 @@ namespace Program
         {            
             using (var testOutput = new TestOutput())
             {
-                var player1 = Strategies.GardensCounterPlay.Player();
+                var player1 = Strategies.GardensCounterPlay.Player(Cards.Monument);
                 var player2 = Strategies.GardensWorkshop.Player();                
                 
                 var builder = new GameConfigBuilder();                

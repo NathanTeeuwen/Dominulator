@@ -15,7 +15,7 @@ namespace TestAllCardsWithBigMoney
         {            
             using (var testOutput = new TestOutput())
             {
-                var bigMoneyPlayer = Strategies.BigMoneyWithCard.Player(Cards.Witch);
+                var bigMoneyPlayer = Strategies.GardensWorkshop.Player();
                 foreach (PlayerAction playerAction in AllBigMoneyWithCard())
                 {
                     testOutput.ComparePlayers(bigMoneyPlayer, playerAction, numberOfGames: 1000, shouldParallel: true, createHtmlReport: false, createRankingReport: true, logGameCount: 0);
@@ -47,7 +47,7 @@ namespace TestAllCardsWithBigMoney
                     if (Dominion.Strategy.MissingDefaults.CardsWithoutDefaultBehaviors.Contains(card))
                         continue;
 
-                    var playerAction = Strategies.BigMoneyWithCard.Player(card);
+                    var playerAction = Strategies.GardensCounterPlay.Player(card);
                     result.Add(playerAction);
                 }
             }
