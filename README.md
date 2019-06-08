@@ -1,6 +1,8 @@
 Dominulator
 ===========
 
+Chec out the blog at [https://nathanteeuwen.github.io/Dominulator/](https://nathanteeuwen.github.io/Dominulator/)
+
 A dominion simulator for playing the card game of dominion.  This is not your regular randomizer for picking a set of dominion cards for play. It will also help you learn about the combination of cards before the game starts.  After using the refresh button to find the perfect set of cards, run simple simulations of simple card combinations to help gain intuition.  To run a simulation, 1) create customized purchase orders for the two players. 2)Simulate.   After completion, a summary of the winning player is presented, but hitting details will show how the simulator choose to play the cards.
 
 ![Windows 8 Front End Example Picture](https://github.com/NathanTeeuwen/Dominulator/blob/master/Documentation/Win8Client.png "Windows 8 Dominulator front end")
