@@ -7,13 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService", "WebService\We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.DynamicStrategyLoader", "DynamicStrategyLoader\Dominion.DynamicStrategyLoader.csproj", "{56774744-F31A-4F22-A6FF-89C7488D243C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resources\Resources.csproj", "{197A9851-301C-4DF5-9799-C34BFB7B6B34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resources", "Resources\Resources.csproj", "{197A9851-301C-4DF5-9799-C34BFB7B6B34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.BuiltInStrategies", "BuiltInStrategies\Dominion.BuiltInStrategies.csproj", "{ECFFDBDF-F966-4076-98F9-9366DAB6D7CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominion.BuiltInStrategies", "BuiltInStrategies\Dominion.BuiltInStrategies.csproj", "{ECFFDBDF-F966-4076-98F9-9366DAB6D7CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.Strategy.Optimizer", "Dominion.StrategyOptimizer\Dominion.Strategy.Optimizer.csproj", "{7636A8DF-B2A9-4598-A7EF-D4F4DCF5AC9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominion.Strategy.Optimizer", "Dominion.StrategyOptimizer\Dominion.Strategy.Optimizer.csproj", "{7636A8DF-B2A9-4598-A7EF-D4F4DCF5AC9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestOutput", "TestOutput\TestOutput.csproj", "{B75DCC9F-3A30-4934-B10B-11EFB7049CFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestOutput", "TestOutput\TestOutput.csproj", "{B75DCC9F-3A30-4934-B10B-11EFB7049CFB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestPrograms", "TestPrograms", "{34A40E3A-AE7A-4CE2-A21D-E3E607296019}"
 EndProject
@@ -30,13 +30,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion", "Dominion\Dominion.csproj", "{BF6E2A5E-E0C3-4461-8EBE-40F942B4BFC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominion", "Dominion\Dominion.csproj", "{BF6E2A5E-E0C3-4461-8EBE-40F942B4BFC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.Strategy", "Dominion.Strategy\Dominion.Strategy.csproj", "{DE60F275-B1B5-40F4-BE3E-35805F42CCE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominion.Strategy", "Dominion.Strategy\Dominion.Strategy.csproj", "{DE60F275-B1B5-40F4-BE3E-35805F42CCE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.DataGathering", "DataGathering\Dominion.DataGathering.csproj", "{FBEB2733-2B59-4E3F-B1C6-7266953A5961}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominion.DataGathering", "DataGathering\Dominion.DataGathering.csproj", "{FBEB2733-2B59-4E3F-B1C6-7266953A5961}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlRenderer", "HtmlRenderer\HtmlRenderer.csproj", "{31CE0F10-4472-4CFF-B683-44B1F13B8D39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HtmlRenderer", "HtmlRenderer\HtmlRenderer.csproj", "{31CE0F10-4472-4CFF-B683-44B1F13B8D39}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominulator", "Dominulator\Dominulator.csproj", "{743F549A-E38C-4703-B15B-DB591610720F}"
 EndProject

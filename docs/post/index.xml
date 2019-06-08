@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Dominulator - A Dominion Simulator</title>
+    <link>https://NathanTeeuwen.github.io/Dominulator/post/</link>
+    <description>Recent content in Posts on Dominulator - A Dominion Simulator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://NathanTeeuwen.github.io/Dominulator/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dominulator - The Dominion Simulator</title>
+      <link>https://NathanTeeuwen.github.io/Dominulator/2019/06/dominulator-the-dominion-simulator/</link>
+      <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://NathanTeeuwen.github.io/Dominulator/2019/06/dominulator-the-dominion-simulator/</guid>
+      <description>&lt;p&gt;This is the Blog for the Dominion Simulator&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dominulator - Cards that Defeat Gardens</title>
+      <link>https://NathanTeeuwen.github.io/Dominulator/2019/06/dominulator-cards-that-defeat-gardens/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://NathanTeeuwen.github.io/Dominulator/2019/06/dominulator-cards-that-defeat-gardens/</guid>
+      <description>&lt;p&gt;Find out which cards beat the Dominion/Workshop strategy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Counter Gardens Strategy</title>
+      <link>https://NathanTeeuwen.github.io/Dominulator/2019/06/counter-gardens-strategy/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://NathanTeeuwen.github.io/Dominulator/2019/06/counter-gardens-strategy/</guid>
+      <description>&lt;p&gt;A simply strategy to beat Gardens/Workshop using just Smithy.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
