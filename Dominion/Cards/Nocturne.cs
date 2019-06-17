@@ -1137,7 +1137,7 @@ namespace Dominion.CardTypes
         public static TheFlagmesGift card = new TheFlagmesGift();
 
         private TheFlagmesGift()
-            : base("The Flagme's Gift", Expansion.Nocturne)
+            : base("The Flame's Gift", Expansion.Nocturne)
         {
         }
 
