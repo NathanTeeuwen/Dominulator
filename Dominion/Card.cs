@@ -564,6 +564,43 @@ namespace Dominion
         }
     }
 
+    public abstract class Artifact
+        : CardShapedObject
+    {
+        protected Artifact(
+           string name,
+           Expansion expansion)
+           : base(name: name, expansion: expansion)
+        {
+
+        }
+
+        public virtual void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public abstract class Project
+        : CardShapedObject
+    {
+        int cost;
+
+        protected Project(
+           string name,
+           Expansion expansion,
+           int cost)
+           : base(name: name, expansion: expansion)
+        {
+            this.cost = cost;
+        }
+
+        public virtual void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     public struct CostComparison
     {
         int coinDifference;

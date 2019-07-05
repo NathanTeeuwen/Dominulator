@@ -20,6 +20,7 @@ namespace Dominion
         Nocturne,
         Promo,
         Prosperity,
+        Renaissance,
         Seaside,
         Unknown,
         Count = Unknown
@@ -49,6 +50,7 @@ namespace Dominion
                 case Dominion.Expansion.Adventures: return "Adventures";
                 case Dominion.Expansion.Empires: return "Empires";
                 case Dominion.Expansion.Nocturne: return "Nocturne";
+                case Dominion.Expansion.Renaissance: return "Renaissance";
                 default: throw new NotImplementedException();
             }
         }

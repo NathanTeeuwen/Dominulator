@@ -6,7 +6,7 @@ coverImage: img/Dominion_Cover.jpg
 coverSize: partial
 metaAlignment: center
 coverMeta: out
-date: 2019-06-07
+date: 2019-07-06
 categories:
 - Dominulator
 - home
