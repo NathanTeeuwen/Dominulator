@@ -67,6 +67,12 @@ namespace Dominion
             return this.playerAction.GetCardFromSupplyToBuy(gameState, acceptableCard);            
         }
 
+        public virtual Event GetEventFromSupplyToBuy(GameState gameState, EventPredicate acceptableCard)
+        {
+            return this.playerAction.GetEventFromSupplyToBuy(gameState, acceptableCard);
+        }
+
+
         public virtual Card GuessCardTopOfDeck(GameState gameState)
         {
             return this.playerAction.GuessCardTopOfDeck(gameState);            

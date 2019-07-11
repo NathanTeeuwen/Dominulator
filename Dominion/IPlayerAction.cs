@@ -17,6 +17,7 @@ namespace Dominion
         Card GetCardFromSupplyToInherit(GameState gameState, CardPredicate acceptableCard);
         Card GetCardFromSupplyToPlay(GameState gameState, CardPredicate acceptableCard);
         Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate acceptableCard);
+        Event GetEventFromSupplyToBuy(GameState gameState, EventPredicate acceptableEvent);
         Card GetCardFromSupplyToGain(GameState gameState, CardPredicate acceptableCard, bool isOptional);
         Card GuessCardTopOfDeck(GameState gameState);
         Card NameACard(GameState gameState);

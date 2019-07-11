@@ -18,6 +18,7 @@ namespace Dominion
     public delegate bool IsValidChoice(PlayerActionChoice availableChoice);
 
     public delegate bool CardPredicate(Card card);
+    public delegate bool EventPredicate(Event card);
     public delegate bool GameStatePredicate(GameState gameState);
     public delegate int GameStateIntValue(GameState gameState);
 

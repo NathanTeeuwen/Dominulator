@@ -11,7 +11,7 @@ namespace Dominion.Strategy
 {
     public class MissingDefaults
     {
-        public static Card[] CardsWithoutDefaultBehaviors = new Card[]
+        public static CardShapedObject[] CardsWithoutDefaultBehaviors = new CardShapedObject[]
         {
             // implemented cards that require default behaviors            
             Cards.Embargo,            
@@ -86,7 +86,7 @@ namespace Dominion.Strategy
             Cards.TravellingFair
         };
 
-        public static IEnumerable<Card> FullyImplementedKingdomCards()
+        public static IEnumerable<CardShapedObject> FullyImplementedKingdomCards()
         {
             foreach(Card card in Dominion.Cards.AllKingdomCardsList)
             {
@@ -99,15 +99,15 @@ namespace Dominion.Strategy
             }
         }
 
-        public static IEnumerable<Card> UnImplementedKingdomCards()
+        public static IEnumerable<CardShapedObject> UnImplementedKingdomCards()
         {
 
-            foreach (Card card in Cards.UnimplementedCards)
+            foreach (CardShapedObject card in Cards.UnimplementedCards)
             {
                 yield return card;
             }
 
-            foreach (Card card in CardsWithoutDefaultBehaviors)
+            foreach (CardShapedObject card in CardsWithoutDefaultBehaviors)
             {
                 yield return card;
             }

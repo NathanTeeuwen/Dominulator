@@ -217,10 +217,6 @@ namespace Dominulator
                         result.Add(pluralName);
                 }
 
-                result.Add(card.DefaultCoinCost.ToString());
-
-                if (card.isEvent)
-                    result.Add("event");
                 if (card.isDeprecated)
                     result.Add("deprecated");
                 if (card.isLooter)
@@ -239,8 +235,18 @@ namespace Dominulator
                     result.Add("buys");
                 }
             }
+            else if (cardShapedObject is Dominion.Event eventCard)
+            {
+                result.Add(eventCard.coinCost.ToString());
+                result.Add("event");
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
 
-            if (this.appDataContext.CurrentDeck.CurrentCards.Where(c => c.dominionCard == cardShapedObject).Any())
+
+            if (this.appDataContext.CurrentDeck.CurrentCards.Where(c => c.cardShapedObject == cardShapedObject).Any())
             {
                 result.Add("current");
                 result.Add("deck");

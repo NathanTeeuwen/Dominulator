@@ -114,9 +114,6 @@ namespace Dominion
         public readonly bool attackDependsOnPlayerChoice;
         public readonly bool requiresSpoils;
 
-        // to deprecate
-        public readonly bool isEvent;
-
         // attached methods
         protected VictoryPointCounter victoryPointCounter;              // readonly
         protected GameStateMethod doSpecializedCleanupAtStartOfCleanup; // readonly
@@ -171,8 +168,6 @@ namespace Dominion
             bool isZombie = false,
             bool isSpirit = false,
             bool isCastle = false,
-            bool isEvent = false,
-            bool isLandmark = false,
             bool canOverpay = false,
             bool canGivePlusAction = false,
             bool mightMultiplyActions = false,
@@ -220,7 +215,6 @@ namespace Dominion
             this.isTraveller = isTraveller;
             this.isReserve = isReserve;
             this.isGathering = isGathering;
-            this.isEvent = isEvent;
             this.isKingdomCard = isKingdomCard;
             this.requiresSpoils = requiresSpoils;
             this.canOverpay = canOverpay;
@@ -527,20 +521,23 @@ namespace Dominion
     }
 
     public class Event
-      : Card
+      : CardShapedObject
     {
+        public readonly int coinCost;
+        public readonly int debtCost;
         protected Event(
             string name,
             Expansion expansion,
             int coinCost,
             int debtCost = 0,
             string pluralName = null)
-            : base(name: name, expansion: expansion, coinCost: coinCost, debtCost: debtCost, isEvent: true, pluralName: pluralName, isKingdomCard:false)
+            : base(name: name, expansion: expansion, pluralName: pluralName)
         {
-
+            this.coinCost = coinCost;
+            this.debtCost = debtCost;
         }
 
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        public virtual void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
         {
             throw new NotImplementedException();
         }
@@ -584,7 +581,7 @@ namespace Dominion
     public abstract class Project
         : CardShapedObject
     {
-        int cost;
+        public readonly int coinCost;
 
         protected Project(
            string name,
@@ -592,7 +589,7 @@ namespace Dominion
            int cost)
            : base(name: name, expansion: expansion)
         {
-            this.cost = cost;
+            this.coinCost = cost;
         }
 
         public virtual void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)

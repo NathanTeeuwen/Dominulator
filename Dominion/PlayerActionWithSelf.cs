@@ -117,6 +117,15 @@ namespace Dominion
             return result;
         }
 
+        public Event GetEventFromSupplyToBuy(GameState gameState, EventPredicate acceptableEvent)
+        {
+            var saved = gameState.self;
+            gameState.self = this.self;
+            var result = this.playerAction.GetEventFromSupplyToBuy(gameState, acceptableEvent);
+            gameState.self = saved;
+            return result;
+        }
+
         public Card GuessCardTopOfDeck(GameState gameState)
         {
             var saved = gameState.self;

@@ -50,7 +50,8 @@
         Seaside = 10,
         Empires = 11,
         Nocturne = 12,
-        _Unknown = 13,
-        _Count = 13
+        Renaissance = 13,
+        _Unknown = 14,
+        _Count = 14
     }
 }

@@ -125,7 +125,7 @@ namespace HtmlRenderer
 
             htmlWriter.InsertExpander("Individual Card Graphs", delegate()
             {
-                foreach (Card card in gameConfig.cardGameSubset.OrderBy(c => c.DefaultCoinCost))
+                foreach (Card card in gameConfig.cardGameSubset.Where(c => c is Card).Select(c => (Card)c).OrderBy(c => c.DefaultCoinCost))
                 {
                     if (statGatherer.cardsTotalCount[card].forwardTotal.HasNonZeroData ||
                         statGatherer.carsGainedOnTurn[card].forwardTotal.HasNonZeroData)
@@ -151,7 +151,7 @@ namespace HtmlRenderer
             int playerIndex,
             int throughTurn)
         {
-            Card[] cards = gameSubset.OrderBy(card => card.DefaultCoinCost).ToArray();
+            Card[] cards = gameSubset.Where(c => c is Card).Select(c => (Card)c).OrderBy(card => card.DefaultCoinCost).ToArray();
             string[] seriesLabel = new string[cards.Length];
             int[] xAxis = Enumerable.Range(1, throughTurn).ToArray();
             float[][] seriesData = new float[cards.Length][];
@@ -170,7 +170,7 @@ namespace HtmlRenderer
 
         private static void InsertCardData(HtmlRenderer htmlWriter, MapOfCardsForGameSubset<PlayerCounterSeparatedByGame> map, CardGameSubset gameSubset, PlayerAction player1, PlayerAction player2)
         {
-            var cards = gameSubset.OrderBy(c => c.DefaultCoinCost);
+            var cards = gameSubset.Where(c => c is Card).Select(c => (Card)c).OrderBy(c => c.DefaultCoinCost);
             var player1Data = new List<float>();
             var player2Data = new List<float>();
 

@@ -144,6 +144,7 @@ namespace Dominulator
             this.expansions.Add(new Expansion("Seaside", ExpansionIndex.Seaside));
             this.expansions.Add(new Expansion("Empires", ExpansionIndex.Empires));
             this.expansions.Add(new Expansion("Nocturne", ExpansionIndex.Nocturne));
+            this.expansions.Add(new Expansion("Renaissance", ExpansionIndex.Renaissance));
 
             foreach (var expansion in expansions)
             {
@@ -397,14 +398,18 @@ namespace Dominulator
 
             Dominion.StartingCardSplit player1Split = this.player1Strategy.StartingCardSplit.Value;
             Dominion.StartingCardSplit player2Split = this.player2Strategy.StartingCardSplit.Value;
-            Dominion.Card[] kingdomCards = this.currentDeck.Cards.Select(c => (Card)c.dominionCard).ToArray();
-            Dominion.Event[] events = this.eventCards.Cards.Select(c => (Event)c.dominionCard).ToArray();
+            Dominion.Card[] kingdomCards = this.currentDeck.Cards.Where(c => c.cardShapedObject is Card).Select(c => (Card)c.cardShapedObject).ToArray();
+            Dominion.Event[] events = this.eventCards.Cards.Where(c => c.cardShapedObject is Event).Select(c => (Event)c.cardShapedObject).ToArray();
+            Dominion.Landmark[] landmarks = this.eventCards.Cards.Where(c => c.cardShapedObject is Landmark).Select(c => (Landmark)c.cardShapedObject).ToArray();
+            Dominion.Project[] projects = this.eventCards.Cards.Where(c => c.cardShapedObject is Project).Select(c => (Project)c.cardShapedObject).ToArray();
             DominionCard baneCard = this.BaneCard.CurrentCards.FirstOrDefault();
 
             var builder = new Dominion.GameConfigBuilder();
                 
             builder.SetKingdomPiles(kingdomCards);
             builder.SetEvents(events);
+            builder.SetLandmarks(landmarks);
+            builder.SetProjects(projects);
             if (baneCard != null)
                 builder.SetBaneCard((Card)baneCard.dominionCard);
 
@@ -418,7 +423,8 @@ namespace Dominulator
         public void PopulateFromGameDescription(GameDescription gameDescription)
         {            
             this.currentDeck.PopulateCards(gameDescription.kingdomPiles.Select(c => DominionCard.Create(c)));
-            this.baneCard.PopulateBaneCard(DominionCard.Create(gameDescription.baneCard));
+            if (gameDescription.baneCard != null)
+                this.baneCard.PopulateBaneCard(DominionCard.Create(gameDescription.baneCard));
             this.eventCards.PopulateCards(gameDescription.events.Select(c => DominionCard.Create(c)));
             this.UseShelters.Value = gameDescription.useShelters;
             this.UseColonyPlatinum.Value = gameDescription.useColonyAndPlatinum;

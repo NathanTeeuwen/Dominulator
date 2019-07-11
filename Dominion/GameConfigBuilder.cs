@@ -13,6 +13,7 @@ namespace Dominion
         private List<Card> kingdomPiles;
         private List<Event> events;
         private List<Landmark> landmarks;
+        private List<Project> projects;
         private Card baneCard;
         private MapPlayerGameConfigToCardSet startingDeck;
         private MapPlayerGameConfigToCardSet shuffleLuck;
@@ -41,6 +42,7 @@ namespace Dominion
             this.kingdomPiles = new List<Card>();
             this.events = new List<Event>();
             this.landmarks = new List<Landmark>();
+            this.projects = new List<Project>();
             this.startingDeck = GetDefaultStartingDeck;
             this.shuffleLuck = GetDefaultStartingHand;
         }
@@ -53,6 +55,7 @@ namespace Dominion
             this.kingdomPiles = new List<Card>(gameConfig.kingdomPiles);
             this.events = new List<Event>(gameConfig.gameDescription.events);
             this.landmarks = new List<Landmark>(gameConfig.gameDescription.landmarks);
+            this.projects = new List<Project>(gameConfig.gameDescription.projects);
             this.startingDeck = gameConfig.startingDeck;
             this.shuffleLuck = gameConfig.startingHand;
         }
@@ -94,6 +97,18 @@ namespace Dominion
         {
             this.events.Clear();
             this.events.AddRange(cards);
+        }
+
+        public void SetLandmarks(IEnumerable<Landmark> cards)
+        {
+            this.landmarks.Clear();
+            this.landmarks.AddRange(cards);
+        }
+
+        public void SetProjects(IEnumerable<Project> cards)
+        {
+            this.projects.Clear();
+            this.projects.AddRange(cards);
         }
 
         public void SetKingdomPiles(IEnumerable<Card> cards)
@@ -139,6 +154,7 @@ namespace Dominion
                     this.kingdomPiles.ToArray(),
                     this.events.ToArray(),
                     this.landmarks.ToArray(),
+                    this.projects.ToArray(),
                     this.baneCard,
                     this.useShelters,
                     this.useColonyAndPlatinum);
@@ -284,6 +300,8 @@ namespace Dominion
 
             var allEventsCards = Dominion.Cards.AllCardsList.Where(c => c is Event).Select(c=> (Event)c).ToArray();
             var allLandmarkCards = Dominion.Cards.AllCardsList.Where(c => c is Landmark).Select(c => (Landmark)c).ToArray();
+            var allProjectCards = Dominion.Cards.AllCardsList.Where(c => c is Project).Select(c => (Project)c).ToArray();
+
 
             int cEventRemaining = allEventsCards.Length;
             int totalKingdomCount = Dominion.Cards.AllKingdomCardsList.Length;

@@ -35,6 +35,12 @@ namespace Dominion.CardTypes
             : base("Banquet", Expansion.Empires, coinCost: 3)
         {
         }
+
+        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
+        {
+            currentPlayer.GainCardsFromSupply(gameState, Cards.Copper, 2);
+            currentPlayer.RequestPlayerGainCardFromSupply(gameState, c => c.CurrentCoinCost(currentPlayer) <= 5 && !c.isVictory, "Gain a non victory card costing up to 5");
+        }
     }
 
     public class Conquest

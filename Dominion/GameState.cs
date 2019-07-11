@@ -417,62 +417,105 @@ namespace Dominion
             }
         }
 
-        private bool CardAvailableForPurchaseForCurrentPlayer(Card card)
+        private bool CardAvailableForPurchaseForCurrentPlayer(CardShapedObject cardShapedObject)
         {
             PlayerState currentPlayer = this.players.CurrentPlayer;
-            return currentPlayer.AvailableCoins >= card.CurrentCoinCost(currentPlayer) &&
-                   currentPlayer.AvailablePotions >= card.potionCost &&
-                   this.CardGameSubset.HasCard(card) &&
-                   this.GetPile(card).Any || card.isEvent &&
-                   !card.IsRestrictedFromBuy(currentPlayer, this) &&
-                   !currentPlayer.turnCounters.cardsBannedFromPurchase.Contains(card);
+
+            if (cardShapedObject is Card card)
+                return currentPlayer.AvailableCoins >= card.CurrentCoinCost(currentPlayer) &&
+                       currentPlayer.AvailablePotions >= card.potionCost &&
+                       this.CardGameSubset.HasCard(card) &&
+                       this.GetPile(card).Any &&
+                       !card.IsRestrictedFromBuy(currentPlayer, this) &&
+                       !currentPlayer.turnCounters.cardsBannedFromPurchase.Contains(card);
+            else if (cardShapedObject is Event eventCard)
+            {
+                return currentPlayer.AvailableCoins >= eventCard.coinCost &&
+                       this.CardGameSubset.HasCard(eventCard);
+            }
+            else if (cardShapedObject is Project project)
+            {
+                return currentPlayer.AvailableCoins >= project.coinCost &&
+                       this.CardGameSubset.HasCard(project);
+            }
+
+            throw new Exception("provided cardshapedobject can not be bought");
         }
+
+        private bool TryBuyCard(PlayerState currentPlayer)
+        {
+            Card cardType = currentPlayer.actions.GetCardFromSupplyToBuy(this, CardAvailableForPurchaseForCurrentPlayer);
+            if (cardType == null)
+            {
+                return false;
+            }
+
+            if (!CardAvailableForPurchaseForCurrentPlayer(cardType))
+            {
+                throw new Exception("Tried to buy card that didn't meet criteria");
+            }
+
+            if (!this.CanGainCardFromSupply(cardType))
+            {
+                return false;
+            }
+
+            currentPlayer.turnCounters.RemoveBuy();
+            currentPlayer.turnCounters.RemoveCoins(cardType.CurrentCoinCost(currentPlayer));
+            currentPlayer.turnCounters.RemovePotions(cardType.potionCost);
+
+            
+            Card boughtCard = this.PlayerGainCardFromSupply(cardType, currentPlayer, DeckPlacement.Discard, GainReason.Buy);
+            if (boughtCard == null)
+            {
+                throw new Exception("CanGainCardFromSupply said we could buy a card when we couldn't");
+            }
+
+            int embargoCount = this.pileEmbargoTokenCount[boughtCard];
+            for (int i = 0; i < embargoCount; ++i)
+            {
+                currentPlayer.GainCardFromSupply(Cards.Curse, this);
+            }
+
+            return true;
+        }
+
+        private bool TryBuyEvent(PlayerState currentPlayer)
+        {
+            Event cardType = currentPlayer.actions.GetEventFromSupplyToBuy(this, CardAvailableForPurchaseForCurrentPlayer);
+            if (cardType == null)
+            {
+                return false;
+            }
+
+            if (!CardAvailableForPurchaseForCurrentPlayer(cardType))
+            {
+                throw new Exception("Tried to buy card that didn't meet criteria");
+            }
+
+            currentPlayer.turnCounters.RemoveBuy();
+            currentPlayer.turnCounters.RemoveCoins(cardType.coinCost);
+
+            this.cardContextStack.PushCardContext(currentPlayer, null, CardContextReason.EventBeingResolved);
+            cardType.DoSpecializedAction(currentPlayer, this);
+            this.cardContextStack.Pop();
+
+            return true;
+        }
+
 
         private void DoBuyPhase(PlayerState currentPlayer)
         {
             currentPlayer.EnterPhase(PlayPhase.Buy);
             while (currentPlayer.turnCounters.AvailableBuys > 0)
             {
-                Card cardType = currentPlayer.actions.GetCardFromSupplyToBuy(this, CardAvailableForPurchaseForCurrentPlayer);
-                if (cardType == null)
-                {
-                    return;
-                }
+                if (this.TryBuyCard(currentPlayer))
+                    continue;
+                
+                if (this.TryBuyEvent(currentPlayer))
+                    continue;
 
-                if (!CardAvailableForPurchaseForCurrentPlayer(cardType))
-                {
-                    throw new Exception("Tried to buy card that didn't meet criteria");
-                }
-
-                if (!this.CanGainCardFromSupply(cardType) && !cardType.isEvent)
-                {
-                    return;
-                }
-
-                currentPlayer.turnCounters.RemoveCoins(cardType.CurrentCoinCost(currentPlayer));
-                currentPlayer.turnCounters.RemovePotions(cardType.potionCost);
-                currentPlayer.turnCounters.RemoveBuy();
-
-                if (cardType.isEvent)
-                {
-                    this.cardContextStack.PushCardContext(currentPlayer, cardType, CardContextReason.EventBeingResolved);
-                    cardType.DoSpecializedAction(currentPlayer, this);
-                    this.cardContextStack.Pop();
-                }
-                else
-                {
-                    Card boughtCard = this.PlayerGainCardFromSupply(cardType, currentPlayer, DeckPlacement.Discard, GainReason.Buy);
-                    if (boughtCard == null)
-                    {
-                        throw new Exception("CanGainCardFromSupply said we could buy a card when we couldn't");
-                    }
-
-                    int embargoCount = this.pileEmbargoTokenCount[boughtCard];
-                    for (int i = 0; i < embargoCount; ++i)
-                    {
-                        currentPlayer.GainCardFromSupply(Cards.Curse, this);
-                    }
-                }                                                              
+                return;                                                              
             }
         }
 

@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 namespace Dominion
 {
     public class CardGameSubset
-        : IEnumerable<Card>
+        : IEnumerable<CardShapedObject>
     {
         static private readonly int countSupportedCards = Dominion.Cards.AllCardsList.Length;
         static private readonly int sentinelIndex = -1;
         private int nextIndex = 0;
         private int[] mapCardIndexToSubsetIndex = new int[countSupportedCards];
-        private Card[] mapSubsetIndexToCard = new Card[countSupportedCards];
+        private CardShapedObject[] mapSubsetIndexToCard = new CardShapedObject[countSupportedCards];
 
         public CardGameSubset()
         {
@@ -32,7 +32,7 @@ namespace Dominion
             }
         }
 
-        internal void AddCard(Card card)
+        internal void AddCard(CardShapedObject card)
         {
             if (this.mapCardIndexToSubsetIndex[card.Index] == sentinelIndex)
             {
@@ -42,23 +42,23 @@ namespace Dominion
             }
         }
 
-        internal Card GetCardForIndex(int index)
+        internal CardShapedObject GetCardForIndex(int index)
         {
             return this.mapSubsetIndexToCard[index];
         }
 
-        public bool HasCard(Card card)
+        public bool HasCard(CardShapedObject card)
         {
             return this.GetIndexFor(card) != -1;
         }
 
-        internal int GetIndexFor(Card card)
+        internal int GetIndexFor(CardShapedObject card)
         {            
             return this.mapCardIndexToSubsetIndex[card.Index];
         }      
 
         public struct Enumerator
-            : IEnumerator<Card>
+            : IEnumerator<CardShapedObject>
         {
             int currentIndex;
             private CardGameSubset cardGameSubset;
@@ -80,7 +80,7 @@ namespace Dominion
                 return this.currentIndex < this.cardGameSubset.nextIndex;
             }
 
-            public Card Current
+            public CardShapedObject Current
             {
                 get
                 {
@@ -107,7 +107,7 @@ namespace Dominion
             return new Enumerator(this);
         }
 
-        IEnumerator<Card> IEnumerable<Card>.GetEnumerator()
+        IEnumerator<CardShapedObject> IEnumerable<CardShapedObject>.GetEnumerator()
         {
             return this.GetEnumerator();
         }

@@ -15,6 +15,11 @@ namespace Dominion
             return null;
         }
 
+        private Event NoEvent()
+        {
+            return null;
+        }
+
         private void NoDefaultAction()
         {
 
@@ -105,6 +110,11 @@ namespace Dominion
         virtual public Card GetCardFromSupplyToBuy(GameState gameState, CardPredicate cardPredicate)
         {
             return NoCard();
+        }
+
+        virtual public Event GetEventFromSupplyToBuy(GameState gameState, EventPredicate eventPredicate)
+        {
+            return NoEvent();
         }
 
         virtual public Card GuessCardTopOfDeck(GameState gameState)

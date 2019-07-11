@@ -210,11 +210,6 @@ namespace Dominion.CardTypes
             : base("Summon", Expansion.Promo, coinCost: 4)
         {
         }
-
-        public override void DoSpecializedAction(PlayerState currentPlayer, GameState gameState)
-        {
-            throw new NotImplementedException();
-        }
     }
 
     public class Stash

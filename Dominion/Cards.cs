@@ -557,7 +557,7 @@ namespace Dominion
             {
                 var fieldValue = fieldInfo.GetValue(null);
                 if (fieldValue is CardShapedObject card)
-                result.Add(card);
+                    result.Add(card);
             }
             
             return result.ToArray();

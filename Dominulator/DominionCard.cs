@@ -59,10 +59,10 @@ namespace Dominulator
             return result;
         }
 
-        public static DominionCard Create(Dominion.Card card)
+        public static DominionCard Create(Dominion.CardShapedObject card)
         {
             if (card == null)
-                return null;
+                throw new Exception("unexpected null");
             return mpCardNameToCard[card.name];
         }
 
@@ -72,6 +72,7 @@ namespace Dominulator
         }
 
         public readonly Dominion.CardShapedObject cardShapedObject;
+
         public Dominion.Card dominionCard { get { return (Dominion.Card) this.cardShapedObject; }  }
         public string Name { get; private set; }
         public string Id { get; private set; }
@@ -120,6 +121,7 @@ namespace Dominulator
                 case ExpansionIndex.Adventures: return Dominion.Expansion.Adventures;
                 case ExpansionIndex.Empires: return Dominion.Expansion.Empires;
                 case ExpansionIndex.Nocturne: return Dominion.Expansion.Nocturne;
+                case ExpansionIndex.Renaissance: return Dominion.Expansion.Renaissance;
             }
             throw new Exception("Expansion not found");
         }
@@ -141,6 +143,7 @@ namespace Dominulator
                 case Dominion.Expansion.Adventures: return ExpansionIndex.Adventures;
                 case Dominion.Expansion.Empires: return ExpansionIndex.Empires;
                 case Dominion.Expansion.Nocturne: return ExpansionIndex.Nocturne;
+                case Dominion.Expansion.Renaissance: return ExpansionIndex.Renaissance;
                 case Dominion.Expansion.Unknown: return ExpansionIndex._Unknown;
             }
             throw new Exception("Expansion not found");

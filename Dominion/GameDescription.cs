@@ -11,22 +11,29 @@ namespace Dominion
         public readonly Card[] kingdomPiles;
         public readonly Event[] events;
         public readonly Landmark[] landmarks;
+        public readonly Project[] projects;
         public readonly Card baneCard;
         public readonly bool useShelters;
         public readonly bool useColonyAndPlatinum;
 
-        public GameDescription(Card[] kingdomPiles, Event[] events, Landmark[] landmarks, Card baneCard, bool useShelters, bool useColonyAndPlatinum)
+        public GameDescription(Card[] kingdomPiles, Event[] events, Landmark[] landmarks, Project[] projects, Card baneCard, bool useShelters, bool useColonyAndPlatinum)
         {
+            foreach (var card in kingdomPiles)
+            {
+                if (card == null)
+                    throw new Exception("unexpected NULL");
+            }
             this.kingdomPiles = kingdomPiles;
             this.baneCard = baneCard;
             this.events = events;
             this.landmarks = landmarks;
+            this.projects = projects;
             this.useShelters = useShelters;
             this.useColonyAndPlatinum = useColonyAndPlatinum;
         }
 
-        public GameDescription(string[] kingdomPiles, string[] events, string[] landmarks, string baneCard, bool useShelters, bool useColonyAndPlatinum)
-            : this(GetCardsFromProgrammaticNames<Card>(kingdomPiles), GetCardsFromProgrammaticNames<Event>(events), GetCardsFromProgrammaticNames<Landmark>(landmarks), GetCardFromProgrammaticName<Card>(baneCard), useShelters, useColonyAndPlatinum)
+        public GameDescription(string[] kingdomPiles, string[] events, string[] landmarks, string[] projects, string baneCard, bool useShelters, bool useColonyAndPlatinum)
+            : this(GetCardsFromProgrammaticNames<Card>(kingdomPiles), GetCardsFromProgrammaticNames<Event>(events), GetCardsFromProgrammaticNames<Landmark>(landmarks), GetCardsFromProgrammaticNames<Project>(projects), GetCardFromProgrammaticName<Card>(baneCard), useShelters, useColonyAndPlatinum)
         {            
         }
 
@@ -39,6 +46,17 @@ namespace Dominion
         {
             return this.events.Select(c => c.ProgrammaticName).ToArray();
         }
+
+        public string[] LandmarkProgramaticNames()
+        {
+            return this.landmarks.Select(c => c.ProgrammaticName).ToArray();
+        }
+
+        public string[] ProjectProgramaticNames()
+        {
+            return this.projects.Select(c => c.ProgrammaticName).ToArray();
+        }
+
 
         public string BanePileProgrammaticName()
         {
@@ -54,7 +72,7 @@ namespace Dominion
                 isExpansionRequired[(int)card.expansion] = true;
             }
 
-            foreach (Card card in events)
+            foreach (Event card in events)
             {
                 isExpansionRequired[(int)card.expansion] = true;
             }
@@ -91,7 +109,7 @@ namespace Dominion
         public static T[] GetCardsFromProgrammaticNames<T>(string[] cardNames)
             where T: CardShapedObject
         {
-            return cardNames.Select(name => GetCardFromProgrammaticName<T>(name)).ToArray();
+            return cardNames.Select(name => GetCardFromProgrammaticName<T>(name)).Where(c => c != null).ToArray();
         }
     }
 }

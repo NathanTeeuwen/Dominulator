@@ -77,6 +77,8 @@ namespace Dominulator
         const string jsonNameKingdomPiles = "kingdomPiles";
         const string jsonNameBane = "baneCard";
         const string jsonNameEvents = "events";
+        const string jsonNameProjects = "projects";
+        const string jsonNameLandmarks = "landmarks";
         public static JsonObject ToJson(Dominion.GameDescription gameDescription)
         {
             JsonObject root = new Windows.Data.Json.JsonObject();
@@ -103,6 +105,20 @@ namespace Dominulator
             }
             root.Add(jsonNameEvents, eventArray);
 
+            JsonArray projectArray = new JsonArray();
+            foreach (var cardName in gameDescription.ProjectProgramaticNames())
+            {
+                projectArray.Add(JsonValue.CreateStringValue(cardName));
+            }
+            root.Add(jsonNameProjects, projectArray);
+
+            JsonArray landmarkArray = new JsonArray();
+            foreach (var cardName in gameDescription.LandmarkProgramaticNames())
+            {
+                projectArray.Add(JsonValue.CreateStringValue(cardName));
+            }
+            root.Add(jsonNameLandmarks, projectArray);
+
             return root;
         }        
 
@@ -127,10 +143,11 @@ namespace Dominulator
                 double rating = root.GetNamedNumber(jsonNameRating);
 
                 string[] landmarkNames = new string[0];
+                string[] projectNames = new string[0];
 
                 return new GameDescriptionAndRating() 
                 {
-                    gameDescription = new Dominion.GameDescription(kingdomPileNames, eventNames, landmarkNames, baneCardName, useShelters, useColonyAndPlatinum),
+                    gameDescription = new Dominion.GameDescription(kingdomPileNames, eventNames, landmarkNames, projectNames, baneCardName, useShelters, useColonyAndPlatinum),
                     rating = rating
                 };
                     
