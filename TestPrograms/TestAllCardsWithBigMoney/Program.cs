@@ -18,7 +18,7 @@ namespace TestAllCardsWithBigMoney
                 var bigMoneyPlayer = Strategies.GardensWorkshop.Player();
                 foreach (PlayerAction playerAction in AllBigMoneyWithCard())
                 {
-                    testOutput.ComparePlayers(bigMoneyPlayer, playerAction, numberOfGames: 1000, shouldParallel: true, createHtmlReport: false, createRankingReport: true, logGameCount: 0);
+                    testOutput.ComparePlayers(bigMoneyPlayer, playerAction, numberOfGames: 1000, shouldParallel: false, createHtmlReport: false, createRankingReport: true, logGameCount: 0);
                 }                
             }          
         }

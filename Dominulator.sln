@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.Strategy", "Dominion.Strategy\Dominion.Strategy.csproj", "{DE60F275-B1B5-40F4-BE3E-35805F42CCE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominion.Strategy", "Dominion.Strategy\Dominion.Strategy.csproj", "{DE60F275-B1B5-40F4-BE3E-35805F42CCE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion", "Dominion\Dominion.csproj", "{BF6E2A5E-E0C3-4461-8EBE-40F942B4BFC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominion", "Dominion\Dominion.csproj", "{BF6E2A5E-E0C3-4461-8EBE-40F942B4BFC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominion.DataGathering", "DataGathering\Dominion.DataGathering.csproj", "{FBEB2733-2B59-4E3F-B1C6-7266953A5961}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominion.DataGathering", "DataGathering\Dominion.DataGathering.csproj", "{FBEB2733-2B59-4E3F-B1C6-7266953A5961}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlRenderer.Windows", "HtmlRenderer\HtmlRenderer.Windows.csproj", "{37DEBCEC-CC13-4F96-ADAE-BC75850D6452}"
 EndProject
@@ -74,6 +74,8 @@ Global
 		{743F549A-E38C-4703-B15B-DB591610720F}.Debug|x86.Build.0 = Debug|x86
 		{743F549A-E38C-4703-B15B-DB591610720F}.Debug|x86.Deploy.0 = Debug|x86
 		{743F549A-E38C-4703-B15B-DB591610720F}.Release|Any CPU.ActiveCfg = Release|x86
+		{743F549A-E38C-4703-B15B-DB591610720F}.Release|Any CPU.Build.0 = Release|x86
+		{743F549A-E38C-4703-B15B-DB591610720F}.Release|Any CPU.Deploy.0 = Release|x86
 		{743F549A-E38C-4703-B15B-DB591610720F}.Release|ARM.ActiveCfg = Release|ARM
 		{743F549A-E38C-4703-B15B-DB591610720F}.Release|ARM.Build.0 = Release|ARM
 		{743F549A-E38C-4703-B15B-DB591610720F}.Release|ARM.Deploy.0 = Release|ARM

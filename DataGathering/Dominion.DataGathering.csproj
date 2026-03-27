@@ -3,6 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>c:\trash\build\release</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <!--<PackageReference Include="" Version=""/>-->
 
