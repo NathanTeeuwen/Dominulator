@@ -20,7 +20,7 @@ namespace Program.WebService
             int maxTurn = comparisonResults.gameEndOnTurnHistogramData.GetXAxisValueCoveringUpTo(97);
 
             var options = GoogleChartsHelper.GetLineGraphOptions(
-                "Probablity of Game Being over by turn",
+                "Probability of Game Being over by turn",
                 "Score",
                 "Percentage",
                 comparisonResults.gameEndOnTurnHistogramData.GetXAxis(maxTurn),
