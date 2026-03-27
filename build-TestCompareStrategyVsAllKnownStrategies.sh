@@ -1,0 +1,2 @@
+#!/bin/bash
+dotnet build TestPrograms/TestCompareStrategyVsAllKnownStrategies/TestCompareStrategyVsAllKnownStrategies.csproj
