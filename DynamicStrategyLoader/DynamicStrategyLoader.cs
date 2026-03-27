@@ -10,7 +10,7 @@ namespace Program
 {
     public class DynamicStrategyLoader
     {
-        static string strategyOutputFolder = "DominulatorStrategies";       
+        static string strategyOutputFolder = System.IO.Path.Combine(System.IO.Path.GetTempPath(), "DominulatorStrategies");
         PlayerActionAndSource[] playerActions = null;
 
         public DynamicStrategyLoader()
@@ -20,15 +20,36 @@ namespace Program
 
         public bool Load()
         {
-            if (!WriteOutAllEmbeddedStrategies())
+            if (System.IO.Directory.Exists(strategyOutputFolder))
             {
+                System.Console.WriteLine($"Error: Strategy cache directory already exists: {strategyOutputFolder}");
+                System.Console.WriteLine($"This is likely left over from a previous crash. Delete it and restart:");
+                System.Console.WriteLine($"  rm -rf \"{strategyOutputFolder}\"");
                 return false;
             }
 
+            AppDomain.CurrentDomain.ProcessExit += (s, e) => Cleanup();
+            Console.CancelKeyPress += (s, e) => Cleanup();
+
+            if (!WriteOutAllEmbeddedStrategies())
+                return false;
+
             if (!LoadAllCustomStrategies())
-                return false;                        
+                return false;
 
             return true;
+        }
+
+        private static void Cleanup()
+        {
+            if (System.IO.Directory.Exists(strategyOutputFolder))
+            {
+                try
+                {
+                    System.IO.Directory.Delete(strategyOutputFolder, recursive: true);
+                }
+                catch { }
+            }
         }
 
         public IEnumerable<PlayerAction> AllStrategies()
@@ -84,20 +105,17 @@ namespace Program
             return actions[0];
         }        
 
-        public static bool CreateStrategiesFolderIfNecessary()
+        public static bool CreateStrategiesFolder()
         {
-            if (!System.IO.Directory.Exists(strategyOutputFolder))
+            try
             {
-                try
-                {
-                    System.IO.Directory.CreateDirectory(strategyOutputFolder);
-                }
-                catch
-                {
-                }
+                System.IO.Directory.CreateDirectory(strategyOutputFolder);
+            }
+            catch
+            {
             }
 
-            return System.IO.Directory.Exists(strategyOutputFolder);                
+            return System.IO.Directory.Exists(strategyOutputFolder);
         }
 
         public static bool WriteOutAllEmbeddedStrategies()
@@ -106,7 +124,7 @@ namespace Program
             var resourceLoader = new Resources.ResourceLoader(assembly);
             string strategyResourcePath = "Dominion.DynamicStrategyLoader.EmbeddedStrategies";
 
-            if (!CreateStrategiesFolderIfNecessary())
+            if (!CreateStrategiesFolder())
                 return false;
 
             bool foundOne = false;            
@@ -125,7 +143,7 @@ namespace Program
 
                 try
                 {
-                    using (var textWriter = new System.IO.StreamWriter(strategyOutputFolder + "\\" + fileName))
+                    using (var textWriter = new System.IO.StreamWriter(System.IO.Path.Combine(strategyOutputFolder, fileName)))
                     {
                         textWriter.Write(fileContents);
                     }

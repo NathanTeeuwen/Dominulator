@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Script.Serialization;
+using System.Text.Json;
 using Dominion;
 using Dominion.Strategy;
 using Dominion.Data;
@@ -16,7 +16,6 @@ namespace Program.WebService
         static string baseUrl = "http://localhost:8081" + root + "/";
         static string resourcePrefix = root + "/resources/";
         
-        static JavaScriptSerializer js = new JavaScriptSerializer();
 
         public static Type[] availaleGraphs = new Type[]
         {
@@ -231,7 +230,7 @@ namespace Program.WebService
                         Type serviceType;
                         if (mapNameToServiceType.TryGetValue(requestedPage, out serviceType))
                         {
-                            unserializedObject = js.Deserialize(jsonRequest, serviceType);
+                            unserializedObject = JsonSerializer.Deserialize(jsonRequest, serviceType);
                             if (unserializedObject == null)
                             {
                                 unserializedObject = Activator.CreateInstance(serviceType);
@@ -249,7 +248,7 @@ namespace Program.WebService
                         else if (unserializedObject is IRequestWithJsonResponse)
                         {
                             object o = ((IRequestWithJsonResponse)unserializedObject).GetResponse(this);
-                            var serialized = js.Serialize(o);
+                            var serialized = JsonSerializer.Serialize(o);
                             responseText = serialized;
                         }
                         response.ContentType = "text/html";

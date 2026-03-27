@@ -12,3 +12,4 @@
 *.class
 **/WEB-INF
 .vs
+DominulatorStrategies

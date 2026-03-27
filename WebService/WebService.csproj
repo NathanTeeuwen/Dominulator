@@ -11,6 +11,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Resources\**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DataGathering\Dominion.DataGathering.csproj" />
     <ProjectReference Include="..\Dominion.Strategy\Dominion.Strategy.csproj" />
     <ProjectReference Include="..\Dominion\Dominion.csproj" />
