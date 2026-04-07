@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.user.update_public_ip</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/bin/bash</string>
+      <string>/Users/nathanteeuwen/scripts/update_public_ip.sh</string>
+    </array>
+
+    <key>StartInterval</key>
+    <integer>300</integer> <!-- every 300 seconds (5 minutes) -->
+
+    <key>RunAtLoad</key>
+    <true/>
+  </dict>
+</plist>
